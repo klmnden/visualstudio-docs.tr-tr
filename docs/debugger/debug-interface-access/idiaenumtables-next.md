@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1cad345d099c9f5f8ecd870bcd80de7c886a55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977583"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598760"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
-Belirtilen bir sabit listesi sırası tablolarında sayısını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT Next (   
-   ULONG       celt,  
-   IDiaTable** rgelt,  
-   ULONG*      pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `celt`  
- [in] Alınacak Numaralandırıcı tablo sayısı.  
-  
- `rgelt`  
- [out] İle doldurulacak bir dizi [Idiatable](../../debugger/debug-interface-access/idiatable.md) istediğiniz tabloları temsil eden nesneleri.  
-  
- `pceltFetched`  
- [out] Tablo sayısı getirilen bir numaralandırıcı döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` daha fazla tablo varsa. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaenumtables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Belirtilen bir sabit listesi sırası tablolarında sayısını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Next ( 
+   ULONG       celt,
+   IDiaTable** rgelt,
+   ULONG*      pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `celt`
+
+[in] Alınacak Numaralandırıcı tablo sayısı.
+
+ `rgelt`
+
+[out] İle doldurulacak bir dizi [Idiatable](../../debugger/debug-interface-access/idiatable.md) istediğiniz tabloları temsil eden nesneleri.
+
+ `pceltFetched`
+
+[out] Tablo sayısı getirilen bir numaralandırıcı döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` daha fazla tablo varsa. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

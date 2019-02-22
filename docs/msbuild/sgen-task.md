@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948225"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607362"
 ---
 # <a name="sgen-task"></a>SGen görevi
-Bir XML serileştirme derleme türleri için belirtilen derlemesinde oluşturur. Bu görev sarmalar XML serileştiricisi Oluşturma Aracı (*Sgen.exe*). Daha fazla bilgi için [XML serileştiricisi Oluşturma Aracı (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+Bir XML serileştirme derleme türleri için belirtilen derlemesinde oluşturur. Bu görev sarmalar XML serileştiricisi Oluşturma Aracı (*Sgen.exe*). Daha fazla bilgi için [XML serileştiricisi Oluşturma Aracı (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `SGen` görev.  
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `SGen` görev.
 
 
 | Parametre | Açıklama |
@@ -50,10 +50,10 @@ Bir XML serileştirme derleme türleri için belirtilen derlemesinde oluşturur.
 | `Types` | İsteğe bağlı `String[]` parametresi.<br /><br /> Alır veya ayarlar için serileştirme kod oluşturmak için belirli türlerinin bir listesi. SGen bu tür için yalnızca serileştirme kod oluşturur. |
 | `UseProxyTypes` | Gerekli `Boolean` parametresi.<br /><br /> Varsa `true`, SGen görevi XML Web hizmeti proxy türleri için yalnızca serileştirme kod oluşturur. |
 
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae0be22b8699bd240ed78714dd340ed14ea38e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20f9dac750f9ff9723e4f3669f9e9a124d728a9a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992106"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56654132"
 ---
 # <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
-Kapsayan işlevin bir çerçeve veri arabirimi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_functionParent (   
-   IDiaFrameData** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Döndürür bir [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) kapsayan işlev nesnesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Kapsayan işlevin bir çerçeve veri arabirimi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_functionParent ( 
+   IDiaFrameData** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Döndürür bir [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) kapsayan işlev nesnesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

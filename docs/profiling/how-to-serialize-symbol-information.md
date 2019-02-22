@@ -13,27 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7957917c999396f2e09bbb697474beb47ebcc47
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 72a634bd83a55d4e646874cce5546e2a7310afb2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042445"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617853"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Nasıl yapılır: Sembol bilgilerini seri hale getirme
-Uygulamanızı çözümlemek zorunda semboller serileştirmek. Sembolleri sembol serileştirme ekler. *vsp* dosya. Sembol bilgilerini ekleyerek. *vsp* dosyasını, diğerleri çözümlemek bir performans raporu erişmek özgün simgeleri zorunda kalmadan. Semboller sıralanır değil, özgün izleme eklenmiş olmalıdır. *exe* ve. *pdb* analiz etmek için dosyaları. *Vsp* dosya.  
-  
-### <a name="to-automatically-serialize-symbol-information"></a>Sembol bilgisini otomatik serileştir için  
-  
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
-  
-     **Seçenekleri** iletişim kutusu görüntülenir.  
-  
-2.  Tıklayın **performans araçları**.  
-  
-3.  Altında **genel ayarı**seçin **sembol bilgisini otomatik serileştir**.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [Nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)   
- [Nasıl yapılır: Analiz edilen raporu dosyaları Kaydet](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))
+Uygulamanızı çözümlemek zorunda semboller serileştirmek. Sembolleri sembol serileştirme ekler. *vsp* dosya. Sembol bilgilerini ekleyerek. *vsp* dosyasını, diğerleri çözümlemek bir performans raporu erişmek özgün simgeleri zorunda kalmadan. Semboller sıralanır değil, özgün izleme eklenmiş olmalıdır. *exe* ve. *pdb* analiz etmek için dosyaları. *Vsp* dosya.
+
+### <a name="to-automatically-serialize-symbol-information"></a>Sembol bilgisini otomatik serileştir için
+
+1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
+
+     **Seçenekleri** iletişim kutusu görüntülenir.
+
+2.  Tıklayın **performans araçları**.
+
+3.  Altında **genel ayarı**seçin **sembol bilgisini otomatik serileştir**.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+- [Nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md)
+- [Nasıl yapılır: Analiz edilen raporu dosyaları Kaydet](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

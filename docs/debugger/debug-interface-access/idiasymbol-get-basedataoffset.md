@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b77c08d98535666f109610b618eac00b24aaf7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069011"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632036"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Temel veri uzaklığı alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_baseDataOffset(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir işaretçi bir `DWORD` , temel veri uzaklığı tutar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Temel veri uzaklığı alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_baseDataOffset(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir işaretçi bir `DWORD` , temel veri uzaklığı tutar.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

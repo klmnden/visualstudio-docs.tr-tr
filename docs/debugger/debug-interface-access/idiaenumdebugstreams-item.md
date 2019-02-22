@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df6e50185bf04dd1f4dbb9f1016a1d6b73b1185
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f07ecb151b6bf2cd4a9d48fbe6596bc7a533f97a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318283"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598680"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 Bir dizin veya ad ile bir hata ayıklama akışı alır.
@@ -32,10 +32,12 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>Parametreler
-dizin  
+dizin
+
 [in] Dizin veya hata ayıklama akışının adı alınamıyor. Bir tamsayı değişken kullandıysanız, aralığı 0 olmalıdır `count`-1, burada `count` tarafından döndürülen [Idiaenumdebugstreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) yöntemi.
 
-akış  
+akış
+
 [out] Döndürür bir [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) belirtilen hata ayıklama akışını temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,5 +70,5 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)  
-[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

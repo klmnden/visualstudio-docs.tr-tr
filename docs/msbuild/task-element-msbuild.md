@@ -16,75 +16,74 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37a843c6e282ca664ed3d2cc87d58aa50e6b5a74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ac3e966521f77716b999203523e1620fd327b631
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935429"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617151"
 ---
 # <a name="task-element-msbuild"></a>Görev öğesi (MSBuild)
-Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Öğe adı, oluşturulan görev adına göre belirlenir.  
+Oluşturur ve yürütür örneği bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görev. Öğe adı, oluşturulan görev adına göre belirlenir.
 
- \<Proje >  
- \<Hedef >  
+ \<Proje > \<hedef >
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<Task Parameter1="Value1"... ParameterN="ValueN"  
-    ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"  
-    Condition="'String A' == 'String B'" >  
-    <Output... />  
-</Task>  
-```  
+```xml
+<Task Parameter1="Value1"... ParameterN="ValueN"
+    ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"
+    Condition="'String A' == 'String B'" >
+    <Output... />
+</Task>
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|İsteğe bağlı öznitelik. Aşağıdaki değerlerden birini içerebilir:<br /><br /> -   **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.<br />-   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.<br />-   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.<br /><br /> .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Görevlerdeki hataları yoksayma](../msbuild/how-to-ignore-errors-in-tasks.md).|  
-|`Parameter`|Gerekli görev sınıfının içerir veya daha fazla özellik ile etiketlenmiş `[Required]` özniteliği.<br /><br /> Parametre değeri olarak değerini içeren bir kullanıcı tanımlı görev parametresi. Herhangi bir sayıda parametrelerinde olabilir `Task` her öznitelik eşlemesi görev sınıfının bir .NET özelliğine sahip bir öğe.|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Condition`|İsteğe bağlı öznitelik. Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
+|`ContinueOnError`|İsteğe bağlı öznitelik. Aşağıdaki değerlerden birini içerebilir:<br /><br /> -   **WarnAndContinue** veya **true**. Bir görev başarısız olduğunda, sonraki görevlerinde [hedef](../msbuild/target-element-msbuild.md) öğesi ile derleme devam yürütülecek ve görevin tüm hataları uyarı olarak kabul edilir.<br />-   **ErrorAndContinue**. Bir görev başarısız olduğunda, sonraki görevlerinde `Target` öğesi ile derleme devam yürütmek ve tüm hataları görev hata olarak kabul edilir.<br />-   **ErrorAndStop** veya **false** (varsayılan). Bir görev başarısız olduğunda, listesindeki kalan görevlere `Target` olmayan öğe ve derleme yürütülür ve tüm `Target` öğesi ve yapı başarısız olduğu değerlendirilir.<br /><br /> .NET Framework 4.5 yalnızca desteklenen önce sürümleri `true` ve `false` değerleri.<br /><br /> Daha fazla bilgi için [nasıl yapılır: Görevlerdeki hataları yoksayma](../msbuild/how-to-ignore-errors-in-tasks.md).|
+|`Parameter`|Gerekli görev sınıfının içerir veya daha fazla özellik ile etiketlenmiş `[Required]` özniteliği.<br /><br /> Parametre değeri olarak değerini içeren bir kullanıcı tanımlı görev parametresi. Herhangi bir sayıda parametrelerinde olabilir `Task` her öznitelik eşlemesi görev sınıfının bir .NET özelliğine sahip bir öğe.|
 
-### <a name="child-elements"></a>Alt öğeleri  
+### <a name="child-elements"></a>Alt öğeleri
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[Output](../msbuild/output-element-msbuild.md)|Depoları proje dosyasında bir görevden çıkarır. Sıfır veya daha fazla olabilir `Output` görev öğeleri.|  
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[Output](../msbuild/output-element-msbuild.md)|Depoları proje dosyasında bir görevden çıkarır. Sıfır veya daha fazla olabilir `Output` görev öğeleri.|
 
-### <a name="parent-elements"></a>Üst öğeler  
+### <a name="parent-elements"></a>Üst öğeler
 
 | Öğe | Açıklama |
 | - | - |
 | [Hedef](../msbuild/target-element-msbuild.md) | İçin kapsayıcı öğe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri. |
 
-## <a name="remarks"></a>Açıklamalar  
- A `Task` öğesinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası bir görev örneği oluşturur, özellikleri ayarlayan ve yürütür. `Output` Öğesi, özellikler veya başka bir proje dosyasında kullanılacak öğeleri çıkış parametreleri depolar.  
+## <a name="remarks"></a>Açıklamalar
+ A `Task` öğesinde bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proje dosyası bir görev örneği oluşturur, özellikleri ayarlayan ve yürütür. `Output` Öğesi, özellikler veya başka bir proje dosyasında kullanılacak öğeleri çıkış parametreleri depolar.
 
- Varsa [OnError](../msbuild/onerror-element-msbuild.md) üst öğeleri `Target` öğesi görev başarısız olursa bir görev, bunlar yine de değerlendirilir ve `ContinueOnError` değeri `false`. Görevler hakkında daha fazla bilgi için bkz. [görevleri](../msbuild/msbuild-tasks.md).  
+ Varsa [OnError](../msbuild/onerror-element-msbuild.md) üst öğeleri `Target` öğesi görev başarısız olursa bir görev, bunlar yine de değerlendirilir ve `ContinueOnError` değeri `false`. Görevler hakkında daha fazla bilgi için bkz. [görevleri](../msbuild/msbuild-tasks.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği bir örneğini oluşturur [Csc görevi](../msbuild/csc-task.md) sınıfı altı özelliklerini ayarlar ve görev yürütür. Yürütmenin sonrasına, değerini `OutputAssembly` nesnesinin özelliğini adlı bir öğe listesine yerleştirilir `FinalAssemblyName`.  
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneği bir örneğini oluşturur [Csc görevi](../msbuild/csc-task.md) sınıfı altı özelliklerini ayarlar ve görev yürütür. Yürütmenin sonrasına, değerini `OutputAssembly` nesnesinin özelliğini adlı bir öğe listesine yerleştirilir `FinalAssemblyName`.
 
-```xml  
-<Target Name="Compile" DependsOnTarget="Resources" >  
-    <Csc Sources="@(CSFile)"  
-          TargetType="library"  
-          Resources="@(CompiledResources)"  
-          EmitDebugInformation="$(includeDebugInformation)"  
-          References="@(Reference)"  
-          DebugType="$(debuggingType)" >  
-        <Output TaskParameter="OutputAssembly"  
-                  ItemName="FinalAssemblyName" />  
-    </Csc>  
-</Target>  
-```  
+```xml
+<Target Name="Compile" DependsOnTarget="Resources" >
+    <Csc Sources="@(CSFile)"
+          TargetType="library"
+          Resources="@(CompiledResources)"
+          EmitDebugInformation="$(includeDebugInformation)"
+          References="@(Reference)"
+          DebugType="$(debuggingType)" >
+        <Output TaskParameter="OutputAssembly"
+                  ItemName="FinalAssemblyName" />
+    </Csc>
+</Target>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

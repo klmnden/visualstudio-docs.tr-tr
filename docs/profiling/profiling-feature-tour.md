@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000841"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611927"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Hızlı Başlangıç: Araçlar profil oluşturmaya ilk bakış
 
@@ -149,22 +149,22 @@ CPU kullanımı veya bellek kullanımı araçları şu anda mevcut olmayan özel
 
 ![Performans Gezgini aracını](../profiling/media/prof-tour-performance-explorer.png "performans Gezgini")
 
-## <a name="which-tool-should-i-use"></a>Hangi aracı kullanmalıyım?  
+## <a name="which-tool-should-i-use"></a>Hangi aracı kullanmalıyım?
 
 Farklı araçlar sunan Visual Studio listeleyen bir tablo işte ve farklı proje türleri ile kullanabilirsiniz:
-  
-|Performans aracı|Windows masaüstü|UWP|ASP.NET/ASP.NET çekirdek| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Performans aracı|Windows masaüstü|UWP|ASP.NET/ASP.NET çekirdek|
+|----------------------|---------------------|-------------|-------------|
 |[CPU Kullanımı](../profiling/cpu-usage.md)|evet|evet|evet|
-|[Bellek Kullanımı](../profiling/memory-usage.md)|evet|evet|evet| 
-|[GPU Kullanımı](../debugger/gpu-usage.md)|evet|evet|Yok| 
+|[Bellek Kullanımı](../profiling/memory-usage.md)|evet|evet|evet|
+|[GPU Kullanımı](../debugger/gpu-usage.md)|evet|evet|Yok|
 |[Uygulama Zaman Çizelgesi](../profiling/application-timeline.md)|evet|evet|Yok|
 |[PerfTips](../profiling/perftips.md)|evet|XAML, HTML için Hayır için Evet|evet|
 |[Performans Gezgini](../profiling/performance-explorer.md)|evet|Yok|evet|
 |[IntelliTrace](../debugger/intellitrace.md)|Yalnızca Visual Studio Enterprise ile .NET|Yalnızca Visual Studio Enterprise ile .NET|Yalnızca Visual Studio Enterprise ile .NET|
 |[Ağ Kullanımı](../profiling/network-usage.md)|Yok|evet|Yok|
-|[HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok| 
+|[HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)|Yok|Evet, HTML için XAML için Hayır|Yok|
 |[JavaScript Belleği](../profiling/javascript-memory.md)|Yok|Evet, HTML için XAML için Hayır|Yok|
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugger-feature-tour)

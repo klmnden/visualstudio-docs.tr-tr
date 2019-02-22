@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b85cb1529d929196a2b77629d870c75f03b878a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 729f09f680969cb6a6653109f57d382cd7238557
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963911"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645959"
 ---
 # <a name="warning-task"></a>Uyarı görevi
-Günlükleri bir derleme sırasında bir uyarı değerlendirilen bir koşullu ifadeye göre.  
+Günlükleri bir derleme sırasında bir uyarı değerlendirilen bir koşullu ifadeye göre.
 
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `Warning` görev.  
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `Warning` görev.
 
 
 | Parametre | Açıklama |
@@ -39,30 +39,30 @@ Günlükleri bir derleme sırasında bir uyarı değerlendirilen bir koşullu if
 | `HelpKeyword` | İsteğe bağlı `String` parametresi.<br /><br /> Uyarıyla ilişkilendirilecek Yardım anahtar sözcüğü. |
 | `Text` | İsteğe bağlı `String` parametresi.<br /><br /> Uyarı metni, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] günlüğe `Condition` parametresi değerlendirilen `true`. |
 
-## <a name="remarks"></a>Açıklamalar  
- `Warning` Görev sağlayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gerekli yapılandırma veya bir sonraki devam etmeden önce özellik varlığını denetlemek için projeleri derleme adımı.  
+## <a name="remarks"></a>Açıklamalar
+ `Warning` Görev sağlayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gerekli yapılandırma veya bir sonraki devam etmeden önce özellik varlığını denetlemek için projeleri derleme adımı.
 
- Varsa `Condition` parametresinin `Warning` görev değerlendirilen `true`, değerini `Text` parametresi günlüğe kaydedilir ve yürütmek yapı devam eder. Varsa bir `Condition` parametresi mevcut değil, uyarı metni günlüğe kaydedilir. Günlüğe kaydetme hakkında daha fazla bilgi için bkz. [elde derleme günlükleri](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Varsa `Condition` parametresinin `Warning` görev değerlendirilen `true`, değerini `Text` parametresi günlüğe kaydedilir ve yürütmek yapı devam eder. Varsa bir `Condition` parametresi mevcut değil, uyarı metni günlüğe kaydedilir. Günlüğe kaydetme hakkında daha fazla bilgi için bkz. [elde derleme günlükleri](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, komut satırında ayarlanan özellikler denetler. Özellikleri ayarlanmadı varsa, projeye bir uyarı olayını başlatır ve değerini günlüklerini `Text` parametresinin `Warning` görev.  
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneği, komut satırında ayarlanan özellikler denetler. Özellikleri ayarlanmadı varsa, projeye bir uyarı olayını başlatır ve değerini günlüklerini `Text` parametresinin `Warning` görev.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Warning  
-            Text=" The 0 property was not set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Warning  
-            Text=" The FREEBUILD property was not set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Warning
+            Text=" The 0 property was not set on the command line."
+            Condition="'$(0)' == ''" />
+        <Warning
+            Text=" The FREEBUILD property was not set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

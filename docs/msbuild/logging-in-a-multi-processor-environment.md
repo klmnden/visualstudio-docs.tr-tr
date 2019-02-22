@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27b96dff857d49f12ffaa10e22c9189eb3a1d5b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925455"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638752"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Birden çok işlemcili ortamda oturum açma
 Birden çok işlemci kullanma yeteneğini MSBuild proje süre oluşturmanın önemli ölçüde azaltabilir, ancak ayrıca günlüğe kaydetme için karmaşıklık ekler. Bir tek işlemcili ortamda Günlükçü gelen olayları, iletileri, uyarılar ve hatalar sıralı tahmin edilebilir bir şekilde işleyebilir. Ancak, birden çok işlemcili ortamda, çeşitli kaynaklardan gelen olaylar aynı anda veya sıra dışı gelmesi. MSBuild özel "iletme günlükçüleri." oluşturmayı etkinleştirir ve birden çok işlemciye duyarlı olan yeni bir Günlükçü sağlar
@@ -71,5 +71,5 @@ Culture=neutral
 İki Günlükçü adlarında bir yıldız işareti (*) ayıran `-dl` geçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Günlükçüleri derleme](../msbuild/build-loggers.md)  
-[İletme günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md)
+- [Günlükçüleri derleme](../msbuild/build-loggers.md)
+- [İletme günlükçüleri oluşturma](../msbuild/creating-forwarding-loggers.md)

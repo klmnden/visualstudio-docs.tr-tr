@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93edaaf22dd59014a29c374ea3c4613d98d00d36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946557"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623716"
 ---
 # <a name="item-metadata-in-task-batching"></a>Toplu Görev işlemede öğe meta verileri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listeleri farklı kategorileri veya toplu işlemi bölmek için özelliği, öğe meta verileri temel alarak ve bir görevi, her batch ile bir kez çalıştırın. Tam olarak hangi batch ile hangi öğeleri geçirilen anlamak kafa karıştırıcı olabilir. Bu konu, toplu işleme içeren aşağıdaki yaygın senaryoları kapsar.
@@ -218,9 +218,9 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md)  
-[Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)  
-[Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[Toplu İşleme](../msbuild/msbuild-batching.md)  
-[MSBuild kavramları](../msbuild/msbuild-concepts.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md)
+- [Öğe unsuru (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Toplu İşleme](../msbuild/msbuild-batching.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853072"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600969"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild ile paralel olarak birden çok proje derleme
 Paralel çalıştırarak daha hızlı olan birden çok projeleri derlemek için MSBuild'ı kullanabilirsiniz. Derlemeleri paralel olarak çalıştırmak için çok çekirdekli veya birden çok işlemci bilgisayarda aşağıdaki ayarları kullanın:
@@ -70,6 +70,6 @@ Alınan, bir örneği verilmiştir *microsoft.common.targets*, nasıl ayarlanaca
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Projeleri derlemek için birden çok işlemci kullanma](../msbuild/using-multiple-processors-to-build-projects.md)  
-[Birden çok işlemciye duyarlı günlükçüler yazma](../msbuild/writing-multi-processor-aware-loggers.md)  
-[C++ yapı paralellik blog ayarlama](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Projeleri derlemek için birden çok işlemci kullanma](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Birden çok işlemciye duyarlı günlükçüler yazma](../msbuild/writing-multi-processor-aware-loggers.md)
+- [C++ yapı paralellik blog ayarlama](http://go.microsoft.com/fwlink/?LinkId=251457)

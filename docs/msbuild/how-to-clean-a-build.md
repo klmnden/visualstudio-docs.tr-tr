@@ -13,95 +13,95 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dab142315a7d243caf6604c5f2745244ff166e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027938"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603280"
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl yapılır: Derlemeyi temizleme
-Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve Çıkış dosyalarını silinir. Proje ve bileşen dosyalarından yeni örneklerini Ara ve çıkış dosyalarının sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevleri Kitaplığı hakkında daha fazla bilgi için bkz. [görev başvurusu](../msbuild/msbuild-task-reference.md).  
-  
-## <a name="create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturun  
- Varsayılan olarak, *.exe* oluşturulan bir projeyi derlediğinizde dosyası, proje ve kaynak dosyalarıyla aynı dizine yerleştirilir. Genellikle, Bununla birlikte, çıkış öğeleri farklı bir dizinde oluşturulur.  
-  
-#### <a name="to-create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturmak için  
-  
-1.  Kullanım `Property` dizinin adını ve konumunu tanımlamak için. Örneğin, adında bir dizin oluşturma *BuiltApp* proje ve kaynak dosyaları içeren dizine:  
-  
-     `<builtdir>BuiltApp</builtdir>`  
-  
-2.  Kullanım [MakeDir](../msbuild/makedir-task.md) dizini mevcut değilse dizini oluşturmak için görev. Örneğin:  
-  
+Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm ara ve Çıkış dosyalarını silinir. Proje ve bileşen dosyalarından yeni örneklerini Ara ve çıkış dosyalarının sonra oluşturulabilir. Kitaplığı ile sağlanan ortak görevler [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] içeren bir [Exec](../msbuild/exec-task.md) sistem komutlarını çalıştırmak için kullanabileceğiniz bir görev. Görevleri Kitaplığı hakkında daha fazla bilgi için bkz. [görev başvurusu](../msbuild/msbuild-task-reference.md).
+
+## <a name="create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturun
+ Varsayılan olarak, *.exe* oluşturulan bir projeyi derlediğinizde dosyası, proje ve kaynak dosyalarıyla aynı dizine yerleştirilir. Genellikle, Bununla birlikte, çıkış öğeleri farklı bir dizinde oluşturulur.
+
+#### <a name="to-create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturmak için
+
+1.  Kullanım `Property` dizinin adını ve konumunu tanımlamak için. Örneğin, adında bir dizin oluşturma *BuiltApp* proje ve kaynak dosyaları içeren dizine:
+
+     `<builtdir>BuiltApp</builtdir>`
+
+2.  Kullanım [MakeDir](../msbuild/makedir-task.md) dizini mevcut değilse dizini oluşturmak için görev. Örneğin:
+
      ```xml
-     <MakeDir Directories = "$(builtdir)"  
+     <MakeDir Directories = "$(builtdir)"
       Condition = "!Exists('$(builtdir)')" />
      ```
-  
-## <a name="remove-the-output-items"></a>Çıktı öğeleri Kaldır  
- Ara ve çıkış dosyalarının yeni kopyalarını oluşturmadan önce önceki tüm ara ve çıkış dosyalarının örneklerini silmek isteyebilirsiniz. Kullanım [RemoveDir](../msbuild/removedir-task.md) görev bir dizin ve tüm dosyaları ve dizinleri içeren bir diskten silinecek.  
-  
-#### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Bir dizin ve dizinde bulunan tüm dosyaları kaldırmak için  
-  
--   Kullanım `RemoveDir` görev dizini kaldırılamıyor. Örneğin:  
-  
-     `<RemoveDir Directories="$(builtdir)" />`  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod projesini içeren yeni bir hedef örneği `Clean`, kullanan `RemoveDir` bir dizin ve tüm dosyaları ve içerdiği dizinleri silmek için görev. Ayrıca bu örnekte, `Compile` hedef derleme temizlendiğinde silinir çıktı öğeleri için ayrı bir dizin oluşturur.  
-  
- `Compile` varsayılan hedef olarak tanımlanır ve farklı bir hedef veya hedefleri belirtmediğiniz sürece bu nedenle otomatik olarak kullanılır. Komut satırı anahtarını kullanmanız **-hedef** farklı bir hedef belirtmek için. Örneğin:  
-  
- `msbuild <file name>.proj -target:Clean`  
-  
- **-Hedef** anahtarı kısalttık için **-t** ve birden fazla hedef belirtebilirsiniz. Örneğin, hedef kullanılacak `Clean` hedef `Compile`, türü:  
-  
- `msbuild <file name>.proj -t:Clean;Compile`  
-  
-```xml  
-<Project DefaultTargets = "Compile"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-  
-    <PropertyGroup>  
-        <!-- Set the application name as a property -->  
-        <name>HelloWorldCS</name>  
-  
-        <!-- Set the output folder as a property -->  
-        <builtdir>BuiltApp</builtdir>  
-    </PropertyGroup>  
-  
-    <ItemGroup>  
-        <!-- Specify the inputs by type and file name -->  
-        <CSFile Include = "consolehwcs1.cs"/>  
-    </ItemGroup>  
-  
-    <Target Name = "Compile">  
-        <!-- Check whether an output folder exists and create  
-        one if necessary -->  
-        <MakeDir Directories = "$(builtdir)"   
-            Condition = "!Exists('$(builtdir)')" />  
-  
-        <!-- Run the Visual C# compiler -->  
-        <CSC Sources = "@(CSFile)"   
-            OutputAssembly = "$(BuiltDir)\$(appname).exe">  
-            <Output TaskParameter = "OutputAssembly"  
-                ItemName = "EXEFile" />  
-        </CSC>  
-  
-        <!-- Log the file name of the output file -->  
-        <Message Text="The output file is @(EXEFile)"/>  
-    </Target>  
-  
-    <Target Name = "Clean">  
-        <RemoveDir Directories="$(builtdir)" />  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Yürütme görevi](../msbuild/exec-task.md)   
- [MakeDir görevi](../msbuild/makedir-task.md)   
- [RemoveDir görevi](../msbuild/removedir-task.md)   
- [CSC görevi](../msbuild/csc-task.md)   
- [Hedefler](../msbuild/msbuild-targets.md)
+
+## <a name="remove-the-output-items"></a>Çıktı öğeleri Kaldır
+ Ara ve çıkış dosyalarının yeni kopyalarını oluşturmadan önce önceki tüm ara ve çıkış dosyalarının örneklerini silmek isteyebilirsiniz. Kullanım [RemoveDir](../msbuild/removedir-task.md) görev bir dizin ve tüm dosyaları ve dizinleri içeren bir diskten silinecek.
+
+#### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Bir dizin ve dizinde bulunan tüm dosyaları kaldırmak için
+
+-   Kullanım `RemoveDir` görev dizini kaldırılamıyor. Örneğin:
+
+     `<RemoveDir Directories="$(builtdir)" />`
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod projesini içeren yeni bir hedef örneği `Clean`, kullanan `RemoveDir` bir dizin ve tüm dosyaları ve içerdiği dizinleri silmek için görev. Ayrıca bu örnekte, `Compile` hedef derleme temizlendiğinde silinir çıktı öğeleri için ayrı bir dizin oluşturur.
+
+ `Compile` varsayılan hedef olarak tanımlanır ve farklı bir hedef veya hedefleri belirtmediğiniz sürece bu nedenle otomatik olarak kullanılır. Komut satırı anahtarını kullanmanız **-hedef** farklı bir hedef belirtmek için. Örneğin:
+
+ `msbuild <file name>.proj -target:Clean`
+
+ **-Hedef** anahtarı kısalttık için **-t** ve birden fazla hedef belirtebilirsiniz. Örneğin, hedef kullanılacak `Clean` hedef `Compile`, türü:
+
+ `msbuild <file name>.proj -t:Clean;Compile`
+
+```xml
+<Project DefaultTargets = "Compile"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+    <PropertyGroup>
+        <!-- Set the application name as a property -->
+        <name>HelloWorldCS</name>
+
+        <!-- Set the output folder as a property -->
+        <builtdir>BuiltApp</builtdir>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Specify the inputs by type and file name -->
+        <CSFile Include = "consolehwcs1.cs"/>
+    </ItemGroup>
+
+    <Target Name = "Compile">
+        <!-- Check whether an output folder exists and create
+        one if necessary -->
+        <MakeDir Directories = "$(builtdir)"
+            Condition = "!Exists('$(builtdir)')" />
+
+        <!-- Run the Visual C# compiler -->
+        <CSC Sources = "@(CSFile)"
+            OutputAssembly = "$(BuiltDir)\$(appname).exe">
+            <Output TaskParameter = "OutputAssembly"
+                ItemName = "EXEFile" />
+        </CSC>
+
+        <!-- Log the file name of the output file -->
+        <Message Text="The output file is @(EXEFile)"/>
+    </Target>
+
+    <Target Name = "Clean">
+        <RemoveDir Directories="$(builtdir)" />
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Yürütme görevi](../msbuild/exec-task.md)
+- [MakeDir görevi](../msbuild/makedir-task.md)
+- [RemoveDir görevi](../msbuild/removedir-task.md)
+- [CSC görevi](../msbuild/csc-task.md)
+- [Hedefler](../msbuild/msbuild-targets.md)

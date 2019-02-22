@@ -9,33 +9,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6ac30e2d4dbe97371516201670d82876c1287a52
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f01f0fd090bdfdef1f09f0446980756232a3abf3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027080"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604619"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET web uygulamasına profil oluşturucu ekleme
-Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir ASP.NET uygulamasına profil oluşturucu ekleme ve işlem ve iş parçacığı eşzamanlılık verileri toplamak için profil oluşturma araçları komut satırı araçları.  
+Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir ASP.NET uygulamasına profil oluşturucu ekleme ve işlem ve iş parçacığı eşzamanlılık verileri toplamak için profil oluşturma araçları komut satırı araçları.
 
-Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
-  
- Eşzamanlılık verileri toplamak için Web sitenizi barındıran ASP.NET işçi işlemine profil oluşturucuyu iliştirin. Profil Oluşturucu uygulamaya bağlı durumdayken, duraklatma ve veri koleksiyonu devam ettirin. Profil oluşturma oturumunu sona erdirmek için profil oluşturucu artık uygulamaya bağlı gerekir ve Profiler açıkça kapatılmalıdır. Çoğu durumda, bir oturumun sonunda profil oluşturma ortam değişkenlerini temizlemelisiniz.  
+Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
-## <a name="attach-the-profiler"></a>Profil Oluşturucu ekleme  
+ Eşzamanlılık verileri toplamak için Web sitenizi barındıran ASP.NET işçi işlemine profil oluşturucuyu iliştirin. Profil Oluşturucu uygulamaya bağlı durumdayken, duraklatma ve veri koleksiyonu devam ettirin. Profil oluşturma oturumunu sona erdirmek için profil oluşturucu artık uygulamaya bağlı gerekir ve Profiler açıkça kapatılmalıdır. Çoğu durumda, bir oturumun sonunda profil oluşturma ortam değişkenlerini temizlemelisiniz.
 
-#### <a name="to-attach-the-profiler-to-a-aspnet-application"></a>Profil oluşturucuyu bir ASP.NET Web uygulamasına eklemek  
+## <a name="attach-the-profiler"></a>Profil Oluşturucu ekleme
 
-1. Aşağıdaki komutu yazarak profil oluşturucuyu başlatın:  
+#### <a name="to-attach-the-profiler-to-a-aspnet-application"></a>Profil oluşturucuyu bir ASP.NET Web uygulamasına eklemek
 
-    [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency/Output:** `OutputFile` [`Options`]  
+1. Aşağıdaki komutu yazarak profil oluşturucuyu başlatın:
 
-   - [/Start](../profiling/start.md) seçeneği kaynak çekişmesi verisini toplamak için profil oluşturucuyu başlatır.  
+    [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency/Output:** `OutputFile` [`Options`]
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma veri (.vsp) dosyasının konumunu ve adını belirtir.  
+   - [/Start](../profiling/start.md) seçeneği kaynak çekişmesi verisini toplamak için profil oluşturucuyu başlatır.
 
-     Herhangi bir seçenek ile aşağıdaki tabloda kullanabileceğiniz **/start** seçeneği.  
+   - [/Output](../profiling/output.md)**:** `OutputFile` ile seçeneği gereklidir **/start**. `OutputFile` Profil oluşturma veri (.vsp) dosyasının konumunu ve adını belirtir.
+
+     Herhangi bir seçenek ile aşağıdaki tabloda kullanabileceğiniz **/start** seçeneği.
 
    | Seçenek | Açıklama |
    | - | - |
@@ -46,40 +46,40 @@ Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı ar
    | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Profil oluşturma sırasında Tahsil edilecek bir olay izleme için Windows (ETW) olayı belirtir. Ayrı bir toplanan ETW olayları (. *etl*) dosyası. |
 
 
-2. Normal yolla ASP.NET uygulaması başlatın.  
+2. Normal yolla ASP.NET uygulaması başlatın.
 
-3. Aşağıdaki komutu yazarak ASP.NET çalışan sürecine profil oluşturucu ekleme:**VSPerfCmd / ekleme:** `PID` [**/targetclr:**`Version`]  
+3. Aşağıdaki komutu yazarak ASP.NET çalışan sürecine profil oluşturucu ekleme:**VSPerfCmd / ekleme:** `PID` [**/targetclr:**`Version`]
 
-   -   `PID` bir ASP.NET işçi işlemine adını veya Kimliğini belirtir. Windows Görev Yöneticisi'nde, işlem kimliklerini çalışan tüm işlemlerin görüntüleyebilirsiniz.  
+   -   `PID` bir ASP.NET işçi işlemine adını veya Kimliğini belirtir. Windows Görev Yöneticisi'nde, işlem kimliklerini çalışan tüm işlemlerin görüntüleyebilirsiniz.
 
-   -   [/ targetclr](../profiling/targetclr.md) **:** `Version` bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profiline ortak dil çalışma zamanı (CLR) sürümünü belirtir. Bu parametre isteğe bağlıdır.  
+   -   [/ targetclr](../profiling/targetclr.md) **:** `Version` bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profiline ortak dil çalışma zamanı (CLR) sürümünü belirtir. Bu parametre isteğe bağlıdır.
 
-## <a name="control-data-collection"></a>Veri toplamayı denetleme  
- Uygulama çalışırken kullanarak verinin yazılmasını durdurmayla ve veri toplamayı kontrol edebilirsiniz *VSPerfCmd.exe* seçenekleri. Denetleme veri toplama işlemi tarafından program yürütmenin, uygulamanın başlatılması ya da kapatılması gibi özel bir bölümü için veri toplayabilir.  
+## <a name="control-data-collection"></a>Veri toplamayı denetleme
+ Uygulama çalışırken kullanarak verinin yazılmasını durdurmayla ve veri toplamayı kontrol edebilirsiniz *VSPerfCmd.exe* seçenekleri. Denetleme veri toplama işlemi tarafından program yürütmenin, uygulamanın başlatılması ya da kapatılması gibi özel bir bölümü için veri toplayabilir.
 
-#### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak  
+#### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak
 
--   Aşağıdaki tabloda gösterilen VSPerfCmd seçenek çiftlerini başlatın ve veri toplamayı durdur. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.  
+-   Aşağıdaki tabloda gösterilen VSPerfCmd seçenek çiftlerini başlatın ve veri toplamayı durdur. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
 
-    |Seçenek|Açıklama|  
-    |------------|-----------------|  
-    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar (**/globalon**) veya durdurur (**/globaloff**) tüm işlemler için veri toplama.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) veri toplama işlemi için işlem kimliği (`PID`) belirtir.|  
-    |[/ ekleme](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ ekleme** işlem için veri toplamaya başlar, işlem kimliği (`PID`) veya işlem adı (*ProcName*) belirtir. **/ detach** belirlenmiş bir işlem için belirtilen işlem veya tüm işlemler için veri toplamayı durdurur.|  
+    |Seçenek|Açıklama|
+    |------------|-----------------|
+    |[/ globalon /globaloff](../profiling/globalon-and-globaloff.md)|Başlar (**/globalon**) veya durdurur (**/globaloff**) tüm işlemler için veri toplama.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) veri toplama işlemi için işlem kimliği (`PID`) belirtir.|
+    |[/ ekleme](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ ekleme** işlem için veri toplamaya başlar, işlem kimliği (`PID`) veya işlem adı (*ProcName*) belirtir. **/ detach** belirlenmiş bir işlem için belirtilen işlem veya tüm işlemler için veri toplamayı durdurur.|
 
-## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme  
- Profil oluşturma oturumunu sona erdirmek için Profil Oluşturucu veri toplamıyor olmalıdır. Eşzamanlılık yöntemi ile profili çağırılarak veya ASP.NET çalışan sürecin yeniden başlatılarak tarafından oluşturulan bir uygulamadan veri toplamayı durdurabilirsiniz **VSPerfCmd / detach** seçeneği. Ardından çağırmak **VSPerfCmd/shutdown** profil oluşturucuyu devre dışı bırakırsınız ve profil oluşturma veri dosyasını kapatırsınız. **VSPerfClrEnv /globaloff** komutu profil oluşturma ortam değişkenlerini temizler, ancak bilgisayar yeniden başlatılana kadar sistem yapılandırması sıfırlanmaz.  
+## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme
+ Profil oluşturma oturumunu sona erdirmek için Profil Oluşturucu veri toplamıyor olmalıdır. Eşzamanlılık yöntemi ile profili çağırılarak veya ASP.NET çalışan sürecin yeniden başlatılarak tarafından oluşturulan bir uygulamadan veri toplamayı durdurabilirsiniz **VSPerfCmd / detach** seçeneği. Ardından çağırmak **VSPerfCmd/shutdown** profil oluşturucuyu devre dışı bırakırsınız ve profil oluşturma veri dosyasını kapatırsınız. **VSPerfClrEnv /globaloff** komutu profil oluşturma ortam değişkenlerini temizler, ancak bilgisayar yeniden başlatılana kadar sistem yapılandırması sıfırlanmaz.
 
-#### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için  
+#### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için
 
-1.  Hedef uygulamadaki profil oluşturucuyu kapatarak veya bir komut istemine aşağıdakileri yazarak bağlantısını kesin:  
+1.  Hedef uygulamadaki profil oluşturucuyu kapatarak veya bir komut istemine aşağıdakileri yazarak bağlantısını kesin:
 
-     **VSPerfCmd / detach**  
+     **VSPerfCmd / detach**
 
-2.  Bir komut isteminde aşağıdaki komutu yazarak profil oluşturucuyu kapatın:  
+2.  Bir komut isteminde aşağıdaki komutu yazarak profil oluşturucuyu kapatın:
 
-     **VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)  
+     **VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil oluşturma VSPerfASPNETCmd ile hızlı web sitesi](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

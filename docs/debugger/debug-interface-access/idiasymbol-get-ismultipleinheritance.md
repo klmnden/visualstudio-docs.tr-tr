@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c680e1faf7a2a70f7763b55e5fa521d94bb819e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941373"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596470"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-Belirtir olup olmadığını `this` işaretçi birden çok devralma ile veri üyesine işaret eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_isMultipleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir işaretçi bir `BOOL` belirtir olup olmadığını `this` işaretçi birden çok devralma ile veri üyesine işaret eder.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Belirtir olup olmadığını `this` işaretçi birden çok devralma ile veri üyesine işaret eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_isMultipleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir işaretçi bir `BOOL` belirtir olup olmadığını `this` işaretçi birden çok devralma ile veri üyesine işaret eder.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4053a49b0b0a4ebf55e55f0633672d98c2f02ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f72c39e7cbfe9589d2fdf6ed8d1b8f25dee99936
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975211"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626017"
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
-Çerçevenin temel adresi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_base (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Taban adresi döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Çerçevenin temel adresi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_base ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Taban adresi döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` özelliği desteklenmiyorsa. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

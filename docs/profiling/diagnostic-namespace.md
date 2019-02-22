@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984060"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600679"
 ---
 # <a name="diagnostic-namespace"></a>Tanılama ad alanı
-`diagnostics` Ad alanı için eşzamanlılık görselleştiricisi işaretleyicileri yayma işlevselliği sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-namespace diagnostic;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="classes"></a>Sınıflar  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[marker_series Sınıfı](../profiling/marker-series-class.md)|Tek bir sağlayıcı tarafından oluşturulan olayları seri bir kanalı temsil eder.|  
-|[span Sınıfı](../profiling/span-class.md)|Uygulamanın bir aşama tanımlar.|  
-  
-### <a name="enumerations"></a>Numaralandırmalar  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[marker_importance Sabit Listesi](../profiling/marker-importance-enumeration.md)|Eşzamanlılık görselleştiricisi işaretleyicisi önem düzeyini temsil eder.|  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** Eşzamanlılık  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Eşzamanlılık ad alanı (eşzamanlılık görselleştiricisi)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+`diagnostics` Ad alanı için eşzamanlılık görselleştiricisi işaretleyicileri yayma işlevselliği sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+namespace diagnostic;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="classes"></a>Sınıflar
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[marker_series Sınıfı](../profiling/marker-series-class.md)|Tek bir sağlayıcı tarafından oluşturulan olayları seri bir kanalı temsil eder.|
+|[span Sınıfı](../profiling/span-class.md)|Uygulamanın bir aşama tanımlar.|
+
+### <a name="enumerations"></a>Numaralandırmalar
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[marker_importance Sabit Listesi](../profiling/marker-importance-enumeration.md)|Eşzamanlılık görselleştiricisi işaretleyicisi önem düzeyini temsil eder.|
+
+## <a name="requirements"></a>Gereksinimler
+ **Header:** *cvmarkersobj.h*
+
+ **Namespace:** Eşzamanlılık
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Eşzamanlılık ad alanı (eşzamanlılık görselleştiricisi)](../profiling/concurrency-namespace-concurrency-visualizer.md)

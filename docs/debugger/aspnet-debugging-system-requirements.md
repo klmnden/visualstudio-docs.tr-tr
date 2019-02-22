@@ -16,41 +16,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d86b27a27884c0b8764c28a25ffb8ea9623efd9c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 455ed4c8fc4129c4e21123d359a088f6eac5cfca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025383"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604971"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
-Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hata ayıklama senaryoları:  
-  
-- Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:  
-  
-  - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod dosya sisteminde yer alıyor.  
-  
-  - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod, bir IIS Web sitesinde yer alıyor.  
-  
-- Uzaktan, içinde hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir istemci bilgisayarda çalışan ve bir uzak sunucu bilgisayarda çalışan bir Web uygulaması hata ayıklamasına.  
-  
-## <a name="security-requirements"></a>Güvenlik Gereksinimleri  
- Uzaktan hata ayıklama için yerel ve uzak bilgisayarlar bir etki alanı kurulumu veya bir çalışma grubu kurulum olması gerekir.  
-  
+Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] hata ayıklama senaryoları:
+
+- Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:
+
+  - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod dosya sisteminde yer alıyor.
+
+  - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Kod, bir IIS Web sitesinde yer alıyor.
+
+- Uzaktan, içinde hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir istemci bilgisayarda çalışan ve bir uzak sunucu bilgisayarda çalışan bir Web uygulaması hata ayıklamasına.
+
+## <a name="security-requirements"></a>Güvenlik Gereksinimleri
+ Uzaktan hata ayıklama için yerel ve uzak bilgisayarlar bir etki alanı kurulumu veya bir çalışma grubu kurulum olması gerekir.
+
  Hata ayıklamak için [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi (bir uygulama havuzu tarafından barındırılan), bu işlemde hata ayıklamak için izni olmalıdır. Varsayılan olarak, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IIS 6.0 öncesinde uygulamaları çalıştırma olarak **ASPNET** kullanıcı. IIS 6.0 ve IIS 7. 0'da, **ağ hizmeti** varsayılan hesaptır. Çalışan işlem olarak çalışıyorsa **ASPNET**, veya as **ağ hizmeti**, hata ayıklamak için yönetici ayrıcalıklarınız olmalıdır.
 
  > [!IMPORTANT]
  > Windows Server 2008 R2 ile başlayarak, kullanılmasını öneririz [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) her uygulama havuzunun kimliği olarak.
-  
- Adını [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi senaryo hata ayıklama ve IIS sürümüne göre farklılık gösterir. Daha fazla bilgi için [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
-  
- Kullanıcı değiştirebilir, hesap [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] altında çalışan IIS çalıştıran sunucuda machine.config dosyasının düzenleyerek çalışan işlemi. Bunu yapmanın en iyi yolu kullanmaktır **Internet Information Services (IIS) Yöneticisi'ni**. Daha fazla bilgi için [nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
-  
- Değiştirirseniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kendi kullanıcı hesabı altında çalışacak şekilde çalışan işlemi IIS çalıştıran sunucuda yönetici olmanız gerekmez.  
-  
+
+ Adını [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi senaryo hata ayıklama ve IIS sürümüne göre farklılık gösterir. Daha fazla bilgi için [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
+
+ Kullanıcı değiştirebilir, hesap [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] altında çalışan IIS çalıştıran sunucuda machine.config dosyasının düzenleyerek çalışan işlemi. Bunu yapmanın en iyi yolu kullanmaktır **Internet Information Services (IIS) Yöneticisi'ni**. Daha fazla bilgi için [nasıl yapılır: Bir kullanıcı hesabı altında çalışan işlemini çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+
+ Değiştirirseniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kendi kullanıcı hesabı altında çalışacak şekilde çalışan işlemi IIS çalıştıran sunucuda yönetici olmanız gerekmez.
+
 > [!CAUTION]
->  Değiştirmeden önce [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi farklı bir hesap altında çalıştırmayı göz önünde bulundurun olası sonuçları, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi ele söz konusu hesap altında çalışırken. ASP.NET ve ağ hizmeti kullanıcı hesaplarını işlemi ele, olası hasarı azaltmak çok az izinleriyle çalıştırın. Değiştirmeniz gerekiyorsa [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] büyük izinleri olan bir hesabı altında çalışacak şekilde çalışan işlemi durumdaki potansiyel hasarı büyüktür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Nasıl yapılır: Bir Kullanıcı Hesabı Altında Çalışan İşlemini Çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+>  Değiştirmeden önce [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi farklı bir hesap altında çalıştırmayı göz önünde bulundurun olası sonuçları, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi ele söz konusu hesap altında çalışırken. ASP.NET ve ağ hizmeti kullanıcı hesaplarını işlemi ele, olası hasarı azaltmak çok az izinleriyle çalıştırın. Değiştirmeniz gerekiyorsa [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] büyük izinleri olan bir hesabı altında çalışacak şekilde çalışan işlemi durumdaki potansiyel hasarı büyüktür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+- [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Nasıl yapılır: Bir Kullanıcı Hesabı Altında Çalışan İşlemini Çalıştırma](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

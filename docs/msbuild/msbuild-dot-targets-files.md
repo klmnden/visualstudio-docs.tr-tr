@@ -16,24 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4053cd105bddf94644318ff7e06811e8d8cbbaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa0366fed1a405acfa600e9af594e32c1ab47346
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961903"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623755"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets dosyaları
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birkaç içeren *.targets* öğeleri, özellikleri, hedefleri ve görevleri sık karşılaşılan senaryolara yönelik içeren dosyaları. Bu dosyaları en otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje dosyaları, Bakım ve okunabilirliği kolaylaştırmak.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] birkaç içeren *.targets* öğeleri, özellikleri, hedefleri ve görevleri sık karşılaşılan senaryolara yönelik içeren dosyaları. Bu dosyaları en otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje dosyaları, Bakım ve okunabilirliği kolaylaştırmak.
 
- Projeleri genellikle bir veya daha fazla Al *.targets* yapı işlemlerini tanımlamak için dosyaları. Örneğin bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje tarafından oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] içeri aktaracak *Microsoft.CSharp.targets* hangi içeri aktarmalar *Microsoft.Common.targets*. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Projenin kendisinin tanımlama öğeleri ve belirli özellikleri bu projeye, ancak standart derleme kuralları için bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje tanımlanır, içeri aktarılan *.targets* dosyaları.  
+ Projeleri genellikle bir veya daha fazla Al *.targets* yapı işlemlerini tanımlamak için dosyaları. Örneğin bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje tarafından oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] içeri aktaracak *Microsoft.CSharp.targets* hangi içeri aktarmalar *Microsoft.Common.targets*. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Projenin kendisinin tanımlama öğeleri ve belirli özellikleri bu projeye, ancak standart derleme kuralları için bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] proje tanımlanır, içeri aktarılan *.targets* dosyaları.
 
- `$(MSBuildToolsPath)` Değeri bu ortak yolu belirtir *.targets* dosyaları. Varsa `ToolsVersion` 4.0, dosyaları şu konumda: *\<WindowsInstallationPath > \Microsoft.NET\Framework\v4.0.30319\\*  
+ `$(MSBuildToolsPath)` Değeri bu ortak yolu belirtir *.targets* dosyaları. Varsa `ToolsVersion` 4.0, dosyaları şu konumda: *\<WindowsInstallationPath > \Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
->  Kendi hedefleri oluşturma hakkında daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md). Nasıl kullanılacağı hakkında daha fazla bilgi için `Import` öğesinin başka bir proje dosyasına bir proje dosyası eklemek için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md) ve [nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+>  Kendi hedefleri oluşturma hakkında daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md). Nasıl kullanılacağı hakkında daha fazla bilgi için `Import` öğesinin başka bir proje dosyasına bir proje dosyası eklemek için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md) ve [nasıl yapılır: Birden çok proje dosyasında aynı hedefi kullanma](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
 
-## <a name="common-targets-files"></a>Ortak .targets dosyaları  
+## <a name="common-targets-files"></a>Ortak .targets dosyaları
 
 | *.targets* dosyası | Açıklama |
 |---------------------------------| - |
@@ -44,7 +44,7 @@ ms.locfileid: "54961903"
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets* özelleştirmeleri bir dizin altında projelerine sağlayan kullanıcı tanımlı bir dosya. Bu dosya gelen otomatik olarak içeri aktarılır *Microsoft.Common.targets* sürece özelliği **ImportDirectoryBuildTargets** ayarlanır **false**.
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [İçeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [İçeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

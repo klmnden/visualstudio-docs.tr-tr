@@ -18,64 +18,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a7ecc4c91dcb39d090c00b7b2ed37bd6bb906c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff783c76595e1cc79d2520a4e27f5afa01b0a978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011903"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603683"
 ---
 # <a name="onerror-element-msbuild"></a>OnError öğesi (MSBuild)
-Yürütülmek üzere bir veya daha fazla hedef neden `ContinueOnError` özniteliği `false` için başarısız bir görev.  
+Yürütülmek üzere bir veya daha fazla hedef neden `ContinueOnError` özniteliği `false` için başarısız bir görev.
 
- \<Proje >  
- \<Hedef >  
- \<OnError >  
+ \<Proje > \<hedef > \<OnError >
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<OnError ExecuteTargets="TargetName"  
-    Condition="'String A'=='String B'" />  
-```  
+```xml
+<OnError ExecuteTargets="TargetName"
+    Condition="'String A'=='String B'" />
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
-|`ExecuteTargets`|Gerekli öznitelik.<br /><br /> Bir görev başarısız olursa yürütmek için hedefler. Birden çok hedef noktalı virgülle ayırın. Birden çok hedefe, belirtilen sırayla yürütülür.|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
+|`ExecuteTargets`|Gerekli öznitelik.<br /><br /> Bir görev başarısız olursa yürütmek için hedefler. Birden çok hedef noktalı virgülle ayırın. Birden çok hedefe, belirtilen sırayla yürütülür.|
 
-### <a name="child-elements"></a>Alt öğeleri  
- Yok.  
+### <a name="child-elements"></a>Alt öğeleri
+ Yok.
 
-### <a name="parent-elements"></a>Üst öğeler  
+### <a name="parent-elements"></a>Üst öğeler
 
 | Öğe | Açıklama |
 | - | - |
 | [Hedef](../msbuild/target-element-msbuild.md) | İçin kapsayıcı öğe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri. |
 
-## <a name="remarks"></a>Açıklamalar  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yürütür `OnError` öğe varsa, `Target` öğenin görevler başarısız oluyor `ContinueOnError` özniteliğini `ErrorAndStop` (veya `false`). Görev başarısız olduğunda, belirtilen hedef `ExecuteTargets` özniteliği yürütülür. Varsa birden fazla `OnError` hedef öğesinde `OnError` öğeleri görevi başarısız olduğunda sırayla yürütülür.  
+## <a name="remarks"></a>Açıklamalar
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yürütür `OnError` öğe varsa, `Target` öğenin görevler başarısız oluyor `ContinueOnError` özniteliğini `ErrorAndStop` (veya `false`). Görev başarısız olduğunda, belirtilen hedef `ExecuteTargets` özniteliği yürütülür. Varsa birden fazla `OnError` hedef öğesinde `OnError` öğeleri görevi başarısız olduğunda sırayla yürütülür.
 
- Hakkında bilgi için `ContinueOnError` özniteliği için bkz: [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md). Hedefleri hakkında daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md).  
+ Hakkında bilgi için `ContinueOnError` özniteliği için bkz: [görev öğesi (MSBuild)](../msbuild/task-element-msbuild.md). Hedefleri hakkında daha fazla bilgi için bkz: [hedefleri](../msbuild/msbuild-targets.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki kodu çalıştırır `TaskOne` ve `TaskTwo` görevleri. Varsa `TaskOne` başarısız olursa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] değerlendirir `OnError` öğesi ve yürüten `OtherTarget` hedef.  
+## <a name="example"></a>Örnek
+ Aşağıdaki kodu çalıştırır `TaskOne` ve `TaskTwo` görevleri. Varsa `TaskOne` başarısız olursa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] değerlendirir `OnError` öğesi ve yürüten `OtherTarget` hedef.
 
-```xml  
-<Target Name="ThisTarget">  
-    <TaskOne ContinueOnError="ErrorAndStop">  
-    </TaskOne>  
-    <TaskTwo>  
-    </TaskTwo>  
-    <OnError ExecuteTargets="OtherTarget" />  
-</Target>  
-```  
+```xml
+<Target Name="ThisTarget">
+    <TaskOne ContinueOnError="ErrorAndStop">
+    </TaskOne>
+    <TaskTwo>
+    </TaskTwo>
+    <OnError ExecuteTargets="OtherTarget" />
+</Target>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
- [Hedefler](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Hedefler](../msbuild/msbuild-targets.md)

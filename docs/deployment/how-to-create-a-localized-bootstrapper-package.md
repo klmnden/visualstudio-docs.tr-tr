@@ -12,85 +12,85 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80896483e0d7d1f3b42fce11ed53cbd253dc1b82
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cbd9aab09d4972e5fe9c1784aed7cadf15c3db4c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611171"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Nasıl yapılır: Yerelleştirilmiş önyükleyici paketi oluşturma
-Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazla dosya oluşturarak yerelleştirilmiş önyükleyici paketi sürümlerini oluşturabilirsiniz: dosya bir yazılım lisans koşulları (gibi bir *eula.rtf*) ve bir paket bildirimi (*package.xml*).  
-  
- Varsayılan olarak, Visual Studio 2010 yalnızca .NET Framework 4 için .NET Framework 4 istemci profili, yerelleştirilmiş önyükleyici paketleri içerir F# çalışma zamanı 2.0 ve F# çalışma zamanı 4.0. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.  
-  
-1.  Yerel ayar adı sonra adlı bir klasör oluşturun *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.  
-  
-2.  Önyükleyici paketini Yazılım Lisans Koşulları'nı içeren bir dosya oluşturun ve yeni klasöre yerleştirin.  
-  
-3.  Adlı bir paket bildirimi oluşturma *package.xml*, kültür ve dizeleri güncelleştirmek ve dosyanın yeni klasöre yerleştirin. Visual Studio'nun bir önyükleyici hedef dilde zaten oluşturduysanız, Visual Studio kopyalayabilirsiniz *package.xml* dosya ve bu adımda değiştirin.  
-  
+Bir önyükleyici paketi oluşturduktan sonra her yerel ayar için iki daha fazla dosya oluşturarak yerelleştirilmiş önyükleyici paketi sürümlerini oluşturabilirsiniz: dosya bir yazılım lisans koşulları (gibi bir *eula.rtf*) ve bir paket bildirimi (*package.xml*).
+
+ Varsayılan olarak, Visual Studio 2010 yalnızca .NET Framework 4 için .NET Framework 4 istemci profili, yerelleştirilmiş önyükleyici paketleri içerir F# çalışma zamanı 2.0 ve F# çalışma zamanı 4.0. Yerelleştirilmiş paketler, diğer önyükleyiciler için üç adımları izleyerek oluşturabilirsiniz.
+
+1.  Yerel ayar adı sonra adlı bir klasör oluşturun *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.
+
+2.  Önyükleyici paketini Yazılım Lisans Koşulları'nı içeren bir dosya oluşturun ve yeni klasöre yerleştirin.
+
+3.  Adlı bir paket bildirimi oluşturma *package.xml*, kültür ve dizeleri güncelleştirmek ve dosyanın yeni klasöre yerleştirin. Visual Studio'nun bir önyükleyici hedef dilde zaten oluşturduysanız, Visual Studio kopyalayabilirsiniz *package.xml* dosya ve bu adımda değiştirin.
+
 > [!NOTE]
->  Uygulamaları dağıtmak için bir kurulum projesi kullanıyorsanız değiştirerek, uygulamanızın yerelleştirebilirsiniz **yerelleştirme** özelliği.  
-  
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
-  
-### <a name="to-create-a-localized-bootstrapper-package"></a>Yerelleştirilmiş önyükleyici paketi oluşturmak için  
-  
-1.  Yerel ayar adından sonra adlı bir klasör oluşturun.  
-  
-     32-bit bilgisayarlarda, klasörde oluşturmak *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\*  klasör.  
-  
-     64-bit bilgisayarlarda, klasörde oluşturmak *\Program dosyaları (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\*  klasör.  
-  
-     Aşağıdaki tabloda, bir yerel ayar eşleştirmek için kullanabileceğiniz klasör adlarını gösterir.  
-  
-    |Yerel Ayar|Klasör adı|  
-    |------------|-----------------|  
-    |ve|zh-Hans|  
-    |seçenekleri yerine|zh-Hant|  
-    |Çekçe|cs|  
-    |Almanca|de|  
-    |İngilizce|tr|  
-    |İspanyolca|ES|  
-    |Fransızca|FR|  
-    |İtalyanca|Bunu|  
-    |Korece|Ko|  
-    |Japonca|ja|  
-    |Lehçe|PL|  
-    |Portekizce (Brezilya)|pt-BR|  
-    |Rusça|RU|  
-    |Türkçe|tr|  
-  
-2.  Önyükleyici paketini Yazılım Lisans Koşulları'nı içeren bir dosya oluşturun ve yeni klasöre yerleştirin.  
-  
-3.  Adlı bir paket bildirimi oluşturma *package.xml* ve yeni klasöre yerleştirin. Daha fazla bilgi için [nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).  
-  
-4.  Güncelleştirme `<Strings>` paketin bölümünü bildirim yerel ayarı için doğru dilde dizelerdir.  
-  
-5.  Değişiklik `<String Name="Culture">` klasör adı eşleşecek değer.  
-  
-6.  Kaydet *package.xml* dosya.  
-  
-### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>.NET Framework 3.5 Service Pack 1'de Fransızca yerelleştirilmiş önyükleyici paketi oluşturmak için  
-  
-1.  Adlı bir klasör oluşturma *fr*. Klasör adı, yerel ayar adı eşleşmelidir.  
-  
-     32-bit bilgisayarlarda, klasörde oluşturmak *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*  klasör.  
-  
-     64-bit bilgisayarlarda, klasörde oluşturmak *\Program dosyaları (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*  klasör.  
-  
-2.  İçinde yazılım lisans koşulları yerelleştirilmiş bir sürümünü *fr* klasör.  
-  
-3.  Kopyalama *\Program dosyaları (x86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* dosyasını *fr* klasörü ve dosyayı XML Tasarımcısı'nda açın.  
-  
-4.  Güncelleştirme `<Strings>` paketin bölümünü bildiriminin Fransızca hata dizelerdir.  
-  
-5.  Değişiklik `<String Name="Culture">` değerini *fr*.  
-  
-6.  Kaydet *package.xml* dosya.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md)   
- [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md)   
- [Nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md)
+>  Uygulamaları dağıtmak için bir kurulum projesi kullanıyorsanız değiştirerek, uygulamanızın yerelleştirebilirsiniz **yerelleştirme** özelliği.
+
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+
+### <a name="to-create-a-localized-bootstrapper-package"></a>Yerelleştirilmiş önyükleyici paketi oluşturmak için
+
+1.  Yerel ayar adından sonra adlı bir klasör oluşturun.
+
+     32-bit bilgisayarlarda, klasörde oluşturmak *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\*  klasör.
+
+     64-bit bilgisayarlarda, klasörde oluşturmak *\Program dosyaları (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >\\*  klasör.
+
+     Aşağıdaki tabloda, bir yerel ayar eşleştirmek için kullanabileceğiniz klasör adlarını gösterir.
+
+    |Yerel Ayar|Klasör adı|
+    |------------|-----------------|
+    |ve|zh-Hans|
+    |seçenekleri yerine|zh-Hant|
+    |Çekçe|cs|
+    |Almanca|de|
+    |İngilizce|tr|
+    |İspanyolca|ES|
+    |Fransızca|FR|
+    |İtalyanca|Bunu|
+    |Korece|Ko|
+    |Japonca|ja|
+    |Lehçe|PL|
+    |Portekizce (Brezilya)|pt-BR|
+    |Rusça|RU|
+    |Türkçe|tr|
+
+2.  Önyükleyici paketini Yazılım Lisans Koşulları'nı içeren bir dosya oluşturun ve yeni klasöre yerleştirin.
+
+3.  Adlı bir paket bildirimi oluşturma *package.xml* ve yeni klasöre yerleştirin. Daha fazla bilgi için [nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md).
+
+4.  Güncelleştirme `<Strings>` paketin bölümünü bildirim yerel ayarı için doğru dilde dizelerdir.
+
+5.  Değişiklik `<String Name="Culture">` klasör adı eşleşecek değer.
+
+6.  Kaydet *package.xml* dosya.
+
+### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>.NET Framework 3.5 Service Pack 1'de Fransızca yerelleştirilmiş önyükleyici paketi oluşturmak için
+
+1.  Adlı bir klasör oluşturma *fr*. Klasör adı, yerel ayar adı eşleşmelidir.
+
+     32-bit bilgisayarlarda, klasörde oluşturmak *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*  klasör.
+
+     64-bit bilgisayarlarda, klasörde oluşturmak *\Program dosyaları (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*  klasör.
+
+2.  İçinde yazılım lisans koşulları yerelleştirilmiş bir sürümünü *fr* klasör.
+
+3.  Kopyalama *\Program dosyaları (x86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* dosyasını *fr* klasörü ve dosyayı XML Tasarımcısı'nda açın.
+
+4.  Güncelleştirme `<Strings>` paketin bölümünü bildiriminin Fransızca hata dizelerdir.
+
+5.  Değişiklik `<String Name="Culture">` değerini *fr*.
+
+6.  Kaydet *package.xml* dosya.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Önyükleyici paketleri oluşturma](../deployment/creating-bootstrapper-packages.md)
+- [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md)
+- [Nasıl yapılır: Paket bildirimi oluşturma](../deployment/how-to-create-a-package-manifest.md)

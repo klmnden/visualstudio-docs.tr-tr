@@ -15,24 +15,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdca652ebbd7e72675aeff2aa3c5849b7ca2f347
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2dc3721c00816d7cab9af3a4c14e427f4218d15d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974756"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618269"
 ---
 # <a name="functions-view"></a>İşlevler Görünümü
-İşlevler görünümü, profil oluşturma sırasında çağrılan işlevleri listeler.  
-  
- Varsayılan olarak, İşlevler adına göre listelenmiştir. Modülü tarafından işlevleri görüntülemek için İşlevler Görünümü penceresine sağ tıklatın ve ardından **Modül Görünümü Göster**. Bu modül görünümü görüntülenir.  
-  
- Sütun ekleme veya kaldırma için rapor penceresindeki sağ tıklayın ve ardından **sütunları Ekle/Kaldır**. Ayrıca, bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).  
-  
- İşlevler görünümünde kullanılabilen sütunların veri toplamak için kullanılan profil oluşturma yöntemine (örnekleme veya Araçlar) bağlıdır ve .NET bellek verileri profil oluşturma çalışmasında toplanan açmasa da Çalıştır.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İşlevler görünümü](../profiling/functions-view-sampling-data.md)   
- [İşlevler görünümü](../profiling/functions-view-instrumentation-data.md)   
- [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)
+İşlevler görünümü, profil oluşturma sırasında çağrılan işlevleri listeler.
+
+ Varsayılan olarak, İşlevler adına göre listelenmiştir. Modülü tarafından işlevleri görüntülemek için İşlevler Görünümü penceresine sağ tıklatın ve ardından **Modül Görünümü Göster**. Bu modül görünümü görüntülenir.
+
+ Sütun ekleme veya kaldırma için rapor penceresindeki sağ tıklayın ve ardından **sütunları Ekle/Kaldır**. Ayrıca, bir sütun adına tıklayarak verileri yeniden sıralayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Rapor görünümü sütunlarını özelleştirme](../profiling/how-to-customize-report-view-columns.md).
+
+ İşlevler görünümünde kullanılabilen sütunların veri toplamak için kullanılan profil oluşturma yöntemine (örnekleme veya Araçlar) bağlıdır ve .NET bellek verileri profil oluşturma çalışmasında toplanan açmasa da Çalıştır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İşlevler Görünümü](../profiling/functions-view-sampling-data.md)
+- [İşlevler Görünümü](../profiling/functions-view-instrumentation-data.md)
+- [İşlevler görünümü - izleme](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [İşlevler görünümü - örnekleme](../profiling/functions-view-dotnet-memory-sampling-data.md)

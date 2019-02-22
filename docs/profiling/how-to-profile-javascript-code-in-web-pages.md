@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043524"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646141"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Nasıl yapılır: Web sayfalarında JavaScript kodu profili
 
 Visual Studio profil oluşturma araçları, yürütülen JavaScript kodu için performans verilerini toplayabilir bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, bir rastgele web sayfası veya yöntemi profil oluşturma Araçları'nı kullanarak JavaScript uygulaması. Internet Explorer 8 veya sonraki sürümünü gerektirir.
 
 > [!WARNING]
-> UWP uygulamalarında JavaScript profili oluşturmak için bkz: [JavaScript belleği](../profiling/javascript-memory.md) 
+> UWP uygulamalarında JavaScript profili oluşturmak için bkz: [JavaScript belleği](../profiling/javascript-memory.md)
 
 Performans oturumu oluşturmak için profil oluşturma Sihirbazı'nı kullanabilirsiniz. Araçlar yöntemini belirtin ve ardından JavaScript profil oluşturma performans oturumu Özellikleri iletişim kutusunun izleme sayfasındaki seçeneğini belirtin.
 

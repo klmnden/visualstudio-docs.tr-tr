@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b2db748d747f1e3c12a2d9e91a4b310e31b0299c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335603"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613381"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamalarında hata ayıklama
 
@@ -63,7 +63,7 @@ Bu öğreticide şunları yapacaksınız:
 2. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
 
     * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
-  
+
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
@@ -73,7 +73,7 @@ Bu öğreticide şunları yapacaksınız:
     ![F5 aşağı açılan menüden snapshot debugger'ı Başlat](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), projeniz için dağıtıldığı Azure App Service'ı sağ tıklatın ve bir Azure depolama hesabını seçin ve ardından **Snapshot Debugger Ekle**.
-  
+
       ![Anlık görüntü Hata Ayıklayıcı'dan Cloud Explorer başlatma](../debugger/media/snapshot-launch.png)
 
     Seçtiğiniz ilk kez **Snapshot Debugger Ekle**, Azure App Service üzerinde Snapshot Debugger site uzantısını yüklemeniz istenir. Bu yükleme, Azure App service'inizi yeniden başlatılması gerekir.

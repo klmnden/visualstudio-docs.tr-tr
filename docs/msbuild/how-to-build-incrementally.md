@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853907"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621337"
 ---
 # <a name="how-to-build-incrementally"></a>Nasıl yapılır: Artımlı olarak derleme
 Büyük bir proje oluşturduğunuzda, daha önce hala güncel olan bileşenleri yerleşik olmayan yeniden önemlidir. Her yapı, her zaman tüm hedefleri oluşturulduysa, tamamlanması uzun sürer. Artımlı derlemeleri Etkinleştir için (hangi derlemelerde yalnızca önce oluşturulmuş değil veya hedefleyen bu hedefleri güncel yeniden), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırabilirsiniz ve atlayın, yapı ya da kısmi bir hedef yeniden belirleyin. Ancak, giriş ve çıkışları arasında bire bir eşleme olmalıdır. Dönüşümleri, doğrudan bu eşleme tanımlamak hedefleri etkinleştirmek için kullanabilirsiniz. Dönüşümler hakkında daha fazla bilgi için bkz. [dönüştüren](../msbuild/msbuild-transforms.md).
@@ -38,12 +38,12 @@ Proje dosyasında belirtilen girişler ve çıkışlar, bir hedef artımlı olar
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Giriş dosyaları zaman damgaları ve çıkış dosyalarının zaman damgalı karşılaştırın ve karar atlayın, yapı ya da kısmi bir hedefe yeniden kullanabilirsiniz. Aşağıdaki örnekte herhangi dosyası varsa `@(CSFile)` öğesi listesini daha yeniyse *hello.exe* dosyası [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedef çalışır; Aksi halde atlanır:
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ Bu proje dosyasını içeren `Convert` ve `Build` hedefler. `GenerateContentFile
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Hedefler](../msbuild/msbuild-targets.md)  
-[Hedef öğe (MSBuild)](../msbuild/target-element-msbuild.md)  
-[Dönüşümler](../msbuild/msbuild-transforms.md)  
-[CSC görevi](../msbuild/csc-task.md)  
-[Vbc görevi](../msbuild/vbc-task.md)
+- [Hedefler](../msbuild/msbuild-targets.md)
+- [Hedef öğe (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Dönüşümler](../msbuild/msbuild-transforms.md)
+- [CSC görevi](../msbuild/csc-task.md)
+- [Vbc görevi](../msbuild/vbc-task.md)

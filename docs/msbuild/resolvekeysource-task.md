@@ -18,35 +18,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 725e5816d6ea3f8323c9b1795faccef157ca9639
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 123c45ed23743335a1c4db2000dd241cb92ce291
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917074"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607375"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource görevi
-Tanımlayıcı ad anahtar kaynağını belirler.  
-  
-## <a name="task-parameters"></a>Görev parametreleri  
- Parametreleri aşağıdaki tabloda açıklanmıştır `ResolveKeySource` görev.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`AutoClosePasswordPromptShow`|İsteğe bağlı `Int32` parametresi.<br /><br /> Alır veya ileti sayımın görüntülemek için saniye cinsinden süreyi ayarlar.|  
-|`AutoClosePasswordPromptTimeout`|İsteğe bağlı `Int32` parametresi.<br /><br /> Alır veya parola istemi iletişim kutusunu kapatmadan önce beklenecek saniye cinsinden süreyi ayarlar.|  
-|`CertificateFile`|İsteğe bağlı `String` parametresi.<br /><br /> Alır veya sertifika dosyasının yolunu ayarlar.|  
-|`CertificateThumbprint`|İsteğe bağlı `String` parametresi.<br /><br /> Alır veya sertifika parmak izini ayarlar.|  
-|`KeyFile`|İsteğe bağlı `String` parametresi.<br /><br /> Alır veya ayarlar anahtar dosyasının yolu.|  
-|`ResolvedKeyContainer`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Alır veya ayarlar çözümlenen anahtar kapsayıcısı.|  
-|`ResolvedKeyFile`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Alır veya ayarlar çözümlenen anahtar dosyası.|  
-|`ResolvedThumbprint`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Alır veya çözümlenen sertifika parmak izini ayarlar.|  
-|`ShowImportDialogDespitePreviousFailures`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, önceki arızalarına Al iletişim kutusunu göster.|  
-|`SuppressAutoClosePasswordPrompt`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Alır veya ayarlar parola istemi iletişim otomatik-kapatmaz olmadığını belirten bir Boole değeri.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+Tanımlayıcı ad anahtar kaynağını belirler.
+
+## <a name="task-parameters"></a>Görev parametreleri
+ Parametreleri aşağıdaki tabloda açıklanmıştır `ResolveKeySource` görev.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`AutoClosePasswordPromptShow`|İsteğe bağlı `Int32` parametresi.<br /><br /> Alır veya ileti sayımın görüntülemek için saniye cinsinden süreyi ayarlar.|
+|`AutoClosePasswordPromptTimeout`|İsteğe bağlı `Int32` parametresi.<br /><br /> Alır veya parola istemi iletişim kutusunu kapatmadan önce beklenecek saniye cinsinden süreyi ayarlar.|
+|`CertificateFile`|İsteğe bağlı `String` parametresi.<br /><br /> Alır veya sertifika dosyasının yolunu ayarlar.|
+|`CertificateThumbprint`|İsteğe bağlı `String` parametresi.<br /><br /> Alır veya sertifika parmak izini ayarlar.|
+|`KeyFile`|İsteğe bağlı `String` parametresi.<br /><br /> Alır veya ayarlar anahtar dosyasının yolu.|
+|`ResolvedKeyContainer`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Alır veya ayarlar çözümlenen anahtar kapsayıcısı.|
+|`ResolvedKeyFile`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Alır veya ayarlar çözümlenen anahtar dosyası.|
+|`ResolvedThumbprint`|İsteğe bağlı `String` çıkış parametresi.<br /><br /> Alır veya çözümlenen sertifika parmak izini ayarlar.|
+|`ShowImportDialogDespitePreviousFailures`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, önceki arızalarına Al iletişim kutusunu göster.|
+|`SuppressAutoClosePasswordPrompt`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Alır veya ayarlar parola istemi iletişim otomatik-kapatmaz olmadığını belirten bir Boole değeri.|
+
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

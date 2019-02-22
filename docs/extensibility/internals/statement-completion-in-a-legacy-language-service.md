@@ -11,30 +11,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0310f515a444d0ff68fe971463602c484763848b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965685"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622806"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Deyim Tamamlama
-Deyim tamamlama tarafından dil hizmeti bir dil anahtar sözcüğü veya çekirdek Düzenleyicisi'nde yazarak başlatılan öğenin son kullanıcılara yardımcı olur işlemidir. Bu konuda, deyim tamamlama nasıl çalıştığını ve dil hizmetinizde nasıl ele alır.  
-  
- Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Deyim tamamlama uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Deyim tamamlamayı görüntüleme](../../extensibility/walkthrough-displaying-statement-completion.md).  
-  
+Deyim tamamlama tarafından dil hizmeti bir dil anahtar sözcüğü veya çekirdek Düzenleyicisi'nde yazarak başlatılan öğenin son kullanıcılara yardımcı olur işlemidir. Bu konuda, deyim tamamlama nasıl çalıştığını ve dil hizmetinizde nasıl ele alır.
+
+ Eski dil Hizmetleri bir VSPackage'ı bir parçası olarak uygulanır, ancak dil hizmeti özellikleri uygulamak için daha yeni MEF uzantıları kullanmaktır. Deyim tamamlama uygulamak için en yeni yolu hakkında daha fazla bilgi için bkz: [izlenecek yol: Deyim tamamlamayı görüntüleme](../../extensibility/walkthrough-displaying-statement-completion.md).
+
 > [!NOTE]
->  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.  
-  
-## <a name="implementing-statement-completion"></a>Deyim tamamlama uygulama  
- Çekirdek Düzenleyicisi'nde, deyim tamamlama etkileşimli olarak daha kolay yardımcı olur ve hızlı bir şekilde kod yazan özel bir kullanıcı arabirimini etkinleştirir. Deyim tamamlama, gerektiğinde, ilgili nesneleri veya sınıflar, belirli öğeleri anımsamak veya bir Yardım başvuru konusundaki aramak zorunda kalmadan önler görüntüleyerek yardımcı olur.  
-  
- Deyim tamamlama uygulamak için kendi dilinizde ayrıştırılabilir bir deyim tamamlanma tetikleyici olmalıdır. Örneğin, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] bir nokta (.) işlecini kullanır ancak [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] okun kullanır (->) işleci. Dil hizmeti, birden fazla tetikleyici, deyim tamamlama başlatmak için kullanabilirsiniz. Komut filtreye programlanmış tetikler.  
-  
-## <a name="command-filters-and-triggers"></a>Komut filtreleri ve tetikleyiciler  
- Tetikleyici veya tetikleyicileri oluşumlarını komutunu filtreleri müdahale. Görünüme komut filtre eklemek için uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve çağırarak görünümüne eklemek <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> yöntemi. Aynı komutu filtresini kullanabilirsiniz (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) deyim tamamlama, hata işaretçileri ve yöntemi ipuçları gibi dil hizmetinizi tüm yönleri için. Daha fazla bilgi için [kesintiye eski dil hizmeti komutlarını](../../extensibility/internals/intercepting-legacy-language-service-commands.md).  
-  
- Tetikleyici düzenleyicide girilen zaman — özellikle metin arabelleğini — daha sonra dil hizmetinizi çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> yöntemi. Bu, kullanıcı deyim tamamlama aday arasından seçebilir böylece UI'yi getirmek Düzenleyici neden olur. Bu yöntem, uygulamak gerektirir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ve <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> parametre olarak bayrakları. Tamamlama öğeleri listesi, kayan bir liste kutusunda görüntülenir. Kullanıcı yazmaya devam ettikçe seçim liste kutusu içinde en yakın eşleşme en son karakter için yazılan yansıtacak şekilde güncelleştirilir. Çekirdek Düzenleyici deyim tamamlama için kullanıcı arabirimini uygular, ancak dil hizmeti uygulamalıdır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> deyimi için aday tamamlama öğeleri kümesini tanımlamak için arabirim.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Eski Dil Hizmeti Komutlarını Kesme](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+>  Yeni bir düzenleyici API hemen kullanmaya başlamak öneririz. Bu dil hizmetinizin performansını ve yeni düzenleyici özellikleri yararlanmanıza olanak tanır.
+
+## <a name="implementing-statement-completion"></a>Deyim tamamlama uygulama
+ Çekirdek Düzenleyicisi'nde, deyim tamamlama etkileşimli olarak daha kolay yardımcı olur ve hızlı bir şekilde kod yazan özel bir kullanıcı arabirimini etkinleştirir. Deyim tamamlama, gerektiğinde, ilgili nesneleri veya sınıflar, belirli öğeleri anımsamak veya bir Yardım başvuru konusundaki aramak zorunda kalmadan önler görüntüleyerek yardımcı olur.
+
+ Deyim tamamlama uygulamak için kendi dilinizde ayrıştırılabilir bir deyim tamamlanma tetikleyici olmalıdır. Örneğin, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] bir nokta (.) işlecini kullanır ancak [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] okun kullanır (->) işleci. Dil hizmeti, birden fazla tetikleyici, deyim tamamlama başlatmak için kullanabilirsiniz. Komut filtreye programlanmış tetikler.
+
+## <a name="command-filters-and-triggers"></a>Komut filtreleri ve tetikleyiciler
+ Tetikleyici veya tetikleyicileri oluşumlarını komutunu filtreleri müdahale. Görünüme komut filtre eklemek için uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim ve çağırarak görünümüne eklemek <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> yöntemi. Aynı komutu filtresini kullanabilirsiniz (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) deyim tamamlama, hata işaretçileri ve yöntemi ipuçları gibi dil hizmetinizi tüm yönleri için. Daha fazla bilgi için [kesintiye eski dil hizmeti komutlarını](../../extensibility/internals/intercepting-legacy-language-service-commands.md).
+
+ Tetikleyici düzenleyicide girilen zaman — özellikle metin arabelleğini — daha sonra dil hizmetinizi çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> yöntemi. Bu, kullanıcı deyim tamamlama aday arasından seçebilir böylece UI'yi getirmek Düzenleyici neden olur. Bu yöntem, uygulamak gerektirir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ve <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> parametre olarak bayrakları. Tamamlama öğeleri listesi, kayan bir liste kutusunda görüntülenir. Kullanıcı yazmaya devam ettikçe seçim liste kutusu içinde en yakın eşleşme en son karakter için yazılan yansıtacak şekilde güncelleştirilir. Çekirdek Düzenleyici deyim tamamlama için kullanıcı arabirimini uygular, ancak dil hizmeti uygulamalıdır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> deyimi için aday tamamlama öğeleri kümesini tanımlamak için arabirim.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Eski Dil Hizmeti Komutlarını Kesme](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

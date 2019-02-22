@@ -12,66 +12,68 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928835"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607856"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-Alır kısmını veya tamamını ve bir adı bir c++ ile düzenlenmiş adın (bağlantı).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_undecoratedNameEx(   
-   DWORD undecorateOptions,  
-   BSTR* pRetval  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `undecoratedOptions`  
- [in] Bayrakların birleşimi, denetimin ne döndürülür belirtir. Belirli değerleri ve ne yaptıkları için Açıklamalar bölümüne bakın.  
-  
- `pRetVal`  
- [out] Düzenlenmemiş adını bir C++ ile düzenlenmiş adın döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Alır kısmını veya tamamını ve bir adı bir c++ ile düzenlenmiş adın (bağlantı).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_undecoratedNameEx( 
+   DWORD undecorateOptions,
+   BSTR* pRetval
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `undecoratedOptions`
+
+[in] Bayrakların birleşimi, denetimin ne döndürülür belirtir. Belirli değerleri ve ne yaptıkları için Açıklamalar bölümüne bakın.
+
+ `pRetVal`
+
+[out] Düzenlenmemiş adını bir C++ ile düzenlenmiş adın döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `undecorateOptions` Aşağıdaki bayrakların birleşimi olabilir.  
-  
+>  Dönüş değeri `S_FALSE` özelliği simge için kullanılabilir değil anlamına gelir.
+
+## <a name="remarks"></a>Açıklamalar
+ `undecorateOptions` Aşağıdaki bayrakların birleşimi olabilir.
+
 > [!NOTE]
->  Bildirimleri kodunuza ekleyin ya da kullandığınız ham değerler gerek bayrağı adları DIA SDK içinde tanımlı değil.  
-  
-|Bayrağı|Değer|Açıklama|  
-|----------|-----------|-----------------|  
-|UNDNAME_COMPLETE|0x0000|Tam undecoration etkinleştirir.|  
-|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Genişletilmiş anahtar sözcükler Microsoft alt çizgi baştaki kaldırır.|  
-|UNDNAME_NO_MS_KEYWORDS|0x0002|Microsoft genişletilmiş anahtar sözcükleri genişletilmesi devre dışı bırakır.|  
-|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Genişletme birincil bildirimi için dönüş türünün devre dışı bırakır.|  
-|UNDNAME_NO_ALLOCATION_MODEL|0x0008|Bildirim modelinin genişletme devre dışı bırakır.|  
-|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Bildirim dil tanımlayıcısı genişletilmesi devre dışı bırakır.|  
-|UNDNAME_RESERVED1|0x0020|AYRILMIŞ.|  
-|UNDNAME_RESERVED2|0x0040|AYRILMIŞ.|  
-|UNDNAME_NO_THISTYPE|0x0060|Üzerindeki tüm değiştiricilere devre dışı bırakır `this` türü.|  
-|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Üyeleri için erişim belirticileri genişletilmesi devre dışı bırakır.|  
-|UNDNAME_NO_THROW_SIGNATURES|0x0100|Genişletme "throw-imzası" işlevleri ve işlev işaretçileri için devre dışı bırakır.|  
-|UNDNAME_NO_MEMBER_TYPE|0x0200|Genişletme, devre dışı bırakır `static` veya `virtual` üyeleri.|  
-|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|UDT döndüren için Microsoft modelinin genişletme devre dışı bırakır.|  
-|UNDNAME_32_BIT_DECODE|0x0800|32-bit düzenlenmiş adlar undecorates.|  
-|UNDNAME_NAME_ONLY|0x1000|Yalnızca birincil bildiriminin adı alır; yalnızca döndürür [kapsam::] adı.  Şablon parametreleri genişletir.|  
-|UNDNAME_TYPE_ONLY|0x2000|Kodlama türü yalnızca bir giriştir; bir soyut bildirimcisi oluşturur.|  
-|UNDNAME_HAVE_PARAMETERS|0x4000|Gerçek şablon parametreleri büyük/küçük harf kullanılabilir.|  
-|UNDNAME_NO_ECSU|0x8000|Enum/sınıf/yapı/birleşim bastırır.|  
-|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Geçerli tanımlayıcı karakterler için onay bastırır.|  
-|UNDNAME_NO_PTR64|0x20000|Ptr64 çıktısında içermez.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Bildirimleri kodunuza ekleyin ya da kullandığınız ham değerler gerek bayrağı adları DIA SDK içinde tanımlı değil.
+
+|Bayrağı|Değer|Açıklama|
+|----------|-----------|-----------------|
+|UNDNAME_COMPLETE|0x0000|Tam undecoration etkinleştirir.|
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Genişletilmiş anahtar sözcükler Microsoft alt çizgi baştaki kaldırır.|
+|UNDNAME_NO_MS_KEYWORDS|0x0002|Microsoft genişletilmiş anahtar sözcükleri genişletilmesi devre dışı bırakır.|
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Genişletme birincil bildirimi için dönüş türünün devre dışı bırakır.|
+|UNDNAME_NO_ALLOCATION_MODEL|0x0008|Bildirim modelinin genişletme devre dışı bırakır.|
+|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Bildirim dil tanımlayıcısı genişletilmesi devre dışı bırakır.|
+|UNDNAME_RESERVED1|0x0020|AYRILMIŞ.|
+|UNDNAME_RESERVED2|0x0040|AYRILMIŞ.|
+|UNDNAME_NO_THISTYPE|0x0060|Üzerindeki tüm değiştiricilere devre dışı bırakır `this` türü.|
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Üyeleri için erişim belirticileri genişletilmesi devre dışı bırakır.|
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|Genişletme "throw-imzası" işlevleri ve işlev işaretçileri için devre dışı bırakır.|
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Genişletme, devre dışı bırakır `static` veya `virtual` üyeleri.|
+|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|UDT döndüren için Microsoft modelinin genişletme devre dışı bırakır.|
+|UNDNAME_32_BIT_DECODE|0x0800|32-bit düzenlenmiş adlar undecorates.|
+|UNDNAME_NAME_ONLY|0x1000|Yalnızca birincil bildiriminin adı alır; yalnızca döndürür [kapsam::] adı.  Şablon parametreleri genişletir.|
+|UNDNAME_TYPE_ONLY|0x2000|Kodlama türü yalnızca bir giriştir; bir soyut bildirimcisi oluşturur.|
+|UNDNAME_HAVE_PARAMETERS|0x4000|Gerçek şablon parametreleri büyük/küçük harf kullanılabilir.|
+|UNDNAME_NO_ECSU|0x8000|Enum/sınıf/yapı/birleşim bastırır.|
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Geçerli tanımlayıcı karakterler için onay bastırır.|
+|UNDNAME_NO_PTR64|0x20000|Ptr64 çıktısında içermez.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

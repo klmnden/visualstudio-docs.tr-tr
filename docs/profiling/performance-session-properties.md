@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959427"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624977"
 ---
 # <a name="performance-session-properties"></a>Performans oturumu özellikleri
 
@@ -38,7 +38,7 @@ Daha fazla bilgi için bkz.:
 
 [.NET bellek ayırma ve yaşam süresi verilerini toplama](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Nasıl yapılır: Performans veri dosyası adlandırma seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Nasıl yapılır: Performans veri dosyası adlandırma seçeneklerini ayarlama](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Başlat
 
@@ -111,6 +111,6 @@ Daha fazla bilgi için bkz.:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Bakışlar](../profiling/overviews-performance-tools.md)  
-[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Veri toplamayı denetleme](../profiling/controlling-data-collection.md)
+[Genel bakışlar](../profiling/overviews-performance-tools.md)
+[performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+[veri koleksiyonu denetimi](../profiling/controlling-data-collection.md)

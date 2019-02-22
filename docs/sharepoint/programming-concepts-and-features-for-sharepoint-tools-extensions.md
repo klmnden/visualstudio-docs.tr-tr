@@ -12,29 +12,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82424a62afa474d6db4df6933071523ce61343a5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873960"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599070"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint araç uzantıları için programlama kavramları ve Özellikler
-  Birkaç önemli programlama kavramları ve Visual Studio'da SharePoint araçları için ilgili özellikleri vardır. Bu kavramları ve Özellikler çoğu SharePoint araçları uzantılarında önemli bir rol oynar.  
-  
+  Birkaç önemli programlama kavramları ve Visual Studio'da SharePoint araçları için ilgili özellikleri vardır. Bu kavramları ve Özellikler çoğu SharePoint araçları uzantılarında önemli bir rol oynar.
+
 ## <a name="in-this-section"></a>Bu bölümde
- [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)  
- SharePoint araç uzantıları SharePoint sunucusu nesne modellerinden ve SharePoint istemci kullanarak karşılaştırır ve nasıl oluşturabileceğiniz hakkında bilgi sağlar *SharePoint komutları* SharePoint sunucusu nesne modeline çağrı yapmak.  
-  
- [SharePoint Proje hizmetini kullanın](../sharepoint/using-the-sharepoint-project-service.md)  
- SharePoint Proje hizmeti için SharePoint araçları uzantıları sağlar ve farklı türde uzantıları hizmetinde almak için yönergeler sağlar özellikleri açıklar.  
-  
- [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
- Belirli bir türdeki nesneler SharePoint araç uzantıları ile özel verileri ilişkilendirme açıklar.  
-  
+ [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md)
+
+ SharePoint araç uzantıları SharePoint sunucusu nesne modellerinden ve SharePoint istemci kullanarak karşılaştırır ve nasıl oluşturabileceğiniz hakkında bilgi sağlar *SharePoint komutları* SharePoint sunucusu nesne modeline çağrı yapmak.
+
+ [SharePoint Proje hizmetini kullanın](../sharepoint/using-the-sharepoint-project-service.md)
+
+ SharePoint Proje hizmeti için SharePoint araçları uzantıları sağlar ve farklı türde uzantıları hizmetinde almak için yönergeler sağlar özellikleri açıklar.
+
+ [SharePoint araç uzantıları ile özel verileri ilişkilendirme](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
+
+ Belirli bir türdeki nesneler SharePoint araç uzantıları ile özel verileri ilişkilendirme açıklar.
+
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint araçlarını Visual Studio'da genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Uzantıları Visual Studio'da SharePoint araçları için hata ayıklama](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
- [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+- [SharePoint araçlarını Visual Studio'da genişletme](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [SharePoint Proje sistemini genişletme](../sharepoint/extending-the-sharepoint-project-system.md)
+- [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Uzantıları Visual Studio'da SharePoint araçları için hata ayıklama](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

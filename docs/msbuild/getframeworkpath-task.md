@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853410"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610365"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath görevi
 Yolunu alır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] derlemeler.
@@ -61,5 +61,5 @@ Aşağıdaki örnekte `GetFrameworkPath` yolunu depolamak için görev [!INCLUDE
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

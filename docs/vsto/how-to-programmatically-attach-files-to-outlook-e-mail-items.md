@@ -15,24 +15,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abc4b3cfd8e4c7ad9ca5ed8b7fae0f4f7f603e0d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868635"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612159"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Nasıl yapılır: Outlook e-posta öğelerine program aracılığıyla dosya ekleme
-  Bu örnek, bir dosya için yeni bir posta öğesi ekler ve Armando Pinto gönderir. Örnekte, alıcı olarak Armando Pinto adlı bir kişi var. varsayılır.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Örnek  
+  Bu örnek, bir dosya için yeni bir posta öğesi ekler ve Armando Pinto gönderir. Örnekte, alıcı olarak Armando Pinto adlı bir kişi var. varsayılır.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Örnek
  [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)   
- [Nasıl yapılır: Program aracılığıyla e-posta gönderme](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Nasıl yapılır: Ekleri Outlook e-posta öğelerinden program aracılığıyla kaydetme](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Nasıl yapılır: Program aracılığıyla bir e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
+ [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Posta öğeleriyle çalışma](../vsto/working-with-mail-items.md)
+- [Nasıl yapılır: Program aracılığıyla e-posta gönderme](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
+- [Nasıl yapılır: Ekleri Outlook e-posta öğelerinden program aracılığıyla kaydetme](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [Nasıl yapılır: Program aracılığıyla bir e-posta öğesi oluşturma](../vsto/how-to-programmatically-create-an-e-mail-item.md)

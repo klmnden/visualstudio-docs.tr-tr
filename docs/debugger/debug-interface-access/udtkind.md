@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb649915179bc6e6b767970150df99caff306b4c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317737"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636586"
 ---
 # <a name="udtkind"></a>UdtKind
 Kullanıcı tanımlı tür (UDT) çeşitli açıklar.
@@ -34,17 +34,13 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Öğeleri
-UdtStruct  
-UDT bir yapıdır.
+UdtStruct UDT bir yapıdır.
 
-UdtClass  
-UDT bir sınıftır.
+UdtClass UDT bir sınıftır.
 
-UdtUnion  
-UDT bir birleşimdir.
+UdtUnion UDT bir birleşimdir.
 
-UdtInterface  
-UDT bir arabirimdir.
+UdtInterface UDT bir arabirimdir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu sabit listesi değerleri tarafından döndürülen [Idiasymbol::get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) yöntemi.
@@ -53,5 +49,5 @@ Bu sabit listesi değerleri tarafından döndürülen [Idiasymbol::get_udtkind](
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

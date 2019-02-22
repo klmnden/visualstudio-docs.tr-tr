@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963794"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626693"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke görevi
 
@@ -30,7 +30,7 @@ Bir XML dosyasına bir XPath sorgusu tarafından belirtilen değerleri ayarlar.
 ## <a name="parameters"></a>Parametreler
 
  Parametreleri aşağıdaki tabloda açıklanmıştır `XmlPoke` görev.
-  
+
 |Parametre|Açıklama|
 |---------------|-----------------|
 |`Namespaces`|İsteğe bağlı `String` parametresi.<br /><br /> XPath sorgusu ön ekleri için ad alanlarını belirtir. `Namespaces` olan oluşan bir XML kod parçacığı `Namespace` öznitelikleri öğelerle `Prefix` ve `Uri`. Öznitelik `Prefix` önek belirtilen ad alanı ile ilişkilendirilecek belirtir `Uri` özniteliği. Boş bir kullanmayın `Prefix`.|
@@ -81,5 +81,5 @@ Bu örnekte, değişiklik yapmak istiyorsanız `/Package/mp:PhoneIdentity/PhoneP
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

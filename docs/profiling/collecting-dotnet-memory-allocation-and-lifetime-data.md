@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab421e4a74b76d8caf8edba159b640c9313215c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006092"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635104"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>.NET bellek ayırma ve yaşam süresi verilerini toplama
 
@@ -79,6 +79,6 @@ Seçenekler aşağıdaki tabloda görevlerdir **özellik sayfaları** cihaz atam
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)  
-[Performans oturumu özellikleri](../profiling/performance-session-properties.md)
+[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+[nasıl yapılır: Koleksiyon metotları seçme](../profiling/how-to-choose-collection-methods.md)
+[performans oturumu özellikleri](../profiling/performance-session-properties.md)

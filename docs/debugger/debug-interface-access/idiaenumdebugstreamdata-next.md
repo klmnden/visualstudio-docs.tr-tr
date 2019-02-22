@@ -12,47 +12,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3167df4d26cac10894a21f82faacdc0fe3590d74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 558dd6a54d4fa4a5d9cb8f5613de5ed00d761de7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031441"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642033"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Belirtilen sayıda numaralandırılan sıralı kayıtları alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT Next (   
-   ULONG  celt,  
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[],  
-   ULONG* pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- celt  
- [in] Alınacak kayıt sayısı.  
-  
- cbData  
- [in] Veri arabelleğin bayt cinsinden boyutu.  
-  
- pcbData  
- [out] Döndürülen bayt sayısını döndürür. Varsa `data` NULL ise `pcbData` tüm kayıtları istenen bayt veri kullanılabilir toplam sayısını içerir.  
-  
- veri]  
- [out] Hata ayıklama akışı kaydı veri ile doldurulacak olan bir arabellek.  
-  
- pceltFetched  
- [out içinde] Kayıt sayısını döndürür `data`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` daha fazla kayıt varsa. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)
+Belirtilen sayıda numaralandırılan sıralı kayıtları alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Next ( 
+   ULONG  celt,
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[],
+   ULONG* pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ celt
+
+[in] Alınacak kayıt sayısı.
+
+ cbData
+
+[in] Veri arabelleğin bayt cinsinden boyutu.
+
+ pcbData
+
+[out] Döndürülen bayt sayısını döndürür. Varsa `data` NULL ise `pcbData` tüm kayıtları istenen bayt veri kullanılabilir toplam sayısını içerir.
+
+ veri]
+
+[out] Hata ayıklama akışı kaydı veri ile doldurulacak olan bir arabellek.
+
+ pceltFetched
+- [out içinde] Kayıt sayısını döndürür `data`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` daha fazla kayıt varsa. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

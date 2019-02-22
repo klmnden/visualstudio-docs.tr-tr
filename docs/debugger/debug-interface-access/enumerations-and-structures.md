@@ -15,71 +15,93 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ac4a455b0fd585568ca53e65557133e2d761a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8a38138b5688d0c6573b18f3b0d875abcf627c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969830"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636365"
 ---
 # <a name="enumerations-and-structures"></a>Numaralandırmalar ve Yapılar
-DIA SDK'sı tarafından kullanılan yapılar ve numaralandırmalar şunlardır.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
-  
-## <a name="enumerations"></a>Numaralandırmalar  
- [BasicType Numaralandırması](../../debugger/debug-interface-access/basictype.md)  
- Simgenin temel türünü belirtir.  
-  
- [CV_access_e Numaralandırması](../../debugger/debug-interface-access/cv-access-e.md)  
- Görünürlüğü (erişim düzeyi) üye işlevleri ve değişkenler kapsamını belirtir.  
-  
- [CV_call_e Numaralandırması](../../debugger/debug-interface-access/cv-call-e.md)  
- Bir işlev çağırma kuralını belirtir.  
-  
- [CV_CFL_LANG Numaralandırması](../../debugger/debug-interface-access/cv-cfl-lang.md)  
- Bağlantılı modül ve uygulama kaynak kod dilini belirtir.  
-  
- [CV_CPU_TYPE_e Numaralandırması](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
- Hedef işlemci belirtir.  
-  
- [CV_HREG_e Numaralandırması](../../debugger/debug-interface-access/cv-hreg-e.md)  
- Bir hedef kayıt belirtir.  
-  
- [DataKind Numaralandırması](../../debugger/debug-interface-access/datakind.md)  
- Veri değeri belirli kapsamını belirtir.  
-  
- [LocationType Numaralandırması](../../debugger/debug-interface-access/locationtype.md)  
- Konum bilgilerini bir sembol içinde yer alan türünü gösterir.  
-  
- [MemoryTypeEnum Numaralandırması](../../debugger/debug-interface-access/memorytypeenum.md)  
- Bellek erişim türünü belirtir.  
-  
- [NameSearchOptions Numaralandırması](../../debugger/debug-interface-access/namesearchoptions.md)  
- Sembol ve dosya adları için arama seçeneklerini belirtir.  
-  
- [StackFrameTypeEnum Numaralandırması](../../debugger/debug-interface-access/stackframetypeenum.md)  
- Yığın çerçeve türünü belirtir.  
-  
- [SymTagEnum Numaralandırması](../../debugger/debug-interface-access/symtagenum.md)  
- Simgenin türünü belirtir.  
-  
- [THUNK_ORDINAL Numaralandırması](../../debugger/debug-interface-access/thunk-ordinal.md)  
- Dönüştürücü türlerini belirtir.  
-  
- [UdtKind Numaralandırması](../../debugger/debug-interface-access/udtkind.md)  
- Kullanıcı tanımlı tür (UDT) çeşitli açıklar.  
-  
-## <a name="structures"></a>Yapılar  
- [DiaAddressMapEntry Yapısı](../../debugger/debug-interface-access/diaaddressmapentry.md)  
- Bir adres eşlemesi bir girişe açıklar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- DIA SDK'sı tarafından sağlanan arabirimleri belirtir.  
-  
- [Sabitler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- DIA SDK içinde kullanılabilir olan sabitlerini belirtir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Başvuru](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
+DIA SDK'sı tarafından kullanılan yapılar ve numaralandırmalar şunlardır.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+### <a name="enumerations"></a>Numaralandırmalar
+
+- [BasicType Numaralandırması](../../debugger/debug-interface-access/basictype.md)
+
+ Simgenin temel türünü belirtir.
+
+- [CV_access_e Numaralandırması](../../debugger/debug-interface-access/cv-access-e.md)
+
+ Görünürlüğü (erişim düzeyi) üye işlevleri ve değişkenler kapsamını belirtir.
+
+- [CV_call_e Numaralandırması](../../debugger/debug-interface-access/cv-call-e.md)
+
+ Bir işlev çağırma kuralını belirtir.
+
+- [CV_CFL_LANG Numaralandırması](../../debugger/debug-interface-access/cv-cfl-lang.md)
+
+ Bağlantılı modül ve uygulama kaynak kod dilini belirtir.
+
+- [CV_CPU_TYPE_e Numaralandırması](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+
+ Hedef işlemci belirtir.
+
+- [CV_HREG_e Numaralandırması](../../debugger/debug-interface-access/cv-hreg-e.md)
+
+ Bir hedef kayıt belirtir.
+
+- [DataKind Numaralandırması](../../debugger/debug-interface-access/datakind.md)
+
+ Veri değeri belirli kapsamını belirtir.
+
+- [LocationType Numaralandırması](../../debugger/debug-interface-access/locationtype.md)
+
+ Konum bilgilerini bir sembol içinde yer alan türünü gösterir.
+
+- [MemoryTypeEnum Numaralandırması](../../debugger/debug-interface-access/memorytypeenum.md)
+
+ Bellek erişim türünü belirtir.
+
+- [NameSearchOptions Numaralandırması](../../debugger/debug-interface-access/namesearchoptions.md)
+
+ Sembol ve dosya adları için arama seçeneklerini belirtir.
+
+- [StackFrameTypeEnum Numaralandırması](../../debugger/debug-interface-access/stackframetypeenum.md)
+
+ Yığın çerçeve türünü belirtir.
+
+- [SymTagEnum Numaralandırması](../../debugger/debug-interface-access/symtagenum.md)
+
+ Simgenin türünü belirtir.
+
+- [THUNK_ORDINAL Numaralandırması](../../debugger/debug-interface-access/thunk-ordinal.md)
+
+ Dönüştürücü türlerini belirtir.
+
+- [UdtKind Numaralandırması](../../debugger/debug-interface-access/udtkind.md)
+
+ Kullanıcı tanımlı tür (UDT) çeşitli açıklar.
+
+### <a name="structures"></a>Yapılar
+
+[DiaAddressMapEntry Yapısı](../../debugger/debug-interface-access/diaaddressmapentry.md)
+
+Bir adres eşlemesi bir girişe açıklar.
+
+### <a name="related-sections"></a>İlgili Bölümler
+
+[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+
+DIA SDK'sı tarafından sağlanan arabirimleri belirtir.
+
+[Sabitler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+
+DIA SDK içinde kullanılabilir olan sabitlerini belirtir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+- [Başvuru](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

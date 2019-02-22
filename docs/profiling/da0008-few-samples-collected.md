@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf973837a687bb102dd857adf97caf0e1b8e5ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001780"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630385"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Toplanan örnek az
 
-|||  
-|-|-|  
-|Kural Kimliği|DA0008|  
-|Kategori|Profil oluşturma araçları kullanım|  
-|Profil oluşturma yöntemi|Örnekleme|  
-|İleti|Yalnızca birkaç örnek toplanmadı. Uzun bir veya daha hızlı çalışmasını örnekleme hızı daha geçerli sonuçlar için göz önünde bulundurun.|  
-|Kural türü|Bilgiler|  
+|||
+|-|-|
+|Kural Kimliği|DA0008|
+|Kategori|Profil oluşturma araçları kullanım|
+|Profil oluşturma yöntemi|Örnekleme|
+|İleti|Yalnızca birkaç örnek toplanmadı. Uzun bir veya daha hızlı çalışmasını örnekleme hızı daha geçerli sonuçlar için göz önünde bulundurun.|
+|Kural türü|Bilgiler|
 
-## <a name="cause"></a>Sebep  
- Yalnızca birkaç örnek profil oluşturma çalışmasında toplanmadı.  
+## <a name="cause"></a>Sebep
+ Yalnızca birkaç örnek profil oluşturma çalışmasında toplanmadı.
 
-## <a name="rule-description"></a>Kural açıklaması  
- Örnekleme yöntemi kullanıldığında, bir istatistiksel veriler gerçek program davranışını temsil emin olmak için örnek sayısı toplamanız gerekir. Örnekleme hataları en aza indirmek için en az 1000 program yönerge yürütme davranışını örnekleri toplamak çalışmanız gerekir. Yeterli örnekleri tahsil etmeme, profil oluşturma verilerinin analiz ederken, misled.  
+## <a name="rule-description"></a>Kural açıklaması
+ Örnekleme yöntemi kullanıldığında, bir istatistiksel veriler gerçek program davranışını temsil emin olmak için örnek sayısı toplamanız gerekir. Örnekleme hataları en aza indirmek için en az 1000 program yönerge yürütme davranışını örnekleri toplamak çalışmanız gerekir. Yeterli örnekleri tahsil etmeme, profil oluşturma verilerinin analiz ederken, misled.
 
-## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?  
+## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Bir uygulama bir artık çalıştırma profili oluşturma veya istatistiksel sonuçları elde etmek için daha hızlı bir örnekleme hızı kullanmayı düşünün. Visual Studio IDE'de örnekleme oranını değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md). Profil Araçları komut satırı özelliğini kullandığınızda, örnekleme hızını değiştirme hakkında daha fazla bilgi için bkz. [Zamanlayıcı](../profiling/timer.md) içinde [VSPerfCmd](../profiling/vsperfcmd.md) başvuru.

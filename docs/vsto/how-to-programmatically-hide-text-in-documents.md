@@ -13,50 +13,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca17436e022763f606ed950cc7240d78e0ad1b68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874919"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646089"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Nasıl yapılır: Belgelerde metni program aracılığıyla gizleme
-  Bir belgede metin ayarlayarak gizleyebilirsiniz <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> özelliği <xref:Microsoft.Office.Interop.Word.Range.Font%2A> metin belirli bir dizi.  
-  
- İçinde bulunan metinde Örneğin, geçici olarak gizleyebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> (belge düzeyi özelleştirmesindeki) veya bir <xref:Microsoft.Office.Interop.Word.Bookmark> (içinde bir VSTO eklenti) bir belgeyi yazıcıya göndermeden önce.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Belgeyi yazdırılırken yer işareti denetimdeki metin gizlemek için  
-  
-1.  Belirtilen bir aralıktaki tüm metni gizleyen bir yordamı oluşturun.  
-  
+  Bir belgede metin ayarlayarak gizleyebilirsiniz <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> özelliği <xref:Microsoft.Office.Interop.Word.Range.Font%2A> metin belirli bir dizi.
+
+ İçinde bulunan metinde Örneğin, geçici olarak gizleyebilirsiniz bir <xref:Microsoft.Office.Tools.Word.Bookmark> (belge düzeyi özelleştirmesindeki) veya bir <xref:Microsoft.Office.Interop.Word.Bookmark> (içinde bir VSTO eklenti) bir belgeyi yazıcıya göndermeden önce.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Belgeyi yazdırılırken yer işareti denetimdeki metin gizlemek için
+
+1.  Belirtilen bir aralıktaki tüm metni gizleyen bir yordamı oluşturun.
+
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
-     [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
-  
-2.  Belirli bir aralıktaki tüm metinleri gösteren bir yordamı oluşturun.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
+
+2.  Belirli bir aralıktaki tüm metinleri gösteren bir yordamı oluşturun.
+
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
-     [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
-  
-3.  Yer işaretine aralığını geçirmek `HideText` yöntemi, belgeyi yazdır ve ardından aynı aralığa geçmesi `UnhideText` yöntemi.  
-  
-     Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir. Bu örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
+
+3.  Yer işaretine aralığını geçirmek `HideText` yöntemi, belgeyi yazdır ve ardından aynı aralığa geçmesi `UnhideText` yöntemi.
+
+     Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir. Bu örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.
+
      [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
-     [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
-  
-     Aşağıdaki kod örneği, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır. Örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]
+
+     Aşağıdaki kod örneği, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır. Örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
-  
-## <a name="compile-the-code"></a>Kod derleme  
- Bu kod örneği, belgenin içerdiğini varsaymaktadır bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Bookmark> adlı denetimi (bir VSTO eklenti) `bookmark1`.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md)   
- [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Nasıl yapılır: Yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]
+
+## <a name="compile-the-code"></a>Kod derleme
+ Bu kod örneği, belgenin içerdiğini varsaymaktadır bir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi (belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Bookmark> adlı denetimi (bir VSTO eklenti) `bookmark1`.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Nasıl yapılır: Program aracılığıyla belgeleri yazdırma](../vsto/how-to-programmatically-print-documents.md)
+- [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
+- [Nasıl yapılır: Yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md)
+- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

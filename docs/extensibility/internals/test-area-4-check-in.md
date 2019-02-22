@@ -11,60 +11,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b96a97faef5bc86b0d8c6321674310e86ad1fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936612"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605113"
 ---
 # <a name="test-area-4-check-in"></a>Test alanı 4: İade Et
-Bu kaynak denetimi eklentisi test alanını kapsayan güncelleştirilmiş öğeleri sürüm deposu gönderme **iade** komutu.  
-  
-## <a name="command-menu-access"></a>Komut menü erişimi  
- Aşağıdaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır.  
-  
-##### <a name="check-in"></a>Teslim etme:  
- **Dosya**, **kaynak denetimi**, **iade**.  
-  
- **Dosya**, **iade**.  
-  
- Kısayol menüsünde, **iade**.  
-  
-## <a name="common-expected-behavior"></a>Ortak beklenen davranışı  
-  
--   Projeleri ve dosyaları bir çözüm veya proje kaynak denetimi altında eklenen görünür **iade** iletişim kutusu ve **Bekleyen İadeler** penceresi.  
-  
--   Sonra iade eklenen öğeler kaynak denetiminde görünür.  
-  
--   İade etme sonra güncelleştirilmiş öğeleri deposunda düzgün bir şekilde tutulur.  
-  
-## <a name="test-cases"></a>Test çalışmaları  
- Belirli test çalışmaları için iade etme test alanı aşağıda verilmiştir.  
-  
-### <a name="case-4a-modified-items"></a>Büyük/küçük harf 4a: Değiştirilen öğeler  
- Onay değiştirildi kaynak denetimi altındaki bir dosyayı güncelleştirmek için eylemde kullanmayı açıklar.  
-  
-|Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  
-|------------|----------------|--------------------------------|  
-|Kullanıma alınmış bir metin dosyasını değiştirme, dosyayı iade edin (**iade** iletişim kutusu)|1.  Yeni bir proje içeren bir metin dosyası oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Kullanıma alma ve metin dosyasını değiştirin.<br />4.  İade Et iletişim kutusu kontrol edin (**dosya**, **kaynak denetimi**, **iade**).|Ortak beklenen bir davranış.|  
-|Kullanıma alınmış bir metin dosyasını değiştirme, dosyayı iade edin (**Bekleyen İadeler** pencere)|1.  Yeni bir proje içeren bir metin dosyası oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Kullanıma alma ve metin dosyasını değiştirin.<br />4.  Aracılığıyla iade **Bekleyen İadeler** penceresi.|Ortak beklenen bir davranış.|  
-  
-### <a name="case-4b-adding-files"></a>Büyük/küçük harf 4b: Dosya ekleme  
- Bir dosya bir proje ya da bir çözüme bir öğe eklerken, proje veya çözümü de değiştirmeniz gerekir. Bu nedenle üst dosya ayrıca kullanıma ve ayrıca tamamlamak için iade edilmesi gerekir.  
-  
-|Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  
-|------------|----------------|--------------------------------|  
-|Bir metin dosyası ekleyin ve her şeyi denetleyin (**iade** iletişim kutusu)|1.  Yeni bir proje oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Bir metin dosyası projeye ekleyin.<br />4.  Projenin kullanıma istenirse kabul edin.<br />5.  Çözümde seçin **Çözüm Gezgini**.<br />6.  İade etme **iade** iletişim kutusu.|Ortak beklenen bir davranış.|  
-|Bir metin dosyası ekleyin ve her şeyi denetleyin (**Bekleyen İadeler** pencere)|1.  Yeni bir proje oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Bir metin dosyası projeye ekleyin.<br />4.  Projenin kullanıma istenirse kabul edin.<br />5.  Çözümden iade **Bekleyen İadeler** penceresi.|Ortak beklenen davranışı|  
-  
-### <a name="case-4c-adding-projects"></a>4c. durum: Ekleme projeleri  
- Bir çözüme bir proje eklediğinizde, çözüm de değiştirmeniz gerekir. Bu nedenle çözüm dosyasını da kullanıma ve ayrıca tamamlamak için iade edilmesi gerekir.  
-  
-|Eylem|Test adımları|Beklenen sonuçları doğrulamak için|  
-|------------|----------------|--------------------------------|  
-|Kaynak denetimi altında boş bir çözüme proje ekleme (**iade** iletişim kutusu)|1.  Boş bir çözüm oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Yeni bir proje ekleyin.<br />4.  Çözüm kullanıma istenirse kabul edin.<br />5.  İade etme **iade** iletişim kutusu.|Ortak beklenen bir davranış.|  
-|Kaynak denetimi altında boş bir çözüme proje ekleme (**Bekleyen İadeler** pencere)|1.  Boş bir çözüm oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Yeni bir proje ekleyin.<br />4.  Çözüm kullanıma istenirse kabul edin.<br />5.  Çözümden iade **Bekleyen İadeler** penceresi.|Ortak beklenen bir davranış.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+Bu kaynak denetimi eklentisi test alanını kapsayan güncelleştirilmiş öğeleri sürüm deposu gönderme **iade** komutu.
+
+## <a name="command-menu-access"></a>Komut menü erişimi
+ Aşağıdaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır.
+
+##### <a name="check-in"></a>Teslim etme:
+ **Dosya**, **kaynak denetimi**, **iade**.
+
+ **Dosya**, **iade**.
+
+ Kısayol menüsünde, **iade**.
+
+## <a name="common-expected-behavior"></a>Ortak beklenen davranışı
+
+-   Projeleri ve dosyaları bir çözüm veya proje kaynak denetimi altında eklenen görünür **iade** iletişim kutusu ve **Bekleyen İadeler** penceresi.
+
+-   Sonra iade eklenen öğeler kaynak denetiminde görünür.
+
+-   İade etme sonra güncelleştirilmiş öğeleri deposunda düzgün bir şekilde tutulur.
+
+## <a name="test-cases"></a>Test çalışmaları
+ Belirli test çalışmaları için iade etme test alanı aşağıda verilmiştir.
+
+### <a name="case-4a-modified-items"></a>Büyük/küçük harf 4a: Değiştirilen öğeler
+ Onay değiştirildi kaynak denetimi altındaki bir dosyayı güncelleştirmek için eylemde kullanmayı açıklar.
+
+|Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
+|------------|----------------|--------------------------------|
+|Kullanıma alınmış bir metin dosyasını değiştirme, dosyayı iade edin (**iade** iletişim kutusu)|1.  Yeni bir proje içeren bir metin dosyası oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Kullanıma alma ve metin dosyasını değiştirin.<br />4.  İade Et iletişim kutusu kontrol edin (**dosya**, **kaynak denetimi**, **iade**).|Ortak beklenen bir davranış.|
+|Kullanıma alınmış bir metin dosyasını değiştirme, dosyayı iade edin (**Bekleyen İadeler** pencere)|1.  Yeni bir proje içeren bir metin dosyası oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Kullanıma alma ve metin dosyasını değiştirin.<br />4.  Aracılığıyla iade **Bekleyen İadeler** penceresi.|Ortak beklenen bir davranış.|
+
+### <a name="case-4b-adding-files"></a>Büyük/küçük harf 4b: Dosya ekleme
+ Bir dosya bir proje ya da bir çözüme bir öğe eklerken, proje veya çözümü de değiştirmeniz gerekir. Bu nedenle üst dosya ayrıca kullanıma ve ayrıca tamamlamak için iade edilmesi gerekir.
+
+|Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
+|------------|----------------|--------------------------------|
+|Bir metin dosyası ekleyin ve her şeyi denetleyin (**iade** iletişim kutusu)|1.  Yeni bir proje oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Bir metin dosyası projeye ekleyin.<br />4.  Projenin kullanıma istenirse kabul edin.<br />5.  Çözümde seçin **Çözüm Gezgini**.<br />6.  İade etme **iade** iletişim kutusu.|Ortak beklenen bir davranış.|
+|Bir metin dosyası ekleyin ve her şeyi denetleyin (**Bekleyen İadeler** pencere)|1.  Yeni bir proje oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Bir metin dosyası projeye ekleyin.<br />4.  Projenin kullanıma istenirse kabul edin.<br />5.  Çözümden iade **Bekleyen İadeler** penceresi.|Ortak beklenen davranışı|
+
+### <a name="case-4c-adding-projects"></a>4c. durum: Ekleme projeleri
+ Bir çözüme bir proje eklediğinizde, çözüm de değiştirmeniz gerekir. Bu nedenle çözüm dosyasını da kullanıma ve ayrıca tamamlamak için iade edilmesi gerekir.
+
+|Eylem|Test adımları|Beklenen sonuçları doğrulamak için|
+|------------|----------------|--------------------------------|
+|Kaynak denetimi altında boş bir çözüme proje ekleme (**iade** iletişim kutusu)|1.  Boş bir çözüm oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Yeni bir proje ekleyin.<br />4.  Çözüm kullanıma istenirse kabul edin.<br />5.  İade etme **iade** iletişim kutusu.|Ortak beklenen bir davranış.|
+|Kaynak denetimi altında boş bir çözüme proje ekleme (**Bekleyen İadeler** pencere)|1.  Boş bir çözüm oluşturun.<br />2.  Çözüm kaynak denetimine ekleyin.<br />3.  Yeni bir proje ekleyin.<br />4.  Çözüm kullanıma istenirse kabul edin.<br />5.  Çözümden iade **Bekleyen İadeler** penceresi.|Ortak beklenen bir davranış.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Kaynak Denetimi Eklentileri için Test Kılavuzu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d2bbe7c4133cdb6dcd77138b4d4eb398d3169a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b666aa19e574702655178790b8aa0463a0d5c2d5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030892"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625679"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
-Bu simge bir üye işlevi işaretçisi olup olmadığını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_isPointerToMemberFunction(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir işaretçi bir `BOOL` bu simgenin bir üye işlevi işaretçisi olup olmadığını belirtir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Bu simge bir üye işlevi işaretçisi olup olmadığını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_isPointerToMemberFunction(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir işaretçi bir `BOOL` bu simgenin bir üye işlevi işaretçisi olup olmadığını belirtir.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

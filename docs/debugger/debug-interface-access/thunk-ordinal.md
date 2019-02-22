@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318530"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613277"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Dönüştürücü türlerini belirtir.
@@ -39,26 +39,19 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Öğeleri
-THUNK_ORDINAL_NOTYPE  
-Standart dönüştürücü.
+THUNK_ORDINAL_NOTYPE standart dönüştürücü.
 
-THUNK_ORDINAL_ADJUSTOR  
-A `this` adjustor dönüştürücü.
+THUNK_ORDINAL_ADJUSTOR A `this` adjustor dönüştürücü.
 
-THUNK_ORDINAL_VCALL  
-Sanal çağrı dönüştürücü.
+THUNK_ORDINAL_VCALL sanal çağrı dönüştürücü.
 
-THUNK_ORDINAL_PCODE  
-P-code dönüştürücü.
+THUNK_ORDINAL_PCODE P-code dönüştürücü.
 
-THUNK_ORDINAL_LOAD  
-Gecikme yükü dönüştürücü.
+THUNK_ORDINAL_LOAD gecikme yükü dönüştürücü.
 
-THUNK_ORDINAL_TRAMP_INCREMENTAL  
-Artımlı trampoline dönüştürücü (trampoline dönüştürücü çağrıları bir bellek alanından Sıçrama için kullanılır).
+THUNK_ORDINAL_TRAMP_INCREMENTAL artımlı trampoline dönüştürücü (trampoline dönüştürücü çağrıları bir bellek alanından Sıçrama için kullanılır).
 
-THUNK_ORDINAL_TRAMP_BRANCHISLAND  
-Dal noktası trampoline dönüştürücü.
+THUNK_ORDINAL_TRAMP_BRANCHISLAND dal noktası trampoline dönüştürücü.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu sabit listesi değerleri çağrısından döndürülen [Idiasymbol::get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) yöntemi.
@@ -67,5 +60,5 @@ Bu sabit listesi değerleri çağrısından döndürülen [Idiasymbol::get_thunk
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

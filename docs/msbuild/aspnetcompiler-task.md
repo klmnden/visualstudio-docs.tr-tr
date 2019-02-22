@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ac8eef753f656e008187a23a9d9e40a0be19f16
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853605"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602279"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler görevi
 `AspNetCompiler` Görev sarar *aspnet_compiler.exe*, önceden derlemek için bir yardımcı program [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulamalar.
@@ -69,5 +69,5 @@ Aşağıdaki kod örneğinde `AspNetCompiler` derleneceği görev bir [!INCLUDE[
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-* [Görevler](../msbuild/msbuild-tasks.md)  
+* [Görevler](../msbuild/msbuild-tasks.md)
 * [Görev başvurusu](../msbuild/msbuild-task-reference.md)

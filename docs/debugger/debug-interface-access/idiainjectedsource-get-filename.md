@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a96f1aac998c95f467fb644d67a49535749df4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26c68e4f58706fe9d65738e2e58b6ba011999e6a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955992"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619257"
 ---
 # <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
-Kaynak dosya adını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_filename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- pRetVal  
- [out] Kaynak dosya adını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Kaynak dosya adını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_filename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ pRetVal
+
+[out] Kaynak dosya adını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

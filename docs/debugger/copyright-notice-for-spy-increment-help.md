@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64984b4c88dd52023f550b3085d79b4b6ba7f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d16628dc634fe58843c71867b4795dae21a6341f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972553"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637535"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ Yardımı için Telif Hakkı Bildirimi
-Bu belgedeki bilgiler bulunmadan belgesidir. Şirketler, adları ve buradaki örneklerde kullanılan veri aksi belirtilmediği sürece hayal ürünüdür. Bu belgenin hiçbir bölümü çoğaltılamaz veya herhangi bir biçimdeki veya araçları, elektronik veya mekanik, Microsoft Corporation'ın express yazılı izni olmadan herhangi bir amaçla aktarılan.  
-  
- © 1993-2010 Microsoft Corporation. Tüm hakları saklıdır.  
-  
+Bu belgedeki bilgiler bulunmadan belgesidir. Şirketler, adları ve buradaki örneklerde kullanılan veri aksi belirtilmediği sürece hayal ürünüdür. Bu belgenin hiçbir bölümü çoğaltılamaz veya herhangi bir biçimdeki veya araçları, elektronik veya mekanik, Microsoft Corporation'ın express yazılı izni olmadan herhangi bir amaçla aktarılan.
+
+ © 1993-2010 Microsoft Corporation. Tüm hakları saklıdır.
+
  Microsoft kayıtlı ticari markasıdır ve Windows ve Windows NT, Microsoft Corporation'ın ticari markalarıdır.

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ebd50b42408dc7bd2642c257dece686245870f
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: ab5da58b125f86627d54547bd9f6f7cddc16c4de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484891"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622026"
 ---
 # <a name="getfilehash-task"></a>GetFileHash görevi
 
@@ -65,6 +65,6 @@ Aşağıdaki örnekte `GetFileHash` belirlemek ve sağlama toplamı, yazdırmak 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görevler](../msbuild/msbuild-tasks.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
 
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

@@ -10,38 +10,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54fbcf42786e7c31244dc0c37f4986e36096e17
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ba3b7c2c1cac1255c6234d2b9a8ed6ab4fd05820
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958492"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644542"
 ---
 # <a name="managing-configuration-options"></a>Yapılandırma Seçeneklerini Yönetme
-Yeni bir proje türü oluşturduğunuzda, projenizi ne nasıl oluşturulacak, paketlenmiş, dağıtılan ve çalışma belirlemek proje ve çözüm yapılandırma ayarları yönetmeniz gerekir. Aşağıdaki konular, proje ve çözüm yapılandırma açıklanmaktadır.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Genel bakış](../../extensibility/internals/configuration-options-overview.md)  
- Açıklayan nasıl projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] birden çok yapılandırmaları destekler.  
-  
- [Özellik Sayfaları](../../extensibility/internals/property-pages.md)  
- Kullanıcıların görüntüleyebileceği ve özellik sayfaları kullanarak proje yapılandırma bağımlı özellikleri ve bağımsız özelliklerini değiştirmek açıklar.  
-  
- [Çözüm Yapılandırması](../../extensibility/internals/solution-configuration.md)  
- Çözüm yapılandırmalarını içinde depolanan ve çözüm yapılandırmalarının davranışını nasıl doğrudan hakkında bilgi sağlar **Başlat** ve **derleme** komutları.  
-  
- [Proje Yapılandırması Nesnesi](../../extensibility/internals/project-configuration-object.md)  
- Proje yapılandırması nesnesi yapılandırma bilgileri için kullanıcı Arabiriminde görünen nasıl yönettiğini açıklanmaktadır.  
-  
- [Derleme için Proje Yapılandırması](../../extensibility/internals/project-configuration-for-building.md)  
- Belirli bir çözümü için çözüm yapılandırmaları listesi tarafından nasıl yönetildiği açıklanır **çözüm yapılandırmaları** iletişim kutusu.  
-  
- [Dağıtımı Yönetmek için Proje Yapılandırması](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
- Dağıtım ve iki şekilde Yasası tanımlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dağıtımını destekleyen projeleri destekler.  
-  
- [Çıkış için Proje Yapılandırması](../../extensibility/internals/project-configuration-for-output.md)  
- Her yapılandırmayı desteklemek yapı işlemlerini ve arabirimleri ve hangi çıktı tarafından öğeleri kullanılabilir yöntemleri açıklar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Proje Türleri](../../extensibility/internals/project-types.md)  
+Yeni bir proje türü oluşturduğunuzda, projenizi ne nasıl oluşturulacak, paketlenmiş, dağıtılan ve çalışma belirlemek proje ve çözüm yapılandırma ayarları yönetmeniz gerekir. Aşağıdaki konular, proje ve çözüm yapılandırma açıklanmaktadır.
+
+## <a name="in-this-section"></a>Bu Bölümde
+- [Genel bakış](../../extensibility/internals/configuration-options-overview.md)
+
+ Açıklayan nasıl projelerinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] birden çok yapılandırmaları destekler.
+
+- [Özellik Sayfaları](../../extensibility/internals/property-pages.md)
+
+ Kullanıcıların görüntüleyebileceği ve özellik sayfaları kullanarak proje yapılandırma bağımlı özellikleri ve bağımsız özelliklerini değiştirmek açıklar.
+
+- [Çözüm Yapılandırması](../../extensibility/internals/solution-configuration.md)
+
+ Çözüm yapılandırmalarını içinde depolanan ve çözüm yapılandırmalarının davranışını nasıl doğrudan hakkında bilgi sağlar **Başlat** ve **derleme** komutları.
+
+- [Proje Yapılandırması Nesnesi](../../extensibility/internals/project-configuration-object.md)
+
+ Proje yapılandırması nesnesi yapılandırma bilgileri için kullanıcı Arabiriminde görünen nasıl yönettiğini açıklanmaktadır.
+
+- [Derleme için Proje Yapılandırması](../../extensibility/internals/project-configuration-for-building.md)
+
+ Belirli bir çözümü için çözüm yapılandırmaları listesi tarafından nasıl yönetildiği açıklanır **çözüm yapılandırmaları** iletişim kutusu.
+
+- [Dağıtımı Yönetmek için Proje Yapılandırması](../../extensibility/internals/project-configuration-for-managing-deployment.md)
+
+ Dağıtım ve iki şekilde Yasası tanımlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dağıtımını destekleyen projeleri destekler.
+
+- [Çıkış için Proje Yapılandırması](../../extensibility/internals/project-configuration-for-output.md)
+
+ Her yapılandırmayı desteklemek yapı işlemlerini ve arabirimleri ve hangi çıktı tarafından öğeleri kullanılabilir yöntemleri açıklar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+- [Proje Türleri](../../extensibility/internals/project-types.md)
+
  Temel yapı taşları projelerine genel bir bakış sağlar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Projeler oluşturmak ve kodu derleme nasıl kontrol açıklayan ek konulara bağlantılar sağlanmaktadır.

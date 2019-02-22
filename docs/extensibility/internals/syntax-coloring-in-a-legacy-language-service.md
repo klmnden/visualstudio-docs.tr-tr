@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025650"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629579"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Söz Dizimi Renklendirmesi
 
@@ -63,11 +63,17 @@ Visual Studio renklendirme hizmet dilinin öğelerini tanımlamak ve bunları be
 >  Dil hizmeti Renklendirici kullanmanın yanı sıra bir VSPackage mekanizması renklendirme genel amaçlı Visual Studio metin de kullanabilirsiniz. Bu mekanizması hakkında daha fazla bilgi için bkz. [kullanarak yazı tipleri ve renkler](../../extensibility/using-fonts-and-colors.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
- [Söz dizimi renklendirmesi uygulama](../../extensibility/internals/implementing-syntax-coloring.md) Discusses Düzenleyici nasıl eriştiğini dil hizmetin söz dizimi renklendirme ve söz dizimi renklendirmesi desteklemek için dil hizmeti uygulamalıdır.
+- [Söz Dizimi Renklendirmesi Uygulama](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md) dil hizmeti yerleşik renklendirilebilir öğeleri kullanma işlemi gösterilmektedir.
+ Bir düzenleyici bir dil hizmetin söz dizimi renklendirme ve dil hizmeti gerekir sözdizimini desteklemek üzere uygulama renklendirme nasıl eriştiğini açıklanır.
 
- [Özel renklendirilebilir öğeler](../../extensibility/internals/custom-colorable-items.md) nasıl özel renklendirilebilir öğeler uygulanacağı açıklanır.
+- [Nasıl yapılır: Yerleşik renklendirilebilir öğeleri kullanma](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ Dil hizmeti yerleşik renklendirilebilir öğeleri kullanma işlemini gösterir.
+
+- [Özel Renklendirilebilir Öğeler](../../extensibility/internals/custom-colorable-items.md)
+
+ Özel renklendirilebilir öğeler uygulamak nasıl ele alınmaktadır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

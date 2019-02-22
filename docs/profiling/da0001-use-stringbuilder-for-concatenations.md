@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccfd9c49d0321462bb9366232b3bd1e45962c930
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04a0310a37d8d68a9c65298a69f5d0e19ed37bec
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961289"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56633960"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Birleştirmeler için StringBuilder kullanın
 
-|||  
-|-|-|  
-|Kural Kimliği|DA0001|  
-|Kategori|.NET framework kullanımı|  
-|Profil oluşturma yöntemleri|Örnekleme<br /><br /> İzleme|  
-|İleti|Dize birleştirmeleri için StringBuilder kullanmayı düşünün|  
-|İleti türü|Uyarı|  
+|||
+|-|-|
+|Kural Kimliği|DA0001|
+|Kategori|.NET framework kullanımı|
+|Profil oluşturma yöntemleri|Örnekleme<br /><br /> İzleme|
+|İleti|Dize birleştirmeleri için StringBuilder kullanmayı düşünün|
+|İleti türü|Uyarı|
 
-## <a name="cause"></a>Sebep  
- System.String.Concat çağrıları, profil oluşturma verilerinin önemli bir kısmı aynıdır. Kullanmayı <xref:System.Text.StringBuilder> birden çok kesimi dizeleri oluşturmak için sınıf.  
+## <a name="cause"></a>Sebep
+ System.String.Concat çağrıları, profil oluşturma verilerinin önemli bir kısmı aynıdır. Kullanmayı <xref:System.Text.StringBuilder> birden çok kesimi dizeleri oluşturmak için sınıf.
 
-## <a name="rule-description"></a>Kural açıklaması  
- A <xref:System.String> nesne değişmez. Bu nedenle, yeni bir dize nesnesi ve çöp toplama özgün dize değişiklik oluşturur. String.Concat açıkça çağırmak ya da dize birleştirme işleçleri kullanın Bu aynı, davranıştır + veya +=... Program performansı düşebilir, ne zaman karakter dizesine sıkı bir döngüde eklenir gibi bu yöntemleri sık denir.  
+## <a name="rule-description"></a>Kural açıklaması
+ A <xref:System.String> nesne değişmez. Bu nedenle, yeni bir dize nesnesi ve çöp toplama özgün dize değişiklik oluşturur. String.Concat açıkça çağırmak ya da dize birleştirme işleçleri kullanın Bu aynı, davranıştır + veya +=... Program performansı düşebilir, ne zaman karakter dizesine sıkı bir döngüde eklenir gibi bu yöntemleri sık denir.
 
- StringBuilder sınıfını değişebilir bir nesne olan ve System.String, bu sınıfın bir örneği değiştiren StringBuilder yöntemlerin çoğu, aynı örneğe bir başvuru döndürür. Karakterleri eklemek veya bir StringBuilder örneği için metin ekleyin ve kaldırın veya karakter örneğinde yeni bir örneğini tahsis etme ve özgün örneği silme gerek kalmadan değiştirin.  
+ StringBuilder sınıfını değişebilir bir nesne olan ve System.String, bu sınıfın bir örneği değiştiren StringBuilder yöntemlerin çoğu, aynı örneğe bir başvuru döndürür. Karakterleri eklemek veya bir StringBuilder örneği için metin ekleyin ve kaldırın veya karakter örneğinde yeni bir örneğini tahsis etme ve özgün örneği silme gerek kalmadan değiştirin.
 
-## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma  
- İletide çift **hata listesi** gitmek için pencere [işlev Ayrıntıları görünümü](../profiling/function-details-view.md) örnekleme, profil verileri. Dize birleştirme en sık kullanılan olarak kullanabilmesine programın bölümlerini bulur. StringBuilder sınıfını sık dize birleştirme işlemleri dahil olmak üzere, karmaşık dize işlemeleri için kullanın.  
+## <a name="how-to-investigate-a-warning"></a>Bir uyarı araştırma
+ İletide çift **hata listesi** gitmek için pencere [işlev Ayrıntıları görünümü](../profiling/function-details-view.md) örnekleme, profil verileri. Dize birleştirme en sık kullanılan olarak kullanabilmesine programın bölümlerini bulur. StringBuilder sınıfını sık dize birleştirme işlemleri dahil olmak üzere, karmaşık dize işlemeleri için kullanın.
 
  Dizeler ile çalışma hakkında daha fazla bilgi için [dize işlemleri](http://go.microsoft.com/fwlink/?LinkId=177816) bölümünü [bölüm 5 - yönetilen kod performansını iyileştirme](http://go.microsoft.com/fwlink/?LinkId=177817) Microsoft Patterns and Practices Kitaplığı'nda.

@@ -15,37 +15,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac4ca433a942222134705af3b71e6dcace6d60ca
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865001"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645829"
 ---
 # <a name="work-with-text-in-documents"></a>Belgelerde metinle çalışma
-  Bu bölümdeki konularda, metin Office projeleri ile çalışmak için Microsoft Office Word nesne modeli kullandığınız için adım adım yordamları ve kod örneklerini sağlar.  
-  
- Bazı durumlarda, VSTO eklentileri bu görevleri gerçekleştirmek yolu bunları belge düzeyi özelleştirmelerde gerçekleştirmek yolları farklıdır.  
-  
-|Görev|Yordam|  
-|----------|---------------|  
-|Çeşitli ölçütlere göre aralıklarını tanımlamak ve bunları seçin.|[Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|  
-|Bir aralık biter karakterleri alın.|[Nasıl yapılır: Program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|  
-|Bir paragraf paragraf işaretlerini dahil etmeden seçin ve metni taşıyın.|[Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|  
-|Daha büyük veya küçük bir aralık olun.|[Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)|  
-|Farklı bir konum ve boyut için bir aralık taşıyın.|[Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)|  
-|Bir aralık veya ekleme noktasını yalnızca bölümü azaltın.|[Nasıl yapılır: Aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)|  
-|Belgeye metin ekleme.|[Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)|  
-|Bir aralıktaki metin biçimi.|[Nasıl yapılır: Belgelerde program aracılığıyla metin biçimlendirme](../vsto/how-to-programmatically-format-text-in-documents.md)|  
-|Ekleyebilir veya bir yer işareti metni değiştirin.|[Nasıl yapılır: Yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md)|  
-|Seçim veya aralığını kullanarak belirli bir metni bulun ve değiştirin.|[Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)|  
-|Word'ın metni nasıl arar belirtin.|[Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)|  
-|Arama sonuçlarını yinelemek.|[Nasıl yapılır: Program aracılığıyla bulunan öğeler arasında döngü](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)|  
-|Geçerli seçimi kaydetmek ve arama yaptıktan sonra geri yükleyin.|[Nasıl yapılır: Program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)|  
-|Gizli karakterleri dahil olmak üzere belgedeki karakter sayısını alın.|[Nasıl yapılır: Program aracılığıyla karakter sayma sayısı](../vsto/how-to-programmatically-count-characters-in-documents.md)|  
-|Bir belgeyi yazdırmadan önce yer işaretindeki metnin gizleyin.|[Nasıl yapılır: Belgelerde metni program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-text-in-documents.md)|  
-|Bir açıklama için metin ekleyin.|[Nasıl yapılır: Belgelerde metni program aracılığıyla açıklama ekleme](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)   
- [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+  Bu bölümdeki konularda, metin Office projeleri ile çalışmak için Microsoft Office Word nesne modeli kullandığınız için adım adım yordamları ve kod örneklerini sağlar.
+
+ Bazı durumlarda, VSTO eklentileri bu görevleri gerçekleştirmek yolu bunları belge düzeyi özelleştirmelerde gerçekleştirmek yolları farklıdır.
+
+|Görev|Yordam|
+|----------|---------------|
+|Çeşitli ölçütlere göre aralıklarını tanımlamak ve bunları seçin.|[Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
+|Bir aralık biter karakterleri alın.|[Nasıl yapılır: Program aracılığıyla aralıkta başlangıç ve bitiş karakterlerini alma](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|
+|Bir paragraf paragraf işaretlerini dahil etmeden seçin ve metni taşıyın.|[Nasıl yapılır: Aralık oluştururken program aracılığıyla dışlama paragraf işaretleri](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)|
+|Daha büyük veya küçük bir aralık olun.|[Nasıl yapılır: Belgelerde aralıkları program aracılığıyla genişletme](../vsto/how-to-programmatically-extend-ranges-in-documents.md)|
+|Farklı bir konum ve boyut için bir aralık taşıyın.|[Nasıl yapılır: Word belgelerinde aralıkları program aracılığıyla sıfırlama](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)|
+|Bir aralık veya ekleme noktasını yalnızca bölümü azaltın.|[Nasıl yapılır: Aralıkları veya seçimleri program aracılığıyla daraltma](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)|
+|Belgeye metin ekleme.|[Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)|
+|Bir aralıktaki metin biçimi.|[Nasıl yapılır: Belgelerde program aracılığıyla metin biçimlendirme](../vsto/how-to-programmatically-format-text-in-documents.md)|
+|Ekleyebilir veya bir yer işareti metni değiştirin.|[Nasıl yapılır: Yer işareti metnini program aracılığıyla güncelleştirme](../vsto/how-to-programmatically-update-bookmark-text.md)|
+|Seçim veya aralığını kullanarak belirli bir metni bulun ve değiştirin.|[Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)|
+|Word'ın metni nasıl arar belirtin.|[Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)|
+|Arama sonuçlarını yinelemek.|[Nasıl yapılır: Program aracılığıyla bulunan öğeler arasında döngü](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)|
+|Geçerli seçimi kaydetmek ve arama yaptıktan sonra geri yükleyin.|[Nasıl yapılır: Program aracılığıyla aramalardan sonra seçimleri geri yükleme](../vsto/how-to-programmatically-restore-selections-after-searches.md)|
+|Gizli karakterleri dahil olmak üzere belgedeki karakter sayısını alın.|[Nasıl yapılır: Program aracılığıyla karakter sayma sayısı](../vsto/how-to-programmatically-count-characters-in-documents.md)|
+|Bir belgeyi yazdırmadan önce yer işaretindeki metnin gizleyin.|[Nasıl yapılır: Belgelerde metni program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-text-in-documents.md)|
+|Bir açıklama için metin ekleyin.|[Nasıl yapılır: Belgelerde metni program aracılığıyla açıklama ekleme](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)
+- [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

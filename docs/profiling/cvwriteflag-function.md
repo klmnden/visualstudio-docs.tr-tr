@@ -18,75 +18,70 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1a3c1eff1775114bbeb17645ab782451ac2ae2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923226"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596873"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag işlevi
-Bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C  
-HRESULT CvWriteFlagExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteFlagExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `argList`  
- Bağımsız değişken listesi.  
-  
- `category`  
- Kategori.  
-  
- `level`  
- Önem düzeyi.  
-  
- `pMarkerSeries`  
- Geçerli işaret serisi bağlamı. NULL olamaz.  
-  
- `pMessage`  
- İleti biçimi dizesi. NULL olamaz.  
-  
-## <a name="return-value"></a>Dönüş değeri  
- İletinin başarılı bir şekilde yazıldığında S_OK. Hata kodu: var olan herhangi bir hata durumunda. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** *cvmarkers.h*  
-  
- **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
-  
- <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)
+Bayrak eşzamanlılık görselleştiricisi izleme dosyasına yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+HRESULT CvWriteFlagExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteFlagExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `argList` Bağımsız değişken listesi.
+
+ `category` Kategori.
+
+ `level` Önem düzeyi.
+
+ `pMarkerSeries` Geçerli işaret serisi bağlamı. NULL olamaz.
+
+ `pMessage` İleti biçimi dizesi. NULL olamaz.
+
+## <a name="return-value"></a>Dönüş değeri
+ İletinin başarılı bir şekilde yazıldığında S_OK. Hata kodu: var olan herhangi bir hata durumunda. Hata koşulu denetleyen için başarılı/başarısız makroları kullanın.
+
+## <a name="requirements"></a>Gereksinimler
+ **Başlık:** *cvmarkers.h*
+
+ **Unicode:** CvWriteFlagExW, CvWriteFlagExVW
+
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [C++ Kitaplık Başvurusu](../profiling/cpp-library-reference.md)

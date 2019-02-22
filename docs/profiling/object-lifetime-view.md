@@ -16,60 +16,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f13930905721cca2d957707655cfd0948c875607
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945222"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634519"
 ---
 # <a name="object-lifetime-view"></a>Nesne Ömrü Görünümü
-Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri toplayın** üzerinde teslim edildi **performans oturumu** özellik sayfaları.  
-  
- Çöp toplayıcı, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için Yönetilen yığın üç kuşaklar halinde ayrılmıştır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.  
-  
- Çöp toplayıcı tüm nesneleri nesil serbest bırakarak belleği geri kazanır. Profili oluşturulan uygulama tarafından oluşturulan nesneler için nesne ömrü görünümü sayısına ve boyutuna nesneleri ve geri alındığını nesil görüntüler.  
-  
-## <a name="general"></a>Genel  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Sınıf adı**|Ayrılmış türün sınıf adı.|  
-|**İşlem kimliği**|Profil oluşturma işlemi kimliği.|  
-|**İşlem adı**|İşlemin adı.|  
-|**Modül adı**|İşlevi içeren modül adı.|  
-|**Modül yolu**|İşlevi içeren modül yolu.|  
-  
-## <a name="instance-data"></a>Örnek veri  
- Örnek verilerini, profil oluşturma çalıştırmasını ve nesil nesneler çöp toplayıcısı tarafından serbest oluşturulmuş türünden nesnelerin sayısını gösterir.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Örnekler**|Bu tür nesnelerin ayırmaların sayısı.|  
-|**Toplam örnek sayısı yüzdesi**|Profil oluşturma çalıştırma yapılan ayırmaların toplam sayısının yüzdesi.|  
-|**0 kuşağı toplanan örnekler**|Nesil atık toplama algoritması 0 serbest türün örneklerinin sayısı.|  
-|**1 kuşağı toplanan örnekler**|Atık toplama algoritması 1. nesil serbest türün örneklerinin sayısı.|  
-|**2 kuşağı toplanan örnekler**|Atık toplama algoritması 2. nesil serbest türün örneklerinin sayısı.|  
-|**Sondaki örnekleri**|Profil oluşturmanın sonuna kadar serbest değil türün örneklerinin sayısını çalıştırın.|  
-  
-## <a name="size-byte-data"></a>Veri boyutu (bayt)  
- Veri boyutu (bayt), profil oluşturma çalıştırmasını ve her nesildeki nesnelerin serbest bırakılmış iadesi bellek miktarını oluşturulmuş türünden nesnelerin boyutunu gösterir.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Ayrılan toplam bayt**|Türün tüm örnekleri için bayt olarak toplam sayısı.|  
-|**Toplam Bayt yüzdesi**|Profil oluşturma çalışması bu tür örnekleri için ayrılan ayrılan bayt toplam sayısının yüzdesi.|  
-|**0 kuşağı toplanan bayt**|Nesil atık toplama algoritması 0 serbest türün örneklerinin boyutu.|  
-|**1 kuşağı toplanan bayt**|Atık toplama algoritması 1. nesil serbest türün örneklerinin boyutu.|  
-|**2 kuşağı toplanan bayt**|Atık toplama algoritması 2. nesil serbest türün örneklerinin boyutu.|  
-  
-## <a name="large-object-heap-data"></a>Büyük nesne yığın verileri  
- .NET bellek ayırıcısı standart yönetilen yığından ayrı bir konumda çok geniş nesneleri yönetir. Büyük nesne yığın verisi sayısı ve boyutu bu konumda Yönetilen Nesne türü gösterir.  
-  
-|Sütun|Açıklama|  
-|------------|-----------------|  
-|**Büyük nesne örnekleri toplanan bayt**|Bu tür, büyük nesne yığını içinde bulunan ve profil oluşturma toplanan örnek sayısını çalıştırın.|  
-|**Büyük nesne yığını toplanan bayt**|Bu tür örnekleri, büyük nesne yığını içinde bulunan ve profil oluşturma çalışmasında toplanan bayt cinsinden boyutu.|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)
+Nesne ömrü görünümü kullanılabilir **ayrıca .NET nesnesi ömür verileri toplayın** üzerinde teslim edildi **performans oturumu** özellik sayfaları.
+
+ Çöp toplayıcı, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ayrılmasını ve uygulamanız için bellek serbest yönetir. Atık toplayıcının performansını optimize etmek için Yönetilen yığın üç kuşaklar halinde ayrılmıştır: 0, 1 ve 2. Yeni nesneler, çalışma zamanının atık toplayıcı nesil 0 depolar. Sonra varlığını sürdüren nesneler yükseltilerek ve depolanan nesil 1 ve 2.
+
+ Çöp toplayıcı tüm nesneleri nesil serbest bırakarak belleği geri kazanır. Profili oluşturulan uygulama tarafından oluşturulan nesneler için nesne ömrü görünümü sayısına ve boyutuna nesneleri ve geri alındığını nesil görüntüler.
+
+## <a name="general"></a>Genel
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Sınıf adı**|Ayrılmış türün sınıf adı.|
+|**İşlem kimliği**|Profil oluşturma işlemi kimliği.|
+|**İşlem adı**|İşlemin adı.|
+|**Modül adı**|İşlevi içeren modül adı.|
+|**Modül yolu**|İşlevi içeren modül yolu.|
+
+## <a name="instance-data"></a>Örnek veri
+ Örnek verilerini, profil oluşturma çalıştırmasını ve nesil nesneler çöp toplayıcısı tarafından serbest oluşturulmuş türünden nesnelerin sayısını gösterir.
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Örnekler**|Bu tür nesnelerin ayırmaların sayısı.|
+|**Toplam örnek sayısı yüzdesi**|Profil oluşturma çalıştırma yapılan ayırmaların toplam sayısının yüzdesi.|
+|**0 kuşağı toplanan örnekler**|Nesil atık toplama algoritması 0 serbest türün örneklerinin sayısı.|
+|**1 kuşağı toplanan örnekler**|Atık toplama algoritması 1. nesil serbest türün örneklerinin sayısı.|
+|**2 kuşağı toplanan örnekler**|Atık toplama algoritması 2. nesil serbest türün örneklerinin sayısı.|
+|**Sondaki örnekleri**|Profil oluşturmanın sonuna kadar serbest değil türün örneklerinin sayısını çalıştırın.|
+
+## <a name="size-byte-data"></a>Veri boyutu (bayt)
+ Veri boyutu (bayt), profil oluşturma çalıştırmasını ve her nesildeki nesnelerin serbest bırakılmış iadesi bellek miktarını oluşturulmuş türünden nesnelerin boyutunu gösterir.
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Ayrılan toplam bayt**|Türün tüm örnekleri için bayt olarak toplam sayısı.|
+|**Toplam Bayt yüzdesi**|Profil oluşturma çalışması bu tür örnekleri için ayrılan ayrılan bayt toplam sayısının yüzdesi.|
+|**0 kuşağı toplanan bayt**|Nesil atık toplama algoritması 0 serbest türün örneklerinin boyutu.|
+|**1 kuşağı toplanan bayt**|Atık toplama algoritması 1. nesil serbest türün örneklerinin boyutu.|
+|**2 kuşağı toplanan bayt**|Atık toplama algoritması 2. nesil serbest türün örneklerinin boyutu.|
+
+## <a name="large-object-heap-data"></a>Büyük nesne yığın verileri
+ .NET bellek ayırıcısı standart yönetilen yığından ayrı bir konumda çok geniş nesneleri yönetir. Büyük nesne yığın verisi sayısı ve boyutu bu konumda Yönetilen Nesne türü gösterir.
+
+|Sütun|Açıklama|
+|------------|-----------------|
+|**Büyük nesne örnekleri toplanan bayt**|Bu tür, büyük nesne yığını içinde bulunan ve profil oluşturma toplanan örnek sayısını çalıştırın.|
+|**Büyük nesne yığını toplanan bayt**|Bu tür örnekleri, büyük nesne yığını içinde bulunan ve profil oluşturma çalışmasında toplanan bayt cinsinden boyutu.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)

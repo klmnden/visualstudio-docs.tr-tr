@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6855603c0cc322d5ed235ac81e0f9f15cef725c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936648"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645725"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme
 
@@ -61,6 +61,7 @@ Visual Studio'nun istemci iş istasyonları için çevrimdışı bir ortamda da�
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+
    **Güncelleştirme**: Visual Studio 2017 sürüm için 15,8 Preview 2 veya daha sonra toplu iş dosyası aşağıdaki komutlarla oluşturun:
 
    ```cmd
@@ -123,7 +124,7 @@ Sertifika adları içinde değilse **çıkarılan** sütunları yüklü olması 
 
 ## <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
-Sertifikalar'ı yükledikten sonra Visual Studio'nun dağıtım yönergeleri kullanarak devam edebilirsiniz [ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) sayfası "oluşturma Visual Studio'nun bir ağ yükleme" bölümü.
+Sertifikalar'ı yükledikten sonra Visual Studio'nun dağıtım yönergeleri kullanarak devam edebilirsiniz [ağ yüklemesinden dağıtma](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) sayfası "oluşturma Visual Studio'nun bir ağ yükleme" bölümü.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

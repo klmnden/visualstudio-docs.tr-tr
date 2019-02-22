@@ -8,71 +8,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b719d907402a1671a66a42b3ff9b0295cee6856e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639771"
 ---
 # <a name="start"></a>Başlat
-**Başlat** seçeneği bir *VSPerfCmd.exe* seçeneği belirtilen profil oluşturma metodu için profil oluşturucuyu başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cmd  
-VSPerfCmd.exe /Start:Method /Output:FileName [Options]  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `Method`  
- Aşağıdaki anahtar sözcükler biri olmalıdır:  
-  
--   **İzleme** -izleme metodunu belirtir.  
-  
--   **ÖRNEK** -örnekleme yöntemini belirtir.  
-  
--   **KAPSAMI** -kod kapsamı belirtir.  
-  
--   **EŞZAMANLILIK** -kaynak çekişmesi yöntemini belirtir.  
-  
-## <a name="required-options"></a>Gerekli seçenekleri  
- **Çıkış** seçeneği olmalıdır belirtilen **Başlat** komut satırında belirtilen.  
-  
- **Çıkış:** `filename`  
- Çıkış dosyası adını belirtir.  
-  
-## <a name="exclusive-options"></a>Dışlayan seçenekleri  
- Aşağıdaki seçenekler ile yalnızca kullanılabilir **Başlat** bir komut satırı seçeneği.  
-  
- **CrossSession**&#124;**CS**  
- Etkinleştirir çapraz profil oluşturma işlem. Seçenek adları **CrossSession** ve **CS** desteklenen olan iki.  
-  
- **Kullanıcı:**[`domain\`]`username`  
- İstemci erişimi belirtilen hesaptan izleyiciye sağlar.  
-  
- **WinCounter:** `Path` [**Automark**:`n`]  
- **WinCounter** bir profil oluşturma veri dosyasını işareti olarak eklemek için bir Windows performans sayacı belirtir. **Otomatik işaret zamanının** veri dosyasının koleksiyonları arasındaki milisaniye olarak zaman aralığını belirtir.  
-  
-## <a name="invalid-options"></a>Geçersiz Seçenekler  
- Aşağıdaki seçenekler kullanılamaz **Başlat** bir komut satırı seçeneği.  
-  
- **Status**  
- **Durum** profillenen bu işlemleri için geçerlidir. Bu işlemler, iş parçacıkları ve onların geçerli profil durumlarının (açık/kapalı) listeler. Örneğin, bir işlem durursa, **durumu** raporda belirtmez. **Durum** işlem ya da veya profil oluşturulan olduğunu gösterir.  
-  
- **Kapatma**[**:**`Timeout`]  
- Profil oluşturucuyu devre dışı bırakır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek nasıl kullanılacağını gösterir *VSPerfCmd.exe* **Başlat** seçeneği profil oluşturucu başlatılamadı.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profil hizmetler](../profiling/command-line-profiling-of-services.md)
+**Başlat** seçeneği bir *VSPerfCmd.exe* seçeneği belirtilen profil oluşturma metodu için profil oluşturucuyu başlatır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cmd
+VSPerfCmd.exe /Start:Method /Output:FileName [Options]
+```
+
+#### <a name="parameters"></a>Parametreler
+ `Method` Aşağıdaki anahtar sözcükler biri olmalıdır:
+
+-   **İzleme** -izleme metodunu belirtir.
+
+-   **ÖRNEK** -örnekleme yöntemini belirtir.
+
+-   **KAPSAMI** -kod kapsamı belirtir.
+
+-   **EŞZAMANLILIK** -kaynak çekişmesi yöntemini belirtir.
+
+## <a name="required-options"></a>Gerekli seçenekleri
+ **Çıkış** seçeneği olmalıdır belirtilen **Başlat** komut satırında belirtilen.
+
+ **Çıkış:** `filename` Çıkış dosyası adını belirtir.
+
+## <a name="exclusive-options"></a>Dışlayan seçenekleri
+ Aşağıdaki seçenekler ile yalnızca kullanılabilir **Başlat** bir komut satırı seçeneği.
+
+ **CrossSession**&#124;**CS** çapraz işlem profil oluşturmayı etkinleştirir. Seçenek adları **CrossSession** ve **CS** desteklenen olan iki.
+
+ **Kullanıcı:**[`domain\`]`username` sağlayan istemci erişimi izleme için belirtilen hesaptan.
+
+ **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** bir profil oluşturma veri dosyasını işareti olarak eklemek için bir Windows performans sayacı belirtir. **Otomatik işaret zamanının** veri dosyasının koleksiyonları arasındaki milisaniye olarak zaman aralığını belirtir.
+
+## <a name="invalid-options"></a>Geçersiz Seçenekler
+ Aşağıdaki seçenekler kullanılamaz **Başlat** bir komut satırı seçeneği.
+
+ **Durum** **durumu** profillenen bu işlemleri için geçerlidir. Bu işlemler, iş parçacıkları ve onların geçerli profil durumlarının (açık/kapalı) listeler. Örneğin, bir işlem durursa, **durumu** raporda belirtmez. **Durum** işlem ya da veya profil oluşturulan olduğunu gösterir.
+
+ **Kapatma**[**:**`Timeout`] profil oluşturucuyu devre dışı bırakır.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek nasıl kullanılacağını gösterir *VSPerfCmd.exe* **Başlat** seçeneği profil oluşturucu başlatılamadı.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profil hizmetler](../profiling/command-line-profiling-of-services.md)

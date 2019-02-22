@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638185"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Nasıl yapılır: MSBuild proje SDK'ları kullanın
 
@@ -94,7 +94,7 @@ Projenin değerlendirme sırasında [!INCLUDE[vstecmsbuild](../extensibility/int
 İçeri aktarma değerlendirirken [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] SDK alan adı ve sürümü, belirtilen proje yolu dinamik olarak çözümlenir.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Ayrıca hangi makinenizde SDK projesi bulun eklentiler kayıtlı SDK Çözümleyicileri bir listesi bulunur.  Bu eklentilerin dahil et:
 
 1. Yapılandırılmış paketinizi sorgular NuGet tabanlı bir çözümleyici kimliği ve belirttiğiniz SDK sürümü eşleştirmek için NuGet paketlerini akışları.<br/>
-   Bu Çözümleyici, yalnızca belirttiğiniz isteğe bağlı bir sürüm ve tüm özel Proje SDK'sı kullanılabilir etkindir.  
+   Bu Çözümleyici, yalnızca belirttiğiniz isteğe bağlı bir sürüm ve tüm özel Proje SDK'sı kullanılabilir etkindir.
 2. .NET CLI'de yüklü SDK'ları çözümler .NET CLI çözümleyici.<br/>
    Bu çözümleyici proje SDK'ları gibi bulur `Microsoft.NET.Sdk` ve `Microsoft.NET.Sdk.Web` ürünün bir parçası olduğu.
 3. MSBuild ile yüklenmiş SDK'ları çözümler varsayılan çözümleyici.
@@ -110,11 +110,11 @@ SDK'sı NuGet tabanlı çözümleyici destekleyen bir sürüm belirtme, [global.
 }
 ```
 
-Bir yapı sırasında her proje SDK yalnızca bir sürümü kullanılabilir.  MSBuild, iki farklı sürümünü aynı projede SDK başvurduğunuz, bir uyarı yayar.  Önerilir **değil** içinde bir sürüm belirtilmezse, projelerinizde bir sürüm belirtin, *global.json*.  
+Bir yapı sırasında her proje SDK yalnızca bir sürümü kullanılabilir.  MSBuild, iki farklı sürümünü aynı projede SDK başvurduğunuz, bir uyarı yayar.  Önerilir **değil** içinde bir sürüm belirtilmezse, projelerinizde bir sürüm belirtin, *global.json*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)   
- [Derlemenizi özelleştirme](../msbuild/customize-your-build.md)   
- [Paketler, meta verileri ve çerçeveler](/dotnet/core/packages)   
- [.NET Core csproj biçimine eklemeler](/dotnet/core/tools/csproj)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+- [Derlemenizi özelleştirme](../msbuild/customize-your-build.md)
+- [Paketler, meta verileri ve çerçeveler](/dotnet/core/packages)
+- [.NET Core csproj biçimine eklemeler](/dotnet/core/tools/csproj)

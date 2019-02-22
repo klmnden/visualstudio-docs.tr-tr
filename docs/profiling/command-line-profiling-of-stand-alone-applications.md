@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935065"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603293"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Komut satırından tek başına uygulamaların profilini oluşturma
-Bu bölümde kullanarak tek başına (istemci) uygulamaları için performans verilerini toplamak için seçenekleri ve yordamları açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.  
+Bu bölümde kullanarak tek başına (istemci) uygulamaları için performans verilerini toplamak için seçenekleri ve yordamları açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komut satırından profil oluşturma araçları.
 
-## <a name="common-tasks"></a>Ortak görevler  
+## <a name="common-tasks"></a>Ortak görevler
 
 | Görev | İlgili içerik |
 | - | - |
@@ -32,9 +32,9 @@ Bu bölümde kullanarak tek başına (istemci) uygulamaları için performans ve
 | **Katman etkileşim verileri ekleyin:** Zaman uyumlu ADO.NET ilişkin performans verilerini çağırır, Microsoft yapılan uygulama ekleyebileceğiniz [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] veritabanı. Bir profil oluşturma yürütmesine katman etkileşim verileri ekleme, komut satırı profil araçlarıyla özel yordamlar gerektirir. | -   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **Deneyin:** Örnek istemci uygulaması örnekleme veya Araçlar yöntemini kullanarak profil için adım adım yordamları kullanın. | -   [İzlenecek yol: Komut satırı kullanarak örnekleme profili oluşturma](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [İzlenecek yol: Komut satırı araçları kullanarak profil oluşturma](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>İlişkili görevler  
+## <a name="related-tasks"></a>İlişkili görevler
 
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Profil ASP.NET uygulamaları**|-   [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Profil ASP.NET uygulamaları**|-   [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Profil hizmetler**|-   [Profil hizmetler](../profiling/command-line-profiling-of-services.md)|

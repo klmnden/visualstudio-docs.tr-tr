@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7756e73f7137ec18d962ff8199a3f5e339c76144
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926251"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597406"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Belirtilen sanal adres içeren yığın çerçevesini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT frameForVA(   
-   ULONGLONG        va,  
-   IDiaFrameData**  ppFrame  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `va`  
- [in] Çerçeve veriler için sanal adres.  
-  
- `ppFrame`  
- [out] Bir [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) belirtilen adreste yığın çerçevesini temsil eden nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Belirtilen sanal adres içeren yığın çerçevesini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT frameForVA( 
+   ULONGLONG        va,
+   IDiaFrameData**  ppFrame
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `va`
+
+[in] Çerçeve veriler için sanal adres.
+
+ `ppFrame`
+
+[out] Bir [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) belirtilen adreste yığın çerçevesini temsil eden nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

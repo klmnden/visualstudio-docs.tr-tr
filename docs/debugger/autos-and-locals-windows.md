@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941989"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636911"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Otolar ve yerel öğeler pencerelerinde değişkenleri denetleyin
 
 **Otolar** ve **Yereller** windows ayıklarken değişken değerleri gösterir. Windows, yalnızca hata ayıklama oturumu sırasında kullanılabilir. **Otolar** geçerli kesme noktası kullanılan değişkenler penceresi gösterir. **Yereller** penceresi, genellikle geçerli işlev veya yöntem olan yerel kapsamda tanımlanan değişkenler gösterir. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) ve [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md) bu makalede geçmeden önce.
 
  **Otolar** penceresi, kullanılabilir C#, Visual Basic, C++ ve Python kodu, ancak JavaScript veya F#.
-  
-Açmak için **Otolar** hata ayıklarken, penceresinde **hata ayıklama** > **Windows** > **Otolar**, veya tuşuna basın **Ctrl**+**Alt**+**V** > **A**.  
+
+Açmak için **Otolar** hata ayıklarken, penceresinde **hata ayıklama** > **Windows** > **Otolar**, veya tuşuna basın **Ctrl**+**Alt**+**V** > **A**.
 
 Açmak için **Yereller** hata ayıklarken, penceresinde **hata ayıklama** > **Windows** > **Yereller**, veya tuşuna basın **Alt**+**4**.
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 Dönüş değerleri görmek için `sumVars()` ve `subtractVars()` yöntemini çağırır Otolar penceresinde:
 
-1. Bir kesme noktası ayarlamak `int x = sumVars(a, b) + subtractVars(c, d);` satır.  
-   
-1. Hata ayıklamayı başlatmak ve yürütme kesme noktasında durakladığında seçin **Step Over** veya basın **F10**. Aşağıdaki dönüş değerleri görmelisiniz **Otolar** penceresi:  
-   
-  ![Otolar dönüş değeri C# ](../debugger/media/autosreturnvaluecsharp2.png "Otolar dönüş değeriC#")  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Hata ayıklıyor?](../debugger/what-is-debugging.md)  
- [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)  
- [Hata ayıklama sırasında ilk bakış](../debugger/debugger-feature-tour.md) [windows hata ayıklayıcı](../debugger/debugger-windows.md)
+1. Bir kesme noktası ayarlamak `int x = sumVars(a, b) + subtractVars(c, d);` satır.
+
+1. Hata ayıklamayı başlatmak ve yürütme kesme noktasında durakladığında seçin **Step Over** veya basın **F10**. Aşağıdaki dönüş değerleri görmelisiniz **Otolar** penceresi:
+
+  ![Otolar dönüş değeri C# ](../debugger/media/autosreturnvaluecsharp2.png "Otolar dönüş değeriC#")
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
+- [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)
+- [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
+- [Hata ayıklayıcısı pencereleri](../debugger/debugger-windows.md)

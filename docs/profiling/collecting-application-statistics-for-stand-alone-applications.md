@@ -11,44 +11,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5efe080dcb5134dc36fddfe220323e237768e683
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1380daed587c9458c6feb3d79e9dc8d317ff3709
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000854"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638913"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Profil oluşturucu komut satırını kullanarak bağımsız uygulamalar için uygulama istatistikleri toplama
-Bu bölümde, yordamları ve komut satırından örnekleme yöntemini kullanarak bir istemci (tek başına) uygulaması için performans istatistikleri toplama seçeneklerini açıklar.  
-  
+Bu bölümde, yordamları ve komut satırından örnekleme yöntemini kullanarak bir istemci (tek başına) uygulaması için performans istatistikleri toplama seçeneklerini açıklar.
+
 > [!NOTE]
->  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="common-tasks"></a>Ortak görevler  
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Profil oluşturma'ı kullanarak bir uygulama başlatın**|-   [Nasıl Yapılır: Bağımsız bir uygulama başlatma ve uygulama istatistikleri toplama](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
-|**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profil oluşturucuyu bir .NET Framework uygulamasına ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|  
-|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Yerel bir uygulamaya profil oluşturucu ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|  
-|**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-  
-## <a name="related-tasks"></a>İlişkili görevler  
-  
-### <a name="profile-stand-alone-applications"></a>Bağımsız uygulamalar profili  
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Bir uygulamayı izleme**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**.NET bellek ayırma ve atık koleksiyon verisi toplama**|-   [.NET Framework bellek verileri toplama](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
-|**Kaynak çakışması ve iş parçacığı yürütme verileri topla**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-  
-### <a name="profile-by-using-the-sampling-method"></a>Örnekleme yöntemiyle profili  
-  
-|Görev|İlgili içerik|  
-|----------|---------------------|  
-|**Profil ASP.NET web uygulamaları**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
-|**Profil hizmetler**|-   [Örnekleme kullanarak uygulama istatistikleri toplamak](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Örnekleme yöntemini kullanarak, Windows Hizmetleri'nden performans istatistikleri toplamak nasıl açıklar.|  
-  
-### <a name="analyze-sampling-data-views-and-reports"></a>Örnekleme veri görünümleri ve raporları analiz edin  
- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)
+>  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. UWP uygulamaları, ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="common-tasks"></a>Ortak görevler
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Profil oluşturma'ı kullanarak bir uygulama başlatın**|-   [Nasıl Yapılır: Bağımsız bir uygulama başlatma ve uygulama istatistikleri toplama](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
+|**Çalışan bir .NET Framework uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Profil oluşturucuyu bir .NET Framework uygulamasına ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
+|**Çalışan bir C/C++ uygulamasına profil oluşturucu ekleme**|-   [Nasıl Yapılır: Yerel bir uygulamaya profil oluşturucu ekleme ve uygulama istatistikleri toplama](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|
+|**Katman etkileşim verileri ekleme**|-   [Katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+
+## <a name="related-tasks"></a>İlişkili görevler
+
+### <a name="profile-stand-alone-applications"></a>Bağımsız uygulamalar profili
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Bir uygulamayı izleme**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**.NET bellek ayırma ve atık koleksiyon verisi toplama**|-   [.NET Framework bellek verileri toplama](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
+|**Kaynak çakışması ve iş parçacığı yürütme verileri topla**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+
+### <a name="profile-by-using-the-sampling-method"></a>Örnekleme yöntemiyle profili
+
+|Görev|İlgili içerik|
+|----------|---------------------|
+|**Profil ASP.NET web uygulamaları**|-   [Örnekleme kullanarak uygulama istatistikleri toplama](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
+|**Profil hizmetler**|-   [Örnekleme kullanarak uygulama istatistikleri toplamak](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Örnekleme yöntemini kullanarak, Windows Hizmetleri'nden performans istatistikleri toplamak nasıl açıklar.|
+
+### <a name="analyze-sampling-data-views-and-reports"></a>Örnekleme veri görünümleri ve raporları analiz edin
+- [Örnekleme yöntemi veri görünümleri](../profiling/profiler-sampling-method-data-views.md)

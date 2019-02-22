@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605191"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Araç Takımı (ToolsVersion)
 MSBuild, bir uygulama oluşturmak için bir araç takımı görevleri, hedefler ve araçları kullanır. MSBuild araç takımı genellikle içerir bir *microsoft.common.tasks* dosyası bir *microsoft.common.targets* dosya ve derleyiciler gibi *csc.exe* ve  *Vbc.exe*. Çoğu araç takımları, .NET Framework'ün birden fazla sürümü ve birden fazla sistemi platformu uygulamaları derlemek için kullanılabilir. Ancak, MSBuild 2.0 araç takımı, yalnızca .NET Framework 2.0 hedeflemek için kullanılabilir.
@@ -116,4 +116,5 @@ MSBuild için aşırı yüklemeler sağlar `ToolLocationHelper` ekleme yöntemle
 Alt araç takımları .NET Framework 4. 5 ' kullanılmaya başlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md) [çoklu sürüm desteği](../msbuild/msbuild-multitargeting-overview.md)
+- [Standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md)
+- [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)

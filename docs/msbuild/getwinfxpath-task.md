@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd751f36ce3a5f74bea78fd0d57920a5145c0fb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853683"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646935"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath task
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> Görev geçerli dizinin döndürür [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] çalışma zamanı.
@@ -57,8 +57,8 @@ ms.locfileid: "55853683"
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
-[Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)  
-[Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)
+- [Görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

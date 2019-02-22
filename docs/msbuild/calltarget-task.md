@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ad6261dba80e56ab44f43b4c70df79d63bb509
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001637"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617242"
 ---
 # <a name="calltarget-task"></a>CallTarget görevi
-Proje dosyası içinde belirtilen hedefleri çağırır.  
+Proje dosyası içinde belirtilen hedefleri çağırır.
 
-## <a name="task-parameters"></a>Görev parametreleri  
- Parametreleri aşağıdaki tabloda açıklanmıştır `CallTarget` görev.  
+## <a name="task-parameters"></a>Görev parametreleri
+ Parametreleri aşağıdaki tabloda açıklanmıştır `CallTarget` görev.
 
 
 | Parametre | Açıklama |
@@ -37,31 +37,31 @@ Proje dosyası içinde belirtilen hedefleri çağırır.
 | `Targets` | İsteğe bağlı `String[]` parametresi.<br /><br /> Hedef veya oluşturulacak hedeflerin belirtir. |
 | `UseResultsCache` | İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, önbelleğe alınan sonuç varsa, döndürülür.<br /><br /> **Not** olduğunda bir MSBuild görevi çalıştırılana, çıktısını bir kapsamda (ProjectFileName, GlobalProperties) önbelleğe alınmış [TargetNames] derleme öğe listesi olarak. |
 
-## <a name="remarks"></a>Açıklamalar  
- Bir hedef içinde belirtilen `Targets` başarısız olur ve `RunEachTargetSeparately` olduğu `true`, görev derleme kalan hedeflerini devam eder.  
+## <a name="remarks"></a>Açıklamalar
+ Bir hedef içinde belirtilen `Targets` başarısız olur ve `RunEachTargetSeparately` olduğu `true`, görev derleme kalan hedeflerini devam eder.
 
- Varsayılan hedefler oluşturmak istiyorsanız, kullanmanız [MSBuild görevi](../msbuild/msbuild-task.md) ayarlayıp `Projects` parametresi eşit `$(MSBuildProjectFile)`.  
+ Varsayılan hedefler oluşturmak istiyorsanız, kullanmanız [MSBuild görevi](../msbuild/msbuild-task.md) ayarlayıp `Projects` parametresi eşit `$(MSBuildProjectFile)`.
 
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek çağrıları `TargetA` gelen içinde `CallOtherTargets`.  
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek çağrıları `TargetA` gelen içinde `CallOtherTargets`.
 
-```xml  
-<Project DefaultTargets="CallOtherTargets"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="CallOtherTargets"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Target Name="CallOtherTargets">  
-        <CallTarget Targets="TargetA"/>  
-    </Target>  
+    <Target Name="CallOtherTargets">
+        <CallTarget Targets="TargetA"/>
+    </Target>
 
-    <Target Name="TargetA">  
-        <Message Text="Building TargetA..." />  
-    </Target>  
+    <Target Name="TargetA">
+        <Message Text="Building TargetA..." />
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Hedefler](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Hedefler](../msbuild/msbuild-targets.md)

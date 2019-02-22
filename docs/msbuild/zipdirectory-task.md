@@ -22,35 +22,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b09c98fb41adcf1d094ca3cf35e9415773e5c292
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2188ef3026e36d5c97cf35cd29362411c473973e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963534"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624041"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory görevi
 Oluşturur bir *.zip* bir dizinin içeriklerini arşivden.
 
 >[!NOTE]
 >`ZipDirectory` Görevdir MSBuild 15,8 ve yalnızca üzerinde kullanılabilir.
-  
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `ZipDirectory` görev.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `ZipDirectory` görev.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
 |`DestinationFile`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> parametresi<br /><br /> Tam yolu *.zip* oluşturmak için dosya.|
 |`Overwrite`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, hedef dosyanın üzerine varsa atlar. Varsayılan olarak `false`.|
 |`SourceDirectory`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Oluşturulacak dizinin belirtir bir *.zip* gelen arşivleyin.|
-  
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Örnek  
+
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.TaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [TaskExtension taban sınıfı](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Örnek
  Aşağıdaki örnek, oluşturur bir *.zip* arşivden bir projeyi oluşturduktan sonra çıktı dizini.
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="ZipOutputPath" AfterTargets="Build">
@@ -61,7 +61,7 @@ Oluşturur bir *.zip* bir dizinin içeriklerini arşivden.
 
 </Project>
 ```
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

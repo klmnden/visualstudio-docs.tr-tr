@@ -11,36 +11,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a80212a2de88a5896caf0b655b9710afbce096f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005962"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599005"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>İlgili Hizmetler ve Arabirimler (Kaynak Denetimi VSPackage’ı)
-Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenmiştir [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kaynak denetimi VSPackage'ı, bazı bu arabirimleri uygulayan ve diğer kaynak denetimi görevlerini gerçekleştirmek için kullanır.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Kaynak denetimi VSPackage'larını ve tarafından uygulanan arabirimler  
- Aşağıdaki arabirimlerinden açıklanan [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], ve bir alt kümesini istenen özellik kendine bağlı olarak kaynak denetimi VSPackage'ı uygular. Bazı arabirimler işaretli olarak gerekli ve her kaynak denetimi VSPackage'ı uygulanmalıdır.  
-  
- Bir paketi uygulamayan, bu arabirimlerin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] varsayılan uygulamasını sağlar. Varsayılan uygulama yok VSPackage kaydedildiğinde durum ve proje için tasarlanmıştır Not denetlenir. Bu arabirimler için varsayılan uygulama bırakmak yerine tüm gerekli arabirimleri doğru yazılmış kaynak denetimi VSPackage'ı uygular.  
-  
- Kaynak denetimi VSPackage'ı bazılarını veya tümünü aşağıdaki arabirimlerinden kapsülleyen bir özel hizmet uygulamalıdır.  
-  
- Arabirimleri şunlardır:  
-  
--   Gerekli: İlgili varlık (Proje kaynak denetimi VSPackage'ı, kaynak denetimi saplama) arabirimini uygulaması gerekir.  
-  
--   Önerilen: Varlık, bu arabirimi uygulayan; Aksi takdirde, kaynak denetimi işlevlerini sınırlı olabilir.  
-  
--   İsteğe bağlı: varlık daha zengin bir özellik kümesi sağlamak için bu arabirimi uygulayabilir.  
-  
+Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenmiştir [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kaynak denetimi VSPackage'ı, bazı bu arabirimleri uygulayan ve diğer kaynak denetimi görevlerini gerçekleştirmek için kullanır.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Kaynak denetimi VSPackage'larını ve tarafından uygulanan arabirimler
+ Aşağıdaki arabirimlerinden açıklanan [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], ve bir alt kümesini istenen özellik kendine bağlı olarak kaynak denetimi VSPackage'ı uygular. Bazı arabirimler işaretli olarak gerekli ve her kaynak denetimi VSPackage'ı uygulanmalıdır.
+
+ Bir paketi uygulamayan, bu arabirimlerin [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] varsayılan uygulamasını sağlar. Varsayılan uygulama yok VSPackage kaydedildiğinde durum ve proje için tasarlanmıştır Not denetlenir. Bu arabirimler için varsayılan uygulama bırakmak yerine tüm gerekli arabirimleri doğru yazılmış kaynak denetimi VSPackage'ı uygular.
+
+ Kaynak denetimi VSPackage'ı bazılarını veya tümünü aşağıdaki arabirimlerinden kapsülleyen bir özel hizmet uygulamalıdır.
+
+ Arabirimleri şunlardır:
+
+-   Gerekli: İlgili varlık (Proje kaynak denetimi VSPackage'ı, kaynak denetimi saplama) arabirimini uygulaması gerekir.
+
+-   Önerilen: Varlık, bu arabirimi uygulayan; Aksi takdirde, kaynak denetimi işlevlerini sınırlı olabilir.
+
+-   İsteğe bağlı: varlık daha zengin bir özellik kümesi sağlamak için bu arabirimi uygulayabilir.
+
 | Arabirim | Amaç | Uygulayan | Uygulansın mı? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Düzenleyiciler, değiştirme veya bir dosyayı kaydetmeden önce bu arabirimi çağırın. Kaynak denetimi VSPackage'ı dosyayı kullanıma alın veya kullanıma alma başarısız olursa, işlem reddet. | Kaynak denetimi VSPackage'ı | Önerilen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Bu arabirim, kaydetme ve projeler kaynak denetimi ile kaydı ve temel kaynak denetim karakterleri için destek sunarak gibi projeler için temel kaynak denetimi işlevlerini sağlar. | Kaynak denetimi VSPackage'ı | Gerekli |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Bu arabirim elde edilen <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> kullanarak <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> işlevi veya yalnızca uygulama nesnesi atama `IVsHierarchy` için `IVsSccProject2`. Bir projedeki kaynak denetimi altında dosyaları alma veya proje konumu ve geçerli kaynak denetimi durumu bildiren için kullanılır. | Proje | Gerekli |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Bu arabirim elde edilen <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> kullanarak <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> işlevi veya yalnızca uygulama nesnesi atama `IVsHierarchy` için `IVsSccProject2`. Bir projedeki kaynak denetimi altında dosyaları alma veya proje konumu ve geçerli kaynak denetimi durumu bildiren için kullanılır. | Project | Gerekli |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | Tümleştirme modülü, bu arabirimin geçerli etkin VSPackage'ı ayarlamak için kullanır. | Kaynak denetimi VSPackage'ı | Gerekli |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | Bu arabirim, bir abonelik modeline dayalıdır. Herhangi bir VSPackage belge olaylarını almak ve Kabuk tarafından gerçekleşmek üzere olan olayları olun ister sinyal verebilirsiniz. Uygulanan ve tarafından işlenen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], sırayla Geçiren uygulama olayları `IVsTrackProjectDocumentsEvents2` VSPackage için. | Kaynak denetimi saptama | Gerekli |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | Bu arabirim, toplu işlem, eşitlenmiş okuma/yazma işlemleri ve gelişmiş bir sağlar `OnQueryAddFiles` yöntemi. | Kaynak denetimi saptama | Gerekli |
@@ -53,13 +53,13 @@ Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenm
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | VSPackage'ı ek karakterleri düğümler için kaynak denetim karakterleri olarak tanımlamak için bu arabirimi kullanan **Çözüm Gezgini**. | Kaynak denetimi VSPackage'ı | İsteğe Bağlı |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | **Ekle** Web projeleri için iletişim kutusunda, bu arabirim kullanır. Bu, bir kaynak denetimi konumunu ve kaynak denetim deposu bu konumdaki daha önce eklenen bir Web projesi açmak için gözatma için yöntemler sağlar. | Kaynak denetimi VSPackage'ı | Önerilen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Bu arabirim, projelerin kaynak denetiminden zaman uyumsuz (arka plan) yüklenmesi için destek sağlar. | Kaynak denetimi VSPackage'ı | İsteğe Bağlı |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Bu arabirim tarafından başlatılan zaman uyumsuz yükleme ilerlemesini izlemek projeleri sağlar <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>. | Proje | İsteğe Bağlı |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Bu arabirim tarafından başlatılan zaman uyumsuz yükleme ilerlemesini izlemek projeleri sağlar <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>. | Project | İsteğe Bağlı |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | Bu arabirim etkin kaynak denetimi VSPackage'ı sorgulamak IDE sağlar. Hiçbir etkin kaynak denetimi VSPackage'ı kayıtlı olduğunda bile anlama sahip bir kaynak denetim ayarları değerini IDE sorgular. Bu arabirim uygulanan ve tarafından işlenen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. | Kaynak denetimi saptama | Gerekli |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | Bu arabirim, kaynak denetimi VSPackage'ı kaydedilirken kullanılır. | Kaynak denetimi saptama | Gerekli |
 | <xref:EnvDTE.SourceControl> | Bu arabirim, Otomasyon kullanılır. Bu nedenle, herhangi bir UI görüntülemeden yürütülen işlevler sunar. | Kaynak denetimi VSPackage'ı | İsteğe Bağlı |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Bu arabirim, kaynak denetim ayarları içinde çözüm (.sln) dosyasını kaydetmek için kullanılır. Kaynak Denetim durumu bayrakları ve kaynak denetimi konumunu ayarlar içerir. | Kaynak denetimi VSPackage'ı | Önerilen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Bu arabirim, çözüm seçenekleri (. suo) dosyayı kaynak denetimi ayarlarını kaydetmek için kullanılır. Bu, geçerli kullanıcının kayıt konumu gibi kullanıcıya özgü kaynak denetim ayarları içerebilir. | Kaynak denetimi VSPackage'ı | Önerilen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Bu arabirim, çözümleri kapatma ya da proje açarken yeni dosyalar kaynak denetiminden almak önce proje dosyalarının iade gibi işlemleri gerçekleştirmek için olayları izlemek için kullanılır. | Kaynak denetimi VSPackage'ı | Önerilen |
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tasarım Öğeleri](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Tasarım Öğeleri](../../extensibility/internals/source-control-vspackage-design-elements.md)

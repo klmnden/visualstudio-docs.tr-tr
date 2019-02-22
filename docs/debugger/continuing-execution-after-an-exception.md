@@ -25,23 +25,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48e0cf526d6fadcb1b91206d6e1958d89d3bdfe5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949975"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637288"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Özel Durumdan Sonra Yürütmeye Devam Etme
-Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse göreceğiniz **özel durum Yardımcısı**, varsayılan olarak. Devre dışı bıraktıysanız **özel durum Yardımcısı** içinde **seçenekleri** iletişim kutusu görürsünüz **özel durum Yardımcısı'nı** (C# veya Visual Basic) veya  **Özel durum** iletişim kutusu (C++).  
-  
+Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse göreceğiniz **özel durum Yardımcısı**, varsayılan olarak. Devre dışı bıraktıysanız **özel durum Yardımcısı** içinde **seçenekleri** iletişim kutusu görürsünüz **özel durum Yardımcısı'nı** (C# veya Visual Basic) veya  **Özel durum** iletişim kutusu (C++).
+
  Zaman **özel durum Yardımcısı** görünürse, özel duruma neden olan sorunu düzeltmeye çalışın.
-  
-## <a name="managed-and-native-code"></a>Yönetilen ve yerel kod  
+
+## <a name="managed-and-native-code"></a>Yönetilen ve yerel kod
  Yönetilen ve yerel kod yürütme aynı iş parçacığında işlenmeyen bir özel durumdan sonra devam edebilirsiniz. **Özel durum Yardımcısı** burada özel durum oluşturuldu noktasına çağrı yığınını geriye doğru izler.
-  
-## <a name="mixed-code"></a>Karışık kod  
- Karma bir yerel ve yönetilen kod hata ayıklama sırasında işlenmeyen özel durumu, işletim sistemi kısıtlamaları çağrı yığınını geriye doğru izleme engeller. Kısayol menüsünü kullanarak çağrı yığınını geri sarma çalışırsanız, bir hata iletisi, hata ayıklayıcı işlenmeyen bir bırakma olamaz açıklar dışındaki hata ayıklama sırasında karma kodu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel Durumları Hata Ayıklayıcısı ile Yönetme](../debugger/managing-exceptions-with-the-debugger.md)
+
+## <a name="mixed-code"></a>Karışık kod
+ Karma bir yerel ve yönetilen kod hata ayıklama sırasında işlenmeyen özel durumu, işletim sistemi kısıtlamaları çağrı yığınını geriye doğru izleme engeller. Kısayol menüsünü kullanarak çağrı yığınını geri sarma çalışırsanız, bir hata iletisi, hata ayıklayıcı işlenmeyen bir bırakma olamaz açıklar dışındaki hata ayıklama sırasında karma kodu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+- [Özel Durumları Hata Ayıklayıcısı ile Yönetme](../debugger/managing-exceptions-with-the-debugger.md)

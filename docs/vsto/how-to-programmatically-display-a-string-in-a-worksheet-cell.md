@@ -13,41 +13,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97e57f35298a14da5c4098b464f8248b93a0592
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7d391022e9ce86b2866d941d8c0b56e2e35e3776
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871812"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629449"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Nasıl yapılır: Program aracılığıyla çalışma sayfası hücresinde bir dizeyi görüntüleme
-  Bu örnek, bir hücresinde program aracılığıyla metin görüntüleme gösterilmiştir. Metni hücrede görüntülemek için kullanın bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="use-a-namedrange-control"></a>NamedRange denetimi kullanma  
- Bu örnekte bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `message`. Tasarım zamanında bir belge düzeyi özelleştirmesi için bir denetim eklenmesi gerekir. Aşağıdaki kod, bir sayfa sınıfında değil yerleştirilmelidir `ThisWorkbook` sınıfı.  
-  
-### <a name="to-display-text-in-a-namedrange-control"></a>NamedRange denetimi metni görüntülemek için  
-  
-1.  Değerini <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimini **Hello World**.  
-  
+  Bu örnek, bir hücresinde program aracılığıyla metin görüntüleme gösterilmiştir. Metni hücrede görüntülemek için kullanın bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi veya yerel Excel range nesnesi.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="use-a-namedrange-control"></a>NamedRange denetimi kullanma
+ Bu örnekte bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `message`. Tasarım zamanında bir belge düzeyi özelleştirmesi için bir denetim eklenmesi gerekir. Aşağıdaki kod, bir sayfa sınıfında değil yerleştirilmelidir `ThisWorkbook` sınıfı.
+
+### <a name="to-display-text-in-a-namedrange-control"></a>NamedRange denetimi metni görüntülemek için
+
+1.  Değerini <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimini **Hello World**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
-     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
-  
-## <a name="use-a-native-excel-range"></a>Yerel bir Excel aralığı kullanın  
- Aşağıdaki kod, program aracılığıyla yeni bir aralık oluşturur ve bir değer atar.  
-  
-### <a name="to-display-text-in-an-excel-range"></a>Excel aralığında metni görüntülemek için  
-  
-1.  Hücre aralığı almak **A1** üzerinde `Sheet1` ve değerine **Hello World**.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
+
+## <a name="use-a-native-excel-range"></a>Yerel bir Excel aralığı kullanın
+ Aşağıdaki kod, program aracılığıyla yeni bir aralık oluşturur ve bir değer atar.
+
+### <a name="to-display-text-in-an-excel-range"></a>Excel aralığında metni görüntülemek için
+
+1.  Hücre aralığı almak **A1** üzerinde `Sheet1` ve değerine **Hello World**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
-     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İzlenecek yol: Bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Office çözümlerinde sorun giderme](../vsto/troubleshooting-office-solutions.md)   
- [NamedRange denetimi](../vsto/namedrange-control.md)   
- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İzlenecek yol: Bir Windows formu kullanarak veri toplama](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Office çözümlerinde sorun giderme](../vsto/troubleshooting-office-solutions.md)
+- [NamedRange denetimi](../vsto/namedrange-control.md)
+- [Office projelerindeki nesnelere genel erişim](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

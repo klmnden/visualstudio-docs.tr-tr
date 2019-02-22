@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6cb50e3b62380ff8de191de153ff4edd0545de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982994"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625198"
 ---
 # <a name="just-my-code-threads-view"></a>Yalnızca Kendi Kodum (İş Parçacıkları Görünümü)
-Bu seçeneği belirlerseniz, çağrı yığını, yalnızca kodunuzu artı çağrılan fonksiyonların bir seviyesini göstermek için filtre uygular.  
-  
- Bu seçeneği etkinleştirilerek çağrı yığınının karmaşıklığını önemli ölçüde azaltan ve belki de belirli bir sorunu tanılamak daha kolay hale getirebilirsiniz.  
-  
- Bazı durumlarda, bu seçeneğin belirlenmesi, engelleme duyurmak filtre uygulayabilir. Bu belirlenmesi için tam çağrı yığın ayrıntılarını gerektiriyorsa, tam çağrı yığınını kullanıma sunmak için bu seçeneği temizleyin.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İş Parçacıkları görünümü](../profiling/threads-view-parallel-performance.md)   
- [Gürültü azaltma yüzdesi](../profiling/noise-reduction-percentage.md)
+Bu seçeneği belirlerseniz, çağrı yığını, yalnızca kodunuzu artı çağrılan fonksiyonların bir seviyesini göstermek için filtre uygular.
+
+ Bu seçeneği etkinleştirilerek çağrı yığınının karmaşıklığını önemli ölçüde azaltan ve belki de belirli bir sorunu tanılamak daha kolay hale getirebilirsiniz.
+
+ Bazı durumlarda, bu seçeneğin belirlenmesi, engelleme duyurmak filtre uygulayabilir. Bu belirlenmesi için tam çağrı yığın ayrıntılarını gerektiriyorsa, tam çağrı yığınını kullanıma sunmak için bu seçeneği temizleyin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+- [Gürültü azaltma yüzdesi](../profiling/noise-reduction-percentage.md)

@@ -16,63 +16,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde2f9418a06b85f19027de37c242f06ad6a0868
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2c011e700eb93293ae5fa0b08db5f486ea85ad5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920904"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604203"
 ---
 # <a name="property-element-msbuild"></a>Özellik öğesi (MSBuild)
-Bir kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her bir özellik bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `PropertyGroup` öğesi.  
+Bir kullanıcı tanımlı özellik adını ve değerini içerir. Kullanılan her bir özellik bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `PropertyGroup` öğesi.
 
- \<Proje >  
- \<PropertyGroup >  
+ \<Proje > \<PropertyGroup >
 
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
 
-```xml  
-<Property Condition="'String A' == 'String B'">  
-    Property Value  
-</Property>  
-```  
+```xml
+<Property Condition="'String A' == 'String B'">
+    Property Value
+</Property>
+```
 
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
-### <a name="attributes"></a>Öznitelikler  
+### <a name="attributes"></a>Öznitelikler
 
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Alt öğeleri  
- Yok.  
+### <a name="child-elements"></a>Alt öğeleri
+ Yok.
 
-### <a name="parent-elements"></a>Üst öğeler  
+### <a name="parent-elements"></a>Üst öğeler
 
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Özellikler için gruplandırma öğesi.|  
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Özellikler için gruplandırma öğesi.|
 
-## <a name="text-value"></a>Metin değeri  
- Metin değeri isteğe bağlıdır.  
+## <a name="text-value"></a>Metin değeri
+ Metin değeri isteğe bağlıdır.
 
- Bu metin değerini belirtir ve XML içeriyor olabilir.  
+ Bu metin değerini belirtir ve XML içeriyor olabilir.
 
-## <a name="remarks"></a>Açıklamalar  
- Özellik adları yalnızca ASCII karakterleri sınırlıdır. Özellik değerlerini başvurulan projede arasında özellik adı girerek "`$(`"ve"`)`". Örneğin, `$(builddir)\classes` çözümlemek *build\classes*, `builddir` özellik değeri olan `build`. Özellikler hakkında daha fazla bilgi için bkz. [MSBuild özellikleri](../msbuild/msbuild-properties.md).  
+## <a name="remarks"></a>Açıklamalar
+ Özellik adları yalnızca ASCII karakterleri sınırlıdır. Özellik değerlerini başvurulan projede arasında özellik adı girerek "`$(`"ve"`)`". Örneğin, `$(builddir)\classes` çözümlemek *build\classes*, `builddir` özellik değeri olan `build`. Özellikler hakkında daha fazla bilgi için bkz. [MSBuild özellikleri](../msbuild/msbuild-properties.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki kod kümeleri `Optimization` özelliğini `false` ve `DefaultVersion` özelliğini `1.0` varsa `Version` özelliği boşsa.  
+## <a name="example"></a>Örnek
+ Aşağıdaki kod kümeleri `Optimization` özelliğini `false` ve `DefaultVersion` özelliğini `1.0` varsa `Version` özelliği boşsa.
 
-```xml  
-<PropertyGroup>  
-    <Optimization>false</Optimization>  
-    <DefaultVersion Condition="'$(Version)' == ''" >1.0</DefaultVersion>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup>
+    <Optimization>false</Optimization>
+    <DefaultVersion Condition="'$(Version)' == ''" >1.0</DefaultVersion>
+</PropertyGroup>
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[MSBuild özellikleri](../msbuild/msbuild-properties.md)  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild özellikleri](../msbuild/msbuild-properties.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)

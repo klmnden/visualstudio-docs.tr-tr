@@ -15,34 +15,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bae108ad946485fac3a9ba555978ccc1cb308a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e9244081a228ebcca3c50bd4d4cd4a55acf97c8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919987"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641565"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
-Tüm iş parçacıkları ve Bağlamlar için izleme günlüklerini yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+Tüm iş parçacıkları ve Bağlamlar için izleme günlüklerini yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```cpp
-HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [in] `intermediateDirectory`  
- İzleme günlüğü depolanacağı dizin.  
-  
- [in] `tlogRootName`  
- Günlük dosyası adı kök adı.  
-  
-## <a name="return-value"></a>Dönüş değeri  
- Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Üst bilgi:** *FileTracker.h*  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)
+HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);
+```
+
+#### <a name="parameters"></a>Parametreler
+- [in] `intermediateDirectory` İzleme günlüğünü depolanacağı dizin.
+
+- [in] `tlogRootName` Günlük dosyası adı kök adı.
+
+## <a name="return-value"></a>Dönüş değeri
+ Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.
+
+## <a name="requirements"></a>Gereksinimler
+ **Üst bilgi:** *FileTracker.h*
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [WriteContextTLogs](../msbuild/writecontexttlogs.md)

@@ -11,29 +11,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 048ce0d88a87f42f5b98104d6ec928f5af8b40e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5749875a440a3122a06b81ae9d721e75ded6202c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023073"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641305"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage'larda komut yönlendirme
-Komut içinde yönlendirilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , bunu yürütüleceğini bağlama göre. Bu, dışa doğru ilk bağlamdan genel bağlamına yönlendirilir.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [Komut yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md)  
- Komut yönlendirme çözümleme sırasını tanımlar.  
-  
- [Komut kullanılabilirliği](../../extensibility/internals/command-availability.md)  
- Komut yönlendirme açıklanır.  
-  
- [Komutlar ve menüler birlikte çalışma bütünleştirilmiş kodları kullanın](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- Yönetilen kod ve COM arasında yönlendirme komutları konuları anlatılmaktadır.  
-  
-## <a name="related-sections"></a>İlgili bölümler  
- [Seçim bağlamı nesneleri](../../extensibility/internals/selection-context-objects.md)  
- Kullanıcının seçimi bağlam odaklanan bir pencere nasıl belirlemek için modeli ele alınmaktadır.  
-  
- [Komutlar, menüler ve araç çubukları](../../extensibility/internals/commands-menus-and-toolbars.md)  
+Komut içinde yönlendirilir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , bunu yürütüleceğini bağlama göre. Bu, dışa doğru ilk bağlamdan genel bağlamına yönlendirilir.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [Komut yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md)
+
+ Komut yönlendirme çözümleme sırasını tanımlar.
+
+- [Komut kullanılabilirliği](../../extensibility/internals/command-availability.md)
+
+ Komut yönlendirme açıklanır.
+
+- [Komutlar ve menüler birlikte çalışma bütünleştirilmiş kodları kullanın](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+
+ Yönetilen kod ve COM arasında yönlendirme komutları konuları anlatılmaktadır.
+
+## <a name="related-sections"></a>İlgili bölümler
+- [Seçim bağlamı nesneleri](../../extensibility/internals/selection-context-objects.md)
+
+ Kullanıcının seçimi bağlam odaklanan bir pencere nasıl belirlemek için modeli ele alınmaktadır.
+
+- [Komutlar, menüler ve araç çubukları](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  Menüleri, araç çubukları ve komut birleşik giriş kutuları içeren bir kullanıcı Arabirimi oluşturma açıklanmaktadır.

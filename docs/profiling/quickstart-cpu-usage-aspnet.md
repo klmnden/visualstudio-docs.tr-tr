@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996213"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634064"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verilerini, Visual Studio (ASP.NET) çözümleme
 
@@ -87,8 +87,8 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla 
-  
+##  <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
+
 1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `Simple` Oluşturucusu:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
 
     > [!TIP]
     > İki kesme noktaları ayarlayarak veri toplamayı çözümlemek istediğiniz kod parçalarını sınırlayabilirsiniz.
-  
+
 1.  **Tanılama araçları** pencere zaten görünür değilse, bunu devre dışı bırakmış. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
 
 1.  Tıklayın **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
@@ -189,7 +189,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
      Şimdi, artık performans verileri bölge için özellikle uygulamanız iki kesme noktaları arasında çalışan kod için var.
 
      Profil Oluşturucu, iş parçacığı veri hazırlama başlar. Bitmesini bekleyin.
-  
+
      CPU kullanımı aracı raporda görüntüler **CPU kullanımı** sekmesi.
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
@@ -207,7 +207,7 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 
 2. İşlev listesinde çift `MyProfilingApp_MVC.Models.ServerClass::GetNumber` işlevi.
 
-    İşlev çift tıkladığınızda **çağıran/çağrılan** görünümü sol bölmede açılır. 
+    İşlev çift tıkladığınızda **çağıran/çağrılan** görünümü sol bölmede açılır.
 
     ![Arayan/Aranan görünümü tanılama araçları](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ CPU kullanımı altında işlevler listesini inceleyerek, en fazla çalışmayı
 - [CPU kullanımını analiz etme](../profiling/cpu-usage.md) CPU kullanım aracı hakkında daha ayrıntılı bilgiler.
 - -Daha fazla bilgi için çalışan bir uygulamanın hedefleyerek veya eklenmiş bir hata ayıklayıcı olmadan CPU kullanımını analiz etme [hata ayıklama olmadan profil oluşturma verisi toplama](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) içinde [profil oluşturma araçları ile veya hata ayıklayıcı olmadan çalıştırın](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Ayrıca bkz.  
+## <a name="see-also"></a>Ayrıca bkz.
 
- [Visual Studio profil oluşturma](../profiling/index.md)  
- [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)
+- [Visual Studio profil oluşturma](../profiling/index.md)
+- [Araçlar profil oluşturmaya ilk bakış](../profiling/profiling-feature-tour.md)

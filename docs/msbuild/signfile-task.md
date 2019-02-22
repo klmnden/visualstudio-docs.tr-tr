@@ -18,37 +18,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec3dbc52c381b5e691ecf7a8072a85da70e43fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 496017f386e731e553bfce237bd1d2eabea46f49
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961968"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608987"
 ---
 # <a name="signfile-task"></a>SignFile görevi
 
 Belirtilen dosyayı belirtilen sertifikayı kullanarak imzalar.
-  
+
 ## <a name="parameters"></a>Parametreler
 
  Parametreleri aşağıdaki tabloda açıklanmıştır `SignFile` görev.
-  
+
  SHA-256'yı sertifikaları izin verilen .NET 4.5 olan makinelere ve daha yüksek olduğunu unutmayın.
-  
+
 > [!WARNING]
 > Visual Studio 2013 güncelleştirme 3'te başlayarak, bu görevin dosyası için hedef framework sürümünü belirtmenizi sağlayan yeni bir imzası vardır. SHA-256'yı MSBuild işleminde kullandığı için mümkün olan karma yere yalnızca hedef Framework'ü .NET 4.5 olduğunda yeni imza kullanmak için kullanmaları ya da daha yüksek olursunuz. Aşağıda veya .NET 4.0 hedef çerçeve ise SHA-256 karma kullanılmayacak.
-  
+
 |Parametre|Açıklama|
 |---------------|-----------------|
 |`CertificateThumbprint`|Gerekli `String` parametresi.<br /><br /> İmzalama için kullanılacak sertifikayı belirtir. Bu sertifika, geçerli kullanıcının kişisel deposunda olmalıdır.|
 |`SigningTarget`|Gerekli <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Sertifika ile imzalamak için dosyaları belirtir.|
 |`TimestampUrl`|İsteğe bağlı `String` parametresi.<br /><br /> Zaman damgası sunucusunun URL'sini belirtir.|
 |`TargetFrameworkVersion`|Hedef için kullanılan .NET Framework sürümü.|
-  
+
 ## <a name="remarks"></a>Açıklamalar
 
  Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [görev taban sınıfı](../msbuild/task-base-class.md).
-  
+
 ## <a name="example"></a>Örnek
 
  Aşağıdaki örnekte `SignFile` belirtilen dosyaları imzalamak için görev `FilesToSign` koleksiyon öğesi tarafından belirtilen sertifika ile `Certificate` özelliği.
@@ -72,7 +72,7 @@ Belirtilen dosyayı belirtilen sertifikayı kullanarak imzalar.
 
 > [!NOTE]
 > Sertifika parmak izini sertifika SHA-1 karmasını ' dir. Daha fazla bilgi için [SHA-1 karmasını bir güvenilen kök CA sertifikası elde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Sertifika ayrıntıları parmak izini kopyalayıp, ek (3F) içermez emin engelleyebilir görünmez karakter `SignFile` gelen sertifikayı bulma.
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevler](../msbuild/msbuild-tasks.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)

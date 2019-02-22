@@ -8,55 +8,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a31e5efca4fe2c8b81e3f8653422ed3311a0ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: baea4215ac3424bbf8d9d2acc713aac80e273d1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634038"
 ---
 # <a name="vsperf"></a>VSPerf
-Kullanım **VsPerf** komut satırı aracı:  
-  
-1. Visual Studio cihazda yüklü değilse komut satırından UWP uygulamaları profil.  
-  
-2. Masaüstü uygulamalarını Windows 8 ve Windows Server 2012 uygulamalar örnekleme profili oluşturma yöntemi kullanarak profil.  
-  
-   Profil oluşturma seçenekleriniz hakkında daha fazla bilgi için bkz. [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-## <a name="uwp-apps-only"></a>Yalnızca UWP uygulamaları  
- Bu seçenekler yalnızca UWP uygulamaları için geçerlidir.  
-  
-|||  
-|-|-|  
-|**/App: {AppName}**|Profil oluşturucuyu başlatır ve Başlat Menüsü'nden başlatılmak üzere belirtilen uygulama bekler.<br /><br /> Çalıştırma `vsperf /listapps` Pakettamadı yüklü uygulamalar ve uygulama adı görüntülemek için.|  
-|**/ Paket: {Pakettamadı}**|Profil oluşturucuyu başlatır ve Başlat Menüsü'nden başlatılmak üzere belirtilen uygulama bekler.<br /><br /> Çalıştırma `vsperf /listapps` Pakettamadı yüklü uygulamalar ve uygulama adı görüntülemek için.|  
-|**/js**|Profil oluşturma JavaScript uygulamaları için gereklidir.<br /><br /> JavaScript uygulamalarından performans verilerini topla.<br /><br /> Sadece/Package kullanımı veya / ekleyin.|  
-|**/noclr**|İsteğe bağlı. CLR veri toplamaz.<br /><br /> Sadece/Package kullanımı veya / ekleyin.<br /><br /> En iyi duruma getirilmesi, yönetilen sembol çözülecektir.|  
-|**/listapps**|Yüklü uygulama adları ve PackageFullNames listeleyin.|  
-  
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Masaüstü uygulamalarını Windows 8 ve Windows Server 2012 uygulamalar  
- Bu seçenekler, UWP uygulamaları üzerinde çalışmaz.  
-  
-|||  
-|-|-|  
-|**/ launch: {yürütülebilir}**|Başlatır ve belirtilen yürütülebilir dosya profil oluşturma başlar.|  
-|**args: {ExecutableArguments}**|Geçirilecek komut satırı bağımsız değişkenlerini belirtir **/başlatma** hedef.|  
-|**/ Console**|Çalıştırmaları **/başlatma** hedef yeni bir komut penceresinde.|  
-  
-## <a name="all-applications"></a>Tüm uygulamalar  
- Bu seçenek, herhangi bir Windows 8 veya Windows Server 2012 uygulama için geçerlidir.  
-  
-|||  
-|-|-|  
-|**/ ekleme: {PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Belirtilen işlemlerden veri toplar.<br /><br /> İşlem kimliği (PID) görüntülemek ve işlem adları çalışan uygulamalar için Görev Yöneticisi'ni kullanın.|  
-|**/ file:{ReportName}**|İsteğe bağlı. Çıkış dosyası (varolan dosyanın üzerine yazar) belirtir.<br /><br /> Sadece/Package kullanımı veya / ekleyin.|  
-|**/ Pause**|Veri koleksiyonu duraklatın.|  
-|**/Resume**|Veri koleksiyonu devam ettirin.|  
-|**/ stop**|Veri toplama işlemini durdurun ve hedef işlemleri sonlandırın.|  
-|**/ detach**|Veri toplamayı Durdur, ancak çalışmaya devam hedef işlemler sağlar.|  
-|**/ Status**|Profil Oluşturucu durumunu gösterir.|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
- [Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)
+Kullanım **VsPerf** komut satırı aracı:
+
+1. Visual Studio cihazda yüklü değilse komut satırından UWP uygulamaları profil.
+
+2. Masaüstü uygulamalarını Windows 8 ve Windows Server 2012 uygulamalar örnekleme profili oluşturma yöntemi kullanarak profil.
+
+   Profil oluşturma seçenekleriniz hakkında daha fazla bilgi için bkz. [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+## <a name="uwp-apps-only"></a>Yalnızca UWP uygulamaları
+ Bu seçenekler yalnızca UWP uygulamaları için geçerlidir.
+
+|||
+|-|-|
+|**/App: {AppName}**|Profil oluşturucuyu başlatır ve Başlat Menüsü'nden başlatılmak üzere belirtilen uygulama bekler.<br /><br /> Çalıştırma `vsperf /listapps` Pakettamadı yüklü uygulamalar ve uygulama adı görüntülemek için.|
+|**/ Paket: {Pakettamadı}**|Profil oluşturucuyu başlatır ve Başlat Menüsü'nden başlatılmak üzere belirtilen uygulama bekler.<br /><br /> Çalıştırma `vsperf /listapps` Pakettamadı yüklü uygulamalar ve uygulama adı görüntülemek için.|
+|**/js**|Profil oluşturma JavaScript uygulamaları için gereklidir.<br /><br /> JavaScript uygulamalarından performans verilerini topla.<br /><br /> Sadece/Package kullanımı veya / ekleyin.|
+|**/noclr**|İsteğe bağlı. CLR veri toplamaz.<br /><br /> Sadece/Package kullanımı veya / ekleyin.<br /><br /> En iyi duruma getirilmesi, yönetilen sembol çözülecektir.|
+|**/listapps**|Yüklü uygulama adları ve PackageFullNames listeleyin.|
+
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Masaüstü uygulamalarını Windows 8 ve Windows Server 2012 uygulamalar
+ Bu seçenekler, UWP uygulamaları üzerinde çalışmaz.
+
+|||
+|-|-|
+|**/ launch: {yürütülebilir}**|Başlatır ve belirtilen yürütülebilir dosya profil oluşturma başlar.|
+|**args: {ExecutableArguments}**|Geçirilecek komut satırı bağımsız değişkenlerini belirtir **/başlatma** hedef.|
+|**/ Console**|Çalıştırmaları **/başlatma** hedef yeni bir komut penceresinde.|
+
+## <a name="all-applications"></a>Tüm uygulamalar
+ Bu seçenek, herhangi bir Windows 8 veya Windows Server 2012 uygulama için geçerlidir.
+
+|||
+|-|-|
+|**/ ekleme: {PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Belirtilen işlemlerden veri toplar.<br /><br /> İşlem kimliği (PID) görüntülemek ve işlem adları çalışan uygulamalar için Görev Yöneticisi'ni kullanın.|
+|**/ file:{ReportName}**|İsteğe bağlı. Çıkış dosyası (varolan dosyanın üzerine yazar) belirtir.<br /><br /> Sadece/Package kullanımı veya / ekleyin.|
+|**/ Pause**|Veri koleksiyonu duraklatın.|
+|**/Resume**|Veri koleksiyonu devam ettirin.|
+|**/ stop**|Veri toplama işlemini durdurun ve hedef işlemleri sonlandırın.|
+|**/ detach**|Veri toplamayı Durdur, ancak çalışmaya devam hedef işlemler sağlar.|
+|**/ Status**|Profil Oluşturucu durumunu gösterir.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
+- [Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)

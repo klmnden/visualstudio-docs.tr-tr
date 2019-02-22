@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5759be35cda11557847d128233811d8aaffced7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938936"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638707"
 ---
 # <a name="lc-task"></a>LC görevi
 Sarmalar *LC.exe*, oluşturduğu bir *.license* dosyasını bir *.licx* dosya. Daha fazla bilgi için *LC.exe*, bkz: [Lc.exe (lisans derleyici)](/dotnet/framework/tools/lc-exe-license-compiler).
@@ -67,5 +67,5 @@ Aşağıdaki örnekte `LC` lisansları derlemek için bir görev.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Görevler](../msbuild/msbuild-tasks.md)  
-[Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

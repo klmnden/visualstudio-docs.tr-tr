@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932304"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608090"
 ---
 # <a name="debug-interface-access-sdk"></a>Arabirim Erişimi SDK'sında Hata Ayıklama
 
@@ -27,17 +27,22 @@ Microsoft hata ayıklama arabirimi erişim Yazılım Geliştirme Seti (DIA SDK),
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Başlarken](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Başlarken](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Özellikleri DIA SDK'sı genel bir bakış sağlar ve DIA SDK'sı kitaplığı dosyaları ve gerekli üstbilgisi yanı sıra yüklendiği belirtir.
 
-[.Pdb Dosyasını Sorgulama](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[.Pdb Dosyasını Sorgulama](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 DIA API'SİNİN .pdb dosyasını sorgulama için nasıl kullanılacağı hakkında yönergeler sağlar.
 
-[Simgeler ve Simge Etiketleri](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Simgeler ve Simge Etiketleri](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Simgeler ve simge etiketleri DIA API içinde nasıl kullanılacağını açıklar.
 
-[Başvuru](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Başvuru](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Arabirimleri, yöntemleri, numaralandırmaları ve yapıları DIA API içerir.
 
-[Dia2dump Örneği](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump Örneği](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 DIA API'SİNİN aramak ve hata ayıklama bilgilerine göz atmak için nasıl kullanılacağı gösterilmektedir.

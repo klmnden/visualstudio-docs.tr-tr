@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a92600c1f8fafff63e8c4f36ed249457651e0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977102"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603877"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce önbelleğine genel bakış
-Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları, yerel olarak yüklü veya çevrimiçi barındırılan depolanır istemci bilgisayarda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulama *önbellek*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Documents and Settings klasörü geçerli kullanıcının yerel ayarlarını dizininin altında gizli dizinler ailesinin bir önbellektir. Bu önbellek, derlemeleri, yapılandırma dosyaları, uygulama ve kullanıcı ayarlarını ve veri dizini gibi uygulamanın tüm dosyaları içerir. Önbellek, uygulamanın veri dizini en son sürüme geçirmek için sorumludur. Veri geçişi hakkında daha fazla bilgi için bkz. [erişen yerel ve uzak veri ClickOnce uygulamalarında](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
-  
- Uygulama depolaması için tek bir konum sağlayarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanıcıdan uygulamanın fiziksel yükleme yönetme görevini kazanır. Önbelleğe derlemeler ve veri dosyaları için tüm uygulamaları otomatik olarak kilitlenmesini sağlayarak uygulamalarını yalıtmak da yardımcı olur ve farklı sürümlerine birbirinden ayırın. Örneğin, yükseltme yaptığınızda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama sürümü ve veri kaynaklarıyla önbelleğinde kendi dizinlerle sağlanır.  
-  
-## <a name="cache-storage-quota"></a>Önbellek depolama kotası  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Çevrimiçi barındırılan uygulamalar olunabilecek boşluk boyutunu sınırlayan bir kota tarafından kısıtlı [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önbellek. Önbellek boyutu, kullanıcının tüm çevrimiçi uygulamalar için geçerlidir; tek bir kısmen güvenilen, çevrimiçi uygulama yarısı kota alanı kaplayan sınırlıdır. Yüklü uygulamalar, önbellek boyutuyla sınırlı değildir ve önbellek sınırınızı sayılmaz. Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, önbelleğe yalnızca geçerli sürümü ve daha önce yüklü olan sürümü korur.  
-  
- Çevrimiçi 250 MB depolama alanı için varsayılan olarak, istemci bilgisayarlara sahip [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar. Veri dosyaları, bu sınır içinde sayılmaz. Bir Sistem Yöneticisi büyütebilir veya kayıt defteri anahtarını değiştirerek belirli bir istemci bilgisayar üzerinde bu kotayı azaltmak **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, önbellek boyutu kilobayt cinsinden ifade bir DWORD değeri olduğu. Örneğin, 50 MB önbellek boyutunu azaltmak amacıyla, bu değer 51200 yapmanız gerekir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce uygulamalarında yerel ve uzak veri erişimi](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları, yerel olarak yüklü veya çevrimiçi barındırılan depolanır istemci bilgisayarda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]uygulama *önbellek*. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Documents and Settings klasörü geçerli kullanıcının yerel ayarlarını dizininin altında gizli dizinler ailesinin bir önbellektir. Bu önbellek, derlemeleri, yapılandırma dosyaları, uygulama ve kullanıcı ayarlarını ve veri dizini gibi uygulamanın tüm dosyaları içerir. Önbellek, uygulamanın veri dizini en son sürüme geçirmek için sorumludur. Veri geçişi hakkında daha fazla bilgi için bkz. [erişen yerel ve uzak veri ClickOnce uygulamalarında](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+
+ Uygulama depolaması için tek bir konum sağlayarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kullanıcıdan uygulamanın fiziksel yükleme yönetme görevini kazanır. Önbelleğe derlemeler ve veri dosyaları için tüm uygulamaları otomatik olarak kilitlenmesini sağlayarak uygulamalarını yalıtmak da yardımcı olur ve farklı sürümlerine birbirinden ayırın. Örneğin, yükseltme yaptığınızda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama sürümü ve veri kaynaklarıyla önbelleğinde kendi dizinlerle sağlanır.
+
+## <a name="cache-storage-quota"></a>Önbellek depolama kotası
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Çevrimiçi barındırılan uygulamalar olunabilecek boşluk boyutunu sınırlayan bir kota tarafından kısıtlı [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] önbellek. Önbellek boyutu, kullanıcının tüm çevrimiçi uygulamalar için geçerlidir; tek bir kısmen güvenilen, çevrimiçi uygulama yarısı kota alanı kaplayan sınırlıdır. Yüklü uygulamalar, önbellek boyutuyla sınırlı değildir ve önbellek sınırınızı sayılmaz. Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, önbelleğe yalnızca geçerli sürümü ve daha önce yüklü olan sürümü korur.
+
+ Çevrimiçi 250 MB depolama alanı için varsayılan olarak, istemci bilgisayarlara sahip [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar. Veri dosyaları, bu sınır içinde sayılmaz. Bir Sistem Yöneticisi büyütebilir veya kayıt defteri anahtarını değiştirerek belirli bir istemci bilgisayar üzerinde bu kotayı azaltmak **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment\OnlineAppQuotaInKB**, önbellek boyutu kilobayt cinsinden ifade bir DWORD değeri olduğu. Örneğin, 50 MB önbellek boyutunu azaltmak amacıyla, bu değer 51200 yapmanız gerekir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce uygulamalarında yerel ve uzak veri erişimi](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

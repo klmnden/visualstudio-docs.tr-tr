@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768446"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623833"
 ---
 # <a name="vbc-task"></a>Vbc görevi
-Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağlantı kitaplıklarını (*.dll*), veya kod modüllerini (*.netmodule*). Daha fazla bilgi için *vbc.exe*, bkz: [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağlantı kitaplıklarını (*.dll*), veya kod modüllerini (*.netmodule*). Daha fazla bilgi için *vbc.exe*, bkz: [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Parametreler  
- Parametreleri aşağıdaki tabloda açıklanmıştır `Vbc` görev.  
+## <a name="parameters"></a>Parametreler
+ Parametreleri aşağıdaki tabloda açıklanmıştır `Vbc` görev.
 
 
 | Parametre | Açıklama |
@@ -88,21 +88,21 @@ Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağl
 | `Win32Icon` | İsteğe bağlı `String` parametresi.<br /><br /> Ekler bir *.ico* çıkış dosyası istenen görünümü verir, bütünleştirilmiş kod dosyasında **dosya Gezgini**. Bu parametre için karşılık gelen [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) geçiş *vbc.exe* derleyici. |
 | `Win32Resources` | İsteğe bağlı `String` parametresi.<br /><br /> Bir Win32 kaynağı ekler (*.res*) çıktı dosyasına dosya. Bu parametre için karşılık gelen [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) geçiş *vbc.exe* derleyici. |
 
-## <a name="remarks"></a>Açıklamalar  
- Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Açıklamalar
+ Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.ToolTaskExtension> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.ToolTask> sınıfı. Bu ek parametrelerin ve Tanımlamaların bir listesi için bkz. [ToolTaskExtension taban sınıfı](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir Visual Basic projesi derler.  
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir Visual Basic projesi derler.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Görevleri](../msbuild/msbuild-tasks.md)   
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Görevler](../msbuild/msbuild-tasks.md)
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)

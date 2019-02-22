@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 473b88dca8813d1db3c465105dc7eca95e49dfbe
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868933"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629189"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Nasıl yapılır: Outlook'un form bölgesini görüntülemesini engelleme
-  Microsoft Office Outlook, belirli bir öğe için bir form bölgesinin istemediğiniz durumlar olabilir. Örneğin, bir kişi öğesi bir iş adresi içermiyorsa görüntülenmesini bir eşlem içindeki iş konumunu gösteren bir form bölgesi engelleyebilirsiniz.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Outlook'un form bölgesini görüntülemesini engelleme için  
-  
-1. Değiştirmek istediğiniz form bölgesi için kod dosyasını açın.  
-  
-2. Genişletin **Form bölgesi fabrikası** kod bölge.  
-  
-3. Kodu `FormRegionInitializing` ayarlar olay işleyicisi <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> sınıfının **true**.  
-  
-   Bu örnekte, kişi öğesi bir adresi içermiyorsa <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği **true**, ve form bölgesi görünmez.  
-  
-## <a name="example"></a>Örnek  
+  Microsoft Office Outlook, belirli bir öğe için bir form bölgesinin istemediğiniz durumlar olabilir. Örneğin, bir kişi öğesi bir iş adresi içermiyorsa görüntülenmesini bir eşlem içindeki iş konumunu gösteren bir form bölgesi engelleyebilirsiniz.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Outlook'un form bölgesini görüntülemesini engelleme için
+
+1. Değiştirmek istediğiniz form bölgesi için kod dosyasını açın.
+
+2. Genişletin **Form bölgesi fabrikası** kod bölge.
+
+3. Kodu `FormRegionInitializing` ayarlar olay işleyicisi <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> sınıfının **true**.
+
+   Bu örnekte, kişi öğesi bir adresi içermiyorsa <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> özelliği **true**, ve form bölgesi görünmez.
+
+## <a name="example"></a>Örnek
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)   
- [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Outlook form bölgeleri oluşturma](../vsto/creating-outlook-form-regions.md)
+- [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [İzlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

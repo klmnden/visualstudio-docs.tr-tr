@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47a95db3797592f4c8d55ffa72e0e7323d251378
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7facc5a70b603b016bbafd207650caaef05027fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863610"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600252"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Nasıl yapılır: Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
-  Aşağıdaki yordam bir Microsoft Office Excel çalışma sayfasındaki tüm kayıtlarda gezinin son kullanıcının etkinleştirme denetimleri ile bir veritabanı tablosundan tek bir alan görüntülemek için tasarımcı kullanmayı gösterir.  
-  
- Tasarımcı yalnızca belge düzeyinde projelerde kullanabilirsiniz. Ancak, ayrıca denetimler ekleme ve bunları programlı olarak çalışma zamanında verilere bağlayın. Daha fazla bilgi için [izlenecek yol: VSTO eklenti projesinde basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
-  
- [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
-  
-## <a name="to-scroll-through-database-records-in-a-worksheet"></a>Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma  
-  
-1.  Bir Excel uygulaması projesini Visual Studio'da açın.  
-  
-2.  Açık **veri kaynakları** penceresi ve veritabanından bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).  
-  
-3.  Göstermek istediğiniz verileri içeren tabloyu genişletmek ve belirli sütunu seçin.  
-  
-4.  Denetimleri ve seçin listeyi açın **NamedRange**.  
-  
-5.  Sürükleme <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi hücrenin verilerin görünmesi istediğiniz yere sürükleyin.  
-  
-6.  Gelen **Windows Forms** sekmesinde **araç kutusu**, ekleme bir <xref:System.Windows.Forms.BindingNavigator> denetlemek için çalışma ve kullanmak istediğiniz denetimlerini ayarlayın. Daha fazla bilgi için [BindingNavigator denetimine genel bakış &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)  
+  Aşağıdaki yordam bir Microsoft Office Excel çalışma sayfasındaki tüm kayıtlarda gezinin son kullanıcının etkinleştirme denetimleri ile bir veritabanı tablosundan tek bir alan görüntülemek için tasarımcı kullanmayı gösterir.
+
+ Tasarımcı yalnızca belge düzeyinde projelerde kullanabilirsiniz. Ancak, ayrıca denetimler ekleme ve bunları programlı olarak çalışma zamanında verilere bağlayın. Daha fazla bilgi için [izlenecek yol: VSTO eklenti projesinde basit veri bağlama](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+
+ [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
+
+## <a name="to-scroll-through-database-records-in-a-worksheet"></a>Çalışma sayfasındaki veritabanı kayıtları arasında kaydırma
+
+1.  Bir Excel uygulaması projesini Visual Studio'da açın.
+
+2.  Açık **veri kaynakları** penceresi ve veritabanından bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
+
+3.  Göstermek istediğiniz verileri içeren tabloyu genişletmek ve belirli sütunu seçin.
+
+4.  Denetimleri ve seçin listeyi açın **NamedRange**.
+
+5.  Sürükleme <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi hücrenin verilerin görünmesi istediğiniz yere sürükleyin.
+
+6.  Gelen **Windows Forms** sekmesinde **araç kutusu**, ekleme bir <xref:System.Windows.Forms.BindingNavigator> denetlemek için çalışma ve kullanmak istediğiniz denetimlerini ayarlayın. Daha fazla bilgi için [BindingNavigator denetimine genel bakış &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)

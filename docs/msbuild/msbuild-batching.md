@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cee0c3c503be815feacd5d6077dd9e560b2c4074
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928406"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603475"
 ---
 # <a name="msbuild-batching"></a>MSBuild toplu işleme
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] öğe listeleri farklı kategorileri veya toplu işlemi bölmek için özelliği, öğe meta verileri temel alarak ve bir hedef veya görevi, her batch ile bir kez çalıştırın.
@@ -100,7 +100,7 @@ izin verilmiyor.
 Özellik işlevleri hakkında daha fazla bilgi için bkz: [özellik işlevleri](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)  
-[MSBuild kavramları](../msbuild/msbuild-concepts.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)
+- [Itemmetadata öğesi (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [Gelişmiş kavramlar](../msbuild/msbuild-advanced-concepts.md)

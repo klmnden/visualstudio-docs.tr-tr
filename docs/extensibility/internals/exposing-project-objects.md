@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16a9c34d06cc94e3c9fb41fa3cc09b12b7349849
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992899"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609923"
 ---
 # <a name="expose-project-objects"></a>Proje nesnelerini kullanıma sunma
 
@@ -24,73 +24,73 @@ ms.locfileid: "54992899"
 
 Geç DTE nesnesini kullanarak kök bağlama erişebileceğiniz özel kök düzeyinde Otomasyon nesneleri oluşturabileceğiniz `DTE.<customObjectName>` veya `DTE.GetObject("<customObjectName>")`. Örneğin, Visual C++ adında bir C++ projeye özgü proje koleksiyonu oluşturur *VCProjects* kullanarak erişebileceğiniz `DTE.VCProjects` veya `DTE.GetObject("VCProjects")`. Ayrıca oluşturabilirsiniz bir `Project.Object`, proje türü için benzersiz olan bir `Project.CodeModel`, sorgulanabilen, en türetilmiş nesne için ve bir `ProjectItem`, kullanıma sunan `ProjectItem.Object` ve `ProjectItem.FileCodeModel`.
 
-Proje, projeye özgü özel proje koleksiyonu kullanıma sunmak için ortak bir kuraldır. Örneğin, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kullanarak daha sonra erişebileceğiniz bir C++ belirli proje koleksiyonu oluşturur `DTE.VCProjects` veya `DTE.GetObject("VCProjects")`. Ayrıca oluşturabilirsiniz bir `Project.Object`, proje türü için benzersiz olan bir `Project.CodeModel`, hangi sorgulanabilen, en türetilmiş nesne için bir `ProjectItem`, kullanıma sunan `ProjectItem.Object`ve `ProjectItem.FileCodeModel`.  
-  
-## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>VSPackage özgü bir nesne için bir proje katkıda bulunma  
-  
-1.  Eklemek için uygun anahtarlara *.pkgdef* , VSPackage dosya.  
-  
-     Örneğin, işte *.pkgdef* C++ dil projesi ayarları:  
-  
-    ```  
-    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]  
-    "VCProjects"=""  
-    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\AutomationEvents]  
-    "VCProjectEngineEventsObject"=""  
-    ```  
-  
-2.  Koda uygulanması <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi, aşağıdaki örnekte olduğu gibi.  
-  
-    ```cpp  
-    STDMETHODIMP CVsPackage::GetAutomationObject(  
-    /* [in]  */ LPCOLESTR       pszPropName,   
-    /* [out] */ IDispatch **    ppIDispatch)  
-    {  
-    ExpectedPtrRet(pszPropName);  
-    ExpectedPtrRet(ppIDispatch);  
-    *ppIDispatch = NULL;  
-  
-        if (m_fZombie)  
-            return E_UNEXPECTED;  
-  
-        if (_wcsicmp(pszPropName, g_wszAutomationProjects) == 0)  
-        {  
-            return GetAutomationProjects(ppIDispatch);  
-        }  
-        else if (_wcsicmp(pszPropName, g_wszAutomationProjectsEvents) == 0)  
-        {  
-            return CAutomationEvents::GetAutomationEvents(ppIDispatch);  
-        }  
-        else if (_wcsicmp(pszPropName, g_wszAutomationProjectItemsEvents) == 0)  
-        {  
-            return CAutomationEvents::GetAutomationEvents(ppIDispatch);  
-        }  
-        return E_INVALIDARG;  
-    }   
-    ```  
-  
-     Kodda, `g_wszAutomationProjects` projesi koleksiyonunuzun adı. `GetAutomationProjects` Yöntemini uygulayan bir nesne oluşturur `Projects` arabirimi ve döndürür bir `IDispatch` aşağıdaki kod örneğinde gösterildiği gibi çağrı nesnesi işaretçisi.  
-  
-    ```cpp  
-    HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)  
-    {  
-        ExpectedPtrRet(ppIDispatch);  
-        *ppIDispatch = NULL;  
-  
-        if (!m_srpAutomationProjects)  
-        {  
-            HRESULT hr = CACProjects::CreateInstance(&m_srpAutomationProjects);  
-            IfFailRet(hr);  
-            ExpectedExprRet(m_srpAutomationProjects != NULL);  
-        }  
-        return m_srpAutomationProjects.CopyTo(ppIDispatch);  
-    }  
-    ```  
-  
-     Otomasyon nesneniz için benzersiz bir ad seçin. Ad çakışmaları tahmin edilemez ve birden fazla proje türü adın aynısını kullanırsanız, rasgele oluşturulabilecek çakışan bir nesne adı Çarpışmaları neden. Şirket adınızı veya benzersiz bir unsurunu Otomasyon nesne adını, ürün adı içermesi gerekir.  
-  
-     Özel `Projects` koleksiyon nesnesi, proje otomasyon modeli kalan kısmı için bir kolaylık giriş noktasıdır. Proje nesnenizin de erişilebilir <xref:EnvDTE.Solution> proje koleksiyonu. Tüketicileriyle sağlayan ilgili kod ve kayıt defteri girdileri oluşturduktan sonra `Projects` koleksiyon nesnelerini, uygulamanız, standart nesneleri proje modeli için kalan sağlamalıdır. Daha fazla bilgi için [proje modelleme](../../extensibility/internals/project-modeling.md).  
-  
+Proje, projeye özgü özel proje koleksiyonu kullanıma sunmak için ortak bir kuraldır. Örneğin, [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kullanarak daha sonra erişebileceğiniz bir C++ belirli proje koleksiyonu oluşturur `DTE.VCProjects` veya `DTE.GetObject("VCProjects")`. Ayrıca oluşturabilirsiniz bir `Project.Object`, proje türü için benzersiz olan bir `Project.CodeModel`, hangi sorgulanabilen, en türetilmiş nesne için bir `ProjectItem`, kullanıma sunan `ProjectItem.Object`ve `ProjectItem.FileCodeModel`.
+
+## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>VSPackage özgü bir nesne için bir proje katkıda bulunma
+
+1.  Eklemek için uygun anahtarlara *.pkgdef* , VSPackage dosya.
+
+     Örneğin, işte *.pkgdef* C++ dil projesi ayarları:
+
+    ```
+    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
+    "VCProjects"=""
+    [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\AutomationEvents]
+    "VCProjectEngineEventsObject"=""
+    ```
+
+2.  Koda uygulanması <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi, aşağıdaki örnekte olduğu gibi.
+
+    ```cpp
+    STDMETHODIMP CVsPackage::GetAutomationObject(
+    /* [in]  */ LPCOLESTR       pszPropName,
+    /* [out] */ IDispatch **    ppIDispatch)
+    {
+    ExpectedPtrRet(pszPropName);
+    ExpectedPtrRet(ppIDispatch);
+    *ppIDispatch = NULL;
+
+        if (m_fZombie)
+            return E_UNEXPECTED;
+
+        if (_wcsicmp(pszPropName, g_wszAutomationProjects) == 0)
+        {
+            return GetAutomationProjects(ppIDispatch);
+        }
+        else if (_wcsicmp(pszPropName, g_wszAutomationProjectsEvents) == 0)
+        {
+            return CAutomationEvents::GetAutomationEvents(ppIDispatch);
+        }
+        else if (_wcsicmp(pszPropName, g_wszAutomationProjectItemsEvents) == 0)
+        {
+            return CAutomationEvents::GetAutomationEvents(ppIDispatch);
+        }
+        return E_INVALIDARG;
+    }
+    ```
+
+     Kodda, `g_wszAutomationProjects` projesi koleksiyonunuzun adı. `GetAutomationProjects` Yöntemini uygulayan bir nesne oluşturur `Projects` arabirimi ve döndürür bir `IDispatch` aşağıdaki kod örneğinde gösterildiği gibi çağrı nesnesi işaretçisi.
+
+    ```cpp
+    HRESULT CVsPackage::GetAutomationProjects(/* [out] */ IDispatch ** ppIDispatch)
+    {
+        ExpectedPtrRet(ppIDispatch);
+        *ppIDispatch = NULL;
+
+        if (!m_srpAutomationProjects)
+        {
+            HRESULT hr = CACProjects::CreateInstance(&m_srpAutomationProjects);
+            IfFailRet(hr);
+            ExpectedExprRet(m_srpAutomationProjects != NULL);
+        }
+        return m_srpAutomationProjects.CopyTo(ppIDispatch);
+    }
+    ```
+
+     Otomasyon nesneniz için benzersiz bir ad seçin. Ad çakışmaları tahmin edilemez ve birden fazla proje türü adın aynısını kullanırsanız, rasgele oluşturulabilecek çakışan bir nesne adı Çarpışmaları neden. Şirket adınızı veya benzersiz bir unsurunu Otomasyon nesne adını, ürün adı içermesi gerekir.
+
+     Özel `Projects` koleksiyon nesnesi, proje otomasyon modeli kalan kısmı için bir kolaylık giriş noktasıdır. Proje nesnenizin de erişilebilir <xref:EnvDTE.Solution> proje koleksiyonu. Tüketicileriyle sağlayan ilgili kod ve kayıt defteri girdileri oluşturduktan sonra `Projects` koleksiyon nesnelerini, uygulamanız, standart nesneleri proje modeli için kalan sağlamalıdır. Daha fazla bilgi için [proje modelleme](../../extensibility/internals/project-modeling.md).
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

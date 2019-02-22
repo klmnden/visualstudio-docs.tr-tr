@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927754"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627226"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives görevi
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Yerelleştirme öznitelikleri ve yorumlar veya birden fazla görev birleştirir [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] tüm derleme için tek bir dosya halinde ikili biçimi dosyaları.
@@ -55,8 +55,8 @@ Aşağıdaki örnek birkaç yerelleştirme açıklamalarını birleştirir [!INC
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild başvurusu](../msbuild/msbuild-reference.md)  
-[MSBuild görev başvurusu](../msbuild/msbuild-task-reference.md)  
-[Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild görev başvurusu](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [MSBuild görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Bir WPF uygulaması (WPF) oluşturma](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

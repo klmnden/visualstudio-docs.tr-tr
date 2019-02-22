@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae991730caf5e83e9632d7b9a871a62778463098
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928574"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642748"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Nasıl yapılır: CPU sayaç verileri toplama
 
@@ -60,7 +60,7 @@ CPU olay sayaç donanıma özgü performans verilerini toplamak için kullanıl�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Performans oturumu özellikleri](../profiling/performance-session-properties.md)  
-[CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)  
-[Nasıl yapılır: Örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)
+[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+[performans oturumu özellikleri](../profiling/performance-session-properties.md)
+[CPU ve Windows sayaçları](../profiling/cpu-and-windows-counters.md)
+[nasıl yapılır: Örnekleme olayları seçme](../profiling/how-to-choose-sampling-events.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece73b97ec0129b2acd26c8751ab8b10909ee4ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036127"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632569"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppenum`  
- [out] Döndürür bir [Idiaenumınjectedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Numaralandırıcı bir kopyasını içeren nesne. Eklenen kaynakları çoğaltılmadığından, numaralandırıcı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumInjectedSources** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppenum`
+
+[out] Döndürür bir [Idiaenumınjectedsources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Numaralandırıcı bir kopyasını içeren nesne. Eklenen kaynakları çoğaltılmadığından, numaralandırıcı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

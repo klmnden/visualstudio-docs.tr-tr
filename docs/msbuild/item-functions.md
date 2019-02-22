@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950519"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617164"
 ---
 # <a name="item-functions"></a>Öğe işlevleri
 MSBuild 4.0 ile başlayarak, görevleri ve hedefleri kod projesinde öğeleri hakkında bilgi almak için öğe işlevleri çağırabilir. Bu işlevler, başlangıç Distinct() öğeleri basitleştirin ve öğeler arasında döngü daha hızlıdır.
@@ -100,4 +100,4 @@ Aşağıdaki örnekte, iç öğe işlevleri kullanma işlemini gösterir.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Öğeler](../msbuild/msbuild-items.md)
+- [Öğeler](../msbuild/msbuild-items.md)

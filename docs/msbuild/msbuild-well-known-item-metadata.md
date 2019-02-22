@@ -16,37 +16,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c031d4a76b818992948b2299981b0d650e9e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966601"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627291"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild tanınmış öğe meta verisi
-Aşağıdaki tabloda, oluşturulduktan sonra her öğeye atanan meta veriler açıklanmaktadır. Her örnekte, aşağıdaki öğe bildirimi dosya eklemek için kullanılan *C:\MyProject\Source\Program.cs* projedeki.  
-  
-```xml  
-<ItemGroup>  
-    <MyItem Include="Source\Program.cs" />  
-</ItemGroup>  
-```  
-  
-|Öğe meta verileri|Açıklama|  
-|-------------------|-----------------|  
-|%(FullPath)|Öğenin tam yolunu içerir. Örneğin:<br /><br /> *C:\MyProject\Source\Program.cs*|  
-|%(RootDir)|Öğenin kök dizinini içerir. Örneğin:<br /><br /> *C:\\*|  
-|%(Filename)|Uzantı olmadan öğenin dosya adını içerir. Örneğin:<br /><br /> *Programı*|  
-|%(Extension)|Öğesinin dosya adı uzantısını içerir. Örneğin:<br /><br /> *.cs*|  
-|%(RelativeDir)|Belirtilen yolu içerir `Include` son eğik çizgiyi kadar bir öznitelik (\\). Örneğin:<br /><br /> *Kaynak\\*|  
-|%(Directory)|Kök dizin olmadan öğenin dizinini içerir. Örneğin:<br /><br /> *MyProject\\kaynak\\*|  
-|%(RecursiveDir)|Varsa `Include` öznitelik joker karakter içeren \* \*, bu meta veri joker karakterin yerini alan yolu parçası belirtir. Joker karakterler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Varsa klasörü *C:\MySolution\MyProject\Source\\*  dosyayı içeren *Program.cs*, ve proje dosyası bu öğe içeriyorsa:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> ardından değerini `%(MyItem.RecursiveDir)` olacaktır *MySolution\MyProject\Source\\*.|  
-|%(Identity)|Belirtilen öğe `Include` özniteliği... Örneğin:<br /><br /> *Source\Program.cs*|  
-|%(ModifiedTime)|Öğeye erişildiği son zamandan itibaren zaman damgası içerir. Örneğin:<br /><br /> `2004-07-01 00:21:31.5073316`|  
-|%(CreatedTime)|Öğesi oluşturulduğu zaman damgası içerir. Örneğin:<br /><br /> `2004-06-25 09:26:45.8237425`|  
-|%(AccessedTime)|Öğeye erişildiği son zamandan itibaren zaman damgası içerir.<br /><br /> `2004-08-14 16:52:36.3168743`|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Öğeleri](../msbuild/msbuild-items.md)   
- [Toplu işleme](../msbuild/msbuild-batching.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+Aşağıdaki tabloda, oluşturulduktan sonra her öğeye atanan meta veriler açıklanmaktadır. Her örnekte, aşağıdaki öğe bildirimi dosya eklemek için kullanılan *C:\MyProject\Source\Program.cs* projedeki.
+
+```xml
+<ItemGroup>
+    <MyItem Include="Source\Program.cs" />
+</ItemGroup>
+```
+
+|Öğe meta verileri|Açıklama|
+|-------------------|-----------------|
+|%(FullPath)|Öğenin tam yolunu içerir. Örneğin:<br /><br /> *C:\MyProject\Source\Program.cs*|
+|%(RootDir)|Öğenin kök dizinini içerir. Örneğin:<br /><br /> *C:\\*|
+|%(Filename)|Uzantı olmadan öğenin dosya adını içerir. Örneğin:<br /><br /> *Programı*|
+|%(Extension)|Öğesinin dosya adı uzantısını içerir. Örneğin:<br /><br /> *.cs*|
+|%(RelativeDir)|Belirtilen yolu içerir `Include` son eğik çizgiyi kadar bir öznitelik (\\). Örneğin:<br /><br /> *Kaynak\\*|
+|%(Directory)|Kök dizin olmadan öğenin dizinini içerir. Örneğin:<br /><br /> *MyProject\\kaynak\\*|
+|%(RecursiveDir)|Varsa `Include` öznitelik joker karakter içeren \* \*, bu meta veri joker karakterin yerini alan yolu parçası belirtir. Joker karakterler hakkında daha fazla bilgi için bkz. [nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Varsa klasörü *C:\MySolution\MyProject\Source\\*  dosyayı içeren *Program.cs*, ve proje dosyası bu öğe içeriyorsa:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> ardından değerini `%(MyItem.RecursiveDir)` olacaktır *MySolution\MyProject\Source\\*.|
+|%(Identity)|Belirtilen öğe `Include` özniteliği... Örneğin:<br /><br /> *Source\Program.cs*|
+|%(ModifiedTime)|Öğeye erişildiği son zamandan itibaren zaman damgası içerir. Örneğin:<br /><br /> `2004-07-01 00:21:31.5073316`|
+|%(CreatedTime)|Öğesi oluşturulduğu zaman damgası içerir. Örneğin:<br /><br /> `2004-06-25 09:26:45.8237425`|
+|%(AccessedTime)|Öğeye erişildiği son zamandan itibaren zaman damgası içerir.<br /><br /> `2004-08-14 16:52:36.3168743`|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Öğeler](../msbuild/msbuild-items.md)
+- [Toplu İşleme](../msbuild/msbuild-batching.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)

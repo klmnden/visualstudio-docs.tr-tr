@@ -14,61 +14,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7d15bca56c2ceaf4626be03edda856252e3ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033524"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605204"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;İmza&gt; öğesi (ClickOnce dağıtımı)
-Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-  
-      <Signature>   
-   XML signature information   
-</Signature>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Zarf imza kullanarak bir dağıtım bildirimi imzalama isteğe bağlıdır ancak önerilir. World Wide Web Consortium anlatıldığı öneri, "Podpisu XML sözdizimi ve işleme," XML dosyalarını imzalama hakkında daha fazla bilgi için bkz. [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
-  
- Bildiriminizdeki oturum açmak istiyorsanız, tüm dosyalar için karmaları sağlanmalıdır. Kullanıcılar bütün dosyalarının içeriğini doğrulayamadığı için karma olmayan dosyaları içeren bir bildirimi imzalanamıyor.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde gösterilmiştir bir `Signature` kullanılan bir dağıtım bildirimi öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.  
-  
-```xml  
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
-  <SignedInfo>  
-    <CanonicalizationMethod Algorithm=  
-           "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />  
-    <SignatureMethod Algorithm=  
-           "http://www.w3.org/2000/09/xmldsig#rsa-sha1" />  
-    <Reference URI="">  
-      <Transforms>  
-        <Transform Algorithm=  
-           "http://www.w3.org/2000/09/xmldsig#enveloped-signature" />  
-      </Transforms>  
-      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-      <DigestValue>d2z5AE...</DigestValue>  
-    </Reference>  
-  </SignedInfo>  
-  <SignatureValue>  
-4PHj6SaopoLp...  
-  </SignatureValue>  
-  <KeyInfo>  
-    <X509Data>  
-      <X509Certificate>  
-MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...  
-      </X509Certificate>  
-    </X509Data>  
-  </KeyInfo>  
-</Signature>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)
+Bu dağıtım bildirimi dijital olarak imzalamak için gereken bilgileri içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+
+      <Signature> 
+   XML signature information 
+</Signature>
+```
+
+## <a name="remarks"></a>Açıklamalar
+ Zarf imza kullanarak bir dağıtım bildirimi imzalama isteğe bağlıdır ancak önerilir. World Wide Web Consortium anlatıldığı öneri, "Podpisu XML sözdizimi ve işleme," XML dosyalarını imzalama hakkında daha fazla bilgi için bkz. [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).
+
+ Bildiriminizdeki oturum açmak istiyorsanız, tüm dosyalar için karmaları sağlanmalıdır. Kullanıcılar bütün dosyalarının içeriğini doğrulayamadığı için karma olmayan dosyaları içeren bir bildirimi imzalanamıyor.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneğinde gösterilmiştir bir `Signature` kullanılan bir dağıtım bildirimi öğesinde bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım.
+
+```xml
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm=
+           "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm=
+           "http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="">
+      <Transforms>
+        <Transform Algorithm=
+           "http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+      </Transforms>
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>d2z5AE...</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>
+4PHj6SaopoLp...
+  </SignatureValue>
+  <KeyInfo>
+    <X509Data>
+      <X509Certificate>
+MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
+      </X509Certificate>
+    </X509Data>
+  </KeyInfo>
+</Signature>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)

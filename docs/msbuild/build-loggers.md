@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602487"
 ---
 # <a name="build-loggers"></a>Günlükçüleri derleme
 Günlükçüleri derleme çıkışını özelleştirebilir ve belirli bir yapı olaylarına yanıt olarak iletileri, hata veya uyarı görüntülemek bir yol sağlar. Her bir Günlükçü uygulayan bir .NET sınıfı uygulanır <xref:Microsoft.Build.Framework.ILogger> tanımlanan arabirimi *Microsoft.Build.Framework.dll* derleme.
@@ -25,8 +25,8 @@ Günlükçüleri derleme çıkışını özelleştirebilir ve belirli bir yapı 
 Günlükçü uygularken kullanabileceğiniz iki yaklaşım vardır:
 
 - Uygulama <xref:Microsoft.Build.Framework.ILogger> doğrudan arabirim.
-- Sınıfınıza Yardımcısı sınıfından türetilen <xref:Microsoft.Build.Utilities.Logger>, tanımlanan *Microsoft.Build.Utilities.dll* derleme. <xref:Microsoft.Build.Utilities.Logger> uygulayan <xref:Microsoft.Build.Framework.ILogger> ve bazı varsayılan uygulamalarını sağlar <xref:Microsoft.Build.Framework.ILogger> üyeleri.  
-  
+- Sınıfınıza Yardımcısı sınıfından türetilen <xref:Microsoft.Build.Utilities.Logger>, tanımlanan *Microsoft.Build.Utilities.dll* derleme. <xref:Microsoft.Build.Utilities.Logger> uygulayan <xref:Microsoft.Build.Framework.ILogger> ve bazı varsayılan uygulamalarını sağlar <xref:Microsoft.Build.Framework.ILogger> üyeleri.
+
   Bu konuda, türetilen bir basit bir Günlükçü yazılacağı nasıl açıklayacak <xref:Microsoft.Build.Utilities.Logger>, ve derleme olaylarını konsolunda belirli yanıt iletileri görüntüler.
 
 ## <a name="register-for-events"></a>Olayları için kaydolun
@@ -76,5 +76,5 @@ Aşağıdaki örnek, konsol penceresinde görüntüleme yerine bir dosya günlü
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[MSBuild kavramları](../msbuild/msbuild-concepts.md)
+- [Derleme günlükleri alın](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)

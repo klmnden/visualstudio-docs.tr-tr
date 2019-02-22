@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbaff7778b06eeb08c9e92174ccd531d9dd2dbf
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156013"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605282"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Veri kaynağında bulunan çeşitli eklenen kaynakları listeleme.
@@ -113,8 +113,8 @@ Kitaplık: diaguids.lib
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)  
-[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [Arabirimler (Arabirim Erişimi SDK'sında Hata Ayıklama)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

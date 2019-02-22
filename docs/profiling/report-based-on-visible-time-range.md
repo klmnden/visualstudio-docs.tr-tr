@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9372e4ae27142fa31beb2a4fb8730b64f025cbdf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019573"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614603"
 ---
 # <a name="report-based-on-visible-time-range"></a>Görünür zaman aralığı tabanlı rapor
-Profil görünümü şu anda görünür zaman aralığı ve kanalları göre raporları görüntüler. Farklı veri kümelerine ayrıntılarını görmek için gösterge öğelerini tıklayın.  
-  
- Burada tablolardaki verileri hakkında daha fazla bilgi bulabilirsiniz.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Gösterilecek iş parçacığı etkinliği yok](../profiling/no-thread-activity-to-show-threads-view.md)   
- [Yürütme Profil raporu](../profiling/execution-profile-report.md)   
- [Eşitleme saati](../profiling/synchronization-time.md)   
- [G/ç zamanı (iş parçacıkları görünümü)](../profiling/i-o-time-threads-view.md)   
- [Bekleme süresi](../profiling/sleep-time.md)   
- [Bellek yönetimi zamanı](../profiling/memory-management-time.md)   
- [Önalım zamanı](../profiling/preemption-time.md)   
- [UI işleme zamanı](../profiling/ui-processing-time.md)   
- [Disk işlemleri raporu](../profiling/disk-operations-report-threads-view.md)   
- [Her iş parçacığı özet raporu](../profiling/per-thread-summary-report.md)   
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+Profil görünümü şu anda görünür zaman aralığı ve kanalları göre raporları görüntüler. Farklı veri kümelerine ayrıntılarını görmek için gösterge öğelerini tıklayın.
+
+ Burada tablolardaki verileri hakkında daha fazla bilgi bulabilirsiniz.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Gösterilecek İş Parçacığı Etkinliği Yok](../profiling/no-thread-activity-to-show-threads-view.md)
+- [Yürütme Profil Raporu](../profiling/execution-profile-report.md)
+- [Eşitleme Zamanı](../profiling/synchronization-time.md)
+- [G-Ç Zamanı (İş Parçacıkları Görünümü)](../profiling/i-o-time-threads-view.md)
+- [Bekleme Süresi](../profiling/sleep-time.md)
+- [Bellek Yönetimi Zamanı](../profiling/memory-management-time.md)
+- [Önalım Zamanı](../profiling/preemption-time.md)
+- [UI İşleme Zamanı](../profiling/ui-processing-time.md)
+- [Disk İşlemleri Raporu](../profiling/disk-operations-report-threads-view.md)
+- [Her İş Parçacığı Özet Raporu](../profiling/per-thread-summary-report.md)
+- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

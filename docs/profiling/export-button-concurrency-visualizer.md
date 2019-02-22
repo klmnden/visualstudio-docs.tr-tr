@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d46934b6240c07b7fed3fe2025b732eb554813a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963872"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627473"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Dışarı aktarma düğmesi (eşzamanlılık görselleştiricisi)
-**Dışarı** düğmesini etkinleştirir, çağrı yığını olarak dışarı aktarmak bir. *CSV* kendi kayıtlarınız için veya Microsoft Excel gibi başka bir aracı ile kullanım için dosya.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)   
- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)
+**Dışarı** düğmesini etkinleştirir, çağrı yığını olarak dışarı aktarmak bir. *CSV* kendi kayıtlarınız için veya Microsoft Excel gibi başka bir aracı ile kullanım için dosya.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)
+- [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

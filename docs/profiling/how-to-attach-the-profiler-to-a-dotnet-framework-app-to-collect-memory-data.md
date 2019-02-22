@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 435141ce8b01c2c486dd9b856c173895237a4906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954819"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637951"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bellek verileri toplamak için bir .NET Framework bağımsız uygulamasına ekleme
 
 Bu makalede, çalışan bir .NET Framework bağımsız (istemci) uygulamasına profil oluşturucu ekleme ve bellek verileri toplamak için Visual Studio Profil Araçları komut satırı araçlarını kullanmayı açıklar.
 
 > [!NOTE]
->  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
 Bir .NET Framework uygulamasına ve bellek verilerini toplamak için eklemek için kullanmanız gerekir [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) hedef uygulama başlamadan önce uygun ortam değişkenlerini başlatmak üzere. Profil Oluşturucu uygulamaya eklendiğinde kullanabileceğiniz *VSPerfCmd.exe* duraklatma ve sürdürme veri toplama için aracı.
 
@@ -112,5 +112,5 @@ Profil oluşturma oturumunu sona erdirmek için profil oluşturucu oluşturulmu�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Bağımsız uygulamalar profili](../profiling/command-line-profiling-of-stand-alone-applications.md)
 [.NET bellek verisi görünümleri](../profiling/dotnet-memory-data-views.md)

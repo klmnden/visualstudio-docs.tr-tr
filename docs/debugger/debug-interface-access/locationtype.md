@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 779df14d01950b90a45764ba9d84760a1448d475
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318660"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627941"
 ---
 # <a name="locationtype"></a>LocationType
 Konum bilgilerini bir sembol içinde yer alan türünü gösterir.
@@ -42,41 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Öğeleri
-`LocIsNull`  
-Konum bilgileri kullanılamıyor.
+`LocIsNull` Konum bilgileri kullanılamıyor.
 
-`LocIsStatic`  
-Statik konumdur.
+`LocIsStatic` Statik konumdur.
 
-`LocIsTLS`  
-İş parçacığı yerel depolama alanında konumdur.
+`LocIsTLS` İş parçacığı yerel depolama alanında konumdur.
 
-`LocIsRegRel`  
-Kayıt göreli konumu.
+`LocIsRegRel` Kayıt göreli konumu.
 
-`LocIsThisRel`  
-Konum `this`-göreli.
+`LocIsThisRel` Konum `this`-göreli.
 
-`LocIsEnregistered`  
-Bir kayıttaki konumdur.
+`LocIsEnregistered` Bir kayıttaki konumdur.
 
-`LocIsBitField`  
-Bir bit alanına konumdur.
+`LocIsBitField` Bir bit alanına konumdur.
 
-`LocIsSlot`  
-Bir Microsoft Ara dil (MSIL) yuvası konumdur.
+`LocIsSlot` Bir Microsoft Ara dil (MSIL) yuvası konumdur.
 
-`LocIsIlRel`  
-MSIL göreli konumdur.
+`LocIsIlRel` MSIL göreli konumdur.
 
-`LocInMetaData`  
-Meta verilerde konumdur.
+`LocInMetaData` Meta verilerde konumdur.
 
-`LocIsConstant`  
-Bir sabit değer konumdur.
+`LocIsConstant` Bir sabit değer konumdur.
 
-`LocTypeMax`  
-Bu numaralandırma, konum türleri sayısı.
+`LocTypeMax` Bu numaralandırma, konum türleri sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 Kullanılabilir özellikler [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md) sembolün konumu resim dosyası içinde arabirimi bağlıdır. Daha fazla bilgi için [simge konumları](../../debugger/debug-interface-access/symbol-locations.md).
@@ -87,7 +75,7 @@ Bu numaralandırma değerleri için yapılan bir çağrı tarafından döndürü
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)  
-[Simge Konumları](../../debugger/debug-interface-access/symbol-locations.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)
+- [Simge Konumları](../../debugger/debug-interface-access/symbol-locations.md)

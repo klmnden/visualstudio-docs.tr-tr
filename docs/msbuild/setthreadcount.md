@@ -15,28 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4bfb8e1f60ed668039011841e12021e0f0702f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 34040d368a531d257ef72d6e883cb6e151f28a0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942015"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636209"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
-Genel iş parçacığı sayısını ayarlar ve bu sayı geçerli iş parçacığına atar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cmd  
-HRESULT WINAPI SetThreadCount(int threadCount);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [in] `threadCount`  
- Kullanılacak iş parçacığı sayısı.  
-  
-## <a name="return-value"></a>Dönüş değeri  
- Bir **HRESULT** ile **başarılı** iş parçacığı sayısı güncelleştirdiyseniz biti ayarlanmamış.  
-  
-## <a name="requirements"></a>Gereksinimler  
+Genel iş parçacığı sayısını ayarlar ve bu sayı geçerli iş parçacığına atar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cmd
+HRESULT WINAPI SetThreadCount(int threadCount);
+```
+
+#### <a name="parameters"></a>Parametreler
+- [in] `threadCount` Kullanılacak iş parçacığı sayısı.
+
+## <a name="return-value"></a>Dönüş değeri
+ Bir **HRESULT** ile **başarılı** iş parçacığı sayısı güncelleştirdiyseniz biti ayarlanmamış.
+
+## <a name="requirements"></a>Gereksinimler
  **Üst bilgi:** *FileTracker.h*

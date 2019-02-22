@@ -17,56 +17,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5333504ed534373b6bb65902edb2566953de7a59
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 12391f16e2797941cf83177aa1c83ed0dd2c0045
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863688"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644607"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla koruma
-  Kullanıcıların ekleme yapılamıyor veya çalışma sayfaları silme ve ayrıca da programlı olarak çalışma kitabının korumasını kaldırmak, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, isterseniz (kullanıcılar sayfası taşınamıyor şekilde) korunan yapı ve korumalı çalışma kitabının windows isteyip istemediğinizi belirtin olup olmadığını gösterir.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- Bir çalışma kitabını koruma hücre düzenleme kullanıcıların durdurmaz. Verileri korumak için çalışma sayfaları korumanız gerekir. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md).  
-  
- Aşağıdaki kod örnekleri, kullanıcıdan alınan parolayı içeren bir değişkeni kullanın.  
-  
-## <a name="protect-a-workbook-that-is-part-of-a-document-level-customization"></a>Belge düzeyi özelleştirmesi parçası olan çalışma kitabını koru  
-  
-### <a name="to-protect-a-workbook"></a>Bir çalışma kitabını korumak için  
-  
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> yöntemini ve bir parola ekleyin. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `ThisWorkbook` sayfası sınıfı değil, bir sınıf.  
-  
+  Kullanıcıların ekleme yapılamıyor veya çalışma sayfaları silme ve ayrıca da programlı olarak çalışma kitabının korumasını kaldırmak, Microsoft Office Excel çalışma kitabı koruyabilirsiniz. İsteğe bağlı olarak, bir parola belirtin, isterseniz (kullanıcılar sayfası taşınamıyor şekilde) korunan yapı ve korumalı çalışma kitabının windows isteyip istemediğinizi belirtin olup olmadığını gösterir.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ Bir çalışma kitabını koruma hücre düzenleme kullanıcıların durdurmaz. Verileri korumak için çalışma sayfaları korumanız gerekir. Daha fazla bilgi için [nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md).
+
+ Aşağıdaki kod örnekleri, kullanıcıdan alınan parolayı içeren bir değişkeni kullanın.
+
+## <a name="protect-a-workbook-that-is-part-of-a-document-level-customization"></a>Belge düzeyi özelleştirmesi parçası olan çalışma kitabını koru
+
+### <a name="to-protect-a-workbook"></a>Bir çalışma kitabını korumak için
+
+1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> yöntemini ve bir parola ekleyin. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `ThisWorkbook` sayfası sınıfı değil, bir sınıf.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
-     [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]  
-  
-### <a name="to-unprotect-a-workbook"></a>Bir çalışma kitabının korumasını kaldırmak için  
-  
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> yöntemi, bir parola gerekliyse geçirerek. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `ThisWorkbook` sayfası sınıfı değil, bir sınıf.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
+
+### <a name="to-unprotect-a-workbook"></a>Bir çalışma kitabının korumasını kaldırmak için
+
+1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> yöntemi, bir parola gerekliyse geçirerek. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `ThisWorkbook` sayfası sınıfı değil, bir sınıf.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]  
-  
-## <a name="protect-a-workbook-by-using-an-application-level-add-in"></a>Bir uygulama düzeyinde eklenti kullanarak çalışma kitabını koru  
-  
-### <a name="to-protect-a-workbook"></a>Bir çalışma kitabını korumak için  
-  
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> yöntemini ve bir parola ekleyin. Bu kod örneği, etkin çalışma kitabının kullanır. Bu örneği kullanmak için kodu çalıştırın `ThisAddIn` projenizdeki sınıfı.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
+
+## <a name="protect-a-workbook-by-using-an-application-level-add-in"></a>Bir uygulama düzeyinde eklenti kullanarak çalışma kitabını koru
+
+### <a name="to-protect-a-workbook"></a>Bir çalışma kitabını korumak için
+
+1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> yöntemini ve bir parola ekleyin. Bu kod örneği, etkin çalışma kitabının kullanır. Bu örneği kullanmak için kodu çalıştırın `ThisAddIn` projenizdeki sınıfı.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]  
-  
-### <a name="to-unprotect-a-workbook"></a>Bir çalışma kitabının korumasını kaldırmak için  
-  
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> gerekiyorsa bir parola geçirerek etkin çalışma kitabının yöntemi. Bu örneği kullanmak için kodu çalıştırın `ThisAddIn` projenizdeki sınıfı.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
+
+### <a name="to-unprotect-a-workbook"></a>Bir çalışma kitabının korumasını kaldırmak için
+
+1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> gerekiyorsa bir parola geçirerek etkin çalışma kitabının yöntemi. Bu örneği kullanmak için kodu çalıştırın `ThisAddIn` projenizdeki sınıfı.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)   
- [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Çalışma kitaplarıyla çalışma](../vsto/working-with-workbooks.md)
+- [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma](../vsto/how-to-programmatically-protect-worksheets.md)
+- [Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme](../vsto/how-to-programmatically-hide-worksheets.md)
+- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,75 +15,77 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31e819ebb18e5bb723d3a138a139cdc0269fa6ed
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 9de3c3aed6b40ace1b841d2dac5c175963b1fecb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413325"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619296"
 ---
 # <a name="msbuild-reference"></a>MSBuild başvurusu
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)  
- Oluşturan XML öğeleri açıklanır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosya biçimi.  
-  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)  
- Dahil olan tipik görevlerden bazılarını açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
-  
- [Koşullar](../msbuild/msbuild-conditions.md)  
- İçinde kullanılabilir olan koşulları açıklayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosyaları.  
-  
- [Koşullu yapılar](../msbuild/msbuild-conditional-constructs.md)  
- Nasıl kullanılacağını açıklar `Choose`, `When`, ve `Otherwise` öğeleri.  
-  
- [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md)  
- Açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ayrılmış özellikleri.  
-  
- [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md)  
- Tüm proje türleri için ortak olan proje özellikleri ve genellikle belirli bir proje türü tarafından kullanılan özellikleri açıklanmaktadır.  
-  
- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)  
- Tüm proje türleri için ortak olan proje öğeleri ve de genellikle belirli bir proje türü tarafından kullanılan öğeleri açıklar.  
-  
- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)  
- İle kullanılabilecek anahtarlar ve bağımsız değişkenleri açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
-  
- [. MSBuild](../msbuild/msbuild-dot-targets-files.md)  
- Açıklar *. Hedefleri* dahil edilen dosya [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
-  
- [Tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md)  
- İle birlikte her bir öğe oluşturulduğunda meta verilerini listeler.  
-  
- [Yanıt dosyaları](../msbuild/msbuild-response-files.md)  
- Açıklar *.rsp* komut satırı anahtarları içeren dosyaları.  
-  
- [Ek kaynaklar](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
- Bağlantılar sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web sitelerinin ve haber gruplarının.  
-  
- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)  
- İçeren bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedeflerini ve görev başvurusu Windows Presentation Foundation (WPF).  
-  
- [Kaçış için özel karakterler](../msbuild/special-characters-to-escape.md)  
- "Doğru yorumlanması için kaçış karakterleri" gerekebilir karakterleri listeler. Bir kaçış dizisi aşağıda alternatif bir yorumu olduğunu belirten bir karakter dizisi ' dir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [MSBuild'e genel bakış](../msbuild/msbuild.md)     
- Tanıtır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ve nasıl projeleri derlemek için kullanılacağını açıklayan konulara bağlantılar sağlar.  
-  
- [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
- Değerlendirme ad alanı başvurusu içeriyor.  
-  
- [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
- Yürütme ad alanı başvurusu içeriyor.  
-  
- [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
- Framework ad alanı başvurusu içeriyor.  
-  
- [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) günlük ad alanı başvurusu içeriyor.  
-  
- [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
- Görevleri ad alanı başvurusu içeriyor.  
-  
- [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) yardımcı programları ad alanı başvurusu içeriyor.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için derleme sistemidir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aşağıdaki bağlantılar içeren konuların müşteri adayı [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] başvuru bilgileri.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+
+ Oluşturan XML öğeleri açıklanır [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosya biçimi.
+
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+
+ Dahil olan tipik görevlerden bazılarını açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+- [Koşullar](../msbuild/msbuild-conditions.md)
+
+ İçinde kullanılabilir olan koşulları açıklayan [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dosyaları.
+
+- [Koşullu yapılar](../msbuild/msbuild-conditional-constructs.md)
+
+ Nasıl kullanılacağını açıklar `Choose`, `When`, ve `Otherwise` öğeleri.
+
+- [MSBuild ayrılmış ve tanınmış özellikleri](../msbuild/msbuild-reserved-and-well-known-properties.md)
+
+ Açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ayrılmış özellikleri.
+
+- [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md)
+
+ Tüm proje türleri için ortak olan proje özellikleri ve genellikle belirli bir proje türü tarafından kullanılan özellikleri açıklanmaktadır.
+
+- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)
+
+ Tüm proje türleri için ortak olan proje öğeleri ve de genellikle belirli bir proje türü tarafından kullanılan öğeleri açıklar.
+
+- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)
+
+ İle kullanılabilecek anahtarlar ve bağımsız değişkenleri açıklar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.
+
+- [. MSBuild](../msbuild/msbuild-dot-targets-files.md)
+
+ Açıklar *. Hedefleri* dahil edilen dosya [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+- [Tanınmış öğe meta verisi](../msbuild/msbuild-well-known-item-metadata.md)
+
+ İle birlikte her bir öğe oluşturulduğunda meta verilerini listeler.
+
+- [Yanıt dosyaları](../msbuild/msbuild-response-files.md)
+
+ Açıklar *.rsp* komut satırı anahtarları içeren dosyaları.
+
+- [Ek kaynaklar](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) bağlantılar sağlar [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Web sitelerinin ve haber gruplarının.
+
+- [WPF MSBuild başvurusu](../msbuild/wpf-msbuild-reference.md)
+
+ İçeren bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] hedeflerini ve görev başvurusu Windows Presentation Foundation (WPF).
+
+- [Kaçış için özel karakterler](../msbuild/special-characters-to-escape.md)
+
+ "Doğru yorumlanması için kaçış karakterleri" gerekebilir karakterleri listeler. Bir kaçış dizisi aşağıda alternatif bir yorumu olduğunu belirten bir karakter dizisi ' dir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [MSBuild'e genel bakış](../msbuild/msbuild.md)
+- [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)
+- [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)
+- [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)
+- [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging)
+- [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)
+- [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities)

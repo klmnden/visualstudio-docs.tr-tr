@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852846"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610417"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Nasıl yapılır: Kaynaklara sahip olan bir projeyi derleme
 Yerelleştirilmiş sürümlerini bir proje oluşturuyorsanız tüm kullanıcı arabirimi öğeleri kaynak dosyalara farklı diller için ayrılmış olması gerekir. Projeyi yalnızca dizeler kullanıyorsa, kaynak dosyalar metin dosyaları kullanabilirsiniz. Alternatif olarak, *.resx* dosyaları olarak kaynak dosyaları.
@@ -77,7 +77,7 @@ Aşağıdaki örnek proje iki görevleri içerir: `GenerateResource` kaynakları
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[MSBuild](../msbuild/msbuild.md)  
-[GenerateResource görevi](../msbuild/generateresource-task.md)  
-[CSC görevi](../msbuild/csc-task.md)  
-[Resgen.exe (Kaynak Dosya Oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [GenerateResource görevi](../msbuild/generateresource-task.md)
+- [CSC görevi](../msbuild/csc-task.md)
+- [Resgen.exe (Kaynak Dosya Oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f8218d67b16768f4e36c7a9a21839a5217f5ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b674e99bcb9bd621808b080fffa6873f96cfb707
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977885"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611795"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
-Belirten bir bayrak alır olmadığını [derlenecek](../../debugger/debug-interface-access/compiland.md) bağlayıcı anahtarıyla bağlı [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation), bütün program iyileştirmesi kolaylık sağlar. Bu anahtar yalnızca yönetilen kod için geçerlidir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_iSLTCG(  
-   BOOL *pFlag  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- pFlag  
- [out] Döndürür `TRUE` varsa `compiland` /LTCG bağlayıcı anahtarıyla bağlantılı; Aksi halde döndürür `FALSE`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Belirten bir bayrak alır olmadığını [derlenecek](../../debugger/debug-interface-access/compiland.md) bağlayıcı anahtarıyla bağlı [/LTCG (bağlama zamanı kodu oluşturma)](/cpp/build/reference/ltcg-link-time-code-generation), bütün program iyileştirmesi kolaylık sağlar. Bu anahtar yalnızca yönetilen kod için geçerlidir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_iSLTCG(
+   BOOL *pFlag
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ pFlag
+
+[out] Döndürür `TRUE` varsa `compiland` /LTCG bağlayıcı anahtarıyla bağlantılı; Aksi halde döndürür `FALSE`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Gereksinim|Açıklama|  
-|-----------------|-----------------|  
-|Üst bilgi:|dia2.h|  
-|Sürüm:|DIA SDK v8.0|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Gereksinim|Açıklama|
+|-----------------|-----------------|
+|Üst bilgi:|dia2.h|
+|Sürüm:|DIA SDK v8.0|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

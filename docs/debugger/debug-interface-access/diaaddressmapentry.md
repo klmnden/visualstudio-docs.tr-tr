@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318647"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637093"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Bir adres eşlemesi bir girişe açıklar.
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Öğeleri
-`rva`  
-A. görüntüdeki göreli sanal adres (RVA)
+`rva` A. görüntüdeki göreli sanal adres (RVA)
 
-`rvaTo`  
-Göreli sanal adres `rva` görüntüde b eşlenir
+`rvaTo` Göreli sanal adres `rva` görüntüde b eşlenir
 
 ## <a name="remarks"></a>Açıklamalar
 Bir adres eşlemesi tek bir görüntü düzeninden bir çeviri (A) için başka bir (B) sağlar. Bir dizi `DiaAddressMapEntry` ölçütü yapıları `rva` adres Haritası tanımlar.
@@ -55,5 +53,5 @@ Bir adresi çevrilecek `addrA`, bir adrese bir görüntüdeki `addrB`, görünt�
 Üstbilgi: dia2.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

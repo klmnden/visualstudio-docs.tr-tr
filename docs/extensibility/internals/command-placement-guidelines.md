@@ -12,49 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24273999d98b929cf43f10dbbef0f5573963d08
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fb1409f06a859a69a39b75645b5176a27921f13
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023437"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606049"
 ---
 # <a name="command-placement-guidelines"></a>Komut yerleştirme yönergeleri
-Visual Studio tümleşik geliştirme ortamında (IDE) komutları konumlandırma için en iyi komut kümesi boyutuna bağlı olarak değişir. Komutları tanımlanır ve bilgileri göre yerleştirilmiş *.vsct* dosyaları.  
-  
-## <a name="best-practices-for-all-command-sets"></a>Tüm komut kümesi için en iyi uygulamalar  
- Her komut kümesi için aşağıdaki yönergeleri izleyin:  
-  
--   Bir grafik komutu yapısı önceden hazırlayın. Komutlar, birleşik giriş kutuları, komut grupları ve birden fazla konumda kullanılacak kısayol menüleri belirleyin.  
-  
--   Aynı grubu içinde görünen komutlar ilişkili olmalıdır.  
-  
--   Tek bir komut içeren gruplar kabul edilir.  
-  
--   Paketler için mevcut Visual Studio menü komutları çok sayıda eklememelisiniz. Bunun yerine, bunlar menülere veya yeni komutlar barındırmak için alt menülere oluşturmalısınız.  
-  
--   Bir komut, komut adı gibi varolan bir menüye üzerinde amacı açıktır ve bunu mevcut komutları ile karıştırılmamalıdır böylece yerleştirdiğinizde.  
-  
-## <a name="best-practices-for-small-command-sets"></a>Küçük komut kümesi için en iyi uygulamalar  
- Ayrıca birkaç komutları içeren bir VSPackage geliştiriyorsanız aşağıdaki yönergeleri izleyin:  
-  
--   Mümkün olduğunda, kullanın [üst](../../extensibility/parent-element.md) komutu, birleşik giriş kutusu, Grup veya alt menüsünü uygun gruba yerleştirmek için öğesi.  
-  
--   VSPackage'ı tarafından görüntülenen menüler bu gruplara atayın.  
-  
--   Üst öğesi bir alt menü veya bir komut olmalıdır bir [grubu](../../extensibility/group-element.md) öğesi. Komutlar ve menüler alt gruplara ve gruplar için üst menü atayın.  
-  
--   Bir komutu ekleyerek ek gruplarında koyabilirsiniz bir [CommandPlacements](../../extensibility/commandplacements-element.md) komutunu ve ardından ekleyerek öğesi bölümü tanımı sonra `CommandPlacements` öğesi bir [CommandPlacement](../../extensibility/commandplacement-element.md) öğesi her ek grubun için.  
-  
-## <a name="best-practices-for-large-command-sets"></a>Büyük komut kümesi için en iyi uygulamalar  
- Ayrıca, VSPackage'ı birden çok bağlamlarda görünecek komutların çoğu varsa, aşağıdaki yönergeleri izleyin:  
-  
--   Menüleri, gruplar ve komutlar Self bırakarak olun. Atama diğer bir deyişle, bir `Parent` öğesinin tanımındaki öğesi.  
-  
--   Kullanım `CommandPlacement` öğesi girişleri `CommandPlacements` öğe bölümünü menüler, gruplar ve komutlar, ana menüler ve gruplar yerleştirmek için.  
-  
--   İçinde `CommandPlacements` öğesi bölümünde, belirli bir menü veya grubu dolduran girişleri olmalıdır birbirine bitişik. Bu okunabilirliği kolaylık sağlar ve yapar `Priority` sıralamasına belirlemek daha kolay.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Visual Studio tümleşik geliştirme ortamında (IDE) komutları konumlandırma için en iyi komut kümesi boyutuna bağlı olarak değişir. Komutları tanımlanır ve bilgileri göre yerleştirilmiş *.vsct* dosyaları.
+
+## <a name="best-practices-for-all-command-sets"></a>Tüm komut kümesi için en iyi uygulamalar
+ Her komut kümesi için aşağıdaki yönergeleri izleyin:
+
+-   Bir grafik komutu yapısı önceden hazırlayın. Komutlar, birleşik giriş kutuları, komut grupları ve birden fazla konumda kullanılacak kısayol menüleri belirleyin.
+
+-   Aynı grubu içinde görünen komutlar ilişkili olmalıdır.
+
+-   Tek bir komut içeren gruplar kabul edilir.
+
+-   Paketler için mevcut Visual Studio menü komutları çok sayıda eklememelisiniz. Bunun yerine, bunlar menülere veya yeni komutlar barındırmak için alt menülere oluşturmalısınız.
+
+-   Bir komut, komut adı gibi varolan bir menüye üzerinde amacı açıktır ve bunu mevcut komutları ile karıştırılmamalıdır böylece yerleştirdiğinizde.
+
+## <a name="best-practices-for-small-command-sets"></a>Küçük komut kümesi için en iyi uygulamalar
+ Ayrıca birkaç komutları içeren bir VSPackage geliştiriyorsanız aşağıdaki yönergeleri izleyin:
+
+-   Mümkün olduğunda, kullanın [üst](../../extensibility/parent-element.md) komutu, birleşik giriş kutusu, Grup veya alt menüsünü uygun gruba yerleştirmek için öğesi.
+
+-   VSPackage'ı tarafından görüntülenen menüler bu gruplara atayın.
+
+-   Üst öğesi bir alt menü veya bir komut olmalıdır bir [grubu](../../extensibility/group-element.md) öğesi. Komutlar ve menüler alt gruplara ve gruplar için üst menü atayın.
+
+-   Bir komutu ekleyerek ek gruplarında koyabilirsiniz bir [CommandPlacements](../../extensibility/commandplacements-element.md) komutunu ve ardından ekleyerek öğesi bölümü tanımı sonra `CommandPlacements` öğesi bir [CommandPlacement](../../extensibility/commandplacement-element.md) öğesi her ek grubun için.
+
+## <a name="best-practices-for-large-command-sets"></a>Büyük komut kümesi için en iyi uygulamalar
+ Ayrıca, VSPackage'ı birden çok bağlamlarda görünecek komutların çoğu varsa, aşağıdaki yönergeleri izleyin:
+
+-   Menüleri, gruplar ve komutlar Self bırakarak olun. Atama diğer bir deyişle, bir `Parent` öğesinin tanımındaki öğesi.
+
+-   Kullanım `CommandPlacement` öğesi girişleri `CommandPlacements` öğe bölümünü menüler, gruplar ve komutlar, ana menüler ve gruplar yerleştirmek için.
+
+-   İçinde `CommandPlacements` öğesi bölümünde, belirli bir menü veya grubu dolduran girişleri olmalıdır birbirine bitişik. Bu okunabilirliği kolaylık sağlar ve yapar `Priority` sıralamasına belirlemek daha kolay.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

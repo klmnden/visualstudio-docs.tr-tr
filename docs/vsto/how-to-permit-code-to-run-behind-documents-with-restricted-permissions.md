@@ -17,39 +17,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6030165e7b24bdba5c7fa6e223b915e5cf4c85c8
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870262"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637665"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin
-  Microsoft Office Bilgi Hakları Yönetimi (IRM) özelliğini, bir belge veya çalışma kitabı izinlerini kısıtlamak için kullanabilirsiniz. Varsayılan olarak, kısıtlı Microsoft Office Word belgesi veya Microsoft Office Excel çalışma kitabını arkasındaki kodun, çalışmasına izin verilmez. Varsayılan nesne modeli, yönetilen kod uzantıları erişebilir ve çözümünüzü çalışır böylece değiştirebilirsiniz.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
- Belge veya çalışma kitabı yazarı olması veya izin ayarlarını değiştirmek için tam denetim erişimi olması gerekir.  
-  
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin için  
-  
-1. Belge veya çalışma kitabı Word veya Excel'de açın.  
-  
-2. Tıklayın **dosya** sekmesinde, işaret **hazırlama**, işaret **izinleri kısıtla**ve ardından **kısıtlı erişim**.  
-  
-   > [!NOTE]  
-   >  İlk kez kullanıldığında, Windows Rights Management istemcisi yüklemeniz istenir. İstemciyi yükledikten sonra adımları tekrarlamanız gerekebilir.  
-  
-3. İçinde **izni** iletişim kutusunda **bu belgeye erişimi kısıtlamak**ve ardından **diğer seçenekler**.  
-  
-4. Altında **kullanıcılar için ek izinler**seçin **içeriği programlamayla erişme**.  
-  
-   Word veya Excel nesne modeline programlı erişim izin verir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
- [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)   
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
- [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)  
+  Microsoft Office Bilgi Hakları Yönetimi (IRM) özelliğini, bir belge veya çalışma kitabı izinlerini kısıtlamak için kullanabilirsiniz. Varsayılan olarak, kısıtlı Microsoft Office Word belgesi veya Microsoft Office Excel çalışma kitabını arkasındaki kodun, çalışmasına izin verilmez. Varsayılan nesne modeli, yönetilen kod uzantıları erişebilir ve çözümünüzü çalışır böylece değiştirebilirsiniz.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+ Belge veya çalışma kitabı yazarı olması veya izin ayarlarını değiştirmek için tam denetim erişimi olması gerekir.
+
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin için
+
+1. Belge veya çalışma kitabı Word veya Excel'de açın.
+
+2. Tıklayın **dosya** sekmesinde, işaret **hazırlama**, işaret **izinleri kısıtla**ve ardından **kısıtlı erişim**.
+
+   > [!NOTE]
+   >  İlk kez kullanıldığında, Windows Rights Management istemcisi yüklemeniz istenir. İstemciyi yükledikten sonra adımları tekrarlamanız gerekebilir.
+
+3. İçinde **izni** iletişim kutusunda **bu belgeye erişimi kısıtlamak**ve ardından **diğer seçenekler**.
+
+4. Altında **kullanıcılar için ek izinler**seçin **içeriği programlamayla erişme**.
+
+   Word veya Excel nesne modeline programlı erişim izin verir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)
+- [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)
+- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)
+- [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)

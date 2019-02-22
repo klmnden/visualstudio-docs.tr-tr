@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 997d330cc6ba2084ea01e9b661a3daac9497a2d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98ab9edd260a190e1eb73b16a2ac71ed271ccdf7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925143"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632309"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-Bir veri sembolünün değişken sınıflandırma alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_dataKind (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bir değer döndürür [DataKind numaralandırması](../../debugger/debug-interface-access/datakind.md) örneğin genel, statik ya da sabit gibi veri türünü belirten sabit listesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Bir veri sembolünün değişken sınıflandırma alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_dataKind ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bir değer döndürür [DataKind numaralandırması](../../debugger/debug-interface-access/datakind.md) örneğin genel, statik ya da sabit gibi veri türünü belirten sabit listesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Gereksinim|Açıklama|  
-|-----------------|-----------------|  
-|Üst bilgi:|dia2.h|  
-|Sürüm:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [DataKind Numaralandırması](../../debugger/debug-interface-access/datakind.md)
+>  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Gereksinim|Açıklama|
+|-----------------|-----------------|
+|Üst bilgi:|dia2.h|
+|Sürüm:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [DataKind Numaralandırması](../../debugger/debug-interface-access/datakind.md)

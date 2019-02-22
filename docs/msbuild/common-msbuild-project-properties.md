@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020886"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610612"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild proje özellikleri
-Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.  
-  
- Proje dosyalarını Visual Studio (*.csproj*, *.vbproj*, *.vcxproj*ve diğerleri) bir projeyi IDE'yi kullanarak derlediğinizde çalışan MSBuild XML kodunu içerir. Projeleri genellikle bir veya daha fazla Al *.targets* yapı işlemlerini tanımlamak için dosyaları. Daha fazla bilgi için [MSBuild .targets dosyaları](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Ortak özellikler ve parametreler listesi  
-  
+Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.
+
+ Proje dosyalarını Visual Studio (*.csproj*, *.vbproj*, *.vcxproj*ve diğerleri) bir projeyi IDE'yi kullanarak derlediğinizde çalışan MSBuild XML kodunu içerir. Projeleri genellikle bir veya daha fazla Al *.targets* yapı işlemlerini tanımlamak için dosyaları. Daha fazla bilgi için [MSBuild .targets dosyaları](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Ortak özellikler ve parametreler listesi
+
 | Özellik veya parametre adı | Açıklama |
 |------------------------------------| - |
 | AdditionalLibPaths | Derleyicilerin başvuru derlemeleri araması gereken ek klasörleri belirtir. |
@@ -128,6 +128,6 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | WarningsNotAsErrors | Hata olarak görülmeyen uyarıların bir listesini belirtir. Bu parametre değerine eşdeğer olan `/warnaserror` derleyici anahtarı. |
 | Win32Manifest | Son derlemeye katıştırılması gereken bildirim dosyasının adı. Bu parametre değerine eşdeğer olan `/win32Manifest` derleyici anahtarı. |
 | Win32Resource | Son derlemeye katıştırılacak Win32 kaynağının dosya adı. Bu parametre değerine eşdeğer olan `/win32resource` derleyici anahtarı. |
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Yaygın MSBuild proje öğeleri](../msbuild/common-msbuild-project-items.md)

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874191"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600304"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>İzlenecek yol: İş verileri kullanarak SharePoint'te dış liste oluşturma
 
@@ -276,7 +276,7 @@ Tasarım modelleri için aşağıdaki konulardan SharePoint BDC hizmeti hakkınd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[İş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[BDC modeli tasarım araçlarına genel bakış](../sharepoint/bdc-model-design-tools-overview.md)  
-[İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)
+[İş verileri bağlantı modeli tasarlama](../sharepoint/designing-a-business-data-connectivity-model.md)
+[iş verileri bağlantı modeli oluşturma](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC modeli Tasarım araçları genel bakış](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)

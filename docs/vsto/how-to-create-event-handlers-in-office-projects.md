@@ -15,42 +15,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2a7661a1bce8e1ff6152040fe5b8d5567b55c7e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4bdc9b065f3defaf66564d0731408551ded540de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863844"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598123"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Nasıl yapılır: Office projelerinde olay işleyicileri oluşturma
-  Visual Basic'te olay işleyicileri oluşturmanın birkaç yolu vardır ve C#. Tasarım görünümünde, varsayılan olay işleyicileri denetimleri için denetimi çift tıklayarak oluşturabilir, veya olayları bölmesini kullanarak **özellikleri** herhangi bir olay işleyicileri denetimi oluşturmak için pencere. Ancak, kod Görünümü'nde, bir olay işleyicisi oluşturmak için Tasarım görünümüne geçiş yapmak istemeyebilirsiniz.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
-  
-### <a name="to-create-an-event-handler-in-visual-basic"></a>Visual Basic'te bir olay işleyicisi oluşturmak için  
-  
-1.  Gelen **sınıf adı** Kod Düzenleyicisi'nin üst aşağı açılan listesinde, istediğiniz nesneyi seçin için bir olay işleyicisi oluşturun.  
-  
-    > [!NOTE]  
-    >  Olay işleyicileri oluşturmak istiyorsanız `ThisDocument` veya `ThisWorkbook`, seçmelisiniz **(ThisDocument olayları)** veya **(ThisWorkbook olayları)** içinde **sınıf adı**aşağı açılan listesi  
-  
-2.  Gelen **yöntem adı** açılır listede Kod Düzenleyicisi'nin en üstünde, olayı seçin.  
-  
-     Visual Studio, olay işleyicisi oluşturur ve yeni oluşturulan olay işleyicisi ekleme noktasını taşır. Olay işleyicisi zaten varsa, ekleme noktasını varolan olay işleyicisine taşır.  
-  
-### <a name="to-create-an-event-handler-in-c"></a>Bir olay işleyicisi oluşturmak içinC#  
-  
-1.  Olay temsilcisini oluşturmak **başlangıç** olay sınıfının ardından bir boşluk tam olay adını yazarak ve ardından yazarak **+=** ardından boşluk. Örneğin:  
-  
-     `this.<object name>.<event name> +=`  
-  
-2.  Kod satırının sonunda iki kez SEKME tuşuna basın.  
-  
-     Visual Studio otomatik olarak kod satırının tamamlanır, olay işleyicisi oluşturur ve yeni oluşturulan olay işleyicisi ekleme noktasını taşır.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)   
- [İzlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Office çözümleri oluşturun](../vsto/building-office-solutions.md)  
+  Visual Basic'te olay işleyicileri oluşturmanın birkaç yolu vardır ve C#. Tasarım görünümünde, varsayılan olay işleyicileri denetimleri için denetimi çift tıklayarak oluşturabilir, veya olayları bölmesini kullanarak **özellikleri** herhangi bir olay işleyicileri denetimi oluşturmak için pencere. Ancak, kod Görünümü'nde, bir olay işleyicisi oluşturmak için Tasarım görünümüne geçiş yapmak istemeyebilirsiniz.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+ [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+
+### <a name="to-create-an-event-handler-in-visual-basic"></a>Visual Basic'te bir olay işleyicisi oluşturmak için
+
+1.  Gelen **sınıf adı** Kod Düzenleyicisi'nin üst aşağı açılan listesinde, istediğiniz nesneyi seçin için bir olay işleyicisi oluşturun.
+
+    > [!NOTE]
+    >  Olay işleyicileri oluşturmak istiyorsanız `ThisDocument` veya `ThisWorkbook`, seçmelisiniz **(ThisDocument olayları)** veya **(ThisWorkbook olayları)** içinde **sınıf adı**aşağı açılan listesi
+
+2.  Gelen **yöntem adı** açılır listede Kod Düzenleyicisi'nin en üstünde, olayı seçin.
+
+     Visual Studio, olay işleyicisi oluşturur ve yeni oluşturulan olay işleyicisi ekleme noktasını taşır. Olay işleyicisi zaten varsa, ekleme noktasını varolan olay işleyicisine taşır.
+
+### <a name="to-create-an-event-handler-in-c"></a>Bir olay işleyicisi oluşturmak içinC#
+
+1.  Olay temsilcisini oluşturmak **başlangıç** olay sınıfının ardından bir boşluk tam olay adını yazarak ve ardından yazarak **+=** ardından boşluk. Örneğin:
+
+     `this.<object name>.<event name> +=`
+
+2.  Kod satırının sonunda iki kez SEKME tuşuna basın.
+
+     Visual Studio otomatik olarak kod satırının tamamlanır, olay işleyicisi oluşturur ve yeni oluşturulan olay işleyicisi ekleme noktasını taşır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Office çözümlerinde kod yazma](../vsto/writing-code-in-office-solutions.md)
+- [İzlenecek yol: NamedRange denetimi olaylarına karşı programlama](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Office çözümleri oluşturun](../vsto/building-office-solutions.md)

@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b15d8cb68336de044e79484533124cbb8080348
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 421581520f28037bc4b8fce9d546eaffad557f75
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036088"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643022"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-Sistem kök dizininde .pdb dosyalarını aramaya izin verilip verilmediğini belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT RestrictSystemRootAccess();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Herhangi bir dışındaki kod dönüş `S_OK` .pdb dosyaları için sistem kök aramayı önler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Sistem kök dizininde .pdb dosyalarını aramaya izin verilip verilmediğini belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT RestrictSystemRootAccess();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Herhangi bir dışındaki kod dönüş `S_OK` .pdb dosyaları için sistem kök aramayı önler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

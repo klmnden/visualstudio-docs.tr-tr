@@ -14,39 +14,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba0c69768f8961fa6c23a599a385c46a93d7c47c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 66ca84d2246a3335aa3a1bbc0900ca6f48f59f01
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875400"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630697"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Nasıl yapılır: Belgelerde program aracılığıyla metin biçimlendirme
-  Kullanabileceğiniz <xref:Microsoft.Office.Interop.Word.Range> metni biçimlendirmek Microsoft Office Word belgesindeki bir nesne.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
- Aşağıdaki örnek, ilk paragrafa belgede seçer ve yazı tipi boyutunu ve yazı tipi adı hizalama değiştirir. Aralığı seçer ve sonraki bölümde kod yürütülmeden önce beklenecek bir ileti kutusu görüntüler. Sonraki bölümde geri alma yöntemini çağırır <xref:Microsoft.Office.Tools.Word.Document> konak öğesi (için belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Document> (bir VSTO eklentisi için) üç kez sınıfı. Bu, Normal Girintile stil uygulanır ve kod duraklatmak için bir ileti kutusu görüntüler. Ardından kod çağrıları <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> yöntemi bir kere ve bir ileti kutusu görüntüler.  
-  
-## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirmesi örneği  
-  
-### <a name="to-format-text-using-a-document-level-customization"></a>Belge düzeyi özelleştirmesi kullanılarak metni biçimlendirmek için  
-  
-1.  Aşağıdaki örnek, bir belge düzeyi özelleştirmesinde kullanılabilir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
-  
+  Kullanabileceğiniz <xref:Microsoft.Office.Interop.Word.Range> metni biçimlendirmek Microsoft Office Word belgesindeki bir nesne.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+ Aşağıdaki örnek, ilk paragrafa belgede seçer ve yazı tipi boyutunu ve yazı tipi adı hizalama değiştirir. Aralığı seçer ve sonraki bölümde kod yürütülmeden önce beklenecek bir ileti kutusu görüntüler. Sonraki bölümde geri alma yöntemini çağırır <xref:Microsoft.Office.Tools.Word.Document> konak öğesi (için belge düzeyi özelleştirmeleri için) veya <xref:Microsoft.Office.Interop.Word.Document> (bir VSTO eklentisi için) üç kez sınıfı. Bu, Normal Girintile stil uygulanır ve kod duraklatmak için bir ileti kutusu görüntüler. Ardından kod çağrıları <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> yöntemi bir kere ve bir ileti kutusu görüntüler.
+
+## <a name="document-level-customization-example"></a>Belge düzeyi özelleştirmesi örneği
+
+### <a name="to-format-text-using-a-document-level-customization"></a>Belge düzeyi özelleştirmesi kullanılarak metni biçimlendirmek için
+
+1.  Aşağıdaki örnek, bir belge düzeyi özelleştirmesinde kullanılabilir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.
+
      [!code-vb[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#62)]
-     [!code-csharp[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#62)]  
-  
-## <a name="vsto-add-in-example"></a>VSTO eklenti örneği  
-  
-### <a name="to-format-text-using-a-vsto-add-in"></a>Bir VSTO eklentisi kullanarak metin biçimlendirme  
-  
-1.  Aşağıdaki örnek, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#62)]
+
+## <a name="vsto-add-in-example"></a>VSTO eklenti örneği
+
+### <a name="to-format-text-using-a-vsto-add-in"></a>Bir VSTO eklentisi kullanarak metin biçimlendirme
+
+1.  Aşağıdaki örnek, VSTO eklentisi içinde kullanılabilir. Bu örnek etkin belgeyi kullanır. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#62)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Nasıl yapılır: Program aracılığıyla tanımlama ve belgelerde aralıkları seçin](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Nasıl yapılır: Word belgelerine program aracılığıyla metin ekleme](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)

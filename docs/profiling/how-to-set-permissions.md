@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb0887802d6995e790ec0e61629b478b7b26ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042523"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620830"
 ---
 # <a name="how-to-set-permissions"></a>Nasıl yapılır: İzinleri ayarlama
 
@@ -121,6 +121,6 @@ Bir yöneticinin bunları profil oluşturma araçları için yazılım sürücü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Profil Oluşturma ve Windows Vista Güvenliği](../profiling/profiling-and-windows-vista-security.md)
+[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[profil oluşturma ve Windows Vista güvenliği](../profiling/profiling-and-windows-vista-security.md)

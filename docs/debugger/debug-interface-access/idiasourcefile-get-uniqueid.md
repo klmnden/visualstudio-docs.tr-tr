@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964424"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612796"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Bu görüntü için benzersiz olan bir basit tamsayı anahtar değeri alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Bu görüntü için benzersiz olan bir basit tamsayı anahtar değeri döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Dizeleri satır numarası işleme hızlandırabilir yerine anahtarları karşılaştırma.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Bu görüntü için benzersiz olan bir basit tamsayı anahtar değeri alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_uniqueId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Bu görüntü için benzersiz olan bir basit tamsayı anahtar değeri döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Dizeleri satır numarası işleme hızlandırabilir yerine anahtarları karşılaştırma.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

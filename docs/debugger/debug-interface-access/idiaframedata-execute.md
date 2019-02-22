@@ -12,41 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b8a301bd4f16cd3fb6f1b6fcec90e0f1cf3f47c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617710"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-Yığın geriye doğru izleme gerçekleştirir ve sonuçları yığın ilerlemesi çerçeve arabiriminde döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT execute (   
-   IDiaStackWalkFrame* frame  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `frame`  
- [in] Bir [Idiastackwalkframe](../../debugger/debug-interface-access/idiastackwalkframe.md) çerçeve yazmaçların durumu tutan nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Aşağıdaki tabloda, bu yöntem olası dönüş değerleri gösterir.  
-  
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|E_DIA_INPROLOG|Giriş kodundaki yığın çerçevesi yürütülemiyor.|  
-|E_DIA_SYNTAX|Ayrıştırma hatası çerçeve programında karşılaşıldı.|  
-|E_DIA_FRAME_ACCESS|Erişim kayıtları veya bellek alınamıyor.|  
-|E_DIA_VALUE|Bir değerin (örneğin, sıfıra bölünme) hesaplama hatası.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem, yığın geriye doğru izleme hata ayıklama sırasında çağrılır. [Idiastackwalkframe](../../debugger/debug-interface-access/idiastackwalkframe.md) nesne kayıtlar için güncelleştirmeleri almak ve tarafından kullanılan yöntemleri sağlaması için istemci uygulaması tarafından gerçekleştirilir `execute` yöntemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+Yığın geriye doğru izleme gerçekleştirir ve sonuçları yığın ilerlemesi çerçeve arabiriminde döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT execute ( 
+   IDiaStackWalkFrame* frame
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `frame`
+
+[in] Bir [Idiastackwalkframe](../../debugger/debug-interface-access/idiastackwalkframe.md) çerçeve yazmaçların durumu tutan nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Aşağıdaki tabloda, bu yöntem olası dönüş değerleri gösterir.
+
+|Değer|Açıklama|
+|-----------|-----------------|
+|E_DIA_INPROLOG|Giriş kodundaki yığın çerçevesi yürütülemiyor.|
+|E_DIA_SYNTAX|Ayrıştırma hatası çerçeve programında karşılaşıldı.|
+|E_DIA_FRAME_ACCESS|Erişim kayıtları veya bellek alınamıyor.|
+|E_DIA_VALUE|Bir değerin (örneğin, sıfıra bölünme) hesaplama hatası.|
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem, yığın geriye doğru izleme hata ayıklama sırasında çağrılır. [Idiastackwalkframe](../../debugger/debug-interface-access/idiastackwalkframe.md) nesne kayıtlar için güncelleştirmeleri almak ve tarafından kullanılan yöntemleri sağlaması için istemci uygulaması tarafından gerçekleştirilir `execute` yöntemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

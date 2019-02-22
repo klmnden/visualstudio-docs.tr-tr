@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57ef75b27f90df37132ecb246b6f8d433581a696
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 730793d2b9f2e02d7e5665777f8df4d245b0ddf6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642189"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 Belirtilen adres içeren belirtilen derlenecek satırları alır.
@@ -34,16 +34,20 @@ HRESULT findLinesByAddr (
 ```
 
 #### <a name="parameters"></a>Parametreler
-`seg`  
+`seg`
+
 [in] Belirli bir adresi bölüm bileşeni belirtir.
 
-`offset`  
+`offset`
+
 [in] Belirli bir adresi uzaklık bileşeni belirtir.
 
-`length`  
+`length`
+
 [in] Bu sorguyu kapsayacak şekilde adres aralığını bayt sayısını belirtir.
 
-`ppResult`  
+`ppResult`
+
 [out] Döndürür bir [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) tüm satır listesini içeren nesne belirtilen adres aralığını kapsayan numaralandırır.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -72,6 +76,6 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

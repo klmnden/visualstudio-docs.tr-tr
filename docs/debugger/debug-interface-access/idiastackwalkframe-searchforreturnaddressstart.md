@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9c1e28c458ad863248235166df03cb2ae4f8a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf7de77016f5ccc15f2cea8bf3172321dd824096
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931238"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640759"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Belirtilen yığın çerçevesinin veya belirtilen adres'e yakın bir dönüş adresi arar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT searchForReturnAddressStart (   
-   IDiaFrameData* frame,  
-   ULONGLONG      startAddress,  
-   ULONGLONG*     returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `frame`  
- [in] Bir [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) geçerli yığın çerçevesini temsil eden nesne.  
-  
- `startAddress`  
- [in] Bir sanal bellek adres aramaya başlanacak.  
-  
- `returnAddress`  
- [out] En yakın işlevi dönüş adresi döndürür `startAddress`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiastackwalkframe](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Belirtilen yığın çerçevesinin veya belirtilen adres'e yakın bir dönüş adresi arar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT searchForReturnAddressStart ( 
+   IDiaFrameData* frame,
+   ULONGLONG      startAddress,
+   ULONGLONG*     returnAddress
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `frame`
+
+[in] Bir [Idiaframedata](../../debugger/debug-interface-access/idiaframedata.md) geçerli yığın çerçevesini temsil eden nesne.
+
+ `startAddress`
+
+[in] Bir sanal bellek adres aramaya başlanacak.
+
+ `returnAddress`
+
+[out] En yakın işlevi dönüş adresi döndürür `startAddress`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

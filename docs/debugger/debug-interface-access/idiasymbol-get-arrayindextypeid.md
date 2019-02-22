@@ -12,43 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e11eccf44699c7c3b482d8f8a50fd338f003974e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31dc81f7975d62832e754777db7432c83868ada7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986696"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613498"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
-Sembol dizi dizini tür tanımlayıcısını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_arrayIndexTypeId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Simgenin dizi dizini tür Kimliğini döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.  
-  
+Sembol dizi dizini tür tanımlayıcısını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_arrayIndexTypeId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Simgenin dizi dizini tür Kimliğini döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE` veya bir hata kodu.
+
 > [!NOTE]
->  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tanımlayıcı, tüm sembolleri benzersiz olarak işaretlemek için DIA SDK'sı tarafından oluşturulan benzersiz bir değerdir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Gereksinim|Açıklama|  
-|-----------------|-----------------|  
-|Üst bilgi:|dia2.h|  
-|Sürüm:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  Dönüş değeri `S_FALSE` özelliği simge için mevcut olmadığı anlamına gelir.
+
+## <a name="remarks"></a>Açıklamalar
+ Tanımlayıcı, tüm sembolleri benzersiz olarak işaretlemek için DIA SDK'sı tarafından oluşturulan benzersiz bir değerdir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Gereksinim|Açıklama|
+|-----------------|-----------------|
+|Üst bilgi:|dia2.h|
+|Sürüm:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

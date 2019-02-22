@@ -12,43 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964255"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622728"
 ---
 # <a name="support-for-user-settings"></a>Kullanıcı Ayarları için Destek
-VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir veya daha fazla ayarları kategorileri tanımlayabilir **içeri/dışarı aktarma ayarları** komutunu **Araçları** menüsü. Bu kalıcılığını sağlamak için ayarları API'leri kullanın. içinde [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+VSPackage kullanıcı seçtiğinde, kalıcı durum değişken grupları, bir veya daha fazla ayarları kategorileri tanımlayabilir **içeri/dışarı aktarma ayarları** komutunu **Araçları** menüsü. Bu kalıcılığını sağlamak için ayarları API'leri kullanın. içinde [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
- Bir özel ayarları noktası ve bir GUID başvurulan bir kayıt defteri girişi VSPackage'nın ayarları kategorisi tanımlar. VSPackage birden çok ayar kategorileri destekler, her bir özel ayarları noktası tarafından tanımlanan.  
+ Bir özel ayarları noktası ve bir GUID başvurulan bir kayıt defteri girişi VSPackage'nın ayarları kategorisi tanımlar. VSPackage birden çok ayar kategorileri destekler, her bir özel ayarları noktası tarafından tanımlanan.
 
--   Birlikte çalışma derlemelerini temel ayarları uygulamaları (kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> arabirimi) kayıt defterini düzenledikten veya Kaydedici betik (.rgs dosyası) kullanarak özel ayarları noktası oluşturmanız gerekir. Daha fazla bilgi için [Kaydedici betikleri oluşturma](/cpp/atl/creating-registrar-scripts).  
+-   Birlikte çalışma derlemelerini temel ayarları uygulamaları (kullanarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> arabirimi) kayıt defterini düzenledikten veya Kaydedici betik (.rgs dosyası) kullanarak özel ayarları noktası oluşturmanız gerekir. Daha fazla bilgi için [Kaydedici betikleri oluşturma](/cpp/atl/creating-registrar-scripts).
 
--   Yönetilen paket Framework (MPF) kullanan kodu oluşturmalıdır özel ayarları noktaları ekleyerek bir <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> her özel ayarları noktası VSPackage'ı için.  
+-   Yönetilen paket Framework (MPF) kullanan kodu oluşturmalıdır özel ayarları noktaları ekleyerek bir <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> her özel ayarları noktası VSPackage'ı için.
 
-     Birkaç özel ayarları noktası tek bir VSPackage'ı destekliyorsa, her özel ayarları noktası ayrı bir sınıf tarafından uygulanır ve her benzersiz bir örneği tarafından kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfı. Sonuç olarak, sınıf uygulama bir ayar birden fazla ayarları kategorisi destekleyebilir.  
+     Birkaç özel ayarları noktası tek bir VSPackage'ı destekliyorsa, her özel ayarları noktası ayrı bir sınıf tarafından uygulanır ve her benzersiz bir örneği tarafından kayıtlı <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> sınıfı. Sonuç olarak, sınıf uygulama bir ayar birden fazla ayarları kategorisi destekleyebilir.
 
-## <a name="custom-settings-point-registry-entry-details"></a>Özel ayarlar noktası kayıt defteri girişi ayrıntıları  
- Özel ayarları noktaları bir kayıt defteri girişini şu konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\\`<CSPName>`burada `<CSPName>` VSPackage'ı destekleyen özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.  
+## <a name="custom-settings-point-registry-entry-details"></a>Özel ayarlar noktası kayıt defteri girişi ayrıntıları
+ Özel ayarları noktaları bir kayıt defteri girişini şu konumda oluşturulur: HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\\`<CSPName>`burada `<CSPName>` VSPackage'ı destekleyen özel ayarları noktası adıdır ve  *\<sürüm >* sürümü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], örneğin 8.0.
 
 > [!NOTE]
->  Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* bir alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamıdır (IDE) başlatılmamış. Daha fazla bilgi için [komut satırı anahtarları](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+>  Kök yolu hkey_local_machıne\software\microsoft\visualstudio\\*\<sürüm >* bir alternatif ile geçersiz kılınabilir ne zaman kök [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamıdır (IDE) başlatılmamış. Daha fazla bilgi için [komut satırı anahtarları](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
- Kayıt defteri girdisi yapısı aşağıda gösterilmiştir:  
+ Kayıt defteri girdisi yapısı aşağıda gösterilmiştir:
 
- HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<sürüm >* \UserSettings\
 
- `<CSPName`>= s '#12345'  
+ `<CSPName`>= s '#12345'
 
- Paket '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}' =  
+ Paket '{XXXX XXXXXX XXXX XXXX XXXXXXXXX}' =
 
- Kategori = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
+ Kategori = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'
 
- ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
 
- AlternateParent CategoryName =  
+ AlternateParent CategoryName =
 
 
 | Ad | Tür | Veri | Açıklama |

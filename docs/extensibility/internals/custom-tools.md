@@ -12,43 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c192128ff4995a551b50df9347981405e321b703
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933236"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607609"
 ---
 # <a name="custom-tools"></a>Özel Araçlar
-*Özel Araçlar* bir aracı bir projede bir öğe ile ilişkilendirmek ve dosyanın kaydedildiği zaman bu aracı sağlar. Bazı özel araçları, bazen olarak adlandırılan *tek dosya oluşturucular*, verilerden ve kod oluşturma çevirmenler uygulamak için sıkça kullanılır. Örneğin, tek dosya oluşturucular oluşturma [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kaynak kodunun dışında *.settings* ve *.resx* dosyaları. Oluşturulan kaynak kod verilere erişim türü kesin belirlenmiş sağlar *.settings* ve *.resx* dosyaları. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] özel araçlar; proje türleri desteği [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proje türleri yapın. Özel Araçlar kendi proje türleri de destekler.  
-  
- Özel Araçlar, uygulama kayıtlı bileşenleridir `IVsSingleFileGenerator` arabirimi.  
-  
- Özel araçlar ile ilişkili bir `ProjectItem` arabirimi nesnesi ve tasarımcılar ve düzenleyiciler gibi. Özel bir araç tarafından temsil edilen dosya alan bir `ProjectItem` olarak giriş ve dosya adı tarafından sağlanır, yeni bir dosya Yazar `DefaultExtension` yöntemi.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [Tek dosya oluşturucuları uygulayın](../../extensibility/internals/implementing-single-file-generators.md)  
- Nasıl kullanılacağını açıklar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> özel araç uygulamak için arabirim.  
-  
- [Tek dosya oluşturucuları kaydetme](../../extensibility/internals/registering-single-file-generators.md)  
- Tüm kayıt defteri girdilerini açıklamaları için özel bir araç sağlar.  
-  
- [Türleri görsel tasarımcıların kullanıma sunma](../../extensibility/internals/exposing-types-to-visual-designers.md)  
- Nasıl proje sistemleri görsel tasarımcılar erişim üretilen sınıfları ve türleri için geçici taşınabilir yürütülebilir (PE) dosyaları desteği açıklanmaktadır.  
-  
- [Proje öğesinin özelliğini kalıcı](../../extensibility/persisting-the-property-of-a-project-item.md)  
- Proje dosyasındaki bir kaynak dosyasının yazar gibi bir proje öğesi özelliği kalıcı hale getirmek gösterilmektedir.  
-  
-## <a name="reference"></a>Başvuru  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>  
- Hakkında ayrıntılar sağlar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, hangi dönüştüren tek bir giriş dosyası derlenmiş veya bir projeye eklenen bir tek çıkış dosyasına.  
-  
- <xref:EnvDTE.ProjectItem>  
- Açıklar `ProjectItem` bir projedeki bir öğeyi temsil eden arabirim.  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>  
- Hakkında ayrıntılar sağlar `DefaultExtension` yöntemi için çıkış dosyası adı verilen dosya adı uzantısını alır.  
-  
-## <a name="related-sections"></a>İlgili bölümler  
- [Projeleri genişletme](../../extensibility/extending-projects.md)  
+*Özel Araçlar* bir aracı bir projede bir öğe ile ilişkilendirmek ve dosyanın kaydedildiği zaman bu aracı sağlar. Bazı özel araçları, bazen olarak adlandırılan *tek dosya oluşturucular*, verilerden ve kod oluşturma çevirmenler uygulamak için sıkça kullanılır. Örneğin, tek dosya oluşturucular oluşturma [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] kaynak kodunun dışında *.settings* ve *.resx* dosyaları. Oluşturulan kaynak kod verilere erişim türü kesin belirlenmiş sağlar *.settings* ve *.resx* dosyaları. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Ve [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] özel araçlar; proje türleri desteği [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] proje türleri yapın. Özel Araçlar kendi proje türleri de destekler.
+
+ Özel Araçlar, uygulama kayıtlı bileşenleridir `IVsSingleFileGenerator` arabirimi.
+
+ Özel araçlar ile ilişkili bir `ProjectItem` arabirimi nesnesi ve tasarımcılar ve düzenleyiciler gibi. Özel bir araç tarafından temsil edilen dosya alan bir `ProjectItem` olarak giriş ve dosya adı tarafından sağlanır, yeni bir dosya Yazar `DefaultExtension` yöntemi.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [Tek dosya oluşturucuları uygulayın](../../extensibility/internals/implementing-single-file-generators.md)
+
+ Nasıl kullanılacağını açıklar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> özel araç uygulamak için arabirim.
+
+- [Tek dosya oluşturucuları kaydetme](../../extensibility/internals/registering-single-file-generators.md)
+
+ Tüm kayıt defteri girdilerini açıklamaları için özel bir araç sağlar.
+
+- [Türleri görsel tasarımcıların kullanıma sunma](../../extensibility/internals/exposing-types-to-visual-designers.md)
+
+ Nasıl proje sistemleri görsel tasarımcılar erişim üretilen sınıfları ve türleri için geçici taşınabilir yürütülebilir (PE) dosyaları desteği açıklanmaktadır.
+
+- [Proje öğesinin özelliğini kalıcı](../../extensibility/persisting-the-property-of-a-project-item.md)
+
+ Proje dosyasındaki bir kaynak dosyasının yazar gibi bir proje öğesi özelliği kalıcı hale getirmek gösterilmektedir.
+
+## <a name="reference"></a>Başvuru
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> Hakkında ayrıntılar sağlar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>, hangi dönüştüren tek bir giriş dosyası derlenmiş veya bir projeye eklenen bir tek çıkış dosyasına.
+
+ <xref:EnvDTE.ProjectItem> Açıklar `ProjectItem` bir projedeki bir öğeyi temsil eden arabirim.
+
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> Hakkında ayrıntılar sağlar `DefaultExtension` yöntemi için çıkış dosyası adı verilen dosya adı uzantısını alır.
+
+## <a name="related-sections"></a>İlgili bölümler
+- [Projeleri genişletme](../../extensibility/extending-projects.md)
+
  Nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projeler ve çözümler, kod dosyaları ve kaynak dosyalarını ve kaynak denetimi uygulamak nasıl düzenlemek için.

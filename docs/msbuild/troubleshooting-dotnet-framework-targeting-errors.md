@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004496"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620297"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework hedefleme hatalarının sorunlarını giderme
 Bu konuda başvurusu nedeniyle oluşabilecek MSBuild hataları açıklanır sorunlar ve bu hataların nasıl çözebilirsiniz.
@@ -54,4 +54,7 @@ Bu konuda başvurusu nedeniyle oluşabilecek MSBuild hataları açıklanır soru
 >  Projenizi kapatıp sonra ayrıca tüm başvuruları doğru çözümleyemiyorsa emin olmak için yeniden oluşturmalısınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile) [belirli bir .NET Framework sürümünü hedefleme](../ide/visual-studio-multi-targeting-overview.md) [çoklu sürüm desteği](../msbuild/msbuild-multitargeting-overview.md)
+- [Nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [.NET framework istemci profili](/dotnet/framework/deployment/client-profile)
+- [Belirli bir .NET Framework sürümünü hedefleme](../ide/visual-studio-multi-targeting-overview.md)
+- [Çoklu Sürüm Desteği](../msbuild/msbuild-multitargeting-overview.md)

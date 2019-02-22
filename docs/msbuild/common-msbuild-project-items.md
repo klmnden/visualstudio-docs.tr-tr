@@ -15,71 +15,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd4f2676c9d696ecf7a59fa327a7c3f35eb2a4c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035425"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610352"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild proje öğeleri
-İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.  
+İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.
 
-## <a name="common-items"></a>Ortak öğeler  
- Ortak proje öğeleri listesi verilmiştir.  
+## <a name="common-items"></a>Ortak öğeler
+ Ortak proje öğeleri listesi verilmiştir.
 
-### <a name="reference"></a>Başvuru  
- Projesinde bir derleme (yönetilen) başvuruyu temsil eder.  
+### <a name="reference"></a>Başvuru
+ Projesinde bir derleme (yönetilen) başvuruyu temsil eder.
 
-|Öğe meta veri adı|Açıklama|  
-|---------------|-----------------|  
-|HintPath|İsteğe bağlı dize. Derlemenin göreli veya mutlak yolu.|  
-|Ad|İsteğe bağlı dize. Örneğin, "System.Windows.Forms." derlemenin görünen adı|  
-|FusionName|İsteğe bağlı dize. Öğe için basit veya güçlü Füzyon adı belirtir.<br /><br /> Bu öznitelik mevcut olduğunda, derleme dosyasını Füzyon adı almak için açık olması gerekmez çünkü zaman kazandırabilir.|  
-|SpecificVersion|İsteğe bağlı boolean. Sadece Füzyon adındaki sürümünde başvuruda bulunup bulunmadığını belirtir.|  
-|Diğer adlar|İsteğe bağlı dize. Başvuru için diğer adlar.|  
-|Özel|İsteğe bağlı boolean. Başvurunun çıkış klasörüne kopyalanıp kopyalanmayacağını belirtir. Bu özniteliği ile eşleşen **Yereli Kopyala** Visual Studio IDE içinde olan başvuru özelliği.|  
+|Öğe meta veri adı|Açıklama|
+|---------------|-----------------|
+|HintPath|İsteğe bağlı dize. Derlemenin göreli veya mutlak yolu.|
+|Ad|İsteğe bağlı dize. Örneğin, "System.Windows.Forms." derlemenin görünen adı|
+|FusionName|İsteğe bağlı dize. Öğe için basit veya güçlü Füzyon adı belirtir.<br /><br /> Bu öznitelik mevcut olduğunda, derleme dosyasını Füzyon adı almak için açık olması gerekmez çünkü zaman kazandırabilir.|
+|SpecificVersion|İsteğe bağlı boolean. Sadece Füzyon adındaki sürümünde başvuruda bulunup bulunmadığını belirtir.|
+|Diğer adlar|İsteğe bağlı dize. Başvuru için diğer adlar.|
+|Özel|İsteğe bağlı boolean. Başvurunun çıkış klasörüne kopyalanıp kopyalanmayacağını belirtir. Bu özniteliği ile eşleşen **Yereli Kopyala** Visual Studio IDE içinde olan başvuru özelliği.|
 
-### <a name="comreference"></a>COMReference  
- Temsil eder (yönetilmeyen) COM bileşeni projede başvuru.  
+### <a name="comreference"></a>COMReference
+ Temsil eder (yönetilmeyen) COM bileşeni projede başvuru.
 
-|Öğe meta veri adı|Açıklama|  
-|---------------|-----------------|  
-|Ad|İsteğe bağlı dize. Bileşenin görünen adı.|  
-|Guid|İsteğe bağlı dize. Bir GUID biçiminde bileşeni için {12345678-1234-1234-1234-1234567891234}.|  
-|VersionMajor|İsteğe bağlı dize. Bileşenin sürüm numarasının ana bölümü. Örneğin, "5" tam sürüm numarası "5.46." ise|  
-|VersionMinor|İsteğe bağlı dize. Bileşenin sürüm numarasının ikincil bölümü. Örneğin, "46" tam sürüm numarası "5.46." ise|  
-|LCID|İsteğe bağlı dize. LocaleID bileşeni için.|  
-|WrapperTool|İsteğe bağlı dize. Bileşen, örneğin, "tlbimp." kullanılan sarmalayıcı aracı adı|  
-|Yalıtılmış|İsteğe bağlı boolean. Bileşen reg ücretsiz bir bileşen olup olmadığını belirtir.|  
+|Öğe meta veri adı|Açıklama|
+|---------------|-----------------|
+|Ad|İsteğe bağlı dize. Bileşenin görünen adı.|
+|Guid|İsteğe bağlı dize. Bir GUID biçiminde bileşeni için {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|İsteğe bağlı dize. Bileşenin sürüm numarasının ana bölümü. Örneğin, "5" tam sürüm numarası "5.46." ise|
+|VersionMinor|İsteğe bağlı dize. Bileşenin sürüm numarasının ikincil bölümü. Örneğin, "46" tam sürüm numarası "5.46." ise|
+|LCID|İsteğe bağlı dize. LocaleID bileşeni için.|
+|WrapperTool|İsteğe bağlı dize. Bileşen, örneğin, "tlbimp." kullanılan sarmalayıcı aracı adı|
+|Yalıtılmış|İsteğe bağlı boolean. Bileşen reg ücretsiz bir bileşen olup olmadığını belirtir.|
 
-### <a name="comfilereference"></a>COMFileReference  
- Akış ResolvedComreference hedef tür kitaplıklarını listesini temsil eder.  
+### <a name="comfilereference"></a>COMFileReference
+ Akış ResolvedComreference hedef tür kitaplıklarını listesini temsil eder.
 
-|Öğe meta veri adı|Açıklama|  
-|---------------|-----------------|  
-|WrapperTool|İsteğe bağlı dize. Bileşen, örneğin, "tlbimp." kullanılan sarmalayıcı aracı adı|  
+|Öğe meta veri adı|Açıklama|
+|---------------|-----------------|
+|WrapperTool|İsteğe bağlı dize. Bileşen, örneğin, "tlbimp." kullanılan sarmalayıcı aracı adı|
 
-### <a name="nativereference"></a>NativeReference  
- Yerel bir bildirim dosyası veya böyle bir dosya başvurusu temsil eder.  
+### <a name="nativereference"></a>NativeReference
+ Yerel bir bildirim dosyası veya böyle bir dosya başvurusu temsil eder.
 
-|Öğe meta veri adı|Açıklama|  
-|---------------|-----------------|  
-|Ad|Zorunlu dize. Bildirim dosyasının temel adı.|  
-|HintPath|Zorunlu dize. Bildirim dosyasının göreli yolu.|  
+|Öğe meta veri adı|Açıklama|
+|---------------|-----------------|
+|Ad|Zorunlu dize. Bildirim dosyasının temel adı.|
+|HintPath|Zorunlu dize. Bildirim dosyasının göreli yolu.|
 
-### <a name="projectreference"></a>ProjectReference  
- Başka bir projeye başvuruyu temsil eder.  
+### <a name="projectreference"></a>ProjectReference
+ Başka bir projeye başvuruyu temsil eder.
 
-|Öğe meta veri adı|Açıklama|  
-|---------------|-----------------|  
-|Ad|İsteğe bağlı dize. Başvurunun görünen adı.|  
-|Proje|İsteğe bağlı dize. Bir GUID biçiminde başvuru {12345678-1234-1234-1234-1234567891234}.|  
-|Paket|İsteğe bağlı dize. Başvurulan proje dosyasının yolu.|  
+|Öğe meta veri adı|Açıklama|
+|---------------|-----------------|
+|Ad|İsteğe bağlı dize. Başvurunun görünen adı.|
+|Project|İsteğe bağlı dize. Bir GUID biçiminde başvuru {12345678-1234-1234-1234-1234567891234}.|
+|Paket|İsteğe bağlı dize. Başvurulan proje dosyasının yolu.|
 |ReferenceOutputAssembly|İsteğe bağlı boolean. Varsa kümesine `false`, çıktısı başvurulan projenin içermez bir [başvuru](#Reference) diğer projeyi bu bilgisayardan bir önce oluşturur bu proje, ancak yine de sağlar. Varsayılan olarak `true`.|
 
-### <a name="compile"></a>Derleme  
- Derleyici için kaynak dosyaları temsil eder.  
+### <a name="compile"></a>Derleme
+ Derleyici için kaynak dosyaları temsil eder.
 
 
 | Öğe meta veri adı | Açıklama |
@@ -90,8 +90,8 @@ ms.locfileid: "55035425"
 | Görünür | İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest |
 
-### <a name="embeddedresource"></a>EmbeddedResource  
- Üretilen derleme içine gömülü olması için kaynaklar temsil eder.  
+### <a name="embeddedresource"></a>EmbeddedResource
+ Üretilen derleme içine gömülü olması için kaynaklar temsil eder.
 
 
 | Öğe meta veri adı | Açıklama |
@@ -105,8 +105,8 @@ ms.locfileid: "55035425"
 | CopyToOutputDirectory | İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest |
 | LogicalName | Zorunlu dize. Katıştırılmış kaynağın mantıksal adı. |
 
-### <a name="content"></a>İçerik  
- Projeye derlenmemiş ancak katıştırılmış veya olabilir, birlikte yayımlanan dosyaları gösterir.  
+### <a name="content"></a>İçerik
+ Projeye derlenmemiş ancak katıştırılmış veya olabilir, birlikte yayımlanan dosyaları gösterir.
 
 
 | Öğe meta veri adı | Açıklama |
@@ -121,8 +121,8 @@ ms.locfileid: "55035425"
 | Görünür | İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest |
 
-### <a name="none"></a>Hiçbiri  
- Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.  
+### <a name="none"></a>Hiçbiri
+ Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.
 
 
 | Öğe meta veri adı | Açıklama |
@@ -135,14 +135,14 @@ ms.locfileid: "55035425"
 | Görünür | İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest |
 
-### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
- Yapı için temel uygulama bildirimini temsil eder ve içeren [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım güvenlik bilgileri.  
+### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
+ Yapı için temel uygulama bildirimini temsil eder ve içeren [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım güvenlik bilgileri.
 
-### <a name="codeanalysisimport"></a>CodeAnalysisImport  
- İçeri aktarmak için FxCop projesi temsil eder.  
+### <a name="codeanalysisimport"></a>CodeAnalysisImport
+ İçeri aktarmak için FxCop projesi temsil eder.
 
-### <a name="import"></a>İçeri Aktarma  
- Ad uzayları, tarafından aktarılacaksa derlemeleri temsil [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyici.  
+### <a name="import"></a>İçeri Aktarma
+ Ad uzayları, tarafından aktarılacaksa derlemeleri temsil [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] derleyici.
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Yaygın MSBuild proje özellikleri](../msbuild/common-msbuild-project-properties.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316112"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623430"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Bir hedef kayıt belirtir.
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Öğeleri
-CV_REG_*  
-Intel 80 x 86 ve ix86 işlemciler ve p-code tarafından kullanılan kaydeder.
+CV_REG_ * Intel 80 x 86 ve ix86 işlemciler ve p-code tarafından kullanılan kaydeder.
 
-CV_R68_*  
-Yazmaçları 68 K işlemcisi tarafından kullanılır.
+CV_R68_ * 68 K işlemcisi tarafından kullanılan kaydeder.
 
-CV_M4_*  
-MIPS 4000 serisi işlemcisi tarafından kullanılan kaydeder.
+CV_M4_ * MIPS 4000 serisi işlemcisi tarafından kullanılan kaydeder.
 
-CV_ALPHA_*  
-Dijital ekipman Corporation alfa AXP serisi işlemcisi tarafından kullanılan kaydeder.
+CV_ALPHA_ * dijital ekipman Corporation alfa AXP serisi işlemcisi tarafından kullanılan kaydeder.
 
-CV_PPC_*  
-Yazmaçları Motorola/IBM PowerPC işlemci tarafından kullanılır.
+CV_PPC_ * Motorola/IBM PowerPC işlemci tarafından kullanılan kaydeder.
 
-CV_SH3_ * ve CV_SH_\*  
-Yazmaçları Hitachi SH3 ve Hitachi SH serisi işlemcisi tarafından kullanılır.
+CV_SH3_ * ve CV_SH_\* Hitachi SH3 ve Hitachi SH serisi işlemcisi tarafından kullanılan kaydeder.
 
-CV_ARM_*  
-Gelişmiş RISC makinesi (ARM) işlemcileri tarafından kullanılan kaydeder.
+CV_ARM_ * Gelişmiş RISC makinesi (ARM) işlemcileri tarafından kullanılan kaydeder.
 
-CV_IA64_*  
-Intel IA64 serisi işlemcileri tarafından kullanılan kaydeder.
+CV_IA64_ * Intel IA64 serisi işlemcileri tarafından kullanılan kaydeder.
 
-CV_TRI_*  
-Yazmaçları Infineon teknolojileri TriCore işlemcisi tarafından kullanılır.
+CV_TRI_ * Infineon teknolojileri TriCore işlemcisi tarafından kullanılan kaydeder.
 
-CV_AM33_*  
-Yazmaçları Matsushita/Panasonic AM33 tarafından kullanılan ve işlemciler ilgili.
+Kayıtları CV_AM33_ * Matsushita/Panasonic AM33 tarafından kullanılan ve işlemciler ilgili.
 
-CV_M32R_*  
-Mitsubishi M32R işlemcisi tarafından kullanılan kaydeder.
+CV_M32R_ * Mitsubishi M32R işlemcisi tarafından kullanılan kaydeder.
 
 ## <a name="remarks"></a>Açıklamalar
 Her işlemci türü kendi benzersiz yazmaç kümesini kullanır.
@@ -461,9 +450,9 @@ Bu numaralandırma değerleri için aşağıdaki yöntemlerden geçirilir:
 Üstbilgi: cvconst.h
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [Enumerations and Structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

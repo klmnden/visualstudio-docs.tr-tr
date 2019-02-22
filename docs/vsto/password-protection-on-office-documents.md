@@ -16,29 +16,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 062196206d881ebb5a10f4bd7b14d892dbbbe0e9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872215"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631061"
 ---
 # <a name="password-protection-on-office-documents"></a>Office belgelerinde parola koruması
-  Böylece bunlar parola bilmeyen kişi tarafından açılamıyor, Microsoft Office Word belgelerini ve Microsoft Office Excel çalışma kitaplarını parola ayarlamak mümkündür. Bu seçenek olarak adlandırılan **açık parola**.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
- Mevcut belgeler ve sahip çalışma kitaplarını kullanarak belge düzeyinde projeler oluşturabilir **açık parola** etkin. Visual Studio'da olan Word ve Excel belgeleri için farklı bir davranıştır **açık parola** etkin.  
-  
- Etkinleştirme hakkında bilgi için **açık parola**, Word veya Excel'deki yardımına bakın.  
-  
-## <a name="behavior-of-excel-and-word"></a>Excel ve Word davranışı  
- Visual Studio'da olan her bir Excel çalışma kitabını açtığınızda **açık parola** etkin Excel parolasını ister. Çözümünüzü oluşturduğunuzda belge derleme sırasında açık olduğundan, parolasını yeniden istenir.  
-  
- İlk kez açtığınızda bir Word belgesi Visual Studio'da sahip **açık parola** etkin, Word için parolayı ister. Parolanızı başarıyla girdikten sonra **açık parola** belgeden kaldırılır ve belgeyi açmayı parola artık gerekir. Çözümünüzde belgenin istiyorsanız, önce bir parola gerektirecek şekilde açılabilir, etkinleştirmelisiniz **açık parola** , son derlemeden sonra ve çözümü dağıtmadan önce.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
- [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)  
+  Böylece bunlar parola bilmeyen kişi tarafından açılamıyor, Microsoft Office Word belgelerini ve Microsoft Office Excel çalışma kitaplarını parola ayarlamak mümkündür. Bu seçenek olarak adlandırılan **açık parola**.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+ Mevcut belgeler ve sahip çalışma kitaplarını kullanarak belge düzeyinde projeler oluşturabilir **açık parola** etkin. Visual Studio'da olan Word ve Excel belgeleri için farklı bir davranıştır **açık parola** etkin.
+
+ Etkinleştirme hakkında bilgi için **açık parola**, Word veya Excel'deki yardımına bakın.
+
+## <a name="behavior-of-excel-and-word"></a>Excel ve Word davranışı
+ Visual Studio'da olan her bir Excel çalışma kitabını açtığınızda **açık parola** etkin Excel parolasını ister. Çözümünüzü oluşturduğunuzda belge derleme sırasında açık olduğundan, parolasını yeniden istenir.
+
+ İlk kez açtığınızda bir Word belgesi Visual Studio'da sahip **açık parola** etkin, Word için parolayı ister. Parolanızı başarıyla girdikten sonra **açık parola** belgeden kaldırılır ve belgeyi açmayı parola artık gerekir. Çözümünüzde belgenin istiyorsanız, önce bir parola gerektirecek şekilde açılabilir, etkinleştirmelisiniz **açık parola** , son derlemeden sonra ve çözümü dağıtmadan önce.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)
+- [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Nasıl yapılır: Kodun kısıtlı izinle belgelerin arkasında çalışmasına izin](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)

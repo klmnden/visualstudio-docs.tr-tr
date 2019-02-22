@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e93a249572c34d801426b9919a274aa133639a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963729"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618685"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Nasıl yapılır: Ek izleme seçeneklerini belirtme
 
@@ -41,5 +41,5 @@ ms.locfileid: "54963729"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)  
-[Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)
+[komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)

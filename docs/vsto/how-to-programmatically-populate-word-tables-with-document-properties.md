@@ -13,88 +13,88 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfc5885ffc3c16c937781b991e1d8d83b632bbb6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862856"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631594"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Nasıl yapılır: Belge özellikleriyle Word tablolarını program aracılığıyla doldurma
-  Aşağıdaki örnek, belgenin üst kısmında bir Microsoft Office Word tablo oluşturur ve ana belgenin özellikleri ile doldurur.  
-  
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="populate-tables-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesinde tablolarını doldurma  
-  
-### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Bir tablo oluşturun ve belge özellikleri ile doldurmak için  
-  
-1. Belgenin üst kısmında için aralığı ayarlayın.  
-  
+  Aşağıdaki örnek, belgenin üst kısmında bir Microsoft Office Word tablo oluşturur ve ana belgenin özellikleri ile doldurur.
+
+ [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="populate-tables-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesinde tablolarını doldurma
+
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Bir tablo oluşturun ve belge özellikleri ile doldurmak için
+
+1. Belgenin üst kısmında için aralığı ayarlayın.
+
     [!code-vb[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#90)]
-    [!code-csharp[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#90)]  
-  
-2. Tablo için bir başlık ekleyin ve paragraf işaretleri ekleyin.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#90)]
+
+2. Tablo için bir başlık ekleyin ve paragraf işaretleri ekleyin.
+
     [!code-vb[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#91)]
-    [!code-csharp[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#91)]  
-  
-3. Tablo aralığı belge ekleyin.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#91)]
+
+3. Tablo aralığı belge ekleyin.
+
     [!code-vb[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#92)]
-    [!code-csharp[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#92)]  
-  
-4. Tabloyu biçimlendirme ve stil uygulayabilirsiniz.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#92)]
+
+4. Tabloyu biçimlendirme ve stil uygulayabilirsiniz.
+
     [!code-vb[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#93)]
-    [!code-csharp[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#93)]  
-  
-5. Belge özellikleri hücrelere ekleyin.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#93)]
+
+5. Belge özellikleri hücrelere ekleyin.
+
     [!code-vb[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#94)]
-    [!code-csharp[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#94)]  
-  
-   Aşağıdaki örnek, tam bir yordam gösterir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomation#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#94)]
+
+   Aşağıdaki örnek, tam bir yordam gösterir. Bu kodu kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.
+
    [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
-   [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
-  
-## <a name="populate-tables-in-a-vsto-add-in"></a>Bir VSTO eklentisi tablolarında Doldur  
-  
-### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Bir tablo oluşturun ve belge özellikleri ile doldurmak için  
-  
-1. Belgenin üst kısmında için aralığı ayarlayın.  
-  
+   [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]
+
+## <a name="populate-tables-in-a-vsto-add-in"></a>Bir VSTO eklentisi tablolarında Doldur
+
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>Bir tablo oluşturun ve belge özellikleri ile doldurmak için
+
+1. Belgenin üst kısmında için aralığı ayarlayın.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#90)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#90)]  
-  
-2. Tablo için bir başlık ekleyin ve paragraf işaretleri ekleyin.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#90](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#90)]
+
+2. Tablo için bir başlık ekleyin ve paragraf işaretleri ekleyin.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#91)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#91)]  
-  
-3. Tablo aralığı belge ekleyin.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#91](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#91)]
+
+3. Tablo aralığı belge ekleyin.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#92)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#92)]  
-  
-4. Tabloyu biçimlendirme ve stil uygulayabilirsiniz.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#92](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#92)]
+
+4. Tabloyu biçimlendirme ve stil uygulayabilirsiniz.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#93)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#93)]  
-  
-5. Belge özellikleri hücrelere ekleyin.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#93](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#93)]
+
+5. Belge özellikleri hücrelere ekleyin.
+
     [!code-vb[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#94)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#94)]  
-  
-   Aşağıdaki örnek, tam bir yordam gösterir. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.  
-  
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#94](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#94)]
+
+   Aşağıdaki örnek, tam bir yordam gösterir. Bu kodu kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
+
    [!code-vb[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#89)]
-   [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Nasıl yapılır: Program aracılığıyla Word tabloları oluşturma](../vsto/how-to-programmatically-create-word-tables.md)   
- [Nasıl yapılır: Metin ve biçimlendirme Word tablolarında hücrelere program aracılığıyla ekleme](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Nasıl yapılır: Word tablolarına program aracılığıyla satır ve sütun ekleme](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)  
+   [!code-csharp[Trin_VstcoreWordAutomationAddIn#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#89)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Nasıl yapılır: Program aracılığıyla Word tabloları oluşturma](../vsto/how-to-programmatically-create-word-tables.md)
+- [Nasıl yapılır: Metin ve biçimlendirme Word tablolarında hücrelere program aracılığıyla ekleme](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
+- [Nasıl yapılır: Word tablolarına program aracılığıyla satır ve sütun ekleme](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md)

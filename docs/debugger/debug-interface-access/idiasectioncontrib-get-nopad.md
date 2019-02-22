@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402cd3840e78785ca9cda755b5e7e33e33d7db36
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51fb2c4ff2f27cee8fcc989139f5ae14c2641394
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999697"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642150"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-Bölüm sonraki bellek sınırına sıfır değil olup olmadığını belirten bir bayrak alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT get_nopad(  
-   BOOL* pRetVal  
-};  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pRetVal`  
- [out] Döndürür `TRUE` bölümü sonraki bellek sınırına; sıfır değil, aksi halde döndürür `FALSE`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu, genellikle yalnızca eski dosyaları görülen bir özelliktir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Bölüm sonraki bellek sınırına sıfır değil olup olmadığını belirten bir bayrak alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT get_nopad(
+   BOOL* pRetVal
+};
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pRetVal`
+
+[out] Döndürür `TRUE` bölümü sonraki bellek sınırına; sıfır değil, aksi halde döndürür `FALSE`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa bu özelliği desteklenmiyor. Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu, genellikle yalnızca eski dosyaları görülen bir özelliktir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

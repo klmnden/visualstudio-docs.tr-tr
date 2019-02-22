@@ -22,62 +22,62 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cdb38211cb41722feb4a63d5038647b8a245643
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 045a7366546e85ad2e9588ce2a14077f8b18a331
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947900"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622962"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild koşullu yapıları
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [olduğunda](../msbuild/when-element-msbuild.md), ve [Aksi takdirde](../msbuild/otherwise-element-msbuild.md) öğeleri.  
-  
-## <a name="use-the-choose-element"></a>Seç öğesi kullanma  
- `Choose` Öğesi içeren bir dizi `When` öğelerle `Condition` bir sonucunu verene kadar yukarıdan aşağıya sırasında test öznitelikleri `true`. Birden fazla ise `When` öğesi değerlendirilen `true`, yalnızca ilki kullanılır. Bir `Otherwise` öğesi, varsa değerlendirilir herhangi bir koşul, bir `When` öğesi değerlendirilen `true`.  
-  
- `Choose` öğeleri alt öğeleri olarak kullanılabilir `Project`, `When` ve `Otherwise` öğeleri. `When` ve `Otherwise` öğeleri olabilir `ItemGroup`, `PropertyGroup`, veya `Choose` alt öğeleri.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte `Choose` ve `When` öğeleri ya da / veya işleme. Projesi için öğeler ve özellikler bağlı olarak değeri ayarlanır `Configuration` özelliği.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <PropertyGroup>  
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
-        <OutputType>Exe</OutputType>  
-        <RootNamespace>ConsoleApplication1</RootNamespace>  
-        <AssemblyName>ConsoleApplication1</AssemblyName>  
-        <WarningLevel>4</WarningLevel>  
-    </PropertyGroup>  
-    <Choose>  
-        <When Condition=" '$(Configuration)'=='Debug' ">  
-            <PropertyGroup>  
-                <DebugSymbols>true</DebugSymbols>  
-                <DebugType>full</DebugType>  
-                <Optimize>false</Optimize>  
-                <OutputPath>.\bin\Debug\</OutputPath>  
-                <DefineConstants>DEBUG;TRACE</DefineConstants>  
-            </PropertyGroup>  
-            <ItemGroup>  
-                <Compile Include="UnitTesting\*.cs" />  
-                <Reference Include="NUnit.dll" />  
-            </ItemGroup>  
-        </When>  
-        <When Condition=" '$(Configuration)'=='retail' ">  
-            <PropertyGroup>  
-                <DebugSymbols>false</DebugSymbols>  
-                <Optimize>true</Optimize>  
-                <OutputPath>.\bin\Release\</OutputPath>  
-                <DefineConstants>TRACE</DefineConstants>  
-            </PropertyGroup>  
-        </When>  
-    </Choose>  
-    <!-- Rest of Project -->  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Öğe Seç (MSBuild)](../msbuild/choose-element-msbuild.md)   
- [Zaman öğesi (MSBuild)](../msbuild/when-element-msbuild.md)   
- [Otherwise öğesi (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] için bir mekanizma sağlar / veya işlem ile [Seç](../msbuild/choose-element-msbuild.md), [olduğunda](../msbuild/when-element-msbuild.md), ve [Aksi takdirde](../msbuild/otherwise-element-msbuild.md) öğeleri.
+
+## <a name="use-the-choose-element"></a>Seç öğesi kullanma
+ `Choose` Öğesi içeren bir dizi `When` öğelerle `Condition` bir sonucunu verene kadar yukarıdan aşağıya sırasında test öznitelikleri `true`. Birden fazla ise `When` öğesi değerlendirilen `true`, yalnızca ilki kullanılır. Bir `Otherwise` öğesi, varsa değerlendirilir herhangi bir koşul, bir `When` öğesi değerlendirilen `true`.
+
+ `Choose` öğeleri alt öğeleri olarak kullanılabilir `Project`, `When` ve `Otherwise` öğeleri. `When` ve `Otherwise` öğeleri olabilir `ItemGroup`, `PropertyGroup`, veya `Choose` alt öğeleri.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnekte `Choose` ve `When` öğeleri ya da / veya işleme. Projesi için öğeler ve özellikler bağlı olarak değeri ayarlanır `Configuration` özelliği.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <OutputType>Exe</OutputType>
+        <RootNamespace>ConsoleApplication1</RootNamespace>
+        <AssemblyName>ConsoleApplication1</AssemblyName>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <Choose>
+        <When Condition=" '$(Configuration)'=='Debug' ">
+            <PropertyGroup>
+                <DebugSymbols>true</DebugSymbols>
+                <DebugType>full</DebugType>
+                <Optimize>false</Optimize>
+                <OutputPath>.\bin\Debug\</OutputPath>
+                <DefineConstants>DEBUG;TRACE</DefineConstants>
+            </PropertyGroup>
+            <ItemGroup>
+                <Compile Include="UnitTesting\*.cs" />
+                <Reference Include="NUnit.dll" />
+            </ItemGroup>
+        </When>
+        <When Condition=" '$(Configuration)'=='retail' ">
+            <PropertyGroup>
+                <DebugSymbols>false</DebugSymbols>
+                <Optimize>true</Optimize>
+                <OutputPath>.\bin\Release\</OutputPath>
+                <DefineConstants>TRACE</DefineConstants>
+            </PropertyGroup>
+        </When>
+    </Choose>
+    <!-- Rest of Project -->
+</Project>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Öğe Seç (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [Zaman öğesi (MSBuild)](../msbuild/when-element-msbuild.md)
+- [Otherwise öğesi (MSBuild)](../msbuild/otherwise-element-msbuild.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)

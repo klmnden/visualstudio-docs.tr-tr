@@ -14,43 +14,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb52456aaa9b74944b400b5c6a39e40341b97d17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: aaeb40e97309a06dfe0f4c0e14a7d032edd563ec
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868517"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645257"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Nasıl yapılır: Bir kısayol menü öğesini SharePoint projelerine ekleme
-  Herhangi bir SharePoint projesine bir kısayol menü öğesi ekleyebilirsiniz. Bir kullanıcı,'nde proje düğümüne sağ tıkladığı zaman menü öğesi görünür **Çözüm Gezgini**.  
-  
- Aşağıdaki adımlar, bir proje uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
-  
-### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Bir kısayol menü öğesini SharePoint projelerine ekleme  
-  
-1.  İçinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> yöntemi, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> uygulama, tanıtıcısını <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> olayı *projectService* parametresi.  
-  
-2.  Sizin için olay işleyicisinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> olay, yeni bir <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> nesnesini <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> veya <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> olay bağımsız değişkenleri parametre koleksiyonu.  
-  
-3.  İçinde <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> yeni olay işleyicisi <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> nesne, istediğiniz kullanıcı kısayol menü öğesine tıkladığında yürütülecek görevleri gerçekleştirin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, bir kısayol menü öğesini SharePoint Proje düğümleri eklemek gösterilmiştir **Çözüm Gezgini**. Kullanıcı bir proje düğümünü sağ tıklatır ve tıkladığında **ileti yazmak için çıkış penceresine** menü öğesi, Visual Studio, bir ileti görüntüler **çıkış** penceresi. Bu örnek, iletiyi görüntülemek için SharePoint Proje hizmeti kullanır. Daha fazla bilgi için [SharePoint Proje hizmetini kullanın](../sharepoint/using-the-sharepoint-project-service.md).  
-  
+  Herhangi bir SharePoint projesine bir kısayol menü öğesi ekleyebilirsiniz. Bir kullanıcı,'nde proje düğümüne sağ tıkladığı zaman menü öğesi görünür **Çözüm Gezgini**.
+
+ Aşağıdaki adımlar, bir proje uzantısı zaten oluşturduğunuzu varsayalım. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md).
+
+### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Bir kısayol menü öğesini SharePoint projelerine ekleme
+
+1.  İçinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> yöntemi, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> uygulama, tanıtıcısını <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> olayı *projectService* parametresi.
+
+2.  Sizin için olay işleyicisinde <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> olay, yeni bir <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> nesnesini <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> veya <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> olay bağımsız değişkenleri parametre koleksiyonu.
+
+3.  İçinde <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> yeni olay işleyicisi <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> nesne, istediğiniz kullanıcı kısayol menü öğesine tıkladığında yürütülecek görevleri gerçekleştirin.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneği, bir kısayol menü öğesini SharePoint Proje düğümleri eklemek gösterilmiştir **Çözüm Gezgini**. Kullanıcı bir proje düğümünü sağ tıklatır ve tıkladığında **ileti yazmak için çıkış penceresine** menü öğesi, Visual Studio, bir ileti görüntüler **çıkış** penceresi. Bu örnek, iletiyi görüntülemek için SharePoint Proje hizmeti kullanır. Daha fazla bilgi için [SharePoint Proje hizmetini kullanın](../sharepoint/using-the-sharepoint-project-service.md).
+
  [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
- [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]  
-  
-## <a name="compile-the-code"></a>Kod derleme  
- Bu örnek aşağıdaki derlemelere başvurular içeren bir sınıf kitaplığı projesi gerektirir:  
-  
+ [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]
+
+## <a name="compile-the-code"></a>Kod derleme
+ Bu örnek aşağıdaki derlemelere başvurular içeren bir sınıf kitaplığı projesi gerektirir:
+
 -   Microsoft.VisualStudio.SharePoint
--     
--   System.ComponentModel.Composition  
-  
-## <a name="deploy-the-extension"></a>Uzantıyı dağıtmak  
- Uzantıyı dağıtmak için oluşturun bir [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer tüm dosyalar için. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
-  
+-
+-   System.ComponentModel.Composition
+
+## <a name="deploy-the-extension"></a>Uzantıyı dağıtmak
+ Uzantıyı dağıtmak için oluşturun bir [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer tüm dosyalar için. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+
 ## <a name="see-also"></a>Ayrıca bkz.
- [SharePoint projeleri genişletme](../sharepoint/extending-sharepoint-projects.md)   
- [Nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
+- [SharePoint projeleri genişletme](../sharepoint/extending-sharepoint-projects.md)
+- [Nasıl yapılır: Bir SharePoint proje uzantısı oluşturma](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
+- [Nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
