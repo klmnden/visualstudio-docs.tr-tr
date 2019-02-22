@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919280"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596744"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>XAML Tasarımcısı’nda proje kodu hatalarını ayıklama veya proje kodunu devre dışı bırakma
 
@@ -88,7 +88,7 @@ Visual Studio, proje kodunu devre dışı bırakıldığında, yer tutucuları g
 ## <a name="control-display-options"></a>Denetim görüntüleme seçenekleri
 
 > [!NOTE]
-> **Denetim görüntüleme seçenekleri** yalnızca Windows 10 Fall Creators Update (derleme 16299) hedefleyen Evrensel Windows platformu uygulamaları için kullanılabilir veya üzeri. **Denetimi görüntüleme seçeneklerini** özelliği Visual Studio 2017 15,9 veya sonraki bir sürümü kullanılabilir. 
+> **Denetim görüntüleme seçenekleri** yalnızca Windows 10 Fall Creators Update (derleme 16299) hedefleyen Evrensel Windows platformu uygulamaları için kullanılabilir veya üzeri. **Denetimi görüntüleme seçeneklerini** özelliği Visual Studio 2017 15,9 veya sonraki bir sürümü kullanılabilir.
 
 XAML Tasarımcısı'nda, yalnızca Windows SDK platform denetimlerini görüntülemek için Denetim görüntüleme seçeneklerini değiştirebilirsiniz. Bu XAML tasarımcının güvenilirliğini artırabilir.
 

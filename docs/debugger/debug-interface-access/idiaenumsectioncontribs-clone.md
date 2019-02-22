@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89c5c7eef010de75165ac6d28e0690fe2e906d00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 46392d87b918a2359d7bf4d9eee14c61b4464006
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999164"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616524"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
-Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT Clone(   
-   IDiaEnumSectionContrib** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- ppenum  
- [out] Döndürür bir [Idiaenumsectioncontribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Numaralandırıcı bir kopyasını içeren nesne. Yinelenen Katkıları olmayan bölüm, yalnızca Numaralandırıcı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Geçerli Numaralandırıcı aynı numaralandırma duruma içeren bir numaralandırıcı oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT Clone( 
+   IDiaEnumSectionContrib** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ ppenum
+
+[out] Döndürür bir [Idiaenumsectioncontribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) Numaralandırıcı bir kopyasını içeren nesne. Yinelenen Katkıları olmayan bölüm, yalnızca Numaralandırıcı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

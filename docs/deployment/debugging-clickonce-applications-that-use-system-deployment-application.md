@@ -17,64 +17,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6254ce933ccfc54f28e8e0e893932a5fbda27a0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981252"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637470"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>System.Deployment.Application kullanan ClickOnce uygulamalarında hata ayıklama
-İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bir uygulamanın nasıl güncelleştirileceğini yapılandırmanıza olanak tanır. Ancak, özelleştirmek ve kullanmak gerekiyorsa Gelişmiş [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım özellikleri tarafından sağlanan dağıtımı nesne modeline erişme gerekecek <xref:System.Deployment.Application>. Kullanabileceğiniz <xref:System.Deployment.Application> API'leri için Gelişmiş görevler gibi:  
-  
-- "Şimdi güncelleştir" seçeneğini oluşturma  
-  
-- Koşullu, isteğe bağlı çeşitli uygulama bileşenleri yükler  
-  
-- Güncelleştirmeleri doğrudan uygulamanın içinde tümleşik  
-  
-- İstemci uygulama her zaman güncel olmasını güvence altına alır  
-  
-  Çünkü <xref:System.Deployment.Application> API'leri iş yalnızca bir uygulama ile dağıtıldığında [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] teknolojisine sahip tek yolu bunların hatalarını ayıklayın kullanarak uygulama dağıtmak için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ekleyebilir ve ardından, hata ayıklama. Hata ayıklayıcının zor olabilir erken yeterince, uygulama başlatıldığında ve debugger iliştirebilmek için önce yürütülür, bu kod genellikle çalıştığı için. Sonu (veya durdurur, Visual Basic projeleri için), güncelleştirme onay kodu veya isteğe bağlı kod önce yerleştirmek için kullanılan bir çözümdür.  
-  
-  Hata ayıklama önerilen tekniği aşağıdaki gibidir:  
-  
-1. Başlamadan önce sembol (.pdb) ve kaynak dosyaları arşivlenmiş emin olun.  
-  
-2. Sürüm 1 uygulama dağıtın.  
-  
-3. Yeni bir boş çözüm oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**, ardından **proje**. İçinde **yeni proje** açık iletişim kutusunu **diğer proje türleri** düğümünü seçip **Visual Studio çözümleri** klasör. İçinde **şablonları** bölmesinde **boş çözüm**.  
-  
-4. Arşivlenen kaynak konumu için bu yeni çözüm özellikleri ekleyin. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve ardından tıklayın **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda **kaynak dosyalarında Hata Ayıkla**, arşivlenen kaynak koduna dizininin eklersiniz. Aksi takdirde, kaynak dosya yollarını .pdb dosyasına kaydedilir. bu yana hata ayıklayıcı güncel olmayan kaynak dosyalarını bulun. Hata ayıklayıcı güncel olmayan kaynak dosyaları kullanıyorsa, kaynak eşleşmeyen bildiren bir ileti görürsünüz.  
-  
-5. Hata ayıklayıcıyı bulabilirsiniz emin *.pdb* dosyaları. Hata ayıklayıcının bunları uygulamanız ile dağıttıysanız, bunları otomatik olarak bulur. Her zaman derlemenin yanındaki önce söz konusu görünüyor. Aksi takdirde, arşiv yolu eklemeniz gerekecektir **sembol dosyası (.pdb) konumlar** (Bu seçenek, erişmek için **Araçları** menüsünde, tıklayın **seçenekleri**, ardından açın **Hata ayıklama** düğüm seçeneğine tıklayıp **sembolleri**).  
-  
-6. Hata ayıklama arasında ne `CheckForUpdate` ve `Download` / `Update` yöntemi çağırır.  
-  
-    Örneğin, bir güncelleştirme kod aşağıdaki gibi olabilir:  
-  
+İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bir uygulamanın nasıl güncelleştirileceğini yapılandırmanıza olanak tanır. Ancak, özelleştirmek ve kullanmak gerekiyorsa Gelişmiş [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım özellikleri tarafından sağlanan dağıtımı nesne modeline erişme gerekecek <xref:System.Deployment.Application>. Kullanabileceğiniz <xref:System.Deployment.Application> API'leri için Gelişmiş görevler gibi:
+
+- "Şimdi güncelleştir" seçeneğini oluşturma
+
+- Koşullu, isteğe bağlı çeşitli uygulama bileşenleri yükler
+
+- Güncelleştirmeleri doğrudan uygulamanın içinde tümleşik
+
+- İstemci uygulama her zaman güncel olmasını güvence altına alır
+
+  Çünkü <xref:System.Deployment.Application> API'leri iş yalnızca bir uygulama ile dağıtıldığında [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] teknolojisine sahip tek yolu bunların hatalarını ayıklayın kullanarak uygulama dağıtmak için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ekleyebilir ve ardından, hata ayıklama. Hata ayıklayıcının zor olabilir erken yeterince, uygulama başlatıldığında ve debugger iliştirebilmek için önce yürütülür, bu kod genellikle çalıştığı için. Sonu (veya durdurur, Visual Basic projeleri için), güncelleştirme onay kodu veya isteğe bağlı kod önce yerleştirmek için kullanılan bir çözümdür.
+
+  Hata ayıklama önerilen tekniği aşağıdaki gibidir:
+
+1. Başlamadan önce sembol (.pdb) ve kaynak dosyaları arşivlenmiş emin olun.
+
+2. Sürüm 1 uygulama dağıtın.
+
+3. Yeni bir boş çözüm oluşturun. Gelen **dosya** menüsünde tıklatın **yeni**, ardından **proje**. İçinde **yeni proje** açık iletişim kutusunu **diğer proje türleri** düğümünü seçip **Visual Studio çözümleri** klasör. İçinde **şablonları** bölmesinde **boş çözüm**.
+
+4. Arşivlenen kaynak konumu için bu yeni çözüm özellikleri ekleyin. İçinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve ardından tıklayın **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda **kaynak dosyalarında Hata Ayıkla**, arşivlenen kaynak koduna dizininin eklersiniz. Aksi takdirde, kaynak dosya yollarını .pdb dosyasına kaydedilir. bu yana hata ayıklayıcı güncel olmayan kaynak dosyalarını bulun. Hata ayıklayıcı güncel olmayan kaynak dosyaları kullanıyorsa, kaynak eşleşmeyen bildiren bir ileti görürsünüz.
+
+5. Hata ayıklayıcıyı bulabilirsiniz emin *.pdb* dosyaları. Hata ayıklayıcının bunları uygulamanız ile dağıttıysanız, bunları otomatik olarak bulur. Her zaman derlemenin yanındaki önce söz konusu görünüyor. Aksi takdirde, arşiv yolu eklemeniz gerekecektir **sembol dosyası (.pdb) konumlar** (Bu seçenek, erişmek için **Araçları** menüsünde, tıklayın **seçenekleri**, ardından açın **Hata ayıklama** düğüm seçeneğine tıklayıp **sembolleri**).
+
+6. Hata ayıklama arasında ne `CheckForUpdate` ve `Download` / `Update` yöntemi çağırır.
+
+    Örneğin, bir güncelleştirme kod aşağıdaki gibi olabilir:
+
    ```vb
-       Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
-           If My.Application.Deployment.IsNetworkDeployed Then  
-  
-               If (My.Application.Deployment.CheckForUpdate()) Then  
-  
-                   My.Application.Deployment.Update()  
-                   Application.Restart()  
-  
-               End If  
-  
-           End If  
-       End Sub  
-   ```  
-  
-7. Sürüm 2 dağıtın.  
-  
-8. Sürüm 2 güncelleştirmesi indirilirken hata ayıklayıcı sürüm 1 uygulamaya iliştirin. Alternatif olarak `System.Diagnostics.Debugger.Break` yöntemi ya da yalnızca `Stop` Visual Basic'te. Elbette, üretim kodunda bu yöntem çağrılarının bırakmamalısınız.  
-  
-    Örneğin, bir Windows Forms uygulaması geliştiriyorsanız ve güncelleştirme mantığı ile bu yöntemin bir olay işleyicisi içinde sahip olduğunuz varsayılır. Düğmeye basıldığında, sonra bir kesme noktası ayarlamak için önce bu hata ayıklamak için yalnızca ekleme (uygun arşivlenmiş dosyayı açın ve orada kesme noktasını ayarlamanız emin olun).  
-  
-   Kullanım <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> çağrılacak özelliği <xref:System.Deployment.Application> yalnızca uygulama dağıtıldığında API'leri; API'leri, hata ayıklama sırasında çağrılmamalıdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- <xref:System.Deployment.Application>
+       Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+           If My.Application.Deployment.IsNetworkDeployed Then
+
+               If (My.Application.Deployment.CheckForUpdate()) Then
+
+                   My.Application.Deployment.Update()
+                   Application.Restart()
+
+               End If
+
+           End If
+       End Sub
+   ```
+
+7. Sürüm 2 dağıtın.
+
+8. Sürüm 2 güncelleştirmesi indirilirken hata ayıklayıcı sürüm 1 uygulamaya iliştirin. Alternatif olarak `System.Diagnostics.Debugger.Break` yöntemi ya da yalnızca `Stop` Visual Basic'te. Elbette, üretim kodunda bu yöntem çağrılarının bırakmamalısınız.
+
+    Örneğin, bir Windows Forms uygulaması geliştiriyorsanız ve güncelleştirme mantığı ile bu yöntemin bir olay işleyicisi içinde sahip olduğunuz varsayılır. Düğmeye basıldığında, sonra bir kesme noktası ayarlamak için önce bu hata ayıklamak için yalnızca ekleme (uygun arşivlenmiş dosyayı açın ve orada kesme noktasını ayarlamanız emin olun).
+
+   Kullanım <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> çağrılacak özelliği <xref:System.Deployment.Application> yalnızca uygulama dağıtıldığında API'leri; API'leri, hata ayıklama sırasında çağrılmamalıdır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+## <a name="see-also"></a>Ayrıca bkz.
+- <xref:System.Deployment.Application>

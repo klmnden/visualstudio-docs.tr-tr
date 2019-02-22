@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069869"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618243"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Uygulamaları oluşturmaya yönelik bir platformdur. MSBuild olarak da bilinen olduğundan, bu altyapı, yapı platformunu nasıl işler ve yazılım yapıları denetleyen bir proje dosyası için bir XML Şeması sağlar. Visual Studio MSBuild kullanır, ancak Visual Studio'ya bağımlı değildir. Çağırarak *msbuild.exe* proje veya çözüm dosya düzenlemek ve Visual Studio'nun yüklü olmayan ortamlarda ürünler oluşturun.
@@ -183,6 +183,6 @@ Daha fazla bilgi için [çoklu hedefleme](../msbuild/msbuild-multitargeting-over
 | [Ek kaynaklar](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | MSBuild hakkında daha fazla bilgi için topluluk ve destek kaynaklarını listeler. |
 
 ## <a name="reference"></a>Başvuru
- [MSBuild başvurusu](../msbuild/msbuild-reference.md) başvuru bilgilerini içeren konulara bağlantılar.
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md) başvuru bilgilerini içeren konulara bağlantılar.
 
- [Sözlük](msbuild-glossary.md) ortak MSBuild terimlerini tanımlar.
+- [Sözlük](msbuild-glossary.md) ortak MSBuild terimlerini tanımlar.

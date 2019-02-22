@@ -14,49 +14,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1a9f73f396fffe93903f4295428a011c5b5e8d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c4f77d0eba4ca974522534c69d554af9d807a9d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042549"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597445"
 ---
 # <a name="createexpinstance-utility"></a>Createexpınstance yardımcı programı
-Kullanım **Createexpınstance** oluşturmak, sıfırlama veya Visual Studio'nun deneysel örneği silmek için yardımcı program. Deneysel örneğinde hata ayıklayın ve Visual Studio uzantıları temel ürünü değiştirmeden test etmek için kullanabilirsiniz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix  
-```  
-  
-## <a name="parameters"></a>Parametreler  
- **/ Oluşturma** deneysel örneği oluşturur.  
-  
- **/ Reset**  
- Deneysel örneği siler ve ardından yeni bir tane oluşturur.  
-  
- **/Clean**  
- Deneysel örneği siler.  
-  
- **/ VSInstance**  
- Kopyalamak için temel Visual Studio örneğini içeren dizinin adı.  
-  
- **/ RootSuffix**  
- Deneysel örneği dizin adının sonuna eklenecek sonek.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Visual Studio uzantısı üzerinde çalışırken, varsayılan deneysel örneğinde açın ve geçerli uzantıyı yüklemek için F5 tuşuna basabilirsiniz. Deneysel örnek varsa, varsayılan ayarlara sahip bir Visual Studio oluşturur.  
-  
- Deneysel örneği varsayılan konumu, Visual Studio sürüm sayısına bağlıdır. Örneğin, Visual Studio 2015 için konumdur *%localappdata%\Microsoft\VisualStudio\14.0Exp\\*. Tüm dosyaları dizin konumu, örnek bir parçası olarak kabul edilir. Dizin adı varsayılan konuma değiştirilmediği sürece, herhangi bir ek deneysel örneği Visual Studio tarafından yüklenmez.  
-  
- Visual Studio deneysel örneği açıldığında, sistem kayıt defteri erişimi yoktur. Bu, kullanılan kayıt defteri kovanını Deneysel bir sürümü Visual Studio'nun önceki sürümlerden farklıdır.  
-  
- **Createexpınstance** yardımcı programı değiştirir **VsRegEx** yardımcı programı.  
-  
- Aşağıdaki örnek, Visual Studio varsayılan Deneysel örneğini sıfırlar:  
-  
- **CreateExpInstance.exe Reset /VSInstance 14.0 = /RootSuffix Exp =**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [VSPackage’lar](../../extensibility/internals/vspackages.md)
+Kullanım **Createexpınstance** oluşturmak, sıfırlama veya Visual Studio'nun deneysel örneği silmek için yardımcı program. Deneysel örneğinde hata ayıklayın ve Visual Studio uzantıları temel ürünü değiştirmeden test etmek için kullanabilirsiniz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix
+```
+
+## <a name="parameters"></a>Parametreler
+ **/ Oluşturma** deneysel örneği oluşturur.
+
+ **/ Sıfırlama** Deneysel örneğini siler ve ardından yeni bir tane oluşturur.
+
+ **/ Clean** Deneysel örneğini siler.
+
+ **/ VSInstance** kopyalamak için temel Visual Studio örneğini içeren dizinin adı.
+
+ **/ RootSuffix** deneysel örneği dizin adının sonuna eklenecek sonek.
+
+## <a name="remarks"></a>Açıklamalar
+ Visual Studio uzantısı üzerinde çalışırken, varsayılan deneysel örneğinde açın ve geçerli uzantıyı yüklemek için F5 tuşuna basabilirsiniz. Deneysel örnek varsa, varsayılan ayarlara sahip bir Visual Studio oluşturur.
+
+ Deneysel örneği varsayılan konumu, Visual Studio sürüm sayısına bağlıdır. Örneğin, Visual Studio 2015 için konumdur *%localappdata%\Microsoft\VisualStudio\14.0Exp\\*. Tüm dosyaları dizin konumu, örnek bir parçası olarak kabul edilir. Dizin adı varsayılan konuma değiştirilmediği sürece, herhangi bir ek deneysel örneği Visual Studio tarafından yüklenmez.
+
+ Visual Studio deneysel örneği açıldığında, sistem kayıt defteri erişimi yoktur. Bu, kullanılan kayıt defteri kovanını Deneysel bir sürümü Visual Studio'nun önceki sürümlerden farklıdır.
+
+ **Createexpınstance** yardımcı programı değiştirir **VsRegEx** yardımcı programı.
+
+ Aşağıdaki örnek, Visual Studio varsayılan Deneysel örneğini sıfırlar:
+
+ **CreateExpInstance.exe Reset /VSInstance 14.0 = /RootSuffix Exp =**
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [VSPackage’lar](../../extensibility/internals/vspackages.md)

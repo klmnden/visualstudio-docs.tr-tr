@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933289"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638991"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Profil oluşturucu komut satırını kullanarak bir .NET hizmetini izleme ve ayrıntılı zamanlama verileri toplama
 
@@ -20,7 +20,7 @@ Bu makalede aracına Visual Studio profil oluşturma araçları komut satırı a
 
 > [!NOTE]
 > Bilgisayar başlatıldıktan sonra hizmeti yeniden başlatılamıyor ise izleme yöntemi ile bir hizmetin profilini oluşturamazsınız, böyle bir hizmet, yalnızca işletim sistemi başlatıldığında başlar.
-> 
+>
 > Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 >
 > Bir profil oluşturma yürütmesine katman etkileşim verileri ekleme, komut satırı profil oluşturma araçları ile özel yordamlar gerektirir. Bkz: [katman etkileşim verileri toplama](../profiling/adding-tier-interaction-data-from-the-command-line.md).
@@ -108,5 +108,5 @@ Yeni ortam ayarlarının uygulanması için bilgisayarı yeniden başlatmanız g
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Profil hizmetler](../profiling/command-line-profiling-of-services.md)  
-[İzleme metodu veri görünümleri](../profiling/instrumentation-method-data-views.md)
+[Profil Hizmetleri](../profiling/command-line-profiling-of-services.md)
+[izleme metodu veri görünümleri](../profiling/instrumentation-method-data-views.md)

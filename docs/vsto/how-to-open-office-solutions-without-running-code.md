@@ -18,39 +18,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47c6d80a6d2d9c9ee63d13eca6bcb8a479ea2aad
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867760"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616137"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma
-  Yönetilen kod uzantıları ile oluşturulan Microsoft Office çözümü son kullanıcı Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği, Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.  
-  
- Ancak, kod çalıştırmadan bir belgeyi açmak için ne zaman isteyebileceğiniz zamanlar vardır. Örneğin, belge açıldığında çalıştırılan kod içeriği değiştirebilir, ancak önce kod değişiklikleri, belgenin görünümünü güncelleştirmek istediğiniz. Belirli bilgiler belge içinde göndermek isteyebilirsiniz veya kod çalıştırın ve büyük olasılıkla içeriği alter istiyor musunuz.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
- Bir belge veya bütünleştirilmiş kodu çalıştırmadan yönetilen kod uzantıları içeren çalışma kitabını açmak için birkaç yolu vardır.  
-  
-## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Shift tuşunu kullanarak derleme atlamak için  
-  
--   Açık belgeler ve çalışma kitaplarından **dosya** menüsünü tutarken **Shift** Word ve Excel belge açılırken başlatma olayları oluşturma önlemek için anahtarı.  
-  
-    > [!NOTE]  
-    >  Bir belge veya çalışma kitabından açarsanız **Başlarken** görev bölmesi, basılı **Shift** kodu atlamaz. Ayrıca SHIFT tuşunu basılı olayları belge açıldıktan sonra gerçekleştirilen engellemez.  
-  
-     Bu yöntem, kodu çalıştıran ve belgeyi değiştirmeden olmadan değişiklik yapmak için bir belge açmak istiyorsanız kullanışlıdır.  
-  
-## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Yeniden adlandırma veya kaldırmadan bir derlemenin atlamak için  
-  
--   Derleme bulunduğu bilgisayarda gerekli izinlere sahipseniz, yeniden adlandırabilir veya belge veya çalışma kitabı bulunamıyor derlemeyi kaldırın. Bu, Office belge her açıldığında gerçekleştirilen hatayla sonuçlanır.  
-  
-     Çözüm, birden çok kişi tarafından kullanılıyorsa, bu yöntem çözümü için tümünün çalışmasını engeller. Bu sorun kod veya başvurulan bir sunucu bulunan ve tüm kullanıcıların yürütme engellemek istiyorsanız yararlı olabilir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)   
- [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)   
- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)   
- [Office çözümlerinde uygulama ve dağıtım bildirimleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
+  Yönetilen kod uzantıları ile oluşturulan Microsoft Office çözümü son kullanıcı Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği, Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.
+
+ Ancak, kod çalıştırmadan bir belgeyi açmak için ne zaman isteyebileceğiniz zamanlar vardır. Örneğin, belge açıldığında çalıştırılan kod içeriği değiştirebilir, ancak önce kod değişiklikleri, belgenin görünümünü güncelleştirmek istediğiniz. Belirli bilgiler belge içinde göndermek isteyebilirsiniz veya kod çalıştırın ve büyük olasılıkla içeriği alter istiyor musunuz.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+ Bir belge veya bütünleştirilmiş kodu çalıştırmadan yönetilen kod uzantıları içeren çalışma kitabını açmak için birkaç yolu vardır.
+
+## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Shift tuşunu kullanarak derleme atlamak için
+
+-   Açık belgeler ve çalışma kitaplarından **dosya** menüsünü tutarken **Shift** Word ve Excel belge açılırken başlatma olayları oluşturma önlemek için anahtarı.
+
+    > [!NOTE]
+    >  Bir belge veya çalışma kitabından açarsanız **Başlarken** görev bölmesi, basılı **Shift** kodu atlamaz. Ayrıca SHIFT tuşunu basılı olayları belge açıldıktan sonra gerçekleştirilen engellemez.
+
+     Bu yöntem, kodu çalıştıran ve belgeyi değiştirmeden olmadan değişiklik yapmak için bir belge açmak istiyorsanız kullanışlıdır.
+
+## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Yeniden adlandırma veya kaldırmadan bir derlemenin atlamak için
+
+-   Derleme bulunduğu bilgisayarda gerekli izinlere sahipseniz, yeniden adlandırabilir veya belge veya çalışma kitabı bulunamıyor derlemeyi kaldırın. Bu, Office belge her açıldığında gerçekleştirilen hatayla sonuçlanır.
+
+     Çözüm, birden çok kişi tarafından kullanılıyorsa, bu yöntem çözümü için tümünün çalışmasını engeller. Bu sorun kod veya başvurulan bir sunucu bulunan ve tüm kullanıcıların yürütme engellemek istiyorsanız yararlı olabilir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)
+- [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)
+- [Office çözümleri oluşturma ve tasarlama](../vsto/designing-and-creating-office-solutions.md)
+- [Office çözümlerinde uygulama ve dağıtım bildirimleri](../vsto/application-and-deployment-manifests-in-office-solutions.md)

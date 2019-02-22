@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb0d126616827e496abc9cf45d4f54444c94a238
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958829"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596392"
 ---
 # <a name="cores-view-timeline"></a>Çekirdekler görünümü zaman çizelgesi
-Her satırda bir zaman çizelgesi profili oluşturulmuş sistemdeki bir mantıksal işlemci çekirdeği temsil eder. Her satır için yatay ekseni hangi iş parçacığının zaman içinde belirli bir noktada mantıksal çekirdek üzerinde çalıştığı gösterir. Bir renk ilgilendiğiniz iş parçacığı tanımlayan bir araç ipucu döndürmek için bir zaman çizelgesindeki üzerine gelerek. İş parçacığı kimliği yardımcı olmak için ne her rengidir pencerenin alt kısmındaki gösterge gösterir. Yakınlaştırma ve uzaklaştırma tıklatarak ve sürükleyerek veya CTRL tuşuna basarak ve fare tekerleğini taşımak için Yakınlaştırma aracını kullanın. Çekirdekler görünümü ve iş parçacıkları görünümü arasında geçiş yaptığınızda yakınlaştırma tutarlılık korunur.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Çekirdekler görünümü](../profiling/cores-view.md)   
- [Yakınlaştırma Denetimi (iş parçacıkları görünümü)](../profiling/zoom-control-threads-view.md)
+Her satırda bir zaman çizelgesi profili oluşturulmuş sistemdeki bir mantıksal işlemci çekirdeği temsil eder. Her satır için yatay ekseni hangi iş parçacığının zaman içinde belirli bir noktada mantıksal çekirdek üzerinde çalıştığı gösterir. Bir renk ilgilendiğiniz iş parçacığı tanımlayan bir araç ipucu döndürmek için bir zaman çizelgesindeki üzerine gelerek. İş parçacığı kimliği yardımcı olmak için ne her rengidir pencerenin alt kısmındaki gösterge gösterir. Yakınlaştırma ve uzaklaştırma tıklatarak ve sürükleyerek veya CTRL tuşuna basarak ve fare tekerleğini taşımak için Yakınlaştırma aracını kullanın. Çekirdekler görünümü ve iş parçacıkları görünümü arasında geçiş yaptığınızda yakınlaştırma tutarlılık korunur.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Çekirdekler Görünümü](../profiling/cores-view.md)
+- [Yakınlaştırma Denetimi (iş parçacıkları görünümü)](../profiling/zoom-control-threads-view.md)

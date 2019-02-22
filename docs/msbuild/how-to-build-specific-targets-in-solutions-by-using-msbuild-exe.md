@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937372"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610456"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Nasıl yapılır: MSBuild.exe kullanarak çözümlerde belirli hedefleri derleme
-Kullanabileceğiniz *MSBuild.exe* belirli projelerin bir çözümde belirli hedefler oluşturmak için.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Belirli bir hedef bir çözümde belirli bir proje oluşturmak için  
-  
-1.  Komut satırında `MSBuild.exe <SolutionName>.sln`burada `<SolutionName>` yürütmek istediğiniz hedef içeren çözüm dosya adına karşılık gelir.  
-  
+Kullanabileceğiniz *MSBuild.exe* belirli projelerin bir çözümde belirli hedefler oluşturmak için.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Belirli bir hedef bir çözümde belirli bir proje oluşturmak için
+
+1.  Komut satırında `MSBuild.exe <SolutionName>.sln`burada `<SolutionName>` yürütmek istediğiniz hedef içeren çözüm dosya adına karşılık gelir.
+
 2. Sonra hedef belirtmek `-target:` geçiş biçiminde \<ProjectName >:\<TargetName >. Proje adı bu karakterlerden herhangi birini içeriyorsa, `%`, `$`, `@`, `;`, `.`, `(`, `)`, veya `'`, bunları değiştirin bir `_` belirtilen Hedef adı.
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek yürütür `Rebuild` hedefinin `NotInSlnFolder` proje ve sonra yürütür `Clean` hedefinin `InSolutionFolder` bulunan proje *Yeniklasör* Çözüm klasörü.  
-  
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek yürütür `Rebuild` hedefinin `NotInSlnFolder` proje ve sonra yürütür `Clean` hedefinin `InSolutionFolder` bulunan proje *Yeniklasör* Çözüm klasörü.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ Kullanabileceğiniz seçenekler incelemek isterseniz, bunu yapmak için MSBuild 
 
 Bu ortam değişkeni bu iç görünüm gerekmedikçe kümesi oluşturun. Bu ayar, çözümünüzün proje derleme sorunlara neden olabilir.
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)   
- [MSBuild başvurusu](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [MSBuild kavramları](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Komut satırı başvurusu](../msbuild/msbuild-command-line-reference.md)
+- [MSBuild başvurusu](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild kavramları](../msbuild/msbuild-concepts.md)

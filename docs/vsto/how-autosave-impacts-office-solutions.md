@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875634"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56601388"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Otomatik kaydetme Office çözümlerini nasıl etkiler?
 
@@ -27,5 +27,4 @@ Otomatik kaydetme, Excel, PowerPoint ve otomatik olarak ve sürekli olarak yapt�
 > Otomatik kaydetme Windows için Masaüstü Word, Excel ve PowerPoint 2017'de kullanıma sunulmuştur ve şu anda Office 365 aboneleri tarafından kullanılabilir. Office 2016 veya önceki kalıcı bir lisans satın aldıysanız, şu anda coauthoring özelliğine erişimi yok. (Excel Online Excel Android, iOS için Excel ve Windows Store Excel Mobile'da desteği bu özellik, ancak.)
 
 ## <a name="see-also"></a>Ayrıca bkz.
-
-[Office çözümleri geliştirme](./developing-office-solutions.md)
+- [Office çözümleri geliştirme](./developing-office-solutions.md)

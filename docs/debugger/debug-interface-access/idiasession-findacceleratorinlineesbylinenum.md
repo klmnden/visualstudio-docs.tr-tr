@@ -10,48 +10,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d963763f341430c92810fe811144212d2cc522e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999723"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611158"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Belirtilen kaynak konum için karşılık gelen satır içi çerçeveler için semboller numaralandırmasını döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
-   IDiaSymbol*           parent,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 colnum,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `parent`  
- [in] Bir `IDiaSymbol` aranacak gereken Hızlandırıcı saplama işlevi karşılık gelir.  
-  
- `file`  
- [in] `IDiaSourceFile` Kaynak konum.  
-  
- `linenum`  
- [in] Kaynak konumun satır numarası.  
-  
- `colnum`  
- [in] Kaynak konumun sütun numarası.  
-  
- `ppResult`  
- [out] Bir işaretçi bir `IDiaEnumLineNumbers` sonucu ile başlatılmış bir arabirim işaretçisi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Idiasession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Belirtilen kaynak konum için karşılık gelen satır içi çerçeveler için semboller numaralandırmasını döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+HRESULT findAcceleratorInlineeLinesByName ( 
+   IDiaSymbol*           parent,
+   IDiaSourceFile*       file,
+   DWORD                 linenum,
+   DWORD                 colnum,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `parent`
+
+[in] Bir `IDiaSymbol` aranacak gereken Hızlandırıcı saplama işlevi karşılık gelir.
+
+ `file`
+
+[in] `IDiaSourceFile` Kaynak konum.
+
+ `linenum`
+
+[in] Kaynak konumun satır numarası.
+
+ `colnum`
+
+[in] Kaynak konumun sütun numarası.
+
+ `ppResult`
+
+[out] Bir işaretçi bir `IDiaEnumLineNumbers` sonucu ile başlatılmış bir arabirim işaretçisi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

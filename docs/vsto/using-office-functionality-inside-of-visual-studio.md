@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31f15242196949f953b851017b0b70f9ed1d8e2e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862232"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628669"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Visual Studio içinde Office işlevselliğini kullanma
-  Bir belge düzeyi projesi oluşturduğunuzda, belge ve ilişkili uygulama tasarlayın ve doğrudan belge ile çalışmak için Visual Studio içinde barındırılır. Uygulamayı açmak Visual Studio'da Microsoft Office olduğunda, genellikle beklendiği gibi çalışır. Ancak, uygulamanın işlevselliğini bazıları, farklı veya erişilemez.  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
-## <a name="document-protection"></a>Belge koruması  
- Microsoft Office Word ve Microsoft Office Excel belge projelerinizde kullanabileceğiniz koruma özellikleri sunar. Belge, Visual Studio'da açıkken belge koruması etkinleştirilirse, ancak bu, bazı tasarım değişiklikleri yapmasını engelleyebilirsiniz. Daha fazla bilgi için [koruma belge düzeyi çözümlerde belge](../vsto/document-protection-in-document-level-solutions.md).  
-  
-## <a name="information-rights-management"></a>Bilgi Hakları Yönetimi  
- Bilgi Hakları Yönetimi (IRM), Microsoft Office Excel ve Microsoft Office Word'ü de kullanılabilir. IRM, yetkisiz kişilerin hassas bilgileri görmesini veya değiştirmesini önlemeye yardımcı olabilir. Ancak, IRM kodunuzu de çalışmasını engelleyebilir. Daha fazla bilgi için [bilgi hakları yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md).  
-  
-## <a name="password-protection"></a>Parola koruması  
- Böylece bunlar parola bilmeyen kişi tarafından açılamıyor, Microsoft Office Word belgelerini ve Microsoft Office Excel çalışma kitaplarını ayarlanabilir. Parola koruması, Word ve Excel'de farklı şekilde ele alınır ve geliştirme sürecinizin etkileyebilir. Daha fazla bilgi için [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md).  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)   
- [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)   
- [Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma](../vsto/how-to-open-office-solutions-without-running-code.md)  
+  Bir belge düzeyi projesi oluşturduğunuzda, belge ve ilişkili uygulama tasarlayın ve doğrudan belge ile çalışmak için Visual Studio içinde barındırılır. Uygulamayı açmak Visual Studio'da Microsoft Office olduğunda, genellikle beklendiği gibi çalışır. Ancak, uygulamanın işlevselliğini bazıları, farklı veya erişilemez.
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+## <a name="document-protection"></a>Belge koruması
+ Microsoft Office Word ve Microsoft Office Excel belge projelerinizde kullanabileceğiniz koruma özellikleri sunar. Belge, Visual Studio'da açıkken belge koruması etkinleştirilirse, ancak bu, bazı tasarım değişiklikleri yapmasını engelleyebilirsiniz. Daha fazla bilgi için [koruma belge düzeyi çözümlerde belge](../vsto/document-protection-in-document-level-solutions.md).
+
+## <a name="information-rights-management"></a>Bilgi Hakları Yönetimi
+ Bilgi Hakları Yönetimi (IRM), Microsoft Office Excel ve Microsoft Office Word'ü de kullanılabilir. IRM, yetkisiz kişilerin hassas bilgileri görmesini veya değiştirmesini önlemeye yardımcı olabilir. Ancak, IRM kodunuzu de çalışmasını engelleyebilir. Daha fazla bilgi için [bilgi hakları yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md).
+
+## <a name="password-protection"></a>Parola koruması
+ Böylece bunlar parola bilmeyen kişi tarafından açılamıyor, Microsoft Office Word belgelerini ve Microsoft Office Excel çalışma kitaplarını ayarlanabilir. Parola koruması, Word ve Excel'de farklı şekilde ele alınır ve geliştirme sürecinizin etkileyebilir. Daha fazla bilgi için [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Belge düzeyi çözümlerde belge koruması](../vsto/document-protection-in-document-level-solutions.md)
+- [Bilgi Hakları Yönetimine ve yönetilen kod uzantılarına genel bakış](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Office belgelerinde parola koruması](../vsto/password-protection-on-office-documents.md)
+- [Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma](../vsto/how-to-open-office-solutions-without-running-code.md)

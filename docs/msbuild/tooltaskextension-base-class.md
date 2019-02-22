@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010356"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623014"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension taban sınıfı
-Birçok görevi devralacak <xref:Microsoft.Build.Tasks.ToolTaskExtension> öğesinden devralan sınıf <xref:Microsoft.Build.Utilities.ToolTask> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu devralma zincirini aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.  
+Birçok görevi devralacak <xref:Microsoft.Build.Tasks.ToolTaskExtension> öğesinden devralan sınıf <xref:Microsoft.Build.Utilities.ToolTask> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Bu devralma zincirini aktarımlar görevleri birkaç parametre ekler. Bu parametreler, bu belgede listelenir.
 
-## <a name="parameters"></a>Parametreler  
- Aşağıdaki tabloda temel sınıflarının parametreler açıklanmıştır.  
+## <a name="parameters"></a>Parametreler
+ Aşağıdaki tabloda temel sınıflarının parametreler açıklanmıştır.
 
 
 | Parametre | Açıklama |
@@ -48,6 +48,6 @@ Birçok görevi devralacak <xref:Microsoft.Build.Tasks.ToolTaskExtension> öğes
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | İsteğe bağlı `bool` parametresi.<br /><br /> Ayarlandığında `true`, bu görev, komut satırı için bir toplu iş dosyası oluşturur ve bu komutu yürütmek yerine doğrudan komut işleyicisi kullanarak yürütür. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | İsteğe bağlı `bool` parametresi.<br /><br /> Ayarlandığında `true`, görevi yürüttüğünde bu görevi düğümü verir. |
 
-## <a name="see-also"></a>Ayrıca bkz.  
- [Görev başvurusu](../msbuild/msbuild-task-reference.md)   
- [Görevler](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>Ayrıca bkz.
+- [Görev başvurusu](../msbuild/msbuild-task-reference.md)
+- [Görevler](../msbuild/msbuild-tasks.md)

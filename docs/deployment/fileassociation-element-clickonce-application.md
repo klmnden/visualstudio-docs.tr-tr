@@ -15,68 +15,68 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d506fc7023f01d305fee95c52a32f2ea3dafddaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984515"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608311"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; öğesi (ClickOnce uygulaması)
-Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-<fileAssociation  
-    xmlns="urn:schemas-microsoft-com:clickonce.v1"  
-    extension  
-    description  
-    progid  
-    defaultIcon  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
- `fileAssociation` Öğesi, isteğe bağlıdır. Öğe, aşağıdaki özniteliklere sahiptir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`extension`|Gerekli. Uygulamayla ilişkilendirilecek dosya uzantısı.|  
-|`description`|Gerekli. Kabuk tarafından kullanım için dosya türünün açıklaması.|  
-|`progid`|Gerekli. Dosya türü benzersiz olarak tanımlayan ad.|  
-|`defaultIcon`|Gerekli. Bu uzantılı dosyalar için kullanılacak simgeyi belirtir. Simge dosyası kullanılarak belirtilmelidir [ \<Dosya > öğesi](../deployment/file-element-clickonce-application.md) içinde [ \<derleme > öğesi](../deployment/assembly-element-clickonce-application.md) bu öğeyi içeren.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu öğe için bir XML ad alanı başvurusu içermelidir "urn: schemas-microsoft-com:clickonce.v1". Varsa `<fileAssociation>` öğesi kullanılırsa, sonra gelmelidir `<application>` üst öğesinde [ \<derleme > öğesi](../deployment/assembly-element-clickonce-application.md).  
-  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosya ilişkilendirmeleri üzerine yazmaz. Bununla birlikte, ClickOnce uygulaması dosya uzantısı yalnızca geçerli kullanıcı için geçersiz kılabilirsiniz. Bu ClickOnce Uygulama kaldırıldıktan sonra kullanıcı için dosya ilişkilendirmesi ClickOnce siler ve makine başına ilişkisini yeniden etkindir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde gösterilmiştir `fileAssociation` bildiriminde bir uygulamada kullanılarak dağıtılan bir metin düzenleyicisi uygulaması için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ayrıca bu kod örneği içerir [ \<Dosya > öğesi](../deployment/file-element-clickonce-application.md) gerektirdiği `defaultIcon` özniteliği.  
-  
-```xml  
-<file name="text.ico" size="4286">  
-  <hash>  
-    <dsig:Transforms>  
-      <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-    </dsig:Transforms>  
-    <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-    <dsig:DigestValue>0joAqhmfeBb93ZneZv/oTMP2brY=</dsig:DigestValue>  
-  </hash>  
-</file>  
-<file name="writing.ico" size="9662">  
-  <hash>  
-    <dsig:Transforms>  
-      <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />  
-    </dsig:Transforms>  
-    <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-    <dsig:DigestValue>2cL2U7cm13nG40v9MQdxYKazIwI=</dsig:DigestValue>  
-  </hash>  
-</file>  
-<fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".text" description="Text  Document (ClickOnce)" progid="Text.Document" defaultIcon="text.ico" />  
-<fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)
+Uygulamayla ilişkilendirilecek bir dosya uzantısı tanımlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+<fileAssociation
+    xmlns="urn:schemas-microsoft-com:clickonce.v1"
+    extension
+    description
+    progid
+    defaultIcon
+/>
+```
+
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
+ `fileAssociation` Öğesi, isteğe bağlıdır. Öğe, aşağıdaki özniteliklere sahiptir.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`extension`|Gerekli. Uygulamayla ilişkilendirilecek dosya uzantısı.|
+|`description`|Gerekli. Kabuk tarafından kullanım için dosya türünün açıklaması.|
+|`progid`|Gerekli. Dosya türü benzersiz olarak tanımlayan ad.|
+|`defaultIcon`|Gerekli. Bu uzantılı dosyalar için kullanılacak simgeyi belirtir. Simge dosyası kullanılarak belirtilmelidir [ \<Dosya > öğesi](../deployment/file-element-clickonce-application.md) içinde [ \<derleme > öğesi](../deployment/assembly-element-clickonce-application.md) bu öğeyi içeren.|
+
+## <a name="remarks"></a>Açıklamalar
+ Bu öğe için bir XML ad alanı başvurusu içermelidir "urn: schemas-microsoft-com:clickonce.v1". Varsa `<fileAssociation>` öğesi kullanılırsa, sonra gelmelidir `<application>` üst öğesinde [ \<derleme > öğesi](../deployment/assembly-element-clickonce-application.md).
+
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dosya ilişkilendirmeleri üzerine yazmaz. Bununla birlikte, ClickOnce uygulaması dosya uzantısı yalnızca geçerli kullanıcı için geçersiz kılabilirsiniz. Bu ClickOnce Uygulama kaldırıldıktan sonra kullanıcı için dosya ilişkilendirmesi ClickOnce siler ve makine başına ilişkisini yeniden etkindir.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneğinde gösterilmiştir `fileAssociation` bildiriminde bir uygulamada kullanılarak dağıtılan bir metin düzenleyicisi uygulaması için [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Ayrıca bu kod örneği içerir [ \<Dosya > öğesi](../deployment/file-element-clickonce-application.md) gerektirdiği `defaultIcon` özniteliği.
+
+```xml
+<file name="text.ico" size="4286">
+  <hash>
+    <dsig:Transforms>
+      <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+    </dsig:Transforms>
+    <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+    <dsig:DigestValue>0joAqhmfeBb93ZneZv/oTMP2brY=</dsig:DigestValue>
+  </hash>
+</file>
+<file name="writing.ico" size="9662">
+  <hash>
+    <dsig:Transforms>
+      <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+    </dsig:Transforms>
+    <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+    <dsig:DigestValue>2cL2U7cm13nG40v9MQdxYKazIwI=</dsig:DigestValue>
+  </hash>
+</file>
+<fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".text" description="Text  Document (ClickOnce)" progid="Text.Document" defaultIcon="text.ico" />
+<fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce Uygulama bildirimi](../deployment/clickonce-application-manifest.md)

@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d88c8197cc93a2c898ecbf19d52127061b73604
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936583"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597250"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Itemdefinitiongroup öğesi (MSBuild)
 `ItemDefinitionGroup` Öğesi varsayılan olarak uygulanır, projedeki tüm öğeleri meta verileri değerler öğesi tanımları kümesini tanımlamak olanak tanır. Itemdefinitiongroup yerini gerek [CreateItem görevi](../msbuild/createitem-task.md) ve [CreateProperty görevi](../msbuild/createproperty-task.md). Daha fazla bilgi için [öğesi tanımları](../msbuild/item-definitions.md).
 
-\<Proje >  
-\<Itemdefinitiongroup >
+\<Proje > \<Itemdefinitiongroup >
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,5 +82,5 @@ Aşağıdaki kod örneği, iki meta veri öğeleri, m ve n, içinde bir Itemdefi
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)   
-[Öğeler](../msbuild/msbuild-items.md)
+- [Proje dosyası şema başvurusu](../msbuild/msbuild-project-file-schema-reference.md)
+- [Öğeler](../msbuild/msbuild-items.md)

@@ -11,118 +11,118 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b784e10e7f5bb604431625be6467cdee25bd0f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26d76a7977588839b8a61e6293f84cbf62b0a6dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944105"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629202"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Denetim listesi: Eski dil hizmeti oluşturma
-Aşağıdaki denetim listesini için dil hizmeti oluşturmak için gerçekleştirmeniz gereken temel adımlar özetlenmektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici. Dil hizmetleriyle tümleştirmeye yönelik [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], hata ayıklama ifade değerlendiricisi oluşturmanız gerekir. Daha fazla bilgi için [CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) içinde [Visual Studio hata ayıklayıcı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
-  
-## <a name="steps-to-create-a-language-service"></a>Dil hizmeti oluşturma adımları  
-  
-1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> arabirimini gerçekleştirin.  
-  
-    -   VSPackage içinde uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> dil hizmeti sağlamak için arabirim.  
-  
-    -   Dil hizmetinizi tümleşik geliştirme ortamında (IDE) kullanılabilir hale getirmek, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması.  
-  
-2.  Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> ana dil hizmeti sınıfındaki arabirimi.  
-  
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Arabirimi çekirdek düzenleyici ve dil hizmeti arasındaki etkileşimi başlangıç noktasıdır.  
-  
-### <a name="optional-features"></a>İsteğe bağlı özellikler  
- Aşağıdaki özellikler isteğe bağlıdır ve herhangi bir sırada uygulanabilir. Bu özellikler, dil hizmeti işlevselliğini artırır.  
-  
--   Söz dizimi renklendirmesi  
-  
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimini gerçekleştirin. Uygulamanız bu arabirimin uygun renk bilgilerini döndürmek için ayrıştırıcı bilgileri gerekir.  
-  
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Yöntemi döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimi. Uygulamanız gerekir böylece ayrı Renklendirici örneği her metin arabelleği için oluşturulan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ayrı ayrı arabirim. Daha fazla bilgi için [eski dil hizmetinde söz dizimi renklendirmesi](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
-  
--   Kod penceresi  
-  
-     Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> , yeni bir kod penceresi oluşturulduğunda bildirim almak dil hizmetini etkinleştirme için arabirim.  
-  
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Yöntemi döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> arabirimi. Dil hizmeti daha sonra kod penceresinde için özel kullanıcı Arabirimi ekleyebilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>. Dil hizmeti metin görünümü filtre ekleme gibi özel işlemi de yapabilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>.  
-  
--   Metin Görünümü Filtresi  
-  
-     IntelliSense deyim tamamlamada dil hizmetinde sağlamak için metin görünümünü aksi işlemek komutlardan bazıları müdahale gerekir. Bu komutlar komutlarını kesiştirmek için aşağıdaki adımları tamamlayın:  
-  
-    -   Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komut zinciri ve tutamacı Düzenleyici komutlar katılmak için.  
-  
-    -   Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> yöntemi ve geçirin, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> uygulaması.  
-  
-    -   Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> bu komutları artık size geçirilir, böylece görünümden ayırdığınızda yöntemi.  
-   
-    İşlenmesi gereken komutları sağlanan hizmetlere bağlıdır. Daha fazla bilgi için [önemli komutlar için dil hizmeti filtreleri](../../extensibility/internals/important-commands-for-language-service-filters.md).  
-  
+Aşağıdaki denetim listesini için dil hizmeti oluşturmak için gerçekleştirmeniz gereken temel adımlar özetlenmektedir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici. Dil hizmetleriyle tümleştirmeye yönelik [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], hata ayıklama ifade değerlendiricisi oluşturmanız gerekir. Daha fazla bilgi için [CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) içinde [Visual Studio hata ayıklayıcı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
+
+## <a name="steps-to-create-a-language-service"></a>Dil hizmeti oluşturma adımları
+
+1.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> arabirimini gerçekleştirin.
+
+    -   VSPackage içinde uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> dil hizmeti sağlamak için arabirim.
+
+    -   Dil hizmetinizi tümleşik geliştirme ortamında (IDE) kullanılabilir hale getirmek, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> uygulaması.
+
+2.  Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> ana dil hizmeti sınıfındaki arabirimi.
+
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Arabirimi çekirdek düzenleyici ve dil hizmeti arasındaki etkileşimi başlangıç noktasıdır.
+
+### <a name="optional-features"></a>İsteğe bağlı özellikler
+ Aşağıdaki özellikler isteğe bağlıdır ve herhangi bir sırada uygulanabilir. Bu özellikler, dil hizmeti işlevselliğini artırır.
+
+-   Söz dizimi renklendirmesi
+
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimini gerçekleştirin. Uygulamanız bu arabirimin uygun renk bilgilerini döndürmek için ayrıştırıcı bilgileri gerekir.
+
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> Yöntemi döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> arabirimi. Uygulamanız gerekir böylece ayrı Renklendirici örneği her metin arabelleği için oluşturulan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ayrı ayrı arabirim. Daha fazla bilgi için [eski dil hizmetinde söz dizimi renklendirmesi](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).
+
+-   Kod penceresi
+
+     Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> , yeni bir kod penceresi oluşturulduğunda bildirim almak dil hizmetini etkinleştirme için arabirim.
+
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> Yöntemi döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> arabirimi. Dil hizmeti daha sonra kod penceresinde için özel kullanıcı Arabirimi ekleyebilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>. Dil hizmeti metin görünümü filtre ekleme gibi özel işlemi de yapabilirsiniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.OnNewView%2A>.
+
+-   Metin Görünümü Filtresi
+
+     IntelliSense deyim tamamlamada dil hizmetinde sağlamak için metin görünümünü aksi işlemek komutlardan bazıları müdahale gerekir. Bu komutlar komutlarını kesiştirmek için aşağıdaki adımları tamamlayın:
+
+    -   Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> komut zinciri ve tutamacı Düzenleyici komutlar katılmak için.
+
+    -   Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> yöntemi ve geçirin, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> uygulaması.
+
+    -   Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.RemoveCommandFilter%2A> bu komutları artık size geçirilir, böylece görünümden ayırdığınızda yöntemi.
+
+    İşlenmesi gereken komutları sağlanan hizmetlere bağlıdır. Daha fazla bilgi için [önemli komutlar için dil hizmeti filtreleri](../../extensibility/internals/important-commands-for-language-service-filters.md).
+
     > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Arabirim uygulandığında, aynı nesne üzerinde <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi.  
-  
--   Deyim tamamlama  
-  
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> arabirimini gerçekleştirin.  
-  
-     Deyim tamamlama komutunu desteklemez (diğer bir deyişle, <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>) ve çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> yönteminde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> geçirerek arabirimi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> arabirimi. Daha fazla bilgi için [eski dil hizmetinde deyim tamamlama](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).  
-  
--   Yöntem ipuçları  
-  
-     Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> yöntemi ipucu penceresi veri sağlamak için arabirim.  
-  
-     Ne zaman gösterileceğini yöntemi veri ipucu penceresi öğrenmek için gerektiği gibi komutları işlemek için metin Görünümü Filtresi yükleyin. Daha fazla bilgi için [eski dil hizmetinde parametre bilgisi](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).  
-  
--   Hata işaretçileri  
-  
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirimini gerçekleştirin.  
-  
-     Uygulayan işaret nesneler oluşturma hatası <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirimi ve çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> yöntemini <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> hata işaretçisi nesnenin arabirimi.  
-  
-     Genellikle her hata işaret görev listesi penceresindeki bir öğeyi yönetir.  
-  
--   Görev listesi öğeleri  
-  
-     Bir görev öğesi sınıfı sağlayarak uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> arabirimi.  
-  
-     Bir görev sağlayıcı sınıfı sağlayarak uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> arabirimi ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> arabirimi.  
-  
-     Bir görev Numaralandırıcı sınıfı sağlayarak uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> arabirimi.  
-  
-     Görev listesi ile görev sağlayıcıyı kaydetmek <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> yöntemi.  
-  
-     Elde <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> dil hizmetin hizmet sağlayıcısı GUID hizmetiyle çağırarak arabirim <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>.  
-  
-     Görev öğesi nesneleri ve çağrı oluşturma <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> yönteminde <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> arabirim olduğunda yeni veya güncelleştirilmiş görevler.  
-  
--   Yorum görev öğeleri  
-  
-     Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> arabirimi ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> yorum görev belirteçleri elde etmek için arabirim.  
-  
-     Elde bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> alanından arabirim <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> hizmeti.  
-  
-     Elde <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> alanından arabirim <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> yöntemi.  
-  
-     Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> belirteci listesindeki değişiklikleri dinlemek için arabirim.  
-  
--   Anahat Oluşturma  
-  
-     Ana hat oluşturmayı desteklemek için birkaç seçenek vardır. Örneğin, destekleyebilir **tanımlara Daralt** komutu, anahat Düzenleyicisi tarafından denetlenen bölgeleri sağlayın veya istemci tarafından denetlenen bölgeleri destekler. Daha fazla bilgi için [nasıl yapılır: Eski dil hizmetinde genişletilmiş ana hat oluşturma desteği sağlamak](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
-  
--   Dil hizmeti kaydı  
-  
-     Dil hizmeti kaydetme hakkında daha fazla bilgi için bkz. [eski dil hizmeti kayıt](../../extensibility/internals/registering-a-legacy-language-service2.md) ve [VSPackage'ları yönetme](../../extensibility/managing-vspackages.md).  
-  
--   Bağlama duyarlı Yardım  
-  
-     Aşağıdaki yollardan biriyle Düzenleyici bağlam sağlayın:  
-  
-    -   Bağlam için metin işaretçileri uygulayarak sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi.  
-  
-    -   Tüm kullanıcı bağlamı uygulama tarafından sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> arabirimi.  
-   
-## <a name="see-also"></a>Ayrıca bkz.  
- [Eski dil hizmeti geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Arabirim uygulandığında, aynı nesne üzerinde <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi.
+
+-   Deyim tamamlama
+
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> arabirimini gerçekleştirin.
+
+     Deyim tamamlama komutunu desteklemez (diğer bir deyişle, <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>) ve çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> yönteminde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> geçirerek arabirimi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> arabirimi. Daha fazla bilgi için [eski dil hizmetinde deyim tamamlama](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).
+
+-   Yöntem ipuçları
+
+     Uygulama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> yöntemi ipucu penceresi veri sağlamak için arabirim.
+
+     Ne zaman gösterileceğini yöntemi veri ipucu penceresi öğrenmek için gerektiği gibi komutları işlemek için metin Görünümü Filtresi yükleyin. Daha fazla bilgi için [eski dil hizmetinde parametre bilgisi](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).
+
+-   Hata işaretçileri
+
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirimini gerçekleştirin.
+
+     Uygulayan işaret nesneler oluşturma hatası <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirimi ve çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> yöntemini <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> hata işaretçisi nesnenin arabirimi.
+
+     Genellikle her hata işaret görev listesi penceresindeki bir öğeyi yönetir.
+
+-   Görev listesi öğeleri
+
+     Bir görev öğesi sınıfı sağlayarak uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskItem> arabirimi.
+
+     Bir görev sağlayıcı sınıfı sağlayarak uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider> arabirimi ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> arabirimi.
+
+     Bir görev Numaralandırıcı sınıfı sağlayarak uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumTaskItems> arabirimi.
+
+     Görev listesi ile görev sağlayıcıyı kaydetmek <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RegisterTaskProvider%2A> yöntemi.
+
+     Elde <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> dil hizmetin hizmet sağlayıcısı GUID hizmetiyle çağırarak arabirim <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList>.
+
+     Görev öğesi nesneleri ve çağrı oluşturma <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList.RefreshTasks%2A> yönteminde <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> arabirim olduğunda yeni veya güncelleştirilmiş görevler.
+
+-   Yorum görev öğeleri
+
+     Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> arabirimi ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> yorum görev belirteçleri elde etmek için arabirim.
+
+     Elde bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo> alanından arabirim <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> hizmeti.
+
+     Elde <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumCommentTaskTokens> alanından arabirim <xref:Microsoft.VisualStudio.Shell.Interop.IVsCommentTaskInfo.EnumTokens%2A> yöntemi.
+
+     Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> belirteci listesindeki değişiklikleri dinlemek için arabirim.
+
+-   Anahat Oluşturma
+
+     Ana hat oluşturmayı desteklemek için birkaç seçenek vardır. Örneğin, destekleyebilir **tanımlara Daralt** komutu, anahat Düzenleyicisi tarafından denetlenen bölgeleri sağlayın veya istemci tarafından denetlenen bölgeleri destekler. Daha fazla bilgi için [nasıl yapılır: Eski dil hizmetinde genişletilmiş ana hat oluşturma desteği sağlamak](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).
+
+-   Dil hizmeti kaydı
+
+     Dil hizmeti kaydetme hakkında daha fazla bilgi için bkz. [eski dil hizmeti kayıt](../../extensibility/internals/registering-a-legacy-language-service2.md) ve [VSPackage'ları yönetme](../../extensibility/managing-vspackages.md).
+
+-   Bağlama duyarlı Yardım
+
+     Aşağıdaki yollardan biriyle Düzenleyici bağlam sağlayın:
+
+    -   Bağlam için metin işaretçileri uygulayarak sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> arabirimi.
+
+    -   Tüm kullanıcı bağlamı uygulama tarafından sağlamak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> arabirimi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Eski dil hizmeti geliştirme](../../extensibility/internals/developing-a-legacy-language-service.md)
+- [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

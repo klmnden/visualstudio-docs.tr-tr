@@ -18,85 +18,85 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7a9863891d8d7c0e91ba2b7bc243908860d0a5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4cf0d92169974970c041214e53f8a8feb5f07a24
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598043"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Nasıl yapılır: Paket bildirimi oluşturma
-Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Yerelleştirilmiş farklı sürümleri arasında paylaşılan işlevselliği ürün bildirimine gitmeniz gerekir.  
-  
- Paket bildirimleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).  
-  
-## <a name="create-the-package-manifest"></a>Paket bildirimi oluşturma  
-  
-#### <a name="to-create-the-package-manifest"></a>Paket bildirimi oluşturma  
-  
-1.  Önyükleyici paketi için bir dizin oluşturun. Bu örnekte *C:\package*.  
-  
-2.  Yerel ayar adı ile aşağıdaki gibi bir alt dizin oluşturma *tr* İngilizce.  
-  
-3.  Visual Studio'da adlı bir XML dosyası oluşturun *package.xml*ve kaydetmesi *C:\package\en* klasör.  
-  
-4.  Önyükleyici paket adı, bu yerelleştirilmiş paket bildirimi ve isteğe bağlı bir lisans sözleşmesi için kültürü listelemek için XML ekleyin. Aşağıdaki XML değişkenleri kullanır `DisplayName` ve `Culture`, bir sonraki öğe tanımlanır.  
-  
-    ```xml  
-    <Package  
-        xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
-        Name="DisplayName"  
-        Culture="Culture"  
-        LicenseAgreement="eula.txt">  
-    ```  
-  
-5.  Yerel ayara özgü dizindeki tüm dosyaları listelemek için XML ekleyin. Aşağıdaki XML adında bir dosya kullanır *eula.txt* için geçerli olan **tr** yerel ayar.  
-  
-    ```xml  
-    <PackageFiles>  
-      <PackageFile Name="eula.txt"/>  
-    </PackageFiles>  
-    ```  
-  
-6.  Yerelleştirilebilir Dize için önyükleyici paketi tanımlamak için XML ekleyin. Hata dizeleri için aşağıdaki XML ekler **tr** yerel ayar.  
-  
-    ```xml  
-      <Strings>  
-        <String Name="DisplayName">Custom Bootstrapper Package</String>  
-        <String Name="CultureName">en</String>  
-        <String Name="NotAnAdmin">You must be an administrator to install   
-    this package.</String>  
-        <String Name="GeneralFailure">A general error has occurred while   
-    installing this package.</String>  
-    </Strings>  
-    ```  
-  
-7.  Kopyalama *C:\package* Visual Studio önyükleyicisi dizinine klasörü. Visual Studio 2010 için bu, *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages* dizin.  
-  
-## <a name="example"></a>Örnek  
- Paket bildirimi gibi hata iletileri, Yazılım Lisans Koşulları'nı ve dil paketlerinin yerel ayara özgü bilgileri içerir.  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8" ?>  
-<Package  
-  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
-  Name="DisplayName"  
-  Culture="Culture"  
-  LicenseAgreement="eula.txt">  
-  
-  <PackageFiles>  
-    <PackageFile Name="eula.txt"/>  
-  </PackageFiles>  
-  
-  <Strings>  
-    <String Name="DisplayName">Custom Bootstrapper Package</String>  
-    <String Name="Culture">en</String>  
-    <String Name="NotAnAdmin">You must be an administrator to install this package.</String>  
-    <String Name="GeneralFailure">A general error has occurred while   
-installing this package.</String>  
-  </Strings>  
-</Package>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)
+Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Yerelleştirilmiş farklı sürümleri arasında paylaşılan işlevselliği ürün bildirimine gitmeniz gerekir.
+
+ Paket bildirimleri hakkında daha fazla bilgi için bkz. [nasıl yapılır: Ürün bildirimi oluşturma](../deployment/how-to-create-a-product-manifest.md).
+
+## <a name="create-the-package-manifest"></a>Paket bildirimi oluşturma
+
+#### <a name="to-create-the-package-manifest"></a>Paket bildirimi oluşturma
+
+1.  Önyükleyici paketi için bir dizin oluşturun. Bu örnekte *C:\package*.
+
+2.  Yerel ayar adı ile aşağıdaki gibi bir alt dizin oluşturma *tr* İngilizce.
+
+3.  Visual Studio'da adlı bir XML dosyası oluşturun *package.xml*ve kaydetmesi *C:\package\en* klasör.
+
+4.  Önyükleyici paket adı, bu yerelleştirilmiş paket bildirimi ve isteğe bağlı bir lisans sözleşmesi için kültürü listelemek için XML ekleyin. Aşağıdaki XML değişkenleri kullanır `DisplayName` ve `Culture`, bir sonraki öğe tanımlanır.
+
+    ```xml
+    <Package
+        xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+        Name="DisplayName"
+        Culture="Culture"
+        LicenseAgreement="eula.txt">
+    ```
+
+5.  Yerel ayara özgü dizindeki tüm dosyaları listelemek için XML ekleyin. Aşağıdaki XML adında bir dosya kullanır *eula.txt* için geçerli olan **tr** yerel ayar.
+
+    ```xml
+    <PackageFiles>
+      <PackageFile Name="eula.txt"/>
+    </PackageFiles>
+    ```
+
+6.  Yerelleştirilebilir Dize için önyükleyici paketi tanımlamak için XML ekleyin. Hata dizeleri için aşağıdaki XML ekler **tr** yerel ayar.
+
+    ```xml
+      <Strings>
+        <String Name="DisplayName">Custom Bootstrapper Package</String>
+        <String Name="CultureName">en</String>
+        <String Name="NotAnAdmin">You must be an administrator to install
+    this package.</String>
+        <String Name="GeneralFailure">A general error has occurred while
+    installing this package.</String>
+    </Strings>
+    ```
+
+7.  Kopyalama *C:\package* Visual Studio önyükleyicisi dizinine klasörü. Visual Studio 2010 için bu, *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages* dizin.
+
+## <a name="example"></a>Örnek
+ Paket bildirimi gibi hata iletileri, Yazılım Lisans Koşulları'nı ve dil paketlerinin yerel ayara özgü bilgileri içerir.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<Package
+  xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"
+  Name="DisplayName"
+  Culture="Culture"
+  LicenseAgreement="eula.txt">
+
+  <PackageFiles>
+    <PackageFile Name="eula.txt"/>
+  </PackageFiles>
+
+  <Strings>
+    <String Name="DisplayName">Custom Bootstrapper Package</String>
+    <String Name="Culture">en</String>
+    <String Name="NotAnAdmin">You must be an administrator to install this package.</String>
+    <String Name="GeneralFailure">A general error has occurred while
+installing this package.</String>
+  </Strings>
+</Package>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Ürün ve paket şema başvurusu](../deployment/product-and-package-schema-reference.md)

@@ -16,52 +16,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6192c7705555e817ed82d452d703f0affd9609
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932707"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635468"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;derleme&gt; öğesi (ClickOnce dağıtımı)
-Dağıtım bildirimi için üst düzey öğe.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-  
-      <assembly    
-   manifestVersion  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler  
- `assembly` Öğesi kök öğe ve gereklidir. Alt ilk bağımsız öğe olmalıdır bir `assemblyIdentity` öğesi. Bildirim öğeler aşağıdaki alanlarında olmalıdır: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, ve `http://www.w3.org/2000/09/xmldsig#`. Derlemenin alt öğeleri, bu ad alanlarında, devralma veya etiketleme tarafından da olması gerekir.  
-  
- `assembly` Öğesi aşağıdaki özniteliklere sahiptir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`manifestVersion`|Gerekli. Bu öznitelik ayarlanmalıdır `1.0`.|  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde gösterilmiştir bir `assembly` kullanılarak dağıtılan bir uygulama için bir dağıtım bildirimi öğesinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md) konu.  
-  
-```xml  
-<asmv1:assembly   
-  xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
-  manifestVersion="1.0"  
-  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"  
-  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#  
-  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"  
-  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"  
-  xmlns="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"  
-  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"  
-  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"  
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)   
- [\<derleme > öğesi](../deployment/assembly-element-clickonce-application.md)
+Dağıtım bildirimi için üst düzey öğe.
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+
+      <assembly  
+   manifestVersion
+/>
+```
+
+## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
+ `assembly` Öğesi kök öğe ve gereklidir. Alt ilk bağımsız öğe olmalıdır bir `assemblyIdentity` öğesi. Bildirim öğeler aşağıdaki alanlarında olmalıdır: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, ve `http://www.w3.org/2000/09/xmldsig#`. Derlemenin alt öğeleri, bu ad alanlarında, devralma veya etiketleme tarafından da olması gerekir.
+
+ `assembly` Öğesi aşağıdaki özniteliklere sahiptir.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`manifestVersion`|Gerekli. Bu öznitelik ayarlanmalıdır `1.0`.|
+
+## <a name="example"></a>Örnek
+ Aşağıdaki kod örneğinde gösterilmiştir bir `assembly` kullanılarak dağıtılan bir uygulama için bir dağıtım bildirimi öğesinde [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Bu kod örneği için sağlanan daha büyük bir örneğin parçasıdır [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md) konu.
+
+```xml
+<asmv1:assembly
+  xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"
+  manifestVersion="1.0"
+  xmlns:asmv3="urn:schemas-microsoft-com:asm.v3"
+  xmlns:dsig=http://www.w3.org/2000/09/xmldsig#
+  xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1"
+  xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2"
+  xmlns="urn:schemas-microsoft-com:asm.v2"
+  xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"
+  xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [ClickOnce dağıtım bildirimi](../deployment/clickonce-deployment-manifest.md)
+- [\<derleme > öğesi](../deployment/assembly-element-clickonce-application.md)

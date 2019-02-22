@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cfa4afeda38180825a9f17b47a4e959fdac092d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960548"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624899"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>İzlenecek yol: Komut satırı kullanarak örnekleme profili oluşturma
 
@@ -41,7 +41,7 @@ Bu kılavuzda, aşağıdaki adımları izler:
 Örnekleme tarafından belirli bir işlem düzenli aralıklarla etkin işlev belirlemek için yoklanabileceği bir profil oluşturma yöntemidir. Sonuçta elde edilen veriler işlem örneklendiğinde ne sıklıkta işlev çağrı yığının en üstünde olan sayısına sağlar.
 
 > [!NOTE]
->  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.  
+>  Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). 64-bit bilgisayarlarda araçların 64-bit hem 32-bit sürümleri kullanılabilir. Profil oluşturucu komut satırı araçlarını kullanmak için Araçlar yolunu komut istemi penceresinin PATH ortam değişkenine ekleyin veya komutun kendisine eklemeniz gerekir.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Örnekleme yöntemini kullanarak PeopleTrax uygulama profiline
 
@@ -99,8 +99,8 @@ Bu kılavuzda, aşağıdaki adımları izler:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Performans oturumuna genel bakış](../profiling/performance-session-overview.md)  
-[Komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Örnekleme veri değerlerini anlama](../profiling/understanding-sampling-data-values.md)  
-[Performans raporu görünümleri](../profiling/performance-report-views.md)
+[Performans oturumuna genel bakış](../profiling/performance-session-overview.md)
+[komut satırından profil](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[örnekleme verileri anlama değerleri](../profiling/understanding-sampling-data-values.md)
+[performans raporu görünümleri](../profiling/performance-report-views.md)

@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335951"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627954"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure Kubernetes hizmetlerinde hata ayıklama
 
@@ -57,7 +57,7 @@ Bu öğreticide şunları yapacaksınız:
 1. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
 
     * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
-  
+
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
     * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
@@ -67,7 +67,7 @@ Bu öğreticide şunları yapacaksınız:
     ![F5 aşağı açılan menüden snapshot debugger'ı Başlat](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabına sağ tıklayın ve ardından **Snapshot Debugger Ekle**.
-  
+
       ![Anlık görüntü Hata Ayıklayıcı'dan Cloud Explorer başlatma](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]
