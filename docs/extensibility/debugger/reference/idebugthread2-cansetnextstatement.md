@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::CanSetNextStatement | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::CanSetNextStatement
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cee011efedff2cec442e386f32c66d1398b35d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933613"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703051"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Dosyadaki geçerli yönerge işaretçisini belirli bir yığın çerçevesine ayarlayıp ayarlayamayacağını belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT CanSetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
-);  
-```  
-  
-```csharp  
-int CanSetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pStackFrame`  
- Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın. Bu null değeri ise, geçerli yığın çerçevesi kullanın.  
-  
- `pCodeContext`  
- [in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem döndürürse `S_OK`, ardından çağırın [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) gerçekten sonraki deyimi ayarlamak için yöntemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)
+Dosyadaki geçerli yönerge işaretçisini belirli bir yığın çerçevesine ayarlayıp ayarlayamayacağını belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT CanSetNextStatement ( 
+   IDebugStackFrame2*  pStackFrame,
+   IDebugCodeContext2* pCodeContext
+);
+```
+
+```csharp
+int CanSetNextStatement ( 
+   IDebugStackFrame2  pStackFrame,
+   IDebugCodeContext2 pCodeContext
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pStackFrame` Gelecekte kullanılmak üzere ayrılmış; null bir değere ayarlayın. Bu null değeri ise, geçerli yığın çerçevesi kullanın.
+
+ `pCodeContext`
+
+ [in] Bir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) çalıştırılmak üzere kod konumu açıklayan nesne ve onun bağlamı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem döndürürse `S_OK`, ardından çağırın [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) gerçekten sonraki deyimi ayarlamak için yöntemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)

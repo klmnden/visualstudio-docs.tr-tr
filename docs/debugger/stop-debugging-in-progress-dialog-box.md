@@ -19,21 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af69cd07087da19205ede3bc6576f87bd24279c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3b2a3382fe9ac11f07d7fa9ebc5c1bc094cd526
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979029"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719073"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Devam Eden Hata Ayıklamayı Durdur İletişim Kutusu
-Bu iletişim kutusu, hata ayıklama oturumunu durdurmak hata ayıklayıcı çalışırken görünür, ancak oturumunu durdurmak için biraz zaman olan. Hata ayıklama oturumunu durdurmak normalde çok hızlı olması ve bu iletişim kutusunda görünmez. Bazı durumlarda, ayıklanan tüm işlemleri ayırma için ek süre sürer ancak. Birkaç saniye sürer oturum durduruluyor (veya bir ayırma hatası oluşursa), bu iletişim kutusu görüntülenir. Bu sıklıkla ortaya çıkarsa, dahili bir sorun nedeniyle olabilir ve Ürün Destek Hizmetleri'ne başvurun isteyebilirsiniz.  
-  
- İşlemleri ayırma ve kaybolmasını bu iletişim kutusu için bekleyin veya kullanın **artık Durdur** hemen sonlandırılmasına zorlamak için düğme.  
-  
- **Artık Durdur**  
- Anında hata ayıklama oturumunu sona erdirmek için bu düğmeye tıklayın. Kullanarak **artık Durdur** ayıklanan işlemleri ayırma yerine sona erer. Sistem işlemleri hata ayıklaması yapıyorsanız, bu işlemleri ile sonlandırma **artık Durdur** olabilir beklenmedik ve istenmeyen etkiler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Programları ayrılıyor](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))
+Bu iletişim kutusu, hata ayıklama oturumunu durdurmak hata ayıklayıcı çalışırken görünür, ancak oturumunu durdurmak için biraz zaman olan. Hata ayıklama oturumunu durdurmak normalde çok hızlı olması ve bu iletişim kutusunda görünmez. Bazı durumlarda, ayıklanan tüm işlemleri ayırma için ek süre sürer ancak. Birkaç saniye sürer oturum durduruluyor (veya bir ayırma hatası oluşursa), bu iletişim kutusu görüntülenir. Bu sıklıkla ortaya çıkarsa, dahili bir sorun nedeniyle olabilir ve Ürün Destek Hizmetleri'ne başvurun isteyebilirsiniz.
+
+ İşlemleri ayırma ve kaybolmasını bu iletişim kutusu için bekleyin veya kullanın **artık Durdur** hemen sonlandırılmasına zorlamak için düğme.
+
+ **Şimdi durdurmak** hemen hata ayıklama oturumunu sona erdirmek için bu düğmeye tıklayın. Kullanarak **artık Durdur** ayıklanan işlemleri ayırma yerine sona erer. Sistem işlemleri hata ayıklaması yapıyorsanız, bu işlemleri ile sonlandırma **artık Durdur** olabilir beklenmedik ve istenmeyen etkiler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Programları ayrılıyor](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))

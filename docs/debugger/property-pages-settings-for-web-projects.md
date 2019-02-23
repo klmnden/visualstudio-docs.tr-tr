@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 809e84981bc491a89f8e031f5ac8caf497c1a6e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001975"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690532"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web Projeleri Özellik Sayfası Ayarları
-Bir web sitesi hata ayıklama yapılandırmasında özellik ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
-  
+Bir web sitesi hata ayıklama yapılandırmasında özellik ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.
+
 ### <a name="start-options-category"></a>Başlangıç seçenekleri kategorisi
-  
+
 | **Ayar** | **Açıklama** |
 | - | - |
 | **Başlatma eylemi** | Grupları seçenekleri için uygulama başlatma ilgili başlığı. |
@@ -51,6 +51,6 @@ Bir web sitesi hata ayıklama yapılandırmasında özellik ayarları değiştir
 | **Yerel kodda hata ayıklama** | Yerel (yönetilmeyen) Win32 koddaki çağrıları yönetilen uygulamanızın hatalarını ayıklamanızı sağlar. |
 | **SQL Server hata ayıklama** | SQL Server veritabanı nesnelerini hata ayıklamasını sağlar. |
 | **Silverlight'ta hata ayıklama** | Silverlight bileşenleri hata ayıklamasını sağlar. |
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)

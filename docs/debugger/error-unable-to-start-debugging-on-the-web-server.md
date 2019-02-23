@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938468"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688218"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web sunucusunda hata ayıklama başlatılamıyor
 
 Bir Web sunucusunda çalışan bir ASP.NET uygulamasında hata ayıklama kaydetmeye çalıştığında bu hata iletisini alabilirsiniz: `Unable to start debugging on the Web server`.
 
-Genellikle, uygulama havuzları, IIS sıfırlama veya her ikisi de bir güncelleştirme gerektiren bir hata veya yapılandırma değişiklik oluştuğundan bu hata oluşur. Yükseltilmiş bir komut istemi'ni açıp yazarak IIS'yi sıfırlayın `iisreset`. 
+Genellikle, uygulama havuzları, IIS sıfırlama veya her ikisi de bir güncelleştirme gerektiren bir hata veya yapılandırma değişiklik oluştuğundan bu hata oluşur. Yükseltilmiş bir komut istemi'ni açıp yazarak IIS'yi sıfırlayın `iisreset`.
 
 ## <a name="specificerrors"></a>Ayrıntılı hata iletisini nedir?
 
@@ -106,12 +106,12 @@ Ayrıca, HOSTS dosyası kullanıyorsanız, doğru yapılandırıldığından emi
 
 ##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS yapılandırmanızı denetleyin
 
-Bu sorunu çözmek için burada ayrıntıları verilen adımlar aldıktan sonra ve hata ayıklamak yeniden denemeden önce IIS'yi sıfırlayın gerekebilir. Yükseltilmiş bir komut istemi'ni açıp yazarak bunu yapabilirsiniz `iisreset`. 
+Bu sorunu çözmek için burada ayrıntıları verilen adımlar aldıktan sonra ve hata ayıklamak yeniden denemeden önce IIS'yi sıfırlayın gerekebilir. Yükseltilmiş bir komut istemi'ni açıp yazarak bunu yapabilirsiniz `iisreset`.
 
-* Durdur ve, IIS uygulama havuzları yeniden başlatın ve sonra yeniden deneyin. 
+* Durdur ve, IIS uygulama havuzları yeniden başlatın ve sonra yeniden deneyin.
 
     Bir hata nedeniyle uygulama havuzu durdurulmuş. Veya, yaptığınız başka bir yapılandırma değişikliği durdurun ve, uygulama havuzunu yeniden başlatmak gerekebilir.
-    
+
     > [!NOTE]
     > Uygulama havuzu durduruluyor tutar, Denetim Masası'ndan URL yeniden yazma modülü kaldırmanız gerekebilir. Web Platformu Yükleyicisi (Webpı) kullanarak yeniden yükleyebilirsiniz. Önemli sistem yükseltme sonrasında bu sorun oluşabilir.
 
@@ -120,7 +120,7 @@ Bu sorunu çözmek için burada ayrıntıları verilen adımlar aldıktan sonra 
     Uygulama havuzu bir Visual Studio projenize eşleşmeyen ASP.NET sürümü için yapılandırılabilir. Verze technologie ASP.NET uygulama havuzundaki güncelleştirin ve yeniden başlatın. Ayrıntılı bilgi için bkz. [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Ayrıca, parola kimlik bilgileri değiştiyse, uygulama havuzunu veya Web sitesi güncelleştirmeniz gerekebilir.  Uygulama havuzu kimlik bilgilerini güncelleştirme **Gelişmiş Ayarlar > işlem modeli > kimlik**. Web sitesi için kimlik bilgilerini güncelleştirme **temel ayarları > Farklı Bağlan...** . Uygulama havuzu yeniden başlatın.
-    
+
 * Web uygulama klasörünüzdeki doğru izinlere sahip olduğunu denetleyin.
 
     IIS_IUSRS, IUSR, size veya belirli bir kullanıcı ile ilişkili olduğundan emin olun [uygulama havuzu](/iis/manage/configuring-security/application-pool-identities) okuma ve yürütme hakları Web uygulaması klasörü için. Sorunu düzeltip, uygulama havuzu yeniden başlatın.
@@ -128,11 +128,11 @@ Bu sorunu çözmek için burada ayrıntıları verilen adımlar aldıktan sonra 
 * IIS üzerinde ASP.NET doğru sürümünün yüklü olduğundan emin olun.
 
     ASP.NET IIS ve Visual Studio projenize eşleşmeyen sürümleri, bu soruna neden olabilir. Framework sürümü web.config dosyasında ayarlamanız gerekebilir. IIS üzerinde ASP.NET yüklemek için kullanın [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). Ayrıca bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) veya ASP.NET Core [IIS ile Windows Konağında](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 * Yalnızca IP adresi kullanıyorsanız, kimlik doğrulama hatalarını çözümleme
 
      Varsayılan olarak, IP adreslerinin İnternet'e bir parçası olarak kabul edilir ve NTLM kimlik doğrulaması Internet üzerinden yapılmaz. Web sitenizi IIS kimlik doğrulaması gerektirecek şekilde yapılandırıldıysa, bu kimlik doğrulaması başarısız olur. Bu sorunu düzeltmek için IP adresi yerine uzak bilgisayarın adını belirtebilirsiniz.
-     
+
 ## <a name="other-causes"></a>Yol açabilecek diğer nedenler
 
 IIS yapılandırma sorunu neden, aşağıdaki adımları deneyin:
@@ -140,7 +140,7 @@ IIS yapılandırma sorunu neden, aşağıdaki adımları deneyin:
 - Yönetici ayrıcalıklarıyla Visual Studio'yu yeniden başlatın ve yeniden deneyin.
 
     Web dağıtımı kullanarak gibi bazı ASP.NET hata ayıklama senaryoları Visual Studio için yükseltilmiş ayrıcalıklar gerektirir.
-    
+
 - Visual Studio birden çok örneğini kullanıyorsanız, projenize (yönetici ayrıcalıklarıyla) Visual Studio'nun bir örneğinde yeniden açın ve yeniden deneyin.
 
 - İle yerel adresler HOSTS dosyası kullanıyorsanız, makinenin IP adresi yerine geri döngü adresi kullanarak deneyin.
@@ -152,12 +152,12 @@ IIS yapılandırma sorunu neden, aşağıdaki adımları deneyin:
 * Sunucu üzerindeki tarayıcıda localhost sayfa yukarı taşıyın.
 
      IIS doğru yüklü değilse, yazarken hatalar almalısınız `http://localhost` bir tarayıcıda.
-     
+
      IIS'ye dağıtma ile ilgili daha fazla bilgi için bkz: [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ve ASP.NET Core [IIS ile Windows Konağında](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Sunucuda temel bir ASP.NET uygulaması oluşturun (veya bir temel web.config dosyasını kullanın).
 
     Hata ayıklayıcısı ile çalışmak için uygulamanızı alınamıyor, temel bir ASP.NET uygulaması sunucu üzerinde yerel olarak oluşturmayı deneyin ve temel uygulama hatalarını ayıklamayı deneyin. (Varsayılan ASP.NET MVC şablonu kullanmak isteyebilirsiniz.) Temel bir uygulama hatalarını ayıklayabilir, bu iki yapılandırma arasında farklıdır belirlemenize yardımcı olabilir. URL yeniden yazma kuralları gibi ayarları farklılıkları web.config dosyasında arayın.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3d317cf45692a8214f15c1473eb8f781b21451
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450314"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709284"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Bu özelliğin değerini ayarlar ve gerekirse, bir hata iletisi döndürür.
@@ -43,17 +43,21 @@ int SetValueAsStringWithError(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pszValue`  
-[in] Ayarlanacak değer.
+`pszValue`
 
-`dwRadix`  
-[in] Ayarlanan değer sayı tabanı.
+ [in] Ayarlanacak değer.
 
-`dwTimeout`  
-[in] Değeri ayarlamak beklenecek süre (`INFINITE` süresiz bekleme anlamına gelir).
+`dwRadix`
 
-`errorString`  
-[out] Değeri ayarlanırken bir hata varsa, bu başarısızlığın nedenini tutar.
+ [in] Ayarlanan değer sayı tabanı.
+
+`dwTimeout`
+
+ [in] Değeri ayarlamak beklenecek süre (`INFINITE` süresiz bekleme anlamına gelir).
+
+`errorString`
+
+ [out] Değeri ayarlanırken bir hata varsa, bu başarısızlığın nedenini tutar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -167,4 +171,4 @@ HRESULT CProperty::SetValueAsStringWithError(
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

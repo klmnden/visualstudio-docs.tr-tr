@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::WriteDump | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::WriteDump
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4fc77748e456a612130de4b8f814ea7ba491f22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: abafa1e3673a334105e8b8ec6e7957f631f000b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021851"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684214"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-Bir döküm bir dosyaya yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT WriteDump(   
-   DUMPTYPE  DumpType,  
-   LPCOLESTR pszDumpUrl  
-);  
-```  
-  
-```csharp  
-int WriteDump(   
-   enum_DUMPTYPE  DumpType,  
-   string         pszDumpUrl  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `DumpType`  
- [in] Bir değer [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) Örneğin, kısa döküm, türünü belirten sabit listesi veya uzun süre.  
-  
- `pszDumpUrl`  
- [in] Döküm için yazma URL'si. Genellikle, bu biçimindedir `file://c:\path\filename.ext`, ancak geçerli bir URL olabilir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir program dökümü genellikle verilebilir geçerli yığın çerçevesi yığın, program ve program sahip büyük olasılıkla herhangi bir bellek çalışan iş parçacıkları listesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+Bir döküm bir dosyaya yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT WriteDump( 
+   DUMPTYPE  DumpType,
+   LPCOLESTR pszDumpUrl
+);
+```
+
+```csharp
+int WriteDump( 
+   enum_DUMPTYPE  DumpType,
+   string         pszDumpUrl
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `DumpType`
+
+ [in] Bir değer [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) Örneğin, kısa döküm, türünü belirten sabit listesi veya uzun süre.
+
+ `pszDumpUrl`
+
+ [in] Döküm için yazma URL'si. Genellikle, bu biçimindedir `file://c:\path\filename.ext`, ancak geçerli bir URL olabilir.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bir program dökümü genellikle verilebilir geçerli yığın çerçevesi yığın, program ve program sahip büyük olasılıkla herhangi bir bellek çalışan iş parçacıkları listesi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

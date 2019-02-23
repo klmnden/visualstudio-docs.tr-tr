@@ -1,7 +1,7 @@
 ---
 title: dwTYPE_KIND | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - dwTYPE_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5a60939b779fe7377662a267826722b4c916679
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a33bdf1875426898a6db72831bee4d1d7ac1f9a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317386"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689258"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 Yorumlama türünü belirten bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesne.
@@ -43,14 +43,11 @@ public enum enum_dwTYPE_KIND {
 ```
 
 #### <a name="parameters"></a>Parametreler
-TYPE_KIND_METADATA  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) birleşim olarak yorumlanabilir bir [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) yapısı.
+TYPE_KIND_METADATA [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) birleşim olarak yorumlanabilir bir [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) yapısı.
 
-TYPE_KIND_PDB  
-`TYPE_INFO` Birleşim olarak yorumlanabilir bir [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) yapısı.
+TYPE_KIND_PDB `TYPE_INFO` birleşim olarak yorumlanabilir bir [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) yapısı.
 
-TYPE_KIND_BUILT  
-`TYPE_INFO` Birleşim olarak yorumlanabilir bir [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) yapısı.
+TYPE_KIND_BUILT `TYPE_INFO` birleşim olarak yorumlanabilir bir [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu sabit listesi değerlerini görünür `dwKind` alanını [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) yapısı ve nasıl yorumlanacağını belirlemek için kullanılan `type` birleşim üyesi. `TYPE_INFO` Yapısı için bir çağrı tarafından döndürülen [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) yöntemi.
@@ -63,9 +60,9 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)  
-[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
-[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
-[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)
+- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)
+- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)

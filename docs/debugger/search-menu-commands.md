@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de9fdd38655c5c4baf8630df75c1365e38fca1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c61dc9e752dccee909baa742e4c8d677df865a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069070"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693340"
 ---
 # <a name="search-menu-commands"></a>Arama Menü Komutları
-**Arama** menü komutları, belirli windows için aranacak sağlar.  
-  
- **Pencere/işlem/iş parçacığı/ileti Bul**  
- Açılır **penceresi**/**işlem**/**iş parçacığı**/**MessageSearch** iletişim kutusu kullanabileceğiniz **FinderTool** veya arama ölçütlerini belirtin.  
-  
- **Sonrakini Bul**  
- Geçerli görünümde eşleşen bir sonraki pencereye, işlem, iş parçacığı veya iletinin arar. Yalnızca benzersiz olmayan geçerli arama sonucu olduğunda bu menü öğesini (ve ilgili araç çubuğu düğmesi) kullanılabilir.  
-  
- **Öncekini Bul**  
- Geçerli görünümde eşleşen bir önceki pencereye, işlem, iş parçacığı veya iletinin arar. Yalnızca benzersiz olmayan geçerli arama sonucu olduğunda bu menü öğesini (ve ilgili araç çubuğu düğmesi) kullanılabilir.
+**Arama** menü komutları, belirli windows için aranacak sağlar.
+
+ **Pencere/işlem/iş parçacığı/ileti Bul** açılır **penceresi**/**işlem**/**iş parçacığı** /  **MessageSearch** iletişim kutusu, kullanabileceğiniz **FinderTool** veya arama ölçütlerini belirtin.
+
+ **Sonrakini Bul** geçerli görünümde eşleşen bir sonraki pencereye, işlem, iş parçacığı veya iletinin arar. Yalnızca benzersiz olmayan geçerli arama sonucu olduğunda bu menü öğesini (ve ilgili araç çubuğu düğmesi) kullanılabilir.
+
+ **Önceki Bul** geçerli görünümde eşleşen bir önceki pencereye, işlem, iş parçacığı veya iletinin arar. Yalnızca benzersiz olmayan geçerli arama sonucu olduğunda bu menü öğesini (ve ilgili araç çubuğu düğmesi) kullanılabilir.

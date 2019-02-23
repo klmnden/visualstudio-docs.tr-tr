@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 61c92460976ec9b95163b83744ee0b01b6ebc572
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1423cbcfcae53948f7b9c9cd52eb90f57251bc24
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986091"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697929"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Hata: x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft .NET Framework 4 veya daha yenisi kullanılırken desteklenir
-Bir 64-bit işlem içinde karma yerel ve yönetilen kodda hata ayıklamak için olmalıdır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 4. İle 64-bit işlemlerinin karışık mod hata ayıklama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümleri daha önce 4 desteklenmez.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-- Aşağıdaki adımlardan birini uygulayın:  
-  
-  - Yükseltme, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 4.  
-  
-  - Hata ayıklama için uygulamanızın bir 32-bit sürümünü oluşturun.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)
+Bir 64-bit işlem içinde karma yerel ve yönetilen kodda hata ayıklamak için olmalıdır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 4. İle 64-bit işlemlerinin karışık mod hata ayıklama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümleri daha önce 4 desteklenmez.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Aşağıdaki adımlardan birini uygulayın:
+
+  - Yükseltme, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm 4.
+
+  - Hata ayıklama için uygulamanızın bir 32-bit sürümünü oluşturun.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

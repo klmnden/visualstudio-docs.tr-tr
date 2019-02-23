@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3e61cc093e6a987eec6fdd865b0316901e6c46d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631308"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691013"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Kesme noktası hatası çözümleme bilgilerini alır.
@@ -39,10 +39,12 @@ int GetResolutionInfo( 
 ```
 
 #### <a name="parameters"></a>Parametreler
-`dwFields`  
+`dwFields`
+
 [in] Bayraklarının bir birleşimi [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) hangi alanları belirlemek numaralandırma `pErrorResolutionInfo` doldurulması için.
 
-`pErrorResolutionInfo`  
+`pErrorResolutionInfo`
+
 [out içinde] [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) kesme noktası çözünürlüğü açıklamasını oturum girilir yapısının.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -51,7 +53,7 @@ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
 ## <a name="example"></a>Örnek
 Aşağıdaki örnekte bu yöntem için basit bir uygulayan `CDebugErrorBreakpointResolution` gösteren nesne [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) arabirimi.
 
-```
+```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
     BPERESI_FIELDS dwFields,
     BP_ERROR_RESOLUTION_INFO* pBPErrorResolutionInfo)
@@ -150,6 +152,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
-[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+
+- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+- [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

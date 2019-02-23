@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2::OnUpdateTextAttributes
 helpviewer_keywords:
@@ -12,42 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc28591b8402792c5f25634da5e936ec03b2ecf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7b3e76c1eaf82763f461eb1a0b198a7653465970
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929315"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718878"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Hata ayıklama paketi metin özniteliklerini belgede güncelleştirildiğini bildirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT onUpdateTextAttributes(   
-   TEXT_POSITION pos,  
-   DWORD         dwNumToUpdate  
-);  
-```  
-  
-```csharp  
-int onUpdateTextAttributes(   
-   enum_TEXT_POSITION pos,  
-   uint               dwNumToUpdate  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) metin özniteliklerini burada güncelleştirildi gösteren yapısı.  
-  
- `dwNumToUpdate`  
- [in] Güncelleştirilen metin karakter sayısını belirtir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+Hata ayıklama paketi metin özniteliklerini belgede güncelleştirildiğini bildirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT onUpdateTextAttributes( 
+   TEXT_POSITION pos,
+   DWORD         dwNumToUpdate
+);
+```
+
+```csharp
+int onUpdateTextAttributes( 
+   enum_TEXT_POSITION pos,
+   uint               dwNumToUpdate
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pos`
+
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) metin özniteliklerini burada güncelleştirildi gösteren yapısı.
+
+ `dwNumToUpdate`
+
+ [in] Güncelleştirilen metin karakter sayısını belirtir.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

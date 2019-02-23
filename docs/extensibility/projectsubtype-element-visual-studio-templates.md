@@ -14,90 +14,88 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 069c5f96cd2e8e5e4280800a6b39c7cf87936aaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a395a3c8026a4730fde0cff2d222f616e671ee1a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955453"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707594"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType öğesi (Visual Studio şablonları)
-Şablon içinde belirtilen değerle bir alt kategorisi olarak sınıflandırır `ProjectType` öğesi.  
-  
- \<VSTemplate >  
- \<TemplateData >  
- \<ProjectSubType >  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-<ProjectSubType> SubType </ProjectSubType>  
-```  
-  
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Aşağıdaki bölümlerde öznitelik, alt öğeler ve üst öğeler açıklanmaktadır.  
-  
-### <a name="attributes"></a>Öznitelikler  
- Yok.  
-  
-### <a name="child-elements"></a>Alt öğeleri  
- Yok.  
-  
-### <a name="parent-elements"></a>Üst öğeler  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|  
-  
-## <a name="text-value"></a>Metin değeri  
- Bir metin değeri gereklidir.  
-  
- Bu değer, şablon kategorisidir belirtir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `ProjectSubType` bir isteğe bağlı bir alt öğesidir `TemplateData`.  
-  
- `ProjectSubType` Öğesi bir alt kategoriye sağlar [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) öğesi. Bu değer içerebilir:  
-  
-- `SmartDevice-NETCFv1`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 1.0.  
-  
-- `SmartDevice-NETCFv2`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.  
-  
-  Bir şablon içeriyorsa, bir `ProjectType` öğe değerini `Web`, `ProjectSubType` öğe şablonunun programlama dilini belirtir. Bu öğe, aşağıdaki değerlere sahip olabilir:  
-  
-- `CSharp`: Şablon oluşturur belirtir bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Web proje veya öğe.  
-  
-- `VisualBasic`: Şablon oluşturur belirtir bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Web proje veya öğe.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] cihazı hedefleyen uygulama [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.  
-  
-```  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic device template</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <ProjectSubType>SmartDevice-NETCFv2</ProjectSubType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyTemplate.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [ProjectType öğesi (Visual Studio şablonları)](../extensibility/projecttype-element-visual-studio-templates.md)
+Şablon içinde belirtilen değerle bir alt kategorisi olarak sınıflandırır `ProjectType` öğesi.
+
+ \<VSTemplate > \<TemplateData > \<ProjectSubType >
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+<ProjectSubType> SubType </ProjectSubType>
+```
+
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Aşağıdaki bölümlerde öznitelik, alt öğeler ve üst öğeler açıklanmaktadır.
+
+### <a name="attributes"></a>Öznitelikler
+ Yok.
+
+### <a name="child-elements"></a>Alt öğeleri
+ Yok.
+
+### <a name="parent-elements"></a>Üst öğeler
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|
+
+## <a name="text-value"></a>Metin değeri
+ Bir metin değeri gereklidir.
+
+ Bu değer, şablon kategorisidir belirtir.
+
+## <a name="remarks"></a>Açıklamalar
+ `ProjectSubType` bir isteğe bağlı bir alt öğesidir `TemplateData`.
+
+ `ProjectSubType` Öğesi bir alt kategoriye sağlar [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) öğesi. Bu değer içerebilir:
+
+- `SmartDevice-NETCFv1`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 1.0.
+
+- `SmartDevice-NETCFv2`: Belirten şablonunun hedeflediği [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.
+
+  Bir şablon içeriyorsa, bir `ProjectType` öğe değerini `Web`, `ProjectSubType` öğe şablonunun programlama dilini belirtir. Bu öğe, aşağıdaki değerlere sahip olabilir:
+
+- `CSharp`: Şablon oluşturur belirtir bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Web proje veya öğe.
+
+- `VisualBasic`: Şablon oluşturur belirtir bir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Web proje veya öğe.
+
+## <a name="example"></a>Örnek
+ Aşağıdaki örnek, bir proje şablonu için meta verileri gösterir. bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] cihazı hedefleyen uygulama [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] sürüm 2.0.
+
+```
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic device template</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType>SmartDevice-NETCFv2</ProjectSubType>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyTemplate.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
+- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)
+- [ProjectType öğesi (Visual Studio şablonları)](../extensibility/projecttype-element-visual-studio-templates.md)

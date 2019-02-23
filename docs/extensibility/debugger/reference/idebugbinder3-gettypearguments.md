@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetTypeArguments | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBinder3::GetTypeArguments
 helpviewer_keywords:
@@ -12,55 +12,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65c27e3ac175c0140b2484f9581642551b8b1ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007704"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712157"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Bu yöntem, bu nesneyle ilişkili bağımsız değişken türlerinin bir listesini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetTypeArguments(  
-   UINT          skip,  
-   UINT          count,  
-   IDebugField** ppFields,  
-   UINT*         pFetched  
-);  
-```  
-  
-```csharp  
-int GetTypeArguments(  
-   uint          skip,  
-   uint          count,  
-   IDebugField[] ppFields,  
-   out uint      pFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `skip`  
- [in] Bağımsız değişken türleri almadan önce atlamak için alanların sayısı.  
-  
- `count`  
- [in] Döndürülecek bağımsız değişken alan sayısı (Ayrıca boyutunu belirtir `ppFields` dizisi).  
-  
- `ppFields`  
- [out içinde] Bu yöntemin geri doldurulur alanları dizisi.  
-  
- `pFetched`  
- [out] \(isteğe bağlı) Bağımsız değişken sayısı gerçekte döndürülen alanları yazın.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken türlerinin sayısı ile önceden alınabilir [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
- [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)
+Bu yöntem, bu nesneyle ilişkili bağımsız değişken türlerinin bir listesini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetTypeArguments(
+   UINT          skip,
+   UINT          count,
+   IDebugField** ppFields,
+   UINT*         pFetched
+);
+```
+
+```csharp
+int GetTypeArguments(
+   uint          skip,
+   uint          count,
+   IDebugField[] ppFields,
+   out uint      pFetched
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `skip`
+
+ [in] Bağımsız değişken türleri almadan önce atlamak için alanların sayısı.
+
+ `count`
+
+ [in] Döndürülecek bağımsız değişken alan sayısı (Ayrıca boyutunu belirtir `ppFields` dizisi).
+
+ `ppFields`
+
+ [out içinde] Bu yöntemin geri doldurulur alanları dizisi.
+
+ `pFetched`
+
+ [out] \(isteğe bağlı) Bağımsız değişken sayısı gerçekte döndürülen alanları yazın.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bağımsız değişken türlerinin sayısı ile önceden alınabilir [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

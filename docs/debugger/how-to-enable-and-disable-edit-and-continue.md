@@ -26,35 +26,35 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: a201dab58084476f0993304d961fc5afa5693782
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002235"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694614"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Nasıl yapılır: Düzenle ve Devam Et'i devre dışı bırakma ve etkinleştirme (C#, VB, C++)
 
-Devre dışı bırakma veya etkinleştirme **Düzenle ve devam et** Visual Studio'daki **seçenekleri** tasarım zamanında iletişim kutusu. **Düzenle ve devam et** yalnızca hata ayıklama çalışır oluşturur. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md). 
-  
+Devre dışı bırakma veya etkinleştirme **Düzenle ve devam et** Visual Studio'daki **seçenekleri** tasarım zamanında iletişim kutusu. **Düzenle ve devam et** yalnızca hata ayıklama çalışır oluşturur. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md).
+
 Yerel c++ **Düzenle ve devam et** kullanılması `/INCREMENTAL` seçeneği. C++'ta özellik gereksinimleri hakkında daha fazla bilgi için bkz. Bu [blog gönderisi](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) ve [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
-  
-**Düzenle ve Devam Et'i devre dışı bırakmak veya etkinleştirmek için:**  
-  
+
+**Düzenle ve Devam Et'i devre dışı bırakmak veya etkinleştirmek için:**
+
 1.  Hata ayıklama oturumunda kullanıyorsanız, hata ayıklamayı Durdur (**hata ayıklama** > **hata ayıklamayı Durdur** veya **Shift**+**F5**) .
 
-1.  İçinde **Araçları** > **seçenekleri** > (veya **hata ayıklama** > **seçenekleri**) > **hataayıklama**  >  **Genel**seçin **Düzenle ve devam et** sağ bölmede.  
-  
+1.  İçinde **Araçları** > **seçenekleri** > (veya **hata ayıklama** > **seçenekleri**) > **hataayıklama**  >  **Genel**seçin **Düzenle ve devam et** sağ bölmede.
+
     > [!NOTE]
     >  Etkin IntelliTrace ve hem IntelliTrace olayları ve çağrı bilgilerini toplamak, Düzenle ve Devam Et'i devre dışı bırakılmıştır. Daha fazla bilgi için [IntelliTrace](../debugger/intellitrace.md).
-    
+
 1.  C++ kodu için emin **etkinleştirme yerel Düzenle ve devam et** seçilir ve diğer seçenekleri ayarlayın:
-    - **Değişiklikleri Uygula (yalnızca yerel) üzerinde devam**  
-      
-      Seçili olduğunda, Visual Studio otomatik olarak derler ve kod değişikliklerini sonu durumundan hata ayıklama devam ederken geçerlidir. Aksi takdirde kullanarak değişiklikleri uygulamak seçebilirsiniz **hata ayıklama** > **kod değişikliklerini uygulama**.  
-      
-    - **(Yalnızca yerel) eski kod hakkında uyar**  
-      
-      Seçtiyseniz, eski kod hakkında uyarılar sağlar. 
-  
-1.  **Tamam**'ı tıklatın.    
+    - **Değişiklikleri Uygula (yalnızca yerel) üzerinde devam**
+
+      Seçili olduğunda, Visual Studio otomatik olarak derler ve kod değişikliklerini sonu durumundan hata ayıklama devam ederken geçerlidir. Aksi takdirde kullanarak değişiklikleri uygulamak seçebilirsiniz **hata ayıklama** > **kod değişikliklerini uygulama**.
+
+    - **(Yalnızca yerel) eski kod hakkında uyar**
+
+      Seçtiyseniz, eski kod hakkında uyarılar sağlar.
+
+1.  **Tamam**'ı tıklatın.

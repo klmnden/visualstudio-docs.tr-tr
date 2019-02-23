@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::SetCondition
 helpviewer_keywords:
@@ -13,41 +13,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dac748f78428b49e17fe350e74147b62ebd64ea6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1dcec65b22c728384fb199eecf461ec61317e348
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023908"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691689"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Bu bağlı Kesme noktasının ile ilişkilendirilmiş olan koşul değiştirir veya ayarlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT SetCondition(   
-   BP_CONDITION bpCondition  
-);  
-```  
-  
-```csharp  
-int SetCondition(   
-   enum_BP_CONDITION bpCondition  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `bpCondition`  
- [in] Bir değer [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) koşul açıklayan sabit listesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` bağlı Kesme noktasının nesnenin durumu ayarlanırsa `BPS_DELETED` (parçası [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) sabit listesi).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Daha önce bu kesme noktası ile ilişkili herhangi bir koşul kaybolur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+Bu bağlı Kesme noktasının ile ilişkilendirilmiş olan koşul değiştirir veya ayarlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT SetCondition( 
+   BP_CONDITION bpCondition
+);
+```
+
+```csharp
+int SetCondition( 
+   enum_BP_CONDITION bpCondition
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `bpCondition`
+
+ [in] Bir değer [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) koşul açıklayan sabit listesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` bağlı Kesme noktasının nesnenin durumu ayarlanırsa `BPS_DELETED` (parçası [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) sabit listesi).
+
+## <a name="remarks"></a>Açıklamalar
+ Daha önce bu kesme noktası ile ilişkili herhangi bir koşul kaybolur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

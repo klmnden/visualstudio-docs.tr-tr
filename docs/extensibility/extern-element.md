@@ -13,63 +13,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac2f7e5611e8e87dd3ad6c268c0fd2ea6292c14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924197"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690545"
 ---
 # <a name="extern-element"></a>Extern öğesi
-Extern öğesi herhangi bir dış başlığını başvurur (*.h*) ile birleştirmek için dosyaları *.vsct* dosya derleme zamanında. VSCT derleyici için verilen ya da başvurduğu yoluna birleştirilecek dosyaları olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Diğer dosyalar olabilir *.vsct* veya C++ üst bilgi dosyaları.  
-  
- Üst bilgi dosyaları tanımlarında biçiminde olmalıdır "# [Value] [simge] define" önceden tanımlı değilse değer başka bir sembol olabilir. Tanımları komut öğeleri koşullu ifadelerde kullanılabilir. Gerçekten kullanılmıyorsa herhangi bir simge atılacak.  
-  
- CommandTable Öğesi  
-Extern Öğesi  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-<Extern href="stdidcmd.h" />  
-```  
-  
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
-  
-### <a name="attributes"></a>Öznitelikler  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|href|Gerekli. Üstbilgi dosyası yolu:<br /><br /> href="stdidcmd.h"|  
-|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|dil|İsteğe bağlı. Tüm varsayılan dili [ \<dizeleri >](../extensibility/strings-element.md) komut tablosu öğeleri:<br /><br /> Dil = "en-us"|  
-  
-### <a name="child-elements"></a>Alt öğeleri  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|Yok.|Yok.|  
-  
-### <a name="parent-elements"></a>Üst öğeler  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|Tüm komutları temsil eden öğeler tanımlar — diğer bir deyişle, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları — IDE'ye VSPackage sağlayan.|  
-  
-## <a name="example"></a>Örnek  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-  
-  18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
-    <Extern href="C:\VSCore\vscommon\inc\vsshlids.h"/>  
-    ...  
-  <Commands package="guidMyPackage">  
-</CommandTable>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+Extern öğesi herhangi bir dış başlığını başvurur (*.h*) ile birleştirmek için dosyaları *.vsct* dosya derleme zamanında. VSCT derleyici için verilen ya da başvurduğu yoluna birleştirilecek dosyaları olmalıdır bir [INCLUDE öğesi](../extensibility/include-element.md). Diğer dosyalar olabilir *.vsct* veya C++ üst bilgi dosyaları.
+
+ Üst bilgi dosyaları tanımlarında biçiminde olmalıdır "# [Value] [simge] define" önceden tanımlı değilse değer başka bir sembol olabilir. Tanımları komut öğeleri koşullu ifadelerde kullanılabilir. Gerçekten kullanılmıyorsa herhangi bir simge atılacak.
+
+ CommandTable öğesi Extern öğesi
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+<Extern href="stdidcmd.h" />
+```
+
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
+
+### <a name="attributes"></a>Öznitelikler
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|href|Gerekli. Üstbilgi dosyası yolu:<br /><br /> href="stdidcmd.h"|
+|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|dil|İsteğe bağlı. Tüm varsayılan dili [ \<dizeleri >](../extensibility/strings-element.md) komut tablosu öğeleri:<br /><br /> Dil = "en-us"|
+
+### <a name="child-elements"></a>Alt öğeleri
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|Yok.|Yok.|
+
+### <a name="parent-elements"></a>Üst öğeler
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[CommandTable öğesi](../extensibility/commandtable-element.md)|Tüm komutları temsil eden öğeler tanımlar — diğer bir deyişle, menü öğeleri, menüler, araç çubukları ve birleşik giriş kutuları — IDE'ye VSPackage sağlayan.|
+
+## <a name="example"></a>Örnek
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-
+  18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <Extern href="C:\VSCore\vscommon\inc\vsshlids.h"/>
+    ...
+  <Commands package="guidMyPackage">
+</CommandTable>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

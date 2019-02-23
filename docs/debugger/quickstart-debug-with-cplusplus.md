@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918570"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716525"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: C++ ile Visual Studio hata ayıklayıcısını kullanarak hata ayıklama
 
 Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıklamanıza yardımcı olmak için çok sayıda güçlü özellikler sağlar. Bu konuda bazı temel özellikleri öğrenmek için hızlı bir yolunu sağlar.
 
-## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
+## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
 1. Visual Studio'da **Dosya > Yeni proje**.
 
@@ -47,7 +47,7 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
     Bu kod (kaldırmayın `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,7 +90,7 @@ A *kesme noktası* olan Visual Studio çalışan burada askıya almanız göster
     > [!TIP]
     > Bir döngüde veya özyinelemede bir kesme noktasına sahip ya da sık, adım adım çok sayıda kesme noktaları varsa, kullanmak istemiyorsanız bir [koşullu kesme noktası](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) yalnızca belirli koşullar karşılandığında kodunuzu askıya alındığından emin olmak için. Koşullu kesme noktası zaman tasarrufu sağlar ve ayrıca, yeniden oluşturulması zor olan sorunlarında hata ayıklama kolaylaştırabilir.
 
-    C++'ta bellekle ilgili hataları ayıklanacak çalışırken, kesme noktaları (NULL arayın) adres değerlerini incelemek için kullanabilirsiniz ve başvuru sayısı. 
+    C++'ta bellekle ilgili hataları ayıklanacak çalışırken, kesme noktaları (NULL arayın) adres değerlerini incelemek için kullanabilirsiniz ve başvuru sayısı.
 
 ## <a name="navigate-code"></a>Kod gidin
 
@@ -110,7 +110,7 @@ Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F1
 
     ![Bir datatip görüntülemek](../debugger/media/dbg-qs-data-tip.png "bir datatip görüntüleyin")
 
-    Datatip geçerli değerini gösteren `c1` değişkeni ve onun özelliklerini denetleme olanak tanır. Beklediğiniz olmayan bir değer görürseniz, hata ayıklama sırasında bir hata muhtemelen önceki veya çağıran kod satırıyla vardır. 
+    Datatip geçerli değerini gösteren `c1` değişkeni ve onun özelliklerini denetleme olanak tanır. Beklediğiniz olmayan bir değer görürseniz, hata ayıklama sırasında bir hata muhtemelen önceki veya çağıran kod satırıyla vardır.
 
 2. Geçerli özellik değerlerini aramak için datatip genişletin `c1` nesne.
 

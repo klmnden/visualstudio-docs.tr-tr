@@ -1,7 +1,7 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RESOLUTION_LOCATION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6f2449f1727ed31da97a80f0387e07f74e0c2a1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317516"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696317"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Kesme noktası çözünürlüğü konumu yapısını belirtir.
@@ -46,34 +46,41 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Üyeler
-`bpType`  
-Bir değer [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) yorumlama belirten numaralandırma `bpResLocation` birleşim veya `unionmemberX` üyeleri.
+`bpType` Bir değer [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) yorumlama belirten numaralandırma `bpResLocation` birleşim veya `unionmemberX` üyeleri.
 
-`bpResLocation.bpresCode`  
-[Yalnızca C++] İçeren [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) , yapı `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresCode`
 
-`bpResLocation.bpresData`  
-[Yalnızca C++] İçeren [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) , yapı `bpType`  =  `BPT_DATA`.
+ [Yalnızca C++] İçeren [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) , yapı `bpType`  =  `BPT_CODE`.
 
-`bpResLocation.unused`  
-[Yalnızca C++] Bir yer tutucu.
+`bpResLocation.bpresData`
 
-`unionmember1`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+ [Yalnızca C++] İçeren [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) , yapı `bpType`  =  `BPT_DATA`.
 
-`unionmember2`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+`bpResLocation.unused`
 
-`unionmember3`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+ [Yalnızca C++] Bir yer tutucu.
 
-`unionmember4`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+`unionmember1`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+
+`unionmember2`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+
+`unionmember3`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+
+`unionmember4`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı üyesidir [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) ve [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapıları.
 
-[C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpType` boyunca hangi her belirlemek için değer `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# yorumlamak bir yol için örneğe bakın.
+
+ [C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpType` boyunca hangi her belirlemek için değer `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# yorumlamak bir yol için örneğe bakın.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
@@ -118,10 +125,10 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
-[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
-[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+- [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)

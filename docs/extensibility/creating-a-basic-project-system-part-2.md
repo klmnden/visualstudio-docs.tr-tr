@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318491"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681315"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>2. Bölüm temel proje sistemi oluşturma
 Bu serideki ilk izlenecek [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md), temel proje sistemi oluşturma işlemi gösterilmektedir. Bu izlenecek yol, Visual Studio şablonu, bir özellik sayfası ve diğer özellikleri ekleyerek üzerinde temel proje sistemi oluşturur. Bu bir başlamadan önce ilk izlenecek yolu tamamlamanız gerekir.
@@ -40,7 +40,7 @@ Bu izlenecek yol aşağıdaki görevlerin nasıl yerine getirileceğini öğreti
 > Bu kılavuzda açıklanan adımları bir C# projesini temel alıyor. Ancak, dosya adı uzantıları ve kod gibi özellikleri dışında bir Visual Basic projesi için aynı adımları kullanabilirsiniz.
 
 ## <a name="create-a-visual-studio-template"></a>Visual Studio şablon oluşturma
-[1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md) temel proje şablonu oluşturma ve proje sisteme ekleme işlemi gösterilmektedir. Ayrıca bu şablonu kullanarak Visual Studio ile kaydetme işlemini gösterir <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> tam yolunu yazan özniteliği *\\Templates\Projects\SimpleProject\\* sistem klasörü kayıt defteri.
+- [1. Bölüm temel proje sistemi oluşturma](../extensibility/creating-a-basic-project-system-part-1.md) temel proje şablonu oluşturma ve proje sisteme ekleme işlemi gösterilmektedir. Ayrıca bu şablonu kullanarak Visual Studio ile kaydetme işlemini gösterir <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> tam yolunu yazan özniteliği *\\Templates\Projects\SimpleProject\\* sistem klasörü kayıt defteri.
 
 Visual Studio şablonu kullanarak (*.vstemplate* dosya) yerine temel proje şablonu, şablonun nasıl görünür denetleyebilirsiniz **yeni proje** iletişim kutusu ve şablon parametreleri şeklini değiştirdi. A *.vstemplate* kaynak dosyaları proje sistemi şablonunu kullanarak bir proje oluşturulduğunda, dahil edilecek şeklini açıklayan bir XML dosyasını bir dosyadır. Proje sistemi toplayarak oluşturulan *.vstemplate* dosya ve kaynak dosyalarında bir *.zip* dosya ve kopyalayarak dağıtılan *.zip* bir konuma dosya Visual Studio bilinen. Bu işlem, bu kılavuzda daha sonra daha ayrıntılı açıklanmıştır.
 
@@ -271,7 +271,7 @@ Değiştirilen proje dosyasını görmek için test olmadığını **konsol** al
     ![Basit bir proje konsol düğümü](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>Proje şablonu parametreleri değiştirin
-[Temel Proje sistemi oluşturma, bölüm 1](../extensibility/creating-a-basic-project-system-part-1.md) üzerine gösterildi `ProjectNode.AddFileFromTemplate` temel türde bir şablon parametre değiştirme yapmak için yöntemi. Bu bölümde daha karmaşık Visual Studio şablon parametreleri kullanmayı öğretir.
+- [Temel Proje sistemi oluşturma, bölüm 1](../extensibility/creating-a-basic-project-system-part-1.md) üzerine gösterildi `ProjectNode.AddFileFromTemplate` temel türde bir şablon parametre değiştirme yapmak için yöntemi. Bu bölümde daha karmaşık Visual Studio şablon parametreleri kullanmayı öğretir.
 
 Bir Visual Studio şablonu kullanarak bir proje oluşturduğunuzda **yeni proje** iletişim kutusu, Parametreler yerine şablon dizeleri projenin özelleştirilmesi için. Şablon parametresi başlar ve bir dolar işareti, örneğin, $time$ biten özel bir belirteçtir. Aşağıdaki iki parametreyi şablonu temel alan projelerinde özelleştirme etkinleştirmek için kullanışlıdır:
 

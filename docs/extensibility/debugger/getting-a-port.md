@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315722"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695992"
 ---
 # <a name="get-a-port"></a>Bir bağlantı noktası alma
 Bir bağlantı noktası işlemleri çalıştırdığınız bir makine bağlantısını temsil eder. Bu makineyi, yerel veya uzak bir makinede olabilir (büyük olasılıkla çalışan Windows tabanlı olmayan bir işletim sistemi; bkz [bağlantı noktaları](../../extensibility/debugger/ports.md) daha fazla bilgi için).
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Program kaydetme](../../extensibility/debugger/registering-the-program.md)  
-[Bir program görüntüde hata ayıklamayı etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[Bağlantı noktası sağlayıcıları](../../extensibility/debugger/port-suppliers.md)  
-[Bağlantı Noktaları](../../extensibility/debugger/ports.md)
+- [Program kaydetme](../../extensibility/debugger/registering-the-program.md)
+- [Bir program görüntüde hata ayıklamayı etkinleştirme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Bağlantı noktası sağlayıcıları](../../extensibility/debugger/port-suppliers.md)
+- [Bağlantı Noktaları](../../extensibility/debugger/ports.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833949"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678871"
 ---
 # <a name="getting-started-with-python"></a>Python’ı Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Aşağıdaki kaynaklar, başlamanıza yardımcı olur:
 - [Belgeler](https://github.com/Microsoft/PTVS/wiki)  
 
 
-Visual Studio şu anda temelde katıştırılmış bir Python yorumlayıcısı programla anlamına gelir ve Python kullanarak tek başına yürütülebilir dosya oluşturmak için Araçlar sağlamaz unutmayın. Ancak Python topluluk içinde çeşitli araç üzerinde açıklandığı şekilde bunun için vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [gömülebilir ZIP dosyasını kullanarak CPython'ın](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+Visual Studio şu anda temelde katıştırılmış bir Python yorumlayıcısı programla anlamına gelir ve Python kullanarak tek başına yürütülebilir dosya oluşturmak için Araçlar sağlamaz unutmayın. Ancak Python topluluk içinde çeşitli araç üzerinde açıklandığı şekilde bunun için vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [gömülebilir ZIP dosyasını kullanarak CPython'ın](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
   
 ## <a name="building-ui-with-python"></a>Python ile kullanıcı arabirimini oluşturma  
 

@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e16c5d540aa59ae0c5d56ccb311618ab311bd9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993463"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712456"
 ---
 # <a name="how-to-start-spy"></a>Nasıl yapılır: Spy++'ı başlatma
 
-Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.  
-  
- Başladığınızda Spy ++'ta, değişiklik bilgisayara select izni istemek için bir ileti görüntülenirse **Evet**.  
-  
+Spy ++ Visual Studio'dan veya bir komut isteminde başlatabilirsiniz.
+
+ Başladığınızda Spy ++'ta, değişiklik bilgisayara select izni istemek için bir ileti görüntülenirse **Evet**.
+
 > [!NOTE]
 >  Spy ++ yalnızca bir örneği çalıştırabilirsiniz. Yalnızca ikinci bir örneğini başlatmayı denerseniz, odağı almak o sırada çalıştırılan örneğinden neden olur.
 
@@ -34,23 +34,23 @@ Spy ++ aşağıdaki bileşenleri gerektirir. Seçerek bu bileşenlerin Visual St
 * Geliştirme etkinlikleri altında seçin **Visual Studio C++ temel özellikler**
 
 Herhangi bir değişiklik yaptıysanız, bu bileşenleri yüklemek için istemleri izleyin.
-  
+
 ## <a name="start-spy-from-visual-studio"></a>Spy ++ Visual Studio'dan Başlat
-  
-Üzerinde **Araçları** menüsünde **Spy ++**.  
-  
-Başladıktan sonra Spy ++ birbirinden bağımsız olarak çalıştığından, Visual Studio'yu kapatabilirsiniz.  
-  
+
+Üzerinde **Araçları** menüsünde **Spy ++**.
+
+Başladıktan sonra Spy ++ birbirinden bağımsız olarak çalıştığından, Visual Studio'yu kapatabilirsiniz.
+
 > [!NOTE]
->  İletileri Spy ++ ile oturum açışınızda, işletim sisteminin daha yavaş çalışmasına neden olabilir.  
-  
-## <a name="start-spy-at-a-command-prompt"></a>Spy ++ bir komut isteminden başlatmak  
-  
-1.  Bir komut istemi penceresinde dizinleri spyxx.exe içeren klasöre değiştirin. Genellikle, bu klasörün yolu... \\ *Visual Studio yükleme klasörü*\Common7\Tools\\.  
-  
-2.  Enter **spyxx.exe**. 
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Spy ++ kullanma](../debugger/using-spy-increment.md)   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)   
- [Spy++ Başvurusu](../debugger/spy-increment-reference.md)
+>  İletileri Spy ++ ile oturum açışınızda, işletim sisteminin daha yavaş çalışmasına neden olabilir.
+
+## <a name="start-spy-at-a-command-prompt"></a>Spy ++ bir komut isteminden başlatmak
+
+1.  Bir komut istemi penceresinde dizinleri spyxx.exe içeren klasöre değiştirin. Genellikle, bu klasörün yolu... \\ *Visual Studio yükleme klasörü*\Common7\Tools\\.
+
+2.  Enter **spyxx.exe**.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Spy++ kullanma](../debugger/using-spy-increment.md)
+- [Spy++ Görünümleri](../debugger/spy-increment-views.md)
+- [Spy++ Başvurusu](../debugger/spy-increment-reference.md)

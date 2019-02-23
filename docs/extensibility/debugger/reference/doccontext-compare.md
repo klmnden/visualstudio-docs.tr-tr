@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413039"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686255"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 İki belge bağlamları karşılaştırma ölçütü belirtir.
@@ -44,17 +44,13 @@ enum enum_DOCCONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>Üyeler
-DOCCONTEXT_EQUAL  
-Hedef belge bağlamına eşit olan listesinde ilk belge bağlamı bulur.
+DOCCONTEXT_EQUAL hedef belge bağlamına eşittir listedeki ilk belge bağlamı bulun.
 
-DOCCONTEXT_LESS_THAN  
-Hedef belge bağlamı'dan küçük listedeki ilk belge bağlamı bulun.
+DOCCONTEXT_LESS_THAN hedef belge bağlamı'dan küçük listedeki ilk belge bağlamı bulun.
 
-DOCCONTEXT_GREATER_THAN  
-Hedef belge bağlamı büyük listesinde ilk belge bağlamı bulur.
+DOCCONTEXT_GREATER_THAN hedef belge bağlamı büyük listedeki ilk belge bağlamı bulun.
 
-DOCCONTEXT_SAME_DOCUMENT  
-Aynı belgede hedef belge bağlamı olarak listede ilk belge içeriği bulabilirsiniz.
+DOCCONTEXT_SAME_DOCUMENT aynı belgede hedef belge bağlamı olarak listede ilk belge içeriği bulabilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 Bağımsız değişken olarak geçirilen [karşılaştırma](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) yöntemi.
@@ -69,5 +65,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

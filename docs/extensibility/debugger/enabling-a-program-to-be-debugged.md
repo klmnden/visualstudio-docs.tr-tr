@@ -10,32 +10,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8faa677e5893c0737bcd89db5567ef7459f6d07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f301de66421ef1327b86d900305cb4ecbfb5623
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953236"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695134"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Bir program görüntüde hata ayıklamayı etkinleştir
-Bir program, hata ayıklama altyapısı (DE) hata ayıklama yapılabilmesi, önce DE başlatın ya varolan bir program ekleyin.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [Bir bağlantı noktası alma](../../extensibility/debugger/getting-a-port.md)  
- Bir program görüntüde hata ayıklamayı etkinleştirmek için ilk adım olarak bir bağlantı noktası alınacağını açıklar.  
-  
- [Kayıt programı](../../extensibility/debugger/registering-the-program.md)  
- Sonraki adım bir program görüntüde hata ayıklamayı etkinleştirme açıklanmaktadır: bağlantı noktası ile kaydediliyor. Kaydedildikten sonra program ayıklanabilir ya da ekleme veya just-in-time (JIT) hata ayıklama işlemi.  
-  
- [Programa ekleme](../../extensibility/debugger/attaching-to-the-program.md)  
- Sonraki adımda açıklanmaktadır: hata ayıklayıcı programa ekleme.  
-  
- [Başlatma tabanlı ekleme](../../extensibility/debugger/launch-based-attachment.md)  
- Otomatik başlatma SDM ile bağlı olan bir program için başlatma tabanlı ek açıklar.  
-  
- [Gerekli olayları gönderme](../../extensibility/debugger/sending-the-required-events.md)  
- Hata ayıklama altyapısı (DE) oluştururken gerekli olayları adımları ve programa ekleme.  
-  
-## <a name="related-sections"></a>İlgili bölümler  
- [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Hata ayıklama altyapısı (DE) tanımlar ve DE arabirimler ve bunlar farklı çalışma modları arasında geçiş için hata ayıklayıcının nasıl neden aracılığıyla uygulanan hizmetlerini açıklar.
+Bir program, hata ayıklama altyapısı (DE) hata ayıklama yapılabilmesi, önce DE başlatın ya varolan bir program ekleyin.
+
+## <a name="in-this-section"></a>Bu bölümde
+ [Bir bağlantı noktası alma](../../extensibility/debugger/getting-a-port.md) ayıklanacak bir programı etkinleştirmek için ilk adım olarak bir bağlantı noktası alınacağını açıklar.
+
+ [Program kaydetme](../../extensibility/debugger/registering-the-program.md) ayıklanacak program etkinleştirme bir sonraki adım açıklanır: bağlantı noktası ile kaydediliyor. Kaydedildikten sonra program ayıklanabilir ya da ekleme veya just-in-time (JIT) hata ayıklama işlemi.
+
+ [Programa ekleme](../../extensibility/debugger/attaching-to-the-program.md) sonraki adımda açıklanmaktadır: hata ayıklayıcı programa ekleme.
+
+ [Başlatma tabanlı ekleme](../../extensibility/debugger/launch-based-attachment.md) otomatik başlatma SDM ile bağlı olan bir program için başlatma tabanlı ek açıklar.
+
+ [Gerekli olayları gönderme](../../extensibility/debugger/sending-the-required-events.md) hata ayıklama altyapısı (DE) oluştururken gerekli olayları adımları ve programa ekleme.
+
+## <a name="related-sections"></a>İlgili bölümler
+ [Bir özel hata ayıklama altyapısı oluşturma](../../extensibility/debugger/creating-a-custom-debug-engine.md) hata ayıklama altyapısı (DE) tanımlar ve DE arabirimler ve bunlar farklı çalışma modları arasında geçiş için hata ayıklayıcının nasıl neden aracılığıyla uygulanan hizmetlerini açıklar.

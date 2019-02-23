@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 6b4e257f77d29a75e0400d9dd43030fc479c04c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155844"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711208"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -147,7 +147,7 @@ BİR. Bu alandaki ana tekliftir [Qt proje](https://www.qt.io/qt-for-application-
 
 **SORU. Tek başına yürütülebilir dosya bir Python projesi oluşturabilir?**
 
-BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için farklı yollardan Python topluluk tarafından sağlanan [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için farklı yollardan Python topluluk tarafından sağlanan [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Özellik Matrisi
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227067"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714978"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Nasıl yapılır: OnStart metodunda hata ayıklama
 Bir Windows hizmeti, hizmete ve hata ayıklayıcı hizmet işlemine iliştirme ayıklayabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Windows hizmet uygulamalarında hata ayıklama](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Ancak, hata ayıklamak için <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> yöntemi bir Windows hizmetinin ayıklayıcısından yöntemi içinde başlatmak gerekir.
@@ -53,5 +53,5 @@ Bir Windows hizmeti, hizmete ve hata ayıklayıcı hizmet işlemine iliştirme a
 5. Yeni bir örneğini Visual Studio başlatılır ve yürütme sırasında durduruldu `Debugger.Launch()` yöntemi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)  
-[Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

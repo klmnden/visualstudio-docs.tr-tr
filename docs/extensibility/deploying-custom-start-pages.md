@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982773"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693015"
 ---
 # <a name="deploy-custom-start-pages"></a>Özel başlangıç sayfaları dağıtma
 
@@ -43,13 +44,13 @@ Başlangıç sayfası proje şablonu kullanarak edinebilirsiniz **Uzantı Yönet
 
 - El ile oluşturarak bir *.vsix* dosya. Oluşturmak için bir *.vsix* el ile dosya:
 
-  1.  Oluşturma *extension.vsixmanifest* dosya ve *[Content_Types] .xml* dosyasında yeni bir klasör. Daha fazla bilgi için [bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md).
+   1. Oluşturma *extension.vsixmanifest* dosya ve *[Content_Types] .xml* dosyasında yeni bir klasör. Daha fazla bilgi için [bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md).
 
-  2.  İki XML dosyalarını içeren klasörü Windows Gezgini'nde sağ tıklayın, **göndermek için**ve ardından sıkıştırılmış klasöre tıklayın. Sonuç Yeniden Adlandır *.zip* dosyasını *Filename.vsix*burada Filename paketinizi yükleyen yeniden dağıtılabilir dosya adıdır.
+   2. İki XML dosyalarını içeren klasörü Windows Gezgini'nde sağ tıklayın, **göndermek için**ve ardından sıkıştırılmış klasöre tıklayın. Sonuç Yeniden Adlandır *.zip* dosyasını *Filename.vsix*burada Filename paketinizi yükleyen yeniden dağıtılabilir dosya adıdır.
 
-  Bir başlangıç sayfası tanımak Visual Studio için `Content Element` VSIX bildirim içermelidir bir `CustomExtension Element` olan `Type` özniteliğini `"StartPage"`. VSIX dağıtımı kullanarak yüklü olan bir başlangıç sayfası uzantısı görünür **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında olarak **[yüklü uzantı]** *Uzantı adı*.
+Bir başlangıç sayfası tanımak Visual Studio için `Content Element` VSIX bildirim içermelidir bir `CustomExtension Element` olan `Type` özniteliğini `"StartPage"`. VSIX dağıtımı kullanarak yüklü olan bir başlangıç sayfası uzantısı görünür **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında olarak **[yüklü uzantı]** *Uzantı adı*.
 
-  Başlangıç sayfası paketinizi derlemeleri içerir, böylece Visual Studio başladığında kullanılabilir bağlama yolu kayıt eklemeniz gerekir. Bunu yapmak için paketinizi içerdiğinden emin olun bir *.pkgdef* aşağıdaki bilgileri içeren dosya.
+Başlangıç sayfası paketinizi derlemeleri içerir, böylece Visual Studio başladığında kullanılabilir bağlama yolu kayıt eklemeniz gerekir. Bunu yapmak için paketinizi içerdiğinden emin olun bir *.pkgdef* aşağıdaki bilgileri içeren dosya.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]

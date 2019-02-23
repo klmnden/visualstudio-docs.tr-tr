@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413429"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725027"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Özel bir öznitelik adı verilen alır.
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pszCustomAttributeName`  
-[in] Özel özniteliğin adı.
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in] Özel özniteliğin adı.
+
+`ppBlob`
+
 [out içinde] Özel öznitelik verileri içeren bir bayt dizisi.
 
-`pdwLen`  
-[out] Bayt cinsinden uzunluğu `ppBlob` parametresi.
+`pdwLen`
+
+ [out] Bayt cinsinden uzunluğu `ppBlob` parametresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`. Özel öznitelik yoksa döndürür `S_FALSE`. Aksi takdirde bir hata kodu döndürür.
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

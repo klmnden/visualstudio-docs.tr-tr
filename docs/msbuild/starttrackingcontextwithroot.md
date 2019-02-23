@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63c287339685e6d5f7e1b28c697de2084aba7b22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
+ms.openlocfilehash: 53f2c1ebd5896eaa8a4b9d5ff4e5cb7856a1f8e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618971"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690496"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Bir kök işaret belirten bir yanıt dosyası kullanarak bir izleme bağlamına başlatır.
@@ -32,11 +32,17 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```
 
 #### <a name="parameters"></a>Parametreler
-- [in] `intermediateDirectory` İzleme günlüğünü depolanacağı dizin.
+[in] `intermediateDirectory`
 
-- [in] `taskName` İzleme bağlamı tanımlar. Bu ad, günlük dosyası adı oluşturmak için kullanılır.
+ İzleme günlüğü depolanacağı dizin.
 
-- [in] `rootMarkerResponseFile` Kök işaret içeren bir yanıt dosyasının yol adı. Kök adı, tüm izleme için bir bağlam birlikte gruplandırmak için kullanılır.
+[in] `taskName`
+
+ İzleme bağlamı tanımlar. Bu ad, günlük dosyası adı oluşturmak için kullanılır.
+
+[in] `rootMarkerResponseFile`
+
+ Bir kök işaret içeren bir yanıt dosyasının yol adı. Kök adı, tüm izleme için bir bağlam birlikte gruplandırmak için kullanılır.
 
 ## <a name="return-value"></a>Dönüş değeri
  Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.

@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyProvider::GetPropertyProxy | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyProvider::GetPropertyProxy
 helpviewer_keywords:
@@ -12,47 +12,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa11057a66ab7b876d5f7866dfcca728bb3bb790
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 44a267b39ab630646803165a31f01b0bb4b45f47
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916914"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693795"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
-Özelliği proxy arabirimi için belirtilen ara sunucu kimliğini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetPropertyProxy(  
-   DWORD                  dwID,  
-   IPropertyProxyEESide** proxy  
-);  
-```  
-  
-```csharp  
-int GetPropertyProxy(  
-   uint                     dwID,  
-   out IPropertyProxyEESide proxy  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `dwID`  
- [in] İstenen özellik proxy kimliği.  
-  
- `proxy`  
- [out] Döndürür bir [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Dış tür görselleştiricileri desteklemek için bu yöntem genellikle çağrısı iletir [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) yöntemi. Bkz: [Visualizing ve verileri görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md) ayrıntılı IEEVisualizerService nasıl elde edilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)   
- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
- [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)   
- [Verileri Görselleştirme ve Görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+Özelliği proxy arabirimi için belirtilen ara sunucu kimliğini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetPropertyProxy(
+   DWORD                  dwID,
+   IPropertyProxyEESide** proxy
+);
+```
+
+```csharp
+int GetPropertyProxy(
+   uint                     dwID,
+   out IPropertyProxyEESide proxy
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `dwID`
+
+ [in] İstenen özellik proxy kimliği.
+
+ `proxy`
+
+ [out] Döndürür bir [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Dış tür görselleştiricileri desteklemek için bu yöntem genellikle çağrısı iletir [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) yöntemi. Bkz: [Visualizing ve verileri görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md) ayrıntılı IEEVisualizerService nasıl elde edilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)
+- [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
+- [Verileri Görselleştirme ve Görüntüleme](../../../extensibility/debugger/visualizing-and-viewing-data.md)

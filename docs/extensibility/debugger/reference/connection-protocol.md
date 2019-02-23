@@ -1,7 +1,7 @@
 ---
 title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONNECTION_PROTOCOL
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dcf3d271d331664d6d2ef210868245b50c264d6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316490"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705839"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Hata ayıklama paketi (DE) ve hata ayıklama sunucusu arasında iletişim kurmak için kullanılan protokolü belirtir.
@@ -49,26 +49,19 @@ public enum CONNECTION_PROTOCOL {
 ```
 
 #### <a name="parameters"></a>Parametreler
-CONNECTION_NONE  
-Bir sunucuya bağlantı yapıldı.
+Bir sunucuya CONNECTION_NONE Hayır bağlantısı yapıldı.
 
-CONNECTION_UNKNOWN  
-Bir bağlantı yapıldı, ancak bilinmeyen bir türüdür.
+CONNECTION_UNKNOWN bir bağlantı yapıldı, ancak bilinmeyen bir türüdür.
 
-CONNECTION_LOCAL  
-Yerel bir sunucuya bağlantısıdır.
+Yerel bir sunucuya CONNECTION_LOCAL bağlantısıdır.
 
-CONNECTION_PIPE  
-Bir adlandırılmış kanal bağlantıdır.
+Bir adlandırılmış kanal CONNECTION_PIPE bağlantısıdır.
 
-CONNECTION_TCPIP  
-Bağlantı, TCP/IP'yi kullanır.
+CONNECTION_TCPIP bağlantı TCP/IP'yi kullanır.
 
-CONNECTION_HTTP  
-Bağlantı HTTP (bir Web sunucusu üzerinden) kullanır.
+CONNECTION_HTTP bağlantı (bir Web sunucusu üzerinden) HTTP kullanır.
 
-CONNECTION_OTHER  
-Başka türde bir bağlantı kuruldu (Bu değer şu anda kullanılmamaktadır).
+Başka türde bir bağlantı kuruldu CONNECTION_OTHER (Bu değer şu anda kullanılmamaktadır).
 
 ## <a name="remarks"></a>Açıklamalar
 Bu değerleri döndürülen [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) yöntemi.
@@ -81,5 +74,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

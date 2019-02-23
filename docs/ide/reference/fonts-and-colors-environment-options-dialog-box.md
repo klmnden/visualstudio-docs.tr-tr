@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970835"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700269"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 
-**Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçlar / Seçenekler**seçip **ortam / yazı tipleri ve renkler**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
+**Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçları** > **seçenekleri**seçip **ortam** > **yazı tipleri ve Renkleri**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
 
 Renk düzenini değişiklikler, yapmanızın oturumu sırasında etkili olmaz. Renk değişiklikleri başka bir Visual Studio örneği açma ve yaptığınız değişiklikleri uygulamak için altında beklediğiniz koşullar üretme değerlendirebilirsiniz.
 
@@ -63,7 +63,13 @@ Yazı tipi ve renk düzenleri değiştirebileceğiniz tüm kullanıcı arabirimi
 
 -   **Ortam yazı tipi**
 
-     Yazı tipi stili ve boyutu için zaten ayrı bir seçenek olmayan tüm IDE kullanıcı arabirimi öğelerini değiştirir **ayarlarını göster.** Örneğin, bu seçenek için geçerlidir **başlangıç sayfası** ancak değil etkileyecek **çıkış** penceresi.
+     Yazı tipi stili ve boyutu için zaten ayrı bir seçenek olmayan tüm IDE kullanıcı arabirimi öğelerini değiştirir **ayarlarını göster**.
+
+     ::: moniker range="vs-2017"
+
+     Örneğin, bu seçenek için geçerlidir **başlangıç sayfası** ancak etkilemez **çıkış** penceresi.
+
+     ::: moniker-end
 
 -   **[Tüm metin aracı Windows]**
 

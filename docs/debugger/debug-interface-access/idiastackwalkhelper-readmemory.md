@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc89ad289d27579a81e7bbe869aab14e152bd6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611028"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694471"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Bir veri bloğu bellek yürütülebilir dosyası görüntüden okur.
@@ -52,7 +52,8 @@ HRESULT readMemory( 
 [out] Aslında okunan bayt sayısını döndürür. Varsa `pbData` olduğu `NULL`, sonra bu verilerin kullanılabilir bayt sayısı.
 
  `pbData`
-- [out içinde] Okuma bellek ile doldurulmuş bir arabellek.
+
+[out içinde] Okuma bellek ile doldurulmuş bir arabellek.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

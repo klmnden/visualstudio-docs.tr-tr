@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921065"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688348"
 ---
 # <a name="create-your-first-extension-hello-world"></a>İlk uzantınızı oluşturun: Merhaba Dünya
 
@@ -50,7 +50,11 @@ Adım 2. Gelen **şablonları** menüsünde tıklatın **Visual C#**, tıklayın
 
 Başlarken sayfası ve bazı örnek kaynaklar görmelisiniz.
 
+::: moniker range="vs-2017"
+
 Bu öğreticide bırakın ve kendisine döndürülmesini gerekiyorsa, yeni HelloWorld projeniz bulabileceğiniz **başlangıç sayfası** içinde **son** bölümü.
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Özel komut ekleme
 

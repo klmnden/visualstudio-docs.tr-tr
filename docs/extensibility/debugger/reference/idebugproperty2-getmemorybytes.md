@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetMemoryBytes | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetMemoryBytes
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb89111dbaed95d4c0aa875a8b2f8fa716b79d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12d35ace2d5a2b2f0c10d4b2e0a44a05f52942fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967043"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684136"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
-Bir özelliğin değerini oluşturan bellek bayt alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetMemoryBytes (   
-   IDebugMemoryBytes2** ppMemoryBytes  
-);  
-```  
-  
-```csharp  
-int GetMemoryBytes (   
-   out IDebugMemoryBytes2 ppMemoryBytes  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppMemoryBytes`  
- [out] Döndürür bir [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) özelliğinin değeri içeren belleği almak için kullanılan nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür. Döndürür `S_GETMEMORYBYTES_NO_MEMORY_BYTES` almak için hiçbir bellek bayt varsa.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)
+Bir özelliğin değerini oluşturan bellek bayt alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetMemoryBytes ( 
+   IDebugMemoryBytes2** ppMemoryBytes
+);
+```
+
+```csharp
+int GetMemoryBytes ( 
+   out IDebugMemoryBytes2 ppMemoryBytes
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppMemoryBytes`
+
+ [out] Döndürür bir [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) özelliğinin değeri içeren belleği almak için kullanılan nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür. Döndürür `S_GETMEMORYBYTES_NO_MEMORY_BYTES` almak için hiçbir bellek bayt varsa.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

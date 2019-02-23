@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027392"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683603"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
 Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıklamanıza yardımcı olmak için çok sayıda güçlü özellikler sağlar. Bu konuda bazı temel özellikleri öğrenmek için hızlı bir yolunu sağlar.
 
-## <a name="create-a-new-project"></a>Yeni bir proje oluşturma 
+## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
 1. Visual Studio'da **Dosya > Yeni proje**.
 
@@ -110,7 +110,7 @@ Ortak klavye komutları için kullanılan kodu adımlayın dahil **F10** ve **F1
 
     ![Bir datatip görüntüleyin](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Datatip geçerli değerini gösteren `c2` değişkeni ve onun özelliklerini denetleme olanak tanır. Beklediğiniz olmayan bir değer görürseniz, hata ayıklama sırasında bir hata muhtemelen önceki veya çağıran kod satırıyla vardır. 
+    Datatip geçerli değerini gösteren `c2` değişkeni ve onun özelliklerini denetleme olanak tanır. Beklediğiniz olmayan bir değer görürseniz, hata ayıklama sırasında bir hata muhtemelen önceki veya çağıran kod satırıyla vardır.
 
 2. Geçerli özellik değerlerini aramak için datatip genişletin `c2` nesne.
 

@@ -10,50 +10,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61319e723083e2f3daf91621ec46723fcb28f3ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f37ed2819e1c5999c7d225e52f652ebef3bd7da
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938100"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692118"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Uzantıları Windows Installer dağıtımı için hazırlama
-Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazsınız. Ancak, bir VSIX paketi MSI dağıtım içeriğini ayıklayabilirsiniz. Bu belge, bir kurulum projesi eklenmek üzere bir VSIX paketi varsayılan çıktısı bir projesini Hazırlama işlemi gösterilmektedir.  
-  
-## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Uzantı projesini Windows Installer dağıtımı için hazırlama  
- Bu adımları bir kurulum projesi için eklemeden önce yeni uzantı projelerde gerçekleştirin.  
-  
-### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Uzantı projesini Windows Installer dağıtımı için hazırlama  
-  
-1.  VSPackage, MEF Bileşeni, düzenleyici kenarlığı veya bir VSIX bildirimi içeren başka bir genişletilebilirlik projesi türü oluşturun.  
-  
-2.  VSIX bildirimi Kod Düzenleyicisi'nde açın.  
-  
-3.  Ayarlama `InstalledByMsi` öğesi için VSIX bildiriminin `true`. VSIX bildirimi hakkında daha fazla bilgi için bkz: [VSIX Uzantı Şeması 2.0 başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md).  
-  
-     Bu VSIX yükleyicisi bileşeni yüklemek üzere çalışmadan engeller.  
-  
-4.  Projeye sağ **Çözüm Gezgini** tıklatıp **özellikleri**.  
-  
-5.  Seçin **VSIX** sekmesi.  
-  
-6.  Başlıklı kutuyu işaretleyin **kopyalama VSIX içeriğini aşağıdaki konuma** ve Kurulum projesi dosyaları burada çeker yolunu yazın.  
-  
-## <a name="extract-files-from-an-existing-vsix-package"></a>Var olan bir VSIX paketinden dosyaları ayıklayın  
- Kaynak dosyalar olmadığında bir kurulum projesi için mevcut bir VSIX paketinin içeriği eklemek için aşağıdaki adımları gerçekleştirin.  
-  
-### <a name="to-extract-files-from-an-existing-vsix-package"></a>Varolan bir VSIX paketi dosyalarını ayıklamak için  
-  
-1.  Yeniden adlandırma *. VSIX* dosya uzantısını içeren *filename.vsix* için *filename.zip*.  
-  
-2.  İçeriğini kopyalayın *.zip* bir dizine dosya.  
-  
-3.  Silme *[Content_types] .xml* dosyası.  
-  
-4.  VSIX bildirimi, önceki yordamda gösterildiği gibi düzenleyin.  
-  
-5.  Kalan dosyaları kurulum projenize ekleyin.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Visual Studio Installer dağıtımı](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [İzlenecek yol: Özel Eylem oluştur](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+Bir Windows Installer paketi (MSI), bir VSIX paketi dağıtmak için kullanamazsınız. Ancak, bir VSIX paketi MSI dağıtım içeriğini ayıklayabilirsiniz. Bu belge, bir kurulum projesi eklenmek üzere bir VSIX paketi varsayılan çıktısı bir projesini Hazırlama işlemi gösterilmektedir.
+
+## <a name="prepare-an-extension-project-for-windows-installer-deployment"></a>Uzantı projesini Windows Installer dağıtımı için hazırlama
+ Bu adımları bir kurulum projesi için eklemeden önce yeni uzantı projelerde gerçekleştirin.
+
+### <a name="to-prepare-an-extension-project-for-windows-installer-deployment"></a>Uzantı projesini Windows Installer dağıtımı için hazırlama
+
+1.  VSPackage, MEF Bileşeni, düzenleyici kenarlığı veya bir VSIX bildirimi içeren başka bir genişletilebilirlik projesi türü oluşturun.
+
+2.  VSIX bildirimi Kod Düzenleyicisi'nde açın.
+
+3.  Ayarlama `InstalledByMsi` öğesi için VSIX bildiriminin `true`. VSIX bildirimi hakkında daha fazla bilgi için bkz: [VSIX Uzantı Şeması 2.0 başvurusu](../extensibility/vsix-extension-schema-2-0-reference.md).
+
+     Bu VSIX yükleyicisi bileşeni yüklemek üzere çalışmadan engeller.
+
+4.  Projeye sağ **Çözüm Gezgini** tıklatıp **özellikleri**.
+
+5.  Seçin **VSIX** sekmesi.
+
+6.  Başlıklı kutuyu işaretleyin **kopyalama VSIX içeriğini aşağıdaki konuma** ve Kurulum projesi dosyaları burada çeker yolunu yazın.
+
+## <a name="extract-files-from-an-existing-vsix-package"></a>Var olan bir VSIX paketinden dosyaları ayıklayın
+ Kaynak dosyalar olmadığında bir kurulum projesi için mevcut bir VSIX paketinin içeriği eklemek için aşağıdaki adımları gerçekleştirin.
+
+### <a name="to-extract-files-from-an-existing-vsix-package"></a>Varolan bir VSIX paketi dosyalarını ayıklamak için
+
+1.  Yeniden adlandırma *. VSIX* dosya uzantısını içeren *filename.vsix* için *filename.zip*.
+
+2.  İçeriğini kopyalayın *.zip* bir dizine dosya.
+
+3.  Silme *[Content_types] .xml* dosyası.
+
+4.  VSIX bildirimi, önceki yordamda gösterildiği gibi düzenleyin.
+
+5.  Kalan dosyaları kurulum projenize ekleyin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Visual Studio Installer dağıtımı](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [İzlenecek yol: Özel Eylem oluştur](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

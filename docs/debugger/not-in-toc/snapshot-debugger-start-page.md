@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939796"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703714"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Anlık görüntü hata ayıklayıcısı ile çalışmaya başlama
 
@@ -27,7 +27,7 @@ Snapshot Debugger, uygulamanızdan anlık görüntüleri toplar. Anlık görünt
 
 ### <a name="set-a-snappoint"></a>Bir anlık görüntü noktası ayarlayın
 
-1. Kod Düzenleyicisi'nde bir anlık görüntü noktası ayarlamak ilginizi çeken bir kod satırının yanındaki sol kanaldaki tıklayın. Bildiğiniz çalışacak kod olduğundan emin olun. 
+1. Kod Düzenleyicisi'nde bir anlık görüntü noktası ayarlamak ilginizi çeken bir kod satırının yanındaki sol kanaldaki tıklayın. Bildiğiniz çalışacak kod olduğundan emin olun.
 
     ![Düzenleyicide bir anlık görüntü noktası ayarlama](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Snapshot Debugger, uygulamanızdan anlık görüntüleri toplar. Anlık görünt
 
 ### <a name="open-a-snapshot"></a>Bir anlık görüntüsünü Aç
 
-1. Anlık görüntü noktası isabet edildiğinde bir anlık görüntü sağdaki tanılama araçları penceresi görüntülenir. Penceresi açık değilse, bunu seçerek açabilirsiniz **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**. 
+1. Anlık görüntü noktası isabet edildiğinde bir anlık görüntü sağdaki tanılama araçları penceresi görüntülenir. Penceresi açık değilse, bunu seçerek açabilirsiniz **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
 
     ![Tanılama Araçları penceresinde anlık görüntü](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Web sitesinin kendisinde hala çalışıyor ve son kullanıcıların etkilenen d
 
 3. İçinde **ileti** günlüğe kaydetmek istediğiniz bir günlük iletisi girin. Ayrıca, kaşlı ayraçlar içinde yerleştirerek değişkenleri, bir günlük iletisinde değerlendirebilirsiniz.
 
-    Seçerseniz **çıkış penceresine Gönder**, günlüğe kaydetme noktası isabet edildiğinde tanılama araçları penceresinde bir ileti görüntülenir. 
+    Seçerseniz **çıkış penceresine Gönder**, günlüğe kaydetme noktası isabet edildiğinde tanılama araçları penceresinde bir ileti görüntülenir.
 
     Seçerseniz **uygulama günlüğüne Gönder**, gelen iletileri görebilirsiniz herhangi bir ileti görüntülenir `System.Diagnostics.Trace` (veya `ILogger` .NET core'da), günlüğe kaydetme noktası isabet edildiğinde App Insights gibi.
 
@@ -69,6 +69,6 @@ Snapshot Debugger hakkında daha fazla bilgi bulabilirsiniz [docs sayfasının](
 
 ## <a name="dont-show-me-this-again"></a>Yok ' Bu yeniden Göster
 
-Hiç anlık görüntü hata ayıklayıcısı başlangıç sayfası yeniden Snapshot Debugger bağladığınızda göstermek için değiştirin **Göster 'Başlarken' sayfasında oturum başlangıcı** seçeneğini **Araçları**  >   **Seçenekleri** > **anlık görüntü hata ayıklayıcısı**. 
+Hiç anlık görüntü hata ayıklayıcısı başlangıç sayfası yeniden Snapshot Debugger bağladığınızda göstermek için değiştirin **Göster 'Başlarken' sayfasında oturum başlangıcı** seçeneğini **Araçları**  >   **Seçenekleri** > **anlık görüntü hata ayıklayıcısı**.
 
 ![Anlık görüntü hata ayıklayıcısı aracı seçeneği sayfası](../media/snapshot-startpage-tools-options.png)

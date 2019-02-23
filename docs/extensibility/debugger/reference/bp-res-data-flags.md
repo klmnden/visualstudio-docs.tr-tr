@@ -1,7 +1,7 @@
 ---
 title: BP_RES_DATA_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RES_DATA_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b111e98edb1d364a466157a6db4c0089617f18de
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413026"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714068"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 Veri kesme noktası olup olmadığını Öykünülen veya uygulanan donanımı belirtir.
@@ -38,8 +38,7 @@ public enum enum_BP_RES_DATA_FLAGS {
 ```
 
 ## <a name="members"></a>Üyeler
-BP_RES_DATA_EMULATED  
-Veri kesme noktası benzetilip benzetilmediğini olduğunu belirtir.
+BP_RES_DATA_EMULATED veri kesme noktası benzetilip benzetilmediğini olduğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 İçin kullanılan `dwFlags` üyesi [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) yapısı.
@@ -52,5 +51,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

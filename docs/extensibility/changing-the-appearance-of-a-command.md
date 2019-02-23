@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317087"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691351"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Bir komutun görünümünü değiştirme
 Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağlayabilirsiniz. Örneğin, kullanılabilir olmadığında farklı aramak için bir komut isteyebilirsiniz. Komutları kullanılabilir veya kullanılamaz hale, gizleme veya bunları gösterebilir veya denetleyin veya menüde seçeneğinin işaretini kaldırın.
@@ -85,7 +85,7 @@ Bir komutun görünümünü değiştirmek için aşağıdaki eylemlerden birini 
 8. Üzerinde **Araçları** artık görmeniz menü **yeni metin**. Tıklayın **yeni metin**. Komutu şimdi gri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)  
-[VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[Menüleri ve komutlari genişletme komutları](../extensibility/extending-menus-and-commands.md)  
-[Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+- [VSPackage kullanıcı arabirimi öğelerini nasıl eklenir](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Menüleri ve komutlari genişletme komutları](../extensibility/extending-menus-and-commands.md)
+- [Visual Studio komut tablosu (. Vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

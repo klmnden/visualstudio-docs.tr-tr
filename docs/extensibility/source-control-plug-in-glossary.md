@@ -11,58 +11,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 167be5f3b29fbab77dadf75aecd77bc799a1e89e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0df624a27513fa0eb18b2643bb7c680d71d94c0c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945704"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722382"
 ---
 # <a name="source-control-plug-in-glossary"></a>Kaynak Denetimi Eklentisi Sözlüğü
-Aşağıdaki yardımcı terimleri ve tanımları kaynak denetimi eklentisi SDK belgelerine ilgilidir.  
-  
-## <a name="definitions"></a>Tanımlar  
- İade etme  
- Bir kullanıcı için çalışan bir kopya değişiklik yaptığında, bir kullanıcı merkezi kaynak denetim deposu ile çalışma kopyadan değişiklikleri göndermeniz gerekir. Bu, diğer kullanıcılar için kullanılabilir olan dosyayı yeni bir düzeltmesi oluşturulur. Bu işlem, bir iade etme denir.  
-  
- Kullanıma alma  
- Bir çalışma kopyası amacınızla değiştirmek için depoyu bildiren depodan isteme işlemi. Bir çalışan kopya kullanıma andan itibaren proje durumunu yansıtır.  
-  
- İstemci  
- Kaynak kod denetim sistemini kullanan bir program. Bu belgede, bu Visual Studio IDE olur.  
-  
- Yorum  
- Kaynak denetimi işlemi gerçekleştirilirken bir kullanıcı için bir düzeltme ekleyebilirsiniz değişiklikleri açıklayan bir ileti.  
-  
- Çakışma  
- İki kullanıcı aynı bölgede aynı dosyasının değişiklikleri iade çalıştığınızda bir durumdur. Genellikle, bir birleştirme gerçekleştirilmelidir.  
-  
- Dizin  
- İstemci tarafı yerel bir klasöre bir dizin adlandırılır. Bu, bir kullanıcının değişiklikleri gerçekten yaptığı kopyasıdır. Belirli bir projenin birçok çalışma kopyalarının olabilir; genellikle her geliştirici kendi kopya vardır.  
-  
- Al  
- Bir Al işlemi, kullanıcının çalışma kopyası güncel depo kopyalama ile getirir. Kullanıcı yalnızca en son kopyasını gerekiyor ancak değişiklik amaçlayan bir kullanıma alma, bir get gerçekleştirilir.  
-  
- Geçmiş  
- Buna genellikle bir özetini tüm kullanıma alma, iadeler, güncelleştirmeleri, etiketler ve kaynak denetim deposunda bitti yayınlar var.  
-  
- IDE  
- Genel olarak, Visual Studio tümleşik geliştirme ortamı için ifade eder. Ancak, kaynak denetimi eklentisi API tanımak diğer istemci ortamları da başvurabileceğiniz.  
-  
- Birleştir  
- İşlem sırasında hangi iki veya daha fazla kaynak kod dosyaları önceki dosyalarından tüm özellikleri içerir, yeni bir dosya oluşturmak üzere birleştirilir. Bu kavramı burada iki veya daha fazla geliştiriciler dosyalar üzerinde eşzamanlı olarak çalışabilir sürüm denetiminde önemlidir.  
-  
- Proje  
- Bir kaynak denetim klasörünü, genellikle bir proje olarak da adlandırılır. Visual Studio'da bu projeler veya çözümler ile hiçbir ilişkisi yok.  
-  
- Eklenti  
- DLL kaynak denetimi eklentisi API uygulayarak kaynak denetimi işlevlerini sağlar.  
-  
- Havuz  
- Burada bir kaynak denetim sistemi ana kopya bir projenin tam düzeltme geçmişi saklar. Her projenin tam olarak bir depo yok.  
-  
- Gözden geçirme  
- Bir dosyanın geçmişini veya dosya kümesini edilen bir değişikliği. Bir düzeltme biridir sürekli olarak değişen bir projede anlık görüntüsünü alın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)
+Aşağıdaki yardımcı terimleri ve tanımları kaynak denetimi eklentisi SDK belgelerine ilgilidir.
+
+## <a name="definitions"></a>Tanımlar
+ Bir kullanıcı için bir çalışma kopyası değişiklik yapıldığında iade etme, bir kullanıcı, merkezi kaynak denetim deposu ile çalışma kopyadan değişiklikleri göndermeniz gerekir. Bu, diğer kullanıcılar için kullanılabilir olan dosyayı yeni bir düzeltmesi oluşturulur. Bu işlem, bir iade etme denir.
+
+ Kullanıma alma çalışma kopyası amacınızla değiştirmek için depoyu bildiren depodan isteme işlemi. Bir çalışan kopya kullanıma andan itibaren proje durumunu yansıtır.
+
+ Kaynak kodu denetim sistemi kullanan bir istemci programı. Bu belgede, bu Visual Studio IDE olur.
+
+ Kaynak denetimi işlemi gerçekleştirilirken bir kullanıcı için bir düzeltme ekleyebilirsiniz değişiklikleri açıklayan bir yorum ileti.
+
+ Aynı dosyanın aynı bölgeye iki kullanıcılar iade etmeyi denediğinde bir çakışma durumu değişir. Genellikle, bir birleştirme gerçekleştirilmelidir.
+
+ Dizin bir istemci-tarafı yerel klasörü dizin olarak adlandırılır. Bu, bir kullanıcının değişiklikleri gerçekten yaptığı kopyasıdır. Belirli bir projenin birçok çalışma kopyalarının olabilir; genellikle her geliştirici kendi kopya vardır.
+
+ Get bir Al işlemi, kullanıcının çalışma kopyası güncel depo kopyalama ile getirir. Kullanıcı yalnızca en son kopyasını gerekiyor ancak değişiklik amaçlayan bir kullanıma alma, bir get gerçekleştirilir.
+
+ Genellikle tüm kullanıma alma, iadeler, güncelleştirmeleri, etiketler ve kaynak denetim deposunda bitti yayınlar özetini olan geçmiş.
+
+ Genelde IDE, Visual Studio tümleşik geliştirme ortamına anlamına gelir. Ancak, kaynak denetimi eklentisi API tanımak diğer istemci ortamları da başvurabileceğiniz.
+
+ İşlem sırasında hangi iki veya daha fazla kaynak kod dosyaları önceki dosyalarından tüm özellikleri içerir, yeni bir dosya oluşturmak üzere birleştirilir birleştirin. Bu kavramı burada iki veya daha fazla geliştiriciler dosyalar üzerinde eşzamanlı olarak çalışabilir sürüm denetiminde önemlidir.
+
+ Bir proje kaynak denetimi klasörü, genellikle bir proje olarak da adlandırılır. Visual Studio'da bu projeler veya çözümler ile hiçbir ilişkisi yok.
+
+ Kaynak Denetimi Eklentisi API uygulayarak kaynak denetimi işlevlerini sağlar. eklentisini bir DLL.
+
+ Bir kaynak denetim sistemi bir projenin tam düzeltme geçmişi depoladığı ana kopya deposu. Her projenin tam olarak bir depo yok.
+
+ Bir dosyanın geçmişini veya dosya kümesini değişiklik düzeltme bir taahhüt. Bir düzeltme biridir sürekli olarak değişen bir projede anlık görüntüsünü alın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Kaynak Denetimi Eklentileri](../extensibility/source-control-plug-ins.md)

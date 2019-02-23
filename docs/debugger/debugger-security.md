@@ -17,67 +17,68 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa69e2af329d5066c97f5400db346b89a1549e41
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d23f3c2677f1e99a80b5a3f05d1f6f4f69294e27
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937015"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707373"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
-Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan hata ayıklama yapılırken erişemeyecek çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcı hataları ayıklanmakta olan makinede yaygın zarar başını.  
-  
- Ancak, birçok geliştiricinin güvenlik tehdidi ters yöne akabilir başlığımız dikkatinizi çekmiş olabilir değil. Hata ayıklanan işlemin hata ayıklama makinesi güvenliğini tehlikeye atabilir, kötü amaçlı kod için mümkündür: bir dizi karşı korumalı olacak güvenlik açıkları vardır.  
-  
-## <a name="security-best-practices"></a>En İyi Güvenlik Uygulamaları  
- Bir hata ayıklarken kodu ve hata ayıklayıcı arasında örtük güven ilişkisi yoktur. Ayıklamanız istekliyse, aynı zamanda çalıştırmak iradeye sahip olmalıdır. Balonlarının ne ayıkladığınız güvenemez olmalıdır ' dir. Güven olamaz, ardından ayıklama değil veya bir makineden reddetmeniz destekleyebilir ve yalıtılmış bir ortamda ayıklama.  
-  
- Olası saldırı yüzeyini azaltmak için hata ayıklama üretim makinelerde devre dışı bırakılmalıdır. Aynı nedenden dolayı hata ayıklama hiç süresiz olarak etkinleştirilmesi gerekir.  
-  
-### <a name="managed-debugging-security"></a>Yönetilen hata ayıklama güvenlik  
- Aşağıda, tüm yönetilen hata ayıklama uygulanan genel bazı öneriler verilmiştir.  
-  
-- Güvenilmeyen bir kullanıcının işlemine iliştirme oluştururken dikkatli olun: Bu işlemi gerçekleştirdiğinizde, güvenilir olduğunu varsayın. Güvenilmeyen bir kullanıcının işleme girişiminde bulunduğunuzda bir güvenlik uyarısı iletişim kutusu onayı işleme isteyip istemediğinizi soran görünür. "Kullanıcıların güvenilen", dahil, ve bir dizi standart kullanıcıların yaygın olarak .NET Framework gibi yüklü olan makineler üzerinde tanımlanan **aspnet**, **localsystem**, **networkservice**, ve **localservice**. Daha fazla bilgi için [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
-  
-- Internet ve içine yüklenirken kapalı bir proje indirme işlemi gerçekleştirirken dikkatli olun [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu hata ayıklama olmadan bile yapmak için çok risklidir. Bunu yaptığınızda, proje ve içerdiği kod güvenilir olduğunu varsayarak.  
-  
-  Daha fazla bilgi için [yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md).  
-  
-### <a name="remote-debugging-security"></a>Uzaktan hata ayıklama güvenlik  
- Yerel hata ayıklama, uzaktan hata ayıklama daha genellikle güvenlidir. Uzaktan hata ayıklama araştırıldığı toplam yüzey alanını artırır.  
-  
- Visual Studio uzaktan hata ayıklama İzleyicisi (msvsmon.exe) uzak hata ayıklama kullanılır ve bu yapılandırma için birçok güvenlik önerileri vardır. Kimlik doğrulama modunu yapılandırmak için tercih edilen yol Windows kimlik doğrulaması, çünkü kimlik doğrulaması yok modu güvenli değil.  
-  
- ![Hata iletişim kutusu](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")  
-  
- Windows kimlik doğrulaması modunu kullanırken, kullanıcı, bilgisayar üzerindeki tüm izinler verilir çünkü bir güvenilir olmayan kullanıcı için msvsmon'un bağlanma izni verme tehlikeli olduğundan emin olun...  
-  
- Bilinmeyen bir işlem uzak makinede hata ayıklama yok: hata ayıklayıcıyı çalıştıran makinenin etkileyebilir veya msvsmon.exe, Visual Studio uzaktan hata ayıklama İzleyicisi tehlikeye olası açıkları vardır. Kesinlikle bilinmeyen bir işlemde hata ayıklamak gerekir, yerel olarak hata ayıklama deneyin ve yerelleştirilmiş olası tehditlere karşı korumak için bir Güvenlik Duvarı'nı kullanın.  
-  
- Daha fazla bilgi için [uzaktan hata ayıklama](../debugger/remote-debugging.md).  
-  
-### <a name="web-services-debugging-security"></a>Güvenlik hata ayıklamasını web Hizmetleri  
- Yerel olarak hata ayıklama daha güvenlidir, ancak sonra büyük olasılıkla sahip olmadığınız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] web sunucusunda yüklüyse, yerel hata ayıklama pratik olmayabilir. Genel olarak, Web hizmetlerinde hata ayıklama işlemi, uzaktan, geliştirme sırasında bu nedenle uzaktan hata ayıklama güvenlik önerilerini de hata ayıklama Web Hizmetleri için geçerli dışında gerçekleştirilir. Ek en iyi yöntemlerden bazıları aşağıda verilmiştir. Daha fazla bilgi için [hata ayıklama XML Web Hizmetleri](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
-  
--   Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.  
-  
--   Web sunucusu güvenli hata ayıklama öncesinde bildiğinizden emin olun. Güvenli olduğundan emin değilseniz, hata ayıklama değil.  
-  
--   Internet'te kullanıma sunulan bir Web hizmeti hata ayıklaması yapıyorsanız özellikle dikkatli olun.  
-  
-### <a name="external-components"></a>Dış bileşenler  
- Özellikle kod yazmadı, programınızı etkileşimde dış bileşenler güven durumunu unutmayın. Ayrıca bileşenlerinin unutmayın, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya hata ayıklayıcı kullanabilirsiniz.  
-  
-### <a name="symbols-and-source-code"></a>Simgeler ve kaynak kodu  
- İki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] güvenlik göz önünde bulundurulması gereken araçlar şunlardır:  
-  
-- Kaynak sunucu sürümleriyle kaynak koddan bir kaynak kodu deposu sağlar. Geçerli sürümü, bir programın kaynak koduna sahip durumlarda yararlı olur. [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md).  
-  
-- Sembol sunucusu, bir sistem çağrısı sırasında bir kilitlenme hatalarını ayıklamak için gerekli sembolleri sağlamak için kullanılır.  
-  
-  Bkz: [sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan hata ayıklama yapılırken erişemeyecek çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcı hataları ayıklanmakta olan makinede yaygın zarar başını.
+
+ Ancak, birçok geliştiricinin güvenlik tehdidi ters yöne akabilir başlığımız dikkatinizi çekmiş olabilir değil. Hata ayıklanan işlemin hata ayıklama makinesi güvenliğini tehlikeye atabilir, kötü amaçlı kod için mümkündür: bir dizi karşı korumalı olacak güvenlik açıkları vardır.
+
+## <a name="security-best-practices"></a>En İyi Güvenlik Uygulamaları
+ Bir hata ayıklarken kodu ve hata ayıklayıcı arasında örtük güven ilişkisi yoktur. Ayıklamanız istekliyse, aynı zamanda çalıştırmak iradeye sahip olmalıdır. Balonlarının ne ayıkladığınız güvenemez olmalıdır ' dir. Güven olamaz, ardından ayıklama değil veya bir makineden reddetmeniz destekleyebilir ve yalıtılmış bir ortamda ayıklama.
+
+ Olası saldırı yüzeyini azaltmak için hata ayıklama üretim makinelerde devre dışı bırakılmalıdır. Aynı nedenden dolayı hata ayıklama hiç süresiz olarak etkinleştirilmesi gerekir.
+
+### <a name="managed-debugging-security"></a>Yönetilen hata ayıklama güvenlik
+ Aşağıda, tüm yönetilen hata ayıklama uygulanan genel bazı öneriler verilmiştir.
+
+- Güvenilmeyen bir kullanıcının işlemine iliştirme oluştururken dikkatli olun: Bu işlemi gerçekleştirdiğinizde, güvenilir olduğunu varsayın. Güvenilmeyen bir kullanıcının işleme girişiminde bulunduğunuzda bir güvenlik uyarısı iletişim kutusu onayı işleme isteyip istemediğinizi soran görünür. "Kullanıcıların güvenilen", dahil, ve bir dizi standart kullanıcıların yaygın olarak .NET Framework gibi yüklü olan makineler üzerinde tanımlanan **aspnet**, **localsystem**, **networkservice**, ve **localservice**. Daha fazla bilgi için [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+
+- Internet ve içine yüklenirken kapalı bir proje indirme işlemi gerçekleştirirken dikkatli olun [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Bu hata ayıklama olmadan bile yapmak için çok risklidir. Bunu yaptığınızda, proje ve içerdiği kod güvenilir olduğunu varsayarak.
+
+  Daha fazla bilgi için [yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md).
+
+### <a name="remote-debugging-security"></a>Uzaktan hata ayıklama güvenlik
+ Yerel hata ayıklama, uzaktan hata ayıklama daha genellikle güvenlidir. Uzaktan hata ayıklama araştırıldığı toplam yüzey alanını artırır.
+
+ Visual Studio uzaktan hata ayıklama İzleyicisi (msvsmon.exe) uzak hata ayıklama kullanılır ve bu yapılandırma için birçok güvenlik önerileri vardır. Kimlik doğrulama modunu yapılandırmak için tercih edilen yol Windows kimlik doğrulaması, çünkü kimlik doğrulaması yok modu güvenli değil.
+
+ ![Hata iletişim kutusu](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
+
+ Windows kimlik doğrulaması modunu kullanırken, kullanıcı, bilgisayar üzerindeki tüm izinler verilir çünkü bir güvenilir olmayan kullanıcı için msvsmon'un bağlanma izni verme tehlikeli olduğundan emin olun...
+
+ Bilinmeyen bir işlem uzak makinede hata ayıklama yok: hata ayıklayıcıyı çalıştıran makinenin etkileyebilir veya msvsmon.exe, Visual Studio uzaktan hata ayıklama İzleyicisi tehlikeye olası açıkları vardır. Kesinlikle bilinmeyen bir işlemde hata ayıklamak gerekir, yerel olarak hata ayıklama deneyin ve yerelleştirilmiş olası tehditlere karşı korumak için bir Güvenlik Duvarı'nı kullanın.
+
+ Daha fazla bilgi için [uzaktan hata ayıklama](../debugger/remote-debugging.md).
+
+### <a name="web-services-debugging-security"></a>Güvenlik hata ayıklamasını web Hizmetleri
+ Yerel olarak hata ayıklama daha güvenlidir, ancak sonra büyük olasılıkla sahip olmadığınız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] web sunucusunda yüklüyse, yerel hata ayıklama pratik olmayabilir. Genel olarak, Web hizmetlerinde hata ayıklama işlemi, uzaktan, geliştirme sırasında bu nedenle uzaktan hata ayıklama güvenlik önerilerini de hata ayıklama Web Hizmetleri için geçerli dışında gerçekleştirilir. Ek en iyi yöntemlerden bazıları aşağıda verilmiştir. Daha fazla bilgi için [hata ayıklama XML Web Hizmetleri](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
+
+-   Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.
+
+-   Web sunucusu güvenli hata ayıklama öncesinde bildiğinizden emin olun. Güvenli olduğundan emin değilseniz, hata ayıklama değil.
+
+-   Internet'te kullanıma sunulan bir Web hizmeti hata ayıklaması yapıyorsanız özellikle dikkatli olun.
+
+### <a name="external-components"></a>Dış bileşenler
+ Özellikle kod yazmadı, programınızı etkileşimde dış bileşenler güven durumunu unutmayın. Ayrıca bileşenlerinin unutmayın, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya hata ayıklayıcı kullanabilirsiniz.
+
+### <a name="symbols-and-source-code"></a>Simgeler ve kaynak kodu
+ İki [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] güvenlik göz önünde bulundurulması gereken araçlar şunlardır:
+
+- Kaynak sunucu sürümleriyle kaynak koddan bir kaynak kodu deposu sağlar. Geçerli sürümü, bir programın kaynak koduna sahip durumlarda yararlı olur. [Güvenlik Uyarısı: Hata ayıklayıcı güvenilmeyen komut yürütme gerekir](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+
+- Sembol sunucusu, bir sistem çağrısı sırasında bir kilitlenme hatalarını ayıklamak için gerekli sembolleri sağlamak için kullanılır.
+
+  Bkz: [sembol (.pdb) belirtin ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
+- [Güvenlik Uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Güvenlik Uyarısı: Hata Ayıklayıcı Güvenilmeyen Komut Yürütmeli](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

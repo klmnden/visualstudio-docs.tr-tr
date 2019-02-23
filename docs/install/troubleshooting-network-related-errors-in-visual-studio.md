@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fe93791d60ea5cf398b71b44ec20a787455807
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a6c6996d01c46d832b051f8805bbe7f761c57ac5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928341"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692352"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio yüklediğinizde veya kullandığınızda ağ ile ilgili hataları giderme
 
@@ -48,7 +48,7 @@ Bu hata genellikle kullanıcılar bir ara sunucu üzerinden İnternet'e bağlı 
 
 - Aksi takdirde http kaldırabilirsiniz:&#47;&#47;go.microsoft.com, http için Ara sunucu kimlik doğrulaması iletişim kutusu gösterilir böylece beyaz liste adres:&#47;&#47;go.microsoft.com adresi ve Visual Studio olduğunda sunucu uç noktaları yeniden başlatıldı.
 
-    VEYA
+  -VEYA-
 
 - Ara sunucunuzda varsayılan kimlik bilgilerinizi kullanmak istiyorsanız, aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
@@ -58,13 +58,13 @@ Bu hata genellikle kullanıcılar bir ara sunucu üzerinden İnternet'e bağlı 
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       Doğru ara sunucu adresi için ağınızda eklemelisiniz `proxyaddress="<http://<yourproxy:port#>`.
 
-     VEYA
+  -VEYA-
 
 - Yönergeleri de izleyebilirsiniz [kimliği doğrulanmış bir Web Proxy üzerinden bağlanma](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) Ara sunucusunu kullanacak şekilde sağlayacak kodun nasıl ekleneceği gösterilmektedir blogda.
 

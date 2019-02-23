@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::Resume | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::Resume
 helpviewer_keywords:
@@ -12,42 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807f89eeed4e85e86c1a09a34ae12744bac8e0ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935273"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702076"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
-Bir iş parçacığının yürütülmesini sürdürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Resume (   
-   DWORD *pdwSuspendCount  
-);  
-```  
-  
-```csharp  
-int Resume (   
-   out uint pdwSuspendCount  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pdwSuspendCount`  
- [out] Sonra devam et işlemi askıya alma sayımı döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Askıya alma sayımı her çağrı için bu yöntemi azaltır zaman 0 ulaşana kadar yürütme gerçekten sürdürülür. Bu askıya alma sayımı görüntülenir **iş parçacıkları** hata ayıklama penceresine.  
-  
- Bu yöntem her çağrı için olmalıdır önceki bir çağrı [askıya alma](../../../extensibility/debugger/reference/idebugthread2-suspend.md) yöntemi. Askıya alma sayımı kaç kez belirler `IDebugThread2::Suspend` yönteminin çağrılıp çağrılmadığını kadar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+Bir iş parçacığının yürütülmesini sürdürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Resume ( 
+   DWORD *pdwSuspendCount
+);
+```
+
+```csharp
+int Resume ( 
+   out uint pdwSuspendCount
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pdwSuspendCount`
+
+ [out] Sonra devam et işlemi askıya alma sayımı döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Askıya alma sayımı her çağrı için bu yöntemi azaltır zaman 0 ulaşana kadar yürütme gerçekten sürdürülür. Bu askıya alma sayımı görüntülenir **iş parçacıkları** hata ayıklama penceresine.
+
+ Bu yöntem her çağrı için olmalıdır önceki bir çağrı [askıya alma](../../../extensibility/debugger/reference/idebugthread2-suspend.md) yöntemi. Askıya alma sayımı kaç kez belirler `IDebugThread2::Suspend` yönteminin çağrılıp çağrılmadığını kadar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

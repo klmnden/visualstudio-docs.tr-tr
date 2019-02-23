@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugBoundBreakpoints2::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugBoundBreakpoints2::Clone
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b64cffb3c903654bb9d393fcf2b6607d3c23641
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c3c350901d779b9c616b74a74c53cd5d852879d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964489"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697591"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
-Bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Clone(  
-   IEnumDebugBoundBreakpoints2** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugBoundBreakpoints2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppEnum`  
- [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
+Bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Clone(
+   IEnumDebugBoundBreakpoints2** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugBoundBreakpoints2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppEnum`
+
+ [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

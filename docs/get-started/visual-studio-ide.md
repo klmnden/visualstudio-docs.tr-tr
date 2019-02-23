@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017'in genel bakış
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316827"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705511"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Visual Studio IDE Hoş Geldiniz
 
@@ -62,6 +62,8 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 - [Hızlı Başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. **Hızlı başlatma** arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa **hızlı başlatma** bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçlar sağlar.
+
+   Bulabilirsiniz **hızlı başlatma** IDE, sağ üst kısımdaki arama kutusuna. (Alternatif olarak, basın **Ctrl**+**Q** erişmek için.)
 
    ![Visual Studio'da hızlı başlatma arama kutusu](media/quick-launch-nuget.png)
 

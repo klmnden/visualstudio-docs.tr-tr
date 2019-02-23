@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c46719b7de97e2a55eefb28d9e27df1557a90e65
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413364"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701231"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Belirtilen modül için belirtilen üst öznitelik ile hata ayıklama sembolleri alır.
@@ -48,26 +48,33 @@ int GetSymAttribute (
 ```
 
 #### <a name="parameters"></a>Parametreler
-`ulAppDomainID`  
-[in] Uygulama etki alanı tanımlayıcısı.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Modülün benzersiz tanımlayıcısı.
+ [in] Uygulama etki alanı tanımlayıcısı.
 
-`tokParent`  
-[in] Üst öznitelikte belirteci.
+`guidModule`
 
-`pstrName`  
-[in] Modülün adı.
+ [in] Modülün benzersiz tanımlayıcısı.
 
-`cBuffer`  
-[in] Çıkış için gereken bayt sayısını `buffer`.
+`tokParent`
 
-`pcBuffer`  
-[out] Çıkış uzunluğunu `buffer`.
+ [in] Üst öznitelikte belirteci.
 
-`buffer`  
-[out] Simgeleri içeren bir dizi.
+`pstrName`
+
+ [in] Modülün adı.
+
+`cBuffer`
+
+ [in] Çıkış için gereken bayt sayısını `buffer`.
+
+`pcBuffer`
+
+ [out] Çıkış uzunluğunu `buffer`.
+
+`buffer`
+
+ [out] Simgeleri içeren bir dizi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -104,4 +111,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

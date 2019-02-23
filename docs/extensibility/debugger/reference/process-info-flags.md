@@ -1,7 +1,7 @@
 ---
 title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3541355da9ea144129e730efe9876b4e6d642f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009576"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696525"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -45,17 +45,13 @@ enum enum_PROCESS_INFO_FLAGS { 
 
 ## <a name="members"></a>Üyeler
 
-PIFLAG_SYSTEM_PROCESS  
-İşlem bir sistem işlemi olduğunu gösterir.
+PIFLAG_SYSTEM_PROCESS işlem bir sistem işlemi olduğunu gösterir.
 
-PIFLAG_DEBUGGER_ATTACHED  
-Hata ayıklayıcı tarafından ayıklanmakta olan işlemi belirtir. Olabilir bir [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı veya bazı diğer hata ayıklayıcı, örneğin, WinDbg olabilir.
+İşlem bir hata ayıklayıcı tarafından ayıklanmakta olan PIFLAG_DEBUGGER_ATTACHED gösterir. Olabilir bir [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı veya bazı diğer hata ayıklayıcı, örneğin, WinDbg olabilir.
 
-PIFLAG_PROCESS_STOPPED  
-İşlem durdurulur gösterir. Yalnızca şu durumlarda geçerli `PIFLAG_DEBUGGER_ATTACHED` ayrıca belirtilir. Visual Studio 2005 ve sonraki sürümlerinde kullanılabilir.
+İşlem durdurulur PIFLAG_PROCESS_STOPPED gösterir. Yalnızca şu durumlarda geçerli `PIFLAG_DEBUGGER_ATTACHED` ayrıca belirtilir. Visual Studio 2005 ve sonraki sürümlerinde kullanılabilir.
 
-PIFLAG_PROCESS_RUNNING  
-İşlemin çalışmadığını gösterir. Yalnızca şu durumlarda geçerli `PIFLAG_DEBUGGER_ATTACHED` ayrıca belirtilir. Visual Studio 2005 ve sonraki sürümlerinde kullanılabilir.
+İşlem çalışıyor PIFLAG_PROCESS_RUNNING gösterir. Yalnızca şu durumlarda geçerli `PIFLAG_DEBUGGER_ATTACHED` ayrıca belirtilir. Visual Studio 2005 ve sonraki sürümlerinde kullanılabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -73,5 +69,5 @@ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

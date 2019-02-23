@@ -12,58 +12,54 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f35ae28a1a231721d5ee5616a3b075737c24e629
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982240"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696447"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
-Bu geri çağırma için sağlanan [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE tarafından ve kaynak denetimi eklentisi tarafından bir dosya veya dizinlerin listesini güncelleştirmek için kullanılır (Ayrıca sağlanan `SccPopulateList` işlevi).  
-  
- Ne zaman bir kullanıcının seçtiği **alma** komut IDE'de IDE kullanıcı alabileceği tüm dosyaların bir liste kutusu görüntüler. Ne yazık ki, IDE kullanıcı alabilirsiniz tüm dosyaların tam listesini bilmez; Bu liste yalnızca eklenti vardır. Diğer kullanıcılar için kaynak kodu denetim projesinin dosyaları eklediyseniz, bu dosyalar, listede görünmesi gerekir, ancak IDE bunları hakkında bilmez. IDE kullanıcı alabilirsiniz gördüğü dosyaların bir listesini oluşturur. Kullanıcıya bu listeyi gösterir önce çağrılır [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` kaynak denetimi eklentisi vererek eklemek ve dosyaları listeden silmek için bir fırsat.  
-  
-## <a name="signature"></a>İmza  
- Kaynak Denetimi Eklentisi aşağıdaki prototipe sahip bir IDE uygulanan işlevi çağrılarak listenin değiştirir:  
-  
-```cpp  
-typedef BOOL (*POPLISTFUNC) (  
-   LPVOID pvCallerData,  
-   BOOL fAddRemove,  
-   LONG nStatus,  
-   LPSTR lpFileName  
-);  
-```  
-  
-## <a name="parameters"></a>Parametreler  
- pvCallerData  
- `pvCallerData` Parametresi için (IDE) çağıran tarafından geçirilen [SccPopulateList](../extensibility/sccpopulatelist-function.md). Kaynak Denetimi Eklentisi bu parametrenin içeriği hakkında hiçbir şey varsaymanız gerekir.  
-  
- fAddRemove  
- Varsa `TRUE`, `lpFileName` dosya listesine eklenmesi gereken bir dosyadır. Varsa `FALSE`, `lpFileName` dosya listesinden silinmesi gereken bir dosyadır.  
-  
- nStatus  
- Durumunu `lpFileName` (bir birleşimini `SCC_STATUS` BITS; bkz: [dosya durum kodu](../extensibility/file-status-code-enumerator.md) Ayrıntılar için).  
-  
- lpFileName  
- Dosya adı eklemek veya listeden silmek için tam dizin yolu.  
-  
-## <a name="return-value"></a>Dönüş değeri  
-  
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|`TRUE`|Eklenti bu fonksiyonu çağıran devam edebilirsiniz.|  
-|`FALSE`|IDE tarafında (örneğin, yetersiz bellek durumunun) ilgili bir sorun oluştu. Eklenti işlem durdurmanız gerekir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- İsteğe bağlı olarak ekleyin veya dosya listeden silmek için kaynak denetimi eklentisi isteyen her dosya için tümleştirilmesidir, bu işlevi çağıran `lpFileName`. `fAddRemove` Bayrak listeye eklemek için yeni bir dosya veya silmek için eski bir dosyayı belirtir. `nStatus` Parametre dosyanın durumunu sağlar. Eklenti SCC dosya eklemeye ve silmeye sona erdiğinde arasında döndürür [SccPopulateList](../extensibility/sccpopulatelist-function.md) çağırın.  
-  
+Bu geri çağırma için sağlanan [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE tarafından ve kaynak denetimi eklentisi tarafından bir dosya veya dizinlerin listesini güncelleştirmek için kullanılır (Ayrıca sağlanan `SccPopulateList` işlevi).
+
+ Ne zaman bir kullanıcının seçtiği **alma** komut IDE'de IDE kullanıcı alabileceği tüm dosyaların bir liste kutusu görüntüler. Ne yazık ki, IDE kullanıcı alabilirsiniz tüm dosyaların tam listesini bilmez; Bu liste yalnızca eklenti vardır. Diğer kullanıcılar için kaynak kodu denetim projesinin dosyaları eklediyseniz, bu dosyalar, listede görünmesi gerekir, ancak IDE bunları hakkında bilmez. IDE kullanıcı alabilirsiniz gördüğü dosyaların bir listesini oluşturur. Kullanıcıya bu listeyi gösterir önce çağrılır [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` kaynak denetimi eklentisi vererek eklemek ve dosyaları listeden silmek için bir fırsat.
+
+## <a name="signature"></a>İmza
+ Kaynak Denetimi Eklentisi aşağıdaki prototipe sahip bir IDE uygulanan işlevi çağrılarak listenin değiştirir:
+
+```cpp
+typedef BOOL (*POPLISTFUNC) (
+   LPVOID pvCallerData,
+   BOOL fAddRemove,
+   LONG nStatus,
+   LPSTR lpFileName
+);
+```
+
+## <a name="parameters"></a>Parametreler
+ pvCallerData `pvCallerData` parametresi için (IDE) çağıran tarafından geçirilen [SccPopulateList](../extensibility/sccpopulatelist-function.md). Kaynak Denetimi Eklentisi bu parametrenin içeriği hakkında hiçbir şey varsaymanız gerekir.
+
+ fAddRemove varsa `TRUE`, `lpFileName` dosya listesine eklenmesi gereken bir dosyadır. Varsa `FALSE`, `lpFileName` dosya listesinden silinmesi gereken bir dosyadır.
+
+ nStatus durumu, `lpFileName` (bir birleşimini `SCC_STATUS` BITS; bkz: [dosya durum kodu](../extensibility/file-status-code-enumerator.md) Ayrıntılar için).
+
+ Dosya adı eklemek veya listeden silmek için lpDosyaAdı tam dizin yolu.
+
+## <a name="return-value"></a>Dönüş değeri
+
+|Değer|Açıklama|
+|-----------|-----------------|
+|`TRUE`|Eklenti bu fonksiyonu çağıran devam edebilirsiniz.|
+|`FALSE`|IDE tarafında (örneğin, yetersiz bellek durumunun) ilgili bir sorun oluştu. Eklenti işlem durdurmanız gerekir.|
+
+## <a name="remarks"></a>Açıklamalar
+ İsteğe bağlı olarak ekleyin veya dosya listeden silmek için kaynak denetimi eklentisi isteyen her dosya için tümleştirilmesidir, bu işlevi çağıran `lpFileName`. `fAddRemove` Bayrak listeye eklemek için yeni bir dosya veya silmek için eski bir dosyayı belirtir. `nStatus` Parametre dosyanın durumunu sağlar. Eklenti SCC dosya eklemeye ve silmeye sona erdiğinde arasında döndürür [SccPopulateList](../extensibility/sccpopulatelist-function.md) çağırın.
+
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Özelliği bit Visual Studio için gereklidir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [IDE tarafından uygulanan geri çağırma işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [Kaynak denetimi eklentileri](../extensibility/source-control-plug-ins.md)   
- [SccPopulateList](../extensibility/sccpopulatelist-function.md)   
- [Dosya durum kodu](../extensibility/file-status-code-enumerator.md)
+>  `SCC_CAP_POPULATELIST` Özelliği bit Visual Studio için gereklidir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDE tarafından uygulanan geri çağırma işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [Kaynak denetimi eklentileri](../extensibility/source-control-plug-ins.md)
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md)
+- [Dosya durum kodu](../extensibility/file-status-code-enumerator.md)

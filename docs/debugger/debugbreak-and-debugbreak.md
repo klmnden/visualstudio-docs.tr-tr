@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb05c054ffc5dd273b532f72afe0ca046adbe606
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041730"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686164"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak ve __debugbreak
-DebugBreak Win32 işlevini çağırabilir veya [__debugbreak](/cpp/intrinsics/debugbreak) kodunuzdaki herhangi bir noktada iç. `DebugBreak` ve `__debugbreak` bu konumda bir kesme noktası ayarlamak aynı etkiye sahiptir.  
-  
- Çünkü `DebugBreak` bir sistem işlevi, sistem hata ayıklama sembolleri yüklü, doğru çağrı yığını bilgilerini sonra son görüntülendiğinden emin olmak için bir çağrı gibidir. Aksi takdirde, hata ayıklayıcı tarafından görüntülenen çağrı yığını bilgilerini bir çerçeve tarafından kapalı olması. Kullanırsanız `__debugbreak`, semboller gerekli değildir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](/cpp/intrinsics/compiler-intrinsics)   
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
- [Simge (.pdb) ve Kaynak Dosyaları Belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+DebugBreak Win32 işlevini çağırabilir veya [__debugbreak](/cpp/intrinsics/debugbreak) kodunuzdaki herhangi bir noktada iç. `DebugBreak` ve `__debugbreak` bu konumda bir kesme noktası ayarlamak aynı etkiye sahiptir.
+
+ Çünkü `DebugBreak` bir sistem işlevi, sistem hata ayıklama sembolleri yüklü, doğru çağrı yığını bilgilerini sonra son görüntülendiğinden emin olmak için bir çağrı gibidir. Aksi takdirde, hata ayıklayıcı tarafından görüntülenen çağrı yığını bilgilerini bir çerçeve tarafından kapalı olması. Kullanırsanız `__debugbreak`, semboller gerekli değildir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Derleyici İç Bilgileri](/cpp/intrinsics/compiler-intrinsics)
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
+- [Simge (.pdb) ve Kaynak Dosyaları Belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

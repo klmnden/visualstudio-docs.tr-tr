@@ -1,7 +1,7 @@
 ---
 title: THREADSTATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - THREADSTATE
 helpviewer_keywords:
@@ -12,65 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8acfff2f3b37cfe44565a432ff150073b3ab07ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962150"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694380"
 ---
 # <a name="threadstate"></a>THREADSTATE
-İş parçacığı durumunu belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
-};  
-typedef DWORD THREADSTATE;  
-```  
-  
-```csharp  
-public enum enum_THREADSTATE {   
-   THREADSTATE_RUNNING = 0x0001,  
-   THREADSTATE_STOPPED = 0x0002,  
-   THREADSTATE_FRESH   = 0x0003,  
-   THREADSTATE_DEAD    = 0x0004,  
-   THREADSTATE_FROZEN  = 0x0005  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- THREADSTATE_RUNNING  
- İş parçacığı çalıştığını gösterir.  
-  
- THREADSTATE_STOPPED  
- İş parçacığı bir kesme noktası nedeniyle durdurulduğunu gösterir.  
-  
- THREADSTATE_FRESH  
- İş parçacığı oluşturuldu, ancak henüz kod çalışmıyor gösterir.  
-  
- THREADSTATE_DEAD  
- İş parçacığı geçersiz olduğunu gösterir.  
-  
- THREADSTATE_FROZEN  
- İş parçacığı'nın dondurulmuş olup olmadığını gösterir (hiçbir yürütme gerçekleştirilebilir).  
-  
-## <a name="remarks"></a>Açıklamalar  
- İçin kullanılan `dwThreadState` alanını [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) yapısı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
+İş parçacığı durumunu belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_THREADSTATE { 
+   THREADSTATE_RUNNING = 0x0001,
+   THREADSTATE_STOPPED = 0x0002,
+   THREADSTATE_FRESH   = 0x0003,
+   THREADSTATE_DEAD    = 0x0004,
+   THREADSTATE_FROZEN  = 0x0005
+};
+typedef DWORD THREADSTATE;
+```
+
+```csharp
+public enum enum_THREADSTATE { 
+   THREADSTATE_RUNNING = 0x0001,
+   THREADSTATE_STOPPED = 0x0002,
+   THREADSTATE_FRESH   = 0x0003,
+   THREADSTATE_DEAD    = 0x0004,
+   THREADSTATE_FROZEN  = 0x0005
+};
+```
+
+## <a name="members"></a>Üyeler
+ İş parçacığı çalıştırırken THREADSTATE_RUNNING gösterir.
+
+ THREADSTATE_STOPPED iş parçacığı bir kesme noktası nedeniyle durdurulduğunu gösterir.
+
+ İş parçacığı oluşturuldu ancak henüz kod çalışmıyor THREADSTATE_FRESH gösterir.
+
+ THREADSTATE_DEAD iş parçacığının etkin olduğunu gösterir.
+
+ THREADSTATE_FROZEN iş parçacığı'nın dondurulmuş olup olmadığını gösterir (hiçbir yürütme gerçekleştirilebilir).
+
+## <a name="remarks"></a>Açıklamalar
+ İçin kullanılan `dwThreadState` alanını [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) yapısı.
+
+## <a name="requirements"></a>Gereksinimler
+ Üstbilgi: msdbg.h
+
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

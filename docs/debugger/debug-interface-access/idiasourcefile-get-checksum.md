@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 930db3164b82fe826d89b6b7531ba461e02a5ba4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2dc866cf392d2464756fc4e5cb19bfd02fcdea58
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621857"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693080"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 Sağlama toplamı bayt sayısını alır.
@@ -42,7 +42,8 @@ HRESULT get_checksum ( 
 [out] Sağlama toplamı bayt sayısını döndürür. Bu parametre olamaz `NULL`.
 
  `data`
-- [out içinde] Sağlama toplamı bayt ile doldurulmuş bir arabellek. Bu parametre `NULL`, ardından `pcbData` gereken bayt sayısını döndürür.
+
+[out içinde] Sağlama toplamı bayt ile doldurulmuş bir arabellek. Bu parametre `NULL`, ardından `pcbData` gereken bayt sayısını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

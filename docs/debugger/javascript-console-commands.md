@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: f24c8d79f0b300be4e65b9a14e7675ddf2dcf195
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227413"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701959"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio'da JavaScript Konsolu komutları
 
@@ -103,13 +103,7 @@ console.log(user.first, user.last);
 
  Aşağıdaki değiştirme desenleri desteklenir:
 
-- %s - %i string - tamsayı  
-  %d - tamsayı  
-  %f - float  
-  %o - nesne  
-  %b - ikili  
-  %x - onaltılık  
-  %e - üs  
+- %s - %i dize - tamsayı %d - tamsayı %f - float %o - object %b - ikili %x - onaltılık %e - üs
 
   Değiştirme desenlerinde kullanmanın bazı örnekler şunlardır `console.log`:
 
@@ -129,5 +123,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)  
-[Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)
+- [Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)

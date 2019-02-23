@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227400"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692275"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısındaki ifadeler
 Visual Studio hata ayıklayıcı bir ifade girdiğinizde çalışan ifade değerlendiricilerini içerir **QuickWatch** iletişim kutusu, **Watch** penceresinde veya **hemen** penceresi. İş yerinizde de ifade değerlendiricilerini olan **kesme noktaları** penceresi ve hata ayıklayıcı içindeki diğer pek çok yerde.
@@ -205,7 +205,7 @@ Windows Hata Ayıklayıcı'daki yeni açık değişkenleri bildiremezsiniz. Anca
 - Namespace veya modül düzeyinde anahtar sözcükler gibi `End Sub` veya `Module`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[C++ Dilinde Biçim Belirticileri](../debugger/format-specifiers-in-cpp.md)  
-[Bağlam İşleci (C++)](../debugger/context-operator-cpp.md)  
-[C# Dilinde Biçim Belirticileri](../debugger/format-specifiers-in-csharp.md)  
-[Sözde değişkenler](../debugger/pseudovariables.md)
+- [C++ Dilinde Biçim Belirticileri](../debugger/format-specifiers-in-cpp.md)
+- [Bağlam İşleci (C++)](../debugger/context-operator-cpp.md)
+- [C# Dilinde Biçim Belirticileri](../debugger/format-specifiers-in-csharp.md)
+- [Sözde değişkenler](../debugger/pseudovariables.md)

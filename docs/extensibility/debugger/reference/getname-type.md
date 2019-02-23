@@ -1,7 +1,7 @@
 ---
 title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba394d725afd45664ad6cf4f69c9e048b7e1a74d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413117"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701725"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Alınacak dosya adı türünü belirtir.
@@ -50,26 +50,19 @@ public enum enum_GETNAME_TYPE {
 ```
 
 ## <a name="members"></a>Üyeler
-GN_NAME  
-Belge veya bağlam kolay adı belirtir.
+GN_NAME belge veya bağlam kolay adı belirtir.
 
-GN_FILENAME  
-Belge veya bağlam tam yolunu belirtir.
+GN_FILENAME belge veya bağlam tam yolunu belirtir.
 
-GN_BASENAME  
-Bir temel dosya adı yerine bir belge veya bağlam tam yolunu belirtir.
+GN_BASENAME belgenin veya bağlam tam yol yerine temel dosya adını belirtir.
 
-GN_MONIKERNAME  
-Belge veya bağlam benzersiz bir adla bir bilinen ad biçiminde belirtir.
+GN_MONIKERNAME bilinen adı biçiminde bir belge veya bağlam benzersiz adı belirtir.
 
-GN_URL  
-Belge veya bağlam URL adını belirtir.
+GN_URL belge veya bağlam URL adını belirtir.
 
-GN_TITLE  
-Varsa, bir belgenin başlığını belirtir.
+İf One exists GN_TITLE belgesinin bir başlığı belirtir.
 
-GN_STARTPAGEURL  
-İşlemler için başlangıç sayfası URL'si alır.
+İşler GN_STARTPAGEURL başlangıç sayfası URL'sini alır.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu değerler için parametre olarak geçirilen [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), ve [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) ne tür bir geri dönmek için ad belirtmek için yöntemleri.
@@ -82,7 +75,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)  
-[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)  
-[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)
+- [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)
+- [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)

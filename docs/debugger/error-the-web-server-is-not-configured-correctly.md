@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019198"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711611"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Hata: Web sunucusu doğru yapılandırılmamış
 
@@ -44,9 +44,9 @@ Bu sorunu çözmek için aşağıdaki adımları gerçekleştirin:
 4. (IIS) ASP.NET doğru sürümü sunucuda yüklü olduğundan emin olun.
 
     ASP.NET IIS ve Visual Studio projenize eşleşmeyen sürümleri, bu soruna neden olabilir. Framework sürümü web.config dosyasında ayarlamanız gerekebilir. IIS üzerinde ASP.NET yüklemek için kullanın [Web Platformu Yükleyicisi (Webpı)](https://www.microsoft.com/web/downloads/platform.aspx). Ayrıca bkz [IIS 8.0 kullanarak ASP.NET 3.5 ve ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) veya ASP.NET Core [IIS ile Windows Konağında](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Varsa `maxConnection` IIS sınırı çok düşük ve bağlantı sayısı çok fazla olması, gerekebilir [bağlantı sınırını artırmak](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Uzak IIS Bilgisayarında Uzaktan ASP.NET ile Hata Ayıklama](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

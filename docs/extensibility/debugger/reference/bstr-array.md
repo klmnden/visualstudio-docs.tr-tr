@@ -1,7 +1,7 @@
 ---
 title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BSTR_ARRAY
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79502e4a7a42a4c83957c0ef6b470fa9753db6fd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24222b60db1ba35da59069e58d6f1377928e7a54
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317464"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714926"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Dize dizisi açıklar yapısı.
@@ -39,16 +39,15 @@ struct BSTR_ARRAY {
 ```
 
 ## <a name="terms"></a>Koşulları
-dwCount  
-Sayı dizeleri `Members` dizisi.
+dwCount sayıda dizeyi içinde `Members` dizisi.
 
-Üyeler  
-Dize dizisi.
+Üyeleri bir dize dizisi.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı döndürüldüğü [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) yöntemi.
 
-[Yalnızca C++] Her bir dizenin kullanarak boşaltılması `SysFreeString`ve `Members` dizi serbest, ile `CoTaskMemFree`.
+
+ [Yalnızca C++] Her bir dizenin kullanarak boşaltılması `SysFreeString`ve `Members` dizi serbest, ile `CoTaskMemFree`.
 
 ## <a name="requirements"></a>Gereksinimler
 Üstbilgi: msdbg.h
@@ -58,5 +57,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3589447cdc9451a52dcffb4653a31f188b33c634
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 04f696325da6f9f5b08f37b3d0d0f90498aacd85
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987398"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702024"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
 
@@ -33,7 +33,7 @@ Python seçenekleri görüntülemek için kullanın **Araçları** > **seçenekl
 Vardır ayrıca ek Python özgü seçenekler **metin düzenleyici** > **Python** > **Gelişmiş** sekmesinde ve  **Ortam** > **yazı tipleri ve renkler** sekmesindeki **metin düzenleyici** grubu.
 
 > [!Note]
-> **Deneysel** grubu olan özellikler hala geliştirme aşamasındadır ve burada belgelenmeyen seçenekleri içerir. Bunlar genellikle gönderilerinde üzerinde açıklanmıştır [Microsoft blog Python Mühendisliği](https://blogs.msdn.microsoft.com/pythonengineering/).
+> **Deneysel** grubu olan özellikler hala geliştirme aşamasındadır ve burada belgelenmeyen seçenekleri içerir. Bunlar genellikle gönderilerinde üzerinde açıklanmıştır [Microsoft blog Python Mühendisliği](https://devblogs.microsoft.com/python/).
 
 ## <a name="general-options"></a>Genel Seçenekler
 

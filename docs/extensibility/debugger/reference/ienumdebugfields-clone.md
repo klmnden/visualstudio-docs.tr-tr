@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFields::Clone | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFields::Clone
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3243c7e5f2cb0378772987917455c3a6d0a8c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 122b0d64c32f50287a8845cbd43a41834234a415
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928470"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692391"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
-Bu yöntem bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Clone(  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppEnum`  
- [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.  
-  
-## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+Bu yöntem bir kopyasını ayrı bir nesne olarak geçerli bir sabit listesi döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Clone(
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppEnum`
+
+ [out] Bu numaralandırma ayrı bir nesne gibi bir kopyasını döndürür.
+
+## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Numaralandırma kopyasını bu yöntemin çağrıldığı zaman orijinal ile aynı duruma sahiptir. Ancak, kopyanın ve orijinalin durumları ayrıdır ve ayrı ayrı değiştirilebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -10,51 +10,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93fe45a6d286ab2acdf486e31c6d360af82e79ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2934cb9cb009a46cbd79340173eb2cad0a0fefe0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974847"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720093"
 ---
 # <a name="how-to-implement-error-markers"></a>Nasıl yapılır: Uygulama hata işaretçileri
-Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için metin düzenleyici özelleştirmeleri en zor olan. Ancak, VSPackage kullanıcılara verdikleri kadar bunları sağlamanın maliyeti basıyor. Hata işaretçileri, dil ayrıştırıcı dalgalı veya dalgalı kırmızı bir çizgi ile yanlış olarak gördüğü metin farenizin işaretleyin. Bu gösterge programcılar hatalı kod görsel olarak görüntüleyerek yardımcı olur.  
-  
- Kırmızı dalgalı alt çizgiler uygulamak için metin işaretçileri kullanın. Bir kural olarak, dil Hizmetleri kırmızı dalgalı alt çizgiler metin arabelleği için bir arka plan geçişi boşta kalma süresi veya bir arka plan iş parçacığında ekleyin.  
-  
-## <a name="to-implement-the-red-wavy-underline-feature"></a>Kırmızı dalgalı çizgi özelliği uygulamak için  
-  
-1. Kırmızı dalgalı çizgi yerleştirmek istediğiniz metni seçin.  
-  
-2. Bir işaretçi türünün oluşturma `MARKER_CODESENSE_ERROR`. Daha fazla bilgi için [nasıl yapılır: Standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).  
-  
-3. Geçirin, sonra bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirim işaretçisi.  
-  
-   Bu işlem ipucu metnini veya özel bağlam menüsü belirli bir işaret oluşturmanıza olanak sağlar. Daha fazla bilgi için [nasıl yapılır: Standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).  
-  
-   Aşağıdaki nesneler, hata işaretçileri görüntülenebilmesi gereklidir.  
-  
-- Bir Ayrıştırıcı.  
-  
-- Bir görev sağlayıcısı (diğer bir deyişle, uygulaması <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), tutar satır bilgileri değişiklikleri kaydını yeniden ayrıştırılmış olmasını satırları tanımlamak için.  
-  
-- Giriş işaretini yakalayan bir metin Görünümü Filtresi değişiklik olayları kullanarak Görünüm <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) yöntemi.  
-  
-  Ayrıştırıcı, görev sağlayıcı ve filtre hata işaretçileri mümkün hale getirmek gerekli olan altyapıyı sağlar. Aşağıdaki adımlar, hata işaretçileri görüntülemek için işlem sağlar.  
-  
-1.  Filtre uygulanan bir görünümde, filtre bu görünümün verilerle ilişkili görev sağlayıcı için bir işaretçi alır.  
-  
+Hata işaretçileri (veya kırmızı dalgalı alt çizgiler) uygulamak için metin düzenleyici özelleştirmeleri en zor olan. Ancak, VSPackage kullanıcılara verdikleri kadar bunları sağlamanın maliyeti basıyor. Hata işaretçileri, dil ayrıştırıcı dalgalı veya dalgalı kırmızı bir çizgi ile yanlış olarak gördüğü metin farenizin işaretleyin. Bu gösterge programcılar hatalı kod görsel olarak görüntüleyerek yardımcı olur.
+
+ Kırmızı dalgalı alt çizgiler uygulamak için metin işaretçileri kullanın. Bir kural olarak, dil Hizmetleri kırmızı dalgalı alt çizgiler metin arabelleği için bir arka plan geçişi boşta kalma süresi veya bir arka plan iş parçacığında ekleyin.
+
+## <a name="to-implement-the-red-wavy-underline-feature"></a>Kırmızı dalgalı çizgi özelliği uygulamak için
+
+1. Kırmızı dalgalı çizgi yerleştirmek istediğiniz metni seçin.
+
+2. Bir işaretçi türünün oluşturma `MARKER_CODESENSE_ERROR`. Daha fazla bilgi için [nasıl yapılır: Standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).
+
+3. Geçirin, sonra bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirim işaretçisi.
+
+   Bu işlem ipucu metnini veya özel bağlam menüsü belirli bir işaret oluşturmanıza olanak sağlar. Daha fazla bilgi için [nasıl yapılır: Standart metin işaretçileri ekleme](../extensibility/how-to-add-standard-text-markers.md).
+
+   Aşağıdaki nesneler, hata işaretçileri görüntülenebilmesi gereklidir.
+
+- Bir Ayrıştırıcı.
+
+- Bir görev sağlayıcısı (diğer bir deyişle, uygulaması <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), tutar satır bilgileri değişiklikleri kaydını yeniden ayrıştırılmış olmasını satırları tanımlamak için.
+
+- Giriş işaretini yakalayan bir metin Görünümü Filtresi değişiklik olayları kullanarak Görünüm <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) yöntemi.
+
+  Ayrıştırıcı, görev sağlayıcı ve filtre hata işaretçileri mümkün hale getirmek gerekli olan altyapıyı sağlar. Aşağıdaki adımlar, hata işaretçileri görüntülemek için işlem sağlar.
+
+1.  Filtre uygulanan bir görünümde, filtre bu görünümün verilerle ilişkili görev sağlayıcı için bir işaretçi alır.
+
     > [!NOTE]
-    >  Aynı komut filtre yöntemi ipuçları, deyim tamamlama, hata işaretçileri ve benzeri için kullanabilirsiniz.  
-  
-2.  Filtrenin başka bir satıra taşınır gösteren bir olay aldığında, hataları denetlemek için bir görev oluşturulur.  
-  
-3.  Görev işleyicisi satır olumsuz olup olmadığını denetler. Bu durumda, hatalar için satır ayrıştırır.  
-  
-4.  Görev sağlayıcısı, hata bulunursa, bir görev öğesi örneği oluşturur. Bu örnek, bir metin görünümünde hata işaretçisi olarak ortamı kullanır metin işaretçisi oluşturur.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)   
- [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)   
- [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)
+    >  Aynı komut filtre yöntemi ipuçları, deyim tamamlama, hata işaretçileri ve benzeri için kullanabilirsiniz.
+
+2.  Filtrenin başka bir satıra taşınır gösteren bir olay aldığında, hataları denetlemek için bir görev oluşturulur.
+
+3.  Görev işleyicisi satır olumsuz olup olmadığını denetler. Bu durumda, hatalar için satır ayrıştırır.
+
+4.  Görev sağlayıcısı, hata bulunursa, bir görev öğesi örneği oluşturur. Bu örnek, bir metin görünümünde hata işaretçisi olarak ortamı kullanır metin işaretçisi oluşturur.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Metin işaretçileri eski API'si ile kullanma](../extensibility/using-text-markers-with-the-legacy-api.md)
+- [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md)
+- [Nasıl yapılır: Özel metin işaretçileri oluşturma](../extensibility/how-to-create-custom-text-markers.md)
+- [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md)

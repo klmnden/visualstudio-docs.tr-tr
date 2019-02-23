@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_RESOLUTION_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03742dc00f0d42066eb80adfef6946904cae1d77
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7d89a871abf6a62dec712ce9d9ae486496c775b8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317113"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691208"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 Konum, program ve iş parçacığı gibi bir hata kesme noktası çözünürlüğü açıklar.
@@ -47,23 +47,17 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>Üyeler
-`dwFields`  
-Değerleri birleşimi [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) bu yapının alanları doldurulmalıdır belirten sabit listesi.
+`dwFields` Değerleri birleşimi [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) bu yapının alanları doldurulmalıdır belirten sabit listesi.
 
-`bpResLocation`  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) UNION, kesme noktası çözünürlüğü konumu belirtir.
+`bpResLocation` [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) UNION, kesme noktası çözünürlüğü konumu belirtir.
 
-`pProgram`  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) kesme noktası hatanın gerçekleştiği uygulama temsil eden nesne.
+`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) kesme noktası hatanın gerçekleştiği uygulama temsil eden nesne.
 
-`pThread`  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) kesme Notası hatası oluşturulan uygulama çalışan iş parçacığı temsil eden nesne.
+`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) kesme Notası hatası oluşturulan uygulama çalışan iş parçacığı temsil eden nesne.
 
-`bstrMessage`  
-Bu hata resolution kaynaklanan uyarı veya hata iletisi içeren bir dize.
+`bstrMessage` Bu hata resolution kaynaklanan uyarı veya hata iletisi içeren bir dize.
 
-`dwType`  
-Bir değer [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) kesme noktası hata türünü belirten sabit listesi.
+`dwType` Bir değer [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) kesme noktası hata türünü belirten sabit listesi.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı döndürüldüğü [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) yöntemi.
@@ -76,10 +70,10 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)  
-[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)  
-[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)
+- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)

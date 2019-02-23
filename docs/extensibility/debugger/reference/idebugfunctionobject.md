@@ -1,7 +1,7 @@
 ---
 title: IDebugFunctionObject | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionObject
 helpviewer_keywords:
@@ -12,53 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61da63d0d9a46cb47cd2bc14a7e2bcf1945ca4de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d60569d51b58fec30563e35ad377aa726ec45b20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043316"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686450"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
-  
- Bu arabirim, bir işlevi temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IDebugFunctionObject : IDebugObject  
-```  
-  
-## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar  
- İfade değerlendiricisi, bir işlevi temsil etmek için bu arabirimi uygular.  
-  
-## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
- Bu bir arabirimdir özelleştirmesi [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) arabirim ve kullanılarak elde edilen [QueryInterface](/cpp/atl/queryinterface) üzerinde `IDebugObject` arabirimi.  
-  
-## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri  
- Devralınan yöntemleri yanı sıra [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugFunctionObject` arabirimi aşağıdaki yöntemleri sunar.  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|Temel veri nesnesi oluşturur.|  
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|Bir oluşturucu kullanılarak bir nesne oluşturur.|  
-|[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|Bir nesne ile hiçbir oluşturucu oluşturur.|  
-|[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|Bir dizi nesnesi oluşturur.|  
-|[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|Bir dize nesnesi oluşturur.|  
-|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|İşlevini çağırır ve bir nesne olarak elde edilen değeri döndürür.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu arabirim, ayrıştırma ağacı işlevlerini temsil etmek ifade değerlendirici sağlar. `Create` Bu arabirimdeki yöntemleri yönteme giriş parametrelerini temsil eden nesneler oluşturmak için kullanılır. İşlev çağrı yaparak sonra yürütülebilen [değerlendir](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) yöntemi işlevinin dönüş değerini temsil eden bir nesne döndürür.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: ee.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İfade değerlendirme arabirimleri](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+>  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için lütfen bkz [CLR ifade Değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+
+ Bu arabirim, bir işlevi temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IDebugFunctionObject : IDebugObject
+```
+
+## <a name="notes-for-implementers"></a>Uygulayanlar için Notlar
+ İfade değerlendiricisi, bir işlevi temsil etmek için bu arabirimi uygular.
+
+## <a name="notes-for-callers"></a>Arayanlar İçin Notlar
+ Bu bir arabirimdir özelleştirmesi [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) arabirim ve kullanılarak elde edilen [QueryInterface](/cpp/atl/queryinterface) üzerinde `IDebugObject` arabirimi.
+
+## <a name="methods-in-vtable-order"></a>Vtable sırayla yöntemleri
+ Devralınan yöntemleri yanı sıra [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md), `IDebugFunctionObject` arabirimi aşağıdaki yöntemleri sunar.
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)|Temel veri nesnesi oluşturur.|
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)|Bir oluşturucu kullanılarak bir nesne oluşturur.|
+|[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|Bir nesne ile hiçbir oluşturucu oluşturur.|
+|[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|Bir dizi nesnesi oluşturur.|
+|[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|Bir dize nesnesi oluşturur.|
+|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|İşlevini çağırır ve bir nesne olarak elde edilen değeri döndürür.|
+
+## <a name="remarks"></a>Açıklamalar
+ Bu arabirim, ayrıştırma ağacı işlevlerini temsil etmek ifade değerlendirici sağlar. `Create` Bu arabirimdeki yöntemleri yönteme giriş parametrelerini temsil eden nesneler oluşturmak için kullanılır. İşlev çağrı yaparak sonra yürütülebilen [değerlendir](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) yöntemi işlevinin dönüş değerini temsil eden bir nesne döndürür.
+
+## <a name="requirements"></a>Gereksinimler
+ Üstbilgi: ee.h
+
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [İfade Değerlendirme Arabirimleri](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_STRING | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_STRING
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0650c7b3c2961531b64539887a1c4c68ac2bc819
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a0c3739469f45a365746a9a9272eb2859ec26f94
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316216"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705709"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 Tümleşik geliştirme ortamından (IDE) kullanıcının girebileceği bir dizesini kod kesme noktaları ayarlamak için kullanılır.
@@ -32,11 +32,9 @@ typedef struct _BP_LOCATION_CODE_STRING {
 ```
 
 ## <a name="members"></a>Üyeler
-`bstrContext`  
-Kod içinde kesme, genellikle bir yöntem veya işlev adı olarak görülen bir çağrı yığınında bağlamı.
+`bstrContext` Kod içinde kesme, genellikle bir yöntem veya işlev adı olarak görülen bir çağrı yığınında bağlamı.
 
-`bstrCodeExpr`  
-Kodu kesme noktası tanımlamak için kullanıcının yazdığı bir dize.
+`bstrCodeExpr` Kodu kesme noktası tanımlamak için kullanıcının yazdığı bir dize.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı üyesidir [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) yapısı bir birleşimin parçası olarak.
@@ -49,5 +47,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

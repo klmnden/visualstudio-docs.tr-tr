@@ -11,51 +11,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8a515fb184d43478c07723e7fe1b15a15e99f50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb3168a53ca503a60a8aa5009d02a0f3a4d72b94
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037388"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710818"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Tür görselleştiricileri ve özel görüntüleyiciler uygulama
 > [!IMPORTANT]
->  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample). 
-  
- Tür görselleştiricileri ve özel görüntüleyiciler onaltılık sayı döküm basit daha anlamlı bir şekilde belirli bir türdeki veri görünümünde bir kullanıcı sağlar. İfade değerlendiricisi (EE) özel görüntüleyiciler belirli veri türlerine veya değişkenleri ile ilişkilendirebilirsiniz. Bu özel görüntüleyiciler EE tarafından uygulanır. Başka bir üçüncü taraf satıcı veya bile son kullanıcının gelebilir dış tür görselleştiriciler, EE de destekler.  
-  
-## <a name="discussion"></a>Tartışma  
-  
-### <a name="type-visualizers"></a>Tür görselleştiricileri  
- Tür görselleştiricileri ve özel görüntüleyiciler Her nesne için izleme penceresinde görüntülenecek bir listesi için Visual Studio ister. İfade değerlendiricisi (EE) kendisi için tür görselleştiricileri ve özel görüntüleyiciler desteklemek istediği her türü için böyle bir liste sağlar. Çağrılar [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) ve [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) tür görselleştiricileri ve özel görüntüleyiciler erişen tüm işlemini başlatmak (bkz [Visualizing ve verileri görüntüleme](../../extensibility/debugger/visualizing-and-viewing-data.md)çağrı sırası hakkında ayrıntılı bilgi için).  
-  
-### <a name="custom-viewers"></a>Özel görüntüleyiciler  
- Özel görüntüleyiciler EE belirli bir tür için uygulanır ve tarafından temsil edilen [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) arabirimi. Özel Görüntüleyici yalnızca bu belirli özel Görüntüleyici uygulayan EE çalıştırılırken kullanılabilir bir tür görselleştiricisi kadar esnek değildir. Özel Görüntüleyici uygulama tür görselleştiricileri desteği uygulamak daha kolaydır. Ancak, tür görselleştiricileri destekleyen maksimum esneklik için son kullanıcı verilerini görselleştirmek için sağlar. Bu tartışma geri kalanında, yalnızca tür görselleştiricileri ilgilidir.  
-  
-## <a name="interfaces"></a>Arabirimler  
- Tür görselleştiricileri, Visual Studio tarafından tüketilmesi desteklemek için aşağıdaki arabirimlerinden EE uygular:  
-  
-- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
-  
-- [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
-  
-- [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
-  
-- [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
-  
-- [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
-  
-- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
-  
-  Tür görselleştiricileri desteklemek için aşağıdaki arabirimlerinden EE kullanır:  
-  
-- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
-  
-- [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
-  
-- [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [Verileri Görselleştirme ve görüntüleme](../../extensibility/debugger/visualizing-and-viewing-data.md)   
- [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)
+>  Visual Studio 2015'te, bu şekilde ifade değerlendiricisi uygulama kullanım dışı bırakılmıştır. CLR ifade değerlendiricisi uygulama hakkında daha fazla bilgi için bkz: [CLR ifade değerlendiricilerini](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) ve [yönetilen ifade değerlendiricisi örnek](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+
+ Tür görselleştiricileri ve özel görüntüleyiciler onaltılık sayı döküm basit daha anlamlı bir şekilde belirli bir türdeki veri görünümünde bir kullanıcı sağlar. İfade değerlendiricisi (EE) özel görüntüleyiciler belirli veri türlerine veya değişkenleri ile ilişkilendirebilirsiniz. Bu özel görüntüleyiciler EE tarafından uygulanır. Başka bir üçüncü taraf satıcı veya bile son kullanıcının gelebilir dış tür görselleştiriciler, EE de destekler.
+
+## <a name="discussion"></a>Tartışma
+
+### <a name="type-visualizers"></a>Tür görselleştiricileri
+ Tür görselleştiricileri ve özel görüntüleyiciler Her nesne için izleme penceresinde görüntülenecek bir listesi için Visual Studio ister. İfade değerlendiricisi (EE) kendisi için tür görselleştiricileri ve özel görüntüleyiciler desteklemek istediği her türü için böyle bir liste sağlar. Çağrılar [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) ve [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) tür görselleştiricileri ve özel görüntüleyiciler erişen tüm işlemini başlatmak (bkz [Visualizing ve verileri görüntüleme](../../extensibility/debugger/visualizing-and-viewing-data.md)çağrı sırası hakkında ayrıntılı bilgi için).
+
+### <a name="custom-viewers"></a>Özel görüntüleyiciler
+ Özel görüntüleyiciler EE belirli bir tür için uygulanır ve tarafından temsil edilen [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) arabirimi. Özel Görüntüleyici yalnızca bu belirli özel Görüntüleyici uygulayan EE çalıştırılırken kullanılabilir bir tür görselleştiricisi kadar esnek değildir. Özel Görüntüleyici uygulama tür görselleştiricileri desteği uygulamak daha kolaydır. Ancak, tür görselleştiricileri destekleyen maksimum esneklik için son kullanıcı verilerini görselleştirmek için sağlar. Bu tartışma geri kalanında, yalnızca tür görselleştiricileri ilgilidir.
+
+## <a name="interfaces"></a>Arabirimler
+ Tür görselleştiricileri, Visual Studio tarafından tüketilmesi desteklemek için aşağıdaki arabirimlerinden EE uygular:
+
+- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+
+- [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+
+- [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)
+
+- [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)
+
+- [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)
+
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
+
+  Tür görselleştiricileri desteklemek için aşağıdaki arabirimlerinden EE kullanır:
+
+- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)
+
+- [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
+
+- [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Bir CLR ifade değerlendiricisi yazma](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [Verileri Görselleştirme ve görüntüleme](../../extensibility/debugger/visualizing-and-viewing-data.md)
+- [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

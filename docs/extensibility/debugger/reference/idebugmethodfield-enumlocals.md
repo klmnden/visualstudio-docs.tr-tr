@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumLocals | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumLocals
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6cd5e65c54355ec21d22d101d94270b95018e8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 6e8c39adaca6c394b631542d57d74ed4818501b4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450418"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700568"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Yöntemin seçili yerel değişkenler için bir numaralandırıcı oluşturur.
@@ -39,11 +39,13 @@ int EnumLocals(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pAddress`  
-[in] Bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) bağlamı veya kapsam Yereller alınmaya başlanacağı seçer hata ayıklama adresini temsil eden nesne.
+`pAddress`
 
-`ppLocals`  
-[out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) hiçbir yerel öğeler varsa, aksi durumda null değer döndürür; yerel öğeler listesini temsil eden nesne.
+ [in] Bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) bağlamı veya kapsam Yereller alınmaya başlanacağı seçer hata ayıklama adresini temsil eden nesne.
+
+`ppLocals`
+
+ [out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) hiçbir yerel öğeler varsa, aksi durumda null değer döndürür; yerel öğeler listesini temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılıysa S_OK döndürür veya hiçbir yerel öğeler varsa S_FALSE döndürür. Aksi takdirde bir hata kodu döndürür.
@@ -74,7 +76,7 @@ public void func(int index)
 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) nesnesini temsil `func` yöntemi. Çağırma `EnumLocals` yöntemi ile bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) kümesine `Inner Scope 1` adresini döndürür içeren bir sabit listesi `temp1` örneğin değişken.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)  
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)  
-[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)

@@ -8,27 +8,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00ab3ca18997fe61fc4b36e1f9f9a098b0aa727
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952125"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689271"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Geçmiş hata ayıklama (C#, Visual Basic, C++)
 
-Geçmiş hata ayıklama IntelliTrace tarafından toplanan bilgiler bağımlı hata ayıklama bir moddur. Geriye doğru gitme ve uygulamanızın yürütmesini iletmek ve durumunu incelemek sağlar.  
-  
- IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Community sürümlerini değil) kullanabilirsiniz.  
-  
+Geçmiş hata ayıklama IntelliTrace tarafından toplanan bilgiler bağımlı hata ayıklama bir moddur. Geriye doğru gitme ve uygulamanızın yürütmesini iletmek ve durumunu incelemek sağlar.
+
+ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Community sürümlerini değil) kullanabilirsiniz.
+
 ## <a name="why-use-historical-debugging"></a>Geçmiş hata ayıklama neden kullanmalısınız?
 
- Hataları bulmak için kesme noktaları ayarlamak yerine hit-or-miss affair olabilir. Kodunuzda yakın bir yerde olması için hata nerede şüphelendiğiniz bir kesme noktası ayarlayın ve ardından hata ayıklayıcı ve kesme noktasına isabet ve burada yürütmeyi keser yerde hatanın kaynağını ortaya koyabilir alır soluk uygulamayı çalıştırın. Aksi durumda, kod içinde başka bir yerde bir kesme noktası ayarlamayı deneyin ve sorun bulana kadar test adımlarınızı tekrar tekrar yürütme hata ayıklayıcıyı yeniden çalıştırmak sahip olacaksınız.  
-  
- ![bir kesme noktası ayarlamak](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
-  
- Geçici uygulamanızdaki dolaşan ve kesme noktaları ayarlayın, hata ayıklamayı yeniden başlatmak zorunda kalmadan (çağrı yığını ve yerel değişkenler) durumunu incelemek için IntelliTrace ve geçmiş hata ayıklama kullanın ve test adımları yineleyin. Bu, çok fazla kaydedebilirsiniz süresini, özellikle zaman hata bulunan yürütmek için uzun zaman alan derin bir testi senaryosunda.  
-  
+ Hataları bulmak için kesme noktaları ayarlamak yerine hit-or-miss affair olabilir. Kodunuzda yakın bir yerde olması için hata nerede şüphelendiğiniz bir kesme noktası ayarlayın ve ardından hata ayıklayıcı ve kesme noktasına isabet ve burada yürütmeyi keser yerde hatanın kaynağını ortaya koyabilir alır soluk uygulamayı çalıştırın. Aksi durumda, kod içinde başka bir yerde bir kesme noktası ayarlamayı deneyin ve sorun bulana kadar test adımlarınızı tekrar tekrar yürütme hata ayıklayıcıyı yeniden çalıştırmak sahip olacaksınız.
+
+ ![bir kesme noktası ayarlamak](../debugger/media/breakpointprocesa.png "BreakpointProcesa")
+
+ Geçici uygulamanızdaki dolaşan ve kesme noktaları ayarlayın, hata ayıklamayı yeniden başlatmak zorunda kalmadan (çağrı yığını ve yerel değişkenler) durumunu incelemek için IntelliTrace ve geçmiş hata ayıklama kullanın ve test adımları yineleyin. Bu, çok fazla kaydedebilirsiniz süresini, özellikle zaman hata bulunan yürütmek için uzun zaman alan derin bir testi senaryosunda.
+
 ## <a name="how-do-i-start-using-historical-debugging"></a>Geçmiş hata ayıklama kullanmaya nasıl başlarım?
 
  IntelliTrace varsayılan olarak açıktır. Yapmanız gereken şey, tam uygulama durumunun anlık görüntülerini görüntülemek istediğiniz ve hangi olayların ve işlev çağrılarının ilginizi çeken karar verin. Aramak istediğiniz tanımlama hakkında daha fazla bilgi için bkz. [IntelliTrace özellikleri](../debugger/intellitrace-features.md). Özellik desteği, dil ve uygulama tarafından değişir türü.

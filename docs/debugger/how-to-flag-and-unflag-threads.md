@@ -15,52 +15,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d05987b23eca2d22472929a91fa1a140d7af10d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 619814a77b0bfaddc1c8c68213d050646a07e7e0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969463"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721998"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak (C#, Visual Basic, C++)
 
-Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları**, **Paralel Yığınlar** (iş parçacığı görünümü), **paralel izleme**ve  **GPU iş parçacıkları** windows. Başkalarının bayraklı iş parçacıklarını diğer iş parçacıklarından ayırt etmek ve bu simgeyi yardımcı olabilir.  
-  
+Bir simge ile işaretleyerek özel dikkat vermek istediğiniz bir iş parçacığı işaretleyebilirsiniz **iş parçacıkları**, **Paralel Yığınlar** (iş parçacığı görünümü), **paralel izleme**ve  **GPU iş parçacıkları** windows. Başkalarının bayraklı iş parçacıklarını diğer iş parçacıklarından ayırt etmek ve bu simgeyi yardımcı olabilir.
+
 Bayraklı iş parçacıklarını ayrıca Al, özel olarak değerlendirilmesi **iş parçacığı** listesini **hata ayıklama konumu** araç ve diğer çok iş parçacıklı hata ayıklama Windows. Tüm iş parçacıkları veya yalnızca bayraklı iş parçacıklarını Göster **iş parçacığı** listesi veya diğer Windows.
-  
+
 ### <a name="to-flag-or-unflag-a-thread"></a>Bir iş parçacığını işaretleme veya işaretini kaldırma için
-  
-- İçinde **iş parçacıkları** veya **paralel izleme** penceresinde ilgilendiğiniz iş parçacığı bulup seçmek veya bayrağını temizlemek için bayrak simgesine tıklayın. 
+
+- İçinde **iş parçacıkları** veya **paralel izleme** penceresinde ilgilendiğiniz iş parçacığı bulup seçmek veya bayrağını temizlemek için bayrak simgesine tıklayın.
 - İçinde **Paralel Yığınlar** penceresinde, bir iş parçacığı veya grup seçin ve iş parçacıkları üzerinde sağ tıklatın **bayrağı / <thread>**  veya **Unflag / <thread>** .
-  
-### <a name="to-unflag-all-threads"></a>İçin tüm iş parçacıklarının işaretini kaldır  
-  
+
+### <a name="to-unflag-all-threads"></a>İçin tüm iş parçacıklarının işaretini kaldır
+
 -   İçinde **iş parçacıkları** penceresinde herhangi bir iş parçacığı sağ tıklayın ve ardından **tüm iş parçacıklarını bayrakla**.
--   İçinde **paralel izleme** penceresinde tüm bayraklı iş parçacıklarını, sonra sağ tıklayıp **Unflag**.  
-  
-### <a name="to-display-only-flagged-threads"></a>Yalnızca bayraklı iş parçacıklarını görüntülemek için  
-  
--   Seçin **sadece iş parçacığı bayrak eklenmiş Göster** bir çok iş parçacıklı hata ayıklama windows düğme.  
-  
-### <a name="to-flag-just-my-code"></a>Bayrak yalnızca kendi kodum  
-  
-1.  Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresi, bayrak simgesine tıklayın.  
-  
-2.  Aşağı açılan listesinde, tıklayın **bayrağı yalnızca benim kodum**.  
-  
-### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Seçili modüller ile ilişkili iş parçacıklarını için  
-  
-1.  Araç çubuğunda **iş parçacıkları** penceresi, bayrak simgesine tıklayın.  
-  
-2.  Aşağı açılan listesinde, tıklayın **bayrak Özel Modül Seçimi**.  
-  
-3.  İçinde **modülleri seçin** iletişim kutusunda, istediğiniz modülleri seçin.  
-  
-4.  (İsteğe bağlı) İçinde **arama** belirli modüller için aranacak bir dize olarak yazın.  
-  
-5.  **Tamam**'ı tıklatın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md)  
- [İzlenecek yol: İş parçacıkları penceresini kullanarak birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/how-to-use-the-threads-window.md)
+-   İçinde **paralel izleme** penceresinde tüm bayraklı iş parçacıklarını, sonra sağ tıklayıp **Unflag**.
+
+### <a name="to-display-only-flagged-threads"></a>Yalnızca bayraklı iş parçacıklarını görüntülemek için
+
+-   Seçin **sadece iş parçacığı bayrak eklenmiş Göster** bir çok iş parçacıklı hata ayıklama windows düğme.
+
+### <a name="to-flag-just-my-code"></a>Bayrak yalnızca kendi kodum
+
+1.  Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresi, bayrak simgesine tıklayın.
+
+2.  Aşağı açılan listesinde, tıklayın **bayrağı yalnızca benim kodum**.
+
+### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Seçili modüller ile ilişkili iş parçacıklarını için
+
+1.  Araç çubuğunda **iş parçacıkları** penceresi, bayrak simgesine tıklayın.
+
+2.  Aşağı açılan listesinde, tıklayın **bayrak Özel Modül Seçimi**.
+
+3.  İçinde **modülleri seçin** iletişim kutusunda, istediğiniz modülleri seçin.
+
+4.  (İsteğe bağlı) İçinde **arama** belirli modüller için aranacak bir dize olarak yazın.
+
+5.  **Tamam**'ı tıklatın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Çok İş Parçacıklı Uygulamaların Hatalarını Ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md)
+- [İzlenecek yol: İş parçacıkları penceresini kullanarak birden çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/how-to-use-the-threads-window.md)

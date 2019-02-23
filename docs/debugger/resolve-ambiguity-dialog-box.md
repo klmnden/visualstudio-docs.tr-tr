@@ -19,27 +19,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cad82add5d397991f2c3e7532bbbf2559f9819e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2d784766e3c90241be3759a7113c52e6d863fa47
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033079"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681090"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Belirsizliği Çöz İletişim Kutusu
-`Resolve Ambiguity` İletişim kutusu, hata ayıklayıcı görüntüleneceği konumun seçtiğinizde görüntülenir. Örneğin, C++ şablonları kullanıyorsanız, tek işlevi şablondan birden çok işlevler oluşturabilirsiniz. Şablonu kaynak konumda hata ayıklayıcıyı durdurur ve seçtiğiniz `Go To Disassembly`, hata ayıklayıcı birden çok seçenek vardır. Şablondan oluşturulan her işlev kendi ayrıştırılmış kodu bulunur ve hata ayıklayıcı, görüntülemek istediğiniz hangi kodun bilmez. `Resolve Ambiguity` İletişim kutusunda istediğiniz konuma karşılık gelen tüm konumlara listesinden seçmenize imkan tanır.  
-  
- `Choose the specific location`  
- Komutunuz için karşılık gelen tüm konumlarda listeler.  
-  
- `Address`  
- Her işlev için bellek adresleri gösterilir.  
-  
- `Function`  
- Her işlevin adını gösterir.  
-  
- `Module`  
- Modülü (EXE veya DLL) gösterir işlev için nesne kodu içeren.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata Ayıklayıcısındaki İfadeler](../debugger/expressions-in-the-debugger.md)
+`Resolve Ambiguity` İletişim kutusu, hata ayıklayıcı görüntüleneceği konumun seçtiğinizde görüntülenir. Örneğin, C++ şablonları kullanıyorsanız, tek işlevi şablondan birden çok işlevler oluşturabilirsiniz. Şablonu kaynak konumda hata ayıklayıcıyı durdurur ve seçtiğiniz `Go To Disassembly`, hata ayıklayıcı birden çok seçenek vardır. Şablondan oluşturulan her işlev kendi ayrıştırılmış kodu bulunur ve hata ayıklayıcı, görüntülemek istediğiniz hangi kodun bilmez. `Resolve Ambiguity` İletişim kutusunda istediğiniz konuma karşılık gelen tüm konumlara listesinden seçmenize imkan tanır.
+
+ `Choose the specific location` Komutunuz için karşılık gelen tüm konumlarda listeler.
+
+ `Address` Her işlev için bellek adresleri gösterilir.
+
+ `Function` Her işlevin adını gösterir.
+
+ `Module` Modülü (EXE veya DLL) gösterir işlev için nesne kodu içeren.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısındaki İfadeler](../debugger/expressions-in-the-debugger.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39d3385b56e35018093ceaaf26472d425847b100
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947425"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722297"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>İzlenecek yol: Görünüm kenarlığı, komutlar ve ayarlar (sütun kılavuzları) oluşturma
 Visual Studio metin/Kod Düzenleyicisi komutları ve görünüm efektleriyle genişletebilirsiniz. Bu makalede, bir popüler uzantısı özelliği, sütun kılavuzları ile çalışmaya başlama işlemini göstermektedir. Sütun, kodunuzda belirli sütun genişliklerini yönetmenize yardımcı olmak için metin düzenleyici görünümünde görsel olarak ışık çizgileri kılavuzlardır. Özellikle, biçimlendirilmiş kod belgeleri, blog gönderileri, dahil etmek veya hata raporları örnekleri için önemli olabilir.
@@ -24,10 +24,10 @@ Bu kılavuzda:
 - Kaydetme ve (çizim sütun kılavuzları ve bunların renk için) ayarları almak için destek eklendi
 - Komutları eklendi (sütun kılavuzları Ekle/Kaldır, kendi rengi değiştirme)
 - Düzen menüsü ve metin belgesi bağlam menüleri komutları koyun
-- Visual Studio komut penceresinde komutlar yürütmesini desteği eklendi  
-  
-  Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
-  
+- Visual Studio komut penceresinde komutlar yürütmesini desteği eklendi
+
+  Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+
   **NOT**: Bu izlenecek yolda, Visual Studio uzantı şablonları tarafından oluşturulan bazı dosyaları büyük miktarda kod yapıştırın. Ancak, yakında bu kılavuzda github'da diğer uzantı örnekleriyle tamamlanmış bir çözüm başvuracaktır. Tamamlanan kodu generictemplate simgeler kullanmak yerine gerçek komut simgeleri sahip, biraz farklıdır.
 
 ## <a name="get-started"></a>Kullanmaya başlayın
@@ -38,14 +38,14 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 - Oluşturur bir metin görünümünü oluşturma dinleyici sahip bir `ColumnGuideAdornment` görünüm başına nesne. Bu nesne görünümü değiştirme hakkında olayları dinleyen veya ayarları değiştirme, güncelleştirme veya yeniden sütun gerektiği şekilde kılavuzluk eder.
 - Var olan bir `GuidesSettingsManager` Visual Studio ayarları depolamadan yazma ve okuma işler. Ayarlar Yöneticisi ayrıca kullanıcı komutları destek ayarları güncelleştirmek için işlemleri vardır (sütun ekleme, sütun kaldırmak, rengini değiştirme).
 - Kullanıcı komutları varsa gerekli olan bir VSIP paket, ancak yalnızca komutlar uygulama nesnesini başlatır Demirbaş kod değil.
-- Var olan bir `ColumnGuideCommands` kullanıcı çalışan nesne komutları ve bildirilen komutları için komut işleyicileri kancaları *.vsct* dosya.  
-  
-  **VSIX**. Kullanım **dosya &#124; yeni...**  bir proje oluşturmak için komutu. Seçin **genişletilebilirlik** düğümünde **C#** sol gezinti bölmesinde seçin **VSIX projesi** sağ bölmede. Bir ad girin **ColumnGuides** ve **Tamam** projeyi oluşturmak için.  
-  
-  **Kenarlığı görüntüleyin**. Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın. Seçin **ekleme &#124; yeni öğe...**  yeni bir görünüm kenarlığı öğe eklemek için komutu. Seçin **genişletilebilirlik &#124; Düzenleyicisi** sol gezinti bölmesinde seçin **Düzenleyicisi Görünüm penceresi kenarlığı** sağ bölmede. Bir ad girin **ColumnGuideAdornment** öğesi olarak seçin ve adlandırın **Ekle** ekleyin.  
-  
-  Bu öğe Şablonu proje (yanı sıra başvuruları vb.) iki dosya eklendi görebilirsiniz: **ColumnGuideAdornment.cs** ve **ColumnGuideAdornmentTextViewCreationListener.cs**. Şablon görünümünde mor renkli bir dikdörtgen çizin. Aşağıdaki bölümde, birkaç görünüm oluşturma dinleyici satırları değiştirin ve içeriğini değiştirin **ColumnGuideAdornment.cs**.  
-  
+- Var olan bir `ColumnGuideCommands` kullanıcı çalışan nesne komutları ve bildirilen komutları için komut işleyicileri kancaları *.vsct* dosya.
+
+  **VSIX**. Kullanım **dosya &#124; yeni...**  bir proje oluşturmak için komutu. Seçin **genişletilebilirlik** düğümünde **C#** sol gezinti bölmesinde seçin **VSIX projesi** sağ bölmede. Bir ad girin **ColumnGuides** ve **Tamam** projeyi oluşturmak için.
+
+  **Kenarlığı görüntüleyin**. Çözüm Gezgini'nde proje düğümüne sağ işaretçi düğmesine basın. Seçin **ekleme &#124; yeni öğe...**  yeni bir görünüm kenarlığı öğe eklemek için komutu. Seçin **genişletilebilirlik &#124; Düzenleyicisi** sol gezinti bölmesinde seçin **Düzenleyicisi Görünüm penceresi kenarlığı** sağ bölmede. Bir ad girin **ColumnGuideAdornment** öğesi olarak seçin ve adlandırın **Ekle** ekleyin.
+
+  Bu öğe Şablonu proje (yanı sıra başvuruları vb.) iki dosya eklendi görebilirsiniz: **ColumnGuideAdornment.cs** ve **ColumnGuideAdornmentTextViewCreationListener.cs**. Şablon görünümünde mor renkli bir dikdörtgen çizin. Aşağıdaki bölümde, birkaç görünüm oluşturma dinleyici satırları değiştirin ve içeriğini değiştirin **ColumnGuideAdornment.cs**.
+
   **Komutları**. İçinde **Çözüm Gezgini**, proje düğümüne sağ işaretçi düğmesine basın. Seçin **ekleme &#124; yeni öğe...**  yeni bir görünüm kenarlığı öğe eklemek için komutu. Seçin **genişletilebilirlik &#124; VSPackage** sol gezinti bölmesinde seçin **özel komut** sağ bölmede. Bir ad girin **ColumnGuideCommands** öğesi olarak seçin ve adlandırın **Ekle**. Birkaç başvurulara ek komutlar ve ayrıca eklenen paket ekleme **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, ve **ColumnGuideCommandsPackage.vsct** . Aşağıdaki bölümde, komutları tanımlaması ve ilk ve son dosyaların içeriklerini değiştirin.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Metin görünümü oluşturma dinleyicisi Kur
@@ -370,7 +370,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +378,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +466,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +710,7 @@ Sık karşılaşılan desenini bir parçası olarak, bir tek alt menü tutan iki
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -843,7 +843,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1143,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1339,9 +1339,9 @@ Bir GitHub projesini Visual Studio genişletilebilirliği örnekleri yakında ve
 Bu Visual Studio Galerisi sütun kılavuzları özelliğiyle sürümünü deneyebilirsiniz[uzantısı](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Düzenleyici içinde](../extensibility/inside-the-editor.md)
-[düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md) 
-[dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)  
- [Genişletmek menüler ve komutlar](../extensibility/extending-menus-and-commands.md)
-[menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md)
-[bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Düzenleyicinin içinde](../extensibility/inside-the-editor.md)
+- [Düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)
+- [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)
+- [Menüler ve komutlar genişletme](../extensibility/extending-menus-and-commands.md)
+- [Bir menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md)
+- [Bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)

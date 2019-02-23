@@ -37,48 +37,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f09a7e796dbb1bffd5917eae75f6e5389ec74a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965178"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712508"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma
-Visual C++'da yerel kullanabilirsiniz [runtime_checks](/cpp/preprocessor/runtime-checks) gibi ortak çalışma zamanı hataları yakalamak için:  
-  
-- İşaretçi Bozulması yığın.  
-  
-- Yerel diziler taşması.  
-  
-- Yığın bozulması.  
-  
-- Başlatılmayan yerel değişkenlerde bağımlılıkları.  
-  
-- Atama daha kısa bir değişken için veri kaybı.  
-  
-  Kullanırsanız **/RTC** bir en iyi duruma getirilmiş ile (**/O**) derleme, derleyici hatası sonuçları. Kullanıyorsanız bir `runtime_checks` pragma en iyi duruma getirilmiş bir derlemedeki pragması etkisizdir.  
-  
-  Etkin çalışma zamanı denetimleri olan bir program hata ayıklaması yaparken, programı durdurup bir çalışma zamanı hatası oluştuğunda ayıklayıcıya olduğunda varsayılan eylem. Herhangi bir çalışma zamanı denetimi için bu varsayılan davranışı değiştirebilirsiniz. Daha fazla bilgi için [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md).  
-  
-  Aşağıdaki yordamlar, hata ayıklama derlemesinde yerel çalışma zamanı denetimleri etkinleştirme ve yerel çalışma zamanı denetimi davranışını değiştirmek nasıl açıklar.  
-  
-  Bu bölümdeki diğer konular hakkında bilgi sağlar:  
-  
-- [C çalışma zamanı kitaplığı ile çalışma zamanı özelleştirme denetler](../debugger/native-run-time-checks-customization.md)  
-  
-- [C çalışma zamanı kitaplığını kullanmadan çalışma zamanı kullanarak denetler](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
-  
-### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Hata ayıklama derlemesinde yerel çalışma zamanı denetimlerini etkinleştirmek için  
-  
--   Kullanım **/RTC** seçeneği ve hata ayıklama sürümü C çalışma zamanı kitaplığı ile bağlantı (/ MDd, örneğin).  
-  
-### <a name="to-modify-native-run-time-check-behavior"></a>Yerel çalışma zamanı denetimi davranışını değiştirmek için  
-  
--   Kullanım `runtime_checks` pragması.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   
- [runtime_checks](/cpp/preprocessor/runtime-checks)   
- [Çalışma Zamanı Hata Denetimi](/cpp/c-runtime-library/run-time-error-checking)
+Visual C++'da yerel kullanabilirsiniz [runtime_checks](/cpp/preprocessor/runtime-checks) gibi ortak çalışma zamanı hataları yakalamak için:
+
+- İşaretçi Bozulması yığın.
+
+- Yerel diziler taşması.
+
+- Yığın bozulması.
+
+- Başlatılmayan yerel değişkenlerde bağımlılıkları.
+
+- Atama daha kısa bir değişken için veri kaybı.
+
+  Kullanırsanız **/RTC** bir en iyi duruma getirilmiş ile (**/O**) derleme, derleyici hatası sonuçları. Kullanıyorsanız bir `runtime_checks` pragma en iyi duruma getirilmiş bir derlemedeki pragması etkisizdir.
+
+  Etkin çalışma zamanı denetimleri olan bir program hata ayıklaması yaparken, programı durdurup bir çalışma zamanı hatası oluştuğunda ayıklayıcıya olduğunda varsayılan eylem. Herhangi bir çalışma zamanı denetimi için bu varsayılan davranışı değiştirebilirsiniz. Daha fazla bilgi için [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md).
+
+  Aşağıdaki yordamlar, hata ayıklama derlemesinde yerel çalışma zamanı denetimleri etkinleştirme ve yerel çalışma zamanı denetimi davranışını değiştirmek nasıl açıklar.
+
+  Bu bölümdeki diğer konular hakkında bilgi sağlar:
+
+- [C çalışma zamanı kitaplığı ile çalışma zamanı özelleştirme denetler](../debugger/native-run-time-checks-customization.md)
+
+- [C çalışma zamanı kitaplığını kullanmadan çalışma zamanı kullanarak denetler](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
+
+### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Hata ayıklama derlemesinde yerel çalışma zamanı denetimlerini etkinleştirmek için
+
+-   Kullanım **/RTC** seçeneği ve hata ayıklama sürümü C çalışma zamanı kitaplığı ile bağlantı (/ MDd, örneğin).
+
+### <a name="to-modify-native-run-time-check-behavior"></a>Yerel çalışma zamanı denetimi davranışını değiştirmek için
+
+-   Kullanım `runtime_checks` pragması.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
+- [runtime_checks](/cpp/preprocessor/runtime-checks)
+- [Çalışma Zamanı Hata Denetimi](/cpp/c-runtime-library/run-time-error-checking)

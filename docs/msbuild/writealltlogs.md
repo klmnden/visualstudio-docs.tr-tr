@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9244081a228ebcca3c50bd4d4cd4a55acf97c8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641565"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704325"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 Tüm iş parçacıkları ve Bağlamlar için izleme günlüklerini yazar.
@@ -32,9 +32,13 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ```
 
 #### <a name="parameters"></a>Parametreler
-- [in] `intermediateDirectory` İzleme günlüğünü depolanacağı dizin.
+[in] `intermediateDirectory`
 
-- [in] `tlogRootName` Günlük dosyası adı kök adı.
+ İzleme günlüğü depolanacağı dizin.
+
+[in] `tlogRootName`
+
+ Günlük dosyası adı kök adı.
 
 ## <a name="return-value"></a>Dönüş değeri
  Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.

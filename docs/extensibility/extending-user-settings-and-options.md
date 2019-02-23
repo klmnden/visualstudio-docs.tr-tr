@@ -13,27 +13,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b93d09b29b961d0a7659d6be742bcf66d5560ce5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983072"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697279"
 ---
 # <a name="extend-user-settings-and-options"></a>Kullanıcı ayarlarını ve seçeneklerini genişletme
-Visual Studio'da kullanıcı tercihlerini korumak başlıca iki yolu vardır. **Araçları** > **seçenekleri** sayfalarına izin ayarları, genel ve dile özgü birçok farklı türde için kendi değerlerini ayarlamak kullanıcılar. Kullanıcı ayarları genel Visual Studio yapılandırması özelliklerini belirtmek kullanıcılardan izin verir. Seçenekler sayfaları hakkında daha fazla bilgi için bkz: [seçenekler ve Seçenekler sayfaları](../extensibility/internals/options-and-options-pages.md). Kullanıcı ayarları hakkında daha fazla bilgi için bkz. [kullanıcı ayarları desteği](../extensibility/internals/support-for-user-settings.md).  
-  
- [Seçenekler sayfası oluşturma](../extensibility/creating-an-options-page.md)  
- Seçenekler sayfası oluşturma açıklanır.  
-  
- [Ayarları kategorisi oluşturma](../extensibility/creating-a-settings-category.md)  
- Ayarları kategorisi oluşturma açıklanır.  
-  
- [Ayarlar deposu kullanma](../extensibility/using-the-settings-store.md)  
- Ayarlar deposu kullanmayı açıklar.  
-  
- [Ayarlar Deposu'ndan hizmet bilgilerini alma](../extensibility/getting-service-information-from-the-settings-store.md)  
- Ayarlar Deposu'ndan kullanılabilir hizmetleri alın açıklanmaktadır.  
-  
- [Kullanıcı ayarları deposuna yazma](../extensibility/writing-to-the-user-settings-store.md)  
- Kullanıcı ayarları deposuna yazma açıklanmaktadır.
+Visual Studio'da kullanıcı tercihlerini korumak başlıca iki yolu vardır. **Araçları** > **seçenekleri** sayfalarına izin ayarları, genel ve dile özgü birçok farklı türde için kendi değerlerini ayarlamak kullanıcılar. Kullanıcı ayarları genel Visual Studio yapılandırması özelliklerini belirtmek kullanıcılardan izin verir. Seçenekler sayfaları hakkında daha fazla bilgi için bkz: [seçenekler ve Seçenekler sayfaları](../extensibility/internals/options-and-options-pages.md). Kullanıcı ayarları hakkında daha fazla bilgi için bkz. [kullanıcı ayarları desteği](../extensibility/internals/support-for-user-settings.md).
+
+- [Seçenekler sayfası oluşturma](../extensibility/creating-an-options-page.md) bir seçenekler sayfası oluşturma açıklanır.
+
+- [Ayarları kategorisi oluşturma](../extensibility/creating-a-settings-category.md) ayarları kategorisi oluşturma açıklanır.
+
+- [Ayarlar deposu kullanma](../extensibility/using-the-settings-store.md) ayarlar deposu nasıl kullanıldığını açıklar.
+
+- [Ayarlar Deposu'ndan hizmet bilgilerini alma](../extensibility/getting-service-information-from-the-settings-store.md) ayarlar Deposu'ndan kullanılabilir hizmetleri alın açıklanmaktadır.
+
+- [Kullanıcı ayarları deposuna yazma](../extensibility/writing-to-the-user-settings-store.md) kullanıcı ayarları deposuna nasıl kullanılacağını açıklar.

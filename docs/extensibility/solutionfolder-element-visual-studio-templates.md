@@ -14,91 +14,88 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2eb19e10bac46269e8cd1c44e83f6ebd3602101
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4343515ad96c28c971a1cf2969a3ff9886965950
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934003"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722999"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder Öğesi (Visual Studio Şablonları)
-Birden fazla projeli şablonlardaki projeleri gruplandırır.  
-  
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<SolutionFolder >  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-<SolutionFolder Name="DirectoryName">  
-    ...  
-</SolutionFolder>  
-```  
-  
-## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler  
- Aşağıdaki bölümlerde öznitelik, alt öğeler ve üst öğeler açıklanmaktadır.  
-  
-### <a name="attributes"></a>Öznitelikler  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|`Name`|Gerekli öznitelik.<br /><br /> Çözüm klasör'ünün adı.|  
-  
-### <a name="child-elements"></a>Alt Öğeler  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Birden fazla projeli bir şablonda, tek bir projenin .vstemplate dosyasının yolunu belirtir.|  
-|`SolutionFolder`|İsteğe bağlı öğe.<br /><br /> Birden fazla projeli şablonlardaki projeleri gruplandırır.|  
-  
-### <a name="parent-elements"></a>Üst Öğeler  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Birden fazla projeli şablonların içeriğini ve düzenini belirtir.|  
-|`SolutionFolder`|Birden fazla projeli şablonlardaki projeleri gruplandırır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. `SolutionFolder` Öğe şablonu projelerinde gruplar halinde düzenlemek için kullanılır. Tarafından belirtilen klasörler `SolutionFolder` çözüm klasörleri projede olarak oluşturulmuş öğelere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Birden fazla projeli Şablonlar hakkında daha fazla bilgi için bkz. [nasıl yapılır: Birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md).  
-  
-## <a name="example"></a>Örnek  
- Bu örnekte `SolutionFolder` birden çok proje şablonu iki gruplara bölmek için öğe `Math Classes` ve `Graphics Classes`. Bu şablon, ikisi her çözüm klasöründe yer alır, dört proje içerir.  
-  
-```  
-<VSTemplate Version="3.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <SolutionFolder Name="Math Classes">  
-                <ProjectTemplateLink ProjectName="MathClassLib1">  
-                    MathClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="MathClassLib2">  
-                    MathClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-            <SolutionFolder Name="Graphics Classes">  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib1">  
-                    GraphicsClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib2">  
-                    GraphicsClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
- [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: Birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md)
+Birden fazla projeli şablonlardaki projeleri gruplandırır.
+
+ \<VSTemplate > \<TemplateContent > \<ProjectCollection > \<SolutionFolder >
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+<SolutionFolder Name="DirectoryName">
+    ...
+</SolutionFolder>
+```
+
+## <a name="attributes-and-elements"></a>Öznitelikler ve Öğeler
+ Aşağıdaki bölümlerde öznitelik, alt öğeler ve üst öğeler açıklanmaktadır.
+
+### <a name="attributes"></a>Öznitelikler
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|`Name`|Gerekli öznitelik.<br /><br /> Çözüm klasör'ünün adı.|
+
+### <a name="child-elements"></a>Alt Öğeler
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|İsteğe bağlı öğe.<br /><br /> Birden fazla projeli bir şablonda, tek bir projenin .vstemplate dosyasının yolunu belirtir.|
+|`SolutionFolder`|İsteğe bağlı öğe.<br /><br /> Birden fazla projeli şablonlardaki projeleri gruplandırır.|
+
+### <a name="parent-elements"></a>Üst Öğeler
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Birden fazla projeli şablonların içeriğini ve düzenini belirtir.|
+|`SolutionFolder`|Birden fazla projeli şablonlardaki projeleri gruplandırır.|
+
+## <a name="remarks"></a>Açıklamalar
+ Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. `SolutionFolder` Öğe şablonu projelerinde gruplar halinde düzenlemek için kullanılır. Tarafından belirtilen klasörler `SolutionFolder` çözüm klasörleri projede olarak oluşturulmuş öğelere [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Birden fazla projeli Şablonlar hakkında daha fazla bilgi için bkz. [nasıl yapılır: Birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md).
+
+## <a name="example"></a>Örnek
+ Bu örnekte `SolutionFolder` birden çok proje şablonu iki gruplara bölmek için öğe `Math Classes` ve `Graphics Classes`. Bu şablon, ikisi her çözüm klasöründe yer alır, dört proje içerir.
+
+```
+<VSTemplate Version="3.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="Math Classes">
+                <ProjectTemplateLink ProjectName="MathClassLib1">
+                    MathClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="MathClassLib2">
+                    MathClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+            <SolutionFolder Name="Graphics Classes">
+                <ProjectTemplateLink ProjectName="GraphicsClassLib1">
+                    GraphicsClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="GraphicsClassLib2">
+                    GraphicsClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
+- [Proje ve Öğe Şablonları Oluşturma](../ide/creating-project-and-item-templates.md)
+- [Nasıl yapılır: Birden çok proje şablonu oluşturma](../ide/how-to-create-multi-project-templates.md)

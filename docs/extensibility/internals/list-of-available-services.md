@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934211"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695797"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilir Hizmetlerin Listesi
 
@@ -129,7 +129,7 @@ Her hizmet gösterilen arabirimleri ve birincil arabirim edinmek için burada li
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Evet | Evet | Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> bunun yerine hizmet. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Evet | Evet | VSPackage'ı depolamak ve geçerli çözümün .sln dosyasından bilgi almak etkinleştirir. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Hayır | Evet | Tanıyor ekleyin ve yönetilen kod başvurularını güncelleştirin. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Hayır | Evet | Başlatma ve arka plan iş parçacığında indirme hizmeti durdurma için başlangıç sayfasının indirme hizmeti erişim sağlar. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Hayır | Evet | Visual Studio 2017 başlangıç sayfanın indirme hizmeti başlatma ve arka plan iş parçacığında indirme hizmeti durdurmak için erişim sağlar. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Evet | Evet | IDE'nin durum çubuğu erişim sağlar. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Hayır | Evet | Yönetilen kod derlemesi imzalanırken kullanılan parolalar ile güçlü anahtar adlarını ve anahtar dosyaları oluşturmak için yöntemleri erişim sağlar. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Evet | Evet | VSPackage'ı verileri birden çok biçimde kaydetmek için destek sağlamak üzere etkinleştirir. |

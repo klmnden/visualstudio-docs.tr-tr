@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c28bea7daa727ecf67701d8634efb803449382c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: a2276c017646f9ac0b1028a4a5433d0e3cf2d84a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413260"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717682"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 Belirtilen yöntem satır bilgileri olup olmadığını belirler.
@@ -36,8 +36,9 @@ int FunctionHasLineInfo(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pAddress`  
-[in] Tarafından temsil edilen hata ayıklama adresi bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi. Bu adresi bir METHOD_ADDRESS olmalıdır.
+`pAddress`
+
+ [in] Tarafından temsil edilen hata ayıklama adresi bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi. Bu adresi bir METHOD_ADDRESS olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi halde döndürür `S_FALSE`.
@@ -83,4 +84,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

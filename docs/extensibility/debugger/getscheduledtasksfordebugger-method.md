@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b68f8f238c180d4152d99b42f8ac075ef6dd3e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 221a1b49bd3083e0d2dd0248cdf182d699423057
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990634"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695888"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger Metodu
-Tüm zamanlanmış görevlerin dizisini alır.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Bütünleştirilmiş kod:** mscorlib (içinde *mscorlib.dll*)  
-  
- .NET Framework'den bu iç üye erişemediği için aşağıdaki söz dizimini ortak Ara dil (CIL) sağlanır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```csharp  
-.method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Tüm zamanlanmış görevlerin dizisi. Her görev, yürütülmekte olan veya yürütülmesi tamamlandı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem iş parçacığı güvenli değildir ve diğer örnekleri aynı anda kullanmamalısınız <xref:System.Threading.Tasks.TaskScheduler>. Bu yöntem bir hata ayıklayıcı'dan aramanızı yalnızca hata ayıklayıcı, diğer tüm iş parçacıkları askıya aldı.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [TaskScheduler sınıfı](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+Tüm zamanlanmış görevlerin dizisini alır.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Bütünleştirilmiş kod:** mscorlib (içinde *mscorlib.dll*)
+
+ .NET Framework'den bu iç üye erişemediği için aşağıdaki söz dizimini ortak Ara dil (CIL) sağlanır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```csharp
+.method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+ Tüm zamanlanmış görevlerin dizisi. Her görev, yürütülmekte olan veya yürütülmesi tamamlandı.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem iş parçacığı güvenli değildir ve diğer örnekleri aynı anda kullanmamalısınız <xref:System.Threading.Tasks.TaskScheduler>. Bu yöntem bir hata ayıklayıcı'dan aramanızı yalnızca hata ayıklayıcı, diğer tüm iş parçacıkları askıya aldı.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [TaskScheduler sınıfı](../../extensibility/debugger/taskscheduler-class-internal-members.md)

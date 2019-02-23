@@ -1,7 +1,7 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d7d953e62703ecb1790ce9da8c71f4e8f0fdba
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413000"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686307"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Hangi bilgilerin hakkında bir hata ayıklama başvuru nesnesi alınacağını belirtir.
@@ -54,32 +54,23 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ```
 
 ## <a name="members"></a>Üyeler
-DEBUGREF_INFO_NAME  
-Başlat/kullanım `bstrName` yapısında alan.
+DEBUGREF_INFO_NAME başlatma/kullanım `bstrName` yapısında alan.
 
-DEBUGREF_INFO_TYPE  
-Başlat/kullanım `bstrType` yapısında alan.
+DEBUGREF_INFO_TYPE başlatma/kullanım `bstrType` yapısında alan.
 
-DEBUGREF_INFO_VALUE  
-Başlat/kullanım `bstrValue` yapısında alan.
+DEBUGREF_INFO_VALUE başlatma/kullanım `bstrValue` yapısında alan.
 
-DEBUGREF_INFO_ATTRIB  
-Başlat/kullanım `dwAttrib` yapısında alan.
+DEBUGREF_INFO_ATTRIB başlatma/kullanım `dwAttrib` yapısında alan.
 
-DEBUGREF_INFO_REFTYPE  
-Başlat/kullanım `dwRefType` yapısında alan.
+DEBUGREF_INFO_REFTYPE başlatma/kullanım `dwRefType` yapısında alan.
 
-DEBUGREF_INFO_REF  
-Başlat/kullanım `pReference` yapısında alan.
+DEBUGREF_INFO_REF başlatma/kullanım `pReference` yapısında alan.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND  
-Değer alanı otomatik olarak genişletilmiş değeri varsa, bu nesne türü içermelidir.
+DEBUGREF_INFO_VALUE_AUTOEXPAND değer alanı varsa, bu nesne türü için otomatik olarak genişletilmiş değeri içermelidir.
 
-DEBUGREF_INFO_NONE  
-Bayrak belirlendiğini gösterir.
+DEBUGREF_INFO_NONE bayrak ayarlandığını gösterir.
 
-DEBUGREF_INFO_ALL  
-Maske bayrakları belirtir.
+DEBUGREF_INFO_ALL bayrakları maskesi gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu bayraklar geçirilen [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) ve [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) hangi alanları göstermek için yöntemlerini [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapısı olan başlatılacak.
@@ -96,7 +87,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
-[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)  
-[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)
+- [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)

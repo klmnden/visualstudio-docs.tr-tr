@@ -1,7 +1,7 @@
 ---
 title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPERESI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5877bc3fa7fb2844030a862a0a8f8244cffdbb6d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 488c2b1a96d01e0e7dfa9868d2f7e5111adc4e2d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317555"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699437"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 Başarısız bir kesme noktası çözünürlüğü hakkında alınacak bilgileri belirtir.
@@ -48,23 +48,17 @@ public enum enum_BPERESI_FIELDS {
 ```
 
 ## <a name="members"></a>Üyeler
-PERESI_BPRESLOCATION  
-Başlat/kullanım `bpResLocation` (kesme noktası çözünürlüğü konumu) alanının [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) yapısı.
+PERESI_BPRESLOCATION başlatma/kullanım `bpResLocation` (kesme noktası çözünürlüğü konumu) alanının [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) yapısı.
 
-BPERESI_PROGRAM  
-Başlat/kullanım `pProgram` alanını `BP_ERROR_RESOLUTION_INFO` yapısı.
+BPERESI_PROGRAM başlatma/kullanım `pProgram` alanını `BP_ERROR_RESOLUTION_INFO` yapısı.
 
-BPERESI_THREAD  
-Başlat/kullanım `pThread` alanını `BP_ERROR_RESOLUTION_INFO` yapısı.
+BPERESI_THREAD başlatma/kullanım `pThread` alanını `BP_ERROR_RESOLUTION_INFO` yapısı.
 
-BPERESI_MESSAGE  
-Başlat/kullanım `bstrMessage` alanını `BP_ERROR_RESOLUTION_INFO` yapısı.
+BPERESI_MESSAGE başlatma/kullanım `bstrMessage` alanını `BP_ERROR_RESOLUTION_INFO` yapısı.
 
-BPERESI_TYPE  
-Başlat/kullanım `dwType` (kesme noktası türü) alanına `BP_ERROR_RESOLUTION_INFO` yapısı.
+BPERESI_TYPE başlatma/kullanım `dwType` (kesme noktası türü) alanına `BP_ERROR_RESOLUTION_INFO` yapısı.
 
-BPERESI_ALLFIELDS  
-Başlat/tüm alanları kullanmak `BP_ERROR_RESOLUTION_INFO` yapısı.
+BPERESI_ALLFIELDS başlatma/kullanım tüm alanları `BP_ERROR_RESOLUTION_INFO` yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 Bir parametre olarak geçirilen [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) hangi alanları göstermek için yöntemi [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) yapısı olan başlatılacak.
@@ -81,6 +75,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

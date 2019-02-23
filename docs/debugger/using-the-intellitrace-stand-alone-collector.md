@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316853"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710597"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace tek başına toplayıcıyı kullanma (C#, Visual Basic)
 
@@ -172,7 +172,7 @@ ms.locfileid: "56316853"
    > [!NOTE]
    > - Uygulamanızı yavaşlatmayı önlemek için çok etkin değil yerel bir yüksek hızlı disk üzerinde bir konum seçin.
    >   -   .İTrace dosyalarını ve Toplayıcı dosyalarını aynı yere koyabilirsiniz. Ancak, bir Web uygulaması ya da SharePoint uygulaması varsa, buranın uygulamayı barındıran dizin dışında olduğundan emin olun.
-   > 
+   >
    > [!IMPORTANT]
    > - .İTrace dosya dizinini yalnızca toplayıcıyla çalışması gereken kimliklerle kısıtlayın. Bir .iTrace dosyası, çünkü IntelliTrace method parametrelerine ya da dönüş değeri olarak geçirir her veriyi kaydedebilir veri kullanıcıları, veritabanları, diğer kaynak konumları ve bağlantı dizeleri gibi hassas bilgileri içeriyor olabilir.
    >   -   .İTrace dosyalarını açabilen kişilere hassas verileri görüntüleyebilecek yetkiye sahip olduğunuzdan emin olun. .İTrace dosyaları paylaşırken dikkatli olun. Diğer kişilerin erişim gereksinimi olduğunda dosyaları paylaşılan güvenli bir konuma kopyalayın.

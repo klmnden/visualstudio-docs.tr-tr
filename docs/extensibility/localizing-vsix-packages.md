@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936651"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687087"
 ---
 # <a name="localizing-vsix-packages"></a>VSIX Paketlerini Yerelleştirme
 
@@ -27,7 +27,7 @@ Oluşturarak VSIX paketini yerelleştirebilirsiniz bir *Extension.vsixlangpack* 
 
 ## <a name="directory-structure"></a>Dizin yapısı
 
- Bir kullanıcı bir uzantı yüklendiğinde **Uzantılar ve güncelleştirmeler** en üst düzey bir klasör adıyla eşleşen hedef bilgisayarın Visual Studio yerel ayar için VSIX paketi denetler. Varsa **Uzantılar ve güncelleştirmeler** bulur bir *.vsixlangpack* dosya isteğe bağlı olarak klasöründe karşılık gelen değerleri için bu dosyayı yerelleştirilmiş değerleri değiştirir *.vsixmanifest*dosya. Uzantı yüklendiğinde bu değerleri görüntülenir. Aşağıdaki örnek, İspanyolca (es-ES) ve Fransızca (fr-FR) halinde yerelleştirilmiş bir VSIX paketi için dizin yapısını gösterir.  
+ Bir kullanıcı bir uzantı yüklendiğinde **Uzantılar ve güncelleştirmeler** en üst düzey bir klasör adıyla eşleşen hedef bilgisayarın Visual Studio yerel ayar için VSIX paketi denetler. Varsa **Uzantılar ve güncelleştirmeler** bulur bir *.vsixlangpack* dosya isteğe bağlı olarak klasöründe karşılık gelen değerleri için bu dosyayı yerelleştirilmiş değerleri değiştirir *.vsixmanifest*dosya. Uzantı yüklendiğinde bu değerleri görüntülenir. Aşağıdaki örnek, İspanyolca (es-ES) ve Fransızca (fr-FR) halinde yerelleştirilmiş bir VSIX paketi için dizin yapısını gösterir.
 
 ```text
 .
@@ -63,7 +63,7 @@ Aşağıdaki örnek, ilgili kısımlarını gösterir. bir *Extension.vsixmanife
 
 ### <a name="code"></a>Kod
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Aşağıdaki örnek, ilgili kısımlarını gösterir. bir *Extension.vsixmanife
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

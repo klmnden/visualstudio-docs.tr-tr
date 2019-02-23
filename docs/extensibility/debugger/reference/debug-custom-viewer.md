@@ -1,7 +1,7 @@
 ---
 title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_CUSTOM_VIEWER
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe17c8747d5c678c14561a918ddd9d62bd658841
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f50f46376e21694bebeb4f13ab8ed8e658838bf2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315839"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680464"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 Özel bir Görüntüleyici tanımlayan bir yapı Görselleştirici yazın.
@@ -47,23 +47,17 @@ public struct DEBUG_CUSTOM_VIEWER {
 ```
 
 ## <a name="members"></a>Üyeler
-dwID  
-Birden çok İzleyici mi tarafından uygulanan görselleştiricileri ayırt etmek için bir kimlik `GUID`.
+birden çok İzleyici mi tarafından uygulanan görselleştiricileri ayırt etmek için bir kimlik dwID `GUID`.
 
-bstrMenuName  
-Açılan menüde görüntülenen metin.
+bstrMenuName açılan menüde görüntülenen metin.
 
-bstrDescription  
-(Bir null değer kullanılmazsa olmalıdır) tür görselleştiricisi ve özel Görüntüleyici açıklaması.
+(bir null değer kullanılmazsa olmalıdır) tür görselleştiricisi ve özel Görüntüleyici bstrDescription bir açıklaması.
 
-guidLang  
-Sağlayan bir ifade değerlendiricisi dili.
+guidLang sağlayan bir ifade değerlendiricisi dili.
 
-guidVendor  
-Satıcısına sağlayan bir ifade değerlendiricisi.
+guidVendor satıcısına sağlayan bir ifade değerlendiricisi.
 
-bstrMetric  
-Ölçüm hangi tür görselleştiricisi ve özel Görüntüleyici `CLSID` depolanır.
+bstrMetric ölçüm hangi tür görselleştiricisi ve özel Görüntüleyici `CLSID` depolanır.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapının bir liste için bir çağrı tarafından döndürülen [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) yöntemi (ve uzantısı tarafından [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) yöntemi).
@@ -76,6 +70,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

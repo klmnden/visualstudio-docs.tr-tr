@@ -1,7 +1,7 @@
 ---
 title: IDebugCodeContext2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCodeContext2::GetDocumentContext
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd66680e3651f636b1470b881998125b7cf2d38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9c260ecefb2e8c295451eb1bab8ef2da98e002b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040911"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681991"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Bu kod bağlamı için karşılık gelen belge bağlamını alır. Belge bağlamı bir konumda bu yönerge oluşturulan kaynak koduna karşılık gelen kaynak dosyasını temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetDocumentContext(   
-   IDebugDocumentContext2** ppSrcCxt  
-);  
-```  
-  
-```csharp  
-int GetDocumentContext(   
-   out IDebugDocumentContext2 ppSrcCxt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppSrcCxt`  
- [out] Döndürür [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kod bağlamı için karşılık gelen nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kod bağlamı konumda bir yürütme akışı kod yönerge olsa da genel olarak, belge bağlamı, kaynak dosyada bir konum olarak düşünülebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+Bu kod bağlamı için karşılık gelen belge bağlamını alır. Belge bağlamı bir konumda bu yönerge oluşturulan kaynak koduna karşılık gelen kaynak dosyasını temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetDocumentContext( 
+   IDebugDocumentContext2** ppSrcCxt
+);
+```
+
+```csharp
+int GetDocumentContext( 
+   out IDebugDocumentContext2 ppSrcCxt
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppSrcCxt`
+
+ [out] Döndürür [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) kod bağlamı için karşılık gelen nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Kod bağlamı konumda bir yürütme akışı kod yönerge olsa da genel olarak, belge bağlamı, kaynak dosyada bir konum olarak düşünülebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

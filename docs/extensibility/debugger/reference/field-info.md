@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b34624672b64d88ca9b080094c5d661494c089cf
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315904"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694237"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Bu yapı, yerel bir değişken, parametre veya diğer alanlar açıklanır.
@@ -45,20 +45,15 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>Üyeler
-dwFields  
-Bayraklarının bir birleşimi [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) hangi üyelerin doldurulur belirten sabit listesi.
+bayrakları birleşimi dwFields A [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) hangi üyelerin doldurulur belirten sabit listesi.
 
-bstrFullName  
-Alanının tam adı.
+bstrFullName alanının tam adı.
 
-bstrName  
-Kısa ad alanı.
+kısa ad alanının bstrName.
 
-bstrType  
-Alan türü.
+bstrType alanının türü.
 
-dwModifiers  
-Bayraklarının bir birleşimi [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) alanı açıklayan sabit listesi.
+bayrakları birleşimi dwModifiers A [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) alanı açıklayan sabit listesi.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) yöntemi burada da doldurulur.
@@ -71,7 +66,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

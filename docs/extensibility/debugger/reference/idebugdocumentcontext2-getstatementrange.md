@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentContext2::GetStatementRange
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0707b241b52c1ea9c587970f3a3eb4ae097716c3
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 8c95951f7424b6151c78089d1de6c4661cb866e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450249"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686866"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 Belge bağlamı dosya deyimi aralığını alır.
@@ -39,11 +39,13 @@ int GetStatementRange(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pBegPosition`  
-[out içinde] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) başlangıç konumu ile doldurulmuş yapısı. Bu bilgiler gerekli değildir, bu bağımsız değişken null bir değere ayarlayın.
+`pBegPosition`
 
-`pEndPosition`  
-[out içinde] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) oturum bitiş konumu girilir yapısının. Bu bilgiler gerekli değildir, bu bağımsız değişken null bir değere ayarlayın.
+ [out içinde] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) başlangıç konumu ile doldurulmuş yapısı. Bu bilgiler gerekli değildir, bu bağımsız değişken null bir değere ayarlayın.
+
+`pEndPosition`
+
+ [out içinde] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) oturum bitiş konumu girilir yapısının. Bu bilgiler gerekli değildir, bu bağımsız değişken null bir değere ayarlayın.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -86,6 +88,6 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)  
-[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+- [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

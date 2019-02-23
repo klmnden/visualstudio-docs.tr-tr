@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b0809b1d6a19a2bb46fefbf90338589de614a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ceb0ca767b1ac6364e103925fb86ed639c3d321d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976374"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680925"
 ---
 # <a name="edit-and-continue-not-supported-for-f"></a>Düzenle ve Devam Et F#'de Desteklenmez #
 Düzenle ve devam et desteklenmez, hata ayıklaması yaparken F# kod. Düzenlemeleri F# kod hata ayıklama oturumu sırasında mümkündür, ancak kaçınılmalıdır. Kod değişiklikleri, hata ayıklama oturumu sırasında uygulanmaz. Tüm düzenlemeleri bu nedenle, yapılan F# , hata ayıklarken kod, kaynak kodunda hata ayıklaması yapılan kod eşleşmeyen neden olur.

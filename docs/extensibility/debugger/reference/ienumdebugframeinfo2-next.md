@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFrameInfo2::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugFrameInfo2::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b6072b4273ce2c2c94a6c265cd46af8ef5f165c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 361b936cf2072e2105edfb02f66f4e0524b2b98e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980641"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705144"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
-Sabit listesinden alınmış sonraki öğe kümesini döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Next(  
-   ULONG       celt,  
-   FRAMEINFO** rgelt,  
-   ULONG*      pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint        celt,  
-   FRAMEINFO[] rgelt,  
-   ref uint    pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `celt`  
- [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.  
-  
- `rgelt`  
- [out içinde] Dizi [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) doldurulacak öğeleri.  
-  
- `pceltFetched`  
- [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+Sabit listesinden alınmış sonraki öğe kümesini döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Next(
+   ULONG       celt,
+   FRAMEINFO** rgelt,
+   ULONG*      pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint        celt,
+   FRAMEINFO[] rgelt,
+   ref uint    pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `celt`
+
+ [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
+
+ `rgelt`
+
+ [out içinde] Dizi [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) doldurulacak öğeleri.
+
+ `pceltFetched`
+
+ [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

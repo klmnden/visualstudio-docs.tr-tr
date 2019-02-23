@@ -11,26 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f54572c7712d859925ce7a93eaa8a1f3d8c79060
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c79a22a81cd265d148987fc1660e6128ce0efceb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955134"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715006"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUID'ler ve sabitler Visual Studio SDK'sı
-<xref:Microsoft.VisualStudio.VSConstants> Sınıfı ortam GUID'ler ve sabitler seçimi erişim sağlar.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [IDE GUID’leri](../extensibility/ide-guids.md)  
- Tarafından sağlanan GUID'leri listelenmektedir <xref:Microsoft.VisualStudio.VSConstants>.  
-  
- [IDE sabitleri](../extensibility/ide-constants.md)  
- Tarafından sağlanan SDK sabitleri listeler <xref:Microsoft.VisualStudio.VSConstants>.  
-  
-## <a name="related-sections"></a>İlgili bölümler  
- [Yönetilen kodda COM sabitleri](../extensibility/com-constants-in-managed-code.md)  
- Standart COM sabitleri, yönetilen kod için yönetilen paket Çerçevesi'nden (MPF) listeler.  
-  
- [Proje sistemlerini genişletmeye yönelik IDE tanımlı komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- Proje sistemlerini genişletmeye için kullanılan komut öğeleri farklı türlerini listeler.
+<xref:Microsoft.VisualStudio.VSConstants> Sınıfı ortam GUID'ler ve sabitler seçimi erişim sağlar.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [IDE GUID'leri](../extensibility/ide-guids.md) listeler tarafından sağlanan GUID'leri <xref:Microsoft.VisualStudio.VSConstants>.
+
+- [IDE sabitleri](../extensibility/ide-constants.md) listeler SDK sabitler tarafından sağlanan <xref:Microsoft.VisualStudio.VSConstants>.
+
+## <a name="related-sections"></a>İlgili bölümler
+- [Yönetilen kodda COM sabitleri](../extensibility/com-constants-in-managed-code.md) listeleri standart COM sabitleri için kullanılabilir yönetilen koddan yönetilen paket Çerçevesi'nden (MPF).
+
+- [Proje sistemlerini genişletmeye yönelik IDE tanımlı komutlar](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) proje sistemleri genişletmek için kullanılan komut öğelerin farklı türlerini listeler.

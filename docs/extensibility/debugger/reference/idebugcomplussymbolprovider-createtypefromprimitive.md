@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aa6a1c6c97090da451c2d9bdd08891d0f6cb0f3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: da9d0639ec6cf6cae01298273f21e3fde1f2aafd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412896"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718098"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 Belirtilen temel türden bir türü oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-[C++]
+```cpp
 HRESULT CreateTypeFromPrimitive(
     DWORD          dwPrimType,
     IDebugAddress* pAddress,
@@ -32,8 +31,7 @@ HRESULT CreateTypeFromPrimitive(
 );
 ```
 
-```
-[C#]
+```csharp
 int CreateTypeFromPrimitive(
     uint          dwPrimType,
     IDebugAddress pAddress,
@@ -42,14 +40,17 @@ int CreateTypeFromPrimitive(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`dwPrimType`  
-[in] Değerini [CorElementType numaralandırması](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) temsil eden temel türü.
+`dwPrimType`
 
-`pAddress`  
-[in] Bir adres nesnesini temsil ettiği bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
+ [in] Değerini [CorElementType numaralandırması](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) temsil eden temel türü.
 
-`ppType`  
-[in] Döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) türü tanımlayan nesne.
+`pAddress`
+
+ [in] Bir adres nesnesini temsil ettiği bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) arabirimi.
+
+`ppType`
+
+ [in] Döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) türü tanımlayan nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -95,4 +96,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

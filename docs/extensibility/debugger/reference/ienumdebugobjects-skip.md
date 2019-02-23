@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugObjects::Skip | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugObjects::Skip
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f39c4fed6d2610dc55779510c8e78843878d91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41865780df808231b929ef775d4e967b8c608595
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937790"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687005"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
-Bu yöntem, belirtilen sayıda öğeyi atlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Skip(  
-   [in] ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   [In] uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `celt`  
- [in] Geçilecek öğelerin sayısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa `celt` kalan öğeleri sayısından büyüktür; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa `celt` numarasından daha büyük bir değer belirtir, kalan öğeleri numaralandırma sonuna ayarlanır ve `S_FALSE` döndürülür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
+Bu yöntem, belirtilen sayıda öğeyi atlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Skip(
+   [in] ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   [In] uint celt
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `celt`
+
+ [in] Geçilecek öğelerin sayısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` varsa `celt` kalan öğeleri sayısından büyüktür; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Varsa `celt` numarasından daha büyük bir değer belirtir, kalan öğeleri numaralandırma sonuna ayarlanır ve `S_FALSE` döndürülür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

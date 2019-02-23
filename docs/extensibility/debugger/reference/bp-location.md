@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e82c17d9a29db77a0253adb830e40ad6d461b0a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dcae8b30a0bcd7275bc0e2bebd45f834f43269d9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318296"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679358"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Kesme noktası konumunu tanımlamak için kullanılan yapı türünü belirtir.
@@ -51,46 +51,57 @@ public struct BP_LOCATION {
 ```
 
 ## <a name="members"></a>Üyeler
-`bpLocationType`  
-Bir değer [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) yorumlamak için kullanılan numaralandırma `bpLocation` birleşim veya `unionmemberX` üyeleri.
+`bpLocationType` Bir değer [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) yorumlamak için kullanılan numaralandırma `bpLocation` birleşim veya `unionmemberX` üyeleri.
 
-`bpLocation`.`bplocCodeFileLine`  
-[Yalnızca C++] İçeren [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) , yapı `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
+`bpLocation`.`bplocCodeFileLine`
 
-`bpLocation.bplocCodeFuncOffset`  
-[Yalnızca C++] İçeren [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) , yapı `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
+ [Yalnızca C++] İçeren [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) , yapı `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
 
-`bpLocation.bplocCodeContext`  
-[Yalnızca C++] İçeren [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) , yapı `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
+`bpLocation.bplocCodeFuncOffset`
 
-`bpLocation.bplocCodeString`  
-[Yalnızca C++] İçeren [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) , yapı `bpLocationType`  =  `BPLT_CODE_STRING`.
+ [Yalnızca C++] İçeren [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) , yapı `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
 
-`bpLocation.bplocCodeAddress`  
-[Yalnızca C++] İçeren [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) , yapı `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
+`bpLocation.bplocCodeContext`
 
-`bpLocation.bplocDataString`  
-[Yalnızca C++] İçeren [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) , yapı `bpLocationType`  =  `BPLT_DATA_STRING`.
+ [Yalnızca C++] İçeren [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) , yapı `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
 
-`bpLocation.bplocResolution`  
-[Yalnızca C++] İçeren [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) , yapı `bpLocationType`  =  `BPLT_RESOLUTION`.
+`bpLocation.bplocCodeString`
 
-`unionmember1`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+ [Yalnızca C++] İçeren [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) , yapı `bpLocationType`  =  `BPLT_CODE_STRING`.
 
-`unionmember2`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+`bpLocation.bplocCodeAddress`
 
-`unionmember3`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+ [Yalnızca C++] İçeren [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) , yapı `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
 
-`unionmember4`  
-[C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+`bpLocation.bplocDataString`
+
+ [Yalnızca C++] İçeren [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) , yapı `bpLocationType`  =  `BPLT_DATA_STRING`.
+
+`bpLocation.bplocResolution`
+
+ [Yalnızca C++] İçeren [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) , yapı `bpLocationType`  =  `BPLT_RESOLUTION`.
+
+`unionmember1`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+
+`unionmember2`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+
+`unionmember3`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
+
+`unionmember4`
+
+ [C# yalnızca] Yorumlama konusunda açıklamalara bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı üyesidir [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ve [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) yapıları.
 
-[C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpLocationType` değer daha sonra hangi her belirlemek için diğer sütunlarda arayın `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# ' de bir parçası olarak yorumlamak bir yol için örneğe bakın.
+
+ [C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpLocationType` değer daha sonra hangi her belirlemek için diğer sütunlarda arayın `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# ' de bir parçası olarak yorumlamak bir yol için örneğe bakın.
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
@@ -136,12 +147,12 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
-[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
-[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
-[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
-[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)  
-[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
-[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)
+- [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)
+- [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)
+- [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)
+- [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)
+- [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)
+- [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)

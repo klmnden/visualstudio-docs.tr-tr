@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cba31527af469b897ae178b6b0f810840b7d9cd2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0b37e96db46a43b869867b8b5e37f857e75aff9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035490"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705657"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Hata: Web sunucusu istenen kaynağı bulamadı.
-Güvenlik konuları nedeniyle IIS genel bir hata döndürdü.  
+Güvenlik konuları nedeniyle IIS genel bir hata döndürdü.
 
-Olası bir nedeni sunucunun güvenlik yapılandırmasıdır. IIS 6.0 ve önceki sürümleri URLScan bilinen bir eklenti program şüpheli ve hatalı isteklerini filtrelemek için kullanılır. IIS 7.0 yerleşik istek filtreleme, aynı amaçla vardır. Her iki durumda da aşırı kısıtlayıcı istek filtrelemeyi Visual Studio sunucu hata ayıklamasından engelleyebilirsiniz.  
+Olası bir nedeni sunucunun güvenlik yapılandırmasıdır. IIS 6.0 ve önceki sürümleri URLScan bilinen bir eklenti program şüpheli ve hatalı isteklerini filtrelemek için kullanılır. IIS 7.0 yerleşik istek filtreleme, aynı amaçla vardır. Her iki durumda da aşırı kısıtlayıcı istek filtrelemeyi Visual Studio sunucu hata ayıklamasından engelleyebilirsiniz.
 
 Bu hata başka bir olası nedeni W3SVC hizmetini IIS için başlatılmamış ' dir. Bu hizmet hizmetler penceresinde (gri renkte) başlatıldığını kontrol edin (*services.msc*).
 
-Bu hatanın olası çok sayıda ek nedenler vardır. Birkaç yaygın nedenlerinden dosya sisteminde IIS yüklemesi veya yapılandırma, web sitesi yapılandırması veya izinleri ile ilgili bir sorun içerir. Bir tarayıcı ile kaynağa erişmek deneyebilirsiniz. IIS nasıl yapılandırıldığına bağlı olarak, sunucu üzerinde yerel bir tarayıcı kullanın veya ayrıntılı hata iletisini almak için IIS hata günlüğünü inceleyin gerekebilir.  
-  
- IIS sorun giderme hakkında daha fazla bilgi için bkz. [IIS Yönetim ve Yönetim](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+Bu hatanın olası çok sayıda ek nedenler vardır. Birkaç yaygın nedenlerinden dosya sisteminde IIS yüklemesi veya yapılandırma, web sitesi yapılandırması veya izinleri ile ilgili bir sorun içerir. Bir tarayıcı ile kaynağa erişmek deneyebilirsiniz. IIS nasıl yapılandırıldığına bağlı olarak, sunucu üzerinde yerel bir tarayıcı kullanın veya ayrıntılı hata iletisini almak için IIS hata günlüğünü inceleyin gerekebilir.
+
+ IIS sorun giderme hakkında daha fazla bilgi için bkz. [IIS Yönetim ve Yönetim](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

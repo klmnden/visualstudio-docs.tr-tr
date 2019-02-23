@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes
 helpviewer_keywords:
@@ -12,50 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9233e2e4b336942e0f67c5b8c52d0928694ae2fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6203b12defbe70d3807508953d85f39ff725a746
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024870"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693532"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Bu yöntem, belirtilen her hata ayıklama altyapısı (DE) için bir program düğüm ekler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT AddImplicitProgramNodes(  
-   REFGUID guidLaunchingEngine,  
-   GUID*   rgguidSpecificEngines,  
-   DWORD   celtSpecificEngines  
-);  
-```  
-  
-```csharp  
-int AddImplicitProgramNodes(  
-   ref Guid guidLaunchingEngine,  
-   Guid[]   rgguidSpecificEngines,  
-   uint     celtSpecificEngines  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `guidLaunchingEngine`  
- [in] `GUID` , Program başlatmak için kullanılacak olan (ve kendi program düğümleri eklemek için kabul edilir) bir DE.  
-  
- `rgguidSpecificEngines`  
- [in] Dizi `GUID`DEs hangi programın düğümleri eklenir, s.  
-  
- `celtSpecificEngines`  
- [in] Sayısını `GUID`s'te `rgguidSpecificEngines` dizisi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- [Program düğümleri](../../../extensibility/debugger/program-nodes.md) her DE listelenen için eklenecek `rgguidSpecificEngines`— başlatma altyapısı hariç (belirtildiği `guidLaunchingEngine`), bir program başlattığında kendi program düğümü eklemek için kabul.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
- [Program Düğümleri](../../../extensibility/debugger/program-nodes.md)
+Bu yöntem, belirtilen her hata ayıklama altyapısı (DE) için bir program düğüm ekler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT AddImplicitProgramNodes(
+   REFGUID guidLaunchingEngine,
+   GUID*   rgguidSpecificEngines,
+   DWORD   celtSpecificEngines
+);
+```
+
+```csharp
+int AddImplicitProgramNodes(
+   ref Guid guidLaunchingEngine,
+   Guid[]   rgguidSpecificEngines,
+   uint     celtSpecificEngines
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `guidLaunchingEngine`
+
+ [in] `GUID` , Program başlatmak için kullanılacak olan (ve kendi program düğümleri eklemek için kabul edilir) bir DE.
+
+ `rgguidSpecificEngines`
+
+ [in] Dizi `GUID`DEs hangi programın düğümleri eklenir, s.
+
+ `celtSpecificEngines`
+
+ [in] Sayısını `GUID`s'te `rgguidSpecificEngines` dizisi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+- [Program düğümleri](../../../extensibility/debugger/program-nodes.md) her DE listelenen için eklenecek `rgguidSpecificEngines`— başlatma altyapısı hariç (belirtildiği `guidLaunchingEngine`), bir program başlattığında kendi program düğümü eklemek için kabul.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
+- [Program Düğümleri](../../../extensibility/debugger/program-nodes.md)

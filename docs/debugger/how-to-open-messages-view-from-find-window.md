@@ -11,44 +11,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b31bd0a1eea92fcc881f3be008ce0ea633782de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f5fef9288a662b6726c185b50a79c8007b586b42
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967199"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698982"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Nasıl yapılır: Bul penceresinden açık iletiler görünümü
-Kullanılacak kullanışlı bulabileceğiniz **Bul penceresi** iletişim kutusunu hedef penceresi seçin ve ardından o pencereyi iletiler görünümünü açın.  
+Kullanılacak kullanışlı bulabileceğiniz **Bul penceresi** iletişim kutusunu hedef penceresi seçin ve ardından o pencereyi iletiler görünümünü açın.
 
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Pencere Bul iletişim kutusunu kullanarak iletileri görünüm penceresini açmak için  
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Pencere Bul iletişim kutusunu kullanarak iletileri görünüm penceresini açmak için
 
-1. Spy ++ hem hedef penceresi görünür, böylece windows düzenleyin.  
+1. Spy ++ hem hedef penceresi görünür, böylece windows düzenleyin.
 
-2. Gelen **Spy** menüsünde seçin **Bul penceresi**.  
+2. Gelen **Spy** menüsünde seçin **Bul penceresi**.
 
-    [Bul penceresi iletişim kutusu](../debugger/find-window-dialog-box.md) açılır.  
+    [Bul penceresi iletişim kutusu](../debugger/find-window-dialog-box.md) açılır.
 
-3. Gelen **Windows** sekmesinde, sürükleyin **Bulucu Aracı** hedef aralığında. Aracı sürüklerken **Bul penceresi** iletişim kutusunda seçili penceresinde ayrıntılarını görüntüler.  
+3. Gelen **Windows** sekmesinde, sürükleyin **Bulucu Aracı** hedef aralığında. Aracı sürüklerken **Bul penceresi** iletişim kutusunda seçili penceresinde ayrıntılarını görüntüler.
 
-   - veya -  
+   - veya -
 
-     (Örneğin, hata ayıklayıcı'dan kopyalanan) incelemek istediğiniz pencere tanıtıcısı varsa, içine yazabilirsiniz **işlemek** metin kutusu.  
+     (Örneğin, hata ayıklayıcı'dan kopyalanan) incelemek istediğiniz pencere tanıtıcısı varsa, içine yazabilirsiniz **işlemek** metin kutusu.
 
-4. Altında **Göster**seçin **iletileri**.  
+4. Altında **Göster**seçin **iletileri**.
 
-5. Tuşuna **Tamam**.  
+5. Tuşuna **Tamam**.
 
-    Boş bir [iletiler görünümünü](../debugger/messages-view.md) penceresi açılır ve **iletileri** Spy ++ araç çubuğuna menü eklenir.  
+    Boş bir [iletiler görünümünü](../debugger/messages-view.md) penceresi açılır ve **iletileri** Spy ++ araç çubuğuna menü eklenir.
 
-6. Gelen **iletileri** menüsünde seçin **günlüğe kaydetme seçenekleri**.  
+6. Gelen **iletileri** menüsünde seçin **günlüğe kaydetme seçenekleri**.
 
-    [İleti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) açılır.  
+    [İleti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) açılır.
 
-7. Görüntülemek istediğiniz iletileri için Seçenekler'i seçin.  
+7. Görüntülemek istediğiniz iletileri için Seçenekler'i seçin.
 
-8. Tuşuna **Tamam** günlük iletilerini başlatmak için.  
+8. Tuşuna **Tamam** günlük iletilerini başlatmak için.
 
-    Seçilen seçeneklere bağlı olarak, iletileri etkin iletileri görünüm penceresine akış başlayın.  
+    Seçilen seçeneklere bağlı olarak, iletileri etkin iletileri görünüm penceresine akış başlayın.
 
 9. Yeterli sayıda ileti olduğunda seçin **Günlüğü Durdur** gelen **iletileri** menüsü.

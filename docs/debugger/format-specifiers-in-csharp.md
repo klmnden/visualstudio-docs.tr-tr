@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227689"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698995"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Biçim belirleyiciler içinde C# Visual Studio hata ayıklayıcısı
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** biçim belirticilerini kullanarak pencere. İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresi, [izleme noktaları](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç görünür bir [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) belirtilen biçim görüntülenir.
@@ -68,5 +68,5 @@ Aşağıdaki tabloda açıklanmıştır C# biçim belirleyiciler Visual Studio h
 |sonuçlar|IEnumerable veya IEnumerable uygulayan bir tür değişkeninin ile kullanılan\<T >, genellikle bir sorgu ifadesinin sonucu. Sorgu sonucu içeren üyelerini görüntüler.|Tüm üyelerini görüntüler|Üyeleri karşılamak görüntüler sorgunun koşulları|
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[İzleme ve QuickWatch windows](../debugger/watch-and-quickwatch-windows.md)  
-[Otolar ve yerel öğeler pencerelerinde](../debugger/autos-and-locals-windows.md)
+- [İzleme ve QuickWatch windows](../debugger/watch-and-quickwatch-windows.md)
+- [Otolar ve yerel öğeler pencerelerinde](../debugger/autos-and-locals-windows.md)

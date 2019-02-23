@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959297"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699151"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT İyileştirmesi ve Hata Ayıklaması
 **En iyi duruma getirme,. NET'te nasıl:** Kod hatalarını ayıklamak çalışıyorsanız, bu kod olduğunu daha kolay olduğunda **değil** en iyi duruma getirilmiş. Kodun en iyilenmesi, böylece daha hızlı çalışır ancak özgün kaynak kodu doğrudan bir eşlemeye sahip derleyici ve çalışma zamanı yayılan CPU koda değişiklik olmasıdır. Başka bir deyişle, hata ayıklayıcıları yerel değişkenlerin değerini söyleyin ve kod atlama sık belirleyemiyoruz ve kesme noktaları beklediğiniz gibi çalışmayabilir.
@@ -46,8 +46,8 @@ Yalnızca yerel olarak oluşturmakta olduğunuz kod hata ayıklamaya ilgileniyor
 1. Burada hata ayıklayıcı zaten çalışan bir işleme iliştirmekte olduğunuz durumlarda, hata ayıklayıcı iliştirilmiş olduğu sırada zaten yüklenmiş olan modülleri üzerinde hiçbir etkisi bu seçeneğine sahip olursunuz.
 2. Bu seçenek silinmiş DLL'leri üzerinde etkiye sahip değildir (a.k.a Ngen) yerel kod için önceden derlenmiş. Ancak, önceden derlenmiş kod kullanımını '1' değişkeni 'COMPlus_ZapDisable' olarak ayarlanan ortam işlem başlayarak devre dışı bırakabilirsiniz.
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen kodda hata ayıklama](../debugger/debugging-managed-code.md)   
- [Hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)   
- [Çalıştırma işlemleri iliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Yönetilen Yürütme İşlemi](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
+- [Hata Ayıklayıcısı ile Kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)
+- [Çalıştırma İşlemine İliştirme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Yönetilen Yürütme İşlemi](/dotnet/standard/managed-execution-process)

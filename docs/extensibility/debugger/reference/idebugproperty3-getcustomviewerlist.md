@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetCustomViewerList
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8038e1d127a726a12ec37372758b992a1296c1d4
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449924"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722739"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Bu özellik ile ilişkilendirilmiş özel görüntüleyiciler listesini alır.
@@ -43,17 +43,21 @@ int GetCustomViewerList(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`celtSkip`  
-[in] Görüntüleyiciler atlamayı sayısı.
+`celtSkip`
 
-`celtRequested`  
-[in] Alınacak görüntüleyiciler sayısı (Ayrıca boyutunu belirtir `rgViewers` dizisi).
+ [in] Görüntüleyiciler atlamayı sayısı.
 
-`rgViewers`  
-[out içinde] Dizi [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) yapıları doldurulmalıdır.
+`celtRequested`
 
-`pceltFetched`  
-[out] Döndürülen görüntüleyiciler gerçek sayısı.
+ [in] Alınacak görüntüleyiciler sayısı (Ayrıca boyutunu belirtir `rgViewers` dizisi).
+
+`rgViewers`
+
+ [out içinde] Dizi [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) yapıları doldurulmalıdır.
+
+`pceltFetched`
+
+ [out] Döndürülen görüntüleyiciler gerçek sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -86,7 +90,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
-[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)  
-[Tür Görselleştiricisi ve Özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
+- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+- [Tür Görselleştiricisi ve Özel Görüntüleyici](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

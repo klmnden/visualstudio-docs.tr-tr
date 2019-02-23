@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf8f72f0d9b0c2d847ddb2c5e7e6c3c8d4ae4467
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932501"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717526"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -31,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Arguments
 
-- *commandName*
+*commandName*
 
-  Gerekli. Visual Studio komut ya da çift tırnak işareti içine alınmış diğer adının, tam adı. Komut ve diğer ad sözdizimi hakkında daha fazla bilgi için bkz: [Visual Studio komutları](../../ide/reference/visual-studio-commands.md).
+Gerekli. Visual Studio komut ya da çift tırnak işareti içine alınmış diğer adının, tam adı. Komut ve diğer ad sözdizimi hakkında daha fazla bilgi için bkz: [Visual Studio komutları](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başlangıç tamamlandıktan sonra IDE adlandırılmış komutu yürütür. Bu anahtarı kullanırsanız, IDE başlangıçta Visual Studio Başlangıç sayfası görüntülemez.
+Başlangıç tamamlandıktan sonra IDE adlandırılmış komutu yürütür.
+
+::: moniker range="vs-2017"
+
+Bu anahtarı kullanırsanız, IDE başlangıçta başlangıç sayfasını görüntülemez.
+
+::: moniker-end
 
 Bir eklenti bir komut sunarsa, komut satırından eklentiyi başlatmak için bu anahtarı kullanabilirsiniz. Daha fazla bilgi için [nasıl yapılır: Eklentileri Eklenti Yöneticisi'ni kullanarak denetim](/previous-versions/xwdatdwh(v=vs.140)).
 

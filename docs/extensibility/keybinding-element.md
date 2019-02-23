@@ -11,65 +11,65 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4706114f87e18ce97789e41098e13cf38917d533
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933045"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678442"
 ---
 # <a name="keybinding-element"></a>KeyBinding öğesi
-Komut için klavye kısayolları KeyBinding öğesi belirtir.  
-  
- Komutlar tek ve çift tuş bağlamaları ilişkili olabilir. Tek bir tuş bağlama örneğidir **Ctrl**+**S** için **Kaydet** komutu. Bir komut tetiklemek için iki ardışık tuş birleşimleri çift anahtar bağlamalarını gerektirir. Bir çift anahtar bağlama örneğidir <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** işareti ayarlamak için.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-<Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />  
-```  
-  
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
-  
-### <a name="attributes"></a>Öznitelikler  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|GUID|Gerekli.|  
-|kimlik|Gerekli.|  
-|düzenleyici|Gerekli. GUID Düzenleyici klavye kısayolu etkin olacağı düzenleme bağlamı gösterir. Genel bağlama kapsam "guidVSStd97" değeridir.|  
-|key1|Gerekli. Geçerli değerler tüm typable alfasayısal karakterler ve iki basamaklı onaltılık değerler 0 x öncesinde ve [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|Değişiklik1|İsteğe bağlı. Herhangi bir birleşimini **Ctrl**, **Alt**, ve **Shift** boşlukla ayrılmış.|  
-|key2|İsteğe bağlı. Geçerli değerler tüm typable alfasayısal karakterler ve iki basamaklı onaltılık değerler 0 x öncesinde ve [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|mod2|İsteğe bağlı. Herhangi bir birleşimini **Ctrl**, **Alt**, ve **Shift** boşlukla ayrılmış.|  
-|Öykünücü|İsteğe bağlı.|  
-|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Alt öğeleri  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|Üst öğe||  
-|Ek Açıklama||  
-  
-### <a name="parent-elements"></a>Üst öğeler  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[KeyBindings öğesi](../extensibility/keybindings-element.md)|Tuş öğeleri gruplandırır ve diğer KeyBindings gruplandırmaları.|  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-<KeyBindings>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
-    editor="guidWidgetEditor" key1="VK_F5"/>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
-    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
-</KeyBindings>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [KeyBindings öğesi](../extensibility/keybindings-element.md)   
- [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Komut için klavye kısayolları KeyBinding öğesi belirtir.
+
+ Komutlar tek ve çift tuş bağlamaları ilişkili olabilir. Tek bir tuş bağlama örneğidir **Ctrl**+**S** için **Kaydet** komutu. Bir komut tetiklemek için iki ardışık tuş birleşimleri çift anahtar bağlamalarını gerektirir. Bir çift anahtar bağlama örneğidir <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** işareti ayarlamak için.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+<Keybinding guid="MyGuid" id="MyId" Editor="MyEditor" key1="B" key2="x" mod1="Control" mod2="Alt" />
+```
+
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
+
+### <a name="attributes"></a>Öznitelikler
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|GUID|Gerekli.|
+|kimlik|Gerekli.|
+|düzenleyici|Gerekli. GUID Düzenleyici klavye kısayolu etkin olacağı düzenleme bağlamı gösterir. Genel bağlama kapsam "guidVSStd97" değeridir.|
+|key1|Gerekli. Geçerli değerler tüm typable alfasayısal karakterler ve iki basamaklı onaltılık değerler 0 x öncesinde ve [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|Değişiklik1|İsteğe bağlı. Herhangi bir birleşimini **Ctrl**, **Alt**, ve **Shift** boşlukla ayrılmış.|
+|key2|İsteğe bağlı. Geçerli değerler tüm typable alfasayısal karakterler ve iki basamaklı onaltılık değerler 0 x öncesinde ve [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|İsteğe bağlı. Herhangi bir birleşimini **Ctrl**, **Alt**, ve **Shift** boşlukla ayrılmış.|
+|Öykünücü|İsteğe bağlı.|
+|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Alt öğeleri
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|Üst öğe||
+|Ek Açıklama||
+
+### <a name="parent-elements"></a>Üst öğeler
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[KeyBindings öğesi](../extensibility/keybindings-element.md)|Tuş öğeleri gruplandırır ve diğer KeyBindings gruplandırmaları.|
+
+## <a name="example"></a>Örnek
+
+```
+<KeyBindings>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"
+    editor="guidWidgetEditor" key1="VK_F5"/>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>
+</KeyBindings>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [KeyBindings öğesi](../extensibility/keybindings-element.md)
+- [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

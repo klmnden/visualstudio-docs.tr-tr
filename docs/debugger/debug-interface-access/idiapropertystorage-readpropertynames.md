@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b7dc28583579616dc5c763d3167ea76d18b698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629748"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695849"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 Dize adları için karşılık gelen alır, özellik tanımlayıcıları verilir.
@@ -42,7 +42,8 @@ HRESULT ReadPropertyNames (
 [in] Adları alınacağı özellik kimlikleri dizisi (`PROPID` WTypes.h tanımlanan bir `ULONG`).
 
  `rglpwstrName`
-- [out içinde] Belirtilen özellik kimliklerinin özellik adları dizisi. Dizi istenen sayıda özellik adları tutacak önceden ayrılmış olmalıdır ve en az tutabilecek özellikte `cpropid``BSTR` dizeleri.
+
+[out içinde] Belirtilen özellik kimliklerinin özellik adları dizisi. Dizi istenen sayıda özellik adları tutacak önceden ayrılmış olmalıdır ve en az tutabilecek özellikte `cpropid``BSTR` dizeleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.

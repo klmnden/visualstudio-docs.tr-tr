@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 047545f3b2ab3c08b84fbb4af95a46c44655f1cd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c29c22ae4539d874ffc08c9ce5adf94ab33d404
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981313"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696980"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Dil hizmetiniz için Editorconfig'i destekleme
 
@@ -45,5 +45,5 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsof
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EditorConfig kullanarak taşınabilir bir düzenleyici ayarları oluşturma](../ide/create-portable-custom-editor-options.md)  
-[Düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)
+- [EditorConfig kullanarak taşınabilir bir düzenleyici ayarları oluşturma](../ide/create-portable-custom-editor-options.md)
+- [Düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md)

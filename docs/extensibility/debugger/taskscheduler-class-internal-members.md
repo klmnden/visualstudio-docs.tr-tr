@@ -11,40 +11,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1801bc087311170169c752af8b50de4cd4e01da6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf7b693c058cd69ab2dcb79be787cf5a16d8f8a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926845"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696161"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler sınıfı - dahili üyeler
-Bu makalede iç üyelerine <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> yardımcı sınıf, bir özel hata ayıklayıcı uygulama. Bu sınıf hakkında genel bilgi için bkz: <xref:System.Threading.Tasks.TaskScheduler> başvurusu makalesinde.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Bütünleştirilmiş kod:** mscorlib (içinde *mscorlib.dll*)  
-  
- Bu iç üyeleri .NET Framework'ten erişemediği için aşağıdaki söz dizimini ortak Ara dil (CIL) sağlanır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```csharp  
-.class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
-       extends System.Object  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Tüm zamanlanmış görevlerin dizisini alır.|  
-|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Tüm alır <xref:System.Threading.Tasks.TaskScheduler> şu anda etkin olan nesneler.|  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [.NET Framework için paralel uzantı dahili bileşenleri](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+Bu makalede iç üyelerine <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> yardımcı sınıf, bir özel hata ayıklayıcı uygulama. Bu sınıf hakkında genel bilgi için bkz: <xref:System.Threading.Tasks.TaskScheduler> başvurusu makalesinde.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Bütünleştirilmiş kod:** mscorlib (içinde *mscorlib.dll*)
+
+ Bu iç üyeleri .NET Framework'ten erişemediği için aşağıdaki söz dizimini ortak Ara dil (CIL) sağlanır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```csharp
+.class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler
+       extends System.Object
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Tüm zamanlanmış görevlerin dizisini alır.|
+|[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Tüm alır <xref:System.Threading.Tasks.TaskScheduler> şu anda etkin olan nesneler.|
+
+## <a name="remarks"></a>Açıklamalar
+
+## <a name="see-also"></a>Ayrıca bkz.
+- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
+- [.NET Framework için paralel uzantı dahili bileşenleri](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

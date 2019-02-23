@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945066"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692236"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Desteklenen kod değişiklikleri (C# ve Visual Basic)
 Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türde işler. Metot gövdeleri dışında çoğu değişiklikleri ve metot gövdeleri içindeki bazı değişiklikler, ancak hata ayıklama sırasında uygulanamaz. Desteklenmeyen bu değişiklikleri uygulamak için hata ayıklamayı durdurmak ve kod yeni bir sürümle yeniden başlatmanız gerekir.
@@ -43,12 +43,12 @@ Aşağıdaki tabloda yapılan değişiklikleri gösterir C# ve Visual Basic kodu
 > Dize ilişkilendirme ve null koşullu işleçleri gibi yeni dil özellikleri genellikle Düzenle ve devam et tarafından desteklenir. En güncel bilgiler için bkz: [Enc desteklenen düzenler](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) sayfası.
 
 ## <a name="unsupported-changes-to-code"></a>Desteklenmeyen kod değişiklikleri
- Aşağıdaki değişiklikler uygulanamaz C# ve Visual Basic kodu hata ayıklama oturumu sırasında:  
-  
--   Geçerli deyimi veya herhangi bir etkin deyim yapılan değişiklikler.  
-  
-     Etkin deyimleri için geçerli durumunu almak için çağrılan işlevler çağrı yığını üzerinde herhangi bir deyim ekleyin.  
-  
+ Aşağıdaki değişiklikler uygulanamaz C# ve Visual Basic kodu hata ayıklama oturumu sırasında:
+
+-   Geçerli deyimi veya herhangi bir etkin deyim yapılan değişiklikler.
+
+     Etkin deyimleri için geçerli durumunu almak için çağrılan işlevler çağrı yığını üzerinde herhangi bir deyim ekleyin.
+
      Geçerli deyimi kaynak penceresinde sarı arka plan olarak işaretlenir. Diğer etkin deyimleri gölgeli bir arka plan işaretlenir ve salt okunurdur. Bu varsayılan renkleri değiştirilebilir **seçenekleri** iletişim kutusu.
 
 - Aşağıdaki tabloda, dil öğesi tarafından desteklenmeyen kod değişiklikleri gösterir.
@@ -76,9 +76,9 @@ Aşağıdaki tabloda yapılan değişiklikleri gösterir C# ve Visual Basic kodu
 |using deyimleri|Ekle|
 |zaman uyumsuz yöntemler/lambdalar|.NET Framework 4 hedefleyen bir proje içinde zaman uyumsuz yöntem/lambda değiştirebilir ve daha düşük (bkz [ayrıntıları](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Yineleyiciler|.NET Framework 4 hedefleyen bir proje içinde bir yineleyici değiştirebilir ve daha düşük (bkz [ayrıntıları](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-  
-## <a name="unsafe-code"></a>Güvenli olmayan kod  
- Güvenli olmayan kod değişiklikleri başka bir kısıtlama ile güvenli kod değişiklikleri onunla aynı sınırlamalara sahiptir: Düzenle ve devam et değişiklikleri içeren bir yöntemi içinde güvenli olmayan kod desteklemiyor `stackalloc` işleci.  
+
+## <a name="unsafe-code"></a>Güvenli olmayan kod
+ Güvenli olmayan kod değişiklikleri başka bir kısıtlama ile güvenli kod değişiklikleri onunla aynı sınırlamalara sahiptir: Düzenle ve devam et değişiklikleri içeren bir yöntemi içinde güvenli olmayan kod desteklemiyor `stackalloc` işleci.
 
 ## <a name="unsupported-app-scenarios"></a>Desteklenmeyen uygulama senaryoları
 
@@ -86,24 +86,24 @@ Desteklenmeyen uygulamalar ve platformlar, ASP.NET 5, Silverlight 5 ve Windows 8
 
 > [!NOTE]
 > Desteklenen uygulamaların UWP dahil Windows 10 ve .NET Framework 4.6 hedefleyen x86 ve x64 uygulamaları (yalnızca masaüstü bir sürümünde olan .NET Framework) masaüstü veya sonraki sürümleri.
-  
-## <a name="unsupported-scenarios"></a>Desteklenmeyen senaryolar  
- Düzenle ve devam et hata ayıklama aşağıdaki senaryolarda kullanılabilir değil:  
-  
--   Karma mod (yerel/yönetilen) hata ayıklama.  
-  
--   SQL hata ayıklama.  
-  
--   Bir Dr hata ayıklama. Watson dökümü.  
-  
--   Katıştırılmış çalışma zamanı uygulama hata ayıklama.  
-  
--   Bir uygulama kullanarak hata ayıklama iliştirme (**hata ayıklama > iliştirme**) seçerek uygulamayı çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.  
-  
--   En iyi duruma getirilmiş kodda hata ayıklama.  
-  
+
+## <a name="unsupported-scenarios"></a>Desteklenmeyen senaryolar
+ Düzenle ve devam et hata ayıklama aşağıdaki senaryolarda kullanılabilir değil:
+
+-   Karma mod (yerel/yönetilen) hata ayıklama.
+
+-   SQL hata ayıklama.
+
+-   Bir Dr hata ayıklama. Watson dökümü.
+
+-   Katıştırılmış çalışma zamanı uygulama hata ayıklama.
+
+-   Bir uygulama kullanarak hata ayıklama iliştirme (**hata ayıklama > iliştirme**) seçerek uygulamayı çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.
+
+-   En iyi duruma getirilmiş kodda hata ayıklama.
+
 -   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Düzenle ve devam et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Nasıl yapılır: Düzenle ve Devam Et’i Kullanma (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Düzenle ve Devam Et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+- [Nasıl yapılır: Düzenle ve Devam Et’i Kullanma (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO
 helpviewer_keywords:
@@ -12,103 +12,91 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5da0e899013e0dd881f862ddc29b0ff823f9d3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954039"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683616"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
-Belirli bir modülün (DLL, EXE veya derleme) açıklar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typedef struct tagMODULE_INFO {   
-   MODULE_INFO_FIELDS dwValidFields;  
-   BSTR               m_bstrName;  
-   BSTR               m_bstrUrl;  
-   BSTR               m_bstrVersion;  
-   BSTR               m_bstrDebugMessage;  
-   UINT64             m_addrLoadAddress;  
-   UINT64             m_addrPreferredLoadAddress;  
-   DWORD              m_dwSize;  
-   DWORD              m_dwLoadOrder;  
-   FILETIME           m_TimeStamp;  
-   BSTR               m_bstrUrlSymbolLocation;  
-   MODULE_FLAGS       m_dwModuleFlags;  
-} MODULE_INFO;  
-```  
-  
-```csharp  
-public struct MODULE_INFO {   
-   public uint     dwValidFields;  
-   public string   m_bstrName;  
-   public string   m_bstrUrl;  
-   public string   m_bstrVersion;  
-   public string   m_bstrDebugMessage;  
-   public ulong    m_addrLoadAddress;  
-   public ulong    m_addrPreferredLoadAddress;  
-   public uint     m_dwSize;  
-   public uint     m_dwLoadOrder;  
-   public FILETIME m_TimeStamp;  
-   public string   m_bstrUrlSymbolLocation;  
-   public uint     m_dwModuleFlags;  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- dwValidFields  
- Bayraklarının bir birleşimi [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) hangi alanların doldurulmuş belirten sabit listesi.  
-  
- m_bstrName  
- Modül adı.  
-  
- m_bstrUrl  
- Modül URL'si.  
-  
- m_bstrVersion  
- Modül sürümü.  
-  
- m_bstrDebugMessage  
- İsteğe bağlı bir ileti modülü hakkında Örneğin, "sembolleri yüklenemiyor."  
-  
- m_addrLoadAddress  
- Modül yükleme adresi.  
-  
- m_addrPreferredLoadAddress  
- Modül tercih edilen yükleme adresi.  
-  
- m_dwSize  
- Modül boyutu.  
-  
- m_dwLoadOrder  
- Modül yükleme sırası.  
-  
- m_TimeStamp  
- Sembol dosyası en son değiştirildiği zamanı.  
-  
- m_bstrUrlSymbolLocation  
- Sembol dosyası konumu (örneğin, ".\\") modülü belirtilmiş. Bir modül için semboller bulmak için bir başlangıç konumu olarak kullanılır.  
-  
- m_dwModuleFlags  
- Bayraklarının bir birleşimi [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) modülü açıklayan sabit listesi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yapı geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) yöntemi burada da doldurulur.  
-  
- Bu yapı, listelenen her bir modülü karşılık gelen **modülleri** penceresi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar ve birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
- [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)
+Belirli bir modülün (DLL, EXE veya derleme) açıklar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typedef struct tagMODULE_INFO { 
+   MODULE_INFO_FIELDS dwValidFields;
+   BSTR               m_bstrName;
+   BSTR               m_bstrUrl;
+   BSTR               m_bstrVersion;
+   BSTR               m_bstrDebugMessage;
+   UINT64             m_addrLoadAddress;
+   UINT64             m_addrPreferredLoadAddress;
+   DWORD              m_dwSize;
+   DWORD              m_dwLoadOrder;
+   FILETIME           m_TimeStamp;
+   BSTR               m_bstrUrlSymbolLocation;
+   MODULE_FLAGS       m_dwModuleFlags;
+} MODULE_INFO;
+```
+
+```csharp
+public struct MODULE_INFO { 
+   public uint     dwValidFields;
+   public string   m_bstrName;
+   public string   m_bstrUrl;
+   public string   m_bstrVersion;
+   public string   m_bstrDebugMessage;
+   public ulong    m_addrLoadAddress;
+   public ulong    m_addrPreferredLoadAddress;
+   public uint     m_dwSize;
+   public uint     m_dwLoadOrder;
+   public FILETIME m_TimeStamp;
+   public string   m_bstrUrlSymbolLocation;
+   public uint     m_dwModuleFlags;
+};
+```
+
+## <a name="members"></a>Üyeler
+ bayrakları birleşimi dwValidFields A [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) hangi alanların doldurulmuş belirten sabit listesi.
+
+ m_bstrName modül adı.
+
+ m_bstrUrl modülü URL.
+
+ m_bstrVersion Modül sürümü.
+
+ m_bstrDebugMessage isteğe bağlı bir ileti modülü hakkında Örneğin, "sembolleri yüklenemiyor."
+
+ Adres m_addrLoadAddress modülünü yükleyin.
+
+ m_addrPreferredLoadAddress modülünün tercih edilen yük adresi.
+
+ m_dwSize modül boyutu.
+
+ Modül yükleme sırasında m_dwLoadOrder.
+
+ Sembol dosyası en son değiştirildiği zamanı m_TimeStamp.
+
+ m_bstrUrlSymbolLocation sembol dosyasının konumunu (örneğin, ".\\") modülü belirtilmiş. Bir modül için semboller bulmak için bir başlangıç konumu olarak kullanılır.
+
+ bayrakları birleşimi m_dwModuleFlags A [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) modülü açıklayan sabit listesi.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yapı geçirilir [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) yöntemi burada da doldurulur.
+
+ Bu yapı, listelenen her bir modülü karşılık gelen **modülleri** penceresi.
+
+## <a name="requirements"></a>Gereksinimler
+ Üstbilgi: msdbg.h
+
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
+- [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

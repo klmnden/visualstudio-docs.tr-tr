@@ -21,25 +21,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a52a1aba71af25ff66cacefd34e36d7ec33e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e80504e14e6468dc4d9efa31258bdbf6150a649
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992678"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690360"
 ---
 # <a name="debugging-options-dialog-box"></a>Hata Ayıklama, Seçenekler İletişim Kutusu
-**Hata ayıklama** klasörü içinde **seçenekleri** iletişim kutusunda **Araçları** menüsünde, hata ayıklayıcı belirtmenize olanak verir sayfalarda araç seçenekleri sağlar.  
-  
--   [Genel, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/general-debugging-options-dialog-box.md)  
-  
--   [Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)  
-  
--   [Çıkış Penceresi, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/output-window-debugging-options-dialog-box.md)  
-  
--   [Simgeler, hata ayıklama, Seçenekler iletişim kutusu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md) [Visual Studio'da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)   
- [Kullanıcı arabirim başvurusunda hata ayıklama](../debugger/debugging-user-interface-reference.md)
+**Hata ayıklama** klasörü içinde **seçenekleri** iletişim kutusunda **Araçları** menüsünde, hata ayıklayıcı belirtmenize olanak verir sayfalarda araç seçenekleri sağlar.
+
+-   [Genel, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/general-debugging-options-dialog-box.md)
+
+-   [Tam Zamanında, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/just-in-time-debugging-options-dialog-box.md)
+
+-   [Çıkış Penceresi, Hata Ayıklama, Seçenekler İletişim Kutusu](../debugger/output-window-debugging-options-dialog-box.md)
+
+-   [Simgeler, hata ayıklama, Seçenekler iletişim kutusu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
+- [Kullanıcı arabirim başvurusunda hata ayıklama](../debugger/debugging-user-interface-reference.md)

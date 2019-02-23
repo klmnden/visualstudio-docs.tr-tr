@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316333"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681484"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Araç penceresine kısayol menüsü ekleme
 Bu izlenecek yol bir kısayol menüsü araç penceresine geçirir. Bir kullanıcı bir düğme, metin kutusu veya pencere arkaplanı tıklattığında görünen menüsünde bir kısayol menüsünü olur. Bir kısayol menü komutlarını diğer menü veya araç çubukları üzerindeki komutları olarak aynı şekilde davranır. Bir kısayol menüsü desteklemek için projeyi belirtin *.vsct* dosya ve yanıt olarak sağ tıklama fare görüntüleyin.
@@ -277,5 +277,5 @@ Bu izlenecek yolda gösterilen bir kullanıcı gibi sağlar bir kısayol menüs�
 4. Kısayol menüsünde rengi. Araç penceresi arka plan rengini seçilen renge değiştirilmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Hizmetleri kullanma ve sağlama](../extensibility/using-and-providing-services.md)
+- [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Hizmetleri kullanma ve sağlama](../extensibility/using-and-providing-services.md)

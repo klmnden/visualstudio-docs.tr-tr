@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionEvaluator::GetMethodProperty
 helpviewer_keywords:
@@ -12,63 +12,68 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e8af1162ca51ae5bae8ca01b0da195ee343f095
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd13939a4c469c41d1d0726bb60aa443ab8fb9e6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962673"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678495"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-Bu yöntem, yerel öğeler, bağımsız değişkenleri ve diğer bir yöntem özelliklerini içeren bir özellik nesnesi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetMethodProperty(   
-   IDebugSymbolProvider* pSymbolProvider,  
-   IDebugAddress*        pAddress,  
-   IDebugBinder*         pBinder,  
-   BOOL                  fIncludeHiddenLocals,  
-   IDebugProperty2**     ppProperty  
-);  
-```  
-  
-```csharp  
-int GetMethodProperty(  
-   IDebugSymbolProvider pSymbolProvider,   
-   IDebugAddress        pAddress,   
-   IDebugBinder         pBinder,   
-   int                  fIncludeHiddenLocals,   
-   out IDebugProperty2  ppProperty  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pSymbolProvider`  
- [in] Sembol sağlayıcısı kullanılmak üzere ifade olarak bir [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) nesne.  
-  
- `pAddress`  
- [in] Adresi olarak ifade edilen kodda bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) yakın içeren çözümleneceği nesne, işlev.  
-  
- `pBinder`  
- [in] Bağlayıcı kullanılmak üzere ifade olarak bir [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) nesne.  
-  
- `fIncludeHiddenLocals`  
- [in] Sıfır olmayan (`TRUE`) anlamına gelir; gizli Yereller dahil etmek sıfır (`FALSE`) gizli Yereller bırakmak anlamına gelir  
-  
- `ppProperty`  
- [out] Döndürür bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) yöntemi temsil eden nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Gizli yerel öğeler, genellikle derleyici tarafından oluşturulan değişkenleri de kullanılabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+Bu yöntem, yerel öğeler, bağımsız değişkenleri ve diğer bir yöntem özelliklerini içeren bir özellik nesnesi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetMethodProperty( 
+   IDebugSymbolProvider* pSymbolProvider,
+   IDebugAddress*        pAddress,
+   IDebugBinder*         pBinder,
+   BOOL                  fIncludeHiddenLocals,
+   IDebugProperty2**     ppProperty
+);
+```
+
+```csharp
+int GetMethodProperty(
+   IDebugSymbolProvider pSymbolProvider,
+   IDebugAddress        pAddress,
+   IDebugBinder         pBinder,
+   int                  fIncludeHiddenLocals,
+   out IDebugProperty2  ppProperty
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pSymbolProvider`
+
+ [in] Sembol sağlayıcısı kullanılmak üzere ifade olarak bir [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) nesne.
+
+ `pAddress`
+
+ [in] Adresi olarak ifade edilen kodda bir [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) yakın içeren çözümleneceği nesne, işlev.
+
+ `pBinder`
+
+ [in] Bağlayıcı kullanılmak üzere ifade olarak bir [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) nesne.
+
+ `fIncludeHiddenLocals`
+
+ [in] Sıfır olmayan (`TRUE`) anlamına gelir; gizli Yereller dahil etmek sıfır (`FALSE`) gizli Yereller bırakmak anlamına gelir
+
+ `ppProperty`
+
+ [out] Döndürür bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) yöntemi temsil eden nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Gizli yerel öğeler, genellikle derleyici tarafından oluşturulan değişkenleri de kullanılabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

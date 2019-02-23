@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28a880af0a5d691a57e32b22f9f7823cca45827d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317789"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700030"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Ek alanları türlerini numaralandırır, bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) nesne içerebilir. Bu numaralandırma genişletir [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) sabit listesi.
@@ -42,14 +42,11 @@ public enum enum_FIELD_KIND_EX
 ```
 
 ## <a name="members"></a>Üyeler
-FIELD_KIND_EX_NONE  
-Alan genişletilmiş bir türü içermiyor.
+FIELD_KIND_EX_NONE alan genişletilmiş bir türü içermiyor.
 
-FIELD_TYPE_EX_METHODVAR  
-Alan bir yöntem değişken içerir.
+Bir yöntem değişken FIELD_TYPE_EX_METHODVAR alan içerir.
 
-FIELD_TYPE_EX_CLASSVAR  
-Bir sınıf değişkeni alan içerir.
+Bir sınıf değişken FIELD_TYPE_EX_CLASSVAR alan içerir.
 
 ## <a name="requirements"></a>Gereksinimler
 Üst bilgi: Sh.h
@@ -59,5 +56,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

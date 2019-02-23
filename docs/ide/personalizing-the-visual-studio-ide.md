@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b374d897b3c2e03504a334c41d6eafc682e38f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913086"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708777"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
@@ -50,9 +50,13 @@ Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler b�
 
 Menü veya araç çubuğu öğe eklemek veya kaldırmak için bkz: [nasıl yapılır: Menüleri ve araç çubuklarını özelleştirme](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Başlangıç sayfası
 
 Siz ve takımınız için özel bir başlangıç sayfası oluşturmak için bkz [başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
 
 ## <a name="window-layouts"></a>Pencere düzenleri
 

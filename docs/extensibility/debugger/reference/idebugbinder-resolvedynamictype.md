@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder::ResolveDynamicType | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBinder::ResolveDynamicType
 helpviewer_keywords:
@@ -12,43 +12,45 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d2b89d861cc21321759ffc7628d59d258455c7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 116a08025f70c2cd1e4c87f775511bd20ac0e4ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042042"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683538"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
-Bu yöntem, bir değişkenin tam türü döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT ResolveDynamicType (  
-   IDebugDynamicField *pDynamic,  
-   IDebugField       **ppResolved  
-);  
-```  
-  
-```csharp  
-int ResolveDynamicType(  
-   IDebugDynamicField pDynamic,   
-   out IDebugField    ppResolved  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pDynamic`  
- [in] Bir [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) temsil eden bir değişken türü.  
-  
- `ppResolved`  
- [out] Döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) değişkenin türü hakkında özel bilgiler verir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)
+Bu yöntem, bir değişkenin tam türü döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT ResolveDynamicType (
+   IDebugDynamicField *pDynamic,
+   IDebugField       **ppResolved
+);
+```
+
+```csharp
+int ResolveDynamicType(
+   IDebugDynamicField pDynamic,
+   out IDebugField    ppResolved
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pDynamic`
+
+ [in] Bir [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) temsil eden bir değişken türü.
+
+ `ppResolved`
+
+ [out] Döndürür bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) değişkenin türü hakkında özel bilgiler verir.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

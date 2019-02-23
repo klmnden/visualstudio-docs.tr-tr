@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e819759494efdee16cdf3a5dd41dcc65aa4590d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ebd2b4dd65fbcb957e13207cc5550a10b7870219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005390"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699242"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Win32 Hata Kodlarına Nereden Bakabilirim?
-WINERROR. Varsayılan sistem yüklemenizin ekleme dizini H Win32 API işlevlerinde hata kod tanımlarını içerir.  
-  
- Kod yazarak bir hata kodunu bakabilirsiniz **Watch** penceresi veya **QuickWatch** iletişim kutusu. Örneğin:  
-  
-`0x80000004,hr` 
+WINERROR. Varsayılan sistem yüklemenizin ekleme dizini H Win32 API işlevlerinde hata kod tanımlarını içerir.
 
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel kod hata ayıklaması SSS](../debugger/debugging-native-code-faqs.md)   
- [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)
+ Kod yazarak bir hata kodunu bakabilirsiniz **Watch** penceresi veya **QuickWatch** iletişim kutusu. Örneğin:
+
+`0x80000004,hr`
+
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Yerel Kodda Hata Ayıklama SSS](../debugger/debugging-native-code-faqs.md)
+- [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)

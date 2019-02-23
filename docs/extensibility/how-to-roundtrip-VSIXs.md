@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880958"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710610"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl Yapılır: Uzantılar Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirmek
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: Uzantılar Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirmek
 
 Bu belgede, genişletilebilirlik projeleri Visual Studio 2015 ve Visual Studio 2017 gidiş dönüş yapmak açıklanmaktadır. Bu yükseltme işlemini tamamladıktan sonra bir proje açın, derleme, yükleme ve Visual Studio 2015 ve Visual Studio 2017 ' çalıştırmak mümkün olacaktır. Bir başvuru, Visual Studio 2015 ve Visual Studio 2017 arasındaki gidiş dönüş yapabilen bazı uzantılar bulunabilir [VS SDK'sı genişletilebilirlik örnekleri](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 

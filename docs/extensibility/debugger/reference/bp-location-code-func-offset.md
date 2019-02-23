@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION_CODE_FUNC_OFFSET
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90f624bf012354dbd438f0fff079e13da756f079
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1c0fdc8739c9df321391cdcb43e915b5036ea7f4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318038"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682407"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Kodda bir işlevdeki bir kesme noktası uzaklık konumunu açıklar.
@@ -32,11 +32,9 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 ```
 
 ## <a name="members"></a>Üyeler
-`bstrContext`  
-Kesme noktası bağlamında, genellikle de bir yöntem veya işlev adı olarak görülen bir çağrı yığınında.
+`bstrContext` Kesme noktası bağlamında, genellikle de bir yöntem veya işlev adı olarak görülen bir çağrı yığınında.
 
-`pFuncPos`  
-[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) işlevi ve işlev göreli konumunu baştan adını tanımlayan nesne.
+`pFuncPos` [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) işlevi ve işlev göreli konumunu baştan adını tanımlayan nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı üyesidir [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) yapısı bir birleşimin parçası olarak.
@@ -51,6 +49,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)  
-[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

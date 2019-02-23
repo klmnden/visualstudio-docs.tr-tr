@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316199"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710090"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Bir en son kullanılan bir alt menüye listesi Ekle
 Bu izlenecek yol tanıtımlar geliştirir [menüye alt menü ekleme](../extensibility/adding-a-submenu-to-a-menu.md)ve dinamik bir listesi için bir alt menü ekleme işlemi gösterilmektedir. Dinamik listesi en son kullanılanlar (MRU) listesini oluşturmak için temelini oluşturur.
@@ -202,4 +202,4 @@ Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. 
 4. Alt yeniden açın. Dikkat **madde 3** listenin en üstünde sunulmuştur ve diğer öğeler bir konum aşağı gönderildi. Tıklayın **madde 3** yeniden ve hala ileti kutusunda görüntüler bildirimi **seçili öğe 3**, metin komut etiketi ile birlikte yeni bir konuma doğru bir şekilde taşındığını gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[Dinamik olarak menü öğeleri ekleme](../extensibility/dynamically-adding-menu-items.md)
+- [Dinamik olarak menü öğeleri ekleme](../extensibility/dynamically-adding-menu-items.md)

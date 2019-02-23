@@ -10,23 +10,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 270cdaac1f58aefaf13535218613f50bbf645b59
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d6a3807dc91b129ba4b337f57e3f857e4f379581
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981317"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696695"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Metin işaretçileri eski API'si ile kullanma
-Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni kayan bir dizi ve bir bölgeye metin davranışını ' dir. Kesme noktaları, yer işaretleri, dalgalı alt çizgiler ve salt okunur bölgelere işaretçileri içerir. Metin işaretçileri temel söz dizimi renklendirmesi öğesinden farklıdır. Söz dizimi renklendirme, metnin bir bölgeyle ilişkili dil söz dizimi iletişim kurmak için hızlı bir yoludur. Hız önemlidir, Windows ekran halinde yeniden boyar olduğunda söz dizimi renklendirmesi genellikle istenir. Söz dizimi renklendirmesi yalnızca metin rengini değiştirir. Metin işaretçileri birçok diğer metin özellikleri değiştirebilirsiniz. Metin işaretçileri "kaydırabilirsiniz" ve özel davranışı uygulamak ve renklendirme.  
-  
- Metin işaretçileri ile ilişkili performans yükü nedeniyle, metin arabelleği için çok sayıda işaretçileri oluşturmayın. Kullanıcı arabelleği içeriği düzenler her zaman her işaret güncelleştirilir.  
-  
+Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni kayan bir dizi ve bir bölgeye metin davranışını ' dir. Kesme noktaları, yer işaretleri, dalgalı alt çizgiler ve salt okunur bölgelere işaretçileri içerir. Metin işaretçileri temel söz dizimi renklendirmesi öğesinden farklıdır. Söz dizimi renklendirme, metnin bir bölgeyle ilişkili dil söz dizimi iletişim kurmak için hızlı bir yoludur. Hız önemlidir, Windows ekran halinde yeniden boyar olduğunda söz dizimi renklendirmesi genellikle istenir. Söz dizimi renklendirmesi yalnızca metin rengini değiştirir. Metin işaretçileri birçok diğer metin özellikleri değiştirebilirsiniz. Metin işaretçileri "kaydırabilirsiniz" ve özel davranışı uygulamak ve renklendirme.
+
+ Metin işaretçileri ile ilişkili performans yükü nedeniyle, metin arabelleği için çok sayıda işaretçileri oluşturmayın. Kullanıcı arabelleği içeriği düzenler her zaman her işaret güncelleştirilir.
+
 > [!NOTE]
->  Kullanıcılara görünür işaret türü ancak kendi şekil ve stil rengini değiştirebilirsiniz. Daha fazla bilgi için [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
-  
-## <a name="related-topics"></a>İlgili Konular  
-  
+>  Kullanıcılara görünür işaret türü ancak kendi şekil ve stil rengini değiştirebilirsiniz. Daha fazla bilgi için [yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+
+## <a name="related-topics"></a>İlgili Konular
+
 | Başlık | Açıklama |
 | - | - |
 | [Nasıl yapılır: Standart metin işaretçileri Ekle](../extensibility/how-to-add-standard-text-markers.md) | Bir standart metin işaretçisi türü tarafından sağlanan eklemeyi açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metni görünümü çekirdek Düzenleyici. |
@@ -35,37 +35,26 @@ Bir metin işaretçisi görüntülenmesini etkileyebilecek arabellekteki metni k
 | [Nasıl yapılır: Metin işaretçileri kullanma](../extensibility/how-to-use-text-markers.md) | Metin işaretçileri ekleme işlemi açıklanmaktadır. |
 | [Temel Düzenleyicinin İçinde](../extensibility/inside-the-core-editor.md) | Çekirdek Düzenleyici özelliklerini açıklar ve çekirdek Düzenleyici özelleştirme hakkında ayrıntılar sağlar. |
 | [Düzenleyici Özellikleri](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Uygulamasında kullanılabilen özellikleri açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici. |
-  
-## <a name="reference"></a>Başvuru  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- Düzenleyici tarafından önceden tanımlanmış veya kayıtlı bir VSPackage tarafından belirli bir metne işaret türü hakkında bilgi almak için Tekdüzen bir mekanizma sağlar.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- Erişim sağlar ve iki boyutlu koordinatlarını kullanarak bir metin arabelleği bir metin işaretçisi konumunu ayarlar.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
- Metin işaretçileri yönetmek için yöntemler sağlar.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- Geri çağırmalar için sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE ve bir metin işaretçisi ayarlamak için kullanılan diğer işlemler.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- Aracılığıyla kullanılabilir olan işlevselliği genişletir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ek geri çağırmaları sağlayarak arabirimi.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- Aracılığıyla kullanılabilir olan işlevselliği genişletir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ek geri çağırmaları sağlayarak arabirimi.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
- Diğer işaretçi türleri aynı renkleri sahip olup olmadığını belirlemek bir işaretçi türü sağlar.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- Çekirdek Düzenleyici içindeki metin işaretçileri için bağlam sağlar. Çekirdek Düzenleyicisi'nde olduğu her metin işaretçisi türü için ayrı bir IDE oluşturur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> nesne.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- Sürükle ve bırak düzenleme, karakter desteği işaretçileri için sağlanan bir işleyici. Bir karakter, bir işaretçisi konumunu gösteren bir simge bulunur.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- Döndürür bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> arabiriminden bir metin işaretçileri diğer Vspackage'lar için sağlayan bir hizmet.  
-  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- Erişim sağlar ve tek boyutlu koordinatlarını kullanarak bir metin arabelleği bir metin işaretçisi konumunu ayarlar. Mümkünse, bu arayüzü kullanmayın.
+
+## <a name="reference"></a>Başvuru
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> Düzenleyici tarafından önceden tanımlanmış veya kayıtlı bir VSPackage tarafından belirli bir metne işaret türü hakkında bilgi almak için Tekdüzen bir mekanizma sağlar.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker> Erişim sağlar ve iki boyutlu koordinatlarını kullanarak bir metin arabelleği bir metin işaretçisi konumunu ayarlar.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker> Metin işaretçileri yönetmek için yöntemler sağlar.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Geri çağırmalar için sağlar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE ve bir metin işaretçisi ayarlamak için kullanılan diğer işlemler.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced> Aracılığıyla kullanılabilir olan işlevselliği genişletir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ek geri çağırmaları sağlayarak arabirimi.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx> Aracılığıyla kullanılabilir olan işlevselliği genişletir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ek geri çağırmaları sağlayarak arabirimi.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet> Diğer işaretçi türleri aynı renkleri sahip olup olmadığını belirlemek bir işaretçi türü sağlar.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Çekirdek Düzenleyici içindeki metin işaretçileri için bağlam sağlar. Çekirdek Düzenleyicisi'nde olduğu her metin işaretçisi türü için ayrı bir IDE oluşturur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> nesne.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler> Sürükle ve bırak düzenleme, karakter desteği işaretçileri için sağlanan bir işleyici. Bir karakter, bir işaretçisi konumunu gösteren bir simge bulunur.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> Döndürür bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> arabiriminden bir metin işaretçileri diğer Vspackage'lar için sağlayan bir hizmet.
+
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker> Erişim sağlar ve tek boyutlu koordinatlarını kullanarak bir metin arabelleği bir metin işaretçisi konumunu ayarlar. Mümkünse, bu arayüzü kullanmayın.

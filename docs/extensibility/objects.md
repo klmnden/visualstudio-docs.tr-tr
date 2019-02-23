@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49f71edcdb2f5fb13be5465292ed7d9f7a3e1632
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016282"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702973"
 ---
 # <a name="objects"></a>Nesneler
-Aşağıdaki başvuru bilgileri, temel metin düzenleyici örneği oluşturmak için kullanılan nesneleri açıklanır.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [VSCodeWindow Nesnesi](../extensibility/vscodewindow-object.md)  
- Kod pencere nesnesi, bir veya daha fazla metin görünümleri içine bir özel belge penceresi açıklar.  
-  
- [VSCodeWindowManager nesnesi](../extensibility/vscodewindowmanager-object.md)  
- Dil hizmeti tarafından uygulanan ve Kenarlıklar yönetmekten sorumlu olan kod penceresinde manager nesnesi tanımlar.  
-  
- [VSTextBuffer nesnesi](../extensibility/vstextbuffer-object.md)  
- Unicode metin dosyası için veri akışını temsil eden metin arabelleği nesneyi tanımlar.  
-  
- [VSTextView nesnesi](../extensibility/vstextview-object.md)  
- Metin arabelleğinin Unicode metni görüntüleyin ve düzenleyin kullanıcıların olanak sağlayan bir pencere metin görünümünü açıklar.  
-  
-## <a name="related-sections"></a>İlgili bölümler  
- [Visual Studio SDK başvurusu](../extensibility/visual-studio-sdk-reference.md)  
- Başvuru konuları bir listesini sunar.
+Aşağıdaki başvuru bilgileri, temel metin düzenleyici örneği oluşturmak için kullanılan nesneleri açıklanır.
+
+## <a name="in-this-section"></a>Bu bölümde
+- [VSCodeWindow nesnesi](../extensibility/vscodewindow-object.md) kod pencere nesnesi, bir veya daha fazla metin görünümleri içine bir özel belge penceresi açıklar.
+
+- [VSCodeWindowManager nesnesi](../extensibility/vscodewindowmanager-object.md) dil hizmeti tarafından uygulanan ve Kenarlıklar yönetmekten sorumlu olan kod penceresinde manager nesneyi tanımlar.
+
+- [VSTextBuffer nesnesi](../extensibility/vstextbuffer-object.md) Unicode metin dosyası için veri akışını temsil eden metin arabelleği nesneyi tanımlar.
+
+- [VSTextView nesnesi](../extensibility/vstextview-object.md) metni görünümü, metin arabelleğinin Unicode metni görüntüleyin ve düzenleyin kullanıcıların olanak sağlayan bir pencere açıklar.
+
+## <a name="related-sections"></a>İlgili bölümler
+- [Visual Studio SDK başvurusu](../extensibility/visual-studio-sdk-reference.md) başvuru konuları bir listesini sunar.

@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a52bc088b2781f31894213c4c37c50069c9fea2
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 16ffb759c2f3309351f9c27feb719e18c49a39ea
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449898"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678584"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Bu arabirim bağlantı noktalarına oturum hata ayıklama Yöneticisi (SDM) sağlar.
@@ -51,9 +51,9 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 
 Bir çağrı [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) tarafından kullanılan geçerli bağlantı noktası sağlayıcısı gösteren bu bir arabirim döndürür [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) bağlantı noktası oluşturulan bağlantı noktası sağlayıcısı temsil eden bu arabirimi döndürür.
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) bağlantı noktası oluşturulan bağlantı noktası sağlayıcısı temsil eden bu arabirimi döndürür.
 
-[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) listesini temsil `IDebugPortSupplier` arabirimleri ( `IEnumDebugPortSuppliers` arabirimi öğesinden alınan [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), tüm bağlantı noktası sağlayıcıları temsil eden ilekayıtlı[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) listesini temsil `IDebugPortSupplier` arabirimleri ( `IEnumDebugPortSuppliers` arabirimi öğesinden alınan [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), tüm bağlantı noktası sağlayıcıları temsil eden ilekayıtlı[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).
 
 Hata ayıklama altyapısı genellikle bağlantı noktası sağlayıcısı ile etkileşime girmez.
 
@@ -81,7 +81,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)  
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)  
-[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)  
-[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
+- [Temel Arabirimler](../../../extensibility/debugger/reference/core-interfaces.md)
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

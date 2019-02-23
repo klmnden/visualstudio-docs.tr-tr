@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a8df6b84f248ca5cf48ad70f4f9fc1111ccbd2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 67590777acd5848b45c312a78268ba443d9b2a74
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022917"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692716"
 ---
 # <a name="how-to-display-process-properties"></a>Nasıl yapılır: İşlem özelliklerini görüntüleme
-Listelenen bir işlem hakkında daha fazla bilgi için [işlemler görünümü](../debugger/processes-view.md), kullanın [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md).  
-  
-### <a name="to-open-a-process-properties-dialog-box"></a>İşlem özellikleri iletişim kutusunu açmak için  
-  
-1. Görüntülenen ağacından bir işlem seçin **işler görünümü**.  
-  
-2. Gelen **görünümü** menüsünde seçin **özellikleri**.  
-  
+Listelenen bir işlem hakkında daha fazla bilgi için [işlemler görünümü](../debugger/processes-view.md), kullanın [işlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md).
+
+### <a name="to-open-a-process-properties-dialog-box"></a>İşlem özellikleri iletişim kutusunu açmak için
+
+1. Görüntülenen ağacından bir işlem seçin **işler görünümü**.
+
+2. Gelen **görünümü** menüsünde seçin **özellikleri**.
+
    Özellikler iletişim kutularında, bir Görünüm penceresi başka bir öğeye tıklayın ve iletişim kutusunda seçili öğeye bilgileri gösterir kalıcı, değildir.

@@ -10,49 +10,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371e707dae11dacbbcc9ec590e908cd66f6189ee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0a9a7199e035336b080f8d7b19d6e12eb5fe651b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027990"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687620"
 ---
 # <a name="introducing-spy"></a>Spy++'a Giriş
-Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:  
-  
-- Sistem nesneleri arasındaki ilişkileri grafik ağacını görüntüler. Bunlar [işlemleri](../debugger/processes-view.md), [iş parçacıkları](../debugger/threads-view.md), ve [windows](../debugger/windows-view.md).  
-  
-- Belirtilen arama [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [iş parçacıkları](../debugger/how-to-search-for-a-thread-in-threads-view.md), [işlemleri](../debugger/how-to-search-for-a-process-in-processes-view.md), veya [iletileri](../debugger/how-to-search-for-a-message-in-messages-view.md).  
-  
-- Özelliklerini görüntülemek seçili [windows](../debugger/how-to-display-window-properties.md), [iş parçacıkları](../debugger/how-to-display-thread-properties.md), [işlemleri](../debugger/how-to-display-process-properties.md), veya [iletileri](../debugger/how-to-display-message-properties.md).  
-  
-- Bir pencere, iş parçacığı, işlem veya ileti görünümünde doğrudan'ı seçin.  
-  
-- Kullanım [Bulucu Aracı](../debugger/how-to-use-the-finder-tool.md) fare işaretçisini konumlandırma tarafından bir pencere seçmek için.  
-  
-- Ayarlama [ileti seçeneği](../debugger/how-to-open-messages-view-from-find-window.md) karmaşık ileti günlüğü seçimi parametreleri kullanarak.  
-  
-  Spy ++ araç çubuğu ve daha hızlı çalışmanıza yardımcı olmak için köprüler sahiptir. Ayrıca sağlar bir **Yenile** etkin Görünümü güncelleştirmek için komut bir **pencere Bulucu Aracı** yayılırlar daha kolay hale getirmek için ve bir **yazı tipi** görünümü windows özelleştirmek için iletişim kutusu. Ayrıca, Spy ++, kaydetme ve kullanıcı tercihlerini geri yükleme sağlar.  
-  
-  Çeşitli Spy ++ windows, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Hangi komutlar işaretçi nerede olduğuna bağlıdır. Örneğin, pencere görünümünde bir girişi sağ tıklatın ve Seçili pencerenin görünür olup, ardından **vurgulayın** kısayol menüsünde, daha kolay bulunabilir yükleyebilmeleri için seçilen pencere kenarlığını neden olur.  
-  
+Spy ++ aşağıdaki görevleri gerçekleştirmenize olanak sağlar:
+
+- Sistem nesneleri arasındaki ilişkileri grafik ağacını görüntüler. Bunlar [işlemleri](../debugger/processes-view.md), [iş parçacıkları](../debugger/threads-view.md), ve [windows](../debugger/windows-view.md).
+
+- Belirtilen arama [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [iş parçacıkları](../debugger/how-to-search-for-a-thread-in-threads-view.md), [işlemleri](../debugger/how-to-search-for-a-process-in-processes-view.md), veya [iletileri](../debugger/how-to-search-for-a-message-in-messages-view.md).
+
+- Özelliklerini görüntülemek seçili [windows](../debugger/how-to-display-window-properties.md), [iş parçacıkları](../debugger/how-to-display-thread-properties.md), [işlemleri](../debugger/how-to-display-process-properties.md), veya [iletileri](../debugger/how-to-display-message-properties.md).
+
+- Bir pencere, iş parçacığı, işlem veya ileti görünümünde doğrudan'ı seçin.
+
+- Kullanım [Bulucu Aracı](../debugger/how-to-use-the-finder-tool.md) fare işaretçisini konumlandırma tarafından bir pencere seçmek için.
+
+- Ayarlama [ileti seçeneği](../debugger/how-to-open-messages-view-from-find-window.md) karmaşık ileti günlüğü seçimi parametreleri kullanarak.
+
+  Spy ++ araç çubuğu ve daha hızlı çalışmanıza yardımcı olmak için köprüler sahiptir. Ayrıca sağlar bir **Yenile** etkin Görünümü güncelleştirmek için komut bir **pencere Bulucu Aracı** yayılırlar daha kolay hale getirmek için ve bir **yazı tipi** görünümü windows özelleştirmek için iletişim kutusu. Ayrıca, Spy ++, kaydetme ve kullanıcı tercihlerini geri yükleme sağlar.
+
+  Çeşitli Spy ++ windows, sık kullanılan komutlar bir kısayol menüsünü görüntülemek için sağ tıklayabilirsiniz. Hangi komutlar işaretçi nerede olduğuna bağlıdır. Örneğin, pencere görünümünde bir girişi sağ tıklatın ve Seçili pencerenin görünür olup, ardından **vurgulayın** kısayol menüsünde, daha kolay bulunabilir yükleyebilmeleri için seçilen pencere kenarlığını neden olur.
+
 > [!NOTE]
->  Spy ++ benzeyen iki diğer yardımcı programları vardır: PView işlemler, iş parçacıkları ve DDESPY hakkında ayrıntılı bilgiler gösterilir. EXE, dinamik veri değişimi (DDE) iletileri izlemenize izin verir.  
-  
-## <a name="64-bit-operating-systems"></a>64-bit işletim sistemleri  
- Spy ++'ın iki sürümü vardır. Spy ++ (spyxx.exe) adlı ilk sürümü, 32 bit işlemde çalışan bir pencere gönderilen iletileri görüntülemek için tasarlanmıştır. Örneğin, Visual Studio 32-bit işlem içinde çalışır. Bu nedenle, Spy ++ gönderilen iletileri görüntülemek için kullanabileceğiniz **Çözüm Gezgini**. Visual Studio'da çoğu derlemeler için varsayılan yapılandırma bir 32-bit işlem içinde çalıştırmak için bu ilk sürümünde Spy ++ kullanılabilir olanı olduğu **Araçları** Visual Studio'da, menü, [bileşenler gereklidir yüklü](../debugger/how-to-start-spy-increment.md). 
-  
- Spy ++ (64-bit) (spyxx_amd64.exe) adlı dosyanın ikinci sürümü, 64-bit işlem içinde çalışmakta olan bir pencere gönderilen iletileri görüntülemek için tasarlanmıştır. Örneğin, bir 64-bit işletim sisteminde 64-bit işlem içinde not defteri çalışır. Bu nedenle, Spy ++ (64-bit) Not Defteri'ne gönderilen iletileri görüntülemek için kullanabilirsiniz. Spy ++ (64-bit) genellikle bulunur  
-  
- .. \\ *Visual Studio yükleme klasörü*\Common7\Tools\spyxx_amd64.exe.  
-  
- Her iki sürümünde de Spy ++ doğrudan komut satırından çalıştırabilirsiniz.  
-  
+>  Spy ++ benzeyen iki diğer yardımcı programları vardır: PView işlemler, iş parçacıkları ve DDESPY hakkında ayrıntılı bilgiler gösterilir. EXE, dinamik veri değişimi (DDE) iletileri izlemenize izin verir.
+
+## <a name="64-bit-operating-systems"></a>64-bit işletim sistemleri
+ Spy ++'ın iki sürümü vardır. Spy ++ (spyxx.exe) adlı ilk sürümü, 32 bit işlemde çalışan bir pencere gönderilen iletileri görüntülemek için tasarlanmıştır. Örneğin, Visual Studio 32-bit işlem içinde çalışır. Bu nedenle, Spy ++ gönderilen iletileri görüntülemek için kullanabileceğiniz **Çözüm Gezgini**. Visual Studio'da çoğu derlemeler için varsayılan yapılandırma bir 32-bit işlem içinde çalıştırmak için bu ilk sürümünde Spy ++ kullanılabilir olanı olduğu **Araçları** Visual Studio'da, menü, [bileşenler gereklidir yüklü](../debugger/how-to-start-spy-increment.md).
+
+ Spy ++ (64-bit) (spyxx_amd64.exe) adlı dosyanın ikinci sürümü, 64-bit işlem içinde çalışmakta olan bir pencere gönderilen iletileri görüntülemek için tasarlanmıştır. Örneğin, bir 64-bit işletim sisteminde 64-bit işlem içinde not defteri çalışır. Bu nedenle, Spy ++ (64-bit) Not Defteri'ne gönderilen iletileri görüntülemek için kullanabilirsiniz. Spy ++ (64-bit) genellikle bulunur
+
+ .. \\ *Visual Studio yükleme klasörü*\Common7\Tools\spyxx_amd64.exe.
+
+ Her iki sürümünde de Spy ++ doğrudan komut satırından çalıştırabilirsiniz.
+
 > [!NOTE]
->  Spy ++ (64-bit) dosya adı "amd" içerse de, Windows işletim sistemi üzerinde herhangi bir x64 çalıştırır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz. 
- [Nasıl yapılır: Spy ++ Başlat](../debugger/how-to-start-spy-increment.md)   
- [Spy ++ kullanma](../debugger/using-spy-increment.md)   
- [Spy ++ görünümleri](../debugger/spy-increment-views.md)   
- [Spy++ Başvurusu](../debugger/spy-increment-reference.md)
+>  Spy ++ (64-bit) dosya adı "amd" içerse de, Windows işletim sistemi üzerinde herhangi bir x64 çalıştırır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Nasıl yapılır: Spy++ Başlatma](../debugger/how-to-start-spy-increment.md)
+- [Spy++ kullanma](../debugger/using-spy-increment.md)
+- [Spy++ Görünümleri](../debugger/spy-increment-views.md)
+- [Spy++ Başvurusu](../debugger/spy-increment-reference.md)

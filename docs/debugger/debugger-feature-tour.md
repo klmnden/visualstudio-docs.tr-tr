@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696746"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı ilk bakış
 
@@ -27,7 +27,7 @@ Burada açıklanan özellikler, C#, C++, Visual Basic, JavaScript ve (belirtilen
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Bir kesme noktası ayarlayın ve hata ayıklayıcıyı başlatın
 
-Hata ayıklamak için uygulamanızı app eklemede hata ayıklayıcısı ile başlatmanız gerekir. **F5** (**hata ayıklama > hata ayıklamayı Başlat**) Bunun en yaygın yoludur. Ancak, uygulamanız incelemek için herhangi bir kesme noktası ayarlamış olabileceğiniz değil artık doğrudan kodlayın, biz bunu ilk olarak yapın ve ardından hata ayıklamayı başlatmak için. Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız ya da bir dal kod getting run olup olmadığını gösterir. 
+Hata ayıklamak için uygulamanızı app eklemede hata ayıklayıcısı ile başlatmanız gerekir. **F5** (**hata ayıklama > hata ayıklamayı Başlat**) Bunun en yaygın yoludur. Ancak, uygulamanız incelemek için herhangi bir kesme noktası ayarlamış olabileceğiniz değil artık doğrudan kodlayın, biz bunu ilk olarak yapın ve ardından hata ayıklamayı başlatmak için. Kesme noktaları güvenilir hata ayıklama en temel hem de temel özelliğidir. Bir kesme noktası değişkenlerin değerleri veya bellek davranışını göz olabilmesi için Visual Studio çalışan kodunuzu nereye askıya almanız ya da bir dal kod getting run olup olmadığını gösterir.
 
 Kod Düzenleyicisi'nde bir dosya varsa, kod satırının sol kenar boşluğunu tıklayarak kesme noktası ayarlayabilirsiniz.
 

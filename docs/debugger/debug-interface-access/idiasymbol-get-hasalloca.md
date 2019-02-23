@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af3f7788814feb46b838320b9bcaddb592dc69b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f86eb2c4e0d95d3fbb9c24ee8596193b31223b11
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606946"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698397"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 İşlev çağrısı içerip içermediğini belirten bir bayrak alır `alloca` (yığında bellek ayırmak için kullanılır).
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-- [C++]HRESULT get_hasAlloca(   BOOL *pFlag);
+```cpp
+HRESULT get_hasAlloca(   BOOL *pFlag);
 ```
 
 #### <a name="parameters"></a>Parametreler

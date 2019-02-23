@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558dd6a54d4fa4a5d9cb8f5613de5ed00d761de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642033"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695641"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Belirtilen sayıda numaralandırılan sıralı kayıtları alır.
@@ -52,7 +52,8 @@ HRESULT Next ( 
 [out] Hata ayıklama akışı kaydı veri ile doldurulacak olan bir arabellek.
 
  pceltFetched
-- [out içinde] Kayıt sayısını döndürür `data`.
+
+[out içinde] Kayıt sayısını döndürür `data`.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` daha fazla kayıt varsa. Aksi takdirde bir hata kodu döndürür.

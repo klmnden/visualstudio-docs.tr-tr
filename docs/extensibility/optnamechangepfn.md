@@ -12,44 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31f46f8b392d5d3b37aed91a6867d80835be0d23
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32d173925d8970ec6be0872c8260d1d6219625fc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963924"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692950"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Bu, bir geri çağırma işlevi çağrısında belirtilen [SccSetOption](../extensibility/sccsetoption-function.md) (seçeneği kullanılarak `SCC_OPT_NAMECHANGEPFN`) ve IDE eklenti kaynak denetimi tarafından yapılan ad değişiklikleri iletişim kurmak için kullanılır.  
-  
-## <a name="signature"></a>İmza  
-  
-```cpp  
-typedef void (*OPTNAMECHANGEPFN)(  
-   LPVOID pvCallerData,  
-   LPCSTR pszOldName,  
-   LPCSTR pszNewName  
-);  
-```  
-  
-## <a name="parameters"></a>Parametreler  
- pvCallerData  
- [in] Önceki çağrıda belirtilen kullanıcı değeri [SccSetOption](../extensibility/sccsetoption-function.md) (seçeneği kullanılarak `SCC_OPT_USERDATA`).  
-  
- pszOldName  
- [in] Özgün dosya adı.  
-  
- pszNewName  
- [in] Dosya adı olarak değiştirildi.  
-  
-## <a name="return-value"></a>Dönüş değeri  
- Yok.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kaynak Denetimi Eklentisi, bir dosya kaynak denetimi işlemi sırasında yeniden adlandırılırsa, IDE bu geri çağırma aracılığıyla ad değişikliği hakkında bildirimde bulunabilir.  
-  
- IDE bu geri çağırma desteklemiyorsa değil çağırır [SccSetOption](../extensibility/sccsetoption-function.md) belirlemek için. Eklenti bu geri çağırma desteklemiyor ise, onu döndürür `SCC_E_OPNOTSUPPORTED` gelen `SccSetOption` işlev IDE geri çağırmayı ayarlama girişiminde bulunduğunda.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [IDE tarafından uygulanan geri çağırma işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [SccSetOption](../extensibility/sccsetoption-function.md)
+Bu, bir geri çağırma işlevi çağrısında belirtilen [SccSetOption](../extensibility/sccsetoption-function.md) (seçeneği kullanılarak `SCC_OPT_NAMECHANGEPFN`) ve IDE eklenti kaynak denetimi tarafından yapılan ad değişiklikleri iletişim kurmak için kullanılır.
+
+## <a name="signature"></a>İmza
+
+```cpp
+typedef void (*OPTNAMECHANGEPFN)(
+   LPVOID pvCallerData,
+   LPCSTR pszOldName,
+   LPCSTR pszNewName
+);
+```
+
+## <a name="parameters"></a>Parametreler
+ pvCallerData
+
+[in] Önceki çağrıda belirtilen kullanıcı değeri [SccSetOption](../extensibility/sccsetoption-function.md) (seçeneği kullanılarak `SCC_OPT_USERDATA`).
+
+ pszOldName
+
+[in] Özgün dosya adı.
+
+ pszNewName
+
+[in] Dosya adı olarak değiştirildi.
+
+## <a name="return-value"></a>Dönüş değeri
+ Yok.
+
+## <a name="remarks"></a>Açıklamalar
+ Kaynak Denetimi Eklentisi, bir dosya kaynak denetimi işlemi sırasında yeniden adlandırılırsa, IDE bu geri çağırma aracılığıyla ad değişikliği hakkında bildirimde bulunabilir.
+
+ IDE bu geri çağırma desteklemiyorsa değil çağırır [SccSetOption](../extensibility/sccsetoption-function.md) belirlemek için. Eklenti bu geri çağırma desteklemiyor ise, onu döndürür `SCC_E_OPNOTSUPPORTED` gelen `SccSetOption` işlev IDE geri çağırmayı ayarlama girişiminde bulunduğunda.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [IDE tarafından uygulanan geri çağırma işlevleri](../extensibility/callback-functions-implemented-by-the-ide.md)
+- [SccSetOption](../extensibility/sccsetoption-function.md)

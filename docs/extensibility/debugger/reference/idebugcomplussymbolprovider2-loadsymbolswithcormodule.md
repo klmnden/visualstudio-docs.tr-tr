@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43975e96e4760bfd2299f6cda4ab62f44a0bd13b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413130"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682186"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Yükleri hata ayıklama sembolleri verilen **Icordebugmodule** nesne.
@@ -48,26 +48,33 @@ int LoadSymbolsWithCorModule(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`ulAppDomainID`  
-[in] Uygulama etki alanı tanımlayıcısı.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Modülün benzersiz tanımlayıcısı.
+ [in] Uygulama etki alanı tanımlayıcısı.
 
-`baseAddress`  
-[in] Temel bir bellek adresi.
+`guidModule`
 
-`pUnkMetadataImport`  
-[in] Hata ayıklama sembol meta veriler içeren nesne.
+ [in] Modülün benzersiz tanımlayıcısı.
 
-`pUnkCorDebugModule`  
-[in] Uygulayan nesne [Icordebugmodule arabirimi](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+`baseAddress`
 
-`bstrModuleName`  
-[in] Modülün adı.
+ [in] Temel bir bellek adresi.
 
-`bstrSymSearchPath`  
-[in] Sembol dosyası için arama yolu.
+`pUnkMetadataImport`
+
+ [in] Hata ayıklama sembol meta veriler içeren nesne.
+
+`pUnkCorDebugModule`
+
+ [in] Uygulayan nesne [Icordebugmodule arabirimi](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+
+`bstrModuleName`
+
+ [in] Modülün adı.
+
+`bstrSymSearchPath`
+
+ [in] Sembol dosyası için arama yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -168,4 +175,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

@@ -1,7 +1,7 @@
 ---
 title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_ADDRESS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 779564cf93e22f64b926a80644bb9da3375335b9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317828"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684617"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 Bu yapı bir adresi temsil eder.
@@ -43,14 +43,11 @@ public struct DEBUG_ADDRESS {
 ```
 
 ## <a name="terms"></a>Koşulları
-ulAppDomainID  
-İşlem kimliği
+ulAppDomainID işlem kimliği
 
-guidModule  
-Bu adres içeren modül GUID.
+Bu adres içeren modül GUID'si guidModule.
 
-tokClass  
-Sınıf veya bu adres türünü tanımlayan belirteç.
+tokClass sınıfı veya bu adres türünü tanımlayan belirteci.
 
 > [!NOTE]
 > Bu değer bir sembol sağlayıcısı için özeldir ve bu nedenle genel dışındaki bir sınıf türü için bir tanımlayıcı olarak anlamı yoktur.
@@ -79,7 +76,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

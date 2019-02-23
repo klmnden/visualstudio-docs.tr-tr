@@ -17,27 +17,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc79b09f51e182e69bcf652627275a10fdfe61e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013272"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700438"
 ---
 # <a name="how-to-stop-code-changes"></a>Nasıl yapılır: Kod değişikliklerini durdurma
-Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi durdurabilirsiniz.  
-  
+Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi durdurabilirsiniz.
+
 > [!CAUTION]
->  Yönetilen kodda kod değişikliklerini durdurma beklenmeyen sonuçlara neden olabilir. Yönetilen kodda kod değişikliklerini durdurma gerek seyrek olduğundan yönetilen kod için değişiklikler uygulanırken normal olarak bir hızlı işlemdir.  
-  
-### <a name="to-stop-applying-code-changes"></a>Kod değişiklikleri uygulanırken durdurmak için  
-  
-- Seçin **kod değişikliklerini uygulamayı Durdur'u** gelen **hata ayıklama** menüsü.  
-  
-  Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.  
-  
-  Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Düzenle ve devam et](../debugger/edit-and-continue.md)   
- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/bcew296c.aspx)
+>  Yönetilen kodda kod değişikliklerini durdurma beklenmeyen sonuçlara neden olabilir. Yönetilen kodda kod değişikliklerini durdurma gerek seyrek olduğundan yönetilen kod için değişiklikler uygulanırken normal olarak bir hızlı işlemdir.
+
+### <a name="to-stop-applying-code-changes"></a>Kod değişiklikleri uygulanırken durdurmak için
+
+- Seçin **kod değişikliklerini uygulamayı Durdur'u** gelen **hata ayıklama** menüsü.
+
+  Bu menü öğesi, yalnızca kod değişiklikleri uygulanıyor bile görülebilir.
+
+  Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Düzenle ve Devam Et](../debugger/edit-and-continue.md)
+- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/bcew296c.aspx)

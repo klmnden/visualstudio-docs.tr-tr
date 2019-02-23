@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetDerivedMostReference
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0427b9e8dcd4cd21fd6c1514d7b7ce80596678e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971068"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679326"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-Bir başvuru türetilmiş çoğu referansını alır. Daha sonraki kullanımlar için ayrılmıştır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetDerivedMostReference(   
-   IDebugReference2** ppDerivedMost  
-);  
-```  
-  
-```csharp  
-int GetDerivedMostReference(   
-   out IDebugReference2 ppDerivedMost  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppDerivedMost`  
- [out] Döndürür bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) türetilmiş çoğu özelliği temsil eden nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Her zaman döndürür `E_NOTIMPL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Örneğin, bu özelliği uygulayan bir nesne tanımlar `ClassRoot` ancak aslında örneklemesi olduğu `ClassDerived` sınıfından türetilen `ClassRoot`, sonra da bu yöntemi döndürür bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) nesnesi başvuruyu temsil eden `ClassDerived` nesne.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+Bir başvuru türetilmiş çoğu referansını alır. Daha sonraki kullanımlar için ayrılmıştır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetDerivedMostReference( 
+   IDebugReference2** ppDerivedMost
+);
+```
+
+```csharp
+int GetDerivedMostReference( 
+   out IDebugReference2 ppDerivedMost
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppDerivedMost`
+
+ [out] Döndürür bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) türetilmiş çoğu özelliği temsil eden nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Her zaman döndürür `E_NOTIMPL`.
+
+## <a name="remarks"></a>Açıklamalar
+ Örneğin, bu özelliği uygulayan bir nesne tanımlar `ClassRoot` ancak aslında örneklemesi olduğu `ClassDerived` sınıfından türetilen `ClassRoot`, sonra da bu yöntemi döndürür bir [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) nesnesi başvuruyu temsil eden `ClassDerived` nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

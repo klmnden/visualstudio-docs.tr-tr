@@ -13,58 +13,58 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4caecb1af8e620c671d5c2cc63e032ad5e1df26d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74cd564af66532c454d4ec340c6c8c93820cf5c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920649"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678351"
 ---
 # <a name="keybindings-element"></a>KeyBindings öğesi
-KeyBindings öğesi grupları tuş öğeleri ve diğer KeyBindings gruplandırmaları.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```xml  
-<KeyBindings>  
-  <KeyBinding>... </KeyBinding>  
-  <KeyBinding>... </KeyBinding>  
-</KeyBindings>  
-```  
-  
-## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler  
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.  
-  
-### <a name="attributes"></a>Öznitelikler  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Alt öğeleri  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[KeyBinding öğesi](../extensibility/keybinding-element.md)|Komut için klavye kısayolları belirtir.|  
-|[Tuş bağlama](../extensibility/keybindings-element.md)|Tuş öğeleri gruplandırır ve diğer KeyBindings gruplandırmaları.|  
-  
-### <a name="parent-elements"></a>Üst öğeler  
-  
-|Öğe|Açıklama|  
-|-------------|-----------------|  
-|[CommandTable öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar.|  
-  
-## <a name="example"></a>Örnek  
-  
-```xml  
-<KeyBindings>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
-    editor="guidWidgetEditor" key1="VK_F5"/>  
-  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
-    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
-</KeyBindings>  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [KeyBinding öğesi](../extensibility/keybinding-element.md)   
- [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+KeyBindings öğesi grupları tuş öğeleri ve diğer KeyBindings gruplandırmaları.
+
+## <a name="syntax"></a>Sözdizimi
+
+```xml
+<KeyBindings>
+  <KeyBinding>... </KeyBinding>
+  <KeyBinding>... </KeyBinding>
+</KeyBindings>
+```
+
+## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
+ Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
+
+### <a name="attributes"></a>Öznitelikler
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|Koşul|İsteğe bağlı. Bkz: [koşullu öznitelikler](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Alt öğeleri
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[KeyBinding öğesi](../extensibility/keybinding-element.md)|Komut için klavye kısayolları belirtir.|
+|[Tuş bağlama](../extensibility/keybindings-element.md)|Tuş öğeleri gruplandırır ve diğer KeyBindings gruplandırmaları.|
+
+### <a name="parent-elements"></a>Üst öğeler
+
+|Öğe|Açıklama|
+|-------------|-----------------|
+|[CommandTable öğesi](../extensibility/commandtable-element.md)|Komutları temsil eden tüm öğeleri tanımlar.|
+
+## <a name="example"></a>Örnek
+
+```xml
+<KeyBindings>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"
+    editor="guidWidgetEditor" key1="VK_F5"/>
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>
+</KeyBindings>
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [KeyBinding öğesi](../extensibility/keybinding-element.md)
+- [Visual Studio komut tablosu (.vsct) dosyaları](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

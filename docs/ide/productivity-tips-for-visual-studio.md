@@ -1,18 +1,18 @@
 ---
 title: Üretkenlik ipuçları
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913034"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702726"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -66,11 +66,13 @@ Komutlar, dosyalar ve Seçenekler, yalnızca geçerli görevinize ilgili bilgile
 
 - **Yalnızca istediğiniz hataları görüntülemek adresine**. Seçerseniz **filtre** düğmesini **hata listesi** araç çubuğu içinde görünen hata sayısını azaltabilirsiniz **hata listesi** penceresi. Yalnızca hataları, düzenleyicide açık olan dosyalardaki yalnızca geçerli dosyadaki hataları veya yalnızca geçerli projedeki hataları görüntüleyebilirsiniz. İçinde arama yapabilirsiniz **hata listesi** belirli hataları bulmak için penceresi.
 
-- **İletişim kutularını, menü komutlarını ve seçenekleri bulun**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) kutusunda, bulmaya çalıştığınız öğeler için anahtar sözcükleri veya tümceleri girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür `new project`:
+- **İletişim kutularını, menü komutlarını ve seçenekleri bulun**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) arama kutusuna, bulmaya çalıştığınız öğeler için anahtar sözcükleri veya tümceleri girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür `new project`:
 
     !['Yeni project' hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png)
 
     **Hızlı başlatma** bağlantılarını gösterir **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve **projeler ve çözümler** sayfasında**Seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları ayrıca proje dosyalarını ve araç pencerelerini de içerebilir.
+
+  **Hızlı başlatma** sağ üst kısmındaki IDE içinde arama kutusu görünür. (Alternatif olarak, basın **Ctrl**+**Q** erişmek için.)
 
 ## <a name="debug-code"></a>Kodda hata ayıklama
 

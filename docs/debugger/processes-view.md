@@ -12,50 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3dad44f0c3971ed3b206db9b3c022f8375153a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024675"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697630"
 ---
 # <a name="processes-view"></a>İşlemler Görünümü
-İşlemler görünümü tüm etkin işlemlerin ağacının sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir çalışan programa karşılık gelen bir belirli bir sistem işlemi incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır veya "sistem işlemleri." belirlenen  
-  
- Microsoft Windows birden çok işlem destekler. Her işlem bir veya daha fazla iş parçacığı olabilir ve her bir iş parçacığı sahip olabilir veya birden çok üst düzey pencerelere ilişkili. Her üst düzey pencere windows bir dizi sahip olabilir. A + simgesi gösterir bir düzey daraltılmıştır. İşlem başına bir satır daraltılmış görünümüyle oluşur. Tıklayın + simge düzeyi'ni genişletin.  
-  
- Genellikle bir çalışan programa karşılık gelen bir belirli bir sistem işlemi incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır veya "sistem işlemleri." belirlenen Bir işlem bulmak için ağacı daralt ve listesinde arama yapın.  
-  
-## <a name="procedures"></a>Yordamlar  
-  
-#### <a name="to-open-the-processes-view"></a>İşlemler görünümü açmak için  
-  
-1. Gelen **Spy** menüsünde seçin **işlemleri**.  
-  
-   ![Spy&#43; &#43; işler görünümü](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
-   Spy ++ işlemler görünümü  
-  
-   Yukarıdaki şekilde, işlem ve iş parçacığı düğümleri genişletilmiş işlemler görünümü gösterir.  
-  
-### <a name="in-this-section"></a>Bu Bölümde  
- [İşlemler görünümünde işlem arama](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- İşlemler görünümünde belirli bir işlem nasıl açıklar.  
-  
- [İşlem özelliklerini görüntüleme](../debugger/how-to-display-process-properties.md)  
- Bir ileti hakkında daha fazla bilgi gösterir olunacağı açıklanmaktadır.  
-  
-### <a name="related-sections"></a>İlgili Bölümler  
- [Spy++ Görünümleri](../debugger/spy-increment-views.md)  
- Spy ++ ağaç görünümlerini windows, iletileri, süreçleri ve iş parçacıkları açıklar.  
-  
- [Spy++ kullanma](../debugger/using-spy-increment.md)  
- Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.  
-  
- [İşlem Arama İletişim Kutusu](../debugger/process-search-dialog-box.md)  
- İşlemler görünümünde belirli bir işlem düğümü bulmak için kullanılır.  
-  
- [İşlem Özellikleri İletişim Kutusu](../debugger/process-properties-dialog-box.md)  
- İşlemler görünümünde seçilen işlem özelliklerini görüntüler.  
-  
- [Spy++ Başvurusu](../debugger/spy-increment-reference.md)  
- Her Spy ++ menü ve iletişim kutusunu tanımlayan bölümler içerir.
+İşlemler görünümü tüm etkin işlemlerin ağacının sisteminizde görüntüler. İşlem kimliği ve modül adı gösterilir. Genellikle bir çalışan programa karşılık gelen bir belirli bir sistem işlemi incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır veya "sistem işlemleri." belirlenen
+
+ Microsoft Windows birden çok işlem destekler. Her işlem bir veya daha fazla iş parçacığı olabilir ve her bir iş parçacığı sahip olabilir veya birden çok üst düzey pencerelere ilişkili. Her üst düzey pencere windows bir dizi sahip olabilir. A + simgesi gösterir bir düzey daraltılmıştır. İşlem başına bir satır daraltılmış görünümüyle oluşur. Tıklayın + simge düzeyi'ni genişletin.
+
+ Genellikle bir çalışan programa karşılık gelen bir belirli bir sistem işlemi incelemek isterseniz işlemleri görünümünü kullanın. İşlemler modülü adlarına göre tanımlanır veya "sistem işlemleri." belirlenen Bir işlem bulmak için ağacı daralt ve listesinde arama yapın.
+
+## <a name="procedures"></a>Yordamlar
+
+#### <a name="to-open-the-processes-view"></a>İşlemler görünümü açmak için
+
+1. Gelen **Spy** menüsünde seçin **işlemleri**.
+
+   ![Spy&#43; &#43; işler görünümü](../debugger/media/spy--_processes.png "Spy ++ _Processes") Spy ++ işler görünümü
+
+   Yukarıdaki şekilde, işlem ve iş parçacığı düğümleri genişletilmiş işlemler görünümü gösterir.
+
+### <a name="in-this-section"></a>Bu Bölümde
+ [İşlemler görünümünde işlem arama](../debugger/how-to-search-for-a-process-in-processes-view.md) nasıl işlemler görünümünde belirli bir işlem bulunacağını açıklar.
+
+ [İşlem özelliklerini görüntüleme](../debugger/how-to-display-process-properties.md) bir ileti hakkında daha fazla bilgi gösterir olunacağı açıklanmaktadır.
+
+### <a name="related-sections"></a>İlgili Bölümler
+ [Spy ++ görünümleri](../debugger/spy-increment-views.md) Spy ++ ağaç görünümlerini windows, iletileri, süreçleri ve iş parçacıkları açıklar.
+
+ [Spy ++ kullanma](../debugger/using-spy-increment.md) Spy ++ araç tanıtır ve nasıl kullanılacağını açıklar.
+
+ [İşlem arama iletişim kutusu](../debugger/process-search-dialog-box.md) işlemler görünümünde belirli bir işlem düğümü bulmak için kullanılır.
+
+ [İşlem özellikleri iletişim kutusu](../debugger/process-properties-dialog-box.md) işlemler görünümünde seçilen işlem özelliklerini görüntüler.
+
+ [Spy ++ başvurusu](../debugger/spy-increment-reference.md) her Spy ++ menü ve iletişim kutusunu açıklayan bölümleri içerir.

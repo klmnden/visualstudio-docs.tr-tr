@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
 helpviewer_keywords:
@@ -12,40 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd1d2ff495838082614fe6b5e7d84906d99c145a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962816"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723740"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-Bu yöntem, işlem altında barındırılan dili ayarlar. Bu dil, ardından uygun bir ifade değerlendiricisi'ni yüklemek için hata ayıklama altyapısı (DE) tarafından kullanılabilir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT SetHostingProcessLanguage(  
-   REFGUID guidLang  
-);  
-```  
-  
-```csharp  
-int SetHostingProcessLanguage(  
-   ref Guid guidLang  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `guidLang`  
- [in] `GUID` dilinin DE kullanmanız gerekir. Belirtin `GUID_NULL` (C++) veya `Guid.Empty` (varsayılan dili kullanmak DE sahip için C#).  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) geçerli dil ayarı almak için kullanılabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)
+Bu yöntem, işlem altında barındırılan dili ayarlar. Bu dil, ardından uygun bir ifade değerlendiricisi'ni yüklemek için hata ayıklama altyapısı (DE) tarafından kullanılabilir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT SetHostingProcessLanguage(
+   REFGUID guidLang
+);
+```
+
+```csharp
+int SetHostingProcessLanguage(
+   ref Guid guidLang
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `guidLang`
+
+ [in] `GUID` dilinin DE kullanmanız gerekir. Belirtin `GUID_NULL` (C++) veya `Guid.Empty` (varsayılan dili kullanmak DE sahip için C#).
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi halde hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) geçerli dil ayarı almak için kullanılabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
+- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6b8d23db5f1be603f71794426aff8d4a8283ffb
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412948"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706242"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Belirtilen öznitelik ile belirtilen programlama dilinde uygulanan sınıfları alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-[C++]
+```cpp
 HRESULT GetAttributedClassesForLanguage (
     GUID               guidLanguage,
     LPOLESTR           pstrAttribute,
@@ -32,8 +31,7 @@ HRESULT GetAttributedClassesForLanguage (
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAttributedClassesForLanguage (
     Guid                 guidLanguage,
     string               pstrAttribute,
@@ -42,14 +40,17 @@ int GetAttributedClassesForLanguage (
 ```
 
 #### <a name="parameters"></a>Parametreler
-`guidLanguage`  
-[in] Dil için benzersiz tanımlayıcı.
+`guidLanguage`
 
-`pstrAttribute`  
-[in] Öznitelik dize.
+ [in] Dil için benzersiz tanımlayıcı.
 
-`ppEnum`  
-[out] Öznitelik sınıfları numaralandırmasını döndürür.
+`pstrAttribute`
+
+ [in] Öznitelik dize.
+
+`ppEnum`
+
+ [out] Öznitelik sınıfları numaralandırmasını döndürür.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -186,4 +187,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

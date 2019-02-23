@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda25b870c110324962d0249948929b207d98826
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0f199db93fa2ea0b3ee2633f9af8a02fff5a4fdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619686"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695823"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Belirtilen sayıda baytı bir yürütülebilir dosya öğesinden belirtilen bir uzaklık başlayarak okur.
@@ -47,7 +47,8 @@ HRESULT ReadExecutableAt ( 
 [out] Okunan bayt sayısını döndürür.
 
  veri]
-- [out içinde] Dosyadan okunan bayt ile doldurulmuş bir dizi.
+
+[out içinde] Dosyadan okunan bayt ile doldurulmuş bir dizi.
 
 ## <a name="remarks"></a>Açıklamalar
  Bu yöntem, bir mutlak dosya uzaklık kullanılarak çalıştırılabilir veri baytı yüklenecek DIA destek kod tarafından çağrılır. Support, bu yöntem çağrılır [Idiadatasource::loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) yöntemi.

@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress
 helpviewer_keywords:
@@ -12,45 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e7aef1465ffe6e37a82fc3c685fef28bbf61e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978314"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705209"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-Bu yöntem hata ayıklama adresiyle ilişkili ad alanları için bir numaralandırıcı oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pAddress`  
- [in] Hata ayıklama adresi.  
-  
- `ppEnum`  
- [out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) ad alanları için bir numaralandırıcı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Olabilir verilen hata ayıklama adresi ile Örneğin, ilişkili çeşitli ad alanları ad alanları veya birden çok iç içe geçmiş `using` deyimleri.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+Bu yöntem hata ayıklama adresiyle ilişkili ad alanları için bir numaralandırıcı oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetNamespacesUsedAtAddress( 
+   IDebugAddress*     pAddress,
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int GetNamespacesUsedAtAddress(
+   IDebugAddress        pAddress,
+   out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pAddress`
+
+ [in] Hata ayıklama adresi.
+
+ `ppEnum`
+
+ [out] Döndürür bir [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) ad alanları için bir numaralandırıcı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Olabilir verilen hata ayıklama adresi ile Örneğin, ilişkili çeşitli ad alanları ad alanları veya birden çok iç içe geçmiş `using` deyimleri.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

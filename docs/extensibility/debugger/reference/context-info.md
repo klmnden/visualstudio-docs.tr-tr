@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a162858431f319e4d56667c2c85b7b53d1d86ab
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316034"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709986"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Bu yapı, bellek bağlamı veya kod bağlamı açıklar.
@@ -49,26 +49,19 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>Üyeler
-dwFields  
-He bayraklarının bir birleşimi [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) hangi alanların doldurulmuş belirten numaralandırma<strong>.</strong>
+he bayraklarının bir birleşimi dwFields [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) hangi alanların doldurulmuş belirten numaralandırma<strong>.</strong>
 
-bstrModuleUrl  
-Bağlam bulunduğu modülünün adı.
+bstrModuleUrl bağlam bulunduğu modülünün adı.
 
-bstrFunction  
-Bağlam bulunduğu işlevi adı.
+bstrFunction bağlam bulunduğu işlev adı.
 
-posFunctionOffset  
-A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) kod bağlamı ile ilişkili işlevi satır ve sütun uzaklığı tanımlayan yapısı.
+posFunctionOffset A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) kod bağlamı ile ilişkili işlevi satır ve sütun uzaklığı tanımlayan yapısı.
 
-bstrAddress  
-Belirtilen bağlamda bulunduğu kod adresi.
+Belirtilen bağlamda bulunduğu kod adres bstrAddress.
 
-bstrAddressOffset  
-Belirtilen bağlamda bulunduğu kod adres uzaklığı.
+bstrAddressOffset adresi belirtilen bağlamda bulunduğu kod uzaklığı.
 
-bstrAddressAbsolute  
-Belirtilen bağlamda bulunduğu bellek mutlak bir adres.
+bstrAddressAbsolute belirtilen bağlamda bulunduğu bellekte mutlak bir adres.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı çağrısından döndürülen [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) yöntemi.
@@ -83,7 +76,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)  
-[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
-[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+- [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
+- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

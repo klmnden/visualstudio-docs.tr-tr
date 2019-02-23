@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67da86fd82020ef811484cb91dcd46f5f2b850da
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6695753fa1b071f8623b079dbe4e56e68e9dfad4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942785"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678754"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Özel bir öznitelik ada göre var olup olmadığını belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
-);  
-```  
-  
-```csharp  
-int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pszCustomAttributeName`  
- [in] Adı bulmak için özel özniteliği içeren bir dize.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu alanı özel özniteliği tanımlanmışsa S_OK aksi S_FALSE döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Özel öznitelik ile ilişkili öznitelik bayt elde etmek için çağrı [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) yöntemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
+Özel bir öznitelik ada göre var olup olmadığını belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT IsCustomAttributeDefined( 
+   LPCOLESTR pszCustomAttributeName
+);
+```
+
+```csharp
+int IsCustomAttributeDefined(
+   [In] string pszCustomAttributeName
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pszCustomAttributeName`
+
+ [in] Adı bulmak için özel özniteliği içeren bir dize.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Bu alanı özel özniteliği tanımlanmışsa S_OK aksi S_FALSE döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Özel öznitelik ile ilişkili öznitelik bayt elde etmek için çağrı [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) yöntemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

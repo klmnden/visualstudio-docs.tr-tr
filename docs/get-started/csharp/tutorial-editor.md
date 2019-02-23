@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933164"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722505"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -109,7 +109,7 @@ Boş görmesini istemediğiniz [Oluşturucusu](/dotnet/csharp/programming-guide/
 
 ## <a name="view-symbol-definitions"></a>Sembol tanımlarını görüntüleme
 
-Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolaylaştırır. Örneğin seçerek tanımını içeren dosyayı gitmek için bir yolu olan **Tanıma Git** herhangi bir sembol başvurulur. İçinde çalışmakta olduğunuz odağınızı uzağa dosya hareket etmediği bir bile daha hızlı yolu [Özet tanım](../../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımda Özet `string` türü.
+Visual Studio Düzenleyicisi, bir tür, yöntem vb. tanımını incelemek kolaylaştırır. Örneğin seçerek tanımını içeren dosyayı gitmek için bir yolu olan **Tanıma Git** ya basarak **F12** herhangi bir sembole başvurulduğunda. İçinde çalışmakta olduğunuz odağınızı uzağa dosya hareket etmediği bir bile daha hızlı yolu [Özet tanım](../../ide/go-to-and-peek-definition.md#peek-definition). Şimdi tanımda Özet `string` türü.
 
 1. Tüm oluşması sağ `string` ve **Özet tanım** içerik menüsünde. Veya basın **Alt**+**F12**.
 

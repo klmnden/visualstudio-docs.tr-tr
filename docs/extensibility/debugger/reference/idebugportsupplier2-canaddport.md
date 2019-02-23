@@ -1,7 +1,7 @@
 ---
 title: IDebugPortSupplier2::CanAddPort | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2::CanAddPort
 helpviewer_keywords:
@@ -12,34 +12,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 650b65e043ca16a5aa73a298025819f2fe6802f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19eb4d11ab6e67384a119f11bf070a27159c1676
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942392"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696122"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
-Bağlantı noktası sağlayıcısı yeni bağlantı noktaları ekleyebilirsiniz doğrular.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT CanAddPort(   
-   void   
-);  
-```  
-  
-```csharp  
-int CanAddPort();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bağlantı noktası eklenebilir, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` hiçbir bağlantı noktası için bu bağlantı noktası sağlayıcısı eklenebileceğini göstermek için.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırmadan önce çağrı [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) ikinci yöntemi bağlantı noktası yanı sıra, zaman alıcı bir işlem olabilir, ekleme oluşturduğundan yöntemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
- [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+Bağlantı noktası sağlayıcısı yeni bağlantı noktaları ekleyebilirsiniz doğrular.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT CanAddPort( 
+   void 
+);
+```
+
+```csharp
+int CanAddPort();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+ Bağlantı noktası eklenebilir, döndürür `S_OK`; Aksi halde döndürür `S_FALSE` hiçbir bağlantı noktası için bu bağlantı noktası sağlayıcısı eklenebileceğini göstermek için.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntemi çağırmadan önce çağrı [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) ikinci yöntemi bağlantı noktası yanı sıra, zaman alıcı bir işlem olabilir, ekleme oluşturduğundan yöntemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
+- [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

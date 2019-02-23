@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0033e189706ee999876a5554e61b1c85eb48ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618815"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690519"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Bir izleme bağlamına başlayın.
@@ -32,9 +32,13 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```
 
 #### <a name="parameters"></a>Parametreler
-- [in] `intermediateDirectory` İzleme günlüğünü depolanacağı dizin.
+[in] `intermediateDirectory`
 
-- [in] `taskName` İzleme bağlamı tanımlar. Bu ad, günlük dosyası adı oluşturmak için kullanılır.
+ İzleme günlüğü depolanacağı dizin.
+
+[in] `taskName`
+
+ İzleme bağlamı tanımlar. Bu ad, günlük dosyası adı oluşturmak için kullanılır.
 
 ## <a name="return-value"></a>Dönüş değeri
  Bir **HRESULT** ile **başarılı** izleme bağlamına oluşturulduysa biti ayarlanmamış.

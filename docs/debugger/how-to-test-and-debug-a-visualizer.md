@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227138"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700451"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Nasıl yapılır: Test ve hata ayıklama Görselleştirici
 Görselleştirici, hata ayıklama ve test için ihtiyaç duyduğunuz bir kez yazdığınız.
@@ -54,6 +54,6 @@ Görselleştiriciyi hata ayıklamak için daha kolay bir yolu, bir test sürüc�
     Daha eksiksiz bir örnek için bkz: [izlenecek yol: Görselleştirici yazma C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[İzlenecek yol: C# Dilinde Görselleştirici Yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[Nasıl yapılır: Görselleştiriciyi Yükleme](../debugger/how-to-install-a-visualizer.md)  
-[Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
+- [İzlenecek yol: C# Dilinde Görselleştirici Yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Nasıl yapılır: Görselleştiriciyi Yükleme](../debugger/how-to-install-a-visualizer.md)
+- [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)

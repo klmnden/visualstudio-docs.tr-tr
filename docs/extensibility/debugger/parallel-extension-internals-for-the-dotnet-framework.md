@@ -10,37 +10,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad538269f7c6cd11c6a3b93d60c283c5f63558ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0437363dd7d45b95a04a9e58edd45229f14b4c93
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028661"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695225"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework için paralel uzantı dahili bileşenleri
-Bu bölümde iç türleri, yöntemleri açıklar ve .NET Framework paralel uzantılar için özel bir hata ayıklayıcı yardımcı sınıfları alanlarının uygulayın.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- [Görev sınıfı](../../extensibility/debugger/task-class-internal-members.md)  
- İç veri üyelerini açıklar <xref:System.Threading.Tasks.Task?displayProperty=fullName> sınıfı.  
-  
- [TaskScheduler sınıfı](../../extensibility/debugger/taskscheduler-class-internal-members.md)  
- İç veri üyelerini açıklar <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> sınıfı.  
-  
- [ContingentProperties sınıfı](../../extensibility/debugger/contingentproperties-class-internal-members.md)  
- İç veri üyelerini açıklar `System.Threading.Tasks.ContingentProperties` sınıfı.  
-  
- [AsyncTaskMethodBuilder yapısı](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md)  
- İç üyelerini açıklar <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> yapısı.  
-  
- [AsyncTaskMethodBuilder\<TResult > yapısı](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md)  
- İç üyelerini açıklar <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> yapısı.  
-  
- [AsyncVoidMethodBuilder yapısı](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md)  
- İç üyelerini açıklar <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> yapısı.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Visual Studio hata ayıklayıcı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)   
- [Paralel Programlama](/dotnet/standard/parallel-programming/index)
+Bu bölümde iç türleri, yöntemleri açıklar ve .NET Framework paralel uzantılar için özel bir hata ayıklayıcı yardımcı sınıfları alanlarının uygulayın.
+
+## <a name="in-this-section"></a>Bu bölümde
+ [Görev sınıfı](../../extensibility/debugger/task-class-internal-members.md) iç veri üyelerini açıklar <xref:System.Threading.Tasks.Task?displayProperty=fullName> sınıfı.
+
+ [TaskScheduler sınıfı](../../extensibility/debugger/taskscheduler-class-internal-members.md) iç veri üyelerini açıklar <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> sınıfı.
+
+ [ContingentProperties sınıfı](../../extensibility/debugger/contingentproperties-class-internal-members.md) iç veri üyelerini açıklar `System.Threading.Tasks.ContingentProperties` sınıfı.
+
+ [AsyncTaskMethodBuilder yapısı](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md) iç üyelerini açıklar <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> yapısı.
+
+ [AsyncTaskMethodBuilder\<TResult > yapısı](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md) iç üyelerini açıklar <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> yapısı.
+
+ [AsyncVoidMethodBuilder yapısı](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md) iç üyelerini açıklar <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> yapısı.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- <xref:System.Threading.Tasks.Task?displayProperty=fullName>
+- <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
+- [Visual Studio hata ayıklayıcı genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [Paralel Programlama](/dotnet/standard/parallel-programming/index)

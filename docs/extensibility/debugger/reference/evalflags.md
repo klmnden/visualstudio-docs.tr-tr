@@ -1,7 +1,7 @@
 ---
 title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EVALFLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f780f06188d738deeb7f4b781fba1313e46db6d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315774"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696278"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 İfade değerlendirme denetim bayrakları belirtir.
@@ -50,26 +50,19 @@ public enum enum_EVALFLAGS {
 ```
 
 ## <a name="members"></a>Üyeler
-EVAL_RETURNVALUE  
-Dönüş değeri varsa, değerlendirilecek belirtir.
+Dönüş değeri varsa, değerlendirilecek EVAL_RETURNVALUE belirtir.
 
-EVAL_NOSIDEEFFECTS  
-Yan etkileri izin verilmeyeceğini belirtir.
+EVAL_NOSIDEEFFECTS yan etkileri izin verilmeyeceğini belirtir.
 
-EVAL_ALLOWBPS  
-Durdurma kesme noktalarında belirtir.
+Kesme noktalarında durdurma EVAL_ALLOWBPS belirtir.
 
-EVAL_ALLOWERRORREPORT  
-Hata izin verilmesi için konağa raporlama belirtir. Internet Explorer'da komut ifade değerlendirmesi için kullanılır.
+Konağa izin verilmesi için raporlama EVAL_ALLOWERRORREPORT belirtir hata oluştu. Internet Explorer'da komut ifade değerlendirmesi için kullanılır.
 
-EVAL_FUNCTION_AS_ADDRESS  
-İşlev çağırma yerine adresleri olarak değerlendirilecek işlevleri zorlar.
+İşlev çağırma yerine adresleri olarak değerlendirilecek işlevleri EVAL_FUNCTION_AS_ADDRESS zorlar.
 
-EVAL_NOFUNCEVAL  
-İşlevi, değerlendirilen öğesinden engeller. Örneğin, düşünün `int` ifade belirteci `myExpression(int) + 10`. Bu işlev bir adres, ancak bir değer olarak değil doğru değerlendirilebilir.
+Değerlendirilen gelen işlevi EVAL_NOFUNCEVAL engeller. Örneğin, düşünün `int` ifade belirteci `myExpression(int) + 10`. Bu işlev bir adres, ancak bir değer olarak değil doğru değerlendirilebilir.
 
-EVAL_NOEVENTS  
-İfade değerlendirme sırasında meydana gelen olayları oturum hata ayıklama Yöneticisi (SDM) veya IDE gönderilmemelidir belirten bayrak.
+EVAL_NOEVENTS ifadesi değerlendirmesi sırasında meydana gelen olayları oturum hata ayıklama Yöneticisi (SDM) veya IDE gönderilmemelidir belirten bayrak.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu bayraklar bağımsız değişken olarak geçirilen [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) ve [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) yöntemleri.
@@ -84,6 +77,6 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)  
-[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
+- [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)

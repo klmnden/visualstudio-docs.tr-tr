@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981278"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710831"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Uzaktan hata ayıklama Visual Studio 2017'de azure'da IIS üzerinde ASP.NET Core
 
@@ -47,7 +47,7 @@ Azure'da uzaktan hata ayıklama için önerilen yöntem, senaryoya bağlıdır:
 
 Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmiyor. Ülkeler yüksek gecikme süresi veya çevirmeli, Internet gibi düşük bant genişliği bağlantı üzerinden veya Internet üzerinden hata ayıklama önerilmez ve başarısız olabilir veya edilemeyecek kadar yavaş. Gereksinimlerinin tam listesi için bkz. [gereksinimleri](../debugger/remote-debugging.md#requirements_msvsmon).
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayar üzerinde ASP.NET Core uygulaması oluşturun 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayar üzerinde ASP.NET Core uygulaması oluşturun
 
 1. Yeni bir ASP.NET Core uygulaması oluşturun. (Seçin **Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Core Web uygulaması**).
 
@@ -61,7 +61,7 @@ Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmi
 
 ## <a name="remote_debug_azure_app_service"></a> Bir Azure App Service'te uzaktan hata ayıklama ASP.NET Core
 
-Visual Studio'dan kolayca yayımlayın ve IIS tam bir örneğine uygulamanızda hata ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştirebilirsiniz. Daha ayrıntılı yönergeler için bkz. [Visual Studio'yu kullanarak Azure'a bir ASP.NET Core web uygulaması dağıtma](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği gerekiyorsa, hata ayıklama deneyin bir [Azure VM](#remote_debug_azure_vm).) 
+Visual Studio'dan kolayca yayımlayın ve IIS tam bir örneğine uygulamanızda hata ayıklama. Ancak, IIS yapılandırmasını önceden ve onu özelleştirebilirsiniz. Daha ayrıntılı yönergeler için bkz. [Visual Studio'yu kullanarak Azure'a bir ASP.NET Core web uygulaması dağıtma](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (IIS özelleştirme yeteneği gerekiyorsa, hata ayıklama deneyin bir [Azure VM](#remote_debug_azure_vm).)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Sunucu Gezgini kullanarak uzaktan hata ayıklama ve uygulama dağıtmak için
 
@@ -184,7 +184,7 @@ Web dağıtımı kullanmıyorsanız, yayımlama ve dosya sistemi veya diğer ara
 Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> Windows Server'da uzaktan hata ayıklayıcı ayarlama
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 2. Visual Studio'da **hata ayıklama > iliştirme** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Visual Studio 2017'de, daha önce ekli kullanarak aynı işlemde yeniden ekleyebileceğiniz **hata ayıklama > İliştir...** (Shift + Alt + P). 
+    > Visual Studio 2017'de, daha önce ekli kullanarak aynı işlemde yeniden ekleyebileceğiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
 3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: 4022**.
 4. Tıklayın **Yenile**.
@@ -211,7 +211,7 @@ Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 5. Denetleme **tüm kullanıcıların işlemlerini göster**.
 
 6. Hızlı bir şekilde bulmak için bir işlem adının ilk harfi yazın *dotnet.exe* (için ASP.NET Core).
-   
+
    ASP.NET Core uygulaması için önceki işlem adıydı *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 7. Tıklayın **ekleme**.
 
 8. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >**.
-    
+
     ASP.NET web sayfası görmeniz gerekir.
 9. Çalışan ASP.NET uygulama bağlantısını tıklayın **hakkında** sayfası.
 
@@ -229,7 +229,7 @@ Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 
 Çoğu ayarlar ASP.NET ve uzaktan hata ayıklayıcı yüklemesi tarafından gerekli bağlantı noktalarının açıldığından. Ancak, bir güvenlik duvarının arkasında barındırılan uygulama ve dağıtım sorunlarını giderirken, doğru bağlantı noktalarının açık olduğundan emin olun gerekebilir.
 
-Bir Azure sanal makinesinde aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+Bir Azure sanal makinesinde aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
 
 Gerekli bağlantı noktaları:
 

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947484"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702180"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017'de bir uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -40,7 +40,7 @@ Bu makalede, temel bir Windows server IIS yapılandırmasını ayarlama ve uygul
 
 * Emin olmak için Yardım istiyorsanız uygulamanızı, dağıtılan, ayarlanır ve böylece hata ayıklaması yapabilirsiniz, IIS'de doğru çalışmasını, bu konudaki tüm adımları izleyin.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayar üzerinde ASP.NET Core uygulaması oluşturun 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayar üzerinde ASP.NET Core uygulaması oluşturun
 
 1. Yeni bir ASP.NET Core uygulaması oluşturun. (**Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Core Web uygulaması**).
 
@@ -147,7 +147,7 @@ Ayrıca, yayımlama ve dosya sistemi veya diğer araçları kullanarak uygulamay
 Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Windows Server'da uzaktan hata ayıklayıcı ayarlama
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
 2. Visual Studio'da **hata ayıklama > iliştirme** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Visual Studio 2017'de, daha önce ekli kullanarak aynı işleme iliştirebilirsiniz **hata ayıklama > İliştir...** (Shift + Alt + P). 
+    > Visual Studio 2017'de, daha önce ekli kullanarak aynı işleme iliştirebilirsiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
 3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: 4022**.
 4. Tıklayın **Yenile**.
@@ -181,7 +181,7 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
 7. Tıklayın **ekleme**.
 
 8. Uzak bilgisayarın Web sitesini açın. Bir tarayıcıda Git **http://\<uzak bilgisayar adı >**.
-    
+
     ASP.NET web sayfası görmeniz gerekir.
 
 9. Çalışan ASP.NET uygulama bağlantısını tıklayın **hakkında** sayfası.

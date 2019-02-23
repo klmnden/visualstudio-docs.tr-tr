@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringChars | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringChars
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce59e1fcbc9b219f1436bd09d4d947cd6995c0f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450431"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698150"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Bu özellik ile ilişkili dizeyi alır ve bir kullanıcı tarafından sağlanan arabelleğinde depolar.
@@ -41,16 +41,20 @@ int GetStringChars(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`buflen`  
-[in] En fazla karakter sayısı, kullanıcı tarafından sağlanan arabellek barındırabilir.
+`buflen`
 
-`rgString`  
-[out] Bir dize döndürür.
+ [in] En fazla karakter sayısı, kullanıcı tarafından sağlanan arabellek barındırabilir.
 
-[C++ yalnızca] `rgString` Unicode karakter dizesinin alan arabellek işaretçisidir. Bu arabelleğin en az olmalıdır `buflen` boyutu (bayt değil) karakter.
+`rgString`
 
-`pceltFetched`  
-[out] Burada aslında arabellekteki depolanan karakter sayısı döndürülür. (Olabilir `NULL` c++.)
+ [out] Bir dize döndürür.
+
+
+ [C++ yalnızca] `rgString` Unicode karakter dizesinin alan arabellek işaretçisidir. Bu arabelleğin en az olmalıdır `buflen` boyutu (bayt değil) karakter.
+
+`pceltFetched`
+
+ [out] Burada aslında arabellekteki depolanan karakter sayısı döndürülür. (Olabilir `NULL` c++.)
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -85,6 +89,6 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)  
-[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)  
-[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
