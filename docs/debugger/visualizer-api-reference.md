@@ -17,31 +17,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9665484a571150f63a4b8d2d1d952999dc9e53b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79d417bcee4bb6e058ea90028a29a87a3527aa5c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945651"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717721"
 ---
 # <a name="visualizer-api-reference"></a>Görselleştirici API Başvurusu
 
-Görselleştirici API'leri için Visual Studio hata ayıklayıcı Görselleştirici yazma isteyen kullanıcılar için sağlanır. Görselleştirici kullanıcı arabirimi Visual Studio hata ayıklayıcısını işlevselliğini genişleten küçük bir uygulamadır. Görselleştirici görüntüleyebilir (ve isteğe bağlı olarak Düzenle) görselleştiricisi için tasarlanmış belirli bir türün veri nesnesi.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
-  
+Görselleştirici API'leri için Visual Studio hata ayıklayıcı Görselleştirici yazma isteyen kullanıcılar için sağlanır. Görselleştirici kullanıcı arabirimi Visual Studio hata ayıklayıcısını işlevselliğini genişleten küçük bir uygulamadır. Görselleştirici görüntüleyebilir (ve isteğe bağlı olarak Düzenle) görselleştiricisi için tasarlanmış belirli bir türün veri nesnesi.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
- [İzlenecek yol: C# ile Görselleştirici yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Nasıl yapılır: Görselleştirici yazma](/visualstudio/debugger/create-custom-visualizers-of-data)   
- [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
+- [İzlenecek yol: C# Dilinde Görselleştirici Yazma](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Nasıl yapılır: Görselleştirici Yazma](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)

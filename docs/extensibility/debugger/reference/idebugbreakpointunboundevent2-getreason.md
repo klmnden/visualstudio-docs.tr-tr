@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9e258f8a267ab2f8211cc4c6f908c3593a485ee
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: fe963923494d5dc68eb2ab3b6fd768036d1c5400
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412961"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719116"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 Kesme noktası ilişkisiz nedenini alır.
@@ -37,8 +37,9 @@ int GetReason(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pdwUnboundReason`  
-[out] Bir değer döndürür [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) kesme noktası ilişkisiz nedenini belirten sabit listesi.
+`pdwUnboundReason`
+
+ [out] Bir değer döndürür [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) kesme noktası ilişkisiz nedenini belirten sabit listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -69,4 +70,4 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)
+- [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

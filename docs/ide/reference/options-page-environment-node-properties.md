@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f1f8ea2ca9f55610c666ad5fa28fa189bb3be1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955758"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708335"
 ---
-# <a name="options-page-environment-node-properties"></a>Seçenekler Sayfası, Ortam Düğümü Özellikleri
-Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişkili **ortam** kategori `DTE.Properties("Environment", <Property Page>)`, biri **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı özellikler koleksiyonuna erişmek için kullanılan çağrıdır ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
+# <a name="options-page-environment-node-properties"></a>Seçenekler sayfası, ortam düğümü özellikleri
+
+Bu makalede sayfaları (veya özellik koleksiyonları) ile ilişkili **ortam** kategori `DTE.Properties("Environment", <Property Page>)` , **seçenekleri** iletişim kutusu. Her bir alt bölümünün başlığı özellikler koleksiyonuna erişmek için kullanılan çağrıdır ve her bir alt bölümdeki tabloda koleksiyondaki özellikler listelenmektedir.
 
 ## <a name="general"></a>Genel
- `DTE.Properties("Environment", "General")`
+
+`DTE.Properties("Environment", "General")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -37,7 +39,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |AutohidePinActiveTabOnly|Get/Set (Boole)|Belirler olmadığını **Otomatik Gizle** düğmesi sadece etkin sekmede etkiler.|
 
 ## <a name="add-inmacros-security"></a>Ekle/makro güvenliği
- `DTE.Properties("Environment", "AddinMacrosSecurity")`
+
+`DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -46,7 +49,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |LoadAddinsFromTheWeb|Get/Set (Boole)|Web üzerinde bir URL'den yüklenecek eklentiler sağlar.|
 
 ## <a name="documents"></a>Belgeler
- `DTE.Properties("Environment", "Documents")`
+
+`DTE.Properties("Environment", "Documents")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -63,7 +67,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. İyi, açılan belge eklemek sekmesinde konumu.|
 
 ## <a name="extension-manager"></a>Uzantı Yöneticisi
- `DTE.Properties("Environment", "ExtensionManager")`
+
+`DTE.Properties("Environment", "ExtensionManager")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -72,7 +77,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |AutomaticallyCheckForUpdates|Get/Set (Boole)|Güncelleştirmeleri yüklü uzantılar için otomatik olarak denetler.|
 
 ## <a name="find-and-replace"></a>Bulma ve Değiştirme
- `DTE.Properties("Environment", "FindAndReplace")`
+
+`DTE.Properties("Environment", "FindAndReplace")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -82,7 +88,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |HideWindowsAfterMatchFromQuickFindReplace|Get/Set (Boole)|Gizler **Bul ve Değiştir** kullanarak bir eşleşme arkalarına penceresi **Hızlı Bul** veya **hızlı Değiştir**.|
 
 ## <a name="import-and-export-settings"></a>İçeri ve dışarı aktarma ayarları
- `DTE.Properties("Environment", "Import and Export Settings")`
+
+`DTE.Properties("Environment", "Import and Export Settings")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -91,21 +98,24 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |AutoSaveFile|Get/Set (dize)|Kullanıcı ayarları otomatik olarak kaydedildiği dosyanın adı.|
 
 ## <a name="international-settings"></a>Uluslararası ayarlar
- `DTE.Properties("Environment", "International")`
+
+`DTE.Properties("Environment", "International")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
 |Dil|Get/Set (dize)|Visual Studio için geçerli dili için LCID değer.|
 
 ## <a name="keyboard"></a>Klavye
- `DTE.Properties("Environment", "Keyboard")`
+
+`DTE.Properties("Environment", "Keyboard")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
 |Düzen|Get/Set (dize)|Yerleşik bir düzeni içeren bir dize, yüklenen .vsk dosyasının tam yolu içeren bir dize veya "(hiçbir .vsk dosyasının yüklü ise varsayılan)" döndürür.|
 
 ## <a name="projects-and-solution"></a>Proje ve çözüm
- `DTE.Properties("Environment", "ProjectsAndSolution")`
+
+`DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -128,7 +138,10 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |MSBuildOutputVerbosity|Get/Set (dize)|Derleme çıkışı için ayrıntı düzeyini belirtir.|
 
 ## <a name="startup"></a>Başlangıç
- `DTE.Properties("Environment", "Startup")`
+
+`DTE.Properties("Environment", "Startup")`
+
+::: moniker range="vs-2017"
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -137,8 +150,19 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |StartPageRefreshDownloadedContent|Get/Set (Boole)|Başlangıç sayfası StartPageRefreshInterval içinde belirtilen aralık her ilgi çekici sonra yeniler.|
 |StartPageRefreshInterval|Get/Set (kısa)|Aralığının başlangıç sayfası yenilemek için dakika cinsinden değeri.|
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|Özellik Öğesi Adı|Değer|Açıklama|
+| - |-----------|-----------------|
+|OnStartUp|Get/Set (Enum)|Öğesinden, başlangıçta gerçekleştirilecek eylem <xref:EnvDTE.vsStartUp>.|
+
+::: moniker-end
+
 ## <a name="tasklist"></a>Görev listesi
- `DTE.Properties("Environment", "TaskList")`
+
+`DTE.Properties("Environment", "TaskList")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -148,7 +172,8 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |CommentTokens|SafeArray|SafeArray yorum belirteci değerlerini döndürür. Her alan yok `Name` (dize) ve `Priority` (<xref:EnvDTE.vsTaskPriority>, yüksek, Orta veya düşük).|
 
 ## <a name="web-browser"></a>Web tarayıcısı
- `DTE.Properties("Environment", "WebBrowser")`
+
+`DTE.Properties("Environment", "WebBrowser")`
 
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
@@ -157,7 +182,7 @@ Bu belgede, sayfa (veya özellik koleksiyonları) açıklanmaktadır ile ilişki
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Kaynak, tasarım, dış).|
 |ViewSourceExternalProgram|Get/Set (dize)|Dış kaynak Görüntüleyicisi yolu.|
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Seçenek ayarlarını denetleme](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
 - [Seçenekler sayfasında özellik öğelerinin adlarını belirleme](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)

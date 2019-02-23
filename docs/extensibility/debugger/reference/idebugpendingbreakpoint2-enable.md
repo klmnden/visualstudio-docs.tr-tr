@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Enable | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Enable
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a06ed6e7d3c5f95e0de2ee88c63783924c2b015d
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450015"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720828"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Bekleyen kesme noktasının etkinleştirilen durumunu değiştirir.
@@ -38,8 +38,9 @@ int Enable(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`fEnable`  
-[in] İçin sıfır olmayan ayarlayın (`TRUE`) bir bekleyen kesme noktasını etkinleştir veya sıfır (`FALSE`) devre dışı bırakmak için.
+`fEnable`
+
+ [in] İçin sıfır olmayan ayarlayın (`TRUE`) bir bekleyen kesme noktasını etkinleştir veya sıfır (`FALSE`) devre dışı bırakmak için.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` kesme noktası silinmiş olması durumunda.
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

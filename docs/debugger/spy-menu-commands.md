@@ -10,30 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d056a878696840de2c6110209c43fa640ef1eccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992691"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719025"
 ---
 # <a name="spy-menu-commands"></a>Spy Menü Komutları
-**Spy** menü Spy ++ Windows ve görünümler ile çalışmak için komutları sağlar.  
-  
- **Windows**  
- Yeni bir Windows görünümü açar.  
-  
- **İşlemler**  
- Yeni bir işlemler görünümü açar.  
-  
- **İş Parçacıkları**  
- Yeni bir iş parçacıkları görünümü açar.  
-  
- **Günlük iletileri**  
- Yeni bir ileti görünümü açar ve açılır [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) görünüm.  
-  
- **Pencereyi Bul**  
- Görüntüler **FindWindow** fare ile bir pencere seçmek için iletişim kutusu.  
-  
- **Çıkış**  
- Spy ++ yardımcı programı kapatır.
+**Spy** menü Spy ++ Windows ve görünümler ile çalışmak için komutları sağlar.
+
+ **Windows** yeni bir Windows görünümü açar.
+
+ **İşlemler** yeni bir işlemler görünümü açar.
+
+ **İş parçacığı** yeni bir iş parçacıkları görünümü açar.
+
+ **İletileri günlüğe** yeni bir ileti görünümü açar ve açılır [ileti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) görünüm.
+
+ **Pencereyi Bul** görüntüler **FindWindow** fare ile bir pencere seçmek için iletişim kutusu.
+
+ **Çıkış** Spy ++ yardımcı programı kapatır.

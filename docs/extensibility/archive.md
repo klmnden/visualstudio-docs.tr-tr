@@ -8,18 +8,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5f9947f15007aba38ef1965c27ef868829e329f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 05911005a0ad64687b4381684609c0aecb9005f2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972488"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721909"
 ---
 # <a name="archive"></a>Arşiv
-Bu bölüm, tartışma hala desteklenmektedir, ancak daha yeni değişiklik teknolojileri sahip olan Visual Studio genişletilebilirlik teknolojileri içerir.  
-  
-## <a name="legacy-interfaces-in-the-editor"></a>Eski arabirimleri Düzenleyicisi  
- Bu bölümde, yeni MEF kodu daha eski (Ivs *) arabirimleri düzenleyiciyle erişmeye açıklanmaktadır: [Eski arabirimleri Düzenleyicisi'nde](../extensibility/legacy-interfaces-in-the-editor.md).  
-  
-## <a name="tool-windows-in-the-registry"></a>Kayıt defterinde araç pencereleri  
+Bu bölüm, tartışma hala desteklenmektedir, ancak daha yeni değişiklik teknolojileri sahip olan Visual Studio genişletilebilirlik teknolojileri içerir.
+
+## <a name="legacy-interfaces-in-the-editor"></a>Eski arabirimleri Düzenleyicisi
+ Bu bölümde, yeni MEF kodu daha eski (Ivs *) arabirimleri düzenleyiciyle erişmeye açıklanmaktadır: [Eski arabirimleri Düzenleyicisi'nde](../extensibility/legacy-interfaces-in-the-editor.md).
+
+## <a name="tool-windows-in-the-registry"></a>Kayıt defterinde araç pencereleri
  Bu bölümde, doğrudan kayıt defterinde araç pencerelerini ayarlama açıklanmaktadır: [Aracı windows kayıt defterinde](../extensibility/tool-windows-in-the-registry.md).

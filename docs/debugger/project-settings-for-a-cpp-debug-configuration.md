@@ -112,25 +112,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163b3e2d3ac222fd2e495e7a3b71841c818a4a3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961854"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722255"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ hata ayıklama yapılandırması proje ayarları
-Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.  
-  
-> [!NOTE]
->  Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategorisi için UWP uygulamaları ve C++ ile yazılmış bileşenler için farklı. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
-  
- Her hata ayıklama özelliği ayarı otomatik olarak yazılır ve kaydedilen "kullanıcı başına" dosyaya (. vcxproj.user) çözümünüzü her kaydettiğinizde, çözümünüz için.  
+Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **özellik sayfaları** anlatıldığı gibi iletişim kutusu, [nasıl yapılır: Ayarlama hata ayıklama ve dağıtım yapılandırmalarını](../debugger/how-to-set-debug-and-release-configurations.md). Aşağıdaki tablolarda, hata ayıklayıcı ile ilgili ayarların nerede bulunacağı gösterilmektedir **özellik sayfaları** iletişim kutusu.
 
- Hangi hata ayıklayıcının kullanılacağını belirtin **başlatmak için hata ayıklayıcı** liste kutusunda, aşağıdaki tabloda açıklandığı gibi. Seçiminiz hangi özelliklerin görülebileceğini etkiler.  
-    
-## <a name="configuration-properties-folder-debugging-category"></a>Yapılandırma özellikleri klasörü (hata ayıklama kategorisi)  
-  
+> [!NOTE]
+>  Hata ayıklama proje ayarları **yapılandırma özellikleri/hata ayıklama** kategorisi için UWP uygulamaları ve C++ ile yazılmış bileşenler için farklı. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumunu başlatmada](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+
+ Her hata ayıklama özelliği ayarı otomatik olarak yazılır ve kaydedilen "kullanıcı başına" dosyaya (. vcxproj.user) çözümünüzü her kaydettiğinizde, çözümünüz için.
+
+ Hangi hata ayıklayıcının kullanılacağını belirtin **başlatmak için hata ayıklayıcı** liste kutusunda, aşağıdaki tabloda açıklandığı gibi. Seçiminiz hangi özelliklerin görülebileceğini etkiler.
+
+## <a name="configuration-properties-folder-debugging-category"></a>Yapılandırma özellikleri klasörü (hata ayıklama kategorisi)
+
 | **Ayarı** | **Açıklama** |
 | - | - |
 | **Başlatmak için hata ayıklayıcı** | Hata ayıklayıcının, aşağıdaki seçenekler ile Çalıştır belirtir:<br /><br /> -   **Yerel Windows hata ayıklayıcı**<br />-   **Uzak Windows hata ayıklayıcı**<br />-   **Web tarayıcı hata ayıklayıcısı**<br />-   **Web hizmeti hata ayıklayıcısı** |
@@ -152,31 +152,31 @@ Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değişti
 | **Dağıtım dizini** (uzak Windows hata ayıklayıcı) | Proje çıktısı başlatmadan önce kopyalanacağı burada olacaktır uzak bilgisayardaki yolunu belirtir. Yol, uzak bilgisayardaki bir ağ paylaşımı veya uzak bilgisayardaki bir klasöre bir yol olabilir. Varsayılan ayar boş proje çıkışının bir ağ paylaşımına kopyalanmadığı anlamına gelir. Dosyaların dağıtımını etkinleştirmek için de seçmeniz gerekir **Dağıt** Configuration Manager iletişim kutusundaki onay kutusu. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md). |
 | **Dağıtılacak ek dosyalar** (uzak Windows hata ayıklayıcı) | Dağıtım dizini özelliği ayarlanmışsa, bu dağıtım dizinine kopyalanacak ek dosyaların noktalı virgülle ayrılmış bir listesini budur. Varsayılan ayar boş, hiçbir ek dosyaları dağıtım dizinine kopyalanmadığı anlamına gelir. Dosyaların dağıtımını etkinleştirmek için de seçmeniz gerekir **Dağıt** Configuration Manager iletişim kutusundaki onay kutusu. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md). |
 | **Visual C++ hata ayıklama çalışma zamanı kitaplıklarını Dağıt** (uzak Windows hata ayıklayıcı) | Dağıtım dizini özelliği ayarlanmışsa, bu geçerli platform için Visual C++ hata ayıklama çalışma zamanı kitaplıklarının ağ paylaşımına kopyalanıp kopyalanmayacağını belirtir. Varsayılan ayar evet'tir. |
-  
-## <a name="cc-folder-general-category"></a>C/C++ klasörü (genel kategori)  
-  
-|Ayar|Açıklama|  
-|-------------|-----------------|  
-|**Hata ayıklama bilgi biçimi** ([/z7, / ZD, Zi, /zı](/cpp/build/reference/z7-zi-zi-debug-information-format))|Proje için oluşturulacak hata ayıklama bilgilerinin türünü belirtir.<br /><br /> Varsayılan seçenek (/zı) Düzenle ve devam et uyumlu formatında bir program veritabanı (PDB) oluşturur. Daha fazla bilgi için [/z7, / ZD, / zi, /zı (hata ayıklama bilgileri biçimi)](/cpp/build/reference/z7-zi-zi-debug-information-format).|  
-  
-## <a name="cc-folder-optimization-category"></a>C/C++ klasörü (iyileştirme kategorisi)  
-  
-|Ayar|Açıklama|  
-|-------------|-----------------|  
-|**En iyi duruma getirme**|Derleyicinin ürettiği kodu en iyileştirip iyileştirmeyeceğini belirtir. İyileştirme yürütülen kodu değiştirir. İyileştirilmiş kod artık kaynak kodu, hata ayıklamayı zorlaştırır eşleşir.<br /><br /> Varsayılan seçenek (**devre dışı (/ 0d)**) en iyi duruma getirme bastırır. İyileştirme bastırılmış ile geliştirin ve kodunuzun ürün sürümünü oluşturduğunuzda açın.|  
-  
-## <a name="linker-folder-debugging-category"></a>Bağlayıcı klasörü (hata ayıklama kategorisi)  
-  
-|Ayar|Açıklama|  
-|-------------|-----------------|  
-|**Hata ayıklama bilgileri üret** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|Tarafından belirtilen biçimde olan hata ayıklama bilgilerini dahil etmesini söyler [/z7, / ZD, Zi veya /zı](/cpp/build/reference/z7-zi-zi-debug-information-format).|  
-|**Program veritabanı dosyası oluştur** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|Program veritabanı (PDB) dosyasının adını bu kutuda belirtin. Hata ayıklama bilgi biçimi için zı ya da / seçmeniz gerekir.|  
-|**Özel sembolleri sök** ([/PDBSTRIPPED:filename](/cpp/build/reference/pdbstripped-strip-private-symbols))|PDB dosyasında özel simgeler dahil etmek istemiyorsanız bu kutuya PDB dosyanın adını belirtin. / Debug, / z7, /Zd gibi bir PDB dosyası üretmek seçenekleri herhangi bir derleyici veya bağlayıcı ile program görüntüsünü oluşturduğunuzda bu seçenek ikinci bir PDB dosyası oluşturur. Veya/zi. Bu ikinci PDB dosyası, size gönderilen müşterilerinize istemezsiniz sembolleri atar. Daha fazla bilgi için [/pdbstrıpped (özel simgeleri Şerit)](/cpp/build/reference/pdbstripped-strip-private-symbols).|  
-|**Eşlem dosyası oluştur** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Bağlama sırasında bir eşleme dosyası oluşturulacak söyler. Varsayılan ayar Hayır Daha fazla bilgi için [Map (eşlem dosyası oluştur)](/cpp/build/reference/map-generate-mapfile).|  
-|**Eşlem dosyası adı** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*adı*)|Eşlem dosyası oluştur seçerseniz, bu kutuda harita dosyasını belirtebilirsiniz. Daha fazla bilgi için [Map (eşlem dosyası oluştur)](/cpp/build/reference/map-generate-mapfile).|  
-|**Eşlem aktarımları** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Eşleme dosyasında dışarı aktarılan işlevleri içerir. Varsayılan ayar Hayır Daha fazla bilgi için [mapınfo (eşlem dosyası bilgileri dahil)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|  
-|**Hatası ayıklanabilir bütünleşmiş kod** ([assemblydebug](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Bağlayıcı ayarlarını belirler assemblydebug seçeneği. Olası değerler şunlardır:<br /><br /> -   **Debuggable özniteliği yayınlanmadı**.<br />-   **Çalışma zamanı iyileştirmeleri ve Takibi devre dışı bırak (/ ASSEMBLYDEBUG)**. Bu varsayılan ayardır,<br />-   **Hiçbir çalışma zamanı izleme ve iyileştirmeleri etkinleştir(/assemblydebug:DISABLE)**.<br />-   **\<Üstten veya proje varsayılanlarından devral >**.<br />-Daha fazla bilgi için [assemblydebug (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|  
-  
+
+## <a name="cc-folder-general-category"></a>C/C++ klasörü (genel kategori)
+
+|Ayar|Açıklama|
+|-------------|-----------------|
+|**Hata ayıklama bilgi biçimi** ([/z7, / ZD, Zi, /zı](/cpp/build/reference/z7-zi-zi-debug-information-format))|Proje için oluşturulacak hata ayıklama bilgilerinin türünü belirtir.<br /><br /> Varsayılan seçenek (/zı) Düzenle ve devam et uyumlu formatında bir program veritabanı (PDB) oluşturur. Daha fazla bilgi için [/z7, / ZD, / zi, /zı (hata ayıklama bilgileri biçimi)](/cpp/build/reference/z7-zi-zi-debug-information-format).|
+
+## <a name="cc-folder-optimization-category"></a>C/C++ klasörü (iyileştirme kategorisi)
+
+|Ayar|Açıklama|
+|-------------|-----------------|
+|**En iyi duruma getirme**|Derleyicinin ürettiği kodu en iyileştirip iyileştirmeyeceğini belirtir. İyileştirme yürütülen kodu değiştirir. İyileştirilmiş kod artık kaynak kodu, hata ayıklamayı zorlaştırır eşleşir.<br /><br /> Varsayılan seçenek (**devre dışı (/ 0d)**) en iyi duruma getirme bastırır. İyileştirme bastırılmış ile geliştirin ve kodunuzun ürün sürümünü oluşturduğunuzda açın.|
+
+## <a name="linker-folder-debugging-category"></a>Bağlayıcı klasörü (hata ayıklama kategorisi)
+
+|Ayar|Açıklama|
+|-------------|-----------------|
+|**Hata ayıklama bilgileri üret** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|Tarafından belirtilen biçimde olan hata ayıklama bilgilerini dahil etmesini söyler [/z7, / ZD, Zi veya /zı](/cpp/build/reference/z7-zi-zi-debug-information-format).|
+|**Program veritabanı dosyası oluştur** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|Program veritabanı (PDB) dosyasının adını bu kutuda belirtin. Hata ayıklama bilgi biçimi için zı ya da / seçmeniz gerekir.|
+|**Özel sembolleri sök** ([/PDBSTRIPPED:filename](/cpp/build/reference/pdbstripped-strip-private-symbols))|PDB dosyasında özel simgeler dahil etmek istemiyorsanız bu kutuya PDB dosyanın adını belirtin. / Debug, / z7, /Zd gibi bir PDB dosyası üretmek seçenekleri herhangi bir derleyici veya bağlayıcı ile program görüntüsünü oluşturduğunuzda bu seçenek ikinci bir PDB dosyası oluşturur. Veya/zi. Bu ikinci PDB dosyası, size gönderilen müşterilerinize istemezsiniz sembolleri atar. Daha fazla bilgi için [/pdbstrıpped (özel simgeleri Şerit)](/cpp/build/reference/pdbstripped-strip-private-symbols).|
+|**Eşlem dosyası oluştur** ([/MAP](/cpp/build/reference/map-generate-mapfile))|Bağlama sırasında bir eşleme dosyası oluşturulacak söyler. Varsayılan ayar Hayır Daha fazla bilgi için [Map (eşlem dosyası oluştur)](/cpp/build/reference/map-generate-mapfile).|
+|**Eşlem dosyası adı** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*adı*)|Eşlem dosyası oluştur seçerseniz, bu kutuda harita dosyasını belirtebilirsiniz. Daha fazla bilgi için [Map (eşlem dosyası oluştur)](/cpp/build/reference/map-generate-mapfile).|
+|**Eşlem aktarımları** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Eşleme dosyasında dışarı aktarılan işlevleri içerir. Varsayılan ayar Hayır Daha fazla bilgi için [mapınfo (eşlem dosyası bilgileri dahil)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|
+|**Hatası ayıklanabilir bütünleşmiş kod** ([assemblydebug](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Bağlayıcı ayarlarını belirler assemblydebug seçeneği. Olası değerler şunlardır:<br /><br /> -   **Debuggable özniteliği yayınlanmadı**.<br />-   **Çalışma zamanı iyileştirmeleri ve Takibi devre dışı bırak (/ ASSEMBLYDEBUG)**. Bu varsayılan ayardır,<br />-   **Hiçbir çalışma zamanı izleme ve iyileştirmeleri etkinleştir(/assemblydebug:DISABLE)**.<br />-   **\<Üstten veya proje varsayılanlarından devral >**.<br />-Daha fazla bilgi için [assemblydebug (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|
+
  Yapılandırma özellikleri klasörü (hata ayıklama kategorisi) bu ayarları Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings arabirimini kullanarak programlama yoluyla değiştirebilirsiniz. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 
 ## <a name="other-project-settings"></a>Diğer proje ayarları
@@ -184,10 +184,10 @@ Bir C veya Visual C++ hata ayıklama yapılandırması proje ayarları değişti
 Statik kitaplıklar ve DLL'ler gibi proje türlerinde hata ayıklamak için Visual Studio projenize doğru dosya bulamadı olması gerekir. Kaynak kodu kullanılabilir duruma geldiğinde ayrı projeler statik kitaplıklar ve DLL'ler daha kolay hata ayıklama yapmak için aynı çözüme ekleyebilirsiniz. Bu proje türleri oluşturma konusunda daha fazla bilgi için bkz: [oluşturma ve bir dinamik bağlantı kitaplığı (DLL) kullanarak](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp) ve [kullanarak bir statik kitaplık oluşturma](/cpp/windows/walkthrough-creating-and-using-a-static-library-cpp). Kullanılabilir kaynak kodu ile yeni bir Visual Studio projesi seçerek oluşturabilirsiniz **dosya** > **yeni** > **varolan koddan proje**.
 
 Projenize dış DLL'lerin hata ayıklamak için bkz: [hata ayıklama DLL projelerinde](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal). Gerekirse kendi DLL proje hata ayıklama ancak olmayan projeye erişimi çağıran uygulama için bkz. [DLL projesinde hata ayıklama](../debugger/how-to-debug-from-a-dll-project.md).
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)   
- [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
- [Visual C++ proje oluşturma ve yönetme](/cpp/ide/creating-and-managing-visual-cpp-projects)   
- [/ ASSEMBLYDEBUG (DebuggableAttribute ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute)   
- [Genel derleme komutları ve Özellikler makroları](/cpp/ide/common-macros-for-build-commands-and-properties)
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Yerel kodda hata ayıklama](../debugger/debugging-native-code.md)
+- [Hata ayıklayıcısı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)
+- [Visual C++ proje oluşturma ve yönetme](/cpp/ide/creating-and-managing-visual-cpp-projects)
+- [/ASSEMBLYDEBUG (DebuggableAttribute Ekleme)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
+- [Genel derleme komutları ve Özellikler makroları](/cpp/ide/common-macros-for-build-commands-and-properties)

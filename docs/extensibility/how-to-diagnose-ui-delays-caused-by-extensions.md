@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317126"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719489"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl yapılır: Uzantılardan kaynaklanan kullanıcı arabirimi gecikmelerini tanılama
 
@@ -21,7 +21,7 @@ Kullanıcı Arabirimi yanıt vermemeye başlıyor, Visual Studio kullanıcı Ara
 
 Kullanıcı Arabirimi gecikmesi (diğer bir deyişle, kullanıcı arabiriminde sorununa) bir uzantı koddan sonucu silinmiş olabilir, bildirim kullanıcıya bildirir. Ayrıca uzantı veya bu uzantı için gelecekteki bildirimleri devre dışı bırakma seçenekleri ile kullanıcı sağlar.
 
-Bu belgede, nasıl uzantı kodunuza kullanıcı Arabirimi gecikmesi bildirimleri çözebilmeniz tanılayabilirsiniz açıklanmaktadır. 
+Bu belgede, nasıl uzantı kodunuza kullanıcı Arabirimi gecikmesi bildirimleri çözebilmeniz tanılayabilirsiniz açıklanmaktadır.
 
 > [!NOTE]
 > Visual Studio deneysel örneğinde kullanıcı Arabirimi gecikmelerini tanılama için kullanmayın. Çağrı yığını analiz UI gecikmesi bildirimleri için gerekli bazı bölümlerini, kullanıcı Arabirimi gecikmesi bildirimleri gösterilmiyor yani Deneysel örneğini kullanırken kapalıdır.
@@ -102,7 +102,7 @@ Ardından, izleme dosyasını açın. PerfView veya yeni bir örneğini başlata
 Sonra sol bölmede izleme dosyasını seçin ve seçerek açın **açın** sağ tıklayın veya bağlam menüsünde.
 
 > [!NOTE]
-> Varsayılan olarak, bir ZIP arşivi PerfView çıkarır. Açtığınızda *trace.zip*, otomatik olarak arşiv açar ve izlemeyi açar. Kaldırarak bunu atlayabilirsiniz **Zip** izleme toplama sırasında kutusu. Aktarım ve izlemeler farklı makineler arasında planlıyorsanız, ancak işaretini karşı öneririz **Zip** kutusu. Bu seçenek olmadan Ngen derlemeler için gerekli pdb izleme eşlik değil ve bu nedenle Ngen derlemelerden sembolleri hedef makine üzerinde çözümlenmeyecek. (Bkz [bu blog gönderisini](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) Ngen derlemeler için pdb hakkında daha fazla bilgi için.) 
+> Varsayılan olarak, bir ZIP arşivi PerfView çıkarır. Açtığınızda *trace.zip*, otomatik olarak arşiv açar ve izlemeyi açar. Kaldırarak bunu atlayabilirsiniz **Zip** izleme toplama sırasında kutusu. Aktarım ve izlemeler farklı makineler arasında planlıyorsanız, ancak işaretini karşı öneririz **Zip** kutusu. Bu seçenek olmadan Ngen derlemeler için gerekli pdb izleme eşlik değil ve bu nedenle Ngen derlemelerden sembolleri hedef makine üzerinde çözümlenmeyecek. (Bkz [bu blog gönderisini](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) Ngen derlemeler için pdb hakkında daha fazla bilgi için.)
 
 Bu, PerfView işlemek ve izlemeyi açmak birkaç dakika sürebilir. İzleme açıldıktan sonra çeşitli "görünümler" listesi altında görünür.
 

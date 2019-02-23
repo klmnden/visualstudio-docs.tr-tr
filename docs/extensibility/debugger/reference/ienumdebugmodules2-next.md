@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugModules2::Next | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Next
 helpviewer_keywords:
@@ -12,47 +12,50 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d4e1edd97599bf997eb7e0660e9bf60fe53dff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c417847fc0c601f571e7bad23af07d2393f93f29
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937749"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721504"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
-Sabit listesinden alınmış sonraki öğe kümesini döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT Next(  
-   ULONG           celt,  
-   IDebugModule2** rgelt,  
-   ULONG*          pceltFetched  
-);  
-```  
-  
-```csharp  
-int Next(  
-   uint            celt,  
-   IDebugModule2[] rgelt,  
-   ref uint        pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `celt`  
- [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.  
-  
- `rgelt`  
- [out içinde] Dizi [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) doldurulacak öğeleri.  
-  
- `pceltFetched`  
- [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)   
- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
+Sabit listesinden alınmış sonraki öğe kümesini döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT Next(
+   ULONG           celt,
+   IDebugModule2** rgelt,
+   ULONG*          pceltFetched
+);
+```
+
+```csharp
+int Next(
+   uint            celt,
+   IDebugModule2[] rgelt,
+   ref uint        pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `celt`
+
+ [in] Alınacak öğelerin sayısı. Ayrıca en büyük boyutunu belirtir `rgelt` dizisi.
+
+ `rgelt`
+
+ [out içinde] Dizi [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) doldurulacak öğeleri.
+
+ `pceltFetched`
+
+ [out] Gerçekte döndürülen öğe sayısını döndürür `rgelt`.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` istenen öğelerin sayısından daha az döndürülebilen; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
+- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

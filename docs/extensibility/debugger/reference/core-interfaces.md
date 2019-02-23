@@ -1,7 +1,7 @@
 ---
 title: Çekirdek arabirimleri | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
@@ -10,133 +10,133 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981356"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702284"
 ---
 # <a name="core-interfaces"></a>Temel Arabirimler
-Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıdaki arabirimdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
+Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıdaki arabirimdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
 
-## <a name="discussion"></a>Tartışma  
- Bu arabirimler, öncelikli olarak hata ayıklama altyapısı (DE) oluşturmak için kullanılır. Bunlar, kategorilere göre buraya düzenlenmiştir:  
+## <a name="discussion"></a>Tartışma
+ Bu arabirimler, öncelikli olarak hata ayıklama altyapısı (DE) oluşturmak için kullanılır. Bunlar, kategorilere göre buraya düzenlenmiştir:
 
-- [Kesme Noktaları](#Breakpoints)  
+- [Kesme Noktaları](#Breakpoints)
 
-- [Bağlamlar](#Contexts)  
+- [Bağlamlar](#Contexts)
 
-- [Çekirdek sunucusu](#CoreServer)  
+- [Çekirdek sunucusu](#CoreServer)
 
-- [Hata ayıklama altyapıları](#DebugEngines)  
+- [Hata ayıklama altyapıları](#DebugEngines)
 
-- [Belgeler](#Documents)  
+- [Belgeler](#Documents)
 
-- [Olaylar](#Events)  
+- [Olaylar](#Events)
 
-- [İfadeler](#Expressions)  
+- [İfadeler](#Expressions)
 
-- [Bellek](#Memory)  
+- [Bellek](#Memory)
 
-- [Modüller](#Modules)  
+- [Modüller](#Modules)
 
-- [Bağlantı Noktaları](#Ports)  
+- [Bağlantı Noktaları](#Ports)
 
-- [İşlemler](#Processes)  
+- [İşlemler](#Processes)
 
-- [Programlar](#Programs)  
+- [Programlar](#Programs)
 
-- [Özellikler](#Properties)  
+- [Özellikler](#Properties)
 
-- [Yığın Çerçeveleri](#StackFrames)  
+- [Yığın Çerçeveleri](#StackFrames)
 
-- [İş Parçacıkları](#Threads)  
+- [İş Parçacıkları](#Threads)
 
-- [Tür Görselleştiricileri](#TypeVisualizers)  
+- [Tür Görselleştiricileri](#TypeVisualizers)
 
-  Arabirim uygulayabilir varlıkları şunlardır:  
+  Arabirim uygulayabilir varlıkları şunlardır:
 
-- Hata ayıklama altyapısı (DE)  
+- Hata ayıklama altyapısı (DE)
 
-- Bağlantı noktası sağlayıcısı (PS)  
+- Bağlantı noktası sağlayıcısı (PS)
 
-- İfade değerlendirici (EE)  
+- İfade değerlendirici (EE)
 
-- Visual Studio (VS)  
+- Visual Studio (VS)
 
-##  <a name="Breakpoints"></a> Kesme noktaları  
- Bu arabirimler ilgili uygulama ve kesme noktaları, izleme.  
+##  <a name="Breakpoints"></a> Kesme noktaları
+ Bu arabirimler ilgili uygulama ve kesme noktaları, izleme.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|Bir bellek konumuna bağlı bir kesme noktasını temsil eder.|  
-|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Bir kesme noktası bir bellek konumuna bağlı DE gönderilir.|  
-|[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)|VS|Bir kesme noktası istek için bir belge sağlama toplamı temsil eder.|  
-|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|Bir bellek konumuna bağlanacak bir kesme noktası başarısız olduğunda tarafından DE gönderilir.|  
-|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|Bir kesme noktasına ulaşıldığında tarafından DE gönderilir.|  
-|[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)|VS|Bir kesme noktası için bir isteğini temsil eder; bekleyen kesme noktası oluşturmak için kullanılan.|  
-|[IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)|VS|Bir kesme noktası için bir isteğini temsil eder; bekleyen kesme noktası oluşturmak için kullanılan.|  
-|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|DE|Bir kesme noktası bağlamak için kullanılan bilgileri temsil eder.|  
-|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|Bir bellek konumundan ilişkisiz bir kesme noktası tarafından DE gönderilir.|  
-|[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)|DE|Geçersiz bir kesme noktasını temsil eder (tarafından döndürülen `IDebugBreakpointErrorEvent2`).|  
-|[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)|DE|Geçersiz bir kesme noktası çözümleme bilgilerini temsil eder.|  
-|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|DE|Bir işlev bir kesme noktasının ayarlandığı bir konumu temsil eder.|  
-|[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)|DE|Bağlı olan bir kesme noktasını temsil eder; ilişkili bir kesme noktası oluşturmak için kullanılan.|  
-|[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Bir numaralandırma üzerinde bağlı kesme noktaları kümesini temsil eder.|  
-|[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Bir numaralandırma üzerinde bir bellek konumuna bağlanamadı kesme noktaları kümesinin temsil eder.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|Bir bellek konumuna bağlı bir kesme noktasını temsil eder.|
+|[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Bir kesme noktası bir bellek konumuna bağlı DE gönderilir.|
+|[IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)|VS|Bir kesme noktası istek için bir belge sağlama toplamı temsil eder.|
+|[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|DE|Bir bellek konumuna bağlanacak bir kesme noktası başarısız olduğunda tarafından DE gönderilir.|
+|[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)|DE|Bir kesme noktasına ulaşıldığında tarafından DE gönderilir.|
+|[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)|VS|Bir kesme noktası için bir isteğini temsil eder; bekleyen kesme noktası oluşturmak için kullanılan.|
+|[IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)|VS|Bir kesme noktası için bir isteğini temsil eder; bekleyen kesme noktası oluşturmak için kullanılan.|
+|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|DE|Bir kesme noktası bağlamak için kullanılan bilgileri temsil eder.|
+|[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|DE|Bir bellek konumundan ilişkisiz bir kesme noktası tarafından DE gönderilir.|
+|[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)|DE|Geçersiz bir kesme noktasını temsil eder (tarafından döndürülen `IDebugBreakpointErrorEvent2`).|
+|[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)|DE|Geçersiz bir kesme noktası çözümleme bilgilerini temsil eder.|
+|[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)|DE|Bir işlev bir kesme noktasının ayarlandığı bir konumu temsil eder.|
+|[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)|DE|Bağlı olan bir kesme noktasını temsil eder; ilişkili bir kesme noktası oluşturmak için kullanılan.|
+|[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Bir numaralandırma üzerinde bağlı kesme noktaları kümesini temsil eder.|
+|[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Bir numaralandırma üzerinde bir bellek konumuna bağlanamadı kesme noktaları kümesinin temsil eder.|
 
-##  <a name="Contexts"></a> Bağlamları  
- Bu arabirimler, çeşitli bağlamları içinde hata ayıklanan programa temsil eder.  
+##  <a name="Contexts"></a> Bağlamları
+ Bu arabirimler, çeşitli bağlamları içinde hata ayıklanan programa temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Bir kod yönergesi başlangıç konumunu temsil eder.|  
-|[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Genişletir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) modülü ve işlem arabirimleri alınmasını etkinleştirmek için arabirim.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Belgede bir konumu temsil eder.|  
-|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Bir ifade değerlendirme bağlamı temsil eder.|  
-|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Bayt koleksiyonu bellekteki başlangıç konumu temsil eder.|  
-|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Bir yığın çerçevesi bağlamında bir kesme noktası veya özel durumu temsil eder.|  
-|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Bir yığın çerçevesi bağlamında bir kesme noktası veya özel durumu temsil eder.|  
-|[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Bir numaralandırma üzerinde kod bağlamları kümesini temsil eder.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Bir kod yönergesi başlangıç konumunu temsil eder.|
+|[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Genişletir [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) modülü ve işlem arabirimleri alınmasını etkinleştirmek için arabirim.|
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Belgede bir konumu temsil eder.|
+|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Bir ifade değerlendirme bağlamı temsil eder.|
+|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Bayt koleksiyonu bellekteki başlangıç konumu temsil eder.|
+|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Bir yığın çerçevesi bağlamında bir kesme noktası veya özel durumu temsil eder.|
+|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Bir yığın çerçevesi bağlamında bir kesme noktası veya özel durumu temsil eder.|
+|[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Bir numaralandırma üzerinde kod bağlamları kümesini temsil eder.|
 
-##  <a name="CoreServer"></a> Çekirdek sunucusu  
- Bu arabirimler, bir program ayıklanmakta olan makine temsil eder. Bunlar tarafından uygulanan [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ancak içine hata ayıklama motoru tarafından çağrılabilir.  
+##  <a name="CoreServer"></a> Çekirdek sunucusu
+ Bu arabirimler, bir program ayıklanmakta olan makine temsil eder. Bunlar tarafından uygulanan [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ancak içine hata ayıklama motoru tarafından çağrılabilir.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bilgisayar hakkında bilgilerin yanı sıra bağlantı noktaları ve bağlantı noktası sağlayıcıları erişim sağlar.|  
-|[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Temsil eden bir [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) uzaktan hata ayıklamayı destekler.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bilgisayar hakkında bilgilerin yanı sıra bağlantı noktaları ve bağlantı noktası sağlayıcıları erişim sağlar.|
+|[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Temsil eden bir [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) uzaktan hata ayıklamayı destekler.|
 
-##  <a name="DebugEngines"></a> Hata ayıklama altyapıları  
- Bu arabirimler, hata ayıklama altyapısı ve ilişkili olayları temsil eder.  
+##  <a name="DebugEngines"></a> Hata ayıklama altyapıları
+ Bu arabirimler, hata ayıklama altyapısı ve ilişkili olayları temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|Özel hata ayıklama altyapısını temsil eder.|  
-|[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Semboller JustMyCode ve özel durumlar yüklenmesini destekleyen bir özel hata ayıklama altyapısını temsil eder.|  
-|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Hata ayıklama görevlerini işlemek hazır olduğunu belirten DE her yeni örneği tarafından gönderilir.|  
-|[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|Başlatma programlar destekleyen bir özel hata ayıklama altyapısını temsil eder.|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Birden çok hata ayıklama motorlarını işleyen bir program düğümünü temsil eder.|  
-|[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|SDM bir arabirimi iş parçacığı, program veya yığın çerçevesi için hata ayıklama altyapısı elde etmek bir yol sağlar.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|Özel hata ayıklama altyapısını temsil eder.|
+|[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Semboller JustMyCode ve özel durumlar yüklenmesini destekleyen bir özel hata ayıklama altyapısını temsil eder.|
+|[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Hata ayıklama görevlerini işlemek hazır olduğunu belirten DE her yeni örneği tarafından gönderilir.|
+|[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|Başlatma programlar destekleyen bir özel hata ayıklama altyapısını temsil eder.|
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Birden çok hata ayıklama motorlarını işleyen bir program düğümünü temsil eder.|
+|[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|SDM bir arabirimi iş parçacığı, program veya yığın çerçevesi için hata ayıklama altyapısı elde etmek bir yol sağlar.|
 
-##  <a name="Documents"></a> Belgeleri  
- Bu arabirimler, belgeleri (kaynak dosyaları) ve onların ilişkilendirilmiş öğelerini temsil eder.  
+##  <a name="Documents"></a> Belgeleri
+ Bu arabirimler, belgeleri (kaynak dosyaları) ve onların ilişkilendirilmiş öğelerini temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Açılması için bir belge için DE tarafından gönderilir.|  
-|[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Bir belgeden ayrıştırılmış yönergelerin akışını temsil eder.|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|Bir ad ve bir sınıf kimliği (CLSID) belirterek DE tarafından sağlanan bir belgeyi temsil eder.|  
-|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Hata ayıklama belge için bir sağlama toplamı temsil eder ve bileşenleri arasında sağlama toplamı geçirme sağlar.|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Belirli bir deyimi ve kod içerik karşılık gelen bir belge içindeki bir konuma bir belge bağlamını temsil eder.|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|Bir belge içindeki genel bir konumu temsil eder.|  
-|[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Bir karakter uzaklığı olarak kaynak dosyada bir konumu temsil eder.|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|DE tarafından sağlanan bir metin belgesi temsil eder (türetilen [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), gerçek metni belirtin.|  
-|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Bellekte bir kaynak dosya değişiklikleri belirlemek için DE tarafından gönderilir.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Açılması için bir belge için DE tarafından gönderilir.|
+|[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Bir belgeden ayrıştırılmış yönergelerin akışını temsil eder.|
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|Bir ad ve bir sınıf kimliği (CLSID) belirterek DE tarafından sağlanan bir belgeyi temsil eder.|
+|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Hata ayıklama belge için bir sağlama toplamı temsil eder ve bileşenleri arasında sağlama toplamı geçirme sağlar.|
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Belirli bir deyimi ve kod içerik karşılık gelen bir belge içindeki bir konuma bir belge bağlamını temsil eder.|
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|Bir belge içindeki genel bir konumu temsil eder.|
+|[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Bir karakter uzaklığı olarak kaynak dosyada bir konumu temsil eder.|
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|DE tarafından sağlanan bir metin belgesi temsil eder (türetilen [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), gerçek metni belirtin.|
+|[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Bellekte bir kaynak dosya değişiklikleri belirlemek için DE tarafından gönderilir.|
 
-##  <a name="Events"></a> Olayları  
- Bu arabirimler DE oturum hata ayıklama Yöneticisi (SDM) arasında gönderilen tüm olayları temsil eder.  
+##  <a name="Events"></a> Olayları
+ Bu arabirimler DE oturum hata ayıklama Yöneticisi (SDM) arasında gönderilen tüm olayları temsil eder.
 
 
 | Arabirim | Uygulayan | Açıklama |
@@ -181,36 +181,36 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 | [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) | DE | Bir iş parçacığı kaldırıldığında tarafından DE gönderilir. |
 | [IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md) | DE | Bir iş parçacığı adı değiştiğinde tarafından DE gönderilir. |
 
-##  <a name="Expressions"></a> İfadeleri  
- Bu arabirimler, belirli bir bağlamda değerlendirilecek ifade temsil eder.  
+##  <a name="Expressions"></a> İfadeleri
+ Bu arabirimler, belirli bir bağlamda değerlendirilecek ifade temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Değerlendirilecek bir ifade temsil eder. Alınan [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) arabirimi.|  
-|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Bir ifadenin değerlendirilme bir bağlamı temsil eder. Alınan [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) arabirimi.|  
-|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Zaman uyumsuz bir ifade değerlendirme işlemi tamamlandıktan sonra tarafından DE gönderilir.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Değerlendirilecek bir ifade temsil eder. Alınan [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) arabirimi.|
+|[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Bir ifadenin değerlendirilme bir bağlamı temsil eder. Alınan [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) arabirimi.|
+|[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Zaman uyumsuz bir ifade değerlendirme işlemi tamamlandıktan sonra tarafından DE gönderilir.|
 
-##  <a name="Memory"></a> Bellek  
- Bu arabirimler, bellek bayt dizilerini temsil eder.  
+##  <a name="Memory"></a> Bellek
+ Bu arabirimler, bellek bayt dizilerini temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Okunan veya yazılan bellek bayt dizisini temsil eder.|  
-|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Bir dizinin bellekte bir konuma bayt temsil eder.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Okunan veya yazılan bellek bayt dizisini temsil eder.|
+|[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Bir dizinin bellekte bir konuma bayt temsil eder.|
 
-##  <a name="Modules"></a> Modüller  
- Bu arabirimleri temsil eden bir yürütülebilir dosyaya karşılık gelen bir modül veya. DLL dosyası.  
+##  <a name="Modules"></a> Modüller
+ Bu arabirimleri temsil eden bir yürütülebilir dosyaya karşılık gelen bir modül veya. DLL dosyası.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|Tek bir yürütülebilir dosya veya DLL temsil eder.|  
-|[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|Temsil eden bir [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , simgeleri destekler.|  
-|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Bir modül yüklendiğinde veya kaldırıldı DE gönderilir.|  
-|[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|PDB dosyasında yer alan kaynak sunucu bilgileri temsil eder.|  
-|[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Bir numaralandırma tarafından bilinen modülleri kümesi üzerinden temsil eder bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|Tek bir yürütülebilir dosya veya DLL temsil eder.|
+|[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|Temsil eden bir [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , simgeleri destekler.|
+|[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|DE|Bir modül yüklendiğinde veya kaldırıldı DE gönderilir.|
+|[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|PDB dosyasında yer alan kaynak sunucu bilgileri temsil eder.|
+|[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Bir numaralandırma tarafından bilinen modülleri kümesi üzerinden temsil eder bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|
 
-##  <a name="Ports"></a> Bağlantı noktaları  
- Bu arabirimler, bağlantı noktası ve bağlantı noktası sağlayıcıları temsil eder.  
+##  <a name="Ports"></a> Bağlantı noktaları
+ Bu arabirimler, bağlantı noktası ve bağlantı noktası sağlayıcıları temsil eder.
 
 
 | Arabirim | Uygulayan | Açıklama |
@@ -230,81 +230,81 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 | [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | Bir numaralandırma, bir dizi bağlantı noktası temsil eder. |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | Bir numaralandırma üzerinde bağlantı noktası sağlayıcıları kümesini temsil eder. |
 
-##  <a name="Processes"></a> İşlemler  
- Bu arabirimler, işlemler, bir veya daha fazla programları içeren tek bir yürütülebilir dosyayı temsil eder.  
+##  <a name="Processes"></a> İşlemler
+ Bu arabirimler, işlemler, bir veya daha fazla programları içeren tek bir yürütülebilir dosyayı temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Bir bilgisayar üzerinde çalışan bir işlemi temsil eder.|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Etkin bir şekilde destekleyen bir işlemi temsil eden hata ayıklama (adım değiştirmek için kullanılan, devam etmek ve üzerinde bir yöntem yürütülemez [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi).|  
-|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Bir işlem oluşturulmamış DE veya bağlantı noktası tarafından gönderilir.|  
-|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Bir işlem kaldırıldığında DE veya bağlantı noktası tarafından gönderilen.|  
-|[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Oturum bağlı izleyen bir işlemi temsil eder.|  
-|[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Numaralandırması bir bağlantı noktası üzerinde işlemler kümesini temsil eder.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Bir bilgisayar üzerinde çalışan bir işlemi temsil eder.|
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Etkin bir şekilde destekleyen bir işlemi temsil eden hata ayıklama (adım değiştirmek için kullanılan, devam etmek ve üzerinde bir yöntem yürütülemez [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) arabirimi).|
+|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Bir işlem oluşturulmamış DE veya bağlantı noktası tarafından gönderilir.|
+|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Bir işlem kaldırıldığında DE veya bağlantı noktası tarafından gönderilen.|
+|[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Oturum bağlı izleyen bir işlemi temsil eder.|
+|[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Numaralandırması bir bağlantı noktası üzerinde işlemler kümesini temsil eder.|
 
-##  <a name="Programs"></a> Programlar  
- Bu arabirimler, programları yürütme mutlaka bir fiziksel yürütülebilir veya modül benzemez mantıksal birimleri temsil eder.  
+##  <a name="Programs"></a> Programlar
+ Bu arabirimler, programları yürütme mutlaka bir fiziksel yürütülebilir veya modül benzemez mantıksal birimleri temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Temsil eden bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , aynı anda hataları ayıklanan diğer programları ile birlikte çalışması gerekir.|  
-|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|Bir mantıksal birim yürütme temsil eder.|  
-|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Bir program oluştururken DE veya bağlantı noktası tarafından gönderilen.|  
-|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Bir program kaldırıldığında DE veya bağlantı noktası tarafından gönderilen.|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Temsil eden bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) birden çok hata ayıklama motoru tarafından işlenebilir.|  
-|[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|Temsil eden bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) getirilmesi gereken oturum bağlı izleyebilirsiniz.|  
-|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE, PS|Temsil eden bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , içinde çalıştığı işlemi hakkındaki bilgileri döndürebilir.|  
-|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE, PS|Hata ayıklaması yapılabilir bir program temsil eder.|  
-|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE, PS|Bir programı ilişkili programa ekleme girişimi bildirilmesini düğüme sağlar.|  
-|[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|SDM bir DE bu DE tarafından denetlenen programlar hakkında sorgulamak bir yol sağlar.|  
-|[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|Programları ayıklanmakta göstermek için ilgili SDM kaydetmek için DEs tarafından kullanılır.|  
-|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Temsil eden bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , sıralama arabirimleri iş parçacığı veya işlem sınırları boyunca.|  
-|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Bir dizi program numaralandırması temsil eder.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Temsil eden bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , aynı anda hataları ayıklanan diğer programları ile birlikte çalışması gerekir.|
+|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|Bir mantıksal birim yürütme temsil eder.|
+|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Bir program oluştururken DE veya bağlantı noktası tarafından gönderilen.|
+|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Bir program kaldırıldığında DE veya bağlantı noktası tarafından gönderilen.|
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Temsil eden bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) birden çok hata ayıklama motoru tarafından işlenebilir.|
+|[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|Temsil eden bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) getirilmesi gereken oturum bağlı izleyebilirsiniz.|
+|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE, PS|Temsil eden bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , içinde çalıştığı işlemi hakkındaki bilgileri döndürebilir.|
+|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE, PS|Hata ayıklaması yapılabilir bir program temsil eder.|
+|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE, PS|Bir programı ilişkili programa ekleme girişimi bildirilmesini düğüme sağlar.|
+|[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|SDM bir DE bu DE tarafından denetlenen programlar hakkında sorgulamak bir yol sağlar.|
+|[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|Programları ayıklanmakta göstermek için ilgili SDM kaydetmek için DEs tarafından kullanılır.|
+|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Temsil eden bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , sıralama arabirimleri iş parçacığı veya işlem sınırları boyunca.|
+|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Bir dizi program numaralandırması temsil eder.|
 
-##  <a name="Properties"></a> Özellikleri  
- Bu arabirimler, özellikleri, genellikle bir ifade değerlendirme sonucu gibi belirli bir bağlam ile ilişkili bir değeri temsil eder.  
+##  <a name="Properties"></a> Özellikleri
+ Bu arabirimler, özellikleri, genellikle bir ifade değerlendirme sonucu gibi belirli bir bağlam ile ilişkili bir değeri temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Temsil eden bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , görüntüleyebilir, değeri özel bir biçimde.|  
-|[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Bir yığın çerçevesi, belge veya bir ifade değerlendirme sonucu bir değeri temsil eder.|  
-|[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)|DE|Temsil eden bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , rasgele uzun dizeler destekler.|  
-|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Yeni bir özellik DE tarafından gönderilen (tarafından temsil edilen [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) arabirimi) oluşturuldu.|  
-|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|Bir özelliği kaldırıldığında tarafından DE gönderilir.|  
-|[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)|DE|Herhangi belirli bir yığın çerçevesi dışında bulunabilir bir özelliğe başvuruyu temsil eder.|  
-|[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılar değişkenleri, kayıtları, parametreleri ve ifadeler açıklanmaktadır.|  
-|[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapıları.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Temsil eden bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , görüntüleyebilir, değeri özel bir biçimde.|
+|[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Bir yığın çerçevesi, belge veya bir ifade değerlendirme sonucu bir değeri temsil eder.|
+|[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)|DE|Temsil eden bir [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , rasgele uzun dizeler destekler.|
+|[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Yeni bir özellik DE tarafından gönderilen (tarafından temsil edilen [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) arabirimi) oluşturuldu.|
+|[IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|DE|Bir özelliği kaldırıldığında tarafından DE gönderilir.|
+|[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)|DE|Herhangi belirli bir yığın çerçevesi dışında bulunabilir bir özelliğe başvuruyu temsil eder.|
+|[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılar değişkenleri, kayıtları, parametreleri ve ifadeler açıklanmaktadır.|
+|[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapıları.|
 
-##  <a name="StackFrames"></a> Yığın çerçeveleri  
- Bu arabirimleri temsil eden bir yığın çerçevesi bir bağlam içinde bir kesme noktası veya özel durum oluştu.  
+##  <a name="StackFrames"></a> Yığın çerçeveleri
+ Bu arabirimleri temsil eden bir yığın çerçevesi bir bağlam içinde bir kesme noktası veya özel durum oluştu.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Bir bağlamı temsil eder, bir kesme noktası veya özel durum oluştu.|  
-|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Temsil eden bir [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , işleyebileceği özel durum kesildi.|  
-|[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) belirttiğiniz işlev yapıların belirli bir yığın çerçevesini ulaşmak için kullanılan dizisi çağırın.|  
-|[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) yığın çerçevelerini açıklayan yapılar.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Bir bağlamı temsil eder, bir kesme noktası veya özel durum oluştu.|
+|[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Temsil eden bir [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , işleyebileceği özel durum kesildi.|
+|[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) belirttiğiniz işlev yapıların belirli bir yığın çerçevesini ulaşmak için kullanılan dizisi çağırın.|
+|[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) yığın çerçevelerini açıklayan yapılar.|
 
-##  <a name="Threads"></a> İş parçacıkları  
- Bu arabirimler, iş parçacıkları ve ilişkili olayları temsil eder.  
+##  <a name="Threads"></a> İş parçacıkları
+ Bu arabirimler, iş parçacıkları ve ilişkili olayları temsil eder.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|Yürütme iş parçacığı temsil eder.|  
-|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Bir iş parçacığı oluşturulduğunda tarafından DE gönderilir.|  
-|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Bir iş parçacığı kaldırıldığında tarafından DE gönderilir.|  
-|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Bir iş parçacığı adı değiştiğinde tarafından DE gönderilir.|  
-|[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Bir numaralandırma üzerinde iş parçacıkları kümesini temsil eder.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|Yürütme iş parçacığı temsil eder.|
+|[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Bir iş parçacığı oluşturulduğunda tarafından DE gönderilir.|
+|[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Bir iş parçacığı kaldırıldığında tarafından DE gönderilir.|
+|[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Bir iş parçacığı adı değiştiğinde tarafından DE gönderilir.|
+|[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Bir numaralandırma üzerinde iş parçacıkları kümesini temsil eder.|
 
-##  <a name="TypeVisualizers"></a> Tür Görselleştiricileri  
- Bu arabirimler tür görselleştiricileri için destek sağlar. Bu arabirimler genellikle bir ifade değerlendiricisi tarafından uygulanır.  
+##  <a name="TypeVisualizers"></a> Tür Görselleştiricileri
+ Bu arabirimler tür görselleştiricileri için destek sağlar. Bu arabirimler genellikle bir ifade değerlendiricisi tarafından uygulanır.
 
-|Arabirim|Uygulayan|Açıklama|  
-|---------------|--------------------|-----------------|  
-|[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|Bir tür görselleştiricisi için sunulacak bayt dizisini temsil eder.|  
-|[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Bir tür görselleştiricisi için geçirilecek verilere erişim almak için yöntemler sağlar.|  
-|[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Erişim sağlayan bir özellik temsil eden [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) uygulamaları.|  
+|Arabirim|Uygulayan|Açıklama|
+|---------------|--------------------|-----------------|
+|[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|Bir tür görselleştiricisi için sunulacak bayt dizisini temsil eder.|
+|[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Bir tür görselleştiricisi için geçirilecek verilere erişim almak için yöntemler sağlar.|
+|[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Erişim sağlayan bir özellik temsil eden [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) uygulamaları.|
 
-## <a name="see-also"></a>Ayrıca Bkz.  
- [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
- [Özel Hata Ayıklama Altyapısı Oluşturma](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+- [API Başvurusu](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+- [Özel Hata Ayıklama Altyapısı Oluşturma](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920606"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708647"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# üretkenlik Kılavuzu
 
@@ -92,6 +92,8 @@ Visual Studio 2017 ile çok sayıda yeniden düzenleme, kod oluşturma eylemleri
   - *Null denetimi Ekle*
   - *Parametre Ekle*
   - *Gereksiz kullanımları Kaldır*
+  - *Foreach döngüsü LINQ sorgusu veya LINQ yöntemi*
+  - *İletişim seçenekleri ile yeniden düzenleme yukarı üyeleri çekme*
   - Daha fazla bilgi Bkz bizim [belgeleri](https://aka.ms/refactorings)
 - Kendi yeniden düzenleme ya da kod düzeltme yazma [Roslyn Çözümleyicileri](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Çeşitli topluluk üyeleri, ek kod incelemeleri ekleyen ücretsiz uzantıya yazmış:
@@ -108,7 +110,7 @@ Visual Studio 2017'yi arayın ve kod temelinizde gidin yardımcı olmak üzere b
 
 | Özellik | Kısayol | Ayrıntılar/geliştirmeleri |
 |- | - | -|
-| Tüm Başvuruları Bul | **Shift**+**F12**| Sonuçları renklendirilmiş ve gruplandırılabilir proje, tanımı, vs. Ayrıca 'sonuçları kilitleyebilir'. |
+| Tüm Başvuruları Bul | **Shift**+**F12**| Sonuçları renklendirilmiş ve tanım ve başvuru okuma gibi yazın veya yazma projeye göre gruplandırılabilir. Ayrıca 'sonuçları kilitleyebilir'. |
 | Uygulamaya Git | **CTRL**+**F12** | Tanıma Git kullanabileceğiniz `override` için geçersiz kılınan üyesiyle gitmek için anahtar sözcüğü |
 | Tanıma Git | **F12** veya **Ctrl**+**tıklayın**| Basılı tutabilirsiniz **Ctrl** navgiate tanımına için tıklatırken |
 | Tanıma göz at | **Alt**+**F12** | Satır içi görünüm tanımı |

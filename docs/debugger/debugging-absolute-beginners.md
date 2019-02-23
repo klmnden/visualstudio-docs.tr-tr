@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917e9927e6eb8771ea911ee938d9226ecb2eadff
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 8fb0b713df5658fa245fb49a537cde16accce41c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484231"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713158"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -101,7 +101,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +112,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +124,33 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +188,8 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
     Uygulama başlatılır ve bize hata ayıklayıcı tarafından gösterilen özel durum vardır. Ancak, çıktıyı konsol penceresinde beklediğiniz olabilir. Beklenen çıktı aşağıdaki gibidir:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +199,8 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
     Ancak, bunun yerine görürüz:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +217,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Kesme noktası ayarlarsanız, kırmızı bir nokta sol kenar boşluğunda görünür.
@@ -247,13 +247,13 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 1. Bulduğunuz galaxy türü ayarlamakla ilgili kodunuzu aramak, `GalaxyType` özelliği `Galaxy` sınıfı olarak belirtilen `object` yerine `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Yukarıdaki kod şuna değiştirin:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Tıklayın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğu düğmesini (**Ctrl** + **kaydırma**   +  **F5**) kodu yeniden derlemeniz ve yeniden başlatın.
@@ -265,8 +265,8 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
     Uygulama çalışır ve çıktıyı görüntüler. Artık oldukça iyi görünüyor, ancak bir şey dikkat edin. Konsol çıkışında düzensiz bir galaxy olarak görünmesi küçük Magellanic bulut galaxy bekleniyordu ancak hiç galaxy tür gösterir.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +283,7 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 
 1. Tıklayın **yeniden** ![yeniden uygulama](../debugger/media/dbg-tour-restart.png "RestartApp") hata ayıklama araç çubuğu düğmesini (**Ctrl** + **kaydırma**   +  **F5**) yeniden başlatmak için.
 
-    Hata ayıklayıcı, Kesme noktasının ayarlandığı kod satırında duraklatır.  
+    Hata ayıklayıcı, Kesme noktasının ayarlandığı kod satırında duraklatır.
 
 1. Üzerine `type` değişkeni. Değerini gördüğünüz `S` (karakter kodunu izleyerek). Değerini ilgilendiğiniz `I`, düzensiz galaxy türü olduğunu bildiğiniz.
 
@@ -323,7 +323,7 @@ Bölge kodu ile sorun bulduğunuzda araştırmak için hata ayıklayıcı'yı ku
 * Uygulamanızın beklediğiniz kodu yürüten olup olmadığını denetleyin. (Örneğin, örnek uygulamada, galaxy türü düzensiz için ayarlanacak switch deyimi için kod bekliyorduk, ancak uygulama kodu yazım hatası nedeniyle atlandı.)
 
 > [!TIP]
-> Bir hata ayıklayıcısı, hataları bulmanıza yardımcı olması için kullanın. Hata ayıklama aracı hataları bulabilirsiniz *sizin için* yalnızca kodunuzun amacı biliyorsa. Bu amacı, geliştirici olarak size express, bir aracı yalnızca, kodun amacı bilemez. Yazma [birim testleri](../test/improve-code-quality.md) bunu nasıl olduğu. 
+> Bir hata ayıklayıcısı, hataları bulmanıza yardımcı olması için kullanın. Hata ayıklama aracı hataları bulabilirsiniz *sizin için* yalnızca kodunuzun amacı biliyorsa. Bu amacı, geliştirici olarak size express, bir aracı yalnızca, kodun amacı bilemez. Yazma [birim testleri](../test/improve-code-quality.md) bunu nasıl olduğu.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

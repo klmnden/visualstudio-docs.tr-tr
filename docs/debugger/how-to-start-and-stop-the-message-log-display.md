@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c0f3d2cda787d751f45ae2da9344b62f89ac50c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c1ba10dbdb9227c6631048f083ee1857dfc3091d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025468"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712417"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Nasıl yapılır: İleti günlüğü görüntülemeyi Durdur ve Başlat
-Olduğunda bir [iletiler görünümünü](../debugger/messages-view.md) penceresi, etkin bir **günlüğü Başlat** veya **Günlüğü Durdur** seçim görünür Spy ++ hakkında **iletileri** menüsünde ve karşılık gelen **günlüğü Başlat** veya **Günlüğü Durdur** araç çubuğu düğmesi etkin hale gelir.  
-  
-### <a name="to-start-the-message-log-display"></a>İleti günlüğü görüntülemeyi başlatmak için  
-  
-1.  Gelen **iletileri** menüsünde seçin **günlüğü Başlat**.  
-  
-### <a name="to-stop-the-message-log-display"></a>İleti günlüğü görüntülemeyi durdurmak için  
-  
+Olduğunda bir [iletiler görünümünü](../debugger/messages-view.md) penceresi, etkin bir **günlüğü Başlat** veya **Günlüğü Durdur** seçim görünür Spy ++ hakkında **iletileri** menüsünde ve karşılık gelen **günlüğü Başlat** veya **Günlüğü Durdur** araç çubuğu düğmesi etkin hale gelir.
+
+### <a name="to-start-the-message-log-display"></a>İleti günlüğü görüntülemeyi başlatmak için
+
+1.  Gelen **iletileri** menüsünde seçin **günlüğü Başlat**.
+
+### <a name="to-stop-the-message-log-display"></a>İleti günlüğü görüntülemeyi durdurmak için
+
 1.  Gelen **iletileri** menüsünde seçin **Günlüğü Durdur**.

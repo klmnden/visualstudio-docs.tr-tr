@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155363"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718563"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Kodu Visual Studio'da projeler veya çözümler olmadan geliştirme
 
-Visual Studio 2017'de, kod neredeyse tüm dizin tabanlı proje türünden Visual Studio'ya bir çözüm veya proje dosyası gerek kalmadan açabilirsiniz. Bu,, örneğin, github'da bir depoyu kopyaladığınızda, doğrudan Visual Studio'da oturum açın ve bir çözüm veya projeyi oluşturmak zorunda kalmadan geliştirmeye başlamak anlamına gelir. Gerekirse, özel derleme görevleri belirtin ve basit JSON dosyalarıyla parametreleri başlatın.
+Bir çözüm veya proje dosyası gerek kalmadan yararlı Visual Studio'ya neredeyse tüm dizin tabanlı proje türünden kod açabilirsiniz. Bu,, örneğin, github'da bir depoyu kopyaladığınızda, doğrudan Visual Studio'da oturum açın ve bir çözüm veya projeyi oluşturmak zorunda kalmadan geliştirmeye başlamak anlamına gelir. Gerekirse, özel derleme görevleri belirtin ve basit JSON dosyalarıyla parametreleri başlatın.
 
 Visual Studio'da kod dosyalarınızı açtıktan sonra **Çözüm Gezgini** klasöründe tüm dosyaları görüntüler. Düzenlemeye başlamak için herhangi bir dosyaya tıklayabilirsiniz. Arka planda, dosyaları, IntelliSense, gezinti ve yeniden düzenleme özellikleri etkinleştirmek için Visual Studio başlatılır. Düzenleme, oluşturma, taşıma veya dosyaları silmek gibi Visual Studio değişiklikleri otomatik olarak izler ve IntelliSense dizinini sürekli olarak güncelleştirir. Kod söz dizimi renklendirme ve çoğu durumda, görünür temel IntelliSense deyim tamamlamada içerir.
 
@@ -29,9 +29,19 @@ Visual Studio'da kod dosyalarınızı açtıktan sonra **Çözüm Gezgini** klas
 Kod aşağıdaki yollardan biriyle bir Visual Studio'da oturum açabilirsiniz:
 
 - Visual Studio menü çubuğunda **dosya** > **açık** > **klasör**ve ardından kodu konumuna göz atın.
+
 - Kodu içeren bir klasör (sağ tıklama) bağlam menüsünden **Visual Studio'da Aç** komutu.
+
+::: moniker range="vs-2017"
 - Seçin **Klasör Aç** bağlantı Visual Studio **başlangıç sayfası**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Seçin **Klasör Aç** başlangıç penceresinde bağlantı.
+::: moniker-end
+
 - Klavye kullanıcısıysanız basın **Ctrl**+**Shift**+**Alt**+**O** görselde Studio.
+
 - Kod, klonlanan bir GitHub deposundan açın.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Kopyalanan bir GitHub deposundan kodunu açmak için

@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317763"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703246"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Başlangıç sayfasına kullanıcı denetimi Ekle
+
 Bu izlenecek yol, özel bir başlangıç sayfası için bir DLL başvurusu ekleme işlemi gösterilmektedir. Örnek bir kullanıcı denetimi çözüme ekler, kullanıcı denetimi oluşturur ve ardından derlemesi başlangıç sayfasından başvuran *.xaml* dosya. Yeni bir sekmede temel bir Web tarayıcısı olarak işlevler kullanıcı denetimi barındırır.
 
 Aynı işlem öğesinden çağrılması herhangi bir derleme eklemek için kullanabileceğiniz bir *.xaml* dosya.
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>Çözüme bir WPF kullanıcı denetimi Ekle
+
 İlk olarak, bir Windows Presentation Foundation (WPF) kullanıcı denetimi başlangıç sayfası çözüme ekleyin.
 
 1. Kullanarak başlangıç sayfası oluşturma oluşturduğumuz [özel bir başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).
@@ -36,6 +39,7 @@ Aynı işlem öğesinden çağrılması herhangi bir derleme eklemek için kulla
 4. Denetim adı `WebUserControl` ve ardından **Tamam**.
 
 ## <a name="implement-the-user-control"></a>Kullanıcı denetimi uygulayın
+
 WPF kullanıcı denetimi uygulamak için XAML kullanıcı arabiriminde (UI) oluşturma ve arka plan kod olayları C# veya başka bir .NET dil yazın.
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>XAML için kullanıcı denetimi yazmak için
@@ -132,7 +136,8 @@ WPF kullanıcı denetimi uygulamak için XAML kullanıcı arabiriminde (UI) olu�
 4. Çözümü oluşturun.
 
 ## <a name="add-the-user-control-to-the-start-page"></a>Başlangıç sayfasına kullanıcı denetimi Ekle
- Bu denetim başlangıç sayfası proje dosyasında başlangıç sayfası projenin kullanılabilir hale getirmek için yeni denetim kitaplığına bir başvuru ekleyin. Ardından, başlangıç sayfası XAML biçimlendirme denetimi ekleyebilirsiniz.
+
+Bu denetim başlangıç sayfası proje dosyasında başlangıç sayfası projenin kullanılabilir hale getirmek için yeni denetim kitaplığına bir başvuru ekleyin. Ardından, başlangıç sayfası XAML biçimlendirme denetimi ekleyebilirsiniz.
 
 1. İçinde **Çözüm Gezgini**, başlangıç sayfası projeye sağ **başvuruları** ve ardından **Başvuru Ekle**.
 
@@ -185,5 +190,6 @@ WPF kullanıcı denetimi uygulamak için XAML kullanıcı arabiriminde (UI) olu�
     Özel başlangıç sayfanızı görüntülenmesi gerekir. Dosyaları değiştirmek istiyorsanız, size gerekir deneysel örneği kapatın, değişiklik, kopyalayın ve değiştirilen dosyaları yapıştırın ve ardından değişiklikleri görüntülemek için deneysel örneğinde yeniden açın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-[WPF kapsayıcı denetimleri](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [WPF kapsayıcı denetimleri](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [İzlenecek yol: Başlangıç sayfasına özel XAML ekleme](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

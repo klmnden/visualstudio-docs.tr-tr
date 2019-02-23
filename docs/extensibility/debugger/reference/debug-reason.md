@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318608"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707269"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Hata ayıklama için işlem neden başlatıldı belirtir.
@@ -46,20 +46,15 @@ public enum enum_DEBUG_REASON {
 ```
 
 #### <a name="parameters"></a>Parametreler
-DEBUG_REASON_ERROR  
-Belirli olmayan bir hata oluştu (yok, diğer uygun neden olduğunda bu bir varsayılan koşul olarak kullanılır).
+DEBUG_REASON_ERROR bir özel olmayan bir hata oluştu (yok, diğer uygun neden olduğunda bu bir varsayılan koşul olarak kullanılır).
 
-DEBUG_REASON_USER_LAUNCHED  
-İşlem, kullanıcının isteğiyle başlatıldı.
+Kullanıcının talebi üzerine DEBUG_REASON_USER_LAUNCHED işlemi başlatıldı.
 
-DEBUG_REASON_USER_ATTACHED  
-Zaten çalışan işlemi kullanıcı tarafından eklendi.
+DEBUG_REASON_USER_ATTACHED zaten çalışan işlemi kullanıcı tarafından eklendi.
 
-DEBUG_REASON_AUTO_ATTACHED  
-Başlatıldığında işlemi otomatik olarak depolamaya bağlanmıştır.
+DEBUG_REASON_AUTO_ATTACHED işlemi başlatıldığında tarafından otomatik olarak depolamaya bağlanmıştır.
 
-DEBUG_REASON_CAUSALITY  
-İşlem şu nedenle başlatıldı bir *Just-ın-Time* (JIT) hata ayıklama olay.
+İşlem şu nedenle başlatıldı DEBUG_REASON_CAUSALITY bir *Just-ın-Time* (JIT) hata ayıklama olay.
 
 ## <a name="remarks"></a>Açıklamalar
 Öğesinden döndürülen [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) yöntemi.
@@ -72,5 +67,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948816"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716512"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>4. Adım: Hata ayıklayıcıda kod çalıştırma
 
@@ -47,12 +47,9 @@ Ek projeleri bir zengin düzenleme deneyimi, sağlama, yönetme ve **etkileşiml
 1. Kodun tuşlarına basarak düzgün çalıştığını onay **F5** veya seçerek **hata ayıklama** > **hata ayıklamayı Başlat** menü komutu. Bu komut, hata ayıklayıcıda kod çalışır ancak program çalışırken duraklatmak için herhangi bir şey yapmadınız olduğundan, birkaç yineleme için wave desen yalnızca yazdırır. Çıkış penceresini kapatmak için herhangi bir tuşa basın.
 
     > [!Tip]
-    > Program tamamlandığında, çıkış penceresi otomatik olarak kapatmak için değiştirin `main()` aşağıdaki kod ile çağırın:
+    > Program tamamlandığında, çıkış penceresi otomatik olarak kapatmak için seçin **Araçları** > **seçenekleri** menü komutu, genişletme **Python** düğümünü seçin **Hata ayıklama**ve ardından seçeneğini kaldırın. **işlem normal şekilde çıktığında girişini bekleme**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Python normal program çıkış penceresini kapatmak için hata ayıklama seçeneği Çık](media/vs-getting-started-python-22-debugging5.png)
 
 1. Bir kesme noktası ayarlamak `for` tıklayarak kez gri kenar boşluğunda, çizgi veya bu satırda düzeltme işareti yerleştirmek ve kullanarak deyimi **hata ayıklama** > **iki durumlu kesme noktası** (komutu **F9**). Kesme noktası (aşağı ok tarafından belirtildiği gibi) belirtmek için gri kenar kırmızı bir nokta belirir:
 

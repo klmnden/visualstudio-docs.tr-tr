@@ -20,26 +20,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: aeb64c445acc0881ce808f9261c42f5205c4d979
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bfbf5dc7421446c863bfd104f4247bb06411dfb2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009524"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717630"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Dağıtılan bir ASP.NET uygulamalarında hata ayıklama
-Kullanılacak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dağıtılan bir uygulamada hata ayıklamak için iliştirmeniz gerekir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlem ve hata ayıklayıcı semboller için uygulama erişimi olduğundan emin olun. Ayrıca, uygulama için kaynak dosyalarını bulun ve gerekir. Daha fazla bilgi için [belirtin sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md), ve [sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md).  
+Kullanılacak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dağıtılan bir uygulamada hata ayıklamak için iliştirmeniz gerekir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlem ve hata ayıklayıcı semboller için uygulama erişimi olduğundan emin olun. Ayrıca, uygulama için kaynak dosyalarını bulun ve gerekir. Daha fazla bilgi için [belirtin sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md), ve [sistem gereksinimleri](../debugger/aspnet-debugging-system-requirements.md).
 
 > [!WARNING]
-> İçin eklerseniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi hata ayıklama ve bir kesme noktası İsabeti için tüm yönetilen kod içinde çalışan işlemi durur. Çalışan işlemi tüm yönetilen kodda durdurma iş kesinti tüm kullanıcılar için sunucu üzerinde neden olabilir. Bir üretim sunucusunda hata ayıklama önce Üretim iş olası etkisini göz önünde bulundurun. 
-  
+> İçin eklerseniz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi hata ayıklama ve bir kesme noktası İsabeti için tüm yönetilen kod içinde çalışan işlemi durur. Çalışan işlemi tüm yönetilen kodda durdurma iş kesinti tüm kullanıcılar için sunucu üzerinde neden olabilir. Bir üretim sunucusunda hata ayıklama önce Üretim iş olası etkisini göz önünde bulundurun.
+
 Ekleme işlemi [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] çalışan işlemi olan tüm diğer uzak işlemine iliştirme ile aynı. Doğru Proje Aç yoksa, bağlı olduğunuz, uygulama kesildiğinde bir iletişim kutusu görüntülenir. Bu iletişim kutusunu uygulama için kaynak dosyalarının konumunu ister. İletişim kutusunda belirttiğiniz dosya adı, Web sunucusunda hata ayıklama sembolleri içinde belirtilen dosya adı eşleşmelidir. Daha fazla bilgi için [çalışan işlemlere ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md). IIS üzerinde uzaktan hata ayıklamayı kurma için bkz: [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
- 
+
 > [!NOTE]
->  Birçok [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları, iş mantığı ya da diğer kullanışlı bir kod içeren dll başvurusu. Uygulamanızı dağıtırken, böyle bir başvuruyu DLL kullanarak yerel bilgisayarınızdan Web uygulamasının sanal dizin \bin klasörüne kopyalar. Hata ayıklama, Web uygulamanıza dll, kopyalama ve kopya değil, yerel bilgisayarınızda başvuran unutmayın. 
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı etkinleştirme](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Nasıl yapılır: ASP.NET işleminin adını bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md)   
- [Simge (.pdb) ve Kaynak Dosyaları Belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+>  Birçok [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları, iş mantığı ya da diğer kullanışlı bir kod içeren dll başvurusu. Uygulamanızı dağıtırken, böyle bir başvuruyu DLL kullanarak yerel bilgisayarınızdan Web uygulamasının sanal dizin \bin klasörüne kopyalar. Hata ayıklama, Web uygulamanıza dll, kopyalama ve kopya değil, yerel bilgisayarınızda başvuran unutmayın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [ASP.NET uygulamalarında hata ayıklama](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Nasıl yapılır: ASP.NET Uygulamaları için Hata Ayıklamayı Etkinleştirme](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+- [Nasıl yapılır: ASP.NET İşleminin Adını Bulma](../debugger/how-to-find-the-name-of-the-aspnet-process.md)
+- [Simge (.pdb) ve Kaynak Dosyaları Belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

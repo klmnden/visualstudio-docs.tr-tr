@@ -8,44 +8,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 675bd0ceef2b8eef382891bf0fc4b42400ca9df4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 304576391b2287aee7567b3ccc2e4514ce5cb2e8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018663"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711793"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
-Varsayılan örneği olup olmadığını, varlığı tanımlayan [VsgDbg sınıfı](vsgdbg-class.md) sınıfı — programlı yakalama arabirimi sağlayan — sağlanır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-#define VSG_NODEFAULT_INSTANCE  
-```  
-  
-## <a name="value"></a>Değer  
- Bir önişlemci tarafından varlığını simgesini veya olmaması, varsayılan örneği olup olmadığını belirler `VsgDbg` sınıfı sağlanır. Bu simge tanımlanmazsa, ardından hiçbir varsayılan örneğini `VsgDbg` sınıfı sağlanır; Aksi takdirde, varsayılan bir örnek sağlanan ve programınızı çalıştırılmadan önce başlatılır.  
-  
- Programlı yakalama arabirimi genel kapsamda olan bir işaretçi yoluyla sağlanır `g_pVsgDbg`.  
-  
+Varsayılan örneği olup olmadığını, varlığı tanımlayan [VsgDbg sınıfı](vsgdbg-class.md) sınıfı — programlı yakalama arabirimi sağlayan — sağlanır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+#define VSG_NODEFAULT_INSTANCE
+```
+
+## <a name="value"></a>Değer
+ Bir önişlemci tarafından varlığını simgesini veya olmaması, varsayılan örneği olup olmadığını belirler `VsgDbg` sınıfı sağlanır. Bu simge tanımlanmazsa, ardından hiçbir varsayılan örneğini `VsgDbg` sınıfı sağlanır; Aksi takdirde, varsayılan bir örnek sağlanan ve programınızı çalıştırılmadan önce başlatılır.
+
+ Programlı yakalama arabirimi genel kapsamda olan bir işaretçi yoluyla sağlanır `g_pVsgDbg`.
+
 ```cpp
-VsgDbg *g_pVsgDbg;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan örnek genellikle yeterli olur, ancak bu DLL dışında D3D cihazı oluşturulduğunda programlı yakalama arabirim bir DLL içinde kullanmak için oluşturabilir ve kendi örneğini yönetme `VsgDbg` sınıfı. Bu şekilde programlı yakalama API için kendi arabirimi yönetiyorsanız tanımlayarak varsayılan örneği devre dışı `VSG_NODEFAULT_INSTANCE` ek yükten kaçınmak için.  
-  
- Varsayılan örnek devre dışı değil ise, program çalışmadan önce otomatik olarak başlatılır ve programınızı sona erdiğinde otomatik olarak yok. Başlatma veya bu örneğin açıkça uninitialize gerekmez.  
-  
- Varsayılan örnek devre dışı bırakmak için tanımlamalısınız `VSG_NODEFAULT_INSTANCE` dahil önce `vsgcapture.h` programınızdaki.  
-  
-## <a name="example"></a>Örnek  
- Bu örnek, varsayılan örnek devre dışı bırakma gösterir:  
-  
+VsgDbg *g_pVsgDbg;
+```
+
+## <a name="remarks"></a>Açıklamalar
+ Varsayılan örnek genellikle yeterli olur, ancak bu DLL dışında D3D cihazı oluşturulduğunda programlı yakalama arabirim bir DLL içinde kullanmak için oluşturabilir ve kendi örneğini yönetme `VsgDbg` sınıfı. Bu şekilde programlı yakalama API için kendi arabirimi yönetiyorsanız tanımlayarak varsayılan örneği devre dışı `VSG_NODEFAULT_INSTANCE` ek yükten kaçınmak için.
+
+ Varsayılan örnek devre dışı değil ise, program çalışmadan önce otomatik olarak başlatılır ve programınızı sona erdiğinde otomatik olarak yok. Başlatma veya bu örneğin açıkça uninitialize gerekmez.
+
+ Varsayılan örnek devre dışı bırakmak için tanımlamalısınız `VSG_NODEFAULT_INSTANCE` dahil önce `vsgcapture.h` programınızdaki.
+
+## <a name="example"></a>Örnek
+ Bu örnek, varsayılan örnek devre dışı bırakma gösterir:
+
 ```cpp
-// Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h  
-#define VSG_NODEFAULT_INSTANCE  
-  
-#include <vsgcapture.h>  
+// Define VSG_NODEFAULT_INSTANCE before including vsgcapture.h
+#define VSG_NODEFAULT_INSTANCE
+
+#include <vsgcapture.h>
 ```

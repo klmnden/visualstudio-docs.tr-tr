@@ -11,24 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea7b54d8a27f061c1ef5d023f309ddab8295db90
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989607"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691390"
 ---
 # <a name="servers-visual-studio-sdk"></a>Sunucular (Visual Studio SDK)
-Hata ayıklayıcı mimarisinde bir *sunucu*:  
-  
--   Bir kapsayıcı bağlantı noktaları ve bağlantı noktası sağlayıcıları ve bağlantı noktaları ve bağlantı noktası sağlayıcıları oturum hata ayıklama Yöneticisi (SDM) ve hata ayıklama altyapısı ile iletişim kurar.  
-  
--   Kendi adına göre tanımlayabilir ve kendi bağlantı noktası ve bağlantı noktası sağlayıcıları numaralandırılamadı.  
-  
--   Tarafından temsil edilen bir [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) yalnızca Visual Studio (bir Visual Studio çalışan her örneği için bir sunucu örneğini) tarafından uygulanan arabirimi.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Bağlantı noktaları](../../extensibility/debugger/ports.md)   
- [Bağlantı noktası sağlayıcıları](../../extensibility/debugger/port-suppliers.md)   
- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)
+Hata ayıklayıcı mimarisinde bir *sunucu*:
+
+-   Bir kapsayıcı bağlantı noktaları ve bağlantı noktası sağlayıcıları ve bağlantı noktaları ve bağlantı noktası sağlayıcıları oturum hata ayıklama Yöneticisi (SDM) ve hata ayıklama altyapısı ile iletişim kurar.
+
+-   Kendi adına göre tanımlayabilir ve kendi bağlantı noktası ve bağlantı noktası sağlayıcıları numaralandırılamadı.
+
+-   Tarafından temsil edilen bir [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) yalnızca Visual Studio (bir Visual Studio çalışan her örneği için bir sunucu örneğini) tarafından uygulanan arabirimi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Bağlantı Noktaları](../../extensibility/debugger/ports.md)
+- [Bağlantı noktası sağlayıcıları](../../extensibility/debugger/port-suppliers.md)
+- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

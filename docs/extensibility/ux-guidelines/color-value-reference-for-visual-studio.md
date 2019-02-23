@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016245"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722284"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 
-Bu konuda, yeni renk belirteçleri oluşturmak için kullanılan bir başvurudur. Yeni kullanıcı Arabirimi oluştururken, her ana Tema renkleri ve yüksek karşıtlıklı tema için o öğe için sistem renk adı seçmek üzere mevcut kullanıcı arabiriminden benzer renkleri kullanabilirsiniz. 
+Bu konuda, yeni renk belirteçleri oluşturmak için kullanılan bir başvurudur. Yeni kullanıcı Arabirimi oluştururken, her ana Tema renkleri ve yüksek karşıtlıklı tema için o öğe için sistem renk adı seçmek üzere mevcut kullanıcı arabiriminden benzer renkleri kullanabilirsiniz.
 
 Yeni renk belirteçleri oluşturma hakkında uygulama bilgisi için bkz: [renk teması oluşturma araçları](../../extensibility/internals/color-theming-tools.md).
 
@@ -26,11 +26,11 @@ Renk belirteçleri mevcut kullanıcı Arabirimi ile kullanmak, bkz: [renkleri i�
 
 Bu başvuru kılavuzunu kullanırken unutmayın:
 
--   **Her zaman birlikte ön ve arka plan tonları kopyalayın.** Tonları istediğiniz çünkü bir ön plan bir kullanıcı Arabirimi öğesi ve başka bir arka plan seçmeyin.  
+-   **Her zaman birlikte ön ve arka plan tonları kopyalayın.** Tonları istediğiniz çünkü bir ön plan bir kullanıcı Arabirimi öğesi ve başka bir arka plan seçmeyin.
 
 -   **Onaltılık kodlar, olmayan renk belirteçleri şunlardır.** Belirteçlerin nasıl gelecekte değiştirilebilir denetleyemeyeceğiniz için bu kullanıcı Arabirimi öğeleri gerçek renk belirteci adlarını kullanamazsınız. Bunun yerine, kendi kategoride belirteçleri oluşturun ve tablolarda gösterilen hue değerleri kullanın. Var olan bir kullanıcı Arabirimi içinde bulunabilir belirteçleri renk [renkleri için Visual Studio paylaşılan](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
-- **Yüksek Karşıtlık örnekleri yalnızca karşılaştırma gösterilmektedir.** Yüksek Karşıtlık UI için sistem renk adı kullanın ve bu örnekleri üzerinde bir renk damlalığı veya Renk Seçici kullanmayın. Bu konuda yüksek karşıtlık örnekleri Windows yüksek karşıtlık #1 temada yansıtır. Renkleri, diğer yüksek karşıtlık Temalar da farklı görünecektir. 
+- **Yüksek Karşıtlık örnekleri yalnızca karşılaştırma gösterilmektedir.** Yüksek Karşıtlık UI için sistem renk adı kullanın ve bu örnekleri üzerinde bir renk damlalığı veya Renk Seçici kullanmayın. Bu konuda yüksek karşıtlık örnekleri Windows yüksek karşıtlık #1 temada yansıtır. Renkleri, diğer yüksek karşıtlık Temalar da farklı görünecektir.
 
 -   **En iyi sonuçlar için örneğe benzer kullanıcı Arabirimi ile çifti rengini ayarlar.**
 
@@ -39,17 +39,17 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 ![Özellikler penceresinde (solda) açık ve koyu (Merkezi) mavi (sağdaki) Temalar](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "Özellikler penceresinde açık ve koyu mavi tema")<br />Özellikler penceresinde açık ve koyu mavi tema
 
 > [!NOTE]
-> **Yüksek Karşıtlık örnekleri yalnızca karşılaştırma gösterilmektedir.** Yüksek Karşıtlık UI için sistem renk adı kullanın ve bu örnekleri üzerinde bir renk damlalığı veya Renk Seçici kullanmayın. Bu konuda yüksek karşıtlık örnekleri Windows yüksek karşıtlık #1 temada yansıtır. Renkleri, diğer yüksek karşıtlık Temalar da farklı görünecektir. 
+> **Yüksek Karşıtlık örnekleri yalnızca karşılaştırma gösterilmektedir.** Yüksek Karşıtlık UI için sistem renk adı kullanın ve bu örnekleri üzerinde bir renk damlalığı veya Renk Seçici kullanmayın. Bu konuda yüksek karşıtlık örnekleri Windows yüksek karşıtlık #1 temada yansıtır. Renkleri, diğer yüksek karşıtlık Temalar da farklı görünecektir.
 
 ### <a name="divider-lines"></a>Bölücü satırları
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Varsayılan | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30` | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>Glif Genişleticisi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan |![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Pencere örneği](../../extensibility/ux-guidelines/media/HCWindow.png "penceresi örneği")<br />`Window`|
@@ -60,7 +60,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="embedded-tab-control-body"></a>Sekme denetimi katıştırılmış: gövdesi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![#FFE7E8EC örneğini](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC örneği")<br />`#FFE7E8EC` | ![#FF1B1B1C örneğini](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C örneği")<br />`#FF1B1B1C` | ![#FFE7E8EC örneğini](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC örneği")<br />`#FFE7E8EC` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -68,7 +68,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="embedded-tab-control-active-tab"></a>Sekme denetimi katıştırılmış: etkin sekme
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` |![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![## FFE7E8EC örneğini](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC örneği")<br />`#FFE7E8EC` | ![#FF1B1B1C örneğini](../../extensibility/ux-guidelines/media/1B1B1C.png "## FF1B1B1C örneği")<br />`#FF1B1B1C` | ![#FFE7E8EC örneğini](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC örneği")<br />`#FFE7E8EC` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -76,7 +76,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="embedded-tab-control-inactive-tab"></a>Sekme denetimi katıştırılmış: etkin olmayan sekmesi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -85,12 +85,12 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 | Ön plan: devre dışı | ![#FFA2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 örneği")<br />`#FFA2A4A5` | ![#FF656565 örneğini](../../extensibility/ux-guidelines/media/656565.png "#FF656565 örneği")<br />`#FF656565` | ![#FFA2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 örneği")<br />`#FFA2A4A5` | ![GrayText örneğini](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText örneği")<br />`GrayText` |
 | Arka plan: devre dışı | ![## FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "## FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 | Kenarlık | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
-| Kenarlık: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br />`#FFFEFEFE` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` | 
+| Kenarlık: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br />`#FFFEFEFE` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
 | Kenarlık: devre dışı | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>Bölüm başlığı
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![## FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Ön plan: üzerine gelme | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -101,7 +101,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="category-group"></a>Kategori grubu
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Gövde ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Gövde arka planı | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -110,7 +110,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="toggle-buttons"></a>İki durumlu düğmeler
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![WindowText örneğini](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText örneği")<br />`WindowText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Pencere örneği](../../extensibility/ux-guidelines/media/HCWindow.png "penceresi örneği")<br />`Window` |
@@ -127,7 +127,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="input-fields"></a>Giriş alanlarını
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FF333337 örneğini](../../extensibility/ux-guidelines/media/333337.png "#FF333337 örneği")<br />`#FF333337` | ![#FFFCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC örneği")<br />`#FFFCFCFC` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -138,7 +138,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="list-items"></a>Liste öğeleri
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Ön plan: üzerine gelme | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -151,7 +151,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="command-buttons"></a>Komut düğmeleri
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka plan: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br />`#FFFEFEFE` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -172,7 +172,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="content"></a>İçerik
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF000000 örneğini](../../extensibility/ux-guidelines/media/000000.png "#FF000000 örneği")<br />`#FF000000` | ![WindowText örneğini](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText örneği")<br />`WindowText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -184,7 +184,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="header"></a>Üstbilgi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF000000 örneğini](../../extensibility/ux-guidelines/media/000000.png "#FF000000 örneği")<br />`#FF000000` | ![WindowText örneğini](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText örneği")<br />`WindowText` |
 | Arka Plan | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FFEEEEF2` | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30` | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
@@ -193,7 +193,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ![CodeLens UI](../../extensibility/ux-guidelines/media/codelens.png "CodeLens kullanıcı Arabirimi")
 
-> [!NOTE] 
+> [!NOTE]
 > CodeLens UI renkleri açık ve koyu mavi tema için aynıdır.
 
 > [!NOTE]
@@ -201,7 +201,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="body"></a>Gövde
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![WindowText örneğini](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText örneği")<br />`WindowText` |
 | Arka Plan | ![#FFFCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC örneği")<br />`#FFFCFCFC` | ![#FFFCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC örneği")<br />`#FFFCFCFC` | ![#FFFCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC örneği")<br />`#FFFCFCFC` | ![Pencere örneği](../../extensibility/ux-guidelines/media/HCWindow.png "penceresi örneği")<br />`Window` |
@@ -212,7 +212,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="hyperlink-and-separator"></a>Köprü ve ayırıcı
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Köprü ön plan | ![#FF0E70C0 örneğini](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 örneği")<br />`#FF0E70C0` | ![#FF0E70C0 örneğini](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 örneği")<br />`#FF0E70C0` | ![#FF0E70C0 örneğini](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 örneği")<br />`#FF0E70C0` | ![HotTrack örneğini](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack örneği")<br />`HotTrack` |
 | Ayırıcı ön plan | ![#FF9C9C9C örneğini](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C örneği")<br />`#FF9C9C9C` | ![#FF9C9C9C örneğini](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C örneği")<br />`#FF9C9C9C` | ![#FF9C9C9C örneğini](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C örneği")<br />`#FF9C9C9C` | ![HotTrack örneğini](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack örneği")<br />`HotTrack` |
@@ -226,14 +226,14 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="body"></a>Gövde
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF000000 örneğini](../../extensibility/ux-guidelines/media/000000.png "#FF000000 örneği")<br />`#FF000000` | ![WindowText örneğini](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText örneği")<br />`WindowText` |
 | Ön plan: Seçili | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>Alt Başlığı
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF717171 örneğini](../../extensibility/ux-guidelines/media/717171.png "#FF717171 örneği")<br />`#FF717171` | ![#FF999999 örneğini](../../extensibility/ux-guidelines/media/999999.png "#FF999999 örneği")<br />`#FF999999` | ![#FF717171 örneğini](../../extensibility/ux-guidelines/media/717171.png "#FF717171 örneği")<br />`#FF717171` | ![GrayText örneğini](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText örneği")<br />`GrayText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![Pencere örneği](../../extensibility/ux-guidelines/media/HCWindow.png "penceresi örneği")<br />`Window` |
@@ -241,7 +241,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="grid-lines"></a>Kılavuz çizgileri
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Öğeleri (ön plan) | ![#FFF0F0F0 örneğini](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 örneği")<br />`#FFF0F0F0` | ![#FF000000 örneğini](../../extensibility/ux-guidelines/media/000000.png "#FF000000 örneği")<br />`#FF000000` | ![#FFF0F0F0 örneğini](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 örneği")<br />`#FFF0F0F0` | ![Kaydırma çubuğu renk](../../extensibility/ux-guidelines/media/HCScrollBar.png "kaydırma çubuğu örneği")<br />`ScrollBar` |
 | Üst bilgi (ön plan) | ![#FFE0E3E6 örneğini](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 örneği")<br />`#FFE0E3E6` | ![#FF333337 örneğini](../../extensibility/ux-guidelines/media/333337.png "#FF333337 örneği")<br />`#FF333337` | ![#FFBEC3CB örneğini](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB örneği")<br />`#FFBEC3CB` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
@@ -255,21 +255,21 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="body"></a>Gövde
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 
 ### <a name="active-tab"></a>Etkin sekme
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ActiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText örneği")<br />`ActiveCaptionText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` |![ActiveCaption örneğini](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption örneği")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>Etkin olmayan sekmesi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![InactiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText örneği")<br />`InactiveCaptionText` |
 | Arka Plan | ![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br />`#FFFEFEFE` | ![#FF333337 örneğini](../../extensibility/ux-guidelines/media/333337.png "#FF333337 örneği")<br />`#FF333337` | ![#FFFEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE örneği")<br />`#FFFEFEFE` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -278,14 +278,14 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="watermark-text"></a>Filigran metni
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF717171 örneğini](../../extensibility/ux-guidelines/media/717171.png "#FF717171 örneği")<br />`#FF999999` | ![#FF999999 örneğini](../../extensibility/ux-guidelines/media/717171.png "999999 örneği")<br />`#FF999999` | ![#FF717171 örneğini](../../extensibility/ux-guidelines/media/717171.png "#FF717171 örneği")<br />`#FF717171` | ![GrayText örneğini](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText örneği")<br />`GrayText` |
 | Arka Plan | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 
 ### <a name="description-pane"></a>Açıklama bölmesi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
 | Arka Plan | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -299,7 +299,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="tags"></a>Etiketler
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Ön plan (metin) | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![ActiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText örneği")<br />`ActiveCaptionText` |
 | Arka Plan | ![#FFE1E6F1 örneğini](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 örneği")<br />`#FFE1E6F1` | ![#FF424242 örneğini](../../extensibility/ux-guidelines/media/424242.png "#FF424242 örneği")<br />`#FF424242` | ![#FFE9ECEE örneğini](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE örneği")<br />`#FFE9ECEE` | ![ActiveCaption örneğini](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption örneği")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="glyph-on-hover"></a>Üzerine gelindiğinde karakter
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Glif | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 | Arka Plan | ![#FFF7F7F9 örneğini](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 örneği")<br />`#FFF7F7F9` | ![#FF393939 örneğini](../../extensibility/ux-guidelines/media/393939.png "#FF393939 örneği")<br />`#FF393939` | ![#FFFFFCF4 örneğini](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 örneği")<br />`#FFFFFCF4` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -323,7 +323,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="selected-glyph"></a>Seçili simge
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Glif | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 | Arka Plan | ![#FF52B0EF örneğini](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF örneği")<br />`#FF52B0EF` | ![#FF52B0EF örneğini](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF örneği")<br />`#FF52B0EF` | ![#FF52B0EF örneğini](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF örneği")<br />`#FF52B0EF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -339,7 +339,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="default"></a>Varsayılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema varsayılan düğmenin](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "varsayılan düğme olarak açık tema") | ![Varsayılan düğme koyu temada](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "varsayılan düğme koyu temada") | ![Varsayılan düğme mavi tema içinde](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "varsayılan düğmesi mavi tema") | ![Varsayılan yüksek karşıtlıklı tema düğmenin](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "varsayılan yüksek karşıtlıklı tema düğmesi") |
 | Ön plan | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![ControlText örneğini](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText örneği")<br />`ControlText` |
@@ -348,7 +348,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="disabled"></a>Devre dışı
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema düğmesini devre dışı bırakılmış](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "devre dışı düğmesi içinde açık tema") | ![Koyu tema düğmesini devre dışı bırakılmış](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "devre dışı düğme koyu tema") | ![Mavi tema düğmesini devre dışı bırakılmış](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "devre dışı düğme mavi tema") | ![Yüksek karşıtlıklı tema düğmesini devre dışı bırakılmış](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "devre dışı düğmesini yüksek karşıtlıklı tema") |
 | Ön plan | ![#A2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 örneği")<br />`#A2A4A5` | ![#656565 örneğini](../../extensibility/ux-guidelines/media/656565.png "#656565 örneği")<br />`#656565` | ![#A2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 örneği")<br />`#A2A4A5` | ![InactiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText örneği")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="hover"></a>Vurgulu
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema vurgulu durumu düğmesini](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "vurgulu durumu düğmesini açık tema") | ![Vurgulu durumu düğme koyu temada](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "vurgulu durumu düğme koyu temada") | ![Vurgulu durumu düğmesi mavi tema](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "vurgulu durumu düğmesi mavi tema") | ![Yüksek karşıtlıklı tema vurgulu durumu düğmesini](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "vurgulu durumu düğmesini yüksek karşıtlıklı tema") |
 | Ön plan | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![ActiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText örneği")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="pressed"></a>Basılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema düğmesini basılı](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "basılan düğme içinde açık tema") | ![Basılan düğme koyu temada](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "basılan düğme koyu temada") | ![Basılan düğme mavi tema içinde](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "basılı düğmesi mavi tema") | ![Yüksek karşıtlıklı tema düğmesini basılı](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "yüksek karşıtlıklı tema basılı düğmesi") |
 | Ön plan | ![#FFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF örneği")<br />`#FFFFFF` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#FFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF örneği")<br />`#FFFFFF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -375,7 +375,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="focused"></a>Odaklanmış
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema Focused düğmesini](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "Focused düğmesi açık tema") | ![Koyu tema Focused düğmesini](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "koyu tema Focused düğmesi") | ![Mavi tema Focused düğmesini](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "Focused düğmesi mavi tema") | ![Yüksek karşıtlıklı tema Focused düğmesini](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "yüksek karşıtlıklı tema Focused düğmesi") |
 | Ön plan | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![#F1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 örneği")<br />`#F1F1F1` | ![#1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E örneği")<br />`#1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -389,7 +389,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="default"></a>Varsayılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema varsayılan onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "varsayılan onay kutusuna açık tema") | ![Koyu tema varsayılan onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "varsayılan onay kutusuna koyu tema") | ![Mavi tema varsayılan onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "varsayılan onay kutusuna mavi tema") | ![Onay kutusu varsayılan yüksek karşıtlıklı tema](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "onay kutusu varsayılan yüksek karşıtlıklı tema") |
 | Arka Plan | ![#FEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE örneği")<br />`#FEFEFE` | ![#252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#252526 örneği")<br />`#252526` | ![#FEFEFE örneğini](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE örneği")<br />`#FEFEFE` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -399,7 +399,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="disabled"></a>Devre dışı
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema devre dışı onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "devre dışı onay kutusu açık tema") | ![Koyu temada devre dışı onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "devre dışı onay kutusu koyu tema") | ![Mavi tema devre dışı onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "devre dışı onay kutusu mavi tema") | ![Yüksek karşıtlıklı tema devre dışı onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "devre dışı onay kutusu yüksek karşıtlıklı tema") |
 | Arka Plan | ![#F6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 örneği")<br />`#F6F6F6` | ![#2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 örneği")<br />`#2D2D30` | ![#F6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 örneği")<br />`#F6F6F6` | ![InactiveCaption örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption örneği")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="hover"></a>Vurgulu
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema üzerine gelindiğinde kullanılacak durum onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "üzerine gelindiğinde kullanılacak durum onay kutusu içinde açık tema") | ![Koyu temada üzerine gelindiğinde kullanılacak durum onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "koyu temada üzerine gelindiğinde kullanılacak durum onay kutusu") | ![Üzerine gelindiğinde kullanılacak durum onay kutusu mavi tema içinde](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "üzerine gelindiğinde kullanılacak durum onay kutusu içinde mavi tema") | ![Yüksek karşıtlıklı tema üzerine gelindiğinde kullanılacak durum onay kutusu](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "üzerine gelindiğinde kullanılacak durum onay kutusu içinde yüksek karşıtlıklı tema") |
 | Arka Plan | ![#F3F9FF örneğini](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF örneği")<br />`#F3F9FF` | ![#1F1F20 örneğini](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 örneği")<br />`#1F1F20` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -419,7 +419,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="pressed"></a>Basılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema basılı onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "basılı onay kutusunu açık tema") | ![Koyu tema basılı onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "koyu tema basılı onay kutusu") | ![Mavi tema basılı onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "mavi tema basılı onay kutusu") | ![Yüksek karşıtlıklı tema basılı onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "basılı onay kutusuna yüksek karşıtlıklı tema") |
 | Arka Plan | ![#007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC örneği")<br />`#007ACC` | ![#007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC örneği")<br />`#007ACC` | ![#E5C365 örneğini](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 örneği")<br />`#E5C365` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -429,7 +429,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="focused"></a>Odaklanmış
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema Focused onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "Focused onay kutusunu açık tema") | ![Koyu tema Focused onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "Focused onay kutusuna koyu tema") | ![Mavi tema Focused onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "Focused onay kutusuna mavi tema") | ![Yüksek karşıtlıklı tema Focused onay kutusuna](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "Focused onay kutusuna yüksek karşıtlıklı tema") |
 | Arka Plan | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![#1F1F20 örneğini](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 örneği")<br />`#1F1F20` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -446,7 +446,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="default"></a>Varsayılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema varsayılan aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "varsayılan aşağı/birleşik açılır kutuya açık tema") | ![Koyu tema varsayılan aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "varsayılan aşağı/birleşik açılır kutuya koyu tema") | ![Varsayılan aşağı/birleşik açılır kutusunda mavi tema](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "varsayılan aşağı/birleşik açılır kutusunda mavi tema") | ![Varsayılan yüksek karşıtlıklı tema aşağı/birleşik açılır kutusunda](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "varsayılan aşağı/birleşik açılır kutusunda yüksek karşıtlıklı tema") |
 | Arka Plan | ![## 007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "## 007ACC örneği")<br />`##007ACC` | ![#333337 örneğini](../../extensibility/ux-guidelines/media/333337.png "#333337 örneği")<br />`#333337` | ![#FCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC örneği")<br />`#FCFCFC` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
@@ -457,19 +457,19 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="disabled"></a>Devre dışı
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema devre dışı bırakma-aşağı/açılan kutuda](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "devre dışı bırakma-aşağı/birleşik giriş kutusu içinde açık tema") | ![Koyu tema devre dışı bırakma-aşağı/açılan kutuda](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "devre dışı bırakma-aşağı/birleşik giriş kutusunda koyu tema") | ![Mavi tema devre dışı bırakma-aşağı/açılan kutuda](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "devre dışı bırakma-aşağı/birleşik giriş kutusunda mavi tema") | ![Yüksek karşıtlıklı tema devre dışı bırakma-aşağı/açılan kutuda](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "devre dışı bırakma-aşağı/birleşik giriş kutusunda yüksek karşıtlıklı tema") |
 | Arka Plan | ![#EEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 örneği")<br />`#EEEEF2` | ![#2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 örneği")<br />`#2D2D30` | ![#DFE7F3 örneğini](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 örneği")<br />`#DFE7F3` | ![InactiveCaption örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption örneği")<br />`InactiveCaption` |
 | Kenarlık | ![#CCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB örneği")<br />`#CCCEDB` | ![#434346 örneğini](../../extensibility/ux-guidelines/media/434346.png "#434346 örneği")<br />`#434346` | ![#A4ADBA örneğini](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA örneği")<br />`#A4ADBA` | ![InactiveBorder örneğini](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder örneği")<br />`InactiveBorder` |
 | Metin | ![#A2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 örneği")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 örneği")<br />`#656565` | ![#A2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 örneği")<br />`#A2A4A5` | ![InactiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText örneği")<br />`InactiveCaptionText` |
-| Ayırıcı | ![#EEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 örneği")<br />`#EEEEF2` | ![#2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 örneği")<br />`#2D2D30` | ![#D5DCE8 örneğini](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 örneği")<br />`#D5DCE8` | ![InactiveBorder örneğini](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder örneği")<br />`InactiveBorder` | 
+| Ayırıcı | ![#EEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 örneği")<br />`#EEEEF2` | ![#2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 örneği")<br />`#2D2D30` | ![#D5DCE8 örneğini](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 örneği")<br />`#D5DCE8` | ![InactiveBorder örneğini](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder örneği")<br />`InactiveBorder` |
 | Glif | ![#CCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB örneği")<br />`#CCCEDB` | ![#656565 örneğini](../../extensibility/ux-guidelines/media/656565.png "#656565 örneği")<br />`#656565` | ![#A2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 örneği")<br />`#A2A4A5` | ![InactiveCaptionText örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText örneği")<br />`InactiveCaptionText` |
 | Simge arka plan | ![#EEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 örneği")<br />`#EEEEF2` | ![#2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 örneği")<br />`#2D2D30` | ![#D5DCE8 örneğini](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 örneği")<br />`#D5DCE8` | ![InactiveCaption örneğini](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption örneği")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>Vurgulu
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema vurgulu durumu aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "vurgulu durumu aşağı/birleşik açılır kutusunda açık tema") | ![Koyu tema vurgulu durumu aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "üzerine gelindiğinde kullanılacak durumu aşağı/birleşik açılır kutusunda, koyu tema") | ![Üzerine gelindiğinde kullanılacak durum aşağı/birleşik açılır kutusunda mavi tema](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "vurgulu durumu aşağı/birleşik açılır kutusunda mavi tema") | ![Yüksek karşıtlıklı tema vurgulu durumu aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "vurgulu durumu aşağı/birleşik açılır kutusunda yüksek karşıtlıklı tema") |
 | Arka Plan | ![#007ACC örneğini](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC örneği")<br />`#007ACC` | ![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC örneği")<br />`#FCFCFC` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -481,7 +481,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="pressed"></a>Basılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema basılı aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "basılı aşağı/birleşik açılır kutuya açık tema") | ![Koyu tema basılı aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "basılı aşağı/birleşik açılır kutuya koyu tema") | ![Mavi tema basılı aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "basılı aşağı/birleşik açılır kutusunda mavi tema") | ![Yüksek karşıtlıklı tema basılı aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "basılı aşağı/birleşik açılır kutusunda yüksek karşıtlıklı tema") |
 | Arka Plan | ![#FFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF örneği")<br />`#FFFFFF` | ![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC örneği")<br />`#FCFCFC` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -493,7 +493,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="focused"></a>Odaklanmış
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema Focused aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "Focused aşağı/birleşik açılır kutuya açık tema") | ![Koyu tema Focused aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "Focused aşağı/birleşik açılır kutuya koyu tema") | ![Mavi tema Focused aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "Focused aşağı/birleşik açılır kutusunda mavi tema") | ![Yüksek karşıtlıklı tema Focused aşağı/birleşik açılır kutuya](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "Focused aşağı/birleşik açılır kutusunda yüksek karşıtlıklı tema") |
 | Arka Plan | ![#FFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF örneği")<br />`#FFFFFF` | ![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FCFCFC örneğini](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC örneği")<br />`#FCFCFC` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
@@ -511,7 +511,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="default"></a>Varsayılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Arka Plan | ![#F6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 örneği")<br />`#F6F6F6` | ![#1B1B1C örneğini](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C örneği")<br />`#1B1B1C` | ![#EFEFEF örneğini](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF örneği")<br />`#EFEFEF` | ![Menü örneği](../../extensibility/ux-guidelines/media/HCMenu.png "menü örneği")<br />`Menu` |
 | Kenarlık | ![#CCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB örneği")<br />`#CCCEDB` | ![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#98A7B7 örneğini](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 örneği")<br />`#98A7B7`| ![MenuText örneğini](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText örneği")<br />`MenuText` |
@@ -520,7 +520,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="hover"></a>Vurgulu
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Arka Plan | ![#C9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 örneği")<br />`#C9DEF5` | ![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
 | Kenarlık | ![#CCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB örneği")<br />`#CCCEDB` |![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -528,7 +528,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="pressed"></a>Basılan
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Arka Plan |![#C9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 örneği")<br />`#C9DEF5` |![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
 | Kenarlık | ![#CCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB örneği")<br />`#CCCEDB` |![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -536,7 +536,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 #### <a name="focused"></a>Odaklanmış
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Arka Plan | ![#F6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 örneği")<br />`#F6F6F6` |![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` | ![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
 | Kenarlık | ![#C9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 örneği")<br />`#C9DEF5` |![#3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 örneği")<br />`#3F3F46` |![#FDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF örneği")<br />`#FDF4BF` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
@@ -544,14 +544,14 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 ### <a name="text-input-selection"></a>Giriş metin seçimi
 
-| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık | 
+| | Açık tema | Koyu renkli tema | Mavi tema | Yüksek Karşıtlık |
 | --- | :---: | :---: | :---: | :---: |
 | Görünüm | ![Açık tema seçimi aşağı/birleşik açılır kutusunda metin giriş](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "bırakma-aşağı/birleşik giriş kutusu metni açık tema seçiminde giriş") | ![Koyu tema seçimi aşağı/birleşik açılır kutusunda metin girişi](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "bırakma-aşağı/birleşik giriş kutusu metni, koyu tema seçimi giriş") | ![Mavi tema seçimi aşağı/birleşik açılır kutusunda metin girişi](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "mavi tema seçimi aşağı/birleşik açılır kutusunda metin girişi") | ![Yüksek karşıtlıklı tema seçimi aşağı/birleşik açılır kutusunda metin giriş](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "bırakma-aşağı/birleşik giriş kutusu metni, yüksek karşıtlıklı tema seçimi giriş") |
 | Giriş metin seçimi | ![#66007ACC örneğini](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC örneği")<br />`#66007ACC` | ![#66007ACC örneğini](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC örneği")<br />`#66007ACC` | ![#66007ACC örneğini](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC örneği")<br />`#66007ACC` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>İşleve göre renk örnekleri
 
-| Açık | Koyu | Mavi | İçin kullanılan... | 
+| Açık | Koyu | Mavi | İçin kullanılan... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5`   | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30`   | ![#FFFDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF örneği")<br />`#FFFDF4BF` | Eylem düğmeleri, birleşik giriş kutusu öğeleri, komut çubuğu düğmeleri, aşağı açılır düğmeler ve menü öğeleri: arka plan |
 | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![#FF3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 örneği")<br />`#FF3F3F46` | ![#FF465A7D örneğini](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D örneği")<br />`#FF465A7D` | Otomatik gizleme sekme kenarlığı |

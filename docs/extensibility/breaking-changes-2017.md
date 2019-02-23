@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318751"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680483"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 genişletilebilirlik değişiklikleri
 
@@ -103,6 +103,6 @@ Visual Studio işlemi içinde çalışan kod, Visual Studio ayarları Yöneticis
 ### <a name="reacting-to-this-breaking-change"></a>Bu bozucu bir değişiklik tepki verme
 
 * Kayıtsız etkinleştirme için COM bileşenlerini de kullanmak için dış kod dönüştürülmesi.
-* Dış bileşenler, Visual Studio konumu bulabilir [Buradaki yönergeleri izleyerek](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
+* Dış bileşenler, Visual Studio konumu bulabilir [Buradaki yönergeleri izleyerek](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup).
 * Dış bileşenler kullanmanızı öneririz [dış ayarları Yöneticisi](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) yerine doğrudan Visual Studio kayıt defteri anahtarları için okuma/yazma.
 * Uzantınızı kullanarak bileşenlerini kaydı için başka bir teknik uyguladınız mı denetleyin. Örneğin, hata ayıklayıcı uzantılarını yeni yararlanmak çözebileceğiniz [msvsmon JSON dosyası COM kayıt](migrate-debugger-COM-registration.md).

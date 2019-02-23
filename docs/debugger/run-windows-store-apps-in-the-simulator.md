@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949811"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710545"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Simülatörde UWP uygulamaları çalıştırma
 UWP uygulamaları için Visual Studio simulator, UWP uygulaması taklit eden bir masaüstü uygulamasıdır. Genellikle, yerel makine, bağlı bir cihaz veya uzak makinede hata ayıklama istersiniz. Ancak, bazı senaryolarda, farklı fiziksel ekran boyutunu ve çözüm benzetmek için Visual Studio simulator kullanmak isteyebilirsiniz. Ayrıca, ortak dokunma ve döndürme olaylarının benzetimini yapma ve ağ bağlantısı özellikleri benzetimi.
@@ -149,4 +149,4 @@ UWP uygulamaları için Visual Studio simulator, UWP uygulaması taklit eden bir
  Simülatör tuşlarına basarak kapatabilirsiniz **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio’dan uygulamaları çalıştırma](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Visual Studio’dan uygulamaları çalıştırma](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

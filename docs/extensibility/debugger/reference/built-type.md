@@ -1,7 +1,7 @@
 ---
 title: BUILT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BUILT_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692391379c3f2581e535a9e5c885f776565fb93d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315499"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693535"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Bu yapı meta verilerinden harcanan alan türü hakkında bilgileri belirtir.
@@ -41,14 +41,11 @@ public struct BUILT_TYPE {
 ```
 
 #### <a name="parameters"></a>Parametreler
-ulAppDomainID  
-Simgenin içinden gelen uygulama kimliği. Bu, uygulamanın bir örneğini benzersiz şekilde tanımlamak için kullanılır.
+simgenin içinden gelen uygulama ulAppDomainID kimliği. Bu, uygulamanın bir örneğini benzersiz şekilde tanımlamak için kullanılır.
 
-guidModule  
-Bu alan içeren modül GUID.
+Bu alan içeren modül GUID'si guidModule.
 
-pUnderlyingField  
-Bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) yerleşik bu alanla ilişkilendirilmiş temel alan tanımlayan nesne.
+pUnderlyingField bir [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) yerleşik bu alanla ilişkilendirilmiş temel alan tanımlayan nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı birleşimde bir parçası olarak görünür [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) ne zaman yapısı `dwKind` alanını `TYPE_INFO` yapısı ayarlandığında `TYPE_KIND_BUILT` (arasında bir değer [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) sabit listesi).
@@ -61,7 +58,7 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [Yapılar ve Birleşimler](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

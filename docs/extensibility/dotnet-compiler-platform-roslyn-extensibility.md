@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26196b18c6e44ec8f0697fbc656f2934eff1904b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 119ccbc7a14f2879d27c9c8c8e20cf978593366a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918816"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710051"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET derleyici Platformu (&quot;Roslyn&quot;) genişletilebilirliği
 .NET derleyici Platformu ("Roslyn"), çekirdek görev açma C# ve Visual Basic derleyicileri ve araçları sağlayan ve programlar hakkında zengin bilgiler derleyicilerde paylaşmak geliştiricilere vardır. Kod çözümleme araçları, kod kalitesini geliştirin ve oluşturucuları yardımcı uygulama yapı içinde kod. Araçları daha akıllıca kararlar alın gibi daha fazla ve daha fazla yalnızca derleyiciler sahip ayrıntılı kod bilgi erişim. Donuk çevirmenler (kaynak kodu ve nesne kodu) olan yerine Roslyn derleyicileri, araçları ve uygulamaları kodla ilgili görevler için kullanabileceğiniz API'ler sunar.
@@ -21,4 +21,4 @@ ms.locfileid: "54918816"
  En iyi tarafı Roslyn derleyicileri, kendi API'leri, örnekler ve izlenecek yollar ve gerçek araçları bu API'ler üzerinde oluşturulan tüm tamamen açık kaynak konumunda değildir [github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn). Lütfen daha fazla bilgi edinin ve Roslyn ile başlamak için OSS sitesine gidin. En son almak için bağlantıları bulabilirsiniz C# ve Visual Basic özellikleri Roslyn API'lerinden yararlanan araç Oluşturucu olarak başlamak için bir son kullanıcı, aynı zamanda bağlantıları kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Roslyn çözümleyicileriyle çalışmaya başlama](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [Roslyn çözümleyicileriyle çalışmaya başlama](../extensibility/getting-started-with-roslyn-analyzers.md)

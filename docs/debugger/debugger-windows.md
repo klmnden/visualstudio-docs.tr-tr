@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b802503fe612b80a171a328502f8074b2f596d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbc1dd2eae7f5ef4048a1c6e92a34f7ad5aa3d9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916627"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701712"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Visual Studio hata ayıklayıcı Windows hakkında bilgi edinin
 

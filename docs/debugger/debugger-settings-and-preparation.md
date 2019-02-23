@@ -18,38 +18,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036f6918aaeb7fc7dfc0289028e01ea64cbd6736
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942863"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693054"
 ---
 # <a name="debugger-settings-and-preparation"></a>Hata ayıklayıcı ayarları ve hazırlığı
-Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla birlikte hata ayıklamak için gereken hazırlık açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı. Programınızda oluşturursanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonlarını kullanarak, bu ayarlar, hata ayıklama yapılandırmasında ayarlandığını.  
-  
- Daha fazla bilgi için [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Hata Ayıklayıcısı Proje Ayarları](../debugger/debugger-project-settings.md)  
- Hata ayıklayıcısı ayarlarını belirtme, hata ayıklama ve yayın yapılandırmaları nasıl ve semboller yönetme ve kaynak kodu açıklar. Ayrıca, C++ için uygun proje ayarlarını açıklar C#, F#ve Visual Basic hata ayıklama yapılandırmaları, hem de web projeleri.  
-  
- [DLL Projelerinde Hata Ayıklama](../debugger/debugging-dll-projects.md)  
- DLL projelerinde, nasıl bir DLL projesinde hata ayıklama, nasıl karışık modda hata ayıklama ve hata ayıklama yönetilen kodu Web Denetim Kitaplığı nasıl hata ayıklama için önerilen proje ayarlarını açıklar.  
-  
- [Konsol Projeleri](../debugger/debugging-preparation-console-projects.md)  
- Konsol projeleri, hata ayıklama için yapılandırma hakkında yönergeler sağlar.   
-  
- [Nasıl yapılır: Visual Studio Çözümünün Parçası Olmayan Yürütülebilir Öğede Hata Ayıklama](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
- Visual Studio projesinin bir parçası oluşturulmamış bir yürütülebilir dosyada hata ayıklama açıklanmaktadır.  
-  
- [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)  
- 64 bit uygulamalarda hata ayıklama işlemini açıklamaktadır.  
-  
- [Nasıl yapılır: Hata Ayıklama İçin .NET Framework Sürümünü Belirtme](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
- Hata ayıklayıcı için hangi sürümün kullanılacağını belirtmek için bir kayıt defteri anahtarı ayarlama işlemi açıklanmaktadır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)  
- [Visual Studio’da hata ayıklama](../debugger/index.md)  
- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
+Bu bölümde hata ayıklayıcı ile ilgili özellik ayarları ve programınızla birlikte hata ayıklamak için gereken hazırlık açıklanmaktadır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hata ayıklayıcı. Programınızda oluşturursanız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proje şablonlarını kullanarak, bu ayarlar, hata ayıklama yapılandırmasında ayarlandığını.
+
+ Daha fazla bilgi için [nasıl yapılır: Küme hata ayıklama ve yayın yapılandırmaları](../debugger/how-to-set-debug-and-release-configurations.md).
+
+## <a name="in-this-section"></a>Bu Bölümde
+ [Hata ayıklayıcı proje ayarları](../debugger/debugger-project-settings.md) hata ayıklayıcısı ayarlarını belirtme, hata ayıklama ve yayın yapılandırmaları nasıl ve semboller yönetme ve kaynak kodu açıklar. Ayrıca, C++ için uygun proje ayarlarını açıklar C#, F#ve Visual Basic hata ayıklama yapılandırmaları, hem de web projeleri.
+
+ [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md) Describes önerilen proje ayarlarını DLL hata ayıklama için projeler, bir DLL projesinde hata ayıklama hakkında nasıl karışık modda hata ayıklama ve yönetilen kod Web Denetim Kitaplığı hata ayıklama.
+
+ [Konsol projeleri](../debugger/debugging-preparation-console-projects.md) konsol projeleri, hata ayıklama için yapılandırma hakkında yönergeler sağlar.
+
+ [Nasıl yapılır: Bir yürütülebilir olmayan bir Visual Studio çözümünün parçası hata ayıklama](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md) , Visual Studio projesinin bir parçası oluşturulmamış bir yürütülebilir dosyada hata ayıklama açıklanmaktadır.
+
+ [64 Bit uygulamalarda hata ayıklama](../debugger/debug-64-bit-applications.md) 64 bit uygulamalarda hata ayıklama işlemini açıklamaktadır.
+
+ [Nasıl yapılır: Bir .NET Framework sürümü için hata ayıklama belirtin](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) hata ayıklayıcı için hangi sürümün kullanılacağını belirtmek için bir kayıt defteri anahtarı ayarlama işlemi açıklanmaktadır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

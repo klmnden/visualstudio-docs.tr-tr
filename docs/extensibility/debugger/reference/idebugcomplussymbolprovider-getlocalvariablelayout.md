@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8439b2a522405dae9fd8aa1e19f070c917f9ae9c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: f5ed664c3c9b018be6e29b5129c375d1e8f5eb41
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413221"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723857"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 Yerel değişkenler için bir dizi yöntem düzenini alır.
@@ -44,20 +44,25 @@ int GetLocalVariablelayout(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`ulAppDomainID`  
-[in] Uygulama etki alanı tanımlayıcısı.
+`ulAppDomainID`
 
-`guidModule`  
-[in] Modülün benzersiz tanımlayıcısı.
+ [in] Uygulama etki alanı tanımlayıcısı.
 
-`cMethods`  
-[in] Yöntem sayısı belirteçler içinde `rgMethodTokens` dizisi.
+`guidModule`
 
-`rgMethodTokens`  
-[in] Yöntem belirteçleri dizisi.
+ [in] Modülün benzersiz tanımlayıcısı.
 
-`pStreamLayout`  
-[out] Metin akışına değişken düzeni içerir.
+`cMethods`
+
+ [in] Yöntem sayısı belirteçler içinde `rgMethodTokens` dizisi.
+
+`rgMethodTokens`
+
+ [in] Yöntem belirteçleri dizisi.
+
+`pStreamLayout`
+
+ [out] Metin akışına değişken düzeni içerir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -111,4 +116,4 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

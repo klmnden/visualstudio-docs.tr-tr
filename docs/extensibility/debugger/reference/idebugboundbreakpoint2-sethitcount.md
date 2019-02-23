@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::SetHitCount
 helpviewer_keywords:
@@ -13,42 +13,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abda1b2544f93577f7355b60c07143c623da181e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ac7cbfa337bfdcf54d213b299badc9ca56d8dcba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931589"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716317"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-Bağlı kesme noktası isabet sayısını ayarlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT SetHitCount(   
-   DWORD dwHitCount  
-);  
-```  
-  
-```csharp  
-int SetHitCount(   
-   uint dwHitCount  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `dwHitCount`  
- [in] Ayarlanacak isabet sayısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` bağlı Kesme noktasının nesnenin durumu ayarlanırsa `BPS_DELETED` (parçası [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) sabit listesi).  
-  
-## <a name="remarks"></a>Açıklamalar  
- İsabet sayısı bu Kesme noktasının harekete geçirilen oturumun geçerli çalıştırma sırasında sayısıdır.  
-  
- Bu yöntem, genellikle geçerli isabet sayısı bu kesme noktasında güncelleştirmek için hata ayıklama altyapısı tarafından çağrılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+Bağlı kesme noktası isabet sayısını ayarlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT SetHitCount( 
+   DWORD dwHitCount
+);
+```
+
+```csharp
+int SetHitCount( 
+   uint dwHitCount
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `dwHitCount`
+
+ [in] Ayarlanacak isabet sayısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` bağlı Kesme noktasının nesnenin durumu ayarlanırsa `BPS_DELETED` (parçası [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) sabit listesi).
+
+## <a name="remarks"></a>Açıklamalar
+ İsabet sayısı bu Kesme noktasının harekete geçirilen oturumun geçerli çalıştırma sırasında sayısıdır.
+
+ Bu yöntem, genellikle geçerli isabet sayısı bu kesme noktasında güncelleştirmek için hata ayıklama altyapısı tarafından çağrılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7652f05bf6028dd7d5b14d207fdd0b83a73ef5ad
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227637"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722921"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek yol: Grafik bilgilerini programla yakalama
 Kullanabileceğiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] grafik tanılama Direct3D uygulamadan grafik bilgilerini programla yakalama.
@@ -115,6 +115,6 @@ Bu izlenecek yol, grafik bilgilerini programla yakalama gösterilmiştir. Sonrak
 - Grafik tanılama araçlarını kullanarak, yakalanan grafik bilgileri analiz etmeyi öğrenin. Bkz: [genel bakış](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[İzlenecek yol: Grafik Bilgilerini Yakalama](walkthrough-capturing-graphics-information.md)  
-[Grafik Bilgilerini Yakalama](capturing-graphics-information.md)  
-[Komut satırı Yakalama Aracı](command-line-capture-tool.md)
+- [İzlenecek yol: Grafik Bilgilerini Yakalama](walkthrough-capturing-graphics-information.md)
+- [Grafik Bilgilerini Yakalama](capturing-graphics-information.md)
+- [Komut satırı Yakalama Aracı](command-line-capture-tool.md)

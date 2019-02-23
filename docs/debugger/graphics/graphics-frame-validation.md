@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991534"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694822"
 ---
 # <a name="graphics-frame-validation"></a>Grafik Çerçeve doğrulama
 <!-- VERSIONLESS --> Visual Studio 2017 ve daha büyük Destek **çerçeve doğrulama** aracı.  Çerçeve doğrulama penceresi, hataları ve olay listesi ile ilişkili uyarıları görüntüler.  Bu pencereyi görüntülemek için seçin **Görüntüle > Çerçeve doğrulama** menüsü.
@@ -33,6 +33,6 @@ Tıklayın **doğrulama çalışması** analiz başlatmak için sol üst köşed
 | İleti | Olayla ilişkili ileti. |
 | Olay | Hata veya uyarı ile ilişkili olay. |
 
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Grafik tanılama (DirectX grafik hata ayıklama)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>Ayrıca Bkz.
+[Grafik tanılama (DirectX grafik hata ayıklama)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

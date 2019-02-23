@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 011e51e126fc70f12be7dd94c05b27df17e77adf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690248"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714627"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 
-Visual Studio, birden fazla hata ayıklayıcı türü karışık mod hata ayıklama çağrılan hata ayıklama oturumunda, etkinleştirmenize olanak tanır. Bu öğreticide, tek bir hata ayıklama oturumunda hem yönetilen hem de yerel kod hatalarını ayıklamak öğrenin. 
+Visual Studio, birden fazla hata ayıklayıcı türü karışık mod hata ayıklama çağrılan hata ayıklama oturumunda, etkinleştirmenize olanak tanır. Bu öğreticide, tek bir hata ayıklama oturumunda hem yönetilen hem de yerel kod hatalarını ayıklamak öğrenin.
 
 Bu öğreticide, yönetilen yerel kod hatalarını ayıklamak gösterilir, ancak ayrıca [yönetilen koddan yerel bir uygulama hata ayıklama](../debugger/how-to-debug-in-mixed-mode.md). Hata ayıklayıcı ayrıca diğer tür karışık mod hata ayıklama gibi hata ayıklamayı destekler [Python ve yerel kod](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md)ve ASP.NET gibi uygulama türlerinde betik hata ayıklayıcıyı kullanma.
 
@@ -60,7 +60,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
    Visual Studio, boş bir proje oluşturur ve görüntüler **Çözüm Gezgini**.
 
-1. İçinde **Çözüm Gezgini**seçin **kaynak dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **kaynak dosyaları** seçip **Ekle** > **yeni öğe**. 
+1. İçinde **Çözüm Gezgini**seçin **kaynak dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **kaynak dosyaları** seçip **Ekle** > **yeni öğe**.
 
 1. İçinde **yeni öğe** iletişim kutusunda **C++ dosyası (.cpp)**. Tür **Mixed_Mode.cpp** içinde **adı** alan ve ardından **Ekle**.
 
@@ -71,7 +71,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. İçinde **Çözüm Gezgini**seçin **üst bilgi dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **üst bilgi dosyaları** seçip **Ekle** > **yeni öğe**. 
+1. İçinde **Çözüm Gezgini**seçin **üst bilgi dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **üst bilgi dosyaları** seçip **Ekle** > **yeni öğe**.
 
 1. İçinde **yeni öğe** iletişim kutusunda **üst bilgi dosyası (.h)**. Tür **Mixed_Mode.h** içinde **adı** alan ve ardından **Ekle**.
 
@@ -100,10 +100,10 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 1. İçinde **Çözüm Gezgini**seçin **Mixed_Mode_Debugging** proje düğümünü seçip alt **özellikleri** simgesini veya proje düğümünü sağ tıklayıp **Özellikleri**.
 
-1. Üst kısmındaki **özellikleri** bölmesinde emin olun **yapılandırma** ayarlanır **Active(Debug)** ve **Platform** ne aynıdır araç çubuğunda ayarlayın: **x64**, veya **Win32** x86 için platform. 
+1. Üst kısmındaki **özellikleri** bölmesinde emin olun **yapılandırma** ayarlanır **Active(Debug)** ve **Platform** ne aynıdır araç çubuğunda ayarlayın: **x64**, veya **Win32** x86 için platform.
 
    > [!IMPORTANT]
-   > Bir platformdan diğerine geçtiğinizde **x86** için **x64** veya bunun tersini yapmak, yeni platform özelliklerini yapılandırın. 
+   > Bir platformdan diğerine geçtiğinizde **x86** için **x64** veya bunun tersini yapmak, yeni platform özelliklerini yapılandırın.
 
 1. Altında **yapılandırma özellikleri** seçin sol bölmede **bağlayıcı** > **Gelişmiş**ve yanındaki açılan menüdeki **Hayır giriş noktası**seçin **Hayır**. Değiştirilmesi olsaydı **Hayır**seçin **Uygula**.
 
@@ -125,7 +125,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 1. İçinde **yeni proje** iletişim kutusunda **Visual C#** ve Orta bölmede:
 
    - Bir .NET Framework uygulaması için seçin **konsol uygulaması (.NET Framework)**.
-   
+
    - Bir .NET Core uygulamanızı seçin **konsol uygulaması (.NET Core)**.
 
 1. İçinde **adı** alanına **Mixed_Mode_Calling_App**ve ardından **Tamam**.
@@ -164,9 +164,9 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 1. Seçin **dosya** > **Kaydet Program.cs** veya basın **Ctrl**+**S** dosyayı kaydetmek için.
 
-## <a name="configure-mixed-mode-debugging"></a>Karışık mod hata ayıklama yapılandırma 
+## <a name="configure-mixed-mode-debugging"></a>Karışık mod hata ayıklama yapılandırma
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Karışık mod hata ayıklama için .NET Framework uygulamasını yapılandırmak için 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>Karışık mod hata ayıklama için .NET Framework uygulamasını yapılandırmak için
 
 1. İçinde **Çözüm Gezgini**seçin **Mixed_Mode_Calling_App** proje düğümünü seçip alt **özellikleri** simgesini veya proje düğümünü sağ tıklayıp **Özellikleri**.
 
@@ -174,11 +174,11 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
     ![Karışık modda hata ayıklama etkinleştirme](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Karışık mod hata ayıklama için .NET Core uygulamasını yapılandırmak için 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Karışık mod hata ayıklama için .NET Core uygulamasını yapılandırmak için
 
 Çoğu Visual Studio 2017 sürümünde kullanmalısınız *launchSettings.json* dosya yerine bir .NET Core uygulaması yerel kod için karışık mod hata ayıklamayı etkinleştirmek için proje özellikleri. Bu özellik için kullanıcı Arabirimi güncelleştirmeleri izlemek için bkz [GitHub sorunu](https://github.com/dotnet/project-system/issues/1125).
 
-1. İçinde **Çözüm Gezgini**, genişletme **özellikleri**açın *launchSettings.json* dosya. 
+1. İçinde **Çözüm Gezgini**, genişletme **özellikleri**açın *launchSettings.json* dosya.
 
    >[!NOTE]
    >Varsayılan olarak, *launchSettings.json* bulunduğu *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Varsa *launchSettings.json* değil, mevcut seçin **Mixed_Mode_Calling_App** projesi **Çözüm Gezgini** seçip **özellikleri** simgesini veya projeye sağ tıklayıp seçin **özellikleri**. Geçici bir değişiklik yapmak **hata ayıklama** sekme ve projeyi derleyin. Bu oluşturacak bir *launchSettings.json* dosya. Yaptığınız değişikliği geri al **hata ayıklama** sekmesi.

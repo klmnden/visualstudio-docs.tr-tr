@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450548"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678611"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Bir ifade dizesini verilen sembol sağlayıcısı ve değerlendirme çerçevesinin adres ayrıştırılmış bir ifade dönüştürür.
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>Parametreler
-`upstrExpression`  
-[in] Ayrıştırılacak ifade dize.
+`upstrExpression`
 
-`dwFlags`  
-[in] Bir koleksiyonu [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) ifade nasıl ayrıştırılacak belirlemek sabitler.
+ [in] Ayrıştırılacak ifade dize.
 
-`nRadix`  
-[in] Sayısal yedeklenmesine yorumlamak için kullanılacak sayı tabanı.
+`dwFlags`
 
-`pSymbolProvider`  
-[in] Sembol sağlayıcısı arabirimi.
+ [in] Bir koleksiyonu [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) ifade nasıl ayrıştırılacak belirlemek sabitler.
 
-`pAddress`  
-[in] Değerlendirme çerçevesinin adresi.
+`nRadix`
 
-`pbstrError`  
-[out] Hata, insanlar tarafından okunabilen metin olarak döndürür.
+ [in] Sayısal yedeklenmesine yorumlamak için kullanılacak sayı tabanı.
 
-`pichError`  
-[out] İfade dizesinde hata başlangıcı karakter konumunu döndürür.
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out] Döndürür ayrıştırılmış ifadesinde bir [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) nesne.
+ [in] Sembol sağlayıcısı arabirimi.
+
+`pAddress`
+
+ [in] Değerlendirme çerçevesinin adresi.
+
+`pbstrError`
+
+ [out] Hata, insanlar tarafından okunabilen metin olarak döndürür.
+
+`pichError`
+
+ [out] İfade dizesinde hata başlangıcı karakter konumunu döndürür.
+
+`ppParsedExpression`
+
+ [out] Döndürür ayrıştırılmış ifadesinde bir [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

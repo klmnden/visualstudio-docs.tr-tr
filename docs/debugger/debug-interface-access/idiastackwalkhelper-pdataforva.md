@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ddcbf414d70d5952c9b4c7b5cca4eb4cd35e28a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6315032a36369eff7a5d43241ae4968a64ad42cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645699"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685463"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Sanal adresle ilişkilendirilen PDATA veri bloğu döndürür.
@@ -47,7 +47,8 @@ HRESULT pdataForVA( 
 [out] Gerçek veri boyutunu edinilen bayt cinsinden döndürür.
 
  `pbData`
-- [out içinde] İstenen veriler ile doldurulmuş bir arabellek. Olamaz `NULL`.
+
+[out içinde] İstenen veriler ile doldurulmuş bir arabellek. Olamaz `NULL`.
 
 ## <a name="return-value"></a>Dönüş Değeri
  Başarılı olursa döndürür `S_OK`. Döndürür `S_FALSE` hiçbir PDATA belirtilen adresi için varsa. Aksi takdirde bir hata kodu döndürür.

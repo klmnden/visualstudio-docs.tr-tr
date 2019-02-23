@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa1d17b31a75945392dd5bc49f5a1979e265180
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924866"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701699"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>İşlem Sekmesi, Pencere Özellikleri İletişim Kutusu
-Kullanım **işlem** seçili penceresinin işlemi tanımlamak için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.  
-  
- Aşağıdaki ayarlar kullanılabilir **işlem** sekmesinde:  
-  
-|Giriş|Açıklama|  
-|-----------|-----------------|  
-|**İşlem kimliği**|Bu pencere oluşturulan iş parçacığı sahip işlem kimliği. Bu işlem özelliklerini görüntülemek için bu değeri seçin.|  
+Kullanım **işlem** seçili penceresinin işlemi tanımlamak için sekmesinde. Görüntülenecek [pencere Özellikleri iletişim kutusu](../debugger/window-properties-dialog-box.md), odağı Taşı [Windows görünümü](../debugger/windows-view.md) penceresi. Herhangi bir pencere düğüm ağaçta seçin ve ardından **özellikleri** gelen **görünümü** menüsü.
+
+ Aşağıdaki ayarlar kullanılabilir **işlem** sekmesinde:
+
+|Giriş|Açıklama|
+|-----------|-----------------|
+|**İşlem kimliği**|Bu pencere oluşturulan iş parçacığı sahip işlem kimliği. Bu işlem özelliklerini görüntülemek için bu değeri seçin.|
 |**İş parçacığı kimliği**|Bu pencere oluşturulan iş parçacığı kimliği. Bu iş parçacığı özelliklerini görüntülemek için bu değeri seçin.|

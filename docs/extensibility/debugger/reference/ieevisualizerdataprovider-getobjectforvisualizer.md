@@ -1,7 +1,7 @@
 ---
 title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer
 helpviewer_keywords:
@@ -12,41 +12,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8be46a329c6bb62bf4fc039a418e98b577141e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027977"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706671"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-Bu yöntem, bu Görselleştirici temsil eden nesneyi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppObject`  
- [out] Bu Görselleştirici tarafından temsil edilen nesne  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `GetObjectForVisualizer` Nesne önbelleğe alınmış bir sürümü iade etmesine izin verilir. Çağıranın güncel bir nesnedir ve ardından bunu çağıracak emin olmak istiyorsa [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
- [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+Bu yöntem, bu Görselleştirici temsil eden nesneyi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetObjectForVisualizer(
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int GetObjectForVisualizer(
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppObject`
+
+ [out] Bu Görselleştirici tarafından temsil edilen nesne
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ `GetObjectForVisualizer` Nesne önbelleğe alınmış bir sürümü iade etmesine izin verilir. Çağıranın güncel bir nesnedir ve ardından bunu çağıracak emin olmak istiyorsa [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
+- [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

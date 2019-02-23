@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::ContinueFromSynchronousEvent
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9e4a02fdccb15f959615c0e7e39d22a05c40ea2
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450470"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711845"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Oturum hata ayıklama Yöneticisi (SDM) daha önce SDM için hata ayıklama altyapısı (DE) tarafından gönderilen bir zaman uyumlu hata ayıklama olayı alınıp işlendiğini olduğunu belirtmek için çağrılır.
@@ -37,8 +37,9 @@ HRESULT ContinueFromSynchronousEvent(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`pEvent`  
-[in] Bir [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , hata ayıklayıcı şimdi devam etmelidir daha önce gönderilen zaman uyumlu olay temsil eden nesne.
+`pEvent`
+
+ [in] Bir [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) , hata ayıklayıcı şimdi devam etmelidir daha önce gönderilen zaman uyumlu olay temsil eden nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -86,5 +87,5 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)  
-[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

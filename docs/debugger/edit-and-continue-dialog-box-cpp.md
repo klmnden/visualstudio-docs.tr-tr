@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb0b7d507453fc162c6fd748346e34c8abbdf88f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959128"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690025"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Düzenle ve devam et iletişim kutusu (C++)
-Düzenle ve devam yerel koda yapılan değişiklikleri uygulanamadı. Bu geçici bir durum olabilir. Bazen Düzenle ve devam et yerel kod değişikliklerini hemen uygulanamaz, ancak bunları daha sonra (örneğin, tamamlandıktan sonra artık çalıştırma yordamı için geçerli çağrının) hata ayıklama oturumu sırasında uygulayabilirsiniz. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md).  
-  
- Yine de hata ayıklama sırasında hatayı düzeltin, hata ayıklamayı durdurmak ve kod düzeltmesi veya hatasını görmezden Gel ve hata ayıklamaya devam etmek için kodu düzenleyebilirsiniz. Düzeltmesi yapmadan devam ederseniz, kod değişiklikleriniz hemen uygulanmaz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/bcew296c.aspx)
+Düzenle ve devam yerel koda yapılan değişiklikleri uygulanamadı. Bu geçici bir durum olabilir. Bazen Düzenle ve devam et yerel kod değişikliklerini hemen uygulanamaz, ancak bunları daha sonra (örneğin, tamamlandıktan sonra artık çalıştırma yordamı için geçerli çağrının) hata ayıklama oturumu sırasında uygulayabilirsiniz. Daha fazla bilgi için [Düzenle ve devam et](../debugger/edit-and-continue.md).
+
+ Yine de hata ayıklama sırasında hatayı düzeltin, hata ayıklamayı durdurmak ve kod düzeltmesi veya hatasını görmezden Gel ve hata ayıklamaya devam etmek için kodu düzenleyebilirsiniz. Düzeltmesi yapmadan devam ederseniz, kod değişiklikleriniz hemen uygulanmaz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Düzenle ve devam et, hata ayıklama, Seçenekler iletişim kutusu](https://msdn.microsoft.com/library/bcew296c.aspx)

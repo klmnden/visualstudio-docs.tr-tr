@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::Enable
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b677ac9ef9a1f718f1928d07e546a5b7d172fe
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318725"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705092"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Etkinleştirir veya kesme noktasını devre dışı bırakır.
@@ -38,8 +38,9 @@ int Enable( 
 ```
 
 #### <a name="parameters"></a>Parametreler
-`fEnable`  
-[in] İçin sıfır olmayan ayarlayın (`TRUE`) etkinleştirmek için ya da sıfıra (`FALSE`) kesme noktasını devre dışı bırakmak için.
+`fEnable`
+
+ [in] İçin sıfır olmayan ayarlayın (`TRUE`) etkinleştirmek için ya da sıfıra (`FALSE`) kesme noktasını devre dışı bırakmak için.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür. Döndürür `E_BP_DELETED` bağlı Kesme noktasının nesnenin durumu ayarlanırsa `BPS_DELETED` (parçası [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) sabit listesi).
@@ -95,5 +96,5 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

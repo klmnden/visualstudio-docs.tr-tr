@@ -1,7 +1,7 @@
 ---
 title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CANSTOP_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98621fbea4fc114616ccf23ada9b372c88461970
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413052"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711624"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Bir program yürütme belirli bir noktaya ulaştıktan sonra yürütmeyi durdurmak, belirlemek için kullanılır.
@@ -40,11 +40,9 @@ public enum enum_CANSTOP_REASON {
 ```
 
 ## <a name="members"></a>Üyeler
-CANSTOP_ENTRYPOINT  
-Belirli bir programın giriş noktasını belirtir.
+CANSTOP_ENTRYPOINT verilen programın giriş noktasını belirtir.
 
-CANSTOP_STEPIN  
-Bir işlevin Adımlama belirtir.
+Bir işlevin Adımlama CANSTOP_STEPIN belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 Bağımsız değişken olarak geçirilen [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) oturum hata ayıklama Yöneticisi (SDM) ile programın giriş noktası ulaştıktan sonra veya bir işlev veya metot Adımlama durdurmak uygun olup olmadığını onaylamak için yöntemi.
@@ -57,5 +55,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

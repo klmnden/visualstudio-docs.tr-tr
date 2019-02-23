@@ -1,7 +1,7 @@
 ---
 title: MODULE_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - MODULE_INFO_FLAGS
 helpviewer_keywords:
@@ -12,45 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec59f745a0de459bb2b8b73337f13f5e03573975
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946223"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688881"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
-Bir modüle ilişkin simgeleri durumunu belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-typedef DWORD MODULE_INFO_FLAGS;  
-```  
-  
-```csharp  
-public enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- MIF_SYMBOLS_LOADED  
- Simge kümesi en az bir modül tarafından yüklenen (Aksi halde sembol yüklenmiş).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu değer tarafından döndürülür [Getsymbolsearchınfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) yöntemi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)
+Bir modüle ilişkin simgeleri durumunu belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+typedef DWORD MODULE_INFO_FLAGS;
+```
+
+```csharp
+public enum enum_MODULE_INFO_FLAGS {
+   MIF_SYMBOLS_LOADED = 0x0001
+};
+```
+
+## <a name="members"></a>Üyeler
+ MIF_SYMBOLS_LOADED sembolleri en az bir dizi modülü tarafından yüklenen konumunda (Aksi halde sembol yüklenmiş).
+
+## <a name="remarks"></a>Açıklamalar
+ Bu değer tarafından döndürülür [Getsymbolsearchınfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) yöntemi.
+
+## <a name="requirements"></a>Gereksinimler
+ Üstbilgi: msdbg.h
+
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

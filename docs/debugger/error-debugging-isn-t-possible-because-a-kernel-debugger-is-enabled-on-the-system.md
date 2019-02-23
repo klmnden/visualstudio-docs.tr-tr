@@ -16,88 +16,88 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c35910a7682d4e9a6d848f270dd8d6c86e4bd850
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954156"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709674"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Birincile hata ayıklama&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t
-Yönetilen kod hata ayıklaması yaparken, aşağıdaki hata iletisini alabilirsiniz:  
-  
+Yönetilen kod hata ayıklaması yaparken, aşağıdaki hata iletisini alabilirsiniz:
+
 ```cmd
-Debugging isn't possible because a kernel debugger is enabled on the system  
-```  
-  
- Yönetilen kod hata ayıklamayı denediğinizde bu ileti oluşur:  
-  
-- üzerinde bir [!INCLUDE[win7](../debugger/includes/win7_md.md)] veya [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]hata ayıklama modunda çalışmaya sistem.  
-  
-- Uygulama, CLR 2.0, 3.0 veya 3.5 CLR sürümünü kullanır.  
-  
-## <a name="solution"></a>Çözüm  
-  
-#### <a name="to-fix-this-problem"></a>Bu sorunu gidermek için  
-  
-- CLR 4.0 veya 4.5 sürümü kullanmak için uygulamanızı yükseltme  
-  
-   —veya—  
-  
-- Çekirdek hata ayıklamasını devre dışı bırak ve hata ayıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-   —veya—  
-  
-- Çekirdek hata ayıklayıcı yerine kullanarak hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-   —veya—  
-  
-- Çekirdek hata ayıklayıcısı kullanıcı modu özel durumlarını devre dışı bırakın.  
-  
-#### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Geçerli oturumda çekirdek hata ayıklamasını devre dışı bırakmak için  
-  
--   Komut isteminde, şunları yazın:  
-  
+Debugging isn't possible because a kernel debugger is enabled on the system
+```
+
+ Yönetilen kod hata ayıklamayı denediğinizde bu ileti oluşur:
+
+- üzerinde bir [!INCLUDE[win7](../debugger/includes/win7_md.md)] veya [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]hata ayıklama modunda çalışmaya sistem.
+
+- Uygulama, CLR 2.0, 3.0 veya 3.5 CLR sürümünü kullanır.
+
+## <a name="solution"></a>Çözüm
+
+#### <a name="to-fix-this-problem"></a>Bu sorunu gidermek için
+
+- CLR 4.0 veya 4.5 sürümü kullanmak için uygulamanızı yükseltme
+
+   —veya—
+
+- Çekirdek hata ayıklamasını devre dışı bırak ve hata ayıklayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+   —veya—
+
+- Çekirdek hata ayıklayıcı yerine kullanarak hata ayıklama [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+   —veya—
+
+- Çekirdek hata ayıklayıcısı kullanıcı modu özel durumlarını devre dışı bırakın.
+
+#### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Geçerli oturumda çekirdek hata ayıklamasını devre dışı bırakmak için
+
+-   Komut isteminde, şunları yazın:
+
     ```cmd
-    Kdbgctrl.exe -d  
-    ```  
-  
-#### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Tüm oturumlardaki (Windows Vista ve Windows 7) çekirdek hata ayıklamasını devre dışı bırakmak için  
-  
-1.  Komut isteminde, şunları yazın:  
-  
+    Kdbgctrl.exe -d
+    ```
+
+#### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Tüm oturumlardaki (Windows Vista ve Windows 7) çekirdek hata ayıklamasını devre dışı bırakmak için
+
+1.  Komut isteminde, şunları yazın:
+
     ```cmd
-    bcdedit /debug off   
-    ```  
-  
-2.  Bilgisayarı yeniden başlatın.  
-  
-#### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Tüm oturumlardaki (diğer Windows işletim sistemleri) çekirdek hata ayıklamasını devre dışı bırakmak için  
-  
-1.  Sistem sürücünüzde Boot.ini bulun (genellikle C:\\). Boot.ini dosyası, gizli ve salt okunur olabilir. Bu nedenle, görmek için aşağıdaki komutu kullanmanız gerekir:  
-  
+    bcdedit /debug off
+    ```
+
+2.  Bilgisayarı yeniden başlatın.
+
+#### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Tüm oturumlardaki (diğer Windows işletim sistemleri) çekirdek hata ayıklamasını devre dışı bırakmak için
+
+1.  Sistem sürücünüzde Boot.ini bulun (genellikle C:\\). Boot.ini dosyası, gizli ve salt okunur olabilir. Bu nedenle, görmek için aşağıdaki komutu kullanmanız gerekir:
+
     ```cmd
-    dir /ASH  
-    ```  
-  
-2.  Not Defteri'ni kullanarak boot.ini açın ve aşağıdaki seçenekleri kaldırın:  
-  
+    dir /ASH
+    ```
+
+2.  Not Defteri'ni kullanarak boot.ini açın ve aşağıdaki seçenekleri kaldırın:
+
     ```cmd
-    /debug  
-    /debugport  
-    /baudrate  
-    ```  
-  
-3.  Bilgisayarı yeniden başlatın.  
-  
-#### <a name="to-debug-with-the-kernel-debugger"></a>Çekirdek hata ayıklayıcısı ile hata ayıklamak için  
-  
-1.  Çekirdek hata ayıklayıcısı ölçekledikçe, hatalarını ayıklamaya devam etmek isteyip istemediğinizi soran bir ileti görürsünüz. Devam etmek için düğmeye tıklayın.  
-  
-2.  Alma bir `User break exception(Int 3).` bu meydana gelirse, hatalarını ayıklamaya devam etmek için aşağıdaki çekirdek hata ayıklayıcısı komutu yazın:  
-  
-     `gn`  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)
+    /debug
+    /debugport
+    /baudrate
+    ```
+
+3.  Bilgisayarı yeniden başlatın.
+
+#### <a name="to-debug-with-the-kernel-debugger"></a>Çekirdek hata ayıklayıcısı ile hata ayıklamak için
+
+1.  Çekirdek hata ayıklayıcısı ölçekledikçe, hatalarını ayıklamaya devam etmek isteyip istemediğinizi soran bir ileti görürsünüz. Devam etmek için düğmeye tıklayın.
+
+2.  Alma bir `User break exception(Int 3).` bu meydana gelirse, hatalarını ayıklamaya devam etmek için aşağıdaki çekirdek hata ayıklayıcısı komutu yazın:
+
+     `gn`
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Yönetilen Kodda Hata Ayıklama](../debugger/debugging-managed-code.md)

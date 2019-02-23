@@ -12,41 +12,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58ace81dbf3b39ed9e7707a50c1f7beae35e88f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36f49d4e1ebaa6d8e15e43b821af56204739cb07
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989279"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687789"
 ---
 # <a name="using-and-providing-services"></a>Hizmetleri Kullanma ve Sağlama
-Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı kullanmak başka bir VSPackage arabirimleri belirli bir kümesini sunar. Örneğin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sunar <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> isteğe bağlı olarak bir Vspackage'e yükleri hizmet. Bu hizmet sağlayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> etkinlik günlüğüne yazmak için kullanılan arabirim. Daha fazla bilgi için [nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).  
-  
- VSPackage'ları, kendi başlarına kullanmanın Hizmetleri sunabilir <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> arabirimi...  
-  
- Visual Studio aşağıdaki gibi önemli hizmetler sunar:  
-  
-|IDE hizmeti|Açıklama|  
-|-----------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Temel işlevleri, VSPackages ve kayıt defteri ile ilgilenen Hizmetleri IDE için erişim sağlar.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Temel Pencereleme ve araç ve belge pencereleri oluşturma olanağı gibi IDE kullanıcı Arabirimi ile ilgili işlevleri sağlar.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Projeleri listeleme, yeni projeler oluşturmak ve proje değişiklikleri izleme özelliği gibi temel çözümü ile ilgili işlevleri sağlar.|  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Hizmet Temel Bileşenleri](../extensibility/internals/service-essentials.md)  
- Visual Studio hizmeti önemli öğelerini gösterir.  
-  
- [Nasıl yapılır: Hizmet alma](../extensibility/how-to-get-a-service.md)  
- İstek anlatılmaktadır (kullanabilir) bir hizmet.  
-  
- [Nasıl yapılır: Bir hizmeti sağlama](../extensibility/how-to-provide-a-service.md)  
- Bir hizmetin nasıl ele alınmaktadır.  
-  
- [Nasıl yapılır: Bir zaman uyumsuz Visual Studio hizmeti sağlama](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
- Zaman uyumsuz bir hizmetin nasıl ele alınmaktadır.  
-  
- [Nasıl yapılır: Hizmetleri sorunlarını giderme](../extensibility/how-to-troubleshoot-services.md)  
- Ortak sorunları açıklar ve bunların çözümleri sunar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı kullanmak başka bir VSPackage arabirimleri belirli bir kümesini sunar. Örneğin, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sunar <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> isteğe bağlı olarak bir Vspackage'e yükleri hizmet. Bu hizmet sağlayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> etkinlik günlüğüne yazmak için kullanılan arabirim. Daha fazla bilgi için [nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).
+
+ VSPackage'ları, kendi başlarına kullanmanın Hizmetleri sunabilir <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> arabirimi...
+
+ Visual Studio aşağıdaki gibi önemli hizmetler sunar:
+
+|IDE hizmeti|Açıklama|
+|-----------------|-----------------|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>|Temel işlevleri, VSPackages ve kayıt defteri ile ilgilenen Hizmetleri IDE için erişim sağlar.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Temel Pencereleme ve araç ve belge pencereleri oluşturma olanağı gibi IDE kullanıcı Arabirimi ile ilgili işlevleri sağlar.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Projeleri listeleme, yeni projeler oluşturmak ve proje değişiklikleri izleme özelliği gibi temel çözümü ile ilgili işlevleri sağlar.|
+
+## <a name="in-this-section"></a>Bu Bölümde
+- [Hizmet temel bileşenleri](../extensibility/internals/service-essentials.md) bir Visual Studio hizmetin önemli öğeleri gösterir.
+
+- [Nasıl yapılır: Hizmet alma](../extensibility/how-to-get-a-service.md) istek anlatılmaktadır (kullanabilir) bir hizmet.
+
+- [Nasıl yapılır: Bir hizmetin](../extensibility/how-to-provide-a-service.md) bir hizmetin nasıl ele alınmaktadır.
+
+- [Nasıl yapılır: Zaman uyumsuz bir Visual Studio hizmeti sağlama](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md) uyumsuz bir hizmet sağlamak nasıl ele alınmaktadır.
+
+- [Nasıl yapılır: Sorun Giderme Hizmetleri](../extensibility/how-to-troubleshoot-services.md) ortak sorunları açıklar ve bunların çözümleri sunar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

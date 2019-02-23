@@ -11,29 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf81cfeea10a0687e84982db595a5c7a9aab6074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8074bedf411b99997ddb93a16f4acbf72e63114b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998228"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679079"
 ---
 # <a name="port-suppliers"></a>Bağlantı noktası sağlayıcıları
-Hata ayıklayıcı mimarisinde bir *bağlantı noktası sağlayıcısı*:  
-  
-- Sunucu tarafından bulunur ve bu sunucuya gönderilen istek bağlantı noktaları sağlar.  
-  
-- Ekleyebilir ve bağlantı noktalarını içeren sunucudan kaldırın.  
-  
-- Sunucuya yayımlamış tüm bağlantı noktaları sıralayabilirsiniz.  
-  
-- Tarafından temsil edilen bir [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) kayıt defteri aracılığıyla Visual Studio ile kayıtlı arabirim. Bu arabirim, çağrılarak alınabilir [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
-  
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Varsayılan bağlantı noktası sağlayıcısı ve varsayılan bir bağlantı noktası sağlar. Özel bir bağlantı noktası uygulanması gerekiyorsa, özel bağlantı noktası sağlayıcısı Ayrıca bu özel bağlantı sağlamak için uygulanması gerekir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Sunucuları](../../extensibility/debugger/servers-visual-studio-sdk.md)   
- [Bağlantı noktaları](../../extensibility/debugger/ports.md)   
- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)   
- [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)
+Hata ayıklayıcı mimarisinde bir *bağlantı noktası sağlayıcısı*:
+
+- Sunucu tarafından bulunur ve bu sunucuya gönderilen istek bağlantı noktaları sağlar.
+
+- Ekleyebilir ve bağlantı noktalarını içeren sunucudan kaldırın.
+
+- Sunucuya yayımlamış tüm bağlantı noktaları sıralayabilirsiniz.
+
+- Tarafından temsil edilen bir [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) kayıt defteri aracılığıyla Visual Studio ile kayıtlı arabirim. Bu arabirim, çağrılarak alınabilir [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).
+
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Varsayılan bağlantı noktası sağlayıcısı ve varsayılan bir bağlantı noktası sağlar. Özel bir bağlantı noktası uygulanması gerekiyorsa, özel bağlantı noktası sağlayıcısı Ayrıca bu özel bağlantı sağlamak için uygulanması gerekir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Sunucular](../../extensibility/debugger/servers-visual-studio-sdk.md)
+- [Bağlantı Noktaları](../../extensibility/debugger/ports.md)
+- [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
+- [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

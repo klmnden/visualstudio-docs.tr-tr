@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 helpviewer_keywords:
@@ -12,53 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 790c17bbf547a4b54ef86b7fb79f2e5108a3cbf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90fd7beabb14163558afe4b957d95635e91f904a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921940"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719554"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
-Bu yığın çerçevesiyle ilgili dilini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetLanguageInfo (   
-   BSTR* pbstrLanguage,  
-   GUID* pguidLanguage  
-);  
-```  
-  
-```csharp  
-int GetLanguageInfo (   
-   ref string pbstrLanguage,  
-   ref Guid   pguidLanguage  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `pbstrLanguage`  
- [out] Bu yığın çerçevesiyle ilgili yöntemini uygulayan dil adını döndürür.  
-  
- `pguidLanguage`  
- [out] Döndürür `GUID` dili. İçin [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] diller, örneğin, aşağıdaki döndürülen:  
-  
--   `guidVBScriptLang`  
-  
--   `guidJScriptLang`  
-  
--   `guidCPPLang`  
-  
--   `guidVBLang`  
-  
--   `guidSQLLang`  
-  
--   `guidScriptLang`  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+Bu yığın çerçevesiyle ilgili dilini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetLanguageInfo ( 
+   BSTR* pbstrLanguage,
+   GUID* pguidLanguage
+);
+```
+
+```csharp
+int GetLanguageInfo ( 
+   ref string pbstrLanguage,
+   ref Guid   pguidLanguage
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `pbstrLanguage`
+
+ [out] Bu yığın çerçevesiyle ilgili yöntemini uygulayan dil adını döndürür.
+
+ `pguidLanguage`
+
+ [out] Döndürür `GUID` dili. İçin [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] diller, örneğin, aşağıdaki döndürülen:
+
+-   `guidVBScriptLang`
+
+-   `guidJScriptLang`
+
+-   `guidCPPLang`
+
+-   `guidVBLang`
+
+-   `guidSQLLang`
+
+-   `guidScriptLang`
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılı olursa döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

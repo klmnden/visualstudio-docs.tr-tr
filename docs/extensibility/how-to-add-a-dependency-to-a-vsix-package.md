@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba9f1f5f1d656dc2283d9cc943ca03f752cb5067
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 225f2bba47aea209e406abe4555b508a2ee93ade
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000135"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708582"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Nasıl yapılır: VSIX paketine bağımlılık ekleme
 
@@ -49,6 +49,6 @@ Vsıxınstaller Visual Studio'nun önceki sürümleri algılamak ve daha yeni bi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md)   
- [Uzantıları Windows Installer dağıtımı için hazırlama](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [Bir VSIX paketinin anatomisi](../extensibility/anatomy-of-a-vsix-package.md)
+- [Uzantıları Windows Installer dağıtımı için hazırlama](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_STATE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315423"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709259"
 ---
 # <a name="bpstate"></a>BP_STATE
 İlişkili bir kesme noktası varlığı ve de etkin olup olmadığını belirtir.
@@ -44,17 +44,13 @@ public enum enum_BP_STATE {
 ```
 
 ## <a name="members"></a>Üyeler
-BPS_NONE  
-Hiçbir kesme noktası bulunduğunu belirtir.
+Hiçbir kesme noktası var. BPS_NONE belirtir.
 
-BPS_DELETED  
-Kesme noktası silindiğini belirtir.
+Kesme noktası silindi BPS_DELETED belirtir.
 
-BPS_DISABLED  
-Kesme noktasını devre dışı olduğunu belirtir.
+BPS_DISABLED kesme noktasını devre dışı olduğunu belirtir.
 
-BPS_ENABLED  
-Kesme noktası etkin olduğunu belirtir.
+Kesme noktası etkinleştirildiğinde BPS_ENABLED belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 Öğesinden döndürülen [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) yöntemi.
@@ -67,5 +63,5 @@ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
 Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

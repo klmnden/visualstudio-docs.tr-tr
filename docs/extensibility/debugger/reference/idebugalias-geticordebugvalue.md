@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias::GetICorDebugValue | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAlias::GetICorDebugValue
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38debf5be309a97367f9a14c5f07ec3db6e7b666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59506af5ad48bd18c454f4c59367921eed1e679a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005949"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707919"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
-Bu diğer adla ilişkilendirilmiş değeri temsil eden bir yönetilen kod arabirim alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
-);  
-```  
-  
-```csharp  
-int GetICorDebugValue(  
-   out object ppUnk  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `ppUnk`  
- [out] `IUnknown` bu diğer adla ilişkilendirilmiş değeri temsil eden arabirim. Bu arabirim için sorgulanabilir `ICorDebugValue` arabirimi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca yönetilen değerlere uygulanır ( `ICorDebugValue` arabirim kullanılabilir [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] ve tanımlanan [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK cordebug.idl dosyasında).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
+Bu diğer adla ilişkilendirilmiş değeri temsil eden bir yönetilen kod arabirim alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
+);
+```
+
+```csharp
+int GetICorDebugValue(
+   out object ppUnk
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+ `ppUnk`
+
+ [out] `IUnknown` bu diğer adla ilişkilendirilmiş değeri temsil eden arabirim. Bu arabirim için sorgulanabilir `ICorDebugValue` arabirimi.
+
+## <a name="return-value"></a>Dönüş Değeri
+ Başarılıysa S_OK döndürür; Aksi takdirde bir hata kodu döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+ Bu yöntem yalnızca yönetilen değerlere uygulanır ( `ICorDebugValue` arabirim kullanılabilir [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] ve tanımlanan [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK cordebug.idl dosyasında).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

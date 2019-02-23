@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34040d368a531d257ef72d6e883cb6e151f28a0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 656e491e683c7ec2de23ea7e49938e833af3a295
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636209"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709622"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Genel iş parçacığı sayısını ayarlar ve bu sayı geçerli iş parçacığına atar.
@@ -32,7 +32,9 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>Parametreler
-- [in] `threadCount` Kullanılacak iş parçacığı sayısı.
+[in] `threadCount`
+
+ Kullanılacak iş parçacığı sayısı.
 
 ## <a name="return-value"></a>Dönüş değeri
  Bir **HRESULT** ile **başarılı** iş parçacığı sayısı güncelleştirdiyseniz biti ayarlanmamış.

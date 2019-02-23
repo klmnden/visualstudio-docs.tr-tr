@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d3dd7d77caa1e3c7a3539638d125d927bebfbf
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450587"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721527"
 ---
 # <a name="features-of-the-code-editor"></a>Kod Düzenleyicisi özellikleri
 
@@ -60,7 +60,7 @@ Gelişmiş Özellikler bulabilirsiniz **Düzenle** > **Gelişmiş** araç çubu�
 |Küçük harfe Dönüştür|Küçük harf, seçimdeki tüm karakterleri veya herhangi bir seçim yoksa ekleme noktasındaki karakteri küçük harfe değiştirir. Kısayol: **CTRL**+**U**.|
 |Seçili satırları Yukarı Taşı|Seçili satır bir satır yukarı taşır. Kısayol: **Alt**+**yukarı ok**.|
 |Seçili satırları Aşağı Taşı|Seçili satır bir satır aşağı taşır. Kısayol: **Alt**+**aşağı ok**.|
-|Yatay boşluğu Sil|Sekme veya boşluk geçerli satırın sonunda siler.|
+|Yatay boşluğu Sil|Sekme veya boşluk geçerli satırın sonunda siler. Kısayol: **CTRL**+**K**, **Ctrl**+**\\**|
 |Boşluğu görüntüle|Boşlukları Kabarık noktalar olarak, sekmeleri oklar olarak görüntüler. Bir dosyanın sonu dikdörtgen bir simge olarak görüntülenir. Varsa **Araçları** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >  **Sözcük kaydırma** > **Show görünür glyph'leri sözcük kaydırma için** olduğu belirlenirse, o glyph de gösterilir.|
 |Sözcük kaydırma|Tüm satırların kod penceresinde görünür olmasını belgeye neden olur. Sözcük kaydırma ve buna kapatabilirsiniz **metin düzenleyici tüm diller** ayarları (**Araçları** > **seçenekleri** > **metin düzenleyicisi**   >  **Tüm diller**).|
 |Seçimi açıklama satırı yap|Seçime veya geçerli satıra yorum karakterleri ekler. Kısayol: **CTRL**+**K**, **Ctrl**+**C**|
@@ -76,7 +76,7 @@ Kod Düzenleyicisi'nde çeşitli geriye doğru gezinmek gibi farklı yolları ve
 
 ## <a name="find-references-in-your-code-base"></a>Kod tabanınızın başvuruları Bul
 
-Belirli kod öğelerinin tabanınızın Burada başvurulan bulmak için kullanabileceğiniz **tüm başvuruları Bul** komutu. Ayrıca, tıkladığınızda bir tür veya üye, **başvuru vurgulama** özelliği, bu türe veya üyeye tüm başvurularını otomatik olarak vurgular. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
+Belirli kod öğelerinin tabanınızın Burada başvurulan bulmak için kullanabileceğiniz **tüm başvuruları Bul** komut veya basın **Shift**+**F12**. Ayrıca, tıkladığınızda bir tür veya üye, **başvuru vurgulama** özelliği, bu türe veya üyeye tüm başvurularını otomatik olarak vurgular. Daha fazla bilgi için [kodunuzdaki başvuruları bulma](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Düzenleyiciyi özelleştirme
 

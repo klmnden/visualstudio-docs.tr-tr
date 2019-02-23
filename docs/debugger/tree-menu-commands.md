@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b026da51014ec8ffb5de444b4e42978604bf7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932005"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707113"
 ---
 # <a name="tree-menu-commands"></a>Ağaç Menü Komutları
-**Ağaç** menü komutlarını genişletmek veya daraltmak için görünümler sağlar.  
-  
- **Bir düzey Genişlet**  
- Geçerli seçilmiş öğe Sistem Görünümü'nde bir düzey altındaki görüntüleyerek genişletir.  
-  
- **Dalı genişlet**  
- Seçili öğenin altındaki tüm düzeyleri genişletir.  
-  
- **Tümünü Genişlet**  
- Genişletir ve Sistem Görünümü'nde tüm düzeylerini görüntüler.  
-  
- **Daralt**  
- Seçili öğenin altındaki tüm düzeylerini daraltır.
+**Ağaç** menü komutlarını genişletmek veya daraltmak için görünümler sağlar.
+
+ **Bir düzey Genişlet** sistem görünümünde seçili öğenin bir düzey altındaki görüntüleyerek genişletir.
+
+ **Dalı genişlet** seçili öğenin altındaki tüm düzeyleri genişletir.
+
+ **Tümünü Genişlet** genişler ve Sistem Görünümü'nde tüm düzeylerini görüntüler.
+
+ **Daralt** seçili öğenin altındaki tüm düzeylerini daraltır.

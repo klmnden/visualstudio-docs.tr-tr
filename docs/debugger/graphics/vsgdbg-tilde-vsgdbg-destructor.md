@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800a270ddb8e320bc7f7f712850cfd84200f00a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 64d2ce58a0a543a6bccfca4d96ff57915d45ce49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983618"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686567"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (Yok Edici)
-Örneğini yok eder `VsgDbg` sınıfı. Grafik bilgilerini etkin bir şekilde kaydedilen, grafik günlük dosyasını sonlandırılır ve ve etkin bir şekilde grafik bilgilerini yakalama sırasında kullanılan kaynaklar serbest bırakılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```C++  
-~VsgDbg();  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [VsgDbg::VsgDbg (Oluşturucu)](vsgdbg-vsgdbg-constructor.md)
+Örneğini yok eder `VsgDbg` sınıfı. Grafik bilgilerini etkin bir şekilde kaydedilen, grafik günlük dosyasını sonlandırılır ve ve etkin bir şekilde grafik bilgilerini yakalama sırasında kullanılan kaynaklar serbest bırakılır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C++
+~VsgDbg();
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [VsgDbg::VsgDbg (Oluşturucu)](vsgdbg-vsgdbg-constructor.md)

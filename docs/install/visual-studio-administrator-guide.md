@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970419"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710116"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Yönetici Kılavuzu
 
@@ -54,7 +54,7 @@ Her hedef bilgisayar karşıladığı sürece Visual Studio 2017 istemci iş ist
 Yardımcı olacak çeşitli araçlar sunuyoruz [algılamak ve yüklü Visual Studio Örnekleri yönetme](tools-for-managing-visual-studio-instances.md) istemci makinelerinde.
 
 > [!TIP]
-> Yönetici Kılavuzu belgelerde ek olarak, iyi bir Visual Studio 2017 kurulumu hakkında bilgi kaynağıdır [sistem durumu Ilgaz'ın blog](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+> Yönetici Kılavuzu belgelerde ek olarak, iyi bir Visual Studio 2017 kurulumu hakkında bilgi kaynağıdır [Visual Studio Kurulum arşivleri](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Müşteri geri bildirim ayarlarını belirtin
 

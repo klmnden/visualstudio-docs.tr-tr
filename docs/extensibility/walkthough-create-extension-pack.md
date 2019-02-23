@@ -10,31 +10,31 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866328"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718376"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>İzlenecek yol: Uzantı paketi oluştur
+# <a name="walkthrough-create-an-extension-pack"></a>İzlenecek yol: Uzantı Paketi Oluşturma
 
 Birlikte yüklenebilir uzantıları kümesi bir uzantı paketidir. Uzantı paketleri kolayca sık kullandığınız uzantıların diğer kullanıcılarla paylaşmak ya da belirli bir senaryo için bir arada uzantıları kümesini paket olanak sağlar.
-  
+
 ## <a name="prerequisites"></a>Önkoşullar
 
-Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).  
+Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
 Uzantı paketi bu özellik, Visual Studio 15,8 önizleme 2'den itibaren kullanılabilir.
-  
+
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>Uzantı paketi öğesi şablonuyla uzantı oluşturma
 
 Uzantı paketi öğe şablonu, bir uzantı paketi ile birlikte yüklenen uzantı kümesi oluşturur.
-  
-1. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** ve ardından **genişletilebilirlik**. İçinde **şablonları** bölmesinde **VSIX projesi**. İçinde **adı** kutusuna `Test Extension Pack`. **Tamam**'ı tıklatın.  
-  
-2. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. Git için Visual C# **genişletilebilirlik** düğümünü seçip alt **uzantı paketi**. Varsayılan dosya adı (ExtensionPack1.cs) bırakın.  
-  
+
+1. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** ve ardından **genişletilebilirlik**. İçinde **şablonları** bölmesinde **VSIX projesi**. İçinde **adı** kutusuna `Test Extension Pack`. **Tamam**'ı tıklatın.
+
+2. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. Git için Visual C# **genişletilebilirlik** düğümünü seçip alt **uzantı paketi**. Varsayılan dosya adı (ExtensionPack1.cs) bırakın.
+
 3. Aşağıdaki kodu içeren ExtensionPack1.vsext dosya eklendiğinde
 
    ```json
@@ -53,18 +53,18 @@ Uzantı paketi öğe şablonu, bir uzantı paketi ile birlikte yüklenen uzantı
         "name": "CopyAsHtml"
       }
     ]
-   }  
+   }
    ```
 
 4. Uzantının uzantısı paketinde içerecek şekilde vsixıd bulunabilir [Visual Studio Market](https://marketplace.visualstudio.com/). Uzantısına tıklayın ve eklemek istediğiniz bulma **kopya Kimliğini**. Var olan güncelleştirme **Vsixıd** yukarıdaki içinde dosya veya başka bir uzantı listeye ekleyin.
 
     ![Market'ten Vsixıd kopyalayın](media/vsixid-marketplace.png)
 
-5. Projeyi oluşturmak ve Market'te uzantınızı yükleyin. Bkz: [Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). 
-    
+5. Projeyi oluşturmak ve Market'te uzantınızı yükleyin. Bkz: [Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+
 > [!NOTE]
 > Uzantı paketi, kullanılabilir uzantıları yalnızca yükleyebilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) veya [özel galeri](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
- 
+
 ## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>Visual Studio Market'ten uzantı paketini yükle
 
 Uzantı yayımlandıktan sonra Visual Studio'da yükleyin ve test etmek.

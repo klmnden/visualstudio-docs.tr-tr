@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952833"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703259"
 ---
 # <a name="environment-options-dialog-box"></a>Ortam Seçenekleri İletişim Kutusu
 
@@ -35,7 +35,7 @@ Sayfaları kullanabilirsiniz **ortam** klasöründe **seçenekleri** nasıl tüm
 |Klavye eşleme seçeneklerini ayarlamak için.|[Klavye, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |Bildirimleri etkin olup olmadığını belirtmek için.|[Bildirimler, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |Pencere hızlı başlatma seçeneklerini belirtmek için.|[Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|Başlangıç sayfasını belirtmek için Seçenekler'i tıklatın.|[Başlangıç, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/startup-environment-options-dialog-box.md)|
+|Başlatma seçeneklerini belirtmek için.|[Başlangıç, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/startup-environment-options-dialog-box.md)|
 |Ayarları makineler arasında dolaştırmak belirtmek için.|[Eşitlenmiş Ayarlar, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Görevler ve görev listeleri için seçenekleri ayarlamayı öğrenin.|[Görev Listesi, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Sistem kaynak düzenleyicisini değiştirerek ve Internet Explorer seçeneklerini yapılandırarak varsayılan Giriş ve Arama sayfalarınızı değiştirin.|[Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/web-browser-environment-options-dialog-box.md)|

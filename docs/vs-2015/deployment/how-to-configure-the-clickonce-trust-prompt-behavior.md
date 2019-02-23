@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41767546902e131f46230c5ee4e2e3085b1ff8a5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773413"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705579"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce Güven İstemi Davranışını Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
     1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit32`ve ardından **Tamam**.  
+    2.  İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
@@ -119,7 +119,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
     1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit`ve ardından **Tamam**.  
+    2.  İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   
@@ -176,7 +176,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
     1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit`ve ardından **Tamam**.  
+    2.  İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
   
 2.  Aşağıdaki kayıt defteri anahtarını bulun:  
   

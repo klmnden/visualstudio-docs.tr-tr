@@ -10,39 +10,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ff4fb8a8a2e60b047361624ae805910906c19e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0ea617a252d60d8e8d5810c42f7331508c28165
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022059"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708985"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Eski API'sini kullanarak kod windows özelleştirme
-Bir kod penceresinde bir veya daha fazla metin görünümlerini destekleyen bir belge penceresi nesnesidir. Tam bir kod penceresi özelliklerini ilişkili dil hizmetine bağlıdır. Çok Belgeli Arabirim (MDI) modunda kod penceresinde MDI alt çerçeve ' dir.  
-  
- Kodu windows dil Hizmetleri tarafından denetlenir ve her dil hizmeti, kendi kod penceresinde yöneticisini sağlayabilir. Bu, kod penceresi dalgalı çizgiler, renklendirme ve daha fazlası gibi kendi kenarlıklar eklemek dil hizmeti sağlar. Core pencereyi oluşturma hakkında daha fazla bilgi için bkz. [eski API'yi kullanarak çekirdek Düzenleyici örneği](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
-  
- Bir kod penceresi bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> metni görünümü ve nesne tarihli herhangi Kenarlıklar nesnesi. Düzenleyici, çekirdek Örnekleme sırasında kod penceresinde oluşturduğunuzda, dil hizmetinizi ekleyebilirsiniz bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> kod penceresine olarak aşağıdaki çizimde gösterilmiştir.  
-  
- ![CodeWindow grafiği](../extensibility/media/vscodewindow.gif "vscodewindow")  
-Kod penceresi  
-  
- Dil hizmeti, kod penceresi Yöneticisi uygular ve açılan çubuğu gibi Kenarlıklar yönetmekten sorumludur. Kod penceresi çağrıları <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> kod penceresinde başlatma sırasında yöntemi. Bu çağrı yapıldığında, dil hizmeti açılan çubuğu veya düğme çubuğu ekleyebilirsiniz (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) için kod penceresi.  
-  
-## <a name="in-this-section"></a>Bu bölümde  
- `Customizing Code Windows by Using the Legacy API`  
- Kodu windows eski API'yi kullanarak özelleştirmek nasıl açıklar.  
-  
- [Nasıl yapılır: Konak bir düzenleyicide başka bir düzenleyici](../extensibility/how-to-host-an-editor-in-another-editor.md)  
- Bir düzenleyici penceresi içine ikinci bir düzenleyici barındırmak nasıl açıklar.  
-  
- [Nasıl yapılır: Düzenleyici odağı kaybettiğinde olayları tetiklemesine](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
- Bir belge veri nesnesine bir belge görünümü ekleme açıklanmaktadır.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Eski API'yi kullanarak çekirdek Düzenleyici örneği](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Eski API'yi kullanarak erişim erişimcisinde görünümü](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+Bir kod penceresinde bir veya daha fazla metin görünümlerini destekleyen bir belge penceresi nesnesidir. Tam bir kod penceresi özelliklerini ilişkili dil hizmetine bağlıdır. Çok Belgeli Arabirim (MDI) modunda kod penceresinde MDI alt çerçeve ' dir.
+
+ Kodu windows dil Hizmetleri tarafından denetlenir ve her dil hizmeti, kendi kod penceresinde yöneticisini sağlayabilir. Bu, kod penceresi dalgalı çizgiler, renklendirme ve daha fazlası gibi kendi kenarlıklar eklemek dil hizmeti sağlar. Core pencereyi oluşturma hakkında daha fazla bilgi için bkz. [eski API'yi kullanarak çekirdek Düzenleyici örneği](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).
+
+ Bir kod penceresi bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> metni görünümü ve nesne tarihli herhangi Kenarlıklar nesnesi. Düzenleyici, çekirdek Örnekleme sırasında kod penceresinde oluşturduğunuzda, dil hizmetinizi ekleyebilirsiniz bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> kod penceresine olarak aşağıdaki çizimde gösterilmiştir.
+
+ ![CodeWindow grafiği](../extensibility/media/vscodewindow.gif "vscodewindow") kod penceresi
+
+ Dil hizmeti, kod penceresi Yöneticisi uygular ve açılan çubuğu gibi Kenarlıklar yönetmekten sorumludur. Kod penceresi çağrıları <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> kod penceresinde başlatma sırasında yöntemi. Bu çağrı yapıldığında, dil hizmeti açılan çubuğu veya düğme çubuğu ekleyebilirsiniz (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) için kod penceresi.
+
+## <a name="in-this-section"></a>Bu bölümde
+ `Customizing Code Windows by Using the Legacy API` Kodu windows eski API'yi kullanarak özelleştirmek nasıl açıklar.
+
+- [Nasıl yapılır: Başka bir düzenleyicide bir düzenleyicide konak](../extensibility/how-to-host-an-editor-in-another-editor.md) bir düzenleyici penceresi içine ikinci bir düzenleyici barındırmak nasıl açıklar.
+
+- [Nasıl yapılır: Düzenleyici odağı kaybettiğinde olayları yangın](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md) belge veri nesnesine bir belge görünümü ekleme açıklanmaktadır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
+- [Eski API'yi kullanarak çekirdek Düzenleyici örneği](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
+- [Eski API'yi kullanarak erişim erişimcisinde görünümü](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317776"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720191"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace özellikleri (C#, Visual Basic, C++)
 
@@ -56,7 +56,7 @@ Anlık görüntü Visual Studio Enterprise 2017 sürüm 15.5 ve üzeri ve Window
 
 Bu, varsayılan olarak etkin değildir, ancak IntelliTrace yöntemi çağrılarını olaylarla birlikte kaydedebilir. Yöntem çağrıları Git toplanmasını etkinleştirmek için **Araçlar > Seçenekler > IntelliTrace > Genel**seçip **IntelliTrace olayları ve arama bilgileri (sadece yönetilen)**.
 
-.NET Core ve ASP.NET Core uygulamaları için çağrı bilgileri şu anda kullanılamıyor. 
+.NET Core ve ASP.NET Core uygulamaları için çağrı bilgileri şu anda kullanılamıyor.
 
 Bu, çağrı yığını geçmişini görmenizi ve kodunuzdaki çağrılar arasında ileri geri adım sağlar. IntelliTrace yöntem adları, yöntemi giriş ve çıkış noktaları ve belirli parametre değerleri ve dönüş değerleri gibi verileri kaydeder.
 

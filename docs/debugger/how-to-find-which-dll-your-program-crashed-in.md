@@ -22,33 +22,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9414a91c49b152149cfe13f511ec27e2f4ea9f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7006de0241b0e0c050670ccc14a835f11db1b260
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965347"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691442"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Nasıl yapılır: Hangi DLL'de kilitlendiğini programınızın bulma (C#, C++, Visual Basic F#)
-  
- Uygulamanızı bir sistem DLL'i veya başka birisinin kodu çağrısı sırasında kilitleniyor bulmak kilitlenme oluştuğunda hangi DLL etkindi gerekirse. Kendi programımı dışında bir DLL içindeki bir kilitlenme karşılaşırsanız, konumu şunu kullanarak belirleyebilirsiniz **modülleri** penceresi.  
-  
-### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Modüller penceresini kullanarak bir kilitlenme burada bulmak için oluştu  
-  
+
+ Uygulamanızı bir sistem DLL'i veya başka birisinin kodu çağrısı sırasında kilitleniyor bulmak kilitlenme oluştuğunda hangi DLL etkindi gerekirse. Kendi programımı dışında bir DLL içindeki bir kilitlenme karşılaşırsanız, konumu şunu kullanarak belirleyebilirsiniz **modülleri** penceresi.
+
+### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Modüller penceresini kullanarak bir kilitlenme burada bulmak için oluştu
+
 1.  Kilitlenme durumu oluştuğu adresini not edin.
 
     Hata iletisinde adresi gösterilmez, DLL tanımlamak için alternatif yöntemler kullanmayı gerekebilir. Bir sistem DLL'i şüpheleniyorsanız yapabilecekleriniz [yük sembolleri](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Microsoft sembol sunucularından hata ayıklama sırasında. Aksi takdirde, gerekebilir [bir döküm dosyası oluşturma](../debugger/using-dump-files.md) yığın yerine bilgi olduğu. Çeşitli [Araçları](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) döküm dosyalarını oluşturmak kullanılabilir.
-  
-2.  Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **modülleri**.  
-  
-3.  İçinde **modülleri** penceresinde Bul **adresi** sütun. Bunu görmek için kaydırma çubuğunu kullanmanız gerekebilir.  
-  
-4.  Tıklayın **adresi** DLL'leri adresine göre sıralamak için sütunun üstünde düğme.  
-  
-5.  Sıralanmış listenin kilitlenme konumu adresi aralığı içeren DLL bulmak için tarayın.  
-  
-6.  Bakmak **adı** ve **yolu** DLL adı ve yolu görmek için sütun.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md)   
- [Nasıl yapılır: Modüller Penceresini Kullanma](../debugger/how-to-use-the-modules-window.md)
+
+2.  Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **modülleri**.
+
+3.  İçinde **modülleri** penceresinde Bul **adresi** sütun. Bunu görmek için kaydırma çubuğunu kullanmanız gerekebilir.
+
+4.  Tıklayın **adresi** DLL'leri adresine göre sıralamak için sütunun üstünde düğme.
+
+5.  Sıralanmış listenin kilitlenme konumu adresi aralığı içeren DLL bulmak için tarayın.
+
+6.  Bakmak **adı** ve **yolu** DLL adı ve yolu görmek için sütun.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [DLL Projelerinde Hata Ayıklama](../debugger/debugging-dll-projects.md)
+- [Nasıl yapılır: Modüller Penceresini Kullanma](../debugger/how-to-use-the-modules-window.md)

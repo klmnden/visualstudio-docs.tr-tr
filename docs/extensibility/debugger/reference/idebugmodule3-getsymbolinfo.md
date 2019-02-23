@@ -1,7 +1,7 @@
 ---
 title: IDebugModule3::GetSymbolInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugModule3::GetSymbolInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adffeb018bfaa597d399042ef9651965674f92bb
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450153"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717448"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Her yol arama sonuçlarını yanı sıra semboller için Aranan yol listesini alır.
@@ -40,11 +40,13 @@ int GetSymbolInfo(
 ```
 
 #### <a name="parameters"></a>Parametreler
-`dwFields`  
-[in] Bayraklarının bir birleşimi [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) hangi alanları belirten sabit listesi `pInfo` doldurulacak olan.
+`dwFields`
 
-`pInfo`  
-[out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) Yapı üyeleri olan belirtilen bilgileriyle doldurulacak. Bu bir null değeri ise, bu yöntemi döndürür `E_INVALIDARG`.
+ [in] Bayraklarının bir birleşimi [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) hangi alanları belirten sabit listesi `pInfo` doldurulacak olan.
+
+`pInfo`
+
+ [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) Yapı üyeleri olan belirtilen bilgileriyle doldurulacak. Bu bir null değeri ise, bu yöntemi döndürür `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Dönüş Değeri
 Yöntem başarılı olursa, döndürür `S_OK`; Aksi takdirde bir hata kodu döndürür.
@@ -81,12 +83,12 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Soubor nebyl nalezen.**  
-**c:\winnt\symbols\user32.pdb... Sürüm eşleşmiyor.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Sembol yüklenmedi.**
+**c:\symbols\user32.pdb... Soubor nebyl nalezen. ** 
+ **c:\winnt\symbols\user32.pdb... Sürüm eşleşmiyor. ** 
+ ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Sembol yüklenmedi.**
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)  
-[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
-[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
+- [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
+- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)
+- [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

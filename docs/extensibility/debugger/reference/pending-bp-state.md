@@ -1,7 +1,7 @@
 ---
 title: PENDING_BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - PENDING_BP_STATE
 helpviewer_keywords:
@@ -12,60 +12,56 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff1315b2af395e8d809c2cbcbf9f642ac1c93557
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029888"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688549"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
-Bekleyen kesme noktasının (henüz bağlı bir kesme noktası) durumunu belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum enum_PENDING_BP_STATE {   
-   PBPS_NONE     = 0x0000,  
-   PBPS_DELETED  = 0x0001,  
-   PBPS_DISABLED = 0x0002,  
-   PBPS_ENABLED  = 0x0003  
-};  
-typedef DWORD PENDING_BP_STATE;  
-```  
-  
-```csharp  
-public enum enum_PENDING_BP_STATE {   
-   PBPS_NONE     = 0x0000,  
-   PBPS_DELETED  = 0x0001,  
-   PBPS_DISABLED = 0x0002,  
-   PBPS_ENABLED  = 0x0003  
-};  
-```  
-  
-## <a name="members"></a>Üyeler  
- PBPS_NONE  
- Sıfır için yer tutucu. Bu değeri hiçbir zaman döndürülür.  
-  
- PBPS_DELETED  
- Bekleyen kesme noktasının silindiğini gösterir.  
-  
- PBPS_DISABLED  
- Bekleyen kesme noktasını devre dışı olduğunu gösterir.  
-  
- PBPS_ENABLED  
- Bekleyen kesme noktasının etkin olduğunu gösterir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Olarak `state` üyesi [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) yapısı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Üstbilgi: msdbg.h  
-  
- Ad alanı: Microsoft.VisualStudio.Debugger.Interop  
-  
- Derleme: Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sabit listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+Bekleyen kesme noktasının (henüz bağlı bir kesme noktası) durumunu belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum enum_PENDING_BP_STATE { 
+   PBPS_NONE     = 0x0000,
+   PBPS_DELETED  = 0x0001,
+   PBPS_DISABLED = 0x0002,
+   PBPS_ENABLED  = 0x0003
+};
+typedef DWORD PENDING_BP_STATE;
+```
+
+```csharp
+public enum enum_PENDING_BP_STATE { 
+   PBPS_NONE     = 0x0000,
+   PBPS_DELETED  = 0x0001,
+   PBPS_DISABLED = 0x0002,
+   PBPS_ENABLED  = 0x0003
+};
+```
+
+## <a name="members"></a>Üyeler
+ Sıfır için yer tutucu PBPS_NONE. Bu değeri hiçbir zaman döndürülür.
+
+ PBPS_DELETED bekleyen kesme noktasının silindiğini gösterir.
+
+ Bekleyen kesme noktasının etkinleştirilip PBPS_DISABLED gösterir.
+
+ PBPS_ENABLED bekleyen kesme noktasının etkin olduğunu gösterir.
+
+## <a name="remarks"></a>Açıklamalar
+ Olarak `state` üyesi [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) yapısı.
+
+## <a name="requirements"></a>Gereksinimler
+ Üstbilgi: msdbg.h
+
+ Ad alanı: Microsoft.VisualStudio.Debugger.Interop
+
+ Derleme: Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>Ayrıca Bkz.
+- [Sabit Listeleri](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

@@ -12,86 +12,93 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124088599eced9d5ae6bc17365d06dc36f81987
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027899"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682758"
 ---
 # <a name="sccadd-function"></a>SccAdd işlevi
-Bu işlev, yeni dosyaların kaynak denetim sistemine ekler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-SCCRTN SccAdd(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG*     pfOptions,  
-   LPCMDOPTS pvOptions  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- pvContext  
- [in] Kaynak Denetimi Eklentisi bağlam yapısı.  
-  
- hWnd  
- [in] Kaynak Denetimi Eklentisi sağladığı herhangi bir iletişim kutusu için bir üst öğe olarak kullanabileceğiniz IDE penceresi için bir tanıtıcı.  
-  
- nFiles  
- [in] Geçerli projeye, verilen eklenecek seçili dosya sayısı `lpFileNames` dizisi.  
-  
- lpFileNames  
- [in] Eklenecek dosyaların tam yerel adları dizisi.  
-  
- lpComment  
- [in] Eklenmekte olan dosyalar tümüne uygulanacak açıklama.  
-  
- pfOptions  
- [in] Sağlanan dosya başına temelinde, komut bayrakları dizisi.  
-  
- pvOptions  
- [in] Kaynak denetimi fişi özel seçenekleri.  
-  
-## <a name="return-value"></a>Dönüş değeri  
- Kaynak Denetimi Eklentisi uygulanması bu işlev, aşağıdaki değerlerden birini döndürmesi beklenir:  
-  
-|Değer|Açıklama|  
-|-----------|-----------------|  
-|SCC_OK|Ekleme işlemi başarılı oldu.|  
-|SCC_E_FILEALREADYEXISTS|Seçili dosya kaynak denetimi altında zaten var.|  
-|SCC_E_TYPENOTSUPPORTED|Kaynak denetim sistemi tarafından (örneğin, ikili) dosya türü desteklenmiyor.|  
-|SCC_E_OPNOTSUPPORTED|Kaynak denetim sistemi bu işlemi desteklemiyor.|  
-|SCC_E_ACCESSFAILURE|Kaynak denetim sistemi, ağ veya çakışma sorunları nedeniyle muhtemelen erişilirken sorun oluştu. Bir yeniden deneme önerilir.|  
-|SCC_E_NOTAUTHORIZED|Kullanıcı bu işlemi gerçekleştirmek için izin verilmiyor.|  
-|SCC_E_NONSPECIFICERROR|Belirli olmayan hata; ekleme gerçekleştirilemiyor.|  
-|SCC_I_OPERATIONCANCELED|İşlem tamamlanmadan önce iptal edildi.|  
-|SCC_I_RELOADFILE|Bir dosya veya projenin yeniden yüklenmesi gerekiyor.|  
-|SCC_E_FILENOTEXIST|Yerel dosya bulunamadı.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Normal `fOptions` burada bir dizi tarafından değiştirilir `pfOptions`, biriyle `LONG` seçeneği her dosya belirtimi. Dosya türü dosyası başka bir dosya değişebilir olmasıdır.  
-  
+Bu işlev, yeni dosyaların kaynak denetim sistemine ekler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+SCCRTN SccAdd(
+   LPVOID    pvContext,
+   HWND      hWnd,
+   LONG      nFiles,
+   LPCSTR*   lpFileNames,
+   LPCSTR    lpComment,
+   LONG*     pfOptions,
+   LPCMDOPTS pvOptions
+);
+```
+
+### <a name="parameters"></a>Parametreler
+ pvContext
+
+[in] Kaynak Denetimi Eklentisi bağlam yapısı.
+
+ hWnd
+
+[in] Kaynak Denetimi Eklentisi sağladığı herhangi bir iletişim kutusu için bir üst öğe olarak kullanabileceğiniz IDE penceresi için bir tanıtıcı.
+
+ nFiles
+
+[in] Geçerli projeye, verilen eklenecek seçili dosya sayısı `lpFileNames` dizisi.
+
+ lpFileNames
+
+[in] Eklenecek dosyaların tam yerel adları dizisi.
+
+ lpComment
+
+[in] Eklenmekte olan dosyalar tümüne uygulanacak açıklama.
+
+ pfOptions
+
+[in] Sağlanan dosya başına temelinde, komut bayrakları dizisi.
+
+ pvOptions
+
+[in] Kaynak denetimi fişi özel seçenekleri.
+
+## <a name="return-value"></a>Dönüş değeri
+ Kaynak Denetimi Eklentisi uygulanması bu işlev, aşağıdaki değerlerden birini döndürmesi beklenir:
+
+|Değer|Açıklama|
+|-----------|-----------------|
+|SCC_OK|Ekleme işlemi başarılı oldu.|
+|SCC_E_FILEALREADYEXISTS|Seçili dosya kaynak denetimi altında zaten var.|
+|SCC_E_TYPENOTSUPPORTED|Kaynak denetim sistemi tarafından (örneğin, ikili) dosya türü desteklenmiyor.|
+|SCC_E_OPNOTSUPPORTED|Kaynak denetim sistemi bu işlemi desteklemiyor.|
+|SCC_E_ACCESSFAILURE|Kaynak denetim sistemi, ağ veya çakışma sorunları nedeniyle muhtemelen erişilirken sorun oluştu. Bir yeniden deneme önerilir.|
+|SCC_E_NOTAUTHORIZED|Kullanıcı bu işlemi gerçekleştirmek için izin verilmiyor.|
+|SCC_E_NONSPECIFICERROR|Belirli olmayan hata; ekleme gerçekleştirilemiyor.|
+|SCC_I_OPERATIONCANCELED|İşlem tamamlanmadan önce iptal edildi.|
+|SCC_I_RELOADFILE|Bir dosya veya projenin yeniden yüklenmesi gerekiyor.|
+|SCC_E_FILENOTEXIST|Yerel dosya bulunamadı.|
+
+## <a name="remarks"></a>Açıklamalar
+ Normal `fOptions` burada bir dizi tarafından değiştirilir `pfOptions`, biriyle `LONG` seçeneği her dosya belirtimi. Dosya türü dosyası başka bir dosya değişebilir olmasıdır.
+
 > [!NOTE]
->  Her ikisini de belirtmek için geçersiz `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` ne belirtmek için aynı dosyayı, ancak seçeneklerini geçerlidir. Hiçbiri ayardır ayarı ile aynı `SCC_FILETYPE_AUTO`, bu durumda, kaynak denetim eklentisi autodetects dosya türü.  
-  
- Kullanılan bayrakların listesi aşağıdadır `pfOptions` dizisi:  
-  
-|Seçenek|Değer|Açıklama|  
-|------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0x00|Kaynak Denetimi Eklentisi, dosya türü algılanmalıdır.|  
-|SCC_FILETYPE_TEXT|0x01|Bir ASCII metin dosyası gösterir.|  
-|SCC_FILETYPE_BINARY|0x02|ASCII metni başka bir dosya türünü belirtir.|  
-|SCC_ADD_STORELATEST|0x04|Dosya hiçbir deltaları yalnızca en son kopyasını depolar.|  
-|SCC_FILETYPE_TEXT_ANSI|0x08|Dosya ANSI metin olarak değerlendirir.|  
-|SCC_FILETYPE_UTF8|0x10|UTF8 biçiminde bir Unicode metin olarak dosyanın değerlendirir.|  
-|SCC_FILETYPE_UTF16LE|0x20|Küçük Endian biçiminde UTF16 Unicode metin olarak dosyanın değerlendirir.|  
-|SCC_FILETYPE_UTF16BE|0x40|Davranır dosya UTF16 Big Endian Unicode metin olarak biçimlendirir.|  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)
+>  Her ikisini de belirtmek için geçersiz `SCC_FILETYPE_TEXT` ve `SCC_FILETYPE_BINARY` ne belirtmek için aynı dosyayı, ancak seçeneklerini geçerlidir. Hiçbiri ayardır ayarı ile aynı `SCC_FILETYPE_AUTO`, bu durumda, kaynak denetim eklentisi autodetects dosya türü.
+
+ Kullanılan bayrakların listesi aşağıdadır `pfOptions` dizisi:
+
+|Seçenek|Değer|Açıklama|
+|------------|-----------|-------------|
+|SCC_FILETYPE_AUTO|0x00|Kaynak Denetimi Eklentisi, dosya türü algılanmalıdır.|
+|SCC_FILETYPE_TEXT|0x01|Bir ASCII metin dosyası gösterir.|
+|SCC_FILETYPE_BINARY|0x02|ASCII metni başka bir dosya türünü belirtir.|
+|SCC_ADD_STORELATEST|0x04|Dosya hiçbir deltaları yalnızca en son kopyasını depolar.|
+|SCC_FILETYPE_TEXT_ANSI|0x08|Dosya ANSI metin olarak değerlendirir.|
+|SCC_FILETYPE_UTF8|0x10|UTF8 biçiminde bir Unicode metin olarak dosyanın değerlendirir.|
+|SCC_FILETYPE_UTF16LE|0x20|Küçük Endian biçiminde UTF16 Unicode metin olarak dosyanın değerlendirir.|
+|SCC_FILETYPE_UTF16BE|0x40|Davranır dosya UTF16 Big Endian Unicode metin olarak biçimlendirir.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+- [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)
