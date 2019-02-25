@@ -13,12 +13,12 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1efe1266f0d6c8c644aa8115303926f81f74d30
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948621"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796692"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Test denetleyicileri için bağlantı noktalarını yapılandırın ve test aracıları
 
@@ -28,7 +28,7 @@ Test denetleyicisi, test aracısı ve istemci tarafından kullanılan varsayıla
 
 Aşağıdaki çizim, test denetleyicisi, test aracısı ve istemci arasındaki bağlantı noktalarını gösterir. Bunu, bu bağlantı noktalarındaki güvenlik kısıtlamalarını yanı sıra gelen ve giden bağlantılar için hangi bağlantı noktalarının kullanılan açıklar.
 
-![Contoller test ve test aracısı bağlantı noktaları ve güvenlik](../test/media/test-controller-agent-firewall.png)
+![Test denetleyicisi ve test aracısı bağlantı noktaları ve güvenlik](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Gelen bağlantılar
 

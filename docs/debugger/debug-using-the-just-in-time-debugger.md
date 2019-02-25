@@ -1,6 +1,6 @@
 ---
 title: Tam zamanında hata ayıklayıcı ile hata ayıklama | Microsoft Docs
-ms.date: 09/24/18
+ms.date: 09/24/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5300417f7a84292528ff6e1eaea439d7fe82f43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636690"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796562"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Tam zamanında hata ayıklayıcı, Visual Studio kullanarak hata ayıklama
 

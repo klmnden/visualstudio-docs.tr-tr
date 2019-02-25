@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954653"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796627"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
@@ -84,7 +84,7 @@ Bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ya da Azure
 | Hizmet veya senaryo | DNS uç noktası | Protokol | Bağlantı Noktası | Açıklama |
 | - | - | - | - | - |
 | URL<br>çözüm | go.microsoft.com<br><br>aka.MS | | | Sonra uzun URL'leri çözümleyin URL'leri kısaltmak için kullanılan |
-| Başlangıç Sayfası | vsstartpage.blob.core.windows.net | | 443 | Visual Studio Başlangıç sayfasında gösterilen geliştirici haberleri görüntülemek için kullanılır |
+| Başlangıç Sayfası | vsstartpage.blob.core.windows.net | | 443 | Geliştirici Haberleri (Visual Studio 2017 yalnızca) başlangıç sayfasında gösterilen görüntülemek için kullanılır |
 | Hedeflenen<br> Bildirim <br>Hizmet | targetednotifications.azurewebsites.NET <br><br>www.research.net | | 80<br><br>443 | Bildirimleri yalnızca belirli türlerini makineleri/kullanım senaryoları için uygun bir liste için genel bir listesini filtrelemek için kullanılan |
 | Uzantı <br>Güncelleştirme denetimi | marketplace.visualstudio.com<br><br>&#42;. windows.net <br>&#42;.microsoftonline.com <br>&#42;. live.com | | 443 | Yüklü uzantı bir güncelleştirme kullanılabilir olduğunda bildirim sağlamak için kullanılan <br><br> Bir oturum açma konumu olarak kullanılır |
 | Yapay ZEKA proje <br>Tümleştirme | az861674.vo.msecnd.net | | 443<br> | Kayıtlı Application ınsights'ı hesabınız için kullanım verileri göndermek için yeni projeler yapılandırmak için kullanılan |

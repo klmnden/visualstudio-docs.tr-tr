@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311ccb546d1712fc21e6ca01a69b5aa50a21786b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721829"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796757"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Yazı tipleri ve Visual Studio için biçimlendirme
 ##  <a name="BKMK_TheEnvironmentFont"></a> Ortam yazı tipi
@@ -101,9 +101,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 ```
 
 #### <a name="375-environment-font--light"></a>%375 ortam yazı tipi + açık
- **Aşağıdaki gibi görünür:** 34 pt Segoe UI Light **kullanın:** (nadir) benzersiz markalı kullanıcı Arabirimi, gibi Visual Studio 2017 başlangıç sayfası
 
- **Yordam kodu:** Burada `textBlock` önceden tanımlanmış bir TextBlock olduğu ve `label` önceden tanımlanmış bir etiket bulunur:
+**Aşağıdaki gibi görünür:** 34 pt Segoe UI Light
+
+::: moniker range="vs-2017"
+
+**Kullanım için:** (nadir) benzersiz markalı kullanıcı Arabirimi, gibi başlangıç sayfası
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**Kullanım için:** (nadir) benzersiz markalı kullanıcı Arabirimi
+
+::: moniker-end
+
+**Yordam kodu:** Burada `textBlock` önceden tanımlanmış bir TextBlock olduğu ve `label` önceden tanımlanmış bir etiket bulunur:
 
 ```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,  
@@ -112,7 +125,7 @@ label.SetResourceReference(Label.StyleProperty,  
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);
 ```
 
- **XAML:** Bir TextBlock veya gösterildiği gibi bir etiket stilini ayarlayın.
+**XAML:** Bir TextBlock veya gösterildiği gibi bir etiket stilini ayarlayın.
 
 ```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> 
@@ -406,9 +419,21 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="310-environment-font--light"></a>%310 ortam yazı tipi + açık
 
+::: moniker range="vs-2017"
+
 |||
 |-|-|
 |**Kullanım:**<br /><br /> -Daha büyük başlıkta imza iletişim kutuları<br />-Ana rapor başlığı<br /><br /> **Yapın:**<br /><br /> -Cümle kullanma<br />-Her zaman hafif kullanın<br /><br /> **Yapma:**<br /><br /> -Kullanımı için kullanıcı Arabirimi dışında imza başlangıç sayfası gibi kullanıcı Arabirimi<br />-Kalın, italik veya Kalın İtalik<br />-Gövde metni kullan<br />-Araç pencerelerini kullanma|**Aşağıdaki gibi görünür:** 28 pt Segoe UI Light<br /><br /> **Görsel örnek:**<br /><br /> ![%310 ortam yazı tipi örneği &#43; ışık başlık](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|||
+|-|-|
+|**Kullanım:**<br /><br /> -Daha büyük başlıkta imza iletişim kutuları<br />-Ana rapor başlığı<br /><br /> **Yapın:**<br /><br /> -Cümle kullanma<br />-Her zaman hafif kullanın<br /><br /> **Yapma:**<br /><br /> -Kullanımı için kullanıcı Arabirimi imza UI dışında<br />-Kalın, italik veya Kalın İtalik<br />-Gövde metni kullan<br />-Araç pencerelerini kullanma|**Aşağıdaki gibi görünür:** 28 pt Segoe UI Light<br /><br /> **Görsel örnek:**<br /><br /> ![%310 ortam yazı tipi örneği &#43; ışık başlık](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202 a_EF310")|
+
+::: moniker-end
 
 #### <a name="200-environment-font--semilight"></a>% 200'ortam yazı tipi + Semilight
 

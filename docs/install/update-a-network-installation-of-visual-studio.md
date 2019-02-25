@@ -1,7 +1,7 @@
 ---
 title: Bir ağ tabanlı yüklemesini güncelleştirme
 description: Kullanarak ağ tabanlı bir Visual Studio yüklemesini güncelleştirme öğrenin Düzen komutu
-ms.date: 08/14/2017
+ms.date: 2/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ba86dcfb1fb98d9ba88c06a8df2ea3a104ea4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a59bbac5140e4267a52847a2152862057ce24210
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617294"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796640"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ tabanlı yüklemesini güncelleştirme
 
@@ -57,6 +57,10 @@ Bir dosya paylaşımında bir düzen barındırıyorsanız, özel bir kopyasın�
   ```cmd
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
+
+    > [!IMPORTANT]
+    > Bir "ekleme" bölümünde bu bileşenler dahil olsa bile bir güncelleştirme işlemi yeni eklenen isteğe bağlı bileşenler yüklemez bir [yanıt dosyası](automated-installation-with-response-file.md). Bu durum, ekleme işlemi sırasında bir güncelleştirme kullanılmayan kaynaklanır.<br>
+    > **Geçici çözüm**: Ayrı bir çalıştırma işlemi eksik bileşenleri yüklemek için bir yükseltme sonrasında değiştirin.
 
 * Son olarak, burada da bir ek iş yükü ve yerelleştirilmiş dil sürümü güncelleştirmeden ekleme. (Bu komut, ASP.NET ve Web iş yükü ekler.)  Artık yönetilen Masaüstü, Azure'da ve ASP.NET ve Web iş yüklerini Bu düzende dahil edilir. İngilizce, Almanca ve Fransızca Dil kaynakları için bu iş yükleri de dahildir.  Ancak, bu komutu çalıştırdığınızda düzenini kullanılabilir en son sürüme güncelleştirilmedi. Bu, mevcut sürümde kalır.
 

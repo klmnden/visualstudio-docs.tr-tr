@@ -1,7 +1,7 @@
 ---
 title: Ağ ya da proxy hatalarını giderme
 description: Yüklediğinizde veya Visual Studio'yu bir güvenlik duvarı veya proxy sunucusu arkasında kullanın karşılaşabileceğiniz ağ veya Ara sunucu ile ilgili hatalar için çözüm bulun.
-ms.date: 02/12/2018
+ms.date: 02/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6996d01c46d832b051f8805bbe7f761c57ac5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692352"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796490"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio yüklediğinizde veya kullandığınızda ağ ile ilgili hataları giderme
 
@@ -63,6 +63,9 @@ Bu hata genellikle kullanıcılar bir ara sunucu üzerinden İnternet'e bağlı 
       ```
 
       Doğru ara sunucu adresi için ağınızda eklemelisiniz `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Daha fazla bilgi için [ &lt;defaultProxy&gt; öğesi (ağ ayarları)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) ve [ &lt;proxy&gt; öğesi (ağ ayarları)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) sayfaları.
 
   -VEYA-
 

@@ -4,6 +4,7 @@ titleSuffix: ''
 description: İş yükü ve Bileşen kimlikleri komut satırını kullanarak Visual Studio'yu yükleyin veya bağımlılık VSIX bildirimi olarak belirtmek için kullanın.
 keywords: ''
 author: TerryGLee
+ms.prod: visual-studio-dev15
 ms.author: tglee
 manager: jillfra
 ms.date: 11/13/2018
@@ -16,12 +17,13 @@ ms.service: ''
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3c83283ac9cf2cb592b554edd315c672feecf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 9e04a40dd2460dada01017ce95b283dfa27b9592
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942719"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796991"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 bileşen dizini
 

@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911201"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800537"
 ---
 # <a name="overview-report-a-problem"></a>Genel bakış: Sorun bildir
 
@@ -52,7 +52,7 @@ Sorun bildir sonra gönderimlerinizi kendi yaşam döngüsünde nerede olduğunu
 
 ![Geliştirici topluluğu üzerinde raporlama sorunla ilgili daha fazla bilgi durumu gerekir](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Daha fazla bilgi gerekiyor** biz araştırmaya İleri gidip gidemeyeceğini emin ediyoruz sizden daha fazla tanılama bilgisi gerektiğini belirtir.  [Daha fazla bilgi gerekiyor isteklerine yanıt öğrenin.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+**Daha fazla bilgi gerekiyor** biz araştırmaya İleri gidip gidemeyeceğini emin ediyoruz sizden daha fazla tanılama bilgisi gerektiğini belirtir.  [Daha fazla bilgi gerekiyor isteklerine yanıt öğrenin.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -110,7 +110,7 @@ Sorun bildir sonra gönderimlerinizi kendi yaşam döngüsünde nerede olduğunu
 
 Arama olduğunuz için rapor sorun zaten bildirilmiş taşınmadığından emin olmak için kullanmanızı öneririz. Sorununuzu eşleşen var olan bir öğeye bulursanız, izleyin ve bu sorun anahtar oy verin.
 
- Ekiplerimiz ne karşılaştığınız yeniden oluşturmak için mümkün olan tüm bilgileri sağlar.  Bu bilgiler gerekli yineleme adımları, kod parçalarını, ekran görüntüleri, yineleme Kayıtları, günlük dosyaları ve diğer yapıtları içerir.  İşte [Visual Studio'daki sorun bildirme](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Ekiplerimiz ne karşılaştığınız yeniden oluşturmak için mümkün olan tüm bilgileri sağlar.  Bu bilgiler gerekli yineleme adımları, kod parçalarını, ekran görüntüleri, yineleme Kayıtları, günlük dosyaları ve diğer yapıtları içerir.  İşte [Visual Studio'daki sorun bildirme](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Nasıl geri bildirimimi kurtarılmasına öncelik verilir?
 

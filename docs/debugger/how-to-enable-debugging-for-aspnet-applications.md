@@ -1,7 +1,7 @@
 ---
 title: ASP.NET uygulamaları için hata ayıklamayı | Microsoft Docs
 ms.custom: H1HackMay2017
-ms.date: 09/21/18
+ms.date: 09/21/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ffee44998f98fb21d8c9079f67d46896ca8446f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d5fd04ffbe75aef544ded66546d15409bf3c0936
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717435"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796913"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio'da ASP.NET veya ASP.NET Core uygulamalarının hatalarını ayıklama
 

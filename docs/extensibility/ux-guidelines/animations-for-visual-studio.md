@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694289"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796796"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio için animasyonları
 ## <a name="animation-fundamentals"></a>Animasyonu ile ilgili temel bilgiler
@@ -305,7 +305,7 @@ Bir kullanıcı Arabirimi öğesi boyutu bir bağlamdan diğerine değiştiğind
 
 -   Mimari Gezgini paneli genişletme ve daraltma
 
--   Başlangıç sayfası öğesi genişletme ve daraltma
+-   Visual Studio 2017 başlangıç sayfası öğesi genişletme ve daraltma
 
 #### <a name="x-y-position-change"></a>X-Y Konum Değiştir
 Bu düzende, X veya Y konumunu veya her ikisini de UI öğesi değiştirir.

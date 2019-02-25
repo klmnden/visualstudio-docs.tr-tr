@@ -13,19 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043719"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796770"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Visual Studio'da JavaScript ve TypeScript kodu çözümlerin veya projelerin olmadan geliştirin
 
-Visual Studio 2017'yi tanıtır yeteneği [projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), kod klasörünü açın ve hemen yeniden düzenleme, IntelliSense, arama gibi zengin Düzenleyicisi desteği ile çalışmaya başlamak sağlar hata ayıklama ve daha fazlası.
-Bu özelliklerin yanı sıra, Visual Studio için Node.js araçları npm betikleri çalıştırma TypeScript dosyaları oluşturma ve npm paketleri yönetme desteğini ekler.
+Visual Studio 2017 kullanıma sunulan yeteneği [projeler veya çözümler olmadan kod geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), kod klasörünü açın ve hemen yeniden düzenleme, IntelliSense, arama gibi zengin Düzenleyicisi desteği ile çalışmaya başlamak sağlar hata ayıklama ve daha fazlası. Bu özelliklerin yanı sıra, Visual Studio için Node.js araçları npm betikleri çalıştırma TypeScript dosyaları oluşturma ve npm paketleri yönetme desteğini ekler.
 
-Başlamak için seçin **klasörünü Aç** Başlat beliren sayfasından Visual Studio'yu açın veya seçebilirsiniz **dosya** > **açın**  >  **Klasör** araç çubuğundan. Çözüm Gezgini tüm dosyaları klasöründe görüntüler ve düzenlemeye başlamak için dosyalardan birini açın. Arka planda, Visual Studio hata ayıklama özelliklerini etkinleştirme npm ve derleme dosyaları dizinler.
+Başlamak için seçin **dosya** > **açık** > **klasör** araç çubuğundan. Çözüm Gezgini tüm dosyaları klasöründe görüntüler ve düzenlemeye başlamak için dosyalardan birini açın. Arka planda, Visual Studio hata ayıklama özelliklerini etkinleştirme npm ve derleme dosyaları dizinler.
 
 > [!IMPORTANT]
 > Birçok npm tümleştirmesi dahil olmak üzere bu makalede açıklanan özellikler, Visual Studio 2017 sürüm 15,8 gerektirir.

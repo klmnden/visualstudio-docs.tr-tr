@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: acb2dfd88f9726442837656c2cf3e60c5f47397a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156078"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796783"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Öğretici: Basit bir C# Visual Studio'da konsol uygulaması
 
@@ -80,6 +80,7 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. Seçin **hesaplayıcı** , programınızı çalıştırmak için veya basın **F5**.
 
    ![Araç çubuğunda uygulamayı çalıştırmak için hesap makinesi düğmesini seçin](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
         }
     }
     ```
+
 1. Seçin **hesaplayıcı** , programınızı çalıştırmak için veya basın **F5**.
 
    ![Araç çubuğunda uygulamayı çalıştırmak için hesap makinesi düğmesini seçin](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ Haydi başlayalım.
         }
     }
     ```
+
 1. Seçin **hesaplayıcı** , programınızı çalıştırmak için veya basın **F5**.
 
 1. Komut istemlerini izleyin ve sayı bölmek **42** numarasıyla **119**. Uygulamanız aşağıdaki gibi görünmelidir:
@@ -404,7 +407,7 @@ Haydi başlayalım.
 
 ## <a name="code-complete"></a>Kod tamamlandı
 
-Bu tutortial sırasında hesaplayıcı uygulamaya çok değişiklikler yaptık. Uygulama artık bilgi işlem kaynaklarının daha verimli bir biçimde gerçekleştirir ve çoğu kullanıcı giriş hatalarını işler.
+Bu öğretici sırasında hesaplayıcı uygulamaya çok değişiklikler yaptık. Uygulama artık bilgi işlem kaynaklarının daha verimli bir biçimde gerçekleştirir ve çoğu kullanıcı giriş hatalarını işler.
 
 Tek bir yerde tam kod şöyledir:
 

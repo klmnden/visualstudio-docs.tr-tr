@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920489"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796653"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -28,13 +28,25 @@ Bu hızlı başlangıcı tamamlamak için C++ ile ilgili bilgi sahibi olmanız g
 
 Örneği takip etmek için bir kopyasını bir Visual Studio 2017 sürüm 15.3 veya üzeri ile ihtiyacınız **C++ ile masaüstü geliştirme** iş yükü yüklenmiş. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
 
-## <a name="create-a-console-app"></a>Bir konsol uygulaması oluşturma
+## <a name="create-a-console-app"></a>Konsol uygulaması oluşturma
 
-Henüz çalışmıyorsa, Visual Studio'yu başlatın.
+Henüz çalışmıyorsa, Visual Studio'yu açın.
+
+::: moniker range="vs-2017"
 
 ![Visual C ile IDE&#43; &#43; uygulanan ayarları](../ide/media/get-started-cpp-ide-layout.png)
 
 Visual Studio'yu açtıktan sonra IDE üç temel bölümlerini görebilirsiniz: windows, menüler ve araç çubuklarını ve ana pencere alanını aracı. Araç pencereleri ve uygulama penceresinin sol tarafında sabitlenir. **Hızlı başlatma** standart araç kutusu ve menü çubuğu üstünde bulunur. Pencerenin ortasına içeren **başlangıç sayfası**. Bir çözüm veya projeyi açtığınızda, düzenleyiciler ve tasarımcılar Bu alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda harcanır.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio'yu açtıktan sonra **Başlat** ilk penceresi görüntülenir. Seçin **Kodsuz doosya** geliştirme ortamını açın.
+
+IDE üç temel bölümlerini göreceksiniz: windows, menüler ve araç çubuklarını ve ana pencere alanını aracı. Araç pencereleri ve uygulama penceresinin sol tarafında sabitlenir. **Hızlı başlatma** standart araç kutusu ve menü çubuğu üstünde bulunur. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+
+::: moniker-end
 
 Visual Studio kullanan *projeleri* bir uygulama için kod düzenleme ve *çözümleri* projelerinizi düzenlemek için. Bir proje, tüm seçenekleri, yapılandırmaları ve uygulamalarınızı oluşturmak için kullanılan kuralları içerir. Tüm proje dosyaları ve dış dosyaları arasındaki ilişki da yönetir. Uygulamanızı oluşturmak için ilk olarak, yeni proje ve çözüm oluşturun.
 

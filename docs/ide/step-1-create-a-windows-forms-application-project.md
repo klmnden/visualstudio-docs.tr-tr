@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956082"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796536"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1. Adım: Bir Windows Forms uygulaması projesi oluşturma
 
@@ -37,20 +37,21 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
 
      Visual Studio, programınız için bir çözüm oluşturur. Bir çözüm için tüm projeleri ve dosyaları, programınızın gerek duyduğu bir kapsayıcı görevi görür. Bu kullanım koşullarını, bu öğreticinin ilerleyen bölümlerinde daha ayrıntılı olarak açıklanacaktır.
 
-4. Artık Visual Studio arabiriminde görmeniz gereken aşağıda gösterilmiştir.
-
-    > [!NOTE]
-    > Pencere düzeniniz tam olarak bu çizim gibi görünmeyebilir. Kesin pencere düzeni, Visual Studio, kullandığınız programlama diline ve diğer etkenlere sürümüne bağlıdır. Ancak, tüm üç pencerenin de görüntülendiğini doğrulamanız gerekir.
-
-     ![IDE penceresi](../ide/media/express_ideoverview_visio.png)<br/>***IDE** penceresi*
-
-     Arabirim üç pencere içerir: ana pencere, **Çözüm Gezgini**ve **özellikleri** penceresi.
+4. Üç windows geliştirme ortamı içerir: ana pencere, **Çözüm Gezgini**ve **özellikleri** penceresi.
 
      Bu pencerelerden biri eksikse, menü çubuğundan seçerek varsayılan pencere düzenini geri **penceresi** > **pencere düzenini Sıfırla**. Windows, menü komutlarını kullanarak da görüntüleyebilirsiniz. Menü çubuğunda, **görünümü** > **Özellikler penceresi** veya **Çözüm Gezgini**. Başka bir pencere açıksa seçerek bunları kapatın **kapatmak** (x), sağ üst köşesinde düğmesini.
 
-5. Çizim aşağıdaki pencereleri (sol üst köşeden saat yönünde Giden) göstermektedir:
+    ::: moniker range="vs-2017"
 
-    - **Ana pencere** Bu pencerede formlarla çalışma ve kod düzenleme gibi işin çoğunu gerçekleştirirsiniz. Çizimde, bir formda pencere gösterir **Form Düzenleyicisi**. Pencerenin üst kısmındaki **başlangıç sayfası** sekmesi ve **Form1.cs [Design]** sekmesi görüntülenir. (Visual Basic içinde sekme adı ile biter. *.vb* yerine *.cs*.)
+    - **Ana pencere** Bu pencerede formlarla çalışma ve kod düzenleme gibi işin çoğunu gerçekleştirirsiniz. Ndaki bir forma pencere gösterir **Form Düzenleyicisi**. Pencerenin üst kısmındaki **başlangıç sayfası** sekmesi ve **Form1.cs [Design]** sekmesi görüntülenir. (Visual Basic içinde sekme adı ile biter. *.vb* yerine *.cs*.)
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **Ana pencere** Bu pencerede formlarla çalışma ve kod düzenleme gibi işin çoğunu gerçekleştirirsiniz. Ndaki bir forma pencere gösterir **Form Düzenleyicisi**.
+
+    ::: moniker-end
 
     - **Çözüm Gezgini penceresinde** Bu pencerede, görüntüleyebilir ve çözümünüzdeki tüm öğelerine gidin. Bir dosyanın içeriğini seçerseniz **özellikleri** penceresi değişiklikler. Bir kod dosyası açarsanız (sona erdiği içinde *.cs* görselde C# ve *.vb* Visual Basic'te), kod dosyası veya kod dosyası için bir tasarımcı görünür. Bir tasarımcı, düğmeler ve listeler gibi denetimler ileride ekleyebileceğiniz görsel bir yüzeydir. Visual Studio formları için tasarımcı adı verilir **Windows Form Tasarımcısı**.
 

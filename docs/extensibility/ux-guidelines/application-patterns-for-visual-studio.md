@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690467"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796887"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio için uygulama desenleri
 ##  <a name="BKMK_WindowInteractions"></a> Pencere etkileşimleri
@@ -128,10 +128,22 @@ Bazı araç pencerelerinin, kullanıcının etkileşim gezilebilir öğelerin li
 
 **Diğer araç pencereleri**
 
+::: moniker range="vs-2017"
+
 | Araç penceresi | İşlev |
 | --- | --- |
 | Araç Kutusu | Tüm tasarımcıları için tutarlı bir sürükleme kaynağı sağlayan, tasarım yüzeyleriyle üzerine bırakılan öğelerini depolamak için kullanılan araç penceresi. |
-| Başlangıç Sayfası | Geliştirici Haberleri, Visual Studio Yardım ve son kullanılan projeler akışlarını erişimi olan kullanıcı portalı Visual Studio 2017. Kullanıcılar ayrıca oluşturabilir özel başlangıç sayfaları StartPage.xaml dosyasından kopyalayarak "Common7\IDE\StartPages\" StartPages klasörüne Visual Studio'da Visual Studio program files dizini, dizin ve ardından ya da XAML düzenleme belgeleri elle veya Visual Studio veya başka bir kod düzenleyicisinde açma. |
+| Başlangıç Sayfası | Geliştirici Haberleri, Visual Studio Yardım ve son kullanılan projeler akışlarını erişimi olan kullanıcı portalı Visual Studio için. Kullanıcılar ayrıca oluşturabilir özel başlangıç sayfaları StartPage.xaml dosyasından kopyalayarak "Common7\IDE\StartPages\" StartPages klasörüne Visual Studio'da Visual Studio program files dizini, dizin ve ardından ya da XAML düzenleme belgeleri elle veya Visual Studio veya başka bir kod düzenleyicisinde açma. |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| Araç penceresi | İşlev |
+| --- | --- |
+| Araç Kutusu | Tüm tasarımcıları için tutarlı bir sürükleme kaynağı sağlayan, tasarım yüzeyleriyle üzerine bırakılan öğelerini depolamak için kullanılan araç penceresi. |
+
+::: moniker-end
 
 **Hata ayıklayıcı araç pencereleri**
 

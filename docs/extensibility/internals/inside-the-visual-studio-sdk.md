@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978275"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796679"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 Bu bölüm, Visual Studio mimari, bileşenleri, hizmetleri, şemalar, yardımcı programlar ve benzeri gibi Visual Studio uzantıları hakkında ayrıntılı bilgi sağlar.
@@ -55,13 +55,13 @@ Bu bölüm, Visual Studio mimari, bileşenleri, hizmetleri, şemalar, yardımcı
 
  Araç pencereleri, normalde kullanıcı ile etkileşim kurabilir çeşitli denetimler sunar. Örneğin, **özellikleri** pencere kullanıcının belirli bir amaca hizmet nesnelerin özelliklerini ayarlamasına olanak sağlar. **Özellikleri** penceresi olduğundan bu bağlamda özel ancak aynı zamanda genel birçok farklı durumlarda kullanılabilir. Benzer şekilde, **çıkış** penceresi çünkü Visual Studio'da birçok alt sistemleri için Visual Studio kullanıcı çıkış sağlamak için kullanabilirsiniz, ancak genel metin temelli çıktı sağladığından özelleştirilmiş.
 
- Aşağıdaki resimde birçok araç pencereleri içeren Visual Studio göz önünde bulundurun.
+ Aşağıdaki resimde birçok araç pencereleri içeren Visual Studio göz önünde bulundurun:
 
  ![Ekran görüntüsü](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Bazı araç pencereleri birlikte, Çözüm Gezgini araç penceresini görüntüler ve diğer araç pencereleri gizliyor ancak sekmeleri tıklayarak kullanılabilir kılar tek bölmesindeki sabitlenir. Diğer iki araç pencereleri, resim gösterir **hata listesi** ve **çıkış** birlikte bir bölmeden yerleştirilmiş penceresinde.
 
- Ayrıca gösterilen çeşitli düzenleyici pencereleri gösterir ana belge bölmesinde olur. Araç pencereleri, genellikle yalnızca bir örneğine sahip olsa da (örneğin, yalnızca bir açabilirsiniz **Çözüm Gezgini**), düzenleyici pencerelerini, her biri ayrı bir belge düzenlemek için kullanılır, ancak her biri olarak yerleştirilen birden çok örneği olabilir aynı bölme. Resim iki düzenleyici pencereleri, bir form tasarımcısı penceresi ve başlangıç sayfası gösteren bir tarayıcı penceresi sahip bir belge bölmesi gösterir. Sekmeleri tıklayarak tüm windows belge bölmesinde kullanılabilir, ancak EditorPane.cs dosyasını içeren Düzenleyicisi penceresi görünür ve etkin.
+ Ayrıca gösterilen çeşitli düzenleyici pencereleri gösterir ana belge bölmesinde olur. Araç pencereleri, genellikle yalnızca bir örneğine sahip olsa da (örneğin, yalnızca bir açabilirsiniz **Çözüm Gezgini**), düzenleyici pencerelerini, her biri ayrı bir belge düzenlemek için kullanılır, ancak her biri olarak yerleştirilen birden çok örneği olabilir aynı bölme. Resim iki düzenleyici pencereleri, bir form tasarımcısı penceresi sahip bir belge bölmesi gösterir. Sekmeleri tıklayarak tüm windows belge bölmesinde kullanılabilir, ancak EditorPane.cs dosyasını içeren Düzenleyicisi penceresi görünür ve etkin.
 
  Visual Studio genişlettiğinizde, Visual Studio kullanıcıların windows etkileşim aracı uzantınız ile oluşturabilirsiniz. Visual Studio kullanıcılarına belgeleri düzenlemesine izin veren kendi düzenleyicileri de oluşturabilirsiniz. Araç pencereleri ve düzenleyicileri Visual Studio ile tümleşik olduğundan, yerleştirme ya da bir sekmesinde doğru şekilde görünen program gerekmez. Visual Studio'da kayıtlı doğru olduğunda otomatik olarak araç pencereleri ve belge pencereleri Visual Studio'da tipik özellikler sahip olacaktır. Daha fazla bilgi için [genişletme ve özelleştirme araç Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 

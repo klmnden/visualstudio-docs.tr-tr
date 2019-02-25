@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 377b80b27a8e28da86f89f011bb7047b553d894a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634649"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796146"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Nasıl yapılır: Derlemede ortam değişkenlerini kullanma
 Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların değil bilgileri kullanarak yapı seçeneklerini ayarlamak gereklidir. Bu bilgiler genellikle ortam değişkenleri olarak depolanır.
@@ -63,6 +63,6 @@ Projeler derlerken genellikle proje dosyası veya proje oluşturan dosyaların d
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [MSBuild ](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
 - [MSBuild özellikleri](../msbuild/msbuild-properties.md)
 - [Nasıl yapılır: Farklı seçeneklerle aynı kaynak dosyaları derleme](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

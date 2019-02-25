@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948829"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796358"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Test aracıları yapılandırmak ve test denetleyicilerini yükleme testlerini çalıştırmak için
 
@@ -77,7 +77,7 @@ Test aracısı, yeni bir test başlatmak için test denetleyicisinden isteklerin
 
 Aşağıdaki çizim, test denetleyicisi, test aracısı ve istemci arasındaki bağlantı noktalarını gösterir. Bunu, bu bağlantı noktalarındaki güvenlik kısıtlamalarını yanı sıra gelen ve giden bağlantılar için hangi bağlantı noktalarının kullanılan açıklar.
 
- ![Contoller test ve test aracısı bağlantı noktaları ve güvenlik](./media/test-controller-agent-firewall.png)
+ ![Test denetleyicisi ve test aracısı bağlantı noktaları ve güvenlik](./media/test-controller-agent-firewall.png)
 
  Daha fazla bilgi için [yapılandırma bağlantı noktaları için test denetleyicileri ve test aracılarını](../test/configure-ports-for-test-controllers-and-test-agents.md).
 

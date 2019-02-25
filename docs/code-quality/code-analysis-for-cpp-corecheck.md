@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5f6741828f1f8ba5aeb433fb8702ca6b0a798e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949479"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796822"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ temel yönergeleri denetleyici başvurusu
 
@@ -201,7 +201,7 @@ Bkz: [C++ temel yönergeleri GSL.view: Görünümler](https://github.com/isocpp/
 
 [C26446 USE_GSL_AT](c26446.md) kullanmayı tercih `gsl::at()` yerine denetlenmeyen alt simge işleci. Bkz: [C++ temel yönergeleri:  Bounds.4: Standart kitaplık işlevleri ve sınırları işaretli olmayan türler kullanmayın](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) kullanmayı düşünün `gsl::finally` son eylem amaçlanıyorsa. Bkz: [C++ temel yönergeleri:  GSL.util: Yardımcı programları](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) kullanmayı düşünün `gsl::finally` son eylem amaçlanıyorsa. Bkz: [C++ temel yönergeleri:  GSL.util: Yardımcı programları](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` veya `std::string_view` geçici öğeden oluşturulan ne zaman geçersiz olacak geçici geçersiz kılınır. Bkz: [C++ temel yönergeleri: GSL.view: Görünümleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).

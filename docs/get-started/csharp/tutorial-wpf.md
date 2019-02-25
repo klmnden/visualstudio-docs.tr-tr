@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8604164a329dbccd7e93a39b97fcdb674eccd83e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909953"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796809"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: İle basit uygulama oluşturmaC#
 
@@ -32,9 +32,19 @@ Visual Studio'yu ilk kez başlattığınızda, oturum açmanız istenir. Bu adı
 
 ![Ayarlarını Seç iletişim kutusu](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 Visual Studio'yu başlattıktan sonra araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Uygulama penceresinin ortasında olup **başlangıç sayfası**. Bir çözüm veya projeyi yüklediğinizde, alanda görünür düzenleyiciler ve tasarımcılar burada **başlangıç sayfası** olduğu. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
 
-![Genel Ayarları uygulanmış IDE](../media/exploreide-idewithgeneralsettings.png)
+![Genel Ayarları uygulanmış Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio başlatıldığında **Başlat** ilk penceresi açılır. Seçin **Kodsuz doosya** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 
