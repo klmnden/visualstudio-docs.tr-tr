@@ -41,6 +41,7 @@
 # [Derleme ve Oluşturma](compiling-and-building.md)
 ## [Projeleri ve Çözümleri Oluşturma ve Temizleme](building-and-cleaning-projects-and-solutions.md)
 ## [Derleme Eylemleri](build-actions.md)
+## [Nasıl yapılır: Birden çok başlangıç projesi ayarlama](set-startup-projects.md)
 ## [Derleme Sistemini Özelleştirme](customizing-build-system.md)
 ## [Yapılandırmalar](configurations.md)
 ### [Yapılandırmaları oluşturma ve düzenleme](create-and-edit-configurations.md)
