@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Hangi abonelikler sunulur, hangi kuralları uygulamak ve kaç aboneliğe MPN'ye sunulan ayrıntıları.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739458"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843175"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) iş ortakları için sunulan visual Studio abonelikleri
 Kimin bir uzmanlık kazanın veya MPN eylem paketinde kimler satın iş ortakları, Visual Studio aboneliklerini kullanmak uygundur. Bu abonelik kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirketin çalışan kullanıcı adlandırılmış atandığında geçerlidir.

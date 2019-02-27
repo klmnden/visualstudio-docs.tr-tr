@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616891"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841785"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio’da Hiyerarşiler
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) proje olarak görüntüleyen bir *hiyerarşi*. IDE içinde bir hiyerarşi, her düğüme bir ilişkili özellikler kümesini sahip olduğu düğümlerinin ağacıdır. A *proje hiyerarşisi* proje öğelerini, öğeleri ilişkileri ve öğeleri ilişkili özellikler ve komutları tutan bir kapsayıcıdır.
@@ -35,4 +35,4 @@ ms.locfileid: "56616891"
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Proje türleri](../../extensibility/internals/project-types.md)
 - [Seçim ve para birimi IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK örnekleri](http://aka.ms/vs2015sdksamples)
+- [VSSDK örnekleri](https://aka.ms/vs2015sdksamples)

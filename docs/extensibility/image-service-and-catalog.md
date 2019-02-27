@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9264d8b5129b52444cc551e3719167d04442480d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679495"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844067"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü hizmeti ve kataloğu
 Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme içerir.
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Güncelleştirilmiş eşleme aracılığıyla bilinen adlar istemek için Görüntü hizmeti kullanmak için kodunuzu güncelleştirin. (Bu güncelleştirme gelebilir **CrispImages** yönetilen kod veya HBITMAPs veya HICONs görüntü Hizmeti'nden istiyor ve yerel kod için geçirme etrafında.)
 
 ## <a name="testing-your-images"></a>Görüntülerinizin test etme
- Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](visual-studio-sdk.md). Bu araç ve diğerleri için belgeler bulunabilir [burada](http://aka.ms/VSImageThemeTools).
+ Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](visual-studio-sdk.md). Bu araç ve diğerleri için belgeler bulunabilir [burada](https://aka.ms/VSImageThemeTools).
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 

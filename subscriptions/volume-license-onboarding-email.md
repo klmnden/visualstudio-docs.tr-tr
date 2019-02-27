@@ -4,21 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 3/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: VLSC yöneticileri için sağlanan ekleme iletişim örneği
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a91626328b60fee748f465e3b5bde8bd29f227dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847873"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844327"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>Yöneticiler için e-posta iletişimi ekleme
 
-Kuruluşunuz geçirilmesi hazır olduğunda, kuruluşunuzun toplu lisans (VL) Sözleşmesi'nde listelenen kişi bu e-posta alır. Bu, Visual Studio Aboneliklerini yönetmek için şirketteki herkes için takip etmek istedikleri süreci özetlenir. 
+Kuruluşunuz geçirilmesi hazır olduğunda, kuruluşunuzun toplu lisans (VL) Sözleşmesi'nde listelenen kişi bu e-posta alır. Bu, Visual Studio Aboneliklerini yönetmek için şirketteki herkes için takip etmek istedikleri süreci özetlenir.
 
 ![Üstbilgi](_img/onboarding-email/header.png)
 

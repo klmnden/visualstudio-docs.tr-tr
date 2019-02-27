@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155701"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840425"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Öğretici: Visual Studio'da Visual Basic ile çalışmaya başlama
 
@@ -38,7 +38,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    ![Konsol uygulaması (.NET Core) proje şablonunu yeni proje iletişim kutusunda Visual Studio IDE](media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>(İsteğe bağlı) bir çalışma grubu Ekle
+### <a name="add-a-workload-optional"></a>(İsteğe bağlı) bir iş yükü Ekle
 
 Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsiniz, ekleyerek **.NET Core çoklu platform geliştirme** iş yükü. Bu iş yükü, makinenizde yüklü Visual Studio 2017 güncelleştirmeleri bağlı olarak iki aşağıdaki yollardan biriyle ekleyebilirsiniz.
 

@@ -2,7 +2,7 @@
 title: Modelleme SDK'sı - etki alanına özgü diller | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-techdebt
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb0f5cf13aa9c37697d5de46ea912421a0faf3ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774561"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840571"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

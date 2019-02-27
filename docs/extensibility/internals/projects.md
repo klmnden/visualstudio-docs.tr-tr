@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615539"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840915"
 ---
 # <a name="projects"></a>Projeler
 Visual Studio'da projeler kaynak kodu dosyaları ve görüntülenen diğer kaynakları düzenlemek için geliştiricilerin kullanan kapsayıcılardır **Çözüm Gezgini**. Genellikle depolama başvurularının kaynak kod dosyalarını ve kaynak bit eşlem dosyaları gibi dosyalar (örneğin, bir C# projesi için .csproj dosyası) projelerdir. Düzenleme, derleme, hata ayıklama ve kaynak kodunu Dağıt let projeleri, Web Hizmetleri ve veritabanları ve diğer kaynaklara başvuruyor. VSPackage'ları, Visual Studio Proje sistemi üç temel şekilde genişletebilir: *proje türleri*, *proje alt türleri*, ve *özel Araçlar*.
@@ -41,7 +41,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve görüntülenen diğer kayna
 
  Yeni bir proje oluşturduğunuzda, aslında neler olduğunu açıklar.
 
-- [VSSDK örnekleri](http://aka.ms/vs2015sdksamples) VSSDK projeleri ve çözümleri ile ilgilenirken siz örnekleri içerir.
+- [VSSDK örnekleri](https://aka.ms/vs2015sdksamples) VSSDK projeleri ve çözümleri ile ilgilenirken siz örnekleri içerir.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 - [Visual Studio SDK’nın İçinde](../../extensibility/internals/inside-the-visual-studio-sdk.md)

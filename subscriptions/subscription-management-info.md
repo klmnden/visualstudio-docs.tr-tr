@@ -4,28 +4,26 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Abonelik Yönetimi hakkında daha fazla bilgi
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 04b2170e38954f4806a35bd960a2d4d41080d212
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283425"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843743"
 ---
 # <a name="learn-about-subscription-management"></a>Abonelik Yönetimi hakkında bilgi edinin
 
-Abonelik Yönetimi özellikleri, bir Toplu Lisans Sözleşmesi'ni, Microsoft Product ve hizmetleri sözleşmesi (MPSA) aracılığıyla aboneliklerini veya Visual Studio bulut aboneliği satın alan müşteriler için kullanılabilir.
+Abonelik Yönetimi özellikleri, aboneliklerini bir Toplu Lisanslama anlaşması, Microsoft Product ve hizmet sözleşmesi (MPSA) veya Visual Studio bulut aboneliği satın alan müşteriler için kullanılabilir.
 
-Farklı satın alma kanallar verildiğinde, abonelik yöneticileri uygun izinleri ve kullanıcı ayarı yararlanılabilir şekilde aboneliği nasıl temin bilmeniz önemlidir. Her anlaşma türünü erişme bulunabilir Yöneticiler ayarlamak nasıl öğrenmek için bilgi portalı bölümü.
+Farklı satın alma kanalları göz önünde bulundurulduğunda, abonelik yöneticileri uygun izinlerden ve kullanıcı ayarı yararlanılabilmesi nasıl göz bilmek önemlidir. Her sözleşme türü içinde erişme bulunabilir yöneticileri ayarlama ayarlamak nasıl kaydolacağınızı bilgi portalı bölümü.
 
-Oluşturulan Visual Studio abonelikleri takım "Visual Studio [abonelikleri Yönetim Portalı](https://visualstudio.microsoft.com/subscriptions-administration/)".  Abonelik hızla araçları ve yetenekleri atamak ve kuruluşlarında Aboneliklerini yönetmek için sahip oldukları anlamak tanıyabilmesine yardımcı olmak için bu portalı belirtilir.
+Oluşturulan Visual Studio abonelikleri ekibi "Visual Studio [abonelikleri Yönetim Portalı](https://visualstudio.microsoft.com/subscriptions-administration/)".  Bu portalın amacı, abonelik yöneticileri atamak ve kendi kuruluşlarında abonelikleri yönetmek için sahip oldukları yetenekleri ve araçları kısa süre içinde anlamanıza yardımcı olmaktır.
 
-Abonelik Yönetimi portalı gibi konularda bilgi alabilirsiniz:
-- Aboneliklerini Yönetme [abonelikleri Yönetim Portalı](https://manage.visualstudio.com).
-- Henüz Abonelik Yönetim Portalı'na geçirdiğiniz olmayan kuruluşlar için Toplu Lisans Hizmet Merkezi aracılığıyla aboneliklerini yönetme.
-- Yeni portalına geçirme.
+Abonelikleri Yönetim Portalı gibi konular hakkında bilgi edinebilirsiniz:
+- Abonelikleri Yönetme [abonelik yönetimi portalına](https://manage.visualstudio.com).
+- Abonelik Yönetimi portalına henüz geçmemiş söz konusu kuruluşlar için Toplu Lisans Hizmet Merkezi aracılığıyla abonelik yönetme.
+- Yeni portala taşıma.
 - Diğer ipuçları ve püf noktaları abonelik yöneticileri için özel olarak.

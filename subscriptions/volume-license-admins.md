@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Nasıl abonelik yöneticileri Yönetici portalına erişmek ve toplu lisans (VL aracılığıyla) alınan Aboneliklerini Yönetme öğrenin
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379546"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843151"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Portala erişme ve yöneticileri - toplu lisans (VL aracılığıyla) alınan abonelikler için yönetme
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379546"
 
 1 Mart 2017'den itibaren portal ekleme ve geçiş sürecinde çalışmaya devam ediyoruz müşteriler, Toplu Lisanslama hizmeti Merkezi (VLSC) abonelikleri yönetmek gerekir.
 
-Vlsc'de abonelikleri yönetme hakkında daha fazla bilgi için lütfen bu kılavuzlara bakın: [anlama-VLSC için Visual Studio abonelikleri](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
-[-VLSC için Visual Studio Abonelikleri Yönetme](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+Vlsc'de abonelikleri yönetme hakkında daha fazla bilgi için lütfen bu kılavuzlara bakın: [Anlama-VLSC için Visual Studio abonelikleri](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[-VLSC için Visual Studio aboneliklerini yönetme](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Visual Studio abonelikleri Yönetim Portalı** kuruluşunuz geçirildikten sonra artık, yeni portalda henüz ayarlanmış yapmadıysanız, birincil veya bildirimler ilgili Kişim kuruluşunuzun Toplu Lisanslama anlaşması için birkaç olması gerekir Kuruluşunuz için ekleme adımları ve bir yönetici olarak ayarlayın.
 

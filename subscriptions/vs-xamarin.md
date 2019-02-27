@@ -4,27 +4,25 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Seçili Visual Studio aboneliğine dahildir Xamarin University eğitimi aboneliği hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8e723e1b6763915907e8d138ba07d5974a2238d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950504"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842534"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 
 Yerel iOS ve Android uygulamaları C# ile Mobil Geliştirme uzmanları tarafından Gelişmiş alıştırma oluşturun.
 
-Xamarin University taşınmadan içeriği için [Microsoft Learn](http://microsoft.com/learn), yeni bir etkileşimli eğitim platformu ve gelecekteki Microsoft eğitim. Bu nedenle, Xamarin University avantajları Visual Studio Enterprise ve Professional aboneleri için artık geçerli olmayacak 21 aralık 2018'den itibaren – son başlangıç tarihi avantajınızı talep. 
+Xamarin University taşınmadan içeriği için [Microsoft Learn](http://microsoft.com/learn), yeni bir etkileşimli eğitim platformu ve gelecekteki Microsoft eğitim. Bu nedenle, Xamarin University avantajları Visual Studio Enterprise ve Professional aboneleri için artık geçerli olmayacak 21 aralık 2018'den itibaren – son başlangıç tarihi avantajınızı talep.
 
-3 veya 6 aylık avantajınızı etkinleştirildikten sonra lütfen Xamarin University site Haziran 2019 içinde kapatılacak olduğunu unutmayın. Office saat oturumları ve Eğitmenler tarafından yürütülen tek kurslara kalır kullanılabilir 1 Mayıs 2019 kadar tüm devam eden Xamarin sertifikaları son etmenize imkan sağlar. 1 Mayıs sonra Xamarin sertifika sınavları dahil olmak üzere, bu program artık kullanılabilir. Program kapanırken sonra Xamarin geliştirme becerilerinizi oluşturmaya devam etmek için Microsoft Learn gitmek mümkün olacaktır. 
+3 veya 6 aylık avantajınızı etkinleştirildikten sonra lütfen Xamarin University site Haziran 2019 içinde kapatılacak olduğunu unutmayın. Office saat oturumları ve Eğitmenler tarafından yürütülen tek kurslara kalır kullanılabilir 1 Mayıs 2019 kadar tüm devam eden Xamarin sertifikaları son etmenize imkan sağlar. 1 Mayıs sonra Xamarin sertifika sınavları dahil olmak üzere, bu program artık kullanılabilir. Program kapanırken sonra Xamarin geliştirme becerilerinizi oluşturmaya devam etmek için Microsoft Learn gitmek mümkün olacaktır.
 
-Xamarin University çoğu sertifika ve Xamarin.Forms kurslar taşınmadan, zaman içinde avantajınızı etkinleştirin açamıyorsanız, bildiğiniz kendi [kendi öğrenme](https://elearning.xamarin.com) tamamen ücretsiz yönetilmelerini erken 2019 tarafından portal. Yalnızca bu kurslara erişim [ücretsiz Xamarin University hesabı oluşturun](https://university.xamarin.com/createfreeaccount). Şu aylarda, Xamarin University kapatmaya Haziran 2019 sonunda önünü açacak Microsoft Learn tüm kendi kendine öğrenme kursları dönüştürülecektir. Laboratuvarlar ve konu dışı videoları Konuk Eğitmen derslerine ve hızlandırılmış Derslere, gibi dahil olmak üzere abone yalnızca içeriği geri kalanını başka bir yerde genel olarak kullanıma sunulacaktır. 
+Xamarin University çoğu sertifika ve Xamarin.Forms kurslar taşınmadan, zaman içinde avantajınızı etkinleştirin açamıyorsanız, bildiğiniz kendi [kendi öğrenme](https://elearning.xamarin.com) tamamen ücretsiz yönetilmelerini erken 2019 tarafından portal. Yalnızca bu kurslara erişim [ücretsiz Xamarin University hesabı oluşturun](https://university.xamarin.com/createfreeaccount). Şu aylarda, Xamarin University kapatmaya Haziran 2019 sonunda önünü açacak Microsoft Learn tüm kendi kendine öğrenme kursları dönüştürülecektir. Laboratuvarlar ve konu dışı videoları Konuk Eğitmen derslerine ve hızlandırılmış Derslere, gibi dahil olmak üzere abone yalnızca içeriği geri kalanını başka bir yerde genel olarak kullanıma sunulacaktır.
 
 Bkz: [Xamarin University SSS](https://university.xamarin.com/faq) Ayrıntılar için.
 

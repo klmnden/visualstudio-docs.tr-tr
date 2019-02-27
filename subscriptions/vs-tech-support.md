@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden etkinleştirmeyi öğrenin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089230"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841722"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, teknik destek teklifinizden etkinleştir
 
@@ -22,13 +20,13 @@ ms.locfileid: "55089230"
 
 > [!NOTE]
 > Belirtilen düzeydeki tüm abonelikleri destek olayları almaya uygundur. FTE, NFR, MPN, MCT ve diğer programları edinilen abonelikleri destek olayları almazsınız. Aboneliğinizi teknik destek olayları almaya uygun değilse, teknik destek kutucuk kullanılabilir avantajlarınızla görünmez.
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![Teknik Destek teklifi kutucuğu](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. Teknik Destek teklifinizden'ı kullanmaya başlamak için Git https://my.visualstudio.com/Benefits, destek bölümüne inin ve teknik destek kutucuğa tıklayarak kaydırma **etkinleştirmek için Sohbet**. 
-2. Bu, bir erişim kimliği ve sözleşme kimliği oluşturmak ve bunları size sağlayan bir temsilci ile sohbet oturumu başlatır. 
+1. Teknik Destek teklifinizden'ı kullanmaya başlamak için Git https://my.visualstudio.com/Benefits, destek bölümüne inin ve teknik destek kutucuğa tıklayarak kaydırma **etkinleştirmek için Sohbet**.
+2. Bu, bir erişim kimliği ve sözleşme kimliği oluşturmak ve bunları size sağlayan bir temsilci ile sohbet oturumu başlatır.
 3. İşlemi tamamlamak için temsilcisiyle sağlamanız gerekir:
    - Aboneliğinizde oturum açmak için kullandığınız e-posta adresi
    - Üzerinde bulunan abonelik kimliği [abonelikleri](https://my.visualstudio.com/subscriptions) sekmesi.
@@ -38,7 +36,7 @@ ms.locfileid: "55089230"
 
 
 > [!NOTE]
-> İngilizce dışında bir dil desteği hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu liste](https://support.microsoft.com/help/14084/activate-support-contract).   
+> İngilizce dışında bir dil desteği hesabınızı etkinleştirmek için listeden ülkenizi seçin [bu liste](https://support.microsoft.com/help/14084/activate-support-contract).
 
 
 ## <a name="how-to-submit-an-incident"></a>Bir olayı gönderme
@@ -48,12 +46,12 @@ Bir kez sahip olduğunuz sözleşme Kimliğinizi ve erişim kimliği ayarlamak, 
 ### <a name="submit-an-incident-online"></a>Çevrimiçi bir olayı gönderme
 
 1. İçin [çevrimiçi bir olayı gönderme](http://support.microsoft.com/oas/), yardıma ihtiyacınız ürün belirtin. Çeşitli listelerinden seçin veya ada göre arama. Visual Studio Enterprise 2017 için bir olay göndermek, örneğin, tıklayarak **Visual Studio** içinde **Geliştirici Araçları** grubu.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Teknik Destek Teklifinizden olay ürün seçin](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. Destek ihtiyacınız olan ürünü seçin. (Örneğin, tıklayarak **Visual Studio Enterprise 2017** Visual Studio ürün listesinde.)
 3. Üzerinde **bir olay** sayfasında, aşağı açılan listeden ilgili bir sorun türü seçin. Bizim örneğimizde, seçeceğiz **tümleşik geliştirme ortamı (IDE)**.
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![Teknik Destek Teklifinizden olay oluşturma](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. Ardından **kategori** soru/sorunu en iyi uyan. Bizim örneğimizde, seçeceğiz **Mimari Araçları.**
@@ -64,7 +62,7 @@ Bir kez sahip olduğunuz sözleşme Kimliğinizi ve erişim kimliği ayarlamak, 
    - Erişiminizi kimliği ve sözleşme kimliği girin
    - Tıklayın **Ekle**
 7. Destek sözleşmeniz eklendikten sonra profesyonel destek sözleşmesi listede görünür. Bu dosyayı seçin ve tıklayın **devam**.
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![Teknik Destek teklifi ödeme](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. Tercih edilen iletişim yöntemi ve kişi bilgilerini sağlayın ve tıklayın **devam**.

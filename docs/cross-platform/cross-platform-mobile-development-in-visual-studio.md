@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8c76a867f67f94cb0ce3589cc8aa411fd70663
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316976"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843830"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -38,7 +38,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Xamarin mobil uygulama geliştirme belgeleri](/xamarin/) |
 |[Xamarin uygulamaları ile DevOps](/xamarin/tools/ci/devops/) |
 |[Visual Studio'da Evrensel Windows uygulamaları hakkında bilgi edinin](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Swift ve C# arasındaki benzerlikleri hakkında bilgi edinin](http://aka.ms/scposter) (download.microsoft.com)|
+|[Swift ve C# arasındaki benzerlikleri hakkında bilgi edinin](https://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Android, iOS ve Windows, bir tek kod tabanından hedef
 

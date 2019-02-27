@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602045"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841749"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>İzlenecek yol: Profil bir SharePoint uygulaması
   Bu izlenecek yol, profil oluşturma araçlarını Visual Studio'da bir SharePoint uygulama performansını iyileştirmek için nasıl kullanılacağını gösterir. Örneğin, özellik olayı alıcısını performansını düşürür bir boşta döngü içeren bir SharePoint özelliği olay alıcısı uygulamasıdır. Visual Studio profil oluşturucu, bulun ve proje en pahalı (yavaş gerçekleşir) parçası olarak da bilinen ortadan sağlar *etkin yolu*.
@@ -47,7 +47,7 @@ ms.locfileid: "56602045"
 ## <a name="create-a-sharepoint-project"></a>Bir SharePoint projesi oluşturma
  İlk olarak, bir SharePoint projesi oluşturun.
 
-#### <a name="to-create-a-sharepoint-project"></a>Bir SharePoint projesi oluşturmak için
+### <a name="to-create-a-sharepoint-project"></a>Bir SharePoint projesi oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje** iletişim kutusu.
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602045"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Bir özellik ve özelliği olay alıcısı Ekle
  Ardından, bir özellik proje özelliği için bir olay alıcısı birlikte ekleyin. Bu olay alıcısı, profili oluşturulacak kodu içerecek.
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>Bir özellik ve özellik olayı alıcısını eklemek için
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>Bir özellik ve özellik olayı alıcısını eklemek için
 
 1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellikleri** düğümünü seçin **Özellik Ekle**ve adı varsayılan değerde bırakın **özellik1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602045"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>Yapılandırma ve SharePoint uygulaması dağıtma
  SharePoint Proje hazır olduğuna göre yapılandırın ve SharePoint sunucusuna dağıtın.
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Yapılandırma ve SharePoint uygulaması dağıtma
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Yapılandırma ve SharePoint uygulaması dağıtma
 
 1.  Üzerinde **Çözümle** menüsünde seçin **performans Sihirbazını Başlat**.
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602045"
 ## <a name="run-the-sharepoint-application"></a>SharePoint uygulaması çalıştırma
  SharePoint özelliği etkinleştir tetikleme `FeatureActivation` olay kodu çalıştırmak için.
 
-#### <a name="to-run-the-sharepoint-application"></a>SharePoint uygulamayı çalıştırmak için
+### <a name="to-run-the-sharepoint-application"></a>SharePoint uygulamayı çalıştırmak için
 
 1.  SharePoint'te açın **Site eylemleri** menüsünü seçip **Site Ayarları**.
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602045"
 ## <a name="view-and-interpret-the-profile-results"></a>Görüntüleme ve profili sonuçları yorumlama
  Çalıştırın ve SharePoint uygulama profili, test sonuçlarını görüntüleyin.
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>Görüntüleme ve profili sonuçları yorumlama
+### <a name="to-view-and-interpret-the-profile-results"></a>Görüntüleme ve profili sonuçları yorumlama
 
 1.  İçinde **en bireysel işleri yapan işlevler** bölümde örnek profili oluşturma raporu dikkat `TimeCounter` listesinin en üstüne olduğu.
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602045"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Kodu düzeltin ve uygulama reprofile
  Etkin nokta işlevi SharePoint uygulaması olarak belirlenmiştir, bunu düzeltin.
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>Kodu düzeltin ve uygulama reprofile
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>Kodu düzeltin ve uygulama reprofile
 
 1.  Açıklama özelliği olay alıcısı kodda `TimeCounter` yöntem çağrısı `FeatureActivated` çağırılmasını önlemek için.
 

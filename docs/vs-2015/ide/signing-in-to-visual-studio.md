@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8504ebcbcea9906148f9c3a671f185375d269d83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766400"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842300"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio'da Oturum Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Kişiselleştirin ve kişiselleştirme hesabınız IDE açarak ayarlarsanız, Vi
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Neden Visual Studio'da oturum açmam gerekiyor?
  Visual Studio'da oturum açma ile şu avantajlara sahip olabilirsiniz:
 
--   **Çok çeşitli avantajları erişim verir** Visual Studio Dev Essentials programından ücretsiz yazılım, eğitim, destek ve daha fazla dahil. Bkz: [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) daha fazla bilgi için.
+-   **Çok çeşitli avantajları erişim verir** Visual Studio Dev Essentials programından ücretsiz yazılım, eğitim, destek ve daha fazla dahil. Bkz: [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) daha fazla bilgi için.
 
 -   **Visual Studio ayarlarınızı eşitler** –, tuş bağlamaları gibi pencere düzenini özelleştirme ve renk temasını ayarları uygulamak için Visual Studio herhangi bir cihazda oturum açtığınızda hemen. Bkz: [Visual Studio'da eşitlenen ayarlar](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 

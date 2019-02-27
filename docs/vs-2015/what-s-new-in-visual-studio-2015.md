@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790739"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844145"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
  Apache Cordova için Visual Studio Araçları Microsoft ve açık kaynaklı Apache Cordova topluluk arasında Kapat işbirliği sonucudur. HTML, CSS ve JavaScript (veya Typescript) kullanarak platformlar arası Mobil Geliştirme Araçları'nı etkinleştirin. Android, iOS ve Windows ile tek bir kod tabanının hedef ve JavaScript IntelliSense, DOM Gezgini, JavaScript konsolu, kesme noktaları, Gözcü, yerel öğeler, yalnızca kendi kodum ve daha da dahil olmak üzere Visual Studio IDE zenginliğine keyfini çıkarın.  Apache Cordova için Visual Studio Araçları ile uygulamalarınızı tüm platformlarda ortak bir JavaScript API'si eklentileri üzerinden yerel cihaz özelliklerine erişimine olanak sahip. Başlamak için bkz: [Apache Cordova için Visual Studio Araçları ile çalışmaya başlama](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Unity ile C# platformlar arası mobil oyunlar
- Unity çok platformlu 2B ve 3B Oyun Geliştirme için yaygın olarak kullanılan bir platformdur. Oyununuzu C# dilinde yazabilir ve BT yerel Android, iOS, Windows Phone ve diğer birçok platformda. Unity için Visual Studio Araçları Unity Visual Studio IDE ile tümleşen bir uzantısıdır. Bu uzantı, Visual Studio IDE ve hata ayıklayıcı, Unity geliştiricileri için tasarlanmış üretkenliği özelliklerine ek olarak tüm özelliklerini alın. Unity 2.0 Preview 2 ekler visual Studio Araçları Visual Studio 2015 için ek olarak yeni özellikler, Yereller ve izleme nesneleri için daha iyi görselleştirme gibi çeşitli windows desteği. Microsoft, Unity için Visual Studio Araçları'nın en son geliştiren SyntaxTree şirketini aldı. Unity 2.0 Preview 2 ve Unity için Visual Studio Araçları hakkında daha fazla bilgi için Visual Studio Araçları indirmek için bkz [Unity 2.0 için Visual Studio Araçları](http://Aka.ms/vstu).
+ Unity çok platformlu 2B ve 3B Oyun Geliştirme için yaygın olarak kullanılan bir platformdur. Oyununuzu C# dilinde yazabilir ve BT yerel Android, iOS, Windows Phone ve diğer birçok platformda. Unity için Visual Studio Araçları Unity Visual Studio IDE ile tümleşen bir uzantısıdır. Bu uzantı, Visual Studio IDE ve hata ayıklayıcı, Unity geliştiricileri için tasarlanmış üretkenliği özelliklerine ek olarak tüm özelliklerini alın. Unity 2.0 Preview 2 ekler visual Studio Araçları Visual Studio 2015 için ek olarak yeni özellikler, Yereller ve izleme nesneleri için daha iyi görselleştirme gibi çeşitli windows desteği. Microsoft, Unity için Visual Studio Araçları'nın en son geliştiren SyntaxTree şirketini aldı. Unity 2.0 Preview 2 ve Unity için Visual Studio Araçları hakkında daha fazla bilgi için Visual Studio Araçları indirmek için bkz [Unity 2.0 için Visual Studio Araçları](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Platformlar arası uygulamalar ve yerel C++ kitaplıkları
  C++ kullanılabilir yerel olarak çoğu mobil cihazlarda dildir. Birden çok mobil platform hedefleri için yapılandırılabilecek platformlar arası paylaşılan kod kitaplıkları yazmak için kullanabilirsiniz. C++'ta bile tüm mobil uygulamalar oluşturabilirsiniz. Visual C++ düzenlemek, oluşturmak, dağıtmak ve platformlar arası kod hata ayıklama için Araçlar verir. Windows uygulamaları için şablonlara ek olarak, Android yerel etkinlik uygulamaları, iOS uygulamalarını veya Xamarin karma uygulamaları içeren birden çok platform için paylaşılan kod kitaplık projeleri için şablonlardan projeler oluşturabilirsiniz. Platforma özel IntelliSense'i API'leri keşfetmek ve Android, iOS veya Windows hedefleri için doğru kodu oluşturmasını sağlar. Yapınızı x86 veya ARM yerel platformları için yapılandırın ve kodunuzu iOS simülatörü veya doğrudan bağlı Android cihazlarında, ağa bağlı bir Mac üzerinde iOS cihazlarına dağıtmak veya test etmek için Microsoft Visual Studio öykünücü yüksek performanslı Android için kullanın. Kesme noktaları ayarlayın, değişkenleri izleyin, yığını görüntüleyin ve Visual Studio hata ayıklayıcının C++ kodunda adım adım. Birden fazla uygulama platformunda tüm platforma özgü kod paylaşın ve bunlar için tüm bir çözümü Visual Studio ile derleme.

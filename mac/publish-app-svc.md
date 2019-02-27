@@ -1,5 +1,5 @@
 ---
-title: Azure App Service'e - Mac için Visual Studio yayımlama
+title: Azure App Service’e yayımlama
 ms.date: 01/17/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,16 +8,16 @@ ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
-ms.prod: visual-studio-mac-dev15
+ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853933"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844275"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Mac için Visual Studio kullanarak Azure App Service'e bir Web uygulaması yayımlama
 
@@ -45,7 +45,7 @@ Azure App Service'e ASP.NET Core uygulamaları yayımlamak için Yayımla Aracı
 
     ![Yayımlama için Azure App Service iletişim kutusu](media/publish-to-app-service-dialog.png)
 
- 5. Yeni bir App Service'ı oluşturmak için tıklayın **yeni** düğmesi. 
+ 5. Yeni bir App Service'ı oluşturmak için tıklayın **yeni** düğmesi.
 
     ![App Service iletişim yayımlama](media/publish-to-app-service-dialog-new-selected.png)
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31af6efb2021567b9eb4a5f5048b367c57971fee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949807"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841758"
 ---
 # <a name="upgrading-projects"></a>Projeleri Yükseltme
 
@@ -64,7 +64,7 @@ Değiştirirseniz, ürünün farklı Visual Studio sürümleri arasında proje d
 
 Kullanan eski mekanizması <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> arabirimi hala desteklenmektedir, ancak kavramsal olarak proje sistemi proje açıkken bir parçası olarak yükseltir. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Arabirimi tarafından durumunda bile Visual Studio ortamı bu nedenle adlı <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> arabirimi adlı veya uygulandığında. Bu yaklaşım kullanmanıza olanak tanır <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> yerinde (muhtemelen en yeni konum) yapılacak işleri geri kalanı tarafından temsilci kopyalama uygulamak ve yalnızca yükseltme bölümlerini proje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> arabirimi.
 
-Bir örnek uygulaması için <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, bkz: [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).
+Bir örnek uygulaması için <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, bkz: [VSSDK örnekleri](https://aka.ms/vs2015sdksamples).
 
 Aşağıdaki senaryolarda, proje yükseltmeleriyle ortaya çıkar:
 

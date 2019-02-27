@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764584"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841811"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Visual Studio’da Xamarin kullanarak yerel kullanıcı arabirimi ile uygulama oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -644,4 +644,4 @@ Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-in
  PCL kez derlenir ve her platforma özgü uygulama paketinde bir PCL paylaşılan kodu platformdan bağımsız olmasıdır. Koşullu derleme platforma özgü kod yalıtmak için kullandığı paylaşılan kod yazmak istiyorsanız, kullanabileceğiniz bir *paylaşılan* proje. Daha fazla ayrıntı için [ode paylaşım seçeneklerini](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Xamarin Geliştirici sitesinde](http://developer.xamarin.com/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift ve C# hızlı başvuru posteri](http://aka.ms/scposter)
+ [Xamarin Geliştirici sitesinde](http://developer.xamarin.com/) [Windows Dev Center](https://dev.windows.com/en-us) [Swift ve C# hızlı başvuru posteri](https://aka.ms/scposter)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Beceri bana seçili Visual Studio aboneliğine dahildir Opsgility eğitimi avantajı ile güçlendirilmiş artırma hakkında-bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380209"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843850"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Yetenek bana yukarı - Opsgility eğitimi avantajı olarak Visual Studio abonelikleri tarafından desteklenir
 
@@ -32,7 +30,7 @@ Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe b
    > [!div class="mx-imgBorder"]
    > ![Opsgility avantajı giriş sayfası](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4. Tüm İşte bu kadar kolay!  Öğrenme başlamaya hazırsınız!  
+4. Tüm İşte bu kadar kolay!  Öğrenme başlamaya hazırsınız!
 
 
 ## <a name="eligibility"></a>Uygunluk

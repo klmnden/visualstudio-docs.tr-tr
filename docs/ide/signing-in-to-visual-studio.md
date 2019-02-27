@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 682461df50999f14d3f8ca1f3acbee7c69559c8d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908588"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840837"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
@@ -30,7 +30,7 @@ Oturum açtığınızda, Visual Studio deneyimini zenginleştirin. Örneğin, ot
 
 Şunların gerçekleşmesini bekleyebilirsiniz ve oturum açma sonrasında neler yapabileceğinizi tam bir listesi aşağıda verilmiştir:
 
-- **Visual Studio Dev Essentials programına erişimi** -bu programın ücretsiz yazılım, eğitim, destek ve daha fazla bilgi içerir. Bkz: [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) daha fazla bilgi için.
+- **Visual Studio Dev Essentials programına erişimi** -bu programın ücretsiz yazılım, eğitim, destek ve daha fazla bilgi içerir. Bkz: [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) daha fazla bilgi için.
 
 - **Visual Studio ayarlarınızı eşitleyebilir** -tuş bağlamaları, pencere düzenini ve renk teması gibi özelleştirme ayarları, Visual Studio için herhangi bir cihazda oturum açtığınızda hemen uygulanır. Bkz: [Visual Studio'da eşitlenen ayarlar](../ide/synchronized-settings-in-visual-studio.md).
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692703"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843967"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>1. Bölüm temel proje sistemi oluşturma
 Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenlemek için geliştiricilerin kullanan kapsayıcılardır. Projeleri görünür çözümlerin alt öğeleri olarak **Çözüm Gezgini**. Projeleri, düzenleme, derleme, hata ayıklama ve kaynak kod dağıtma ve Web Hizmetleri, veritabanları ve diğer kaynaklara başvurular oluşturma olanak tanır.
@@ -35,7 +35,7 @@ Visual Studio'da projeler kaynak kodu dosyaları ve diğer varlıkları düzenle
  Bu izlenecek yol, proje dosya adı uzantısına sahip bir proje türünün nasıl oluşturacağını gösterir *.myproj*. Bu izlenecek yol, mevcut Visual C# proje sistemi taşır.
 
 > [!NOTE]
->  Uzantı projelerinin daha fazla örnek için bkz. [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).
+>  Uzantı projelerinin daha fazla örnek için bkz. [VSSDK örnekleri](https://aka.ms/vs2015sdksamples).
 
  Bu izlenecek yol aşağıdaki görevlerin nasıl yerine getirileceğini öğretir:
 

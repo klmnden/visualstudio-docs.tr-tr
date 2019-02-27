@@ -2,7 +2,7 @@
 title: 'Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-techdebt
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5392548e094edbdc5c946c1b0389de697216b9eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804256"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844022"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Office 365 Geliştirici teklifi hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: d14e917f01acae8d5e505d5847425d4b58445797
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379765"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843587"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Office 365 Geliştirici aboneliği teklifi
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605997"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841759"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>İzlenecek yol: Mevcut bir SharePoint sitesinden öğeleri içeri aktarma
   Bu izlenecek yol bir SharePoint sitesinden öğeleri içeri aktarma gösterir bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Proje.
@@ -43,7 +43,7 @@ ms.locfileid: "56605997"
 ## <a name="customize-a-sharepoint-site"></a>Bir SharePoint sitesi özelleştirme
  Bu örnekte, oluşturun ve yeni bir site sütunu ekleyerek ve daha sonra kullanmak için başka bir alt oluşturarak SharePoint alt site özelleştirin. Daha sonra ilk alt .wsp dosyaya ve sonra projeyi .wsp İçeri Aktar'ı kullanarak özel site sütunu ikinci alt siteye alın.
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>Oluşturmak ve bir SharePoint sitesi özelleştirmek için
+### <a name="to-create-and-customize-a-sharepoint-site"></a>Oluşturmak ve bir SharePoint sitesi özelleştirmek için
 
 1. Http:// gibi bir Web tarayıcısı kullanarak bir SharePoint sitesi açın<em>sistem adı</em>/SitePages/Home.aspx.
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605997"
 > [!IMPORTANT]
 >  Aşağıdaki yordamı gerçekleştirmeden bir çalışma zamanı hatası alırsanız, SharePoint sitesine erişimi olan bir sisteme yordamı uygulamak zorunda.
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>Mevcut bir SharePoint sitesi dışarı aktarmak için
+### <a name="to-export-an-existing-sharepoint-site"></a>Mevcut bir SharePoint sitesi dışarı aktarmak için
 
 1.  SharePoint sitesi seçin **Site Ayarları** üzerinde **Site eylemleri** Site Ayarları sayfasını görüntülemek için sekmesinde.
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605997"
 ## <a name="import-the-wsp-file"></a>.Wsp dosyasını içeri aktar
  Olduğuna göre bir *.wsp* (özel site sütunu Test sütun) yeniden, içeri aktarmak istediğiniz öğeyi içeren dosya *.wsp* erişmek için dosya.
 
-#### <a name="to-import-a-wsp-file"></a>.Wsp dosyasını içeri aktarmak için
+### <a name="to-import-a-wsp-file"></a>.Wsp dosyasını içeri aktarmak için
 
 1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], menü çubuğunda, **dosya** > **yeni** > **proje** görüntülenecek **yeni proje**iletişim kutusu. IDE'nizi menü çubuğundaki Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa seçin **dosya** > **yeni proje**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605997"
 ## <a name="deploy-the-project"></a>Projeyi dağıtın
  Son olarak, dağıtım **WspImportProject1** ikinci SharePoint alt site özel site sütunu görüntülemek için daha önce oluşturduğunuz.
 
-#### <a name="to-deploy-the-project"></a>Projeyi dağıtmak için
+### <a name="to-deploy-the-project"></a>Projeyi dağıtmak için
 
 1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], seçin **F5** dağıtmak ve çalıştırmak için anahtar *.wsp* projeyi alın.
 

@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231954"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842483"
 ---
 # <a name="installation"></a>Yükleme
 
@@ -26,7 +25,7 @@ AI için Visual Studio Araçları, Windows 64-bit işletim sistemlerine yüklene
 
 Bu uzantı, Visual Studio 2015 ve Visual Studio 2017 Community edition ile çalışır veya üzeri.
 
-Araçları'ndan indirebileceğiniz [Visual Studio Market](http://aka.ms/vstoolsforai), veya Visual Studio içinde:
+Araçları'ndan indirebileceğiniz [Visual Studio Market](https://aka.ms/vstoolsforai), veya Visual Studio içinde:
 
 1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
 

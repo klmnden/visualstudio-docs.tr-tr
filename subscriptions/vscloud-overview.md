@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269754"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842227"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -24,14 +22,14 @@ Satın alabileceğiniz [Visual Studio Professional ve Visual Studio Enterprise a
 [Bulut abonelik avantajları ve fiyatlandırmayı karşılaştırarak](https://visualstudio.microsoft.com/vs/pricing/)
 
 > [!NOTE]
-> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin. Yine de yeni aylık bulut abonelikleri satın alabilir. 
+> Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin. Yine de yeni aylık bulut abonelikleri satın alabilir.
 
 ## <a name="before-you-start"></a>Başlamadan önce
 
 *   Satın alma işlemlerinizi faturalamak için ihtiyacınız bir [Azure aboneliği](https://azure.microsoft.com/pricing/purchase-options/). Yapabilecekleriniz [kaydolun](https://portal.azure.com) ilk satın alma işleminiz öncesinde veya Visual Studio Market'te ilk satın alma işleminiz sırasında.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Kimlerin Visual Studio bulut abonelikleri satın alabilir?
-Hiç kimseyle [sahibi ve katkıda bulunan erişimi](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) bulut abonelikleri Azure aboneliği satın alabilirsiniz.  
+Hiç kimseyle [sahibi ve katkıda bulunan erişimi](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) bulut abonelikleri Azure aboneliği satın alabilirsiniz.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Bulut abonelikleri satın alma
 
@@ -83,43 +81,42 @@ Birden fazla aboneliği satın aldıysanız, devam [Visual Studio abonelikleri Y
 
 ### <a name="for-new-customers"></a>Yeni müşteriler için:
 #### <a name="q--i-was-considering-the-annual-cloud-subscription-and-now-i-cant-find-it-what-should-i-do"></a>S:  Yıllık bulut aboneliği dikkate ve artık bulamıyorum.  Ne yapmalıyım?
-Y: Lütfen Git [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) diğer satın alma seçenekleri. 
+Y: Lütfen Git [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) diğer satın alma seçenekleri.
 
 #### <a name="q-what-purchasing-options-are-available-to-me"></a>S: Bana kullanılabilir satın alma seçenekleri nelerdir?
-Y:  Aylık abonelikler ve standart aboneliklere bizim doğrudan satış kanalları sunuyoruz. Daha fazla bilgi için kullanıma [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).  
-Toplu Lisanslama programımız yoluyla pek çok seçenek vardır. Üzerinde seçenekleri ve fiyatlar araştırma  
-[https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
+Y:  Aylık abonelikler ve standart aboneliklere bizim doğrudan satış kanalları sunuyoruz. Daha fazla bilgi için kullanıma [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).
+Toplu Lisanslama programımız yoluyla pek çok seçenek vardır. Üzerinde seçenekleri ve fiyatlar araştırma [ https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy ](https://www.microsoft.com/en-us/licensing/how-to-buy/how-to-buy).
 
-#### <a name="q-the-price-for-a-retail-subscription-is-higher-what-additional-benefits-am-i-receiving"></a>S: Perakende aboneliğinizi fiyatı daha yüksektir. Ek ne gibi avantajlara alıyorum? 
-Y:  Abonelikle birlikte gelen Visual Studio IDE için kalıcı lisans haklarını alırsınız. Bu yenileme zamanı geldiğinde, yalnızca önemli ölçüde daha az Yazılım Güvencesi ücreti ödersiniz.  
+#### <a name="q-the-price-for-a-retail-subscription-is-higher-what-additional-benefits-am-i-receiving"></a>S: Perakende aboneliğinizi fiyatı daha yüksektir. Ek ne gibi avantajlara alıyorum?
+Y:  Abonelikle birlikte gelen Visual Studio IDE için kalıcı lisans haklarını alırsınız. Bu yenileme zamanı geldiğinde, yalnızca önemli ölçüde daha az Yazılım Güvencesi ücreti ödersiniz.
 
 ### <a name="for-existing-annual-cloud-subscribers"></a>Mevcut yıllık bulut aboneleri için
 #### <a name="q--how-will-this-change-impact-me"></a>S:  Bu değişiklik beni nasıl etkileyecek?
-Y:  Bu değişiklik, mevcut aboneler etkilemez. 
+Y:  Bu değişiklik, mevcut aboneler etkilemez.
 
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>S:  Bu değişiklik sonucunda herhangi bir şey yapmanız gerekiyor?
-Y:  Hayır.  Aboneliklerinizi yerinde kalır ve bugün olduğu gibi bunları yönetmek mümkün olacaktır.  
+Y:  Hayır.  Aboneliklerinizi yerinde kalır ve bugün olduğu gibi bunları yönetmek mümkün olacaktır.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>S: Abonelik sayısını artırmak istersem Şirketimin sahip olduğu?
 Y:  Yöneticinize devam ederek abonelik sayısını artırabilir [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ve abonelik sayısını artırmak için bu makaledeki yönergeleri.
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>S: Abonelik sayısını azaltmak istersem Şirketimin sahip olduğu? 
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>S: Abonelik sayısını azaltmak istersem Şirketimin sahip olduğu?
 Y:  Yöneticinize devam ederek abonelik sayısını azaltabilirsiniz [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ve abonelik sayısını azaltmak için bu makaledeki yönergeleri.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>S: Aboneliğimi iptal, ben daha sonra başka bir yıllık bulut aboneliği satın alabilirsiniz olacak mı?
 Y:  Başka bir yıllık bulut aboneliği satın almanız mümkün olmayacaktır olsa da, Visual Studio abonelikleri satın almak için pek çok seçenek vardır.  Daha fazla bilgi [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/).
 
 ### <a name="for-cloud-solution-providers-csp"></a>Bulut çözüm sağlayıcıları (CSP)
-#### <a name="q-how-will-this-change-impact-my-customers"></a>S: Bu değişiklik, müşterilerimin nasıl etkiler? 
-Y:  Müşterilerinize yeni Visual Studio bulut yıllık abonelik satın almak mümkün olmayacaktır. 
+#### <a name="q-how-will-this-change-impact-my-customers"></a>S: Bu değişiklik, müşterilerimin nasıl etkiler?
+Y:  Müşterilerinize yeni Visual Studio bulut yıllık abonelik satın almak mümkün olmayacaktır.
 
-#### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>S: Müşterilerimin bu değişiklikler nedeniyle hiçbir şey yapmanız gerekiyor? 
+#### <a name="q-do-my-customers-need-to-do-anything-because-of-these-changes"></a>S: Müşterilerimin bu değişiklikler nedeniyle hiçbir şey yapmanız gerekiyor?
 Y:  Mevcut müşteriler etkilenmeyecektir. Yeni müşteriler, Visual Studio aylık abonelikler satın almak veya Visual Studio abonelikleri satın toplu gibi başka bir kanal gitmek istediğinize karar verin gerekecektir.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>S: Müşterilerimin için abonelik sayısını artırmak istersem?
 Y:  Yöneticinize devam ederek abonelik sayısını artırabilir [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ve abonelik sayısını artırmak için bu makaledeki yönergeleri.
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>S: Müşterilerimin için abonelik sayısını azaltmak istersem? 
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>S: Müşterilerimin için abonelik sayısını azaltmak istersem?
 Y:  Yöneticinize devam ederek abonelik sayısını azaltabilirsiniz [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ve abonelik sayısını azaltmak için bu makaledeki yönergeleri.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>S: Müşterilerimin aboneliklerini iptal ederseniz, daha sonra daha fazla yıllık bulut abonelikleri satın alabilirsiniz olacak?

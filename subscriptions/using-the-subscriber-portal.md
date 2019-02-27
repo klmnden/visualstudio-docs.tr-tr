@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio abonelikleri portalında kullanılabilir avantajları tamamı hakkında bilgi edinin
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859026"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843820"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Abone portalı - kullanarak benim. <span> </span>visualstudio<span></span>.com
 
@@ -22,10 +20,10 @@ Visual Studio abonelikleri portalında [ https://my.visualstudio.com ](https://m
 
 Portalı kullanarak, aboneliğinizle ilişkili kimliği oturum gerektirir.  Bu, Microsoft hesabı (MSA) veya İşveren veya Okul gibi bir kurum tarafından sağlanmış bir e-posta adresi olabilir.  Hakkında bilgi edinin [oturum açarken](signing-in.md).
 
-Portalda altı sayfalarında düzenlenmiştir.  Her sayfa, farklı ürünleri veya hizmetleri aboneliğinize dahil olan erişim sağlar.  Altı avantajları, indirmeler, ürün anahtarları, abonelikler, destek ve Market sayfalarıdır. 
+Portalda altı sayfalarında düzenlenmiştir.  Her sayfa, farklı ürünleri veya hizmetleri aboneliğinize dahil olan erişim sağlar.  Altı avantajları, indirmeler, ürün anahtarları, abonelikler, destek ve Market sayfalarıdır.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Avantajları](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Araç ve Hizmetleri aboneliğinize dahil olan "kutucukları olarak" avantajlar sayfasında görüntülenir.  Tüm avantajlar, tüm aboneliklere dahildir. Kutucuk üç kategorilerde gruplanır: araçlar, profesyonel geliştirme ve destek.  Visual Studio Dev Essentials'ı kullanıyorsanız, diğer üç kategoriden seçili avantajları içerebilir öne çıkan bir kategori başlıklı de görürsünüz.
+Araç ve Hizmetleri aboneliğinize dahil olan "kutucukları olarak" avantajlar sayfasında görüntülenir.  Tüm avantajlar, tüm aboneliklere dahildir. Kutucuk üç kategorilere ayrılır:  Araçlar, profesyonel gelişim ve destek.  Visual Studio Dev Essentials'ı kullanıyorsanız, diğer üç kategoriden seçili avantajları içerebilir öne çıkan bir kategori başlıklı de görürsünüz.
 
 ### <a name="tools"></a>Araçlar
 Çekirdek geliştirme araçları, Visual Studio IDE, Azure DevOps, hem de iş ortaklarımız tarafından sağlanan araçları gibi burada bulabilirsiniz araçları kategorisidir.  Ayrıca, Azure ve Visual Studio App Center gibi hizmetleri de görürsünüz.

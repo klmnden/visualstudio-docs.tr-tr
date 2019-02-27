@@ -2,7 +2,7 @@
 title: UML modellerini ve diyagramları genişletme | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-techdebt
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6670f6dc0415c8234a0032fdc5bcf7a941998816
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758415"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844038"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>UML modellerini ve diyagramları genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

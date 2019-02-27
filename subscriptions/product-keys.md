@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Edinmek ve ürün anahtarlarınızı Visual Studio aboneliklerini yönetme hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803830"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843730"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ürün anahtarlarını kullanma
 
@@ -47,9 +45,9 @@ Not: Anahtar talep etme sınırları değiştirilebilir. Lütfen en güncel sın
 
 ## <a name="locating-and-claiming-product-keys"></a>Bulma ve ürün anahtarlarını talep etme
 Ürün anahtarlarınızı görüntülemek için Visual Studio aboneliğiniz için oturum açmanız gerekir. Tek tek ürün anahtarları, mavi seçerek bulunan **anahtar Al** bağlamak için belirli bir ürünü [indirir](https://my.visualstudio.com/downloads) sayfası aşağıda gösterildiği gibi.  Tüm anahtarlar üzerinde toplama olarak da kullanılabilir [ürün anahtarlarını](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) sayfası. Tek bir ürün için birden çok anahtar varsa, hangi anahtarı kullanılması gereken tanımlanmasına yardımcı olması yükleme notları sütununda notları görüntülenir.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![İndirmeler sayfasından anahtarını alma](_img/product-keys/download-get-key.png)
-    
+
 Bazı ürünler tek ürünün birden çok sürüm paket. Bu gibi durumlarda, ürünün hangi sürümünün yüklü olup girilen ürün anahtarı belirler.
 Bazı anahtarları gibi birçok kez olarak etkinleştirme gerekli olmadığı için gerektiğinde kullanabileceğiniz "statik" anahtarlar otomatik olarak sağlanır. Diğer anahtarlar seçilerek talep edilmelidir **anahtar Al** ürün için bağlantı.
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 09/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Azure DevOps Visual Studio abonesi olarak nasıl kullanabileceğinizi öğrenin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 631683b48faed4e5b967e060b66123aaf685889b
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 01f5f34210b4a562015eb030b9a23ef4d5017add
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380019"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842657"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Azure DevOps avantajları
 
@@ -54,4 +52,3 @@ Azure DevOps özellikleri hakkında daha fazla bilgi edinin:
 - Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 - Visual Studio IDE, Azure DevOps veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 - [Azure DevOps belgeleri](/azure/devops/).
-

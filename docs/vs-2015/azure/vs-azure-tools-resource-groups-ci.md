@@ -4,19 +4,19 @@ description: Azure kaynak grubu dağıtım projeleri Visual Studio kullanarak Az
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 01793705d5d89d31b82a84d1ccca192d043db5a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe4a7111088ca41534a487cb52872a210c35dbc9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775564"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844054"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Azure DevOps hizmetlerinde, Azure kaynak grubu dağıtım projeleri kullanarak sürekli tümleştirme
+
 Azure şablonu dağıtmak için çeşitli aşamalarda görevleri gerçekleştirin: Azure yapı, Test, Kopyala (aynı zamanda "Hazırlama" olarak adlandırılır) ve şablonu dağıtın. Azure DevOps hizmetler için şablonları dağıtmak için iki farklı yolu vardır. Her iki yöntem de aynı sonuçları sağlar, bu nedenle, iş akışınızı en uygun olanı seçin.
 
 1. Azure kaynak grubu dağıtım projesi (AzureResourceGroup.ps1 dağıtma) dahil edilen PowerShell komut dosyasını çalıştırır, derleme işlem hattı için tek bir adım ekleyin. Betik yapıtları kopyalar ve ardından şablon dağıtır.

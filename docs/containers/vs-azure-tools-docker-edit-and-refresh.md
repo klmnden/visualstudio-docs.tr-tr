@@ -10,12 +10,12 @@ ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: 3f78476cc97cad90460d535f04759211540fc8aa
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 570ceba7936631563706ab78bd4671b6f7db07ae
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701324"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844417"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
 ## <a name="overview"></a>Genel Bakış
@@ -85,9 +85,9 @@ Visual Studio 2017'de Docker desteği sayesinde, yerel olarak geliştirme konusu
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Visual Studio, Windows ve Azure ile Docker hakkında daha fazla bilgi
 * [Visual Studio ile kapsayıcı geliştirme](/visualstudio/containers) -kapsayıcı geliştirme hub sayfası
-* [Azure işlem hatları için docker tümleştirmesi](http://aka.ms/dockertoolsforvsts) - derleme ve docker kapsayıcıları dağıtma
-* [Visual Studio Code için docker Araçları](http://aka.ms/dockertoolsforvscode) -yakında daha fazla e2e senaryoları ile docker dosyalarını düzenlemek için dil Hizmetleri
-* [Windows kapsayıcı bilgileri](http://aka.ms/containers)-Windows Server ve Nano sunucu bilgileri
+* [Azure işlem hatları için docker tümleştirmesi](https://aka.ms/dockertoolsforvsts) - derleme ve docker kapsayıcıları dağıtma
+* [Visual Studio Code için docker Araçları](https://aka.ms/dockertoolsforvscode) -yakında daha fazla e2e senaryoları ile docker dosyalarını düzenlemek için dil Hizmetleri
+* [Windows kapsayıcı bilgileri](https://aka.ms/containers)-Windows Server ve Nano sunucu bilgileri
 * [Azure Kubernetes hizmeti](https://azure.microsoft.com/services/kubernetes-service/) - [Azure Kubernetes Service belgeleri](/azure/aks)
 
 ## <a name="various-docker-tools"></a>Çeşitli Docker araçları

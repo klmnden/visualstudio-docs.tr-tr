@@ -1,27 +1,25 @@
 ---
-title: Visual Studio geliştirme Essentials nasıl | Microsoft Docs
+title: Visual Studio Dev Essentials'a katılmak nasıl | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/13/2018
-ms.topic: Get-Started-Article
-description: Visual Studio geliştirme Essentials ve kaydolma hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
+ms.topic: conceptual
+description: Visual Studio Dev Essentials ve nasıl kaydolacağınızı öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: e04e361dc36b0e4253edc695d79664995f681970
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3f193d2f1d2f2f1f031773dcde3b2a209f8eebb7
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283054"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841727"
 ---
-# <a name="how-to-join-visual-studio-dev-essentials"></a>Visual Studio geliştirme Essentials nasıl
+# <a name="how-to-join-visual-studio-dev-essentials"></a>Visual Studio Dev Essentials'a katılmak nasıl
 
-Visual Studio geliştirme Essentials oluşturmak ve herhangi bir platformda uygulamanızı dağıtmak için gereken her şeyi sağlar. Resim durumu Araçlar, güç bulut, eğitim ve Destek ile bizim en kapsamlı ücretsiz developer program herhangi bir zamanda içindir.
+Visual Studio Dev Essentials, derlemek ve tüm platformlarda uygulamanızı dağıtmak için ihtiyacınız olan her şeyi sunar. Resim durumu Araçlar, bulut, eğitim ve Destek gücü ile en kapsamlı ücretsiz Geliştirici Programımıza hiç olmadığı kadar olan.
 
-Ziyaret [geliştirme Essentials](https://visualstudio.microsoft.com/dev-essentials/) bir Visual Studio geliştirme Essentials üyeliği dahil her şeyi hakkında bilgi edinin.
+Ziyaret [Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) bir Visual Studio Dev Essentials üyeliği dahil her şeyi hakkında bilgi edinmek için.
 
-Kaydetmeye hazır olduğunuzda, yalnızca tıklatın [katılın veya şimdi erişim](https://my.visualstudio.com/Benefits?wt.mc_id=o~msft~vscom~devessentials-hero~mt689&campaign=o~msft~vscom~devessentials-hero~mt689) düğmesi.
+Kaydetmeye hazır olduğunuzda, tıklamanız [hemen katılın veya erişin](https://my.visualstudio.com/Benefits?wt.mc_id=o~msft~vscom~devessentials-hero~mt689&campaign=o~msft~vscom~devessentials-hero~mt689) düğmesi.
 
-Tüm olan İşte bu kadar.
+Tüm İşte bu kadar kolay.

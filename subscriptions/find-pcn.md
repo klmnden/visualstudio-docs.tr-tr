@@ -4,21 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/29/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Genel müşteri numarasını (PCN) veya yetkilendirme numaranızı bulmak hakkında bilgi edinin
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b27d61a614c7ddbe1503eb7708e0e2e35a39fca0
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b24654828cb0e44d6e064c01825feaaaff4558b0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269217"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844353"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Benim "Genel Müşteri Numaramı (PCN) veya yetkilendirme numarasını nasıl bulabilirim?
 
-Kuruluşunuzun abonelik yönetimi portalında ekleme işlemini tamamlamak için genel müşteri numarasını (PCN) veya yetkilendirme numaranızı gerekir. Bu makalede, kuruluşunuz için bu numaraları bulmak için adımları sağlar.  
+Kuruluşunuzun abonelik yönetimi portalında ekleme işlemini tamamlamak için genel müşteri numarasını (PCN) veya yetkilendirme numaranızı gerekir. Bu makalede, kuruluşunuz için bu numaraları bulmak için adımları sağlar.
 
 ## <a name="to-locate-your-pcn-or-authorization-number"></a>PCN veya yetkilendirme numaranızı bulmak için
 
@@ -28,8 +26,8 @@ Toplu Lisanslama hizmet Merkezi'nden, artık PCN'nizi erişim sağlar.  Bunu eld
     > [!div class="mx-imgBorder"]
     > ![Abonelik desteği'ni seçin](_img/vlsc/vlsc-pcn.png)
 3. Aşağı açılan listeden ülkenizi seçin.
-4. PCN'NİZİ'ın sizin için araştırma olan bir destek Aracısı başvurmak için sunulan destek seçeneklerini ülkenizde listesinden seçin.  
+4. PCN'NİZİ'ın sizin için araştırma olan bir destek Aracısı başvurmak için sunulan destek seçeneklerini ülkenizde listesinden seçin.
 
 ## <a name="if-i-have-more-than-one-pcn-which-one-should-i-use"></a>Birden çok PCN'ye sahipsem hangisini kullanmalıyım?
 
-Birden fazla genel müşteri numarasını (PCN) varsa, her PCN için benzersiz bir ekleme URL'si içeren bir e-posta alırsınız. Her benzersiz URL, yalnızca son üç hanesi de aynı e-postada sağlanır, karşılık gelen PCN ile çalışır. Her PCN için her bir e-postadaki benzersiz bağlantı aracılığıyla ekleme işlemini tamamlamak gerekir. 
+Birden fazla genel müşteri numarasını (PCN) varsa, her PCN için benzersiz bir ekleme URL'si içeren bir e-posta alırsınız. Her benzersiz URL, yalnızca son üç hanesi de aynı e-postada sağlanır, karşılık gelen PCN ile çalışır. Her PCN için her bir e-postadaki benzersiz bağlantı aracılığıyla ekleme işlemini tamamlamak gerekir.

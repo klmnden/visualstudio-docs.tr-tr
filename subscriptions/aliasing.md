@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Diğer ad veya kolay adlar kullanılması durumunda oturum açma başarısız olabilir
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817444"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841633"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikleri için oturum açarken diğer adlar kullanırken başarısız olabilir
 
@@ -150,7 +148,7 @@ Visual Studio aboneliği atanmış olan ve oturum açmak için yönlendirilmiş 
 
 6. Avantajlarınızı hemen görmeniz gerekir
 
-Not: ziyaret https://my.visualstudio.com gelecekte (örn. kullanmak istediğiniz hesabı seçin istenebilir "İş veya Okul hesabı" veya "Kişisel hesap").  Yukarıdaki adımları tamamladıktan sonra "Kişisel hesap" seçeneğini yararlanarak gerekecektir.
+Not:  Ziyaret https://my.visualstudio.com gelecekte (örn. kullanmak istediğiniz hesabı seçin istenebilir "İş veya Okul hesabı" veya "Kişisel hesap").  Yukarıdaki adımları tamamladıktan sonra "Kişisel hesap" seçeneğini yararlanarak gerekecektir.
 
 Sorun yaşıyorsanız, lütfen Destek ekibine başvurun (https://visualstudio.microsoft.com/subscriptions/support/).
 

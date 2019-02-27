@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 876868d8c2faf483f1033bab1ff8ac14f6e9ab10
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956915"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841850"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl Dosyası
 
@@ -78,7 +78,7 @@ Bu bölüm tanımlar **DSL Gezgini** (XmlSerializationBehavior bölümünde tan�
 
 DslDefinition.dsl dosyası boyunca belirli öğeleri çapraz başvuru yapmak için bilinen adlar kullanabilirsiniz. Örneğin, bir kaynak alt ve bir hedef alt her ilişki tanımı içerir. Her bir alt ilişkinin ile bağlantılı nesne sınıfının ad içerir:
 
-```
+```xml
 <DomainRelationship ...        Name="LibraryHasMembers" Namespace="ExampleNamespace" >    <Source>      <DomainRole ...>
        <RolePlayer>
          <DomainClassMoniker Name="Library" />
@@ -89,7 +89,7 @@ DslDefinition.dsl dosyası boyunca belirli öğeleri çapraz başvuru yapmak iç
 
 Genellikle, başvurulan öğenin ad alanı (Bu örnekte, `Library` etki alanı sınıfı) (Bu durumda, LibraryHasMembers etki alanı ilişkisi) başvuru öğesi ile aynıdır. Bu gibi durumlarda ad, yalnızca sınıf adını vermeniz gerekir. Aksi halde, tam form /Namespace/Name kullanmanız gerekir:
 
-```
+```xml
 <DomainClassMoniker Name="/ExampleNameSpace/Library" />
 ```
 
@@ -107,7 +107,7 @@ Yalnızca bazıları kullanılsa bileşen diyagramı örneği bir dizi standart 
 
 Her bir dış tür tanımı yalnızca bir ad ve dize ve sistemi gibi bir ad alanı oluşur:
 
-```
+```xml
 <ExternalType Name="String" Namespace="System" />
 ```
 
@@ -119,7 +119,7 @@ Dış türler, standart kitaplık türleri için sınırlı değildir.
 
 Tipik bir sabit listesi belirtimi şu örnektekine benzer:
 
-```
+```xml
 <DomainEnumeration IsFlags="true" Name="PageSort"          Namespace="Fabrikam.Wizard">
   <Literals>
     <EnumerationLiteral Name="Start" Value="1"/>
@@ -136,7 +136,7 @@ Herhangi bir etki alanına özgü dil tanımı'ndaki öğelerin çoğu doğrudan
 
 Her sınıf, bir özellik kümesine sahiptir ve bir temel sınıfa sahip. Bileşen Diyagramı örnekte `NamedElement` sahip bir Özet sınıf bir `Name` türü olan dize özelliği:
 
-```
+```xml
 <DomainClass Id="ee3161ca-2818-42c8-b522-88f50fc72de8"  Name="NamedElement" Namespace="Fabrikam.CmptDsl5"      DisplayName="Named Element"  InheritanceModifier="Abstract">
   <Properties>
     <DomainProperty Id="ef553cf0-33b5-4e34-a30b-cfcfd86f2261"   Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
@@ -150,7 +150,7 @@ Her sınıf, bir özellik kümesine sahiptir ve bir temel sınıfa sahip. Bileş
 
 `NamedElement` olduğu gibi birkaç başka sınıfların temel `Component`, ek olarak kendi özelliklerine sahip `Name` öğesinden devralınan özelliği `NamedElement`. Bilinen ad başvuru BaseClass alt düğüm içerir. Başvurulan sınıfı aynı ad alanında olduğundan, adı yalnızca bilinen adı gereklidir:
 
-```
+```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
   <BaseClass>
     <DomainClassMoniker Name="NamedElement" />
@@ -194,7 +194,7 @@ Her bir etki alanı özellik, bir ad ve bir türü vardır. Ad etki alanı sın�
 
 Listelenenler birine türüne başvurmalıdır `Types` bölümü. Genel olarak, ad, ad alanı içermelidir.
 
-```
+```xml
 <DomainProperty Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
   <Type>
     <ExternalTypeMoniker Name="/System/String" />
@@ -246,13 +246,13 @@ Her ilişki aşağıdaki özniteliklere sahip bir kaynak ve hedef rolleri içeri
 
 -   Rolün `Name` ilişki sınıfı içinde bir bağlantının bu amaçla başvurmak için kullanılan addır. Her bağlantı yalnızca bir örneği her sonunda sahip kural olarak, bir rol adı her zaman tekil, olmasıdır. Aşağıdaki kod işe yarar:
 
-    ```
+    ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
 -   Varsayılan olarak, `IsPropertyGenerator` özniteliği true. False olarak ayarlanmışsa, özellik rol oyuncusu sınıf üzerinde oluşturulur. (Bu durumda, `op.Targets`, örneğin, çalışmaz). Ancak, ilişkinin çapraz geçiş yapamaz veya özel kod ilişki açıkça kullanıyorsa bağlantılara erişim elde etmek için özel kod kullanma yine de mümkündür:
 
-    ```
+    ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
     foreach (Connection link in Connection.GetLinksToTargets(op)) ...
     ```
@@ -287,7 +287,7 @@ Her segmentinde bir ilişki adı ile başlar. Bir nokta ve özellik adı ilişki
 
 Bileşen Diyagramı örneği için InPort ParentElementPath ShapeMap, bir yolda içerir. Bu yol şu şekilde başlar:
 
-```
+``` 
     ComponentHasPorts.Component
 ```
 
@@ -295,13 +295,13 @@ Bu örnekte, InPort ComponentPort sınıfıdır ve ComponentHasPorts bir ilişki
 
 C# bu modelinde yazarken, tek bir adımda bir bağlantı üzerinden her, ilişkili sınıfları ilişki oluşturan özelliğini kullanarak atlayabilirsiniz:
 
-```
+``` 
      InPort port; ...  Component c = port.Component;
 ```
 
 Ancak, iki atlama yolu sözdiziminde açıkça yapmanız gerekir. Bu gereksinimden dolayı Ara Bağlantı daha kolay erişebilirsiniz. Aşağıdaki kod, bağlantıdan atlama bileşenine tamamlar:
 
-```
+``` 
     ComponentHasPorts.Component / ! Component
 ```
 
@@ -313,7 +313,7 @@ Dil Kullanıcı, bir öğe sürüklediğinde **araç kutusu** diyagram üzerine 
 
 Yalnızca konak sınıfı bir öğe birleştirme yönergesinde sınıfına ait yeni bir öğe varsa bileşeni gibi olası bir konak sınıfının yeni bir öğe kabul eder. Örneğin, adı DomainClass düğümle "Component" = içerir:
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
     <ElementMergeDirective>
       <Index>
@@ -337,7 +337,7 @@ Birden fazla bölüm bir bağlantı oluşturma yolu kullanabilirsiniz. Bu durumd
 
 Örneğin, bu öğe birleştirme yönergesi için bileşen sınıfı ekleyebilirsiniz:
 
-```
+```xml
 <DomainClass Name="Component" ...> ...
   <ElementMergeDirective>
     <Index>
@@ -372,7 +372,7 @@ Her `XmlClassData` düğüm, bu alt düğümleri ve öznitelikleri içerir:
 
 -   **ElementName** XML etiketi bu sınıfın serileştirilmiş örneklerinin belirleyen bir dize. İlk harfini, küçük harf olması dışında Kural gereği, ElementName genellikle sınıfı adıyla aynıdır. Örneğin, bir örnek model dosyası aşağıdakiler ile başlar:
 
-    ```
+    ```xml
     <componentModel ...
     ```
 
@@ -380,7 +380,7 @@ Her `XmlClassData` düğüm, bu alt düğümleri ve öznitelikleri içerir:
 
 -   **MonikerAttributeName**, XML özniteliği bir bilinen ad içinde adını tanımlar. Bu seri hale getirilmiş bir kullanıcının dosya parçasında tanımlanan etki alanına özgü dil yazarı **MonikerElementName** "inPortMoniker" olarak ve **MonikerAttributeName** "path" olarak:
 
-    ```
+    ```xml
     <inPortMoniker path="//Component2/InPort1" />
     ```
 
@@ -400,7 +400,7 @@ Varsayılan olarak, **gösterimi** öznitelik, öznitelik için ayarlanır. Vars
 
 Serileştirilmiş modeli dosyasında, bir öğenin tam ad, her noktasında bilinen ad anahtarı Alıntısı ilişkileri ekleme ağaç modeli kökünden yoludur. Örneğin, model kök dizininde sırayla katıştırılmış bileşenleri içinde InPorts katıştırılır. Bu nedenle geçerli bilinen adı şöyledir:
 
-```
+```xml
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
@@ -418,7 +418,7 @@ Bir seri hale getirilmiş model dosyası içinde bağlantılar (ilişkilerinin h
 
 Örneğin, DslDefinition.dsl dosyası içerir:
 
-```
+```xml
 <XmlClassData ElementName="component" ...>
   <DomainClassMoniker Name="Component" />
   <ElementData>
@@ -429,10 +429,10 @@ Bir seri hale getirilmiş model dosyası içinde bağlantılar (ilişkilerinin h
 
 Bu nedenle, seri hale getirilmiş dosya içeriyor:
 
-```
-<component name="Component1"> <!-- parent ->
-   <ports> <!-- role ->
-     <outPort name="OutPort1"> <!-- child element ->
+```xml
+<component name="Component1"> <!-- parent -->
+   <ports> <!-- role -->
+     <outPort name="OutPort1"> <!-- child element -->
        ...
      </outPort>
    </ports> ...
@@ -440,7 +440,7 @@ Bu nedenle, seri hale getirilmiş dosya içeriyor:
 
 Varsa **UseFullForm** özniteliği true, ek bir koruma katmanı iç içe geçme sunulmuştur. Bu katman, ilişkinin kendisini temsil eder. Öznitelik, ilişki özelliklere sahipse true olarak ayarlanmalıdır.
 
-```
+```xml
 <XmlClassData ElementName="outPort">
    <DomainClassMoniker Name="OutPort" />
    <ElementData>
@@ -453,11 +453,11 @@ Varsa **UseFullForm** özniteliği true, ek bir koruma katmanı iç içe geçme 
 
 Seri hale getirilmiş dosya içeriyor:
 
-```
-<outPort name="OutPort1">  <!-- Parent ->
-   <targets>  <!-- role ->
-     <connection sourceRoleName="X">  <!-- relationship link ->
-         <inPortMoniker name="//Component2/InPort1" /> <!-- child ->
+```xml
+<outPort name="OutPort1">  <!-- Parent -->
+   <targets>  <!-- role -->
+     <connection sourceRoleName="X">  <!-- relationship link -->
+         <inPortMoniker name="//Component2/InPort1" /> <!-- child -->
      </connection>
     </targets>
   </outPort>
@@ -467,9 +467,9 @@ Seri hale getirilmiş dosya içeriyor:
 
 Varsa **OmitElement** özniteliği true olarak ilişki rolü adı, seri hale getirilmiş dosya kısaltmasıdır ve iki sınıf birden fazla ilişki varsa belirsizliği atlanır. Örneğin:
 
-```
+```xml
 <component name="Component3">
-  <!-- only one relationship could get here: ->
+  <!-- only one relationship could get here: -->
   <outPort name="OutPort1">
      <targets> ...
 ```
@@ -482,7 +482,7 @@ DslDefinition.dsl dosyası ve bir etki alanına özgü dil tanımına uyan kendi
 
 -   **Sınıflar** olduğu **RoleElementName** etki alanına özgü dil ve DomainClass arasındaki ilişki.
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...>
   <Classes>
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
@@ -490,7 +490,7 @@ DslDefinition.dsl dosyası ve bir etki alanına özgü dil tanımına uyan kendi
 
 -   **XmlSerializationBehavior** özniteliği altında gömüldüğü `Dsl` özniteliği, ancak **OmitElement** gömme ilişkisi üzerinde öznitelik ayarlandı. Bu nedenle, Hayır `RoleElementName` müdahalesi özniteliği. Aksine, bir **ClassData** özniteliği `RoleElementName` gömme ilişkisi özniteliği bir **XmlSerializationBehavior** özniteliğini ve bir **XmlClassData** özniteliği.
 
-```
+```xml
 <Dsl Name="CmptDsl5" ...> ...
   <XmlSerializationBehavior Name="ComponentsSerializationBehavior" >
     <ClassData>
@@ -500,7 +500,7 @@ DslDefinition.dsl dosyası ve bir etki alanına özgü dil tanımına uyan kendi
 
 -   ConnectorHasDecorators gömme ilişkisi olduğundan `Connector` ve `Decorator`. `UseFullForm` İlişki adı, her bağlantı için özellik listesiyle birlikte Bağlayıcısı nesneden görünmesi ayarlandı. Ancak, `OmitElement` ayrıca ayarlayın böylece hiçbir `RoleElementName` içinde gömülü birden çok bağlantı kapsayan `Connector`:
 
-```
+```xml
 <Connector Name="AssociationLink" ...>
   <ConnectorHasDecorators Position="TargetTop" ...>
     <TextDecorator Name="TargetRoleName"   />
@@ -527,7 +527,7 @@ Belirtilen alan sınıfının örnekleri bir şekil tarafından temsil edilen ek
 
 Aşağıdaki örnekte olduğu gibi `ShapeMap` öğeler varsa, en az bir alan sınıfının ad, bilinen adı, şekil, ve `ParentElementPath` öğesi:
 
-```
+```xml
 <ShapeMap>
   <DomainClassMoniker Name="InPort" />
   <ParentElementPath>
@@ -549,7 +549,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 Şekil eşlemesi modelin kökü yok. Kök olan doğrudan diyagramdan, bunun yerine, başvurulan bir `Class` öğesi:
 
-```
+```xml
 <Diagram Name="ComponentDiagram" >
     <Class>
       <DomainClassMoniker Name="ComponentModel" />
@@ -568,7 +568,7 @@ Bölme şekli eşlemeleri alt şekil haritaları türlerini ' dir.
 
 En az bir bağlayıcı eşlemesi, bağlayıcı ve ilişki başvuruyor:
 
-```
+```xml
 <ConnectorMap>
   <ConnectorMoniker Name="CommentLink" />
   <DomainRelationshipMoniker Name="CommentsReferenceComponents" />

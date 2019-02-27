@@ -1,79 +1,77 @@
 ---
-title: Visual Studio abonelikler için oturum açma | Microsoft Docs
+title: Visual Studio abonelikleri için oturum açma | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
-description: Visual Studio aboneliğiniz için oturum açma
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
+ms.topic: conceptual
+description: Visual Studio aboneliğinizde oturum açma
 searchscope: VS Subscription
-ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 231b60eb6f46185060d5c9a75bbfc9a54751100a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863566"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842019"
 ---
-# <a name="signing-in-to-your-visual-studio-subscription"></a>Visual Studio aboneliğiniz için oturum açma
+# <a name="signing-in-to-your-visual-studio-subscription"></a>Visual Studio aboneliğinizde oturum açma
 
-Adımlar Visual Studio aboneliğiniz oturum açmak için kullandığınız hesap türüne bağlıdır.  Örneğin, bir Microsoft hesabı (MSA) veya İşveren veya okulunuz tarafından sağlanan bir e-posta adresi kullanıyor olabilir.  
+Adımlar Visual Studio aboneliğinizde oturum açmak için kullandığınız hesap türüne bağlıdır.  Örneğin, bir Microsoft hesabı (MSA) veya sizin İşveren veya okulunuz tarafından sağlanan bir e-posta adresi kullanıyor olabilir.
 
 Üç farklı oturum açma yöntemi, bu makalede ele alınmaktadır:
 1. Microsoft hesabınızla (MSA) imzalama
-2. [İş/Okul hesabınızla oturum imzalama](#signing-in-with-your-work-or-school-account)
+2. [İş/Okul hesabınızla oturum açma](#signing-in-with-your-work-or-school-account)
 3. [Bir iş/Okul hesabınızda oturum açmak için Microsoft Account kullanma](#using-your-microsoft-account-to-sign-in-to-a-work-or-school-account)
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Microsoft hesabınızla (MSA) imzalama
-1. Lütfen şu adresi ziyaret [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
-2. Ayarlayın ya da Visual Studio aboneliğiniz satın sağladığınız e-posta adresi girin.
-    
-   > [!NOTE] 
-   > Bu adrese ayrıca aboneliği satın ya da Visual Studio geliştirme Essentials için kaydolan abone Hoş Geldiniz e-tanımlanmıştır. Hoş Geldiniz e-posta bulma konusunda sorun yaşıyorsanız Lütfen gereksiz posta klasörlerinizi denetleyin. 
+1. Lütfen [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+2. Ayarlayın ya da Visual Studio aboneliğiniz satın size sağlanan e-posta adresi girin.
+
+   > [!NOTE]
+   > Bu adres, abonelik satın alınan ya da Visual Studio Dev Essentials için kaydolan aldığınız abone Hoş Geldiniz e-postadaki da tanımlanır. Hoş Geldiniz e-posta bulma yaşıyorsanız Lütfen gereksiz posta klasörlerinizi denetleyin.
 
 3. Parolanızı girin.
-4. Tıklatın **oturum**. 
-5. Bu noktada, "Avantajları" sayfası gösterilmelidir.
+4. Tıklayın **oturum**.
+5. Bu noktada "Avantajlar" sayfası görüntülenmelidir.
 
-### <a name="for-visual-studio-dev-essentials-users"></a>Visual Studio geliştirme Essentials kullanıcıları için:
-Visual Studio geliştirme Essentials aboneliğinizi ilk kez eriştiğinde, bir Hoş Geldiniz iletişim kutusu görürsünüz.  Tıklatın **Onayla** programın hüküm ve koşulları kabul etmek için.
+### <a name="for-visual-studio-dev-essentials-users"></a>Visual Studio Dev Essentials kullanıcıları için:
+Visual Studio Dev Essentials aboneliğinizi ilk kez eriştiğinizde, bir Hoş Geldiniz iletişim kutusunu görürsünüz.  Tıklayın **Onayla** programın hüküm ve koşulları kabul etmek için.
 
-## <a name="signing-in-with-your-work-or-school-account"></a>İş veya Okul hesabınızla oturum imzalama 
-1. Lütfen şu adresi ziyaret [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
-2. Yeni Visual Studio abonelik atanıp atanmadığını e-posta adresi girin.
-    
+## <a name="signing-in-with-your-work-or-school-account"></a>İş veya Okul hesabınızla oturum açma
+1. Lütfen [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+2. İçin yeni Visual Studio aboneliğinin atandığı e-posta adresi girin.
+
    > [!NOTE]
-   > Bu adres, aldığınız abone Hoş Geldiniz e-postayla da tanımlanır. Hoş Geldiniz e-posta bulma konusunda sorun yaşıyorsanız Lütfen gereksiz posta klasörlerinizi denetleyin. 
+   > Bu adres, aldığınız abone Hoş Geldiniz e-postayla da tanımlanır. Hoş Geldiniz e-posta bulma yaşıyorsanız Lütfen gereksiz posta klasörlerinizi denetleyin.
 
 3. **Devam**'a tıklayın.
-4. Kurumsal oturum açma sayfasına yönlendirilir.
+4. Kurumsal oturum açma sayfasına yönlendirilirsiniz.
 5. Parolanızı girin.
-6. Tıklatın **oturum açın** 
-7. Bu noktada, "Avantajları" sayfasının görüntülenmesi gerekir 
+6. Tıklayın **oturum açın**
+7. Bu noktada "Avantajlar" sayfası görüntülenmelidir
 
-Kullanmakta olduğunuz abonelik portal üstte mavi çubuğunda görüntülenen türünü şimdi görebilirsiniz.  
+Şimdi mavi çubuğun portalın üst kısmında görüntülenen kullanmakta olduğunuz abonelik türüne görebilirsiniz.
 
-Şu anda seçili aboneliğinizde sağ üst köşesinde, kullanıcı adınızı altında de görebilirsiniz.  Söyleyin "gösteren:", abonelik tarafından izlenen.  Birden fazla aboneliğiniz varsa, açılan ok tıklayın ve kullanmak istediğiniz aboneliği seçin.  
+Şu anda seçili aboneliğinize sağ üst köşede adınızı altında de görebilirsiniz.  Yazar "gösteren:" abonelik çizgidir.  Birden fazla aboneliğiniz varsa, aşağı açılan oka tıklayın ve kullanmak istediğiniz aboneliği seçin.
 
 ## <a name="using-your-microsoft-account-to-sign-in-to-a-work-or-school-account"></a>Bir iş veya Okul hesabınızda oturum açmak için Microsoft Account kullanma
 
-1. Git [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
-2. Yeni Visual Studio abonelik atandığı e-posta adresi girin 
+1. [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) kısmına gidin.
+2. Yeni Visual Studio aboneliğinin atandığı e-posta adresi girin
 
    > [!NOTE]
-   > Bu adres de Hoş Geldiniz harf abone olarak tanımlanır. Hoş Geldiniz harf olmayan aldıysanız, gereksiz posta klasörlerinizi gözden geçirin
+   > Bu adres, abonenin Hoş Geldiniz mektubunda da tanımlanır. Hoş Geldiniz mektubunda değil alındıysa Lütfen gereksiz posta klasörlerinizi denetleyin
 
 3. **Devam**'a tıklayın.
-4. Bir karar sayfasına yeniden yönlendirilmeniz.
-    - Seçin **iş veya Okul hesabı** abonelik Azure Active Directory (AAD) Kiracı ile ilişkilendirilen bir "İş veya Okul" hesabı ile ilişkili ise.
-    - Seçin **kişisel** abonelik "Şirket" e-posta adresi ile ilişkilidir, ancak bir "Kişisel" Microsoft hesabı (MSA) için de dönüştürüldü.
+4. Bir karar sayfasına yönlendirilirsiniz.
+    - Seçin **iş veya Okul hesabı** aboneliği bir Azure Active Directory (AAD) Kiracı ile ilişkilendirilen bir "İş veya Okul" hesabıyla ilişkiliyse.
+    - Seçin **kişisel** abonelik "Kurumsal" e-posta adresiyle ilişkili, ancak bir "Kişisel" Microsoft hesabı (MSA) için de dönüştürüldü.
 
         > [!NOTE]
-        > Bu, Visual Studio abonelikleri (önceki adıyla MSDN) geçmişte kullanmış birçok aboneleri için durum olacaktır.
+        > Bu, geçmişte Visual Studio abonelikleri (eski adıyla MSDN) kullanmış abonelerin birçok durumda olacaktır.
 
-    - Bir izlediğiniz başarısız olursa, diğer deneyin.  Abonelik yöneticileri aboneliğinizi değiştirilmiş olabilir.
+    - Bir yol başarısız olursa diğerini deneyin.  Abonelik yöneticileri aboneliğinizi değiştirilmiş olabilir.
 
 5. Parolanızı girin.
-6. Tıklatın **oturum**.
-7. Bu noktada, "Avantajları" sayfası gösterilmelidir.
+6. Tıklayın **oturum**.
+7. Bu noktada "Avantajlar" sayfası görüntülenmelidir.

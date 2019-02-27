@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec3304ca0da49e5a72d97e4b04b3fd4aff6b13dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799647"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842954"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArray’ler için Roslyn Çözümleyicileri ve Kod Algılayan Kitaplık
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Bu örneği oluşturmak için gerekenler:
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Ayrıca, aynı zamanda SDK'yı yüklemek için ortak Araçlar altında Visual Studio genişletilebilirlik araçları Visual Studio'yu yüklerken denetleyebilirsiniz. Zaten Visual Studio yüklü değilse, ayrıca bu SDK'sı ana menüye gidip yükleyebileceğiniz **dosya &#124; yeni &#124;proje...** , C# sol gezinti bölmesinde seçerek ve sonra Extensibility seçme. Seçeneğini belirlediğinizde "**Visual Studio genişletilebilirlik Araçları'nı yükleme**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin.
 
-- [.NET derleyici Platformu ("Roslyn") SDK'sı](http://aka.ms/roslynsdktemplates). Ayrıca, ana menüsüne giderek bu SDK'sını yükleyebilirsiniz **dosya &#124; yeni &#124; proje...** seçip **C#** sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**.NET derleyici Platformu SDK'sını indirin**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin. Bu SDK'sı içerir [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Hangi kod model türleri şekil bu son derece kullanışlı araç yardımcı Çözümleyicisi'nde göz önünde bulundurmanız gerekenler. Çözümleyici altyapısı çağrıları kodunuzla belirli kod model türleri, kodunuzun yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kodunu analiz etme üzerinde odaklanabilirsiniz.
+- [.NET derleyici Platformu ("Roslyn") SDK'sı](https://aka.ms/roslynsdktemplates). Ayrıca, ana menüsüne giderek bu SDK'sını yükleyebilirsiniz **dosya &#124; yeni &#124; proje...** seçip **C#** sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**.NET derleyici Platformu SDK'sını indirin**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin. Bu SDK'sı içerir [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Hangi kod model türleri şekil bu son derece kullanışlı araç yardımcı Çözümleyicisi'nde göz önünde bulundurmanız gerekenler. Çözümleyici altyapısı çağrıları kodunuzla belirli kod model türleri, kodunuzun yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kodunu analiz etme üzerinde odaklanabilirsiniz.
 
 ## <a name="whats-the-problem"></a>Sorun nedir?
 Imagine Immutablearray ile bir kitaplığı belirtin (örneğin, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) destekler. C# geliştiricilerin .NET dizileri deneyimiyle ilgili bulunmaktadır. Ancak, uygulamada kullanılan Immutablearray'ler ve iyileştirme tekniklerini yapısı nedeniyle, C# Geliştirici intuitions bozuk kod yazmak kitaplığınızın kullanıcılar aşağıda açıklandığı gibi neden. Ayrıca, kullanıcılar kendi hataları çalışma zamanı için Visual Studio .NET ile kullanılırlar kalite deneyimi olmayan kadar görmez.

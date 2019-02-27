@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95e8989524c8e4df707fca364bc068b9151ba8bb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605087"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843173"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama
   Bir tür tanımlayıcı bir parametrenin veri türünü tanımlayan özellikler içerir. Tür tanımlayıcısını bir alan, bir varlık veya varlık koleksiyonunu tanımlayabilirsiniz. Daha fazla bilgi için [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -95,7 +95,7 @@ ms.locfileid: "56605087"
 
       Aşağıdaki örnekte ayarlar **TypeName** projeniz içerisindeki sınıflar koleksiyonuna özelliği.
 
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.BdcModel1.Contact, BdcModel1]'
 
    - Çözümünüzdeki bir derlemede bulunan bir tür için tam nitelikli ad tür adını, derleme, sürüm numarasını, kültürü ve ortak anahtar belirteci adını içerir.
 

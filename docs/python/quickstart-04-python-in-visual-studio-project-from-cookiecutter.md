@@ -1,7 +1,7 @@
 ---
 title: Hızlı Başlangıç - Cookiecutter kullanarak Python projesi oluşturma
 description: Bu hızlı başlangıçta, bir Cookiecutter şablonu kullanarak Python için bir Visual Studio projesi oluşturun.
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920164"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843110"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Hızlı Başlangıç: Bir Cookiecutter şablonundan proje oluşturma
 
@@ -29,13 +29,13 @@ Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-su
 
     ![Cookiecutter şablonundan yeni proje](media/projects-from-cookiecutter1.png)
 
-1. Seçili **Microsoft/python-sklearn-sınıflandırıcı-cookiecutter** şablonu seçip **sonraki**. (İşlemi ilk kez Cookiecutter kullandığınızda birkaç dakika sürebilir.)
+1. Seçili **Microsoft/python-sklearn-sınıflandırıcı-cookiecutter** şablonu seçip **sonraki**. (Visual Studio kullanarak gerekli Python paketlerini yükler gibi işlem ilk kez bir özel şablonu kullandığınızda birkaç dakika sürebilir.)
 
-1. Sonraki adımda, yeni proje için bir konum kümesi **oluşturmak için** alan ve ardından seçin **Oluştur**.
+1. Sonraki adımda, yeni proje için bir konum kümesi **oluşturmak için** alan ve ardından seçin **oluştur ve Proje Aç**.
 
     ![Cookiecutter kullanarak, proje özelliklerini ayarlama ikinci adım](media/projects-from-cookiecutter2.png)
 
-1. İşlem tamamlandığında, ileti gördüğünüz **dosyaları başarıyla oluşturuldu.** Komutu seçin **Çözüm Gezgini'nde açın** projeyi açmak için.
+1. İşlem tamamlandığında, ileti gördüğünüz **şablonu kullanarak dosyaları başarıyla oluşturuldu...** . Projeyi Çözüm Gezgini'nde otomatik olarak açılır.
 
 1. Tuşuna **Ctrl**+**F5** veya **hata ayıklama** > **hata ayıklama olmadan Başlat** programı çalıştırmak için.
 

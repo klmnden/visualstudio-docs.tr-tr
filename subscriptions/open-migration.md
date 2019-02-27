@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 07/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio abonelikleri Yönetim Portalı açın ve açık lisans geçiş hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f846be049ce8e3aaae8c1e49653869c37d0f72b
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995848"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843201"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Açık ve yeni Visual Studio abonelik yönetimi portalına geçiş Open Lisansı
 
@@ -28,22 +26,22 @@ Temmuz 2018'de, tüm açık lisans müşteriler yeni geçirilecektir [Visual Stu
 
 - Oturum açtıktan sonra şirketlerin aboneliklerini erişimleri.
 
-Tarihli geçişten sonra hem müşterilerin hem de iş ortakları, aşağıda listelenen senaryolar birine girer. 
+Tarihli geçişten sonra hem müşterilerin hem de iş ortakları, aşağıda listelenen senaryolar birine girer.
 
 ## <a name="open-and-open-license-management-for-new-orders"></a>Açık ve yeni siparişleri için Açık Lisans Yönetimi
 
-Abonelikleri yönetmek için [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com), iş ortakları birkaç adım vardır ve müşterilerin izlemeniz gerekir. İşlem olacaktır: 
+Abonelikleri yönetmek için [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com), iş ortakları birkaç adım vardır ve müşterilerin izlemeniz gerekir. İşlem olacaktır:
 
 - İş ortakları, müşterinin iş e-posta adresi girerek bir müşteri adına yeni bir sipariş yerleştirmeniz gerekir.
 
 - Müşteri yöneticileri atamak ve kendi aboneliklerine erişmek için davet eden bir bildirim alırsınız [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com).
 
-- Müşteriler adına Aboneliklerini yönetmek iş ortakları için bunların yönetim portalında kaydetmeniz gerekir. Erişim erişmek için çeşitli yollar aşağıda listelenen (add-açık işlem benzer). 
+- Müşteriler adına Aboneliklerini yönetmek iş ortakları için bunların yönetim portalında kaydetmeniz gerekir. Erişim erişmek için çeşitli yollar aşağıda listelenen (add-açık işlem benzer).
 
 
 ## <a name="existing-partners-adding-a-new-license"></a>Var olan iş ortakları yeni bir lisans ekleme
 
-Bu zaten erişimi olan iş ortakları için geçerlidir [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com), ancak açık lisans ile yönetmeniz gerekecek Visual Studio abonelikleri siparişi. 
+Bu zaten erişimi olan iş ortakları için geçerlidir [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com), ancak açık lisans ile yönetmeniz gerekecek Visual Studio abonelikleri siparişi.
 
 - İş ortağı doğrudan gider https://manage.visualstudio.com ve oturum açtığında.
 
@@ -57,9 +55,9 @@ Bu zaten erişimi olan iş ortakları için geçerlidir [Visual Studio abonelikl
 
 ## <a name="new-partners-who-register-on-the-volume-licensing-service-center-vlsc"></a>Toplu Lisanslama hizmeti Merkezi (VLSC) üzerinde kaydetme yeni iş ortakları
 
-Bu yeni açık lisans siparişler, ancak kimlerin kaydettirebilir yerleştirme yeni iş ortakları için geçerlidir [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) erişmek uygulamayı denemeden önce açık ekleme akışı aracılığıyla [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com). 
+Bu yeni açık lisans siparişler, ancak kimlerin kaydettirebilir yerleştirme yeni iş ortakları için geçerlidir [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) erişmek uygulamayı denemeden önce açık ekleme akışı aracılığıyla [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com).
 
-- İş ortağına VLSC için oturum açın ve "ilişki Özeti" için gidin. 
+- İş ortağına VLSC için oturum açın ve "ilişki Özeti" için gidin.
 
 - Bunlar, ardından yönetmek istediğiniz açık lisans seçer.
 
@@ -75,9 +73,9 @@ Bu yeni açık lisans siparişler, ancak kimlerin kaydettirebilir yerleştirme y
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal--directly"></a>Doğrudan Visual Studio abonelikleri Yönetim Portalı ziyaret yeni iş ortakları
 
-Bu senaryo için kimin zaten yerleştirdiğinizden Open License yeni siparişler, ancak kimin henüz kayıtlı üzerinde yeni iş ortakları için geçerlidir [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) ve doğrudan [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com) . 
+Bu senaryo için kimin zaten yerleştirdiğinizden Open License yeni siparişler, ancak kimin henüz kayıtlı üzerinde yeni iş ortakları için geçerlidir [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) ve doğrudan [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com) .
 
-- İş ortağı doğrudan gider https://manage.visualstudio.com. 
+- İş ortağı doğrudan gider https://manage.visualstudio.com.
 
 - Bunlar, tanınan bir kullanıcı olmadıklarını bir hata alırsınız.
 

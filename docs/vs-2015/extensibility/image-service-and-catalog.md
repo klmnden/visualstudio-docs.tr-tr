@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d1cd4b752bff98555159a751a04c1afbbd12a4bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768706"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844423"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü Hizmeti ve Kataloğu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Güncelleştirilmiş eşleme aracılığıyla bilinen adlar istemek için Görüntü hizmeti kullanmak için kodunuzu güncelleştirin. (Bu güncelleştirme gelebilir **CrispImages** yönetilen kod veya HBITMAPs veya HICONs görüntü Hizmeti'nden istiyor ve yerel kod için geçirme etrafında.)  
 
 ## <a name="testing-your-images"></a>Görüntülerinizin test etme  
- Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Bu araç ve diğerleri için belgeler bulunabilir [burada](http://aka.ms/VSImageThemeTools).  
+ Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx). Bu araç ve diğerleri için belgeler bulunabilir [burada](https://aka.ms/VSImageThemeTools).  
 
 ## <a name="additional-resources"></a>Ek kaynaklar  
 

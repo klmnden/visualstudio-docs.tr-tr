@@ -6,15 +6,13 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Azure DevOps ve Azure için kullanılacak Visual Studio aboneliğiniz için alternatif bir kimlik ekleme
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 68ce5c2a19797b827f1ed6304107ac62ef82623f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858158"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842136"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio aboneleri için kimlikleri
 
@@ -62,9 +60,9 @@ Alternatif hesabınızın alternatif (IDE, Azure DevOps ve Azure) hesabıyla otu
 
 ## <a name="faq"></a>SSS
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>S: neden Azure DevOps bana bir Visual Studio abonesi olarak tanımaz?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>S:  Neden Azure DevOps bana bir Visual Studio abonesi olarak tanımaz?
 
-Y: birincil veya alternatif kimlik bilgilerinizi kullanarak oturum açtığınızda azure DevOps, aboneliğiniz otomatik olarak tanıması gerekir. Aksi durumda, birkaç şey deneyebilirsiniz:
+Y: Birincil veya alternatif kimlik bilgilerinizi kullanarak oturum açtığınızda azure DevOps, aboneliğiniz otomatik olarak tanıması gerekir. Aksi durumda, birkaç şey deneyebilirsiniz:
 
 * Etkin bir Visual Studio aboneliğine sahip olduğunuzdan emin olun, [bir avantajı olarak, Azure DevOps içeren](vs-azure-devops.md).
 

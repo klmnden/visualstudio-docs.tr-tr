@@ -7,16 +7,9 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856840"
 ---
+
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 
 Visual Studio abonelikleri olan kaynakları oluşturmanıza, dağıtmanıza ve tercih ettiğiniz platformları ve cihazları, Windows, iOS, Android ve Linux gibi harika uygulamaları yönetmek kapsamlı bir dizi.  Abonelikleri'nin avantajlarını Geliştirici araçlarına, bulut Hizmetleri ve yazılım, eğitim, erişimini içerir ve geliştirme ve test ihtiyaçları için destek.
@@ -74,7 +67,7 @@ Aboneleri oturum açın [ https://my.visualstudio.com ](https://my.visualstudio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Azure DevOps Hizmetleri</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -169,7 +162,7 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Bulut Hizmetleri</h3>
+                        <h3>Cloud Services</h3>
                         <p>Visual Studio aboneliğinizle aylık Azure kredisi ve Azure Hizmetleri, indirimli geliştirme ve test fiyatları ve yalnızca abone g görüntüsüne özel erişim için ücretsiz erişim alabilirsiniz önceden yapılandırılmış sanal makineler ile alerisi. Bulut Hizmetleri aboneliğinize bağlı olarak, şunları içerebilir:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>

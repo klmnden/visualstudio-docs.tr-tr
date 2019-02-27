@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380180"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843876"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -94,14 +92,14 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>S:  Neden avantajı boş ise, ben bir kredi kartı numarası sağlamak zorunda mıyım?
-Y:  Avantajı ücretsizdir, ancak Ücretli siparişleri işlemek için kullanılanla aynı sistem etkinleştirme kullanır.  İki ödeme türleri kullanılabilir. 
-- Kredi kartı.  Bir kredi kartı numarası sağlarsanız, kartınız ücretlendirilmez. 
-- Fatura.  Ödeme türü olarak "Fatura" seçeneğini belirlerseniz, bir kredi kartı numarası gerekmez.  Aralık için "yıllık" de ayarlayabilirsiniz.  Böylece, size fatura sizin için hazır olduğunu bildiren tek bir e-posta alırsınız.  Fatura tutarı 0,00 ABD Doları olacaktır.  
+Y:  Avantajı ücretsizdir, ancak Ücretli siparişleri işlemek için kullanılanla aynı sistem etkinleştirme kullanır.  İki ödeme türleri kullanılabilir.
+- Kredi kartı.  Bir kredi kartı numarası sağlarsanız, kartınız ücretlendirilmez.
+- Fatura.  Ödeme türü olarak "Fatura" seçeneğini belirlerseniz, bir kredi kartı numarası gerekmez.  Aralık için "yıllık" de ayarlayabilirsiniz.  Böylece, size fatura sizin için hazır olduğunu bildiren tek bir e-posta alırsınız.  Fatura tutarı 0,00 ABD Doları olacaktır.
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>S:  Bir üretim ortamında kullanım için lisanslı aboneliğime dahil Power BI Pro teklifi var mı?
 Y:  Evet, iki önemli uyarılar ile bir üretim ortamında kullanabilirsiniz:
-- Bu teklif, kendi Kiracı yükleme gerektirir.  Lütfen satın alma ve bir lisans atamak için şirket Yöneticisi ile çalışarak şirket kiracınızdaki şirket kimlik bilgilerinizle ilişkili bir Power BI lisansına sahip olması gerekiyorsa. 
-- Bu Power BI Pro avantajı kamu kiracıları üzerinde kullanılamaz.  
+- Bu teklif, kendi Kiracı yükleme gerektirir.  Lütfen satın alma ve bir lisans atamak için şirket Yöneticisi ile çalışarak şirket kiracınızdaki şirket kimlik bilgilerinizle ilişkili bir Power BI lisansına sahip olması gerekiyorsa.
+- Bu Power BI Pro avantajı kamu kiracıları üzerinde kullanılamaz.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>S:  Power BI Pro etkinleştirmeyi denediğinizde "Çalışma aracılığıyla bir hesap zaten" bir ileti alırsınız.  Avantajı kullanabilir miyim?
 Y:  Evet.  İleti üzerinde bir yöneticisiniz değil etkin Office 365 kiracıları zaten olan bir etki alanına oturum olduğunu gösterir.  Power BI Pro eklemek için bir kiracı için Kiracı yönetici olması gerekir.  Bu sorunu çözmek için kendi Kiracı oluşturmak için aşağıdaki adımları izleyin.
@@ -112,12 +110,12 @@ Y:  Evet.  İleti üzerinde bir yöneticisiniz değil etkin Office 365 kiracıla
 3.  Kullanıcı kimliği ve parola oluşturun.  Ücretsiz tekliften yararlanabilmeniz için seçtiğinizden emin olun **. onmicrosoft.com** etki alanı olarak. Tıklayın **Hesabımı Oluştur**.
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro avantajı özel Kiracı kimliği oluşturma](_img/vs-pbi/vs-pbi-work-userid.png)
-    
+
 4.  İşlemdeki adımların geri kalan adım 6 ile başlayarak, makalenin gövdesinde listelenenlerle aynıdır.
 
 
-### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>S:  Bir kamu kiracısı üzerinde istiyorum.  Avantajı kullanabilir miyim? 
-Y:  Hayır.  Power BI Pro avantajı kamu kiracıları için eklenemez. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>S:  Bir kamu kiracısı üzerinde istiyorum.  Avantajı kullanabilir miyim?
+Y:  Hayır.  Power BI Pro avantajı kamu kiracıları için eklenemez.
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Power BI Pro yardıma mı ihtiyacınız var?

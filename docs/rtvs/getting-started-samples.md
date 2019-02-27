@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 82231756568c8b8139443a168ed22c28528c385c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920031"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840889"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Örnek projeleri Visual Studio için R araçları
 
@@ -65,7 +65,7 @@ Tüm örnekleri ile dosya sayısı arttıkça, üstünde imleci yerleştirin ve 
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Microsoft R Open ve Microsoft ML Server hakkında özel nedir?
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open), R, Microsoft'un dağılımını farklı [CRAN R](https://cran.r-project.org/) iki önemli şekilde:
+[Microsoft R Open](https://aka.ms/rtvs-r-open), R, Microsoft'un dağılımını farklı [CRAN R](https://cran.r-project.org/) iki önemli şekilde:
 
 1. [Daha iyi performans hesaplama](https://mran.revolutionanalytics.com/rro/#intelmkl1) ile kullanıldığında [Intel matematik çekirdek kitaplıkları](https://software.intel.com/intel-mkl). Kitaplıklar, Microsoft R Open ile kullanmak için Microsoft ücretsiz bir indirme olarak kullanılabilir.
 
@@ -81,7 +81,7 @@ Aşağıdaki karşılaştırmaya MLS ve MRO MKL ile R ve MRO MKL olmadan belirli
 
 ![MLS ve MRO MKL r ile ve MRO MKL olmadan karşılaştırma](media/samples-speed-comparison.png)
 
-R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
+R MRO ve MLS teknik bir karşılaştırması için kullanıma [Lixun Zhang'ın ayrıntılı tartışma](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) konusunda.
 
 Aşağıdaki şekilde, lojistik regresyon modellerini oluşturmaya, uçuş gecikme 15 dakikadan fazla tahmin etmek için kullanılan saniye sonra geçen süre karşılaştırır.  Geçen süre CRAN R kullanılan MLS yalnızca yaklaşık iki kez artarken küçük bir satır sayısını artırmak, büyük ölçüde artar. Bu kıyaslama ayrıntılarını gözden geçirin *Kıyaslama/rxGlm_benchmark. R* örnek.
 

@@ -6,19 +6,17 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380124"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842565"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
-Uygulamalarınızı birkaç kolay adımda Microsoft Azure'a taşıyın. Dakikalar içinde aşağı başarılı geçiş için kod satırına kadar olan tüm gerekli kod değişiklikleri tanımlayın: Kapsayıcılar, VM'ler, uygulama hizmetleri, SQL Azure ve/veya SQL mı. Ardından, uygulamaları ASR, DMA ve DMS yararlanarak sihirbazları kullanarak Azure'a geçirin. 
+Uygulamalarınızı birkaç kolay adımda Microsoft Azure'a taşıyın. Dakikalar içinde aşağı başarılı geçiş için kod satırına kadar olan tüm gerekli kod değişiklikleri tanımlayın: Kapsayıcılar, VM'ler, uygulama hizmetleri, SQL Azure ve/veya SQL mı. Ardından, uygulamaları ASR, DMA ve DMS yararlanarak sihirbazları kullanarak Azure'a geçirin.
 
 CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızlı bir şekilde yardımcı UnifyCloud göre tasarlanmıştır.  Bir kesir el ile değerlendirme harcadığım süreyi CloudPilot doğru bir şekilde Azure PaaS ve Iaas geçiş maliyetlerini belirler ve kod değişikliklerini uygulamayı bulutta çalıştırmak için yapılması gerekenler üzerinde kodun satır ayrıntılı öneriler sağlar. CloudPilot bulut geçişi çalışmasının ilk değerlendirmesini ve bulut için ayrıntılı kod düzeyinde yapılan değişiklikler sunarak yeniden factoring işleminde geliştirme planlama ve kurumsal teknoloji denetimleri karşı son sınama yardımcı olur ve ilkeleri.
 
@@ -30,10 +28,10 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot avantajı kutucuğu](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
-   
+
 0. Kodunuzu size bildiren bir ileti başarıyla aldı görürsünüz.  Tıklayın **etkinleştirme**, bu noktada, burada devam ederek etkinleştirme işlemi CloudPilot sayfasına yönlendirilirsiniz.  (Şimdi etkinleştirmeyi seçmezseniz, her zaman geri abonelik Portalı'nda CloudPilot kutucuğa dönebilirsiniz.  "Alma kodu" bağlantısı "Etkinleştir" olarak değişir ve tıklayarak etkinleştirme işleminin sonraki adımına yönlendirilirsiniz.)
 
-0. CloudPilot avantajlarını geliştirme çalışmalarınız için göz atın.  Hazır olduğunuzda, tıklayın **etkinleştirme** düğmesi. 
+0. CloudPilot avantajlarını geliştirme çalışmalarınız için göz atın.  Hazır olduğunuzda, tıklayın **etkinleştirme** düğmesi.
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot giriş sayfası](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
@@ -46,14 +44,14 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
    > [!NOTE]
    > CloudPilot avantajı etkinleştirmeleri on Visual Studio Enterprise veya Visual Studio Professional aboneliği bileşiminden alınma tarihinden itibaren bir kuruluş sınırlıdır.  Kuruluşunuzun on etkinleştirmeye zaten kullanılan CloudPilot avantajı etkinleştirmeniz mümkün olmayacaktır ve daha fazla bilgi UnifyCloud e-posta alırsınız.
 
- 0. Ardından, ile CloudPilot tanımak için tasarlanmış bir ürün sayfasını görürsünüz.  Tıklayın **CloudPilot Git** CloudPilot portalına gitmek için sağ üst köşedeki içinde.  
+ 0. Ardından, ile CloudPilot tanımak için tasarlanmış bir ürün sayfasını görürsünüz.  Tıklayın **CloudPilot Git** CloudPilot portalına gitmek için sağ üst köşedeki içinde.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot ürün sayfası](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  İşte bu kadar!  CloudPilot portalı görürsünüz ve uygulamalarınızı Microsoft azure'a taşımak için CloudPilot aboneliğinizi kullanmaya başlamak hazır olacaksınız. 
+0.  İşte bu kadar!  CloudPilot portalı görürsünüz ve uygulamalarınızı Microsoft azure'a taşımak için CloudPilot aboneliğinizi kullanmaya başlamak hazır olacaksınız.
 
-0.  Hesabınız başarıyla oluşturulduktan hemen sonra UnifyCloud VSS destek hesabınızı başarıyla oluşturulurken onaylayan bir e-posta alırsınız. 
+0.  Hesabınız başarıyla oluşturulduktan hemen sonra UnifyCloud VSS destek hesabınızı başarıyla oluşturulurken onaylayan bir e-posta alırsınız.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot onay e-postası](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -84,7 +82,7 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  CloudPilot kullanma konusunda yardım mı gerekiyor?  Bu kaynaklara göz atın:
-    - [Kişi UnifyCloud](https://www.unifycloud.com/contacts/) UnifyCloud ürünlerle ilgili sorgular için. 
+    - [Kişi UnifyCloud](https://www.unifycloud.com/contacts/) UnifyCloud ürünlerle ilgili sorgular için.
     - [CloudPilot kullanıcı el kitabı](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
 

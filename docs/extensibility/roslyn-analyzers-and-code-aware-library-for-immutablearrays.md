@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b603a59ad27052ab8eb9bbb88942584aa5293
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000906"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843318"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için
 
@@ -25,7 +25,7 @@ Bu örneği oluşturmak için gerekenler:
 
 * Visual Studio 2015 (bir Express sürüm değil) veya sonraki bir sürümü. Ücretsiz kullanabileceğiniz [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Ayrıca, Visual Studio'yu yüklerken denetleyebilirsiniz **Visual Studio genişletilebilirlik Araçları** altında **ortak Araçlar** aynı anda SDK'yı yüklemek için. Zaten Visual Studio yüklü değilse, ayrıca bu SDK'sı ana menüye gidip yükleyebileceğiniz **dosya** > **yeni** > **proje**, seçme **C#** sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**Visual Studio genişletilebilirlik Araçları'nı yükleme**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin.
-* [.NET derleyici Platformu ("Roslyn") SDK'sı](http://aka.ms/roslynsdktemplates). Ayrıca, ana menüsüne giderek bu SDK'sını yükleyebilirsiniz **dosya** > **yeni** > **proje**seçip **C#** Sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**.NET derleyici Platformu SDK'sını indirin**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin. Bu SDK'sı içerir [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Hangi kod model türleri şekil bu kullanışlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler. Çözümleyici altyapısı çağrıları kodunuzla belirli kod model türleri, kodunuzun yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kodunu analiz etme üzerinde odaklanabilirsiniz.
+* [.NET derleyici Platformu ("Roslyn") SDK'sı](https://aka.ms/roslynsdktemplates). Ayrıca, ana menüsüne giderek bu SDK'sını yükleyebilirsiniz **dosya** > **yeni** > **proje**seçip **C#** Sol gezinti bölmesinde ve açıp **genişletilebilirlik**. Seçeneğini belirlediğinizde "**.NET derleyici Platformu SDK'sını indirin**" içerik haritası proje şablonu, ister indirmenizi ve SDK'sını yükleyin. Bu SDK'sı içerir [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Hangi kod model türleri şekil bu kullanışlı aracı yardımcı olur, Çözümleyicisi'nde göz önünde bulundurmanız gerekenler. Çözümleyici altyapısı çağrıları kodunuzla belirli kod model türleri, kodunuzun yalnızca gerekli olduğunda yürütür ve yalnızca ilgili kodunu analiz etme üzerinde odaklanabilirsiniz.
 
 ## <a name="whats-the-problem"></a>Sorun nedir?
 

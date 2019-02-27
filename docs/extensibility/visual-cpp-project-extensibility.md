@@ -10,16 +10,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232058"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692066"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
-*Visual C++ proje sistemi* .vcxproj dosyaları için kullanılır. Dayanır [Visual Studio ortak proje System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ve ek, yeni araç takımları, derleme mimarileri ve Hedef platformlar kolay tümleştirme için C++ özgü genişletilebilirlik noktaları sağlar. 
+*Visual C++ proje sistemi* .vcxproj dosyaları için kullanılır. Dayanır [Visual Studio ortak proje System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ve ek, yeni araç takımları, derleme mimarileri ve Hedef platformlar kolay tümleştirme için C++ özgü genişletilebilirlik noktaları sağlar.
 
 ## <a name="c-msbuild-targets-structure"></a>C++ MSBuild hedefleri yapısı
 
@@ -47,7 +47,7 @@ Bu dosyaların çok az tanımlama başlarına. Bunun yerine, bu özellik değerl
 
    Yapı mimarisi, geçmiş nedenlerle "Platformu" adlı.
 
-   Örnekler: Win32 x86, x64, ARM   
+   Örnekler: Win32 x86, x64, ARM
 
 - `$(PlatformToolset)`
 
@@ -55,18 +55,7 @@ Bu dosyaların çok az tanımlama başlarına. Bunun yerine, bu özellik değerl
 
 Bu özellik değerleri, altında klasör adları belirtin `$(VCTargetsPath)` kök klasörü:
 
-> `$(VCTargetsPath)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;*Uygulama türü*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Platformları*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
-> &nbsp;&nbsp;&nbsp;&nbsp;Platformları\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(kullanılabilir `$(ApplicationType)` boş Windows Masaüstü projeleri için)  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`  
+> `$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Uygulama türü* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< C58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Platformları* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>platformları</span>\\&nbsp;&nbsp;&nbsp;&nbsp;<span class="notransl class=""></span class="notransl>*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Yeni bir platform araç kümesi Ekle
 
@@ -97,27 +86,17 @@ Yeni bir uygulama türünü eklemek için oluşturun bir *MyApplicationType* kla
 
 Microsoft C++ özellikler ve hedefler dosyaları için içeri aktarmalar Basitleştirilmiş ağacının şuna benzer:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*varsayılan*\\\*. *Özellikler*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Uygulama türü*\\`$(ApplicationType)`\\*Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Uygulama türü*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Uygulama türü*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*platformları* \\ `$(Platform)` \\  *Platform.default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*varsayılan*\\\*. *Özellikler*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*varsayılan* \\ \*. *Özellikler* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *uygulama türü* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *uygulama türü* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Uygulama türü*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*platformları* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*varsayılan*\\\*. *Özellikler*
 
 Windows Masaüstü projeleri olmayan tanımlama `$(ApplicationType)`, yalnızca Al
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*varsayılan*\\\*. *Özellikler*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platformları*\\`$(Platform)`\\*Platform.default.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*varsayılan*\\\*. *Özellikler*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*varsayılan* \\ \*. *Özellikler* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *platformları* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Varsayılan*\\\*. *Özellikler*
 
-Kullanacağız `$(_PlatformFolder)` tutacak özelliği `$(Platform)` platform klasörü konumları. Bu özellik. 
+Kullanacağız `$(_PlatformFolder)` tutacak özelliği `$(Platform)` platform klasörü konumları. Bu özellik.
 
 > `$(VCTargetsPath)`\\*Platformları*\\`$(Platform)`
 
-Windows Masaüstü uygulamaları için ve 
+Windows Masaüstü uygulamaları için ve
 
 > `$(VCTargetsPath)`\\*Uygulama türü*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*platformları*\\`$(Platform)`
 
@@ -125,22 +104,11 @@ her şey için.
 
 Özellik dosyaları şu sırayla alınır:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Özellikler*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *Özellikler*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *Özellikler* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *Özellikler</span>*
 
 MSBuild şu sırayla alınır:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *hedefleri*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target*  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *hedefleri*  
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *hedefleri* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *hedefleri</span>*
 
 Araç takımı, bazı varsayılan özelliklerini tanımlamak gerekiyorsa, uygun ImportBefore ve ImportAfter klasörlere dosyaları ekleyebilirsiniz.
 
@@ -168,7 +136,7 @@ Bir araç takımı, tüm derleme işlemi geçersiz kılabilirsiniz olsa da, gene
 
    Bu dosya, Windows SDK konumunu belirler ve Windows hedefleyen uygulamalar için bazı önemli özellikleri tanımlar.
 
-### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Özel araç takımı hedefleri varsayılan C++ yapı işlemi ile tümleştirin 
+### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Özel araç takımı hedefleri varsayılan C++ yapı işlemi ile tümleştirin
 
 C++ yapı işlemi varsayılan tanımlanan *Microsoft.CppCommon.targets*. Hedefleri var. herhangi bir özel derleme aracı çağırmaz; Bunlar, ana derleme adımları, sırası ve bağımlılıkları belirtin.
 
@@ -190,7 +158,7 @@ Her bir adımın Çalıştır hedefleri, bu özellikleri tarafından denetlenir:
 
 - `$(BeforeBuildLinkTargets)`
 
-Her adım, önce ve sonra özellikleri de vardır. 
+Her adım, önce ve sonra özellikleri de vardır.
 
 ```xml
 <Target
@@ -232,7 +200,7 @@ Hedef gibi görünüyorsa `_ClCompile`, doğrudan başlarına hiçbir şey yapma
 <Target Name="ClCompile"/>
 ```
 
-Çünkü `ClCompile` hedef boşsa, araç takımı tarafından geçersiz kılınmadığı sürece, herhangi bir gerçek derleme eylemi gerçekleştirilir. Araç takımı hedefleri geçersiz kılabilirsiniz `ClCompile` hedef, diğer bir deyişle, başka bir içerebilir `ClCompile` tanımı içeri aktardıktan sonra *Microsoft.CppBuild.targets*: 
+Çünkü `ClCompile` hedef boşsa, araç takımı tarafından geçersiz kılınmadığı sürece, herhangi bir gerçek derleme eylemi gerçekleştirilir. Araç takımı hedefleri geçersiz kılabilirsiniz `ClCompile` hedef, diğer bir deyişle, başka bir içerebilir `ClCompile` tanımı içeri aktardıktan sonra *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"

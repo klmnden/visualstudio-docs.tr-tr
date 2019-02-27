@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629151"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840464"
 ---
 # <a name="automation-support-for-options-pages"></a>Seçenekler sayfaları için Otomasyon desteği
 VSPackage özel sağlayabilir **seçenekleri** iletişim kutuları için **Araçları** menü (**Araçlar Seçenekler** sayfaları) içinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ve bunları Otomasyon için kullanılabilir hale getirebilirsiniz Model.
@@ -34,7 +34,7 @@ VSPackage özel sağlayabilir **seçenekleri** iletişim kutuları için **Araç
 
 4. Otomasyon nesne VSPackage'ı, ardından her sağlamak için kullanılan <xref:EnvDTE.Property> tarafından döndürülen <xref:EnvDTE._DTE.Properties%2A>.
 
-   Özel bir uygulama örneği **Araçlar Seçenekler** sayfasında, bkz: [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).
+   Özel bir uygulama örneği **Araçlar Seçenekler** sayfasında, bkz: [VSSDK örnekleri](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Proje nesnelerini kullanıma sunma](../../extensibility/internals/exposing-project-objects.md)

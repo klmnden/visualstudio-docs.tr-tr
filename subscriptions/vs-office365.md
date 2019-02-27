@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Bazı Visual Studio abonelikleri dahil Office 365 Avantajı hakkında bilgi edinin.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380142"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841084"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus Visual Studio abonelikleri
 
@@ -23,9 +21,9 @@ En iyi iş oluşturun. Her yerden, her zaman güncelleştirilir uygulamalarla ç
 ## <a name="getting-started-with-office-365-pro-plus"></a>Office 365 Pro Plus ile çalışmaya başlama
 
 Karşıdan yüklemek ve Office 365 Pro Plus etkinleştirmek için aşağıdaki adımları izleyin:
-1. Visual Studio Enterprise aboneliğinize oturum açın.  
+1. Visual Studio Enterprise aboneliğinize oturum açın.
 2. Tıklayarak **indirir** sekmesi.
-3. Öne çıkan bir listesini görürsünüz. Office listede seçin **Office 365**. 
+3. Öne çıkan bir listesini görürsünüz. Office listede seçin **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Office 365 yükleme](_img/vs-office365/vs-office365-downloads.png)
 0. Office 365'i yüklemek için bir ürün anahtarı gerekir.  Tıklayarak **anahtarını Al** Office 365 listenin altındaki bağlantıyı.
@@ -36,7 +34,7 @@ Karşıdan yüklemek ve Office 365 Pro Plus etkinleştirmek için aşağıdaki a
    > ![Office 365 talep ürün anahtarı](_img/vs-office365/vs-office365-claim-key.png)
 0. Anahtarı yalnızca istenen kaydeder. (Her zaman yeniden görmek için bu listeye de döndürebilir.)
 0. Çıkış penceresini kapatın.
-0. Tıklayın **indirme** düğmesi. 
+0. Tıklayın **indirme** düğmesi.
    > [!div class="mx-imgBorder"]
    > ![Office 365 başlangıç indirme](_img/vs-office365/vs-office365-download-button.png)
 0. Microsoft hesabınızla oturum açın. (Henüz oturum açmadıysanız, tıklayın **sonraki**.)
@@ -44,7 +42,7 @@ Karşıdan yüklemek ve Office 365 Pro Plus etkinleştirmek için aşağıdaki a
    > [!div class="mx-imgBorder"]
    > ![Office 365 ürün anahtarı girin](_img/vs-office365/vs-office365-enter-key.png)
 0. Tıklayın **sonraki** yeniden.
-0. Tıklayın **yükleme** Office uygulamalarını yüklemek için. 
+0. Tıklayın **yükleme** Office uygulamalarını yüklemek için.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
