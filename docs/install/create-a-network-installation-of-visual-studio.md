@@ -1,7 +1,7 @@
 ---
 title: Bir ağ tabanlı yüklemesini oluşturma
 description: Visual Studio içinde bir kuruluş dağıtımı için bir ağ yükleme noktasını oluşturmayı öğrenin.
-ms.date: 02/12/2019
+ms.date: 02/27/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796406"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954027"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ oluşturun
 
@@ -201,7 +201,7 @@ Visual Studio 2017'in eski bir sürümü için bir düzen oluşturmanız gerekiy
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Çevrimdışı yükleyicinizi için destek alma
 
-Çevrimdışı yüklemenizle ilgili bir sorun yaşarsanız, bunu bilmek istiyoruz. Bize en iyi yolu kullanmaktır [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) aracı. Bu aracı, bize tanılayın ve sorunu çözmeye yardımcı olmak için ihtiyacımız olan günlükleri ve telemetri gönderebilir.
+Çevrimdışı yüklemenizle ilgili bir sorun yaşarsanız, bunu bilmek istiyoruz. Bize en iyi yolu kullanmaktır [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio.md) aracı. Bu aracı, bize tanılayın ve sorunu çözmeye yardımcı olmak için ihtiyacımız olan günlükleri ve telemetri gönderebilir.
 
 Ayrıca sunuyoruz bir [ **canlı sohbet** ](https://visualstudio.microsoft.com/vs/support/#talktous) yüklemeyle ilgili sorunlar için destek seçeneği (yalnızca İngilizce).
 
@@ -210,6 +210,7 @@ Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz. bizim [konuşma
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio 2017'in bir ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
+* [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

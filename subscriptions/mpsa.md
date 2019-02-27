@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri Microsoft Ürün ve hizmet sözleşmesi (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841678"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953813"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Visual Studio abonelikleri Microsoft Products and Services Sözleşmesi (MPSA)
 
@@ -29,21 +29,22 @@ Yönetilmeyen bir kiracı içinde herhangi bir yönetici olmayan bir kiracısı 
 Kiracı ilişkilendirme tamamlamadan önce bir Visual Studio abonelikleri Yöneticisi olmak için gereken bazı gereksinimler/adımlar aşağıda verilmiştir.
 
 ## <a name="pre-tenant-association-managed-tenant"></a>Öncesi kiracısı ilişkilendirme (yönetilen Kiracı)
--   İş Merkezi kayıtlı bir kullanıcısı olmanız gerekir.
--   Parçası olan Kiracı, bir kullanıcının yönetici (en azından) veya genel yönetici olmanız gerekir. (Şirketiniz bulut hizmetlerini kullanıyorsa bu geçerlidir). Visual Studio abonelikleri Yöneticisi olarak iki rol gereklidir.
--   Satın alma hesabınızda kiracınız ilişkilendirmek için parçası olan kiracısında genel yönetici olması gerekir.
--   Bir hesap yöneticisi veya iş Merkezi'nde Hesap Yöneticisi olması gerekir.
--   "Ülke veya bölge" alanı, kullanıcı profili (ve diğer herhangi bir kullanıcı) içinde [Azure](https://portal.azure.com/) bölgenize (yani ABD, CA, vb.) bağlı olarak uygun şekilde doldurulmalıdır.
+
+- İş Merkezi kayıtlı bir kullanıcısı olmanız gerekir.
+- Parçası olan Kiracı, bir kullanıcının yönetici (en azından) veya genel yönetici olmanız gerekir. (Şirketiniz bulut hizmetlerini kullanıyorsa bu geçerlidir). Visual Studio abonelikleri Yöneticisi olarak iki rol gereklidir.
+- Satın alma hesabınızda kiracınız ilişkilendirmek için parçası olan kiracısında genel yönetici olması gerekir.
+- Bir hesap yöneticisi veya iş Merkezi'nde Hesap Yöneticisi olması gerekir.
+- "Ülke veya bölge" alanı, kullanıcı profili (ve diğer herhangi bir kullanıcı) içinde [Azure](https://portal.azure.com/) bölgenize (yani ABD, CA, vb.) bağlı olarak uygun şekilde doldurulmalıdır. 
 
 > [!NOTE]
 > Bunlar yalnızca 2. ve 5 adımda ölçütlere uymak gereken Visual Studio abonelikleri yöneticileri yapmak istediğiniz herhangi bir kullanıcı iş merkezinde kullanıcılar için gerekli değildir.
 
 Yukarıdaki 5 adımda ölçütlerini karşıladığınızı sonra aşağıdaki adımları izleyerek kiracınız satın alma hesabınız ilişkilendirilecek devam edebilirsiniz.
-1.  Oturum [iş merkezi](https://businessaccount.microsoft.com/).
-2.  Tıklayarak **hesabı** sekmesini **ilişkilendirmek etki alanları**.
-3.  Seçin, **satın alma hesabı** (birden fazla varsa).
-4.  Seçin, **Kiracı** (örn. contoso.onmicrosoft.com).
-5.  Tıklayın **ilişkilendirmek etki alanı**.
+1. Oturum [iş merkezi](https://businessaccount.microsoft.com/).
+2. Tıklayarak **hesabı** sekmesini **ilişkilendirmek etki alanları**.
+3. Seçin, **satın alma hesabı** (birden fazla varsa).
+4. Seçin, **Kiracı** (örn. contoso.onmicrosoft.com).
+5. Tıklayın **ilişkilendirmek etki alanı**.
 
 İlişkilendirme sırasında gerekli ölçütlerine uyan tüm kullanıcılar genellikle birkaç dakika içinde Visual Studio abonelikleri yönetici olarak sağlanır. Ancak, bazen bu 24 saate kadar sürebilir. Sağladıktan sonra Visual Studio abonelikleri yönetim portalına erişmek mümkün olacaktır. 24 saatten uzun sürerse, MPSA desteği'ne başvurun.
 

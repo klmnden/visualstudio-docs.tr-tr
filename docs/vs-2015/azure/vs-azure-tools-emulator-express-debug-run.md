@@ -10,12 +10,12 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: d4969eba208a969275ef239ae90e09094b4d7fc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8ce7337350ac80e1992e850eb10d0ac7297f9502
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793609"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954088"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express kullanarak Azure bulut hizmetini yerel makinede çalıştırma ve hatalarını ayıklama
 Emulator Express kullanarak sınamak ve Visual Studio'yu yönetici olarak çalıştırarak olmadan bir bulut hizmeti hata ayıklama. Emulator Express veya tam öykünücü, bulut hizmetinizin gereksinimlerine bağlı olarak kullanmak üzere proje ayarlarınız ayarlayabilirsiniz. Tam öykünücü hakkında daha fazla bilgi için bkz: [işlem öykünücüsü'nde bir Azure uygulama çalıştırmak](/azure/storage/common/storage-use-emulator).

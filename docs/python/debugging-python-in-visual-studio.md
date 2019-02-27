@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155883"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954367"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -246,7 +246,7 @@ Aşağıdaki adımlar, geçerli Visual Studio oturumunda hata ayıklamayı etkin
 1. Aşağıdaki komutu girin:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Hata ayıklamayı başlatmak ve tüm adımları sorununuzu yeniden oluşturmak için gerekli olan aracılığıyla gidin. Bu süre boyunca, hata ayıklama günlükleri görünür **çıkış** penceresinin altında **hata ayıklama bağdaştırıcısı konağı günlüğü**. Ardından, günlükleri pencereden kopyalayın ve bir GitHub sorunu, e-posta, vb. yapıştırın.
@@ -256,7 +256,7 @@ Aşağıdaki adımlar, geçerli Visual Studio oturumunda hata ayıklamayı etkin
 1. Visual Studio kilitleniyor veya aksi halde erişmeye değilsiniz **çıkış** penceresinde, Visual Studio'yu yeniden başlatın, bir komut penceresi açın ve aşağıdaki komutu girin:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Hata ayıklamayı başlatmak ve sorunu yeniden oluşturun. Hata ayıklayıcı günlükleri ardından bulunabilir `%temp%\DebugAdapterHostLog.txt`.

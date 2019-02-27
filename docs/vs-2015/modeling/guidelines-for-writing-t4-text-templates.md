@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 542b43b5addad1bee59921bd2f4b593ea4676c59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795356"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952809"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 Metin Şablonları Yazma Yönergeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Aşağıdaki genel yönergeleri program kodu veya diğer uygulama kaynakları ol
   Ortak malzeme dosyaları veya çalışma zamanı şablonları taşıyın  
   Metin ve birden fazla şablon içinde kod bloklarını benzer tekrarlamayı önlemek üzere kullanmak `<#@ include #>` yönergesi. Daha fazla bilgi için [T4 dahil yönergesi](../modeling/t4-include-directive.md).  
   
-  Ayrıca ayrı proje çalışma zamanı metin şablonları oluşturun ve ardından bunları tasarım zamanı şablonu çağırmak. Bunu yapmak için `<#@ assembly #>` ayrı proje erişmeye yönergesi. Örnekler için bkz ["Devralma içinde metin şablonlarında" Gareth Jones'un Blogundaki](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Ayrıca ayrı proje çalışma zamanı metin şablonları oluşturun ve ardından bunları tasarım zamanı şablonu çağırmak. Bunu yapmak için `<#@ assembly #>` ayrı proje erişmeye yönergesi.
   
   Büyük kod bloklarının ayrı bir derleme içine taşımayı düşünün.  
   Büyük kod blokları ve sınıf özelliği bloklarını varsa, bu kod bazıları ayrı bir projede derleme yöntemlerde taşımak kullanışlı olabilir. Kullanabileceğiniz `<#@ assembly #>` yönergesi şablonu kodda erişmek için. Daha fazla bilgi için [T4 derleme yönergesi](../modeling/t4-assembly-directive.md).  

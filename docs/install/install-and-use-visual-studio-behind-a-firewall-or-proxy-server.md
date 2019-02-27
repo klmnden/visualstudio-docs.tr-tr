@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: feb115bb3fe7114b6379e27c09279165e6ca7a7e
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796627"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954354"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
@@ -133,7 +133,7 @@ Sunuyoruz bir [ **canlı sohbet** ](https://visualstudio.microsoft.com/vs/suppor
 
 Birkaç diğer destek seçenekleri şunlardır:
 
-* Ürün sorunları bize bildirin [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
+* Ürün sorunları bize bildirin [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio.md) hem de Visual Studio yükleyicisi Visual Studio IDE içinde görünen bir araç.
 * Özellik önerin, ürün sorunları izlemek ve sorularınıza cevap bulun [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/).
 * Kullanım, [GitHub](https://github.com/) ABD ve diğer Visual Studio geliştiriciler konuşabilir hesabı [Gitter Topluluğu'nda Visual Studio konuşma](https://gitter.im/Microsoft/VisualStudio).
 

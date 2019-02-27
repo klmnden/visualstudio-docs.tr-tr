@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 97733ab60a832c6a3563ae3ca1ed791f331399dc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927535"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953550"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
 
@@ -59,6 +59,6 @@ Değer (DWORD) =
 
 * [Visual Studio tarafından toplanan tanılama bilgileri](diagnostic-data-collection.md)
 * [Bizimle iletişime geçin](../ide/talk-to-us.md)
-* [Visual Studio ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Visual Studio ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)
 * [Microsoft gizlilik bildirimi](https://privacy.microsoft.com/privacystatement)

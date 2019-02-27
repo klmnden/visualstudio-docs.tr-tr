@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931578"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953975"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme sorunlarını giderme ve yükseltme sorunları
 
@@ -84,7 +84,7 @@ Bilinen sorunlar ve geçici yerel bir düzenden yükleme sırasında yardımcı 
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>Visual Studio yükleme günlüklerini alma
 
-Kurulum günlükleri, çoğu yükleme sorunlarını gidermek için gereklidir. Ne zaman gönderdiğiniz bir sorun kullanarak [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio-2017.md) Visual Studio Yükleyicisi ', bu günlükleri otomatik olarak, rapora dahil edilir.
+Kurulum günlükleri, çoğu yükleme sorunlarını gidermek için gereklidir. Ne zaman gönderdiğiniz bir sorun kullanarak [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio.md) Visual Studio Yükleyicisi ', bu günlükleri otomatik olarak, rapora dahil edilir.
 
 Microsoft Support başvurursanız kullanarak bu ayar günlüklerini göndermeniz gerekebilir [Microsoft Visual Studio ve .NET Framework günlük toplama aracı](https://aka.ms/vscollect). Günlük toplama aracı Visual Studio .NET Framework ve Windows SDK'sı SQL Server 2017'de tarafından yüklü tüm bileşenleri Kurulum günlüklerini toplar. Ayrıca, bilgisayar bilgilerini, Windows Installer envanterini ve Visual Studio yükleyicisi, Windows Installer ve sistem geri yükleme için Windows olay günlüğü bilgilerini toplar.
 

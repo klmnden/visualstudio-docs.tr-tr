@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8de3edf65b67463bb1678f23d71695bc4867b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599174"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954499"
 ---
 # <a name="debug-64-bit-applications"></a>64 Bit uygulamalarda hata ayıklama
 Yerel bilgisayarda veya uzak bilgisayarda çalışan bir 64-bit uygulamada hata ayıklaması yapabilirsiniz.
@@ -50,7 +50,7 @@ Yerel bilgisayarda veya uzak bilgisayarda çalışan bir 64-bit uygulamada hata 
 
 -   Ağ güvenlik yazılımı güvenilir olmadığı ağ yığınını neden bilgisayarınızda yüklü olması ve localhost üzerinde giden paketlerin bıraktı. Tüm ağ güvenlik yazılımı devre dışı bırakmayı deneyin ve bu da çözmediğine bakın. Bu durumda, rapor, yazılım, localhost trafiğiyle engel ağ güvenlik yazılım satıcınıza için.
 
--   Visual Studio ile bir yanıt vermemesine veya performans sorunu içine çalışıyor. Sorun düzenli olarak ortaya Visual Studio (devenv.exe) ve çalışan işleminden (msvsmon.exe) dökümleri toplayın ve bunları Microsoft'a gönderin. Bir sorun bildirme hakkında daha fazla bilgi için bkz: [Visual Studio ile ilgili bir sorun bildirme](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
+-   Visual Studio ile bir yanıt vermemesine veya performans sorunu içine çalışıyor. Sorun düzenli olarak ortaya Visual Studio (devenv.exe) ve çalışan işleminden (msvsmon.exe) dökümleri toplayın ve bunları Microsoft'a gönderin. Bir sorun bildirme hakkında daha fazla bilgi için bkz: [Visual Studio ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

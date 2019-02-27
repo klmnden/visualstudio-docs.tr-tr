@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Edinmek ve ürün anahtarlarınızı Visual Studio aboneliklerini yönetme hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843730"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953907"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ürün anahtarlarını kullanma
 
@@ -104,10 +104,10 @@ Visual Studio aboneleri, sağlanan bir ürün anahtarı girerek Windows Server'a
 Her tür için beş anahtar, Windows Server 2008 R2 için kullanılabilir ve her anahtar 20 bağlantıyı destekler. Windows Server 2012 R2 için dört anahtarları her tür için sağlar ve her biri 50 bağlantıyı destekler.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Windows Server'da ek bağlantıları etkinleştirmek için:
-1.  Sunucu Yöneticisi'ni açın.
-2.  Sol gezinti bölmesindeki sunucular listesini açın.
-3.  Lisans sunucunuza sağ tıklayın ve "Lisansları Yükle" öğesini seçin.
-4.  Sihirbazdaki adımları izleyin.  Sözleşme türünü seçerken, "Lisans Paketi (Perakende)" seçeneğini belirtin ve sonra da MY portalından aldığınız ürün anahtarını girin.
+1. Sunucu Yöneticisi'ni açın.
+2. Sol gezinti bölmesindeki sunucular listesini açın.
+3. Lisans sunucunuza sağ tıklayın ve "Lisansları Yükle" öğesini seçin.
+4. Sihirbazdaki adımları izleyin.  Sözleşme türünü seçerken, "Lisans Paketi (Perakende)" seçeneğini belirtin ve sonra da MY portalından aldığınız ürün anahtarını girin.
 
 Aşağıdaki koşullar karşılandığında son kullanıcıların erişim uygulamalarını RDS aracılığıyla bağlanabilirsiniz:
 - Kullanıcılar anonim (bir doğrulanmamış durumda) olmalıdır.

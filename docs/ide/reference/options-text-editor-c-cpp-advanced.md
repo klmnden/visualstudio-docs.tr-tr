@@ -14,191 +14,198 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6136c9c1cd2bb169c08fc314dcd7cb327d143125
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b88170e1fe1aa5154616c95c29d0585fc74ba34c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933970"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954328"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Seçenekler, Metin Düzenleyici, C/C++, Gelişmiş
+
 Bu seçenekler değiştirerek, C veya C++ ortamında programlama, IntelliSense ve gözatma veritabanı ilgili davranışı değiştirebilirsiniz.
 
- Bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, **metin düzenleyici**, genişletme **C/C++** ve ardından **Gelişmiş**.
+Bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, **metin düzenleyici**, genişletme **C/C++** ve ardından **Gelişmiş**.
 
 > [!NOTE]
 > Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Bkz: [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ## <a name="browsingnavigation"></a>Gözatma Gezinti
- Bu seçenekleri dışında hiçbir zaman bir çözüm veritabanı etkinliğini kabul edilemez bir sistem kaynaklarının miktarı tüketen çok büyük olduğu nadir durumlarda seçmeniz gerekir.
 
- **Veritabanı devre dışı bırak**
+Bu seçenekleri dışında hiçbir zaman bir çözüm veritabanı etkinliğini kabul edilemez bir sistem kaynaklarının miktarı tüketen çok büyük olduğu nadir durumlarda seçmeniz gerekir.
 
- Tüm kod gözatma veritabanı (SDF), diğer tüm gözatma/gezinti seçenekleri ve hariç tüm IntelliSense özelliklerini kullanımını #include otomatik tamamlamayı devre dışı bırakılır.
+**Veritabanı devre dışı bırak**
 
- **Veritabanı güncelleştirmelerini devre dışı bırak**
+Tüm kod gözatma veritabanı (SDF), diğer tüm gözatma/gezinti seçenekleri ve hariç tüm IntelliSense özelliklerini kullanımını #include otomatik tamamlamayı devre dışı bırakılır.
 
- Veritabanı salt okunur açılacak ve dosyaları düzenlediğiniz gibi hiçbir güncelleştirme gerçekleştirilmeyecek. Çoğu özellikleri çalışmaya devam edecektir. Ancak, düzenleme yaptığınız gibi verileri eski hale gelir ve hatalı sonuçlar elde edersiniz.
+**Veritabanı güncelleştirmelerini devre dışı bırak**
 
- **Veritabanı otomatik güncelleştirmelerini devre dışı bırak**
+Veritabanı salt okunur açılacak ve dosyaları düzenlediğiniz gibi hiçbir güncelleştirme gerçekleştirilmeyecek. Çoğu özellikleri çalışmaya devam edecektir. Ancak, düzenleme yaptığınız gibi verileri eski hale gelir ve hatalı sonuçlar elde edersiniz.
 
- Kaynak dosyalar değiştirildiğinde, kod gözatma veritabanını otomatik olarak güncelleştirilmez. Ancak, açarsanız **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yeniden tarama çözüm**, tüm güncel olmayan dosyalar denetlenir ve veritabanı güncelleştirilir.
+**Veritabanı otomatik güncelleştirmelerini devre dışı bırak**
 
- **Dahili dosyaları devre dışı bırak**
+Kaynak dosyalar değiştirildiğinde, kod gözatma veritabanını otomatik olarak güncelleştirilmez. Ancak, açarsanız **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yeniden tarama çözüm**, tüm güncel olmayan dosyalar denetlenir ve veritabanı güncelleştirilir.
 
- Kod gözatma veritabanını bir projede belirtilen olmayan dosyalar için veri toplamaz. Kaynak dosyaları ve üstbilgi dosyaları, açıkça belirtilen bir proje içerir. Dahili dosyaları (örneğin, afxwin.h windows.h ve atlbase.h) açık dosyaları dahil edilir. Normalde, sistem bu dosyaları bulur ve ayrıca çeşitli göz atma özellikleri (Git dahil) dizinini oluşturur. Bu seçeneği seçerseniz, bu dosyaları dizine alınmamış ve bazı özellikler için kullanılamaz. Bu seçeneği belirlerseniz, "Dahili temizlemeyi devre dışı bırak" ve "Dış bağımlılıklar'ı devre dışı bırak" da örtük olarak seçilir.
+**Dahili dosyaları devre dışı bırak**
 
- **Dahili temizlemeyi devre dışı bırak**
+Kod gözatma veritabanını bir projede belirtilen olmayan dosyalar için veri toplamaz. Kaynak dosyaları ve üstbilgi dosyaları, açıkça belirtilen bir proje içerir. Dahili dosyaları (örneğin, afxwin.h windows.h ve atlbase.h) açık dosyaları dahil edilir. Normalde, sistem bu dosyaları bulur ve ayrıca çeşitli göz atma özellikleri (Git dahil) dizinini oluşturur. Bu seçeneği seçerseniz, bu dosyaları dizine alınmamış ve bazı özellikler için kullanılamaz. Bu seçeneği belirlerseniz, "Dahili temizlemeyi devre dışı bırak" ve "Dış bağımlılıklar'ı devre dışı bırak" da örtük olarak seçilir.
 
- Kod gözatma veritabanını temizleme değil, artık referans verilmeyen örtük dosyaları yedekleme. Bu seçenek, artık kullanıldığında veritabanından kaldırılmasını örtük dosyaları önler. Örneğin, eklediğiniz bir `#include` yönergesi, kaynak dosyalarınızı birine mapi.h başvuran, mapi.h bulundu ve dizin. Daha sonra kaldırırsanız #include ve dosyayı başka bir yerde başvurulan değil, ilgili bilgileri, sonuçta bu seçeneği seçmezseniz kaldırılacak. (Bkz **yeniden tarama çözüm aralığını** seçeneği.) Açıkça çözümü yeniden tara olduğunda bu seçenek göz ardı edilir.
+**Dahili temizlemeyi devre dışı bırak**
 
- **Dış bağımlılıklar klasörlerini devre dışı bırak**
+Kod gözatma veritabanını temizleme değil, artık referans verilmeyen örtük dosyaları yedekleme. Bu seçenek, artık kullanıldığında veritabanından kaldırılmasını örtük dosyaları önler. Örneğin, eklediğiniz bir `#include` yönergesi, kaynak dosyalarınızı birine mapi.h başvuran, mapi.h bulundu ve dizin. Daha sonra kaldırırsanız #include ve dosyayı başka bir yerde başvurulan değil, ilgili bilgileri, sonuçta bu seçeneği seçmezseniz kaldırılacak. (Bkz **yeniden tarama çözüm aralığını** seçeneği.) Açıkça çözümü yeniden tara olduğunda bu seçenek göz ardı edilir.
 
- Her proje için dış bağımlılıklar klasörü oluşturuldu veya güncelleştirildi. İçinde **Çözüm Gezgini**, her proje, bu proje için tüm örtük dosyalarını içeren bir dış bağımlılıklar klasörü içerir. Bu seçeneği seçerseniz, bu klasöre görünmez.
+**Dış bağımlılıklar klasörlerini devre dışı bırak**
 
- **Veritabanını yeniden oluşturun**
+Her proje için dış bağımlılıklar klasörü oluşturuldu veya güncelleştirildi. İçinde **Çözüm Gezgini**, her proje, bu proje için tüm örtük dosyalarını içeren bir dış bağımlılıklar klasörü içerir. Bu seçeneği seçerseniz, bu klasöre görünmez.
 
- Kod çözüm yüklendiğinde bir sonraki açışınızda hiçbir şey veritabanından gözatma yeniden oluşturun. Bu seçeneği seçerseniz, bu nedenle yeniden veritabanına neden çözümü yüklemek sonraki açışınızda SDF veritabanı dosyası silinir ve tüm dosyaları dizine.
+**Veritabanını yeniden oluşturun**
 
- **Yeniden tarama çözüm aralığını**
+Kod çözüm yüklendiğinde bir sonraki açışınızda hiçbir şey veritabanından gözatma yeniden oluşturun. Bu seçeneği seçerseniz, bu nedenle yeniden veritabanına neden çözümü yüklemek sonraki açışınızda SDF veritabanı dosyası silinir ve tüm dosyaları dizine.
 
- Bir 'Çözümü şimdi yeniden tara' işi belirttiğiniz aralığı için zamanlandı. 0 ile 5000 dakika arasında belirtmeniz gerekir. Varsayılan değer 60 dakikadır. Çözümü yeniden taranıp sırasında dosya zaman damgası IDE dışında bir dosyanın değiştirilip değiştirilmediğini saptamak için denetlenir. (IDE'de yapılan değişiklikleri otomatik olarak izlenir ve dosyaları güncelleştirilir.) Örtük olarak eklenen dosyalar, bunların tümü Başvurulmakta olup olmadığını belirlemek için denetlenir.
+**Yeniden tarama çözüm aralığını**
+
+Bir 'Çözümü şimdi yeniden tara' işi belirttiğiniz aralığı için zamanlandı. 0 ile 5000 dakika arasında belirtmeniz gerekir. Varsayılan değer 60 dakikadır. Çözümü yeniden taranıp sırasında dosya zaman damgası IDE dışında bir dosyanın değiştirilip değiştirilmediğini saptamak için denetlenir. (IDE'de yapılan değişiklikleri otomatik olarak izlenir ve dosyaları güncelleştirilir.) Örtük olarak eklenen dosyalar, bunların tümü Başvurulmakta olup olmadığını belirlemek için denetlenir.
 
 ## <a name="diagnostic-logging"></a>Tanılama günlüğüne kaydetme
- Microsoft bir sorunu tanılamak için Gelişmiş bilgileri toplamak isteyen durumunda bu seçenekleri sunulur. Günlük bilgilerini kullanıcılar için kullanışlı değildir ve devre dışı bırakmanızı öneririz.
 
- **Günlüğe kaydetmeyi etkinleştirme**
+Microsoft bir sorunu tanılamak için Gelişmiş bilgileri toplamak isteyen durumunda bu seçenekleri sunulur. Günlük bilgilerini kullanıcılar için kullanışlı değildir ve devre dışı bırakmanızı öneririz.
 
- Çıkış penceresine tanılama günlük kaydını etkinleştirir.
+**Günlüğe kaydetmeyi etkinleştirme**
 
- **Günlük düzeyi**
+Çıkış penceresine tanılama günlük kaydını etkinleştirir.
 
- 0-5 günlük ayrıntı düzeyini ayarlayın.
+**Günlük düzeyi**
 
- **Filtre günlüğe kaydetme**
+0-5 günlük ayrıntı düzeyini ayarlayın.
 
- Filtreler bir bit maskesi kullanılarak olay türleri görüntülenir.
+**Filtre günlüğe kaydetme**
 
- Aşağıdaki seçeneklerden herhangi birini toplamını kullanarak ayarlayın:
+Filtreler bir bit maskesi kullanılarak olay türleri görüntülenir.
 
--   0 - yok
+Aşağıdaki seçeneklerden herhangi birini toplamını kullanarak ayarlayın:
 
--   1 - genel
+- 0 - yok
 
--   2 - boş
+- 1 - genel
 
--   4 - iş öğesi
+- 2 - boş
 
--   8 - IntelliSense
+- 4 - iş öğesi
 
--   16 - ACPerf
+- 8 - IntelliSense
 
--   32 - ClassView
+- 16 - ACPerf
+
+- 32 - ClassView
 
 ## <a name="fallback-location"></a>Geri dönüş konumu
- Birincil konum (Çözüm aynı dizin) kullanıldığında değil SDF ve IntelliSense destek dosyalarını (örneğin, iPCH) nereye yerleştirilir geri dönüş konumdur. Bu durum, kullanıcı çözüm dizinine yazma izni yok veya çözüm dizini yavaş bir cihaz kullandığını oluşabilir. Varsayılan geri dönüş kullanıcının temp dizininde konumdur.
 
- **Her zaman geri dönüş konumu kullanın**
+Birincil konum (Çözüm aynı dizin) kullanıldığında değil SDF ve IntelliSense destek dosyalarını (örneğin, iPCH) nereye yerleştirilir geri dönüş konumdur. Bu durum, kullanıcı çözüm dizinine yazma izni yok veya çözüm dizini yavaş bir cihaz kullandığını oluşabilir. Varsayılan geri dönüş kullanıcının temp dizininde konumdur.
 
- Kod gözatma veritabanı ile IntelliSense dosyaları her zaman, "geri dönüş konumu olarak", .sln dosyası değil yanındaki belirttiğiniz klasördeki saklanması gerektiğini gösterir. IDE, hiçbir zaman çözüm dizini yanındaki SDF veya iPCH dosyaları yerleştirmek deneyecek ve her zaman geri dönüş konumu olarak kullanır.
+**Her zaman geri dönüş konumu kullanın**
 
- **Eğer temel konum kullanılırsa uyarma**
+Kod gözatma veritabanı ile IntelliSense dosyaları her zaman, "geri dönüş konumu olarak", .sln dosyası değil yanındaki belirttiğiniz klasördeki saklanması gerektiğini gösterir. IDE, hiçbir zaman çözüm dizini yanındaki SDF veya iPCH dosyaları yerleştirmek deneyecek ve her zaman geri dönüş konumu olarak kullanır.
 
- Hakkında bilgi sahibi olmak değil veya 'Temel konum' kullanıldığında istenir. Normalde, IDE geri dönüş konumu kullanmak zorunda bunu size bildirir. Bu seçenek, bu uyarı devre dışı bırakır.
+**Eğer temel konum kullanılırsa uyarma**
 
- **Geri dönüş konumu**
+Hakkında bilgi sahibi olmak değil veya 'Temel konum' kullanıldığında istenir. Normalde, IDE geri dönüş konumu kullanmak zorunda bunu size bildirir. Bu seçenek, bu uyarı devre dışı bırakır.
 
- Bu değer, kod veritabanı veya IntelliSense dosyalarını saklamak için ikincil konum olarak kullanılır. Varsayılan olarak, geçici dizin, geri dönüş konumdur. IDE ile çözüm adları aynı olan sorunları önler çözüm tam yolunu karmasını yanı sıra çözümün adını içeren bir alt dizinde belirtilen yol (veya geçici dizin) oluşturur.
+**Geri dönüş konumu**
+
+Bu değer, kod veritabanı veya IntelliSense dosyalarını saklamak için ikincil konum olarak kullanılır. Varsayılan olarak, geçici dizin, geri dönüş konumdur. IDE ile çözüm adları aynı olan sorunları önler çözüm tam yolunu karmasını yanı sıra çözümün adını içeren bir alt dizinde belirtilen yol (veya geçici dizin) oluşturur.
 
 ## <a name="intellisense"></a>IntelliSense
- **Otomatik hızlı bilgi**
 
- Metin üzerinde işaretçiyi getirdiğinizde Hızlıbilgi araç ipuçlarını sağlar.
+**Otomatik hızlı bilgi**
 
- **IntelliSense'i devre dışı bırak**
+Metin üzerinde işaretçiyi getirdiğinizde Hızlıbilgi araç ipuçlarını sağlar.
 
- Tüm IntelliSense özelliklerini devre dışı bırakır. IDE VCPkgSrv.exe işlemleri için IntelliSense isteklere hizmet oluşturmaz ve hiçbir IntelliSense özellikleri (Hızlıbilgi, üye listesi, otomatik tamamlama, parametre Yardım) çalışır. Anlam renklendirmeyi ve başvuru vurgulama da devre dışı bırakılır. Bu seçeneği yalnızca (gezinti çubuğunda, ClassView ve özellik penceresini dahil) veritabanı üzerinde kullanan göz atma özellikleri devre dışı değil.
+**IntelliSense'i devre dışı bırak**
 
- **Otomatik güncelleştirme devre dışı bırak**
+Tüm IntelliSense özelliklerini devre dışı bırakır. IDE VCPkgSrv.exe işlemleri için IntelliSense isteklere hizmet oluşturmaz ve hiçbir IntelliSense özellikleri (Hızlıbilgi, üye listesi, otomatik tamamlama, parametre Yardım) çalışır. Anlam renklendirmeyi ve başvuru vurgulama da devre dışı bırakılır. Bu seçeneği yalnızca (gezinti çubuğunda, ClassView ve özellik penceresini dahil) veritabanı üzerinde kullanan göz atma özellikleri devre dışı değil.
 
- IntelliSense için fiili isteğe yapılana kadar IntelliSense güncelleştirme ertelendi. Bu gecikme bir uzun yürütme süresi bir dosya çubuğunda ilk IntelliSense işlemin neden olabilir, ancak çok yavaş ya da kaynak kısıtlı makinelerde bu seçeneği belirlemek yararlı olabilir. Bu seçeneği belirlerseniz, örtük olarak da "Hata raporlamayı devre dışı bırak" ve "Squiggles devre dışı bırakma" seçenekleri belirleyin.
+**Otomatik güncelleştirme devre dışı bırak**
 
- **Hata raporlamayı devre dışı**
+IntelliSense için fiili isteğe yapılana kadar IntelliSense güncelleştirme ertelendi. Bu gecikme bir uzun yürütme süresi bir dosya çubuğunda ilk IntelliSense işlemin neden olabilir, ancak çok yavaş ya da kaynak kısıtlı makinelerde bu seçeneği belirlemek yararlı olabilir. Bu seçeneği belirlerseniz, örtük olarak da "Hata raporlamayı devre dışı bırak" ve "Squiggles devre dışı bırakma" seçenekleri belirleyin.
 
- Dalgalı çizgiler ve Hata Listesi penceresi boyunca IntelliSense hatalarının raporlama, devre dışı bırakır. Ayrıca, hata raporlama ile ilişkili arka plan ayrıştırmayı devre dışı bırakır. Bu seçeneği seçerseniz, ayrıca dolaylı olarak "Squiggles devre dışı bırak" seçeneği seçin.
+**Hata raporlamayı devre dışı**
 
- **Dalgalı çizgiler devre dışı bırak**
+Dalgalı çizgiler ve Hata Listesi penceresi boyunca IntelliSense hatalarının raporlama, devre dışı bırakır. Ayrıca, hata raporlama ile ilişkili arka plan ayrıştırmayı devre dışı bırakır. Bu seçeneği seçerseniz, ayrıca dolaylı olarak "Squiggles devre dışı bırak" seçeneği seçin.
 
- IntelliSense hata ilişkilendirmelerini devre dışı bırakır. Düzenleyici penceresinde kırmızı "squiggles" gösterme, ancak hata yine de hata Listesi penceresinde görünür.
+**Dalgalı çizgiler devre dışı bırak**
 
- **Otomatik ayarlama maksimum önbelleğe alınmış çeviri birimleri**
+IntelliSense hata ilişkilendirmelerini devre dışı bırakır. Düzenleyici penceresinde kırmızı "squiggles" gösterme, ancak hata yine de hata Listesi penceresinde görünür.
 
- IntelliSense istekleri için herhangi bir zamanda etkin tutulacak çeviri birimlerinin maksimum sayısı. 2 ile 15 arasında bir değer belirtmeniz gerekir. Bu sayı, maksimum sayısına (belirli bir örneğini Visual Studio için) çalıştırılacak VCPkgSrv.exe işlemleri doğrudan ilgilidir. Varsayılan değer 2'dir, ancak kullanılabilir bellek varsa, bu değeri artırmak ve büyük olasılıkla IntelliSense biraz daha iyi performans elde edin.
+**Otomatik ayarlama maksimum önbelleğe alınmış çeviri birimleri**
 
- Çeviri birimleri hakkında daha fazla bilgi için bkz: [çeviri aşamaları](/cpp/preprocessor/phases-of-translation).
+IntelliSense istekleri için herhangi bir zamanda etkin tutulacak çeviri birimlerinin maksimum sayısı. 2 ile 15 arasında bir değer belirtmeniz gerekir. Bu sayı, maksimum sayısına (belirli bir örneğini Visual Studio için) çalıştırılacak VCPkgSrv.exe işlemleri doğrudan ilgilidir. Varsayılan değer 2'dir, ancak kullanılabilir bellek varsa, bu değeri artırmak ve büyük olasılıkla IntelliSense biraz daha iyi performans elde edin.
 
- **Devre dışı #include otomatik tamamlama**
+Çeviri birimleri hakkında daha fazla bilgi için bkz: [çeviri aşamaları](/cpp/preprocessor/phases-of-translation).
 
- Otomatik Tamamlama, devre dışı bırakır `#include` deyimleri.
+**Devre dışı #include otomatik tamamlama**
 
- **İleri eğik çizgi kullanın #include otomatik tamamlama**
+Otomatik Tamamlama, devre dışı bırakır `#include` deyimleri.
 
- Tetikleyiciler otomatik tamamlanmasını `#include` deyimleri, "/" kullanılır. Varsayılan sınırlayıcı ters eğik çizgidir '\'. Derleyici, ya da kabul edin, ne, kod tabanının kullandığını belirtmek için bu seçeneği kullanın.
+**İleri eğik çizgi kullanın #include otomatik tamamlama**
 
- **Israrlı üye listesi devre dışı bırak**
+Tetikleyiciler otomatik tamamlanmasını `#include` deyimleri, "/" kullanılır. Varsayılan sınırlayıcı ters eğik çizgidir '\'. Derleyici, ya da kabul edin, ne, kod tabanının kullandığını belirtmek için bu seçeneği kullanın.
 
- Üye listesi bir türü veya değişken adını yazarken görünmez. Yalnızca bir işleme karakterleri yazdıktan sonra sınıfında tanımlandığı gibi liste görünür **üye listesi işleme karakterleri** seçeneği.
+**Israrlı üye listesi devre dışı bırak**
 
- **Üye listesi anahtar sözcükleri devre dışı bırak**
+Üye listesi bir türü veya değişken adını yazarken görünmez. Yalnızca bir işleme karakterleri yazdıktan sonra sınıfında tanımlandığı gibi liste görünür **üye listesi işleme karakterleri** seçeneği.
 
- Dil anahtar sözcükleri gibi `void`, `class`, `switch` üye listesi önerilerine görünmez.
+**Üye listesi anahtar sözcükleri devre dışı bırak**
 
- **Üye listesi kod parçacıklarını devre dışı bırak**
+Dil anahtar sözcükleri gibi `void`, `class`, `switch` üye listesi önerilerine görünmez.
 
- Kod parçacıkları üye listesi önerilerine görünmez.
+**Üye listesi kod parçacıklarını devre dışı bırak**
 
- **Üye listesi filtre modu**
+Kod parçacıkları üye listesi önerilerine görünmez.
 
- Eşleştirme algoritmasını türünü ayarlar. **Belirsiz** en olası eşleşmeleri bir yazım benzer, ancak aynı olan bulmaya denetleyicisi için benzer bir algoritma kullandığından bulur. **Akıllı filtreleme** bir sözcük başlangıcında olmasanız bile eşleşen alt dizeler. **Önek** sözcüğün başında başlaması aynı alt dizeler üzerinde yalnızca eşleşir.
+**Üye listesi filtre modu**
 
- **Anlam renklendirmeyi devre dışı bırak**
+Eşleştirme algoritmasını türünü ayarlar. **Belirsiz** en olası eşleşmeleri bir yazım benzer, ancak aynı olan bulmaya denetleyicisi için benzer bir algoritma kullandığından bulur. **Akıllı filtreleme** bir sözcük başlangıcında olmasanız bile eşleşen alt dizeler. **Önek** sözcüğün başında başlaması aynı alt dizeler üzerinde yalnızca eşleşir.
 
- Dil anahtar sözcükleri, dizeleri ve açıklamaları dışında tüm kod renklendirme devre dışı bırakır.
+**Anlam renklendirmeyi devre dışı bırak**
 
- **Üye listesi işleme karakterleri**
+Dil anahtar sözcükleri, dizeleri ve açıklamaları dışında tüm kod renklendirme devre dışı bırakır.
 
- Kaydedilecek vurgulanmış geçerli üye listesi öneri neden karakterleri belirtir. Ekleyebilir veya karakterleri bu listeden kaldırın.
+**Üye listesi işleme karakterleri**
 
- **Akıllı üye listesi işleme**
+Kaydedilecek vurgulanmış geçerli üye listesi öneri neden karakterleri belirtir. Ekleyebilir veya karakterleri bu listeden kaldırın.
 
- Enter tuşuna basıldığında tam yazılmış sözcüğün sonuna seçtiğinizde bir satır ekler.
+**Akıllı üye listesi işleme**
 
- **Üye listesi oka nokta etkinleştir**
+Enter tuşuna basıldığında tam yazılmış sözcüğün sonuna seçtiğinizde bir satır ekler.
 
- Değiştirir '.' ile 'üye listesi için -> uygun olduğunda'.
+**Üye listesi oka nokta etkinleştir**
+
+Değiştirir '.' ile 'üye listesi için -> uygun olduğunda'.
 
 ## <a name="references"></a>Referanslar
- **Çözümleme devre dışı bırak**
 
- Performans nedeniyle, tüm başvuruları Bul' her adayı doğrulamak için IntelliSense kullanmak yerine varsayılan olarak ham metinsel arama sonuçlarını görüntüler. Tüm daha doğru sonuçlar işlemleri bulmak için bu onay kutusunu temizleyebilirsiniz. Arama başına temelinde filtre, sonuç listesi için kısayol menüsünü açın ve ardından "Çözümleme sonuçları."
+**Çözümleme devre dışı bırak**
 
- **Onaylanmamış Gizle**
+Performans nedeniyle, tüm başvuruları Bul' her adayı doğrulamak için IntelliSense kullanmak yerine varsayılan olarak ham metinsel arama sonuçlarını görüntüler. Tüm daha doğru sonuçlar işlemleri bulmak için bu onay kutusunu temizleyebilirsiniz. Arama başına temelinde filtre, sonuç listesi için kısayol menüsünü açın ve ardından "Çözümleme sonuçları."
 
- Onaylanmamış öğelerde 'Tüm başvuruları Bul' sonuçlarını gizle. Ayarlama "devre dışı bırak Çözümleme" seçeneği, bu seçenek sonuçlarında onaylanmamış öğeleri gizlemek için kullanabilirsiniz.
+**Onaylanmamış Gizle**
 
- **Başvuru vurgulama devre dışı bırak**
+Onaylanmamış öğelerde 'Tüm başvuruları Bul' sonuçlarını gizle. Ayarlama "devre dışı bırak Çözümleme" seçeneği, bu seçenek sonuçlarında onaylanmamış öğeleri gizlemek için kullanabilirsiniz.
+
+**Başvuru vurgulama devre dışı bırak**
 
 Bazı metin seçtiğinizde varsayılan olarak, aynı metninin tüm örneklerinin otomatik olarak geçerli belgede vurgulanır. Ayarlayarak bu özelliği devre dışı bırakabilirsiniz **başvuru vurgulama devre dışı** için **True**.
 
- ## <a name="text-editor"></a>Metin Düzenleyici
- **Küme ayraçları Çevrelemeyi etkinleştir**
+## <a name="text-editor"></a>Metin Düzenleyici
 
- Etkinleştirilirse, seçili metni küme ayracı ile yazarak çevreleyebilirsiniz ' {' metin düzenleyicisine.
+**Küme ayraçları Çevrelemeyi etkinleştir**
 
- **Parantezlerle etkinleştir**
+Etkinleştirilirse, seçili metni küme ayracı ile yazarak çevreleyebilirsiniz ' {' metin düzenleyicisine.
 
- Etkinleştirilirse, seçili metni parantez ile yazarak çevreleyebilirsiniz ' (' metin düzenleyicisine.
+**Parantezlerle etkinleştir**
+
+Etkinleştirilirse, seçili metni parantez ile yazarak çevreleyebilirsiniz ' (' metin düzenleyicisine.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -2,15 +2,9 @@
 layout: HubPage
 hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
-description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017'yi kullanmayı öğrenin.
+description: 'Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017''yi kullanmayı öğrenin.'
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821363"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -128,7 +122,7 @@ ms.locfileid: "52821363"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Hizmetleri</h3>
+                                                    <h3>Azure DevOps Services</h3>
                                                     <p>Çevik proje araçları ve raporları takım üretkenliği artırın. Derleme, test ve projeleri modern CI/CD araçlarıyla kaynak denetiminden dağıtın.</p>
                                                 </div>
                                             </div>

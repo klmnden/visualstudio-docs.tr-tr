@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957945"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954315"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
@@ -161,27 +161,28 @@ Komut satırı seçeneği bir dosya için tüm kod analizi belirterek geçici ol
 
 Bazen iş odaklı Kod Analizi ve yine de Visual Studio IDE yararlanın yararlı olabilir. Büyük projeler için derleme zamandan tasarruf edin ve sonuçları filtrelemek için daha kolay hale getirmek için kullanılabilecek bir örnek senaryo aşağıdadır.
 
-1.  Komut kabuğu'nda ayarlayın `esp.extension` ve `esp.annotationbuildlevel` ortam değişkenleri.
-2.  Bu değişkenler devralmak için komut kabuğundan Visual Studio'yu başlatın.
-3.  Projenize yükleyin ve özelliklerini açın.
-4.  Kod analizini etkinleştir, uygun bir kural kümesi seç, ancak kod analizi uzantıları etkinleştirmeyin.
-5.  C++ temel yönergeleri Denetleyici ile analiz edin ve özelliklerini açmak istediğiniz dosyaya gidin.
-6.  Seçin **C / C ++ \Command satırı seçenekleri** ekleyin `/analyze:plugin EspXEngine.dll`
-7.  Önceden derlenmiş üst bilgi kullanımını devre dışı (**C / C ++ \Precompiled üstbilgileri**). Uzantıları altyapısı önceden derlenmiş üst bilgisinden iç bilgilerini okuma girişiminde bulunabilir ve ikincisi varsayılan proje seçenekleri ile derlenen, yeniden uyumlu olmayacaktır bu işlem gereklidir.
-8.  Projeyi yeniden derleyin. Ortak PREFast denetimleri, tüm dosyalar üzerinde çalıştırmanız gerekir. C++ temel yönergeleri denetleyici varsayılan olarak etkin olmadığından, yalnızca onu kullanmak üzere yapılandırılmış dosya üzerinde çalıştırmanız gerekir.
+1. Komut kabuğu'nda ayarlayın `esp.extension` ve `esp.annotationbuildlevel` ortam değişkenleri.
+2. Bu değişkenler devralmak için komut kabuğundan Visual Studio'yu başlatın.
+3. Projenize yükleyin ve özelliklerini açın.
+4. Kod analizini etkinleştir, uygun bir kural kümesi seç, ancak kod analizi uzantıları etkinleştirmeyin.
+5. C++ temel yönergeleri Denetleyici ile analiz edin ve özelliklerini açmak istediğiniz dosyaya gidin.
+6. Seçin **C / C ++ \Command satırı seçenekleri** ekleyin `/analyze:plugin EspXEngine.dll`
+7. Önceden derlenmiş üst bilgi kullanımını devre dışı (**C / C ++ \Precompiled üstbilgileri**). Uzantıları altyapısı önceden derlenmiş üst bilgisinden iç bilgilerini okuma girişiminde bulunabilir ve ikincisi varsayılan proje seçenekleri ile derlenen, yeniden uyumlu olmayacaktır bu işlem gereklidir.
+8. Projeyi yeniden derleyin. Ortak PREFast denetimleri, tüm dosyalar üzerinde çalıştırmanız gerekir. C++ temel yönergeleri denetleyici varsayılan olarak etkin olmadığından, yalnızca onu kullanmak üzere yapılandırılmış dosya üzerinde çalıştırmanız gerekir.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Visual Studio dışında C++ temel yönergeleri denetleyici kullanma
 İçinde otomatik yapılara, C++ temel yönergeleri denetimi kullanabilirsiniz.
 
 ### <a name="msbuild"></a>MSBuild
- Yerel Kod Analizi denetleyicisi (PREfast), özel MSBuild tarafından MSBuild ortamına tümleşiktir. Proje özellikleri etkinleştirmek için kullanın ve (hangi PREfast üzerinde göre) C++ temel yönergeleri denetleyici ekleyin:
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+Yerel Kod Analizi denetleyicisi (PREfast), özel MSBuild tarafından MSBuild ortamına tümleşiktir. Proje özellikleri etkinleştirmek için kullanın ve (hangi PREfast üzerinde göre) C++ temel yönergeleri denetleyici ekleyin:
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Bu özellikler Microsoft.Cpp.targets dosyasının içeri aktarmadan önce eklediğinizden emin olun. Özel kural kümeleri seçin veya bir özel kural kümesi oluşturma veya PREfast diğer denetimleri içeren varsayılan kural kümesi kullanın.
@@ -221,14 +222,16 @@ Birkaç ortam değişkenlerini ayarladıktan ve uygun komut satırı seçenekler
    - `/analyze:plugin EspXEngine.dll` Bu seçenek, Kod Analizi uzantıları altyapısı PREfast yükler. Bu altyapısı, buna karşılık, C++ temel yönergeleri denetleyici yükler.
 
 ## <a name="use-the-guideline-support-library"></a>Kılavuzu destek kitaplığını kullanma
- Yönerge destek kitaplığı, temel yönergeleri izlemenize yardımcı olmak için tasarlanmıştır. GSL hataya yapıları ile daha güvenli alternatifler değiştirmenizi sağlayan tanımlarını içerir. Örneğin, değiştirebileceğiniz bir `T*, length` parametrelerle çiftinin `span<T>` türü. GSL kullanılabilir [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Kitaplık kaynaklarını görüntüleme, yorum yapmak veya katkıda açık kaynaklı olduğundan. Proje şu yolda bulunabilir: [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Visual Studio 2015 projelerinde C++ temel denetimi kuralları kullanma
-  Visual Studio 2015 kullanıyorsanız, C++ temel denetimi Kod Analizi kural kümeleri varsayılan olarak yüklü değil. C++ temel denetimi kod çözümleme araçları Visual Studio 2015'te etkinleştirmeden önce bazı ek adımlar gerçekleştirmeniz gerekir. Microsoft, bir Nuget paketi kullanarak Visual Studio 2015 projeleri için destek sağlar. Paket Microsoft.CppCoreCheck olarak adlandırılır ve adresten edinilebilir [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Bu paket, yüklü en az Visual Studio 2015 güncelleştirme 1 ile olması gerekir.
+Yönerge destek kitaplığı, temel yönergeleri izlemenize yardımcı olmak için tasarlanmıştır. GSL hataya yapıları ile daha güvenli alternatifler değiştirmenizi sağlayan tanımlarını içerir. Örneğin, değiştirebileceğiniz bir `T*, length` parametrelerle çiftinin `span<T>` türü. GSL kullanılabilir [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Kitaplık kaynaklarını görüntüleme, yorum yapmak veya katkıda açık kaynaklı olduğundan. Proje şu yolda bulunabilir: [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- Paket, başka bir paket bağımlılık olarak, bir yalnızca üstbilgi yönerge desteği kitaplığı (GSL) de yükler. GSL GitHub üzerinde de kullanılabilir [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Visual Studio 2015 projelerinde C++ temel denetimi kuralları kullanma
 
- Kod Analizi kuralları yüklenen şekli nedeniyle, Visual Studio 2015 içinde kontrol etmek istediğiniz her C++ projesi içine Microsoft.CppCoreCheck NuGet paketini yüklemeniz gerekir.
+Visual Studio 2015 kullanıyorsanız, C++ temel denetimi Kod Analizi kural kümeleri varsayılan olarak yüklü değil. C++ temel denetimi kod çözümleme araçları Visual Studio 2015'te etkinleştirmeden önce bazı ek adımlar gerçekleştirmeniz gerekir. Microsoft, bir Nuget paketi kullanarak Visual Studio 2015 projeleri için destek sağlar. Paket Microsoft.CppCoreCheck olarak adlandırılır ve adresten edinilebilir [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Bu paket, yüklü en az Visual Studio 2015 güncelleştirme 1 ile olması gerekir.
+
+Paket, başka bir paket bağımlılık olarak, bir yalnızca üstbilgi yönerge desteği kitaplığı (GSL) de yükler. GSL GitHub üzerinde de kullanılabilir [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Kod Analizi kuralları yüklenen şekli nedeniyle, Visual Studio 2015 içinde kontrol etmek istediğiniz her C++ projesi içine Microsoft.CppCoreCheck NuGet paketini yüklemeniz gerekir.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Projenizi Visual Studio 2015'te Microsoft.CppCoreCheck paketi eklemek için
 

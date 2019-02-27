@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Kuruluşunuzun Visual Studio abonelikleri Yönetici portalı ile yönetmeyi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843725"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953962"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio abonelikleri Yönetici portalını kullanma
 
@@ -38,13 +38,14 @@ Kuruluşunuzun abonelikleri yönetmek için Yönetici portalını kullanabilmek 
 ### <a name="onboarding"></a>Ekleme
 
 Kuruluşunuzun Visual Studio abonelikleri Yönetim Portalı'na eklediğinizden çalıştırılmaya hazır olduğunda bir e-posta birincil ve bildirimler ilgili kişileri davet eden ekleme işlemini tamamlamak için gönderilir. Aşağıdaki ayrıntıları yeni portala eklemek için alınması gereken adımlardır. Bir gözden geçirme işleminin isterseniz, bunu kontrol [yönetici ekleme video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) veya bu [destek makalesi](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio abonelikleri yönetici geçiş işlemi").
-1.  **PCN'nizi edinme ve oturum açma:**
-    - E-postada, birincil ve bildirimler ilgili kişileri benzersiz bir bağlantı ve bunların genel müşteri numarasını (PCN), son üç basamak ile sağlanır. *
-    - Tüm PCN elde etmek için birincil ilgili kişi VLSC için oturum açmanız gerekir (PCN bulmak için yönergeler burada bulunabilir).
-    - PCN aldıktan sonra kullanıcıdan oturum açmasını ister kendi benzersiz bağlantı seçmeniz gerekir. Bunlar, kuruluşunuz AAD üzerinde değilse, bir iş/Okul hesabı (Kuruluşunuz AAD'de ise) ya da bir Microsoft hesabı (MSA) kullanarak oturum açmanız mümkün olacaktır.
-    - Ardından, bunlar PCN'yi girmeniz gerekir.
-2.  **Yöneticilerinize ayarlayın.** PCN girdikten sonra bir süper yönetici yeni sistemde kayıtlı olması ve başka Süper Yöneticiler ve yöneticiler (daha önce abonelik yöneticileri olarak da bilinir) eklemeniz mümkün olacaktır. Bu erişim kaybını önlemek için kuruluşunuzun geçiş tarihinden önce tamamlanmalıdır.
-3.  **Yeni abonelik yönetimi portalına erişme.**  Kuruluşunuz geçirildikten sonra yeni eklenen Süper Yöneticiler ve yeni portala erişmek ve abonelikleri yönetmeye başlamak için yöneticiler onları davet e-postalar gönderilir.
+
+1. **PCN'nizi edinme ve oturum açma:**
+    - E-postada, birincil ve bildirimler ilgili kişileri benzersiz bir bağlantı ve bunların genel müşteri numarasını (PCN), son üç basamak ile sağlanır. * 
+    - Tüm PCN elde etmek için birincil ilgili kişi VLSC için oturum açmanız gerekir (PCN bulmak için yönergeler burada bulunabilir). 
+    - PCN aldıktan sonra kullanıcıdan oturum açmasını ister kendi benzersiz bağlantı seçmeniz gerekir. Bunlar, kuruluşunuz AAD üzerinde değilse, bir iş/Okul hesabı (Kuruluşunuz AAD'de ise) ya da bir Microsoft hesabı (MSA) kullanarak oturum açmanız mümkün olacaktır. 
+    - Ardından, bunlar PCN'yi girmeniz gerekir. 
+2. **Yöneticilerinize ayarlayın.** PCN girdikten sonra bir süper yönetici yeni sistemde kayıtlı olması ve başka Süper Yöneticiler ve yöneticiler (daha önce abonelik yöneticileri olarak da bilinir) eklemeniz mümkün olacaktır. Bu erişim kaybını önlemek için kuruluşunuzun geçiş tarihinden önce tamamlanmalıdır. 
+3. **Yeni abonelik yönetimi portalına erişme.**  Kuruluşunuz geçirildikten sonra yeni eklenen Süper Yöneticiler ve yeni portala erişmek ve abonelikleri yönetmeye başlamak için yöneticiler onları davet e-postalar gönderilir.  
 
 > [!NOTE]
 > Birincil veya bildirimler ilgili kişileri birden fazla e-posta almanız durumunda, bu, birden çok PCN'ye sahip oldukları anlamına gelir. Her email.* içinde başvurulan PCN için benzersiz bağlantıyı kullanarak işlemi tamamlamak gerekir

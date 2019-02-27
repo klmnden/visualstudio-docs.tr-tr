@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bb827651381409af69ea952660335767c334ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab82ad49dcd6369f0ef71068ed0238b45914072c
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702999"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954085"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Hata: Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi (MSVSMON.EXE) uzak bilgisayar üzerinde çalışıyor görünmüyor.
 Bu hata iletisi, Visual Studio uzak bilgisayardaki Visual Studio uzaktan hata ayıklama İzleyicisi doğru örneği bulunamadı anlamına gelir. Çalışmak için uzaktan hata ayıklama için Visual Studio uzaktan hata ayıklama İzleyicisi yüklenmesi gerekir. İndirme ve uzaktan hata ayıklayıcı ayarlama hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
->  Bu ileti bir ürün hatası nedeniyle almış düşünürseniz, lütfen [bu sorunu bildirmek için Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md). Daha fazla yardıma ihtiyacınız varsa bkz [konuşmak bize](../ide/talk-to-us.md) yollarını Microsoft ile iletişime geçin.
+>  Bu ileti bir ürün hatası nedeniyle almış düşünürseniz, lütfen [bu sorunu bildirmek için Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Daha fazla yardıma ihtiyacınız varsa bkz [konuşmak bize](../ide/talk-to-us.md) yollarını Microsoft ile iletişime geçin.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Hata ayıklama Visual Studio 2010 veya önceki sürümlerde sırada bu iletiyi aldım.
  Visual Studio 2010 veya önceki bir sürümü kullandığınız Visual Studio'nun sürümü ise dosya ve Yazıcı Paylaşımı etkin değil, bu hatayı alabilirsiniz. Bu sorun hakkında daha fazla bilgi için lütfen bu belgeler Visual Studio 2010 sürümüne bakın: [Hata: Microsoft Visual Studio uzaktan hata ayıklama İzleyicisi (MSVSMON. EXE) uzak bilgisayar üzerinde çalışıyor görünmüyor. -Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))

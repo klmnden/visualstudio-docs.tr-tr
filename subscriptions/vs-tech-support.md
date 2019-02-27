@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil olan teknik destek teklifinizden etkinleştirmeyi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: e79af99783d9e7fb8c43f72245dab828fea1736d
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841722"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953851"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, teknik destek teklifinizden etkinleştir
 
@@ -82,9 +82,9 @@ Lütfen çağırdığınızda sözleşme Kimliğinizi ve erişim kimliği kullan
 
 Azure'a ilgili sorunlar için Visual Studio aboneliği teknik destek teklifinizden kullanmak için erişim kimliği ve sözleşme Kimliği bilgilerinizi Azure aboneliğine bağlama gerekecektir.
 
-1.  Ziyaret https://portal.azure.com ve oturum açın
-2.  Sol gezinti bölmesinden tıklayın **Yardım + destek**
-3.  "Destek" altında tıklayın **yeni destek isteği**
+1. Ziyaret https://portal.azure.com ve oturum açın
+2. Sol gezinti bölmesinden tıklayın **Yardım + destek**
+3. "Destek" altında tıklayın **yeni destek isteği**
 
 ## <a name="eligibility"></a>Uygunluk
 

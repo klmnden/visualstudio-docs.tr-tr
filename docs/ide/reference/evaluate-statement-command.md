@@ -1,6 +1,6 @@
 ---
-title: Deyimi Değerlendir Komutu
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,51 +13,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911747"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953061"
 ---
-# <a name="evaluate-statement-command"></a>Deyimi Değerlendir Komutu
+# <a name="evaluate-statement-command"></a>Deyimi Değerlendir komutu
+
 Değerlendirir ve verilen deyimi görüntüler.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Arguments
- `text` Gerekli. Değerlendirilecek ifade.
 
-## <a name="remarks"></a>Açıklamalar
- Girmek için kullanılan pencere **EvaluateStatement** komut belirleyen bir eşittir işareti (=) karşılaştırma işleci veya bir atama işleci olarak yorumlanır.
+`text`
 
- İçinde **komut** penceresinde, eşittir işareti (=) karşılaştırma işleci yorumlanır. Örneğin, bu nedenle, değişkenlerin değerleri `a` ve `b` farklı, sonra komutu
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- bir değeri döndürür `false`.
-
- İçinde **hemen** penceresinde, aksine, eşittir işareti (=) bir atama işleci yorumlanır. Bunu, örneğin, komut
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- atar `a` değişkenin değerini `b`.
+Gerekli. Değerlendirilecek ifade.
 
 ## <a name="example"></a>Örnek
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yazdır Komutu](../../ide/reference/print-command.md)
 - [Visual Studio Komutları](../../ide/reference/visual-studio-commands.md)

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349445"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953453"
 ---
 # <a name="data-visualizations"></a>Veri görselleştirmeleri
 
@@ -88,18 +88,18 @@ Kendi satır içi görselleştiriciler de bazı diğer türleri aşağıda liste
 
 ![Diğer Görselleştirme](media/data-visualizations-image23.png)
 
-*   **Temel Türler**
-    *   Bu basit türü ham değeri gösterir.
-*   **Sabit listesi**
-    *   Bu numaralama türü niteleyici olmayan alan değeri görüntüler.
-*   **Tanımlama grubu**
-    *   (,) Biçiminde görüntülenir
-*   **Null**
-    *   "Null" değerini gösterir.
-*   **URL**
-    *   Bu tıklanabilir köprü görüntüler.
-*   **IntPtr**
-    *   Bu IntPtr bir sayının onaltılık gösterimini görüntüler.
+* **Temel Türler**
+  * Bu basit türü ham değeri gösterir.
+* **Sabit listesi**
+  * Bu numaralama türü niteleyici olmayan alan değeri görüntüler.
+* **Tanımlama grubu**
+  * (,) Biçiminde görüntülenir
+* **Null**
+  * "Null" değerini gösterir.
+* **URL**
+  * Bu tıklanabilir köprü görüntüler.
+* **IntPtr**
+  * Bu IntPtr bir sayının onaltılık gösterimini görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

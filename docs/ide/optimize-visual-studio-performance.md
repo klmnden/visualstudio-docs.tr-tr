@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d163edf5e08df3b60bdf664da8048781927729ac
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317685"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953592"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio performansını iyileştirme
 
@@ -45,7 +45,7 @@ Ayrıca, çözümünüze bir USB sürücüsünden çalıştırmayın. HDD veya S
 
 ## <a name="help-us-improve"></a>Geliştirmemize yardımcı olun
 
-Geri bildiriminiz geliştirmemize yardımcı olur. Kullanım **sorun bildir** özelliğini "kaydı bir izleme" ve bize gönderin. Geri bildirim simgesini seçin **hızlı başlatma**, ya da seçin **yardımcı** > **geri bildirim gönder** > **sorunbildir** menü çubuğundan. Daha fazla bilgi için [Visual Studio 2017 ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Geri bildiriminiz geliştirmemize yardımcı olur. Kullanım **sorun bildir** özelliğini "kaydı bir izleme" ve bize gönderin. Geri bildirim simgesini seçin **hızlı başlatma**, ya da seçin **yardımcı** > **geri bildirim gönder** > **sorunbildir** menü çubuğundan. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

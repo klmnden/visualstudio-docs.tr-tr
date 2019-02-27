@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d212b7deee3244847b3ae5f04c64d29621564f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: bc1964fdb3860702818454ee4e918cc93c0156c3
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681848"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954273"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme
 
@@ -164,7 +164,7 @@ Ek rehberlik için ortak olan birkaç uzantı türleri ve bunların önerilen Ö
 
 Uzantı türü | Görünen Ad | Kimliği
 --- | --- | ---
-Düzenleyici | Visual Studio temel Düzenleyicisi  | Microsoft.VisualStudio.Component.CoreEditor
+Düzenleyici | Visual Studio temel Düzenleyicisi | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# ve Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Yönetilen masaüstü iş yükü Çekirdeği | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Hata Ayıklayıcısı | Just-In-Time hata ayıklayıcı | Microsoft.VisualStudio.Component.Debugger.JustInTime

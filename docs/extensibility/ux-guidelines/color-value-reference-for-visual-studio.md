@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722284"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954435"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 
@@ -553,7 +553,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 
 | Açık | Koyu | Mavi | İçin kullanılan... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5`   | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30`   | ![#FFFDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF örneği")<br />`#FFFDF4BF` | Eylem düğmeleri, birleşik giriş kutusu öğeleri, komut çubuğu düğmeleri, aşağı açılır düğmeler ve menü öğeleri: arka plan |
+| ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30` | ![#FFFDF4BF örneğini](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF örneği")<br />`#FFFDF4BF` | Eylem düğmeleri, birleşik giriş kutusu öğeleri, komut çubuğu düğmeleri, aşağı açılır düğmeler ve menü öğeleri: arka plan |
 | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![#FF3F3F46 örneğini](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 örneği")<br />`#FF3F3F46` | ![#FF465A7D örneğini](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D örneği")<br />`#FF465A7D` | Otomatik gizleme sekme kenarlığı |
 | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![#FF2D2D30 örneğini](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 örneği")<br />`#FF2D2D30` | ![#FF293955 örneğini](../../extensibility/ux-guidelines/media/293955.png "#FF293955 örneği")<br />`#FF293955` | Otomatik gizleme sekmesi varsayılan ve üzerine gelindiğinde kullanılacak arka planlar |
 | ![#FF444444 örneğini](../../extensibility/ux-guidelines/media/444444.png "#FF444444 örneği")<br />`#FF444444` | ![#FFD0D0D0 örneğini](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 örneği")<br />`#FFD0D0D0` | ![#FFFFFFFF örneğini](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF örneği")<br />`#FFFFFFFF` | Otomatik gizleme sekme metnine odaklanmadan araç penceresinin başlık çubuğu metni ve araç penceresi sekme metnine |

@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Abonelik yöneticilerinin Sorumluluklar hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842357"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954486"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Yönetici sorumlulukları genel bakış
 Yönetici olarak, kuruluşunuz için Abonelikleri Yönetme olanağına sahip.  Yönetici rolü de abonelikleri lisans koşullarına uygun olarak yönetildiğinden emin olmak için sorumlulukları taşır. Bu makalede, sorumlulukları, avantajları ve sınırlamaları yönetici rolünün özetlenmektedir.
 
 ## <a name="roles--responsibilities"></a>Rolleri ve sorumlulukları
 Visual Studio Yönetici dört anahtar sorumluluklara sahiptir:
-1.  **Visual Studio aboneliklerinin kısıtlamaları ve avantajları öğrenin.** Doğru Avantajlarınızı anlama bulut hizmetlerini kullanarak donanım maliyetlerini azaltmak etkinleştirmeniz ve üretim öncesi ortamlar için kullanıcı başına lisanslara yazılım maliyetleri azaltabilirsiniz.
-2.  **Visual Studio abonelikleri için belirli kişiler adlı atayabilir ve kullanımını teşvik edin.** Sözleşmeniz, Visual Studio abonelikleri belirli, adlandırılmış kişilere atanmasını gerektirir. Erişim ve tam anlamıyla dahil Visual Studio aboneliklerinin yararlarını emin olmak için atanan kişilerle iletişim kurun.
-3.  **Üretim öncesi ortamınızı doğru şekilde envanteri.** Bu, Visual Studio lisanslı yazılım ile etkileşime geçen tüm kullanıcılar uygun şekilde kendi Visual Studio aboneliğiyle lisanslanır emin olmak için gereklidir.
-4.  **Kullanıcı Ataması değişiklikleri izlemek ve ek lisanslarını zamanlamaya göre.** Microsoft Toplu Lisans (VL) sözleşmeleri ve MPSA nasıl kullanın ve Visual Studio abonelikleri atayabilir esneklik sağlar. Buna karşılık, sözleşmede ana hatlarıyla belirtilen bir zamanlamaya göre yazılım kullanımını, kullanıcı atamalarını ve işlem siparişleri için ek lisans değişiklikleri izleme beklenir.
+
+1. **Visual Studio aboneliklerinin kısıtlamaları ve avantajları öğrenin.** Doğru Avantajlarınızı anlama bulut hizmetlerini kullanarak donanım maliyetlerini azaltmak etkinleştirmeniz ve üretim öncesi ortamlar için kullanıcı başına lisanslara yazılım maliyetleri azaltabilirsiniz. 
+2. **Visual Studio abonelikleri için belirli kişiler adlı atayabilir ve kullanımını teşvik edin.** Sözleşmeniz, Visual Studio abonelikleri belirli, adlandırılmış kişilere atanmasını gerektirir. Erişim ve tam anlamıyla dahil Visual Studio aboneliklerinin yararlarını emin olmak için atanan kişilerle iletişim kurun.
+3. **Üretim öncesi ortamınızı doğru şekilde envanteri.** Bu, Visual Studio lisanslı yazılım ile etkileşime geçen tüm kullanıcılar uygun şekilde kendi Visual Studio aboneliğiyle lisanslanır emin olmak için gereklidir. 
+4. **Kullanıcı Ataması değişiklikleri izlemek ve ek lisanslarını zamanlamaya göre.** Microsoft Toplu Lisans (VL) sözleşmeleri ve MPSA nasıl kullanın ve Visual Studio abonelikleri atayabilir esneklik sağlar. Buna karşılık, sözleşmede ana hatlarıyla belirtilen bir zamanlamaya göre yazılım kullanımını, kullanıcı atamalarını ve işlem siparişleri için ek lisans değişiklikleri izleme beklenir.
 
 ## <a name="benefits-and-limitations"></a>Avantajlar ve sınırlamalar
 Visual Studio abonelikleri geliştirme yazılımları yükleyip kullanmanızı tasarlamak, geliştirmek, test, değerlendirmek için ekip üyelerinin izin vermek ve diğer yazılımları gösterir. Visual Studio abonelikleri yazılım üretim ortamları için Lisanslanmamış.
@@ -70,9 +71,10 @@ Visual Studio kullanımı izlemek ve Toplu Lisanslama sözleşmesi veya Microsof
 - Bir kullanıcı, Visual Studio yazılımıyla etkileşim kurar.
 
 Tam satın alma yükümlülüğü tarafından belirlenir **kullanımı üst sınıra**. Bu eşik yüksek noktası günlük kullanıcı atamaları veya Visual Studio yazılım ile etkileşimde bulunabilecek kullanıcı, hangisi daha yüksektir.
-1.  Visual Studio abonelikleri yöneticileri, Visual Studio abonelikleri için kişiler atayarak kullanımı üst sınıra artırabilir.
-2.  90 gün özgün atama zamanından bu yana başarılı olması halinde visual Studio abonelikleri yöneticileri için başka bir abone aboneliklerden tekrar atama yapabilir. Yapay olarak yüksek bir filigran önlemek için her zaman öncelikle var olan aboneliği kaldırma ve ardından yeni bir tane ekleyerek bunu.
-3.  Visual Studio abonelikleri yöneticileri, bir atama bir düşüş ve başka bir artış olarak nitelendirilir bir kişi için atanan abonelik düzeyinde değişebilir. Bir abonenin azalttığınızda abonelik düzeyinde atanmış ayrı ayrı hemen kullanarak durdurmalı ve yalnızca üst düzey abonelikte olan her şeyi kaldırın.
+
+1. Visual Studio abonelikleri yöneticileri, Visual Studio abonelikleri için kişiler atayarak kullanımı üst sınıra artırabilir.
+2. 90 gün özgün atama zamanından bu yana başarılı olması halinde visual Studio abonelikleri yöneticileri için başka bir abone aboneliklerden tekrar atama yapabilir. Yapay olarak yüksek bir filigran önlemek için her zaman öncelikle var olan aboneliği kaldırma ve ardından yeni bir tane ekleyerek bunu.
+3. Visual Studio abonelikleri yöneticileri, bir atama bir düşüş ve başka bir artış olarak nitelendirilir bir kişi için atanan abonelik düzeyinde değişebilir. Bir abonenin azalttığınızda abonelik düzeyinde atanmış ayrı ayrı hemen kullanarak durdurmalı ve yalnızca üst düzey abonelikte olan her şeyi kaldırın. 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>Bulut Abonelikleri, Açık Lisans veya açık değer
 Microsoft Cloud Abonelikleri, Açık Lisans veya Open Value'gibi bir program aracılığıyla abonelikleri atama. Bu durumda, Visual Studio lisanslı yazılım ile etkileşim içinde kullanıcıları (çalışanların veya dış Yükleniciler) başlar ay boyunca ek kullanıcılar için Siparişiniz işlemesi gerekir.

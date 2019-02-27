@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 751ee5f414db3ee2ad944cd48503887bf5c65c2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942690"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953894"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti rollerini yapılandırma
 Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -48,8 +48,6 @@ Visual Studio'da Çözüm Gezgini'nden bir Azure bulut hizmeti aşağıdaki adı
 
     > [!IMPORTANT]
     > Belirli hizmet yapılandırması seçerseniz, bazı özellikler tüm yapılandırmalar için yalnızca ayarlanabilir için devre dışı bırakıldı. Bu özelliklerini düzenlemek için seçmelisiniz **yapılandırmalarında**.
-    >
-    >
 
     ![Azure bulut hizmeti için hizmet yapılandırması listesi](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

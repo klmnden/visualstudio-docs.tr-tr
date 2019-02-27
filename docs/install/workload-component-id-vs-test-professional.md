@@ -16,12 +16,13 @@ ms.service: ''
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: d433ec3743c6b18c3241bf4b4c99c47ad620be62
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 281b41da594e56af4e66751aec47718cf98f7fd6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932241"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953279"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 bileşen dizini
 
@@ -38,7 +39,7 @@ VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri y
 
 Bu kimliklerinin kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası. Ve iş yükü ve Bileşen kimlikleri diğer ürünlere yönelik bir listesi için bkz. [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
-## <a name="test-professional"></a>Test Professional
+## <a name="test-professional"></a>Test Uzmanı
 
 **KİMLİĞİ:** Microsoft.VisualStudio.Workload.TestProfessional
 

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3cf7b35edfad992096193a73f2b57d2c87292a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921542"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953641"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 ile Live Unit Testing
 
@@ -178,8 +178,8 @@ Birçok test projeleri içeren çözümler için hangi projelerin ve bir projede
 
 Tek tek projeler birim testleri seçmek için Live Unit Testing başlatıldıktan sonra aşağıdakileri yapın:
 
-1.  Çözüme sağ **Çözüm Gezgini** ve **Canlı testleri** > **hariç** çözümün tamamını dışlanacak.
-1.  Sağ tıklayın ve testler eklemek istediğiniz her bir test projesi **Canlı testleri** > **Ekle**.
+1. Çözüme sağ **Çözüm Gezgini** ve **Canlı testleri** > **hariç** çözümün tamamını dışlanacak.
+1. Sağ tıklayın ve testler eklemek istediğiniz her bir test projesi **Canlı testleri** > **Ekle**.
 
 **Bireysel testler kod düzenleyici penceresinde hariç**
 

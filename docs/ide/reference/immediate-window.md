@@ -1,6 +1,6 @@
 ---
 title: Komut Penceresi
-ms.date: 11/04/2016
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931955"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954205"
 ---
 # <a name="immediate-window"></a>Komut penceresi
 
-**Hemen** penceresi, hata ayıklama ve ifadelerini değerlendirme, deyimleri yürütme, değişken değerlerini yazdırma vb. için kullanılır. Değerlendirilen veya hata ayıklama sırasında geliştirme dili tarafından yürütülen ifadeleri girmenizi sağlar.
+Kullanım **hemen** penceresi hata ayıklama ve ifade değerlendirme, deyimleri yürütmek ve değişken değerlerini yazdırma. **Hemen** penceresi oluşturma ve şu anda seçili proje kullanarak ifadeleri değerlendirir.
 
 Görüntülenecek **hemen** penceresinde düzenlemeye yönelik bir proje açın ve ardından **hata ayıklama** > **Windows** > **hemen**  veya basın **Ctrl**+**Alt**+**miyim**. Ayrıca girebilirsiniz **Debug.Immediate** içinde **komut** penceresi.
 
-Kullanabileceğiniz **hemen** bireysel Visual Studio komutları için pencere. Kullanılabilir komutlar içeren `EvaluateStatement`, değerleri değişkenlere atamak için kullanılabilir. **Hemen** penceresi de IntelliSense'i destekler.
+**Hemen** penceresi de IntelliSense'i destekler.
 
 ## <a name="display-the-values-of-variables"></a>Değişkenlerin değerlerini görüntüleme
 
-**Hemen** penceresi özellikle kullanışlı olabilir bir uygulamanın hatalarını ayıklama sırasında. Örneğin, bir değişkenin değerini denetlemek için `varA`, kullanabileceğiniz [Yazdır komutu](../../ide/reference/print-command.md):
+**Hemen** uygulama hata ayıklama işlemi yaparken penceresi özellikle yararlıdır. Örneğin, bir değişkenin değerini denetlemek için `varA`, kullanabileceğiniz [yazdırma komut](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
@@ -42,13 +42,13 @@ Kullanabileceğiniz **hemen** bireysel Visual Studio komutları için pencere. K
 Soru işareti (?) için bir diğer addır `Debug.Print`, bu komut ayrıca yazılabilir:
 
 ```cmd
->? varA
+? varA
 ```
 
 Bu komutun her iki sürümü değişken değerini döndürmek `varA`.
 
 > [!TIP]
-> Bir Visual Studio komut vermek için **hemen** penceresinde komutun önüne gerekir büyüktür işareti (>). Birden fazla komut girmek için geçin **komut** penceresi.
+> Bir Visual Studio komut vermek için **hemen** penceresinde komutun önüne gerekir büyüktür işareti (>). Birden fazla komut girmek için geçin [komut penceresi](command-window.md).
 
 ## <a name="design-time-expression-evaluation"></a>Tasarım zamanı ifade değerlendirmesi
 
@@ -56,7 +56,7 @@ Kullanabileceğiniz **hemen** tasarım zamanında bir işlev veya alt yordamı y
 
 ### <a name="execute-a-function-at-design-time"></a>Tasarım zamanında bir işlevi yürütmek
 
-1. Aşağıdaki kodu kopyalayın bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] konsol uygulaması:
+1. Aşağıdaki kod, bir Visual Basic konsol uygulamasına kopyalayın:
 
    ```vb
    Module Module1
@@ -72,7 +72,7 @@ Kullanabileceğiniz **hemen** tasarım zamanında bir işlev veya alt yordamı y
    End Module
    ```
 
-2. Üzerinde **hata ayıklama** menüsünü tıklatın **Windows**ve ardından **hemen**.
+2. Üzerinde **hata ayıklama** menüsünde seçin **Windows** > **hemen**.
 
 3. Tür `?MyFunction(2)` içinde **hemen** penceresi ve ENTER tuşuna **Enter**.
 
@@ -80,15 +80,15 @@ Kullanabileceğiniz **hemen** tasarım zamanında bir işlev veya alt yordamı y
 
 Visual Studio, işlev veya alt yordam bir kesme noktası içeriyorsa, uygun noktada yürütmeyi keser. Ardından, programınızın durumunu incelemek için hata ayıklayıcı penceresini kullanabilirsiniz. Daha fazla bilgi için [izlenecek yol: Tasarım zamanında hata ayıklama](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değerlendirmesi kullanamazsınız dahil olmak üzere [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] projeleri, web projeleri, akıllı cihaz projeleri ve SQL projeleri.
+Office projeleri, web projeleri, akıllı cihaz projeleri ve SQL projeleri için Visual Studio Araçları da dahil olmak üzere bir yürütme ortamı gerektiren proje türlerinde tasarım zamanı ifade değerlendirmesini kullanamazsınız.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Çoklu proje çözümlerinde tasarım zamanı ifade değerlendirmesi
 
-Tasarım zamanı ifade değerlendirmesi için bağlam sağlarken, Visual Studio Çözüm Gezgini'nde seçili olan projeye başvurur. Çözüm Gezgini'nde proje seçtiyseniz, Visual Studio Başlangıç projesine karşı işlevi değerlendirmeye çalışır. İşlev geçerli bağlamda değerlendirilemezse, bir hata iletisi alırsınız. Çözümün başlangıç projesi olmayan bir projede bir işlevi değerlendirmeye çalışıyorsanız ve bir hata alırsanız, Çözüm Gezgini'nde projeyi seçmeyi deneyin ve değerlendirmeyi yeniden deneyin.
+Tasarım zamanı ifade değerlendirme bağlamının sağlarken, Visual Studio Çözüm Gezgini'nde seçili olan projeye başvurur. Çözüm Gezgini'nde proje seçtiyseniz, Visual Studio Başlangıç projesine karşı işlevi değerlendirmeye çalışır. İşlev geçerli bağlamda değerlendirilemezse, bir hata iletisi alırsınız. Çözümün başlangıç projesi olmayan bir projede bir işlevi değerlendirilemiyor çalıştığınız ve bir hata alırsanız, Çözüm Gezgini'nde projeyi seçmeyi deneyin ve değerlendirmeyi yeniden deneyin.
 
 ## <a name="enter-commands"></a>Komutları girin
 
-Büyüktür (>), Visual Studio komutları verirken oturum girin **hemen** penceresi. Kullanım **yukarı ok** ve **aşağı ok** anahtarlarını önceden kaydırmak için verilen komutları.
+Büyüktür (>), Visual Studio komutları verirken oturum girin **hemen** penceresi. Kullanım **yukarı ok** ve **aşağı ok** , önceden kullanılmış komutlarda gezinmek için anahtarları.
 
 |Görev|Çözüm|Örnek|
 |----------|--------------|-------------|
@@ -101,25 +101,23 @@ Büyüktür (>), Visual Studio komutları verirken oturum girin **hemen** pencer
 
 İçinde herhangi bir önceki satırdaki tıkladığınızda **hemen** penceresinde tıklattığınızda, otomatik olarak işaretleme moduna. Bu, seçin, düzenleme ve herhangi bir metin düzenleyicisinde yaptığınız ve bunları geçerli satıra yapıştırmanıza gibi önceki komutların metnini kopyalamak sağlar.
 
-## <a name="the-equals-sign-"></a>Eşittir işareti (=)
+## <a name="examples"></a>Örnekler
 
-Girmek için kullanılan pencere `EvaluateStatement` komut belirleyen bir eşittir işareti (=) karşılaştırma işleci veya bir atama işleci olarak yorumlanır.
-
-İçinde **hemen** penceresinde, eşittir işareti (=) bir atama işleci yorumlanır. Bunu, örneğin, komut
+Aşağıdaki örnek, dört ifadeleri ve bunların sonucunda gösterir **hemen** penceresi Visual Basic projesi için.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
+j = 2
+Expression has been evaluated and has no value
+
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
 ```
-
-değişkenin değerini atar `varB` değişkene `varA`.
-
-İçinde **komut** penceresinde, aksine, eşittir işareti (=) karşılaştırma işleci yorumlanır. Atama işlemlerini kullanamazsınız **komut** penceresi. Örneğin, bu nedenle, değişkenlerin değerleri `varA` ve `varB` farklı, sonra komutu
-
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
-değerini döndürür `False`.
 
 ## <a name="first-chance-exception-notifications"></a>İlk fırsat özel durum bildirimleri
 

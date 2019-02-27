@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Nasıl abonelik yöneticileri Yönetici portalına erişmek ve toplu lisans (VL aracılığıyla) alınan Aboneliklerini Yönetme öğrenin
 searchscope: VS Subscription
-ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843151"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953266"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Portala erişme ve yöneticileri - toplu lisans (VL aracılığıyla) alınan abonelikler için yönetme
 
@@ -31,7 +31,7 @@ Siz zaten yönetici olarak belirlenen sonra Visual Studio abonelikleri doğrudan
 
 Kuruluşunuzun Visual Studio abonelikleri Yönetim Portalı'na eklediğinizden çalıştırılmaya hazır olduğunda bir e-posta birincil ve bildirimler ilgili kişileri davet eden ekleme işlemini tamamlamak için gönderilir. Aşağıdaki ayrıntıları için yerleşik yeni portala gerçekleştirilmesi gereken adımlar yer almaktadır. İşleminde size kılavuzluk istiyorsanız, bu yönetici ekleme, video veya sonraki bölümde belgeleri gözden geçirin.
 
-1.  PCN'nizi edinme ve oturum açma
+1. PCN'nizi edinme ve oturum açma
 
      a. E-postada, birincil ve bildirimler ilgili kişileri benzersiz bir bağlantı ve bunların genel müşteri numarasını (PCN), son üç basamak ile sağlanır.  (Birincil veya bildirimler ilgili kişileri birden fazla e-posta almanız durumunda, bu birden çok PCN'ye sahip oldukları anlamına gelir. Bunlar her e-postasında PCN için benzersiz bağlantıyı kullanarak işlemi tamamlamak gerekir.)
 
@@ -41,9 +41,9 @@ Kuruluşunuzun Visual Studio abonelikleri Yönetim Portalı'na eklediğinizden �
 
      d. Ardından, bunlar PCN'yi girmeniz gerekir.
 
-2.  Yöneticilerinize ayarlayın.  PCN girdikten sonra bir süper yönetici yeni sistemde kayıtlı olması ve başka Süper Yöneticiler ve yöneticiler (daha önce abonelik yöneticileri olarak da bilinir) eklemeniz mümkün olacaktır. Bu erişim kaybını önlemek için kuruluşunuzun geçiş tarihinden önce tamamlanmalıdır.
+2. Yöneticilerinize ayarlayın.  PCN girdikten sonra bir süper yönetici yeni sistemde kayıtlı olması ve başka Süper Yöneticiler ve yöneticiler (daha önce abonelik yöneticileri olarak da bilinir) eklemeniz mümkün olacaktır. Bu erişim kaybını önlemek için kuruluşunuzun geçiş tarihinden önce tamamlanmalıdır.
 
-3.  Yeni abonelik yönetimi portalına erişme. Kuruluşunuz geçirildikten sonra yeni eklenen Süper Yöneticiler ve yeni portala erişmek ve abonelikleri yönetmeye başlamak için yöneticiler onları davet e-postalar gönderilir.
+3. Yeni abonelik yönetimi portalına erişme. Kuruluşunuz geçirildikten sonra yeni eklenen Süper Yöneticiler ve yeni portala erişmek ve abonelikleri yönetmeye başlamak için yöneticiler onları davet e-postalar gönderilir.
 
 Yeni Visual Studio abonelikleri yönetim portalına eklenmesi gerekir ve sizin birincil/bildirimler ilgili kişiniz olan emin değilseniz, açtıktan sonra bu bilgiyi bulabilirsiniz [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Bir göz atın [bulma Sihirbazı birincil ilgili kişi](find-primary-contact.md) VLSC'de birincil/bildirimler ilgili kişinizi bulmak için adımları için konu.
 

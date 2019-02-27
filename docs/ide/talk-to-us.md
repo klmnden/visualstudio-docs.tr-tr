@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609442"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953530"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio ürün geri bildirimi
 
@@ -24,7 +24,7 @@ Bizimle iletişime geçin! Ürünlerimizi ve belgelerini geliştirmek için fiki
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Visual Studio ile ilgili bir sorun bildirmek istiyorum
 
-Visual Studio ile ilgili sorunlarla karşılaşırsanız&mdash;kilitlenmeler, yavaş performans ya da beklenmeyen davranışı gibi&mdash;kullanarak bize bildirin **sorun bildir** aracı. Visual Studio geri bildirim simgesinin yanındaki seçin **hızlı başlatma**, ya da seçin **yardımcı** > **geri bildirim gönder** > **raporu bir Sorun** menü çubuğundan. Ardından, Visual Studio açılır [Geliştirici topluluğu](https://developercommunity.visualstudio.com) burada oturum açabilirsiniz sorunu bildirmek için tarayıcınızda sayfa. Daha fazla bilgi için [Visual Studio 2017 ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio-2017.md).
+Visual Studio ile ilgili sorunlarla karşılaşırsanız&mdash;kilitlenmeler, yavaş performans ya da beklenmeyen davranışı gibi&mdash;kullanarak bize bildirin **sorun bildir** aracı. Visual Studio geri bildirim simgesinin yanındaki seçin **hızlı başlatma**, ya da seçin **yardımcı** > **geri bildirim gönder** > **raporu bir Sorun** menü çubuğundan. Ardından, Visual Studio açılır [Geliştirici topluluğu](https://developercommunity.visualstudio.com) burada oturum açabilirsiniz sorunu bildirmek için tarayıcınızda sayfa. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio özellikleri hakkında bir öneriyse yapmak istiyorum
 
@@ -59,6 +59,6 @@ Lütfen kullanın **bu sayfa yardımcı oldu?** sayfanın alt kısmındaki geri 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio-2017.md)
+* [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md)
 * [Geliştirici topluluğu](https://developercommunity.visualstudio.com)
 * [Geliştirici topluluğu veri gizliliği](developer-community-privacy.md)

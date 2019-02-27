@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919059"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954179"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Yapı özelleştirme ve hata ayıklama için "Klasör Aç" geliştirme görevleri
 
@@ -56,6 +56,7 @@ Ardından kod temelinizde özel derleme araçları, Visual Studio tanımadığı
 
 Bir tek oluşan bir kod temeli göz önünde bulundurun C# adlı dosya *hello.cs*. *Derleme görevleri dosyası* böyle bir kod temeli için şöyle görünebilir:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 İçin böyle bir *derleme görevleri dosyası* temiz yapı içerir ve hedefleri yeniden, aşağıdaki tanımlayabilirsiniz *tasks.vs.json* dosya. Bu derleme, yeniden oluşturma ve NMAKE derleme aracı olarak kullanarak, kod tabanının Temizleme için üç derleme görevleri içerir.
 

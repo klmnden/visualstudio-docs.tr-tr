@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Toplu Lisanslama hizmet Merkezi'nden yönetici geçişi hakkında SSS
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844106"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953957"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio abonelikleri yönetim geçişi
 
@@ -44,21 +44,21 @@ Evet.  Bu işlemde iki aşama vardır. Ayarlama (veya ekleme), kuruluşunuzun ge
 ### <a name="what-is-the-onboarding-process"></a>Onboarding işlemi nedir?
 E-posta, ekleme işlemini tamamlamak için birincil ve bildirimler ilgili kişileri davet eden gönderilir.
 İşlemi hakkında yönergeler için aşağıya bakın.
-1.  **PCN'nizi edinme ve oturum açma:**
+1. **PCN'nizi edinme ve oturum açma:**
 
-    a.  E-postada birincil ve bildirimler ilgili kişileri benzersiz bir bağlantı ve bunların genel müşteri numarasını (PCN), son üç basamak ile sağlanır. *
+    a. E-postada birincil ve bildirimler ilgili kişileri benzersiz bir bağlantı ve bunların genel müşteri numarasını (PCN), son üç basamak ile sağlanır. *
 
-    b.  Tüm PCN almak için birincil ilgili kişi VLSC için oturum açmanız gerekir (PCN bulmak için yönergeler için aşağıda).
+    b. Tüm PCN almak için birincil ilgili kişi VLSC için oturum açmanız gerekir (PCN bulmak için yönergeler için aşağıda).
 
-    c.  PCN aldıktan sonra kullanıcıdan oturum açmasını ister kendi benzersiz bağlantı seçmeniz gerekir. Bunlar, kuruluşunuz Azure AD üzerinde değilse, bir iş/Okul hesabı (Kuruluşunuz Azure AD'de ise) ya da bir Microsoft hesabı (MSA) kullanarak oturum açmanız mümkün olacaktır.
+    c. PCN aldıktan sonra kullanıcıdan oturum açmasını ister kendi benzersiz bağlantı seçmeniz gerekir. Bunlar, kuruluşunuz Azure AD üzerinde değilse, bir iş/Okul hesabı (Kuruluşunuz Azure AD'de ise) ya da bir Microsoft hesabı (MSA) kullanarak oturum açmanız mümkün olacaktır.
 
-    d.  Ardından, bunlar PCN'yi girmeniz istenir.
+    d. Ardından, bunlar PCN'yi girmeniz istenir.
 
-2.  **Yöneticilerinize ayarlayın:**
+2. **Yöneticilerinize ayarlayın:**
 
     PCN girdikten sonra bunlar sayfasına Süper Yöneticiler ve yöneticiler (daha önce abonelik yöneticileri olarak da bilinir) ekleyebilir nerede alınır. İdeal olarak bu aboneliklerinizin yönetiminde herhangi kesintiyle karşılaşmamanız kuruluşunuzun geçiş tarihinden önce tamamlanmalıdır.
 
-3.  **Yeni abonelik yönetimi portalına erişme:** Kuruluşunuz geçirildikten sonra yeni portala erişmek ve abonelikleri yönetmeye başlamak için yöneticileri ve Süper Yöneticiler e-postalar gönderilir.
+3. **Yeni abonelik yönetimi portalına erişme:** Kuruluşunuz geçirildikten sonra yeni portala erişmek ve abonelikleri yönetmeye başlamak için yöneticileri ve Süper Yöneticiler e-postalar gönderilir.
 
 > [!NOTE]
 > Birincil veya bildirimler ilgili kişileri birden fazla e-posta almanız durumunda, bu, birden çok PCN'ye sahip oldukları anlamına gelir. Her e-postasında PCN için benzersiz bağlantıyı kullanarak işlemi tamamlamak gerekir.

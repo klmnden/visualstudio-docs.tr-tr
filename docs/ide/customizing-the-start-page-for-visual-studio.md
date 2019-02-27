@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685137"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953388"
 ---
 # <a name="customize-startup"></a>Başlangıç'ı özelleştirme
 
@@ -34,17 +34,17 @@ Araç penceresinde çalışan ve Visual Studio'ya özel dahili komutları çalı
 
 1. Menü çubuğunda, **Araçları** > **seçenekleri**.
 
-1. Genişletin **ortam**ve ardından **başlangıç**.
+2. Genişletin **ortam**ve ardından **başlangıç**.
 
 ::: moniker range="vs-2017"
 
-1. İçinde **başlangıçta** listesinde, Visual Studio'yu başlattıktan sonra görüntülenecek öğeyi seçin.
+3. İçinde **başlangıçta** listesinde, Visual Studio'yu başlattıktan sonra görüntülenecek öğeyi seçin.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. İçinde **, başlangıçta açılması** listesinde, Visual Studio'yu başlattıktan sonra olmasını istediğinizi seçin. Aralarından seçim yapabileceğiniz **başlangıç penceresi** (olanak sağlayan yeni veya mevcut bir projeyi açmayı), **en son çözüm**, veya **boş ortam**.
+3. İçinde **, başlangıçta açılması** listesinde, Visual Studio'yu başlattıktan sonra olmasını istediğinizi seçin. Aralarından seçim yapabileceğiniz **başlangıç penceresi** (olanak sağlayan yeni veya mevcut bir projeyi açmayı), **en son çözüm**, veya **boş ortam**.
 
 ::: moniker-end
 

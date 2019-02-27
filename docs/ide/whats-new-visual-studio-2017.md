@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 0d0bf684f351c5b384f2d4a525c6b7f64dfbce99
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450600"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954406"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -377,7 +377,7 @@ Nasıl size Visual Studio geliştirmek, veya ürün destek seçenekleri hakkınd
 
 ### <a name="report-a-problem"></a>Sorun bildirin
 
- Bazı durumlarda, bir ileti karşılaştığınız sorunun tam etkisini iletmek için yeterli değildir. Bir yanıt vermemesine, kilitlenme veya diğer performans sorunu yaşarsanız, kolayca yineleme adımları ve destekleyici dosyaları paylaşabilirsiniz (ekran görüntüleri, izleme ve yığın gibi düküm dosyalarında) kullanarak bizimle **sorun bildir** aracı. Bu aracı kullanma hakkında daha fazla bilgi için bkz. [bir sorun bildirme](how-to-report-a-problem-with-visual-studio-2017.md) sayfası.
+ Bazı durumlarda, bir ileti karşılaştığınız sorunun tam etkisini iletmek için yeterli değildir. Bir yanıt vermemesine, kilitlenme veya diğer performans sorunu yaşarsanız, kolayca yineleme adımları ve destekleyici dosyaları paylaşabilirsiniz (ekran görüntüleri, izleme ve yığın gibi düküm dosyalarında) kullanarak bizimle **sorun bildir** aracı. Bu aracı kullanma hakkında daha fazla bilgi için bkz. [bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md) sayfası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

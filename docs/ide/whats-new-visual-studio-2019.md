@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 71e73dd3b39616d9c1840db3ea26feb518a97e6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450262"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954419"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview’daki Yenilikler
+# <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
-**İçin güncelleştirilmiş [Preview 3 sürümü](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)**
+**İçin güncelleştirilmiş [Sürüm Adayı (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Önizlemeyi indirin](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[RC'yi indirin](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
 
-Visual Studio 2019 Preview Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.<br/><br/>
+Visual Studio 2019 Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ Visual Studio sunmak olan, üst düzey bir özeti aşağıda verilmiştir:
 * **[Sürekli yenilik](#continuous-innovation)**. Akıllı, bulut destekli desteğiyle akıllı kod.
 
 > [!NOTE]
-> Yeni özellikler ve işlevler Visual Studio 2019 preview'da tam listesi için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017).
+> Yeni özellikler ve işlevler Visual Studio 2019 rc'de tam listesi için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="personal-and-team-productivity"></a>Kişisel ve takım üretkenliği
 
@@ -75,7 +75,7 @@ Temizleme kodunu biçimlendirmek ve herhangi kod düzeltmeleri tarafından öner
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>Bir Gözcü penceresi içinde arama ve Gözcü değerlerini biçimlendirme
 
-Büyük olasılıkla daha önce bir değerler kümesi arasında bir dize için izleme penceresinde bakarak o yollardan geçtik. Visual Studio 2019 Preview sürümünde, nesneleri ve aradığınız değerlerini bulmanıza yardımcı olmak için izleme, Yereller ve Otomatikler windows Search'te ekledik.
+Büyük olasılıkla daha önce bir değerler kümesi arasında bir dize için izleme penceresinde bakarak o yollardan geçtik. Visual Studio 2019 ' nesneleri ve aradığınız değerlerini bulmanıza yardımcı olmak için izleme, Yereller ve Otomatikler windows Search'te ekledik.
 
 Ayrıca, bir değer İzle, Yereller ve Otomatikler pencereleri içinde nasıl görüntüleneceğini biçimlendirebilirsiniz.  Herhangi bir windows öğelerden birine çift tıklayın ve bir virgül ekleyin (",") olası biçim belirticileri aşağı açılan listesi erişmek için her biri hedeflenen etkisini açıklamasını içerir.
 
@@ -87,7 +87,7 @@ Daha fazla bilgi için [geliştirilmiş Visual Studio 2019 içinde: Nesnelerle v
 
 [Visual Studio Canlı Paylaşım](https://visualstudio.microsoft.com/services/live-share/) bir kod temeli ve onun bağlamı arkadaşınızla paylaşın ve Visual Studio'dan doğrudan anlık çift yönlü işbirliği elde etmenize olanak tanıyan bir geliştirici hizmetidir. Live Share ile bir teammate okuma gidin, düzenlemek ve onlarla paylaştıktan bir projede hata ayıklamak ve sorunsuz ve güvenli bir şekilde bunu.
 
-Ve Visual Studio 2019 Önizleme ile bu hizmet, varsayılan olarak yüklenir.
+Ve Visual Studio 2019'ile bu hizmet, varsayılan olarak yüklenir.
 
 ![LiveShare işbirliği özelliği Visual Studio 2019 gösteren animasyonlu GIF dosyası](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ Daha fazla bilgi için [Visual Studio Live Share gerçek zamanlı kod incelemele
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Çekme isteklerini (Pr'ler) IDE'den yönetme
 
-Visual Studio 2019 önizlemesi ile kullanmak için indirebileceğiniz yeni bir uzantı kullanıma sunduğumuz. Bu yeni uzantı ile gözden geçirebilir, çalıştırma ve çekme istekleri Visual Studio IDE'den çıkmadan bile takımınızdan debug [(tümleşik geliştirme ortamı)](../get-started/visual-studio-ide.md). Biz, kod bugün Azure depolarda destekler, ancak genel deneyimini iyileştirmek ve GitHub'ı desteklemek için genişletme.
+Visual Studio 2019 ile kullanmak için indirebileceğiniz yeni bir uzantı kullanıma sunduğumuz. Bu yeni uzantı ile gözden geçirebilir, çalıştırma ve çekme istekleri Visual Studio IDE'den çıkmadan bile takımınızdan debug [(tümleşik geliştirme ortamı)](../get-started/visual-studio-ide.md). Biz, kod bugün Azure depolarda destekler, ancak genel deneyimini iyileştirmek ve GitHub'ı desteklemek için genişletme.
 
 Hemen kullanmaya başlamak için Yükle [Visual Studio için çekme istekleri](https://aka.ms/pr4vs) Visual Studio Market'ten uzantı.
 
@@ -118,7 +118,7 @@ Daha fazla bilgi için şu sayfalara bakın:
 
 Farklı görüntüleme ölçek faktörlerle yapılandırılan izleyiciler kullanın veya ana cihazınızın farklı ekran ölçek faktörleri bir makineye uzaktan bağlanın, Visual Studio bulanık görünüyor veya yanlış ölçekte işler fark edebilirsiniz.
 
-Visual Studio 2019 Preview'ın yayınlanmasıyla birlikte, size Visual Studio kullanan (PMA) uygulamasını İzle bilgilerinizin ilk adımları sürüyor. Biz ne bağımsız olarak kullandığınız ölçek Etkenler görüntüleme doğru bir şekilde işlemek Visual Studio sağlayacak konusundaki temel çalışmalar yerleştirme.
+Visual Studio 2019'ın yayınlanmasıyla birlikte, size Visual Studio kullanan (PMA) uygulamasını İzle bilgilerinizin ilk adımları sürüyor. Biz ne bağımsız olarak kullandığınız ölçek Etkenler görüntüleme doğru bir şekilde işlemek Visual Studio sağlayacak konusundaki temel çalışmalar yerleştirme.
 
    ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ Neden Visual Studio ekibine geri bildirim gönderilsin mi? Size müşteri geri b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2019 sürüm notları](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Visual Studio 2019 sürüm notları](/visualstudio/releases/2019/release-notes/)
+* [Visual Studio 2019 SDK'da yenilikler nelerdir?](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017'deki yenilikler](whats-new-visual-studio-2017.md)

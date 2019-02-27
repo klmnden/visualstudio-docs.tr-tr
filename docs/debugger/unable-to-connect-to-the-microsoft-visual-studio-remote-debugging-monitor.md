@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692872"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953674"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 Bu ileti, uzaktan hata ayıklama İzleyicisi düzgün uzak makinede kurulu değil veya uzak makineye ağ sorunlarının veya güvenlik duvarı varlığını nedeniyle erişilemez olduğu için meydana gelebilir.
 
 > [!IMPORTANT]
->  Bu ileti bir ürün hatası nedeniyle almış düşünürseniz, lütfen [bu sorunu bildirin](../ide/how-to-report-a-problem-with-visual-studio-2017.md) Visual Studio için. Daha fazla yardıma ihtiyacınız varsa bkz [konuşmak bize](../ide/talk-to-us.md) yollarını Microsoft ile iletişime geçin.
+>  Bu ileti bir ürün hatası nedeniyle almış düşünürseniz, lütfen [bu sorunu bildirin](../ide/how-to-report-a-problem-with-visual-studio.md) Visual Studio için. Daha fazla yardıma ihtiyacınız varsa bkz [konuşmak bize](../ide/talk-to-us.md) yollarını Microsoft ile iletişime geçin.
 
 ## <a name="specificerrors"></a>Ayrıntılı hata iletisini nedir?
 

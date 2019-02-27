@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318803"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954286"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dil sunucusu Protokolü uzantısı ekleme
 
@@ -129,7 +129,7 @@ LSP diller için metin renklendirmesi nasıl belirtimi içermez. Uzantı gelişt
 
 4. Oluşturma bir *.pkgdef* dosya ve şuna benzer bir satır ekleyin:
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
 
 4. .Pkgdef dosyası projeye ekleyin (yeni metin dosyası ekleyin ve .pkgdef için dosya uzantısı değiştirme). Pkgdef bu dosya, bu bilgileri içermelidir:
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     Örnek:
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ LSP dil hizmeti uzantınızı ayarları için destek eklemek için aşağıdaki 
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
-    Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir. Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
+
+### <a name="enabling-diagnostics-tracing"></a>Tanılama izlemeyi etkinleştirme
+
+Tanılama izleme, sorunları hata ayıklama sırasında yararlı olabilecek sunucu ve istemci arasındaki tüm iletiler çıkarmasını etkinleştirilebilir. Tanılama izlemesini etkinleştirmek için aşağıdakileri yapın:
 
 4. Çalışma ayarları dosyasını oluşturun veya açın *VSWorkspaceSettings.json* ("Kullanıcı, bir çalışma alanı ayarlarını düzenleme" bakın).
 5. Ayarları json dosyasında aşağıdaki satırı ekleyin:

@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c1ef8cc5f1a203b5cb43b02a13f5b4e462f33892
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318777"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954101"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
 Visual Studio performans önerisi, nadir durumlarda oluşabilir düşük bellek durumları yöneliktir. Bu gibi durumlarda değil kullanıyor olabileceğiniz bazı Visual Studio özellikleri iyileştirebilirsiniz. Aşağıdaki ipuçları, genel öneriler olarak tasarlanmamıştır.
 
 > [!NOTE]
-> Bellek sorunları nedeniyle ürün kullanmakta zorluk yaşıyorsanız aracılığıyla bize [geri bildirim aracı](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Bellek sorunları nedeniyle ürün kullanmakta zorluk yaşıyorsanız aracılığıyla bize [geri bildirim aracı](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Bir 64-bit işletim sistemi kullanın
 

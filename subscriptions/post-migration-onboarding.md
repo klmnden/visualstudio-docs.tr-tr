@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Bilgi nasıl başarılı bir şekilde eklemek için Visual Studio abonelikleri Yönetim Portalı'na taşıdıktan sonra kuruluşunuzun.
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842162"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954234"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Sonra kuruluşunuzun Visual Studio abonelikleri Yönetim Portalı'na katılabilirsiniz geçirilir
 
@@ -24,9 +24,9 @@ Ancak, abonelikleri artık Visual Studio abonelikleri Yönetim Portalı olarak a
 
 Çeşitli senaryolardan biri, karşılaşabilirsiniz:
 
-1. [Birincil ilgili kişi ekleme işlemi tamamlanmadı. ](#Onboarding-not-completed-by-Primary-Contact) <sup>1</sup>
-2. [Birincil ilgili kişi ekleme tamamlandı, ancak bir yönetici olarak ekleyemiyor. Kimlik bilgilerinizi VLSC'de listelenen.](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [Birincil ilgili kişi ekleme tamamlandı, ancak bir yönetici olarak ekleyemiyor. Kimlik bilgilerinizi VLSC'de listelenen değil.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [Birincil ilgili kişi ekleme işlemi tamamlanmadı. ](#Onboarding-not-completed-by-Primary-Contact) <sup>1</sup> 
+2. [Birincil ilgili kişi ekleme tamamlandı, ancak bir yönetici olarak ekleyemiyor. Kimlik bilgilerinizi VLSC'de listelenen.](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [Birincil ilgili kişi ekleme tamamlandı, ancak bir yönetici olarak ekleyemiyor. Kimlik bilgilerinizi VLSC'de listelenen değil.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup> kişiyseniz veya bildirimler ilgili kişi ve onboarding işlemi tamamlanmadı, kuruluşunuz için bir senaryo adımları izlemeniz gerekir.
 
