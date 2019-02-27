@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: En iyi Visual Studio aboneliklerinizi dışında almayı öğrenin
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822169"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842669"
 ---
 # <a name="managing-subscriptions"></a>Abonelikleri Yönetme
 
@@ -91,19 +89,19 @@ Avantajlar sayfasında, kullanımdaki abonelik göze çarpacak şekilde mavi ren
 
 **Standart abonelikler**
 
-- Microsoft Store: aboneliğinizden satın aldıysanız [Microsoft Store](http://www.microsoft.com/store), bunu burada de yenileyebilirsiniz.
-- Toplu Lisans: şirketiniz abonelikler Toplu Lisanslama aracılığıyla satın aldıysa, aboneliklerinizi yenilemek için bir satıcı yöneticinize başvurmanız gerekir.
+- Microsoft Store: Aboneliğinizden satın aldıysanız [Microsoft Store](http://www.microsoft.com/store), bunu burada de yenileyebilirsiniz.
+- Toplu Lisans:  Yöneticiniz, şirketinizin abonelikler Toplu Lisanslama aracılığıyla satın aldıysa, aboneliklerinizi yenilemek için bir satıcı başvurmanız gerekir.
 
-**Bulut abonelikleri:** bulut abonelikleri yenilenmesi gerekmez. Aboneliğinizi Ücretli sürece etkin kalır.
+**Bulut abonelikleri:**  Bulut abonelikleri yenilenmesi gerek yoktur. Aboneliğinizi Ücretli sürece etkin kalır.
 
-**Programları ile edinilen abonelikler:** aboneliğinizi bir program aracılığıyla alırsanız, aboneliğinizi programa katılımınızı bağlıdır. Program kişilerinize ek bilgi için lütfen ulaşın.
+**Abonelikleri, programları ile edinilen:**  Aboneliğinizi bir program aracılığıyla alırsanız, aboneliğinizi programa katılımınızı bağlıdır. Program kişilerinize ek bilgi için lütfen ulaşın.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft İş Ortağı Ağı](https://partner.microsoft.com/en-us)
 - [Microsoft Sertifikalı Eğitmen](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials'a:** Dev Essentials'a ücretsiz bir programdır ve üyeliklerini süresi dolmaz.
+**Visual Studio Dev Essentials:**  Dev Essentials'a ücretsiz bir programdır ve üyeliklerini süresinin sona ermediğinden.
 
 ## <a name="transferring-subscriptions"></a>Abonelik aktarma
 
@@ -147,9 +145,9 @@ Alternatif hesap ekledikten sonra güncelleştirme veya tıklayarak dilediğiniz
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>S: ne kadar süreyle Aboneliğimi yenilememeyi, Microsoft benim verilerimi korumak?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>S: Ne kadar süreyle Aboneliğimi Yenile değil, Microsoft benim verilerimi korumak?
 
-Y: satın alma kanal yapılandırmanıza bağlı olarak, Microsoft müşteri verileri için farklı süreler tutar.
+Y: Satın alma kanal bağlı olarak, Microsoft müşteri verileri için farklı süreler tutar.
 
 | Kanal                                                | Süre (gün) |
 |--------------------------------------------------------|-----------------|

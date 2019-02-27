@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b35d09faab659d67f5534f3734172707cb7acd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700425"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843600"
 ---
 # <a name="save-data-in-project-files"></a>Proje dosyalarında verileri kaydetme
 Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetilen paket Framework (MPF), bu görevi gerçekleştirmek için iki arabirim sağlar:
@@ -206,7 +206,7 @@ Proje alt kaydedebilir ve proje dosyasındaki alt özgü verileri alma. Yönetil
     ```
 
 > [!NOTE]
->  Bu konuda sağlanan tüm kod örnekleri daha büyük bir örneğin bölümlerdir [VSSDK örnekleri](http://aka.ms/vs2015sdksamples).
+>  Bu konuda sağlanan tüm kod örnekleri daha büyük bir örneğin bölümlerdir [VSSDK örnekleri](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [MSBuild proje dosyasında verileri kalıcı hale getirmenize](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

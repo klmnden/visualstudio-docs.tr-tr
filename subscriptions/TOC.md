@@ -81,7 +81,7 @@
 #### [MPN için Abonelikleri Yönetme](manage-mpn-subscriptions.md)
 #### [Startup’lar için Microsoft](program-startups.md)
 ## Kaynaklar
-### [Visual Studio Lisanslama Teknik İncelemesi](http://aka.ms/vslicensing)
+### [Visual Studio Lisanslama Teknik İncelemesi](https://aka.ms/vslicensing)
 ### [Abonelik seçeneklerini ve fiyatlandırmalarını karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
 ### [Visual Studio IDE özelliklerini karşılaştırma](https://visualstudio.microsoft.com/vs/compare)
 ### [Visual Studio Yönetim ve Abonelik Desteği](https://visualstudio.microsoft.com/support/support-overview-vs)
