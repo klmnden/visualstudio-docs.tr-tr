@@ -38,8 +38,8 @@ ms.locfileid: "54758338"
 |Var ('`stringA`')|Değerlendiren `true` bir dosya veya klasör adıyla `stringA` bulunmaktadır.<br /><br /> Örneğin:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Basit alfasayısal dize veya Boole değerleri için tırnak gerekmez. Ancak, tek tırnak, boş değerler için gereklidir.|  
 |HasTrailingSlash('`stringA`')|Değerlendiren `true` ya da arkaya eğik belirtilen dizeyi içerip içermediğini (\\) veya İleri eğik çizgi (/) karakteri.<br /><br /> Örneğin:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Basit alfasayısal dize veya Boole değerleri için tırnak gerekmez. Ancak, tek tırnak, boş değerler için gereklidir.|  
 |!|Değerlendiren `true` işlenen değerlendirilirse `false`.|  
-|Ve|Değerlendiren `true` her iki işlenen de sonucunu verirse `true`.|  
-|Veya|Değerlendiren `true` en az bir işlenen değerlendirilirse `true`.|  
+|And|Değerlendiren `true` her iki işlenen de sonucunu verirse `true`.|  
+|Or|Değerlendiren `true` en az bir işlenen değerlendirilirse `true`.|  
 |()|Değerlendiren mekanizması gruplandırma `true` ifadeler içinde yer alan sonucunu verirse `true`.|  
 |$if$ ( %expression% ), $else$, $endif$|Denetler olup belirtilen `%expression%` geçirilen özel bir şablon parametresinin dize değeri eşler. Varsa `$if$` değerlendirilen koşul `true`, kendi deyimleri sonra çalışır; Aksi halde, `$else$` koşul denetlenir. Varsa `$else$` koşul `true`, kendi deyimleri sonra çalışır; Aksi halde, `$endif$` koşul ifade değerlendirme sona erer.<br /><br /> Kullanım örnekleri için bkz: [Visual Studio Proje/öğe şablon parametre mantıksal](http://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|  
   
