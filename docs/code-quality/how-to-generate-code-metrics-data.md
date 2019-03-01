@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8aa9a1f369b228b7e1c68a12381bf52d692173
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909212"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007364"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod ölçümleri verileri üretme
 
@@ -25,6 +25,8 @@ Kod ölçümleri sonuçları bir veya daha fazla proje veya bütün bir çözüm
 Ayrıca, yükleyebileceğiniz bir [NuGet paketini](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) dört kod ölçümlerini içeren [Çözümleyicisi](roslyn-analyzers-overview.md) kuralları: CA1501, CA1502, CA1505 ve CA1506. Bu kurallar varsayılan olarak devre dışıdır, ancak bunları etkinleştirebilirsiniz **Çözüm Gezgini** veya bir [kural kümesi](using-rule-sets-to-group-code-analysis-rules.md) dosya.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE kod ölçümleri
+
+Bir veya tüm açık projeleriniz için kod ölçümleri kullanarak IDE'de oluşturma **Çözümle** > **kod ölçümlerini Hesapla** menüsü.
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Bütün bir çözüm için kod ölçümleri sonuçları oluşturma
 
@@ -45,6 +47,16 @@ Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görünt�
 1. Menü çubuğundan seçin **Çözümle** > **kod ölçümlerini Hesapla** > **seçili projeleri için**.
 
 Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görüntülenir. Sonuçları ayrıntılarını görüntülemek için ağaç genişletin **hiyerarşi**.
+
+::: moniker range="vs-2017"
+
+> [!NOTE]
+> **Kod ölçümlerini Hesapla** komutu, .NET Core ve .NET Standard projeleri için çalışmaz. .NET Core veya .NET Standard projesi için kod ölçümlerini hesapla için şunları yapabilirsiniz:
+>
+> - kod ölçümleri hesaplayın [komut satırı](#command-line-code-metrics) yerine
+> - Visual Studio 2019 için yükseltme
+
+::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>Komut satırı kod ölçümleri
 

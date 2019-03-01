@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 85e1341d80c0f81474f748a47db19de1fde50b1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6bed8a6bc910b1a6878ccc089575abc624e6778f
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335550"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007338"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -105,4 +105,4 @@ Daha fazla açıklama için şu makalelere göz atın:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Proje geçiş ve yükseltme reference for Visual Studio 2019 Önizleme](port-migrate-upgrade-visual-studio-projects-2019.md)
+[Visual Studio 2019 için proje geçiş ve yükseltme başvurusu](port-migrate-upgrade-visual-studio-projects-2019.md)

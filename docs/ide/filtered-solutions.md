@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952924"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007182"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio'da filtrelenmiş çözümleri
 
-**Yeni Visual Studio 2019 Önizleme 1**
+**Visual Studio 2019'te yeni eklendi**
 
-Genellikle büyük geliştirme takımları ile çok sayıda proje tek büyük bir çözümde kullanarak işbirliği yapın. Ancak, bireysel geliştiriciler genellikle bu projeler küçük bir kısmı üzerinde çalışır. Büyük çözümlerde açılırken performansını geliştirmek için Visual Studio 2019 Önizleme 1 tanıtır *çözüm filtreleme*. Çözüm filtreleme yalnızca yüklenen seçmeli projeleriyle bir çözüm açın sağlar. Bir alt kümesini bir çözümde proje yüklemeyi çözüm yükü, yapı ve test çalışma zamanı azaltır ve etkinleştirir gözden geçirme daha odaklı.
+Genellikle büyük geliştirme takımları ile çok sayıda proje tek büyük bir çözümde kullanarak işbirliği yapın. Ancak, bireysel geliştiriciler genellikle bu projeler küçük bir kısmı üzerinde çalışır. Büyük çözümlerde açılırken performansını geliştirmek için Visual Studio 2019 tanıtır *çözüm filtreleme*. Çözüm filtreleme yalnızca yüklenen seçmeli projeleriyle bir çözüm açın sağlar. Bir alt kümesini bir çözümde proje yüklemeyi çözüm yükü, yapı ve test çalışma zamanı azaltır ve etkinleştirir gözden geçirme daha odaklı.
 
 Aşağıdaki özellikler mevcuttur:
 

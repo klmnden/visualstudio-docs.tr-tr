@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7a44a46f1e3b03d5b2f583f0e480089d56295950
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946281"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007260"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer başvurusu
 
@@ -82,7 +82,7 @@ Bkz: [Ekle/görünüm dosya ve klasörleri](/azure/devops/repos/tfvc/add-files-s
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Yeni bir [iş öğelerini deneyimi](/azure/devops/boards/work-items/set-work-item-experience-vs) Visual Studio 2019 Önizleme 1. Visual Studio 2019 Preview 1'de iş öğelerini görüntüleme hakkında daha fazla bilgi için bkz: [görünümü ve iş öğelerini eklemek](/azure/devops/boards/work-items/view-add-work-items).
+> Yeni bir [iş öğelerini deneyimi](/azure/devops/boards/work-items/set-work-item-experience-vs) Visual Studio 2019 içinde. Visual Studio 2019 içinde iş öğelerini görüntüleme hakkında daha fazla bilgi için bkz: [görünümü ve iş öğelerini eklemek](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

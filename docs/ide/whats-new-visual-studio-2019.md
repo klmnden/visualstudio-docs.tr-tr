@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,19 +14,19 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e73dd3b39616d9c1840db3ea26feb518a97e6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 5fdde6a34d3985c0e77cc9e84c58618a093ca365
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954419"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007286"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
 **İçin güncelleştirilmiş [Sürüm Adayı (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[RC'yi indirin](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[RC'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 Visual Studio 2019 Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.<br/><br/>
 
@@ -39,7 +39,7 @@ Visual Studio sunmak olan, üst düzey bir özeti aşağıda verilmiştir:
 * **[Sürekli yenilik](#continuous-innovation)**. Akıllı, bulut destekli desteğiyle akıllı kod.
 
 > [!NOTE]
-> Yeni özellikler ve işlevler Visual Studio 2019 rc'de tam listesi için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes/).
+> Yeni özellikleri ve işlevleri Visual Studio 2019 tam listesi için bkz: [RC sürüm notları](/visualstudio/releases/2019/release-notes/) ve [Preview 4 sürüm notları](/visualstudio/releases/2019/release-notes-preview/). Hem bu yeni sürümleri hakkında daha fazla bilgi için bkz. [Visual Studio 2019 Sürüm Adayı sunuldu](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/) blog gönderisi.
 
 ## <a name="personal-and-team-productivity"></a>Kişisel ve takım üretkenliği
 

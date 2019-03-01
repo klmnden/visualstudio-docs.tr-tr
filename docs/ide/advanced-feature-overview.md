@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 48dc5aad18aba1537a801081bd45e2cfd97fcfd2
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317841"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007351"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017'in özellikleri
 
@@ -127,4 +127,4 @@ Visual Studio'yu genişletme hakkında daha fazla bilgi için bkz: [Visual Studi
 
 - [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017'deki yenilikler](../ide/whats-new-visual-studio-2017.md)
-- [Visual Studio 2019 Preview'daki yenilikler](../ide/whats-new-visual-studio-2019.md)
+- [Visual Studio 2019 yenilikler](../ide/whats-new-visual-studio-2019.md)
