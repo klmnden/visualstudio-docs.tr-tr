@@ -7,18 +7,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d4a5b28686b2af356d1247bf9690708739fea8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 82f42ba3c984d53952bed2396ca1218883977204
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907874"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222564"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ kurallarını belirtmek için kural kümeleri kullanma
 
 Visual Studio'da oluşturma ve değiştirme özel *kural kümesi* Kod Analizi ile ilgili belirli proje gereksinimlerini karşılamak için. Varsayılan kural kümesi içinde depolanan `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 sürüm 15.7** özel kural kümeleri kullanarak herhangi bir metin düzenleyicisi oluşturun ve bunları ne yapı sistemi kullandığınızdan bağımsız olarak komut satırı derlemeleri de uygulayabilirsiniz. Daha fazla bilgi için [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 sürüm 15.7 ve üzeri** özel kural kümeleri kullanarak herhangi bir metin düzenleyicisi oluşturun ve bunları ne yapı sistemi kullandığınızdan bağımsız olarak komut satırı derlemeleri de uygulayabilirsiniz. Daha fazla bilgi için [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Visual Studio'da bir özel C++ kural oluşturmak için C/C++ proje Visual Studio IDE'de açık olması gerekir. Ardından bir standart bir kural kümesi kural kümesi Düzenleyicisi'nde açın ve ardından ekleyin veya belirli kuralları kaldırın ve isteğe bağlı olarak Kod Analizi kural ihlal belirlediğinde, gerçekleşen eylemi değiştirebilirsiniz.
 

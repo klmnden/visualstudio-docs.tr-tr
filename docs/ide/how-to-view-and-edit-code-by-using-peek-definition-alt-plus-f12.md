@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924456"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223604"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Nasıl yapılır: Görüntüleme ve Özet tanım (Alt + F12) kullanarak kod düzenleme
 
@@ -24,7 +24,7 @@ Kullanabileceğiniz **Özet tanım** C#, Visual Basic ve C++ koduna sahip. Visua
 
 ### <a name="to-open-a-peek-definition-window"></a>Bir Özet Tanım penceresi açmak için
 
-1. Seçerek bir tanıma göz atma **Özet tanımı** için keşfetmek istediğiniz bir türü veya sağ tıklama menüsünde. Seçeneği etkinleştirilirse, Visual Studio 2017 sürüm 15.4 ve üzeri, ayrıca fare tuşuna basarak kullanarak bir Özet tanım **Ctrl** (veya başka bir değiştirici) ve üye adına tıklayarak. Veya, klavyeden basın **Alt**+**F12**.
+1. Seçerek bir tanıma göz atma **Özet tanımı** için keşfetmek istediğiniz bir türü veya sağ tıklama menüsünde. Seçeneği etkinleştirilirse, fare tuşuna basarak kullanarak bir tanımı ayrıca Özet **Ctrl** (veya başka bir değiştirici) ve üye adına tıklayarak. Veya, klavyeden basın **Alt**+**F12**.
 
      Bu resimde **Özet tanım** adlı bir yöntem için pencere `Print()`:
 

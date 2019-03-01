@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e420ed36168e45e067a78a1118b2199981aff3eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927574"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223370"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio için klavye kısayolları
 
@@ -72,7 +72,7 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 
 ##  <a name="BKMK_CodeEditor"></a> Kod Düzenleyicisi
 
-|Komut|Kısayol|Sürüm kullanılabilirlik|
+|Komut|Kısayol|Tanıtılan olduğunda|
 |-|-|-|
 |Tümüne Git|**CTRL**+**T**|
 |Son kullanılan dosyalar için Git|**CTRL**+**T**,**R**|

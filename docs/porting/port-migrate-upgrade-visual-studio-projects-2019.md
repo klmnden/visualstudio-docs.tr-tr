@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: ed1d6ef42ebe0e9b9fd39f8f6da0d18ed2f35832
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 628f9210568298d7779a494002fe3c599acb45ff
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007325"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223214"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019"></a>Visual Studio 2019 için proje geçiş ve yükseltme başvurusu
 
@@ -76,7 +76,7 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Laboratuvar Yönetimi | Microsoft Test Yöneticisi ya da Visual Studio 2010 SP1'i kullanabilirsiniz ve daha sonra herhangi bir bu sürümüyle oluşturduğunuz ortamları açabilirsiniz. Ancak, ortamları oluşturmadan önce Microsoft Test Yöneticisi'nin sürümü Team Foundation Server sürümü için Visual Studio 2010 SP1 eşleşmelidir. |
 | Apache Cordova için Visual Studio Araçları | Apache Cordova için destek Visual Studio 2019 kaldırıldı. İçinde Visual Studio 2019 eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur.<br/><br/>(Cordova en son sürümü için destek sunar) Visual Studio Code uzantısı için Cordova araçları kullanmanız veya Visual Studio 2017'yi kullanarak devam edebilirsiniz. |
-| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. İçinde Visual Studio 2019 eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. İçinde Visual Studio 2019 eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Bu proje, Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 ve Visual Studio 2012 ' açabilirsiniz. |
 | Windows Presentation Foundation | Bu proje, Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 ve Visual Studio 2010 SP1 içinde açabilirsiniz. |
 | Windows Phone uygulamaları | Projeleri Windows Phone için Visual Studio 2019 içinde desteklenmez. <br/><br/>Windows Phone 8.x uygulamaları korumak için Visual Studio 2015'i kullanın. Windows Phone 7.x projelerini korumak için Visual Studio 2012 kullanın. |

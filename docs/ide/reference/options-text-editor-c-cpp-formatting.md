@@ -16,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645491"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223227"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Seçenekler, Metin Düzenleyici, C/C++, Biçimlendirme
 
 C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nın varsayılan davranışını değiştirmek için bu özellik sayfalarını kullanın.
 
-[Biçimlendirme C++ özellik sayfaları](media/cpp-formatting.png)
+![Biçimlendirme C++ özellik sayfaları](media/cpp-formatting.png)
 
- Bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, **metin düzenleyici**, genişletme **C/C++** ve ardından **biçimlendirme** .
+Bu sayfaya erişmek için **seçenekleri** iletişim kutusunda, sol bölmede, **metin düzenleyici**, genişletme **C/C++** ve ardından **biçimlendirme** .
 
 > [!NOTE]
 > Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
@@ -38,20 +38,31 @@ C veya C++ ortamında programlama yaparken Kod Düzenleyicisi'nın varsayılan d
 
 Bu sayfa, siz yazarken deyimleri ve blokları biçimlendirme seçeneği içerir.
 
-**Visual Studio 2017 sürüm 15.7 ve üzeri**: Sayfa desteği için yapılandırma seçeneklerini de sahip [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) sürüm 5.0. ClangFormat, stil ve kodunuzu .clang-format veya _clang-format dosyasında yapılandırılabilir kurallar kümesi temel biçimlendirmek kolay bir yardımcı programdır.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 sürüm 15.7 ve üzeri**:
+
+::: moniker-end
+
+Sayfa desteği için yapılandırma seçeneklerini de sahip [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) sürüm 5.0. ClangFormat, stil ve kodunuzu .clang-format veya _clang-format dosyasında yapılandırılabilir kurallar kümesi temel biçimlendirmek kolay bir yardımcı programdır.
 
 ### <a name="configuring-clangformat-options"></a>ClangFormat seçeneklerini yapılandırma
 
-Visual Studio 2017 sürüm 15.7 ve üzeri, ClangFormat desteği varsayılan olarak etkindir. Tüm projeleriniz uygulamak için bu ortak biçimlendirme kuralları hangisinin seçebilirsiniz: LLVM, Google, Chromium, Mozilla veya WebKit. Bir özel biçim tanımını .clang-format veya _clang-format dosyası da oluşturabilirsiniz. Bir proje klasöründe böyle bir dosya varsa, Visual Studio tüm kaynak kodu dosyaları bu klasörde ve alt klasörlerinde biçimlendirmek için kullanır.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 sürüm 15.7 ve üzeri**:
+
+::: moniker-end
+
+ClangFormat desteği, varsayılan olarak etkindir. Tüm projeleriniz uygulamak için bu ortak biçimlendirme kuralları hangisinin seçebilirsiniz: LLVM, Google, Chromium, Mozilla veya WebKit. Bir özel biçim tanımını .clang-format veya _clang-format dosyası da oluşturabilirsiniz. Bir proje klasöründe böyle bir dosya varsa, Visual Studio tüm kaynak kodu dosyaları bu klasörde ve alt klasörlerinde biçimlendirmek için kullanır.
 
 Varsayılan olarak, Visual Studio arka planda çalıştırır clangformat.exe yazarken biçimlendirme uygular. Çağrılan biçimlendirme komutları çalıştırmak için yalnızca el ile belirtebilirsiniz **belgeyi Biçimlendir (Ctrl + K, Ctrl + D)** veya **seçimi Biçimlendir (Ctrl + K, Ctrl + F)**.
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Yeni satırlar, girinti aralığı sarmalama sayfaları
 
 Bu sayfalar, çeşitli biçimlendirme özelleştirmeleri etkinleştirir, ancak ClangFormat etkinse, göz ardı edilir.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Genel, Ortam, Seçenekler İletişim Kutusu](../../ide/reference/general-environment-options-dialog-box.md)
 - [IntelliSense Kullanma](../../ide/using-intellisense.md)

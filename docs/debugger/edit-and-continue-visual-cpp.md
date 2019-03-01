@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695004"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222369"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C++)
 Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklenen kod değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md) Düzenle ve devam et sınırlamaları hakkında bilgi için.
 
-Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla bilgi için bkz. [C++ Düzenle ve devam et Visual Studio 2015 güncelleştirme 3'te](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla bilgi için bkz. [C++ Düzenle ve devam et Visual Studio 2015 güncelleştirme 3'te](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](/cpp/build/reference/zo-enhance-optimized-debugging) Visual Studio 2013 güncelleştirme 3'te kullanılmaya başlanan derleyici seçeneği olmadan ikili dosyaları derlenmiş için bu ek bilgiler için .pdb (simge) dosyaları ekler [/Od (devre dışı bırak (Hata Ayıkla)) ](https://msdn.microsoft.com/library/aafb762y.aspx) seçeneği.
 
@@ -37,7 +37,7 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
  Geçerli hata ayıklama oturumu sırasında uygulanan istemediğiniz kod düzenlemeler yapmasını durumunda Düzenle ve devam et otomatik çağrılmasını devre dışı bırakmak isteyebilirsiniz. Ayrıca otomatik Düzenle ve devam et yeniden etkinleştirebilirsiniz.
 
 > [!IMPORTANT]
-> Gerekli yapılandırma ayarlarını ve diğer özellik uyumluluğu hakkında bilgi için [C++ Düzenle ve devam et Visual Studio 2015 güncelleştirme 3'te] konusuna bakın (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Gerekli yapılandırma ayarlarını ve diğer özellik uyumluluğu hakkında bilgi için bkz. [C++ Düzenle ve devam et Visual Studio 2015 güncelleştirme 3'te](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
 1. Hata ayıklama oturumunda varsa, hata ayıklamayı Durdur (**Shift + F5 tuşlarına basarak**).
 

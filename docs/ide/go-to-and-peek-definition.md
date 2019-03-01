@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84eda800cec594eaad390dc973152e094620b319
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908816"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222928"
 ---
 # <a name="view-type-and-member-definitions"></a>Görünüm türü ve üye tanımları
 
@@ -30,17 +30,19 @@ Geliştiriciler genellikle kendi kodlarında türler veya sınıf üyeleri kulla
 
 ### <a name="ctrl-click-go-to-definition"></a>CTRL tuşunu tanımına Git
 
-Visual Studio 2017 sürüm 15.4, hızlı erişim için fare kullanıcılar için daha kolay bir yolu yoktur **tanıma**. Semboller hale tıklanabilir bastığınızda **Ctrl** ve türe veya üyeye üzerine gelin. Sembol tanımını hızlıca gezinmek için basın **Ctrl** anahtar ve üzerine tıklayın. Bu kadar kolay!
+**CTRL**+**tıklayın** fare kullanıcılar hızlı erişim için bir kısayol **tanıma**. Semboller hale tıklanabilir bastığınızda **Ctrl** ve türe veya üyeye üzerine gelin. Sembol tanımını hızlıca gezinmek için basın **Ctrl** anahtar ve üzerine tıklayın. Bu kadar kolay!
 
 ![Fare tıklatın tanımı animasyon Git](../ide/media/click_gotodef.gif)
 
-Fare tıklatın değiştirici tuş değiştirebilirsiniz **tanıma** giderek **Araçları** > **seçenekleri** > **metin düzenleyicisi**   >  **Genel**ve seçim **Alt** veya **Ctrl + Alt** gelen **değiştiricisi anahtar kullan**açılır. Fare tıklatın de devre dışı bırakabilirsiniz **tanıma** kaldırarak **tanıma gerçekleştirmek için fare tıklamasını etkinleştir** onay kutusu.
+Fare tıklatın değiştirici tuş değiştirebilirsiniz **tanıma** giderek **Araçları** > **seçenekleri** > **metin düzenleyicisi**   >  **Genel**ve seçim **Alt** veya **Ctrl**+**Alt** gelen **değiştiricisi anahtar kullan** açılır. Fare tıklatın de devre dışı bırakabilirsiniz **tanıma** kaldırarak **tanıma gerçekleştirmek için fare tıklamasını etkinleştir** onay kutusu.
 
 ![Fare tıklatın etkinleştirme tanımına Git](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>Tanıma göz at
 
-**Özet tanım** özellik Düzenleyicisi'nde geçerli konumunuzu çıkmadan bir tür tanımı Önizleme olanak sağlar. Klavye kullanıcısıysanız yere tuşuna basın ve tür veya üye adı içindeki metin imleci yerleştirmeniz **Alt + F12**. Fare kullanıcısıysanız seçebileceğiniz **Özet tanım** sağ tıklatma menüsünden. Visual Studio 2017 sürüm 15.4 ve üzeri, yoktur göz atma görünümünde bir tanımı için yeni bir yol fareyi kullanarak. İlk olarak, Git **Araçları** > **seçenekleri** > **metin düzenleyici** > **genel**. Seçeneğini **tanımı Özet Görünümü'nde açın** tıklatıp **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
+**Özet tanım** özellik Düzenleyicisi'nde geçerli konumunuzu çıkmadan bir tür tanımı Önizleme olanak sağlar. Klavye kullanıcısıysanız yere tuşuna basın ve tür veya üye adı içindeki metin imleci yerleştirmeniz **Alt + F12**. Fare kullanıcısıysanız seçebileceğiniz **Özet tanım** sağ tıklatma menüsünden.
+
+Etkinleştirmek için **Ctrl**+**tıklayın** işlevselliği, Git **Araçları** > **seçenekleri**  >   **Metin düzenleyici** > **genel**. Seçeneğini **tanımı Özet Görünümü'nde açın** tıklatıp **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
 
 ![Fare tıklatın gözlem tanım seçeneği ayarlama](../ide/media/editor_options_peek_view.png)
 
@@ -48,7 +50,7 @@ Daha sonra basın **Ctrl** (veya hangi değiştirici tuşa seçili olduğundan *
 
 ![Özet tanım animasyon](../ide/media/peek_definition.gif)
 
-Başka bir açılan pencere tanımından Özet varsa daire ve açılan menüsü görünen okları kullanarak gidebilirsiniz bir içerik haritası yol başlar.
+Başka bir açılan pencere tanımından Özet, daire ve açılan menüsü görünen okları kullanarak gezinebileceğiniz bir içerik haritası yol başlatın.
 
 Daha fazla bilgi için [nasıl yapılır: Görüntüleme ve Özet tanım (Alt + F12) kullanarak kod düzenleme](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
@@ -67,7 +69,7 @@ Tanımı görüntülediğinizde C# türleri veya üyeleri kaynak kodu kullanıla
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Kaynak koda dönüştürülmüş kaynak tanımları yerine meta verileri görüntüleme (C#)
 
-Yeni Visual Studio 2017 sürüm 15.6, bir seçenek tanımı görüntülediğinizde, kaynak koda dönüştürülmüş kaynak kodu görmek için ayarlayabileceğiniz bir C# tür veya üye, kaynak kodu kullanılamaz. Bu özelliği etkinleştirmek için seçin **Araçları** > **seçenekleri** menü çubuğundan. Ardından, **metin düzenleyici** > **C#** > **Gelişmiş**seçip **kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir** .
+Ayarlayabileceğiniz bir seçenek tanımı görüntülediğinizde, kaynak koda dönüştürülmüş kaynak kodu görmek için bir C# tür veya üye, kaynak kodu kullanılamaz. Bu özelliği etkinleştirmek için seçin **Araçları** > **seçenekleri** menü çubuğundan. Ardından, **metin düzenleyici** > **C#** > **Gelişmiş**seçip **kaynak koda dönüştürülmüş kaynaklara gezintiyi etkinleştir** .
 
 ![Kaynak koda dönüştürülmüş tanımını görüntüleme](media/go-to-definition-decompiled-sources.png)
 

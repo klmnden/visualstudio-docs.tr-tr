@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af1caf11a871cee04d4baa4b2efc750e0603f626
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946083"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222865"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı izinleri ve Visual Studio
 
@@ -50,11 +50,25 @@ Visual Studio'yu yönetici olarak çalıştırmanız gerekir IDE açmak için ş
 > [!NOTE]
 > Bu yönergeler, Windows 10 için içindir. Bunlar diğer Windows sürümleri için benzerdir.
 
+::: moniker range="vs-2017"
+
 1. Açık **Başlat** menü ve Visual Studio 2017 gidin.
 
 1. Sağ tıklayın veya bağlam menüsünde **Visual Studio 2017**seçin **daha fazla** > **yönetici olarak çalıştır**.
 
    Visual Studio başladığında **(Yönetici)** başlık çubuğundaki ürün adının görünür.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Açık **Başlat** menü ve Visual Studio 2019 gidin.
+
+1. Sağ tıklayın veya bağlam menüsünde **Visual Studio 2019**seçin **daha fazla** > **yönetici olarak çalıştır**.
+
+   Visual Studio başladığında **(Yönetici)** başlık çubuğundaki ürün adının görünür.
+
+::: moniker-end
 
 Uygulama kısayolunu her zaman yönetim izinleriyle çalıştırmak için de değiştirebilirsiniz.
 

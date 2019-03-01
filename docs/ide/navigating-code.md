@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927613"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223539"
 ---
 # <a name="navigate-code"></a>Kod gidin
 
@@ -82,7 +82,7 @@ Gitmek için kullanılabilen aşağıdaki komutları sahip **Düzenle** menüsü
 
 - **Dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**F**): Çözüm belirtilen dosyaya gider.
 
-- **Son dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**R**): Çözümdeki belirtilirse, en son ziyaret edilen dosyası (Yeni Visual Studio 2017 sürüm 15,8) taşıyın.
+- **Son dosyaya gidin** (**Ctrl**+**1**, **Ctrl**+**R**): Çözümü belirtildiğinde, en son ziyaret edilen dosyasına taşıyın.
 
 - **Tür Git** (**Ctrl**+**1**, **Ctrl**+**T**): Çözümde belirtilen türe taşıyın.
 
@@ -105,7 +105,7 @@ Tanıma Git için seçilen öğenin açıklamasını alır. Daha fazla bilgi iç
 Giriş | İşlev
 ------------ | ---
 **Klavye** | Metin imlecinizi yere adını yazın ve ENTER tuşuna içinde **F12**
-**Fare** | Tür adına sağ tıklayıp **tanıma** veya basın **Ctrl** (Visual Studio 2017 sürüm 15.4 için yeni) tür adı'e tıklayın
+**Fare** | Tür adına sağ tıklayıp **tanıma** veya basın **Ctrl** ve tür adına tıklayın.
 
 ## <a name="peek-definition"></a>Tanıma göz at
 

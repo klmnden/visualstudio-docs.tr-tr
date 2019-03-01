@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923385"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223136"
 ---
 # <a name="code-style-preferences"></a>Kod stili tercihleri
 
@@ -38,11 +38,11 @@ Her öğe için ayarladığınız **tercih** ve **önem derecesi** açılan list
 
 ## <a name="format-document-command"></a>Biçim belgesi komutu
 
-Visual Studio 2017 sürüm 15,8 ve daha sonra yapılandırdığınız **belgeyi Biçimlendir** komut (**Düzenle** > **Gelişmiş**  >  **Belgeyi Biçimlendir**) ek kod temizleme bir dosya üzerinde gerçekleştirilecek gibi kaldırın ve kullanımları sıralama veya kod stili tercihleri uygulayın. İstediğiniz hangi ayarların tanımlayabilirsiniz **belgeyi Biçimlendir** uygulamak için [biçimlendirme seçenekleri sayfasında](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Yapılandırabileceğiniz **belgeyi Biçimlendir** komut (**Düzenle** > **Gelişmiş** > **belgeyi Biçimlendir**) için kullanımları Kaldır ve Sırala gibi bir dosya çubuğunda ek kod temizleme gerçekleştirebilir veya kod stili tercihleri uygulayın. İstediğiniz hangi ayarların tanımlayabilirsiniz **belgeyi Biçimlendir** uygulamak için [biçimlendirme seçenekleri sayfasında](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 Kod temizleme uyar yapılandırılan ayarları bir *.editorconfig* dosya veya bu kuralı veya bu kümesindeki dosya eksik **Araçları** > **seçenekleri**  >  **Metin düzenleyici**  >  **C#** > [**kod stili** veya **biçimlendirme**].
 
-Tetiklenen ilk kez **belgeyi Biçimlendir** komutu Visual Studio 2017'de bir sarı bir bilgi çubuğu kod temizleme ayarlarınızı yapılandırmak ister.
+Tetiklenen ilk kez **belgeyi Biçimlendir** komutu Visual Studio'da bir sarı bir bilgi çubuğu kod temizleme ayarlarınızı yapılandırmak ister.
 
 > [!TIP]
 > Yapılandırılan kuralları **hiçbiri** içinde bir *.editorconfig* dosya kodu temizleme katılmak yoktur, ancak ayrı ayrı aracılığıyla uygulanabilir **hızlı Eylemler ve yeniden düzenlemeler** menüsü.

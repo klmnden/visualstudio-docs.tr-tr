@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702726"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223149"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -24,7 +24,7 @@ Ortak klavye kısayolları hakkında daha fazla bilgi için bkz: [klavye ipuçla
 
 Aşağıdaki özellikleri kullanarak kod daha hızlı bir şekilde yazın.
 
-- **Kolaylık komutları**. Visual Studio, daha hızlı düzenleme genel görevleri gerçekleştirmenize yardımcı olmak için çeşitli komutlara içerir. Örneğin, **Visual Studio 2017 sürüm 15.6** ve daha sonra kolayca kopyalayıp yapıştırın kopyalayın ve imleci yeniden konumlandırmak zorunda kalmadan bir kod satırı çoğaltmak için bir komut seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca bir kolayca genişletin veya seçerek metin seçimi sözleşme **Düzenle** > **Gelişmiş** > **Seçimi Genişlet** veya **Düzenle** > **Gelişmiş** > **anlaşma seçimi**, veya basarak **Shift** + **Alt** + **=** veya **Shift**+**Alt** + **-** (kullanılabilir **Visual Studio 2017 sürüm 15.5** ve üzeri).
+- **Kolaylık komutları**. Visual Studio, daha hızlı düzenleme genel görevleri gerçekleştirmenize yardımcı olmak için çeşitli komutlara içerir. Örneğin, bir komutu kopyalayıp yapıştırın kopyalayın ve imleci yeniden konumlandırmak zorunda kalmadan bir kod satırı kolayca yinelenen seçebilirsiniz. Seçin **Düzenle** > **yinelenen** veya basın **Ctrl**+**E**,**V**. Ayrıca bir kolayca genişletin veya seçerek metin seçimi sözleşme **Düzenle** > **Gelişmiş** > **Seçimi Genişlet** veya **Düzenle** > **Gelişmiş** > **anlaşma seçimi**, veya basarak **Shift** + **Alt** + **=** veya **Shift**+**Alt** +  **-**.
 
 - **IntelliSense kullanın**. Düzenleyiciye kod girerken, gibi üyeleri listeleme, parametre bilgisi, hızlı bilgi, imza Yardım ve tam sözcük IntelliSense bilgisi görüntülenir. Bu özellikler, metnin benzer öğe eşleştirmesi destekler; Örneğin, listesi üyeleri için sonuçları listelerini sadece girdiğiniz karakterlerle başlayan girdileri olmakla kalmayıp herhangi bir yerde karakter bileşimini içeren girdileri içerir. Daha fazla bilgi için [kullanım IntelliSense](../ide/using-intellisense.md).
 
@@ -102,9 +102,19 @@ Hata ayıklama çok zaman kullanabilir, ancak aşağıdaki ipuçları yardımcı
 
 Başlat menüsünü ya da görev için sabitlerseniz Geliştirici komut istemi veya başka bir Visual Studio araç hızlı şekilde erişebilirsiniz.
 
-1. Windows Explorer'da Gözat `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Sağ tıklayın veya bağlam menüsünü **Geliştirici komut istemi**ve ardından **Başlangıç ekranına Sabitle** veya **görev çubuğuna Sabitle**.
+1. Windows Explorer'da Gözat *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Stuido*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Windows Explorer'da Gözat *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Stuido*.
+
+::: moniker-end
+
+2. Sağ tıklayın veya bağlam menüsünü **Geliştirici komut istemi**ve ardından **Başlangıç ekranına Sabitle** veya **görev çubuğuna Sabitle**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Dosyaları araç çubuklarını ve windows yönetme
 

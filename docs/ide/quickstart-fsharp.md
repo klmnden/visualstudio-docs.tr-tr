@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58f084e188f5c19319e37d3bad4fdf110d10376a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934672"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222301"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: İlk ASP.NET Core web hizmeti oluşturmak için Visual StudioF#
 
@@ -28,7 +28,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 İlk olarak, bir ASP.NET Core Web API projesi oluşturacaksınız. Proje türü şablonu dosyalarıyla bile herhangi bir şey ekledik önce işlevsel bir web hizmeti olarak oluşturan gelir!
 
-1. Visual Studio 2017'yi açın.
+1. Visual Studio'yu açın.
 
 2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 

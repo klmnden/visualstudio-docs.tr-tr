@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0bf684f351c5b384f2d4a525c6b7f64dfbce99
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954406"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223318"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -266,7 +266,7 @@ Tercih ettiğiniz geliştirme dilinizi&mdash;C#, Visual Basic, C++ veya JavaScri
 
 **15.5 yeni**: Visual Studio 2017 sürüm 15.5 Windows 10 Fall Creators Update SDK (10.0.16299.0) için en iyi destek sağlar. Windows 10 Fall Creators Update, UWP geliştiricileri için birçok iyileştirme de getirir. En önemli değişikliklerden bazıları şunlardır: 
 
-* **.NET Standard 2.0 desteği**<br/>Kolaylaştırılmış uygulama dağıtımı ek olarak, Windows 10 Fall Creators Update .NET Standard 2.0 desteği sağlamak için Windows 10 'un ilk sürümdür. Etkili bir şekilde [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) herhangi bir .NET platform uygulayabilirsiniz temel sınıf kitaplığı başvurusu uygulamasıdır. .NET Standard'ın üzerinde çalışmak üzere seçtikleri herhangi bir .NET platform arasında kod paylaşmak, .NET geliştiricileri için mümkün olduğu kadar kolay hale getirmek için hedeftir.
+* **.NET Standard 2.0 desteği**<br/>Kolaylaştırılmış uygulama dağıtımı ek olarak, Windows 10 Fall Creators Update .NET Standard 2.0 desteği sağlamak için Windows 10 'un ilk sürümdür. Etkili bir şekilde [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) herhangi bir .NET platform uygulayabilirsiniz temel sınıf kitaplığı başvurusu uygulamasıdır. .NET Standard'ın üzerinde çalışmak üzere seçtikleri herhangi bir .NET platform arasında kod paylaşmak, .NET geliştiricileri için mümkün olduğu kadar kolay hale getirmek için hedeftir.
 * **En iyi hem UWP ve Win32**<br/>Windows 10 platformu ile geliştirildi [Masaüstü köprüsü](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) kendi geçerli odak UWP, WPF, Windows Forms veya Xamarin olup Windows 10 tüm .NET geliştiricileri için daha iyi hale getirmek için. Yeni Uygulama paketleme projesi türü ile Visual Studio 2017 sürüm 15.5 UWP projeleri için gibi WPF veya Windows Forms projeleri için Windows uygulama paketleri oluşturabilirsiniz. Uygulamanızı paketleme sonra tüm Windows 10 uygulamasını dağıtım avantajlarından yararlanın ve iş ve eğitim için Microsoft Store (tüketici uygulamaları için) veya Microsoft Store aracılığıyla dağıtma seçeneğine sahipsiniz. Paketlenmiş uygulamalar masaüstünde hem tam UWP API yüzeyi hem de Win32 API'ları erişime sahip olduğundan, WPF ve Windows Forms uygulamalarınızla kademeli olarak UWP API'lerine ve Windows 10 özellikleri artık modernleştirmelisiniz. Ayrıca, UWP uygulamalarınızda tüm Win32 özellikleriyle masaüstünde vurgulamasında Win32 bileşenlerinizi içerebilir.
 
 UWP hakkında daha fazla bilgi için bkz: [Evrensel Windows Platformu (UWP) uygulamaları geliştirin](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) sayfası.

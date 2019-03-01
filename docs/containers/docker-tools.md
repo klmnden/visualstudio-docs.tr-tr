@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b98659e3aaec046de3963f3c217682695a8a81e2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 271411c8f3f9a14d11d92386b09a2624bfbe58ec
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914510"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222358"
 ---
-# <a name="quickstart-visual-studio-tools-for-docker"></a>Hızlı Başlangıç: Docker için Visual Studio Araçları
+# <a name="quickstart-docker-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da docker
 
 ::: moniker range="vs-2017"
 

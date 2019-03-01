@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722492"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223682"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Yalnızca kullanıcı kodunu yalnızca kendi kodum ile hata ayıklama
 
@@ -97,7 +97,7 @@ Kod adımlamaya davranışı için yalnızca kendi kodum C++'ta olması için bu
 - Belirtilen işlevleri  *\*.natjmc* dosyalar *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* klasör.
 
 > [!NOTE]
-> Kod adımlamaya desteği yalnızca kendi kodum, Visual Studio 15,8 Preview 3 veya sonraki sürümlerde MSVC derleyicileri kullanarak C++ kodu derlenmelidir ve /JMC derleyici anahtarı etkinleştirilmesi gerekir (varsayılan olarak etkindir). Ek ayrıntılar için bkz. [özelleştirme C++ çağrı yığını ve atlama davranışını kod](#BKMK_CPP_Customize_call_stack_behavior)) ve bu [blog gönderisi](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/). Daha eski bir derleyici kullanarak derlenen kod için *.natstepfilter* dosyalar yalnızca benim kodum bağımsız olan Adımlama, kodu özelleştirmek için tek yolu. Bkz: [özelleştirme C++ atlama davranışını](#BKMK_CPP_Customize_stepping_behavior).
+> Kod adımlamaya desteği yalnızca kendi kodum, Visual Studio 15,8 Preview 3 veya sonraki sürümlerde MSVC derleyicileri kullanarak C++ kodu derlenmelidir ve /JMC derleyici anahtarı etkinleştirilmesi gerekir (varsayılan olarak etkindir). Ek ayrıntılar için bkz. [özelleştirme C++ çağrı yığını ve atlama davranışını kod](#BKMK_CPP_Customize_call_stack_behavior)) ve bu [blog gönderisi](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Daha eski bir derleyici kullanarak derlenen kod için *.natstepfilter* dosyalar yalnızca benim kodum bağımsız olan Adımlama, kodu özelleştirmek için tek yolu. Bkz: [özelleştirme C++ atlama davranışını](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> C++ hata ayıklama sırasında:
 

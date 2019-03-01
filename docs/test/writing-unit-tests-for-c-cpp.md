@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926794"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223067"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio'da C/C++ için birim testleri yazma
 
@@ -30,11 +30,11 @@ Visual Studio bu C++ test çerçeveleri, gereken ek hiçbir yüklemeleriyle içe
 
 Yüklü çerçeveleri yanı sıra, Visual Studio içinde kullanmak istediğiniz her çerçeve için kendi test bağdaştırıcısı yazabilirsiniz. Birim testleriyle bir test bağdaştırıcısı tümleştirebilirsiniz **Test Gezgini** penceresi. Çeşitli üçüncü taraf bağdaştırıcıları bulunur [Visual Studio Market](https://marketplace.visualstudio.com). Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 sürüm 15.7 (Professional ve Enterprise)**
+**Visual Studio 2017 sürüm 15.7 ve üzeri (Professional ve Enterprise)**
 
 C++ birim testi projeleri desteği [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 sürüm 15.5**
+**Visual Studio 2017 sürüm 15.5 ve üzeri**
 
 - **Google Test bağdaştırıcısı** varsayılan bileşeni olarak eklenir **C++ ile masaüstü geliştirme** iş yükü. Bir çözüm ekleyebileceğiniz bir proje şablonu olan **Yeni Proje Ekle** ndeki çözüm düğümüne sağ tıklama menüsünde **Çözüm Gezgini**ve Seçenekler yoluyla yapılandırabileceğiniz **araçları**  >  **Seçenekleri**. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Google Test kullanmak](how-to-use-google-test-for-cpp.md).
 
@@ -117,7 +117,9 @@ Birim testi için ilgili en iyi yöntemler için bkz. [birim testi temel bilgile
 
 ## <a name="use-codelens"></a>CodeLens kullanın
 
-**Visual Studio 2017 sürüm 15.7 Professional ve Enterprise sürümleri yalnızca**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) hızlı bir şekilde kod düzenleyicisinden çıkmadan test birimi durumunu görmenizi sağlar. CodeLens, bir C++ birim testi projesi şu yollardan birinde için başlatabilirsiniz:
+**Visual Studio 2017 sürüm 15.7 ve üzeri (Professional ve Enterprise sürümleri yalnızca)**
+
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) hızlı bir şekilde kod düzenleyicisinden çıkmadan test birimi durumunu görmenizi sağlar. CodeLens, bir C++ birim testi projesi şu yollardan birinde için başlatabilirsiniz:
 
 - Düzenle ve test projenizi veya çözümünüzü oluşturun.
 - Proje veya çözümü yeniden oluşturun.
@@ -127,10 +129,10 @@ Sonra **CodeLens** başlatıldı, gördüğünüz durumu simgeleri her bir birim
 
 ![C++ CodeLens simgeler](media/cpp-test-codelens-icons.png)
 
- Daha fazla bilgi edinmek veya çalıştırmak veya birim testi hata ayıklama için simgesine tıklayın:
+Daha fazla bilgi edinmek veya çalıştırmak veya birim testi hata ayıklama için simgesine tıklayın:
 
 ![C++ CodeLens çalıştırma ve hata ayıklama](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Birim testi kod](unit-test-your-code.md)
+- [Birim testi kod](unit-test-your-code.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935582"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222093"
 ---
 # <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 
@@ -109,19 +109,29 @@ Bazı durumlarda bir öğe şablonunu el ile sıfırdan oluşturmak isteyebilirs
 
 1. Bir proje ve proje öğesi oluşturun.
 
-1. Proje öğesi şablon olarak kaydedilecek hazır olana kadar değiştirin.
+2. Proje öğesi şablon olarak kaydedilecek hazır olana kadar değiştirin.
 
-1. Burada parametre değiştirme, varsa herhangi bir yere gerçekleşmesi gerektiğini belirtmek için kod dosyasını değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir şablonda parametreleri değiştirin.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Burada parametre değiştirme, varsa herhangi bir yere gerçekleşmesi gerektiğini belirtmek için kod dosyasını değiştirin. Parametre değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir şablonda parametreleri değiştirin.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. Bir XML dosyası oluşturun ve ile kaydetmek bir *.vstemplate* proje öğesi dosyanız ile aynı dizinde dosya uzantısı.
+4. Bir XML dosyası oluşturun ve ile kaydetmek bir *.vstemplate* proje öğesi dosyanız ile aynı dizinde dosya uzantısı.
 
-1. Düzen *.vstemplate* öğesi şablon meta verilerini sağlamak için XML dosyası. Daha fazla bilgi için [Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md) ve önceki bölümdeki örnek.
+5. Düzen *.vstemplate* öğesi şablon meta verilerini sağlamak için XML dosyası. Daha fazla bilgi için [Şablon Şeması Başvurusu (genişletilebilirlik)](../extensibility/visual-studio-template-schema-reference.md) ve önceki bölümdeki örnek.
 
-1. Kaydet *.vstemplate* dosya ve kapatın.
+6. Kaydet *.vstemplate* dosya ve kapatın.
 
-1. İçinde **Windows Explorer**, şablonunuzda dahil etmek istediğiniz dosyaları seçin. Seçime sağ tıklayın ve seçin **göndermek** > **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyalar sıkıştırılmadan bir *.zip* dosya.
+7. İçinde **Windows Explorer**, şablonunuzda dahil etmek istediğiniz dosyaları seçin. Seçime sağ tıklayın ve seçin **göndermek** > **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyalar sıkıştırılmadan bir *.zip* dosya.
 
-1. Kopyalama *.zip* dosya ve kullanıcı öğe şablonu konuma yapıştırın. Visual Studio 2017'de varsayılan dizin, *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Daha fazla bilgi için [nasıl yapılır: Proje ve öğe şablonları bulma ve düzenleme](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Kopyalama *.zip* dosya ve kullanıcı öğe şablonu konuma yapıştırın. Varsayılan dizin, *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Daha fazla bilgi için [nasıl yapılır: Proje ve öğe şablonları bulma ve düzenleme](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Kopyalama *.zip* dosya ve kullanıcı öğe şablonu konuma yapıştırın. Varsayılan dizin, *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Daha fazla bilgi için [nasıl yapılır: Proje ve öğe şablonları bulma ve düzenleme](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

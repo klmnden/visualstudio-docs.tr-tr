@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f352e63a2fa848aec1547a54a489eac7dccd094d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa1f9196b8592b4ace30a9003f9920a8b5f66b33
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912397"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222197"
 ---
 # <a name="xslt-profiler"></a>XSLT Profil Oluşturucusu
 
@@ -24,7 +24,7 @@ XSLT Profiler Visual Studio'nun bir parçasıdır ve kullanılabilir **XML** men
 ![XSLT Profil Oluşturucusu](../xml-tools/media/profile-xslt-menu.png)
 
 > [!NOTE]
-> XSLT Profiler yalnızca Visual Studio 2017 Enterprise sürümünde kullanılabilir.
+> XSLT Profiler yalnızca Visual Studio Enterprise sürümünde kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

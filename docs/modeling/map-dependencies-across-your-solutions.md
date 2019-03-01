@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950233"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223708"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Kod haritaları ile bağımlılıkları eşleştirme
 
@@ -47,7 +47,7 @@ Bu diller, kod için bağımlılıkları eşleyebilirsiniz:
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Yükleme kod Haritası ve canlı bağımlılık doğrulama
 
-Visual Studio 2017'de bir kod haritası oluşturmak için önce yükleme **kod Haritası** ve **Canlı bağımlılık doğrulama** bileşenler:
+Visual Studio'da bir kod haritası oluşturmak için önce yükleme **kod Haritası** ve **Canlı bağımlılık doğrulama** bileşenler:
 
 1. Açık **Visual Studio yükleyicisi**. Windows Başlat menüsünden veya Visual Studio içinden seçerek açabilirsiniz **Araçları** > **araçları ve özellikleri Al**.
 

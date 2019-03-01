@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ef8cc5f1a203b5cb43b02a13f5b4e462f33892
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954101"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222993"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -41,9 +41,9 @@ Otomatik dosya geri yükleme devre dışı bırakırsanız, açmak istediğiniz 
 
 - Genel için **Git** işlevi, select **Düzenle** > **Git** > **tümüne Git**, veya tuşunabasın **CTRL**+**T**.
 
-- Visual Studio 2017 sürüm 15,8 ve daha sonra son bir çözüm kullanarak düzenleme konumu atlayabilirsiniz **Düzenle** > **Git** > **Git son Düzen konumuna**, veya basarak **Ctrl**+**Shift**+**geri**.
+- Bir çözüm kullanarak düzenleme konumu son atlama **Düzenle** > **Git** > **Git son Düzen konumuna**, veya basarak **Ctrl**  + **Shift**+**geri**.
 
-- Visual Studio 2017'de 15,8 ve sonraki sürümleri kullanın **son dosya** bir çözümde en son ziyaret edilen dosyaların listesini görmek için. Seçin **Düzenle** > **Git** > **son dosya**, veya basın **Ctrl** + **1**, **Ctrl**+**R**.
+- Kullanım **son dosya** bir çözümde en son ziyaret edilen dosyaların listesini görmek için. Seçin **Düzenle** > **Git** > **son dosya**, veya basın **Ctrl** + **1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Hata ayıklama seçeneklerini yapılandırma
 

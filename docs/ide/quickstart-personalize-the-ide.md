@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934074"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223045"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: Düzenleyici ve Visual Studio IDE'yi kişiselleştirme
 
@@ -22,7 +22,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ## <a name="set-the-color-theme"></a>Renk teması ayarlayabilir
 
-Visual Studio 2017'in kullanıcı arabirimi için varsayılan renk teması adlı **mavi**. Kendisine değiştirelim **koyu**.
+Visual Studio'nun kullanıcı arabirimi için varsayılan renk teması adlı **mavi**. Kendisine değiştirelim **koyu**.
 
 1. Menü çubuğunda, olan menüleri satırının gibi **dosya** ve **Düzenle**, seçin **Araçları** > **seçenekleri**.
 

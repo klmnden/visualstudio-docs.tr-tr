@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712534"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223637"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE’ye ilk bakış
 
@@ -114,5 +114,5 @@ Visual Studio kullanıcı arabirimi ile tanışın özelliklerinin birkaçı adr
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio IDE genel bakış](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017'in daha fazla özellik](../ide/advanced-feature-overview.md)
+- [Visual Studio'nun daha fazla özellik](../ide/advanced-feature-overview.md)
 - [Tema ve yazı tipi renkleri değiştirme](../ide/quickstart-personalize-the-ide.md)

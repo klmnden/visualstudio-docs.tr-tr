@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fd4d6366f9da97454f3b82c4f683f9e77dd447cf
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796653"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222525"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -26,7 +26,17 @@ Birçok Visual Studio ile C++ uygulamaları geliştirirken kullanabileceğiniz i
 
 Bu hızlı başlangıcı tamamlamak için C++ ile ilgili bilgi sahibi olmanız gerekmez, ancak bazı genel programlama ve hata ayıklama kavramlarını bilmelisiniz. Visual Studio belgeleri c++'ta nasıl programlama yapılacağı öğretmek değildir. İyi bir kılavuzdur c++ öğrenme kaynakları [başlama](https://isocpp.org/get-started) ISO C++ sitesinde sayfasında.
 
-Örneği takip etmek için bir kopyasını bir Visual Studio 2017 sürüm 15.3 veya üzeri ile ihtiyacınız **C++ ile masaüstü geliştirme** iş yükü yüklenmiş. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
+::: moniker range="vs-2017"
+
+Örneği takip etmek için Visual Studio 2017 ile bir kopyasına ihtiyacınız vardır. **C++ ile masaüstü geliştirme** iş yükü yüklenmiş. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Örneği takip etmek için Visual Studio 2019 ile bir kopyasına ihtiyacınız vardır. **C++ ile masaüstü geliştirme** iş yükü yüklenmiş. Yükleme hızlı bir kılavuz için bkz: [Visual Studio'da C++ yükleme desteği](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Konsol uygulaması oluşturma
 
