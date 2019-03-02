@@ -14,19 +14,19 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdde6a34d3985c0e77cc9e84c58618a093ca365
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007286"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223552"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
 **İçin güncelleştirilmiş [Sürüm Adayı (RC)](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[RC'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[RC'yi indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 Visual Studio 2019 Geliştirici üretkenliği ve işbirliğini en iyi duruma getirme yeni özelliklerin yanı sıra birçok genel iyileştirmeler içerir. Visual Studio'yu ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz geliştirme yaşam döngüsünün tüm yönleri için özelliklerinden yararlanmak mümkün olacaktır&mdash;Basitleştirilmiş proje oluşturma ve kod sistem durumu yönetimi team- ve açık kaynaklı işbirliğine dayalı iş akışları.<br/><br/>
 
@@ -110,7 +110,7 @@ Visual Studio 2019'ın Önizleme sürümüne yapı destekler [.NET Core 3](https
 Daha fazla bilgi için şu sayfalara bakın:
 
 * [.NET core 3 Önizleme 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) ve [.NET Core 3 Önizleme 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md) sürüm notları
-* [.NET Core 3 Önizleme 1 Duyurusu](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) ve [.NET Core 3 Önizleme 2 Duyurusu](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) blog gönderileri
+* [.NET Core 3 Önizleme 1 Duyurusu](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) ve [.NET Core 3 Önizleme 2 Duyurusu](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) blog gönderileri
 
 ## <a name="continuous-innovation"></a>Sürekli yenilik
 

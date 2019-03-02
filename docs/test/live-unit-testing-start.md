@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950311"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223786"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 
@@ -34,13 +34,13 @@ Visual Basic çözümü indirilebileceğini [MicrosoftDocs/visualstudio-docs](ht
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu öğretici, .NET Core 2.0 iş yüküyle Visual Studio 2017 Enterprise Edition Sürüm 15.3 yüklediğinizi gerektirir.
+Bu öğretici, .NET Core 2.0 iş yüküyle Visual Studio Enterprise Edition yüklediğinizi gerektirir.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Çözüm ve sınıf kitaplığı projesi oluşturma
 
 Adlı bir Visual Studio çözümü oluşturarak başlayın `UtilityLibraries` bir tek .NET Standard sınıf kitaplığı projesi oluşur `StringLibrary`. Yazabileceğiniz `StringLibrary` C# veya Visual Basic içinde.
 
-Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çözümü oluşturmak için Visual Studio 2017'yi açın ve aşağıdakileri yapın:
+Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çözümü oluşturmak için Visual Studio'yu açın ve aşağıdakileri yapın:
 
 1. Seçin **dosya** > **yeni** > **proje** en üst düzey Visual Studio menüsünde.
 

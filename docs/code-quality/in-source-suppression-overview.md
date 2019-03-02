@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: e85ca90dac30ad348dfeb91357ded153c1764a16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927821"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223097"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Kod çözümleme uyarılarını bastırma
 
@@ -33,7 +33,7 @@ C + +/ CLI, CA makroları\_BASTIR\_ileti veya CA\_genel\_öznitelik eklemek içi
 > Kaynak gizlemeleri yayın derlemelerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Ayrıca, kaynak gizleme işleme maliyetini nedeniyle, uygulamanızın performansı düşebilir.
 
 > [!NOTE]
-> Bir projeyi Visual Studio 2017'ye geçirirseniz, birden çok sayıda kod çözümleme uyarıları karşılaştığı. Bu uyarılar geldiğini [Roslyn Çözümleyicileri](roslyn-analyzers-overview.md). Uyarıları gidermek hazır değilseniz, bunların tümünün seçerek gizleyebilirsiniz **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır**.
+> Bir projeyi Visual Studio 2017 veya Visual Studio 2019 geçirirseniz, birden çok sayıda kod çözümleme uyarıları karşılaştığı. Bu uyarılar geldiğini [Roslyn Çözümleyicileri](roslyn-analyzers-overview.md). Uyarıları gidermek hazır değilseniz, bunların tümünün seçerek gizleyebilirsiniz **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır**.
 >
 > ![Kod Analizi çalıştırmak ve Visual Studio sorunları Gizle](media/suppress-active-issues.png)
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919722"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223747"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Nasıl yapılır: Projelere sınıf diyagramları ekleme
 
@@ -26,7 +26,7 @@ Birden fazla uygulama arasında kod paylaşma projelerinden sınıf diyagramlar�
 
 ## <a name="install-the-class-designer-component"></a>Sınıf Tasarımcısı bileşeni
 
-Visual Studio 2017 çalıştırıyorsanız ve yüklü olmayan **Sınıf Tasarımcısı** bileşeni yüklemek için aşağıdaki adımları izleyin.
+Yüklemediyseniz **Sınıf Tasarımcısı** bileşeni yüklemek için aşağıdaki adımları izleyin.
 
 1. Açık **Visual Studio yükleyicisi** Windows Başlat menüsünden veya seçerek **Araçları** > **araçları ve özellikleri Al** Visual Studio'da menü çubuğundan.
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 6bed8a6bc910b1a6878ccc089575abc624e6778f
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 1873cc68c33fca8912415a00e7c7dda9ded49695
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007338"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223669"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 için proje geçiş ve yükseltme başvurusu
 
@@ -69,7 +69,7 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Laboratuvar Yönetimi | Microsoft Test Yöneticisi ya da Visual Studio 2010 SP1'i kullanabilirsiniz ve daha sonra herhangi bir bu sürümüyle oluşturduğunuz ortamları açabilirsiniz. Ancak, ortamları oluşturmadan önce Microsoft Test Yöneticisi'nin sürümü Team Foundation Server sürümü için Visual Studio 2010 SP1 eşleşmelidir. |
 | Apache Cordova için Visual Studio Araçları | Projeleri Visual Studio 2017'de açılabilir ancak geriye dönük olarak uyumlu değildir. Visual Studio 2015'ten bir proje açıldığında, değişiklikler projenize izin istenir. Bu değişikliği yerine araç takımları kullanacak şekilde projeyi yükseltir bir `taco.json` Cordova kitaplığı, onun platformlar, kendi eklentiler ve düğüm/npm bağımlılıkları, sürüm oluşturmayı yönetmek için dosya. Bkz: [Geçiş Kılavuzu](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) daha fazla bilgi için. |
-| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2017'de eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). Ayrıca bkz: [planları Web sitesi ve web dağıtımı projeleri ilgili](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/). |
+| Web dağıtımı (wdproj) | Destek için Web dağıtımı projeleri kaldırıldı Visual Studio 2012'de yayımlama profili desteği olan'ın eklenmesiyle. Visual Studio 2017'de eşdeğeri olduğundan, bu gibi projeler için otomatik geçiş yolu yoktur. Bunun yerine, wdproj dosyasını bir metin düzenleyicisinde açın ve tüm özelleştirmeleri içine pubxml kopyala-yapıştır (Yayımlama profilini) dosya çubuğunda açıklandığı [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | Bu projeyi Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 ve Visual Studio 2012 açabilirsiniz |
 | Windows Presentation Foundation | Bu proje, Visual Studio 2013, Visual Studio 2012 ve Visual Studio 2010 SP1 içinde açabilirsiniz. |
 | Windows Store/telefon uygulamaları | Windows Store 8.1 ve 8.0 ve Windows Phone 8.1 ve 8.0 projeleri Visual Studio 2017'de desteklenmez. Bu uygulamaları korumak için Visual Studio 2015 kullanmaya devam edin. Windows Phone 7.x projelerini korumak için Visual Studio 2012 kullanın. |

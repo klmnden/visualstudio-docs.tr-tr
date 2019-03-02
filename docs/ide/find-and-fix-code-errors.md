@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928315"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223617"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu Visual Studio'da çalışma
 
@@ -74,7 +74,7 @@ Kod Çözümleyicileri çalışma zamanı hatalarına yol açabilir ortak kod so
 
 ### <a name="c-and-visual-basic-code-analysis"></a>C#ve Visual Basic kod analizi
 
-Visual Studio 2017'yi içeren yerleşik bir dizi [.NET derleyici platformu Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) , inceleyin C# ve yazarken Visual Basic kod yazın. Visual Studio uzantısı olarak veya bir NuGet paketi olarak ek Çözümleyicileri yükleyebilirsiniz. Kural ihlallerinin bulunamazsa, hem bir dalgalı ve sorunlu kod altında olarak kod düzenleyicisinde bildirilirken **hata listesi**.
+Visual Studio yerleşik bir kümesini içerir [.NET derleyici platformu Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md) , inceleyin C# ve yazarken Visual Basic kod yazın. Visual Studio uzantısı olarak veya bir NuGet paketi olarak ek Çözümleyicileri yükleyebilirsiniz. Kural ihlallerinin bulunamazsa, hem bir dalgalı ve sorunlu kod altında olarak kod düzenleyicisinde bildirilirken **hata listesi**.
 
 ### <a name="c-code-analysis"></a>C++ Kod Analizi
 

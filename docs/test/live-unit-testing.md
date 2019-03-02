@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3cf7b35edfad992096193a73f2b57d2c87292a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953641"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223721"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 ile Live Unit Testing
+# <a name="live-unit-testing-with-visual-studio"></a>Visual Studio ile Live Unit Testing
 
 Bir uygulama geliştiriyorsunuz gibi Live Unit Testing otomatik olarak tüm etkilenen birim testlerini arka planda çalıştırır ve sonuçları ve kod kapsamını Canlı gerçek zamanlı olarak Visual Studio IDE'de sunar. Kodunuzu değiştirmeniz gibi Live Unit Testing değişikliklerinizi mevcut testleri nasıl etkilenen geri bildirim sağlar ve bir veya daha fazla var olan testlerin kapsadığını olup yeni kod ekledik. Bu yavaşça, hata düzeltmeleri yapmak veya yeni özellikler eklenmesi gibi birim testleri yazma hatırlatır.
 
 > [!NOTE]
-> Live Unit Testing, .NET Core veya Enterprise Edition, Visual Studio 2017'de .NET Framework hedefleyen C# ve Visual Basic projeleri için kullanılabilir.
+> Live Unit Testing, kullanılabilir C# ve .NET Core veya Enterprise Edition, Visual Studio .NET Framework hedefleyen Visual Basic projeleri.
 
 Testleriniz için Live Unit Testing kullandığınızda, Live Unit Testing testlerinizi durumu hakkında veriler devam ettirir. Live Unit Testing, sınamaları çalışırken dinamik olarak kod değişikliklere yanıt olarak üstün performans sunmak kalıcı verileri kullanma olanağı sağlar.
 
@@ -51,7 +51,7 @@ Live Unit Testing aşağıdaki tabloda listelenen üç popüler birim test çer�
 </tr>
 </table>
 
-Eski varsa, MSTest başvuruyor test projeleri dayalı `Microsoft.VisualStudio.QualityTools.UnitTestFramework` ve yeni MSTest NuGet paketleri, Visual Studio 2017 sürüm 15.4 yükseltme için taşımak istediğiniz yok.
+Eski varsa, MSTest başvuruyor test projeleri dayalı `Microsoft.VisualStudio.QualityTools.UnitTestFramework` ve yeni MSTest NuGet paketleri, Visual Studio 2017 sürüm 15.4 veya sonraki bir sürümü yükseltme için taşımak istediğiniz yok.
 
 Bazı durumlarda, açıkça için Live Unit Testing çalışmaya sırayla çözümde proje tarafından başvurulan NuGet paketlerini geri yüklemek gerekebilir. Çözümün belirtik bir derleme yaparak ya da bunu yapabilirsiniz (seçin **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde) ya da çözüm (paketleri geri yükleniyor sağ tıklatın ve çözüm **NuGet paketlerini geri yükle**) Living birim testi etkinleştirmeden önce.
 
@@ -200,4 +200,4 @@ Live Unit Testing her bir yöntem hariç tutmak için de aşağıdaki öznitelik
 - [Kod test araçları](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing blogu](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Live Unit Testing SSS](live-unit-testing-faq.md)
-- [Kanal 9 videosu: Visual Studio 2017'de Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Kanal 9 videosu: Visual Studio Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

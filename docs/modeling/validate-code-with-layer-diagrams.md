@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317373"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223201"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -49,7 +49,7 @@ Kodun tasarımıyla çakışmamasını sağlamak için kodunuzu Visual Studio'da
 - Bir bağımlılık diyagram ile bir modelleme projesi olan çözüm. Bu bağımlılık diyagramı, doğrulamak istediğiniz C# veya Visual Basic projelerinde yapılara bağlı olmalıdır. Bkz: [kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Bağımlılık diyagramları Visual Studio 2017'de .NET Core projeleri için desteklenmiyor.
+> Bağımlılık diyagramları Visual Studio'da .NET Core projelerinde desteklenmez.
 
 Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -235,6 +235,6 @@ Aşağıdaki bölümde, bu hatalarda kullanılan sözdizimi belirtilmekte, bu ha
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio 2017'de canlı bağımlılık doğrulama](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio'da Canlı bağımlılık doğrulama](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)
 - [Video: Gerçek zamanlı mimari bağımlılıklarınızı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926053"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221885"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Birden fazla bilgisayara Visual Studio ayarları eşitleme
 
@@ -60,20 +60,30 @@ Ayarları, sürümleri ve yüklü Visual Studio sürümleri arasında eşitlenir
 
 ## <a name="side-by-side-synchronized-settings"></a>Yan yana eşitlenmiş ayarlar
 
-Visual Studio 2017 sürüm 15.3 ve daha sonra Visual Studio 2017 farklı yan yana yüklemeleri arasında araç penceresi düzeni gibi belirli ayarların paylaşılmaz. *CurrentSettings.vssettings* dosyası *%userprofile%\Documents\Visual Studio 2017\Settings* benzer bir özel yükleme klasöründeki *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+Araç penceresi düzeni gibi belirli ayarların, Visual Studio farklı yan yana yüklemeleri arasında paylaşılmaz. *CurrentSettings.vssettings* dosyası *%userprofile%\Documents\Visual Studio 2017\Settings* benzer bir özel yükleme klasöründeki *%localappdata%\ Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Yeni yükleme özgü ayarları kullanmak için yeni bir yüklemesidir yapın. Mevcut bir Visual Studio 2017 yüklemesini son güncelleştirmeye yükseltmesi gerçekleştirdiğinizde, mevcut paylaşılan konum kullanılır.
+> Yeni yükleme özgü ayarları kullanmak için yeni bir yüklemesidir yapın. Var olan bir Visual Studio yüklemesini yükselttiğinizde, mevcut paylaşılan konum kullanılır.
 
-Şu anda Visual Studio 2017'in yan yana yüklemelerine sahipseniz ve yeni yükleme için özel ayarlar dosya konumunu kullanmak istiyorsanız, aşağıdaki adımları izleyin:
+Şu anda, Visual Studio'nun yan yana yüklemelerine sahipseniz ve yeni yükleme için özel ayarlar dosya konumunu kullanmak istiyorsanız, aşağıdaki adımları izleyin:
 
 1. Visual Studio 2017 15.3 veya üzeri bir sürüme yükseltin.
 
-1. Kullanım **ayarları ayarları** tüm mevcut ayarlarınızı dışındaki bir konuma dışarı Aktarma Sihirbazı'nı *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* klasör.
+2. Kullanım **ayarları ayarları** tüm mevcut ayarlarınızı dışındaki bir konuma dışarı Aktarma Sihirbazı'nı *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx* klasör.
 
-1. Açık **VS 2017 için geliştirici komut istemi** yükseltilen Visual Studio yükleme ve çalıştırma `devenv /resetuserdata`.
+3. Açık **VS 2017 için geliştirici komut istemi** çalıştırıp `devenv /resetuserdata`.
 
 1. Visual Studio’yu başlatın ve dışarı aktarılan ayarlar dosyasından kayıtlı ayarları içeri aktarın.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Araç penceresi düzeni gibi belirli ayarların, Visual Studio farklı yan yana yüklemeleri arasında paylaşılmaz. *CurrentSettings.vssettings* dosyası *%userprofile%\Documents\Visual Studio 2019\Settings* benzer bir özel yükleme klasöründeki *%localappdata%\ Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

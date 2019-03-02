@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ff34e07ddef0a85a6fa45de94e0c3b872dc607
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11605b9477397bb217bc2799feb622cb9d5bce37
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913411"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223643"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio kurtarılamaz işlemi hatası
 
-Visual Studio 2017 birçok işlem dışı işlem live unit testing gibi gerekli arka plan görevleri çalıştırmak, kod Çözümleyicileri ve daha fazlası için kullanır. Bu işlemler, çıkış, kaynak yoğunluklu işler çalışırken daha hızlı yanıt Visual Studio etkinleştirme gibi Visual Studio performans avantajlarını vermek için işlem dışı çalıştırılır. Visual Studio 32 bitlik bir işlem olduğundan, ayrıca, işlemler,-işlem dışı çalışan bellek kullanımı yoğun iş çalışacağı daha büyük bir bellek alanı sağlar.
+Visual Studio birkaç işlem dışı işlemler live unit testing gibi gerekli arka plan görevleri çalıştırmak, kod Çözümleyicileri ve daha fazlası için kullanır. Bu işlemler, çıkış, kaynak yoğunluklu işler çalışırken daha hızlı yanıt Visual Studio etkinleştirme gibi Visual Studio performans avantajlarını vermek için işlem dışı çalıştırılır. Visual Studio 32 bitlik bir işlem olduğundan, ayrıca, işlemler,-işlem dışı çalışan bellek kullanımı yoğun iş çalışacağı daha büyük bir bellek alanı sağlar.
 
 Varsa *ServiceHub.RoslynCodeAnalysisService.exe* veya *ServiceHub.RoslynCodeAnalysisService32.exe* işlem sona erer herhangi bir nedenle açılır bilgi çubuğu ile aşağıdaki ileti görünür:
 

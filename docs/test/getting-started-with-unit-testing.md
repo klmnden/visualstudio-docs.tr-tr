@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927990"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223527"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -74,7 +74,7 @@ Birim testi ile yöntemi saptamalar oluşturabilirsiniz **birim testleri Oluştu
 MSTest, xUnit ve NUnit test çerçevesi Visual Studio 2017 veya sonraki bir sürümde kullanıyorsanız, Canlı Birim testlerinizin sonuçları görebilirsiniz.
 
 > [!NOTE]
-> Live unit Testing, yalnızca Visual Studio 2017 Enterprise sürümünde kullanılabilir.
+> Live unit Testing, yalnızca Visual Studio Enterprise Edition'da kullanılabilir.
 
 1. Live unit testing alanından açma **Test** menüsü.
 

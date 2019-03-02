@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919241"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223487"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -48,7 +48,7 @@ Alternatif olarak, Microsoft Test Yöneticisi'nde kaydedildiği bir test çalı�
 
 ## <a name="install-the-coded-ui-test-component"></a>Kodlanmış UI test bileşenini yükleyin
 
-Kodlanmış UI test araçları ve şablonları erişmek için yükleme **kodlanmış UI testi** Visual Studio 2017'in bileşeni.
+Kodlanmış UI test araçları ve şablonları erişmek için yükleme **kodlanmış UI testi** Visual Studio bileşen.
 
 1. Başlatma **Visual Studio yükleyicisi** seçerek **Araçları** > **araçları ve özellikleri Al**.
 

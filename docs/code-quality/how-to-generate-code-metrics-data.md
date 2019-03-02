@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007364"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223734"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod ölçümleri verileri üretme
 
@@ -206,7 +206,7 @@ Daha fazla bilgi için [eski modda kod ölçümleri oluşturma etkinleştir](htt
 
 ### <a name="previous-versions"></a>Önceki sürümler
 
-Visual Studio 2015 dahil olmak üzere Visual Studio'nun önceki sürümleri dahil da bilinen bir komut satırı kod ölçümleri araç *Metrics.exe*. Bu Aracı'nın önceki sürümünü ikili bir analiz, diğer bir deyişle, derleme tabanlı analiz vermedi. Yeni aracı, bunun yerine kaynak kodunu analiz eder. Yeni komut satırı kod ölçümleri aracı kaynak kod tabanlı olduğundan, sonuçlarını önceki sürümleri tarafından oluşturulan için farklı *Metrics.exe* ve Visual Studio 2017 IDE içinde.
+Visual Studio 2015 dahil da bilinen bir komut satırı kod ölçümleri araç *Metrics.exe*. Bu Aracı'nın önceki sürümünü ikili bir analiz, diğer bir deyişle, derleme tabanlı analiz vermedi. Yeni *Metrics.exe* aracı kaynak kodu yerine analiz eder. Çünkü yeni *Metrics.exe* araçtır kaynak kod tabanlı komut satırı kod ölçümleri sonuçları bu Visual Studio IDE ve önceki sürümleri tarafından üretilen farklı *Metrics.exe*.
 
 Çözüm ve proje yüklenebilir sürece yeni komut satırı kod ölçümleri aracı kaynak kod hataları varsa bile ölçümleri hesaplar.
 
@@ -214,7 +214,7 @@ Visual Studio 2015 dahil olmak üzere Visual Studio'nun önceki sürümleri dahi
 
 `LinesOfCode` Ölçüm daha doğru ve güvenilir yeni komut satırı kod ölçümleri araç. Bu codegen farkları bağımsız ve çalışma zamanı ve araç takımı değiştiğinde değiştirmez. Yeni aracı boş satırlar ve yorumlarla birlikte kod, gerçek satırları sayar.
 
-Gibi diğer ölçümler `CyclomaticComplexity` ve `MaintainabilityIndex` formüller önceki sürümlerini kullanan *Metrics.exe*, ancak yeni aracı sayısını sayar `IOperations` (mantıksal kaynak yönergeleri) yerine Ara Dil (IL) yönergeleri. Sayılar önceki sürümlerden biraz farklı olacaktır *Metrics.exe* ve Visual Studio 2017 IDE kod ölçümleri sonuçları.
+Gibi diğer ölçümler `CyclomaticComplexity` ve `MaintainabilityIndex` formüller önceki sürümlerini kullanan *Metrics.exe*, ancak yeni aracı sayısını sayar `IOperations` (mantıksal kaynak yönergeleri) yerine Ara Dil (IL) yönergeleri. Sayılar bu Visual Studio IDE ve önceki sürümleri tarafından oluşturulan biraz farklı olacaktır *Metrics.exe*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

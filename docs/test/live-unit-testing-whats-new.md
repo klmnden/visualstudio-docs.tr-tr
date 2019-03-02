@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796588"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221547"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing’deki Yenilikler
 
-Bu konu Visual Studio 2017 sürüm 15.3 itibaren Visual Studio'nun her sürümü için Live Unit Testing eklenen yeni özellikleri listeler. Live Unit Testing kullanma genel bakış için bkz. [Visual Studio 2017 ile Live Unit Testing](live-unit-testing.md).
+Bu konu Visual Studio 2017 sürüm 15.3 itibaren Visual Studio'nun her sürümü için Live Unit Testing eklenen yeni özellikleri listeler. Live Unit Testing kullanma genel bakış için bkz. [Visual Studio ile Live Unit Testing](live-unit-testing.md).
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Yeni Visual Studio 2017 sürüm 15.4 için Live Unit Testing nedir
 
@@ -45,7 +45,7 @@ Visual Studio 2017 sürüm 15.3, Live Unit Testing özellikleri iyileştirmeler 
 
 - .NET Core ve .NET Standard desteği. C# veya Visual Basic içinde yazılan .NET Core ve .NET Standard çözümler üzerinde Live Unit Testing ' ı kullanabilirsiniz.
 
--  Performans geliştirmeleri. İlk tam derleme ve testleri Live Unit Testing altında çalıştırdıktan sonra performansı önemli ölçüde daha hızlı olduğunu fark edeceksiniz. Ayrıca, önemli bir performans geliştirmesi sonraki başlangıçlarda Live Unit Testing, aynı çözümdeki görürsünüz. Biz artık Live Unit Testing tarafından oluşturulan verileri kalıcı hale getirmek ve güncel denetimleri ile mümkün olduğunca yeniden.
+- Performans geliştirmeleri. İlk tam derleme ve testleri Live Unit Testing altında çalıştırdıktan sonra performansı önemli ölçüde daha hızlı olduğunu fark edeceksiniz. Ayrıca, önemli bir performans geliştirmesi sonraki başlangıçlarda Live Unit Testing, aynı çözümdeki görürsünüz. Biz artık Live Unit Testing tarafından oluşturulan verileri kalıcı hale getirmek ve güncel denetimleri ile mümkün olduğunca yeniden.
 
 Bu önemli eklemeler yanı sıra, Live Unit Testing, aşağıdaki geliştirmeleri içerir:
 
@@ -58,10 +58,12 @@ Bu önemli eklemeler yanı sıra, Live Unit Testing, aşağıdaki geliştirmeler
 - Menü çubuğunda, Test/Live Unit Testing altında birkaç ek menü öğeleri eklendi. **Temiz sıfırlama** kalıcı verilerini siler ve yeniden oluşturur. **Seçenek** Araçlar/Seçenekler/Live Unit Testing / genel atlar.
 
 - Kaynak kodunda hedeflenen test yöntemleri Live Unit Testing hariç tutmak istediğinizi belirtmek için artık şu öznitelikleri kullanabilirsiniz:
+
    - XUnit için: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - NUnit için: `[Category("SkipWhenLiveUnitTesting")]`
    - MSTest için: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 - [Dinamik Birim Testine Giriş](live-unit-testing-intro.md)
-- [Visual Studio 2017 ile Live Unit Testing](live-unit-testing.md)
+- [Visual Studio ile Live Unit Testing](live-unit-testing.md)

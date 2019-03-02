@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909148"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222603"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Visual Studio'da yönetilen kod için statik kod analizi genel bakış
 
-Visual Studio 2017 Kod Analizi yönetilen kod iki yolla gerçekleştirebilirsiniz: ile *FxCop* statik analiz Yönetilen derlemeler ve daha fazla modern *Roslyn Çözümleyicileri*. Bu konu, FxCop statik kod analizi içerir. Kod Çözümleyicileri kullanarak kodunu analiz etme hakkında daha fazla bilgi için bkz: [genel bakış, Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio, yönetilen kod için Kod Analizi iki yolla gerçekleştirebilirsiniz: ile *FxCop* statik analiz Yönetilen derlemeler ve daha fazla modern *Roslyn Çözümleyicileri*. Bu konu, FxCop statik kod analizi içerir. Kod Çözümleyicileri kullanarak kodunu analiz etme hakkında daha fazla bilgi için bkz: [genel bakış, Roslyn Çözümleyicileri](../code-quality/roslyn-analyzers-overview.md).
 
 Yönetilen kod için kod analizi, yönetilen derlemeleri çözümler ve derlemeler, programlama ve Microsoft .NET Framework tasarım yönergeleri ile ortaya konan Tasarım Kuralları ihlalleri gibi bilgileri raporlar.
 
@@ -59,7 +59,7 @@ Public class MyClass
 Daha fazla bilgi için [uyarıları bastırma](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Bir projeyi Visual Studio 2017'ye geçirirseniz, birden çok sayıda kod çözümleme uyarıları karşılaştığı. Uyarıları gidermek ve hemen üretken olmak hazır değilseniz yapabilecekleriniz *temel* projenizin çözümleme durumu. Gelen **Çözümle** menüsünde **kod analizini Çalıştır ve etkin sorunlar bastır**.
+> Bir projeyi Visual Studio 2017 veya Visual Studio 2019 geçirirseniz, birden çok sayıda kod çözümleme uyarıları karşılaştığı. Uyarıları gidermek ve hemen üretken olmak hazır değilseniz yapabilecekleriniz *temel* projenizin çözümleme durumu. Gelen **Çözümle** menüsünde **kod analizini Çalıştır ve etkin sorunlar bastır**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>İade ilkesinin parçası olarak kod analizini Çalıştır
 

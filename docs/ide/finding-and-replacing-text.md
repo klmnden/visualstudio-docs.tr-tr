@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d6ebef5b4f7850a23537ec3df3eb51a574fa7985
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937454"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222825"
 ---
 # <a name="find-and-replace-text"></a>Metin bulma ve değiştirme
 
-Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files). Yeni Visual Studio 2017 sürüm 15,8, bulma değiştirin ve *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
+Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files). Ayrıca Bul ve Değiştir yalnızca *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
 
 > [!TIP]
 > Değişkenler ve yöntemler gibi kod simgeleri yeniden adlandırma, daha iyi *[yeniden düzenleme](../ide/reference/rename.md)* Bul ve Değiştir kullanımı çok bunları. Yeniden düzenleme, akıllı ve Bul ve Değiştir körüne tüm örnekleri değiştirir ancak kapsam anlar.
@@ -93,7 +93,7 @@ Seçerek bileşen kümelerini arama Kapsamınız olarak tanımlayabilirsiniz **�
 > [!NOTE]
 > Bu bölüm, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Blok seçimi](/visualstudio/mac/block-selection).
 
-**Yeni Visual Studio 2017 sürüm 15,8**
+**Visual Studio 2017 sürüm 15,8 sunulan**
 
 Kullanım *birden çok giriş işaretini seçimi* aynı anda iki veya daha fazla yerde aynı düzenleme yapma. Örneğin, aynı metni ekleyin veya aynı anda birden fazla konumda mevcut metni değiştirme.
 

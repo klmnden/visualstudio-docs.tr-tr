@@ -19,31 +19,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9eeb443684e769a119ae2e319351abc5a72b1417
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318465"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223695"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-Visual Studio 2017 düzenleme deneyimi elde edebilmesi güçlü bir JavaScript sağlar. Temel TypeScript dil hizmeti tarafından desteklenen, Visual Studio, daha zengin IntelliSense, modern JavaScript özellikleri için destek sunar ve verimliliğin yeniden düzenleme, Tanıma Git gibi özellikleri ve daha fazlası.
+Visual Studio düzenleme deneyimi elde edebilmesi güçlü bir JavaScript sağlar. Temel TypeScript dil hizmeti tarafından desteklenen, Visual Studio, daha zengin IntelliSense, modern JavaScript özellikleri için destek sunar ve verimliliğin yeniden düzenleme, Tanıma Git gibi özellikleri ve daha fazlası.
 
 > [!NOTE]
-> Visual Studio 2017 JavaScript dil servisi için dil hizmeti ("Salsa" olarak adlandırılır) yeni altyapı kullanır. Ayrıntılar bu konuda dahil edilir ve bu da okuyabilirsiniz [blog gönderisi](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Yeni düzenleme deneyimi, çoğunlukla da Visual Studio Code için geçerlidir. Bkz: [VS Code belgelerindeki](https://code.visualstudio.com/docs/languages/javascript) daha fazla bilgi için.
+> Visual Studio 2017'den itibaren JavaScript dil servisi için dil hizmeti ("Salsa" olarak adlandırılır) yeni altyapı kullanır. Ayrıntıları bu makalede dahil edilir ve bu da okuyabilirsiniz [blog gönderisi](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Yeni düzenleme deneyimi, çoğunlukla da Visual Studio Code için geçerlidir. Bkz: [VS Code belgelerindeki](https://code.visualstudio.com/docs/languages/javascript) daha fazla bilgi için.
 
 Visual Studio genel IntelliSense işlevselliği hakkında daha fazla bilgi için bkz. [IntelliSense kullanarak](../ide/using-intellisense.md).
 
 ## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>JavaScript dil hizmeti Visual Studio 2017'deki yenilikler
 
-Visual Studio 2017'den itibaren JavaScript IntelliSense, parametre ve üye listelerini çok daha fazla bilgi görüntüler.
-Bu yeni bilgi kodunuzu daha iyi anlamak için perde arkasında statik analiz kullanır TypeScript dil hizmeti tarafından sağlanır.
+Visual Studio 2017'den itibaren JavaScript IntelliSense, parametre ve üye listelerini çok daha fazla bilgi görüntüler. Bu yeni bilgi kodunuzu daha iyi anlamak için perde arkasında statik analiz kullanır TypeScript dil hizmeti tarafından sağlanır.
+
 TypeScript, bu bilgileri oluşturmak için çeşitli kaynaklardan kullanır:
 
 - [Tür çıkarımı üzerinde temel IntelliSense](#TypeInference)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912748"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223032"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -24,7 +24,7 @@ Kullanmak daha faydalı olup olmadığını düşünebilirsiniz [derleme veya s�
 
 ## <a name="system-requirements"></a>Sistem gereksinimleri
 
-Visual Studio 2017 için test aracısı veya test denetleyicisi yüklemek için sistem gereksinimleri aşağıdaki tabloda gösterilmiştir:
+Visual Studio test aracısı veya test denetleyicisi yüklemek için sistem gereksinimleri aşağıdaki tabloda gösterilmiştir:
 
 | Öğe | Gereksinimler |
 | ---- | ------------ |
@@ -34,7 +34,7 @@ Visual Studio 2017 için test aracısı veya test denetleyicisi yüklemek için 
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme
 
-Aracılar için Visual Studio 2017'den indirebilirsiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Ara *Visual Studio 2017 için Agents*, şunlardan birini seçin *aracı* veya *denetleyicisi*ve ardından *indirme*. Denetleyici ve test aracısını yüklemek için indirdiğiniz yürütebilen dosyayı çalıştırın.
+Visual Studio için agents indirebileceğiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Ara *Visual Studio 2017 için Agents*, şunlardan birini seçin *aracı* veya *denetleyicisi*ve ardından *indirme*. Denetleyici ve test aracısını yüklemek için indirdiğiniz yürütebilen dosyayı çalıştırın.
 
 Visual Studio 2015 ve Visual Studio 2013 için agents indirebilirsiniz [eski indirmeler](https://visualstudio.microsoft.com/vs/older-downloads/) sayfası.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919748"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222759"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio uzantıları bulma ve kullanma
 
@@ -61,9 +61,9 @@ Otomatik Güncelleştirmeler devre dışı bırakmak istiyorsanız, tüm uzantı
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>Uzantı kilitlenme ve yanıt vermeyi durdurma sorununa bildirimleri
 
-Yeni **Visual Studio 2017 sürüm 15.3**, Visual Studio bildirir, bir uzantı bir önceki oturumu sırasında içindeki bir kilitlenme konusuydu gerçeğe aykırı. Visual Studio kilitleniyor, özel durum yığını depolar. Visual Studio başlatılır, sonraki açışınızda yaprak ile başlayan ve temel çalışma yığını inceler. Visual Studio çerçeve uzantı yüklü ve etkin bir parçası olan bir modüle ait olduğunu belirlerse, bir bildirim gösterilir.
+Visual Studio, uzantı bir önceki oturumu sırasında içindeki bir kilitlenme konusuydu gerçeğe aykırı size bildirir. Visual Studio kilitleniyor, özel durum yığını depolar. Visual Studio başlatılır, sonraki açışınızda yaprak ile başlayan ve temel çalışma yığını inceler. Visual Studio çerçeve uzantı yüklü ve etkin bir parçası olan bir modüle ait olduğunu belirlerse, bir bildirim gösterilir.
 
-Yeni **Visual Studio 2017 sürüm 15.6**, Visual Studio ayrıca bildirir, bir uzantı yanıt vermediği UI neden gerçeğe aykırı.
+Uzantı yanıt vermediği UI neden olan gerçeğe aykırı visual Studio ayrıca size bildirir.
 
 Bu bildirimleri gösterilirken, bildirim Yoksay veya aşağıdaki eylemlerden birini gerçekleştirin:
 

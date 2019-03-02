@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 319b9a5a63313535889a3396794c9481b6fe4965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949050"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222498"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop ve FxCop hakkında sık sorulan sorular çözümleyiciler
 
@@ -31,7 +31,7 @@ FxCop Çözümleyicileri .NET derleyici Platformu ("Roslyn") temel alır. [Bir N
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Kod çözümlemeyi Çalıştır komutu FxCop Çözümleyicileri çalışıyor mu?
 
-Hayır. Seçtiğinizde, **Çözümle** > **kod çözümlemeyi Çalıştır** Visual Studio 2017'de statik kod analizi veya eski FxCop yürütür. **Kod analizini Çalıştır** Roslyn tabanlı FxCop Çözümleyicileri dahil olmak üzere, Roslyn tabanlı Çözümleyicileri üzerinde hiçbir etkisi olmaz.
+Hayır. Seçtiğinizde, **Çözümle** > **kod çözümlemeyi Çalıştır**, statik kod analizi veya eski FxCop yürütür. **Kod analizini Çalıştır** Roslyn tabanlı FxCop Çözümleyicileri dahil olmak üzere, Roslyn tabanlı Çözümleyicileri üzerinde hiçbir etkisi olmaz.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild proje özelliği Çözümleyicileri çalışıyor mu?
 

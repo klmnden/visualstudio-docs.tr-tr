@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864880"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222902"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense için bir C++ projesi yapılandırma
 
@@ -74,7 +74,7 @@ Visual Studio'da bu sorunu hangi bildirimleri iki genel yolu vardır:
 
 Bu tür sorunları gidermek için adlı bir dosya ekleyin. **cpp.hint** kök çözüm dizininizin. Daha fazla bilgi için [ipucu dosyaları](/cpp/ide/hint-files).
 
-**Visual Studio 2017 sürüm 15.7** etiket ayrıştırıcısı hatalarını Hata Listesi penceresinde görünür.
+Etiket ayrıştırıcısı hatalarını görünür **hata listesi** penceresi.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Tanılama günlüğüne kaydetme ile proje ayarlarını doğrulama
 
@@ -107,7 +107,7 @@ Ancak, bazı durumlarda Visual Studio IntelliSense veritabanı zamanında günce
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>IntelliSense derleme hatalarını giderme
 
-Bir IntelliSense derleme ikili dosyaları oluşturmaz, ancak yine de başarısız olabilir. Hatanın olası nedenlerinden biri, özel .props veya .targets dosyaları olmasıdır. Visual Studio 2017 sürüm 15.6, çıkış penceresinde IntelliSense yalnızca derleme hataları günlüğe kaydedilir. Bunları görmek için ayarlanmış **çıktıyı Göster** için **çözüm**:
+Bir IntelliSense derleme ikili dosyaları oluşturmaz, ancak yine de başarısız olabilir. Hatanın olası nedenlerinden biri, özel .props veya .targets dosyaları olmasıdır. Visual Studio 2017 sürüm 15.6 ve üzeri, çıkış penceresinde IntelliSense yalnızca derleme hataları günlüğe kaydedilir. Bunları görmek için ayarlanmış **çıktıyı Göster** için **çözüm**:
 
 ![Çözüm hataları için çıkış penceresine](media/vcpp-intellisense-output-window.png)
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47693c6fbb25fb0a7c2468abbad515f8aaf63159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6531311e00d25947a8bb5ca2e691c941a20307ba
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694991"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222364"
 ---
 # <a name="edit-and-continue-error-message"></a>Düzenle ve devam et hata iletisi
 
@@ -46,6 +46,6 @@ Bu hata iletisi için olası nedenler şunlardır:
 -   Derleme hataları en son sürüme sahip olduğu bir uygulama eski bir sürümü hata ayıklamayı başlatma.
 
 Daha fazla bilgi için bkz.:
-- [C++ Düzenle ve devam et blog gönderisini](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)
+- [C++ Düzenle ve devam et blog gönderisini](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)
 - [Desteklenen kod değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md)
 - [Düzenle ve Devam Et](../debugger/edit-and-continue.md)

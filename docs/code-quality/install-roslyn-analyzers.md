@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910517"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222941"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET derleyici platformu çözümleyicilerini yükleme
 
-Visual Studio 2017'yi içeren bir dizi temel .NET derleyici Platformu (*Roslyn*) çözümleyici. Bu çözümleyici her zaman açıktır. NuGet paketleri olarak veya Visual Studio uzantıları olarak ek Çözümleyicileri yükleyebileceğiniz *VSIX* dosyaları.
+Visual Studio .NET derleyici platformu çekirdek kümesini içerir (*Roslyn*) çözümleyici. Bu çözümleyici her zaman açıktır. NuGet paketleri olarak veya Visual Studio uzantıları olarak ek Çözümleyicileri yükleyebileceğiniz *VSIX* dosyaları.
 
 ## <a name="to-install-nuget-analyzer-packages"></a>NuGet Çözümleyicisi paketleri yüklemek için
 

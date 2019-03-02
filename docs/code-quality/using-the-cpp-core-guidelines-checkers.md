@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915003"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223357"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
-C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcılar tarafından oluşturulan c++ kodlama hakkında en iyi taşınabilir bir kümesidir. Visual Studio, şu anda C++ için kod analizi araçlarında bir parçası olarak bu kural kümesini destekler. Ana Kılavuz denetleyicileri Visual Studio 2017'de varsayılan olarak yüklenir ve olan [Visual Studio 2015 için bir NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
+
+C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcılar tarafından oluşturulan c++ kodlama hakkında en iyi taşınabilir bir kümesidir. Visual Studio, şu anda C++ için kod analizi araçlarında bir parçası olarak bu kural kümesini destekler. Ana Kılavuz denetleyicileri Visual Studio 2017 ve Visual Studio 2019 varsayılan olarak yüklenir ve olan [Visual Studio 2015 için bir NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>C++ temel yönergeleri proje
- Bjarne Stroustrup ve başkaları tarafından oluşturulan, C++ temel yönergeleri güvenle ve etkili bir şekilde modern C++'ı kullanarak bir kılavuz olan. Statik tür güvenliği ve kaynak güvenliği yönergeleri vurgulayın. Bunlar, kaldırın veya dil en hataya bölümlerini en aza indirmek için yollarını tanımlar ve kodunuzu daha basit hale getirme ve daha fazla yüksek performanslı, güvenilir bir biçimde önerin. Bu yönergeleri, standart C++ Foundation tarafından korunur. Daha fazla bilgi edinmek için belgelere bakın [C++ temel yönergeleri](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)ve C++ temel yönergeleri belge proje dosyaları üzerinde erişim [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Bjarne Stroustrup ve başkaları tarafından oluşturulan, C++ temel yönergeleri güvenle ve etkili bir şekilde modern C++'ı kullanarak bir kılavuz olan. Statik tür güvenliği ve kaynak güvenliği yönergeleri vurgulayın. Bunlar, kaldırın veya dil en hataya bölümlerini en aza indirmek için yollarını tanımlar ve kodunuzu daha basit hale getirme ve daha fazla yüksek performanslı, güvenilir bir biçimde önerin. Bu yönergeleri, standart C++ Foundation tarafından korunur. Daha fazla bilgi edinmek için belgelere bakın [C++ temel yönergeleri](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)ve C++ temel yönergeleri belge proje dosyaları üzerinde erişim [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>C++ temel denetimi yönergeleri kod analizini etkinleştir
  Seçerek projeniz üzerinde kod analizi etkinleştirebilirsiniz **derlemede kod analizini etkinleştir** onay kutusu **Kod Analizi** bölümünü **özellik sayfaları** için iletişim kutusu projenizi.

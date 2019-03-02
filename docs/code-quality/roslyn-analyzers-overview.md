@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948283"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221950"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET derleyici platformu Çözümleyicileri genel bakış
 
-Visual Studio 2017, siz yazarken, C# veya Visual Basic kod çözümleme .NET derleyici platformu Çözümleyicileri yerleşik bir kümesini içerir. Kod stili, kod kalitesini ve Bakım, kod tasarımı ve diğer sorunları çözümleyiciler arayın. Bir NuGet paketi olarak Visual Studio uzantısı ya da proje başına temelinde ek Çözümleyicileri yükleyebilirsiniz.
+Visual Studio analiz .NET derleyici platformu Çözümleyicileri yerleşik bir kümesini içerir, C# veya yazarken Visual Basic kodunu yazın. Kod stili, kod kalitesini ve Bakım, kod tasarımı ve diğer sorunları çözümleyiciler arayın. Bir NuGet paketi olarak Visual Studio uzantısı ya da proje başına temelinde ek Çözümleyicileri yükleyebilirsiniz.
 
 Kural ihlallerinin bir çözümleyici tarafından bulunması durumunda raporlanır Kod düzenleyicisinde hem de bir *dalgalı* sorunlu kod ve buna **hata listesi**.
 

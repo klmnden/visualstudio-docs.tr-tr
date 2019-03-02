@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1b746e862385395089fe0ccf3bd2d4bfdb8d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909251"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223292"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>İş Akışı Tasarımcısı ile uygulamaları geliştirme
 
@@ -29,7 +29,7 @@ ms.locfileid: "55909251"
 
 ## <a name="install-windows-workflow-foundation"></a>Windows Workflow Foundation'ı yükleme
 
-İş akışı proje şablonları, Visual Studio 2017'de kullanmak için önce yükleme **Windows Workflow Foundation** bileşeni.
+İş akışı proje şablonları, Visual Studio'da kullanmak için önce yükleme **Windows Workflow Foundation** bileşeni.
 
 1. Visual Studio Yükleyicisi'ni açın. Açmak için hızlı bir şekilde belirlemektir **Araçları** > **araçları ve özellikleri Al** Visual Studio'da.
 
@@ -37,7 +37,7 @@ ms.locfileid: "55909251"
 
 1. Ekranı aşağı kaydırarak **geliştirme etkinliklerini** kategorisi ve ardından **Windows Workflow Foundation** bileşeni.
 
-   ![Visual Studio 2017 için Windows Workflow Foundation bileşeni](media/windows-workflow-foundation-component.png)
+   ![Visual Studio için Windows Workflow Foundation bileşeni](media/windows-workflow-foundation-component.png)
 
 1. Seçin **değiştirme**.
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 38039bd98ab1a2d8407945f578e47d325475d4cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318010"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223461"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Devops için bir laboratuvar ortamı kullanma
 
@@ -55,7 +55,7 @@ Daha fazla bilgi için [kullanım derleme veya yayın Yönetimi](use-build-or-rm
 
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Microsoft Test Yöneticisi'nin Visual Studio Laboratuvar Yönetimi özelliklerini kullanma
 
-Oluşturun ve Visual Studio 2017 Enterprise sürümünde kullandığınızda Visual Studio Laboratuvar Yönetimi özellikleriyle laboratuvar ortamları Microsoft Test Yöneticisi'nin yönetin.
+Oluşturun ve Visual Studio Enterprise edition'ı kullanırken, Visual Studio Laboratuvar Yönetimi özellikleriyle laboratuvar ortamları Microsoft Test Yöneticisi'nin yönetin.
 
 Laboratuvar Yönetimi, ortamınızdaki her bir makinede test aracıları otomatik olarak yükler.
 
