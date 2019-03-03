@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796738"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222021"
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing ile tanışın
 
-Live Unit Testing, Visual Studio 2017 sürüm 15.3 kod değişiklik yaptığınız anda yürüten birim testleriniz otomatik olarak gerçek zamanlı olarak kullanılabilir bir teknoloji olması. Live Unit Testing:
+Live Unit Testing, Visual Studio 2017'de kullanılmaya başlanan bir teknolojidir. Kod değişiklikleri yapabilir, birim testleriniz otomatik olarak gerçek zamanlı olarak yürütür. Live Unit Testing:
 
 - Daha büyük bir güvenle yeniden düzenleme ve kod değişikliği olanak tanır. Değişikliklerinizi testleri kesintiye uğratmadığından emin olmak için kodunuzu düzenlediğiniz sırada Live Unit Testing tüm etkilenen testleri otomatik olarak yürütür.
 
@@ -31,7 +31,7 @@ Live Unit Testing hakkında daha fazla bilgi için:
 
 - Giriş niteliğindeki öğreticinin deneyin [Visual Studio Live Unit Testing kullanmaya başlama](live-unit-testing-start.md).
 
-- Ayrıntılı belgelere okuma [kullanım Live Unit Testing ile Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
+- Ayrıntılı belgelere okuma [kullanım Live Unit Testing ile Visual Studio Enterprise Edition](live-unit-testing.md).
 
 - Okuma [Live Unit Testing SSS](live-unit-testing-faq.md) Live Unit Testing yenilikleri öğrenmek için hem de Live Unit Testing kullanmaya ilişkin ipuçları ve teknikler hakkında bilgi edinin.
 
@@ -40,5 +40,6 @@ Live Unit Testing hakkında daha fazla bilgi için:
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>İlgili kaynaklar
+
 - [Kod test araçları](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Birim testi kod](unit-test-your-code.md)
