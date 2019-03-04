@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908808"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223825"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Bağımlılık diyagramları: yönergeler
 
@@ -26,7 +26,7 @@ Uygulamanızın yüksek bir düzeyde oluşturarak mimarisini *bağımlılık diy
 Bu özellik, Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Bağımlılık diyagramları Visual Studio 2017'de .NET Core projeleri için desteklenmiyor.
+> Bağımlılık diyagramları Visual Studio'da .NET Core projelerinde desteklenmez.
 
 ## <a name="what-is-a-dependency-diagram"></a>Bir bağımlılık diyagramı nedir?
 
