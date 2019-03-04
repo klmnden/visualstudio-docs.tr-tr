@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692066"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223565"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
@@ -604,7 +604,7 @@ Proje yükseltme devre dışı bırakmak için bir `NoUpgrade` değeri:
 
 ## <a name="project-cache-and-extensibility"></a>Proje önbelleği ve genişletilebilirlik
 
-Visual Studio 2017, büyük C++ çözümlerle çalışırken performansı artırmak için [proje önbellek](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/) kullanıma sunulmuştur. Proje doldurulmuş ve ardından belleğe CPS ya da MSBuild projeleri yüklemeden projeleri yüklemek için kullanılan bir SQLite veritabanı olarak uygulanır.
+Visual Studio 2017, büyük C++ çözümlerle çalışırken performansı artırmak için [proje önbellek](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) kullanıma sunulmuştur. Proje doldurulmuş ve ardından belleğe CPS ya da MSBuild projeleri yüklemeden projeleri yüklemek için kullanılan bir SQLite veritabanı olarak uygulanır.
 
 CPS nesne önbellekten yüklendi .vcxproj projeler için mevcut olduğundan, bu uzantının MEF Bileşenleri alma `UnconfiguredProject` veya `ConfiguredProject` oluşturulamaz. Bir proje kullanır (kullanma olasılıkları olan ister) MEF uzantıları Visual Studio algıladığında genişletilebilirlik desteklemek için proje önbelleği kullanılmaz.
 
