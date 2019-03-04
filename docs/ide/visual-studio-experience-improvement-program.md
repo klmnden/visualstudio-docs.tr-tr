@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97733ab60a832c6a3563ae3ca1ed791f331399dc
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953550"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323124"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
 
@@ -31,8 +31,7 @@ VSCEIP varsayılan olarak etkinleştirilir. Kapatın veya yeniden, bu yönergele
 
    **Visual Studio Deneyimini Geliştirme Programı** iletişim kutusu açılır.
 
-1. Geri çevirmek için seçin **Hayır, katılmak istemiyorum**ve ardından **Tamam**.
-   Katılım için seçin **Evet, katılmak istiyorum**ve ardından **Tamam**.
+1. Geri çevirmek için seçin **Hayır, katılmak istemiyorum**ve ardından **Tamam**. Katılım için seçin **Evet, katılmak istiyorum**ve ardından **Tamam**.
 
    ![Visual Studio Deneyimini Geliştirme Programı iletişim](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ Yüklerseniz [Visual Studio derleme Araçları](https://visualstudio.microsoft.c
 
 İlgili kayıt defteri anahtarı ve ayarları aşağıdaki gibidir:
 
-64-bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** 32-bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** olduğunda Grup İlkesi olan etkin, anahtar = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- 64-bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- 32 bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Grup İlkesi etkinleştirildiğinde, anahtar = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- 64-bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- 32 bit işletim sisteminde, anahtar = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Grup İlkesi etkinleştirildiğinde, anahtar = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 Giriş = **OptIn**
 
 Değer (DWORD) =
+
 - **0** alma (VSCEIP Kapat) kabul
 - **1** (VSCEIP Aç) kabul
 

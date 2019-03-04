@@ -11,14 +11,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 58f084e188f5c19319e37d3bad4fdf110d10376a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222301"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323283"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: İlk ASP.NET Core web hizmeti oluşturmak için Visual StudioF#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: F içinde ilk ASP.NET Core web hizmetinizi oluşturmak için Visual Studio\#
 
 5-10 dakika giriş bölümünde F# Visual Studio'da oluşturacağınız bir F# ASP.NET Core web uygulaması.
 

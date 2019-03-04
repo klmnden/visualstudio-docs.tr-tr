@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 515cd501044b1b83f8adbd365e13336322c20f3f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931305"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323202"
 ---
-# <a name="learn-about-projects-and-solutions-using-c"></a>Projeler ve çözümler kullanma hakkında bilgi edininC#
+# <a name="learn-about-projects-and-solutions-using-c"></a>Projeler ve çözümler C kullanma hakkında bilgi edinin\#
 
 Giriş niteliğindeki bu makalede şunları oluşturma ne demek keşfedeceğiz bir *çözüm* ve *proje* Visual Studio'da. Kod projeleri, örneğin bir sınıf kitaplığı projesi ve karşılık gelen bir test projesi ilgili daha fazla ya da bir çözüm, bir düzenlemek için kullanılan bir kapsayıcıdır. Bir proje özelliklerini ve bazı içerebileceği dosyalara göz atacağız. Ayrıca bir başvuru bir projeden diğerine oluşturacağız.
 

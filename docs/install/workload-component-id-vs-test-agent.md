@@ -1,62 +1,46 @@
 ---
-title: Visual Studio Test Agent 2017'yi iş yükü ve Bileşen kimlikleri
+title: Visual Studio Test aracısı iş yükü ve Bileşen kimlikleri
 titleSuffix: ''
 description: Otomatik testleri çalıştırmak ve uzaktan yük testleri için Visual Studio iş yükü ve Bileşen kimlikleri kullanın
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.workload:
-- multiple
-monikerRange: vs-2017
-ms.openlocfilehash: 480c44205d64e9dc7881afe34310b6e2d292bd97
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c6d7582a34b4e91607b076275c8b254591f0ab89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953414"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323137"
 ---
-# <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017'yi bileşen dizini
+# <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test aracısı bileşen dizini
 
-Tabloları bu sayfa listesi kimliklerinin komut satırını kullanarak Visual Studio'yu yüklemek için kullanabilirsiniz veya bağımlılık VSIX bildirimi olarak belirtebilirsiniz. Visual Studio güncelleştirmeleri yayınlayabilir gibi ek bileşenler ekleyeceğiz olduğunu unutmayın.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Ayrıca sayfa hakkında aşağıdakileri unutmayın:
+::: moniker range="vs-2017"
 
-* Her iş yükü, izlediği iş yükü kimliği ve iş yükü için kullanılabilir olan bileşenlerin bir tablo, kendi bölümü vardır.
-* Varsayılan olarak, **gerekli** bileşenleri, iş yükünü yüklediğinizde yüklenir.
-* Kullanmayı tercih ederseniz de yükleyebilirsiniz **önerilen** ve **isteğe bağlı** bileşenleri.
-* Her türlü iş yükü ile bağlı olmayan ek bileşenleri listeleyen bir bölüm de ekledik.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-VSIX bildiriminizi bağımlılıkları oluşturduğunuzda, Bileşen kimlikleri yalnızca belirtmeniz gerekir. Tablolar, sunduğumuz en az Bileşen bağımlılıkları belirlemek için bu sayfada kullanın. Bazı senaryolarda, bir iş yükü yalnızca bir bileşenden belirttiğiniz gelebilir. Diğer senaryolarda, tek bir iş yükünü birden fazla bileşenlerini veya birden çok iş yükü birden çok bileşenlerini belirttiğiniz gelebilir. Daha fazla bilgi için [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) sayfası.
+[!include[Visual Studio Test Agent 2017](includes/vs-2017/workload-component-id-vs-test-agent.md)]
 
-Bu kimliklerinin kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yükleme komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası. Ve iş yükü ve Bileşen kimlikleri diğer ürünlere yönelik bir listesi için bkz. [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
+::: moniker-end
 
-## <a name="test-agent"></a>Test Aracısı
+::: moniker range=">= vs-2019"
 
-**KİMLİĞİ:** Microsoft.VisualStudio.Workload.TestAgent
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Açıklama:** Otomatikleştirilmiş testleri ve yük testleri uzaktan çalıştırmak destekler
+[!include[Visual Studio Test Agent 2019](includes/vs-2019/workload-component-id-vs-test-agent.md)]
 
-### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
-
-Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test aracısı temel özellikleri | 15.0.27019.1 | Gerekli
-
-## <a name="unaffiliated-components"></a>Kullanıcıyla bağlantılı olmayan bileşenleri
-
-Bu, her türlü iş yükü ile dahil edilmez, ancak tek bir bileşeni olarak seçilebilir bileşenlerdir.
-
-Bileşen kimliği | Ad | Sürüm
---- | --- | ---
-yok | yok | yok
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

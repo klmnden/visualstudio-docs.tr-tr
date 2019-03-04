@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944266"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323471"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi
 
@@ -57,7 +57,7 @@ Aşağıdaki tabloda, anahtarlar ve bağımsız değişkenler için Yardım içe
 |/Membership|Hayır|-   **En düşük**--üzerinde/skuıd anahtarını kullanarak belirttiğiniz SKU temelli Yardım içeriğinin minimum kümesini yükler. SKU ve İçerik kümesi arasındaki eşleme hizmet API'SİNDE gösterilir.<br />-   **Önerilen**— / skuıd bağımsız değişkenini kullanarak belirttiğiniz SKU için önerilen kitaplar kümesini yükler. Hizmet API'si yükleme kaynağı olan veya *. MSHA*.<br />-   **Tam**--/ skuıd bağımsız değişkenini kullanarak belirttiğiniz SKU için tüm kitaplar kümesini yükler. Hizmet API'si yükleme kaynağı olan veya *. MSHA*.|
 |/ locationpath|Hayır|Yerel Yardım içeriğini için varsayılan klasörü belirtir. Yalnızca içeriği yüklemek veya taşımak için bu anahtarı kullanmanız gerekir. Bu anahtarı belirtirseniz, / silent de belirtmeniz gerekir geçin.|
 |/silent|Hayır|Yükler veya olmadan kullanıcıya sormadan veya durum bildirim alanında simgesi dahil olmak üzere herhangi bir UI görüntülemeden Yardım içeriğini kaldırır. Çıkış bir dosyaya kaydedilir *% Temp %* dizin. **Önemli:**  İçeriği sessizce yüklemek için dijital olarak imzalanmış kullanmalısınız *.cab* dosyaları değil *.mshc* dosyaları.|
-|/launchingApp|Hayır|Yardım Görüntüleyici ana uygulama olmadan başlatıldığında uygulama ve Katalog bağlamını tanımlar. Bu anahtar için bağımsız değişkenler *CompanyName*, *ProductName*, ve *VersionNumber* (örneğin, `/launchingApp Microsoft,VisualStudio,15.0`).<br /><br /> Bu/silent içeriği yüklemek için gerekli parametre.|
+|/launchingApp|Hayır|Yardım Görüntüleyici ana uygulama olmadan başlatıldığında uygulama ve Katalog bağlamını tanımlar. Bu anahtar için bağımsız değişkenler *CompanyName*, *ProductName*, ve *VersionNumber* (örneğin, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Bu/silent içeriği yüklemek için gerekli parametre.|
 |/ wait *saniye*|Hayır|Duraklatır yükleme, kaldırma ve yenileme işlemlerini. Bir işlem zaten devam eden kataloğuna yönelik ise, işlem belirtilen sayıda devam etmek için saniye bekler. Süresiz beklemesi için 0 kullanın.|
 |/?|Hayır|Anahtarları ve açıklamaları için Yardım içeriği Yöneticisi komut satırı aracı için listeler.|
 

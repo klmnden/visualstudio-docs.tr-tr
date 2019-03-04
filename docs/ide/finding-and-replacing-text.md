@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ebef5b4f7850a23537ec3df3eb51a574fa7985
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222825"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323741"
 ---
 # <a name="find-and-replace-text"></a>Metin bulma ve değiştirme
 
-Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files). Ayrıca Bul ve Değiştir yalnızca *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
+Bul ve Visual Studio düzenleyicisinde metin değiştirmek [Bul ve Değiştir](#find-and-replace-control) (**Ctrl**+**F** veya **Ctrl** + **H**) veya [dosyalarda Bul/Değiştir](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F**  veya **Ctrl**+**Shift**+**H**). Ayrıca Bul ve Değiştir yalnızca *bazı* kullanarak bir desen örneklerini  *[birden çok giriş işaretini seçimi](#multi-caret-selection)*.
 
 > [!TIP]
 > Değişkenler ve yöntemler gibi kod simgeleri yeniden adlandırma, daha iyi *[yeniden düzenleme](../ide/reference/rename.md)* Bul ve Değiştir kullanımı çok bunları. Yeniden düzenleme, akıllı ve Bul ve Değiştir körüne tüm örnekleri değiştirir ancak kapsam anlar.
@@ -53,7 +53,10 @@ Geçerli belgede, geçerli çözüm veya özel bir klasör kümesi için arama k
 
 ## <a name="find-and-replace-control"></a>Bul ve Değiştir denetimi
 
-**Bul ve Değiştir** denetimi kod düzenleyici penceresinin sağ alt köşesinde görünür. **Bul ve Değiştir** denetimi belirtilen arama dizesinin geçerli belgede her geçtiği yeri hemen vurgular. Seçim yaparak başka bir oluşumdan diğerine gidebilirsiniz **Sonrakini Bul** düğmesini veya **Öncekini Bul** arama denetimin üzerindeki düğme.
+- Tuşuna **Ctrl**+**F** kısayolu olarak *Bul* geçerli dosyadaki bir dize.
+- Tuşuna **Ctrl**+**H** kısayolu olarak *Bul ve Değiştir* geçerli dosyadaki bir dize.
+
+**Bul ve Değiştir** denetimi kod düzenleyici penceresinin sağ alt köşesinde görünür. Belirtilen arama dizesinin geçerli belgede her geçtiği yeri hemen vurgular. Seçim yaparak başka bir oluşumdan diğerine gidebilirsiniz **Sonrakini Bul** düğmesini veya **Öncekini Bul** arama denetimin üzerindeki düğme.
 
 ![Bul ve Visual Studio'da Değiştir](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ Bir sürümünü **Bul** denetim kullanılabilir ayrıca bazı araç pencereleri
 
 ## <a name="find-in-files-and-replace-in-files"></a>Find dosyalar ve dosyalarda Değiştir
 
-**Dosyalarda Bul/Değiştir** gibi çalışır **Bul ve Değiştir** denetimi aramanız için bir kapsam tanımlayabilmenizdir. Yalnızca geçerli açık dosya Düzenleyicisi'nde arama yapabilirsiniz, ancak aynı zamanda tüm açık belgeleri, tüm çözümü, geçerli proje ve seçili klasör kümelerini. Dosya adı uzantısına göre de arayabilirsiniz. Erişim için **dosyalarda Bul/Değiştir** iletişim kutusunda **Bul ve Değiştir** üzerinde **Düzenle** menü veya basın **Ctrl + SHIFT + F**.
+- Tuşuna **Ctrl**+**Shift**+**F** kısayolu olarak *Bul* birden çok dosya içinde bir dize.
+- Tuşuna **Ctrl**+**Shift**+**H** kısayolu olarak *Bul ve Değiştir* birden çok dosya içinde bir dize.
+
+**Dosyalarda Bul/Değiştir** gibi çalışır **Bul ve Değiştir** denetimi aramanız için bir kapsam tanımlayabilmenizdir. Yalnızca geçerli açık dosya Düzenleyicisi'nde arama yapabilirsiniz, ancak aynı zamanda tüm açık belgeleri, tüm çözümü, geçerli proje ve seçili klasör kümelerini. Dosya adı uzantısına göre de arayabilirsiniz. Erişim için **dosyalarda Bul/Değiştir** iletişim kutusunda **Bul ve Değiştir** üzerinde **Düzenle** menü (veya basın **Ctrl** + **Shift**+**F**).
 
 ![Visual Studio dosyalarda Bul](media/find-in-files-box.png)
 
