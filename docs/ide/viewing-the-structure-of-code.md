@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926378"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323873"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Farklı araç pencerelerini kullanarak kod yapısını görüntüleme
 
@@ -126,7 +126,19 @@ Kısayol menüsünde **çağrı hiyerarşisi** penceresi aşağıdakileri içeri
 
 **Nesne Tarayıcısı** penceresi projelerinizde kod açıklamaları görüntüler.
 
-Pencerenin en üstündeki açılan listesini kullanarak görüntülemek istediğiniz bileşenleri filtreleyebilirsiniz. Yönetilen kod yürütülebilir dosyaları, Kütüphane derlemelerini, tür kitaplıkları, özel bileşenler içerebilir ve *.ocx* dosyaları. C++ özel bileşenler eklemek mümkün değildir. Özel ayarlar, Visual Studio kullanıcı uygulama dizinine kaydedilir *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Pencerenin en üstündeki açılan listesini kullanarak görüntülemek istediğiniz bileşenleri filtreleyebilirsiniz. Yönetilen kod yürütülebilir dosyaları, Kütüphane derlemelerini, tür kitaplıkları, özel bileşenler içerebilir ve *.ocx* dosyaları. C++ özel bileşenler eklemek mümkün değildir.
+
+::: moniker range="vs-2017"
+
+Özel ayarlar, Visual Studio kullanıcı uygulama dizinine kaydedilir *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Özel ayarlar, Visual Studio kullanıcı uygulama dizinine kaydedilir *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 Sol bölmesinde **Nesne Tarayıcısı** derlemeleri gösterir. Derlemeleri içerdikleri ad alanlarını görüntülemek için genişletin ve ardından içerdikleri türleri görüntülenecek ad alanları'ı genişletin. Üyeleri (örneğin, özellikleri ve yöntemleri), bir türünü seçtiğinizde, sağ bölmede listelenir. Alt sağ bölmesinde seçtiğiniz öğe hakkındaki ayrıntılı bilgileri görüntüler.
 

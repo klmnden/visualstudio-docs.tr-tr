@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918929"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324188"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>(Windows) Azure App Service'te bir Python ortamını kurma
 
@@ -76,7 +76,7 @@ Bir başvuru ekledikten sonra Örneğin `python361x64` (şablonunuz şöyle gör
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Web.config Python yorumlayıcınıza işaret edecek şekilde ayarlayın
 
-Site uzantısı (aracılığıyla, portal veya Azure Resource Manager şablonu) yükledikten sonra sonraki uygulamanızın üzerine *web.config* Python yorumlayıcısının dosya. *Web.config* dosya nasıl, Fastcgı ya da HttpPlatform Python istekleri işleyeceğini hakkında App Service üzerinde çalışan (7 +) IIS web sunucusuna bildirir.
+Site uzantısı (aracılığıyla, portal veya Azure Resource Manager şablonu) yükledikten sonra sonraki uygulamanızın üzerine *web.config* Python yorumlayıcısının dosya. *Web.config* dosya nasıl bunu HttpPlatform (önerilir) veya Fastcgı Python istekleri işleyeceğini hakkında App Service üzerinde çalışan (7 +) IIS web sunucusuna bildirir.
 
 Başlamak site uzantının tam yolu bularak *python.exe*, ardından oluşturup uygun *web.config* dosya.
 
@@ -97,6 +97,33 @@ Yol uzantısı görmekte sorun varsa, el ile konsolunu kullanarak buna bulabilir
 1. App Service sayfanızda seçin **geliştirme araçları** > **konsol**.
 1. Komutu girdikten `ls ../home` veya `dir ..\home` gibi üst düzey uzantıları klasörleri görmek için *Python361x64*.
 1. Gibi bir komut girin `ls ../home/python361x64` veya `dir ..\home\python361x64` bunu içerdiğini doğrulamak için *python.exe* ve diğer yorumlayıcı dosyaları.
+
+### <a name="configure-the-httpplatform-handler"></a>HttpPlatform işleyiciyi yapılandırmanız
+
+HttpPlatform modülü soket bağlantılarının doğrudan tek başına Python işlem geçirir. Bu geçiş, gibi ancak bir yerel web sunucusu çalıştıran bir başlangıç betiği gerektiren herhangi bir web sunucusu çalıştırmanızı sağlar. Betikte belirttiğiniz `<httpPlatform>` öğesinin *web.config*burada `processPath` özniteliği işaret site uzantının Python yorumlayıcısı ve `arguments` özniteliği işaret betiğinizi ve herhangi bir bağımsız değişken için sağlamak istiyorsanız:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+`HTTP_PLATFORM_PORT` Burada gösterilen ortam değişkeni, yerel sunucu, localhost bağlantılarından dinleyecek bağlantı noktasını içerir. Bu örnek ayrıca istenirse, bu durumda, başka bir ortam değişkeni oluşturma işlemini gösterir `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Fastcgı işleyici yapılandırın
 
@@ -128,33 +155,6 @@ Fastcgı talep düzeyinde çalışır bir arabirimdir. IIS gelen bağlantıları
 - `WSGI_LOG` İsteğe bağlı ancak uygulamanızın hatalarını ayıklamak için önerilen değerdir.
 
 Bkz: [azure'a Yayımla](publishing-python-web-applications-to-azure-from-visual-studio.md) hakkında daha fazla ayrıntı için *web.config* içeriği Bottle, Flask ve Django web uygulamaları.
-
-### <a name="configure-the-httpplatform-handler"></a>HttpPlatform işleyiciyi yapılandırmanız
-
-HttpPlatform modülü soket bağlantılarının doğrudan tek başına Python işlem geçirir. Bu geçiş, gibi ancak bir yerel web sunucusu çalıştıran bir başlangıç betiği gerektiren herhangi bir web sunucusu çalıştırmanızı sağlar. Betikte belirttiğiniz `<httpPlatform>` öğesinin *web.config*burada `processPath` özniteliği işaret site uzantının Python yorumlayıcısı ve `arguments` özniteliği işaret betiğinizi ve herhangi bir bağımsız değişken için sağlamak istiyorsanız:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-`HTTP_PLATFORM_PORT` Burada gösterilen ortam değişkeni, yerel sunucu, localhost bağlantılarından dinleyecek bağlantı noktasını içerir. Bu örnek ayrıca istenirse, bu durumda, başka bir ortam değişkeni oluşturma işlemini gösterir `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Paketleri yükleme
 

@@ -13,16 +13,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60e67e7150f00abb44f4af6b812f0ede43be8037
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939846"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323712"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 
-Öğeleri sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window) özel bir durum bir tasarımcının üzerine devreye: Başlık etiketindeki sütun adları daha okunabilir bir dizeye iki biçimlendirilen ya da daha fazla sözcük olarak bulunan birleştirilmesinden. Bu etiketleri oluşturulduğu, ayarlayarak şeklini özelleştirebilir **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.
+Öğeleri sürüklediğinizde [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window) özel bir durum bir tasarımcının üzerine devreye: Başlık etiketindeki sütun adları daha okunabilir bir dizeye iki biçimlendirilen ya da daha fazla sözcük olarak bulunan birleştirilmesinden.
+
+::: moniker range="vs-2017"
+
+Bu etiketleri oluşturulduğu ayarlayarak şeklini özelleştirebilir **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data tasarımcıları** kayıt defteri anahtarı.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Bu etiketleri oluşturulduğu ayarlayarak şeklini özelleştirebilir **SmartCaptionExpression**, **SmartCaptionReplacement**, ve **SmartCaptionSuffix** değerler **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data tasarımcıları** kayıt defteri anahtarı.
+
+::: moniker-end
 
 > [!NOTE]
 > Oluşturduğunuz kadar bu kayıt defteri anahtarı mevcut değil.
@@ -46,21 +58,31 @@ Bu kayıt defteri değerleri için iç varsayılan ayarları aşağıdaki tablod
 |**SmartCaptionSuffix**|**:**|Döndürülen dize için eklenmiş bir karakteri temsil eder. Örneğin, açıklamalı alt yazı ise `Company Name`, sonek kolaylaştırır `Company Name:`|
 
 > [!CAUTION]
-> Kayıt Defteri Düzenleyicisi'nde her şeyi yaparken çok dikkatli olmanız gerekir. Düzenlemeden önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sistemini yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözülebilir garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.
+> Kayıt Defteri Düzenleyicisi'nde her şeyi yaparken çok dikkatli olun. Düzenlemeden önce kayıt defterini yedekleyin. Kayıt Defteri Düzenleyicisi'ni yanlış kullanırsanız, işletim sistemini yeniden yüklemenizi gerektirebilecek önemli sorunlara neden olabilir. Microsoft Kayıt Defteri Düzenleyicisi'ni kullanarak neden sorunları çözülebilir garanti etmez. Kayıt Defteri Düzenleyicisi'ni kullanım riski size aittir.
 >
-> Aşağıdaki Bilgi Bankası makalesi, yedekleme, düzenleme ve kayıt defterini geri yüklemek için yönergeleri içerir: [Microsoft Windows kayıt defterine açıklama](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Yedekleme hakkında daha fazla bilgi için bkz: düzenleme ve kayıt defterini geri [İleri düzey kullanıcılar için Windows kayıt defteri bilgilerini](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresi akıllı açıklamalı alt yazı davranışını değiştirmek
 
-1.  Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
+1. Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
 
-2.  Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
+2. Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
 
-3.  Genişletin **HKEY_CURRENT_USER** > **yazılım** > **Microsoft** > **VisualStudio**düğümü.
+3. Genişletin **HKEY_CURRENT_USER** > **yazılım** > **Microsoft** > **VisualStudio**düğümü.
 
-4.  Sağ **15.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Sağ **veri tasarımcıları** düğümü ve üç yeni dize değerlerini oluşturun:
+4. Sağ **15.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Sağ **16,0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+
+::: moniker-end
+
+5. Sağ **veri tasarımcıları** düğümü ve üç yeni dize değerlerini oluşturun:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
@@ -82,15 +104,25 @@ Bu kayıt defteri değerleri için iç varsayılan ayarları aşağıdaki tablod
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>Akıllı açıklamalı alt yazı özelliği devre dışı bırakmak
 
-1.  Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
+1. Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
 
-2.  Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
+2. Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
 
-3.  Genişletin **HKEY_CURRENT_USER** > **yazılım** > **Microsoft** > **VisualStudio**düğümü.
+3. Genişletin **HKEY_CURRENT_USER** > **yazılım** > **Microsoft** > **VisualStudio**düğümü.
 
-4.  Sağ **15.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+::: moniker range="vs-2017"
 
-5.  Sağ **veri tasarımcıları** düğümü ve üç yeni dize değerlerini oluşturun:
+4. Sağ **15.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Sağ **16,0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+
+::: moniker-end
+
+5. Sağ **veri tasarımcıları** düğümü ve üç yeni dize değerlerini oluşturun:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`

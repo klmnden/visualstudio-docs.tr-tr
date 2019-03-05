@@ -1,20 +1,15 @@
 ---
 title: Visual Studio için R Araçları
-description: R araçları için Visual Studio (RTVS), IntelliSense, hata ayıklama ve uzak çalışma alanları dahil olmak üzere birçok dil özellikleri sağlayan ücretsiz, açık kaynaklı bir uzantısıdır.
+description: 'R araçları Visual Studio 2017 (RTVS) için IntelliSense, hata ayıklama ve uzak çalışma alanları dahil olmak üzere birçok dil özellikleri sağlayan ücretsiz, açık kaynaklı bir uzantısıdır.'
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-- data-science
-ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933567"
+  - data-science
 ---
+
 # <a name="work-with-r-in-visual-studio"></a>Visual Studio'da R ile çalışma
 
 R, yüksek düzeyde genişletilebilir dil ve ortam istatistiksel bilgi işlem ve grafik için ' dir. GNU Genel Kamu Lisansı altında ücretsiz dağıtılır, güçlü topluluk desteği ölçeklenebilme ve güncelleyebileceği matematik simgeleri ve formüllerini dahil olmak üzere yayın kalitesinde çizimleri oluşturmak bilinen. R hakkında daha fazla bilgi [r-project.org](https://www.r-project.org/about.html) ve [R giriş](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
@@ -22,7 +17,7 @@ R, yüksek düzeyde genişletilebilir dil ve ortam istatistiksel bilgi işlem ve
 R araçları için Visual Studio (RTVS), ücretsiz bir, [açık kaynaklı](https://github.com/microsoft/RTVS) uzantısı için Visual Studio 2017 ve Visual Studio 2015 güncelleştirme 3 (veya üzeri), yayımlanan MIT lisansı altında. (İkinci açık kaynaklı bir bileşen olarak adlandırılan [RHost](https://github.com/microsoft/R-Host), hangi R yorumlayıcı ikili dosyaları, bağlantılar altında GNU genel lisans V2 yayımlanır.)
 
 > [!Note]
-> RTVS şu anda yalnızca Windows üzerinde Visual Studio ve Visual Studio olmayan Mac için desteklenir
+> RTVS şu anda yalnızca Visual Studio 2017'de Windows ve Visual Studio olmayan Mac için desteklenir Visual Studio 2019 için kullanılamıyor.
 
 Visual Studio'da R deneyimi için:
 

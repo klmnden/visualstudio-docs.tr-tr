@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719281"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324019"
 ---
 # <a name="how-to-use-the-activity-log"></a>Nasıl yapılır: Etkinlik günlüğünü kullanma
 VSPackage için etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, perakende ortamlarda VSPackages hata ayıklama için özellikle yararlıdır.
@@ -46,7 +46,9 @@ VSPackage için etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, pera
 
 1. Visual Studio ile çalışmak [/Log](../ide/reference/log-devenv-exe.md) ActivityLog.xml oturumunuz sırasında diske yazmak için komut satırı anahtarı.
 
-2. Visual Studio kapatıldıktan sonra etkinlik günlüğü alt için Visual Studio veri bulma:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.
+2. Visual Studio kapatıldıktan sonra etkinlik günlüğü için Visual Studio veri alt klasörde bulabilirsiniz:
+
+   <em>*% AppData %</em>\Microsoft\VisualStudio\\\<sürüm > \ActivityLog.xml*.
 
 3. Etkinlik günlüğü herhangi bir metin düzenleyicisi ile açın. Tipik bir girişi şu şekildedir:
 
@@ -55,11 +57,13 @@ VSPackage için etkinlik günlüğü iletileri yazabilirsiniz. Bu özellik, pera
    ```
 
 ## <a name="robust-programming"></a>Güçlü programlama
- Etkinlik günlüğü bir hizmet olduğundan, etkinlik günlüğü VSPackage oluşturucuda kullanılamıyor.
 
- Etkinlik günlüğü, yalnızca kendisine yazmadan önce almanız gerekir. Önbellek yok veya gelecekte kullanım için Etkinlik günlüğünü kaydedin.
+Etkinlik günlüğü bir hizmet olduğundan, etkinlik günlüğü VSPackage oluşturucuda kullanılamıyor.
+
+Etkinlik günlüğü, yalnızca kendisine yazmadan önce almanız gerekir. Önbellek yok veya gelecekte kullanım için Etkinlik günlüğünü kaydedin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 - [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>

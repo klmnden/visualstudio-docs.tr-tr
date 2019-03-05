@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 168afe9d5188b445260f9143967cc022771917d9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 3bf7b25ccbcb964572c3ae302523cd5a540829c8
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323529"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Öğretici: Docker Compose ile çok kapsayıcılı uygulama oluşturma
 
@@ -23,13 +23,12 @@ Bu öğreticide, birden fazla kapsayıcı yönetmek ve bunları Visual Studio ka
 
 ::: moniker range="vs-2017"
 * [Docker Masaüstü](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/) ile **Web geliştirme**, **Azure Araçları** iş yükü veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
-
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ile **Web geliştirme**, **Azure Araçları** iş yükü veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 * [Docker Masaüstü](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019 Önizleme](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview) ile **Web geliştirme**, **Azure Araçları** iş yükünü ve/veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ile **Web geliştirme**, **Azure Araçları** iş yükünü ve/veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
 * [.NET core 2.2 geliştirme araçları](https://dotnet.microsoft.com/download/dotnet-core/2.2) geliştirme ile .NET Core 2.2
 ::: moniker-end
 

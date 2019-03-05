@@ -580,7 +580,7 @@ ASP.NET Core Web uygulaması</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Genellikle, istatistiksel bilgi işlem ve grafik için kullanılan bir Genişletilebilir programlama dili.</p>
+                                                    <p>(Visual Studio 2017 yalnızca) Genellikle, istatistiksel bilgi işlem ve grafik için kullanılan bir Genişletilebilir programlama dili.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ ASP.NET Core Web uygulaması</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ ASP.NET Core Web uygulaması</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Veri bilimi ve analitik uygulamalar</h3>
-                                            <p>Diller ve Python, R, dahil olmak üzere veri bilimi uygulamaları oluşturmaya yönelik araçlar ve F#.</p>
+                                            <p>Diller ve Python dahil olmak üzere veri bilimi uygulamaları oluşturmaya yönelik araçlar ve F# (ve yalnızca Visual Studio 2017'de R).</p>
                                         </div>
                                       </div>
                                     </div>

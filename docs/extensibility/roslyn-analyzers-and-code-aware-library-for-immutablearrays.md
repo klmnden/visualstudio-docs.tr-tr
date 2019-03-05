@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323646"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn Çözümleyicileri ve kod algılayan kitaplık Immutablearray'ler için
 
@@ -298,7 +298,7 @@ Ardından, yöntem belgesinin kök getirir ve kod genel durumda rastgele iş iç
 
 Artık basabilirsiniz **F5** , Çözümleyicisi Visual Studio ikinci bir örneğini yürütmek için. Önceden kullanmış olduğunuz konsol projesi açın. Artık, yeni nesne oluşturma ifadesi için olduğu görünür ampul görmelisiniz `ImmutableArray<int>`. Basarsanız **Ctrl**+**.** (Dönem), kodunuzu düzeltin ardından görür ve bir ampul kullanıcı Arabirimi otomatik olarak oluşturulan kodu fark önizlemede görürsünüz. Roslyn sizin için oluşturur.
 
-**Pro İpucu:** Visual Studio'nun ikinci örneğini başlatabilir ve kod düzeltmenizi ampul görmüyorsanız, Visual Studio bileşen önbelleği temizlemek gerekebilir. Önbelleği temizleniyor, Visual Studio, en son bileşenini ardından seçmeniz gerekir, böylece bileşenleri yeniden incelemek için Visual Studio zorlar. İlk olarak, Visual Studio ikinci örneğini kapatın. Ardından **Windows Explorer**, gitmek *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" sürümü başka bir sürümü Visual Studio ile değiştirir). Alt dizini silmek *ComponentModelCache*.
+**Pro İpucu:** Visual Studio'nun ikinci örneğini başlatabilir ve kod düzeltmenizi ampul görmüyorsanız, Visual Studio bileşen önbelleği temizlemek gerekebilir. Önbelleği temizleniyor, Visual Studio, en son bileşenini ardından seçmeniz gerekir, böylece bileşenleri yeniden incelemek için Visual Studio zorlar. İlk olarak, Visual Studio ikinci örneğini kapatın. Ardından **Windows Explorer**, gitmek *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. ("16,0" sürümü başka bir sürümü Visual Studio ile değiştirir.) Alt dizini silmek *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Video konuşacak ve bunları kod proje bitiş
 

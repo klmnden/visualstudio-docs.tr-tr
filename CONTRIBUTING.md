@@ -25,3 +25,7 @@ Lütfen geri bildirim aracı, hataları ve öneriler göndermek için herhangi b
 ### <a name="larger-edits"></a>Daha büyük düzenlemeler
 
 İçin yönergeleri gözden geçirmeniz [çekme istekleri](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) katkıda bulunan Kılavuzu'nda.
+
+**NOT**
+
+Etkin olarak dosyaları üzerinde çalışmakta olduğumuz değil `docs/vs-2015` bu klasöre olan ürünümüzün daha eski bir sürümü Visual Studio 2015 için. Biz bu dosyalara Önemsiz değişikliklerin çekme istekleri kabul etme.

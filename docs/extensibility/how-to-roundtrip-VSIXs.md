@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 07a9363eef7d350ddbc7ec55f9fab62f38dadc1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710610"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323821"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: Uzantılar Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirmek
 
@@ -51,7 +51,7 @@ Visual Studio 2015, Visual Studio 2017 yerine bu yükseltmeyi başlatmak için �
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Project.json başvuru olduğundan emin olun
 
-Bu belgede daha sonra biz de koşullu içeri aktarma deyimlerini ekler, **.csproj* dosya.  NuGet başvurularınızı depolanıyorsa çalışmaz *project.json*. Bu nedenle, tüm NuGet başvurularını taşımanız önerilir *packages.config* dosya.
+Bu belgede daha sonra biz de koşullu içeri aktarma deyimlerini ekler, **.csproj* dosya. NuGet başvurularınızı depolanıyorsa çalışmaz *project.json*. Bu nedenle, tüm NuGet başvurularını taşımanız önerilir *packages.config* dosya.
 Projeniz varsa bir *project.json* dosyası:
 
 * Başvuruları Not *project.json*.
@@ -61,7 +61,7 @@ Projeniz varsa bir *project.json* dosyası:
     * Visual Studio otomatik olarak oluşturur *packages.config* dosyayı.
 
 > [!NOTE]
-> Projenizi EnvDTE paketler içeriyorsa, bunlar sağ tıklanarak eklenmesi gerekebilir **başvuruları** seçerek **Başvurusu Ekle** ve uygun başvurusu ekleniyor.  NuGet paketlerini kullanarak projenizi çalışılırken hatalar oluşturabilir.
+> Projenizi EnvDTE paketler içeriyorsa, bunlar sağ tıklanarak eklenmesi gerekebilir **başvuruları** seçerek **Başvurusu Ekle** ve uygun başvurusu ekleniyor. NuGet paketlerini kullanarak projenizi çalışılırken hatalar oluşturabilir.
 
 ## <a name="add-appropriate-build-tools"></a>Uygun derleme araçları ekleme
 
@@ -84,18 +84,18 @@ Bunu yapmak için:
 
 ### <a name="1-installation-targets"></a>1. Yükleme hedefleri
 
-Hangi sürümleri hedefleyen bir VSIX oluşturmak için Visual Studio söylemeniz gerekir.  Genellikle, bu başvuruları sürüm 14.0 (Visual Studio 2015) veya sürüm 15.0 (Visual Studio 2017) ' dir.  Bu örnekte, iki sürümünü hedefleyecek şekilde yüzden, bir uzantı her ikisi için de yükleyecek bir VSIX oluşturmak istiyoruz.  VSIX oluşturup 14.0'dan önceki sürümlerinde yüklemek istiyorsanız, bu önceki sürüm numarasını ayarlayarak gerçekleştirilebilir; Bununla birlikte, sürüm 10.0 ve önceki sürümleri artık desteklenmemektedir.
+Hangi sürümleri hedefleyen bir VSIX oluşturmak için Visual Studio söylemeniz gerekir. Genellikle, bu başvuruları sürüm 14.0 (Visual Studio 2015), sürüm 15.0 (Visual Studio 2017) veya sürüm 16,0 (Visual Studio 2019) ' dir. Bu örnekte, iki sürümünü hedefleyecek şekilde yüzden, bir uzantı her ikisi için de yükleyecek bir VSIX oluşturmak istiyoruz. VSIX oluşturup 14.0'dan önceki sürümlerinde yüklemek istiyorsanız, bu önceki sürüm numarasını ayarlayarak gerçekleştirilebilir; Bununla birlikte, sürüm 10.0 ve önceki sürümleri artık desteklenmemektedir.
 
 * Açık *source.extension.vsixmanifest* dosyasını Visual Studio'da.
 * Açık **hedefleri Yükle** sekmesi.
-* Değişiklik **sürüm aralığı** için [14.0, 16,0).  ' [', Geçmiş 14.0 ve tüm sürümleri dahil etmek için Visual Studio söyler.  ')' 15.0 kadar ancak sürüm 16,0 içermeyen tüm sürümlerini dahil etmek için Visual Studio söyler.
+* Değişiklik **sürüm aralığı** için [14.0, 17,0). ' [', Geçmiş 14.0 ve tüm sürümleri dahil etmek için Visual Studio söyler. ')', Tüm sürümler dahil etmek için Visual Studio ancak değil de dahil olmak üzere, sürüm 17,0 söyler.
 * Tüm değişiklikleri kaydedin ve Visual Studio'nun tüm örneklerini kapatın.
 
 ![Yükleme hedefleri görüntüsü](media/visual-studio-installation-targets-example.png)
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Önkoşullar ekleme *extension.vsixmanifest* dosyası
 
-Önkoşullar, Visual Studio 2017 ile yeni bir özelliktir.  Bu durumda, Visual Studio çekirdek Düzenleyicisi bir önkoşul olarak ihtiyacımız var. Visual Studio 2015 VSIX Tasarımcı yeni işlemez beri `Prerequisites` bölümünde bu bölümünde el ile XML kodunu düzenle gerekir.  Alternatif olarak, Visual Studio 2017'yi açın ve önkoşulları eklemek için güncelleştirilmiş bildirim Tasarımcısı'nı kullanın.
+Önkoşullar, Visual Studio 2017 ile yeni bir özelliktir. Bu durumda, Visual Studio çekirdek Düzenleyicisi bir önkoşul olarak ihtiyacımız var. Visual Studio 2015 VSIX Tasarımcı yeni işlemez beri `Prerequisites` bölümünde bu bölümünde el ile XML kodunu düzenle gerekir. Alternatif olarak, Visual Studio 2017'yi açın ve önkoşulları eklemek için güncelleştirilmiş bildirim Tasarımcısı'nı kullanın.
 
 Bunu el ile yapmak için:
 
@@ -112,7 +112,7 @@ Bunu el ile yapmak için:
 * Dosyayı kaydedin ve kapatın.
 
 > [!NOTE]
-> Visual Studio 2017'de VSIX Tasarımcısı ile bunu kullanmayı tercih ederseniz Visual Studio 2017'in tüm sürümleri ile uyumlu olduğundan emin olmak için önkoşul sürümü el ile düzenlemeniz gerekir.  Tasarımcı en düşük sürüm (örneğin, 15.0.26208.0) Visual Studio'nun geçerli sürümünüzü ekleyecek olmasıdır.  Ancak, diğer kullanıcıların daha önceki bir sürümü olabileceği el ile düzenlemeniz isteyeceksiniz 15.0 için.
+> Visual Studio 2017'de VSIX Tasarımcısı ile bunu kullanmayı tercih ederseniz Visual Studio 2017'in tüm sürümleri ile uyumlu olduğundan emin olmak için önkoşul sürümü el ile düzenlemeniz gerekir. Tasarımcı en düşük sürüm (örneğin, 15.0.26208.0) Visual Studio'nun geçerli sürümünüzü ekleyecek olmasıdır. Ancak, diğer kullanıcıların daha önceki bir sürümü olabileceği el ile düzenlemeniz isteyeceksiniz 15.0 için.
 
 Bu noktada, bildirim dosyanız aşağıdakine benzer görünmelidir:
 
@@ -120,14 +120,14 @@ Bu noktada, bildirim dosyanız aşağıdakine benzer görünmelidir:
 
 ## <a name="modify-the-project-file-myprojectcsproj"></a>Proje dosyası (myproject.csproj) değiştirme
 
-Bu adımı yaparken açık olan bir değiştirilmiş .csproj başvuru olması önerilir.  Bazı örnekler bulabilirsiniz [burada](https://github.com/Microsoft/VSSDK-Extensibility-Samples).  Herhangi bir genişletilebilirlik örnek seçin, Bul *.csproj* dosya başvurusu için ve aşağıdaki adımları uygulayın:
+Bu adımı yaparken açık olan bir değiştirilmiş .csproj başvuru olması önerilir. Bazı örnekler bulabilirsiniz [burada](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Herhangi bir genişletilebilirlik örnek seçin, Bul *.csproj* dosya başvurusu için ve aşağıdaki adımları uygulayın:
 
 * Proje dizininde gidin **dosya Gezgini**.
 * Açık *myproject.csproj* dosyasını bir metin düzenleyici.
 
 ### <a name="1-update-the-minimumvisualstudioversion"></a>1. Güncelleştirme MinimumVisualStudioVersion
 
-* En düşük visual studio sürümü kümesine `$(VisualStudioVersion)` ve bunun için bir koşullu ifade ekleyin.  Bunlar yoksa, bu etiketler ekleyin.  Etiketler aşağıdaki gibi ayarlandığından emin olun:
+* En düşük visual studio sürümü kümesine `$(VisualStudioVersion)` ve bunun için bir koşullu ifade ekleyin. Bunlar yoksa, bu etiketler ekleyin. Etiketler aşağıdaki gibi ayarlandığından emin olun:
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -163,7 +163,7 @@ Bu adımı yaparken açık olan bir değiştirilmiş .csproj başvuru olması ö
 
 ### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Derleme araçları içeri aktarmalara koşulları ekleme
 
-* İçin ek koşul deyimlerini ekleyin `<import>` Microsoft.VSSDK.BuildTools başvurusuna sahip etiketler.  INSERT `'$(VisualStudioVersion)' != '14.0' And` önündeki koşul deyimi.  Bu deyimler, üstbilgi ve altbilgi csproj dosyasının görünür.
+* İçin ek koşul deyimlerini ekleyin `<import>` Microsoft.VSSDK.BuildTools başvurusuna sahip etiketler. INSERT `'$(VisualStudioVersion)' != '14.0' And` önündeki koşul deyimi. Bu deyimler, üstbilgi ve altbilgi csproj dosyasının görünür.
 
 Örneğin:
 
@@ -179,7 +179,7 @@ Bu adımı yaparken açık olan bir değiştirilmiş .csproj başvuru olması ö
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* İçin ek koşul deyimlerini ekleyin `<Error>` Microsoft.VSSDK.BuildTools başvurusuna sahip etiketler.  Ekleyerek bunu `'$(VisualStudioVersion)' != '14.0' And` önündeki koşul deyimi. Bu deyimler csproj dosyasının alt bilgiden görünür.
+* İçin ek koşul deyimlerini ekleyin `<Error>` Microsoft.VSSDK.BuildTools başvurusuna sahip etiketler. Ekleyerek bunu `'$(VisualStudioVersion)' != '14.0' And` önündeki koşul deyimi. Bu deyimler csproj dosyasının alt bilgiden görünür.
 
 Örneğin:
 
@@ -187,7 +187,7 @@ Bu adımı yaparken açık olan bir değiştirilmiş .csproj başvuru olması ö
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* İçin ek koşul deyimlerini ekleyin `<Error>` bir Microsoft.VisualStudio.Sdk.BuildTasks.14.0 sahip etiketler.  INSERT `'$(VisualStudioVersion)' == '14.0' And` önündeki koşul deyimi. Bu deyimler csproj dosyasının alt bilgiden görünür.
+* İçin ek koşul deyimlerini ekleyin `<Error>` bir Microsoft.VisualStudio.Sdk.BuildTasks.14.0 sahip etiketler. INSERT `'$(VisualStudioVersion)' == '14.0' And` önündeki koşul deyimi. Bu deyimler csproj dosyasının alt bilgiden görünür.
 
 Örneğin:
 

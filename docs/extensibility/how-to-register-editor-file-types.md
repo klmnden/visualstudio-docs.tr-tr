@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f26b7421676081b32060dd4f342ee05098d90a7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980329"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324162"
 ---
 # <a name="how-to-register-editor-file-types"></a>Nasıl yapılır: Düzenleyici dosya türlerini kaydetme
 Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri Düzenleyicisi kaydetmek için en kolay yolu olan [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] yönetilen paket framework (MPF) sınıfları. Yerel paketinizi uyguluyorsanız [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], düzenleyici ve ilişkili uzantıları kaydeden bir kayıt defteri betik da yazabilirsiniz.
@@ -26,12 +26,12 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
 
 1. Sağlamak <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> , VSPackage sınıfına düzenleyiciniz için uygun parametrelerle sınıfın.
 
-   ```
-   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+    ```
+    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
         TemplateDir = "..\\..\\Templates",
         NameResourceID = 106)]
-   ```
+    ```
 
     Burada *. Örnek* bu düzenleyici için kaydedilen uzantısı olduğundan ve "32" kendi öncelik düzeyi.
 
@@ -45,17 +45,17 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
 
     Uygulamanızda <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi, çağrı <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> yöntemi ve örneği, düzenleyici fabrikası gösterilen aşağıda geçirin.
 
-   ```csharp
-   protected override void Initialize()
-   {
-       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-       "Entering Initialize() of: {0}", this.ToString()));
-       base.Initialize();
-          //Create Editor Factory
-       editorFactory = new EditorFactory(this);
-       base.RegisterEditorFactory(editorFactory);
-   }
-   ```
+    ```csharp
+    protected override void Initialize()
+    {
+        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+        "Entering Initialize() of: {0}", this.ToString()));
+        base.Initialize();
+           //Create Editor Factory
+        editorFactory = new EditorFactory(this);
+        base.RegisterEditorFactory(editorFactory);
+    }
+    ```
 
     Bu adım, düzenleyici fabrikası hem Düzenleyici dosya uzantıları kaydeder.
 
@@ -64,14 +64,21 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
     VSPackage'ı çıkarıldığından, düzenleyici fabrikaları otomatik kaydı. Düzenleyici Üreteç nesnesi uyguluyorsa <xref:System.IDisposable> arabirimi, kendi `Dispose` ile Fabrika kaydını sonra yöntemi çağrıldığında [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Kayıt defteri betik kullanarak kayıt
- Yerel Düzenleyici fabrikaları ve dosya türlerini kaydetme [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] yapılır aşağıdaki gösterildiği gibi windows kayıt defterine yazmak için kayıt defteri betik kullanarak.
+Yerel Düzenleyici fabrikaları ve dosya türlerini kaydetme [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] yapılır aşağıdaki gösterildiği gibi windows kayıt defterine yazmak için kayıt defteri betik kullanarak.
 
 ### <a name="to-register-editor-file-types-using-a-registry-script"></a>Editor konfigurace kaydetmek için kayıt defteri betik kullanarak türleri
 
-1.  Kayıt defteri betiğinizde Düzenleyici üreteci ve GUID dize Düzenleyici fabrikası gösterildiği gibi tanımlayın `GUID_BscEditorFactory` aşağıdaki kayıt defteri betik bölümü. Ayrıca, uzantı ve düzenleyici uzantısı önceliğini tanımlayın:
+1. Kayıt defteri betiğinizde Düzenleyici üreteci ve GUID dize Düzenleyici fabrikası gösterildiği gibi tanımlayın `GUID_BscEditorFactory` aşağıdaki kayıt defteri betik bölümü. Ayrıca, uzantı ve düzenleyici uzantısı önceliğini tanımlayın:
 
     ```
-          NoRemove Editors     {         %GUID_BscEditorFactory% = s 'RTF Editor'         {             val Package = s '%CLSID_Package%'             val DisplayName = s 'An RTF Editor'             val ExcludeDefTextEditor = d 1             val AcceptBinaryFiles = d 0
+    NoRemove Editors
+    {
+        %GUID_BscEditorFactory% = s 'RTF Editor'
+        {
+            val Package = s '%CLSID_Package%'
+            val DisplayName = s 'An RTF Editor'
+            val ExcludeDefTextEditor = d 1
+            val AcceptBinaryFiles = d 0
 
             LogicalViews
             {
@@ -82,18 +89,21 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
             {
             }
 
-            Extensions            {                val rtf = d 50            }
+            Extensions
+            {
+                val rtf = d 50
+            }
         }
     }
     ```
 
-     Bu örnekte Düzenleyicisi dosya uzantısı olarak tanımlanan *.rtf* ve onun "50" bir önceliktir. GUID dizeleri tanımlanan *Resource.h* BscEdit örnek proje dosyası.
+    Bu örnekte Düzenleyicisi dosya uzantısı olarak tanımlanan *.rtf* ve onun "50" bir önceliktir. GUID dizeleri tanımlanan *Resource.h* BscEdit örnek proje dosyası.
 
-2.  VSPackage kaydetme.
+2. VSPackage kaydetme.
 
-3.  Düzenleyici üreteci kaydettirir.
+3. Düzenleyici üreteci kaydettirir.
 
-     Düzenleyici üreteci kaydedilmiştir <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> uygulaması.
+    Düzenleyici üreteci kaydedilmiştir <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> uygulaması.
 
     ```cpp
     // create editor factory.
@@ -101,27 +111,27 @@ Bir parçası olarak sağlanan kayıt öznitelikleri kullanarak dosya türleri D
     {
         CComObject<CBscEditorFactory> *pEdFact = new CComObject<CBscEditorFactory>;
         if (NULL == pEdFact)
-          return E_OUTOFMEMORY;
+            return E_OUTOFMEMORY;
 
         if (!pEdFact->FInit(this))
-          return E_UNEXPECTED;
+            return E_UNEXPECTED;
 
         m_srpEdFact = (IVsEditorFactory *) pEdFact;    // Note: assignment to a smart pointer does an AddRef()
     }
     // Query service for IVsRegisterEditors, register the editor factory
     CComPtr<IVsRegisterEditors> srpRegEd;
     if ((SUCCEEDED(m_srpPkgSiteSP->QueryService(SID_SVsRegisterEditors, IID_IVsRegisterEditors,(void **)&srpRegEd ))) && (srpRegEd != NULL))
-      {
-        ATLTRACE(TEXT(">> CVsPackage, registering editor factory.\n"));
-          if (FAILED(srpRegEd->RegisterEditor(GUID_BscEditorFactory,
-                      m_srpEdFact, &m_dwEditorCookie)))
-          {
-             ATLTRACE(TEXT(">> CVsPackage, RegisterEditor() failed.\n"));
-            return E_FAIL;
-          }
-      }
+        {
+            ATLTRACE(TEXT(">> CVsPackage, registering editor factory.\n"));
+            if (FAILED(srpRegEd->RegisterEditor(GUID_BscEditorFactory,
+                    m_srpEdFact, &m_dwEditorCookie)))
+            {
+                ATLTRACE(TEXT(">> CVsPackage, RegisterEditor() failed.\n"));
+                return E_FAIL;
+            }
+        }
         return S_OK;
     }
     ```
 
-     GUID dizeleri tanımlanan *Resource.h* BscEdit proje dosyası.
+    GUID dizeleri tanımlanan *Resource.h* BscEdit proje dosyası.

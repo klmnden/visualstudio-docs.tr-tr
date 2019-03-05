@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf013f24f38485d0db1ec6ca9f45d26f2ede2c9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: af4fd52b28846228f447f70320babbdd357bac89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684747"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324136"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Uzantı Şeması 2.0 başvurusu
 VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Dosya biçimi, bir şema tarafından yönetilir. Özel türler ve öznitelikler eklemek bu şema 2.0 sürümünü destekler.  Bildirim şeması genişletilebilir. Yükleyici bildirimi XML öğeleri ve onu anlamıyor öznitelikleri yok sayar.
@@ -127,11 +127,11 @@ VSIX dağıtım bildirimi dosyası, bir VSIX paketinin içeriğini açıklar. Do
         -   Tek sürüm # - yalnızca belirtilen sürümü.
 
         > [!IMPORTANT]
-        >  VSIX şemasının 2.0 sürümünde, Visual Studio 2012'de sunulmuştur. Bu şema kullanmak için Visual Studio 2012 olmalıdır veya daha sonra bu makinede yüklü ve ürünün bir parçası olan VSIXInstaller.exe kullanın. Visual Studio 2012 veya üzeri Vsıxınstaller, ancak sonraki sürümlerinde bir yükleyici kullanarak yalnızca Visual Studio'nun önceki sürümlerini hedefleyebilir.
+        > VSIX şemasının 2.0 sürümünde, Visual Studio 2012'de sunulmuştur. Bu şema kullanmak için Visual Studio 2012 olmalıdır veya daha sonra bu makinede yüklü ve ürünün bir parçası olan VSIXInstaller.exe kullanın. Visual Studio 2012 veya üzeri Vsıxınstaller, ancak sonraki sürümlerinde bir yükleyici kullanarak yalnızca Visual Studio'nun önceki sürümlerini hedefleyebilir.
 
         Visual Studio 2017 sürüm numaraları bulunabilir [Visual Studio derleme numaraları ve yayın tarihleri](../install/visual-studio-build-numbers-and-release-dates.md).
 
-        Visual Studio 2017 sürümleri için sürüm belirtme, alt sürümü her zaman olmalıdır **0**. Visual Studio 2017 sürüm 15.3.26730.0 [15.0.26730.0,16.0). Örneğin, ifade edilmelidir Bu yalnızca, Visual Studio 2017 sürüm numaraları gereklidir.
+        Visual Studio 2017 sürümleri için sürüm belirtme, alt sürümü her zaman olmalıdır **0**. Visual Studio 2017 sürüm 15.3.26730.0 [15.0.26730.0,16.0). Örneğin, ifade edilmelidir Bu yalnızca, Visual Studio 2017 ve sonraki sürüm numaraları için gereklidir.
 
     -   `AnyAttribute*` - `<InstallationTarget>` Öğesi, çalışma zamanında bir ad-değer çiftinin sözlüğü olarak sunulan açık uçlu bir kümesini öznitelikleri sağlar.
 
