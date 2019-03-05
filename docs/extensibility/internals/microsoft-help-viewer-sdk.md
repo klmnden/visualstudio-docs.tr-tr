@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023921"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323938"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 
@@ -29,7 +29,8 @@ Bu makale, Visual Studio Yardım Görüntüleyicisi Tümleştiriciler için aşa
 
 -   Ek Kaynaklar
 
-### <a name="creating-a-topic-f1-support"></a>Bir konu (F1 desteği) oluşturma
+## <a name="create-a-topic-f1-support"></a>Bir konu (F1 desteği) oluşturma
+
 Bu bölümde sunulan bir konu, konunun gereksinimleri, işlenmiş sonucuyla (F1 destek gereksinimleri dahil) konu ve son olarak, bir örnek konusu oluşturma için kısa bir açıklama Bileşenleri'ne genel bakış sağlar.
 
 **Yardım Görüntüleyici konusuna genel bakış**
@@ -91,17 +92,17 @@ ContosoTopic4.htm adlı yeni bir XHTML belge oluşturun ve başlık etiketi (aş
 
 ```
 
-Ardından, nasıl konu (kendi veya markalı), sunulacak nasıl tanımlamak için veri ekleme F1, Kimliğini (için diğer konulara bağlantı başvuruyla) TOC içinde konunun mevcut olduğu için bu konuda başvurmak için vs.  Desteklenen meta verileri tam listesi için aşağıdaki "İçerik meta verileri" tabloya bakın.
+Ardından, nasıl konu (kendi veya markalı), sunulacak nasıl tanımlamak için veri ekleme F1, Kimliğini (için diğer konulara bağlantı başvuruyla) TOC içinde konunun mevcut olduğu için bu konuda başvurmak için vs. Desteklenen meta verileri tam listesi için aşağıdaki "İçerik meta verileri" tabloya bakın.
 
 -   Bu durumda, kendi marka paket, Visual Studio Yardım Görüntüleyicisi markalama paketinin bir değişken kullanacağız.
 
--   F1 meta adı ve değeri ekleyin ("Microsoft.Help.F1" içerik "ContosoTopic4" =) IDE özellik paketinde sağlanan F1 değer eşleşir.  (Daha fazla bilgi için F1 destek bölümüne bakın.)   Bu için F1'e eşleşen değerdir IDE'de F1 seçildiğinde, bu konuda görüntülemek için IDE içinde arama öğesinden.
+-   F1 meta adı ve değeri ekleyin ("Microsoft.Help.F1" içerik "ContosoTopic4" =) IDE özellik paketinde sağlanan F1 değer eşleşir. (Daha fazla bilgi için F1 destek bölümüne bakın.) Bu için F1'e eşleşen değerdir IDE'de F1 seçildiğinde, bu konuda görüntülemek için IDE içinde arama öğesinden.
 
--   Konu kimliği Ekle Diğer konular tarafından bu konuya bağlanmak için kullanılan dize budur.  Bu konuda Yardım Görüntüleyici kimliği var.
+-   Konu kimliği Ekle Diğer konular tarafından bu konuya bağlanmak için kullanılan dize budur. Bu konuda Yardım Görüntüleyici kimliği var.
 
 -   TOC için bu konuda İçindekiler düğümü nerede görüneceğini tanımlamak için bu konunun üst düğüm ekleyin.
 
--   TOC için bu konunun düğüm sırası ekleyin. N alt düğüm sayısı üst düğüme sahip olduğunda, alt düğümleri sırasına göre bu konunun konumunu tanımlayın. For example, bu konu başlığı altında 4 4 alt konuları sayısıdır.)
+-   TOC için bu konunun düğüm sırası ekleyin. Üst düğümün olduğunda `n` sayısı alt düğümler, bu konunun alt düğümleri sırasına göre tanımlayın. Örneğin, bu konu başlığı altında 4 4 alt konuları sayısıdır.
 
 Örnek meta veriler bölümü:
 
@@ -124,7 +125,6 @@ Ardından, nasıl konu (kendi veya markalı), sunulacak nasıl tanımlamak için
 
 </body>
 </html>
-
 ```
 
 **Konu gövdesi**
@@ -141,10 +141,10 @@ Konu gövdesi (üstbilgi ve altbilgi dahil değil) sayfa bağlantılarının, No
 
 5.  Dile özgü metin kodu ekleyin:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Unutmayın `devLangnu=` diğer diller girmenizi sağlar. Örneğin, `devLangnu="Fortran"` Fortran görüntüler, kod parçacığı DisplayLanguage Fortran =
 
-6.  Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  Sayfa bağlantılarının ekleyin: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Not: için desteklenmeyen yeni "Görüntüleme dilini" (örneğin, F#, Cobol, Fortran) kod parçacığında kod renklendirme, tek renkli olacaktır.
+> Not: için desteklenmeyen yeni "Görüntüleme dilini" (örneğin, F#, Cobol, Fortran) kod parçacığında kod renklendirme, tek renkli olacaktır.
 
 **Yardım Görüntüleyicisi konuya örnek** kod meta verileri, bir kod parçacığı, daraltılabilir alan ve dile özgü metin nasıl tanımlanacağını göstermektedir.
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ Bir kullanıcı daha sonra iş ortakları hive altında bir ad alanı olarak Cus
 
 Aşağıdaki kayıt defteri anahtarı ve değeri ekleyin:
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Yardım anahtar: Hata ayıklama çıktı perakende değeri görüntüle: EVET
+::: moniker range="vs-2017"
 
-Yardım menü öğesi altında IDE içindeki "Yardım bağlamı hata ayıklama" seçin.
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Yardım**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Yardım**
+
+::: moniker-end
+
+Değer: Görüntü hata ayıklama çıkışını perakende veri: EVET
+
+Yardım menü öğesi altında IDE içindeki seçin **hata ayıklama yardımcı bağlam**.
 
 **İçerik meta verileri**
 
@@ -366,7 +378,8 @@ Aşağıdaki tabloda, köşeli ayraç görünen herhangi bir dize tarafından ta
 | \< Meta name="Microsoft.Help.TopicVersion içeriği ="[konu sürüm number]"/ > | Birden çok sürümünün bir katalogda mevcut olduğunda, bu konunun sürümü belirtir. Microsoft.Help.Id benzersiz olması garanti edilmez olduğundan, birden fazla sürümü bir konu bir katalogda Örneğin, bir katalog bir konu için bir konu başlığı ve .NET Framework 3.5 için .NET Framework 4 içerir ve her ikisi de aynı Micro var. Bu etiketi gereklidir yazılım. Help.Id. |
 | \< Meta adı "SelfBranded" content = "[TRUE veya false değerini]" = / > | Bu konuda Yardım Kitaplığı Yöneticisi başlatma marka paketini veya konuya özgü marka paketini kullanıp kullanmayacağını belirtir. Bu etiket ya da TRUE olması gerekir ya da yanlış. Konu diğer içerik işleme farklı olsa bile beklendiği gibi işlenir böylece Yardım Kitaplığı Yöneticisi başlatıldığında ayarlanır marka paketi marka paketi ilişkili konu için geçersiz kılar, TRUE olarak ayarlanırsa. FALSE ise, geçerli konuda Yardım Kitaplığı Yöneticisi yeniden başlatıldığında ayarlanır marka paketi göre işlenir. Varsayılan olarak, Yardım Kitaplığı Yöneticisi SelfBranded değişkeni TRUE olarak bildirildiği sürece false olarak kendi kendine marka varsayar; Bu nedenle, bildirmeniz gerekmez \<meta name = "SelfBranded" content = "FALSE" / >. |
 
-### <a name="creating-a-branding-package"></a>Marka paket oluşturma
+## <a name="create-a-branding-package"></a>Marka paket oluşturma
+
 Visual Studio sürüm, Visual Studio iş ortakları için yalıtılmış ve tümleşik Kabuk gibi farklı Visual Studio ürün sayısı kapsar.  Her bu ürünlerin belirli bir ölçüde konu tabanlı Yardım içeriği desteği, ürüne özgü marka gerektirir.  ISO Kabuk sarmalar, SQL Studio'yu kendi benzersiz Yardım içerik için her konuda marka gerektirirken, Visual Studio konuları tutarlı marka sunuyu olması gerekir.  Tümleşik Kabuk iş ortağı, Yardım konuları, kendi konu marka sağlamanın yanı sıra Visual Studio ürün Yardım içeriğini üst öğe içinde olmasını isteyebilirsiniz.
 
 Marka paketleri Yardım Görüntüleyicisi'ni içeren ürün tarafından yüklenir.  Visual Studio ürünleri için:
@@ -432,7 +445,6 @@ Bir konu içerdiğinde, tutarlı bir şekilde belirli bir konu öğelerinde çiz
 Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sahip - hataları ve büyük olasılıkla uygulama kilitlenme bu değerlerin değiştirilmesi veya kaldırılması neden olur. Yerelleştirme tanımlayıcıları (örneğin _locID="codesnippet.n"), Visual Studio markalama pakette dahil edilir.
 
 **Branding.XML**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Visual Studio İçerik, Visual Studio logosu ve bunun yanı sıra diğer grafik 
 |ccOn.png|Grafik resim yazısı||
 |ImageSprite.png|Daraltılabilir alan işlemek için kullanılan|Genişletilmiş veya grafiği Daralt|
 
-### <a name="deploying-a-set-of-topics"></a>Konuları kümesi dağıtma
+## <a name="deploy-a-set-of-topics"></a>Konuları kümesi dağıtma
+
 MSHA dosyası ve kabinler veya konuları içeren MSHCs kümesinden oluşan bir Yardım Görüntüleyici içerik dağıtımı kümesi oluşturmak için basit ve hızlı bir öğretici budur. MSHA kabinler kümesini tanımlayan bir XML dosyasına veya MSHC dosyalar var. Yardım Görüntüleyicisi'ni (. içerik listesini almak için MSHA okuyabilirsiniz CAB veya. MSHC dosyaları) yerel yükleme için kullanılabilir.
 
 Yalnızca çok basit bir XML şeması için Yardım Görüntüleyicisi MSHA açıklayan bir öncü budur.  Bu kısa genel bakış ve örnek HelpContentSetup.msha aşağıda bir örnek uygulama yok.
@@ -677,14 +690,14 @@ Visual Studio Paket marka elde etmek için C:\Program Files (x86) \Microsoft Hel
 </div>
 </body>
 </html>
-
 ```
 
 **Özet**
 
 Visual Studio Yardım Görüntüleyicisi için kendi içerik kümesi dağıtmak VSPs kullanarak ve yukarıdaki adımları genişletme etkinleştirir.
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio Kabuğu (tümleşik ve yalıtılmış) Yardım ekleme
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio Kabuğu (tümleşik ve yalıtılmış) için Yardım'ı Ekle
+
 **Giriş**
 
 Bu izlenecek yol, Yardım içeriğini bir Visual Studio Shell uygulamaya eklemenizi ve dağıttıktan sonra gösterilmektedir.
@@ -786,7 +799,7 @@ Dağıtılmışsa, bunu test etmek için:
 
 6. CatalogType.xml oluşturun ve içerik deposu (önceki adımda) içeren ekleyin:
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -817,7 +830,7 @@ Dağıtılmışsa, bunu test etmek için:
 
 12. Contoso IDE F1 işlevselliğini test etmek için F1 tuşuna basın.
 
-### <a name="additional-resources"></a>Ek kaynaklar
+## <a name="additional-resources"></a>Ek kaynaklar
 
 Çalışma zamanı API için bkz: [Windows Yardımı API](/previous-versions/windows/desktop/helpapi/helpapi-portal).
 
