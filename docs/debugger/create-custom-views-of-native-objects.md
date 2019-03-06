@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637861"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428810"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Hata ayıklayıcıda yerel nesnelerin özel görünümlerini oluşturma
 
@@ -99,11 +99,21 @@ Ekleyebileceğiniz *.natvis* dosyaları kullanıcı dizininize veya bir sistem d
 
 1. Tüm *.natvis* gömülü dosyaları bir *.pdb* yüklenen projede aynı adda bir dosya mevcut değilse, hata ayıklama.
 
-1. Tüm *.natvis* yüklenmiş C++ proje veya üst düzey çözüm dosyaları. Bu grup, diğer dillerde sınıf kitaplıkları, ancak değil projeleri dahil olmak üzere tüm yüklenmiş C++ projeleri içerir.
+2. Tüm *.natvis* yüklenmiş C++ proje veya üst düzey çözüm dosyaları. Bu grup, diğer dillerde sınıf kitaplıkları, ancak değil projeleri dahil olmak üzere tüm yüklenmiş C++ projeleri içerir.
 
-1.  Kullanıcıya özgü Natvis dizin (örneğin, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+::: moniker range="vs-2017"
 
-1.  Sistem genelinde Natvis dizini (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Bu dizine sahip *.natvis* Visual Studio ile yüklenen dosyalar. Yönetici izinleriniz varsa, bu dizine dosyaları ekleyebilirsiniz.
+3.  Kullanıcıya özgü Natvis dizin (örneğin, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  Kullanıcıya özgü Natvis dizin (örneğin, *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+
+::: moniker-end
+
+4.  Sistem genelinde Natvis dizini (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Bu dizine sahip *.natvis* Visual Studio ile yüklenen dosyalar. Yönetici izinleriniz varsa, bu dizine dosyaları ekleyebilirsiniz.
 
 ## <a name="modify-natvis-files-while-debugging"></a>.Natvis dosyalarında hata ayıklama sırasında değişiklik
 

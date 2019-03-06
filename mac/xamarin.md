@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319453"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428576"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin mobil uygulama geliştirme
 
@@ -28,7 +28,7 @@ Android Designer hakkında daha fazla bilgi için bkz. [Xamarin.Android Tasarım
 
 ## <a name="ios"></a>iOS
 
-İOS Designer, Mac için Visual Studio'yla tamamen tümleşiktir ve .xib ve iOS, tvOS ve WatchOS kullanıcı arabirimleri ve geçişleri oluşturmak için görsel taslak dosyalarını görsel düzenleme sağlar. Olayları işleme için sezgisel bir yaklaşım kullanarak araç ve tasarım yüzeyine arasında sürükle ve bırak işlevini kullanarak tüm kullanıcı arabirimi oluşturulabilir. İOS Tasarımcısı'nı da destekler [özel denetimler/xamarin/ios/kullanıcı-arabirimi/designer/ios-designable-denetimleri-genel bakış) avantajını tasarım zamanı işleme ile.
+İOS Designer, Mac için Visual Studio'yla tamamen tümleşiktir ve .xib ve iOS, tvOS ve WatchOS kullanıcı arabirimleri ve geçişleri oluşturmak için görsel taslak dosyalarını görsel düzenleme sağlar. Olayları işleme için sezgisel bir yaklaşım kullanarak araç ve tasarım yüzeyine arasında sürükle ve bırak işlevini kullanarak tüm kullanıcı arabirimi oluşturulabilir. İOS Tasarımcısı'nı da destekler [özel denetimler](/xamarin/ios/user-interface/designer/ios-designable-controls-overview) avantajını tasarım zamanı işleme ile.
 
 ![iOS görsel taslak Tasarımcısı](media/intro-image30.png)
 

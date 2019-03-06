@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927119"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428615"
 ---
 # <a name="refactor-code"></a>Kodu yeniden düzenleme
 
@@ -22,7 +22,11 @@ Yeniden düzenleme, anlama ve genişletmek daha kolay hale getirmek için kod de
 
 ## <a name="programming-languages"></a>Programlama dilleri
 
-Farklı bir yeniden düzenleme işlemleri, Visual Studio'da farklı programlama dili için kullanılabilir. Bu bölümdeki konular, yeniden düzenlemeler için kullanılabilir kapsayan C# ve Visual Basic. C++, kodu yeniden düzenleme hakkında bilgi için bkz. [yazma ve yeniden düzenleme, kod (C++)](/cpp/ide/writing-and-refactoring-code-cpp). Yeniden düzenleme desteği için F# tarafından sağlanan [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), bir üçüncü taraf Visual Studio uzantısı.
+Farklı bir yeniden düzenleme işlemleri, Visual Studio'da farklı programlama dili için kullanılabilir:
+
+- İçindekiler tablosu, bu bölümdeki sayfaları yeniden düzenlemeler için kullanılabilir kapsayan C# ve Visual Basic. Bazı örnekler [yeniden düzenleme yöntemi Ayıkla](reference/extract-method.md) ve [taşıma türü bir eşleşen dosya yeniden düzenleme için](reference/move-type-to-matching-file.md).
+- C++ kodu yeniden düzenleme hakkında daha fazla bilgi için bkz: [yazma ve yeniden düzenleme, kod (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- Yeniden düzenleme desteği için F# tarafından sağlanan [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), bir üçüncü taraf Visual Studio uzantısı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

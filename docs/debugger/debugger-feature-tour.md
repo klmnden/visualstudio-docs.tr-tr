@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696746"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428693"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı ilk bakış
 
@@ -77,7 +77,7 @@ Tarihine kadar kod satırının üzerine hata ayıklayıcısı olsa, **tıklanan
 ![Tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click-2.png "tıklanan satıra kadar Çalıştır")
 
 > [!NOTE]
-> **Tıklanan satıra kadar Çalıştır** (yürütmeyi buraya Çalıştır) düğmesidir yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **Tıklanan satıra kadar Çalıştır** başlatmadaki (yürütmeyi buraya Çalıştır) düğmesi kullanılabilir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Tıklayın **tıklanan satıra kadar Çalıştır** (yürütmeyi buraya Çalıştır) düğmesi. Hata ayıklayıcı kod satırına tıklattığınız ilerler.
 

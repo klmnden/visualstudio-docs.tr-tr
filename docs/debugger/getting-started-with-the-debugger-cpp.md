@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679131"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428784"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: C++ kodunuzu Visual Studio kullanarak hata ayıklamayı öğrenin
 
@@ -35,11 +35,20 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
+::: moniker range=">=vs-2019"
+
+* Visual Studio 2019 yüklü olması gerekir ve **C++ ile masaüstü geliştirme** iş yükü.
+
+::: moniker-end
+::: moniker range="vs-2017"
+
 * Visual Studio 2017 yüklü olması gerekir ve **C++ ile masaüstü geliştirme** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+::: moniker-end
 
-    İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -218,7 +227,7 @@ Almak için en iyi yolu olduğundan bu çoğunlukla, klavye kısayollarını Bur
      ![Tıkla Çalıştır kullanın özellik](../debugger/media/get-started-run-to-click-cpp.png "tıklanan satıra kadar Çalıştır")
 
    > [!NOTE]
-   > **Tıklanan satıra kadar Çalıştır** düğmesidir yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız kullanın **F11** Bu örnekte bunun yerine hata ayıklayıcı doğru yere ilerlemek için.
+   > **Tıklanan satıra kadar Çalıştır** düğmesi itibariyle kullanılabilir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Yeşil ok düğmesini görmüyorsanız kullanın **F11** Bu örnekte bunun yerine hata ayıklayıcı doğru yere ilerlemek için.
 
 2. Tıklayın **tıklanan satıra kadar Çalıştır** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 

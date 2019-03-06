@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700919"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428706"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Özel durumlar Visual Studio hata ayıklayıcısı ile yönetme
 
@@ -204,7 +204,7 @@ public class GenericException<T> : Exception
 Kullanım **özel durum ayarları** penceresinde koşulları özel durumlarını ayarlama. Şu anda desteklenen koşullar dahil etmek veya hariç tutmak için bir özel durum için modül adlarını içerir. Modül adlarını koşul olarak ayarlayarak, yalnızca belirli kod modülleri üzerinde özel durum için kesme seçebilirsiniz. Belirli modüller hakkında en son önlemek seçebilirsiniz.
 
 > [!NOTE]
-> Bir özel durum koşulları ekleme yeni [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Bir özel durum koşulları ekleme den başlayarak desteklenir [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Koşullu özel durumlar eklemek için:
 

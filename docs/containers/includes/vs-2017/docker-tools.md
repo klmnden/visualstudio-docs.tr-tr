@@ -6,19 +6,19 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: c33c53e16e8845031676c6b729767c781b4f8c80
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0440c2515e3e1341f465d0d62a3a8daf490f9993
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "57223830"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57333916"
 ---
 Visual Studio ile kolayca oluşturun, hata ayıklama ve kapsayıcılı ASP.NET Core uygulamaları çalıştırın ve Azure Container Registry (ACR), Docker Hub, Azure App Service veya kendi kapsayıcı kayıt defteri yayımlarsınız. Bu makalede, biz ACR'ye yayınlayacaksınız.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 * [Docker Masaüstü](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/) ile **Web geliştirme**, **Azure Araçları** iş yükünü ve/veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ile **Web geliştirme**, **Azure Araçları** iş yükünü ve/veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
 * Azure Container Registry, Azure aboneliğinin yayınlamak için. [Ücretsiz deneme için kaydolun](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Yükleme ve Kurulum

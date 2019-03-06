@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954435"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428836"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 
@@ -134,7 +134,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 | Ön plan: devre dışı | ![#FFA2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 örneği")<br />`#FFA2A4A5` | ![#FF656565 örneğini](../../extensibility/ux-guidelines/media/656565.png "#FF656565 örneği")<br />`#FF656565` | ![#FFA2A4A5 örneğini](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 örneği")<br />`#FFA2A4A5` | ![GrayText örneğini](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText örneği")<br />`GrayText` |
 | Arka plan: devre dışı | ![#FFF5F5F5 örneğini](../../extensibility/ux-guidelines/media/F5F5F5.png "#FFF5F5F5 örneği")<br />`#FFF5F5F5` | ![#FF252526 örneğini](../../extensibility/ux-guidelines/media/252526.png "#FF252526 örneği")<br />`#FF252526` | ![#FFF6F6F6 örneğini](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 örneği")<br />`#FFF6F6F6` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 | Kenarlık | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![#FF434346 örneğini](../../extensibility/ux-guidelines/media/434346.png "#FF434346 örneği")<br />`#FF434346` | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
-| Kenarlık: devre dışı | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![#FF434346 örneğini](../../extensibility/ux-guidelines/media/434346.png "#FF434346 örneği")<br />`#FF434346` | ![#FFC6C6C6 örneğini](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 örneği")<br />`#FFC6C6C6` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark ` |
+| Kenarlık: devre dışı | ![#FFCCCEDB örneğini](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB örneği")<br />`#FFCCCEDB` | ![#FF434346 örneğini](../../extensibility/ux-guidelines/media/434346.png "#FF434346 örneği")<br />`#FF434346` | ![#FFC6C6C6 örneğini](../../extensibility/ux-guidelines/media/C6C6C6.png "#FFC6C6C6 örneği")<br />`#FFC6C6C6` | ![ControlDark örneğini](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark örneği")<br />`ControlDark` |
 
 ### <a name="list-items"></a>Liste öğeleri
 

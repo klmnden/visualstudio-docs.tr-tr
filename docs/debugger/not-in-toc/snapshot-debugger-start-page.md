@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703714"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428654"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Anlık görüntü hata ayıklayıcısı ile çalışmaya başlama
 
@@ -69,6 +69,6 @@ Snapshot Debugger hakkında daha fazla bilgi bulabilirsiniz [docs sayfasının](
 
 ## <a name="dont-show-me-this-again"></a>Yok ' Bu yeniden Göster
 
-Hiç anlık görüntü hata ayıklayıcısı başlangıç sayfası yeniden Snapshot Debugger bağladığınızda göstermek için değiştirin **Göster 'Başlarken' sayfasında oturum başlangıcı** seçeneğini **Araçları**  >   **Seçenekleri** > **anlık görüntü hata ayıklayıcısı**.
+Snapshot Debugger bağlandığınızda hiç anlık görüntü hata ayıklayıcısı başlangıç sayfası gösterme değiştirmek **Göster 'Başlarken' sayfasında oturum başlangıcı** seçeneğini **Araçları**  >   **Seçenekleri** > **anlık görüntü hata ayıklayıcısı**.
 
 ![Anlık görüntü hata ayıklayıcısı aracı seçeneği sayfası](../media/snapshot-startpage-tools-options.png)

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637509"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428771"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
 Visual Studio hata ayıklayıcı bir yerel veya uzak bilgisayarda çalışan bir işleme ekleyebilirsiniz. İşlem çalışmaya başladıktan sonra seçin **hata ayıklama** > **iliştirme** veya basın **Ctrl**+**Alt** + **P** Visual Studio ve kullanım **iliştirme** işleme hata ayıklayıcı için iletişim kutusu.
@@ -95,9 +95,20 @@ IIS'ye dağıtılan ASP.NET uygulamalarında hata ayıklama için daha eksiksiz 
 
    - Aşağı açılan oku seçin **bağlantı hedefi**, aşağı açılan listeden bilgisayar adını seçin.
    - Bilgisayar adını yazın **bağlantı hedefi** kutusu.
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > Uzak bilgisayar adını kullanarak bağlanamıyorsa, IP kullanmayı deneyin ve bağlantı noktası adresi (örneğin, `123.45.678.9:4022`). 4022 x64 Visual Studio 2017 uzaktan hata ayıklayıcı için varsayılan bağlantı noktasıdır. Diğer uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın [uzaktan hata ayıklayıcı bağlantı noktası atamaları](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > Uzak bilgisayar adını kullanarak bağlanamıyorsa, IP kullanmayı deneyin ve bağlantı noktası adresi (örneğin, `123.45.678.9:4022`). 4024 Visual Studio 2019 x64 uzaktan hata ayıklayıcı için varsayılan bağlantı noktasıdır. Diğer uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın [uzaktan hata ayıklayıcı bağlantı noktası atamaları](remote-debugger-port-assignments.md).
+
+     ::: moniker-end
 
    - Seçin **Bul** düğmesinin yanındaki **bağlantı hedefi** açılacak kutusuna **uzak bağlantıları** iletişim kutusu. **Uzak bağlantıları** iletişim kutusu, yerel alt ağda veya bilgisayarınıza doğrudan bağlı tüm cihazları listeler. Gerekebilir [açın UDP bağlantı noktası 3702](../debugger/remote-debugger-port-assignments.md) uzak cihazları bulmak için sunucuda. Bilgisayarı veya cihazı ve ardından seçin **seçin**.
 
@@ -142,7 +153,7 @@ Bu geçici çözümlerden biri Mümkünse, üçüncü seçenek olmasına çalı�
 Hızlı, daha önce seçerek eklendiği işlemlere iliştirebilirsiniz **hata ayıklama** > **İliştir** (**Shift** + **Alt**+**P**). Bu komutu seçtiğinizde, son ilk önceki işlem kimliğini deneyerek bağlı işlemler iliştirmek hata ayıklayıcı hemen deneyecek ve bu, önceki eşleştirerek başarısız olursa adı işleyin. Herhangi bir eşleşme bulunursa veya çeşitli işlemlerin aynı ada sahipse **iliştirme** doğru işlemi seçebilmeniz için iletişim kutusu açılır.
 
 > [!NOTE]
-> **İliştir** komutu Visual Studio 2017'de yenidir.
+> **İliştir** komutu Visual Studio 2017'den itibaren kullanılabilir.
 
 ## <a name="BKMK_Scenarios"></a> Hata ayıklama senaryoları
 

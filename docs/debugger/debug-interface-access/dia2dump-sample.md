@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607050"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428550"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump Örneği
 
@@ -64,7 +64,7 @@ Varsayılan olarak, yükleme dizini korumalı bir dizindir. Derleme ve bu konuma
 
 ## <a name="run-the-dia2dump-sample"></a>Dia2Dump örneği çalıştırma
 
-Dia2Dump.exe kullanır üzerinde msdıa*sürüm*.dll COM sunucusunun hizmetlerini sunması için. Visual Studio 2015 ve Visual Studio 2017'de, msdia140.dll sürümüdür. Varsa msdıa*sürüm*değil .dll COM sunucusu başlatılır, dia2dump.exe çalışmadan önce kaydetmeniz gerekir. DIA SDK'sı dizinine sahip x86 içeren bin alt dll Dosyasının sürümü. Bir sürüm için x64 mimarisi makineler bin\amd64 içinde ve bir sürüm ARM için bin\arm içinde. Dll kaydetmek için yükseltilmiş bir geliştirici komut istemi penceresi açın ve makine Mimarinizi sürümü içeren dizine geçin. Komutu girdikten `regsvr32 msdia140.dll` COM sunucuyu kaydetmek için.
+Dia2Dump.exe kullanır üzerinde msdıa*sürüm*.dll COM sunucusunun hizmetlerini sunması için. Visual Studio 2015'ten başlayarak, msdia140.dll sürümüdür. Varsa msdıa*sürüm*değil .dll COM sunucusu başlatılır, dia2dump.exe çalışmadan önce kaydetmeniz gerekir. DIA SDK'sı dizinine sahip x86 içeren bin alt dll Dosyasının sürümü. Bir sürüm için x64 mimarisi makineler bin\amd64 içinde ve bir sürüm ARM için bin\arm içinde. Dll kaydetmek için yükseltilmiş bir geliştirici komut istemi penceresi açın ve makine Mimarinizi sürümü içeren dizine geçin. Komutu girdikten `regsvr32 msdia140.dll` COM sunucuyu kaydetmek için.
 
 ### <a name="to-run-the-sample"></a>Örnek çalıştırmak için
 

@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920055"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428667"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE’ye ilk bakış
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), biz windows, menüler ve diğer kullanıcı Arabirimi özellikleri bazıları ilişkin tura katılın.
 
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Başlangıç penceresi
+
+Visual Studio'yu başlattıktan sonra gördüğünüz ilk şey bir başlangıç penceredir. Başlangıç penceresi "kodu daha hızlı" yardımcı olmak için tasarlanmıştır. Bu, kapatın veya kullanıma alma kodu, varolan bir projeyi veya çözümü açın, yeni bir proje oluşturun veya yalnızca bazı kod dosyaları içeren klasör Aç için seçenek vardır.
+
+[![](media/vs-2019/start-window.png "Visual Studio 2019 başlangıç penceresi")](media/vs-2019/start-window.png)
+
+Visual Studio kullanıyorsanız ilk kez varsa, son kullanılan projeler listesi boş olur.
+
+İle çalışıyorsanız dayalı MSBuild dışındaki kod tabanlarında, kullanacağınız **yerel bir klasöre açın** kodunuzu Visual Studio'da açmak için seçeneği. Daha fazla bilgi için [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](develop-javascript-code-without-solutions-projects.md). Aksi takdirde, yeni bir proje oluşturun veya GitHub ya da Azure DevOps gibi bir kaynak sağlayıcısı bir projeden kopyalayın.
+
+**Kod olmadan devam** seçeneği yalnızca belirli bir proje veya yüklenen kod olmadan Visual Studio geliştirme ortamını açar. Katılmak için bu seçeneği belirleyebilirsiniz bir [Live Share](/visualstudio/liveshare/) oturuma veya hata ayıklama için bir işleme iliştirin. Ayrıca basabilirsiniz **Esc** başlangıç pencereyi kapatın ve IDE açın.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Başlangıç Sayfası
 
@@ -31,9 +49,27 @@ Kapatırsanız **başlangıç sayfası** ve tekrar görmek istiyorsanız, burada
 
 ![Visual Studio'da Dosya menüsü](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>Proje oluşturma
 
 Visual Studio'nun özellikleri keşfetmeye devam etmek için yeni bir proje oluşturalım.
+
+::: moniker range=">=vs-2019"
+
+1. Üzerinde **başlangıç penceresi**seçin **yeni bir proje oluşturma**, arama kutusuna yazın, sonra da **javascript** "javascript" içeren bu proje türleri listesini filtrelemek için içinde ad veya dil türü.
+
+   Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. (TypeScript geliştiricisiyseniz, alternatif olarak, o dilde bir proje oluşturmak çekinmeyin. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
+
+   ![Visual Studio Başlangıç penceresinde proje şablonlarında Ara](media/vs-2019/create-new-project.png)
+
+1. Seçin bir **boş Node.js Web uygulaması** proje şablonu ve tıklatın **sonraki**. 
+
+1. İçinde **yeni projenizi yapılandırın** görüntülenen iletişim kutusunda varsayılan proje adını kabul edin ve **Oluştur**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. Üzerinde **başlangıç sayfası**, arama kutusuna altında **yeni proje**, yazın **javascript** adında "javascript" içeren bu proje türleri listesini filtrelemek için veya Dil türü.
 
@@ -42,6 +78,7 @@ Visual Studio'nun özellikleri keşfetmeye devam etmek için yeni bir proje olu�
    Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. Seçin bir **boş Node.js Web uygulaması** proje şablonu. (TypeScript geliştiricisiyseniz, alternatif olarak, o dilde bir proje oluşturmak çekinmeyin. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
 
 1. İçinde **yeni proje** görüntülenen iletişim kutusunda varsayılan proje adını kabul edin ve **Tamam**.
+::: moniker-end
 
    Proje oluşturulur ve bir dosya adlı *server.cs* açılır **Düzenleyicisi** penceresi. **Düzenleyicisi** dosyaların içeriğini gösterir ve Visual Studio kodlama iş çoğunu burada gerçekleştirirsiniz.
 
