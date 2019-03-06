@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683603"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525407"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
@@ -94,7 +94,7 @@ A *kesme noktası* olan Visual Studio çalışan burada askıya almanız göster
 
 ## <a name="navigate-code"></a>Kod gidin
 
-Devam etmek için hata ayıklayıcı istemek için farklı komutlar vardır. Visual Studio 2017'de yeni bir faydalı kod Gezinti komut göstereceğiz.
+Devam etmek için hata ayıklayıcı istemek için farklı komutlar vardır. Visual Studio 2017'den itibaren kullanılabilir olan bir kullanışlı kod Gezinti komutu göstereceğiz.
 
 Kesme noktasında duraklatıldığı sırada deyimi üzerinden gelin `return c2` yeşil kadar **Çalıştır'a tıklayın** düğmesi ![tıklanan satıra kadar Çalıştır](../debugger/media/dbg-tour-run-to-click.png) görünür ve tuşuna **Çalıştır'ı tıklatın** düğmesi.
 

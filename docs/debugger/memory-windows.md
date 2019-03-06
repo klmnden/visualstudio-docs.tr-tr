@@ -1,6 +1,6 @@
 ---
 title: Hata ayıklayıcıda değişkenler için belleği görüntüleme | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 10/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 832cb9b7b3e554e8a1180c99ae6384384ccd3b97
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681640"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526691"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio hata ayıklayıcısında bellek windows kullanın (C#, C++, Visual Basic F#)
 

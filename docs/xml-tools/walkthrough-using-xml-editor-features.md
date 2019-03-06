@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954692"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525876"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>İzlenecek yol: XML Düzenleyicisi özelliklerini kullanma
 
-Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini göstermektedir. İzlenecek yol bazı XML yazmak için değerli hale getiren XML Düzenleyicisi'nin özelliklerini kullanır.
+Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini göstermektedir. İzlenecek yol bazı XML yazmak için değerli hale getiren XML Düzenleyicisi özelliklerini kullanır.
 
 > [!NOTE]
 > Yönergelere başlamadan önce kaydetmek *hireDate.xsd* dosyayı yerel bilgisayarınıza (aşağıda bu konuya da dahil).
@@ -96,9 +96,11 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
 
 ## <a name="to-format-the-xml-document"></a>XML belgesi biçimlendirmek için
 
-- Seçin **belgeyi Biçimlendir** XML Düzenleyicisi araç çubuğundan düğme.
+- Seçin **belgeyi Biçimlendir** basın veya XML Düzenleyicisi araç çubuğu düğmesini **Ctrl**+**E**,**D**.
 
-    XML belgesi biçimlendirilir.
+   ![Visual Studio'da biçimi XML belge düğmesi](media/format-xml-document.png)
+
+   XML belgesi biçimlendirilir.
 
 ## <a name="to-save-the-xml-document"></a>XML belgesi kaydetmek için
 
@@ -109,7 +111,8 @@ Bu kılavuzda açıklanan adımları yeni bir XML belgesi oluşturma işlemini g
 2.  XML belgesi için konum ve dosya adını girin ve tıklayın **Kaydet**.
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd dosyası
- Aşağıdaki şema dosyası izlenecek yol tarafından kullanılır.
+
+Bu izlenecek yolda aşağıdaki şema dosyası kullanılır:
 
 ```xml
 <?xml version="1.0"?>

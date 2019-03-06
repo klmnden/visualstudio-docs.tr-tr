@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968537"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526730"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Nasıl yapılır: Karışık modda hata ayıklama (C#, C++, Visual Basic)
 
@@ -62,7 +62,7 @@ Hem yönetilen hem de yerel hata ayıklayıcıları çağıran uygulama projenin
    ![Yerel kod hata ayıklamayı](../debugger/media/dbg-mixed-mode-from-csharp.png "yerel kod hata ayıklamayı etkinleştir")
 
 > [!NOTE]
-> Çoğu Visual Studio 2017 sürümünde kullanmalısınız *launchSettings.json* dosya yerine bir .NET Core uygulaması yerel kod için karışık mod hata ayıklamayı etkinleştirmek için proje özellikleri. Ayrıntılar için bkz [yönetilen ve yerel kodda hata ayıklama](../debugger/how-to-debug-managed-and-native-code.md).
+> Çoğu Visual Studio 2017'den itibaren Visual Studio sürümlerinde kullanmalısınız *launchSettings.json* dosya yerine bir .NET Core uygulaması yerel kod için karışık mod hata ayıklamayı etkinleştirmek için proje özellikleri. Ayrıntılar için bkz [yönetilen ve yerel kodda hata ayıklama](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

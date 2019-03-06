@@ -8,16 +8,16 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8452410235226b3d7a1446d7a8c5a2ee709eff6e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943551"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525075"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Biçimlendirme seçenekler, metin düzenleyici, XML,
 
-Kullanım **biçimlendirme** öğeler ve öznitelikler XML belgelerinizde nasıl biçimlendirileceğini belirtmek için özellik sayfası. Açmak için **seçenekleri** iletişim kutusu, tıklayın **Araçları** menüsünü seçin ve ardından **seçenekleri**. Erişim için **biçimlendirme** özellik sayfasında **metin düzenleyici** > **XML** > **biçimlendirme** düğümü .
+Kullanım **biçimlendirme** öğeler ve öznitelikler XML belgelerinizde nasıl biçimlendirileceğini belirtmek için bir seçenekler sayfası. XML biçimlendirme seçenekleri erişmek için kendi seçtikleri **Araçları** > **seçenekleri** > **metin düzenleyici** > **XML**ve ardından **biçimlendirme**.
 
 ## <a name="attributes"></a>Öznitelikler
 
@@ -30,7 +30,7 @@ Kullanım **biçimlendirme** öğeler ve öznitelikler XML belgelerinizde nasıl
 
 **Öznitelikleri her ayrı satıra Hizala**
 
-Dikey olarak ilk öznitelik girintisini eşleştirmek için ikinci ve sonraki öznitelikleri Hizala. Aşağıdaki XML nasıl öznitelikleri hizalanmış bir örnek metindir.
+Dikey olarak ilk öznitelik girintisini eşleştirmek için ikinci ve sonraki öznitelikleri Hizala. Aşağıdaki XML metni nasıl öznitelikleri hizalanmış bir örnektir:
 
 ```xml
 <item id = "123-A"
@@ -66,5 +66,5 @@ Bir öğe metni ve biçimlendirmeyi bir karışımını içeriyorsa, içeriği i
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: XML belgeleri (Visual Basic) oluşturma](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Kod oluşturma](../code-generation-in-visual-studio.md)
+- [XML seçenekleri - diğer](options-text-editor-xml-miscellaneous.md)
+- [Visual Studio'daki XML araçları](../../xml-tools/xml-tools-in-visual-studio.md)

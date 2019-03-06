@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913960"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526249"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma
 
@@ -43,7 +43,7 @@ Varsayılan değerleri oluşturulur ve düzenlenebilir değerleri Not. Şema var
 
 ## <a name="example"></a>Örnek
 
- Bu bölümdeki adımları şema tarafından oluşturulan XML kod parçacığı özelliğini XML Düzenleyicisi'nin nasıl kullanacağınızı gösterir.
+ Bu bölümdeki adımları XML Düzenleyicisi şema tarafından oluşturulan XML kod parçacığı özelliğini nasıl kullanacağınızı gösterir.
 
 > [!NOTE]
 > Bu yordamlar başlatmadan önce şema dosyasını yerel bilgisayarınıza kaydedin.

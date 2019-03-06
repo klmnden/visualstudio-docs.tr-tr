@@ -40,7 +40,7 @@ items:
     - name: Git ile Azure’a sürekli ASP.NET Core dağıtımı
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: Visual Studio Kubernetes araçları ile Kubernetes’te yayımlama
-      href: tutorial-kubernetes-tools.md
+      href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
   - name: C++
     items:
     - name: C/C++ uygulaması dağıtma
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: ClickOnce Yönetilmeyen API Başvurusu
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: a48576850789721b47c57183babcd3dd45d3e7e3
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: ea0d78149670c3b3d180104c25f5cffa3f3cb1fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571128"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526457"

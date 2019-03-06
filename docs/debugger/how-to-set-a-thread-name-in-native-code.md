@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715186"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526236"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Nasıl yapılır: Yerel kodda iş parçacığı adı ayarlama
 İş parçacığı adlandırma herhangi bir sürümünü Visual Studio mümkündür. İş parçacığı adlandırma, ilgilendiğiniz iş parçacıkları tanımlamak için yararlıdır **iş parçacıkları** çalışan bir işleme hata ayıklama sırasında penceresi. İş parçacığı recognizably adlı sahip ayrıca kilitlenme dökümü İnceleme aracılığıyla ve performansını analiz etme çeşitli araçları kullanarak yakaladığında son İnceleme hata ayıklama gerçekleştirirken yararlı olabilir.
@@ -40,7 +40,7 @@ Avantajlar:
 * İş parçacığı adları da görünür gibi diğer araçları kullanarak [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) hata ayıklayıcı ve [Windows Performans Çözümleyicisi](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Performans Çözümleyicisi.
 
 Uyarılar:
-* İş parçacığı adları, yalnızca Visual Studio 2017 sürüm 15.6 görünür ve üzeri.
+* İş parçacığı adları, yalnızca Visual Studio 2017 sürüm 15.6 ve sonraki sürümlerinde görülebilir.
 * Bir kilitlenme hatalarını ayıklama son İnceleme döküm dosyası, iş parçacığı adları yalnızca kilitlenme Windows 10 sürüm 1607'ye, Windows Server 2016 veya sonraki Windows sürümlerinde oluşturulmuş olsa bile görülebilir.
 
 *Örnek:*

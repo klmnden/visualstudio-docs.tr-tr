@@ -1,5 +1,5 @@
 ---
-title: XML şema Tasarımcısı Tümleştirmesi ile XML Düzenleyicisi
+title: XML şema tasarımcısını XML Düzenleyicisi ile tümleştirme
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06141eb6f6d7383a433a1f9b0ba29944e26a329
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930304"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525146"
 ---
 # <a name="integration-with-xml-editor"></a>XML Düzenleyicisi ile tümleştirme
 
-XML şema tasarımcısını XML Düzenleyicisi ile tümleşiktir. XSD dosyası XML Düzenleyicisi'nde değiştirirseniz, değişikliğin yansıtılır [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md). Varsa [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) açık değişiklik de var. yansıtılır. XML şema tasarımcısını XML Düzenleyicisi arasında aşağıdaki yollarla gidebilirsiniz:
+XML şema tasarımcısını XML Düzenleyicisi ile tümleşiktir. XSD dosyası XML düzenleyicisinde değiştirirseniz, değişikliğin yansıtılır [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md). Varsa [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) açık değişiklik de var. yansıtılır. XML şema tasarımcısını XML Düzenleyicisi arasında aşağıdaki yollarla gidebilirsiniz:
 
--   XML Düzenleyicisi'nde, bir düğümü sağ tıklayıp **XML Şeması Gezgini gösterme**.
+-   XML Düzenleyicisi'nde bir düğümü sağ tıklayıp **XML Şeması Gezgini gösterme**.
 
 -   Graf Görünümü'nde ve **XML Şeması Gezgini**, bir düğüme çift tıklayın veya bir düğümünü sağ tıklatın ve seçin **kodu görüntüle**. İçerik modeli görünümünü bir düğümünü sağ tıklatın ve seçin **kodu görüntüle**.
 

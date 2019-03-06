@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 109bd4ee3c54e8d468714c2a955e349ec76db2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952099"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525836"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Hata Ayıklama ve Barındırma İşlemi
 Visual Studio barındırma işlemini, hata ayıklayıcı performansı artırır ve kısmi güven hata ayıklama ve tasarım zamanı ifade değerlendirmesi gibi yeni hata ayıklayıcı özelliklerini etkinleştirir. Gerekirse, barındırma işlemini devre dışı bırakabilirsiniz. Aşağıdaki bölümlerde, barındırma işlemi olmadan ve hata ayıklama arasındaki bazı farklar açıklanmaktadır.
 
 > [!NOTE]
-> Visual Studio 2017, barındırma işlemi kullanarak hata ayıklama seçeneği artık gerekli değildir ve kaldırıldı. Daha fazla bilgi için [hata ayıklama: Az sık kullanılan işinizi hızlandırmak için Visual Studio 2017 Aıms](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
+> Visual Studio 2017'den itibaren barındırma işlemi kullanarak hata ayıklama seçeneği artık gerekli değildir ve kaldırıldı. Daha fazla bilgi için [hata ayıklama: Az sık kullanılan işinizi hızlandırmak için Visual Studio 2017 Aıms](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Kısmi güven hata ayıklama ve tıklayın-bir kez güvenlik
  Kısmi güven hata ayıklama barındırma işlemini gerektiriyor. Barındırma işlemini devre dışı bırakırsanız, kısmi güven güvenliği etkinleştirilmiş olsa dahi kısmi güven hata ayıklama çalışmaz **güvenlik** sayfasının **proje özellikleri**. Daha fazla bilgi için [nasıl yapılır: Kısmen güvenilen uygulamada hata ayıklama](/visualstudio/debugger/debugger-security).

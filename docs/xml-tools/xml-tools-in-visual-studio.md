@@ -1,5 +1,5 @@
 ---
-title: XML Araçları
+title: XML Düzenleyicisi'ni ve şema Tasarımcısı
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -32,41 +32,50 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d07e7d2a1a8d96b19354ea8d1261b2e82a84d3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946905"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526574"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio'daki XML araçları
 
-*Genişletilebilir Biçimlendirme Dili (XML)* veri tanımlamak için bir biçim sağlayan bir biçimlendirme dilidir. Bu, birden çok platformda daha kesin bildirimleri içerik ve daha anlamlı arama sonuçlarının kolaylaştırır. Ayrıca, XML veri sunudan ayrımı sağlar. Örneğin, HTML etiketleri tarayıcıya kalın veya italik verileri görüntülemek için kullandığınız; XML etiketleri yalnızca şehir adı, sıcaklık ve barometric baskısı gibi verileri tanımlamak için kullanın. XML biçiminde, bir tarayıcıda verileri sunmak için Genişletilebilir Stil Sayfası Dili (XSL) gibi stil sayfaları ve geçişli stil sayfaları (CSS) kullanırsınız. XML verileri, sunu ve işlem ayırır. Bu, görüntülemek ve farklı bir stil sayfaları ve uygulamaları uygulayarak istediğiniz verileri işlemek sağlar.
+*Genişletilebilir Biçimlendirme Dili (XML)* veri tanımlamak için bir biçim sağlayan bir biçimlendirme dilidir. XML verileri ayırır ve Genişletilebilir Stil Sayfası Dili (XSL) gibi stil sayfaları ve geçişli stil sayfaları (CSS) kullanarak kendi sunu ilişkili. Visual Studio Araçları ve şemaları XML, XSLT ve XML ile çalışmak daha kolay hale getiren özellikleri içerir.
 
-XML Web üzerinden teslimat için optimize edilmiştir SGML bir alt kümesidir. Bu, World Wide Web Consortium (W3C) tarafından tanımlanır. Bu Standardizasyon yapılandırılmış verileri Tekdüzen ve uygulamaları veya satıcılar bağımsız olduğunu garanti eder.
+## <a name="xml-editor"></a>XML Düzenleyicisi
 
-Visual Studio ve .NET Framework özelliklerinin çoğu özünde XML'dir. Aşağıdaki makale listesi için XML ilgili olan ve Visual Studio ve .NET Framework içinde sunulan özellikler ve Araçlar adları.
+[XML Düzenleyicisi](xml-editor.md) XML belgeleri düzenlemek için kullanılır. Bu, tam XML sözdizimi denetimi, şema doğrulaması sırasında tür, renk kodlaması ve IntelliSense sağlar. Bir şema veya belge türü tanımı sağlanırsa, izin verilen öğeler ve öznitelikler listelemek için IntelliSense tarafından kullanılır.
 
-Daha fazla bilgi için <xref:System.Xml?displayProperty=fullName> belgeleri.
+Ek özellikler şunlardır:
 
-## <a name="reference"></a>Başvuru
+- Kod parçacıkları şema tarafından oluşturulan XML kod parçacığı desteği
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) sunan [XML Düzenleyicisi](http://go.microsoft.com/fwlink/?LinkId=228249) ayrıştırma ağacı aracılığıyla [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) XML belgeleri için.
+- Belge öğeleri daraltılabilir ve genişletilebilir, anahat oluşturma
 
-[XML standartları başvurusu](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) XML, belge türü tanımı (DTD'nin), XML Şeması Tanım Dili (XSD) ve XSLT de dahil olmak üzere, XML teknolojileri hakkında bilgi sağlar.
+- XSLT dönüşümleri yürütmek ve sonuçları metin, XML veya HTML görüntülemek için
 
-<xref:System.Xml?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklayan <xref:System.Xml> ad alanı ve her bir öğede daha ayrıntılı bilgi için bağlantılar sağlar.
+- XML örneği belgesinden XML Şeması Tanım Dili (XSD) şemaları oluşturma yeteneği
 
-<xref:System.Xml.Serialization?displayProperty=fullName> Sınıfları ve oluşturan diğer öğeleri açıklayan <xref:System.Xml.Serialization> ad alanı ve her öğeyle ilgili daha ayrıntılı bilgi için bağlantılar sağlar.
+- IntelliSense desteği dahil olmak üzere, XSLT stil sayfalarını düzenleme desteği
 
-## <a name="related-sections"></a>İlgili bölümler
+- XML Şema Gezgini
 
-[XML belge nesne modeli (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom) Describes nasıl <xref:System.Xml.XmlDocument> ve onun ilişkili sınıfları W3C belge nesne modeli (çekirdek) Düzey 1 ve 2. düzey ad alanı desteği belirtimleri ile uyumlu.
+## <a name="xml-schema-designer"></a>XML Şema Tasarımcısı
 
-[XmlReader ve XmlWriter ile XML verileri işleme](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189001\(v\=vs.95\))
+[XML şema Tasarımcısı](xml-schema-designer.md) XML Şeması Tanım Dili (XSD) şemaları ile çalışmayı etkinleştirmek için Visual Studio ile XML Düzenleyicisi ile tümleşiktir.
 
-[XSLT dönüşümleri](/dotnet/standard/data/xml/xslt-transformations) Describes nasıl <xref:System.Xml.Xsl.XslCompiledTransform> sınıfı XSLT 1.0 öneri uygular.
+## <a name="xslt-debugging"></a>XSLT hata ayıklama
 
-[XPath veri modelini kullanarak XML verilerini işleme](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) Describes nasıl <xref:System.Xml.XPath.XPathNavigator> sınıfı içinde depolanan XML verileri işleyebilir bir <xref:System.Xml.XPath.XPathDocument> veya <xref:System.Xml.XmlDocument> nesne. <xref:System.Xml.XPath.XPathNavigator> Sınıfı XQuery 1.0 ve XPath 2.0 veri modeline dayanır ve gidin ve XML verileri düzenlemek için kullanılabilir.
+Visual Studio destekler [XSLT stil sayfalarını hata ayıklama](../xml-tools/debugging-xslt.md). Hata ayıklayıcıyı kullanarak bir XSLT stil sayfası bir XSLT stil sayfası bir adımla koddan, kesme noktaları ayarlayın ve benzeri.
 
-[XML şema nesne modeli (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) oluşturmak ve XML şemaları sağlayarak işlemek için kullanılan sınıfları açıklar bir <xref:System.Xml.Schema.XmlSchema> yüklemek ve bir şema düzenlemek için sınıf.
+> [!NOTE]
+> XSLT hata ayıklayıcısı yalnızca Visual Studio Enterprise sürümünde kullanılabilir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- <xref:System.Xml?displayProperty=fullName>
+- [XSLT dönüşümleri](/dotnet/standard/data/xml/xslt-transformations)
+- [XPath veri modelini kullanarak XML verilerini işleme](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [XML Belge Nesne Modeli (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)
+- [XML Şema Nesne Modeli (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)

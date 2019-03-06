@@ -8,21 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d2ca4e22a4255ea5a1d35024ed200cb080a31
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936596"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525810"
 ---
 # <a name="schema-cache"></a>Şema önbelleği
 
-XML Düzenleyicisi bulunan bir şema önbelleği sağlar *%InstallRoot%\Xml\Schemas* dizin. Şema önbelleği, bilgisayardaki tüm kullanıcılar için genel ve IntelliSense ve XML belgesi doğrulama için kullanılan standart XML şemaları içerir.
+XML Düzenleyicisi bulunan bir şema önbelleği sağlar *%VSInstallDir%\xml\Schemas* dizin. Şema önbelleği, bilgisayardaki tüm kullanıcılar için genel ve IntelliSense ve XML belgesi doğrulama için kullanılan standart XML şemaları içerir.
 
 Belirtildiği şemaları XML Düzenleyicisi'ni de çözümde bulunan şemaları bulabilir, **şemaları** belge alanını **özellikleri** penceresi ve şemalar tarafından tanımlanan `xsi:schemaLocation` ve `xsi:noNamespaceSchemaLocation`öznitelikleri.
 
 Aşağıdaki tablo, XML Düzenleyicisi ile yüklenen şemaları açıklar.
-
 
 | Dosya adı | Açıklama |
 |-| - |
@@ -31,7 +30,7 @@ Aşağıdaki tablo, XML Düzenleyicisi ile yüklenen şemaları açıklar.
 | *msbuild.xsd* | MSBuild oluşturma dosyaları için şema "<http://schemas.microsoft.com/developer/msbuild/2003>". |
 | *msdata.xsd* | Tarafından eklenen XSD ek açıklamalar şeması <xref:System.Data.DataSet> sınıfı, "urn: schemas-microsoft-schemas-msdata". |
 | *msxsl.xsd* | Şema Microsoft XSLT betik bloğu uzantıları urn: schemas-microsoft-com:xslt. |
-| *SnippetFormat.xsd* | Kod parçacığı XML dosyaları için şema. Örnekler için bkz *%InstallDir%\VC#\Expansions*. |
+| *SnippetFormat.xsd* | Kod parçacığı XML dosyaları için şema. Örnekler için bkz *%VSInstallDir%\VC#\Expansions*. |
 | *Soap1.1.xsd* | Basit Nesne Erişim Protokolü (SOAP) 1.1 şeması http://schemas.xmlsoap.org/soap/envelope/. |
 | *Soap1.2.xsd* | Basit Nesne erişim protokolü 1.2 şeması. |
 | *SiteMapSchema.xsd* | ASP.NET site haritası XML dosyası için şema "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
@@ -45,39 +44,39 @@ Aşağıdaki tablo, XML Düzenleyicisi ile yüklenen şemaları açıklar.
 | *xslt.xsd* | XML Şeması dönüştürür, http://www.w3.org/1999/XSL/Transform. |
 
 ## <a name="update-schemas-in-the-cache"></a>Önbellekte güncelleştirme
- XML Düzenleyicisi paket yüklenir ve çalışırken değişiklikler için izleyen Düzenleyicisi şema önbellek dizini yükler. Bir şema eklediyseniz bilinen şemalar bir bellek içi dizine otomatik olarak yüklenir. Bir şema kaldırılmışsa, bellek içi dizinden otomatik olarak kaldırılır. Bir şema güncelleştirildiyse, bu şema bellek içi önbellek otomatik olarak çıkarır.
+
+XML Düzenleyicisi paket yüklenir ve çalışırken değişiklikler için izleyen Düzenleyicisi şema önbellek dizini yükler. Bir şema eklediyseniz bilinen şemalar bir bellek içi dizine otomatik olarak yüklenir. Bir şema kaldırılmışsa, bellek içi dizinden otomatik olarak kaldırılır. Bir şema güncelleştirildiyse, bu şema bellek içi önbellek otomatik olarak çıkarır.
 
 > [!NOTE]
 > Şema önbellek dizini bilgisayarınıza genel olduğundan, yalnızca standart ve bilgisayarınızda oluşturduğunuz tüm Visual Studio projelerine yararlı şemaları burada eklemeniz gerekir.
 
-
- XML Düzenleyicisi şema katalog dosyaları herhangi bir sayıda şema önbellek dizini de destekler. Şema kataloglarının Düzenleyicisi hakkında bilmek istediğiniz her zaman şemaları için başka bir konuma işaret edebilir. *Catalog.xsd* dosya katalog dosyası biçimini tanımlar ve şema önbellek dizininde bulunur. *Catalog.xml* bulunan diğer şemaların bağlantılar içerir ve dosyasıdır varsayılan katalog *Installdır %*. Bazıları aşağıdadır *catalog.xml* dosyası:
+XML Düzenleyicisi şema katalog dosyaları herhangi bir sayıda şema önbellek dizini de destekler. Şema kataloglarının Düzenleyicisi hakkında bilmek istediğiniz her zaman şemaları için başka bir konuma işaret edebilir. *Catalog.xsd* dosya katalog dosyası biçimini tanımlar ve şema önbellek dizininde bulunur. *Catalog.xml* bulunan diğer şemaların bağlantılar içerir ve dosyasıdır varsayılan katalog *VSInstallDir %*. Bazıları aşağıdadır *catalog.xml* dosyası:
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
-  <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>
-  <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>
-  <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>
+  <Schema href="%VSInstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>
+  <Schema href="%VSInstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>
+  <Schema href="%VSInstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>
 </SchemaCatalog>
 ```
 
- `href` Özniteliği şemaya işaret eden bir dosya yolu veya http URL'si olabilir. Katalog belge göreli dosya yolu olabilir. Aşağıdaki değişkenleri tarafından ayrılmış %%, düzenleyici tarafından tanınır ve yolunda genişletilir:
+`href` Özniteliği şemaya işaret eden bir dosya yolu veya http URL'si olabilir. Katalog belge göreli dosya yolu olabilir. Aşağıdaki değişkenleri tarafından ayrılmış %%, düzenleyici tarafından tanınır ve genişletilmiş yolu:
 
--   Installdır
+- VSInstallDir
 
--   Sistem
+- Sistem
 
--   ProgramFiles
+- ProgramFiles
 
--   Programlar
+- Programlar
 
--   CommonProgramFiles
+- CommonProgramFiles
 
--   ApplicationData
+- ApplicationData
 
--   CommonApplicationData
+- CommonApplicationData
 
--   LCID
+- LCID
 
 Katalog belge içerebilir bir `Catalog` gösteren diğer katalog öğesi. Kullanabileceğiniz `Catalog` ekibiniz veya şirketiniz tarafından paylaşılan merkezi bir katalog veya iş ortaklarınızla paylaşılan çevrimiçi katalog işaret edecek şekilde öğesi. `href` Özniteliktir diğer katalogları dosya yolu veya http URL'si. Aşağıdaki örneğidir `Catalog` öğesi:
 
@@ -85,16 +84,17 @@ Katalog belge içerebilir bir `Catalog` gösteren diğer katalog öğesi. Kullan
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>
 ```
 
- Kataloğu, ayrıca nasıl şemaları özel kullanarak XML belge ile ilişkilendirilen denetleyebilirsiniz `Association` öğesi. Bu öğe hiçbir hedef ad alanı olduğu için XML Düzenleyicisi'ni sahip olmayan bir şema tüm otomatik ilişkilendirme yapmak yararlı olabilir belirli dosya uzantısına sahip olan şemalar ilişkilendirir bir `targetNamespace` özniteliği. Aşağıdaki örnekte `Association` öğesi ilişkilendirir dotNetConfig şema "yapılandırma" dosya uzantısına sahip tüm dosyaları:
+Kataloğu, ayrıca nasıl şemaları özel kullanarak XML belge ile ilişkilendirilen denetleyebilirsiniz `Association` öğesi. Bu öğe hiçbir hedef ad alanı olduğu için XML Düzenleyicisi'ni sahip olmayan bir şema tüm otomatik ilişkilendirme yapmak yararlı olabilir belirli dosya uzantısına sahip olan şemalar ilişkilendirir bir `targetNamespace` özniteliği. Aşağıdaki örnekte `Association` öğesi ilişkilendirir dotNetConfig şema "yapılandırma" dosya uzantısına sahip tüm dosyaları:
 
 ```xml
-<Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>
+<Association extension="config" schema="%VSInstallDir%/xml/schemas/dotNetConfig.xsd"/>
 ```
 
 ## <a name="localized-schemas"></a>Yerelleştirilmiş şemaları
- Çoğu durumda *catalog.xml* dosya, yerelleştirilmiş şemaları için giriş içermiyor. İçin ek girdiler ekleyebilirsiniz *catalog.xml* yerelleştirilmiş şema dizine işaret eden dosya.
 
- Aşağıdaki örnekte yeni bir `Schema` yerelleştirilmiş şemaya işaret edecek şekilde LCID % değişken % kullanan öğe oluşturuldu.
+Çoğu durumda *catalog.xml* dosya, yerelleştirilmiş şemaları için giriş içermiyor. İçin ek girdiler ekleyebilirsiniz *catalog.xml* yerelleştirilmiş şema dizine işaret eden dosya.
+
+Aşağıdaki örnekte yeni bir `Schema` yerelleştirilmiş şemaya işaret edecek şekilde LCID % değişken % kullanan öğe oluşturuldu.
 
 ```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"
@@ -110,23 +110,23 @@ Katalog belge içerebilir bir `Catalog` gösteren diğer katalog öğesi. Kullan
 
 ### <a name="to-change-the-schema-cache-location"></a>Şema önbellek konumunu değiştirmek için
 
-1.  Gelen **Araçları** menüsünde **seçenekleri**.
+1. Gelen **Araçları** menüsünde **seçenekleri**.
 
-2.  Genişletin **metin düzenleyici**, genişletme **XML**ve ardından **çeşitli**.
+2. Genişletin **metin düzenleyici**, genişletme **XML**ve ardından **çeşitli**.
 
-3.  Tıklayın **Gözat** düğmesini **şemaları** alan.
+3. Tıklayın **Gözat** düğmesini **şemaları** alan.
 
-4.  Şema önbelleği klasörü seçin ve tıklayın **Tamam**.
+4. Şema önbelleği klasörü seçin ve tıklayın **Tamam**.
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>Ortak şema başka bir dizin eklemek için
 
-1.  Düzen *catalog.xml* dosyasında XML Düzenleyicisi şema önbellek dizini.
+1. Düzen *catalog.xml* dosyasında XML Düzenleyicisi şema önbellek dizini.
 
-2.  Yeni bir `<Catalog href="..."/>` ek şemaları dizinine işaret eden bir öğe.
+2. Yeni bir `<Catalog href="..."/>` ek şemaları dizinine işaret eden bir öğe.
 
-3.  Değişikliklerinizi kaydedin.
+3. Değişikliklerinizi kaydedin.
 
-     Katalog otomatik olarak yüklenir.
+   Katalog otomatik olarak yüklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

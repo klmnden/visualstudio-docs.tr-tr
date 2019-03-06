@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933580"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525797"
 ---
 # <a name="content-model-view"></a>İçerik Modeli Görünümü
 
@@ -119,7 +119,7 @@ Bunu seçtiğinizde, üzerine gelin veya kullanın yakınlaştırma kaydırıcı
 
 ## <a name="xml-editor-integration"></a>XML Düzenleyicisi tümleştirme
 
-İleri ve geri arasında geçiş yapabilirsiniz **XSD Tasarımcısı** ile XML Düzenleyicisi (bağlam) sağ tıklama menüsünü kullanarak.
+İleri ve geri arasında geçiş yapabilirsiniz **XSD Tasarımcısı** ve XML Düzenleyicisi'ni (bağlam) sağ tıklama menüsünü kullanarak.
 
 XML Düzenleyicisi'nde ayarlamak şema değişiklik yaparsanız, değişiklikleri içerik modeli Görünümü'nde eşitlenir. Daha fazla bilgi için [XML Düzenleyicisi ile tümleştirme](../xml-tools/integration-with-xml-editor.md).
 

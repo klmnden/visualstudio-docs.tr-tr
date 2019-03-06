@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c9ed2a67f320d9d7af94e1a31d88e48e3672a11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600395"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525203"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Office projelerindeki nesnelere genel erişim
   Bir Office projesi oluşturduğunuzda, Visual Studio otomatik olarak adlı bir sınıf oluşturur `Globals` projedeki. Kullanabileceğiniz `Globals` projesinde herhangi bir koddan çalışma zamanında birçok farklı proje öğesine erişmek için sınıf.
@@ -74,7 +74,7 @@ ms.locfileid: "56600395"
  Kullanmayı denerse kod `Globals` belge veya VSTO eklentisi başlatılmadan önce sınıfı, bir çalışma zamanı özel durum throw. Örneğin, kullanarak `Globals` ne zaman bir sınıf düzeyi değişkenleri bildirme başarısız olabilir, çünkü `Globals` sınıfı atanamaz tüm ana bilgisayar öğesi başvuruları ile bildirilen nesnenin örneği oluşturulmadan önce.
 
 > [!NOTE]
->  `Globals` Sınıfı tasarım zamanında hiçbir zaman başlatılmaz, ancak denetim örnekleri tasarımcı tarafından oluşturuldu. Bir özelliği kullanan bir kullanıcı denetimi oluşturmak istiyorsanız buna `Globals` sınıf özelliği döndürüp döndürmediğini gelen bir kullanıcı denetimi sınıf içinde gerekir **null** döndürülen nesneyi kullanmayı denemeden önce.
+>  `Globals` Sınıfı tasarım zamanında hiçbir zaman başlatılmaz, ancak denetim örnekleri tasarımcı tarafından oluşturuldu. Bir özelliği kullanan bir kullanıcı denetimi oluşturmak istiyorsanız buna `Globals` sınıfı gelen bir kullanıcı denetimi sınıf içinde özellik döndürüp döndürmediğini işaretlemeniz gerekir **null** döndürülen nesneyi kullanmayı denemeden önce.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Şerit, çalışma zamanında erişme](../vsto/accessing-the-ribbon-at-run-time.md)

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689310"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526548"
 ---
 # <a name="general-debugging-options"></a>Genel hata ayıklama seçenekleri
 
@@ -54,7 +54,7 @@ Koşullarda 2 ve 3, özel durum bazen yönetilen kod tarafından yakalandı `msc
 
 **Kesme noktası filtrelerini etkinleştir**: Böylece yalnızca belirli işlemleri, iş parçacıklarını veya bilgisayarları etkiler kesme noktalarında filtreler ayarlamanızı sağlar.
 
-**Yeni özel durum Yardımcısını Kullan**: Özel durum Yardımcısını değiştirir. özel durum Yardımcısı (Visual Studio 2017) sağlar.
+**Yeni özel durum Yardımcısını Kullan**: Özel durum Yardımcısı'nın yerini alan özel durum Yardımcısı'nı etkinleştirir. (Özel durum Yardımcısı Visual Studio 2017'den başlayarak desteklenir)
 
 > [!NOTE]
 > Yönetilen kod için bu seçenek daha önceden çağrıldığından **özel durum Yardımcısını** .
@@ -158,7 +158,7 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
 
 Visual Studio'nun daha eski bir sürümü kullanıyorsanız, bazı ek seçenekler mevcut olabilir.
 
-**Özel durum Yardımcısını**: Yönetilen kod için özel durum Yardımcısı'nı etkinleştirir. Visual Studio 2017'de, özel durum Yardımcısını özel durum Yardımcısı değiştirildi.
+**Özel durum Yardımcısını**: Yönetilen kod için özel durum Yardımcısı'nı etkinleştirir. Visual Studio 2017'den itibaren özel durum Yardımcısı, özel durum Yardımcısını değiştirildi.
 
 **Çağrı yığınını işlenmeyen özel durumlar üzerinde bırakma**: Neden **çağrı yığını** çağrı yığınını işlenmeyen özel durum oluşmadan önceki noktaya geri almak için penceresi.
 

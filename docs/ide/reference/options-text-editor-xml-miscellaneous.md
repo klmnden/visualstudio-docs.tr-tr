@@ -8,16 +8,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4300eaa751eb8ac24461f9aca11e75c07d78a94d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930291"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525088"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Seçenekler, metin düzenleyici, çeşitli XML
 
-Kullanım **çeşitli** otomatik tamamlama ve şema XML Düzenleyicisi ayarları değiştirmek için özellik sayfası. Açmak için **seçenekleri** iletişim kutusu, tıklayın **Araçları** menüsünü seçin ve ardından **seçenekleri**. Erişim için **çeşitli** özellik sayfasında **metin düzenleyici** > **XML** > **çeşitli**düğümü.
+Kullanım **çeşitli** otomatik tamamlama ve şema XML Düzenleyicisi ayarları değiştirmek için seçenekler sayfası. Diğer XML Seçenekleri erişmek için kendi seçtikleri **Araçları** > **seçenekleri** > **metin düzenleyici** > **XML**ve ardından **çeşitli**.
 
 ## <a name="auto-insert"></a>Otomatik Ekle
 
@@ -53,9 +53,9 @@ Bir dosya açıldığında anahat oluşturma özelliğini etkinleştirir. Bu ona
 
 **Şemaları**
 
-Şema önbelleği konumunu belirtir. Gözat düğmesini (…) geçerli şema önbellek konumunda yeni bir pencerede açılır. Varsayılan konum  *\<Management Studio yükleme dizini >* \Xml\Schemas.
+Şema önbelleği konumunu belirtir. **Gözat** düğmesi geçerli şema önbellek konumunda yeni bir pencerede açar. Varsayılan konum *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Nasıl yapılır: XML belgeleri (Visual Basic) oluşturma](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Kod oluşturma](../code-generation-in-visual-studio.md)
+- [XML Seçenekleri - biçimlendirme](options-text-editor-xml-formatting.md)
+- [Visual Studio'daki XML araçları](../../xml-tools/xml-tools-in-visual-studio.md)

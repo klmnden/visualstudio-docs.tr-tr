@@ -8,17 +8,24 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 887d41805063f64c6b96a0375284928efd9321ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56741640"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526879"
 ---
 Uzak cihaz üzerinde hata ayıklamak istediğiniz sunucu yerine veya Visual Studio makinesine, indirin ve aşağıdaki tabloda bağlantıları uzak araçların doğru sürümünü yükleyin.
 
 - Visual Studio sürümünüz için en son uzak Araçlar'ı indirin. En son uzak Araçlar sürümü, önceki Visual Studio sürümleriyle uyumludur, ancak uzak Araçlar sürümlerde daha yeni Visual Studio sürümleriyle uyumlu değil.
 - Üzerinde yüklüyorsanız makine aynı mimarisine sahip uzak Araçları'nı indirin. Örneğin, bir 64-bit işletim sistemi çalıştıran bir uzak bilgisayarda bir 32-bit uygulamanın hatalarını ayıklamak istiyorsanız, 64-bit uzak Araçları'nı yükleme.
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Tek başına Visual Studio 2019 için Uzak Araçlar, Visual Studio 2019'ile uzaktan hata ayıklayıcı kullanmanız gerekiyorsa kullanılabilir olana kadar [uzaktan hata ayıklayıcı bulma](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) Visual Studio 2019 ve ya da kendi yüklemesinde kopyalayın ve uygulamayı Uzak makine veya bir dosya paylaşımı ' çalıştırın.
+
+::: moniker-end
 
 |Sürüm|Bağlantı|Notlar|
 |-|-|-|

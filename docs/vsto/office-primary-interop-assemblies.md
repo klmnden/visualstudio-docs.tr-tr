@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602292"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525913"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office birincil birlikte çalışma derlemeleri
 
@@ -57,15 +57,15 @@ Visual Studio yüklediğinizde, PIA'lar Genel Derleme Önbelleği dışında dos
 
 PIA'lerin bu kopyaları, farklı PIA sürümleri genel derleme önbelleğinde kayıtlı olduğunda oluşabilecek bazı geliştirme sorunlarından kaçının Visual Studio yardımcı olur.
 
-Visual Studio PIA'ların bu kopyalarını geliştirme bilgisayarında şu konumlara yükler:
+Visual Studio 2017'den itibaren PIA'ların bu kopyalarını geliştirme bilgisayarında paylaşılan konumları aşağıdaki şekilde yüklenir:
 
-- *%ProgramFiles%\Microsoft office\pıa\office14 için visual Studio 12. 0\visual Studio Tools*
+- Office\PIA için *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Araçları\*
 
-  (veya *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for office\pıa\office14* 64-bit işletim sistemlerinde)
+- (veya * % ProgramFiles (x86) %\Microsoft Visual Studio\Shared\Visual Studio Araçları için Office\PIA\* 64-bit işletim sistemlerinde)
 
-- *%ProgramFiles%\Microsoft office\pıa\office15 için visual Studio 12. 0\visual Studio Tools*
-
-  (veya *% ProgramFiles (x86) %\Microsoft Visual Studio 12. 0\visual Studio Tools for office\pıa\office15* 64-bit işletim sistemlerinde)
+> [!NOTE]
+> Visual Studio'nun eski sürümleri için bu PIA'ların Office\PIA klasörü altında için Visual Studio Araçları yüklenecek * % ProgramFiles % klasöründe, Visual Studio'nun bu sürümü için.  
+> Örnek: * Office\PIA için % ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Visual Studio Araçları\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Genel derleme önbelleğinde birincil birlikte çalışma derlemeleri
 
@@ -79,7 +79,7 @@ Office PIA son kullanıcı bilgisayarlarında Office çözümlerinin çalışmas
 
 Visual Studio'daki her Office proje şablonu, tek bir Microsoft Office uygulaması ile çalışmak üzere tasarlanmıştır. Birden çok Microsoft Office uygulamasının özelliklerini kullanmayı veya bir uygulama veya Visual Studio'da bir proje yok bileşenin özelliklerini kullanmak için gerekli pıa'lara başvuru eklemeniz gerekir.
 
-Çoğu durumda, altında Visual Studio tarafından yüklenen pıa'lara başvuru eklemeniz gerekir `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` dizin. Derlemelerin bu sürümleri görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Çoğu durumda, altında Visual Studio tarafından yüklenen pıa'lara başvuru eklemeniz gerekir `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` dizin. Derlemelerin bu sürümleri görünür **Framework** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Derlemelerin bu sürümleri yüklediyseniz ve PIA'lar genel derleme önbelleğinde kayıtlı görünür **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu. Bunları kullanırken oluşabilecek bazı geliştirme sorunları olduğundan, derlemelerin bu sürümlerine başvuruları eklemekten kaçının. Genel derleme önbelleğinde PIA'ların farklı sürümlerini kayıtlıysanız, örneğin, projeniz otomatik olarak en son kaydedilen derleme sürümüne bağlanır; üzerinde farklı bir derleme sürümü belirtseniz dahi  **COM** sekmesinde **başvuru Yöneticisi** iletişim kutusu.
 
@@ -90,7 +90,7 @@ Derlemelerin bu sürümleri yüklediyseniz ve PIA'lar genel derleme önbelleğin
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Microsoft Office uygulamaları için birincil birlikte çalışma derlemeleri
 
-Aşağıdaki tablo, kullanılabilen birincil birlikte çalışma derlemelerini listeler [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+Aşağıdaki tablo, kullanılabilen birincil birlikte çalışma derlemelerini listeler [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ve [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

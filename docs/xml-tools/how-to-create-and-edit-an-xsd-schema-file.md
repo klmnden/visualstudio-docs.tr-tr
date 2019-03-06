@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937922"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525364"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme
 
@@ -29,14 +29,10 @@ Bu konuda, yeni bir XML Şeması (XSD) dosyası oluşturun ve ardından içerik 
 
 ## <a name="to-edit-a-file"></a>Bir dosyayı düzenlemek için
 
-1. Seçin **görüntülemek ve temel alınan XML şema dosyasını düzenlemek için XML Düzenleyicisi'ni kullanma** başlangıç görünümünde bağlantı.
+1. Seçin **görüntülemek ve temel alınan XML şema dosyası düzenleme için kullanım XML Düzenleyicisi** başlangıç görünümünde bağlantı.
 
-   XML Düzenleyicisi'ni yeni dosya açıkken görünür.
+   XML Düzenleyicisi'ni yeni dosya açık görünür.
 
 2. XML şema örnek koddan kopyalama [satınalma siparişi şeması](../xml-tools/sample-xsd-file-simple-schema.md) ve varsayılan olarak yeni bir XSD dosyasına eklenen kodu değiştirmek için yapıştırın.
 
    **XML Şeması Gezgini** yeni şema kümesi ile güncelleştirilir.
-
-## <a name="see-also"></a>Ayrıca bkz.
-
-- [XML verileriyle çalışma](../xml-tools/working-with-xml-data.md)
