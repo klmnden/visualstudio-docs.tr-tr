@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638042"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567189"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook form bölgelerindeki özel eylemler
   Bir Microsoft Office Outlook öğesine yanıt vermesine olanak sağlayan bir düğme eylemleri görüntüler. Örneğin, bir posta öğesine yanıt vermek için kullanıcılar'ı tıklatın **yanıt**, **Tümünü Yanıtla**, veya **İleri** eylem düğmeleri. Bu eylemlerin her biri yeni bir posta öğesi oluşturur ve öğenin alan özgün öğeden bilgileri kullanarak doldurur.
@@ -28,7 +28,7 @@ ms.locfileid: "56638042"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Özel Eylemler için form bölgesi ekleme
- Form bölgesine özel bir eylem eklemek için **özel eylemler** iletişim kutusu. Açabileceğiniz **özel eylemler** iletişim kutusunda **Çözüm Gezgini** genişleterek **bildirim** düğümünün seçerek **CustomActions**özelliği ve ardından üç nokta düğmesini (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")).
+ Form bölgesine özel bir eylem eklemek için **özel eylemler** iletişim kutusu. Açabileceğiniz **özel eylemler** Form bölgesi olarak seçerek, iletişim kutusu **Çözüm Gezgini**, genişleyen **bildirim** düğümünde **özellikleri Pencere**u seçerek **CustomActions** özelliği ve ardından üç nokta düğmesine tıklayarak (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcı elips")).
 
  Kullanabileceğiniz **özel eylemler** belirtmek için iletişim kutusunda bir *hedef form*. Kullanıcı özel eylemin çalıştırdığı zaman görüntülenen formdaki bir hedef biçimidir.
 

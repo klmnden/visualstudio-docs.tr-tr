@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f320c992f3bb82ee29829d8d0a8dccc230ee6eb3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 41ca66c796b352113973dcf8d8158f385f49a8ec
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951611"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567376"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Senaryo: Görselleştirme ve modelleme kullanarak tasarımınızı değiştirme
 
@@ -214,7 +214,7 @@ Planlama, yönetme ve çalışmayı daha kolay izlemek için visual Studio model
 
 Bkz.
 
-- [Çevik araçları ve Çevik proje yönetimi hakkında](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Çevik araçları ve Çevik proje yönetimi hakkında](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Grafikler, panolar ve pencere öğeleri (Azure DevOps Hizmetleri)](/azure/devops/report/dashboards/overview?view=vsts)
 

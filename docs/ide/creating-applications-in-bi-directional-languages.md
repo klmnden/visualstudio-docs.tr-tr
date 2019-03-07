@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450327"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567266"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Çift yönlü dillerde uygulamalar oluşturma
 
@@ -30,7 +30,7 @@ Sağ-Arapça ve İbranice gibi sola doğru dillerde yazılan metin görüntüley
 
 -  Windows uygulamaları
 
-   Tam olarak iki yönlü metnin sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için çift yönlü destek](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
+   Tam olarak iki yönlü metnin sağdan sola okuma düzeni ve yansıtma (windows, menüler, iletişim kutuları ve benzeri düzenini ters) için destek içeren çift yönlü uygulamalar oluşturabilirsiniz. Yansıtma dışında bu özellikler varsayılan olarak veya özellik ayarları olarak kullanılabilir. Yansıtma ileti kutuları gibi bazı özellikler için doğal olarak desteklenir. Ancak, diğer durumlarda kod yansıtma uygulamalıdır. Daha fazla bilgi için [Windows Forms uygulamaları için çift yönlü destek](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
 -  Web uygulamaları
 

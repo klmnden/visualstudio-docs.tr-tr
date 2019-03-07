@@ -18,12 +18,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b54f788c77488ba780a0b52d4d6b332a974748af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8818774994e73db2cadfca679d3ee71bcb059ae2
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763853"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567163"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranış
 
  Hata ayıklama ve tanılama Visual Studio için hızlı bir giriş için bkz: [hata ayıklama, profil ve tanılama](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
--   [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015) Visual Studio 2015'te yeni işlevler açıklanmaktadır.
+-   [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md) Visual Studio 2015'te yeni işlevler açıklanmaktadır.
 
--   [Windows hata ayıklayıcı](../debugger/debugger-windows.md)farklı hata ayıklayıcı pencerelerini listeler.
+-   [Windows hata ayıklayıcı](../debugger/debugger-windows.md) farklı hata ayıklayıcı pencerelerini listeler.
 
 -   [Hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md) Visual Studio hata ayıklayıcısını kullanarak temellerini açıklar. Konular hata ayıklama temelleri, yürütme denetimi çalışan bir programa, tam zamanında hata ayıklama, ekleme, hata ayıklayıcıyı otomatik olarak başlatma dökümleri, özel durumları, programınızı inceleyerek kesme noktaları, Düzenle ve devam et ve ifadelerinde kullanma hata ayıklayıcı.
 
--   [Daha fazla hata ayıklama özellikleri](../debugger/more-debugging-features.md)farklı hata ayıklama özelliklerini açıklar.
+-   [Daha fazla hata ayıklama özellikleri](../debugger/more-debugging-features.md) farklı hata ayıklama özelliklerini açıklar.
 
 -   [Uzaktan hata ayıklama](../debugger/remote-debugging.md) ayarlama ve uzaktan hata ayıklama kullanma açıklanmaktadır.
 

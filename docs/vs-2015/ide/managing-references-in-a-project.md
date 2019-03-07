@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763656"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567221"
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 ## <a name="project-to-project-references"></a>Projeden projeye başvurular  
  Projeden projeye başvurular, derlemeler içeren projelere başvurulardır; bunları kullanarak oluşturduğunuz **proje** sekmesi. Visual Studio, projeye bir yolu verildiğinde bir derleme bulabilirsiniz.  
   
- Bir derleme üreten bir proje varsa, proje başvurusu ve bir dosya başvurusu (aşağıya bakın) kullanmamanız gerekir. Bir proje-proje başvurusunun avantajı yapı sistemindeki projeler arasında bağımlılık oluşturmasıdır. Bağımlı proje başvuran proje oluşturulan son daraltılmasından değişmiş ise oluşturulacaktır. Bu nedenle bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz hale gelebilir bir dosya başvurusu bir yapı bağımlılığı oluşturmaz. (Diğer bir deyişle, proje proje daha önce oluşturulmuş bir sürümüne başvuruda bulunabilir.) Bu mümkün değildir bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir. Bu çakışma oluştuğunda, bir ileti gibi görürsünüz [Uyarı: Bu 'dosya' başvurusunun üzerine yazacağından 'proje' projesindeki ' dosya' bağımlılığı çalıştırma dizinine kopyalanamıyor ](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Daha fazla bilgi için [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md) ve [nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Bir derleme üreten bir proje varsa, proje başvurusu ve bir dosya başvurusu (aşağıya bakın) kullanmamanız gerekir. Bir proje-proje başvurusunun avantajı yapı sistemindeki projeler arasında bağımlılık oluşturmasıdır. Bağımlı proje başvuran proje oluşturulan son daraltılmasından değişmiş ise oluşturulacaktır. Bu nedenle bağımlı proje oluşturmadan başvuran projeyi oluşturmak olasıdır ve başvuru geçersiz hale gelebilir bir dosya başvurusu bir yapı bağımlılığı oluşturmaz. (Diğer bir deyişle, proje proje daha önce oluşturulmuş bir sürümüne başvuruda bulunabilir.) Bu mümkün değildir bin dizininde gerekli tek bir DLL'nin çeşitli sürümleri neden olabilir. Bu çakışma oluştuğunda, bir ileti gibi görürsünüz [Uyarı: Bu 'dosya' başvurusunun üzerine yazacağından 'proje' projesindeki ' dosya' bağımlılığı çalıştırma dizinine kopyalanamıyor ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Daha fazla bilgi için [bozuk başvuruları sorun giderme](../ide/troubleshooting-broken-references.md) ve [nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Bir projenin .NET Framework hedef sürümü, sürüm 4.5 ise ve diğer projenin hedef sürümü sürüm 2, 3, 3.5 veya 4.0 ise bir proje proje başvurusu yerine dosya başvurusu oluşturulur.  

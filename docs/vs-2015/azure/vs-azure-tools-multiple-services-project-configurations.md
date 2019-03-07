@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 9da83c8c2e3b3cd86022b8fcc54f1c90a417cada
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e05d00bc01620f71b0fb6d97a3a7b4e78732f365
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766886"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567224"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio'da Azure projenizi birden çok hizmet yapılandırması kullanacak şekilde yapılandırma
 
@@ -29,7 +29,7 @@ Yapılandırma ayarları yönetilir ve uygun rolü için özellik sayfaları kul
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-Hizmet yapılandırma dosyalarını ve hizmet tanımı için temel alınan şemalar hakkında daha fazla bilgi için bkz. [.csdef XML Şeması](/azure/cloud-services/schema-csdef-file.md) ve [.cscfg XML Şeması](/azure/cloud-services/schema-cscfg-file.md) makaleler. Hizmet yapılandırması hakkında daha fazla bilgi için bkz. [bulut hizmetlerini yapılandırma](/azure/cloud-services/cloud-services-how-to-configure-portal).
+Hizmet yapılandırma dosyalarını ve hizmet tanımı için temel alınan şemalar hakkında daha fazla bilgi için bkz. [.csdef XML Şeması](/azure/cloud-services/schema-csdef-file) ve [.cscfg XML Şeması](/azure/cloud-services/schema-cscfg-file) makaleler. Hizmet yapılandırması hakkında daha fazla bilgi için bkz. [bulut hizmetlerini yapılandırma](/azure/cloud-services/cloud-services-how-to-configure-portal).
 
 
 ## <a name="configuration-page"></a>Yapılandırma sayfası

@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802572"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567308"
 ---
 # <a name="devops-with-unity-apps"></a>Unity uygulamaları ile DevOps
 
@@ -26,7 +26,7 @@ Aşağıdaki tablolarda, Visual Studio'da DevOps özellikleri nasıl uygulamak v
 
 ## <a name="agile-tools"></a>Çevik Araçlar
 
-Başvuru bağlantısı: [Çevik Araçlar ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts) (Azure panoları veya Team Explorer Everywhere dahil TFS'nin kullanarak)
+Başvuru bağlantısı: [Çevik Araçlar ve Çevik proje yönetimi](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (Azure panoları veya Team Explorer Everywhere dahil TFS'nin kullanarak)
 
 Genel Açıklama: tüm planlama ve izleme özellikleri proje türü ve dilleri kodlama bağımsız olarak çalışır.
 
@@ -73,7 +73,7 @@ Sürüm denetimi Unity ile ilgili özel konular:
 
 3. Unity proje ikili varlıkları — dokular ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkileyen çeşitli Git gibi kaynak denetimi sistemlerini yapılmış her değişiklik için bir dosyanın benzersiz bir kopyasını depolar. Bu, Git deposu bloated olacak neden olabilir. Bunu ele almak için Unity geliştiricileri genellikle yalnızca son varlıklar, depoya ekleyebilir ve kendi varlıklar, OneDrive, DropBox veya git-annex gibi çalışma geçmişini tutmak farklı bir yol seçin. Bu yaklaşım çalışır, çünkü bu tür varlıklar genellikle kaynak kodu değişiklikleri birlikte tutulan olmanız gerekmez. Geliştiriciler ayrıca genellikle zorla kaynak denetiminde birleştirmeleri izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için metin proje Düzenleyicisi'nin varlık serileştirme modunu ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belgeleri).
 
-## <a name="build"></a>Derleme
+## <a name="build"></a>Yapı
 
 Başvuru bağlantısı: **[Azure işlem hatları](/azure/devops/pipelines/index?view=vsts)**
 

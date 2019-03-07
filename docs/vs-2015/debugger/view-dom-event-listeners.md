@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c85146ea6e884acab0402c9bf4b19d80d1bdec86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c874505ebff1ca50a8e35bb46ad26d096b6145e
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765601"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567208"
 ---
 # <a name="view-dom-event-listeners"></a>DOM olayı dinleyicilerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
 -   DOM öğesi ya da nesne ömrü ilişkili olay dinleyicisinden farklı ise, çağrılacak olabilir `removeEventListener` yöntemi. Örneğin, kullanırsanız `window.onresize` olay, olay işleme burada sayfadan ayrılmak giderseniz, olay dinleyicisi Kaldır gerekebilir.
 
--   Varsa `removeEventListener` belirtilen dinleyiciyi kaldırmak başarısız olursa farklı bir nesne örneğinde adlı. Kullanabileceğiniz [bind yöntemi (işlev)](/visualstudio/scripting-docs/javascript/reference/bind-method-function-javascript) dinleyici eklediğinizde, bu sorunu çözmek için yöntemi.
+-   Varsa `removeEventListener` belirtilen dinleyiciyi kaldırmak başarısız olursa farklı bir nesne örneğinde adlı. Kullanabileceğiniz [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) dinleyici eklediğinizde, bu sorunu çözmek için yöntemi.
 
 -   Kullanarak eklenmiş bir olay dinleyiciyi kaldırmak için [bind yöntemi (işlev)](/visualstudio/scripting-docs/javascript/reference/bind-method-function-javascript) veya dinleyiciyi eklediğinizde, anonim bir işlevi kullanarak işlev örneği depolar. Güvenli bir şekilde bu düzenin kullanılacağı yöntemlerinden biri aşağıda verilmiştir:
 

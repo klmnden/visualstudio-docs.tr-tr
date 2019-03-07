@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940288"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567321"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.
@@ -59,7 +59,7 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
 
 1. İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
 
-    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
+    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Modelinizde bir veya daha fazla kullanım örnekleri için gereksinim iş öğesine bağlayın.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. İçinde [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel.
 
-    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/overview?view=vsts).
+    Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Team Foundation ile projenizin kullandığı işlem şablonuna bağlı olarak kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi olabilir. Daha fazla bilgi için [hakkında Çevik araçları ve Çevik proje yönetimi](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.
 

@@ -5,16 +5,16 @@ description: Klasik Windows tabanlı uygulamalar oluşturmak için Visual Studio
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c8341f268e0e238b7dcdc13d3d79810e1f52f0d7
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324409"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57554820"
 ---
 ## <a name="azure-development-build-tools"></a>Azure geliştirme derleme araçları
 
@@ -29,7 +29,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.8.27825.0 | Gerekli
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.9.28307.421 | Gerekli
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 15.7.27617.1 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 15.7.27617.1 | Gerekli
@@ -226,7 +226,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçlar�
 Microsoft.VisualStudio.Component.VC.Tools.ARM | ARM için Visual C++ Derleyicileri ve kitaplıkları | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Evrensel Windows platformu derleme önkoşulları | 15.8.27705.0 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Önerilen
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | İsteğe Bağlı
@@ -237,6 +237,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | İsteğe Bağlı
 
@@ -256,8 +257,8 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 yeniden d
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Test Araçları temel özellikleri - derleme araçları | 15.7.27625.0 | Önerilen
-Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.8.27906.1 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Önerilen
+Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.9.28307.102 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Önerilen
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 15.6.27309.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 15.6.27406.0 | İsteğe Bağlı
@@ -278,6 +279,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.WinXP | C++ için Windows XP desteği | 15.8.27924.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK ve UCRT SDK | 15.6.27406.0 | İsteğe Bağlı
