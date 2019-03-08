@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 22c4f24c8e97d98bb0bbe88fb998deb5929c6b7b
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: b7b1eb1808fadf3bc7639662419f7d176909412c
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567131"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683378"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio sürümlerini yan yana yükleme
 
@@ -69,7 +69,7 @@ Dile özgü bilgiler için aşağıdaki tabloda ilgili konuya bakın.
 
 * [Visual Studio'yu yükleyin](install-visual-studio.md?view=vs-2017)
 * [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
-* [C/C++ oluşturma yalıtılmış uygulamalar ve yan yana derlemeler](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
+* [C/C++ oluşturma yalıtılmış uygulamalar ve yan yana derlemeler](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end
 
@@ -88,6 +88,6 @@ Dile özgü bilgiler için aşağıdaki tabloda ilgili konuya bakın.
 
 * [Visual Studio'yu yükleyin](install-visual-studio.md?view=vs-2019)
 * [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
-* [C/C++ oluşturma yalıtılmış uygulamalar ve yan yana derlemeler](/cpp/build/building-c-cpp-isolated-applications-side-by-side-assemblies/)
+* [C/C++ oluşturma yalıtılmış uygulamalar ve yan yana derlemeler](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

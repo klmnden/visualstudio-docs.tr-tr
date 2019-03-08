@@ -1,7 +1,7 @@
 ---
 title: "Hızlı Başlangıç: Python web uygulaması oluşturmak için Visual Studio'yu kullanın."
 description: Bu hızlı başlangıçta, Visual Studio ve Flask framework python'da basit web uygulaması oluşturmak için kullanın.
-ms.date: 02/11/2019
+ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987437"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683391"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
@@ -27,21 +27,43 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 Aşağıdaki adımlar, uygulama için bir kapsayıcı görevi gören boş bir proje oluşturur:
 
+::: moniker range="vs-2017"
 1. Visual Studio 2017'yi açın.
 
-1. Üstteki menü çubuğundan seçin **Dosya > Yeni > Proje**.
+2. Üstteki menü çubuğundan seçin **Dosya > Yeni > Proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sağ üst köşedeki arama alanına "Python Web projesi" girin, **Web projesi** ortadaki listeyi proje "HelloPython" gibi bir ad verin ve ardından seçin**Tamam**.
+3. İçinde **yeni proje** iletişim kutusunda, sağ üst köşedeki arama alanına "Python Web projesi" girin, **Web projesi** ortadaki listeyi proje "HelloPython" gibi bir ad verin ve ardından seçin**Tamam**.
 
     ![Python Web Seçili proje ile yeni proje iletişim kutusu](media/quickstart-python-00-web-project.png)
 
-    / Python proje şablonları görmüyorsanız, İptal **yeni proje** iletişim kutusu ve üst menü çubuğundan seçin **Araçlar > araçları ve özellikleri Al** açmak için **Visual Studio Yükleyici**. Seçin **Python geliştirme** iş yükü, ardından **Değiştir**.
+    Python proje şablonları görmüyorsanız, çalıştırma **Visual Studio yükleyicisi**seçin **daha fazla** > **Değiştir**seçin **Python geliştirme** iş yükü, ardından **Değiştir**.
 
     ![Python geliştirme iş yüküyle Visual Studio](../python/media/installation-python-workload.png)
 
-1. Yeni Proje açılır **Çözüm Gezgini** sağ bölmede. Proje, bu noktada, başka hiçbir dosya içerdiği için boştur.
+4. Yeni Proje açılır **Çözüm Gezgini** sağ bölmede. Proje, bu noktada, başka hiçbir dosya içerdiği için boştur.
 
     ![Yeni oluşturulan boş projeyi gösteren Çözüm Gezgini](media/quickstart-python-01-empty-project.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+1. Open Visual Studio 2019.
+2. Başlangıç ekranında seçin **yeni bir proje oluşturma**.
+3. İçinde **yeni bir proje oluşturma** iletişim kutusunda, üst arama alanına "Python web" girin, **Web projesi** Orta listeden seçip **sonraki**:
+
+    ![Seçili Python Web projesi ile yeni bir proje ekran oluşturma](media/quickstart-python-00-web-project-2019a.png)
+
+    Python proje şablonları görmüyorsanız, çalıştırma **Visual Studio yükleyicisi**seçin **daha fazla** > **Değiştir**seçin **Python geliştirme** iş yükü, ardından **Değiştir**.
+
+    ![Python geliştirme iş yüküyle Visual Studio](../python/media/installation-python-workload.png)
+
+4. İçinde **yeni projenizi yapılandırın** aşağıdaki iletişim için "HelloPython" girin **proje adı**bir konum belirtin ve seçin **Oluştur**. ( **Çözüm adı** eşleşecek şekilde otomatik olarak ayarlanan **proje adı**.)
+
+    ![Yeni Proje iletişim kutusu yapılandırın](media/quickstart-python-00-web-project-2019b.png)
+
+5. Yeni Proje açılır **Çözüm Gezgini** sağ bölmede. Proje, bu noktada, başka hiçbir dosya içerdiği için boştur.
+
+    ![Yeni oluşturulan boş projeyi gösteren Çözüm Gezgini](media/quickstart-python-01-empty-project-2019.png)
+::: moniker-end
 
 **Soru: Proje Visual Studio için Python uygulaması oluşturmanın avantajı nedir?**
 
@@ -57,19 +79,37 @@ Python Web uygulamalarında hemen her zaman birçok kullanılabilir Python kitap
 
 Burada, "Bu proje için Visual Studio kullanan varsayılan genel ortama" Flask kitaplığını yüklemek için aşağıdaki adımları kullanın.
 
+::: moniker range="vs-2017"
 1. Genişletin **Python ortamları** proje için varsayılan ortam görmek için proje düğümü.
 
     ![Varsayılan ortamı gösteren Çözüm Gezgini](media/quickstart-python-02-default-environment.png)
 
-1. Ortam sağ tıklayıp **Python paketini Yükle**. Bu komut açılır **Python ortamları** penceresinde **paketleri** sekmesi.
+2. Ortam sağ tıklayıp **Python paketini Yükle**. Bu komut açılır **Python ortamları** penceresinde **paketleri** sekmesi.
 
-1. Arama alanına "flask" girin ve seçin **pip, Pypı flask yükleme**. Sizden yönetici ayrıcalıkları kabul edin ve gözlemleyin **çıkış** ilerleme için Visual Studio penceresinde. (Bir komut istemi packages klasörünü genel ortam için bir korumalı alanı içinde bulunduğu yükseltme olur için ister *C:\Program Files*.)
+3. Arama alanına "flask" girin ve seçin **pip, Pypı flask yükleme**. Sizden yönetici ayrıcalıkları kabul edin ve gözlemleyin **çıkış** ilerleme için Visual Studio penceresinde. (Bir komut istemi packages klasörünü genel ortam için bir korumalı alanı içinde bulunduğu yükseltme olur için ister *C:\Program Files*.)
 
     ![Pip kullanılarak Flask kitaplık yükleme](media/quickstart-python-03-install-package.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Genişletin **Python ortamları** proje için varsayılan ortam görmek için proje düğümü.
 
-1. Yüklendikten sonra kitaplık ortamda görünür **Çözüm Gezgini**, yapabileceğiniz anlamına gelir bunu Python kodu kullanın.
+    ![Varsayılan ortamı gösteren Çözüm Gezgini](media/quickstart-python-02-default-environment-2019.png)
 
+2. Ortam sağ tıklayıp **Python paketlerini Yönet...** . Bu komut açılır **Python ortamları** penceresinde **paketleri (Pypı)** sekmesi.
+
+3. Arama alanına "flask" girin. Varsa **Flask** görünür arama kutusunun altında bu adımı atlayabilirsiniz. Aksi takdirde seçin **komutu çalıştırın: pip install komutunu flask**. Sizden yönetici ayrıcalıkları kabul edin ve gözlemleyin **çıkış** ilerleme için Visual Studio penceresinde. (Bir komut istemi packages klasörünü genel ortam için bir korumalı alanı içinde bulunduğu yükseltme olur için ister *C:\Program Files*.)
+
+    ![Pip kullanılarak Flask kitaplık yükleme](media/quickstart-python-03-install-package-2019.png)
+::: moniker-end
+
+4. Yüklendikten sonra kitaplık ortamda görünür **Çözüm Gezgini**, yapabileceğiniz anlamına gelir bunu Python kodu kullanın.
+
+    ::: moniker range="vs-2017"
     ![Flask kitaplığının yüklü ve Çözüm Gezgini'nde gösteriliyor](media/quickstart-python-04-package-installed.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Flask kitaplığının yüklü ve Çözüm Gezgini'nde gösteriliyor](media/quickstart-python-04-package-installed-2019.png)
+    ::: moniker-end
 
 > [!Note]
 > Genel bir ortamda kitaplıklarını yüklemek yerine, geliştiricilerin, belirli bir projenin kitaplıklarını yüklemek "sanal ortam" genellikle oluşturun. Visual Studio şablonları bölümünde açıklandığı gibi bu seçenek genellikle teklif [hızlı başlangıç - şablon kullanarak bir Python projesi oluşturma](../python/quickstart-02-python-in-visual-studio-project-from-template.md).
@@ -121,7 +161,14 @@ Python kodu en az bir web uygulamasını uygulamak için biraz eklemek artık ha
 
 1. Sağ *app.py* içinde **Çözüm Gezgini** seçip **başlangıç dosyası olarak ayarla**. Bu komut, uygulamayı çalıştırırken Python'da başlatmak için kod dosyası tanımlar.
 
+    ::: moniker range="vs-2017"
     ![Çözüm Gezgini'nde bir proje için başlangıç dosyası ayarı](media/quickstart-python-05-set-as-startup-file.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![Çözüm Gezgini'nde bir proje için başlangıç dosyası ayarı](media/quickstart-python-05-set-as-startup-file-2019.png)
+    ::: moniker-end
+
+1. Sağ *app.py* içinde **Çözüm Gezgini** seçip **başlangıç dosyası olarak ayarla**. Bu komut, uygulamayı çalıştırırken Python'da başlatmak için kod dosyası tanımlar.
 
 2. Projeye sağ **Çözüm Gezgini** seçip **özellikleri**. Ardından **hata ayıklama** ayarlayın ve sekme **bağlantı noktası numarası** özelliğini `4449`. Visual Studio ile bir tarayıcı başlatır, bu adım sağlar `localhost:4449` eşleştirilecek `app.run` koddaki bağımsız değişkenler.
 
