@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: b615207467222a061a5496b87ecb1929348c18fe
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: db11e23f56f6c7442768e84a731b28b095807220
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223831"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57688439"
 ---
 Visual Studio ile kolayca oluşturun, hata ayıklama ve kapsayıcılı ASP.NET Core uygulamaları çalıştırın ve Azure Container Registry (ACR), Docker Hub, Azure App Service veya kendi kapsayıcı kayıt defteri yayımlarsınız. Bu makalede, biz ACR'ye yayınlayacaksınız.
 
@@ -29,16 +29,12 @@ Docker yükleme için bölümündeki bilgileri gözden geçirin [için Docker Ma
 
 ## <a name="add-a-project-to-a-docker-container"></a>Bir Docker kapsayıcısı için bir proje ekleyin
 
-1. Visual Studio menüden **Dosya > Yeni > Proje**.
-1. Altında **şablonları** bölümünü **yeni proje** iletişim kutusunda **Visual C# > Web**.
-1. Seçin **ASP.NET Core Web uygulaması**.
-1. Uygulamanızı yeni bir ad verin (veya varsayılan olması) seçip **Tamam**.
-1. Seçin **Web uygulaması**.
-1. Denetleme **Docker desteğini etkinleştir** onay kutusu.
+1. Kullanarak yeni bir proje oluşturma **ASP.NET Core Web uygulaması** şablonu.
+1. Seçin **Web uygulaması**emin **Docker desteğini etkinleştir** onay kutusunun seçili.
 
-   ![Docker desteği onay kutusunu etkinleştirin](../../media/docker-tools/enable-docker-support.PNG)
+   ![Docker desteği onay kutusunu etkinleştirin](../../media/docker-tools/vs-2019/create-new-web-application.PNG)
 
-1. (Windows veya Linux) istediğiniz kapsayıcı türü seçin **Tamam**.
+1. (Windows veya Linux) istediğiniz kapsayıcı türü seçin **Oluştur**.
 
 ## <a name="dockerfile-overview"></a>Dockerfile genel bakış
 
