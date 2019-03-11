@@ -153,9 +153,9 @@ items:
   - name: Yönetilen kod için kod çözümleme uyarıları
     href: code-analysis-for-managed-code-warnings.md
     items:
-    - name: CheckId Tarafından Yönetilen Kod için Kod Çözümleme Uyarıları
+    - name: CheckId Tarafından Yönetilen Kod için Kod Analizi Uyarıları
       href: code-analysis-warnings-for-managed-code-by-checkid.md
-    - name: Şifreleme Uyarıları
+    - name: Şifreleme uyarıları
       href: cryptography-warnings.md
       items:
       - name: 'CA5350: Zayıf Şifreleme Algoritmaları Kullanmayın'
@@ -289,7 +289,7 @@ items:
         href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
       - name: 'CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır'
         href: ca2210-assemblies-should-have-valid-strong-names.md
-    - name: Genelleştirme Uyarıları
+    - name: Genelleştirme uyarıları
       href: globalization-warnings.md
       items:
       - name: 'CA1300: MessageBoxOptions belirt'
@@ -314,7 +314,7 @@ items:
         href: ca1309-use-ordinal-stringcomparison.md
       - name: 'CA2101: P-Invoke dize bağımsız değişkenleri için sıralama belirtin'
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-    - name: Birlikte Çalışabilirlik Uyarıları
+    - name: Birlikte çalışabilirlik uyarıları
       href: interoperability-warnings.md
       items:
       - name: 'CA1400: P-Invoke giriş noktaları bulunmalıdır'
@@ -349,7 +349,7 @@ items:
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
       - name: "CA1415: P-Invoke'ları doğru bildirin"
         href: ca1415-declare-p-invokes-correctly.md
-    - name: Bakım Uyarıları
+    - name: Bakım uyarıları
       href: maintainability-warnings.md
       items:
       - name: 'CA1500: Değişken adları alan adları ile eşleşmemelidir'
@@ -364,14 +364,14 @@ items:
         href: ca1505-avoid-unmaintainable-code.md
       - name: 'CA1506: Aşırı sınıf bağlantısından kaçının'
         href: ca1506-avoid-excessive-class-coupling.md
-    - name: Hareketlilik Uyarıları
+    - name: Hareketlilik uyarıları
       href: mobility-warnings.md
       items:
       - name: 'CA1600: Boş işlem önceliğini kullanmayın'
         href: ca1600-do-not-use-idle-process-priority.md
       - name: 'CA1601: Güç durumu değişikliklerini önleyen zamanlayıcılar kullanmayın'
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-    - name: Adlandırma Uyarıları
+    - name: Adlandırma uyarıları
       href: naming-warnings.md
       items:
       - name: "CA1700: Sabit listesi değerlerini 'Reserved' olarak adlandırmayın"
@@ -420,7 +420,7 @@ items:
         href: ca1724-type-names-should-not-match-namespaces.md
       - name: 'CA1726: Tercih edilen terimleri kullanın'
         href: ca1726-use-preferred-terms.md
-    - name: Performans Uyarıları
+    - name: Performans uyarıları
       href: performance-warnings.md
       items:
       - name: 'CA1800: Gereksiz tür dönüştürmeler yapmayın'
@@ -455,7 +455,7 @@ items:
         href: ca1823-avoid-unused-private-fields.md
       - name: 'CA1824: Derlemeleri NeutralResourcesLanguageAttribute ile işaretleyin'
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-    - name: Taşınabilirlik Uyarıları
+    - name: Taşınabilirlik uyarıları
       href: portability-warnings.md
       items:
       - name: 'CA1900: Değer tür alanları taşınabilir olmalıdır'
@@ -464,7 +464,7 @@ items:
         href: ca1901-p-invoke-declarations-should-be-portable.md
       - name: 'CA1903: Yalnızca hedeflenen çerçeveden API kullanın'
         href: ca1903-use-only-api-from-targeted-framework.md
-    - name: Güvenilirlik Uyarıları
+    - name: Güvenilirlik uyarıları
       href: reliability-warnings.md
       items:
       - name: 'CA2000: Kapsamı kaybetmeden önce nesneleri bırakın'
@@ -479,7 +479,9 @@ items:
         href: ca2004-remove-calls-to-gc-keepalive.md
       - name: 'CA2006: Yerel kaynakları kapsamak için SafeHandle kullanın'
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-    - name: Güvenlik Uyarıları
+      - name: 'CA2007: Doğrudan bir Görevi beklemeyin'
+        href: ca2007-do-not-directly-await-task.md
+    - name: Güvenlik uyarıları
       href: security-warnings.md
       items:
       - name: 'CA2100: SQL sorgularını güvenlik açıkları için inceleyin'
@@ -580,7 +582,7 @@ items:
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
       - name: 'CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme'
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-    - name: Kullanım Uyarıları
+    - name: Kullanım uyarıları
       href: usage-warnings.md
       items:
       - name: 'CA1801: Kullanılmayan parametreleri gözden geçirin'
@@ -669,9 +671,9 @@ items:
         href: ca2242-test-for-nan-correctly.md
       - name: 'CA2243: Öznitelik dize harfleri doğru çözümlenmelidir'
         href: ca2243-attribute-string-literals-should-parse-correctly.md
-    - name: Kod Çözümleme İlkesi Hataları
+    - name: Kod Analiz İlkesi Hataları
       href: code-analysis-policy-errors.md
-  - name: C++ Temel Yönergeleri Denetleyici Uyarıları
+  - name: C++ Temel Yönergeleri Denetleyici uyarıları
     href: code-analysis-for-cpp-corecheck.md
     items:
     - name: C26400
@@ -828,7 +830,7 @@ items:
       href: C26497.md
     - name: C26498
       href: C26498.md
-  - name: C/C++ İçin Kod Çözümleme Uyarıları
+  - name: C/C++ İçin Kod Analizi uyarıları
     href: code-analysis-for-c-cpp-warnings.md
     items:
     - name: C1250
@@ -1411,7 +1413,7 @@ items:
       href: c28350.md
     - name: C28351
       href: c28351.md
-  - name: Kod Çözümleme Uygulama Hataları
+  - name: Kod Analiz Uygulama Hataları
     href: code-analysis-application-errors.md
     items:
     - name: CA0001
@@ -1468,9 +1470,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd Hataları
       href: fxcopcmd-errors.md
-ms.openlocfilehash: 4d6e4458e334cc1d51b65ae9ba8eaeb83fc70aa2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835156"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699674"
