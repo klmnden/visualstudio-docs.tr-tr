@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c953e4021f654d469a579a3aec5900e4ab93de7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634272"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737024"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Hatalı davranan çok iş parçacıklı uygulamalar için ortak desenler
 
@@ -30,7 +30,7 @@ Bazen bir paralel uygulama stubbornly birkaç iş parçacığı vardır ve bilgi
 
 Aşağıdaki çizimde gösterildiği gibi Concurrency Visualizer Ayrıca, birden çok iş parçacığı varlığına rağmen sadece bir mantıksal çekirdek uygulama tüketir. CPU Kullanımı görünümünde Bu belirti kullanıma sunabilirsiniz.
 
-Daha fazla bilgi için "performans düzeni 1: Kilit çakışması Hazim Shafi içinde ait tanımlama" [Windows için performans araçları paralel](http://go.microsoft.com/fwlink/?LinkID=160569) MSDN blog Web sitesinde blogu.
+Daha fazla bilgi için MSDN dergisi makalesinde "Başlangıç" sorun bölümüyle bkz [iş parçacığı performans - kaynak çekişmesi eşzamanlılık profil oluşturması Visual Studio 2010'daki](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Kilit çakışması](../profiling/media/lockcontention_2.png "LockContention_2")
 

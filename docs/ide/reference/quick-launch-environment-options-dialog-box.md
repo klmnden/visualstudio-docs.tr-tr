@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949167"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736996"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Hızlı Başlatma, Ortam, Seçenekler İletişim Kutusu
 
@@ -36,9 +36,9 @@ Aramanızı belirli kategorileri sınırlandırmak için aşağıdaki kısayolla
 |Kategori|Kısayol|Kısayol açıklaması|
 |--------------|--------------| - |
 |En son kullanılan|@mru<br /><br /> Örneğin, `@mru font`|En fazla beş öğe, görüntüler **en son kullanılan**.|
-|Menüler|@menu<br /><br /> Örneğin, `@menu font`|Arama menü öğeleri için sınırlar.|
+|Menüler|@menu<br /><br /> Örneğin, `@menu project`|Arama menü öğeleri için sınırlar.|
 |Seçenekler|@opt<br /><br /> Örneğin, `@opt font`|Arama ayarları için sınırları **seçenekleri** iletişim kutusu.|
-|Belgeler|@doc<br /><br /> Örneğin, `@doc font`|Arama ölçütlerine dosya adlarını ve yollarını açık belgelerin arama sınırlanır ancak dosyaları içindeki metin arama yapmaz.|
+|Belgeler|@doc<br /><br /> Örneğin, `@doc program.cs`|Arama ölçütlerine dosya adlarını ve yollarını açık belgelerin arama sınırlanır ancak dosyaları içindeki metin arama yapmaz.|
 
 > [!NOTE]
 > Kısayol tuşlarını değiştirebileceğiniz **genel**, **klavye** sayfasını **seçenekleri** iletişim kutusu.

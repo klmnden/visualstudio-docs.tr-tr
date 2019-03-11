@@ -2,7 +2,7 @@
 title: 'Öğretici: Basit bir C# konsol uygulaması'
 description: Visual Studio'da, adım adım C# konsol uygulaması oluşturmayı öğrenin.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841188"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736918"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Öğretici: Basit bir C# Visual Studio'da konsol uygulaması
 
@@ -34,8 +34,9 @@ Başlamak için oluşturacağız bir C# uygulama projesi. Proje türü bile herh
 1. Visual Studio 2017'yi açın.
 
 2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
+   (Alternatif olarak, basın **Ctrl**+**Shift**+**N**).
 
-3. İçinde **yeni proje** iletişim kutusunun sol bölmesinde, **C#** ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı *hesaplayıcı*.
+3. Sol bölmesinde **yeni proje** iletişim kutusunda **C#** ve ardından **.NET Core**. Orta bölmede seçin **konsol uygulaması (.NET Core)**. Dosya adı ***hesaplayıcı***.
 
    ![Konsol uygulaması (.NET Core) proje şablonunu yeni proje iletişim kutusunda Visual Studio IDE](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
 ## <a name="create-the-app"></a>Uygulama oluşturma
 
-İlk olarak, bazı temel tamsayı matematik şunları keşfedeceğiz C#. Ardından, temel hesaplayıcı oluşturmak için kod ekleyeceğiz. Ardından, biz işlevselliği eklemek için kod ince ayar. Bundan sonra uygulamayı bulun ve hataları düzeltmek için hata ayıklama. Ve son olarak, size daha verimli hale getirmek için kod geliştireceksiniz.
+İlk olarak, bazı temel tamsayı matematik şunları keşfedeceğiz C#. Ardından, temel hesaplayıcı oluşturmak için kod ekleyeceğiz. Yanında. Bundan sonra uygulamayı bulun ve hataları düzeltmek için hata ayıklama. Ve son olarak, size daha verimli hale getirmek için kod geliştireceksiniz.
 
-İçinde bazı tamsayı matematiğini başlayalım C#.
+### <a name="explore-integer-math"></a>Tamsayı matematiğini İnceleme
+
+İle bazı temel tamsayı matematik başlayalım C#.
 
 1. Kod Düzenleyicisi'nde, varsayılan "Hello World" kod silin.
 
@@ -81,15 +84,23 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
             Console.ReadKey();
     ```
 
+    Bunu yaptığınızda, Visual Studio IntelliSense özelliği, otomatik tamamlama girişi seçeneği sunduğunu dikkat edin.
+
+    ![Visual Studio IDE IntelliSense otomatik tamamlama özelliği gösteren tamsayı matematik kod animasyon](./media/integer-math-intellisense.gif)
+
 1. Seçin **hesaplayıcı** , programınızı çalıştırmak için veya basın **F5**.
 
    ![Araç çubuğunda uygulamayı çalıştırmak için hesap makinesi düğmesini seçin](./media/csharp-console-calculator-button.png)
 
-   42 + 119 toplamını gösteren bir konsol penceresi açılır.
+   Olan 42 + 119 toplamını gösteren bir konsol penceresi açılır **161**.
 
-1. Artık değiştirmeyi deneyin `int c = a + b;` gibi farklı bir işleç kullanarak kod satırının `-` çıkarma için `*` çarpma için veya */* bölme.
+    ![Tamsayı matematiğini sonuçlarını gösteren konsol penceresi](./media/csharp-console-integer-math.png)
 
-    İşleç değiştirmek ve programı çalıştırın, sonuç, çok değiştiğine dikkat edin.
+1. **(İsteğe bağlı)**  Sonucu değiştirmek için işleci değiştirebilirsiniz. Örneğin, değiştirebileceğiniz `+` işlecinde `int c = a + b;` kod satırını `-` çıkarma için `*` çarpma için veya `/` bölümünün. Programını çalıştırdığınızda, ardından sonucu, çok değiştirir.
+
+1. Konsol penceresini kapatın.
+
+### <a name="add-code-to-create-a-calculator"></a>Bir hesap makinesi oluşturmak için kod ekleyin
 
 Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
 
@@ -165,6 +176,10 @@ Hesaplayıcı kod daha karmaşık bir takım projenize ekleyerek devam edelim.
 
     ![Konsol penceresinde hesaplayıcı uygulamayı gösteren ve gerçekleştirilecek eylemleri istemlerinde içerir](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Hesaplayıcıya işlevsellik ekleme
+
+Şimdi daha fazla işlevsellik eklemek için kod ince ayar.
+
 ### <a name="add-decimals"></a>Ondalık sayı Ekle
 
 Hesaplayıcı uygulama şu anda kabul eder ve tam sayı döndürür. Ancak biz ondalık basamak veren kod eklerseniz daha kesin olacaktır.
@@ -178,6 +193,8 @@ Uygulamayı çalıştırın ve sayı 42 119, sayıya göre bölme aşağıdaki e
 1. Tuşuna **Ctrl** + **F** açmak için **Bul ve Değiştir** denetimi.
 
 1. Her örneğini `int` değişkenini `float`.
+
+   Geçiş emin **eşleşen servis talebi** (**Alt**+**C**) ve **eşleşen tam sözcük** (**Alt** + **W**) içinde **Bul ve Değiştir** denetimi.
 
     ![Animasyon kayan nokta tamsayı değişkeni değiştirme gösteren Bul ve Değiştir denetimi](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ Bu öğreticiyi tamamlamak Tebrikler! Daha da fazla bilgi edinmek için şu öğ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Hata ayıklamayı öğrenin C# Visual Studio'daki kod](tutorial-debugger.md)

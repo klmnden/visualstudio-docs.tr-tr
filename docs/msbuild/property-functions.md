@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623066"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737039"
 ---
 # <a name="property-functions"></a>Özellik işlevleri
 
@@ -166,7 +166,7 @@ MSBuild özellik işlevlerin bir listesi aşağıda verilmiştir:
 |int BitwiseXor (int ilk, int saniye)|Bit düzeyinde gerçekleştirmek `XOR` ilk ve ikinci (ilk ^ ikinci).|
 |int BitwiseNot(int first)|Bit düzeyinde gerçekleştirmek `NOT` (~ ilk).|
 |bool IsOsPlatform (dize platformString)|Geçerli işletim sistemi platformu olup olmadığını belirtin `platformString`. `platformString` bir üyesi olmanız gerekir <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|Geçerli işletim sistemi bir Unix sistem geçerlidir.|
+|bool IsOSUnixLike()|Geçerli işletim sistemi bir Unix sistem geçerlidir.|
 |dize NormalizePath (yol parametreleri dize [])|Sağlanan yol Kurallaştırılan tam yolunu alır ve geçerli işletim sistemi için doğru dizin Ayırıcı karakterler içerdiği sağlar.|
 |dize NormalizeDirectory (yol parametreleri dize [])|Sağlanan dizin Kurallaştırılan tam yolunu alır ve doğru dizin ayırıcı karakterleri geçerli içerdiği sağlar sağlarken, işletim sistemi sonunda eğik çizgi içeriyor.|
 |dize EnsureTrailingSlash(string path)|Belirtilen yolla bir ekleme sonunda bir eğik çizgi yoksa. Yol boş bir dize ise, bunu değiştirmez.|
