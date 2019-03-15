@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270582"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983461"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio'da FxCop Çözümleyicileri yükleyin
 
@@ -54,12 +54,27 @@ Visual Studio sürümünüz için yüklenecek FxCop Çözümleyicileri paketini 
 
 Visual Studio 2017'de sürüm 15.5 ve üzeri yükleyebileceğiniz [Microsoft Kod Analizi 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) tüm FxCop Çözümleyicileri yönetilen projeler içeren bir uzantı.
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'da **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
    **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.
 
    > [!NOTE]
    > Alternatif olarak, doğrudan uzantısını [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'da **uzantıları** > **uzantıları yönetme**.
+
+   **Uzantıları yönetme** iletişim kutusu açılır.
+
+   > [!NOTE]
+   > Alternatif olarak, doğrudan uzantısını [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Genişletin **çevrimiçi** sol bölmesi ve ardından **Visual Studio Market**.
 
@@ -83,7 +98,17 @@ Visual Studio 2017'de sürüm 15.5 ve üzeri yükleyebileceğiniz [Microsoft Kod
 
 1. Visual Studio'yu yeniden açın.
 
+::: moniker range="vs-2017"
+
 Seçeneğini yüklü olup olmadığını ' uzantısı denetlemek istiyorsanız **Araçları** > **Uzantılar ve güncelleştirmeler**. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda, **yüklü** solda, kategori ve uzantısı adına göre arayın.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Seçeneğini yüklü olup olmadığını ' uzantısı denetlemek istiyorsanız **uzantıları** > **uzantıları yönetme**. İçinde **uzantıları yönetme** iletişim kutusunda **yüklü** solda, kategori ve sonra uzantıyı adıyla Ara.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

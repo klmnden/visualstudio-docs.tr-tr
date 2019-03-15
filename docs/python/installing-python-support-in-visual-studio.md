@@ -1,7 +1,7 @@
 ---
 title: Python desteğini yükleme
 description: Python Tools için Visual Studio (PTVS) Visual Studio 2017, 2015, 2013, 2012 ve 2010, seçeneklerini ve yükleme konumlarını dahil olmak üzere kurulur.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 5270d24bd98d9858b4133c1e05b5883b8b57f509
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323257"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983318"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
 (PTVS ya da Visual Studio için Python araçları olarak da bilinir) Visual Studio için Python desteği yüklemek için Visual Studio sürümünüzle eşleşen bölümünde yer alan yönergeleri izleyin:
 
-- [Visual Studio 2017](#visual-studio-2017)
+- [Visual Studio 2017 ve Visual Studio 2019](#visual-studio-2017-and-2019)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 veya önceki](#visual-studio-2013-and-earlier)
 
@@ -33,30 +33,27 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 > [!Note]
 > Python desteği, Mac için Visual Studio şu anda mevcut değildir, ancak Mac ve Linux'ta Visual Studio Code ile kullanılabilir. Bkz: [sorularını ve yanıtlarını](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+<a name="visual-studio-2017"></a>
+## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 ve Visual Studio 2017
 
-1. İndirin ve en son Visual Studio 2017 Yükleyicisi'ni çalıştırın. Visual Studio zaten yüklüyse, Visual Studio Yükleyicisi'ni çalıştırın, seçin **Değiştir** seçeneği (bkz [değiştirme Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
+1. İndirin ve en son Visual Studio Yükleyicisi'ni çalıştırın. Visual Studio zaten yüklüyse, Visual Studio Yükleyicisi'ni çalıştırın, seçin **Değiştir** seçeneği (bkz [değiştirme Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
 
     > [!div class="nextstepaction"]
-    > [Visual Studio 2017 Community'yi yükleyin](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Visual Studio 2019 Community'yi yükleyin](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Topluluk sürümü bireysel geliştiriciler, sınıfta öğrenim ortamı, akademik araştırma ve açık kaynak geliştirme için ' dir. Diğer kullanımlar için yükleme [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) veya [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > Topluluk sürümü bireysel geliştiriciler, sınıfta öğrenim ortamı, akademik araştırma ve açık kaynak geliştirme için ' dir. Diğer kullanımlar için yükleme [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) veya [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. Yükleyici belirli geliştirme alanlar için ilgili seçenekleri gruplarıdır iş yüklerinin bir listesini sunar. Python için seçin **Python geliştirme** iş yükü.
 
     ![Python geliştirme iş yüküyle Visual Studio](media/installation-python-workload.png)
 
-   ::: moniker range="vs-2017"
-
+    ::: moniker range="vs-2017"
     İsteğe bağlı: veri bilimi ile çalışıyorsanız, ayrıca düşünün **veri bilimi ve analitik uygulamalar** iş yükü. Bu iş yükü, R, Python için destek içerir ve F# diller. Daha fazla bilgi için [veri bilimi ve analitik uygulamalar iş yükü](data-science-and-analytical-applications-workload.md).
-    
     ::: moniker-end
-    
-   ::: moniker range=">=vs-2019"
 
+    ::: moniker range=">=vs-2019"
     İsteğe bağlı: veri bilimi ile çalışıyorsanız, ayrıca düşünün **veri bilimi ve analitik uygulamalar** iş yükü. Bu iş yükü, Python için destek içerir ve F# diller. Daha fazla bilgi için [veri bilimi ve analitik uygulamalar iş yükü](data-science-and-analytical-applications-workload.md).
-    
     ::: moniker-end
 
     > [!Note]
@@ -64,11 +61,17 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 
 1. Yükleyici sağ tarafında, istenirse ek seçenekler seçtiniz. Varsayılan seçenekleri kabul etmek için bu adımı atlayın.
 
+    ::: moniker range="vs-2017"
     ![Visual Studio Yükleyicisi'nde Python geliştirme seçenekleri](media/installation-python-options.png)
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    ![Visual Studio 2019 yükleyici Python geliştirme seçenekleri](media/installation-python-options-2019.png)
+    ::: moniker-end
 
     | Seçenek | Açıklama |
     | --- | --- |
-    | Python dağıtımları | İle çalışmayı planlıyorsanız Python 2, Python 3, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit türevleri herhangi bir bileşimini seçin. Her dağıtım'ın Yorumlayıcı, çalışma zamanı ve kitaplıkları içerir. Anaconda'yı özellikle çok çeşitli önceden yüklenmiş paketler içeren bir açık veri bilimi platformudur. (Ekleme veya kaldırma dağıtımları istediğiniz zaman Visual Studio Yükleyicisi için döndürebilir.)  **Not**: Visual Studio yükleyicisi dışında bir dağıtım yüklediyseniz, burada eşdeğer seçeneği denetlemek için gerek yoktur. Visual Studio, mevcut Python yüklemeleri otomatik olarak algılar. Bkz: [Python ortamları penceresi](managing-python-environments-in-visual-studio.md#the-python-environments-window). Ayrıca, daha yeni bir Python sürümü olup olmadığını ne gösterilmemektedir Yükleyicisi'nde Visual Studio bunu algılar ve bu sürümü ayrı olarak yükleyebilirsiniz. |
+    | Python dağıtımları | Herhangi bir birleşimini ile çalışmayı planlıyorsanız Python 2, 3 Python, Miniconda, Anaconda2 ve Anaconda3 dağıtımları 32-bit ve 64-bit çeşitleri gibi kullanılabilir seçenekleri seçin. Her dağıtım'ın Yorumlayıcı, çalışma zamanı ve kitaplıkları içerir. Anaconda'yı özellikle çok çeşitli önceden yüklenmiş paketler içeren bir açık veri bilimi platformudur. (Ekleme veya kaldırma dağıtımları istediğiniz zaman Visual Studio Yükleyicisi için döndürebilir.)  **Not**: Visual Studio yükleyicisi dışında bir dağıtım yüklediyseniz, burada eşdeğer seçeneği denetlemek için gerek yoktur. Visual Studio, mevcut Python yüklemeleri otomatik olarak algılar. Bkz: [Python ortamları penceresi](managing-python-environments-in-visual-studio.md#the-python-environments-window). Ayrıca, daha yeni bir Python sürümü olup olmadığını ne gösterilmemektedir Yükleyicisi'nde Visual Studio bunu algılar ve bu sürümü ayrı olarak yükleyebilirsiniz. |
     | **Cookiecutter şablonu desteği** | Şablonları keşfedin, şablon seçeneklerini giriş ve projeleri ve dosyaları oluşturma Cookiecutter grafik kullanıcı arabirimini yükler. Bkz: [Cookiecutter uzantısını kullanma](using-python-cookiecutter-templates.md). |
     | **Python web desteği** | HTML, CSS ve JavaScript desteği, Bottle, Flask ve Django çerçeveleri kullanarak projeleri şablonları yanı sıra düzenleme dahil olmak üzere web geliştirme araçları yükler. Bkz: [Python web projesi şablonları](python-web-application-project-templates.md). |
     | **Python IOT desteği** | Python kullanarak Windows IOT Core geliştirme destekler. |
@@ -115,7 +118,7 @@ Yüklerken veya Visual Studio'da Python çalıştırırken sorunlarla karşıla�
 
 Varsayılan olarak, Python desteği, bir bilgisayardaki tüm kullanıcılar için yüklenir.
 
-Python iş yükü için Visual Studio 2017, yüklü olan *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\< VS_edition > Common7\IDE\Extensions\Microsoft\Python* burada &lt;VS_edition &gt; Community, Professional veya Enterprise.
+Visual Studio 2019 ve Visual Studio 2017 için Python iş yükü yüklü *% ProgramFiles (x86) %\Microsoft Visual Studio\\< VS_version >\\< VS_edition > Common7\IDE\Extensions\Microsoft\ Python* burada &lt;VS_version&gt; 2019 veya 2017 ve &lt;VS_edition&gt; Community, Professional veya Enterprise.
 
 Ve önceki sürümleri, Visual Studio 2015 için yükleme yolu aşağıdaki gibidir:
 

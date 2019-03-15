@@ -1,7 +1,7 @@
 ---
 title: Seçin ve Python yorumlayıcılarını yükleme
 description: Visual Studio'da kısa yönergelerle yükleyicilerinin nerede bulacağını üzerinde desteklenen Python yorumlayıcılarını tam bir listesi.
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ecbebaa0de1abebcffea59889a0f58d51d947247
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921009"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982902"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
 
-Varsayılan olarak, Python geliştirme iş yükünü Visual Studio 2017'de yükleme Python 3 (64-bit) yükler. İsteğe bağlı olarak Python 2, Python 3, Anaconda 2 ve 3 Anaconda, 32-bit ve 64 bit sürümlerini yüklemek açıklandığı seçebileceğiniz [yükleme](installing-python-support-in-visual-studio.md).
+Varsayılan olarak, Python geliştirme iş yükünü Visual Studio 2017 ve sonraki sürümlerinde yükleme Python 3 (64-bit) yükler. İsteğe bağlı olarak Python 2 ve Miniconda (Visual Studio 2019) veya Anaconda 2/3 (Visual Studio 2017), Anaconda yanı sıra Python 3 32-bit ve 64-bit sürümleri yüklemek açıklandığı seçebileceğiniz [yükleme](installing-python-support-in-visual-studio.md).
 
 Ayrıca, herhangi bir Visual Studio yükleyicisi dışında aşağıdaki tabloda listelenen yorumlayıcılarını el ile de yükleyebilirsiniz. Örneğin, Visual Studio'yu yüklemeden önce Anaconda 3 yüklü değilse, Visual Studio yükleyicisi yeniden yüklemeniz gerekmez. Ayrıca yorumlayıcıyı el ile yükleyebilirsiniz, örneğin, daha yeni bir sürümü kullanılabilir, henüz Visual Studio Yükleyicisi'nde görünmez.
 

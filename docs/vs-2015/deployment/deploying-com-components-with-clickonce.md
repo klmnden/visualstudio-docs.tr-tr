@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9422d1c2a185e223b35bc16ad892282ca1c2a420
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786163"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57871307"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .NET uygulamaları dağıtmak için kolay ve güvenli bir mekanizma sağlar. Ancak, uygulamalarınızı eski COM bileşenleri kullanıyorsanız, bunları dağıtmak için ek adımlar uygulamanız gerekir. Bu konuda, yalıtılmış COM bileşenlerini dağıtmak ve yerel bileşenlerin (örneğin, Visual Basic 6.0 veya Visual C++) başvuru açıklar.  
   
- Yalıtılmış COM bileşenleri dağıtma ile ilgili daha fazla bilgi için bkz. "ile uygulama dağıtımını basitleştirin [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ve Registration-Free COM" konumunda [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Yalıtılmış COM bileşenleri dağıtma ile ilgili daha fazla bilgi için bkz. "ile uygulama dağıtımını basitleştirin [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ve Registration-Free COM" konumunda [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
   
 ## <a name="registration-free-com"></a>Kayıtsız COM  
  Kayıtsız COM dağıtımı ve yalıtılmış COM bileşenlerini etkinleştirme için yeni bir teknolojidir. Bileşenin tüm tür kitaplığı ve genellikle bir bildirim adlı bir XML dosyasına sistem kayıt defterine yüklenir kayıt bilgileri koyarak çalıştığı uygulama ile aynı klasörde depolanır.  

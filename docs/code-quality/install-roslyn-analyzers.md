@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222941"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982941"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>.NET derleyici platformu çözümleyicilerini yükleme
 
@@ -37,12 +37,27 @@ Visual Studio .NET derleyici platformu çekirdek kümesini içerir (*Roslyn*) ç
 
 ## <a name="to-install-vsix-analyzers"></a>VSIX Çözümleyicileri yüklemek için
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'da **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
    **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.
 
    > [!NOTE]
    > Alternatif olarak, bulmak ve doğrudan Çözümleyicisi uzantısını indirin [Visual Studio Market](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'da **uzantıları** > **uzantıları yönetme**.
+
+   **Uzantıları yönetme** iletişim kutusu açılır.
+
+   > [!NOTE]
+   > Alternatif olarak, bulmak ve doğrudan Çözümleyicisi uzantısını indirin [Visual Studio Market](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Genişletin **çevrimiçi** sol bölmesi ve ardından **Visual Studio Market**.
 
@@ -64,7 +79,17 @@ Visual Studio .NET derleyici platformu çekirdek kümesini içerir (*Roslyn*) ç
 
 8. Visual Studio'yu yeniden açın.
 
+::: moniker range="vs-2017"
+
 Seçeneğini yüklü olup olmadığını ' uzantısı denetlemek istiyorsanız **Araçları** > **Uzantılar ve güncelleştirmeler**. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda, **yüklü** solda, kategori ve uzantısı adına göre arayın.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Seçeneğini yüklü olup olmadığını ' uzantısı denetlemek istiyorsanız **uzantıları** > **uzantıları yönetme**. İçinde **uzantıları yönetme** iletişim kutusunda **yüklü** solda, kategori ve sonra uzantıyı adıyla Ara.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

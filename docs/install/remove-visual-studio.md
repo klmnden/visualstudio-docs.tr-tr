@@ -20,14 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909655"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982876"
 ---
-# <a name="remove-visual-studio-2017"></a>Visual Studio 2017'yi kaldırma
+# <a name="remove-visual-studio"></a>Visual Studio Kaldır
 
 Siz işlemi yıkıcı hatayla karşılaşırsanız ve onarmak ya da Visual Studio'yu kaldırın, çalıştırabileceğiniz `InstallCleanup.exe` aracı yükleme dosyalarını ve tüm yüklü örnekler Visual Studio 2017'in ve ürün bilgileri kaldırmak için. Bu araç çalışıyor durumunda son çare olarak yapılması onarma veya kaldırma işlemi başarısız oldu ve özellikler, diğer Visual Studio yüklemeleri ya da onarılması için gereken diğer ürünleri kaldırabilirsiniz.
 
@@ -54,7 +54,7 @@ Bulunamadı, `InstallCleanup.exe` - Visual Studio yükleyicisi dizini altında b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Yükleme](install-visual-studio.md)
-* [Visual Studio 2017 güncelleştirmesi](update-visual-studio.md)
-* [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
-* [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
+* [Visual Studio’yu güncelleştirme](update-visual-studio.md)
+* [Visual Studio’yu değiştirme](modify-visual-studio.md)
+* [Visual Studio'yu kaldırma](uninstall-visual-studio.md)

@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796848"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983081"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme
 
-Visual Studio 2017'yi bir komut isteminden yüklediğinizde, denetim ya da yüklemeyi özelleştirmek için çeşitli komut satırı parametreleri kullanabilirsiniz. Komut satırından aşağıdaki eylemleri gerçekleştirebilirsiniz:
+Visual Studio'yu bir komut isteminden yüklediğinizde, denetim ya da yüklemeyi özelleştirmek için çeşitli komut satırı parametreleri kullanabilirsiniz. Komut satırından aşağıdaki eylemleri gerçekleştirebilirsiniz:
 
 - Yükleme önceden belirli seçenekleri ile başlayın.
 - Yükleme işlemini otomatik hale getirin.
@@ -45,7 +45,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 (Değiştir `vs_enterprise.exe` ürün sürümü için uygun şekilde yüklemekte.)
 
 >[!TIP]
-> Visual Studio 2017'yi yüklemek için komut satırını kullanmayı daha fazla örnek için bkz. [komut satırı parametresi örnekleri](command-line-parameter-examples.md) sayfası.
+> Visual Studio'yu yüklemek için komut satırını kullanmayı daha fazla örnek için bkz. [komut satırı parametresi örnekleri](command-line-parameter-examples.md) sayfası.
 
 | **Komutu** | **Açıklama** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 | `update` | Yüklü bir ürün güncelleştirir. |
 | `repair` | Yüklü bir ürün onarır. |
 | `uninstall` | Yüklü bir ürün kaldırır. |
-| `export` | **Yeni 15.9**: Yükleme seçimi bir yükleme yapılandırma dosyasına dışarı aktarır. **Not**: Yalnızca vs_installer.exe ile kullanılabilir. |
+| `export` | **Yeni sürüm 15.9**: Yükleme seçimi bir yükleme yapılandırma dosyasına dışarı aktarır. **Not**: Yalnızca vs_installer.exe ile kullanılabilir. |
 
 ## <a name="install-options"></a>Yükleme Seçenekleri
 
@@ -115,7 +115,7 @@ Komut satırı seçenekleri, indirme işlemini başlatan küçük (yaklaşık 1 
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>İş yükü kimlikleri ve bileşen listesi
 
-İş yükü ve Bileşen kimlikleri Visual Studio ürüne göre sıralı bir listesi için bkz. [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
+İş yükü ve Bileşen kimlikleri Visual Studio ürüne göre sıralı bir listesi için bkz. [Visual Studio iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md) sayfası.
 
 ## <a name="list-of-language-locales"></a>Dil yerel ayarlar listesi
 
@@ -155,7 +155,7 @@ Her işlemin birkaç günlük dosyalarında oluşturur `%TEMP%` yüklemenin iler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
-- [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+- [Visual Studio yükleme için komut satırı parametresi örnekleri](command-line-parameter-examples.md)
+- [Visual Studio’nun çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
 - [Yanıt dosyası ile Visual Studio yüklemesini otomatikleştirme](automated-installation-with-response-file.md)
-- [Visual Studio 2017 iş yükü ve Bileşen kimlikleri](workload-and-component-ids.md)
+- [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

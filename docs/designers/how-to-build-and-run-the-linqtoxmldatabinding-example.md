@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951910"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069924"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: LinqToXmlDataBinding oluşturma ve çalıştırma örneği
 
@@ -20,11 +20,9 @@ Bu konu nasıl oluşturulup LinqToXmlDataBinding Visual Studio projeyi oluşturu
 
 Visual Studio hakkında daha fazla bilgi için bkz. [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md).
 
-## <a name="create-and-populate-the-project"></a>Oluşturma ve proje doldurma
+## <a name="create-the-project"></a>Projeyi oluşturma
 
-### <a name="to-create-the-starting-project"></a>Başlangıç projesi oluşturmak için
-
-1. Visual Studio'yu başlatın ve LinqToXmlDataBinding adlı bir C# WPF uygulaması oluşturun. Proje .NET Framework 3.5 (veya sonraki sürümler) kullanmanız gerekir.
+1. Visual Studio'yu açın ve oluşturma bir C# **WPF uygulaması** adlı **LinqToXmlDataBinding**. Projenin .NET Framework 3.5 (veya sonraki sürümler) hedeflemesi.
 
 1. Aksi halde aşağıdaki .NET derlemeleri için zaten mevcut proje başvurularını ekleyin:
 
@@ -38,9 +36,9 @@ Visual Studio hakkında daha fazla bilgi için bkz. [Visual Studio IDE'ye genel 
 
 1. Basarak çözümü oluşturun **Ctrl**+**Shift**+**B**, çalıştırın tuşlarına basarak **F5**. Projenin hatasız derleyip genel WPF uygulaması çalıştırın.
 
-### <a name="to-add-custom-code-to-the-project"></a>Özel kod projesine eklemek için
+## <a name="add-code-to-the-project"></a>Proje için kod ekleyin
 
-1. Çözüm Gezgini içinde kaynak dosyayı yeniden adlandırın **gt;Window1.XAML** için **L2XDBForm.xaml**. Bağımlı kaynak dosyası **Window1.xaml.cs** için otomatik olarak adlandırılmamalıdır **L2XDBForm.xaml.cs**.
+1. İçinde **Çözüm Gezgini**, kaynak dosyayı yeniden adlandır **gt;Window1.XAML** için **L2XDBForm.xaml**. Bağımlı kaynak dosyası **Window1.xaml.cs** için otomatik olarak adlandırılmamalıdır **L2XDBForm.xaml.cs**.
 
 1. Kaynak kodu dosyasında bulunan Değiştir **L2XDBForm.xaml** konusunun kod ile [L2DBForm.xaml kaynak kodu](../designers/l2dbform-xaml-source-code.md). Bu dosyayla çalışmak için XAML kaynak görünümünü kullanın.
 
@@ -56,9 +54,7 @@ LinqToXmlDataBinding program görüntülemek ve gömülü bir XML öğesi olarak
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>Programı çalıştırın ve kitap listesi görüntülemek için
 
-- LinqToXmlDataBinding basarak çalıştırın **F5** (**hata ayıklamayı Başlat**) veya **Ctrl**+**F5** (**Başlat Hata ayıklama olmadan**).
-
-   Başlık program penceresiyle **LINQ to XML kullanarak WPF verilerini bağlama** görünür.
+LinqToXmlDataBinding basarak çalıştırın **F5** (**hata ayıklamayı Başlat**) veya **Ctrl**+**F5** (**Başlat Hata ayıklama olmadan**). Başlık program penceresiyle **LINQ to XML kullanarak WPF verilerini bağlama** görünür.
 
 - Dosyanın üst kısmında ham görüntüler UI fark **XML** temsil eden kitap listesi. WPF kullanarak görüntülenir <xref:System.Windows.Controls.TextBlock> denetimi, klavye ve fare aracılığıyla etkileşim etkinleştirmez.
 

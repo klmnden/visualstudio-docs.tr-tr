@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548a8a4ec05c0ee88e68095a5322a8831e77b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937371"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069612"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
 Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. Visual Studio, hedef bilgisayarda zaten yüklü olmalıdır.
@@ -26,13 +26,14 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
 |MSI (yükleyici dosyası)|-Visual Studio DSL dosyasına çift tıklayarak açın izin verir.<br />-DSL dosya türü hedef bilgisayardaki bir simge ilişkilendirir.<br />-Bir XSD (XML Şeması) DSL dosya türü ile ilişkilendirir. Dosya Visual Studio'ya yüklendiğinde bu uyarıları engeller.<br /><br /> Bir MSI oluşturmak için çözümünüze bir kurulum projesi eklemeniz gerekir.<br /><br /> Daha fazla bilgi için [DSL bir MSI dosyası kullanarak dağıtımı](#msi).|
 
 ## <a name="Installing"></a> Yükleme ve bir DSL VSX kullanarak kaldırma
- DSL'nizi bu yöntem tarafından yüklendiğinde, kullanıcı bir DSL dosyası Visual Studio içinden açabilirsiniz, ancak Windows Gezgini'nden dosya açılamıyor.
 
-#### <a name="to-install-a-dsl-by-using-the-vsx"></a>Bir DSL VSX kullanarak yüklemek için
+DSL'nizi bu yöntem tarafından yüklendiğinde, kullanıcı bir DSL dosyası Visual Studio içinden açabilirsiniz, ancak Windows Gezgini'nden dosya açılamıyor.
 
-1. Bilgisayarınızda, bulma **.vsix** DSL paket projeniz tarafından oluşturulan dosya.
+### <a name="to-install-a-dsl-by-using-the-vsx"></a>Bir DSL VSX kullanarak yüklemek için
 
-   1.  İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü Windows Gezgini'nde Aç**.
+1. Bulun **.vsix** DSL paket projeniz tarafından oluşturulan dosya:
+
+   1.  İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü dosya Gezgini'nde Aç**.
 
    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**. DslPackage.vsix**
 
@@ -50,9 +51,9 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
 
 5. DSL test etmek için DSL için tanımlanan uzantısına sahip yeni bir dosya oluşturmak için Visual Studio kullanın.
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX kullanarak yüklenen bir DSL kaldırmak için
+### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX kullanarak yüklenen bir DSL kaldırmak için
 
-1. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.
+1. Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.
 
 2. Genişletin **yüklü uzantıları**.
 
@@ -69,7 +70,7 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
 
  Bir MSI oluşturmak için Visual Studio çözümünüze bir kurulum projesi ekleyin. İndirebilirsiniz CreateMsiSetupProject.tt şablonu kullanmak için bir kurulum projesi oluşturmanın en kolay yöntem olduğunu [VMSDK site](http://go.microsoft.com/fwlink/?LinkID=186128).
 
-#### <a name="to-deploy-a-dsl-in-an-msi"></a>Bir DSL içinde bir MSI dağıtmak için
+### <a name="to-deploy-a-dsl-in-an-msi"></a>Bir DSL içinde bir MSI dağıtmak için
 
 1. Ayarlama `InstalledByMsi` uzantı bildiriminde. Bu VSX yüklü ve dışında bir MSI tarafından engeller. Bu, diğer Bileşenleri MSI'dahil edilecekse önemlidir.
 
@@ -127,7 +128,7 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
 
     Tercih ederseniz, metin şablonu kullanmak yerine Kurulum projesi el ile oluşturabilirsiniz. Bu yordam içeren bir kılavuz için bkz: Bölüm 5, [Görselleştirme ve modelleme SDK'sı Laboratuvar](http://go.microsoft.com/fwlink/?LinkId=208878).
 
-#### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Konumundan bir MSI yüklü olduğu bir DSL kaldırmak için
+### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Konumundan bir MSI yüklü olduğu bir DSL kaldırmak için
 
 1.  Windows içinde açın **programlar ve Özellikler** Denetim Masası.
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155987"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983812"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Python kod için birim testi ayarlama
 
@@ -86,7 +86,7 @@ Hata Ayıklamayı Başlat, kodunuzda ilk bir kesme noktası ayarlayın ve ardın
 
 ![Test hata ayıklama](media/unit-test-debugging.png)
 
-Ayrıca **Seçili testler için kod kapsamını Çözümle** ve **profili Test** komutları, Visual Studio sürümünüze bağlı olarak (bakın [matris Özellikler](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+Ayrıca **Seçili testler için kod kapsamını Çözümle** ve **profili Test** komutları.
 
 ### <a name="known-issues"></a>Bilinen sorunlar
 

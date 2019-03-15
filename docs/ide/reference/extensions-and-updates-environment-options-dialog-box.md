@@ -1,5 +1,5 @@
 ---
-title: Uzantılar ve Güncelleştirmeler, Ortam, Seçenekler İletişim Kutusu
+title: Uzantılar, ortam, Seçenekler iletişim kutusu
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912865"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983942"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Uzantılar ve Güncelleştirmeler, Ortam, Seçenekler İletişim Kutusu
+# <a name="extensions-environment-options-dialog-box"></a>Uzantılar, ortam, Seçenekler iletişim kutusu
 
 Visual Studio güncelleştirmelerini nasıl gerçekleştirir ve uzantıları nasıl güncelleştirildi ve bulunan seçeneklerini ayarlamak için bu sayfayı kullanın.
 

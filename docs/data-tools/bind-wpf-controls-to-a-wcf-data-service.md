@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909693"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069781"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bir WCF veri hizmetine WPF denetimleri bağlama
 
@@ -50,7 +50,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlamak için gerekli değil:
 
-- WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Veri Hizmetleri](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Veri modelleri de [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,21 +60,9 @@ Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlama
 
 ## <a name="create-the-service-project"></a>Hizmet projesi oluşturma
 
-Bu izlenecek yol, bir WCF veri hizmeti için bir proje oluşturarak başlayın:
+1. Bu izlenecek yol oluşturarak başlayın bir C# veya Visual Basic **ASP.NET Web uygulaması** proje. Projeyi adlandırın **AdventureWorksService**.
 
-1. Visual Studio’yu çalıştırın.
-
-2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
-
-3. Genişletin **Visual C#** veya **Visual Basic**ve ardından **Web**.
-
-4. Seçin **ASP.NET Web uygulaması** proje şablonu.
-
-5. İçinde **adı** kutusuna **AdventureWorksService** tıklatıp **Tamam**.
-
-     Visual Studio oluşturur **AdventureWorksService** proje.
-
-6. İçinde **Çözüm Gezgini**, sağ **Default.aspx** seçip **Sil**. Bu dosya, bu izlenecek yolda gerekli değildir.
+2. İçinde **Çözüm Gezgini**, sağ **Default.aspx** seçip **Sil**. Bu dosya, gözden geçirme için gerekli değildir.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Hizmet için bir varlık veri modeli oluşturma
 

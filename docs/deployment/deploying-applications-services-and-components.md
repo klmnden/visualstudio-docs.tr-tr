@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742462"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983864"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio'daki dağıtımı da ilk bakma
 
@@ -107,9 +107,9 @@ Bir masaüstü uygulamasının karmaşık bir kurulum daha ihtiyaç duyuyorsanı
 
 - Bir MSI tabanlı yükleyicide paket kullanılarak oluşturulabilir. [WiX Toolset Visual Studio 2017 uzantısı](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Bu bir komut satırı araç setidir.
 
-- Bir MSI ya da EXE Yükleyici paketi kullanılarak oluşturulabilir. [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera yazılım. InstallShield Visual Studio 2017 (Community Edition desteklenmiyor) kullanılabilir. InstallShield Limited Edition'ın artık Visual Studio'ya dahildir ve Visual Studio 2017'de desteklenmez unutmayın. danışın [Flexera yazılım](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) gelecekteki kullanılabilirliği hakkında.
+- Bir MSI ya da EXE Yükleyici paketi kullanılarak oluşturulabilir. [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera yazılım. InstallShield, Visual Studio 2017 ve sonraki sürümlerine (Community Edition desteklenmiyor) kullanılabilir. InstallShield Limited Edition'ın artık Visual Studio'ya dahildir ve Visual Studio 2017 ve sonraki sürümlerinde desteklenmeyen unutmayın. danışın [Flexera yazılım](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) gelecekteki kullanılabilirliği hakkında.
 
-- Bir MSI ya da EXE Yükleyici paketi, using a Setup project (vdproj) oluşturulabilir. Bu seçeneği kullanmak için yükleme [Visual Studio 2017 yükleyicisi projeleri uzantısı](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Bir MSI ya da EXE Yükleyici paketi, using a Setup project (vdproj) oluşturulabilir. Bu seçeneği kullanmak için yükleme [Visual Studio yükleyici projeleri uzantısı](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
 - Ayrıca, Masaüstü uygulamaları için önkoşul bileşenleri bir önyükleyici olarak bilinen genel bir yükleyici yapılandırarak yükleyebilirsiniz. Daha fazla bilgi için [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md).
 
@@ -127,7 +127,7 @@ Azure işlem hatları, uygulamanızı sürekli dağıtımını etkinleştirmek i
 | --- | --- | --- |
 | **Office uygulama** | Bir eklenti Office Visual Studio'dan yayımlayabilirsiniz. | [Office eklentinizi yayımlama ve dağıtma](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF veya OData hizmeti** | Diğer uygulamalar, web sunucusuna dağıttığınız WCF RIA hizmetlerini kullanabilir. | [Geliştirme ve WCF veri hizmetlerini dağıtma](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch, Visual Studio 2017'de artık desteklenmiyor, ancak yine de Visual Studio 2015 ve daha önce dağıtılabilir. | [LightSwitch uygulamalarını dağıtma](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | LightSwitch, Visual Studio 2017'den itibaren artık desteklenir, ancak yine de Visual Studio 2015 ve daha önce dağıtılabilir. | [LightSwitch uygulamalarını dağıtma](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315111"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982772"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Birim test yöntemini saptamalar ile birim testleri Oluştur komutu oluşturun.
 
@@ -38,17 +38,28 @@ Başlamak için bir yöntem, bir tür veya ad alanı Kod Düzenleyicisi'nde test
 
 ![Birim Testleri Oluştur komutunu kullanarak](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>Birim testi özellikleri ayarlama
+## <a name="set-unit-test-traits"></a>Birim testi Özellikleri Ayarla
 
 Test Otomasyonu işleminin bir parçası olarak bu testleri çalıştırmayı planlıyorsanız, başka bir test projesi (yukarıdaki iletişim ikinci seçenek) oluşturulan test sahip düşünebilirsiniz ve nitelikler, birim testi için test ayarı birimi. Bu, daha kolay dahil etmek veya sürekli tümleştirme veya sürekli dağıtım işlem hattı bir parçası olarak bu belirli testleri dışlamak sağlar. Nitelikler aşağıda gösterildiği gibi meta veriler için birim testi doğrudan ekleyerek ayarlanır.
 
 ![Birim testi özellikleri ayarlama](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>Üçüncü taraf birim test çerçeveleri kullanma
+## <a name="use-third-party-unit-test-frameworks"></a>Üçüncü taraf birim test çerçeveleri kullanma
 
 Visual Studio ile herhangi bir test çerçevesi kullanılarak sizin için oluşturulan birim testlerini kolayca olabilir. Diğer test çerçevelerini yüklemek için:
 
+::: moniker range="vs-2017"
+
 1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Seçin **uzantıları** > **uzantıları Yönet**.
+
+::: moniker-end
+
 2. Genişletin **çevrimiçi** > **Visual Studio Market** > **Araçları**ve ardından **test**.
 
 ![Üçüncü taraf test çerçevelerini kullanarak](media/createunittestfx.png)

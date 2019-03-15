@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922296"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069664"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -35,28 +35,38 @@ Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için 
 
 ## <a name="create-a-project-to-test"></a>Test etmek için bir proje oluşturun
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'yu açın.
 
 2. Üzerinde **dosya** menüsünde **yeni** > **proje**.
 
    **Yeni Proje** iletişim kutusu görünür.
 
-3. Altında **yüklü şablonlar**, tıklayın **Visual C#**.
+::: moniker-end
 
-4. Uygulama türleri listesinde tıklayın **sınıf kitaplığı**.
+::: moniker range=">=vs-2019"
 
-5. İçinde **adı** kutusuna **banka** ve ardından **Tamam**.
+1. Visual Studio'yu açın.
 
-   Yeni Banka projesi oluşturulur ve görüntülenen **Çözüm Gezgini** ile *Class1.cs* dosyası Kod Düzenleyicisi'nde açın.
+2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+::: moniker-end
+
+3. Seçin C# sınıf kitaplığı proje şablonu.
+
+4. Projeyi adlandırın **banka**ve ardından **Tamam** veya **Oluştur**.
+
+   Banka projesi oluşturulur ve görüntülenen **Çözüm Gezgini** ile *Class1.cs* dosyası Kod Düzenleyicisi'nde açın.
 
    > [!NOTE]
    > Varsa *Class1.cs* olduğu değil, Kod Düzenleyicisi'nde açın, dosyayı çift tıklatın *Class1.cs* içinde **Çözüm Gezgini** açın.
 
-6. Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md)ve özgün içeriklerini *Class1.cs* kopyalanmış kod ile.
+5. Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md)ve özgün içeriklerini *Class1.cs* kopyalanmış kod ile.
 
-7. Dosyayı Farklı Kaydet *BankAccount.cs*.
+6. Dosyayı Farklı Kaydet *BankAccount.cs*.
 
-8. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+7. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
 Artık banka olarak adlandırılan bir projeniz var. Bu, test etmek için kaynak kodu ve bunu test etmek için Araçlar içerir. BankAccountNS, Banka için ad alanı, ortak sınıf BankAccount, aşağıdaki yordamlarda test edeceğiniz yöntemleri içerir.
 
@@ -346,7 +356,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Değişiyorsa, yeniden yaz ve yeniden Çözümle
 
-Test altındaki yöntemin içindeki bir hata varsa varsayar ve `Debit` yöntemi bile throw değil bir <xref:System.ArgumentOutOfRangeException>, nevermind doğru iletiyi özel durumu ile çıktı. Şu anda test yöntemi, bu durumda işlemiyor. Varsa `debitAmount` değeri geçerlidir (diğer bir deyişle, değerinden Bakiye ama sıfırdan büyükse), böylece onay asla harekete hiçbir özel durum yakalandı. Henüz test yöntemi geçirilir. Test yöntemi özel durum oluşturmazsa başarısız istediğinden bu iyi değildir.
+Test altındaki yöntemin içindeki bir hata varsa varsayar ve `Debit` yöntemi bile throw değil bir <xref:System.ArgumentOutOfRangeException>, hiçbir zaman göz önünde doğru iletiyi özel durumu ile çıktı. Şu anda test yöntemi, bu durumda işlemiyor. Varsa `debitAmount` değeri geçerlidir (diğer bir deyişle, değerinden Bakiye ama sıfırdan büyükse), böylece onay asla harekete hiçbir özel durum yakalandı. Henüz test yöntemi geçirilir. Test yöntemi özel durum oluşturmazsa başarısız istediğinden bu iyi değildir.
 
 Bu, test yönteminde bir hatadır. Sorunu çözmek için ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> nerede hiçbir özel durum durumu işlemek için test yönteminin sonunda onay.
 

@@ -1,6 +1,6 @@
 ---
 title: Kapsayıcılar için bilinen sorunlar
-description: Visual Studio derleme araçları 2017 Windows kapsayıcısına yükleme sırasında oluşabilecek bilinen sorunlar hakkında daha fazla bilgi edinin.
+description: Visual Studio derleme araçları bir Windows kapsayıcısına yükleme sırasında oluşabilecek bilinen sorunlar hakkında daha fazla bilgi edinin.
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935023"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983708"
 ---
 # <a name="known-issues-for-containers"></a>Kapsayıcılar için bilinen sorunlar
 
 Visual Studio'yu bir Docker kapsayıcısına yüklerken birkaç sorun vardır.
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Windows kapsayıcısı
 
@@ -36,6 +38,8 @@ Aşağıdaki bilinen sorunlar ortaya çıkar Visual Studio derleme araçları 20
 
 * Visual Studio 2017 sürüm 15,8 veya önceki bir sürümünü yükleyemezsiniz (herhangi bir ürünü) mcr üzerinde<span></span>.microsoft.com/windows/servercore:1809 veya üzeri. Daha fazla bilgi edinmek için bkz. https://aka.ms/setup/containers/servercore1809.
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>Araçlar kapsayıcısı oluşturun
 
 Bir derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sorunlar ortaya çıkabilir. Sorunları düzelttik olup olmadığını görmek için veya diğer bilinen bir sorun varsa ziyaret https://developercommunity.visualstudio.com.
@@ -48,4 +52,4 @@ Bir derleme araçları kapsayıcı kullandığınızda, aşağıdaki bilinen sor
 
 * [Derleme Araçlarını Bir Kapsayıcıya Yükleme](build-tools-container.md)
 * [Kapsayıcılar için İleri Düzey Örnek](advanced-build-tools-container.md)
-* [Visual Studio derleme araçları 2017 iş yükü ve Bileşen kimlikleri](workload-component-id-vs-build-tools.md)
+* [Visual Studio derleme araçları iş yükü ve Bileşen kimlikleri](workload-component-id-vs-build-tools.md)

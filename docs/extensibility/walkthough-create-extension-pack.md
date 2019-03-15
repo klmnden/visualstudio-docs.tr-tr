@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718376"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983019"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>İzlenecek yol: Uzantı Paketi Oluşturma
 
@@ -85,7 +85,7 @@ Uzantı yayımlandıktan sonra Visual Studio'da yükleyin ve test etmek.
 
 Uzantıyı bilgisayarınızdan kaldırmak için:
 
-1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **uzantı ve güncelleştirmeler...** .
+1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
 
 2. Seçin `Test Extension Pack` ve ardından **kaldırma**. Uzantı ve uzantısı paketinde uzantıları listesini kaldırma işlemi için zamanlanacak.
 

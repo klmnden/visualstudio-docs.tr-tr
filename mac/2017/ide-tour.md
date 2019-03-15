@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316736"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070041"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 için Mac Önizleme turu
+# <a name="visual-studio-2017-for-mac-tour"></a>Tur Mac için Visual Studio 2017
 
 > [!NOTE]
-> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md) test etmek için Önizleme olarak.
+> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md?view=vsmac-2019) test etmek için Önizleme olarak.
 
 Mac için Visual Studio, bir .NET _tümleşik geliştirme ortamı_ düzenlemek için kullanılabilecek Mac üzerinde hata ayıklama ve kod derleme ve ardından bir uygulama yayımlayın. Standart Düzenleyici ve hata ayıklayıcı, gibi beklenen özelliklerine ek olarak Mac için Visual Studio derleyicileri, kod tamamlama araçları, grafik tasarımcıları ve ese yazılım geliştirme süreci için kaynak denetimi içerir.
 

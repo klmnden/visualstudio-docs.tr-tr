@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 277d02a64992d682d0d1f709c31c564f65cfac15
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223318"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069651"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -381,8 +381,8 @@ Nasıl size Visual Studio geliştirmek, veya ürün destek seçenekleri hakkınd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017 sürüm notları](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Visual Studio 2017 SDK’daki Yenilikler](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Visual Studio 2017 sürüm notları](/visualstudio/releasenotes/vs2017-relnotes)
+* [Visual Studio 2017 SDK’daki Yenilikler](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Visual C++ yenilikleri](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# Yenilikleri](/dotnet/csharp/whats-new)
 * [Team Foundation Server için yenilikler nelerdir?](/tfs/server/whats-new?view=vsts)

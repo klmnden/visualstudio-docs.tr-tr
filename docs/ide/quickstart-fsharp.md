@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c7fba20b7b01ab0c55e9bef9b4bcc62813cab895
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b4b6a9bcc9828d0fdeb76f3f74732d8d5496e59c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323283"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069768"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Hızlı Başlangıç: F içinde ilk ASP.NET Core web hizmetinizi oluşturmak için Visual Studio\#
 
@@ -28,6 +28,8 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 İlk olarak, bir ASP.NET Core Web API projesi oluşturacaksınız. Proje türü şablonu dosyalarıyla bile herhangi bir şey ekledik önce işlevsel bir web hizmeti olarak oluşturan gelir!
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'yu açın.
 
 2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
@@ -38,7 +40,23 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
      ![ASP.NET iş yükü VS yükleyicisi](../ide/media/quickstart-aspnet-workload.png)
 
-4. İçinde **yeni ASP.NET Core Web uygulaması** iletişim kutusunda **ASP.NET Core 2.1** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.1** listesinde izleyerek yükleyin **indirme** iletişim kutusunun üst kısmındaki sarı çubuk gözükeceğini bağlantıyı.) Seçin **Tamam**.
+4. buna **yeni ASP.NET Core Web uygulaması** iletişim kutusunda **ASP.NET Core 2.1** üstteki açılan menüden. (Görmüyorsanız **ASP.NET Core 2.1** listesinde izleyerek yükleyin **indirme** iletişim kutusunun üst kısmındaki sarı çubuk gözükeceğini bağlantıyı.) Seçin **Tamam**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın.
+
+2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+3. Üzerinde **yeni bir proje oluşturma** sayfasında **f # web** Ara kutusuna ve ardından **ASP.NET Core Web uygulaması** proje şablonu. Seçin **sonraki**.
+
+4. Üzerinde **yeni projenizi yapılandırın** sayfasında, bir ad girin ve ardından **Oluştur**.
+
+5. Üzerinde **yeni bir ASP.NET Core Web uygulaması oluşturma** sayfasında **ASP.NET Core 2.1** üstteki açılan menüden seçin **Oluştur**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>IDE'yi keşfedin
 

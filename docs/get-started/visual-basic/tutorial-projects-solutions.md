@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 124d27b5dc139e57f9041694afe42d42eef03fb5
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955628"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069625"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Projeleri ve Visual Basic kullanan çözümler hakkında bilgi edinin
 
@@ -38,17 +38,35 @@ Adını rağmen bir çözüm "yanıt" değildir. Bir çözüm sadece bir düzenl
 
 Bizim araştırması boş bir çözüm oluşturarak başlayacağız. Visual Studio bilmek aldıktan sonra büyük olasılıkla çok sık boş çözüm oluşturduğunuzu bulamaz. Yeni bir proje oluşturduğunuzda, Visual Studio otomatik olarak değil bir çözüm zaten varsa açık proje barındırmak için bir çözüm oluşturur.
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'yu açın.
 
-1. Menü çubuğunda, olan menüleri satırının gibi **dosya** ve **Düzenle**, seçin **dosya** > **yeni**  >   **Proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
    **Yeni proje** iletişim kutusu açılır.
 
-1. Sol bölmede genişletin **diğer proje türleri**, ardından **Visual Studio çözümleri**. Orta bölmede seçin **boş çözüm** şablonu. Çözümünüzü ad **QuickSolution**, ardından **Tamam** düğmesi.
+1. Sol bölmede genişletin **diğer proje türleri**, ardından **Visual Studio çözümleri**. Orta bölmede seçin **boş çözüm** şablonu. Çözümünüzü ad **QuickSolution**ve ardından **Tamam**.
 
    ![Visual Studio'da boş çözüm şablonu](../media/tutorial-projects-new-solution.png)
 
    **Başlangıç sayfası** kapatır ve çözüm görünür **Çözüm Gezgini** Visual Studio penceresinin sağ tarafındaki. Büyük olasılıkla kullanacağınız **Çözüm Gezgini** genellikle projelerinizi içeriğini gidin.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın.
+
+2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+3. Üzerinde **yeni bir proje oluşturun** want **boş çözüm** arama kutusuna seçin **boş çözüm** şablonu seçip **sonraki**.
+
+4. Çözüm adı **QuickSolution**ve ardından **Oluştur**.
+
+   Bir çözüm görünür **Çözüm Gezgini** Visual Studio penceresinin sağ tarafındaki. Büyük olasılıkla kullanacağınız **Çözüm Gezgini** genellikle projelerinizi içeriğini gidin.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Bir proje ekleyin
 

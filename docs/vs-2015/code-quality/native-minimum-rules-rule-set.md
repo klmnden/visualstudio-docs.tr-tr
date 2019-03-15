@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 823a09275f71c69aef10ed7866ec863883dbe66f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 487e61a98117c8c64b993af5b9300face99478f8
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768256"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57870471"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Yerel Minimum Kurallar kural kümesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,6 @@ Microsoft yerel Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulam
 |                       [C6516](../code-quality/c6516.md)                        |                                          Öznitelikte özellik yok                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Okunabilir olmayan arabellekte geçerli boyut                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Yazılabilir olmayan arabellekte yazılabilir boyut                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değer olmalıdır Evet veya Hayır                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Geçersiz boyut dize başvurma                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Geçersiz boyut dize türü                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Geçersiz boyut dize parametresi                                         |
@@ -137,7 +136,6 @@ Microsoft yerel Minimum kurallar potansiyel güvenlik boşluklarını ve Uygulam
 |                      [C28254](../code-quality/c28254.md)                       |                               ek açıklamalarda dynamic_cast <> (') desteklenmiyor                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    İşlevi, ek açıklaması için Ek açıklamada bir söz dizimi hatası bulundu                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 İç ek açıklaması için koşullu Ek açıklamada bir söz dizimi hatası bulundu                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Sonuç listesi değerlerini sabit olması gerekir.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Açıklamalarda bir söz dizimi hatası, ek açıklama işlevi bulunamadı.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      İşlev için ek açıklama, incelerken parametresi işlev bildirimiyle tutarsız      |
 |                      [C28273](../code-quality/c28273.md)                       |                    İşlev için ipuçları işlev bildirimiyle tutarsız                     |

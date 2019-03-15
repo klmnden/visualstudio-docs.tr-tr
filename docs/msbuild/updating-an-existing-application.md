@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596031"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984046"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 için var olan bir uygulamayı güncelleştirme
 
 MSBuild sürümlerinde 15.0 önce Genel Derleme Önbelleği (GAC) gelen MSBuild yüklendi ve MSBuild uzantıları kayıt defterinde yüklendi. Bu, tüm uygulamaları kullanılan MSBuild aynı sürümü ve aynı araç takımları erişebildiği, ancak Visual Studio'nun farklı sürümlerini yan yana yüklemesini engelleyen olmasını sağladı.
 
-Daha hızlı, daha küçük ve yan yana yükleme desteklemek için Visual Studio 2017 artık MSBuild GAC'de yerleştirir veya kayıt defteri değiştirir. Ne yazık ki bu değerlendirme veya projeleri derlemek için MSBuild API kullanmak istediğiniz uygulamalar Visual Studio yüklemesini örtük olarak güvenemezsiniz anlamına gelir.
+Daha hızlı, daha küçük ve yan yana yükleme desteklemek için Visual Studio 2017 ve sonraki sürümleri artık MSBuild GAC'de yerleştirin veya kayıt defteri değiştirir. Ne yazık ki bu değerlendirme veya projeleri derlemek için MSBuild API kullanmak istediğiniz uygulamalar Visual Studio yüklemesini örtük olarak güvenemezsiniz anlamına gelir.
 
 ## <a name="use-msbuild-from-visual-studio"></a>Visual Studio'da MSBuild kullanma
 
@@ -42,7 +42,7 @@ Bu yönergeler, kullanmakta olduğunuz varsayılır [stili Packagereference'a Nu
 
 MSBuild derlemeleri kendi NuGet paketleri başvurmak için proje dosyalarınızı değiştirin. Belirtin `ExcludeAssets=runtime` derlemeler yalnızca derleme sırasında gereklidir ve çıkış dizinine kopyalanıp olmamalıdır NuGet söylemek için.
 
-Birincil ve ikincil sürüm MSBuild paketlerin bir bölümünü ya da Visual Studio, desteklemek istediğiniz en düşük sürümü eşit olmalıdır. Visual Studio 2017'in herhangi bir sürümünü desteklemek isterseniz, Paket sürümü başvuru `15.1.548`.
+Birincil ve ikincil sürüm MSBuild paketlerin bir bölümünü ya da Visual Studio, desteklemek istediğiniz en düşük sürümü eşit olmalıdır. Visual Studio 2017 ve sonraki sürümleri desteklemek istiyorsanız, örneğin, Paket sürümü başvuru `15.1.548`.
 
 Örneğin, bu XML kullanabilirsiniz:
 

@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954027"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57871333"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Visual Studio 2017'in bir ağ oluşturun
+# <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio'nun bir ağ oluşturun
 
 Genellikle, bir kuruluş yöneticisi istemci iş istasyonlarına dağıtmak için bir ağ yükleme noktası oluşturur. Visual Studio 2017 için tek bir klasöre tüm ürün güncelleştirmeleri ile birlikte ilk yükleme dosyalarını önbelleğe sağlamak için tasarladık. (Bu işlem, ayrıca olarak adlandırılır _bir düzen oluşturma_.) 
 
@@ -48,7 +48,7 @@ Desteklenen diğer önyükleyiciler dahil [vs_buildtools.exe](https://aka.ms/vs/
 Bu adımı tamamlamak için bir internet bağlantısı olması gerekir. Tüm diller ve tüm özellikleri ile çevrimdışı yükleme oluşturmak için aşağıdaki örnekleri komutlardan birini kullanın.
 
    > [!IMPORTANT]
-   > Visual Studio 2017 Düzen tamamlanamadı, en az 35 GB disk alanı gerektirir ve indirmek için biraz zaman alabilir.  Bkz: [ağ düzeni özelleştirme](#customizing-the-network-layout) bölüm düzeni yalnızca yüklemek istediğiniz bileşenleri oluşturma hakkında ayrıntılar için.
+   > Visual Studio 2017 Düzen tamamlanamadı, en az 35 GB disk alanı gerektirir ve indirmek için biraz zaman alabilir.  Bkz: [ağ düzeni özelleştirme](#customize-the-network-layout) bölüm düzeni yalnızca yüklemek istediğiniz bileşenleri oluşturma hakkında ayrıntılar için.
    >
    > [!TIP]
    > İndirme dizininize komutu çalıştırdığınızdan emin olun. Genellikle, bu `C:\Users\<username>\Downloads` Windows 10 çalıştıran bir bilgisayarda.
@@ -127,7 +127,7 @@ Ağ düzeninize özelleştirmek için kullanabileceğiniz birkaç seçenek vard�
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>15.3 yenilikler
+### <a name="new-in-version-153"></a>Yeni sürüm 15.3
 
 Bir düzen komutu çalıştırdığınızda, belirttiğiniz seçenekleri (iş yüklerini ve dilleri gibi) kaydedilir. Sonraki Düzen komutları tüm önceki seçenekleri içerir.  Bir iş yüküyle İngilizce için yalnızca bir düzen örneği aşağıda verilmiştir:
 
@@ -209,7 +209,7 @@ Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz. bizim [konuşma
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'in bir ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
+* [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 * [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)

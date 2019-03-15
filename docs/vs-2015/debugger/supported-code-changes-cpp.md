@@ -13,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02ba30fe6ad2fbc59822b6bdfb954db7c29e0eb3
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834432"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57872281"
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,8 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türde işler.
  Bkz: [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) Visual Studio'da C++ için Düzenle ve devam et ile çalışma hakkında bilgi.  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Desteklenmeyen değişiklikleri  
- Aşağıdaki değişiklikler C/C++ hata ayıklama oturumu sırasında uygulanamaz:  
+
+Aşağıdaki değişiklikler C/C++ hata ayıklama oturumu sırasında uygulanamaz:  
   
 - Genel veya statik veri çoğu geçer.  
   
@@ -63,7 +64,7 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türde işler.
   
 - Nesne dosyası sahip kod değişiklikleri.  
   
-  Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulamayı deneyin, hata veya uyarı iletisi görünür **çıkış** penceresi.  
+Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulamayı deneyin, hata veya uyarı iletisi görünür **çıkış** penceresi.  
   
 - Düzenle ve devam et, statik kitaplıklar güncelleştirilmez. Statik kitaplıkta bir değişiklik yaparsanız, eski sürümü ile yürütme devam eder ve herhangi bir uyarı verilir.  
   

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913284"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069833"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio için ortam ayarları
 
-Visual Studio'yu ilk kez başlattığınızda, geliştirme ortamı için en iyi bir ayarlar koleksiyonu seçerek yaptığınız geliştirme türünü en iyi duruma getirebilirsiniz. Her koleksiyon öğeleri klavye kısayolları, pencere düzenlerini, proje ve öğe şablonları ve komut görünürlük gibi en iyi duruma getirir.
+Visual Studio'yu ilk kez açtığınızda, geliştirme ortamı için en iyi bir ayarlar koleksiyonu seçerek yaptığınız geliştirme türünü en iyi duruma getirebilirsiniz. Her koleksiyon öğeleri klavye kısayolları, pencere düzenlerini, proje ve öğe şablonları ve komut görünürlük gibi en iyi duruma getirir.
 
 Aşağıdaki ayar koleksiyonlarından kullanılabilir:
 
@@ -30,7 +30,7 @@ Aşağıdaki ayar koleksiyonlarından kullanılabilir:
 
 ## <a name="reset-settings"></a>Ayarları sıfırlama
 
-Visual Studio'yu ilk kez başlattıktan sonra geliştirme ayarlarınızı değiştirmek için bu adımları izleyin:
+Visual Studio'yu ilk kez açtıktan sonra geliştirme ayarlarınızı değiştirmek için bu adımları izleyin:
 
 1. Seçin **Araçları** > **içeri ve dışarı aktarma ayarları** açmak için menü çubuğundan **içeri ve dışarı aktarma ayarları Sihirbazı**.
 

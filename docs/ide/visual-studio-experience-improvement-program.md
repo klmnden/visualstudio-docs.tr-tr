@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323124"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070028"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio Müşteri Deneyimi Geliştirme Programı
 
@@ -25,9 +25,7 @@ Visual Studio Müşteri Deneyimi Geliştirme Programı (VSCEIP), zaman içinde V
 
 VSCEIP varsayılan olarak etkinleştirilir. Kapatın veya yeniden, bu yönergeleri izleyerek yedekleme:
 
-1. Visual Studio’yu çalıştırın.
-
-1. Gelen **yardımcı** menüsünde **geri bildirim gönder**ve ardından **ayarları**.
+1. Visual Studio'da **yardımcı** > **geri bildirim gönder**ve ardından **ayarları**.
 
    **Visual Studio Deneyimini Geliştirme Programı** iletişim kutusu açılır.
 

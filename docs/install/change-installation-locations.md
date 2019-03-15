@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947829"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983903"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>Visual Studio 2017'de yükleme konumları seçin
+# <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio'da yükleme konumları seçin
 
 **15.7 sürümündeki yeni**: Bazı dosyalar için konumun değiştirerek sistem sürücünüzde Visual Studio yükleme ayak izini azaltabilir. Özellikle, indirme önbelleğini, paylaşılan bileşenler, SDK'lar ve Araçlar dosyaları için farklı bir konum kullanabilirsiniz.
 
@@ -64,7 +64,7 @@ Başlamaya hazır mısınız? İşte nasıl.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Yükleme](install-visual-studio.md)
-* [Visual Studio 2017 güncelleştirmesi](update-visual-studio.md)
-* [Visual Studio 2017'yi Değiştirme](update-visual-studio.md)
-* [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
+* [Visual Studio’yu güncelleştirme](update-visual-studio.md)
+* [Visual Studio’yu değiştirme](update-visual-studio.md)
+* [Visual Studio'yu kaldırma](uninstall-visual-studio.md)

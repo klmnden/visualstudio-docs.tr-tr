@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf114093c6ba3e267cab901864c5442df8e33236
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 03dbfd8140249a93dfb649894dabab1c57b203c2
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957305"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984007"
 ---
-# <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Visual Studio 2017 ekleyerek veya iş yüklerinin ve bileşenlerin kaldırarak değiştirme
+# <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Visual Studio ekleyerek veya iş yüklerinin ve bileşenlerin kaldırarak değiştirme
 
 Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevleri eşleştirmek için Visual Studio kişiselleştirmek için Ayrıca, Visual Studio, çok özelleştirmek daha kolay hale getirdik. Bunu yapmak için yeni Visual Studio Yükleyicisi'ni başlatın ve istediğiniz değişiklikleri yapın.
 
@@ -69,6 +69,6 @@ Sadece biz bunu daha da kolaylaştırdık gerçekleştirmek istediğiniz görevl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Yükleme](install-visual-studio.md)
-* [Visual Studio 2017 güncelleştirmesi](update-visual-studio.md)
-* [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
+* [Visual Studio’yu güncelleştirme](update-visual-studio.md)
+* [Visual Studio'yu kaldırma](uninstall-visual-studio.md)

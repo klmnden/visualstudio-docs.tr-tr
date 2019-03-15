@@ -1,8 +1,24 @@
+---
+ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58051662"
+---
 ## <a name="prerequisites"></a>Önkoşullar
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
+::: moniker range=">=vs-2019"
+
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
   * ASP.NET: **ASP.NET ve web geliştirme**
   * Node.js: **Node.js geliştirme**
+::: moniker-end
+::: moniker range="vs-2017"
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) tercih ettiğiniz dil uygun iş yükleri ile yüklü:
+  * ASP.NET: **ASP.NET ve web geliştirme**
+  * Node.js: **Node.js geliştirme**
+::: moniker-end
 
 * Azure aboneliği. Abonelik, zaten yoksa [ücretsiz olarak kaydolun](https://azure.microsoft.com/free/dotnet/), içeren 200 ABD Doları değerinde kredi 30 gün ve popüler ücretsiz Hizmetleri 12 ay için.
 

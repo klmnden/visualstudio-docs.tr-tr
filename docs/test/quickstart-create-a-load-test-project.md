@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948478"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069976"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Bir yük testi projesi oluşturma
+# <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Yük testi projesi oluşturma
 
 10 dakikalık bu hızlı başlangıçta, oluşturma ve bir web performansı ve yük testi projesi Visual Studio'da çalıştırma öğreneceksiniz. Yük testleri, web performans veya bir sunucu aynı anda erişen birçok kullanıcının benzetimini yapmak için birim testleri yürütün.
 
@@ -42,15 +42,33 @@ Yoksa zaten web performansı ve yük testi araçları bileşeninin yüklü ise, 
 
 Bu bölümde, bir C# yük testi projesi oluşturacağız. Tercih ederseniz, Visual Basic yük testi projesi oluşturabilirsiniz.
 
-1. Visual Studio'yu açın ve seçin **dosya** > **yeni** > **proje** menü çubuğundan.
+::: moniker range="vs-2017"
+
+1. Visual Studio'yu açın.
+
+2. Seçin **dosya** > **yeni** > **proje** menü çubuğundan.
 
    **Yeni proje** iletişim kutusu açılır.
 
-1. İçinde **yeni proje** iletişim kutusunda **yüklü** ve **Visual C#** ve ardından **Test** kategorisi. Seçin **Web performansı ve yük testi projesi** şablonu.
+3. İçinde **yeni proje** iletişim kutusunda **yüklü** ve **Visual C#** ve ardından **Test** kategorisi. Seçin **Web performansı ve yük testi projesi** şablonu.
 
    ![Web performansı ve yük testi projesi şablonu](media/web-perf-load-test-project-template.png)
 
-1. Varsayılan adı kullanın ve ardından istemiyorsanız, proje için bir ad girin **Tamam**.
+4. Varsayılan adı kullanın ve ardından istemiyorsanız, proje için bir ad girin **Tamam**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın.
+
+2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+3. İçinde **yeni bir proje oluşturma** iletişim kutusunda, türü **web testi** arama kutusuna ve ardından **Web performansı ve yük testi projesi \[kullanım dışı]** Şablon için C#. Seçin **sonraki**.
+
+4. Varsayılan adı kullanın ve ardından istemiyorsanız, proje için bir ad girin **Oluştur**.
+
+::: moniker-end
 
    Visual Studio projeyi oluşturup dosyaları görüntüler **Çözüm Gezgini**. Projeyi başlangıçta adlı bir web testi dosyası içeren *WebTest1.webtest*.
 

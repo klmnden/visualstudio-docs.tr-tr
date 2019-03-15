@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716109"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983526"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısı yayımlama
 
@@ -154,7 +154,7 @@ Uzantı, Visual Studio Market'ten ve bilgisayarınızdan kaldırabilirsiniz.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Uzantıyı bilgisayarınızdan kaldırmak için
 
-1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **uzantı ve güncelleştirmeler**.
+1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
 
 2. Seçin **TestPublish** ve ardından **kaldırma**. Uzantı ardından kaldırılmak üzere zamanlandı.
 

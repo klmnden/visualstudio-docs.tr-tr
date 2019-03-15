@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953388"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070119"
 ---
 # <a name="customize-startup"></a>Başlangıç'ı özelleştirme
 
@@ -65,7 +65,7 @@ Yapabilecekleriniz [kendi özel başlangıç sayfası oluşturma](../extensibili
 1. İçinde **başlangıç sayfasını Özelleştir** listesinde, istediğiniz sayfayı seçin.
 
 > [!TIP]
-> Özel başlangıç sayfasındaki bir hata Visual Studio'nun çökmesine neden olursa, Visual Studio'yu güvenli modda başlatabilir ve varsayılan başlangıç sayfasını kullanacak şekilde ayarlayabilirsiniz. Bkz: [safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Özel Başlangıç sayfasındaki bir hata Visual Studio'nun çökmesine neden olursa, Visual Studio'yu güvenli modda açın ve ardından varsayılan başlangıç sayfasını kullanacak şekilde ayarlayın. Bkz: [safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

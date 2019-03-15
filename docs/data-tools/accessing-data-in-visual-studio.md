@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 447c51193845e4cc558ed70bcd89b68ceef888fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919176"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983500"
 ---
 # <a name="access-data-in-visual-studio"></a>Visual Studio'da verilere erişime
 
@@ -65,10 +65,20 @@ Burada listelenen SQL ve NoSQL veritabanı ürünlerin çoğunu, yerel bir makin
 - VelocityDB
 - ve daha fazlası...
 
-Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketlerini Visual Studio tümleştirmesini desteklemiyor. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla tekliflerini keşfedin (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketler**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin. Bu teklifler Visual Studio Market'te giderek göz atabilirsiniz **Araçları**, **Uzantılar ve güncelleştirmeler** seçip **çevrimiçi** sol bölmesinde iletişim kutusu. Daha fazla bilgi için [Visual Studio için uyumlu veritabanı sistemleri](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketlerini Visual Studio tümleştirmesini desteklemiyor. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla tekliflerini keşfedin (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketler**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin. Bu teklifler göz atabilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) veya giderek **Araçları** > **Uzantılar ve güncelleştirmeler** ve ardından seçme **Çevrimiçi** iletişim kutusunun sol bölmesinde. Daha fazla bilgi için [Visual Studio için uyumlu veritabanı sistemleri](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketlerini Visual Studio tümleştirmesini desteklemiyor. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla tekliflerini keşfedin (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketler**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin. Bu teklifler göz atabilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) veya giderek **uzantıları** > **uzantıları yönetme** seçip  **Çevrimiçi** iletişim kutusunun sol bölmesinde. Daha fazla bilgi için [Visual Studio için uyumlu veritabanı sistemleri](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> SQL Server 2005'e yönelik genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi. Veri araçları Visual Studio 2015 ve sonraki sürümlerinde bu tarihten sonra SQL Server 2005 ile çalışmaya devam edeceği kesin değildir. Daha fazla bilgi için [SQL Server 2005'e yönelik uç destek Duyurusu](https://www.microsoft.com/sql-server/sql-server-2005).
+> SQL Server 2005'e yönelik genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi. Veri araçları Visual Studio 2015 ve sonraki sürümlerde SQL Server 2005 ile çalışmaya devam edeceği kesin değildir. Daha fazla bilgi için [SQL Server 2005'e yönelik uç destek Duyurusu](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>.NET dilleri
 

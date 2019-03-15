@@ -18,14 +18,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cf1497e79b6f41104664013efcf63adea5223f11
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607037"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983552"
 ---
-# <a name="install-visual-studio-2017"></a>Visual Studio 2017'yi yükleyin
+# <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
 Visual Studio'yu yüklemek için yeni bir yolunu Hoş Geldiniz! Bu sürümde, seçin ve yalnızca gereksinim duyduğunuz özellikleri yüklemek daha kolay bir şekilde kolaylaştırdık. Daha hızlı ve daha önce hiç olmadığı kadar sistemi daha az etkileyerek yükler, böylece biz de Visual Studio'nun minimum ayak kısalttık.
 
@@ -130,9 +130,9 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017 güncelleştirmesi](update-visual-studio.md)
-* [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
-* [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
-* [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
-* [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio’yu güncelleştirme](update-visual-studio.md)
+* [Visual Studio’yu değiştirme](modify-visual-studio.md)
+* [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
+* [Visual Studio’nun çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Mac için Visual Studio'yu yükleyin](/visualstudio/mac/installation)

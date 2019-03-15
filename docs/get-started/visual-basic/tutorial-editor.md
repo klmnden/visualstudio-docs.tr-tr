@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939482"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069638"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -35,9 +35,21 @@ Bu makalede, zaten Visual Basic ile ilgili bilgi sahibi olduğunuz kabul edilmek
 
 Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
-1. Visual Studio'yu açın ve **dosya** menü çubuğunda menüsünde **yeni dosya**.
+::: moniker range="vs-2017"
 
-1. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual Basic sınıfı**ve ardından **açık**.
+1. Visual Studio'yu açın.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın. Tuşuna **Esc** veya **kod olmadan devam** geliştirme ortamı'nı açmak için başlangıç penceresinde.
+
+::: moniker-end
+
+2. Gelen **dosya** menü çubuğunda menüsünde **yeni dosya**.
+
+3. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual Basic sınıfı**ve ardından **açık**.
 
    Visual Basic sınıfı çatısında önizlememiz ile düzenleyicideki yeni bir dosya açar. (Zaten bazı Kod Düzenleyicisi sunar, söz dizimi vurgulama gibi avantajları elde etmek için tam Visual Studio projesi oluşturmanız gerekmez fark. İhtiyacınız olan bir kod dosyası!)
 

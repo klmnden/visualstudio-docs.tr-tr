@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737051"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983006"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio'yu çevrimdışı yükleme için gerekli sertifikaları yükleme
 
@@ -113,6 +113,7 @@ Bir imza bir çevrimiçi ortamda doğrulandığında, Windows API'ları indirmek
 ## <a name="checking-if-certificates-are-already-installed"></a>Sertifika zaten yüklü olup olmadığını denetleme
 
 Yükleme sistemde denetleyin yollarından biri, şu adımları takip etmektir:
+
 1. Çalıştırma **mmc.exe**.<br/>
   a. Dosyasına tıklayın ve ardından **Ekle/Kaldır ek bileşenini**.<br/>
   b. Çift **sertifikaları**seçin **bilgisayar hesabı**ve ardından **sonraki**.<br/>

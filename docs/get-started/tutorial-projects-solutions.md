@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bac0907f08db03e56b32a85e9d228c67d0aae724
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911903"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069937"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Projeler ve çözümler hakkında bilgi edinin
 
@@ -35,9 +35,11 @@ Adını rağmen bir çözüm "yanıt" değildir. Bir çözüm sadece bir düzenl
 
 Bizim araştırması boş bir çözüm oluşturarak başlayacağız. Visual Studio bilmek aldıktan sonra büyük olasılıkla çok sık boş çözüm oluşturduğunuzu bulamaz. Yeni bir proje oluşturduğunuzda, Visual Studio otomatik olarak değil bir çözüm zaten varsa açık proje barındırmak için bir çözüm oluşturur.
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'yu açın.
 
-1. Menü çubuğunda, olan menüleri satırının gibi **dosya** ve **Düzenle**, seçin **dosya** > **yeni**  >   **Proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
    **Yeni proje** iletişim kutusu açılır.
 
@@ -46,6 +48,22 @@ Bizim araştırması boş bir çözüm oluşturarak başlayacağız. Visual Stud
    ![Visual Studio'da boş çözüm şablonu](media/tutorial-projects-new-solution.png)
 
    **Başlangıç sayfası** kapatır ve çözüm görünür **Çözüm Gezgini** Visual Studio penceresinin sağ tarafındaki. Büyük olasılıkla kullanacağınız **Çözüm Gezgini** genellikle projelerinizi içeriğini gidin.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın.
+
+2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+3. Üzerinde **yeni bir proje oluşturun** want **boş çözüm** arama kutusuna seçin **boş çözüm** şablonu seçip **sonraki**.
+
+4. Çözüm adı **QuickSolution**ve ardından **Oluştur**.
+
+   Bir çözüm görünür **Çözüm Gezgini** Visual Studio penceresinin sağ tarafındaki. Büyük olasılıkla kullanacağınız **Çözüm Gezgini** genellikle projelerinizi içeriğini gidin.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Bir proje ekleyin
 

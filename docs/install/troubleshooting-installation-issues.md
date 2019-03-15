@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953975"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984147"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 yükleme sorunlarını giderme ve yükseltme sorunları
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio yükleme sorunlarını giderme ve yükseltme sorunları
 
 > [!IMPORTANT]
 > Yükleme sorun yaşıyorsunuz? Size yardımcı olabiliriz. Sunuyoruz bir [ **canlı sohbet** ](https://visualstudio.microsoft.com/vs/support/#talktous) (yalnızca İngilizce) destek seçeneği.
@@ -86,7 +86,7 @@ Bilinen sorunlar ve geçici yerel bir düzenden yükleme sırasında yardımcı 
 
 Kurulum günlükleri, çoğu yükleme sorunlarını gidermek için gereklidir. Ne zaman gönderdiğiniz bir sorun kullanarak [sorun bildir](../ide/how-to-report-a-problem-with-visual-studio.md) Visual Studio Yükleyicisi ', bu günlükleri otomatik olarak, rapora dahil edilir.
 
-Microsoft Support başvurursanız kullanarak bu ayar günlüklerini göndermeniz gerekebilir [Microsoft Visual Studio ve .NET Framework günlük toplama aracı](https://aka.ms/vscollect). Günlük toplama aracı Visual Studio .NET Framework ve Windows SDK'sı SQL Server 2017'de tarafından yüklü tüm bileşenleri Kurulum günlüklerini toplar. Ayrıca, bilgisayar bilgilerini, Windows Installer envanterini ve Visual Studio yükleyicisi, Windows Installer ve sistem geri yükleme için Windows olay günlüğü bilgilerini toplar.
+Microsoft Support başvurursanız kullanarak bu ayar günlüklerini göndermeniz gerekebilir [Microsoft Visual Studio ve .NET Framework günlük toplama aracı](https://aka.ms/vscollect). Günlük toplama aracı Visual Studio ile .NET Framework ve Windows SDK'sı SQL Server dahil olmak üzere yüklü tüm bileşenleri Kurulum günlüklerini toplar. Ayrıca, bilgisayar bilgilerini, Windows Installer envanterini ve Visual Studio yükleyicisi, Windows Installer ve sistem geri yükleme için Windows olay günlüğü bilgilerini toplar.
 
 Günlükleri toplamak için:
 
@@ -104,7 +104,7 @@ Bu sorun giderme Kılavuzu'nda listelenen çözümleri başarıyla yüklemeniz v
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi kaldırma](remove-visual-studio.md)
+* [Visual Studio Kaldır](remove-visual-studio.md)
 * [Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)

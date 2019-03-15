@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9b03a1d78e929ed3e21be086ea78ab09c334da6
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722505"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069677"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
@@ -35,9 +35,21 @@ Bu makalede, zaten alışık olduğunuz varsayılır C#. Siz değilseniz, öğre
 
 Yeni bir dosya oluşturarak ve bazı kodlar eklemeden başlatın.
 
-1. Visual Studio'yu açın ve **dosya** menü çubuğunda menüsünde **yeni** > **dosya**.
+::: moniker range="vs-2017"
 
-1. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual C# sınıfı**ve ardından **açık**.
+1. Visual Studio'yu açın.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın. Tuşuna **Esc** veya **kod olmadan devam** geliştirme ortamı'nı açmak için başlangıç penceresinde.
+
+::: moniker-end
+
+2. Gelen **dosya** menü çubuğunda menüsünde **yeni** > **dosya**.
+
+3. İçinde **yeni dosya** iletişim kutusunun **genel** kategorisi seçin **Visual C# sınıfı**ve ardından **açık**.
 
    C# sınıfı çatısında önizlememiz ile düzenleyicideki yeni bir dosya açar. (Bulunur. bir kod dosyası Kod Düzenleyicisi'nın sunduğu bazı avantajları elde etmek için tam Visual Studio projesi; tüm yapmanız gereken oluşturmanız da gerekmez dikkat edin!)
 

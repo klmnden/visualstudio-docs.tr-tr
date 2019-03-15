@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9259b5a813dc09389c57288e13eafd5a3adb0064
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 426a3b57f7645cf0d0241ce0f382f2507351ec18
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55770576"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069989"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
 Visual Studio, kolayca bir Node.js projesi oluşturma ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikler deneyimi sağlar. Bu öğreticide Visual Studio için Visual Studio şablondan bir Node.js web uygulaması projesi oluşturun. Ardından, React kullanarak basit bir uygulama oluşturun.
 
-Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Npm paketleri ekleme
@@ -57,11 +57,18 @@ Web paketleri JavaScript dosyaları, bir tarayıcıda çalıştırabilirsiniz. A
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 ve Node.js geliştirme iş yükü olması gerekir.
+* Visual Studio yüklü ve Node.js geliştirme iş yükü olması gerekir.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
 
-    Gerekirse iş yükünü yükleyin ancak zaten Visual Studio varsa, seçin **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+    İş yükünü yükleyin, ancak Visual Studio zaten gerekiyorsa, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+
+    ![Node.js iş yükü VS yükleyicisi](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js çalışma zamanı yüklü olması gerekir.
 
@@ -73,13 +80,19 @@ Web paketleri JavaScript dosyaları, bir tarayıcıda çalıştırabilirsiniz. A
 
 İlk olarak bir Node.js web uygulaması projesi oluşturun.
 
-1. Visual Studio 2017'yi açın.
+1. Visual Studio'yu açın.
 
 1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, adı **NodejsWebAppBlank**ve ardından **Tamam**.
+1. Yeni bir proje oluşturun.
 
-     Görmüyorsanız **boş Node.js Web uygulaması** proje şablonu, Node.js geliştirme iş yükü yüklemelisiniz.
+    ::: moniker range=">=vs-2019"
+    İçinde **yeni bir proje oluşturma** iletişim kutusuna **javascript** sonuçlarını filtrelemek ve ardından arama kutusuna **boş Node.js Web uygulaması**, seçin**Tamam**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**, ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, adı **NodejsWebAppBlank**, ardından **Tamam**.
+    ::: moniker-end
+    Görmüyorsanız **boş Node.js Web uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 
     Visual Studio, yeni bir çözüm oluşturur ve projenize açar.
 
@@ -377,7 +390,7 @@ Her zaman yaptığınız değişiklikleri *app.tsx*, Web komutu çalıştırman�
 
     ![İşleme](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    DOM Gezgini ve JavaScript Konsolu Visual Studio'da açtığınızda hata ayıklayıcı düzgün eklenmiş biliyor. Bu hata ayıklama araçları, Chrome geliştirme araçları ve Edge için F12 araçlarındaki benzerdir.
+    DOM Gezgini ve JavaScript Konsolu Visual Studio'da açtığınızda hata ayıklayıcı düzgün eklenmiş biliyor. Bu hata ayıklama araçları, Chrome geliştirme araçları ve Microsoft Edge için F12 araçlarındaki benzerdir.
 
     > [!NOTE]
     > Hata ayıklayıcıyı iliştirmek değil "işleme yüklenemiyor. iletiyi görürseniz Bir işlem geçerli durumu geçerli değil. ", Görev Yöneticisi'ni kullanarak hata ayıklama modu Chrome başlatmadan önce Chrome tüm örneklerini kapatın. Chrome uzantıları çalıştıran ve tam hata ayıklama modu engelliyor.

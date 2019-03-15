@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f52e1cb8538204dbf0e29ccdadcc4cb2894255ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f486d88ebac42ba0f9c9f338ee9fd81b56c820cf
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021877"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070314"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
 
@@ -29,22 +29,51 @@ Linux App Service Node.js uygulaması (aksine, Windows uygulama Node.js uygulama
 
 Bu öğreticide Visual Studio için Node.js araçları ile yüklenen bir şablon başlayarak bir Node.js uygulaması oluşturma, kod github'daki depoya itme ve gelen dağıtabilirsiniz, böylece bir Azure App Service Azure web portalı üzerinden sağlama işlemini gösterir. GitHub deposu. Azure uygulama hizmeti sağlama ve yerel bir Git deposundan kod göndermek için komut satırı kullanmak için bkz. [Node.js uygulaması oluşturma](/azure/app-service/containers/quickstart-nodejs).
 
-Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kodunuz için bir GitHub deposu oluşturma
 > * Azure'da bir Linux App Service oluşturma
 > * Linux için dağıtma
 
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio yüklü ve Node.js geliştirme iş yükü olması gerekir. 
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
+
+    İş yükünü yükleyin, ancak Visual Studio zaten gerekiyorsa, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+
+    ![Node.js iş yükü VS yükleyicisi](../ide/media/quickstart-nodejs-workload.png)
+
+* Node.js çalışma zamanı yüklü olması gerekir.
+
+    LTS sürümünden yüklü yoksa, yükleme [Node.js](https://nodejs.org/en/download/) Web sitesi. Genel olarak, Visual Studio yüklü Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılayan değil, projenizi yüklü çalışma zamanı özellikleri sayfasında başvurmak için yapılandırabilirsiniz (bir proje oluşturduğunuzda, proje düğümüne sağ tıklayın ve seçin **özellikleri**).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Azure'da çalıştırmak için bir Node.js projesi oluşturma
 
-1. Kullanarak yeni bir TypeScript Express uygulaması oluşturma **dosya** > **yeni proje** iletişim kutusu.
+1. Visual Studio'yu açın.
 
-1. Altında **TypeScript** düğümünü **temel Node.js Express 4 uygulaması**.
+1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
+
+1. TypeScript Express yeni bir uygulama oluşturun.
+
+    ::: moniker range=">=vs-2019"
+    İçinde **yeni bir proje oluşturma** iletişim kutusuna **javascript** sonuçlarını filtrelemek ve ardından arama kutusuna **temel Azure Node.js Express 4 uygulaması**seçin **Tamam**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.
 
     ![Yeni bir TypeScript Express uygulaması oluşturma](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Görmüyorsanız **temel Azure Node.js Express 4 uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 
-1. Tıklayın **Tamam** Visual Studio'da proje oluşturmaktır.
+    Visual Studio projesi oluşturur ve Çözüm Gezgini'nde (sağ bölme) açar.
 
 1. Tuşuna **F5** oluşturun ve uygulamayı çalıştırın ve her şeyin beklendiği gibi çalıştığından emin olun.
 
@@ -82,7 +111,7 @@ Visual Studio için GitHub'ı ayarlamak için:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Azure'da bir Linux App Service oluşturma
 
-1. [Azure Portal](https://portal.azure.com)’da oturum açın.
+1. [Azure Portal](https://portal.azure.com) oturum açın.
 
 2. Seçin **uygulama hizmetleri** solda, hizmetler listesinden ve ardından **Ekle**.
 

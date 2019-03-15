@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939170"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069872"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 
@@ -56,7 +56,9 @@ Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlama
 
 Ürün kayıtları görüntülemek için yeni bir WPF projesi oluşturun.
 
-1. Visual Studio’yu çalıştırın.
+::: moniker range="vs-2017"
+
+1. Visual Studio'yu açın.
 
 2. Üzerinde **dosya** menüsünde **yeni** > **proje**.
 
@@ -65,6 +67,18 @@ Aşağıdaki kavramları bilgisi de faydalıdır, ancak izlenecek yolu tamamlama
 4. Seçin **WPF uygulaması** proje şablonu.
 
 5. İçinde **adı** kutusuna **AdventureWorksProductsEditor** seçip **Tamam**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'yu açın.
+
+2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+3. Arama C# **WPF uygulaması** proje adlandırma projesi oluşturmak için adımları izleyin ve proje şablonu **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Visual Studio AdventureWorksProductsEditor projesi oluşturur.
 

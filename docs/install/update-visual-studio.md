@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737005"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983981"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio için en son sürüme güncelleştirme
 
@@ -82,7 +82,7 @@ Bir güncelleştirme olup olmadığını denetlemek ve ardından Visual Studio'd
 
 ### <a name="use-the-visual-studio-installer"></a>Visual Studio Yükleyicisi'ni kullanın
 
-Visual Studio 2017 önceki sürümlerinde olduğu gibi bir güncelleştirmeyi yüklemek için Visual Studio Yükleyicisi'ni kullanabilirsiniz.
+Visual Studio'nun önceki sürümlerinde olduğu gibi bir güncelleştirmeyi yüklemek için Visual Studio Yükleyicisi'ni kullanabilirsiniz.
 
 1. Çalışmanızı kaydedin.
 
@@ -150,14 +150,14 @@ Bir bildirim yoksaymayı seçerseniz, Visual Studio göstermeyi durdurur. Yoksay
 
    Seçin **güncelleştirme** güncelleştirmeleri yüklemek için düğme.
 
-     ![Visual Studio Yükleyicisi'ni kullanarak Visual Studio 2017 güncelleştirmesi](media/update-visual-studio.png "güncelleştirme Visual Studio 2017 Visual Studio Yükleyicisi'ni kullanarak")
+     ![Visual Studio Yükleyicisi'ni kullanarak Visual Studio 2017 güncelleştirmesi](media/update-visual-studio.png "Visual Studio Yükleyicisi'ni kullanarak Visual Studio güncelleştirme")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
-* [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
+* [Visual Studio’yu değiştirme](modify-visual-studio.md)
+* [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
 * [Mac için Visual Studio güncelleştirme](/visualstudio/mac/update)
 
 ::: moniker-end

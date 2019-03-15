@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710116"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983825"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Yönetici Kılavuzu
+# <a name="visual-studio-administrator-guide"></a>Visual Studio yönetici kılavuzu
 
 Kuruluş ortamlarında yüklemeleri bir ağ paylaşımına veya sistem yönetim yazılımının kullanarak son kullanıcılara dağıtmak sistem yöneticileri için yaygındır. Sistem yöneticileri yükleme işlemi sırasında ürün anahtarlarını dağıtmak için yükleme Varsayılanları, önceden yapılandırmak için bir ağ yükleme konumuna oluşturma olanağı sağlayan kurumsal dağıtım desteklemek için Visual Studio Kurulum altyapısı tasarladık, ve ürün yönetmek için başarılı bir dağıtımı sonrasında güncelleştirir. Bu Yönetici Kılavuzu, ağa bağlı ortamlarda kurumsal dağıtım için senaryo tabanlı rehberlik sağlar.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Visual Studio 2017 bir kuruluş ortamında dağıtma
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Visual Studio bir kuruluş ortamında dağıtma
 
-Her hedef bilgisayar karşıladığı sürece Visual Studio 2017 istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](/visualstudio/productinfo/vs2017-system-requirements-vs). System Center gibi yazılım ya da bir toplu iş dosyası aracılığıyla dağıtıyorsanız olsun, genellikle aşağıdaki adımları izleyerek Git isteyeceksiniz:
+Her hedef bilgisayar karşıladığı sürece Visual Studio istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](/visualstudio/productinfo/vs2017-system-requirements-vs). System Center gibi yazılım ya da bir toplu iş dosyası aracılığıyla dağıtıyorsanız olsun, genellikle aşağıdaki adımları izleyerek Git isteyeceksiniz:
 
 1. [Visual Studio ürün dosyalarını içeren bir ağ paylaşımı oluşturmanız](create-a-network-installation-of-visual-studio.md) bir ağ konumuna.
 
@@ -47,14 +47,14 @@ Her hedef bilgisayar karşıladığı sürece Visual Studio 2017 istemci iş ist
 8. [En son güncelleştirmeleri içeren ağ konumunuza Yenile](update-a-network-installation-of-visual-studio.md) Visual Studio, kullandığınız komutunu çalıştırarak güncelleştirilmiş bileşenleri eklemek için düzenli olarak adım 1.
 
 > [!IMPORTANT]
-> Bir ağ bağlantısı paylaşımı "kaynak konumu hatırlanır" yüklemeleri bunlar geldiğini unutmayın. Başka bir deyişle, istemci ilk olarak yüklendiği ağ paylaşımına döndürmek bir istemci makinesi onarılması gerekebilir. Böylece, kuruluşunuzda çalışan Visual Studio 2017 istemcileri sahip olmayı beklediğiniz kullanım ömrü hizalar, ağ konumu dikkatle seçin.
+> Bir ağ bağlantısı paylaşımı "kaynak konumu hatırlanır" yüklemeleri bunlar geldiğini unutmayın. Başka bir deyişle, istemci ilk olarak yüklendiği ağ paylaşımına döndürmek bir istemci makinesi onarılması gerekebilir. Böylece, kuruluşunuzda çalışan Visual Studio istemcileri sahip olmayı beklediğiniz kullanım ömrü hizalar, ağ konumu dikkatle seçin.
 
 ## <a name="use-visual-studio-tools"></a>Visual Studio araçlarını kullanma
 
 Yardımcı olacak çeşitli araçlar sunuyoruz [algılamak ve yüklü Visual Studio Örnekleri yönetme](tools-for-managing-visual-studio-instances.md) istemci makinelerinde.
 
 > [!TIP]
-> Yönetici Kılavuzu belgelerde ek olarak, iyi bir Visual Studio 2017 kurulumu hakkında bilgi kaynağıdır [Visual Studio Kurulum arşivleri](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> Yönetici Kılavuzu belgelerde ek olarak, iyi bir Visual Studio Kurulumu hakkında bilgi kaynağıdır [Visual Studio Kurulum arşivleri](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Müşteri geri bildirim ayarlarını belirtin
 
@@ -74,8 +74,8 @@ Müşteri geri bildirim ayarları hakkında daha fazla bilgi için bkz. [Visual 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Yükleme](install-visual-studio.md)
-* [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanma](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
+* [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
   * [Komut satırı parametresi örnekleri](command-line-parameter-examples.md)
   * [İş yükü ve bileşen kimliği başvurusu](workload-and-component-ids.md)
 * [Visual Studio'nun ağ tabanlı yüklemesini oluşturma](create-a-network-installation-of-visual-studio.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632400"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070145"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild ayrılmış ve tanınmış özellikleri
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Proje dosyası hakkında bilgi depolayan önceden tanımlanmış özellikler kümesi sağlar ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ikili dosyaları. Bu özellikler diğer aynı şekilde değerlendirilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] özellikleri. Örneğin, kullanılacak `MSBuildProjectFile` özelliği, yazdığınız `$(MSBuildProjectFile)`.
@@ -57,6 +57,7 @@ ms.locfileid: "56632400"
 | `MSBuildThisFileName` | Ayrılmış | Dosya adı kısmı `MSBuildThisFileFullPath`, dosya adı uzantısı olmadan. |
 | `MSBuildToolsPath` | Ayrılmış | Yükleme yolunun [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] değeriyle ilişkili sürümü `MSBuildToolsVersion`.<br /><br /> Yola son eğik çizgiyi dahil değildir.<br /><br /> Bu özellik geçersiz kılınamaz. |
 | `MSBuildToolsVersion` | Ayrılmış | Sürümü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Projeyi derlemek için kullanılan bir araç takımıdır.<br /><br /> Not: Bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] görevleri, hedefler ve bir uygulama oluşturmak için kullanılan araçları araçlardan oluşur. Araçlar gibi derleyicileri içerir *csc.exe* ve *vbc.exe*. Daha fazla bilgi için [araç takımı (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), ve [standart ve özel araç takımı yapılandırmaları](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Ayrılmış | Sürümü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeyi oluşturmak için kullanılır. <br /><br/> Bu özellik, aksi takdirde geçersiz kılınamaz hata iletisini `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` döndürülür. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>MSBuild öğeleri ile çakışan adlara
 

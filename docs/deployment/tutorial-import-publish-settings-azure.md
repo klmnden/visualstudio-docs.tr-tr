@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413572"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983929"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak Azure App Service'e bir uygulamayı yayımladığınızda Visual Studio'da yayımlama ayarları
 
 Kullanabileceğiniz **Yayımla** almak için aracı yayımlama ayarları ve uygulamanızın dağıtabilirsiniz. Bu makalede kullandığımız Azure App Service için yayınlama ayarlarını ancak kullanabileceğiniz yayımlama ayarlarını içeri aktarmak için benzer adımları [IIS](../deployment/tutorial-import-publish-settings-iis.md). Bir yayımlama ayarları profili Hizmeti'ne Visual Studio'nun her yükleme için dağıtım el ile yapılandırma daha hızlı olabilir, bazı senaryolarda kullanın.
 
-Visual Studio'da ASP.NET, ASP.NET Core ve .NET Core uygulamaları için aşağıdaki adımları uygulayın. Ayrıca Al için yayınlama ayarlarını [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) uygulamalar. Adımlar Visual Studio 2017 sürüm 15.6 karşılık gelir.
+Visual Studio'da ASP.NET, ASP.NET Core ve .NET Core uygulamaları için aşağıdaki adımları uygulayın. Ayrıca Al için yayınlama ayarlarını [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) uygulamalar.
 
 Bu öğreticide şunları yapacaksınız:
 
@@ -37,9 +37,19 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 ## <a name="prerequisites"></a>Önkoşullar
 
+::: moniker range=">=vs-2019"
+
+* Visual Studio 2019 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü.
+
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * Visual Studio 2017 yüklü olması gerekir ve **ASP.NET ve web geliştirme** iş yükü.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+::: moniker-end
 
 * Azure App Service'e oluşturun. Ayrıntılı yönergeler için bkz. [Visual Studio'yu kullanarak Azure'a bir ASP.NET Core web uygulaması dağıtma](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

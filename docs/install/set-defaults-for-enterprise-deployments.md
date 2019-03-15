@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910824"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984150"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Visual Studio 2017'in kuruluş dağıtımları için varsayılanları ayarlama
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
 
 Visual Studio dağıtımını etkileyen kayıt defteri ilkeler ayarlayabilir. Bu ilkeler için yeni yükleyici geneldir ve etkiler:
 
@@ -62,6 +62,6 @@ Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
- * [Visual Studio'yu yükleyin](install-visual-studio.md)
- * [Paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md)
- * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
+- [Visual Studio'yu yükleyin](install-visual-studio.md)
+- [Paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md)
+- [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)

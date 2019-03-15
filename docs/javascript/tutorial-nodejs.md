@@ -11,18 +11,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 6775f2fc24672c2bd7b798869085ea8e6170f21c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768391"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070327"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve Express uygulaması oluşturma
 
 Bu öğreticide Node.js ve Express kullanarak Visual Studio geliştirme için basit bir Node.js web uygulaması oluşturma, kod ekleyin, bazı IDE özelliklerini ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
-Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kod ekleyin
@@ -48,11 +48,18 @@ Express web uygulamaları oluşturmak için Node.js için bir sunucu çerçevesi
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 ve Node.js geliştirme iş yükü olması gerekir.
+* Visual Studio yüklü ve Node.js geliştirme iş yükü olması gerekir.
 
-    Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
 
-    İş yükünü yükleyin, ancak Visual Studio'a tıklayın, zaten gerektiğinde **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu (seçin **dosya**  >  **Yeni** > **proje**). Visual Studio Yükleyicisi'ni başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+    İş yükünü yükleyin, ancak Visual Studio zaten gerekiyorsa, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+
+    ![Node.js iş yükü VS yükleyicisi](../ide/media/quickstart-nodejs-workload.png)
 
 * Node.js çalışma zamanı yüklü olması gerekir.
 
@@ -66,13 +73,19 @@ Visual Studio için tek bir uygulama içinde dosyaları yöneten bir *proje*. Pr
 
 Bu öğreticide, Node.js ve express uygulaması için kod içeren basit bir proje ile başlar.
 
-1. Visual Studio 2017'yi açın.
+1. Visual Studio'yu açın.
 
 1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**ve ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması** seçip **Tamam**.
+1. Yeni bir proje oluşturun.
 
-     Görmüyorsanız **temel Azure Node.js Express 4 uygulaması** proje şablonu, yüklemelisiniz **Node.js geliştirme** iş yükü ilk (yönergeler önkoşullara bakın).
+    ::: moniker range=">=vs-2019"
+    İçinde **yeni bir proje oluşturma** iletişim kutusuna **javascript** sonuçlarını filtrelemek ve ardından arama kutusuna **temel Azure Node.js Express 4 uygulaması**seçin **Tamam**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.
+    ::: moniker-end
+    Görmüyorsanız **temel Azure Node.js Express 4 uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 
     Visual Studio, yeni bir çözüm oluşturur ve projenize sağ bölmede açılır. *App.js* proje dosyası (sol bölmede) düzenleyicide açılır.
 
@@ -191,7 +204,7 @@ Visual Studio hata ayıklayıcısı ekli uygulamayı çalıştırmak için sonra
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
-1. Edge veya Chrome'da gibi hata ayıklama araç çubuğundaki hata ayıklama hedefi seçin.
+1. Microsoft Edge veya Chrome'da gibi hata ayıklama araç çubuğundaki hata ayıklama hedefi seçin.
 
     ![Hata ayıklama hedefi seçin](../javascript/media/tutorial-nodejs-deploy-target.png)
 

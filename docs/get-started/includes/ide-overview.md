@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 16aa42df49ca7874015a1d012f3d6ce1688b18db
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874287"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070340"
 ---
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
@@ -156,7 +156,7 @@ Başlamak için [Visual Studio'yu indirin](https://visualstudio.microsoft.com/do
 
 ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../media/dotnet-core-cross-platform-workload.png)
 
-Visual Studio'yu ilk kez başlattığınızda, isteğe bağlı olarak yapabilecekleriniz [oturum](../../ide/signing-in-to-visual-studio.md) Microsoft hesabınızı veya iş veya Okul hesabınızı kullanarak.
+Visual Studio'yu ilk kez açtığınızda, isteğe bağlı olarak yapabilecekleriniz [oturum](../../ide/signing-in-to-visual-studio.md) Microsoft hesabınızı veya iş veya Okul hesabınızı kullanarak.
 
 ## <a name="create-a-program"></a>Bir program oluşturma
 
@@ -236,7 +236,7 @@ Visual Studio'yu ilk kez başlattığınızda, isteğe bağlı olarak yapabilece
 
 1. Seçin **yeni bir proje oluşturma**.
 
-   ![Visual Studio başlangıç penceresi, yeni bir proje oluşturun](../media/vs-2019/start-window.png)
+   ![Visual Studio başlangıç penceresi, yeni bir proje oluşturun](../media/vs-2019/start-window-create-new-project.png)
 
    **Yeni bir proje oluşturma** penceresi açılır ve birkaç proje gösterir *şablonları*. Şablon, belirtilen proje türü için gereken ayarları ve temel dosyaları içerir.
 

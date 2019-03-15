@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907866"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982889"
 ---
-# <a name="uninstall-visual-studio-2017"></a>Visual Studio 2017'yi kaldırın
+# <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 
 Bu sayfa, Visual Studio'nun tümleşik paketimiz geliştiricileri için üretkenlik aracından oluşan açıklanmaktadır.
 
@@ -39,7 +39,7 @@ Bu sayfa, Visual Studio'nun tümleşik paketimiz geliştiricileri için üretken
 
 2. Yükleyiciyi başlatmak için tıklatın ![ayrıntılara](media/vs2017uninstall-UninstallIcon.png "seçenekleri simgesini") simgesine ve ardından **kaldırma**.
 
-     ![Visual Studio 2017'yi değiştirmek; Değiştirme, başlatma, onarma veya kaldırma](media/vs2017-uninstall.PNG "onarmak veya Visual Studio 2017'yi kaldırın")
+     ![Visual Studio değiştirmek; Değiştirme, başlatma, onarma veya kaldırma](media/vs2017-uninstall.PNG "onarmak veya Visual Studio 2017'yi kaldırın")
 
 3. Tıklayın **Tamam** Seçiminizi onaylayın.
 
@@ -59,6 +59,6 @@ Tüm Visual Studio Yükleyicisi'nin yanı sıra, Visual Studio 2017 yüklemesini
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Değiştirme](modify-visual-studio.md)
+* [Visual Studio’yu değiştirme](modify-visual-studio.md)
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
 * [Mac için Visual Studio'yu kaldırın](/visualstudio/mac/uninstall)

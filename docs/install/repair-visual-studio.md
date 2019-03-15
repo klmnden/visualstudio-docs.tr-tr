@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a047512b8f6434661193f088f981c52c0ad118
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d358d4f608437ad7ca004d4adef614632a123012
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939443"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983214"
 ---
-# <a name="repair-visual-studio-2017"></a>Visual Studio 2017'yi onarma
+# <a name="repair-visual-studio"></a>Visual Studio’yu onarın
 
 Bazı durumlarda Visual Studio yüklemenizin zarar görmüş veya bozulmuş olur. Bir onarım bunu düzeltebilirsiniz.
 
@@ -39,7 +39,7 @@ Bazı durumlarda Visual Studio yüklemenizin zarar görmüş veya bozulmuş olur
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio 2017'yi Yükleme](install-visual-studio.md)
-* [Visual Studio 2017 güncelleştirmesi](update-visual-studio.md)
-* [Visual Studio 2017'yi kaldırın](uninstall-visual-studio.md)
-* [Visual Studio 2017'yi yükleme ve yükseltme sorunlarını giderme](troubleshooting-installation-issues.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
+* [Visual Studio’yu güncelleştirme](update-visual-studio.md)
+* [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
+* [Visual Studio yükleme ve yükseltme sorunlarını giderme](troubleshooting-installation-issues.md)

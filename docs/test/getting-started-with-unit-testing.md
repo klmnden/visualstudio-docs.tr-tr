@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223527"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57984124"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -112,25 +112,39 @@ Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçeveler
 
 Üçüncü taraf test çerçevelerini etkinleştirme adımları şunlardır:
 
+::: moniker range="vs-2017"
+
 1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler** menü çubuğundan.
 
-1. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda **çevrimiçi** kategorisi ve ardından **Visual Studio Market**. Ardından, **Araçları** > **test**.
+2. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda **çevrimiçi** kategorisi ve ardından **Visual Studio Market**. Ardından, **Araçları** > **test**.
 
    ![Visual Studio Market](media/extensions-and-updates-testing.png)
 
-1. Framework veya yükleyin ve ardından istediğiniz bağdaştırıcıyı seçin **indirme**.
+::: moniker-end
 
-1. Bir sınıf kitaplığı projesi oluşturun ve çözümünüze ekleyin.
+::: moniker range=">=vs-2019"
+
+1. Seçin **uzantıları** > **uzantıları yönetme** menü çubuğundan.
+
+2. İçinde **uzantıları yönetme** iletişim kutusunda **çevrimiçi** kategorisi ve ardından **Visual Studio Market**. Ardından, **Araçları** > **test**.
+
+   ![Visual Studio Market](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. Framework veya yükleyin ve ardından istediğiniz bağdaştırıcıyı seçin **indirme**.
+
+4. Bir sınıf kitaplığı projesi oluşturun ve çözümünüze ekleyin.
 
    ![Sınıf Kitaplığı projesini adlandırın ve ekleyin](media/create3rdpartyunittest3.png)
 
-1. Eklentiyi yükleyin. İçinde **Çözüm Gezgini**, sınıf kitaplığı Projesi'ni seçin ve ardından **NuGet paketlerini Yönet** , sağ tıklayın veya bağlam menüsünde.
+5. Eklentiyi yükleyin. İçinde **Çözüm Gezgini**, sınıf kitaplığı Projesi'ni seçin ve ardından **NuGet paketlerini Yönet** , sağ tıklayın veya bağlam menüsünde.
 
    ![Eklentiyi yüklemek için NuGet paketlerini Yönet](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) ekleme ve güncelleştirme kitaplıkları ve araçları projeleriniz için kullanabileceğiniz Visual Studio uzantısıdır.
 
-1. İçinde **NuGet Paket Yöneticisi** penceresinde arayın ve eklentiyi seçin ve ardından **yükleme**.
+6. İçinde **NuGet Paket Yöneticisi** penceresinde arayın ve eklentiyi seçin ve ardından **yükleme**.
 
    ![3. taraf Framework'ü yükleme](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçeveler
 
    ![3. taraf birim testi çerçevesi için başvuru çözümünüze eklenir](media/create3rdpartyunittest6.png)
 
-1. Sınıf kitaplığı Proje öğesinden **başvuruları** düğümünü **Başvuru Ekle**.
+7. Sınıf kitaplığı Proje öğesinden **başvuruları** düğümünü **Başvuru Ekle**.
 
    ![Projeye bir başvuru ekleyin](media/createunittest6.png)
 
-1. İçinde **başvuru Yöneticisi** iletişim kutusunda, test kodu içeren projeyi seçin.
+8. İçinde **başvuru Yöneticisi** iletişim kutusunda, test kodu içeren projeyi seçin.
 
    ![Kod projesi, test etmek için seçin](media/createunittest7.png)
 
-1. Birim testinizi kodlayın.
+9. Birim testinizi kodlayın.
 
    ![Kod birim testi kod dosyanıza ekleyin](media/create3rdpartyunittest7.png)
 

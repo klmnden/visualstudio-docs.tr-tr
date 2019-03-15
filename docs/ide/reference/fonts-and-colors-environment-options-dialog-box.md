@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3fd18198811f6235c4e5d0627303e4243ad595b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700269"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58070262"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 
@@ -218,7 +218,7 @@ Seçili öğenin ön plan için seçebileceğiniz kullanılabilir renklerin list
 
 **Default**
 
-Öğesi ilk kez Visual Studio'yu başlattığınızda görünen renk. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
+Öğesi ilk kez Visual Studio'yu açın görünen renk. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
 
 **Özel**
 
@@ -237,7 +237,7 @@ Seçili öğe için bir arka plan rengi içinden seçebileceğiniz bir renk pale
 
 **Default**
 
-Öğesi ilk kez Visual Studio'yu başlattığınızda görünen renk. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
+Öğesi ilk kez Visual Studio'yu açın görünen renk. Tıklayarak **Varsayılanlar kullan** düğme için bu renk sıfırlar.
 
 **Özel**
 

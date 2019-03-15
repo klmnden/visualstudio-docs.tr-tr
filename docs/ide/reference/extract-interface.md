@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0036bb9bf8ef6d0c09fddc2b8ac0a4977c3674c
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323442"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983211"
 ---
 # <a name="extract-an-interface-refactoring"></a>Bir arabirimi yeniden düzenleme ayıklayın
 
@@ -70,13 +70,19 @@ Bu yeniden düzenleme için geçerlidir:
 
    Belirtilen adı dosyasında arabirimi oluşturulur. Buna ek olarak, seçtiğiniz sınıfı bu arabirimi uygular.
 
-   - C# İÇİN:
+   - C#:
 
-      ![Sonuçta elde edilen sınıfı - C# ](media/extractinterface-class-cs.png) ![elde edilen Interface -C#](media/extractinterface-interface-cs.png)
+      ![Sonuçta elde edilen sınıfı-C#](media/extractinterface-class-cs.png)
+      
+      
+      ![Sonuçta elde edilen Interface-C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Sonuçta elde edilen sınıfı - Visual Basic](media/extractinterface-class-vb.png) ![elde edilen Interface - Visual Basic](media/extractinterface-interface-vb.png)
+      ![Sonuçta elde edilen sınıfı - Visual Basic](media/extractinterface-class-vb.png)
+      
+      
+      ![Sonuçta elde edilen Interface - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

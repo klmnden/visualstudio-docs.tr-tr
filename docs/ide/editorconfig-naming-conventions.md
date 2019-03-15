@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908198"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983280"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -73,18 +73,19 @@ Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırara
 - private
 - protected
 - korumalı\_iç veya protected_friend
+- özel\_korumalı
 - yerel
 
 > [!NOTE]
 > Erişilebilirlik hedeflediğiniz sembol türü için geçerli değilse, bir erişilebilirlik düzeyi adlandırma kuralınızın bir parçası olarak belirtmeyin. Örneğin, Erişilebilirlik düzeyleri parametrelere sahip değildir. Adlandırma kuralınıza bir parametre adlandırma kuralı için bir erişilebilirlik düzeyi belirtirseniz, düzgün çalışmaz.
 
-### <a name="symbol-modifiers"></a>Simge değiştirici
+### <a name="symbol-modifiers-optional"></a>Sembol değiştiriciler (isteğe bağlı)
 
 Değiştiriciler adlandırma kuralı uygulamak istediğiniz simgeleri tanımlamak için bir özellik adı şu biçimde belirtin:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırarak birden çok değer belirtebilirsiniz. Bir adlandırma kuralı yalnızca belirtilen tüm değiştiricilere sahip imzaları eşleşecektir `required_modifiers`. Bu özelliği atarsanız, varsayılan değer olan boş bir listeyle kullanılır, diğer bir deyişle, hiçbir özel değiştiriciler eşleştirmek için gereklidir. Bu sembolün değiştiriciler olsun veya olmasın bu kuralın uygulanacağı üzerinde hiçbir etkisi yok anlamına gelir.
+Aşağıdaki liste gösterir (birden çok değer virgülle ayırın) izin verilen değerler:
 
 - `abstract` veya `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırara
    > [!NOTE]
    > İçin bir adlandırma kuralı varsa `static` veya `shared` simgeler, ayrıca uygulanan `const` örtük olarak statik olduğundan semboller. İstemiyorsanız `static` uygulamak için adlandırma kuralı `const` sembolleri oluşturmak için ayrı bir adlandırma kuralı `const` semboller.
 
-`required_modifiers` İsteğe bağlı bir özelliktir. Adlandırma kuralınıza, bu özelliği atarsanız, tüm değiştiricilere için geçerli olacaktır.
+Bir adlandırma kuralı sahip imzaları eşleşen *tüm* belirtilen değiştiricilere `required_modifiers`. Bu özelliği atarsanız, varsayılan değer olan boş bir listeyle kullanılır, diğer bir deyişle, hiçbir özel değiştiriciler eşleştirmek için gereklidir. Bu sembolün değiştiriciler olsun veya olmasın bu kuralın uygulanacağı üzerinde hiçbir etkisi yok anlamına gelir.
+
+> [!TIP]
+> Değerini belirtmeyin `*` için `required_modifiers`. Bunun yerine, yalnızca atlamak `required_modifiers` özelliği Toptan ve adlandırma kuralınıza değiştiricisi herhangi bir türden uygulanır.
 
 ## <a name="style"></a>Stil
 

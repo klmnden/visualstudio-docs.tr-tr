@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318443"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983043"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI testleriyle farklı web tarayıcıları kullanma
 
@@ -51,11 +51,23 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
 
 ### <a name="install-selenium-components"></a>Selenium bileşenlerini yükleme
 
-1.  Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.
+::: moniker range="vs-2017"
 
-2.  İçinde **uzantı ve güncelleştirmeler** iletişim kutusu, arama `Selenium components for Cross Browser Testing`.
+1. Üzerinde **Araçları** menüsünde seçin **Uzantılar ve güncelleştirmeler**.
 
-3.  Uzantısını vurgulayın ve seçin **indirme**.
+2. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusu, arama `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Üzerinde **uzantıları** menüsünde seçin **uzantıları yönetme**.
+
+2. İçinde **uzantıları yönetme** iletişim kutusu, arama `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Uzantısını vurgulayın ve seçin **indirme**.
 
     > [!TIP]
     > Kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini indirebilirsiniz [burada](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).

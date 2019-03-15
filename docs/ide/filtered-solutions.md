@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007182"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983890"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio'da filtrelenmiş çözümleri
 
@@ -37,7 +37,7 @@ Yalnızca bazı yüklenen projeleri ile bir çözümü açmak için şu adımlar
 
 1. Seçin **dosya** > **açık** > **proje/çözüm** menü çubuğundan.
 
-2. İçinde **yeni proje** iletişim çözümünü seçin ve ardından **proje yüklenmemesine**.
+2. İçinde **Proje Aç** iletişim çözümünü seçin ve ardından **proje yüklenmemesine**.
 
    ![Visual Studio Proje Aç iletişim kutusunda seçili projeler yüklenmez](media/filtered-solutions/do-not-load-projects.png)
 

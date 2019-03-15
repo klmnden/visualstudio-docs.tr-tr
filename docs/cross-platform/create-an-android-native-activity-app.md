@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 60e2fccf4b26516e88b05b5fb8fc0f8d0eb20f85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983735"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069703"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Yerel Etkinlik Uygulaması Oluşturma
 
@@ -31,9 +31,7 @@ Android yerel etkinlik uygulaması oluşturmadan önce tüm sistem gereksinimler
 
 Bu öğreticide, önce yeni bir Android yerel etkinlik projesi oluşturma sonra oluşturun ve varsayılan uygulamasını Android için Visual Studio öykünücüsü'nün içinde çalıştırın.
 
-### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
-
-1. Visual Studio'yu açın. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+1. Visual Studio'da **dosya** > **yeni** > **proje**.
 
 2. İçinde **yeni proje** iletişim kutusunun **şablonları**, seçin **Visual C++** > **Çoklu Platform**seçin **Native-Activity uygulaması (Android)** şablonu.
 

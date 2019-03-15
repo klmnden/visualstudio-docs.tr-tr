@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915628"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983110"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Katman modeli uzantısı dağıtma
 
@@ -37,9 +37,19 @@ Uzantınız, diğer bilgisayarlara yükleyebileceğiniz bir VSIX dosyasına derl
 
 ### <a name="to-uninstall-the-extension"></a>Uzantıyı kaldırmak için
 
-1.  Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
+::: moniker range="vs-2017"
 
-2.  Uzantının adını tıklatın ve ardından **kaldırma**.
+1. Visual Studio'da **Araçları** > **Uzantılar ve güncelleştirmeler**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'da **uzantıları** > **uzantıları yönetme**.
+
+::: moniker-end
+
+2. Uzantının adını tıklatın ve ardından **kaldırma**.
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Team Foundation Server'da bir uzantı yükleyin
 

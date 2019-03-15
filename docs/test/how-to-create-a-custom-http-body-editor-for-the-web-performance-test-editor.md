@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936206"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069898"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Nasıl yapılır: Özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma
 
@@ -31,9 +31,7 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
 
 ## <a name="create-a-windows-control-library-project"></a>Bir Windows Denetim Kitaplığı projesi oluşturun
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Bir Windows Denetim Kitaplığı projesi kullanarak bir kullanıcı denetimi oluşturma
-
-1. Visual Studio'da üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
+1. Visual Studio'da üzerinde **dosya** menüsünde seçin **yeni** > **proje**.
 
     **Yeni proje** iletişim kutusu görüntülenir.
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  Dize gövdesinin düzenlenmesi tamamlandığında ve kullanıcı **Tamam** eklenti iletişim kutusundaki <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> düzenlenmiş metni bir dize ve güncelleştirme olarak almak için çağrılan **dize gövdesi** Web isteği Test performans Düzenleyicisi.
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Bir sınıf oluşturmak ve IStringHttpBodyEditorPlugin arabirimi kodunu uygulamak için
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Bir sınıf oluşturmak ve IStringHttpBodyEditorPlugin arabirimi uygulayan
 
-1.  İçinde **Çözüm Gezgini**, Windows Forms Denetim Kitaplığı projesini sağ tıklatın ve seçin **Yeni Öğe Ekle**.
+1. İçinde **Çözüm Gezgini**, Windows Forms Denetim Kitaplığı projesini sağ tıklatın ve seçin **Yeni Öğe Ekle**.
 
-2.  **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
+   **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 
-3.  Seçin **sınıfı**.
+2. Seçin **sınıfı**.
 
-4.  İçinde **adı** metin kutusunda, sınıf için anlamlı bir ad yazın örneğin, `MessageEditorPlugins`.
+3. İçinde **adı** metin kutusunda, sınıf için anlamlı bir ad yazın örneğin, `MessageEditorPlugins`.
 
-5.  Seçin **ekleme**.
+4. Seçin **ekleme**.
 
-     Class1 projeye eklenir ve Kod Düzenleyicisi üzerinde sunulur.
+   Class1 projeye eklenir ve Kod Düzenleyicisi üzerinde sunulur.
 
-6.  Kod Düzenleyicisi'nde, aşağıdaki ekleyin using deyimi:
+5. Kod Düzenleyicisi'nde, aşağıdaki ekleyin `using` deyimi:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  XmlMessageEditor sınıfını için aşağıdaki kodu yazın veya kopyalayın <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> arabirim ve gereken yöntemleri uygulamak:
+6. Arabirim uygulamak için aşağıdaki kodu yapıştırın:
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ Dize gövdesinin düzenlenmesi tamamlandığında ve kullanıcı **Tamam** eklen
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ Dize gövdesinin düzenlenmesi tamamlandığında ve kullanıcı **Tamam** eklen
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Derleme ve eklentileri dağıtma
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Oluşturmak ve IStringHttpBodyEditorPlugin ve IBinaryHttpBodyEditorPlugin için ortaya çıkan DLL'yi dağıtmak için
+1. Üzerinde **derleme** menüsünde seçin **derleme \<Windows Form Denetim Kitaplığı proje adı >**.
 
-1.  Üzerinde **derleme** menüsünde seçin **derleme \<Windows Form Denetim Kitaplığı proje adı >**.
+2. Visual Studio'nun tüm örneklerini kapatın.
 
-2.  Visual Studio'nun tüm örneklerini kapatın.
+   > [!NOTE]
+   > Visual Studio kapatıldıktan emin olur *.dll* kopyalamak denemeden önce dosya kilitli değil.
 
-    > [!NOTE]
-    > Visual Studio kapatıldıktan emin olur *.dll* kopyalamak denemeden önce dosya kilitli değil.
+3. Ortaya çıkan kopyalama *.dll* projenizin dosyasından *bin\debug* klasöre (örneğin, *MessageEditors.dll*) için *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-3.  Ortaya çıkan kopyalama *.dll* projelerinizi dosyasından *bin\debug* klasöre (örneğin, *MessageEditors.dll*) için *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+4. Visual Studio'yu açın.
 
-4.  Visual Studio'yu açın.
-
-     *.Dll* artık Visual Studio ile kayıtlıdır.
+   *.Dll* artık Visual Studio ile kayıtlıdır.
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Bir Web performans testi kullanarak eklentileri doğrulayın
 
-### <a name="to-test-your-plug-ins"></a>Eklentilerinizi test etmek için
+1. Bir test projesi oluşturun.
 
-1.  Bir Test projesi oluşturun.
+2. Web performans testi oluşturma ve bir web hizmetine tarayıcıda bir URL girin.
 
-2.  Web performans testi oluşturma ve bir web hizmetine tarayıcıda bir URL girin.
+3. Kaydı bitirdikten sonra Web Performans Testi Düzenleyicisi'nde, web hizmeti isteğini genişletin ve seçin ya da bir **dize gövdesi** veya **ikili gövde**.
 
-3.  Kaydı bitirdikten sonra Web Performans Testi Düzenleyicisi'nde, web hizmeti isteğini genişletin ve seçin ya da bir **dize gövdesi** veya **ikili gövde**.
+4. İçinde **özellikleri** penceresinde, dize gövde veya İkili Gövde'ı seçin ve üç noktayı seçin **(...)** .
 
-4.  Özellikler penceresinde, dize gövde veya İkili Gövde'ı seçin ve üç noktayı seçin **(...)** .
+   **HTTP Gövde verisini Düzenle** iletişim kutusu görüntülenir.
 
-     **HTTP Gövde verisini Düzenle** iletişim kutusu görüntülenir.
-
-5.  Artık verileri düzenleyebilir ve seçin **Tamam**. Bu içeriği güncelleştirmek için uygun GetNewValue yöntemini çağırır <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5. Artık verileri düzenleyebilir ve seçin **Tamam**. Bu içeriği güncelleştirmek için uygun GetNewValue yöntemini çağırır <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Kod derleme
 
