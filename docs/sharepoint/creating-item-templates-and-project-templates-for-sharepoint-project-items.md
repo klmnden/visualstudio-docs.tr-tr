@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869907"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868049"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Öğe şablonları ve SharePoint Proje öğeleri için proje şablonları oluşturma
   Özel bir SharePoint proje öğesi türü tanımladığınızda, öğe şablonu veya bir proje şablonu ile ilişkilendirebilirsiniz. Bu ilişkilendirme, proje öğesi Visual Studio'da kullanmak diğer geliştiricilerin sağlar. Ayrıca, şablon için bir sihirbaz oluşturabilirsiniz.
@@ -72,7 +72,7 @@ ms.locfileid: "54869907"
 
 |İsteğe bağlı dosya|Açıklama|
 |-------------------|-----------------|
-|SharePoint proje öğeleri|SharePoint proje öğesi türleri tanımlayan bir veya daha fazla .spdata dosyaları dahil edebilirsiniz. Her *.spdata* eşleşen bir dosya olmalıdır <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> VSIX paketini proje şablonunda yer aldığı bir uzantı derlemesinin uygulamasında. Daha fazla bilgi için [öğe şablonları oluşturma](#creatingitemtemplates).<br /><br /> Genellikle, SharePoint projeleri, en az bir SharePoint proje öğesi içerir. Ancak bu gerekli değildir.|
+|SharePoint proje öğeleri|SharePoint proje öğesi türleri tanımlayan bir veya daha fazla .spdata dosyaları dahil edebilirsiniz. Her *.spdata* eşleşen bir dosya olmalıdır <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> VSIX paketini proje şablonunda yer aldığı bir uzantı derlemesinin uygulamasında. Daha fazla bilgi için [öğesi şablonları oluşturabilme](#createitemtemplates).<br /><br /> Genellikle, SharePoint projeleri, en az bir SharePoint proje öğesi içerir. Ancak bu gerekli değildir.|
 |*\<featureName > .feature*|Bu dosya, dağıtım için çeşitli proje öğeleri gruplandırmak için kullanılan bir SharePoint özelliği tanımlar. Projenizde bir özellik özelleştirmek için Özellik Tasarımcısı'nı kullandığınızda, Visual Studio bu dosyada özelliği hakkında daha fazla veri depolar. Proje öğeleri farklı gruplamanızı istiyorsanız, birden çok içerebilir *.feature* dosyaları.<br /><br /> Özel SharePoint Proje şablonu oluşturduğunuzda, yalnızca en düşük gerekli içeriği her dahil olmasını öneririz *.feature* dosya ve API'leri kullanarak özellikleri yapılandırmak <xref:Microsoft.VisualStudio.SharePoint.Features> ad alanında bir Proje şablonu ile ilişkili uzantı. Bunu yaparsanız, proje şablonu yapısı için gelecekteki değişiklikleri korunan *.feature* dosya. Nasıl oluşturulacağını gösteren bir örnek için bir *.feature* yalnızca gerekli minimum içerik dosya getirin, bkz: [izlenecek yol: Bir proje şablonu, bölüm 1 ile bir site sütunu proje öğesi oluşturma](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Değişiklik yapmak istiyorsanız bir *.feature* doğrudan dosya, şema kullanarak içeriği doğrulayabilirsiniz *% Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*.|
 |*\<featureName >. Template.XML*|Bu dosya için özellik bildirimi dosyasını temelini (*gt;Feature.xml*) projeden oluşturulan her bir özellik. Proje türünüzü kullanıcıları tarafından değiştirilmesi hedeflenmemiştir bazı davranışı belirtmek istiyorsanız bu dosyaya içerik ekleyebilirsiniz. Daha fazla bilgi için [yapı taşı: Özellikleri](http://go.microsoft.com/fwlink/?LinkId=169183) ve [gt;Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) dosyaları.<br /><br /> Projeden bir çözüm paketi oluşturduğunuzda, Visual Studio her çift içeriğini birleştirir  *\<featureName > .feature* dosya ve  *\<featureName >. Template.xml* dosyalarına bir özellik bildirimi dosyasını. Çözüm paketleri oluşturma hakkında daha fazla bilgi için bkz. [nasıl yapılır: MSBuild görevleri kullanarak bir SharePoint çözüm paketini oluşturma](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 

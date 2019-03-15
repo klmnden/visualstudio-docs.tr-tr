@@ -1,6 +1,6 @@
 ---
 title: 'CA1819: Özellikler diziler döndürmemelidir'
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919215"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872749"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Özellikler diziler döndürmemelidir
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919215"
 
 ## <a name="cause"></a>Sebep
 
-Ortak türde ortak veya korumalı bir özellik, bir dizi döndürür.
+Bir özellik, bir dizi döndürür.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen özellikler ve türler görünür, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -52,6 +54,16 @@ Türetilen bir özniteliğin bir özellik için oluşturulan bir uyarıyı bast�
 Özelliğin parçası ise uyarıyı gözardı edebileceğini bir [veri aktarım nesnesini (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) sınıfı.
 
 Aksi takdirde, bu kuraldan bir uyarıyı bastırmayın.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+Bu kategoride (performans), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Örnek ihlali
 

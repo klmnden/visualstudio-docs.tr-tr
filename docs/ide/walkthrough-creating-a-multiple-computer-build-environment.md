@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: afe5ff877f83d9aae9b1da52b7836fb07afacf44
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324227"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870513"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>İzlenecek yol: Birden çok bilgisayarda derleme ortamı oluşturma
 
@@ -298,7 +298,7 @@ MSBuild, yapı bilgisayarında GAC'ye yüklenecek bazı ek derlemeler yüklenmes
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Derlemeleri GAC'ye yüklemek için bulun *gacutil.exe* yapı bilgisayarında — genellikle %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 araçlarında olduğu\\. Bu klasörü bulamıyorsanız, adımları yineleyin [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) Bu anlatım bölümü.
+2. Derlemeleri GAC'ye yüklemek için bulun *gacutil.exe* yapı bilgisayarında — genellikle %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 araçlarında olduğu\\. Bu klasörü bulamıyorsanız, adımları yineleyin [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) Bu anlatım bölümü.
 
      Açık bir **komut istemi** penceresini yönetici haklarına sahip ve her dosya için şu komutu çalıştırın:
 
@@ -330,7 +330,7 @@ Komut satırında Msbuild'i kullanma hakkında daha fazla bilgi için bkz: [komu
 
      Bu adımlar, dizine % Depot % bakın.
 
-2. Dizinleri ve dosyaları açıklandığı gibi kopyalayın [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) bölümü altında yapıştırın dışında bu kılavuzun *% Depot %* yeni dizin oluşturuldu. Örneğin, kopyalama *%ProgramFiles%\Windows Kits\8.0\bin* için *%Depot%\Windows Kits\8.0\bin*.
+2. Dizinleri ve dosyaları açıklandığı gibi kopyalayın [dosya kopyalama ana bilgisayardan yapı bilgisayarına](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) bölümü altında yapıştırın dışında bu kılavuzun *% Depot %* yeni dizin oluşturuldu. Örneğin, kopyalama *%ProgramFiles%\Windows Kits\8.0\bin* için *%Depot%\Windows Kits\8.0\bin*.
 
 3. Dosyalar ne zaman yapıştırılan içinde *% Depot %*, şu değişiklikleri yapın:
 

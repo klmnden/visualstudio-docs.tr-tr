@@ -2,7 +2,7 @@
 description: XAML ile Visual Studio'da bir UWP uygulaması oluşturma veC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 04/04/2018
+ms.date: 03/11/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -13,24 +13,31 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bf52b39023209f54835d9753f4bb7a0df1e413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 854b6b1652385887a6df4580c3eb31229d809860
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934555"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868997"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Öğretici: Visual Studio'da XAML ve C ile Evrensel Windows platformu ilk uygulamanızı oluşturma&#35;
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), tüm Windows 10 cihazlarda çalışan bir "Hello World" uygulaması oluşturacaksınız. Evrensel Windows Platformu (UWP) proje şablonu, Extensible Application Markup Language (XAML) kullanacaksınız. Bunu yapmayı ve C# programlama dilidir.
 
+::: moniker range="vs-2017"
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+::: moniker-end
+::: moniker range="vs-2019"
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+::: moniker-end
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 İlk olarak, bir evrensel Windows platformu projesi oluşturun. Proje türü bile herhangi bir şey ekledik önce gereken tüm şablonu dosyalarıyla birlikte gelir!
 
-1. Visual Studio 2017'yi açın.
+1. Visual Studio'yu açın.
+
+::: moniker range="vs-2017"
 
 2. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
 
@@ -41,9 +48,24 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
    > [!NOTE]
    > Görmüyorsanız **boş uygulama (Evrensel Windows)** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu.<br><br>![Yeni Proje iletişim kutusundan açık Visual Studio yükleyicisi bağlantısına tıklayın](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Visual Studio Yükleyicisi'ni başlatır. Seçin **Evrensel Windows platformu geliştirme** iş yükü ve ardından **Değiştir**.<br><br>![Visual Studio Yükleyicisi'nde Evrensel Windows platformu geliştirme iş yükü](media/uwp-dev-workload.png)
 
-4. Zaman **yeni evrensel Windows platformu projesi** iletişim kutusu görüntülenirse, seçin **Tamam**.
+4. Varsayılan değerleri kabul **hedef sürümü** ve **en düşük sürüm** ayarlarında **yeni evrensel Windows platformu projesi** iletişim kutusu.
 
-   ![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/new-uwp-project-target-minver-dialog.png)
+![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Visual Studio'yu başlatın ve **başlangıç penceresi**, seçin **yeni bir proje oluşturma**.
+
+3. Üzerinde **yeni bir proje oluşturun** ekranında, girin *Evrensel Windows* arama kutusunda seçtiğiniz C# şablonu **boş uygulama (Evrensel Windows)** seçin **Sonraki**.
+
+![Oluştur yeni bir proje ekran görüntüsü](media/vs-2019/uwp-create-new-project.png)
+
+4. Varsayılan değerleri kabul **hedef sürümü** ve **en düşük sürüm** ayarlarında **yeni evrensel Windows platformu projesi** iletişim kutusu.
+
+![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+::: moniker-end
+   
 
    > [!NOTE]
    > Bu ilk kez ise bir UWP uygulaması oluşturmak için Visual Studio'yu kullandınız bir **ayarları** iletişim kutusu görünebilir. Seçin **Geliştirici modu**ve ardından **Evet**.<br><br>
@@ -57,7 +79,12 @@ Geliştirmeye başlamak için zaman var. Düğme denetimi ekleyin, düğme için
 
 1. İçinde **Çözüm Gezgini**, çift *MainPage.xaml* bölünmüş bir görünüm açmak için.
 
+   ::: moniker range="vs-2017"
    ![Çözüm Gezgini'nden mainpage.XAML dosyasını açın ](media/uwp-solution-explorer-MainPage-xaml.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Çözüm Gezgini'nden mainpage.XAML dosyasını açın](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
+   ::: moniker-end
 
    İki bölme vardır: **XAML Tasarımcısı**, bir tasarım tuvali içerir ve **XAML Düzenleyicisi**, burada ekleyebilir veya kodu değiştirin.
 
@@ -105,7 +132,7 @@ Geliştirmeye başlamak için zaman var. Düğme denetimi ekleyin, düğme için
 
    Şimdi şuna benzer şekilde, değiştirin:
 
-    ![Yeni zaman uyumsuz Button_Click olay işleyicisi ](media/uwp-add-hello-world-async-code.png)
+   ![Yeni zaman uyumsuz Button_Click olay işleyicisi ](media/uwp-add-hello-world-async-code.png)
 
    Kopyalama ve yapıştırma için kod aşağıdaki gibidir:
 
@@ -128,11 +155,11 @@ Kod bir konuşma sentezi nesnesi oluşturmak için bazı Windows API'leri kullan
 
 Bunu oluşturmanızı, dağıtmanızı ve ne göründüğünü ve benzer görmek için "Hello World" UWP uygulaması başlatma zamanı geldi. İşte nasıl.
 
-1. Seçin **yerel makine** uygulamayı başlatmak için.
+1. Oynat düğmesini kullanın (metni içeren **yerel makine**) yerel makine üzerinde uygulamayı başlatmak için.
 
    ![Yerel makineye başlatmak ve UWP uygulamanızın hatalarını ayıklama için tıklayın](media/uwp-start-or-debug.png)
 
-   (Alternatif olarak, seçebileceğiniz **hata ayıklama** > **hata ayıklamayı Başlat** basın ya da menü çubuğu **F5** uygulamanızı başlatmak için.)
+   (Alternatif olarak, seçebileceğiniz **hata ayıklama** > **hata ayıklamayı Başlat** menü çubuğu veya uygulamanızı başlatmak için F5 tuşuna basın.)
 
 2. Giriş ekranı yakında kaybolur sonra görüntülenen uygulamanızı görüntüleyin. Uygulama şuna benzer görünmelidir:
 
@@ -142,11 +169,11 @@ Bunu oluşturmanızı, dağıtmanızı ve ne göründüğünü ve benzer görmek
 
    Windows 10 cihaz kilit ekranında tam anlamıyla, "Hello, World!"
 
-4. Uygulamayı kapatmak için tıklayın **hata ayıklamayı Durdur** araç çubuğu düğmesi. (Alternatif olarak, seçin **hata ayıklama** > **hata ayıklamayı durdurmak** tuşuna basın veya menü çubuğu **Shift**+**F5**.)
+4. Uygulamayı kapatmak için tıklayın **hata ayıklamayı Durdur** araç çubuğu düğmesi. (Alternatif olarak, seçin **hata ayıklama** > **hata ayıklamayı durdurmak** menü çubuğu veya Shift + F5 tuşuna basın.)
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu hızlı başlangıcı tamamladığınızda Tebrikler! UWP ve Visual Studio IDE ile ilgili bazı temel konuları öğrendiğinize göre umuyoruz. Daha fazla bilgi edinmek için aşağıdaki öğreticiyle devam edin:
+Bu öğreticiyi tamamlamak Tebrikler! UWP ve Visual Studio IDE ile ilgili bazı temel konuları öğrendiğinize göre umuyoruz. Daha fazla bilgi edinmek için aşağıdaki öğreticiyle devam edin:
 
 > [!div class="nextstepaction"]
 > [Bir kullanıcı arabirimi oluşturma](/windows/uwp/design/basics/xaml-basics-ui)

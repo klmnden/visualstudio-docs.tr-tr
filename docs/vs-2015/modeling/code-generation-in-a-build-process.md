@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c30ef435cde80053d1f7760a57acac2bca8532
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766275"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867741"
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme Sürecinde Kod Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Başka bir deyişle, MSBuild içinde metin şablonu oluşturduğunuzda, proje do
 
 ##  <a name="buildserver"></a> Makinelerinizi yapılandırma
 
-Geliştirme bilgisayarınızda yapı görevlerini etkinleştirmek için yükleme [Visual Studio için modelleme SDK](http://www.microsoft.com/download/details.aspx?id=40754).
+Geliştirme bilgisayarınızda yapı görevlerini etkinleştirmek için yükleme [Visual Studio için modelleme SDK](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Varsa [yapı sunucunuzu](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) üzerinde Visual Studio yüklü değil, bir bilgisayarda çalıştırır geliştirme makinenizden yapı bilgisayarına aşağıdaki dosyaları kopyalayın. En son sürüm numaraları yerine ' *'.
 
@@ -285,4 +285,4 @@ T4 MSbuild şablonundaki rehber oldukça kullanışlıdır: $(VSToolsPath)\TextT
 
 - [T4 Metin Şablonu Yazma](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych: T4 tümleştirmeyi anlama](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych: T4 tümleştirmeyi anlama](https://github.com/olegsych/T4Toolbox)

@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: acf8ab0a1425e531839cb8de9229a7c6b1ac1b96
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805559"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873353"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |Office 2007 VSTO|Projeyi Office 2013 ve .NET Framework 4 hedeflemek için yükseltirseniz, bu projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Proje .NET Framework 4 hedefliyse, projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. Tüm diğer projeler tek yönlü yükseltme gerektirir.|
 |Zengin Internet Uygulamaları|Projeyi yükseltirseniz, projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
-|SharePoint 2007|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. SharePoint 2010 için projeyi el ile yükseltirseniz, ancak siz açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SharePoint 2007 yükseltme hakkında daha fazla bilgi için bkz. [SharePoint 2007'den SharePoint 2010 için BT uzmanı için geçiş](http://go.microsoft.com/fwlink/?LinkId=238224), [2007 iş akışını Visual Studio & SharePoint 2010 için geçiş](http://go.microsoft.com/fwlink/?LinkId=238225), ve [SharePoint Server 2010 için SharePoint Enterprise arama Taşıma aracı](http://go.microsoft.com/fwlink/?LinkId=238226).|
+|SharePoint 2007|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. SharePoint 2010 için projeyi el ile yükseltirseniz, ancak siz açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SharePoint 2007 yükseltme hakkında daha fazla bilgi için bkz. [SharePoint 2007'den SharePoint 2010 için BT uzmanı için geçiş](http://go.microsoft.com/fwlink/?LinkId=238224), [2007 iş akışını Visual Studio & SharePoint 2010 için geçiş](http://go.microsoft.com/fwlink/?LinkId=238225), ve [SharePoint Server 2010 için SharePoint Enterprise arama Taşıma aracı](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
 |SketchFlow|Visual Studio'nun projeyi WPF 4.5/Silverlight 5'e yükseltmesine izin verirseniz projeyi açabilirsiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] Veritabanı|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SQL Server'ın önceki bir sürümde oluşturulmuş bir veritabanı dosyasını (.mdf) varsa, kendisine yükseltmelisiniz [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] önce SQL Server Express LocalDB ile kullanabilirsiniz, ancak artık veritabanı ile SQL Server'ın önceki sürümleriyle uyumlu değildir. Yükseltme yapmazsanız içindeki veritabanıyla çalışmaya devam edebilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] yüklenerek ve kullanılarak [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] aynı bilgisayarda. Daha fazla bilgi için [.mdf dosyalarını yükseltme](../data-tools/upgrade-dot-mdf-files.md).|
@@ -91,7 +91,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 
 - İçinde bir masaüstü uygulaması için bir projeyi açmayı denerseniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], bir hata oluşur ve bu iletilerden biri görüntülenir: "Visual Studio'nun bu sürümü yalnızca destekler [!INCLUDE[win81](../includes/win81-md.md)] uygulamalar" veya "Bu proje, geçerli Visual Studio sürümü ile uyumlu değil." [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] geliştirme, test ve Windows 8.1 için tasarlanan Windows Store uygulamalarının dağıtımı için sınırlıdır. Bir masaüstü uygulaması projesini açmak için, bu proje türünü destekleyen bir Visual Studio sürümünü kullanmanız gerekir.
 
-   Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Microsoft Visual Studio ürünleri](http://go.microsoft.com/fwlink/?LinkId=254332)
+   Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Microsoft Visual Studio ürünleri](https://visualstudio.microsoft.com/products/)
 
 - Windows Store uygulaması projesinde açmayı denerseniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Masaüstü, bir hata oluşur. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Masaüstü, Windows Store apps oluşturmak için kullanılamaz. Windows Store apps oluşturmak istiyorsanız, da yükleyebilirsiniz [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Ya da tüm Microsoft platformlarına ve web'e yönelik uygulamalar geliştirmek için, Visual Studio Professional 2013'ü deneyin.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794360"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867949"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
   
  Ayrıca, Recording for the Blind & Dyslexic, Inc (RFB&D) şirketinden de ek Microsoft yayınlarını elde edebilirsiniz. RFB&D bu belgeleri dağıtım hizmetlerine kayıtlı, uygun üyelere dağıtmaktadır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının kullanılabilirliği hakkında bilgi için şuraya başvurun:  
   
-|Recording for the Blind & Dyslexic, Inc.|  
+|Learning Ally|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> ABD içi telefon numarası: (800) 221-4792<br /><br /> Telefon numarası Amerika Birleşik Devletleri ve Kanada: (609) 452-0606<br /><br /> Faks: (609) 987-8116<br /><br /> Blind & Dyslexic Web sitesi için kaydı: [ http://www.rfbd.org ](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally Web sitesi: [ http://www.learningally.org ](http://www.learningally.org/).|  
   
  Web adresleri değişebilir, bu nedenle Web sitesi veya burada bahsedilen sitelerine bağlanamayabilirsiniz.  
   

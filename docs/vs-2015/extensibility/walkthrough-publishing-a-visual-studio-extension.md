@@ -11,12 +11,12 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27a581175fd0cb63a598006ea2519058bdd8fcbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781519"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867558"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio Uzantısı Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Bu izlenecek yol, Visual Studio uzantısı için Visual Studio Galerisine yayım
 
 1.  Uzantınızı sürümü oluşturulan ve güncel olduğundan emin olun.
 
-2.  Bir web tarayıcısında açın [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkId=194329) Web sitesi.
+2.  Bir web tarayıcısında açın [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi.
 
 3.  Sağ üst köşede **SIGN IN**.
 
@@ -86,7 +86,7 @@ Bu izlenecek yol, Visual Studio uzantısı için Visual Studio Galerisine yayım
 
 #### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>Visual Studio Gallery'den uzantıyı kaldırmak için
 
-1.  Açık [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkId=194329) Web sitesi.
+1.  Açık [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi.
 
 2.  Sağ üst köşede **My Extenions**. TestPublish listesi görüntülenir.
 

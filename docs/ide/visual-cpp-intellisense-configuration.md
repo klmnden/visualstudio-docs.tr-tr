@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ca04769fb7f9767c1f3ab73aa5cc9052bf81c69b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222902"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872278"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense için bir C++ projesi yapılandırma
 
@@ -52,7 +52,7 @@ Daha fazla bilgi için [nasıl yapılır: Derleme görevleri dosyası projeleri 
 
 ### <a name="open-folder-projects"></a>Proje klasörü aç
 
-CMake projeleri için emin #include yolları belirtilen doğru CMakeLists.txt içindeki tüm yapılandırmalar için. Diğer proje türleri CppProperties.json dosyası gerektirebilir. Daha fazla bilgi için [yapılandırma IntelliSense ile CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Yolları dosyasında tanımlanan her bir yapılandırma için doğru olduğundan emin olun.
+CMake projeleri için emin #include yolları belirtilen doğru CMakeLists.txt içindeki tüm yapılandırmalar için. Diğer proje türleri CppProperties.json dosyası gerektirebilir. Daha fazla bilgi için [yapılandırma IntelliSense ile CppProperties.json](/cpp/ide/non-msbuild-projects#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Yolları dosyasında tanımlanan her bir yapılandırma için doğru olduğundan emin olun.
 
 CppProperties.json dosyada bir sözdizimi hatası varsa, etkilenen dosyalarında IntelliSense hatalı olacaktır. Visual Studio çıktı penceresinde bir hata görüntüler.
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29cdb878e2d90844ebf08f6591a05378e62e24b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941913"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868217"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell betiklerini kullanarak geliştirme ve test ortamlarına yayımlama
 
@@ -154,7 +154,7 @@ Azure'da tek üretim sitesi yerine birden çok dağıtım ortamı (yuvaları bil
 
    ![Oluşturma Web dağıtım paketi](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Daha fazla bilgi için [nasıl yapılır: Visual Studio'da bir Web dağıtım paketi oluşturma](https://msdn.microsoft.com/library/dd465323.aspx). Web dağıtımı paketi oluşturulmasını açıklandığı otomatikleştirebilirsiniz [özelleştirme ve genişletme yayımlama betiklerini](#customizing-and-extending-publish-scripts).
+   Daha fazla bilgi için [nasıl yapılır: Visual Studio'da bir Web dağıtım paketi oluşturma](https://msdn.microsoft.com/library/dd465323.aspx). Web dağıtımı paketi oluşturulmasını açıklandığı otomatikleştirebilirsiniz [özelleştirme ve genişletme yayımlama betiklerini](#customizing-and-extending-the-publish-scripts).
 
 1. İçinde **Çözüm Gezgini**, betik için bağlam menüsünü açın ve ardından **ile PowerShell ISE'yi açın**.
 1. Windows PowerShell betikleri, bu bilgisayarda ilk kez çalıştırılıyorsa, yönetici ayrıcalıklarıyla bir komut istemi penceresi açın ve aşağıdaki komutu yazın:

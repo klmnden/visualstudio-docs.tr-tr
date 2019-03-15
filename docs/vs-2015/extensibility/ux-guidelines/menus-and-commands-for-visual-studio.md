@@ -8,12 +8,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bb9a1d6fca5d68b9841d252b62af0db9dedd143
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b0fa441c6dc56210c11a0007eb2662b3c08910ba
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802102"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867864"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüler ve komutlar için Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -231,7 +231,7 @@ ms.locfileid: "54802102"
 
 #### <a name="when-naming-commands"></a>Ne zaman adlandırma komutları:
 
--   Böylece kolayca yerelleştirilebilir metin oluşturmak. Metin yerelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio için dünyanın hazırlık](http://msdn.microsoft.com/1cc35051-8126-441f-bea9-059245a47b1d).
+-   Böylece kolayca yerelleştirilebilir metin oluşturmak. Metin yerelleştirme hakkında daha fazla bilgi için bkz. [yen iyi yerelleştirme pratikleri](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
 -   Kısa olmalıdır. Komutlar, en fazla üç sözcük kullanmanız gerekir.
 

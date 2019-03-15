@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: dc01d4d635d297f1597d900687673dd4d35d049f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761551"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869311"
 ---
 # <a name="creating-your-own-start-page"></a>Kendi başlangıç sayfası oluşturma
 Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sayfası oluşturarak, özel bir başlangıç sayfası oluşturabilirsiniz.  
@@ -97,7 +97,7 @@ Başlangıç sayfası proje şablonunu kullanarak ya da boş bir başlangıç sa
   
     Çalışan başlangıç sayfası görüntülenir. Deneysel örneği kapatın, yeniden değişen tüm dosyaları kopyalayın ve ardından yeni değişiklikleri görmek için deneysel örneğinde yeniden açın gerekir.  
   
-   Özel başlangıç sayfası için bin\debug dizininizden .vsix dosyasını karşıya yükleyerek paylaşabilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesini veya başka bir Web sitesi veya intranet paylaşın. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  
+   Özel başlangıç sayfası için bin\debug dizininizden .vsix dosyasını karşıya yükleyerek paylaşabilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesini veya başka bir Web sitesi veya intranet paylaşın. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   

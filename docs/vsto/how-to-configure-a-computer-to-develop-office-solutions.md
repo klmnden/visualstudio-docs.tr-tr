@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff441de5d3643a1c8c4e9b57a98c7a5563d1ea62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ab7ffdf6e9323b3d4ee67b2bf237b271abb1a7d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653976"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869353"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Nasıl yapılır: Office çözümleri geliştirmek için bilgisayarı yapılandırma
   Visual Studio'da Microsoft Office geliştirici araçları kullanabilmesi için bir geliştirme bilgisayarı yapılandırmak için bu konudaki yönergeleri izleyin. Bu adımları gerçekleştirmek için geliştirme bilgisayarında yönetici ayrıcalıkları olmalıdır.
@@ -34,7 +34,7 @@ ms.locfileid: "56653976"
 3.  Visual Studio'nun İngilizce sürümünü sahip, ancak İngilizce olmayan ayarlarını kullanmak için Windows yükleyebileceğiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] görmek için dil paketi [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Windows ile aynı dilde iletileri. Visual Studio'nun İngilizce olmayan sürümleri, otomatik olarak dil paketini yükleyin. Dil paketi kullanılabilir [Microsoft İndirme Merkezi](http://go.microsoft.com/fwlink/?LinkId=140386).
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Office geliştirme yenilikler nelerdir?](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)
+
 - [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
 - [Nasıl yapılır: Office birincil birlikte çalışma derlemelerini yükleme](../vsto/how-to-install-office-primary-interop-assemblies.md)

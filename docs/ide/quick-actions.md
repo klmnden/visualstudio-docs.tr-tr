@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee5e9c9872074d43e418dcbc33d11347c53ef02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952573"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867043"
 ---
 # <a name="quick-actions"></a>Hızlı Eylemler
 
@@ -24,8 +24,11 @@ Hızlı Eylemler, kolayca yeniden düzenleme sağlar, oluşturmak veya aksi hald
 Hızlı eylemler için kullanılabilir:
 
 - Bir kod düzeltmesini uygulayın bir [Çözümleyicisi kod](../code-quality/roslyn-analyzers-overview.md) kuralı ihlali
-- [Bastır](../code-quality/use-roslyn-analyzers.md) kod Çözümleyicisi Kuralı ihlali
+
+- [Bastır](../code-quality/use-roslyn-analyzers.md#suppress-violations) kod Çözümleyicisi Kuralı ihlali
+
 - Geçerli bir yeniden düzenleme (örneğin, [satır içi geçici değişken](../ide/reference/inline-temporary-variable.md))
+
 - Kod oluşturma (örneğin, [bir yerel değişken ekleme](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
@@ -33,7 +36,7 @@ Hızlı eylemler için kullanılabilir:
 
 Ampul kullanarak hızlı Eylemler uygulanabilir ![ampul](media/light-bulb-icon.png) veya tornavida ![tornavida simgesi](media/screwdriver-icon.png) simgeleri veya basarak **Ctrl** + **.** imlecinizi bir eylem kullanılabilir kod satırına olduğunda. Gördüğünüz hata ampul ![hata ampul simgesini](media/error-light-bulb-icon.png) hata belirten bir kırmızı dalgalı çizgi yoktur ve Visual Studio, bu hata için bir düzeltme sahiptir.
 
-Herhangi bir dilde üçüncü taraflara özel tanılama ve öneriler, örneğin bir SDK'ın bir parçası olarak sağlayabilir ve Visual Studio ampuller bu kurallara dayalı vurgulamasında kullanılır.
+Herhangi bir dilde üçüncü taraflara özel tanılama ve öneriler, örneğin bir SDK'ın bir parçası olarak sağlayabilir ve Visual Studio ampuller bu kurallara göre görünür.
 
 ## <a name="icons"></a>Simgeler
 
@@ -41,17 +44,17 @@ Hızlı eylem kullanılabilir olduğunda görüntülenen simge, kullanılabilir 
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Ampul veya tornavida görmek için
 
-- Bir düzeltme varsa, bir hatanın konumda fare geldiğinizde ampuller kendiliğinden görünür.
+Bir düzeltme kullanılabilir haldeyse, ampuller görünür:
+
+- Bir hatanın konumda fare geldiğinizde
 
    ![Ampul fare vurgulama ile](../ide/media/vs2015_lightbulb_hover.png)
 
-- Giriş işaretini bir hızlı eylem kullanılabilir kod satırına taşıdığınızda ampuller ve tornavidalar düzenleyicinin sol kenar boşluğunda görünür.
+- Giriş işaretini (imleç) ilgili kod satırının içine taşıdığınızda düzenleyicinin sol kenar boşluğunda
 
-- Tuşuna **Ctrl**+**.** Hızlı Eylemler ve yeniden düzenlemeler kullanılabilir bir listesini görmek için herhangi bir yerde bir satıra.
+Ayrıca basabilirsiniz **Ctrl**+**.** Hızlı Eylemler ve yeniden düzenlemeler kullanılabilir bir listesini görmek için herhangi bir yerde bir satıra.
 
-## <a name="to-see-potential-fixes"></a>Olası düzeltmeleri görmek için
-
-Ampul yanındaki ya da aşağı oku seçin veya **olası düzeltmeleri göster** kullanılabilir hızlı eylemlerin bir listesini görüntülemek için bağlantı.
+Olası düzeltmeleri görmek için her iki yanındaki aşağı oku ampul seçin veya **olası düzeltmeleri göster** bağlantı. Kullanılabilir hızlı eylemler listesi görüntülenir.
 
 ![Genişletilmiş ampul](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49ec5ab372b5b7117dcab374c3420b1e76112825
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42b5df2f6d3ff0958784463c5c48d457597945a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757101"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873524"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Visual Studio mimari genelleştirilmiş görünümü
  Daha fazla bilgi için [projeleri](../../extensibility/internals/projects.md) ve [çözümleri](../../extensibility/internals/solutions.md).  
   
 ## <a name="project-and-item-templates"></a>Proje ve Öğe Şablonları  
- Visual Studio, önceden tanımlanmış proje şablonları ve proje öğesi şablonları içerir. Ayrıca kendi şablonlarınızı olun veya topluluk şablonlarını almak ve sonra bunları Visual Studio ile tümleştirin. [MSDN Kod Galerisi](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) şablonları ve uzantılar için Git yerdir.  
+ Visual Studio, önceden tanımlanmış proje şablonları ve proje öğesi şablonları içerir. Ayrıca kendi şablonlarınızı olun veya topluluk şablonlarını almak ve sonra bunları Visual Studio ile tümleştirin. [MSDN Kod Galerisi](https://code.msdn.microsoft.com/site/search?query=visual%20studio) şablonları ve uzantılar için Git yerdir.  
   
  Şablonlar, Proje yapısı ve belirli bir uygulama, Denetim, kitaplık veya sınıf türünü oluşturmak için gereken temel dosyaları içerir. Şablonlardan birini benzer yazılım geliştirme istediğinizde, şablonu temel alan bir proje oluşturun ve ardından bu projedeki dosyaları değiştirin.  
   

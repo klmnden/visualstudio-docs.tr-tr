@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 14124e84ad7f49326bb9e5346868c177e9d32087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761620"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872854"
 ---
 # <a name="how-to-register-a-service"></a>Nasıl yapılır: Bir hizmeti kaydedin
 Yönetilen paket çerçevesini (MPF), yönetilen hizmetler kaydını denetlemek için öznitelikleri sağlar. RegPkg yardımcı programı bir hizmetiyle kaydetmek için bu öznitelikler kullanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -41,5 +41,5 @@ Yönetilen paket çerçevesini (MPF), yönetilen hizmetler kaydını denetlemek 
 >  Hizmet ve arabirimi için aynı türe veya GUID kullanabilirsiniz, ancak bir hizmet farklı arabirimleri kullanıma sunabileceğinden iki ayrı öneririz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackage'ları kaydetme](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [VSPackage'ları kaydetme](../extensibility/internals/registering-vspackages.md)   
  [Hizmet Temel Bileşenleri](../extensibility/internals/service-essentials.md)

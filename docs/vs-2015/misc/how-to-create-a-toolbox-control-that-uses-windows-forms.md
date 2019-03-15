@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 1a303e18f573ab806687bf238fa5557ecd6e91fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787494"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868181"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Nasıl yapılır: Windows Forms kullanan bir araç kutusu denetimi oluşturma
 Windows Forms araç kutusu denetimi şablonun yer aldığı [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] otomatik olarak eklenen Windows Forms denetimleri oluşturmanıza olanak tanır **araç kutusu** uzantısı yüklü olduğunda. Bu konuda şablonu oluşturmak için nasıl kullanılacağını gösterir. bir **araç kutusu** diğer kullanıcılara dağıtabilirsiniz denetimi...  
@@ -87,7 +87,7 @@ Windows Forms araç kutusu denetimi şablonun yer aldığı [!INCLUDE[vssdk_dev1
   
 2.  .Vsix dosyasını bir ağa veya bir Web sitesine yükleyin.  
   
-     Dosyayı karşıya yükleme durumunda [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesinin diğer kullanıcıların kullanabileceği **Uzantı Yöneticisi** denetimi bulmak ve yüklemek için Visual Studio'da.  
+     Dosyayı karşıya yükleme durumunda [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesinin diğer kullanıcıların kullanabileceği **Uzantı Yöneticisi** denetimi bulmak ve yüklemek için Visual Studio'da.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [WPF Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)

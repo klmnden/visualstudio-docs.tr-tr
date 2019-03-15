@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47fbe9f6e28b7bafdfd46013c0f68fc7f068f005
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 321dca309476ecba80c0293f100ed64e7bb1cc4e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789437"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868691"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Nasıl yapılır: Bir Visual Studio Uzantısını Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Kullanarak, sisteminizde Visual Studio uzantısı güncelleştirebilirsiniz **Uz
 
 4.  Çözümü kaydetmek ve derleyin.
 
-5.  Yeni .vsix dosyasını (projenin \bin\Debug\ klasöründe) yükleyin [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi.
+5.  Yeni .vsix dosyasını (projenin \bin\Debug\ klasöründe) yükleyin [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi.
 
      Uzantı önceki bir sürümü olan bir kullanıcı açıldığında **Uzantılar ve güncelleştirmeler**, yeni sürümü görünür **güncelleştirmeleri** aracı güncelleştirme otomatik olarak aramak için ayarlanmış olması koşuluyla, liste.
 

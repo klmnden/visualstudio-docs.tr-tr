@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223201"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870366"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Bağımlılık diyagramları ile kod doğrulama
 
@@ -102,14 +102,14 @@ Katmanları Web sitelerine, Office belgeleri, düz metin dosyaları ve birden ç
     > [!NOTE]
     > Varsayılan olarak, **derleme eylemi** bağımlılık diyagramı (.layerdiagram) dosyasındaki özelliği **doğrulama** böylece doğrulama işleminde diyagramın dahildir.
 
-     **Hata listesi** penceresi oluşan hataları bildirir. Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).
+     **Hata listesi** penceresi oluşan hataları bildirir. Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama sorunlarını giderme](#troubleshoot-layer-validation-issues).
 
 2.  Her hatanın kaynağını görüntülemek için hataya çift **hata listesi** penceresi.
 
     > [!NOTE]
     > Visual Studio, hatanın kaynağı yerine bir kod Haritası gösterebilir. Bu kod, bağımlılık diyagram tarafından belirtilmemiş bir derleme üzerinde bağımlılık vardır veya kodu, bağımlılık diyagramı tarafından belirlenen bağımlılığı eksikse ortaya çıkar. Kod haritası veya bağımlılık var olup olmadığını belirlemek için kodu gözden geçirin. Kod haritaları hakkında daha fazla bilgi için bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Hataları yönetmek için bkz: [doğrulama hatalarını Yönet](#ManageErrors).
+3.  Hataları yönetmek için bkz: [katman doğrulama hatalarını gidermek](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Komut isteminde kodu doğrulama
 
@@ -147,7 +147,7 @@ Katmanları Web sitelerine, Office belgeleri, düz metin dosyaları ve birden ç
 
      Oluşan hatalar listelenecektir. MSBuild hakkında daha fazla bilgi için bkz. [MSBuild](../msbuild/msbuild.md) ve [MSBuild görevi](../msbuild/msbuild-task.md).
 
-   Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).
+   Doğrulama hataları hakkında daha fazla bilgi için bkz. [katman doğrulama sorunlarını giderme](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Doğrulama hatalarını yönetme
 
@@ -195,11 +195,11 @@ Modelleme projesi (.modelproj) dosyası açmak için metin düzenleyicisi kullan
 
     Bu bağımlılık diyagramı doğrulama işlemindeki içerir.
 
-Hata Listesi penceresindeki hataları yönetmek için bkz: [doğrulama hatalarını Yönet](#ManageErrors).
+Hata Listesi penceresindeki hataları yönetmek için bkz: [katman doğrulama hatalarını gidermek](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Katman doğrulama sorunlarını giderme
 
-Aşağıdaki tabloda katman doğrulama sorunları ve bunların çözümü açıklanmaktadır. Bu sorunlar, kod ve tasarım arasındaki çakışmalarla sonuçlanan hatalardan ayrılır. Bu hatalar hakkında daha fazla bilgi için bkz. [katman doğrulama hatalarını anlama ve çözme](#UnderstandingValidationErrors).
+Aşağıdaki tabloda katman doğrulama sorunları ve bunların çözümü açıklanmaktadır. Bu sorunlar, kod ve tasarım arasındaki çakışmalarla sonuçlanan hatalardan ayrılır. Bu hatalar hakkında daha fazla bilgi için bkz. [katman doğrulama sorunlarını giderme](#troubleshoot-layer-validation-issues).
 
 |**Sorunu**|**Olası nedeni**|**Çözümleme**|
 |-|-|-|

@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b981824da3f5a5065cf129657158020893394749
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631646"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872959"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullanıcının bilgisayarında Windows Yükleyici bileşenlerini (bazen WICs veya yalnızca bileşenleri olarak adlandırılır) olarak adlandırılan birimler içinde bu görevleri gerçekleştirmeye kaldırır. Bir GUID, yükleme ve başvuru sayımı Windows Installer kullanarak ayarları için temel birimdir her WIC tanımlar.
 
- Windows Installer'ın kapsamlı belgeler için Platform SDK'sı, konusuna [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).
+ Windows Installer'ın kapsamlı belgeler için Platform SDK'sı, konusuna [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).
 
 ## <a name="authoring-a-vspackage"></a>VSPackage geliştirme
  Windows Installer, Windows Installer yükleme, kaldırma veya bir ürünü onarın ve Kurulum kullanıcı arabirimi (UI) çalıştırmak için gereken bilgileri içeren yükleme paketleri kullanır. Her yükleme paketini yükleme veritabanı, Özet bilgi akışı ve veri akışları için yükleme çeşitli kısımlarını içeren bir .msi dosyasını içerir. Yükleyici kullanmak için bir yükleme yazmanız gerekir. Yükleyici bileşenlerini kavramı çevresinde yüklemeleri düzenler ve yükleme hakkında bilgi ilişkisel bir veritabanında depolar için geniş bir yükleme paketi yazma işlemi aşağıdaki adımları kapsar:

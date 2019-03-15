@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951351"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869369"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Hata ayıklama sembolleri için Python yorumlayıcılarını yükleme
 
@@ -54,7 +54,7 @@ Sembolleri ayrı olarak yüklediyseniz, Visual Studio bunları haberdar olmak i�
 
     ![Karışık mod hata ayıklayıcı seçenekleri simgeleri](media/mixed-mode-debugging-symbols.png)
 
-1. Hata ayıklama oturumu sırasında Visual Studio ayrıca kaynak dosya konumu için Python yorumlayıcısı isteyebilir. Kaynak dosyaları indirdikten, (gelen [python.org/downloads](https://www.python.org/downloads), örneğin), sonra da, doğal olarak bunları da işaret edebilir.
+1. Hata ayıklama oturumu sırasında Visual Studio ayrıca kaynak dosya konumu için Python yorumlayıcısı isteyebilir. Kaynak dosyaları indirdikten, (gelen [python.org/downloads/](https://www.python.org/downloads/), örneğin), sonra da, doğal olarak bunları da işaret edebilir.
 
 > [!Note]
 > İletişim kutusunda gösterilen simge önbelleğe alma özellikleri, çevrimiçi bir kaynaktan gelen simgeleri yerel önbellek oluşturmak için kullanılır. Simge zaten yerel olarak mevcut olduğundan bu özellikleri ile Python yorumlayıcısı simgeleri gerekli değildir. Her iki durumda da başvurmak [belirtin, sembol ve kaynak dosyaları Visual Studio hata ayıklayıcısı](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Ayrıntılar için.

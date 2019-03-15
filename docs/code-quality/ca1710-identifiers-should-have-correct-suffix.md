@@ -1,6 +1,6 @@
 ---
 title: 'CA1710: Tanımlayıcılar doğru soneke sahip olmalıdır'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944461"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868081"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Tanımlayıcılar doğru soneke sahip olmalıdır
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944461"
 ## <a name="cause"></a>Sebep
 
 Tanımlayıcının doğru son ekine sahip değil.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen tanımlayıcıları görünüyor, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -90,6 +92,16 @@ Böylece, doğru terimiyle olark türü yeniden adlandırın.
 Tür, genişletilmiş veya çeşitli öğeleri bir rastgele kümesini tutacak genelleştirilmiş bir veri yapısı ise 'Collection' soneki kullanmak için bir uyarıyı bastırmak güvenlidir. Bu durumda, uygulama, performans veya veri yapısının diğer özellikleri hakkında anlamlı bilgiler sağlayan bir ad (örneğin, BinaryTree) mantıklı olabilir. Sonek türü kullanarak numaralandırılabilecek belirttiğinden türü (örneğin, StringCollection) belirli bir türün koleksiyonu temsil ettiği durumlarda, bu kuraldan bir uyarıyı bastırmayın bir `foreach` deyimi.
 
 Diğer sonekleri için bu kuraldan bir uyarıyı bastırmayın. Sonek hedeflenen kullanım tür adından yetkisiz değiştirmeye karşı korumalı olmasını sağlar.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>İlgili kuralları
 

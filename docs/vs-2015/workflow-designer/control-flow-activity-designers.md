@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3db0a9d4457fce6f170b2a58733ca0bf0da678cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796636"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871810"
 ---
 # <a name="control-flow-activity-designers"></a>Akış Etkinliği Tasarımcılarını denetleme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] iş akışlarınızı oluştururken kullanabileceğiniz sistem tarafından sağlanan etkinlikler içerir. Bu bölümde, bir iş akışındaki akışını denetlemek için kullanılan sistem tarafından sağlanan etkinlikler içerir. Aşağıdaki konular bu etkinlikleri açıklar ve bunların nasıl kullanılacağı hakkında rehberlik sağlar.  
@@ -23,7 +23,7 @@ ms.locfileid: "54796636"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Belirtilen bir koşulu olana kadar kendi gövdesinde en az bir kez yer alan bir etkinliği yürütür **true**.  
   
- [ForEach\<T >](http://msdn.microsoft.com/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T >](foreach-t-activity-designer.md)  
  Belirtilen koleksiyondaki her öğe için gövdesinde yer alan bir etkinliği yürütür.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -44,7 +44,7 @@ ms.locfileid: "54796636"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Sırayla yürütülen bir alt etkinlik sıralı bir koleksiyonunu içerir.  
   
- [Anahtar\<T >](http://msdn.microsoft.com/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Anahtar\<T >](switch-t-activity-designer.md)  
  Belirtilen ifadeyi hesaplar ve bir koleksiyon değerlendirmesinden gelen alınan değer ilişkili anahtarı eşleşen etkinlik gelen bir etkinliği yürütür.  
   
  [While](../workflow-designer/while-activity-designer.md)  

@@ -15,14 +15,14 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7230de07c5aa1472332dbbddc094629fd1cdf257
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83fbe8b372d021e0cec4faccfd0b22fcaa8af30d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775546"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867441"
 ---
-# <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Kod Çözümleme Araçları ile Uygulama Kalitesini Çözümleme
+# <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Kod Analiz Araçları ile Uygulama Kalitesini Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu Bölümde  
@@ -44,8 +44,8 @@ Bu Bölümde
 ### <a name="code-analysis-for-drivers"></a>Sürücüleri için Kod Analizi  
  Kod çözümleme araçları, sürücü kaynak kodu sistematik olarak analiz ederek kararlılığını ve sürücünüzü güvenilirliğini artırmaya yardımcı olabilir.  
   
- [Kod çözümleme araçları ile sürücü kalitesini çözümleme](http://go.microsoft.com/fwlink/?LinkId=227618)  
- Sürücüleri için Kod Analizi algılayan bir derleme zamanı statik doğrulama kodlama hataları C ve C++ programlarında temel araçtır ve (birincil) çekirdek modu sürücüsü kod hataları algılamak için tasarlanan özel bir modülü içerir... Statik Sürücü Doğrulayıcı (SDV) sistematik olarak Windows çekirdek modu sürücüleri kaynak kodunu analiz eden bir statik doğrulama aracıdır. SDV sürücü Windows işletim sistemi çekirdeği ile doğru şekilde etkileşim olup olmadığını belirler.  
+ [Kod çözümleme araçları ile sürücü kalitesini çözümleme](/windows-hardware/drivers/devtest/tools-for-verifying-drivers)  
+ Sürücüleri için Kod Analizi algılayan bir derleme zamanı statik doğrulama kodlama hataları C ve C++ programlarında temel araçtır ve (birincil) çekirdek modu sürücüsü kod hataları algılamak için tasarlanan özel bir modülü içerir. Statik Sürücü Doğrulayıcı (SDV) sistematik olarak Windows çekirdek modu sürücüleri kaynak kodunu analiz eden bir statik doğrulama aracıdır. SDV sürücü Windows işletim sistemi çekirdeği ile doğru şekilde etkileşim olup olmadığını belirler.  
   
  [Sürücüleri uyarılar için Kod Analizi](http://go.microsoft.com/fwlink/?LinkId=225920)  
  Sürücü kodda olası bir hata algıladığında sürücüleri için kod analizi raporları uyarılar açıklar.  

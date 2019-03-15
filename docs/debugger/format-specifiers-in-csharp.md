@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698995"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870526"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Biçim belirleyiciler içinde C# Visual Studio hata ayıklayıcısı
 İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** biçim belirticilerini kullanarak pencere. İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresi, [izleme noktaları](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç görünür bir [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) belirtilen biçim görüntülenir.
@@ -51,6 +51,14 @@ Aşağıdaki kod örneği kullanacağız:
 Ekleme `my_var1` değişkenini **Watch** hata ayıklarken, pencere **hata ayıklama** > **Windows** > **izleyin**  >  **1 izleyin**. Ardından, değişkeni sağ tıklatın ve seçin **onaltılık gösterim**. Artık **Watch** penceresi 0x0065 değeri gösterir. Bu değer bir onaltılık tamsayı yerine bir ondalık tamsayı olarak görmek için ondalık biçim belirteci ekleme **, d** içinde **adı** değişken adından sonra sütun. **Değer** sütun gösterdiğini **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+Görüntüleyebilir ve değeri bir virgül (,) ekleyerek kullanılabilir biçim belirleyicilerinin bir listeden seçim **Watch** penceresi. 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>Biçim belirticileri
 Aşağıdaki tabloda açıklanmıştır C# biçim belirleyiciler Visual Studio hata ayıklayıcı için.

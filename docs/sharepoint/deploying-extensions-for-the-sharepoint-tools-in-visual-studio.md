@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876271"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868065"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio'da SharePoint araçları için uzantıları dağıtma
 
 SharePoint araçları uzantısının dağıtmak için oluşturun bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantı derlemesini ve uzantısıyla dağıtmak istediğiniz diğer tüm dosyaları içeren uzantısı (VSIX) paketini. Bir VSIX paketi açık paketleme kuralları (OPC) standart sıkıştırılmış bir dosyadır. VSIX paketlerini sahip *.vsix* uzantısı.
 
-Bir VSIX paketi oluşturduktan sonra diğer kullanıcıların, uzantıyı yüklemek için .vsix dosyasını çalıştırabilirsiniz. Bir kullanıcı, uzantı yüklendiğinde, tüm dosyaları %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions klasörüne yüklenir. Uzantıyı dağıtmak için VSIX paketi yükleyebilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi veya dağıtabilirsiniz paketi müşterileriniz için başka bir yöntemle paketini bir ağ paylaşımına veya başka bir Web sitesi barındırma gibi bazı.
+Bir VSIX paketi oluşturduktan sonra diğer kullanıcıların, uzantıyı yüklemek için .vsix dosyasını çalıştırabilirsiniz. Bir kullanıcı, uzantı yüklendiğinde, tüm dosyaları %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions klasörüne yüklenir. Uzantıyı dağıtmak için VSIX paketi yükleyebilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi veya dağıtabilirsiniz paketi müşterileriniz için başka bir yöntemle paketini bir ağ paylaşımına veya başka bir Web barındırma gibi bazı Site.
 
-VSIX paketlerini oluşturma ve bunları dağıtma hakkında daha fazla bilgi için [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847), bkz: [sevkiyat Visual Studio uzantıları](../extensibility/shipping-visual-studio-extensions.md).
+VSIX paketlerini oluşturma ve bunları dağıtma hakkında daha fazla bilgi için [Visual Studio Market](https://marketplace.visualstudio.com/), bkz: [sevkiyat Visual Studio uzantıları](../extensibility/shipping-visual-studio-extensions.md).
 
  Bir VSIX paketi kullanarak oluşturabileceğiniz **VSIX projesi** Visual Studio ya da şablon oluşturabilirsiniz bir VSIX paketi el ile.
 

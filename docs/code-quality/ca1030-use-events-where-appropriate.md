@@ -1,6 +1,6 @@
 ---
 title: 'CA1030: Uygun yerlerde olayları kullanın'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32645985237503a526ce7381cbeec4ecc9770b06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1054fa7b884c23edb76248cba17bab41cc64246f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929277"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867438"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Uygun yerlerde olayları kullanın
 
@@ -31,23 +31,36 @@ ms.locfileid: "55929277"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Genel, korumalı veya özel yöntem adı aşağıdakilerden biri ile başlar:
+
+Bir yöntem adı aşağıdakilerden biri ile başlar:
 
 - Eklenti fiyatı
-
 - RemoveOn
-
 - Ateş
-
 - artırma
 
-## <a name="rule-description"></a>Kural açıklaması
- Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olayları gözlemci ya da Yayımla-abone ol tasarım desenini izler; Bunlar, bir nesnede bir durum değişikliği diğer nesnelere iletileceği olduğunda kullanılır. Yanıt olarak açıkça tanımlanmış bir durum değişikliği bir yöntem çağrıldığında, bir olay işleyicisi tarafından yöntemin çağrılması gerekir. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen bir yöntem ele alınmakta, ancak bu [yapılandırılabilir](#configurability).
 
- Olayların bazı genel örnekleri burada bir düğmeye tıklanması gibi bir kullanıcı eylemi yürütmek için kod kesiminin neden olan kullanıcı arabirimi uygulamalarında bulunur. .NET Framework olay modeli için kullanıcı arabirimleri sınırlı değildir; bir veya daha fazla nesneye durum değişikliklerini iletişim kurması gereken herhangi bir yere kullanılmalıdır.
+## <a name="rule-description"></a>Kural açıklaması
+
+Bu kural, normalde olaylar için kullanılan adlara sahip yöntemleri algılar. Olayları gözlemci ya da Yayımla-abone ol tasarım desenini izler; Bunlar, bir nesnede bir durum değişikliği diğer nesnelere iletileceği olduğunda kullanılır. Yanıt olarak açıkça tanımlanmış bir durum değişikliği bir yöntem çağrıldığında, bir olay işleyicisi tarafından yöntemin çağrılması gerekir. Yöntemi direkt olarak çağırmak yerine olayları yükselterek çağıran nesneler.
+
+Olayların bazı genel örnekleri burada bir düğmeye tıklanması gibi bir kullanıcı eylemi yürütmek için kod kesiminin neden olan kullanıcı arabirimi uygulamalarında bulunur. .NET Framework olay modeli için kullanıcı arabirimleri sınırlı değildir; bir veya daha fazla nesneye durum değişikliklerini iletişim kurması gereken herhangi bir yere kullanılmalıdır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bir nesnenin durumu değiştiğinde yöntemi çağrılırsa, .NET Framework olay modelini kullanmak için tasarım değiştirme düşünmelisiniz.
+
+Bir nesnenin durumu değiştiğinde yöntemi çağrılırsa, .NET olay modelini kullanmak için tasarım değiştirme düşünmelisiniz.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Yöntemi .NET Framework olay modeliyle çalışmazsa bu kuraldan bir uyarıyı gizler.
+
+Yöntemi .NET olay modeliyle çalışmazsa bu kuraldan bir uyarıyı gizler.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1030.api_surface = private, internal
+```
+
+Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).

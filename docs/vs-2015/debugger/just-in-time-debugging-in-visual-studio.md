@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 436cb6cd803eb351113ddfc9ca39934e8557c573
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786133"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868193"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio'da Tam Zamanında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-advanced-users"></a>(Gelişmiş kullanıcılar) hata ayıklama veya düzeltmek istiyorsanız
 
-- Olmalıdır [Visual Studio'nun yüklü](https://www.microsoft.com/download/details.aspx?id=48146) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Bkz: [kullanarak JIT](#BKMK_Using_JIT) ayrıntılı yönergeler için. Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
+- Olmalıdır [Visual Studio'nun yüklü](https://visualstudio.microsoft.com/vs/older-downloads/) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Bkz: [kullanarak JIT](#BKMK_Using_JIT) ayrıntılı yönergeler için. Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
 
 ##  <a name="BKMK_Enabling"></a> Etkinleştirme veya devre dışı bırakma, Just-ın-Time hata ayıklama
  Etkinleştirebilir veya tam zamanında Visual Studio'dan hata ayıklama devre dışı **Araçlar / Seçenekler** iletişim kutusu.
@@ -121,7 +121,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
 ## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Just-ın-Time hata ayıklamasını kullanın
  Bu bölüm, yürütülebilir bir özel durum oluşturduğunda ne olacağını gösterir.
 
- Visual Studio bu adımları izlemek için yüklü olması gerekir. Visual Studio yoksa, ücretsiz indirebileceğiniz [Visual Studio 2015 Community Edition](https://www.microsoft.com/download/details.aspx?id=48146).
+ Visual Studio bu adımları izlemek için yüklü olması gerekir. Visual Studio yoksa, ücretsiz indirebileceğiniz [Visual Studio 2015 Community Edition](https://visualstudio.microsoft.com/vs/older-downloads/).
 
  Yüklediğinizde Visual Studio, Just-ın-Time hata ayıklama varsayılan olarak etkindir.
 

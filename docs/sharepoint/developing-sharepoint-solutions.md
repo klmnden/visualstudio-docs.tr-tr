@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618152"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870434"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint çözümleri geliştirme
   Bazı SharePoint proje türü şablonları kullanılabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint siteleri ve site öğeleri oluşturmak için. Kullanılabilir proje türlerinin bir listesi için bkz. [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md). Öğeleri bir açıklamasını ve özelliklerini bir SharePoint projesine aşağıda verilmiştir.
 
- SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) ve [derleme SharePoint eklentileri](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) ve [derleme SharePoint eklentileri](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 ## <a name="elements-of-a-sharepoint-project"></a>Bir SharePoint Proje öğeleri
  Bir SharePoint projesi altındaki düğümler olarak da bilinir *SharePoint öğeleri*. SharePoint öğeleri de denir, bir veya daha fazla alt içerebilir *SharePoint öğe dosyaları*, gibi [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] yapılandırma dosyaları, .aspx formları ve daha fazlası.

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e25fc23752b6983a2e4e1720323fea82ac5fc4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923876"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869076"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio öykünücüsü sistem gereksinimleri
 
@@ -63,7 +63,7 @@ Hyper-V gereksinimleri
 ## <a name="system-requirements"></a>Sistem gereksinimleri
  Bilgisayarınız, aşağıdaki gereksinimleri karşılamalıdır:
 
-- Hyper-V desteği (bkz [Hyper-V gereksinimleri](#HyperV))
+- Hyper-V desteği (bkz [Hyper-V gereksinimleri](#hyper-v-requirements))
 
 - 6 GB veya daha fazla RAM.
 

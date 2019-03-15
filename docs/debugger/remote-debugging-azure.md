@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 91f454bec6854d4450850f970cedb197ea005f25
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526470"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873379"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Uzaktan hata ayıklama Visual Studio 2017'de azure'da IIS üzerinde ASP.NET Core
 
@@ -229,7 +229,7 @@ Bu öğreticide, Visual Studio 2017 kullanılmıştır.
 
 Çoğu ayarlar ASP.NET ve uzaktan hata ayıklayıcı yüklemesi tarafından gerekli bağlantı noktalarının açıldığından. Ancak, bir güvenlik duvarının arkasında barındırılan uygulama ve dağıtım sorunlarını giderirken, doğru bağlantı noktalarının açık olduğundan emin olun gerekebilir.
 
-Bir Azure sanal makinesinde aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+Bir Azure sanal makinesinde aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/virtual-machines-windows-hero-role).
 
 Gerekli bağlantı noktaları:
 

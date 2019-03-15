@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2b3e8aa60304589d4ed04826441a7cc09c7f290
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794750"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869398"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
 |||  
 |-|-|  
-|**Destekleniyor**|-.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br />     IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).|  
+|**Destekleniyor**|-.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br />     ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br />     IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Sınırlı destek**|- F# Deneysel olarak uygulamalar<br />-Yalnızca olaylar için desteklenen Windows Store uygulamaları|  
 |**Desteklenmiyor**|-C++, diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../includes/winmobile-md.md)] uygulamaları|  
   
@@ -95,7 +95,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
 - Dağıtılan bir uygulamada hata veya kilitlenme oluşur.  
   
-   Uygulamayı yayımlamadan önce Microsoft Azure tabanlı uygulamalar için IntelliTrace veri toplamayı yapılandırabilirsiniz. Uygulamanız çalışırken, IntelliTrace veriyi bir .iTrace dosyasına kaydeder. Bkz: [IntelliTrace ve Visual Studio ile yayımlanan bulut hizmeti hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).  
+   Uygulamayı yayımlamadan önce Microsoft Azure tabanlı uygulamalar için IntelliTrace veri toplamayı yapılandırabilirsiniz. Uygulamanız çalışırken, IntelliTrace veriyi bir .iTrace dosyasına kaydeder. Bkz: [IntelliTrace ve Visual Studio ile yayımlanan bulut hizmeti hata ayıklama](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).  
   
    IIS 7.0, 7.5 ve 8.0'da barındırılan ASP.NET web uygulamaları ve SharePoint 2010 ya da SharePoint 2013 uygulamalarında, IntelliTrace verisini bir .iTrace dosyasına kaydetmek için Microsoft İzleme Aracısı'nı tek başına ya da System Center 2012 ile birlikte kullanın.  
   

@@ -1,6 +1,6 @@
 ---
 title: 'CA1052: Static tutucu türler sealed olmalıdır'
-ms.date: 11/09/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd459f2a9f7300328aadd3509530f4802e71cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922459"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870392"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Static tutucu türler sealed olmalıdır
 
@@ -36,7 +36,9 @@ ms.locfileid: "55922459"
 
 ## <a name="cause"></a>Sebep
 
-Bir ortak veya korumalı, soyut olmayan tür yalnızca statik üyeleri içerir ve ile bildirilmedi [korumalı](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) değiştiricisi.
+Bir soyut olmayan tür yalnızca statik üyeleri içerir ve ile bildirilmedi [korumalı](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) değiştiricisi.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -50,9 +52,19 @@ Bu kural ihlalini düzeltmek için türü olarak işaretlemek `sealed` veya `Not
 
 Türü yalnızca devralınacak şekilde tasarlanmıştır, bu kuraldan bir uyarıyı gizler. Olmaması `sealed` veya `NotInheritable` değiştiricisi önerir türü temel tür olarak kullanışlıdır.
 
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1052.api_surface = private, internal
+```
+
+Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+
 ## <a name="example-of-a-violation"></a>Bir ihlali örneği
 
-Aşağıdaki örnek kuralını ihlal eden bir tür gösterir.
+Aşağıdaki örnek, kuralını ihlal eden bir tür gösterir:
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -60,10 +72,10 @@ Aşağıdaki örnek kuralını ihlal eden bir tür gösterir.
 
 ## <a name="fix-with-the-static-modifier"></a>Statik değiştirici ile düzeltin
 
-Aşağıdaki örnek, türü ile işaretleyerek bu kural ihlalini düzeltmek gösterilmektedir `static` değiştiricisi C#.
+Aşağıdaki örnek, türü ile işaretleyerek bu kural ihlalini düzeltmek gösterilmektedir `static` değiştiricisi C#:
 
 [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>İlgili kuralları
 
-[CA1053: Statik tutucu türlerinde oluşturucular bulunmamalıdır](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+- [CA1053: Statik tutucu türlerinde oluşturucular bulunmamalıdır](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

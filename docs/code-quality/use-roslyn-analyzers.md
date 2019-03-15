@@ -1,5 +1,5 @@
 ---
-title: Roslyn çözümleyicilerini yapılandırma ve kullanma
+title: Çözümleyici kural önem derecesi ve gizleme
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924610"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873508"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Yapılandırma ve Roslyn çözümleyicisi kuralları kullanma
+# <a name="use-roslyn-analyzers"></a>Roslyn çözümleyicilerini kullanın
 
 .NET derleyici Platformu ("Roslyn") çözümleyicisi kuralları veya *tanılama*, siz yazarken, C# veya Visual Basic kodunu çözümlemek. Her tanı projeniz için geçersiz kılınabilir bir varsayılan önem derecesi ve gizleme durumu vardır. Bu makale, kural kümeleri kullanma ve gizleme ihlalleri, ayar kural önem derecesi kapsar.
 
@@ -91,7 +91,7 @@ Bir kuraldan önemi değiştirebilirsiniz **Çözüm Gezgini**, veya içinde  *\
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Kural kümesi için dosya kuralında önem ayarlama
 
-1. Açık kural dosyasını çift tıklayarak kümesi **Çözüm Gezgini**u seçerek **açık etkin kural kümesi** sağ tıklama menüsünde **Çözümleyicileri** düğümünü veya seçerek **Açık** üzerinde **Kod Analizi** projenin özellik sayfası.
+1. Açık [kural kümesi](analyzer-rule-sets.md) içinde çift tıklayarak dosyayı **Çözüm Gezgini**u seçerek **açık etkin kural kümesi** sağ tıklama menüsünde **çözümleyiciler** düğümünü veya seçerek **açık** üzerinde **Kod Analizi** projenin özellik sayfası.
 
 1. Kuralı, derlemeyi içeren genişleterek göz atın.
 

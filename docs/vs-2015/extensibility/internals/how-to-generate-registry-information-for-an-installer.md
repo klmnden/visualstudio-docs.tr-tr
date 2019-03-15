@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ceb4cf70ce7a5fb2e4d87698c6739e81778921ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769851"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869937"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Nasıl yapılır: Bir Yükleyicinin Kayıt Defteri Bilgilerini Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -183,5 +183,5 @@ RegPkg.exe yardımcı programı, yönetilen bir VSPackage için bir kayıt bildi
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [VSPackage'ları kaydetme](http://msdn.microsoft.com/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [VSPackage'ları kaydetme](registering-vspackages.md)   
  [VSPackage’lar](../../extensibility/internals/vspackages.md)

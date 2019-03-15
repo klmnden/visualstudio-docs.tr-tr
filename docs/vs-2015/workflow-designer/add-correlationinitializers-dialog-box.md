@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73fd7168124e75276427b711ad2c21f2f84994d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c90a2d0e0297a00454e38f428093a2f2db1e46d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782643"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867112"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>CorrelationInitializer Ekle İletişim Kutusu
 **Bağıntı başlatıcılar Ekle** iletişim kutusu kullanılan [!INCLUDE[wfd1](../includes/wfd1-md.md)] yapılandırmak için **Correlationınitializer** özelliklerini <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, ve <xref:System.ServiceModel.Activities.ReceiveReply> etkinlikler. [!INCLUDE[crabout](../includes/crabout-md.md)] Bu kutuyu kullanan etkinlik tasarımcıları bkz [Gönder](../workflow-designer/send-activity-designer.md), [alma](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), ve [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) konuları.  
@@ -37,5 +37,4 @@ ms.locfileid: "54782643"
  **Alma** etkinlik Tasarımcısı, gelen sürüklenebilir **araç kutusu** ve oturum bırakılan [!INCLUDE[wfd2](../includes/wfd2-md.md)] yüzey yerde etkinlikleri genellikle yerleştirilir. Bu, oluşturur bir <xref:System.ServiceModel.Activities.Receive> etkinliği ile bir varsayılan <xref:System.Activities.Activity.DisplayName%2A> alma. Seçin **alma** etkinlik Tasarımcısı ve üç nokta düğmesini (koleksiyon) metnin yanında tıklatın **Correlationınitializer** özelliği için özellik kılavuzunda **Ekle Bağıntı başlatıcılar** iletişim kutusu görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağıntı iletişim kutusu Ekle](http://msdn.microsoft.com/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [Bağıntıyı Başlat İletişim Kutusu](../workflow-designer/initialize-correlation-dialog-box.md)

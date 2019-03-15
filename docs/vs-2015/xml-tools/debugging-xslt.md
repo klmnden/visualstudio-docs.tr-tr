@@ -9,21 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7775743e69dcd9fa6bca9ce33d6e5c618d1baffd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799352"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873327"
 ---
-# <a name="debugging-xslt"></a>XSLT hata ayıklama
+# <a name="debug-xslt"></a>XSLT hatası ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XSLT hata ayıklamak için Visual Studio Hata Ayıklayıcısı'nı kullanabilirsiniz. XSLT yürütme durumlarını görüntüleme ayarı kesme noktaları, hata ayıklayıcı destekler ve benzeri. XSLT hata ayıklama, Visual Studio Team System ve Professional sürümü kullanılabilir.  
+XSLT hata ayıklamak için Visual Studio Hata Ayıklayıcısı'nı kullanabilirsiniz. XSLT yürütme durumlarını görüntüleme ayarı kesme noktaları, hata ayıklayıcı destekler ve benzeri. XSLT hata ayıklama, Visual Studio Professional Edition'da kullanılabilir.  
   
-## <a name="in-this-section"></a>Bu Bölümde  
- [XSLT Hata Ayıklayıcısındaki Yenilikler](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- XSLT hata ayıklayıcı bu sürümündeki yeni özellikleri açıklar.  
+## <a name="in-this-section"></a>Bu Bölümde
   
  [Nasıl yapılır: XSLT hata ayıklamayı Başlat](../xml-tools/how-to-start-debugging-xslt.md)  
  XSLT hata ayıklayıcıyı başlatmak açıklar.  

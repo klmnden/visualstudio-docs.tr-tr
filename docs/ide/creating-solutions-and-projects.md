@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223253"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867893"
 ---
 # <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
@@ -113,11 +113,17 @@ Boş bir çözüm oluşturduğunuzda, yeni veya var olan proje veya öğe için 
 
 Daha önce bahsedildiği gibi bir proje veya çözüm gerek kalmadan kod dosyaları da açabilirsiniz. Bu şekilde kod geliştirme hakkında bilgi edinmek için [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>Geçici bir proje (C# ve Visual Basic) oluşturma
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>Geçici bir proje oluşturun
+
+(C# ve yalnızca Visual Basic)
 
 Oluşturursanız, bir. AĞ tabanlı proje bir disk konumu belirtmeden geçici bir proje olan. Geçici projeler .NET projeleriyle denemeler olanak sağlar. Geçici bir projeyle çalışırken herhangi bir zamanda kaydetmek veya atmak seçebilirsiniz.
 
 Geçici bir proje oluşturmak için ilk Git **Araçları** > **seçenekleri** > **projeler ve çözümler**  >   **Genel**, kaldırın **oluşturulduğunda yeni projeleri Kaydet** onay kutusu. Açılacağını **yeni proje** iletişim kutusunda her zaman olduğu gibi.
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>Çözüm, proje veya öğe silme
 

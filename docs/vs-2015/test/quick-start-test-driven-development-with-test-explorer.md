@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797971"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868930"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 >  Görüntülenen sonuçlar en son çalıştırılanlar içindir. Renkli sonuç çubuğu, yalnızca çalışan testlerin sonuçlarını gösterir. Örneğin, birkaç testi çalıştırırsanız ve bunlardan bazıları başarısız ve sonra da sadece başarılı olan testleri çalıştırın, ardından sonuçlar çubuğunun tamamı yeşil olur.  
   
 > [!NOTE]
->  Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [Test Gezgini ile farklı Test çerçeveleri kullanma](#frameworks).  
+>  Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ##  <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testlerini kullanma  
- Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [farklı Test çerçeveleri kullanma](#frameworks).  
+ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [ABD farklı test çerçevesi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Testi ve yöntemi oluşturma  
   

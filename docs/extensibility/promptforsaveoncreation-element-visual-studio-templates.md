@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696720"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867288"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation öğesi (Visual Studio şablonları)
-İçin bir proje kaydetme konumunun kullanıcıya sorulup sorulmayacağını belirtir **yeni proje** bir proje oluştururken iletişim kutusu. Bu öğe ayarlanırsa `true`, kullanıcı bir kayıt istenir konumunu if `false`, bunlar istenmez. (Diğer bir deyişle, geçici bir Proje oluşturulur.)
 
- \<VSTemplate > \<TemplateData > \<PromptForSaveOnCreation >
+İçin bir proje kaydetme konumunun kullanıcıya sorulup sorulmayacağını belirtir **yeni proje** bir proje oluştururken iletişim kutusu. Bu öğe ayarlanırsa `true`, kullanıcı bir kayıt istenir konumu. Varsa `false`, bunlar istenmez (diğer bir deyişle, geçici bir Proje oluşturulur).
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,7 +65,7 @@ ms.locfileid: "56696720"
 ## <a name="example"></a>Örnek
  Aşağıdaki örnekte ayarlar `PromptForSaveOnCreation` eşit `false`, projenin geçici bir proje olarak oluşturulmasına izin vermek için belirtir.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ ms.locfileid: "56696720"
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 - [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
 - [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)

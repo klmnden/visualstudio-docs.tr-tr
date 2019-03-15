@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ddc63faae9a23485badb57f0e50ae8d46dd94b91
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799183"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873700"
 ---
 # <a name="install-visual-studio-2015"></a>Visual Studio 2015'i yükleyin
 
@@ -143,7 +143,7 @@ Biz ayrıntılara inmek önce en sık istenen bizim bağlantıların bir listesi
    Yükleme veya çevrimdışı Yardım dağıtma hakkında daha fazla bilgi için bkz. [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).
 
 ##  <a name="serviceReleases"></a> Hizmet sürümlerini ve ürün güncelleştirmelerini denetleme
- Tüm uzantıları uyumlu olduğu için önceki sürümlerinden yükselttiğinizde, Visual Studio uzantıları otomatik olarak yükseltmez. Uzantılar'dan yeniden yüklemeniz gerekir [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkId=178891) veya yazılım yayımcısı.
+ Tüm uzantıları uyumlu olduğu için önceki sürümlerinden yükselttiğinizde, Visual Studio uzantıları otomatik olarak yükseltmez. Uzantılar'dan yeniden yüklemeniz gerekir [Visual Studio Market](https://marketplace.visualstudio.com/) veya yazılım yayımcısı.
 
 #### <a name="to-automatically-check-for-service-releases"></a>Hizmet sürümlerini otomatik olarak denetlemek için
 

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac9b92921ba180c3f986a28d9fc47ee9acfdeb78
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752903"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868068"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Etki Alanına Özgü Dillerle Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Visual Studio için modelleme SDK'sı|[MSDK indirin](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Visual Studio için modelleme SDK'sı|[MSDK indirin](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>Bir DSL çözümü oluşturma  
  Yeni bir etki alanına özgü dil oluşturmak için yeni oluşturduğunuz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] etki alanına özgü dil proje şablonunu kullanarak çözüm.  

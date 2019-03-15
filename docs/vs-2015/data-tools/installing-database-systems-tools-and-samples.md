@@ -17,12 +17,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a68a674eb8bec0558d430c87bf5590781e1e19c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797787"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873642"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Yükleme veritabanı sistemleri, araçları ve örnekleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Visual Studio kendi dahili olarak kullandığı dışındaki herhangi bir verita
  Aşağıdaki liste, bazı kullanılabilecek daha popüler veritabanı sistemleri Visual Studio projelerinde içerir. Listede hepsine yer verilmemiştir. Visual Studio Araçları ile derinlemesine tümleştirme sağlayan ADO.NET veri sağlayıcıları üçüncü taraf satıcılarla listesi için bkz. [ADO.NET veri sağlayıcıları](https://msdn.microsoft.com/library/dd363565.aspx).  
   
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server  
- SQL Server, Microsoft Gemisi veritabanı teklifidir. SQL Server 2016 performansından, Gelişmiş Güvenlik ve zengin, tümleşik raporlama ve analiz sunar. Farklı amaçlarla tasarlanmış çeşitli sürümlerinde sunulur: ile yüksek düzeyde ölçeklenebilir, yüksek performanslı iş analytics, tek bir bilgisayar üzerinde kullanılacak. SQL Server Express'in tam özellikli, bir yeniden dağıtımı ve ekleme için tasarlanmış bir SQL Server sürümüdür.  LocalDB, SQL Server, işlem yapılandırma gerektirmez ve uygulamanızın işlemde çalışan Express, Basitleştirilmiş bir sürümüdür. Ürünlerden biri veya her ikisi indirebileceğiniz [SQL Server Express indirme sayfasına](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).    Bu bölümde yer alan SQL örnekler birçoğu, SQL Server LocalDB kullanın. SQL Server Management Studio (SSMS) Visual Studio SQL Server Nesne Gezgini içinde sağlanan değerinden daha fazla işlevselliği olan bir tek başına veritabanı yönetimi uygulamasıdır. SSMS kullanarak önceki bağlantıdan alabilirsiniz.  
+ SQL Server, Microsoft Gemisi veritabanı teklifidir. SQL Server 2016 performansından, Gelişmiş Güvenlik ve zengin, tümleşik raporlama ve analiz sunar. Farklı amaçlarla tasarlanmış çeşitli sürümlerinde sunulur: ile yüksek düzeyde ölçeklenebilir, yüksek performanslı iş analytics, tek bir bilgisayar üzerinde kullanılacak. SQL Server Express'in tam özellikli, bir yeniden dağıtımı ve ekleme için tasarlanmış bir SQL Server sürümüdür.  LocalDB, SQL Server, işlem yapılandırma gerektirmez ve uygulamanızın işlemde çalışan Express, Basitleştirilmiş bir sürümüdür. Ürünlerden biri veya her ikisi indirebileceğiniz [SQL Server Express indirme sayfasına](https://www.microsoft.com/sql-server/sql-server-editions-express). Bu bölümde yer alan SQL örnekler birçoğu, SQL Server LocalDB kullanın. SQL Server Management Studio (SSMS) Visual Studio SQL Server Nesne Gezgini içinde sağlanan değerinden daha fazla işlevselliği olan bir tek başına veritabanı yönetimi uygulamasıdır. SSMS kullanarak önceki bağlantıdan alabilirsiniz.  
   
 ### <a name="oracle"></a>Oracle  
  Oracle veritabanından ücretli veya ücretsiz bir sürümü indirebilirsiniz [Oracle teknolojisi ağ](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) sayfası. Entity Framework ve TableAdapter bağdaştırıcıları için tasarım zamanı desteği için ihtiyacınız olacak [Oracle Developer Tools for Visual Studio'nun](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Oracle anlık istemci gibi diğer resmi Oracle ürünleri için NuGet Paket Yöneticisi aracılığıyla kullanılabilir.  Oracle örnek şemaları talimatları kullanarak indirebilirsiniz [Oracle çevrimiçi belgeleri](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).  

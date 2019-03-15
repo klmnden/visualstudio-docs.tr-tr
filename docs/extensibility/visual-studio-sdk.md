@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be0d7246af3b43d76ee4531a426dab0af63e2aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711728"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867358"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özelliklerini Visual Studio'ya tümleştirmenize yardımcı olur. Diğer kullanıcılara yanı sıra Visual Studio Marketi uzantılarınızı dağıtabilirsiniz. Visual Studio genişletebileceğiniz yollardan bazılarını aşağıda verilmiştir:

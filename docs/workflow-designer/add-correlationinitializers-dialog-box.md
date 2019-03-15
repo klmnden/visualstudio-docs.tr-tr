@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82bc9908535fe555030f3e9e4d6699dc6d0b6509
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 21c030295d325ea1ee4d546356f8cda5ef6ffd3f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938793"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869908"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>CorrelationInitializer Ekle İletişim Kutusu
 
@@ -44,5 +44,4 @@ Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **bağınt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağıntı iletişim kutusu Ekle](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [Bağıntıyı Başlat İletişim Kutusu](../workflow-designer/initialize-correlation-dialog-box.md)

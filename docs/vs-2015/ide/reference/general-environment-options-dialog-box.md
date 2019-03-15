@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752296"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868136"
 ---
 # <a name="general-environment-options-dialog-box"></a>Genel, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Renk temaları, durum çubuğu ayarları ve tümleşik geliştirme ortamı (IDE)
  **Renk teması**  
  Seçin **mavi**, **ışık** veya **koyu** IDE renk teması.  
   
- Ek önceden tanımlı Temalar yükleyebilir ve özel temalar, indirme ve yükleme oluşturma **Visual Studio 2015 Color Theme Editor** gelen [Visual Studio Galerisi](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Bu aracı yükledikten sonra ek renk temaları renk teması liste kutusunda görünür.  
+ Ek önceden tanımlı Temalar yükleyebilir ve özel temalar, indirme ve yükleme oluşturma **Visual Studio 2015 Color Theme Editor** gelen [Visual Studio Market](https://marketplace.visualstudio.com). Bu aracı yükledikten sonra ek renk temaları renk teması liste kutusunda görünür.  
   
  Menü çubuğunda başlık büyük/küçük harf uygulayın  
  Menüler bulunduğunuz **başlık büyük/küçük harf** Visual Studio 2015'te varsayılan olarak. İşaretini kaldırın ayarlamak için bu seçeneği **tümü büyük harf**.  

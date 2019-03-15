@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 946dcfecb43aa5a0390f752b5e40cb5869bb1b68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635208"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871610"
 ---
 # <a name="author-a-windows-installer-package"></a>Bir Windows Installer paketi yazma
 Windows Installer model veri sürücülerinde. Dosyaları kopyalayın ve kayıt defteri girdilerini Yaz için bir yordam betik yazmak yerine, örneğin, dosya ve kayıt defteri verileri içeren veritabanı tabloları içindeki satırları ve sütunları yazar.
@@ -47,7 +47,7 @@ Daha fazla bilgi için [Windows Installer](/windows/desktop/Msi/windows-installe
 
    Windows Installer XML (WiX) araç takımı XML kaynak dosyalarından Windows Installer paketleri oluşturur. WiX araç takımı, Microsoft açık kaynak projesidir. Yürütülebilir dosyalar ve kaynak kodunu indirebilirsiniz [Wix toolset](http://sourceforge.net/projects/wix).
 
-   Tümleştirin ticari ürünleri için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanarak [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], bkz: [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).
+   Tümleştirin ticari ürünleri için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanarak [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], bkz: [Visual Studio Market](https://marketplace.visualstudio.com/).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Windows Installer ile VSPackage yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

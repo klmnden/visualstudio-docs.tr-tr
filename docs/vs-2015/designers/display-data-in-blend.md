@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ea768a1f93b6d2b806adf85496eb1080cc3e2b1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 168e136f3a50c5055a9b9fb6d05925dac3586a23
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834397"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869063"
 ---
 # <a name="display-data-in-blend"></a>Blend'de verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,8 +56,6 @@ Sayfa düzenini özelleştirme olarak, örnek veri Tasarımcısı'nda görüntü
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bazı veri bağlaması Blend ile karıştırma](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
 ##  <a name="LiveWPF"></a> WPF uygulamasında canlı verileri göster  
- **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bir nesne veri kaynağı oluştur](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
-  
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bir XML veri kaynağı oluşturma](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ##  <a name="LiveStore"></a> Bir Store veya telefon uygulaması canlı verileri göster  

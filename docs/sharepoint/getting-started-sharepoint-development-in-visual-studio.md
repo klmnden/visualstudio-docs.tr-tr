@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873216"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869024"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Kullanmaya başlama (SharePoint geliştirme için Visual Studio'da) alma
   Bu bölüm ile çalışmaya başlamanıza yardımcı olur. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] yararlanan SharePoint çözümleri geliştirmek üzere [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
 
- SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) ve [derleme SharePoint eklentileri](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) ve [derleme SharePoint eklentileri](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
  SharePoint Web tabanlı işbirliği platformunu sunar. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Çoğu SharePoint siteleri ve liste tanımları, iş akışları, iş verileri bağlantısı modelleri ve site tanımları içeren içeriği oluşturmaya yönelik proje şablonları sağlar. Ayrıca, araçları ve SharePoint projeleri için uzantıları oluşturabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 

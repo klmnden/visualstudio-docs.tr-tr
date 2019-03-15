@@ -1,6 +1,6 @@
 ---
 title: "CA1063: IDisposable'ı doğru uygulayın"
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945761"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868320"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 
@@ -52,7 +52,9 @@ ms.locfileid: "55945761"
 
 Bu düzenleri herhangi birinin ihlali CA1063 uyarı tetikler.
 
-Bildirir ve uygulayan her tür <xref:System.IDisposable> arabirimi kendi korumalı sanal void Dispose(bool) yönteminin sağlamalıdır. Dipose(true) Dispose() çağırmalıdır ve sonlandırıcı Dispose(false) yöntemini çağırması gerekir. Bildirir ve uygulayan bir tür oluşturursanız <xref:System.IDisposable> arabirimi Dispose(bool) tanımlamanız ve bunu çağırmanız gerekir. Daha fazla bilgi için [(.NET Kılavuzu) yönetilmeyen kaynakları Temizleme](/dotnet/standard/garbage-collection/unmanaged) ve [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern).
+Bildirir ve uygulayan her tür <xref:System.IDisposable> arabirimi sağlamalıdır kendi `protected virtual void Dispose(bool)` yöntemi. `Dispose()` çağırmalıdır `Dipose(true)`, ve sonlandırıcı çağırmalıdır `Dispose(false)`. Bildirir ve uygulayan bir tür oluşturursanız <xref:System.IDisposable> arabirimi tanımlamalıdır `Dispose(bool)` ve adlandırın. Daha fazla bilgi için [(.NET Kılavuzu) yönetilmeyen kaynakları Temizleme](/dotnet/standard/garbage-collection/unmanaged) ve [Dispose deseni](/dotnet/standard/design-guidelines/dispose-pattern).
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -83,6 +85,16 @@ Kesip kodunuzu inceleyebilir ve aşağıdaki çözümlerden birini, bu ihlali d�
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
 Bu kuraldan uyarıyı bastırmayın.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Sözde kod örneği
 

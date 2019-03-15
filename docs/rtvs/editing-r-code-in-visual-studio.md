@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921243"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868026"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Visual Studio'da R kodunu Düzenle
 
@@ -97,7 +97,7 @@ Biçimlendirme seçenekleri (biçimlendirmeyi devre dışı bırakma dahil) arac
 
 ## <a name="inserting-roxygen-comments"></a>Roxygen açıklamaları ekleme
 
-RTVS oluşturmak için bir kısayol sağlar [Roxygen](http://roxygen.org/) bir işlevin parametre adları kullanarak yorumlar. Yazmanız yeterlidir `###` işlev tanımı üzerinde boş bir satıra:
+RTVS oluşturmak için bir kısayol sağlar [Roxygen](https://cran.r-project.org/web/packages/roxygen2/index.html) bir işlevin parametre adları kullanarak yorumlar. Yazmanız yeterlidir `###` işlev tanımı üzerinde boş bir satıra:
 
 ![Animasyon Roxygen açıklama ekleme](media/editing-roxygen-comments.gif)
 

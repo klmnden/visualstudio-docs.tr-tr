@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 90e98f22cabcc15287a5bfffc07ff1a3538835b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bd574fe6a3a75a46d827f459bbbdf0f3c4f807e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805543"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868165"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Nasıl yapılır: Visual Studio'dan Azure Bulut Hizmetine Bir Web Uygulaması Geçirme ve Yayımlama
 
@@ -32,7 +32,7 @@ Barındırma hizmetlerinin avantajlarından ve Azure ölçekleme yeteneğini yar
 1. Visual Studio ayrıca ayarlar **Yereli Kopyala** özelliğini MVC 2, MVC 3, MVC 4 ve Silverlight iş kolu uygulamaları için gerekli olan herhangi bir derleme için true. Bu özellik bu derlemeler dağıtım için kullanılan hizmet paketi ekler.
 
    > [!Important]
-   > Diğer derlemeleri veya bu web uygulaması için gerekli olan dosyalar varsa, bu dosyalar için özellikleri el ile ayarlamanız gerekir. Bu özellikleri ayarlama hakkında daha fazla bilgi için bkz: [hizmet paketi dosyaları şunlardır](#include-files-in-the-service-package).
+   > Diğer derlemeleri veya bu web uygulaması için gerekli olan dosyalar varsa, bu dosyalar için özellikleri el ile ayarlamanız gerekir. Bu özellikleri ayarlama hakkında daha fazla bilgi için bkz: [hizmet paketi dosyaları şunlardır](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package).
 
 ### <a name="errors-and-warnings"></a>Hatalar ve uyarılar
 

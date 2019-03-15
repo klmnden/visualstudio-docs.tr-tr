@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767961"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873864"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
 
  Kodlanmış UI testi oluşturmak kolaydır. CUIT Test Oluşturucusu'nu arka planda çalışırken, yalnızca testin el ile gerçekleştirin. Ayrıca, hangi belirli alanlarla değerleri görünmelidir belirtebilirsiniz. CUIT Test Oluşturucusu'nu eylemlerinizi kaydeder ve bunları kod oluşturur. Test oluşturulduktan sonra bir dizi eylem değiştirmenize olanak tanıyan özelleştirilmiş bir düzenleyici düzenleyebilirsiniz.
 
- Alternatif olarak, Microsoft Test Yöneticisi'nde kaydedildiği bir test çalışması'iniz varsa, kod üretebilirsiniz ekleyebilirsiniz. Daha fazla bilgi için [kayıt ve yürütme geri el ile testleri](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665).
+ Alternatif olarak, Microsoft Test Yöneticisi'nde kaydedildiği bir test çalışması'iniz varsa, kod üretebilirsiniz ekleyebilirsiniz. Daha fazla bilgi için [kayıt ve yürütme geri el ile testleri](/azure/devops/test/mtm/record-play-back-manual-tests).
 
  Özelleştirilmiş CUIT Test Oluşturucusu'nu ve düzenleyici, oluşturmak ve test yerine kodlama becerilerinizi ana yoğunlaşmıştır olsa bile, kodlanmış UI testleri düzenlemek kolaylaştırır. Ancak, böylece kopyalayıp uyarlamak basit bir geliştirici ve test daha gelişmiş bir biçimde genişletmek istediğiniz kodu yapılandırılmıştır. Örneğin, bir Web sitesinden bir şey satın almak için bir testi kaydedin ve ardından öğe sayısını satın bir döngü eklemek için oluşturulan kodu düzenleyin.
 
@@ -297,7 +297,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **Kod Düzenleyicisi:**
 
-    -   Bölümünde anlatıldığı gibi denetimler için kodu testinizde el ile ekleyin [kodlama UI denetim eylemlerini ve özelliklerini](#VerifyingCodeCUITActionsandProperties) bölümüne bakın.
+    -   Bölümünde anlatıldığı gibi denetimler için kodu testinizde el ile ekleyin [kodlama UI denetim eylemlerini ve özelliklerini](#actions) bölümüne bakın.
 
     -   Kodlanmış UI testi oluşturduktan sonra veri odaklı olarak değiştirebilirsiniz. Daha fazla bilgi için [veri tabanlı kodlanmış bir UI testi oluşturma](../test/creating-a-data-driven-coded-ui-test.md).
 

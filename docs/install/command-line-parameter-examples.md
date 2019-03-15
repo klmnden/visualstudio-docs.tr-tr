@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ec56cd7d94556f1bd3c64e1746e7cd4899c7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8128f5b77b723ee231b2ec7029b84fa1b4a7ee97
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908601"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872105"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri
 
@@ -60,9 +60,16 @@ Komut satırını kullanarak yükleyebileceğiniz bileşenleri ve iş yüklerini
    --includeRecommended --quiet --wait
   ```
 
-  > [!NOTE]
-  > `--wait` Parametresi, bir toplu iş dosyası kullanmak için tasarlanmıştır. Yükleme işlemi tamamlanana kadar bir toplu iş dosyasında İleri de komutu yürütmeye devam etmeyecek. `%ERRORLEVEL%` Açıklandığı gibi ortam değişkeni komut dönüş değeri içerecek [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası.
+## <a name="using---wait"></a>Kullanarak--bekleyin
 
+* Sonraki komut yürütülmeden önce tamamlamak Visual Studio Yükleyicisi için beklenecek toplu dosyalar veya betikler kullanın. Toplu iş dosyaları için bir`%ERRORLEVEL%` açıklandığı gibi ortam değişkeni komut dönüş değeri içerecek [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md) sayfası. Bazı komut yardımcı programları tamamlanmasını bekleyin ve Yükleyicisi'nin dönüş değeri elde etmek için ek parametreler gerektirir. Ek parametreleri 'İşlemini Başlat' PowerShell komutu ile kullanılan bir örnek verilmiştir:
+
+  ```cmd
+  $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+  ```
+  
+* İlk '--bekleyin ' Visual Studio Yükleyicisi ve ikinci tarafından kullanılan '-bekleyin ' 'Start-işlemi tarafından' tamamlanmasını beklemek için kullanılır. '-PassThru' parametresi 'Start-işlem tarafından' için dönüş değeri yükleyicinin çıkış kodu kullanmak için kullanılır.
+  
 ## <a name="using---layout"></a>Kullanarak--düzeni
 
 * Visual Studio çekirdek Düzenleyicisi'ni (en az Visual Studio yapılandırması) indirin. Yalnızca İngilizce dil paketi içerir:

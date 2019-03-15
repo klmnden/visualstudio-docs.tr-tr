@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634831"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869324"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Microsoft Office sistemi projesi için Visual Studio araçlarını açmak veya oluşturmak için VBA erişimi etkinleştirme
 
@@ -40,8 +40,6 @@ Microsoft Office sistemi projesi için Visual Studio araçlarını açmak veya o
  Üzerinde Visual Basic for Applications proje sistemine erişimi devre dışı bırakılması kendi, virüslere karşı koruma sağlamaz, yalnızca virüsler bilgisayarınızı sürekli bir makro bulaşır caspol.exe'nin diğer belgelere yayılmasını durdurmaya yardımcı olduğunu dikkate almak önemlidir virüs. Varsayılan olarak, bilgisayar için korumayı, ek bir katmanı olarak seçeneği devre dışıdır, ancak en iyi güvenlik uygulamalarını takip ediyorsanız, etkinleştirme bilgisayarınızda virüsler için daha fazla etkilenmesini yapmaz.
 
  En iyi korumayı karşı Office makro virüslerinin olduğundan, yalnızca makrolarından güvenecek şekilde yüksek veya çok yüksek güvenlik düzeyinde Office çalıştırmak için bilinen kaynakları doğrulandı ve güvenlik yamaları ve virüs tarayıcıları ile güncel kalın.
-
- Bilgisayarınızda virüsler ve diğer kötü amaçlı kod koruma hakkında daha fazla bilgi için bkz. [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Etkinleştirebilir veya devre dışı bırakma seçeneği **Visual Basic projeye erişimi güven** el ile.
 

@@ -13,19 +13,19 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834883"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868891"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017 Yönetici Kılavuzu](/visualstudio/install/visual-studio-administrator-guide).
 
-Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağıtabilirsiniz [minimum yükleme gereksinimlerini](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Bir ağ paylaşımı ile/layout anahtarını yükleme dosyasını çalıştırarak oluşturabilirsiniz (üzerinde açıklandığı [bir çevrimdışı Visual Studio yüklemesi oluşturma](../install/create-an-offline-installation-of-visual-studio.md) sayfası) ve ardından yerel makinede ağ paylaşımına kopyalama. Bir ISO kullanıyorsanız ISO'yu bağlamak ve paylaşın veya ISO dosyasını bir ağ paylaşımına kopyalayın.  
+Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağıtabilirsiniz [minimum yükleme gereksinimlerini](https://visualstudio.microsoft.com/vs/older-downloads/). Bir ağ paylaşımı ile/layout anahtarını yükleme dosyasını çalıştırarak oluşturabilirsiniz (üzerinde açıklandığı [bir çevrimdışı Visual Studio yüklemesi oluşturma](../install/create-an-offline-installation-of-visual-studio.md) sayfası) ve ardından yerel makinede ağ paylaşımına kopyalama. Bir ISO kullanıyorsanız ISO'yu bağlamak ve paylaşın veya ISO dosyasını bir ağ paylaşımına kopyalayın.  
   
  Bir ağ paylaşımından yüklemeleri "kaynaklarına kaynak konumu hatırlayacağınızdan" unutmayın. Başka bir deyişle, istemci ilk olarak yüklendiği ağ paylaşımına döndürmek bir istemci makinesi onarılması gerekebilir. Böylece, kuruluşunuzda çalışan Visual Studio 2015 istemcileri sahip olmayı beklediğiniz kullanım ömrü hizalar, ağ konumu dikkatle seçin.  
   

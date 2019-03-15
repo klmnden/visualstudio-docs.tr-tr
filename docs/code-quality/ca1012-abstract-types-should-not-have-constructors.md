@@ -1,6 +1,6 @@
 ---
 title: 'CA1012: Soyut türlerin oluşturucuları olmamalıdır'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 182a0fc2b0d8947e6e77d557679d5ad92e5bb443
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5114f6015d055c03d54d49deee1197b7e3d9c9da
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929134"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867683"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: Soyut türlerin oluşturucuları olmamalıdır
 
@@ -33,25 +33,41 @@ ms.locfileid: "55929134"
 |Yeni Değişiklik|Bölünemez|
 
 ## <a name="cause"></a>Sebep
- Genel bir türü soyuttur ve ortak yapıcıya sahip.
+
+Bir türü soyuttur ve bir oluşturucusu vardır.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görülebilen türler görünür, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
- Soyut türler üzerindeki kurucular yalnızca türetilen türler tarafından çağrılabilir. Ortak yapıcılar türün bir örneğini yaptığından ve siz bir soyut türün örneğini yapamayacağınızdan, soyut sınıf hatalı biçimde dizayn edilmiş ortak yapıcıya sahip olur.
+
+Soyut türler üzerindeki kurucular yalnızca türetilen türler tarafından çağrılabilir. Bir türün örneklerinin genel oluşturucular oluşturabilir ve bir soyut tür örneği oluşturulamıyor çünkü ortak yapıcıya sahip, soyut bir tür yanlış şekilde tasarlanmıştır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- Bu kural ihlalini düzeltmek için korumalı Oluşturucu olun veya türü soyut olarak bildirmeyin.
+
+Bu kural ihlalini düzeltmek için korumalı Oluşturucu olun veya türü soyut olarak bildirmeyin.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın. Soyut tür, genel bir oluşturucusu vardır.
+
+Bu kuraldan uyarıyı bastırmayın. Soyut tür, genel bir oluşturucusu vardır.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1012.api_surface = private, internal
+```
+
+Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek bu kuralı ihlal soyut bir tür içeriyor.
 
- [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
- [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
+Aşağıdaki kod parçacığını bu kuralı ihlal soyut bir tür içeriyor.
 
-## <a name="example"></a>Örnek
- Aşağıdaki örnek önceki ihlali oluşturucudan erişilebilirliğini değiştirerek giderir `public` için `protected`.
+[!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
+[!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
- [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
- [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]
+Aşağıdaki kod parçacığı oluşturucudan erişilebilirliğini değiştirerek önceki ihlali düzeltmeleri `public` için `protected`.
+
+[!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
+[!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

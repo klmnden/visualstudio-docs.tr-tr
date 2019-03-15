@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221950"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869102"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET derleyici platformu Çözümleyicileri genel bakış
 
-Visual Studio analiz .NET derleyici platformu Çözümleyicileri yerleşik bir kümesini içerir, C# veya yazarken Visual Basic kodunu yazın. Kod stili, kod kalitesini ve Bakım, kod tasarımı ve diğer sorunları çözümleyiciler arayın. Bir NuGet paketi olarak Visual Studio uzantısı ya da proje başına temelinde ek Çözümleyicileri yükleyebilirsiniz.
+.NET derleyici Platformu ("Roslyn") Çözümleyicileri stili, kalite ve Bakım, tasarım ve diğer sorunlar için kodunuzu analiz edin. Visual Studio analiz Çözümleyicileri yerleşik bir kümesini içerir, C# veya yazarken Visual Basic kodunu yazın. Bu yerleşik Çözümleyicileri tercihlerini yapılandırabileceğiniz [metin düzenleyici seçenekleri](../ide/code-styles-and-quick-actions.md) sayfası veya bir [.editorconfig dosyasındaki](../ide/editorconfig-code-style-settings-reference.md). Visual Studio uzantısı veya bir NuGet paketi olarak ek Çözümleyicileri yükleyebilirsiniz.
 
-Kural ihlallerinin bir çözümleyici tarafından bulunması durumunda raporlanır Kod düzenleyicisinde hem de bir *dalgalı* sorunlu kod ve buna **hata listesi**.
+Kural ihlallerinin bir çözümleyici tarafından bulunamazsa, Kod Düzenleyicisi'nde raporlanır (olarak bir *dalgalı* sorunlu kod altında) ve **hata listesi** penceresi.
 
-Birçok çözümleyicisi kuralları veya *tanılama*, olması bir veya daha fazla ilişkili *kod düzeltme* sorunu düzeltmek için uygulayabilirsiniz. Visual Studio'ya her yerleşik Çözümleyicisi tanılama ilişkili kod düzeltme vardır. Kod düzeltmeleri, ampul simgesini menüde diğer türleri ile birlikte gösterilir *hızlı Eylemler*. Bu kod düzeltmeleri hakkında daha fazla bilgi için bkz. [yaygın hızlı Eylemler](../ide/common-quick-actions.md).
+Birçok çözümleyicisi kuralları veya *tanılama*, olması bir veya daha fazla ilişkili *kod düzeltme* sorunu düzeltmek için uygulayabilirsiniz. Visual Studio'ya her yerleşik Çözümleyicisi tanılama ilişkili kod düzeltme vardır. Kod düzeltmeleri, ampul simgesini menüsünde diğer türleri ile birlikte gösterilir [hızlı Eylemler](../ide/quick-actions.md). Bu kod düzeltmeleri hakkında daha fazla bilgi için bkz. [yaygın hızlı Eylemler](../ide/common-quick-actions.md).
 
 ![İhlali Çözümleyicisi ve kod düzeltmenizi hızlı eylem](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -36,7 +36,7 @@ Roslyn Çözümleyicisi ihlalleri statik kod analizi kural ihlalleri gibi görü
 
 ![Kod düzenleyicisinde Squigglies](media/diagnostics-severity-colors.png)
 
-Roslyn çözümleyicilerini etkinleştirildi ancak siz yazarken canlı, ayrıca, statik kod analizi gibi derleme zamanında kodu analiz edin! Roslyn Çözümleyicileri de tasarım zamanı etkinleştirirseniz, düzenleyicide açık olmayan kod dosyaları analizini sağlar [tam çözüm analizini](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis).
+Roslyn çözümleyicilerini etkinleştirildi ancak siz yazarken canlı, ayrıca, statik kod analizi gibi derleme zamanında kod analiz edin. Etkinleştirirseniz [tam çözüm analizini](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), Roslyn Çözümleyicileri de düzenleyicide açık olmayan kod dosyaları tasarım zamanı analizini sağlar.
 
 > [!NOTE]
 > Derleme hataları ve Uyarıları Roslyn Çözümleyicileri gelen yalnızca bir NuGet paketi olarak Çözümleyicileri yüklü olup olmadığını gösterilir.
@@ -80,6 +80,6 @@ Visual Studio uzantısı olarak yüklenen Çözümleyicileri gelen kural önem d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da hızlı Eylemler](../ide/quick-actions.md)
+- [Çözümleyiciler SSS](analyzers-faq.md)
 - [Kendi Roslyn çözümleyicinizi yazma](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET derleyici Platformu SDK'sı](/dotnet/csharp/roslyn-sdk/)

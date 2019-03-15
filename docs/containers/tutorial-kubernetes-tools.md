@@ -7,12 +7,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: e4fb3feddd9e3088a0cfc04d5dd2fd1c1c8d7745
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 0e9640547b9ab0020fcbfb6e82fb0df6a777618b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526949"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867361"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
@@ -37,7 +37,7 @@ Bu yeni işlevselliği yararlanmak için gerekir:
 
     1.  [Yayınlama araçları AKS](https://aka.ms/get-vsk8spublish), ayrı bir indirme olarak kullanılabilir.
 
-    1.  Azure Kubernetes hizmeti kümesi. Daha fazla bilgi için [bir AKS kümesi oluşturma](/azure/aks/kubernetes-walkthrough-portal#create-aks-cluster). Mutlaka [kümeye bağlanma](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) geliştirme istasyonunuzdan.
+    1.  Azure Kubernetes hizmeti kümesi. Daha fazla bilgi için [bir AKS kümesi oluşturma](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Mutlaka [kümeye bağlanma](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) geliştirme istasyonunuzdan.
 
     1.  Helm CLI geliştirme iş istasyonunuzda yüklü. Daha fazla bilgi için [yükleme Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
@@ -136,7 +136,7 @@ Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsa
 
    ![Menü öğesi, ekran yayımlama](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. İçinde **Yayımla** ekran öğesini **kapsayıcı kayıt defteri** Yayımla olarak hedef ve kapsayıcı kayıt defterinizde seçmek için istemleri takip edin. Bir kapsayıcı kayıt defterinde yoksa seçin **yeni Azure Container Registry oluşturma** Visual Studio'dan oluşturma. Daha fazla bilgi için [kapsayıcınızı Azure Container Registry'ye yayımlama](#publish-your-container-to-azure-container-registry).
+2. İçinde **Yayımla** ekran öğesini **kapsayıcı kayıt defteri** Yayımla olarak hedef ve kapsayıcı kayıt defterinizde seçmek için istemleri takip edin. Bir kapsayıcı kayıt defterinde yoksa seçin **yeni Azure Container Registry oluşturma** Visual Studio'dan oluşturma. Daha fazla bilgi için [kapsayıcınızı Azure Container Registry'ye yayımlama](vs-azure-tools-docker-hosting-web-apps-in-docker.md#2-publish-your-container-to-azure-container-registry).
 
    ![Çekme Yayımla hedef ekran görüntüsü](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

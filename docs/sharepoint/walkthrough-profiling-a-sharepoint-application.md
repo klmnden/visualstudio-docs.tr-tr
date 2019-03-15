@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841749"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867712"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>İzlenecek yol: Profil bir SharePoint uygulaması
   Bu izlenecek yol, profil oluşturma araçlarını Visual Studio'da bir SharePoint uygulama performansını iyileştirmek için nasıl kullanılacağını gösterir. Örneğin, özellik olayı alıcısını performansını düşürür bir boşta döngü içeren bir SharePoint özelliği olay alıcısı uygulamasıdır. Visual Studio profil oluşturucu, bulun ve proje en pahalı (yavaş gerçekleşir) parçası olarak da bilinen ortadan sağlar *etkin yolu*.
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
-- [Bir özellik ve özellik olayı alıcısını ekleme](#BKMK_AddFtrandFtrEvntReceiver).
+- [Addg özellik ve özellik olayı alıcısını](#add-a-feature-and-feature-event-receiver).
 
-- [Yapılandırma ve SharePoint uygulaması dağıtma](#BKMK_ConfigSharePointApp).
+- [Yapılandırma ve SharePoint uygulaması dağıtma](#configure-and-deploy-the-sharepoint-application).
 
-- [SharePoint uygulaması çalıştıran](#BKMK_RunSPApp).
+- [SharePoint uygulaması çalıştırın](#run-the-sharepoint-application).
 
-- [Görüntüleme ve profil oluşturma sonuçları yorumlayarak destek sağlama](#BKMK_ViewResults).
+- [Görüntüleme ve profili sonuçları yorumlamanıza](#view-and-interpret-the-profile-results).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

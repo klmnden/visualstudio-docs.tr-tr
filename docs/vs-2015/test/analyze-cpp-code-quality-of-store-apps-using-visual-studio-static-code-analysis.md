@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805572"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873249"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,6 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                       [C6516](../code-quality/c6516.md)                        |                                          Öznitelikte özellik yok                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Okunabilir olmayan arabellekte geçerli boyut                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Yazılabilir olmayan arabellekte yazılabilir boyut                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Geçersiz ek açıklama: 'NeedsRelease' özelliğinin değer olmalıdır Evet veya Hayır                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Geçersiz boyut dize başvurma                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Geçersiz boyut dize türü                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Geçersiz boyut dize parametresi                                         |
@@ -194,7 +193,6 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 |                      [C28254](../code-quality/c28254.md)                       |                               ek açıklamalarda dynamic_cast <> (') desteklenmiyor                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    İşlevi, ek açıklaması için Ek açıklamada bir söz dizimi hatası bulundu                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 İç ek açıklaması için koşullu Ek açıklamada bir söz dizimi hatası bulundu                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Sonuç listesi değerlerini sabit olması gerekir.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Açıklamalarda bir söz dizimi hatası, ek açıklama işlevi bulunamadı.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      İşlev için ek açıklama, incelerken parametresi işlev bildirimiyle tutarsız      |
 |                      [C28273](../code-quality/c28273.md)                       |                    İşlev için ipuçları işlev bildirimiyle tutarsız                     |

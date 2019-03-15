@@ -11,12 +11,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed1fa0a1bf68735b2a5e489b98fa7febecba7864
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776162"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870158"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ Bu bölüm, Visual Studio SDK'yı kullanan geliştiriciler için Visual Studio a
   
 ## <a name="in-this-section"></a>Bu Bölümde
 
- [Kurulum yapılandırması](http://msdn.microsoft.com/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Kurulum yapılandırması](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Visual Studio 2017 örneklerini bulmak için yapılandırma API'si ayarlayın.
 
- [Klasör Aç genişletilebilirliği](http://msdn.microsoft.com/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [Klasör Aç genişletilebilirliği](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Visual Studio 2017'de açık klasörü için API çalışma.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  

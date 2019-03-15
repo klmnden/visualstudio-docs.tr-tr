@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fabefec48ee44e58754f360364491df1a14961d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777426"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867673"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -428,4 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md)   
  [T4 metin şablonu yazma](../modeling/writing-a-t4-text-template.md)   
- [T4 anlama: Önceden işlenmiş metin şablonlarını Oleg Sych tarafından](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
+ [T4 anlama: Önceden işlenmiş metin şablonlarını Oleg Sych tarafından](https://github.com/olegsych/T4Toolbox)

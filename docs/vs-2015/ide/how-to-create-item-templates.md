@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788255"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867940"
 ---
 # <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Adımları [ilk yordam](../ide/how-to-create-item-templates.md#export_template) Bu konuyu kullanarak bir öğe şablonu oluşturma işlemi gösterilmektedir **şablonu dışarı aktar** Sihirbazı. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: Çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).  
+Adımları [ilk yordam](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) Bu konuyu kullanarak bir öğe şablonu oluşturma işlemi gösterilmektedir **şablonu dışarı aktar** Sihirbazı. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: Çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).  
   
- Birçok iş temel şablon oluşturmak için sihirbaz yapar, ancak çoğu durumda şablon verdikten sonra .vstemplate dosyasını el ile değiştirmeniz gerekir. Örneğin, öğe görünmesini istiyorsanız **Yeni Öğe Ekle** iletişim kutusu için bir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulaması projesinde sahip olacaksınız birkaç fazladan adım gerçekleştirmeniz. [İkinci yordam](../ide/how-to-create-item-templates.md#modify_template) bu konuda, o görevi gerçekleştirmenize yardımcı olur.  
+ Birçok iş temel şablon oluşturmak için sihirbaz yapar, ancak çoğu durumda şablon verdikten sonra .vstemplate dosyasını el ile değiştirmeniz gerekir. Örneğin, öğe görünmesini istiyorsanız **Yeni Öğe Ekle** iletişim kutusu için bir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uygulaması projesinde sahip olacaksınız birkaç fazladan adım gerçekleştirmeniz. [İkinci yordam](#to-enable-the-item-template-to-be-used-in-a-store-project) bu konuda, o görevi gerçekleştirmenize yardımcı olur.  
  
- Bazı durumlarda istediğiniz veya bir öğe şablonunu sıfırdan el ile oluşturmanız gerekir. [Üçüncü yordamı](../ide/how-to-create-item-templates.md#create_template) bunun nasıl yapılacağını gösterir.  
+ Bazı durumlarda istediğiniz veya bir öğe şablonunu sıfırdan el ile oluşturmanız gerekir. [Üçüncü yordamı](#to-enable-templates-for-specific-project-sub-types) bunun nasıl yapılacağını gösterir.  
   
  Bkz: [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md) .vstemplate dosyasında kullanılan öğeleri hakkında bilgi için.  
   

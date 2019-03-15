@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: e5ca90c5b4cf6922b917a6255ba69395abac724d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f2d055cf7bb5294095baeef6591ac88389a2fe2b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953019"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869934"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Emulator Express kullanarak Azure bulut hizmetini yerel makinede çalıştırma ve hatalarını ayıklama
 Emulator Express kullanarak sınamak ve Visual Studio'yu yönetici olarak çalıştırarak olmadan bir bulut hizmeti hata ayıklama. Emulator Express veya tam öykünücü, bulut hizmetinizin gereksinimlerine bağlı olarak kullanmak üzere proje ayarlarınız ayarlayabilirsiniz. Tam öykünücü hakkında daha fazla bilgi için bkz: [işlem öykünücüsü'nde bir Azure uygulama çalıştırmak](/azure/storage/common/storage-use-emulator).
@@ -48,4 +48,4 @@ Emulator Express sınırlamaları aşağıdaki sorunlar bilinmektedir:
 - Azure işlem öykünücüsü için geçerli olan sınırlamalar Emulator Express için de geçerlidir. Örneğin, dağıtım başına 50'den fazla rol örneği olamaz. Azure işlem öykünücüsü hakkında daha fazla bilgi için bkz: [işlem öykünücüsü'nde bir Azure uygulama çalıştırmak](http://go.microsoft.com/fwlink/p/?LinkId=623050).
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Azure bulut hizmetlerinde hata ayıklama](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Azure bulut hizmetlerinde hata ayıklama](vs-azure-tools-debugging-cloud-services-overview.md)

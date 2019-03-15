@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03f1fe9f2cb159e4a6d6db5ded46907b5944471e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758440"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870602"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,8 +89,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Nasıl oluşturulacağı hakkında daha ayrıntılı bilgi kullanım örnekleri|[UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Kullanım örneği diyagramındaki öğeler|[UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|  
+|Nasıl oluşturulacağı hakkında daha ayrıntılı bilgi kullanım örnekleri|[UML Kullanım Örneği Diyagramları: Yönergeler](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Kullanım örneği diyagramındaki öğeler|[UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|  
 |Kullanım örneklerinden kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="RequirementsClasses"></a> Gereksinimlerini tanımlamak için kullanılan terimleri tanımlama  
@@ -134,8 +134,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Gereksinimler sınıflarını bulma hakkında daha ayrıntılı bilgi|[UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
-|Kavramsal sınıf diyagramındaki öğeler|[UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
+|Gereksinimler sınıflarını bulma hakkında daha ayrıntılı bilgi|[UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
+|Kavramsal sınıf diyagramındaki öğeler|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
 |Kavramsal sınıflardan kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
  Kavramsal bir sınıf diyagramında, bunu genellikle oklar gezinebilirliği ilişkilendirmeleri yerleştirmek kullanışlı değildir. Diyagram uygulaması göstermiyor olmasıdır. İlişkilendirmeleri gerçek nesneler arasındaki ilişkileri temsil eder. Aşağıdaki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı olmayan yönlü oklar varsayılan yap: [Örnek: Etki alanı UML modelleme özellikleri](http://go.microsoft.com/fwlink/?LinkId=213849).  
@@ -157,8 +157,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Bulma ve statik iş kurallarını kaydetme hakkında daha ayrıntılı bilgi|[UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)|  
-|Kavramsal sınıf diyagramındaki öğeler|[UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
+|Bulma ve statik iş kurallarını kaydetme hakkında daha ayrıntılı bilgi|[UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)|  
+|Kavramsal sınıf diyagramındaki öğeler|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
 |İş kurallarının aynılarını kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan  
@@ -182,7 +182,6 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Hizmet gereksinimlerinin kalitesini kaydetme hakkında daha ayrıntılı bilgi|[Kalite hizmet gereksinimlerini tanımlama yönergeleri](http://msdn.microsoft.com/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Kullanım örnekleri için ek belgelere ekleme|[Kullanım örneğini belgelere ve diyagramlara bağlama](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Hizmet gereksinimlerinin kalitesini için uyar kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
@@ -203,8 +202,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|İş iş akışları tanımlama hakkında daha fazla bilgi|[UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Bir etkinlik diyagramındaki öğeler|[UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|  
+|İş iş akışları tanımlama hakkında daha fazla bilgi|[UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Bir etkinlik diyagramındaki öğeler|[UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|  
 |Etkinlik diyagramları koddan geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ##  <a name="Sequences"></a> Kullanıcılar ve sistem arasındaki etkileşimler gösteriliyor  
@@ -220,8 +219,8 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
 |Hakkında bilgi edinmek için|Oku|  
 |--------------------|----------|  
-|Etkileşimler tanımlama hakkında daha fazla bilgi|[UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Bir sıralı diyagram üzerindeki öğeleri|[UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|  
+|Etkileşimler tanımlama hakkında daha fazla bilgi|[UML Sıralı Diyagramları: Yönergeler](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Bir sıralı diyagram üzerindeki öğeleri|[UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)|  
 |Sıralama diyagramları koddan geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>Tutarsızlıkları azaltmak için bir modeli kullanma  

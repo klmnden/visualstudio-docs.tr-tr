@@ -1,27 +1,28 @@
 ---
-title: Live Unit Testing yenilikler
+title: Live Unit Testing Visual Studio 2017'deki yenilikler
+titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221547"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872424"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing’deki Yenilikler
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Live Unit Testing Visual Studio 2017'deki yenilikler
 
 Bu konu Visual Studio 2017 sürüm 15.3 itibaren Visual Studio'nun her sürümü için Live Unit Testing eklenen yeni özellikleri listeler. Live Unit Testing kullanma genel bakış için bkz. [Visual Studio ile Live Unit Testing](live-unit-testing.md).
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>Yeni Visual Studio 2017 sürüm 15.4 için Live Unit Testing nedir
+## <a name="version-154"></a>Sürüm 15.4
 
 Visual Studio 2017 sürüm 15.4 ile başlayarak, Live Unit Testing iyileştirmeler ve geliştirmeler birtakım alanları içerir:
 
@@ -39,7 +40,7 @@ Visual Studio 2017 sürüm 15.4 ile başlayarak, Live Unit Testing iyileştirmel
 
 - **Çeşitli kullanıcı arabirimi iyileştirmelerini**:  Kafa karıştırıcı **Canlı Test kümesi – Ekle/Çıkar** sağ tıklama hareketi seçeneğinden adlandırıldı **Live Unit Testing ekleme/çıkarma**. **Temiz sıfırlama** seçeneğini **Test** > **Live Unit Testing** menü kaldırıldı. Artık seçerek erişilebilir durumda **Araçları** > **seçenekleri** > **Live Unit Testing** seçerek **kalıcı verileri Sil** .
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>Yeni Visual Studio 2017 sürüm 15.3 için Live Unit Testing nedir
+## <a name="version-153"></a>Sürüm 15.3
 
 Visual Studio 2017 sürüm 15.3, Live Unit Testing özellikleri iyileştirmeler ve geliştirmeler iki önemli alanda başlangıç:
 

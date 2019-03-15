@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941055"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867861"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
 CodeLens, kodunuzu ne olduğunu Bul sırada sayesinde yalnızca işinize odaklanmanıza olanak tanır&ndash;düzenleyicisinden çıkmadan. Başvurular bir parça kodu, kod, bağlı hataları, iş öğeleri, kod incelemeleri ve birim testleri değişiklikleri bulabilirsiniz.
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens, yalnızca Visual Studio Enterprise ve Visual Studio Professional sürümlerinde kullanılabilir. Visual Studio Community Edition'da kullanılabilir değil.
+
+::: moniker-end
 
 Nerede ve nasıl kodunuzu ayrı bölümlerini çözümünüzde kullanılan bakın:
 
@@ -62,7 +66,7 @@ Kodunuzun geçmişini, kodunuzu ne olduğunu görmek için inceleyin. Ya da önc
 
 İhtiyacın var:
 
-- Visual Studio Enterprise veya Visual Studio Professional
+- Visual Studio 2019'ı (veya Visual Studio 2017 Enterprise veya Professional edition)
 
 - Team Foundation Server 2013 veya üzeri, Azure DevOps Services veya Git
 

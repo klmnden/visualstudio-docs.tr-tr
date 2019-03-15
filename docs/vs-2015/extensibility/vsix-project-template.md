@@ -11,17 +11,17 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cb702b719679a4aad239376d90fe1ad56b493f5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774714"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872733"
 ---
 # <a name="vsix-project-template"></a>VSIX Proje Şablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Bir veya daha fazla Visual Studio uzantıları içinde VSIX projesi sarmalamak için VSIX proje şablonu kullanın ve ardından üzerinde paket yayımlama [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi.  
+Bir veya daha fazla Visual Studio uzantıları içinde VSIX projesi sarmalamak için VSIX proje şablonu kullanın ve ardından üzerinde paket yayımlama [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi.  
   
  VSPackage'ları, derlemeleri, MEF Bileşenleri, proje şablonları, öğe şablonları, araç kutusu denetimleri ve özel uzantı türleri VSIX dağıtımı destekler.  
   

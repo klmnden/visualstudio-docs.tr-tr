@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 895129fae06dbed8e6c0d53ac423a15adfd42365
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f043e3cfbc6d81306abfb68276f2e32cce63ed45
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760340"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869037"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Visual Studio için Başlangıç Sayfasını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Gösterildiği gibi bazı varsayılan yöntemlerle Visual Studio için başlang�
 
 1.  Özel bir başlangıç sayfası yüklemek için aşağıdaki yöntemlerden birini kullanın:
 
-    -   Buradan yükleyin [Visual Studio Galerisi](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), başka bir Web sitesi veya yerel intranet ağınızdaki bir sayfa.
+    -   Buradan yükleyin [Visual Studio Market](https://marketplace.visualstudio.com/), başka bir Web sitesi veya yerel intranet ağınızdaki bir sayfa.
 
         > [!NOTE]
         >  Visual Studio'nun önceki bir sürümü için hedeflenen bir sayfayı beğeniyorsanız, Visual Studio SDK kullanarak sayfayı yükseltebilirsiniz. Bkz: [nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).

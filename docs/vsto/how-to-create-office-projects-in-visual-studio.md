@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614317"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868178"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Office projeleri oluşturma
   Kullanabileceğiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO eklentisi ve belge düzeyi özelleştirmeleri Microsoft Office uygulamaları için. Bu proje türleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -85,17 +85,18 @@ ms.locfileid: "56614317"
 
 7. Seçin **Tamam** düğmesi.
 
-    > [!NOTE]
-    >  Eklenti projeleri, oluşturulduğunda daima kaydedilir. Geçici proje olarak oluşturulamazlar. Geçici projeler hakkında daha fazla bilgi için bkz: [geçici projeler](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Eklenti projeleri, oluşturulduğunda daima kaydedilir. Geçici proje olarak oluşturulamazlar. Geçici projeler hakkında daha fazla bilgi için bkz: [geçici projeler](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Belge düzeyi özelleştirme projesi oluşturmak için
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**. IDE'nizi Visual Basic geliştirme ayarlarını kullanmaya ayarlanmışsa **dosya** menüsünde seçin **yeni** > **proje**.
 
     **Yeni Proje** iletişim kutusu görünür.
-
-   > [!NOTE]
-   >  Office projeleri hedef [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] varsayılan olarak.  Daha fazla bilgi için [.NET Framework istemci profili](/dotnet/framework/deployment/client-profile).
 
 2. Şablonlar bölmesinde, kullanmak istediğiniz dil için düğümü genişletin **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614317"
 4. Proje şablonları listesinde, bir belge düzeyi projesi şablonu seçin. Kullanılabilir belge düzeyi projesi şablonlarının bir listesi için bkz. [Office proje şablonlarına genel bakış](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** veya daha sonra iletişim kutusunun üstündeki birleşik giriş kutusunda seçilir. Office proje şablonları, her iki .NET Framework sürümleri için görülebilir.
+   > Proje şablonları görünür değilse seçtiğinizde **Office eklentilerini** düğümünün olduğundan emin olun **.NET Framework 4** ya da daha sonra seçili.
 
 5. İçinde **adı** proje için bir ad yazın. Varsayılan olarak, bu ad belge için de kullanılır. IDE'nizi Visual C# geliştirme ayarlarını veya genel geliştirme ayarlarını kullanmaya ayarlanmışsa, konum ve çözüm adı da girin.
 
    > [!NOTE]
-   >  Proje konumunun yolunda veya proje isminde temsilci karakterleri kullanamazsınız. Ayrıca, çevrimdışı kullanım için bir çözüm dağıtmayı planlıyorsanız proje adındaki karakterler HTTP protokolü belirtimlerine uymalıdır.
+   > Proje konumunun yolunda veya proje isminde temsilci karakterleri kullanamazsınız. Ayrıca, çevrimdışı kullanım için bir çözüm dağıtmayı planlıyorsanız proje adındaki karakterler HTTP protokolü belirtimlerine uymalıdır.
 
 6. Seçin **Tamam** düğmesi.
 

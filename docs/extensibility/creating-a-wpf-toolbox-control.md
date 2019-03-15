@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5495d5aaa3591a5d090b9c0324fb75d2f17d9a4a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316775"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867989"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF araç kutusu denetimi oluşturma
 (Windows Presentation Framework) WPF araç kutusu denetimi şablon otomatik olarak eklenen WPF denetimleri oluşturmanıza olanak tanır. **araç kutusu** uzantısı yüklü olduğunda. Bu konuda şablonu oluşturmak için nasıl kullanılacağını gösterir. bir **araç kutusu** denetimi, diğer kullanıcılara dağıtabilirsiniz.
@@ -97,4 +97,4 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 
 3. Karşıya yükleme *.vsix* bir ağ veya bir Web sitesi için dosya.
 
-    Dosyayı karşıya yükleme durumunda [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesinin diğer kullanıcıların kullanabileceği **Araçları** > **Uzantılar ve güncelleştirmeler** denetimi bulmak için Visual Studio çevrimiçi ve yükleyin.
+    Dosyayı karşıya yükleme durumunda [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesinin diğer kullanıcıların kullanabileceği **Araçları** > **Uzantılar ve güncelleştirmeler** bulmak için Visual Studio çevrimiçi denetleyin ve yükleyin.

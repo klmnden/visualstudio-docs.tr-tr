@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 85b3ab45da52bc246e42927c463f3a1037418480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf4fb43148a4746d821b415391c0b69bdd7028e9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783737"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871560"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Bir Azure bulut hizmeti veya sanal makinesinde Visual Studio'da hata ayıklama
 
@@ -104,7 +104,7 @@ Azure SDK 2.3 ' uzaktan hata ayıklama aşağıdaki sınırlamalara sahiptir:
 Visual Studio'da Sunucu Gezgini kullanarak Azure sanal makinelerinde çalışan programlar ayıklayabilirsiniz. Azure sanal makinesinde uzaktan hata ayıklama etkinleştirdiğinizde, Azure sanal makinede uzaktan hata ayıklama uzantısı yükler. Ardından, sanal makine üzerindeki işlemleri ekleyin ve normalde yaptığınız gibi hata ayıklama.
 
 > [!NOTE]
-> Azure resource manager yığınından oluşturulan sanal makineler, Visual Studio 2015'te Cloud Explorer'ı kullanarak uzaktan ayıklanabilir. Daha fazla bilgi için [bulut Gezgini ile Azure kaynaklarını yönetme](http://go.microsoft.com/fwlink/?LinkId=623031).
+> Azure resource manager yığınından oluşturulan sanal makineler, Visual Studio 2015'te Cloud Explorer'ı kullanarak uzaktan ayıklanabilir. Daha fazla bilgi için [bulut Gezgini ile Azure kaynaklarını yönetme](vs-azure-tools-resources-managing-with-cloud-explorer.md).
 
 ### <a name="to-debug-an-azure-virtual-machine"></a>Bir Azure sanal makinesi hata ayıklamak için
 

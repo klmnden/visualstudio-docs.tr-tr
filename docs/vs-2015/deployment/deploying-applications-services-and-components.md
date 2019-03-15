@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a869b2589429d790a2a74b07823c333a5235826f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad0a794126467b82fa27ed865933bdfd7c913398
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756896"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867364"
 ---
 # <a name="deploying-applications-services-and-components"></a>Uygulamaları, Hizmetleri ve Bileşenleri Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Bir uygulamayı, hizmeti ya da bileşeni dağıtarak bunu diğer bilgisayarlarda
   
 |Dağıtım Senaryosu|Destekleyici İçerik|  
 |-------------------------|------------------------|  
-|**Buluta yayımlama:** Uygulamaları, hizmetleri ve veri kullanılabilir bunları Microsoft Azure'a dağıtmak için herhangi bir Visual Studio kullanarak yapabilirsiniz.|[Microsoft azure'a uygulama yayımlama](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx)|  
+|**Buluta yayımlama:** Uygulamaları, hizmetleri ve veri kullanılabilir bunları Microsoft Azure'a dağıtmak için herhangi bir Visual Studio kullanarak yapabilirsiniz.|[Microsoft azure'a uygulama yayımlama](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Bir Windows Store uygulaması yayımlama:** Kolayca oluşturun, gönderin ve Windows Store uygulamalarınızdan dünyanın her yerindeki müşterilere satış yapın.|[Paketleme, dağıtım ve sorgu Windows Store uygulamaları](http://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Bir Windows Phone yayımlama uygulaması:** Yeni bir uygulama veya Windows Phone Dev Center üzerinde sertifika için mevcut bir uygulamayı güncelleştirme gönderebilirsiniz.|[Bir Windows Phone uygulaması yayımlama](http://dev.windowsphone.com/publish)|  
 |**Bir ASP.NET uygulaması veya hizmeti dağıtın:** ASP.NET uygulamalarını ve hizmetlerini bir dizi farklı yolla dağıtabilirsiniz.|[ASP.NET web uygulamaları ve Hizmetleri dağıtma](http://www.asp.net/aspnet/overview/deployment)|  

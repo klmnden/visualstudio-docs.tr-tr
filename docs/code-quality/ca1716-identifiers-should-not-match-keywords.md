@@ -1,6 +1,6 @@
 ---
 title: 'CA1716: Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb483206ba13f89f0a23667039bf5f1a9d740b73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910201"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867738"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Tanımlayıcılar anahtar sözcükler ile eşleşmemelidir
 
@@ -32,7 +32,9 @@ ms.locfileid: "55910201"
 
 ## <a name="cause"></a>Sebep
 
-Bir ad alanı, bir tür veya viritual veya arabirim üye adı ayrılmış bir anahtar sözcük bir programlama dili ile eşleşir.
+Bir ad, tür adı veya sanal ya da ayrılmış bir anahtar sözcük bir programlama dilinde arabirim üyesiyle eşleşiyor.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen ad alanlarını, türleri ve üyeleri görünüyor, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -41,12 +43,10 @@ Tanımlayıcı ad alanları, türler, için ve sanal ve arabirim üyeleri olmaya
 Bu kural, anahtar sözcükleri şu dillerde karşı denetler:
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-Büyük küçük harf duyarsız bir karşılaştırma için kullanılan [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] anahtar sözcükleri ve büyük küçük harfe duyarlı karşılaştırma diğer diller için kullanılır.
+Visual Basic anahtar sözcükleri için kullanılan büyük küçük harf duyarsız karşılaştırma ve büyük küçük harfe duyarlı karşılaştırma diğer diller için kullanılır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
@@ -54,4 +54,14 @@ Anahtar sözcükler listesinde görünmeyen bir adı seçin.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
-Tanımlayıcı kullanıcılara API'nin karıştırır değil ve kitaplık .NET Framework içindeki kullanılabilir tüm dillerde kullanılabilir ikna varsa bu kuraldan bir uyarıyı gösterilmemesini sağlayabilirsiniz.
+Tanımlayıcı kullanıcılara API'nin karıştırır olmaz ve kitaplığı. NET'te tüm kullanılabilir diller kullanılamaz eminseniz, bu kuraldan bir uyarıyı gösterilmemesini sağlayabilirsiniz.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).

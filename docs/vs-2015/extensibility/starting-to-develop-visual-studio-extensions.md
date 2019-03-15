@@ -11,12 +11,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 489248031633a96a4790c63e9bd8938f56c738c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 03c9ebb2a2c84c400b4fb2d3aea4c3ec121fbf27
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766497"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870282"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Visual Studio uzantıları geliştirmeye başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Visual Studio uzantısı önce hiçbir zaman yazdıysanız, muhtemelen bazı sor
 
 - Veri tasarım ya da bulut desteği gibi senaryolar için etki alanına özel tasarımcılar
 
-  Uzantıları örnekleri için kullanıma [Visual Studio Galerisi](https://visualstudiogallery.msdn.microsoft.com/). Ayrıca bir göz atabilirsiniz [Visual Studio açık kaynak uzantıları](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).
+  Uzantıları örnekleri için kullanıma [Visual Studio Market](https://marketplace.visualstudio.com/). Ayrıca bir göz atabilirsiniz [Visual Studio açık kaynak uzantıları](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>Hangi Visual Studio özellikleri miyim uzatabilir miyim?
  Teorik olarak, Visual Studio neredeyse tüm parçası genişletebilirsiniz: menüleri, araç çubukları, komutları, windows, çözümler, projeler, düzenleyiciler ve benzeri.

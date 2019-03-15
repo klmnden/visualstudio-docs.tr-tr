@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fd1d55b74997e855cbbc4a3cdfe9288f19806a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799409"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870504"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına bağlanma, bellekte veri modelleme ve veri kullanıcı arabiriminde görüntülemek için desteği sağlar.  Veri erişimi işlevleri sağlayan .NET Framework sınıfları olarak bilinen [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). Visual Studio'da araçları verileriyle birlikte bir ADO.NET, başlangıçta öncelikli olarak ilişkisel veritabanı ve XML desteklemek için tasarlanmıştır. Bugünlerde çoğu NoSQL veritabanı satıcıların veya üçüncü taraflar, ADO.NET sağlayıcılar sunar.  
   
- Visual Studio 2015 güncelleştirme 2, en son güncelleştirmeleri içeren [SQL Server veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), azure'daki en son özelliklere yönelik desteği etkinleştiren [SQL veritabanı](https://azure.microsoft.com/services/sql-database/) ve [SQL Server 2016](https://www.microsoft.com/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) ADO.NET veri kümeleri ve ilgili türler hariç destekler. .NET Core'u hedefleyen ve bir nesne ilişkisel eşleme (ORM) katmanı gerektirir, kullanmanız [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 güncelleştirme 2, en son güncelleştirmeleri içeren [SQL Server veri Araçları](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), azure'daki en son özelliklere yönelik desteği etkinleştiren [SQL veritabanı](https://azure.microsoft.com/services/sql-database/) ve [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) ADO.NET veri kümeleri ve ilgili türler hariç destekler. .NET Core'u hedefleyen ve bir nesne ilişkisel eşleme (ORM) katmanı gerektirir, kullanmanız [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Aşağıdaki diyagram, temel mimarisinin basitleştirilmiş bir görünümünü gösterir:  
   

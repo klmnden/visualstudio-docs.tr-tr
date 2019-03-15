@@ -1,6 +1,6 @@
 ---
 title: 'CA1024: Uygun yerlerde özellikleri kullanın'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922309"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869263"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Uygun yerlerde özellikleri kullanın
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922309"
 
 ## <a name="cause"></a>Sebep
 
-Ortak veya korumalı yöntem ile başlayan bir ada sahip `Get`hiçbir parametre almaz ve dizi olmayan bir değer döndürür.
+Bir yöntem ile başlayan bir ada sahip `Get`hiçbir parametre almaz ve dizi olmayan bir değer döndürür.
+
+Varsayılan olarak, bu kural yalnızca ortak ve korunan yöntem ele alınmakta, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -69,11 +71,21 @@ Bu kural ihlalini düzeltmek için yöntem bir özelliğini değiştirin.
 
 Yöntem en az bir tanesi yukarıda listelenen ölçütlerini karşılıyorsa bu kuraldan bir uyarıyı gizler.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Hata ayıklayıcısı özellik genişletme denetleme
+## <a name="configurability"></a>Etkiler ve yapılandırma
 
-Programcıların bir özelliğini kullanmaktan nedenlerinden biri, otomatik-genişletmek için hata ayıklayıcı istemediğiniz olmasıdır. Örneğin, özellik, büyük nesne ayırma veya P/Invoke çağırma gerektirebilir, ancak gözlemlenebilir bir yan etkileri gerçekten olmayabilir.
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
 
-Hata ayıklayıcı otomatik-aşmasını önlemek özellikler uygulayarak <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Aşağıdaki örnek, bir örnek özelliğine uygulanan bu özniteliği gösterir.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Bu kategoride (tasarımı), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Hata ayıklayıcı denetim özelliği genişletme
+
+Hata ayıklayıcıyı autoexpand istemediğiniz programcılar kaçının bir özelliğini kullanarak bir neden olduğundan bu. Örneğin, özellik, büyük nesne ayırma veya P/Invoke çağırma gerektirebilir, ancak gözlemlenebilir bir yan etkileri gerçekten olmayabilir.
+
+Hata ayıklayıcı autoexpanding özelliklerinden uygulayarak engelleyebilir <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Aşağıdaki örnek, bir örnek özelliğine uygulanan bu özniteliği gösterir.
 
 ```vb
 Imports System
@@ -123,6 +135,6 @@ namespace Microsoft.Samples
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, özelliklerine dönüştürülmesi gerektiğini ve değil gibi alanlarını davranmayabilir olduğundan, birkaç gereken çeşitli yöntemler içerir.
+Aşağıdaki örnek, özelliklerine dönüştürülmesi gerektiğini ve alanlar gibi davranırlar yoksa değil çünkü, birkaç gereken çeşitli yöntemler içerir.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

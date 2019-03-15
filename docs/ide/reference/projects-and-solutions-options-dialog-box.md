@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223448"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867819"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projeler ve çözümler sayfanın, Seçenekler iletişim kutusu
 
@@ -49,9 +49,13 @@ Seçili üzerinde olmadığında komutları **derleme** menüsünde gibi **Çöz
 
 Bu onay kutusu seçildiğinde, çözüm ve çözümler üzerinde çalışan tüm komutları her zaman IDE'de gösterilir. Bu onay kutusu temizlenirse, tüm projeler tek başına bir proje olarak oluşturulur ve çözümü yalnızca bir proje içeriyorsa, Çözüm Gezgini veya hareket komutları çözümde IDE'de çözümler üzerinde görmezsiniz.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Oluşturulduğunda yeni projeleri Kaydet
 
 Bu onay kutusu seçildiğinde, projeniz için bir konum belirtebilirsiniz **yeni proje** iletişim kutusu. Bu onay kutusu temizlenirse, tüm yeni projeler geçici proje olarak oluşturulur. Geçici projeler ile çalışırken, oluşturabilir ve bir disk konumu belirtmek zorunda kalmadan bir proje ile denemeler yapın.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Proje konumu güvenilir olmadığında kullanıcıyı uyarır.
 

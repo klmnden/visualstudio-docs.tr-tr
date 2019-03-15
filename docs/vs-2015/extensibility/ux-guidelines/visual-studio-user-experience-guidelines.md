@@ -8,12 +8,12 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 89f04f48c7afc031637c1c85e871b5b8e3d325be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802022"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869882"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio Kullanıcı Deneyimi Yönergeleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,6 +26,6 @@ Visual Studio kullanıcı deneyimi yönergeleri, yeni özellikler için Visual S
   
 - Uygun yerlerde ortamımız için genel Windows yönergeleri yerine geçen platforma özgü yönergelerdir bu Visual Studio yönergeleri.  
   
-- [Desenleri ve Windows Store uygulamaları için kılavuzları](https://dev.windows.com/design/interaction-ux) bazı durumlarda Visual Studio içinde kullanılabilir yeni çıkan desenleri için bir başvuru.  
+- [Denetimleri ve UWP uygulamaları için desenler](/windows/uwp/design/controls-and-patterns) bazı durumlarda Visual Studio içinde kullanılabilir yeni çıkan desenleri için bir başvuru.  
   
   Bu yönergeleri, Visual Studio için tasarlarken yapmanız gerekenler hakkında bilgi sağlar ve bazı durumlarda nasıl yapılacağı ile ilgili bilgiler de dahildir. Daha ayrıntılı uygulama bilgileri ve belirli bir uygulama programlama arabirimi (API) Visual Studio tümleşik geliştirme ortamına (IDE) tümleştirilebilen çözümler için kod yazmanıza olanak tanıyan hakkında bilgi edinmek için kullanın[Visual Studio Yazılım Geliştirme Seti (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).

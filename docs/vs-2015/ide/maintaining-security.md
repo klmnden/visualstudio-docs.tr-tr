@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 72e1351d593059d83efede7676b0182cd60c9f7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752888"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872835"
 ---
 # <a name="maintaining-security"></a>Güvenliğini Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,14 +33,13 @@ Güvenliğin bedelinin sürekli tetikte bulunmak olduğu söylenir. Uygulamanız
  [Güvenlik, gizlilik ve hesaplar](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Virüsler, parolalar, ebeveyn denetimleri ve sürücü şifreleme dahil, güvenlik, gizlilik ve kullanıcı hesapları ile ilgili yardım alın.  
   
- [Microsoft Güvenlik Bülteni Araması](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Microsoft Güvenlik Bülteni Araması](/security-updates/)  
  Bu sayfa, daha önce yayınlanmış bültenleri bulmayı kolaylaştırır. BT uzmanları için tasarlanmış olan güvenlik bültenleri, güvenlik güncelleştirmeleri ile ilgili ayrıntılı bilgi sağlar.  
   
- [Windows Server 2003 Güvenlik Kılavuzu](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Doğru kişilerin doğru içeriğe doğru şekilde erişimini sağlarken, BT Profesyonellerine bir Windows Server 2003 ortamını güvenle işletmek için gerekli yardımı sunar.  
+ [Windows Server 2003 Güvenlik Kılavuzu] (/previous-versions/tn-archive/cc163140(v=technet.10) BT uzmanları'nın doğru kişilerin doğru içeriğe doğru şekilde erişimini sağlarken bir Windows Server 2003 ortamını güvenle işletmek gerekli Yardımı sunar.  
   
- [Kurumsal güvenlik için en iyi uygulamalar](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [Kurumsal güvenlik için en iyi uygulamalar](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  Kurumsal ağlarda farklı yönleriyle güvenliğe odaklanan teknik incelemeler koleksiyonu.  
   
- [Microsoft Baseline Security Analyzer'ı](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer'ı](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) bireysel ev kullanıcısının, kurumsal bir kullanıcının veya yöneticinin bir veya daha çok Windows tabanlı bilgisayarı genel güvenlik yapılandırması hataları açısından taramasına imkan veren bir araçtır.

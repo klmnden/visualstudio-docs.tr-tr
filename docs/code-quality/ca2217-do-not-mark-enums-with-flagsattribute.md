@@ -1,6 +1,6 @@
 ---
 title: 'CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926820"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872294"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Sabit listelerini FlagsAttribute ile işaretlemeyin
 
@@ -36,7 +36,9 @@ ms.locfileid: "55926820"
 
 ## <a name="cause"></a>Sebep
 
-Dışarıdan görünen bir sabit listesi ile işaretlenmiş <xref:System.FlagsAttribute>, varsa ve iki ya da diğer bir birleşimini tabanların olmayan daha fazla değer tanımlı değerler sabit listesi üzerinde.
+Bir numaralandırma ile işaretlenmiş <xref:System.FlagsAttribute> ve varsa veya sabit listesi üzerinde iki ya da diğer bir birleşimini tabanların olmayan daha fazla değer tanımlı değerler.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen bir numaralandırma sırasında görünür, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -50,17 +52,25 @@ Bu kural ihlalini düzeltmek için kaldırmak <xref:System.FlagsAttribute> gelen
 
 Bu kuraldan uyarıyı bastırmayın.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Örnek özniteliğine sahip olmamalıdır
+## <a name="configurability"></a>Etkiler ve yapılandırma
 
-Aşağıdaki örnek, bir numaralandırma gösterir `Color`, 3 değeri içeren. 3 iki ya da tanımlanmış değerlerden herhangi bir kombinasyonunu güç değil. `Color` Numaralandırması ile işaretlenir olmamalıdır <xref:System.FlagsAttribute>.
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+Bu kategoride (kullanım), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Örnekler
+
+Aşağıdaki kod bir numaralandırma gösterir `Color`, 3 değeri içeren. 3 iki ya da tanımlanmış değerlerden herhangi bir kombinasyonunu güç değil. `Color` Numaralandırması ile işaretlenir olmamalıdır <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Örnek özniteliğine sahip olmamalıdır
-
-Aşağıdaki örnek, bir numaralandırma gösterir `Days`, ile işaretlenen gereksinimleri karşılayan <xref:System.FlagsAttribute>.
+Aşağıdaki kod bir numaralandırma gösterir `Days`, ile işaretlenen gereksinimleri karşılayan <xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

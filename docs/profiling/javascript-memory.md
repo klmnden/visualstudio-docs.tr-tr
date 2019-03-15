@@ -1,6 +1,6 @@
 ---
 title: UWP uygulamalarında JavaScript bellek kullanımını çözümleme | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e2d5b1e8682656e7f0c2557b300b5429859014
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613121"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867974"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP uygulamalarında JavaScript bellek kullanımını analiz etme
 JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript kullanarak Windows için oluşturulan UWP uygulamalarında bellek sızıntılarını bulmanıza yardımcı olması için Visual Studio'da kullanılabilir. Desteklenen uygulamalar için evrensel Windows uygulamaları uygulamalarıdır.

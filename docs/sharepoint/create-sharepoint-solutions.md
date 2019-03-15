@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c29c74388ed5766827ef04b378aa2d51167662d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599857"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869921"
 ---
 # <a name="create-sharepoint-solutions"></a>SharePoint çözümleri oluşturma
   Bunları SharePoint Tasarımcı'da oluşturmaya alternatif olarak, SharePoint uygulamalarını Visual Studio'da oluşturabilirsiniz. Visual Studio hata ayıklama araçları Gelişmiş, IntelliSense, ifade tamamlama ve proje şablonları gibi özellikler sağlayarak hızlı SharePoint geliştirmesi yükseltir. Visual Studio, .NET Framework tabanlı Gelişmiş araçları ve dilleri de yararlanır. Visual Basic veya Visual C# kullanarak SharePoint projeleri geliştirebilir ve JavaScript kullanarak SharePoint projeleri için uygulama geliştirebilirsiniz.
 
- SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) ve [SharePoint için uygulamalar oluşturun](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+ SharePoint 2013 ve SharePoint eklentileri hakkında daha fazla bilgi için bkz: [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) ve [SharePoint için uygulamalar oluşturun](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
 >  Yeni nasıl öğrenmek [SharePoint eklenti modeli](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) kullanıcılarınızın SharePoint deneyimini genişletmek için. Bu eklentiler SharePoint çözümlerine kıyasla çok küçük kaplama sahiptir ve neredeyse tüm web teknolojisi HTML5, JavaScript, CSS3 ve XML gibi programlama kullanarak oluşturabilirsiniz.

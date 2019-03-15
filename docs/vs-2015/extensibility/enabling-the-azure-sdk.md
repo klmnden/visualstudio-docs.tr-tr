@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c67b33ec4c948698796856301783ce6536071984
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769878"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867912"
 ---
 # <a name="enabling-the-azure-sdk"></a>Azure SDK'yı etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ Azure SDK için oluşturma, yapılandırma, derleme, hata ayıklama, çalıştı
     >  Azure Araçları'nı yüklemek için Internet Information Services 7.0 ve ASP.NET uygulama geliştirme bileşenlerin yüklü olmalıdır. Bu bileşenlerin yüklü değilse, Azure Araçları, bunları yüklemenizi ister.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Azure](http://go.microsoft.com/fwlink?LinkID=164788)   
- [Azure kullanmaya başlama](http://go.microsoft.com/fwlink?LinkID=159361)   
- [Azure Topluluğu](http://go.microsoft.com/fwlink?LinkID=159370)
+ [Azure](https://azure.microsoft.com/)   
+ [Azure kullanmaya başlama](https://azure.microsoft.com/get-started/)   
+ [Azure Topluluğu](https://azure.microsoft.com/support/community/)

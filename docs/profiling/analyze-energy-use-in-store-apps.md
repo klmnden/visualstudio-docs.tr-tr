@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ecd06b2c340640db082c5d0a6bbdb6a30596748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624418"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872074"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını analiz etme
+
 Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya tamamını kendi piliyle çalışan düşük güçlü tablet cihazları UWP uygulamaları güç ve enerji tüketimini çözümlemenize yardımcı olur. Enerjisini pilden alan bir aygıtta çok fazla enerji kullanan bir uygulama, çok fazla müşteri memnuniyetsizliğine neden olabilir ve sonunda müşteriler uygulamayı kaldırmaya da karar verebilir. Enerji kullanımını en iyi duruma getirme, uygulamanızın benimsenme oranını artırabilirsiniz ve müşteriler tarafından kullanın.
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>Enerji Tüketimi profil oluşturucusu nedir, nasıl çalışır ve neleri ölçer?
- Enerji Tüketimi profil oluşturucusu, profil oluşturma oturumu sırasında bir cihazın ekran, CPU ve ağ bağlantıları etkinliklerini yakalar. Sonra, bu etkinlikler için kullanılan güçle ilgili ve profil oluşturma oturumunun toplam enerji miktarı için tahminler oluşturur.
+
+Enerji Tüketimi profil oluşturucusu, profil oluşturma oturumu sırasında bir cihazın ekran, CPU ve ağ bağlantıları etkinliklerini yakalar. Sonra, bu etkinlikler için kullanılan güçle ilgili ve profil oluşturma oturumunun toplam enerji miktarı için tahminler oluşturur.
 
 > [!NOTE]
 > Enerji profil oluşturucusu, güç ve enerji kullanımını tahmin etmek için, uygulamalarınızın çalıştırılabileceği düşük güçlü tablet cihazları temsil eden standart bir referans cihaz donanımı içeren bir yazılım modeli kullanır. En iyi tahminleri sağlamak için, düşük güç kullanan bir tablet cihazdaki profil verilerini toplamanız önerilir.
 >
 > Bu model düşük güç tüketen çeşitli cihazlar için iyi tahminler sağlasa da, profilini oluşturduğunuz cihazın gerçek değerleri muhtemelen farklı olur. Diğer kaynaklara göre daha maliyetli ve dolayısıyla optimizasyon için iyi aday olabilecek ekran, CPU ve ağ etkinliklerini bulmak için değerleri kullanın.
 
- Enerji tüketimi Profil Oluşturucusu bu tanımları kullanır *güç* ve *enerji*:
+Enerji tüketimi Profil Oluşturucusu bu tanımları kullanır *güç* ve *enerji*:
 
 - *Güç* ölçüler zorla oranı bir sürede yapılan işi gerçekleştirmek için kullanılır. Elektrik biliminde standart güç birimi olan bir *watt*, hangi iş yapılır zaman oranı tanımlanan bir ampere aracılığıyla voltluk elektriksel potansiyel farkından bir amper, geçerli akış. İçinde **güç kullanımı** grafiğinde birimler Miliwatt **mW** watt'ın bir 214.748,3648 olduğu.
 
@@ -39,9 +41,9 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
 
 - *Enerji* toplam kapasite veya potansiyel, bir pilin güç kapasitesi olduğu gibi olarak ya da toplam güç miktarı pilin güç bir süre minimuma ölçümleri. Enerji birimi watt-saat olup, bir saat boyunca sürekli olarak uygulanan bir watt'lık güç miktarıdır. İçinde **enerji özeti**, birim watt-saat görüntülenen **mW-h**.
 
-  ![Enerji kapasite, power kullanıldığında, kullanılan toplam enerji](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")
+![Enerji kapasite, power kullanıldığında, kullanılan toplam enerji](../profiling/media/energyprof_capcitypowerused.png)
 
-  Örneğin, bir tabletteki tam şarjlı bir pilde belli miktarda depolanmış enerji vardır. Bir ağ üzerinden iletişim kurma, değerleri hesaplama veya grafikleri görüntüleme gibi görevleri gerçekleştirmek için enerji kullanıldıkça, pilin gücü farklı oranlarda harcanır. Herhangi bir zaman dilimi için, harcanan güç toplamı da enerji ile ölçülür.
+Örneğin, bir tabletteki tam şarjlı bir pilde belli miktarda depolanmış enerji vardır. Bir ağ üzerinden iletişim kurma, değerleri hesaplama veya grafikleri görüntüleme gibi görevleri gerçekleştirmek için enerji kullanıldıkça, pilin gücü farklı oranlarda harcanır. Herhangi bir zaman dilimi için, harcanan güç toplamı da enerji ile ölçülür.
 
 ## <a name="identify-scenarios-with-user-marks"></a>Kullanıcı işaretleriyle senaryoları tanımlama
  Ekleyebileceğiniz *kullanıcı işaretlerini* profil oluşturma verilerinize zaman çizelgesi cetvelindeki alanları tanımlamanıza yardımcı olacak.
@@ -57,14 +59,14 @@ Visual Studio **enerji tüketimi** profil oluşturucu, zaman bir kısmını veya
  Yöntem yürütüldüğünde, profil oluşturma verilerine bir iletiyle birlikte bir kullanıcı işareti eklenir.
 
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel uygulayan [Windows.Foundation.ıclosable](/uwp/api/windows.foundation.iclosable) arabirimi (tahmini olarak [System.IDisposable](/dotnet/api/system.idisposable) C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) C# ve VB) işiniz bittiğinde günlük kaydı ile Kanal.
->  - Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışmak özel duruma neden olur.
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> uygulayan <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> arabirimi (tahmini olarak <xref:System.IDisposable?displayProperty=nameWithType> içinde C# ve VB). İşletim sistemi kaynaklarını sızdırılmasını önlemek için çağrı <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType> (<xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType> içinde C# ve VB'de) tamamlandığında bir günlük kaydı kanalıyla.
+> - Her açık günlük kanalının benzersiz bir adı olması gerekir. Elde kalan bir kanal ile aynı adda yeni bir günlük kanalı oluşturmaya çalışırsanız, bir özel durum oluşturulur.
 
- Bkz. Windows SDK'sı örneği [LoggingSession örneğine](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) örnekler.
+Örnek kod, bkz. Windows SDK'sı örneği [LoggingSession örneğine](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
- **İşaretleri JavaScript kodunu ekleyin**
+**İşaretleri JavaScript kodunu ekleyin**
 
- Kullanıcı işaretleri eklemek için, kodunuzda işaretlemek istediğiniz noktalarda aşağıdaki kodu ekleyin:
+Kullanıcı işaretleri eklemek için, kodunuzda işaretlemek istediğiniz noktalarda aşağıdaki kodu ekleyin:
 
 ```JavaScript
 if (performance && performance.mark) {
@@ -72,15 +74,15 @@ if (performance && performance.mark) {
 }
 ```
 
- *markDescription* kullanıcı işareti İpucunda görüntülenecek iletiyi içeren bir dizedir.
+*markDescription* kullanıcı işareti İpucunda görüntülenecek iletiyi içeren bir dizedir.
 
 ## <a name="configure-your-environment-for-profiling"></a>Profil oluşturma için ortamınızı yapılandırma
  İyi tahminler elde etmek için pilden güç alan düşük güç tüketimli bir cihazda uygulamanın enerji kullanımının profilini oluşturmak istersiniz. Visual Studio bu cihazların çoğunda çalışmadığından, Visual Studio bilgisayarınızı cihaza Visual Studio uzak araçlarını kullanarak bağlanmak gerekir. Uzaktaki bir cihaza bağlanmak için, hem Visual Studio projesini hem de uzak cihazı yapılandırmanız gerekir. Bkz: [uzak bir makinede çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md) daha fazla bilgi için.
 
 > [!TIP]
 > - UWP simülatör'ü veya Visual Studio bilgisayarında enerji profili oluşturma önerilmemektedir. Gerçek cihazda profil oluşturmak çok daha gerçekçi veriler sağlar.
->   -   Hedef cihazda profil oluşturmayı, kendi pilleriyle çalışırken gerçekleştirin.
->   -   Aynı kaynakları (ağ, CPU veya ekran) kullanabilecek diğer uygulamaları kapatın.
+> - Hedef cihazda profil oluşturmayı, kendi pilleriyle çalışırken gerçekleştirin.
+> - Aynı kaynakları (ağ, CPU veya ekran) kullanabilecek diğer uygulamaları kapatın.
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Uygulamanız için enerji profili verilerini toplama
 
@@ -91,7 +93,7 @@ if (performance && performance.mark) {
 2.  Seçin **enerji tüketimi** seçip **Başlat**.
 
     > [!NOTE]
-    >  Başladığınızda **enerji tüketimi** profil, bir **kullanıcı hesabı denetimi** çalıştırmak için izninizi isteyen bir pencere *Vsetwcollector.exe'yi*. Seçin **Evet**.
+    > Başladığınızda **enerji tüketimi** profil, bir **kullanıcı hesabı denetimi** çalıştırmak için izninizi isteyen bir pencere *Vsetwcollector.exe'yi*. Seçin **Evet**.
 
 3.  Veri toplamak için uygulamanızda alıştırma yapın.
 
@@ -145,11 +147,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Diğer kaynaklar
 
--   **Bağlantı durumu ve maliyet Yönetimi** bölümlerinde [C# / VB/C++ ve XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) ve [JavaScript ve HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) Windows geliştirme Merkezi'nde sağlayan Windows API'leri açıklama Uygulamanızı ağ trafiği maliyetini en aza indirmek için kullanabileceğiniz ağ bağlantı bilgileri.
+- **Bağlantı durumu ve maliyet Yönetimi** bölümlerinde [ C#/VB/C++ ve XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) ve [JavaScript ve HTML](/previous-versions/windows/apps/hh452983(v=win.10)) ağ sağlayan Windows API'leri açıklama bağlantı bilgilerini ağ trafiği maliyetini en aza indirmek için uygulamanızı kullanabilirsiniz.
 
-     UWP uygulamaları için Visual Studio simulator, ağ bilgi API'lerinin veri bağlantısı özelliklerinin benzetimini yapmak sağlar. Bkz: [simulator'da çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-in-the-simulator.md)
+   UWP uygulamaları için Visual Studio simulator, ağ bilgi API'lerinin veri bağlantısı özelliklerinin benzetimini yapmak sağlar. Bkz: [simulator'da çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-in-the-simulator.md)
 
--   **JavaScript işlev zamanlaması** ve **CPU kullanımı** araçları, yetersiz işlevlerin neden olduğu CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [analiz CPU kullanımı](/visualstudio/profiling/beginners-guide-to-performance-profiling).
+- **JavaScript işlev zamanlaması** ve **CPU kullanımı** araçları, yetersiz işlevlerin neden olduğu CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [analiz CPU kullanımı](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57874496"
+---
 
 1. Güncelleştirilmiş yapılandırma seçenekleri kullanıcı Arabiriminde göstermek için IIS Yönetim Konsolu kapatıp yeniden açın.
 
@@ -34,6 +42,6 @@
    * Visual Studio'da (sonraki adımlarda) konak adını kullanarak uzak ana bilgisayara bağlanmak bulamıyorsanız, ana bilgisayar adı yerine IP adresi test edin.
 
      > [!NOTE]
-     > Bir Azure sanal makinesinde çalışan IIS'ye yayımlıyorsanız, ağ güvenlik grubunda Web dağıtımı ve IIS bağlantı noktalarının açmanız gerekir. Ayrıntılı bilgi için bkz. [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > Bir Azure sanal makinesinde çalışan IIS'ye yayımlıyorsanız, ağ güvenlik grubunda Web dağıtımı ve IIS bağlantı noktalarının açmanız gerekir. Ayrıntılı bilgi için bkz. [yükleme ve çalıştırma IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server).
 
 5. Bu dosya, Visual Studio'yu çalıştırdığınız bilgisayara kopyalayın.

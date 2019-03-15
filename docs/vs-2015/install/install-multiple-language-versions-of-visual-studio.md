@@ -12,17 +12,17 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a0f6cd1d963427730ddda62628c3f1d064ed3541
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 189430a1ff22450f887cc8e6903db5537b137f17
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761491"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872088"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Visual Studio'nun birden çok dil sürümlerini yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [yükleme dil paketleri, Visual Studio 2017'de](https://docs.microsoft.com/visualstudio/install/install-visual-studio#install-language-packs).
+Visual Studio 2017 için en son belgeler için bkz. [yükleme dil paketleri, Visual Studio 2017'de](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional).
 
 Bir veya daha fazla dil paketlerini yükleyerek, aynı bilgisayarda Visual Studio 2015 diğer dillerde çalıştırabilirsiniz. Ayrı dil paketini yüklemek istediğiniz her bir dilin edinmeniz gerekir.
 

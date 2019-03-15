@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604877"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868112"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>İzlenecek yol: Bir proje şablonu, bölüm 2 ile bir site sütunu proje öğesi oluşturma
   Özel bir SharePoint proje öğesi türünü tanımlar ve bir proje şablonu Visual Studio'da ilişkilendirmek sonra şablon için bir sihirbaz sağlamak isteyebilirsiniz. Sihirbaz, şablonu proje öğesi içeren yeni bir proje oluşturmak için kullanıldığında, kullanıcılardan bilgi toplamak için kullanabilirsiniz. Topladığınız bilgiler, proje öğesini başlatmak için kullanılabilir.
@@ -195,7 +195,7 @@ ms.locfileid: "56604877"
 
 - Proje imzalama Yöneticisi.
 
-  Bu bileşenler hakkında daha fazla bilgi için bkz. [Sihirbazı bileşenlerini anlama](#wizardcomponents).
+  Bu bileşenler hakkında daha fazla bilgi için bkz. [Sihirbazı bileşenlerini anlama](#understand-the-wizard-components).
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>SharePoint komut kimlikleri tanımlamak için
 

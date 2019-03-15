@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 504b33ee897ac59b7fe55625a67a01b8dca8ff32
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223045"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869337"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Hızlı Başlangıç: Düzenleyici ve Visual Studio IDE'yi kişiselleştirme
 

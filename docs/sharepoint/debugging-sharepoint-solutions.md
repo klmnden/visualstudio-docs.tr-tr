@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640239"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873116"
 ---
 # <a name="debug-sharepoint-solutions"></a>SharePoint çözümlerinde hata ayıklama
   SharePoint çözümlerini kullanarak ayıklayabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Hata ayıklamayı başlattığınızda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proje dosyaları SharePoint sunucusuna dağıtır ve ardından Web tarayıcısında SharePoint sitesine bir örneğini açar. Aşağıdaki bölümlerde, SharePoint uygulamalarında hata ayıklama işlemleri açıklanmaktadır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Hata ayıklamayı etkinleştirme](#EnableDebug)
+-   [Hata ayıklamayı etkinleştir](#enable-debugging)
 
--   [F5 hata ayıklama ve dağıtım işlemi](#Deployment)
+-   [F5 hata ayıklama ve dağıtım işlemi](#f5-debug-and-deployment-process)
 
--   [SharePoint Proje Özellikleri](#Features)
+-   [SharePoint Proje Özellikleri](#sharepoint-project-features)
 
--   [İş Akışlarında Hata Ayıklama](#Workflow)
+-   [İş akışı hata ayıklama](#debug-workflows)
 
--   [Hata ayıklama özellik Olay alıcıları](#FeatureEvents)
+-   [Hata ayıklama özellik Olay alıcıları](#debug-feature-event-receivers)
 
--   [Gelişmiş hata ayıklama bilgileri etkinleştirme](#EnhancedDebug)
+-   [Hata ayıklama bilgileri ehanced etkinleştir](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Hata ayıklamayı etkinleştir
  İlk hata ayıklaması yaptığınızda, bir SharePoint çözümünü [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], bir iletişim kutusu web.config dosyasında hata ayıklamayı etkinleştirmek için yapılandırılmamış sizi uyarır. (SharePoint server'ı yüklerken web.config dosyası oluşturulur. Daha fazla bilgi için [Web.config dosyaları ile çalışma](http://go.microsoft.com/fwlink/?LinkID=149266).) İletişim kutusu, hata ayıklamayı etkinleştirmek için ya da proje hata ayıklama veya web.config dosyasında değişiklik olmadan çalışan seçeneği sunar. İlk seçeneği belirlerseniz, proje normal olarak çalıştırır. İkinci seçeneği belirlerseniz, web.config dosyasında yapılandırılır:
@@ -137,7 +137,7 @@ ms.locfileid: "56640239"
 
  SharePoint özelliğinin otomatik etkinleştirmeyi devre dışı bırakın ve uygun özellik Olay alıcıları hata ayıklamaya izin verecek şekilde projenin değerini **etkin Dağıtım Yapılandırması** özelliğini **Hayıretkinleştirme** hata ayıklama önce. Daha sonra SharePoint uygulamanızda hata ayıklamak başlattıktan sonra [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el ile SharePoint özelliği etkinleştirin. Özelliğini etkinleştirmek için açık **Site eylemleri** SharePoint menüsünde **Site Ayarları**, seçin **Site özellikleri Yönet** bağlamak ve ardından **Etkinleştirme** normal hata ayıklamaya devam etmek için özelliğin yanındaki düğmesi.
 
-## <a name="enable-enhanced-debug-information"></a>Gelişmiş hata ayıklama bilgilerini etkinleştir
+## <a name="enable-enhanced-debugging-information"></a>Gelişmiş hata ayıklama bilgilerini etkinleştir
  Bazen karmaşık arasındaki etkileşimleri nedeniyle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] işlem (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ana bilgisayar işlemi (*vssphost4.exe*), SharePoint ve ortaya çıkan hataları tanılama WCF katmanı sırada geliştirmeyi, dağıtmayı ve benzeri bir mücadele haline gelebilir. Bu tür hatalar çözmenize yardımcı olması için Gelişmiş hata ayıklama bilgileri etkinleştirebilirsiniz. Bunu yapmak için Windows kayıt defterinde aşağıdaki kayıt defteri anahtarına gidin:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

@@ -2,19 +2,19 @@
 title: Uygulamalarınızda ölçü bellek kullanımı
 description: Hata ayıklayıcıyla tümleştirilmiş Tanılama Aracı ile hata ayıklarken bellek sızıntılarını ve verimsiz bellek bulun.
 ms.custom: seodec18
-ms.date: 04/25/2017
+ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570590a37e76301305159a4249165b1a20c475a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223331"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868998"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 

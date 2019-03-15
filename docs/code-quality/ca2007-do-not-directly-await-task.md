@@ -1,5 +1,5 @@
 ---
-title: 'CA2007: Doğrudan göreve await değil'
+title: 'CA2007: Doğrudan bir Görevi beklemeyin'
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699697"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869295"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Doğrudan göreve await değil
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Doğrudan bir Görevi beklemeyin
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan bir değer döndürmez zaman uyumsuz yöntemler hariç tutmak isteyip istemediğinizi yapılandırabilirsiniz. Bu tür yöntemler tutmak için projenizin bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+Ayrıca, hangi derleme türleri bu kuralın uygulanacağı çıktı yapılandırabilirsiniz. Örneğin, yalnızca bu kural bir konsol uygulaması veya dinamik olarak bağlı bir kitaplığı (diğer bir deyişle, olmayan bir kullanıcı Arabirimi uygulaması) oluşturan koda uygulamak için projenizin bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

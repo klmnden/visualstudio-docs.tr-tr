@@ -11,12 +11,12 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 34e8c67533bda4084a8bbff2a0454b072e5a354a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772822"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873268"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>İzlenecek yol: Başlangıç Sayfasına Özel XAML Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Bu kılavuzda, özel bir Visual Studio Başlangıç içeren bir Web tarayıcıs�
 1.  İçinde **Araçlar / Seçenekler / ortam**seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- Visual Studio Başlangıç sayfası artık bir Web tarayıcısı sekmesi ve MyButton sekme görüntüleyen bir sekme içerir. Özel başlangıç diğer işlevleri kullanarak olan sayfaları oluşturabilirsiniz *arka plan kod* gösterildiği gibi özel bir .dll dosyasını eklemek için model [başlangıç sayfasına kullanıcı denetimi ekleme](../extensibility/adding-user-control-to-the-start-page.md). Özel başlangıç sayfaları için elde edilen .vsix dosyasını yayımlayarak diğer kullanıcılarla paylaşabilir miyim [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesini veya başka bir Web sitesinin veya ağ paylaşımı. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  
+ Visual Studio Başlangıç sayfası artık bir Web tarayıcısı sekmesi ve MyButton sekme görüntüleyen bir sekme içerir. Özel başlangıç diğer işlevleri kullanarak olan sayfaları oluşturabilirsiniz *arka plan kod* gösterildiği gibi özel bir .dll dosyasını eklemek için model [başlangıç sayfasına kullanıcı denetimi ekleme](../extensibility/adding-user-control-to-the-start-page.md). Özel başlangıç sayfaları için elde edilen .vsix dosyasını yayımlayarak diğer kullanıcılarla paylaşabilir miyim [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesini veya başka bir Web sitesinin veya ağ paylaşımı. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   

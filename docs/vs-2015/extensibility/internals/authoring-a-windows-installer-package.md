@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5743caf2d45e8a2c06e841c68da2e8a3fcb222d1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833861"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872853"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Windows Installer Paketi Yazma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Windows Installer model veri sürücülerinde. Dosyaları kopyalayın ve kayıt 
   
    Araç takımı XML kaynak dosyalarından Windows Installer paketleri oluşturur. Araç takımı, Microsoft açık kaynak projesidir. Yürütülebilir dosyalar ve kaynak kodunu indirebilirsiniz [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
-  Tümleştirin ticari ürünleri için [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanarak [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], bkz: [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Tümleştirin ticari ürünleri için [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kullanarak [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], bkz: [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Installer ile VSPackage Yükleme](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

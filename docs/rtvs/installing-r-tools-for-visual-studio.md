@@ -8,20 +8,20 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 676b46c87fe9b6af6e0e1baed0ff5fcdc7e68b6e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909199"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873655"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Visual Studio için R araçları yükleme
 
 Bu makalede:
 
 - [Visual Studio'nun desteklenen sürümleri](#supported-versions-of-visual-studio)
-- [Visual Studio 2017'de RTVS yükleyin](#installing-rtvs-in-visual-studio-2017)
-- [Visual Studio 2015'te RTVS yükleyin](#installing-rtvs-in-visual-studio-2015)
+- [Visual Studio 2017'de RTVS yükleyin](#install-rtvs-in-visual-studio-2017)
+- [Visual Studio 2015'te RTVS yükleyin](#install-rtvs-in-visual-studio-2015)
 - [Çevrimdışı yükleme](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -66,7 +66,7 @@ Microsoft R Open ve CRAN R hem de birden çok yan yana sürümler için izin ver
 Geçerli RTVS Visual Studio 2015'ten indir [ https://aka.ms/rtvs-current ](https://aka.ms/rtvs-current). RTVS Visual Studio'nun uygun bir sürümünü denetler ve henüz yapmadıysanız İnterpret R yüklemenize yardımcı olur.
 
 > [!Note]
-> Tek başına RTVS yükleyicisi, yalnızca Visual Studio 2015 ile birlikte çalışır; Visual Studio 2017 ile R desteğini yükleme [veri bilimi ve analitik uygulamalar iş yükü](#installing-rtvs-in-visual-studio-2017) daha önce açıklandığı gibi.
+> Tek başına RTVS yükleyicisi, yalnızca Visual Studio 2015 ile birlikte çalışır; Visual Studio 2017 ile R desteğini yükleme [veri bilimi ve analitik uygulamalar iş yükü](#install-rtvs-in-visual-studio-2017) daha önce açıklandığı gibi.
 
 Visual Studio 2015 için RTVS'yi yüklenir: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 

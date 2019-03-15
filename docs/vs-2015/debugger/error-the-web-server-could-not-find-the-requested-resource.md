@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84a264aee56a179934f0ad7ad2b8a26fd69b697b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 656ebd6f8b1e720afd129bca3d53712526fc914f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800004"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869198"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Hata: Web sunucusu istenen kaynağı bulamadı.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ Güvenlik konuları nedeniyle IIS genel bir hata döndürdü.
  IIS sorun giderme hakkında daha fazla bilgi için bkz. [IIS Yönetim ve Yönetim](http://go.microsoft.com/fwlink/?LinkId=255872).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UrlScan güvenlik aracı](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
+ [UrlScan güvenlik aracı](https://www.iis.net/downloads/microsoft/urlscan)   
  [Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

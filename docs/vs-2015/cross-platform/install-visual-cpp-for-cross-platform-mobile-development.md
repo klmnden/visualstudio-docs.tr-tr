@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762865"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869128"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Visual C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com/
   
    Varsayılan olarak, yükleyici C:\Program Files (x86) \Microsoft Visual Studio 14.0\Apps Apache Ant geçirir.  
   
-- [Android için Microsoft Visual Studio öykünücüsü](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Android için Microsoft Visual Studio öykünücüsü](https://visualstudio.microsoft.com/vs/msft-android-emulator/)  
   
    Yükleyebilir ve Visual Studio Galerisi Android için Microsoft Visual Studio öykünücü güncelleştirin.  
   

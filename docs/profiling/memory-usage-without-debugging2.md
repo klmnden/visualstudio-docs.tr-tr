@@ -1,6 +1,6 @@
 ---
 title: Hata ayıklama olmadan bellek kullanımını çözümleme | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615927"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873460"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Hata Ayıklayıcı olmadan bellek kullanımını analiz etme
 
@@ -72,7 +72,7 @@ Veri toplamayı durdurduktan sonra **bellek kullanımı** aracı uygulamayı dur
 
 Sayıları **anlık görüntü** bölmeleri bayt ve her anlık görüntü alındığında bellekte nesneleri ve önceki bir anlık görüntü arasındaki farkı gösterir.
 
-Açık ayrıntılı bağlantılar sayılardır **bellek kullanımı** rapor görünümleri yeni Visual Studio Windows. A [anlık görüntü ayrıntılarını raporu](#snapshot-details-report) türlerinin ve örneklerinin bir anlık görüntüde gösterilmektedir. A [anlık görüntü raporu fark (fark)](#snapshot-difference-diff-reports) türleri ve iki anlık görüntü örnekleri karşılaştırır.
+Açık ayrıntılı bağlantılar sayılardır **bellek kullanımı** rapor görünümleri yeni Visual Studio Windows. A [anlık görüntü ayrıntılarını raporu](#snapshot-details-reports) türlerinin ve örneklerinin bir anlık görüntüde gösterilmektedir. A [anlık görüntü raporu fark (fark)](#snapshot-difference-diff-reports) türleri ve iki anlık görüntü örnekleri karşılaştırır.
 
   ![Anlık görüntü bağlantıları görüntüle](../profiling/media/memuse__snapshotview_numbered.png "anlık görüntü bağlantıları görüntüle")
 

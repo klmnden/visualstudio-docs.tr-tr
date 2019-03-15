@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0237555a3e1aceb6a444300c5470f1c83a52d94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774470"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870408"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entit
 ## <a name="install-and-connect-to-northwind"></a>Yükleme ve Northwind olarak bağlanma  
  Bu örnek, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır. ADO.NET veri sağlayıcısının bu ürün için Entity Framework destekliyorsa, aynı zamanda diğer SQL veritabanı ürünlerle çalışması gerekir.  
   
-1.  Henüz yapmadıysanız, SQL Server 2014 LocalDB Express gelen 32 bit yükleme [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+1.  Henüz yapmadıysanız, SQL Server 2014 LocalDB Express gelen 32 bit yükleme [SQL Server sürümleri indirme sayfasına](https://www.microsoft.com/sql-server/sql-server-editions-express).  
   
 2.  Northwind örnek veritabanıyla kurulan Buradaki yönergeleri izleyerek yükleyin: [SQL Server örnek veritabanlarını yüklemek](../data-tools/install-sql-server-sample-databases.md).  
   

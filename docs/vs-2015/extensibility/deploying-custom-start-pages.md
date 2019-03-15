@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 32527208fc33f1868ff13e7fda84bc4082126c00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781498"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867116"
 ---
 # <a name="deploying-custom-start-pages"></a>Özel Başlangıç Sayfaları Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54781498"
   
 - .Vsix dosyasını bir ağ paylaşımına veya genel bir Web sitesi koyabilirsiniz. Birisi bir dosyayı açtığında, başlangıç sayfası otomatik olarak yüklenir.  
   
-- .Vsix dosyasına yükleyebilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi kullanıcılar kullanarak yükleyebilir **Uzantı Yöneticisi**.  
+- .Vsix dosyasına yükleyebilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi kullanıcılar kullanarak yükleyebilir **Uzantı Yöneticisi**.  
   
   Böylece değiştirebilir ve orijinal korumak başlangıç sayfası proje şablonu Visual Studio Başlangıç sayfası varsayılan bir kopyasını oluşturur.  
   

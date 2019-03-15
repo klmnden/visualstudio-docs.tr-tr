@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c660138437d9b08d49f9cf0c212e7b3612e9215
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783267"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869878"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Tümleşik Yazılım Geliştirme Ortamı Hatalarında Sorun Giderme Kaynakları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Tüm hata iletilerini belirli ilişkili bir Yardım konusu var. Hata iletisindek
 ## <a name="the-developer-community"></a>Geliştirici topluluğu  
  Forumlar, diğer geliştiriciler ve aynı zamanda Microsoft çalışanları ile etkileşimde bulunmanızı sağlar. Çözüm bulamadığınız bir hata ile karşılaşırsanız, bu sorunla ilgili sorularınızı bir forumda paylaşabilirsiniz. Ayrıca, başkalarının aynı sorunla ilgili paylaşım yapıp yapmadığını görmek için haber gruplarında da arama yapabilirsiniz.  
   
- Üzerindeki forumlar, bloglar, sohbet ve diğer kaynaklara erişebilir [Microsoft Technical Communities](http://go.microsoft.com/fwlink/?LinkID=144922) Web sitesi.  
+ Üzerindeki forumlar, bloglar, sohbet ve diğer kaynaklara erişebilir [Microsoft Technical Communities](https://techcommunity.microsoft.com/) Web sitesi.  
   
 ## <a name="product-support"></a>Ürün Desteği  
  Diğer kaynakları denedikten sonra hala sorularınız varsa, ziyaret ederek Microsoft Destek Hizmetleri başvurabilirsiniz [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) Web sitesi. Bölgenizde mevcut ürün desteği hakkında daha fazla bilgi için bkz. [konuşmak bize](../../ide/talk-to-us.md).

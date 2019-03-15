@@ -8,14 +8,14 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787887"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868720"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Nasıl yapılır: Üçüncü taraf birim testi çerçevelerini yükleme
+# <a name="install-third-party-unit-test-frameworks"></a>Nasıl yapılır: Üçüncü taraf birim test çerçevelerini yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Test Gezgini'yle herhangi bir bağdaştırıcı arabirimi Gezgini geliştirdi test çerçevesi çalıştırabilirsiniz. Framework'ün yükleme programını ikilileri yükler ve onu destekleyen diller için Visual Studio Proje şablonları ekler. Framework şablonu içeren bir proje oluşturduğunuzda, Test Gezgini ile kayıtlı. Visual Studio çözüm, farklı çerçeveler kullanan ve farklı dil hedeflenen birim testi projelerini içerebilir. Test Gezgini tümünü çalıştırır.  
@@ -42,7 +42,7 @@ Visual Studio Test Gezgini'yle herhangi bir bağdaştırıcı arabirimi Gezgini 
 ### <a name="installing-from-the-web"></a>Web'den yükleme  
  İlgilendiğiniz framework biliyorsanız:  
   
-1. Açık [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkId=236267) MSDN Web sitesinde.  
+1. Açık [Visual Studio Market](https://marketplace.visualstudio.com).  
   
 2. Framework'ün adı **Bul** kutusu.  
   
@@ -50,7 +50,7 @@ Visual Studio Test Gezgini'yle herhangi bir bağdaştırıcı arabirimi Gezgini 
   
    Bir liste diğer test araçları ile birlikte çerçevesini göz atmak için:  
   
-4. Açık [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkId=236267) MSDN Web sitesinde.  
+4. Açık [Visual Studio Market](https://marketplace.visualstudio.com).  
   
 5. Seçin **Gözat**.  
   

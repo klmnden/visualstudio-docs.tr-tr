@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 522acb66d5a5bd727ab7d8a0a95bc0d3c929d358
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768980"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869485"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Sunucu Gezgini'ni kullanarak depolama kaynaklarına göz atma ve bu kaynakları yönetme
 
@@ -157,10 +157,10 @@ Aşağıdaki görüntüde, iki ileti içeren bir kuyruk gösterilmektedir:
 
 ![Bir kuyruğu görüntüleme](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Hizmetleri kuyruk depolama hakkında daha fazla bilgi için bkz: [.NET kullanarak Azure kuyruk depolama ile çalışmaya başlama](http://go.microsoft.com/fwlink/?LinkID=264702). Kuyruk depolama hizmetleri için web hizmeti hakkında bilgi için bkz [kuyruk hizmeti kavramları](http://go.microsoft.com/fwlink/?LinkId=264788). Visual Studio kullanarak bir depolama hizmetleri kuyruğa ileti göndermek nasıl hakkında daha fazla bilgi için bkz. [depolama hizmetleri kuyruğuna iletiler gönderme](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Hizmetleri kuyruk depolama hakkında daha fazla bilgi için bkz: [.NET kullanarak Azure kuyruk depolama ile çalışmaya başlama](http://go.microsoft.com/fwlink/?LinkID=264702). Kuyruk depolama hizmetleri için web hizmeti hakkında bilgi için bkz [kuyruk hizmeti kavramları](http://go.microsoft.com/fwlink/?LinkId=264788). Visual Studio kullanarak bir depolama hizmetleri kuyruğa ileti göndermek nasıl hakkında daha fazla bilgi için bkz. [depolama hizmetleri kuyruğuna iletiler gönderme](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Depolama Hizmetleri kuyruklarına, Azure Service Bus sıralarından farklıdır. Service Bus kuyrukları hakkında daha fazla bilgi için bkz: [Service Bus kuyrukları, konular ve abonelikler](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Depolama Hizmetleri kuyruklarına, Azure Service Bus sıralarından farklıdır. Service Bus kuyrukları hakkında daha fazla bilgi için bkz: [Service Bus kuyrukları, konular ve abonelikler](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Tablo kaynakları ile çalışma
 
@@ -219,7 +219,7 @@ Sorgu Oluşturucu kullanırsanız, bir tablodaki görünen varlık kümesini öz
 1. Bitirdiğinizde, sorgu oluşturma iletişim kutusunu kapatın. Sorgu sonuç metin biçiminde metin kutusunda, WCF Veri Hizmetleri filtre olarak görünür.
 1. Sorguyu çalıştırmak için yeşil üçgeni simgesini seçin.
 
-Ayrıca, girerseniz filtre metin kutusuna doğrudan bir WCF Veri Hizmetleri filtre dizesi Tablo Tasarımcısı'nda görüntülenen varlık verilerini filtreleyebilirsiniz. Bu tür bir dize, bir SQL WHERE yan tümcesine benzer ancak sunucusu bir HTTP isteği olarak gönderilir. Filtre dizeleri oluşturmak nasıl hakkında daha fazla bilgi için bkz. [Constructing filtre dizeleri için Tablo Tasarımcısı](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings).
+Ayrıca, girerseniz filtre metin kutusuna doğrudan bir WCF Veri Hizmetleri filtre dizesi Tablo Tasarımcısı'nda görüntülenen varlık verilerini filtreleyebilirsiniz. Bu tür bir dize, bir SQL WHERE yan tümcesine benzer ancak sunucusu bir HTTP isteği olarak gönderilir. Filtre dizeleri oluşturmak nasıl hakkında daha fazla bilgi için bkz. [Constructing filtre dizeleri için Tablo Tasarımcısı](/azure/vs-azure-tools-table-designer-construct-filter-strings).
 
 Geçerli filtre dizesinin aşağıda gösterilmiştir:
 
@@ -295,4 +295,4 @@ Sunucu Gezgini'nden bir depolama hesabı silerseniz, depolama hesabınıza veya 
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Azure Depolama hizmetlerinin nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [Azure depolama hizmetlerine erişilmesi](https://msdn.microsoft.com/library/azure/ee405490.aspx).
+Azure Depolama hizmetlerinin nasıl kullanılacağı hakkında daha fazla bilgi için bkz: [Azure Storage'a giriş](/azure/storage/common/storage-introduction).

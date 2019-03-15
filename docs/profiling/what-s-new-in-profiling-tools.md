@@ -1,5 +1,6 @@
 ---
-title: Profil oluşturma yenilikler | Microsoft Docs
+title: Profil oluşturma Visual Studio 2017'deki yenilikler | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +12,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1822ec74903c8baa75ce437b0115cecdfb911c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 0c05595c311367ca94e3327afd28bc5fa05f7ec2
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026951"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871084"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>İçinde profil oluşturma araçlarındaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Tanılama araçları, uygulamanızdaki düzeltme gereken sorunları belirlemenize yardımcı olmak için yeni görselleştirmeler içerir. Tanılama araçları, artık ASP.NET uygulamaları için destek içerir.
 
-Ek bilgi için bkz: [sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Ek bilgi için bkz: [sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
-A **özeti** sekmesinde, performans analizi için anahtar alanları odaklanmanıza yardımcı olan araçlar eklendi. Bu sekme kaç tane olay meydana gösterir, yığın anlık görüntüleri yararlanmanıza imkan sağlar ve CPU kullanım verilerini toplamayı hızlı bir şekilde etkinleştirmenize olanak tanır. Bu görünüm tüm gösterir [Application ınsights](/azure/azure-monitor/app/visual-studio) veya [UI analizi](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) olayları. Ayrıca, Visual Studio Enterprise için bu görünüm IntelliTrace olaylarını da gösterir.
+A **özeti** sekmesinde, performans analizi için anahtar alanları odaklanmanıza yardımcı olan araçlar eklendi. Bu sekme kaç tane olay meydana gösterir, yığın anlık görüntüleri yararlanmanıza imkan sağlar ve CPU kullanım verilerini toplamayı hızlı bir şekilde etkinleştirmenize olanak tanır. Bu görünüm tüm gösterir [Application ınsights](/azure/azure-monitor/app/visual-studio) veya [UI analizi](/visualstudio/releasenotes/vs2017-relnotes) olayları. Ayrıca, Visual Studio Enterprise için bu görünüm IntelliTrace olaylarını da gösterir.
 
 ![Tanılama araçları özeti sekmesi](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

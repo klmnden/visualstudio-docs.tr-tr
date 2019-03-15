@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942784"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867454"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller
 
@@ -40,7 +40,7 @@ Bu özelliklerin tümünü özelleştirebilir ve genişletebilirsiniz. Uzantıla
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[İlgili blog gönderileri](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[İlgili blog gönderileri](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 Gelişmiş teknikler ve sorun giderme konusunda kılavuz bilgiler için ziyaret [Visual Studio DSL & modelleme araçları genişletilebilirliği forumunu](http://go.microsoft.com/fwlink/?LinkID=186074).
 
@@ -69,10 +69,10 @@ Gelişmiş teknikler ve sorun giderme konusunda kılavuz bilgiler için ziyaret 
 
  [WPF Tabanlı Etki Alanına Özgü Dil Oluşturma](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Nasıl yapılır: Etki alanına özgü dil tasarımcısını genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Nasıl yapılır: Alana Özgü Dil Tasarımcısını Genişletme](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Nasıl yapılır: Bir etki alanına özgü dili yeni sürüme geçirme](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Nasıl yapılır: Alana Özgü Dili Yeni Sürüme Geçirme](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Visual Studio için Modelleme SDK'sı için API Başvurusu](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

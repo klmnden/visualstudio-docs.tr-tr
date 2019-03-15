@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c4f788a69d2be5aa7125c4ca19cb2cab4bf05a04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800842"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872427"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn Tanımı İletişim Kutusu
 **CorrelatesOn** iletişim kutusu kullanılan [!INCLUDE[wfd1](../includes/wfd1-md.md)] düzenlenecek <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> özelliği bir <xref:System.ServiceModel.Activities.Receive> etkinlik. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [alma](../workflow-designer/receive-activity-designer.md) konu.  
@@ -36,5 +36,4 @@ ms.locfileid: "54800842"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.ServiceModel.Activities.Receive>   
  [Correlationınitializer Ekle iletişim kutusu](../workflow-designer/add-correlationinitializers-dialog-box.md)   
- [Bağıntı iletişim kutusu Ekle](http://msdn.microsoft.com/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [Bağıntıyı Başlat İletişim Kutusu](../workflow-designer/initialize-correlation-dialog-box.md)

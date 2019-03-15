@@ -1,6 +1,6 @@
 ---
 title: 'CA1721: Özellik adları get metotları ile eşleşmemelidir'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1721
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 88a56a37248112d377b47054ed815a4aa2629f9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e2b9c878f630d9e739efc46380ecdfc6555880be
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953938"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869225"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Özellik adları get metotları ile eşleşmemelidir
 
@@ -34,27 +34,45 @@ ms.locfileid: "55953938"
 |Yeni Değişiklik|Yeni|
 
 ## <a name="cause"></a>Sebep
- Ortak veya korumalı bir üyenin adını 'Get' ile başlar ve aksi durumda ortak veya korumalı özellik adıyla eşleşen. Örneğin, 'GetColor' ve 'Color' adlı bir özellik adında bir yöntemi içeren bir tür, bu kuralı ihlal ediyor.
+
+Bir üyenin adını 'Get' ile başlar ve aksi takdirde bir özellik adıyla eşleşen. Örneğin, 'GetColor' ve 'Color' adlı bir özellik adında bir yöntemi içeren bir tür, bir kuralı ihlali neden.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen üye özellikleri de görünür, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
- Get yöntemleri ve özellikleri, açıkça işlevlerinden ayırt edilebilen adları olması gerekir.
 
- Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu tutarlılık kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır ve yeni bir yazılım kitaplığı öğrenmek için gereken süreyi azaltır.
+"Get" yöntemlerinin ve özelliklerinin açıkça işlevlerinden ayırt edilebilen adları olması gerekir.
+
+Adlandırma kuralları, ortak dil çalışma zamanını hedefleyen kitaplıkları için genel bir bakış sağlar. Bu tutarlılık kitaplık geliştirme yönetilen kodda uzmanlığına sahip olan kişi tarafından geliştirilmiştir müşterilerinizin size olan güvenini artırır ve yeni bir yazılım kitaplığı öğrenmek için gereken süreyi azaltır.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
- 'Get' önekli bir metot adı eşleşmiyor adı değiştirin.
+
+'Get' önekli bir metot adı eşleşmiyor adı değiştirin.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
- Bu kuraldan uyarıyı bastırmayın.
+
+Bu kuraldan uyarıyı bastırmayın.
 
 > [!NOTE]
-> Bu uyarı, Iextenderprovider arabirimi uygulayarak alma yöntemini neden oluyorsa atlanabilir.
+> Bu uyarı, Iextenderprovider arabirimi uygulayarak "Get" yöntemi neden oluyorsa atlanabilir.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1721.api_surface = private, internal
+```
+
+Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek, bir yöntem ve bu kuralı ihlal ediyor özelliği içerir.
 
- [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
- [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
+Aşağıdaki örnek, bir yöntem ve bu kuralı ihlal ediyor özelliği içerir.
+
+[!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
+[!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]
 
 ## <a name="related-rules"></a>İlgili kuralları
- [CA1024: Uygun yerlerde özellikler kullan](../code-quality/ca1024-use-properties-where-appropriate.md)
+
+- [CA1024: Uygun yerlerde özellikler kullan](../code-quality/ca1024-use-properties-where-appropriate.md)

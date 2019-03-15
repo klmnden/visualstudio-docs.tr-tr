@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 58c03bc81c9455cf33a439ca6e80fc646212cfd4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221885"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869050"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Birden fazla bilgisayara Visual Studio ayarları eşitleme
 
@@ -41,7 +41,7 @@ Varsayılan olarak, şu ayarlar eşitlenir:
 
    - Tüm ayarlar **ortam** > **başlangıç** seçenekler sayfası.
 
-   - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları.
+   - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları, örneğin, [kod stili tercihleri](code-styles-and-quick-actions.md).
 
    - Tüm ayarlar **XAML Tasarımcısı** seçenekler sayfaları.
 

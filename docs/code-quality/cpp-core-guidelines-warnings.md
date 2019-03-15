@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223500"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872440"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
@@ -187,7 +187,7 @@ Yerel Kod Analizi denetleyicisi (PREfast), özel MSBuild tarafından MSBuild ort
 
 Bu özellikler Microsoft.Cpp.targets dosyasının içeri aktarmadan önce eklediğinizden emin olun. Özel kural kümeleri seçin veya bir özel kural kümesi oluşturma veya PREfast diğer denetimleri içeren varsayılan kural kümesi kullanın.
 
-C++ temel denetleyici olarak aynı yaklaşımı kullanarak üzerinde yalnızca belirtilen dosyaları çalıştırıp çalıştıramayacağını [daha önce açıklanan](#coreckeck_per_file), ancak MSBuild dosyalarını kullanarak. Ortam değişkenlerini kullanarak ayarlayabilirsiniz `BuildMacro` öğesi:
+C++ temel denetleyici olarak aynı yaklaşımı kullanarak üzerinde yalnızca belirtilen dosyaları çalıştırıp çalıştıramayacağını [daha önce açıklanan](#corecheck_per_file), ancak MSBuild dosyalarını kullanarak. Ortam değişkenlerini kullanarak ayarlayabilirsiniz `BuildMacro` öğesi:
 
 ```xml
 <ItemGroup>

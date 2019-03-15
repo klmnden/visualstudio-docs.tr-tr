@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5ae83be9e2013a8aef1f9e17f4ba35cde4f7d9bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8184ae3085c6366256f37b3e5a034b70fcc3cd7a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753739"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869342"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
   
 - Özel Proje Türü Ekle  
   
-- Milyonlarca geliştirici Visual Studio Galerisi aracılığıyla ulaşın  
+- Milyonlarca geliştirici Visual Studio Market aracılığıyla ulaşın  
   
   Visual Studio uzantısı önce hiçbir zaman yazdıysanız, konumunda ve bu özellikler hakkında daha fazla bilgi bulmalısınız [Visual Studio uzantıları geliştirme başlangıç](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
@@ -56,7 +56,7 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
  Yararlanmak [Görüntü hizmeti ve Kataloğu](../extensibility/image-service-and-catalog.md) harika görüntü yönetimi ve yüksek DPI ve Tema oluşturma desteği.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Bulma ve mevcut Visual Studio uzantılarını yükleme  
- Visual Studio uzantılarınızdaki bulabilirsiniz **Uzantılar ve güncelleştirmeler** iletişim kutusunda **Araçları** menüsü. Daha fazla bilgi için [bulma ve Visual Studio uzantılarını kullanarak](../ide/finding-and-using-visual-studio-extensions.md). Uzantılar da bulabilirsiniz [Visual Studio Galerisi](https://visualstudiogallery.msdn.microsoft.com/)  
+ Visual Studio uzantılarınızdaki bulabilirsiniz **Uzantılar ve güncelleştirmeler** iletişim kutusunda **Araçları** menüsü. Daha fazla bilgi için [bulma ve Visual Studio uzantılarını kullanarak](../ide/finding-and-using-visual-studio-extensions.md). Uzantılar da bulabilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK Başvurusu  
  Visual Studio SDK'sı API Başvurusu, bulabilirsiniz [Visual Studio SDK başvurusu](../extensibility/visual-studio-sdk-reference.md).  

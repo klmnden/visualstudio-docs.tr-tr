@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49e636e223cc699aa73419bca0c41688eea2620c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798486"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867767"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Visual Studio Uzantıları’nı bulma ve kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio uzantıları Visual Studio içinde çalıştırın ve yeni veya ge
 >  Visual Studio 2015'ten başlayarak, Visual Studio Galerisi üzerinde barındırılan uzantıları otomatik olarak güncelleştirilir.  Bu ayarı yoluyla değiştirebilirsiniz **Uzantılar ve güncelleştirmeler** iletişim.  Bölümüne **otomatik uzantı güncelleştirmeleri** altındaki ayrıntılar için.
 
 ## <a name="finding-visual-studio-extensions"></a>Visual Studio uzantıları bulma
- Uzantılardan yükleyebileceğiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=178891) veya [örnek Galerisi](http://go.microsoft.com/fwlink/?LinkId=245175) Microsoft Web sitesinde. Uzantılar; denetimler, örnekler, şablonlar, araçlar veya Visual Studio'ya işlevsellik katan diğer bileşenler olabilir. Visual Studio, VSIX paketi biçimindeki uzantıları destekler; bu proje şablonları içerir, öğe şablonları, **araç kutusu** öğeleri, yönetilen uzantı çerçevesi (MEF) bileşenleri ve VSPackages. Ayrıca indirin ve MSI tabanlı uzantılar yükleyin ancak **Uzantılar ve güncelleştirmeler** iletişim kutusunu etkinleştirin veya devre dışı. Visual Studio Galerisi VSIX hem de MSI uzantıları içerir.
+ Uzantılardan yükleyebileceğiniz [Visual Studio Market](https://marketplace.visualstudio.com/) veya [örnek Galerisi](https://code.msdn.microsoft.com/vstudio) Microsoft Web sitesinde. Uzantılar; denetimler, örnekler, şablonlar, araçlar veya Visual Studio'ya işlevsellik katan diğer bileşenler olabilir. Visual Studio, VSIX paketi biçimindeki uzantıları destekler; bu proje şablonları içerir, öğe şablonları, **araç kutusu** öğeleri, yönetilen uzantı çerçevesi (MEF) bileşenleri ve VSPackages. Ayrıca indirin ve MSI tabanlı uzantılar yükleyin ancak **Uzantılar ve güncelleştirmeler** iletişim kutusunu etkinleştirin veya devre dışı. Visual Studio Galerisi VSIX hem de MSI uzantıları içerir.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Visual Studio uzantıları yükleme veya kaldırma
  İçinde **Uzantılar ve güncelleştirmeler**, yüklemek istediğiniz uzantıyı bulun. (Adı veya uzantı adının bir kısmını biliyorsanız, içinde arama yapabilirsiniz **Visual Studio Galerisi'nde Ara** penceresi.) Tıklayın **indirme**, ardından **yükleme**. Uzantıyı yüklemek için Visual Studio'yu yeniden başlatmanız gerekir.

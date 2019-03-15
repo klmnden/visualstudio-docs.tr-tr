@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d4e2fa9c05aab6bd3a70edd2eb3d4b1d447056e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792123"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867835"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Windows Forms Araç Kutusu Denetimi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç
      Sayaç sıfırlanır için **0**.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName*projenizin \bin\debug\ klasöründe .vsix. Bir ağ veya Web sitesine .vsix dosyasını karşıya yükleyerek denetim dağıtabilirsiniz. .Vsix dosyasını bir kullanıcı oturum açtığında, denetimin yüklenir ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, .vsix dosyasına yükleyebilirsiniz [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi kullanıcılar bunu göz atarak bulabilirsiniz **araçları / uzantı ve güncelleştirmeler** iletişim.  
+ Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName*projenizin \bin\debug\ klasöründe .vsix. Bir ağ veya Web sitesine .vsix dosyasını karşıya yükleyerek denetim dağıtabilirsiniz. .Vsix dosyasını bir kullanıcı oturum açtığında, denetimin yüklenir ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, .vsix dosyasına yükleyebilirsiniz [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi kullanıcılar bunu göz atarak bulabilirsiniz **araçları / uzantı ve güncelleştirmeler** iletişim.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç kutusu genişletme](../misc/extending-the-toolbox.md)   

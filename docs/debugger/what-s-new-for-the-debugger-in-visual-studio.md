@@ -1,5 +1,6 @@
 ---
 title: Hata Ayıklayıcı'Visual Studio 2017'deki yenilikler | Microsoft Docs
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993240"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867625"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Hata Ayıklayıcısı'ndaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Hata Ayıklayıcı'Visual Studio 2017'deki yenilikler
 
 Hata ayıklayıcı bu yeni özellikler içerir:
 
-- 15.5, yeni **Snapshot Debugger** ilgilendiğiniz kod yürütüldüğünde, üretim uygulamalarınızı anlık görüntüsünü alır. Bir anlık görüntüsünü almak için hata ayıklayıcı açmasını sağlamak için anlık görüntü noktaları ve günlüğe kaydetme noktaları kodunuzda ayarlayın. Hata ayıklayıcı, tam olarak üretim uygulamanızın trafiğini etkilemeden, çıktığına görmenizi sağlar. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
+- Yeni sürüm 15.5, **Snapshot Debugger** ilgilendiğiniz kod yürütüldüğünde, üretim uygulamalarınızı anlık görüntüsünü alır. Bir anlık görüntüsünü almak için hata ayıklayıcı açmasını sağlamak için anlık görüntü noktaları ve günlüğe kaydetme noktaları kodunuzda ayarlayın. Hata ayıklayıcı, tam olarak üretim uygulamanızın trafiğini etkilemeden, çıktığına görmenizi sağlar. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
 
     Anlık görüntü koleksiyonunu, Azure App Service'te çalışan aşağıdaki web uygulamaları için kullanılabilir:
 
@@ -38,7 +40,7 @@ Hata ayıklayıcı bu yeni özellikler içerir:
 
     Daha fazla bilgi için [Snapshot Debugger'ı kullanarak canlı ASP.NET uygulamaları için hata ayıklama](../debugger/debug-live-azure-applications.md).
 
-- Yalnızca, 15.5 Visual Studio Enterprise sürümünde yeni **IntelliTrace geri adım** otomatik olarak adım olay her bir kesme noktası ve hata ayıklayıcı uygulamanızın anlık görüntüsünü alır. Kaydedilen anlık görüntü, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntülemek etkinleştirin. IntelliTrace geri adım atma önceki uygulama durumu görmek istiyorsanız ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
+- Yeni sürüm 15.5 olarak Visual Studio Enterprise yalnızca **IntelliTrace geri adım** otomatik olarak adım olay her bir kesme noktası ve hata ayıklayıcı uygulamanızın anlık görüntüsünü alır. Kaydedilen anlık görüntü, önceki kesme noktaları veya adımlara geri dönün ve daha önce olduğu gibi uygulama durumunu görüntülemek etkinleştirin. IntelliTrace geri adım atma önceki uygulama durumu görmek istiyorsanız ancak hata ayıklamayı yeniden başlatın veya istenen uygulama durumu yeniden istemediğiniz durumlarda size zaman kazandırabilir.
 
     Gidin ve anlık görüntüleri kullanarak görüntüle **adım geriye dönük** ve **İleri** hata ayıklama araç çubuğu düğmeleri. Bu düğmeler görünen olaylar gidin **olayları** sekmesinde **tanılama araçları** penceresi.
 
@@ -66,7 +68,7 @@ Hata ayıklayıcı bu yeni özellikler içerir:
 
     ![Aramada iliştirme](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Bu yeni özellikler hakkında daha fazla bilgi için bkz. [için sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Bu yeni özellikler hakkında daha fazla bilgi için bkz. [için sürüm notları [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

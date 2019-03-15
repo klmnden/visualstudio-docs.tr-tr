@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59811e522268b7a9cb3993add76d2ace8dc3aada
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685501"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870421"
 ---
 # <a name="debugging-native-code"></a>Yerel Kodda Hata Ayıklama
 Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için teknikleri kapsar. Bu bölümde yer alan teknikleri, üst düzey tekniklerle aynıdır. Visual Studio hata ayıklayıcısını kullanarak mekanizması için bkz: [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)).
@@ -59,4 +59,6 @@ Bu bölüm, bazı yaygın hata ayıklama sorunları ve yerel uygulamalar için t
  [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md) hata ayıklama belgesinin en geniş bölümlerine bağlantılar sağlar. Bilgileri içeren hata ayıklayıcı, ayarlar ve hazırlık, kesme noktaları, özel durumların işlenmesi yenilikler Düzenle ve devam et, yönetilen kodda hata ayıklama, yerel kodda hata ayıklama, SQL ve kullanıcı arabirimi başvuruları hata ayıklama.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md) [Visual Studio'da hata ayıklama](../debugger/index.md)
+
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.md)

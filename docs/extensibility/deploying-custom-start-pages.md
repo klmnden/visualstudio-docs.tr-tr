@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693015"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873017"
 ---
 # <a name="deploy-custom-start-pages"></a>Özel başlangıç sayfaları dağıtma
 
@@ -29,7 +29,7 @@ Başlangıç sayfası proje şablonunu kullanarak bir başlangıç sayfası olu�
 
 -   Koyabilirsiniz *.vsix* dosyası bir ağ paylaşımına veya genel bir Web sitesi. Birisi bir dosyayı açtığında, başlangıç sayfası otomatik olarak yüklenir.
 
--   Karşıya yüklediğiniz *.vsix* dosyasını [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847) Web sitesi kullanıcılar kullanarak yükleyebilir **Uzantı Yöneticisi**.
+-   Karşıya yüklediğiniz *.vsix* dosyasını [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi kullanıcılar kullanarak yükleyebilir **Uzantı Yöneticisi**.
 
 Böylece değiştirebilir ve orijinal korumak başlangıç sayfası proje şablonu Visual Studio Başlangıç sayfası varsayılan bir kopyasını oluşturur.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2be60979298de7a4c10e55285f1cdedc01ba9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954471"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867754"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 
@@ -70,7 +70,7 @@ Yeni dosya için sürükleme işlemi yanıt vermelidir Şekil veya diyagram sın
 
      Daha fazla bilgi için [nasıl yapılır: Şekil veya Dekoratörde bir Click için araya girme](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-Tanımlama `IsAcceptableDropItem(e)` sürüklenen öğe kabul edilebilir olup ve öğe bırakıldığında modelinizi güncelleştirilecek ProcessDragDropItem(e) belirlemek için. Bu yöntemler olay bağımsız değişkenlerini öğesi ilk ayıklamanız gerekir. Bunu nasıl yapacağınız hakkında daha fazla bilgi için bkz. [sürüklenen öğe için bir başvuru almak nasıl](#extracting).
+Tanımlama `IsAcceptableDropItem(e)` sürüklenen öğe kabul edilebilir olup ve öğe bırakıldığında modelinizi güncelleştirilecek ProcessDragDropItem(e) belirlemek için. Bu yöntemler olay bağımsız değişkenlerini öğesi ilk ayıklamanız gerekir. Bunu nasıl yapacağınız hakkında daha fazla bilgi için bkz. [sürüklenen öğe için bir başvuru almak nasıl](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="define-gesture-handlers-by-using-mef"></a>MEF kullanarak hareket işleyicileri tanımlayın
 
@@ -114,7 +114,7 @@ MEF (Yönetilen Genişletilebilirlik Çerçevesi) en düşük yapılandırmayla 
 
      Sürüklenen nesne farklı türde olduğunda, gibi birden fazla hareket işleyicisi bileşeni oluşturabilirsiniz.
 
-3.  Hedef şekli, bağlayıcının ya da diyagramda sınıfları için kısmi sınıf tanımları ekleyin ve yöntemleri tanımlamak `IsAcceptableDropItem()` ve `ProcessDragDropItem()`. Bu yöntemler olay bağımsız değişkenlerini sürüklenen öğe ayıklayarak başlaması gerekir. Daha fazla bilgi için [sürüklenen öğe için bir başvuru almak nasıl](#extracting).
+3.  Hedef şekli, bağlayıcının ya da diyagramda sınıfları için kısmi sınıf tanımları ekleyin ve yöntemleri tanımlamak `IsAcceptableDropItem()` ve `ProcessDragDropItem()`. Bu yöntemler olay bağımsız değişkenlerini sürüklenen öğe ayıklayarak başlaması gerekir. Daha fazla bilgi için [sürüklenen öğe için bir başvuru almak nasıl](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Sürüklenen öğe kodunu çözme
 
@@ -132,7 +132,7 @@ Sürükle kaynak bilgileri kullanılabildiği biçimleri bulmak için hata ayık
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Ayrıca, kendi özel biçiminde kaynak modeli yol başvuruları gibi nesneleri iletebilir. Daha fazla bilgi için [gönderme modeli yol başvuruları bir Sürükle ve bırak nasıl](#mbr).
+         Ayrıca, kendi özel biçiminde kaynak modeli yol başvuruları gibi nesneleri iletebilir. Daha fazla bilgi için [gönderme modeli yol başvuruları bir Sürükle ve bırak nasıl](#to-send-an-object-from-a-source-dsl).
 
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Bir DSL veya UML model öğelerini sürükleyin açmasını istiyorsanız bu özelliği kullanın. Bir öğe grubu prototip, bir veya daha fazla nesneyi, bağlantılar ve özellik değerlerini içerir. Ayrıca, yapıştırma işlemlerine ve ne zaman araç kutusundan bir öğe ekleme kullanılır. Bir prototip içinde nesneler ve bunların türlerini GUID ile tanımlanır. Örneğin, bu kod, kullanıcının bir UML diyagram veya UML Model Gezgini sınıfı öğelerini sürükleyin izin verir:
 

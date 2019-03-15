@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 8afcf73c827976f01bbc71abf5eaddb4713c47a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764879"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57866990"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme
 Visual Studio 2010 yükseltebilir veya Visual Studio 2012 özel başlangıç sayfasına Visual Studio 2015 için aşağıda listelenen adımları izleyin.
@@ -22,7 +22,7 @@ Visual Studio 2010 yükseltebilir veya Visual Studio 2012 özel başlangıç say
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Özel başlangıç sayfası, Visual Studio 2015'e yükseltmek için
 
-1.  Visual Studio 2015 ve Visual Studio 2015 SDK yüklü olduğundan emin olun. VSSDK dan indirebileceğiniz [Microsoft Visual Studio 2013 SDK'sı](http://go.microsoft.com/?linkid=9863867).
+1.  Visual Studio 2015 ve Visual Studio 2015 SDK yüklü olduğundan emin olun. VSSDK dan indirebileceğiniz [Microsoft Visual Studio 2013 SDK'sı](https://my.visualstudio.com/Downloads?pid=1436).
 
 2.  Özel şablon projenizi açın. Yükseltilecek projedir bildiren bir ileti görürsünüz. Tıklayın **Tamam** ve yükseltmenin tamamlanması için bekleyin.
 

@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924479"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873674"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Mimarinizi çözümleme ve mimarinizin modelini oluşturma
 
@@ -109,5 +109,5 @@ Bir DSL belirli bir amaç için tasarım bir gösterimidir. Visual Studio'da, ge
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yenilikler](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [Modelleme Visual Studio 2017'deki yenilikler](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps ve uygulama yaşam döngüsü yönetimi](/azure/devops/user-guide/devops-alm-overview)

@@ -1,13 +1,10 @@
 ---
 title: Biçim tanımlayıcıları (C++) hata ayıklayıcısı | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227728"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870599"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı C++ için biçim belirticileri
-İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch** biçim belirticilerini kullanarak pencere.
+İçinde bir değer görüntülenir biçimini değiştirebilirsiniz **Watch**, **Otolar**, ve **Yereller** biçim belirticilerini kullanarak windows.
 
 İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresi içinde [izleme noktaları](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)ve hatta kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç görünür bir [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). DataTip görünen biçim belirticisini yansıtır.
 
@@ -57,8 +54,55 @@ Ekleme `my_var1` değişkenini **Watch** hata ayıklarken, pencere **hata ayıkl
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+Görüntüleyebilir ve değeri bir virgül (,) ekleyerek kullanılabilir biçim belirleyicilerinin bir listeden seçim **Watch** penceresi. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Biçim belirticileri
 Aşağıdaki tablolarda, Visual Studio'da kullanabileceğiniz biçim belirteçlerini açıklar. Yeni hata ayıklayıcının ve birlikte çalışma C + ile hata ayıklama için değil, kalın belirleyicilerde desteklenen yalnızca +/ CLI.
+
+::: moniker range=">= vs-2019" 
+
+|Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|
+|---------------|------------|--------------------------|---------------------|
+|d|Ondalık tamsayı|0x00000066|102|
+|o|imzalanmamış sekizlik tamsayı|0x00000066|000000000146|
+|x<br /><br /> **h**|Onaltılık tamsayı|102|0xcccccccc|
+|X<br /><br /> **H**|Onaltılık tamsayı|102|0xCCCCCCCC|
+|xb<br /><br /> **HB**|(baştaki 0 x) olmadan onaltılık tamsayı|102|cccccccc|
+|Xb<br /><br /> **HB**|(baştaki 0 x) olmadan onaltılık tamsayı|102|CCCCCCCC|
+|b|ikili işaretsiz tamsayı|25|0b00000000000000000000000000011001|
+|bb|(olmadan, önde gelen 0b) ikili işaretsiz tamsayı|25|00000000000000000000000000011001|
+|e|bilimsel gösterim|25000000|2.500000e + 07|
+|G|Bilimsel veya kayan nokta, kısa|25000000|2.5e + 07|
+|c|tek karakter|0x0065, c|101 'e'|
+|s|const char * (tırnak işaretleriyle) dize|\<konumu > "hello world"|"hello world"|
+|**sb**|const char * dizesini (tırnak işareti)|\<konumu > "hello world"|Merhaba Dünya|
+|s8|UTF-8 dizesi|\<konumu > "Bu bir UTF-8 kahve cup â˜•"|"Bu bir UTF-8 kahve cup ☕"|
+|**s8b**|UTF-8 dizesi (tırnak işareti)|\<konumu > "hello world"|Merhaba Dünya|
+|Su|Unicode (UTF-16 kodlaması) dizesi (tırnak işaretleriyle)|\<Konum > L "Merhaba Dünya"|L "Merhaba Dünya"<br /><br /> "hello world" u|
+|alt|Unicode (UTF-16 kodlaması) dizesi (tırnak işareti)|\<Konum > L "Merhaba Dünya"|Merhaba Dünya|
+|bstr|BSTR ikili dosya dizesine (tırnak işaretleriyle)|\<Konum > L "Merhaba Dünya"|L "Merhaba Dünya"|
+|env|Ortam bloğuna (çift null sonlandırılan dize)|\<Konum > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: C =:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|**s32**|UTF-32 dizesiyle (tırnak işareti)|\<konumu > "hello world" U|U"hello world"|
+|**s32b**|UTF-32 dize (tırnak işareti)|\<konumu > "hello world" U|Merhaba Dünya|
+|**tr**|enum|Saturday(6)|Cumartesi|
+|**hv**|İşaretçi türü - Denetlenmekte olan işaretçi değeri bir dizi yığın ayırma sonucunu örneğin olduğunu gösterir `new int[3]`.|\<Konum > {\<ilk üye >}|\<Konum > {\<ilk üye >, \<ikinci üye >,...}|
+|**na**|Bir işaretçinin bir nesne için bellek adresi bastırır.|\<Konum >, {üye = değer...}|{üye = değer...}|
+|**ND**|Türetilmiş sınıfları yok yalnızca temel sınıf bilgilerini görüntüler|`(Shape*) square` temel sınıf içerir ve türetilen sınıf bilgileri|Görüntüler, yalnızca sınıf bilgileri temel|
+|İK|HRESULT veya Win32 hata kodu. Hata ayıklayıcının bunları otomatik olarak kodunu çözer gibi bu belirtici artık HRESULT'ları için gereklidir.|S_OK|S_OK|
+|WC|Pencere sınıfı bayrağı|0x0010|WC_DEFAULTCHAR|
+|WM|Windows ileti numaraları|16|WM_CLOSE KOMUTU|
+|n|"Ham görünümü" öğesi Gizle|
+|nvo|Yalnızca sayısal değerler için "Ham görünümünün" öğesini göster|
+|!|herhangi bir veri türü görünümü özelleştirmelerini yok sayan, ham biçim|\<gösterim özelleştirilmiş >|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ Aşağıdaki tablolarda, Visual Studio'da kullanabileceğiniz biçim belirteçle
 |WM|Windows ileti numaraları|16|WM_CLOSE KOMUTU|
 |!|herhangi bir veri türü görünümü özelleştirmelerini yok sayan, ham biçim|\<gösterim özelleştirilmiş >|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Zaman **hv** Biçim belirleyicisi varsa, hata ayıklayıcı arabellek uzunluğunu belirlemek ve söz konusu öğelerin sayısını görüntülemek çalışır. Her zaman bir dizinin tam arabellek boyutunu bulmak hata ayıklayıcının mümkün olmadığı için belirleyici Boyutlandır kullanması gereken `(pBuffer,[bufferSize])` mümkün olduğunda. **Hv** biçim belirticisi, arabellek boyutu kullanılabilir olmadığı durumlarda kullanışlıdır
+> Zaman **hv** Biçim belirleyicisi varsa, hata ayıklayıcı arabellek uzunluğunu belirlemek ve söz konusu öğelerin sayısını görüntülemek çalışır. Her zaman bir dizinin tam arabellek boyutunu bulmak hata ayıklayıcının mümkün olmadığı için belirleyici Boyutlandır kullanması gereken `(pBuffer,[bufferSize])` mümkün olduğunda. **Hv** biçim belirticisi, arabellek boyutu kullanılabilir olmadığı durumlarda kullanışlıdır.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Diziler olarak işaretçiler için tanımlayıcılar boyutlandırın
 Bir dizi olarak görüntülemek istediğiniz bir nesne işaretçiniz varsa, dizi öğelerinin sayısını belirtmek için bir tamsayı ya da bir ifade kullanabilirsiniz.

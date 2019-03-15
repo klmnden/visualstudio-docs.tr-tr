@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908471"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868917"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv komut satırı anahtarları
 
@@ -67,6 +67,7 @@ Aşağıdaki komut satırı anahtarları, IDE görüntülemek ve açıklandığ�
 |[/Command](command-devenv-exe.md)|IDE'yi başlatır ve belirtilen komutu yürütür.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Hata ayıklayıcının denetiminin altında bir C++ yürütülebilir dosyayı yükler. Visual Basic için bu anahtarı kullanılamıyor veya C# yürütülebilir. Daha fazla bilgi için [otomatik olarak hata ayıklayıcıda bir işlem başlatmak](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|İki dosyayı karşılaştırır. Dört parametre alır: *Kaynakdosya*, *TargetFile*, *SourceDisplayName* (isteğe bağlı) ve *TargetDisplayName* (isteğe bağlı).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/ DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Tüm projeler yükleniyor olmadan belirtilen çözümü açar.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Belirtilen dosyalar, bu uygulamanın çalışan bir örneğini açar. Varsa çalışan örnek yoksa Basitleştirilmiş pencere düzenini ile yeni bir örneğini başlatır.<br /><br /> `devenv /edit File1 File2`|
 |[/ LCID veya/l](lcid-devenv-exe.md)|IDE için varsayılan dili ayarlar. Belirtilen dil Visual Studio yüklemenizde bulunmaz, bu ayar yoksayılır.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Visual Studio başlatılır ve tüm etkinlik günlük dosyasına kaydeder.<br /><br /> `devenv /log mylogfile.xml`|

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700152"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870586"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData Öğesi (Visual Studio Şablonları)
 Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.
@@ -58,7 +58,7 @@ ms.locfileid: "56700152"
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Proje bir örneğinin üzerinde içeren bir klasör oluşturulup oluşturulmayacağını belirtir. |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Oluşturulduğunda, Visual Studio Proje sistemi oluşturacak proje veya öğe için ad belirtir. |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Visual Studio Proje sistemi oluşturulduğunda bir proje veya öğe için varsayılan adı oluşturmak olup olmadığını belirtir. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Geçici bir proje olarak proje oluşturulup oluşturulamayacağını belirtir. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Geçici bir proje (Visual Studio 2017 yalnızca) proje oluşturulup oluşturulamayacağını belirtir. |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Belirtir olup olmadığını **Gözat** düğmesi kullanılabilir **yeni proje** iletişim kutusunda, böylece kullanıcıların kolayca yeni bir proje kaydedildiği varsayılan dizini değiştirebilirsiniz. |
 | [Gizli](../extensibility/hidden-element-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Şablon ya da görüntülenip görüntülenmeyeceğini belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | İsteğe bağlı öğe.<br /><br /> Şablonda görüntüler üst kategori sayısını belirtir **yeni proje** iletişim kutusu. |

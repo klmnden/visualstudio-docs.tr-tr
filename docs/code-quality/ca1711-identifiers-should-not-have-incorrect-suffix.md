@@ -1,6 +1,6 @@
 ---
 title: 'CA1711: Tanımlayıcılar yanlış sonek içermemelidir'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970237"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871895"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Tanımlayıcılar yanlış sonek içermemelidir
 
@@ -33,6 +33,8 @@ ms.locfileid: "55970237"
 ## <a name="cause"></a>Sebep
 
 Bir tanımlayıcı yanlış bir son eke sahip.
+
+Varsayılan olarak, bu kural yalnızca dışarıdan görünen tanımlayıcıları görünüyor, ancak bu [yapılandırılabilir](#configurability).
 
 ## <a name="rule-description"></a>Kural açıklaması
 
@@ -72,6 +74,16 @@ Tür adından soneki kaldırın.
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 
 Sonekte uygulama etki alanında açık bir anlama sahip olmadığı sürece bu kuraldan bir uyarıyı bastırmayın.
+
+## <a name="configurability"></a>Etkiler ve yapılandırma
+
+Bu kuraldan çalıştırıyorsanız [FxCop Çözümleyicileri](install-fxcop-analyzers.md) (ve statik kod analizi üzerinden değil), hangi parçalarının yapılandırabilirsiniz, bu kuralı çalıştırmak için kod tabanı, kendi erişilebilirliği temel. Örneğin, kural yalnızca genel olmayan API yüzeyi karşı çalışması gerektiğini belirtmek için projenizi bir .editorconfig dosyasında şu anahtar-değer çifti ekleyin:
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+Bu kategoride (adlandırma), bu seçenek yalnızca bu kural, tüm kuralları veya tüm kuralları yapılandırabilirsiniz. Daha fazla bilgi için [yapılandırma FxCop Çözümleyicileri](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>İlgili kuralları
 

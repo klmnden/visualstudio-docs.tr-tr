@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 9c6af35b4532b14adc914ab2358745df53f68804
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222993"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868236"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio performans ipuçları ve püf noktaları
 
@@ -25,7 +25,7 @@ Visual Studio performans önerisi, nadir durumlarda oluşabilir düşük bellek 
 
 Sisteminiz Windows 32-bit sürümünden bir 64 bit sürümüne yükseltirseniz, 2 GB ile 4 GB Visual Studio için kullanılabilir sanal bellek miktarını genişletirsiniz. 32 bit işlem olsa bile bu önemli ölçüde daha büyük iş yüklerini işlemek üzere Visual Studio sağlar.
 
-Daha fazla bilgi için [bellek sınırlarını](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) ve [/largeaddressaware 64 bit Windows üzerinde kullanmak](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Daha fazla bilgi için [bellek sınırlarını](/windows/desktop/Memory/memory-limits-for-windows-releases) ve [/largeaddressaware 64 bit Windows üzerinde kullanmak](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Otomatik dosya geri yükleme devre dışı bırak
 

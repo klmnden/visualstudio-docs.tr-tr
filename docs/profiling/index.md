@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Profil oluşturma kullanarak ölçü uygulama performansını | Microsoft Docs
-description: 'Bilgi nasıl uygulamaları, hizmetleri ve araçları, tercih ettiğiniz dilde performans profil için Visual Studio 2017''yi kullanın.'
+description: 'Nasıl Visual Studio profili, uygulamalarınızın performansını Hizmetleri ve tercih ettiğiniz dilde araçları öğrenin.'
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000

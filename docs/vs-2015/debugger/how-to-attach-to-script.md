@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84f2ad17a2dd97683ec01d3d97b5d28ddb883f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790790"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869269"
 ---
 # <a name="how-to-attach-to-script"></a>Nasıl yapılır: Betiğe ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Bu konuda, bir komut dosyası hata ayıklama için Visual Studio hata ayıklayı
 > [!NOTE]
 >  Güvenilmeyen bir kullanıcı tarafından sahip olunan bir işlem eklemeye çalışırsanız, bir güvenlik uyarısı iletişim kutusu onayı görünecektir. Daha fazla bilgi için [güvenlik uyarısı: Güvenilmeyen bir kullanıcının sahip olduğu işleme ekleme tehlikeli olabilir. Aşağıdaki bilgiler kuşkulu görünüyorsa ya da emin değilseniz, bu işleme eklemeyin](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).  
   
- Bazı durumlarda, bir Terminal Hizmetleri (Uzak Masaüstü) oturumunda hata ayıklaması yapıyorsanız kullanılabilir işlemler listesi kullanılabilir tüm işlemleri görüntülemez. Üzerinde [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] veya sonraki sürümleri, Visual Studio sınırlı bir kullanıcı olarak çalıştırıyorsanız kullanılabilir işlemler listesi gösterilmez Hizmetleri için kullanılan oturum 0'da çalışan işlemler ve w3wp.exe dahil olmak üzere diğer sunucu işlemleri. Visual Studio'yu bir yönetici hesabı altında çalışan veya Visual Studio, bir Terminal Hizmetleri oturumu yerine sunucu konsolunun çalıştırarak sorunu çözebilirsiniz. Bu geçici çözümlerden biri Mümkünse, üçüncü seçenek olmasına vsjitdebugger.exe yazarak işlemine eklemek için Windows komut satırınalodctr ProcessId -p. Tlist.exe kullanarak işlem kimliğini belirleyebilirsiniz. Tlist.exe'yi edinmek için indirme ve hata ayıklama araçları için Windows, kullanılabilir yükleme [Windows Donanım Geliştirme Merkezi](http://go.microsoft.com/fwlink/?linkid=1651).  
+ Bazı durumlarda, bir Terminal Hizmetleri (Uzak Masaüstü) oturumunda hata ayıklaması yapıyorsanız kullanılabilir işlemler listesi kullanılabilir tüm işlemleri görüntülemez. Üzerinde [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] veya sonraki sürümleri, Visual Studio sınırlı bir kullanıcı olarak çalıştırıyorsanız kullanılabilir işlemler listesi gösterilmez Hizmetleri için kullanılan oturum 0'da çalışan işlemler ve w3wp.exe dahil olmak üzere diğer sunucu işlemleri. Visual Studio'yu bir yönetici hesabı altında çalışan veya Visual Studio, bir Terminal Hizmetleri oturumu yerine sunucu konsolunun çalıştırarak sorunu çözebilirsiniz. Bu geçici çözümlerden biri Mümkünse, üçüncü seçenek olmasına vsjitdebugger.exe yazarak işlemine eklemek için Windows komut satırınalodctr ProcessId -p. Tlist.exe kullanarak işlem kimliğini belirleyebilirsiniz. Tlist.exe'yi edinmek için indirme ve hata ayıklama araçları için Windows, kullanılabilir yükleme [Windows Donanım Geliştirme Merkezi](https://developer.microsoft.com/windows/hardware).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İstemci tarafı betikte hata ayıklama](../debugger/client-side-script-debugging.md)   

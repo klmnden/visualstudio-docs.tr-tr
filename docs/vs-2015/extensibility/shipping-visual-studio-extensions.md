@@ -12,12 +12,12 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed8080b8e470276a38fbf300edbf801dc8e141fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785268"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873434"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio Uzantıları Gönderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Uzantınızı geliştirme bitirdikten sonra diğer makinelere yükleyin, arkada�
  VSIX biçimi, kod parçacıkları yüklenmesini desteklemez. Genel Derleme Önbelleği (GAC) için veya sistem kayıt defterine yazma gibi diğer bazı senaryolar da desteklemez. GAC veya kayıt defterinde yükleme için yazmanız gereken Windows Yükleyici kullanmanız gerekir. Daha fazla bilgi için [hazırlama uzantıları için Windows Installer dağıtımı](../extensibility/preparing-extensions-for-windows-installer-deployment.md).
 
 ## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Uzantınız için Visual Studio Galerisine yayımlama
- Yalnızca bir sunucuya yerleştirmeyi ya da bunları .vsix dosyasını posta tarafından uzantınızı diğer kişilere dağıtabilirsiniz. Ancak birçok kişinin elinizde kodunuzu almak için en iyi yolu, yerleştirip [Visual Studio Galerisi](http://go.microsoft.com/fwlink/?LinkID=123847). Uzantılar Visual Studio Galerisi aracılığıyla Visual Studio kullanıcılara kullanılabilir **Uzantılar ve güncelleştirmeler**. Daha fazla bilgi için [bulma ve Visual Studio uzantılarını kullanarak](../ide/finding-and-using-visual-studio-extensions.md).
+ Yalnızca bir sunucuya yerleştirmeyi ya da bunları .vsix dosyasını posta tarafından uzantınızı diğer kişilere dağıtabilirsiniz. Ancak birçok kişinin elinizde kodunuzu almak için en iyi yolu, yerleştirip [Visual Studio Market](https://marketplace.visualstudio.com/). Uzantılar Visual Studio Galerisi aracılığıyla Visual Studio kullanıcılara kullanılabilir **Uzantılar ve güncelleştirmeler**. Daha fazla bilgi için [bulma ve Visual Studio uzantılarını kullanarak](../ide/finding-and-using-visual-studio-extensions.md).
 
  Bir uzantıyı karşıya yüklemek için Visual Studio Galerisine gösteren tam bir örnek için bkz. [izlenecek yol: Visual Studio uzantısı yayımlama](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 

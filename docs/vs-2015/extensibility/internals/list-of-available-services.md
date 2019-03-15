@@ -11,12 +11,12 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6eef832ae8b8bc912b79185cbc9cc6271ccb9924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768356"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868342"
 ---
 # <a name="list-of-available-services"></a>Kullanılabilir Hizmetlerin Listesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,5 +160,5 @@ ms.locfileid: "54768356"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|Evet|Evet|Belirli bir meta veri dosyası ile ilişkili olan XML biçimli belge dosyaları erişim sağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [COM ve yönetilen hizmetler](http://msdn.microsoft.com/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM ve yönetilen hizmetler](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [Hizmetleri Kullanma ve Sağlama](../../extensibility/using-and-providing-services.md)

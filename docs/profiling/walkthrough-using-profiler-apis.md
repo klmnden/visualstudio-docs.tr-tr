@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 260510c918bc38a2555ff04e711c4a5c728066dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637795"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868220"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API'ler kullanma
+# <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API’lerini kullanma
 
 İzlenecek yol, nasıl kullanılacağını göstermek için bir C# uygulaması kullanır. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları API'leri. Profil Oluşturucu API izleme profil oluşturma sırasında toplanan veri miktarını sınırlamak için kullanın.
 
@@ -30,7 +30,12 @@ ms.locfileid: "56637795"
 
  Visual Studio Profil Oluşturucu veri koleksiyonu sınırlamanıza olanak sağlar. Bu izlenecek yol, profil oluşturucu API kullanarak veri koleksiyonunu sınırlamak nasıl bir örnek sağlar. Visual Studio profil oluşturucu uygulamaya denetleme veri toplama için bir API sağlar.
 
+ ::: moniker range=">=vs-2019"
+ Yerel kod için Visual Studio profil oluşturma API'leri bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\PerfSDK* Dizin.  64-bit uygulamalar için klasördür *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\x64\PerfSDK*
+ ::: moniker-end
+ ::: moniker range="vs-2017"
  Yerel kod için Visual Studio profil oluşturma API'leri bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\PerfSDK* Dizin.  64-bit uygulamalar için klasördür *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\x64\PerfSDK*
+ ::: moniker-end
 
  Yönetilen kod için profil oluşturucu API bulunan *Microsoft.VisualStudio.Profiler.dll*. Bu DLL bulunan *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin. 64-bit uygulamalar için klasördür *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Profiler>.
 

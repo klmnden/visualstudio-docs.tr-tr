@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24785b4f39265b71c3f1cb18b4331ded53652905
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526769"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873129"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise için IntelliTrace (C#, Visual Basic, C++)
 
@@ -52,7 +52,7 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 
 | | |
 |---------------------| - |
-| **Tam destek** | -.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br/>IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services). |
+| **Tam destek** | -.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br/>IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Sınırlı destek** | -Windows Destek IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme hedefleyen C++ uygulamaları. Yalnızca hata ayıklayıcı ve özel durum olaylarını desteklenir.<br />-.NET core ve ASP.NET Core uygulamaları belirli yerel hata ayıklama yalnızca olaylar (MVC denetleyicisi, ADO.NET ve HTTPClient olaylarını) desteklenir. Tek başına Toplayıcı, .NET Core veya ASP.NET Core uygulamaları için desteklenmez.<br />- F# Deneysel olarak uygulamalar<br />-Yalnızca olaylar için desteklenen UWP uygulamaları |
 | **Desteklenmiyor** | -Diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] uygulamaları |
 
@@ -91,7 +91,7 @@ Bu kaynaklardan IntelliTrace verisi kaydedebilirsiniz:
 
 - Dağıtılan bir uygulamada hata veya kilitlenme oluşur.
 
-     Uygulamayı yayımlamadan önce Microsoft Azure tabanlı uygulamalar için IntelliTrace veri toplamayı yapılandırabilirsiniz. Uygulamanız çalışırken, IntelliTrace veriyi bir .iTrace dosyasına kaydeder. Bkz: [IntelliTrace ve Visual Studio ile yayımlanan bulut hizmeti hata ayıklama](http://go.microsoft.com/fwlink/?LinkID=262248).
+     Uygulamayı yayımlamadan önce Microsoft Azure tabanlı uygulamalar için IntelliTrace veri toplamayı yapılandırabilirsiniz. Uygulamanız çalışırken, IntelliTrace veriyi bir .iTrace dosyasına kaydeder. Bkz: [IntelliTrace ve Visual Studio ile yayımlanan bulut hizmeti hata ayıklama](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
      IIS 7.0, 7.5 ve 8.0'da barındırılan ASP.NET web uygulamaları ve SharePoint 2010 ya da SharePoint 2013 uygulamalarında, IntelliTrace verisini bir .iTrace dosyasına kaydetmek için Microsoft İzleme Aracısı'nı tek başına ya da System Center 2012 ile birlikte kullanın.
 

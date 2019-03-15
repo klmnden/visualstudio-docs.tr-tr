@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b4e257f77d29a75e0400d9dd43030fc479c04c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5253ae96be2ccb0e7057bab297237bf773ad82b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711208"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868371"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -286,7 +286,7 @@ Visual Studio 2015 veya önceki kullanılabilir [visualstudio.microsoft.com/vs/o
 
 <br/>
 
-1. Visual Studio 2012 için Git desteği kullanılabilir Git uzantısı için Visual Studio Araçları'nda mevcuttur [Visual Studio Galerisi](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
+1. Visual Studio 2012 için Git desteği kullanılabilir Git uzantısı için Visual Studio Araçları'nda mevcuttur [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
 1. Dağıtım için Azure Web sitesi gerektirir [.NET 2.1 - Visual Studio 2010 SP1 için Azure SDK'sı](https://go.microsoft.com/fwlink/?LinkId=313855). Sonraki sürümleri, Visual Studio 2010 desteklemez.
 

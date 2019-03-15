@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12f5c759e921ca1659e2821961e6295e096d19b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783549"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868244"
 ---
 # <a name="using-dump-files"></a>Döküm dosyalarını kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Yığınlar içeren veya içermeyen döküm dosyaları; bir döküm dosyası olu
   
 - Hata ayıklamak için [çekirdek modu](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) döküm dosyalarını Visual Studio 2013'te, yükleme [Windows 8.1 sürümünü, hata ayıklama araçları için Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Bkz: [Visual Studio'da çekirdek hata ayıklama](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
-- Visual Studio olarak bilinen eski döküm biçiminde kaydedilen döküm dosyalarının hatalarını ayıklayamaz bir [tam kullanıcı modu dökümü](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tam kullanıcı modu dökümünün yığını olan bir dökümle aynı olmadığına dikkat edin.  
+- Visual Studio olarak bilinen eski döküm biçiminde kaydedilen döküm dosyalarının hatalarını ayıklayamaz bir [tam kullanıcı modu dökümü](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Tam kullanıcı modu dökümünün yığını olan bir dökümle aynı olmadığına dikkat edin.  
   
 - İle hata ayıklamak için [SOS.dll (SOS Debugging Extension)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) Visual Studio'da hata ayıklama araçları için Windows Sürücü Seti'nin (WDK) parçası olan Windows yüklemeniz gerekir. Bkz: [Windows 8.1 önizleme: Setleri, bitleri ve araçları indirme](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   

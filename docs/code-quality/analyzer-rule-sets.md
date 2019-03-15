@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932020"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867003"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn çözümleyicilerini için kural kümeleri
 
-Önceden tanımlanmış kural kümeleri bazı NuGet Çözümleyicisi paketleri dahil edilir. Örneğin, eklenen kural kümesi [Microsoft.CodeAnalysis.FxCopAnalyzers NuGet Çözümleyicisi paketi](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) etkinleştirin veya adlandırma, güvenlik gibi kategorilerine göre kuralları devre dışı bırak (sürüm 2.6.2 başlayarak) veya performans. Kural kümeleri kullanma, kuralın belirli bir kategoriye ait kural ihlalleri hızlıca görmek kolaylaştırır.
+Önceden tanımlanmış kural kümeleri bazı NuGet Çözümleyicisi paketleri dahil edilir. Örneğin, eklenen kural kümesi [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Çözümleyicisi paketi (sürüm 2.6.2 başlayarak) etkinleştirmek veya adlandırma, güvenlik gibi kategorilerine göre kuralları devre dışı bırakın veya performans. Kural kümeleri kullanma, kuralın belirli bir kategoriye ait kural ihlalleri hızlıca görmek kolaylaştırır.
 
 Eski "FxCop" statik kod analizi için Roslyn Çözümleyicileri geçiriyorsanız, bu kural kümeleri, daha önce kullandığınız aynı kuralı yapılandırmaları kullanmaya devam etmek etkinleştirin.
 
@@ -41,7 +41,7 @@ Paketteki tüm kuralları etkiler üç rulesets önceden tanımlanmış Çözüm
 
 Ayrıca, performans veya güvenlik gibi paket kurallarında her kategorisi için iki kural kümesi vardır. Bir kural kümesi kategorisi için tüm kuralları etkinleştirir ve varsayılan önem derecesi ve etkinleştirme ayarları kategorideki her kural için bir kural kümesi geliştirir.
 
- [Microsoft.CodeAnalysis.FxCopAnalyzers NuGet Çözümleyicisi paketi](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) için eski "FxCop" statik kod analizi kural kümesi eşleştirmek için gereken şu kategorileri için kural kümeleri içerir:
+[Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Çözümleyicisi paketi hangi eşleşme kuralını eski "FxCop" statik kod analizi için kullanılabilen ayarlar aşağıdaki kategoriler için kural kümeleri içerir:
 
 - tasarlama
 - belgeler
@@ -54,7 +54,8 @@ Ayrıca, performans veya güvenlik gibi paket kurallarında her kategorisi için
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+- [Çözümleyiciler SSS](analyzers-faq.md)
 - [.NET derleyici platformu Çözümleyicileri genel bakış](roslyn-analyzers-overview.md)
-- [.NET derleyici platformu çözümleyicilerini yükleme](install-roslyn-analyzers.md)
-- [Yapılandırma ve Roslyn çözümleyicisi kuralları kullanma](use-roslyn-analyzers.md)
+- [Çözümleyicilerini yükleme](install-roslyn-analyzers.md)
+- [Çözümleyiciler kullanın](use-roslyn-analyzers.md)
 - [Kural Kod Analizi kurallarını gruplandırmak için kümeleri kullanma](using-rule-sets-to-group-code-analysis-rules.md)

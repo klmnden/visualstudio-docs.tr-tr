@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687893"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873018"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Bir Windows Forms araç kutusu denetimi oluşturma
 Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu otomatik olarak eklenen bir denetim oluşturmanızı sağlar **araç kutusu** uzantısı yüklü olduğunda. Bu konuda, diğer kullanıcılarına dağıtabileceğiniz bir basit bir sayaç denetimi oluşturmak için şablonu kullanmayı gösterir.
@@ -206,7 +206,7 @@ Windows Forms araç kutusu denetim şablonu tanımlanmamış kullanıcı denetim
     Sayaç sıfırlanır için **0**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* projenizin \bin\debug\ klasöründeki. Denetim yükleyerek dağıtabileceğiniz *.vsix* bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Market](http://go.microsoft.com/fwlink/?LinkID=123847) böylece kullanıcılar, göz atarak bulabilirsiniz **Araçları**  >   **Uzantı ve güncelleştirmeler** iletişim.
+Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* projenizin \bin\debug\ klasöründeki. Denetim yükleyerek dağıtabileceğiniz *.vsix* bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Market](https://marketplace.visualstudio.com/) böylece kullanıcılar, göz atarak bulabilirsiniz **Araçları**  >   **Uzantı ve güncelleştirmeler** iletişim.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)

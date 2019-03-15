@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89bb8b28333bd7607dda9515a137bd75283a9e5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779827"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868294"
 ---
 # <a name="creating-bootstrapper-packages"></a>Önyükleyici Paketleri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |ApplicationName|Uygulamanın adı.|  
 |ProcessorArchitecture|İşlemci ve BITS başına word bir yürütülebilir dosya tarafından hedeflenen platformun. Değerler aşağıdakileri içerir:<br /><br /> -Intel<br />-   IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95, Windows 98 veya Windows ME işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
-|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 veya Windows 7 işletim sistemlerine ilişkin sürüm numarasıdır. Sürümün sözdizimi Major.Minor.ServicePack öğesidir.|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Windows Installer derlemesinin (msi.dll) sürümü, yükleme sırasında çalıştırın.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Bu özellik, kullanıcının yönetici ayrıcalıkları varsa ayarlanır. Değerler şunlardır: true veya false.|  
 |InstallMode|Yükleme modu bileşenin nereden yüklenmesi gereken yere gösterir. Değerler aşağıdakileri içerir:<br /><br /> -HomeSite - Önkoşullar satıcının Web sitesinden yüklenir.<br />-SpecificSite - Önkoşullar seçtiğiniz konumdan yüklenir.<br />-SameSite - Önkoşullar uygulama ile aynı konumdan yüklenir.|  

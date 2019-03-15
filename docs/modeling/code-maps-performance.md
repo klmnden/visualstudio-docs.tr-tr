@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913190"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872394"
 ---
 # <a name="improve-performance-for-code-maps"></a>Kod haritaları için performansı
 
 İlk kez bir eşleme oluşturduğunuzda, Visual Studio bulduğu tüm bağımlılıkların dizinini oluşturur. Bu işlem, özellikle büyük çözümler için biraz zaman alabilir ancak sonraki performansını artırır. Kod değişirse, Visual Studio yalnızca güncelleştirilmiş kod reindexes. Harita işleme tamamlamak geçen süreyi en aza indirmek için aşağıdaki önerileri göz önünde bulundurun:
 
-- [İlginizi çeken bağımlılıkların eşleyin.](#create-a-code-map-to-see-specific-dependencies)
+- İlginizi çeken bağımlılıkların eşleyin.
 
 - Çözümün tamamı için harita oluşturmadan önce çözüm kapsamını azaltın.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0db008584f07aab9c3d70047ac5cb4f99b645cf3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fd1387e02b96c9a5a4781e014641a49bbb5280ba
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779971"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867247"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace Genişletilebilirliği için API Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,5 +32,5 @@ Bu bölümdeki bilgileri kullanarak, okuma ve uygulamanızda .itrace dosyaları 
  [IntelliTrace](../debugger/intellitrace.md)  
  IntelliTrace ile hata ayıklama hakkında bilgi sağlar.  
   
- [MSDN Kod Galerisi](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [MSDN Kod Galerisi](https://code.msdn.microsoft.com/)  
  IntelliTrace genişletilebilirliğin nasıl kullanılacağını gösteren bir örnek uygulama barındırır.

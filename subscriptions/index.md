@@ -6,7 +6,7 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: Visual Studio'ya Hoş Geldiniz abonelikler
 Searchscope: VS Subscription
 ---
 
@@ -150,7 +150,7 @@ Aboneliğinize daha kullanışlı hale getirmek için ekleme ve abonelik avantaj
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Mac için Visual Studio</li>
-                            <li>Team Foundation Server ve TFS CAL</li>
+                            <li>Azure DevOps sunucusu ve CAL</li>
                         </ul>
                     </div>
                 </div>

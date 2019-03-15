@@ -8,24 +8,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89e741e4f854f0426a3b3908b896a8908325684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634818"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868956"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Profil oluşturma araçları komut satırı araçları yolunu belirtme
+
 Yolu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları komut satırı araçları, PATH ortam değişkenine eklenmez. 32-bit bilgisayarlarda, tek bir dizinde araçlardır. Profil oluşturma araçlarından 64-bit bilgisayarlarda 32 bit ve 64-bit sürümleri vardır.
 
 ## <a name="32-bit-computers"></a>32-bit bilgisayarlar
+::: moniker range=">=vs-2019"
+ Yerel kod için Visual Studio profil oluşturma API'leri bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\PerfSDK* Dizin.
+::: moniker-end
+::: moniker range="vs-2017"
  Yerel kod için Visual Studio profil oluşturma API'leri bulunan *VSPerf.dll*. Üstbilgi dosyası *VSPerf.h*ve içeri aktarma kitaplığını *VSPerf.lib*, bulunan *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\PerfSDK* Dizin.
+::: moniker-end
 
  Yönetilen kod için profil oluşturucu API bulunan *Microsoft.VisualStudio.Profiler.dll*. Bu DLL bulunan *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin.
 
 ## <a name="64-bit-computers"></a>64 bit bilgisayarlar
- 64-bit bilgisayarlarda, profili oluşturulan uygulamanın hedef platformu göre yolu belirtin.
 
+64-bit bilgisayarlarda, profili oluşturulan uygulamanın hedef platformu göre yolu belirtin.
+
+::: moniker range=">=vs-2019"
+-   32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
+
+     (yerel) *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\PerfSDK* (yönetilen) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+
+-   64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
+
+     (yerel) *Microsoft Visual Studio\2019\Team Araçlar\Performans Tools\x64\PerfSDK* (yönetilen) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
+::: moniker-end
+
+::: moniker range="vs-2017"
 -   32-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
 
      (yerel) *Microsoft Visual Studio\2017\Team Araçlar\Performans Tools\PerfSDK* (yönetilen) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
@@ -33,3 +51,4 @@ Yolu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil Araçları
 -   64-bit uygulamalar için varsayılan profil oluşturucu Araçlar dizindir:
 
      (native) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
+::: moniker-end

@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri portalında kullanılabilir avantajları tamamı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843820"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867604"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Abone portalı - kullanarak benim. <span> </span>visualstudio<span></span>.com
 
@@ -51,4 +51,4 @@ Avantajlar sayfasında destek kategorisinde bulunan tek avantajlarına ek olarak
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Market](https://marketplace.visualstudio.com/)
 
-Visual Studio bulut aboneliğini gerekiyor?  Visual Studio ürün ailesi için en güncel uzantıları indirmek istiyor?  Market uzantıları, araçları ve Azure DevOps, Team Foundation Server ve Visual Studio Code'u daha da iyi hale hizmetlerini bulmalarına yardımcı olur. Bile, bir yayımcı olur ve kendi uzantılarınızı Market'te yayımlayın.
+Visual Studio bulut aboneliğini gerekiyor?  Visual Studio ürün ailesi için en güncel uzantıları indirmek istiyor?  Market uzantıları, araçları ve Azure DevOps, Azure DevOps Server ve Visual Studio Code'u daha da iyi hale hizmetlerini bulmalarına yardımcı olur. Bile, bir yayımcı olur ve kendi uzantılarınızı Market'te yayımlayın.

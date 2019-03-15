@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da9041c4fb54b37bfe585d2bbf0b88fdfe9264c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5b4b3c73dede1a25f9c104ff85534623691002e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784431"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873783"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "54784431"
 
  Ek bilgi ve örnek kod için bkz:
 
--   [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Visual Studio için modelleme SDK'sı](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Visual Studio için modelleme SDK'sı](https://www.microsoft.com/download/details.aspx?id=48148)
 
 ##  <a name="provide"></a> Bir DSL için erişim sağlama
  Bir model veya öğelerini ModelBus başvuruları oluşturabilmek için DSL ModelBusAdapter tanımlamanız gerekir. Bunu yapmanın en kolay yolu kullanmaktır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL Tasarımcısı için komutları ekler Model veri yolu uzantısı.

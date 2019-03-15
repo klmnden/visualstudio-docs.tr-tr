@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: de09da6a68e00ee66e04ae9523729c88232e78a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779820"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871597"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -288,7 +288,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
   
  Azure'da hata ayıklama hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
   
--   [Bir bulut hizmeti veya sanal makine Visual Studio'da hata ayıklama](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [Bir bulut hizmeti veya sanal makine Visual Studio'da hata ayıklama](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [.NET arka ucu Visual Studio'da hata ayıklama](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   

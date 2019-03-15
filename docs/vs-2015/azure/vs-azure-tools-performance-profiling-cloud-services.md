@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 1b860739b82ddf64b07e1c154170e3992ec9ad81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d362ca2b9117eb215fbc73bb09dd7ee948dc19a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785136"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869356"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
@@ -108,6 +108,6 @@ Bulut hizmetinizde bir rolünün her örneği için profil oluşturma oturumunu 
 4. Geçerli Görünüm listesinde, raporun farklı görünümleri görüntülemek için istediğiniz görünümü türünü seçin. Daha fazla bilgi için [profil oluşturma araçları rapor görünümlerini](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Sonraki adımlar
-[Bulut hizmetlerinde hata ayıklama](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Bulut hizmetlerinde hata ayıklama](vs-azure-tools-debugging-cloud-services-overview.md)
 
-[Bir Azure bulut hizmetinde Visual Studio'dan yayımlama](https://msdn.microsoft.com/library/azure/ee460772.aspx)
+[Bir Azure bulut hizmetinde Visual Studio'dan yayımlama](vs-azure-tools-publishing-a-cloud-service.md)

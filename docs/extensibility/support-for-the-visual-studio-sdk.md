@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c8555067dc86c610c370568ce9e0c7fd13cc5ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709752"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873447"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK Desteği
 Müşteriler, Visual Studio tümleşik geliştirme ortamı (IDE) genişletme ile ilgili sorularınız için çeşitli destek seçenekleri kullanılabilir.
@@ -36,7 +36,7 @@ Müşteriler, Visual Studio tümleşik geliştirme ortamı (IDE) genişletme ile
  [MSDN Forumları](http://go.microsoft.com/fwlink/?LinkID=76632) eşler ve uzmanlarıyla birlikte sohbet etmek için başka bir yol sağlar. Forumlar, grafik kullanıcı arabirimi (UI), haber grupları kullanmak daha kolay hale getirmek için tasarlanmıştır. [Visual Studio genişletilebilirlik Forumu](http://go.microsoft.com/fwlink/?LinkID=121964) genişletilebilirlik soruların yanıtları için aranacak başlatmak için iyi bir yerdir. Başka birisi zaten aynı soruyu sormak çünkü bir soru sorun önce her zaman arayın.
 
 ### <a name="visual-studio-gallery"></a>Visual Studio Galerisi
- [Visual Studio Galerisi](https://marketplace.visualstudio.com/) uzantıları ve örnek kod yerdir. Visual Studio, VSPackages ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) ve diğer tür örnekleri kullanmayı gösteren örnek uygulamalar ile üretkenliği ve kullanıcı geliştiren araçlar deneyimi bulabilirsiniz.
+ [Visual Studio Market](https://marketplace.visualstudio.com/) uzantıları ve örnek kod yerdir. Visual Studio, VSPackages ve Yönetilen Genişletilebilirlik Çerçevesi (MEF) ve diğer tür örnekleri kullanmayı gösteren örnek uygulamalar ile üretkenliği ve kullanıcı geliştiren araçlar deneyimi bulabilirsiniz.
 
 ### <a name="visual-studio-sdk-samples"></a>Visual Studio SDK örnekleri
 
@@ -53,16 +53,18 @@ Açık kaynak örnekleri VS SDK uzantıları github'da bulabilirsiniz [Visual St
 ## <a name="paid-support"></a>Ücretli destek
 
 ### <a name="developer-tools-support"></a>Geliştirici Araçları desteği
- Destek de satın alınabilir. Destek teklifleri çeşitli geliştirici araçları kategori altında kullanılabilir [Microsoft Help ve Destek Merkezi](http://go.microsoft.com/fwlink/?LinkID=82383).
 
- Kullanmak isteyen müşteriler [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] karmaşık paketleri geliştirmek için Microsoft ile bir Premier Destek sözleşmesi satın almayı düşünebilirsiniz. Daha fazla bilgi için [Microsoft Premier desteği](http://go.microsoft.com/fwlink/?LinkID=76660). Küçük şirketler için [iş ortağı Avantajı Desteği](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) geleneksel bir Premier Destek teklifinin cazip bir alternatif olabilir.
+Destek de satın alınabilir. Destek teklifleri çeşitli geliştirici araçları kategori altında kullanılabilir [Microsoft Help ve Destek Merkezi](http://go.microsoft.com/fwlink/?LinkID=82383).
+
+Kullanmak isteyen müşteriler [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] karmaşık paketleri geliştirmek için Microsoft ile bir Premier Destek sözleşmesi satın almayı düşünebilirsiniz. Daha fazla bilgi için [Microsoft Premier desteği](https://support.microsoft.com/premier). Küçük şirketler için [iş ortağı Avantajı Desteği](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) geleneksel bir Premier Destek teklifinin cazip bir alternatif olabilir.
 
 > [!NOTE]
->  Standart Destek danışmanlığı veya öneri almak için kullanılamaz.
+> Standart Destek danışmanlığı veya öneri almak için kullanılamaz.
 
- VSIP programı ile birlikte Premier Destek fırsatları hakkında sorular gönderilebilir [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Yeni bir iş ortağı avantajı programı hakkında sorularınız gönderilebilir [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
+VSIP programı ile birlikte Premier Destek fırsatları hakkında sorular gönderilebilir [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Yeni bir iş ortağı avantajı programı hakkında sorularınız gönderilebilir [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
 
- Destek istekleri hakkında daha fazla bilgi bulunabilir [destek istekleri ayrı ayrı](http://go.microsoft.com/fwlink/?LinkID=82385).
+Destek istekleri hakkında daha fazla bilgi bulunabilir [destek istekleri ayrı ayrı](http://go.microsoft.com/fwlink/?LinkID=82385).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 - [Bizimle İletişime Geçin](../ide/talk-to-us.md)

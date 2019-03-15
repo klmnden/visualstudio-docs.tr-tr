@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 ms.date: 01/15/2019
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c0eabc286cbeafc3d9b2651e5f6f2ec6c61d7e04
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844093"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870311"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017’de JavaScript
 
@@ -32,7 +32,7 @@ Visual Studio, sözdizimi artık ECMAScript 2015/2016 gibi ECMAScript dil günce
 
 ### <a name="what-is-ecmascript-2015"></a>ECMAScript 2015 nedir?
 
-JavaScript bir programlama dili olarak hala gelişen ve [TC39](http://www.ecma-international.org/memento/TC39.htm) komitesi güncelleştirmeleri yapmaktan sorumludur.
+JavaScript bir programlama dili olarak hala gelişen ve [TC39](https://www.ecma-international.org/memento/tc39-m.htm) komitesi güncelleştirmeleri yapmaktan sorumludur.
 ECMAScript 2015 yararlı yeni söz dizimi ve İşlevler getiren JavaScript dil bir güncelleştirmedir. ES6 özellikler hakkında derinlemesine bir bakış için kullanıma [bu](http://es6-features.org) başvuru sitesi.
 
 ECMAScript 2015 desteği, ek olarak Visual Studio ayrıca ECMAScript 2016 destekler ve yayınlandıkça ECMAScript gelecek sürümleri için destek gerekir. TC39 ve en son değişikliklerin ECMAScript kalmasını sağlamak için işlerini takip edin [github](https://github.com/tc39).

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 8647817df0a63d42a126123e8654b9a277ae8e05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757557"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873703"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Visual Studio'da verilere erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,14 +71,14 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
  Birçok veritabanı satıcılar ve üçüncü taraflar tarafından NuGet paketlerini Visual Studio tümleştirmesini desteklemiyor. Nuget.org veya Visual Studio'da NuGet Paket Yöneticisi aracılığıyla tekliflerini keşfedin (**Araçları** > **NuGet Paket Yöneticisi** > **Manage NuGet Çözüm için paketler**). Diğer veritabanı ürünleri bir uzantısı olarak Visual Studio ile tümleştirin.   Bu teklifler Visual Studio Galerisi'nde giderek göz atabilirsiniz **Araçları** > **Uzantılar ve güncelleştirmeler** seçip **çevrimiçi** sol iletişim kutusunun bölmesi.  Daha fazla bilgi için [veritabanı sistemleri, araçları ve örnek yükleme](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
->  SQL Server 2005'e yönelik genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi.   Veri araçları Visual Studio 2015 ve sonraki sürümlerinde bu tarihten sonra SQL Server 2005 ile çalışmaya devam edeceği kesin değildir. Daha fazla bilgi için [SQL Server 2005'e yönelik uç destek Duyurusu](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
+>  SQL Server 2005'e yönelik genişletilmiş destek 12 Nisan 2016 tarihinde sona erdi.   Veri araçları Visual Studio 2015 ve sonraki sürümlerinde bu tarihten sonra SQL Server 2005 ile çalışmaya devam edeceği kesin değildir. Daha fazla bilgi için [SQL Server 2005'e yönelik uç destek Duyurusu](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ### <a name="net-languages"></a>.NET dilleri
  .NET Core dahil olmak üzere tüm .NET veri erişimi, ADO.NET, veri kaynağı, ilişkisel ve ilişkisel olmayan herhangi bir türden erişmek için bir arabirim tanımlayan bir sınıf kümesi dayanır. Visual Studio çeşitli araçları vardır ve veritabanlarına bağlanmanıza yardımcı olması için ADO.NET çalışmak tasarımcıları verileri işlemek ve kullanıcıya verileri sunar. Bu bölümdeki belgeler bu araçlarının nasıl kullanılacağını açıklar. Ayrıca, doğrudan ADO.NET komut nesneleri karşı programlama yapabilirsiniz. ADO.NET API'lerini doğrudan çağırma hakkında daha fazla bilgi için bkz. [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN Kitaplığı'nda.
 
  Özel ASP.NET ile ilgili veri erişim belgelerine bakın [verilerle çalışma](http://www.asp.net/web-forms/overview/presenting-and-managing-data) ASP.NET sitesinde. ASP.NET MVC ile Entity Framework kullanan bir öğretici için bkz. [Entity Framework 6 Code MVC 5 kullanarak First ile çalışmaya başlama](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
- C# veya Visual Basic'te Evrensel Windows Platformu (UWP) uygulamaları, .NET için Microsoft Azure SDK'sı, Azure depolama ve diğer Azure hizmetlerine erişmek için kullanabilirsiniz. Herhangi bir RESTful hizmeti ile iletişimi Windows.Web.HttpClient sınıfı sağlar. Daha fazla bilgi için [Windows.Web.Http kullanarak bir HTTP sunucusuna bağlanma](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx.)
+ C# veya Visual Basic'te Evrensel Windows Platformu (UWP) uygulamaları, .NET için Microsoft Azure SDK'sı, Azure depolama ve diğer Azure hizmetlerine erişmek için kullanabilirsiniz. Herhangi bir RESTful hizmeti ile iletişimi Windows.Web.HttpClient sınıfı sağlar. Daha fazla bilgi için [Windows.Web.Http kullanarak bir HTTP sunucusuna bağlanmak üzere nasıl](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
  Yerel makinede veri depolama için önerilen yaklaşım uygulama ile aynı işlemde çalışan SQLite kullanmaktır. Bir nesne ilişkisel eşleme (ORM) katman gerekiyorsa, Entity Framework kullanabilirsiniz. Daha fazla bilgi için [veri erişimi](https://msdn.microsoft.com/windows/uwp/data-access/index) Windows Geliştirici Merkezi'nde.
 
@@ -124,7 +124,7 @@ Visual Studio'da verilere neredeyse tüm veritabanı ürün veya hizmeti, herhan
 ## <a name="related-topics"></a>İlgili konular
  [Veriler, cihazlar ve analiz](https://msdn.microsoft.com/data-and-devices) Cortana Analytics Suite ve nesnelerin interneti için destek dahil olmak üzere Microsoft Akıllı bulut tanıtır.
 
- [Microsoft Azure depolama](https://azure.microCsoft.com/documentation/services/storage/) açıklar Azure depolama ve Azure BLOB'ları, tabloları, kuyrukları ve dosyalarını kullanarak uygulama oluşturma.
+ [Microsoft Azure depolama](/azure/storage/) açıklar Azure depolama ve Azure BLOB'ları, tabloları, kuyrukları ve dosyalarını kullanarak uygulama oluşturma.
 
  [Azure SQL veritabanı](https://azure.microsoft.com/documentation/services/sql-database/) hizmet olarak ilişkisel bir veritabanı olan Azure SQL Database'e bağlanma işlemini açıklamaktadır.
 

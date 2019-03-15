@@ -1,6 +1,6 @@
 ---
 title: UWP uygulamalarında HTML UI yanıtlama hızını çözümleme | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 310185cec6fec2c72582d59f47f4ae767193d06d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640512"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868162"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Evrensel Windows uygulamaları HTML UI yanıtlama hızını çözümleme
 Bu konu, Evrensel Windows uygulamaları için bir performans aracı kullanıcı Arabirimi yanıtlama hızı Profiler'ı kullanarak uygulamalarınızın performans sorunlarını yalıtmak açıklar.

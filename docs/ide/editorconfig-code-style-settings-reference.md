@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911877"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868384"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
-Visual Studio 2017'de tanımlayabilir ve tutarlı bir kod stili korumak, birlikte kod temeli bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç temel özellikleri biçimlendirme gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kodlama kuralları ayarları bir EditorConfig dosyasını kullanarak da yapılandırılabilir. EditorConfig dosyaları etkinleştirme veya devre dışı bağımsız .NET kodlama kuralları ve önem derecesi zorunlu kuralı istediğiniz ölçüde yapılandırmak için izin verin. EditorConfig temelinizde tutarlılığı zorlamak için nasıl kullanılacağı hakkında daha fazla bilgi edinmek için [oluşturma taşınabilir özel düzenleyici seçenekleri](../ide/create-portable-custom-editor-options.md).
+Tanımlayabilir ve tutarlı bir kod stili korumak, birlikte kod temeli bir [EditorConfig](../ide/create-portable-custom-editor-options.md) dosya. EditorConfig içeren birkaç temel özellikleri biçimlendirme gibi `indent_style` ve `indent_size`. Visual Studio'da .NET kodlama kuralları ayarları EditorConfig dosyasını kullanarak da yapılandırılabilir. Etkinleştirin veya bireysel .NET kodlama kuralları devre dışı bırakın ve her bir kural, zorunlu bir önem düzeyi istediğiniz ölçüde yapılandırın.
 
-Bu makalenin sonuna bakın bir [örnek .editorconfig dosyasındaki](#example-editorconfig-file).
+> [!TIP]
+> - Kodlama kuralları bir .editorconfig dosyasında tanımladığınızda, istediğiniz yapılandırırken [stil çözümleyicilerini kod](../code-quality/roslyn-analyzers-overview.md) kodunuzu analiz etmek için Visual Studio'ya oluşturulur. .Editorconfig dosyasındaki bu çözümleyicilerini yapılandırma dosyasıdır.
+> - Visual Studio da ayarlanabilir için kod stili tercihleri [metin düzenleyici seçenekleri](code-styles-and-quick-actions.md) iletişim. Bununla birlikte, öncelik ve ayarladığınız tercihleri .editorconfig ayarları ele **seçenekleri** belirli bir proje ile ilişkili değildir.
+
+Bu makalenin sonundaki içeren bir [örnek .editorconfig dosyasındaki](#example-editorconfig-file).
 
 ## <a name="convention-categories"></a>Kural kategorileri
 

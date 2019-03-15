@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628994"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870298"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio'da dağıtımına genel bakış
 
@@ -35,7 +35,7 @@ Birçok ortak uygulama türleri için Visual Studio'daki Çözüm Gezgini'nde, u
 - [Azure uygulama hizmeti](#azure-app-service)
 - [Azure sanal makineleri](#azure-virtual-machines)
 - [Dosya sistemi](#file-system)
-- [Özel hedefleri (IIS, FTP, vb.) ](#custom-targets), tüm isteğe bağlı web sunucuları içerir.
+- [Özel hedefleri (IIS, FTP, vb.) ](#custom-targets-iis-ftp), tüm isteğe bağlı web sunucuları içerir.
 
 Üzerinde **Yayımla** sekmesi, mevcut bir yayımlama profili seçin, var olan bir içeri aktarma veya aşağıda açıklanan seçenekler kullanılarak yeni bir tane oluşturun. Farklı uygulama türleri için IDE'de yayımlama seçeneklerini gezinmek için bkz: [dağıtıma ilk bakış](../deployment/deploying-applications-services-and-components.md).
 

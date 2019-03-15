@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 01ec01ad642333d9ee46296cbcb4a02526152e94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: cb4d0c0184f0b909fe7d6e9d345f7784d6763313
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526879"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57964312"
 ---
 Uzak cihaz üzerinde hata ayıklamak istediğiniz sunucu yerine veya Visual Studio makinesine, indirin ve aşağıdaki tabloda bağlantıları uzak araçların doğru sürümünü yükleyin.
 
@@ -22,17 +22,26 @@ Uzak cihaz üzerinde hata ayıklamak istediğiniz sunucu yerine veya Visual Stud
 
 ::: moniker range=">=vs-2019"
 
-> [!NOTE]
-> Tek başına Visual Studio 2019 için Uzak Araçlar, Visual Studio 2019'ile uzaktan hata ayıklayıcı kullanmanız gerekiyorsa kullanılabilir olana kadar [uzaktan hata ayıklayıcı bulma](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2017#fileshare_msvsmon) Visual Studio 2019 ve ya da kendi yüklemesinde kopyalayın ve uygulamayı Uzak makine veya bir dosya paylaşımı ' çalıştırın.
+|Sürüm|Bağlantı|Notlar|
+|-|-|-|
+|Visual Studio 2019 RC|[Uzak Araçlar](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2019)|Tüm Visual Studio 2019 sürümlerle uyumludur. Cihaz işletim sisteminiz (x 86, x64 veya ARM64) eşleşen sürümünü indirin. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları yükleme konusunda yardım almak için.|
+|Visual Studio 2017 (en son sürüm)|[Uzak Araçlar](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Tüm Visual Studio 2017 sürümleri ile uyumludur. Cihaz işletim sisteminiz (x 86, x64 veya ARM64) eşleşen sürümünü indirin. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları yükleme konusunda yardım almak için.|
+|Visual Studio 2015|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 için Uzak Araçlar, My.VisualStudio.com kullanılabilir. İstenirse, ücretsiz katılın [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) program ya da Visual Studio abonelik kimliğinizle oturum açın. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları yükleme konusunda yardım almak için.|
+|Visual Studio 2013|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#Installing_the_Remote_Tools)|Visual Studio 2013 belgeleri sayfasında indirin|
+|Visual Studio 2012|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 belgeleri sayfasında indirin|
 
 ::: moniker-end
+
+::: moniker range="vs-2017"
 
 |Sürüm|Bağlantı|Notlar|
 |-|-|-|
 |Visual Studio 2017 (en son sürüm)|[Uzak Araçlar](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Tüm Visual Studio 2017 sürümleri ile uyumludur. Cihaz işletim sisteminiz (x 86, x64 veya ARM64) eşleşen sürümünü indirin. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları yükleme konusunda yardım almak için.|
 |Visual Studio 2015|[Uzak Araçlar](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 için Uzak Araçlar, My.VisualStudio.com kullanılabilir. İstenirse, ücretsiz katılın [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) program ya da Visual Studio abonelik kimliğinizle oturum açın. Windows Server'da bkz [dosya indirme engellemesini](../../debugger/remote-debugging-unblock-file-download.md) uzak araçları yükleme konusunda yardım almak için.|
-|Visual Studio 2013|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#Installing_the_Remote_Tools)|Visual Studio 2013 belgeleri sayfasında indirin|
-|Visual Studio 2012|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 belgeleri sayfasında indirin|
+|Visual Studio 2013|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Visual Studio 2013 belgeleri sayfasında indirin|
+|Visual Studio 2012|[Uzak Araçlar](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Visual Studio 2012 belgeleri sayfasında indirin|
+
+::: moniker-end
 
 Uzaktan hata ayıklayıcı kopyalayarak çalıştırabileceğiniz *msvsmon.exe* uzak araçları yükleme yerine uzak bilgisayar. Ancak, uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı (*rdbgwiz.exe*) yalnızca uzak araçları yüklediğinizde kullanılabilir. Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırmak istiyorsanız sihirbazın yapılandırmasını kullanmanız gerekebilir. Daha fazla bilgi için [(isteğe bağlı) yapılandırma hizmet olarak uzaktan hata ayıklayıcı](../../debugger/remote-debugging.md#bkmk_configureService).
 

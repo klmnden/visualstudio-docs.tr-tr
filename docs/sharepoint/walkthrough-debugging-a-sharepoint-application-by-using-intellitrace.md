@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad0d12560b1da99beadf2e519d2e430e8d76a45f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875377"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868265"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama
 
@@ -33,15 +33,15 @@ IntelliTrace'i kullanarak SharePoint çözümleri daha kolay ayıklayabilirsiniz
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
-- [Özellik alıcısı oluşturma](#BKMK_CreateReceiver)
+- [Özellik alıcısı oluşturma](#create-a-feature-receiver)
 
-- [Özellik alıcısına kod ekleme](#BKMK_AddCode)
+- [Özellik alıcısına kod ekleme](#add-code-to-the-feature-receiver)
 
-- [Test projesi](#BKMK_Test1)
+- [Test projesi](#test-the-project)
 
-- [Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama](#BKMK_CollectDiagnosticData)
+- [Microsoft Monitoring Agent'ı kullanarak IntelliTrace verilerini toplama](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [SharePoint çözümünü düzeltmek ve hata ayıklama](#BKMK_DebugSolution)
+- [SharePoint çözümünü düzeltmek ve hata ayıklama](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
