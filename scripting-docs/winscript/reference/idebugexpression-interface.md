@@ -2,7 +2,6 @@
 title: Idebugexpression arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345525"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58156352"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression Arabirimi
 Zaman uyumsuz olarak değerlendirilen bir ifade temsil eder. Komut dosyası motorları, genellikle bu arabirimi uygulayın. Hata ayıklayıcı IDE, bu arabirim genellikle hemen yürütme penceresi etkinleştirin veya Gözcü penceresi için kullanır.  

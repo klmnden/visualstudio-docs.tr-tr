@@ -2,7 +2,6 @@
 title: Iactivescripterrordebug arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d773724d23c61aa72b8cd48917f2cd0bef4a7cb
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 936770859d3bdfe81c84245d32ae63346b142a01
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345207"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58153753"
 ---
 # <a name="iactivescripterrordebug-interface"></a>IActiveScriptErrorDebug Arabirimi
 Derleme zamanı hataları ve çalışma zamanı özel durumları için belge bağlam bilgilerini sağlar. `IActiveScriptError::QueryInterface` Yöntemi destekler `IActiveScriptErrorDebug` arabirimi.  

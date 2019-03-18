@@ -2,7 +2,6 @@
 title: Profıler_heap_object_relatıonshıp_flags numaralandırması | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b78285f332b339533d81228de5877043f699a67c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 322f6f3352c1b0dfad4572d55e1ebe2388c8cc4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349146"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148171"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS Numaralandırması
 Bir yığın nesnesi bir nesne ilişkisini işaret olduğunu belirten bayrak alıcı veya ayarlayıcı yöntemidir. Kullanılan [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) profıler_heap_object_relatıonshıp_flags değeri belirtildiğinde yöntemi `enumFlags` parametresi.  

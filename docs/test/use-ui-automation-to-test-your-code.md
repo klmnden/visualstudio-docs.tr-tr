@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223487"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145232"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -140,7 +140,7 @@ Kodlanmış UI test araçları ve şablonları erişmek için yükleme **kodlanm
 
 8. Testi çalıştırın.
 
-   Test Gezgini'ni kullanın veya test yönteminde kısayol menüsünü açın ve ardından **çalıştırmak testlerini**. Testlerin nasıl çalıştırılacağı hakkında daha fazla bilgi için bkz. [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md) ve *kodlanmış UI testleri çalıştırmak için ek seçenekler* içinde [sıradakiler?](#what's-next?) adresindeki bölüm Bu konunun sonuna.
+   Test Gezgini'ni kullanın veya test yönteminde kısayol menüsünü açın ve ardından **çalıştırmak testlerini**. Testlerin nasıl çalıştırılacağı hakkında daha fazla bilgi için bkz. [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md) ve *kodlanmış UI testleri çalıştırmak için ek seçenekler* içinde [sıradakiler?](#whats-next?) adresindeki bölüm Bu konunun sonuna.
 
 Bu konuda geriye kalan bölümlerinde, bu yordamdaki adımları hakkında daha fazla ayrıntı sağlar.
 

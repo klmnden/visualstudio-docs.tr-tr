@@ -6,13 +6,13 @@ ms.technology: devlang-csharp
 ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
-ms.author: v-brickg
-ms.openlocfilehash: e6dad35d2fe70866eee8ffbace81c44c502f67d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.author: brgeorge
+ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764660"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149678"
 ---
 # <a name="shared-colors"></a>Paylaşılan renkler
 Açıklamayı buraya ekleyin.  

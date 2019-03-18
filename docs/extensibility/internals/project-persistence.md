@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601029"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146532"
 ---
 # <a name="project-persistence"></a>Proje Kalıcılığı
 Kalıcılık, projeniz için bir temel tasarım noktadır. Çoğu proje dosyaları temsil edecek proje öğeleri kullanın. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verisini dosya tabanlı olmayan projeleri de destekler. Proje ve proje dosyası tarafından sahip olunan dosyaları, her iki kalıcı gerekir. IDE kendisi veya bir proje öğesi kaydetmek için projeyi bildirir.
 
- Şablonları projeleri için proje fabrikasına geçirilir. Şablonları, belirli bir proje türünü gereksinimlerine göre tüm proje öğelerinin başlatma desteklemelidir. Bu şablonları daha sonra proje dosyaları olarak kaydedilen ve IDE çözüm aracılığıyla yönetilir. Daha fazla bilgi için [oluşturma proje örnekleri tarafından kullanarak proje Fabrikalarını](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) ve [çözümleri](../../extensibility/internals/solutions.md).
+ Şablonları projeleri için proje fabrikasına geçirilir. Şablonları, belirli bir proje türünü gereksinimlerine göre tüm proje öğelerinin başlatma desteklemelidir. Bu şablonları daha sonra proje dosyaları olarak kaydedilen ve IDE çözüm aracılığıyla yönetilir. Daha fazla bilgi için [oluşturma proje örnekleri tarafından kullanarak proje Fabrikalarını](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) ve [çözümleri](../../extensibility/internals/solutions-overview.md).
 
  Proje öğeleri, dosya tabanlı veya dosya tabanlı olmayan olabilir:
 

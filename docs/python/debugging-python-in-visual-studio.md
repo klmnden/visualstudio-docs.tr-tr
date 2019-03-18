@@ -1,7 +1,7 @@
 ---
 title: Python kodunda hata ayıklama
 description: Visual Studio için Python kodu, kesme noktaları ayarlama, Adımlama, değerler geçirerek, özel durumlar arama ve etkileşimli pencerede hata ayıklama da dahil olmak üzere zengin hata ayıklama sağlar.
-ms.date: 01/07/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bc1f41e683b8bf58486646b5beb2ae4de3d4049
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 81e83b85c3f221cbd949067da6279facafb6e3d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954367"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151368"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
 
@@ -40,7 +40,7 @@ Ayrıca aşağıdaki senaryoya özgü hata ayıklama makalelere bakın:
 
 Temel hata ayıklama iş akışından kod içerisinde ilerlemeye değerlerini inceleme ve aşağıdaki bölümlerde açıklandığı gibi özel durumları işleme ayarlarını kesme noktaları içerir.
 
-İle hata ayıklama oturumu başlatır **hata ayıklama** > **hata ayıklamayı Başlat** komutu **Başlat** araç çubuğundan veya **F5**anahtarı. Bu Eylemler, projenizin başlangıç dosyasını başlatın (gösterilen kalın **Çözüm Gezgini**) projenin etkin ortam ve komut satırı bağımsız değişkenleri veya içinde belirtilen arama yollarını **proje Özellikleri** (bkz [proje hata ayıklama seçenekleri](#project-debugging-options)). **Visual Studio 2017 sürüm 15.6** ve daha sonra ayarlanmış bir başlangıç dosyası yoksa, sizi uyarır; önceki sürümlerinde çalışan Python yorumlayıcısı ile bir çıktı penceresini açın veya çıkış penceresine kısaca görüntülenir ve kaldırılır. Herhangi bir durumda, uygun dosya sağ tıklayıp **başlangıç dosyası olarak ayarla**.
+İle hata ayıklama oturumu başlatır **hata ayıklama** > **hata ayıklamayı Başlat** komutu **Başlat** araç çubuğundan veya **F5**anahtarı. Bu Eylemler, projenizin başlangıç dosyasını başlatın (gösterilen kalın **Çözüm Gezgini**) projenin etkin ortam ve komut satırı bağımsız değişkenleri veya içinde belirtilen arama yollarını **proje Özellikleri** (bkz [proje hata ayıklama seçenekleri](#project-debugging-options)). Ayarlanmış bir başlangıç dosyası yoksa, visual Studio 2017 sürüm 15.6 ve üzeri sizi uyarır; önceki sürümlerinde çalışan Python yorumlayıcısı ile bir çıktı penceresini açabilir veya çıkış penceresine kısaca görüntülenir ve kaldırılır. Herhangi bir durumda, uygun dosya sağ tıklayıp **başlangıç dosyası olarak ayarla**.
 
 > [!Note]
 > Hata ayıklayıcı her zaman etkin Python ortamı proje için başlar. Ortamı değiştirmek için farklı bir tane aktif üzerinde açıklandığı gibi olun [bir proje için bir Python ortamını seçin](selecting-a-python-environment-for-a-project.md).
@@ -165,26 +165,22 @@ Hata ayıklama oturumu sırasında kullanabileceğiniz iki etkileşimli pencere 
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Geçerli deyimden programı çalıştırmaya başlar. |
 | `$down`, `$d` | Geçerli çerçeve bir düzey aşağıya yığın izlemesi taşıyın. |
-| `$frame` | | Geçerli çerçeve kimliğini görüntüler.
+| `$frame` | | Geçerli çerçeve kimliğini görüntüler
 | `$frame` | Çerçeve kimliği | Geçerli çerçevenin belirtilen çerçeve kimliğe geçer.
 | `$load` | Komut dosyasını yükler ve tamamlanana kadar yürütür |
-| `$proc` |  | Geçerli işlem kimliğini görüntüler. |
-| `$proc` | işlem kimliği | Geçerli işlem için belirtilen işlem kimliği geçer. |
+| `$proc` |  | Geçerli işlem kimliğini görüntüler |
+| `$proc` | İşlem kimliği | Geçerli işlem için belirtilen işlem kimliği geçer. |
 | `$procs` | | Şu anda hataları ayıklanan işlemlerin listeler. |
 | `$stepin`, `$step`, `$s` | Sonraki işlev çağrısı, eğer mümkünse adımlamayla girin. |
 | `$stepout`, `$return`, `$r` | Geçerli işlev dışında adımları. |
 | `$stepover`, `$until`, `$unt` | Sonraki işlev deyime çağırın. |
-| `$thread` | | Geçerli iş parçacığı kimliğini görüntüler. |
-| `$thread` | iş parçacığı kimliği | Geçerli iş parçacığı için belirtilen iş parçacığı kimliği geçer. |
+| `$thread` | | Geçerli iş parçacığı kimliğini görüntüler |
+| `$thread` | İş parçacığı kimliği | Belirtilen iş parçacığı kimliği için geçerli iş parçacığı geçer |
 | `$threads` | | Şu anda hataları ayıklanmakta olan iş parçacıkları listeler. |
 | `$up`, `$u` | | Yığın izlemeyle uygulamanızda geçerli çerçeve bir düzey yukarı. |
 | `$where`, `$w`, `$bt` | Geçerli iş parçacığı çerçevelerini listeler. |
 
 Standart windows gibi hata ayıklayıcı, Not **işlemleri**, **iş parçacıkları**, ve **çağrı yığını** ile eşitlenmemiş **etkileşimli hata ayıklama** penceresi. Etkin işlemi, iş parçacığı veya çerçevede değiştirme **hata ayıklama etkileşimli** penceresi bir hata ayıklayıcı pencereleri etkilemez. Benzer şekilde, etkin işlem, iş parçacığı veya bir hata ayıklayıcı pencerelerinde çerçeve değiştirme etkilemez **hata ayıklama etkileşimli** penceresi.
-
-**Hata ayıklama etkileşimli** penceresine sahip kendi aracılığıyla erişebileceğiniz seçenekleri kümesi **Araçları** > **seçenekleri**  >   **Python Araçları** > **hata ayıklama, etkileşimli Pencere'ye**. Normal aksine **Python etkileşimli** yalnızca biri, her bir Python ortam için ayrı bir örneği var olan bir pencere **hata ayıklama etkileşimli** penceresi ve her zaman için Python yorumlayıcısı kullanır hataları ayıklanan işlem. Bkz: [seçenekleri - hata ayıklama seçenekleri](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Hata ayıklama etkileşimli penceresi seçenekleri](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 

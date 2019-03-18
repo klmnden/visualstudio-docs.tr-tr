@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155142"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149633"
 ---
 # <a name="profile-python-code"></a>Profil Python kodu
 
@@ -32,7 +32,7 @@ Seçtiğinizde, **Tamam**, profil oluşturucu çalıştırır ve üzerinden ara�
 ![Profil oluşturma performans raporu](media/profiling-results.png)
 
 > [!Note]
-> Şu an tam uygulama profili oluşturma, bu düzeyi yalnızca Visual Studio destekler, ancak kesinlikle gelecekteki özellikleriyle ilgili Geri bildirimlerinizi merak ediyoruz. Kullanım [ **ürün geri bildirimi** düğmesi](#feedback) bu sayfanın alt kısmındaki.
+> Şu an tam uygulama profili oluşturma, bu düzeyi yalnızca Visual Studio destekler, ancak kesinlikle gelecekteki özellikleriyle ilgili Geri bildirimlerinizi merak ediyoruz. Kullanım **ürün geri bildirimi** bu sayfanın alt kısmındaki düğmesi.
 
 ## <a name="profiling-for-ironpython"></a>IronPython için profil oluşturma
 

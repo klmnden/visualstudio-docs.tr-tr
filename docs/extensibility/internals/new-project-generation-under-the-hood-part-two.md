@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f168a896c218f33735c4e67f43a9833a474191ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624197"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148210"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Yeni proje oluşturma: Altyapı öğeleri, bölüm iki
+
 İçinde [yeni proje oluşturma: Altyapı, bir bölümü altında](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) gördüğümüz nasıl **yeni proje** iletişim kutusu doldurulur. Seçtiğiniz varsayalım bir **Visual C# Windows uygulaması**, doldurulmuş **adı** ve **konumu** metin kutuları ve tıklandı Tamam.
 
 ## <a name="generating-the-solution-files"></a>Çözüm dosyaları oluşturma
@@ -31,7 +32,7 @@ ms.locfileid: "56624197"
 
  Bir normal proje öğesi şablon göz atalım. Ayıklayın ve Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip klasöründeki Program.cs inceleyin.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -45,9 +46,9 @@ namespace $safeprojectname$
 }
 ```
 
- Basit adlı yeni bir Windows uygulaması projesi oluşturursanız, şablon değiştirir `$safeprojectname$` projenin adı ile parametre.
+Basit adlı yeni bir Windows uygulaması projesi oluşturursanız, şablon değiştirir `$safeprojectname$` projenin adı ile parametre.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -66,7 +67,7 @@ namespace Simple
 ## <a name="a-look-inside-a-vstemplate-file"></a>Bir görünüm içindeki bir. VSTemplate dosyası
  Temel .vstemplate dosyası bu biçime sahip
 
-```
+```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
@@ -79,7 +80,7 @@ namespace Simple
 
  Etiketleri \<TemplateContent > bölüm denetimi oluşturma yeni projeleri ve proje öğeleri. İşte \<TemplateContent > \Program Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip klasörüne cswindowsapplication.vstemplate dosyasından bölümü.
 
-```
+```xml
 <TemplateContent>
   <Project File="WindowsApplication.csproj" ReplaceParameters="true">
     <ProjectItem ReplaceParameters="true"
@@ -121,7 +122,7 @@ namespace Simple
 
  İlk ve tek \<Proje > etiketinde şablon okuma:
 
-```
+```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
@@ -132,7 +133,7 @@ namespace Simple
 
  İşte \<ItemGroup > Proje başvuruları oluşturan Simple.csproj'nden:
 
-```
+```xml
 <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,7 +146,7 @@ namespace Simple
 
  Çözüm Gezgini'nde görünen altı proje başvurularını bunlar görebilirsiniz. Başka bir bölümünden işte \<ItemGroup >. Açıklık için kod satır sayısını silinmiş. Bu bölümde Settings.Designer.cs üzerinde Settings.settings bağımlı hale getirir:
 
-```
+```xml
 <ItemGroup>
     <Compile Include="Properties\Settings.Designer.cs">
         <DependentUpon>Settings.settings</DependentUpon>
@@ -153,6 +154,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
+
 - [Yeni proje oluşturma: Bir altyapı öğeleri, bölüm](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

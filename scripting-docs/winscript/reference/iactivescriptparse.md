@@ -2,7 +2,6 @@
 title: Iactivescriptparse | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8325ffcb21f1871ca742611e6587df02ef3b89c8
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349016"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152190"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
 Windows altyapısı komut dosyasına eklenecek kod kod parçacıklarını ham metni sağlar veya çalışma zamanında değerlendirilecek ifade metin sağlayan komut bunu uygulayan olup `IActiveScriptParse` arabirimi. VBScript gibi hiçbir bağımsız geliştirme ortamına sahip yorumlanan komut dosyası dilleri için bu alternatif bir mekanizma sağlar (dışında `IPersist*`) komut dosyası altyapısı kod almak ve kod parçacıkları için çeşitli nesne iliştirmek için olaylar.  

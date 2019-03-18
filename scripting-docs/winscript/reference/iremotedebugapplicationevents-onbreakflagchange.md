@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91facd7a7055ab5ac9e7666c6a0d171e78c73eed
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: eb19b6cfc423a1305276441305ef854c70f2d896
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086742"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58150484"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
 Kesme bayrakları değiştirdiğinizde bir olayını işler.  

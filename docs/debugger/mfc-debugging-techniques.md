@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316879"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154812"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC Hata Ayıklama Teknikleri
 MFC programı hata ayıklaması yapıyorsanız, bu hata ayıklama teknikleri yararlı olabilir.
@@ -230,7 +230,7 @@ Nesne olmayan blokları içerecek diziler ve yapılar ile ayrılmış `new`. Bu 
 Bir MFC programında kullanabilirsiniz [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) açıklamasını serbest yığınındaki tüm nesnelerin dökümünü almak için. `DumpAllObjectsSince` en son ayrılan tüm nesneler dökümleri [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Hayır ise `Checkpoint` çağrısı bir yerde harcanan `DumpAllObjectsSince` tüm nesneleri ve bellekte bulunan nonobjects dökümünü yapar.
 
 > [!NOTE]
-> MFC nesne dökme kullanabilmeniz için önce şunları yapmalısınız [tanılama izlemeyi etkinleştirme](#BKMK_Enabling_Memory_Diagnostics).
+> MFC nesne dökme kullanabilmeniz için önce şunları yapmalısınız [tanılama izlemeyi etkinleştirme](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > MFC programınızı çıktığında, otomatik olarak tüm sızan nesne dökümleri, dökümünü almak için kod oluşturmaya gerek kalmayacak şekilde bu noktada nesneleri.

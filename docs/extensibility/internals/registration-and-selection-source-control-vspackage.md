@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab31b788e86c7916355c06accc5396bbf18f98d8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643658"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146740"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Kayıt ve Seçim (Kaynak Denetimi VSPackage’ı)
 Kaynak denetimi VSPackage'ı kayıtlı, kendisine kullanıma sunmak için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Birden fazla kaynak denetimi VSPackage'ı kayıtlı değilse, kullanıcı uygun zamanlarda yüklemek için hangi VSPackage'ı seçebilirsiniz. Bkz: [VSPackages](../../extensibility/internals/vspackages.md) VSPackages ve bunları kaydetme hakkında daha fazla bilgi.

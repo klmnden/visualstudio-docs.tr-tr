@@ -2,7 +2,6 @@
 title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1442297fcacb3a9464f9ea67489c91c8ab64ad78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 26403a168268e817644637544d64d4205c398b75
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24796337"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58157665"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
-Bu yöntem kimliği ile geçirdiğiniz sınıfı birlikte oluşturur `rclsid` kullanarak `dwClsContext`. Benzer şekilde budur [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) durumunda hariç works `CreateObjectWithSiteAtWebApp` nesne zaman uyumsuz olarak web uygulamasının UI iş parçacığında oluşturuldu. Sınıf kimliği tarafından belirtilen nesne uygulamalıdır [Iwebappdiagnosticsobjectınitialization arabirimi](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Nesne oluşturulduktan sonra [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM hata ayıklama uygulama başvuru olarak adlandırılır ve `hPassToObject` parametresinin `CreateObjectWithSiteAtWebApp`. Uygulamaya bir tanıtıcı kullanarak kopyaladığınız anonim bir kanala geçirmek için bu yöntemi kullanabilirsiniz [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
+Bu yöntem birlikte kimliği ile geçirdiğiniz sınıfı oluşturur `rclsid` kullanarak `dwClsContext`. Bu şekilde benzer [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) durumunda hariç çalıştığı `CreateObjectWithSiteAtWebApp` nesne web uygulamasının kullanıcı Arabirimi iş parçacığında zaman uyumsuz olarak oluşturulur. Sınıf kimliği tarafından belirtilen nesnede uygulamalıdır [Iwebappdiagnosticsobjectınitialization arabirimi](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Nesne oluşturulduktan sonra [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM hata ayıklama uygulama başvurusuyla çağrılır ve `hPassToObject` parametresinin `CreateObjectWithSiteAtWebApp`. Uygulamaya bir tanıtıcı kullanarak kopyaladığınız anonim bir kanala geçirmek için bu yöntemi kullanabilirsiniz [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
   
 > [!IMPORTANT]
 >  [Iwebappdiagnosticssetup arabirimi](../../winscript/reference/iwebappdiagnosticssetup-interface.md) PDM v11.0 tarafından uygulanan ve büyük. activdbg100.h içinde bulunur.  
@@ -38,10 +37,10 @@ HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] 
  Sınıf kimliği oluşturma sınıf.  
   
  `dwClsContext`  
- Kod çalışacağı bağlamı. Çoğu durumda bu CLSCTX_INPROC_SERVER olur.  
+ Kod çalıştırılacağı bağlamı. Çoğu durumda bu CLSCTX_INPROC_SERVER olur.  
   
  `riid`  
  Kullanılmadı.  
   
  `hPassToObject`  
- Kullanıcı Arabirimi iş parçacığı üzerinde oluşturulduğunda nesne uyguluyorsa nesnesine geçirilen bir değer [Iwebappdiagnosticsobjectınitialization arabirimi](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).
+ UI iş parçacığı üzerinde oluşturulduktan sonra nesne uygulayan nesnesine geçirilen bir değeri [Iwebappdiagnosticsobjectınitialization arabirimi](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).

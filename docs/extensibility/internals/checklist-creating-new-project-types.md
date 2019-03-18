@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621012"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146350"
 ---
 # <a name="checklist-create-new-project-types"></a>Denetim listesi: Yeni proje türleri oluşturma
 Yeni bir proje türü oluşturmak için birkaç görevi tamamlamanız gerekir. Aşağıdaki denetim listesinde, bu görevleri için bir kılavuz sağlar:
@@ -37,7 +37,7 @@ Yeni bir proje türü oluşturmak için birkaç görevi tamamlamanız gerekir. A
 
     -   Proje öğeleri yönetimi, projenize ekleme dahil olmak üzere **yeni proje** iletişim kutusu. Daha fazla bilgi için [proje ve proje öğesi şablonları ekleme](../../extensibility/internals/adding-project-and-project-item-templates.md) ve [proje ve öğe şablonlarını kaydetme](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    -   Kalıcılık proje durumu ve tek tek öğeleri. Daha fazla bilgi için [açık proje öğeleri kaydedip](../../extensibility/internals/opening-and-saving-project-items.md). Çözüm bilgileri kalıcılığını bkz [çözümleri](../../extensibility/internals/solutions.md).
+    -   Kalıcılık proje durumu ve tek tek öğeleri. Daha fazla bilgi için [açık proje öğeleri kaydedip](../../extensibility/internals/opening-and-saving-project-items.md). Çözüm bilgileri kalıcılığını bkz [çözümleri](../../extensibility/internals/solutions-overview.md).
 
     -   Özellikler penceresinde görüntülemek için yapılandırma bağımsız Özellikleri'ni kullanın. Daha fazla bilgi için [özellikleri genişletmenize](../../extensibility/internals/extending-properties.md).
 

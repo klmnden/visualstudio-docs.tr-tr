@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 950252347de78839e7d0db979179de3a0818857f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781356"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155832"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC Hata Ayıklama Teknikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,7 +236,7 @@ Total allocations: 67 bytes
  Bir MFC programında kullanabilirsiniz [CMemoryState::DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) açıklamasını serbest yığınındaki tüm nesnelerin dökümünü almak için. `DumpAllObjectsSince` en son ayrılan tüm nesneler dökümleri [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Hayır ise `Checkpoint` çağrısı bir yerde harcanan `DumpAllObjectsSince` tüm nesneleri ve bellekte bulunan nonobjects dökümünü yapar.  
   
 > [!NOTE]
->  MFC nesne dökme kullanabilmeniz için önce şunları yapmalısınız [tanılama izlemeyi etkinleştirme](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics).  
+>  MFC nesne dökme kullanabilmeniz için önce şunları yapmalısınız [tanılama izlemeyi etkinleştirme](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
 >  MFC programınızı çıktığında, otomatik olarak tüm sızan nesne dökümleri, dökümünü almak için kod oluşturmaya gerek kalmayacak şekilde bu noktada nesneleri.  

@@ -2,7 +2,6 @@
 title: Iactivescriptsitedebug arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 3cd8043648586ed3c614cbb137e51d992d7ae29b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348314"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145784"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug Arabirimi
 Akıllı ana uygulama `IActiveScriptSiteDebug` belge yönetimi gerçekleştirmek ve hata ayıklamaya katılmak için arabirim. `IActiveScriptSite` Nesne, genellikle uygulanmasını sağlar `IActiveScriptSiteDebug` arabirimi. Bu yapıldığında çağrı `IActiveScriptSite::QueryInterface` elde etmek için yöntemi `IActiveScriptSiteDebug` arabirimi.  

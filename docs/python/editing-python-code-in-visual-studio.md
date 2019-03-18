@@ -1,7 +1,7 @@
 ---
 title: Python kodunu düzenleme
 description: Python için Visual Studio, zengin IntelliSense kod parçacıkları ve biçimlendirme, linting ve yeniden düzenleme ile birlikte Gezinti özellikleri sağlar.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155402"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155530"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
@@ -109,10 +109,20 @@ Kullanarak **Run Mypy** komutu bu kodda şu hata oluşturur:
 
 ![Tür ipuçlarını doğrulama mypy örnek sonucu](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Python 3.5 önce sürümleri için Visual Studio aracılığıyla sağladığınız tür ipuçları da görüntüler *saplama dosyalarını* (*.pyi*). Saplama dosyalarını doğrudan kodunuzu tür ipuçları dahil etmek istemediğiniz her ya da bunları doğrudan kullanmayan kitaplığı için tür ipuçlarını oluşturmak istediğinizde kullanabilirsiniz. Daha fazla bilgi için [oluşturmak için Python modüllerini saplamalar](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) mypy proje Wiki'de.
+> Python 3.5 önce sürümleri için Visual Studio ayrıca Typeshed sağladığınız tür ipuçlarını görüntüler *saplama dosyalarını* (*.pyi*). Saplama dosyalarını doğrudan kodunuzu tür ipuçları dahil etmek istemediğiniz her ya da bunları doğrudan kullanmayan kitaplığı için tür ipuçlarını oluşturmak istediğinizde kullanabilirsiniz. Daha fazla bilgi için [oluşturmak için Python modüllerini saplamalar](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) mypy proje Wiki'de.
 >
 > Şu anda, Visual Studio açıklamalarda tür ipuçlarını desteklemez.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Python 3.5 önce sürümleri için Visual Studio ayrıca Typeshed sağladığınız tür ipuçlarını görüntüler *saplama dosyalarını* (*.pyi*). Saplama dosyalarını doğrudan kodunuzu tür ipuçları dahil etmek istemediğiniz her ya da bunları doğrudan kullanmayan kitaplığı için tür ipuçlarını oluşturmak istediğinizde kullanabilirsiniz. Daha fazla bilgi için [oluşturmak için Python modüllerini saplamalar](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) mypy proje Wiki'de.
+>
+> Ek yüklemeleri gerekli kalmayacak Python 2. ve 3 için visual Studio Typeshed dosyaları paketleri kümesini içerir. Ancak, farklı bir dosya kümesini kullanmak istiyorsanız, yolu belirtebilirsiniz **Araçları** > **seçenekleri** > **Python**  >  **Dil sunucu** seçenekleri. Bkz: [seçenekleri - dil Server](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Şu anda, Visual Studio açıklamalarda tür ipuçlarını desteklemez.
+::: moniker-end
 
 ### <a name="signature-help"></a>İmza Yardımı
 

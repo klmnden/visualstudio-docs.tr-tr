@@ -1,7 +1,7 @@
 ---
 title: Python arama yollarını nasıl uygulanır
 description: Visual Studio, ortamlar ve sistem genelinde değişkenleri kullanmaktan kaçınmak için projeleri için arama yollarını belirtmek daha fazla belirli bir araçları sağlar.
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929914"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58147741"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio, Python arama yollarını nasıl kullanır?
 
@@ -31,7 +31,12 @@ Visual Studio, bu nedenle doğrudan hem ortamları ve projelerinde arama yollar�
 
 Bir arama yolu eklemek için Git **Çözüm Gezgini**, proje düğümünü, sağ **arama yollarını**seçin **klasörü için arama yolu Ekle**:
 
+::: moniker range="vs-2017"
 ![Çözüm Gezgini'nde arama yollarında arama yolu komutuna klasörü Ekle](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Çözüm Gezgini'nde arama yollarında arama yolu komutuna klasörü Ekle](media/search-paths-command-2019.png)
+::: moniker-end
 
 Bu komut ardından dahil etmek için klasörü seçin, bir tarayıcı görüntüler.
 

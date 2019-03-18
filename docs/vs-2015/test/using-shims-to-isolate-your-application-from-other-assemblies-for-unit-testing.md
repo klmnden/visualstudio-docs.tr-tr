@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784147"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58155949"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,50 +28,7 @@ Dolgu türleri ** test ortamı'ndan kolayca yalıtmak bileşenleri bildirmek iç
   
 - Visual Studio Enterprise  
   
-  Bkz: [Video (1 saat 16): Visual Studio 2012'de beklemediğiniz test edilebilir kod Fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)  
-  
-## <a name="in-this-topic"></a>Bu konuda  
- İşte bu konudaki bilgi edineceksiniz:  
-  
- [Örnek: Y2K hata](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
-  
- [Dolgular kullanma](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
-  
-- [Fakes derlemeleri ekleyin](#AddFakes)  
-  
-- [ShimsContext kullanın](#ShimsContext)  
-  
-- [Dolgular ile testleri yazma](#WriteTests)  
-  
-  [Farklı türlerde yöntemleri için dolgular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
-  
-- [Statik yöntemler](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
-  
-- [(Tüm örnekler için) örnek yöntemleri](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
-  
-- [Örnek yöntemler (örneğin bir çalışma zamanı)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
-  
-- [Oluşturucular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
-  
-- [Temel üyeler](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
-  
-- [Statik oluşturucular](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
-  
-- [Sonlandırıcılar](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
-  
-- [Özel yöntemler](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
-  
-- [Bağlama arabirimleri](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
-  
-  [Varsayılan davranışını değiştirme](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
-  
-  [Algılama ortam erişir](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
-  
-  [Eşzamanlılık](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
-  
-  [Dolgu yöntemden asıl yöntemi çağırma](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
-  
-  [Sınırlamalar](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  Bkz: [Video (1 saat 16): Visual Studio 2012'de beklemediğiniz test edilebilir kod Fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> Örnek: Y2K hata  
  1 Ocak 2000'in üzerinde özel durum oluşturan bir yöntem düşünelim:  
@@ -82,7 +39,7 @@ public static class Y2KChecker {
     public static void Check() {  
         if (DateTime.Now == new DateTime(2000, 1, 1))  
             throw new ApplicationException("y2kbug!");  
-    }  
+    }
 }  
   
 ```  

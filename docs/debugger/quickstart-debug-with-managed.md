@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525381"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152934"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: İle hata ayıklama C# veya Visual Basic, Visual Studio hata ayıklayıcıyı kullanma
 
@@ -25,17 +25,20 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'da **Dosya > Yeni proje**.
+1. Visual Studio'da **Dosya > Yeni > Proje**.
 
-2. Altında **Visual C#** veya **Visual Basic**, seçin **.NET Core**seçip Ortadaki bölmeden **konsol uygulaması (.NET Core)**.
+    ::: moniker range=">=vs-2019"
+    **Yeni bir proje oluşturma** iletişim kutusu açılır. Tür **.net** sonuçları filtrelemek için arama kutusuna seçin **konsol uygulaması (.NET Core)** ve ardından **sonraki**. Gibi bir ad girin **MyDbgApp** ve **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **Yeni proje** iletişim kutusu açılır. Altında **Visual C#** , seçin **.NET Core**seçip Ortadaki bölmeden **konsol uygulaması (.NET Core)**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+    ::: moniker-end
 
-     Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** ve **.NET Core** iş yükü, ardından **Değiştir**.
-
-3. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+     Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** ve **.NET Core** iş yükü, ardından **Değiştir**.
 
     Visual Studio projesi oluşturur.
 
-4. İçinde *Program.cs* veya *Module1.vb*, aşağıdaki kodu değiştirin
+1. İçinde *Program.cs* veya *Module1.vb*, aşağıdaki kodu değiştirin
 
     ```csharp
     class Program

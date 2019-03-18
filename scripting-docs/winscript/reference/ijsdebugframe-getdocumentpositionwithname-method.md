@@ -2,7 +2,6 @@
 title: Ijsdebugframe::getdocumentpositionwithname metodu | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,14 +15,14 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6333f9c52c3ab4e0cd01c34f5e5228721aa55b4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4d3b909f3a3ebc672bf6d0a014b519de685b1677
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093840"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58157314"
 ---
-# <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName Metodu
+# <a name="ijsdebugframegetdocumentpositionwithname-method"></a>IJsDebugFrame::GetDocumentPositionWithName Yöntemi
 Bu yığın çerçevesinin kullanıcı düzeyi belge içindeki konumunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  

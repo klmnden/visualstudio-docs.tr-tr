@@ -2,7 +2,6 @@
 title: Iactivescriptprofilercallback3::setwebworkerıd yöntemi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347222"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151303"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId Yöntemi
 Profil Oluşturucu bu profil oluşturma oturumu için kullanılacak alt kimliği hakkında bilgilendirir. İşlevi, sayfa bağlamında yürütülmüyor, bu yöntem çağrılır değil. Değerini `webWorkerId` 1'den başlayarak, her bir çalışan için 1 artar. Kimliği değerleri bir oturumu kararlı ve çalışanlar oluşturulduğu sırada yalnızca karşılık gelen kullanılmaya yönelik değildir.  

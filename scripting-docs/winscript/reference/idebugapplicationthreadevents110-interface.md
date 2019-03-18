@@ -2,7 +2,6 @@
 title: Idebugapplicationthreadevents110 arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db20440d4dc797ce9a0f21c3ac0c6c89c5d4e036
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348249"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58148860"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 Arabirimi
 Daha fazla iş parçacığı olaylar ekler. Bu olaylar yalnızca büyük/küçük harf yereldir. Diğer bir deyişle, yalnızca süreci içinde abone olursanız hata ayıklama, kullanarak [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) önerilerde bulunabilir ve PDM uygulama iş parçacığı nesneleri üzerinde yöntemleri eşlemesindeki (uygulayan nesneler [Idebugapplicationthread Arabirim](../../winscript/reference/idebugapplicationthread-interface.md)). Nereden geldiğini iş parçacığı üzerinde oluşur.  

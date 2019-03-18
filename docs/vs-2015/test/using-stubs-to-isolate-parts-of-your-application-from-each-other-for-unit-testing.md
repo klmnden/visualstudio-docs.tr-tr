@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b9b104fe6f246592f4716ad18ab4a9e6f122fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803251"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58145167"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Birim testi için uygulamanızın parçalarını birbirinden yalıtmak üzere saplamalar kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,37 +32,7 @@ Saplama türleri * Microsoft Fakes çerçevesi çağıran başka bir bileşenden
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
-  
-## <a name="in-this-topic"></a>Bu konuda  
-  
--   [Saptamalar nasıl kullanılır?](#how)  
-  
-    -   [Tasarım için bağımlılık ekleme](#Dependency)  
-  
-    -   [Saptamalar oluştur](#GeneratingStubs)  
-  
-    -   [Saptamalarla Test yazma](#WriteTest)  
-  
-    -   [Parametre değerlerini doğrulama](#mocks)  
-  
--   [Tür üyelerinin farklı türleri için saptamalar](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_basics)  
-  
-    -   [Yöntemler](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Methods)  
-  
-    -   [Özellikler](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Properties)  
-  
-    -   [Olaylar](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Events)  
-  
-    -   [Genel yöntemler](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Generic_methods)  
-  
-    -   [Sanal sınıf saptamaları](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Partial_stubs)  
-  
--   [Hata ayıklama saptamaları](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Debugging_stubs)  
-  
--   [Saptama sınırlamaları](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Stub_limitation)  
-  
--   [Saptamaların varsayılan davranışını değiştirme](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md#BKMK_Changing_the_default_behavior_of_stubs)  
+-   Visual Studio Enterprise
   
 ##  <a name="How"></a> Saptamalar nasıl kullanılır?  
   

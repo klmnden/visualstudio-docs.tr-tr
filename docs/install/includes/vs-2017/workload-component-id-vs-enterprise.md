@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 376bf2baf4c5cd902c7c40663e3e651c7123633b
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1e9ac9e8371c1dab482fd16ce4d10e8982ba1aee
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57326940"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "58161126"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>(Visual Studio Enterprise 2017 ile dahil) visual Studio temel Düzenleyicisi
 
@@ -55,16 +55,16 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 gel
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | Gerekli
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | Gerekli
 Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | Gerekli
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.8.27825.0 | Gerekli
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.9.28307.421 | Gerekli
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Gerekli
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Gerekli
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.9.28307.421 | Gerekli
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 15.9.28125.51 | Gerekli
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | Gerekli
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama araçları | 15.9.28107.0 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 15.8.27906.1 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 15.7.27617.1 | Gerekli
 Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 15.8.27705.0 | Gerekli
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 15.9.28307.421 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 15.8.27729.1 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 15.9.28125.51 | Gerekli
@@ -155,9 +155,9 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.8.27825.0 | Önerilen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 15.6.27406.0 | Önerilen
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | Önerilen
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.8.27825.0 | Önerilen
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.9.28307.421 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Önerilen
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.9.28307.421 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 15.9.28125.51 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services temel araçları | 15.9.28107.0 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 15.7.27617.1 | Önerilen
@@ -223,7 +223,7 @@ Component.Anaconda2.x64 | Anaconda2 64-bit (5.2.0) | 5.2.0 | İsteğe Bağlı
 Component.Anaconda2.x86 | Anaconda2 32-bit (5.2.0) | 5.2.0 | İsteğe Bağlı
 Component.Anaconda3.x86 | Anaconda3 32-bit (5.2.0) | 5.2.0 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 15.6.27309.0 | İsteğe Bağlı
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python yerel geliştirme araçları | 15.8.27729.1 | İsteğe Bağlı
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python yerel geliştirme araçları | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Graphics.Tools | DirectX için grafik hata ayıklayıcı ve GPU | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafik araçları Windows 8.1 SDK'sı | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.140 | Masaüstü için VC ++ 2015.3 v14.00 (v140) araç | 15.7.27617.1 | İsteğe Bağlı
@@ -231,7 +231,7 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ temel özellikle
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 15.0.26823.1 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 
 ## <a name="net-desktop-development"></a>.NET masaüstü geliştirme
@@ -334,7 +334,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn der
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 15.8.27729.1 | Gerekli
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.Unity | Unity için Visual Studio Araçları | 15.7.27617.1 | Gerekli
-Component.UnityEngine.x64 | Unity 2018.1 64 bit Düzenleyici | 15.8.27924.0 | Önerilen
+Component.UnityEngine.x64 | Unity 2018.3 64 bit Düzenleyici | 15.9.28307.271 | Önerilen
 Component.UnityEngine.x86 | Unity 5.6 32 bit Düzenleyici | 15.6.27406.0 | Önerilen
 
 ## <a name="linux-development-with-c"></a>C++ ile Linux geliştirme
@@ -350,10 +350,10 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 Component.MDD.Linux | Linux geliştirme için Visual C++ | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ temel özellikler | 15.6.27406.0 | Gerekli
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | Gerekli
-Component.Linux.CMake | CMake ve Linux için Visual C++ Araçları | 15.8.27906.1 | Önerilen
+Component.Linux.CMake | CMake ve Linux için Visual C++ Araçları | 15.9.28307.102 | Önerilen
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Önerilen
 Component.MDD.Linux.GCC.arm | Gömülü geliştirme ve IOT geliştirmesi | 15.6.27309.0 | İsteğe Bağlı
 
@@ -386,12 +386,12 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 15.9.28016.0 | Önerilen
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Önerilen
 Microsoft.VisualStudio.Component.VC.ATL | X86 ve x64 için Visual C++ ATL | 15.7.27625.0 | Önerilen
-Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.8.27906.1 | Önerilen
+Microsoft.VisualStudio.Component.VC.CMake.Project | CMake için Visual C++ Araçları | 15.9.28307.102 | Önerilen
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 15.0.26823.1 | Önerilen
 Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Boost.Test için test bağdaştırıcısı | 15.8.27906.1 | Önerilen
 Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Google Test için test bağdaştırıcısı | 15.8.27906.1 | Önerilen
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.16 en yeni v141 araçları | 15.9.28230.55 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Önerilen
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Önerilen
 Component.Incredibuild | IncrediBuild - derleme hızlandırma | 15.7.27617.1 | İsteğe Bağlı
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | İsteğe Bağlı
@@ -412,6 +412,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.WinXP | C++ için Windows XP desteği | 15.8.27924.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK ve UCRT SDK | 15.6.27406.0 | İsteğe Bağlı
@@ -438,18 +439,17 @@ Microsoft.VisualStudio.Component.Graphics.Tools | DirectX için grafik hata ayı
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafik araçları Windows 8.1 SDK'sı | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | Önerilen
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ profil oluşturma araçları | 15.0.26823.1 | Önerilen
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Önerilen
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Önerilen
 Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.10 | İsteğe Bağlı
 Component.Android.SDK23.Private | Android SDK kurulumu (API düzeyi 23) (JavaScript ile Mobil Geliştirme için yerel yükleme / C++) | 15.9.28016.0 | İsteğe Bağlı
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | İsteğe Bağlı
 Component.Cocos | Cocos | 15.0.26906.1 | İsteğe Bağlı
 Component.Incredibuild | IncrediBuild - derleme hızlandırma | 15.7.27617.1 | İsteğe Bağlı
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | İsteğe Bağlı
-Component.JavaJDK | Java SE Geliştirme Seti (8.0.1120.15) | 15.6.27406.0 | İsteğe Bağlı
 Component.MDD.Android | C++ Android geliştirici araçları | 15.0.26606.0 | İsteğe Bağlı
 Component.OpenJDK | Microsoft Dağıtım OpenJDK | 15.9.28125.51 | İsteğe Bağlı
 Component.Unreal | Unreal Engine yükleyicisi | 15.8.27729.1 | İsteğe Bağlı
-Component.Unreal.Android | Unreal Engine için Visual Studio Android desteği | 15.0.27005.2 | İsteğe Bağlı
+Component.Unreal.Android | Unreal Engine için Visual Studio Android desteği | 15.9.28307.341 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 15.6.27309.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pack | 15.6.27406.0 | İsteğe Bağlı
@@ -473,6 +473,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK ve UCRT SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | İsteğe Bağlı
@@ -504,7 +505,7 @@ Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.7 | İsteğe Bağlı
 Component.Android.NDK.R13B_3264 | Android NDK (R13B) (32 bit) | 13.1.8 | İsteğe Bağlı
 Component.Android.NDK.R15C_3264 | Android NDK (R15C) (32 bit) | 15.2.1 | İsteğe Bağlı
 Component.Google.Android.Emulator.API23.Private | Google Android Emulator (API düzeyi 23) (yerel kurulum) | 15.6.27413.0 | İsteğe Bağlı
-Component.HAXM.Private | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (yerel kurulum) | 15.6.27413.0 | İsteğe Bağlı
+Component.HAXM.Private | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (yerel kurulum) | 15.9.28307.421 | İsteğe Bağlı
 Component.Incredibuild | IncrediBuild - derleme hızlandırma | 15.7.27617.1 | İsteğe Bağlı
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | İsteğe Bağlı
 Component.MDD.IOS | C++ iOS geliştirici araçları | 15.0.26621.2 | İsteğe Bağlı
@@ -536,7 +537,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama a
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 15.8.27906.1 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 15.7.27617.1 | Gerekli
 Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 15.8.27705.0 | Gerekli
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 15.9.28307.421 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 15.8.27729.1 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 15.9.28125.51 | Gerekli
@@ -560,9 +561,9 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçlar�
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Gerekli
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure Web işleri araçları | 15.7.27617.1 | Önerilen
 Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 15.8.27825.0 | Önerilen
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.8.27825.0 | Önerilen
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.9.28307.421 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Önerilen
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.9.28307.421 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 15.9.28125.51 | Önerilen
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.Snapshot | Anlık görüntü hata ayıklayıcısı | 15.8.28010.0 | Önerilen
@@ -608,8 +609,8 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçları | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET şablon oluşturma altyapısı | 15.8.27729.1 | Gerekli
 Component.Android.SDK27 | Android SDK kurulumu (API düzeyi 27) | 15.9.28016.0 | Önerilen
-Component.Google.Android.Emulator.API27 | Google Android Emulator (API düzeyi 27) | 15.9.28016.0 | Önerilen
-Component.HAXM | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (genel yükleme) | 15.6.27413.0 | Önerilen
+Component.Google.Android.Emulator.API27 | Google Android Emulator (API düzeyi 27) | 15.9.28307.421 | Önerilen
+Component.HAXM | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (genel yükleme) | 15.9.28307.421 | Önerilen
 Component.OpenJDK | Microsoft Dağıtım OpenJDK | 15.9.28125.51 | Önerilen
 Component.Xamarin.Profiler | Xamarin Profiler | 15.0.27005.2 | Önerilen
 Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | İsteğe Bağlı
@@ -626,9 +627,9 @@ Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server yerel istemcisi | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Mimari ve analiz araçları | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin için evrensel Windows platformu araçları | 15.7.27617.1 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin için evrensel Windows platformu araçları | 15.9.28307.102 | İsteğe Bağlı
 
 ## <a name="aspnet-and-web-development"></a>ASP.NET ve web geliştirme
 
@@ -657,7 +658,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Bağlantı ve yayımlama a
 Microsoft.VisualStudio.Component.DockerTools | Kapsayıcı geliştirme araçları | 15.8.27906.1 | Gerekli
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Kapsayıcı geliştirme araçları - derleme araçları | 15.7.27617.1 | Gerekli
 Microsoft.VisualStudio.Component.FSharp | F#dil desteği | 15.8.27825.0 | Gerekli
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 15.8.27705.0 | Gerekli
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | F#web projeleri için dil desteği | 15.9.28307.421 | Gerekli
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript tanılamaları | 15.8.27729.1 | Gerekli
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript ve TypeScript dil desteği | 15.9.28125.51 | Gerekli
@@ -687,9 +688,9 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 15.6
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 15.6.27406.0 | Önerilen
 Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 15.8.27825.0 | Önerilen
 Microsoft.VisualStudio.Component.AspNet45 | Gelişmiş ASP.NET özellikleri | 15.7.27625.0 | Önerilen
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.8.27825.0 | Önerilen
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.9.28307.421 | Önerilen
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | Önerilen
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | Önerilen
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.9.28307.421 | Önerilen
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 15.9.28125.51 | Önerilen
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.9.28230.55 | Önerilen
 Microsoft.VisualStudio.Component.Debugger.Snapshot | Anlık görüntü hata ayıklayıcısı | 15.8.28010.0 | Önerilen
@@ -731,7 +732,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **KİMLİĞİ:** Microsoft.VisualStudio.Workload.Node
 
-**Açıklama:** Zaman uyumsuz olay temelli JavaScript çalışma zamanı olan node.js kullanarak Ölçeklenebilir Ağ uygulamaları oluşturun.
+**Açıklama:** Zaman uyumsuz olay temelli JavaScript çalışma zamanı olan node.js kullanarak Ölçeklenebilir Ağ uygulamaları oluşturun. 
 
 ### <a name="components-included-by-this-workload"></a>Bu iş yükü tarafından bulunan bileşenler
 
@@ -857,7 +858,7 @@ Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | İsteğe Bağlı
 Microsoft.Component.NetFX.Native | .NET Yerel | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.Component.PythonTools.UWP | Python IOT desteği | 15.0.26606.0 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 15.6.27309.0 | İsteğe Bağlı
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python yerel geliştirme araçları | 15.8.27729.1 | İsteğe Bağlı
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python yerel geliştirme araçları | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pack | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 15.6.27406.0 | İsteğe Bağlı
@@ -865,9 +866,9 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pac
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 geliştirme araçları | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 15.8.27924.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.AppInsights.Tools | Geliştirici analiz araçları | 15.8.27825.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.8.27825.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure yazma araçları | 15.9.28307.421 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET için Azure kitaplıkları | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.0.26621.2 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure işlem öykünücüsü | 15.9.28307.421 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure depolama öykünücüsü | 15.9.28125.51 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.Waverton | Azure Cloud Services temel araçları | 15.9.28107.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services derleme araçları | 15.7.27617.1 | İsteğe Bağlı
@@ -904,7 +905,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 sürüm 15.9 v14.
 Microsoft.VisualStudio.Component.Web | ASP.NET ve web geliştirme araçları | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Evrensel C çalışma zamanı | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET ve web geliştirme araçları önkoşulları | 15.9.28219.51 | İsteğe Bağlı
 
@@ -939,14 +940,14 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statik analiz araçlar�
 Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.28218.60 | Gerekli
 Microsoft.VisualStudio.Component.UWP.Support | Evrensel Windows platformu araçları | 15.9.28119.51 | Gerekli
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | Gerekli
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Cordova için evrensel Windows platformu araçları | 15.7.27617.1 | Gerekli
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Cordova için evrensel Windows platformu araçları | 15.9.28307.102 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET native ve .NET Standard | 15.8.27906.1 | Gerekli
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin için evrensel Windows platformu araçları | 15.7.27617.1 | Gerekli
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Xamarin için evrensel Windows platformu araçları | 15.9.28307.102 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Gerekli
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | Önerilen
 Microsoft.Component.VC.Runtime.OSSupport | UWP için Visual C++ çalışma zamanı | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK'sı | 15.6.27406.0 | İsteğe Bağlı
+Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.CodeClone | Kod kopyası | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.CodeMap | Kod Haritası | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | Canlı bağımlılık doğrulama | 15.0.26208.0 | İsteğe Bağlı
@@ -971,10 +972,10 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) Masaüstü C++ [ARM ve ARM64] için | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) UWP için: C#, VB, JS | 15.6.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) UWP için: C++ | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28218.60 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB cihaz bağlantısı | 15.7.27625.0 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB cihaz bağlantısı | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | Mimari ve analiz araçları | 15.0.26208.0 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ Evrensel Windows platformu araçları | 15.9.28107.0 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ Evrensel Windows platformu araçları | 15.9.28307.102 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | İsteğe Bağlı
 
@@ -1043,8 +1044,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | 3.1 TypeScript SDK'sı | 15.0.
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET ve web geliştirme | 15.8.27825.0 | Gerekli
 Component.Android.SDK23.Private | Android SDK kurulumu (API düzeyi 23) (JavaScript ile Mobil Geliştirme için yerel yükleme / C++) | 15.9.28016.0 | İsteğe Bağlı
 Component.Google.Android.Emulator.API23.Private | Google Android Emulator (API düzeyi 23) (yerel kurulum) | 15.6.27413.0 | İsteğe Bağlı
-Component.HAXM.Private | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (yerel kurulum) | 15.6.27413.0 | İsteğe Bağlı
-Component.JavaJDK | Java SE Geliştirme Seti (8.0.1120.15) | 15.6.27406.0 | İsteğe Bağlı
+Component.HAXM.Private | Intel donanım hızlandırılmış yürütme Yöneticisi (HAXM) (yerel kurulum) | 15.9.28307.421 | İsteğe Bağlı
 Component.OpenJDK | Microsoft Dağıtım OpenJDK | 15.9.28125.51 | İsteğe Bağlı
 Microsoft.Component.ClickOnce | ClickOnce yayımlama | 15.8.27825.0 | İsteğe Bağlı
 Microsoft.Component.NetFX.Native | .NET Yerel | 15.0.26208.0 | İsteğe Bağlı
@@ -1055,8 +1055,8 @@ Microsoft.VisualStudio.Component.Graphics | Görüntü ve 3B model düzenleyicil
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 Mobile öykünücüsü (Fall Creators Update) | 15.0.27406.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server için CLR veri türleri | 15.0.26208.0 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 15.6.27406.0 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | İsteğe Bağlı
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Cordova için evrensel Windows platformu araçları | 15.7.27617.1 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | İsteğe Bağlı
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Cordova için evrensel Windows platformu araçları | 15.9.28307.102 | İsteğe Bağlı
 
 ## <a name="unaffiliated-components"></a>Kullanıcıyla bağlantılı olmayan bileşenleri
 
@@ -1073,7 +1073,7 @@ Component.GitHub.VisualStudio | Visual Studio için GitHub uzantısı | 2.5.2.25
 Component.Google.Android.Emulator.API23.V2 | Google Android Emulator (API düzeyi 23) (genel yükleme) | 15.6.27413.0
 Component.Google.Android.Emulator.API25 | Google Android Emulator (API düzeyi 25) | 15.7.27604.0
 Microsoft.Component.Blend.SDK.WPF | .NET için Visual Studio SDK'sı için Blend | 15.6.27406.0
-Microsoft.Component.HelpViewer | Yardım Görüntüleyicisi | 15.6.27323.2
+Microsoft.Component.HelpViewer | Yardım Görüntüleyicisi | 15.9.28307.421
 Microsoft.VisualStudio.Component.LinqToSql | LINQ to SQL araçları | 15.6.27406.0
 Microsoft.VisualStudio.Component.Phone.Emulator | Windows 10 Mobile öykünücüsü (Anniversary Edition) | 15.6.27406.0
 Microsoft.VisualStudio.Component.Phone.Emulator.15063 | Windows 10 Mobile öykünücüsü (Creators Update) | 15.6.27406.0

@@ -2,7 +2,6 @@
 title: Idebugapplication110 arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b13208d6a507ea4ed3157606f358b6b0168180cf
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 3c040df103bac464e4f440f23674da966063f0ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349562"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149675"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 Arabirimi
 `IDebugApplication110` Arabirimi işlevselliğini genişleten [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md). Uygulaması QueryInterface çağırarak bu arabirimin örneğini alabilirsiniz [Idebugapplication arabirimi](../../winscript/reference/idebugapplication-interface.md).  

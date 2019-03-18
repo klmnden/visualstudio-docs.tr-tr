@@ -2,7 +2,6 @@
 title: Profıler_heap_object_relatıonshıp yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e5658f70e6a24151af75f4455fc44c2c756b9e9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 7a905a44f2ef686181c5a859699277d16f6cd374
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091955"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58153025"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP Yapısı
 Bir yığın nesnesinin bir ilişkiyi temsil eder.  

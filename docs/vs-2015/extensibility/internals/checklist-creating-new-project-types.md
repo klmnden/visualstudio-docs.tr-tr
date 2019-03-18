@@ -11,12 +11,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 863889ef339aef8bb5f14555d83cacaf4d3d7c50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3a6a091e5574721b93cbff23f873fe1a845ef6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757358"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154734"
 ---
 # <a name="checklist-creating-new-project-types"></a>Denetim listesi: Yeni proje türleri oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Yeni bir proje türü oluşturmak için birkaç görevi tamamlamanız gerekir. A
   
     -   Proje öğeleri yönetimi, projenize ekleme dahil olmak üzere **yeni proje** iletişim kutusu. Daha fazla bilgi için [ekleme proje ve proje öğesi şablonları](../../extensibility/internals/adding-project-and-project-item-templates.md) ve [kaydetme proje ve öğe şablonları](../../extensibility/internals/registering-project-and-item-templates.md).  
   
-    -   Kalıcılık proje durumu ve tek tek öğeleri. Daha fazla bilgi için [açma ve kaydetme proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md). Çözüm bilgileri kalıcılığını bkz [çözümleri](../../extensibility/internals/solutions.md).  
+    -   Kalıcılık proje durumu ve tek tek öğeleri. Daha fazla bilgi için [açma ve kaydetme proje öğeleri](../../extensibility/internals/opening-and-saving-project-items.md). Çözüm bilgileri kalıcılığını bkz [çözümleri](../../extensibility/internals/solutions-overview.md).  
   
     -   Özellikler penceresinde görüntülenecek bağımsız özellikleri yapılandırma. Daha fazla bilgi için [genişletme özellikleri](../../extensibility/internals/extending-properties.md).  
   

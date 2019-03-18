@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752972"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151186"
 ---
 # <a name="html-ui-responsiveness"></a>HTML kullanıcı Arabirimi yanıt hızı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ Bu konu, uygulamalarınızı Windows Evrensel uygulamaları için bir performans
   
     -   Kullanım [Tanılama oturumu zaman çizelgesini görüntüleyin](#Ruler) görüntülemek için [kod analizi için işaretleyin](#ProfileMark), uygulama yaşam döngüsü olaylarını ve bu olaylar için ilişkili zaman çizelgesi ve diğer grafiklerin verilerin zaman çizelgesi.  
   
-    -   Kullanım [CPU kullanım grafiği](#CPUutilization) CPU etkinliği ve bu belirli bir süre boyunca işleme iş türü hakkındaki genel bilgileri görüntülemek için. Aşırı CPU etkinliği dönemlerini yanıt hızını sorunlarına yol olasılığı daha yüksektir ve çerçeveleri bırakılan.  
+    -   Kullanım [CPU kullanım grafiği](#CPUUtilization) CPU etkinliği ve bu belirli bir süre boyunca işleme iş türü hakkındaki genel bilgileri görüntülemek için. Aşırı CPU etkinliği dönemlerini yanıt hızını sorunlarına yol olasılığı daha yüksektir ve çerçeveleri bırakılan.  
   
     -   Bir oyun ya da zengin medya uygulaması geliştiriyorsanız, kullanın [görünümü görsel üretilen iş (FPS)](#VisualThroughput) süreler içinde kare hızı bırakılan tanımlamak için.  
   

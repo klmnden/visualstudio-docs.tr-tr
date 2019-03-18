@@ -2,7 +2,6 @@
 title: Etkin komut dosyası hata ayıklamaya genel bakış | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345493"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149659"
 ---
 # <a name="active-script-debugging-overview"></a>Etkin Komut Dosyası Hata Ayıklamaya Genel Bakış
 Etkin betik hata ayıklama arabirimleri, dilden bağımsız, konak nötr hata ayıklamaya izin verecek ve çok çeşitli geliştirme ortamlarında destekler.  

@@ -2,7 +2,6 @@
 title: TEXT_DOCUMENT_ARRAY yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ff283b52d15310304fb60c322bdb51c33ed33ac
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 9d188729b68f8086da62d40ca28fc29945c8be7f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344235"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152242"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY Yapısı
 Bir dizi [Idebugdocumenttext arabirimi](../../winscript/reference/idebugdocumenttext-interface.md) nesneleri. Üyeleri CoTaskMemAlloc ile ayrılır.  

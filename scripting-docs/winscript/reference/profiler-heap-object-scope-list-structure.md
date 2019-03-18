@@ -2,7 +2,6 @@
 title: Profıler_heap_object_scope_lıst yapısı | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: b1285e4efa3db8a7ec99808f5888d3dbf948e589
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344830"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152528"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST Yapısı
 Bu yapı, işlev nesneleri ile ilişkilidir. Kapsam listesi, her kapsam her verilen kapsam içinde değişkenlere temsil eden bir ilişkili özelliğin listesiyle bir yığın nesnesi olduğu kapsamların listesini olarak işlevin kabini temsil eder. Bazı durumlarda, kapsam kullanılamayabilir nesneleri ve özellik listesi yalnızca kendi dizine adları kullanılabilir.  

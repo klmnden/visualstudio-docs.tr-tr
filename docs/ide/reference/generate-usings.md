@@ -1,20 +1,20 @@
 ---
-title: Using deyimlerini oluşturmak
+title: Using deyimleri oluşturma
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9fd34b40bdd1167eca7fa1dff8ab60bcc787b7c7
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325296"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160647"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Visual Studio'da kullanımları oluşturun
 
@@ -37,7 +37,7 @@ Bu kod oluşturma için geçerlidir:
 
 2. Tuşuna **Ctrl**+**.** açmak için **hızlı Eylemler ve yeniden düzenlemeler** menüsü. 
 
-    ![Using deyimlerini oluşturmak](media/generate-using-codefix.png)
+    ![Using deyimleri oluşturma](media/generate-using-codefix.png)
 
 3. Seçin **kullanarak \<başvurunuz\>;** eksik başvuru eklenemiyor.
 

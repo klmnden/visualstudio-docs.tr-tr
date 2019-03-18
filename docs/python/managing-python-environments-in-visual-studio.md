@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4514aa132adab37425d0d49c4594fec8db09d12d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 89ea4b46aa2940cfbdb12265c391b632eee7b298
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155727"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58159094"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Oluşturma ve Visual Studio'da Python ortamlarını yönetme
 
@@ -106,7 +106,7 @@ Visual Studio ayrıca sağlar oluşturmak için bir komutu bir *requirements.txt
 
 #### <a name="conda-environments"></a>Conda ortamları
 
-Conda ortam biridir kullanılarak oluşturulan `conda` aracı veya tümleşik conda Yönetimi'nde Visual Studio 2017 sürüm 15.7 ve üzeri. (Anaconda veya Miniconda gerektirir; Visual Studio yükleyicisi anaconda kullanılabilir, bkz: [yükleme - Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017).)
+Conda ortam biridir kullanılarak oluşturulan `conda` aracı veya tümleşik conda Yönetimi'nde Visual Studio 2017 sürüm 15.7 ve üzeri. (Anaconda veya Miniconda gerektirir; Visual Studio yükleyicisi anaconda kullanılabilir, bkz: [yükleme - Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017-and-2019).)
 
 1. Seçin **+ conda ortam Oluştur** içinde **Python ortamları** açılır penceresinde bir **yeni conda ortam Oluştur** sekmesinde:
 

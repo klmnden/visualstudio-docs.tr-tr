@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525407"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58153021"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
@@ -25,17 +25,20 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'da **Dosya > Yeni proje**.
+1. Visual Studio'da **Dosya > Yeni > Proje**.
 
-1. Altında **Visual C#**, seçin **Web**seçip Ortadaki bölmeden **ASP.NET Core Web uygulaması**.
+    ::: moniker range=">=vs-2019"
+    **Yeni bir proje oluşturma** iletişim kutusu açılır. Tür **asp.net** sonuçları filtrelemek için arama kutusuna seçin **ASP.NET Core Web uygulaması**ve ardından **sonraki**. Gibi bir ad yazın **MyDbgApp** ve **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **Yeni proje** iletişim kutusu açılır. Altında **Visual C#**, seçin **Web**seçip Ortadaki bölmeden **ASP.NET Core Web uygulaması**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
 
-1. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
-
-1. Görünen iletişim kutusunda **Web uygulaması** orta bölmesinde ve ardından **Tamam**.
-
-     Görmüyorsanız **Web uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.
+    Görünen iletişim kutusunda **Web uygulaması** orta bölmesinde ve ardından **Tamam**.
 
     ![Bir Web uygulaması seçin](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    Görmüyorsanız **ASP.NET Core Web uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **ASP.NET ve web geliştirme** iş yükü, ardından **Değiştir**.
 
     Visual Studio projesi oluşturur.
 

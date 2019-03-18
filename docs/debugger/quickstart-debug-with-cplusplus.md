@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526522"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151251"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: C++ ile Visual Studio hata ayıklayıcısını kullanarak hata ayıklama
 
@@ -25,17 +25,20 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'da **Dosya > Yeni proje**.
+1. Visual Studio'da **Dosya > Yeni > Proje**.
 
-2. Altında **Visual C++**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **Windows konsol uygulaması**.
+    ::: moniker range=">=vs-2019"
+    **Yeni bir proje oluşturma** iletişim kutusu açılır. Tür **asp.net** sonuçları filtrelemek için arama kutusuna seçin **ASP.NET Core Web uygulaması**ve ardından **sonraki**. Gibi bir ad girin **MyDbgApp** ve **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **Yeni proje** iletişim kutusu açılır. Altında **Visual C++**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **Windows konsol uygulaması**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+    ::: moniker-end
 
-    Görmüyorsanız **Windows konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
-
-3. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+    Görmüyorsanız **Windows konsol uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
     Visual Studio projesi oluşturur.
 
-4. Aşağıdaki kod MyDbgApp.cpp değiştirin
+1. Aşağıdaki kod MyDbgApp.cpp değiştirin
 
     ```c++
     int main()

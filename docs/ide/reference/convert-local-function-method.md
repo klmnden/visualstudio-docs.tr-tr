@@ -1,23 +1,23 @@
 ---
-title: Yerel işlev yönteme Dönüştür
+title: Yerel işlevi metoda dönüştürme
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55c82aa896de5c3f3bf18468a1da98253a3def74
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325281"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152960"
 ---
-# <a name="convert-local-function-to-method"></a>Yerel işlev yönteme Dönüştür
+# <a name="convert-local-function-to-method"></a>Yerel işlevi metoda dönüştürme
 
 Bu yeniden düzenleme için geçerlidir:
 
@@ -34,11 +34,11 @@ Bu yeniden düzenleme için geçerlidir:
 
 1. İmlecinizi bir yerel işlevde yerleştirin.
 
-    ![Yerel işlev yönteme Dönüştür](media/convert-local-function-to-method.png)
+    ![Yerel işlevi metoda dönüştürme](media/convert-local-function-to-method.png)
 
 2. Tuşuna **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 
-    ![Yerel işlev yöntemi kod düzeltmesi için Dönüştür](media/convert-local-function-to-method-codefix.png)
+    ![Yerel işlev yöntemi kod düzeltme Dönüştür](media/convert-local-function-to-method-codefix.png)
 
 2. Tuşuna **Enter** yeniden düzenleme kabul etmek için.
 

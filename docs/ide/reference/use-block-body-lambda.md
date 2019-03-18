@@ -1,20 +1,20 @@
 ---
-title: Lambda ifadesi veya blok gövdesi kullan
+title: Lambda ifadesi veya blok gövdesi kullanma
 ms.date: 02/14/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01ea32ffe978d7b1544597857187f00bec9c3467
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1f055925a4da916bf88da802e7a4991b0362b057
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57325299"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58147403"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Lambda ifadeleri için ifade gövdesi veya blok gövdesi kullan
 

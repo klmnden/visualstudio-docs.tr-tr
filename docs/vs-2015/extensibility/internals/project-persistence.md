@@ -11,19 +11,19 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3fbd593c32228545a0529f6bc938bd1dba77690f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794753"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58152570"
 ---
 # <a name="project-persistence"></a>Proje Kalıcılığı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Kalıcılık, projeniz için bir temel tasarım noktadır. Çoğu proje dosyaları temsil edecek proje öğeleri kullanın. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verisini dosya tabanlı olmayan projeleri de destekler. Proje ve proje dosyası tarafından sahip olunan dosyaları, her iki kalıcı gerekir. IDE kendisi veya bir proje öğesi kaydetmek için projeyi bildirir.  
   
- Şablonları projeleri için proje fabrikasına geçirilir. Şablonları, belirli bir proje türünü gereksinimlerine göre tüm proje öğelerinin başlatma desteklemelidir. Bu şablonları daha sonra proje dosyaları olarak kaydedilen ve IDE çözüm aracılığıyla yönetilir. Daha fazla bilgi için [oluşturma proje örnekleri tarafından kullanarak proje Fabrikalarını](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) ve [çözümleri](../../extensibility/internals/solutions.md).  
+ Şablonları projeleri için proje fabrikasına geçirilir. Şablonları, belirli bir proje türünü gereksinimlerine göre tüm proje öğelerinin başlatma desteklemelidir. Bu şablonları daha sonra proje dosyaları olarak kaydedilen ve IDE çözüm aracılığıyla yönetilir. Daha fazla bilgi için [oluşturma proje örnekleri tarafından kullanarak proje Fabrikalarını](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) ve [çözümleri](../../extensibility/internals/solutions-overview.md).  
   
  Proje öğeleri, dosya tabanlı veya dosya tabanlı olmayan olabilir:  
   

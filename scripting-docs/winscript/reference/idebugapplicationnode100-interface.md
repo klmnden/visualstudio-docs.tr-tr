@@ -2,7 +2,6 @@
 title: Idebugapplicationnode100 arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a6cbe92c6789b702adc69f598a995f84c01ef86
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f380245422047142b3f06757f6c1057302dd5d26
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347461"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58146051"
 ---
 # <a name="idebugapplicationnode100-interface"></a>IDebugApplicationNode100 Arabirimi
 `IDebugApplicationNode100` Arabirimi işlevselliğini genişleten [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md). Uygulaması QueryInterface çağırarak bu arabirimin örneğini alabilirsiniz [Idebugapplicationnode arabirimi](../../winscript/reference/idebugapplicationnode-interface.md).  

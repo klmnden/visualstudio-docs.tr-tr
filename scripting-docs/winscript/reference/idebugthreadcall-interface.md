@@ -2,7 +2,6 @@
 title: Idebugthreadcall arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 89f0fba2f5210cdcf4bb8f17443f948cb9ba1f4e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346273"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58149529"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall Arabirimi
 `IDebugThreadCall` Arabirimi iş parçacıkları arası çağrılar ile bir bileşen tarafından uygulanan genellikle `IDebugThread` işlem hata ayıklama Yöneticisi (PDM) tarafından sağlanan uygulama taşıma.  

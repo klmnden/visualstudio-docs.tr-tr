@@ -2,7 +2,6 @@
 title: IDispatchEx::InvokeEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e631ecca1181a25fa3cf419f5fc96666f0db3cd6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086534"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58157353"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 Özellikler ve yöntemler tarafından sunulan erişim sağlayan bir `IDispatchEx` nesne.  
@@ -71,10 +70,10 @@ HRESULT InvokeEx(
  Sonuç depolanmış veya çağıran hiçbir sonuç beklemiyorsa Null olduğu konuma yönelik işaretçi. DISPATCH_PROPERTYPUT veya DISPATCH_PROPERTYPUTREF belirtilirse, bu bağımsız değişkeni yoksayılır.  
   
  `pei`  
- Özel durum bilgisi içeren bir yapıya yönelik işaretçi. Bu yapı sahipse doldurulması `DISP_E_EXCEPTION` döndürülür. Null olabilir. Bkz: `IDispatch` tam açıklamasını belgelerine `EXCEPINFO` yapısı.  
+ Özel durum bilgisi içeren bir yapıya yönelik işaretçi. Bu yapı sahipse doldurulması `DISP_E_EXCEPTION` döndürülür. Can be Null. Bkz: `IDispatch` tam açıklamasını belgelerine `EXCEPINFO` yapısı.  
   
  `pspCaller`  
- İşaretçi nesnesinin, arayandan Hizmetleri elde sağlar çağıran tarafından sağlanan bir hizmet sağlayıcısı nesnesi. Null olabilir.  
+ İşaretçi nesnesinin, arayandan Hizmetleri elde sağlar çağıran tarafından sağlanan bir hizmet sağlayıcısı nesnesi. Can be Null.  
   
  `IDispatchEx::InvokeEx` Tüm ile aynı özellikleri sağlayan `IDispatch::Invoke` ve birkaç uzantıları ekler:  
   

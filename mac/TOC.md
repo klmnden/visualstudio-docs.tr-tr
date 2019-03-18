@@ -33,7 +33,7 @@
 ## [Blok Seçimi](block-selection.md)
 ## [Düzenleyici Temaları](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Ortak Klavye Kısayolları](keyboard-shortcuts.md)
+## [Varsayılan Klavye Kısayolları](keyboard-shortcuts.md)
 
 # [Hata Ayıklama](debugging.md)
 ## [Veri Görselleştirmeleri](data-visualizations.md)

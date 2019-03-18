@@ -14,12 +14,12 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8ebe65a3a2e070e661009ee1e53990e1ee34f5aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a9825fabe08940e8950cf88a1dbf2bc149af0b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763715"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58158074"
 ---
 # <a name="solution-user-options-suo-file"></a>Çözüm Kullanıcı Seçenekleri (.Suo) Dosyası
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,4 +40,4 @@ ms.locfileid: "54763715"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
- [Çözümler](../../extensibility/internals/solutions.md)
+ [Çözümler](../../extensibility/internals/solutions-overview.md)

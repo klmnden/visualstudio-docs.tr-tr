@@ -1,21 +1,20 @@
 ---
-title: Visual Studio için görsel dil sözlüğü | Microsoft Docs
+title: Görsel dil başvurusu
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-ms.author: v-brickg
+ms.author: brgeorge
 manager: jillfra
-ms.workload:
-- v-brickg
-ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698488"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58158087"
 ---
-# <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio için görsel dil sözlüğü
+# <a name="visual-language-dictionary"></a>Görsel dil sözlüğü
+
 Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramları göstermek için ortak bir görsel dil kullanır. Yeni simgelerin tasarlarken, bu sözlük kendi görüntünüzü belirtmek istediğiniz kavramları tanımlamak için kullanın.
 
 ## <a name="general-guidelines"></a>Genel yönergeler

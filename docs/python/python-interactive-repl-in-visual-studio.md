@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155662"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58151147"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python etkileşimli pencere ile çalışma
 
@@ -56,7 +56,7 @@ Son olarak, kod dosyasını seçin ve kullanmak [ **etkileşime Gönder** komut]
 
 ## <a name="interactive-window-options"></a>Etkileşimli pencere seçenekleri
 
-Çeşitli yönlerini denetleyebilirsiniz **etkileşimli** penceresinden **Araçları** > **seçenekleri** > **Pythonaraçları**  >  **Etkileşimli Windows** (bkz [seçenekleri](python-support-options-and-settings-in-visual-studio.md)):
+Çeşitli yönlerini denetleyebilirsiniz **etkileşimli** penceresinden **Araçları** > **seçenekleri** > **Python**  >  **Etkileşimli Windows** (bkz [seçenekleri](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Python etkileşimli penceresinde seçenekleri](media/options-interactive-windows.png)
 
@@ -121,4 +121,4 @@ Visual Studio gibi yorumlar ile başlayan kod hücreleri de algılar `# In[1]:`,
 
 **Etkileşimli** penceresinde IntelliSense yalnızca kaynak kod çözümlemeyi dayanır Kod Düzenleyicisi'ni aksine Canlı nesneler dayalı IntelliSense'i içerir. Bu öneriler daha doğru **etkileşimli** penceresiyle, özellikle dinamik olarak üretilen kod. (Örneğin, günlük iletilerini) yan etkileri olan işlevlere geliştirme deneyiminizi etkileyebilir dezavantajı olmasıdır.
 
-Bu davranış bir sorun varsa altındaki ayarları değiştirin **Araçları** > **seçenekleri** > **Python Araçları**  >   **Etkileşimli Windows** içinde **tamamlama modunu** grup üzerinde açıklandığı [seçenekleri - etkileşimli pencere](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Bu davranış bir sorun varsa altındaki ayarları değiştirin **Araçları** > **seçenekleri** > **Python**  >   **Etkileşimli Windows** içinde **tamamlama modunu** grup üzerinde açıklandığı [seçenekleri - etkileşimli pencere](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
