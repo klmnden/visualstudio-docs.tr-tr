@@ -29,16 +29,24 @@ items:
   items:
   - name: Yönetilen kod için kod analizi
     items:
-    - name: FxCop çözümleyicileri hakkında SSS
-      href: fxcop-analyzers-faq.md
-    - name: FxCop’tan geçiş
-      href: fxcop-analyzers.yml
+    - name: FxCop çözümleyicileri
       items:
-      - name: FxCop çözümleyicilerini yükleme
+      - name: SSS
+        href: fxcop-analyzers-faq.md
+      - name: Yükleme
         href: install-fxcop-analyzers.md
+      - name: Yapılandırma
+        href: configure-fxcop-analyzers.md
+        items:
+        - name: Yapılandırma seçenekleri
+          href: fxcop-analyzer-options.md
+      - name: Statik kod analizinden geçiş
+        href: fxcop-analyzers.yml
+    - name: Çözümleyiciler hakkında SSS
+      href: analyzers-faq.md
     - name: Roslyn çözümleyicilerini yükleme
       href: install-roslyn-analyzers.md
-    - name: Roslyn çözümleyicilerini yapılandırma ve kullanma
+    - name: Roslyn çözümleyicilerini kullanma ve yapılandırma
       href: use-roslyn-analyzers.md
     - name: Otomatik kod analizini etkinleştirme
       href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -1470,9 +1478,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd Hataları
       href: fxcopcmd-errors.md
-ms.openlocfilehash: d922322159ed52441168ab7bfec76c0f92804501
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: daaf61f508d3e14c26044b181c478e5701afe6ed
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699674"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868133"
