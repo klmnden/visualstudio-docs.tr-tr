@@ -2,7 +2,6 @@
 title: Windows betik arabirimleri | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f98e60a82735ae561edf404763e0700f71b3a3d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905369"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58154432"
 ---
 # <a name="windows-script-interfaces"></a>Windows Komut Dosyası Arabirimleri
 
