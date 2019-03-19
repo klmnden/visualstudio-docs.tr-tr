@@ -2,6 +2,8 @@ items:
 - name: MSBuild
   href: msbuild.md
   items:
+  - name: MSBuild 16.0 Sürümündeki Yenilikler
+    href: whats-new-msbuild-16-0.md
   - name: MSBuild 15.0 Sürümündeki Yenilikler
     href: what-s-new-in-msbuild-15-0.md
   - name: MSBuild Kavramları
@@ -152,7 +154,7 @@ items:
   - name: MSBuild'de Günlük Kaydı
     href: logging-in-msbuild.md
     items:
-    - name: MSBuild ile Derleme Günlükleri Alma
+    - name: MSBuild ile Yapı Günlükleri Alma
       href: obtaining-build-logs-with-msbuild.md
     - name: Günlükçüleri Derleme
       href: build-loggers.md
@@ -433,9 +435,9 @@ items:
       href: updating-an-existing-application.md
   - name: MSBuild Sözlüğü
     href: msbuild-glossary.md
-ms.openlocfilehash: d177a19b3fce1e7ebdd182dd09e9c8bbd05709c5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: f05970702d32b15fb27add1adf8dca28a25c4b13
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483750"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983045"
