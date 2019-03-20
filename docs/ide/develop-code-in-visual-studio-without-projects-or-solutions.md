@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718563"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194956"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Kodu Visual Studio'da projeler veya çözümler olmadan geliştirme
 
@@ -103,7 +103,7 @@ Kod temelinizde Python veya JavaScript kodu içeriyorsa, tüm yapılandırmanız
 
 ### <a name="codebases-that-contain-c-code"></a>Bu kod tabanlarında C++ kodu içerir
 
-Visual Studio'da C++ kodu çözümlerin veya projelerin olmadan açma hakkında daha fazla bilgi için bkz: [C++ açık klasörü projelerde](/cpp/ide/non-msbuild-projects).
+Visual Studio'da C++ kodu çözümlerin veya projelerin olmadan açma hakkında daha fazla bilgi için bkz: [C++ açık klasörü projelerde](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Kod tabanlarında içeren bir Visual Studio projesi
 
@@ -118,6 +118,6 @@ Kod klasörünüz Visual Studio projesi içeriyorsa, projeyi başlangıç öğes
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yapı özelleştirme ve hata ayıklama görevleri](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [C++ için klasör Proje Aç](/cpp/ide/non-msbuild-projects)
-- [C++'da CMake projeleri](/cpp/ide/cmake-tools-for-visual-cpp)
+- [C++ için klasör Proje Aç](/cpp/build/open-folder-projects-cpp)
+- [C++'da CMake projeleri](/cpp/build/cmake-projects-in-visual-studio)
 - [Kod ve metin düzenleyicide kod yazma](../ide/writing-code-in-the-code-and-text-editor.md)

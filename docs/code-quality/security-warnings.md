@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955381"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195092"
 ---
-# <a name="security-warnings"></a>Güvenlik Uyarıları
+# <a name="security-warnings"></a>Güvenlik uyarıları
 
 Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler. Bu uyarılar, programınızdaki güvenlik açıklarını önlemeye yardımcı olur. Bu uyarılardan birini devre dışı bırakırsanız, bunun sebebini kodunuzda açıkça işaretlemelisiniz ve ayrıca geliştirme projeniz için güvenlik çalışanını bilgilendirmelisiniz.
 
@@ -77,5 +77,5 @@ Güvenlik uyarıları, daha güvenli kütüphaneleri ve uygulamaları destekler.
 |[CA2153: Bozuk durum özel durumlarını işlemekten kaçının](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Bozuk durum özel durumlar (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) belirtmek, Bellek Bozulması işleminizde mevcut. Bir saldırgan bozuk bir bellek bölgesini bir yararlanma yerleştirebilirsiniz, kilitlenme işlemine izin vermek yerine bu yakalama güvenlik açıklarına neden olabilir.|
 |[CA3075: Güvensiz DTD işleme](../code-quality/ca3075-insecure-dtd-processing.md)|Güvensiz XmlReaderSettings örnekleri kullanın veya dış varlık kaynaklarına başvuran, ayrıştırıcının güvenilmeyen giriş kabul ve saldırganlar için hassas bilgileri ifşa.|
 |[CA3076: Güvensiz XSLT betiği yürütme](../code-quality/ca3076-insecure-xslt-script-execution.md)|Genişletilebilir Stil Sayfası Dil Dönüşümleri (XSLT) .NET uygulamalarında endpoınt çalışırsa, saldırganların hizmet reddi ve siteler arası lideri, hassas bilgileri ifşa güvenilmeyen URI başvuruları işlemci çözebilir saldırıları.|
-|[CA3077: API tasarımı, XML belgesi ve XML metin okuyucusunda güvensiz işleme](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Bir API tasarlamaya XMLDocument ve XMLTextReader türetilmiş olduğunda XmlReaderSettings oluşturduğunu unutmayın.  Kullandığınızda güvensiz XmlReaderSettings örnekleri başvuran veya dış varlık kaynakları çözümleme XML'de güvenli olmayan değerleri ayarlama bilgileri açığa çıkmasına neden olabilir.|
+|[CA3077: API tasarımı, XML belgesi ve XML metin okuyucusunda güvensiz işleme](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Bir API tasarlamaya XMLDocument ve XMLTextReader türetilmiş olduğunda XmlReaderSettings oluşturduğunu unutmayın. Kullandığınızda güvensiz XmlReaderSettings örnekleri başvuran veya dış varlık kaynakları çözümleme XML'de güvenli olmayan değerleri ayarlama bilgileri açığa çıkmasına neden olabilir.|
 |[CA3147: Fiili işleyicileri ValidateAntiForgeryToken ile işaretleyin](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|ASP.NET MVC denetleyicisi tasarlarken siteler arası istek sahteciliği saldırılarına oluşturduğunu unutmayın. Siteler arası istek Sahtekarlığı Saldırısı, kimliği doğrulanmış bir kullanıcıdan, ASP.NET MVC denetleyicisine kötü amaçlı istek gönderebilirsiniz.|

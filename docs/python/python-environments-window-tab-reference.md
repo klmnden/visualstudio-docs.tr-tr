@@ -1,7 +1,7 @@
 ---
 title: Python ortamları penceresi başvurusu
 description: Her Visual Studio'da Python ortamları penceresinde görünen sekmeler ayrıntıları.
-ms.date: 12/06/2018
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b55b2e1a34afa78ac1e122081eca261f3dcdabc8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909992"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195212"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresi Sekme Başvurusu
 
@@ -26,13 +26,23 @@ Açmak için **Python ortamları** penceresi:
 
 Genişletirseniz **Python ortamları** yetecek kadar geniş penceresinde bu seçenekler ile çalışmak daha kullanışlı bulabilirsiniz sekmeler olarak gösterilir. Daha anlaşılır olması için bu makaledeki sekmeleri Genişletilmiş görünümde gösterilir.
 
-![Python ortamları penceresi Genişletilmiş Görünümü](media/environments-expanded-view.png)
+::: moniker range="vs-2017"
+![Python ortamları penceresi Genişletilmiş Görünümü](media/environments/environments-expanded-view.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python ortamları penceresi Genişletilmiş Görünümü](media/environments/environments-expanded-view-2019.png)
+::: moniker-end
 
 ## <a name="overview-tab"></a>Genel Bakış sekmesi
 
 Ortam için temel bilgileri ve komutları sağlar:
 
-![Python ortamları genel bakış sekmesi](media/environments-overview-tab.png)
+::: moniker range="vs-2017"
+![Python ortamları genel bakış sekmesi](media/environments/environments-overview-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python ortamları genel bakış sekmesi](media/environments/environments-overview-tab-2019.png)
+::: moniker-end
 
 | Komut | Açıklama |
 | --- | --- |
@@ -52,13 +62,18 @@ Başlatma komut dosyası kodu içeren, **etkileşimli** penceresi yükler ve oto
 
 1. Bir ortam yüklediğinizde Visual Studio, bir klasör oluşturur. *Documents\Visual Studio 2017\Python betikleri\\\<ortam >* burada &lt;ortam&gt; eşleşir ortam adı. Ortama özgü klasöre kolayca gezinebilirsiniz **etkileşimli betiklerini keşfedin** komutu. Başladığınızda **etkileşimli** penceresi bu ortam için bu yükler ve her şeyi çalıştırır *.py* dosyaları alfabetik sırayla burada bulunur.
 
-1. **Betikleri** denetim **Araçları** > **seçenekleri** > **Python Araçları**  >  **Etkileşimli Windows** sekme (bkz [etkileşimli windows seçenekleri](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) yüklenir ve tüm ortamlarda çalıştırabilirsiniz başlatma komut dosyaları için ek bir klasör belirtmek için tasarlanmıştır. Ancak, bu özellik şu anda çalışmıyor.
+1. **Betikleri** denetim **Araçları** > **seçenekleri** > **Python**  >  **Etkileşimli Windows** sekme (bkz [etkileşimli windows seçenekleri](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) yüklenir ve tüm ortamlarda çalıştırabilirsiniz başlatma komut dosyaları için ek bir klasör belirtmek için tasarlanmıştır. Ancak, bu özellik şu anda çalışmıyor.
 
 ## <a name="configure-tab"></a>Yapılandır sekmesi
 
-Varsa, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. Bu sekme yoksa, Visual Studio otomatik olarak tüm ayrıntıları yönetiyor anlamına gelir.
+Varsa, **yapılandırma** sekmesi, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. Bu sekme yoksa, Visual Studio otomatik olarak tüm ayrıntıları yönetiyor anlamına gelir.
 
-![Python ortamları Yapılandır sekmesi](media/environments-configure-tab.png)
+::: moniker range="vs-2017"
+![Python ortamları Yapılandır sekmesi](media/environments/environments-configure-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python ortamları Yapılandır sekmesi](media/environments/environments-configure-tab-2019.png)
+::: moniker-end
 
 | Alan | Açıklama |
 | --- | --- |
@@ -75,35 +90,50 @@ Varsa, aşağıdaki tabloda açıklandığı gibi ayrıntıları içerir. Bu sek
 
 *Ayrıca önceki sürümlerinde "pip" etiketli.*
 
-Pip, ayrıca arayın ve yenilerini (tüm bağımlılıklar dahil olmak üzere) yükleme kullanan bir ortamda yüklü paketleri yönetir. Visual Studio 2017 sürüm 15.7 ve üzeri, bir **paketleri (Conda)** sekmesi görüntülenir, bunun yerine conda Paket Yöneticisi'ni kullanır. (Bu seçenek görmüyorsanız, seçenek kümesi **Araçları** > **seçenekleri** > **Python** > **Deneysel**   >  **Conda Paket Yöneticisi'ni (PIP) yerine kullanılabilir olduğunda** ve Visual Studio'yu yeniden başlatın.)
+PIP kullanarak ortamında yüklü paketleri yöneten ( **paketleri (Pypı)** sekmesi) ya da conda ( **paketleri (Conda)** conda ortamları Visual Studio 2017 sürüm 15.7 ve üzeri için sekmesinde). Bu sekmede arayın ve bağımlılıkları da dahil olmak üzere yeni paketlerini yükleyin.
 
 Paket zaten yüklü olan paketleri denetimleri (yukarı ok) güncelleştirme ve kaldırma (daire içinde X) ile görünür:
 
-![Python ortamları Paketleri sekmesi](media/environments-pip-tab-controls.png)
+![Python ortamları Paketleri sekmesi](media/environments/environments-pip-tab-controls.png)
 
 Bir arama terimi filtreleri Pypı yüklü paketleri yanı sıra yüklü paketleri listesi giriliyor.
 
-![Python ortamları paketleri sekmesinde "num" bir arama özelliğiyle](media/environments-pip-tab.png)
+::: moniker range="vs-2017"
+![Python ortamları paketleri sekmesinde "num" bir arama özelliğiyle](media/environments/environments-pip-tab.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Python ortamları paketleri sekmesinde "num" bir arama özelliğiyle](media/environments/environments-pip-tab-2019.png)
+::: moniker-end
 
 Yukarıdaki görüntüde görebileceğiniz gibi arama sonuçlarının arama terimiyle eşleşen paket sayısı Göster; İlk listede, ancak bir komutu çalıştırmak için giriştir **pip yükleme \<adı >** doğrudan. Üzerinde kullanıyorsanız **paketleri (Conda)** sekmesinde, bunun yerine bkz **conda yükleme \<adı >**:
 
-![Yükleme komutunu bir conda gösteren Conda Paketleri sekmesi](media/environments-conda-tab-install.png)
+::: moniker range="vs-2017"
+![Yükleme komutunu bir conda gösteren Conda Paketleri sekmesi](media/environments/environments-conda-tab-install.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Yükleme komutunu bir conda gösteren Conda Paketleri sekmesi](media/environments/environments-conda-tab-install-2019.png)
+::: moniker-end
 
 Her iki durumda da, yükleme paket adından sonra arama kutusuna bağımsız değişken ekleyerek özelleştirebilirsiniz. Bağımsız değişkenler eklediğinizde gösterir arama sonuçlarının **pip yükleme** veya **conda yükleme** arama kutusuna içeriğine göre ve ardından:
 
-![Pip ve conda yükleme komutları bağımsız değişkenleri kullanma](media/environments-pip-tab-arguments.png)
+::: moniker range="vs-2017"
+![Pip ve conda yükleme komutları bağımsız değişkenleri kullanma](media/environments/environments-pip-tab-arguments.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Pip ve conda yükleme komutları bağımsız değişkenleri kullanma](media/environments/environments-pip-tab-arguments-2019.png)
+::: moniker-end
 
-Bir paket yükleme oluşturur ortamın içindeki *LIB* dosya sisteminde klasör. Varsa, örneğin, Python 3.6 yüklü *c:\Python36*, içinde yüklü paketleri *c:\Python36\Lib*; yüklü Anaconda3 varsa *c:\Program Files\Anaconda3*paketleri yüklenmiş sonra *c:\Program Files\Anaconda3\Lib*.
+Bir paket yükleme oluşturur ortamın içindeki *LIB* dosya sisteminde klasör. Varsa, örneğin, Python 3.6 yüklü *c:\Python36*, içinde yüklü paketleri *c:\Python36\Lib*; yüklü Anaconda3 varsa *c:\Program Files\Anaconda3*paketleri yüklenmiş sonra *c:\Program Files\Anaconda3\Lib*. Conda ortamları için söz konusu ortamın klasöründe paketleri yüklenir.
 
 ### <a name="grant-administrator-privileges-for-package-install"></a>Yükleme paketi için yönetici ayrıcalıkları verme
 
 Paketleri gibi dosya sistemi, korumalı bir alanda bulunan bir ortama yüklerken *c:\Program Files\Anaconda3\Lib*, Visual Studio çalıştırmanız gerekir `pip install` paket alt klasörler oluşturmak üzere izin vermek için yükseltilmiş. Yükseltme gerekli olduğunda, Visual Studio istemi görüntüler **yüklemek, güncelleştirmek veya bu ortam için paketleri kaldırmak için yönetici ayrıcalıkları gerekebilir**:
 
-![Paket yüklemesi için yükseltme istemi](media/environments-pip-elevate.png)
+![Paket yüklemesi için yükseltme istemi](media/environments/environments-pip-elevate.png)
 
 **Şimdi Yükselt** konu herhangi bir işletim sistemi için izinleri de ister. tek bir işlem için pip için yönetici ayrıcalıkları verir. Seçme **yönetici ayrıcalıkları olmadan devam** paketini yükleme ancak klasörleri gibi çıkış oluşturmaya çalışırken pip başarısız girişimleri **hata: değil oluşturabilirsiniz ' C:\Program Files\Anaconda3\Lib\ Site-packages\png.py': İzin reddedildi.**
 
-Seçme **her zaman yüklerken veya paketlerini kaldırma yükseltmesine** iletişim ortamı için söz konusu görüntülenmesini engeller. İletişim kutusunu yeniden görünür hale getirmek için Git **Araçları** > **seçenekleri** > **Python Araçları** > **genel** düğmesini seçip **tüm kalıcı olarak gizli iletişim kutuları sıfırlama**.
+Seçme **her zaman yüklerken veya paketlerini kaldırma yükseltmesine** iletişim ortamı için söz konusu görüntülenmesini engeller. İletişim kutusunu yeniden görünür hale getirmek için Git **Araçları** > **seçenekleri** > **Python** > **genel**düğmesini seçip **tüm kalıcı olarak gizli iletişim kutuları sıfırlama**.
 
 Bu aynı **seçenekleri** sekmesinde de seçebilirsiniz **her zaman pip yönetici olarak çalıştır** tüm ortamlar için iletişim başlatmasını bastırmak için. Bkz: [seçenekleri - Genel sekmesi](python-support-options-and-settings-in-visual-studio.md#general-options).
 
@@ -111,7 +141,7 @@ Bu aynı **seçenekleri** sekmesinde de seçebilirsiniz **her zaman pip yönetic
 
 3.1 ve 3.2, Python 2.6 kullanırken, Visual Studio uyarısı gösterir **yeni güvenlik kısıtlamaları nedeniyle internet'ten yükleme Python'ın bu sürümünde çalışmayabilir**:
 
-![Python eski sürümü yükleme kısıtlamaları iletisi pip hakkında](media/environments-old-version-restriction.png)
+![Python eski sürümü yükleme kısıtlamaları iletisi pip hakkında](media/environments/environments-old-version-restriction.png)
 
 Uyarıya neden olan Python, bu eski sürümleriyle `pip install` desteği için Aktarım güvenliği Katmanı (TLS) 1.2, paket kaynağından paketleri yüklemek için gerekli olan içermiyor pypi.org. Özel bir Python yapılar destekleyebilir TLS 1.2 durumda `pip install` işe yarayabilir.
 
@@ -119,11 +149,12 @@ Uygun olabilir *get-pip.py* bir paket için [bootstrap.pypa.io](https://bootstra
 
 Ancak yalnızca Python 2.7 veya 3.3 durumu uyarısı görünmez + yükseltmek için önerilir.
 
+::: moniker range="vs-2017"
 ## <a name="intellisense-tab"></a>IntelliSense sekmesi
 
 IntelliSense tamamlanma veritabanı geçerli durumunu gösterir:
 
-![Python ortamları IntelliSense sekmesi](media/environments-intellisense-tab.png)
+![Python ortamları IntelliSense sekmesi](media/environments/environments-intellisense-tab.png)
 
 - İçinde **Visual Studio 2017 sürüm 15.5** ve bu kitaplık için derlenmiş olan bir veritabanını daha önce IntelliSense tamamlamaları bağlıdır. Veritabanı oluşturma arka planda gerçekleştirilir, bu kitaplığa yüklendiğinde, ancak biraz zaman alabilir ve kod yazmaya başladığınızda tam olmayabilir.
 - **Visual Studio 2017 sürüm 15.6** ve daha sonra veritabanı üzerinde varsayılan olarak bağlı olmayan tamamlamaları sağlamak için daha hızlı bir yöntem kullanır. Bu nedenle sekme olarak etiketlenmiş **IntelliSense [veritabanı devre dışı]**. Veritabanı seçeneğini temizleyerek etkinleştirebilirsiniz **Araçları** > **seçenekleri** > **Python**  >   **Deneysel** > **ortamları için yeni stil IntelliSense kullanma**.
@@ -131,6 +162,8 @@ IntelliSense tamamlanma veritabanı geçerli durumunu gösterir:
 Visual Studio yeni bir ortam algılar (veya bir ekledikten sonra), veritabanı, kitaplık kaynak dosyalarını analiz ederek derlemek otomatik olarak başlar. Bu işlem, herhangi bir yere bir saat veya yüklenenler bağlı olarak daha fazla bilgi için bir dakika sürebilir. (Anaconda, örneğin, birçok kitaplıkları ile gelir ve veritabanını derlemek için biraz zaman alır.) Tamamlandıktan sonra size ayrıntılı IntelliSense ve veritabanını yeniden yenileme gerekmez (ile **Yenile DB** düğmesi) daha fazla kitaplıklarını yüklemek kadar.
 
 Kendisi için veriler henüz derlenmiş kitaplıkları ile işaretlenmiş bir **!**; tam bir ortamın veritabanı yoksa bir **!** Ayrıca yanında ana ortam listesinde görünür.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,6 +1,6 @@
 ---
 title: WPF araç kutusu denetimi oluşturma | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867989"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194833"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF araç kutusu denetimi oluşturma
-(Windows Presentation Framework) WPF araç kutusu denetimi şablon otomatik olarak eklenen WPF denetimleri oluşturmanıza olanak tanır. **araç kutusu** uzantısı yüklü olduğunda. Bu konuda şablonu oluşturmak için nasıl kullanılacağını gösterir. bir **araç kutusu** denetimi, diğer kullanıcılara dağıtabilirsiniz.
+
+(Windows Presentation Framework) WPF araç kutusu denetimi şablon otomatik olarak eklenen WPF denetimleri oluşturmanıza olanak tanır. **araç kutusu** uzantısı yüklü olduğunda. Bu izlenecek yol şablonu oluşturmak için nasıl kullanılacağını gösterir. bir **araç kutusu** denetimi, diğer kullanıcılara dağıtabilirsiniz.
 
 Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-wpf-toolbox-control"></a>WPF araç kutusu denetimi oluşturma
+## <a name="create-the-toolbox-control"></a>Araç kutusu denetimi oluşturma
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>WPF araç kutusu denetimi ile bir uzantı oluşturma
 
-1. Adlı bir VSIX projesi oluşturun `MyToolboxControl`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.
+1. Adlı bir VSIX projesi oluşturun `MyToolboxControl`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim "VSIX" için arama yapın.
 
 2. Projeyi açtığında, ekleme bir **WPF araç kutusu denetimi** adlı öğe şablonu `MyToolboxControl`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#** > **genişletilebilirlik** seçip **WPF araç kutusu denetimi**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme *MyToolboxControl.cs*.
 
@@ -53,6 +54,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     ```
 
 ## <a name="renaming-the-control"></a>Denetimi yeniden adlandırma
+
  Varsayılan olarak, denetiminizin içinde görünür **araç kutusu** olarak **MyToolboxControl** adlı bir grup içindeki **MyToolboxControl.MyToolboxControl**. Bu adları değiştirebilirsiniz *MyToolboxControl.xaml.cs* dosya.
 
 1. Açık *MyToolboxControl.xaml.cs* kod görünümünde.
@@ -74,7 +76,8 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     }
     ```
 
-## <a name="build-test-and-deployment"></a>Derleme, Test ve dağıtım
+## <a name="build-test-and-deployment"></a>Derleme, test ve dağıtım
+
  Projede hata ayıklaması yaparken, yüklü denetim bulmalısınız **araç kutusu** Visual Studio'nun Deneysel örneğinin.
 
 ### <a name="to-build-and-test-the-control"></a>Yapı ve denetim test etmek için

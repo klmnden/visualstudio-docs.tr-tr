@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768886"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194567"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio Çoklu Sürüm Desteğine Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Bu sürümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sürümünü belir
 >  Visual Studio'nun Express sürümlerinde hedef Framework'ü olarak ayarlanamıyor **yeni proje** iletişim kutusu.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvurularını çözümleme
- Bir .NET Framework sürümünü hedeflemek için önce uygun derleme başvurularını yüklemeniz gerekir. .NET Framework sürüm 2.0, 3.0 ve 3.5 için derleme başvuruları karşıdan yükleyebileceğiniz .NET Framework 3.5 SP1, dahil edilecek [Microsoft Download Center, Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602) Web sitesi. .NET Framework 3.5 istemci profili, .NET Framework 4, .NET Framework 4 istemci profili ve Silverlight için derleme başvuruları web'da ayrıca [Visual Studio indirmeleri](http://go.microsoft.com/fwlink/?LinkId=179687) Web sitesi.
+ Bir .NET Framework sürümünü hedeflemek için önce uygun derleme başvurularını yüklemeniz gerekir. .NET Framework sürüm 2.0, 3.0 ve 3.5 için derleme başvuruları karşıdan yükleyebileceğiniz .NET Framework 3.5 SP1, dahil edilecek [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) Web sitesi. .NET Framework 3.5 istemci profili, .NET Framework 4, .NET Framework 4 istemci profili ve Silverlight için derleme başvuruları web'da ayrıca [Visual Studio indirmeleri](http://go.microsoft.com/fwlink/?LinkId=179687) Web sitesi.
 
 > [!NOTE]
 >  .NET Framework istemci profili, kitaplıkların ve özelliklerin sınırlı bir kümesini sağlayan .NET Framework'ün bir alt kümesidir. İstemci profilleri hakkında daha fazla bilgi için bkz. [.NET Framework istemci profili](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
@@ -79,4 +79,6 @@ Bu sürümünde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], sürümünü belir
  .NET Framework 3.5 veya sonraki sürümler, bir System.Core başvurusu ve bir proje düzeyi içeri aktarma (yalnızca Visual Basic'te) System.Linq hedeflediğinizde otomatik olarak eklenir. LINQ özelliklerini kullanmak istiyorsanız, ayrıca Option Infer (yalnızca Visual Basic'te) açmanız gerekir. Hedefi önceki bir .NET Framework sürümü ile değiştirirseniz başvuru ve içe aktarma otomatik olarak kaldırılır. Daha fazla bilgi için [nasıl yapılır: Bir LINQ projesi oluşturma](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Çoklu hedefleme](../msbuild/msbuild-multitargeting-overview.md) [ASP.NET Web projeleri için .NET Framework çoklu sürüm desteğinin](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [Platform uyumluluğu ve sistem gereksinimleri](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[Çoklu hedefleme](../msbuild/msbuild-multitargeting-overview.md)
+[ASP.NET Web projeleri için .NET Framework çoklu sürüm desteğinin](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[Platform uyumluluğu ve sistem gereksinimleri](/visualstudio/productinfo/vs2015-compatibility-vs)

@@ -1,6 +1,6 @@
 ---
 title: Proje özelliklerini alma | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
@@ -11,22 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7344c94f12962d34b2f4c38b86e83b0cb6a5e588
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6708759796639886d84a46003fbb894b988a714
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684955"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195001"
 ---
 # <a name="get-project-properties"></a>Proje özelliklerini alma
+
 Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntüler.
 
 ## <a name="prerequisites"></a>Önkoşullar
- Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).
+
+Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>VSIX projesi oluşturun ve bir araç penceresi eklemek için
 
-1. Her Visual Studio uzantısı, uzantı varlıkları içeren bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `ProjectPropertiesExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.
+1. Her Visual Studio uzantısı, uzantı varlıkları içerecek bir VSIX dağıtım projesi ile başlar. Oluşturma bir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adlı VSIX projesi `ProjectPropertiesExtension`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim "VSIX" için arama yapın.
 
 2. Adlı bir özel araç penceresi öğe şablonu ekleyerek bir araç penceresi `ProjectPropertiesToolWindow`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle iletişim**Git **Visual C# öğeleri** > **genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** iletişim kutusunun altındaki alan, için dosya adını değiştirerek `ProjectPropertiesToolWindow.cs`. Özel araç penceresi oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).
 
@@ -34,7 +36,7 @@ Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntül
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Araç penceresine proje özelliklerini görüntülemek için
 
-1.  ProjectPropertiesToolWindowCommand.cs dosyasına aşağıdakileri ekleyin using deyimleri.
+1. ProjectPropertiesToolWindowCommand.cs dosyasına aşağıdakileri ekleyin using deyimleri.
 
     ```csharp
     using EnvDTE;
@@ -42,9 +44,9 @@ Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntül
 
     ```
 
-2.  İçinde *ProjectPropertiesToolWindowControl.xaml*, varolan bir düğmeyi kaldırma ve araç kutusundan TreeView ekleyin. Ayrıca click olay işleyicisinden kaldırabilirsiniz *ProjectPropertiesToolWindowControl.xaml.cs* dosya.
+2. İçinde *ProjectPropertiesToolWindowControl.xaml*, varolan bir düğmeyi kaldırma ve araç kutusundan TreeView ekleyin. Ayrıca click olay işleyicisinden kaldırabilirsiniz *ProjectPropertiesToolWindowControl.xaml.cs* dosya.
 
-3.  İçinde *ProjectPropertiesToolWindowCommand.cs*, kullanın `ShowToolWindow()` projesini açın ve özelliklerini okumak için yöntem TreeView özellikleri eklersiniz. ShowToolWindow için kod aşağıdaki gibi görünmelidir:
+3. İçinde *ProjectPropertiesToolWindowCommand.cs*, kullanın `ShowToolWindow()` projesini açın ve özelliklerini okumak için yöntem TreeView özellikleri eklersiniz. ShowToolWindow için kod aşağıdaki gibi görünmelidir:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -91,10 +93,10 @@ Bu izlenecek yol gösteren bir araç penceresinde proje özellikleri görüntül
     }
     ```
 
-4.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.
+4. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.
 
-5.  Deneysel örneğinde, bir projeyi açın.
+5. Deneysel örneğinde, bir projeyi açın.
 
-6.  İçinde **görünümü** > **diğer Windows** tıklayın **ProjectPropertiesToolWindow**.
+6. İçinde **görünümü** > **diğer Windows** tıklayın **ProjectPropertiesToolWindow**.
 
-     Tüm Proje Özellikleri'nin ve ilk proje adı ile birlikte araç penceresindeki ağaç denetimi görmeniz gerekir.
+  Tüm Proje Özellikleri'nin ve ilk proje adı ile birlikte araç penceresindeki ağaç denetimi görmeniz gerekir.

@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3c9c1ac41247a4576661ed7f985fe1e5385b3dd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753906"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195118"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +224,7 @@ ms.locfileid: "54753906"
   
 -   Kodunuzu TFS içinde depolanır, kod dizini oluşturma kullanarak açık olduğundan emin olun [Codeındex komutu](../ide/codeindex-command.md) ile [TFS Yapılandırma komut](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
--   TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. [Takım üyesi izinlerine sahip olduğunuzdan emin olun.](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   TFS ilişkili göstergeler yalnızca iş öğeleri koda bağlandığında ve bağlantılı iş öğelerini açmak için izniniz olduğunda görünür. [Takım üyesi izinlerine sahip olduğunuzdan emin olun.](/azure/devops/organizations/security/view-permissions)  
   
 -   Birim test göstergeleri, uygulama kodu birim testlere sahip olmadığında görünmez. Test durumu göstergeleri test projesinde otomatik olarak görüntülenir. Uygulama kodunuzun birim testleri var, ancak test göstergeleri görünmüyorsa biliyorsanız, çözümü derlemeyi deneyin (**Ctrl + Shift + B**).  
   

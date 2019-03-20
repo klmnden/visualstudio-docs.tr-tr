@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: b29cdb878e2d90844ebf08f6591a05378e62e24b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868217"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194768"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell betiklerini kullanarak geliştirme ve test ortamlarına yayımlama
 
@@ -24,7 +24,7 @@ Bu komut dosyalarını kullanarak siteniz geçici kullanım için özelleştiril
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Azure SDK 2.3 veya üstü. Bkz: [Visual Studio indirmeleri](http://go.microsoft.com/fwlink/?LinkID=624384). (Web projeleri için komut dosyaları oluşturmak için Azure SDK'sı gerekmez. Web projeleri, bulut hizmetlerinde değil web rolü için bu özellik kullanılabilir.)
+* Visual Studio 2015 veya üzeri ile **Azure iş yükü** yüklü veya Visual Studio 2013 ve Azure SDK 2.3 veya üstü. Bkz: [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc). (Web projeleri için komut dosyaları oluşturmak için Azure SDK'sı gerekmez. Web projeleri, bulut hizmetlerinde değil web rolü için bu özellik kullanılabilir.)
 * Azure PowerShell 0.7.4 veya üzeri. Bkz: [Azure PowerShell'i yükleme ve yapılandırma işlemini](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) veya üzeri.
 
@@ -242,7 +242,7 @@ Projenizi oluşturma otomatikleştirmek için MSBuild'e çağıran kod ekleme `N
     }
     ```
 
-1. Değiştirin `New-WebDeployPackage` ile aşağıdaki kod ve satır oluştururken yer tutucularını değiştirin `$msbuildCmd`. Bu kod, Visual Studio 2017 için aynıdır. Visual Studio 2015 kullanıyorsanız, değiştirme **VisualStudioVersion** özelliğini `14.0` (`12.0` Visual Studio 2013 için).
+1. Değiştirin `New-WebDeployPackage` ile aşağıdaki kod ve satır oluştururken yer tutucularını değiştirin `$msbuildCmd`. Bu kod için Visual Studio 2019 ' dir. Visual Studio 2017'yi kullanıyorsanız, değiştirme **VisualStudioVersion** özelliğini `15.0`, Visual Studio 2015 için ' 14.0' veya `12.0` Visual Studio 2013 için).
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ Projenizi oluşturma otomatikleştirmek için MSBuild'e çağıran kod ekleme `N
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

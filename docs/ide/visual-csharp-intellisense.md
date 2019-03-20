@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936869"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194612"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ Yükleyebileceğiniz bir Deneysel [Intellicode uzantısı](/visualstudio/intelli
 
 **Ekleme** IntelliSense işlemi otomatik olarak ekler gerekli `using` kod dosyanıza yönergesi. Bu özellik, odağı yazmak yerine, kodun başka bir parçası, odağı gerek kodu tutmanıza olanak sağlar.
 
-Başlatmak için **ekleme** işlemi, imleç türü başvuru konumu çözümlenemiyor. Örneğin, ne zaman, bir konsol uygulaması oluşturun ve ardından eklemek `XmlTextReader` body `Main` yöntemi, kırmızı dalgalı görünür kod satırdaki tür başvurusu çözümlenemiyor. Ardından çağırabilirsiniz **ekleme** aracılığıyla **hızlı Eylemler**. **Hızlı Eylemler** imleç bağlanmamış tür üzerinde konumlandırıldığında yalnızca görünür olur.
+Başlatmak için **ekleme** işlemi, imleç türü başvuru konumu çözümlenemiyor. Örneğin, ne zaman, bir konsol uygulaması oluşturun ve ardından eklemek `XmlReader` body `Main` yöntemi, kırmızı dalgalı görünür kod satırdaki tür başvurusu çözümlenemiyor. Ardından çağırabilirsiniz **ekleme** aracılığıyla **hızlı Eylemler**. **Hızlı Eylemler** imleç bağlanmamış tür üzerinde konumlandırıldığında yalnızca görülebilir.
 
 ![Kullanarak, hızlı genişletilmiş görüntü eylem ekleme](../ide/media/addusing-quickaction.png)
 

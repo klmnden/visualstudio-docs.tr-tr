@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30d0dd9256a56d11bfa47ba9504817a07191c974
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57868723"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193847"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Visual Studio SDK Desteği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Müşteriler, Visual Studio tümleşik geliştirme ortamı (IDE) genişletme ile
 ## <a name="paid-support"></a>Ücretli destek  
   
 ### <a name="developer-tools-support"></a>Geliştirici Araçları desteği  
- Destek de satın alınabilir. Destek teklifleri çeşitli geliştirici araçları kategori altında kullanılabilir [Microsoft Help ve Destek Merkezi](http://go.microsoft.com/fwlink/?LinkID=82383).  
+ Destek de satın alınabilir. Destek teklifleri çeşitli geliştirici araçları kategori altında kullanılabilir [Microsoft Help ve Destek Merkezi](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
   
- Kullanmak isteyen müşteriler [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] karmaşık paketleri geliştirmek için Microsoft ile bir Premier Destek sözleşmesi satın almayı düşünebilirsiniz. Daha fazla bilgi için [Microsoft Premier desteği](https://support.microsoft.com/premier). Küçük şirketler için [iş ortağı Avantajı Desteği](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) geleneksel bir Premier Destek teklifinin cazip bir alternatif olabilir.  
+ Kullanmak isteyen müşteriler [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] karmaşık paketleri geliştirmek için Microsoft ile bir Premier Destek sözleşmesi satın almayı düşünebilirsiniz. Daha fazla bilgi için [Microsoft Premier desteği](https://support.microsoft.com/premier). Küçük şirketler için [iş ortakları için gelişmiş destek](https://partner.microsoft.com/support/advanced-cloud-support) geleneksel bir Premier Destek teklifinin cazip bir alternatif olabilir.  
   
 > [!NOTE]
 > Standart Destek danışmanlığı veya öneri almak için kullanılamaz.  

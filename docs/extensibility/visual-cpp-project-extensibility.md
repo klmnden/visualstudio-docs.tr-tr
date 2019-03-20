@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868149"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195183"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
@@ -418,7 +418,7 @@ Visual C++ proje sistemi dayanır [VS proje sistemi](https://github.com/Microsof
 
 Genel tasarım bilgileri için bkz. [Platform genişletilebilirliği - 1. bölüm](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) ve [Platform genişletilebilirliği - 2. bölüm](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
-Basit bir deyişle, özellik sayfaları gördüğünüz **proje özellikleri** iletişim kutusu için bir C++ projesi tarafından tanımlanan *kural* dosyaları. Bir kural dosyası bir özellik sayfasında göster ve nasıl ve bunlar projede kaydedileceği dosya için özellikler kümesini belirtir. Kural, Xaml biçimini kullanan .xml dosyaları dosyalarıdır. Bunları serileştirmek için kullanılan türleri açıklanan [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Kural proje dosyalarında kullanımı hakkında daha fazla bilgi için bkz. [özellik sayfası XML kural dosyaları](/cpp/ide/property-page-xml-files).
+Basit bir deyişle, özellik sayfaları gördüğünüz **proje özellikleri** iletişim kutusu için bir C++ projesi tarafından tanımlanan *kural* dosyaları. Bir kural dosyası bir özellik sayfasında göster ve nasıl ve bunlar projede kaydedileceği dosya için özellikler kümesini belirtir. Kural, Xaml biçimini kullanan .xml dosyaları dosyalarıdır. Bunları serileştirmek için kullanılan türleri açıklanan [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Kural proje dosyalarında kullanımı hakkında daha fazla bilgi için bkz. [özellik sayfası XML kural dosyaları](/cpp/build/reference/property-page-xml-files).
 
 Kural dosyaları eklenmeli `PropertyPageSchema` öğesi grubu:
 
@@ -636,8 +636,8 @@ VSIX dosyaları oluşturma hakkında daha fazla bilgi için bkz: [sevkiyat Visua
 
 ## <a name="additional-resources"></a>Ek kaynaklar
 
-Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) proje dosyaları için derleme altyapısı ve XML tabanlı Genişletilebilir biçimi sağlar. Tanımanız gerekir basic ile [MSBuild kavramları](../msbuild/msbuild-concepts.md) ile nasıl [Visual C++ için MSBuild](/cpp/build/msbuild-visual-cpp-overview) proje sistemi Visual C++ genişletebilmek için çalışır.
+Microsoft Build System ([MSBuild](../msbuild/msbuild.md)) proje dosyaları için derleme altyapısı ve XML tabanlı Genişletilebilir biçimi sağlar. Tanımanız gerekir basic ile [MSBuild kavramları](../msbuild/msbuild-concepts.md) ile nasıl [Visual C++ için MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview) proje sistemi Visual C++ genişletebilmek için çalışır.
 
 Yönetilen Genişletilebilirlik Çerçevesi ([MEF](/dotnet/framework/mef/)) uzantı CPS ve Visual C++ proje sistemi tarafından kullanılan API'ler sağlar. MEF CPS tarafından nasıl kullanıldığını genel bakış için bkz: [CPS ve MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) içinde [MEF VSProjectSystem bakış](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Derleme adımları veya yeni bir dosya türleri eklemek için var olan yapı sistemi özelleştirebilirsiniz. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](/cpp/build/msbuild-visual-cpp-overview) ve [Working with project properties](/cpp/ide/working-with-project-properties).
+Derleme adımları veya yeni bir dosya türleri eklemek için var olan yapı sistemi özelleştirebilirsiniz. Daha fazla bilgi için [MSBuild (Visual C++) genel bakış](/cpp/build/reference/msbuild-visual-cpp-overview) ve [Working with project properties](/cpp/build/working-with-project-properties).

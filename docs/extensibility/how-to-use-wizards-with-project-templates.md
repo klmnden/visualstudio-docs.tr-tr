@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Sihirbazları Proje Şablonlarıyla Kullanma'
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723714"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194677"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl yapılır: Sihirbazları proje şablonlarıyla kullanma
 
@@ -31,14 +31,14 @@ Proje şablonu özelleştirmesi, kullanıcı girişi şablonu özelleştirmek i�
 
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>Bir VSIX projesi ile bir proje şablonu projesi oluşturun
 
-Visual Studio SDK'ın parçası olan proje şablonu projesi ile özel bir şablon oluşturarak başlayın. Bu yordamda kullanacağız bir C# proje şablonu projesi, ancak Visual Basic proje şablonu projesi de mevcuttur. Ardından bir VSIX projesi içeren proje şablonu projesi çözüme ekleyin.
+Visual Studio SDK'ın parçası olan proje şablonu projesi ile özel bir şablon oluşturarak başlayın. Bu yordamda, kullanacağız bir C# proje şablonu projesi, ancak Visual Basic proje şablonu projesi de mevcuttur. Ardından bir VSIX projesi içeren proje şablonu projesi çözüme ekleyin.
 
-1. Bir C# proje şablonu projesi oluşturma (Visual Studio'da **dosya** > **yeni** > **proje** > **Visual C#**   >  **Genişletilebilirlik** > **C# proje şablonu**). Adlandırın **MyProjectTemplate**.
+1. Oluşturma bir C# proje şablonu projesi (Visual Studio'da **dosya** > **yeni** > **proje** ve "proje şablonu" için arama ). Adlandırın **MyProjectTemplate**.
 
    > [!NOTE]
    > Visual Studio SDK'yı yüklemeyi istenebilir. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
-2. Yeni projeye VSIX ekleme (**dosya** > **yeni** > **proje** > **Visual C#**   >  **Genişletilebilirlik** > **VSIX projesi**) proje şablonu projesi olarak aynı çözüm içindeki (içinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve Seç'i seçin **Ekle** > **yeni proje**). Adlandırın **MyProjectWizard.**
+2. Proje şablonu projesi olarak aynı çözüm içindeki yeni projeye VSIX ekleme (içinde **Çözüm Gezgini**, çözüm düğümüne sağ tıklayın ve Seç'i seçin **Ekle** > **yeni proje**  ve "VSIX" arayın). Adlandırın **MyProjectWizard.**
 
 3. VSIX projesini başlangıç projesi olarak ayarlayın. İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin seçin **başlangıç projesi olarak ayarla**.
 
@@ -50,7 +50,7 @@ Visual Studio SDK'ın parçası olan proje şablonu projesi ile özel bir şablo
 
 7. Çözümü derleyin ve hata ayıklamaya başlayın. Visual Studio ikinci bir örneğini görünür. (Bu işlem birkaç dakika sürebilir.)
 
-8. Yeni şablonunuzu yeni bir proje oluşturmak Visual Studio'nun ikinci örneğini deneyin (**dosya** > **yeni** > **Proje > Visual C#**   >  **MyProject şablon**). Yeni Proje adlı bir sınıf ile görünmelidir **Class1**. Özel proje şablonu oluşturdunuz! Şimdi hata ayıklamayı durdurun.
+8. Yeni şablonunuzu yeni bir proje oluşturmak Visual Studio'nun ikinci örneğini deneyin (**dosya** > **yeni** > **proje**, arama " MyProject"). Yeni Proje adlı bir sınıf ile görünmelidir **Class1**. Özel proje şablonu oluşturdunuz! Şimdi hata ayıklamayı durdurun.
 
 ## <a name="create-a-custom-template-wizard"></a>Bir özel şablon Sihirbazı oluşturma
 
@@ -60,11 +60,11 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
 2. İçinde **Çözüm Gezgini**, VSIX proje düğümünü seçin. Aşağıda **Çözüm Gezgini**, görmelisiniz **özellikleri** penceresi. Bunu yapmazsanız seçin **görünümü** > **Özellikler penceresi**, veya basın **F4**. İçinde **özellikleri** aşağıdaki alanlar için penceresinde `true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. Bütünleştirilmiş kod bir varlık VSIX projesine ekleyin. Açık *source.extension.vsixmanifest* seçin ve dosya **varlıklar** sekmesi. İçinde **yeni varlık Ekle** penceresinde için **türü** seçin **Microsoft.VisualStudio.Assembly**, için **kaynak** seçin **A Geçerli çözümde proje**ve **proje** seçin **MyProjectWizard**.
 
@@ -157,7 +157,7 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
    - Bir <xref:System.Object> parametreler kümesi içeren bir dizi için Sihirbazı'nı Visual Studio tarafından geçirilen.
 
-     Bu örnek için kullanıcı giriş formundan bir parametre değeri ekler <xref:System.Collections.Generic.Dictionary%602> parametresi. Her bir örneğini `$custommessage$` projedeki parametresi, kullanıcı tarafından girilen metinle değiştirilecektir. Aşağıdaki derlemeleri projenize eklemelisiniz: **Sistem** ve **System.Drawing**.
+     Bu örnek için kullanıcı giriş formundan bir parametre değeri ekler <xref:System.Collections.Generic.Dictionary%602> parametresi. Her bir örneğini `$custommessage$` projedeki parametresi, kullanıcı tarafından girilen metinle değiştirilecektir. Aşağıdaki derlemeleri projenize ekleyin: **Sistem** ve **System.Drawing**.
 
 7. Şimdi oluşturmak **Userınputform**. İçinde *WizardImplementation.cs* sonunda aşağıdaki kodu ekleyin `WizardImplementation` sınıfı.
 
@@ -228,7 +228,7 @@ Bu yordam, proje oluşturulmadan önce bir Windows formu açan özel bir sihirba
 
      *C:\Program dosyaları (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 araçları*
 
-     Aracı bulamazsanız çalıştırmayı deneyin **burada /R.  sn.exe** komut penceresinde. Yolunu not edin.
+     Aracı bulamazsanız çalıştırmayı deneyin **nerede /R. sn.exe** komut penceresinde. Yolunu not edin.
 
 10. Öğesinden ortak anahtarı ayıklamak *key.snk* dosya. Komut penceresinde şunu yazın
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 Şimdi şablonunuzdan proje oluşturabilir ve özel Sihirbazı'nı kullanın.
 
-1.  Çözümü yeniden oluşturun ve hata ayıklamaya başlayın. Visual Studio ikinci bir örneğini görüntülenmesi gerekir.
+1. Çözümü yeniden oluşturun ve hata ayıklamaya başlayın. Visual Studio ikinci bir örneğini görüntülenmesi gerekir.
 
-2.  Yeni bir MyProjectTemplate projesi oluşturun. (**Dosya** > **yeni** > **proje** > **Visual C#**  >  **MyProjectTemplate**)
+2. Yeni bir MyProjectTemplate projesi oluşturun. (**Dosya** > **yeni** > **proje**).
 
-3.  İçinde **yeni proje** iletişim kutusunda, şablonunuzu bulup bir ad yazın ve tıklayın **Tamam**.
+3. İçinde **yeni proje** iletişim kutusunda, şablonunuzu bulup, bir ad yazın ve tıklayın "myproject" için arama **Tamam**.
 
      Sihirbaz kullanıcı giriş formu açılır.
 
-4.  Özel parametre için bir değer yazın ve düğmeye tıklayın.
+4. Özel parametre için bir değer yazın ve düğmeye tıklayın.
 
      Sihirbaz kullanıcı giriş formu kapanır ve şablondan bir Proje oluşturulur.
 
-5.  İçinde **Çözüm Gezgini**, kaynak kod dosyasını sağ tıklatıp **kodu görüntüle**.
+5. İçinde **Çözüm Gezgini**, kaynak kod dosyasını sağ tıklatıp **kodu görüntüle**.
 
      Dikkat `$custommessage$` Sihirbaz kullanıcı giriş formuna girilen metin ile değiştirilmiştir.
 

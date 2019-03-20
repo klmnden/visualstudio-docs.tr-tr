@@ -18,20 +18,18 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8818774994e73db2cadfca679d3ee71bcb059ae2
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 9c03764a4ad93a44f51bb130e0f160dbeaae4db7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567163"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194849"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio'da Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranışını gözlemlemenize ve sorunları bulma yardımcı olur. Hata ayıklayıcı, tüm Visual Studio programlama dilleri ve bunların ilişkili kitaplıkları ile çalışır. Hata ayıklayıcı, programınızın kodunu incelemek, inceleyin ve değişkenleri düzenlemek, kayıt defterlerini görüntülemek, kaynak kodunuzdan oluşturulan yönergelere bakmak için programınızın yürütülmesini Kes ve uygulamanız tarafından kullanılan bellek alanını görüntüleyebilirsiniz.
 
  Hata ayıklama ve tanılama Visual Studio için hızlı bir giriş için bkz: [hata ayıklama, profil ve tanılama](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
-
--   [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md) Visual Studio 2015'te yeni işlevler açıklanmaktadır.
 
 -   [Windows hata ayıklayıcı](../debugger/debugger-windows.md) farklı hata ayıklayıcı pencerelerini listeler.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 50baba2a5690e370dccd7f458ebfce2d0776d3cd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870986"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194211"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Bir uzak IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -211,7 +211,7 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
 Çoğu ayarlar ASP.NET ve uzaktan hata ayıklayıcı yüklemesi tarafından gerekli bağlantı noktalarının açıldığından. Ancak, bağlantı noktalarının açık olduğunu doğrulamak gerekebilir.
 
 > [!NOTE]
-> Bir Azure sanal makinesinde aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/virtual-machines-windows-hero-role).
+> Bir Azure sanal makinesinde aracılığıyla bağlantı noktalarını açmanız gerekir [ağ güvenlik grubu](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Gerekli bağlantı noktaları:
 

@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844145"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195170"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Hangi&#39;Visual Studio 2015'te yeni s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ Birçok geliştirme ve Visual Studio ALM yeni özellikler hakkında daha fazla b
 
      [Hata ayıklama](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) ve [cihazda hata ayıklama](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) içinde [Xamarin Geliştirici kılavuzlarındaki](http://developer.xamarin.com/guides) hata ayıklama deneyimini açıklar.
 
--   **C++ / Android**. Kullanım [platformlar arası Mobil Geliştirme için Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) üçüncü taraf araçlarla birlikte şablonları ister [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) Windows ve Android için yerel uygulamalar oluşturmak için.
+-   **C++ / Android**. Kullanım [platformlar arası Mobil Geliştirme için Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) üçüncü taraf araçlarla birlikte şablonları ister [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) Windows ve Android için yerel uygulamalar oluşturmak için.
 
 ## <a name="debugging-and-diagnostics"></a>Hata Ayıklama ve Tanılama
- Hata ayıklamaya yenilikler hakkında daha fazla bilgi için bkz: [Visual Studio 2015 hata ayıklayıcısındaki yenilikler](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Tanılama'da yenilikler hakkında daha fazla bilgi için bkz: [profil oluşturma araçlarındaki yenilikler](./profiling/what-s-new-in-profiling-tools.md).
+Tanılama'da yenilikler hakkında daha fazla bilgi için bkz: [profil oluşturma araçlarındaki yenilikler](./profiling/what-s-new-in-profiling-tools.md).
 
- Aşağıdaki yeni veya geliştirilmiş kodunuz üzerinde farklı türde tanılama ve analiz gerçekleştiren araçlar:
+Aşağıdaki yeni veya geliştirilmiş kodunuz üzerinde farklı türde tanılama ve analiz gerçekleştiren araçlar:
 
 ### <a name="perftips"></a>PerfTips
  PerfTips yöntemleri yürütme süresini hata ayıklama sırasında hızlı bir şekilde profil oluşturucu çağırmak zorunda kalmadan performans sorunlarını saptayın olanak tanıyarak görüntüler. Başlamak için bkz: [PerfTips: Performans bilgileri bir Visual Studio ile hata ayıklarken bakışta](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

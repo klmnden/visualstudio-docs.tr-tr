@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66132724b5ece0570ead7c12949dfc5650521b29
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567389"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195027"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio’da JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ JavaScript, Visual Studio'da birinci sınıf bir dildir. Visual Studio IDE'de Ja
 
 |Özellik|Açıklama|
 |-------------|-----------------|
-|Sınıflar|Yeni sözdizimi bildirimini destekler [sınıfları](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Sınıflar|Yeni sözdizimi bildirimini destekler [sınıfları](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Gösterir|[Öneriler](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) daha kolay ve Temizleyicisi zaman uyumsuz kodlama izin verin. Promise oluşturucular desteklenir, bunların ile `all` ve `race` yardımcı program yöntemleri.|
-|Yineleyiciler|Artık her ayrı bir özellik değeri için çalıştırılacak deyimleri ile bir özel yineleme kancası çağırma (diziler, dizi benzeri nesneleri ve yineleyiciler dahil) iterable nesneler üzerinde yineleyebilirsiniz. Daha fazla bilgi için [yineleyiciler ve oluşturucular](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Not:**  Oluşturucuları henüz desteklenmemektedir.|
+|Yineleyiciler|Artık her ayrı bir özellik değeri için çalıştırılacak deyimleri ile bir özel yineleme kancası çağırma (diziler, dizi benzeri nesneleri ve yineleyiciler dahil) iterable nesneler üzerinde yineleyebilirsiniz. Daha fazla bilgi için [yineleyiciler ve oluşturucular](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Not:**  Oluşturucuları henüz desteklenmemektedir.|
 |Ok işlevleri|Ok işlevinde (= >) için toplu değer sözdizimi sağlar `function` bir sözcük özellikleri anahtar sözcüğünü `this` bağlama.|
 |Yerleşik nesneler için yeni yöntemler|[Dizi nesnesi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [matematik nesnesi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [sayı nesne](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [nesne nesnesi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object), ve [dize nesnesi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) yerleşik nesneler, birçok yeni yardımcı işlevleri ve verileri inceleme ve düzenleme için özellikleri içerir.|
-|Nesne sabit değeri geliştirmeleri|Nesneler artık hesaplanan özellikler, kısa yöntemi tanımları ve toplu değer sözdizimi değeri için aynı adlı bir değişken başlatılır özellikleri destekler. Daha fazla bilgi için [nesneleri oluşturma](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Nesne sabit değeri geliştirmeleri|Nesneler artık hesaplanan özellikler, kısa yöntemi tanımları ve toplu değer sözdizimi değeri için aynı adlı bir değişken başlatılır özellikleri destekler. Daha fazla bilgi için [nesneleri oluşturma](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|
 |Proxy'ler|[Proxy'leri](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) özel davranış nesneler için etkinleştirin.|
-|REST parametreleri|REST parametreler ardışık bağımsız değişken bir dizi işlev çağrısında olanak sağlar. Daha fazla bilgi için [işlevleri](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|REST parametreleri|REST parametreler ardışık bağımsız değişken bir dizi işlev çağrısında olanak sağlar. Daha fazla bilgi için [işlevleri](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function).|
 |Spread işleci|[Yayılma işleci](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator) (`…`) bağımsız iterable ifadelere genişletir. Örneğin, `a.b(…array)` yaklaşık olarak aynı olduğundan `a.b.apply(a, array)`.|
 |Simgeleri|[Sembol](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) nesneler girişim varolan nesne özellikleri, hiçbir istenmeyen görünürlük ve diğer eşgüdümlü olmayan eklemeler kaybetme riski varolan nesnelerle başka kod tarafından eklenecek özellikleri sağlar.|
 |Şablon dizeleri|[Şablon dizeleri](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) ifadeler değerlendirilir ve bitişik dize sabit değeri izin dize sabitleri sabit değerlerdir.|

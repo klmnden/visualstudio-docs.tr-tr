@@ -1,6 +1,6 @@
 ---
 title: Özel proje ve öğe şablonları oluşturma | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 733ffa76fdc24639d0e379b7e00a4a8c72a5f40e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714328"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194476"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Özel proje ve öğe şablonları oluşturma
 
@@ -30,37 +30,37 @@ Temel şablon oluşturma senaryoları için kullanmanız gereken **şablonu dı�
 
 ## <a name="create-a-project-template"></a>Bir proje şablonu oluşturma
 
-1.  Bir proje şablonu projesi oluşturun. Proje şablonunda bulabilirsiniz **yeni proje** iletişim kutusunda, Visual Basic veya Visual C# *genişletilebilirlik* klasör.
+1. Bir proje şablonu projesi oluşturun. Proje şablonunda bulabilirsiniz **yeni proje** "için proje şablonu" araması yapın ve seçim tarafından iletişim kutusunda C# veya Visual Basic sürümü.
 
      Şablon sınıf dosyası, bir simge oluşturur bir *.vstemplate* adlı bir düzenlenebilir proje dosyası dosyasında *ProjectTemplate.vbproj* veya *ProjectTemplate.csproj*ve bazı genellikle diğer proje türleri tarafından oluşturulan dosyaları gibi bir *resources.resx* dosyası bir *AssemblyInfo* dosyası ve bir *.settings* dosya. Her kod dosyası, uygun yerlerde genel parametresi değişimleri içerir.
 
-2.  Ekleme ve projeniz için gereken proje öğeleri kaldırın. Düzenlenebilir bir proje dosyasının kaldırmayın *AssemblyInfo* dosyası veya *.vstemplate* dosya.
+2. Ekleme ve projeniz için gereken proje öğeleri kaldırın. Düzenlenebilir bir proje dosyasının kaldırmayın *AssemblyInfo* dosyası veya *.vstemplate* dosya.
 
-3.  Güncelleştirme *.vstemplate* herhangi ekleme ve silme işlemleri yansıtacak şekilde dosya. [Proje](../extensibility/project-element-visual-studio-templates.md) öğesi içermelidir bir [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) şablona dahil edilecek her bir dosya için öğesi.
+3. Güncelleştirme *.vstemplate* herhangi ekleme ve silme işlemleri yansıtacak şekilde dosya. [Proje](../extensibility/project-element-visual-studio-templates.md) öğesi içermelidir bir [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) şablona dahil edilecek her bir dosya için öğesi.
 
-4.  Kod dosyalarınızı ve diğer kullanıcıya yönelik içeriği değiştirme ve uygun parametresi değişimleri ekleyin.
+4. Kod dosyalarınızı ve diğer kullanıcıya yönelik içeriği değiştirme ve uygun parametresi değişimleri ekleyin.
 
-5.  Oluşturulan içerik gerektiği gibi değiştirin.
+5. Oluşturulan içerik gerektiği gibi değiştirin.
 
-6.  Projeyi oluşturun.
+6. Projeyi oluşturun.
 
      Visual Studio oluşturur bir *.zip* şablonunuzu içeren dosya. Değil dağıtılan ve deneysel örneğinde kullanılabilir değil.
 
 ## <a name="create-an-item-template"></a>Öğe şablonu oluşturma
 
-1.  Bir öğe şablonu projesi oluşturun.
+1. Bir öğe şablonu projesi oluşturun.
 
      Şablon sınıf dosyası, bir simge oluşturur bir *.vstemplate* dosyası ve bir *AssemblyInfo* dosya. Bazı ortak parametresi değişimleri sınıf dosyası içerir.
 
-2.  Ekleme ve projeniz için gereken proje öğeleri kaldırın.
+2. Ekleme ve projeniz için gereken proje öğeleri kaldırın.
 
-3.  Güncelleştirme *.vstemplate* herhangi ekleme ve silme işlemleri yansıtacak şekilde dosya. [Proje](../extensibility/project-element-visual-studio-templates.md) öğesi içermelidir bir [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) şablona dahil edilecek her bir dosya için öğesi.
+3. Güncelleştirme *.vstemplate* herhangi ekleme ve silme işlemleri yansıtacak şekilde dosya. [Proje](../extensibility/project-element-visual-studio-templates.md) öğesi içermelidir bir [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) şablona dahil edilecek her bir dosya için öğesi.
 
-4.  Kod dosyalarınızı ve diğer kullanıcıya yönelik içeriği değiştirme ve uygun parametresi değişimleri ekleyin.
+4. Kod dosyalarınızı ve diğer kullanıcıya yönelik içeriği değiştirme ve uygun parametresi değişimleri ekleyin.
 
-5.  Oluşturulan içerik gerektiği gibi değiştirin.
+5. Oluşturulan içerik gerektiği gibi değiştirin.
 
-6.  Projeyi oluşturun.
+6. Projeyi oluşturun.
 
      Visual Studio, şablonunuzu içeren sıkıştırılmış bir dosya oluşturur. Değil dağıtılan ve deneysel örneğinde kullanılabilir değil.
 
@@ -68,19 +68,19 @@ Temel şablon oluşturma senaryoları için kullanmanız gereken **şablonu dı�
 
 ### <a name="to-deploy-the-project-or-item-template"></a>Proje veya öğe şablonu dağıtmak için
 
-1.  Bir VSIX projesi oluşturun. Daha fazla bilgi için [VSIX proje şablonu](../extensibility/vsix-project-template.md).
+1. Bir VSIX projesi oluşturun. Daha fazla bilgi için [VSIX proje şablonu](../extensibility/vsix-project-template.md).
 
-2.  VSIX projesini başlangıç projesi olarak ayarlayın. İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin seçin **başlangıç projesi olarak ayarla**.
+2. VSIX projesini başlangıç projesi olarak ayarlayın. İçinde **Çözüm Gezgini**, VSIX proje düğümünü sağ tıklatın ve seçin seçin **başlangıç projesi olarak ayarla**.
 
-3.  Proje şablonu projesi VSIX projesinin bir varlık ayarlayın. Açık *.vsixmanifest* dosya. Git **varlıklar** sekmesine **yeni**.
+3. Proje şablonu projesi VSIX projesinin bir varlık ayarlayın. Açık *.vsixmanifest* dosya. Git **varlıklar** sekmesine **yeni**.
 
-    1.  Ayarlama **türü** alanı **Microsoft.VisualStudio.ProjectTemplate** veya **Microsoft.VisualStudio.ItemTemplate**.
+    1. Ayarlama **türü** alanı **Microsoft.VisualStudio.ProjectTemplate** veya **Microsoft.VisualStudio.ItemTemplate**.
 
-    2.  Kaynağı için **mevcut çözümde bir proje** seçeneğini ve ardından şablonunuzu içeren projeyi seçin.
+    2. Kaynağı için **mevcut çözümde bir proje** seçeneğini ve ardından şablonunuzu içeren projeyi seçin.
 
-4.  Derleme çözümü ve tuşuna **F5**. Deneysel örneği açılır.
+4. Derleme çözümü ve tuşuna **F5**. Deneysel örneği açılır.
 
-5.  Bir proje şablonu projesi için listelenen, proje şablonunu görmeniz gerekir **yeni proje** iletişim (**dosya** > **yeni**  >  **Proje**), Visual C# veya Visual Basic düğümü. Bir öğe Şablonu proje öğesi şablonunuzu listelenen görmeniz gerekir **Yeni Öğe Ekle** iletişim. Görüntülenecek **Yeni Öğe Ekle** iletişim kutusunda, gelen **Çözüm Gezgini**, proje düğümünü seçin ve tıklayın **Ekle** > **yeni öğe**).
+5. Bir proje şablonu projesi için listelenen, proje şablonunu görmeniz gerekir **yeni proje** iletişim (**dosya** > **yeni**  >  **Proje**), Visual C# veya Visual Basic düğümü. Bir öğe Şablonu proje öğesi şablonunuzu listelenen görmeniz gerekir **Yeni Öğe Ekle** iletişim. Görüntülenecek **Yeni Öğe Ekle** iletişim kutusunda, gelen **Çözüm Gezgini**, proje düğümünü seçin ve tıklayın **Ekle** > **yeni öğe**).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

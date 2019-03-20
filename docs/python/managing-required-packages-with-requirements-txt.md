@@ -1,7 +1,7 @@
 ---
 title: Bir requirements.txt dosyasını Paket bağımlılıklarını yönetin
 description: Requirements.txt dosyası bir proje bağımlılıklarınızı açıklar. Requirements.txt dosyasını içeren bir proje alırsanız, bu bağımlılıkların bir adımda kolayca yükleyebilirsiniz.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2026c80141c29e14ca1d7c8f1f7e1bc5cecd2e32
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88cd2ee237a92aff4ca6f641556b8003be550c3d
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924350"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194846"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gerekli paketleri requirements.txt ile yönetme
 
@@ -25,11 +25,13 @@ Teknik olarak, herhangi bir dosya adının gereksinimlerini izlemek için kullan
 
 - İçeren bir proje yüklemiş olduğunuz varsa *requirements.txt* ve bu dosyada listelenen paketleri yüklemek istiyorsanız, genişletme **Python ortamları** düğümünde **ÇözümGezgini**, ardından bir ortam düğümüne sağ tıklayıp **Requirements.txt'ten Yükle**:
 
-    ![Requirements.txt'ten yükle](media/environments-requirements-txt-install.png)
+    ![Requirements.txt'ten yükle](media/environments/environments-requirements-txt-install.png)
+
+- Sanal bir ortamda bağımlılıkları yüklemek istiyorsanız, oluşturun ve bu ortamda öncelikle etkinleştirin ve ardından kullanın **Requirements.txt'ten Yükle** komutu. Bir sanal ortam oluşturma hakkında daha fazla bilgi için bkz. [sanal ortamları kullanma](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 - Bir ortama yüklenen tüm gerekli paketler zaten varsa, o ortamda sağ tıklayabilirsiniz **Çözüm Gezgini** seçip **Generovat requirements.txt** gerekli oluşturmak için dosya. Dosya zaten varsa, güncelleştirmek için bir komut istemi görünür:
 
-    ![Güncelleştirme requirements.txt seçenekleri](media/environments-requirements-txt-replace.png)
+    ![Güncelleştirme requirements.txt seçenekleri](media/environments/environments-requirements-txt-replace.png)
 
   - **Tüm dosya yerine** tüm öğeleri, yorumları ve mevcut olan seçenekler kaldırır.
   - **Girdilerinin Yenile** paket gereksinimleri algılar ve şu anda yüklü olan sürümle eşleştirmek için sürüm belirticisi güncelleştirir.

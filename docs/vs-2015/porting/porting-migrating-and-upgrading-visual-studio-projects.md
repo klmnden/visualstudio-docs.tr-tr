@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: acf8ab0a1425e531839cb8de9229a7c6b1ac1b96
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873353"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194930"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |Office 2007 VSTO|Projeyi Office 2013 ve .NET Framework 4 hedeflemek için yükseltirseniz, bu projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya Visual Studio 2010 SP1.|
 |Office 2010 VSTO|Proje .NET Framework 4 hedefliyse, projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. Tüm diğer projeler tek yönlü yükseltme gerektirir.|
 |Zengin Internet Uygulamaları|Projeyi yükseltirseniz, projeyi açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
-|SharePoint 2007|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. SharePoint 2010 için projeyi el ile yükseltirseniz, ancak siz açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SharePoint 2007 yükseltme hakkında daha fazla bilgi için bkz. [SharePoint 2007'den SharePoint 2010 için BT uzmanı için geçiş](http://go.microsoft.com/fwlink/?LinkId=238224), [2007 iş akışını Visual Studio & SharePoint 2010 için geçiş](http://go.microsoft.com/fwlink/?LinkId=238225), ve [SharePoint Server 2010 için SharePoint Enterprise arama Taşıma aracı](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
+|SharePoint 2007|Bu proje açılamıyor [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. SharePoint 2010 için projeyi el ile yükseltirseniz, ancak siz açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SharePoint 2007 yükseltme hakkında daha fazla bilgi için bkz. [SharePoint 2007'den SharePoint 2010 için BT uzmanı için geçiş](http://go.microsoft.com/fwlink/?LinkId=238224) ve [SharePoint Enterprise arama Taşıma aracı için SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1.|
 |SketchFlow|Visual Studio'nun projeyi WPF 4.5/Silverlight 5'e yükseltmesine izin verirseniz projeyi açabilirsiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] Veritabanı|İçinde proje açabilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]ve Visual Studio 2010 SP1. SQL Server'ın önceki bir sürümde oluşturulmuş bir veritabanı dosyasını (.mdf) varsa, kendisine yükseltmelisiniz [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] önce SQL Server Express LocalDB ile kullanabilirsiniz, ancak artık veritabanı ile SQL Server'ın önceki sürümleriyle uyumlu değildir. Yükseltme yapmazsanız içindeki veritabanıyla çalışmaya devam edebilirsiniz [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] yüklenerek ve kullanılarak [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] aynı bilgisayarda. Daha fazla bilgi için [.mdf dosyalarını yükseltme](../data-tools/upgrade-dot-mdf-files.md).|

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c874505ebff1ca50a8e35bb46ad26d096b6145e
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567208"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194985"
 ---
 # <a name="view-dom-event-listeners"></a>DOM olayı dinleyicilerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
 -   Varsa `removeEventListener` belirtilen dinleyiciyi kaldırmak başarısız olursa farklı bir nesne örneğinde adlı. Kullanabileceğiniz [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) dinleyici eklediğinizde, bu sorunu çözmek için yöntemi.
 
--   Kullanarak eklenmiş bir olay dinleyiciyi kaldırmak için [bind yöntemi (işlev)](/visualstudio/scripting-docs/javascript/reference/bind-method-function-javascript) veya dinleyiciyi eklediğinizde, anonim bir işlevi kullanarak işlev örneği depolar. Güvenli bir şekilde bu düzenin kullanılacağı yöntemlerinden biri aşağıda verilmiştir:
+-   Kullanarak eklenmiş bir olay dinleyiciyi kaldırmak için [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) veya dinleyiciyi eklediğinizde, anonim bir işlevi kullanarak işlev örneği depolar. Güvenli bir şekilde bu düzenin kullanılacağı yöntemlerinden biri aşağıda verilmiştir:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803737"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195079"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -484,7 +484,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
     > [!NOTE]
     >  URL sayısal bölümünü değiştirmeniz gerekebilir. Microsoft Azure, her mobil hizmetiniz için benzersiz bir URL gerektirir.  
   
-     Bu hizmete URL'sini ayarlar *https://wpfquickstart01.azure-mobile.net/*.  
+     Bu hizmete URL'sini ayarlar `https://wpfquickstart01.azure-mobile.net/`.  
   
 4.  İçinde **veritabanı** listesinde, bir veritabanı seçeneği belirleyin. Bu büyük olasılıkla çok sayıda kullanım vermeyeceğiz bir uygulama olduğundan, seçmek isteyebilirsiniz **ücretsiz 20 MB SQL veritabanı oluşturma** seçeneğini veya zaten aboneliğinizle ilişkili bir ücretsiz veritabanı seçin.  
   

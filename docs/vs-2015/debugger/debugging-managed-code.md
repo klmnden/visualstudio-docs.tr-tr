@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5510090424480bb47ce5d03584e7926fa00a4dc4
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567227"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194570"
 ---
 # <a name="debugging-managed-code"></a>Yönetilen Kodda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,8 +82,6 @@ Bu bölüm yaygın hata ayıklama sorunları ve yönetilen uygulamalar için tek
   
  [Betik ve Web uygulamalarında hata ayıklama](../debugger/debugging-web-applications-and-script.md)  
  Genel hata ayıklama sorunları ve komut dosyası ve Web uygulamalarında hata ayıklama sırasında karşılaşabileceğiniz teknikleri açıklar.  
-  
- [Visual Studio 2015'te Hata Ayıklayıcısı Yenilikleri](../debugger/what-s-new-for-the-debugger-in-visual-studio-2015.md)  
  Bu sürümde eklenen yeni hata ayıklama özellikleri açıklaması [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Giriş sayfasının hatalarını ayıklama](../debugger/debugging-in-visual-studio.md)  

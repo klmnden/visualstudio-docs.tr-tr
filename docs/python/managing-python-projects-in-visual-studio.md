@@ -1,7 +1,7 @@
 ---
 title: Python uygulaması projeleri yönetme
 description: Visual Studio projeleri, dosyaları ve uygulama ilişkilerde karmaşıklığını arasındaki bağımlılıkları yönetin.
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b75c3c7a6a2c5496896949a48c2210bb1b5f170
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983474"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194347"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -54,7 +54,16 @@ Kalın yazı tipinde gösterilen bir atanan başlangıç dosyasının her Python
 >
 > Çıkış penceresinde herhangi bir nedenle açık tutmak istiyorsanız, projenize sağ tıklayın, **özellikleri**seçin **hata ayıklama** sekmesine ve ardından eklemek `-i` için **yorumlayıcı bağımsız değişkenleri**  alan. Bu bağımsız değişken neden olur, böylece girdiğiniz kadar penceresi açık tutulması bir program tamamlandıktan sonra etkileşimli moduna geçin yorumlayıcı **Ctrl**+**Z**  >  **Enter** çıkmak için.
 
-Yeni bir proje her zaman varsayılan global Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirin, sağ **Python ortamları** seçin proje düğümü **Ekle/Kaldır Python ortamları**, ve istediklerinizi seçin. Etkin ortamı değiştirmek için olduğu istenen ortama sağ tıklayıp **etkinleştirme ortam** aşağıda gösterildiği gibi. Daha fazla bilgi için [bir proje için bir ortam seçin](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Yeni bir proje her zaman varsayılan global Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirin, sağ **Python ortamları** seçin proje düğümü **Ekle/Kaldır Python ortamları**, ve istediklerinizi seçin.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Yeni bir proje her zaman varsayılan global Python ortamı ile ilişkilidir. Proje (sanal ortamlar dahil) için farklı bir ortam ilişkilendirin, sağ **Python ortamları** seçin proje düğümü **ortam Ekle...** , istediklerinizi seçin. Ayrıca ortamlar açılan denetimi seçmek için araç ve ortam kullanma veya başka bir projeye ekleyin.
+
+![Python araç çubuğundaki ortam komut ekleme](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Etkin ortamı değiştirmek için istenen ortamında sağ **Çözüm Gezgini** seçip **etkinleştirme ortam** aşağıda gösterildiği gibi. Daha fazla bilgi için [bir proje için bir ortam seçin](selecting-a-python-environment-for-a-project.md).
 
 ![Python projesi için bir ortam etkinleştirme](media/projects-activate-environment.png)
 

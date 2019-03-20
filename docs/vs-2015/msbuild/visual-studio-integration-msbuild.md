@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763316"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194515"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio ana [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] yöne
   
  Bu konuda, belirli yönlerini anlatmaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'s [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] barındıran sayılacağı projeleri ve yüklemek ve derlemek istediğiniz .targets dosyalarını özelleştirirken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu emin olmanıza yardımcı olacak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IntelliSense ve iş özel projenizde hata ayıklama gibi özellikleri.  
   
- C++ projeleri hakkında daha fazla bilgi için bkz. [proje dosyaları](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401).  
+ C++ projeleri hakkında daha fazla bilgi için bkz. [proje dosyaları](/cpp/build/reference/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Proje Dosya Adı Uzantıları  
  MSBuild.exe tanır desen ile eşleşen hiçbir proje dosyası adının uzantısını. * proj. Ancak, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yalnızca bir alt kümesini projeyi yükleyecek olan dile özgü proje sistemini belirler bu proje dosya adı uzantılarını tanır. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir dilden yok [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tabanlı bir proje sistemi.  

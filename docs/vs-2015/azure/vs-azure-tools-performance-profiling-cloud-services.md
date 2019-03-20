@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 2d362ca2b9117eb215fbc73bb09dd7ee948dc19a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4d3d5de46006129f7609a990bf1a4cca5a881123
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869356"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193889"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
@@ -55,7 +55,7 @@ Profil oluşturucuyu kullandığınızda, bir bulut hizmeti yerel olarak veya az
 Genellikle bir yük testi normal altındaki bulut Hizmetleri veya stres koşullarında benzetimini yapın.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Azure'daki bir bulut hizmeti profili oluşturma
-Bulut hizmetinizi Visual Studio'dan yayımladığınızda, hizmetin profilini ve istediğiniz bilgileri sağlamak için profil oluşturma ayarları belirtin. Her bir rol örneği için bir profil oluşturma oturumu başlatıldı. Hizmetinizi Visual Studio'dan yayımlama hakkında daha fazla bilgi için bkz. [Visual Studio'dan bir Azure bulut Hizmeti'nde yayımlanıyor](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Bulut hizmetinizi Visual Studio'dan yayımladığınızda, hizmetin profilini ve istediğiniz bilgileri sağlamak için profil oluşturma ayarları belirtin. Her bir rol örneği için bir profil oluşturma oturumu başlatıldı. Hizmetinizi Visual Studio'dan yayımlama hakkında daha fazla bilgi için bkz. [Visual Studio'dan bir Azure bulut Hizmeti'nde yayımlanıyor](vs-azure-tools-publishing-a-cloud-service.md).
 
 Visual Studio'da performans profili oluşturma hakkında daha fazla bilgi için bkz: [performans profili oluşturma Başlangıç Kılavuzu](https://msdn.microsoft.com/library/azure/ms182372.aspx) ve [profil oluşturma araçları kullanarak uygulama performansını analiz etme](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 

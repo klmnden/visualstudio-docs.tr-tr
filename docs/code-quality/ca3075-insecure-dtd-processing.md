@@ -1,6 +1,6 @@
 ---
 title: 'CA3075: Güvensiz DTD İşleme'
-ms.date: 11/04/2016
+ms.date: 03/18/2019
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4ea49b9b5563382786b5cf83f577e0b8e96386
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921412"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194625"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Güvensiz DTD İşleme
 
@@ -30,7 +30,7 @@ Güvenli olmayan kullanırsanız <xref:System.Xml.XmlReaderSettings.DtdProcessin
 
 ## <a name="rule-description"></a>Kural açıklaması
 
-A *belge türü tanımı (DTD'nin)* bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](/dotnet/framework/wcf/feature-details/information-disclosure) açabilir tehditler [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikleyen:
+A *belge türü tanımı (DTD'nin)* bir XML ayrıştırıcısı bir belgenin geçerlilik belirlemek iki yöntemden biri tarafından tanımlanan olan [World Wide Web Consortium (W3C) Genişletilebilir Biçimlendirme Dili (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Bu kural, özellikler ve örnekler burada güvenilir olmayan verileri kabul edilir olası geliştiricilerinden uyarmak için çalışmaktadır [bilgilerin açığa çıkması](/dotnet/framework/wcf/feature-details/information-disclosure) tehditleri veya [hizmet reddi (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) saldırıları. Bu kuralın ne zaman tetikleyen:
 
 - XmlReaderSettings üzerinde etkin <xref:System.Xml.XmlReader> kullanarak dış XML varlıkları çözümler örneği <xref:System.Xml.XmlUrlResolver>.
 
@@ -38,13 +38,13 @@ A *belge türü tanımı (DTD'nin)* bir XML ayrıştırıcısı bir belgenin ge�
 
 - <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> özellik ayrıştırma için ayarlanır.
 
-- Giriş kullanılarak işlenir güvenilmeyen <xref:System.Xml.XmlResolver> yerine <xref:System.Xml.XmlSecureResolver> .
+- Giriş kullanılarak işlenir güvenilmeyen <xref:System.Xml.XmlResolver> yerine <xref:System.Xml.XmlSecureResolver>.
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> yöntemi çağrıldığında bir güvenli <xref:System.Xml.XmlReaderSettings> örneği veya hiç bir örneği yok.
+- <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> Metodunu çağırmak bir güvenli <xref:System.Xml.XmlReaderSettings> örneği veya hiç bir örneği yok.
 
 - <xref:System.Xml.XmlReader> Güvenli varsayılan ayarları veya değerleri ile oluşturulur.
 
-Her durumda, sonuç aynıdır: XML işleneceği makinesinden dosya sistemi veya ağ paylaşımları içeriğinden DoS vektörü olarak kullanılabilir saldırgan için kullanıma sunulacak.
+Her durumda, sonuç aynıdır: XML işleneceği makinesinden dosya sistemi veya ağ paylaşımları içeriğinden saldırganın sunulur veya DTD'nin işleme DoS vektörü olarak kullanılabilir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 
@@ -54,11 +54,11 @@ Her durumda, sonuç aynıdır: XML işleneceği makinesinden dosya sistemi veya 
 
 - İzin verme <xref:System.Xml.XmlReader> ayarlayarak herhangi bir dış kaynağa açmak için <xref:System.Xml.XmlResolver> özelliğini **null**.
 
-- Emin <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> özelliği <xref:System.Data.DataViewManager> güvenilir bir kaynaktan atanır.
+- Emin <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> özelliği, güvenilir bir kaynaktan atanır.
 
 **.NET 3.5 ve önceki sürümler**
 
-- Güvenilmeyen kaynaklarıyla ayarlayarak uğraşıyorsanız DTD işlemeyi devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğini **true** .
+- Güvenilmeyen kaynaklarıyla ayarlayarak uğraşıyorsanız DTD işlemeyi devre dışı <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> özelliğini **true**.
 
 - Tam güven devralma talebi XmlTextReader sınıfı vardır.
 
@@ -204,7 +204,7 @@ public static void TestMethod(string xml)
 {
     XmlDocument doc = new XmlDocument() { XmlResolver = null };
     System.IO.StringReader sreader = new System.IO.StringReader(xml);
-    XmlTextReader reader = new XmlTextReader(sreader) { DtdProcessing = DtdProcessing.Prohibit };
+    XmlReader reader = XmlReader.Create(sreader, new XmlReaderSettings() { XmlResolver = null });
     doc.Load(reader);
 }
 ```
@@ -243,7 +243,7 @@ namespace TestNamespace
         public void TestMethod(Stream stream)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(UseXmlReaderForDeserialize));
-            XmlTextReader reader = new XmlTextReader(stream) { DtdProcessing = DtdProcessing.Prohibit } ;
+            XmlReader reader = XmlReader.Create(stream, new XmlReaderSettings() { XmlResolver = null });
             serializer.Deserialize(reader );
         }
     }
@@ -280,7 +280,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlTextReader reader = new XmlTextReader(path) { DtdProcessing = DtdProcessing.Prohibit };
+            XmlReader reader = XmlReader.Create(path, new XmlReaderSettings() { XmlResolver = null });
             XPathDocument doc = new XPathDocument(reader);
         }
     }
@@ -316,22 +316,6 @@ namespace TestNamespace
 ```
 
 ### <a name="violations"></a>İhlalleri
-
-```csharp
-using System.Xml;
-
-namespace TestNamespace
-{
-    public class TestClass
-    {
-        public void TestMethod(string path)
-        {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Parse };
-            XmlReader reader = XmlReader.Create(path, settings); // warn
-        }
-    }
-}
-```
 
 ```csharp
 using System.Xml;
@@ -378,7 +362,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Prohibit };
+            XmlReaderSettings settings = new XmlReaderSettings() { XmlResolver = null };
             XmlReader reader = XmlReader.Create(path, settings);
         }
     }

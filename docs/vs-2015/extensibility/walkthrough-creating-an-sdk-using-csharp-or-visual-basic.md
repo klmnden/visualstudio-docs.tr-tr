@@ -8,12 +8,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f6ee9bb57b99978e720cc3fa0ab8a647f675a4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763148"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194610"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: C# veya Visual Basic Kullanarak SDK Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -175,5 +175,5 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: C++ kullanarak SDK oluşturma](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [İzlenecek yol: JavaScript kullanarak SDK oluşturma](http://msdn.microsoft.com/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [İzlenecek yol: JavaScript kullanarak SDK oluşturma](walkthrough-creating-an-sdk-using-javascript.md)   
  [Yazılık Geliştirme Seti Oluşturma](../extensibility/creating-a-software-development-kit.md)

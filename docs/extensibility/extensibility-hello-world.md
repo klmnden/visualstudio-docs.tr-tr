@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160712"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194742"
 ---
 # <a name="create-your-first-extension-hello-world"></a>İlk uzantınızı oluşturun: Merhaba Dünya
 
@@ -44,7 +44,7 @@ Başlamadan önce yüklediğinizden emin olun **Visual Studio uzantısı gelişt
 
 ::: moniker range="vs-2017"
 
-Adım 1. Gelen **dosya** menüsünde **yeni proje**.
+Adım 1. Gelen **dosya** menüsünde **yeni** > **proje**.
 
 Adım 2. Sağ üst köşedeki arama kutusuna "VSIX" yazın ve görseli seçin C# **VSIX projesi**. "HelloWorld" girin **adı** seçin ve iletişim alt kısmındaki **Tamam**.
 
@@ -58,7 +58,7 @@ Bu öğreticide bırakın ve kendisine döndürülmesini gerekiyorsa, yeni Hello
 
 ::: moniker range=">=vs-2019"
 
-Adım 1. Gelen **dosya** menüsünde **yeni proje**. Görseli seçin ve "VSIX" için arama C# **VSIX projesi** ardından **sonraki**.
+Adım 1. Gelen **dosya** menüsünde **yeni** > **proje**. Görseli seçin ve "VSIX" için arama C# **VSIX projesi** ardından **sonraki**.
 
 Adım 2. "HelloWorld" girin **proje adı** seçip **Oluştur**.
 
@@ -84,7 +84,7 @@ Yeni komut dosyanızı görülebilir **Çözüm Gezgini**. Altında **kaynaklar�
 
 ## <a name="modify-the-source-code"></a>Kaynak kodu değiştirin
 
-Bu noktaya, komut ve düğmesi metin otomatik olarak oluşturulan ve çok ilginç. Değişiklik yapmak istiyorsanız VSCT dosyasını ve CS dosyasını değiştirebilirsiniz.
+Bu noktada, otomatik olarak oluşturulan komut ve düğme metni olan ve çok ilginç. Değişiklik yapmak istiyorsanız VSCT dosyasını ve CS dosyasını değiştirebilirsiniz.
 
 * VSCT Burada, Komutlarınızın yeniden adlandırma, yapabilir Visual Studio komut sistemde nereye tanımlamak dosyasıdır. VSCT dosya keşfederken VSCT kod denetimleri her hangi bir bölümü açıklayan yorumlar fark edeceksiniz.
 

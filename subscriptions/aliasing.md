@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Diğer ad veya kolay adlar kullanılması durumunda oturum açma başarısız olabilir
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841633"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195157"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikleri için oturum açarken diğer adlar kullanırken başarısız olabilir
 
@@ -28,7 +28,7 @@ Diğer ad kullanımı ile bir şirket Microsoft çevrimiçi hizmeti için kendi 
 
 Yönetici olarak, abonelerinize sahip başarılı bir oturum açma deneyimi sağlamak için iki seçenek vardır [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - İlk seçenek (önerilir), Toplu Lisanslama hizmeti Merkezi (VLSC) olarak atanan adresi olarak dizin hesabı yararlanmasına gelir. Başvurmak [bir dizin hesabı atama abonelere](#assigning-subscribers-to-a-directory-account) daha fazla ayrıntı için bu makaledeki bir bölüm.
-- (Daha az güvenlidir), ikinci seçenek olur (yani), "Kişisel" hesap "İş veya Okul" e-posta adresine ilişkilendirilecek abonelerinize izin vermek için Microsoft hesabı veya MSA). Başvurmak [kişisel bir hesap bir iş veya Okul hesabı tanımlama ](#defining-a-work-or-school-account-as-a-personal-account ) daha fazla ayrıntı için bu makaledeki bir bölüm.
+- (Daha az güvenlidir), ikinci seçenek olur (yani), "Kişisel" hesap "İş veya Okul" e-posta adresine ilişkilendirilecek abonelerinize izin vermek için Microsoft hesabı veya MSA). Başvurmak [kişisel bir hesap bir iş veya Okul hesabı tanımlama](#defining-a-work-or-school-account-as-a-personal-account) daha fazla ayrıntı için bu makaledeki bir bölüm.
 
 > [!NOTE]
 > Yeni Visual Studio abonelikleri için şirketinizin geçirildikten sonra [Yönetim Portalı](https://manage.visualstudio.com), bir parçası olarak sağlanacak hem dizin ve e-posta adreslerini sağlayan yeni bir yönetim deneyimi yararlanmak mümkün olacaktır abonenin profili. Daha fazla bilgi edinin [geçiş](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -115,7 +115,7 @@ Aboneye abonelik atandıktan sonra bunları ziyaret etmek isteyen bir e-posta al
    - Hoş Geldiniz e-postada alınan e-posta adresi girin Someone@example.com kutusu
    - Parola oluşturma
    - Promosyon ayarlarınızı seçin
-   -  **İleri**'ye tıklayın.
+   - **İleri**'ye tıklayın.
 
 3. Doğrulama adımları tamamlayın ve tıklayın **sonraki**.
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323808"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194699"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer'da Azure hizmetlerinizle ilişkilendirilmiş kaynakları yönetme
 
@@ -24,17 +24,17 @@ Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ile **Azure iş yükü** seçili veya ile Visual Studio'nun önceki bir sürümünün [.NET 2.9 için Microsoft Azure SDK'sı](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 veya sonraki bir sürümü (bkz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) ile **Azure iş yükü** seçili. Visual Studio ile önceki bir sürümünü de kullanabilirsiniz [.NET 2.9 için Microsoft Azure SDK'sı](https://www.microsoft.com/download/details.aspx?id=51657).
 * Microsoft Azure hesabı - bir hesabınız yoksa, şunları yapabilirsiniz [ücretsiz deneme için kaydolun](http://go.microsoft.com/fwlink/?LinkId=623901) veya [Visual Studio abone Avantajlarınızı etkinleştirebilirsiniz](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Cloud Explorer'ı görüntülemek için seçin **görünümü** > **Cloud Explorer** menü çubuğundaki.
+> Cloud Explorer'ı görüntülemek için basın **Ctrl**+**Q** çağrılacak **hızlı başlatma**girin **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Bir Azure ekleme hesabı için Cloud Explorer
 
-Bir Azure hesabı ile ilişkili kaynakları görüntülemek için hesap için Cloud Explorer eklemeniz gerekir.
+Bir Azure hesabı ile ilişkili kaynakları görüntülemek için önce hesabına eklemelisiniz **Cloud Explorer**.
 
-1. İçinde **Cloud Explorer**seçin **Azure hesap ayarları**.
+1. İçinde **Cloud Explorer**, seçin **hesap yönetimi** düğmesi.
 
    ![Cloud Explorer Azure hesap ayarları simgesi](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

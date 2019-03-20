@@ -9,12 +9,12 @@ ms.workload: multiple
 ms.date: 03/05/2019
 ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: 8d8a7c0cd7422df937493fd046a74247ac9b53dd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 34f7e108b9eebfec2bb352a2997250a50ae51e66
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525891"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194972"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
 
@@ -44,7 +44,7 @@ Aşağıdaki araçlar yüklü olması gerekir.
 Yerel olarak Docker kapsayıcıları çalıştırmak için bir yerel docker istemcisi gerekir.
 Kullanabileceğiniz [Docker araç kutusu](https://www.docker.com/products/docker-toolbox), Hyper-V devre dışı bırakılmasını gerektiren veya kullanabilirsiniz [için Docker Windows](https://www.docker.com/get-docker), Hyper-V kullanır ve Windows 10 gerektirir.
 
-Docker araç kutusu kullanıyorsanız gerekecektir [Docker istemciyi Yapılandırma](vs-azure-tools-docker-setup.md)
+Docker araç kutusunu kullanarak, Docker istemciyi yapılandırmak gerekir.
 
 ## <a name="1-create-a-web-app"></a>1. Web uygulaması oluşturma
 

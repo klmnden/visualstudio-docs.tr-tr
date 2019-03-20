@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7676202d491b5a74f7a20a80c84ee5ca16a67cd2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872381"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193682"
 ---
 # <a name="security-bibliography"></a>Güvenlik Kaynakçası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "57872381"
 Çevrimiçi ve güvenli uygulamalar geliştirme ve güvenli ortamlarını yapılandırma konu Yazdır seçilen kaynaklar aşağıda verilmiştir:  
   
 ## <a name="microsoft-web-sites"></a>Microsoft Web siteleri  
- [Microsoft Güvenlik](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ [Microsoft Güvenlik](https://www.microsoft.com/security)  
  Microsoft, uygulamalar ve sistemler BT uzmanları, geliştiriciler ve ev kullanıcıları için güvenlik kaynakları için bağlantılarla birlikte ağ düzeyinde sistemlerine masaüstünden güvenli tutmanıza yardımcı olmak için nasıl çalıştığı hakkında bilgi edinin.  
   
  [MSDN'de güvenlik kaynakları](https://www.microsoft.com/msrc?rtc=1)  

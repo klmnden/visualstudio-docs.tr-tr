@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4d540dad3ead24f9213cbfb5009712372a4af34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6fdbe80238bb562fb84d540b23ade349435d91c
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934763"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194904"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>5. Adım: Python ortamınızda paketleri yükleme
 
@@ -26,23 +26,23 @@ Python Geliştirici topluluğu kendi projelerine birleştirebilirsiniz yararlı 
 
 1. Seçin **görünümü** > **diğer Windows** > **Python ortamları** menü komutu. **Python ortamları** penceresi açılır bir eşler arası olarak **Çözüm Gezgini** ve farklı ortamlar için gösterilir. Bu liste, yüklediğiniz Visual Studio Yükleyicisi ve ayrı olarak yüklenenler kullanarak her iki ortama içerir. Yeni projeler için kullanılan varsayılan ortam kalın ortamıdır.
 
-   ![Python ortamları penceresi](media/environments-default-view-blue.png)
+   ![Python ortamları penceresi](media/environments/environments-default-view-blue.png)
 
 2. Ortamın **genel bakış** sekmesi, hızlı erişim sağlar bir **etkileşimli** konusu ortamın ortam yükleme klasörü ve yorumlayıcılarını birlikte penceresi. Örneğin, **açık etkileşimli pencere** ve bir **etkileşimli** penceresi, belirli bir ortam için Visual Studio'da görünür.
 
 3. Seçin **paketleri** sekmesine tıkladığınızda ortamda şu anda yüklü olan paketleri listesini görürsünüz.
 
-   ![Bir ortamda yüklü paketler](media/environments-installed-packages-blue.png)
+   ![Bir ortamda yüklü paketler](media/environments/environments-installed-packages-blue.png)
 
 4. Yükleme `matplotlib` arama alanına adı girerek, ardından **pip yükleme**
 
-   ![Matplotlib ortama yükleme](media/environments-add-matplotlib1.png)
+   ![Matplotlib ortama yükleme](media/environments/environments-add-matplotlib1.png)
 
 5. Bunu yapmak isteyip istemediğiniz sorulduğunda yükseltmesi için onay vermiş olursunuz.
 
 6. Paket yüklendikten sonra görünür **Python ortamları** penceresi. **X** paket sağında da kaldırır.
 
-   ![Ortamda matplotlib yükleme tamamlama](media/environments-add-matplotlib2.png)
+   ![Ortamda matplotlib yükleme tamamlama](media/environments/environments-add-matplotlib2.png)
 
    Visual Studio yeni yüklenen paket için IntelliSense veritabanını oluşturuyor belirtmek için ortamı altındaki küçük ilerleme çubuğu görünür. **IntelliSense** sekme ayrıca gösterir daha ayrıntılı bilgiler. Veritabanı işlemi tamamlanana kadar IntelliSense özelliklerini otomatik tamamlama ve sözdizimi denetimi gibi Not Düzenleyici o paket için etkin olmayacaktır.
 
@@ -65,7 +65,7 @@ Python Geliştirici topluluğu kendi projelerine birleştirebilirsiniz yararlı 
 
 8. Programı çalıştırın (**F5**) veya hata ayıklayıcı olmadan (**Ctrl**+**F5**) çıktıyı görmek için:
 
-   ![Matplotlib örnek çıktısı](media/environments-add-matplotlib3.png)
+   ![Matplotlib örnek çıktısı](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Sonraki adım
 

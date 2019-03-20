@@ -1,7 +1,7 @@
 ---
 title: Python yorumlayıcısı ve ortamınız için bir proje seçin
 description: Anaconda ve sanal ortamlar, belirli bir projeye uygulamak da dahil olmak üzere bir Python ortamı özel olarak seçebilirsiniz.
-ms.date: 02/11/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b505a350cdb66cafb975585cb7ed0209104dabac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1bf1937c92f5da234ab72934c5acd52bc9cd0a6b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721816"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194969"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Nasıl bir proje için bir Python ortamı seçin
 
@@ -23,15 +23,16 @@ Bir global Python ortamı, Anaconda ortamı, bir sanal ortam ya da conda ortamı
 
 Tüm yeni Python projeleri Visual Studio'da ilk altında görüntülenen varsayılan genel ortam kullanmak üzere yapılandırılmış **Python ortamları** düğümünde **Çözüm Gezgini**:
 
-![Çözüm Gezgini'nde gösterilen genel varsayılan Python ortamı](media/environments-project.png)
+![Çözüm Gezgini'nde gösterilen genel varsayılan Python ortamı](media/environments/environments-project.png)
 
+::: moniker range="vs-2017"
 Bir proje için ortamı değiştirmek için sağ **Python ortamları** düğümünü seçip alt **Ekle/Kaldır Python ortamları**. Conda ortamları altında görüntülenmesini istediğiniz tüm sürücüler seçin ve görüntülenen listeden hangi içerir genel, sanal **Python ortamları** düğüm:
 
-![Python ortamları Ekle/Kaldır iletişim kutusu](media/environments-add-remove.png)
+![Python ortamları Ekle/Kaldır iletişim kutusu](media/environments/environments-add-remove.png)
 
 Seçtiğinizde **Tamam**, seçilen tüm ortamlara altında görünür **Python ortamları** düğümü. Şu anda etkin ortam kalın yazı tipinde görünür:
 
-![Çözüm Gezgini'nde birden çok Python ortamları](media/environments-project-multiple.png)
+![Çözüm Gezgini'nde birden çok Python ortamları](media/environments/environments-project-multiple.png)
 
 Hızlı bir şekilde farklı bir ortama etkinleştirmek için bu ortam adını sağ tıklatın ve seçin **etkinleştirme ortam**. Seçtiğiniz proje ile kaydedilir ve proje gelecekte açtığınızda bu ortamda etkinleştirilir. Tüm seçenekleri işaretini kaldırırsanız **Ekle/Kaldır Python ortamları** iletişim kutusunda, Visual Studio genel varsayılan ortam etkinleştirir.
 
@@ -42,6 +43,19 @@ Bağlam menüsünde **Python ortamları** düğüm ayrıca ek komutlar sağlar:
 | **Sanal ortam Ekle** | Projede yeni bir sanal ortam oluşturma işlemi başlar. Bkz: [sanal ortam Oluştur](#create-a-virtual-environment). |
 | **Var olan sanal ortama Ekle** | Bir sanal ortam içeren bir klasör seçmenizi ister ve altındaki listeye ekler **Python ortamları**, ancak etkinleştirmez. Bkz: [var olan bir sanal ortam etkinleştirme](#activate-an-existing-virtual-environment). |
 | **Conda ortamı oluşturma** | Ağınızdan **Python ortamları** *penceresi* , ortam için bir ad girin ve kendi temel yorumlayıcı belirtin. Bkz: [Conda ortamları](managing-python-environments-in-visual-studio.md#conda-environments). |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Ortam bir proje için değiştirmek için sağ tıklayın **Python ortamları** düğümünü seçip alt **ortam Ekle**, ya da seçin **ortam Ekle** ortamından Python araç çubuğu açılır.
+
+İçinde bir kez **ortam Ekle** iletişim kutusunda **varolan ortam** sekmesine ve ardından yeni bir ortamdan **ortam** açılan liste:
+
+![Proje ortam seçerek ortamları Ekle iletişim kutusunda](media/environments/environments-project-2019.png)
+
+Bir proje için genel varsayılan dışında bir ortam zaten eklediyseniz, yeni eklenen bir ortam etkinleştirmeniz gerekebilir. Bu ortamda sağ **Python ortamları** düğüm ve seçin **etkinleştirme ortam**. Bir ortam projeden kaldırmak için seçin **Kaldır**.
+
+![Etkinleştirme ve proje ortam kaldırma](media/environments/environments-project-add-remove-2019.png)
+::: moniker-end
 
 ## <a name="use-virtual-environments"></a>Sanal ortamları kullanma
 
@@ -59,17 +73,18 @@ Visual Studio'da gibi başka bir proje için bir sanal ortam etkinleştirilebilm
 
 Bir sanal ortam projenize eklendikten sonra görünür **Python ortamları** penceresi. Ardından, herhangi bir ortam gibi etkinleştirebilir ve kendi paketleri yönetebilirsiniz.
 
+::: moniker range="vs-2017"
 ### <a name="create-a-virtual-environment"></a>Sanal ortam oluştur
 
-Doğrudan Visual Studio'dan yeni bir sanal ortam şu şekilde oluşturabilirsiniz:
+Doğrudan Visual Studio'da yeni bir sanal ortam şu şekilde oluşturabilirsiniz:
 
 1. Sağ **Python ortamları** içinde **Çözüm Gezgini** seçip **sanal ortama ekleme**, aşağıdaki iletişim kutusunu getirir:
 
-    ![Bir sanal ortam oluşturma](media/environments-add-virtual-1.png)
+    ![Bir sanal ortam oluşturma](media/environments/environments-add-virtual-1.png)
 
 1. İçinde **sanal ortam konumunu** alanında, sanal ortam için bir yol belirtin. Yalnızca bir ad belirtirseniz, sanal ortamın içinde bu ada sahip bir alt klasör geçerli projeye oluşturulur.
 
-1. Temel yorumlayıcı bir ortam seçin ve seçin **Oluştur**. Visual Studio ortamı yapılandırır ve gerekli tüm paketleri indirir bir ilerleme çubuğu görüntülenir. Sanal ortam bu noktada, görünür **Python ortamları** içeren proje penceresi.
+1. Temel yorumlayıcı bir ortam seçin ve seçin **Oluştur**. Visual Studio ortamı yapılandırır ve gerekli tüm paketleri indirir bir ilerleme çubuğu görüntülenir. Sanal ortam tamamlandıktan sonra görünür **Python ortamları** içeren proje penceresi.
 
 1. Sanal ortam varsayılan olarak etkin değildir. Proje için etkinleştirmek için sağ tıklatın ve seçin **etkinleştirme ortam**.
 
@@ -78,7 +93,7 @@ Doğrudan Visual Studio'dan yeni bir sanal ortam şu şekilde oluşturabilirsini
 >
 > Varsa bir *requirements.txt* dosyası mevcut bir sanal ortamda eklerken **sanal ortama ekleme** iletişim kutusunu görüntüler paketleri otomatik olarak yüklemek için bir seçenek yeniden oluşturmayı kolaylaştıran bir ortam başka bir bilgisayarda:
 >
-> ![Requirements.txt ile sanal ortam oluştur](media/environments-requirements-txt.png)
+> ![Requirements.txt ile sanal ortam oluştur](media/environments/environments-requirements-txt.png)
 >
 > Senaryosuyla her iki durumda da aynı sonucudur **var olan sanal ortama ekleme** komutu.
 
@@ -91,6 +106,40 @@ Bir sanal ortam başka bir yerde zaten oluşturduysanız, proje için şu şekil
 1. İçinde **Gözat** görüntülenen iletişim gidin ve sanal ortam içeren klasörü seçin ve **Tamam**. Visual Studio algılarsa bir *requirements.txt* dosya o ortamda, bu paketleri yüklenip yüklenmeyeceğini ister.
 
 1. Birkaç dakika sonra sanal ortamı altında görünür. **Python ortamları** düğümünde **Çözüm Gezgini**. Sanal ortam varsayılan olarak etkin değildir, bu nedenle sağ tıklayın ve seçin **etkinleştirme ortam**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+### <a name="create-a-virtual-environment"></a>Sanal ortam oluştur
+
+Doğrudan Visual Studio'da yeni bir sanal ortam şu şekilde oluşturabilirsiniz:
+
+1. Sağ **Python ortamları** içinde **Çözüm Gezgini** seçip **ortam Ekle**, ya da seçin **ortam Ekle** gelen ortamlar açılan listesinde bir Python araç çubuğundaki aşağı açılır. İçinde **ortam Ekle** görüntülenirse, seçin iletişim **sanal ortam** sekmesinde:
+
+    ![Sanal ortam sekmesinde ortam Ekle iletişim kutusu](media/environments/environments-add-virtual-1-2019.png)
+
+1. Sanal ortam için bir ad belirtin, temel yorumlayıcıyı seçin ve konumunu doğrulayın. Altında **dosyasından paketleri yükleme**, yolunu sağlamanız bir *requirements.txt* isterseniz dosya.
+
+1. İletişim kutusundaki diğer seçenekleri gözden geçirin:
+
+    | Seçenek | Açıklama |
+    | --- | --- |
+    | Geçerli ortam ayarlayın | Ortam oluşturulduktan sonra seçili projeye yeni ortamda etkinleştirir. |
+    | Yeni projeler için varsayılan ortam olarak ayarlayın | Otomatik olarak ayarlar ve tüm yeni projeler Visual Studio'da oluşturulan sanal ortamda etkinleştirir. Bu seçenek kullanıldığında, sanal ortamın belirli bir proje dışında bir konumda yerleştirilmelidir.  |
+    | Python ortamları penceresinde görüntüleme | Açmak belirtir **Python ortamları** ortamı oluşturduktan sonra penceresi. |
+    | Bu ortamın genel olarak kullanılabilir yap | Sanal ortamın genel bir ortamı olarak davranıp davranmadığını belirtir. Bu seçenek kullanıldığında, sanal ortamın belirli bir proje dışında bir konumda yerleştirilmelidir. |
+
+1. Seçin **Oluştur** sanal ortam sonlandırmak için. Visual Studio ortamı yapılandırır ve gerekli tüm paketleri indirir bir ilerleme çubuğu görüntülenir. Tamamlandıktan sonra sanal ortamın etkinleştirilir ve görünür **Python ortamları** düğümünde **Çözüm Gezgini** ve **Python ortamları** penceresi projeyi içeren.
+
+### <a name="activate-an-existing-virtual-environment"></a>Mevcut bir sanal ortam etkinleştir
+
+Bir sanal ortam başka bir yerde zaten oluşturduysanız, proje için şu şekilde etkinleştirebilirsiniz:
+
+1. Sağ **Python ortamları** içinde **Çözüm Gezgini** seçip **ortam Ekle**.
+
+1. İçinde **Gözat** görüntülenen iletişim gidin ve sanal ortam içeren klasörü seçin ve **Tamam**. Visual Studio algılarsa bir *requirements.txt* dosya o ortamda, bu paketleri yüklenip yüklenmeyeceğini ister.
+
+1. Birkaç dakika sonra sanal ortamı altında görünür. **Python ortamları** düğümünde **Çözüm Gezgini**. Sanal ortam varsayılan olarak etkin değildir, bu nedenle sağ tıklayın ve seçin **etkinleştirme ortam**.
+::: moniker-end
 
 ### <a name="remove-a-virtual-environment"></a>Bir sanal ortam Kaldır
 
@@ -102,11 +151,18 @@ Bir sanal ortam başka bir yerde zaten oluşturduysanız, proje için şu şekil
 
 Çözüm Gezgini'nde hızlı bir şekilde (içeri aktarıp ortamı etkin olduğunda bu paketleri kodunuzu kullanmak anlamına gelir) bu ortamda yüklü paketleri görüntülemek için belirli bir ortamın düğümünü genişletin:
 
-![Çözüm Gezgini'nde bir ortam için Python paketleri](media/environments-installed-packages.png)
+![Çözüm Gezgini'nde bir ortam için Python paketleri](media/environments/environments-installed-packages.png)
 
-Yeni paketler yüklemek için ortamı sağ tıklayıp **Python paketini Yükle** geçmek **paketleri** sekmesinde **Python ortamları** penceresi. Bir arama girin (genellikle paket adı) terim ve Visual Studio eşleşen paketleri görüntüler.
+::: moniker range="vs-2017"
+Yeni paketler yüklemek için ortamı sağ tıklayıp **Python paketini Yükle** uygun geçiş yapmak için **paketleri** sekmesinde **Python ortamları** pencere. Bir arama girin (genellikle paket adı) terim ve Visual Studio eşleşen paketleri görüntüler.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Yeni paketler yüklemek için ortamı sağ tıklayıp **Python paketlerini Yönet** (veya Python araç paketi düğmesini kullanın) uygun geçiş yapmak için **paketleri** sekmede**Python ortamları** penceresi. İçinde bir kez **paketleri** sekmesinde, bir arama girin terim (genellikle paket adı) ve Visual Studio eşleşen paketleri görüntüler.
+::: moniker-end
 
-Visual Studio içinden gelen yüklenen paketler (ve bağımlılıkları) [Python paket dizinini (Pypı)](https://pypi.org), nerede kullanılabilir paketler için arama da yapabilirsiniz. Visual Studio'nun durum çubuğu ve çıkış penceresine yükleme hakkında bilgi gösterir. Bir paketi kaldırmak için sağ tıklayın ve seçin **Kaldır**.
+Visual Studio içinden gelen yüklenen paketler (ve bağımlılıkları) çoğu ortam için [Python paket dizinini (Pypı)](https://pypi.org), nerede kullanılabilir paketler için arama da yapabilirsiniz. Visual Studio'nun durum çubuğu ve çıkış penceresine yükleme hakkında bilgi gösterir. Bir paketi kaldırmak için sağ tıklayın ve seçin **Kaldır**.
+
+Genellikle conda paket yöneticisini kullanan `https://repo.continuum.io/pkgs/` varsayılan olarak kanal, ancak diğer kanallar kullanılabilir. Daha fazla bilgi için [Yönet kanalları](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) (docs.conda.io).
 
 Görüntülenen girişler her zaman doğru olmayabilir ve yüklenmesi veya kaldırılması güvenilir veya kullanılabilir olmayabilir unutmayın. Visual Studio indirmeleri varsa, pip Paket Yöneticisi'ni kullanır ve gerektiğinde yükler. Visual Studio easy_install Paket Yöneticisi'ni de kullanabilirsiniz. Kullanarak yüklü paketleri `pip` veya `easy_install` komut satırından da görüntülenir.
 

@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8c43ceb19aa6b4407fd4639f952ced859390b1
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567334"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194450"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147: ValidateAntiForgeryToken ile fiil işleyicilerini işaretleme
 
@@ -45,7 +45,7 @@ Bu kural denetler, ASP.NET MVC denetleyici eylem yöntemleri ya da:
 
    Bir ASP.NET MVC HTTP GET'ini işler denetleyici eylemi ister ve hassas verileri değiştirme gibi zararlı yan etkileri varsa, uygulamanızı siteler arası istek sahteciliği saldırılarına karşı savunmasız.  Hassas işlemleri yalnızca HTTP POST, PUT ve DELETE isteklerini gerçekleştirmek için uygulamanızı yeniden tasarlamanız gerekir.
 
-- HTTP POST işleyen, ASP.NET MVC denetleyici eylemleri için PUT veya DELETE istekleri, ekleme [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) ve izin verilen HTTP fiilleri belirten öznitelikler ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), veya [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Ayrıca, çağırmanız gerekir [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29) MVC görünümü veya Razor web sayfası yöntemi. Bir örnek için bkz. [düzenleme metotlarını inceleme ve düzenleme görünümü](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- HTTP POST işleyen, ASP.NET MVC denetleyici eylemleri için PUT veya DELETE istekleri, ekleme [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) ve izin verilen HTTP fiilleri belirten öznitelikler ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), veya [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Ayrıca, çağırmanız gerekir [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) MVC görünümü veya Razor web sayfası yöntemi. Bir örnek için bkz. [düzenleme metotlarını inceleme ve düzenleme görünümü](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar bastırıldığında
 

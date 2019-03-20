@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 277d02a64992d682d0d1f709c31c564f65cfac15
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069651"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195066"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -131,7 +131,7 @@ Otomatikleştirilmiş test, herhangi bir DevOps işlem hattına önemli bir par�
 
 Otomatikleştirilmiş testleri hakkında daha fazla bilgi için bkz: [DevOps otomatikleştirilmiş testler CI/CD işlem hattı](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blog gönderisi.
 
-Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) adlı DevLabs uzantısının bkz [güvenle işleyin: İşleme zamanı kod kalitesini](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/) blog gönderisi.
+Ve yenilikler hakkında daha fazla bilgi için [Visual Studio için sürekli teslim Araçları](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) adlı DevLabs uzantısının bkz [güvenle işleyin: İşleme zamanı kod kalitesini](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) blog gönderisi.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE geliştirmeleri
 
@@ -188,7 +188,7 @@ Biz A B daha güvenle ve daha az dikkat dağıtıcı faktör almanıza yardımc�
 
   ![Visual Studio 2017 yapı Görselleştirici](media/vsIDE-StructureVisualizer.png)
 
-Yeni verimlilik özellikleri hakkında daha fazla bilgi için bkz: [üretkenlik Visual Studio 2017'de](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) blog gönderisi işareti Wilson-Thomas'tarafından.
+Yeni verimlilik özellikleri hakkında daha fazla bilgi için bkz: [Visual Studio 2017: Üretkenlik, performans ve iş ortakları](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) blog gönderisi.
 
 ### <a name="visual-c"></a>Visual C++
 

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763290"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194463"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ IntelliSense, kodu oluşturduğunuz sırada size bilgi sağlayarak daha hızlı 
  JavaScript IntelliSense programlama başvuruları gibi dinamik HTML (DHTML) DOM öğeleri için sağlar `body`, `form`, ve `div`. IntelliSense yalnızca, geçerli belgede ve ana sayfada yer alan öğeleri görüntüler. JavaScript IntelliSense de destekler `window` ve `document` nesneleri ve üyeleri.
 
 ###  <a name="IntrinsicObjects"></a> İç nesneler
- JavaScript IntelliSense programlama başvuruları gibi iç nesneler için sağlar `Array`, `String`, `Math`, `Date`, ve `Number`. İç nesneler hakkında daha fazla bilgi için bkz: [iç nesneler](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript).
+ JavaScript IntelliSense programlama başvuruları gibi iç nesneler için sağlar `Array`, `String`, `Math`, `Date`, ve `Number`. İç nesneler hakkında daha fazla bilgi için bkz: [standart yerleşik nesneleri](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects).
 
 ###  <a name="UserDefined"></a> Kullanıcı tanımlı değişkenler, İşlevler ve nesneler
  Bir JavaScript dosyasını değiştirdiğinizde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] taramaların açık ve başvuruda bulunulan tüm uygun kod kaynaklarını belirlemek için belgeleri. Bu değişkenler, İşlevler ve oluşturduğunuz nesneleri içerir. Bu kaynaklar daha sonra JavaScript IntelliSense kullanımına sunulur.

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: chitray
-ms.author: chitray
+author: gregvanl
+ms.author: gregvanl
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983019"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193711"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>İzlenecek yol: Uzantı Paketi Oluşturma
 
@@ -23,7 +23,7 @@ Birlikte yüklenebilir uzantıları kümesi bir uzantı paketidir. Uzantı paket
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).
+Visual Studio 2015'ten başlayarak, Visual Studio SDK'sı Visual Studio kurulumunda isteğe bağlı bir özellik olarak dahil edilir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
 Uzantı paketi bu özellik, Visual Studio 15,8 önizleme 2'den itibaren kullanılabilir.
 
@@ -31,9 +31,9 @@ Uzantı paketi bu özellik, Visual Studio 15,8 önizleme 2'den itibaren kullanı
 
 Uzantı paketi öğe şablonu, bir uzantı paketi ile birlikte yüklenen uzantı kümesi oluşturur.
 
-1. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** ve ardından **genişletilebilirlik**. İçinde **şablonları** bölmesinde **VSIX projesi**. İçinde **adı** kutusuna `Test Extension Pack`. **Tamam**'ı tıklatın.
+1. İçinde **yeni proje** iletişim kutusunda, "VSIX" ve seçin için arama **VSIX projesi**. İçin **proje adı**, "Test uzantı paketi" yazın. **Oluştur**’u seçin.
 
-2. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. Git için Visual C# **genişletilebilirlik** düğümünü seçip alt **uzantı paketi**. Varsayılan dosya adı (ExtensionPack1.cs) bırakın.
+2. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. Git için Visual C# **genişletilebilirlik** düğümünü seçip alt **uzantı paketi**. Varsayılan dosya adı (ExtensionPack1.cs) bırakın.
 
 3. Aşağıdaki kodu içeren ExtensionPack1.vsext dosya eklendiğinde
 
@@ -69,13 +69,23 @@ Uzantı paketi öğe şablonu, bir uzantı paketi ile birlikte yüklenen uzantı
 
 Uzantı yayımlandıktan sonra Visual Studio'da yükleyin ve test etmek.
 
-1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler...** .
+::: moniker range="vs-2017"
 
-2. Tıklayın **çevrimiçi** bulun `Test Extension Pack`.
+1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'da üzerinde **uzantıları** menüsünde tıklatın **Yönetilen Uzantılar**.
+
+::: moniker-end
+
+2. Tıklayın **çevrimiçi** ve ardından "Test uzantı paketi" arayın.
 
 3. **İndir**'e tıklayın. Uzantı ve kendi uzantısı paketinde uzantılarının listesi için yükleme zamanlanacak.
 
-4. Bir örnek uzantısı paketi yükleme görünümünü aşağıdadır **Uzantılar ve güncelleştirmeler** iletişim. Dahil edilen uzantılar yalnızca bazıları uzantısı paketinde yüklemeyi tercih ediyorsanız, uzantı listesinde değiştirebilirsiniz **için zamanlanmış yükleme**.
+4. Bir örnek uzantısı paketi yükleme görünümünü aşağıdadır **uzantıları yönetme** iletişim. Dahil edilen uzantılar yalnızca bazıları uzantısı paketinde yüklemeyi tercih ediyorsanız, uzantı listesinde değiştirebilirsiniz **için zamanlanmış yükleme**.
 
     ![Market'ten uzantı paketi indirin](media/vside-extensionpack.png)
 
@@ -85,8 +95,18 @@ Uzantı yayımlandıktan sonra Visual Studio'da yükleyin ve test etmek.
 
 Uzantıyı bilgisayarınızdan kaldırmak için:
 
+::: moniker range="vs-2017"
+
 1. Visual Studio'da üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
 
-2. Seçin `Test Extension Pack` ve ardından **kaldırma**. Uzantı ve uzantısı paketinde uzantıları listesini kaldırma işlemi için zamanlanacak.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Visual Studio'da üzerinde **uzantıları** menüsünde tıklatın **Yönetilen Uzantılar**.
+
+::: moniker-end
+
+2. Seçin **Test uzantı paketi** ve ardından **kaldırma**. Uzantı ve uzantısı paketinde uzantıları listesini kaldırma işlemi için zamanlanacak.
 
 3. Kaldırma işlemini tamamlamak için Visual Studio'nun tüm örneklerini kapatın.

@@ -1,6 +1,6 @@
 ---
 title: Oluşturma bir Windows Forms araç kutusu denetimi | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873018"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194583"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Bir Windows Forms araç kutusu denetimi oluşturma
-Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu otomatik olarak eklenen bir denetim oluşturmanızı sağlar **araç kutusu** uzantısı yüklü olduğunda. Bu konuda, diğer kullanıcılarına dağıtabileceğiniz bir basit bir sayaç denetimi oluşturmak için şablonu kullanmayı gösterir.
+
+Visual Studio genişletilebilirlik Araçları (VS SDK) dahil Windows Forms araç kutusu denetimi öğe şablonu oluşturmanıza olanak tanıyan bir **araç kutusu** denetimi, uzantı yüklendiğinde otomatik olarak eklenir. Bu izlenecek yol, diğer kullanıcılarına dağıtabileceğiniz bir basit bir sayaç denetimi oluşturmak için şablonu kullanmayı gösterir.
 
 ## <a name="prerequisites"></a>Önkoşullar
+
 Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik olarak eklenmiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-windows-forms-toolbox-control"></a>Bir Windows Forms araç kutusu denetimi oluşturma
+## <a name="create-the-toolbox-control"></a>Araç kutusu denetimi oluşturma
+
 Windows Forms araç kutusu denetim şablonu tanımlanmamış kullanıcı denetimi oluşturur ve tüm denetime eklemek için gereken işlevselliği sağlayan **araç kutusu**.
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Bir Windows Forms araç kutusu denetimi ile bir uzantı oluşturma
 
-1. Adlı bir VSIX projesi oluşturun `MyWinFormsControl`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C#** > **genişletilebilirlik**.
+1. Adlı bir VSIX projesi oluşturun `MyWinFormsControl`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim kutusunda "VSIX" için arama yapın.
 
 2. Projeyi açtığında, ekleme bir **Windows Forms araç kutusu denetimi** adlı öğe şablonu `Counter`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C#** > **genişletilebilirlik** seçip **Windows Forms araç kutusu denetimi**
 
 3. Bu bir kullanıcı denetimi ekler bir `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> denetiminde yerleştirmek için **araç kutusu**ve **Microsoft.VisualStudio.ToolboxControl** dağıtım için VSIX bildirimi varlık girişi.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Denetim için kullanıcı arabirimi oluşturma
+
 `Counter` Denetim gerektiren iki alt denetimleri: bir <xref:System.Windows.Forms.Label> geçerli sayısını görüntülemek için ve bir <xref:System.Windows.Forms.Button> sayısı 0 olarak ayarlamak için. Çağıranlar sayacı programlı olarak artırır çünkü başka bir alt denetimler gereklidir.
 
 #### <a name="to-build-the-user-interface"></a>Kullanıcı arabirimini oluşturmak için
@@ -58,6 +62,7 @@ Windows Forms araç kutusu denetim şablonu tanımlanmamış kullanıcı denetim
     |`Button1`|**Metin**|Sıfırlama|
 
 ### <a name="code-the-user-control"></a>Kullanıcı denetimi kod
+
 `Counter` Denetim kullanıma sunma sayacın sayaç artırılır her oluşturulması için bir olay için bir yöntem bir **sıfırlama** düğmesi ve geçerli sayı, görüntülenecek metni ve gösterilip gösterilmeyeceğini depolamak için üç özellikleri veya gizleme **sıfırlama** düğmesi. `ProvideToolboxControl` Özniteliği belirler nerede **araç kutusu** `Counter` denetimi görünür.
 
 #### <a name="to-code-the-user-control"></a>Kullanıcı denetimi kod
@@ -146,13 +151,14 @@ Windows Forms araç kutusu denetim şablonu tanımlanmamış kullanıcı denetim
     ```
 
 ### <a name="test-the-control"></a>Denetimi test
+
  Test etmek için bir **araç kutusu** denetlemek, ilk geliştirme ortamında test edin ve içinde derlenen bir uygulamayı test edin.
 
 #### <a name="to-test-the-control"></a>Denetimi'ni sınamak için
 
-1. Tuşuna **F5**.
+1. Tuşuna **F5** için **hata ayıklamayı Başlat**.
 
-    Bu projeyi derler ve Visual Studio'nun yüklü denetimi olan ikinci bir deneysel örneği açılır.
+    Bu komut, projeyi derler ve Visual Studio'nun yüklü denetimi olan ikinci bir deneysel örneği açılır.
 
 2. Visual Studio'nun deneysel örneğinde oluşturma bir **Windows Forms uygulaması** proje.
 
@@ -199,16 +205,18 @@ Windows Forms araç kutusu denetim şablonu tanımlanmamış kullanıcı denetim
 
 16. Tıklayın **Test** sayaç ulaşana kadar **5** kutuları her iletiyi kapattıktan.
 
-    **Sıfırlama** düğme yeniden görünür.
+    **Sıfırlama** düğme yeniden görüntülenir.
 
 17. Tıklayın **sıfırlama**.
 
     Sayaç sıfırlanır için **0**.
 
 ## <a name="next-steps"></a>Sonraki adımlar
-Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* projenizin \bin\debug\ klasöründeki. Denetim yükleyerek dağıtabileceğiniz *.vsix* bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Market](https://marketplace.visualstudio.com/) böylece kullanıcılar, göz atarak bulabilirsiniz **Araçları**  >   **Uzantı ve güncelleştirmeler** iletişim.
+
+Yapı kurarken bir **araç kutusu** denetimi, Visual Studio, adlı bir dosya oluşturur *ProjectName.vsix* projenizin \bin\debug\ klasöründeki. Denetim yükleyerek dağıtabileceğiniz *.vsix* bir ağ veya bir Web sitesi için dosya. Kullanıcı açtığında *.vsix* dosya, denetimin yüklü ve Visual Studio için eklenen **araç kutusu** kullanıcının bilgisayarında. Alternatif olarak, karşıya *.vsix* dosyasını [Visual Studio Market](https://marketplace.visualstudio.com/) böylece kullanıcılar, göz atarak bulabilirsiniz **Araçları**  >   **Uzantılar ve güncelleştirmeler** iletişim.
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 - [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)
 - [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)

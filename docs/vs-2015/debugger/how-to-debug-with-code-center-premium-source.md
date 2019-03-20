@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2af674f00c3e6aa1fd50919158cfcdfce379287e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868959"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193911"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Nasıl yapılır: Kod Merkezi birincil kaynağı ile hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,4 +142,4 @@ ms.locfileid: "57868959"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   
  [Hata ayıklayıcısı güvenliği](../debugger/debugger-security.md)   
- [Kod Merkezi birincil](https://www.microsoft.com/sharedsource/code-center-premium.aspx)
+ [Kod Merkezi birincil](https://www.microsoft.com/en-us/sharedsource/code-center-premium.aspx)
