@@ -10,18 +10,18 @@ items:
     href: tutorial-multicontainer.md
   - name: 'Öğretici: Visual Studio’da Kubernetes'
     href: tutorial-kubernetes-tools.md
-  - name: Yerel Docker kapsayıcısındaki uygulamalarda hata ayıklama
+  - name: Yerel Docker kapsayıcısındaki uygulamada hata ayıklama
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Visual Studio kullanarak kapsayıcı kayıt defterine ASP.NET kapsayıcısı dağıtma
+  - name: Bir kapsayıcı kayıt defteri dağıtma
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: VirtualBox ile Docker Konağını Yapılandırma
-    href: vs-azure-tools-docker-setup.md
-  - name: Docker ile Visual Studio 2017 geliştirme sorunlarını giderme
+  - name: Azure App Service'e dağıtma
+    href: docker-deploy-app-service.md
+  - name: Docker ile Visual Studio geliştirme sorunlarını giderme
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525917"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58160033"
