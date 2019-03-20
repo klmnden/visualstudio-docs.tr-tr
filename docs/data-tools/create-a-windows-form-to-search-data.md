@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945083"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268779"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için Windows Form oluşturma
 
@@ -31,27 +31,25 @@ Bir TableAdapter (ve denetimleri için parametre değerlerini kabul etmek ve sor
 
 Bu kılavuzda gösterilen görevler aşağıdakileri içerir:
 
--   Yeni bir oluşturma **Windows Forms uygulaması** proje.
+- Oluşturma ve veri kaynağı ile uygulamanızda yapılandırma **veri kaynağı yapılandırması** Sihirbazı.
 
--   Oluşturma ve veri kaynağı ile uygulamanızda yapılandırma **veri kaynağı yapılandırması** Sihirbazı.
+- İçindeki öğelerin bırakma türünü ayarlama **veri kaynakları** penceresi.
 
--   İçindeki öğelerin bırakma türünü ayarlama **veri kaynakları** penceresi.
+- Öğeleri sürükleyerek verileri görüntüleyen denetimler oluşturma **veri kaynakları** forma penceresi.
 
--   Öğeleri sürükleyerek verileri görüntüleyen denetimler oluşturma **veri kaynakları** forma penceresi.
+- Formdaki verileri görüntülemek için denetimler ekleme.
 
--   Formdaki verileri görüntülemek için denetimler ekleme.
+- Tamamlama **arama ölçütü Oluşturucu** iletişim kutusu.
 
--   Tamamlama **arama ölçütü Oluşturucu** iletişim kutusu.
-
--   Parametreleri forma girme ve parametreli sorguyu yürütme.
+- Parametreleri forma girme ve parametreli sorguyu yürütme.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını kullanır.
 
-1.  SQL Server Express LocalDB yoksa,'nden ya da yükleme [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. İçinde **Visual Studio yükleyicisi**, bir parçası olarak SQL Server Express LocalDB yükleyebilirsiniz **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
+1. SQL Server Express LocalDB yoksa,'nden ya da yükleme [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express), aracılığıyla veya **Visual Studio yükleyicisi**. İçinde **Visual Studio yükleyicisi**, bir parçası olarak SQL Server Express LocalDB yükleyebilirsiniz **veri depolama ve işleme** iş yükü veya tek bir bileşen olarak.
 
-2.  Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
+2. Northwind örnek veritabanı, şu adımları izleyerek yükleyin:
 
     1. Visual Studio'da açın **SQL Server Nesne Gezgini** penceresi. (Bir parçası olarak SQL Server Nesne Gezgini yüklü **veri depolama ve işleme** iş yükünde **Visual Studio yükleyicisi**.) Genişletin **SQL Server** düğümü. LocalDB Örneğinizde sağ tıklayıp **yeni sorgu**.
 
@@ -65,17 +63,7 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
 ## <a name="create-the-windows-forms-application"></a>Windows Forms uygulaması oluşturma
 
-İlk adım bir Windows Forms uygulaması oluşturmaktır. Projeye bir ad atamak Bu adımda isteğe bağlıdır, ancak daha sonra projeyi kaydetmek çünkü Buraya bir ad vermeniz:
-
-1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
-
-2. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
-
-3. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
-
-4. Projeyi adlandırın **WindowsSearchForm**ve ardından **Tamam**.
-
-     **WindowsSearchForm** projesi oluşturulur ve eklenen **Çözüm Gezgini**.
+Yeni bir **Windows Forms uygulaması** ya da proje C# veya Visual Basic. Projeyi adlandırın **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Veri kaynağı oluşturma
 
@@ -89,9 +77,9 @@ Bu adımda veri kaynağı kullanarak bir veritabanı oluşturulur **veri kaynağ
 
 4.  Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:
 
-    -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
+    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-    -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
+    - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
 
 5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
 
@@ -153,9 +141,9 @@ Uygulamayı çalıştıran formunuza açar ve giriş olarak parametreyi almak ha
 
 Uygulama gereksinimlerinize bağlı olarak, parametreli form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:
 
--   İlgili verileri görüntüleyen denetimler ekleme. Daha fazla bilgi için [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
+- İlgili verileri görüntüleyen denetimler ekleme. Daha fazla bilgi için [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
 
--   Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Veritabanı nesneleri eklemek veya çıkarmak için veri kümesini düzenleme. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

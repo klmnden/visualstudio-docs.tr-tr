@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9e36363743ac1509fb37c9070085656c34b91f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936669"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268768"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Karmaşık veri bağlamayı destekleyen bir Windows Forms kullanıcı denetimi oluşturma
 
-Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcut denetimleri seçebilirsiniz **araç kutusu**, veya standart denetimlerinde kullanılamıyor işlevi uygulamanızı gerektiriyorsa, özel denetimler yazabilirsiniz. Bu izlenecek yol, uygulayan bir denetim oluşturma işlemi gösterilmektedir <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Denetimleri uygulayan <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> içeren bir `DataSource` ve `DataMember` verilere bağlı özelliği. Bu tür denetimler benzer bir <xref:System.Windows.Forms.DataGridView> veya <xref:System.Windows.Forms.ListBox>.
+Windows uygulamalarında formların üzerindeki verileri görüntülerken, mevcut denetimleri seçebilirsiniz **araç kutusu**. Alternatif olarak, standart denetimlerinde kullanılamıyor işlevi uygulamanızı gerektiriyorsa, özel denetimler yazabilirsiniz. Bu izlenecek yol, uygulayan bir denetim oluşturma işlemi gösterilmektedir <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Denetimleri uygulayan <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> içeren bir `DataSource` ve `DataMember` verilere bağlı özelliği. Bu tür denetimler benzer bir <xref:System.Windows.Forms.DataGridView> veya <xref:System.Windows.Forms.ListBox>.
 
 Denetim yazma ile ilgili daha fazla bilgi için bkz: [denetimleri tasarım zamanında Windows Forms geliştirme](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
@@ -37,9 +37,7 @@ Veri bağlama senaryoları denetimler yazarken aşağıdaki veri bağlama öznit
 
 Bu izlenecek yol, bir tablodaki veri satırlarının görüntüleyen bir karmaşık bir denetim oluşturur. Bu örnekte `Customers` Northwind örnek veritabanından tablo. Müşteriler tablosunda karmaşık kullanıcı denetiminin görüntüleyeceği bir <xref:System.Windows.Forms.DataGridView> özel denetimi.
 
-Bu kılavuz boyunca, öğreneceksiniz nasıl yapılır:
-
-- Yeni bir **Windows Forms uygulaması**.
+Bu kılavuz boyunca öğreneceksiniz nasıl yapılır:
 
 - Yeni bir **kullanıcı denetimi** projenize.
 
@@ -71,19 +69,9 @@ Bu izlenecek yol, SQL Server Express LocalDB ve Northwind örnek veritabanını 
 
        Kısa bir süre sonra sorgu çalışmayı tamamladıktan ve Northwind veritabanı oluşturulur.
 
-## <a name="create-a-windows-forms-application"></a>Bir Windows Forms uygulaması oluşturma
+## <a name="create-a-windows-forms-app-project"></a>Bir Windows Forms uygulaması projesi oluşturma
 
-İlk adım oluşturmaktır bir **Windows Forms uygulaması**:
-
-1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** > **proje**.
-
-1. Ya da genişletin **Visual C#** veya **Visual Basic** seçip sol bölmedeki **Windows Masaüstü**.
-
-1. Orta bölmede seçin **Windows Forms uygulaması** proje türü.
-
-1. Projeyi adlandırın **ComplexControlWalkthrough**ve ardından **Tamam**.
-
-    **ComplexControlWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.
+İlk adım oluşturmaktır bir **Windows Forms uygulaması** ya da proje C# veya Visual Basic. Projeyi adlandırın **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Projeye kullanıcı denetimi Ekle
 
@@ -116,27 +104,27 @@ Karmaşık, destek veri bağlama denetimleri için uygulayabileceğiniz <xref:Sy
 
 Kullanım **veri kaynağı yapılandırması** bir veri kaynağı oluşturmak için Sihirbazı'nı temel alan `Customers` Northwind örnek veritabanındaki tabloda:
 
-1.  Açmak için **veri kaynakları** penceresi, **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
+1. Açmak için **veri kaynakları** penceresi, **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
 
-2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.
+2. İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.
 
-3.  Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
+3. Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
 
-4.  Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:
+4. Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:
 
-    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
+   - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
-    - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
+   - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
 
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
+5. Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
 
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
+6. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
 
-7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.
+7. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.
 
-8.  Seçin `Customers` tablosunu ve ardından **son**.
+8. Seçin `Customers` tablosunu ve ardından **son**.
 
-    **NorthwindDataSet** projenize eklenir ve `Customers` tablo görünür **veri kaynakları** penceresi.
+   **NorthwindDataSet** projenize eklenir ve `Customers` tablo görünür **veri kaynakları** penceresi.
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Müşteriler tablosu ComplexDataGridView denetimi kullanmak için ayarlama
 

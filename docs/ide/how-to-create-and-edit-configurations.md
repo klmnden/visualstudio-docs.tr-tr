@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928432"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268639"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme
 
@@ -46,17 +46,13 @@ Açmak için **Configuration Manager** iletişim kutusundaki **Çözüm Gezgini*
 
  İstediğiniz yapılandırmaları ayarladıktan sonra bu yapılandırmaları için uygun olan proje özellikleri ayarlayabilirsiniz.
 
-### <a name="to-set-properties-based-on-configurations"></a>Yapılandırmalarına göre özelliklerini ayarlamak için
+### <a name="set-properties-based-on-configurations"></a>Yapılandırmalarına göre özelliklerini ayarlama
 
--   İçinde **Çözüm Gezgini**, bir proje için kısayol menüsünü açın ve ardından **özellikleri**.
+Yapılandırmaları, temel özellikleri ayarlamak için **Çözüm Gezgini**, bir proje için kısayol menüsünü açın ve ardından **özellikleri**. Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir sürüm yapılandırması için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simgesi bulunur.
 
-     **Özellik sayfaları** penceresi açılır.
+Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md).
 
-     Yapılandırmalarınızı için özellikleri ayarlayabilirsiniz. Örneğin, bir sürüm yapılandırması için kod çözüm yerleşik olarak bulunur ve bu belirttiğinizde bir hata ayıklama yapılandırması için optimize edilmiştir belirtebilirsiniz `DEBUG` koşullu derleme simgesi bulunur. Özellik sayfası ayarları hakkında daha fazla bilgi için bkz: [proje ve çözüm özelliklerini yönetme](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Oluşturma ve proje yapılandırmalarını değiştirme
-
-### <a name="to-create-a-project-configuration"></a>Bir proje yapılandırması oluşturmak için
+## <a name="create-a-project-configuration"></a>Bir proje yapılandırması oluşturma
 
 1.  Açık **Configuration Manager** iletişim kutusu.
 
@@ -72,7 +68,7 @@ Açmak için **Configuration Manager** iletişim kutusundaki **Çözüm Gezgini*
 
 6.  Aynı anda çözüm genelindeki bir yapılandırma oluşturmak için seçin **oluştur yeni çözüm yapılandırması** onay kutusu.
 
-### <a name="to-rename-a-project-configuration"></a>Bir proje yapılandırması yeniden adlandırmak için
+## <a name="rename-a-project-configuration"></a>Bir proje yapılandırması yeniden adlandır
 
 1.  Açık **Configuration Manager** iletişim kutusu.
 

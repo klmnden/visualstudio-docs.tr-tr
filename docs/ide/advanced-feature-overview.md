@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221781"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268610"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio özellikleri
 
@@ -42,9 +42,13 @@ Visual Studio takımının bir kolayca Microsoft Azure tarafından desteklenen b
 
 ![Azure geliştirme iş yükü](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 Yükledikten sonra **Azure geliştirme** iş yükü, aşağıdaki **bulut** için C# şablonları kullanılabilir **yeni proje** iletişim:
 
 ![Bulut için Visual Studio Proje şablonları](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Visual Studio'nun [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) görüntülemek ve Azure tabanlı bulut kaynaklarınızı Visual Studio içinden yönetmenize olanak sağlar. Bu kaynaklar sanal makineler, tablolar, SQL veritabanları ve daha fazlasını içerebilir. **Cloud Explorer** tüm hesapları Azure kaynakları yönetilen içine oturum Azure aboneliği altında gösterir. Ve Azure portalı, belirli bir işlemi gerektiriyorsa, **Cloud Explorer** portalında Git gereken yere yönlendiren bağlantılar sağlar.
 

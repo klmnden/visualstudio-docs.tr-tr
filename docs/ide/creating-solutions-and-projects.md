@@ -4,7 +4,6 @@ ms.date: 02/06/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
-- vs.newproject
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867893"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268567"
 ---
 # <a name="create-solutions-and-projects"></a>Projeler ve çözümler oluşturma
 
@@ -39,35 +38,9 @@ Gerekli dosyaları ekleyerek kendiniz bir proje oluşturabilirsiniz, ancak Visua
 
 Başka bir deyişle, çözümler ve projeler Visual Studio'da uygulamaları geliştirmek için gerekli değildir. Git'ten kopyaladığınız veya başka bir yerde indirilen kod yalnızca açabilirsiniz. Daha fazla bilgi için [kod Visual Studio'da projeler veya çözümler olmadan geliştirme](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-> [!NOTE]
-> Açıklamalar bu konuda, Visual Studio Community edition temel alır. İletişim kutuları ve menü komutları gördüğünüz ayarları ya da Visual Studio sürümü bağlı olarak burada açıklananlar farklılık gösterebilir. Ayarlarınızı, örneğin değiştirileceğini **genel** veya **Visual C++** ayarları seçebilirsiniz **Araçları** > **içeri ve dışarı aktarma ayarları**ve ardından **tüm ayarları Sıfırla**.
+## <a name="create-a-project-from-a-project-template"></a>Bir proje şablonundan bir proje oluşturun
 
-## <a name="to-create-a-project-from-a-project-template"></a>Bir proje şablonundan bir proje oluşturmak için
-
-1. Visual Studio'da yeni bir proje oluşturmak için birden çok yolu vardır. Üzerinde **başlangıç sayfası**, bir proje şablonunun adını girin **arama proje şablonları** kutusuna veya tercih **yeni proje oluştur** açmak için bağlantıyı **yeni Proje** iletişim kutusu. Seçebilirsiniz **dosya** > **yeni** > **proje** menüsünde çubuk veya tercih **yeni proje** düğmesi araç.
-
-   ![Başlangıç sayfası](./media/vside-newproject1.png)
-
-   İçinde **yeni proje** iletişim kutusu, kullanılabilir proje şablonları görünür altında bir listede **şablonları** kategorisi. Şablonları Visual gibi dil ve proje türü programlama tarafından düzenlenir C#, JavaScript ve Azure Data Lake.
-
-   ![Yeni Proje iletişim kutusu](./media/vside-newproject-templates-list.png)
-
-   > [!NOTE]
-   > Görüntülenen listeden kullanılabilir diller ve proje şablonları, kullanmakta olduğunuz Visual Studio ve yüklü iş yükleri sürümüne bağlıdır. Ek iş yüklerinin yükleme hakkında bilgi edinmek için [iş yükleri ve bileşenleri ekleyerek veya kaldırarak tarafından Visual Studio değiştirme](../install/modify-visual-studio.md).
-
-2. Bu üçgen dil adının yanındaki seçerek kullanmak istediğiniz programlama dili için şablonları listesini gösterme ve bir proje türü seçin.
-
-   Kullanılabilir proje şablonları aşağıdaki örnekte görsel için C# .NET Core projeleri.
-
-   ![Proje şablonları](./media/new-project-dialog-net-core.png)
-
-3. Yeni proje için bir ad girin **adı** kutusu. Sisteminizde varsayılan konumda projeyi kaydetmek veya seçmek seçebileceğiniz **Gözat** başka bir konum bulmak için düğme.
-
-   Çözüm adını değiştirin veya yeni proje seçerek bir Git deposuna eklemek de isteğe bağlı olarak seçebilirsiniz **kaynak denetimine Ekle**.
-
-4. Seçin **Tamam** çözüm ve proje oluşturma düğmesi.
-
-5. Ek bir proje çözüme eklemek istiyorsanız çözüm düğümü seçin **Çözüm Gezgini**ve ardından menü çubuğunda, **proje** > **Add New Item**.
+Bir şablondan yeni bir proje oluşturma hakkında daha fazla bilgi için bkz: [Visual Studio'da yeni proje oluşturma](create-new-project.md).
 
 ## <a name="create-a-project-from-existing-code-files"></a>Varolan kod dosyalarından proje oluşturma
 
@@ -88,12 +61,26 @@ Bir kod kaynak dosyaları koleksiyonunu varsa, bunları projeye bir kolayca ekle
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Belirli bir .NET Framework sürümünü hedefleyen bir .NET projesi oluşturma
 
-Bir proje oluşturduğunuzda, projeyi kullanacak şekilde istediğiniz .NET Framework'ün belirli bir sürümünü belirtebilirsiniz. Bir .NET framework sürümünü belirtmek için **Framework** açılan menüde **yeni proje** iletişim kutusu.
+Bir proje oluşturduğunuzda, projeyi kullanacak şekilde istediğiniz .NET Framework'ün belirli bir sürümünü belirtebilirsiniz.
+
+::: moniker range="vs-2017"
+
+Bir .NET framework sürümünü belirtmek için **Framework** açılan menüde **yeni proje** iletişim kutusu.
 
 ![Framework açılan yeni proje iletişim kutusunda](./media/vside-newproject-framework.png)
 
 > [!NOTE]
 > .NET Framework sürümlerini .NET Framework 4'den önceki erişmek için .NET Framework 3.5 yüklü olmalıdır.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Bir .NET framework sürümünü belirtmek için **Framework** açılan menüsünde **yeni bir proje oluşturma** sayfası.
+
+![Framework seçicide yeni proje yapılandırma](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
 
 ## <a name="create-empty-solutions"></a>Boş Çözüm oluşturma
 
@@ -101,13 +88,27 @@ Projeleri olmayan boş çözümleri oluşturabilirsiniz. Bu durumda, çözümün
 
 ### <a name="to-create-an-empty-solution"></a>Boş bir çözüm oluşturmak için
 
-1. Menüsünde **dosya** > **yeni** > **proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. Sol (**şablonları**) bölmesinde seçin **diğer proje türleri** > **Visual Studio çözümleri** genişletilmiş listeden.
+::: moniker range="vs-2017"
 
-1. Orta bölmede seçin **boş çözüm**.
+2. Sol (**şablonları**) bölmesinde seçin **diğer proje türleri** > **Visual Studio çözümleri** genişletilmiş listeden.
 
-1. Girin **adı** ve **konumu** seçin, çözümünüz için değerler **Tamam**.
+3. Orta bölmede seçin **boş çözüm**.
+
+4. Girin **adı** ve **konumu** çözümünüz için değerleri ve ardından **Tamam**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Üzerinde **yeni bir proje oluşturma** sayfasında **çözüm** kartındaki arama kutusuna.
+
+3. Seçin **boş çözüm** şablonu ve ardından **sonraki**.
+
+4. Girin **adı** ve **konumu** çözümünüz için değerleri ve ardından **Oluştur**.
+
+::: moniker-end
 
 Boş bir çözüm oluşturduğunuzda, yeni veya var olan proje veya öğe için seçerek ekleyebileceğiniz **Yeni Öğe Ekle** veya **varolan öğeyi Ekle** üzerinde **proje** menüsü.
 
@@ -132,13 +133,13 @@ Geçici bir proje oluşturmak için ilk Git **Araçları** > **seçenekleri** > 
 > [!NOTE]
 > *.Suo* varsayılan dosya Gezgini Ayarları altında görüntülenmez gizli bir dosya dosyasıdır. Gizli dosyaları göstermek için **görünümü** dosya Gezgini'nde, seçim menüsünde **gizli öğeleri** onay kutusu.
 
-### <a name="to-permanently-delete-a-solution"></a>Bir çözümü kalıcı olarak silmek için
+### <a name="permanently-delete-a-solution"></a>Bir çözümü kalıcı olarak sil
 
 1. İçinde **Çözüm Gezgini**, sağ tıklama menüsünde silmek istediğiniz çözüm (bağlam menüsü), **klasörü dosya Gezgini'nde Aç**.
 
 1. Dosya Gezgini'nde, bir düzey yukarı gidin.
 
-1. Çözümü içeren klasörü seçin ve ardından **Sil** anahtarı.
+1. Çözümü içeren klasörü seçin ve sonra basın **Sil** anahtarı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

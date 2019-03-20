@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca0d4dd8a61b6f968dcb51fc07f2f38497d07f53
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943473"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268674"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
 
@@ -46,9 +46,7 @@ Kullanabileceğiniz **başvuru Yöneticisi** veya başka bir şirketin geliştir
 
 - **Gözat**, ile **son** alt.
 
-## <a name="add-and-remove-a-reference"></a>Bir başvuru ekleyip
-
-### <a name="to-add-a-reference"></a>Başvuru eklemek için
+## <a name="add-a-reference"></a>Bir başvuru ekleyin
 
 1. İçinde **Çözüm Gezgini**, sağ **başvuruları** veya **bağımlılıkları** düğüm ve **Başvuru Ekle**. Ayrıca proje düğümüne sağ tıklayın ve seçin **Ekle** > **başvuru**.
 
@@ -147,44 +145,27 @@ Bir proje hedef .NET Framework 4 ve başka bir proje daha önceki bir sürümü 
 
 Hedefleyen bir projeye [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] .NET Framework hedefleyen bir projeye bir proje başvurusu eklenemiyor ve bunun tersi de geçerlidir.
 
-## <a name="windows-tab"></a>Windows sekmesi
+## <a name="universal-windows-tab"></a>Evrensel Windows sekmesi
 
-**Windows** sekmesi çalıştırma hangi Windows işletim sistemleri platformlara özgü tüm SDK'ları listeler.
-
-Visual Studio'da bir WinMD dosyasını iki şekilde oluşturabilirsiniz:
-
-- **Windows 8.x Store uygulaması yönetilen projeleri**: Windows 8.x Store uygulaması projeleri WinMD ikili dosyalarını çıktı ayarlayarak **proje özellikleri** > **Output Type = WinMD File**. WinMD dosya adı, içinde varolan tüm alan adlarının üst küme alan adı olmalıdır. Örneğin, bir proje ad alanları oluşuyorsa `A.B` ve `A.B.C`, verilen WinMD için olası adlar *A.winmd* ve *A.B.winmd*. Bir kullanıcı girerse bir **proje özellikleri** > **derleme adı** veya **proje özellikleri** > **Namespace**projedeki ad alanları kümesinden kopuk değer veya bir proje içinde hiçbir üst küme ad alanı, bir derleme uyarısı oluşturulur: "'A.winmd' Bu derleme için geçerli bir .winmd bir dosya adı değil." Bir Windows Meta Veri dosyası içindeki tüm türler, dosya adının bir alt ad alanında mevcut olmalıdır. Dosya adının alt ad alanında mevcut olmayan türler çalışma zamanında mümkün olmayacaktır. Bu derlemede, en küçük ortak ad alanıdır `CSWSClassLibrary1`. Bir masaüstü Visual Basic veya C# projesi yalnızca birinci Winmd'ler bilinir, Windows 8 SDK kullanılarak oluşturulmuş Winmd'lerin kullanabilir ve winmd oluşturamaz.
-
-- **Windows 8.x Store uygulaması yerel projeleri**: Yerel bir WinMD dosyası yalnızca meta verilerden oluşur. Uygulaması ayrı bir DLL dosyası içinde var olur. Bir üretebilir yerel ikili dosyaları Windows çalışma zamanı bileşeni proje şablonu seçilerek **yeni proje** iletişim kutusu ya da boş bir projeden başlatarak ve bir WinMD dosyası oluşturmak için proje özelliklerini değiştirme. Proje kopuk ad alanlarından oluşuyorsa, bir yapı hatası kullanıcıya ad alanlarını birleştirmesi veya MSMerge aracını çalıştırması gerektiğini söyler.
-
-**Windows** sekmesi iki alt gruptan oluşur.
+**Evrensel Windows** sekmesi çalıştırma hangi Windows işletim sistemleri platformlara özgü tüm SDK'ları listeler.
+Bu sekme, iki alt gruptan sahiptir: **Çekirdek** ve **uzantıları**.
 
 ### <a name="core-subgroup"></a>Çekirdek alt grubu
 
-**Çekirdek** alt hedeflenen Windows sürümü için SDK içindeki winmd'lerin (Windows çalışma zamanı öğelerini için) tüm listeler.
-
-Windows 8.x Store uygulaması projeleri, proje oluşturma sırasında varsayılan olarak Windows 8 SDK içindeki Winmd'lerin tümüne başvurular içerir. Yönetilen projelerde altındaki bir salt okunur düğüm **başvuruları** klasöründe **Çözüm Gezgini** tüm Windows 8 SDK'sına yönelik başvuruyu belirtir. Buna **çekirdek** alt gruba **başvuru Yöneticisi** Windows 8 SDK'sı derlemelerin hiçbirini numaralandırmaz ve bunun yerine bir ileti görüntüler: "Windows SDK'sı zaten başvuruldu. Lütfen nesne tarayıcısı Windows SDK'sındaki başvuruları araştırmak için kullanın."
-
-Masaüstü projelerinde **çekirdek** alt grup, varsayılan olarak görünmez. Windows çalışma zamanı proje düğümü için kısayol menüsünü açarak ekleyebilirsiniz seçme **projeyi**, aşağıdaki kod parçacığını ekleyerek ve projeyi yeniden açarak (proje düğümünü seçin **projeyiyenidenyükle**). Çağırdığınızda **başvuru Yöneticisi** iletişim kutusu, **çekirdek** alt grubu görünür.
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-Seçtiğinizden emin olun **Windows** bu alt grupta onay kutusu. Bundan sonra Windows Çalışma Zamanı öğelerini kullanabilmeniz gerekir. Ancak, aynı zamanda eklemek isteyebilirsiniz <xref:System.Runtime>, Windows çalışma zamanı bazı standart sınıfları ve arabirimleri gibi tanımlayan içinde <xref:System.Collections.IEnumerable>, Windows çalışma zamanı kitaplıklarının her yerinde kullanılır. Ekleme hakkında daha fazla bilgi için <xref:System.Runtime>, bkz: [yönetilen Masaüstü uygulamaları ve Windows çalışma zamanı](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
+Evrensel Windows uygulaması projeleri, varsayılan olarak Evrensel Windows SDK'sına bir başvuru sahiptir. Buna **çekirdek** alt gruba **başvuru Yöneticisi** Evrensel Windows SDK'sı derlemelerin hiçbirini numaralandırma değildir.
 
 ### <a name="extensions-subgroup"></a>Uzantılar alt grubu
 
-**Uzantıları** kullanıcı hedeflenen Windows platformunu genişleten bir SDK'ları listeler. Bu sekme, Windows 8.x Store uygulaması projeleri için yalnızca görünür. Masaüstü projeleri yalnızca birinci taraf tüketebildiğinden Bu sekme Göster olmaz *.winmd* dosyaları.
+**Uzantıları** kullanıcı hedeflenen Windows platformunu genişleten bir SDK'ları listeler.
 
-SDK, Visual Studio'nun tek bir bileşen olarak kabul ettiği dosyalar topluluğudur. İçinde **uzantıları** sekmesi, proje için geçerli bir SDK'ları **başvuru Yöneticisi** iletişim kutusunun çağrıldığı tek varlıklar halinde listelenir. Bir projeye eklendiğinde SDK içeriğinin tümü kullanılır Visual Studio tarafından kullanıcının IntelliSense, araç kutusu, tasarımcılar, içinde SDK içeriğinden yararlanmak için gereken diğer işlemleri olması gerekmez, nesne tarayıcısı, yapı, dağıtım, hata ayıklama ve paketleme. SDK'nıza görüntüleme hakkında bilgi için **uzantıları** sekmesinde bkz [yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md).
+SDK, Visual Studio'nun tek bir bileşen olarak kabul ettiği dosyalar topluluğudur. İçinde **uzantıları** sekmesi, proje için geçerli bir SDK'ları **başvuru Yöneticisi** iletişim kutusunun çağrıldığı tek varlıklar halinde listelenir. Bir projeye eklendiğinde SDK içeriğinin tümü kullanılır Visual Studio tarafından kullanıcının IntelliSense, araç kutusu, tasarımcılar, içinde SDK içeriğinden yararlanmak için gereken diğer işlemleri olması gerekmez, nesne tarayıcısı, yapı, dağıtım, hata ayıklama ve paketleme.
+
+SDK'nıza görüntüleme hakkında bilgi için **uzantıları** sekmesinde bkz [yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Bir proje, başka bir SDK'ya bağımlı bir SDK'ya başvuruda bulunursa, kullanıcı el ile ikinci SDK'sına bir başvuru eklemediği sürece Visual Studio ikinci SDK'sı tüketmezsiniz. Ne zaman bir kullanıcının seçtiği bir SDK'sı üzerinde **uzantıları** sekmesinde **başvuru Yöneticisi** iletişim kutusu yalnızca adı ve SDK sürüm aynı zamanda tüm SDK adı listeleyerek SDK bağımlılıklarını tanımlamak kullanıcı yardımcı olur Ayrıntılar bölmesinde bağımlılıkları. Bir kullanıcı bağımlılıkları fark etmez ve yalnızca SDK'sı, MSBuild kullanıcıdan bağımlılıkları eklemesini ister ekler.
+> Bir proje, başka bir SDK'ya bağımlı bir SDK'ya başvuruda bulunursa, Visual Studio ikinci SDK'sına bir başvuru el ile eklemediğiniz sürece ikinci SDK'yı kullanmaz. Ne zaman bir kullanıcının seçtiği bir SDK'sı üzerinde **uzantıları** sekmesinde **başvuru Yöneticisi** iletişim kutusu, herhangi bir bağımlılığın Ayrıntılar bölmesinde listeleyerek SDK bağımlılıklarını belirlemenize yardımcı olur.
 
-Bir proje türü uzantıları desteklemiyorsa, sekmesinde görünmez **başvuru Yöneticisi** iletişim kutusu.
+Bu sekme görünür olmayan bir proje türü uzantıları desteklemiyorsa, **başvuru Yöneticisi** iletişim kutusu.
 
 ## <a name="com-tab"></a>COM sekmesi
 
