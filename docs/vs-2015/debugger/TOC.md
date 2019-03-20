@@ -1,5 +1,4 @@
 # [Visual Studio’da hata ayıklama](debugging-in-visual-studio.md)
-# [Visual Studio 2015'te Hata Ayıklayıcısı Yenilikleri](what’s-new-for-the-debugger-in-visual-studio-2015.md)
 # [Hata Ayıklayıcısı Temel Bilgileri](debugger-basics.md)
 ## [Hata Ayıklayıcısını Kullanmaya Başlama](getting-started-with-the-debugger.md)
 ## [Hata Ayıklayıcısı ile Kodlarda gezinme](navigating-through-code-with-the-debugger.md)
