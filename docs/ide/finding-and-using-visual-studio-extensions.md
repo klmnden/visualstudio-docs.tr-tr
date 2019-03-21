@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8815e4cf58703efa0ab092f6030f6eeb22a813cd
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983396"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268540"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio uzantıları bulma ve kullanma
 
@@ -141,7 +141,7 @@ Bu bildirimleri gösterilirken, bildirim Yoksay veya aşağıdaki eylemlerden bi
 
 Çevrimiçi bir örneği yüklediğinizde, çözüm iki konumda depolanır:
 
-- Belirtilen konumda bir çalışma kopyası depolanır **yeni proje** iletişim kutusu.
+- Bir çalışma kopyası, projeyi oluşturduğunuzda, belirttiğiniz konumda depolanır.
 
 - Ayrı bir ana kopya bilgisayarınızda depolanır.
 
@@ -163,7 +163,7 @@ Kullanabileceğiniz **uzantıları yönetme** penceresi örneklerle ilgili şu g
 
 - Örnek Paketleri (bir teknoloji veya özellik ile ilgili örnek koleksiyonları) yükleyin.
 
-- Tek tek çevrimiçi örnekleri yükleyin. (Ayrıca bunu yapabilirsiniz **yeni proje** iletişim kutusu.)
+- Tek tek çevrimiçi örnekleri yükleyin.
 
 - Yüklü örnekler için kaynak kodu değişiklikleri yayımlandığında güncelleştirme bildirimlerini görüntüleyin.
 

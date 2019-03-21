@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195183"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268726"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ proje sistemi genişletilebilirlik ve araç takımı tümleştirmesi
 
@@ -416,7 +416,7 @@ Visual C++ proje sistemi dayanır [VS proje sistemi](https://github.com/Microsof
 
 ### <a name="project-property-pages"></a>Proje özellik sayfaları
 
-Genel tasarım bilgileri için bkz. [Platform genişletilebilirliği - 1. bölüm](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) ve [Platform genişletilebilirliği - 2. bölüm](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Genel tasarım için bilgi [VC ++ projeleri için Framework çoklu sürüm desteğinin](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
 Basit bir deyişle, özellik sayfaları gördüğünüz **proje özellikleri** iletişim kutusu için bir C++ projesi tarafından tanımlanan *kural* dosyaları. Bir kural dosyası bir özellik sayfasında göster ve nasıl ve bunlar projede kaydedileceği dosya için özellikler kümesini belirtir. Kural, Xaml biçimini kullanan .xml dosyaları dosyalarıdır. Bunları serileştirmek için kullanılan türleri açıklanan [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Kural proje dosyalarında kullanımı hakkında daha fazla bilgi için bkz. [özellik sayfası XML kural dosyaları](/cpp/build/reference/property-page-xml-files).
 
