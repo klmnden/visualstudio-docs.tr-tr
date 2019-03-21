@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925416"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324740"
 ---
 # <a name="warnings-and-errors"></a>Uyarıları ve hatalar
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925416"
   * [MaxCalls aşıldı](#maxcalls-exceeded)
   * [MaxStack aşıldı](#maxstack-exceeded)
   * [MaxRuns aşıldı](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests aşıldı](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests aşıldı](#maxrunswithoutnewtests-exceeded)
 
 * **Kısıtlama çözme**
-  * [Çözüm Somutlaştırılamıyor](#cannot-concretize-solution)<p />
+  * [Çözüm Somutlaştırılamıyor](#cannot-concretize-solution)
 
 * **etki alanları**
   * [Nesnesi oluşturmak için Yardım gerekiyor](#help-construct)
   * [Türleri bulmak için Yardım gerekiyor](#help-types)
-  * [Tahmin kullanılabilir türü](#usable-type-guessed)<p />
+  * [Tahmin kullanılabilir türü](#usable-type-guessed)
 
 * **Yürütme**
   * [Araştırma sırasında beklenmeyen hata](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **İzleme**
   * [İzlemesiz yöntemi çağrılır](#uninstrumented-method-called)
   * [Adlı dış yöntemi](#external-method-called)
   * [Adlı izlenemeyen yöntemi](#uninstrumentable-method-called)
   * [Test Edilebilirlik sorununu](#testability-issue)
-  * [Sınırlama](#limitation)<p />
+  * [Sınırlama](#limitation)
 
 * **Yorumlayıcı**
   * [Çağrı uyuşmazlığı gözlemlendi](#observed-call-mismatch)

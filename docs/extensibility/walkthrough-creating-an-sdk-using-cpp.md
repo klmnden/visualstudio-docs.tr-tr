@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689687"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325074"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>İzlenecek yol: C++ kullanarak SDK oluşturma
 Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı (VSIX) olarak SDK paketi oluşturma ve bir uygulama oluşturmak için kullanmak gösterir. İzlenecek yol, bu adımları ayrılmıştır:
@@ -135,7 +135,7 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
 
 17. İçinde **dosya Gezgini**, gitmek *$SolutionRoot$ \NativeMathVSIX\bin\Debug* klasörünü açın ve ardından Çalıştır *NativeMathVSIX.vsix* yüklemeyi başlatmak için.
 
-18. Seçin **yükleme** düğmesi, yüklemenin tamamlanmasını bekleyin ve sonra Visual Studio'yu başlatın.
+18. Seçin **yükleme** düğmesi, yüklemenin tamamlanmasını bekleyin ve sonra Visual Studio'yu açın.
 
 ##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için
 

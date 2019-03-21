@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9b893ce699dd86f309a05fad83560cc42439551
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619374"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323535"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties öğesi
   SharePoint'te dağıtıldığında bir özellikle birlikte eklenen özellik değerleri koleksiyonu. Bir özellik dağıtıldıktan sonra kodunuzdaki özellik değerlerine erişebilirsiniz.
@@ -55,7 +55,7 @@ ms.locfileid: "56619374"
 
 |Öğe|Açıklama|
 |-------------|-----------------|
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Şema adı**|SharePoint proje öğesi şema|
 |**Doğrulama dosyası**|ProjectItemModelSchema.xsd|
 |**Boş olabilir**|Hayır|

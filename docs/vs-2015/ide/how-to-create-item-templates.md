@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867940"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324766"
 ---
 # <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Adımları [ilk yordam](#to-add-a-custom-project-item-template-to-the-add-new-it
   
     Değerini bir C++ Windows 8.1 mağazası projesi kullanan `WinRT-Native-6.3`. Windows 10 ve diğer proje türleri için bkz: [Templategroupıd öğesi (Visual Studio şablonları)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    Aşağıdaki örnek, XML satırından sonra bir .vstemplate dosyasının tüm içeriğini gösterir `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` için eklendi. Bu örnek, C# projelerine özgüdür. Değiştirebileceğiniz <ProjectTpe> ve \< [Templategroupıd](../extensibility/templategroupid-element-visual-studio-templates.md)> diğer dil ve proje türlerini belirtmek için öğeleri.  
+    Aşağıdaki örnek, XML satırından sonra bir .vstemplate dosyasının tüm içeriğini gösterir `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` için eklendi. Bu örnek, C# projelerine özgüdür. Değiştirebileceğiniz \<ProjectType > ve \< [Templategroupıd](../extensibility/templategroupid-element-visual-studio-templates.md)> diğer dil ve proje türlerini belirtmek için öğeleri.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  

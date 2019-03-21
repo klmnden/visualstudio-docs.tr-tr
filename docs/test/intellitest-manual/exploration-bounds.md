@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952365"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325285"
 ---
 # <a name="exploration-bounds"></a>Keşif sınırları
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **Kısıtlama sınırları çözme**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) -saniye sayısını [kısıtlama Çözücü](input-generation.md#constraint-solver) izlenmesi yeni ve farklı yürütme yol açacak girişleri bulmak vardır.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) -boyutunu megabayt cinsinden, [kısıtlama Çözücü](input-generation.md#constraint-solver) girişleri bulmak için kullanabilirsiniz.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) -boyutunu megabayt cinsinden, [kısıtlama Çözücü](input-generation.md#constraint-solver) girişleri bulmak için kullanabilirsiniz.
 * **Araştırma yolu sınırları**
   * [MaxBranches](#maxbranches) -tek bir yürütme yol boyunca gerçekleştirilen dalları sayısı.
   * [MaxCalls](#maxcalls) -tek bir yürütme yolu sırasında yapılan çağrı sayısı.
   * [MaxStack](#maxstack) -bir tek bir yürütme yolu sırasında herhangi bir zamanda yığının en büyük boyutunu etkin çağrı çerçeve sayısı ölçülür.
-  * [MaxConditions](#maxconditions) -koşullar sırasında tek bir yürütme yolu denetlenebilir girişleri üzerinden sayısı.<p />
+  * [MaxConditions](#maxconditions) -koşullar sırasında tek bir yürütme yolu denetlenebilir girişleri üzerinden sayısı.
 * **Keşif sınırları**
   * [MaxRuns](#maxruns) -İnceleme sırasında denenecek çalıştırmalarının sayısı.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) -yayılan yeni bir test olmadan ardışık çalıştırma sayısı üst sınırı.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) -İnceleme sırasında denenecek benzersiz yürütme yolları ile çalıştırma sayısı üst sınırı.
-  * [Maxexceptions yapılandırma](#maxexceptions) -tüm bulunan yürütme yolları bileşimini bulunabilir özel durum sayısı.<p />
+  * [Maxexceptions yapılandırma](#maxexceptions) -tüm bulunan yürütme yolları bileşimini bulunabilir özel durum sayısı.
 * **Test paketi kodu oluşturma ayarları**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) -true olduğunda herhangi bir yol sınırları aşan yürütme yolları ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [ MaxConditions](#maxconditions)) göz ardı edilir.
   * [TestEmissionFilter](#testemissionfilter) -hangi koşullar altında testleri Intellitest yayma gösterir.

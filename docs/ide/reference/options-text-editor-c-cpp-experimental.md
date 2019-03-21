@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221401"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325220"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 
@@ -37,7 +37,7 @@ Bu özellikler, Visual Studio Kurulumu içinde kullanılabilir.
 
 ## <a name="enable-predictive-intellisense"></a>Tahmine dayalı IntelliSense'i etkinleştir
 
-Tahmine dayalı IntelliSense bağlamında ilgili sonuçları görebilmesi için IntelliSense açılan listede görüntülenen sonuçların sayısını sınırlar. Örneğin, <code>int x =</code> ve IntelliSense açılan çağırmak, yalnızca tamsayılar ya da, tamsayı döndüren işlevlere görürsünüz. Tahmine dayalı IntelliSense, varsayılan olarak kapalıdır.
+Tahmine dayalı IntelliSense bağlamında ilgili sonuçları görebilmesi için IntelliSense açılan listede görüntülenen sonuçların sayısını sınırlar. Örneğin, `int x =` ve IntelliSense açılan çağırmak, yalnızca tamsayılar ya da, tamsayı döndüren işlevlere görürsünüz. Tahmine dayalı IntelliSense, varsayılan olarak kapalıdır.
 
 ::: moniker range="vs-2017"
 

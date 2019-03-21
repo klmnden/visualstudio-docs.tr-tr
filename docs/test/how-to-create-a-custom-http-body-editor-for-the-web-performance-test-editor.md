@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 83bf334aa7fa04b6dea9ec9181d602e40ba83d41
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069898"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325035"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Nasıl yapılır: Özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma
 
@@ -285,7 +285,7 @@ Dize gövdesinin düzenlenmesi tamamlandığında ve kullanıcı **Tamam** eklen
    > [!NOTE]
    > Visual Studio kapatıldıktan emin olur *.dll* kopyalamak denemeden önce dosya kilitli değil.
 
-3. Ortaya çıkan kopyalama *.dll* projenizin dosyasından *bin\debug* klasöre (örneğin, *MessageEditors.dll*) için *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Ortaya çıkan kopyalama *.dll* projenizin dosyasından *bin\debug* klasöre (örneğin, *MessageEditors.dll*) için *%ProgramFiles%\Microsoft Visual Studio\2017\\\<sürümü > \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Visual Studio'yu açın.
 

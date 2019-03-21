@@ -12,6 +12,8 @@ manager: jillfra
 
 Profil oluşturma ve tanılama araçları bellek ve CPU kullanımı ve diğer uygulama düzeyi sorunları tanılamanıza yardımcı olur. Bu araçları ile hata ayıklayıcıda uygulamanızı çalıştırdığınız zaman içinde verileri (örneğin, değişken değerleri, işlev çağrıları ve olayları) birikebilir. Kodunuzun yürütülmesi sırasında farklı noktalarda, uygulamanızın durumunu görüntüleyebilirsiniz.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour">

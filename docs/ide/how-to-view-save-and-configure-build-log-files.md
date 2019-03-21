@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925234"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323876"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma
 
@@ -53,7 +53,7 @@ MSBuild kullanarak herhangi bir türden proje oluşturuyorsanız, oluşturabilec
      Daha fazla bilgi için [Seçenekler iletişim kutusu, projeler ve çözümler, derleme ve çalıştırma](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) ve <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Proje etkili olması yaptığınız değişiklikleri için yeniden oluşturmanız gerekir **çıkış** penceresi (tüm projeler) ve  *<ProjectName>.txt* dosyası (yalnızca C++ projeleri için).
+    > Proje etkili olması yaptığınız değişiklikleri için yeniden oluşturmanız gerekir **çıkış** penceresi (tüm projeler) ve  *\<ProjectName > .txt* dosyası (yalnızca C++ projeleri için).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

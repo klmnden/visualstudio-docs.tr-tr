@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio, analiz ve kod kalitesini artırmak için çeşitli araçlar sağlar.
 
+<!-- markdownlint-disable MD033 -->
+
 <br />
 
 <ul class="panelContent cardsFTitle">

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fbe819a13466c3b67f34b0de9d7e60e10aaa57b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936193"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324792"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio'da R projeleri oluşturma
 
@@ -23,9 +23,9 @@ Projeleri Visual Studio'da her zaman yönetilen *çözüm*, herhangi bir sayıda
 
 ## <a name="creating-a-new-r-project"></a>Yeni bir R projesi oluşturma
 
-1. Visual Studio’yu çalıştırın.
-1. Seçin **Dosya > Yeni > Proje...** (**Ctrl**+**Shift**+**N**)
-1. "R" altındaki projenizi **şablonları > R**, projeye bir ad ve konum verin ve seçin **Tamam**:
+1. Visual Studio'yu açın.
+1. Seçin **Dosya > Yeni > Proje** (**Ctrl**+**Shift**+**N**)
+1. "R" altındaki projenizi **şablonları** > **R**, projeye bir ad ve konum verin ve seçin **Tamam**:
 
     ![R (vs2017 RTVS) Visual Studio'da yeni proje iletişim kutusu](media/getting-started-01-new-project.png)
 

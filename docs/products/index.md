@@ -6,6 +6,7 @@ description: 'Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar i
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Visual Studio ürünleri için belgeleri</h1>

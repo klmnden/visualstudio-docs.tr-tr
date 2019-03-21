@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca0d4dd8a61b6f968dcb51fc07f2f38497d07f53
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268674"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322330"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Nasıl yapılır: Başvuru Yöneticisi’ni kullanarak başvuru ekleme veya kaldırma
 
@@ -183,11 +183,11 @@ Aynı çözümdeki başka bir projenin çıktılarına dosya başvuruları eklem
 
 Bir SDK'ye göz atamaz ve projenize ekleyin. Yalnızca bir dosyaya göz atabilirsiniz (örneğin, bir derleme veya *.winmd*) ve projenize ekleyin.
 
-Bir Winmd'ye dosya başvurusu yaparken olan beklenen Düzen  *<FileName>.winmd*,  *<FileName>.dll*, ve  *<FileName>.pri* dosyalar Tüm diğer yanı sıra yerleştirilir. Aşağıdaki senaryolarda bir WinMD'ye başvuruda bulunursanız, proje çıkış dizinine eksik bir dosya kümesi kopyalanır ve sonuç olarak, derleme ve çalışma zamanı hataları meydana gelir.
+Bir Winmd'ye dosya başvurusu yaparken olan beklenen Düzen  *\<FileName > .winmd*,  *\<FileName > .dll*, ve  *\< Dosya adı > .pri* dosyaları tüm yanı sıra yerleştirilmesidir. Aşağıdaki senaryolarda bir WinMD'ye başvuruda bulunursanız, proje çıkış dizinine eksik bir dosya kümesi kopyalanır ve sonuç olarak, derleme ve çalışma zamanı hataları meydana gelir.
 
-- **Yerel bileşen**: yerel bir proje her kopuk ad alanları kümesi için tek bir WinMD ve uygulamayı içeren bir DLL oluşturur. WinMD'ler ayrı adlara sahip olur. Bu yerel bileşen dosyasına başvururken, benzemeyecek şekilde adlandırılmış Winmd'lerin tek bileşen olun MSBuild tanımaz. Sonuç olarak, yalnızca aynı adlı  *<FileName>.dll* ve  *<FileName>.winmd* kopyalanır, ve çalışma zamanı hataları oluşur. Bu sorunu geçici olarak çözmek için uzantı SDK oluşturun. Daha fazla bilgi için [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Yerel bileşen**: yerel bir proje her kopuk ad alanları kümesi için tek bir WinMD ve uygulamayı içeren bir DLL oluşturur. WinMD'ler ayrı adlara sahip olur. Bu yerel bileşen dosyasına başvururken, benzemeyecek şekilde adlandırılmış Winmd'lerin tek bileşen olun MSBuild tanımaz. Sonuç olarak, yalnızca aynı adlı  *\<FileName > .dll* ve  *\<FileName > .winmd* kopyalanır, ve çalışma zamanı hataları oluşur. Bu sorunu geçici olarak çözmek için uzantı SDK oluşturun. Daha fazla bilgi için [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Denetimleri tüketen**: en az bir XAML denetimi oluşan bir  *<FileName>.winmd*,  *<FileName>.dll*,  *<FileName>.pri*,  *<XamlName>.xaml*ve bir  *<ImageName>.jpg*. Proje oluşturulduğunda, dosya başvurusu ile ilişkili kaynak dosyalar projenin çıkış dizinine kopyalanmaz ve yalnızca vermeyeceğiz  *<FileName>.winmd*,  *<FileName>.dll*ve  *<FileName>.pri* kopyalanır. Bir yapı hatası kullanıcıya bildirmek için oturum açmış olan kaynakları  *<XamlName>.xaml* ve  *<ImageName>.jpg* eksik. Başarılı olması için, kullanıcının bu kaynak dosyaları oluşturma ve hata ayıklama/çalışma zamanı için proje çıkış dizinine el ile kopyalaması gerekir. Bu sorunu geçici olarak çözmek için ya da bir uzantı SDK'sı adımları izleyerek oluşturun, [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md) veya aşağıdaki özellik eklemek için proje dosyasını düzenleyin:
+- **Denetimleri kullanma**: en az bir XAML denetimi oluşan bir  *\<FileName > .winmd*,  *\<FileName > .dll*,  *\<FileName > .pri*,  *\<XamlName > .xaml*ve bir  *\<IMAGENAME > .jpg*. Proje oluşturulduğunda, dosya başvurusu ile ilişkili kaynak dosyalar projenin çıkış dizinine kopyalanmaz ve yalnızca vermeyeceğiz  *\<FileName > .winmd*,  *\<dosya adı > .dll* ve  *\<FileName > .pri* kopyalanır. Bir yapı hatası kullanıcıya bildirmek için oturum açmış olan kaynakları  *\<XamlName > .xaml* ve  *\<IMAGENAME > .jpg* eksik. Başarılı olması için, kullanıcının bu kaynak dosyaları oluşturma ve hata ayıklama/çalışma zamanı için proje çıkış dizinine el ile kopyalaması gerekir. Bu sorunu geçici olarak çözmek için ya da bir uzantı SDK'sı adımları izleyerek oluşturun, [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md) veya aşağıdaki özellik eklemek için proje dosyasını düzenleyin:
 
     ```xml
     <PropertyGroup>

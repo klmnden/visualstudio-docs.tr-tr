@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875725"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324506"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Uzantıları Visual Studio'da SharePoint araçları için hata ayıklama
   SharePoint araç uzantıları deneysel örneğinde veya normal örneğinde Visual Studio'nun hata ayıklaması yapabilirsiniz. Uzantının davranış sorun gidermeniz gerekiyorsa, ek hata bilgileri görüntülemek ve Visual Studio'nun SharePoint komutlarını nasıl yürüteceğini yapılandırmak için kayıt defteri değerlerini de değiştirebilirsiniz.
@@ -56,7 +56,7 @@ ms.locfileid: "54875725"
 
 #### <a name="to-debug-the-extension"></a>Uzantının hatalarını ayıklamak için
 
-1.  Visual Studio'yu yönetici ayrıcalıklarıyla başlatın ve uzantı projesini açın. Aşağıdaki adımları olarak Visual Studio'nun bu örneğine başvurmaktadır *ilk örnek*.
+1.  Visual Studio'yu yönetici ayrıcalıklarıyla açın ve uzantı projesini açın. Aşağıdaki adımları olarak Visual Studio'nun bu örneğine başvurmaktadır *ilk örnek*.
 
 2.  Başka bir örneği Visual Studio'nun yönetici ayrıcalıklarıyla başlatın. Aşağıdaki adımları olarak Visual Studio'nun bu örneğine başvurmaktadır *ikinci örneğini*.
 

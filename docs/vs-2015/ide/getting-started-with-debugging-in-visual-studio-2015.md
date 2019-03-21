@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764854"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324779"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015'te Hata Ayıklamaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 proje derleme ve hata ayıklama araçları, güçlü tümleş
 
  Kullanmanız yeterlidir, başlangıç **hata ayıklama** ve **x86** derleme yapılandırması ve platformu, sırasıyla. Kodlama ve hata ayıklama işiniz bittiğinde yapılandırmayı değiştirmek **yayın** ve belirli bir platforma hedefleyebilirsiniz. (Sağlanan Visual Studio'nun eski sürümlerini bir **AnyCPU** .Net kod projeleri için varsayılan platform.)
 
- Not: Projenizi yapılandırdığınızda, yapılandırma ve platform değerler hangi proje dizin yolu yürütülebilir depolamak için oluşturduğunuz belirlemek için de kullanılır. Bu genellikle  **\<yolu Proje >\\< proje adı >\\< yapılandırma\>\\< platform\>**. Örneğin, proje yapılandırmasıyla `Debug` ve bir platformda `x86` altında bulunabilir `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Bu, kendi araçları veya bu yerleşik yürütülebilir dosyaları yönetme betikleriniz varsa yararlı olabilir.
+ Not: Projenizi yapılandırdığınızda, yapılandırma ve platform değerler hangi proje dizin yolu yürütülebilir depolamak için oluşturduğunuz belirlemek için de kullanılır. Bu genellikle  **\<yolu Proje >\\< proje adı\>\\< yapılandırma\>\\< platform\>**. Örneğin, proje yapılandırmasıyla `Debug` ve bir platformda `x86` altında bulunabilir `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Bu, kendi araçları veya bu yerleşik yürütülebilir dosyaları yönetme betikleriniz varsa yararlı olabilir.
 
 ### <a name="building-your-code"></a>Kod oluşturma
  Yapınızı ile yapılandırılmış, aslında derleme zamanı geldi. F7, ancak basmak için bunu yapmanın en kolay yolu da yapı seçerek başlatabilirsiniz **Yapı Çözümü Derle ->** ana menüden.

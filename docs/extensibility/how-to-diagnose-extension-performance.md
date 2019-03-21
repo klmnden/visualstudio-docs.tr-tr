@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707074"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323691"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Başlangıç uzantısı etkileri ölçme
 
@@ -74,11 +74,11 @@ Zaman uyumsuz paketi yükleme ve zaman uyumsuz g/ç API'leri kullanarak ana iş 
 
 Paket başlatma ortak yaklaşımlar biri tarafından kullanılan veya bu pakette bir paket tarafından sağlanan hizmetleri başlatmak için `constructor` veya `initialize` yöntemi. Bu hizmetleri kullanılmaya hazır olmasını sağlar, ancak bu hizmetlere hemen kullanılmıyorsa yükleme paketini gereksiz maliyeti de ekleyebilirsiniz. Bunun yerine paket başlatmanın çalışmayı en aza indirmek için isteğe bağlı tür hizmetlerin başlatılması gerekir.
 
-Bir paketi tarafından sağlanan küresel hizmetler için kullandığınız `AddService` yöntemleri yalnızca bir bileşen tarafından istendiğinde gevşek hizmeti başlatmak için bir işlevi alır. Lazy kullanabileceğiniz paket içinde kullanılan hizmetler için<T> veya AsyncLazy<T> Hizmetleri başlatılmış/sorgulanan ilk kullanımda olduğundan emin olmak için.
+Bir paketi tarafından sağlanan küresel hizmetler için kullandığınız `AddService` yöntemleri yalnızca bir bileşen tarafından istendiğinde gevşek hizmeti başlatmak için bir işlevi alır. Lazy kullanabileceğiniz paket içinde kullanılan hizmetler için\<T > ya da AsyncLazy\<T > Hizmetleri başlatılmış/sorgulanan ilk kullanımda olduğundan emin olmak için.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Etkinlik günlüğü kullanarak uzantılara otomatik etkisini ölçmek yüklendi
 
-Visual Studio 2017 güncelleştirme 3'te başlayarak, Visual Studio etkinlik günlüğü artık girişleri performans etkisini paketleri için başlangıç ve çözüm yükleme sırasında içerir. Bu ölçümler görmek için Visual Studio'yu/log anahtarı ile başlatın ve açmak sahip *ActivityLog.xml* dosya.
+Visual Studio 2017 güncelleştirme 3'te başlayarak, Visual Studio etkinlik günlüğü artık girişleri performans etkisini paketleri için başlangıç ve çözüm yükleme sırasında içerir. Bu ölçümler görmek için/log anahtarı ile Visual Studio'yu açın ve açmak sahip *ActivityLog.xml* dosya.
 
 Etkinlik günlüğü'ndeki girişleri altında "Visual Studio performansını Yönet" kaynağı olur ve aşağıdaki örnekteki gibi görünecektir:
 
@@ -141,9 +141,9 @@ Yüklü uzantınız ile Visual Studio ortamınızı ayarladıktan sonra PerfView
 
 ![perfview toplama menüsü](media/perfview-collect-menu.png)
 
-CPU tüketimi için varsayılan seçenekleri çağrı yığınları sağlar ancak biz de engelleme sürede ilgi olduğundan, ayrıca etkinleştirmelisiniz **iş parçacığı zaman** yığınları. Ayarları hazır olduğunuzda tıklayabilirsiniz **toplamaya Başla** ve kayıt başlatıldıktan sonra Visual Studio'yu başlatın.
+CPU tüketimi için varsayılan seçenekleri çağrı yığınları sağlar ancak biz de engelleme sürede ilgi olduğundan, ayrıca etkinleştirmelisiniz **iş parçacığı zaman** yığınları. Ayarları hazır olduğunuzda tıklayabilirsiniz **toplamaya Başla** ve ardından başlatır kaydettikten sonra Visual Studio'yu açın.
 
-Koleksiyon durdurmadan önce Visual Studio tamamen başlatılır, otomatik olarak gösteren bir UI parçalarını uzantınız varsa bunlar da görülebilir ve, ana pencereyi tamamen görünür olduğundan emin olmanız gerekir. Visual Studio tamamen yüklendikten sonra uzantınızı başlatılır, izlemeyi analiz etmek için kaydı durdurabilirsiniz.
+Koleksiyon durdurmadan önce Visual Studio tamamen başlatılır, otomatik olarak gösteren bir UI parçalarını uzantınız varsa bunlar da görülebilir ve, ana pencereyi tamamen görünür olduğundan emin olmanız gerekir. Visual Studio tamamen yüklendikten ve uzantınızı başlatılır, izlemeyi analiz etmek için kaydı durdurabilirsiniz.
 
 **Bir izleme PerfView ile analiz ediliyor:**
 

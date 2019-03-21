@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719489"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324350"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Nasıl yapılır: Uzantılardan kaynaklanan kullanıcı arabirimi gecikmelerini tanılama
 
@@ -43,7 +43,7 @@ UI gecikmesi tanılamak için öncelikle hangi (bir dizi eylem) bildirim göster
 
 ## <a name="restart-vs-with-activity-logging-on"></a>VS oturum açma etkinliği ile yeniden başlatın
 
-Visual Studio "etkinlik günlüğü" oluşturabileceği bir sorun hata ayıklama sırasında yararlı bilgiler sağlar. Etkinlik Visual Studio'da oturum açmak için Visual Studio ile hayat `/log` komut satırı seçeneği. Visual Studio başlatıldıktan sonra etkinlik günlüğü şu konumda depolanır:
+Visual Studio "etkinlik günlüğü" oluşturabileceği bir sorun hata ayıklama sırasında yararlı bilgiler sağlar. Etkinlik Visual Studio'da oturum açmak için Visual Studio ile açın. `/log` komut satırı seçeneği. Visual Studio başlatıldıktan sonra etkinlik günlüğü şu konumda depolanır:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227585"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323444"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visual Studio Enterprise'da IntelliTrace ile olayları görüntüleme (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ Yalnızca IntelliTrace olayları ile hata ayıklama deneyebilirsiniz. IntelliTra
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Hata ayıklamayı başlatmak ve IntelliTrace olaylarını görüntüleme
 
-1. Zamanki gibi hata ayıklamaya başlayın. (Tuşuna **F5** veya **hata ayıklama > hata ayıklamayı Başlat**.
+1. Zamanki gibi hata ayıklamaya başlayın. (Tuşuna **F5** veya **hata ayıklama > hata ayıklamayı Başlat**.)
 
     > [!TIP]
     > Tutun **Yereller** ve **Otolar** windows görmek ve bu pencerelerde değerlerini kaydetmek için hata ayıklarken açın.

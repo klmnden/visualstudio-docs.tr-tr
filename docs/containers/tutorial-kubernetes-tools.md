@@ -5,14 +5,15 @@ ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: jillfra
+ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 0e9640547b9ab0020fcbfb6e82fb0df6a777618b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dbb372a042bc92421d1c7a60a5d0505a56ccbb00
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867361"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325168"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
@@ -55,7 +56,7 @@ Uygun araçları yüklü oluşturduktan sonra Visual Studio'yu başlatın ve yen
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 
-Visual Studio Başlangıç penceresinde, arama *Kubernetes*ve **Kubernetes için kapsayıcı uygulama**.
+Visual Studio Başlangıç penceresinde arama *Kubernetes*ve **Kubernetes için kapsayıcı uygulama**.
 
 ![Yeni bir Kubernetes uygulama projesi oluşturma işleminin ekran görüntüsü](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
 
@@ -136,7 +137,7 @@ Bunu yapmak için önce her şeyi açıklandığı yüklediğinizi sağlayamazsa
 
    ![Menü öğesi, ekran yayımlama](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. İçinde **Yayımla** ekran öğesini **kapsayıcı kayıt defteri** Yayımla olarak hedef ve kapsayıcı kayıt defterinizde seçmek için istemleri takip edin. Bir kapsayıcı kayıt defterinde yoksa seçin **yeni Azure Container Registry oluşturma** Visual Studio'dan oluşturma. Daha fazla bilgi için [kapsayıcınızı Azure Container Registry'ye yayımlama](vs-azure-tools-docker-hosting-web-apps-in-docker.md#2-publish-your-container-to-azure-container-registry).
+2. İçinde **Yayımla** ekran öğesini **kapsayıcı kayıt defteri** Yayımla olarak hedef ve kapsayıcı kayıt defterinizde seçmek için istemleri takip edin. Bir kapsayıcı kayıt defterinde yoksa seçin **yeni Azure Container Registry oluşturma** Visual Studio'dan oluşturma. Daha fazla bilgi için [kapsayıcınızı Azure Container Registry'ye yayımlama](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
 
    ![Çekme Yayımla hedef ekran görüntüsü](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

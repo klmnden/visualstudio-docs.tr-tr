@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526782"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325337"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Yalnızca kullanıcı kodunu yalnızca kendi kodum ile hata ayıklama
 
@@ -115,7 +115,7 @@ Hata ayıklayıcısı özel bir durum olursa, kullanıcı veya kullanıcı olmay
 C++ projeleri için modüller, kaynak dosyaları ve işlevleri belirtebilirsiniz **çağrı yığını** penceresi, bunları belirterek kullanıcı olmayan kod olarak değerlendirir  *\*.natjmc* dosyaları. Bu özelleştirme en son derleyiciyi kullanıyorsanız atlama kodu için de geçerlidir (bkz [C++ Yalnızca benim kodum](#BKMK_CPP_User_and_non_user_code)).
 
 - Kullanıcı dışı kod için Visual Studio makinenin tüm kullanıcıları belirtmek için *.natjmc* dosyasını *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* klasör.
-- Bir kullanıcı için kullanıcı olmayan kod belirtmek için *.natjmc* dosyasını *%USERPROFILE%\My belgeleri\\<Visual Studio version>\Visualizers* klasör.
+- Bir kullanıcı için kullanıcı olmayan kod belirtmek için *.natjmc* dosyasını *%USERPROFILE%\My belgeleri\\< Visual Studio sürümü\>\Visualizers* klasör.
 
 A *.natjmc* dosyasıdır bu söz dizimi olan bir XML dosyası:
 
@@ -165,7 +165,7 @@ A *.natjmc* dosyasıdır bu söz dizimi olan bir XML dosyası:
 C++ projelerinde, İşlevler kullanıcı olmayan kod olarak listelenerek tarafından devralınırsa adım belirtebilirsiniz  *\*.natstepfilter* dosyaları. Listelenen işlevleri  *\*.natstepfilter* dosyaları yalnızca kendi kodum ayarlarına bağlı değildir.
 
 - Tüm yerel Visual Studio kullanıcılar için kullanıcı olmayan kod belirtmek için *.natstepfilter* dosyasını *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* klasör.
-- Bir kullanıcı için kullanıcı olmayan kod belirtmek için *.natstepfilter* dosyasını *%USERPROFILE%\My belgeleri\\<Visual Studio version>\Visualizers* klasör.
+- Bir kullanıcı için kullanıcı olmayan kod belirtmek için *.natstepfilter* dosyasını *%USERPROFILE%\My belgeleri\\< Visual Studio sürümü\>\Visualizers* klasör.
 
 A *.natstepfilter* dosyasıdır bu söz dizimi olan bir XML dosyası:
 

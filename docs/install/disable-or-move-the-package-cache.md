@@ -16,12 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8472394c06d3388b480abdaf262610811a7a72f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c0cd54f9cfb7f9df81f1eb4ac9f3ad43af226b1e
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970263"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324857"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Paket önbelleğini devre dışı bırakma veya taşıma
 

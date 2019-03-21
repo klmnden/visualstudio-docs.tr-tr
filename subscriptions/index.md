@@ -19,6 +19,7 @@ Visual Studio abonelikleri olan kaynakları oluşturmanıza, dağıtmanıza ve t
 Yöneticilerin oturum açın [ https://manage.visualstudio.com ](https://manage.visualstudio.com) ekibinize abonelikleri atamak için.<br>
 Aboneleri oturum açın [ https://my.visualstudio.com ](https://my.visualstudio.com) abonelik avantajlarınıza erişmek için.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

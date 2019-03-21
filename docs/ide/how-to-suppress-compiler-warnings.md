@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323980"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323470"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Nasıl yapılır: Derleyici uyarılarını engelleme
 
@@ -63,7 +63,7 @@ Bu örnek nasıl düzenleneceğini gösterir *.vbproj* belirli derleyici uyarıl
 
 1. Menü çubuğunda, **proje** > **projeyi**.
 
-1. İçinde **Çözüm Gezgini**, projeyi sağ tıklatın veya kısayol menüsünü açın ve ardından **Düzenle <ProjectName>.vbproj**.
+1. İçinde **Çözüm Gezgini**, projeyi sağ tıklatın veya kısayol menüsünü açın ve ardından **Düzenle \<ProjectName > .vbproj**.
 
     XML proje dosyasını Kod düzenleyicisinde açılır.
 

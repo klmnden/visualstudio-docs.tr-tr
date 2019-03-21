@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597539"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323730"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Hata ayıklayıcı ile veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma
 
@@ -67,7 +67,7 @@ Daha fazla bilgi için [arama ve filtreleme tanılama araçları penceresinin ol
 
 ## <a name="collect-profiling-data-without-debugging"></a>Hata ayıklama olmadan profil oluşturma verilerini topla
 
-Hata ayıklama olmadan performans verilerini toplamak için çalıştırabileceğiniz **performans Profiler** araçları. Profil oluşturma araçlarından bazıları çalıştırmak için yönetici ayrıcalıkları gerektirir. Visual Studio'yu yönetici olarak başlatın veya Tanılama oturumu başlattığınızda, Araçlar yönetici olarak çalıştırabilirsiniz.
+Hata ayıklama olmadan performans verilerini toplamak için çalıştırabileceğiniz **performans Profiler** araçları. Profil oluşturma araçlarından bazıları çalıştırmak için yönetici ayrıcalıkları gerektirir. Visual Studio'yu yönetici olarak açabileceğiniz veya Tanılama oturumu başlattığınızda, Araçlar yönetici olarak çalıştırabilirsiniz.
 
 1. Projeyi Visual Studio'da Aç seçin **hata ayıklama** > **performans Profiler**, veya basın **Alt**+**F2**.
 

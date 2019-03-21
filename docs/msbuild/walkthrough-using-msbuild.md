@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c0abf64442c6a31758f3a3c24c4268b6aee5720a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947068"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324928"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek yol MSBuild'ın yapı taşlarını tanıtır ve MSBuild projelerini nasıl yazacağınızı, değiştireceğinizi ve hatalarını ayıklayacağınızı gösterir. Şu konularda bilgi edineceksiniz:
@@ -125,7 +125,7 @@ MSBuild, bir yapının hedeflerini izler ve her bir hedefin birden kereden fazla
 
    (Windows 10) Görev çubuğundaki arama kutusuna gibi aracının adını yazarak Başlat `dev` veya `developer command prompt`. Bu, arama deseniyle eşleşen yüklü uygulamalar listesini getirir.
 
-   El ile bulmanız gerekiyorsa, dosyasıdır *LaunchDevCmd.bat* içinde  *<visualstudio installation folder> \<sürüm > \Common7\Tools* klasör.
+   El ile bulmanız gerekiyorsa, dosyasıdır *LaunchDevCmd.bat* içinde *< visualstudio yükleme klasörü\>\<sürüm > \Common7\Tools* klasör.
 
 2. Komut penceresinde, bu durumda, proje dosyasını içeren klasöre gidin *D:\BuildApp\BuildApp*.
 

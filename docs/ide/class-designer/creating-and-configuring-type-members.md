@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956863"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324246"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Oluşturma ve tür üyeleri Sınıf Tasarımcısı'nda yapılandırma
 
@@ -205,7 +205,7 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
 - **\<Parametre Ekle >**
 
-     Bir üyenin son parametre satırı metni içeren **<add parameter>** içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için [bir yönteme parametre eklemek için](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Bir üyenin son parametre satırı metni içeren **< parametre Ekle\>**  içinde **adı** hücre. Bu hücreye tıklanması yeni bir parametre oluşturmanıza izin verir. Daha fazla bilgi için [bir yönteme parametre eklemek için](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Özellikleri** penceresinde görüntülenen parametre özelliklerinin görüntüler **sınıf ayrıntıları** penceresi: **Adı**, **türü**, **değiştiricisi**, **özeti**, hem de **isteğe bağlı varsayılan** özelliği. Özelliğin bir konumda değiştirilmesi, özelliğin değerini global olarak güncelleştirir (değerinin diğer konumda görüntülenmesi de buna dahildir).
 

@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872440"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323457"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
@@ -84,7 +84,7 @@ C++ temel yönergeleri daha iyi ve daha güvenli kod yazmanıza yardımcı vard�
 
 Yeni kurallar, C++ temel yönergeleri denetleyici için eklendikçe önceden mevcut olan kod için üretilen uyarıların sayısını artırabilir. Önceden tanımlanmış kural kümeleri, hangi tür kuralların etkinleştirmek için filtre uygulamak için kullanabilirsiniz. Visual Studio 2017'den itibaren sürüm 15.3, desteklenen kural kümesi şunlardır:
 
-  - **Sahip işaretçisi kuralları** zorunlu [kaynak yönetimi denetler ilgili sahibine<T> C++ temel yönergeleri'ndeki](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Sahip işaretçisi kuralları** zorunlu [kaynak yönetimi denetler ilgili sahibine\<T > C++ temel yönergeleri'ndeki](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Const kuralları** zorunlu [C++ temel yönergeleri'ndeki const ile ilgili denetimleri](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -162,7 +162,7 @@ Komut satırı seçeneği bir dosya için tüm kod analizi belirterek geçici ol
 Bazen iş odaklı Kod Analizi ve yine de Visual Studio IDE yararlanın yararlı olabilir. Büyük projeler için derleme zamandan tasarruf edin ve sonuçları filtrelemek için daha kolay hale getirmek için kullanılabilecek bir örnek senaryo aşağıdadır.
 
 1. Komut kabuğu'nda ayarlayın `esp.extension` ve `esp.annotationbuildlevel` ortam değişkenleri.
-2. Bu değişkenler devralmak için komut kabuğundan Visual Studio'yu başlatın.
+2. Bu değişkenler devralmak için komut kabuğundan Visual Studio'yu açın.
 3. Projenize yükleyin ve özelliklerini açın.
 4. Kod analizini etkinleştir, uygun bir kural kümesi seç, ancak kod analizi uzantıları etkinleştirmeyin.
 5. C++ temel yönergeleri Denetleyici ile analiz edin ve özelliklerini açmak istediğiniz dosyaya gidin.

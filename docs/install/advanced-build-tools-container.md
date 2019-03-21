@@ -9,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2db56b4957165a8608e0ed61f07ae0ff64c403ef
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 7537a1b8e15d2db19d45843cc53ebb3cb78e3a18
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983315"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324873"
 ---
 # <a name="advanced-example-for-containers"></a>Kapsayıcılar için İleri düzey örnek
 
@@ -89,7 +91,7 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
    > [!WARNING]
-   > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez<span></span>.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
+   > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez\.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
    >
    > Bkz: [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) daha fazla bilgi için.
 

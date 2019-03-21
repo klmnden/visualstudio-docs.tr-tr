@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221898"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323574"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Test Gezgini hakkında SSS
 
@@ -120,7 +120,7 @@ Test bağdaştırıcısı uzantılarından kullanmak yerine, projeleri test bağ
 
 Son UWP test projeleri, test uygulamaları tanımlamak için daha iyi performans sağlayan bir test platformu yapı özelliğini belirtin. Visual Studio 15.7 Sürüm önce başlatıldı bir UWP test projesi varsa, bu hatayı görebilirsiniz **çıkış** > **testleri**:
 
-**System.AggregateException: Bir veya daha fazla hata oluştu. System.InvalidOperationException--->: Şu TestContainer bulunamadı {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider adresindeki <GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException: Bir veya daha fazla hata oluştu. System.InvalidOperationException--->: Şu TestContainer bulunamadı {} Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider adresindeki \<GetTestContainerAsync > d__61.MoveNext()**
 
 Bu hatayı düzeltmek için:
 

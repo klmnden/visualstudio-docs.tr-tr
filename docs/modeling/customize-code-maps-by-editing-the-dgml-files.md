@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937948"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323155"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML dosyalarını düzenleyerek kod haritalarını özelleştirme
 
@@ -286,29 +286,29 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
     Bu ifade aşağıdaki Backus-Naur Form (BNF) sözdizimini kullanır:
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<İfade >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<ifadesi > "")"" &#124; \<MemberBindings > &#124; \<sabit değer > &#124; \<Sayı >
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression >:: = \<ifadesi > \<işleci > \<ifadesi >
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression >:: = "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
 
-    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "veya" &#124; "ve" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "veya" &#124; "ve" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding >
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall >:: = \<tanımlayıcısı > "(" \<MethodArgs > "")""
 
-    <PropertyGet> :: Tanımlayıcısı =
+    \<PropertyGet >:: = tanımlayıcısı
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    <Identifier> ::= [^. ]*
+    \<Tanımlayıcı >:: = [^. ]*
 
-    <Literal> :: = tek veya çift tırnak içinde dize sabit değeri
+    \<Literal >:: = tek veya çift tırnak içinde dize sabit değeri
 
-    <Number> :: = isteğe bağlı ondalık noktası ile rakamlar dizesi
+    \<Number >:: = isteğe bağlı ondalık noktası ile rakamlar dizesi
 
     Birden çok belirtebilirsiniz `<Condition/>` tüm stil uygulamak için true olması gereken öğeler.
 

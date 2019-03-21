@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c3f33544034a0444f85df47f0c3ab554407de79e
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927039"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325259"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da bir şablondan bir Python projesi oluşturma
 
 Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-support-in-visual-studio.md), çeşitli şablonları kullanarak yeni Python projesi oluşturmak daha kolaydır. Bu hızlı başlangıçta, bir şablon kullanarak basit bir Flask uygulaması oluşturun. El ile oluşturduğunuz proje için benzer bir sonuç projesi [hızlı başlangıç - Flask ile web uygulaması oluşturma](../ide/quickstart-python.md).
 
-1. Visual Studio 2017'yi başlatın.
+1. Visual Studio 2017'yi açın.
 
 1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**, ardından **yeni proje** iletişim arama "için boş flask", seçin **boş Flask Web projesi** ortadaki listeyi şablonunda projeye bir ad verin ve seçin **Tamam**:
 

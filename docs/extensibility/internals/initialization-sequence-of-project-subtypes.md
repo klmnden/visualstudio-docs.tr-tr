@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18a60e5589671101471bbb5f82877ce5234215d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fc8d330de6b707d4747b9c297dffcbc78d5fec
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920195"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323717"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Proje Alt Türlerinin Başlatılma Sırası
 Ortam, temel proje fabrikası uygulamasını çağırarak bir proje oluşturur <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Bir proje alt yapı ortamı için bir proje dosyasının uzantısı proje türü GUID listesi boş olmadığını belirlerken başlatır. GUID proje ve proje dosya uzantısıyla proje olup olmadığını belirtin. bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] veya [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proje türü. Örneğin, .vbproj uzantısı ve {tanımlamak F184B08F-C81C-45F6-A57F-5ABD9991F28F} bir [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] proje.
@@ -31,7 +31,7 @@ Ortam, temel proje fabrikası uygulamasını çağırarak bir proje oluşturur <
 
     1.  Ortamın uygulaması <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> yöntem çağrılarını `HrCreateInnerProj` aşağıdaki işlev bildirimi ile yöntemi:
 
-         <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
          Ne zaman bu işlev çağrılır ilk kez, diğer bir deyişle, en dıştaki proje alt türü için parametreler `pOuter` ve `pOwner` olarak geçirilir `null` ve işlevin en dıştaki proje alt ayarlar `IUnknown` için `pOuter`.
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635195"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323392"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: Kaynak Denetimi Eklentisi yükleme
 Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
@@ -78,7 +78,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
 
 4. Adlı bir alt anahtarını oluşturmak **InstalledSCCProviders** altında **SourceCodeControlProvider** alt anahtarını ve ardından bu alt anahtarı altında bir girdi yerleştirebilirsiniz.
 
-    Bu giriş adı sağlayıcı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve değeri, bir kez daha, 1. adımda oluşturduğunuz alt ise. Desen **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *yazılım\\< şirket adı\> \\< ürün adı\>*.
+    Bu giriş adı sağlayıcı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve değeri, bir kez daha, 1. adımda oluşturduğunuz alt ise. Desen **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< görünen adı\>** = *yazılım\\< şirket adı\>\\< ürün adı\>*.
 
     Örneğin:
 

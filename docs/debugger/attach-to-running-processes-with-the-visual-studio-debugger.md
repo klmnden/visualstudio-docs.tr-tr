@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428771"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323100"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
 Visual Studio hata ayıklayıcı bir yerel veya uzak bilgisayarda çalışan bir işleme ekleyebilirsiniz. İşlem çalışmaya başladıktan sonra seçin **hata ayıklama** > **iliştirme** veya basın **Ctrl**+**Alt** + **P** Visual Studio ve kullanım **iliştirme** işleme hata ayıklayıcı için iletişim kutusu.
@@ -102,7 +102,7 @@ IIS'ye dağıtılan ASP.NET uygulamalarında hata ayıklama için daha eksiksiz 
      > Uzak bilgisayar adını kullanarak bağlanamıyorsa, IP kullanmayı deneyin ve bağlantı noktası adresi (örneğin, `123.45.678.9:4022`). 4022 x64 Visual Studio 2017 uzaktan hata ayıklayıcı için varsayılan bağlantı noktasıdır. Diğer uzaktan hata ayıklayıcı bağlantı noktası atamaları konusuna bakın [uzaktan hata ayıklayıcı bağlantı noktası atamaları](remote-debugger-port-assignments.md).
 
      ::: moniker-end
-     
+
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]

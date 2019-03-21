@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223357"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323713"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
+# <a name="use-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
 C++ temel yönergeleri yönergeleri, kuralları ve C++ uzmanlar ve tasarımcılar tarafından oluşturulan c++ kodlama hakkında en iyi taşınabilir bir kümesidir. Visual Studio, şu anda C++ için kod analizi araçlarında bir parçası olarak bu kural kümesini destekler. Ana Kılavuz denetleyicileri Visual Studio 2017 ve Visual Studio 2019 varsayılan olarak yüklenir ve olan [Visual Studio 2015 için bir NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
 
@@ -80,7 +80,7 @@ Yeni kurallar, C++ temel yönergeleri denetleyici için eklendikçe önceden mev
 Çoğu kuralları için başvuru konularındaki altında [denetleyin Visual Studio C++ temel başvuru](code-analysis-for-cpp-corecheck.md).
 
 Visual Studio 2017'den itibaren sürüm 15.3, desteklenen kural kümesi şunlardır:
-- **Sahip işaretçisi kuralları** zorunlu [kaynak yönetimi denetler ilgili sahibine<T> C++ temel yönergeleri'ndeki](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Sahip işaretçisi kuralları** zorunlu [kaynak yönetimi denetler ilgili sahibine\<T > C++ temel yönergeleri'ndeki](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Const kuralları** zorunlu [C++ temel yönergeleri'ndeki const ile ilgili denetimleri](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,7 +153,7 @@ Microsoft Visual C++ derleyicisi özniteliği bastırmak için GSL bir sınırl�
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Komut satırı seçeneklerini kullanarak analizi gizleme
+## <a name="suppress-analysis-by-using-command-line-options"></a>Komut satırı seçeneklerini kullanarak Analiz Gizle
 
 #Pragmas yerine bir proje veya tek bir dosya için uyarıları bastırmak için dosyanın özellik sayfasında komut satırı seçeneklerini kullanabilirsiniz. Örneğin, uyarıyı devre dışı bırakmak için bir dosya için 26400:
 
@@ -165,12 +165,12 @@ Microsoft Visual C++ derleyicisi özniteliği bastırmak için GSL bir sınırl�
 
 Komut satırı seçeneği bir dosya için tüm kod analizi belirterek geçici olarak devre dışı bırakmak için kullanabileceğiniz `/analyze-`. Bu uyarıyı üretir *D9025 geçersiz kılma '/ analyze' ile ' / analyze-'*, Kod Analizi daha sonra yeniden etkinleştirmeniz anımsatır.
 
-## <a name="corecheck_per_file"></a> C++ temel yönergeleri denetleyici belirli proje dosyaları üzerinde etkinleştirme
+## <a name="corecheck_per_file"></a> C++ temel yönergeleri denetleyici belirli proje dosyaları etkinleştir
 
 Bazen iş odaklı Kod Analizi ve yine de Visual Studio IDE kullanın yararlı olabilir. Aşağıdaki örnek senaryoyu büyük projeler için derleme zamandan tasarruf edin ve sonuçları filtrelemek için daha kolay hale getirmek için kullanılabilir:
 
 1. Komut kabuğu'nda ayarlayın `esp.extension` ve `esp.annotationbuildlevel` ortam değişkenleri.
-2. Bu değişkenler devralmak için komut kabuğu'ndan Visual Studio'yu başlatın.
+2. Bu değişkenler devralmak için komut kabuğu'ndan Visual Studio'yu açın.
 3. Projenize yükleyin ve özelliklerini açın.
 4. Kod analizini etkinleştir, uygun bir kural kümesi seç, ancak kod analizi uzantıları etkinleştirmeyin.
 5. C++ temel yönergeleri Denetleyici ile analiz edin ve özelliklerini açmak istediğiniz dosyaya gidin.

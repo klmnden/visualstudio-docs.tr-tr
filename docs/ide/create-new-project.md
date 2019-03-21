@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d995f2d625e1f10cafc681e799060b5a439196
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: d6dad62afa1761107d326075adffc31a34b04d0c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268839"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324954"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Visual Studio'da yeni proje oluşturma
 

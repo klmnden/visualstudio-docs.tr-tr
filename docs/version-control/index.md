@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Sürüm denetimi
 description: Visual Studio'da sürüm denetimi ile Başlama Kılavuzu
-keywords: VSTS, TFS sürüm denetimi
+keywords: 'VSTS, TFS sürüm denetimi'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998930"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio'da sürüm denetimi
 
@@ -27,6 +21,7 @@ Sürüm denetimi sistemleri, zaman içinde kod değişiklikleri izlemenize yard�
 
 Git, günümüzde en yaygın şekilde kullanılan sürüm denetimi sistemi olan ve standart sürüm denetimi için hızla büyüyor. Yerel kod kopyanızın eksiksiz sürüm denetimi deposu olduğu anlamına gelen bir dağıtılmış sürüm denetim sistemi Git var. Bu tam işlevli yerel depolar, çevrimdışı veya uzaktan çalışmayı kolaydır olun. Çalışmanızı yerel olarak işleyin ve ardından depo kopyanızı sunucudaki kopyayla eşitleyin. Bu paradigma, burada istemciler kodu bir sunucuyla yeni kod sürümleri oluşturmadan önce eşitlemelidir merkezi sürüm denetiminden farklıdır.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

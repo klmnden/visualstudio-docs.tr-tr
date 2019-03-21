@@ -3,18 +3,12 @@ title: Intellitest Başvuru Kılavuzu | Microsoft Geliştirici Test Araçları
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- IntelliTest Reference Manual, IntelliTest
+  - 'IntelliTest Reference Manual, IntelliTest'
 ms.author: gewarren
 manager: jillfra
 ms.workload:
-- multiple
+  - multiple
 author: gewarren
-ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948959"
 ---
 # <a name="intellitest-reference-manual"></a>Intellitest Başvuru Kılavuzu
 
@@ -30,11 +24,11 @@ ms.locfileid: "55948959"
     * [Dil](introduction.md#language)
     * [Sembolik akıl yürütme](introduction.md#symbolic-reasoning)
     * [Yanlış Yığın izlemeleri](introduction.md#incorrect-stack-traces)
-  - [Daha fazla bilgi](introduction.md#further-reading)<p>&nbsp;</p>
+  - [Daha fazla bilgi](introduction.md#further-reading)
 
 * **[Intellitest ile çalışmaya başlama](getting-started.md)**
   - [Önemli öznitelikleri](getting-started.md#important-attributes)
-  - [Önemli statik yardımcı sınıfları](getting-started.md#helper-classes)<p>&nbsp;</p>
+  - [Önemli statik yardımcı sınıfları](getting-started.md#helper-classes)
 
 * **[Test oluşturma](test-generation.md)**
   - [Test oluşturucuları](test-generation.md#test-generators)
@@ -47,7 +41,7 @@ ms.locfileid: "55948959"
   - [Sonkoşul](test-generation.md#postcondition)
   - [Test hataları](test-generation.md#test-failures)
   - [Kurulum ve kapatabilirsiniz](test-generation.md#setup-teardown)
-  - [Daha fazla bilgi](test-generation.md#further-reading)<p>&nbsp;</p>
+  - [Daha fazla bilgi](test-generation.md#further-reading)
 
 * **[Giriş oluşturma](input-generation.md)**
   - [Kısıtlama Çözücü](input-generation.md#constraint-solver)
@@ -60,7 +54,7 @@ ms.locfileid: "55948959"
   - [Yapılar](input-generation.md#structs)
   - [Diziler ve dizeler](input-generation.md#arrays-and-strings)
   - [Ek girişler alma](input-generation.md#additional-inputs)
-  - [Daha fazla bilgi](input-generation.md#further-reading)<p>&nbsp;</p>
+  - [Daha fazla bilgi](input-generation.md#further-reading)
 
 * **[Keşif sınırları](exploration-bounds.md)**
   - [MaxConstraintSolverTime](exploration-bounds.md#maxconstraintsolvertime)
@@ -75,7 +69,7 @@ ms.locfileid: "55948959"
   - [Maxexceptions yapılandırma](exploration-bounds.md#maxexceptions)
   - [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded)
   - [TestEmissionFilter](exploration-bounds.md#testemissionfilter)
-  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)<p>&nbsp;</p>
+  - [TestEmissionBranchHits](exploration-bounds.md#testemissionbranchhits)
 
 * **[Öznitelik sözlüğü](attribute-glossary.md)**
   - [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull)
@@ -90,7 +84,7 @@ ms.locfileid: "55948959"
   - [PexAllowedException](attribute-glossary.md#pexallowedexception)
   - [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly)
   - [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype)
-  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)<p>&nbsp;</p>
+  - [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest)
 
 * **[Ayarlar Şelalesi](settings-waterfall.md)**
 
@@ -99,7 +93,7 @@ ms.locfileid: "55948959"
   - [PexAssert](static-helper-classes.md#pexassert)
   - [PexChoose](static-helper-classes.md#pexchoose)
   - [PexObserve](static-helper-classes.md#pexobserve)
-  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)<p>&nbsp;</p>
+  - [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue)
 
 * **[Uyarıları ve hataları](warnings-and-errors.md)**
   - [MaxBranches aşıldı](warnings-and-errors.md#maxbranches-exceeded)
@@ -121,7 +115,7 @@ ms.locfileid: "55948959"
   - [Test Edilebilirlik sorununu](warnings-and-errors.md#testability-issue)
   - [Sınırlama](warnings-and-errors.md#limitation)
   - [Çağrı uyuşmazlığı gözlemlendi](warnings-and-errors.md#observed-call-mismatch)
-  - [Statik alanda depolanan değer](warnings-and-errors.md#value-static-field)<p>&nbsp;</p>
+  - [Statik alanda depolanan değer](warnings-and-errors.md#value-static-field)
 
 ## <a name="got-feedback"></a>Geri bildirim var mı?
 

@@ -13,6 +13,8 @@ ms.workload:
 
 Visual Studio, çok sayıda seçenek genişletilebilirlik sağlar. Visual Studio'nun kendisi genişletmek, "Roslyn" derleyici için kaynak kod Çözümleyicileri eklemeniz veya hatta kendi SDK'ları oluşturabilirsiniz.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

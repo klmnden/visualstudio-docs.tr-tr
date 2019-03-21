@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324006"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323113"
 ---
 # <a name="troubleshooting-template-installation"></a>Şablon yükleme sorunlarını giderme
 
@@ -41,7 +41,7 @@ Proje veya öğe şablonlarınızın dağıtımı sorunlarla karşılaşırsanı
 
 ::: moniker range="vs-2017"
 
-4. Visual Studio'yu başlatın ve her iki şablon ağaçları başlatmak için yeni proje ve yeni öğe iletişim kutularında başlatın.
+4. Visual Studio'yu açın ve her iki şablon ağaçları başlatmak için yeni proje ve yeni öğe iletişim kutularında başlatın.
 
    Şablon günlük görüntülenir **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (InstanceId örneğinizin Visual Studio yükleme Kimliğine karşılık gelir). Her şablon ağaç başlatma için bu günlük girdileri ekler.
 
@@ -49,7 +49,7 @@ Proje veya öğe şablonlarınızın dağıtımı sorunlarla karşılaşırsanı
 
 ::: moniker range=">=vs-2019"
 
-4. Visual Studio'yu başlatın ve her iki şablon ağaçları başlatmak için yeni proje ve yeni öğe iletişim kutularında başlatın.
+4. Visual Studio'yu açın ve her iki şablon ağaçları başlatmak için yeni proje ve yeni öğe iletişim kutularında başlatın.
 
    Şablon günlük görüntülenir **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (InstanceId örneğinizin Visual Studio yükleme Kimliğine karşılık gelir). Her şablon ağaç başlatma için bu günlük girdileri ekler.
 

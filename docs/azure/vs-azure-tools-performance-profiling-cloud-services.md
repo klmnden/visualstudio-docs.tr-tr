@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946955"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323207"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Bulut hizmetinin performansını test etme
 ## <a name="overview"></a>Genel Bakış
@@ -101,7 +101,7 @@ Bulut hizmetinizde bir rolünün her örneği için profil oluşturma oturumunu 
 2. Azure bilgi işlem düğümünü seçin ve ardından Visual Studio'dan yayımlandığında, profil için seçili bulut hizmetini Azure dağıtım düğümünü seçin.
 3. Bir örneği için profil oluşturma raporları görüntülemek için rol hizmeti seçin, belirli bir örneği için kısayol menüsünü açın ve ardından **profili oluşturma raporu görüntüle**.
 
-    Rapor, bir .vsp dosya artık Azure'dan indirilir ve yükleme durumu, Azure etkinlik günlüğü'nde görünür. Yükleme tamamlandığında, profil oluşturma raporunun bir düzenleyici adlı Visual Studio için sekmesinde görünür <Role name> *<Instance Number>* <identifier>.vsp. Rapor için Özet veriler görüntülenir.
+    Rapor, bir .vsp dosya artık Azure'dan indirilir ve yükleme durumu, Azure etkinlik günlüğü'nde görünür. Yükleme tamamlandığında, profil oluşturma raporunun bir düzenleyici adlı Visual Studio için sekmesinde görünür. < rol adı\>*< örnek numarasını\>*< tanımlayıcısı\>.vsp. Rapor için Özet veriler görüntülenir.
 4. Geçerli Görünüm listesinde, raporun farklı görünümleri görüntülemek için istediğiniz görünümü türünü seçin. Daha fazla bilgi için [profil oluşturma araçları rapor görünümlerini](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Sonraki adımlar

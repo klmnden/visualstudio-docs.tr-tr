@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b23b67ea2fe48bb3ba1bcf174d28938379fc1ad9
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 68fdb7169bc87979cac56480664bfdbeab748c51
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070093"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323483"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Projeler ve çözümler C kullanma hakkında bilgi edinin\#
 

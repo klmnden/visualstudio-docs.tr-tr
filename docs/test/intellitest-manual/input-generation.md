@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316905"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323548"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Dinamik sembolik yürütme kullanarak giriş oluşturma
 
@@ -96,11 +96,11 @@ Kurallar aşağıdaki gibidir:
 
 * **İç üyelerin görünürlüğü**
   * Intellitest, üretilen testler kapsayan görünür iç üyelerine erişimi olduğunu varsayar [PexClass](attribute-glossary.md#pexclass).
-  .NET sahip **Internalsvisibletoattribute** başka derlemeler iç üyelerin görünürlüğü genişletmek için.<p />
+  .NET sahip **Internalsvisibletoattribute** başka derlemeler iç üyelerin görünürlüğü genişletmek için.
 
 * **Özel görünürlüğünü ve ailesi (korumalı, C#) üyeleri [PexClass](attribute-glossary.md#pexclass)**
   * Intellitest her zaman yerleştirir testlerin doğrudan [PexClass](attribute-glossary.md#pexclass) veya bir alt sınıfı. Bu nedenle, tüm görünür aile üyelerine kullanabilir Intellitest varsayılır (**korumalı** C#).
-  * Doğrudan testlerin yerleştirdiyseniz [PexClass](attribute-glossary.md#pexclass) (genellikle kısmi sınıflar kullanarak), Intellitest tüm özel üyeleri de kullanabilirsiniz. varsayar [PexClass](attribute-glossary.md#pexclass).<p />
+  * Doğrudan testlerin yerleştirdiyseniz [PexClass](attribute-glossary.md#pexclass) (genellikle kısmi sınıflar kullanarak), Intellitest tüm özel üyeleri de kullanabilirsiniz. varsayar [PexClass](attribute-glossary.md#pexclass).
 
 * **Genel üye görünürlüğü**
   * Intellitest varsayar bağlamında görünen dışarı aktarılan tüm üyelere kullanabilir [PexClass](attribute-glossary.md#pexclass).

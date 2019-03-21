@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97e3d2fb69da4019a11b2297f6d66cac70a6b0ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760982"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325009"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Nasıl yapılır: Sihirbazları Proje Şablonlarıyla Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -239,7 +239,7 @@ Visual Studio sağlar <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> uygul
   
      Tırnak işaretleri yeniden unutmayın. Bir satırda şunun gibi bir çıktı görmeniz gerekir  
   
-     **Ortak anahtar belirteci <token>**  
+     **Ortak anahtar belirteci \<belirteci >**  
   
      Bu değeri not edin.  
   

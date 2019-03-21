@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155543"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324259"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Öğretici: Visual Basic ile basit uygulama oluşturma
 
@@ -35,7 +35,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2017"
 
-Visual Studio'yu ilk kez başlattığınızda, oturum açmanız istenir. Bu adım, Bu öğretici için isteğe bağlıdır. Sonraki renk teması ve geliştirme ayarlarınızı seçin isteyen bir iletişim kutusu gösterilebilir. Varsayılan değerleri koruyun ve seçin **Visual Studio Başlangıç**.
+Visual Studio'yu ilk kez açtığınızda, oturum açmanız istenir. Bu adım, Bu öğretici için isteğe bağlıdır. Sonraki renk teması ve geliştirme ayarlarınızı seçin isteyen bir iletişim kutusu gösterilebilir. Varsayılan değerleri koruyun ve seçin **Visual Studio Başlangıç**.
 
 ![Ayarlarını Seç iletişim kutusu](../media/exploreide-settings.png)
 
@@ -47,7 +47,7 @@ Visual Studio'yu başlattıktan sonra araç pencerelerini, menüleri ve araç ç
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio başlatıldığında **Başlat** ilk penceresi açılır. Seçin **kod olmadan devam** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan devam** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
 
 ::: moniker-end
 

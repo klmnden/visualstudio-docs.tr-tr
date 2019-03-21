@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 2a9cd2bebb78fa79cc5c45f59407c5a7a62a3dc5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450405"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323431"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -38,7 +40,7 @@ En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görünt�
 | Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.7      |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.20     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             Hiçbiri             | (Bakım için süresi doldu)  |
+|         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi doldu)  |
 
 > [!NOTE]
 > Hizmet İlkesi Microsoft uygun olarak hizmet vermek için Visual Studio 2015'in yayınlanmış (RTW) sürüm süresi doldu. Visual Studio 2015 güncelleştirme 3 için Visual Studio 2015 ürün sınıfıyla sunulan yalnızca kalan sürümüdür.
@@ -101,7 +103,9 @@ Geliştirme ortamlarını spektrumun büyük ve gerçek maliyet daha karmaşık 
 
 Kısa bir Özet: Sistem Hazırlama (Sysprep) aracını kullanın ve çalışan sanal makineyi ve ardından yakalamak *(Şekil 1)* Azure portalındaki kullanıcı Arabirimi aracılığıyla bir görüntü olarak VM. Azure kaydeder `.vhd` seçtiğiniz depolama hesabındaki görüntüsünü içeren dosya. Yeni görüntü sonra aboneliğinizin kaynak listesi bir görüntü kaynağı olarak görünür.
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Şekil 1) Azure portal kullanıcı Arabirimi aracılığıyla bir görüntüsünü yakalayın.*</center>
+![Azure portal kullanıcı Arabirimi aracılığıyla bir görüntü Yakala](media/capture-vm.png)
+
+*(Şekil 1) Azure portal kullanıcı Arabirimi aracılığıyla bir görüntüsünü yakalayın.*
 
 Daha fazla bilgi için [Azure'da bir genelleştirilmiş VM'nin yönetilen görüntüsünü oluşturma](/azure/virtual-machines/windows/capture-image-resource).
 

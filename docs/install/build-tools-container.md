@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ebece0823c42c4dd1f2faaeb894e88c06ed0bef
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 855534ff340ce9b5bb76bf45d4bf496bd1c2dc17
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983448"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324311"
 ---
 # <a name="install-build-tools-into-a-container"></a>Derleme araçları bir kapsayıcıya yükleme
 
@@ -166,7 +168,7 @@ Aşağıdaki örnek Dockerfile, disk üzerinde yeni bir dosyaya kaydedin. Dosya 
    > [!WARNING]
    > Görüntünüzü doğrudan microsoft/windowsservercore üzerinde temel alıyorsa, .NET Framework düzgün yüklenmeyebilir ve herhangi bir yükleme hata gösterilir. Yükleme tamamlandıktan sonra yönetilen kod çalışmayabilir. Görüntünüzü bunun yerine, temel [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) veya üzeri. Daha sonra PowerShell varsayılan olarak kullanabilir veya bu görüntüleri etiketli sürümü 4.7.1 unutmayın `SHELL` neden olacak `RUN` ve `ENTRYPOINT` başarısız için yönergeler.
    >
-   > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez<span></span>.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
+   > Visual Studio 2017 sürüm 15,8 veya öncesi (herhangi bir ürünü) üzerinde mcr düzgün yüklenmez\.microsoft\.com\/windows\/servercore:1809 veya üzeri. Herhangi bir hata görüntülenir.
    >
    > Bkz: [bilinen sorunlar kapsayıcılar için](build-tools-container-issues.md) daha fazla bilgi için.
 

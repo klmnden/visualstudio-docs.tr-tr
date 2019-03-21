@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio hata ayıklayıcı, programınızın çalışma zamanı davranışını gözlemlemenize ve sorunları bulma yardımcı olur. Hata ayıklayıcı, tüm Visual Studio programlama dilleri ve bunların ilişkili kitaplıkları ile çalışır. Hata ayıklayıcı, programınızın kodunu incelemek, inceleyin ve değişkenleri düzenlemek, kayıt defterlerini görüntülemek, kaynak kodunuzdan oluşturulan yönergelere bakmak için programınızın yürütülmesini Kes ve uygulamanız tarafından kullanılan bellek alanını görüntüleyebilirsiniz.
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">

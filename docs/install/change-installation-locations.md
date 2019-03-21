@@ -14,16 +14,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983903"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324980"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio'da yükleme konumları seçin
 
+::: moniker range="vs-2017"
+
 **15.7 sürümündeki yeni**: Bazı dosyalar için konumun değiştirerek sistem sürücünüzde Visual Studio yükleme ayak izini azaltabilir. Özellikle, indirme önbelleğini, paylaşılan bileşenler, SDK'lar ve Araçlar dosyaları için farklı bir konum kullanabilirsiniz.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Bazı dosyalar için konumun değiştirerek sistem sürücünüzde Visual Studio yükleme ayak izini azaltabilir. Özellikle, indirme önbelleğini, paylaşılan bileşenler, SDK'lar ve Araçlar dosyaları için farklı bir konum kullanabilirsiniz.
+
+::: moniker-end
 
    > [!NOTE]
    > Bazı araçlar ve bunlar yüklenebileceği ile ilgili farklı kurallara sahip bir SDK'ları vardır. Başka bir konum seçin bile gibi araçları ve SDK'lar sistem sürücünüzde yüklenir.

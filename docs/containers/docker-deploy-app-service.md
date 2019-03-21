@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 141bbb010a1c71e9089c4d800ca43c0d90dade5e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4f28494bcb15cc66d8563fdc371a33a15fde85a3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160768"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322684"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio kullanarak Azure App Service'e bir ASP.NET Core kapsayıcı dağıtma
 
@@ -47,7 +47,7 @@ Aşağıdaki adımlar Bu öğreticide kullanılan temel bir ASP.NET Core uygulam
 7. Seçin **Linux** kapsayıcı türü ve tıklatın **Tamam**. Windows kapsayıcıları, kapsayıcı olarak Azure App Service'e dağıtmak için desteklenmez.
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-1. Visual Studio'dan **Başlat** penceresinde seçin **yeni bir proje oluşturma**.
+1. Visual Studio Başlangıç penceresinden seçin **yeni bir proje oluşturma**.
 1. Seçin **ASP.NET Core Web uygulaması**ve **sonraki**.
 1. Uygulamanızı yeni bir ad verin (veya varsayılan olması) ve **Oluştur**.
 1. Seçin **Web uygulaması**.

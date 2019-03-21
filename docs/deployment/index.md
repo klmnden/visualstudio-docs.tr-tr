@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio, uygulamaları dağıtmak için çeşitli araçlar sağlar.
 
+<!-- markdownlint-disable MD033 -->
+
 <h2>5 dakikalık hızlı başlangıçlar Visual Studio dağıtım deneyimi</h2>
 
 <ul class="panelContent cardsFTitle">

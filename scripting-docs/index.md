@@ -8,16 +8,12 @@ ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
-ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920869"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio’da JavaScript
 
 Visual Studio, JavaScript veya TypeScript kullanarak uygulamaları oluşturmanıza yardımcı olmaya yönelik çeşitli araçlar sağlar.
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>5 dakikalık hızlı başlangıçlar Visual Studio'da JavaScript kullanmayı öğrenin</h2>
 
@@ -225,5 +221,4 @@ Visual Studio, JavaScript veya TypeScript kullanarak uygulamaları oluşturmanı
         </a>
     </li>
 </ul><p>
-
 ---

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722271"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324074"
 ---
 # <a name="create-a-software-development-kit"></a>Bir yazılım geliştirme seti oluşturma
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilirsiniz API koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, projeye ilgili tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, API'ler, Visual Studio'da kullanılabilir.
@@ -65,17 +65,17 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 ### <a name="installation"></a>Yükleme
  Uzantı SDK'ları için belirli bir kullanıcı veya tüm kullanıcılar için bir kayıt defteri anahtarı belirtmeden yüklenebilir. Tüm kullanıcılar için bir SDK'yı yüklemek için aşağıdaki yola kullanın:
 
- *% Program Files%\Microsoft SDK'ları\<hedef platform > \v<platform version number>\ExtensionSDKs*
+ *% Program Files%\Microsoft SDK'ları\<hedef platform\>\v < platform sürüm numarası\>\ExtensionSDKs*
 
  Bir kullanıcıya özel yükleme için aşağıdaki yol kullanın:
 
- *SDK'ları %USERPROFILE%\AppData\Local\Microsoft\<hedef platform > \v<platform version number>\ExtensionSDKs*
+ *SDK'ları %USERPROFILE%\AppData\Local\Microsoft\<hedef platform\>\v < platform sürüm numarası\>\ExtensionSDKs*
 
  Farklı bir konum kullanmak istiyorsanız, ikisinden birini yapmanız gerekir:
 
 1.  Bu kayıt defteri anahtarında belirtin:
 
-     **HKLM\Software\Microsoft\Microsoft SDK'ları\<hedef platform > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **HKLM\Software\Microsoft\Microsoft SDK'ları\<hedef platform > \v < platform sürüm numarası\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      ve değeri olan bir (varsayılan) alt ekleyin `<path to SDK><SDKName><SDKVersion>`.
 

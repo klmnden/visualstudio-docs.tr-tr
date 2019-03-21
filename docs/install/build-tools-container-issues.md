@@ -10,12 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e5dc37eb38bf0d474e2a701bc79b8d4866be4aef
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983708"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323659"
 ---
 # <a name="known-issues-for-containers"></a>Kapsayıcılar için bilinen sorunlar
 
@@ -36,7 +38,7 @@ Aşağıdaki bilinen sorunlar ortaya çıkar Visual Studio derleme araçları 20
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): error MSB6003: Belirtilen görev yürütülebilir "csc.exe" çalıştırılamadı. Dosya veya derleme yüklenemedi ' System.IO.FileSystem, sürüm 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a ' veya bağımlılıklarından biri. Sistem belirtilen dosyayı bulamıyor.
 
-* Visual Studio 2017 sürüm 15,8 veya önceki bir sürümünü yükleyemezsiniz (herhangi bir ürünü) mcr üzerinde<span></span>.microsoft.com/windows/servercore:1809 veya üzeri. Daha fazla bilgi edinmek için bkz. https://aka.ms/setup/containers/servercore1809.
+* Visual Studio 2017 sürüm 15,8 veya önceki bir sürümünü yükleyemezsiniz (herhangi bir ürünü) mcr.microsoft.com/windows/servercore:1809 veya üzeri. Daha fazla bilgi edinmek için bkz. https://aka.ms/setup/containers/servercore1809.
 
 ::: moniker-end
 

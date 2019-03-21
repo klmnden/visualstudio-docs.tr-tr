@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868908"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324402"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,6 +53,7 @@ TypeScript, bu bilgileri oluşturmak için çeşitli kaynaklardan kullanır:
 - [Tür tanımları otomatik edinme](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>Tür çıkarımı üzerinde temel IntelliSense
 
 JavaScript'te, çoğu zaman kullanılabilir açık tür bilgisi yok. Neyse ki, genellikle bir türünün çevreleyen kod bağlamı verilen şekil yapmak oldukça kolaydır.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>JSDoc üzerinde temel IntelliSense
 
 Burada tür çıkarımı sağlamaz istenen tür bilgisi (veya belgeleri desteklemek için), tür bilgilerini sağlanmalı açıkça JSDoc ek açıklamaları.  Örneğin, belirli bir tür kısmen bildirilen bir nesnenin vermek için kullanabileceğiniz `@type` aşağıda gösterildiği gibi etiketleyin:
@@ -123,7 +125,7 @@ JavaScript ve TypeScript artık aynı language service'ı temel aldığından, d
 
 Aşağıda, basit bir örnek (aracılığıyla bir arabirimi) gibi tür bilgilerini sağlamaktan TypeScript tanım dosyasının bir JavaScript dosyasına aynı projede göstereceğiz (kullanarak bir `JsDoc` etiketi).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![TypeScript tanım dosyası](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Tür tanımları otomatik edinme

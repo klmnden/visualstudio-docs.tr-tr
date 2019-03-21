@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 2ddc50ba84a4fbe66cbcbaaff2e2eb847a8a8ced
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c982d999f3fa974db6ea409ee85e3bb7bbc57414
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953252"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323769"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Visual Studio ile Azure bulut Hizmetleri'nde rollerini yönetme
 Azure bulut hizmetinizi oluşturduktan sonra yeni rolleri eklemek veya var olan rolleri kaldırın. Ayrıca, mevcut bir projeyi içeri aktar ve rol dönüştürün. Örneğin, bir ASP.NET web uygulamasını içeri aktarabilir ve bir web rolü olarak belirleyin.
@@ -46,7 +46,7 @@ Aşağıdaki adımlar Visual Studio'da bir Azure bulut hizmeti projesinden bir w
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Bir rol için bir Azure bulut hizmeti projesi yeniden ekleniyor
 Bulut hizmeti projenizi bir rolünü kaldırmak, ancak daha sonra rolü yeniden projeye eklemek karar yalnızca Rol bildirimi ve uç noktaları ve tanılama bilgileri gibi temel öznitelikler eklenir. Ek kaynaklar veya başvurular eklenen `ServiceDefinition.csdef` dosya veya `ServiceConfiguration.cscfg` dosya. Bu bilgiyi eklemek istiyorsanız, bu dosyalar onu el ile eklemeniz gerekir.
 
-Örneğin, bir web hizmeti rolü kaldırabilir ve bu rolün geri çözümünüze eklemek daha sonra karar verin. Bunu yaparsanız, bir hata oluşur. Bu hatayı önlemek için eklemek zorunda `<LocalResources>` yeniden içine aşağıdaki XML'de gösterilen öğesinin `ServiceDefinition.csdef` dosya. Ad özniteliği için bir parçası olarak geri projeye eklenen web hizmeti rolü adını kullanın **<LocalStorage>** öğesi. Bu örnekte, web hizmeti rolü adıdır **WCFServiceWebRole1**.
+Örneğin, bir web hizmeti rolü kaldırabilir ve bu rolün geri çözümünüze eklemek daha sonra karar verin. Bunu yaparsanız, bir hata oluşur. Bu hatayı önlemek için eklemek zorunda `<LocalResources>` yeniden içine aşağıdaki XML'de gösterilen öğesinin `ServiceDefinition.csdef` dosya. Ad özniteliği için bir parçası olarak geri projeye eklenen web hizmeti rolü adını kullanın  **\<LocalStorage >** öğesi. Bu örnekte, web hizmeti rolü adıdır **WCFServiceWebRole1**.
 
     <WebRole name="WCFServiceWebRole1">
         <Sites>

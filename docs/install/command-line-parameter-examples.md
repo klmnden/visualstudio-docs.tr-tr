@@ -10,14 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8128f5b77b723ee231b2ec7029b84fa1b4a7ee97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 6f7fe4a26da2c2b8d37215cd71e39eacf92eaa37
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872105"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324272"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi için komut satırı parametresi örnekleri
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio yükleme için komut satırı parametresi örnekleri
 
 Göstermek için nasıl [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](use-command-line-parameters-to-install-visual-studio.md), ihtiyaçlarınıza uygun olarak özelleştirebileceğiniz bazı örnekleri aşağıda verilmiştir.
 
@@ -178,5 +180,5 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 
 * [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 2017'in çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio’nun çevrimdışı yüklemesini oluşturma](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

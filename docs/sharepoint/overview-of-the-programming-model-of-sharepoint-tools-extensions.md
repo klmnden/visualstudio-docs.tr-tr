@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639342"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325246"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Araç uzantılarının programlama modeline SharePoint genel bakış
   Visual Studio'da SharePoint araçları için bir uzantı oluşturduğunuzda, SharePoint araçları tarafından kullanıma sunulan bir veya daha fazla genişletilebilirlik arabirimlerini uygulayarak başlayın. Çoğu durumda, uzantı özellikleri uygulamak için SharePoint araçları tarafından sağlanan diğer türleri de kullanır. Bazı senaryolarda Visual Studio ve SharePoint tarafından sağlanan diğer nesne modellerini türleri de kullanabilirsiniz. Bu nesne modellerinin her biri amacı anlamak ve bunları birbiriyle SharePoint araçları için uzantıları oluşturmak için nasıl kullanılacağını bilmek gerekir.
@@ -83,7 +83,7 @@ ms.locfileid: "56639342"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio Otomasyon nesne modeli
  Visual Studio projelerine otomatikleştirmek için kullanabileceğiniz API'ler ve IDE, Visual Studio Otomasyon nesne modeli sağlar. Visual Studio nesne modeline SharePoint projelerine özgü olmayan bir projeyle ilgili görevleri gerçekleştirmek için ya da Visual Studio'daki diğer genel otomasyon görevleri gerçekleştirmek için kullanın. Geleneksel olarak, bu nesne modeli, genellikle Visual Studio eklentileri ve makroları kullanılır, ancak bunu Ayrıca SharePoint araçları uzantıları kullanabilirsiniz.
 
- Visual Studio Otomasyon nesne modeli ana bölümü tanımlanan *EnvDTE.dll* derleme. *EnvDTE\\<version>.dll* derlemeler, Visual Studio'nun belirli sürümlerinde sunulan ek işlevler sağlar. Bu derlemeler, Visual Studio ile eklenmiştir.
+ Visual Studio Otomasyon nesne modeli ana bölümü tanımlanan *EnvDTE.dll* derleme. *EnvDTE\\\<sürüm > .dll* derlemeler, Visual Studio'nun belirli sürümlerinde sunulan ek işlevler sağlar. Bu derlemeler, Visual Studio ile eklenmiştir.
 
  Otomasyon nesne modeli hakkında daha fazla bilgi için bkz: [Visual Studio SDK başvurusu](../extensibility/visual-studio-sdk-reference.md).
 

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634935"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324688"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerindeki Şerit Özelleştirmelerini Güncelleştirme
   Projenizi kullanılarak oluşturulmuş bir Şerit özelleştirme içerip içermediğini **Şerit (Görsel Tasarımcı)** proje öğesi, hedef Framework'ü değiştirilirse proje kodunuzu aşağıdaki değişiklikleri yapmalısınız [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya Daha sonra.
@@ -103,9 +103,9 @@ ms.locfileid: "56634935"
 
      Örneğin, dosyanızın işleyen kod aşağıdaki satırı içerdiğini varsayın <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> olay .NET Framework 3. 5'i hedefleyen bir proje.
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder> hedefleyen bir proje içinde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra aşağıdaki kodu yerine kullanmanız gerekir.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> hedefleyen bir proje içinde [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha sonra aşağıdaki kodu yerine kullanmanız gerekir.
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder> Şerit temsilcileri tam bir listesi için bkz. [işlemek Şerit olaylarını](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> Şerit temsilcileri tam bir listesi için bkz. [işlemek Şerit olaylarını](#ribbonevents).
 
 5.  Visual Basic projelerinde bulun `ThisRibbonCollection` dosyanın sonunda sınıfı. Bu sınıf bildirimi artık öğesinden devralacak şekilde değiştirin `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634935"
 
   Aşağıdaki kod örneğinde nasıl oluşturulacağını gösterir. bir <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> hedefleyen bir projeye bir Şerit sınıfında [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder> programlı olarak oluşturabilir denetimleri ve hedefleyen projelerde bu denetimleri oluşturmak için kullanılacak yöntemi aşağıdaki tabloda listelenmektedir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> programlı olarak oluşturabilir denetimleri ve hedefleyenprojelerdebudenetimlerioluşturmakiçinkullanılacakyöntemiaşağıdakitablodalistelenmektedir.[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
 
 |Denetim|Kullanılacak RibbonFactory yöntemi [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ve sonraki projeleri|
 |-------------| - |

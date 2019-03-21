@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fc30ff87d02013a95ea7950841e3185b2bdc69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643671"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323001"
 ---
 # <a name="projectitem-element"></a>ProjectItem öğesi
   Bir SharePoint proje öğesi temsil eder. Bu öğe gerekli kök öğe, *.spdata* dosya.
@@ -70,7 +70,7 @@ ms.locfileid: "56643671"
 
 |||
 |-|-|
-|**Namespace**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Şema adı**|SharePoint proje öğesi şema|
 |**Doğrulama dosyası**|ProjectItemModelSchema.xsd|
 |**Boş olabilir**|Hayır|

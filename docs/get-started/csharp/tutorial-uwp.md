@@ -1,4 +1,5 @@
 ---
+title: Visual Studio ile bir evrensel Windows Platformu (UWP) uygulaması oluşturma veC#
 description: XAML ile Visual Studio'da bir UWP uygulaması oluşturma veC#
 titleSuffix: ''
 ms.custom: seodec18, get-started
@@ -13,16 +14,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 854b6b1652385887a6df4580c3eb31229d809860
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 557a87253b2fefe90fa83a06666a196128f64360
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868997"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322564"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Öğretici: Visual Studio'da XAML ve C ile Evrensel Windows platformu ilk uygulamanızı oluşturma&#35;
 
-Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), tüm Windows 10 cihazlarda çalışan bir "Hello World" uygulaması oluşturacaksınız. Evrensel Windows Platformu (UWP) proje şablonu, Extensible Application Markup Language (XAML) kullanacaksınız. Bunu yapmayı ve C# programlama dilidir.
+Visual Studio tümleşik geliştirme ortamı (IDE) bu giriş tüm Windows 10 cihazlarda çalışan bir "Hello World" uygulaması oluşturacaksınız. Evrensel Windows Platformu (UWP) proje şablonu, Extensible Application Markup Language (XAML) kullanacaksınız. Bunu yapmayı ve C# programlama dilidir.
 
 ::: moniker range="vs-2017"
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
@@ -50,22 +51,24 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 4. Varsayılan değerleri kabul **hedef sürümü** ve **en düşük sürüm** ayarlarında **yeni evrensel Windows platformu projesi** iletişim kutusu.
 
-![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/new-uwp-project-target-minver-dialog.png)
+   ![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Visual Studio'yu başlatın ve **başlangıç penceresi**, seçin **yeni bir proje oluşturma**.
+2. Visual Studio'yu açın ve pencerenin başlangıç **yeni bir proje oluşturma**.
 
 3. Üzerinde **yeni bir proje oluşturun** ekranında, girin *Evrensel Windows* arama kutusunda seçtiğiniz C# şablonu **boş uygulama (Evrensel Windows)** seçin **Sonraki**.
 
-![Oluştur yeni bir proje ekran görüntüsü](media/vs-2019/uwp-create-new-project.png)
+   ![Oluştur yeni bir proje ekran görüntüsü](media/vs-2019/uwp-create-new-project.png)
+
+   > [!NOTE]
+   > Görmüyorsanız **boş uygulama (Evrensel Windows)** proje şablonu, tıklayın **daha fazla araçları ve özellikleri yükleme** bağlantı.<br><br>![Daha fazla araçlarına ve özelliklerine bağlantı Yükle'ye tıklayın](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio Yükleyicisi'ni başlatır. Seçin **Evrensel Windows platformu geliştirme** iş yükü ve ardından **Değiştir**.<br><br>![Visual Studio Yükleyicisi'nde Evrensel Windows platformu geliştirme iş yükü](media/uwp-dev-workload.png)
 
 4. Varsayılan değerleri kabul **hedef sürümü** ve **en düşük sürüm** ayarlarında **yeni evrensel Windows platformu projesi** iletişim kutusu.
 
-![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Varsayılan hedef sürümünü ve yeni evrensel Windows platformu projesi iletişim kutusunda en düşük sürüm ayarlarını kabul edin](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
-   
 
    > [!NOTE]
    > Bu ilk kez ise bir UWP uygulaması oluşturmak için Visual Studio'yu kullandınız bir **ayarları** iletişim kutusu görünebilir. Seçin **Geliştirici modu**ve ardından **Evet**.<br><br>

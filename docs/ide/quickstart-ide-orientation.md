@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 608f276946a8b4a377eb8d8934f3f7bdc23663ce
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fe3b78562b9fa7b5632e1ce60788c918e065d3dc
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867832"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325184"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE’ye ilk bakış
 
@@ -25,7 +25,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ## <a name="start-page"></a>Başlangıç Sayfası
 
-Visual Studio'yu başlattıktan sonra göreceksiniz ilk şey bir olasılıktır **başlangıç sayfası**. **Başlangıç sayfası** "hub" komut bulmanıza ve proje dosyalarını daha hızlı ihtiyacınız yardımcı olmak için tasarlanmıştır. **Son** projeleri ve klasörleri, çalıştığınız üzerinde son bölümünde görüntülenir. Altında **yeni proje**, ortaya çıkarmak için bir bağlantıya tıklayabilirsiniz **yeni proje** iletişim kutusu veya altında **açın**, bir var olan kod proje veya klasör açabilirsiniz. Sağ tarafta en güncel Geliştirici haberlerini oluşan akışını ' dir.
+Visual Studio'yu açtıktan sonra göreceksiniz ilk şey bir olasılıktır **başlangıç sayfası**. **Başlangıç sayfası** "hub" komut bulmanıza ve proje dosyalarını daha hızlı ihtiyacınız yardımcı olmak için tasarlanmıştır. **Son** projeleri ve klasörleri, çalıştığınız üzerinde son bölümünde görüntülenir. Altında **yeni proje**, ortaya çıkarmak için bir bağlantıya tıklayabilirsiniz **yeni proje** iletişim kutusu veya altında **açın**, bir var olan kod proje veya klasör açabilirsiniz. Sağ tarafta en güncel Geliştirici haberlerini oluşan akışını ' dir.
 
 ![Visual Studio'da başlangıç sayfası](media/start-page.png)
 
@@ -39,7 +39,7 @@ Kapatırsanız **başlangıç sayfası** ve tekrar görmek istiyorsanız, burada
 
 ## <a name="start-window"></a>Başlangıç penceresi
 
-Visual Studio'yu başlattıktan sonra gördüğünüz ilk şey bir başlangıç penceredir. Başlangıç penceresi "kodu daha hızlı" yardımcı olmak için tasarlanmıştır. Bu, kopyalama veya kullanıma alma kodu, varolan bir projeyi veya çözümü açın, yeni bir proje oluşturun veya yalnızca bazı kod dosyaları içeren klasör Aç için seçenek vardır.
+Visual Studio'yu açtıktan sonra gördüğünüz ilk şey bir başlangıç penceredir. Başlangıç penceresi "kodu daha hızlı" yardımcı olmak için tasarlanmıştır. Bu, kopyalama veya kullanıma alma kodu, varolan bir projeyi veya çözümü açın, yeni bir proje oluşturun veya yalnızca bazı kod dosyaları içeren klasör Aç için seçenek vardır.
 
 [![](media/vs-2019/start-window-labeled.png "Visual Studio 2019 başlangıç penceresi")](media/vs-2019/start-window-labeled.png#lightbox)
 

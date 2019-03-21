@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 128f2f4a95ea1e8f92dda8c7771994a9e59a209e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873265"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324087"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE Hoş Geldiniz | Visual Basic
 
@@ -207,7 +207,7 @@ Başlamak için [Visual Studio'yu indirin](https://visualstudio.microsoft.com/do
 
 ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../media/dotnet-core-cross-platform-workload.png)
 
-Visual Studio'yu ilk kez başlattığınızda, isteğe bağlı olarak yapabilecekleriniz [oturum](../../ide/signing-in-to-visual-studio.md) Microsoft hesabınızı veya iş veya Okul hesabınızı kullanarak.
+Visual Studio'yu ilk kez açtığınızda, isteğe bağlı olarak yapabilecekleriniz [oturum](../../ide/signing-in-to-visual-studio.md) Microsoft hesabınızı veya iş veya Okul hesabınızı kullanarak.
 
 ## <a name="customize-visual-studio"></a>Visual Studio'yu özelleştirme
 

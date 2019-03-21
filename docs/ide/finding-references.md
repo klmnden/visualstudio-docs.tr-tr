@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335278"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324753"
 ---
 # <a name="find-references-in-your-code"></a>Kodunuzdaki başvuruları bulma
 
 Kullanabileceğiniz **tüm başvuruları Bul** belirli kod öğelerinin tabanınızın Burada başvurulan bulmak için komutu. **Tüm başvuruları Bul** komut başvurularını bulmak istediğiniz öğe (sağ tıklama) bağlam menüsünde kullanılabilir. Veya, klavye kullanıcısıysanız basın **Shift + F12**.
 
-Adlı bir araç penceresinde Sonuçların görüntülenme  **<element> başvuruları**burada *öğesi* aradığınız öğeyi adıdır. Araç çubuğunda **başvuruları** penceresi olanak sağlar:
+Adlı bir araç penceresinde Sonuçların görüntülenme  **\<öğesi > başvuruları**burada *öğesi* aradığınız öğeyi adıdır. Araç çubuğunda **başvuruları** penceresi olanak sağlar:
 - Aşağı açılan liste kutusunda arama kapsamını değiştirin. Yalnızca değiştirilen belgeler kadar tüm çözümün tamamını bakın seçebilirsiniz.
 - Başvurulan öğeye seçerek kopyalama **kopyalama** düğmesi.
 - Düğmeler, liste veya basın sonraki veya önceki konuma Git seçim **F8** ve **Shift + F8** Bunu yapmak için anahtarları.

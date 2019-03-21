@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428667"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325298"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE’ye ilk bakış
 
@@ -57,13 +57,13 @@ Visual Studio'nun özellikleri keşfetmeye devam etmek için yeni bir proje olu�
 
 ::: moniker range=">=vs-2019"
 
-1. Üzerinde **başlangıç penceresi**seçin **yeni bir proje oluşturma**, arama kutusuna yazın, sonra da **javascript** "javascript" içeren bu proje türleri listesini filtrelemek için içinde ad veya dil türü.
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**, arama kutusuna yazın, sonra da **javascript** içeren kendi adı veya dil türü "JavaScript'te" Bu proje türleri listesini filtrelemek için.
 
    Visual Studio, çeşitli yardımcı olacak proje şablonları, hızlı bir şekilde kodlama başlama sağlar. (TypeScript geliştiricisiyseniz, alternatif olarak, o dilde bir proje oluşturmak çekinmeyin. Biz göz atan kullanıcı Arabirimi için tüm programlama dillerinde benzer.)
 
    ![Visual Studio Başlangıç penceresinde proje şablonlarında Ara](media/vs-2019/create-new-project.png)
 
-1. Seçin bir **boş Node.js Web uygulaması** proje şablonu ve tıklatın **sonraki**. 
+1. Seçin bir **boş Node.js Web uygulaması** proje şablonu ve tıklatın **sonraki**.
 
 1. İçinde **yeni projenizi yapılandırın** görüntülenen iletişim kutusunda varsayılan proje adını kabul edin ve **Oluştur**.
 

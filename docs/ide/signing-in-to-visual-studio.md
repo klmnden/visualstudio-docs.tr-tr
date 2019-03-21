@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840837"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325113"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma
 
@@ -44,7 +44,7 @@ Oturum açtığınızda, Visual Studio deneyimini zenginleştirin. Örneğin, ot
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio'ya oturum açma
 
-Visual Studio'yu ilk kez başlattığınızda, oturum açın ve bazı temel kayıt bilgilerini sağlamanız istenir. Bir Microsoft hesabı ya da en iyisi, temsil eden bir iş veya Okul hesabı seçmeniz gerekir. Bu hesapların yoksa, ücretsiz bir Microsoft hesabı oluşturabilirsiniz. Bkz: [nasıl oturum açabilirim bir Microsoft hesabı için mi?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Visual Studio'yu ilk kez açtığınızda, oturum açın ve bazı temel kayıt bilgilerini sağlamanız istenir. Bir Microsoft hesabı ya da en iyisi, temsil eden bir iş veya Okul hesabı seçmeniz gerekir. Bu hesapların yoksa, ücretsiz bir Microsoft hesabı oluşturabilirsiniz. Bkz: [nasıl oturum açabilirim bir Microsoft hesabı için mi?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Daha sonra, Visual Studio'da kullanmak istediğiniz kullanıcı arabirimi ayarlarını ve renk temasını seçin. Visual Studio, bu ayarları hatırlar ve bunları tüm Visual Studio ortamlardaki oturum açmanızdan eşitler. Eşitlenmiş ayarlar listesi için bkz. [eşitlenen ayarlar](../ide/synchronized-settings-in-visual-studio.md). Açarsanız ayarları daha sonra değiştirebilirsiniz **Araçları** > **seçenekleri** Visual Studio'daki menü.
 
