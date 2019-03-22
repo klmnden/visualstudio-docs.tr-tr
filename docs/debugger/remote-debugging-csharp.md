@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526743"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355169"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da C# veya Visual Basic projesi
 Farklı bir bilgisayara dağıtılan bir Visual Studio uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın, projenizi Visual Studio'dan uzak bilgisayara bağlanmak için yapılandırın ve ardından uygulamanızı çalıştırın.
@@ -71,7 +71,15 @@ Hata ayıklayıcı uzak makinede Visual C# veya Visual Basic Masaüstü uygulama
 
 5. Emin **çalışma dizini** metin kutusu boştur.
 
-6. Seçin **uzak makine**ve türü **MJO-DL:4022** metin kutusuna. (4022 uzaktan hata ayıklayıcı penceresinde gösterilen bağlantı noktası numarasıdır. Bağlantı noktası numarasını artırır 2. Visual Studio'nun her sürümü).
+6. Seçin **uzak makine**ve türü **yourmachinename:port** metin kutusuna. (Bağlantı noktası numarası uzaktan hata ayıklayıcı penceresinde gösterilir. Bağlantı noktası numarasını artırır 2. Visual Studio'nun her sürümü).
+
+    Bu örnekte, kullanın:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** Visual Studio 2019 tarihinde
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** Visual Studio 2017
+    ::: moniker-end
 
 7. Emin olun **yerel kod hata ayıklamayı** seçilmez.
 

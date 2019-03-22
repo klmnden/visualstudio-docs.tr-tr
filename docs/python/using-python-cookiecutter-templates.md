@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957984"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354779"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları keşfedin, şablon seçeneklerini giriş ve projeleri ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ile eklemiştir ve Visual Studio'nun önceki sürümlerinde ayrı olarak yüklenebilir.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları keşfedin, şablon seçeneklerini giriş ve projeleri ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ve üzeri dahil ve Visual Studio'nun önceki sürümlerinde ayrı olarak yüklenebilir.
 
 Cookiecutter gerektirir Python 3.3 veya üzeri (32 bit veya 64-bit) veya 3 4.2 veya üzeri Anaconda (32 bit veya 64-bit). Visual Studio, uygun bir Python yorumlayıcısı kullanılabilir durumda değilse bir uyarı görüntüler. Visual Studio çalışırken bir Python yorumlayıcısını yükleyerek tıklatmak **giriş** yeni yüklenen yorumlayıcı algılamak için Cookiecutter araç çubuğunda. (Bkz [Python ortamları](managing-python-environments-in-visual-studio.md) genel ortamlar hakkında daha fazla bilgi için.)
 

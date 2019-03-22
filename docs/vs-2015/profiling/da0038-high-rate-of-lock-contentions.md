@@ -13,17 +13,17 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bdd325974a67075599df722bf994cc110f9dd69
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766208"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355128"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Yüksek oranda kilit çakışmaları
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Yüksek Oranda Kilit çakışması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [DA0038: Yüksek oranda kilit çakışmaları](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [DA0038: Yüksek oranda kilit çakışmaları](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

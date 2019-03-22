@@ -15,17 +15,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f91571cc1830efb9ea5e644444ae856162f854e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cece70c942b62390e0ba3e96c57c1c46c4dd46fa
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772868"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355153"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Tanımlayıcılar doğru ön eke sahip olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1715: Tanımlayıcılar doğru öneki olmalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1715: Tanımlayıcılar doğru öneki olmalıdır](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) docs.microsoft.com'da.  
   
 |||  
 |-|-|  
@@ -37,7 +37,7 @@ Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1715: Tanımlayıcı
 ## <a name="cause"></a>Sebep  
  Dışarıdan görünen bir arabirimin adını bir büyük harf 'ı' başlamıyor.  
   
- -veya-  
+ veya  
   
  Genel tür parametresi dışarıdan görünen tür veya yöntem adı ile bir büyük harf 'T başlamıyor '.  
   

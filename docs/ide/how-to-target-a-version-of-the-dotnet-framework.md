@@ -1,6 +1,6 @@
 ---
 title: Bir .NET Framework sürümünü hedefleme
-ms.date: 02/06/2018
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -10,41 +10,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc8a808ba3a5da46b4dbe3be3aa00921ea869cb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954094"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355402"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Nasıl yapılır: .NET Framework’ün bir sürümünü hedefleme
 
-Bu belge, bir sürümünü hedefleyecek şekilde açıklar varolan bir Visual Basic içinde hedeflenen sürümün nasıl değiştirileceğini ve bir proje oluşturduğunuzda, .NET Framework'ün C#, veya Visual F# proje.
+Bu makalede, bir proje oluşturduğunuzda, .NET Framework sürümünü hedefleyecek şekilde açıklar. Ayrıca varolan bir Visual Basic içinde hedeflenen sürümün nasıl değiştirileceğini açıklar C#, veya F# proje.
 
 > [!IMPORTANT]
 > C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef framework ve platform araç takımını değiştirmek](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="to-target-a-version-when-you-create-a-project"></a>Projenizi oluştururken bir sürümü hedeflemek için
+## <a name="target-a-version-when-you-create-a-project"></a>Bir proje oluşturduğunuzda bir sürümünü hedefleme
 
-Bir proje oluşturduğunuzda, kullanılabilir .NET Framework sürümlerinin hangi sürümlerinin yüklü olduğunu ve seçili şablonda bağlıdır **yeni proje** iletişim kutusu.
+Bir proje oluşturduğunuzda, kullanılabilir .NET Framework sürümlerinin hangi sürümlerinin yüklü olduğunu ve seçilen proje şablonuna bağlıdır.
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-1. Yüklü Şablonlar listesinde oluşturmak istediğiniz proje türünü seçin ve proje için bir ad girin.
+1. Oluşturmak istediğiniz proje türü için bir şablon seçin. Proje için bir ad girin.
 
-1. Gelen **Framework** altındaki açılır listede **yeni proje** iletişim kutusunda, projenizin hedeflemesini istediğiniz .NET Framework sürümünü seçin.
+1. Gelen **Framework** açılır listede iletişim kutusunun alt kısmında, projenizin hedeflemesini istediğiniz .NET Framework sürümünü seçin.
 
-    Çerçeve listesi yalnızca seçtiğiniz şablon için geçerli olan sürümler gösterilmektedir. .NET Core gibi bazı proje türleri, .NET Framework gerektirmez. Böyle durumlarda, **Framework** açılır listede gizlenir.
+   Çerçeve listesi yalnızca seçtiğiniz şablon için geçerli olan sürümler gösterilmektedir. .NET Core gibi bazı proje türleri, .NET Framework gerektirmez. Böyle durumlarda, **Framework** açılır listede gizlenir.
 
-    ![Framework açılan yeni proje iletişim kutusunda](media/vside-newproject-framework.png)
+   ::: moniker range="vs-2017"
 
-1. Seçin **Tamam** düğmesi.
+   ![Framework açılan yeni proje iletişim kutusunda](media/vside-newproject-framework.png)
 
-## <a name="to-change-the-targeted-version"></a>Hedeflenen sürümü değiştirmek için
+   ::: moniker-end
 
-Visual Basic'te .NET Framework'ün hedeflenen sürümünü değiştirebilirsiniz C#, veya Visual F# bu yordamı izleyerek proje.
+   ::: moniker range=">=vs-2019"
 
-C++ projeleri için hedef sürümü değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Hedef framework ve platform araç takımını değiştirmek](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+   ![VS 2019 Framework seçicide](media/vs-2019/configure-new-project-framework.png)
+
+   ::: moniker-end
+
+1. Devam [proje oluşturma](create-new-project.md).
+
+## <a name="change-the-targeted-version"></a>Hedeflenen sürümü değiştirmek
+
+Visual Basic'te .NET Framework'ün hedeflenen sürümünü değiştirebilirsiniz C#, veya F# bu yordamı izleyerek proje.
 
 1. İçinde **Çözüm Gezgini**, değiştirin ve ardından istediğiniz projenin kısayol menüsünü **özellikleri**.
 

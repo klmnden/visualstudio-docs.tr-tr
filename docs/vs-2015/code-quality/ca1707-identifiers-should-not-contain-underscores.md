@@ -15,17 +15,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9a28e0defae3df035d69065337b35d56fcdba75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8ae59f396115f10a858c5bc31d8bcdbf967d1d80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764700"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355103"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Tanımlayıcılar alt çizgi içermemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1707: Tanımlayıcılar alt çizgi içermemelidir](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1707: Tanımlayıcılar alt çizgi içermemelidir](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

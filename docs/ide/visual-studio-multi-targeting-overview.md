@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949648"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355279"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio çoklu sürüm desteğine genel bakış
 
@@ -35,13 +35,13 @@ Ayrıca, farklı sürümlerini hedefleyen framework'ün projeleri içeren bir ç
 
 - Önceki bir sürümünü hedefleyen bir proje açtığınızda [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio, otomatik olarak yükseltebilir veya hedefi olarak bırakın-olduğu.
 
-- Bir proje oluşturduğunuzda, sürümünü belirtebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hedeflemek istediğiniz.
+- Bir proje oluşturduğunuzda, hedeflemek istediğiniz .NET Framework sürümünü belirtebilirsiniz.
 
-- Sürümünü değiştirebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] varolan bir projenin hedefler.
+- Varolan bir projenin .NET Framework sürümünü değiştirebilirsiniz hedefler.
 
-- Farklı bir sürümünü hedefleyebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aynı çözümdeki çeşitli projelerin her birinde içinde.
+- Aynı çözümdeki çeşitli projelerin her birinde, .NET Framework'ün farklı bir sürümünü hedefleyebilirsiniz.
 
-- Sürümünü değiştirdiğinizde [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , bir projenin hedeflediği [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] başvurular ve yapılandırma dosyalarında gerekli değişiklikleri yapar.
+- .NET Framework sürümünü değiştirdiğinizde, bir projenin hedeflediği [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] başvurular ve yapılandırma dosyalarında gerekli değişiklikleri yapar.
 
 Önceki bir sürümünü hedefleyen bir proje üzerinde çalışırken [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dinamik olarak geliştirme ortamını aşağıdaki gibi değişir:
 
@@ -62,17 +62,27 @@ Ayrıca, farklı sürümlerini hedefleyen framework'ün projeleri içeren bir ç
 
 ## <a name="select-a-target-framework-version"></a>Hedef framework sürümü seçin
 
-Bir proje oluşturduğunuzda, hedef .NET Framework sürümünü seçin **yeni proje** iletişim kutusu. Seçili şablon türü için geçerli olan yüklü framework sürümleri kullanılabilir çerçeveleri listesini içerir. .NET Framework, .NET Core şablonları, gerektirmeyen şablon türleri için **Framework** açılır listede gizlenir.
+Bir proje oluşturduğunuzda, proje şablonunu seçtikten sonra hedef .NET Framework sürümünü seçin. Seçili şablon türü için geçerli olan yüklü framework sürümleri kullanılabilir çerçeveleri listesini içerir. .NET Framework, .NET Core şablonları, gerektirmeyen şablon türleri için **Framework** açılır listede gizlenir.
 
-![Framework açılan yeni proje iletişim kutusunda](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-Varolan bir projede, hedef değiştirebilirsiniz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümünü Proje Özellikleri iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Framework açılan VS 2017'de](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![VS 2019 Framework açılan listesi](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+Varolan bir projede, hedef .NET Framework sürümünü Proje Özellikleri iletişim kutusunda değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Sistem ve kullanıcı derleme başvurularını çözümleme
 
 Bir .NET Framework sürümünü hedeflemek için önce uygun derleme başvurularını yüklemeniz gerekir. .NET Framework'ün farklı sürümleri için geliştirici paketlerinin indirebileceğiniz [.NET indirir](https://www.microsoft.com/net/download/windows) sayfası.
 
-**Başvuru Ekle** iletişim kutusu, hedefine ait olmayan sistem derlemelerini devre dışı bırakır [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürüm böylece bunlar yanlışlıkla bir projeye eklenemez. (Sistem derlemeleri, *.dll* dahil edilen dosyaların bir [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sürümü.) Hedeflenen sürümden daha sonraki bir framework sürümüne ait başvuruları çözmeyecek ve böyle bir başvuruya dayanan denetimler eklenemez. Böyle bir başvuruyu etkinleştirmek istiyorsanız, sıfırlama [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] hedef başvuru içeren bir proje.  Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Başvuru Ekle** iletişim kutusunda, hedef .NET Framework sürümüne ait değil ve böylece bunlar yanlışlıkla bir projeye eklenemez sistem derlemelerini devre dışı bırakır. (Sistem derlemeleri, *.dll* bir .NET Framework sürümünü dahil edilen dosyaların.) Hedeflenen sürümden daha sonraki bir framework sürümüne ait başvuruları çözmeyecek ve böyle bir başvuruya dayanan denetimler eklenemez. Böyle bir başvuruyu etkinleştirmek istiyorsanız, başvuru içeren bir projenin .NET Framework hedef sıfırlayın.  Daha fazla bilgi için [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Derleme başvuruları hakkında daha fazla bilgi için bkz: [tasarım zamanında derlemeleri çözme](../msbuild/resolving-assemblies-at-design-time.md).
 

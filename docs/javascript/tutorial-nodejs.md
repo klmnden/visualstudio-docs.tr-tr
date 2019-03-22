@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6775f2fc24672c2bd7b798869085ea8e6170f21c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070327"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355571"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve Express uygulaması oluşturma
 
@@ -75,15 +75,13 @@ Bu öğreticide, Node.js ve express uygulaması için kod içeren basit bir proj
 
 1. Visual Studio'yu açın.
 
-1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
-
 1. Yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    İçinde **yeni bir proje oluşturma** iletişim kutusuna **javascript** sonuçlarını filtrelemek ve ardından arama kutusuna **temel Azure Node.js Express 4 uygulaması**seçin **Tamam**.
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **yeni temel Azure Node.js Express 4 uygulaması oluşturma** (JavaScript). Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.
     ::: moniker-end
     Görmüyorsanız **temel Azure Node.js Express 4 uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 758f7549eeb1726b13da31a96b4c006194da6ee6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713548"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355321"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows üzerinde Azure App Service'e yayımlama
 
@@ -25,10 +25,10 @@ ms.locfileid: "56713548"
 
 Visual Studio, Python web uygulaması doğrudan Windows üzerinde Azure App Service'te yayımlama olanağı sağlar. Windows üzerinde Azure App Service'e yayımlama anlamına gelir sunucuya gerekli dosyaları kopyalanıyor ve uygun bir ayar `web.config` uygulamanızı başlatmak nasıl web sunucusuna yönlendiren dosya.
 
-Yayımlama işlemi, Visual Studio 2017 ve Visual Studio 2015 arasında farklılık gösterir. Özellikle, Visual Studio 2015 oluşturulmasını da dahil olmak üzere bu adımlardan bazıları otomatikleştirir `web.config`, ancak bu Otomasyon uzun vadeli esneklik ile denetim sınırlar. Visual Studio 2017, daha fazla el ile yapılacak adımlar gerekli ancak Python ortamınız üzerinde daha kesin denetim sağlar. Her iki seçenek aşağıda açıklanmıştır.
+Yayımlama işlemi, Visual Studio 2017 ve üzeri ve Visual Studio 2015 arasında farklılık gösterir. Özellikle, Visual Studio 2015 oluşturulmasını da dahil olmak üzere bu adımlardan bazıları otomatikleştirir `web.config`, ancak bu Otomasyon uzun vadeli esneklik ile denetim sınırlar. Visual Studio 2017 ve üzeri, daha fazla el ile yapılacak adımlar gerektirir ancak Python ortamınız üzerinde daha kesin denetim sağlar. Her iki seçenek aşağıda açıklanmıştır.
 
 > [!Note]
-> Blog gönderisi, Visual Studio 2015 ve Visual Studio 2017 arasındaki değişiklikleri üzerinde arka plan bilgileri için bkz. [Visual Studio 2017'de Azure'da Yayımla](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
+> Blog gönderisi, Visual Studio 2015 ve Visual Studio 2017 ve sonraki sürümleri arasındaki değişiklikleri üzerinde arka plan bilgileri için bkz. [Visual Studio 2017'de Azure'da Yayımla](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -71,13 +71,13 @@ Geçici bir App Service gibi bir Azure aboneliğine gerek duymadan oluşturun:
 
 ## <a name="configure-python-on-azure-app-service"></a>Azure App Service'te Python'u yapılandırma
 
-Sonra boş bir App Service Web çalışan uygulama (veya aboneliğinizdeki ücretsiz sitesinde), açıklandığı gibi seçilen bir Python sürümünü yükleyin [Azure App Service'te Python'u yönetme](managing-python-on-azure-app-service.md). Visual Studio 2017'den yayımlama için olan site uzantısı makalesinde açıklandığı gibi yüklü Python yorumlayıcısı tam yolunu kaydedin.
+Sonra boş bir App Service Web çalışan uygulama (veya aboneliğinizdeki ücretsiz sitesinde), açıklandığı gibi seçilen bir Python sürümünü yükleyin [Azure App Service'te Python'u yönetme](managing-python-on-azure-app-service.md). Visual Studio 2017'den ve daha sonra kayıt olan site uzantısı makalesinde açıklandığı gibi yüklü Python yorumlayıcısı tam yolunu yayımlamak için.
 
 İsterseniz de yükleyebilirsiniz `bottle` işlemi bu yönergeleri kullanarak bu izlenecek yolda bölümü diğer adımlar gibi paketin yüklü olduğu paketi.
 
-## <a name="publish-to-app-service---visual-studio-2017"></a>App Service - Visual Studio 2017 yayımlama
+## <a name="publish-to-app-service---visual-studio-2017-and-later"></a>App Service - Visual Studio 2017 ve sonraki yayımlama
 
-Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca dosyalar yayımlanıyor. Bu nedenle, sunucu ortamı yapılandırmak için gerekli dosyaları oluşturmak için gereklidir.
+Azure App Service'e Visual Studio 2017 ve sonraki kopyaları, projenizdeki sunucuya yalnızca dosyalar yayımlanıyor. Bu nedenle, sunucu ortamı yapılandırmak için gerekli dosyaları oluşturmak için gereklidir.
 
 1. Visual Studio **Çözüm Gezgini**'nde, projeye sağ tıklayın ve **Ekle > Yeni Öğe...**'yi seçin. Görüntülenen iletişim kutusunda Tamam'ı seçin ve "Web.config Pro Azure (Fast CGI)" şablonu seçme. Bu, oluşturur bir `web.config` proje kökünüze dosyasında.
 
@@ -143,11 +143,11 @@ Visual Studio 2017 kopyalar, Azure App Service'e sunucuya projenizdeki yalnızca
 
     a. Azure aboneliğinizi: seçin **Microsoft Azure App Service**, ardından **var olanı Seç** ardından **Yayımla**. App service ve uygun aboneliği seçebilirsiniz bir iletişim kutusu görüntülenir. App Service görünmüyorsa, geçici bir APp Service için aşağıda açıklandığı gibi indirilen yayımlama profilini kullanın.
 
-    ![Azure 1. adım için Visual Studio 2017, mevcut aboneliklerinizi yayımlama](media/tutorials-common-publish-1a-2017.png)
+    ![Azure 1. adım, Visual Studio 2017 ve üzeri, mevcut abonelikleri yayımlayın](media/tutorials-common-publish-1a-2017.png)
 
     b. Geçici bir App Service üzerinde try.azurewebsites.net kullanıyorsanız veya aksi halde bir yayımlama profili kullanmanız gerekir, seçin **>** bulmak için Denetim **profili içeri aktar**, bu seçenek, ardından seçin seçin **Yayımla**. Bu konumu için ister `.publishsettings` dosyasını daha önce indirdiğiniz.
 
-    ![Azure 1. adım için Visual Studio 2017, geçici app Service'e yayımlama](media/tutorials-common-publish-1b-2017.png)
+    ![1. adım Azure, Visual Studio 2017 ve üzeri, geçici app Service'e yayımlama](media/tutorials-common-publish-1b-2017.png)
 
 1. Visual Studio, bir "Web yayımlama etkinlik" penceresinde ve yayımlama penceresinde Yayımlama durumunu görüntüler. Yayımlama tamamlandıktan sonra varsayılan tarayıcı site URL'sini açar. URL'yi Yayımla penceresinde da gösterilir.
 

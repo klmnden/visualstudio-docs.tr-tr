@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920112"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355704"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Flask web çerçevesi ile çalışmaya başlama
 
@@ -40,7 +40,7 @@ Bu adımları boyunca üç ayrı projeler içeren tek bir Visual Studio çözüm
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio 2017'de Windows aşağıdaki seçeneklerle:
+- Visual Studio 2017 veya sonraki bir sürümü Windows aşağıdaki seçeneklerle:
   - **Python geliştirme** iş yükü (**iş yükü** yükleyici sekmede). Yönergeler için [Visual Studio'da Python yükleme desteği](installing-python-support-in-visual-studio.md).
   - **Git için Windows** ve **Visual Studio için GitHub uzantısı** üzerinde **tek tek bileşenler** sekmesinde altında **kod Araçları**.
 
@@ -60,7 +60,7 @@ Python geliştirme Visual Studio şu anda Mac için desteklenmiyor Mac ve Linux 
     - **Konum**: Visual Studio çözüm ve proje oluşturmak bir konum belirtin.
     - **Çözüm adı**: kümesine **LearningFlask**, bu çözüm için uygun birden çok proje için bir kapsayıcı olarak Bu öğreticide.
     - **Çözüm için dizin oluştur**: (Varsayılan) bırakın.
-    - **Yeni Git deposu oluşturma**: Çözüm oluşturduğunda, Visual Studio yerel bir Git deposu oluşturur (varsayılan olarak temizleyin olan) bu seçeneği seçin. Bu seçeneği görmüyorsanız, Visual Studio 2017 Yükleyicisi'ni çalıştırın ve ekleme **Git için Windows** ve **Visual Studio için GitHub uzantısı** üzerinde **tek tek bileşenler** sekmesi altında **kod Araçları**.
+    - **Yeni Git deposu oluşturma**: Çözüm oluşturduğunda, Visual Studio yerel bir Git deposu oluşturur (varsayılan olarak temizleyin olan) bu seçeneği seçin. Bu seçeneği görmüyorsanız, Visual Studio Yükleyicisi'ni çalıştırın ve ekleme **Git için Windows** ve **Visual Studio için GitHub uzantısı** üzerinde **tek tek bileşenler** sekmesi altında **kod Araçları**.
 
 1. Kısa bir süre sonra Visual Studio, bir iletişim bildiren ile ister **dış paketleri bu proje gerektirir** (aşağıda gösterilmiştir). Şablonun içerdiği için bu iletişim kutusu görünür bir *requirements.txt* en son Flask 1.x paketini başvuran dosya. (Seçmek **gerekli paketleri Göster** tam bağımlılıkları görmek için.)
 

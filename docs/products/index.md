@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Visual Studio belgeleri | Microsoft Docs
-description: 'Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio 2017''yi kullanmayı öğrenin.'
+title: Visual Studio ürünleri | Microsoft Docs
+description: Visual Studio ürün ailesi keşfedin.
 ms.topic: landing-page
 searchScope: []
 ---

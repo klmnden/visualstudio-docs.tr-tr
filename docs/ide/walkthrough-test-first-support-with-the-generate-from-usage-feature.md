@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943044"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355636"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce test geliştirmesi
 
@@ -34,15 +34,19 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Windows sınıf kitaplığı projesi ve bir Test projesi oluşturma
 
-1. İçinde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veya [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], yeni bir **Windows sınıf kitaplığı** proje. Adlandırın `GFUDemo_VB` veya `GFUDemo_CS`hangi dil, kullanmakta olduğunuz bağlı olarak.
+1. İçinde C# veya yeni bir Visual Basic **Windows sınıf kitaplığı** proje. Adlandırın `GFUDemo_VB` veya `GFUDemo_CS`hangi dil, kullanmakta olduğunuz bağlı olarak.
 
-2. İçinde **Çözüm Gezgini**, çözüm simgesine sağ tıklayın, seçin **Ekle**ve ardından **yeni proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **Test**.
+2. İçinde **Çözüm Gezgini**, çözüm simgesine sağ tıklayın, seçin **Ekle** > **yeni proje**.
 
-3. Orta bölmede seçin **birim testi projesi** ve varsayılan adını kabul `UnitTestProject1`. Görünür olduğunda iletişim kutusunda aşağıdaki çizimde [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. İçinde [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], iletişim kutusuna benzer.
+3. Yeni bir **birim testi projesi (.NET Framework)** proje.
 
-    ![Yeni Test projesi iletişim kutusu](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Seçin **Tamam** kapatmak için **yeni proje** iletişim kutusu.
+   Aşağıdaki çizimde gösterildiği **yeni proje** iletişim kutusu için C# şablonları.
+
+   ![Birim Test projesi şablonu](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Sınıf kitaplığı projesine bir başvuru ekleyin
 

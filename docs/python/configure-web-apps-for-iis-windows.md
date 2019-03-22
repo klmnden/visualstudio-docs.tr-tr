@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323577"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355467"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS için Python web uygulamalarını yapılandırma
 
@@ -37,7 +37,7 @@ Ayrılmış bir konak kullanırken, bir sanal ortam yerine uygulamanızı çalı
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Web.config Python yorumlayıcınıza işaret edecek şekilde ayarlayın
 
-Uygulamanızın *web.config* dosya nasıl bunu HttpPlatform (önerilir) veya Fastcgı Python istekleri işleyeceğini hakkında Windows üzerinde çalışan (7 +) IIS web sunucusuna bildirir. Visual Studio 2015 veya önceki sürümlerini otomatik olarak şu değişiklikleri yapın. Visual Studio 2017'yi kullanarak, değiştirmelisiniz *web.config* el ile.
+Uygulamanızın *web.config* dosya nasıl bunu HttpPlatform (önerilir) veya Fastcgı Python istekleri işleyeceğini hakkında Windows üzerinde çalışan (7 +) IIS web sunucusuna bildirir. Visual Studio 2015 veya önceki sürümlerini otomatik olarak şu değişiklikleri yapın. Visual Studio 2017 ve üzeri kullanırken değiştirmelisiniz *web.config* el ile.
 
 ### <a name="configure-the-httpplatform-handler"></a>HttpPlatform işleyiciyi yapılandırmanız
 

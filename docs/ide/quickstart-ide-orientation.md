@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b78562b9fa7b5632e1ce60788c918e065d3dc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325184"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354756"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE’ye ilk bakış
 
@@ -71,7 +71,7 @@ Visual Studio'nun özellikleri keşfetmeye devam etmek için yeni bir proje olu�
 
 1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
 
-   Bildiren bir pencere açılır **yeni bir proje oluşturma**. Bu pencere, bazen olarak adlandırılır **yeni proje** iletişim ve bu değer, burada göz atın ve bir proje şablonu seçin. Ayrıca, son kullanılan proje şablonları listesini tutar.
+   Bildiren bir iletişim kutusu açılır **yeni bir proje oluşturma**. Burada, arayabilirsiniz, filtreleme ve bir proje şablonu seçin. Ayrıca, son kullanılan proje şablonları listesini gösterir.
 
 1. Üstteki arama kutusuna yazın **konsol** adında içeren "konsol" Bu proje türleri listesini filtrelemek için. Daha fazla çekme tarafından arama sonuçlarını iyileştirmek **C#** (veya tercih ettiğiniz başka bir dil) öğesinden **dil** Seçici.
 

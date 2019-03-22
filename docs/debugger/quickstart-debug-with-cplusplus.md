@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b704386f1a1c26530cd24fc4bc2d3e355c9d7e03
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 97435248878fdb4c5f0b257f6a45155c58a62872
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58151251"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354985"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: C++ ile Visual Studio hata ayıklayıcısını kullanarak hata ayıklama
 
@@ -25,13 +25,13 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'da **Dosya > Yeni > Proje**.
+1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    **Yeni bir proje oluşturma** iletişim kutusu açılır. Tür **asp.net** sonuçları filtrelemek için arama kutusuna seçin **ASP.NET Core Web uygulaması**ve ardından **sonraki**. Gibi bir ad girin **MyDbgApp** ve **Oluştur**.
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **c ++**, seçin **şablonları**, ardından **yeni konsol uygulaması projesi oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **Yeni proje** iletişim kutusu açılır. Altında **Visual C++**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **Windows konsol uygulaması**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C++**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **Windows Konsolu Uygulama**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
     ::: moniker-end
 
     Görmüyorsanız **Windows konsol uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.

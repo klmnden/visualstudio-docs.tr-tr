@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342542"
+---
 Barındırma sunucuları için Web dağıtımı 3.6 arabiriminden yayımlama ayarları dosyası oluşturma ek yapılandırma özellikleri sağlar.
 
 1. Windows Server üzerinde zaten yüklü olan Web dağıtma 3.6 varsa, bunu kullanarak kaldırın **Denetim Masası** > **programlar** > **ProgramKaldır**.
@@ -18,4 +26,4 @@ Barındırma sunucuları için Web dağıtımı 3.6 arabiriminden yayımlama aya
 
 4. (İsteğe bağlı) Web dağıtımı doğru açarak çalıştığını doğrulayın **Denetim Masası > Sistem ve Güvenlik > Yönetim Araçları > Hizmetleri** emin olun **Web Dağıtım Aracı hizmeti** çalışıyor ( Hizmet eski sürümlerde farklı adıdır).
 
-    Aracı hizmeti çalışmıyorsa başlatın. Hiç yoksa, Git **Denetim Masası > Programlar > program Kaldır**, bulma **Microsoft Web dağıtımı <version>** . Tercih **değişiklik** yükleme ve seçtiğiniz emin **yerel sabit diskinize yüklenecek** Web dağıtımı bileşenleri için. Değişiklik yükleme adımlarını tamamlayın.
+    Aracı hizmeti çalışmıyorsa başlatın. Hiç yoksa, Git **Denetim Masası > Programlar > program Kaldır**, bulma **Microsoft Web dağıtımı \<sürüm >**. Tercih **değişiklik** yükleme ve seçtiğiniz emin **yerel sabit diskinize yüklenecek** Web dağıtımı bileşenleri için. Değişiklik yükleme adımlarını tamamlayın.

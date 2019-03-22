@@ -11,27 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ee7ab155a24b52916d6b8d53f412e8c71cab8db4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194211"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355730"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Bir uzak IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
 
 ![Uzaktan hata ayıklayıcı bileşenleri](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Bu kılavuz, ayarlayın ve Visual Studio 2017 ASP.NET MVC 4.5.2 uygulama yapılandırmak, IIS'ye dağıtma ve Visual Studio'dan uzak hata ayıklayıcıyı iliştirmek açıklanmaktadır.
+Bu kılavuz, ayarlayın ve Visual Studio ASP.NET MVC 4.5.2 uygulama yapılandırmak, IIS'ye dağıtma ve Visual Studio'dan uzak hata ayıklayıcıyı iliştirmek açıklanmaktadır.
 
 > [!NOTE]
 > Uzaktan için ASP.NET Core yerine hata ayıklamak için bkz: [IIS bilgisayarında uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Azure App Service için kolayca dağıtabilir ve IIS kullanarak önceden yapılandırılmış bir örneğinde hata ayıklama [Snapshot Debugger](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 gerekli) ya da [Haya ayıklayıcı Sunucu Gezgini'nden](../debugger/remote-debugging-azure.md).
 
+## <a name="prerequisites"></a>Önkoşullar
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 bu makaledeki adımları izlemeniz gerekir.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017, bu makaledeki adımları tamamlayabilmeniz için gereklidir.
+::: moniker-end
+
 Bu yordamlar bu sunucu yapılandırmaları üzerinde test edilmiştir:
 * Windows Server 2012 R2 ve IIS 8 (için Windows Server 2008 R2, server adımlarla farklı)
 
-## <a name="requirements"></a>Gereksinimler
+## <a name="network-requirements"></a>Ağ gereksinimleri
 
 Uzaktan hata ayıklayıcı, Windows Server 2008 Service Pack 2 ile başlayarak Windows Server'da desteklenir. Gereksinimlerinin tam listesi için bkz. [gereksinimleri](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -48,7 +57,14 @@ Bu makalede, temel bir Windows server IIS yapılandırmasını ayarlama ve uygul
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>ASP.NET 4.5.2 oluşturun Visual Studio bilgisayardaki uygulama
 
-1. Yeni bir ASP.NET MVC uygulaması oluşturun. (**Dosya > Yeni > Proje**, ardından <strong>Visual C# > Web > ASP.NET Web uygulaması. 4.5.2 **ASP.NET içinde</strong> şablonları bölümünden **MVC**. Emin olun **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.)
+1. Yeni bir ASP.NET MVC uygulaması oluşturun.
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 içinde yazın **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Web uygulaması (.NET oluşturma Framework)**. Görüntülenen iletişim kutusunda, projeyi adlandırın **MyASPApp**ve ardından **Oluştur**. Seçin **MVC** ve **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017'de bunun tercih **Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Web uygulaması**. İçinde **ASP.NET 4.5.2** şablonları bölümünden **MVC**. Emin olun **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.)
+    ::: moniker-end
 
 2. HomeController.cs dosyasını açın ve bir kesim noktası `About()` yöntemi.
 
@@ -165,7 +181,7 @@ Ayrıca, yayımlama ve dosya sistemi veya diğer araçları kullanarak uygulamay
 
 ## <a name="BKMK_msvsmon"></a> İndirme ve Windows Server'da uzak araçları yükleme
 
-Bu öğreticide, Visual Studio 2017 kullanılmıştır.
+Visual Studio sürümünüzle eşleşen uzak Araçlar sürümü indirin.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -186,7 +202,14 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
     > [!TIP]
     > Visual Studio 2017 ve sonraki sürümlerinde, daha önce ekli kullanarak aynı işleme iliştirebilirsiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
-3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: 4022**.
+3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: bağlantı noktası**.
+
+    ::: moniker range=">=vs-2019"
+    **\<Uzak bilgisayar adı >: 4024** Visual Studio 2019 tarihinde
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<Uzak bilgisayar adı >: 4022** Visual Studio 2017
+    ::: moniker-end
 4. Tıklayın **Yenile**.
     Bazı işlemler görünür görmelisiniz **kullanılabilir işlemler** penceresi.
 
@@ -215,10 +238,14 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
 
 Gerekli bağlantı noktaları:
 
-- 80 - IIS için gerekli
-- 8172 - (isteğe bağlı) uygulamayı Visual Studio'dan dağıtmak Web dağıtımı için gerekli
-- 4022 - gerekli Visual Studio 2017'den uzaktan hata ayıklama için (bkz [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md) ayrıntılı bilgi için.
-- UDP 3702 - (isteğe bağlı) bulma bağlantı sağlar, **Bul** düğme Visual Studio uzaktan hata ayıklayıcı eklerken.
+* 80 - IIS için gerekli
+::: moniker range=">=vs-2019"
+* 4024 - gerekli Visual Studio 2019 ' uzaktan hata ayıklama için (bkz [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md) daha fazla bilgi için).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - gerekli Visual Studio 2017'den uzaktan hata ayıklama için (bkz [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md) daha fazla bilgi için).
+::: moniker-end
+* UDP 3702 - (isteğe bağlı) bulma bağlantı sağlar, **Bul** düğme Visual Studio uzaktan hata ayıklayıcı eklerken.
 
 1. Windows Server üzerindeki bir bağlantı noktasını açmak için Aç **Başlat** menüsünde **Gelişmiş Güvenlik Özellikli Windows Güvenlik Duvarı**.
 

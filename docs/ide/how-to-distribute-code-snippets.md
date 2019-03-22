@@ -1,6 +1,6 @@
 ---
-title: 'Nasıl yapılır: Kod parçacıklarını dağıtma'
-ms.date: 11/04/2016
+title: Uzantı olarak kod parçacıklarını dağıtma
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323059"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355428"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Nasıl yapılır: Kod parçacıklarını dağıtma
 
-Kod parçacıklarınızı arkadaşlarınıza verebilir ve bunları kullanarak kendi bilgisayarlarındaki parçacıkları yükleme **kod parçacıkları Yöneticisi**. Bununla birlikte, dağıtılacak çok sayıda kod olması ya da daha yaygın olarak dağıtmak istiyorsanız, kod parçacığı dosyanızı bir Visual Studio uzantısına dahil etme. Visual Studio kullanıcılarına, uzantıyı daha sonra yükleyebilirsiniz.
+Kod parçacıklarınızı arkadaşlarınıza verebilir ve bunları kullanarak kendi bilgisayarlarındaki parçacıkları yükleme **kod parçacıkları Yöneticisi**. Bununla birlikte, dağıtılacak çok sayıda kod olması ya da daha yaygın olarak dağıtmak istiyorsanız, kod parçacığı dosyalarınızı bir Visual Studio Uzantısı'nda içerebilir. Visual Studio kullanıcı parçacıkları almak için uzantıyı daha sonra yükleyebilirsiniz.
 
-Visual Studio uzantıları oluşturmak için Visual Studio SDK'yı yüklemeniz gerekir. Visual Studio yüklemenizle eşleşen VSSDK sürümünü bulun [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Önkoşullar
+
+Yükleme **Visual Studio uzantısı geliştirme** erişim elde etmek için iş yükü **VSIX projesi** proje şablonları.
+
+![Visual Studio uzantısı geliştirme iş yükü](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Uzantı ayarlayın
 
-Bu yordamda oluşturulan Hello World kod parçacığını kullanacağız [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). Biz verin *.snippet* geri dönün ve bir yapmak zorunda kalmamak için metin.
+Bu yordamda oluşturulan Hello World kod parçacığı kullanacağınız [izlenecek yol: Kod parçacığı oluşturma](../ide/walkthrough-creating-a-code-snippet.md). Bu makalede, geri dönün ve bir kod parçacığı oluşturmak zorunda kalmamak için XML kod parçacığı sağlar.
 
-1. Adlı yeni bir VSIX projesi oluşturun **TestSnippet**. (**Dosya** > **yeni** > **proje** > **Visual C# (veya Visual Basic)**  >  **Genişletilebilirlik**.)
+1. Yeni bir projeden oluşturun **boş VSIX projesi** şablonu ve proje adını **TestSnippet**.
 
 2. İçinde **TestSnippet** proje, yeni bir XML dosyası ekleyin ve onu çağırmak *VBCodeSnippet.snippet*. İçerik, aşağıdaki XML ile değiştirin:
 
@@ -111,7 +115,9 @@ Bu yordamda oluşturulan Hello World kod parçacığını kullanacağız [izlene
 
 4. Kod parçacığını test edin. Deneysel örneğinde, bir Visual Basic projesi açın ve kod dosyalarından birini açın. İmleci kodda bir yere yerleştirinceye sağ tıklatın ve bağlam menüsünü seçin **parçacık Ekle**.
 
-5. Görmelisiniz *HelloWorldVB* klasörlerden biri olarak. Çift tıklatın. Bir açılır pencere görmeniz gerekir **parçacık Ekle: HelloWorldVB >** bir açılan olan **HelloWorldVB**. Tıklayın **HelloWorldVB** açılır. Dosyaya eklenen aşağıdaki satırı görmeniz gerekir:
+5. Görmelisiniz *HelloWorldVB* klasörlerden biri olarak. Çift tıklatın. Bir açılır pencere görmeniz gerekir **parçacık Ekle: HelloWorldVB >** bir açılan olan **HelloWorldVB**. Tıklayın **HelloWorldVB** açılır.
+
+   Aşağıdaki satırı kod dosyasına eklenir:
 
     ```vb
     Console.WriteLine("Hello, World!")

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14a365a85a446737982a6ec608c5935fc17ee408
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a15b845db2733b208a765caf1a1307abeb19a49
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955264"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355743"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Öğretici: Visual Studio'da Django web çerçevesi ile çalışmaya başlama
 
@@ -34,7 +34,7 @@ Bu öğreticide, şunların nasıl yapılır:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio 2017'de Windows aşağıdaki seçeneklerle:
+- Visual Studio 2017 veya sonraki bir sürümü Windows aşağıdaki seçeneklerle:
   - **Python geliştirme** iş yükü (**iş yükü** yükleyici sekmede). Yönergeler için [Visual Studio'da Python yükleme desteği](installing-python-support-in-visual-studio.md).
   - **Git için Windows** ve **Visual Studio için GitHub uzantısı** üzerinde **tek tek bileşenler** sekmesinde altında **kod Araçları**.
 
@@ -65,7 +65,7 @@ Django ile komut satırından çalışırken, genellikle bir proje çalıştıra
     - **Çözüm**: varsayılan olarak bu denetimi bırakın **yeni çözüm oluşturma** seçeneği.
     - **Çözüm adı**: kümesine **LearningDjango**, bu çözüm için uygun birden çok proje için bir kapsayıcı olarak Bu öğreticide.
     - **Çözüm için dizin oluştur**: (Varsayılan) bırakın.
-    - **Yeni Git deposu oluşturma**: Çözüm oluşturduğunda, Visual Studio yerel bir Git deposu oluşturur (varsayılan olarak temizleyin olan) bu seçeneği seçin. Bu seçeneği görmüyorsanız, Visual Studio 2017 Yükleyicisi'ni çalıştırın ve ekleme **Git için Windows** ve **Visual Studio için GitHub uzantısı** üzerinde **tek tek bileşenler** sekmesi altında **kod Araçları**.
+    - **Yeni Git deposu oluşturma**: Çözüm oluşturduğunda, Visual Studio yerel bir Git deposu oluşturur (varsayılan olarak temizleyin olan) bu seçeneği seçin. Bu seçeneği görmüyorsanız, Visual Studio Yükleyicisi'ni çalıştırın ve ekleme **Git için Windows** ve **Visual Studio için GitHub uzantısı** üzerinde **tek tek bileşenler** sekmesi altında **kod Araçları**.
 
 1. Kısa bir süre sonra Visual Studio, bir iletişim bildiren ile ister **dış paketleri bu proje gerektirir** (aşağıda gösterilmiştir). Şablonun içerdiği için bu iletişim kutusu görünür bir *requirements.txt* en son Django 1.x paketini başvuran dosya. (Seçmek **gerekli paketleri Göster** tam bağımlılıkları görmek için.)
 

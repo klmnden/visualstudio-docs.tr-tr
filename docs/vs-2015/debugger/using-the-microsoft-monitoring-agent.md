@@ -9,17 +9,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c6b5e0718bfde2917d6a2c069d423c3292beb35
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 5d842df2056cb6e6b51bdb757057a821af494f15
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195199"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355639"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Microsoft İzleme Aracısı’nı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [Microsoft Monitoring Agent'ı kullanarak](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent) docs.microsoft.com'da.
+Visual Studio ile ilgili en son belgeler için bkz. [Microsoft Monitoring Agent'ı kullanarak](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent) docs.microsoft.com'da.
 
 Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 ya da 2013 uygulamalarını hatalar, performans sorunlarını ve diğer sorunlar için yerel olarak izleyebilirsiniz **Microsoft Monitoring Agent**. Tanılama olaylarını aracıdan bir IntelliTrace günlük (.iTrace) dosyasına kaydedebilirsiniz. Ardından tüm Visual Studio tanılama araçları ile ilgili sorunlar hata ayıklamak için Visual Studio Enterprise (ancak Professional veya Community sürümlerini değil) oturum açabilirsiniz. Aracısı'nı çalıştırarak IntelliTrace Tanılama verilerini ve yöntemi verilerini de toplayabilirsiniz **izleme** modu. Microsoft Monitoring Agent ile tümleştirilebilir [Application Insights](/azure/azure-monitor/app/app-insights-overview) ve [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Yüklendiğinde Microsoft Monitoring Agent hedef sistemin ortam değiştirir.  
   
@@ -79,7 +79,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   
 3.  [TechNet sitesini ziyaret edin](http://technet.microsoft.com/systemcenter/default) en son Yardım içeriğini almak için.  
   
-####  <a name="FullPermissionsITLog"></a> S: How do I set up permissions for the application pool?  
+####  <a name="FullPermissionsITLog"></a> S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?  
  **Y:** Windows kullanan **icacls** komutunu ya da Windows Explorer (veya dosya Gezgini) kullanın. Örneğin:  
   
 - Windows ile izinleri ayarlamak için **icacls** komutu:  
@@ -92,7 +92,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    -veya-  
+    veya  
   
 - Windows Explorer'ı (ya da File Explorer) ile izinleri ayarlamak için:  
   
@@ -137,7 +137,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   
     |||  
     |-|-|  
-    |*"\<uygulamaadı >"*|IIS içinde web sitesinin yolunu ve web uygulamasının adını belirtin. İsterseniz IIS yolunu da ekleyebilirsiniz.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -veya-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Bu yolu IIS Yöneticisi'nde bulabilirsiniz. Örneğin:<br /><br /> ![IIS web sitesi ve web uygulaması yolu](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Ayrıca [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) ve [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) komutları.|  
+    |*"\<uygulamaadı >"*|IIS içinde web sitesinin yolunu ve web uygulamasının adını belirtin. İsterseniz IIS yolunu da ekleyebilirsiniz.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> veya<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Bu yolu IIS Yöneticisi'nde bulabilirsiniz. Örneğin:<br /><br /> ![IIS web sitesi ve web uygulaması yolu](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Ayrıca [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) ve [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) komutları.|  
     |*\<monitoringMode >*|İzleme modunu belirtin:<br /><br /> <ul><li>**İzleyici**: Özel durum olayları ve performans olayları hakkında olabildiğince az ayrıntı kaydeder. Bu mod varsayılan toplama planını kullanır.</li><li>**İzleme**: İşlev düzeyi ayrıntıları kaydeder veya SharePoint 2010 ve SharePoint 2013 uygulamalarında belirtilen toplama planını kullanarak izleyin. Bu mod, uygulamanızın daha yavaş çalışmasına neden olabilir.<br /><br /> <ul><li>[S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?](#FullPermissionsITLog)</li><li>[S: Uygulamamı yavaşlatmadan en çok veriyi nasıl alabilirim?](#Minimizing)</li></ul><br />     Bu örnek, bir SharePoint sitesi üzerindeki SharePoint uygulaması için olayları kaydeder:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" izleme "C:\Program Files\Microsoft Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml izleme" "C:\IntelliTraceLogs"**</li><li>**Özel**: Özel Toplama planını kullanarak özel ayrıntıları kaydeder belirtildi. İzleme başladıktan sonra toplama planını değiştirirseniz izlemeyi yeniden başlatmanız gerekir.</li></ul>|  
     |*"\<outputPath >"*|IntelliTrace günlüklerinin depolanacağı tam dizin yolunu belirtin. Bu dizini izlemeye başlamadan önce oluşturduğunuzdan emin olun.|  
     |*\<UInt32 >*|IntelliTrace günlüğünün çıkabileceği en büyük boyutu belirtin. IntelliTrace günlüğü için varsayılan en büyük boyut 250 MB'tır.<br /><br /> Günlük bu sınıra ulaştığında, aracı yeni girişlere yer açmak için en eski girişlerin üzerine yazar. Bu sınırı değiştirmek için kullanın **- Maximumfilesizeınmegabytes** seçeneğini veya düzenleme `MaximumLogFileSize` toplama planında özniteliği.|  
@@ -250,7 +250,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
   
     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    -veya-  
+    veya  
   
     **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   

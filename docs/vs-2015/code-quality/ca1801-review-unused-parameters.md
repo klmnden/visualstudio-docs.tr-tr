@@ -16,17 +16,17 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 64352d47d0a71454828cafa2c0ac48b9b92c1b36
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765981"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354917"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Kullanılmayan parametreleri gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1801: Kullanılmayan parametreleri gözden geçir](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1801: Kullanılmayan parametreleri gözden geçir](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e6488d21538d49a6bb33648725fb164cdd8acaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56660aaa920fc5813f73bfcc9c191ee0baafb113
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929953"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354930"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Hızlı Başlangıç: Varolan koddan bir Python projesi oluşturma
 
-Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-support-in-visual-studio.md), varolan bir Python kodu bir Visual Studio projesine getirmek kolaydır.
+Kaydederler [Visual Studio'da Python desteği yüklü](installing-python-support-in-visual-studio.md), varolan bir Python kodu bir Visual Studio projesine getirmek kolaydır.
 
 > [!Important]
 > Burada açıklanan işlemi taşıma veya kopyalama orijinal kaynak dosyalarına desteklemez. Bir kopya ile çalışmak istiyorsanız, klasörü ilk çoğaltma.

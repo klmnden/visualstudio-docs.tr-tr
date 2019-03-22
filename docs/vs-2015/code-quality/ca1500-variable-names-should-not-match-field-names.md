@@ -15,17 +15,17 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fe479fa21480ff9456990dc57c55e656933c3cd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1c80f1e6c7c11e61fcdd651ac924d8243298e82
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755834"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355156"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Değişken adları alan adları ile eşleşmemelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1500: Değişken adları alan adları değil eşleşmelidir](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1500: Değişken adları alan adları değil eşleşmelidir](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

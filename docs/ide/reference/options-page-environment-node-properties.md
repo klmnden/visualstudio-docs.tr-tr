@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708335"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355610"
 ---
 # <a name="options-page-environment-node-properties"></a>Seçenekler sayfası, ortam düğümü özellikleri
 
@@ -120,7 +120,7 @@ Bu makalede sayfaları (veya özellik koleksiyonları) ile ilişkili **ortam** k
 |Özellik Öğesi Adı|Değer|Açıklama|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (dize)|IDE her şeyi Önizleme veya yerleşik bir proje çalıştırmadan önce kaydetmeyeceğini belirler.|
-|ProjectsLocation|Get/Set (dize)|Varsayılan dizin belirler burada **Proje Ekle** yeni proje iletişim kutusu kaydeder.|
+|ProjectsLocation|Get/Set (dize)|Yeni projeler kaydedildiği varsayılan dizinini belirler.|
 |ShowOutputWindowBeforeBuild|Get/Set (Boole)|Bir derleme görüntüler başlangıç olup olmadığını belirleyen **çıkış** penceresi.|
 |ShowTaskListAfterBuild|Get/Set (Boole)|Başarısız bir derleme işlemi görüntülenip görüntülenmeyeceğini belirler **görev listesi** derleme bittiğinde.|
 |TrackFileSelectionInExplorer|Get/Set (Boole)|Geçerli öğe içinde izleniyor olup olmadığını belirler **Çözüm Gezgini**.|

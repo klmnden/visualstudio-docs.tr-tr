@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155530"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355558"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
@@ -31,9 +31,9 @@ Visual Studio ayrıca kullanabileceğiniz **Nesne Tarayıcısı** (**görünüm�
 
 IntelliSense sağlar [tamamlamaları](#completions), [imza Yardımı](#signature-help), [hızlı bilgi](#quick-info), ve [kod renklendirme](#code-coloring). Visual Studio 2017 sürüm 15.7 ve üzeri da destek [tür ipuçlarını](#type-hints).
 
-IntelliSense, performansı artırmak için **Visual Studio 2017 sürüm 15.5** ve daha önce projenizdeki her Python ortamı için oluşturulan bir tamamlanma veritabanı bağlıdır. Veritabanları eklemek, kaldırmak veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu gösterilir **Python ortamları** penceresi (bir eşdüzeyi **Çözüm Gezgini**) üzerinde **IntelliSense** sekme (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
+Performansı artırmak için Visual Studio 2017 sürüm 15.5 ve önceki IntelliSense, projenizdeki her Python ortamı için oluşturulan bir tamamlanma veritabanı bağlıdır. Veritabanları eklemek, kaldırmak veya güncelleştirme paketleri yenileme gerekebilir. Veritabanı durumu gösterilir **Python ortamları** penceresi (bir eşdüzeyi **Çözüm Gezgini**) üzerinde **IntelliSense** sekme (bkz [ortamları penceresi başvuru](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 sürüm 15.6** ve daha sonra veritabanına bağımlı olmayan IntelliSense tamamlamaları sağlamak için farklı bir yol kullanır.
+Visual Studio 2017 sürüm 15.6 ve daha sonra veritabanına bağımlı olmayan IntelliSense tamamlamaları sağlamak için farklı bir yol kullanır.
 
 ### <a name="completions"></a>Tamamlamaları
 

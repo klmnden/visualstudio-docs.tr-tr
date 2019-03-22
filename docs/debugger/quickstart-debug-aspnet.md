@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e2df347edfa2ea6672449dfbaa5f3740e94cd11c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58153021"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354849"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
@@ -25,13 +25,13 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'da **Dosya > Yeni > Proje**.
+1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    **Yeni bir proje oluşturma** iletişim kutusu açılır. Tür **asp.net** sonuçları filtrelemek için arama kutusuna seçin **ASP.NET Core Web uygulaması**ve ardından **sonraki**. Gibi bir ad yazın **MyDbgApp** ve **Oluştur**.
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Core Web uygulaması oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **Yeni proje** iletişim kutusu açılır. Altında **Visual C#**, seçin **Web**seçip Ortadaki bölmeden **ASP.NET Core Web uygulaması**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Web**seçip Ortadaki bölmeden **ASP.NET Core Web Uygulama**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
 
     Görünen iletişim kutusunda **Web uygulaması** orta bölmesinde ve ardından **Tamam**.
 

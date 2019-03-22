@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beabf926eb0f6496857d7fc552fe4924202647de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 570d0a5c6a3ff53b16b9975d40e78f59e5319ff7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927600"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355027"
 ---
 # <a name="convert-dialog-box"></a>Dönüştür İletişim Kutusu
 
-**Dönüştürme** iletişim kutusu oluşturma gibi eski bir, yeni bir proje oluşturmak için bir dönüştürme aracı seçmenize olanak tanır bir [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] proje bir Visual Basic 6 projeden. Ayrıca [Visual Studio Project dönüştürücüsü](https://github.com/ssvaidya/VSProjectConverter) Visual Studio'nun önceki sürümlerinde oluşturulan projeleri yükseltme.
+**Dönüştürme** iletişim kutusu, eski bir yeni bir proje oluşturmak için bir dönüştürme aracı seçmenize olanak sağlar. Örneğin, bir Visual Basic 6 projeden bir Visual Basic 2005 projesi oluşturabilirsiniz.
 
 ## <a name="open-the-convert-dialog-box"></a>Dönüştür iletişim kutusunu açın.
 
-1.  Menü çubuğunda, **dosya**, **açık**, **Dönüştür**.
+1. Menü çubuğunda, **dosya** > **açık** > **Dönüştür**.
 
-     Şu anda kullanılabilir kod dönüştürme araçları listesini görürsünüz.
+   Şu anda kullanılabilir olan kod dönüştürme Araçlar listesi görüntülenir.
 
-2.  Uygulamanız için uygun olan Aracı'nı seçin.
+2. Uygulamanız için uygun olan Aracı'nı seçin.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

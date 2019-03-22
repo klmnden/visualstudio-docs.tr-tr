@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 73ffb5e9e0f46ac14742e4153c4cc21fa7af1da8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35bdef10d63f79c3d1ff649a486a708c34b28078
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779891"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355052"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Değer tür alanları taşınabilir olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1900: Değer tür alanları taşınabilir](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1900: Değer tür alanları taşınabilir](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983513"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354784"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE Hoş Geldiniz | Python
 
@@ -44,7 +44,7 @@ Bu görüntü, büyük olasılıkla kullanacağınız birkaç anahtar araç penc
 
 Windows ve Mac için Visual Studio kullanılabilir; Ancak, yalnızca Visual Studio için Windows üzerinde Python desteği sunulmaktadır.
 
-Windows üzerinde Visual Studio 2017'in üç sürüm bulunur: Community, Professional ve Enterprise. Bkz: [Visual Studio 2017 IDE'lerini karşılaştırın](https://visualstudio.microsoft.com/vs/compare/) her iki sürümünde desteklenen hangi özellikler hakkında bilgi edinmek için.
+Windows üzerinde Visual Studio'nun üç sürüm bulunur: Community, Professional ve Enterprise. Bkz: [karşılaştırma Visual Studio Ide'leri](https://visualstudio.microsoft.com/vs/compare/) her iki sürümünde desteklenen hangi özellikler hakkında bilgi edinmek için.
 
 ## <a name="popular-productivity-features"></a>Popüler üretkenlik özellikleri
 

@@ -15,17 +15,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab14293960173e35c9bb00a9784356c3e63c6e36
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9f4844431215d952f03ab9acc3f11ab57644abde
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772456"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355214"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1702: Bileşik sözcüklerin büyük küçük harfleri doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869369"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355441"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Hata ayıklama sembolleri için Python yorumlayıcılarını yükleme
 
 Tam hata ayıklama deneyimini sağlamak üzere [karma mod Python hata ayıklayıcısı](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) Visual Studio için Python yorumlayıcısını çok sayıda iç veri yapılarını ayrıştırmak için kullanılan hata ayıklama simgeleri. İçin *python27.dll*, örneğin, karşılık gelen sembol dosyası olduğu *python27.pdb*; *python36.dll*, sembol dosyası *python36.pdb*. Yorumlayıcı'nün her sürümü, çeşitli modüller için Sembol dosyalarını da sağlar.
 
-Visual Studio 2017 ile Python 3 ve Anaconda 3 yorumlayıcılarını kendi ilgili semboller otomatik olarak yükleyin ve Visual Studio bu sembolleri otomatik olarak bulur. Visual Studio 2015 veya önceki veya diğer yorumlayıcılarını kullanırken, sembolleri ayrı olarak karşıdan gelin ve ardından Visual Studio aracılığıyla yapmanız **Araçları** > **seçenekleri** iletişim kutusunda **hata ayıklama** > **sembolleri** sekmesi. Bu adımlar aşağıdaki bölümlerde ayrıntılı olarak açıklanmaktadır.
+Visual Studio 2017 ve sonraki sürümlerinde, Python 3 ve Anaconda 3 yorumlayıcılarını kendi ilgili semboller otomatik olarak yükleyin ve Visual Studio bu sembolleri otomatik olarak bulur. Visual Studio 2015 veya önceki veya diğer yorumlayıcılarını kullanırken, sembolleri ayrı olarak karşıdan gelin ve ardından Visual Studio aracılığıyla yapmanız **Araçları** > **seçenekleri** iletişim kutusunda **hata ayıklama** > **sembolleri** sekmesi. Bu adımlar aşağıdaki bölümlerde ayrıntılı olarak açıklanmaktadır.
 
 Karışık mod hata ayıklama oturumu başlatma sırasında sembolleri, genellikle ihtiyaç duyduğunda, visual Studio isteyebilir. Bu durumda, iki seçenek içeren bir iletişim kutusu görüntüler:
 

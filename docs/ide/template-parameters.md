@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907691"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355678"
 ---
 # <a name="template-parameters"></a>Şablon parametreleri
 
@@ -54,11 +54,11 @@ Herhangi bir şablon tarafından kullanılan ayrılmış şablon parametreleri a
 |1-10 GUID|' % S'projesi bir proje dosyasında GUID değiştirmek için kullanılan bir GUID. En fazla 10 benzersiz GUID'ler belirtebilirsiniz (örneğin, `guid1`).|
 |ItemName|Kullanıcı tarafından sağlanan adı **Yeni Öğe Ekle** iletişim kutusu.|
 |MachineName|Geçerli bilgisayar adı (örneğin, Computer01).|
-|ProjectName|Kullanıcı tarafından sağlanan adı **yeni proje** iletişim kutusu.|
+|ProjectName|Projeyi oluşturduğunuzda, kullanıcı tarafından sağlanan adı.|
 |RegisteredOrganization|Kayıt defteri anahtar değeri HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |RootNamespace|Geçerli projenin kök ad alanı. Bu parametre, yalnızca öğe şablonları için geçerlidir.|
 |safeitemname|Kullanıcı tarafından sağlanan adı **Yeni Öğe Ekle** olan tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış bir iletişim kutusu.|
-|safeprojectname|Kullanıcı tarafından sağlanan adı **yeni proje** olan tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış bir iletişim kutusu.|
+|safeprojectname|Tüm güvenli olmayan karakterleri ve boşlukları kaldırılmış ancak, projeyi oluşturduğunuzda kullanıcı tarafından sağlanan adı.|
 |zaman|GG/AA/YYYY biçiminde geçerli saati 00:00:00.|
 |SpecificSolutionName|Çözüm adı. "Çözüm dizini oluşturma" işaretlendiğinde `SpecificSolutionName` çözüm adına sahip. "Çözüm dizini oluşturma" işaretli olduğunda `SpecificSolutionName` boştur.|
 |USERDOMAIN|Geçerli kullanıcı etki alanı.|

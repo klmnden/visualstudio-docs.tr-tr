@@ -13,16 +13,35 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8d306436f8948d6f1d22d02984b00c2e0bc8f38f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 79197d99ea04d95c369738af5832f70f4f7dc7e7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867018"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355305"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Hızlı Başlangıç: İlk Node.js uygulamanızı oluşturmak için Visual Studio
 
-Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir Node.js web uygulaması oluşturacaksınız. Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), basit bir Node.js web uygulaması oluşturacaksınız.
+
+## <a name="prerequisites"></a>Önkoşullar
+
+* Visual Studio yüklü ve Node.js geliştirme iş yükü olması gerekir.
+
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
+    ::: moniker-end
+
+    İş yükünü yükleyin, ancak Visual Studio zaten gerekiyorsa, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
+
+    ![Node.js iş yükü VS yükleyicisi](../ide/media/quickstart-nodejs-workload.png)
+
+* Node.js çalışma zamanı yüklü olması gerekir.
+
+    LTS sürümünden yüklü yoksa, yükleme [Node.js](https://nodejs.org/en/download/) Web sitesi. Genel olarak, Visual Studio yüklü Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılayan değil, projenizi yüklü çalışma zamanı özellikleri sayfasında başvurmak için yapılandırabilirsiniz (bir proje oluşturduğunuzda, proje düğümüne sağ tıklayın ve seçin **özellikleri**).
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
@@ -32,17 +51,19 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 
     Genel olarak, Visual Studio yüklü Node.js çalışma zamanı otomatik olarak algılar. Yüklü bir çalışma zamanı algılayan değil, projenizi yüklü çalışma zamanı özellikleri sayfasında başvurmak için yapılandırabilirsiniz (bir proje oluşturduğunuzda, proje düğümüne sağ tıklayın ve seçin **özellikleri**).
 
-1. Visual Studio 2017'yi açın.
+1. Visual Studio'yu açın.
 
-1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
+1. Yeni bir proje oluşturun.
 
-1. İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**, ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, ardından **Tamam**.
+    ::: moniker range=">=vs-2019"
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **oluştur yeni boş bir Node.js Web uygulaması projesi** (JavaScript). Görünen iletişim kutusunda **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript**, ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, ardından **Tamam**.
+    ::: moniker-end
+    Görmüyorsanız **boş Node.js Web uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 
-     Görmüyorsanız **boş Node.js Web uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **Node.js geliştirme** iş yükü, ardından **Değiştir**.
-
-     ![Node.js iş yükü VS yükleyicisi](../ide/media/quickstart-nodejs-workload.png)
-
-    Seçtiğiniz sonra **boş Node.js Web uygulaması** şablonu ve tıklatın **Tamam**, Visual Studio oluşturur ve yeni çözüm ve proje açılır. *Server.js* sol bölmede Düzenleyicisi'nde açılır.
+    Visual Studio oluşturur ve yeni çözüm ve proje açılır. *Server.js* sol bölmede Düzenleyicisi'nde açılır.
 
 ## <a name="explore-the-ide"></a>IDE'yi keşfedin
 

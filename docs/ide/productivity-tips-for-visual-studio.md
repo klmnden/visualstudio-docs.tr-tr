@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223149"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355769"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -66,13 +66,23 @@ Komutlar, dosyalar ve Seçenekler, yalnızca geçerli görevinize ilgili bilgile
 
 - **Yalnızca istediğiniz hataları görüntülemek adresine**. Seçerseniz **filtre** düğmesini **hata listesi** araç çubuğu içinde görünen hata sayısını azaltabilirsiniz **hata listesi** penceresi. Yalnızca hataları, düzenleyicide açık olan dosyalardaki yalnızca geçerli dosyadaki hataları veya yalnızca geçerli projedeki hataları görüntüleyebilirsiniz. İçinde arama yapabilirsiniz **hata listesi** belirli hataları bulmak için penceresi.
 
-- **İletişim kutularını, menü komutlarını ve seçenekleri bulun**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) arama kutusuna, bulmaya çalıştığınız öğeler için anahtar sözcükleri veya tümceleri girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür `new project`:
+- **İletişim kutularını, menü komutlarını, seçeneklerini ve bulma**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) arama kutusuna, bulmaya çalıştığınız öğeler için anahtar sözcükleri veya tümceleri girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür **yeni proje**:
 
-    !['Yeni project' hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    **Hızlı başlatma** bağlantılarını gösterir **yeni proje** iletişim kutusu, **Yeni Öğe Ekle** iletişim kutusu ve **projeler ve çözümler** sayfasında**Seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Hızlı Başlatma sonuçları ayrıca proje dosyalarını ve araç pencerelerini de içerebilir.
+   !['Yeni project' hızlı başlatma sonuçları](../ide/media/productivity_quicklaunch.png)
 
-  **Hızlı başlatma** sağ üst kısmındaki IDE içinde arama kutusu görünür. (Alternatif olarak, basın **Ctrl**+**Q** erişmek için.)
+   **Hızlı başlatma** bağlantıları ve projeye yeni bir öğe eklemek için yeni bir proje oluşturmak için görüntüler **projeler ve çözümler** sayfasını **seçenekleri** iletişim kutusu, diğerlerinin yanı sıra. Arama Sonuçları ayrıca proje dosyalarını ve araç pencerelerini de içerebilir.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Hızlı Başlatma 'Yeni Proje' için arama sonuçları](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Tuşuna **Ctrl**+**Q** doğrudan atlamak için **hızlı başlatma** arama kutusu.
 
 ## <a name="debug-code"></a>Kodda hata ayıklama
 

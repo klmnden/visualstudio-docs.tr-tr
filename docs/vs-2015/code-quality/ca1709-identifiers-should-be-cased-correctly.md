@@ -15,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8771c3bfa662b51138276cabd205ea2f7e7c37c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4f2fff418e8d791898a4e5db00fe639b5d524d95
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761862"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355308"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Tanımlayıcılar doğru büyük küçük harfe sahip olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA1709: Tanımlayıcıları büyük/küçük harfleri doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1709: Tanımlayıcıları büyük/küçük harfleri doğru](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

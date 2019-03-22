@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8aaa1c3d4164946c43dbd40264838d84e4fd2dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843110"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355137"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Hızlı Başlangıç: Bir Cookiecutter şablonundan proje oluşturma
 
-Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-support-in-visual-studio.md), Github'da yayımlanan birçok bir Cookiecutter şablonundan yeni bir proje oluşturmak kolaydır. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları keşfedin, şablon seçeneklerini giriş ve projeleri ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ile eklemiştir ve Visual Studio'nun önceki sürümlerinde ayrı olarak yüklenebilir.
+Kaydederler [Visual Studio'da Python desteği yüklü](installing-python-support-in-visual-studio.md), Github'da yayımlanan birçok bir Cookiecutter şablonundan yeni bir proje oluşturmak kolaydır. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) şablonları keşfedin, şablon seçeneklerini giriş ve projeleri ve dosyaları oluşturmak için bir grafik kullanıcı arabirimi sağlar. Visual Studio 2017 ve üzeri dahil ve Visual Studio'nun önceki sürümlerinde ayrı olarak yüklenebilir.
 
 1. Bu hızlı başlangıçta, ilk burada gösterilen Cookiecutter şablonu için gerekli Python paketlerini içeren Anaconda3 Python dağıtım yükleyin. Visual Studio Yükleyicisi'ni çalıştırın, seçin **Değiştir**, seçeneklerini genişletip **Python geliştirme** seçin ve sağ tarafındaki **Anaconda3** (32 bit veya 64-bit). Yükleme, Internet hızına bağlı olarak biraz zaman alabilir, ancak bu, gerekli paketleri yüklemek için en basit yoludur unutmayın.
 

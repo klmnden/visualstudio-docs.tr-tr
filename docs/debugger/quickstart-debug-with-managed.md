@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 09546ae594ddc7653670c62f5a9186286eb52525
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152934"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355227"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: İle hata ayıklama C# veya Visual Basic, Visual Studio hata ayıklayıcıyı kullanma
 
@@ -25,13 +25,13 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'da **Dosya > Yeni > Proje**.
+1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    **Yeni bir proje oluşturma** iletişim kutusu açılır. Tür **.net** sonuçları filtrelemek için arama kutusuna seçin **konsol uygulaması (.NET Core)** ve ardından **sonraki**. Gibi bir ad girin **MyDbgApp** ve **Oluştur**.
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **yeni konsol uygulaması (.NET Core) proje oluştur**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **Yeni proje** iletişim kutusu açılır. Altında **Visual C#** , seçin **.NET Core**seçip Ortadaki bölmeden **konsol uygulaması (.NET Core)**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **.NET Core**seçip Ortadaki bölmeden **konsol uygulaması (.NET Çekirdek)**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.
     ::: moniker-end
 
      Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** ve **.NET Core** iş yükü, ardından **Değiştir**.

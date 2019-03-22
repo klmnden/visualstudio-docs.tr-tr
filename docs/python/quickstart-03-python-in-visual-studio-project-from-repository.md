@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928458"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355292"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Hızlı Başlangıç: Visual Studio'da Python kodunun bir depoyu kopyalama
 
-Kaydederler [Python desteği Visual Studio 2017'de yüklü](installing-python-support-in-visual-studio.md), Visual Studio için GitHub uzantısı ekleyebilirsiniz. Uzantı, kolayca Python kodu bir depoyu kopyalamak ve buradan gelen IDE içinde bir proje oluşturun olanak tanır. Her zaman de komut satırında depoları kopyalayın ve ardından Visual Studio'da çalışma.
+Kaydederler [Visual Studio'da Python desteği yüklü](installing-python-support-in-visual-studio.md), Visual Studio için GitHub uzantısı ekleyebilirsiniz. Uzantı, kolayca Python kodu bir depoyu kopyalamak ve buradan gelen IDE içinde bir proje oluşturun olanak tanır. Her zaman de komut satırında depoları kopyalayın ve ardından Visual Studio'da çalışma.
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>Visual Studio için GitHub uzantısı yükleme
 

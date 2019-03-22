@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867819"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355480"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projeler ve çözümler sayfanın, Seçenekler iletişim kutusu
 
@@ -91,11 +91,11 @@ Burada Visual Studio yeni proje ve çözüm klasörleri oluşturur. varsayılan 
 
 ### <a name="user-project-templates-location"></a>Kullanıcı proje şablonları konumu
 
-Varsayılan konumu belirtir, **yeni proje** iletişim kutusu listesini oluşturmak için kullandığı **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Kullanıcı tarafından oluşturulan proje şablonları aramak için kullanılan varsayılan konumu belirtir. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Kullanıcı öğe Şablonları konumu
 
-Varsayılan konumu belirtir, **Yeni Öğe Ekle** iletişim kutusu listesini oluşturmak için kullandığı **Şablonlarım**. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Kullanıcı tarafından oluşturulmuş öğe şablonları aramak için kullanılan varsayılan konumu belirtir. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

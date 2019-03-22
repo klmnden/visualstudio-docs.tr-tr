@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633869"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355584"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>İzlenecek yol: Outlook form bölgesi tasarlama
   Özel form bölgeleri, standart veya özel Microsoft Office Outlook formlarına genişletin. Bu kılavuzda, yeni bir sayfa denetçisi penceresinde bir kişi öğesinin görüntülenen özel form bölgesi tasarlama. Bu form bölgesini kişi için Windows Live yerel arama Web sitesine adres bilgilerini göndererek listelenen her adresinin haritasını görüntüler. Form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56633869"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] veya daha yeni.
 
   ![video bağlantısı](../vsto/media/playvideo.gif "video bağlantı") bu konunun video sürümü için bkz: [Video nasıl yapılır: Outlook form bölgesi tasarlama](http://go.microsoft.com/fwlink/?LinkID=140824).
 
@@ -114,7 +114,7 @@ ms.locfileid: "56633869"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Form bölgesi davranışını özelleştirmek için
 
-1. İçinde **Çözüm Gezgini**, sağ tıklayın *MapIt.cs* veya *MapIt.vb*ve ardından **Kodu Görüntüle**.
+1. İçinde **Çözüm Gezgini**, sağ *MapIt.cs* veya *MapIt.vb*ve ardından **Kodu Görüntüle**.
 
     *MapIt.cs* veya *MapIt.vb* Kod Düzenleyicisi'nde açılır.
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633869"
 4.  Kaydet ve kişi öğesini kapatın.
 
 5.  Yeniden **Ann Beebe** kişi öğesi.
+
+    Outlook'ta, bu yapılabilir **Bul** adres defteri kişileri açma veya Ann Beebe içine yazarak göre gruplandırın **arama kişiler**.
 
 6.  İçinde **Göster** öğenin Şerit grubuna tıklayın **harita,** harita bu form bölgesini açmak için.
 

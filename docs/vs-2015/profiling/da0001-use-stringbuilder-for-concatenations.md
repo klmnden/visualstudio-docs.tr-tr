@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da0de740155936497c2e21213d7e063fa761aade
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a374e867283e4dad614d8bebce88a9bababa7d5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804907"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355191"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Birleştirmeler için StringBuilder kullanın
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Birleştirmeler için StringBuilder kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [DA0001: Birleştirmeler için StringBuilder kullanın](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [DA0001: Birleştirmeler için StringBuilder kullanın](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

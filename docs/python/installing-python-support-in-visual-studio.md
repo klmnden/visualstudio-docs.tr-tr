@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5270d24bd98d9858b4133c1e05b5883b8b57f509
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983318"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355545"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python desteğini yükleme
 
@@ -33,7 +33,7 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 > [!Note]
 > Python desteği, Mac için Visual Studio şu anda mevcut değildir, ancak Mac ve Linux'ta Visual Studio Code ile kullanılabilir. Bkz: [sorularını ve yanıtlarını](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-<a name="visual-studio-2017"></a>
+<a name="visual-studio-2017-and-2019"></a>
 ## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 ve Visual Studio 2017
 
 1. İndirin ve en son Visual Studio Yükleyicisi'ni çalıştırın. Visual Studio zaten yüklüyse, Visual Studio Yükleyicisi'ni çalıştırın, seçin **Değiştir** seçeneği (bkz [değiştirme Visual Studio](../install/modify-visual-studio.md)) ve 2. adıma geçin.
@@ -50,14 +50,14 @@ Hızlı bir şekilde yükleme adımlarını izleyerek sonra Python desteği test
 
     ::: moniker range="vs-2017"
     İsteğe bağlı: veri bilimi ile çalışıyorsanız, ayrıca düşünün **veri bilimi ve analitik uygulamalar** iş yükü. Bu iş yükü, R, Python için destek içerir ve F# diller. Daha fazla bilgi için [veri bilimi ve analitik uygulamalar iş yükü](data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Python ve veri bilimi iş yükleri ve üzeri yalnızca Visual Studio 2017 sürüm 15.2 ile kullanılabilir.
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     İsteğe bağlı: veri bilimi ile çalışıyorsanız, ayrıca düşünün **veri bilimi ve analitik uygulamalar** iş yükü. Bu iş yükü, Python için destek içerir ve F# diller. Daha fazla bilgi için [veri bilimi ve analitik uygulamalar iş yükü](data-science-and-analytical-applications-workload.md).
     ::: moniker-end
-
-    > [!Note]
-    > Python ve veri bilimi iş yükleri ve üzeri yalnızca Visual Studio 2017 sürüm 15.2 ile kullanılabilir.
 
 1. Yükleyici sağ tarafında, istenirse ek seçenekler seçtiniz. Varsayılan seçenekleri kabul etmek için bu adımı atlayın.
 

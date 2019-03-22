@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f486d88ebac42ba0f9c9f338ee9fd81b56c820cf
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070314"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355756"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
 
@@ -59,15 +59,13 @@ Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 
 1. Visual Studio'yu açın.
 
-1. Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**.
-
 1. TypeScript Express yeni bir uygulama oluşturun.
 
     ::: moniker range=">=vs-2019"
-    İçinde **yeni bir proje oluşturma** iletişim kutusuna **javascript** sonuçlarını filtrelemek ve ardından arama kutusuna **temel Azure Node.js Express 4 uygulaması**seçin **Tamam**.
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **yeni temel Azure Node.js Express 4 uygulaması oluşturma** (TypeScript). Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    İçinde **yeni proje** iletişim kutusunda, sol bölmede, **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **TypeScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.
 
     ![Yeni bir TypeScript Express uygulaması oluşturma](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end

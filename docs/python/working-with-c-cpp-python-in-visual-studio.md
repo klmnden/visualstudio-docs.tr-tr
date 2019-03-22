@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb4d2ec524065a79150b35564dd526d0bf13779e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e1264bd590cc44a16470902372b05ff0e8c562b6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914285"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355652"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -38,7 +38,7 @@ Bu izlenecek yolda tamamlanmış örnekten bulunabilir [python-samples-vs-cpp-ex
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio 2017 ile her ikisini de **C++ ile masaüstü geliştirme** ve **Python geliştirme** varsayılan seçeneklerle yüklü iş yükleri.
+- Visual Studio 2017 veya üstü hem **C++ ile masaüstü geliştirme** ve **Python geliştirme** varsayılan seçeneklerle yüklü iş yükleri.
 - İçinde **Python geliştirme** iş yükü, aynı zamanda için sağdaki kutusunu işaretlemeniz **Python yerel geliştirme araçları**. Bu makalede açıklanan yapılandırmaların çoğu için bu seçeneği ayarlar. (Bu seçenek ayrıca C++ iş yükünü otomatik olarak içerir.)
 
     ![Python yerel geliştirme araçları seçeneği](media/cpp-install-native.png)
@@ -107,7 +107,7 @@ Daha fazla bilgi için [destekleyen Visual Studio için Python yükleme](install
 1. Arama seçin "C++" **boş proje**, "superfastcode" adı belirtin ("superfastcode2" ikinci projesi için) seçip **Tamam**.
 
     > [!Tip]
-    > İle **Python yerel geliştirme araçları** Visual Studio 2017'de yüklü ile başlayabilirsiniz **Python uzantı Modülü** şablon bunun yerine, sahip olduğu zaten yerinde açıklanana çoğunu. Bu kılavuz için boş bir proje ile başlayarak adım adım uzantı modülü oluşturma gösterir. İşlem anladığınızda, zaman zaman şablon kaydeder kendi uzantılarınızı yazma.
+    > İle **Python yerel geliştirme araçları** Visual Studio'da yüklü ile başlayabilirsiniz **Python uzantı Modülü** şablon bunun yerine, sahip olduğu zaten yerinde açıklanana çoğunu. Bu kılavuz için boş bir proje ile başlayarak adım adım uzantı modülü oluşturma gösterir. İşlem anladığınızda, zaman zaman şablon kaydeder kendi uzantılarınızı yazma.
 
 1. Sağ tıklayarak bir C++ dosyası içinde yeni proje oluşturma **kaynak dosyaları** düğümünü seçip **Ekle** > **yeni öğe**seçin **C++dosyası**, adlandırın `module.cpp`seçip **Tamam**.
 
@@ -284,7 +284,7 @@ DLL Python için kullanılabilir hale getirmek için iki yolu vardır.
 
 Aşağıdaki adımlarda anlatıldığı alternatif bir yöntem de diğer Python projeleri için kullanılabilir hale getirme global Python ortamı modülünü yükler. (Bu nedenle genellikle yapmak için Visual Studio 2017 sürüm 15.5 ve öncesi ortamında IntelliSense tamamlanma veritabanı yenileme gerektirir. Yenileme ayrıca modülü ortamdan kaldırırken gereklidir.)
 
-1. Visual Studio 2017, Visual Studio Yükleyicisi'ni çalıştırın kullanıyorsanız seçin **Değiştir**seçin **tek tek bileşenler** > **derleyiciler, derleme araçları ve çalışma zamanları**  >  **Visual C++ 2015.3 v140 Araç Seti**. Python (Windows için) kendi Visual Studio 2015 (sürüm 14.0) ile oluşturulmuş ve araçlarda uzantı burada açıklanan yöntemi aracılığıyla oluşturulurken kullanılabilir olduğunu bekliyor olduğundan bu adım gereklidir. (Python'un 32 bit sürümünü yükleyip Win32 ve değil x64 DLL hedef gerekebileceğini unutmayın.)
+1. Visual Studio 2017'de kullandığınız ya da daha sonra Visual Studio Yükleyicisi'ni çalıştırın, seçin **Değiştir**seçin **tek tek bileşenler** > **derleyiciler, derleme araçları ve çalışma zamanları**   >  **Visual C++ 2015.3 v140 Araç Seti**. Python (Windows için) kendi Visual Studio 2015 (sürüm 14.0) ile oluşturulmuş ve araçlarda uzantı burada açıklanan yöntemi aracılığıyla oluşturulurken kullanılabilir olduğunu bekliyor olduğundan bu adım gereklidir. (Python'un 32 bit sürümünü yükleyip Win32 ve değil x64 DLL hedef gerekebileceğini unutmayın.)
 
 1. Adlı bir dosya oluşturun *setup.py* projeye sağ tıklayıp seçerek C++ projesinde **Ekle** > **yeni öğe**. Ardından **C++ dosyası (.cpp)**, dosya adı `setup.py`seçip **Tamam** (ile dosya adlandırma *.py* Python tanıyacak Visual Studio extension yapar C++ dosyası şablonu kullanarak rağmen). Dosya düzenleyicisinde görüntülendiğinde aşağıdaki kodu genişletme yöntemi için uygun şekilde yapıştırın:
 

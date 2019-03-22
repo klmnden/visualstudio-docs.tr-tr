@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780281"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355376"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Visual Studio Başlangıç süresini iyileştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54780281"
 
 ## <a name="control-startup-behavior"></a>Başlangıç davranışını denetimi
 
-Başlangıç zamanı genişletme önlemek için Visual Studio 2017 başlangıç sırasında uzantıları yükleme-isteğe bağlı-yüklemede yaklaşımı kullanarak önler. Bu, hemen Visual Studio başlatmaz, bunun yerine bir gerektiğinde temelinde başlatma işleminden sonra zaman uyumsuz olarak açmak sonra uzantıları açmayın anlamına gelir. Ayrıca, önceki bir Visual Studio oturumu açık sol araç pencereleri başlangıç zamanını yavaşlatabileceği için Visual Studio Başlangıç süresini etkileyen önlemek için daha akıllı bir şekilde araç pencereleri açılır.
+Başlangıç zamanı, Visual Studio 2017 genişletme önlemek ve daha sonra uzantıları-isteğe bağlı-yüklemede yaklaşımı kullanarak başlatma sırasında yükleme önlemek için. Bu, hemen Visual Studio başlatmaz, bunun yerine bir gerektiğinde temelinde başlatma işleminden sonra zaman uyumsuz olarak açmak sonra uzantıları açmayın anlamına gelir. Ayrıca, önceki bir Visual Studio oturumu açık sol araç pencereleri başlangıç zamanını yavaşlatabileceği için Visual Studio Başlangıç süresini etkileyen önlemek için daha akıllı bir şekilde araç pencereleri açılır.
 
 Visual Studio yavaş başlatma algılarsa, yavaşlama neden olan uzantı veya araç penceresinin için uyarı bir açılır ileti görüntülenir. İleti bir bağlantı da sağlar. **Visual Studio performansını Yönet** iletişim kutusunda, başlangıç performansı etkileyen uzantıları ve araç pencerelerini listeler. Bu iletişim kutusunu başlatma performansını artırmak için uzantı ve araç penceresi ayarlarını değiştirmenize olanak tanır.
 

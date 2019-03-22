@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933398"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355334"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 
@@ -55,7 +55,7 @@ Bir sonraki açışınızda **Sunucu Gezgini**, kaynaklar söz konusu abonelik i
 
 Azure Active Directory (AAD) son kullanıcı çoklu oturum açma web apps'te ASP.NET MVC veya web API hizmetlerindeki AD kimlik doğrulaması için destek sağlar. Etki alanı kimlik doğrulaması, kullanıcı hesabı kimlik doğrulamasını farklıdır. Active Directory etki alanınıza erişimi olan kullanıcılar, web uygulamalarınıza bağlanmak için mevcut bir AAD hesaplarını kullanabilirsiniz. Office 365 uygulamaları, etki alanı kimlik doğrulaması olarak da kullanabilirsiniz.
 
-Bu uygulamada görmek için bir web uygulaması oluşturma (**dosya** > **yeni proje** > **C#** > **bulut**  >  **ASP.NET Web uygulaması**). İçinde **yeni ASP.NET projesi** iletişim kutusunda seçin **kimlik doğrulamayı Değiştir**. Kimlik doğrulaması Sihirbazı görünür ve uygulamanızda kullanılacak kimlik doğrulaması türünü seçmenize olanak tanır.
+Bu uygulamada görmek için yeni bir oluşturma **ASP.NET Web uygulaması** proje. İçinde **yeni ASP.NET projesi** iletişim kutusunda seçin **kimlik doğrulamayı Değiştir**. Kimlik doğrulaması Sihirbazı görünür ve uygulamanızda kullanılacak kimlik doğrulaması türünü seçmenize olanak tanır.
 
 ![ASP.NET kimlik doğrulaması iletişim kutusu değişimi](../ide/media/vs2015_change_authentication.png)
 

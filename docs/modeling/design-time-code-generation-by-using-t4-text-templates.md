@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323438"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355795"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual Studio projenize oluşturmanıza olanak tanır. Genellikle, böylece verileri göre hazırlanmasının kod farklılık şablonları yazma bir *model*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren veritabanı modelidir.
@@ -32,7 +32,7 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 
  Büyük olasılıkla kod oluşturma ile ilgili bilgi sahibi olduğunuz. Kaynakları tanımladığınızda bir **.resx** dosyası Visual Studio çözümünüzü, sınıflar ve yöntemler kümesi otomatik olarak oluşturulur. Kaynaklar dosyası sınıflar ve yöntemler düzenlemek sahip olması durumuna göre çok daha kolay ve daha güvenilir düzenlemek için kaynaklar kolaylaştırır. Metin şablonları ile aynı şekilde kendi tasarımının bir kaynaktan kod oluşturabilirsiniz.
 
- Bir metin şablonu oluşturmak istediğiniz metni ve değişken bölümlerini oluşturduğu program kodu bir karışımını içerir. Program kodu ve yineleyin veya koşullu olarak oluşturulan metin parçalarını atlamasını sağlar. Oluşturulan metin için kendisini uygulamanızın parçasını oluşturacak program kodu olabilir.
+ Bir metin şablonu oluşturmak istediğiniz metni ve değişken bölümlerini oluşturduğu program kodu bir karışımını içerir. Program kodunu yineleyin veya koşullu olarak oluşturulan metin parçalarını atlamasını sağlar. Oluşturulan metin için kendisini uygulamanızın parçasını oluşturacak program kodu olabilir.
 
 ## <a name="creating-a-design-time-t4-text-template"></a>Tasarım zamanı T4 metin şablonu oluşturma
 
@@ -141,7 +141,7 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 >  Ancak bile, değil hata ayıklaması yaparken şablon yönergesinde yan tümcesi bırakabilirsiniz. Bu performans çok küçük bir bırakma neden olur.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Koda veya kaynaklara çözümünüz için oluşturma
- Bir modeline bağlı olarak farklılık gösterir. program dosyaları oluşturabilirsiniz. Bir model, bir veritabanı, yapılandırma dosyası, UML model, DSL model veya diğer kaynak gibi bir giriştir. Birkaç genellikle oluşturmak program dosyaları aynı modelden olan. Bunu başarmak için her oluşturulan program dosyası için bir şablon dosyası oluşturun ve tüm şablonları aynı modelin okuma.
+ Bir modeline bağlı olarak farklılık gösterir. program dosyaları oluşturabilirsiniz. Bir model, bir veritabanı, yapılandırma dosyası, UML model, DSL model veya diğer kaynak gibi bir giriştir. Bazı program dosyaları genellikle aynı modelden oluşturur. Bunu başarmak için her oluşturulan program dosyası için bir şablon dosyası oluşturun ve tüm şablonları aynı modelin okuma.
 
 #### <a name="to-generate-program-code-or-resources"></a>Program kodu veya kaynakları oluşturmak için
 

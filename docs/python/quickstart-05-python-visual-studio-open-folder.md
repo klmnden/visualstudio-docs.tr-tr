@@ -11,14 +11,14 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57986970"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354914"
 ---
-# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Hızlı Başlangıç: Açın ve bir klasörde Python kodunu çalıştırma
+# <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Hızlı Başlangıç: Python kodunu bir klasörde açma ve çalıştırma
 
 Kaydederler [Python desteği Visual Studio 2019 yüklü](installing-python-support-in-visual-studio.md), Visual Studio projesi oluşturmaya gerek kalmadan mevcut Python kodu Visual Studio 2019 ' çalıştırmak daha kolaydır.
 
@@ -27,7 +27,7 @@ Kaydederler [Python desteği Visual Studio 2019 yüklü](installing-python-suppo
 
 1. Bu kılavuz için istediğiniz ipucuyla Python kodunda herhangi bir klasörü kullanabilirsiniz. Burada gösterilen örnek ile birlikte izlemek için gregmalcolm/python_koans GitHub deposu'komutunu kullanarak bilgisayarınıza kopyalayın `git clone https://github.com/gregmalcolm/python_koans` uygun bir klasörde.
 
-1. Visual Studio 2019 başlatın ve başlangıç ekranında seçin **açık** kısmındaki **başlama** sütun. Alternatif olarak, Visual Studio çalıştırma zaten varsa, seçin **dosya** > **açık** > **klasör** yerine komutu.
+1. Visual Studio 2019 başlatın ve başlangıç penceresinde **açık** kısmındaki **başlama** sütun. Alternatif olarak, Visual Studio çalıştırma zaten varsa, seçin **dosya** > **açık** > **klasör** yerine komutu.
 
     ![Visual Studio Başlangıç ekranı](media/quickstart-open-folder/01-open-local-folder.png)
 

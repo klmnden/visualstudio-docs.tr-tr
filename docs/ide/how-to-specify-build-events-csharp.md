@@ -1,6 +1,6 @@
 ---
 title: 'Nasıl yapılır: Derleme olayları belirtme (C#)'
-ms.date: 11/04/2016
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -14,42 +14,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af2329789e5eea4c9b0875f2986181f6d672757c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930470"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355363"
 ---
 # <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: Derleme olayları belirtme (C#)
 
-Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için derleme olaylarını kullanma. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütülür.
+Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komutlar belirtmek için derleme olaylarını kullanma. Derleme olayları, yalnızca derlemenin yapı işleminde bu noktaları başarıyla ulaşırsa yürütün.
 
 Bir proje oluşturulduğunda, derleme öncesi olayları adlı bir dosyaya eklenen *PreBuildEvent.bat* ve derleme sonrası olayları adlı bir dosya eklendiğinde *PostBuildEvent.bat*. Hata denetimini sağlamak istiyorsanız, kendi hata denetimi komutları, yapı adımlarını ekleyin.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+## <a name="specify-a-build-event"></a>Bir olay belirtin
 
-## <a name="how-to-specify-pre-build-and-post-build-events"></a>Derleme öncesi ve sonrası derleme olayları belirtme
+1. İçinde **Çözüm Gezgini**, derleme olayı belirtmek istediğiniz projeyi seçin.
 
-### <a name="to-specify-a-build-event"></a>Derleme olayı belirtmek için
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 
-1.  İçinde **Çözüm Gezgini**, derleme olayı belirtmek istediğiniz projeyi seçin.
+3. Seçin **Build Events** sekmesi.
 
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.
-
-3.  Seçin **Build Events** sekmesi.
-
-4.  İçinde **derleme öncesi olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.
+4. İçinde **derleme öncesi olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.
 
     > [!NOTE]
     > Derleme öncesi olayları, projenin güncel olduğundan ve hiçbir derlemenin tetiklenmesinin çalıştırmayın.
 
-5.  İçinde **derleme sonrası olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.
+5. İçinde **derleme sonrası olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.
 
     > [!NOTE]
     > Ekleme bir `call` deyiminden önce çalışan tüm derleme sonrası komutlar *.bat* dosyaları. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.
 
-6.  İçinde **oluşturma sonrası olayı çalıştırılsın** kutusunda, hangi derleme sonrası olay çalıştırmak için koşullar altında belirtin.
+6. İçinde **oluşturma sonrası olayı çalıştırılsın** kutusunda, hangi derleme sonrası olay çalıştırmak için koşullar altında belirtin.
 
     > [!NOTE]
     > Uzun söz dizimi eklemek ya da seçmek için herhangi bir makrolarından derleme [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), üç nokta düğmesini (**...** ) düzenleme kutusu görüntülenecek.
@@ -59,7 +55,7 @@ Bir proje oluşturulduğunda, derleme öncesi olayları adlı bir dosyaya eklene
     > [!NOTE]
     > Derleme öncesi veya derleme sonrası olay başarıyla tamamlanmazsa, başarılı bir eylem gösteren bir ile dışında sıfır (0), çıkış kodu olay eyleminizi sağlayarak derleme sonlandırabilirsiniz.
 
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Örnek: Derleme sonrası olay kullanarak bildirim bilgileri değiştirme
+## <a name="example"></a>Örnek
 
 Aşağıdaki yordamı kullanarak uygulama bildiriminde minimum işletim sistemi sürümü ayarlamak gösterilmiştir bir *.exe* bir derleme sonrası olay çağrılan komut ( *. exe.manifest* dosyası Proje dizini). En düşük işletim sistemi sürümünü 4.10.0.0 gibi dört kısımlı bir sayıdır. Bunu yapmak için komut değişir `<dependentOS>` bildiriminin:
 
@@ -71,19 +67,17 @@ Aşağıdaki yordamı kullanarak uygulama bildiriminde minimum işletim sistemi 
 </dependentOS>
 ```
 
-### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir .exe komutu oluşturmak için
+### <a name="create-an-exe-command-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir .exe komutu oluşturun
 
-1. Komut için bir konsol uygulaması oluşturun. Gelen **dosya** menüsünde **yeni**ve ardından **proje**.
+1. Yeni bir **konsol uygulaması** komutu için proje. Projeyi adlandırın **ChangeOSVersionCS**.
 
-2. İçinde **yeni proje** iletişim kutusunda **Visual C#**, tıklayın **Windows**ve ardından **konsol uygulaması** şablonu. Projeyi adlandırın `ChangeOSVersionCS`.
-
-3. İçinde *Program.cs*, diğer aşağıdaki satırı ekleyin `using` deyimini dosyanın üst:
+2. İçinde *Program.cs*, diğer aşağıdaki satırı ekleyin `using` deyimini dosyanın üst:
 
    ```csharp
    using System.Xml;
    ```
 
-4. İçinde `ChangeOSVersionCS` ad alanını Değiştir `Program` sınıf uygulamasını aşağıdaki kod ile:
+3. İçinde `ChangeOSVersionCS` ad alanını Değiştir `Program` sınıf uygulamasını aşağıdaki kod ile:
 
    ```csharp
    class Program
@@ -135,27 +129,25 @@ Aşağıdaki yordamı kullanarak uygulama bildiriminde minimum işletim sistemi 
    }
    ```
 
-    Komut iki bağımsız değişkeni alır: uygulama bildirimi yolunu (diğer bir deyişle, hangi yapı işlemi oluşturur, bildirim genellikle klasör *Projectname.publish*) ve yeni işletim sistemi sürümü.
+   Komut iki bağımsız değişkeni alır: uygulama bildirimi yolunu (diğer bir deyişle, hangi yapı işlemi oluşturur, bildirim genellikle klasör *Projectname.publish*) ve yeni işletim sistemi sürümü.
 
-5. Projeyi oluşturun. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+4. Projeyi oluşturun.
 
-6. Kopyalama *.exe* gibi bir dizine dosya *C:\TEMP\ChangeOSVersionVB.exe*.
+5. Kopyalama *.exe* gibi bir dizine dosya *C:\TEMP\ChangeOSVersionVB.exe*.
 
    Ardından, uygulama bildirimini değiştirmek için bu komutu bir derleme sonrası olay çağırın.
 
-### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için
+### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırma
 
-1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde **yeni**ve ardından **proje**.
+1. Yeni bir **Windows Forms uygulaması** adlandırın ve proje **CSWinApp**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **Visual C#** , tıklayın **Windows Masaüstü**ve ardından **Windows Forms uygulaması** şablonu. Projeyi adlandırın `CSWinApp`.
+2. Seçilen proje **Çözüm Gezgini**, **proje** menüsünde seçin **özellikleri**.
 
-3.  Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+3. İçinde **Proje Tasarımcısı**, bulun **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için *C:\TEMP*.
 
-4.  İçinde **Proje Tasarımcısı**, bulun **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için *C:\TEMP*.
+4. Tıklayarak projeyi yayımlama **Şimdi Yayımla**.
 
-5.  Tıklayarak projeyi yayımlama **Şimdi Yayımla**.
-
-     Bildirim dosyası oluşturulmuş ve koymak *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Bildirimi görüntülemek için dosyaya sağ tıklayın, **birlikte Aç**seçin **program bir listeden seçim**ve ardından **not defteri**.
+     Bildirim dosyası oluşturulur ve kaydedilen *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Bildirimi görüntülemek için dosyaya sağ tıklayın, **birlikte Aç**seçin **program bir listeden seçim**ve ardından **not defteri**.
 
      Arama için dosyasında `<osVersionInfo>` öğesi. Örneğin, sürüm olabilir:
 
@@ -163,21 +155,19 @@ Aşağıdaki yordamı kullanarak uygulama bildiriminde minimum işletim sistemi 
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  İçinde **Proje Tasarımcısı**, tıklayın **Build Events** sekmesine **Düzenle derleme sonrası** düğmesi.
+5. Geri **Proje Tasarımcısı**, tıklayın **Build Events** sekmesine ve ardından **Düzenle derleme sonrası**.
 
-7.  İçinde **derleme sonrası olay komut satırı** aşağıdaki komutu yazın:
+6. İçinde **derleme sonrası olay komut satırı** aşağıdaki komutu yazın:
 
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Proje oluşturduğunuzda, bu komut uygulama bildiriminde minimum işletim sistemi sürümü için 5.1.2600.0 değiştirin.
+     Proje oluşturduğunuzda, bu komut uygulama bildiriminde minimum işletim sistemi sürümü için 5.1.2600.0 değiştirir.
 
-     Çünkü `$(TargetPath)` makro oluşturulmasını, yürütülebilir dosyanın tam yolunu ifade `$(TargetPath)` *.manifest* belirtin, oluşturulan uygulama bildirimi *bin* dizin. Yayımlama bu bildirimi daha önce belirlediğiniz yayımlama konumuna kopyalar.
+     Çünkü `$(TargetPath)` makro oluşturulmasını, yürütülebilir dosyanın tam yolunu ifade `$(TargetPath)` *.manifest* belirtin, oluşturulan uygulama bildirimi *bin* dizin. Yayımlama bu bildirimi, daha önce belirlediğiniz yayımlama konumuna kopyalar.
 
-8.  Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.
+7. Projeyi yeniden yayımlayın.
 
-     Bildirim yeniden görüntüleyin. Bildirimi görüntülemek için Yayımla dizinini açın, dosyaya sağ tıklayın, **açın**seçin **program bir listeden seçim**ve ardından **not defteri**.
-
-     Sürüm şöyle olmalıdır:
+     Bildirim sürümü artık şöyle olmalıdır:
 
     ```xml
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />

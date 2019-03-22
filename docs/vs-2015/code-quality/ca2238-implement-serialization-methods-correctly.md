@@ -15,17 +15,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c23402571cf8b35598d9da2601c3415c3768b862
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776870"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355001"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serileştirme metotlarını doğru uygulayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 ile ilgili en son belgeler için bkz. [CA2238: Serileştirme yöntemlerini doğru uygulama](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA2238: Serileştirme yöntemlerini doğru uygulama](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) docs.microsoft.com'da.  
   
 |||  
 |-|-|  

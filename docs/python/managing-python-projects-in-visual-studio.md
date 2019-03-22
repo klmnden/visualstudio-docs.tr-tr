@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb9682f46913aec0bfd7d91d5cd8d535410470bb
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 61d37adfdc74a5b2a9c22ba9f3e5a92622cbbab6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194347"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355532"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio'da Python projeleri
 
@@ -75,7 +75,7 @@ Visual Studio, bir Python projesi sıfırdan veya mevcut koddan ayarlamak için 
 
 ![Python şablonlarla yeni proje iletişim kutusu](media/projects-new-project-dialog.png)
 
-(Tüm şablonları tüm önceki sürümlerinde mevcuttur) Visual Studio 2017'de kullanılabilir şablonları aşağıdaki tabloda özetlenmiştir:
+Visual Studio 2017 ile kullanılabilir ve üzeri (tüm şablonları tüm önceki sürümlerinde mevcuttur) şablonları aşağıdaki tabloda özetlenmiştir:
 
 | Şablon | Açıklama |
 | --- | --- |
@@ -88,7 +88,7 @@ Visual Studio, bir Python projesi sıfırdan veya mevcut koddan ayarlamak için 
 | **IronPython Silverlight Web sayfası** | Silverlight'ı kullanarak bir tarayıcıda çalışan IronPython projesi. Uygulamanın Python kodu web sayfasına komut dosyası olarak dahil edilir. Ortak komut dosyası etiketi Python kodunuzu DOM ile etkileşim kurabilir Silverlight içinde çalışan IronPython başlatır miktar JavaScript kodu aşağı çeker |
 | **IronPython Windows Formları uygulaması** | IronPython ile kullanıcı arabirimini kullanarak bir proje yapısı, kod ile Windows Forms kullanılarak oluşturulur. Uygulama, bir konsolu görüntülemeden çalışır. |
 | **Arka plan uygulama (IOT)** | Arka plan Hizmetleri cihazlarda çalıştırmak için Python projeleri dağıtılmasını destekler. Ziyaret [Windows IOT Geliştirme Merkezi](https://dev.windows.com/en-us/iot) daha fazla bilgi için. |
-| **Python uzantı Modülü** | Bu şablon yüklediğiniz Visual C++ altında görünür **Python yerel geliştirme araçları** Python iş yüküyle Visual Studio 2017'de (bkz [yükleme](installing-python-support-in-visual-studio.md)). Çekirdek yapısı için C++ Uzantısı DLL, üzerinde açıklanana için benzer sağladığı [Python için C++ uzantısı oluşturma](working-with-c-cpp-python-in-visual-studio.md). |
+| **Python uzantı Modülü** | Uygulamasını yüklediyseniz bu şablon Visual C++ altında görünür **Python yerel geliştirme araçları** Python iş yüküyle Visual Studio 2017 veya sonraki bir sürümde (bkz [yükleme](installing-python-support-in-visual-studio.md)). Çekirdek yapısı için C++ Uzantısı DLL, üzerinde açıklanana için benzer sağladığı [Python için C++ uzantısı oluşturma](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Python yorumlanan bir dil olduğundan, Visual Studio'da Python projeleri bir tek başına yürütülebilir dosya gibi diğer derlenmiş dili projeler (C#, örneğin) üretmediği. Daha fazla bilgi için [sorularını ve yanıtlarını](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

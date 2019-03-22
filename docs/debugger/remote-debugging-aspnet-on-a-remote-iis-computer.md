@@ -10,25 +10,34 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f84b7c461154443adcd099fa1d92c0b8fd6e9987
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194865"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355506"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017'de bir uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Visual Studio'da bir uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
 
 ![Uzaktan hata ayıklayıcı bileşenleri](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Bu kılavuz, ayarlayın ve Visual Studio 2017 ASP.NET Core yapılandırmak, IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı ekleme açıklanmaktadır. Uzaktan hata ayıklama için ASP.NET 4.5.2, bkz: [IIS bilgisayarında uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Ayrıca, dağıtabilir ve Azure kullanarak IIS üzerinde hata ayıklayın. Azure App Service için kolayca dağıtabilir ve hatalarını ayıklama, uzaktan hata ayıklayıcıyı kullanarak IIS ve önceden yapılandırılmış bir örneğinde [Snapshot Debugger](../debugger/debug-live-azure-applications.md) ya da [Haya ayıklayıcı Sunucu Gezgini'nden](../debugger/remote-debugging-azure.md).
+Bu kılavuz, ayarlamak ve bir Visual Studio ASP.NET Core yapılandırmak, IIS'ye dağıtma ve Visual Studio uzaktan hata ayıklayıcı ekleme açıklanmaktadır. Uzaktan hata ayıklama için ASP.NET 4.5.2, bkz: [IIS bilgisayarında uzaktan hata ayıklama ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Ayrıca, dağıtabilir ve Azure kullanarak IIS üzerinde hata ayıklayın. Azure App Service için kolayca dağıtabilir ve hatalarını ayıklama, uzaktan hata ayıklayıcıyı kullanarak IIS ve önceden yapılandırılmış bir örneğinde [Snapshot Debugger](../debugger/debug-live-azure-applications.md) ya da [Haya ayıklayıcı Sunucu Gezgini'nden](../debugger/remote-debugging-azure.md).
+
+## <a name="prerequisites"></a>Önkoşullar
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 bu makaledeki adımları izlemeniz gerekir.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017, bu makaledeki adımları tamamlayabilmeniz için gereklidir.
+::: moniker-end
 
 Bu yordamlar bu sunucu yapılandırmaları üzerinde test edilmiştir:
 * Windows Server 2012 R2 ve IIS 8
 * Windows Server 2016 ve IIS 10
 
-## <a name="requirements"></a>Gereksinimler
+## <a name="network-requirements"></a>Ağ gereksinimleri
 
 Bir proxy üzerinden bağlı iki bilgisayar arasında hata ayıklama desteklenmiyor. Ülkeler yüksek gecikme süresi veya çevirmeli, Internet gibi düşük bant genişliği bağlantı üzerinden veya Internet üzerinden hata ayıklama önerilmez ve başarısız olabilir veya edilemeyecek kadar yavaş. Gereksinimlerinin tam listesi için bkz. [gereksinimleri](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -40,15 +49,16 @@ Bu makalede, temel bir Windows server IIS yapılandırmasını ayarlama ve uygul
 
 * Emin olmak için Yardım istiyorsanız uygulamanızı, dağıtılan, ayarlanır ve böylece hata ayıklaması yapabilirsiniz, IIS'de doğru çalışmasını, bu konudaki tüm adımları izleyin.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Visual Studio 2017 bilgisayar üzerinde ASP.NET Core uygulaması oluşturun
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Visual Studio bilgisayarında ASP.NET Core uygulaması oluşturun
 
-1. Yeni bir ASP.NET Core uygulaması oluşturun. (**Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Core Web uygulaması**).
+1. Yeni bir ASP.NET Core web uygulaması oluşturun. 
 
-    İçinde **ASP.NET Core** şablonları bölümünden **Web uygulaması**.
-
-2. Emin olun **ASP.NET Core 2.0** seçildiğinde, **Docker desteğini etkinleştir** olduğu **değil** seçili ve **kimlik doğrulaması** ayarlanır **Kimlik doğrulamasız**.
-
-3. Projeyi adlandırın **MyASPApp** tıklatıp **Tamam** yeni çözümü oluşturmak için.
+    ::: moniker range=">=vs-2019"
+    Visual Studio 2019 içinde yazın **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Core Web uygulaması oluşturma** . Görüntülenen iletişim kutusunda, projeyi adlandırın **MyASPApp**ve ardından **Oluştur**. Ardından, **Web uygulaması (Model-View-Controller)** ve ardından **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Visual Studio 2017'de seçin **Dosya > Yeni > Proje**, ardından **Visual C# > Web > ASP.NET Core Web uygulaması**. ASP.NET Core şablonları bölümünde **Web uygulaması (Model-View-Controller)**. ASP.NET Core 2.1 seçili olduğundan emin olun, **Docker desteğini etkinleştir** seçilmezse ve **kimlik doğrulaması** ayarlanır **kimlik doğrulaması yok**. Projeyi adlandırın **MyASPApp**.
+    ::: moniker-end
 
 4. About.cshtml.cs dosyasını açın ve bir kesim noktası `OnGet` yöntemi (eski şablonlarda, bunun yerine HomeController.cs açın ve kesme noktası kümesinde `About()` yöntemi).
 
@@ -144,7 +154,7 @@ Ayrıca, yayımlama ve dosya sistemi veya diğer araçları kullanarak uygulamay
 
 ## <a name="BKMK_msvsmon"></a> İndirme ve Windows Server'da uzak araçları yükleme
 
-Bu öğreticide, Visual Studio 2017 kullanılmıştır.
+Visual Studio sürümünüzle eşleşen uzak Araçlar sürümü indirin.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -165,7 +175,14 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
     > [!TIP]
     > Visual Studio 2017 ve sonraki sürümlerinde, daha önce ekli kullanarak aynı işleme iliştirebilirsiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
-3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: 4022**.
+3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: bağlantı noktası**.
+
+    ::: moniker range=">=vs-2019"
+    **\<Uzak bilgisayar adı >: 4024** Visual Studio 2019 tarihinde
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<Uzak bilgisayar adı >: 4022** Visual Studio 2017
+    ::: moniker-end
 4. Tıklayın **Yenile**.
     Bazı işlemler görünür görmelisiniz **kullanılabilir işlemler** penceresi.
 
@@ -197,10 +214,14 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
 
 Gerekli bağlantı noktaları:
 
-- 80 - IIS için gerekli
-- 4022 - gerekli Visual Studio 2017'den uzaktan hata ayıklama için (bkz [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md) ayrıntılı bilgi için.
-- 8172 - (isteğe bağlı) uygulamayı Visual Studio'dan dağıtmak Web dağıtımı için gereklidir.
-- UDP 3702 - (isteğe bağlı) bulma bağlantı sağlar, **Bul** düğme Visual Studio uzaktan hata ayıklayıcı eklerken.
+* 80 - IIS için gerekli
+::: moniker range=">=vs-2019"
+* 4024 - gerekli Visual Studio 2019 ' uzaktan hata ayıklama için (bkz [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md) daha fazla bilgi için).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - gerekli Visual Studio 2017'den uzaktan hata ayıklama için (bkz [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md) daha fazla bilgi için).
+::: moniker-end
+* UDP 3702 - (isteğe bağlı) bulma bağlantı sağlar, **Bul** düğme Visual Studio uzaktan hata ayıklayıcı eklerken.
 
 1. Windows Server üzerindeki bir bağlantı noktasını açmak için Aç **Başlat** menüsünde **Gelişmiş Güvenlik Özellikli Windows Güvenlik Duvarı**.
 
