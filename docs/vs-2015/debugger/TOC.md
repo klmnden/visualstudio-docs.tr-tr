@@ -112,7 +112,7 @@
 ### [Hata: İşlem kimliğini inceleme yetkiniz yok](error-you-do-not-have-permission-to-inspect-the-process-s-identity.md)
 ### [Hata: Hedef bilgisayardaki Visual Studio uzaktan hata ayıklayıcı hizmeti geriye bu bilgisayara bağlanamıyor](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)
 ### [Hata: Web sitesi çalışan işlemi IIS tarafından sonlandırıldı](error-web-site-worker-process-has-been-terminated-by-iis.md)
-### [Hata: <name> adlı makineye bağlanılamıyor. Makine ağ üzerinde bulunamadı.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
+### [Hata: \<name> adlı makineye bağlanılamıyor. Makine ağ üzerinde bulunamadı.](error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 ### [Hata: Karışık modda hata ayıklama yalnızca Microsoft .NET Framework 2.0 veya daha yenisi kullanılırken desteklenir](error-mixed-mode-debugging-is-supported-only-when-using-microsoft-dotnet-framework-2-0-or-greater.md)
 ### [Hata: IA64 işlemleri için karışık mod hata ayıklaması desteklenmiyor](error-mixed-mode-debugging-for-ia64-processes-is-unsupported.md)
 ### [Hata: x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft .NET Framework 4 veya daha yenisi kullanılırken desteklenir](error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md)
