@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680223"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476039"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>İzlenecek yol: İş parçacıkları penceresini kullanarak bir çok iş parçacıklı uygulamaların hatalarını ayıklama (C#, Visual Basic, C++)
 
@@ -34,15 +34,27 @@ Bu öğreticiyi tamamlamak, yalnızca birkaç dakika sürer ve hata ayıklama ç
 
 Bu öğreticide kullanmak üzere aşağıdaki birden çok iş parçacıklı uygulaması projesi oluşturun:
 
-1. Visual Studio'da **dosya** > **yeni** > **proje**.
+1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
-1. İçinde **yeni proje** iletişim kutusunda:
-   - İçin bir C# uygulama, select **Visual C#**    >  **konsol uygulaması (.NET Framework)**.
-   - Bir C++ uygulama için seçin **Visual C++** > **Windows konsol uygulaması**.
+    ::: moniker range=">=vs-2019"
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
+    
+    - İçin C#, seçin **oluştur yeni konsol uygulaması (.NET Framework) projesi** için C#. Görünen iletişim kutusunda **Oluştur**.
+    - C++ için seçeneğini **yeni konsol uygulaması projesi oluşturma**. Görünen iletişim kutusunda **Oluştur**.
 
-1. Uygulama MyThreadWalkthroughApp adlandırın ve ardından **Tamam**.
+    Gibi bir ad yazın **MyThreadWalkthroughApp** tıklatıp **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda, aşağıdakileri seçin:
+    - İçin bir C# uygulama altında **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
+    - Bir C++ uygulama altındaki **Visual C++**, seçin **Windows Masaüstü**,, seçip **Windows konsol uygulaması**.
 
-   Yeni Proje görünür **Çözüm Gezgini**, ve bir kaynak dosyası adlı *Program.cs* veya *MyThreadWalkthroughApp.cpp* kaynak kod penceresinde açılır.
+    Gibi bir ad yazın **MyThreadWalkthroughApp** tıklatıp **Tamam**.
+    ::: moniker-end
+
+    Görmüyorsanız **konsol uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** veya **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+
+    Yeni Proje görünür **Çözüm Gezgini**, ve bir kaynak dosyası adlı *Program.cs* veya *MyThreadWalkthroughApp.cpp* kaynak kod penceresinde açılır.
 
 1. Kaynak dosyasıyla değiştirin C# veya C++ Örnek koddan [birden çok iş parçacıklı uygulamalarında hata ayıklamaya başlama](../debugger/get-started-debugging-multithreaded-apps.md).
 

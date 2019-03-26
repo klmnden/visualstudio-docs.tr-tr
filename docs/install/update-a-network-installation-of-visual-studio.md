@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: df273b97541a0fc136346083c4d2249cfd67f3bc
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324701"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475987"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme
 
@@ -102,6 +102,9 @@ vs_enterprise.exe --layout <layoutDir> --verify
 > Tarafından gereken bazı önemli meta veri dosyaları `--verify` seçeneği Düzen çevrimdışı önbellekte olması gerekir. Bu meta veri dosyaları eksikse "--doğrulayın" çalıştırılamıyor ve Kurulum bir hata verir. Bu hata ile karşılaşırsanız, yeni bir çevrimdışı Düzen farklı bir klasöre (veya aynı Çevrimdışı Önbellek klasörü. yeniden oluştur Bu nedenle yapmak için ilk çevrimdışı düzen oluşturmak için kullandığınız aynı düzen komutu çalıştırın. Örneğin: `Vs_enterprise.exe --layout <layoutDir>`
 
 Oluşturduğunuz yeni düzene ilk düzeni sürümünün aynı olmayabilir bu nedenle, Microsoft Visual Studio güncelleştirmeleri düzenli olarak gelir.
+
+> [!NOTE]
+> Doğrulama, yalnızca belirli bir alt sürümü Visual Studio'nun en son sürümü için çalışır. Yeni bir sürüm yayımlandıktan hemen sonra doğrulama önceki düzeltme eki düzeyi sürümlerinde aynı alt sürümü için çalışmaz.
 
 ## <a name="how-to-fix-a-layout"></a>Bir düzen nasıl
 

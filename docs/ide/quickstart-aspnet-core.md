@@ -1,8 +1,10 @@
 ---
 title: Bir ASP.NET Core web uygulaması oluşturunC#
 description: Visual Studio'da C# ve ASP.NET Core, adım adım ile basit bir Hello World web uygulaması oluşturmayı öğrenin.
-ms.date: 02/01/2019
 ms.custom: mvc,seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -12,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 60f7c7bd7d0a3073f75d4ece7012601ded8eb059
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957781"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475857"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -27,7 +29,17 @@ Bu 5-10 dakikalık bir giriş Visual Studio'nun nasıl kullanılacağını, bir 
 
 ### <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
+::: moniker range="vs-2017"
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
 
 ### <a name="choose-your-theme-optional"></a>(İsteğe bağlı) temanızı seçin
 
@@ -36,6 +48,8 @@ Bu hızlı başlangıç öğreticisinde, koyu Tema kullanan ekran görüntüleri
 ## <a name="create-a-project"></a>Proje oluşturma
 
 Başlamak için bir ASP.NET Core web uygulaması projesi oluşturacaksınız. Proje türü bile herhangi bir şey ekledik önce bir web uygulaması oluşturmak için şablonu dosyalarıyla birlikte gelir!
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın.
 
@@ -61,9 +75,46 @@ Başlamak için bir ASP.NET Core web uygulaması projesi oluşturacaksınız. Pr
    ![Yeni ASP.NET Core Web uygulaması iletişim kutusu](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Görmüyorsanız **ASP.NET Core 2.1** veya daha sonra Visual Studio'nun en son sürümü çalıştırdığınızdan emin olun. Yüklemenizi güncelleştirme hakkında daha fazla bilgi için bkz. [en son sürüme Visual Studio 2017 güncelleştirme](../install/update-visual-studio.md) sayfası.
+   > Görmüyorsanız **ASP.NET Core 2.1** veya daha sonra Visual Studio'nun en son sürümü çalıştırdığınızdan emin olun. Yüklemenizi güncelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio en son sürüme güncelleştirme](../install/update-visual-studio.md) sayfası.
 
 Hemen sonra Visual Studio proje dosyanızı açar.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *ASP.NET* arama kutusuna. Ardından, **C#** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+
+   Tüm dil ve platform filtreleri uyguladıktan sonra seçin **ASP.NET Core Web uygulaması** şablonu seçip **sonraki**.
+
+   ![Seçin C# ASP.NET Core Web uygulaması şablonu](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Görmüyorsanız, **ASP.NET Core Web uygulaması** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   >
+   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Ardından, Visual Studio yükleyicisinde **ASP.NET ve web geliştirme** iş yükü.
+   >
+   > ![ASP.NET Core Web uygulaması iş yükü Visual Studio yükleyicisi](../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. Ardından, 2. adım bu dönün "[proje oluşturma](#create-a-project)" yordamı.
+
+1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *HelloWorld* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+
+   !['yeni projenizi yapılandırın' penceresinde 'HelloWorld' projenizi adlandırın](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+
+1. İçinde **yeni bir ASP.NET Core Web uygulaması oluşturma** penceresinde doğrulayın **ASP.NET Core 2.1** veya daha sonra üstteki açılan menüde görünür. Ardından, **Web uygulaması**, örnek Razor sayfaları içerir. Ardından, **Oluştur**.
+
+   !['Yeni bir ASP.NET Core Web uygulaması oluştur' penceresi](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Yeni projeniz Visual Studio açılır.
+
+::: moniker-end
 
 ## <a name="create-and-run-the-app"></a>Oluşturma ve uygulama çalıştırma
 

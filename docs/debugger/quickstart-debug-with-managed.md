@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09546ae594ddc7653670c62f5a9186286eb52525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355227"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475974"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: İle hata ayıklama C# veya Visual Basic, Visual Studio hata ayıklayıcıyı kullanma
 
@@ -25,7 +25,7 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
-1. Visual Studio'yu açın.
+1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
     Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **yeni konsol uygulaması (.NET Core) proje oluştur**. Görünen iletişim kutusunda **Oluştur**.

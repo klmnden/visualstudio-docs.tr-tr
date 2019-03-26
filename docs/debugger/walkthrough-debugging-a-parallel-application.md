@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709414"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476065"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>İzlenecek yol: Visual Studio'da paralel bir uygulamada hata ayıklaması (C#, Visual Basic, C++)
 
@@ -62,23 +62,39 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
 
 #### <a name="to-create-the-sample-project"></a>Örnek proje oluşturmak için
 
-1. Visual Studio'da üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.
+1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
-2. Şunlardan birini seçin **Visual C#**, **Visual Basic**, veya **Visual C++**. Yönetilen diller için emin [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] framework kutusunda görüntülenir.
+    ::: moniker range=">=vs-2019"
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
+    
+    - İçin C# veya Visual Basic seçin, **oluştur yeni konsol uygulaması (.NET Framework) projesi** ya da C# veya Visual Basic. Görünen iletişim kutusunda **Oluştur**.
+    - C++ için seçeneğini **yeni konsol uygulaması projesi oluşturma** C++ için. Görünen iletişim kutusunda **Oluştur**.
 
-3. Altında **Windows Masaüstü**, seçin **konsol uygulaması** ve ardından **Tamam**. Varsayılan hata ayıklama yapılandırmasında kalır.
+    Ardından, bir ad yazın veya varsayılan adı kullanın ve tıklayın **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda, aşağıdakileri seçin:
 
-4. Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.
+    - İçin bir C# uygulama altında **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
+    - Bir Visual Basic uygulamasının altında **Visual Basic**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
+    - Bir C++ uygulama altındaki **Visual C++**, seçin **Windows Masaüstü**,, seçip **Windows konsol uygulaması**.
 
-5. Aşağıdaki kod, seçtiğiniz dilde için boş bir kod dosyasına yapıştırın.
+    Ardından, bir ad yazın veya varsayılan adı kullanın ve tıklayın **Tamam**.
+    ::: moniker-end
+
+    Görmüyorsanız **konsol uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** veya **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+
+1. Projede .cpp, .cs veya .vb kod dosyasını açın. Boş bir kod dosyası oluşturmak için içeriğini silin.
+
+1. Aşağıdaki kod, seçtiğiniz dilde için boş bir kod dosyasına yapıştırın.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.
+1. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.
 
-7. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.
+1. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.
 
     Dört çağrıları olduğunu fark `Debugger.Break` (`DebugBreak` C++ örneğinde) bu nedenle, kesme noktaları eklemek gerekmez; yalnızca uygulamayı çalıştıran neden olur, en fazla dört kez hata ayıklayıcıda ayırmak.
 

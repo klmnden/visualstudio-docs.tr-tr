@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953868"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476013"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 
@@ -52,7 +52,18 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 **DLL proje dosyalarını oluşturmak için:**
 
-1. Visual Studio'da **dosya** > **yeni** > **proje**.
+1. Visual Studio'yu açın ve bir proje oluşturun.
+
+    ::: moniker range=">=vs-2019"
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **boş proje**, seçin **şablonları**, ardından **yeni boş proje proje oluştur** c ++. Görünen iletişim kutusunda **Oluştur**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C++**, seçin **diğer**seçip Ortadaki bölmeden **boş proje**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Tamam**.
+    ::: moniker-end
+
+    Görmüyorsanız **boş proje** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Visual Studio Yükleyicisi'ni başlatır. Seçin **C++ ile masaüstü geliştirme** iş yükü, ardından **Değiştir**.
+
+    Visual Studio projesi oluşturur.
 
 1. İçinde **yeni proje** iletişim kutusunun **Visual C++** seçin **diğer**ve ardından **boş proje** orta bölmesinde.
 
@@ -71,6 +82,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
     ```cpp
     #include "Mixed_Mode.h"
     ```
+
 1. İçinde **Çözüm Gezgini**seçin **üst bilgi dosyaları**ve ardından **proje** > **Yeni Öğe Ekle**. Ya da sağ **üst bilgi dosyaları** seçip **Ekle** > **yeni öğe**.
 
 1. İçinde **yeni öğe** iletişim kutusunda **üst bilgi dosyası (.h)**. Tür **Mixed_Mode.h** içinde **adı** alan ve ardından **Ekle**.
@@ -117,18 +129,23 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>DLL çağırmak için basit bir yönetilen uygulama oluşturma
 
-1. Visual Studio'da **dosya** > **yeni** > **proje**.
+1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
-   > [!NOTE]
-   > Var olan C++ çözümünüze yeni yönetilen proje de ekleyebilirsiniz, ancak yeni çözüm oluşturmaya daha fazla hata ayıklama senaryoları destekler.
+    ::: moniker range=">=vs-2019"
+    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**ve ardından **oluştur yeni konsol uygulaması (.NET Framework) projesi** için C#. Görünen iletişim kutusunda **Oluştur**.
 
-1. İçinde **yeni proje** iletişim kutusunda **Visual C#** ve Orta bölmede:
+    Gibi bir ad yazın **Mixed_Mode_Calling_App** tıklatıp **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)** veya **konsol uygulaması (.NET Core)**.
 
-   - Bir .NET Framework uygulaması için seçin **konsol uygulaması (.NET Framework)**.
+    Gibi bir ad yazın **Mixed_Mode_Calling_App** tıklatıp **Tamam**.
+    ::: moniker-end
 
-   - Bir .NET Core uygulamanızı seçin **konsol uygulaması (.NET Core)**.
+    Görmüyorsanız **konsol uygulaması** proje şablonu, Git **Araçları** > **araçları ve özellikleri Al...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** iş yükü, ardından **Değiştir**.
 
-1. İçinde **adı** alanına **Mixed_Mode_Calling_App**ve ardından **Tamam**.
+    > [!NOTE]
+    > Var olan C++ çözümünüze yeni yönetilen proje de ekleyebilirsiniz, ancak yeni çözüm oluşturmaya daha fazla hata ayıklama senaryoları destekler.
 
    Visual Studio, boş bir proje oluşturur ve görüntüler **Çözüm Gezgini**.
 

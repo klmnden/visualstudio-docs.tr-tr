@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 89290417ce186d3fa4328726ee017dd631a4afbd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324854"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476091"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -31,6 +31,7 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 | **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.10 | Sürüm | 25 Mart 2019 | 15.9.28307.557 |
 | 15.9.9 | Sürüm | 12 Mart 2019 | 15.9.28307.518 |
 | 15.0.21 | Sürüm | 12 Mart 2019 | 15.0.26228.76 |
 | 15.9.8 | Sürüm | 5 Mart 2019 | 15.9.28307.481 |
