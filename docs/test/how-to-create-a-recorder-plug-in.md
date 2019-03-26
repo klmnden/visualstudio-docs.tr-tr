@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926261"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415907"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Nasıl yapılır: Kaydedici eklentisi oluşturma
 
@@ -35,34 +35,24 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
 
 1.  Web performans testi kaydedici eklentisi oluşturmak istediğiniz web performansı ve yük testi projesi içeren bir çözüm açın.
 
-2.  İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, **Ekle**ve ardından **yeni proje**.
+2.  Yeni bir **sınıf kitaplığı** çözüme bir proje.
 
-     **Yeni Proje Ekle** iletişim kutusu görüntülenir.
-
-3.  Altında **yüklü şablonlar**seçin **Visual C#**.
-
-4.  Şablonlar listesinde seçin **sınıf kitaplığı**.
-
-5.  İçinde **adı** metin kutusuna kaydedici eklentisi için bir ad yazın.
-
-     Sınıf kitaplığı eklenir **Çözüm Gezgini** ve yeni bir sınıf içinde açılır **Kod Düzenleyicisi**.
-
-6.  İçinde **Çözüm Gezgini**, yeni sınıf kitaplığı proje klasöründe, sağ **başvuruları** klasörü ve select **Başvuru Ekle**.
+3.  İçinde **Çözüm Gezgini**, yeni sınıf kitaplığı proje klasöründe, sağ **başvuruları** klasörü ve select **Başvuru Ekle**.
 
     > [!TIP]
     > Yeni bir sınıf kitaplığı projesi klasörüne örnektir **RecorderPlugins**.
 
      **Başvuru Ekle** iletişim kutusu görüntülenir.
 
-7.  Seçin **.NET** sekmesi.
+4.  Seçin **.NET** sekmesi.
 
-8.  Aşağı kaydırın ve select **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
+5.  Aşağı kaydırın ve select **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** eklenir **başvuruları** klasöründe **Çözüm Gezgini**.
 
-9. Kaydedici eklentiniz için kodu yazın. İlk olarak, türetilen yeni bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Kaydedici eklentiniz için kodu yazın. İlk olarak, türetilen yeni bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> yöntemi.
+7. Geçersiz kılma <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> yöntemi.
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -79,11 +69,11 @@ Aşağıdaki yordamlar nasıl ilkel kodunun bir kaydedici eklentisi oluşturmak,
     > [!NOTE]
     > Web performans testini değiştirirseniz, ayrıca ayarlamanız gerekir <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> özelliği true: `e.RecordedWebTestModified = true;`
 
-11. Kaydedici eklentisi web kaydı gerçekleştikten sonra yürütmek için istediğinize göre daha fazla kod ekleyin. Örneğin, aşağıdaki örnekte gösterildiği gibi özel korelasyon işleyecek bir kod ekleyebilirsiniz. Yorumları işlemlere dönüştürme veya doğrulama kuralları ekleme web performansı test ayrıca bir kaydedici eklentisi gibi şeyler için oluşturabilirsiniz.
+8. Kaydedici eklentisi web kaydı gerçekleştikten sonra yürütmek için istediğinize göre daha fazla kod ekleyin. Örneğin, aşağıdaki örnekte gösterildiği gibi özel korelasyon işleyecek bir kod ekleyebilirsiniz. Yorumları işlemlere dönüştürme veya doğrulama kuralları ekleme web performansı test ayrıca bir kaydedici eklentisi gibi şeyler için oluşturabilirsiniz.
 
-12. Üzerinde **derleme** menüsünde seçin **derleme \<sınıf kitaplığı proje adı >**.
+9. Üzerinde **derleme** menüsünde seçin **derleme \<sınıf kitaplığı proje adı >**.
 
-13. Sonra kaydedici eklentisi Visual Studio ile kaydetmek sırayla dağıtmanız gerekir.
+Sonra kaydedici eklentisi Visual Studio ile kaydetmek sırayla dağıtın.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Kaydedici eklentisini dağıtın
 
@@ -96,7 +86,7 @@ Kaydedici eklentisini derledikten sonra ortaya çıkan DLL'yi iki konumdan birin
 > [!WARNING]
 > Kaydedici eklentisini iki konumdan birine kopyaladıktan sonra kaydedici eklentisinin kaydedilmesi için için Visual Studio'yu yeniden başlatmanız gerekir.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Kaydedici eklentisini çalıştırmak için
+### <a name="execute-the-recorder-plug-in"></a>Kaydedici eklentisini yürütün
 
 1.  Yeni bir web performans testi oluşturun.
 
@@ -123,9 +113,7 @@ Bu örnek, özelleştirilmiş web Performans Testi Kaydedicisi özel dinamik par
 > [!NOTE]
 > Örnek kod tam listesi, bu konunun altında bulunur.
 
-**Örnek kodu gözden geçirme**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>ReportSession ilk sayfayı bulmak için sonuç üzerinden yineleme yapma
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>ReportSession ilk sayfayı bulmak için sonuç üzerinden yineleme yapma
 
 Kod örneğinin bu parçası, her bir kaydedilmiş nesne boyunca yinelenir ve rapor oturumu için yanıt gövdesini arar.
 
@@ -142,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Bir ayıklama kuralı ekleme
+### <a name="add-an-extraction-rule"></a>Bir ayıklama kuralı ekleme
 
 Bir yanıt bulunduktan sonra bir çıkarma kuralı eklemeniz gerekir. Kod örneğinin bu parçası kullanarak ayıklama kuralını oluşturur <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> sınıfı ve ardından ayıklama kuralını eklemek için web performans testindeki doğru isteği bulur. Her sonuç nesnesi yeni bir sahip çağrılır, hangi kod içinde web performans testinden doğru istekleri almak için kullanılan, DeclarativeWebTestItemId özelliği eklendi.
 
@@ -166,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Sorgu dizesi parametrelerini değiştir
+### <a name="replace-query-string-parameters"></a>Sorgu dizesi parametrelerini değiştir
 
 Artık kod tüm sorgu adı ReportSession ve değer {{SessionID}}, kod örneğinin bu parçasında gösterilen şekilde değiştirin. dize parametreleri bulur:
 

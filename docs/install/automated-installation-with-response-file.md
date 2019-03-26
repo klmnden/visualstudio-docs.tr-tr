@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e127ca518a0c7befe3e9a2d14bc48f84ba54905e
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0fdd1560f4b32f6c0b555e1786a766d034184f91
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58321649"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415644"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Yanıt dosyasında ayarları tanımlama
 
@@ -50,6 +50,8 @@ Güncelleştirebilirsiniz `response.json` bu düzeninden yükleyen kullanıcıla
 
 Temel `response.json` ürün ve yüklemek istediğiniz kanalı için bir değer verilebilir dışında Düzen dosyasında aşağıdaki örneğe benzer görünmelidir:
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -60,11 +62,29 @@ Temel `response.json` ürün ve yüklemek istediğiniz kanalı için bir değer 
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Bir düzen güncelle response.template.json dosyası da oluşturulur.  Bu dosya, tüm iş yükü, bileşen ve dil kullanılabilir kimliklerini içerir.  Bu dosya, bir şablon için hangi tüm içinde özel bir yükleme içerdiğinden sağlanır.  Yöneticiler bu dosya, bir özel yanıt dosyası için bir başlangıç noktası olarak kullanabilir.  Yalnızca kimlikleri yükleyin ve kendi yanıt dosyasına kaydetmek istemediğiniz herhangi bir şeyi kaldırın.  Response.template.json dosya özelleştirmeyin veya Düzen güncelleştirildiğinde yaptığınız değişiklikler kaybolacak.
 
 ## <a name="example-layout-response-file-content"></a>Örnek Düzen yanıt dosyası içeriği
 
 Aşağıdaki örnek, altı yaygın iş yüklerinin ve bileşenlerin ve hem İngilizce ve Fransızca kullanıcı Arabirimi dilleri ile Visual Studio Enterprise yükler. Bu örnekte, şablon olarak kullanabilirsiniz; yalnızca iş yüklerinin ve bileşenlerin, yüklemek istediğiniz değiştirin:
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -96,6 +116,43 @@ Aşağıdaki örnek, altı yaygın iş yüklerinin ve bileşenlerin ve hem İngi
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867754"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415674"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme
 
@@ -158,13 +158,13 @@ Bir DSL öğesi sürüklenen öğe ise kaynak modeli açmak ve öğesine erişme
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Model veri yolu için bir DSL projesini hazırlama
 
-1.  DSL kaynak Visual Studio Model veri yolu tarafından erişilebilir hale getirir:
+DSL kaynak Visual Studio Model veri yolu tarafından erişilebilir hale getirir:
 
-    1.  İndirip Visual Studio Model veri yolu uzantı zaten yüklü değilse yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. İndirip Visual Studio Model veri yolu uzantı zaten yüklü değilse yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  DSL tanım dosyası kaynak DSL DSL Tasarımcısı'nda açın. Tasarım yüzeyine sağ tıklayın ve ardından **etkinleştirme Modelbus**. İletişim kutusunda, birini veya her ikisini seçenekleri seçin.  **Tamam**'ı tıklatın. Yeni bir proje "ModelBus" DSL çözüme eklenir.
+2. DSL tanım dosyası kaynak DSL DSL Tasarımcısı'nda açın. Tasarım yüzeyine sağ tıklayın ve ardından **etkinleştirme Modelbus**. İletişim kutusunda, birini veya her ikisini seçenekleri seçin.  **Tamam**'ı tıklatın. Yeni bir proje "ModelBus" DSL çözüme eklenir.
 
-    3.  Tıklayın **tüm Şablonları Dönüştür** ve çözümü yeniden oluşturun.
+3. Tıklayın **tüm Şablonları Dönüştür** ve çözümü yeniden oluşturun.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Bir nesne bir kaynaktan DSL göndermek için
 

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223786"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416313"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio Live Unit Testing kullanmaya başlama
 
@@ -40,15 +40,19 @@ Bu öğretici, .NET Core 2.0 iş yüküyle Visual Studio Enterprise Edition yük
 
 Adlı bir Visual Studio çözümü oluşturarak başlayın `UtilityLibraries` bir tek .NET Standard sınıf kitaplığı projesi oluşur `StringLibrary`. Yazabileceğiniz `StringLibrary` C# veya Visual Basic içinde.
 
-Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çözümü oluşturmak için Visual Studio'yu açın ve aşağıdakileri yapın:
+Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Boş bir çözüm oluşturmak için Visual Studio'yu açın ve aşağıdakileri yapın:
 
 1. Seçin **dosya** > **yeni** > **proje** en üst düzey Visual Studio menüsünde.
 
-1. İçinde **yeni proje** iletişim kutusunda genişletin **diğer proje türleri** düğümünü seçip alt **Visual Studio çözümleri**. Seçin **boş çözüm** sağ bölmede şablon girin `UtilityLibraries` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
+1. Tür **çözüm** şablon arama kutusuna ve ardından **boş çözüm** şablonu.
+
+   ::: moniker range="vs-2017"
 
    ![** ** Yeni Proje iletişim kutusu](./media/lut-start/new-solution.png)
 
-1. Seçin **Tamam** çözümü oluşturmak için.
+   ::: moniker-end
+
+1. Çözüm oluşturmayı tamamlayın.
 
 Çözüm oluşturduğunuza göre adlı bir sınıf kitaplığı oluşturursunuz `StringLibrary` birkaç dizelerle genişletme yöntemleri içerir.
 
@@ -56,18 +60,35 @@ Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çöz�
 
 1. İçinde **Çözüm Gezgini**, sağ `UtilityLibraries` çözüm ve select **Ekle** > **yeni proje**.
 
-1. İçinde **Yeni Proje Ekle** iletişim kutusunda Seç C# düğümünü seçip **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda Seç C# düğümünü seçip **.NET Standard**.
 
    > [!NOTE]
    > Kitaplığımızı .NET Standard yerine belirli bir .NET uygulamasını hedeflediğinden, .NET Standard sürümünü destekleyen bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için [.NET Standard](/dotnet/standard/net-standard).
 
-1. Seçin **sınıf kitaplığı (.NET Standard)** sağ bölmede, şablon ve girin `StringLibrary` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
+3. Seçin **sınıf kitaplığı (.NET Standard)** sağ bölmede, şablon ve girin `StringLibrary` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
    ![** Ekleme yeni proje ** iletişim](./media/lut-start/add-project-cs.png)
 
-1. Seçin **Tamam** projeyi oluşturmak için.
+4. Seçin **Tamam** projeyi oluşturmak için.
 
-1. Tüm mevcut kodlar kod penceresinde, aşağıdaki kodla değiştirin:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Tür **sınıf kitaplığı** şablon arama kutusu ve select **sınıf kitaplığı (.NET Standard)** şablonu. **İleri**'ye tıklayın.
+
+   > [!NOTE]
+   > Kitaplığımızı .NET Standard yerine belirli bir .NET uygulamasını hedeflediğinden, .NET Standard sürümünü destekleyen bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için [.NET Standard](/dotnet/standard/net-standard).
+
+3. Projeyi adlandırın `StringLibrary`.
+
+4. Tıklayın **Oluştur** projeyi oluşturmak için.
+
+::: moniker-end
+
+5. Tüm mevcut kodlar kod penceresinde, aşağıdaki kodla değiştirin:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -79,24 +100,41 @@ Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çöz�
 
       - `HasEmbeddedSpaces` döndürür `true` bir katıştırılmış bir boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
 
-1. Seçin **derleme** > **Çözümü Derle** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızı oluşturması gerekir.
+6. Seçin **derleme** > **Çözümü Derle** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızı oluşturması gerekir.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. İçinde **Çözüm Gezgini**, sağ `UtilityLibraries` çözüm ve select **Ekle** > **yeni proje**.
 
-1. İçinde **Yeni Proje Ekle** iletişim kutusunda Visual Basic düğümünü seçin ve ardından **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda Visual Basic düğümünü seçin ve ardından **.NET Standard**.
 
    > [!NOTE]
    > Kitaplığımızı .NET Standard yerine belirli bir .NET uygulamasını hedeflediğinden, .NET Standard sürümünü destekleyen bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için [.NET Standard](/dotnet/standard/net-standard).
 
-1. Seçin **sınıf kitaplığı (.NET Standard)** sağ bölmede, şablon ve girin `StringLibrary` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
+3. Seçin **sınıf kitaplığı (.NET Standard)** sağ bölmede, şablon ve girin `StringLibrary` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
    ![** Ekleme yeni proje ** iletişim](./media/lut-start/add-project-vb.png)
 
-1. Seçin **Tamam** projeyi oluşturmak için.
+4. Seçin **Tamam** projeyi oluşturmak için.
 
-1. Tüm mevcut kodlar kod penceresinde, aşağıdaki kodla değiştirin:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Tür **sınıf kitaplığı** şablon arama kutusu ve select **sınıf kitaplığı (.NET Standard)** şablonu. **İleri**'ye tıklayın.
+
+   > [!NOTE]
+   > Kitaplığımızı .NET Standard yerine belirli bir .NET uygulamasını hedeflediğinden, .NET Standard sürümünü destekleyen bir .NET uygulamasından çağrılabilir. Daha fazla bilgi için [.NET Standard](/dotnet/standard/net-standard).
+
+3. Projeyi adlandırın `StringLibrary`.
+
+4. Tıklayın **Oluştur** projeyi oluşturmak için.
+
+::: moniker-end
+
+5. Tüm mevcut kodlar kod penceresinde, aşağıdaki kodla değiştirin:
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
@@ -108,11 +146,11 @@ Yalnızca bir veya daha fazla proje için bir kapsayıcı çözümüdür. Çöz�
 
       - `HasEmbeddedSpaces` döndürür `true` bir katıştırılmış bir boşluk karakteri; bir dize içeriyorsa, aksi takdirde, döndürür `false`.
 
-1. StringLibrary projeye sağ tıklayarak **Çözüm Gezgini** seçip **özellikleri**. İçinde **uygulama** sekmesinde, metni silmek **kök ad alanı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi. Kök ad alanı tarafından tanımlanan [Namespace deyimi](/dotnet/visual-basic/language-reference/statements/namespace-statement) kaynak kodunda.
+6. StringLibrary projeye sağ tıklayarak **Çözüm Gezgini** seçip **özellikleri**. İçinde **uygulama** sekmesinde, metni silmek **kök ad alanı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi. Kök ad alanı tarafından tanımlanan [Namespace deyimi](/dotnet/visual-basic/language-reference/statements/namespace-statement) kaynak kodunda.
 
    ![Visual Basic projesi için Proje Özellikleri iletişim kutusu](./media/lut-start/vb-properties.png)
 
-1. Seçin **derleme** > **Çözümü Derle** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızı oluşturması gerekir.
+7. Seçin **derleme** > **Çözümü Derle** en üst düzey Visual Studio menüsünde. Visual Studio başarıyla kitaplığınızı oluşturması gerekir.
 
 ---
 
@@ -124,77 +162,105 @@ Sonraki adım, test etmek için birim test projesi oluşturmaktır `StringLibrar
 
 1. İçinde **Çözüm Gezgini**, sağ `UtilityLibraries` çözüm ve select **Ekle** > **yeni proje**.
 
-1. İçinde **Yeni Proje Ekle** iletişim kutusunda Seç C# düğümünü seçip **.NET Core**.
+::: moniker range="vs-2017"
+
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda Seç C# düğümünü seçip **.NET Core**.
 
    > [!NOTE]
    > Birim testleri, sınıf kitaplığı olarak aynı dilde yazmak zorunda değildir.
 
-1. Seçin **birim testi projesi (.NET Core)** sağ bölmede, şablon ve girin `StringLibraryTests` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
+3. Seçin **birim testi projesi (.NET Core)** sağ bölmede, şablon ve girin `StringLibraryTests` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
    ![** Ekleme yeni proje ** iletişim kutusu için birim test projesi](./media/lut-start/add-unit-test-cs.png)
 
-1. Seçin **Tamam** projeyi oluşturmak için.
+4. Seçin **Tamam** projeyi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Tür **birim testi** şablon arama kutusu ve select **Birim Test projesi (.NET Core)** şablonu. **İleri**'ye tıklayın.
+
+3. Projeyi adlandırın `StringLibraryTests`.
+
+4. Tıklayın **Oluştur** projeyi oluşturmak için.
+
+::: moniker-end
 
    > [!NOTE]
    > Bu kullanmaya başlama öğreticilerinde Live Unit Testing ile MSTest test çerçevesi kullanır. XUnit ve NUnit test çerçeveleri de kullanabilirsiniz.
 
-1. Birim test projesi otomatik olarak test ettiği sınıf kitaplığı erişemez. Sınıf kitaplığı projesine bir başvuru ekleyerek, test kitaplığı erişimi sağlar. Bunu yapmak için sağ `StringLibraryTests` seçin ve proje **Ekle** > **başvuru**. İçinde **başvuru Yöneticisi** iletişim kutusunda, emin **çözüm** sekmesi seçili ve select `StringLibrary` aşağıdaki şekilde gösterildiği gibi proje.
+5. Birim test projesi otomatik olarak test ettiği sınıf kitaplığı erişemez. Sınıf kitaplığı projesine bir başvuru ekleyerek, test kitaplığı erişimi sağlar. Bunu yapmak için sağ `StringLibraryTests` seçin ve proje **Ekle** > **başvuru**. İçinde **başvuru Yöneticisi** iletişim kutusunda, emin **çözüm** sekmesi seçili ve select `StringLibrary` aşağıdaki şekilde gösterildiği gibi proje.
 
    ![** ** Başvuru Yöneticisi iletişim kutusu](./media/lut-start/add-reference.png)
 
-1. Aşağıdaki kod ile şablon tarafından sağlanan Demirbaş birim testi kodu değiştirin:
+6. Aşağıdaki kod ile şablon tarafından sağlanan Demirbaş birim testi kodu değiştirin:
 
    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
 
-1. Seçerek projenizi kaydetmek **Kaydet** araç çubuğundaki simgeye.
+7. Seçerek projenizi kaydetmek **Kaydet** araç çubuğundaki simgeye.
 
-1. Birim testi kod bazı ASCII olmayan karakterler içeren, Visual Studio bize kendi varsayılan ASCII biçiminde dosyayı kaydederseniz şu bazı karakterler kaybolur uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçin **diğer kodlama ile Kaydet** düğmesi.
+8. Birim testi kod bazı ASCII olmayan karakterler içeren, Visual Studio bize kendi varsayılan ASCII biçiminde dosyayı kaydederseniz şu bazı karakterler kaybolur uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçin **diğer kodlama ile Kaydet** düğmesi.
 
    ![Dosya kodlama seçin](media/lut-start/ascii-encoding.png)
 
-1. İçinde **kodlama** aşağı açılan listesi **Gelişmiş kaydetme seçenekleri** iletişim kutusunda seçin **Unicode (UTF-8 imza olmadan) - kod sayfası 65001**aşağıdaki şekilde gösterildiği gibi:
+9. İçinde **kodlama** aşağı açılan listesi **Gelişmiş kaydetme seçenekleri** iletişim kutusunda seçin **Unicode (UTF-8 imza olmadan) - kod sayfası 65001**aşağıdaki şekilde gösterildiği gibi:
 
    ![UTF-8 kodlaması seçme](media/lut-start/utf8-encoding.png)
 
-1. Birim test projesi seçerek derleyin **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
+10. Birim test projesi seçerek derleyin **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. İçinde **Çözüm Gezgini**, sağ `UtilityLibraries` çözüm ve select **Ekle** > **yeni proje**.
 
-1. İçinde **Yeni Proje Ekle** iletişim kutusunda Visual Basic düğümünü seçin ve ardından **.NET Core**.
+::: moniker range="vs-2017"
+
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda Visual Basic düğümünü seçin ve ardından **.NET Core**.
 
    > [!NOTE]
    > Birim testleri, sınıf kitaplığı olarak aynı dilde yazmak zorunda değildir.
 
-1. Seçin **birim testi projesi (.NET Core)** sağ bölmede, şablon ve girin `StringLibraryTests` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
+3. Seçin **birim testi projesi (.NET Core)** sağ bölmede, şablon ve girin `StringLibraryTests` içinde **adı** metin kutusunda, aşağıdaki şekilde gösterildiği gibi:
 
    ![** Ekleme yeni proje ** iletişim kutusu için birim testi](./media/lut-start/add-unit-test-vb.png)
 
-1. Seçin **Tamam** projeyi oluşturmak için.
+4. Seçin **Tamam** projeyi oluşturmak için.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Tür **birim testi** şablon arama kutusu ve select **Birim Test projesi (.NET Core)** şablonu. **İleri**'ye tıklayın.
+
+3. Projeyi adlandırın `StringLibraryTests`.
+
+4. Tıklayın **Oluştur** projeyi oluşturmak için.
+
+::: moniker-end
 
    > [!NOTE]
    > Bu kullanmaya başlama öğreticilerinde Live Unit Testing ile MSTest test çerçevesi kullanır. XUnit ve NUnit test çerçeveleri de kullanabilirsiniz.
 
-1. Birim test projesi otomatik olarak test ettiği sınıf kitaplığı erişemez. Sınıf kitaplığı projesine bir başvuru ekleyerek, test kitaplığı erişimi sağlar. Bunu yapmak için sağ `StringLibraryTests` seçin ve proje **Ekle** > **başvuru**. İçinde **başvuru Yöneticisi** iletişim kutusunda, emin **çözüm** sekmesi seçili ve select `StringLibrary` aşağıdaki şekilde gösterildiği gibi proje.
+5. Birim test projesi otomatik olarak test ettiği sınıf kitaplığı erişemez. Sınıf kitaplığı projesine bir başvuru ekleyerek, test kitaplığı erişimi sağlar. Bunu yapmak için sağ `StringLibraryTests` seçin ve proje **Ekle** > **başvuru**. İçinde **başvuru Yöneticisi** iletişim kutusunda, emin **çözüm** sekmesi seçili ve select `StringLibrary` aşağıdaki şekilde gösterildiği gibi proje.
 
    ![** ** Başvuru Yöneticisi iletişim kutusu](./media/lut-start/add-reference.png)
 
-1. Aşağıdaki kod ile şablon tarafından sağlanan Demirbaş birim testi kodu değiştirin:
+6. Aşağıdaki kod ile şablon tarafından sağlanan Demirbaş birim testi kodu değiştirin:
 
    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
 
-1. Seçerek projenizi kaydetmek **Kaydet** araç çubuğundaki simgeye.
+7. Seçerek projenizi kaydetmek **Kaydet** araç çubuğundaki simgeye.
 
-1. Birim testi kod bazı ASCII olmayan karakterler içeren, Visual Studio bize kendi varsayılan ASCII biçiminde dosyayı kaydederseniz şu bazı karakterler kaybolur uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçin **diğer kodlama ile Kaydet** düğmesi.
+8. Birim testi kod bazı ASCII olmayan karakterler içeren, Visual Studio bize kendi varsayılan ASCII biçiminde dosyayı kaydederseniz şu bazı karakterler kaybolur uyarmak için aşağıdaki iletişim kutusunu görüntüler. Seçin **diğer kodlama ile Kaydet** düğmesi.
 
    ![Dosya kodlama seçin](media/lut-start/ascii-encoding.png)
 
-1. İçinde **kodlama** aşağı açılan listesi **Gelişmiş kaydetme seçenekleri** iletişim kutusunda seçin **Unicode (UTF-8 imza olmadan) - kod sayfası 65001**aşağıdaki şekilde gösterildiği gibi:
+9. İçinde **kodlama** aşağı açılan listesi **Gelişmiş kaydetme seçenekleri** iletişim kutusunda seçin **Unicode (UTF-8 imza olmadan) - kod sayfası 65001**aşağıdaki şekilde gösterildiği gibi:
 
    ![UTF-8 kodlaması seçme](media/lut-start/utf8-encoding.png)
 
-1. Birim test projesi tarafından derleme **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
+10. Birim test projesi tarafından derleme **derleme** > **çözümü yeniden derle** en üst düzey Visual Studio menüsünde.
 
 ---
 

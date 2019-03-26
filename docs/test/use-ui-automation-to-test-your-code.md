@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145232"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416272"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -62,9 +62,13 @@ Kodlanmış UI test araçları ve şablonları erişmek için yükleme **kodlanm
 
 1. Kodlanmış UI testi projesi oluşturun.
 
-   Kodlanmış UI testleri, kodlanmış UI test projesi içinde yer almalıdır. Kodlanmış UI test projesi yoksa bir tane oluşturun. Seçin **dosya** > **yeni** > **proje** açmak için **yeni proje** iletişim kutusu. Kategorileri soldaki bölmesinde **yüklü** > **Visual Basic** *veya* **Visual C#**  >   **Test**. Seçin **kodlanmış UI Test projesi** şablonu seçip **Tamam**.
+   Kodlanmış UI testleri, kodlanmış UI test projesi içinde yer almalıdır. Kodlanmış UI test projesi yoksa bir tane oluşturun. Seçin **dosya** > **yeni** > **proje**. Arayın ve seçin **kodlanmış UI Test projesi** proje şablonu.
+
+   ::: moniker range="vs-2017"
 
    ![Kodlanmış UI testi proje şablonunu yeni proje iletişim kutusunda](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Görmüyorsanız **kodlanmış UI Test projesi** şablon gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).

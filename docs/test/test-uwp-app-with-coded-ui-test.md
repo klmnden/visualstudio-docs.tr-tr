@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942264"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416129"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Kodlanmış UI testi için test UWP uygulaması oluşturma
 
@@ -29,7 +29,11 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
 
 1. Visual Studio kullanarak yeni bir proje oluşturma **boş uygulama (Evrensel Windows)** Visual C# veya Visual Basic şablonu.
 
-     ![Boş uygulama Evrensel Windows şablonu](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Boş uygulama Evrensel Windows şablonu](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. İçinde **yeni evrensel Windows platformu projesi** iletişim kutusunda **Tamam** varsayılan platform sürümleri kabul etmek için.
 
@@ -61,16 +65,20 @@ Bu makalede, bir evrensel Windows Platformu (UWP) uygulaması için kodlanmış 
 
 1. Bir test projesi çözüme eklemek için çözüme sağ **Çözüm Gezgini** ve **Ekle** > **yeni proje**.
 
-1. İçinde **yeni proje** iletişim kutusunda, **kodlanmış UI Test projesi (Evrensel Windows)** şablonu. Şablon altında bulabilirsiniz **Windows Evrensel** kategorisi altında **Visual C#** veya **Visual Basic**.
+1. Arayın ve seçin **kodlanmış UI Test projesi (Evrensel Windows)** şablonu.
 
-     ![Yeni kodlanmış UI test projesi](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Yeni kodlanmış UI test projesi](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Görmüyorsanız **kodlanmış UI Test projesi (Evrensel Windows)** şablon gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. İçinde **kodlanmış UI testi için kod üret** iletişim kutusunda **el ile testi düzenlemek**.
 
-     ![Kodlanmış UI testi iletişim kutusu için kod oluşturma](../test/media/manually-edit-the-test.png)
+   ![Kodlanmış UI testi iletişim kutusu için kod oluşturma](../test/media/manually-edit-the-test.png)
 
 1. UWP uygulamanız zaten çalışmıyorsa başlatın tuşlarına basarak **Ctrl**+**F5**.
 

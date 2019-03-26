@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222093"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416411"
 ---
 # <a name="how-to-create-item-templates"></a>Nasıl yapılır: Öğe şablonları oluşturma
 
 Bu makalede bir öğe şablonunu kullanarak oluşturma işlemi gösterilmektedir **şablonu Dışarı Aktarma Sihirbazı**. Şablonunuzu birden fazla dosyadan oluşur olup [nasıl yapılır: Çok dosyalı şablonlar oluşturma](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusuna bir kullanıcı öğe şablonu eklemek için
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Yeni Öğe Ekle iletişim kutusu öğe şablonu Ekle
 
 1. Oluşturun veya bir projeyi Visual Studio'da açın.
 
@@ -46,7 +46,7 @@ Bu makalede bir öğe şablonunu kullanarak oluşturma işlemi gösterilmektedir
 
    Öğe şablonu görünür **Yeni Öğe Ekle** iletişim kutusu. Bir açıklama eklediyseniz **şablonu Dışarı Aktarma Sihirbazı**, tanımı iletişim kutusunun sağ tarafında görünür.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Bir evrensel Windows uygulaması projesinde kullanılacak öğe şablonunu etkinleştirme
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Bir evrensel Windows uygulaması projesinde kullanılacak öğe şablonunu etkinleştirme
 
 Sihirbaz bir temel şablon oluşturmak için işin çoğunu yapar, ancak çoğu durumda el ile değiştirmeniz gerekir. *.vstemplate* şablon verdikten sonra dosya. Örneğin, öğe görünmesini istiyorsanız **Yeni Öğe Ekle** iletişim bir evrensel Windows uygulaması projesi için birkaç fazladan adım gerçekleştirmeniz gerekir.
 
@@ -68,7 +68,7 @@ Sihirbaz bir temel şablon oluşturmak için işin çoğunu yapar, ancak çoğu 
 
 Artık bir evrensel Windows projesi için bu şablonu temel alan bir öğe ekleyebilirsiniz **Yeni Öğe Ekle** iletişim kutusu.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Belirli bir proje alt türleri için şablonlar etkinleştirmek için
+## <a name="enable-templates-for-specific-project-subtypes"></a>Belirli bir proje alt türleri için şablonlar etkinleştir
 
 Şablonunuz için yalnızca belirli proje alt türleri, Windows, Office, veritabanı veya Web gibi yalnızca görüntüleneceğini belirtebilirsiniz.
 
@@ -103,7 +103,7 @@ Aşağıdaki örnek, bir öğe şablonu için gösterir **Office** projeleri.
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Şablonu Dışarı Aktar Sihirbazı'nı kullanarak olmadan bir öğe şablonunu el ile oluşturmak için
+## <a name="manually-create-an-item-template"></a>Öğe şablonu el ile oluşturma
 
 Bazı durumlarda bir öğe şablonunu el ile sıfırdan oluşturmak isteyebilirsiniz.
 

@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914025"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416338"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Nasıl yapılır: Tanılama veri bağdaştırıcısı oluşturma
 
@@ -48,21 +48,9 @@ Test ayarlarınızı oluşturduğunuzda sınıflandırdığınız bilgiyi temel 
 
 Özel yapılandırma Düzenleyicisi içeren tam bir örnek tanılama veri bağdaştırıcısı için bir proje, bkz: [tanılama veri bağdaştırıcısı oluşturmak için örnek proje](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Oluşturma ve tanılama veri bağdaştırıcısı yükleme
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Oluşturma ve tanılama veri bağdaştırıcısı yükleme
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Tanılama veri bağdaştırıcısı oluşturmak ve yüklemek için
-
-1. Yeni bir sınıf kitaplığı oluşturun.
-
-   1.  Üzerinde **dosya** menüsünde seçin **yeni**, gelin ve ardından **yeni proje**.
-
-   2.  Gelen **proje türleri**, kullanacağınız dili seçin.
-
-   3.  Gelen **Visual Studio yüklenmiş şablonlar**seçin **sınıf kitaplığı**.
-
-   4.  Tanılama veri bağdaştırıcınız için bir ad yazın.
-
-   5.  Seçin **Tamam**.
+1. Yeni bir **sınıf kitaplığı** proje.
 
 2. Bütünleştirilmiş kod Ekle **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 

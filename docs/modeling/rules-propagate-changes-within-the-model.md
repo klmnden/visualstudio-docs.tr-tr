@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be803d02ab2040537b06a81327355abf80f56aab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919878"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416220"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Değişiklikleri Modelin İçinde Yayan Kurallar
 Bir değişiklik bir öğeden diğerine Görselleştirme ve modelleme SDK'sı (VMSDK) yaymak için bir depo oluşturabilirsiniz. Store herhangi bir öğeye bir değişiklik meydana geldiğinde, kuralları genellikle en dıştaki işlem tamamlandığında, yürütülmek üzere zamanlanır. Farklı türde bir öğe ekleme veya silme gibi olaylar, farklı türleri için kuralları vardır. Belirli öğeleri, şekilleri ve diyagramları türleri için kurallar ekleyebilirsiniz. Birçok yerleşik özellik kuralları tarafından tanımlanır: Örneğin, kuralları modeli değiştiğinde, diyagram güncelleştirildiğinden emin olun. Kendi kurallarınızı ekleyerek, etki alanına özgü dil özelleştirebilirsiniz.
@@ -212,4 +212,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-- [BoundsRules Şekil Konumunu ve Boyutunu Kısıtlamama](../modeling/boundsrules-constrain-shape-location-and-size.md)

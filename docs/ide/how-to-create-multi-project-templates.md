@@ -9,28 +9,28 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a596d37d4446332461709cb6737d4f526e9b02e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ef0dc772422322d8cfa2f8c7ca88a7cf30eab31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970887"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416259"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Nasıl yapılır: Birden çok proje şablonu oluşturma
 
-Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. Bir proje oluşturduğunuzda temel bir çok proje şablonundan **yeni proje** iletişim kutusu, şablondaki her proje, çözüme eklenir.
+Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı olarak davranır. Birden çok proje şablonu temel alan bir proje oluşturduğunuzda, şablondaki her projesi çözüme eklenir.
 
 İki veya daha fazla proje şablonları ve bir kök şablonu türü birden çok proje şablonu olan **da ProjectGroup**.
 
 Birden çok proje şablonu tek proje şablonlarından farklı davranır. Bunlar aşağıdaki benzersiz özelliklere sahiptir:
 
-- Birden çok proje şablonu tek tek projelerde adlarında atanamaz **yeni proje** iletişim kutusu. Bunun yerine, **ProjectName** özniteliği **ProjectTemplateLink** öğesinde *vstemplate* dosyaya her proje için bir ad belirtin.
+- Yeni bir proje oluşturmak için şablon kullanıldığında tek tek projelerde birden fazla projeli bir şablon adları atanamaz. Bunun yerine, **ProjectName** özniteliği **ProjectTemplateLink** öğesinde *vstemplate* dosyaya her proje için bir ad belirtin.
 
 - Birden çok proje şablonu, farklı diller için proje içerebilir, ancak bir kategorideki tüm şablon yalnızca içine yerleştirilebilir. Şablon kategorisinde belirtin **ProjectType** öğesinin *vstemplate* dosya.
 
 Birden çok proje şablonu sıkıştırılmadan aşağıdakileri içermesi gereken bir *.zip* dosyası:
 
-- Bir kök *vstemplate* dosya tüm birden çok proje şablonu. Bu kök *vstemplate* dosya meta verilerini içeren, **yeni proje** iletişim kutusu görüntüler ve nerede bulunacağını belirtmektedir *vstemplate* projelerinde dosyaları şablonu. Bu dosya kök dizininde *.zip* dosya.
+- Bir kök *vstemplate* dosya tüm birden çok proje şablonu. Bu kök *vstemplate* oluşturduğunuz yeni proje iletişim kutusunda görüntülenen meta veri dosyası içerir. Ayrıca nerede bulunacağını belirtmektedir *vstemplate* dosyaları şablonda projeler için. Bu dosya kök dizininde *.zip* dosya.
 
 - Tam proje şablonu için gerekli dosyaları içeren iki veya daha fazla klasör. Tüm kod dosyaları proje klasörleri içerir ve ayrıca bir *vstemplate* proje dosyası.
 
@@ -72,37 +72,37 @@ Kök *vstemplate* birden çok proje şablonu, aşağıdaki yollarla bir tek proj
 
 1. Bir çözüm oluşturun ve iki veya daha fazla proje ekleyin.
 
-1. Bunlar için bir şablonu dışarı aktarılmasına izin hazır olana kadar projeleri özelleştirin.
+2. Bunlar için bir şablonu dışarı aktarılmasına izin hazır olana kadar projeleri özelleştirin.
 
    > [!TIP]
    > Kullanıyorsanız [şablon parametreleri](template-parameters.md) ve istediğiniz üst şablonundan değişkenlerine başvurmak parametrenin adı ön eki `ext_`. Örneğin: `$ext_safeprojectname$`
 
-1. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar**.
+3. Üzerinde **proje** menüsünde seçin **şablonu dışarı aktar**.
 
    **Şablonu Dışarı Aktarma Sihirbazı** açılır.
 
-1. Üzerinde **seçtiğiniz şablon türüne** sayfasında **proje şablonu**. İçin bir şablonu dışarı aktarma ve ardından istediğiniz projeleri seçin **sonraki**. (Bu adımları çözümde her proje için yinelemeniz.)
+4. Üzerinde **seçtiğiniz şablon türüne** sayfasında **proje şablonu**. İçin bir şablonu dışarı aktarma ve ardından istediğiniz projeleri seçin **sonraki**. (Bu adımları çözümde her proje için yinelemeniz.)
 
-1. Üzerinde **şablon seçenekleri** şablonunuz için bir ad ve isteğe bağlı bir açıklama, simge ve önizleme görüntüsü girin. Seçin **son**.
+5. Üzerinde **şablon seçenekleri** şablonunuz için bir ad ve isteğe bağlı bir açıklama, simge ve önizleme görüntüsü girin. Seçin **son**.
 
    Proje içine aktarılır bir *.zip* dosya ve belirtilen çıkış konuma yerleştirdi.
 
    > [!NOTE]
    > Her proje olmalıdır ayrı ayrı bir şablona dışarı, bu nedenle önceki adımları çözümde her proje için yineleyin.
 
-1. Her proje için bir alt ile şablon için bir dizin oluşturun.
+6. Her proje için bir alt ile şablon için bir dizin oluşturun.
 
-1. Her projenin içeriğini ayıklayın *.zip* dosyasına, oluşturduğunuz karşılık gelen alt dizini.
+7. Her projenin içeriğini ayıklayın *.zip* dosyasına, oluşturduğunuz karşılık gelen alt dizini.
 
-1. Temel dizinde olan bir XML dosyası oluşturmak bir *.vstemplate* dosya uzantısı. Bu dosya için birden çok proje şablonu meta verileri içerir. Dosya yapısı için aşağıdaki örneğe bakın. Her proje için göreli bir yol belirttiğinizden emin olun *vstemplate* dosya.
+8. Temel dizinde olan bir XML dosyası oluşturmak bir *.vstemplate* dosya uzantısı. Bu dosya için birden çok proje şablonu meta verileri içerir. Dosya yapısı için aşağıdaki örneğe bakın. Her proje için göreli bir yol belirttiğinizden emin olun *vstemplate* dosya.
 
-1. Temel dizin ve sağ tıklayın veya bağlam menüsünden tüm dosyaları seçin, **göndermek** > **sıkıştırılmış (daraltılmış) klasör**.
+9. Temel dizin ve sağ tıklayın veya bağlam menüsünden tüm dosyaları seçin, **göndermek** > **sıkıştırılmış (daraltılmış) klasör**.
 
    Dosya ve klasörler halinde sıkıştırılmış bir *.zip* dosya.
 
-1. Kopyalama *.zip* kullanıcı proje şablonu dizine dosya. Varsayılan olarak, bu dizindir *%USERPROFILE%\Documents\Visual Studio \<sürüm\>\Templates\ProjectTemplates*.
+10. Kopyalama *.zip* kullanıcı proje şablonu dizine dosya. Varsayılan olarak, bu dizindir *%USERPROFILE%\Documents\Visual Studio \<sürüm\>\Templates\ProjectTemplates*.
 
-1. Visual Studio'da açın **yeni proje** iletişim kutusu ve, şablonun göründüğünden emin olun.
+11. Visual Studio'da **dosya** > **yeni** > **proje** ve, şablonun göründüğünden emin olun.
 
 ## <a name="two-project-example"></a>İki proje örneği
 

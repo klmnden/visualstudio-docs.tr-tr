@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 079c1ee65ba5691504752e0f7d4e1f46ad06c525
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268506"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415960"
 ---
 # <a name="project-and-item-templates"></a>Proje ve öğe şablonları
 
@@ -43,7 +43,7 @@ Tüm proje ve öğe şablonları, Visual Studio ile yüklenir veya sizin tarafı
 
 ::: moniker range=">=vs-2019"
 
-- A *.vstemplate* şablondan bir proje veya öğe oluşturmak ve şablonu görüntülemek için gerekli meta veriler içeren dosya **yeni bir proje oluşturma** sayfası veya **Add New Item** penceresi.
+- A *.vstemplate* şablondan bir proje veya öğe oluşturmak ve şablonu görüntülemek için gerekli meta veriler içeren dosya **yeni bir proje oluşturma** sayfası veya **Add New Item** iletişim kutusu.
 
 ::: moniker-end
 

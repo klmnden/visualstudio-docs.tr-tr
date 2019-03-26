@@ -1,34 +1,66 @@
 ---
-title: Şablon düzenleme
+title: Şablonları bulun
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1fe0dababa77d2f52f98618a2ba5a54b6b0b728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325006"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415466"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl yapılır: Proje ve öğe şablonlarını bulma ve düzenleme
 
-Şablon dosyaları, Visual Studio şablonları görünmesi için tanıdığı bir konumda yerleştirilmelidir **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları. Kullanıcı şablonu konumu özel alt kategoriler de oluşturabilirsiniz ve kategorileri gösterilir **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları.
+Şablon dosyalarını, bunların yeni proje ve yeni öğe iletişim kutularında gösterilen sırada bilinen bir konumda yerleştirilmelidir...
+
+::: moniker range="vs-2017"
+
+Kullanıcı şablonu konumu özel alt kategoriler de oluşturabilirsiniz ve kategorileri gösterilir **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları.
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>Şablonları bulun
 
 Yüklü Şablonlar ve kullanıcı şablonları iki farklı konumlarda depolanır.
 
+### <a name="installed-templates"></a>Yüklü Şablonlar
+
+Visual Studio ile yüklü şablonlar varsayılan olarak bulunur:
+
+::: moniker range="vs-2017"
+
+- *% ProgramFiles(x86) %\\Microsoft Visual Studio\\2017\\\<sürümü >\\Common7\IDE\ProjectTemplates\\< dil\>\\< Yerel ayar kimliği\>*
+
+- *% ProgramFiles(x86) %\\Microsoft Visual Studio\\2017\\\<sürümü > \Common7\IDE\ItemTemplates\\< dil\>\\< yerel ayar kimliği\>*
+
+Örneğin, aşağıdaki dizine Visual Basic öğesi şablonları için İngilizce (LCID 1033) vardır:
+
+*C:\\Program dosyaları (x86)\\Microsoft Visual Studio\\2017\\topluluk\\Common7\\IDE\\öğe şablonları\\VisualBasic\\ 1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *% ProgramFiles(x86) %\\Microsoft Visual Studio\\2019\\\<sürümü >\\Common7\IDE\ProjectTemplates\\< dil\>\\< Yerel ayar kimliği\>*
+
+- *% ProgramFiles(x86) %\\Microsoft Visual Studio\\2019\\\<sürümü > \Common7\IDE\ItemTemplates\\< dil\>\\< yerel ayar kimliği\>*
+
+Örneğin, aşağıdaki dizine Visual Basic öğesi şablonları için İngilizce (LCID 1033) vardır:
+
+*C:\\Program dosyaları (x86)\\Microsoft Visual Studio\\2019\\topluluk\\Common7\\IDE\\öğe şablonları\\VisualBasic\\ 1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>Kullanıcı Şablonları
 
-Sıkıştırılmış eklerseniz (*.zip*) içeren dosyaya bir *.vstemplate* kullanıcı şablon dizini, şablon dosyasına görünür **yeni proje** veya  **Yeni Öğe Ekle** iletişim kutusu. Kullanıcı şablonları varsayılan olarak bulunur:
+Sıkıştırılmış eklerseniz (*.zip*) içeren dosyaya bir *.vstemplate* dosya kullanıcı şablon dizinine şablon yeni proje ve yeni öğe iletişim kutularında görüntülenir. Kullanıcı şablonları varsayılan olarak bulunur:
 
 ::: moniker range="vs-2017"
 
@@ -55,19 +87,9 @@ Sıkıştırılmış eklerseniz (*.zip*) içeren dosyaya bir *.vstemplate* kulla
 ::: moniker-end
 
 > [!TIP]
-> Kullanıcı şablonlarında konumunu ayarlayabilirsiniz **Araçları** > **seçenekleri** > **projeler ve çözümler**  >   **Konumları**.
+> Kullanıcı şablonları için bilinen bir konuma değiştirebilirsiniz **Araçları** > **seçenekleri** > **projeler ve çözümler**  >   **Konumları**.
 
-### <a name="installed-templates"></a>Yüklü Şablonlar
-
-Visual Studio ile yüklü şablonlar varsayılan olarak bulunur:
-
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\< programlama dili\>\\< yerel ayar kimliği\>*
-
-- *\\< VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\< programlama dili\>\\< yerel ayar kimliği\>*
-
-Örneğin, aşağıdaki dizine Visual Basic öğesi şablonları için İngilizce (LCID 1033) vardır:
-
-- *C:\\< VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>Şablon düzenleme
 
@@ -76,7 +98,7 @@ Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları yüklü �
 > [!NOTE]
 > Yeni bir kategori programlama dili düzeyinde oluşturulamıyor. Yeni kategori her bir dilin yalnızca oluşturulabilir.
 
-### <a name="to-create-new-user-project-template-categories"></a>Proje şablonu kategorileri yeni kullanıcı oluşturmak için
+### <a name="create-new-user-project-template-categories"></a>Yeni kullanıcı proje şablonu kategorileri oluşturma
 
 1. Kullanıcı proje şablonu dizini programlama dili klasörde bir klasör oluşturun. Örneğin, kurmak için bir **HelloWorld** kategorisi için C# proje şablonları, şu dizin oluşturma:
 
@@ -88,7 +110,7 @@ Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları yüklü �
 
    **HelloWorld** kategorisi görünür **yeni proje** iletişim kutusunun **yüklü** > **Visual C#** .
 
-### <a name="to-create-new-user-item-template-categories"></a>Öğe şablonu kategorileri yeni kullanıcı oluşturmak için
+### <a name="create-new-user-item-template-categories"></a>Yeni kullanıcı öğe şablonu kategorileri oluşturma
 
 1. Kullanıcı öğesi şablon dizini programlama dili klasörde bir klasör oluşturun. Örneğin, kurmak için bir **HelloWorld** kategorisi için C# öğe şablonları, şu dizin oluşturma:
 
@@ -103,8 +125,6 @@ Kategorileri **yeni proje** ve **Yeni Öğe Ekle** iletişim kutuları yüklü �
 ### <a name="display-templates-in-parent-categories"></a>Üst kategoriler görüntüleme şablonları
 
 Alt kategoriler kullanarak kendi üst kategorilerde görüntülenecek şablonlarında etkinleştirebilirsiniz `NumberOfParentCategoriesToRollUp` öğesinde *.vstemplate* dosya. Bu adımları proje şablonları ve öğe şablonları ile aynıdır.
-
-#### <a name="to-display-templates-in-parent-categories"></a>Üst kategorilerdeki şablonları görüntülemek için
 
 1. Bulun *.zip* şablonu içeren dosya.
 
@@ -133,6 +153,8 @@ Alt kategoriler kullanarak kendi üst kategorilerde görüntülenecek şablonlar
 1. Ayıklanan şablon dosyalarını ve eski şablonu silmek *.zip* dosya.
 
 1. Yeni put *.zip* silinmiş olan dizinindeki *.zip* dosya.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

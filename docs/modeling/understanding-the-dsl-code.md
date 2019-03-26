@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928289"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416025"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
+
 Bir etki alanına özgü dil (DSL) çözümü okumak ve Visual Studio DSL örneklerini güncellemek için kullanabileceğiniz bir API oluşturur. Bu API, DSL tanımını oluşturulan kodda tanımlanır. Bu konuda oluşturulan API açıklanmaktadır.
 
 ## <a name="the-example-solution-component-diagrams"></a>Örnek çözüm: Bileşen diyagramları
- Bu konudaki örnekler çoğu kaynağı olan çözümü oluşturmak için gelen bir DSL oluşturma **bileşeni modelleri** çözüm şablonu. Bu, yeni bir DSL çözümü oluşturduğunuzda görüntülenen standart şablonların biridir.
+
+Bu konudaki örnekler çoğu kaynağı olan çözümü oluşturmak için gelen bir DSL oluşturma **bileşeni modelleri** çözüm şablonu. Bu, yeni bir DSL çözümü oluşturduğunuzda görüntülenen standart şablonların biridir.
 
 > [!NOTE]
->  Bileşen diyagramları DSL şablonu Visual Studio'da mimari menüsü kullanarak oluşturabileceğiniz UML Bileşen diyagramları ilgili değildir. İçinde **yeni proje** iletişim kutusunda **diğer proje Types\Extensibility** ve ardından **etki alanına özgü dil tasarımcısını**.
+> Bileşen diyagramları DSL şablonun adlı **etki alanına özgü dil tasarımcısını**.
 
- Bu çözüm şablonu ile aşina değilseniz F5 ve deneyi tuşuna basın. Bir bağlantı noktası aracını bileşenin üzerine sürükleyerek bağlantı noktaları oluşturma ve bağlantı noktaları bağlanabildiğinizi özellikle dikkat edin.
+Tuşuna **F5** ve bu çözüm şablonu ile aşina değilseniz denemeler yapın. Bir bağlantı noktası aracını bileşenin üzerine sürükleyerek bağlantı noktaları oluşturma ve bağlantı noktaları bağlanabildiğinizi özellikle dikkat edin.
 
- ![Bileşenleri ve birbirine bağlı bağlantı noktaları](../modeling/media/componentsample.png)
+![Bileşenleri ve birbirine bağlı bağlantı noktaları](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL Çözüm yapısı
  **Dsl** proje DSL'nizi için API tanımlar. **DslPackage** proje, Visual Studio ile nasıl tümleştiğine tanımlar. Modelden oluşturulan kodu da içerebilir kendi projeleriniz de ekleyebilirsiniz.
@@ -347,4 +349,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 - [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
 - [Modelleri, Sınıfları ve İlişkileri Anlama](../modeling/understanding-models-classes-and-relationships.md)
 - [Etki Alanına Özgü Dili Özelleştirme ve Genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Etki Alanına Özgü Dili Özelleştirmek için Kod Yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Bir etki alanına özgü dili özelleştirmek için kod yazma](../modeling/writing-code-to-customise-a-domain-specific-language.md)

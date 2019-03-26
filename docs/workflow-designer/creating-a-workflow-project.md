@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222460"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414764"
 ---
 # <a name="workflow-project-templates"></a>İş akışı projesi şablonları
 
@@ -36,20 +36,14 @@ Visual Studio, dört farklı iş akışı proje şablonlarını sunar:
 
 Bu şablonlar erişmek için ilk yükleme **Windows Workflow Foundation** Visual Studio bileşen. Ayrıntılı yönergeler için bkz. [Windows Workflow Foundation'ı yükleme](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Yükledikten sonra **Windows Workflow Foundation** bileşeni, açık **yeni proje** seçerek iletişim **dosya** > **yeni**  >  **Proje**.
+1. Yükledikten sonra **Windows Workflow Foundation** bileşeni, select **dosya** > **yeni** > **proje**.
 
-1. Sol bölmede seçin **Visual C#**   >  **iş akışı** kategorisi (veya **Visual Basic** > **işakışı** Visual Basic isterseniz).
+1. Arayın ve örnek bir iş akışı projesi şablonu seçin, **iş akışı konsol uygulaması** şablonu.
 
-1. Orta bölmede, proje şablonu, gibi seçin **iş akışı konsol uygulaması**.
-
-1. İçinde **adı** kutusunda, tanımlamakta kolaylaştırmak, projeniz için açıklayıcı bir ad girin.
-
-1. İçinde **konumu** kutusunda, projeyi kaydedin veya istediğiniz dizin girin **Gözat** gitmek için.
-
-1. İçinde **çözüm** kutusunda, yeni çözüm için bir ad girin. Seçin **Tamam** uygulama oluşturmak için.
+1. Aracılığıyla proje oluşturmaya devam edin.
 
    > [!NOTE]
-   > Varolan çözüme yeni bir proje eklemek istiyorsanız, bu çözüm, Visual Studio'da açın, çözüme sağ **Çözüm Gezgini**seçip **Ekle** > **yeni Proje** açmak için **yeni proje** iletişim kutusu.
+   > Varolan çözüme yeni bir proje eklemek istiyorsanız, bu çözüm, Visual Studio'da açın, çözüme sağ **Çözüm Gezgini**seçip **Ekle** > **yeni Proje**.
 
 ## <a name="workflow-console-app"></a>İş akışı konsol uygulaması
 

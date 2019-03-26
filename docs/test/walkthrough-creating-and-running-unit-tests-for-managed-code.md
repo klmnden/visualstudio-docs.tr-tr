@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: c2702209d7a235d57ba1e1161675fe351d6a66e7
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323561"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415544"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>İzlenecek yol: Yönetilen kod için birim testleri oluşturma ve çalıştırma
 
@@ -43,6 +43,15 @@ Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için 
 
    **Yeni Proje** iletişim kutusu görünür.
 
+3. Seçin C# **sınıf kitaplığı** proje şablonu.
+
+4. Projeyi adlandırın **banka**ve ardından **Tamam**.
+
+   Banka projesi oluşturulur ve görüntülenen **Çözüm Gezgini** ile *Class1.cs* dosyası Kod Düzenleyicisi'nde açın.
+
+   > [!NOTE]
+   > Varsa *Class1.cs* olduğu değil, Kod Düzenleyicisi'nde açın, dosyayı çift tıklatın *Class1.cs* içinde **Çözüm Gezgini** açın.
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -51,16 +60,16 @@ Bir komut satırından testleri çalıştırma hakkında daha fazla bilgi için 
 
 2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
 
-::: moniker-end
+3. Arayın ve seçin C# **sınıf kitaplığı** proje şablonu ve ardından **sonraki**.
 
-3. Seçin C# sınıf kitaplığı proje şablonu.
-
-4. Projeyi adlandırın **banka**ve ardından **Tamam** veya **Oluştur**.
+4. Projeyi adlandırın **banka**ve ardından **Oluştur**.
 
    Banka projesi oluşturulur ve görüntülenen **Çözüm Gezgini** ile *Class1.cs* dosyası Kod Düzenleyicisi'nde açın.
 
    > [!NOTE]
    > Varsa *Class1.cs* olduğu değil, Kod Düzenleyicisi'nde açın, dosyayı çift tıklatın *Class1.cs* içinde **Çözüm Gezgini** açın.
+
+::: moniker-end
 
 5. Kaynak kodundan kopyalama [birim testleri oluşturmak için örnek proje](../test/sample-project-for-creating-unit-tests.md)ve özgün içeriklerini *Class1.cs* kopyalanmış kod ile.
 
@@ -93,9 +102,9 @@ public void Debit(double amount)
 1. Üzerinde **dosya** menüsünde **Ekle** > **yeni proje**.
 
    > [!TIP]
-   > Varolan çözüme ek bir proje eklemek için birkaç yolu vardır. Çözüm üzerinde sağ **Çözüm Gezgini** ve **Ekle** > **yeni proje**. Ya da seçebilirsiniz **dosya** > **yeni** > **proje**ve ardından **yeni proje** iletişim kutusunda **Eklemek için çözüm** seçeneği:
-   >
-   > ![Yeni Proje iletişim kutusunda çözüm seçeneği ekleme](media/add-to-solution.png)
+   > Çözüm üzerinde sağ tıklatabilirsiniz **Çözüm Gezgini** ve **Ekle** > **yeni proje**.
+
+::: moniker range="vs-2017"
 
 2. İçinde **yeni proje** iletişim kutusunda **yüklü**, genişletme **Visual C#** ve ardından **Test**.
 
@@ -104,6 +113,20 @@ public void Debit(double amount)
 4. İçinde **adı** kutusuna `BankTests`ve ardından **Tamam**.
 
    **BankTests** projesi eklenir **banka** çözüm.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Arayın ve seçin C# **birim testi projesi** proje şablonu ve ardından **sonraki**.
+
+3. Projeyi adlandırın `BankTests`.
+
+4. **Oluştur**'u tıklatın.
+
+   **BankTests** projesi eklenir **banka** çözüm.
+
+::: moniker-end
 
 5. İçinde **BankTests** projesi, bir başvuru ekleyin **banka** proje.
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970523"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416350"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Nasıl yapılır: Çok dosyalı şablonlar oluşturma
 
@@ -28,11 +28,11 @@ ms.locfileid: "55970523"
 
 Çok dosyalı öğe şablonları, öğe oluşturulduğunda doğru dosya uzantılarını kullanılmasını sağlamak için parametreleri gerektirir. Çok dosyalı öğe şablonu kullanarak oluşturursanız **şablonu Dışarı Aktarma Sihirbazı**, bu parametreleri otomatik olarak oluşturulur ve başka düzenleme gereklidir.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Şablonu Dışarı Aktarma Sihirbazı'nı kullanarak bir çok dosyalı öğe şablonu oluşturmak için
+## <a name="use-the-export-template-wizard"></a>Şablonu Dışarı Aktarma Sihirbazı'nı kullanma
 
 Tek Dosyalı öğe şablonu olduğu gibi aynı şekilde çok dosyalı öğe şablonu oluşturabilirsiniz. Bkz: [nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md). Üzerinde **vermek öğesi seçin** Sayfası Sihirbazı'nın bağımlı dosyaları (örneğin, bir Windows Forms formu dosyası) sahip bir dosya seçin. Sihirbaz, şablonda tasarımcı ve kaynak dosyaları gibi tüm bağımlı dosyaları otomatik olarak içerir.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Çok dosyalı öğe şablonu el ile oluşturmak için
+## <a name="manually-create-a-multi-file-item-template"></a>Çok dosyalı öğe şablonu el ile oluşturma
 
 1. Öğe şablonu, el ile tek dosyalı öğe şablonu oluşturma, ancak dahil, çok dosyalı oluşturan her bir dosya oluşturun.
 

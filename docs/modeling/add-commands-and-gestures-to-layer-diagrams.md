@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983851"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415479"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 
@@ -30,25 +30,21 @@ Sağ menü komutlarını tanımlama ve hareket işleyicileri Visual Studio'da ba
 
 Bkz: [gereksinimleri](../modeling/extend-layer-diagrams.md#prereqs).
 
-## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Yeni VSIX'de komut veya hareket tanımlama
+## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Yeni VSIX'de komut veya hareket tanımlama
 
 Bir uzantı oluşturmanın en hızlı yolu, proje şablonu kullanmaktır. Bu seçenek, kodu ve VSIX bildirimini aynı projeye yerleştirir.
 
-### <a name="to-define-an-extension-by-using-a-project-template"></a>Bir proje şablonunu kullanarak bir uzantısı tanımlamak için
+1. Yeni bir **katman Tasarımcı komut uzantısı** veya **katman Tasarımcı hareket uzantısı** proje.
 
-1. Kullanarak yeni çözümde bir proje oluşturma **yeni proje** komutunu **dosya** menüsü.
+   Şablon, küçük bir iş örneği içeren bir proje oluşturur.
 
-2. İçinde **yeni proje** iletişim kutusunun **modelleme projeleri**, şunlardan birini seçin **katman Tasarımcı komut uzantısı** veya **katman Tasarımcı hareket uzantısı** .
-
-    Şablon, küçük bir iş örneği içeren bir proje oluşturur.
-
-3. Uzantıyı test etmek için basın **Ctrl**+**F5** veya **F5**.
+2. Uzantıyı test etmek için basın **Ctrl**+**F5** veya **F5**.
 
     Visual Studio deneysel örneği başlar. Bu örnekte, bir bağımlılık diyagramı oluşturun. Komut veya hareket uzantınızın Bu diyagramda çalışması gerekir.
 
-4. Deneysel örneği kapatın ve örnek kodu değiştirin. Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).
+3. Deneysel örneği kapatın ve örnek kodu değiştirin.
 
-5. Aynı projeye daha fazla komut veya hareket işleyicileri ekleyebilirsiniz. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:
+4. Aynı projeye daha fazla komut veya hareket işleyicileri ekleyebilirsiniz. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:
 
     [Bir menü komutunu tanımlama](#command)
 
@@ -56,46 +52,40 @@ Bir uzantı oluşturmanın en hızlı yolu, proje şablonu kullanmaktır. Bu se�
 
 ::: moniker range="vs-2017"
 
-6. Visual Studio'nun veya başka bir bilgisayara ana örneğindeki uzantıyı yüklemek için bulma *.vsix* dosyası *bin* dizin. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için seçin **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.
+5. Visual Studio'nun veya başka bir bilgisayara ana örneğindeki uzantıyı yüklemek için bulma *.vsix* dosyası *bin* dizin. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için seçin **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-6. Visual Studio'nun veya başka bir bilgisayara ana örneğindeki uzantıyı yüklemek için bulma *.vsix* dosyası *bin* dizin. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için seçin **uzantıları yönetme** üzerinde **uzantıları** menüsü.
+5. Visual Studio'nun veya başka bir bilgisayara ana örneğindeki uzantıyı yüklemek için bulma *.vsix* dosyası *bin* dizin. Yüklemek istediğiniz bilgisayara kopyalayın ve ardından çift tıklayın. Kaldırmak için seçin **uzantıları yönetme** üzerinde **uzantıları** menüsü.
 
 ::: moniker-end
 
-## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ayrı bir VSIX'e komut veya hareket ekleme
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Ayrı bir VSIX'e komut veya hareket ekleme
 
 Komutların, katman doğrulayıcılarının ve diğer uzantıların bulunduğu bir VSIX oluşturmak istiyorsanız, VSIX tanımlamak için bir proje ve işleyiciler için ayrı projeler oluşturmanızı öneririz.
 
-### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Ayrı bir VSIX'e katman uzantıları eklemek için
+1. Yeni bir **sınıf kitaplığı** proje. Bu projeyi içeren komut veya hareket işleyici sınıflarını.
 
-1.  Yeni veya mevcut bir Visual Studio çözümünde bir sınıf kitaplığı projesi oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve ardından **sınıf kitaplığı**. Bu projeyi içeren komut veya hareket işleyici sınıflarını.
+   > [!NOTE]
+   > Bir sınıf kitaplığında birden fazla komut veya hareket işleyici sınıf tanımlayabilirsiniz, ancak katman doğrulama sınıflarını ayrı sınıf kitaplığında tanımlamanız gerekir.
 
-    > [!NOTE]
-    > Bir sınıf kitaplığında birden fazla komut veya hareket işleyici sınıf tanımlayabilirsiniz, ancak katman doğrulama sınıflarını ayrı sınıf kitaplığında tanımlamanız gerekir.
+2. Ekleyin veya çözümünüzde bir VSIX projesi oluşturun. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**.
 
-2.  Çözümünüzde bir VSIX projesi oluşturun veya tanımlayın. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**. Bir VSIX projesine eklemek için:
+3. İçinde **Çözüm Gezgini**, VSIX projesini sağ tıklatın ve seçin **başlangıç projesi olarak ayarla**.
 
-    1.  İçinde **yeni proje** iletişim kutusunda **Visual C#**, ardından **genişletilebilirlik**ve ardından **VSIX projesi**.
+4. İçinde **source.extension.vsixmanifest**altında **varlıklar**Ekle komut veya hareket işleyicisi projesini MEF Bileşeni olarak.
 
-    2.  Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.
+    1. İçinde **varlıklar**.tab, seçin **yeni**.
 
-    3.  Tıklayın **sürümleri seçin** emin olun **Visual Studio** denetlenir.
+    2. Konumunda **türü**seçin **Microsoft.VisualStudio.MefComponent**.
 
-3.  İçinde **source.extension.vsixmanifest**altında **varlıklar**Ekle komut veya hareket işleyicisi projesini MEF Bileşeni olarak.
+    3. Konumunda **kaynak**seçin **geçerli çözümde proje** ve komut veya hareket işleyici projenizin adını seçin.
 
-    1.  İçinde **varlıklar**.tab, seçin **yeni**.
+    4. Dosyayı kaydedin.
 
-    2.  Konumunda **türü**seçin **Microsoft.VisualStudio.MefComponent**.
-
-    3.  Konumunda **kaynak**seçin **geçerli çözümde proje** ve komut veya hareket işleyici projenizin adını seçin.
-
-    4.  Dosyayı kaydedin.
-
-4.  Komut veya hareket işleyici projesine dönün ve aşağıdaki proje başvurularını ekleyin:
+5. Komut veya hareket işleyici projesine dönün ve aşağıdaki proje başvurularını ekleyin:
 
    |**Başvuru**|**Bunu yapmak sağlar**|
    |-|-|
@@ -106,17 +96,17 @@ Komutların, katman doğrulayıcılarının ve diğer uzantıların bulunduğu b
    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Modelleme uzantılarını tanımla|
    |Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]|Şekilleri ve diyagramları güncelleyin|
 
-5.  Uzantınız için kodu içermesi için C# sınıf kitaplığı projesi sınıfı dosyayı düzenleyin. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:
+6. Uzantınız için kodu içermesi için C# sınıf kitaplığı projesi sınıfı dosyayı düzenleyin. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:
 
      [Bir menü komutunu tanımlama](#command)
 
      [Bir hareket işleyicisi tanımlama](#gesture)
 
-     Ayrıca bkz: [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).
+7. Özelliği test etmek için basın **Ctrl**+**F5** veya **F5**.
 
-6.  Özelliği test etmek için basın **Ctrl**+**F5** veya **F5**. Visual Studio deneysel örneği açılır. Bu örnekte, oluşturma veya bağımlılık diyagramı açın.
+   Visual Studio deneysel örneği açılır. Bu örnekte, oluşturma veya bağımlılık diyagramı açın.
 
-7.  VSIX ana örneğine Visual Studio'nun veya başka bir bilgisayara yüklemek için bulma **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'ndeki VSIX dosyasına çift tıklayın.
+8. VSIX ana örneğine Visual Studio'nun veya başka bir bilgisayara yüklemek için bulma **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Dosya Gezgini'nde VSIX dosyasına çift tıklayın.
 
 ##  <a name="command"></a> Bir menü komutunu tanımlama
 
@@ -149,8 +139,6 @@ Varolan bir hareket ya da komut projesine daha fazla menü komutu tanımları ek
    `...`
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
-
-Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 Yeni bir komut eklemek için aşağıdaki örneği içeren yeni bir kod dosyası oluşturun. Ardından test edin ve düzenleyin.
 
@@ -275,5 +263,4 @@ Hareket işleyicilerle ilgili aşağıdaki noktalara dikkat edin:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Program kodunda katman modellerini gezinme ve güncelleştirme](../modeling/navigate-and-update-layer-models-in-program-code.md)
 - [Bağımlılık diyagramlarına özel mimari doğrulaması ekleme](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

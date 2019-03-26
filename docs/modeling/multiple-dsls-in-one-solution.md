@@ -7,39 +7,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a670c43d584fb65f014765874f23c42b5de71179
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942836"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416155"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Bir Çözümde Birden Çok DSL
+
 Bunlar birlikte yüklenir, böylece tek bir çözümün bir parçası birkaç DSL'ler paketleyebilirsiniz.
 
- Birden çok DSL tümleştirmek için çeşitli teknikler kullanabilirsiniz. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md) ve [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md) ve [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).
+Birden çok DSL tümleştirmek için çeşitli teknikler kullanabilirsiniz. Daha fazla bilgi için [Visual Studio Modelbus kullanarak modelleri tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md) ve [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md) ve [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md).
 
-### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Aynı çözümdeki birden çok DSL oluşturmak için
+## <a name="build-more-than-one-dsl-in-the-same-solution"></a>Aynı çözümdeki birden çok DSL oluşturun
 
-1. İki veya daha fazla DSL çözümler ve bir VSIX projesi oluşturun ve tüm projeler tek bir çözüme ekleyin.
+1. Yeni bir **VSIX projesi** proje.
 
-   -   Yeni bir VSIX projesi oluşturmak için: İçinde **yeni proje** iletişim kutusunda **Visual C#** , **genişletilebilirlik**, **VSIX projesi**.
+2. VSIX çözüm dizininde değil iki veya daha fazla DSL projesi oluşturun.
 
-   -   VSIX çözüm dizininde değil iki veya daha fazla DSL çözümleri oluşturun.
+   - Her bir DSL için Visual Studio'nun yeni bir örneğini açın. Yeni DSL oluşturun ve VSIX çözümle aynı çözüm klasörü belirtin.
 
-        Her bir DSL için Visual Studio'nun yeni bir örneğini açın. Yeni DSL oluşturun ve VSIX çözümle aynı çözüm klasörü belirtin.
+   - Farklı bir dosya adı uzantısı ile her DSL oluşturduğunuzdan emin olun.
 
-        Farklı bir dosya adı uzantısı ile her DSL oluşturduğunuzdan emin olun.
+   - Adlarını değiştirme **Dsl** ve **DslPackage** böylece tüm farklıdır projeleri. Örneğin: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   -   Adlarını değiştirme **Dsl** ve **DslPackage** böylece tüm farklıdır projeleri. Örneğin: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
+   - Her **DslPackage\*\source.extension.tt**, bu satırı doğru Dsl projesi adıyla güncelleştirin:
 
-   -   Her **DslPackage\*\source.extension.tt**, bu satırı doğru Dsl projesi adıyla güncelleştirin:
+      `string dslProjectName = "Dsl2";`
 
-        `string dslProjectName = "Dsl2";`
-
-   -   Dsl * ve DslPackage VSIX çözümüne ekleme\* projeleri.
-
-        Kendi çözüm klasöründe her çifti yerleştirmek isteyebilirsiniz.
+   - Dsl * ve DslPackage VSIX çözümüne ekleme\* projeleri. Kendi çözüm klasöründe her çifti yerleştirmek isteyebilirsiniz.
 
 2. DSL VSIX bildirimlerini Birleştir:
 
@@ -57,8 +54,8 @@ Bunlar birlikte yüklenir, böylece tek bir çözümün bir parçası birkaç DS
 
    Sonuçta elde edilen VSIX hem DSL'ler yükler. F5 kullanarak test edebilir veya dağıtma _YourVsixProject_**\bin\Debug\\\*.vsix**.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
-- [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Kopyalama Davranışını Özelleştirme](../modeling/customizing-copy-behavior.md)

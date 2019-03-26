@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f27ef33b03d6b8c7d9f84fab67a7791c9ba42735
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914467"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415557"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Nasıl yapılır: İstek düzeyi eklentisi oluşturma
 
@@ -32,50 +32,42 @@ Web performans testleri kaydettiğiniz özelleştirilmiş web performans testi i
 
 1.  İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, **Ekle** seçip **yeni proje**.
 
-     **Yeni Proje Ekle** iletişim kutusu görüntülenir.
+2. Yeni bir **sınıf kitaplığı** proje.
 
-2.  Altında **yüklü şablonlar**seçin **Visual C#**.
-
-3.  Şablonlar listesinde seçin **sınıf kitaplığı**.
-
-4.  İçinde **adı** metin kutusuna sınıf ve seçin için bir ad yazın **Tamam**.
-
-     Yeni sınıf kitaplığı projesi eklenir **Çözüm Gezgini** ve yeni bir sınıf görünür **Kod Düzenleyicisi**.
-
-5.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçin ve yeni sınıf kitaplığı klasöründe **Başvuru Ekle**.
+3.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçin ve yeni sınıf kitaplığı klasöründe **Başvuru Ekle**.
 
      **Başvuru Ekle** iletişim kutusu görüntülenir.
 
-6.  Seçin **.NET** sekmesinde, aşağı kaydırın, seçin **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**
+4.  Seçin **.NET** sekmesinde, aşağı kaydırın, seçin **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**
 
      Başvuru **Microsoft.VisualStudio.QualityTools.WebTestFramework** eklenir **başvuru** klasöründe **Çözüm Gezgini**.
 
-7.  İçinde **Çözüm Gezgini**web performansının üst düğümünü sağ tıklatın ve web performans testi isteği test eklentisini eklemek istediğiniz yük testini içeren test projesini yükleyin. Seçin **Başvurusu Ekle**.
+5.  İçinde **Çözüm Gezgini**web performansının üst düğümünü sağ tıklatın ve web performans testi isteği test eklentisini eklemek istediğiniz yük testini içeren test projesini yükleyin. Seçin **Başvurusu Ekle**.
 
      **Başvuru Ekle iletişim kutusu görüntülenir**.
 
-8.  Seçin **projeleri** sekmesinde **sınıf kitaplığı projesi** seçip **Tamam** .
+6.  Seçin **projeleri** sekmesinde **sınıf kitaplığı projesi** seçip **Tamam** .
 
-9. İçinde **Kod Düzenleyicisi**, eklentinizin kodunu yazın. İlk olarak, türetilen yeni bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+7. İçinde **Kod Düzenleyicisi**, eklentinizin kodunu yazın. İlk olarak, türetilen yeni bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
-10. Uygulama içinde bir veya iki kod <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> olay işleyicileri. Örnek uygulama için aşağıdaki örnek bölümüne bakın.
+8. Uygulama içinde bir veya iki kod <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> olay işleyicileri. Örnek uygulama için aşağıdaki örnek bölümüne bakın.
 
-11. Kodu yazdıktan sonra yeni projeyi derleyin.
+9. Kodu yazdıktan sonra yeni projeyi derleyin.
 
-12. İstek eklentisi eklemek istediğiniz web performans testi açın.
+10. İstek eklentisi eklemek istediğiniz web performans testi açın.
 
-13. İstek eklentisi ve select eklemek istediğiniz isteğe sağ tıklatın **istek eklentisi Ekle**.
+11. İstek eklentisi ve select eklemek istediğiniz isteğe sağ tıklatın **istek eklentisi Ekle**.
 
      **Web Test isteği Eklentisi Ekle** iletişim kutusu görüntülenir.
 
-14. Altında **bir eklenti seçin**, yeni seçin eklenti.
+12. Altında **bir eklenti seçin**, yeni seçin eklenti.
 
-15. İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
+13. İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
 
     > [!NOTE]
     > Eklentilerinizi istediğiniz sayıda özelliği getirebilir; bunları yalnızca genel, ayarlanabilir ve tam sayı, Boole veya dize gibi bir temel türden yapın. Özellikler penceresini kullanarak web başarım testi eklentisi özelliklerini daha sonra da değiştirebilirsiniz.
 
-16. Seçin **Tamam**.
+14. Seçin **Tamam**.
 
      Eklenti eklenir **istek eklentileri** HTTP isteğinin bir alt klasörü klasörü.
 
@@ -86,8 +78,8 @@ Web performans testleri kaydettiğiniz özelleştirilmiş web performans testi i
     >
     > Eklentilerinizi birine kod değişikliği yapmanız ve yeni bir DLL sürümü oluşturursanız Bunun nedeni **(sürüm = 0.0.0.0)**, ancak eklenti hala özgün eklenti sürümüne başvuruyor. Bu sorunu gidermek için şu adımları izleyin:
     >
-    > 1.  Web performansı ve yük testi projesi içinde başvurularda bir uyarı görürsünüz. Kaldırın ve Başvuruyu eklenti DLL'nizden yeniden ekleyin.
-    > 2.  Test veya uygun konumdan eklentiyi kaldırın ve yeniden ekleyin.
+    > 1. Web performansı ve yük testi projesi içinde başvurularda bir uyarı görürsünüz. Kaldırın ve Başvuruyu eklenti DLL'nizden yeniden ekleyin.
+    > 2. Test veya uygun konumdan eklentiyi kaldırın ve yeniden ekleyin.
 
 ## <a name="example"></a>Örnek
 

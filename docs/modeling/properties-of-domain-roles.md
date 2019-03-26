@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923284"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415531"
 ---
 # <a name="properties-of-domain-roles"></a>Etki Alanı Rollerinin Özellikleri
 Özellikler aşağıdaki tabloda, bir etki alanı rolüyle ilişkilidir. Etki alanı rolleri hakkında daha fazla bilgi için bkz. [anlama modelleri, sınıfları ve ilişkileri](../modeling/understanding-models-classes-and-relationships.md). Bu özellikler kullanma hakkında daha fazla bilgi için bkz. [bir etki alanına özgü dili özelleştirme ve genişletme](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -28,7 +28,7 @@ ms.locfileid: "55923284"
 |Çokluk|Karşı rol oynayabilir model öğelerinin sayısı (`0..1`, `1..1`, `0..*`, veya `1..*`). Çokluğu ise `0..*` veya `1..*`, ardından oluşturulan özellik bir koleksiyonu temsil eder; Aksi takdirde, oluşturulan özellik bir tek bir model öğesini temsil eder.|İlişki türüne göre değişir ve bu ilişkiyi kaynak veya hedef rolde olup olmadığını.|
 |Ad|Etki alanı rolü adı. Bu özellik, boşluk içeremez.|Bu rol için etki alanı rol oyuncusu sınıfının adı.|
 |Kopyalama yayar|`DoNotPropagateCopy` -Kopyalanan rol oyuncusu, bu bağlantı herhangi bir kopyasına sahip olacaktır.<br /><br /> `PropagateCopyToLinkOnly` -Rol oyuncusu varolan kopyalanmış bağlantı noktaları.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Kopyalanan bağlantıyı karşı rol oyuncusuna bir kopyasına işaret eder.|`PropagateCopyToLinkAndOppositeRolePlayer` katıştırılmış kaynak rolleri için.<br /><br /> `DoNotPropagateCopy` diğer roller için.<br /><br /> Daha fazla bilgi için [kopyalama davranışını özelleştirme](../modeling/customizing-copy-behavior.md)|
-|Delete yayar|`True` ilişkili bağlantı silindiğinde, bu rol oynayan öğe silinemedi.|`True` bir gömme rol hedefi için.<br /><br /> `False` diğer roller için.<br /><br /> Daha fazla bilgi için [silme davranışını özelleştirme](../modeling/customizing-deletion-behavior.md).|
+|Delete yayar|`True` ilişkili bağlantı silindiğinde, bu rol oynayan öğe silinemedi.|`True` bir gömme rol hedefi için.<br /><br /> `False` diğer roller için.|
 |Özellik Adı|Rol oyuncusu kodda oluşturulan özelliğin adı. Bu ad, boşluk içeremez.|Bu rol bir sıfır bir varsa karşı rolün adını veya bire bir çoğulluk; Aksi halde, ters rolün pluralized adı.|
 |Rol oyuncusu|İlişkide bu rolü oynayabileceği öğenin etki alanı sınıfı. Bu özellik salt okunurdur.|Bu rol için rol oyuncusu için etki alanı sınıfı.|
 |Notlar|Etki alanı rolle ilişkili resmi olmayan notlar.|< yok\>|

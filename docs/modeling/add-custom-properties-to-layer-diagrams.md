@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba8f58d13d3e0c9e360796092a8d522f54d0384
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 76bfa81f1285dce000f79c356a604bab1d53cc55
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939547"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415830"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel özellikler ekleme
 
@@ -22,7 +22,7 @@ Bağımlılık diyagramları için uzantı kodu yazdığınızda, herhangi bir �
 
 ## <a name="non-visible-properties"></a>Görünür olmayan özellikleri
 
-Yalnızca kodunuzun değerleri bağımlılık diyagramında herhangi bir öğe eklemeye istiyorsanız, bir MEF Bileşeni tanımlamanız gerekmez. Adlı bir sözlük var. `Properties` içinde <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Herhangi bir katman öğenin sözlüğe sıralanabilecek değerler eklemeniz yeterlidir. Bağımlılık diyagramın bir parçası olarak kaydedilir. Daha fazla bilgi için [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Yalnızca kodunuzun değerleri bağımlılık diyagramında herhangi bir öğe eklemeye istiyorsanız, bir MEF Bileşeni tanımlamanız gerekmez. Adlı bir sözlük var. `Properties` içinde <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Herhangi bir katman öğenin sözlüğe sıralanabilecek değerler eklemeniz yeterlidir. Bağımlılık diyagramın bir parçası olarak kaydedilir.
 
 ## <a name="editable-properties"></a>Düzenlenebilir özellikler
 

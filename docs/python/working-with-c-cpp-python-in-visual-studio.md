@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1264bd590cc44a16470902372b05ff0e8c562b6
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355652"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416051"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -403,7 +403,7 @@ Python uzantıları aşağıdaki tabloda açıklandığı gibi oluşturmak için
 | --- | --- | --- | --- | --- |
 | C/C++ uzantı modüllerini CPython için | 1991 | Standart Kitaplık | [Kapsamlı belgeler ve öğreticiler](https://docs.python.org/3/c-api/). Toplam denetimi. | Derleme, taşınabilirliği, başvuru yönetimi. Yüksek C bilgi. |
 | [PyBind11](https://github.com/pybind/pybind11) (C++ için önerilir) | 2015 |  | Python bağlamaları var olan C++ kodu oluşturmak için basit, yalnızca üstbilgi kitaplığı. Birkaç bağımlılıkları. PyPy uyumluluğu. | Yeni, daha az olgun. Koyu C ++ 11 özelliklerini kullanın. Desteklenen derleyicileri (Visual Studio dahildir) kısa listesi. |
-| Cython (Recommnded c) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Python benzer. Yüksek oranda olgun. Yüksek performans. | Derleme, yeni söz dizimi, yeni bir araç zinciri. |
+| Cython (C için önerilir) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Python benzer. Yüksek oranda olgun. Yüksek performans. | Derleme, yeni söz dizimi, yeni bir araç zinciri. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Neredeyse her C++ derleyicisi ile çalışır. | Kitaplık paketi büyük ve karmaşık; eski derleyicileri için çok sayıda geçici çözümler içerir. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Hiçbir derleme geniş kullanılabilirlik. | Erişim ve C yapıları hantal ve hataya diziyi. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Tek seferde birçok dil için bağlamaları oluşturur. | Python yalnızca hedef ise aşırı yükü. |

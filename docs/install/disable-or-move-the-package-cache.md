@@ -18,17 +18,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0cd54f9cfb7f9df81f1eb4ac9f3ad43af226b1e
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324857"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414868"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Paket önbelleğini devre dışı bırakma veya taşıma
 
-Visual Studio veya Internet bağlantısı yok sahip olduğu durumlarda ilgili diğer ürünleri onarmak gerektiği durumlarda paket önbelleğini yüklü paketleri kaynağı sağlar. Bazı sürücüler veya sistem ile çıkarır, ancak istemeyebilirsiniz bu paketleri geçici olarak saklamak.
-Yükleyici, bunları kaydetmek veya disk alanını kurtarmak istiyorsanız devre dışı bırakın veya paket önbelleğini taşıma, gerektiğinde indirir.
+Visual Studio veya Internet bağlantısı yok sahip olduğu durumlarda ilgili diğer ürünleri onarmak gerektiği durumlarda paket önbelleğini yüklü paketleri kaynağı sağlar. Bazı sürücüler veya sistem ile çıkarır, ancak değil isteyebilirsiniz bu paketleri geçici olarak tutun.
+Yükleyici, bunları kaydetme veya disk alanını kurtarmak istiyorsanız, devre dışı bırakın veya paket önbelleğini taşıma, gerektiğinde indirir.
 
 ## <a name="disable-the-package-cache"></a>Paket önbelleğini devre dışı bırak
 
@@ -40,7 +40,7 @@ Yükleme, değiştirme veya Visual Studio ya da diğer ürünlerle yeni yükleyi
 
 Herhangi bir ürün üzerinde yaptığınız herhangi bir işlem bunlar yüklendikten sonra herhangi bir paket kaydetme kaçınır ve bu ürünün mevcut tüm paketler kaldırılır. Değiştirdiğinizde ya da Visual Studio'yu onarmak ve paketleri gereklidir, bunlar otomatik olarak indirilir ve bunlar yüklendikten sonra kaldırıldı.
 
-Önbellek yeniden etkinleştirmek istiyorsanız, `--cache` yerine. Tüm paketleri geri yüklemeniz gerekirse ağınızdan bağlantısını kesmeden önce Visual Studio'yu onarmak böylece gerekli olan paketleri önbelleğe alınır.
+Önbellek yeniden etkinleştirmek istiyorsanız, `--cache` yerine. Tüm paketleri geri yüklemeniz gerekirse, ağınızdan bağlantısını kesmeden önce Visual Studio'yu onarmak böylece gerekli olan paketleri önbelleğe alınır.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
@@ -52,7 +52,7 @@ Ayrıca `KeepDownloadedPayloads` [kayıt defteri ilke](set-defaults-for-enterpri
 
 Ortak bir sistem yapılandırması, bir SSD ile daha geniş bir sabit diske (veya daha fazla) yüklü Windows geliştirmesi için kaynak kodu, program ikili dosyaları ve daha fazlası gibi olmalıdır değil. Çevrimdışı çalışmak istiyorsanız, bunun yerine paket önbelleğini taşıyabilirsiniz.
 
-Ayarını yaparsanız şu anda yalnızca bunu yapabilirsiniz `CachePath` [kayıt defteri ilke](set-defaults-for-enterprise-deployments.md) yükleme, değiştirme veya Visual Studio'yu onarmak için önce.
+Yalnızca şu anda, bunu yapabilirsiniz `CachePath` [kayıt defteri ilke](set-defaults-for-enterprise-deployments.md) yükleme, değiştirme veya Visual Studio'yu onarmak için önce.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

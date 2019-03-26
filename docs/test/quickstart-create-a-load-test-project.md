@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c6f8a7ceb24e6108e5604d9e862527880431b5b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324851"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415492"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Hızlı Başlangıç: Yük testi projesi oluşturma
 
@@ -22,13 +22,13 @@ ms.locfileid: "58324851"
 
 ## <a name="software-requirements"></a>Yazılım gereksinimleri
 
-Yalnızca Web performans ve yük testi projelerini Visual Studio Enterprise sürümünde kullanılabilir.
+Web performansı ve yük testi projelerini bulunan yalnızca **Enterprise edition** Visual Studio'nun.
 
 ## <a name="install-the-load-testing-component"></a>Yük testi bileşeni yükle
 
 Yoksa zaten web performansı ve yük testi araçları bileşeninin yüklü ise, Visual Studio yükleyicisi yüklemeniz gerekir.
 
-1. Açık **Visual Studio yükleyicisi** gelen **Başlat** Windows menüsü. Ayrıca, Visual Studio'dan erişebildiğinizi **yeni proje** iletişim kutusu, seçerek veya **Araçları** > **araçları ve özellikleri Al** menü çubuğundan.
+1. Açık **Visual Studio yükleyicisi** gelen **Başlat** Windows menüsü. Ayrıca Visual Studio'da yeni proje iletişim kutusundan veya seçerek erişebildiğinizi **Araçları** > **araçları ve özellikleri Al** menü çubuğundan.
 
 1. İçinde **Visual Studio yükleyicisi**, seçin **tek tek bileşenler** sekmesini ve ekranı aşağı kaydırarak **hata ayıklama ve test** bölümü. Seçin **Web performansı ve yük testi Araçları**.
 
@@ -64,7 +64,7 @@ Bu bölümde, bir C# yük testi projesi oluşturacağız. Tercih ederseniz, Visu
 
 2. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
 
-3. İçinde **yeni bir proje oluşturma** iletişim kutusunda, türü **web testi** arama kutusuna ve ardından **Web performansı ve yük testi projesi \[kullanım dışı]** Şablon için C#. Seçin **sonraki**.
+3. Üzerinde **yeni bir proje oluşturma** sayfasında **web testi** arama kutusuna ve ardından **Web performansı ve yük testi projesi \[kullanım dışı]** Şablon için C#. Seçin **sonraki**.
 
 4. Varsayılan adı kullanın ve ardından istemiyorsanız, proje için bir ad girin **Oluştur**.
 

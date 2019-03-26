@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d5a6ad819859822121a03aee9990f94de031b3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325061"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415220"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
 
@@ -39,25 +39,31 @@ Ayrıca, [kurulum yapılandırma API'si](<xref:Microsoft.VisualStudio.Setup.Conf
 
 ## <a name="using-vswhereexe"></a>Vswhere.exe kullanma
 
-`vswhere.exe` otomatik olarak dahil Visual Studio 2017 sürüm 15.2 veya üzeri ya da buradan indirebileceğiniz [sürümler sayfasından](https://github.com/Microsoft/vswhere/releases). Kullanım `vswhere -?` aracı hakkında Yardım bilgilerini almak için. Örneğin, bu komut tüm ürünlerinizin ve prereleases, önceki sürümleri dahil olmak üzere Visual Studio sürümlerini gösterir ve sonuçları JSON biçiminde çıkarır:
+`vswhere.exe` otomatik olarak dahil Visual Studio'daki (Visual Studio 2017 sürüm 15.2 ve sonraki sürümler ile başlayarak) veya buradan indirebileceğiniz [sayfa VSWhere sürümleri](https://github.com/Microsoft/vswhere/releases). Kullanım `vswhere -?` aracı hakkında Yardım bilgilerini almak için. Örneğin, bu komut tüm ürünlerinizin ve prereleases, önceki sürümleri dahil olmak üzere Visual Studio sürümlerini gösterir ve sonuçları JSON biçiminde çıkarır:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->Visual Studio 2017'yi yükleme hakkında daha fazla bilgi için bkz: [Visual Studio Kurulum arşivleri](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> [!TIP]
+> Visual Studio 2017'yi yükleme hakkında daha fazla bilgi için bkz: [Visual Studio Kurulum arşivleri](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Visual Studio örneği için kayıt defterini düzenleme
 
-Visual Studio 2017'de kayıt defteri ayarları, Visual Studio'nun aynı sürümü aynı bilgisayarda yan yana örneklerini sağlayan özel bir konumda depolanır.
+Visual Studio'da, kayıt defteri ayarları, Visual Studio'nun aynı sürümü aynı bilgisayarda yan yana örneklerini sağlayan özel bir konumda depolanır.
 
 Bu girişler genel kayıt defterinde depolanmaz gibi kayıt defteri ayarlarında değişiklik yapmak için Kayıt Defteri Düzenleyicisi'ni kullanarak yönelik özel yönergeler vardır:
 
-1. Visual Studio 2017 açık örneği varsa, kapatın.
-2. Başlangıç `regedit.exe`.
-3. Seçin `HKEY_LOCAL_MACHINE` düğümü.
-4. Regedit ana menüden **Dosya -> Yığını Yükle...**  ve depolanan özel kayıt defteri dosyasını seçip **AppData\Local** klasör. Örneğin:
+1. Visual Studio açık örneği varsa, kapatın.
+
+1. Başlangıç `regedit.exe`.
+
+1. Seçin `HKEY_LOCAL_MACHINE` düğümü.
+
+1. Regedit ana menüden **dosya** > **Yığını Yükle...**  ve depolanan özel kayıt defteri dosyasını seçip **AppData\Local** klasör. Örneğin:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -68,7 +74,7 @@ Bu girişler genel kayıt defterinde depolanmaz gibi kayıt defteri ayarlarında
 Yalıtılmış, hive adı haline gelir bir hive adı sağlamanız istenir. Bunu yaptıktan sonra oluşturduğunuz yalıtılmış hive altındaki kayıt defterine Gözat olmalıdır.
 
 > [!IMPORTANT]
-> Visual Studio yeniden başlamadan önce sizin oluşturduğunuz yalıtılmış kovanını gerekir. Bunu yapmak için dosyayı seçin yığın Regedit ana menüden ->. (Bunu yapmazsanız, dosyanın kilitli kalır ve Visual Studio başlatmanız mümkün olmayacaktır.)
+> Visual Studio yeniden başlamadan önce sizin oluşturduğunuz yalıtılmış kovanını gerekir. Bunu yapmak için **dosya** > **yığın** Regedit ana menüden. (Bunu yapmazsanız, dosyanın kilitli kalır ve Visual Studio başlatmanız mümkün olmayacaktır.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

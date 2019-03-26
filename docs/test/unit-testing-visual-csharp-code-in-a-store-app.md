@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917772"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415999"
 ---
-# <a name="unit-testing-visual-c-code"></a>Visual C# koduna birim testi
+# <a name="unit-test-c-code"></a>C# koduna birim testi
 
-Bu makalede bir UWP uygulamasındaki Visual C# sınıfı için birim testleri oluşturma yöntemlerinden biri açıklanır. Rooter sınıfı, belirsiz bellek sınırı teorik, hesaplama bir tahminini verilen bir sayının kare kökünü hesaplayan bir işlevi uygulayarak gösterir. Matematik uygulama ardından eğlenceli bir kullanıcıya göstermek için bu işlevi kullanabilirsiniz matematik ile yapılabilir şeyler.
+Bu makalede için birim testleri oluşturma yöntemlerinden biri bir C# bir UWP uygulamasında sınıfı. Rooter sınıfı, belirsiz bellek sınırı teorik, hesaplama bir tahminini verilen bir sayının kare kökünü hesaplayan bir işlevi uygulayarak gösterir. Matematik uygulama ardından eğlenceli bir kullanıcıya göstermek için bu işlevi kullanabilirsiniz matematik ile yapılabilir şeyler.
 
 Bu makalede, birim testi geliştirmede ilk adım olarak kullanma işlemini gösterir. Bu yaklaşım önce test ettiğiniz sistemde belirli bir davranış doğrulayan bir test yöntemi yazın ve ardından testin başarılı olması kod yazacaksınız. Aşağıdaki yordamlar sırasına göre değişiklikler yaparak, bu strateji ilk Yazımdan sonra birim testleri yazma ve test etmek istediğiniz kod tersine çevirebilirsiniz.
 
@@ -26,13 +26,13 @@ Bu makalede ayrıca tek bir Visual Studio çözümü de ayrı projeler için bir
 
 1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**.
 
-2. İçinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C#** ve **Windows Evrensel**. Ardından **boş uygulama** proje şablonları listesinden.
+2. Arayın ve seçin **boş uygulama (Evrensel Windows)** proje şablonu.
 
-3. Projeyi adlandırın `Maths` emin **çözüm için dizin oluştur** seçilir.
+3. Projeyi adlandırın `Maths`.
 
 4. İçinde **Çözüm Gezgini**, çözüm adı seçin, **Ekle** kısayol menüsünden seçin **yeni proje**.
 
-5. İçinde **yeni proje** iletişim kutusunda **yüklü**, ardından **Visual C#** ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+5. Arayın ve seçin **birim testi uygulaması (Evrensel Windows)** proje şablonu.
 
 6. Açık *UnitTest1.cs* Visual Studio düzenleyicisinde.
 

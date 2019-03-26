@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b3a94ab9a44776b0c6716b99f594ec0fd840938
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943421"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415570"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Nasıl yapılır: Şablon sorunlarını giderme
 
@@ -20,7 +20,17 @@ Geliştirme ortamında yüklemek bir şablon başarısız olursa, sorunu bulmak 
 
 ## <a name="validate-the-vstemplate-file"></a>Vstemplate dosyası doğrula
 
+::: moniker range="vs-2017"
+
 Varsa *vstemplate* şablon dosyasında için Visual Studio şablon şeması uyması değil, şablon görüntülenmeyebilir **yeni proje** iletişim kutusu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Varsa *vstemplate* şablon dosyasında için Visual Studio şablon şeması uyması değil, şablon oluşturduğunuz yeni proje iletişim kutusunda yer alamaz.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>Vstemplate dosyası doğrulamak için
 

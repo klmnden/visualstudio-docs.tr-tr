@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925247"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415609"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 
 Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yardımcı olmak için birim testleri oluşturmanızı öneririz. Bazı üçüncü taraflar tarafından geliştirilen dahil olmak üzere birim testleri yazmak için kullanabileceğiniz birkaç çerçeve vardır. Bazı test çerçeveleri, farklı dillerde veya platformlarda test için özel hazırlanmıştır. Test Gezgini bu çerçevelerin herhangi birinde yapılan birim testleri için tek bir arabirim sağlar. En sık kullanılan çerçeveler için bağdaştırıcılar bulunmaktadır ve diğer çerçeveler için kendi bağdaştırıcılarınızı yazabilirsiniz.
 
- Test Gezgini Visual Studio'nun önceki sürümlerinde bulunan test pencerelerinin yerini almıştır. Yararları şunlardır:
+Test Gezgini Visual Studio'nun önceki sürümlerinde bulunan test pencerelerinin yerini almıştır. Yararları şunlardır:
 
--   .NET, yönetilmeyen kod, veritabanı ve diğer tür testleri tek bir arabirim kullanarak çalıştırın.
+- .NET, yönetilmeyen kod, veritabanı ve diğer tür testleri tek bir arabirim kullanarak çalıştırın.
 
--   Kullanım birim test framework NUnit gibi tercih ettiğiniz veya MSTest çerçeveleri.
+- Kullanım birim test framework NUnit gibi tercih ettiğiniz veya MSTest çerçeveleri.
 
--   Gereksinim duyduğunuz tüm bilgileri tek bir pencerede bakın.
+- Gereksinim duyduğunuz tüm bilgileri tek bir pencerede bakın.
 
 ## <a name="use-test-explorer"></a>Test Gezgini'ni kullanın
- ![Birim Test Gezgini gösterme tümünü Çalıştır düğmesi](../test/media/unittestexplorer-beta-.png)
+
+![Test Gezgini tümünü Çalıştır düğmesini gösteren](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Test Gezgini'ni kullanarak birim testlerini çalıştırmak için
 
-1. Tercih ettiğiniz test çerçevelerini kullanan birim testleri oluşturun.
+1. Tercih ettiğiniz test çerçevelerini kullanan birim testleri oluşturun. Örneğin, bir test oluşturmak için MSTest Framework'ü kullanır:
 
-    Örneğin, bir test oluşturmak için MSTest Framework'ü kullanır:
+   1. Oluşturma **birim testi projesi** için proje C#, Visual Basic veya C++.
 
-   1.  Bir test projesi oluşturun.
-
-        İçinde **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** veya **Visual C++** ve ardından **Test**.
-
-        Seçin **birim testi projesi**.
-
-   2.  Her birim testini bir yöntem gibi yazın. Her test yönteminin önüne `[TestMethod]` özniteliği.
+   2. Her birim testini bir yöntem gibi yazın. Her test yönteminin önüne `[TestMethod]` özniteliği.
 
 2. Bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, paralel test yürütme ile Aç ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute_parallelicon-small.png) araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.
 
@@ -66,19 +61,17 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 > [!NOTE]
 > Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>İzlenecek yol: Bir yöntem geliştirmek üzere kullanarak birim testleri
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>İzlenecek yol: Bir yöntem geliştirmek üzere kullanarak birim testleri
- Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
+Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [üçüncü taraf birim testi çerçevelerini yükleme](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Testi ve yöntemi oluşturma
 
-1. Bir Visual C# sınıf kitaplığı projesi oluşturun. Bu proje, teslim etmek istediğimiz kodu içerecek. Bu örnekte, adlı `MyMath`.
+1. Oluşturma bir C# **sınıf kitaplığı** proje. Bu proje, teslim etmek istediğimiz kodu içerecek. Bu örnekte, adlı `MyMath`.
 
-2. Bir Test projesi oluşturun.
+2. Yeni bir **birim testi projesi** proje.
 
-   -   İçinde **yeni proje** iletişim kutusunda seçin **Visual C#** > **Test** seçip **birim testi projesi**.
-
-        ![Yeni kod ve test projeleri](../test/media/unittestexplorerwalk1.png)
+   ![Yeni kod ve test projeleri](../test/media/unittestexplorerwalk1.png)
 
 3. Temel bir test yöntemi yazın. Belirli bir giriş için elde edilen sonucu doğrulayın:
 

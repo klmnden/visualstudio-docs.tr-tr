@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929238"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416103"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Nasıl yapılır: Test denetleyicileri için zaman aşımı sürelerini belirtme ve test aracıları
 
@@ -117,5 +117,4 @@ Test denetleyicisi veya test aracısın çeşitli zaman aşımı ayarlarını d�
 - [Test aracılarını yükleme ve yapılandırma](../test/lab-management/install-configure-test-agents.md)
 - [Yük testi günlüğü ayarlarını değiştirme](../test/modify-load-test-logging-settings.md)
 - [Test denetleyicileri için bağlantı noktalarını yapılandırın ve test aracıları](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Nasıl yapılır: Günlük dosyası boyutu üst sınırı belirtin](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Nasıl yapılır: Bir ağ bağdaştırıcısına bir test denetleyicisi veya test aracısı bağlama](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

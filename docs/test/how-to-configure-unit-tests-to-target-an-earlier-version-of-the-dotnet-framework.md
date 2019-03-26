@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 0afa278bb7530905d4837ba06644731dcae52635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916706"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415947"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Nasıl yapılır: Birim testlerini .NET Framework'ün önceki sürümünü hedefleyecek şekilde yapılandırma
 
@@ -46,66 +46,48 @@ Yukarıda listelenen özellikleri de birim testleri yazma ve Visual Studio kulla
 
 - Birim testleri için framework'ün önceki istemci sürümlerini hedefleyemez.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Visual Basic birim testi projeleri için .NET Framework'ün belirli bir sürüme yeniden hedefleme
+## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Visual Basic birim testi projeleri için yeniden hedefleme
 
-1.  Yeni bir Visual Basic birim testi projesi oluşturun. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
+1. Yeni bir Visual Basic Oluştur **birim testi projesi** proje.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
-
-2.  Altında **yüklü şablonlar**, genişletme **Visual Basic**. Seçin **Test** seçip **Test projesi** şablonu.
-
-3.  İçinde **adı** metin kutusunda, Visual Basic için bir ad test projesi ve ardından **Tamam**.
-
-4.  İçinde **Çözüm Gezgini**, seçin **özellikleri** yeni Visual Basic test projesinin kısayol menüsünden.
+2. İçinde **Çözüm Gezgini**, seçin **özellikleri** sağ tıklama menüsünden Yeni bir Visual Basic test projesi.
 
      Visual Basic test projeniz için özellikleri görüntülenir.
 
-5.  Üzerinde **derleme** sekmesini, **Gelişmiş derleme seçenekleri** aşağıdaki çizimde gösterildiği gibi.
+3. Üzerinde **derleme** sekmesini, **Gelişmiş derleme seçenekleri** aşağıdaki çizimde gösterildiği gibi.
 
      ![Gelişmiş derleme seçenekleri](../test/media/howtoconfigureunittest35frameworka.png)
 
-6.  Kullanım **hedef Framework'ü (tüm yapılandırmaları)** için hedef Framework'ü değiştirmek için açılır listede **.NET Framework 3.5** veya sonraki bir sürümünü belirtme çizgisi B aşağıdaki resimde gösterildiği gibi. Bir istemci sürümü belirtilmemelidir.
+4. Kullanım **hedef Framework'ü (tüm yapılandırmaları)** için hedef Framework'ü değiştirmek için açılır listede **.NET Framework 3.5** veya sonraki bir sürümünü belirtme çizgisi B aşağıdaki resimde gösterildiği gibi. Bir istemci sürümü belirtilmemelidir.
 
      ![Hedef framework bırakma&#45;açılan listesinde](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Belirli bir .NET Framework sürümünü hedefleyen Visual C# için yeniden birim testi projeleri
+## <a name="retargeting-for-c-unit-test-projects"></a>İçin yeniden hedefleme C# birim testi projeleri
 
-1.  Yeni bir Visual C# birim testi projesi oluşturun. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**.
+1. Yeni bir C# **birim testi projesi** proje.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+2. İçinde **Çözüm Gezgini**, seçin **özellikleri** yeni sağ tıklama menüsünden C# test projesi.
 
-2.  Altında **yüklü şablonlar**, genişletme **Visual C#**. Seçin **Test** seçip **Test projesi** şablonu.
+   Özellikleri, C# test projesi görüntülenir.
 
-3.  İçinde **adı** metin kutusunda, bir ad için Visual C# test projesi ve ardından **Tamam**.
+3. Üzerinde **uygulama** sekmesini, **hedef Framework'ü**. Aşağı açılan listeden seçin **.NET Framework 3.5** veya aşağıdaki çizimde gösterildiği gibi sonraki bir sürümü. Bir istemci sürümü belirtilmemelidir.
 
-4.  İçinde **Çözüm Gezgini**, seçin **özellikleri** yeni Visual C# test projenizin kısayol menüsünden.
+   ![Hedef framework bırakma&#45;açılan listesinde](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-     Visual C# test projeniz için özellikleri görüntülenir.
+## <a name="retargeting-for-ccli-unit-test-projects"></a>Yeniden hedefleme için C + +/ CLI birim testi projeleri
 
-5.  Üzerinde **uygulama** sekmesini, **hedef Framework'ü**. Aşağı açılan listeden seçin **.NET Framework 3.5** veya aşağıdaki çizimde gösterildiği gibi sonraki bir sürümü. Bir istemci sürümü belirtilmemelidir.
+1. Yeni bir C++ oluşturma **birim testi projesi** proje.
 
-     ![Hedef framework bırakma&#45;açılan listesinde](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   > [!WARNING]
+   > İçin derleme C + +/ CLI birim testlerini .NET framework'ün önceki bir sürümü için Visual C++ için ilgili Visual Studio sürümünü kullanmanız gerekir.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Belirli bir .NET Framework sürümünü hedefleyen C + için yeniden +/ CLI birim testi projeleri
+2. İçinde **Çözüm Gezgini**, seçin **projeyi** yeni C++ test projenizden.
 
-1.  Yeni bir C++ birim testi projesi oluşturun. Üzerinde **dosya** menüsünde **yeni** ve ardından **proje**.
+3. İçinde **Çözüm Gezgini**, kaldırılan C++ test projesi seçin ve ardından **Düzenle \<proje adı > .vcxproj**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+   *.Vcxproj* dosyası düzenleyicide açılır.
 
-    > [!WARNING]
-    > İçin derleme C + +/ CLI birim testlerini .NET framework'ün önceki bir sürümü için Visual C++ için ilgili Visual Studio sürümünü kullanmanız gerekir. Örneğin, .NET Framework 3.5 hedeflemek için Visual Studio 2008 ve Visual Studio 2008 Service Pack 1 yüklemeniz gerekir.
-
-2.  Altında **yüklü şablonlar**, genişletme **Visual C ++**. Seçin **Test** seçip **Test projesi** şablonu.
-
-3.  İçinde **adı** metin kutusunda, Visual C++ için bir ad test projesi ve ardından **Tamam**.
-
-4.  İçinde **Çözüm Gezgini**, seçin **projeyi** yeni Visual C++ test projenizden.
-
-5.  İçinde **Çözüm Gezgini**, kaldırılan Visual C++ test projesi seçin ve ardından **Düzenle \<proje adı > .vcxproj**.
-
-     *.Vcxproj* dosyası düzenleyicide açılır.
-
-6.  Ayarlama `TargetFrameworkVersion` sürüm 3.5 veya sonraki bir sürümde `PropertyGroup` etiketli `"Globals"`. Bir istemci sürümü belirtilmemelidir:
+4. Ayarlama `TargetFrameworkVersion` sürüm 3.5 veya sonraki bir sürümde `PropertyGroup` etiketli `"Globals"`. Bir istemci sürümü belirtilmemelidir:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -118,9 +100,9 @@ Yukarıda listelenen özellikleri de birim testleri yazma ve Visual Studio kulla
       </PropertyGroup>
     ```
 
-7.  Kaydet ve Kapat *.vcxproj* dosya.
+5. Kaydet ve Kapat *.vcxproj* dosya.
 
-8.  İçinde **Çözüm Gezgini**, Seç **projeyi** yeni Visual C++ test projenizin kısayol menüsünden.
+6. İçinde **Çözüm Gezgini**, Seç **projeyi** yeni C++ test projenizin sağ tıklatma menüsünden.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949440"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416142"
 ---
 # <a name="create-a-unit-test-project"></a>Birim testi projesi oluşturma
 
@@ -23,11 +23,23 @@ Birim testleri, test altındaki kod yapısına genellikle yansıtır. Örneğin,
 
 ## <a name="to-create-a-unit-test-project"></a>Birim testi projesi oluşturmak için
 
-1. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje**. Veya basın **Ctrl**+**Shift**+**N**.
+1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje**, veya basın **Ctrl**+**Shift** + **N**.
+
+::: moniker range="vs-2017"
 
 2. İçinde **yeni proje** iletişim kutusunda **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.
 
 3. Microsoft birim testi çerçevelerini birini kullanmak üzere, **Birim Test projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Projeyi adlandırın ve ardından **Tamam**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Üzerinde **yeni bir proje oluşturma** sayfasında **birim testi** kartındaki arama kutusuna. Seçin **birim testi projesi (.NET Framework)** proje şablonu ve ardından **sonraki**.
+
+3. Üzerinde **yeni projenizi yapılandırın** sayfasında projeniz için bir ad girin ve ardından **Oluştur**.
+
+::: moniker-end
 
 4. Birim test projenizde, test edilen kod bir başvuru ekleyin. Aynı çözümdeki bir kod projesine bir başvuru eklemek için:
 

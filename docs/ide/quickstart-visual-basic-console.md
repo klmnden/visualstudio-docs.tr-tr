@@ -1,8 +1,9 @@
 ---
 title: İlk Konsol uygulamanızı Visual Basic ile oluşturma
 description: Visual Basic, adım adım ile Visual Studio'da basit bir Hello World konsol uygulaması oluşturmayı öğrenin.
-ms.date: 12/10/2017
 ms.custom: seodec18
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -12,22 +13,34 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ed05ae0c223ac61db52782b76509d7f42f2b43fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947373"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415843"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma
 
 Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE), konsolda çalışan basit bir Visual Basic uygulaması oluşturacaksınız.
 
+::: moniker range="vs-2017"
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 İlk olarak, Visual Basic uygulama projesi oluşturacaksınız. Proje türü bile herhangi bir şey ekledik önce ihtiyacınız olacak tüm şablon dosyaları ile birlikte gelir!
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın.
 
@@ -44,6 +57,44 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
      Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
      ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../ide/media/dot-net-core-xplat-dev-workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Bu hızlı başlangıçta ekran görüntüleri bazıları, koyu tema kullanın. Koyu tema kullanmayan ancak öğrenmek istiyorsanız [Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](quickstart-personalize-the-ide.md) öğrenmek için sayfa nasıl.
+
+1. Open Visual Studio 2019.
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *konsol* arama kutusuna. Ardından, **Visual Basic** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+
+   Tüm dil ve platform filtreleri uyguladıktan sonra seçin **konsol uygulaması (.NET Core)** şablonu seçip **sonraki**.
+
+   ![Konsol uygulaması (.NET Framework) için Visual Basic şablonu seçin](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Görmüyorsanız, **konsol uygulaması (.NET Core)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   >
+   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Ardından, Visual Studio yükleyicisinde **.NET Core çoklu platform geliştirme** iş yükü.
+   >
+   > ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. Ardından, 2. adım bu dönün "[proje oluşturma](#create-a-project)" yordamı.
+
+1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *WhatIsYourName* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+
+   !['yeni projenizi yapılandırın' penceresinde 'WhatIsYourName' projenizi adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+
+   Yeni projeniz Visual Studio açılır.
+
+::: moniker-end
 
 ## <a name="create-the-application"></a>Uygulama oluşturma
 

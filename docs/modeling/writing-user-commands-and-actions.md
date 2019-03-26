@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949427"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415688"
 ---
 # <a name="writing-user-commands-and-actions"></a>Kullanıcı Komutları ve Eylemleri Yazma
 Bir etki alanına özgü dil komutları diyagrama ve gibi sürükle ve bırak hareketlerini yanıtlama tıklayın ve olaylara çift tıklayın ekleyerek özelleştirebilirsiniz.
@@ -27,9 +27,7 @@ Bir etki alanına özgü dil komutları diyagrama ve gibi sürükle ve bırak ha
 
 -   [Nasıl yapılır: Şekil veya Dekoratörde bir Click için araya girme](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -bir öğe, ona başvuran başka bir öğe için tıklama yoluyla kullanıcıya izin.
 
--   [Nasıl yapılır: Erişme ve seçimi kısıtlama geçerli seçimi](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [Öğe Araçlarını Özelleştirme](../modeling/customizing-element-tools.md)
+-   [Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

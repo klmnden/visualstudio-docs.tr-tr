@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946957"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416363"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Nasıl yapılır: Web Performans Test Sonuçları Görüntüleyicisi için bir Visual Studio eklentisi oluşturma
 
@@ -24,7 +24,7 @@ Kullanıcı Arabiriminde genişletebileceğiniz **Web Performans Test Sonuçlar�
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Ayrıca, bulunan LoadTestPackage DLL'ye bir başvuru eklemeniz gerekir *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* klasör.
+Ayrıca, bulunan LoadTestPackage DLL'ye bir başvuru eklemeniz gerekir *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<sürüm > \Enterprise\Common7\IDE\PrivateAssemblies* klasör.
 
 Genişletmek için **Web Performans Test Sonuçları Görüntüleyicisi**'s UI, Visual Studio eklentisi ve bir kullanıcı denetimi oluşturmalısınız. Aşağıdaki yordamlar eklenti, kullanıcı denetimi oluşturma işlemleri açıklanmaktadır ve nasıl uygulanacağını genişletmek gereken sınıfların **Web Performans Test Sonuçları Görüntüleyicisi**ait kullanıcı Arabirimi.
 
@@ -51,46 +51,38 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
 1. İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, seçin **Ekle**ve ardından **yeni proje**.
 
-    **Yeni proje** iletişim kutusu görüntülenir.
-
-2. Altında **yüklü şablonlar**, genişletme **diğer proje türleri** seçip **genişletilebilirlik**.
-
-3. Şablonlar listesinde seçin **Visual Studio eklentisini**.
-
-4. Altında **adı**, eklenti için bir ad yazın. Örneğin, **WebPerfTestResultsViewerAddin**.
-
-5. Seçin **Tamam**.
+2. Yeni bir **Visual Studio eklentisini** proje.
 
     Visual Studio **Eklenti Sihirbazı** başlatır.
 
-6. Seçin **sonraki**.
+3. Seçin **sonraki**.
 
-7. Üzerinde **bir programlama dili seçin** sayfasında, eklentiyi yazmak için kullanmak istediğiniz programlama dilini seçin.
+4. Üzerinde **bir programlama dili seçin** sayfasında, eklentiyi yazmak için kullanmak istediğiniz programlama dilini seçin.
 
    > [!NOTE]
    > Bu konu Visual C# örnek kodunu kullanır.
 
-8. Üzerinde **seçin, bir uygulama ana bilgisayarı** sayfasında **Visual Studio** temizleyin **Visual Studio Macros**.
+5. Üzerinde **seçin, bir uygulama ana bilgisayarı** sayfasında **Visual Studio** temizleyin **Visual Studio Macros**.
 
-9. Seçin **sonraki**.
+6. Seçin **sonraki**.
 
-10. Bir ad ve eklentiniz için bir açıklama yazın **bir ad ve açıklama girin** sayfası.
+7. Bir ad ve eklentiniz için bir açıklama yazın **bir ad ve açıklama girin** sayfası.
 
      Eklentiyi oluşturduktan sonra adını ve açıklamasını görüntülenen **kullanılabilir eklentiler** listesinde **Eklenti Yöneticisi**. Eklentinizin açıklamasına yeterli ayrıntı kullanıcıların hangi eklentinizi edinebilirsiniz işe yaradığını, nasıl çalıştığını ve benzeri ekleyin.
 
-11. Seçin **sonraki**.
+8. Seçin **sonraki**.
 
-12. Üzerinde **eklenti seçeneklerini seçin** sayfasında **my ana bilgisayar uygulaması başladığında yüklenmesini eklenti istiyorum**.
+9. Üzerinde **eklenti seçeneklerini seçin** sayfasında **my ana bilgisayar uygulaması başladığında yüklenmesini eklenti istiyorum**.
 
-13. Kalan onay kutularını temizleyin.
+10. Kalan onay kutularını temizleyin.
 
-14. Üzerinde **'Yardım konusu' bilgilerini seçme** sayfasında, görüntülenecek eklentinizi hakkında bilgi isteyip istemediğinizi belirtebilirsiniz bir **hakkında** iletişim kutusu. Görüntülenecek bilgi istiyorsanız seçin **my 'Hakkında' kutusu bilgi sunmak için eklenti Evet, istiyorum** onay kutusu.
+11. Üzerinde **'Yardım konusu' bilgilerini seçme** sayfasında, görüntülenecek eklentinizi hakkında bilgi isteyip istemediğinizi belirtebilirsiniz bir **hakkında** iletişim kutusu. Görüntülenecek bilgi istiyorsanız seçin **my 'Hakkında' kutusu bilgi sunmak için eklenti Evet, istiyorum** onay kutusu.
 
      Visual Studio için eklenebilir bilgi **hakkında** iletişim kutusunda, sürüm numarası, destek ayrıntıları, lisans verisi vb. içerir.
 
-15. Seçin **sonraki**.
+12. Seçin **sonraki**.
 
-16. Seçtiğiniz seçenekler görüntülenir **özeti** sayfasını gözden geçirmenizi sağlar. Memnun kaldığınızda **son** eklenti oluşturmak için. Bir şey değiştirmek istiyorsanız, seçin **geri** düğmesi.
+13. Seçtiğiniz seçenekler görüntülenir **özeti** sayfasını gözden geçirmenizi sağlar. Memnun kaldığınızda **son** eklenti oluşturmak için. Bir şey değiştirmek istiyorsanız, seçin **geri** düğmesi.
 
      Yeni çözüm ve Proje oluşturulur ve *Connect.cs* yeni eklenti görüntülenir dosya **Kod Düzenleyicisi**.
 
@@ -119,24 +111,11 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
 1.  İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, seçin **Ekle**ve ardından **yeni proje**.
 
-     **Yeni proje** iletişim kutusu görüntülenir.
+2. Yeni bir **Windows Forms Denetim Kitaplığı** proje.
 
-2.  Altında **yüklü şablonlar**, genişletme **Visual Basic** veya **Visual C#** seçip **Windows**.
+3.  Gelen **araç kutusu**, sürükleyin bir <xref:System.Windows.Forms.DataGridView> userControl1 yüzeyine sürükleyin.
 
-    > [!NOTE]
-    > Bu konu Visual C# örnek kodunu kullanır.
-
-3.  Şablonlar listesinde seçin **Windows Forms Denetim Kitaplığı**.
-
-4.  Altında **adı**, eklenti için bir ad yazın. Örneğin, **WebPerfTestResultsViewerControl**.
-
-5.  Seçin **Tamam**.
-
-     Windows forms denetim kitaplığı projesi WebPerfTestResultsViewerControl eklenir **Çözüm Gezgini** ve *UserControl1.cs* Tasarım modunda görüntülenir.
-
-6.  Gelen **araç kutusu**, sürükleyin bir <xref:System.Windows.Forms.DataGridView> userControl1 yüzeyine sürükleyin.
-
-7.  Eylem etiket karakterini tıklayın (![akıllı etiket karakterini](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.DataGridView> ve aşağıdaki adımları izleyin:
+4. Eylem etiket karakterini tıklayın (![akıllı etiket karakterini](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.DataGridView> ve aşağıdaki adımları izleyin:
 
     1.  Seçin **üst kapsayıcıya Yerleştir**.
 
@@ -154,13 +133,13 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
 
     7.  Seçin **Kapat**.
 
-8.  İçinde **özellikleri** penceresinde değişiklik **(ad)** özelliği <xref:System.Windows.Forms.DataGridView> için **resultControlDataGridView**.
+5.  İçinde **özellikleri** penceresinde değişiklik **(ad)** özelliği <xref:System.Windows.Forms.DataGridView> için **resultControlDataGridView**.
 
-9. Tasarım yüzeyi ve select sağ **kodu görüntüle**.
+6. Tasarım yüzeyi ve select sağ **kodu görüntüle**.
 
      *UserControl1.cs* dosya görüntülendiği **Kod Düzenleyicisi**.
 
-10. Örneklenen adını değiştirmek <xref:System.Windows.Forms.UserControl> UserContro1'dan resultControl sınıfına:
+7. Örneklenen adını değiştirmek <xref:System.Windows.Forms.UserControl> UserContro1'dan resultControl sınıfına:
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
      İçin bazı ek kod ekleme *Connect.cs* daha sonra dosya.
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Webperftestresultsvieweraddin'e kod ekleyin
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>Visual Studio Web Test Sonuçları Görüntüleyicisi'ni genişletmek için eklenti için kod eklemek için
 
 1.  İçinde **Çözüm Gezgini**, sağ **başvuruları** seçip WebPerfTestResultsViewerAddin proje düğümünü **Başvuru Ekle**.
 
@@ -276,8 +253,6 @@ Bir Visual Studio tümleşik geliştirme ortamında (IDE) çalışan derlenmiş 
      Visual Studio eklentisi için kod tamamlandıktan sonra WebPerfTestResultsViewerControl projesindeki resultControl güncelleştirme yöntemi eklemeniz gerekir.
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>WebPerfTestResultsViewerControl'a kod ekleyin
-
-### <a name="to-add-code-to-the-user-control"></a>Kullanıcı denetimine kod eklemek için
 
 1.  İçinde **Çözüm Gezgini**, WebPerfTestResultsViewerControl proje düğümünü sağ tıklatın ve seçin **özellikleri**.
 

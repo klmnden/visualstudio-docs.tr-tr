@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955069"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416415"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>İzlenecek yol: Oluşturun, düzenleyin ve bir kodlanmış UI testinin
 
@@ -22,41 +22,27 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
 
 ## <a name="create-a-wpf-app"></a>WPF uygulaması oluşturma
 
-1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
+1. Yeni bir **WPF uygulaması (.NET Framework)** adlandırın ve proje **SimpleWPFApp**.
 
-     **Yeni Proje** iletişim kutusu görünür.
+     **WPF Tasarımcısı** açılır ve projenin MainWindow öğesini görüntüler.
 
-2.  İçinde **yüklü** bölmesini genişletin **Visual C#** ve ardından **Windows Masaüstü**.
+2. Araç kutusu açık değilse, açın. Seçin **görünümü** menüsünü seçip **araç kutusu**.
 
-3.  Orta bölmede hedef çerçeve açılır listesinin değerine ayarlandığını doğrulayın **.NET Framework 4.5**.
+3. Altında **tüm WPF denetimleri** bölümü bir **düğmesi**, **onay kutusu** ve **ProgressBar** tasarım MainWindow üzerine denetimi Surface.
 
-4.  Orta bölmede seçin **WPF uygulaması** şablonu.
+4. Seçin **düğmesi** denetimi. İçinde **özellikleri** penceresinde değerini **adı** özelliğinden \<No Name > button1 için. Ardından değerini değiştirin **içerik** özelliğini Başlat düğmesi.
 
-5.  İçinde **adı** metin kutusunda, **SimpleWPFApp**.
+5. Seçin **ProgressBar** denetimi. İçinde **özellikleri** penceresinde değerini **adı** özelliğinden \<No Name > den progressbar1'e. Ardından değerini değiştirin **maksimum** özelliğinden **100** için **10000**.
 
-6.  Projeyi kaydetmek için bir klasör seçin. İçinde **konumu** metin kutusuna, klasörün adını yazın.
-
-7.  **Tamam**’ı seçin.
-
-     **Visual Studio için WPF Tasarımcısı** açılır ve projenin MainWindow öğesini görüntüler.
-
-8.  Araç kutusu açık değilse, açın. Seçin **görünümü** menüsünü seçip **araç kutusu**.
-
-9. Altında **tüm WPF denetimleri** bölümü bir **düğmesi**, **onay kutusu** ve **ProgressBar** tasarım MainWindow üzerine denetimi Surface.
-
-10. Seçin **düğmesi** denetimi. İçinde **özellikleri** penceresinde değerini **adı** özelliğinden \<No Name > button1 için. Ardından değerini değiştirin **içerik** özelliğini Başlat düğmesi.
-
-11. Seçin **ProgressBar** denetimi. İçinde **özellikleri** penceresinde değerini **adı** özelliğinden \<No Name > den progressbar1'e. Ardından değerini değiştirin **maksimum** özelliğinden **100** için **10000**.
-
-12. Seçin **onay kutusu** denetimi. İçinde **özellikleri** penceresinde değerini değiştirin **adı** özelliğinden \<No Name > checkBox1 ve Temizle **IsEnabled** özelliği.
+6. Seçin **onay kutusu** denetimi. İçinde **özellikleri** penceresinde değerini değiştirin **adı** özelliğinden \<No Name > checkBox1 ve Temizle **IsEnabled** özelliği.
 
      ![Basit WPF uygulaması](../test/media/codedui_wpfapp.png)
 
-13. Bir tıklama olayı işleyicisi eklemek için düğme denetimini çift tıklayın.
+7. Bir tıklama olayı işleyicisi eklemek için düğme denetimini çift tıklayın.
 
      *MainWindow.xmal.cs* yeni button1_Click yönteminde imleç ile Kod Düzenleyicisi'nde görüntülenir.
 
-14. MainWindow sınıfının en üstünde bir temsilci ekleyin. Temsilci ilerleme çubuğu için kullanılacaktır. Temsilci eklemek için aşağıdaki kodu ekleyin:
+8. MainWindow sınıfının en üstünde bir temsilci ekleyin. Temsilci ilerleme çubuğu için kullanılacaktır. Temsilci eklemek için aşağıdaki kodu ekleyin:
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
         }
     ```
 
-15. button1_Click yöntemine aşağıdaki kodu ekleyin:
+9. button1_Click yöntemine aşağıdaki kodu ekleyin:
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
     }
     ```
 
-16. Dosyayı kaydedin.
+10. Dosyayı kaydedin.
 
 ### <a name="run-the-wpf-app"></a>WPF uygulaması çalıştırma
 
@@ -120,22 +106,14 @@ Bu kılavuzda, oluşturmak, düzenlemek ve bir kodlanmış UI sınamak için bir
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>SimpleWPFApp için kodlanmış UI testi oluşturma
 
-1. İçinde **Çözüm Gezgini**, çözüme sağ tıklayın, seçin **Ekle** seçip **yeni proje**.
+1. İçinde **Çözüm Gezgini**, çözümü sağ tıklatın ve seçin **Ekle** > **yeni proje**.
 
-     **Yeni Proje Ekle** iletişim kutusu görüntülenir.
-
-1. İçinde **yüklü** bölmesini genişletin **Visual C#** ve ardından **Test**.
-
-1. Orta bölmede seçin **kodlanmış UI Test projesi** şablonu.
+2. Arayın ve seçin **kodlanmış UI Test projesi** proje şablonu ve proje oluşturulana kadar adımlara devam edin.
 
    > [!NOTE]
    > Görmüyorsanız **kodlanmış UI Test projesi** şablon gereken [kodlanmış UI test bileşeni](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-1. **Tamam**’ı seçin.
-
-     Yeni kodlanmış UI test projesi adlı **Codeduıtestproject1** çözümünüze eklenir.
-
-     **Kodlanmış UI testi için kod üret** iletişim kutusu görüntülenir.
+     Yeni kodlanmış UI test projesi adlı **Codeduıtestproject1** çözümünüze eklenir ve **kodlanmış UI testi için kod üret** iletişim kutusu görüntülenir.
 
 1. Seçin **eylemleri Kaydet, UI haritasını Düzenle veya onaylama işlemleri Ekle** seçenek ve **Tamam**.
 

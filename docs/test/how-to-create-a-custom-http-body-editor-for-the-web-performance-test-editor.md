@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83bf334aa7fa04b6dea9ec9181d602e40ba83d41
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325035"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415076"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Nasıl yapılır: Özel HTTP Gövde Düzenleyicisi için Web Performans Testi Düzenleyicisi oluşturma
 
@@ -31,49 +31,35 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
 
 ## <a name="create-a-windows-control-library-project"></a>Bir Windows Denetim Kitaplığı projesi oluşturun
 
-1. Visual Studio'da üzerinde **dosya** menüsünde seçin **yeni** > **proje**.
+1. Visual Studio'da yeni bir oluşturma **Windows Forms Denetim Kitaplığı** proje. Projeyi adlandırın **MessageEditors**.
 
-    **Yeni proje** iletişim kutusu görüntülenir.
+   Proje yeni çözüme eklenir ve <xref:System.Windows.Forms.UserControl> adlı *UserControl1.cs* Tasarımcı içinde sunulur.
 
-2. Altında **yüklü şablonlar**, şunlardan birini seçin **Visual Basic** veya **Visual C#** programlama tercihinize göre ve ardından **Windows**.
+1. Gelen **araç kutusu**altında **ortak denetimleri** kategorisi bir <xref:System.Windows.Forms.RichTextBox> UserControl1 yüzeyine sürükleyin.
 
-   > [!NOTE]
-   > Bu örnek, Visual C# kullanmaktadır.
+1. Eylem etiket karakterini seçin (![akıllı etiket karakterini](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.RichTextBox> denetlemek ve ardından seçin ve **üst kapsayıcıya Yerleştir**.
 
-3. Şablonlar listesinde seçin **Windows Forms Denetim Kitaplığı**.
+1. İçinde **Çözüm Gezgini**, Windows Forms kitaplık projesini sağ tıklatın ve seçin **özellikleri**.
 
-4. İçinde **adı** metin kutusuna bir ad, örneğin, türü `MessageEditors`ve **Tamam**.
+1. İçinde **özellikleri**seçin **uygulama** sekmesi.
 
-   > [!NOTE]
-   > Bu örnek, MessageEditors kullanmaktadır.
+1. İçinde **hedef Framework'ü** aşağı açılan listesinden **.NET Framework 4**.
 
-    Proje yeni çözüme eklenir ve <xref:System.Windows.Forms.UserControl> adlı *UserControl1.cs* Tasarımcı içinde sunulur.
+1. **Hedef Framework değişikliği** iletişim kutusu görüntülenir.
 
-5. Gelen **araç kutusu**altında **ortak denetimleri** kategorisi bir <xref:System.Windows.Forms.RichTextBox> UserControl1 yüzeyine sürükleyin.
+1. Seçin **Evet**.
 
-6. Eylem etiket karakterini seçin (![akıllı etiket karakterini](../test/media/vs_winformsmttagglyph.gif)) sağ üst köşesindeki <xref:System.Windows.Forms.RichTextBox> denetlemek ve ardından seçin ve **üst kapsayıcıya Yerleştir**.
+1. İçinde **Çözüm Gezgini**, sağ **başvuruları** düğümünü seçip alt **Başvuru Ekle**.
 
-7. İçinde **Çözüm Gezgini**, Windows Forms kitaplık projesini sağ tıklatın ve seçin **özellikleri**.
+1. **Başvuru Ekle** iletişim kutusu görüntülenir.
 
-8. İçinde **özellikleri**seçin **uygulama** sekmesi.
+1. Seçin. **NET** sekmesinde, aşağı kaydırın ve seçin **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
 
-9. İçinde **hedef Framework'ü** aşağı açılan listesinden **.NET Framework 4**.
+1. Varsa **Görünüm Tasarımcısı** içinde hala açık değilse **Çözüm Gezgini**, sağ **UserControl1.cs** seçip **Görünüm Tasarımcısı**.
 
-10. **Hedef Framework değişikliği** iletişim kutusu görüntülenir.
+1. Tasarım yüzeyinde, sağ tıklayıp **kodu görüntüle**.
 
-11. Seçin **Evet**.
-
-12. İçinde **Çözüm Gezgini**, sağ **başvuruları** düğümünü seçip alt **Başvuru Ekle**.
-
-13. **Başvuru Ekle** iletişim kutusu görüntülenir.
-
-14. Seçin. **NET** sekmesinde, aşağı kaydırın ve seçin **Microsoft.VisualStudio.QualityTools.WebTestFramework** seçip **Tamam**.
-
-15. Varsa **Görünüm Tasarımcısı** içinde hala açık değilse **Çözüm Gezgini**, sağ **UserControl1.cs** seçip **Görünüm Tasarımcısı**.
-
-16. Tasarım yüzeyinde, sağ tıklayıp **kodu görüntüle**.
-
-17. (İsteğe bağlı) Sınıf ve oluşturucu adını UserControl1'den, örneğin, MessageEditorControl gibi anlamlı bir ad ile değiştirin:
+1. (İsteğe bağlı) Sınıf ve oluşturucu adını UserControl1'den, örneğin, MessageEditorControl gibi anlamlı bir ad ile değiştirin:
 
     > [!NOTE]
     > Örnek MessageEditorsControl kullanır.
@@ -91,7 +77,7 @@ Bu arabirimler bulunan <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad ala
     }
     ```
 
-18. Alma ve RichTextBox1 metni ayarlama etkinleştirmek için aşağıdaki özellikleri ekleyin. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Arabirimi EditString ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> EditByteArray öğesini kullanır:
+1. Alma ve RichTextBox1 metni ayarlama etkinleştirmek için aşağıdaki özellikleri ekleyin. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Arabirimi EditString ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> EditByteArray öğesini kullanır:
 
     ```csharp
     public String EditString

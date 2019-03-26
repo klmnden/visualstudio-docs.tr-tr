@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936947"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416200"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl yapılır: Alana Özgü Dil Çözümü Oluşturma
 Bir etki alanına özgü dil (DSL) özel bir Visual Studio çözümünü kullanarak oluşturulur.
 
 ## <a name="prerequisites"></a>Önkoşullar
- Bu yordama başlamadan önce bu bileşenleri yüklemelisiniz:
 
+Bu yordama başlamadan önce bu bileşenleri yükleyin:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Görselleştirme ve modelleme SDK'sı | |
+- Visual Studio
+- Visual Studio SDK'sı (parçası olarak yüklenen **Visual Studio uzantısı geliştirme** iş yükü)
+- Modelleme SDK'sı (Visual Studio bileşeni olarak yüklenir)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Bir etki alanına özgü dil çözümü oluşturma
+1. Yeni bir oluşturarak DSL Sihirbazı **etki alanına özgü dil tasarımcısını** proje.
 
-1. DSL Sihirbazı'nı başlatın.
+   > [!NOTE]
+   > Proje için seçtiğiniz adı geçerli bir görsel tercihen olmalıdır C# tanımlayıcısı için kod oluşturmak için kullanılabilir.
 
-   1. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.
+   ::: moniker range="vs-2017"
 
-   2. **Yeni Proje** iletişim kutusu görünür.
+   ![DSL iletişim kutusu oluşturma](../modeling/media/create_dsldialog.png)
 
-   3. Altında **proje türleri**, genişletme **diğer proje türleri** düğüm seçeneğine tıklayıp **genişletilebilirlik**.
-
-   4. Tıklayın **etki alanına özgü dil tasarımcısını**.
-
-   5. İçinde **adı** çözüm için bir ad yazın. **Tamam**'ı tıklatın.
-
-       **Etki alanına özgü dil Tasarımcısı Sihirbazı** görünür.
-
-      > [!NOTE]
-      >  Tercihen, kodu oluşturmak için kullanılabilir olmadığından geçerli bir Visual C# tanımlayıcısı, yazdığınız ad olmalıdır.
-
-      ![DSL iletişim kutusu oluşturma](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Bir DSL şablonu seçin.
 

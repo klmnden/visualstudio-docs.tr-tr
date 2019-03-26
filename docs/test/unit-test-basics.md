@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796835"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416376"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -38,7 +38,7 @@ Doğrudan kodlama içine alan birim testine giriş için aşağıdaki konulardan
 
 ## <a name="the-mybank-solution-example"></a>MyBank çözümü örneği
 
-Bu konu başlığında, kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` örnek olarak. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi çerçevesini kullanarak sunulur. Ancak, diğer dillerde ve çerçevelerde kavramları kolayca aktarılır.
+Bu makalede kullandığımız adlı kurgusal bir uygulamanın geliştirilmesi `MyBank` örnek olarak. Bu konudaki açıklamaları izlemek için gerçek kod gerekmez. Test yöntemlerini C# dilinde yazılmış ve yönetilen kod için Microsoft birim testi çerçevesini kullanarak sunulur. Ancak, diğer dillerde ve çerçevelerde kavramları kolayca aktarılır.
 
 ![MyBank çözümü](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ Birim testi projesi genellikle tek bir kod proje yapısını yansıtır. Adlı i
 
 **Birim testi projesi çözüme eklemek için:**
 
-1. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje** (klavye **Ctrl**+**Shift** + **N**).
+1. İçinde **Çözüm Gezgini**, çözüme sağ tıklayın ve seçin **Ekle** > **yeni** **proje**.
 
-2. Üzerinde **yeni proje** iletişim kutusunda **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.
+::: moniker range="vs-2017"
+
+2. İçinde **yeni proje** iletişim kutusunda **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.
 
 3. Microsoft birim testi çerçevelerini birini kullanmak üzere, **Birim Test projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Sınanacak `Accounts` proje örneğimiz, proje garip gelse `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Tüm üçüncü taraf ve açık kaynak birim testi çerçevelerini bir Visual Studio Proje şablonu sağlar. Bir proje oluşturma hakkında daha fazla bilgi için framework belgeye başvurun.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Birim testi bulmak için proje şablonu arama kutusuna proje için kullanmak istediğiniz test çerçevesi şablonu kullanın.
+
+3. Sonraki sayfada, projeyi adlandırın. Sınanacak `Accounts` proje örneğimiz, proje adlandırabilirsiniz `AccountsTests`.
+
+::: moniker-end
 
 4. Birim test projenizde örneğimizde hesapları projesi için test edilen kod projesine bir başvuru ekleyin.
 

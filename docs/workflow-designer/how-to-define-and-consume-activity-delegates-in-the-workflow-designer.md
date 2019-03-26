@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222889"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415817"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Nasıl yapılır: İş Akışı Tasarımcısında etkinlik temsilcileri tanımlama ve kullanma
 
@@ -21,12 +21,10 @@ ms.locfileid: "57222889"
 
 ## <a name="define-an-activity-delegate"></a>Bir etkinlik temsilci tanımlama
 
-1. Visual Studio'da **dosya** > **yeni** > **proje**.
-
-2. İçinde **yeni proje** iletişim kutusunda **iş akışı** solda, kategori seçip **iş akışı konsol uygulaması** proje şablonu. (İstenirse) Projeyi adlandırın ve tıklayın **Tamam**.
+1. Yeni bir **iş akışı konsol uygulaması** proje.
 
    > [!NOTE]
-   > Görmüyorsanız **iş akışı** kategori, ilk yükleme **Windows Workflow Foundation** Visual Studio bileşen. Ayrıntılı yönergeler için bkz. [Windows Workflow Foundation'ı yükleme](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Görmüyorsanız **iş akışı** proje şablonları, ilk yükleme **Windows Workflow Foundation** Visual Studio bileşen. Ayrıntılı yönergeler için bkz. [Windows Workflow Foundation'ı yükleme](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Projeye sağ tıklayarak **Çözüm Gezgini** seçip **Ekle** > **yeni öğe**. Seçin **iş akışı** kategori tıklayın ve ardından **etkinlik** öğe şablonu. Yeni Etkinlik adı **MyForEach.xaml** seçip **Tamam**.
 

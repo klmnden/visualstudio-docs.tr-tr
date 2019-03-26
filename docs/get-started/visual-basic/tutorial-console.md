@@ -2,8 +2,9 @@
 title: 'Öğretici: Visual Basic ile çalışmaya başlama'
 description: Visual Studio'da, adım adım Visual Basic konsol uygulamaları oluşturmayı öğrenin.
 ms.custom: seodec18, get-started
-ms.date: 08/10/2018
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,22 +14,34 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a190a17147530fe42cd6bb9e95b313527eb16b0d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840425"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416177"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Öğretici: Visual Studio'da Visual Basic ile çalışmaya başlama
 
 Bu öğreticide Visual Basic (VB) oluşturmak ve birkaç farklı konsol uygulamaları çalıştırma ve bazı özellikleri incelemek için Visual Studio kullanacaksınız [Visual Studio tümleşik geliştirme ortamı (IDE)](visual-studio-ide.md) bunu yaparken.
 
+::: moniker range="vs-2017"
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 İlk olarak, Visual Basic uygulama projesi oluşturacağız. Proje türü bile herhangi bir şey ekledik önce ihtiyacınız olacak tüm şablon dosyaları ile birlikte gelir!
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın.
 
@@ -58,9 +71,49 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
 1. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Bu öğreticideki ekran görüntüleri bazıları, koyu tema kullanın. Koyu tema kullanmayan ancak öğrenmek istiyorsanız [Düzenleyicisi ve Visual Studio IDE'yi kişiselleştirme](../../ide/quickstart-personalize-the-ide.md) öğrenmek için sayfa nasıl.
+
+1. Open Visual Studio 2019.
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *konsol* arama kutusuna. Ardından, **Visual Basic** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+
+   Tüm dil ve platform filtreleri uyguladıktan sonra seçin **konsol uygulaması (.NET Core)** şablonu seçip **sonraki**.
+
+   ![Konsol uygulaması (.NET Framework) için Visual Basic şablonu seçin](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Görmüyorsanız, **konsol uygulaması (.NET Core)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   >
+   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Ardından, Visual Studio yükleyicisinde **.NET Core çoklu platform geliştirme** iş yükü.
+   >
+   > ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. Ardından, 2. adım bu dönün "[proje oluşturma](#create-a-project)" yordamı.
+
+1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *WhatIsYourName* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+
+   !['yeni projenizi yapılandırın' penceresinde 'WhatIsYourName' projenizi adlandırın](./media/vs-2019/vb-name-your-project.-whatname.png)
+
+   Yeni projeniz Visual Studio açılır.
+
+::: moniker-end
+
 ## <a name="create-a-what-is-your-name-application"></a>"Ne olduğunu uygulamanızın adı" uygulaması oluşturma
 
 Adınız için ister ve sonra tarih ve saat ile birlikte görüntüler bir uygulama oluşturalım. İşte nasıl:
+
+ ::: moniker range="vs-2017"
 
 1. Zaten açık değilse, ardından açın, *WhatIsYourName* proje.
 
@@ -77,7 +130,7 @@ Adınız için ister ve sonra tarih ve saat ile birlikte görüntüler bir uygul
 
     Bu kodu varolan değiştirir <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, ve <xref:System.Console.ReadKey%2A> deyimleri.
 
-   ![Ne olduğunu adınız kodu gösteren kod penceresi](media/vb-codewindow-what-name.png)
+   ![Ne olduğunu adınız kodu gösteren kod penceresi](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
 1. Konsol penceresi açıldığında, adınızı girin. Konsol penceresi aşağıdaki ekran görüntüsüne benzer görünmelidir:
 
@@ -85,7 +138,36 @@ Adınız için ister ve sonra tarih ve saat ile birlikte görüntüler bir uygul
 
 1. Konsol penceresini kapatmak için herhangi bir tuşa basın.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. İçinde *WhatIsYourName* projesi, şu Visual Basic kodu izleyen hemen ayraç sonra girin `Sub Main(args As String())` satır ve önce `End Sub` satırı:
+
+     ```vb
+     Console.WriteLine(vbCrLf + "What is your name? ")
+     Dim name = Console.ReadLine()
+     Dim currentDate = DateTime.Now
+     Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}")
+     Console.Write(vbCrLf + "Press any key to exit... ")
+     Console.ReadKey(True)
+    ```
+
+    Bu kodu varolan değiştirir <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, ve <xref:System.Console.ReadKey%2A> deyimleri.
+
+   ![Ne olduğunu adınız kodu gösteren kod penceresi](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Konsol penceresi açıldığında, adınızı girin. Konsol penceresi aşağıdaki ekran görüntüsüne benzer görünmelidir:
+
+   ![Konsol ne olduğunu uygulamanızın adı, saati ve tarihi gösteren penceresi ve ileti devam etmek için herhangi bir tuşa basın](media/vb-console-what-name.png)
+
+1. Konsol penceresini kapatmak için herhangi bir tuşa basın.
+
+ ::: moniker-end
+
 ## <a name="create-a-calculate-this-application"></a>"Bu Hesapla" bir uygulama oluşturma
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın ve ardından üstteki menü çubuğundan **dosya** > **yeni** > **proje**.
 
@@ -110,11 +192,50 @@ Adınız için ister ve sonra tarih ve saat ile birlikte görüntüler bir uygul
 
    Kod penceresi aşağıdaki ekran görüntüsüne benzer görünmelidir:
 
-   ![Bu kod hesapla gösteren kod penceresi](media/vb-codewindow-calculate-this.png)
+   ![CalculateThis kodu gösteren kod penceresi](media/vb-codewindow-calculate-this.png)
 
 1. Tıklayın **CalculateThis** seçerek programınızı çalıştırın. Konsol penceresi aşağıdaki ekran görüntüsüne benzer görünmelidir:
 
-    ![Konsol penceresi yönergeleri almak için hangi eylemleri içeren CaluculateThis uygulama gösteriliyor.](media/vb-console-calculate-this.png)
+    ![Konsol penceresi yönergeleri almak için hangi eylemleri içeren CalculateThis uygulama gösteriliyor.](media/vb-console-calculate-this.png)
+
+::: moniker-end 
+
+::: moniker range="vs-2019"
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**. 
+
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *konsol* arama kutusuna. Ardından, **Visual Basic** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+
+1. Tüm dil ve platform filtreleri uyguladıktan sonra seçin **konsol uygulaması (.NET Core)** şablonu seçip **sonraki**.
+
+   Ardından **yeni projenizi yapılandırın** penceresinde yazın veya girin *WhatIsYourName* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+
+1. Arasına aşağıdaki kodu girin `Module Program` satır ve `End Module` satırı:
+
+   ```vb
+   Public num1 As Integer
+   Public num2 As Integer
+   Public answer As Integer
+   Sub Main()
+       Console.WriteLine("Type a number and press Enter")
+       num1 = Console.ReadLine()
+       Console.WriteLine("Type another number to add to it and press Enter")
+       num2 = Console.ReadLine()
+       answer = num1 + num2
+       Console.WriteLine("The answer is " & answer)
+       Console.ReadLine()
+   End Sub
+   ```
+
+   Kod penceresi aşağıdaki ekran görüntüsüne benzer görünmelidir:
+
+   ![CalculateThis kodu gösteren kod penceresi](media/vb-codewindow-calculate-this.png)
+
+1. Tıklayın **CalculateThis** seçerek programınızı çalıştırın. Konsol penceresi aşağıdaki ekran görüntüsüne benzer görünmelidir:
+
+    ![Konsol penceresi yönergeleri almak için hangi eylemleri içeren CalculateThis uygulama gösteriliyor.](media/vb-console-calculate-this.png)
+
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Hızlı yanıtlar hakkında SSS
 

@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927886"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416428"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama
 Bir etki alanına özgü dil (DSL) tanımlamak için bir şablondan bir Visual Studio çözümü oluşturun. Anahtar çözüm DslDefinition.dsl içinde depolanan DSL tanımı diyagramı parçasıdır. DSL tanımını DSL şekilleri ve sınıfları tanımlar. Sonra değiştirmek ve bu öğeleri eklemek, DSL daha ayrıntılı bir şekilde özelleştirmek için program kodu ekleyebilirsiniz.
 
-DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Visualizaton ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
+DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **DSL araçları Laboratuvar**, bu sitede bulabilirsiniz: [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Bir şablon çözümü seçme
- Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
+Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Visual Studio Görselleştirme ve modelleme SDK'sı | |
+- Visual Studio
+- (Visual Studio SDK'yı içerir) visual Studio uzantısı geliştirme iş yükü
+- Modelleme SDK'sı (Bu, Visual Studio'da tek bir bileşen olarak yükler)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proje şablonunu kullanarak yeni bir Visual Studio çözümü oluşturun.
 
- Yeni bir etki alanına özgü dil oluşturma için etki alanına özgü dil proje şablonunu kullanarak yeni bir Visual Studio çözümü oluşturun.
+### <a name="to-create-a-dsl-solution"></a>Bir DSL çözüm oluşturmak için
 
-#### <a name="to-create-a-dsl-solution"></a>Bir DSL çözüm oluşturmak için
+1. Yeni bir **etki alanına özgü dil** proje.
 
-1. Bir Çözümle oluşturun **etki alanına özgü dil** altında bulunan şablon **diğer proje türleri/genişletilebilirlik** içinde **yeni proje** iletişim kutusu.
+   ::: moniker range="vs-2017"
 
     ![DSL iletişim kutusu oluşturma](../modeling/media/create_dsldialog.png)
 
-    Tıkladığınızda **Tamam**, **etki alanına özgü dil Sihirbazı** açılır ve şablon DSL çözümlerinin bir listesini görüntüler.
+   ::: moniker-end
+
+    **Etki alanına özgü dil Sihirbazı** açılır ve şablon DSL çözümlerinin bir listesini görüntüler.
 
 2. Her şablon açıklamasını görmek için tıklayın. Oluşturmak istediğiniz en çok benzeyen bir çözüm seçin.
 
@@ -606,7 +607,7 @@ DSL için yeni başladıysanız, aracılığıyla çalışmanızı öneririz **D
  Ayrıca bkz: [nasıl yapılır: Bir etki alanına özgü dil Namespace değiştirme](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Sorun giderme
- Aşağıdaki tabloda çözüm önerileri ile birlikte bir DSL tasarlarken, karşılaşılan en yaygın sorunlardan bazıları listelenmektedir. Daha fazla öneri kullanılabilir [görselleştirme araçları Extensibililty Forumu](http://go.microsoft.com/fwlink/?LinkId=186074).
+ Aşağıdaki tabloda çözüm önerileri ile birlikte bir DSL tasarlarken, karşılaşılan en yaygın sorunlardan bazıları listelenmektedir. Daha fazla öneri kullanılabilir [görselleştirme araçları genişletilebilirliği forumunu](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
 | Sorun | Öneri |

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950155"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416252"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Program Kodunda Modelde Gezinme ve Modeli Güncelleştirme
 
@@ -226,27 +226,28 @@ using (Transaction t =
   Bu şekilde bir öğe oluşturduğunuzda, diyagram bağlayıcıda otomatik olarak oluşturulur, ancak bir varsayılan şekli, rengi ve diğer özellikleri vardır. İlişkili bağlayıcısının nasıl oluşturulacağını denetlemek için bkz: [bir öğe ve şeklini oluşturma](#merge).
 
 ##  <a name="deleteelements"></a> Öğeleri silme
- Çağırarak öğeyi Sil `Delete()`:
 
- `henry.Delete();`
+Çağırarak öğeyi Sil `Delete()`:
 
- Bu işlem ayrıca silecek:
+`henry.Delete();`
+
+Bu işlem ayrıca silecek:
 
 - Bağlantılar öğesinden ilişki. Örneğin, `edward.Parents` artık içerecek `henry`.
 
 - Rollerin öğeler `PropagatesDelete` bayrağı doğrudur. Örneğin, öğeyi görüntüleyen şekli silinir.
 
-  Varsayılan olarak, her bir gömme ilişkisi vardır `PropagatesDelete` hedef rolü true. Silme `henry` silmediği `familyTree`, ancak `familyTree.Delete()` tüm siler `Persons`. Daha fazla bilgi için [silme davranışını özelleştirme](../modeling/customizing-deletion-behavior.md).
+Varsayılan olarak, her bir gömme ilişkisi vardır `PropagatesDelete` hedef rolü true. Silme `henry` silmediği `familyTree`, ancak `familyTree.Delete()` tüm siler `Persons`.
 
-  Varsayılan olarak, `PropagatesDelete` başvuru ilişkileri rolleri için geçerli değildir.
+Varsayılan olarak, `PropagatesDelete` başvuru ilişkileri rolleri için geçerli değildir.
 
-  Bir nesne sildiğinizde belirli yayılmaları atlamak silme kuralları neden olabilir. Bu işlem için başka bir öğe değiştirerek, kullanışlıdır. Siz kendisi için silme yayılmayacak bir veya daha fazla rol GUID'sini sağlayın. GUID ilişki sınıfı alınabilir:
+Bir nesne sildiğinizde belirli yayılmaları atlamak silme kuralları neden olabilir. Bu işlem için başka bir öğe değiştirerek, kullanışlıdır. Siz kendisi için silme yayılmayacak bir veya daha fazla rol GUID'sini sağlayın. GUID ilişki sınıfı alınabilir:
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (Söz konusu örnekte hiçbir etkisi yoktur, çünkü `PropagatesDelete` olduğu `false` rolleri için `ParentsHaveChildren` ilişki.)
+(Söz konusu örnekte hiçbir etkisi yoktur, çünkü `PropagatesDelete` olduğu `false` rolleri için `ParentsHaveChildren` ilişki.)
 
-  Bazı durumlarda, silme, öğe veya yayma tarafından silinmiş bir öğe üzerinde bir kilit varlığı tarafından engellenir. Kullanabileceğiniz `element.CanDelete()` öğe silinmiş olup olmadığını denetlemek için.
+Bazı durumlarda, silme, öğe veya yayma tarafından silinmiş bir öğe üzerinde bir kilit varlığı tarafından engellenir. Kullanabileceğiniz `element.CanDelete()` öğe silinmiş olup olmadığını denetlemek için.
 
 ##  <a name="deletelinks"></a> İlişki bağlantıları siliniyor
  Bir öğenin bir rol özelliği kaldırarak bir ilişki bağlantı silebilirsiniz:

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355795"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415702"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual Studio projenize oluşturmanıza olanak tanır. Genellikle, böylece verileri göre hazırlanmasının kod farklılık şablonları yazma bir *model*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren veritabanı modelidir.
@@ -34,13 +34,9 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 
  Bir metin şablonu oluşturmak istediğiniz metni ve değişken bölümlerini oluşturduğu program kodu bir karışımını içerir. Program kodunu yineleyin veya koşullu olarak oluşturulan metin parçalarını atlamasını sağlar. Oluşturulan metin için kendisini uygulamanızın parçasını oluşturacak program kodu olabilir.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Tasarım zamanı T4 metin şablonu oluşturma
+## <a name="create-a-design-time-t4-text-template"></a>Tasarım zamanı T4 metin şablonu oluşturma
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Visual Studio'da bir tasarım zamanı T4 şablonu oluşturmak için
-
-1. Visual Studio projesi oluşturun veya mevcut bir açın.
-
-    Örneğin, **dosya** menüsünde seçin **yeni** > **proje**.
+1. Yeni bir Visual Studio projesi oluşturun veya mevcut bir açın.
 
 2. Bir metin şablonu dosyasını projenize ekleyin ve uzantısına sahip bir ad verin **.tt**.
 
@@ -70,10 +66,11 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 6. İçinde **Çözüm Gezgini**, şablon dosyası düğümünü genişletin ve uzantıya sahip bir dosyayı bulabilirsiniz **.txt**. Metin şablonundan oluşturulan bir dosya içerir.
 
    > [!NOTE]
-   >  Projenizi Visual Basic projesi ise,'a tıklamalıdır **tüm dosyaları göster** çıktı dosyasını görmek için.
+   > Projenizi Visual Basic projesi ise,'a tıklamalıdır **tüm dosyaları göster** çıktı dosyasını görmek için.
 
-### <a name="regenerating-the-code"></a>Kod oluşturma işlemi sürüyor
- Aşağıdaki durumlarda hiçbirinde paketinizle dosyası oluşturmanın bir şablon yürütülecek:
+### <a name="regenerate-the-code"></a>Kodu yeniden oluştur
+
+Aşağıdaki durumlarda hiçbirinde paketinizle dosyası oluşturmanın bir şablon yürütülecek:
 
 - Şablon düzenleyin ve sonra farklı bir Visual Studio penceresine odak değiştirin.
 
@@ -83,12 +80,11 @@ Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual
 
 - İçinde **Çözüm Gezgini**, kısayol menüsünden herhangi dosya öğesini **özel aracı Çalıştır**. Seçili şablonları kümesini dönüştürmek için bu yöntemi kullanın.
 
-  Böylece şablonları okurlar veri dosyalar değiştiğinde yürütülen bir Visual Studio projesi de ayarlayabilirsiniz. Daha fazla bilgi için [kodu otomatik olarak yeniden](#Regenerating).
+Böylece şablonları okurlar veri dosyalar değiştiğinde yürütülen bir Visual Studio projesi de ayarlayabilirsiniz. Daha fazla bilgi için [kodu otomatik olarak yeniden](#Regenerating).
 
-## <a name="generating-variable-text"></a>Değişken metin oluşturma
- Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için program kodu kullanmanıza izin verir.
+## <a name="generate-variable-text"></a>Değişken metin oluştur
 
-#### <a name="to-generate-text-by-using-program-code"></a>Program kodu kullanarak metin oluşturmak için
+Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için program kodu kullanmanıza izin verir.
 
 1. İçeriğini değiştirme `.tt` dosyası:
 

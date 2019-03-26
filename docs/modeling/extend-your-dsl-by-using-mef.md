@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939625"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415583"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
 
@@ -117,15 +117,15 @@ MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çer�
 
 DSL'nizi MEF özellikli sunulmuştur. Menü komutları, hareket işleyicileri ve doğrulama kısıtlamalarını MEF uzantıları yazabilirsiniz. DSL çözümünüzdeki diğer özel kod ile birlikte bu uzantıları yazabilirsiniz. Ayrıca, sizin veya diğer geliştiriciler DSL'nizi genişletme ayrı Visual Studio uzantıları yazabilirsiniz.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>MEF özellikli bir DSL için uzantı oluşturma
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>MEF özellikli bir DSL için bir uzantı oluşturma
 
 MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bir DSL erişiminiz varsa, uzantıları için yazabilirsiniz. Uzantılar, menü komutlarını, hareket işleyicileri veya doğrulama kısıtlamalarını eklemek için kullanılabilir. Bu uzantıları yazmak için Visual Studio Uzantısı (VSIX) çözümü kullanın. Çözüm iki bölümden oluşur: bir sınıf kitaplığı projesi, kod derleme yapıları ve derleme paketleri bir VSIX projesi.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Bir DSL uzantısı VSIX oluşturmak için
+### <a name="to-create-a-dsl-extension-vsix"></a>Bir DSL uzantısı VSIX oluşturmak için
 
-1. Yeni bir sınıf kitaplığı projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#** seçip **sınıf kitaplığı**.
+1. Yeni bir **sınıf kitaplığı** proje.
 
-2. Yeni sınıf kitaplığı projesinde DSL derlemeye bir başvuru ekleyin.
+2. Yeni projede, DSL derlemeye bir başvuru ekleyin.
 
    - Bu derleme, genellikle ile biten bir ada sahip ". DSL.dll".
 
@@ -145,9 +145,9 @@ MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bi
 
    -   System.Windows.Forms.dll
 
-4. Aynı çözüm içinde VSIX projesi oluşturun. Bunu yapmak için **yeni proje** iletişim kutusunda **Visual Basic** veya **Visual C#**, tıklayın **genişletilebilirlik**ve ardından seçin **VSIX projesi**.
+4. Yeni bir **VSIX projesi** proje.
 
-5. Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.
+5. İçinde **Çözüm Gezgini**, VSIX projesini sağ tıklatın ve seçin **başlangıç projesi olarak ayarla**.
 
 6. Yeni projeyi **source.extension.vsixmanifest**.
 
@@ -376,5 +376,5 @@ namespace MefExtension
 
 - [Visual Studio Uzantıları Gönderme](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Etki Alanına Özgü bir Dilde Doğrulama](../modeling/validation-in-a-domain-specific-language.md)

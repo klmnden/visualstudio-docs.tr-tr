@@ -2,8 +2,9 @@
 title: 'Öğretici: Basit bir C# konsol uygulaması'
 description: Visual Studio'da, adım adım C# konsol uygulaması oluşturmayı öğrenin.
 ms.custom: seodec18, get-started
-ms.date: 03/12/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,22 +15,34 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: ccd5ff0f0e77a2f59135b2bf7950c4c6ddf58e02
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736918"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416182"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Öğretici: Basit bir C# Visual Studio'da konsol uygulaması
 
 Bu öğreticide için C#, bir konsol uygulaması oluşturun ve bunu yaparken bazı Visual Studio tümleşik geliştirme ortamı (IDE) özelliklerini Visual Studio kullanacaksınız.
 
+::: moniker range="vs-2017"
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
 Başlamak için oluşturacağız bir C# uygulama projesi. Proje türü bile herhangi bir şey ekledik önce ihtiyacınız olacak tüm şablon dosyaları ile birlikte gelir!
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın.
 
@@ -60,9 +73,44 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
 1. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET Core çoklu platform geliştirme** iş yükü ve ardından **Değiştir**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Üzerinde **yeni bir proje oluşturma** penceresinde girin veya yazın *konsol* arama kutusuna. Ardından, **C#** dilden listeleyin ve ardından **Windows** Platform listesinde. 
+
+   Tüm dil ve platform filtreleri uyguladıktan sonra seçin **konsol uygulaması (.NET Core)** şablonu seçip **sonraki**.
+
+   ![Seçin C# şablon için bir konsol uygulaması (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Görmüyorsanız, **konsol uygulaması (.NET Core)** şablon yükleyebileceğiniz buradan **yeni bir proje oluşturma** penceresi. İçinde **aradığınızı bulamadınız?** message öğesini **daha fazla araçları ve özellikleri yükleme** bağlantı.
+   >
+   > !['Daha fazla araçları ve özellikleri yükleme' bağlantı 'Yeni Proje oluştur' penceresinde 'aradığınızı bulma yok' iletisi](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Ardından, Visual Studio yükleyicisinde **.NET Core çoklu platform geliştirme** iş yükü.
+   >
+   > ![.NET core çoklu platform geliştirme iş yükünü Visual Studio yükleyicisi](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. Ardından, 2. adım bu dönün "[proje oluşturma](#create-a-project)" yordamı.
+
+1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *hesaplayıcı* içinde **proje adı** kutusu. Ardından, **Oluştur**.
+
+   ![Projenize 'Hesap makinesi' 'yeni projenizi yapılandırın' penceresinde adı](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   Visual Studio varsayılan "Hello World" kod içeren yeni projeniz, açar.
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>Uygulama oluşturma
 
-İlk olarak, bazı temel tamsayı matematik şunları keşfedeceğiz C#. Ardından, temel hesaplayıcı oluşturmak için kod ekleyeceğiz. Yanında. Bundan sonra uygulamayı bulun ve hataları düzeltmek için hata ayıklama. Ve son olarak, size daha verimli hale getirmek için kod geliştireceksiniz.
+İlk olarak, bazı temel tamsayı matematik şunları keşfedeceğiz C#. Ardından, temel hesaplayıcı oluşturmak için kod ekleyeceğiz. Bundan sonra uygulamayı bulun ve hataları düzeltmek için hata ayıklama. Ve son olarak, size daha verimli hale getirmek için kod geliştireceksiniz.
 
 ### <a name="explore-integer-math"></a>Tamsayı matematiğini İnceleme
 
@@ -218,7 +266,7 @@ Bununla birlikte, uygulamayı yalnızca ondalık bir sonuç üretir. Uygulama ç
 
 ## <a name="debug-the-app"></a>Uygulamasında hata ayıklama
 
-Temel hesaplayıcı uygulamamız iyileştirdik, ancak bu henüz failsafes yerde kullanıcı giriş hataları gibi özel durumları işlemek için gerekli değildir.
+Temel hesaplayıcı uygulamamız iyileştirdik, ancak bu henüz başarısız kasalar yerde kullanıcı giriş hataları gibi özel durumları işlemek için gerekli değildir.
 
 Örneğin, bir sayı sıfıra bölme veya uygulama bir sayısal karakter beklerken bir alfa karakter girin denerseniz (veya tersi), Uygulama çalışmayı durduruyor ve bir hata döndürür.
 
@@ -404,7 +452,7 @@ Haydi başlayalım.
 
 1. Seçin **hesaplayıcı** , programınızı çalıştırmak için veya basın **F5**.
 
-1. Komut istemlerini izleyin ve sayı bölmek **42** numarasıyla **119**. Uygulamanız aşağıdaki gibi görünmelidir:
+1. Komut istemlerini izleyin ve sayı bölmek **42** numarasıyla **119**. Uygulamanız aşağıdaki ekran görüntüsüne benzer görünmelidir:
 
     ![Hangi Eylemler ve hata işleme için hatalı girişleri istemlerinde içeren UIMap'e yeniden işlenmiş hesaplayıcı uygulama gösteren konsol penceresi](./media/csharp-console-calculator-refactored.png)
 
