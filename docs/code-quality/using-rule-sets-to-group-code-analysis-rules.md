@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914480"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515239"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Kural Kod Analizi kurallarını gruplandırmak için kümeleri kullanma
 
-Visual Studio'da Kod Analizi yapılandırdığınızda, yerleşik bir listeden seçebilirsiniz *kural kümeleri*. Bir kural kümesi bir proje için de geçerlidir ve bir kod hedeflenen sorunlar ve bu proje için belirli koşullar belirlemek çözümleme kurallarını gruplandırmasıdır. Örneğin, kod genel kullanıma açık API'leri taramak için tasarlanmış bir kural kümesi uygulayabilir veya önerilen minimum kurallar. İçeren tüm kurallar kural kümesi de uygulayabilirsiniz.
+Visual Studio'da Kod Analizi yapılandırdığınızda, yerleşik bir listeden seçebilirsiniz *kural kümeleri*. Bir kural kümesi, hedeflenen sorunlar ve bu proje için belirli koşullar belirleyen kod analizi kuralları gruplandırmasıdır. Örneğin, kod genel kullanıma açık API'leri taramak için tasarlanmış bir kural kümesi uygulayabilirsiniz. Tüm kullanılabilir kurallarını içeren bir kural kümesi de uygulayabilirsiniz.
 
 Bir kural uyarılar veya hatalar olarak görüntülenecek kümesi ekleyerek veya silerek kural veya kural önem dereceleri değiştirerek özelleştirebilirsiniz **hata listesi**. Özel kural kümeleri belirli geliştirme ortamınızı gereksinimini karşılayabilir. Bir kural kümesi özelleştirdiğinizde, kural kümesi Düzenleyici'sini arama ve filtreleme süreçte yardımcı olacak araçlar sağlar.
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324792"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515200"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio'da R projeleri oluşturma
 
@@ -56,7 +56,7 @@ Mevcut bir klasörü varsa *. R* bir projede, yönetmek istediğiniz dosyaları 
 
 1. Yeni Proje Visual Studio'da, önceki bölümde gösterildiği gibi oluşturun.
 1. Dosyalarınızı proje klasörüne kopyalayın.
-1. Visual Studio Çözüm Gezgini'nde projeye sağ tıklayın, **Ekle** > **çıkmadan öğesi**, eklemek istediğiniz dosyaya göz atın. Bu dosyaları seçtikten sonra proje ağacında görünür **Tamam**.
+1. Visual Studio Çözüm Gezgini'nde projeye sağ tıklayın, **Ekle** > **var olan öğe**, eklemek istediğiniz dosyaya göz atın. Bu dosyaları seçtikten sonra proje ağacında görünür **Tamam**.
 1. Kod alt klasörler halinde düzenlemek için projeye sağ tıklayın, **Ekle** > **yeni klasör** ilk olarak, ardından dosyalarınızı bu klasöre kopyalayın ve 3. adımda bu varolan öğeleri ekleyin.
 
 ## <a name="project-properties"></a>Proje Özellikleri

@@ -1,6 +1,6 @@
 ---
 title: Çözümleyici kural önem derecesi ve gizleme
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873508"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515343"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn çözümleyicilerini kullanın
 
@@ -46,12 +46,17 @@ Her tanı yanındaki simge **Çözüm Gezgini** kural Düzenleyicisi'nde açtı�
 
 ## <a name="rule-sets"></a>Kural kümeleri
 
-A [kural kümesi](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) bireysel tanılama için önem derecesi ve gizleme durumunu depolayan bir XML dosyasıdır. Tek bir proje için kural kümeleri uygulamak ve bir proje birden çok kural kümesi olabilir. Etkin kural Düzenleyicisi'nde kümesi görüntülemek için sağ **Çözümleyicileri** düğümünde **Çözüm Gezgini** seçip **açık etkin kural kümesi**. Bu kural eriştiğiniz ilk kez verilirse, adlı bir dosya  *\<projectname > .ruleset* projeye eklenir ve görünür **Çözüm Gezgini**.
+A [kural kümesi](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) bireysel tanılama için önem derecesi ve gizleme durumunu depolayan bir XML dosyasıdır.
 
 > [!NOTE]
-> Kural kümeleri (ikili) statik kod analizi hem Roslyn çözümleyicisi kuralları içerir.
+> Kural kümeleri (ikili) statik kod analizi ve Roslyn Çözümleyicileri kurallar içerebilir.
 
-Etkin kural için bir proje üzerinde kümesi değiştirebilirsiniz **Kod Analizi** bir projenin özelliklerini sekmesi. Kural kümesi seçin **bu kural kümesini Çalıştır** aşağı açılan listesi. Kümeden kuralı da açabilirsiniz **Kod Analizi** seçerek özellik sayfası **açın**.
+Etkin kural kural kümesi Düzenleyicisi'nde kümesi düzenlemek için sağ **başvuruları** > **Çözümleyicileri** düğümünde **Çözüm Gezgini** seçip**Etkin kural kümesini açmak**. Bu kural kümesini düzenlediğiniz ilk kez ise, Visual Studio varsayılan kural kümesi dosyası kopyasını getirir, bu adlar  *\<projectname > .ruleset*ve projenize ekler. Ayrıca bu özel kuralın etkin kural projeniz için kümesi olur.
+
+Etkin kural için bir proje kümesini değiştirmek için gidin **Kod Analizi** bir projenin özelliklerini sekmesi. Kural kümesi altındaki listeden seçin **bu kural kümesini Çalıştır**. Kural kümesini açmak için seçmeniz **açın**.
+
+> [!NOTE]
+> Kural kümeleri için .NET core ve .NET Standard projelerine menü komutlarını desteklemez **Çözüm Gezgini**, örneğin, **açık etkin kural kümesi**. .NET Core veya .NET Standard projesi için el ile bir varsayılan olmayan kural belirtmek için [ekleme **CodeAnalysisRuleSet** özelliği proje dosyasına](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Kural kümesi Visual Studio Düzenleyicisi kullanıcı Arabirimi kural kümesi içinde kuralları yapılandırabilirsiniz.
 
 ## <a name="rule-severity"></a>Kural önem derecesi
 
@@ -63,7 +68,7 @@ Etkin kural için bir proje üzerinde kümesi değiştirebilirsiniz **Kod Analiz
 |Uyarı|İhlalleri görünür olarak *uyarıları* içinde **hata listesi** ve komut satırı derleme çıkışı, ancak derleme başarısız olmasına neden olmaz.|Sorunlu kod içeren bir yeşil dalgalı ve kaydırma çubuğundaki küçük yeşil kutu işaretli altı çizili olduğundan.|
 |Bilgi|İhlalleri görünür olarak *iletileri* içinde **hata listesi**ve hiçbir komut satırı derleme çıktı.|Kod sorunlu altı çizili ile dalgalı ve kaydırma çubuğundaki gri küçük Kutu işaretli bir gri olur.|
 |Hidden|Non-kullanıcıya görünür.|Non-kullanıcıya görünür. Tanılama için IDE tanılama altyapısı, ancak bildirilir.|
-|Hiçbiri|Tamamen gizlendi.|Tamamen gizlendi.|
+|Yok.|Tamamen gizlendi.|Tamamen gizlendi.|
 
 Ayrıca, "bir uyarı kuralının önem derecesi olarak ayarlayıp sıfırlayabilirsiniz" **varsayılan**. Her tanılama görülebilir bir varsayılan önem derecesine sahip **özellikleri** penceresi.
 
@@ -79,7 +84,7 @@ Bir kuraldan önemi değiştirebilirsiniz **Çözüm Gezgini**, veya içinde  *\
 
 ![Çözüm Gezgini'nde kural kümesi dosyası](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Çözüm Gezgini'nden kural önem derecesi ayarlamak için
+### <a name="set-rule-severity-from-solution-explorer"></a>Çözüm Gezgini'nden kural önem derecesini belirleme
 
 1. İçinde **Çözüm Gezgini**, genişletme **başvuruları** > **Çözümleyicileri** (**bağımlılıkları**  >  **Çözümleyicileri** .NET Core projeleri için).
 
@@ -89,7 +94,7 @@ Bir kuraldan önemi değiştirebilirsiniz **Çözüm Gezgini**, veya içinde  *\
 
    Kural önem derecesi etkin kural kümesi dosyasına kaydedilir.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Kural kümesi için dosya kuralında önem ayarlama
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Kural kümesi dosyası içindeki kural önem derecesini belirleme
 
 1. Açık [kural kümesi](analyzer-rule-sets.md) içinde çift tıklayarak dosyayı **Çözüm Gezgini**u seçerek **açık etkin kural kümesi** sağ tıklama menüsünde **çözümleyiciler** düğümünü veya seçerek **açık** üzerinde **Kod Analizi** projenin özellik sayfası.
 

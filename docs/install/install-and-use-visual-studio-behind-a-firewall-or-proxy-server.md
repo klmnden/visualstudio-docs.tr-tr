@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 379f4ad2c4a5eb6df2dd2913104b9e2aa0139173
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323850"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515382"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
@@ -102,7 +102,7 @@ Bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ya da Azure
 | GitHub depo bilgilerini | api.github.com | HTTPS | 443 | Bower paketlerini hakkında ek bilgi almak için gerekli |
 | Web Lint | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Explorer şablonu<br>keşif <br><br>Cookiecutter <br>Proje Gezgini<br> Oluşturma | api.github.com <br>RAW.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.Python.org | HTTPS | 443<br> | Çevrimiçi Şablonlar önerilen veri akışımıza ve GitHub depoları bulmak için kullanılan <br><br>Bir cookiecutter Python paket Python paket dizinini (Pypı) tek seferlik bir isteğe bağlı yükleme gerektirir bir cookiecutter şablonundan bir proje oluşturmak için kullanılan |
-| Python paketi <br>keşif<br><br>Python paketi <br>yönetim<br><br>Python <br>Yeni Proje <br>templates | pypi.org<br> <br>pypi.Python.org <br>Bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Pip paketleri için arama özelliğini sağlar.<br><br>Pip eksik olup olmadığını otomatik olarak yüklemek için kullanılan <br><br> Oluşturmak için kullanılan <br><br>Proje şablonları cookiecutter şablonu URL'lere yeni proje iletişim kutusunda aşağıdaki Python'ı çözmek için kullanılır:<br> -Projekt Klasifikace<br>-Kümeleme proje <br> -Projekt Regrese <br> -PyGame PyKinect kullanma <br> -Projekt Pyvot |
+| Python paketi <br>keşif<br><br>Python paketi <br>yönetim<br><br>Yeni <br>Python <br> proje <br>templates | pypi.org<br> <br>pypi.Python.org <br>Bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Pip paketleri için arama özelliğini sağlar.<br><br>Pip eksik olup olmadığını otomatik olarak yüklemek için kullanılan <br><br>Cookiecutter şablonu URL'lere şablonları aşağıdaki yeni Python projesi çözmek için kullanılır:<br> -Projekt Klasifikace<br>-Kümeleme proje <br> -Projekt Regrese <br> -PyGame PyKinect kullanma <br> -Projekt Pyvot |
 | Office web <br>eklentisi <br> Bildirimi <br>Doğrulama <br>Hizmet | verificationservice.osi.office.net | HTTPS | 443 | Office web eklentileri için bildirimleri doğrulamak için kullanılır |
 | SharePoint ve <br>Office eklentileri | SharePoint.com | HTTPS | 443 | Yayımlama ve SharePoint ve Office eklentileri SharePoint Online'a test etmek için kullanılan |
 | İş Akışı Yöneticisi <br>Test hizmeti<br> Ana bilgisayar | | http | 12292 | SharePoint eklentileri iş akışları ile test etmek için otomatik olarak oluşturulan bir güvenlik duvarı kuralı |

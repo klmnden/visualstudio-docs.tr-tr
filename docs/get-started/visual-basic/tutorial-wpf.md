@@ -4,6 +4,7 @@ description: Visual Basic'te Windows Presentation Foundation (WPF) UI çerçeves
 ms.custom: seodec18, get-started
 ms.date: 03/14/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +14,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 26808d1f7bb2e140ee3d70a8d8917e0e31dc7f4b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324259"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515395"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Öğretici: Visual Basic ile basit uygulama oluşturma
 
 Bu öğreticiyi izleyerek, çoğu araç, iletişim kutuları ve Visual Studio ile uygulamalar geliştirirken kullanabileceğiniz tasarımcıları sahibi olacaksınız. Bir "Hello, World" uygulaması oluşturacak, kullanıcı arabirimini tasarlayacak, kod ekleyin ve tümleşik geliştirme ortamında çalışma hakkında bilgi edinirken, hatalarını ayıklama ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
+
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>IDE'yi yapılandırma
@@ -55,35 +61,36 @@ Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan 
 
 Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.
 
+::: moniker range="vs-2017"
+
 1. Yeni bir proje oluşturun. Menü çubuğunda, seçin **dosya** > **yeni** > **proje**.
 
-     ::: moniker range="vs-2017"
      ![Menü çubuğunda, dosya, yeni proje](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     ![Menü çubuğunda, dosya, yeni proje](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
 2. İçinde **yeni proje** iletişim kutusunda **yüklü** > **Visual Basic** > **Windows Masaüstü** Kategori tıklayın ve ardından **WPF uygulaması (.NET Framework)** şablonu. Projeyi adlandırın **HelloWPFApp**seçip **Tamam**.
 
      ![Visual Studio yeni proje iletişim kutusunda WPF uygulaması şablonu](media/exploreide-newproject-vb.png)
+
+HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
+
+![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
-::: moniker range=">=vs-2019"
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
 2. Üzerinde **yeni bir proje oluşturma** ekranında, "WPF" için arama ve seçme **WPF uygulaması (.NET Framework)** ve ardından **sonraki**.
 
    ![Visual Studio yeni proje iletişim kutusunda WPF uygulaması şablonu](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
 3. Sonraki ekranda, projeye bir ad verin. **HelloWPFApp**ve **Oluştur**.
-::: moniker-end
 
 HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
 
-::: moniker range="vs-2017"
-![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
 ![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
 
 > [!NOTE]

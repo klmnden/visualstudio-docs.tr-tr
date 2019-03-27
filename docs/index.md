@@ -864,7 +864,7 @@ ASP.NET Core Web uygulaması</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>JavaScript ile Mobil Geliştirme</h3>
-                                                    <p>İOS, Android veya Windows Apache Cordova çerçevesini kullanarak platformlar arası uygulamalar oluşturun.</p>
+                                                    <p>(Visual Studio 2017 ve yalnızca Visual Studio 2015) İOS, Android veya Windows Apache Cordova çerçevesini kullanarak platformlar arası uygulamalar oluşturun.</p>
                                                 </div>
                                             </div>
                                         </div>

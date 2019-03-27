@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ceb871dfc8c6c5a07a0a176b8344944edacd893
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 659f220936bd1a6273a27d63642534955a48c7aa
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325311"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515268"
 ---
 # <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
@@ -51,7 +51,7 @@ Visual Studio 2017 ile yan yana Visual Studio'nun önceki sürümlerini çalış
 
 ## <a name="step-2---download-visual-studio"></a>Adım 2 - Visual Studio indirme
 
-Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için aşağıdaki düğmeye tıklayın, Visual Studio 2017'ye tıklayın, istediğiniz sürümü seçin **Kaydet**ve ardından **Klasör Aç**.
+Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için aşağıdaki düğmeyi seçin, seçmek istediğiniz Visual Studio 2017 sürümünü **Kaydet**ve ardından **Klasör Aç**.
 
  > [!div class="button"]
  > [Visual Studio 2017 İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
@@ -67,9 +67,9 @@ Ardından, Visual Studio Yükleyicisi'ni yüklemek için önyükleyici dosyasın
    * **vs_professional.exe** Visual Studio Professional
    * **vs_community.exe** Visual Studio Community için  <br><br>
 
-   Bir kullanıcı hesabı denetimi bildirim alırsanız tıklayın **Evet**.
+   Bir kullanıcı hesabı denetimi bildirim alırsanız seçin **Evet**.
 
-2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). **Devam**'a tıklayın.
+2. Microsoft onaylamak için isteriz [lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ve Microsoft [gizlilik bildirimi](https://privacy.microsoft.com/privacystatement). Seçin **devam**.
 
    ![Lisans koşullarını ve gizlilik bildirimini](media/vs2017-privacy-and-license-terms.PNG "Microsoft lisans koşulları ve gizlilik bildirimi")
 
@@ -83,24 +83,24 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
      Örneğin, ".NET masaüstü geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
-2. İstediğiniz workload(s) seçtikten sonra tıklayın **yükleme**.
+2. İstediğiniz workload(s) seçtikten sonra seçin **yükleme**.
 
     Ardından, durum ekranları, Visual Studio yüklemenizin ilerleme durumunu gösteren görünür.
 
-3. Yeni iş yükleri ve bileşenler yüklendikten sonra tıklayın **başlatma**.
+3. Yeni iş yükleri ve bileşenler yüklendikten sonra seçin **başlatma**.
 
 > [!TIP]
 > Yüklemeden sonra herhangi bir zamanda iş yükleri veya başlangıçta yüklenmedi bileşenleri yükleyebilirsiniz. Visual Studio'nun varsa **Araçları** > **araçları ve özellikleri Al...**  Visual Studio yükleyicisi açılır. Veya açık **Visual Studio yükleyicisi** Başlat menüsünden. Buradan yükleyin ve ardından istediğiniz bileşenleri ve iş yüklerini seçebileceğiniz **Değiştir**.
 
 ## <a name="step-5---select-individual-components-optional"></a>Adım 5 - tek bileşen seçin (isteğe bağlı)
 
-Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliği kullanmayı istemiyorsanız, tek tek bileşenler yükleyerek bunu yapabilirsiniz. Tek tek bileşenleri seçmek için tıklatın **tek tek bileşenler** seçeneğini Visual Studio Yükleyicisi'nden, neleri istediğiniz ve daha sonra izleyin seçin yönergeleri.
+Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliği kullanmayı istemiyorsanız, tek tek bileşenler yükleyerek bunu yapabilirsiniz. Tek tek bileşenleri seçmek için Seç **tek tek bileşenler** seçeneğini Visual Studio Yükleyicisi'nden, neleri istediğiniz ve daha sonra izleyin seçin yönergeleri.
 
   ![Visual Studio 2017 - tek tek bileşenleri yükle](media/vs2017-components.PNG "tek tek bileşenler Visual Studio'yu yükleyin")
 
 ## <a name="step-6---install-language-packs-optional"></a>6. adım - yükleme dil paketleri (isteğe bağlı)
 
-Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio 2017 bir dilde yüklemek için tıklayın **dil paketlerini** seçeneğini Visual Studio Yükleyicisi'nden ve yönergeleri izleyin.
+Varsayılan olarak, yükleyici programı ilk kez çalıştığında işletim sisteminin dilini eşleştirmeye çalışır. Visual Studio 2017 bir dilde yüklemek için seçin **dil paketlerini** seçeneğini Visual Studio Yükleyicisi'nden ve yönergeleri izleyin.
 
   ![Visual Studio 2017 - yükleme dil paketlerini](media/vs2017-languages.PNG "Visual Studio'yu yükleyin dil paketleri")
 
@@ -118,15 +118,34 @@ Daha fazla bilgi için [Visual Studio yükleme konumlarını değiştirme](chang
 
 ## <a name="step-8---start-developing"></a>8. adım - geliştirmeye başlayın
 
-1. Visual Studio yüklemesi tamamlandıktan sonra tıklayın **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
+::: moniker range="vs-2017"
 
-2. Tıklayın **dosya**ve ardından **yeni proje**.
+1. Visual Studio yüklemesi tamamlandıktan sonra seçin **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
+
+2. Seçin **dosya**ve ardından **yeni proje**.
 
 3. Bir proje türü seçin.
 
-   Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), tıklayın **yüklü**, genişletme **Visual C++** ve sonra oluşturmak istediğiniz C++ proje türü seçin.
+   Örneğin, [bir C++ uygulaması derleme](../ide/getting-started-with-cpp-in-visual-studio.md), seçin **yüklü**, genişletme **Visual C++** ve sonra oluşturmak istediğiniz C++ proje türü seçin.
 
-   İçin [yapı bir C# uygulama](../get-started/csharp/tutorial-wpf.md), tıklayın **yüklü**, genişletme **Visual C#** ve ardından C# proje derlemek istediğiniz türü.
+   İçin [yapı bir C# uygulama](../get-started/csharp/tutorial-wpf.md), seçin **yüklü**, genişletme **Visual C#** ve ardından C# proje derlemek istediğiniz türü.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio yüklemesi tamamlandıktan sonra seçin **başlatma** Visual Studio ile geliştirmeye başlamak için düğme.
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+1. Arama kutusuna şablonlarının bir listesini görmek için oluşturmak istediğiniz uygulamanın türüne girin. (Örneğin, *WFP*.)
+
+  > [!TIP]
+  > Aramanızı belirli bir programlama dili kullanarak filtreleyebilirsiniz **dil** aşağı açılan listesi. Kullanarak filtreleyebilirsiniz **Platform** listesi ve **proje türü** listesi. 
+
+1. Yeni projeniz Visual Studio açar ve kodu hazırsınız!
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

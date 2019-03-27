@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355623"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515213"
 ---
 # <a name="msbuild-properties"></a>MSBuild özellikleri
 Özellikler, yapıları yapılandırmak için kullanılabilen ad-değer çiftleridir. Özellikler, değerlerin görevlere geçirilmesinde, koşulların değerlendirilmesinde ve proje dosyası boyunca başvurulacak olan değerlerin depolanmasında yararlıdır.
@@ -59,7 +59,7 @@ ms.locfileid: "58355623"
  Daha fazla bilgi için [nasıl yapılır: Derlemede ortam değişkenlerini kullanma](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Kayıt defteri özellikleri
- Aşağıdaki söz dizimini kullanarak sistem kayıt defteri değerlerini okuyabilirsiniz burada `Hive` kayıt defteri kovanı olduğu (örneğin, **HKEY_LOCAL_MACHINE**), `Key` anahtar adı `SubKey` alt anahtar adı ve `Value`alt değeridir.
+ Aşağıdaki söz dizimini kullanarak sistem kayıt defteri değerlerini okuyabilirsiniz burada `Hive` kayıt defteri kovanı olduğu (örneğin, **HKEY_LOCAL_MACHINE**), `MyKey` anahtar adı `MySubKey` alt anahtar adı ve `Value`alt değeridir.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
