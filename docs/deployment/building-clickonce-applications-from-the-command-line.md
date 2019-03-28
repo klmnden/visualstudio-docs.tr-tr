@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636963"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567847"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Komut satırından ClickOnce uygulamalarını derleme
 İçinde [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], tümleşik geliştirme ortamında (IDE) oluşturulmamış olsa bile, komut satırından projeleri oluşturabilirsiniz. Aslında, ile oluşturulmuş bir projeyi yeniden oluşturabilirsiniz [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] yalnızca olan başka bir bilgisayara [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] yüklü. Bu, otomatik bir işlem kullanılarak yapı oluşturmanızı sağlar, örneğin, merkezi bir yapı içinde Laboratuvar veya kullanarak, proje oluşturma kapsamı dışında teknikleri Gelişmiş.
@@ -41,21 +41,21 @@ ms.locfileid: "56636963"
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Oluşturma ve bir ClickOnce projeyi yayımlama
 
-1. Tıklayın **yeni proje** gelen **dosya** menüsü. **Yeni Proje** iletişim kutusu görünür.
+1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
-2. Seçin **Windows uygulama** ve adlandırın `CmdLineDemo`.
+    Seçin **Windows masaüstü uygulaması** Projeyi adlandırın ve proje şablonu `CmdLineDemo`.
 
-3. Gelen **derleme** menüsünde tıklatın **Yayımla** komutu.
+1. Gelen **derleme** menüsünde tıklatın **Yayımla** komutu.
 
     Bu adım projeyi oluşturmak için düzgün yapılandırıldığını sağlar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama dağıtımı.
 
     Yayınla Sihirbazı görüntülenir.
 
-4. Yayımlama Sihirbazı'nda tıklatın **son**.
+1. Yayımlama Sihirbazı'nda tıklatın **son**.
 
     Visual Studio oluşturur ve adlı varsayılan Web sayfasını görüntüler *Publish.htm*.
 
-5. Projenizi kaydedin ve onu depolandığı klasör konumunu not edin.
+1. Projenizi kaydedin ve onu depolandığı klasör konumunu not edin.
 
    Yukarıdaki adımları oluşturma bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ilk kez yayımlanan bir proje. Artık derleme IDE dışında yeniden oluşturabilirsiniz.
 
@@ -71,7 +71,7 @@ ms.locfileid: "56636963"
 
     Bu adım isteğe bağlıdır, ancak yeni dosyalar tüm komut satırı derleme tarafından üretilen sağlar.
 
-5. Türü `msbuild /target:publish`
+5. `msbuild /target:publish`yazın.
 
    Yukarıdaki adımları tam üretecektir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projenizin adlı bir alt uygulama dağıtımı **Yayımla**. *CmdLineDemo.application* olduğu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtım bildirimi. Klasör *CmdLineDemo_1.0.0.0* dosyaları içeren *CmdLineDemo.exe.manifest* ve *dosyalarını*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bildirimi. *Setup.exe* yükleyecek şekilde yapılandırılır ve varsayılan önyükleyici [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. DotNetFX klasörü için yeniden dağıtılabilir dosyaları içeren [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Web üzerinden ya da UNC veya CD/DVD aracılığıyla uygulamanızı dağıtmak için gereken dosya kümesinin tamamını budur.
 

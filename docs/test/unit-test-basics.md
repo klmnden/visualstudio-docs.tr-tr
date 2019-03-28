@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 84d137eea1107f4e3ce37ab013ed6770b8d93d11
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416376"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58568016"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -78,7 +78,7 @@ Biz bazı koda sahip olduğunuza göre bunu test etmek için zamanı geldi.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Birim test projesi oluşturmak ve test yöntemleri
 
-Genellikle, kod birim testi saptamalar ve birim testi projesi oluşturmak hızlı olur. Veya, gereksinimlerinize bağlı olarak el ile testleri ve birim testi projesi oluşturmak tercih edebilirsiniz.
+Genellikle, kod birim testi saptamalar ve birim testi projesi oluşturmak hızlı olur. Veya, gereksinimlerinize bağlı olarak el ile testleri ve birim testi projesi oluşturmak tercih edebilirsiniz. 3 bir taraf framework ile birim testleri oluşturmak istiyorsanız bu uzantılar yüklü biri gerekir: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) veya [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Birim testi projesi oluşturma ve birim testi saptamaları
 

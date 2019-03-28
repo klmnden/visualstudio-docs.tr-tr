@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 13818035d48c95fb78a841d41459ea2b48eb8630
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983461"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567821"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Visual Studio'da FxCop Çözümleyicileri yükleyin
 
@@ -43,12 +43,13 @@ Visual Studio sürümünüz için yüklenecek FxCop Çözümleyicileri paketini 
 
 | Visual Studio sürümü | FxCop Çözümleyicisi Paket sürümü |
 | - | - |
-| Visual Studio 2017 sürüm 15.5 ve üzeri | 2.6.3, örneğin https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3 |
-| Visual Studio 2017 sürüm 15.3 için 15.4 | Örneğin, 2.3.0-Beta1 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
-| Visual Studio 2017 sürüm 15.0 için 15.2 | Örneğin, 2.0.0-Beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
-| Visual Studio 2015 güncelleştirme 2 ve 3 | Örneğin, sürüm 1.2.0-beta2 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
-| Visual Studio 2015 Güncelleştirme 1 | Örneğin, 1.1.0 sürümü https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1. |
-| Visual Studio 2015 RTW | Örneğin, 1.0.1 sürümü https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
+| Visual Studio 2017 sürüm 15,8 ve üzeri | [2.9.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.0) |
+| Visual Studio 2017 sürüm 15.5 için 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
+| Visual Studio 2017 sürüm 15.3 için 15.4 | [2.3.0-Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
+| Visual Studio 2017 sürüm 15.0 için 15.2 | [2.0.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 güncelleştirme 2 ve 3 | [1.2.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2015 Güncelleştirme 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
+| Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>FxCop Çözümleyicileri bir VSIX yüklemek için
 

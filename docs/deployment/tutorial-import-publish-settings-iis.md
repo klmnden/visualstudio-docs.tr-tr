@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: b6b0c4f870de455238c02f5dbecbc0c5d56dfbc9
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983916"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567834"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>İçeri aktararak IIS uygulama yayımlama Visual Studio'da yayımlama ayarları
 
@@ -56,9 +56,9 @@ Yayımlama ayarları dosyası (*\*.publishsettings*) farklı bir yayımlama prof
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Visual Studio'da yeni bir ASP.NET projesi oluşturma
 
-1. Visual Studio çalıştıran bilgisayarda **dosya** > **yeni proje**.
+1. Visual Studio çalıştıran bilgisayarda, yeni bir proje oluşturun.
 
-1. Altında **Visual C#**  veya **Visual Basic**, seçin **Web**, Orta bölmede seçin **ASP.NET Web uygulaması (.NET Framework)** veya (için C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
+    Doğru şablonu seçin. Bu örnekte seçin ya da **ASP.NET Web uygulaması (.NET Framework)** veya (için C# yalnızca) **ASP.NET Core Web uygulaması**ve ardından **Tamam**.
 
     Belirtilen proje şablonları görmüyorsanız tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Yükleme **ASP.NET ve web geliştirme** iş yükü.
 
