@@ -1,7 +1,7 @@
 # [Mac için Visual Studio](index.yml)
-# [IDE Turu](/visualstudio/mac/ide-tour/)
+# [IDE Turu](ide-tour.md)
 
-# [Yükleme](/visualstudio/mac/installation/)
+# [Yükleme](installation.md)
 ## [Bir güvenlik duvarı veya ara sunucunun arkasına yükleme ve burada kullanma](install-behind-a-firewall-or-proxy-server.md)
 ## [Bir önizleme sürümünü yükleme](install-preview.md)
 ## [Güncelleştir](update.md)
