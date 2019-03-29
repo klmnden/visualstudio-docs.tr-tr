@@ -68,6 +68,7 @@
 #### [Abonelik Arama](search-license.md)
 #### [Abonelikleri Dışarı Aktarma](exporting-subscriptions.md)
 #### [Fazla Yüklemeler](handle-overclaimed-license.md)
+#### [En Fazla Kullanım](maximum-usage.md)
 #### [Süresi Dolan Abonelikler](handle-expired-license.md)
 #### [Kişisel E-posta ile Oturum Açan Aboneler](personal-email-sign-ins.md)
 ## Visual Studio Abonelikleri Alma
