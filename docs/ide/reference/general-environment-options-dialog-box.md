@@ -1,6 +1,6 @@
 ---
 title: Genel, Ortam, Seçenekler İletişim Kutusu
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710844"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647277"
 ---
-# <a name="general-environment-options-dialog-box"></a>Genel, Ortam, Seçenekler İletişim Kutusu
+# <a name="options-dialog-box-environment--general"></a>Seçenekler iletişim kutusu: Ortam \> genel
 
 Renk temaları, durum çubuğu ayarları ve tümleşik geliştirme ortamı (IDE) için diğer seçenekler arasında dosya uzantısı ilişkilendirmelerini değiştirmek için bu sayfayı kullanın. Erişebileceğiniz **seçenekleri** iletişim kutusunu açarak **Araçları** menüsünde, seçme **seçenekleri**açarak **ortam** klasörünü ve ardından seçme **genel** sayfası. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** onay kutusuna **seçenekleri** iletişim kutusu.
 
@@ -39,13 +39,21 @@ Renk temaları, durum çubuğu ayarları ve tümleşik geliştirme ortamı (IDE)
 
 **Renk teması**
 
-Seçin **mavi**, **ışık** veya **koyu** IDE renk teması.
+Seçin **mavi**, **ışık**, **koyu**, veya **mavi (ekstra kontrast)** IDE renk teması.
 
-Ek önceden tanımlı Temalar yükleyebilir ve özel temalar, indirme ve yükleme oluşturma **Visual Studio Color Theme Editor** gelen [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları renk teması liste kutusunda görünür.
+Ek önceden tanımlı Temalar yükleyebilir ve özel temalar indirip yükleyerek oluşturma **Visual Studio Color Theme Editor** gelen [Visual Studio Market](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Bu aracı yükledikten sonra ek renk temaları görünür **renk teması** liste kutusu.
 
-**Menü çubuğunda başlık büyük/küçük harf uygulayın**
+**İlk harfler büyük menü çubuğuna stilini Uygula**
 
-Menüler bulunduğunuz **başlık büyük/küçük harf** varsayılan olarak. İşaretini kaldırın ayarlamak için bu seçeneği **tümü büyük harf**.
+Menüleri, ilk harfler büyük stilini varsayılan olarak kullanın. Tüm büyük harfli stil oluşturma yerine kullanmak için bu seçeneği temizleyin.
+
+::: moniker range=">=vs-2019"
+
+**İşleme farklı piksel densities ekranlar için en iyi duruma getirme (yeniden başlatma gerektirir)**
+
+Bu seçeneği etkinleştirir veya İzleyici başına nokta / inç (DPI) tanıma devre dışı bırakır (veya *PMA*). Visual Studio kullanıcı arabirimi, PMA etkinleştirildiğinde, canlı bir izleyici görünen ölçek faktörü ve DPI yapılandırma, birden fazla monitöre dahil olmak üzere görünür. Windows ihtiyacınız PMA etkinleştirmek için 10 Nisan 2018 güncelleştirmesi veya üstü ve .NET Framework 4,8 veya üzeri. (Bu iki Önkoşullar karşılanmadı varsa bu seçeneği gri renkte görünür.)
+
+::: moniker-end
 
 **İstemci performansına dayalı görsel deneyimi otomatik olarak ayarla**
 
@@ -61,13 +69,13 @@ Yazılım hızlandırma yerine varsa donanım grafik hızlandırması kullanır.
 
 ## <a name="other"></a>Diğer
 
-**Pencere menüde görüntülenen öğeler**
+**Pencere menüsünde gösterilecek öğeler**
 
-Windows listesinde görünen pencerelerinin sayısını özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayı 10'dur.
+Windows listesinde görünen pencerelerinin sayısını özelleştirir **penceresi** menüsü. 1 ile 24 arasında bir sayı girin. Varsayılan değer 10'dur.
 
 **Son kullanılan listesinde gösterilen öğeler**
 
-En son kullanılan projeler ve görünen dosyaları sayısı özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı yazın. Varsayılan olarak, sayı 10'dur. Alma son kullanılan projeler ve dosyalar için kolay bir yolu budur.
+En son kullanılan projeler ve görünen dosyaları sayısı özelleştirir **dosya** menüsü. 1 ile 24 arasında bir sayı girin. Varsayılan değer 10'dur. Alma son kullanılan projeler ve dosyalar için kolay bir yolu budur.
 
 **Durum çubuğunu göster**
 

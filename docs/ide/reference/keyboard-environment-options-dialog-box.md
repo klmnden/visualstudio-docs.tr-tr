@@ -10,16 +10,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934646"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647121"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Klavye, Ortam, Seçenekler İletişim Kutusu
+# <a name="options-dialog-box-environment--keyboard"></a>Seçenekler iletişim kutusu: Ortam \> klavye
+
 Klavye eşleşmeleri ayarlamak için bu sayfayı kullanın. Eşlemeleri hakkında daha fazla bilgi için bkz. [tanımlama ve özelleştirme klavye kısayolları](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Ortam Seçenekleri İletişim Kutusu](../../ide/reference/environment-options-dialog-box.md)

@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700021"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647290"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Web Tarayıcısı, Ortam, Seçenekler İletişim Kutusu
+# <a name="options-dialog-box-environment--web-browser"></a>Seçenekler iletişim kutusu: Ortam \> Web tarayıcısı
 
 İç Web tarayıcısı ve Internet Explorer seçeneklerini ayarlar. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **ortam** klasörünü açın ve seçin **Web tarayıcısı**.
 
@@ -50,11 +50,11 @@ IDE Web tarayıcısı açtığınızda görüntülenen sayfa ayarlar.
 
 Düzenleyicisi'ni seçtiğinizde, bir Web sayfası açmak için kullanılan ayarlar **kaynağı görüntüle** iç Web tarayıcısından sayfasında.
 
--   **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [Düzenleyicisi](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Kaynak Düzenleyicisi** kaynakta görüntülemek için seçin [Düzenleyicisi](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.
+- **HTML Düzenleyicisi** kaynakta görüntülemek için seçin [HTML Tasarımcısı](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). İki görünüm birinde Web sayfasını düzenlemek için bu seçimi kullanın: Tasarım görünümü veya standart metin tabanlı kaynak görünümü.
 
--   **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.
+- **Dış düzenleyici** kaynak başka bir düzenleyicide görüntülemek için seçin. Seçtiğiniz herhangi bir düzenleyiciye Örneğin, Notepad.exe yolunu belirtin.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer Options
 

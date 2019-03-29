@@ -2,18 +2,20 @@
 title: '1. Adım: Proje oluşturma ve formunuza tablo ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940665"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647498"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza tablo ekleme
 
@@ -21,7 +23,23 @@ Eşleştirme oyunu hazırlarken ilk adım projeyi oluşturmak ve formunuza bir t
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Bir proje oluşturmak ve formunuza bir tablo eklemek için
 
+::: moniker range="vs-2017"
+
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+1. Arama kutusuna "WPF" öğesini **WPF uygulaması (.NET Framework)** ve ardından **sonraki**.
+
+   (Görmüyorsanız **WPF uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.)
+
+1. Projeye bir ad verin **oyunu**ve **oluştur**
+
+::: moniker-end
 
 2. Visual Studio Express kullanmıyorsanız, programlama dili seçmeniz gerekir. Gelen **yüklü şablonlar** listesinde **Visual C#** veya **Visual Basic**.
 

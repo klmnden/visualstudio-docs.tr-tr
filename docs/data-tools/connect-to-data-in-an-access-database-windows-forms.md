@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227650"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647355"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) bir erişim veritabanındaki verilere bağlanma
 
@@ -95,7 +95,7 @@ Aşağıdaki yordamı kullanarak Access 2013, Office 365, Access 2010 veya Acces
 
 8. İçinde **veritabanı dosyası adı**, adını ve yolunu belirtin *.mdb* bağlanın ve ardından istediğiniz dosyasını **Tamam**.
 
-   ![Bağlantı Access veritabanı dosyası ekleme](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![Bağlantı Access veritabanı dosyası ekleme](../data-tools/media/add-connection-access-db.png)
 
 9. Seçin **sonraki** üzerinde **veri bağlantınızı seçin** sayfası.
 

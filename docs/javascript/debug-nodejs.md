@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1b7d9513bcb86dfdff814adddb35bdaf741ebe02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223396"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647433"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio JavaScript veya TypeScript bir uygulamada hata ayıklama
 
@@ -60,6 +60,11 @@ Visual Studio ve istemci tarafı kod kesme noktaları isabet hata ayıklayıcıy
     `chrome.exe --remote-debugging-port=9222`
 
     Bu komut, hata ayıklama etkin olan Chrome başlatır.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Ayrıca `--remote-debugging-port` seçerek tarayıcı başlatma bayrağı **şununla Gözat...**  > öğesinden **hata ayıklama** ardından araç çubuğunda **Ekle**ve ardından bayrağı ayarı **bağımsız değişkenleri** alan. Tarayıcı için farklı bir kolay ad gibi kullanın **Chrome ile hata ayıklama**. Ayrıntılar için bkz [sürüm notları](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Visual Studio'ya geçiş yapın ve kaynak kodunuzda bir kesme noktası ayarlayın. (Kesme noktaları, gibi veren kod satırında kesme noktası ayarlamak bir `return` deyimi veya bir `var` bildirimi).
 

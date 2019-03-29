@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d137eea1107f4e3ce37ab013ed6770b8d93d11
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568016"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647420"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -88,7 +88,7 @@ Genellikle, kod birim testi saptamalar ve birim testi projesi oluşturmak hızl�
 
 2. Tıklayın **Tamam** birim testleri oluşturma veya oluşturma ve birim testi projesi ve birim testlerini adı için kullanılan değerleri değiştirmek için Varsayılanları kabul etmek için. Varsayılan olarak, birim test yöntemlerini için eklenen kodu seçebilirsiniz.
 
-    ![Sağ&#45;Düzenleyicisi'nde ve birim testleri Oluştur seçin](../test/media/createunittestsdialog.png)
+    ![Visual Studio'da birim testleri iletişim kutusu oluşturma](../test/media/create-unit-tests.png)
 
 3. Birim test Saplamaları sınıfındaki tüm yöntemler için yeni bir birim test projesi oluşturulur.
 

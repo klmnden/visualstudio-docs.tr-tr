@@ -2,7 +2,7 @@
 title: Visual Studio kullanarak bir Azure sanal makinesinde
 titleSuffix: ''
 description: Bir Azure sanal makinesinde Visual Studio kullanmayı öğrenin
-ms.date: 03/25/2019
+ms.date: 03/28/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: bb320eebf18274c791f028e4c2bc59eddc255ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476026"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647303"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
 
@@ -36,8 +36,8 @@ En son ana sürümleri, Visual Studio 2017 ve Visual Studio 2015 için görünt�
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: Önizleme (RC3)                      |           Enterprise         |    Sürüm 16.0.0 RC3    |
-| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.9      |
+|       Visual Studio 2019: Önizleme (RC4)                      |           Enterprise         |    Sürüm 16.0.0 RC4'ü    |
+| Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.22     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Yok.             | (Bakım için süresi doldu)  |

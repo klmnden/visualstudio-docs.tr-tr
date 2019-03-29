@@ -1,6 +1,6 @@
 ---
 title: Görev Listesi, Ortam, Seçenekler İletişim Kutusu
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
@@ -22,66 +22,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda16e5939f34cbea29eb92e08ee7325b49301b5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912176"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647225"
 ---
-# <a name="task-list-environment-options-dialog-box"></a>Görev Listesi, Ortam, Seçenekler İletişim Kutusu
+# <a name="options-dialog-box-environment--task-list"></a>Seçenekler iletişim kutusu: Ortam \> görev listesi
 
 Bu seçenekler sayfası, ekleme, silme ve oluşturma yorum belirteçleri değiştirme sağlar **görev listesi** anımsatıcılar. Bu ayarları görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **ortam** klasöründe ve **görev listesi**.
 
-## <a name="task-list-options"></a>Görev listesi seçenekleri
- Görevlerin silinmesini onaylayın
+## <a name="task-list-tokens"></a>Görev listesi belirteçleri
 
- Bir kullanıcı görevini gelen silindiğinde seçili olduğunda, bir ileti kutusu görüntülenir **görev listesi**, silmeyi onaylamak etmenize imkan sağlar. Bu seçenek varsayılan olarak seçilidir.
+Metni başlar uygulamasından bir belirteç ile kodunuza açıklama eklediğinizde **belirteci listesi**, **görev listesi** dosyası düzenleme için açılan her yeni bir girdi olarak yorumunuzu görüntüler. ' A tıklayın bir **görev listesi** doğrudan kodunuza yorum satırı atlamak için giriş. Daha fazla bilgi için [görev listesini kullanma](../../ide/using-the-task-list.md).
 
-> [!NOTE]
-> Bir görev açıklamasının silmek için bir açıklama bulmak için bağlantıyı kullanın ve ardından kodunuzdan kaldırır.
-
-
- Yalnızca dosya adını göster
-
- Seçili olduğunda, **dosya** sütununun **görev listesi** yalnızca düzenlenmesi için dosya adlarını görüntüler kendi tam yolu.
-
-## <a name="tokens"></a>Belirteçler
- Metni başlar uygulamasından bir belirteç ile kodunuza açıklama eklediğinizde **belirteç listesi**, **görev listesi** dosyası düzenleme için açılan her yeni bir girdi olarak yorumunuzu görüntüler. Bu tıklayabilirsiniz **görev listesi** doğrudan kodunuza yorum satırı atlamak için giriş. Daha fazla bilgi için [görev listesini kullanma](../../ide/using-the-task-list.md).
-
- Belirteç Listesi
-
- Belirteçlerin listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Yorum belirtkeleri büyük/küçük harfe duyarlı C# ve Visual C++ ancak Visual Basic içinde değil.
+Belirteç List\
+Belirteçlerin listesini görüntüler ve özel belirteçler ekleyip olanak tanır. Yorum belirtkeleri büyük/küçük harfe duyarlı C# ve C++ ancak Visual Basic içinde değil.
 
 > [!NOTE]
-> Tam olarak gösterildiği gibi istenen belirteç yazmazsanız **belirteç listesi**, yorum görev içinde görüntülenmeyecek **görev listesi**.
+> Belirteç listesi içinde göründüğü gibi istenen belirteç yazmayın, yorum görev içinde görüntülenmez **görev listesi**.
 
+Priority\
+Seçili olan belirteci (düşük, normal veya yüksek) kullanan görevler önceliğini ayarlar. Bu belirteç ile başlayan Görev açıklamalarını otomatik olarak belirlenen öncelik atanmış **görev listesi**.
 
- Öncelik
+Name\
+Belirteç dizesini buraya girin ve ardından **Ekle** dize belirteci listeye eklemek için.
 
- Seçili olan belirteci kullanan görevler önceliğini ayarlar. Bu belirteç ile başlayan Görev açıklamalarını otomatik olarak belirlenen öncelik atanmış **görev listesi**.
+Add\
+Yeni bir girerken etkin **adı**. Girilen değerleri kullanarak yeni bir belirteç dizesi eklemek için tıklatın **adı** ve **öncelik** alanları.
 
- Ad
+Delete\
+Seçili olan belirteci belirteci listeden silmek için tıklayın. Varsayılan yorum belirteci nelze odstranit.
 
- Belirteç dizesini girin. Böylece **Ekle** düğmesi. Üzerinde **Ekle**, bu dize yer aldığı **belirteç listesi**, ve bu ad ile başlayan Açıklamalar içinde görüntülenecektir **görev listesi**.
-
- Ekle
-
- Yeni bir girerken etkin **adı**. Girilen değerleri kullanarak yeni bir belirteç dizesi eklemek için tıklatın **adı** ve **öncelik** alanları.
-
- Sil
-
- Seçili belirteçten silmek için tıklayın **belirteç listesi**. Varsayılan yorum belirteci nelze odstranit.
-
- Değiştir
-
- Girilen değerleri kullanarak mevcut bir belirteç değişiklik yapmak için tıklatın **adı** ve **öncelik** alanları.
+Change\
+Girilen değerleri kullanarak mevcut bir belirteç değişiklik yapmak için tıklatın **adı** ve **öncelik** alanları.
 
 > [!NOTE]
 > Yeniden adlandırma veya varsayılan yorum belirteci silin, ancak öncelik düzeyini değiştirebilirsiniz.
 
-
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Görev Listesini Kullanma](../../ide/using-the-task-list.md)
 - [Kodda Yer İşaretleri Ayarlama](../../ide/setting-bookmarks-in-code.md)

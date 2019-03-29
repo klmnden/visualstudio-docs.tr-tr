@@ -2,6 +2,7 @@
 title: İlk Konsol uygulamanızı Visual Basic ile oluşturma
 description: Visual Basic, adım adım ile Visual Studio'da basit bir Hello World konsol uygulaması oluşturmayı öğrenin.
 ms.custom: seodec18
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -13,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b8f57df9f946987ae1378f6295526265952351c8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415843"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647173"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Hızlı Başlangıç: Visual Basic ile Visual Studio'da ilk Konsol uygulamanızı oluşturma
 
@@ -90,7 +91,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *WhatIsYourName* içinde **proje adı** kutusu. Ardından, **Oluştur**.
 
-   !['yeni projenizi yapılandırın' penceresinde 'WhatIsYourName' projenizi adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+   !['yeni projenizi yapılandırın' penceresinde 'WhatIsYourName' projenizi adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
    Yeni projeniz Visual Studio açılır.
 

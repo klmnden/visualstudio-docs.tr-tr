@@ -2,18 +2,20 @@
 title: '1. Adım: Proje oluşturma ve formunuza etiketler ekleme'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917759"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647407"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>1. Adım: Proje oluşturma ve formunuza etiketler ekleme
 
@@ -24,23 +26,39 @@ Bu sınavı geliştirmede ilk adım olarak projeyi oluşturun ve bir forma etike
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Bir proje oluşturun ve bir formun özelliklerini ayarlamak için
 
+::: moniker range="vs-2017"
+
 1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2.  İçinde **yüklü şablonlar** listesinde **C#** veya **Visual Basic**.
+1.  İçinde **yüklü şablonlar** listesinde **C#** veya **Visual Basic**.
 
-3.  Şablonlar listesinde seçin **Windows Forms uygulaması** şablon adlandırın **matematik sınavı**ve ardından **Tamam** düğmesi.
+1.  Şablonlar listesinde seçin **Windows Forms uygulaması** şablon adlandırın **MathQuiz**ve ardından **Tamam** düğmesi.
 
      Adlı bir form *Form1.cs* veya *Form1.vb* , seçtiğiniz programlama diline bağlı olarak görünür.
 
-4.  Formu seçin ve ardından değiştirmek, **metin** özelliğini **matematik sınavı**.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Pencerenin başlangıç seçin **yeni bir proje oluşturma**.
+
+1. Arama kutusuna "WPF" öğesini **WPF uygulaması (.NET Framework)** ve ardından **sonraki**.
+
+   (Görmüyorsanız **WPF uygulaması (.NET Framework)** şablon, Visual Studio yükleyicisini kullanma **.NET Masaüstü geliştirmesinden** iş yükü.)
+
+1. Projeye bir ad verin **MathQuiz**ve **oluştur**
+
+::: moniker-end
+
+1.  Formu seçin ve ardından değiştirmek, **metin** özelliğini **matematik sınavı**.
 
      **Özellikleri** penceresi formun özelliklerini içerir.
 
-5.  Formun boyutunu 500 piksel genişliğe ve 400 piksel uzunluğa ayarlayın değiştirin.
+1.  Formun boyutunu 500 piksel genişliğe ve 400 piksel uzunluğa ayarlayın değiştirin.
 
      Form tümleşik geliştirme ortamı (IDE) sol alt köşesinde doğru boyutu görünene kadar kenarlarını sürükleyerek yeniden boyutlandırabilirsiniz. Alternatif olarak, değerlerini değiştirebilirsiniz **boyutu** özelliği.
 
-6.  Değiştirin **FormBorderStyle** özelliğini **Fixed3D**, ayarlayıp **MaximizeBox** özelliğini **False**.
+1.  Değiştirin **FormBorderStyle** özelliğini **Fixed3D**, ayarlayıp **MaximizeBox** özelliğini **False**.
 
      Bu değerler, sınava girenlerin formu yeniden boyutlandırmasını engeller.
 

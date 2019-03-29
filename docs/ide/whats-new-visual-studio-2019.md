@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f0420b1ea9d9ab789be9e61e7dec3c2fdba4fa
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 35bf42ea6c6cb3dfc14594ea5e6df83b9e97c1f2
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567912"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647342"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -121,7 +121,7 @@ Farklı görüntüleme ölçek faktörlerle yapılandırılan izleyiciler kullan
 
 Visual Studio 2019'ın yayınlanmasıyla birlikte, size Visual Studio kullanan (PMA) uygulamasını İzle bilgilerinizin ilk adımları sürüyor. Biz, kullandığınız görüntü ölçek Etkenler bağımsız olarak doğru bir şekilde işlemek Visual Studio sağlayacak konusundaki temel çalışmalar yerleştirme.
 
-   ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/per-monitor-aware-dpi-scaling.png)
+   ![Visual Studio 2019 İzleyici başına kullanan (PMA) oluşturma](media/vs-2019/pma-dpi-scaling.png)
 
 Daha fazla bilgi için [daha iyi bir Visual Studio 2019 çoklu monitör deneyimiyle](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) blog gönderisi.
 

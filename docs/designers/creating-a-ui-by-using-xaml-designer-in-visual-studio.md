@@ -1,6 +1,6 @@
 ---
 title: XAML Tasarımcısı ile kullanıcı Arabirimi oluşturma
-ms.date: 11/05/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0db8071e0943f1edde2091d173e4737214233dea
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955201"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647511"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma
 
@@ -104,56 +104,9 @@ XAML Düzenleyicisi'ni alt pencereye olduğunda Bölünmüş Görünüm Çubuğu
 
 Biçimlendirme Yakınlaştırma sayesinde boyutuna **XAML** görünümü. %400 %20 değerinden yakınlaştırma yapabilirsiniz.
 
-## <a name="device-window"></a>Cihaz penceresi
+## <a name="objects-and-timeline-window"></a>Nesneler ve Zaman Çizelgesi penceresi
 
-> [!NOTE]
-> Hedef platform sürümü (`TargetPlatformVersion`) bir UWP uygulaması 10.0.16299.0 olan veya sonraki bir sürümünü **cihaz** penceresi kullanılamıyor.
-
-**Cihaz** XAML Tasarımcısı penceresinde tasarım zamanında çeşitli görünümler, görüntüler, benzetimini gerçekleştirmek ve projeniz için seçenekleri görüntüleme olanak sağlar. **Cihaz** penceresi üzerinde kullanılabilir **tasarım** XAML Tasarımcısı'nda çalışırken menüsü. İşte bu şekilde görünür:
-
-![Cihaz penceresi](../designers/media/xaml_editor_device_panel.png)
-
-Cihaz penceresindeki Seçenekler şunlardır:
-
-**Görüntüleme**
-
-Farklı görüntüleme boyutlarını ve çözünürlüklerini uygulama için belirtir.
-
-**Yönlendirme**
-
-Uygulama için farklı yönleri belirtir: **Yatay** veya **dikey**.
-
-**Edge**
-
-Uygulamanız için farklı edge hizalamaları belirtir: **Her ikisi de**, **sol**, **sağ**, veya **hiçbiri**.
-
-**Yüksek Karşıtlık**
-
-Seçili karşıltık ayarını temel alarak uygulamayı önizleyin. Dışında bir değere ayarlanırsa, bu ayar **varsayılan**, geçersiz kılmalar `RequestedTheme` özellik kümesinde *App.xaml*.
-
-**Ölçeklendirme geçersiz kıl**
-
-Açma ve kapatma belge tasarım yüzeyine içinde ölçeklendirme öykünmesini etkinleştirir. Bu bir faktörüyle ölçeğe artırmanıza olanak sağlar. Öykünme üzerinde etkinleştirmek için onay kutusunu seçin. Örneğin, ölçeklendirme, yüzde %100 ise, belge tasarım yüzeyine içinde %140 ölçeklendirin. Geçerli ölçeğe 180 ise bu seçenek devre dışıdır.
-
-**Minimum Genişlik**
-
-Minimum genişlik ayarını belirtir. Minimum genişliğini değiştirilebilir *App.xaml*.
-
-**Tema**
-
-Uygulama temasını belirtir. Örneğin, arasında geçiş bir **koyu** ve **ışık** tema.
-
-**Chrome Göster**
-
-Tasarım görünümünde uygulamanızın etrafında sanal tablet çerçeve ve kapatır. Çerçeve göstermek için onay kutusunu seçin.
-
-**Görüntülemek için Kırp**
-
-Görüntü modunu belirtir. Belge boyutunu görüntüleme boyutuna kırpmak için bu onay kutusunu seçin.
-
-## <a name="document-outline-window"></a>Belge Anahattı penceresi
-
-Belge Anahattı penceresi XAML Tasarımcısı'nda bu görevleri gerçekleştirmenize yardımcı olur:
+Nesneler ve zaman çizelgesi XAML Tasarımcısı penceresinde, bu görevleri gerçekleştirmenize yardımcı olur:
 
 - Çalışma yüzeyinde tüm öğeleri hiyerarşik yapısını görüntüleyin.
 
@@ -163,15 +116,15 @@ Belge Anahattı penceresi XAML Tasarımcısı'nda bu görevleri gerçekleştirme
 
 - Seçilen öğeler için sağ tıklama menüsünü (bağlam menüsü) kullanın. Aynı menüyü, çalışma yüzeyinde seçilen öğeleri için de kullanılabilir.
 
-Görüntülemek için **belge anahattı** penceresinde, menü çubuğundan seçin **görünümü** > **diğer Windows** > **BelgeAnahattı**.
+Görüntülenecek **nesneler ve zaman çizelgesi** penceresinde, menü çubuğundan seçin **görünümü** > **nesneler ve zaman çizelgesi**.
 
-![Belge Anahattı penceresi](../designers/media/xaml_editor_doc_outline.png)
+![Nesneler ve Zaman Çizelgesi penceresi](../designers/media/objects-and-timeline-window.png)
 
-Kullanılabilir seçenekleri bunlar **belge anahattı** penceresi:
+Kullanılabilir seçenekleri bunlar **nesneler ve zaman çizelgesi** penceresi:
 
 **Belge Anahattı**
 
-Ana görünümünde **belge anahattı** penceresi hiyerarşisini bir belgenin bir ağaç yapısında görüntüler. Farklı düzeylerde, belge inceleme ve kilitleme ve öğeleri tek veya grup gizlemek için Belge Anahattı hiyerarşik yapısını kullanabilirsiniz.
+Ana görünümünde **nesneler ve zaman çizelgesi** penceresi hiyerarşisini bir belgenin bir ağaç yapısında görüntüler. Farklı düzeylerde, belge inceleme ve kilitleme ve öğeleri tek veya grup gizlemek için Belge Anahattı hiyerarşik yapısını kullanabilirsiniz.
 
 **Göster/Gizle**
 
@@ -183,15 +136,19 @@ Kilitler veya belge ana hattı öğelere karşılık gelen çalışma yüzeyine 
 
 **Kapsamı için pageRoot Döndür**
 
-Seçeneğini en üstündeki **belge anahattı** yukarı ok simgesi gösterir, penceresinde Belge Anahattı önceki kapsama döndürür. Üst kapsama gitme yalnızca bir stil veya şablon kapsamı içinde olduğunuzda geçerlidir.
+Seçeneğini en üstündeki **nesneler ve zaman çizelgesi** yukarı ok simgesi gösterir, penceresinde Belge Anahattı önceki kapsama döndürür. Üst kapsama gitme yalnızca bir stil veya şablon kapsamı içinde olduğunuzda geçerlidir.
 
 ## <a name="properties-window"></a>Özellik penceresi
 
 **Özellikleri** penceresi denetimlerinde özellik değerlerini ayarlamanıza olanak sağlar. İşte bu şekilde görünür:
 
-![Özellik penceresi](../designers/media/xaml_editor_prop_window.png)
+![Özellik penceresi](../designers/media/xaml-designer-properties-window.png)
 
-Çeşitli seçenekler en üstündeki **özellikleri** penceresi. Seçili olan öğenin adını kullanarak değiştirebileceğiniz **adı** kutusu. Sol üst köşesinde şu anda seçilen öğeyi temsil eden bir simge yoktur. Özellikleri kategoriye veya alfabetik olarak düzenlemek için tıklayın **kategori**, **adı**, veya **kaynak** içinde **ölçütü** listesi. Bir denetim için olayların listesini görmek için tıklayın **olayları** düğmesi, bir ışık Şimşek simgesi görüntüler. Bir özellik için arama yapmak için özelliğin adını yazmaya başlayın **arama özellikleri** kutusu. **Özellikleri** yazarken aramanızla eşleşen Özellikler penceresinde görüntülenir. Bazı özellikler bir aşağı ok düğmesini seçerek gelişmiş özelliklerini ayarlamanıza olanak sağlar. Özellikleri kullanma ve olayları işleme hakkında daha fazla bilgi için bkz. [giriş denetimleri ve desenleri](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
+Çeşitli seçenekler en üstündeki **özellikleri** penceresi. Seçili olan öğenin adını kullanarak değiştirebileceğiniz **adı** kutusu. Sol üst köşesinde şu anda seçilen öğeyi temsil eden bir simge yoktur. Özellikleri kategoriye veya alfabetik olarak düzenlemek için tıklayın **kategori**, **adı**, veya **kaynak** içinde **ölçütü** listesi. Bir denetim için olayların listesini görmek için tıklayın **olayları** düğmesi, bir ışık Şimşek simgesi görüntüler.
+
+Bir özellik için aramak için arama kutusuna özelliğin adını yazmaya başlayın. **Özellikleri** yazarken aramanızla eşleşen Özellikler penceresinde görüntülenir. Bazı özellikler bir aşağı ok düğmesini seçerek gelişmiş özelliklerini ayarlamanıza olanak sağlar.
+
+Özellikleri kullanma ve olayları işleme hakkında daha fazla bilgi için bkz. [giriş denetimleri ve desenleri](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 Her bir özellik sağındaki değer bir *özelliği işaretçisi* kutusu simgesi olarak görünür. Özellik işaretçisi görünümünü veri bağlama veya özelliğine uygulanan bir kaynak olup olmadığını belirtir. Örneğin, beyaz kutu simgesi varsayılan bir değer belirtir, yerel kaynak uygulanan ve turuncu bir kutu, genellikle bir veri bağlamayı uygulanan gösterir genellikle bir siyah kutu simgesi gösterir. Özellik işaretçisi tıkladığınızda stili tanımına gidin, veri bağlama Oluşturucusu'nu açmak veya Kaynak Seçici'yi açın.
 

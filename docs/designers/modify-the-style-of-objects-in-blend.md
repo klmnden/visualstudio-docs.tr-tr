@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955316"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647459"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
 
@@ -78,13 +78,13 @@ Stil oluşturma, nesneyi seçin ve ardından **nesne** menüsünde seçin **stil
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Bir denetime stil veya şablon uygulama
 
-Bir nesneye sağ [nesneler ve zaman çizelgesi](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel) panelinde öğesini **şablonu Düzen**ve ardından **kaynağı Uygula**.
+Bir nesneye sağ [nesneler ve zaman çizelgesi](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window) penceresinde seçin **şablonu Düzen**ve ardından **kaynağı Uygula**.
 
 ![Kaynak menüsünde Uygula](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Varsayılan stil veya şablon denetiminin geri yükleme
 
-İstediğiniz denetimi seçin ve [özellikleri](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) paneli, bulun **stili** veya **şablon** özelliği. Seçin **Gelişmiş Seçenekler**ve ardından **sıfırlama** kısayol menüsünde.
+İstediğiniz denetimi seçin ve [özellikleri](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) penceresinde bulun **stili** veya **şablon** özelliği. Seçin **Gelişmiş Seçenekler**ve ardından **sıfırlama** kısayol menüsünde.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Görsel durumlar: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme
 

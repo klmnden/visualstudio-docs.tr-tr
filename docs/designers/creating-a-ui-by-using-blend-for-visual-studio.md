@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941094"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647446"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio genel bakış
 
@@ -30,11 +30,18 @@ Visual Studio için Blend yeniyseniz, çalışma alanının benzersiz özellikle
 > [!NOTE]
 > Paylaşılan tasarım özellikleri gibi çalışma yüzeyine gezmesine izin **belge anahattı** penceresinde ve **cihaz** penceresinde görmek [XAML Tasarımcısını kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Araçlar panelini turu
+## <a name="tools-panel"></a>Araçlar paneli
 
-Kullanabileceğiniz **Araçları** uygulamanızdaki nesneleri oluşturup değiştirmesi Visual Studio için blend'de paneli. Bir araç seçerek ve farenizle çalışma yüzeyi üzerinde çizim nesneleri oluşturun.
+Kullanabileceğiniz **Araçları** uygulamanızdaki nesneleri oluşturup değiştirmesi Visual Studio için blend'de paneli. **Araçları** varsa paneli görüntülenir XAML Tasarımcısı'nın sol tarafındaki bir *.xaml* dosya açık.
 
-![Araçlar paneli](../designers/media/blend5toolspanel.png)
+Bir araç seçerek ve farenizle çalışma yüzeyi üzerinde çizim nesneleri oluşturun.
+
+![Visual Studio için blend'de Araçlar paneli](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Bazı araçları **Araçları** paneli olmasına farklılıklar (A-F olarak çizimde gösterilen). Bu farklılıkların erişmek için sağ tıklayın veya tıklayın ve bir araç üzerinde tutun.
+>
+> ![Visual Studio için blend'de şekli aracı farklılıkları](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Kullanabileceğiniz **Araçları** uygulamanızdaki nesneleri oluşturup değiş
 |![Varlık araçları](../designers/media/b1_5.png)|**Varlık Araçları** erişim **varlıklar** paneli ve en son göstermek için kitaplıktan varlık kullanılır.|![Belirtme çizgisi E](../designers/media/b5_label_e.png)|**Metin denetimi**|
 |||![Belirtme çizgisi F](../designers/media/b5_label_f.png)|**Ortak Denetimler**|
 
-**Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+## <a name="assets-window"></a>Varlıklar penceresi
 
-## <a name="tour-of-the-assets-panel"></a>Varlıklar panelini turu
+**Varlıklar** penceresinde kullanılabilir tüm denetimleri içeren ve benzer **araç kutusu** Visual Studio'da. Denetimleri ek olarak, her şey için çalışma yüzeyine ekleyebilirsiniz bulabilirsiniz **varlıklar** stilleri, ortam, davranışları ve efektleri dahildir. Açmak için **varlıklar** penceresinde seçin **görünümü** > **varlıklar penceresi** veya basın **Ctrl** + **Alt**+**X**.
 
-Tüm denetimleri bulabilirsiniz **varlıklar** paneli, benzer **araç kutusu** Visual Studio'da. Denetimleri ek olarak, her şey için çalışma yüzeyine ekleyebilirsiniz bulabilirsiniz **varlıklar** paneli, stilleri, ortam, davranışları ve efektleri gibi.
-
-![Varlıklar paneli](../designers/media/blend5_assets_panel.png)
+![Visual Studio için blend'de varlıklar penceresi](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Tüm denetimleri bulabilirsiniz **varlıklar** paneli, benzer **araç kutusu** V
 |![Stilleri](../designers/media/b1_4.png)|**Stilleri** kaynak sözlüğünde yer alan tüm stilleri gösterir.|
 |![Açıklama](../designers/media/b1_5.png)|**Açıklama** seçili varlıklar kategorisinin veya alt kategorinin açıklamasını görüntüleyin.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Nesneler ve zaman çizelgesi Gezinti paneli
+## <a name="objects-and-timeline-window"></a>Nesneler ve Zaman Çizelgesi penceresi
 
-Çalışma yüzeyinde nesneleri düzenlemek için bu paneli kullanın ve bunları animasyon uygulamak isterseniz.
+Çalışma yüzeyinde nesneleri düzenlemek için bu pencereyi kullanın ve bunları animasyon uygulamak isterseniz. Açmak için **nesneler ve zaman çizelgesi** penceresinde seçin **görünümü** > **nesneler ve zaman çizelgesi** veya basın **Ctrl** + **W**, **U**.
 
-![Animasyon modunda nesne ve zaman çizelgesi paneli](../designers/media/b5_object_timeline_animation.png)
+![Animasyon modunda nesne ve Zaman Çizelgesi penceresi](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Tüm denetimleri bulabilirsiniz **varlıklar** paneli, benzer **araç kutusu** V
 |![Zaman Çizelgesi Yakınlaştırması](../designers/media/b1_15.png)|**Zaman Çizelgesi Yakınlaştırması** zaman çizelgesinin yakınlaştırma çözünürlüğünü ayarlayın. Yakınlaştırma bir animasyonu daha ayrıntılı düzenlemenize izin verir ve uzaklaştırmaysa daha uzun süreler boyunca neler olduğuna ilişkin daha kapsamlı bir özet gösterir. Yakınlaştırma yapar, ancak zaman içinde istediğiniz konumunda bir ana kare ayarlayamazsınız, yaslama çözünürlüğünün yeterince yüksek olarak ayarlandığını doğrulayın.|
 |![Belirtme çizgisi 16](../designers/media/b5_label_16.png)|**Zaman Çizelgesi kompozisyon alanı** zaman çizelgesini görüntüleyin ve ana kareleri sürükleyerek veya kendi kısayol menülerini kullanarak taşıyabilirsiniz.|
 
-## <a name="tour-of-the-properties-panel"></a>Özellikler panelini turu
+## <a name="properties-window"></a>Özellik penceresi
 
-Bir nesnenin özelliklerini görüntüleme ve değiştirme için bu paneli kullanın. Bunları doğrudan çalışma yüzeyi üzerinde de ayarlayabilirsiniz. Bunu yaparsanız, özellik değişikliklerinin yansıtılır **özellikleri** paneli.
+Bir nesnenin özelliklerini görüntüleme ve değiştirme için bu pencereyi kullanın. Bunları doğrudan çalışma yüzeyi üzerinde de ayarlayabilirsiniz. Bunu yaparsanız, özellik değişikliklerinin yansıtılır **özellikleri** penceresi. Açmak için **özellikleri** penceresinde seçin **görünümü** > **Özellikler penceresi**, veya basın **Ctrl** +  **W**, **P**.
 
-![Özellikler paneli](../designers/media/blend5_properties_panel.png)
+![Visual Studio için blend'de Özellikler penceresi](../designers/media/blend5_properties_panel.png)
 
 **Kategorileri** Genişlet ve Daralt kategorileri özellikleri. Tıklayın **genişletme** ![genişletme](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) ve **Daralt** ![Daralt](../designers/media/b5_collapse_button.png) kategorisi ayrıntıları göstermek veya gizlemek için.
 
@@ -113,8 +118,6 @@ Bir nesnenin özelliklerini görüntüleme ve değiştirme için bu paneli kulla
 |![](../designers/media/b1_15.png)|**Onaltılık değer** görüntülenen renk onaltılık değerini görüntüleyin.|
 |![Belirtme çizgisi 16](../designers/media/b5_label_16.png)|**Gradyan kaydırıcı** yalnızca bir gradyan fırçası seçtiyseniz görünür.|
 |![Gelişmiş özellikleri göster](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Gelişmiş özellikleri göster** daha az yaygın olarak kullanılan özellikleri kategorilerini görüntüleyin.|
-
-**Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.png) [özellikler panelini](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

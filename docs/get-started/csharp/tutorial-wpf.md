@@ -2,7 +2,8 @@
 title: 'Öğretici: Windows Presentation Foundation (WPF) ile Merhaba Dünya uygulamasıC#'
 description: Basit bir Windows Masaüstü .NET uygulaması oluşturun C# Windows Presentation Foundation (WPF) UI çerçevesi kullanarak Visual Studio ile.
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 03/28/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ad5112313b57f4757c86a202cfdc711e9b478e1e
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325194"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647524"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: C ile basit uygulama oluşturma\#
 
@@ -47,7 +48,7 @@ Visual Studio'yu başlattıktan sonra araç pencerelerini, menüleri ve araç ç
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan devam** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan devam** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri ve bir arama kutusu, menü çubuğu ve en üstte standart araç çubuğu uygulama penceresinin sol tarafında bulunan sabitlenir. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
 
 ::: moniker-end
 
@@ -55,41 +56,54 @@ Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan 
 
 Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.
 
+::: moniker range="vs-2017"
+
 1. Yeni bir proje oluşturun. Menü çubuğunda, seçin **dosya** > **yeni** > **proje**.
 
-     ::: moniker range="vs-2017"
      ![Menü çubuğunda, dosya, yeni proje](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     [Menü çubuğunda, dosya, yeni proje](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
-2. İçinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C#**   >  **Windows Masaüstü**kategori tıklayın ve ardından **WPF uygulaması (.NET Framework)** şablonu. Projeyi adlandırın **HelloWPFApp**seçip **Tamam**.
+1. İçinde **yeni proje** iletişim kutusunda **yüklü** > **Visual C#**   >  **Windows Masaüstü**kategori tıklayın ve ardından **WPF uygulaması (.NET Framework)** şablonu. Projeyi adlandırın **HelloWPFApp**seçip **Tamam**.
 
      ![Visual Studio yeni proje iletişim kutusunda WPF uygulaması şablonu](media/exploreide-newprojectcsharp.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-2. Üzerinde **yeni bir proje oluşturma** ekran, "WPF" için arama seçin **WPF uygulaması (.NET Framework)** ve ardından **sonraki**.
-
-   ![Visual Studio yeni proje iletişim kutusunda WPF uygulaması şablonu](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
-
-3. Sonraki ekranda, projeye bir ad verin. **HelloWPFApp**ve **Oluştur**.
-::: moniker-end
 
 HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
 
-::: moniker range="vs-2017"
 ![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/vs-2019/exploreide-hellowpfappfiles.png)
-::: moniker-end
 
 > [!NOTE]
 > XAML (Genişletilebilir uygulama biçimlendirme dili) hakkında daha fazla bilgi için bkz: [WPF için XAML genel bakış](/dotnet/framework/wpf/advanced/xaml-overview-wpf) sayfası.
 
 Projeyi oluşturduktan sonra özelleştirebilirsiniz. Kullanarak **özellikleri** penceresi (bulunan **görünümü** menüsü), görüntüleyebilir ve proje öğelerine, denetimleri ve uygulamadaki diğer öğeler için seçeneklerini değiştirin.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. Pencerenin başlangıç seçin **yeni proje oluştur**. 
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../../get-started/media/vs-2019/start-window-create-new-project.png)
+
+
+2. Üzerinde **yeni bir proje oluşturma** ekran, "WPF" için arama seçin **WPF uygulaması (.NET Framework)** ve ardından **sonraki**.
+
+   ![WPF uygulaması şablonunu iletişim kutusunda 'Yeni Proje oluştur'](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
+
+3. Sonraki ekranda, projeye bir ad verin. **HelloWPFApp**ve **Oluştur**.
+
+   !['yeni projenizi yapılandırın' penceresinde 'HelloWPFApp' projenizi adlandırın](./media/vs-2019/exploreide-nameproject.png)
+ 
+HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
+
+![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
+> [!NOTE]
+> XAML (Genişletilebilir uygulama biçimlendirme dili) hakkında daha fazla bilgi için bkz: [WPF için XAML genel bakış](/dotnet/framework/wpf/advanced/xaml-overview-wpf) sayfası.
+
+Projeyi oluşturduktan sonra özelleştirebilirsiniz. Bunu yapmak için **Özellikler penceresi** gelen **görünümü** menüsü. Ardından, görüntüleyebilir ve proje öğelerine, denetimleri ve uygulamadaki diğer öğeler için seçeneklerini değiştirin.
+
+::: moniker-end
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml adını değiştirin
 

@@ -14,36 +14,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2e62a0b9ece6052d222a8c228bbd7fe018b0a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954783"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647329"
 ---
-# <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>Seçenekler İletişim Kutusu, Projeler ve Çözümler, Derleme ve Çalıştırma
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Seçenekler iletişim kutusu: Projeler ve çözümler \> derleme ve çalıştırma
 
-Bu iletişim kutusunda, Visual C++ en yüksek sayısını belirtebilirsiniz veya C# aynı anda oluşturabilirsiniz projeleri, belirli bir varsayılan derleme davranışları ve bazı günlük ayarlarını oluşturun. Bu seçeneklere erişmek için seçin **Araçlar > Seçenekler** genişletin **projeler ve çözümler**seçip **derleme ve çalıştırma**.
+Bu iletişim kutusunda, C++ üst sınırını belirtebilirsiniz veya C# aynı anda oluşturabilirsiniz projeleri, belirli bir varsayılan derleme davranışları ve bazı günlük ayarlarını oluşturun. Bu seçeneklere erişmek için seçin **Araçları** > **seçenekleri** genişletin **projeler ve çözümler**ve ardından **derleme ve çalıştırma**.
 
 **derleme en fazla paralel proje sayısı**
 
-Visual C++ en fazla sayısını belirtir ve C# projeleri aynı anda oluşturabilirsiniz. Derleme işlemi iyileştirmek için en fazla paralel proje yapılandırma sayısını bilgisayarınızın CPU sayısını otomatik olarak ayarlanır. En fazla 32'dir.
+C++ üst sınırını belirtir ve C# projeleri aynı anda oluşturabilirsiniz. Derleme işlemi iyileştirmek için en fazla paralel proje yapılandırma sayısını bilgisayarınızın CPU sayısını otomatik olarak ayarlanır. En fazla 32'dir.
 
 **Başlangıç projelerini ve bağımlılıkları sadece çalıştırıldığında Derle**
 
-F5 anahtar, select kullandığınızda, yalnızca başlangıç projesi ve bağımlılıklarını yapılar **hata ayıklama > Başlat** menü komutu ya da geçerli komutları **derleme** menüsü. Açık tüm projelerinizi ve bağımlılıklarınızı derleme vardır.
+Kullandığınızda, yalnızca başlangıç projesi ve bağımlılıklarını yapılar **F5** anahtar **hata ayıklama** > **hata ayıklamayı Başlat** menü komutu ya da geçerli komutları **derleme** menüsü. İşaretli değilse, tüm projelerinizi ve bağımlılıklarınızı oluşturulur.
 
 **Çalıştırmada, projelerin güncel olduğunda**
 
-*Uygulandığı [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
+*Yalnızca C++ projeleri için geçerlidir.*
 
-F5 tuşuna basarak bir proje çalıştırırken veya **hata ayıklama > Başlat** komut, varsayılan ayar **oluşturmak komut istemi** bir proje yapılandırması güncel değil, bir ileti görüntüler. Seçin **her zaman derleme** her çalıştırıldığında, projeyi oluşturmak için. Seçin **asla derleme** bir projeyi çalıştırdığınızda, tüm otomatik derlemeler bastırmak için.
+Projeyle çalışırken **F5** veya **hata ayıklama** > **hata ayıklamayı Başlat** komut, varsayılan ayar **oluşturmak komut istemi** bir proje yapılandırması eski ise bir ileti görüntüler. Seçin **her zaman derleme** her çalıştırıldığında, projeyi oluşturmak için. Seçin **asla derleme** bir projeyi çalıştırdığınızda, tüm otomatik derlemeler bastırmak için.
 
 **Alıştırmada, ne zaman derleme veya dağıtım hataları oluşuyor**
 
-*Uygulandığı [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
+*Yalnızca C++ projeleri için geçerlidir.*
 
-F5 tuşuna basarak bir proje çalıştırırken veya **hata ayıklama > Başlat** komut, varsayılan ayar **başlatmak komut istemi** bir proje, derleme başarısız olsa bile çalıştırılması gereken bir ileti görüntüler. Seçin **başlatma eski sürümü** çalışan kodu ve kaynak kodu uyuşmazlıklarını sonuçlanabilir son iyi derlemeden otomatik olarak başlatılacak. Seçin **başlatma** iletiyi bastırmak için.
+Projeyle çalışırken **F5** veya **hata ayıklama** > **hata ayıklamayı Başlat** komut, varsayılan ayar **başlatmakkomutistemi**bir proje, derleme başarısız olsa bile çalıştırılması gereken bir ileti görüntüler. Seçin **başlatma eski sürümü** çalışan kodu ve kaynak kodu uyuşmazlıklarını sonuçlanabilir son iyi derlemeden otomatik olarak başlatılacak. Seçin **başlatma** iletiyi bastırmak için.
 
 **Yeni çözümleri şu anda seçili projeyi başlangıç projesi olarak kullanın.**
 
@@ -51,13 +51,13 @@ Bu seçenek ayarlandığında, yeni çözümleri şu anda seçili projeyi başla
 
 **MSBuild proje oluşturması çıkış ayrıntısı**
 
-Ne kadar bilgi görünür belirler **çıkış** derleme için penceresi.
+Derleme işlemi ne kadar bilgi görüntülenen belirler **çıkış** penceresi.
 
 **MSBuild proje derleme günlük dosyası ayrıntısı**
 
-*Uygulandığı [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yalnızca projeleri.*
+*Yalnızca C++ projeleri için geçerlidir.*
 
-Şu konumdadır derleme günlüğü dosyası için ne kadar bilgi yazılacağını belirler \\... \\ *ProjectName*\Debug\\*ProjectName*. günlük.
+Şu konumdadır derleme günlüğü dosyası için ne kadar bilgi yazılacağını belirler  *\\ \<ProjectName > \Debug\\\<ProjectName > .log*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

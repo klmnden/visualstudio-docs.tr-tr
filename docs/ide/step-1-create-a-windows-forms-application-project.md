@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ccb92fbe04d9a867cec308e1e4819fa96023ad4
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515226"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647368"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>1. Adım: Bir Windows Forms uygulaması projesi oluşturma
 
@@ -67,9 +67,7 @@ Resim Görüntüleyici oluşturduğunuzda ilk adım bir Windows Forms Applicatio
    >
    > Bundan sonra seçin **Değiştir** Visual Studio Yükleyicisi'nde düğmesi. Çalışmanızı kaydetmek için istenebilir; Bu durumda, bunu yapın. Ardından, **devam** iş yükünü yüklemek için. 
 
-1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *HelloWorld* içinde **proje adı** kutusu. Ardından, **Oluştur**.
-
-   !['yeni projenizi yapılandırın' penceresinde 'HelloWorld' projenizi adlandırın](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *pictureviewer olarak* içinde **proje adı** kutusu. Ardından, **Oluştur**.
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
 title: Belgeler, Ortam, Seçenekler İletişim Kutusu
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912826"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647264"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Belgeler, Ortam, Seçenekler İletişim Kutusu
+# <a name="options-dialog-box-environment--documents"></a>Seçenekler iletişim kutusu: Ortam \> belgeleri
 
-Bu sayfanın kullanın **seçenekleri** tümleşik geliştirme ortamında (IDE) belgeler görüntülenmesini denetlemek ve dış değişiklikler belgelerinizi ve dosyalarınızı yönetmek için iletişim kutusu. Bu iletişim kutusuna tıklayarak erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **belgeleri** içinde **ortam** düğümü. Varsa **belgeleri** listesinde seçin görünmüyor **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.
-
-**Kaydedilmiş ise mevcut belge penceresini yeniden kullanma**
-
-Kaydedilmiş olan ve yeni bir belge aynı pencerede açılır seçildiğinde, geçerli belge kapatır. Geçerli belgeyi kaydedilmemiş açık kalır ve yeni belge ayrı bir pencerede açılır. Bu seçenek işaretli değilse, yeni belgeler, her zaman ayrı bir pencerede açabilirsiniz.
-
-Çok Belgeli Kes'i gerçekleştirme ve işlemleri nadiren yapıştırın ve açık belgeler veya çalışma alanınızı windows sayısını en aza indirmek istiyorsanız bu seçeneği deneyin.
+Bu sayfanın kullanın **seçenekleri** tümleşik geliştirme ortamında (IDE) belgeler görüntülenmesini denetlemek ve dış değişiklikler belgelerinizi ve dosyalarınızı yönetmek için iletişim kutusu. Bu iletişim kutusuna tıklayarak erişebilirsiniz **seçenekleri** üzerinde **Araçları** menüsüne ve ardından seçerek **ortam** > **belgeleri**.
 
 **Dosya ortamı dışında değiştirildiğinde Algıla**
 
 Bu seçenek belirlendiğinde, bir ileti hemen açık bir dosyayı IDE dışında bir düzenleyici tarafından yapılan değişiklikleri bildirir. İleti depolama biriminden dosyayı yeniden olanak sağlar.
 
-**Otomatik değişiklik kaydettiyseniz yükle**
+**Değiştirilmiş dosyalar kaydedilmemiş değişiklikler sürece yeniden yükleyin.**
 
 Olduğunda **dosya ortamı dışında değiştirildiğinde Algıla** seçili ve açık bir dosyayı bir uyarı iletisi IDE dışında IDE değişiklikleri varsayılan olarak oluşturulur. Bu seçenek etkinleştirilirse, herhangi bir uyarı görünür ve belge dış değişiklikleri almak için IDE'de yüklenir.
 
@@ -79,9 +73,9 @@ Görüntülemek için bu seçeneği belirleyin **çeşitli dosyalar** düğümü
 > [!NOTE]
 > Etkinleştirmek için bu seçeneği belirleyin **tarayıcıda görüntüle** komutunu **dosya** etkin web uygulamasında yer almayan web belgeler için menü.
 
-**\<** *n* **> diğer dosyalar projesinde kaydedilmiş öğeler**
+**Diğer dosyalar projesinde kaydedilmiş öğeler**
 
-İçinde kalıcı hale getirmek için dosya sayısını belirtir **MiscellaneousFiles** klasörü **Çözüm Gezgini**. Artık bir düzenleyicide açık olsalar bile bu dosyalar listelenir. Bir tam sayı 0'dan 256 belirtebilirsiniz. Varsayılan sayı 0'dır.
+İçinde kalıcı hale getirmek için dosya sayısını belirtir **çeşitli dosyalar** klasörü **Çözüm Gezgini**. Artık bir düzenleyicide açık olsalar bile bu dosyalar listelenir. Bir tam sayı 0'dan 256 belirtebilirsiniz. Varsayılan sayı 0'dır.
 
 Bu seçenek 5 ayarlanmış ve 10 dosyanın tamamı kapattığınızda, 10 çeşitli dosyalar açık, varsa, örneğin, ilk 5 hala gösterilecek **çeşitli dosyalar** klasör.
 

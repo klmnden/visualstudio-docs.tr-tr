@@ -1,6 +1,6 @@
 ---
 title: İçeri ve Dışarı Aktarma Ayarları, Ortam, Seçenekler İletişim Kutusu
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Profiles
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8cd7766bf51190a0b925c66d49ffc04a23cff1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 312038f14da876fae91b8d65e47235adeb1d14ce
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921048"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647199"
 ---
-# <a name="import-and-export-settings-environment-options-dialog-box"></a>İçeri ve Dışarı Aktarma Ayarları, Ortam, Seçenekler İletişim Kutusu
+# <a name="options-dialog-box-environment--import-and-export-settings"></a>Seçenekler iletişim kutusu: Ortam \> içeri ve dışarı aktarma ayarları
 
-Kullanıcı ayarları dosyanızın kaydedildiği ve takım ayarlar dosyası kullanılıp kullanılmayacağını belirtmek için bu sayfayı kullanın. Ayarları hakkında daha fazla bilgi için bkz. [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
+Kullanıcı ayarları dosyanızın kaydedildiği belirtmek için bu sayfayı kullanın. Ayarları hakkında daha fazla bilgi için bkz. [Visual Studio IDE'yi kişiselleştirme](../../ide/personalizing-the-visual-studio-ide.md).
 
 ### <a name="see-also"></a>Ayrıca bkz.
 

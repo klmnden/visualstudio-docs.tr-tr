@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 7a32e25f8bf19a565ef86d130a7e61a0f3742580
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416177"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647381"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Öğretici: Visual Studio'da Visual Basic ile çalışmaya başlama
 
@@ -103,7 +103,7 @@ Görmüyorsanız **konsol uygulaması (.NET Core)** proje şablonu, alabilirsini
 
 1. İçinde **yeni projenizi yapılandırın** penceresinde yazın veya girin *WhatIsYourName* içinde **proje adı** kutusu. Ardından, **Oluştur**.
 
-   !['yeni projenizi yapılandırın' penceresinde 'WhatIsYourName' projenizi adlandırın](./media/vs-2019/vb-name-your-project.-whatname.png)
+   !['yeni projenizi yapılandırın' penceresinde 'WhatIsYourName' projenizi adlandırın](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Yeni projeniz Visual Studio açılır.
 

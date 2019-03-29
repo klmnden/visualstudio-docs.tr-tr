@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943122"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647251"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Bir veritabanı oluşturun ve Visual Studio'da tablo ekleme
 
@@ -26,11 +26,11 @@ Visual Studio, SQL Server Express LocalDB içinde yerel veritabanı dosyası olu
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama ve işleme** Visual Studio'da yüklü iş yükü. Yüklemek için açık **Visual Studio yükleyicisi** ve **iş yükleri** sekmesi. Altında **Web ve bulut**, seçin **veri depolama ve işleme**. Seçin **Değiştir** düğmesini iş yükünü Visual Studio'ya ekleyin.
+Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama ve işleme** Visual Studio'da yüklü iş yükü. Yüklemek için açık **Visual Studio yükleyicisi** ve **daha fazla** > **Değiştir** değiştirmek istediğiniz Visual Studio sürümünü yanındaki (varsa birden fazla bir sürüm) yüklü. Üzerinde **iş yükleri** sekmesindeki **Web ve bulut**, seçin **veri depolama ve işleme**ve ardından **Değiştir** iş yüküne eklemek için Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Bir proje ve yerel veritabanı dosyası oluştur
 
-1. Adlı bir Windows Forms projesi oluşturun **SampleDatabaseWalkthrough**.
+1. Yeni bir **Windows Forms uygulaması** adlandırın ve proje **SampleDatabaseWalkthrough**.
 
 2. Menü çubuğunda, seçin **proje** > **Yeni Öğe Ekle**.
 
@@ -38,7 +38,7 @@ Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama v
 
      ![Öğe şablonları iletişim kutusu](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Veritabanı adı **SampleDatabase**ve ardından **Ekle** düğmesi.
+4. Veritabanı adı **SampleDatabase**ve ardından **Ekle**.
 
 ### <a name="add-a-data-source"></a>Veri Kaynağı Ekle
 
@@ -62,9 +62,9 @@ Bu izlenecek yolu tamamlamak için isteğe bağlı olmalıdır **veri depolama v
 
 Bağlantı dizesini görüntüleyebileceğiniz *SampleDatabase.mdf* veri bağlantısı Özellikler penceresini açarak dosya:
 
-- Visual Studio'da **görünümü** > **SQL Server Nesne Gezgini** Bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü için kısayol menüsünü açarak, *SampleDatabase.mdf*, belirledikten sonra **özellikleri**.
+- Seçin **görünümü** > **SQL Server Nesne Gezgini** açmak için **SQL Server Nesne Gezgini** penceresi. Genişletin **(localdb) \MSSQLLocalDB** > **veritabanları**ve ardından sağ tıklayarak *SampleDatabase.mdf* seçip **özellikleri**.
 
-- Alternatif olarak, seçebileceğiniz **görünümü** > **Sunucu Gezgini**, bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü. Kısayol menüsünü açın *SampleDatabase.mdf*ve ardından **özellikleri**.
+- Alternatif olarak, seçebileceğiniz **görünümü** > **Sunucu Gezgini**, bu pencere hala açık değilse. Özellikler penceresini genişleterek açmak **veri bağlantıları** düğümü için kısayol menüsünü açarak, *SampleDatabase.mdf*, belirledikten sonra **özellikleri**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Tablo tasarımcısını kullanarak tablolar ile anahtarlar oluşturma
 
@@ -72,7 +72,7 @@ Bu bölümde, iki tablo, her bir tabloyu ve birkaç satırlık örnek verilerini
 
 ### <a name="create-the-customers-table"></a>Müşteriler tablosu oluşturma
 
-1. İçinde **Sunucu Gezgini** veya **SQL Server Nesne Gezgini**, genişletme **veri bağlantıları** düğümünü ve ardından **SampleDatabase.mdf**düğümü.
+1. İçinde **Sunucu Gezgini**, genişletme **veri bağlantıları** düğümünü ve ardından **SampleDatabase.mdf** düğümü.
 
 2. Kısayol menüsünü açın **tabloları**ve ardından **Yeni Tablo Ekle**.
 
@@ -101,9 +101,9 @@ Bu bölümde, iki tablo, her bir tabloyu ve birkaç satırlık örnek verilerini
 
     ![Tablo Tasarımcısı](../data-tools/media/raddata-table-designer.png)
 
-7. Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme** düğmesi.
+7. Sol alt köşesindeki **Tablo Tasarımcısı**seçin **güncelleştirme**.
 
-8. İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir** düğmesi.
+8. İçinde **veritabanı güncelleştirmelerini Önizle** iletişim kutusunda **veritabanını Güncelleştir**.
 
     Değişiklikleriniz yerel veritabanı dosyasına kaydedildi.
 
