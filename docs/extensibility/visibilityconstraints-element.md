@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c567291f2b91e092afecb264c2b2e0ca1bfd108
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5dfbeb3c45e05c93554aae9b17a42c265408bc3
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702583"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658885"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints öğesi
 VisibilityConstraints öğesi gruplarını komutları ve araç çubukları statik görünürlüğünü belirler. Görünürlük varsayılan tarafından denetlenir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage yükleme olmadan tümleşik geliştirme ortamı (IDE).
@@ -27,9 +27,9 @@ VisibilityConstraints öğesi gruplarını komutları ve araç çubukları stati
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityConstraint>... </VisibilityConstraint>
-  <VisibilityConstraint>... </VisibilityConstraint>
-</VisibilityConstraint>
+  <VisibilityItem />
+  <VisibilityItem />
+</VisibilityConstraints>
 ```
 
 ## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0db8071e0943f1edde2091d173e4737214233dea
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647511"
+ms.locfileid: "58658872"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Visual Studio'da XAML Tasarımcısı kullanarak bir kullanıcı Arabirimi oluşturma
 
@@ -104,9 +104,9 @@ XAML Düzenleyicisi'ni alt pencereye olduğunda Bölünmüş Görünüm Çubuğu
 
 Biçimlendirme Yakınlaştırma sayesinde boyutuna **XAML** görünümü. %400 %20 değerinden yakınlaştırma yapabilirsiniz.
 
-## <a name="objects-and-timeline-window"></a>Nesneler ve Zaman Çizelgesi penceresi
+## <a name="document-outline-window"></a>Belge Anahattı penceresi
 
-Nesneler ve zaman çizelgesi XAML Tasarımcısı penceresinde, bu görevleri gerçekleştirmenize yardımcı olur:
+XAML Tasarımcısı'nda Belge Anahattı penceresi benzer **nesneler ve zaman çizelgesi** Visual Studio için blend'de penceresi. **Belge Anahattı** bu görevleri gerçekleştirmenize yardımcı olur:
 
 - Çalışma yüzeyinde tüm öğeleri hiyerarşik yapısını görüntüleyin.
 
@@ -116,15 +116,15 @@ Nesneler ve zaman çizelgesi XAML Tasarımcısı penceresinde, bu görevleri ger
 
 - Seçilen öğeler için sağ tıklama menüsünü (bağlam menüsü) kullanın. Aynı menüyü, çalışma yüzeyinde seçilen öğeleri için de kullanılabilir.
 
-Görüntülenecek **nesneler ve zaman çizelgesi** penceresinde, menü çubuğundan seçin **görünümü** > **nesneler ve zaman çizelgesi**.
+Görüntülemek için **belge anahattı** penceresinde, menü çubuğundan seçin **görünümü** > **diğer Windows** > **BelgeAnahattı**.
 
-![Nesneler ve Zaman Çizelgesi penceresi](../designers/media/objects-and-timeline-window.png)
+![Visual Studio Belge Anahattı penceresi](../designers/media/document-outline-window.png)
 
-Kullanılabilir seçenekleri bunlar **nesneler ve zaman çizelgesi** penceresi:
+Kullanılabilir seçenekleri bunlar **belge anahattı** penceresi:
 
 **Belge Anahattı**
 
-Ana görünümünde **nesneler ve zaman çizelgesi** penceresi hiyerarşisini bir belgenin bir ağaç yapısında görüntüler. Farklı düzeylerde, belge inceleme ve kilitleme ve öğeleri tek veya grup gizlemek için Belge Anahattı hiyerarşik yapısını kullanabilirsiniz.
+Ana görünümünde **belge anahattı** penceresi hiyerarşisini bir belgenin bir ağaç yapısında görüntüler. Farklı düzeylerde, belge inceleme ve kilitleme ve öğeleri tek veya grup gizlemek için Belge Anahattı hiyerarşik yapısını kullanabilirsiniz.
 
 **Göster/Gizle**
 
@@ -136,7 +136,7 @@ Kilitler veya belge ana hattı öğelere karşılık gelen çalışma yüzeyine 
 
 **Kapsamı için pageRoot Döndür**
 
-Seçeneğini en üstündeki **nesneler ve zaman çizelgesi** yukarı ok simgesi gösterir, penceresinde Belge Anahattı önceki kapsama döndürür. Üst kapsama gitme yalnızca bir stil veya şablon kapsamı içinde olduğunuzda geçerlidir.
+Seçeneğini en üstündeki **belge anahattı** yukarı ok simgesi gösterir, penceresinde Belge Anahattı önceki kapsama döndürür. Üst kapsama gitme yalnızca bir stil veya şablon kapsamı içinde olduğunuzda geçerlidir.
 
 ## <a name="properties-window"></a>Özellik penceresi
 
