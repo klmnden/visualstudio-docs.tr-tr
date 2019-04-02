@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708777"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790244"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE'yi kişiselleştirme
 
@@ -31,20 +31,20 @@ Birçok kişiselleştirme seçenekleri aracılığıyla sunulur [ortam seçenekl
 
 - Menü çubuğunda, **Araçları** > **seçenekleri**, henüz expanded ise genişletin **ortam** düğümü.
 
-- Türü `environment` içinde **hızlı başlatma** kutusuna ve seçin **ortam--> Genel** sonuçları listesinde.
+- Tuşuna **Ctrl**+**Q**, türü **ortam** arama kutusuna ve ardından **ortam--> Genel** gelen Sonuç.
 
-   > [!TIP]
-   > İletişim kutusu göründüğünde, basabilirsiniz **F1** çeşitli ayarları bu sayfada konusunda Yardım.
+> [!TIP]
+> Seçenekler iletişim kutusu göründüğünde basabilirsiniz **F1** çeşitli ayarları bu sayfada konusunda Yardım.
 
 ## <a name="environment-color-themes"></a>Ortam Renk temalarını
 
-Renk teması açık, koyu mavi yazıp arasında değiştirmek için `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> Genel**. İçinde **seçenekleri** iletişim kutusunda, değişiklik **renk teması** seçeneği.
+Renk teması açık, koyu mavi yazıp arasında değiştirmek için **ortam** arama kutusuna ve ardından **ortam--> Genel**. İçinde **seçenekleri** iletişim kutusunda, değişiklik **renk teması** seçeneği.
 
-Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın `environment` içinde **hızlı başlatma** kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Düzenleyicide renklendirme seçeneklerini değiştirmek için şunu yazın **ortam** arama kutusuna ve ardından **ortam--> yazı tipleri ve renkler**. Bkz: [nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Ana menü büyük/küçük harf
 
-Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler büyük** ("dosyası") ve **tümü büyük harf** ("dosyası"). Türü `environment` içinde **hızlı başlatma** kutusunda **ortam--> Genel**ve ardından değiştirmek **menü çubuğuna başlık stilini Uygula** seçeneği.
+Ana menü büyük/küçük harf arasında değiştirebilirsiniz **ilk harfler büyük** ("dosyası") ve **tümü büyük harf** ("dosyası"). Tür **ortam** arama kutusunda **ortam--> Genel**ve ardından değiştirmek **menü çubuğuna başlık stilini Uygula** seçeneği.
 
 ### <a name="customize-menus-and-toolbars"></a>Menüleri ve araç çubuklarını özelleştirme
 

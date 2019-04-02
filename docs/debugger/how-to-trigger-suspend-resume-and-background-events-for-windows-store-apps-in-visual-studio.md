@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: ea8b7f378562d31cfcfde786664e227a3fec6b0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708868"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790361"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Nasıl tetikleyeceğinizi askıya alma, sürdürme ve UWP uygulamaları Visual Studio'da hata ayıklarken arka plan olayları
 Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uygulamanızın yürütme durumunu denetler — başlatma, askıya alma, sürdürme ve uygulama yanıt kullanıcı eylemleri ve cihaz durumu olarak sonlandırılıyor. Windows hata ayıklaması yapıyorsanız, bu etkinleştirme olaylarını devre dışı bırakır. Bu konu, hata ayıklayıcı bu olayları tetiklemesine açıklar.
@@ -72,7 +72,7 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
 
 2.  Başlangıç projesi için hata ayıklama özellik sayfasını açın. Çözüm Gezgini'nde projeyi seçin. Üzerinde **hata ayıklama** menüsünde seçin **özellikleri**.
 
-     C++ ve JavaScript projeleri için genişletme **yapılandırma özellikleri** seçip **hata ayıklama**.
+     C++ projeleri için genişletin **yapılandırma özellikleri** seçip **hata ayıklama**.
 
 3.  Aşağıdakilerden birini yapın:
 
@@ -80,7 +80,7 @@ Ne zaman değil ayıkladığınız Windows **işlem ömrü Yönetimi** (PLM), uy
 
          ![C&#35;&#47;VB hata ayıklama başlatma uygulama özelliği](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   JavaScript ve Visual C++ projeleri için seçin **Hayır** gelen **uygulama başlatma** listesi.
+    -   Visual C++ projeleri için seçin **Hayır** gelen **uygulama başlatma** listesi.
 
          ![C&#43;&#43;&#47;VB başlatma uygulama hata ayıklama özelliği](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

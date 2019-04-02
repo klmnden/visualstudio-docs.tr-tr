@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d15bda52d4baca5e2aa6df47f0450f6947a340e8
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: e7b451cf18a461f94e1d8682652e16dac9ee8ab2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572813"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790465"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Visual Studio üretkenliği Kılavuzu C# geliştiriciler
 
@@ -51,7 +51,7 @@ Popüler Visual Studio kısayolları şunlardır:
 | **Ctrl**+**D** | Satırı Yinele | İmlecin bulunduğu kod satırının çoğaltır (kullanılabilir **Visual Studio 2017 sürüm 15.6** ve üzeri) |
 | **Shift**+**Alt**+**+**/**-** | Seçimi Genişlet/Sözleşmesi | Genişletir ya da geçerli seçimi Düzenleyicisi'nde sözleşmeler (kullanılabilir **Visual Studio 2017 sürüm 15.5** ve üzeri) |
 | **Shift** + **Alt** + **.** | Eşleşen bir sonraki giriş işareti Ekle | Seçim ve giriş işaretini geçerli seçimi ile eşleşen bir sonraki konumda ekler (kullanılabilir **Visual Studio 2017 sürüm 15,8** ve üzeri) |
-| **CTRL**+**Q** | Hızlı Başlat | Tüm Visual Studio ayarları arama |
+| **CTRL**+**Q** | Ara | Tüm Visual Studio ayarları arama |
 | **F5** | Hata Ayıklamayı Başlat | Uygulamanızı hata ayıklamayı Başlat |
 | **CTRL**+**F5** | Hata ayıklama Çalıştır | Uygulamanızı yerel olarak hata ayıklama olmadan çalıştırma |
 | **CTRL**+**K**,**D** (varsayılan profili) veya **Ctrl**+**E**,**D**  (C# profili) | [Belgeyi Biçimlendir](code-styles-and-quick-actions.md#format-document-command) | Yeni satır, aralık ve girintileme ayarlarını göre dosyanızdaki ihlalleri biçimlendirme temizler |

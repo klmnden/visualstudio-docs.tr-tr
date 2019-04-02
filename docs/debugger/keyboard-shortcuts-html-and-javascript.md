@@ -1,6 +1,6 @@
 ---
 title: Klavye kısayolları (HTML ve JavaScript) | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697278"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789814"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Klavye kısayolları (HTML ve JavaScript)
 
+::: moniker range=">=vs-2019"
+ Klavye kısayolları Visual Studio'da Node.js uygulamaları ile Visual Studio'da hata ayıklama için **Node.js geliştirme** iş yükü yüklenmiş.
+::: moniker-end
+::: moniker range="vs-2017"
  HTML ve JavaScript kullanarak UWP uygulamalarında hata ayıklamaya yönelik Visual Studio'daki klavye kısayollarını.
+::: moniker-end
+
 
 ## <a name="general-shortcuts"></a>Genel kısayolları
+
  Bu kısayollar, HTML ve JavaScript kullanarak UWP uygulamaları için tüm araçlar arasında çalışır.
 
 |Eylem|Kısayol|
@@ -35,6 +42,7 @@ ms.locfileid: "56697278"
 |Performans ve tanılama hub'ı açın|Alt+F2|
 
 ## <a name="javascript-console-shortcuts"></a>JavaScript Konsolu kısayollarını
+
  Bu kısayollar, JavaScript konsol penceresinde kullanın.
 
 |Eylem|Kısayol|
@@ -44,6 +52,7 @@ ms.locfileid: "56697278"
 |Tek satır ve çok satırlı modu arasında geçiş|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>DOM Gezgini kısayolları
+
  Bu kısayollar DOM Gezgini'nde kullanın.
 
 |Eylem|Kısayol|
@@ -56,5 +65,6 @@ ms.locfileid: "56697278"
 |1 seçili CSS değeri Azalt|Aşağı Ok|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)
-- [Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [JavaScript Konsolu komutları](../debugger/javascript-console-commands.md)
+- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

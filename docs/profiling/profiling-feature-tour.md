@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873184"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790816"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Hızlı Başlangıç: Araçlar profil oluşturmaya ilk bakış
 
@@ -119,6 +119,7 @@ Ne zaman, bir zaman dönemi grafiklerde seçip **ayrıntıları görüntüle**, 
 
 Grafikler, CPU'ya vardır veya performans sorunlarını GPU bağlı olup olmadığını belirlemek için de kullanabilirsiniz.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>(JavaScript UWP) performansını çözümleme
 
 UWP uygulamaları için JavaScript bellek aracı ve HTML kullanıcı Arabirimi yanıt hızı Aracı'nı kullanabilirsiniz.
@@ -130,6 +131,7 @@ JavaScript bellek aracı diğer uygulama türleri için kullanılabilir bellek k
 UI yanıtlama hızı, yükleme süresi ve yavaş görsel güncelleştirmeleri UWP uygulamalarında yavaş tanılamak için HTML kullanıcı Arabirimi yanıt hızı Aracı'nı kullanın. Kullanım, diğer uygulama türleri için uygulama zaman çizelgesi Aracı'nı benzerdir. Daha fazla bilgi için [HTML UI yanıtlama hızı](../profiling/html-ui-responsiveness.md).
 
 ![HTML kullanıcı Arabirimi yanıt hızı aracı profil oluşturma](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>(UWP) ağ kullanımını analiz etme
 

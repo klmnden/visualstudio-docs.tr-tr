@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: c9e1540e782cb5423ffc82ccfb46b9376842762f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475961"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789549"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: C++ ile Visual Studio hata ayıklayıcısını kullanarak hata ayıklama
 
@@ -28,7 +28,7 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 1. Visual Studio'yu açın ve bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **c ++**, seçin **şablonları**, ardından **yeni konsol uygulaması projesi oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **c ++**, seçin **şablonları**, ardından **yeni konsol uygulaması projesi oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C++**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **Windows Konsolu Uygulama**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.

@@ -2,7 +2,7 @@
 title: Visual Studio yönetici kılavuzu
 titleSuffix: ''
 description: Visual Studio bir kuruluş ortamında dağıtma hakkında daha fazla bilgi edinin.
-ms.date: 05/29/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c9dbd7c3687596df0ccb0397cc5d52ff7888f9ff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324941"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790101"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio yönetici kılavuzu
 
@@ -30,7 +30,17 @@ Kuruluş ortamlarında yüklemeleri bir ağ paylaşımına veya sistem yönetim 
 
 ## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Visual Studio bir kuruluş ortamında dağıtma
 
-Her hedef bilgisayar karşıladığı sürece Visual Studio istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](/visualstudio/productinfo/vs2017-system-requirements-vs). System Center gibi yazılım ya da bir toplu iş dosyası aracılığıyla dağıtıyorsanız olsun, genellikle aşağıdaki adımları izleyerek Git isteyeceksiniz:
+::: moniker range="vs-2017"
+
+Her hedef bilgisayar karşıladığı sürece Visual Studio istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](/visualstudio/productinfo/vs2017-system-requirements-vs/). System Center gibi yazılım ya da bir toplu iş dosyası aracılığıyla dağıtıyorsanız olsun, genellikle aşağıdaki adımları izleyerek Git isteyeceksiniz:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Her hedef bilgisayar karşıladığı sürece Visual Studio istemci iş istasyonlarına dağıtabilirsiniz [minimum yükleme gereksinimlerini](/visualstudio/releases/2019/system-requirements/). System Center gibi yazılım ya da bir toplu iş dosyası aracılığıyla dağıtıyorsanız olsun, genellikle aşağıdaki adımları izleyerek Git isteyeceksiniz:
+
+::: moniker-end
 
 1. [Visual Studio ürün dosyalarını içeren bir ağ paylaşımı oluşturmanız](create-a-network-installation-of-visual-studio.md) bir ağ konumuna.
 

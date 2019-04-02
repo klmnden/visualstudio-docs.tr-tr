@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324087"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790686"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE Hoş Geldiniz | Visual Basic
 
@@ -102,22 +102,24 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    ::: moniker-end
 
-- [Hızlı Başlatma](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Arama kutusu
 
-   Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. **Hızlı başlatma** arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa **hızlı başlatma** bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçlar sağlar.
+   Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. Arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa arama kutusuna bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçları sağlar.
 
    > [!TIP]
-   > Tuşuna **Ctrl**+**Q** kısayolu olarak **hızlı başlatma** arama kutusu.
+   > Tuşuna **Ctrl**+**Q** arama kutusu kısayolu olarak.
 
    ::: moniker range="vs-2017"
 
    ![Visual Studio 2017'de hızlı başlatma arama kutusu](../media/quick-launch-nuget.png)
 
+   Daha fazla bilgi için [hızlı başlatma](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Visual Studio 2019 hızlı başlatma arama kutusuna](media/vs-2019/quick-launch.png)
+   ![Visual Studio 2019 arama kutusuna](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961721"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790335"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Hata ayıklama teknikleri ve daha iyi kod yazmanıza yardımcı olacak araçlar
 
@@ -42,7 +42,7 @@ Aşağıdaki kod, Visual Studio IDE kullanarak düzeltebilirsiniz bazı hatalar 
 
 Uygulama oluşturmak için:
 
-1. Visual Studio açıp seçin **Dosya > Yeni proje**. Altında **Visual C#** , seçin **Windows Masaüstü** veya **.NET Core**seçip Ortadaki bölmeden bir **konsol uygulaması**.
+1. Visual Studio açıp seçin **dosya** > **yeni** > **proje**. Altında **Visual C#** , seçin **Windows Masaüstü** veya **.NET Core**seçip Ortadaki bölmeden bir **konsol uygulaması**.
 
     > [!NOTE]
     > Görmüyorsanız **konsol uygulaması** proje şablonu, tıklayın **açık Visual Studio yükleyicisi** sol bölmesinde bağlantıyı **yeni proje** iletişim kutusu. Visual Studio Yükleyicisi'ni başlatır. Seçin **.NET masaüstü geliştirme** veya **.NET Core çoklu platform geliştirme** iş yükü, ardından **Değiştir**.

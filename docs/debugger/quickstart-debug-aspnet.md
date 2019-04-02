@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ed1f50dac33251f1daaad47bd8c2a64688025e32
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354849"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790556"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
@@ -28,7 +28,7 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Core Web uygulaması oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, seçin **şablonları**, ardından **yeni ASP.NET Core Web uygulaması oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Web**seçip Ortadaki bölmeden **ASP.NET Core Web Uygulama**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.

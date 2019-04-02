@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba9ff86db64c59d8be581dc778db5ffa6d56f4a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cdd82bffcbdbbf4ee176c7ffd643cd920d1c5268
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355665"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790153"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Öğretici: Hata ayıklamayı öğrenin C# kullanarak Visual Studio code
 
@@ -58,7 +58,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://
 1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **oluştur yeni konsol uygulaması (.NET Framework) projesi**. Görüntülenen iletişim kutusunda gibi bir ad yazın **get-başlatıldı-hata ayıklama**ve ardından **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **oluştur yeni konsol uygulaması (.NET Framework) projesi**. Görüntülenen iletişim kutusunda gibi bir ad yazın **get-başlatıldı-hata ayıklama**ve ardından **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (. NET Framework)**. Gibi bir ad yazın **get-başlatıldı-hata ayıklama** tıklatıp **Tamam**.

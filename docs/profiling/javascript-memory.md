@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 725566a4bc09a7c787c5ffa96b9422d15fd197b1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867974"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790959"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP uygulamalarında JavaScript bellek kullanımını analiz etme
 JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript kullanarak Windows için oluşturulan UWP uygulamalarında bellek sızıntılarını bulmanıza yardımcı olması için Visual Studio'da kullanılabilir. Desteklenen uygulamalar için evrensel Windows uygulamaları uygulamalarıdır.
@@ -102,7 +103,7 @@ JavaScript bellek Çözümleyicisi, bellek kullanımını anlamak ve JavaScript 
 
 1. Uygulamanızı Visual Studio'da açın.
 
-2. JavaScript bellek Çözümleyicisi'ni çalıştırın. Daha fazla bilgi için bkz. [JavaScript bellek Çözümleyicisi'ni çalıştırmak](#run-the-JavaScript-memory-analyzer).
+2. JavaScript bellek Çözümleyicisi'ni çalıştırmak (önceki adımlara bakın).
 
 3. Uygulamanızı test etmek istediğiniz senaryoyu çalıştırın. Örneğin, senaryo belirli bir sayfa yüklendiğinde veya uygulama başlatıldığında büyük bir DOM Mutasyon gerektirebilir.
 

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928042"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789711"
 ---
 # <a name="manage-project-and-solution-properties"></a>Proje ve çözüm özelliklerini yönetme
 
-Proje derleme, hata ayıklama, test etme ve dağıtma birçok yönüyle yönetir özelliklere sahiptir. Bazı özellikler tüm proje türleri arasında ortak olan ve belirli dillerde veya platformlarda için benzersiz bazılarıdır. Proje Özellikleri'nde proje düğümüne sağ tıklayarak erişim **Çözüm Gezgini** seçip **özellikleri**, veya "Özellikler" yazmaya **hızlı başlatma** menü çubuğundaki arama kutusuna.
+Proje derleme, hata ayıklama, test etme ve dağıtma birçok yönüyle yönetir özelliklere sahiptir. Bazı özellikler tüm proje türleri arasında ortak olan ve belirli dillerde veya platformlarda için benzersiz bazılarıdır. Proje Özellikleri'nde proje düğümüne sağ tıklayarak erişim **Çözüm Gezgini** seçip **özellikleri** veya yazarak **özellikleri** kartındaki arama kutusuna menü çubuğu ve seçme **Özellikler penceresi** sonuçlarından.
 
 ![Proje bağlam menüsü](../ide/media/vs2015_proj_prop_menu.gif)
 

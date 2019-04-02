@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268540"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790764"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Visual Studio uzantıları bulma ve kullanma
 
@@ -33,7 +33,7 @@ Kullanım **Uzantılar ve güncelleştirmeler** yüklemek ve Visual Studio uzant
 
 ::: moniker range=">=vs-2019"
 
-Kullanım **uzantıları yönetme** yüklemek ve Visual Studio uzantıları yönetmek için iletişim kutusu. Açmak için **uzantıları yönetme** iletişim kutusunda seçin **uzantıları** > **uzantıları yönetme**. Veya, tür **uzantıları** içinde **hızlı başlatma** seçin ve arama kutusuna **uzantıları yönetme**.
+Kullanım **uzantıları yönetme** yüklemek ve Visual Studio uzantıları yönetmek için iletişim kutusu. Açmak için **uzantıları yönetme** iletişim kutusunda seçin **uzantıları** > **uzantıları yönetme**. Veya, tür **uzantıları** arama kutusu ve seçin **uzantıları yönetme**.
 
 ::: moniker-end
 

@@ -26,16 +26,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de24a35e410bec38e5b70813285440aaa05de4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3aa277cca1d4c655f2a2894ff9c8ffce83474016
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914977"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789867"
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
-Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Menü çubuğundan açmak için seçin **derleme** > **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** içinde **hızlı başlatma**kutusu. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.
+Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Bunu, menü çubuğundan açmak için seçin **derleme** > **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** arama kutusuna. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [derleme Mac için Visual Studio'da yapılandırmaları](/visualstudio/mac/configurations).

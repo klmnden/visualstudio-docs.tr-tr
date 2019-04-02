@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e43c50dd006190935f8ce1eb3a17e3f268e14cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692833"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789536"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>SSS: Eklentileri VSPackage uzantılarına dönüştürme
 Eklentileri artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio uzantısı yapmak için bir VSIX uzantısı oluşturmak gerekir. Bir Visual Studio eklentisi, bir VSIX uzantısı dönüştürme hakkında sık sorulan soruların yanıtları aşağıdadır.
@@ -40,26 +40,27 @@ Eklentileri artık kullanım dışı bırakılmıştır. Yeni bir Visual Studio 
 ##  <a name="BKMK_StartDeveloping"></a> VSIX uzantılarını geliştirmeye nasıl başlarım?
  Bir menü komutu içeren bir VSIX nasıl yaptığınız aşağıda verilmiştir:
 
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Bir menü komutu içeren bir VSIX uzantısı yapmak için
+### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Bir menü komutu içeren bir VSIX uzantısı yapmak için
 
-1.  Bir VSIX projesi oluşturun. (**Dosya** > **yeni** > **proje**, veya tür **proje** içinde **HızlıBaşlat** pencere). İçinde **yeni proje** iletişim kutusunda **Visual C#** > **genişletilebilirlik** veya **Visual Basic**  >   **Genişletilebilirlik** seçip **VSIX projesi**.) Projeyi adlandırın **TestExtension** ve bunun için bir konum belirtin.
+1. Bir VSIX projesi oluşturun. (**Dosya** > **yeni** > **proje**, veya tür **proje** arama kutusuna). İçinde **yeni proje** iletişim kutusunda **Visual C#**   >  **genişletilebilirlik** veya **Visual Basic**  >  **Genişletilebilirlik** seçip **VSIX projesi**. Projeyi adlandırın **TestExtension** ve bunun için bir konum belirtin.
 
-2.  Ekleme bir **özel komut** proje öğesi şablon. ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **Ekle** > **yeni öğe**. Buna **yeni proje** Visual C# veya Visual Basic seçin iletişim **genişletilebilirlik** düğümünü seçip alt **özel komut**.)
+2. Ekleme bir **özel komut** öğe şablonu. ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **Ekle** > **yeni öğe**. Buna **Yeni Öğe Ekle** ya da görsel için iletişim C# veya Visual Basic seçin **genişletilebilirlik** düğümünü seçip alt **özel komut**.)
 
-3.  Tuşuna **F5** oluşturup projeyi hata ayıklama modunda çalıştırın.
+3. Tuşuna **F5** oluşturup projeyi hata ayıklama modunda çalıştırın.
 
-     Visual Studio ikinci bir örneğini görünür. Bu ikinci bir örneği Deneysel örneği olarak adlandırılır ve Visual Studio'nun kod yazmak için kullandığınız örnekle aynı ayarları olmayabilir. İlk kez deneysel örneği çalıştırdığınızda VS Online'da oturum açın ve tema ve profil belirtmeniz istenir.
+   Visual Studio ikinci bir örneğini görünür. Bu ikinci bir örneği Deneysel örneği olarak adlandırılır ve Visual Studio'nun kod yazmak için kullandığınız örnekle aynı ayarları olmayabilir. İlk kez deneysel örneği çalıştırdığınızda VS Online'da oturum açın ve tema ve profil belirtmeniz istenir.
 
-     Üzerinde **Araçları** menü (deneysel örneğinde) adlı bir düğme görmeniz **My komut adı**. Bu düğmeyi seçtiğinizde, bir ileti görünmelidir: **İçinde TestVSPackagePackage.MenuItemCallback()**.
+   Üzerinde **Araçları** menü (deneysel örneğinde) adlı bir düğme görmeniz **My komut adı**. Bu düğmeyi seçtiğinizde, bir ileti görünmelidir: **İçinde TestVSPackagePackage.MenuItemCallback()**.
 
 ##  <a name="BKMK_RunAddin"></a> Eklenti kodum içinde bir VSPackage'ı nasıl çalıştırırım?
- Eklenti kodu genellikle iki yöntemden biriyle çalıştırır:
+
+Eklenti kodu genellikle iki yöntemden biriyle çalıştırır:
 
 - Bir menü komutu tarafından tetiklenen (kod `IDTCommandTarget.Exec` yöntemi.)
 
 - Otomatik olarak girişte (kod `OnConnection` olay işleyicisi.)
 
-  Vspackage'ta aynı şey yapabilirsiniz. Geri çağırma yöntemi eklenti kod ekleme şöyledir:
+Vspackage'ta aynı şey yapabilirsiniz. Geri çağırma yöntemi eklenti kod ekleme şöyledir:
 
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>VSPackage'ı bir menü komutu uygulamak için
 

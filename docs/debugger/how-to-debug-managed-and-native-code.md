@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a987904b099e9a463f33eb77980abd3fa2f32d16
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476013"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790322"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 
@@ -55,7 +55,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 1. Visual Studio'yu açın ve bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **boş proje**, seçin **şablonları**, ardından **yeni boş proje proje oluştur** c ++. Görünen iletişim kutusunda **Oluştur**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **boş proje**, seçin **şablonları**, ardından **yeni boş proje proje oluştur** c ++. Görünen iletişim kutusunda **Oluştur**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C++**, seçin **diğer**seçip Ortadaki bölmeden **boş proje**. Gibi bir ad yazın **Mixed_Mode_Debugging** tıklatıp **Tamam**.
@@ -132,7 +132,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**ve ardından **oluştur yeni konsol uygulaması (.NET Framework) projesi** için C#. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**ve ardından **oluştur yeni konsol uygulaması (.NET Framework) projesi** için C#. Görünen iletişim kutusunda **Oluştur**.
 
     Gibi bir ad yazın **Mixed_Mode_Calling_App** tıklatıp **Oluştur**.
     ::: moniker-end

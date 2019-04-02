@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 97b6d27c676af1fb5d4a81778c708a3ad036c601
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194699"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789257"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer'da Azure hizmetlerinizle ilişkilendirilmiş kaynakları yönetme
 
@@ -28,7 +28,7 @@ Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud
 * Microsoft Azure hesabı - bir hesabınız yoksa, şunları yapabilirsiniz [ücretsiz deneme için kaydolun](http://go.microsoft.com/fwlink/?LinkId=623901) veya [Visual Studio abone Avantajlarınızı etkinleştirebilirsiniz](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Cloud Explorer'ı görüntülemek için basın **Ctrl**+**Q** çağrılacak **hızlı başlatma**girin **Cloud Explorer**.
+> Cloud Explorer'ı görüntülemek için basın **Ctrl**+**Q** arama kutusunu etkinleştirin ve girmeniz **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Bir Azure ekleme hesabı için Cloud Explorer
 

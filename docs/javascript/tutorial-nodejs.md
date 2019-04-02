@@ -11,18 +11,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d10f2827debf13b2fb63923e0e356032afbb8bcd
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355571"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790842"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve Express uygulaması oluşturma
 
 Bu öğreticide Node.js ve Express kullanarak Visual Studio geliştirme için basit bir Node.js web uygulaması oluşturma, kod ekleyin, bazı IDE özelliklerini ve uygulamayı çalıştırın. Visual Studio henüz yüklemediyseniz, ücretsiz yükleme [burada](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
 
-Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kod ekleyin
@@ -78,7 +78,7 @@ Bu öğreticide, Node.js ve express uygulaması için kod içeren basit bir proj
 1. Yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **yeni temel Azure Node.js Express 4 uygulaması oluşturma** (JavaScript). Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **yeni temel Azure Node.js Express 4 uygulaması oluşturma** (JavaScript). Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354756"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790907"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Hızlı Başlangıç: Visual Studio IDE’ye ilk bakış
 
@@ -125,15 +125,15 @@ Açık **hata listesi** penceresini seçerek **görünümü** menüsü, ardında
 
 ![Visual Studio çıktı penceresinde](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Hızlı Başlat
+## <a name="search-box"></a>Arama kutusu
 
-**Hızlı başlatma** arama kutusuna, neredeyse her şey Visual Studio'da gitmek için hızlı ve kolay bir yoludur. Yapmak istediğiniz ilgili metin girebilir ve onu metne ait seçenekler listesini göstereceğiz. Örneğin, tam olarak ne yapı yapıyor ek bilgileri görüntülemek için derleme çıkışın ayrıntı düzeyini artırmak istediğiniz düşünün. İşte, nasıl yapabilir:
+Arama kutusuna, neredeyse her şey Visual Studio'da gitmek için hızlı ve kolay bir yoludur. Yapmak istediğiniz ilgili metin girebilir ve onu metne ait seçenekler listesini göstereceğiz. Örneğin, tam olarak ne yapı yapıyor ek bilgileri görüntülemek için derleme çıkışın ayrıntı düzeyini artırmak istediğiniz düşünün. İşte, nasıl yapabilir:
 
 ::: moniker range="vs-2017"
 
 1. Bulun **hızlı başlatma** IDE, sağ üst kısımdaki arama kutusuna. (Alternatif olarak, basın **Ctrl**+**Q** erişmek için.)
 
-2. Tür **ayrıntı** içine **hızlı başlatma** arama kutusu. Görüntülenen sonuçlardan seçin **projeler ve çözümler--> derleme ve çalıştırma** altında **seçenekleri** kategorisi.
+2. Tür **ayrıntı** kartındaki arama kutusuna. Görüntülenen sonuçlardan seçin **projeler ve çözümler--> derleme ve çalıştırma** altında **seçenekleri** kategorisi.
 
    ![Visual Studio 2017'de arama kutusuna hızlı başlatma](media/quickstart-IDE-quick-launch.png)
 
@@ -143,11 +143,11 @@ Açık **hata listesi** penceresini seçerek **görünümü** menüsü, ardında
 
 ::: moniker range=">=vs-2019"
 
-1. Bulun **hızlı başlatma** menüleri sağında yalnızca IDE üst kısmındaki arama kutusuna. (Alternatif olarak, basın **Ctrl**+**Q** erişmek için.)
+1. Tuşuna **Ctrl**+**Q** IDE üst kısmındaki arama kutusuna etkinleştirmek için.
 
-2. Tür **ayrıntı** içine **hızlı başlatma** arama kutusu. Görüntülenen sonuçlardan seçin **değişiklik MSBuild ayrıntı**.
+2. Tür **ayrıntı** kartındaki arama kutusuna. Görüntülenen sonuçlardan seçin **değişiklik MSBuild ayrıntı**.
 
-   ![Visual Studio 2019 arama kutusuna hızlı başlatma](media/vs-2019/quick-launch-verbosity.png)
+   ![Visual Studio 2019 arama kutusuna](media/vs-2019/quick-launch-verbosity.png)
 
    **Seçenekleri** iletişim kutusu açılır **derleme ve çalıştırma** seçenekler sayfası.
 
@@ -163,7 +163,7 @@ Açık **hata listesi** penceresini seçerek **görünümü** menüsü, ardında
 
 ## <a name="send-feedback-menu"></a>Menü geri bildirim gönder
 
-Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin önerileriniz varsa, kullanabileceğiniz herhangi bir sorunu karşılaşmamalıdırlar **geri bildirim gönder** Visual Studio penceresinin üst kısmındaki menü yanındaki **hızlı Başlatma** kutusu.
+Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin önerileriniz varsa, kullanabileceğiniz herhangi bir sorunu karşılaşmamalıdırlar **geri bildirim gönder** Visual Studio penceresinin üst kısmındaki menü.
 
 ::: moniker range="vs-2017"
 

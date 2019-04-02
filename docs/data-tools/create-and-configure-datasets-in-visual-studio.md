@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cba7cf4a402b92f05f12faa39b88ab03cd5bd03b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943018"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790869"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 
@@ -70,7 +70,7 @@ Bu yordamda, ilk veri kümesini oluşturmak için kullanılan aynı veritabanın
 
 1. Veri kümesi düğümünde tıklayın **Çözüm Gezgini** getirilecek **veri kümesi Tasarımcısı** odaklanır.
 
-2. Tıklayın **veri kaynakları** sekmesinde Visual Studio veya türü sol kenar boşluğunda **veri kaynakları** içinde **hızlı başlatma** kutusu.
+2. Tıklayın **veri kaynakları** sekmesinde Visual Studio veya türü sol kenar boşluğunda **veri kaynakları** arama kutusuna.
 
 3. Veri kümesi düğümüne sağ tıklayıp **veri kaynağı Yapılandırma Sihirbazı'nı**.
 

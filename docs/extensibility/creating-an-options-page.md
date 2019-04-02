@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194424"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790166"
 ---
 # <a name="create-an-options-page"></a>Seçenekler sayfası oluşturma
 
@@ -101,7 +101,7 @@ Bu izlenecek yolda incelemek ve özelliklerini ayarlamak için bir özellik kıl
 
      Sol bölmede görmelisiniz **My kategori**. (Hakkında yarı yarıya listede aşağı görüneceğini için seçenekleri kategoriler alfabetik olarak listelenir.) Açık **My kategori** ve ardından **kılavuz sayfam**. Sağ bölmede seçenekler kılavuz görüntülenir. Özellik kategorisi **My seçenekleri**, ve özellik adı **My tamsayı seçeneği**. Özellik açıklaması **benim tamsayı seçeneğini**, bölmesinin en altında görünür. Değer 256'ın başlangıç değerinden başka bir şeye değiştirin. Tıklayın **Tamam**ve ardından yeniden **kılavuz sayfam**. Yeni değer devam ettiğini görebilirsiniz.
 
-     Seçenekler sayfası, Visual Studio'nun Hızlı Başlat da kullanılabilir. IDE'nin sağ üst köşedeki hızlı başlatma penceresinde yazın **My kategori** görürsünüz **My Kategori -> My kılavuz sayfasıyla** açılır menüde listelenir.
+     Seçenekler sayfası, ayrıca Visual Studio'nun arama kutusu kullanılabilir. IDE üst kısmındaki arama kutusuna yazın **My kategori** göreceksiniz **My Kategori -> My kılavuz sayfasıyla** sonuçlarda listelenir.
 
 ## <a name="create-a-tools-options-custom-page"></a>Özel Araçlar Seçenekler sayfası oluşturma
 

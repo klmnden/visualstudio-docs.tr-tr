@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325298"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790673"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio IDE’ye ilk bakış
 
@@ -112,13 +112,13 @@ Açalım **hata listesi** penceresini seçerek **görünümü** menüsü, ardın
 
 ![Visual Studio çıktı penceresinde](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Hızlı Başlat
+## <a name="search-box"></a>Arama kutusu
 
-**Hızlı başlatma** kutusu, kadar her şeyi Visual Studio'da düzgün hızlı ve kolay bir yöntemdir. Yapmak istediğiniz ilgili metin girebilir ve onu metne ait seçenekler listesini göstereceğiz. Örneğin, tam olarak ne yapı yapıyor ek bilgileri görüntülemek için derleme çıkışın ayrıntı düzeyini artırmak istediğiniz düşünün. İşte, nasıl yapabilir:
+Arama kutusuna kadar her şeyi Visual Studio'da düzgün için hızlı ve kolay bir yoludur. Yapmak istediğiniz ilgili metin girebilir ve onu metne ait seçenekler listesini göstereceğiz. Örneğin, tam olarak ne yapı yapıyor ek bilgileri görüntülemek için derleme çıkışın ayrıntı düzeyini artırmak istediğiniz düşünün. İşte, nasıl yapabilir:
 
-1. Tür **ayrıntı** içine **hızlı başlatma** kutusu. Görüntülenen sonuçlardan seçin **projeler ve çözümler--> derleme ve çalıştırma** altında **seçenekleri** kategorisi.
+1. Tür **ayrıntı** kartındaki arama kutusuna. Görüntülenen sonuçlardan seçin **projeler ve çözümler--> derleme ve çalıştırma** altında **seçenekleri** kategorisi.
 
-   ![Visual Studio'da hızlı başlatma kutusu](media/quickstart-IDE-quick-launch.png)
+   ![Visual Studio'da arama kutusu](media/quickstart-IDE-quick-launch.png)
 
    **Seçenekleri** iletişim kutusu açılır **derleme ve çalıştırma** seçenekler sayfası.
 
@@ -132,7 +132,7 @@ Açalım **hata listesi** penceresini seçerek **görünümü** menüsü, ardın
 
 ## <a name="send-feedback-menu"></a>Menü geri bildirim gönder
 
-Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin önerileriniz varsa, kullanabileceğiniz herhangi bir sorunu karşılaşmamalıdırlar **geri bildirim gönder** Visual Studio penceresinin üst kısmındaki menü yanındaki **hızlı Başlatma** kutusu.
+Visual Studio kullanıyorsanız ya da ürünün iyileştirilmesine ilişkin önerileriniz varsa, kullanabileceğiniz herhangi bir sorunu karşılaşmamalıdırlar **geri bildirim gönder** Visual Studio penceresinin üst kısmındaki menü.
 
 ![Visual Studio'da menü geri bildirim gönder](../ide/media/quickstart-ide-send-feedback.png)
 

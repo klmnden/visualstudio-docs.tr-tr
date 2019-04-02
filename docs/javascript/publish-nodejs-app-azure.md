@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355756"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790283"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
 
@@ -29,7 +29,7 @@ Linux App Service Node.js uygulaması (aksine, Windows uygulama Node.js uygulama
 
 Bu öğreticide Visual Studio için Node.js araçları ile yüklenen bir şablon başlayarak bir Node.js uygulaması oluşturma, kod github'daki depoya itme ve gelen dağıtabilirsiniz, böylece bir Azure App Service Azure web portalı üzerinden sağlama işlemini gösterir. GitHub deposu. Azure uygulama hizmeti sağlama ve yerel bir Git deposundan kod göndermek için komut satırı kullanmak için bkz. [Node.js uygulaması oluşturma](/azure/app-service/containers/quickstart-nodejs).
 
-Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kodunuz için bir GitHub deposu oluşturma
@@ -38,7 +38,7 @@ Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio yüklü ve Node.js geliştirme iş yükü olması gerekir. 
+* Visual Studio yüklü ve Node.js geliştirme iş yükü olması gerekir.
 
     ::: moniker range=">=vs-2019"
     Visual Studio 2019'ı henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
@@ -62,7 +62,7 @@ Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 1. TypeScript Express yeni bir uygulama oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **yeni temel Azure Node.js Express 4 uygulaması oluşturma** (TypeScript). Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **yeni temel Azure Node.js Express 4 uygulaması oluşturma** (TypeScript). Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **TypeScript**, ardından **Node.js**. Orta bölmede seçin **temel Azure Node.js Express 4 uygulaması**, ardından **Tamam**.

@@ -1,7 +1,7 @@
 ---
 title: JavaScript Konsolu komutları | Microsoft Docs
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701959"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790777"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio'da JavaScript Konsolu komutları
 
-İleti göndermek ve Visual Studio JavaScript konsol penceresinde diğer görevleri gerçekleştirmek için komutlarını kullanabilirsiniz. Bu pencere kullanmayı gösteren örnekler için bkz [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md). Bu konu başlığı altındaki bilgiler, UWP uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulan uygulamalar için geçerlidir. Cordova uygulamalarında desteklenen Konsolu komutları hakkında daha fazla bilgi için bkz. [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Internet Explorer F12 araçlarındaki konsolunu kullanma hakkında daha fazla bilgi için bkz. [bu konuda](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).
+::: moniker range=">=vs-2019"
+İleti göndermek ve Visual Studio JavaScript konsol penceresinde diğer görevleri gerçekleştirmek için komutlarını kullanabilirsiniz. Bu konu başlığı altındaki bilgiler, Node.js uygulamaları ile Visual Studio kullanılarak oluşturulan uygulandığı **Node.js geliştirme** iş yükü yüklenmiş.
+::: moniker-end
+::: moniker range="vs-2017"
+İleti göndermek ve Visual Studio JavaScript konsol penceresinde diğer görevleri gerçekleştirmek için komutlarını kullanabilirsiniz. Bu pencere kullanmayı gösteren örnekler için bkz [hızlı başlangıç: JavaScript hata ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Bu konu başlığı altındaki bilgiler, UWP Node.js uygulaması için geçerlidir uygulamaları ve Apache Cordova için Visual Studio Araçları kullanılarak oluşturulmuş uygulamalar. Cordova uygulamalarında desteklenen Konsolu komutları hakkında daha fazla bilgi için bkz. [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
+::: moniker-end
 
 JavaScript Konsolu penceresi kapatıldığında, Visual Studio'da seçerek hata ayıklarken bunu açabilirsiniz **hata ayıklama** > **Windows** > **JavaScript Konsol**.
 
 > [!NOTE]
 > Penceresi bir hata ayıklama oturumu sırasında kullanılabilir durumda değilse, hata ayıklayıcı türü ayarlandığından emin olun **betik** proje için hata ayıklama özellikleri.
+
+Microsoft Edge geliştirici araçları konsolunu kullanma hakkında daha fazla bilgi için bkz. [bu konuda](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Konsol nesne komutları
 Bu tablo için söz dizimi görülmektedir `console` nesne komutları JavaScript konsol penceresinde kullanabilirsiniz veya konsola kodunuzdan iletileri göndermek için kullanabilirsiniz. Böylece bilgi iletilerini ve hata iletileri ayırt etmek isterseniz, bu nesne forms sayısını sağlar.
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)
+- [Hızlı Başlangıç: JavaScript hatalarını ayıklama](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

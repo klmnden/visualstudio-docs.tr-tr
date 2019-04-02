@@ -9,16 +9,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323876"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789932"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Nasıl yapılır: Derleme günlüğü dosyalarını görüntüleme, kaydetme ve yapılandırma
 
-Visual Studio IDE içinde bir projeyi derledikten sonra bu yapı hakkındaki bilgileri görüntüleyebilirsiniz **çıkış** penceresi. Bu bilgileri kullanarak, örneğin, bir derleme hatası giderme olabilir. C++ projeleri için de aynı bilgileri görüntüleyebileceğiniz bir *.txt* dosyası oluşturulur ve otomatik olarak kaydedilir. Yönetilen kod projeleri için kopyalayın ve yapıştırın bilgilerinden **çıkış** penceresine bir *.txt* dosya ve dosyayı kaydedin. IDE, hangi tür bilgileri, her yapı hakkındaki görüntülemek istediğinizi belirtmek için de kullanabilirsiniz.
+Visual Studio IDE içinde bir projeyi derledikten sonra bu yapı hakkındaki bilgileri görüntüleyebilirsiniz **çıkış** penceresi. Bu bilgileri kullanarak, örneğin, bir derleme hatası giderme olabilir. 
+
+  - C++ projeleri için de aynı bilgileri görüntüleyebileceğiniz bir *.txt* dosyası oluşturulur ve otomatik olarak kaydedilir. 
+
+  - Yönetilen kod projeleri için derleme çıktı penceresini ve ENTER tuşuna tıklayabilirsiniz **Ctrl**+**S**. Visual Studio için bilgileri kaydetmek için bir konum ister **çıkış** penceresine bir *.txt* dosya. 
+  
+IDE, hangi tür bilgileri, her yapı hakkındaki görüntülemek istediğinizi belirtmek için de kullanabilirsiniz.
 
 MSBuild kullanarak herhangi bir türden proje oluşturuyorsanız, oluşturabileceğiniz bir *.txt* yapı hakkındaki bilgileri kaydetmek için dosya. Daha fazla bilgi için [elde derleme günlükleri](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -30,9 +36,11 @@ MSBuild kullanarak herhangi bir türden proje oluşturuyorsanız, oluşturabilec
 
 1.  Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
-2.  İçinde **çıkış** penceresinde derleme bilgileri vurgulayın ve ardından kopyalayın **Pano**.
+2.  İçinde **çıkış** penceresinde herhangi bir metin seçeneğine tıklayın.
 
-3.  Gibi bir metin düzenleyicisinde açın **not defteri**bilgileri dosyasına yapıştırın ve kaydedin.
+3.  Tuşuna **Ctrl**+**S**.
+
+   Visual Studio için yapı çıkışını kaydetmek için bir konum ister.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Yapı günlüğünde dahil bilgi miktarını değiştirmek için
 

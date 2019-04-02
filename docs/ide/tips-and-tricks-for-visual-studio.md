@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223370"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790374"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio için klavye kısayolları
 
@@ -50,9 +50,9 @@ Bu makalede klavye kısayollarını kullanarak, Visual Studio'da daha kolay gezi
 |||
 |-|-|
 |Çözüm Gezgini araması|**CTRL**+**;**|
-|Herhangi bir araç penceresine arama kutusuna odak Yerleştir|**Alt** + **`** araç penceresi odağa sahip olduğunda|
-|Hızlı Başlat|**CTRL**+**Q**|
-|Kapsam sonuçlarını Hızlı Başlat|- @opt Seçenekleri<br />- @cmd Komutları<br />- @mru En son kullanılan<br />- @doc Açık belgeler|
+|Arama kutusuna herhangi bir araç penceresine odak yerleştirin|**Alt** + **`** araç penceresi odağa sahip olduğunda|
+|Arama kutusu|**CTRL**+**Q**|
+|Arama kutusu kapsam sonuçları|- @opt Seçenekleri<br />- @cmd Komutları<br />- @mru En son kullanılan<br />- @doc Açık belgeler|
 |Araçlar seçeneklerinde arayın|**CTRL**+**E**|
 
 ## <a name="editor-find"></a>Düzenleyici bulma

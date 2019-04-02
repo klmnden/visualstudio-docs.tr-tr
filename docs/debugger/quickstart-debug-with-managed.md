@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8762d13e1a5981f634b1b13fe08968a6b01c2b94
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 041dc4aa5107dab157eaf5b4bc8306b90c3b116c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475974"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789412"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: İle hata ayıklama C# veya Visual Basic, Visual Studio hata ayıklayıcıyı kullanma
 
@@ -28,7 +28,7 @@ Visual Studio hata ayıklayıcısını uygulamalarınızın hatalarını ayıkla
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **yeni konsol uygulaması (.NET Core) proje oluştur**. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **yeni konsol uygulaması (.NET Core) proje oluştur**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **.NET Core**seçip Ortadaki bölmeden **konsol uygulaması (.NET Çekirdek)**. Gibi bir ad yazın **MyDbgApp** tıklatıp **Tamam**.

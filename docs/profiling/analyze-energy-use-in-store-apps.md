@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872074"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790439"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını analiz etme
 
@@ -64,6 +64,7 @@ Enerji tüketimi Profil Oluşturucusu bu tanımları kullanır *güç* ve *enerj
 
 Örnek kod, bkz. Windows SDK'sı örneği [LoggingSession örneğine](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336).
 
+::: moniker range="vs-2017"
 **İşaretleri JavaScript kodunu ekleyin**
 
 Kullanıcı işaretleri eklemek için, kodunuzda işaretlemek istediğiniz noktalarda aşağıdaki kodu ekleyin:
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* kullanıcı işareti İpucunda görüntülenecek iletiyi içeren bir dizedir.
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>Profil oluşturma için ortamınızı yapılandırma
  İyi tahminler elde etmek için pilden güç alan düşük güç tüketimli bir cihazda uygulamanın enerji kullanımının profilini oluşturmak istersiniz. Visual Studio bu cihazların çoğunda çalışmadığından, Visual Studio bilgisayarınızı cihaza Visual Studio uzak araçlarını kullanarak bağlanmak gerekir. Uzaktaki bir cihaza bağlanmak için, hem Visual Studio projesini hem de uzak cihazı yapılandırmanız gerekir. Bkz: [uzak bir makinede çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-on-a-remote-machine.md) daha fazla bilgi için.
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>Diğer kaynaklar
 
-- **Bağlantı durumu ve maliyet Yönetimi** bölümlerinde [ C#/VB/C++ ve XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) ve [JavaScript ve HTML](/previous-versions/windows/apps/hh452983(v=win.10)) ağ sağlayan Windows API'leri açıklama bağlantı bilgilerini ağ trafiği maliyetini en aza indirmek için uygulamanızı kullanabilirsiniz.
+- **Bağlantı durumu ve maliyet Yönetimi** bölümlerinde [ C#/VB/C++ ve XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) açıklamak uygulamanızı maliyetini en aza indirmek için kullanabileceğiniz ağ bağlantı bilgileri sağlayan Windows API'leri ağ trafiği.
 
    UWP uygulamaları için Visual Studio simulator, ağ bilgi API'lerinin veri bağlantısı özelliklerinin benzetimini yapmak sağlar. Bkz: [simulator'da çalıştırmak UWP uygulamaları](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- **JavaScript işlev zamanlaması** ve **CPU kullanımı** araçları, yetersiz işlevlerin neden olduğu CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [analiz CPU kullanımı](../profiling/beginners-guide-to-performance-profiling.md).
+- **CPU kullanımı** araçları, yetersiz işlevlerin neden olduğu CPU yükünü azaltmanıza yardımcı olabilir. Bkz: [analiz CPU kullanımı](../profiling/beginners-guide-to-performance-profiling.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355769"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789919"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio için üretkenlik ipuçları
 
@@ -66,7 +66,7 @@ Komutlar, dosyalar ve Seçenekler, yalnızca geçerli görevinize ilgili bilgile
 
 - **Yalnızca istediğiniz hataları görüntülemek adresine**. Seçerseniz **filtre** düğmesini **hata listesi** araç çubuğu içinde görünen hata sayısını azaltabilirsiniz **hata listesi** penceresi. Yalnızca hataları, düzenleyicide açık olan dosyalardaki yalnızca geçerli dosyadaki hataları veya yalnızca geçerli projedeki hataları görüntüleyebilirsiniz. İçinde arama yapabilirsiniz **hata listesi** belirli hataları bulmak için penceresi.
 
-- **İletişim kutularını, menü komutlarını, seçeneklerini ve bulma**. İçinde [hızlı başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md) arama kutusuna, bulmaya çalıştığınız öğeler için anahtar sözcükleri veya tümceleri girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür **yeni proje**:
+- **İletişim kutularını, menü komutlarını, seçeneklerini ve bulma**. Arama kutusunda, bulmaya çalıştığınız öğeler için anahtar sözcüklere veya tümceciklere girin. Girerseniz, örneğin, aşağıdaki seçenekler görünür **yeni proje**:
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Komutlar, dosyalar ve Seçenekler, yalnızca geçerli görevinize ilgili bilgile
 
    ::: moniker range=">=vs-2019"
 
-   ![Hızlı Başlatma 'Yeni Proje' için arama sonuçları](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   !['Yeni Proje' için arama sonuçları](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Tuşuna **Ctrl**+**Q** doğrudan atlamak için **hızlı başlatma** arama kutusu.
+   Tuşuna **Ctrl**+**Q** doğrudan arama kutusuna gitmek için.
 
 ## <a name="debug-code"></a>Kodda hata ayıklama
 

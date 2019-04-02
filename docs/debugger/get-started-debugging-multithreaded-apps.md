@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476000"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790257"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Çok iş parçacıklı uygulamalarda hata ayıklamaya başlama (C#, Visual Basic, C++)
 
@@ -41,8 +41,8 @@ Bu 2 konu diğer birden çok iş parçacıklı hata ayıklama araçları kullanm
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
-    
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
+
     - İçin C# veya Visual Basic seçin, **oluştur yeni konsol uygulaması (.NET Framework) projesi** ya da C# veya Visual Basic. Görünen iletişim kutusunda **Oluştur**.
     - C++ için seçeneğini **yeni konsol uygulaması projesi oluşturma** C++ için. Görünen iletişim kutusunda **Oluştur**.
 

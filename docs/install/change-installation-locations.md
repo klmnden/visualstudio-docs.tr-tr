@@ -1,7 +1,7 @@
 ---
 title: Yükleme konumlarını seçme
-description: Sistem sürücünüzdeki yükleme ayak izini Visual Studio'nun konumunu indirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere değiştirerek azaltmak öğrenin.
-ms.date: 11/07/2018
+description: Sistem sürücünüzdeki yükleme ayak izini Visual Studio'nun konumunu indirme önbelleğini, paylaşılan bileşenler, SDK'ları ve araçları farklı sürücülere değiştirerek azaltmak öğrenin. Örneğin, bazı dosyalar C sürücüsündeki D sürücüye taşıyın.
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,24 +16,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 842fed287a6035684534c3d735d146e1b9a0fbfb
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: eee169fa758017988641bdec47a523adcebaba9c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324980"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790010"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio'da yükleme konumları seçin
-
-::: moniker range="vs-2017"
-
-**15.7 sürümündeki yeni**: Bazı dosyalar için konumun değiştirerek sistem sürücünüzde Visual Studio yükleme ayak izini azaltabilir. Özellikle, indirme önbelleğini, paylaşılan bileşenler, SDK'lar ve Araçlar dosyaları için farklı bir konum kullanabilirsiniz.
-
-::: moniker-end
 
 ::: moniker range="vs-2019"
 
 Bazı dosyalar için konumun değiştirerek sistem sürücünüzde Visual Studio yükleme ayak izini azaltabilir. Özellikle, indirme önbelleğini, paylaşılan bileşenler, SDK'lar ve Araçlar dosyaları için farklı bir konum kullanabilirsiniz.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+**15.7 sürümündeki yeni**: Bazı dosyalar için konumun değiştirerek sistem sürücünüzde Visual Studio yükleme ayak izini azaltabilir. Özellikle, indirme önbelleğini, paylaşılan bileşenler, SDK'lar ve Araçlar dosyaları için farklı bir konum kullanabilirsiniz.
 
 ::: moniker-end
 

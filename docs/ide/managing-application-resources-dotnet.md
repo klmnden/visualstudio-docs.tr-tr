@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dbd24ba98ad3f1b4f24a68c9775b1022ea08f6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970315"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789153"
 ---
 # <a name="manage-application-resources-net"></a>Uygulama kaynaklarını yönetme (.NET)
 
@@ -38,7 +38,7 @@ Derlenmemiş, ancak bir uygulamanın parçası olan dosyalar için örnek simge 
 Yönetilen kod projesi içinde proje özellikleri penceresini açın. Özellikler penceresinde ya da açabilirsiniz:
 
 - ' Nde proje düğümüne sağ tıklayarak **Çözüm Gezgini** seçerek **özellikleri**
-- "Proje özelliklerinde" yazarak **hızlı başlatma** penceresi
+- Yazarak **proje özellikleri** içinde **Ctrl**+**Q** arama kutusu
 - Seçme **Alt**+**girin** içinde **Çözüm Gezgini**
 
 Seçin **kaynakları** sekmesi. Ekleyebileceğiniz bir *.resx* projenizi değil bir zaten içeren, ekleyin ve farklı türde kaynakların silme ve var olan kaynakları değiştirmek dosyası.

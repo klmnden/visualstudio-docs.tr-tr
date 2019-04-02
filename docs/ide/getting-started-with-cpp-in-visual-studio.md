@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325100"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790348"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
 
@@ -38,7 +38,7 @@ Bu hızlı başlangıcı tamamlamak için C++ ile ilgili bilgi sahibi olmanız g
 
 ::: moniker-end
 
-## <a name="create-a-console-app"></a>Konsol uygulaması oluşturma
+## <a name="create-a-console-app"></a>Bir konsol uygulaması oluşturma
 
 Henüz çalışmıyorsa, Visual Studio'yu açın.
 
@@ -54,7 +54,7 @@ Visual Studio'yu açtıktan sonra IDE üç temel bölümlerini görebilirsiniz: 
 
 Başlangıç penceresi Visual Studio'yu açtıktan sonra ilk olarak görünür. Seçin **kod olmadan devam** geliştirme ortamını açın.
 
-IDE üç temel bölümlerini göreceksiniz: windows, menüler ve araç çubuklarını ve ana pencere alanını aracı. Araç pencereleri ve uygulama penceresinin sol tarafında sabitlenir. **Hızlı başlatma** standart araç kutusu ve menü çubuğu üstünde bulunur. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+IDE üç temel bölümlerini göreceksiniz: windows, menüler ve araç çubuklarını ve ana pencere alanını aracı. Araç pencereleri ve uygulama penceresinin sol tarafında sabitlenir. Arama kutusuna, menü çubuğu ve standart araç çubuğu üstünde bulunur. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
 
 ::: moniker-end
 

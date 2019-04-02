@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680938"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789698"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
 
@@ -50,9 +50,9 @@ Visual Studio IDE, birçok araç pencereleri gibi araç çubukları sahiptir. A�
 
 |Özellik|Açıklama|Tuş bileşimi|
 |-------------|-----------------| - |
-|IDE araç çubukları|Standart araç çubuğundaki ilk düğmeyi seçin.|**ALT**, **CTRL** + **TAB**|
-|Araç penceresi araç çubukları|Araç penceresi araç çubuklarını odağı taşıyın. <br> <br> **NOT:** Bu, çoğu araç pencerelerinin, ancak yalnızca odak araç penceresinde olduğunda çalışır. Ayrıca, ALT tuşunu önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin, ALT tuşunu seçerek önce kısa bir süre için SHIFT tuşunu basılı gerekir.|**SHIFT** + **ALT**|
-|Araç Çubukları|Sonraki araç ilk öğenin (araç odağa sahip olduğunda) gidin.|**CTRL** + **SEKMESİ**|
+|IDE araç çubukları|Standart araç çubuğundaki ilk düğmeyi seçin.|**Alt**, **Ctrl** + **sekmesi**|
+|Araç penceresi araç çubukları|Araç penceresi araç çubuklarını odağı taşıyın. <br> <br> **NOT:** Bu, çoğu araç pencerelerinin, ancak yalnızca odak araç penceresinde olduğunda çalışır. Ayrıca, ALT tuşunu önce SHIFT tuşunu seçmeniz gerekir. Takım Gezgini gibi bazı araç pencerelerinin, ALT tuşunu seçerek önce kısa bir süre için SHIFT tuşunu basılı gerekir.|**Shift** + **Alt**|
+|Araç Çubukları|Sonraki araç ilk öğenin (araç odağa sahip olduğunda) gidin.|**CTRL** + **sekmesi**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Diğer yararlı bir kısayol tuş birleşimleri
 
@@ -60,14 +60,14 @@ Bazı diğer yararlı kısayol tuş birleşimleri arasında şunlar yer alır.
 
 |Özellik|Açıklama|Tuş bileşimi|
 |-------------|-----------------| - |
-|IDE|Yüksek Karşıtlık açıp geçin. <br> <br> **NOT:** Standart Windows kısayol|**Sol ALT + sol SHIFT + EKRANI Yazdır**|
+|IDE|Yüksek Karşıtlık açıp geçin. <br> <br> **NOT:** Standart Windows kısayol|**Sol Alt + Sol Shift + PrtScn**|
 |İletişim kutusu|İletişim kutusunda bir onay kutusu seçeneğini kaldırın veya seçin. <br> <br> **NOT:** Standart Windows kısayol|**ARA ÇUBUĞU**|
-|Bağlam menüleri|(Sağ tıklama) bağlam menüsünü açın. <br> <br> **NOT:** Standart Windows kısayol|**SHIFT** + **F10**|
-|Menüler|Bir menü öğesi, Hızlandırıcı tuşlarıyla hızlıca erişin. Seçin **ALT** bir menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio'da proje Aç iletişim kutusunu görüntülemek için seçtiğiniz **ALT** + **F** + **O**  +  **P**.  <br><br> **NOT:** Standart Windows kısayol|**ALT** + **[harf]**|
-|Hızlı Başlatma arama kutusu| Visual Studio'da arama özelliğini kullanın|**CTRL** + **Q**|
-|Araç penceresi|Araç kutusu sekmeleri arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DARALTILDI**|
-|Araç penceresi|Bir denetimi araç kutusundan bir form veya Tasarımcısı ekleyin.|**GİRİN**|
-|Klavye, ortam, Seçenekler iletişim kutusu|Girilen bir tuş bileşimi Sil **kısayol tuşlarına basın** seçeneği.|**GERİ AL**|
+|Bağlam menüleri|(Sağ tıklama) bağlam menüsünü açın. <br> <br> **NOT:** Standart Windows kısayol|**Shift** + **F10**|
+|Menüler|Bir menü öğesi, Hızlandırıcı tuşlarıyla hızlıca erişin. Seçin **Alt** bir menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio'da proje Aç iletişim kutusunu görüntülemek için seçtiğiniz **Alt** + **F** + **O**  +  **P**.  <br><br> **NOT:** Standart Windows kısayol|**Alt** + **[harf]**|
+|Arama kutusu|Visual Studio'da arama özelliğini kullanın.|**CTRL** + **Q**|
+|Araç penceresi|Araç kutusu sekmeleri arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> ve<br /><br /> **CTRL** + **DARALTILDI**|
+|Araç penceresi|Bir denetimi araç kutusundan bir form veya Tasarımcısı ekleyin.|**Girin**|
+|Seçenekler iletişim kutusu: Ortam > klavye|Girilen bir tuş bileşimi Sil **kısayol tuşlarına basın** seçeneği.|**Geri Al**|
 
 > [!NOTE]
 > Gördüğünüz iletişim kutuları ve menü komutları, etkin ayarlarınıza ve ürün sürümüne bağlı olarak Yardım menüsünde açıklanana göre farklılık gösterebilir.
@@ -76,12 +76,12 @@ Bazı diğer yararlı kısayol tuş birleşimleri arasında şunlar yer alır.
 
 Ses için Visual Studio program olayları atamak için Windows Ses uygulaması kullanabilirsiniz. Özellikle, aşağıdaki program olaylara ses atayabilirsiniz:
 
- * Kesme noktası İsabeti
- * Derleme iptal edildi
- * Derleme başarısız oldu
- * Derleme başarılı
+* Kesme noktası İsabeti
+* Derleme iptal edildi
+* Derleme başarısız oldu
+* Derleme başarılı
 
-İşte nasıl.
+İşte nasıl:
 
 1. İçinde **arama** türü olan Windows 10 çalıştıran bir bilgisayarda kutusu **değiştirme sistem seslerini**.
 

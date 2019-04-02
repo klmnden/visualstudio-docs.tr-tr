@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 9ac39dc2458e2d1f0acbf73614b6345949a8d98d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354784"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790608"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE Hoş Geldiniz | Python
 
@@ -68,11 +68,11 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    ![Python projeleri için bağlam menüsünde PyLint komutu](media/code-pylint-command.png)
 
-- [Hızlı Başlatma](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Arama kutusu
 
-   Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. **Hızlı başlatma** arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa **hızlı başlatma** bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçlar sağlar.
+   Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. Arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa arama kutusuna bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçları sağlar.
 
-   ![Visual Studio'da hızlı başlatma arama kutusu](media/tour-ide-quick-launch.png)
+   ![Visual Studio'da arama kutusu](media/tour-ide-quick-launch.png)
 
 - Dalgalı çizgiler ve [hızlı Eylemler](../ide/quick-actions.md)
 

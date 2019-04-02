@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad5112313b57f4757c86a202cfdc711e9b478e1e
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 328224cd7ec55a51621805361d3b1af67aaa825c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647524"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790569"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: C ile basit uygulama oluşturma\#
 
@@ -52,7 +52,7 @@ Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan 
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Projeyi oluşturma
+## <a name="create-the-project"></a>Proje oluşturma
 
 Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.
 
@@ -81,7 +81,7 @@ Projeyi oluşturduktan sonra özelleştirebilirsiniz. Kullanarak **özellikleri*
 
 1. Open Visual Studio 2019.
 
-1. Pencerenin başlangıç seçin **yeni proje oluştur**. 
+1. Pencerenin başlangıç seçin **yeni proje oluştur**.
 
    !['Yeni Proje oluştur' penceresini görüntüleyin](../../get-started/media/vs-2019/start-window-create-new-project.png)
 
@@ -93,7 +93,7 @@ Projeyi oluşturduktan sonra özelleştirebilirsiniz. Kullanarak **özellikleri*
 3. Sonraki ekranda, projeye bir ad verin. **HelloWPFApp**ve **Oluştur**.
 
    !['yeni projenizi yapılandırın' penceresinde 'HelloWPFApp' projenizi adlandırın](./media/vs-2019/exploreide-nameproject.png)
- 
+
 HelloWPFApp projesi ve çözüm, Visual Studio oluşturur ve **Çözüm Gezgini** çeşitli dosyaları gösterir. **WPF Tasarımcısı** XAML görünümünü ve Tasarım görünümünü gösterir *MainWindow.xaml* bölünmüş görünümdeki. Daha fazla veya daha az gösterilecek bölme kaydırabilirsiniz ya da görünümün. Yalnızca bir görsel görünümünü veya yalnızca XAML görünümü görmek seçebilirsiniz. Aşağıdaki öğeler görünür **Çözüm Gezgini**:
 
 ![Çözüm Gezgini ile yüklenen HelloWPFApp dosyaları](../media/vs-2019/exploreide-hellowpfappfiles.png)
@@ -123,7 +123,7 @@ Bu uygulamaya üç tür denetim ekleyeceğiz: bir <xref:System.Windows.Controls.
 
 ### <a name="add-a-textblock-control"></a>TextBlock denetimi ekleme
 
-1. Girin **Ctrl**+**Q** çağrılacak **hızlı başlatma** ve türü **araç kutusu**. Seçin **Görünüm > Araç kutusu** sonuçları listesinde.
+1. Girin **Ctrl**+**Q** yazın ve arama kutusuna etkinleştirmek için **araç kutusu**. Seçin **Görünüm > Araç kutusu** sonuçları listesinde.
 
 2. İçinde **araç kutusu**, genişletme **ortak WPF denetimleri** TextBlock denetimini görmek için düğümü.
 

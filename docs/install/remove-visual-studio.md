@@ -2,7 +2,7 @@
 title: Visual Studio Kaldır
 titleSuffix: ''
 description: Tamamen Visual Studio, adım adım bilgisayarınızdan öğrenin.
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,18 +22,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322723"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790127"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio Kaldır
 
-Siz işlemi yıkıcı hatayla karşılaşırsanız ve onarmak ya da Visual Studio'yu kaldırın, çalıştırabileceğiniz `InstallCleanup.exe` aracı yükleme dosyalarını ve ürün bilgileri için Visual Studio 2017 ve sonraki sürümler yüklü tüm örneklerini kaldırın. Bu araç çalışıyor durumunda son çare olarak yapılması onarma veya kaldırma işlemi başarısız oldu ve özellikler, diğer Visual Studio yüklemeleri ya da onarılması için gereken diğer ürünleri kaldırabilirsiniz.
+Siz işlemi yıkıcı hatayla karşılaşırsanız ve onarmak ya da Visual Studio'yu kaldırın, çalıştırabileceğiniz `InstallCleanup.exe` aracı yükleme dosyalarını ve ürün bilgileri için Visual Studio 2017 veya Visual Studio 2019 yüklü tüm örneklerini kaldırın. Bu aracı çalıştırma yapılmalıdır son çare, onarma veya kaldırma işlemi başarısız oldu ve özellikler, diğer Visual Studio yüklemeleri veya daha sonra da onarılması için gerek duyabileceğiniz diğer ürünleri kaldırabilirsiniz.
 
-Aşağıdaki yönergeler aşağıdaki davranış farklı komut satırı anahtarları ile aracını çalıştırabilirsiniz:
+Aşağıdaki yönergelerde aşağıdaki davranış farklı komut satırı anahtarları ile aracını çalıştırabilirsiniz:
 
 | Anahtar | Davranış |
 | ------ | -------- |
@@ -42,8 +42,7 @@ Aşağıdaki yönergeler aşağıdaki davranış farklı komut satırı anahtarl
 
 1. Visual Studio Yükleyicisi’ni kapatın.
 2. Bir yönetici komut istemi açın. Bir yönetici komut istemi açmak için şu adımları izleyin:
-   * Tıklayın **Başlat** menüsü
-   * Tür **cmd**.
+   * Tür **cmd** "aramak için buraya yazın" kutusunda.
    * **Komut İstemi**'ne sağ tıklayın ve ardından **Yönetici olarak çalıştır**'a tıklayın.
 3. Tam yolunu yazın `InstallCleanup.exe` yardımcı programı ve istediğiniz herhangi bir komut satırı anahtarı geçirin. Varsayılan olarak, yardımcı program yolu aşağıdaki gibidir:
    ```

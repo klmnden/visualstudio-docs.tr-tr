@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223617"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790530"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kodu Visual Studio'da çalışma
 
@@ -44,7 +44,7 @@ Daha önce ve başarıyla derlenen kod için herhangi bir değişiklik yapmış 
 
 ![Visual Studio çıktı ve hata listesi](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Hata satırında tıklayın **hata listesi** penceresi hata satırına gitmek oluşuyor. (Veya tıklayarak satır numaralarını Aç **hızlı başlatma** "satır numaralarını" içine yazarak ve basarak dokunun, çubuğunda **Enter**. Bu ulaşmak için en hızlı yoludur **seçenekleri** Burada, kapatabilir satır numaralarını iletişim. Kullanmayı öğrenme **hızlı başlatma** çubuk ve kendiniz çok sayıda UI tıklama Kaydet!)
+Hata satırında tıklayın **hata listesi** penceresi hata satırına gitmek oluşuyor. (Veya tuşlarına basarak satır numaralarını Aç **Ctrl**+**Q**yazarak **satır numaraları**ve ardından **açık veya kapalısatırnumaralarınıAç**sonuçlarından. Bu ulaşmak için en hızlı yoludur **seçenekleri** iletişim Burada, kapatabilir satır numaralarını.)
 
 ![Satır numaraları ile Visual Studio Düzenleyicisi](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

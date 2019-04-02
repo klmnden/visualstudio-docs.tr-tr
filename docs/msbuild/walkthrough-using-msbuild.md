@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8793501df4e5ab90db5987332394b7420186b6c6
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a7a9149498301e26d9b0155df6175693f5c3679e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567925"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790920"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 
@@ -38,7 +38,7 @@ Visual Studio'dan veya MSBuild çalıştırın **komut penceresi**. Bu izlenecek
 1. Visual Studio'yu açın ve bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **winforms**, ardından **yeni bir Windows Forms uygulaması (.NET Framework) oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **winforms**, ardından **yeni bir Windows Forms uygulaması (.NET Framework) oluşturma**. Görünen iletişim kutusunda **Oluştur**.
 
     İçinde **adı** kutusuna `BuildApp`. Girin bir **konumu** çözümü, örneğin, *D:\\*. İçin Varsayılanları kabul **çözüm**, **çözüm adı** (**BuildApp**), ve **Framework**.
     ::: moniker-end

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916889"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790855"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Uygulama ve dağıtım bildirimlerini imzalama
 
@@ -35,11 +35,11 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
  Anahtar dosyaları oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Genel-özel anahtar çifti oluşturma](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sahip yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler *.pfx* uzantısı. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.
+> Visual Studio olan yalnızca kişisel bilgi değişimi (PFX) anahtar dosyalarını destekler *.pfx* uzantısı. Ancak, farklı türde Sertifikalar Geçerli kullanıcının Windows sertifika deposundan tıklayarak seçebileceğiniz **Store ' seçin** üzerinde **imzalama** proje özellikleri.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Uygulama ve dağıtım bildirimlerini imzalamak için bir sertifika kullanıyor
+## <a name="sign-using-a-certificate"></a>Bir sertifika kullanarak oturum açın
 
-1.  Proje Özellikleri penceresine gidin ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**, veya tür **proje özellikleri** içinde**Hızlı başlatma** penceresi veya tuşuna **Alt**+**Enter** içinde **Çözüm Gezgini**). Üzerinde **imzalama** sekmesinde **ClickOnce bildirimlerini imzala** onay kutusu.
+1.  Proje Özellikleri penceresine gidin ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**). Üzerinde **imzalama** sekmesinde **ClickOnce bildirimlerini imzala** onay kutusu.
 
 2.  Tıklayın **Store ' seçin** düğmesi.
 
@@ -52,7 +52,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
 
 4.  Ayrıca, bir zaman damgası sunucusunun adresini belirleyebilirsiniz **zaman damgası sunucu URL'si** metin kutusu. Bu, bildirimin imzalandığı zamanı belirten bir zaman damgası sağlayan bir sunucudur.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Uygulama ve dağıtım bildirimlerini imzalamak için mevcut bir anahtar dosyasını kullanarak
+## <a name="sign-using-an-existing-key-file"></a>Varolan anahtar dosyasını kullanarak oturum açın
 
 1.  Üzerinde **imzalama** sayfasında **ClickOnce bildirimlerini imzala** onay kutusu.
 
@@ -69,7 +69,7 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
 
 4.  Anahtar dosyaya erişmek için parolayı girin ve basın **Enter**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Uygulama ve dağıtım bildirimlerini imzalamak için bir test sertifikası kullanarak
+## <a name="sign-using-a-test-certificate"></a>Bir test sertifikası kullanarak oturum açın
 
 1.  Üzerinde **imzalama** sayfasında **ClickOnce bildirimlerini imzala** onay kutusu.
 

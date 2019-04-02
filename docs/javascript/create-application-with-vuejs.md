@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 57404553c8fe0afd03e575d77541980a03fdb9ae
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 2fd172de3791006688c5d9542a7d8c353bc4831e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568003"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789572"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio için node.js araçları kullanarak Vue.js uygulama oluşturma
 
@@ -66,7 +66,7 @@ Bu örnekte, boş bir ASP.NET Core uygulaması (C#) kullanın. Ancak, çeşitli 
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, ardından **yeni bir ASP.NET Core Web uygulaması oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **asp.net**, ardından **yeni bir ASP.NET Core Web uygulaması oluşturma**. Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **Visual C#** , ardından **Web**. Orta bölmede seçin **ASP.NET Core Web uygulaması**, ardından **Tamam**.

@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325220"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789997"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Seçenekler, metin düzenleyici, C/C++, Deneysel
 
@@ -28,7 +28,7 @@ Bu makalede, Visual Studio 2017'de seçenekler açıklanmaktadır. Visual Studio
 
 ::: moniker-end
 
-Bu özellik sayfasına erişmek için basın **denetimi** + **Q** etkinleştirmek için `Quick Launch` "Deneysel" yazın. Hızlı Başlatma sayfası ilk birkaç harfini sonra bulur. Seçim yaparak kendisine da edinebilirsiniz **Araçları** > **seçenekleri** ve genişletme **metin düzenleyici**, ardından **C/C++** ve ardından **Deneysel**.
+Bu özellik sayfasına erişmek için basın **Ctrl**+**Q** Anahtar'a tıklayın ve arama kutusuna etkinleştirmek için **Deneysel**. Arama sayfası ilk birkaç harfini sonra bulur. Seçim yaparak kendisine da edinebilirsiniz **Araçları** > **seçenekleri** ve genişletme **metin düzenleyici**, ardından **C/C++** ve ardından **Deneysel**.
 
 Bu özellikler, Visual Studio Kurulumu içinde kullanılabilir.
 

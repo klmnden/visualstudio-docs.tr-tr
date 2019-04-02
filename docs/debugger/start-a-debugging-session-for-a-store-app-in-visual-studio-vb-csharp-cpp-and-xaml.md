@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699476"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790517"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP uygulaması için hata ayıklama oturumu başlatma
 
-Bu makalede, bir evrensel Windows Platformu (UWP) uygulamasına yönelik bir Visual Studio hata ayıklama oturumu başlatma açıklar. UWP uygulamaları, XAML ve C++ ve XAML yazılabilir ve C#/Visual Basic, veya HTML ve JavaScript. Bir UWP uygulamasında hata ayıklamayı başlatmak için hata ayıklama oturumu yapılandırmak ve uygulamayı başlatmak için yol seçin.
+Bu makalede, bir evrensel Windows Platformu (UWP) uygulamasına yönelik bir Visual Studio hata ayıklama oturumu başlatma açıklar. UWP uygulamaları, XAML ve C++ ve XAML yazılabilir ve C#/Visual Basic. Bir UWP uygulamasında hata ayıklamayı başlatmak için hata ayıklama oturumu yapılandırmak ve uygulamayı başlatmak için yol seçin.
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Visual Studio 2019 ' başlayarak, HTML ve JavaScript için UWP uygulamaları artık desteklenmemektedir.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017'de çoğu komutlar ve bu makalede gösterilen seçenekler de HTML ve JavaScript için UWP uygulamaları için geçerlidir. Komutları farklı olduğunda arasında yönetilen ve C++ uygulamaları, JavaScript uygulamaları genellikle komutları C++ UWP uygulamaları için aynıdır.
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Visual Studio araç çubuğundaki hata ayıklamayı Başlat
 
@@ -90,7 +98,7 @@ Ek hata ayıklama seçeneklerini yapılandırmak için projenin hata ayıklama �
 
      ![C#ve Visual Basic proje hata ayıklama özellik sayfası](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - C++ ve JavaScript uygulamaları için **yapılandırma özellikleri** > **hata ayıklama**.
+   - C++ uygulamaları için **yapılandırma özellikleri** > **hata ayıklama**.
 
      ![C++ UWP uygulamasında hata ayıklama özellik sayfası](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ Ek hata ayıklama seçeneklerini yapılandırmak için projenin hata ayıklama �
 
 İçin C# ve varsayılan olarak yönetilen kod Visual Basic uygulamalar, Visual Studio hatalarını düzeltir. Diğer veya ek kod türlerinde hata ayıklama seçebilirsiniz. Ayrıca **hata ayıklayıcı türü** projenin bir parçası olan herhangi bir arka plan görevleri için değerler.
 
-C++ uygulamalarında Visual Studio, varsayılan olarak yerel kod hata ayıklamasına. JavaScript uygulamalar, Visual Studio, varsayılan olarak betik hata ayıklamasına. Belirli türlerdeki kod yerine veya ek olarak, yerel kod hatalarını ayıklamak seçebilirsiniz.
+C++ uygulamalarında Visual Studio, varsayılan olarak yerel kod hata ayıklamasına. Belirli türlerdeki kod yerine veya ek olarak, yerel kod hatalarını ayıklamak seçebilirsiniz.
 
 **Hata ayıklanacak kod türlerini belirtmek için:**
 
 - İçin C# ve Visual Basic uygulamaları aşağıdaki hata ayıklayıcıları birini seçin **uygulama türü** ve **arka plan işlem türü** bırakmalar altında **hata ayıklayıcı türü** üzerinde **hata ayıklama** özellik sayfası.
 
-- C + +/ JavaScript uygulamaları aşağıdaki hata ayıklayıcıları birini seçin **hata ayıklayıcı türü** üzerindeki açılır menüye **hata ayıklama** özellik sayfası.
+- C++ uygulamaları için aşağıdaki hata ayıklayıcıları birini **hata ayıklayıcı türü** üzerindeki açılır menüye **hata ayıklama** özellik sayfası.
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ C++ uygulamalarında Visual Studio, varsayılan olarak yerel kod hata ayıklamas
 
 -   İçin C# ve Visual Basic uygulamaları seçimini **yerel ağ geri döngüsüne izin ver** altındaki onay kutusunu **Başlat seçenekleri** üzerinde **hata ayıklama** özellik sayfası.
 
--   Visual C++ ve JavaScript uygulamaları için **Hayır** gelen **yerel ağ geri döngüsüne izin** üzerindeki açılır menüye **hata ayıklama** özellik sayfası.
+-   Visual C++ uygulamaları için **Hayır** gelen **yerel ağ geri döngüsüne izin** üzerindeki açılır menüye **hata ayıklama** özellik sayfası.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Hata ayıklama (isteğe bağlı) başlattığınızda uygulamayı yeniden yükleyin.
- Yükleme sorunları tanılamak için bir C# veya Visual Basic uygulama, select **kaldırma ve paketimle yeniden yükle** üzerinde **hata ayıklama** özellik sayfası. Bu seçenek, hata ayıklamaya başladığınızda özgün yükleme yeniden oluşturur. Bu seçenek, C++ ve JavaScript projeleri için kullanılamaz.
+ Yükleme sorunları tanılamak için bir C# veya Visual Basic uygulama, select **kaldırma ve paketimle yeniden yükle** üzerinde **hata ayıklama** özellik sayfası. Bu seçenek, hata ayıklamaya başladığınızda özgün yükleme yeniden oluşturur. C++ projeleri için bu seçenek kullanılamaz.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Uzaktan hata ayıklama için kimlik doğrulama seçeneklerini ayarlama
 
@@ -139,7 +147,7 @@ Varsayılan olarak, uzaktan hata ayıklayıcı seçtiğinizde çalıştırmak i�
 
 - İçin C# ve Visual Basic uygulamaları üzerinde **hata ayıklama** özellik sayfasında **uzak makine** olarak **hedef cihaz**. Ardından, **hiçbiri** veya **Evrensel (şifrelenmemiş Protokolü)** için **kimlik doğrulama modu**.
 
-- C++ ve JavaScript uygulamaları için **uzak makine** altında **başlatmak için hata ayıklayıcı** üzerinde **hata ayıklama** özellik sayfası. Ardından, **kimlik doğrulaması yok** veya **Evrensel (şifrelenmemiş Protokolü)** için **kimlik doğrulama türü**.
+- C++ uygulamaları için **uzak makine** altında **başlatmak için hata ayıklayıcı** üzerinde **hata ayıklama** özellik sayfası. Ardından, **kimlik doğrulaması yok** veya **Evrensel (şifrelenmemiş Protokolü)** için **kimlik doğrulama türü**.
 
 > [!CAUTION]
 > Uzaktan hata ayıklayıcı çalıştırdığınızda, ağ güvenliği olan **hiçbiri** veya **Evrensel (şifrelenmemiş Protokolü)** modu. Bu modlardan olduğunuz yalnızca güvenilen ağlarda emin kötü amaçlı kod veya tehlikeli trafik etkilenmez seçin.
@@ -156,7 +164,7 @@ Anında hata ayıklamaya başladığınızda varsayılan olarak, Visual Studio u
 
 - İçin C# ve Visual Basic uygulamaları, select **başlatma, ancak başlatıldığında kodumda Hata Ayıkla** altında **Başlat seçenekleri** üzerinde **hata ayıklama** özellik sayfası.
 
-- C++ ve JavaScript uygulamaları için **Hayır** gelen **uygulama Başlat** üzerindeki açılır menüye **hata ayıklama** özellik sayfası.
+- C++ uygulamaları için **Hayır** gelen **uygulama Başlat** üzerindeki açılır menüye **hata ayıklama** özellik sayfası.
 
 Arka plan görevleri hata ayıklama hakkında daha fazla bilgi için bkz. [tetikleyici askıya alma, sürdürme ve arka plan olaylarını UWP uygulamaları için](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
@@ -202,10 +210,12 @@ Hata ayıklayıcıyı iliştirmek için bir [!INCLUDE[win8_appname_long](../debu
 
  Visual Studio hata ayıklayıcı işleme ekler. Yürütme bir kesme noktasına ulaşıldığında, işlenmeyen bir özel durum oluşur, el ile yürütme askıya veya uygulama sona kadar devam eder.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > JavaScript uygulamaları çalıştırma örneğinde *wwahost.exe* işlem. Birden fazla JavaScript uygulama çalışıyorsa, bu uygulamanızın sayısal işlem kimliğini (PID) bilmeniz gerekir *wwahost.exe* kendisine eklemek için bir işlem.
 >
 > Diğer tüm JavaScript uygulamaları kapatmak için JavaScript uygulamanıza eklemek için en kolay yolu olan. Ya da çalışan PID dikkat edin *wwahost.exe* işlemleri Windows görev uygulama başlamadan önce Yöneticisi'nde. Uygulamanızı, başlattığınızda, *wwahost.exe* PID olan, daha önce not ettiğiniz olanlardan farklı olacaktır.
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visual Studio’da uygulamaların hatalarını ayıklama](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

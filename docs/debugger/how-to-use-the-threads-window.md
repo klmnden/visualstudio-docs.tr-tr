@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ef787bb9293bb26ba9ab706abf805005153752
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476039"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790803"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>İzlenecek yol: İş parçacıkları penceresini kullanarak bir çok iş parçacıklı uygulamaların hatalarını ayıklama (C#, Visual Basic, C++)
 
@@ -37,8 +37,8 @@ Bu öğreticide kullanmak üzere aşağıdaki birden çok iş parçacıklı uygu
 1. Visual Studio'yu açın ve yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
-    
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol** (veya **c ++**), seçin **şablonları**ve ardından:
+
     - İçin C#, seçin **oluştur yeni konsol uygulaması (.NET Framework) projesi** için C#. Görünen iletişim kutusunda **Oluştur**.
     - C++ için seçeneğini **yeni konsol uygulaması projesi oluşturma**. Görünen iletişim kutusunda **Oluştur**.
 

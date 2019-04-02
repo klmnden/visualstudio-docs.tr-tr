@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323821"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790426"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Nasıl yapılır: Uzantılar Visual Studio 2017 ve Visual Studio 2015 ile uyumlu hale getirmek
 
@@ -95,7 +95,7 @@ Hangi sürümleri hedefleyen bir VSIX oluşturmak için Visual Studio söylemeni
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Önkoşullar ekleme *extension.vsixmanifest* dosyası
 
-Önkoşullar, Visual Studio 2017 ile yeni bir özelliktir. Bu durumda, Visual Studio çekirdek Düzenleyicisi bir önkoşul olarak ihtiyacımız var. Visual Studio 2015 VSIX Tasarımcı yeni işlemez beri `Prerequisites` bölümünde bu bölümünde el ile XML kodunu düzenle gerekir. Alternatif olarak, Visual Studio 2017'yi açın ve önkoşulları eklemek için güncelleştirilmiş bildirim Tasarımcısı'nı kullanın.
+Bir önkoşul olarak Visual Studio çekirdek Düzenleyicisi ihtiyacımız var. Visual Studio'yu açın ve önkoşulları eklemek için güncelleştirilmiş bildirim Tasarımcısı'nı kullanın.
 
 Bunu el ile yapmak için:
 
@@ -112,7 +112,7 @@ Bunu el ile yapmak için:
 * Dosyayı kaydedin ve kapatın.
 
 > [!NOTE]
-> Visual Studio 2017'de VSIX Tasarımcısı ile bunu kullanmayı tercih ederseniz Visual Studio 2017'in tüm sürümleri ile uyumlu olduğundan emin olmak için önkoşul sürümü el ile düzenlemeniz gerekir. Tasarımcı en düşük sürüm (örneğin, 15.0.26208.0) Visual Studio'nun geçerli sürümünüzü ekleyecek olmasıdır. Ancak, diğer kullanıcıların daha önceki bir sürümü olabileceği el ile düzenlemeniz isteyeceksiniz 15.0 için.
+> Visual Studio 2017'in tüm sürümleri ile uyumlu olduğundan emin olmak için önkoşul sürümü el ile düzenlemeniz gerekebilir. Tasarımcı en düşük sürüm (örneğin, 15.0.26208.0) Visual Studio'nun geçerli sürümünüzü ekleyecek olmasıdır. Ancak, diğer kullanıcıların daha önceki bir sürümü olabileceği el ile düzenlemeniz isteyeceksiniz 15.0 için.
 
 Bu noktada, bildirim dosyanız aşağıdakine benzer görünmelidir:
 

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26808d1f7bb2e140ee3d70a8d8917e0e31dc7f4b
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: c9744fe2597a6f3b29d0ce42f2a6267b03ea6783
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515395"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790309"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Öğretici: Visual Basic ile basit uygulama oluşturma
 
@@ -53,11 +53,11 @@ Visual Studio'yu başlattıktan sonra araç pencerelerini, menüleri ve araç ç
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan devam** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
+Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan devam** geliştirme ortamını açın. Araç pencerelerini, menüleri ve araç çubuklarını ve ana pencere alanını görürsünüz. Araç pencereleri ve bir arama kutusu, menü çubuğu ve en üstte standart araç çubuğu uygulama penceresinin sol tarafında bulunan sabitlenir. Bir çözüm veya projeyi yüklediğinizde, düzenleyiciler ve tasarımcılar uygulama penceresinin Orta alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu Orta alanda geçireceksiniz.
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Projeyi oluşturma
+## <a name="create-the-project"></a>Proje oluşturma
 
 Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.
 
@@ -116,7 +116,7 @@ Bu uygulamaya üç tür denetim ekleyeceğiz: bir <xref:System.Windows.Controls.
 
 ### <a name="add-a-textblock-control"></a>TextBlock denetimi ekleme
 
-1.  Girin **Ctrl**+**Q** çağrılacak **hızlı başlatma** ve türü **araç kutusu**. Seçin **Görünüm > Araç kutusu** sonuçları listesinde.
+1.  Girin **Ctrl**+**Q** yazın ve arama kutusuna etkinleştirmek için **araç kutusu**. Seçin **Görünüm > Araç kutusu** sonuçları listesinde.
 
 2. İçinde **araç kutusu**, genişletme **ortak WPF denetimleri** TextBlock denetimini görmek için düğümü.
 

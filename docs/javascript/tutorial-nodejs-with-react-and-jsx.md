@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 781eddb72c30197d4eeb04890c9dc4193060a17d
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a93fc82ca8e4aa1f88de75d958bfea20fb85cd92
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647485"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790881"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
 Visual Studio, kolayca bir Node.js projesi oluşturma ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikler deneyimi sağlar. Bu öğreticide Visual Studio için Visual Studio şablondan bir Node.js web uygulaması projesi oluşturun. Ardından, React kullanarak basit bir uygulama oluşturun.
 
-Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Npm paketleri ekleme
@@ -85,7 +85,7 @@ Web paketleri JavaScript dosyaları, bir tarayıcıda çalıştırabilirsiniz. A
 1. Yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **boş Node.js Web uygulaması** (JavaScript). Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Node.js**, ardından **boş Node.js Web uygulaması** (JavaScript). Görünen iletişim kutusunda **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript**, ardından **Node.js**. Orta bölmede seçin **boş Node.js Web uygulaması**, adı **NodejsWebAppBlank**, ardından **Tamam**.

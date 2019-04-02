@@ -1,7 +1,7 @@
 ---
 title: Yükleme sorunlarını giderme veya yükseltme sorunları
 description: Bazı durumlarda sorunlar. Visual Studio yüklemesi veya yükseltmesi başarısız olursa, bu sayfa yardımcı olabilir.
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e5f754c9d52bc5756021cd3fbf45321c150fc59e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325126"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790621"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio yükleme sorunlarını giderme ve yükseltme sorunları
 
@@ -35,7 +35,17 @@ Aşağıdaki adımları, tipik bir çevrimiçi yükleme için en iyi duruma geti
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>1. adım - bu sorunun bilinen bir sorun olup olmadığını denetleyin
 
+::: moniker range="vs-2017"
+
 Microsoft düzeltmek için çalışmaktadır Visual Studio Yükleyicisi ile ilgili bazı bilinen sorunlar vardır. Sorununuz için geçici bir çözüm olup olmadığını görmek için [sürüm notlarımızda bilinen sorunlar bölümünü](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Microsoft düzeltmek için çalışmaktadır Visual Studio Yükleyicisi ile ilgili bazı bilinen sorunlar vardır. Sorununuz için geçici bir çözüm olup olmadığını görmek için [sürüm notlarımızda bilinen sorunlar bölümünü](/visualstudio/releases/2019/release-notes#-known-issues).
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>Adım 2 - Geliştirici topluluğu denetimiyle
 
@@ -48,20 +58,47 @@ Visual Studio yükleyicisi önyükleyici, Visual Studio Yükleyicisi'nin rest y�
 > [!NOTE]
 > Aşağıdaki eylemleri gerçekleştirerek, Visual Studio Installer dosyalarını yükler ve yükleme meta verileri sıfırlar.
 
+::: moniker range="vs-2017"
+
 1. Visual Studio Yükleyicisi’ni kapatın.
 2. Visual Studio yükleyicisi dizini silin. Genellikle, dizindir `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
 3. Visual Studio yükleyicisi önyükleyici çalıştırın. İndirmeler klasörüne bir dosya adıyla izleyen önyükleyici bulabileceğiniz bir `vs_[Visual Studio edition]__*.exe` deseni. Bu uygulamayı bulamazsanız, önyükleyici giderek indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) sayfası ve tıklayarak **indirme** Visual Studio sürümünüz için. Ardından yükleme meta verilerinizi sıfırlamak için yürütülebilir dosyayı çalıştırın.
 4. Yükleme veya Visual Studio güncelleştirmeyi yeniden deneyin. Yükleyici başarısız olmaya devam ederse, sonraki adıma gidin.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio Yükleyicisi’ni kapatın.
+2. Visual Studio yükleyicisi dizini silin. Genellikle, dizindir `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Visual Studio yükleyicisi önyükleyici çalıştırın. İndirmeler klasörüne bir dosya adıyla izleyen önyükleyici bulabileceğiniz bir `vs_[Visual Studio edition]__*.exe` deseni. Bu uygulamayı bulamazsanız, önyükleyici giderek indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) sayfası ve tıklayarak **indirme** Visual Studio sürümünüz için. Ardından yükleme meta verilerinizi sıfırlamak için yürütülebilir dosyayı çalıştırın.
+4. Yükleme veya Visual Studio güncelleştirmeyi yeniden deneyin. Yükleyici başarısız olmaya devam ederse, sonraki adıma gidin.
+
+::: moniker-end
+
 ### <a name="step-4---report-a-problem"></a>4. adım - sorun bildirin
 
 Bozuk dosyalarla ilgili olanlar gibi bazı durumlarda olay olarak denetlenmesi sırasında sorunlar yaşayabilirsiniz. Yardımımıza katkıda yardımcı olmak için lütfen aşağıdakileri yapın:
+
+::: moniker range="vs-2017"
 
 1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#how-to-get-visual-studio-installation-logs) Ayrıntılar için.
 2. Visual Studio Yükleyicisi'ni açın ve ardından **sorun bildir** Visual Studio geri bildirim aracını açın.
 ![Geri bildirim aracını açmak için geri bildirim sağlamak düğmesine sekme](media/report-a-problem.png)
 3. Sorun raporunuza bir başlık verin ve ilgili ayrıntıları sağlayın. Tıklayın **sonraki** gitmek için **ekleri** bölümüne ve ardından oluşturulan günlük dosyasını ekleyin (dosya altındadır genellikle `%TEMP%\vslogs.zip`).
 4. Tıklayın **sonraki** sorun raporunuzu gözden geçirin ve ardından **Gönder**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Uygulamanızın Kurulum günlükleri toplayın. Bkz: [Visual Studio yükleme günlüklerini almak nasıl](#how-to-get-visual-studio-installation-logs) Ayrıntılar için.
+2. Visual Studio Yükleyicisi'ni açın ve ardından **sorun bildir** Visual Studio geri bildirim aracını açın.
+![Geri bildirim aracını açmak için geri bildirim sağlamak düğmesine sekme](media/vs-2019/vs-installer-report-problem.png)
+3. Sorun raporunuza bir başlık verin ve ilgili ayrıntıları sağlayın. Tıklayın **sonraki** gitmek için **ekleri** bölümüne ve ardından oluşturulan günlük dosyasını ekleyin (dosya altındadır genellikle `%TEMP%\vslogs.zip`).
+4. Tıklayın **sonraki** sorun raporunuzu gözden geçirin ve ardından **Gönder**.
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Adım 5 - Çalıştır InstallCleanup.exe yükleme dosyalarını kaldırmak için
 

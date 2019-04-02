@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043771"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790387"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio’dan UWP uygulamaları dağıtma
 
@@ -76,7 +76,7 @@ Dağıtım, uygulama dosyaları uzak cihaza göndermek için uzaktan hata ayıkl
 
     **Uzak bağlantı** iletişim kutusu, yerel ağ alt ağı ve bir Ethernet kablosuyla doğrudan Visual Studio makinesine bağlı herhangi bir CİHAZDAN şirket cihazları görüntüler.
 
-   **Uzak cihazın bir JavaScript ya da Visual C++ proje sayfada belirtme**
+   **Uzak cihazın bir Visual C++ proje sayfada belirtme**
 
    ![C&#43; &#43; proje uzaktan hata ayıklama özellikleri](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Uygulama ağ geri döngüsü muafiyet kaldırmak için:
 
 - Üzerinde C# ve Visual Basic hata ayıklama özellik sayfası, NET **ağ geri döngüsüne izin** onay kutusu.
 
-- JavaScript ve hata ayıklama özellik sayfası **ağ geri döngüsüne izin** değerini **Hayır**.
+- C++ hata ayıklama özellik sayfasında ayarlanmış **ağ geri döngüsüne izin** değerini **Hayır**.
 
-**Başlatma, ancak başlatıldığında kodumda Hata Ayıkla (C# ve Visual Basic) / uygulama başlatma (JavaScript ve C++)**
+**Başlatma, ancak başlatıldığında kodumda Hata Ayıkla (C# ve Visual Basic) / uygulama başlatma (C++)**
 
 Dağıtım, uygulama başlatıldığında hata ayıklama oturumu otomatik olarak başlayacak şekilde yapılandırmak için:
 
 - Üzerinde C# ve Visual Basic hata ayıklama özellik sayfasını kontrol edin, **başlatma, ancak başlatıldığında kodumda Hata Ayıkla** onay kutusu.
 
-- JavaScript ve hata ayıklama özellik sayfası **uygulama Başlat** değerini **Evet**.
+- C++ hata ayıklama özellik sayfasında ayarlanmış **uygulama Başlat** değerini **Evet**.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

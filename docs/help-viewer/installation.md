@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155675"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789685"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Yardım Görüntüleyicisi'ni yükleme
 
@@ -31,11 +31,11 @@ Yardım Görüntüleyici, Visual Studio'nun isteğe bağlı yükleme bileşendir
 
 1. Seçin **Değiştir** düğmesini Microsoft Yardım Görüntüleyicisi'ni başlatın.
 
-Aracılığıyla kolayca Microsoft Yardım Görüntüleyicisi'ni yüklemek için başka bir yolu ise **hızlı başlatma** kutusunda:
+Kolayca Microsoft Yardım Görüntüleyicisi'ni yüklemek için başka bir arama kutusu yoludur:
 
-1. Yazın veya girin **Yardım Görüntüleyicisi** içinde **hızlı başlatma** Visual Studio başlık çubuğunda kutusu.
+1. Tuşuna **Ctrl**+**Q** yazın veya girin **Yardım Görüntüleyicisi** arama kutusuna.
 
-   ![Hızlı Başlatma kutusu](media/installation/quick-launch.png)
+   ![Arama kutusu](media/installation/quick-launch.png)
 
 1. Adlı sonucu seçin **Yardım Görüntüleyicisi'ni (ayrı ayrı bileşen)**.
 

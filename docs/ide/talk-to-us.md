@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 3df55c70c476288df7ae8f966adbad644971b27e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953530"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790699"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio ürün geri bildirimi
 
@@ -24,7 +24,7 @@ Bizimle iletişime geçin! Ürünlerimizi ve belgelerini geliştirmek için fiki
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Visual Studio ile ilgili bir sorun bildirmek istiyorum
 
-Visual Studio ile ilgili sorunlarla karşılaşırsanız&mdash;kilitlenmeler, yavaş performans ya da beklenmeyen davranışı gibi&mdash;kullanarak bize bildirin **sorun bildir** aracı. Visual Studio geri bildirim simgesinin yanındaki seçin **hızlı başlatma**, ya da seçin **yardımcı** > **geri bildirim gönder** > **raporu bir Sorun** menü çubuğundan. Ardından, Visual Studio açılır [Geliştirici topluluğu](https://developercommunity.visualstudio.com) burada oturum açabilirsiniz sorunu bildirmek için tarayıcınızda sayfa. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md).
+Visual Studio ile ilgili sorunlarla karşılaşırsanız&mdash;kilitlenmeler, yavaş performans ya da beklenmeyen davranışı gibi&mdash;kullanarak bize bildirin **sorun bildir** aracı. Visual Studio'da arama kutusunun yanındaki geri bildirim simgesini seçin veya tercih **yardımcı** > **geri bildirim gönder** > **sorun bildir** menüsünden çubuk. Ardından, Visual Studio açılır [Geliştirici topluluğu](https://developercommunity.visualstudio.com) burada oturum açabilirsiniz sorunu bildirmek için tarayıcınızda sayfa. Daha fazla bilgi için [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio özellikleri hakkında bir öneriyse yapmak istiyorum
 

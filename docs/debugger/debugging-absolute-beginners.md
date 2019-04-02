@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476052"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789399"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Yeni başlayanlar için hata ayıklama
 
@@ -85,13 +85,13 @@ Ardından, bazı hataları olan bir uygulama oluşturacağız.
 1. Visual Studio'yu açın.
 
     ::: moniker range=">=vs-2019"
-    Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **konsol**, seçin **şablonları**, ardından **yeni konsol uygulaması (.NET Framework) oluşturma** veya **Yeni konsol uygulaması (.NET Core) oluşturma**. Görünen iletişim kutusunda **Oluştur**. Gibi bir ad yazın **ConsoleApp FirstApp** tıklatıp **Oluştur**.
+    Pencerenin başlangıç seçin **yeni bir proje oluşturma**. Tür **konsol** arama kutusuna ve ardından **konsol uygulaması (.NET Framework)** veya **konsol uygulaması (.NET Core)**. Seçin **sonraki**. Bir proje adı gibi tür **ConsoleApp FirstApp** tıklatıp **Oluştur**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual C#** , seçin **konsol uygulaması**, Orta bölmede seçin **konsol uygulaması (.NET framework)**  veya **konsol uygulaması (.NET Core)**. Gibi bir ad yazın **ConsoleApp FirstApp** tıklatıp **Tamam**.
     ::: moniker-end
 
-    Görmüyorsanız **konsol uygulaması (.NET Framework)** veya **konsol uygulaması (.NET Core)** proje şablonu, Git **Araçları** > **araçları edinme ve Özellikleri...** , Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** iş yükü veya **.NET Core çoklu platform geliştirme** iş yükü, ardından **Değiştir**.
+    Görmüyorsanız **konsol uygulaması (.NET Framework)** veya **konsol uygulaması (.NET Core)** proje şablonu, Git **Araçları** > **araçları edinme ve Özellikleri**, Visual Studio yükleyicisi açılır. Seçin **.NET masaüstü geliştirme** iş yükü veya **.NET Core çoklu platform geliştirme** iş yükü, ardından **Değiştir**.
 
     Visual Studio Çözüm Gezgini'nde sağ bölmede görünür konsol projesi oluşturur.
 

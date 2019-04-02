@@ -2,7 +2,7 @@
 title: 'Öğretici: Bir depodan proje açma'
 description: Visual Studio kullanarak bir Git veya Azure DevOps deposunda bir projeyi açmayı öğrenin.
 ms.custom: get-started
-ms.date: 03/13/2019
+ms.date: 03/30/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f017e0ef3d7b76ba4d5de18ecab614f030b07501
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 7fbea3fe7599bf1fc970f5fa77841a395bc5419b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070080"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790660"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Öğretici: Bir depodan proje açma
 
@@ -38,6 +38,8 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 ::: moniker-end
 
 ## <a name="open-a-project-from-a-github-repo"></a>Bir GitHub deposundan proje açma
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın.
 
@@ -69,7 +71,33 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
    ![Visual Studio kullanarak bir GitHub deposunda bir projeyi açma animasyon](./media/open-project-from-github.gif)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. Pencerenin başlangıç seçin **Kopyala veya kod kullanıma**.
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Girin veya depo konumunu yazın ve ardından **kopya**.
+
+   !['Kopyala veya kullanıma alma kodu' penceresini görüntüleyin](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Visual Studio projeyi depodan açar.
+
+1. Kullanılabilir bir çözüm dosyası varsa, "Çözümler ve klasörler" açılan menüsünde görünür. Bu dosyayı seçin ve Visual Studio çözümünüzü açar.
+
+   ![Çözüm Gezgini aşağı açılan listeden açmak istediğiniz seçin](./media/open-proj-repo-github-solutions-folders-picker.png)
+
+   Deponuzdaki bir çözüm dosyası (özellikle bir .sln dosyası) yoksa açılan menüsü "Hiçbir çözüm bulunamadı." Yazar Ancak, herhangi bir dosyadan klasör menüsü, Visual Studio Kod Düzenleyicisi'nde açmak için çift tıklayabilirsiniz.
+
+::: moniker-end
+
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>Azure DevOps bir depodan proje açma
+
+::: moniker range="vs-2017"
 
 1. Visual Studio 2017'yi açın.
 
@@ -103,7 +131,48 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
    Bir çözüm dosyası (özellikle bir .sln dosyası), "Çözümler ve klasörler" açılan menüsünün görünür. Bu dosyayı seçin ve Visual Studio çözümünüzü açar.
 
    Deponuzdaki bir çözüm dosyası yoksa, açılan menüsü "Hiçbir çözüm bulunamadı" varsayalım. Ancak, herhangi bir dosyadan klasör menüsü, Visual Studio Kod Düzenleyicisi'nde açmak için çift tıklayabilirsiniz.
-  
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+1. Pencerenin başlangıç seçin **Kopyala veya kod kullanıma**.
+
+   !['Yeni Proje oluştur' penceresini görüntüleyin](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. İçinde **bir depoya göz atmak** bölümünde, seçin **Azure DevOps**.
+
+   !['Kopya veya kod kullanıma' penceresini görüntüleyin](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Bir oturum açma penceresi görürseniz, hesabınızda oturum açın.
+
+1. İçinde **projeye bağlan** iletişim kutusunda, bağlanmak ve ardından istediğiniz depoyu seçin **kopya**.
+
+      ![Visual Studio'dan oluşturulan "Bir proje Bağlan" iletişim kutusu](./media/open-proj-azure-devops-connect-cloud-clone.png)
+
+    > [!NOTE]
+    > Liste kutusunda gördüğünüz erişiminiz Azure DevOps depolar bağlıdır.
+
+   Visual Studio açılır **Takım Gezgini** ve kopyalama tamamlandıktan sonra bir bildirim görüntülenir.
+
+     ![Kopyalama tamamlandıktan sonra Visual Studio Takım Gezgini penceresi](./media/vs-2019/clone-complete-azure-devops.png)
+
+1. Dosya ve klasörlerinizi görüntülemek için seçin **klasör görünümünü göster** bağlantı.
+
+     ![Kopyalama tamamlandıktan sonra Visual Studio Takım Gezgini penceresinde çözümleri bölümünü](./media/vs-2019/show-folder-view-azure-devops.png)
+
+     Visual Studio açılır **Çözüm Gezgini**.
+
+1. Seçin **çözümler ve klasörler** açmak bir çözüm dosyasını (.sln dosyası özellikle) aramak için bağlantı.
+
+      ![Visual Studio'da Takım Gezgini'nden "Çözümler ve klasörler" bildirimi](./media/open-proj-repo-solutions-folders.png)
+
+   Deponuzdaki bir çözüm dosyası yoksa, bir "Hiçbir çözüm bulunamadı" iletisi görüntülenir. Ancak, herhangi bir dosyadan klasör menüsü, Visual Studio Kod Düzenleyicisi'nde açmak için çift tıklayabilirsiniz.
+
+::: moniker-end
+
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Visual Studio ile kod için hazır olduğunuzda aşağıdaki dile özgü öğreticileri hiçbirine inceleyin:
