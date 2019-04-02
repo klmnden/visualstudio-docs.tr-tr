@@ -42,10 +42,10 @@ items:
     href: application-timeline.md
   - name: PerfTips kullanma
     href: perftips.md
-  - name: JavaScript belleğini analiz etme
-    href: javascript-memory.md
   - name: Ağ kullanımını analiz etme
     href: network-usage.md
+  - name: JavaScript belleğini analiz etme
+    href: javascript-memory.md
   - name: HTML kullanıcı arabirimi yanıt hızını analiz etme
     href: html-ui-responsiveness.md
   - name: Performans Gezgini’ni kullanma
@@ -807,9 +807,9 @@ items:
   items:
   - name: Profil oluşturma araçlarındaki yenilikler
     href: what-s-new-in-profiling-tools.md
-ms.openlocfilehash: bb8084e155ff87a596fdb5374cb3e67f86243f3d
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 8369f284b302be0240f85c26aa7c89d13566af5f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007377"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790790"
