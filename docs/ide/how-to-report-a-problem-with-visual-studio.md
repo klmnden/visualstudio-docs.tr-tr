@@ -1,48 +1,39 @@
 ---
 title: Visual Studio ile ilgili bir sorun bildirme
-titleSuffix: ''
-description: Böylece biz de tanılayın ve düzeltin, Microsoft Visual Studio ile ilgili bir sorun bildirmek öğrenin.
+description: Visual Studio ile ilgili bir sorun bildirme öğrenin
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 1f1a3ccfe4081e3fa5287afc0299755a71f762f7
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953675"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897627"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Visual Studio ile ilgili bir sorun bildirme
-
-Visual Studio ile ilgili bir sorun yaşarsanız, bunu bilmek istiyoruz. Sorunu bildirme işte [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) böylece biz de tanılayın ve düzeltin.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio veya Visual Studio Yükleyicisi ile ilgili bir sorun bildirme
 
 > [!NOTE]
-> Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio'da bir sorun bildirme](/visualstudio/mac/report-a-problem).
+> Mac için Visual Studio için bkz: [Mac için Visual Studio'da bir sorun bildirme](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Visual Studio kullanarak sorun bildir
+Bunların içerdiği geri bildirim aracını kullanarak Visual Studio ya da yükleyicisi bir sorun bildirebilir. Geri bildirim aracı, tanılama bilgilerini bildiriminizi kolayca dahil etmenize imkan sağlar ve sorunları daha etkili bir şekilde tanılayıp Visual Studio takımlar yardımcı olur. Bir sorunu bildirmek için adımlar aşağıda verilmiştir.
 
-Visual Studio için bir sorun bildirmek için Visual Studio veya Visual Studio yükleyicisi rapordan başlatması gerekir. Doğrudan aracılığıyla bunu yapamazsınız [Geliştirici topluluğu](https://developercommunity.visualstudio.com/) Web sitesi. Visual Studio aracılığıyla raporlama raporda otomatik olarak dahil edilecek tanılama bilgileri sağlar.
+1. **Visual Studio'da**, sağ üst köşede bulunan geri bildirim simgesini seçin ve seçin, bir sorun bildirin. Geri bildirim aracını menüsünden erişebilirsiniz **yardımcı** > **geri bildirim gönder** > **sorun bildir**.
+![Bir sorun açılır pencere üzerinde Visual Studio Geliştirici topluluğu rapor](media/vsfeedbackentry.png) alternatif olarak, olası bir sorunu rapor **Visual Studio yükleyicisi** Visual Studio yükleyemezsiniz ya da Visual Studio geri bildirim aracında erişemiyor .  Yükleyici, sağ üst köşede bulunan geri bildirim simgesini seçin ve sorun bildir seçin.
+![Visual Studio Geliştirici topluluğu üzerinde bir sorun açılan rapor](media/installer.png)
 
-![Visual Studio Geliştirici topluluğu üzerinde bir sorun açılan rapor](media/report-an-issue.png)
-
-1. Visual Studio'da **yardımcı** > **geri bildirim gönder** > **sorun bildir**.
-
-   > [!TIP]
-   > Visual Studio yüklemesi tamamlanamıyor. ya da Visual Studio geri bildirim aracında erişilemiyor, kullanarak bir sorun bildirebilirsiniz **Visual Studio yükleyicisi**. Bunu yapmak için sağ üst köşesinde geri bildirim simgesini seçin **Visual Studio yükleyicisi**.
-
-1. Oturumunuz değil, seçin **oturum**; aşağıdaki ekran görüntüsünde gösterildiği gibi araç sağ tarafında olduğu. Oturum açın ekrandaki yönergeleri izleyin.
+1. İmzalı değil, seçin **oturum** aşağıdaki ekran görüntüsünde gösterildiği gibi. Oturum açın ekrandaki yönergeleri izleyin.
 
    ![Bir sorunu bildirmek oturum açın](../ide/media/sign-in-new-ux.png)
 
-   Oturum açtığınızda, karşılaştığınız bir sorunu bildirebilir. Oy verebilirsiniz veya gördüğünüz herhangi bir sorun üzerinde yorum gönderildi.
+   Yalnızca oturum açtınız ancak ayrıca oy verin ve açıklama üzerinde mevcut olan herhangi bir Geri bildiriminiz sorun bildirin.
 
-1. Oturum açtıktan sonra görmek mümkün olmayacak, **sorunları** ve **etkinlik** içinde **takip ettiğim öğeler** ekranı
+1. Oturum açtıktan sonra görmek mümkün olmayacak, **sorunları** ve **etkinlik** üzerinde **takip ettiğim öğeler** ekranı
 
     ![Takip ettiğim öğeler](../ide/media/items-i-follow.png)
 
@@ -125,7 +116,7 @@ Visual Studio 2017 sürüm 15.5 sürümünde başlayarak, sorun raporları hakk�
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Çözümler için arama yapın veya geri bildirimde bulunun
 
-İstemediğiniz veya Visual Studio, bir sorunu bildirmek için kullanılamaz, sorun zaten bildirildi ve gönderilen çözüm üzerinde imkanı yoktur [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfası.
+İstemediğiniz veya Visual Studio, bir sorunu bildirmek için kullanılamaz, yoktur sorun zaten bildirilmiştir şansı ve üzerinde gönderilen çözüm [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfası.
 
 Rapor, ancak bir özellik önermek istediğiniz bir sorun yoksa yoktur, bir yer çok. Daha fazla bilgi için [özellik önerin](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) sayfası.
 
@@ -135,4 +126,4 @@ Rapor, ancak bir özellik önermek istediğiniz bir sorun yoksa yoktur, bir yer 
 * [Mac için Visual Studio ile ilgili bir sorun bildirin](/visualstudio/mac/report-a-problem)
 * [C++ ile ilgili sorun](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)
-* [Geliştirici topluluğu veri gizliliği](developer-community-privacy.md)
+* [Geliştirici Topluluğu veri gizliliği](developer-community-privacy.md)

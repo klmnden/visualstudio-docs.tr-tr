@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9ce4b1d90d0d252300d2d8f8ef614d67712e425f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789586"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897601"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Hızlı Başlangıç: İlk Vue.js uygulamanızı oluşturmak için Visual Studio
 
@@ -59,14 +59,16 @@ Bu 5-10 dakikalık bir giriş Visual Studio tümleşik geliştirme ortamı (IDE)
 1. Yeni bir proje oluşturun.
 
     ::: moniker range=">=vs-2019"
-    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **Vue.js**, ardından **temel Vue.js Web uygulaması** (JavaScript veya TypeScript). Görünen iletişim kutusunda **Oluştur**.
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **temel Vue.js**, ardından **temel Vue.js Web uygulaması** (JavaScript veya TypeScript). Görünen iletişim kutusunda **Oluştur**.
+
+    ![VUE.js şablonu](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunda **JavaScript** veya **TypeScript**, ardından **Node.js**. Orta bölmede seçin **temel Vue.js Web uygulaması**, ardından **Tamam**.
-    ::: moniker-end
-    Görmüyorsanız **temel Vue.js Web uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 
     ![VUE.js şablonu](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Görmüyorsanız **temel Vue.js Web uygulaması** proje şablonu, eklemelisiniz **Node.js geliştirme** iş yükü. Ayrıntılı yönergeler için bkz. [önkoşulları](#prerequisites).
 
     Visual Studio yeni proje oluşturur. Yeni projeyi, Çözüm Gezgini'nde (sağ bölme) açar.
 

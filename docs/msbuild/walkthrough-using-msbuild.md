@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d613bbc75bfac14f17c2c50d0702ed89b744baac
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857833"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897744"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 
@@ -221,16 +221,18 @@ $(PropertyName)
 
 4. Çıktıyı inceleyin. Şu iki satırı görmeniz gerekir (.NET Framework sürümünüz farklı olabilir):
 
-    ```
     ::: moniker range=">=vs-2019"
+    ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
+    ```
     ::: moniker-end
     ::: moniker range="vs-2017"
+    ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
-    ::: moniker-end
     ```
+    ::: moniker-end
 
 > [!NOTE]
 >  Bu satırları görmüyorsanız, büyük olasılıkla kod düzenleyicisinde proje dosyasını kaydetmeyi unuttunuz demektir. Dosyayı kaydedin ve yeniden deneyin.

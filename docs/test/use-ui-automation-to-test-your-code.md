@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416272"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897731"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
 
@@ -144,7 +144,7 @@ Kodlanmış UI test araçları ve şablonları erişmek için yükleme **kodlanm
 
 8. Testi çalıştırın.
 
-   Test Gezgini'ni kullanın veya test yönteminde kısayol menüsünü açın ve ardından **çalıştırmak testlerini**. Testlerin nasıl çalıştırılacağı hakkında daha fazla bilgi için bkz. [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md) ve *kodlanmış UI testleri çalıştırmak için ek seçenekler* içinde [sıradakiler?](#whats-next?) adresindeki bölüm Bu konunun sonuna.
+   Test Gezgini'ni kullanın veya test yönteminde kısayol menüsünü açın ve ardından **çalıştırmak testlerini**. Testlerin nasıl çalıştırılacağı hakkında daha fazla bilgi için bkz. [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md) ve *kodlanmış UI testleri çalıştırmak için ek seçenekler* içinde [sıradakiler?](#whats-next) adresindeki bölüm Bu konunun sonuna.
 
 Bu konuda geriye kalan bölümlerinde, bu yordamdaki adımları hakkında daha fazla ayrıntı sağlar.
 
@@ -445,7 +445,7 @@ Kodlanmış UI test günlüklerini kullanarak kodlanmış UI testlerini analiz e
 
 - [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)
 
-- [Yapı işleminizdeki testleri çalıştırın](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Yapı işlerinde test yapma](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Nasıl yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 

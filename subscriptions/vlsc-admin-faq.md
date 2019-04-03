@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Toplu Lisanslama hizmet Merkezi'nden yönetici geçişi hakkında SSS
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145271"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897666"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio abonelikleri yönetim geçişi
 
@@ -36,7 +36,7 @@ Bu büyük bir geçiş ve Visual Studio abonelikleri için etkin Toplu Lisanslam
 Kuruluşunuz için Azure AD'ye Kaydol gerekmez, ancak herhangi bir zamanda bunu yapabilirsiniz. Azure AD eklenmeyi tercih ederseniz, hiçbir ücret ödemeden ücretsiz katmanı için Azure AD'yi kullanarak bunu yapabilirsiniz. Azure Active Directory ile kuruluşunuz Artırılmış güvenlik, Denetim ve uzun süreli güvenilirlik koruyacağınızı. Azure AD için hazır değilseniz bugün olduğu gibi Microsoft Accounts (MSA) kullanmaya devam etmek mümkün olacaktır.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Kuruluşumun ne zaman geçirilir mi olduğunu nasıl öğrenebilirim?
-Birincil/bildirim ilgili kişileri kuruluşunuz geçirilmeden önce bir hafta ekleme işlemini tamamlamaya davet eden bizden e-posta alırsınız. Abonelik yöneticileri de biz birincil/bildirimler ilgili kişileri iletişim kurulacak ve ayrıntılar hakkında başarılı olmasına yardımcı olmak sağlanan olduğunu bildiren bir e-posta alırsınız. Bilgi edinmek için nasıl [kuruluşunuzun birincil/bildirim ilgili kişileri bulun](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
+Birincil/bildirim ilgili kişileri kuruluşunuz geçirilmeden önce bir hafta ekleme işlemini tamamlamaya davet eden bizden e-posta alırsınız. Abonelik yöneticileri de biz birincil/bildirimler ilgili kişileri iletişim kurulacak ve ayrıntılar hakkında başarılı olmasına yardımcı olmak sağlanan olduğunu bildiren bir e-posta alırsınız. Bilgi edinmek için nasıl [kuruluşunuzun birincil/bildirim ilgili kişileri bulun](#how-do-i-find-out-who-my-primary-or-notices-contact-is).
 
 ### <a name="is-onboarding-different-from-migration"></a>Onboarding geçişten farklı mıdır?
 Evet.  Bu işlemde iki aşama vardır. Ayarlama (veya ekleme), kuruluşunuzun geçiş öncesinde, bir yönetici olarak işinizde kesinti olmasını sağlar. Biz, kuruluşunuzun bilgileri geçirildikten sonra yeni portalda Visual Studio Aboneliklerini yönetmek mümkün olacaktır. Birincil/bildirimler ilgili kişileri geçirilmeden önce yerleşik Aksi takdirde, abonelik yöneticileri engellenir ve ekleme işlemi tamamlanana kadar abonelikleri yönetmek mümkün olmayacaktır.

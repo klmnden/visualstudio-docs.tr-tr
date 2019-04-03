@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a93fc82ca8e4aa1f88de75d958bfea20fb85cd92
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790881"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897770"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Öğretici: Visual Studio'da Node.js ve React uygulaması oluşturma
 
 Visual Studio, kolayca bir Node.js projesi oluşturma ve IntelliSense ve Node.js destekleyen diğer yerleşik özellikler deneyimi sağlar. Bu öğreticide Visual Studio için Visual Studio şablondan bir Node.js web uygulaması projesi oluşturun. Ardından, React kullanarak basit bir uygulama oluşturun.
 
-Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Npm paketleri ekleme
@@ -324,7 +324,12 @@ Her zaman yaptığınız değişiklikleri *app.tsx*, Web komutu çalıştırman�
 
 1. Chrome, geçerli hata ayıklama hedefi seçin.
 
+    ::: moniker range=">=vs-2019"
+    ![Chrome hata ayıklama hedefi olarak seçin](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Chrome hata ayıklama hedefi olarak seçin](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     Chrome makinenizde kullanılabilir, ancak bir seçenek olarak görünmez, seçin **şununla Gözat** hata ayıklama hedef açılır liste ve select Chrome varsayılan tarayıcı hedefi olarak (seçin **varsayılan olarak ayarla**).
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610352"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897692"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild proje öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.
@@ -46,9 +46,9 @@ ms.locfileid: "56610352"
 |Öğe meta veri adı|Açıklama|
 |---------------|-----------------|
 |Ad|İsteğe bağlı dize. Bileşenin görünen adı.|
-|Guid|İsteğe bağlı dize. Bir GUID biçiminde bileşeni için {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|İsteğe bağlı dize. Bileşenin sürüm numarasının ana bölümü. Örneğin, "5" tam sürüm numarası "5.46." ise|
-|VersionMinor|İsteğe bağlı dize. Bileşenin sürüm numarasının ikincil bölümü. Örneğin, "46" tam sürüm numarası "5.46." ise|
+|Guid|Zorunlu dize. Bir GUID biçiminde bileşeni için {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Zorunlu dize. Bileşenin sürüm numarasının ana bölümü. Örneğin, "5" tam sürüm numarası "5.46." ise|
+|VersionMinor|Zorunlu dize. Bileşenin sürüm numarasının ikincil bölümü. Örneğin, "46" tam sürüm numarası "5.46." ise|
 |LCID|İsteğe bağlı dize. LocaleID bileşeni için.|
 |WrapperTool|İsteğe bağlı dize. Bileşen, örneğin, "tlbimp." kullanılan sarmalayıcı aracı adı|
 |Yalıtılmış|İsteğe bağlı boolean. Bileşen reg ücretsiz bir bileşen olup olmadığını belirtir.|
@@ -76,7 +76,7 @@ ms.locfileid: "56610352"
 |Ad|İsteğe bağlı dize. Başvurunun görünen adı.|
 |Project|İsteğe bağlı dize. Bir GUID biçiminde başvuru {12345678-1234-1234-1234-1234567891234}.|
 |Paket|İsteğe bağlı dize. Başvurulan proje dosyasının yolu.|
-|ReferenceOutputAssembly|İsteğe bağlı boolean. Varsa kümesine `false`, çıktısı başvurulan projenin içermez bir [başvuru](#Reference) diğer projeyi bu bilgisayardan bir önce oluşturur bu proje, ancak yine de sağlar. Varsayılan olarak `true`.|
+|ReferenceOutputAssembly|İsteğe bağlı boolean. Varsa kümesine `false`, çıktısı başvurulan projenin içermez bir [başvuru](#reference) diğer projeyi bu bilgisayardan bir önce oluşturur bu proje, ancak yine de sağlar. Varsayılan olarak `true`.|
 
 ### <a name="compile"></a>Derleme
  Derleyici için kaynak dosyaları temsil eder.
@@ -121,7 +121,7 @@ ms.locfileid: "56610352"
 | Görünür | İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest |
 
-### <a name="none"></a>Hiçbiri
+### <a name="none"></a>Yok.
  Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.
 
 

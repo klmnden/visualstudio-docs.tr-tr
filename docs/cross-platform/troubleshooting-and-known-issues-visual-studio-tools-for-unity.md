@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027295"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897705"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun giderme ve bilinen sorunlar (Unity için Visual Studio Araçları)
 
@@ -62,7 +62,7 @@ FMOD, geçici bir çözüm yoktur, geçirebilirsiniz `FMOD_STUDIO_INIT_SYNCHRONO
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Ek yeniden yükler ve tüm açık pencereleri kaybetme Visual Studio
 
-Hiçbir zaman doğrudan bir varlık işlemci veya herhangi bir aracı konumundan proje dosyaları touch emin olun. Proje dosyasını işlemek gerçekten ihtiyacınız varsa, bir API için kullanıma sunuyoruz. Lütfen denetleyin [derlemeye başvuran sorunları bölümüne](#Assembly-reference-issues).
+Hiçbir zaman doğrudan bir varlık işlemci veya herhangi bir aracı konumundan proje dosyaları touch emin olun. Proje dosyasını işlemek gerçekten ihtiyacınız varsa, bir API için kullanıma sunuyoruz. Lütfen denetleyin [derlemeye başvuran sorunları bölümüne](#assembly-reference-issues).
 
 Ek yüklemelere karşılaşırsanız veya Visual Studio kaybetme tüm açık Windows üzerinde yeniden yüklemek, doğru .NET hedefleme paketlerinin yüklü olduğundan emin olun. Çerçeveleri daha fazla bilgi için ilgili aşağıdaki bölüme bakın.
 
@@ -124,7 +124,7 @@ Güncelleştirme 3 için Visual Studio 2015 ', yükseltmeyi deneyin.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Visual Studio Unity için Visual Studio Araçları ile hata ayıklama sırasında donuyor bildirmek için
 
-*Windows üzerinde:*
+*Windows'da:*
 
 1. Visual Studio'nun yeni bir örneğini açın.
 
