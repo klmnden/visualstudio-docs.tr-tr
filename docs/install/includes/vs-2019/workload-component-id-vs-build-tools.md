@@ -5,16 +5,16 @@ description: Klasik Windows tabanlı uygulamalar oluşturmak için Visual Studio
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f74b014efff346993dbebb1b605e8f6f194f1502
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58160993"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58873057"
 ---
 ## <a name="azure-development-build-tools"></a>Azure geliştirme derleme araçları
 
@@ -76,7 +76,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET framework 4.5 targeting pack | 
 Microsoft.Net.Component.4.6.TargetingPack | .NET framework 4.6 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET framework 4-4.6 geliştirme araçları | 16.0.28516.191 | Önerilen
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Önerilen
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Önerilen
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# ve Visual Basic | 16.0.28625.61 | Önerilen
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server veri araçları - derleme araçları | 16.0.28315.86 | Önerilen
 
@@ -94,7 +94,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce derleme araçları | 16.0.28625.61 | Önerilen
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET framework 4.5.1 targeting pack | 16.0.28517.75 | Önerilen
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET framework 4.5.2 targeting pack | 16.0.28517.75 | Önerilen
@@ -131,7 +131,7 @@ Bileşen kimliği | Ad | Sürüm | Bağımlılık türü
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.CoreBuildTools | Visual Studio derleme araçları temel | 16.0.28315.86 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 
 ## <a name="net-core-build-tools"></a>.NET core derleme araçları
 
@@ -181,7 +181,7 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
 Microsoft.VisualStudio.Component.NuGet | NuGet Paket Yöneticisi | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Office/SharePoint geliştirme derleme araçları | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Windows Workflow Foundation derleme araçları | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Windows Communication Foundation derleme araçları | 16.0.28516.191 | Gerekli
@@ -216,7 +216,7 @@ Microsoft.Component.VC.Runtime.OSSupport | C++ Evrensel Windows platformu çalı
 Microsoft.Net.Component.4.7.1.SDK | .NET framework 4.7.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Core.Component.SDK.2.1 | .NET core 2.1 geliştirme araçları | 16.0.28621.142 | Gerekli
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019 C++ ARM derleme araçlarını (v14.20) | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019 C++ x64/x86 derleme Araçları (v14.20) | 16.0.28625.61 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Evrensel Windows platformu derleme önkoşulları | 16.0.28621.142 | Gerekli
@@ -245,7 +245,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Evrensel CRT SDK | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.TextTemplating | Metin şablonu dönüştürme | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ derleme Araçları (v14.00) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATL | V142 derleme Araçları (x86 & x64) için C++ ATL | 16.0.28625.61 | İsteğe Bağlı
@@ -274,7 +274,7 @@ Microsoft.Net.Component.4.7.2.SDK | .NET framework 4.7.2 SDK'sı | 16.0.28517.75
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET framework 4.7.2 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.7.2 geliştirme araçları | 16.0.28516.191 | Gerekli
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK derleme araçları temel | 16.0.28315.86 | Gerekli
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio uzantı geliştirme önkoşulları | 16.0.28528.71 | Gerekli
 Component.Dotfuscator | PreEmptive koruma - Dotfuscator | 16.0.28528.71 | İsteğe Bağlı
@@ -341,7 +341,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75 | Gerekli
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | Gerekli
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet hedefleri ve derleme görevleri | 16.0.28625.61 | Gerekli
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28528.71 | Gerekli
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# ve Visual Basic Roslyn derleyicileri | 16.0.28714.129 | Gerekli
 Component.Android.SDK27 | Android SDK kurulumu (API düzeyi 27) | 16.0.28517.75 | İsteğe Bağlı
 Component.OpenJDK | OpenJDK (Microsoft Dağıtım) | 16.0.28625.61 | İsteğe Bağlı
 
