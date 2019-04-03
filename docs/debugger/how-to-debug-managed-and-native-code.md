@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: a987904b099e9a463f33eb77980abd3fa2f32d16
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790322"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856508"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Öğretici: Hata ayıklama C# ve aynı C++ hata ayıklama oturumu
 
@@ -44,7 +44,7 @@ Visual Studio, aşağıdaki iş yükleri ile yüklü olması gerekir:
 - **C++ ile masaüstü geliştirme**
 - Her iki **.NET masaüstü geliştirme** veya **.NET Core çoklu platform geliştirme**oluşturmak istediğiniz uygulama türünü bağlı olarak.
 
-Visual Studio sahip değilseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio sahip değilseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa.
 
 Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **açık Visual Studio yükleyicisi** Visual Studio'nun sol bölmede **yeni proje** iletişim kutusu. Visual Studio yükleyicisinde gerekir ve ardından iş yükleri seçin **Değiştir**.
 
@@ -193,7 +193,7 @@ Visual Studio yüklü, ancak seçtiğiniz iş yüklerine sahip değilseniz **aç
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Karışık mod hata ayıklama için .NET Core uygulamasını yapılandırmak için
 
-Çoğu Visual Studio 2017 sürümünde kullanmalısınız *launchSettings.json* dosya yerine bir .NET Core uygulaması yerel kod için karışık mod hata ayıklamayı etkinleştirmek için proje özellikleri. Bu özellik için kullanıcı Arabirimi güncelleştirmeleri izlemek için bkz [GitHub sorunu](https://github.com/dotnet/project-system/issues/1125).
+Çoğu Visual Studio 2017'den itibaren Visual Studio sürümlerinde kullanmalısınız *launchSettings.json* dosya yerine bir .NET Core uygulaması yerel kod için karışık mod hata ayıklamayı etkinleştirmek için proje özellikleri. Bu özellik için kullanıcı Arabirimi güncelleştirmeleri izlemek için bkz [GitHub sorunu](https://github.com/dotnet/project-system/issues/1125).
 
 1. İçinde **Çözüm Gezgini**, genişletme **özellikleri**açın *launchSettings.json* dosya.
 

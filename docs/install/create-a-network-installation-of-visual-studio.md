@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 791d9291367e9cca6acf7fbedc6164ddb52e7d82
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790400"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857431"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio'nun bir ağ oluşturun
 
@@ -52,8 +52,8 @@ Desteklenen diğer önyükleyiciler dahil [vs_buildtools.exe](https://aka.ms/vs/
 
 |Sürüm | İndir|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019+rc) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019+rc) |
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 
 Desteklenen diğer önyükleyiciler dahil [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe), ve [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
@@ -248,7 +248,7 @@ Kullandıysanız `--wait` parametresi ve ardından işlemi sonucuna bağlı olar
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Mevcut Visual Studio Önyükleyiciler ile [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) indirin ve çalıştıkları zaman kullanılabilir en son Visual Studio sürümünü yükleyin.
+> Mevcut Visual Studio Önyükleyiciler ile [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) indirin ve çalıştıkları zaman kullanılabilir en son Visual Studio sürümünü yükleyin.
 > 
 > Bunu, Visual Studio yüklerseniz *önyükleyici* Bugün ve BT altı ay şu andan itibaren önyükleyici çalıştırdığınız anda geçerli olan Visual Studio'nun sürümünü yükler.
 > 
@@ -270,6 +270,6 @@ Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz. bizim [konuşma
 
 * [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 * [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

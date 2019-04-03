@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: f9a170cec2d41a779ecdecc1f2be408d485b3a63
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428745"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857482"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamalarında hata ayıklama
 
@@ -50,40 +50,29 @@ Bu öğreticide şunları yapacaksınız:
 
     > [!IMPORTANT]
     > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure App Service için yayımlanır.
-::: moniker range="vs-2019"
+::: moniker range="<=vs-2017"
 
 2. Bulut Gezgini'nde (**Görüntüle > Cloud Explorer**), projeniz için dağıtıldığı Azure App Service'ı sağ tıklatın ve seçin **Snapshot Debugger Ekle**.
 
    ![Snapshot debugger'ı Başlat](../debugger/media/snapshot-launch.png)
 
-    Seçtiğiniz ilk kez **Snapshot Debugger Ekle**, Azure App Service üzerinde Snapshot Debugger site uzantısını yüklemeniz istenir. Bu yükleme, Azure App service'inizi yeniden başlatılması gerekir.
-
 ::: moniker-end
-::: moniker range=">= vs-2019"
-2. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
-
-    * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
+::: moniker range=">=vs-2019"
+2. Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
 
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Projeniz için dağıtıldığı Azure App Service ve Azure depolama hesabı seçin ve ardından **iliştirme**.
-    ![Snapshot debugger Yayımla sayfasından başlatın](../debugger/media/snapshot-publish-attach.png)
+      ![Azure kaynağı seçin](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
-    * Aşağı açılan menüyü seçin hata ayıklama hedef **Snapshot Debugger**, isabet **F5** ve gerekli projenizi dağıtıldığı Azure App Service ve Azure depolamayı seçerseniz hesap ve ardından  **Ekleme**.
-    ![F5 aşağı açılan menüden snapshot debugger'ı Başlat](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), projeniz için dağıtıldığı Azure App Service'ı sağ tıklatın ve bir Azure depolama hesabını seçin ve ardından **Snapshot Debugger Ekle**.
-
-      ![Anlık görüntü Hata Ayıklayıcı'dan Cloud Explorer başlatma](../debugger/media/snapshot-launch.png)
-
-    Seçtiğiniz ilk kez **Snapshot Debugger Ekle**, Azure App Service üzerinde Snapshot Debugger site uzantısını yüklemeniz istenir. Bu yükleme, Azure App service'inizi yeniden başlatılması gerekir.
 ::: moniker-end
 
-   Visual Studio anlık hata ayıklama modu sunulmuştur.
+  > [!IMPORTANT]
+  > Seçtiğiniz ilk kez **Snapshot Debugger Ekle**, Azure App Service üzerinde Snapshot Debugger site uzantısını yüklemeniz istenir. Bu yükleme, Azure App service'inizi yeniden başlatılması gerekir.
 
   > [!NOTE]
   > Application Insights site uzantısı, anlık görüntü hata ayıklaması da destekler. Bir "site uzantısı güncel değil" hata iletisi ile karşılaşırsanız, bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
 
+   Visual Studio anlık hata ayıklama modu sunulmuştur.
    ![Anlık görüntü hata ayıklama modu](../debugger/media/snapshot-message.png)
 
    **Modülleri** penceresi gösterir, tüm modülleri, Azure App Service için ne zaman yüklemiş olduğunuz (seçin **hata ayıklama > Windows > modülleri** bu pencereyi açmak için).
@@ -157,7 +146,7 @@ Bir anlık görüntü noktası isabet edildiğinde bir anlık görüntü alma ek
 
     Seçerseniz **çıkış penceresine Gönder**, günlüğe kaydetme noktası gelindiğinde tanılama araçları penceresinde iletisi görüntülenir.
 
-    ![Diagsession penceredeki verileri günlüğe kaydetme noktası](../debugger/media/snapshot-logpoint-output.png)
+    ![Tanılama araçları penceresi veri günlüğe kaydetme noktası](../debugger/media/snapshot-logpoint-output.png)
 
     Seçerseniz **uygulama günlüğüne Gönder**, günlüğe kaydetme noktası isabet edildiğinde iletilerden gördüğünüz herhangi bir ileti görüntülenir `System.Diagnostics.Trace` (veya `ILogger` .NET core'da), aşağıdakiler gibi [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
