@@ -7,14 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
-ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
+ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443799"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856683"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac için Visual Studio 2017'yi yükleme
+
+> [!NOTE]
+> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md?view=vsmac-2019).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -23,11 +26,8 @@ Başlangıç yerel geliştirme için Visual Studio Mac için orada karşıdan y�
 Visual Studio'da iOS ile çalışmak için şu bilgilere ihtiyacınız vardır:
 
 - bir Mac ile macOS Sierra 10.12 veya üzeri
-- Xcode 8.3 veya üzeri. En son kararlı sürüme genellikle önerilir.
+- Xcode 9.3 veya üzeri. En son kararlı sürüme genellikle önerilir.
 - Bir Apple kimliği Bir Apple kimliği yoksa, yeni bir hesap oluşturabilirsiniz https://appleid.apple.com. Yükleme ve Xcode ile imzalamak için bir Apple Kimliği gereklidir.
-
-> [!NOTE]
-> Önizleme Mac için Visual Studio 2019 olan [şimdi yüklemek için kullanılabilecek](installation.md?view=vsmac-2019) ve test etme.
 
 ## <a name="install"></a>Yükleme
 
@@ -110,8 +110,8 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tan
 ### <a name="android"></a>Android
 
 1. [Xamarin Android SDK Yöneticisi'ni kullanma](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Cihazı Dağıtım için Ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+2. [Android SDK öykünücüsü](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Geliştirme için cihazı ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
 

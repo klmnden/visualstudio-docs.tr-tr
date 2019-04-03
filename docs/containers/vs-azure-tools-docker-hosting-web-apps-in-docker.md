@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: d287d26b9807876d99b4bed871c464a3130e627f
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e44c9e0e73f6ff4d557ab9bc3d6f19a2cf73f5ec
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515175"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856923"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Visual Studio kullanarak kapsayıcı kayıt defterine ASP.NET kapsayıcısı dağıtma
 
@@ -33,7 +33,7 @@ Bu öğreticiyi tamamlamak için:
 * En son sürümünü yükleyin [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)"ASP.NET ve web geliştirme" iş yüküyle birlikte sağlanır
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-* En son sürümünü yükleyin [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) "ASP.NET ve web geliştirme" iş yüküyle birlikte sağlanır
+* En son sürümünü yükleyin [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) "ASP.NET ve web geliştirme" iş yüküyle birlikte sağlanır
 ::: moniker-end
 * Yükleme [Windows için Docker](https://docs.docker.com/docker-for-windows/install/)
 
@@ -57,7 +57,7 @@ Aşağıdaki adımlar Bu öğreticide kullanılan temel bir ASP.NET Core uygulam
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS ön eki** | Genel olarak benzersiz bir ad | Kapsayıcı kayıt defterinizde benzersiz olarak tanımlayan ad. |
     | **Abonelik** | Aboneliğinizi seçin | Kullanılacak Azure aboneliği. |
-    | **[Kaynak grubu](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Kapsayıcı kayıt defterinizde oluşturulacağı kaynak grubunun adı. Seçin **yeni** yeni bir kaynak grubu oluşturmak için.|
+    | **[Kaynak Grubu](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Kapsayıcı kayıt defterinizde oluşturulacağı kaynak grubunun adı. Seçin **yeni** yeni bir kaynak grubu oluşturmak için.|
     | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standart | Hizmet katmanı kapsayıcı kayıt defterinin  |
     | **Kayıt defteri konumu** | Size yakın bir konum | Bir konumdan seçin bir [bölge](https://azure.microsoft.com/regions/) yakınınızdaki veya kapsayıcı kayıt defterinizi kullanacak diğer hizmetlere yakın. |
 

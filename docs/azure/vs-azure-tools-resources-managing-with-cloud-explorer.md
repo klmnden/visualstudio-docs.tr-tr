@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 97b6d27c676af1fb5d4a81778c708a3ad036c601
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789257"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857170"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer'da Azure hizmetlerinizle ilişkilendirilmiş kaynakları yönetme
 
@@ -24,7 +24,7 @@ Gibi [Azure portalında](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Visual Studio 2017 veya sonraki bir sürümü (bkz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) ile **Azure iş yükü** seçili. Visual Studio ile önceki bir sürümünü de kullanabilirsiniz [.NET 2.9 için Microsoft Azure SDK'sı](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 veya sonraki bir sürümü (bkz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) ile **Azure iş yükü** seçili. Visual Studio ile önceki bir sürümünü de kullanabilirsiniz [.NET 2.9 için Microsoft Azure SDK'sı](https://www.microsoft.com/download/details.aspx?id=51657).
 * Microsoft Azure hesabı - bir hesabınız yoksa, şunları yapabilirsiniz [ücretsiz deneme için kaydolun](http://go.microsoft.com/fwlink/?LinkId=623901) veya [Visual Studio abone Avantajlarınızı etkinleştirebilirsiniz](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]

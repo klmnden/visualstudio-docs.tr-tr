@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204339"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856453"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Mac için Visual Studio'yu kaldırma
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Çeşitli Xamarin dosya ve klasörleri içeren aşağıdaki dizine kaldırmak isteyebilirsiniz. Bunu yapmadan önce bu dizin imzalama anahtarı Android içerdiğini farkında olmalıdır. Daha fazla bilgi için bölümüne başvurun  **[kaldırma Android SDK ve Java SDK'sı](#uninstall-android-sdk-and-java-sdk)**:
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Mac Preview için Visual Studio 2019'ı kaldırma
+
+Visual Studio 2019 Mac Önizleme için ayrı bir önizleme olarak, Visual Studio 2017 için Mac yükleme yan yana çalışmaya devam etmenize imkan sağlar başlatıldı.
+
+Mac için Visual Studio 2019 piyasaya Sürüldü, artık Visual Studio 2019 Mac önizleme uygulama için güvenli bir şekilde kaldırabilirsiniz.
+
+Önizleme uygulama paketi grubunu kaldırmak için **Visual Studio (Önizleme)** gelen, **uygulamaları** klasörü ve tıklatın **çöp kutusuna Taşı**, aşağıda gösterildiği gibi Görüntü:
+
+![Finder'da "Çöp kutusuna Taşı" seçeneğini belirleyerek](media/uninstall-remove-vspreview.png)
+
+Ayrıca, aşağıdaki komutla Önizleme plist dosyası kaldırabilirsiniz:
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

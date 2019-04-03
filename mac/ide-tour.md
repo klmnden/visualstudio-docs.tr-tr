@@ -3,20 +3,17 @@ title: Visual Studio için Mac turu
 description: Mac için Visual Studio, ASP.NET Core Web siteleri ve iOS, Android, Mac ve Xamarin.Forms için Xamarin projeleri dahil olmak üzere, macOS üzerinde .NET uygulama derlemek için bir tümleşik geliştirme ortamı sağlar.
 author: conceptdev
 ms.author: crdun
-ms.date: 02/07/2019
+ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: e192f75508173cd4014e391168ab27e9abe2bc9a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573014"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856320"
 ---
-# <a name="visual-studio-2019-for-mac-preview-tour"></a>Visual Studio 2019 için Mac Önizleme turu
-
-> [!NOTE]
-> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md) test etmek için Önizleme olarak.
+# <a name="visual-studio-2019-for-mac-tour"></a>Tur Mac için Visual Studio 2019
 
 Mac için Visual Studio, bir .NET _tümleşik geliştirme ortamı_ düzenlemek için kullanılabilecek Mac üzerinde hata ayıklama ve kod derleme ve ardından bir uygulama yayımlayın. Standart Düzenleyici ve hata ayıklayıcı, gibi beklenen özelliklerine ek olarak Mac için Visual Studio derleyicileri, kod tamamlama araçları, grafik tasarımcıları ve ese yazılım geliştirme süreci için kaynak denetimi içerir.
 
@@ -39,9 +36,9 @@ Bu makalede, bazı bu uygulamaları oluşturmak için güçlü bir araç hale ge
 
 Mac için Visual Studio, uygulama dosyalarını ve ayarlarını yönetme, uygulama kodu oluşturma ve hata ayıklama için çeşitli bölümler halinde düzenlenmiştir.
 
-## <a name="new-start-window"></a>Yeni başlangıç penceresi
+## <a name="start-window"></a>Başlangıç penceresi
 
-Visual Studio 2019 Mac Önizleme başlattığınızda, yeni kullanıcılar bir oturum açma penceresi görürsünüz. Microsoft hesabınızla (varsa) Ücretli lisansı veya Azure abonelikleri bağlantısını etkinleştirmek için oturum açın. Basabilirsiniz **atla** ve daha sonra aracılığıyla oturum açma **Visual Studio > oturum** menü öğesi:
+Mac için Visual Studio 2019 başlattığınızda, yeni kullanıcılar bir oturum açma penceresi görürsünüz. Microsoft hesabınızla (varsa) Ücretli lisansı veya Azure abonelikleri bağlantısını etkinleştirmek için oturum açın. Basabilirsiniz **atla** ve daha sonra aracılığıyla oturum açma **Visual Studio > oturum** menü öğesi:
 
 ![Microsoft hesabınızda oturum açın](media/ide-tour-2019-start-signin.png)
 

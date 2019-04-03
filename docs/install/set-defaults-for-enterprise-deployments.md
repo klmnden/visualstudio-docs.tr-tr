@@ -1,7 +1,7 @@
 ---
 title: Kuruluş dağıtımları için varsayılanları ayarlama
 description: Etki alanı ilkeleri ve diğer Visual Studio kuruluş dağıtımları için yapılandırma işlemleri hakkında bilgi edinin.
-ms.date: 05/05/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a81e9c1e007ab1d344227e75a1839e81c1c0542f
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325152"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857586"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
 
@@ -50,20 +50,20 @@ Bazı kayıt defteri değerlerini, bunların kullanılan değilse zaten ayarlanm
 
 Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 
-| **Ad** | **Türü** | **Default** | **Açıklama** |
+| **Ad** | **Tür** | **Varsayılan** | **Açıklama** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimlerini dizini ve isteğe bağlı, yükü depolanır. Nasıl olduğunu okuyun için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1. | Hatta yüklendikten sonra paket yüklerini tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakma örneği onarmak veya değiştirmek için herhangi bir önbelleğe alınan paket yüklerini kaldırır. Nasıl olduğunu okuyun için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) daha fazla bilgi için. |
-| `SharedInstallationPath` | `REG_SZ` veya `REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Visual Studio örneklerini sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değeri dilediğiniz zaman değiştirebilirsiniz, ancak yalnızca gelecekteki yükler etkiler. Eski konumuna yüklü herhangi bir ürün değil taşınmalıdır veya düzgün çalışmayabilir. |
+| `CachePath` | `REG_SZ` veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimlerini dizini ve isteğe bağlı, yükü depolanır. Daha fazla bilgi için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) sayfası. |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1. | Hatta yüklendikten sonra paket yüklerini tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakma örneği onarmak veya değiştirmek için herhangi bir önbelleğe alınan paket yüklerini kaldırır. Daha fazla bilgi için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) sayfası. |
+| `SharedInstallationPath` | `REG_SZ` veya `REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Visual Studio örneklerini sürümleri arasında paylaşılan bazı paketler yüklendiği dizin. Değer, istediğiniz zaman değiştirebilirsiniz, ancak yalnızca gelecekteki yükler etkiler. Eski konumuna yüklü herhangi bir ürün değil taşınmalıdır veya düzgün çalışmayabilir. |
 
 > [!IMPORTANT]
-> Değiştirirseniz `CachePath` mevcut paket konumsa herhangi yükler önbelleğe yeni konumuna ve emin olmak sonra kayıt defteri ilke güvenli şekilde `SYSTEM` ve `Administrators` tam denetime sahip olursunuz ve `Everyone` okuma erişimi olduğundan.
+> Değiştirirseniz `CachePath` kayıt defteri ilke tüm yüklemeleri sonra mevcut paket önbelleğini yeni konuma taşı ve onu güvenli olduğundan emin olmanız gerekir böylece `SYSTEM` ve `Administrators` alan ve tam denetim `Everyone` okuma erişimi olduğundan.
 > Mevcut önbellek veya onu güvenli hale getirme taşımak için hata gelecekteki yüklemeler sorunlara neden olabilir.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'yu yükleyin](install-visual-studio.md)
+- [Visual Studio'yu yükleme](install-visual-studio.md)
 - [Paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md)
 - [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)

@@ -3,14 +3,14 @@ title: Unity için Araçlar Mac için Visual Studio Kurulumu
 description: Ayarlama ve kullanmak için Unity araçları, Mac için Visual Studio yükleme
 author: therealjohn
 ms.author: johmil
-ms.date: 05/25/2018
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d490b4c1268beb4a5ad55263cb186d838005f718
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b9e033b765df4ae4396c011fe37939b4fc63e372
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315533"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857560"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Unity için Mac araçları için Visual Studio'yu ayarlama
 
@@ -44,7 +44,7 @@ Unity 5.6.1 zaten varsa veya yukarıdaki ancak Mac için Visual Studio yüklü, 
 
 * Mac için Visual Studio'yu indirin [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
 * Unity için Araçlar Mac için Visual Studio yükleme işlemi sırasında otomatik olarak yüklenir.
-* Bağlantısındaki [Yükleme Kılavuzu](/visualstudio/mac/installation/?view=vsmac-2017) ek yükleme Yardımı.
+* Bağlantısındaki [Yükleme Kılavuzu](/visualstudio/mac/installation) ek yükleme Yardımı.
 
 > [!NOTE]
 > Unity için Mac araçları Visual Studio Unity sürüm 5.6.1 gerektirir veya üzeri. Unity için Visual Studio Araçları sürümünüz Unity etkinleştirildiğini doğrulamak için **hakkında Unity** metni ara ve Unity menüden "Microsoft Visual Studio etkin Unity için iletişim kutusunun sol içinde Araçları".

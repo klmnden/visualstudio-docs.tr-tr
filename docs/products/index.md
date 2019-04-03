@@ -5,6 +5,12 @@ title: Visual Studio ürünleri | Microsoft Docs
 description: Visual Studio ürün ailesi keşfedin.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: e7a895b95c6f357fcab8674ae87296fa191ea856
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857301"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -48,7 +54,7 @@ searchScope: []
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Mac için Visual Studio</h3>
-                                                    <p>Uygulamaları ve oyunları, bulut, iOS, Android, macOS ve giyilebilir cihazlar için bir Mac kullanarak oluşturun.</p>
+                                                    <p>Uygulama ve oyunlar iOS, Android, masaüstü, geliştirin ve .NET kullanarak web.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +100,7 @@ searchScope: []
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/subscriptions/" title="Visual Studio abonelikleri">
+                                <a href="/visualstudio/subscriptions/" title="Visual Studio Abonelikleri">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -113,7 +119,7 @@ searchScope: []
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Azure DevOps Hizmetleri">
+                                <a href="/azure/devops/" title="Azure DevOps Services">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

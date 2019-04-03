@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9744fe2597a6f3b29d0ce42f2a6267b03ea6783
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790309"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857411"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Öğretici: Visual Basic ile basit uygulama oluşturma
 
@@ -33,7 +33,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan 
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Proje oluşturma
+## <a name="create-the-project"></a>Projeyi oluşturma
 
 Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.
 
@@ -302,5 +302,5 @@ Bu öğreticiyi tamamlamak Tebrikler! Bulabilirsiniz *.exe* çözüm ve proje di
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio 2017'deki yenilikler](../../ide/whats-new-visual-studio.md)
+- [Visual Studio 2017’deki yenilikler](../../ide/whats-new-visual-studio.md)
 - [Üretkenlik ipuçları](../../ide/productivity-tips-for-visual-studio.md)

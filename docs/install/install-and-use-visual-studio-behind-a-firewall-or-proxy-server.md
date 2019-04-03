@@ -1,7 +1,7 @@
 ---
 title: Bir güvenlik duvarı veya proxy sunucusunun yükleyip
 description: Etki alanı URL'lerini, bağlantı noktaları ve protokollerle Güvenilenler listesine veya kuruluşunuz bir güvenlik duvarı veya proxy sunucusu kullanıyorsa açın gözden geçirin
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 379f4ad2c4a5eb6df2dd2913104b9e2aa0139173
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515382"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857534"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
 
@@ -141,7 +141,8 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
+* [LiveShare için bağlantı gereksinimleri](/visualstudio/liveshare/reference/connectivity/)
 * [Visual Studio'nun bir ağ oluşturun](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio'da ağ ile ilgili hataları giderme](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
 * [(Mac için Visual Studio) bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

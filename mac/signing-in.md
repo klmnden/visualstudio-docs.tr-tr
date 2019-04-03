@@ -3,14 +3,14 @@ title: Mac için Visual Studio'da oturum açma
 description: Mac için Visual Studio'ya oturum açma
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953881"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857469"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Oturum açmak için Visual Studio Mac için
 
@@ -24,7 +24,7 @@ Mac için Visual Studio'ya oturum açmadan önce internet'e bağlı olduğunuzda
 
 Mac için Visual Studio'ya oturum açmak için aşağıdaki adımları uygulayın:
 
-1. Tıklayın **oturum** bağlantı hesapları iletişim kutusunu görüntülemek için Hoş Geldiniz sayfasında tuşuna basın **oturum** düğmesi:
+1. Tıklayın **Microsoft'ta oturum açma** düğmesi oturum açma penceresinde:
 
     ![Mac için Visual Studio'da hesapları iletişim kutusu](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ Mac için Visual Studio'ya oturum açmak için aşağıdaki adımları uygulayı
 
     Mac için Visual Studio'ya oturum için Xamarin kimlik bilgilerini kullanamazsınız
 
-3. Oturum açtığınız sonra lisans türünüz görürsünüz. Bu iletişim kutusundan, kullanmak isteyebilir ek Microsoft hesaplarını ekleyebilirsiniz:
+3. Oturum açtığınız sonra başlangıç penceresi Mac için Visual Studio 2019 görürsünüz. Buradan, açın veya yeni bir proje oluşturun:
 
     ![Başarılı oturum açın](media/signing-in-image14.png)
 
@@ -42,7 +42,9 @@ Mac için Visual Studio'ya oturum açmak için aşağıdaki adımları uygulayı
 
 Mac için Visual Studio, kişiselleştirme hesabınız birden çok hesabı eklenmesini destekler. Bu ek hesaplar, tüm eklenen hesabından gibi Azure kaynaklarına erişmek izin verir.
 
-Ek kullanıcı hesapları eklemek için adımları [Mac için Visual Studio'ya oturum açma](#how-to-sign-in-to-visual-studio-for-mac) bölümü.
+Ek kullanıcı hesapları eklemek için **Visual Studio > Hesap...**  Mac için Visual Studio menüsünden Tıklayın **Ekle...**  düğmesini ek hesap kimlik bilgilerini girin.
+
+![Hesapları yönetme](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

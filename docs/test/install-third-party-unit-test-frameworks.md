@@ -1,70 +1,36 @@
 ---
 title: 'Nasıl yapılır: Üçüncü taraf birim test çerçevelerini yükleme'
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982928"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857708"
 ---
 # <a name="install-unit-test-frameworks"></a>Birim testi çerçevelerini yükleme
 
-Visual Studio Test Gezgini'yle herhangi bir bağdaştırıcı arabirimi Gezgini geliştirdi test çerçevesi çalıştırabilirsiniz. Framework'ün yükleme programını ikilileri yükler ve onu destekleyen diller için Visual Studio Proje şablonları ekler. Framework şablonu içeren bir proje oluşturduğunuzda, Test Gezgini ile kayıtlı. Visual Studio çözüm, farklı çerçeveler kullanan ve farklı dil hedeflenen birim testi projelerini içerebilir. Test Gezgini tümünü çalıştırır.
+Visual Studio Test Gezgini'yle, herhangi bir birimi için bir bağdaştırıcı arabirimi geliştirdi test çerçevesi testleri çalıştırabilirsiniz. Framework'ü yükleme ikili dosyaları kopyalar ve onu destekleyen diller için Visual Studio Proje şablonları ekler. Framework şablonu içeren bir proje oluşturduğunuzda, Test Gezgini ile kayıtlı.
 
-[MSTest](getting-started-with-unit-testing.md) olan Visual Studio tarafından sağlanan test framework ve Visual Studio ile varsayılan olarak yüklenir.
+Visual Studio çözüm, farklı çerçeveler kullanan ve farklı dil hedeflenen birim testi projelerini içerebilir.
+
+[MSTest](getting-started-with-unit-testing.md) olan Visual Studio tarafından sağlanan test çerçevesi ve varsayılan olarak yüklenir.
 
 ## <a name="acquire-frameworks"></a>Çerçeveler Al
 
-İndirme ve Visual Studio Uzantı Yöneticisi'ni kullanarak veya üçüncü taraf birim testi çerçevelerini yükleme [Visual Studio Market](https://marketplace.visualstudio.com/vs). Çerçeveler, framework'ün bir Web sitesi gibi diğer sitelerdeki de indirilebilir.
+Üçüncü taraf birim testi çerçevelerini kullanarak yükleme **NuGet Paket Yöneticisi**.
 
-### <a name="install-from-visual-studio"></a>Visual Studio'dan yükleyin
+1. Seçin ve test kodunuzu içeren projeye sağ tıklayın **NuGet paketlerini Yönet**.
 
-::: moniker range="vs-2017"
+2. İçinde **NuGet Paket Yöneticisi**, yükleyin ve ardından istediğiniz test çerçevesi için arama **yükleme**.
 
-1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Seçin **uzantıları** > **uzantıları Yönet**.
-
-::: moniker-end
-
-2. Genişletin **çevrimiçi** > **Visual Studio Market** > **Araçları**ve ardından **test**.
-
-3. Framework bulmak için liste göz atın.
-
-4. Framework seçip **indirme**.
-
-Daha fazla bilgi için [bulabilir ve Visual Studio uzantıları](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Web'den yükleme
-
-İlgilendiğiniz framework biliyorsanız:
-
-1. Açık [Visual Studio Market](https://marketplace.visualstudio.com/vs).
-
-2. Framework'ün adı **Bul** kutusu.
-
-3. Gitmek için sonuç listesinde çerçevesini seçin **Visual Studio Market** aracı için sayfa.
-
-Bir liste diğer test araçları ile birlikte çerçevesini göz atmak için:
-
-1. Açık [Visual Studio Market](https://marketplace.visualstudio.com/vs).
-
-2. İçinde **kategoriye göre filtrele / koleksiyon**, seçin **tümünü gör**.
-
-3. İçinde **kategori** listesi (olarak etiketlenmiş **gösteren**), genişletin **Araçları** düğümünü seçip **test**.
-
-4. Sonuç listesinde gitmek için bir çerçeve seçin bir **Visual Studio Market** aracı için sayfa.
+   ![Visual Studio'da NuGet Paket Yöneticisi](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>İçin en son test bağdaştırıcısı güncelleştirme
 

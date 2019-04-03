@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f23ad749fc2a1d71153fd3adf2503a0c3108bf6
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b1bcd64281cf8ad2ffb1a194652ccf2b10ebf470
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790205"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857742"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio için en son sürüme güncelleştirme
 
@@ -51,7 +51,7 @@ Bir güncelleştirme olduğunda, Visual Studio ile ilgili bir bildirim bayrağı
    ![Bildirim hub'ı kullanarak Visual Studio 2017 güncelleştirmesi](media/vs-install-notifications-hub-15dot6.png "bildirim Merkezi'nde Visual Studio 2017")
 
       > [!TIP]
-      > Visual Studio 2019 sürümü için bir güncelleştirme toplu, böylece her zaman en son sürüm numarası ile yüklemek seçin.
+      > Visual Studio 2017 sürümü için bir güncelleştirme toplu, böylece her zaman en son sürüm numarası ile yüklemek seçin.
 
 1. Zaman **güncelleştirme** iletişim kutusu açılır öğesini **Şimdi Güncelleştir**.
 
@@ -220,7 +220,7 @@ Güncellemeleri denetleyin ve kullanarak yükleme menü çubuğunun ya da Visual
 
      !['Güncelleştirme indirildi ve yüklenmeye hazır' iletişim kutusunda güncelleştirme düğmesini](media/vs2019-update-visual-studio-community-rc-from-ide.png "'Güncelleştirme indirildi ve yüklenmeye hazır' iletişim kutusunda güncelleştirme düğmesini seçin")
 
-   Visual Studio kapanır ve ardından yeniden açar.
+   Visual Studio güncelleştirmeler, kapatır ve ardından yeniden açar.
 
 ### <a name="in-visual-studio"></a>Visual Studio'da
 
@@ -235,7 +235,7 @@ Güncellemeleri denetleyin ve kullanarak yükleme menü çubuğunun ya da Visual
 
      !['Güncelleştirme indirildi ve yüklenmeye hazır' iletişim kutusunda güncelleştirme düğmesini](media/vs2019-update-visual-studio-community-rc-from-ide.png "'Güncelleştirme indirildi ve yüklenmeye hazır' iletişim kutusunda güncelleştirme düğmesini seçin")
 
-   Visual Studio kapanır ve ardından yeniden açar.
+   Visual Studio güncelleştirmeler, kapatır ve ardından yeniden açar.
 
 ## <a name="use-the-notifications-hub"></a>Bildirim hub'ı kullanın
 

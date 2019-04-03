@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4519d0fb471178f4271dfe12712b5f2f6bc0bba2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 2c9bbe0b6a1f7722fb2da685b29f5d244441edc2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790829"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856724"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Hızlı Başlangıç: İlk ASP.NET Core web uygulamanızı oluşturmak için Visual Studio
 
@@ -37,7 +37,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Bu hızlı başlangıcı tamamladığınızda Tebrikler! C#, ASP.NET Core ve Vis
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Daha fazla bilgi için şu öğreticiyle devam edin:
+Daha fazla bilgi edinmek için aşağıdaki öğreticiyle devam edin:
 
 > [!div class="nextstepaction"]
 > [C# ve Visual Studio'da ASP.NET kullanmaya başlama](../get-started/csharp/tutorial-aspnet-core.md)

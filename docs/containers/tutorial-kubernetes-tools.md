@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: dbb372a042bc92421d1c7a60a5d0505a56ccbb00
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ae068ba052c9fcde99bea034c9216d2a24b5626e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325168"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856829"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
@@ -30,7 +30,7 @@ Bu yeni işlevselliği yararlanmak için gerekir:
 - [Visual Studio için Kubernetes Araçları](https://aka.ms/get-vsk8stools), ayrı bir indirme olarak kullanılabilir.
 ::: moniker-end
 ::: moniker range="vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ile *ASP.NET ve web geliştirme* iş yükü.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ile *ASP.NET ve web geliştirme* iş yükü.
 ::: moniker-end
 - [Docker Masaüstü](https://store.docker.com/editions/community/docker-ce-desktop-windows) geliştirme iş istasyonunuzda yüklü (diğer bir deyişle, Visual Studio'yu çalıştırdığınız), Docker görüntülerinizi oluşturmak istiyorsanız, yerel olarak çalışan Docker kapsayıcıları hata ayıklama veya AKS için yayımlayın. (Docker *değil* derleme ve Azure Dev alanları kullanarak AKS Docker kapsayıcılarında hata ayıklama için gereklidir.)
 ::: moniker range="vs-2017"

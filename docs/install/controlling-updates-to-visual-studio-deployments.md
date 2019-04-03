@@ -1,7 +1,7 @@
 ---
 title: Dağıtımları yönelik güncelleştirmeleri denetleme
 description: Burada bir ağdan yüklediğinizde Visual Studio güncelleştirmesi görünümünü değiştirme konusunda bilgi edinin.
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54adaf3cdcbb8e15ada46a660de59f9b578e15f8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323061"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856294"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme
 
@@ -34,52 +34,77 @@ Visual Studio güncelleştirmeleri nerede arar üzerinde doğrudan denetim istiy
 
 1. Çevrimdışı bir düzen oluşturma:
    ```cmd
-   vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+   vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
 2. Sitemi barındırmak istediğiniz dosya paylaşımına kopyalayın:
    ```cmd
-   xcopy /e C:\vs2017offline \\server\share\VS2017
+   xcopy /e C:\vsoffline \\server\share\VS
    ```
 3. Düzeni ve değişiklik response.json dosyasında değişiklik `channelUri` yönetim denetimleri channelManifest.json bir kopyasına işaret edecek şekilde değeri.
 
    Aşağıdaki örnekte olduğu gibi değeri ters eğik çizgi kaçış emin olun:
 
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
 
    Artık son kullanıcılara bu paylaşımdan Visual Studio'yu yüklemek için kurulumu çalıştırabilirsiniz.
    ```cmd
-   \\server\share\VS2017\vs_enterprise.exe
+   \\server\share\VS\vs_enterprise.exe
    ```
 
 Kuruluş Yöneticisi Visual Studio'nun daha yeni bir sürüme güncelleştirmek kullanıcıları için zaman olduğunu belirlediğinde, yapabilirler [düzen konumunu güncelleştirme](update-a-network-installation-of-visual-studio.md) güncelleştirilmiş dosyaları gibi birleştirmek için.
 
 1. Aşağıdaki komutu benzeyen bir komut kullanın:
    ```cmd
-   vs_enterprise.exe --layout \\server\share\VS2017 --lang en-US
+   vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 2. Güncelleştirilmiş düzenini response.json dosyasında yine de özellikle Channelurı değişiklik, özelleştirmelerinizi gibi içerdiğinden emin olun:
    ```json
-   "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
+   "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
-   Varolan bir Visual Studio yükler güncelleştirmeleri bu düzen arayın gelen `\\server\share\VS2017\ChannelManifest.json`. Visual Studio channelManifest.json kullanıcı yüklü olduğu daha yeniyse, bir güncelleştirme kullanılabilir kullanıcıya bildirir.
+   Varolan bir Visual Studio yükler güncelleştirmeleri bu düzen arayın gelen `\\server\share\VS\ChannelManifest.json`. Visual Studio channelManifest.json kullanıcı yüklü olduğu daha yeniyse, bir güncelleştirme kullanılabilir kullanıcıya bildirir.
 
    Yeni yüklemeler, düzenden doğrudan Visual Studio'nun güncelleştirilmiş sürümü otomatik olarak yükler.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Visual Studio IDE'de bildirimleri denetleme
 
+::: moniker range="vs-2017"
+
 Daha önce açıklandığı gibi Visual Studio içinden, bir ağ paylaşımına veya herhangi bir güncelleştirme kullanılabilir olup olmadığını görmek için Internet gibi yüklenmiş olduğu konum denetler. Bir güncelleştirme kullanılabilir olduğunda, Visual Studio pencerenin sağ üst köşesinde bir bildirim bayrağı ile kullanıcıyı uyarır.
 
- ![Güncelleştirmeleri için bildirim bayrağı](media/notification-flag.png)
+   ![Güncelleştirmeleri için bildirim bayrağı](media/notification-flag.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Daha önce açıklandığı gibi Visual Studio içinden, bir ağ paylaşımına veya herhangi bir güncelleştirme kullanılabilir olup olmadığını görmek için Internet gibi yüklenmiş olduğu konum denetler. Bir güncelleştirme kullanılabilir olduğunda, Visual Studio penceresinin sağ alt köşesinde bir bildirim simgesi ile kullanıcıyı uyarır.
+
+   ![Visual Studio IDE'de bildirim simgesine](media/vs-2019/notification-bar.png "Visual Studio IDE'de bildirim simgesi")
+
+::: moniker-end
 
 Son kullanıcılar, güncelleştirmeleri almak istemiyorsanız bildirimleri devre dışı bırakabilirsiniz. (Örneğin, güncelleştirmeleri bir yazılım merkezi dağıtım mekanizması teslim ediyorsanız bildirimleri devre dışı bırakmak isteyebilirsiniz.)
+
+::: moniker range="vs-2017"
 
 Çünkü Visual Studio 2017 [kayıt defteri girdileri özel bir kayıt defterinde depolar](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), normal şekilde kayıt defterini doğrudan düzenleyemezsiniz. Ancak, Visual Studio içeren bir `vsregedit.exe` Visual Studio ayarlarını değiştirmek için kullanabileceğiniz yardımcı programı. Aşağıdaki komutla bildirimleri kapatabilirsiniz:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Çünkü Visual Studio 2019 [kayıt defteri girdileri özel bir kayıt defterinde depolar](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), normal şekilde kayıt defterini doğrudan düzenleyemezsiniz. Ancak, Visual Studio içeren bir `vsregedit.exe` Visual Studio ayarlarını değiştirmek için kullanabileceğiniz yardımcı programı. Aşağıdaki komutla bildirimleri kapatabilirsiniz:
+
+```cmd
+vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
+```
+
+::: moniker-end
 
 (Dizin düzenlemek istediğiniz yüklü örnekle eşleşecek şekilde değiştirdiğinizden emin olun.)
 
@@ -90,7 +115,7 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleyin](install-visual-studio.md)
-* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio'yu yükleme](install-visual-studio.md)
+* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio örneklerini yönetmek için Araçlar](tools-for-managing-visual-studio-instances.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: aea3f5351ae9aeeb2ca0eb0793c7c113f143197c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428693"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856612"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı ilk bakış
 
@@ -188,7 +188,7 @@ Bu örnekte, `DirectoryInfo` çağrı üzerinde depolanan boş bir dize hata ver
 Özel durum Yardımcısı hatalarını ayıklamanıza yardımcı olacak harika bir özelliğidir. Hata ayrıntılarını görüntüleme gibi şeyler ve özel durum Yardımcısı ' bir izleme ekleyin. Veya, gerekirse, belirli özel durum koşullarını değiştirebilirsiniz. Kodunuza özel durumları işleme hakkında daha fazla bilgi için bkz. [hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Özel durum Yardımcısı özel durum Yardımcısı'nda yerini [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Özel durum Yardımcısı özel durum Yardımcısı başlatmadaki yerine [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Genişletin **özel durum ayarları** tur için herhangi bir ayarı değiştirmek bu özel durum türü, ancak işlemek nasıl daha fazla seçenek görmek için düğümü gerekmez!
 

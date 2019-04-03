@@ -1,6 +1,7 @@
 ---
 title: 'Nasıl yapılır: Visual Studio kilidini açma'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943148"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856826"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Nasıl yapılır: Visual Studio kilidini açma
 
@@ -27,7 +30,7 @@ Visual Studio Ücretsiz 30 güne kadar değerlendirebilirsiniz. IDE'de oturum im
 
 Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesabı ile ilişkili Azure DevOps kuruluş kullanarak Visual Studio kilidini açmak için:
 
-1. Tıklayarak **oturum** IDE'nin sağ üst köşesindeki düğme (veya Git **dosya** > **hesap ayarları** açmak için **hesap ayarları**  iletişim ve tıklayarak **oturum** düğmesi).
+1. Seçin **oturum** IDE'nin sağ üst köşedeki düğme (veya Git **dosya** > **hesap ayarları** açmak için **hesap ayarları**  iletişim ve **oturum** düğmesi).
 
 1. Bir Microsoft hesabı ya da bir iş veya Okul hesabı için kimlik bilgilerini girin. Visual Studio, Visual Studio aboneliği veya Azure DevOps kuruluş hesabınızla ilişkili bulur.
 
@@ -36,9 +39,9 @@ Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesab
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Visual Studio ürün anahtarı kullanarak kilidini açmak için
 
-1. Seçin **dosya** > **hesap ayarları** açmak için **hesap ayarları** iletişim ve tıklayarak **lisans ürün anahtarıyla**bağlantı.
+1. Seçin **dosya** > **hesap ayarları** açmak için **hesap ayarları** iletişim kutusunda ve ardından **ürün anahtarıylaLisans** bağlantı.
 
-Ürün anahtarı, sağlanan alana girin.
+1. Ürün anahtarı, sağlanan alana girin.
 
 > [!TIP]
 > Visual Studio'nun yayın öncesi sürümleri ürün anahtarları yoksa. IDE için yayın öncesi sürümleri kullanmak için oturum açmanız gerekir.
@@ -47,7 +50,7 @@ Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesab
 
 ### <a name="update-stale-licenses"></a>Eski lisansları güncelleştirin
 
- Görmüşsünüzdür lisansınızı okur, Visual Studio içinde eski geçiyor ileti aşağıda "lisansınız eskimiş ve güncelleştirilmelidir."
+ Kendi lisansınızı Visual Studio'da eski gittiğini belirten aşağıdaki iletiyi görmüş olabilirsiniz. Okur, "lisansınız eskimiş ve güncelleştirilmelidir."
 
  ![Visual Studio eski lisans iletisi](../ide/media/vs2017_stale-license.png)
 
@@ -56,9 +59,9 @@ Visual Studio aboneliği veya bir Microsoft hesabı veya bir iş veya Okul hesab
 - Uzun bir süre için internet bağlantısı olması veya Visual Studio kullanılan değil.
 - Visual Studio dışında oturumunuz.
 
-Lisans belirteci eski geçmeden önce Visual Studio, öncelikle kimlik bilgilerinizi yeniden girmeniz isteyen bir uyarı iletisi gösterir.
+Lisans belirteci eski geçmeden önce Visual Studio, öncelikle kimlik bilgilerinizi yeniden girin isteyen bir uyarı iletisi gösterir.
 
-Belirteç kimlik bilgilerinizi girmek değil, eski Git başlar ve **hesap ayarları** iletişim sol belirtecinizi tamamen süresinin dolmasına kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio kullanmaya devam etmeden önce bu hesabınız veya lisansınız için kimlik bilgilerinizi başka bir yöntem ile yeniden girmeniz gerekir.
+Belirteç kimlik bilgilerinizi girmek değil, eski Git başlar ve **hesap ayarları** iletişim sol belirtecinizi tamamen süresinin dolmasına kaç gün bildirir. Belirtecinizin süresi dolduktan sonra Visual Studio'yu kullanmaya devam etmeden önce hesabı için kimlik bilgilerinizi yeniden girmeniz gerekir.
 
 > [!Important]
 > Sınırlı veya internet erişimi olan ortamlarda uzun süre boyunca Visual Studio kullanıyorsanız, kesintiye uğramasını önlemek için Visual Studio kilidini açmak için bir ürün anahtarı kullanmanız gerekir.

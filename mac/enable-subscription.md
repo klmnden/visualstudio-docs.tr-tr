@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987656"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856412"
 ---
 # <a name="enable-subscription"></a>Aboneliği etkinleştir
 
@@ -40,9 +40,9 @@ Aboneliğinizin süresi dolmuşsa, iki seçeneğiniz vardır:
 
 > [!NOTE]
 > Çevrimdışı etkinleştirme, Mac için Visual Studio için kullanılabilir değil.
-> Visual Studio 2017 için Mac Professional veya Enterprise aboneliği etkinleştirmek için oturum açarken internet'e bağlı gerekir.
+> Mac Professional veya Enterprise aboneliği, Visual Studio 2019 etkinleştirmek için oturum açarken internet'e bağlı gerekir.
 
-İnternet bağlantısı olmadan makineler için Mac için Visual Studio Enterprise 2017 aldıysanız, etkinleştirme, ancak Xamarin Inspector'ı, Xamarin Profiler Mac için Visual Studio'yu kullanmaya devam edebilir ve gömülü bütünleştirilmiş kodlar özellikleri olmayacaktır kullanılabilir.
+İnternet bağlantısı olmadan makineler için Mac için Visual Studio Enterprise 2019 aldıysanız, etkinleştirme, ancak Xamarin Inspector'ı, Xamarin Profiler Mac için Visual Studio'yu kullanmaya devam edebilir ve gömülü bütünleştirilmiş kodlar özellikleri olmayacaktır kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

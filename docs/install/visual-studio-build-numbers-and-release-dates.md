@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/27/2019
+ms.date: 04/03/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a443b6ac6156f847572864dea599f4b4269485a8
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e3fcb88da454e7f1bee7a755cf10db5c8f9b7c95
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515369"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866805"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -29,8 +29,9 @@ ms.locfileid: "58515369"
 
 Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tarihleri tarihe listeler.
 
-| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
+| **Sürüm**| **Kanal** | **Sürüm tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.11 | Sürüm | 2 Nisan 2019 | 15.9.28307.586 |
 | 15.9.10 | Sürüm | 25 Mart 2019 | 15.9.28307.557 |
 | 15.9.9 | Sürüm | 12 Mart 2019 | 15.9.28307.518 |
 | 15.0.21 | Sürüm | 12 Mart 2019 | 15.0.26228.76 |
@@ -190,8 +191,10 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tarihleri tarihe listeler.
 
-| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
+| **Sürüm**| **Kanal** | **Sürüm tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Sürüm | 2 Nisan 2019 | 16.0.28729.10 |
+| 16.0.0 | Preview 5 | 2 Nisan 2019 | 16.0.28729.10 |
 | 16.0.0 | Sürüm Adayı 4 (RC.4) | 26 Mart 2019 | 16.0.28721.148 |
 | 16.0.0 | 4.4 Önizleme | 26 Mart 2019 | 16.0.28721.148 |
 | 16.0.0 | Sürüm Adayı 3 (RC.3) | 19 Mart 2019 | 16.0.28714.193 |
@@ -218,6 +221,6 @@ Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tar
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio yayın ritmi](/visualstudio/productinfo/release-rhythm/)
-* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)

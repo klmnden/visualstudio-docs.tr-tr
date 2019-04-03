@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1e2147b3c3e7a44472095e3e83655148757a5419
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 2b813d92188a2b4e33b87a1391c7ebbea63292f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647394"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857001"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio’nun çevrimdışı yüklemesini oluşturma
 
@@ -33,7 +33,7 @@ Biz, Visual Studio 2017'de ağ ve bilgisayar yapılandırmalarını çeşitli i�
 
 ::: moniker range="vs-2019"
 
-Biz, Visual Studio 2019 iyi ağ ve bilgisayar yapılandırmalarını çeşitli çalışacak şekilde tasarlanmıştır. Denemenizi öneririz ancak [Visual Studio web yükleyicisini](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)&mdash;küçük bir dosyadır ve en son düzeltmeler ve özellikler ile güncel kalın sağlar&mdash;için aktarmanızı değil olduğunu biliyoruz.
+Biz, Visual Studio 2019 iyi ağ ve bilgisayar yapılandırmalarını çeşitli çalışacak şekilde tasarlanmıştır. Denemenizi öneririz ancak [Visual Studio web yükleyicisini](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)&mdash;küçük bir dosyadır ve en son düzeltmeler ve özellikler ile güncel kalın sağlar&mdash;için aktarmanızı değil olduğunu biliyoruz.
 
 ::: moniker-end
 
@@ -91,9 +91,9 @@ Seçtiğiniz Visual Studio sürümünüz için Visual Studio önyükleyicisi ind
 
 | Sürüm                    | Dosya                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
-| Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019+rc)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019+rc) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019+rc)     |
+| Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
 

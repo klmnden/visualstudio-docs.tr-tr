@@ -6,12 +6,12 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295201"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856547"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Mac için Visual Studio'yu kullanın
 
@@ -19,7 +19,7 @@ Sizin veya kuruluşunuzun güvenlik önlemleri gibi bir güvenlik duvarı veya p
 
 - [**Mac için Visual Studio yükleme**](#install-visual-studio-for-mac): Mac için tüm özellikler ve Visual Studio'nun iş yükleri için erişiminiz URL'leri beyaz liste bu tabloları içerir
 
-- [**Mac için Visual Studio kullanan**](#use-visual-studio-for-mac): tüm hizmetleri ve istediğiniz özelliklerini erişiminiz bu tablolar URL'leri beyaz listeye içerir.
+- [**Mac için Visual Studio'yu kullanın**](#use-visual-studio-for-mac): Böylece tüm hizmetleri ve istediğiniz özelliklerini erişiminiz bu tablolarını URL'leri izin verilenler listesine ekleyin.
 
 ## <a name="install-visual-studio-for-mac"></a>Mac için Visual Studio'yu yükleyin
 
@@ -34,10 +34,10 @@ Mac için Visual Studio çeşitli alanlarından indirdiği için ve sunucuları 
 | vortex.data.microsoft.com | Kilitlenme ve hata raporlama |
 | az667904.vo.msecnd.net| Kilitlenme ve hata raporlama |
 | xamarin.com | Yükleyici meta verileri|
-| xampubdl.BLOB.Core.Windows.NET| Yükleyici paketleri|
+| xampubdl.blob.core.windows.net| Yükleyici paketleri|
 | download.VisualStudio.microsoft.com | Yükleyici paketleri|
-| xamarin.azureedge.NET | Yükleyici paketleri|
-| Developer.xamarin.com | Yükleyici paketleri|
+| xamarin.azureedge.net | Yükleyici paketleri|
+| developer.xamarin.com | Yükleyici paketleri|
 | dc.services.visualstudio.com| Kilitlenme raporlaması |
 
 ### <a name="third-party-domains"></a>Üçüncü taraf etki alanları
@@ -45,8 +45,8 @@ Mac için Visual Studio çeşitli alanlarından indirdiği için ve sunucuları 
 | Etki Alanı| Amaç |
 | --------------------------|-------------------------|
 | DL.Google.com | Android SDK'sı |
-| download.Oracle.com | Java SDK'sı|
-| api.Apple cloudkit.com| Apple güvenlik hizmetleri |
+| download.Oracle.com | Java SDK|
+| api.apple-cloudkit.com| Apple güvenlik hizmetleri |
 
 ## <a name="use-visual-studio-for-mac"></a>Mac için Visual Studio'yu kullanın
 
@@ -58,7 +58,7 @@ Visual Studio'da Mac için bir proxy veya güvenlik duvarı ihtiyacınız olan h
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL çözümleme |
 | vsstartpage.blob.core.windows.net| 80/443| Başlangıç sayfası|
-| Software.xamarin.com |  80/443|Updater hizmeti|
+| software.xamarin.com |  80/443|Updater hizmeti|
 | addins.monodevelop.com | 80/443| Uzantısı Hizmetleri |
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Deneysel özellik ve bildirimleri |
 | targetednotifications.azurewebsites.NET|  80/443| Bildirimleri yalnızca belirli türlerini makineleri/kullanım senaryoları için uygun bir liste için genel bir listesini filtrelemek için kullanılan|
@@ -76,18 +76,18 @@ Visual Studio'da Mac için bir proxy veya güvenlik duvarı ihtiyacınız olan h
 
 | Etki Alanı | Bağlantı noktaları|Amaç|
 | ----------------------|------------------|------------------|
-| Api.nuget.org | 80/443|NuGet API'si|
+| api.nuget.org | 80/443|NuGet API'si|
 | secure.aadcdn.microsoftonline-p.com |80/443| Kimlik sağlayıcısı|
 
 ### <a name="android-projects"></a>Android projeleri
 
 | Etki Alanı| Amaç|
 | ------------------------------------|------------------------------------|
-| time.Android.com| Android öykünücüsü saat sunucusu |
+| time.android.com| Android öykünücüsü saat sunucusu |
 | connectivitycheck.gstatic.com | Android öykünücüsü için bağlantı|
 | cloudconfig.googleapis.com| Android öykünücüsü API'leri|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio 2017 ve Azure hizmetlerini kullanma](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Windows üzerinde benzer sorunlarını giderme](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

@@ -1,6 +1,6 @@
 ---
 title: Bizimle iletişime geçin
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3df55c70c476288df7ae8f966adbad644971b27e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790699"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857144"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio ürün geri bildirimi
 
@@ -28,7 +30,7 @@ Visual Studio ile ilgili sorunlarla karşılaşırsanız&mdash;kilitlenmeler, ya
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Visual Studio özellikleri hakkında bir öneriyse yapmak istiyorum
 
-Varsa daha iyi yapabileceğimiz bir şey iyileştirebileceğimize ilişkin! Visual Studio'da **yardımcı** > **geri bildirim gönder** > **bir öneride** menü çubuğundan. Ardından, Visual Studio açılır [Geliştirici topluluğu](https://developercommunity.visualstudio.com) burada oturum açabilirsiniz fikrinizi paylaşmak için tarayıcınızda sayfa. Daha fazla bilgi için [Visual Studio 2017 için bir özellik önerisi](suggest-a-feature.md).
+Varsa daha iyi yapabileceğimiz bir şey iyileştirebileceğimize ilişkin! Visual Studio'da **yardımcı** > **geri bildirim gönder** > **bir öneride** menü çubuğundan. Ardından, Visual Studio açılır [Geliştirici topluluğu](https://developercommunity.visualstudio.com) burada oturum açabilirsiniz fikrinizi paylaşmak için tarayıcınızda sayfa. Daha fazla bilgi için [Visual Studio için bir özellik önerisi](suggest-a-feature.md).
 
 ### <a name="rate-this-product"></a>Bu ürünü değerlendirin
 
@@ -36,7 +38,7 @@ Visual Studio'nun yayın öncesi sürümlerde bir **bu ürünü değerlendirin**
 
 ## <a name="i-want-to-contact-microsoft-support"></a>Microsoft Support istemeniz
 
-Visual Studio desteği hakkında bilgi için bkz: [destek yaşam döngüsü ve Bakım](/visualstudio/productinfo/vs-servicing-vs) sayfası.
+Visual Studio desteği hakkında bilgi için bkz: [ürün yaşam döngüsü ve Bakım](/visualstudio/productinfo/vs-servicing-vs) sayfası.
 
 Diğer Microsoft ürünleri ve Hizmetleri için bkz. [Microsoft Destek](https://go.microsoft.com/fwlink/?LinkID=99019) için çevrimiçi Yardım.
 
@@ -55,10 +57,10 @@ Sorular ve cevaplar diğer geliştiricilerle paylaşmak istediğiniz kullanırsa
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Visual Studio belgelerini geliştirmeye yardımcı olmak istiyorum
 
-Lütfen kullanın **bu sayfa yardımcı oldu?** sayfanın alt kısmındaki geri bildirim düğmesi. Bu düğme, tüm belge sayfaları üzerinde bulabilirsiniz. Alternatif olarak, geri bildirim herhangi bir Visual Studio sayfasına üzerinde ekleyebileceğiniz [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) kullanarak **belgeler hakkında geri bildirimde bulunmak için oturum açın** düğmesi, sayfanın sonundaki ayrıca.
+Lütfen kullanın **bu sayfa yardımcı oldu?** sayfanın alt kısmındaki geri bildirim düğmesi. Bu düğme, tüm belge sayfaları üzerinde bulabilirsiniz. Alternatif olarak, geri bildirim herhangi bir Visual Studio sayfasına üzerinde ekleyebileceğiniz [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) , GitHub'ı kullanarak hesap; seçeneğini belirleyin **belgeler hakkında geri bildirimde bulunmak için oturum açın** sayfanın alt kısmında da düğmesi Sayfa.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md)
 * [Geliştirici topluluğu](https://developercommunity.visualstudio.com)
-* [Geliştirici topluluğu veri gizliliği](developer-community-privacy.md)
+* [Geliştirici Topluluğu veri gizliliği](developer-community-privacy.md)

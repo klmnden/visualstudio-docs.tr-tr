@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a9149498301e26d9b0155df6175693f5c3679e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d613bbc75bfac14f17c2c50d0702ed89b744baac
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790920"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857833"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 
@@ -33,7 +33,7 @@ Visual Studio'dan veya MSBuild çalıştırın **komut penceresi**. Bu izlenecek
 
  Visual Studio proje sistemi MSBuild'i temel alır. Bu, Visual Studio kullanarak yeni bir proje dosyası oluşturmayı kolaylaştırır. Bu bölümde, bir Visual C# proje dosyası oluşturun. Bunun yerine bir Visual Basic proje dosyası oluşturmayı seçebilirsiniz. Bu anlatım bağlamında, iki proje dosyası arasındaki fark önemsizdir.
 
-**Proje dosyası oluşturmak için**
+**Bir proje dosyası oluşturmak için**
 
 1. Visual Studio'yu açın ve bir proje oluşturun.
 
@@ -51,6 +51,7 @@ Visual Studio'dan veya MSBuild çalıştırın **komut penceresi**. Bu izlenecek
 1. Tıklayın **Tamam** veya **Oluştur** proje dosyası oluşturmak için.
 
 ## <a name="examine-the-project-file"></a>Proje dosyasını inceleme
+
  Önceki bölümde, bir Visual C# proje dosyası oluşturmak için Visual Studio'yu kullandınız. Proje dosyası içinde temsil edilen **Çözüm Gezgini** BuildApp adlı proje düğümü tarafından. Proje dosyasını incelemek için Visual Studio kod düzenleyicisini kullanabilirsiniz.
 
 **Projeyi dosyasını incelemek için**
@@ -221,8 +222,14 @@ $(PropertyName)
 4. Çıktıyı inceleyin. Şu iki satırı görmeniz gerekir (.NET Framework sürümünüz farklı olabilir):
 
     ```
+    ::: moniker range=">=vs-2019"
+    Configuration is Debug
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
+    ::: moniker-end
     ```
 
 > [!NOTE]
@@ -370,7 +377,7 @@ Bir öğe türünün ayracını değiştirmek için, ItemType'ın öğe türü v
 
 Her satırda bir tane Derleme öğesi görüntülemek için taşıma dönüşlerini ve satır beslemelerini (%0A%0D) kullanmak üzere İleti görevini değiştirin.
 
-**Öğe türü görüntülemek için her satırda bir tane değerleri**
+**Her satırda bir tane öğe türü değeri görüntülemek için**
 
 1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
@@ -442,7 +449,7 @@ Hariç Tutma özniteliği, sadece Dahil Etme özniteliği tarafından her iki ö
 
 Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 
-**Dahil etmek ve öğelerini hariç tutmak için**
+**Öğeleri dahil etmek ve dışlamak için**
 
 1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
@@ -491,7 +498,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 %(ItemType.MetaDataName)
 ```
 
-**Öğe meta verileri incelemek için**
+**Öğenin meta verilerini incelemek için**
 
 1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
@@ -522,7 +529,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 
  Öğe bir öğe listesine eklendiğinde bu öğe, bazı iyi bilinen meta verilere atanır. Örneğin, %(Filename) herhangi bir öğenin dosya adını döndürür. İyi bilinen meta verilerin tam bir listesi için bkz. [tanınmış öğe meta verileri](../msbuild/msbuild-well-known-item-metadata.md).
 
-**İyi bilinen meta verilerini incelemek için**
+**İyi bilinen meta verileri incelemek için**
 
 1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 

@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.topic: include
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 3bf7b25ccbcb964572c3ae302523cd5a540829c8
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: ee0b30fcbd25ada25941efa12083c662eff83f78
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323529"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856670"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Öğretici: Docker Compose ile çok kapsayıcılı uygulama oluşturma
 
@@ -28,7 +28,7 @@ Bu öğreticide, birden fazla kapsayıcı yönetmek ve bunları Visual Studio ka
 
 ::: moniker range=">= vs-2019"
 * [Docker Masaüstü](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ile **Web geliştirme**, **Azure Araçları** iş yükünü ve/veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ile **Web geliştirme**, **Azure Araçları** iş yükünü ve/veya **.NET Core çoklu platform geliştirme** iş yükü yüklenmiş
 * [.NET core 2.2 geliştirme araçları](https://dotnet.microsoft.com/download/dotnet-core/2.2) geliştirme ile .NET Core 2.2
 ::: moniker-end
 

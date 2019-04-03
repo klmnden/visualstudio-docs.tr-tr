@@ -3,20 +3,20 @@ title: Yeni projeler ve çözümler oluşturma
 description: Bu makale, Mac için Visual Studio'da projeler ve çözümler oluşturulacağı açıklamaktadır
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294272"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856479"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Yeni projeler ve çözümler oluşturma
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Bir şablondan yeni projeler ve çözümler oluşturma
 
-Önceden tanımlanmış bir şablon kullanarak herhangi bir zamanda çözümleri oluşturulabilir. Bu şekilde bir çözüm oluşturmak için Gözat **Dosya > Yeni Çözüm**, gerekli platformları ve gerekli şablon seçin:
+Önceden tanımlanmış bir şablon kullanarak herhangi bir zamanda çözümleri oluşturulabilir. Mac için Visual Studio 2019'ile başlayan seçin **yeni** başlangıç penceresinden. Alternatif olarak, göz atın **Dosya > Yeni Çözüm**. Gerekli platformları ve gerekli şablon seçin:
 
 ![Yeni çözümler oluşturun](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ Bu yöntem, yeni projeler ekleme, Xamarin kod paylaşımı özelliklerinden yara
 
 ## <a name="opening-recent-solutions"></a>Son çözümleri açılıyor.
 
-Visual Studio giriş sayfası, üzerinde çalıştığınız son projeler listesini görüntüler:
+Visual Studio başlangıç penceresi, üzerinde çalıştığınız son projeler listesini görüntüler:
 
 ![Son çözümleri bölümüne Hoş Geldiniz sayfası](media/create-new-projects-recent.png)
 

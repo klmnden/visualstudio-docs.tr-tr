@@ -3,16 +3,16 @@ title: Azure işlevleri'ne giriş
 description: Mac için Visual Studio'daki Azure işlevleri'ni kullanarak
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295949"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857249"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure işlevleri'ne giriş
 
@@ -20,7 +20,7 @@ Azure işlevleri, bir şekilde oluşturun ve – – işlevleri – – kod par�
 
 ## <a name="requirements"></a>Gereksinimler
 
-Azure işlev araçları dahil edilecek **7.5 Mac için Visual Studio**.
+Azure işlev araçları dahil edilecek **7.5 Mac için Visual Studio** ve daha yeni.
 
 Oluşturma ve işlevleri dağıtmak için de kullanılabilir ücretsiz bir Azure aboneliğine ihtiyaç [ https://azure.com/free ](https://azure.com/free).
 
@@ -34,6 +34,10 @@ Oluşturma ve işlevleri dağıtmak için de kullanılabilir ücretsiz bir Azure
 3. Kullanmak, işlev adınızı girin ve istediğiniz ilk Azure işlevleri şablonu **sonraki**.
 
     ![Azure işlevleri şablonları gösteren yeni proje iletişim kutusu](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > İle birlikte gelen Azure işlevleri çalışma zamanı ve şablonları (CLI) mümkün olduğunca tarih seçeceğine tutulur, ancak bunlar kaçınılmaz olarak eski alın. Yeni işlevler projesi oluştururken, Mac için Visual Studio CLI güncelleştirmeleri denetler ve aşağıdaki resimde gösterildiği gibi size bildirir. Güncelleştirilmiş şablonları indirmek için düğmesine tıklamanız yeterlidir.
+    > ![Azure işlevleri güncelleştirmeleri gösteren yeni proje iletişim kutusu kullanılabilir](media/azure-functions-update.png)
 
     Seçtiğiniz işlev türüne bağlı olarak, aşağıdaki görüntüde gösterildiği gibi bir sonraki sayfada, erişim hakları gibi ayrıntılarını girin ister:
 
@@ -91,20 +95,17 @@ Daha fazla işlev, işlev uygulaması projenizi eklemek için yukarıdaki yordam
 
 ## <a name="publish-to-azure"></a>Azure'a Yayımlama
 
-1. Proje adına sağ tıklayıp **Yayımla > Azure'da Yayımla**: ![azure menü seçeneği Yayımla](media/azure-functions-image5.png)
+1. Proje adına sağ tıklayıp **Yayımla > Azure'da Yayımla**:  ![Azure menü seçeneğine yayımlama](media/azure-functions-image5.png)
 2. Önceden bağlandıysanız Azure hesabı için Visual Studio Mac için kullanılabilir uygulama hizmetleri görüntülenen bir listesi. Oturum açmadıysanız, sizden bunu yapmak için istenir.
 3. Gelen **Azure App Service'e yayımlama** iletişim kutusunda, var olan bir app service'ı seçebilir veya tıklayarak yeni bir tane oluşturun **yeni**.
-4. İçinde **yeni App Service Oluştur** iletişim kutusu, ayarlarınızı girin: ![azure menü seçeneği Yayımla](media/azure-functions-image7.png)
+4. İçinde **yeni App Service Oluştur** iletişim kutusu, ayarlarınızı girin:  ![Azure menü seçeneğine yayımlama](media/azure-functions-image7.png)
 
     |Ayar  |Açıklama  |
     |---------|---------|
     |**App Service adı**|Yeni işlev uygulamanızı tanımlayan genel olarak benzersiz bir ad.|
     |**Abonelik**|Kullanılacak Azure aboneliği.|
-    |**[Kaynak grubu](/azure/azure-resource-manager/resource-group-overview)**|İşlev uygulamanızın oluşturulacağı kaynak grubunun adı. Seçin **+** yeni bir kaynak grubu oluşturmak için.|
+    |**[Kaynak Grubu](/azure/azure-resource-manager/resource-group-overview)**|İşlev uygulamanızın oluşturulacağı kaynak grubunun adı. Seçin **+** yeni bir kaynak grubu oluşturmak için.|
     |**[Hizmet planı](/azure/azure-functions/functions-scale)**|Mevcut bir planı seçebilir veya özel bir plan oluşturun. İşlevleri erişiminizi erişeceği diğer hizmetlere ya da size yakın bir bölgede bir konum seçin.|
-
-    > [!CAUTION]
-    > Bir hata olduğunu 7.6 yayımlama bir özel hizmet planı oluşturmaya çalışırsanız, bir sağlama hatası ile başarısız olmasına neden olan Mac için Visual Studio sürümünde **fiyatlandırma** kümesine **tüketim**. Bu, sonraki hizmet sürümde düzeltilecektir.
 
 5. Tıklayın **sonraki** bir depolama hesabı oluşturmak için. İşlevler çalışma zamanı tarafından bir Azure depolama hesabı gereklidir. Tıklayın **özel** bir genel amaçlı depolama hesabı oluşturun veya var olanı kullanın:
 
@@ -116,14 +117,11 @@ Daha fazla işlev, işlev uygulaması projenizi eklemek için yukarıdaki yordam
 
     ![Azure menü seçeneğine yayımlama](media/azure-functions-image12.png)
 
-> [!CAUTION]
-> Mac için Visual Studio 7.6 sürümünde bir hata varsa burada `FUNCTIONS_EXTENSION_VERSION` "işlevinizi çalışmayabilir anlamı beta için" doğru şekilde ayarlanmadı. Bu sorunu gidermek için Git, [işlev uygulaması ayarları](#function-app-settings) ayarlayıp `FUNCTIONS_EXTENSION_VERSION` "beta" için "-1".
-
 ## <a name="function-app-settings"></a>İşlev uygulaması ayarları
 
 Azure işlev uygulaması da local.settings.json içinde eklenen herhangi bir ayarı eklenmesi gerekir. Proje yayımladığınızda, bu ayarlar otomatik olarak karşıya yüklenmemiş.
 
-Adresinden azure portalında app ayarlarınız erişmek için Git [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). Altında **işlev uygulamaları**seçin **işlev uygulamaları** ve değişken vurgulayabilirsiniz:
+Adresinden Azure portalında app ayarlarınız erişmek için Git [ https://ms.portal.azure.com/ ](https://ms.portal.azure.com/). Altında **işlev uygulamaları**seçin **işlev uygulamaları** ve değişken vurgulayabilirsiniz:
 
 ![Azure işlevleri menüsü](media/azure-functions-image9.png)
 
@@ -133,7 +131,7 @@ Gelen **genel bakış** sekmesinde **uygulama ayarları** altında **özellikler
 
 Buradan, yeni uygulama ayarlarını ekleyin veya var olanları düzenleyin işlev uygulaması için uygulama ayarlarını ayarlayabilirsiniz:
 
-![azure portal'ın uygulama ayarları alanı](media/azure-functions-image11.png)
+![Azure portal'ın uygulama ayarları alanı](media/azure-functions-image11.png)
 
 Ayarlanacak ihtiyacınız bir önemli ayar `FUNCTIONS_EXTENSION_VERSION`. Mac için Visual Studio'dan yayımlama sırasında bu değer ayarlanmalıdır **beta**.
 
@@ -145,7 +143,7 @@ Ayarlanacak ihtiyacınız bir önemli ayar `FUNCTIONS_EXTENSION_VERSION`. Mac i�
 
 - **HTTP** – bir HTTP isteği kullanarak kodunuzun yürütülmesini tetikler. Açık şablonları için aşağıdaki HTTP Tetikleyicileri vardır:
     - HTTP tetikleyicisi
-    - HTTP GET CRUD
+    - Http GET CRUD
     - HTTP POST CRUD
     - Parametrelerle HTTP tetikleyicisi
 

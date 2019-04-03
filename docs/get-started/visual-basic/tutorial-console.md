@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a32e25f8bf19a565ef86d130a7e61a0f3742580
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647381"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857599"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Öğretici: Visual Studio'da Visual Basic ile çalışmaya başlama
 
@@ -33,7 +33,7 @@ Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://v
 
 ::: moniker range="vs-2019"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
@@ -267,5 +267,5 @@ Bu öğreticiyi tamamlamak Tebrikler! Daha da fazla bilgi edinmek için aşağı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Basic dili izlenecek yolu](/dotnet/visual-basic/walkthroughs)
-* [Visual Basic Dil Başvurusu](/dotnet/visual-basic/language-reference/index)
+* [Visual Basic dil başvurusu](/dotnet/visual-basic/language-reference/index)
 * [Visual Basic kod dosyaları için IntelliSense](../../ide/visual-basic-specific-intellisense.md)

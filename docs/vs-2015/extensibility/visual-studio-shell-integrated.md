@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 321135c8b6a0d560ed04dabf57bde5a525e16430
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766098"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866779"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Kabuğu (tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
 |Dil Desteği|-Yok|  
 |IDE|<ul><li>Ayarlar<br /><br /> <ul><li>Ayarları oluşturma</li><li>İçeri ve dışarı aktarma ayarları</li><li>Ayarları sıfırlama</li></ul></li><li>**Araç kutusu** tümleştirme</li><li>**Görev listesi** tümleştirme</li><li>Yardım tümleştirmesi</li><li>**Seçenekleri** iletişim kutusu</li><li>Yazı tipleri ve renkler Yönetimi</li><li>**Çıkış** penceresi</li><li>**Komut** penceresi</li><li>Pencere Yönetimi</li><li>Komutlar, menüler ve tuş bağlamaları</li><li>Etki alanına özgü dil (DSL) çalışma zamanı</li></ul>|  
 |Proje sistemi ve proje türleri|-Çözüm ve çözüm klasörleri<br />-Çözüm Yapılandırma Yöneticisi<br />-Öğesi yönetimi<br />-Tek proje ve birden çok proje çözümleri<br />-Uygulama Tasarımcısı'nı (Basitleştirilmiş Proje Özellikleri)<br />-Web Başvurusu Ekle<br />-Hizmet Başvurusu Ekle<br />Tek proje<br />-Web sitesi proje türleri<br />-Web uygulama projeleri|  
-|Derleme|-IDE'de özel derleme adımları<br />-Önceden derleme fikri mülkiyet (IP) koruma<br />-Kod imzalama<br />     MSBuild|  
+|Yapı|-IDE'de özel derleme adımları<br />-Önceden derleme fikri mülkiyet (IP) koruma<br />-Kod imzalama<br />     MSBuild|  
 |Düzenleyici|-Koda göz atma (birleştirilmiş arama, kaynak tanımı, devralma) araçları<br />-Kod Gezintisi<br />-   IntelliSense<br />-Akıllı etiketler<br />-Yeniden düzenleme<br />-Düzgün listeleme<br />-IntelliSense filtreleme<br />-   **Kod tanımı** penceresi|  
 |Tasarımcı|-Windows Presentation Foundation Tasarımcısı<br />-Windows Forms Tasarımcısı<br />-Web Tasarımcısı ve HTML düzenleyicisi|  
 |Veri|-   **Sunucu Gezgini** (Basitleştirilmiş: yalnızca verileri). Bkz. Not 1.<br />-   **Veri kaynakları** penceresi<br />-Tam kümesini veri denetimleri<br />-XML Düzenleyicisi<br />-Veri bağlama için yerel veri kaynağı (. MDF veya. MDB)<br />-Veri nesnesine bağlama<br />-Veri Web hizmetine bağlama<br />-Yerel veritabanı sunucusuna veri bağlama<br />-Uzak veritabanı sunucusu veri bağlama<br />-DDL uzak veri için Araçlar<br />-   **Sunucu Gezgini** genişletilebilirlik ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] örnekleri)|  
@@ -52,7 +52,7 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
 #### <a name="1-data-tools"></a>1. Veri Araçları  
  Veritabanı geliştirme araçları ve Basitleştirilmiş veri genişletilebilirlik desteği gibi tümleşik Kabuk içerir **Çözüm Gezgini**. Ancak, SQL Server Express, SQL Raporlama ve Crystal Reports tümleşik Kabuğu dahil edilmez.  
   
-#### <a name="2-debugging-support"></a>2. Hata ayıklama desteği  
+#### <a name="2-debugging-support"></a>2. Hata Ayıklama Desteği  
  Tümleşik Kabuk, Visual Studio Community sürümü dahil aynı hata ayıklama altyapısını içerir. Hata ayıklama altyapısı gibi Ekle, kesme noktası ayarlayın, Düzenle ve devam et ve diğer yaygın hata ayıklayıcı için yönetilen kod ve ilgili özellikleri içerir. Ancak, hata ayıklama Altyapısı SQL Server veritabanı hata ayıklamayı desteklemiyor.  
   
  Ancak destek yerel hata ayıklama, temel hata ayıklayıcı paket içerisine dâhil için ek dilleri desteklemek için genişletilemez.  
@@ -70,7 +70,7 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
   
 -   Sınıf Tasarımcısı  
   
--   Önleyici DotFuscator  
+-   PreEmptive koruma - Dotfuscator  
   
 -   Dil özellikleri  
   

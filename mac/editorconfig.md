@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294025"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857508"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Oluşturma ve özel bir EditorConfig dosyasını düzenleme
 
 Mac için Visual Studio'da ekleyebileceğiniz bir [EditorConfig](http://editorconfig.org/) projenizi veya çözümünüzü tutarlı kodlama uygulamak için dosya stiller herkes kod temelinde çalışır. EditorConfig dosyasında bildirilen ayarları için Mac metin düzenleyici ayarları genel Visual Studio önceliklidir. Bir EditorConfig kullanarak projeniz dosya ya da kod tabanı, kodlama stili tercihleri ve projeniz için uyarılar ayarlamanıza olanak tanır. Dosyayı kod temelinizde bir parçası olduğundan, tüm kullanıcıların kullandıkları IDE ya da kod düzenleyicinizi bakılmaksızın, bir projenin kodlama uygulamalarını izliyor kolaylaştırır.
 
-[EditorConfig](http://editorconfig.org/) dosyaları, Visual Studio 2017'de dahil olmak üzere birçok IDE ve kod düzenleyicilerini üzerinde desteklenir.
+[EditorConfig](http://editorconfig.org/) dosyaları, Visual Studio da dahil olmak üzere birçok IDE ve kod düzenleyicilerini üzerinde desteklenir.
 
 ## <a name="supported-settings"></a>Desteklenen ayarlar
 

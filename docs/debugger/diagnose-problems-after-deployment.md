@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316894"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857781"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama (C#, Visual Basic)
 
@@ -40,7 +40,7 @@ IntelliTrace kullanarak dağıtımdan sonra ASP.NET web uygulamanızdaki sorunla
 
 ####  <a name="TFS2017"></a> Azure DevOps ve Team Foundation Server 2017
 
-Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kaldırılan dosya. Dağıtımdan sonra ASP.NET web uygulamalarında hata ayıklamak için aşağıdaki yöntemlerden birini kullanın:
+Visual Studio 2017 ve sonraki sürümler dahil etmeyin *Buildınfo.config* kullanım dışı ve sonra kaldırılan dosya. Dağıtımdan sonra ASP.NET web uygulamalarında hata ayıklamak için aşağıdaki yöntemlerden birini kullanın:
 
 * Azure'a dağıtım için kullanmak [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
@@ -105,7 +105,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
     -   **/p:VisualStudioVersion=12.0**
 
-    -   **/p:MSBuildAssemblyVersion 12.0 =**
+    -   **/p:MSBuildAssemblyVersion=12.0**
 
     -   **/tv:12.0**
 
@@ -168,7 +168,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 1.  Visual Studio Enterprise IntelliTrace günlük (.iTrace dosyası) açın. Veya yalnızca aynı bilgisayarda Visual Studio Enterprise varsa dosyasına çift tıklayın.
 
-2.  Seçin **açık çözüm** projeyi bir çözümün bir parçası oluşturulmadıysa Visual Studio'nun eşleştirme çözümünü veya projeyi otomatik olarak açılmasını sağlamak için. [S: IntelliTrace günlük dağıtılan Uygulamam hakkında bilgiler eksik. Neden bu ortaya çıktı? Ne yapmalıyım?](#InvalidConfigFile)
+2.  Seçin **açık çözüm** projeyi bir çözümün bir parçası oluşturulmadıysa Visual Studio'nun eşleştirme çözümünü veya projeyi otomatik olarak açılmasını sağlamak için. [S: IntelliTrace günlük dağıtılan Uygulamam hakkında bilgiler eksik. Neden bu ortaya çıktı? Ne yapmam gerekir?](#InvalidConfigFile)
 
      Eşleştirme çözümünü veya projeyi açtığında, visual Studio tüm bekleyen değişiklikleri otomatik olarak kaldırır. Bu raf kümesi hakkında daha fazla bilgi edinmek için konum **çıkış** penceresi veya **Takım Gezgini**.
 
@@ -262,7 +262,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
 
 3.  Dosyanın gerekli bilgileri içerdiğinden emin olun:
 
-- **projectName**
+- **ProjectName**
 
    Projenizi Visual Studio'da adı. Örneğin:
 
@@ -316,7 +316,7 @@ Visual Studio 2017 içermez *Buildınfo.config* kullanım dışı ve sonra kald�
     </SourceControl>
     ```
 
-- **Derleme**
+- **Yapı**
 
    Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:
 

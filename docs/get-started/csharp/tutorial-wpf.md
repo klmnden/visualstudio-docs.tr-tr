@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 328224cd7ec55a51621805361d3b1af67aaa825c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790569"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856881"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Öğretici: C ile basit uygulama oluşturma\#
 
@@ -29,7 +29,7 @@ Bu öğreticiyi izleyerek, çoğu araç, iletişim kutuları ve Visual Studio il
 Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>IDE'yi yapılandırma
@@ -52,7 +52,7 @@ Visual Studio'yu başlatın, başlangıç penceresi açar. Seçin **kod olmadan 
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Proje oluşturma
+## <a name="create-the-project"></a>Projeyi oluşturma
 
 Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.
 

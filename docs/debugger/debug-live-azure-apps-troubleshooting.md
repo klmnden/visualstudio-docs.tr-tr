@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2213c1e573efa1811d3b578c3d7bd92f1b77f2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526428"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857768"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio'da anlık görüntü hata ayıklama için sorun giderme ve bilinen sorunlar
 
@@ -60,8 +60,8 @@ Aşağıdaki adımları gerçekleştirin:
 - Uygulamanızın desteklenen emin olun:
   - Azure uygulama hizmetleri - .NET Framework 4.6.1 üzerinde çalışan ASP.NET uygulamalarından veya üzeri.
   - Azure uygulama hizmetleri - .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
-  - .NET Framework 4.6.1 üzerinde çalışan azure sanal makineler (ve VMSS) - ASP.NET uygulamalarını veya üzeri.
-  - .NET Core 2.0 veya daha sonra Windows çalıştıran azure sanal makineler (ve VMSS) - ASP.NET Core uygulamaları.
+  - Azure sanal makineler (ve sanal makine ölçek kümesi) - .NET Framework 4.6.1 üzerinde çalışan ASP.NET uygulamalarından veya üzeri.
+  - Azure sanal makineler (ve sanal makine ölçek kümesi) - .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
   - Azure Kubernetes Hizmetleri - .NET Core 2.2 veya sonraki Debian 9 üzerinde çalışan ASP.NET Core uygulamaları.
   - Azure Kubernetes Hizmetleri - .NET Core 2.2 veya sonraki Alpine 3.8 üzerinde çalışan ASP.NET Core uygulamaları.
   - Azure Kubernetes Hizmetleri - .NET Core 2.2 veya sonraki Ubuntu 18.04 üzerinde çalışan ASP.NET Core uygulamaları.
@@ -74,6 +74,51 @@ Aşağıdaki adımları gerçekleştirin:
 Aşağıdaki adımları gerçekleştirin:
 
 - Anlık görüntüleri küçük bellek alanı dolduracaktır, ancak bir işleme ücrete tabi. Snapshot Debugger, yoğun bellek yükü altında sunucunuzdur algılarsa, anlık görüntüler olmayacaktır. Snapshot Debugger oturumu durdurma ve yeniden deneyerek zaten yakalanan anlık görüntülerini silebilirsiniz.
+
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Sorun: Visual Studio'nun birden çok sürümü olan anlık görüntü hata ayıklama bana hata veriyor
+
+VS 2019 Snapshot Debugger site uzantısını Azure App Service üzerinde daha yeni bir sürümü gerektirir.  Bu sürüm, VS 2017 tarafından kullanılan Snapshot Debugger site uzantısını daha eski bir sürümüyle uyumlu değil.  Daha önce VS 2017'de anlık görüntü hata ayıklayıcı tarafından hata, bir Azure uygulama hizmeti için anlık görüntü hata ayıklayıcı VS 2019'eklemeye çalışırsanız aşağıdaki hatayı alırsınız:
+
+![Uyumsuz Snapshot Debugger site uzantısını VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "uyumsuz Snapshot Debugger site uzantısını VS 2019")
+
+Buna karşılık, daha önce anlık görüntü hata ayıklayıcı VS 2019'tarafından hata, bir Azure uygulama hizmeti için Snapshot Debugger iliştirebilmek için VS 2017 kullanırsanız, şu hatayı alırsınız:
+
+![Uyumsuz Snapshot Debugger site uzantısını VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "uyumsuz Snapshot Debugger site uzantısını VS2017")
+
+Bu sorunu gidermek için Azure portalında aşağıdaki uygulama ayarlarını silin ve yeniden Snapshot Debugger iliştirebilmek:
+
+- INSTRUMENTATIONENGINE_EXTENSION_VERSION
+- SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Sorun: Anlık görüntü hata ayıklama ilgili sorunlar yaşıyorum ve daha fazla günlük kaydını etkinleştirmek istiyorum
+
+### <a name="enable-agent-logs"></a>Aracı günlüklerini etkinleştirme
+
+Oturum Aç Visual Studio aracısını etkinleştirme ve devre dışı bırakma gidin *Araçlar > Seçenekler > anlık görüntü hata ayıklayıcısı > günlüğü etkinleştir aracı*. Not *silme eski aracı günlüklerini oturumu Başlat menüsünde* olduğunu da etkinleştirilmişse, her başarılı Visual Studio ekleme olacak önceki Aracısı günlükleri silin.
+
+Aracı günlükleri aşağıdaki konumlarda bulunabilir:
+
+- Uygulama Hizmetleri:
+  - Uygulama hizmetinizin Kudu sitesine gidin (diğer bir deyişle, yourappservice. **SCM**. azurewebsites.net) ve hata ayıklama konsoluna gidin.
+  - Aracı günlükleri şu dizinde depolanır:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+- VM/VMSS:
+  - Aracısı günlükleri şu şekilde depolanır, VM için oturum açın:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<sürüm > \SnapshotDebuggerAgent_*.txt
+- AKS
+  - Aşağıdaki dizine gidin: / tmp/diag/AgentLogs / *
+
+### <a name="enable-profilerinstrumentation-logs"></a>Profiler/izleme günlüklerini etkinleştirme
+
+İzleme günlükleri aşağıdaki konumlarda bulunabilir:
+
+- Uygulama Hizmetleri:
+  - Hata günlüğü D:\Home\LogFiles\eventlog.xml için otomatik olarak gönderilir, olayları ile işaretlenir << sağlayıcı adı = "İzleme altyapısı" / / >> veya "Üretim kesme noktaları"
+- VM/VMSS:
+  - Sanal makinenizde oturum açın ve Olay Görüntüleyicisi'ni açın.
+  - Aşağıdaki görünümü açın: *Windows Günlükleri > Uygulama*.
+  - *Geçerli günlüğü Filtrele* tarafından *olay kaynağı* kullanarak *üretim kesme noktaları* veya *izleme altyapısı*.
+- AKS
+  - İzleme altyapısının günlük kaydı /tmp/diag/log.txt (DockerFile içinde MicrosoftInstrumentationEngine_FileLogPath ayarlanır)
+  - /Tmp/diag/shLog.txt ProductionBreakpoint günlük kaydı
 
 ## <a name="known-issues"></a>Bilinen Sorunlar
 
@@ -96,7 +141,7 @@ Anlık görüntü hata ayıklama ve Application Insights site işleme yükler ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
+- [Visual Studio'da Hata Ayıklama](../debugger/index.md)
 - [Snapshot Debugger'ı kullanarak canlı ASP.NET uygulamalarının hatalarını ayıklama](../debugger/debug-live-azure-applications.md)
 - [Canlı ASP.NET Azure sanal Machines\Virtual makineler ölçek Snapshot Debugger'ı kullanarak kümeleri hata ayıklama](../debugger/debug-live-azure-virtual-machines.md)
 - [Snapshot Debugger'ı kullanarak canlı ASP.NET Azure Kubernetes hata ayıklama](../debugger/debug-live-azure-kubernetes.md)

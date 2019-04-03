@@ -3,15 +3,15 @@ title: "Nasıl yapılır: Mac için Visual Studio'da birden fazla çözümü aç
 description: Mac için Visual Studio'da birden fazla çözümü açın ve uygulamanın birden fazla örneğini açmayı öğrenin.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768268"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856350"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Mac için birden fazla çözüm ya da Visual Studio örneklerini açın
 
@@ -21,11 +21,9 @@ Ayrıca, bir çözümü açtığınızda, yeni bir çalışma alanında çözüm
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Mac için Visual Studio ikinci bir örneğini açın
 
-Tümleşik geliştirme ortamı (IDE) ikinci bir örneğini açmak için Aç **Terminal** uygulama ve şu satırı girin:
+Tümleşik geliştirme ortamı (IDE) ikinci bir örneğini açmak için dock Visual Studio simgesine sağ tıklayın veya **uygulamaları** klasörü ve select **yeni örneği**.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Visual Studio simgesine sağ yeni örnek ekran menü seçeneği](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Tek bir örnek içinde ikinci bir çözüm açın
 

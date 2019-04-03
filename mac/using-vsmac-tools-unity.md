@@ -1,16 +1,16 @@
 ---
 title: Visual Studio için Unity için Mac araçları kullanarak
 description: Bu kılavuz, Mac araçları için Unity uzantısı için Visual Studio kullanmayı açıklar
-author: dantogno
-ms.author: v-davian
-ms.date: 07/17/2017
+author: therealjohn
+ms.author: johmil
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348936"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857014"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Visual Studio için Unity için Mac araçları kullanarak
 
@@ -103,6 +103,13 @@ Hata ayıklamayı başlatmak için:
 
 3. Oyun bağlıyken, Visual Studio için Unity Düzenleyicisi'nde çalışırken karşılaşılan herhangi bir kesme noktası oyun yürütülmesini Duraklat ve burada oyun Mac için Visual Studio'da kesme noktası isabet kod satırının getirecek
 
+
+### <a name="start-debugging-in-a-single-step"></a>Tek bir adımda hata ayıklamayı Başlat
+
+Başlangıç hata ayıklama ve Unity editor yürütmeyi tamamlanabileceğini tek bir adımda Visual Studio'dan doğrudan Mac için seçerek **ekleme Unity ve Yürüt** yapılandırma.
+
+![Unity ve Play seçin ekleyin](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Hata ayıklamayı Durdur
 
 Hata ayıklamayı durdurmak için:
@@ -110,5 +117,8 @@ Hata ayıklamayı durdurmak için:
 1. Tıklayın **Durdur** düğmesine basın veya Mac için Visual Studio'daki **Shift + Command + dönüş**.
 
    ![Visual Studio'da Durdur'u tıklatın](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Kullanarak hata ayıklama başlattıysanız **ekleme Unity ve Yürüt** Yapılandırması **Durdur** düğmesi de Unity durdurun.
 
 Mac için Visual Studio'da hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayıcıyı kullanma](debugging.md).

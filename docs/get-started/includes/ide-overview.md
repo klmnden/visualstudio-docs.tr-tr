@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342481"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807983"
 ---
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod oluşturmak için kullanın ve ardından bir uygulama yayımlama takımdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio yazılım geliştirme işlemini kolaylaştırmak için derleyiciler, kod tamamlama araçları, grafik tasarımcıları ve daha birçok özellik içerir.
 
@@ -91,22 +91,24 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    ![Visual Studio üye listesi](../media/intellisense-list-members.png)
 
-- [Hızlı Başlatma](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Arama kutusu
 
-   Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. **Hızlı başlatma** arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa **hızlı başlatma** bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçlar sağlar.
+   Visual Studio zamanlarda sürü menüleri, seçenekleri ve özellikleri ile zor görünebilir. Arama kutusuna, Visual Studio'da aradığınızı hızla bulmak için harika bir yoludur. Aradığınız bir şey adını yazmaya başladığınızda, Visual Studio tam olarak gitmek gerek duyduğunuz aldığınız sonuçları listeler. Örneğin, ek bir programlama dili için destek eklemek Visual Studio işlevselliği eklemek gerekiyorsa arama kutusuna bir iş yükü veya ayrı ayrı bileşen yüklemek için Visual Studio yükleyicisini açın sonuçları sağlar.
 
    > [!TIP]
-   > Tuşuna **Ctrl**+**Q** kısayolu olarak **hızlı başlatma** arama kutusu.
+   > Tuşuna **Ctrl**+**Q** arama kutusu kısayolu olarak.
 
    ::: moniker range="vs-2017"
 
    ![Visual Studio 2017'de hızlı başlatma arama kutusu](../media/quick-launch-nuget.png)
 
+   Daha fazla bilgi için [hızlı başlatma](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Visual Studio 2019 hızlı başlatma arama kutusuna](../media/vs-2019/quick-launch-nuget.png)
+   ![Visual Studio 2019 arama kutusuna](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

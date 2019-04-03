@@ -1,17 +1,17 @@
 ---
 title: Kodu yeniden düzenleme
-description: Mac için Visual Studio'da kod düzenleme, yeniden kaynak analizini kullanarak basit yapılır.
+description: Mac ve hızlı eylemler için Visual Studio'yu kullanarak kod iyileştirme.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335395"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856521"
 ---
 # <a name="refactoring"></a>Yeniden Düzenle
 
@@ -23,25 +23,45 @@ Roslyn, Microsoft'un açık kaynak .NET derleyici platformu ile tümleştirme Ma
 
 ## <a name="renaming"></a>Yeniden adlandırma
 
-*Yeniden Adlandır* komutu yeniden düzenleme tüm kod tanımlayıcısı (örneğin, bir sınıf adı, özellik adı vb.) tüm tanımlayıcı örneklerini bulun ve bunları değiştirmek için kullanılabilir. Bir sembol yeniden adlandırmak için sağ tıklayın ve seçin **yeniden düzenleyin > Yeniden Adlandır**, veya **Cmd + R** anahtar bağlama:
+*Yeniden Adlandır* komutu yeniden düzenleme tüm kod tanımlayıcısı (örneğin, bir sınıf adı, özellik adı vb.) tüm tanımlayıcı örneklerini bulun ve bunları değiştirmek için kullanılabilir. Bir sembol yeniden adlandırmak için sağ tıklayın ve seçin **yeniden adlandır...** , veya **Cmd (⌘) + R** anahtar bağlama:
 
 ![Menü öğesini yeniden adlandırma](media/refactoring-renaming1.png)
 
-Bu, simge ve tüm başvuruları vurgular. Yeni bir ad yazarak başlattığınızda kodunuzdaki tüm başvurularını otomatik olarak değiştirir ve yeniden adlandırma, tamamlama tuşlarına basarak sinyal verebilirsiniz **Enter**:
+Bu, simge ve tüm başvuruları vurgular. Yeni bir ad yazarak başlattığınızda kodunuzdaki tüm başvurularını otomatik olarak değiştirir ve değişikliklerinizi tuşlarına basarak onaylayabilirsiniz **Enter**:
 
 ![Yeniden adlandırma ve tanımlayıcı](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Bağlam eylemleri
+## <a name="quick-actions"></a>Hızlı Eylemler
 
-Bağlam Eylemler, herhangi bir C# kod İnceleme olanak sağlar ve tüm olası yeniden düzenleme seçeneklerini görmek.
+Hızlı Eylemler, kolayca yeniden düzenleme sağlar, oluşturmak veya aksi halde kodu tek eylemle değiştirin.
 
-**Çözmek** ve **yeniden düzenleme** bağlam öğeleri tek bir birleştirilmiş *hızlı düzeltme...*  kullanılabilir tüm bağlam Eylemler ile sağlayacak öğesi:
+Hızlı eylemler için kullanılabilir:
+
+* Bir kod Çözümleyicisi Kuralı ihlali bir kod düzeltmesini uygulayın
+* Bir kod Çözümleyicisi Kuralı ihlali Gizle
+* Yeniden düzenleme (örneğin, satır içi geçici değişken) uygulama
+* Kod oluşturma (örneğin, bir yerel değişken ekleme)
+
+Ampul kullanarak hızlı Eylemler uygulanabilir ![ampul](media/quick-actions-light-bulb-icon.png) veya tornavida ![tornavida simgesi](media/quick-actions-screwdriver-icon.png) simgeleri veya basarak **seçeneği (⌥)** +  **Girin** imlecinizi bir eylem olduğu kullanılabilir kod satırına olduğunda. Gördüğünüz hata ampul ![hata ampul simgesini](media/quick-actions-error-light-bulb-icon.png) hata belirten bir kırmızı dalgalı çizgi yoktur ve Visual Studio, bu hata için bir düzeltme sahiptir.
+
+Herhangi bir dilde üçüncü taraflara özel tanılama ve öneriler, örneğin bir SDK'ın bir parçası olarak sağlayabilir ve Visual Studio ampuller bu kurallara dayalı vurgulamasında kullanılır.
+
+### <a name="quick-action-icons"></a>Hızlı eylem simgeleri
+Hızlı eylem kullanılabilir olduğunda görüntülenen simge, kullanılabilir düzeltme veya yeniden düzenleme tür gittiğinin belirtisini verir. *Tornavida* ![tornavida simgesi](media/quick-actions-screwdriver-icon.png) simgesi gösterir yalnızca kodunu değiştirmek kullanılabilir eylemleri vardır, ancak bunları mutlaka kullanmamalısınız. *Sarı bir ampul* ![ampul](media/quick-actions-light-bulb-icon.png) simgesi gösterir kullanılabilir eylemler, *gereken* kodunuzu geliştirmek için yapın. *Hata ampul* ![hata ampul simgesini](media/quick-actions-error-light-bulb-icon.png) simgesi gösterir, kodunuzdaki bir hatayı düzeltir bir eylem yoktur.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>Ampul veya tornavida görmek için
+
+- Bir düzeltme varsa, bir hatanın konumda fare geldiğinizde ampuller kendiliğinden görünür.
+
+   ![Ampul fare vurgulama ile](media/refactoring-lightbulb-hover.png)
+
+- Giriş işaretini bir hızlı eylem kullanılabilir kod satırına taşıdığınızda ampuller ve tornavidalar düzenleyicinin sol kenar boşluğunda görünür.
+
+- Tuşuna **seçeneği (⌥)**+**Enter** kullanılabilir hızlı Eylemler ve yeniden düzenlemeler listesini görmek için herhangi bir satırında.
 
 ![İçerik öğeleri görüntüle](media/refactoring-context-action.png)
 
 Herhangi bir bağlam eylemleri üzerine geldiğinizde, bir önizleme ne eklenecek veya kodunuz içinden kaldırıldı sağlar.
-
-Alternatif olarak, basabilirsiniz **seçeneği + Enter** kodunuzdaki herhangi bir yeri:
 
 ![Seçeneği girin içerik öğeleri](media/refactoring-image2a.png)
 
@@ -53,47 +73,9 @@ Etkin veya devre dışı göz atarak önerilebilir, 100'den fazla olası eylemle
 
 ![C# kaynak çözümleme eylemleri](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Genel bağlam eylemleri
+### <a name="common-quick-actions"></a>Yaygın hızlı Eylemler
 
-En sık kullanılan bağlam eylemlerin bazıları aşağıda açıklanmıştır.
-
-#### <a name="extract-method"></a>Ayıklama metodu
-
-Ayıklama yöntemi yeniden düzenleme işlemi, varolan bir üye kodda seçim çekip çıkararak yeni bir yöntem oluşturmanıza olanak sağlar. Bu eylem, iki şey yapar:
-
-* Seçilen kod içeren yeni bir yöntem oluşturur
-* Seçilen kod olduğu yerde yeni yöntemi çağırır.
-
-##### <a name="example"></a>Örnek
-
-1. Aşağıdaki kodu ekleyin:
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Satırı Vurgula `double volume = (baseArea * height) / 3;`, sağ tıklayın ve seçin **yeniden düzenleyin > yöntemi ayıklama**.
-
-3. Yeni yöntemi kodunuzu nereye yerleştirileceğini seçmek için ok tuşlarını kullanın.
-
-#### <a name="encapsulate-field"></a>Alanı kapsülleme
-
-Alan yalıtma işlemi, mevcut bir alandan bir özellik oluşturmanıza olanak sağlar ve yeni oluşturulan özellik başvurmak için kodunuzu güncelleştirir. Alan kapsülleyen bir özellik oluşturarak, doğrudan erişim, ortak alan için diğer nesneler üzerinde değişiklik yapamazsınız, yani engelleyerek.
-
-Bu eylem aşağıdakileri yapın:
-
-* Özel erişim değiştiricisi değiştirir.
-* (Bu durumda yalnızca bir alıcı oluşturun salt okunur alan olmadığı sürece), alıcı ve Ayarlayıcıyı alanın oluşturur.
+Yaygın hızlı eylemler hakkında daha fazla bilgi [yaygın hızlı Eylemler](/visualstudio/ide/common-quick-actions) makalesi.
 
 ## <a name="source-analysis"></a>Kaynak analizi
 

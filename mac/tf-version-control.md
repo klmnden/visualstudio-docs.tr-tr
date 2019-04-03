@@ -7,19 +7,19 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295936"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856709"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation sürüm denetimine bağlama
 
 > [!NOTE]
 > Team Foundation sürüm denetimi desteği şu anda Önizleme aşamasındadır ve bazı işlevler henüz tam olarak çalışmıyor. Sizden geri bildirim herhangi bir sorun üzerinde isteriz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/41/index.html). Daha fazla değişiklik hala gelen üzeresiniz!
 
-Azure depoları, sürüm denetimi, iki modeli sağlar: dağıtılan Git sürüm denetimi ve Team Foundation sürüm denetimi (olan TFVC), merkezi sürüm denetimi. Mac için Visual Studio ile TFVC kullanmak için bu makalede bir genel bakış ve bir başlangıç noktası sağlar
+Azure depoları, sürüm denetimi, iki modeli sağlar: Dağıtılan Git sürüm denetimi ve Team Foundation sürüm denetimi (olan TFVC), merkezi sürüm denetimi. Mac için Visual Studio ile TFVC kullanmak için bu makalede bir genel bakış ve bir başlangıç noktası sağlar
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,8 +42,6 @@ TFVC uzantı güncelleştirmeleri düzenli olarak gerçekleştirilir. Güncelle�
 ![Uzantı Yöneticisi'ni gösteren güncelleştirme](media/tfvc-update.png)
 
 Tuşuna **yükleme** sonraki iletişim kutusunda eski paketi kaldırın ve yenisini yükleyin.
-
-Her sürümdeki yenilikler hakkında daha fazla bilgi için bkz: [sürüm notları](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Eklenti kullanma
 

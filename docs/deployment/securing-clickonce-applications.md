@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a307221e4e585ab3cb8ee6f1ad3e71057afaf671
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605321"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866792"
 ---
 # <a name="secure-clickonce-applications"></a>ClickOnce uygulamalarının güvenliğini sağlama
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamalar, kod korumalı kaynaklara ve işlemlere sahip olan erişimini sınırlamaya yardımcı olması için .NET Framework kod erişim güvenliği sınırlamalarına tabidir. Bu nedenle, yazma için kod erişim güvenliği etkilerini anlamanız önemli olduğu, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaların uygun şekilde. Uygulamalarınız erişim için Internet ve Intranet gibi tam güven veya kısmi bölgeler kullanabilir.
@@ -74,7 +74,7 @@ ms.locfileid: "56605321"
 >  Sorgu dizesi bağımsız değişkenler bağımsız değişkenler tek yolu bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamasına başlangıçta. Bağımsız değişken geçiremezsiniz bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] komut satırından uygulama.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Gizlenmiş (Obfuscated) derlemeleri dağıtma
- Visual Studio ücretsiz içerir [PreEmptive koruma - Dotfuscator Community Edition](../ide/dotfuscator/index.md), hangi kod karartma ve active koruma önlemleri aracılığıyla ClickOnce uygulamaları korumak için kullanabilirsiniz.  Ayrıntılar için lütfen bkz [Dotfuscator Community Edition Kullanıcı Kılavuzu'nun ClickOnce bölüm](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
+ Visual Studio ücretsiz içerir [PreEmptive koruma - Dotfuscator Community](../ide/dotfuscator/index.md), hangi kod karartma ve active koruma önlemleri aracılığıyla ClickOnce uygulamaları korumak için kullanabilirsiniz.  Ayrıntılar için lütfen bkz [Dotfuscator Community Kullanıcı Kılavuzu'nun ClickOnce bölüm](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)

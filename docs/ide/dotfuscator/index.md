@@ -1,31 +1,32 @@
 ---
-title: Dotfuscator Community Edition (CE)
-ms.date: 10/10/2017
+title: Dotfuscator Community
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive koruma, koruma, community edition, gizleme, .NET, ücretsiz, Visual Studio 2017
+keywords: Dotfuscator, Dotfuscator CE, Dotfuscator Community, PreEmptive, PreEmptive Solutions, PreEmptive koruma, koruma, community edition, gizleme, .NET, ücretsiz, Visual Studio 2019, Visual Studio 2017, Visual Studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
+- Dotfuscator Community
 - Dotfuscator
 - obfuscation
 - protection
-description: Visual Studio 2017'de dahil edilen ücretsiz Dotfuscator Community Edition ile .NET uygulamalarınızı nasıl Koruyabileceğiniz hakkında bilgi edinin.
+description: .NET uygulamalarınızı Dotfuscator Community Visual Studio'ya dahil olan ücretsiz kopyalama nasıl Koruyabileceğiniz hakkında bilgi edinin.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85f4a28e7f0fd3e7d723aa918dce3761b90d3869
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937529"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866711"
 ---
-# <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
+# <a name="dotfuscator-community"></a>Dotfuscator Community
 
-*PreEmptive koruma - Dotfuscator* kapsamlı .NET uygulama koruması, bir kolayca güvenli yazılım geliştirme yaşam döngünüzü içine sığar sağlar.
+***PreEmptive koruma - Dotfuscator*** kapsamlı .NET uygulama koruması, bir kolayca güvenli yazılım geliştirme yaşam döngünüzü içine sığar sağlar.
 Masaüstü, mobil, sunucu ve güvenli ticari sırlar ve diğer fikri mülkiyet (IP) yardımcı olmak için katıştırılmış uygulamalar Ayıkla sağlamlaştırmak ve korumak için korsanlığı ve sahtekarlığın azaltmak ve yetkisiz hata ayıklama ve izinsiz kullanıma karşı koruma kullan.
 Dotfuscator derlenmiş bütünleştirilmiş ek programlama veya hatta kaynak koduna erişim iznine gerek kalmadan çalışır.
 
@@ -45,13 +46,13 @@ Dotfuscator yeteneği uygulamanızla ekleme [algılama ve yanıtlama yetkisiz ku
 
 Dotfuscator güvenli yazılım geliştirme yaşam döngüsü içinde nasıl uyguladığı hakkında daha fazla bilgi için bkz: PreEmptive Solutions [SDL uygulama koruma sayfası][sdl-protection].
 
-## <a name="about-dotfuscator-ce"></a>Dotfuscator CE'yi hakkında
+## <a name="about-dotfuscator-community"></a>Dotfuscator Community hakkında
 
-Kopyanızı Microsoft Visual Studio 2017'in bir kopyasını içeren  **_PreEmptive koruma - Dotfuscator_ Community Edition**, Dotfuscator CE, kişisel kullanım için ücretsiz olarak da bilinir.
-Dotfuscator CE ile Visual Studio 2017 dahil sürümü yükleme hakkında yönergeler için bkz: [yükleme sayfasına][install].
+Microsoft Visual Studio kopyanızın bir kopyasını içeren ***PreEmptive koruma - Dotfuscator Community***ve kişisel kullanım için ücretsiz.
+(Bu ücretsiz sürüm daha önce Dotfuscator Community Edition veya Dotfuscator CE olarak bilinir.) Visual Studio'ya dahil edildi Dotfuscator Community sürümü yükleme hakkında yönergeler için bkz: [yükleme sayfasına][install].
 
-Dotfuscator CE sunan bir dizi [yazılım koruması ve sağlamlaştırma] [ software-protection] geliştiriciler, mimarlar ve test edenler için hizmetleri.
-Örnekleri [.NET karartma] [ obfuscation] ve diğer [uygulama koruması] [ app-protection] Dotfuscator CE içinde bulunan özellikleri şunlardır:
+Dotfuscator Community sunan bir dizi [yazılım koruması ve sağlamlaştırma] [ software-protection] geliştiriciler, mimarlar ve test edenler için hizmetleri.
+Örnekleri [.NET karartma] [ obfuscation] ve diğer [uygulama koruması] [ app-protection] Dotfuscator Community dahil özellikleri şunlardır:
 
 * *[Yeniden adlandırma] [ renaming]*  ters mühendislik derlenmiş derlemelerin daha zor hale getirmek için tanımlayıcı.
 * *[Koruma kurcalamaya] [ tamper]*  değiştirilen uygulamaların yürütülmesini algılamak ve sonlandırma veya yanıt oturumları değiştirilmiş.
@@ -61,26 +62,39 @@ Dotfuscator CE sunan bir dizi [yazılım koruması ve sağlamlaştırma] [ softw
 
 Bunlar, uygulama koruma stratejinizi nasıl uyduğunu dahil olmak üzere, bu özellikler hakkında ayrıntılar için bkz. [özellikleri sayfasında][capabilities].
 
-Dotfuscator CE temel korumayı,-hazır sunar.
-Daha fazla uygulama koruma önlemleri Dotfuscator CE kayıtlı kullanıcıları ve kullanıcıları için kullanılabilir *PreEmptive koruma - Dotfuscator* Professional Edition, dünyanın önde gelen [.NET belirsizleştirici] [net-obfuscator].
+Dotfuscator Community temel korumayı,-hazır sunar.
+Daha fazla uygulama koruma önlemleri Dotfuscator Community kayıtlı kullanıcıları ve kullanıcıları için kullanılabilir ***PreEmptive koruma - Dotfuscator Professional***, dünyanın önde gelen [.NET belirsizleştirici] [net-obfuscator].
 Dotfuscator geliştirme hakkında daha fazla bilgi için bkz: [yükseltmeler sayfasında][upgrades].
 
 ## <a name="getting-started"></a>Başlarken
 
-Visual Studio'dan Dotfuscator CE'ı kullanmaya başlamak için yazın `dotfuscator` içine **hızlı başlatma** Arama çubuğuna (Ctrl + Q).
+::: moniker range="vs-2019"
 
-* Dotfuscator CE zaten yüklü değilse, **hızlı başlatma** getirir *menü* Dotfuscator CE kullanıcı arabirimini başlatmak için seçeneği. Ayrıntılar için bkz [tam Dotfuscator CE Kullanıcı Kılavuzu'nun Başlarken sayfası][get-started].
-* Dotfuscator CE henüz yüklü değilse **hızlı başlatma** ilgili getirir *yükleme* seçeneği. Bkz: [yükleme sayfasına] [ install] Ayrıntılar için.
+Dotfuscator Community Visual Studio'dan'ı kullanmaya başlamak için yazın `dotfuscator` içine **arama kutusuna** (Ctrl + Q).
 
-Ayrıca Al **en son sürümü** Dotfuscator CE, [preemptive.com Dotfuscator yüklemeler sayfasında][download].
+* Dotfuscator Community zaten yüklü değilse, **arama kutusuna** Dotfuscator Community altında başlatma seçeneğinin gösterecektir *menüleri* başlığı. Ayrıntılar için bkz [tam Dotfuscator Community Kullanıcı Kılavuzu'nun Başlarken sayfası][get-started].
+* Dotfuscator Community henüz yüklü değilse **arama kutusuna** yerine gösterecektir **PreEmptive Protection yükle - Dotfuscator** altında *tek tek bileşenler* başlığı . Bkz: [yükleme sayfasına] [ install] Ayrıntılar için.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Dotfuscator Community Visual Studio'dan'ı kullanmaya başlamak için yazın `dotfuscator` içine **hızlı başlatma** Arama çubuğuna (Ctrl + Q).
+
+* Dotfuscator Community zaten yüklü değilse, **hızlı başlatma** getirir *menü* Dotfuscator Community kullanıcı arabirimini başlatmak için seçeneği. Ayrıntılar için bkz [tam Dotfuscator Community Kullanıcı Kılavuzu'nun Başlarken sayfası][get-started].
+* Dotfuscator Community henüz yüklü değilse **hızlı başlatma** ilgili getirir *yükleme* seçeneği. Bkz: [yükleme sayfasına] [ install] Ayrıntılar için.
+
+::: moniker-end
+
+Ayrıca Al **en son sürümü** Dotfuscator Topluluğu'ndan, [preemptive.com Dotfuscator yüklemeler sayfasında][download].
 
 ## <a name="full-documentation"></a>Tüm belgeler
 
-Bu sayfada ve onun alt Dotfuscator CE'ın özellikleri, üst düzey bir genel bakış sağlayan yanı [aracı yüklemek için yönergeler][install].
+Bu sayfada ve onun alt Dotfuscator Community'nın özellikleri, üst düzey bir genel bakış sağlayan yanı [aracı yüklemek için yönergeler][install].
 
-Bkz: [preemptive.com adresindeki tam Dotfuscator CE Kullanıcı Kılavuzu] [ full] dahil olmak üzere, ayrıntılı kullanım yönergeleri için [Dotfuscator CE kullanıcı arabirimi kullanmaya başlamak nasıl] [ get-started].
+Bkz: [preemptive.com adresindeki tam Dotfuscator Community Kullanıcı Kılavuzu] [ full] dahil olmak üzere, ayrıntılı kullanım yönergeleri için [Dotfuscator Community kullanıcı arabirimikullanmayabaşlamaknasıl][get-started].
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
 [software-protection]:  https://www.preemptive.com/software-protection

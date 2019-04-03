@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1b7d9513bcb86dfdff814adddb35bdaf741ebe02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647433"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856599"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Visual Studio JavaScript veya TypeScript bir uygulamada hata ayıklama
 
 Visual Studio kullanarak, JavaScript ve TypeScript kodu hata ayıklaması yapabilirsiniz. Ayarlayabilir ve kesme noktaları isabet, hata ayıklayıcının, değişkenlerini incelemek, çağrı yığınını görüntüleme ve diğer hata ayıklama özelliklerini kullanın.
 
 > [!TIP]
-> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
 
 ## <a name="debug-server-side-script"></a>Sunucu tarafı komut dosyası hata ayıklama
 
@@ -106,7 +106,7 @@ Visual Studio ve istemci tarafı kod kesme noktaları isabet hata ayıklayıcıy
     * Break into code transpiled JavaScript dosyasında ihtiyacınız varsa (örneğin, *uygulama bundle.js*) ve bunu, kaynak eşleme dosyası Kaldır *filename.js.map*.
 
      > [!TIP]
-     > Aşağıdaki adımları izleyerek ilk kez eklediğiniz işleme sonra hızlı bir şekilde Visual Studio 2017'de aynı işlemi seçerek iliştirebilirsiniz **hata ayıklama** > **İliştir**.
+     > Aşağıdaki adımları izleyerek ilk kez eklediğiniz işleme sonra hızlı bir şekilde aynı işleme seçerek iliştirebilirsiniz **hata ayıklama** > **İliştir**.
 
 ## <a name="generate_sourcemaps"></a> Hata ayıklama için kaynak eşlemeleri üret
 

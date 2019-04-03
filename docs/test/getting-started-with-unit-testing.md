@@ -1,6 +1,6 @@
 ---
 title: Birim testi ile çalışmaya başlama
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57984124"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856466"
 ---
 # <a name="get-started-with-unit-testing"></a>Birim testi ile çalışmaya başlama
 
@@ -25,144 +25,140 @@ Visual Studio, tanımlamak ve kod durumunu korumak, kod kapsamından emin olmak 
 Bu bölümde, yüksek düzeyde birim testi projesi oluşturma işlemini açıklar.
 
 > [!TIP]
-> "HelloWorld", test altındaki projeye bir örnek projesidir ve hiçbir kodunu gösterilecek içindir. Test için bkz: bir "HelloWorld" projesi oluşturmak istiyorsanız [ilk kez oluşturma C# konsol uygulaması](../ide/quickstart-csharp-console.md). İzlenecek tam yol makale için bkz: [oluşturma ve çalıştırma birim testleri için yönetilen kod](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> "HelloWorldCore", test altındaki projeye bir örnek projesidir ve hiçbir kodunu gösterilecek içindir. Test için bkz: bir "Merhaba Dünya" projesi oluşturmak istiyorsanız [ilk kez oluşturma C# konsol uygulaması](../ide/quickstart-csharp-console.md). İzlenecek tam yol makale için bkz: [oluşturma ve çalıştırma birim testleri için yönetilen kod](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
-1. Birim testi projesi oluşturun.
+1. Visual Studio'da test etmek istediğiniz projeyi açın.
 
-   ![Birim test projesi çözümünüze ekleyin.](media/createunittest1.png)
+1. İçinde **Çözüm Gezgini**, çözüm düğümü seçin. Ardından, üstteki menü çubuğundan **dosya** > **Ekle** > **yeni proje**.
 
-1. Projenizi adlandırın.
+1. Yeni Proje iletişim kutusunda, bir birim testi proje şablonunu seçin ve istediğiniz test çerçevesi için bulun.
 
-   ![Birim test projesi şablonu](media/createunittest2.png)
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019'de birim test projesi şablonunu](media/vs-2019/add-new-test-project.png)
+
+   Tıklayın **sonraki**test projesi için bir ad seçin ve ardından **Oluştur**.
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2019'de birim test projesi şablonunu](media/mstest-test-project-template.png)
+
+   Test projesi için bir ad seçin ve ardından **Tamam**.
+
+   ::: moniker-end
 
    Projeyi çözümünüze eklenir.
 
-   ![Çözüm Gezgini'nde birim testi projesi](media/createunittest5.png)
+   ![Çözüm Gezgini'nde birim testi projesi](media/vs-2019/solution-explorer.png)
 
-1. Birim test projesinde test etmek istediğiniz projeye bir başvuru ekleyin.
+1. Birim test projesinde, sağ tıklayarak test etmek istediğiniz projeye bir başvuru eklemek **başvuruları** veya **bağımlılıkları** seçip **Başvuru Ekle**.
 
-   ![Birim test projenize bir başvuru ekleyin](media/createunittest6.png)
+1. Test edip tıklayın, kodu içeren projeyi seçin **Tamam**.
 
-1. Test edeceğiniz kodu içeren projeyi seçin.
+   ![Visual Studio'da proje başvurusu Ekle](media/vs-2019/reference-manager.png)
 
-   ![Başvuru eklemek için seçin](media/createunittest7.png)
+1. Kod için birim test yöntemini ekleyin.
 
-1. Birim testinizi kodlayın.
-
-   ![Kod için birim test Ekle](media/createunittest8.png)
-
-Birim testi ile yöntemi saptamalar oluşturabilirsiniz **birim testleri Oluştur** [komut](create-unit-tests-menu.md).
-
-![Birim Testleri Oluştur komutunu kullanarak](media/createunittestcommand2.png)
+   ![Visual Studio'da birim test yöntemine kod ekleyin](media/vs-2019/unit-test-method.png)
 
 ## <a name="run-unit-tests"></a>Birim testleri çalıştırma
 
-1. Açık **Test Gezgini**.
+1. Açık [Test Gezgini](../test/run-unit-tests-with-test-explorer.md) seçerek **Test** > **Windows** > **Test Gezgini** üst menü çubuğundan.
 
-   ![Test menüsünde Test gezginini açın](media/rununittest1.png)
+1. Tıklayarak birim testlerinizi çalıştırın **tümünü Çalıştır**.
 
-1. Birim testlerini çalıştırın.
+   ![Test Gezgini'nde birim testleri çalıştırma](media/vs-2019/test-explorer-run-all.png)
 
-   ![Test Gezgini'nde birim testleri çalıştırma](media/rununittest2.png)
+   Testleri tamamladıktan sonra yeşil bir onay işareti, bir testi geçtiğini gösterir. Kırmızı "x" simgesini bir testin başarısız olduğunu gösterir.
 
-   Birim testleri, Geçti veya başarısız gördüğünüz **Test Gezgini**.
+   ![Test Gezgini'nde birim testi sonuçlarını gözden geçirin](media/vs-2019/unit-test-passed.png)
 
-   ![Test Gezgini'nde birim testi sonuçlarını gözden geçirin](media/rununittest3.png)
+> [!TIP]
+> Kullanabileceğiniz [Test Gezgini](../test/run-unit-tests-with-test-explorer.md) yerleşik test çerçevesi (MSTest) birim testleri çalıştırma veya üçüncü taraftan test çerçeveleri. Testleri kategoriler halinde gruplandırmak, test listesini filtrelemek ve oluşturmak, kaydedin ve test çalma listeleri çalıştırın. Ayrıca, Testlerde Hata Ayıkla ve test, performans ve kod kapsamını analiz edin.
 
 ## <a name="view-live-unit-test-results"></a>Canlı birim testi sonuçlarını görüntüleme
 
 MSTest, xUnit ve NUnit test çerçevesi Visual Studio 2017 veya sonraki bir sürümde kullanıyorsanız, Canlı Birim testlerinizin sonuçları görebilirsiniz.
 
 > [!NOTE]
-> Live unit Testing, yalnızca Visual Studio Enterprise Edition'da kullanılabilir.
+> Live unit Testing, yalnızca Enterprise Edition'da kullanılabilir.
 
-1. Live unit testing alanından açma **Test** menüsü.
+1. Live unit testing alanından kapatma **Test** menüsünü seçerek **Test** > **Live Unit Testing** > **Başlat**.
+
+   ::: moniker range="vs-2017"
 
    ![Live unit Testing üzerinde Aç](media/live-test-results-start.png)
 
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Live unit testing Visual Studio 2019 Başlat](media/vs-2019/start-live-unit-testing.png)
+
+   ::: moniker-end
+
 1. Yazma ve kod düzenleme gibi kod düzenleyicisi penceresi içinde test sonuçlarını görüntüleyin.
 
-   ![Test sonuçlarını görüntüleme](media/live-test-results-ui.png)
+   ![Test sonuçlarını görüntüleme](media/vs-2019/live-unit-testing-results.png)
 
-1. Test sonucu göstergeleri daha fazla bilgi görmek için seçin.
+1. Bu yöntem kapsayan testlerin adlarını gibi daha fazla bilgi için test sonucu göstergesi tıklayın.
 
-   ![Test sonucu göstergelerini seçin](media/live-test-results-details.png)
+   ![Test sonucu göstergelerini seçin](media/vs-2019/live-unit-testing-details.png)
 
-Daha fazla ayrıntı için [Live unit testing](../test/live-unit-testing-intro.md).
+Live unit testing hakkında daha fazla bilgi için bkz: [Live unit testing](../test/live-unit-testing-intro.md).
 
 ## <a name="generate-unit-tests-with-intellitest"></a>Intellitest ile birim testleri oluşturma
 
-Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve onları düzeltmek için tüm gerekli kodu eklemek kolayca görebilirsiniz. Hangi testlerin bir regresyon paketi sağlamak için bir test projesine kaydetmek için seçebilirsiniz. Kodunuzu değiştikçe, üretilen testler, kod değişikliğine eşitlenmiş şekilde tutmanızı sağlayacak Intellitest yeniden çalıştırın. Bilgi edinmek için bkz. nasıl [Intellitest ile kodunuz için birim testleri oluşturmak](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve onları düzeltmek için tüm gerekli kodu eklemek görebilirsiniz. Hangi testlerin bir regresyon paketi sağlamak için bir test projesine kaydetmek için seçebilirsiniz. Kodunuzu değiştikçe, üretilen testler, kod değişikliğine eşitlenmiş şekilde tutmanızı sağlayacak Intellitest yeniden çalıştırın. Bilgi edinmek için bkz. nasıl [Intellitest ile kodunuz için birim testleri oluşturmak](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+
+> [!TIP]
+> Intellitest, yalnızca .NET Framework'ü hedefleyen yönetilen kod için kullanılabilir.
 
 ![Intellitest oluşturma birim testleriyle](media/intellitest.png)
 
-## <a name="run-unit-tests-with-test-explorer"></a>Test Gezgini ile birim testleri çalıştırma
-
-Kullanım **Test Gezgini** birim testlerini Visual Studio ya da üçüncü taraf birim testi projelerini çalıştırmak için testleri kategoriler halinde gruplandırmak, test listesini filtrelemek ve oluşturmak, kaydedin ve test çalma listeleri çalıştırın. Ayrıca, Testlerde Hata Ayıkla ve test, performans ve kod kapsamını analiz edin. Bilgi edinmek için bkz. nasıl [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md).
-
-![Test Gezgini ile birim testleri çalıştırılırken](media/testexplorer.png)
-
-## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Kod kapsamını kullanarak ne kadar kodun test edildiğini belirleme
+## <a name="analyze-code-coverage"></a>Kod kapsamını analiz etme
 
 Proje kodunuzun ne oranda aslında birim testleri gibi kodlanmış testler tarafından test edilen belirlemek için Visual Studio kod kapsamı özelliğini kullanabilirsiniz. Etkin hatalara karşı koruma sağlamak için testleriniz kodunuzun büyük bir kısmı entegrasyonlar için çalışılmalı. Bilgi edinmek için bkz. nasıl [ne kadar kodun test edildiğini belirlemek için kod kapsamı kullanın](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-## <a name="use-a-different-unit-test-framework"></a>Farklı birim testi çerçevesini kullanın
+## <a name="use-a-third-party-test-framework"></a>Bir üçüncü taraf test çerçevesi kullanın
 
-Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçevelerini kullanarak birim testleri çalıştırabilirsiniz. Visual Studio test Çalıştırıcısı bu çerçeveyle çalışabilmesi için eklenti çerçevesini kullanın.
+Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçevelerini kullanarak birim testleri çalıştırabilirsiniz. Kullanım **NuGet Paket Yöneticisi** tercih ettiğiniz çerçevesi için NuGet paketini yüklemek için. Veya, xUnit ve NUnit için test çerçeveleri, Visual Studio gerekli NuGet paketlerini içeren, önceden yapılandırılmış test proje şablonları içerir.
 
-Üçüncü taraf test çerçevelerini etkinleştirme adımları şunlardır:
+Kullanan birim testleri oluşturmak için [NUnit](https://nunit.org/):
 
-::: moniker range="vs-2017"
+1. Test etmek istediğiniz kodu içeren çözümü açın.
 
-1. Seçin **Araçları** > **Uzantılar ve güncelleştirmeler** menü çubuğundan.
+2. Çözüme sağ **Çözüm Gezgini** ve **Ekle** > **yeni proje**.
 
-2. İçinde **Uzantılar ve güncelleştirmeler** iletişim kutusunda **çevrimiçi** kategorisi ve ardından **Visual Studio Market**. Ardından, **Araçları** > **test**.
+3. Seçin **NUnit Test projesini** proje şablonu.
 
-   ![Visual Studio Market](media/extensions-and-updates-testing.png)
+   ::: moniker range=">=vs-2019"
 
-::: moniker-end
+   ![Visual Studio 2019 NUnit test proje şablonu](media/vs-2019/nunit-test-project-template.png)
 
-::: moniker range=">=vs-2019"
+   Tıklayın **sonraki**, projeyi adlandırın ve ardından **Oluştur**.
 
-1. Seçin **uzantıları** > **uzantıları yönetme** menü çubuğundan.
+   ::: moniker-end
 
-2. İçinde **uzantıları yönetme** iletişim kutusunda **çevrimiçi** kategorisi ve ardından **Visual Studio Market**. Ardından, **Araçları** > **test**.
+   ::: moniker range="vs-2017"
 
-   ![Visual Studio Market](media/extensions-and-updates-testing.png)
+   Projeyi adlandırın ve ardından **Tamam** oluşturun.
 
-::: moniker-end
+   ::: moniker-end
 
-3. Framework veya yükleyin ve ardından istediğiniz bağdaştırıcıyı seçin **indirme**.
+   Proje şablonu NUnit NUnit3TestAdapter NuGet başvurular içerir.
 
-4. Bir sınıf kitaplığı projesi oluşturun ve çözümünüze ekleyin.
+   ![Çözüm Gezgini'nde NUnit NuGet bağımlılıklarını](media/vs-2019/nunit-nuget-dependencies.png)
 
-   ![Sınıf Kitaplığı projesini adlandırın ve ekleyin](media/create3rdpartyunittest3.png)
+4. Bir başvuru test projesinden test etmek istediğiniz kodu içeren projeye ekleyin.
 
-5. Eklentiyi yükleyin. İçinde **Çözüm Gezgini**, sınıf kitaplığı Projesi'ni seçin ve ardından **NuGet paketlerini Yönet** , sağ tıklayın veya bağlam menüsünde.
+5. Kod, test yöntemine ekleyin.
 
-   ![Eklentiyi yüklemek için NuGet paketlerini Yönet](media/create3rdpartyunittest3a.png)
+   ![Kod birim testi kod dosyanıza ekleyin](media/vs-2019/unit-test-method.png)
 
-   [NuGet](https://www.nuget.org/) ekleme ve güncelleştirme kitaplıkları ve araçları projeleriniz için kullanabileceğiniz Visual Studio uzantısıdır.
-
-6. İçinde **NuGet Paket Yöneticisi** penceresinde arayın ve eklentiyi seçin ve ardından **yükleme**.
-
-   ![3. taraf Framework'ü yükleme](media/create3rdpartyunittest4.png)
-
-   Projenizde çerçevenin başvuruldu.
-
-   ![3. taraf birim testi çerçevesi için başvuru çözümünüze eklenir](media/create3rdpartyunittest6.png)
-
-7. Sınıf kitaplığı Proje öğesinden **başvuruları** düğümünü **Başvuru Ekle**.
-
-   ![Projeye bir başvuru ekleyin](media/createunittest6.png)
-
-8. İçinde **başvuru Yöneticisi** iletişim kutusunda, test kodu içeren projeyi seçin.
-
-   ![Kod projesi, test etmek için seçin](media/createunittest7.png)
-
-9. Birim testinizi kodlayın.
-
-   ![Kod birim testi kod dosyanıza ekleyin](media/create3rdpartyunittest7.png)
+6. Test çalıştırmak **Test Gezgini** veya test kodu sağ tıklayıp seçme **çalıştırma test**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -170,5 +166,4 @@ Visual Studio'da, Boost, Google ve NUnit gibi üçüncü taraf test çerçeveler
 * [Birim Testleri Oluştur komutu](create-unit-tests-menu.md)
 * [Intellitest ile testleri oluşturma](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Test Gezgini ile testleri çalıştırma](run-unit-tests-with-test-explorer.md)
-* [Kod kapsamı belirleme](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Kod kalitesini geliştirme](improve-code-quality.md)
+* [Kod kapsamını analiz etme](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
