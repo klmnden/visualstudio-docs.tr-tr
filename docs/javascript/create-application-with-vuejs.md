@@ -12,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2fd172de3791006688c5d9542a7d8c353bc4831e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 28194f007066c1fd39e3a26dd4a8c0e99e118059
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789572"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857235"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio için node.js araçları kullanarak Vue.js uygulama oluşturma
 
-Visual Studio 2017 için geliştirilmiş destek içerir [Vue.js](https://vuejs.org/) framework Vue.js, JavaScript ve TypeScript ile uygulama oluşturma geliştirme deneyimini geliştirir.
+Visual Studio ile uygulama geliştirme destekler [Vue.js](https://vuejs.org/) JavaScript veya TypeScript framework.
 
 Aşağıdaki yeni özellikleri, Visual Studio'da Vue.js uygulama geliştirmeyi destekler:
 
