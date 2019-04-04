@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957831"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856638"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Kod Düzenleyicisi'ni kullanmayı öğrenin
 
 Bu kısa giriş Kod Düzenleyicisi'nde Visual Studio için Visual Studio yazma, gezinme ve kodu daha kolay anlama yapar yollarından bazıları inceleyeceğiz.
 
 > [!TIP]
-> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
+> Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/) ücretsiz yüklemek için sayfa. Uygulama geliştirme yaptığınız türüne bağlı olarak, yüklemeniz gerekebilir **Node.js geliştirme iş yükü** Visual Studio ile.
 
 Bu makalede, zaten JavaScript geliştirme ile ilgili bilgi sahibi olduğunuz kabul edilmektedir. Siz değilseniz, öğreticiye bakın gibi öneririz [bir Node.js ve Express uygulaması oluşturma](../javascript/tutorial-nodejs.md) ilk.
 
@@ -121,6 +121,6 @@ Kullanılabilir kod parçacıkları seçerek dilinizi göz atabilirsiniz **Düze
 - [Kod parçacıkları](../ide/code-snippets.md)
 - [Kod gidin](../ide/navigating-code.md)
 - [Anahat Oluşturma](../ide/outlining.md)
-- [Tanıma ve Özet Tanıma Gitme](../ide/go-to-and-peek-definition.md)
-- [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)
+- [Tanım ve Özet tanıma gitme](../ide/go-to-and-peek-definition.md)
+- [Yeniden Düzenle](../ide/refactoring-in-visual-studio.md)
 - [IntelliSense kullanma](../ide/using-intellisense.md)

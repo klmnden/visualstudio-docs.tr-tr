@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 608745fc2c96836163e1406abda6869d52b1da1b
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007281"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856962"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Azure sanal makinelerinde Canlı ASP.NET uygulamalarında hata ayıklamak ve Snapshot Debugger'ı kullanarak Azure sanal makine ölçek kümeleri
 
@@ -50,21 +50,11 @@ Bu öğreticide şunları yapacaksınız:
     > [!IMPORTANT]
     > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure VM/VMSS hizmetinize yayımlanmış.
 
-1. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
-
-    * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
+1. Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
 
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
-    ![Snapshot debugger Yayımla sayfasından başlatın](../debugger/media/snapshot-publish-attach.png)
-
-    * Aşağı açılan menüyü seçin hata ayıklama hedef **Snapshot Debugger**, isabet **F5** ve gerekirse, web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama seçeneğini belirlerseniz hesap ve ardından  **Ekleme**.
-    ![F5 aşağı açılan menüden snapshot debugger'ı Başlat](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), web uygulamanızın dağıtıldığı hedef Azure VM/VMSS sağ tıklayın ve bir Azure depolama hesabını seçin ve ardından **Snapshot Debugger Ekle**.
-
-      ![Anlık görüntü Hata Ayıklayıcı'dan Cloud Explorer başlatma](../debugger/media/snapshot-launch.png)
+      ![Azure kaynağı seçin](../debugger/media/snapshot-select-azure-resource-vm.png) 
 
     > [!IMPORTANT]
     > Seçtiğiniz ilk kez **Snapshot Debugger Ekle** VM'niz için IIS otomatik olarak yeniden başlatılır.
@@ -72,11 +62,11 @@ Bu öğreticide şunları yapacaksınız:
 
     Meta verileri **modülleri** başlangıçta etkinleştirilmeyecek, web uygulamasına gidin ve **toplamaya Başla** düğmesi etkin olacak. Visual Studio anlık hata ayıklama modu sunulmuştur.
 
+   ![Anlık görüntü hata ayıklama modu](../debugger/media/snapshot-message.png)
+
     > [!NOTE]
     > Application Insights site uzantısı, anlık görüntü hata ayıklaması da destekler. Bir "site uzantısı güncel değil" hata iletisi ile karşılaşırsanız, bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
     > VMSS için Snapshot Debugger için ilk kez ekledikten sonra onların VMSS örnekleri el ile yükseltme kullanıcısı gereklidir.
-
-   ![Anlık görüntü hata ayıklama modu](../debugger/media/snapshot-message.png)
 
    **Modülleri** penceresi gösterir, tüm modüller için Azure VM/VMSS zaman yüklediniz (seçin **hata ayıklama > Windows > modülleri** bu pencereyi açmak için).
 
@@ -149,7 +139,7 @@ Bir anlık görüntü noktası isabet edildiğinde bir anlık görüntü alma ek
 
     Seçerseniz **çıkış penceresine Gönder**, günlüğe kaydetme noktası gelindiğinde tanılama araçları penceresinde iletisi görüntülenir.
 
-    ![Diagsession penceredeki verileri günlüğe kaydetme noktası](../debugger/media/snapshot-logpoint-output.png)
+    ![Tanılama araçları penceresi veri günlüğe kaydetme noktası](../debugger/media/snapshot-logpoint-output.png)
 
     Seçerseniz **uygulama günlüğüne Gönder**, günlüğe kaydetme noktası isabet edildiğinde iletilerden gördüğünüz herhangi bir ileti görüntülenir `System.Diagnostics.Trace` (veya `ILogger` .NET core'da), aşağıdakiler gibi [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 

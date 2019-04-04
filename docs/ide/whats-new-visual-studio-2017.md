@@ -12,17 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476078"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857820"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017’deki yenilikler
 
@@ -31,7 +32,7 @@ ms.locfileid: "58476078"
 Visual Studio'nun önceki bir sürümden yükseltme mi istiyorsunuz? Hangi Visual Studio 2017, sunabileceğiniz aşağıda verilmiştir: Herhangi bir geliştirme, herhangi bir uygulama ve tüm platformlar için eşsiz üretkenlik. Android, iOS, Windows, Linux, web ve bulut için uygulamalar geliştirmek için Visual Studio 2017'yi kullanın. Hızlı kod yazın, kolayca hata ayıklama ve tanılama yapın, sık sık test edin ve güvenle kullanıma sunun. Ayrıca, kendi uzantılarınızı oluşturarak Visual Studio’yu özelleştirebilir ve kapsamını genişletebilirsiniz. Sürüm denetimi kullanın, Çevik ve bu sürümle birlikte verimli bir şekilde işbirliği yapın!
 
 >[!div class="button"]
->[Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Visual Studio’yu İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 Önceki sürümden itibaren Visual Studio 2015 yapılan değişiklikler üst düzey bir özeti aşağıda verilmiştir:
 
@@ -385,7 +386,7 @@ Nasıl size Visual Studio geliştirmek, veya ürün destek seçenekleri hakkınd
 * [Visual Studio 2017 sürüm notları](/visualstudio/releasenotes/vs2017-relnotes)
 * [Visual Studio 2017 SDK’daki Yenilikler](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Visual C++ yenilikleri](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [C# Yenilikleri](/dotnet/csharp/whats-new)
+* [C# yenilikleri](/dotnet/csharp/whats-new)
 * [Team Foundation Server için yenilikler nelerdir?](/tfs/server/whats-new?view=vsts)
 * [Mac için Visual Studio'daki yenilikler](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-* [Visual Studio 2019 yenilikler](whats-new-visual-studio-2019.md)
+* [Visual Studio 2019’daki yenilikler](whats-new-visual-studio-2019.md)

@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 21142ada9b8a922e5a66a673eae1059a845f6231
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007299"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856696"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure Kubernetes hizmetlerinde hata ayıklama
 
@@ -54,24 +54,13 @@ Bu öğreticide şunları yapacaksınız:
     > [!IMPORTANT]
     > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure Kubernetes hizmetinizi yayımlanır.
 
-1. Snapshot Debugger iliştirebilmek. Birkaç farklı yöntemden birini kullanabilirsiniz:
-
-    * Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
+1. Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
 
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
-    * Seçin ve proje üzerinde sağ tıklayın **Yayımla**ve ardından Yayımla Sayfası tıklatıldığında **Snapshot Debugger Ekle**. Web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
-    ![Snapshot debugger Yayımla sayfasından başlatın](../debugger/media/snapshot-publish-attach.png)
+      ![Azure kaynağı seçin](../debugger/media/snapshot-select-azure-resource-aks.png)
 
-    * Aşağı açılan menüyü seçin hata ayıklama hedef **Snapshot Debugger**, isabet **F5** ve gerekirse, web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama seçeneğini belirlerseniz hesap ve ardından  **Ekleme**.
-    ![F5 aşağı açılan menüden snapshot debugger'ı Başlat](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * Cloud Explorer'ı kullanarak (**Görüntüle > Cloud Explorer**), web uygulamanızın dağıtıldığı AKS kaynak ve bir Azure depolama hesabına sağ tıklayın ve ardından **Snapshot Debugger Ekle**.
-
-      ![Anlık görüntü Hata Ayıklayıcı'dan Cloud Explorer başlatma](../debugger/media/snapshot-launch.png)
-
-    > [!NOTE]
-    > Application Insights site uzantısı, anlık görüntü hata ayıklaması da destekler. Bir "site uzantısı güncel değil" hata iletisi ile karşılaşırsanız, bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
+Visual Studio anlık hata ayıklama modu sunulmuştur.
 
    ![Anlık görüntü hata ayıklama modu](../debugger/media/snapshot-message.png)
 
@@ -146,7 +135,7 @@ Bir anlık görüntü noktası isabet edildiğinde bir anlık görüntü alma ek
 
     Seçerseniz **çıkış penceresine Gönder**, günlüğe kaydetme noktası gelindiğinde tanılama araçları penceresinde iletisi görüntülenir.
 
-    ![Diagsession penceredeki verileri günlüğe kaydetme noktası](../debugger/media/snapshot-logpoint-output.png)
+    ![Tanılama araçları penceresi veri günlüğe kaydetme noktası](../debugger/media/snapshot-logpoint-output.png)
 
     Seçerseniz **uygulama günlüğüne Gönder**, günlüğe kaydetme noktası isabet edildiğinde iletilerden gördüğünüz herhangi bir ileti görüntülenir `System.Diagnostics.Trace` (veya `ILogger` .NET core'da), aşağıdakiler gibi [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
