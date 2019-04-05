@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647277"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018200"
 ---
 # <a name="options-dialog-box-environment--general"></a>Seçenekler iletişim kutusu: Ortam \> genel
 
@@ -53,11 +53,22 @@ Menüleri, ilk harfler büyük stilini varsayılan olarak kullanın. Tüm büyü
 
 Bu seçeneği etkinleştirir veya İzleyici başına nokta / inç (DPI) tanıma devre dışı bırakır (veya *PMA*). Visual Studio kullanıcı arabirimi, PMA etkinleştirildiğinde, canlı bir izleyici görünen ölçek faktörü ve DPI yapılandırma, birden fazla monitöre dahil olmak üzere görünür. Windows ihtiyacınız PMA etkinleştirmek için 10 Nisan 2018 güncelleştirmesi veya üstü ve .NET Framework 4,8 veya üzeri. (Bu iki Önkoşullar karşılanmadı varsa bu seçeneği gri renkte görünür.)
 
+> [!TIP]
+> - Windows 10 bildiren bir ayar olan **izin Windows deneyin bulanık olmadığınız için uygulamaları düzeltmek**. Bu Windows ayarı kapatma **üzerinde** varsa göz ardı edilebilir etkisi **farklı piksel densities ekranlar için Optimize işleme** teslim seçeneği.
+> - Windows 10 de içeren bir **Program Uyumluluk sorun gidericisi**. Bu sorun gidericisini kullanarak Visual Studio görünümünü gidermeyi denemeye önerilmemektedir.
+
 ::: moniker-end
 
 **İstemci performansına dayalı görsel deneyimi otomatik olarak ayarla**
 
 Görsel deneyimi için düzeltme Visual Studio otomatik olarak ayarlar ya da düzeltme açık olarak belirtir. Düz renkler için bu ayarı renkleri görüntülenmesini gradyanlar değişebilir veya menüleri veya açılır pencereleri içinde animasyon kullanımını kısıtlayabilirsiniz.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 bildiren bir ayar olan **izin Windows deneyin bulanık olmadığınız için uygulamaları düzeltmek**. Bu ayarın kapatılması **üzerinde** Visual Studio monitör bulanık görünüp görünmeyeceğini önerilir. İçin yükseltmeyi düşünün [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), hangi önemli ölçüde geliştirildi görünen anlaşılabilir olması adına, bir izleyici başına nokta / inç kullanan bir uygulama olduğundan.
+
+::: moniker-end
 
 **Zengin istemci deneyimini etkinleştir**
 

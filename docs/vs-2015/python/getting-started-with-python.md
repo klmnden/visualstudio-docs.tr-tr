@@ -61,7 +61,7 @@ Aşağıdaki kaynaklar, başlamanıza yardımcı olur:
 
 - [Yükleme kılavuzu](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Başlatılan ve kapsamlı kısa videolar alma](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Yükleme ve özellikleri Tanıtımı (27 dk.)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Yükleme ve özellikleri Tanıtımı (27 dk.)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Belgeler](https://github.com/Microsoft/PTVS/wiki)  
 
 
