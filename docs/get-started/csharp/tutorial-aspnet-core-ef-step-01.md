@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0055c82812c94d3a29cc4f1b949f6b2c62a4445c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859117"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018122"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Öğretici: Visual Studio 2019 ile Entity Framework kullanarak ilk ASP.NET Core uygulamanızı oluşturma
 
@@ -31,7 +31,7 @@ Bu öğreticide, verileri kullanan ASP.NET Core web uygulaması oluşturacak ve 
 - [1. Adım: Visual Studio 2019 yükleyin](#step-1-install-visual-studio-2019)
 - [2. Adım: İlk ASP.NET Core web uygulamanızı oluşturma](tutorial-aspnet-core-ef-step-02.md)
 - [3. Adım: Entity Framework kullanarak verileri ile çalışma](tutorial-aspnet-core-ef-step-03.md)
-- [4. Adım: ASP.NET Core uygulamanızı bir Web API'SİNİN kullanıma sunma](tutorial-aspnet-core-ef-step-04.md)
+- [4. Adım: ASP.NET Core uygulamanızı bir web API'SİNİN kullanıma sunma](tutorial-aspnet-core-ef-step-04.md)
 - [5. Adım: ASP.NET Core uygulamanızı Azure'a dağıtma](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="step-1-install-visual-studio-2019"></a>1. Adım: Visual Studio 2019 yükleyin

@@ -5,12 +5,12 @@ title: Visual Studio ürünleri | Microsoft Docs
 description: Visual Studio ürün ailesi keşfedin.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: e7a895b95c6f357fcab8674ae87296fa191ea856
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857301"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59017998"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -30,7 +30,7 @@ ms.locfileid: "58857301"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -49,7 +49,7 @@ ms.locfileid: "58857301"
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

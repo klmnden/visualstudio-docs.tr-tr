@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea3a1fd74dfb3261dde47d9b0851954155534493
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859129"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018187"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>3. Adım: Entity Framework kullanarak verileri ile çalışma
 
@@ -122,7 +122,7 @@ EF Core ve Visual Studio 2019'ı kullanarak bir ASP.NET Core uygulaması veriler
 
 Sonraki videoda, web API desteğini uygulamanıza nasıl ekleyeceğinizi öğreneceksiniz.
 
-[4. Adım: ASP.NET Core uygulamanızı bir Web API'SİNİN kullanıma sunma](tutorial-aspnet-core-ef-step-04.md)
+[4. Adım: Bir web API öğesinden ASP.NET Core uygulamanızı gösterme](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
