@@ -1,20 +1,20 @@
 ---
 title: Visual Studio aboneliği, Visual Studio IDE avantajı | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789893"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018148"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Visual Studio 2017 avantajının kullanılmasıyla
+# <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 avantajının kullanılmasıyla
 
 Visual Studio abonesi olarak, Visual Studio IDE erişebilirsiniz.  Belirli bir sürüm aboneliğinizin düzeyine bağlıdır.  Avantajı araçları kategorisinde bir kutucuk olarak görünür [avantajları](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) abone portalı sayfasında.
 
@@ -29,7 +29,7 @@ IDE indirmek için:
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise kutucuğu](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Tıklayın, Visual Studio IDE karşıdan yüklemek ve etkinleştirmek için bir ürün anahtarı almak için bir fırsat olduğu kuruluş için sonuçları karşıdan yükleme sayfasına yönlendirilirsiniz. Mavi tıklayarak da bir ürün anahtarı bildirebileceklerinden **anahtar Al** bağlantı veya bir anahtarı daha sonra talep [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sayfası.
+3. Visual Studio için IDE karşıdan yüklemek ve etkinleştirmek için bir ürün anahtarı almak için bir fırsat olduğu sonuçları karşıdan yükleme sayfasına yönlendirilirsiniz. Mavi tıklayarak da bir ürün anahtarı bildirebileceklerinden **anahtar Al** bağlantı veya bir anahtarı daha sonra talep [ürün anahtarlarını](https://my.visualstudio.com/productkeys) sayfası.
 4. İndirme sonuçları sayfasının Ayrıntılar sekmesinde:
    - İstenen Mimarinizi (x86, x64) seçin
    - Dil tercihinizi belirleyin.

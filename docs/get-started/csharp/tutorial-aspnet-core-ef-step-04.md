@@ -1,6 +1,6 @@
 ---
-title: "4. Adım: ASP.NET Core uygulamanızı bir Web API'SİNİN kullanıma sunma"
-description: ASP.NET Core Web uygulamanızı bu videosu ve adım adım yönergeleri içeren bir Web API'sini ekleyin.
+title: '4. Adım: Bir web API öğesinden ASP.NET Core uygulamanızı gösterme'
+description: ASP.NET Core Web uygulamanızı bu videosu ve adım adım yönergeleri içeren bir web API'sini ekleyin.
 ms.custom: get-started
 ms.date: 03/31/2019
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 75fef03d82f95f4adc65bfab5495ba644ee5164a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859147"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018096"
 ---
-# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>4. Adım: ASP.NET Core uygulamanızı bir Web API'SİNİN kullanıma sunma
+# <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>4. Adım: ASP.NET Core uygulamanızı bir web API'SİNİN kullanıma sunma
 
-Mevcut ASP.NET Core uygulamanızı bir Web API eklemek için aşağıdaki adımları izleyin.
+Mevcut ASP.NET Core uygulamanızı bir web API eklemek için aşağıdaki adımları izleyin.
 
 _Bu videoyu izleyin ve ilk ASP.NET Core uygulamanızı web API desteği eklemek için ilerleyebilmek._
 
@@ -33,7 +33,7 @@ _Bu videoyu izleyin ve ilk ASP.NET Core uygulamanızı web API desteği eklemek 
 
 ## <a name="open-your-project"></a>Projenizi açın
 
-ASP.NET Core uygulamanızı Visual Studio 2019 ' açın. Uygulama zaten EF Core, model türlerini yönetmek için yapılandırılan kullanılmalı [Bu öğretici serisinin 3. adım](tutorial-aspnet-core-ef-step-03.md)
+ASP.NET Core uygulamanızı Visual Studio 2019 ' açın. Uygulama zaten EF Core, model türlerini yönetmek için yapılandırılan kullanılmalı [Bu öğretici serisinin 3. adım](tutorial-aspnet-core-ef-step-03.md).
 
 ## <a name="add-an-api-controller"></a>Bir API denetleyicisi Ekle
 

@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05842c274c27165a7065cb90fda60dd75da2a659
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840344"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018317"
 ---
-# <a name="expected-"></a>'@' bekleniyor
+# <a name="expected-"></a>Beklenen '\@'
 Kullanarak koşullu derleme deyimleri ile kullanılmak üzere bir değişken oluşturmaya çalıştı `@set` deyimi, ancak değil yerleştirin bir at işareti "**@**" önce değişken adı.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
@@ -34,5 +34,5 @@ Kullanarak koşullu derleme deyimleri ile kullanılmak üzere bir değişken olu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [@set Deyimi](../../javascript/reference/at-set-statement-javascript.md)   
- [Koşullu derleme](../../javascript/advanced/conditional-compilation-javascript.md)   
+ [Koşullu Derleme](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Koşullu Derleme Değişkenleri](../../javascript/advanced/conditional-compilation-variables-javascript.md)

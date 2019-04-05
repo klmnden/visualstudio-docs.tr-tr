@@ -74,7 +74,7 @@ sections:
         columns: 3
         items:
           - href: tutorial-aspnet-core-ef-step-01.md
-            html: <p>Verileri kullanır ve bir Web API'sini kullanıma sunan bir web uygulaması oluşturmak için Visual Studio 2019'ı kullanın ve Azure'a dağıtın.</p>
+            html: <p>Verileri kullanır ve bir web API'SİNİN kullanıma sunduğu bir web uygulaması oluşturmak için Visual Studio 2019'ı kullanın ve Azure'a dağıtın.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_video.svg'
             title: İlk ASP.NET Core uygulamanızı oluşturma
