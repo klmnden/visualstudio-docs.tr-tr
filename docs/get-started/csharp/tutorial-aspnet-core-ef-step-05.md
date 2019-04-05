@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 50f9fec9168c2a7aacfcca8d96501997e6db936d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2d995818ec5b8ac01c9776bbf2290da39d2cc40b
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859153"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018109"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>5. Adım: ASP.NET Core uygulamanızı Azure'a dağıtma
 
@@ -33,7 +33,7 @@ _Bu videoyu izleyin ve ilk ASP.NET Core uygulamanızı Azure'a dağıtmak için 
 
 ## <a name="open-your-project"></a>Projenizi açın
 
-ASP.NET Core uygulamanızı Visual Studio 2019 ' açın. Uygulama zaten kümesi EF Core ile çalışmaya web API'si, yapılandırılan kullanılmalı [Bu öğretici serisinin 4. adım](tutorial-aspnet-core-ef-step-04.md)
+ASP.NET Core uygulamanızı Visual Studio 2019 ' açın. Uygulama zaten kümesi EF Core ile çalışmaya web API'si, yapılandırılan kullanılmalı [Bu öğretici serisinin 4. adım](tutorial-aspnet-core-ef-step-04.md).
 
 ## <a name="publish-to-azure-app-service"></a>Azure App Service’e yayımlama
 

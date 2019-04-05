@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415220"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018226"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar
 
@@ -31,7 +31,7 @@ Visual Studio yüklemeleri istemci makinelerinde algılamaya ve yüklemelerini �
 
 Kullanılabilir algılamak ve istemci makinelerde yüklü Visual Studio örneklerini yönetmenize yardımcı olacak birkaç araç yaptık:
 
-* [VSWhere](https://github.com/microsoft/vswhere): Visual Studio yerleşik veya yardımcı olan ayrı bir dağıtım için kullanılabilir bir yürütülebilir dosya belirli bir makinedeki tüm Visual Studio Örnekleri konumunu bulun.
+* [vswhere](https://github.com/microsoft/vswhere): Visual Studio yerleşik veya yardımcı olan ayrı bir dağıtım için kullanılabilir bir yürütülebilir dosya belirli bir makinedeki tüm Visual Studio Örnekleri konumunu bulun.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): PowerShell betikleri Visual Studio'nun yüklü örnekleri belirlemek için Kurulum yapılandırması API'yi kullanın.
 * [VS ayarlama örnekleri](https://github.com/microsoft/vs-setup-samples): C#ve C++ örnekleri, var olan bir yüklemesini sorgulamak için kurulum yapılandırma API'si kullanımını göstermektedir.
 
@@ -39,7 +39,7 @@ Ayrıca, [kurulum yapılandırma API'si](<xref:Microsoft.VisualStudio.Setup.Conf
 
 ## <a name="using-vswhereexe"></a>Vswhere.exe kullanma
 
-`vswhere.exe` otomatik olarak dahil Visual Studio'daki (Visual Studio 2017 sürüm 15.2 ve sonraki sürümler ile başlayarak) veya buradan indirebileceğiniz [sayfa VSWhere sürümleri](https://github.com/Microsoft/vswhere/releases). Kullanım `vswhere -?` aracı hakkında Yardım bilgilerini almak için. Örneğin, bu komut tüm ürünlerinizin ve prereleases, önceki sürümleri dahil olmak üzere Visual Studio sürümlerini gösterir ve sonuçları JSON biçiminde çıkarır:
+`vswhere.exe` otomatik olarak dahil Visual Studio'daki (Visual Studio 2017 sürüm 15.2 ve sonraki sürümler ile başlayarak) veya buradan indirebileceğiniz [sayfa vswhere sürümleri](https://github.com/Microsoft/vswhere/releases). Kullanım `vswhere -?` aracı hakkında Yardım bilgilerini almak için. Örneğin, bu komut tüm ürünlerinizin ve prereleases, önceki sürümleri dahil olmak üzere Visual Studio sürümlerini gösterir ve sonuçları JSON biçiminde çıkarır:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json

@@ -3,9 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio belgeleri | Microsoft Docs
 titleSuffix: ''
-description: 'Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio kullanmayı öğrenirsiniz.'
+description: Uygulamaları, hizmetleri ve araçları, platformlar ve cihazlar için tercih ettiğiniz dilde geliştirmek için Visual Studio kullanmayı öğrenirsiniz.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515330"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

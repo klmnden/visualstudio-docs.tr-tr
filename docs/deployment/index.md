@@ -1,12 +1,18 @@
 ---
 layout: LandingPage
 title: Uygulamalarınızı dağıtın | Microsoft Docs
-description: 'Bilgi nasıl uygulamaları, hizmetleri ve bileşenleri dağıtmak için Visual Studio''yu kullanın.'
+description: Bilgi nasıl uygulamaları, hizmetleri ve bileşenleri dağıtmak için Visual Studio'yu kullanın.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
+ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325022"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio'daki dağıtımı
 

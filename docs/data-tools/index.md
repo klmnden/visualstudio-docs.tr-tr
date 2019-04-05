@@ -1,13 +1,19 @@
 ---
 title: Veri çözümleri geliştirin
-description: 'Visual Studio, .NET Framework Araçları, SQL Server veri araçları, Azure Data Lake, Azure HDInsight ve Azure akış analizi dahil olmak üzere veri çözümleri geliştirme için farklı araçlar hakkında bilgi edinin.'
+description: Visual Studio, .NET Framework Araçları, SQL Server veri araçları, Azure Data Lake, Azure HDInsight ve Azure akış analizi dahil olmak üzere veri çözümleri geliştirme için farklı araçlar hakkında bilgi edinin.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-  - data-storage
+- data-storage
+ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323246"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Veri araçları, veri çözümleri geliştirmek üzere Visual Studio'da kullanın.
 

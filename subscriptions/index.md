@@ -8,8 +8,13 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Visual Studio'ya Hoş Geldiniz abonelikler
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322604"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Visual Studio Abonelikleri
 
 Visual Studio abonelikleri olan kaynakları oluşturmanıza, dağıtmanıza ve tercih ettiğiniz platformları ve cihazları, Windows, iOS, Android ve Linux gibi harika uygulamaları yönetmek kapsamlı bir dizi.  Abonelikleri'nin avantajlarını Geliştirici araçlarına, bulut Hizmetleri ve yazılım, eğitim, erişimini içerir ve geliştirme ve test ihtiyaçları için destek.

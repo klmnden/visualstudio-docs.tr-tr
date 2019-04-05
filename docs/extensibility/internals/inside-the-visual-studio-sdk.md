@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "57870279"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK’nın İçinde
+
 Bu bölüm, Visual Studio mimari, bileşenleri, hizmetleri, şemalar, yardımcı programlar ve benzeri gibi Visual Studio uzantıları hakkında ayrıntılı bilgi sağlar.
 
 ## <a name="extensibility-architecture"></a>Genişletilebilirlik mimarisi
@@ -83,11 +84,12 @@ Bu bölüm, Visual Studio mimari, bileşenleri, hizmetleri, şemalar, yardımcı
  Bir dil hizmetinin temelini, bir ayrıştırıcı ve tarayıcı ' dir. Bir tarayıcı (veya sözcük temelli çözümleyici) belirteçleri bilinen öğeleri bir kaynak dosyası böler ve bu belirteçleri arasındaki ilişkileri bir ayrıştırıcı oluşturur. Dil hizmeti oluşturduğunuzda, Visual Studio dilinin dil bilgisi ve belirteçleri anlayabilmeniz ayrıştırıcısı ve tarayıcısı uygulamalıdır. Yönetilen veya yönetilmeyen dil Hizmetleri oluşturabilirsiniz. Daha fazla bilgi için [eski dil hizmeti genişletilebilirliği](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projeler
- Visual Studio'da projeler geliştiriciler düzenleyebilir ve kaynak kodu ve diğer kaynakları oluşturmak için kullandığınız kapsayıcılardır. Düzenleme, derleme, hata ayıklama ve kaynak kodunu Dağıt let projeleri, Web Hizmetleri ve veritabanları ve diğer kaynaklara başvuruyor. VSPackage'ları, Visual Studio Proje sistemi proje türleri, proje alt türleri ve özel araçlar sağlayarak genişletebilirsiniz.
 
- Projeleri, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla proje gruplandırmasıdır bir çözümde de toplanan. İlgili çözüme proje ve durum bilgilerini iki çözüm dosyaları, metin tabanlı çözüm (.sln) dosyasını ve ikili çözüm kullanıcı seçeneği (.suo) dosyası depolanır. Bu dosyalar, önceki sürümlerinde kullanılan Grup (.vbg) dosyaları benzer [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], çalışma alanı (.dsw) ve kullanıcı seçeneklerini'nın önceki sürümlerinde kullanılan (.opt) dosyaları [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+Visual Studio'da projeler geliştiriciler düzenleyebilir ve kaynak kodu ve diğer kaynakları oluşturmak için kullandığınız kapsayıcılardır. Düzenleme, derleme, hata ayıklama ve kaynak kodunu Dağıt let projeleri, Web Hizmetleri ve veritabanları ve diğer kaynaklara başvuruyor. VSPackage'ları, Visual Studio Proje sistemi proje türleri, proje alt türleri ve özel araçlar sağlayarak genişletebilirsiniz.
 
- Daha fazla bilgi için [projeleri](../../extensibility/internals/projects.md) ve [çözümleri](../../extensibility/internals/solutions.md).
+Projeleri ayrıca toplanan birlikte bir *çözüm*, bir uygulama oluşturmak için birlikte çalışan bir veya daha fazla proje gruplandırması olan. İlgili çözüme proje ve durum bilgilerini iki çözüm dosyalarının metin tabanlı depolanan [çözüm (.sln) dosyasını](solution-dot-sln-file.md) ve ikili [çözüm kullanıcı seçeneği (.suo) dosyası](solution-user-options-dot-suo-file.md). Bu dosyalar Visual Basic'in önceki sürümlerindeki ve çalışma alanı (.dsw)'de kullanılan Grup (.vbg) dosyalarını ve C++'ın önceki sürümlerinde kullanılan kullanıcı seçenekleri (.opt) dosyaları benzer.
+
+Daha fazla bilgi için [projeleri](../../extensibility/internals/projects.md) ve [çözümleri](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Proje ve Öğe Şablonları
  Visual Studio, önceden tanımlanmış proje şablonları ve proje öğesi şablonları içerir. Ayrıca kendi şablonlarınızı olun veya topluluk şablonlarını almak ve sonra bunları Visual Studio ile tümleştirin. [MSDN Kod Galerisi](https://code.msdn.microsoft.com/site/search?query=visual%20studio) şablonları ve uzantılar için Git yerdir.

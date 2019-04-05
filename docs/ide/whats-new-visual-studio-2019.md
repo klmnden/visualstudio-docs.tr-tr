@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866750"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018161"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -166,7 +166,7 @@ Bulutta tam olarak neler olduğunu görmek için uygulamanızın yürütmesini a
 
 Bir Azure sanal makinesinde çalışan ASP.NET (Çekirdeği ve Masaüstü) uygulamaları hedeflemek için destek ekledik. Ayrıca, bir Azure Kubernetes Service'te çalışan uygulamalar için destek ekledik. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
 
-Daha fazla bilgi için [Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamaları için hata ayıklama](../debugger/debug-live-azure-applications.md) sayfası.
+Daha fazla bilgi için bkz. [Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamaları için hata ayıklama](../debugger/debug-live-azure-applications.md) sayfasında ve [Giriş zaman seyahat hata ayıklamak için Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) blog gönderisi.
 
 ## <a name="give-us-feedback"></a>Geri bildirimde bulunun
 
