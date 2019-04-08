@@ -43,7 +43,7 @@ Gelişmiş arama işleçleri kullanarak aramanızı içerik için daha basit ola
 |Programlama dili|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
 |--------------------------|---------|  
 |Visual Basic|Kod: vb<br /><br /> veya<br /><br /> code:visualbasic|  
-|C#|code:c#<br /><br /> veya<br /><br /> code:csharp|  
+|C#|code:C#<br /><br /> veya<br /><br /> code:csharp|  
 |C++|Kod: cpp<br /><br /> veya<br /><br /> Kod: c ++<br /><br /> veya<br /><br /> code:cplusplus|  
 |F#|Kod: f #<br /><br /> veya<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> veya<br /><br /> Kod: js|  

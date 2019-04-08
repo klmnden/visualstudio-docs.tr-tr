@@ -152,7 +152,7 @@ Bir <xref:Microsoft.VisualStudio.Text.ITrackingSpan> bir dizi karakter yerine ya
 
 #### <a name="content-types"></a>İçerik türleri
 
-İçerik türleri, farklı içerik türleri tanımlamak için bir mekanizması mevcuttur. Bir içerik türü "metin", "code" veya "ikili" gibi bir dosya türü veya "xml", "vb" veya "c#" gibi bir teknoloji türü olabilir. Örneğin, word "kullanarak" hem C# ve Visual Basic'te, ancak diğer programlama dillerinin bir anahtar sözcüktür. Bu nedenle, bu anahtar sözcüğünün tanımını "c#" ve "vb" içerik türleri için sınırlı olacaktır.
+İçerik türleri, farklı içerik türleri tanımlamak için bir mekanizması mevcuttur. Bir içerik türü "metin", "code" veya "ikili" gibi bir dosya türü veya "xml", "vb" veya "C#" gibi bir teknoloji türü olabilir. Örneğin, word "kullanarak" hem C# ve Visual Basic'te, ancak diğer programlama dillerinin bir anahtar sözcüktür. Bu nedenle, bu anahtar sözcüğünün tanımını "C#" ve "vb" içerik türleri için sınırlı olacaktır.
 
 İçerik türleri, kenarlıklar ve diğer öğeleri Düzenleyicisi için filtre olarak kullanılır. Birçok Düzenleyicisi özellikleri ve uzantı noktaları içerik türü tanımlanır. Örneğin, metin renklendirmesi düz metin dosyaları, XML dosyalarını ve Visual Basic kaynak kodu dosyaları için farklıdır. Metin arabelleği, genellikle bunlar oluşturulur ve bir metin arabelleği içerik türü değiştirilebilir bir içerik türü atanır.
 
