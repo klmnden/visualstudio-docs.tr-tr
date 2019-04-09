@@ -3,19 +3,19 @@ title: Python kodu yeniden düzenleyin
 description: Visual Studio tanımlayıcıları yeniden adlandırarak Python kodu yeniden düzenleme içeri aktarmalar ekleme yöntemleri ayıklama kolaylaştırır ve kullanılmayan kaldırma içeri aktarır.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5444db5b79310399fb058dc6712d5c1f8c39a3af
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149451"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365219"
 ---
 # <a name="refactor-python-code"></a>Python kodu yeniden düzenleyin
 

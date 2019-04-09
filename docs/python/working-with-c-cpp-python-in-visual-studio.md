@@ -3,19 +3,19 @@ title: Python için C++ uzantıları yazma
 description: Visual Studio, CPython ve PyBind11 karışık mod hata ayıklama da dahil olmak üzere, kullanarak Python için C++ uzantısı oluşturma için kullanılan bir kılavuz.
 ms.date: 11/19/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366906"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
 
@@ -303,7 +303,7 @@ Aşağıdaki adımlarda anlatıldığı alternatif bir yöntem de diğer Python 
 
     Bkz: [yapı C ve C++ uzantıları](https://docs.python.org/3/extending/building.html) (python.org) bu betik hakkında bilgi için.
 
-    **PyBind11 (superfastcode2 Proje):**
+    **PyBind11 (superfastcode2 project):**
 
     ```python
     import os, sys

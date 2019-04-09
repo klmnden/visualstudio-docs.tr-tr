@@ -3,19 +3,19 @@ title: Python kodunu düzenleme
 description: Python için Visual Studio, zengin IntelliSense kod parçacıkları ve biçimlendirme, linting ve yeniden düzenleme ile birlikte Gezinti özellikleri sağlar.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355558"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366282"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
 
@@ -228,5 +228,5 @@ Herhangi bir ad çift veya ok tuşlarını seçerek ve **Enter**, bu tanımlayı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Biçimlendirme](formatting-python-code.md)
-- [Yeniden Düzenleme](refactoring-python-code.md)
+- [Yeniden Düzenle](refactoring-python-code.md)
 - [Bir lint kullanın](linting-python-code.md)

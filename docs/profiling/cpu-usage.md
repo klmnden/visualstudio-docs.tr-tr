@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640798"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366763"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 
@@ -56,13 +56,17 @@ Genellikle, yerel makine en iyi yüklü uygulama yürütme çoğaltır. Windows 
 
 Tanılama raporu kendisine göre sıralandığı **toplam CPU**, yüksekten en düşüğe. Sütun üst bilgilerini seçerek sıralama sütunu ve sıralama düzenini değiştirin. Kullanın **filtre** görüntülemek ve kullanmak için iş parçacığı seçimini kaldırın veya seçmek için açılan **arama** belirli iş parçacığı veya düğüm için arama kutusu.
 
+::: moniker range=">=vs-2019"
+Visual Studio 2019 ' başlayarak, tıklayabilirsiniz **etkin yolu Genişlet** ve **etkin yolu Göster** işlev çağrıları görmek için düğmeler çağrı ağacı Görünümü'nde en yüksek CPU yüzdesi kullanın.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> CPU kullanımı veri sütunları
 
 |||
 |-|-|
 |**Toplam CPU [Birim, %]**|![Toplam % veri Denklem](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Milisaniye ve CPU yüzdesi işlev için çağrılar tarafından kullanılan ve seçili zaman aralığında işlev tarafından çağrılan işlevleri. Bu farklıdır **CPU kullanımı** karşılaştıran bir zaman aralığında bir toplam kullanılabilir CPU için toplam CPU etkinliği zaman çizelgesi grafiği.|
 |**İç CPU [Birim, %]**|![Kendi kendine % Denklem](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> CPU yüzdesi seçili zaman aralığındaki işlev tarafından çağrılan işlevler hariç işlev için çağrılar tarafından kullanılan ve milisaniye.|
-|**Module**|İşlevi içeren modül adı.
+|**Modül**|İşlevi içeren modül adı.
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU kullanımı çağrı ağacı
 
@@ -70,7 +74,12 @@ Tanılama raporu kendisine göre sıralandığı **toplam CPU**, yüksekten en d
 
 ####  <a name="BKMK_Call_tree_structure"></a> Çağrı ağacı yapısı
 
- ![Ağaç yapısı çağrı](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "çağrı ağaç yapısı")
+::: moniker range=">=vs-2019"
+![Ağaç yapısı çağrı](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "çağrı ağaç yapısı")
+::: moniker-end
+::: moniker range="vs-2017"
+![Ağaç yapısı çağrı](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "çağrı ağaç yapısı")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Tanılama raporu kendisine göre sıralandığı **toplam CPU**, yüksekten en d
 
 ####  <a name="BKMK_External_Code"></a> Dış kod
 
- Kodunuz tarafından çalıştırılan sistem ve çerçeve işlevlerinin çağrılır *dış kod*. Dış kod işlevleri başlatmak ve uygulamayı durdurun, UI çizme, iş parçacığı denetimi ve uygulamayı diğer alt düzey hizmetler sağlar. CPU kullanımı çağırmak için ağaç toplar harici işlevler kullanıcı yönteminin birine çoğu durumda, dış kod içinde ilginizi kullanmadığınız **[harici kod]** düğümü.
+Kodunuz tarafından çalıştırılan sistem ve çerçeve işlevlerinin çağrılır *dış kod*. Dış kod işlevleri başlatmak ve uygulamayı durdurun, UI çizme, iş parçacığı denetimi ve uygulamayı diğer alt düzey hizmetler sağlar. CPU kullanımı çağırmak için ağaç toplar harici işlevler kullanıcı yönteminin birine çoğu durumda, dış kod içinde ilginizi kullanmadığınız **[harici kod]** düğümü.
 
- Dış kod, arama yollarını ana tanılama raporu sayfasında (sağ bölme) görüntülemek için seçin **harici kodu Göster** gelen **filtre** açılır listesinde ve ardından **Uygula**. **Çağrı ağacı** görünümünü **CPU kullanımı** sayfa sonra dış kod çağrıları genişletir. ( **Filtre** açılan ana Tanılama sayfasında değil hakkında ayrıntılı görünümler bulunur.)
+Dış kod, arama yollarını ana tanılama raporu sayfasında (sağ bölme) görüntülemek için seçin **harici kodu Göster** gelen **filtre** açılır listesinde ve ardından **Uygula**. **Çağrı ağacı** görünümünü **CPU kullanımı** sayfa sonra dış kod çağrıları genişletir. ( **Filtre** açılan ana Tanılama sayfasında değil hakkında ayrıntılı görünümler bulunur.)
 
- ![Dış Kodu Göster](../profiling/media/cpu_use_wt_filterview.png "dış Kodu Göster")
+![Dış Kodu Göster](../profiling/media/cpu_use_wt_filterview.png "dış Kodu Göster")
 
- Zincirinin genişliği görüntü genişliğini aşabilir için çok sayıda dış kod arama zincirleri, iç içe girmiş **işlev adı** sütun. İşlev adları olarak daha sonra görünür **...** .
+Zincirinin genişliği görüntü genişliğini aşabilir için çok sayıda dış kod arama zincirleri, iç içe girmiş **işlev adı** sütun. İşlev adları olarak daha sonra görünür **...** .
 
- ![Çağrı ağacında dış kod iç içe geçmiş](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "çağrı ağacında dış kod iç içe geçmiş")
+![Çağrı ağacında dış kod iç içe geçmiş](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "çağrı ağacında dış kod iç içe geçmiş")
 
- Aradığınız bir işlev adı bulmak için arama kutusunu kullanın. Seçilen satırın üzerine gelin veya verileri görüntülemek için yatay kaydırma çubuğunu kullanın.
+Aradığınız bir işlev adı bulmak için arama kutusunu kullanın. Seçilen satırın üzerine gelin veya verileri görüntülemek için yatay kaydırma çubuğunu kullanın.
 
- ![İç içe geçmiş bir dış kod arama](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "iç içe geçmiş bir dış kod arama")
+::: moniker range=">=vs-2019"
+![İç içe geçmiş bir dış kod arama](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "iç içe geçmiş bir dış kod arama")
+::: moniker-end
+::: moniker range="vs-2017"
+![İç içe geçmiş bir dış kod arama](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "iç içe geçmiş bir dış kod arama")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Zaman uyumsuz işlevleri CPU kullanımına çağrı ağacı
 

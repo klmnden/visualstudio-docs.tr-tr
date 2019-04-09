@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355506"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366893"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Visual Studio'da bir uzak IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -175,14 +175,18 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
     > [!TIP]
     > Visual Studio 2017 ve sonraki sürümlerinde, daha önce ekli kullanarak aynı işleme iliştirebilirsiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
-3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: bağlantı noktası**.
+3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >** basın **Enter**.
+
+    Visual Studio biçiminde görünür bilgisayar adı gerekli bağlantı noktası eklediğini doğrulayın:  **\<uzak bilgisayar adı >: bağlantı noktası**
 
     ::: moniker range=">=vs-2019"
-    **\<Uzak bilgisayar adı >: 4024** Visual Studio 2019 tarihinde
+    Visual Studio 2019 üzerinde görmelisiniz  **\<uzak bilgisayar adı >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<Uzak bilgisayar adı >: 4022** Visual Studio 2017
+    Visual Studio 2017'de görmelisiniz  **\<uzak bilgisayar adı >: 4022**
     ::: moniker-end
+    Bağlantı noktası gereklidir. Bağlantı noktası numarasını görmüyorsanız, el ile ekleyin.
+
 4. Tıklayın **Yenile**.
     Bazı işlemler görünür görmelisiniz **kullanılabilir işlemler** penceresi.
 
@@ -191,9 +195,21 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
     Kullanmak istiyorsanız **Bul** düğmesini gerekebilir [açın UDP bağlantı noktası 3702](#bkmk_openports) sunucusunda.
 
 5. Denetleme **tüm kullanıcıların işlemlerini göster**.
-6. Hızlı bir şekilde bulmak için bir işlem adının ilk harfi yazın **dotnet.exe** (için ASP.NET Core).
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+6. Uygulamanızı hızlı bir şekilde bulmak için işlem adı ilk harflerini yazın.
+
+    * Seçin **dotnet.exe**.
+
+      Birden çok işlem gösteren varsa **dotnet.exe**, kontrol **kullanıcı adı** sütun. Bazı senaryolarda **kullanıcı adı** sütunda görüntülenir, uygulama havuzu adı gibi **IIS APPPOOL\DefaultAppPool**. Uygulama havuzu bakın, doğru işlemi tanıtmak için kolay bir yolunu yeni bir uygulama havuzu ayıklamak istediğiniz uygulama örneği için adlandırılmış bir gruptur ve ardından kolay bulabileceğinizi **kullanıcı adı** sütun.
+
+    * IIS bazı senaryolarda, uygulama adınız işlem listesinde gibi bulabilirsiniz **MyASPApp.exe**. Bunun yerine bu işleme iliştirilebilir.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Tıklayın **ekleme**.
 

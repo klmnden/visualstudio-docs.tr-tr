@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea096ce0880ff3126e7aff98e037c75dc457997
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719606"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366711"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -148,7 +148,7 @@ Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: 
     ((my_class *) 0xcccccccc)->my_method
     ```
 
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Veri kesme noktaları (yalnızca yerel C++'da) ayarla
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Veri kesme noktaları (yalnızca yerel C++'da) ayarla
 
  Veri kesme noktaları, belirtilen bellek adresi değişiklikleri depolanan değeri olduğunda yürütmeyi Kes. Değer okunur ancak değişmemiş ise yürütme sonu gelmez.
 
@@ -306,7 +306,7 @@ Dize değerleri çift tırnak içine alın. Kullanarak ifadeleri birleştirebili
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
+- [Hata ayıklama nedir?](../debugger/what-is-debugging.md)
 - [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)
 - [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
 - [Visual Studio hata ayıklayıcısında kesme noktaları sorunlarını giderme](../debugger/troubleshooting-breakpoints.md)

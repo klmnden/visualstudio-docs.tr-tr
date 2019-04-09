@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355808"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365920"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Uzaktan hata ayıklama Visual Studio'da Azure IIS üzerinde ASP.NET Core
 
@@ -213,14 +213,17 @@ Visual Studio sürümünüzle eşleşen uzak Araçlar sürümü indirin.
     > [!TIP]
     > Visual Studio 2017 ve sonraki sürümlerinde, daha önce ekli kullanarak aynı işlemde yeniden ekleyebileceğiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
-3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: bağlantı noktası**.
+3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >** basın **Enter**.
+
+    Visual Studio biçiminde görünür bilgisayar adı gerekli bağlantı noktası eklediğini doğrulayın:  **\<uzak bilgisayar adı >: bağlantı noktası**
 
     ::: moniker range=">=vs-2019"
-    **\<Uzak bilgisayar adı >: 4024** Visual Studio 2019 tarihinde
+    Visual Studio 2019 üzerinde görmelisiniz  **\<uzak bilgisayar adı >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<Uzak bilgisayar adı >: 4022** Visual Studio 2017
+    Visual Studio 2017'de görmelisiniz  **\<uzak bilgisayar adı >: 4022**
     ::: moniker-end
+    Bağlantı noktası gereklidir. Bağlantı noktası numarasını görmüyorsanız, el ile ekleyin.
 
 4. Tıklayın **Yenile**.
     Bazı işlemler görünür görmelisiniz **kullanılabilir işlemler** penceresi.
@@ -231,11 +234,20 @@ Visual Studio sürümünüzle eşleşen uzak Araçlar sürümü indirin.
 
 5. Denetleme **tüm kullanıcıların işlemlerini göster**.
 
-6. Hızlı bir şekilde bulmak için bir işlem adının ilk harfi yazın *dotnet.exe* (için ASP.NET Core).
+6. Uygulamanızı hızlı bir şekilde bulmak için işlem adı ilk harflerini yazın.
 
-   ASP.NET Core uygulaması için önceki işlem adıydı *dnx.exe*.
+    * Seçin **dotnet.exe** (için .NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      Birden çok işlem gösteren varsa **dotnet.exe**, kontrol **kullanıcı adı** sütun. Bazı senaryolarda **kullanıcı adı** sütunda görüntülenir, uygulama havuzu adı gibi **IIS APPPOOL\DefaultAppPool**. Uygulama havuzu bakın, doğru işlemi tanıtmak için kolay bir yolunu yeni bir uygulama havuzu ayıklamak istediğiniz uygulama örneği için adlandırılmış bir gruptur ve ardından kolay bulabileceğinizi **kullanıcı adı** sütun.
+
+    * IIS bazı senaryolarda, uygulama adınız işlem listesinde gibi bulabilirsiniz **MyASPApp.exe**. Bunun yerine bu işleme iliştirilebilir.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Tıklayın **ekleme**.
 

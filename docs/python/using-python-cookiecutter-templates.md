@@ -3,19 +3,19 @@ title: CookieCutter şablonları Python ile kullanma
 description: Visual Studio şablonları Python kodu için keşfetmek ve bu şablonlardan projeler oluşturmak için grafik Cookiecutter uzantısını da destekler.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a5b090c1e833a791593e5332b632d64b832b5cb1
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354779"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366321"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
 
@@ -37,7 +37,7 @@ Cookiecutter giriş sayfasında, aşağıdaki gruplar halinde düzenlenmiş aral
 
 | Grup | Açıklama |
 | --- | --- |
-| **Yüklendi** | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, havuz için bir alt otomatik olarak kopyalanmış olan *~/.cookiecutters*. Tuşlarına basarak seçilen yüklü şablon silebilmeniz için **Sil**. |
+| **Yüklü** | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, havuz için bir alt otomatik olarak kopyalanmış olan *~/.cookiecutters*. Tuşlarına basarak seçilen yüklü şablon silebilmeniz için **Sil**. |
 | **Önerilen** | Şablonlar, önerilen akıştan yüklendi. Varsayılan akış, Microsoft tarafından özenle seçilmiş içeriklerden oluşur. Bkz: [Cookiecutter seçenekleri](#cookiecutter-options) aşağıda akışı özelleştirme ile ilgili ayrıntılar. |
 | **GitHub** | GitHub arama sonuçları cookiecutter anahtar sözcüğü. Github'dan sonuçları gelen geri sayfalandırılmış, daha fazla sonuç mevcutsa **yük daha fazla** listesinin sonunda görünür. |
 | **Özel** | Arama kutusuna özel bir konuma girdikten sonra bu grupta görünür. Yerel diskinizde GitHub deposunu tam yolunu yazın veya bir klasörün tam yolunu kullanabilirsiniz. |
@@ -222,4 +222,4 @@ Hataları çalıştırın:
 
 Kullanan bash (Önemli değil):
 
-- **openstack-dev/cookiecutter**
+- **openstack-geliştirme/cookiecutteru**

@@ -3,26 +3,26 @@ title: Python geliştiricileri için Visual Studio'nun genel bakış
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ac39dc2458e2d1f0acbf73614b6345949a8d98d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790608"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365736"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE Hoş Geldiniz | Python
 
 Visual Studio *tümleşik geliştirme ortamı* bir yaratıcı launching düzenleme, hata ayıklama ve kod test etme ve ardından bir uygulama yayımlama için kullanabileceğiniz Python (ve diğer diller) için bir ortamdır. Bir tümleşik geliştirme ortamı (IDE) birçok yönüyle yazılım geliştirme için kullanılabilen zengin bir programdır. Standart Düzenleyici ve hata ayıklayıcı sağladığımız çoğu IDE'ler sağlamanızı, Visual Studio kod tamamlama içerir, etkileşimli REPL ortamları, araçları ve diğer özellikleri yazılım geliştirme işlemini kolaylaştırmak için.
 
-[![Visual Studio ile Python projesi](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Vbir Python projesi ile Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Bu görüntü, büyük olasılıkla kullanacağınız birkaç anahtar araç pencereleri ve Python Proje Aç ile Visual Studio gösterir:
 
@@ -56,7 +56,7 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 
    ![Visual Studio IntelliSense üye tamamlama](media/code-editing-completions-simple.png)
 
-- [Yeniden Düzenleme](refactoring-python-code.md)
+- [Yeniden Düzenle](refactoring-python-code.md)
 
    Kod ve seçerek bir parçasına sağ tıklanarak **hızlı Eylemler ve yeniden düzenlemeler**, Visual Studio sağlar akıllı değişkenleri, yeniden adlandırma gibi işlemler ile değiştirerek yeni bir yönteme bir veya daha fazla kod satırlarını ayıklanıyor Yöntem parametreleri ve daha fazlasını sırası.
 
@@ -129,7 +129,7 @@ Visual Studio yazılım geliştirme sırasında daha üretken olmanıza yardımc
 Aşağıdaki hızlı başlangıçlarını veya öğreticilerini birini izleyerek daha fazla Visual Studio'da Python'ı keşfedin:
 
 > [!div class="nextstepaction"]
-> [Hızlı Başlangıç: Flask ile web uygulaması oluşturma](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Hızlı Başlangıç: Flask ile bir web uygulaması oluşturma](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Visual Studio'da Python ile çalışma](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

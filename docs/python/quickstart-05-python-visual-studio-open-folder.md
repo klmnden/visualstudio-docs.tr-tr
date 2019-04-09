@@ -3,20 +3,20 @@ title: Hızlı Başlangıç - Python kodu klasörünü açın
 description: Bu hızlı başlangıçta, açın ve Visual Studio projesi (Visual Studio 2019 yalnızca) kullanmadan bir klasörden Python kodunu çalıştırma.
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354914"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366126"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Hızlı Başlangıç: Python kodunu bir klasörde açma ve çalıştırma
 

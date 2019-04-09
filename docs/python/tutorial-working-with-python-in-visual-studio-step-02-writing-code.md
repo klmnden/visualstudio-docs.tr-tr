@@ -4,19 +4,19 @@ titleSuffix: ''
 description: 2. adımı çekirdek kılavuzun Visual Studio'da kod düzenleme ve bir proje çalıştırma dahil olmak üzere, Python özellikleri.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843097"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366438"
 ---
 # <a name="step-2-write-and-run-code"></a>2. Adım: Yazma ve kod çalıştırma
 
@@ -94,6 +94,6 @@ Ancak **Çözüm Gezgini** proje dosyaları, yönettiği yerdir *Düzenleyicisi*
 ## <a name="go-deeper"></a>Daha ayrıntılı şekilde inceleyin
 
 - [Kodu düzenleme](editing-python-code-in-visual-studio.md)
-- [Biçim Kodu](formatting-python-code.md)
+- [Kodu biçimlendirme](formatting-python-code.md)
 - [Kodu yeniden düzenleme](refactoring-python-code.md)
 - [PyLint kullanma](linting-python-code.md)

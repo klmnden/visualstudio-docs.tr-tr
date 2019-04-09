@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723259"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366819"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>İzleme ve QuickWatch değişkenlerle izleyin
 
@@ -91,6 +91,19 @@ Hata ayıklayıcıda tarafından tanınan herhangi bir geçerli ifade inceleyebi
 ![İfade hatası izleyin](../debugger/media/watchexpressionerror.png "ifade hatası izleyin")
 
 İki dalgalı çizgi simgesine daire görünebilir **Watch** penceresi. Bu simge, hata ayıklayıcı olası iş parçacıkları arası bağımlılık nedeniyle ifadeyi değerlendirmez anlamına gelir. Diğer iş parçacıklarını geçici olarak çalıştırmayı uygulamanıza kod değerlendirme gerektirir, ancak kesme modunda olduğundan, uygulamanızı tüm iş parçacıkları genellikle durdurulur. Diğer iş parçacıklarını geçici olarak çalışmasına izin vererek olabilir beklenmeyen etkileri durumunu uygulamanızı ve hata ayıklayıcı kesme noktaları ve bu iş parçacıklarında özel durumlar gibi olayları yoksay.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>İzleme penceresinde arayın
+
+Ad ve değer türü sütunlarını anahtar sözcükleri arayabilirsiniz **Watch** her bir pencere arama çubuğunu kullanarak penceresi. ENTER tuşuna basın veya bir arama yürütmek için okları seçin. Devam eden bir arama iptal etmek için arama çubuğuna "x" simgesini seçin.
+
+Sol ve sağ ok tuşlarını kullanın (Shift + F3 ve F3 sırasıyla) arasında gezinmek için eşleşme bulunamadı.
+
+![İzle penceresine aramaya](../debugger/media/ee-search-watch.png "Gözcü penceresi içinde arama")
+
+Aramanızı daha az veya kapsamlı kullanmasına olanak **derin arama** en üstündeki açılan **Watch** içinde arama yapmak istediğiniz kaç düzey derinlikte seçmek için Pencere iç içe nesneler. 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> Gözcü değerlerini yenileme
 
@@ -279,7 +292,7 @@ Gözlemlemek için `a` değişkeni
 1. Hata ayıklamaya devam et. Değişkeninde inceleyebileceğiniz **Watch** penceresi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
+- [Hata ayıklama nedir?](../debugger/what-is-debugging.md)
 - [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)
 - [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
-- [Hata ayıklayıcısı pencereleri](../debugger/debugger-windows.md)
+- [Hata ayıklayıcı pencereleri](../debugger/debugger-windows.md)

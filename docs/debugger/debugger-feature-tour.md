@@ -1,8 +1,8 @@
 ---
-title: Visual Studio kullanarak uygulama hatalarını ayıklama
+title: Hata ayıklayıcıya ilk bakış
 description: Visual Studio hata ayıklayıcısını kullanarak uygulamalarda hata ayıklamaya başlama
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea3f5351ae9aeeb2ca0eb0793c7c113f143197c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856612"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366776"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcı ilk bakış
 

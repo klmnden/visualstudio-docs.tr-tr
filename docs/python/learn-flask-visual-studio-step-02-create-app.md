@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio projeleri, özellikle bir uygulama oluşturma ve görünümleri ve şablonlar kullanma adımları bağlamında Flask temel bilgileri bir kılavuz.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912811"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366607"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2. Adım: Görünümleri ve şablonların ile bir Flask uygulaması oluşturma
 

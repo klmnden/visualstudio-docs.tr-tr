@@ -3,19 +3,19 @@ title: Python kodu ölçü performansı
 description: CPython tabanlı yorumlayıcılarını kullanırken Python kodunda hata ayıklama performansını denetlemek için Visual Studio profil oluşturucu kullanın.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 840ebd6d5341bd38fb8961f4ead15fe5181e1ca3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149633"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366984"
 ---
 # <a name="profile-python-code"></a>Profil Python kodu
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355730"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366477"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Bir uzak IIS bilgisayarında ASP.NET hatalarını uzaktan ayıklama
 IIS'ye dağıtılan bir ASP.NET uygulamasında hata ayıklamak için yükleme ve uzak Araçlar, uygulamanızın dağıtıldığı bilgisayarda çalıştırın ve ardından Visual Studio'dan çalışan uygulamanıza ekleyin.
@@ -202,23 +202,35 @@ Uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırma hakkında daha fa
     > [!TIP]
     > Visual Studio 2017 ve sonraki sürümlerinde, daha önce ekli kullanarak aynı işleme iliştirebilirsiniz **hata ayıklama > İliştir...** (Shift + Alt + P).
 
-3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >: bağlantı noktası**.
+3. Niteleyici alanın ayarlanacağı  **\<uzak bilgisayar adı >** basın **Enter**.
+
+    Visual Studio biçiminde görünür bilgisayar adı gerekli bağlantı noktası eklediğini doğrulayın:  **\<uzak bilgisayar adı >: bağlantı noktası**
 
     ::: moniker range=">=vs-2019"
-    **\<Uzak bilgisayar adı >: 4024** Visual Studio 2019 tarihinde
+    Visual Studio 2019 üzerinde görmelisiniz  **\<uzak bilgisayar adı >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<Uzak bilgisayar adı >: 4022** Visual Studio 2017
+    Visual Studio 2017'de görmelisiniz  **\<uzak bilgisayar adı >: 4022**
     ::: moniker-end
+    Bağlantı noktası gereklidir. Bağlantı noktası numarasını görmüyorsanız, el ile ekleyin.
+
 4. Tıklayın **Yenile**.
     Bazı işlemler görünür görmelisiniz **kullanılabilir işlemler** penceresi.
 
     Herhangi bir işlem görmüyorsanız (bağlantı noktası gereklidir) uzak bilgisayar adı yerine IP adresini kullanarak deneyin. Kullanabileceğiniz `ipconfig` IPv4 adresini almak için komut satırında.
 
 5. Denetleme **tüm kullanıcıların işlemlerini göster**.
+
 6. Hızlı bir şekilde bulmak için bir işlem adının ilk harfi yazın **w3wp.exe** ASP.NET 4.5 için.
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    Birden çok işlem gösteren varsa **w3wp.exe**, kontrol **kullanıcı adı** sütun. Bazı senaryolarda **kullanıcı adı** sütunda görüntülenir, uygulama havuzu adı gibi **IIS APPPOOL\DefaultAppPool**. Uygulama havuzu bakın, doğru işlemi tanıtmak için kolay bir yolunu yeni bir uygulama havuzu ayıklamak istediğiniz uygulama örneği için adlandırılmış bir gruptur ve ardından kolay bulabileceğinizi **kullanıcı adı** sütun.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Tıklayın **ekleme**
 

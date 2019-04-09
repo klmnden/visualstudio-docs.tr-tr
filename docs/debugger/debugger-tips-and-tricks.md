@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526366"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366308"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -106,7 +106,7 @@ Dize Görselleştirici bir dize dize türüne bağlı olarak biçimlendirilmiş 
 
 ![JSON dizesi Görselleştirici](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Birkaç diğer türleri için hata ayıklayıcı pencerelerinde görüntülenen WPF nesneleri gibi görselleştiriciler da açabilirsiniz.
+Birkaç diğer türleri için hata ayıklayıcı pencerelerinde görüntülenen DataSet ve DataTable nesneleri gibi yerleşik Görselleştirici da açabilirsiniz.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Koda işlenen özel durumlar üzerinde kesme
 

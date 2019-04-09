@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636911"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366555"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Otolar ve yerel öğeler pencerelerinde değişkenleri denetleyin
 
@@ -59,6 +59,19 @@ Yerel C++ kod içinde bir değişken adının bağlamını nitelemeniz gerekebil
 >-   Bazı ifadelerin değerlendirilmesi bir değişkenin değerini değiştirebilir veya aksi halde, programınızın durumunu etkileyebilir. Örneğin, değerlendirme `var1 = ++var2` hem değerini değiştirir `var1` ve `var2`. Bu deyimler olduğu söylenir [yan etkileri](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Yan etkiler, bunları uyumlu değilse, beklenmeyen sonuçlara neden olabilir.
 >
 >-   Kayan nokta değerlerini düzenlemek, kesirli bileşenlerin ondalıktan ikiliye dönüştürülmesi nedeniyle küçük yanlışlıklara neden olabilir. Görünüşte zararsız bir düzenleme bitler kayan nokta değişkenindeki bazı değişikliklere neden olabilir.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Arama Otomatikler veya Yereller penceresinde
+
+Ad ve değer türü sütunlarını anahtar sözcükleri arayabilirsiniz **Otolar** veya **Yereller** her bir pencere arama çubuğunu kullanarak penceresi. ENTER tuşuna basın veya bir arama yürütmek için okları seçin. Devam eden bir arama iptal etmek için arama çubuğuna "x" simgesini seçin.
+
+Sol ve sağ ok tuşlarını kullanın (Shift + F3 ve F3 sırasıyla) arasında gezinmek için eşleşme bulunamadı.
+
+![Arama Yereller penceresinde](../debugger/media/ee-search-locals.png "Yereller penceresinde arama")
+
+Aramanızı daha az veya kapsamlı kullanmasına olanak **derin arama** en üstündeki açılan **Otolar** veya **Yereller** içinde arama yapmak istediğiniz kaç düzey derinlikte seçmek için Pencere iç içe nesneler. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Bağlam otomatik değişkenler veya yerel öğeler penceresi için değiştirin
 
@@ -150,7 +163,7 @@ Dönüş değerleri görmek için `sumVars()` ve `subtractVars()` yöntemini ça
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
+- [Hata ayıklama nedir?](../debugger/what-is-debugging.md)
 - [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)
 - [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
-- [Hata ayıklayıcısı pencereleri](../debugger/debugger-windows.md)
+- [Hata ayıklayıcı pencereleri](../debugger/debugger-windows.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336d177ec939ca0f7dfdc32535e2d2e92b0f04d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686515"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366854"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'sözde değişken
 Sözde değişkenler, bir değişken penceresinde belirli bilgileri görüntülemek için kullanılan terimler veya **QuickWatch** iletişim kutusu. Normal bir değişken girebilirsiniz aynı şekilde sahte girebilirsiniz. Sözde değişken değil değişkenler, ancak ve programınızdaki değişken adlarına karşılık gelmez.
@@ -32,7 +32,7 @@ Sözde değişkenler, bir değişken penceresinde belirli bilgileri görüntüle
 
 `$handles`
 
- Yerel kod içinde bu tabloda gösterilen pseudovariables'ı kullanabilirsiniz:
+ Yerel kodda aşağıdaki tabloda gösterilen pseudovariables'ı kullanabilirsiniz:
 
 |Sözde değişkeni|İşlev|
 |--------------------|--------------|
@@ -47,24 +47,26 @@ Sözde değişkenler, bir değişken penceresinde belirli bilgileri görüntüle
 |`$clk`|Saat döngüsünde zamanı görüntüler.|
 |`$user`|Uygulamayı çalıştıran hesap için hesap bilgileriyle bir yapıyı görüntüler. Güvenlik nedeniyle parola bilgisi görüntülenmez.|
 |`$exceptionstack`|Geçerli Windows çalışma zamanı özel durum yığın izleme görüntüler. `$ exceptionstack` UWP uygulamalarında çalışır. `$ exceptionstack` C++ ve SEH özel durumları için desteklenmiyor|
-|`$ReturnValue`|.NET Framework yöntemi dönüş değerini görüntüler.|
+|`$returnvalue`|.NET Framework yöntemi dönüş değerini görüntüler.|
 
- C# ve Visual Basic'te bu tabloda gösterilen pseudovariables'ı kullanabilirsiniz:
+ İçinde C# aşağıdaki tabloda gösterilen pseudovariables'ı kullanabilirsiniz:
 
 |Sözde değişkeni|İşlev|
 |--------------------|--------------|
-|`$exception`|Son özel durum bilgilerini görüntüler. Hiçbir özel durum oluştuysa, değerlendirme `$exception` bir hata iletisi görüntüler.<br /><br /> Visual C# içinde yalnızca, özel durum Yardımcısı'nı devre dışı bırakıldığında `$exception` otomatik olarak eklenir **Yereller** bir özel durum oluştuğunda penceresi.|
+|`$exception`|Son özel durum bilgilerini görüntüler. Hiçbir özel durum oluştuysa, değerlendirme `$exception` bir hata iletisi görüntüler.<br /><br /> Özel durum Yardımcısı'nı devre dışı bırakıldığında `$exception` otomatik olarak eklenir **Yereller** bir özel durum oluştuğunda penceresi.|
 |`$user`|Uygulamayı çalıştıran hesap için hesap bilgileriyle bir yapıyı görüntüler. Güvenlik nedeniyle parola bilgisi görüntülenmez.|
+|`$returnvalue`|.NET Framework yöntemi dönüş değerini görüntüler.|
 
  Visual Basic'te, aşağıdaki tabloda gösterilen pseudovariables'ı kullanabilirsiniz:
 
 |Sözde değişkeni|İşlev|
 |--------------------|--------------|
+|`$exception`|Son özel durum bilgilerini görüntüler. Hiçbir özel durum oluştuysa, değerlendirme `$exception` bir hata iletisi görüntüler.|
 |`$delete` veya `$$delete`|Oluşturulan örtük değişkeni siler **hemen** penceresi. Söz dizimi `$delete,` *değişkeni* veya`$delete,` *değişkeni*`.`|
 |`$objectids` veya `$listobjectids`|Tüm etkin nesne Kimlikleri'ni belirtilen ifadenin alt öğesi olarak görüntüler. Söz dizimi `$objectid,` *ifade* veya`$listobjectids,` *ifadesi*`.`|
 |`$` *N* `#`|Eşit nesne Kimliğine sahip nesneyi görüntüler *N*.|
 |`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne düğümü `IDynamicMetaObjectProvider`. Arabirim. Söz dizimi `$dynamic,` *nesne*. Bu özellik yalnızca .NET Framework sürüm 4 kullanan kod için geçerlidir.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)
-- [Değişken Windows](../debugger/debugger-windows.md)
+- [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
+- [Değişken Pencereler](../debugger/debugger-windows.md)

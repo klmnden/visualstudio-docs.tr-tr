@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio, Windows (PTVS Visual Studio için Python araçları olarak da bilinir) üzerinde en iyi Python IDE yapmadan Python özelliklerinin özeti.
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195014"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366883"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Windows üzerinde Visual Studio'da Python ile çalışma
 
@@ -53,7 +53,7 @@ Kullanım **açık etkileşimli pencere** Python etkileşimli olarak Visual Stud
 
 Daha fazla bilgi için:
 
-- [Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
+- [Python ortamlarını yönetme](managing-python-environments-in-visual-studio.md)
 - [Python ortamları başvurusu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Zengin düzenleme, IntelliSense ve kod kavrama
@@ -98,7 +98,7 @@ Visual Studio zamanla büyüdükçe, bir proje karmaşıklığını yönetmenize
 
 Proje ve öğe şablonlarını projeleri ve dosyaları farklı türleri ayarlama, değerli zaman tasarrufu sağlar ve karmaşık ve hatalara eğilimli ayrıntılarını yönetmesini oluşturma işlemini otomatik hale getirin. Visual Studio, web, Azure, veri bilimi, konsol ve projeleri, dosyaları Python sınıfları, birim testleri, Azure web yapılandırması, HTML ve hatta Django uygulamaları gibi şablonları yanı sıra diğer türleri için şablonlar sağlar.
 
-[![Visual Studio'da Python proje ve öğe şablonları](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Python proje ve öğe şablonları Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Daha fazla bilgi için:
 
@@ -130,7 +130,7 @@ Daha fazla bilgi için:
 
 Profil oluşturma nasıl uygulamanızdaki zaman harcandığını keşfediyor. Visual Studio ile yorumlayıcılarını CPython tabanlı profil oluşturmayı destekler ve performans profil oluşturma farklı çalıştırma arasında karşılaştırma özelliğini içerir.
 
-[![Python projesi için Visual Studio profil oluşturucu sonuç](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VVisual Studio profil oluşturucu sonuçlarını Python projesi](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Daha fazla bilgi için:
 
@@ -156,17 +156,17 @@ Daha fazla bilgi için [Python için Azure SDK'sı](/python/azure/?view=azure-py
 
 ## <a name="questions-and-answers"></a>Sorular ve yanıtlar
 
-**SORU. Python desteği, Mac için Visual Studio ile kullanılabilir?**
+**S. Python desteği, Mac için Visual Studio ile kullanılabilir?**
 
-BİR. Şu anda değil, ancak istek en fazla oy verebilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Mac için Visual Studio](/visualstudio/mac/) belgeleri destekleyen geliştirme geçerli türlerini tanımlar. Visual Studio Code sırada, Windows, Mac ve Linux'ta [kullanılabilir uzantıları aracılığıyla Python ile de çalışır](https://code.visualstudio.com/docs/languages/python).
+A. Şu anda değil, ancak istek en fazla oy verebilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Mac için Visual Studio](/visualstudio/mac/) belgeleri destekleyen geliştirme geçerli türlerini tanımlar. Visual Studio Code sırada, Windows, Mac ve Linux'ta [kullanılabilir uzantıları aracılığıyla Python ile de çalışır](https://code.visualstudio.com/docs/languages/python).
 
-**SORU. Python ile kullanıcı arabirimini derlemek için ne kullanabilirim?**
+**S. Python ile kullanıcı arabirimini derlemek için ne kullanabilirim?**
 
-BİR. Bu alandaki ana tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), bilinen Python için bağlamaları ile [PySide (resmi bağlama)](https://wiki.qt.io/PySide) (Ayrıca bkz: [PySide indirir](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda, herhangi belirli kullanıcı Arabirimi geliştirme araçları Visual Studio'da Python desteği içermez.
+A. Bu alandaki ana tekliftir [Qt proje](https://www.qt.io/qt-for-application-development/), bilinen Python için bağlamaları ile [PySide (resmi bağlama)](https://wiki.qt.io/PySide) (Ayrıca bkz: [PySide indirir](https://download.qt.io/official_releases/pyside/.)) ve [ PyQt](https://wiki.python.org/moin/PyQt). Şu anda, herhangi belirli kullanıcı Arabirimi geliştirme araçları Visual Studio'da Python desteği içermez.
 
-**SORU. Tek başına yürütülebilir dosya bir Python projesi oluşturabilir?**
+**S. Tek başına yürütülebilir dosya bir Python projesi oluşturabilir?**
 
-BİR. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için farklı yollardan Python topluluk tarafından sağlanan [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
+A. Python ile isteğe bağlı olarak Visual Studio ve web sunucuları gibi uygun bir Python özellikli ortam kod çalıştırılır, yorumlanan bir dil genellikle var. Visual Studio'nun kendisi, aslında bir programla katıştırılmış bir Python yorumlayıcısı anlamına gelir bir tek başına yürütülebilir oluşturmak için Araçlar şu anda sağlamaz. Ancak, yürütülebilir dosyalar üzerinde açıklandığı gibi oluşturmak için farklı yollardan Python topluluk tarafından sağlanan [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [kullanarak CPython'ın gömülebilir zip dosyası](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
 
 ::: moniker range="<=vs-2017"
 

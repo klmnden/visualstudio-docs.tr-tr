@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794247"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366620"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Kod ve Metin Düzenleyici'de Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ Visual Studio Düzenleyicisi, yazmak ve kodunuzu yönetmenizi kolaylaştıran bi
 |Belgeyi doğrula|JScript kod dosyalarını doğrular.|  
 |Yatay boşluğu Sil|Sekme veya boşluk geçerli satırın sonunda siler.|  
 |Boşluğu görüntüle|Boşlukları Kabarık noktalar olarak, sekmeleri oklar olarak görüntüler. Bir dosyanın sonu dikdörtgen bir simge olarak görüntülenir. Varsa **sözcük kaydırma için Araçlar/Seçenekler/metin düzenleyici Languages/Word Wrap/Show görünür glyph'leri** olduğu belirlenirse, o glyph de gösterilir.|  
-|Sözcük kaydırma|Tüm satırların kod penceresinde görünür olmasını belgeye neden olur. Sözcük kaydırmayı metin düzenleyici tüm diller ayarlarında kapatıp açabilirsiniz (**Araçlar/Seçenekler/metin düzenleyici dilleri**).|  
+|Sözcük Kaydırma|Tüm satırların kod penceresinde görünür olmasını belgeye neden olur. Sözcük kaydırmayı metin düzenleyici tüm diller ayarlarında kapatıp açabilirsiniz (**Araçlar/Seçenekler/metin düzenleyici dilleri**).|  
 |Seçimi işletilir satıra Çevir|Seçime veya geçerli satıra yorum karakterleri ekler.|  
 |Seçimi açıklama satırı yap|Seçimden veya geçerli satıra yorum karakterleri kaldırır.|  
 |Satır Girintisini Artır|Bir sekme (veya eşdeğer boşluk) seçilen satırlardan veya geçerli satırı ekler.|  
@@ -174,7 +174,7 @@ Visual Studio'nun "Gitmek için" komut belirtilen öğeleri, kod dosyaları, dos
 
 ### <a name="filter-your-search"></a>Aramanızı filtreleyin
 
-Yalnızca Simgeler kodu için arama sınırlamak için gitmek için sorgu ile yazdığınızdan bir "@" karakteri. Örneğin, arama `@application`, gezinmek için görüntüler, örneğin, yalnızca "uygulama" sözcüğünü içeren sınıflar.
+Yalnızca Simgeler kodu için arama sınırlamak için gitmek için sorgu ile yazdığınızdan bir "\@" karakter. Örneğin, arama `@application`, gezinmek için görüntüler, örneğin, yalnızca "uygulama" sözcüğünü içeren sınıflar.
 
 Kodunuzda camel casing kullanır, yalnızca büyük harf kod öğe adı girerek kod öğeleri daha hızlı bir şekilde bulabilirsiniz. Örneğin, kodunuzu adlı bir bileşen varsa `ViewSwitcher`, yalnızca büyük harf adı girerek bulabilirsiniz (`"VS"`) giderek penceresinde.
 
@@ -189,9 +189,9 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
  Dile özgü Düzenleyici seçenekleri hakkında daha fazla bilgi için aşağıdakilere bakın:  
 
--   [Visual Basic ayarları](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+-   [Visual Basic Ayarları](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [C# için Visual Studio geliştirme ortamını kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
@@ -203,7 +203,7 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 -   [Anahat Oluşturma](../ide/outlining.md)  
 
--   [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)  
+-   [Yeniden Düzenle](../ide/refactoring-in-visual-studio.md)  
 
 -   [Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)  
 

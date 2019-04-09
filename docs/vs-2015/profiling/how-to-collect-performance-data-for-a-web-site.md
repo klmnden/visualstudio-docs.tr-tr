@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766158"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366737"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: Bir Web sitesi için performans verilerini topla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
   
    - Bir dosya tabanlı Web sitesi için dosya / / / gibi bir yol yazın**c:\WebSites\MySite\default.aspx**. Bu neden [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama profili oluşturulacak c:\webSites\MySite ve sayfa bulunan http://localhost:nnnn/MySite/default.aspx oturumu başlatmak için Internet Explorer'da başlatılacak.  
   
-   - Örneğin URL'yi yazın, JavaScript verilerini toplamak istediğiniz dış siteleri için http://www.contoso.com.  
+   - Dış siteleri için örneğin http URL'sini yazın, JavaScript veri toplamayı arzuladığınız:\//www.contoso.com.  
   
      Daha fazla bilgi için özellik sayfaları görüntülemek bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] hedef ikili.  
   
@@ -103,7 +103,7 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
      Profil Oluşturucu veri dosyasını oluşturur ve veri Özet görünümünü görüntüler [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ana penceresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel bakış](../profiling/overviews-performance-tools.md)   
- [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
- [İzleme veri değerlerini anlama](../profiling/understanding-instrumentation-data-values.md)   
+ ['a Genel Bakış](../profiling/overviews-performance-tools.md)   
+ [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)   
+ [İzleme Veri Değerlerini Anlama](../profiling/understanding-instrumentation-data-values.md)   
  [Örnekleme Veri Değerlerini Anlama](../profiling/understanding-sampling-data-values.md)
