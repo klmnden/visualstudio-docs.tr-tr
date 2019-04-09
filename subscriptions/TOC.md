@@ -13,7 +13,7 @@
 #### [Kullanılabilir Yazılım İndirmelerinin Listesi](software-download-list.md)
 ### [Ürün Anahtarlarını Alma ve Yönetme](product-keys.md)
 ### Visual Studio Dev Essentials
-#### [Visual Dev Essentials’a Katılma](join-dev-essentials.md)
+#### [Visual Studio Dev Essentials’a Katılma](join-dev-essentials.md)
 #### [Visual Studio Dev Essentials’tan Çıkma](leave-vsde.md)
 ### [Abone Avantajları](subscriber-benefits.md)
 ## Abone Avantajlarını Kullanma
@@ -22,12 +22,13 @@
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure Kredisi](vs-azure.md)
 #### [Office 365 Geliştirici aboneliği](vs-office-dev.md)
+#### [RStudio](vs-rstudio.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
-#### [Enterprise Mobility & Security](vs-ems.md)
+#### [Enterprise Mobility + Security](vs-ems.md)
 #### [Windows Geliştirici Hesabı](vs-windows-dev.md)
 #### [Office 365 aboneliği](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
@@ -74,7 +75,7 @@
 ## Visual Studio Abonelikleri Alma
 ### [Abonelik Seçeneklerini Karşılaştırma](https://visualstudio.microsoft.com/vs/pricing)
 ### Bulut Abonelikleri Satın Alma
-#### [Genel bakış](vscloud-overview.md)
+#### [Genel Bakış](vscloud-overview.md)
 #### [Faturalandırma hakkında SSS](vscloud-billing-faq.md)
 #### [CSP’ler için satın alma](vscloud-csp.md)
 ### Programlar üzerinden sunulan abonelikler
