@@ -63,7 +63,7 @@ Desteklenen dil dizeleri (büyük/küçük harfe duyarlı değil):
 
 -   JavaScript
 
--   CSharp veya c#
+-   CSharp veya C#
 
 -   cplusplus visualc ++ ya da c ++
 

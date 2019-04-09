@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223734"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232755"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod ölçümleri verileri üretme
 
-Kod ölçümleri sonuçları bir veya daha fazla proje veya bütün bir çözüm için oluşturabilirsiniz. Kod ölçümleri kullanılabilir Visual Studio etkileşimli geliştirme ortamında (IDE) ve için C# ve Visual Basic projeleri, komut satırına.
+Kod ölçüm verileri üç şekilde oluşturabilirsiniz:
 
-Ayrıca, yükleyebileceğiniz bir [NuGet paketini](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) dört kod ölçümlerini içeren [Çözümleyicisi](roslyn-analyzers-overview.md) kuralları: CA1501, CA1502, CA1505 ve CA1506. Bu kurallar varsayılan olarak devre dışıdır, ancak bunları etkinleştirebilirsiniz **Çözüm Gezgini** veya bir [kural kümesi](using-rule-sets-to-group-code-analysis-rules.md) dosya.
+- Yükleyerek [FxCop Çözümleyicileri](#fxcop-analyzers-code-metrics-rules) ve içerdiği dört kod ölçümleri (Bakım) kurallarını etkinleştirme.
 
-## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE kod ölçümleri
+- Seçerek [ **Çözümle** > **kod ölçümlerini Hesapla** ](#calculate-code-metrics-menu-command) Visual Studio'daki menü komutu.
+
+- Gelen [komut satırı](#command-line-code-metrics) için C# ve Visual Basic projeleri.
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop Çözümleyicileri kod ölçümleri kuralları
+
+[FxCopAnalyzers NuGet paketini](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) birkaç kod ölçümleri içerir [Çözümleyicisi](roslyn-analyzers-overview.md) kuralları:
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+Bu kurallar varsayılan olarak devre dışıdır, ancak bunları etkinleştirebilirsiniz [ **Çözüm Gezgini** ](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) veya bir [kural kümesi](using-rule-sets-to-group-code-analysis-rules.md) dosya. Örneğin, bir uyarı olarak CA1502 kuralını etkinleştirmek için .ruleset dosyası şu girdiyi içerecektir:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>Yapılandırma
+
+Başlangıçtan FxCop Çözümleyicileri kod ölçümleri kurallarında yangın paketini eşikler yapılandırabilirsiniz.
+
+1. Bir metin dosyası oluşturun. Bu ad bir örnek olarak, *CodeMetricsConfig.txt*.
+
+2. İstediğiniz eşikleri aşağıdaki biçimde metin dosyasına ekleyin:
+
+   ```txt
+   CA1502: 10
+   ```
+
+   Bu örnekte, kural [CA1502](ca1502-avoid-excessive-complexity.md) 10'dan büyük bir yöntemin döngüzel karmaşıklığına için yapılandırılır.
+
+3. İçinde **özellikleri** penceresi Visual Studio'nun veya proje dosyasında işaretlemek yapılandırma dosyasının derleme eylemini [ **AdditionalFiles**](../ide/build-actions.md#build-action-values). Örneğin:
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>Menü komutunu kod ölçümlerini Hesapla
 
 Bir veya tüm açık projeleriniz için kod ölçümleri kullanarak IDE'de oluşturma **Çözümle** > **kod ölçümlerini Hesapla** menüsü.
 
@@ -54,7 +100,8 @@ Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görünt�
 > **Kod ölçümlerini Hesapla** komutu, .NET Core ve .NET Standard projeleri için çalışmaz. .NET Core veya .NET Standard projesi için kod ölçümlerini hesapla için şunları yapabilirsiniz:
 >
 > - kod ölçümleri hesaplayın [komut satırı](#command-line-code-metrics) yerine
-> - Visual Studio 2019 için yükseltme
+>
+> - Yükseltme [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 

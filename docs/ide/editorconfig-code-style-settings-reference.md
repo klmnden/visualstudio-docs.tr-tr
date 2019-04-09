@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868384"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232807"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -140,10 +140,10 @@ Kural adı, geçerli programlama dilleri ve varsayılan değerleri aşağıdaki 
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan değer |
 | ----------- | -------------------- | ----------------------|
-| dotnet_style_qualification_for_field | C# ve Visual Basic | false:none |
-| dotnet_style_qualification_for_property | C# ve Visual Basic | false:none |
-| dotnet_style_qualification_for_method | C# ve Visual Basic | false:none |
-| dotnet_style_qualification_for_event | C# ve Visual Basic | false:none |
+| dotnet_style_qualification_for_field | C# ve Visual Basic | false: sessiz |
+| dotnet_style_qualification_for_property | C# ve Visual Basic | false: sessiz |
+| dotnet_style_qualification_for_method | C# ve Visual Basic | false: sessiz |
+| dotnet_style_qualification_for_event | C# ve Visual Basic | false: sessiz |
 
 **DotNet\_stili\_nitelik\_for_field**
 
@@ -168,7 +168,7 @@ Me.capacity = 0
 capacity = 0
 ```
 
-**dotnet\_style\_qualification\_for_property**
+**DotNet\_stili\_nitelik\_for_property**
 
 - Bu kural ayarlandığında **true**, başında için özellikleri tercih et `this.` C# veya `Me.` Visual Basic'te.
 - Bu kural ayarlandığında **false**, özellikleri tercih et _değil_ başında için `this.` veya `Me.`.
@@ -256,8 +256,8 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 ve IDE0014 | C# ve Visual Basic | true:none |
-| dotnet_style_predefined_type_for_member_access | IDE0013 ve IDE0015 | C# ve Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 ve IDE0014 | C# ve Visual Basic | true:silent |
+| dotnet_style_predefined_type_for_member_access | IDE0013 ve IDE0015 | C# ve Visual Basic | true:silent |
 
 **DotNet\_stili\_önceden tanımlanmış\_türü\_için\_Yereller\_parameters_members**
 
@@ -322,12 +322,12 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:none | 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, dahili, statik ve extern, yeni, virtual, abstract, korumalı, geçersiz kılma, salt okunur, güvenli, geçici, zaman uyumsuz: yok | 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, genel, arkadaş NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeler, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölgeler, salt okunur, WriteOnly, boyutu, Const, WithEvents, daraltma, özel, genişletme Zaman uyumsuz: yok | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# ve Visual Basic | for_non_interface_members:silent | 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | Genel, özel, korumalı, dahili, statik ve extern, yeni, virtual, abstract, korumalı, geçersiz kılma, salt okunur, güvenli, geçici async:silent | 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, genel, arkadaş NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeler, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölgeler, salt okunur, WriteOnly, boyutu, Const, WithEvents, daraltma, özel, genişletme Async:silent | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# ve Visual Basic | TRUE: öneri | 15.7 |
 
-**dotnet\_style\_require\_accessibility_modifiers**
+**DotNet\_stili\_gerektiren\_accessibility_modifiers**
 
 Bu kural kabul etmediği bir **true** veya **false** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
 
@@ -430,10 +430,10 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ---- |
-| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity: yok | 15.8 |
-| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity: yok | 15.8 |
-| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity: yok | 15.8 |
-| dotnet_style_parentheses_in_other_operators | IDE0047 | C# ve Visual Basic | never_if_unnecessary: yok | 15.8 |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# ve Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# ve Visual Basic | never_if_unnecessary:silent | 15.8 |
 
 **DotNet\_stili\_parantez\_içinde\_aritmetik\_binary_operators**
 
@@ -532,10 +532,10 @@ Bu kurallar, görünebilir bir *.editorconfig* aşağıdaki gibi:
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
 #### <a name="expression_level"></a>İfade düzeyi tercihleri
@@ -551,10 +551,10 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + ve Visual Basic 15 + | TRUE: öneri | İlk yayın |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + ve Visual Basic 15 + | TRUE: öneri | 15.6 |
 | dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# ve Visual Basic | TRUE: öneri | 15.6 |
-| dotnet_style_prefer_auto_properties | IDE0032 | C# ve Visual Basic | true:none | 15.7 |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# ve Visual Basic | true:silent | 15.7 |
 | dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# ve Visual Basic | TRUE: öneri | 15.7 |
-| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# ve Visual Basic | true:none | 15.8 |
-| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# ve Visual Basic | true:none | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# ve Visual Basic | true:silent | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# ve Visual Basic | true:silent | 15.8 |
 
 **DotNet\_stili\_object_initializer**
 
@@ -637,7 +637,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**dotnet\_style\_prefer\_inferred\_tuple_names**
+**DotNet\_stili\_tercih\_çıkarılan\_tuple_names**
 
 - Bu kural ayarlandığında **true**, gösterilen demet öğesi adlarını tercih et.
 - Bu kural ayarlandığında **false**, açık demet öğesi adlarını tercih et.
@@ -683,7 +683,7 @@ Dim anon = New With {name, age}
 Dim anon = New With {.name = name, .age = age}
 ```
 
-**dotnet\_style\_prefer\_auto\_properties**
+**DotNet\_stili\_tercih\_otomatik\_özellikleri**
 
 - Bu kural ayarlandığında **true**, autoproperties üzerinden özel yedekleme alanlarla özellikleri tercih et.
 - Bu kural ayarlandığında **false**, autoproperties özel yedekleme alanlarla özellikleri tercih et.
@@ -831,7 +831,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
@@ -918,11 +918,11 @@ Kural adı, geçerli programlama dilleri ve varsayılan değerleri aşağıdaki 
 
 | Kural adı | Geçerli diller | Visual Studio varsayılan |
 | ----------- | -------------------- | ----------------------|
-| csharp_style_var_for_built_in_types | C# | true:none |
-| csharp_style_var_when_type_is_apparent | C# | true:none |
-| csharp_style_var_elsewhere | C# | true:none |
+| csharp_style_var_for_built_in_types | C# | true:silent |
+| csharp_style_var_when_type_is_apparent | C# | true:silent |
+| csharp_style_var_elsewhere | C# | true:silent |
 
-**csharp\_style\_var\_for\_built\_in_types**
+**CSharp\_stili\_var\_için\_yerleşik\_in_types**
 
 - Bu kural ayarlandığında **true**, tercih ettiğiniz `var` değişkenler gibi yerleşik sistem türleriyle bildirmek için kullanılan `int`.
 - Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` gibi yerleşik sistem türleriyle değişkenleri bildirmeyi `int`.
@@ -937,7 +937,7 @@ var x = 5;
 int x = 5;
 ```
 
-**csharp\_style\_var\_when\_type\_is_apparent**
+**CSharp\_stili\_var\_olduğunda\_türü\_is_apparent**
 
 - Bu kural ayarlandığında **true**, tercih ettiğiniz `var` zaman türü zaten belirtilen bir bildirimi ifadesinin sağ tarafta.
 - Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` zaman türü zaten belirtilen bir bildirimi ifadesinin sağ tarafta.
@@ -985,14 +985,14 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli dil sürüml
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# 7.0+ | false:none | 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:none | 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:none | 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:none | 15.3 |
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false: sessiz | 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false: sessiz | 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 ve IDE0024 | C# 7.0+ | false: sessiz | 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:silent | 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:silent | 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:silent | 15.3 |
 
-**CSharp\_stili\_ifade\_bodied_methods**
+**csharp\_style\_expression\_bodied_methods**
 
 Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
@@ -1119,9 +1119,9 @@ public int Age { get { return _age; } set { _age = value; } }
 ```EditorConfig
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
@@ -1355,7 +1355,7 @@ Aşağıdaki tabloda, kural adı, kural kimliği, geçerli dil sürümleri, vars
 
 | Kural adı | Kural Kimliği | Geçerli diller | Visual Studio varsayılan | Visual Studio 2017 sürüm |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
+| csharp_prefer_braces | IDE0011 | C# | true:silent | 15.3 |
 
 **CSharp\_tercih\_küme ayraçları**
 
@@ -1377,7 +1377,7 @@ if (test) this.Display();
 ```EditorConfig
 # CSharp code style settings:
 [*.cs]
-csharp_prefer_braces = true:none
+csharp_prefer_braces = true:silent
 ```
 
 ## <a name="formatting-conventions"></a>Biçimlendirme kuralları
@@ -1438,7 +1438,7 @@ Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değer ve Visual 
 | dotnet_sort_system_directives_first | C# ve Visual Basic | true | 15.3 |
 | dotnet_separate_import_directive_groups | C# ve Visual Basic | false | 15.5 |
 
-**dotnet\_sort\_system\_directives_first**
+**DotNet\_sıralama\_sistem\_directives_first**
 
 - Bu kural ayarlandığında **true**, System.* using yönergelerini alfabetik olarak sıralamak ve bunları diğer kullanımları önce yerleştirin.
 - Bu kural ayarlandığında **false**, önce diğer yönergeleri kullanarak System.* yerleştirmeyin yönergeleri kullanarak.
@@ -2229,14 +2229,14 @@ dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = false
 
 # this. preferences
-dotnet_style_qualification_for_field = false:none
-dotnet_style_qualification_for_property = false:none
-dotnet_style_qualification_for_method = false:none
-dotnet_style_qualification_for_event = false:none
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_property = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_event = false:silent
 
 # Language keywords vs BCL types preferences
-dotnet_style_predefined_type_for_locals_parameters_members = true:none
-dotnet_style_predefined_type_for_member_access = true:none
+dotnet_style_predefined_type_for_locals_parameters_members = true:silent
+dotnet_style_predefined_type_for_member_access = true:silent
 
 # Parentheses preferences
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
@@ -2245,7 +2245,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 # Modifier preferences
-dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
 dotnet_style_readonly_field = true:suggestion
 
 # Expression-level preferences
@@ -2282,17 +2282,17 @@ dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 [*.cs]
 # var preferences
-csharp_style_var_for_built_in_types = true:none
-csharp_style_var_when_type_is_apparent = true:none
-csharp_style_var_elsewhere = true:none
+csharp_style_var_for_built_in_types = true:silent
+csharp_style_var_when_type_is_apparent = true:silent
+csharp_style_var_elsewhere = true:silent
 
 # Expression-bodied members
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
-csharp_style_expression_bodied_properties = true:none
-csharp_style_expression_bodied_indexers = true:none
-csharp_style_expression_bodied_accessors = true:none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_accessors = true:silent
 
 # Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -2306,7 +2306,7 @@ csharp_style_conditional_delegate_call = true:suggestion
 csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
 
 # Expression-level preferences
-csharp_prefer_braces = true:none
+csharp_prefer_braces = true:silent
 csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_prefer_simple_default_expression = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion

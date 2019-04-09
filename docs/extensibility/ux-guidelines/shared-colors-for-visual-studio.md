@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31912d5528c38374aafd1212767bfb850a8b976
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723584"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232820"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlama konusunda ya da arabirimi öğeniz benzer özellikleri ile tutarlı olmasını istediğiniz seçin ve renkleri atamak için paket tanım dosyalarında mevcut belirteci adları kullanın. Bu tema eklendiğinde veya güncelleştirildiğinde, otomatik olarak güncelleştirir ve kullanıcı Arabirimi ile genel Visual Studio ortamının tutarlı kalmasını sağlar.
@@ -299,7 +299,7 @@ Sütun üst bilgilerini arka plan, kenarlık, başlık metnini ve kılavuz, süt
 | --- | --- |
 | Arka Plan | Geçirgen |
 | Ön plan (metin) | `Environment.CommandBarTextActive` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Liste öğeleri görüntüle: Etkin durumu**
 
@@ -307,7 +307,7 @@ Sütun üst bilgilerini arka plan, kenarlık, başlık metnini ve kılavuz, süt
 | --- | --- |
 | Arka Plan | `TreeView.SelectedItemActive` |
 | Ön plan (metin) | `TreeView.SelectedItemActiveText` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Liste öğeleri görüntüle: etkin olmayan duruma**
 
@@ -315,7 +315,7 @@ Sütun üst bilgilerini arka plan, kenarlık, başlık metnini ve kılavuz, süt
 | --- | --- |
 | Arka Plan | `TreeView.SelectedItemInactive` |
 | Ön plan (metin) | `TreeView.SelectedItemInactiveText` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 ### <a name="ui-text"></a>UI metni
 
@@ -735,7 +735,7 @@ Bir arama kutusu bazıları birbirini dışlayan olan çeşitli durumları biri 
 | --- | --- |
 | Arka Plan | Yok. |
 | Ön plan (karakter) | `SearchControl.ActionButtonDisabledGlyph` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Odaklanmış arama açılan düğmesi**
 
@@ -873,7 +873,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.Background` |
 | Ön plan (metin) | `TreeView.Background` |
 | Ön plan (karakter) | `TreeView.Glyph` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Ağaç görünümü öğesi: duruma getirin**
 
@@ -884,7 +884,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.Background` |
 | Ön plan (metin) | `TreeView.Background` |
 | Ön plan (karakter) | `TreeView.GlyphMouseOver` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Ağaç görünümü öğesi: durum sürükleyin.**
 
@@ -895,7 +895,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.DragOverItem` |
 | Ön plan (metin) | `TreeView.DragOverItem` |
 | Ön plan (karakter) | `TreeView.DragOverItemGlyph` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Ağaç görünümü öğesi: Seçili, odaklanmış durumu**
 
@@ -917,7 +917,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.SelectedItemInactive` |
 | Ön plan (metin) | `TreeView.SelectedItemInactive` |
 | Ön plan (karakter) | `TreeView.SelectedItemInactiveGlyph` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | Yok. |
 
 **Ağaç görünümü öğesi: durumu odaklı vurgulanan ve seçili**
 
@@ -939,7 +939,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.SelectedItemInactive` |
 | Ön plan (metin) | `TreeView.SelectedItemInactive` |
 | Ön plan (karakter) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | None |
 
 ## <a name="shell-appearance"></a>Shell görünümü
 
@@ -985,7 +985,7 @@ Ortam arka plan iki katmandan oluşur. Tüm IDE kapsayan düz renk alt katmanıd
 | --- | --- |
 | Arka Plan | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-** Komut raf komut çubuğu **
+**Komut raf komut çubuğu**
 
 > Visual Studio 2013'ün açık ve koyu temaları aynı renk değeri kümesine gradyan durdurur.
 
@@ -1008,7 +1008,7 @@ Bildirim Tasarımcısı, Windows 8 ve Windows Phone 8 projeleri bildirim dosyas�
 | Öğe | Belirteç adı: Category.Color |
 | --- | --- |
 | Arka Plan | `ManifestDesigner.TabActive` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | None |
 
 **Bildirim Tasarımcısı seçilen açıklama bölmesi: varsayılan durumu**
 
@@ -1065,10 +1065,10 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 
 | Öğe | Belirteç adı: Category.Color |
 | --- | --- |
-| Arka Plan | Hiçbiri |
+| Arka Plan | None |
 | Ön plan (metin) | `Environment.CommandBarTextActive` |
 | Ön plan (karakter) | `Environment.CommandBarMenuGlyph` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | None |
 
 **Menü başlığı: duruma getirin**
 
@@ -1105,7 +1105,7 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 | Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextInactive` |
 | Ön plan (karakter) | `Environment.CommandBarTextInactive` |
-| Kenarlık | Hiçbiri |
+| Kenarlık | None |
 
 #### <a name="menu-items"></a>Menü öğeleri
 Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.

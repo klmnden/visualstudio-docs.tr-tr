@@ -9,12 +9,12 @@ author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f1a3ccfe4081e3fa5287afc0299755a71f762f7
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897627"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232547"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio veya Visual Studio Yükleyicisi ile ilgili bir sorun bildirme
 
@@ -35,7 +35,7 @@ Bunların içerdiği geri bildirim aracını kullanarak Visual Studio ya da yük
 
 1. Oturum açtıktan sonra görmek mümkün olmayacak, **sorunları** ve **etkinlik** üzerinde **takip ettiğim öğeler** ekranı
 
-    ![Takip ettiğim öğeler](../ide/media/items-i-follow.png)
+   ![Takip ettiğim öğeler](../ide/media/items-i-follow.png)
 
 1. Visual Studio sorununuz için arama yapın ve başkalarının bunu bildiren, görmek için bir arabirim sağlar. Birisi bildirdi ise "yukarı-bize bildirmek için oy".
    > [!NOTE]

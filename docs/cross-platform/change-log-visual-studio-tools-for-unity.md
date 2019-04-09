@@ -1,7 +1,7 @@
 ---
 title: Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,139 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803746"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232768"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
+
+## <a name="4005"></a>4.0.0.5
+ 27 Şubat 2019 yayımlanan
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Kurulum paketini sabit Visual Studio sürümü algılama.
+
+    -   Kullanılmayan derlemeleri Kurulum paketten kaldırılamıyor.
+
+## <a name="4004"></a>4.0.0.4
+ 13 Şubat 2019 yayımlanan
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Tümleştirme:**
+
+    -   Unity düzgün bir şekilde algılamak için destek eklendi, yükleme sırasında işler ve daha iyi dosya kilitleri işlemek Kurulum altyapısındaki izin verin.
+    
+    -   API ScriptableObject güncelleştirildi.
+
+## <a name="4003"></a>4.0.0.3
+ 31 Ocak 2019 yayımlanan
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Proje oluşturma:**
+
+    -   Genel ve seri hale getirilmiş alanları artık uyarılar neden olur. Biz otomatik oluşturulan bu iletiler Unity projeleri CS0649 ve IDE0051 Derleyici uyarılarını bastırılmış.
+
+-   **Tümleştirme:**
+
+    -   (Windows artık yeniden boyutlandırılabilir, Tekdüzen kenar boşlukları kullanan ve bir yeniden boyutlandırma tutamacı görüntüleme) Unity Düzenleyicisi ve oyuncu örnekleri görüntülemek için kullanıcı deneyimi geliştirildi. Unity Düzenleyicisi için işlem kimliği bilgiler eklendi.
+    
+    -   MonoBehaviour API güncelleştirildi.
+    
+-   **Değerlendirme:**
+
+    -   Yerel işlevler için destek eklendi.
+    
+    -   Sözde değişkenler (özel durum ve nesne tanımlayıcılar) için destek eklendi.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Bilinen ad görüntüleri ve tema ile bir sorun düzeltildi.
+
+    -   Yalnızca, otomatik yenileme esnasında oluşacak hata ayıklama sırasında çıkış penceresinde yazma varlık veritabanı.
+
+    -   Filtreleme MonoBehaviour Sihirbazı ile sabit UI gecikmesi yaşanır.
+    
+-   **Hata Ayıklayıcı:**
+
+    -   Özel öznitelik adlandırılmış bağımsız değişkenler üzerinde eski protokol sürümleri kullanılırken okuma düzeltildi.
+
+## <a name="4002"></a>4.0.0.2
+ 23 Ocak 2019 yayımlanan
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Deneysel derleme oluşturma düzeltildi.
+
+    -   UI iş parçacığı Basıncı en aza indirmek için sabit bir proje dosyası olay işleme.
+
+    -   Sabit tamamlama sağlayıcısı toplu metin değişikliği.
+    
+-   **Hata Ayıklayıcı:**
+
+    -   Kullanıcı hata ayıklama iletilerini iliştirilen hata ayıklayıcı için görüntülemeyi düzeltildi.
+
+## <a name="4001"></a>4.0.0.1
+ Yayın Tarihi: 10 Aralık 2018
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Değerlendirme:**
+
+    -   Roslyn ile değiştiriliyor NRefactory ifade değerlendirmesi için değiştirildi.
+
+    -   İşaretçiler için destek eklemiştir: başvuru, atama ve işaretçi aritmetiğini (Unity 2018.2 + hem yeni çalışma zamanının bunun için gerekli).
+
+    -   Dizi işaretçisi görünümünü (c++ benzer) için destek eklendi. Bir işaretçi ifadesi olması, ardından virgül ve görmek istediğiniz öğe sayısı.
+
+    -   Zaman uyumsuz yapıları için destek eklendi.
+
+-   **Tümleştirme:**
+    
+    -   Unity'nın varlık veritabanı'üzerinde otomatik olarak yenilemek için destek eklendi kaydedin. Bu, varsayılan olarak etkindir ve öyle Unity tarafında, Visual Studio'da bir kod kaydedilirken tetikler. Üzerinde Unity\Refresh Unity'nın AssetDatabase kaydetmek için bu özelliği Tools\Options\Tools devre dışı bırakabilirsiniz.
+
+### <a name="bug-fixes"></a>Hata düzeltmeleri
+
+-   **Tümleştirme:**
+
+    -   Tercih edilen dış düzenleyici olarak Visual Studio seçili olmadığında köprüsü etkinleştirme düzeltildi.
+
+    -   Hatalı biçimlendirilmiş ya da desteklenmeyen ifadeler ile sabit ifade değerlendirmesi.
+
+## <a name="4000"></a>4.0.0.0
+ Yayın Tarihi: 4 Aralık 2018
+
+### <a name="new-features"></a>Yeni Özellikler
+
+-   **Tümleştirme:**
+
+    -   Visual Studio 2019 desteği eklendi.
+
+    -   Visual Studio Görüntü hizmeti ve kataloğu, HDPI ölçeklendirme, piksel mükemmel görüntüleri ve Tema oluşturma için tam destek ile uyguladık.
+
+### <a name="deprecated-features"></a>Kullanım dışı bırakılan özellikler
+
+-   **Tümleştirme:**
+
+    -   Unity için Visual Studio Araçları, bundan sonra yalnızca Unity 5.2 + (ile Unity'nın yerleşik Visual Studio tümleştirmesi) destekleyecektir.
+
+    -   Bundan sonra Unity için Visual Studio Araçları yalnızca Visual Studio 2015 + destekler.
+
+    -   Eski dil hizmeti kaldırıldı hata listesi ve durum çubuğu.
+    
+    -   Hızlı Monobehaviour Sihirbazı'nı (kullanıldığından ayrılmış IntelliSense desteği) kaldırıldı.
 
 ## <a name="3903"></a>3.9.0.3
  Yayın Tarihi: 28 Kasım 2018
@@ -619,7 +743,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   Sihirbazlar NetworkBehavior iletiler için destek eklendi.
 
--   **UI:**
+-   **KULLANICI ARABİRİMİ:**
 
     -   MonoBehavior iletilerin görünürlüğünü yapılandırmak için bir seçenek eklenmiştir.
 
@@ -643,7 +767,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   Visual Studio'nun hata ayıklama sırasında donmasıyla sonuçlanabiliyor nedeni bir sorun düzeltildi.
 
--   **UI:**
+-   **KULLANICI ARABİRİMİ:**
 
     -   Bir uyumsuzluk sabit [sekmeleri Studio](https://tabsstudio.com/) Visual Studio uzantısı.
 
@@ -712,7 +836,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 preview 2
  2 Nisan 2015'i yayınladı
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   **Unity Proje Gezgini:**
 

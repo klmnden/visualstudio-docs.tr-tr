@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867861"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232716"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
 
 CodeLens, kodunuzu ne olduğunu Bul sırada sayesinde yalnızca işinize odaklanmanıza olanak tanır&ndash;düzenleyicisinden çıkmadan. Başvurular bir parça kodu, kod, bağlı hataları, iş öğeleri, kod incelemeleri ve birim testleri değişiklikleri bulabilirsiniz.
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Kaynak denetimi CodeLens göstergeleri, Visual Studio Community Edition'da kullanılabilir değildir.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens, yalnızca Visual Studio Enterprise ve Visual Studio Professional sürümlerinde kullanılabilir. Visual Studio Community Edition'da kullanılabilir değil.
+> CodeLens, yalnızca Visual Studio Enterprise ve Professional sürümlerinde kullanılabilir. Visual Studio Community Edition'da kullanılabilir değil.
 
 ::: moniker-end
 
@@ -60,15 +67,15 @@ Kod ve başvuruları, arasındaki ilişkileri görmek için [bir kod Haritası o
 
 ![CodeLens - kod haritasında başvuruları](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>Kodunuzda değişiklikler Bul
+## <a name="find-changes-in-your-code"></a>Kodunuzda değişiklikler Bul
 
 Kodunuzun geçmişini, kodunuzu ne olduğunu görmek için inceleyin. Ya da önce dala değişiklikleri kodunuzu nasıl etkileyeceğini daha iyi anlayabilmeniz için kodunuza birleştirilmiş değişiklikleri gözden geçirin.
 
 İhtiyacın var:
 
-- Visual Studio 2019'ı (veya Visual Studio 2017 Enterprise veya Professional edition)
+- Visual Studio Enterprise veya Professional sürümü
 
-- Team Foundation Server 2013 veya üzeri, Azure DevOps Services veya Git
+- Azure DevOps Hizmetleri, Team Foundation Server 2013 veya üzeri ya da Git
 
 - [Skype Kurumsal'a](/skypeforbusiness/) ekibinizin kod düzenleyicisinden başvurma
 
@@ -82,7 +89,7 @@ Team Foundation sürüm denetimi (TFVC) veya Git ile depolanan C# veya Visual Ba
 
 ### <a name="code-element-level-indicators"></a>Code öğesi düzeyi göstergeleri
 
-Yaptıkları kod öğe düzeyi göstergelerini kimin kodunuzu ve hangi değişiklikleri görmenize olanak tanır. C# ve Visual Basic kodu için kod öğesi düzeyi göstergelerini kullanılabilir.
+Yaptıkları kod öğe düzeyi göstergelerini, kodu kimin değiştirdiğini ve hangi değişiklikleri görmenize olanak tanır. C# ve Visual Basic kodu için kod öğesi düzeyi göstergelerini kullanılabilir.
 
 Team Foundation Server veya Azure DevOps Hizmetleri'ndeki Team Foundation sürüm denetimi (TFVC) kullandığınızda gördüğünüz budur:
 
@@ -165,7 +172,7 @@ Yerel sürümünüzle birlikte gelen bir değişikliği tuşlarına basarak kar�
 
 Simge **dal** sütun bildirir dal nasıl ilişkili olduğunu içinde çalışmakta olduğunuz dalı için.
 
-|**Simgesi**|**Değişiklik geldiği:**|
+|**Simge**|**Değişiklik geldiği:**|
 |--------------| - |
 |![CodeLens: Geçerli dal simgesini değiştirme](../ide/media/codelensbranchcurrenticon.png)|Geçerli dal|
 |![CodeLens: Ana dal simgesini değiştirme](../ide/media/codelensbranchparenticon.png)|Üst dal|
@@ -224,11 +231,11 @@ Mevcut birim testleri, C# veya Visual Basic kodunuzda açmadan bulabilir **Test 
 
      ![CodeLens - birim testi tanımına Git](../ide/media/codelens-unit-test-definition.png)
 
-6. Test sonuçlarını gözden geçirmek için test durumu göstergesini seçin (![başarısız test simgesini](../ide/media/codelenstestfailedicon.png) veya ![testi geçildi simgesi](../ide/media/codelenstestpassedicon.png)), veya basın **Alt**+**1**.
+6. Test sonuçlarını gözden geçirmek için test durumu göstergesini seçin (![başarısız test simgesini](../ide/media/codelenstestfailedicon.png) veya ![testi geçildi simgesi](../ide/media/codelenstestpassedicon.png)) veya basın **Alt**+**1**.
 
      ![CodeLens - bkz. birim testi sonucu](../ide/media/codelens-unit-test-result.png)
 
-7. Bu testi kaç kişinin değiştirdiğini, bu testi kimin değiştirdiğini veya kaç değişiklik bu test ile yapılan görmek için [kodunuzun geçmişini bulun](#find-code-history) ve bağlantılı öğe.
+7. Bu testi kaç kişinin değiştirdiğini, bu testi kimin değiştirdiğini veya kaç değişiklik bu test ile yapılan görmek için [kodunuzun geçmişini bulun](#find-changes-in-your-code) ve bağlantılı öğe.
 
 ## <a name="keyboard-shortcuts"></a>Klavye kısayolları
 
@@ -241,7 +248,7 @@ Göstergeleri seçmek için klavyeyi kullanmak için basılı tutun **Alt** seç
 
 ## <a name="q--a"></a>Soru - Yanıt
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>S: CodeLens açma veya kapatma, veya nasıl görmek için hangi göstergelerini seçin?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>S: CodeLens açma veya kapatma veya nasıl görmek için hangi göstergelerini seçin?
 
 **Y:**  Başvuru göstergesini dışında göstergeleri kapalı veya açık kapatabilirsiniz. Git **Araçları** > **seçenekleri** > **metin düzenleyici** > **tüm diller**  >  **CodeLens**.
 
@@ -264,6 +271,20 @@ CodeLens dosya düzeyi göstergelerini açma ve kapatma köşeli çift ayraç si
 - DevOps ile ilgili göstergeler, yalnızca bağlı iş öğesi için kod ve bağlı iş öğelerini açma izniniz olduğunda görünür. Sahip olduğunuzu onaylamak [takım üyesi izinlerine](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Birim test göstergeleri, uygulama kodu birim testlere sahip olmadığında görünmez. Test durumu göstergeleri test projesinde otomatik olarak görüntülenir. Uygulama kodunuzun birim testleri var, ancak test göstergeleri görünmüyorsa biliyorsanız, çözümü derlemeyi deneyin (**Ctrl**+**Shift**+**B**).
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Kaynak denetimi göstergeleri Visual Studio Community Edition'da kullanılabilir değil.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens, Visual Studio Community Edition'da kullanılabilir değil.
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>S: İşleme iş öğesi ayrıntılarını neden göremiyorum?
 
@@ -313,11 +334,11 @@ Klavyeyi kullanmak için:
 
 - **Başvuruları**: Bu gösterge, kod değiştiğinde otomatik olarak güncelleştirir. Varsa **başvuruları** göstergesi ayrı bir pencerede yerleştirilmiş, göstergenin Yenile'yi **Yenile**:
 
-     ![Yenile düğmesi CodeLens başvurularda](../ide/media/codelensviewreferencesdocked.png)
+   ![Yenile düğmesi CodeLens başvurularda](../ide/media/codelensviewreferencesdocked.png)
 
 - **Takım**: Bu göstergeler Yenile'yi **CodeLens takım göstergelerini Yenile** sağ tıklatma menüsünden:
 
-     ![CodeLens takım göstergeleri menü öğesi Yenile](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![CodeLens takım göstergeleri menü öğesi Yenile](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **Test**: [Kodunuz için birim testleri bulma](#associated-unit-tests) yenilemek için **Test** göstergesi.
 

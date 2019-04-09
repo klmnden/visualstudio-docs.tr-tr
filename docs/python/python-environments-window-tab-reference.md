@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ce960b7432a1cd98be6f5bdf94c7487679e40d83
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355782"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232612"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python ortamları penceresi Sekme Başvurusu
 
@@ -60,7 +60,7 @@ Etkileşimli pencere, gündelik iş akışınızı kullandıkça, büyük olası
 
 Başlatma komut dosyası kodu içeren, **etkileşimli** penceresi yükler ve otomatik olarak içeri aktarmalar, işlev tanımları ve tam anlamıyla başka bir şey gibi çalışır. Bu komut iki yolla başvurulur:
 
-1. Bir ortam yüklediğinizde Visual Studio, bir klasör oluşturur. *Documents\Visual Studio <version>\Python betikleri\\\<ortam >* burada &lt;sürüm&gt; olduğu Visual Studio sürümü (örneğin, 2017 veya 2019) ve &lt;ortam&gt; ortam adıyla aynıdır. Ortama özgü klasöre kolayca gezinebilirsiniz **etkileşimli betiklerini keşfedin** komutu. Başladığınızda **etkileşimli** penceresi bu ortam için bu yükler ve her şeyi çalıştırır *.py* dosyaları alfabetik sırayla burada bulunur.
+1. Bir ortam yüklediğinizde Visual Studio, bir klasör oluşturur. *Documents\Visual Studio \<sürüm > \Python betikleri\\\<ortam >* burada &lt;sürümü&gt; (örneğin, 2017 veya 2019) Visual Studio sürümü ve &lt;ortam&gt; ortam adıyla aynıdır. Ortama özgü klasöre kolayca gezinebilirsiniz **etkileşimli betiklerini keşfedin** komutu. Başladığınızda **etkileşimli** penceresi bu ortam için bu yükler ve her şeyi çalıştırır *.py* dosyaları alfabetik sırayla burada bulunur.
 
 1. **Betikleri** denetim **Araçları** > **seçenekleri** > **Python**  >  **Etkileşimli Windows** sekme (bkz [etkileşimli windows seçenekleri](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) yüklenir ve tüm ortamlarda çalıştırabilirsiniz başlatma komut dosyaları için ek bir klasör belirtmek için tasarlanmıştır. Ancak, bu özellik şu anda çalışmıyor.
 

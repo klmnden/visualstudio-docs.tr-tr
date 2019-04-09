@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983280"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232599"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig için .NET adlandırma kuralları
 
@@ -76,8 +76,21 @@ Aşağıdaki listede, izin verilen değerler gösterilir ve virgül ile ayırara
 - özel\_korumalı
 - yerel
 
-> [!NOTE]
-> Erişilebilirlik hedeflediğiniz sembol türü için geçerli değilse, bir erişilebilirlik düzeyi adlandırma kuralınızın bir parçası olarak belirtmeyin. Örneğin, Erişilebilirlik düzeyleri parametrelere sahip değildir. Adlandırma kuralınıza bir parametre adlandırma kuralı için bir erişilebilirlik düzeyi belirtirseniz, düzgün çalışmaz.
+   `local` Bir yöntem içinde tanımlanan simgeleri erişilebilirlik düzeyi uygular. Kodda, Erişilebilirlik belirtilemez sembolleri için adlandırma kuralları tanımlamak için yararlıdır. Örneğin, belirtirseniz `applicable_accessibilities = local` sabitleri için bir adlandırma kuralı üzerinde (`required_modifiers = const`), yalnızca bir yöntem içinde tanımlı sabitler ve olmayan bir tür içinde tanımlanan kuralı uygulanır.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Sembol değiştiriciler (isteğe bağlı)
 
@@ -156,8 +169,8 @@ Aşağıdaki tabloda verilen önem derecesi değerlerini ve onların ne anlama g
 ------------ | -------------
 yok veya Sessiz | Bu stil ardından, hiçbir şey kullanıcıya göstermez; Ancak, otomatik olarak oluşturulan kod, bu stil izler.
 Öneri | Bu stil ardından, kullanıcı için ilk iki karakter üzerinde temel alınan noktaların bir öneri olarak gösterir. Derleme zamanında hiçbir etkisi yoktur.
-uyarı | Bu stil ardından, derleyici uyarı olarak göster **hata listesi**.
-Hata | Bu stil ardından, bir derleyici hatası Göster **hata listesi**.
+warning | Bu stil ardından, derleyici uyarı olarak göster **hata listesi**.
+error | Bu stil ardından, bir derleyici hatası Göster **hata listesi**.
 
 > [!NOTE]
 > Adlandırma kuralı ihlallerini görmek için projenizi oluşturmanız gerekmez. Kod düzenleme gibi görünürler ya da **hata listesi** veya bir öneri olarak.

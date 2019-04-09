@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0c05595c311367ca94e3327afd28bc5fa05f7ec2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871084"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232476"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>İçinde profil oluşturma araçlarındaki yenilikler nelerdir? [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -28,11 +28,11 @@ Ek bilgi için bkz: [sürüm notları [!include[vs_dev15](../misc/includes/vs_de
 
 A **özeti** sekmesinde, performans analizi için anahtar alanları odaklanmanıza yardımcı olan araçlar eklendi. Bu sekme kaç tane olay meydana gösterir, yığın anlık görüntüleri yararlanmanıza imkan sağlar ve CPU kullanım verilerini toplamayı hızlı bir şekilde etkinleştirmenize olanak tanır. Bu görünüm tüm gösterir [Application ınsights](/azure/azure-monitor/app/visual-studio) veya [UI analizi](/visualstudio/releasenotes/vs2017-relnotes) olayları. Ayrıca, Visual Studio Enterprise için bu görünüm IntelliTrace olaylarını da gösterir.
 
-![Tanılama araçları özeti sekmesi](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+![Tanılama araçları özeti sekmesi](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
 CPU kullanım aracı [yeni görselleştirmeler](../profiling/Beginners-Guide-to-Performance-Profiling.md) performans sorunlarına neden olma olasılığı olan işlevler tanımlamanıza yardımcı olacak. Yeni **çağıran/çağrılan** görünümü seçili bir işlevden yapılan işlev çağrılarının maliyetlerini incelemenize olanak sağlar.
 
-![Tanılama araçları arayan Aranan görünümü](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+![Tanılama araçları arayan Aranan görünümü](../profiling/media/diag-tools-caller-callee-2.png "DiagToolsCallerCallee")
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

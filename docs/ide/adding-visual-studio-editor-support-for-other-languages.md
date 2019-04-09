@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950585"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232424"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Diğer diller için Visual Studio Düzenleyicisi desteği Ekle
 
@@ -46,27 +46,27 @@ Visual Studio şu anda sağlar söz dizimi renklendirme ve temel deyim tamamlama
 
 Söz dizimi renklendirme ve temel deyim tamamlama ek olarak, Visual Studio de denilen bir özelliği olan [gitmek için](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Bu özellik, hızla kod dosyaları, dosya yolları ve kod semboller aramanıza olanak sağlar. Visual Studio aşağıdaki dillerde gitmek için destek sağlar.
 
--   Git
+- Git
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Bu dosya türlerini belirli bir dil henüz yüklenmemiştir desteği özellikleri açıklandığı gibi daha önce bile sahiptir. Bazı diller için özelleştirilmiş desteğini yükleme, IntelliSense gibi ek dil desteği veya ampuller gibi diğer Gelişmiş dil özellikleri sağlayabilir.
 
 ## <a name="add-support-for-non-supported-languages"></a>Desteklenmeyen dilleri desteği ekleme
 
-Visual Studio 2015 güncelleştirme 1 ve sonraki sürümlerinde sağlamak Düzenleyicisi'nde dil desteği kullanılarak [TextMate dil bilgileri](https://manual.macromates.com/en/language_grammars). En sevdiğiniz programlama dili Visual Studio Düzenleyicisi'nde şu anda desteklenmemektedir, ilk olarak, Web'de arama - TextMate paketi dil için zaten var olabilir. Ancak, bir bulamazsanız, Visual Studio 2015 güncelleştirme 1 veya daha sonra dil dilbilgisi ve kod parçacıkları için TextMate paketi model oluşturma desteği, kendiniz ekleyebilirsiniz.
+Visual Studio kullanarak Düzenleyicisi'nde dil desteği sağlayan [TextMate dil bilgileri](https://manual.macromates.com/en/language_grammars). En sevdiğiniz programlama dili Visual Studio Düzenleyicisi'nde şu anda desteklenmemektedir, ilk olarak, web araması&mdash;TextMate paketi dil için zaten var olabilir. Bir bulamazsanız, yine de destek de kendiniz dil dilbilgisi ve kod parçacıkları için TextMate paketi model oluşturarak ekleyebilirsiniz.
 
 Visual Studio aşağıdaki klasörde yeni TextMate dil bilgileri ekleyin:
 
@@ -80,9 +80,12 @@ Bunlar kendi durumunuza uygularsanız, bu taban yolu altında aşağıdaki klas�
 |*\Syntaxes*|Dilbilgisi klasör. Dil bilgisi içeren *.json* dil için gibi dosyaları *Matlab.json*.|
 |*\Snippets*|Kod parçacıklarının klasör. Dili için kod parçacıkları içerir.|
 
-Windows içinde *% USERPROFILE %* yolunu Çözümler: *c:\Users\\\<kullanıcı adı >*. Uzantılar klasörünün sisteminizde mevcut değilse, oluşturmanız gerekir. Klasör zaten varsa, gizlenir.
+Windows içinde *% USERPROFILE %* yolunu Çözümler: *c:\Users\\\<kullanıcı adı >*. Varsa *uzantıları* klasörü, sisteminizde mevcut değil, oluşturmanız gerekir. Klasör zaten varsa, gizlenir.
 
-TextMate dil bilgisi oluşturma hakkında daha fazla bilgi için bkz. [TextMate - dil dilbilgisi giriş: HTML kaynak kod söz dizimi vurgulama ekleme katıştırılmış](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [bir Textmate paketi için bir dil dilbilgisi ve özel tema oluşturma hakkında notlar](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+> [!TIP]
+> Düzenleyicide açık herhangi bir dosya varsa, bunları TextMate dil bilgileri ekledikten sonra söz dizimi vurgulama görmek için kapatıp gerekecektir.
+
+TextMate dil bilgisi oluşturma hakkında daha fazla bilgi için bkz. [TextMate - dil dilbilgisi giriş](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) ve [bir Textmate paketi için bir dil dilbilgisi ve özel tema oluşturma hakkında notlar](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

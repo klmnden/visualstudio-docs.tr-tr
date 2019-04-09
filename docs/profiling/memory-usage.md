@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868998"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232781"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 
@@ -54,13 +54,13 @@ Bu öğreticide şunları yapacaksınız:
 
 4.  Seçin **bellek kullanımı** ile **seçtiğiniz Araçları** araç ayarlama.
 
-     ![Tanılama araçlarını Göster](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Tanılama araçlarını Göster](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  Tıklayın **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
      Uygulamanın yüklenmesi tamamlandığında, Tanılama Araçları'nın Özet görünümü görüntülenir.
 
-     ![Tanılama araçları Özet sekmesi](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Tanılama araçları Özet sekmesi](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Bellek anlık görüntüleri, veri, yerel veya karma mod uygulamaları hata ayıklama performansını etkileyebilir bellek toplamak için varsayılan olarak devre dışıdır. Anlık görüntüleri yerel veya karma mod uygulamalarında etkinleştirmek için hata ayıklama oturumu başlatın (kısayol tuşu: **F5**). Zaman **tanılama araçları** penceresi görüntülenirse, seçin **bellek kullanımı** sekmesine ve ardından **yığın profili oluşturmayı**.
@@ -121,7 +121,7 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
  **Başvurulan türleri** üst bölmede seçilen tür tarafından tutulan başvuru ağacı görüntüler.
 
- ![Yönetilen eferenced türleri rapor görünümü](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Yönetilen başvuru yapılan türlerin rapor görünümü](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
  Seçili bir türün örneklerinin üst bölmede görüntülemek için seçin ![örneği simgesi](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") simgesi.
 
@@ -150,7 +150,7 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
 - Özet tablosunu hücrede değiştir bağlantısını seçin **bellek kullanımı** sekmesinde **tanılama araçları** penceresi.
 
-   ![Bir değişiklik seçin &#40;DIF&#41;f rapor](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Bir değişiklik seçin &#40;fark&#41; rapor](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Anlık görüntüde seçin **Karşılaştırılacak** yönetilen veya yerel bir rapor listesi.
 
@@ -158,7 +158,7 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
 Değişiklik raporu sütunları ekler (ile işaretlenen **(fark)**) temel anlık görüntü değeri ile karşılaştırma anlık görüntü arasındaki fark gösteren temel bir rapor. Bir yerel tür View fark raporu nasıl görünebileceği aşağıda verilmiştir:
 
-![Yerel türler fark Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Yerel türler fark görünümü](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Bloglar ve videolar
 

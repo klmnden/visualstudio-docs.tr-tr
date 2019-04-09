@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222498"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232560"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop ve FxCop hakkında sık sorulan sorular çözümleyiciler
 
@@ -41,8 +41,16 @@ Hayır. **RunCodeAnalysis** özelliği proje dosyasında (örneğin, *.csproj*) 
 
 FxCop Çözümleyicileri, ilk olarak çalışmasını [NuGet paketini yüklemek](install-fxcop-analyzers.md) bunlar için. Ardından Proje veya çözüm Visual Studio veya msbuild'ı kullanarak oluşturun. FxCop Çözümleyicileri oluşturma hataları ve Uyarıları görünür **hata listesi** veya komut penceresinden.
 
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Hatta FxCop Çözümleyicileri NuGet paketini yükledikten sonra ı CA0507 uyarı alın
+
+FxCop Çözümleyicileri yükledikten, ancak CA0507 uyarı almak devam **"Kod analizini Çalıştır" kullanımdan kaldırıldı, derleme sırasında çalışan FxCop Çözümleyicileri yerine**, ayarlamanız gerekebilir **RunCodeAnalysis**msbuild özelliği için proje dosyanızdaki **false**. Aksi takdirde, statik kod analizi her yapıdan sonra yürütülür.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [.NET derleyici platformu Çözümleyicileri genel bakış](roslyn-analyzers-overview.md)
 - [Çözümleyicileriyle çalışmaya başlama](fxcop-analyzers.yml)
-- [FxCop Çözümleyicileri yükleyin](install-fxcop-analyzers.md)
+- [FxCop çözümleyicilerini yükleme](install-fxcop-analyzers.md)

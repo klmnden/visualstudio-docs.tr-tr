@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d797dbd922c85598c4908abc6eb8adc5c43c365
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716577"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232586"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent'ı kullanarak (C#, Visual Basic)
 
@@ -26,11 +26,11 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 
  Başlamadan önce oluşturulan ve dağıtılan kod için eşleşen kaynağa ve sembollere sahip olup olmadığınızı kontrol edin. Bu, hata ayıklamaya ve IntelliTrace günlüğünde tanılama olaylarını taramaya başladığınızda doğrudan uygulama koduna gitmenizi sağlar. [Yapılarınızı ayarlayın](../debugger/diagnose-problems-after-deployment.md) ve böylece Visual Studio otomatik olarak bulabilir ve dağıtılan kodunuzla eşleşen kaynağı açın.
 
-1.  [1. adım: Microsoft İzleme Aracısı'nı ayarlama](#SetUpMonitoring)
+1.  [1. Adım: Microsoft İzleme Aracısı'nı ayarlama](#SetUpMonitoring)
 
-2.  [2. adım: Uygulamanızı izlemeye başlama](#MonitorEvents)
+2.  [2. Adım: Uygulamanızı izlemeye başlama](#MonitorEvents)
 
-3.  [3. adım: Kayıtlı olayları kaydetme](#SaveEvents)
+3.  [3. Adım: Kayıtlı olayları kaydetme](#SaveEvents)
 
 ##  <a name="SetUpMonitoring"></a> 1. adım: Microsoft İzleme Aracısı'nı ayarlama
 
@@ -76,7 +76,7 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
 
 3.  [TechNet sitesini ziyaret edin](http://technet.microsoft.com/systemcenter/default) en son Yardım içeriğini almak için.
 
-####  <a name="FullPermissionsITLog"></a> S: How do I set up permissions for the application pool?
+####  <a name="FullPermissionsITLog"></a> S: Uygulama havuzu için izinleri nasıl ayarlayabilirim?
  **Y:** Windows kullanan **icacls** komutunu ya da Windows Explorer (veya dosya Gezgini) kullanın. Örneğin:
 
 - Windows ile izinleri ayarlamak için **icacls** komutu:
@@ -211,21 +211,22 @@ Kullanarak IIS ile barındırılan ASP.NET web uygulamaları ve SharePoint 2010 
    **Y:** Varsayılan olarak ayarlayarak toplama planlarını modülleri hariç `isExclusionList` özniteliğini `true`. Ancak bu, yine de üçüncü taraf veya açık kaynak modüller gibi listenin ölçütlerine uymayan veya ilgilenmediğiniz modüllerden veri toplayabilir.
 
 #### <a name="q-what-values-does-the-agent-collect"></a>S: Aracı hangi değerleri toplar?
- **Y:** Performans üzerindeki etkiyi azaltmak için aracı yalnızca şu değerleri toplar:
+
+**Y:** Performans üzerindeki etkiyi azaltmak için aracı yalnızca şu değerleri toplar:
 
 - Yöntemlere geçirilen ve yöntemlerden döndürülen ilkel veri türleri
 
 - Yöntemlere geçirilen veya yöntemlerden geri döndürülen en üst düzey nesnelerin alanlarındaki ilkel veri türleri
 
-  Örneğin, sahip olduğunuz varsayalım. bir `AlterEmployee` kabul eden bir tamsayı yöntem imzası `id` ve `Employee` nesne `oldemployee`:
+Örneğin, sahip olduğunuz varsayalım. bir `AlterEmployee` kabul eden bir tamsayı yöntem imzası `id` ve `Employee` nesne `oldemployee`:
 
-  `public Employee AlterEmployee(int id, Employee oldemployee)`
+`public Employee AlterEmployee(int id, Employee oldemployee)`
 
-  `Employee` Türü şu öznitelikler bulunur: `Id`, `Name`, ve `HomeAddress`. Arasında bir ilişkilendirme ilişkisi var. `Employee` ve `Address` türü.
+`Employee` Türü şu öznitelikler bulunur: `Id`, `Name`, ve `HomeAddress`. Arasında bir ilişkilendirme ilişkisi var. `Employee` ve `Address` türü.
 
-  ![Çalışan ve adresi arasındaki ilişkiyi](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+![Çalışan ve adresi arasındaki ilişkiyi](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-  Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yönteminden döndürülen `AlterEmployee` nesnesini kaydeder. Ancak aracı `Address` nesnesi hakkında, nesnenin null olup olmadığı dışında bilgi kaydetmez. Aracı, ayrıca, `AlterEmployee` yöntemindeki yerel değişkenlerle ilgili olarak, diğer yöntemler bu yerel değişkenleri parametre olarak kullanıp onların yöntem parametresi olarak kaydedilmesini sağlamadığı sürece, veri kaydetmez.
+Aracı `id`, `Employee.Id` ve `Employee.Name` değerlerini ve `Employee` yönteminden döndürülen `AlterEmployee` nesnesini kaydeder. Ancak aracı `Address` nesnesi hakkında, nesnenin null olup olmadığı dışında bilgi kaydetmez. Aracı, ayrıca, `AlterEmployee` yöntemindeki yerel değişkenlerle ilgili olarak, diğer yöntemler bu yerel değişkenleri parametre olarak kullanıp onların yöntem parametresi olarak kaydedilmesini sağlamadığı sürece, veri kaydetmez.
 
 ##  <a name="SaveEvents"></a> 3. adım: Kayıtlı olayları kaydetme
  Bir hata veya performans sorunu bulduğunuzda, kayıtlı olayları bir IntelliTrace günlüğüne kaydedin. Aracı günlüğü yalnızca olay kaydettiyse oluşturur. System Center 2012 kullanıyorsanız, bkz [Microsoft Monitoring Agent ile Web uygulamalarını izleme](http://technet.microsoft.com/library/dn465157.aspx).

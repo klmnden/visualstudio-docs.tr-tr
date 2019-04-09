@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916771"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232323"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Aşırı karmaşıklıktan kaçının
 
@@ -44,11 +44,11 @@ Bir yönteme bir aşırı döngüzel karmaşıklığına sahip.
 
 Döngüsel karmaşıklık kenarlar - düğüm sayısını + 1 sayısı =
 
-mantıksal dal noktası ve bir uç düğüm burada temsil eder, düğümler arasında bir satırı temsil eder.
+A *düğüm* mantıksal dal noktasını temsil eder ve bir *edge* düğümler arasında bir satırı temsil eder.
 
 Döngüsel karmaşıklık 25'ten fazla olduğunda kuralı ihlal bildirir.
 
-Kod ölçümleri hakkında daha fazla bilgi [ölçüm karmaşıklığı ve yönetilen kod bakımı](../code-quality/code-metrics-values.md),
+Kod ölçümleri hakkında daha fazla bilgi [ölçmek yönetilen kod karmaşıklığı](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
 

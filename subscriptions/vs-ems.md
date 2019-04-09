@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Enterprise Mobility + Security avantajı, Visual Studio aboneliğinize dahil hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841201"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232664"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security'nin (EMS), Visual Studio abonelikleri
 
@@ -73,6 +73,6 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  EMS yardıma mı ihtiyacınız var?  Çevrimiçi denetle [EMS belgeleri](/enterprise-mobility-security/).
--  EMS herhangi bir bileşeni, teknik destek için lütfen [EMS Desteği SSS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) soru için doğru destek bulunacak.
+-  EMS herhangi bir bileşeni, teknik destek için lütfen [EMS Desteği SSS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) soru için doğru destek bulunacak.
 -  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

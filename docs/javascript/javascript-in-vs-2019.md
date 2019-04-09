@@ -11,12 +11,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e96701f6c6dfe53caaa82a642139ad6dbd9fef08
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 3000510c6bb6079629a3df05909417593569c932
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58794457"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232268"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>JavaScript ve TypeScript, Visual Studio 2019
 
@@ -35,7 +35,7 @@ Eski JavaScript language Service'a geri yükleme seçeneği artık kullanılabil
 Visual Studio 2019 projenizde TypeScript derleme tümleştirmeye yönelik çeşitli seçenekler sunar:
 
 * [TypeScript NuGet paketini](https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild). TypeScript 3.2 veya üzeri NuGet paketini projenize yüklendiğinde, karşılık gelen TypeScript dil hizmeti sürümü Düzenleyicisi'nde yüklenen.
-* Varsayılan Visual Studio Yükleyicisi'nde yanı sıra tek başına SDK'sını yükleme konumundan TypeScript SDK [VS Market'te](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
+* Varsayılan olarak, bir tek başına SDK'sı indirilerek yanı sıra, Visual Studio yükleyicisi TypeScript SDK [VS Market'te](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-331-vs2017).
 * [TypeScript npm paket](https://www.npmjs.com/package/typescript). TypeScript 2.1 veya üzeri bir npm paketi projenize yüklendiğinde, karşılık gelen TypeScript dil hizmeti sürümü Düzenleyicisi'nde yüklenen.
 
 Visual Studio 2019 içinde geliştirilen projeleri için TypeScript NuGet ve npm paketleri farklı platformlar ve ortamlar arasında büyük taşınabilirlik için kullanmanızı öneririz.

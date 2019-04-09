@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620012"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232859"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulamasına Önkoşullar dahil etme
 Önkoşul yazılımı dağıtmadan önce bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulaması gerekir indirmeniz olan yükleme paketlerini geliştirme bilgisayarınıza bu Önkoşullar. Ne zaman bir uygulamayı yayımlamak ve seçin **Uygulamamla aynı konumdan önkoşulları karşıdan**, eğer yükleyici paketleri olmayan bir hata meydana gelir **paketleri** klasör.
@@ -25,7 +25,7 @@ ms.locfileid: "56620012"
 
 1. Dosya Gezgini'nde Aç **paketleri** klasör.
 
-    Varsayılan olarak, yoludur *C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* 32-bit sistemde ve *C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* 64-bit sistemde.
+    Varsayılan olarak, yoludur `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`.
 
 2. Eklemek istediğiniz ön koşul için klasörü açın ve ardından'ın yüklü sürümü için dil klasörü açın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (örneğin, **tr** İngilizce).
 
