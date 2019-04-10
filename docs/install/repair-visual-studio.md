@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f18715be45a41518da691143045f7a41b3f518a7
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788653"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477532"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio’yu onarın
 
@@ -37,6 +37,10 @@ Bazı durumlarda Visual Studio yüklemenizin zarar görmüş veya bozulmuş olur
 1. Yükleyici açın, **daha fazla**ve ardından **onarım**.
 
     ![Visual Studio Yükleyicisi'nden Visual Studio onarma](media/repair-visual-studio.png "Visual Studio Yükleyicisi'nden Visual Studio'yu onarma")
+    
+   > [!NOTE]
+   > Visual Studio onarılırsa ortam sıfırlanır. Kullanıcı başına uzantılar yüklü yükseltme, kullanıcı ayarlarını yerel özelleştirmeler ister ve profilleri kaldırılır. Temalar, renkler, tuş bağlamaları eşitlenen ayarlarınız geri yüklenir.
+   >
 
    > [!TIP]
    > **Onarım** seçeneği yalnızca Visual Studio'nun yüklü örnekleri için görünür. Görmüyorsanız, **onarım** seçeneği, büyük olasılıkla olan, seçtiğiniz **daha fazla** Visual Studio Yükleyicisi'nde "Yüklü" yerine "Kullanılabilir" listelenen sürüm.
@@ -62,6 +66,10 @@ Bazı durumlarda Visual Studio yüklemenizin zarar görmüş veya bozulmuş olur
 
      ![Visual Studio 2019 onarım](media/vs-2019/vs-installer-repair.png "Visual Studio 2019 onarın")
 
+   > [!NOTE]
+   > Visual Studio onarılırsa ortam sıfırlanır. Kullanıcı başına uzantılar yüklü yükseltme, kullanıcı ayarlarını yerel özelleştirmeler ister ve profilleri kaldırılır. Temalar, renkler, tuş bağlamaları eşitlenen ayarlarınız geri yüklenir.
+   >
+
    > [!TIP]
    > **Onarım** seçeneği yalnızca Visual Studio'nun yüklü örnekleri için görünür. Görmüyorsanız, **onarım** seçeneği, büyük olasılıkla olan, seçtiğiniz **daha fazla** Visual Studio Yükleyicisi'nde "Yüklü" yerine "Kullanılabilir" listelenen sürüm.
 
@@ -72,7 +80,7 @@ Bazı durumlarda Visual Studio yüklemenizin zarar görmüş veya bozulmuş olur
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleyin](install-visual-studio.md)
+* [Visual Studio'yu yükleme](install-visual-studio.md)
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
 * [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
 * [Visual Studio yükleme ve yükseltme sorunlarını giderme](troubleshooting-installation-issues.md)

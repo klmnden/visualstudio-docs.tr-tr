@@ -1,7 +1,7 @@
 ---
 title: Projeleri taşıma, geçirme ve yükseltme
 description: Visual Studio ve Visual Studio'nın bir projeyi geçirmek gerektiğinde nasıl karar verir, önceki sürümlerinde oluşturulmuş projeleri Visual Studio 2017'de desteklemeye yönelik bir başvuru.
-ms.date: 10/09/2018
+ms.date: 04/09/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 42554a9479168f2afc7a30a122fccc383b3dc745
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 5935b62984cb3fba5cccad0cbf5633aefc117d54
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366701"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477612"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio için proje geçiş ve yükseltme başvurusu 
 

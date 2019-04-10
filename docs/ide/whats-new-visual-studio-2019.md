@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018161"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477547"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -34,10 +34,10 @@ Visual Studio 2019 ile tüm geliştiriciler, herhangi bir uygulama ve herhangi b
 Yeniliklerin üst düzey bir özeti aşağıda verilmiştir:
 
 * **[Geliştirme](#develop)**: Odaklı ve Gelişmiş performans, anında kod temizleme ve daha iyi arama sonuçları ile üretken kalın.
-* **[İşbirliği](#collaborate)**: Bir bulut öncelikli iş akışı, düzenleme ve hata ayıklama, gerçek zamanlı doğal işbirliği keyfini çıkarın ve sağa doğru Visual Studio'da kod incelemeleri.
+* **[İşbirliği](#collaborate)**: Bir Git öncelikli iş akışı, düzenleme ve hata ayıklama, gerçek zamanlı doğal işbirliği keyfini çıkarın ve sağa doğru Visual Studio'da kod incelemeleri.
 * **[Hata ayıklama](#debug)**: Vurgulayın ve belirli değerlere gidin, bellek kullanımı iyileştirin ve uygulamanızın yürütme otomatik anlık.
 
-Bu sürümdeki yenilikler tam listesini her şey için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes/). 
+Bu sürümdeki yenilikler tam listesini her şey için bkz: [sürüm notları](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Geliştirme
 
@@ -55,11 +55,11 @@ Yeni belirsiz arama mantık hatalarını bağımsız olarak gereken her şeyi bu
 
 ### <a name="refactorings"></a>Yeniden düzenlemeler
 
-Yeni C# yeniden düzenlemeler kodunuzu düzenlemenizi kolaylaştırır. Tuşlarına basarak yeniden düzenlemeler yalnızca çağırma **Ctrl +.** ve gerçekleştirmek istediğiniz eylemi seçme. 
+Çok sayıda yeni ve yüksek oranda yararlı yeniden düzenlemeler vardır C# kolaylaştırmak kodunuzu düzenleme şeklinizdir. Bunlar ampul, önerileri gösterme ve üyeleri arabirimi veya temel sınıfına taşımadan gibi eylemler dahil, ad alanları için ayarlama klasör yapısı, foreach döngü LINQ sorguları ve daha fazla bilgi için dönüştürme.
 
    ![Visual Studio 2019 yeniden düzenlemeler deneyiminin animasyon](media/vs-2019/refactorings.gif)
 
-Yöntem parametreleri kaydırma olanak tanıyan bir de dahil olmak üzere birçok yeni yeniden düzenlemeler, ekledik.
+Tuşlarına basarak yeniden düzenlemeler yalnızca çağırma **Ctrl +.** ve gerçekleştirmek istediğiniz eylemi seçme.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Biz başlangıçta yalnızca desteklenen C# zaman biz öncelikle önizlemesi Int
 
 Ve kullanıyorsanız C#, kendi kod üzerinde özel bir model eğitip özelliği de ekledik.
 
-Intellicode hakkında daha fazla bilgi için bkz: [daha fazla kod, daha az Visual Studio Intellicode kaydırma](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) blog gönderisi. 
+Intellicode hakkında daha fazla bilgi için bkz: [daha fazla kod, daha az Visual Studio Intellicode kaydırma](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/) blog gönderisi.
 
 ### <a name="code-cleanup"></a>Kodu temizleme
 
@@ -142,7 +142,7 @@ Biz özel bir kez C++ veri kesme noktaları alınır ve bunları .NET Core uygul
 
    ![Hata ayıklama Visual Studio 2019 veri kesme noktaları gösteren bir animasyonu](media/vs-2019/debug-data-breakpoints.gif)
 
-Veri kesme noktaları, mi, C++ veya .NET Core kodlamaya şekilde, yalnızca normal kesme noktaları yerleştirmek için iyi bir alternatif olabilir. Veri kesme noktaları ayrıca genel nesne değiştirildiği yerdir bulma gibi senaryoları veya eklenmesi veya bir listeden kaldırılması için mükemmel özellikler. 
+Veri kesme noktaları, mi, C++ veya .NET Core kodlamaya şekilde, yalnızca normal kesme noktaları yerleştirmek için iyi bir alternatif olabilir. Veri kesme noktaları ayrıca genel nesne değiştirildiği yerdir bulma gibi senaryoları veya eklenmesi veya bir listeden kaldırılması için mükemmel özellikler.
 
 Ayrıca, kimin büyük uygulamalar geliştiren bir C++ geliştiricisiyseniz, Visual Studio 2019 simgeler dışında bellekle ilgili sorunları yaşayan olmadan bu uygulamalarda hata ayıklama olanak tanıyan proc yaptı.
 

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232768"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477671"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
 Değişiklik günlüğü Unity için Visual Studio Araçları.
@@ -128,7 +128,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
 -   **Tümleştirme:**
 
-    -   Visual Studio 2019 desteği eklendi.
+    -   Visual Studio 2019 desteği eklendi (en az bir dış betik düzenleyici olarak Visual Studio 2019 kullanabilmek için için Unity 2018.3).
 
     -   Visual Studio Görüntü hizmeti ve kataloğu, HDPI ölçeklendirme, piksel mükemmel görüntüleri ve Tema oluşturma için tam destek ile uyguladık.
 
