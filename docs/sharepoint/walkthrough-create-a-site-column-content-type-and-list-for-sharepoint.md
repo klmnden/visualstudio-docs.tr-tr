@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870405"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504269"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>İzlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma
   Aşağıdaki yordamlar özel SharePoint sitesi sütunlar oluşturma işlemini göstermektedir: veya *alanları*— site sütunlarını kullanan bir içerik türü yanı sıra. Ayrıca, yeni içerik türü kullanan bir liste oluşturma işlemini gösterir.
@@ -46,7 +46,7 @@ ms.locfileid: "57870405"
 
 -   Windows ve SharePoint sürümleri desteklenir.
 
--   Visual Studio.
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>Özel site sütunları oluşturma
  Bu örnek, bir hastane hastalar yönetmek için bir liste oluşturur. İlk olarak, bir SharePoint projesinde oluşturmalısınız [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ve aşağıda belirtildiği gibi site sütunlarını ekleyin.
@@ -67,7 +67,7 @@ ms.locfileid: "57870405"
 
      Korumalı hakkında daha fazla bilgi ve Grup çözümleri için bkz [korumalı çözümle ilgili konular](../sharepoint/sandboxed-solution-considerations.md).
 
-6.  Seçin **son** düğmesi. Proje içinde artık listelenmelidir **Çözüm Gezgini**.
+6.  Seçin **son** düğmesi. Proje artık listelenir **Çözüm Gezgini**.
 
 #### <a name="to-add-site-columns"></a>Site sütunları eklemek için
 
@@ -224,4 +224,4 @@ ms.locfileid: "57870405"
 - [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)
 - [Nasıl yapılır: Özel alan türü oluşturma](http://go.microsoft.com/fwlink/?LinkId=192079)
 - [İçerik türleri](http://go.microsoft.com/fwlink/?LinkId=192080)
-- [Sütunları](http://go.microsoft.com/fwlink/?LinkId=192081)
+- [Sütunlar](http://go.microsoft.com/fwlink/?LinkId=192081)

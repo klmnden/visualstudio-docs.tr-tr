@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366711"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504334"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -147,6 +147,28 @@ Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: 
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>Veri kesme noktaları (.NET Core 3.0 veya üzeri)
+
+Veri kesme noktaları, belirli bir nesnenin özellik değiştiğinde yürütmeyi Kes.
+
+**Veri kesme noktası ayarlamak için**
+
+1. Bir .NET Core projesinde hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin.
+
+2. İçinde **Otolar**, **Watch**, veya **Yereller** penceresinde bir özelliğe sağ tıklayın ve **değeri değiştiğinde kesmek** bağlam menüsünde.
+
+    ![Veri kesme noktası yönetilen](../debugger/media/managed-data-breakpoint.png "yönetilen veri kesme noktası")
+
+.NET core'da veri kesme noktaları için çalışmaz:
+
+- Araç İpucu'nda, Yereller, Otomatikler, Genişletilebilir olmayan ya da Gözcü penceresi özellikleri
+- Statik değişkenler
+- DebuggerTypeProxy özniteliği olan sınıfları
+- İçinde yapının alanları 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>Veri kesme noktaları (yalnızca yerel C++'da) ayarla
 
@@ -156,7 +178,7 @@ Görsel olarak kesme noktalarını izlemek için kod yürütme sırasında bkz: 
 
 1.  Bir C++ projesinde hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin. Üzerinde **hata ayıklama** menüsünde seçin **yeni kesme noktası** > **veri kesme noktası**
 
-    Belirleyebilirsiniz **yeni** > **veri kesme noktası** içinde **kesme noktaları** penceresi.
+    Belirleyebilirsiniz **yeni** > **veri kesme noktası** içinde **kesme noktaları** penceresi ya da bir öğeyi sağ **Otolar**, **Watch**, veya **Yereller** penceresi ve select **değeri değiştiğinde kesmek**bağlam menüsünde.
 
 2.  İçinde **adresi** bir bellek adresi ya da bir bellek adresini değerlendiren bir ifade yazın. Örneğin `&avar` değiştiğinde ayırmak için değişken içeriğini `avar` değişiklikler.
 

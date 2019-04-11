@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869024"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504113"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Kullanmaya başlama (SharePoint geliştirme için Visual Studio'da) alma
   Bu bölüm ile çalışmaya başlamanıza yardımcı olur. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] yararlanan SharePoint çözümleri geliştirmek üzere [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] ve [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -39,10 +39,11 @@ ms.locfileid: "57869024"
 |Konu|Açıklama|
 |-----------|-----------------|
 |[SharePoint Çözümleri Geliştirme](../sharepoint/developing-sharepoint-solutions.md)|SharePoint geliştirmeye açıklar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[SharePoint için bir genel geliştirme ortamını ayarlama](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Bir SharePoint çözümünü oluşturmak için gerekli yüklemeler açıklar|
 |[SharePoint için site sütunları, içerik türleri ve listeler oluşturma](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|SharePoint geliştirme için Visual Studio araçları kullanarak SharePoint için özel site sütunları, içerik türleri ve listeler oluşturma işlemini açıklar.|
 |[SharePoint iş akışı çözümleri oluşturma](../sharepoint/creating-sharepoint-workflow-solutions.md)|İş akışı tasarım ve geliştirme açıklar.|
 |[İş verilerini SharePoint ile tümleştirme](../sharepoint/integrating-business-data-into-sharepoint.md)|İş verilerini tümleştirmeyi İş Verileri Bağlantısı (BDC) modelleri'ne bağlanan açıklar.|
-|[SharePoint web bölümleri Creatie](../sharepoint/creating-web-parts-for-sharepoint.md)|Web Bölümleri ve Web Bölümü sayfalarına, bir SharePoint sitesinde sayfaların yapı taşlarını tanımlar.|
+|[SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md)|Web Bölümleri ve Web Bölümü sayfalarına, bir SharePoint sitesinde sayfaların yapı taşlarını tanımlar.|
 |[SharePoint için uygulama sayfaları oluşturma](../sharepoint/creating-application-pages-for-sharepoint.md)|Tasarımcı kullanarak uygulama sayfaları tasarlanacağını açıklar.|
 |[Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|SharePoint'te özel, yeniden kullanılabilir denetimler için uygulama sayfaları ve Web Bölümleri oluşturulacağını açıklar.|
 |[Sunucu Gezgini kullanarak SharePoint bağlantılarına göz atın](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Visual Studio araç penceresinde bir SharePoint site bileşenlerini gezinmek açıklar.|

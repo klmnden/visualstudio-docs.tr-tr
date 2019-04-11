@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c9e1540e782cb5423ffc82ccfb46b9376842762f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789549"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504217"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Hızlı Başlangıç: C++ ile Visual Studio hata ayıklayıcısını kullanarak hata ayıklama
 
@@ -138,4 +138,4 @@ Düzenle ve devam et kullanma ve özellik kısıtlamaları hakkında daha fazla 
 Bu öğreticide, kodu adımlayın hata ayıklayıcıyı başlatın ve değişkenleri denetleyin öğrendiniz. Daha fazla bilgi için bağlantılar hata ayıklayıcı özelliklerine genel bir bakış almak isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
-> [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+> [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

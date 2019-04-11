@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790543"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504308"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio özellikleri
 
@@ -100,7 +100,7 @@ Visual Studio, uygulamaları ve oyunları macOS, Linux ve Windows için yanı s�
 
 ## <a name="debug-test-and-improve-your-code"></a>Hata ayıklama, test etme ve kodunuzu geliştirme
 
-Kod yazmak, çalıştırmak ve hataları ve performans için test gerekir. Visual Studio'nun en son hata ayıklama sistem projenizdeki yerel veya uzak cihaz üzerinde çalışan kodda hata ayıklamak sağlayan bir [cihaz öykünücüsünü](../cross-platform/visual-studio-emulator-for-android.md). Aynı anda bir deyim kod adım adım ve kullandıkça değişkenleri denetleyin. Belirtilen bir koşul true olduğunda yalnızca isabet kesme noktaları ayarlayabilirsiniz. Hata ayıklama seçenekleri yönetilen kod düzenleyicisinde kendisi, böylece kodunuzdan çıkmanıza gerek yoktur. Visual Studio'da hata ayıklama hakkında daha fazla bilgi edinmek için bkz. [hata ayıklayıcısı özellik Turu](../debugger/debugger-feature-tour.md).
+Kod yazmak, çalıştırmak ve hataları ve performans için test gerekir. Visual Studio'nun en son hata ayıklama sistem projenizdeki yerel veya uzak cihaz üzerinde çalışan kodda hata ayıklamak sağlayan bir [cihaz öykünücüsünü](../cross-platform/visual-studio-emulator-for-android.md). Aynı anda bir deyim kod adım adım ve kullandıkça değişkenleri denetleyin. Belirtilen bir koşul true olduğunda yalnızca isabet kesme noktaları ayarlayabilirsiniz. Hata ayıklama seçenekleri yönetilen kod düzenleyicisinde kendisi, böylece kodunuzdan çıkmanıza gerek yoktur. Visual Studio'da hata ayıklama hakkında daha fazla bilgi edinmek için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 Visual Studio'nun kullanıma kullanıma alma uygulamalarınızın performansını iyileştirme hakkında daha fazla bilgi edinmek için [profil oluşturma](../profiling/profiling-feature-tour.md) özelliği.
 
@@ -139,5 +139,5 @@ Visual Studio'yu genişletme hakkında daha fazla bilgi için bkz: [Visual Studi
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual Studio IDE'ye genel bakış](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017'deki yenilikler](../ide/whats-new-visual-studio-2017.md)
-- [Visual Studio 2019 yenilikler](../ide/whats-new-visual-studio-2019.md)
+- [Visual Studio 2017’deki yenilikler](../ide/whats-new-visual-studio-2017.md)
+- [Visual Studio 2019’daki yenilikler](../ide/whats-new-visual-studio-2019.md)

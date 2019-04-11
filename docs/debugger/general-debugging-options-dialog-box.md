@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526548"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504425"
 ---
 # <a name="general-debugging-options"></a>Genel hata ayıklama seçenekleri
 
@@ -150,7 +150,7 @@ Bir DLL'nin dışa aktarma tablosunda hangi sembollerin kullanılabilir görmek 
 
 - **(Yalnızca yerel) eski kod hakkında uyar**:   Eski kod hakkında uyarı alın.
 
-**Çalıştır'ı tıklatın Göster düğmesini düzenleyicide hata ayıklama sırasında**: Bu seçenek belirlendiğinde, [tıklanan satıra kadar Çalıştır](debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) hata ayıklama sırasında düğmesi gösterilir.
+**Çalıştır'ı tıklatın Göster düğmesini düzenleyicide hata ayıklama sırasında**: Bu seçenek belirlendiğinde, [tıklanan satıra kadar Çalıştır](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) hata ayıklama sırasında düğmesi gösterilir.
 
 **Hata ayıklama durdurulduğunda Konsolu otomatik olarak kapatmak**: Hata ayıklama oturumu sonunda Konsolu kapatmak için Visual Studio söyler.
 
@@ -172,5 +172,5 @@ Visual Studio'nun daha eski bir sürümü kullanıyorsanız, bazı ek seçenekle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio’da hata ayıklama](../debugger/index.md)
-- [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+- [Visual Studio'da Hata Ayıklama](../debugger/index.md)
+- [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

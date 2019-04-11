@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed1f50dac33251f1daaad47bd8c2a64688025e32
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790556"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504230"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Hızlı Başlangıç: Visual Studio hata ayıklayıcısı ile ASP.NET hatalarını ayıklama
 
@@ -138,4 +138,4 @@ Düzenle ve devam et kullanma ve özellik kısıtlamaları hakkında daha fazla 
 Bu öğreticide, kodu adımlayın hata ayıklayıcıyı başlatın ve değişkenleri denetleyin öğrendiniz. Daha fazla bilgi için bağlantılar hata ayıklayıcı özelliklerine genel bir bakış almak isteyebilirsiniz.
 
 > [!div class="nextstepaction"]
-> [Hata ayıklayıcısı özellik turu](../debugger/debugger-feature-tour.md)
+> [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)

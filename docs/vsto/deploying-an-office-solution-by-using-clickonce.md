@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863935"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504438"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce kullanarak Office çözümü dağıtma
   ClickOnce kullanırsanız Office çözümünüzü daha az sayıda adımla dağıtabilirsiniz. Güncelleştirmeleri yayımlarsanız, çözümünüz bunları otomatik olarak algılar ve yükler. Bununla birlikte, ClickOnce, çözümünüzü bir bilgisayarın her kullanıcısı için ayrı ayrı yüklemenizi gerektirir. Bu nedenle, Windows Installer kullanmayı düşünmeniz gerekir (*.msi*) aynı bilgisayarda çözümünüzü birden fazla kullanıcı çalıştıracaksa.
@@ -27,21 +27,21 @@ ms.locfileid: "54863935"
 
 - [Çözümü yayımlama](#Publish)
 
-- [Nasıl çözüme güven kazandırmak istediğinize karar verme](#Trust)
+- [Çözüme nasıl güven kazandırmak istediğinize karar verme](#Trust)
 
 - [Kullanıcıların çözümü yüklemesine yardımcı olma](#Helping)
 
-- [Bir çözümün belgesini son kullanıcının bilgisayarına koyma (yalnızca belge düzeyinde özelleştirmeler) yerleştirin.](#Put)
+- [Bir çözümün belgesini son kullanıcının bilgisayarına koyma (yalnızca belge düzeyinde özelleştirmeler)](#Put)
 
-- [Bir çözümün belgesini SharePoint (yalnızca belge düzeyinde özelleştirmeler) çalıştıran bir sunucuya koyma yerleştirin](#SharePoint)
+- [Bir çözümün belgesini SharePoint çalıştıran bir sunucuya koyma (yalnızca belge düzeyinde özelleştirmeler)](#SharePoint)
 
 - [Özel bir yükleyici oluşturma](#Custom)
 
 - [Güncelleştirme yayımlama](#Update)
 
-- [Bir çözümün yükleme konumunu değiştirme](#Location)
+- [Çözümün yükleme konumunu değiştirme](#Location)
 
-- [Bir çözümü önceki bir sürüme geri alma](#Roll)
+- [Çözümü önceki bir sürüme geri alma](#Roll)
 
   Bir Windows Installer dosyası oluşturarak bir Office çözümünü dağıtma hakkında daha fazla bilgi için bkz. [Windows Installer kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -92,7 +92,7 @@ ms.locfileid: "54863935"
     |Seçenek|Açıklama|
     |------------|-----------------|
     |**Bileşen satıcısının web sitesinden önkoşulları karşıdan yükleyin**|Kullanıcıdan, bu önkoşulları satıcının sitesinden indirmesi ve yüklemesi istenir.|
-    |**Uygulamamla aynı konumdan önkoşulları karşıdan yükleyin**|Önkoşul yazılımı çözümle birlikte yüklenir. Bu seçeneği tercih ederseniz, Visual Studio sizin için önkoşul paketlerinin tümünü yayımlama konumuna kopyalar. Bu seçeneğin çalışması için önkoşul paketleri geliştirme bilgisayarında olmalıdır.|
+    |**Uygulamam ile aynı konumdan önkoşulları karşıdan yükleyin**|Önkoşul yazılımı çözümle birlikte yüklenir. Bu seçeneği tercih ederseniz, Visual Studio sizin için önkoşul paketlerinin tümünü yayımlama konumuna kopyalar. Bu seçeneğin çalışması için önkoşul paketleri geliştirme bilgisayarında olmalıdır.|
     |**Aşağıdaki konumdan önkoşulları karşıdan yükleyin**|Visual Studio tüm önkoşul paketlerini belirttiğiniz konuma kopyalar ve bunları çözümle birlikte yükler.|
 
      Bkz: [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md).
@@ -139,7 +139,7 @@ ms.locfileid: "54863935"
  Bir belge düzeyi özelleştirmeyi dağıtıyorsanız ve belgeyi kullanıcının bilgisayarında bir klasöre yerleştirin veya belgeyi bir SharePoint sitesinde kullanılabilir hale getirmek istiyorsanız, Office belgesinin konumunu güvendiğinden emin olun. Bkz: [belgelere güven verme](../vsto/granting-trust-to-documents.md).
 
 ##  <a name="Helping"></a> Kullanıcıların çözümü yüklemesine yardımcı olma
- Kullanıcılar kurulum programını çalıştırarak, dağıtım bildirimini açarak veya belge düzeyinde bir özelleştirme olması durumunda belgeyi doğrudan açarak çözümü yükleyebilirler. En iyi uygulama olarak, kullanıcılar çözümünüzü kurulum programını kullanarak yüklemelidir. Diğer iki yaklaşım önkoşul yazılımlarının yüklendiğinden emin garanti etmez. Kullanıcılar belgeyi yükleme konumundan açmak isterse, Office uygulamasının Güven Merkezi'nde bu konumu güvenilir konumlar listesine eklemeleri gerekir.
+ Kullanıcıların çözümü dağıtım bildirimini açarak Kurulum programını çalıştırarak veya belge düzeyi özelleştirme sırasında belgeyi doğrudan açarak yükleyebilirsiniz. En iyi uygulama olarak, kullanıcılar çözümünüzü kurulum programını kullanarak yüklemelidir. Diğer iki yaklaşım önkoşul yazılımlarının yüklendiğinden emin garanti etmez. Kullanıcılar belgeyi yükleme konumundan açmak isterse, Office uygulamasının Güven Merkezi'nde bu konumu güvenilir konumlar listesine eklemeleri gerekir.
 
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Belge düzeyinde bir özelleştirmenin belgesini açma
  Kullanıcılar, belge düzeyinde bir özelleştirmenin belgesini doğrudan yükleme konumundan açabilirler veya belgeyi kendi yerel bilgisayarlarına kopyalayıp sonra bu kopyayı açabilirler.
@@ -190,7 +190,7 @@ ms.locfileid: "54863935"
 ##  <a name="Put"></a> Bir çözümün belgesini son kullanıcının bilgisayarına koyma (yalnızca belge düzeyinde özelleştirmeler) yerleştirin.
  Çözümünüzün belgesini, son kullanıcının bilgisayarına bunları için dağıtım sonrası eylemi oluşturarak kopyalayabilirsiniz. Böylece, çözümünüzü yükledikten sonra belgeyi kendi bilgisayarlarına yükleme konumundan el ile kopyalamak kullanıcı yok. Dağıtım sonrası eylemi tanımlayan bir sınıf oluşturun, derleme ve çözüm yayımlama, uygulama bildirimini değiştirin ve uygulama ve dağıtım bildirimini yeniden imzalamanız gerekecektir.
 
- Aşağıdaki yordamlarda projenizin adına olduğunu varsayın **ExcelWorkbook** ve çözümü yayımlama **C:\publish** bilgisayarınızda dizin.
+ Aşağıdaki yordamlarda projenizin adına olduğunu varsayın **ExcelWorkbook** ve oluşturulan bir klasöre adlı çözüm yayımlama **C:\publish** bilgisayarınızda.
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Dağıtım sonrası eylemi tanımlayan bir sınıf oluşturma
 
@@ -253,7 +253,7 @@ ms.locfileid: "54863935"
 
 ### <a name="modify-the-application-manifest"></a>Uygulama bildiriminde değişiklik yapma
 
-1.  Açık **c:\publish** kullanarak dizin **dosya Gezgini**.
+1.  Çözüm dizini **c:\publish**, kullanarak **dosya Gezgini**.
 
 2.  Açık **uygulama dosyaları** çözümünüzü sürümü yayımlanan klasörü ve en son karşılık gelen klasörü açın.
 
@@ -336,11 +336,11 @@ ms.locfileid: "54863935"
              Kullanıcılar belgeyi SharePoint sitesinden açtığında, belge açılır ve özelleştirme yüklenir. Kullanıcılar belgeyi kendi masaüstlerine kopyalayabilir. Belgedeki özellikler belgenin ağ konumuna işaret ettiğinden, özelleştirme çalışmaya devam edecektir.
 
 ##  <a name="Custom"></a> Özel bir yükleyici oluşturma
- Çözümü yayımladığınızda sizin için oluşturulan Kurulum programını kullanmak yerine, Office çözümünüz için özel bir yükleyici oluşturabilirsiniz. Örneğin, yüklemeyi başlatmak için bir oturum açma komut dosyası kullanabilir veya çözümü, kullanıcı etkileşimi olmadan yüklemek için bir toplu iş dosyası kullanabilirsiniz. Bu senaryolar en çok, önkoşullar son kullanıcı bilgisayarlarında zaten yüklü olduğunda işe yarar.
+ Çözümü yayımladığınızda sizin için oluşturulan Kurulum programını kullanmak yerine, Office çözümünüz için özel bir yükleyici oluşturabilirsiniz. Örneğin, bir oturum yüklemeyi başlatmak için komut dosyası kullanabilir veya çözümü kullanıcı etkileşimi olmadan yüklemek için bir toplu iş dosyası kullanabilirsiniz. Bu senaryolar en çok, önkoşullar son kullanıcı bilgisayarlarında zaten yüklü olduğunda işe yarar.
 
  Özel yükleme işleminizin bir parçası, Office çözümleri için yükleyici aracını çağırın (*VSTOInstaller.exe*), varsayılan olarak şu konumda yüklü:
 
- *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Araç bu konumda değilse, kullanabileceğiniz **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\vsto Runtime setup\v4\ınstallerpath** veya **hkey_local_machıne\software\wow6432node\microsoft\vsto Runtime Setup\v4 \InstallerPath** bu aracın yolunu bulmak için kayıt defteri anahtarı.
 
@@ -359,7 +359,7 @@ ms.locfileid: "54863935"
 |Hata Kodu|Tanım|
 |----------------|----------------|
 |0|Çözüm başarıyla yüklendi ya da kaldırıldı veya VSTOInstaller Yardımı görüntülendi.|
-|-100|Bir veya daha fazla komut satırı seçeneği geçerli değil veya bir kereden fazla ayarlandı. Daha fazla bilgi için girin "vstoinstaller /?" veya [ClickOnce Office çözümü için özel bir yükleyici oluşturma](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-100|Bir veya daha fazla komut satırı seçeneği geçerli değil veya birden çok kez ayarlanmış. Daha fazla bilgi için girin "vstoinstaller /?" veya [ClickOnce Office çözümü için özel bir yükleyici oluşturma](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
 |-101|Bir veya daha fazla komut satırı seçeneği geçerli değil. Daha fazla bilgi için "vstoinstaller /?" girin.|
 |-200|Dağıtım bildirimi URI'si geçerli değil. Daha fazla bilgi için "vstoinstaller /?" girin.|
 |-201|Dağıtım bildirimi geçerli olmadığından çözüm yüklenemedi. Bkz: [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).|

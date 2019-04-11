@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 5935b62984cb3fba5cccad0cbf5633aefc117d54
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 09d0ab3142c1a35521c94ba86a377fc0b90c4821
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477612"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504386"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio için proje geçiş ve yükseltme başvurusu 
 
@@ -139,7 +139,7 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | LightSwitch | LightSwitch, Visual Studio 2017 veya Visual Studio 2019'te artık desteklenmiyor. Visual Studio 2012 ile oluşturulan ve daha önce Visual Studio 2013 veya Visual Studio 2015'te açtığınız projeler yükseltilir ve bundan sonra yalnızca Visual Studio 2013 veya Visual Studio 2015'te açılabilir. |
 | Test Yükle | Web performansı ve yük testi özellikleri Visual Studio 2019 ' kullanım dışı bırakılmıştır. <br/><br/>Son çıkışından bu yük testi için Visual Studio 2019 olacaktır. Alternatif yük testi Apache JMeter, Akamai CloudTest Blazemeter gibi araçları kullanın.  |
 | Visual Studio için Microsoft Azure Araçları | Bu proje türleri'ni açmak için ilk yükleme [.NET için Azure SDK'sı](http://azure.microsoft.com/downloads/), sonra projeyi açabilirsiniz. Gerekirse, projenizi güncelleştirilir. |
-| Microsoft Test Manager | Artık Microsoft Test Yöneticisi ve geri bildirim istemcisi Visual Studio'da Visual Studio 2019 başlangıç yayımlayan. <br/><br/>Azure Test planları (Azure DevOps parçası) el ile ve araştırmacı test gereksinimlerinizde yararlanın. Buradan daha fazla okuyun. |
+| Microsoft Test Manager | Microsoft Test Yöneticisi ve geri bildirim istemcisi artık Visual Studio'da sevkiyat, Visual Studio 2019 başlatılıyor. <br/><br/>Azure Test planları (Azure DevOps parçası) el ile ve araştırmacı test gereksinimlerinizde yararlanın. Daha fazla bilgi için [Microsoft Test Yöneticisi'ni Kullanım Kılavuzu](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) Azure DevOps belgeleri sayfasında. |
 | Model-View-Controller framework (ASP.NET MVC) | MVC sürümleri ve Visual Studio desteği:<ul><li>MVC 2 ve MVC 3, Visual Studio 2010 SP1'i destekler. MVC 4 desteği aracılığıyla eklenen [ASP.NET 4 MVC 4 ile Visual Studio 2010 SP1'i indirmek için](https://www.microsoft.com/download/details.aspx?id=30683)</li><li>Visual Studio 2012 yalnızca MVC 3 ve MVC 4 destekler.</li><li>Visual Studio 2013 yalnızca MVC 4 ve MVC 5 destekler.</li><li>Visual Studio 2019, Visual Studio 2017 ve Visual Studio 2015 (var olan projeleri açın ancak yenilerini oluşturma değil) MVC 4 ve MVC 5 desteği</li></ul><br/>MVC sürümlerini yükseltme:<ul><li>MVC 2'den MVC 3'e otomatik olarak yükseltme hakkında daha fazla bilgi için bkz: [ASP.NET MVC 3 uygulama Yükseltici](http://go.microsoft.com/fwlink/?LinkID=238178).</li><li>MVC 2'den MVC 3'e el ile yükseltme hakkında daha fazla bilgi için bkz: [ASP.NET MVC 2 projesini ASP.NET MVC 3 araç güncelleştirmesine yükseltme](http://go.microsoft.com/fwlink/?linkid=238178).</li><li>MVC3 MVC 4'e el ile yükseltme hakkında daha fazla bilgi için bkz. [ASP.NET MVC 3 projesini ASP.NET MVC 4'e yükseltme](http://www.asp.net/whitepapers/mvc4-release-notes). Projeniz .NET Framework 3.5 SP1'i hedefliyorsa, .NET Framework 4 kullanacak şekilde yeniden hedeflemeniz gerekir.</li><li>MVC 4'ten MVC 5'e el ile yükseltme hakkında daha fazla bilgi için bkz: [bir ASP.NET MVC 4 ve Web API projelerini ASP.NET MVC 5 ve Web API 2'ye yükseltme](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2).</li></ul> |
 | Modelleme | Visual Studio'nun projeyi otomatik olarak güncelleştirmesine izin verirseniz, Visual Studio 2015, Visual Studio 2013 veya Visual Studio 2012 açabilirsiniz.<br/><br/>Visual Studio 2015 ve proje açılabilir ve bu sürümlerde değiştirilmiş olduğundan, modelleme projesine biçimi değiştirilmemiştir. Ancak, Visual Studio 2017 ve Visual Studio 2019 davranışındaki farklılıklar vardır:<ul><li>Modelleme projeleri artık "Bağımlılık doğrulama" projelerinde menüler ve şablonları denir.</li><li>UML diyagramları, Visual Studio 2017 ve Visual Studio 2019'artık desteklenmiyor. UML dosyaları Çözüm Gezgini'nde önce listelenir, ancak XML dosyası olarak açılır. Visual Studio 2015, görüntülemek, oluşturmak veya UML diyagramları düzenlemek için kullanın.</li><li>Modelleme projesi oluşturulurken Visual Studio 2019 ' artık mimari bağımlılık doğrulama gerçekleştirilir. Her kod projesini yerleşik olarak bunun yerine, doğrulama gerçekleştirilir. Bu değişiklik, modelleme projesine etkilemez, ancak Doğrulanmakta olan kod projeleri için değişiklik gerektirmez. Visual Studio 2019, otomatik olarak kod projeleri için gereken değişiklikleri yapabilirsiniz.</li></ul> |
 | MSI kurulumu (vdproj) | InstallShield projeyi görürsünüz. |

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed00a776671bcaa48ddf5fe7e15510df18971dfa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b46b1b5fa7952fbd1a14dc9eca7f67c493ea2807
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636144"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504372"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce uygulamalarını yayımlama
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ilk kez uygulama yayımlama özellikleri Yayımlama Sihirbazı'nı kullanarak ayarlayabilirsiniz. Yalnızca birkaç özellikleri Sihirbazı'nda bulunur; diğer tüm özellikleri varsayılan değerlerine ayarlanır.
@@ -82,7 +82,7 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 |[Nasıl yapılır: ClickOnce Varsayılan Web sayfasını özelleştirme](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Otomatik olarak oluşturulur ve uygulama ile birlikte yayımlanan Web sayfasında özelleştirmeyi açıklar.|
 |[Nasıl yapılır: CD yüklemeleri için AutoStart'ı etkinleştir](../deployment/how-to-enable-autostart-for-cd-installations.md)|AutoStart'ı etkinleştirin; böylelikle medya eklendiğinde, ClickOnce uygulamasını otomatik olarak başlatıldığını açıklar.|
 
-## <a name="related-tpics"></a>İlgili tpics
+## <a name="related-topics"></a>İlgili konular
 
 |Başlık|Açıklama|
 |-----------|-----------------|
