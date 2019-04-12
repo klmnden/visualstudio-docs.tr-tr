@@ -23,23 +23,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597432"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537484"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Nesnelerin özel görünümlerini oluşturma (C#, Visual Basic, C++)
 Visual Studio hata ayıklayıcı değişken pencerelerinde veri türleri görüntüleme biçimini özelleştirebilirsiniz.
 
 ## <a name="native-code"></a>Yerel kod
 
-C++ kodu için Natvis çerçevesini kullanarak özel veri türü genişletmeleri açıklandığı ekleyebilirsiniz [hata ayıklayıcıda yerel nesnesinin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects). C + +/ CLI kodu, ayrıca kullanabileceğiniz burada bu makalede açıklanan öznitelikleri.
+İçin C++ kodu ekleyebileceğiniz Natvis çerçevesini kullanarak özel veri türü genişletmeleri açıklandığı [özel görünümlerini oluşturma C++ hata ayıklayıcısı nesnelerini](/visualstudio/debugger/create-custom-views-of-native-objects). İçin C++/CLI kodunu ayrıca kullanabileceğiniz burada bu makalede açıklanan öznitelikleri.
 
 ## <a name="attributes"></a>Öznitelikler
 
-İçinde C#, Visual Basic ve C++ (C + +/ CLI kodu), özel veri kullanma genişletmeleri ekleyebilirsiniz <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, ve <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+İçinde C#, Visual Basic ve C++ (C++/CLI kodu), özel veri kullanma genişletmeleri ekleyebilirsiniz <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, ve <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
 İçinde [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] kod, Visual Basic DebuggerBrowsable özniteliği desteklemiyor. Bu sınırlama, .NET Framework'ün daha yeni sürümlerde kaldırılmıştır.
 
@@ -49,7 +49,7 @@ Herhangi bir yönetilen veri türü görüntülenecek Görselleştirici yazabili
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [DebuggerTypeProxy Özniteliğini Kullanma](../debugger/using-debuggertypeproxy-attribute.md)
-- [DebuggerDisplay Özniteliğini Kullanma](../debugger/using-the-debuggerdisplay-attribute.md)
+- [DebuggerDisplay özniteliğini kullanma göstermek hangi hata ayıklayıcının işlemi durdurmasını](../debugger/using-the-debuggerdisplay-attribute.md)
+- [Debugger DebuggerTypeProxy özniteliğini kullanma göstermek için ne tür söyleyin](../debugger/using-debuggertypeproxy-attribute.md)
 - [İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)
 - [Hata Ayıklayıcı Görüntü Öznitelikleriyle Hata Ayıklamayı Geliştirme](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

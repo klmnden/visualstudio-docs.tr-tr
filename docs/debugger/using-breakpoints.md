@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504334"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537604"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcıda kesme noktaları kullanma
 Kesme noktaları, geliştirici araç kutusundaki en önemli hata ayıklama tekniklerinden biridir. Hata ayıklayıcı yürütme duraklatmak istediğiniz yere kesme noktalarını ayarlayın. Örneğin, belirli bir kesme noktası çağrı yığınına bakın veya kod değişkenleri durumunu görmek isteyebilirsiniz. Bu, kodda hata ayıklamak için girişimde ilk kez ise, okumak isteyebilirsiniz [yeni başlayanlar için hata ayıklama](../debugger/debugging-absolute-beginners.md) bu makalede geçmeden önce.
@@ -176,13 +176,13 @@ Veri kesme noktaları, belirli bir nesnenin özellik değiştiğinde yürütmeyi
 
 **Veri kesme noktası ayarlamak için:**
 
-1.  Bir C++ projesinde hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin. Üzerinde **hata ayıklama** menüsünde seçin **yeni kesme noktası** > **veri kesme noktası**
+1. Bir C++ projesinde hata ayıklamayı başlatmak ve bir kesme noktası ulaşılana kadar bekleyin. Üzerinde **hata ayıklama** menüsünde seçin **yeni kesme noktası** > **veri kesme noktası**
 
     Belirleyebilirsiniz **yeni** > **veri kesme noktası** içinde **kesme noktaları** penceresi ya da bir öğeyi sağ **Otolar**, **Watch**, veya **Yereller** penceresi ve select **değeri değiştiğinde kesmek**bağlam menüsünde.
 
-2.  İçinde **adresi** bir bellek adresi ya da bir bellek adresini değerlendiren bir ifade yazın. Örneğin `&avar` değiştiğinde ayırmak için değişken içeriğini `avar` değişiklikler.
+2. İçinde **adresi** bir bellek adresi ya da bir bellek adresini değerlendiren bir ifade yazın. Örneğin `&avar` değiştiğinde ayırmak için değişken içeriğini `avar` değişiklikler.
 
-3.  İçinde **bayt sayısı** açılır menüsünde, hata ayıklayıcının izlemesini istediğiniz bayt sayısını seçin. Örneğin, **4**, hata ayıklayıcı başlayan dört baytı izleyecek `&avar` ve bu baytlardan birini değeri değiştiğinde kesecektir.
+3. İçinde **bayt sayısı** açılır menüsünde, hata ayıklayıcının izlemesini istediğiniz bayt sayısını seçin. Örneğin, **4**, hata ayıklayıcı başlayan dört baytı izleyecek `&avar` ve bu baytlardan birini değeri değiştiğinde kesecektir.
 
 Veri kesme noktaları, aşağıdaki koşullar altında çalışmaz:
 -   Değil ayıklanmakta olan bir işlem bellek konumuna yazar.
@@ -328,7 +328,7 @@ Dize değerleri çift tırnak içine alın. Kullanarak ifadeleri birleştirebili
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hata ayıklama nedir?](../debugger/what-is-debugging.md)
+- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
 - [Daha iyi yazma C# kullanarak Visual Studio code](../debugger/write-better-code-with-visual-studio.md)
 - [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
 - [Visual Studio hata ayıklayıcısında kesme noktaları sorunlarını giderme](../debugger/troubleshooting-breakpoints.md)

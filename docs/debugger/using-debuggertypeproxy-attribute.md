@@ -1,5 +1,5 @@
 ---
-title: DebuggerTypeProxy özniteliğini kullanma | Microsoft Docs
+title: DebuggerTypeProxy kullanarak özel bir tür görüntüleme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717500"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537549"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy özniteliğini kullanma (C#, Visual Basic, C + +/ CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy özniteliğini kullanma göstermek için ne tür hata ayıklayıcının işlemi durdurmasını (C#, Visual Basic C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> bir proxy ya da bir tür ve tür şeklini hata ayıklayıcı pencerelerinde görüntülenen değişiklikler için stand-in belirtir. Bir proxy sahip bir değişken görüntülediğinizde, proxy özgün türü için anlamına gelir **görüntüleme**. Proxy türü yalnızca genel üyeleri hata ayıklayıcı değişken penceresinde görüntüler. Özel üyeler görüntülenmez.
 
@@ -32,7 +32,7 @@ Bu öznitelik için uygulanabilir:
 
 - Yapılar
 - Sınıflar
-- Derlemeleri
+- Bütünleştirilmiş kodlar
 
 > [!NOTE]
 > Yerel kod için bu öznitelik yalnızca C + desteklenir +/ CLI kodu.

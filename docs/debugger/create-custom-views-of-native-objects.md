@@ -1,5 +1,5 @@
 ---
-title: Yerel nesnelerin özel görünümlerini oluşturma
+title: Özel görünümlerini oluşturma C++ nesneleri
 description: Visual Studio hata ayıklayıcıda yerel türleri görüntüleme biçimini özelleştirmek için Natvis çerçevesini kullanın
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428810"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537583"
 ---
-# <a name="create-custom-views-of-native-objects-in-the-debugger"></a>Hata ayıklayıcıda yerel nesnelerin özel görünümlerini oluşturma
+# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Özel görünümlerini oluşturma C++ Hata Ayıklayıcı'daki nesneleri
 
 Visual Studio *Natvis* framework özelleştirir yerel türler hata ayıklayıcı değişken pencerelerinde gibi görünecek şekilde **Yereller** ve **Watch** windows ve **DataTips**. Natvis görselleştirmeler, hata ayıklama sırasında daha görünür oluşturma türleri yararlanmanıza yardımcı olabilir.
 
@@ -165,7 +165,7 @@ Hata ayıklayıcısı bir görselleştirme girişinde hatalarla karşılaştığ
 
 **Natvis tanılama üzerinde etkinleştirmek için:**
 
-- Altında **Araçları** > **seçenekleri** (veya **hata ayıklama** > **seçenekleri**) > **hataayıklama**  >  **Çıkış penceresine**ayarlayın **Natvis tanılama iletileri (yalnızca C++)** için **hata**, **uyarı**, veya  **Ayrıntılı**ve ardından **Tamam**.
+- Altında **Araçları** > **seçenekleri** (veya **hata ayıklama** > **seçenekleri**) > **hataayıklama**  >  **Çıkış penceresine**ayarlayın **Natvis tanılama iletileri (C++ yalnızca)** için **hata**, **uyarı** , veya **ayrıntılı**ve ardından **Tamam**.
 
 Hataları görünür **çıkış** penceresi.
 

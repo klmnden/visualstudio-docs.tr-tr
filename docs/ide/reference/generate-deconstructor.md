@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58159185"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537536"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Visual Studio'da bir deconstructor oluşturun
 
@@ -26,21 +26,21 @@ Bu kod oluşturma için geçerlidir:
 
 **ne zaman:** Düzgün türüne otomatik olarak Ayrıştır istiyorsunuz.
 
-**Neden:** Bu özellik sizin için doğru out parametreleri ile Saplaması ancak bir deconstructor el ile yazabilirsiniz.
+**Neden:** Bir deconstructor el ile yazabilirsiniz, ancak bu özellik saplama sizin için doğru out parametreleri ile oluşturur.
 
-## <a name="generate-deconstructor"></a>Yıkıcı oluşturma
+## <a name="generate-a-deconstructor"></a>Bir deconstructor oluştur
 
-1. İstenen çıkış belirtilen parametrelerle yeni bir türü bildirin. Bu bildirim, deconstruct örneği yok, bildirim eşleştirme bulunamadığında hataya neden olur.
+1. İstenen çıkış belirtilen parametrelerle yeni bir türü bildirin. Bildirim eşleştirme hiçbir deconstruct örneği bulunamadığında bu bildirim hataya neden olur.
 
    ![Eksik deconstructor hatası](media/deconstruct.png)
 
-2. Ardından, aşağıdakilerden birini yapın:
+2. Aşağıdaki adımlardan birini uygulayın:
 
    - **Klavye**
-      - Tuşuna basın, bildiriminde imlecinizi ile **Ctrl**+**.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
+      - İmleç, bildirimi, Ctrl + seçin. Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
    - **Fare**
       - Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
-      - &nbsp; ![Tornavida](media/screwdriver.png) boş bir satıra sınıfında metin imleci ise sol kenar boşluğunda görünür simge.
+      - Seçin ![Tornavida](media/screwdriver.png) boş bir satıra sınıfında metin imleci ise sol kenar boşluğunda görünür simge.
 
       ![Deconstructor kod düzeltme](media/deconstruct-codefix.png)
 
@@ -53,4 +53,4 @@ Bu kod oluşturma için geçerlidir:
 
 - [Kod oluşturma](../code-generation-in-visual-studio.md)
 - [Değişiklikleri Önizle](../../ide/preview-changes.md)
-- [.NET Geliştiricileri için İpuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET geliştiricileri için ipuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)

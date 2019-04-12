@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366308"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537566"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -52,6 +52,10 @@ Zor veya uygulamanızda belirli bir durumu yeniden oluşturmak harcanan zamanı 
     ![Koşullu kesme noktası](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. Koşul başka bir türünü ilgileniyorsanız seçin **filtre** yerine **koşullu ifade** içinde **kesme noktası ayarları** iletişim kutusunu ve sonra Filtre ipuçları.
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Hata Ayıklayıcısı'nda gösterilecek verileri yapılandırma
+
+İçin C#, Visual Basic ve C++ (C++/CLI kodu), hata ayıklayıcıyı kullanarak göstermek için hangi bilgilerin söyleyebilirsiniz [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) özniteliği. İçin C++ kodu aynı kullanarak yapabileceğiniz [Natvis görselleştirmeler](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Yürütme akışı değiştirme
 

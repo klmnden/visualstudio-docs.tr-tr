@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355195"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537510"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Visual Studio'da kullanımları oluşturun
 
@@ -22,20 +22,20 @@ Bu kod oluşturma için geçerlidir:
 
 - C#
 
-**Ne:** Gerekli içeri aktarmaları hemen eklemenize olanak sağlayan veya [using deyimlerini](/dotnet/csharp/language-reference/keywords/using-statement) kopyalama yapıştırılmış kod.
+**Ne:** Gerekli içeri aktarmaları hemen eklemenize olanak sağlayan veya [using deyimlerini](/dotnet/csharp/language-reference/keywords/using-statement) kopyalama yapıştırılmış kod için.
 
-**ne zaman:** Kopyalayıp farklı yerlerde kod projenizi veya diğer kod kaynakları yapıştırmak için yaygın bir uygulamadır. Bu hızlı eylem eksik Imports kopyalama yapıştırılmış kod analiz eder ve ardından bunları eklemek isteyip istemediğinizi sorar.
+**ne zaman:** Projenizi veya diğer kaynaklardan farklı yerlerde kodu kopyalayın ve yeni koda yapıştırın için yaygın bir uygulamadır. Bu hızlı eylem eksik kopyalama yapıştırılmış kod deyimlerini içeri aktarır ve ardından bunları eklemek ister bulur.
 
-**Neden:** Gerekli içeri aktarmaları otomatik olarak ekleyerek, kullanıcının gerekli el ile kopyalamanız gerekmez `using` deyimleri.
+**Neden:** Hızlı eylem gerekli içeri aktarmaları otomatik olarak eklediğinden, el ile kopyalamanız gerekmez `using` kodunuzu gereken deyimleri.
 
 ## <a name="generate-usings-refactoring"></a>Using deyimlerini yeniden düzenleme oluştur
 
-1. Gerekli dahil olmak üzere farklı bir dosyadaki kodu yapıştırın `using` deyimleri. Hata artık eksik ekleyen bir kod düzeltme ile eşlik `using` deyimleri.
+1. Bir dosyadan kodu kopyalayın ve gerekli dahil olmak üzere olmadan yeni bir tane yapıştırın `using` deyimleri. Ortaya çıkan hata eksik ekleyen bir kod düzeltme ile birlikte sunulduğu `using` deyimleri.
 
     > [!NOTE] 
-    > Bu öneri, açık olması gerekiyor **Araçlar > Seçenekler > Metin Düzenleyicisi > C# > Gelişmiş > yönergeleri kullanarak**.
+    > Bu önerisine etkinleştirmek gereken **Araçlar > Seçenekler > Metin Düzenleyicisi > C# > Gelişmiş > yönergeleri kullanarak**.
 
-2. Tuşuna **Ctrl**+**.** açmak için **hızlı Eylemler ve yeniden düzenlemeler** menüsü. 
+2. CTRL + seçin. açmak için **hızlı Eylemler ve yeniden düzenlemeler** menüsü.
 
     ![Using deyimleri oluşturma](media/generate-using-codefix.png)
 
@@ -45,6 +45,6 @@ Bu kod oluşturma için geçerlidir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Oluşturma](../code-generation-in-visual-studio.md)
+- [Kod oluşturma](../code-generation-in-visual-studio.md)
 - [Değişiklikleri Önizleme](../../ide/preview-changes.md)
-- [.NET Geliştiricileri için İpuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [.NET geliştiricileri için ipuçları](../../ide/visual-studio-2017-for-dotnet-developers.md)

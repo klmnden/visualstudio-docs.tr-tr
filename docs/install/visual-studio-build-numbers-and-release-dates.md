@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/10/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cfd8d9346f9e9d0df5376a35b90c6bbcfb24603c
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477560"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537656"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio derleme numaraları ve yayın tarihleri
 
@@ -29,7 +29,7 @@ ms.locfileid: "59477560"
 
 Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tarihleri tarihe listeler.
 
-| **Sürüm**| **Kanal** | **Sürüm tarihi** | **Derleme sürümü** |
+| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.11 | Sürüm | 2 Nisan 2019 | 15.9.28307.586 |
 | 15.9.10 | Sürüm | 25 Mart 2019 | 15.9.28307.557 |
@@ -191,8 +191,9 @@ Aşağıdaki tabloda, Visual Studio 2017 için derleme numaraları ve yayın tar
 
 Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tarihleri tarihe listeler.
 
-| **Sürüm**| **Kanal** | **Sürüm tarihi** | **Derleme sürümü** |
+| **Sürüm**| **Kanal** | **Yayın tarihi** | **Derleme sürümü** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Önizleme 1 | 10 Nisan 2019 | 16.1.28809.33 |
 | 16.0.1 | Sürüm | 9 Nisan 2019 | 16.0.28803.156 |
 | 16.0.1 | Önizleme 1 | 9 Nisan 2019 | 16.0.28803.156 |
 | 16.0.0 | Sürüm | 2 Nisan 2019 | 16.0.28729.10 |
@@ -226,6 +227,6 @@ Aşağıdaki tabloda, Visual Studio 2019'için derleme numaraları ve yayın tar
 ## <a name="see-also"></a>Ayrıca bkz.
 
 * [Visual Studio yayınlama sıklığı](/visualstudio/productinfo/release-rhythm/)
-* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio örneklerini algılamaya ve yönetmeye yönelik araçlar](tools-for-managing-visual-studio-instances.md)
