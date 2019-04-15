@@ -3,25 +3,35 @@ items:
   href: index.yml
   items:
   - name: Genel Bakış
-    href: visual-studio-tools-for-docker.md
-  - name: 'Hızlı Başlangıç: Visual Studio’da Docker'
-    href: docker-tools.md
-  - name: 'Öğretici: Docker Compose ile çok kapsayıcılı uygulama'
-    href: tutorial-multicontainer.md
-  - name: 'Öğretici: Visual Studio’da Kubernetes'
-    href: tutorial-kubernetes-tools.md
-  - name: Yerel Docker kapsayıcısındaki uygulamada hata ayıklama
-    href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: Bir kapsayıcı kayıt defteri dağıtma
-    href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: Azure App Service'e dağıtma
-    href: docker-deploy-app-service.md
-  - name: Docker ile Visual Studio geliştirme sorunlarını giderme
-    href: vs-azure-tools-docker-troubleshooting-docker-errors.md
+    href: overview.md
+  - name: Hızlı başlangıç
+    items:
+    - name: Visual Studio’da Kapsayıcı Araçları
+      href: container-tools.md
+    expanded: true
+  - name: Öğreticiler
+    items:
+    - name: 'Öğretici: Docker Compose ile çok kapsayıcılı uygulama'
+      href: tutorial-multicontainer.md
+    - name: 'Öğretici: Visual Studio’da Kubernetes'
+      href: tutorial-kubernetes-tools.md
+    expanded: true
+  - name: Nasıl Yapılır?
+    items:
+    - name: Yerel Docker kapsayıcısındaki uygulamada hata ayıklama
+      href: edit-and-refresh.md
+    - name: Bir kapsayıcı kayıt defteri dağıtma
+      href: hosting-web-apps-in-docker.md
+    - name: Azure App Service'e dağıtma
+      href: deploy-app-service.md
+    - name: Kapsayıcı Araçları’nı yapılandırma
+      href: container-tools-configure.md
+  - name: Sorun giderme
+    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 75905587ed44c64495610bd76c8dab63664c2bb2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354823"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537695"
