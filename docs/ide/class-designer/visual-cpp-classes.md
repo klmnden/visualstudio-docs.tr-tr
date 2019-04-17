@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aea3dd9c4821b3c06839c746111c131eedcfa455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939118"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664670"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Sınıf tasarımcısında Visual C++ sınıfları
 
@@ -128,7 +128,6 @@ Anonim sınıflar hakkında daha fazla bilgi için bkz. [anonim sınıf türleri
 ## <a name="template-classes"></a>Şablon sınıfları
 
 **Sınıf Tasarımcısı** şablon sınıfının görselleştirme destekler. İç içe geçmiş bildirimleri desteklenir. Aşağıdaki tabloda, bazı tipik bildirimlerini gösterir.
-
 
 | Kod öğesi | Sınıf Tasarımcısı görünümü |
 | - | - |

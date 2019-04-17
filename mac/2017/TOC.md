@@ -7,14 +7,12 @@
 ## [Güncelleştir](/visualstudio/mac/update)
 ## [Kaldır](/visualstudio/mac/uninstall)
 
-
 # [Kullanıcı Hesapları](/visualstudio/mac/user-accounts)
 ## [Oturum Açılıyor](/visualstudio/mac/signing-in)
 ## [Aboneliği Etkinleştirme](/visualstudio/mac/enable-subscription)
 
 # [IDE’yi Özelleştirme](/visualstudio/mac/customizing-the-ide)
 ## [Mac için Visual Studio’yu Genişletme](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [Projeler ve Çözümler](/visualstudio/mac/projects-and-solutions)
 ## [Yeni Projeler oluşturuluyor](/visualstudio/mac/create-new-projects)

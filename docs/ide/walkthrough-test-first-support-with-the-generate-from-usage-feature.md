@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 4e65a92e1dba9a6f6dcdd243681313e0aec9096a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355636"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648427"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce test geliştirmesi
 
@@ -110,7 +110,6 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
 2.  Tıklayın **hızlı Eylemler** hata ampul altında kırmızı dalgalı oku ve ardından **'Otomobil' Oluşturucu üret**.
 
      İçinde `Automobile` sınıf dosyası, yeni oluşturucuyu Oluşturucusu çağrısında kullanılan yerel değişkenlerin adlarını incelenmiştir dikkat edin, aynı adlara sahip özellikler bulundu `Automobile` sınıf ve oluşturucu gövdesinde için sağlanan kod bağımsız değişken değerleri depolamak `Model` ve `TopSpeed` özellikleri.
-
 
 3.  Yeni oluşturucuyu oluşturduktan sonra varsayılan oluşturucu çağrısı altında dalgalı çizgi görünür `DefaultAutomobileIsInitializedCorrectly`. Hata iletisi `Automobile` sınıfın sıfır bağımsız değişken alan hiçbir oluşturucu vardır. Parametreleri olmayan bir açık bir varsayılan oluşturucu oluşturmak için tıklayın **hızlı Eylemler** hata ampule ve ardından **'Otomobil' Oluşturucu üret**.
 

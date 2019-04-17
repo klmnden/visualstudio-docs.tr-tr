@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648462"
 ---
 # <a name="getting-started-with-python"></a>Python’ı Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Python programlama dili olarak verilmiştir:
 Dili hakkında daha fazla bilgi edinmek için başlayın [yeni başlayanlar için Python](https://www.python.org/about/gettingstarted/) python.org üzerinde.
 
 Python kendisini yüklemek için ziyaret [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Visual Studio için Python Araçları
   
 Yükleyebilmek için Visual Studio için Python Tools [visualstudio.com](https://www.visualstudio.com/explore/python-vs), aşağıdaki özellikleri sağlar:  
@@ -64,7 +63,6 @@ Aşağıdaki kaynaklar, başlamanıza yardımcı olur:
 - Yükleme ve özellikleri Tanıtımı (27 dk.)]( https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Belgeler](https://github.com/Microsoft/PTVS/wiki)  
 
-
 Visual Studio şu anda temelde katıştırılmış bir Python yorumlayıcısı programla anlamına gelir ve Python kullanarak tek başına yürütülebilir dosya oluşturmak için Araçlar sağlamaz unutmayın. Ancak Python topluluk içinde çeşitli araç üzerinde açıklandığı şekilde bunun için vardır [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython da destekler yerel bir uygulama içinde gömülen blog gönderisi konusunda açıklandığı gibi [gömülebilir ZIP dosyasını kullanarak CPython'ın](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
   
 ## <a name="building-ui-with-python"></a>Python ile kullanıcı arabirimini oluşturma  
@@ -77,7 +75,7 @@ Destekleyen Windows, Mac ve Linux, Python için Azure SDK'sını kullanmak ve Mi
 
 - SDK yüklemek için kullanın [Python paket dizinini](https://pypi.python.org/pypi/azure) veya takip [yüklemeniz Python ve SDK'sı](https://azure.microsoft.com/documentation/articles/python-how-to-install/) Azure belgeleri. 
 - [Python Geliştirici Merkezi için Azure SDK'sı](https://azure.microsoft.com/develop/python/) yüklemesinden Yardım belgelerine öğreticiler ile çok sayıda sahiptir.  Bazı önemli noktalar izleyin:  
-- Nasıl yapılır kılavuzları:
+- Nasıl Yapılır Kılavuzları:
   - [Depolama blobu](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
   - [Depolama kuyruğu](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
   - [Depolama tablosu](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  

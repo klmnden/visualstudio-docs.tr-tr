@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 08cd7867ab3f0c85597076fd6ce53a987fce9a3d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857411"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662575"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Öğretici: Visual Basic ile basit uygulama oluşturma
 
@@ -27,7 +27,7 @@ Bu öğreticiyi izleyerek, çoğu araç, iletişim kutuları ve Visual Studio il
 
 ::: moniker range="vs-2017"
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için sayfa.
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ücretsiz yüklemek için sayfa.
 
 ::: moniker-end
 
@@ -302,5 +302,5 @@ Bu öğreticiyi tamamlamak Tebrikler! Bulabilirsiniz *.exe* çözüm ve proje di
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio 2017’deki yenilikler](../../ide/whats-new-visual-studio.md)
+- [Visual Studio 2017'deki yenilikler](../../ide/whats-new-visual-studio.md)
 - [Üretkenlik ipuçları](../../ide/productivity-tips-for-visual-studio.md)

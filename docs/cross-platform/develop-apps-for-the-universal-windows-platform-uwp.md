@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 60eeb84dcbea7a30cc0b46c3a22571ccfe258028
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648776"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) için uygulama geliştirme
 
@@ -38,11 +38,26 @@ Evrensel Windows uygulaması geliştirme araçları, uygulamanızın farklı cih
 
 Gereken yazılım listesi aşağıda verilmiştir:
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2017 UWP geliştirme yalnızca Windows 10'da destekler. Daha fazla ayrıntı için bkz. Visual Studio [Platform hedefleme](/visualstudio/productinfo/vs2017-compatibility-vs) ve [sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). İsteğe bağlı Evrensel Windows platformu geliştirme iş yükü de gerekir.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). İsteğe bağlı Evrensel Windows platformu geliştirme iş yükü de gerekir.
 
      ![UWP iş yükü](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 UWP geliştirme yalnızca Windows 10'da destekler. Daha fazla ayrıntı için bkz. Visual Studio [Platform hedefleme](/visualstudio/releases/2019/compatibility/) ve [sistem gereksinimleri](/visualstudio/releases/2019/system-requirements/).
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). İsteğe bağlı Evrensel Windows platformu geliştirme iş yükü de gerekir.
+
+     ![UWP iş yükü](media/uwp_workload.png)
+
+::: moniker-end
+
 
 Bu yazılımı yükledikten sonra Windows 10 Cihazınızı geliştirme için etkinleştirmeniz gerekir. Bkz: [Cihazınızı geliştirme için etkinleştirme](/windows/uwp/get-started/enable-your-device-for-development). Artık her Windows 10 cihaz için bir geliştirici lisansı gereklidir.
 

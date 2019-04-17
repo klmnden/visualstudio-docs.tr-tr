@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54af4da8ccfff04ed51f19b9265659897281f26d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756015"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670465"
 ---
 # <a name="introduction-to-wpf"></a>WPF'ye Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -379,7 +379,7 @@ End Namespace
 ### <a name="triggers"></a>Tetikleyiciler  
  XAML biçimlendirme ana amacı, bir uygulamanın görünümünü uygulamak için olsa da, XAML bazı yönlerini uygulamanın davranışı uygulamak için kullanabilirsiniz. Kullanıcı denetimine göre bir uygulamanın görünümünü değiştirmek için Tetikleyiciler kullanımı bir örnektir. Daha fazla bilgi için [stil ve şablon oluşturma](https://msdn.microsoft.com/library/ms745683\(v=vs.100\).aspx).  
   
-### <a name="control-templates"></a>Denetim şablonları  
+### <a name="control-templates"></a>Denetim Şablonları  
  WPF denetimleri için varsayılan kullanıcı arabirimleri genellikle, diğer denetimler ve şekillerden şekiller oluşturulur. Örneğin, bir <xref:System.Windows.Controls.Button> her ikisi de oluşur <xref:Microsoft.Windows.Themes.ButtonChrome> ve <xref:System.Windows.Controls.ContentPresenter> kontrol eder. <xref:Microsoft.Windows.Themes.ButtonChrome> Standart düğme görünümünü sağlar ancak <xref:System.Windows.Controls.ContentPresenter> düğmenin içeriği tarafından belirtilen görüntüler <xref:System.Windows.Controls.ContentControl.Content%2A> özelliği.  
   
  Bazen bir denetimin varsayılan görünümünü uygulamanın genel görünümünü incongruent olabilir. Bu durumda, kullanabileceğiniz bir <xref:System.Windows.Controls.ControlTemplate> içeriği ve davranışını değiştirmeden kullanıcı arabirimi denetimin görünümünü değiştirmek için.  
@@ -395,7 +395,7 @@ End Namespace
   
  ![Bir elips düğmesine ve ikinci bir pencere](../designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
   
-### <a name="data-templates"></a>Veri şablonları  
+### <a name="data-templates"></a>Veri Şablonları  
  Bir denetim şablonu bir denetimin görünümünü belirtmenize olanak tanır ancak bir veri şablonu bir denetimin içeriğinin görünümünü belirtmenize olanak sağlar. Veri şablonları nasıl bağlı veri geliştirmek için kullanılan sık görüntülenir. Aşağıdaki şekil, varsayılan görünümünü gösterir. bir <xref:System.Windows.Controls.ListBox> koleksiyonuna bağlı `Task` nesneleri, her görev sahip olduğu bir ad, açıklama ve öncelik.  
   
  ![Varsayılan görünüm içeren bir liste kutusu](../designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
@@ -415,7 +415,7 @@ End Namespace
   
  Daha fazla bilgi için [veri şablonu oluşturmaya genel bakış](https://msdn.microsoft.com/library/ms742521\(v=vs.100\).aspx).  
   
-### <a name="styles"></a>Stilleri  
+### <a name="styles"></a>Stiller  
  Stilleri, geliştiricilerin ve tasarımcıların ürün için belirli bir görünümünü standart hale getirmek etkinleştirin. WPF sağlar temeli olan güçlü bir stil modeli, <xref:System.Windows.Style> öğesi. Aşağıdaki örnek, arka plan rengini ayarlar bir stil oluşturur. her <xref:System.Windows.Controls.Button> pencere üzerindeki `Orange`.  
   
  [!code-xml[IntroToWPFSnippets#StyleMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/StyleWindow.xaml#stylemarkup1)]  
@@ -485,8 +485,7 @@ End Namespace
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
   [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
   [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
-  
-  
+
  Kullanıcı denetimine eklemek için gerekli olan XAML sonraki örnekte bir <xref:System.Windows.Window>.  
   
  [!code-xml[IntroToWPFSnippets#UserControlWindowMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/UserControlWindow.xaml#usercontrolwindowmarkup1)]  

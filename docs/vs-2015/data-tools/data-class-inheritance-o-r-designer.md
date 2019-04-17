@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb78a5c1962d855a2e191d16487a52d5f94c9567
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37cc40651056b634deb9e81fc7407472485cb72b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773670"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670166"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Veri sınıfı devralma (O/R Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Gibi diğer nesneler [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sınıflar, devralma kullanabilirsiniz ve diğer sınıflarından türetilmiş. Kod içinde bir sınıf diğerinden devralır bildirmek nesneler arasındaki devralma ilişkileri belirtebilirsiniz. Bir veritabanında kalıtım ilişkileri çeşitli yollarla oluşturulur. [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) İlişkisel sistemlerde sık uygulandığı şekilde tek tablolu devralma kavramını destekler.  
   
  Tek tablo Devralmada hem temel sınıfını hem türetilen sınıflarını sütunlarını içeren bir tek veritabanı tablosu yok. İlişkisel verilerle bir ayrıştırıcı sütunu verilen kaydın ait olduğu sınıfı belirleyen bir değer içerir. Örneğin, herkesin şirket tarafından kullanılan içeren bir kişi tabloya göz önünde bulundurun. Bazı kişiler çalışanlar ve bazı kişiler yöneticileri. Kişiler Tablo 1 değeri, yöneticileri ve 2 değerini çalışanlar için sahip türü adlı bir sütun içerir. Tür sütunu ayrıştırıcı sütunu var. Bu senaryoda, çalışanların öğesinin oluşturabilir ve sınıf 2 tür değeri olan kayıtları ile doldurun.  

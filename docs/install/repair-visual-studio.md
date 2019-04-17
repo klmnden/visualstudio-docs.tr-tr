@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477532"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647174"
 ---
 # <a name="repair-visual-studio"></a>Visual Studio’yu onarın
 
@@ -75,12 +75,11 @@ Bazı durumlarda Visual Studio yüklemenizin zarar görmüş veya bozulmuş olur
 
 ::: moniker-end
 
-
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleme](install-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
 * [Visual Studio'yu kaldırma](uninstall-visual-studio.md)
 * [Visual Studio yükleme ve yükseltme sorunlarını giderme](troubleshooting-installation-issues.md)

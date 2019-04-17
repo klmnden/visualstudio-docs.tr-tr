@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7a22e683f1db05544f235308dc5ba495f74095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667215"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Dağıtım&gt; öğesi (ClickOnce dağıtımı)
 Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanılan öznitelikleri tanımlar.
@@ -60,7 +60,6 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
 ## <a name="elements-and-attributes"></a>Öğeler ve öznitelikler
  `deployment` Öğesi gereklidir ve içinde `urn:schemas-microsoft-com:asm.v1` ad alanı. Öğe, aşağıdaki özniteliklere sahiptir.
 
-
 | Öznitelik | Açıklama |
 |--------------------------| - |
 | `install` | Gerekli. Bu uygulamayı Windows üzerinde bir varlığı tanımlar olup olmadığını belirtir **Başlat** menü ve Denetim Masası'nda **Program Ekle veya Kaldır** uygulama. Geçerli değerler `true` ve `false`. Varsa `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ağdan bu uygulamanın en son sürümü her zaman çalışır ve algılamayacak `subscription` öğesi. |
@@ -74,7 +73,7 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
 ## <a name="subscription"></a>aboneliği
  İsteğe bağlı. İçeren `update` öğesi. `subscription` Öğesi özniteliklere sahip değildir. Varsa `subscription` öğesi mevcut değil, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama hiçbir zaman güncelleştirmeleri için tarama. Varsa `install` özniteliği `deployment` öğesi `false`, `subscription` öğesi göz ardı edilir, çünkü bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ağdan başlatılan her zaman uygulamanın en son sürümünü kullanır.
 
-## <a name="update"></a>Güncelleştirme
+## <a name="update"></a>update
  Gerekli. Bu öğenin alt öğesi olan `subscription` öğesi ve ya da içeren `beforeApplicationStartup` veya `expiration` öğesi. `beforeApplicationStartup` ve `expiration` hem de aynı dağıtım bildiriminde belirtilemez.
 
  `update` Öğesi özniteliklere sahip değildir.
@@ -96,7 +95,6 @@ Güncelleştirmeler ve sistem maruz kalma riskinizi dağıtımı için kullanıl
  .NET Framework 2.0 için dağıtım bildirimi içeriyorsa, bu öğe gereklidir bir `subscription` bölümü. .NET Framework 3.5 ve daha sonra bu öğe isteğe bağlıdır ve sunucu ve dosya yolu, dağıtım bildiriminde bulunan varsayılan olur.
 
  Bu öğenin alt öğesi olan `deployment` öğesi ve aşağıdaki özniteliklere sahiptir.
-
 
 | Öznitelik | Açıklama |
 |------------| - |

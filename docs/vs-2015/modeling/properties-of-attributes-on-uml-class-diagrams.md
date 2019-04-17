@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763226"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647941"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML sınıf diyagramlarındaki özniteliklerin özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,6 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *öznitelikleri* sınıfları 
 
  Bir öznitelik özelliklerini görüntülemek için sağ tıklayın ve ardından **özellikleri**.  
 
-
 |   **Özelliği**    | **Default**  |                                                                                                                                                                                                         Açıklama                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Varsayılan değer** |   (boş)    |                                                                                                                                                                               Sınıflandırıcı örneği oluşturulduğunda özniteliğinin değeri.                                                                                                                                                                                |
@@ -69,8 +68,8 @@ Bir UML sınıf diyagramı üzerinde eklediğiniz *öznitelikleri* sınıfları 
 |   **Benzersiz**   |    False     |                                                                                                                                                                TRUE ise, koleksiyonda yinelenen değerler yoktur. İçin **Çoğulluk** 1'den fazla.                                                                                                                                                                |
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML sınıf diyagramlarındaki türlerin özellikleri](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)
+ [UML Sınıf Diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)

@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663865"
 ---
 # <a name="setup-and-install"></a>Kurulum ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Yerel iOS, Android ve Windows oluşturmak için uygulamalardan genel C# / .NET kod tabanı kullanarak Xamarin, aşağıdakiler gerekir:  
   
 - Windows ve Android uygulamaları ile çalışmak için: bir Windows geliştirme bilgisayarında Visual Studio 2015 ile ve (aşağıda Not Xamarin 4 yüklü bakın). (Visual Studio 2013 için yönergeleri takip ederek de kullanabilirsiniz [doğrudan Xamarin yükleme](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).)   

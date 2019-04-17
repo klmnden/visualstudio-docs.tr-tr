@@ -19,17 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758476"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650261"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild Proje Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aşağıdaki tabloda, sık kullanılan Visual Studio proje dosyalarında tanımlı olan özellikleri veya MSBuild'ın sağladığı .targets dosyalarında dahil.  
   
  Proje dosyaları (.csproj, .vbproj, vcxproj ve diğerleri) Visual Studio, bir projeyi IDE'yi kullanarak derlediğinizde çalışan MSBuild XML kodunu içerir. Projeleri genellikle yapı işlemlerini tanımlamak için bir veya daha fazla .targets dosyalarını içeri aktarın. Daha fazla bilgi için [. Hedef dosya](../msbuild/msbuild-dot-targets-files.md).  

@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Satın alma ve müşterileriniz için Visual Studio bulut abonelikleri yönetme konusunda daha fazla bilgi için bulut çözüm sağlayıcıları.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323587"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670413"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Satın alma ve müşterileriniz için Visual Studio bulut Abonelikleri Yönetme
 
@@ -20,10 +20,8 @@ ms.locfileid: "58323587"
 
 [Bulut abonelik seçeneklerini karşılaştırın](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -84,7 +82,6 @@ Bu elektronik tabloda gördüğünüz yorumlama şöyledir:
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Abonelik                         | Visual Studio Enterprise-aylık abonelik   |
 | Visual Studio     | Professional           |  Abonelik                         | Visual Studio Professional aylık abonelik |
-
 
 (İçin belirli bir müşteri) her ayın her Visual Studio aboneliği satın 6 birimi %5 oranında indirim sunuyoruz. İşte bu iki satır her abonelik seçeneği görürsünüz. Bir satır 0 olarak varsayılır; birim 1 ile 5 için taban fiyat yorumlamak "Minimum değeri" gösterir. Bu birimleri 6 ve üzeri için geçerlidir %5 oranında indirim fiyat, bu nedenle diğer satır 5, "en düşük değeri" gösterir.
 

@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600726"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648240"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;bağımlılık&gt; öğesi (ClickOnce dağıtımı)
 Sürümü yüklemek için uygulama ve uygulama bildiriminin konumunu tanımlar.
@@ -78,7 +78,6 @@ Sürümü yüklemek için uygulama ve uygulama bildiriminin konumunu tanımlar.
 ## <a name="dependentassembly"></a>dependentAssembly
  Gerekli. Bu öğeyi içeren `assemblyIdentity` öğesi. Aşağıdaki tabloda öznitelikleri gösterir `dependentAssembly` destekler.
 
-
 | Öznitelik | Açıklama |
 |------------------| - |
 | `preRequisite` | İsteğe bağlı. Bu derlemenin GAC'de zaten olmaması gerektiğini belirtir. Geçerli değerler `true` ve `false`. Varsa `true`ve belirtilen derlemeyi GAC içinde yok, uygulamayı çalıştırmak başarısız olur. |
@@ -110,14 +109,12 @@ Sürümü yüklemek için uygulama ve uygulama bildiriminin konumunu tanımlar.
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform` Öğesi gerekli alt öğesi olan `dsig:Transforms` öğesi. Aşağıdaki tabloda gösterilmektedir dosyanın öznitelikleri `dsig:Transform` öğesi.
 
-
 | Öznitelik | Açıklama |
 |-------------| - |
 | `Algorithm` | Bu dosya için Özet hesaplamak için kullanılan algoritma. Şu anda kullanılan tek değer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] olduğu `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig
  `dsig:DigestMethod` Öğesi gerekli alt öğesi olan `hash` öğesi. Aşağıdaki tabloda gösterilmektedir dosyanın öznitelikleri `dsig:DigestMethod` öğesi.
-
 
 | Öznitelik | Açıklama |
 |-------------| - |

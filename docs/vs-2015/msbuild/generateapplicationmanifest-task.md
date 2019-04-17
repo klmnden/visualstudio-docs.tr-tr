@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756590"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660989"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi ya da yerel bir bildirim. Yerel bir bildirim bileşene ilişkin benzersiz bir kimliği tanımlayarak ve tüm derlemeleri ve bileşeni oluşturan dosyaları tanımlayan bir bileşeni açıklar. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi, uygulamanın giriş noktasını gösteren ve uygulama güvenlik düzeyini belirterek yerel bildirimi genişletir.  
   
 ## <a name="parameters"></a>Parametreler  
@@ -45,10 +44,10 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama b
 |`Dependencies`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Üretilen bildirim için bağımlı derlemeler kümesini tanımlayan bir öğe listesini belirtir. Her öğenin daha fazla ek dağıtım durumunu ve bağımlılık türünü belirtmek için öğe meta verileri tarafından açıklanan. Daha fazla bilgi için aşağıdaki "Öğe meta verileri" bölümüne bakın.|  
 |`Description`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulama bileşeninin açıklamasını belirtir.|  
 |`EntryPoint`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Üretilen bildirim derlemesi için giriş noktasını gösteren tek bir öğeyi belirtir.<br /><br /> İçin bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi, bu parametre uygulama çalıştırıldığında başlayan derlemeyi belirtir.|  
-|`ErrorReportUrl`|İsteğe bağlı [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> ClickOnce yüklemelerindeki hata raporları sırasında iletişim kutularında görüntülenen Web sayfasının URL'sini belirtir.|  
+|`ErrorReportUrl`|İsteğe bağlı [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> ClickOnce yüklemelerindeki hata raporları sırasında iletişim kutularında görüntülenen Web sayfasının URL'sini belirtir.|  
 |`FileAssociations`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> ClickOnce dağıtım bildirimi ile ilişkili bir veya daha fazla dosya türü listesini belirtir.<br /><br /> Yalnızca .NET Framework 3.5 veya üzeri hedeflendiğinde ilişkilendirmeleri, yalnızca geçerli dosya.|  
 |`Files`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Bildirime dahil edilecek dosyalar. Her bir dosyanın tam yolunu belirtin.|  
-|`HostInBrowser`|İsteğe bağlı [Boolean] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> Varsa `true`, (WPF Web tarayıcı uygulamaları gibi), uygulama bir tarayıcıda barındırılır.|  
+|`HostInBrowser`|[Boole] (isteğe bağlı)<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> Varsa `true`, (WPF Web tarayıcı uygulamaları gibi), uygulama bir tarayıcıda barındırılır.|  
 |`IconFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Uygulama simge dosyasını belirtir. Uygulama simgesi, oluşturulan uygulama bildiriminde gösterilir ve Başlat menüsü ve Program Ekle/Kaldır iletişim kutusu için kullanılır. Bu giriş belirtilmezse, varsayılan bir simge kullanılır. Görev yerel bir bildirim oluşturuyorsa Bu parametre yoksayılır.|  
 |`InputManifest`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Bildirim oluşturucu için bir temel olarak hizmet verecek girdi XML belgesini belirtir. Bu, uygulama güvenliği veya çıktı bildiriminde yansıtılmasını özel bildirim tanımları gibi yapılandırılmış verilerin sağlar. XML belgesi kök öğesi asmv1 ad alanı içerisinde bir derleme düğümü olmalıdır.|  
 |`IsolatedComReferences`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Oluşturulan bildirimde ayrılacak COM bileşenlerini belirtir. Bu parametre "Kayıt içermeyen COM" dağıtımı için COM bileşenlerini ayırma özelliğini destekler. Otomatik-standart COM kayıt tanımları içeren bir bildirim oluşturarak çalışır. Ancak, COM bileşenleri düzgün şekilde çalışabilmesi bu sırayla yapı makinesinde kayıtlı olması gerekir.|  
@@ -61,12 +60,12 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama b
 |`Publisher`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulamanın yayımcısını belirtir. Bu parametre belirtilmemişse, ad kayıtlı kullanıcıdan veya oluşturulan bildirim kimliği algılanır. Bu ad Başlat menüsündeki klasör adı için kullanılır ve Program Ekle veya Kaldır iletişim kutusunda görünen adın bir parçasıdır.|  
 |`RequiresMinimumFramework35SP1`|İsteğe bağlı `Boolean` parametresi.<br /><br /> TRUE ise, uygulama .NET Framework 3.5 SP1 veya daha yeni bir sürümü gerektirir.|  
 |`TargetCulture`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulamanın kültürünü tanıtır ve belirtir `Language` oluşturulan bildirim için derlemenin kimliğinin alan. Bu parametre belirtilmemişse uygulamanın kültür sabiti olduğu varsayılır.|  
-|`TargetFrameworkMoniker`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Hedef çerçeve adını belirtir.|  
-|`TargetFrameworkProfile`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Hedef Çerçeve profilini belirtir.|  
-|`TargetFrameworkSubset`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Hedef .NET Framework alt adını belirtir.|  
-|`TargetFrameworkVersion`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> ' % S'hedef .NET Framework projesini belirtir.|  
+|`TargetFrameworkMoniker`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Hedef çerçeve adını belirtir.|  
+|`TargetFrameworkProfile`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Hedef Çerçeve profilini belirtir.|  
+|`TargetFrameworkSubset`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Hedef .NET Framework alt adını belirtir.|  
+|`TargetFrameworkVersion`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> ' % S'hedef .NET Framework projesini belirtir.|  
 |`TrustInfoFile`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Uygulama güvenliğini belirten bir XML belgesini belirtir. XML belgesi kök öğesi asmv2 ad alanı içerisinde bir trustInfo düğümü olmalıdır. Görev yerel bir bildirim oluşturuyorsa Bu parametre yoksayılır.|  
-|`UseApplicationTrust`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> TRUE ise `Product`, `Publisher`, ve `SupportUrl` özellikleri uygulama bildirimine yazılır.|  
+|`UseApplicationTrust`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> TRUE ise `Product`, `Publisher`, ve `SupportUrl` özellikleri uygulama bildirimine yazılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yukarıda listelenen parametrelerin yanı sıra, bu görev parametreleri devralan <xref:Microsoft.Build.Tasks.GenerateManifestBase> kendisi sınıfının devraldığı <xref:Microsoft.Build.Utilities.Task> sınıfı. Görev sınıfı parametrelerinin bir listesi için bkz. [görev temel sınıf](../msbuild/task-base-class.md).  

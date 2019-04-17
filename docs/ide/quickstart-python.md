@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366705"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652442"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Hızlı Başlangıç: Visual Studio kullanarak ilk Python web uygulamanızı oluşturma
 
 Bu 5-10 dakikalık bir giriş Visual Studio'ya bir Python IDE olarak, Flask framework tabanlı basit bir Python web uygulaması oluşturun. Ayrık'aracılığıyla projenin oluşturduğunuz yardımcı adımlar Visual Studio temel özellikleri hakkında bilgi edinin.
 
-Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) ücretsiz yüklemek için. Yükleyicide seçtiğinizden emin olun **Python geliştirme** iş yükü.
+::: moniker range="vs-2017"
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ücretsiz yüklemek için sayfa. Yükleyicide seçtiğinizden emin olun **Python geliştirme** iş yükü.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Visual Studio henüz yüklemediyseniz, Git [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz yüklemek için sayfa. Yükleyicide seçtiğinizden emin olun **Python geliştirme** iş yükü.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
 

@@ -14,16 +14,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758671"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652169"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl yapılır: Visual Studio Derleme İşlemini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yapı işlemi bir dizi tarafından tanımlanan [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proje dosyanıza içe aktarılan .targets dosyaları. Microsoft.Common.targets, içeri aktarılan bu dosyaların bir yapı işleminde bazı noktalarda özel görevleri çalıştırmanıza olanak tanır şekilde genişletilebilir. Bu konu, genişletmek için kullanabileceğiniz iki yöntem açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] derleme işlemi:
 

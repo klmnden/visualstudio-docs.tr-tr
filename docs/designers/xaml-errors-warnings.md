@@ -8,12 +8,12 @@ ms.author: karann
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d92c266b0504f021328175d436216d9c86a6032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913112"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650011"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML hataları ve uyarıları
 
@@ -31,7 +31,6 @@ Arka planda birden çok araç, XAML paralel analiz edin. XAML hataları, hatanı
 
 > [!Note]
 > Tüm hata veya uyarı karşılık gelen bir kod vardır. Bu hatalar genellikle XAML Tasarımcısı hatalardır.
-
 
 ## <a name="suppress-xaml-designer-errors"></a>XAML Tasarımcısı Hataları Gizle
 

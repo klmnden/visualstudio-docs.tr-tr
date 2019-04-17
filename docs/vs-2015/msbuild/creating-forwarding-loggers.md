@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0fbdfb1af767bfc49d373fedd81598e29ef6918
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804633"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648227"
 ---
 # <a name="creating-forwarding-loggers"></a>İletme Günlükçüleri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 İletme günlükçüleri çok işlemcili bir sistemde projeler derlerken izlemek istediğiniz olayları seçin vererek günlük verimliliği artırın. İletme günlükçüleri etkinleştirerek merkezi Günlükçü aşırı yüklenilmesini, derleme zamanı yavaşlatmasını ve günlüğünüzün yığılmak istenmeyen olayları engelleyebilirsiniz.  
   
  Bir iletme Günlükçü oluşturmak için her iki uygulama olabilir. <xref:Microsoft.Build.Framework.IForwardingLogger> arabirim ve kendi yöntemlerini el ile uygulama veya kullanın <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> sınıf ve onun önceden yapılandırılmış yöntemleri. (İkincisi çoğu uygulama için yeterli olacaktır.)  

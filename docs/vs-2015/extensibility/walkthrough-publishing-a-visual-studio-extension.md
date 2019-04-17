@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867558"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669711"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio Uzantısı Yayımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Not**: Visual Studio Galerisi, Visual Studio Market tarafından değiştirilmektedir. Ayrıntılar için bu konunun en son sürümüne bakın.
-
 
 Bu izlenecek yol, Visual Studio uzantısı için Visual Studio Galerisine yayımlama gösterilmektedir. Uzantınızı Galerisine eklediğinizde, geliştiriciler kullanabilir **Uzantılar ve güncelleştirmeler** için yeni ve güncelleştirilmiş uzantıları var gidin.
 

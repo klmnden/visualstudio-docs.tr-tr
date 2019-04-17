@@ -14,7 +14,6 @@
 # [IDE’yi Özelleştirme](customizing-the-ide.md)
 ## [Mac için Visual Studio’yu Genişletme](extending-visual-studio-mac.md)
 
-
 # [Projeler ve Çözümler](projects-and-solutions.md)
 ## [Yeni Projeler oluşturuluyor](create-new-projects.md)
 ## [Proje Öğeleri ekleme ve kaldırma](add-and-remove-project-items.md)

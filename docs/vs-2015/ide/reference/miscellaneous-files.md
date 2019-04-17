@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802590"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658504"
 ---
 # <a name="miscellaneous-files"></a>Çeşitli Dosyalar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Kullanmak istediğiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bağımsız olarak bir proje veya çözüm dosyaları üzerinde çalışmasına düzenleyiciler. Açık bir çözüm olsa da, açın ve bir çözüm veya proje eklemeden dosyaları değiştirin. Bağımsız olarak kapsayıcılardan çalışmak istediğiniz dosyaları diğer dosyalar çağrılır. Çeşitli dosyalar, çözümler ve projeler için dış, yapılarında dahil değildir ve ile kaynak denetimi altında bir çözüme eklenemez.  
   
  Dosyaları bağımsız olarak bir kapsayıcıdan açma çeşitli nedenlerden dolayı kullanışlıdır. Ancak proje tabanlı bir çözüm geliştirmek için çözümün geliştirme integral olmamasına karşın görüntülemek istediğiniz bir dosya olabilir. Geliştirme notları veya yönergeleri, veritabanı şemasını ve kod klipleri ortak örnek verilebilir. Ayrıca, tek başına bir dosya oluşturmak isteyebilirsiniz.  

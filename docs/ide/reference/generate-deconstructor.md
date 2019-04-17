@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2ca2d3a0c174fa4c7d0f66d3abc440b8c9aa93cf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537536"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658818"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Visual Studio'da bir deconstructor oluşturun
 
@@ -47,7 +47,6 @@ Bu kod oluşturma için geçerlidir:
 3. Seçin **'MyInternalClass.Deconstruct' metodunu üret** deconstructor oluşturulacak.
 
    ![Sonuçta elde edilen deconstructor kod](media/deconstruct-result.png)
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

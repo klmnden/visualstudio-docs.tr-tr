@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696317"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662913"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Kesme noktası çözünürlüğü konumu yapısını belirtir.
@@ -50,15 +50,15 @@ public struct BP_RESOLUTION_LOCATION {
 
 `bpResLocation.bpresCode`
 
- [Yalnızca C++] İçeren [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) , yapı `bpType`  =  `BPT_CODE`.
+ [C++ yalnızca] İçeren [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) , yapı `bpType`  =  `BPT_CODE`.
 
 `bpResLocation.bpresData`
 
- [Yalnızca C++] İçeren [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) , yapı `bpType`  =  `BPT_DATA`.
+ [C++ yalnızca] İçeren [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) , yapı `bpType`  =  `BPT_DATA`.
 
 `bpResLocation.unused`
 
- [Yalnızca C++] Bir yer tutucu.
+ [C++ yalnızca] Bir yer tutucu.
 
 `unionmember1`
 
@@ -78,7 +78,6 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="remarks"></a>Açıklamalar
 Bu yapı üyesidir [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) ve [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) yapıları.
-
 
  [C# yalnızca] `unionmemberX` Üyeleri aşağıdaki tabloya göre yorumlanır. Sol sütundaki için konum `bpType` boyunca hangi her belirlemek için değer `unionmemberX` üye temsil eder ve sıralama `unionmemberX` uygun şekilde. Bu yapı C# yorumlamak bir yol için örneğe bakın.
 

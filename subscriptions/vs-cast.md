@@ -7,19 +7,18 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir ATAMA vurgulayın Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1d4466fa2a4fac38849a7b157921094d769a4e04
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840910"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650141"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ATAMA vurgulayın avantaja
 
 Geliştiriciler, buluta geçiş yaparken yazılımlarıyla ilgili kritik öngörüleri gerekir. Visual Studio Enterprise aboneleri, ATAMA Vurgu ile hızlı bir şekilde geçiş için Azure ve İzleyici, uygulama sırasında ve sonrasında bir geçiş uygulamalarını bulut hazırlığı tanımlamak için uygulama kaynak kodunu tarayabilirsiniz.
 
 Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar için ATAMA vurgulamak için ücretsiz, tam özellik bir aylık abonelik alabilirsiniz.
-
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 
@@ -29,7 +28,6 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
 
    > [!div class="mx-imgBorder"]
    > ![CAST vurgulama avantajı kutucuğu](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
-
 
 0. Kodunuzu size bildiren bir ileti başarıyla aldı görürsünüz.  Tıklayın **etkinleştirme**, bu noktada, burada devam ederek etkinleştirme işlemi ATAMA vurgulayın sayfasına yeniden yönlendirilmeniz.  (Şimdi etkinleştirmeyi seçmezseniz, her zaman geri dönüştürme vurgulayın kutucuğa abonelik Portalı'nda dönebilirsiniz.  "Alma kodu" bağlantısı "Etkinleştir" olarak değişir ve tıklayarak etkinleştirme işlemi devam edecek.)
 
@@ -57,7 +55,6 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
    *En iyi*
    *Greg*
 
-
 İsteğiniz Onay sonrasında, hesabınızın oluşturma başarılı onaylama ve etkinleştirme işlemini tamamlamak için etkinleştirme bağlantısına tıklayın isteyen bir ikinci e-posta alacaksınız.
 
    *Biz başarıyla doğrulandı ve ATAMA vurgulayın erişme isteğinizi doğrulandı. Aboard Hoş Geldiniz!*
@@ -78,10 +75,8 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
    *En iyi*
    *Greg*
 
-
    > [!NOTE]
    > Aldığınız e-posta etkinleştirme bağlantıya tıkladığınızdan emin olun.  Aksi takdirde, ATAMA vurgulayın aboneliğinize erişmek mümkün olmayacaktır. E-posta kutunuzda görmüyorsanız, istenmeyen posta klasörlerinizi denetleyin emin olun.
-
 
 ## <a name="eligibility"></a>Uygunluk
 
@@ -95,14 +90,10 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
 | Visual Studio Enterprise (standart)  | NFR<sup>1</sup> |Yok  | Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 
-
-
 <sup>1</sup>*içerir:  Değil for Resale (NFR), Trainer, BizSpark FTE, en değerli Professional (MVP), bölgesel Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
-
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

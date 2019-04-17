@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c8e38959e9835ee26f283c59128749239178307
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3608b5d99e8566701f6090e37b659b7a7c8df86e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778730"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655341"
 ---
 # <a name="xsd-task"></a>XSD Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Aracı (XSD.exe'nin) sarmalar.  
   
 ## <a name="parameters"></a>Parametreler  
@@ -51,9 +50,9 @@ Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Arac�
   
      Her biri bir XSD seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **sınıflar** -  ** /sınıfları**  
+    -   **sınıflar** -   **/sınıfları**  
   
-    -   **veri kümesi** -  ** /DataSet**  
+    -   **veri kümesi** -   **/DataSet**  
   
 -   **Dil**  
   
@@ -61,7 +60,7 @@ Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Arac�
   
      Oluşturulan kod için kullanılacak programlama dilini belirtir.  
   
-     Aralarından seçim **CS** (C varsayılan değer olan #), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.  
+     Aralarından seçim **CS** (C#, varsayılan değerdir), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
 -   **Namespace**  
   

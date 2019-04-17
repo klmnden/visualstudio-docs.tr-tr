@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669798"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP uygulaması için hata ayıklama oturumu başlatma
 
@@ -122,7 +122,6 @@ C++ uygulamalarında Visual Studio, varsayılan olarak yerel kod hata ayıklamas
 |**Komut Dosyası**|Uygulamanızı JavaScript kodunda hata ayıklayın. Yönetilen kod ve yerel koda göz ardı edilir.|
 |**Betik ile yerel**|Yerel C/C++ kod ve uygulamanızı JavaScript kodunda hata ayıklayın. Yönetilen kod yok sayılır. C++ projeleri yalnızca arka plan görevleri de kullanılabilir.|
 |**Yalnızca GPU (C++ AMP)**|Grafik işlem birimi (GPU) üzerinde çalışan yerel C++ kod hatalarını ayıklama. Yalnızca C++ projelerinde kullanılabilir.|
-
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (İsteğe bağlı) ağ geri döngüler devre dışı bırak
 

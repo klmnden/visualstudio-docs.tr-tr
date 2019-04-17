@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776787"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651766"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Uyarı. Davranışı Yapılandır iletişim kutusunda, uygulanmamış değişiklikler gerçekleştirildi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Uyarı. Henüz uygulanmamış davranışı Yapılandır iletişim kutusu için değişiklikler yapılmıştır. Yaptığınız değişiklikleri uygulamak istiyor musunuz?  
   
  **Davranışı Yapılandır** iletişim kutusu kullanılabilir tüm sınıflar için INSERT, Update ve Delete davranış yapılandırmanıza olanak sağlar. Bu ileti, yeni bir seçtiğinizde görünür **sınıfı** ve **davranışı** birleşimi ve önceki değişikliği değil henüz uygulandı.  

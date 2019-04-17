@@ -17,17 +17,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4260804760b4abe55f6a62efa4841ad08dead1b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 49b9f88dd00321e00f5c64dad3616cd5a0ddb51a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753276"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654288"
 ---
 # <a name="alias-command"></a>Diğer Ad Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tam komut, tam komut ve bağımsız değişkenler için yeni bir diğer ad veya başka bir diğer ad oluşturur.  
   
 > [!TIP]

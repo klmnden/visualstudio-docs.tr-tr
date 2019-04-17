@@ -6,16 +6,15 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6d10240383ddaf4ec2eb242dfc180c59ff084f1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: add48cc007b9108e565ae89d987caf2797b897f0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780268"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664643"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Visual Studio'da Xamarin.Forms ile uygulama oluşturmaya yönelik temel bilgileri öğrenin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Adımları yaptıktan sonra [Kurulum ve yükleme](../cross-platform/setup-and-install.md) ve [Xamarin ortamınızı doğrulama](../cross-platform/verify-your-xamarin-environment.md), bu izlenecek yol (aşağıda Xamarin.Forms ile gösterilen) bir temel uygulamasının nasıl oluşturulacağını gösterir. Xamarin.Forms ile UI kodunuzun tamamını kez taşınabilir sınıf kitaplığı (PCL) yazmanız. Xamarin sonra otomatik olarak işleme iOS, Android ve Windows için yerel kullanıcı Arabirimi denetimleri platformlar. Bu yaklaşım yalnızca bu .NET tüm hedef platformlar arasında desteklenen API'lerini kullanarak en iyi PCL seçeneğini desteklediği için önerilir ve Xamarin.Forms izin verdiğinden platformlar arasında UI kod paylaşın.
 

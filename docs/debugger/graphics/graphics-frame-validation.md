@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694822"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655380"
 ---
 # <a name="graphics-frame-validation"></a>Grafik Çerçeve doğrulama
-<!-- VERSIONLESS --> Visual Studio 2017 ve daha büyük Destek **çerçeve doğrulama** aracı.  Çerçeve doğrulama penceresi, hataları ve olay listesi ile ilişkili uyarıları görüntüler.  Bu pencereyi görüntülemek için seçin **Görüntüle > Çerçeve doğrulama** menüsü.
+<!-- VERSIONLESS -->
+Visual Studio 2017 ve daha büyük Destek **çerçeve doğrulama** aracı.  Çerçeve doğrulama penceresi, hataları ve olay listesi ile ilişkili uyarıları görüntüler.  Bu pencereyi görüntülemek için seçin **Görüntüle > Çerçeve doğrulama** menüsü.
 
 ![Çerçeve Doğrulama](media/gfx_diag_frame_validation.png)
 
 Tıklayın **doğrulama çalışması** analiz başlatmak için sol üst köşedeki düğmesini.  Bu çerçeve karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.  İki farklı kaynaktan gelen bir birleşimini aşağıdadır görüntülenen verileri: iletileri bu D3D kendisini ne zaman yayar [SDK katmanları](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) etkinleştirilmiş ve İzleme Aracı'nın kendi iç durumu toplanan verileri. İşlem tamamlandıktan sonra birkaç veri sütunlarının görürsünüz:
-
 
 | **Sütun** | **Açıklama** |
 |------------| - |
@@ -34,5 +34,5 @@ Tıklayın **doğrulama çalışması** analiz başlatmak için sol üst köşed
 | Olay | Hata veya uyarı ile ilişkili olay. |
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Grafik tanılama (DirectX grafik hata ayıklama)](visual-studio-graphics-diagnostics.md)
+[Grafik Tanılama (DirectX Grafiklerinde Hata Ayıklama)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

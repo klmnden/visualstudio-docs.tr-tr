@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 59af3b192b404184e5bc5e5a5461c978e2a85e1b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929498"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648503"
 ---
 # <a name="property-pages-javascript"></a>Özellik Sayfaları, JavaScript
 **Özellik sayfaları** proje ayarlarına erişim sağlar. Görüntülenen sayfaları kullanabilirsiniz **özellik sayfaları** proje özelliklerini değiştirmek için.
@@ -49,7 +49,6 @@ Aşağıdaki sayfalar ve seçenekleri görünür **özellik sayfaları**.
 > [!NOTE]
 > Bazı seçenekler yalnızca UWP uygulamalarında kullanılabilir.
 
-
  **Çıkış yolu**
 
  Projenin yapılandırması için çıkış dosyalarının konumunu belirtir. Yol görelidir; mutlak bir yol girerseniz, mutlak yol projeye kaydedilir. Bin\Debug varsayılan yoldur.
@@ -65,7 +64,6 @@ Aşağıdaki sayfalar ve seçenekleri görünür **özellik sayfaları**.
 
 > [!NOTE]
 > Bazı seçenekler yalnızca UWP uygulamalarında kullanılabilir.
-
 
  **Hata ayıklayıcıyı başlatmak için**
 

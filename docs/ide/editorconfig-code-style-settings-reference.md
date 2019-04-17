@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 4d6bb7092dfbd9ef1d3d8263305496eef86e264b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232807"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649814"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kodlama kuralı ayarlarına EditorConfig için .NET
 
@@ -168,7 +168,7 @@ Me.capacity = 0
 capacity = 0
 ```
 
-**DotNet\_stili\_nitelik\_for_property**
+**dotnet\_style\_qualification\_for_property**
 
 - Bu kural ayarlandığında **true**, başında için özellikleri tercih et `this.` C# veya `Me.` Visual Basic'te.
 - Bu kural ayarlandığında **false**, özellikleri tercih et _değil_ başında için `this.` veya `Me.`.
@@ -327,7 +327,7 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli programlama 
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Kısmi, varsayılan, özel, korumalı, genel, arkadaş NotOverridable, geçersiz kılınabilir, MustOverride, aşırı yüklemeler, geçersiz kılmalar, MustInherit, NotInheritable, statik, paylaşılan, gölgeler, salt okunur, WriteOnly, boyutu, Const, WithEvents, daraltma, özel, genişletme Async:silent | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# ve Visual Basic | TRUE: öneri | 15.7 |
 
-**DotNet\_stili\_gerektiren\_accessibility_modifiers**
+**dotnet\_style\_require\_accessibility_modifiers**
 
 Bu kural kabul etmediği bir **true** veya **false** değeri; bunun yerine aşağıdaki tablodan bir değer olarak kabul eder:
 
@@ -637,7 +637,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**DotNet\_stili\_tercih\_çıkarılan\_tuple_names**
+**dotnet\_style\_prefer\_inferred\_tuple_names**
 
 - Bu kural ayarlandığında **true**, gösterilen demet öğesi adlarını tercih et.
 - Bu kural ayarlandığında **false**, açık demet öğesi adlarını tercih et.
@@ -683,7 +683,7 @@ Dim anon = New With {name, age}
 Dim anon = New With {.name = name, .age = age}
 ```
 
-**DotNet\_stili\_tercih\_otomatik\_özellikleri**
+**dotnet\_style\_prefer\_auto\_properties**
 
 - Bu kural ayarlandığında **true**, autoproperties üzerinden özel yedekleme alanlarla özellikleri tercih et.
 - Bu kural ayarlandığında **false**, autoproperties özel yedekleme alanlarla özellikleri tercih et.
@@ -748,8 +748,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -922,7 +920,7 @@ Kural adı, geçerli programlama dilleri ve varsayılan değerleri aşağıdaki 
 | csharp_style_var_when_type_is_apparent | C# | true:silent |
 | csharp_style_var_elsewhere | C# | true:silent |
 
-**CSharp\_stili\_var\_için\_yerleşik\_in_types**
+**csharp\_style\_var\_for\_built\_in_types**
 
 - Bu kural ayarlandığında **true**, tercih ettiğiniz `var` değişkenler gibi yerleşik sistem türleriyle bildirmek için kullanılan `int`.
 - Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` gibi yerleşik sistem türleriyle değişkenleri bildirmeyi `int`.
@@ -937,7 +935,7 @@ var x = 5;
 int x = 5;
 ```
 
-**CSharp\_stili\_var\_olduğunda\_türü\_is_apparent**
+**csharp\_style\_var\_when\_type\_is_apparent**
 
 - Bu kural ayarlandığında **true**, tercih ettiğiniz `var` zaman türü zaten belirtilen bir bildirimi ifadesinin sağ tarafta.
 - Bu kural ayarlandığında **false**, üzerinden açık türü tercih et `var` zaman türü zaten belirtilen bir bildirimi ifadesinin sağ tarafta.
@@ -992,7 +990,7 @@ Aşağıdaki tabloda, kuralı adları, kural kimliklerini, geçerli dil sürüml
 | csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:silent | 15.3 |
 | csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:silent | 15.3 |
 
-**csharp\_style\_expression\_bodied_methods**
+**CSharp\_stili\_ifade\_bodied_methods**
 
 Bu kural, aşağıdaki tablodaki değerlerden kabul eder:
 
@@ -1438,7 +1436,7 @@ Aşağıdaki tabloda, kural adı, geçerli diller, varsayılan değer ve Visual 
 | dotnet_sort_system_directives_first | C# ve Visual Basic | true | 15.3 |
 | dotnet_separate_import_directive_groups | C# ve Visual Basic | false | 15.5 |
 
-**DotNet\_sıralama\_sistem\_directives_first**
+**dotnet\_sort\_system\_directives_first**
 
 - Bu kural ayarlandığında **true**, System.* using yönergelerini alfabetik olarak sıralamak ve bunları diğer kullanımları önce yerleştirin.
 - Bu kural ayarlandığında **false**, önce diğer yönergeleri kullanarak System.* yerleştirmeyin yönergeleri kullanarak.

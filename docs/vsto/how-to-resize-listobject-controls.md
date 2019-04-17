@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598472"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669308"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Nasıl yapılır: ListObject denetimlerinin boyutunu değiştirme
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Excel.ListObject> Microsoft Office Excel çalışma kitabına eklediğinizde denetimi; ancak daha sonraki bir zamanda yeniden boyutlandırmak isteyebilirsiniz. Örneğin, iki sütunlu bir liste için üç sütun değiştirmek isteyebilirsiniz.
@@ -43,7 +43,6 @@ ms.locfileid: "56598472"
  Listeyi yeniden boyutlandırmak için tıklayın ve boyutlandırma tutamaçlarından birinin sürükleyin veya boyutunda tanımlayabilirsiniz **listeyi yeniden boyutlandır** iletişim kutusu.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Listeyi Yeniden Boyutlandır iletişim kutusunu kullanarak listesini yeniden boyutlandırmak için
-
 
 1.  Herhangi bir yeri tıklatın <xref:Microsoft.Office.Tools.Excel.ListObject> tablo. **Tablo araçları** > **tasarım** Şerit sekmesinde görüntülenir.
 

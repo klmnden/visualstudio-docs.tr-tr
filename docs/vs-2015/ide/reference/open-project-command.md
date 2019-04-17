@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 916ea8435571efc01f38e408d4fc2d4563c16f1c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2e945eb2faa492f576a0fd0a15fc0bd0e9b208e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753491"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652429"
 ---
 # <a name="open-project-command"></a>Proje Aç Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Varolan projeyi açar.  
   
 ## <a name="syntax"></a>Sözdizimi  

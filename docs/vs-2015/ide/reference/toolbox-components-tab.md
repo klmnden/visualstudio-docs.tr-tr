@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775894"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652871"
 ---
 # <a name="toolbox-components-tab"></a>Araç Kutusu, Bileşenler Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Görüntüler ekleyebilirsiniz bileşenleri [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ve [!INCLUDE[csprcs](../../includes/csprcs-md.md)] tasarımcıları. Ek olarak [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] dahil olan bileşenleri [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], gibi <xref:System.Messaging.MessageQueue> ve <xref:System.Diagnostics.EventLog> bileşenleri ekleyebilir, bu sekmeye kendi veya üçüncü taraf bileşenleri. Daha fazla bilgi için [nasıl yapılır: Araç kutusu sekmeleri işlemek](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Bu sekme görüntülenecek **görünümü** menüsünde **araç kutusu**. İçinde **araç kutusu**seçin **bileşenleri** sekmesi.  

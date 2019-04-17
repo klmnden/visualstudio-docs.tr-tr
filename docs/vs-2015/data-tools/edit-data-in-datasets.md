@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792789"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656615"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri tablolardaki verileri düzenleyin. İşlem ekleme, güncelleştirme ve tablodaki kayıtları silme içerebilir. Verilere bağlı formunda, hangi alanların kullanıcı tarafından düzenlenebilir olduğunu belirtebilirsiniz. Bu gibi durumlarda, böylece değişiklikleri veritabanına geri daha sonra gönderilebilecek tüm değişiklik izleme veri bağlama altyapı işler. Verileri program aracılığıyla düzenlemeleri yapın ve bu değişiklikleri veritabanına geri göndermek istediğinize, nesneleri ve değişiklik izleme bunu yöntemleri kullanmanız gerekir.  
   
  Gerçek veriler değiştirmenin yanı sıra, ayrıca Sorgulayabileceğiniz bir <xref:System.Data.DataTable> verilerin belirli satırları döndürür. Örneğin, ayrı satırlara, satırları (özgün ve önerilen) belirli sürümleri, değiştirilen satırları veya hatalar içeren satırların sorgu.  

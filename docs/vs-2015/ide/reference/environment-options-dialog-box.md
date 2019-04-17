@@ -12,17 +12,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8acdea7f4c524e6a8697b502efe610fb95a27680
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753321"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650037"
 ---
 # <a name="environment-options-dialog-box"></a>Ortam Seçenekleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Sayfaları kullanabilirsiniz **ortam** klasöründe **seçenekleri** nasıl tümleşik geliştirme ortamı (IDE) belirli öğelerinin görüntülenme ve davranış ayarlamak için iletişim kutusu. Menü çubuğundan seçme, ortam sayfalarına erişebilirsiniz **Araçları**, **seçenekleri**seçip **ortam**.  
   
 > [!NOTE]

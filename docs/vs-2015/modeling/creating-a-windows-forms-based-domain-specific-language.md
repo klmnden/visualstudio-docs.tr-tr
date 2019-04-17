@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1faa3b8a7b57ddae646b55a8a17226894a5ed5d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779295"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654947"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,12 +33,10 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
     Bu kılavuzda, aşağıdaki adlarını kabul edilir:  
 
-
    |                       |                 |
    |-----------------------|-----------------|
    | Çözüm ve DSL adı |     FarmApp     |
    |       Ad Alanı       | Company.FarmApp |
-
 
 2. Şablon sağlar ilk örnek ile denemeler yapın:  
 

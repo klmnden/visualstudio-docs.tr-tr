@@ -1,5 +1,5 @@
 ---
-title: 'Öğretici: Azure işlevleri'
+title: 'Öğretici: Azure İşlevleri'
 description: Mac için Visual Studio'daki Azure işlevleri'ni kullanarak
 author: conceptdev
 ms.author: crdun
@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296443"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650287"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -30,7 +30,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 - Visual Studio Mac 7.5 veya üzeri.
 - Bir Azure aboneliği (kullanılabilir boş [ https://azure.com/free ](https://azure.com/free)).
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>Alıştırma 1: bir Azure işlevleri projesi oluşturma
+## <a name="exercise-1-creating-an-azure-functions-project"></a>Alıştırma 1: Azure işlevleri projesi oluşturma
 
 1. Başlatma **Mac için Visual Studio**.
 
@@ -53,7 +53,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
     ![Çözüm panelini görüntüleme local.settings.json dosyasında](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Alıştırma 2: bir Azure depolama hesabı oluşturma
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Alıştırma 2: Bir Azure depolama hesabı oluşturma
 
 1. Adresindeki Azure hesabınızda oturum [ https://portal.azure.com ](https://portal.azure.com).
 
@@ -87,7 +87,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
     ![yerel ayar dosyasıyla girilen bağlantı anahtarı](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>Örnek 3: Oluşturma ve bir Azure işlevi hata ayıklama
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>Örnek 3: Oluşturma ve bir Azure işlevi hatalarını ayıklama
 
 1. Artık kod eklemeye başlamak hazırsınız. .NET sınıf kitaplığı ile çalışırken, Azure işlevleri statik yöntemler olarak eklenir. Gelen **çözüm bölmesi**, sağ **Azureişlevleri** proje düğümünü seçip alt **Ekle > işlev Ekle**:
 
@@ -188,8 +188,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 1. Hata ayıklama oturumunu durdurun.
 
-
-## <a name="exercise-4-working-with-functionjson"></a>Alıştırma 4: function.json ile çalışma
+## <a name="exercise-4-working-with-functionjson"></a>Alıştırma 4: Function.json ile çalışma
 
 1.  Bir önceki alıştırmada, Mac için Visual Studio "bir işlevi kitaplıkta tanımlanan Azure işlevi için üretilen" bahsedilen. Azure işlevleri yöntem öznitelikleri çalışma zamanında gerçekten kullanmaz, ancak bunun yerine nerede yapılandırmak için bir derleme zamanı dosya sistemi kuralını kullanır ve Azure işlevleri kullanıma sunulan nasıl budur. Gelen **çözüm bölmesi**, proje düğümünüze sağ tıklayıp **Finder'da Göster**.
 
@@ -302,7 +301,7 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 
 1. Geri dönüp **Mac için Visual Studio** ve hata ayıklama oturumunu sona erdirme.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Alıştırma 5: Azure depolama tablolarla çalışma
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Alıştırma 5: Azure depolama tabloları ile çalışma
 
 Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önemli miktarda zaman ve/veya yürütülecek altyapı gerektiren daha çok daha karmaşık olabilir. O durumda, bu kaynaklar kullanılabilir olduğunda işlenmek üzere kuyruğa alınan isteklerini kabul etmek etkili bulabilirsiniz, hangi Azure işlevleri için destek sağlar. Diğer durumlarda, veri merkezi olarak depolamak isteyebilirsiniz. Azure depolama tabloları, hızlı bir şekilde gerçekleştirmenize olanak tanır.
 
@@ -409,4 +408,3 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
 ## <a name="summary"></a>Özet
 
 Bu laboratuvarda, Mac için Visual Studio ile Azure işlevleri geliştirmeye başlamak nasıl öğrendiniz.
-

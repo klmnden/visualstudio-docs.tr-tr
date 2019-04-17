@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d5d697cecfb30bc52f3386411a32a05718b0662
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67a35b8987cc9f4f06cc93df2462a4dee326d7e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783135"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664024"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++ Proje Ayarları, Projeler ve Çözümler, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Bu iletişim kutusunu tanımlamanızı sağlar [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proje dosya türlerini destekleyen ve günlük kaydı oluşturmak için ilgili ayarlar.  
   
 ### <a name="to-access-this-dialog-box"></a>Bu iletişim kutusuna erişmek için  

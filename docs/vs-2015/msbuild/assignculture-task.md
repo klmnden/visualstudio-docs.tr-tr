@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c161dcd18a46928c9e180608a122f106ecd6554e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780908"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667176"
 ---
 # <a name="assignculture-task"></a>AssignCulture Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu görev, dosya adının bir parçası olarak geçerli bir .NET kültür tanımlayıcı dizesi içerebilir öğelerinin bir listesini kabul eder ve adlı bir meta veri içermeyen öğeleri üretir `Culture` karşılık gelen içeren kültür tanımlayıcısı. Bu görev meta verilerle aynı dosya adını içeren bir öğe oluşturur Örneğin, dosya adı Form1.fr-fr.resx katıştırılmış bir kültür tanımlayıcı "fr-fr", olduğundan `Culture` eşit `fr-fr`. Görev, dosya adları listesini de dosya kaldırıldı kültürüyle üretir.  
   
 ## <a name="task-parameters"></a>Görev parametreleri  

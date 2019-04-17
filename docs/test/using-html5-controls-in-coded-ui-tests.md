@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 84c1a0a4f74c847da78920a638b37c0294717d02
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951884"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649791"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI testlerinde HTML5 denetimleri kullanma
 
@@ -53,7 +53,6 @@ Bkz: [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElem
 
 > [!NOTE]
 > Arama ve duraklatma süreyi önemli ölçüde fazla olabilir. Kayıttan yürütme sırasında kodlanmış UI testi belirtilen süre içinde kadar bekleyin `(TimeSpan)` ses duraklatmadan önce. Bazı özel durumda tarafından duraklatma komutunu ulaşmaktan önce belirtilen zaman geçtiyse, bir özel durum oluşturulur.
-
 
 ## <a name="video-control"></a>Video denetimi
  **Video denetimi:** HTML5 Video denetimi eylemlerini doğru şekilde kaydedilir ve kayıttan yürütülebilir.

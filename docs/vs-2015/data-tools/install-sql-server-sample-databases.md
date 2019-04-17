@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765642"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654509"
 ---
 # <a name="install-sql-server-sample-databases"></a>SQL Server örnek veritabanları yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Örnek veritabanları, SQL ve LINQ sorguları, veri bağlama, Entity Framework modelleme ve benzeri ile denemek için kullanışlıdır.  Her veritabanı ürünün kendi örnek veritabanları vardır. Northwind ve AdventureWorks iki yaygın olarak kullanılan SQL Server örnek veritabanlarıdır.  
   
  **AdventureWorks** sağlanan SQL Server ürünleri için geçerli örnek veritabanı. Bir .mdf dosyasından olarak indirebilirsiniz [Codeplex AdventureWorks sayfasında](http://msftdbprodsamples.codeplex.com/). Kullanılabilir veritabanı normal ve basit (LT) sürümleri burada. Çoğu senaryo için daha az karmaşık olduğundan LT sürümü tercih edilir.  

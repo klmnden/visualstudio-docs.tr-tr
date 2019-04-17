@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fa0c6e6e968f05ed8e2612e330d251ee7251206
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4847c8b6abf44e1ac68de1f1b9c8cbb0ca0aac7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780069"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652485"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Veritabanı nesnesi için şema bilgileri alınamadı &lt;nesne adı&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu ileti genellikle bir nesne görüntülendiğinde **Sunucu Gezgini/veritabanı Gezgini** panoya kopyalandı, veritabanından silinir ve ardından tasarımcının üzerine yapıştırılabilir. Veritabanı nesnesi artık mevcut olmadığından, bu ileti görünür.  
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  

@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eaf16ac81f5b8347955e97d71f82e37e7feff38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16b8d2214d9f81115d183eb1b4e6765dcd33d37e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756341"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655108"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Uzantılar ve Güncelleştirmeler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Visual Studio güncelleştirmelerini nasıl gerçekleştirir ve uzantıları nasıl güncelleştirildi ve bulunan seçeneklerini ayarlamak için bu sayfayı kullanın.  
   
 ### <a name="automatically-check-for-updates"></a>Güncelleştirmeleri otomatik olarak denetle  

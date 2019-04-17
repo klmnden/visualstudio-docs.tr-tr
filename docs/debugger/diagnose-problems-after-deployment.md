@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f78cffeb5cc538cfa8fa80edf35ca1390ebbc65
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 081abc8765e1f95b723a598f4fedbaef4357c539
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857781"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655185"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace kullanarak dağıtımdan sonra sorunları tanılama (C#, Visual Basic)
 
@@ -45,7 +45,6 @@ Visual Studio 2017 ve sonraki sürümler dahil etmeyin *Buildınfo.config* kulla
 * Azure'a dağıtım için kullanmak [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * IntelliTrace kullanmanız gerekirse, projeyi Visual Studio'da açın ve eşleşen derlemeden sembol dosyalarını yükleyin. Sembol dosyaları yükleyebilir **modülleri** penceresi veya sembolleri yapılandırma **Araçları** > **seçenekleri** > **hata ayıklama**   >  **Sembolleri**.
-
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Derleme bildirimi (Buildınfo.config dosyası) için kaynak, yapı ve simge konumları eklemek için derleme işlem hattı ayarlayın. Team Foundation Yapısı otomatik olarak bu dosyayı oluşturur ve projenizin çıkış klasörüne yerleştirir.
@@ -105,7 +104,7 @@ Visual Studio 2017 ve sonraki sürümler dahil etmeyin *Buildınfo.config* kulla
 
     -   **/p:VisualStudioVersion=12.0**
 
-    -   **/p:MSBuildAssemblyVersion=12.0**
+    -   **/p:MSBuildAssemblyVersion 12.0 =**
 
     -   **/tv:12.0**
 
@@ -168,7 +167,7 @@ Visual Studio 2017 ve sonraki sürümler dahil etmeyin *Buildınfo.config* kulla
 
 1.  Visual Studio Enterprise IntelliTrace günlük (.iTrace dosyası) açın. Veya yalnızca aynı bilgisayarda Visual Studio Enterprise varsa dosyasına çift tıklayın.
 
-2.  Seçin **açık çözüm** projeyi bir çözümün bir parçası oluşturulmadıysa Visual Studio'nun eşleştirme çözümünü veya projeyi otomatik olarak açılmasını sağlamak için. [S: IntelliTrace günlük dağıtılan Uygulamam hakkında bilgiler eksik. Neden bu ortaya çıktı? Ne yapmam gerekir?](#InvalidConfigFile)
+2.  Seçin **açık çözüm** projeyi bir çözümün bir parçası oluşturulmadıysa Visual Studio'nun eşleştirme çözümünü veya projeyi otomatik olarak açılmasını sağlamak için. [S: IntelliTrace günlük dağıtılan Uygulamam hakkında bilgiler eksik. Neden bu ortaya çıktı? Ne yapmalıyım?](#InvalidConfigFile)
 
      Eşleştirme çözümünü veya projeyi açtığında, visual Studio tüm bekleyen değişiklikleri otomatik olarak kaldırır. Bu raf kümesi hakkında daha fazla bilgi edinmek için konum **çıkış** penceresi veya **Takım Gezgini**.
 
@@ -262,7 +261,7 @@ Visual Studio 2017 ve sonraki sürümler dahil etmeyin *Buildınfo.config* kulla
 
 3.  Dosyanın gerekli bilgileri içerdiğinden emin olun:
 
-- **ProjectName**
+- **projectName**
 
    Projenizi Visual Studio'da adı. Örneğin:
 
@@ -316,7 +315,7 @@ Visual Studio 2017 ve sonraki sürümler dahil etmeyin *Buildınfo.config* kulla
     </SourceControl>
     ```
 
-- **Yapı**
+- **Derleme**
 
    Yapı sisteminizi hakkında bilgi ya da `"TeamBuild"` veya `"MSBuild"`, ve bunlar gerekli özellikler:
 

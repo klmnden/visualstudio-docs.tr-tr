@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856696"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654717"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Snapshot Debugger'ı kullanarak canlı ASP.NET Azure Kubernetes hizmetlerinde hata ayıklama
 
@@ -35,9 +35,9 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Azure Kubernetes hizmeti yalnızca Visual Studio 2019 Enterprise Önizleme veya üzeri ile için anlık görüntü hata ayıklayıcısı **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
+* Azure Kubernetes hizmeti yalnızca Visual Studio 2019 Enterprise için kullanılabilir veya üzeri ile için anlık görüntü hata ayıklayıcısı **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
 
-    Henüz yüklü değilse, yükleme [Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/).
+    Henüz yüklü değilse, yükleme [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * Anlık görüntü koleksiyonu, aşağıdaki Azure Kubernetes hizmeti web uygulamaları için kullanılabilir:
   * .NET Core 2.2 veya sonraki Debian 9 üzerinde çalışan ASP.NET Core uygulamaları.

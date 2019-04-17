@@ -17,24 +17,23 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd5fb6f70504fd89c0d08f7a8aa760b3c7b68323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b29138ef9ab5bffa263a8392396091a38ea91a2e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758338"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666984"
 ---
 # <a name="msbuild-conditions"></a>MSBuild Koşulları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] olabilir koşulları belirli bir kümesini destekler yerde uygulanan bir `Condition` özniteliğine izin verilir. Aşağıdaki tabloda, bu koşullar açıklanmaktadır.  
   
 |Koşul|Açıklama|  
 |---------------|-----------------|  
-|'`stringA`' == '`stringB`'|Eğer `stringA` eşittir `stringB` ise `true` olarak değerlendirilir.<br /><br /> Örneğin:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Basit alfasayısal dize veya Boolean değerleri için tek tırnak gerekmez. Ancak boş değerler için tek tırnak gereklidir.|  
-|'`stringA`' != '`stringB`'|Değerlendiren `true` varsa `stringA` eşit değildir `stringB`.<br /><br /> Örneğin:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Basit alfasayısal dize veya Boolean değerleri için tek tırnak gerekmez. Ancak boş değerler için tek tırnak gereklidir.|  
-|\<, >, \<=, >=|Sayısal değerlerin işlenenden değerlendirir. Döndürür `true` ilişkisel değerlendirme doğru olması durumunda. İşlenen, bir ondalık ya da onaltılık sayı değerlendirmelidir. Onaltılık sayılar "0 x" başlaması gerekir. **Not:**  XML'de karakterleri `<` ve `>` kaçış karakterleri eklenmelidir. Simgenin `<` olarak temsil edilir `<`. Simgenin `>` olarak temsil edilir `>`.|  
+|'`stringA`' == '`stringB`'|Eğer `stringA` eşittir `stringB` ise `true` olarak değerlendirilir.<br /><br /> Örneğin:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Basit alfasayısal dize veya Boole değerleri için tek tırnak gerekmez. Ancak boş değerler için tek tırnak gereklidir.|  
+|'`stringA`' != '`stringB`'|Değerlendiren `true` varsa `stringA` eşit değildir `stringB`.<br /><br /> Örneğin:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Basit alfasayısal dize veya Boole değerleri için tek tırnak gerekmez. Ancak boş değerler için tek tırnak gereklidir.|  
+|\<, >, \<=, >=|İşleçlerin sayısal değerlerini karşılaştırır. İlişkisel değerlendirme doğru olması durumunda `true` döndürür. İşlenenler, bir ondalık ya da onaltılık sayıya dönüşebilmelidir. Onaltılık sayıların "0x" ile başlaması gerekir. **Not:**  XML'de `<` ve `>` için kaçış karakterleri eklenmelidir. `<` simgesi `<` olarak temsil edilir. `>` simgesi `>` olarak temsil edilir.|  
 |Exists('`stringA`')|`stringA` adında bir dosya veya klasör varsa `true` olarak değerlendirilir.<br /><br /> Örneğin:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Basit alfasayısal dize veya Boole değerleri için tek tırnak gerekmez. Ancak boş değerler için tek tırnak gereklidir.|  
 |HasTrailingSlash('`stringA`')|Değerlendiren `true` ya da arkaya eğik belirtilen dizeyi içerip içermediğini (\\) veya İleri eğik çizgi (/) karakteri.<br /><br /> Örneğin:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Basit alfasayısal dize veya Boole değerleri için tek tırnak gerekmez. Ancak boş değerler için tek tırnak gereklidir.|  
 |!|Değerlendiren `true` işlenen değerlendirilirse `false`.|  

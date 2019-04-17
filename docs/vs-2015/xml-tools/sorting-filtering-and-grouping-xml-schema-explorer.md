@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7bf4918779fa3c15a21b32432f46dec18564af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8faed52971bacdcd08fb8d8769d5b49bd9bf90bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773265"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662731"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Sıralama, filtreleme ve gruplandırma (XML Şeması Gezgini)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu konu başlığı üzerinden seçeneklerle **sıralama, filtreleme ve gruplandırma seçeneklerini** XML şema Gezgini araç çubuğundaki menü.  
   
 ## <a name="filter-options"></a>Filtre Seçenekleri  

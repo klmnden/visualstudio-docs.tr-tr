@@ -19,17 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867949"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669607"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki konular, özellikler, ürünler ve Microsoft Windows engelli kişiler için daha erişilebilir hale getiren hizmetleri hakkında bilgi sağlar:  
   
 -   [Windows erişilebilirlik özellikleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
@@ -59,7 +58,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 ##  <a name="altfortmats"></a> Alternatif biçimlerdeki belgeler  
  Zorluk veya yazdırılan malzemelerin varsa, belge için daha erişilebilir bir biçimde birçok Microsoft ürününde elde edebilirsiniz. Erişilebilir ürün belgelerinin dizinini görüntüleyebilirsiniz [Microsoft Erişilebilirlik Web sitesi](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
- Ayrıca, Recording for the Blind & Dyslexic, Inc (RFB&D) şirketinden de ek Microsoft yayınlarını elde edebilirsiniz. RFB&D bu belgeleri dağıtım hizmetlerine kayıtlı, uygun üyelere dağıtmaktadır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının kullanılabilirliği hakkında bilgi için şuraya başvurun:  
+ Ayrıca, for the Blind & Dyslexic, Inc (RFB & D) kaydından ek Microsoft yayınları edinebilirsiniz. RFB & D bu belgeleri kendi dağıtım hizmetine kayıtlı, nitelikli üyelerine dağıtır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının kullanılabilirliği hakkında bilgi için şuraya başvurun:  
   
 |Learning Ally|  
 |----------------------------------------------|  

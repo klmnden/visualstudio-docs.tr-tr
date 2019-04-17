@@ -12,18 +12,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873434"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647207"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Visual Studio Uzantıları Gönderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Not**: Visual Studio Galerisi, Visual Studio Market tarafından değiştirilmektedir. Ayrıntılar için bu konunun en son sürümüne bakın.
-
 
 Uzantınızı geliştirme bitirdikten sonra diğer makinelere yükleyin, arkadaşlarınız ve iş arkadaşları ile paylaşma veya Visual Studio galerisinde yayımlamak. Bu bölümde biz yayımlama ve uzantınızı sağlamak için yapmanız gereken her şeyi açıklayan: yayımlama, yerelleştirme ve güncelleştirme .vsix dosyaları ile çalışma.
 

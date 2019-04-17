@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610326"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652586"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest görevi
 
@@ -31,7 +31,6 @@ Oluşturur bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 ## <a name="parameters"></a>Parametreler
 
 Parametreler için aşağıdaki tabloda açıklanmıştır `GenerateDeploymentManifest` görev.
-
 
 | Parametre | Açıklama |
 |--------------------------| - |

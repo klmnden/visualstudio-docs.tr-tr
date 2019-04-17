@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 8474bd6550bb57a51bfb6e2c585a333f05d3c1d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737039"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652416"
 ---
 # <a name="property-functions"></a>Özellik işlevleri
 
 .NET Framework sürüm 4 ve 4.5, MSBuild komut değerlendirilecek özellik işlevleri kullanılabilir. Özellik işlevleri özellikleri görünür her yerde kullanılabilir. Görevleri farklı özellik işlevleri hedefleri dışında kullanılabilir ve tüm hedef çalışmadan önce değerlendirilir.
 
  MSBuild görevlerini kullanmadan, sistem saatini okuyabilir, dizeleri karşılaştırmak, normal ifadeleri eşleştirebilir ve derleme betiğinizin diğer eylemleri gerçekleştirin. MSBuild, dize ve numarası dizeye Dönüştür ve gerektiği gibi diğer dönüştürme yapmak çalışacaktır.
+ 
+Dize değerli özellik işlevlerden döndürülebilir [özel karakterler](msbuild-special-characters.md) Atlanan. Artırmadığı doğrudan proje dosyası, kullanım koyulmuş işlenmeye değer istiyorsanız `$([MSBuild]::Unescape())` unescape özel karakterler için.
 
 ## <a name="property-function-syntax"></a>Özellik işlevi sözdizimi
 

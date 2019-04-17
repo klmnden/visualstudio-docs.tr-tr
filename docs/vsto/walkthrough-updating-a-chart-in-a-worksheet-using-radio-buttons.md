@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602071"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651896"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme
   Bu izlenecek yol, kullanıcı seçenekleri arasında kolayca geçiş yapmak için bir yol sağlamak için Microsoft Office Excel çalışma sayfasında radyo düğmeleri kullanmanın temellerini gösterir. Bu durumda, bir grafik stilini seçeneklerini değiştirin.
@@ -132,30 +132,24 @@ ms.locfileid: "56602071"
 
 2. Gelen **ortak denetimleri** sekmesinde **araç kutusu**, sürükleyin bir **radyo düğmesini** denetlemek için kullanıcı denetimi ve aşağıdaki özellikleri değiştirin.
 
-
    | Özellik | Değer |
    |----------|------------------|
    | **Ad** | **columnChart** |
    | **Metin** | **Sütun grafiği** |
 
-
 3. İkinci bir radyo düğmesi kullanıcı denetimine ekleyin ve aşağıdaki özellikleri değiştirin.
-
 
    | Özellik | Değer |
    |----------|---------------|
    | **Ad** | **barChart** |
    | **Metin** | **Çubuk grafik** |
 
-
 4. Kullanıcı denetimi için üçüncü bir radyo düğmesi ekleyin ve aşağıdaki özellikleri değiştirin.
-
 
    | Özellik | Değer |
    |----------|----------------|
    | **Ad** | **lineChart** |
    | **Metin** | **Çizgi grafik** |
-
 
 5. Kullanıcı denetimine dördüncü bir radyo düğmesi ekleyin ve aşağıdaki özellikleri değiştirin.
 

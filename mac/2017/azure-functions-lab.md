@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: d728de52a159d058ecae48d48620547b6d8fcf4f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573131"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652975"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Öğretici: Azure işlevleri ile çalışmaya başlama
 
@@ -187,7 +187,6 @@ Bu laboratuvarda, Mac için Visual Studio kullanarak Azure işlevleri geliştirm
 1. Bu süre sonucu yeni parametreler yansıtmalıdır. Projeyi farklı değerlerle çalıştırmak çekinmeyin. Geçersiz veya eksik parametreler bir hata atar. Bu nedenle denetimi, herhangi bir hata olmadığını unutmayın.
 
 1. Hata ayıklama oturumunu durdurun.
-
 
 ## <a name="exercise-4-working-with-functionjson"></a>Alıştırma 4: Function.json ile çalışma
 
@@ -409,4 +408,3 @@ Genellikle, oluşturduğunuz hizmet ne biz şu ana kadar oluşturulmuş ve önem
 ## <a name="summary"></a>Özet
 
 Bu laboratuvarda, Mac için Visual Studio ile Azure işlevleri geliştirmeye başlamak nasıl öğrendiniz.
-

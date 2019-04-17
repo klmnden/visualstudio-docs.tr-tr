@@ -19,17 +19,17 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194930"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654704"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](https://docs.microsoft.com/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
+Visual Studio ile ilgili en son belgeler için bkz. [geçiş ve yükseltme proje başvurusu için Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
 
 Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun daha yeni bir sürüme taşımalısınız olmadığını değerlendirirken, projeler, dosyalar ve oluşturduğunuz diğer varlıklardan [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1 olmadan çalışır değişiklik [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ve [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Veya içinde açtığınız Visual Studio sürümünde desteklenmeyen bir projeyi açmaya çalışırken bir hata iletisi aldıysanız, bu sayfada ulaşmış olabilir veya bir SDK veya uzantı, .NET için Azure SDK gibi gerektirir.
 
@@ -38,7 +38,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
  Kullanırsanız [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ile birlikte [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1 oluşturabilir ve projeleri ve dosyaları sürümlerinden herhangi birini değiştirin. Sürümlerden birinin desteklemediği özellikler eklemediğiniz sürece sürümler arasında proje ve dosya aktarımı yapabilirsiniz.
 
 ##  <a name="project"></a> Projeleri
- Aşağıdaki listede desteği açıklanmaktadır [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] kullanılarak oluşturulmuş projeler için [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1. Bir proje olarak açık olup olmadığını belirlemenize yardımcı olması için bu listeyi kullanabilirsiniz-bulunduğu [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya Visual Studio 2010 SP1 veya uyumluluğu sağlamak için değiştirmeniz gerekip gerekmediğini belirtir.
+ Aşağıdaki listede desteği açıklanmaktadır [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] kullanılarak oluşturulmuş projeler için [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1. İçinde "olduğu gibi" bir projeyi açabilir olup olmadığını belirlemenize yardımcı olması için bu listeyi kullanın [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya Visual Studio 2010 SP1 veya uyumluluğu sağlamak için değiştirmeniz gerekip gerekmediğini belirtir.
 
 |Proje Türü|Uyumluluk|
 |---------------------|-------------------|
@@ -130,4 +130,5 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |[!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]|MSBuild gibi 64 bitlik bir ortam veya [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] oluşturmak için kullanılamaz [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] oluşturulan uygulamaları [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)].|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Özel projeler sürüm ile uyumlu hale getirme](../misc/making-custom-projects-version-aware.md)
+
+- [Özel projeler sürüm ile uyumlu hale getirme](../misc/making-custom-projects-version-aware.md)

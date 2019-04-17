@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683688"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649998"
 ---
 # <a name="graphics-event-list"></a>Grafik Olay Listesi
 Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş Direct3D olayları keşfetmek için Visual Studio grafik Çözümleyicisi'nde kullanın.
@@ -104,7 +104,6 @@ Visual Studio 2017 ve daha sonraki sürümleri içeren **kaynak geçmişi** penc
 ![Kaynak geçmişi](media/gfx_diag_resource_history.png)
 
 Bu pencere, olay listedeki seçili öğenin geçmişini görüntülemek sağlar.  Üstteki açılan geçmişini görüntülemek için diğer öğeleri seçmek için kullanılabilir.  Pencerenin üst kısmında içeren **çerçeve Kurulumu olayları**.  Bunlar yer alacağı olayları *Oluştur* kategori yazın ve genellikle başlatmak ve kaynak oluşturma çağrıları.  Pencerenin yarısını içeren alt **çerçeve olayları** bölümü.  Bunlar normal okuma ve yazma sırasında kaynak kullanımını meydana gelen olayları.
-
 
 | Sütun | Açıklama |
 |-----------| - |

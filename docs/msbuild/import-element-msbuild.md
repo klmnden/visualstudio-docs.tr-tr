@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629917"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652806"
 ---
 # <a name="import-element-msbuild"></a>İçeri aktarma öğesi (MSBuild)
 Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
@@ -48,7 +48,7 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
 |`Condition`|İsteğe bağlı öznitelik.<br /><br /> Değerlendirilecek olan koşul. Daha fazla bilgi için [koşullar](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Alt öğeleri
- Hiçbiri
+ Yok.
 
 ### <a name="parent-elements"></a>Üst öğeler
 
@@ -69,7 +69,6 @@ Bir proje dosyasının içeriğini başka bir proje dosyasına aktarır.
  İçeri aktarılan proje yoksa bir `DefaultTargets` özniteliği, içeri aktarılan projeleri içeri aktarılır ve bulunan değerin ilk sırada inceledi `DefaultTargets` özniteliği kullanılır. Örneğin ProjectA ProjectB ve ProjectC (bu sırayla) alır ve ProjectB alır, ProjectD [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ilk arar `DefaultTargets` ProjectA, ardından ProjectB, ardından ProjectD ve ProjectC son belirtilen.
 
  Şema içeri aktarılan bir proje, standart bir proje için aynıdır. Ancak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] olabilir bir içeri aktarılan proje genellikle kümesi veya hedefleri çalıştırın sırayı hangi özellikleri hakkında bilgi içermiyor içeri aktarılan bir proje oluşturmak kullanabilirsiniz, olası olmasıdır. İçeri aktarılan proje içine bu bilgileri sağlamak için aktarılır projeye bağlıdır.
-
 
 ## <a name="wildcards"></a>Joker karakterler
  .NET Framework 4'te MSBuild proje öznitelik joker karakterler sağlar. Joker karakterler olduğunda, tüm eşleşme bulundu (için yeniden üretilebilirliğini) sıralanır ve sırasını açıkça ayarlanmış olarak daha sonra bu sırayla aktarıldıkları.

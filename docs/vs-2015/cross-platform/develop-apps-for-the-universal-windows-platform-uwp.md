@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787024"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666773"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Evrensel Windows Platformu (UWP) için uygulama geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Evrensel Windows platformu ve bizim bir Windows çekirdek ile aynı uygulama tüm Windows 10 cihazlarda phone'lardan masaüstlerine çalıştırabilirsiniz. Visual Studio 2015 ile Evrensel Windows uygulaması geliştirme araçları bu evrensel Windows uygulamaları oluşturun.  
   
  ![Evrensel Windows platformu](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  

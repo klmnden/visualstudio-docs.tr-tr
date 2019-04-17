@@ -15,22 +15,21 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834835"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667306"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio'yu kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [kaldırma Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/uninstall-visual-studio).
+Visual Studio ile ilgili en son belgeler için bkz. [kaldırma Visual Studio](/visualstudio/install/uninstall-visual-studio).
 
 Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretkenlik araçları'nın önceki bir sürümünü kaldırma aracılığıyla size yol gösterir.
 
-##  <a name="uninstalling"></a>
-#### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Visual Studio'yu "standart" kaldırma yöntemini kullanarak kaldırmak için
+## <a name="uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Visual Studio'yu "standart" kaldırma yöntemini kullanarak kaldırın.
 
 1. İçinde **Denetim Masası**, **programlar ve Özellikler** kaldırın ve ardından istediğiniz ürün sürümünü seçin **değişiklik**.
 
@@ -38,12 +37,12 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
 
    Bu standart veya varsayılan yöntem bazı bırakır ilk yüklemesi Visual Studio'nun ilk olarak yüklediyseniz (örneğin, Microsoft .NET Framework, Microsoft Visual C++ yeniden dağıtılabilir dosyaları, Microsoft SQL Server, vb.) öğeleri.   Biz bu diğer birçok uygulama bunlara bağımlı olduğundan yüklü bırakın. Bunları da kaldırmak istiyorsanız, ancak girdisini seçerek **programlar ve Özellikler**ve her tek tek kaldırabilirsiniz.
 
-#### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Visual Studio ve diğer ilgili dosyaları kaldırmak için (diğer bir deyişle, neredeyse her şeyi kaldırmak)
+## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Visual Studio ve diğer ilgili dosyaları kaldırmak (diğer bir deyişle, neredeyse her şeyi kaldırmak)
 
 1.  Visual Studio'nun .exe dosyasını (örneğin, "vs_enterprise.exe" bulun).
 
     > [!NOTE]
-    >  Dosya, örneğin, "%ProgramData%\Package Cache", bir alt klasöründe olmalıdır: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    > Dosya, örneğin, "%ProgramData%\Package Cache", bir alt klasöründe olmalıdır: C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
 
 2.  Kullanarak .exe dosyasını çalıştırın. / uninstall/force komut satırı parametrelerini.
 
@@ -52,7 +51,7 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
     > [!TIP]
     > Alternatif olarak, "**Total Uninstaller**" Visual Studio her şeyi kaldırmak için aracı veya Visual Studio güncelleştirmelerinin yüklemiş olabilirler. Diğer bir deyişle, tüm Visual Studio 2013 veya sonraki sürümü. Daha fazla bilgi için bkz. [Visual Studio Uninstaller aracına](https://github.com/Microsoft/VisualStudioUninstaller/releases) GitHub üzerinde.
 
-#### <a name="to-uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Visual Studio'yu Sessiz ya da pasif modda kaldırmak için (diğer bir deyişle, kaynaktan kaldırmak)
+## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Visual Studio'yu Sessiz ya da pasif modda kaldırmak (diğer bir deyişle, kaynaktan kaldırmak)
 
 1.  Visual Studio'nun yüklü olduğu bilgisayarda Windows komut istemini açın.
 
@@ -60,20 +59,21 @@ Bu sayfada Visual Studio 2015, tümleşik paketimiz geliştiriciler için üretk
 
      *DVDRoot* \\< yükleme dosyası\> \</quiet&#124;/passive > [/ norestart] / uninstall
 
-#### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Bir önceki sürümü veya Visual Studio'nun geri almak için
+## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Bir önceki sürümü veya Visual Studio sürümü geri alma
 
 1. Bu konuda listelenen yöntemlerden istediğinizi kullanarak Visual Studio'yu kaldırın.
 
    > [!WARNING]
-   >  Visual Studio'nun (veya bir Visual Studio güncelleştirmesinin) geçerli bir sürümünün kaldırılması ve ardından önceki bir sürümünün yüklenmesi beklendiği gibi çalışmayabilir.
+   > Visual Studio'nun (veya bir Visual Studio güncelleştirmesinin) geçerli bir sürümünün kaldırılması ve ardından önceki bir sürümünün yüklenmesi beklendiği gibi çalışmayabilir.
    >
-   >  Sonucu bağımlı olduğu sürüm veya sürüm Visual Studio'nun bilgisayarınızda yüklü, bileşenleri hangi sürümlerinin yüklendiğine, hangi ürünlerin bağımlılıkları ya da Visual Studio sürüm veya bileşenleri, sahip ve son olarak, üzerinde hangi eski Visual Studio sürümünü yüklemek ya da yeniden planlayın.  Tüm bu değişkenler nedeniyle, standart kaldırma genellikle çalışmayabilecek bileşenler önceki Visual Studio sürümleri veya sürümler ile kalır.
+   > Sonucu bağımlı olduğu sürüm veya sürüm Visual Studio'nun bilgisayarınızda yüklü, bileşenleri hangi sürümlerinin yüklendiğine, hangi ürünlerin bağımlılıkları ya da Visual Studio sürüm veya bileşenleri, sahip ve son olarak, üzerinde hangi eski Visual Studio sürümünü yüklemek ya da yeniden planlayın.  Tüm bu değişkenler nedeniyle, standart kaldırma genellikle çalışmayabilecek bileşenler önceki Visual Studio sürümleri veya sürümler ile kalır.
    >
-   >  Bu nedenle, en iyi sonuçlar için kullanmanızı öneririz [Visual Studio Uninstaller aracına](https://github.com/Microsoft/VisualStudioUninstaller/releases).
+   > Bu nedenle, en iyi sonuçlar için kullanmanızı öneririz [Visual Studio Uninstaller aracına](https://github.com/Microsoft/VisualStudioUninstaller/releases).
 
 2. Yükleme veya kullanmak istediğiniz Visual Studio'nun önceki sürümünü yeniden yükleyin.
 
    Visual Studio'nun önceki bir sürümünü yüklüyor olsanız bile, Kurulum programı varsa sürüm veya daha yeni bir sürümünü kullanmak yine de deneyebilirsiniz. Daha ayrıntılı bilgi için bkz. [nasıl yapılır: Sürüm, Visual Studio'nun belirli bir yükleme](../install/how-to-install-a-specific-release-of-visual-studio.md) konu.
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio'yu yükleyin](https://msdn.microsoft.com/library/e2h7fzkw.aspx)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio'yu yükleyin](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

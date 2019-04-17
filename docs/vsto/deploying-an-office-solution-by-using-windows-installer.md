@@ -18,18 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d46953b56accd4926d5515440642e1591ef85a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eed2cc63941f63b3f1d21cac86f907808a072665
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625572"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666357"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows Installer kullanarak Office çözümü dağıtma
 Office çözümünüz için bir Windows Installer kullanarak oluşturmayı öğrenin [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].
 
 Bir Windows Installer dosyası oluşturmak için Visual Studio kullanarak, son kullanıcının bilgisayarında yönetici erişimi gerektiren bir Office çözümü dağıtabilirsiniz. Örneğin, böyle bir dosya, çözümü bir bilgisayarın tüm kullanıcıları için yalnızca bir kez yüklemek için kullanabilirsiniz. Çözüm bilgisayarın her kullanıcısı için ayrı olarak yüklenmesi gerekir ancak bu ayrıca ClickOnce kullanarak Office çözümü dağıtabilirsiniz.
-
 
 ## <a name="in-this-topic"></a>Bu konuda
 
@@ -59,11 +58,8 @@ ClickOnce kullanarak Office çözümünü dağıtma hakkında daha fazla bilgi i
 
 Kullanarak bir Windows Installer dosyası oluşturma hakkında daha fazla bilgi için [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], bkz: [Windows Installer kullanarak Office çözümü için Visual Studio 2010 araçlarını dağıtma](http://go.microsoft.com/fwlink/?LinkId=201807).
 
-
 ## <a name="Download"></a>Örnekleri indir
 Bu konu aşağıdaki indirilebilir örneklere başvurur.
-
-
 
 |Örnek<br /><br />|Açıklama<br /><br />|
 |----------|---------------|
@@ -73,7 +69,6 @@ Bu konu aşağıdaki indirilebilir örneklere başvurur.
 ## <a name="ApplySecurity"></a>Çözüme güven kazandırmak için nasıl karar verme
 Bir çözümün kullanıcı bilgisayarları üzerinde çalıştırmadan önce aşağıdaki yollardan biri vermelisiniz veya çözümü yükledikleri sırada kullanıcılar bir güvenlik istemine yanıt vermelidir.
 
-
 - Bilinen ve güvenilir bir yayımcıyı tanımlayan bir sertifika kullanarak bildirimleri imzalayın. Daha fazla bilgi için [uygulama ve dağıtım bildirimlerini imzalayarak çözüme güvenin](../vsto/granting-trust-to-office-solutions.md#Signing).
 
 - Çözümü kullanıcının bilgisayarındaki Program Files dizinine yükleyin.
@@ -81,10 +76,8 @@ Bir çözümün kullanıcı bilgisayarları üzerinde çalıştırmadan önce a�
 > [!NOTE]
 > Belge düzeyi özelleştirmeleri için belgenin konumunu da güvenilir olması gerekir. Daha fazla bilgi için [belgelere güven verme](../vsto/granting-trust-to-documents.md).
 
-
 ## <a name="Obtain"></a>InstallShield Limited Edition'ı Al
 Visual Studio yüklediyseniz ücretsiz olan InstallShield Limited Edition (ISLE) kullanarak bir Windows Installer dosyası oluşturabilirsiniz. ISLE, Visual Studio'nun önceki sürümlerinde sunulan Kurulum ve dağıtım için proje şablonları işlevselliğinin yerine geçer.
-
 
 ### <a name="to-get-installshield-limited-edition"></a>InstallShield Limited Edition'ı almak için
 
@@ -104,7 +97,6 @@ Visual Studio yüklediyseniz ücretsiz olan InstallShield Limited Edition (ISLE)
 
    İndirme, yükleme ve ürünü etkinleştirildikten sonra **InstallShield Limited Edition projesi** şablonu Visual Studio'da görünür.
 
-
 ## <a name="Create"></a>Bir kurulum projesi oluşturmak
 
 1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dağıtmak istediğiniz Office projesini açın.
@@ -123,10 +115,8 @@ Visual Studio yüklediyseniz ücretsiz olan InstallShield Limited Edition (ISLE)
 
    Bu konu için örnek adlı bir kurulum projesi içeren **Officeaddınsetup**. Bu konu, aynı adı kullanarak, çözümünüzdeki Kurulum projesine başvuracaktır.
 
-
 ## <a name="Add"></a>Proje çıktısı ekleme
 Yapılandırdığınız **Officeaddınsetup** Office projenizin çıktısını dahil etmek için proje. VSTO eklentisi projeleri için proje çıktısı yalnızca çözüm derlemesidir. Belge düzeyi özelleştirme projeleri için proje çıktısı yalnızca çözüm derlemesini yanı sıra belge dahildir.
-
 
 ### <a name="to-add-the-project-output"></a>Proje çıktısı eklemek için
 
@@ -144,7 +134,6 @@ Yapılandırdığınız **Officeaddınsetup** Office projenizin çıktısını d
 
 5. İçinde **Visual Studio çıktı Seçici** iletişim kutusunda **birincil çıkışının** onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
 
-
 ## <a name="AddD"></a>Dağıtım ve uygulama bildirimleri Ekle
 
 ###
@@ -160,15 +149,12 @@ Yapılandırdığınız **Officeaddınsetup** Office projenizin çıktısını d
 
    ![Kurulum projenizin çıkış dosyaları. ](../vsto/media/installshield-outputfiles.png "Kurulum projenizin çıktı dosyaları.")
 
-
 ## <a name="Configure"></a>Bağımlı bileşenleri önkoşul olarak yapılandır
 Kurulum uygulamanız yalnızca aşağıdaki bileşenleri aynı çözümünüzün çalışması için gerekli olan tüm diğer bileşenleri içermelidir.
-
 
 - .NET Framework sürümü, Office çözümünüzün hedeflediği.
 
 - Office çalışma zamanı için Microsoft Visual Studio 2010 Araçları.
-
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Bir önkoşul olarak .NET Framework 4 veya .NET Framework 4.5 ekleme
 
@@ -186,15 +172,12 @@ Kurulum uygulamanız yalnızca aşağıdaki bileşenleri aynı çözümünüzün
 
 4. Bu iletişim kutusu görüntülenirse, seçin **Hayır** düğmesi.
 
-
 ### <a name="AddToolsForOffice"></a>Visual Studio 2010 Tools for Office Runtime ekleme
 **Yeniden dağıtılabilir dosyaları** sayfa adında bir öğe içeriyor **Microsoft VSTO 2010 Runtime**, ancak çalışma zamanının daha eski bir sürümünü gösterir. Bu nedenle, en son sürüme başvuran bir yapılandırma dosyasını el ile oluşturabilirsiniz. Ardından bu dosyayı görünen tüm diğer öğeleri için yapılandırma dosyalarını ile aynı dizine koymanız gerekir **yeniden dağıtılabilir dosyaları** sayfası.
-
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Office çalışma zamanı için Visual Studio 2010 Araçları bir önkoşul olarak eklemek için
 
 1. Not Defteri'ni açın ve aşağıdaki XML'i metin dosyasına yapıştırın.
-
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -221,7 +204,6 @@ Kurulum uygulamanız yalnızca aşağıdaki bileşenleri aynı çözümünüzün
 4. Not Defteri'nde, metnin yerine **uygulamanızın GUID Buraya** onun yerine GUID yapıştırma tarafından.
 
    **&lt;Özellikleri&gt;** dosyanızın öğesi şuna benzer.
-
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -257,7 +239,6 @@ Kurulum uygulamanız yalnızca aşağıdaki bileşenleri aynı çözümünüzün
 
 13. Bu iletişim kutusu görüntülenirse, seçin **Hayır** düğmesi.
 
-
 ## <a name="Location"></a>Kullanıcının bilgisayarında çözümü yüklemek istediğiniz yeri belirtin
 
 1. İçinde **Çözüm Gezgini**, genişletin **Officeaddınsetup** düğümünü genişletin **kurulumunuzu düzenleyin** düğümünü seçip **genelbilgiler** dosya.
@@ -271,7 +252,6 @@ Kurulum uygulamanız yalnızca aşağıdaki bileşenleri aynı çözümünüzün
    > [!NOTE]
    >    Dizinlerde de oluşturabilirsiniz **INSTALLDIR Ayarla** listede herhangi bir klasör için kısayol menüsünü açarak iletişim kutusu.
 
-
 ## <a name="ConfigureRegistry"></a>Bir VSTO eklentisinin yapılandırın
 VSTO (bilgisayar başına) bilgisayarın tüm kullanıcıları için veya yalnızca (kullanıcı başına) yüklemeyi gerçekleştiren kullanıcı için yüklenecek eklenti isteyip istemediğinizi belirtebilirsiniz.
 
@@ -281,7 +261,6 @@ Kullanıcı yüklemeleri Office ya da Windows sürümünden bağımsız olarak y
 
 > [!NOTE]
 > Bu bölüm, yalnızca bir VSTO eklentisi dağıtıyorsanız geçerlidir. Belge düzeyinde bir özelleştirme dağıtımı yapıyorsanız hemen gidebilirsiniz [bir belge düzeyinde özelleştirmeyi Yapılandır](#ConfigureDocument) bölümü.
-
 
 ### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>Kullanıcı başına veya bilgisayar başına yüklemeleri desteklemek istediğinizi belirtmek için
 
@@ -296,7 +275,6 @@ Kullanıcı yüklemeleri Office ya da Windows sürümünden bağımsız olarak y
    Geçerli kullanıcı için VSTO eklentisi yüklemek için seçin **ALLUSERS = "" (kullanıcı başına yükleme)**. Bilgisayarın tüm kullanıcıları için VSTO eklentisi yüklemek için seçin **ALLUSERS = 1 (makine başına yükleme)**
 
    Sonraki yordamda, bulmak ve VSTO eklentisi yükleme Office uygulamasını etkinleştirmek için kayıt defteri anahtarları oluşturacaksınız. Bkz: [VSTO eklentileri için kayıt defteri girdileri](../vsto/registry-entries-for-vsto-add-ins.md).
-
 
 ### <a name="to-create-registry-keys"></a>Kayıt defteri anahtarları oluşturma
 
@@ -322,16 +300,12 @@ Kullanıcı yüklemeleri Office ya da Windows sürümünden bağımsız olarak y
 
    **Office sürümüne dayanan bilgisayar başına yükleyiciler**
 
-
-
 | Office sürümü<br /><br /> | InstallShield yapılandırma yolu<br /><br /> |
 |----------------------------| - |
 | 32 bit:<br /><br /> | **HKEY_LOCAL_MACHINE\Software(32-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 | 64 bit<br /><br /> | **HKEY_LOCAL_MACHINE\Software(64-bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Windows sürümüne dayanan bilgisayar başına yükleyiciler**
-
-
 
 | Windows sürümü<br /><br /> | InstallShield yapılandırma yolu<br /><br /> |
 |-----------------------------| - |
@@ -351,8 +325,6 @@ Kullanıcı yüklemeleri Office ya da Windows sürümünden bağımsız olarak y
 6. Değerine Yeniden Adlandır **açıklama**.
 
 7. Aşağıdaki değerleri oluşturmak için bu işlemi yineleyin.
-
-
 
 |Değer türü<br /><br />|Ad<br /><br />|
 |--------------|--------|
@@ -395,7 +367,6 @@ Kullanıcı yüklemeleri Office ya da Windows sürümünden bağımsız olarak y
 > [!IMPORTANT]
 > VSTO eklentisi için Outlook içinde bir özel form bölgesi oluşturursanız, Outlook ile bölgeleri kaydetmek için daha fazla kayıt defteri girdileri oluşturmanız gerekir. Daha fazla bilgi için [kayıt defteri girdileri Outlook form bölgeleri](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries).
 
-
 ## <a name="ConfigureDocument"></a>Bir belge düzeyinde özelleştirmeyi Yapılandır
 Bu bölüm yalnızca belge düzeyinde özelleştirme yaptığınızda geçerlidir. Bir VSTO eklenti dağıtımı yapıyorsanız, hemen gidebilirsiniz [Kurulum projesi oluştur](#Build) bölümü.
 
@@ -419,7 +390,6 @@ Belge düzeyi özelleştirmeleri, kayıt defteri anahtarlarını kullanmaz. Bunu
 
 6. İçinde **başvuru Yöneticisi** iletişim kutusunda **uzantıları** sekmesine ve ardından aşağıdaki derlemeler yanındaki onay kutusunu seçin ve ardından **Tamam** düğmesi.
 
-
    - Microsoft.VisualStudio.Tools.Applications.Runtime
 
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument
@@ -434,7 +404,6 @@ Belge düzeyi özelleştirmeleri, kayıt defteri anahtarlarını kullanmaz. Bunu
 [!code-csharp[Trin_CustomAction#1](../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs#1)]
 
 10. Projeyi derle.
-
 
 ### <a name="to-add-a-custom-action-that-runs-your-program"></a>Programınızı çalıştıran özel bir eylem eklemek için
 
@@ -492,7 +461,6 @@ Belge düzeyi özelleştirmeleri, kayıt defteri anahtarlarını kullanmaz. Bunu
 
 15. Özellikler sayfasında **NewCustomAction1**ayarlayın **komut satırı** özelliğini aşağıdaki metin satırına.
 
-
    ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"
    ```
@@ -501,7 +469,6 @@ Belge düzeyi özelleştirmeleri, kayıt defteri anahtarlarını kullanmaz. Bunu
 
    > [!IMPORTANT]
    >    Bu özel eylemin çalıştırdığı konsol uygulaması [INSTALLDIR] dizinindeki belgelere erişebildiğini doğrulayın için yükleyicinizi sınayın. Kullanıcının bilgisayarındaki bazı dizinler (örneğin, Program Files dizini) yönetici erişimi gerektirebilir. Yönetici erişimi gerektiren bir dizine çözümünüzü dağıtıyorsanız, açılmalıdır **özellikleri** iletişim kutusunun *setup.exe* dosya öğesini **Uyumluluk** sekmesine tıklayın ve ardından **bu programı yönetici olarak çalıştır** yükleyiciyi dağıtmadan önce onay kutusu. Kullanıcıların Kurulum programını yönetici izinleriyle çalıştırmak istemiyorsanız, [INSTALLDIR] özelliğini kullanıcının büyük olasılıkla olan erişim dizine ayarlamak gibi **belgeleri** dizin. Daha fazla bilgi için [belirtin kullanıcının bilgisayarında çözümü yüklemek istediğiniz](#Location) bu konudaki.
-
 
 ## <a name="Build"></a>Kurulum projesi oluştur
 

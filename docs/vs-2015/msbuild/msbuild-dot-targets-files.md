@@ -17,17 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4292509e9177c64a0018e0f1c7e95eebf442ffcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 74ac0a2c1ab50cf4c707f4fc9414fe4aa4f403b8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772292"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655068"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets Dosyaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] öğeleri, özellikleri, hedefleri ve görevleri sık karşılaşılan senaryolara yönelik içeren birkaç .targets dosyaları içerir. Bu dosyaları en otomatik olarak içeri aktarılan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje dosyaları, Bakım ve okunabilirliği kolaylaştırmak.  
   
  Projeleri genellikle yapı işlemlerini tanımlamak için bir veya daha fazla .targets dosyalarını içeri aktarın. Örneğin bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] proje tarafından oluşturulan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , Microsoft.common.targets'ı aktarır Microsoft.CSharp.targets içeri aktaracak. [!INCLUDE[csprcs](../includes/csprcs-md.md)] Projenin kendisinin tanımlama öğeleri ve belirli özellikleri bu projeye, ancak standart derleme kuralları için bir [!INCLUDE[csprcs](../includes/csprcs-md.md)] proje içeri aktarılan .targets dosyalarında tanımlanır.  

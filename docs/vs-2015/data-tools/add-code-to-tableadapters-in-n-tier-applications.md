@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765620"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651925"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>N katmanlı uygulamalarda TableAdapter’lara kod ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 İşlevlerini genişletmek bir `TableAdapter` için bir parçalı sınıf dosyası oluşturarak `TableAdapter` ve kod eklemeyi (kod eklemek yerine *DatasetName*. DataSet.Designer dosyası). Kısmi sınıflar arasında birden çok fiziksel dosyaları Bölünecek belirli bir sınıf için kod etkinleştirin. Daha fazla bilgi için [kısmi](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) veya [partial (tür)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Kodu tanımlayan bir `TableAdapter` değişiklik her zaman oluşturulan `TableAdapter`. Her sihirbazın yapılandırmasını değiştirir çalışması sırasında değişiklik yapıldığında bu kod ayrıca oluşturulur `TableAdapter`. Kodunuzu anahtarınızın yeniden oluşturulması sırasında silinmesini önlemek için bir `TableAdapter`, kısmi sınıf dosyaya kod eklemek `TableAdapter`.  

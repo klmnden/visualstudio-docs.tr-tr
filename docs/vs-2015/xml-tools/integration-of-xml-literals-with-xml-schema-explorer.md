@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52d0fe19390703f3c5262de1dbcc9a52ff108fe7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784867"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654431"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML değişmez değerlerini XML Şeması Gezgini ile tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Basic, Visual Basic kodunuzda doğrudan XML parçalarının birleştirebilirsiniz anlamına gelir, XML değişmez değerleri, destekler. Daha fazla bilgi için [XML değişmez değerlerine genel bakış](http://go.microsoft.com/fwlink/?LinkId=140325).  
   
  XSD dosyası, Visual Basic projesinde bir XML değişmez değer içeriyorsa, XML şema Gezgini içinde ayarlamak için XML Şeması görüntüleyebilirsiniz. Bir XML değişmez değeri ile ilişkili şema kümesini görüntülemek için bir XML değişmez değeri ya da bir XML ad alanı alma bir XML düğümünü sağ tıklatın ve seçin **şema Gezgini'nde Göster**.  
@@ -33,4 +32,4 @@ Visual Basic, Visual Basic kodunuzda doğrudan XML parçalarının birleştirebi
  Bu özellik, Visual Studio 2008 SP1'de sunulmuştur. Bu özellik ayrıntılı olarak açıklanmıştır Röportaj izlemek için bkz [Channel 9 görüşme: Visual Studio 2008 SP1'de XML Şeması Gezgini](http://go.microsoft.com/fwlink/?LinkId=140183).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: XML şema tasarımcısını XML değişmez değerleri ile kullanma](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)
+ [Nasıl yapılır: XML Şema Tasarımcısını XML Değişmez Değerleri ile Kullanma](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

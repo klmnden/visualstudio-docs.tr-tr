@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194064"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670478"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense için bir C++ projesi yapılandırma
 
 Bazı durumlarda, IntelliSense düzgün çalışmasını almak için C++ projenize el ile yapılandırmanız gerekebilir. (.Vcxproj dosyaları bağlı olarak), MSBuild projeleri için Proje Özellikleri'nde ayarlarını yapabilirsiniz. MSBuild olmayan projeler için proje kök dizininde CppProperties.json dosyasındaki ayarları ayarlayın. Bazı durumlarda, IntelliSense makro tanımları anlamanıza yardımcı olacak bir ipucu dosyası oluşturmanız gerekebilir. Visual Studio IDE tanımlamak ve IntelliSense sorunlarını gidermenize yardımcı olur.
-
-
 
 ## <a name="single-file-intellisense"></a>Tek Dosyalı IntelliSense
 

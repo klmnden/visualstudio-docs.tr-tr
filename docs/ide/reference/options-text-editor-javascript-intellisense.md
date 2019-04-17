@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938702"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669394"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Seçenekler, Metin Düzenleyici, JavaScript, IntelliSense
 Kullanım **IntelliSense** sayfasının **seçenekleri** JavaScript için IntelliSense'in davranışını etkileyen ayarları değiştirmek için iletişim kutusu. Erişebileceğiniz **IntelliSense** seçerek sayfası **Araçları** > **seçenekleri** menü çubuğu ve ardından genişletme **metin düzenleyici**  >  **JavaScript** > **IntelliSense.**
@@ -59,7 +59,6 @@ Bu seçenek, dil hizmetinin bağlamına dosyaların yüklendiği sırayı belirt
 > [!CAUTION]
 > Bir nesne iki veya daha fazla örtük başvuruda koşulsuz olarak tanımlanırsa, nesneyi tanımlamak için bu listedeki son başvuru kullanılır.
 
-
 **Grup bir başvuru ekleyin**
 
 Bu seçenek, uygun dosyaların bulunduğu yere giderek ek IntelliSense .js dosyalarını eklemek için bir yol sağlar.
@@ -70,8 +69,6 @@ Bu onay kutusu seçildiğinde ve bir projenin bağlamı dışında açılmış b
 
 > [!NOTE]
 > Web projeleri için projenizde başvurulan uzak dosyalar varsayılan olarak yüklenir.
-
-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

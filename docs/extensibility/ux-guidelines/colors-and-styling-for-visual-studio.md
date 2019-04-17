@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650638"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ' % S'dosyasında VSShell80.idl, numaralandırma `__VSSYSCOLOREX` Kabuk renk sabiti vardır. Bunu kullanmak için dizin değeri değerlerden birini geçirin `enum __VSSYSCOLOREX` belgelenmiş, MSDN veya Windows Sistem API'si, sayı, normal bir dizin `GetSysColor`, kabul eder. Bunun yapılması, ikinci parametre kullanılması gereken renk RGB değeri geri alır.
 
 Kalem veya yeni bir renk ile fırça depolanıyorsa gerekir `AdviseBroadcastMessages` (dışına Visual Studio Kabuğu) ve dinler `WM_SYSCOLORCHANGE` ve `WM_THEMECHANGED` iletileri.
-
 
 Yerel kodda renk hizmete erişmek için bu benzer bir arama yapacağız:
 

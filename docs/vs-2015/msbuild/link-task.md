@@ -31,17 +31,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4575516304862b4d50060a101a08a74f88db4597
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7300d11741e9e3395a39b275ec966f4d801e0cec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768520"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650155"
 ---
 # <a name="link-task"></a>Bağlantı Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesne dosyası biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürütülebilir (.exe) dosyası oluşturmak için veya bir dinamik bağlantı kitaplığı (DLL) bağlar. Daha fazla bilgi için [bağlayıcı seçenekleri](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parametreler  
@@ -247,7 +246,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
   - **UpOnly** - **/DRIVER:UPONLY**  
   
-  - **WDM** -  ** /DRIVER: WDM**  
+  - **WDM** -   **/DRIVER: WDM**  
   
     Daha fazla bilgi için [(Windows NT Çekirdek modu sürücüsü) Driver/Driver](http://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
@@ -299,11 +298,11 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
    Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-  - **Etkin** -  ** /FORCE**  
+  - **Etkin** -   **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** -  ** /Force: multıple**  
+  - **MultiplyDefinedSymbolOnly** -   **/Force: multıple**  
   
-  - **UndefinedSymbolOnly** -  ** /FORCE: KARARSIZ**  
+  - **UndefinedSymbolOnly** -   **/FORCE: KARARSIZ**  
   
     Daha fazla bilgi için [/Force (dosya çıktısını zorla)](http://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
@@ -449,7 +448,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
    Her biri bir komut satırı seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-  - **NoErrorReport** -  ** /errorreport: yok**  
+  - **NoErrorReport** -   **/errorreport: yok**  
   
   - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
@@ -749,7 +748,7 @@ Visual C++ bağlayıcı aracı sarmalar link.exe. Bağlayıcı aracı ortak nesn
   
   - **NotSet** - *\<yok >*  
   
-  - **Konsol** -  ** /Subsystem: Console**  
+  - **Konsol** -   **/Subsystem: Console**  
   
   - **Windows** - **/SUBSYSTEM:WINDOWS**  
   

@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223781"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648030"
 ---
 # <a name="optimize-visual-studio-performance"></a>Visual Studio performansını iyileştirme
 
@@ -25,11 +25,11 @@ Bu makalede, Visual Studio'nun yavaş çalıştığından bulursanız denemek i�
 
 ## <a name="upgrade-visual-studio"></a>Visual Studio yükseltme
 
-Visual Studio 2015 kullanıyorsanız, indirme [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) veya [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz geliştirilmiş performansını denetlemek için. Çözümler iki Visual Studio 2015'te daha hızlı bir şekilde diğer alanlarda performans geliştirmeleri ile üç kez çok yükleyin. Herhangi bir şey tarafından denediğiniz kaybetmemesi için visual Studio 2017 ve Visual Studio 2019 yan yana Visual Studio 2015 ile uyumludur.
+Visual Studio 2015 kullanıyorsanız, indirme [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) veya [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) ücretsiz geliştirilmiş performansını denetlemek için. Çözümler iki Visual Studio 2015'te daha hızlı bir şekilde diğer alanlarda performans geliştirmeleri ile üç kez çok yükleyin. Herhangi bir şey tarafından denediğiniz kaybetmemesi için visual Studio 2017 ve Visual Studio 2019 yan yana Visual Studio 2015 ile uyumludur.
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 zaten kullanıyorsanız, 15.6 veya sonraki sürümü çalıştırdığından emin olun. Veri çözümleri için iki veya üç kez sürüm 15.6 daha hızlı yükleneceğiyle olduğunu gösterir. İndirdiği [burada](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+Visual Studio 2017 zaten kullanıyorsanız, 15.6 veya sonraki sürümü çalıştırdığından emin olun. Veri çözümleri için iki veya üç kez sürüm 15.6 daha hızlı yükleneceğiyle olduğunu gösterir. İndirdiği [burada](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 

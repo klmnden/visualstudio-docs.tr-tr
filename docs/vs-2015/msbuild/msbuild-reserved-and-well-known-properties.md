@@ -16,17 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804182"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649569"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild Ayrılmış ve Tanınmış Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Proje dosyası hakkında bilgi depolayan önceden tanımlanmış özellikler kümesi sağlar ve [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ikili dosyaları. Bu özellikler diğer aynı şekilde değerlendirilir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] özellikleri. Örneğin, kullanılacak `MSBuildProjectFile` özelliği, yazdığınız `$(MSBuildProjectFile)`.  
   
  MSBuild ayrılmış ve iyi bilinen özelliklerin ön tanımlamasında aşağıdaki tabloda değerleri kullanır. Ayrılmış özellikler geçersiz kılınamaz, ancak iyi bilinen özellikler proje dosyasında aynı adlı ortam özellikleri, genel özellikleri veya, bildirilen özellikleri kullanarak geçersiz kılınabilir.  

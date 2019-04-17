@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil MSDN Magazine aboneliği almak için kaydolun.
 searchscope: VS Subscription
-ms.openlocfilehash: 3de620413610294072511f1e6e5e498fa64973a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0bc688f20b249b86c3a3d5512569feb47789c05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843123"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649921"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>MSDN Magazine avantaj olarak Visual Studio abonelikleri
 
 Gerçek sorunlara pratik çözümler için Microsoft teknolojilerinin kapsamlı'yi tıklatın.  Aboneliğinize bağlı olarak, yazdırılan dergi veya dijital sürümüne erken erişim hakkı tanır.
-
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 Adımlar avantajınızı etkinleştirmek için seçtiğiniz sürüm bağlıdır.
@@ -33,7 +32,6 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 2. MSDN Magazine kutucuk profesyonel geliştirme bölümünü bulun ve tıklayın **abone ol** MSDN Magazine aboneliği kutucuğundaki. (Tıklayın "!" içinde dijital baskı erişmek için kutucuğun sağ üst köşesindeki.)
    > [!div class="mx-imgBorder"]
    > ![MSDN Magazine avantajı kutucuğu](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. MSDN Magazine sayfasında, tercih edilen abonelik türü seçin.  Dijital sürüm nerede olursa olsun ücretsiz olarak seçebilirsiniz.  Yazdırılabilir sürüm ABD vatandaşlar için ücretsiz olarak kullanılabilir.  Yazdırılan sürümleri ABD dışı adreslere gönderilen iade sevkiyat ücretleri uygulanır.
    > [!div class="mx-imgBorder"]
@@ -64,7 +62,6 @@ Dijital sürüm, Visual Studio Dev Essentials üyeleri için kullanılabilir.
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

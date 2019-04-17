@@ -14,17 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65925a0ee6b7247ecd85f9db9536ff8519a01a33
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9c21bb50c9e97ed6a5daee713882f1d25456202
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803168"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661002"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>My Extensions Sayfası, Proje Tasarımcısı (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Kullanım **My uzantılarını** sayfasının **Proje Tasarımcısı** yönetmek için `My` projenizdeki ad alanı uzantıları. `My` ad alanı uzantılarını etkinleştirme özelleştirmenizi `My` kendi özel üye eklemek için ad alanı. Özel oluşturma hakkında daha fazla bilgi için `My` ad alanı uzantılarını görmek [Visual Basic'te My Namespace genişletme](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
   
  Erişim için **My uzantılarını** sayfasında, çift **Projem** proje düğümü için **Çözüm Gezgini**. Zaman **Proje Tasarımcısı** görünen tıklayın **My uzantılarını** sekmesi.  

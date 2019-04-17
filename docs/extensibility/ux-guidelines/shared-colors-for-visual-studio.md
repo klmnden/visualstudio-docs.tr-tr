@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232820"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649960"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlama konusunda ya da arabirimi öğeniz benzer özellikleri ile tutarlı olmasını istediğiniz seçin ve renkleri atamak için paket tanım dosyalarında mevcut belirteci adları kullanın. Bu tema eklendiğinde veya güncelleştirildiğinde, otomatik olarak güncelleştirir ve kullanıcı Arabirimi ile genel Visual Studio ortamının tutarlı kalmasını sağlar.
@@ -307,7 +307,7 @@ Sütun üst bilgilerini arka plan, kenarlık, başlık metnini ve kılavuz, süt
 | --- | --- |
 | Arka Plan | `TreeView.SelectedItemActive` |
 | Ön plan (metin) | `TreeView.SelectedItemActiveText` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Liste öğeleri görüntüle: etkin olmayan duruma**
 
@@ -939,7 +939,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.SelectedItemInactive` |
 | Ön plan (metin) | `TreeView.SelectedItemInactive` |
 | Ön plan (karakter) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 ## <a name="shell-appearance"></a>Shell görünümü
 
@@ -1065,10 +1065,10 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 
 | Öğe | Belirteç adı: Category.Color |
 | --- | --- |
-| Arka Plan | None |
+| Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextActive` |
 | Ön plan (karakter) | `Environment.CommandBarMenuGlyph` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 **Menü başlığı: duruma getirin**
 
@@ -1105,7 +1105,7 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 | Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextInactive` |
 | Ön plan (karakter) | `Environment.CommandBarTextInactive` |
-| Kenarlık | None |
+| Kenarlık | Yok. |
 
 #### <a name="menu-items"></a>Menü öğeleri
 Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.
@@ -1948,7 +1948,6 @@ Visual Studio etiketleme, izleme amacıyla aranabilir anahtar sözcükleri bildi
 **Kapanış etiketi seçili (&times;) karakter: duruma getirin**
 
 ![Kapanış etiketi seçili (&times;) üzerine gelindiğinde glif](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Kapanış etiketi seçili (&times;) üzerine gelindiğinde karakter
-
 
 | Öğe | Belirteç adı: Category.Color |
 | --- | --- |

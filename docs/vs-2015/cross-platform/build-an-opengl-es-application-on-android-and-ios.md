@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 648286cca70641d005e27682fe911a783421e6fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa7b0ed959fba781397b3b85ee59f2e62588596c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758102"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652702"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android ve iOS Üzerinde OpenGL ES Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sırasında Visual Studio çözümleri ve iOS uygulamaları ve ortak kod paylaşma Android uygulamaları için projeler oluşturabilirsiniz. Bu konuda, bir basit bir iOS uygulamasının hem Android yerel etkinlik uygulaması oluşturan bir çözüm şablonu aracılığıyla size yol gösterir. C++ kodu, uygulamalar her platformda aynı animasyonlu döndürme küpünü görüntülemek için OpenGL ES kullanan ortak sahiptir. OpenGL ES (Embedded Systems veya GLES için OpenGL) bir 2D ve 3D grafikler mobil cihazlarda desteklenen API ' dir.  
   
  [Gereksinimleri](#req)   

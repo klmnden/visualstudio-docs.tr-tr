@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 180cf2cece705afb6094e49ef23a3dc3f953d0c4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669152"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>İzlenecek yol: Profil Oluşturucu API’lerini kullanma
 
@@ -38,8 +38,6 @@ ms.locfileid: "57868220"
  ::: moniker-end
 
  Yönetilen kod için profil oluşturucu API bulunan *Microsoft.VisualStudio.Profiler.dll*. Bu DLL bulunan *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* dizin. 64-bit uygulamalar için klasördür *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Profiler>.
-
-
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu kılavuzda, hata ayıklama ve örnekleme desteklemek üzere tercih ettiğiniz geliştirme ortamında yapılandırılmış varsayılır. Aşağıdaki konular bu Önkoşullar genel bir bakış sağlar:

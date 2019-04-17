@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938767"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667046"
 ---
 # <a name="signing-page-project-designer"></a>İmzalama Sayfası, Proje Tasarımcısı
 Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıtım bildirimlerini imzalamak için ve ayrıca (tanımlayıcı ad imzalama) derlemeyi imzalamak için.
@@ -94,12 +94,11 @@ Kullanım **imzalama** sayfasının **Proje Tasarımcısı** uygulama ve dağıt
 > [!NOTE]
 > Bir derleme için kaydolduğunuzda, bir özel anahtara erişim her zaman olmayabilir. Örneğin, bir kuruluş geliştiricileri her gün için erişime sahip olmadığından yakından korumalı bir anahtar çifti olabilir. Ortak anahtar kullanılabilir, ancak özel anahtar erişimi birkaç kişilerle sınırlıdır. Böyle bir durumda, kullandığınız *Gecikmeli* veya *kısmi imzalama* derleme kapalı devredildiği kadar ek özel anahtarın erteleniyor ortak anahtar sağlamak için.
 
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Proje Özellikleri Başvurusu](../../ide/reference/project-properties-reference.md)
 - [Derleme ve Bildirim İmzalamayı Yönetme](../../ide/managing-assembly-and-manifest-signing.md)
-- [Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Nasıl yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Nasıl yapılır: Bir derleme (Visual Studio) oturum açın](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Nasıl yapılır: Derlemeyi tanımlayıcı bir adla imzalama](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Kesin Adlandırılmış Bütünleştirilmiş Kodlar](/dotnet/framework/app-domains/strong-named-assemblies)

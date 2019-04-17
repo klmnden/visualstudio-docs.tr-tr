@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920580"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653014"
 ---
 # <a name="annotating-locking-behavior"></a>Kilitlenme Davranışını Yorumlama
 Çoklu iş parçacığı kullanan programınızda eşzamanlılık hataları önlemek için her zaman uygun kilitleme uzmanlık alanı izleyin ve SAL ek açıklamalarını kullanma.
@@ -104,7 +104,6 @@ ms.locfileid: "55920580"
 |`_Interlocked_`|Bir değişken açıklama ekler ve eşdeğerdir `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|Çeşitli birbirine kenetlenmiş işlevlerden biri hedef işleneni ek açıklamalı işlevi parametredir.  Bu işlenenlerin özgü ek özellikleri olmalıdır.|
 |`_Write_guarded_by_(expr)`|Bir değişken açıklama ekler ve her değişkenin değiştirilmişse, tarafından adlandırılan kilit nesnenin kilit sayacını gösterir `expr` en az biri.|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Akıllı kilitleme ve RAII ek açıklamaları
  Akıllı kilitlere, genellikle yerel kilitleri kaydırma ve kendi ömürlerine yönetin. Akıllı kilit ve RAII desenleri desteğiyle kodlama ile kullanılabilecek ek açıklamaları aşağıdaki tabloda `move` semantiği.
