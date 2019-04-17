@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28194f007066c1fd39e3a26dd4a8c0e99e118059
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857235"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584421"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Visual Studio için node.js araçları kullanarak Vue.js uygulama oluşturma
 
@@ -96,6 +96,9 @@ CLI vue npm modülünü yüklemek için bir komut istemi açıp `npm install --g
 1. Komut istemine gidin ve geçerli dizini, proje kök klasörüne değiştirin.
 
 1. Tür `vue init webpack ClientApp` ve ek soruları yanıtlamak için istendiğinde adımları izleyin.
+
+    > [!NOTE]
+    > İçin *.vue* dosyaları, Web veya benzer bir çerçeve bir yükleyici ile dönüştürme yapmak için kullanmanız gerekir. TypeScript ve Visual Studio bilmiyor nasıl yapılandırılabileceğini *.vue* dosyaları. Aynı paketleme için geçerlidir; TypeScript ES2015 modülleri nasıl dönüştürme yapılacağını bildiğiniz değil (diğer bir deyişle, `import` ve `export` deyimleri) tek bir son *.js* tarayıcıda yüklemek için dosya. Yeniden Web en iyi burada seçimdir. Bu işlemden Visual Studio'da MSBuild kullanma amacıyla, Visual Studio şablondan başlatmanız gerekir. Şu anda hiçbir Vue.js geliştirme içinde hazır ASP.NET şablonu yoktur.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Web yapılandırmasını wwwroot oluşturulmuş dosyaları çıkış değiştirin
 

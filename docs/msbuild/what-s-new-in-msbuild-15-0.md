@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 0353249712fefc0052a27469b075c52b9fdd5d06
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982915"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584304"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15'te Yenilikler
 
@@ -24,7 +24,7 @@ MSBuild olarak kullanıma sunuldu parçası [.NET Core SDK'sı](https://www.micr
 
  MSBuild, şimdi Visual Studio'nun her sürümü altında bir klasöre yüklenir. Örneğin, *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\MSBuild*. MSBuild bulmak için aşağıdaki PowerShell modülünü de kullanabilirsiniz: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- MSBuild artık genel derleme önbelleğinde yüklü değil. MSBuild'ı programlı olarak başvurmak için NuGet paketlerini kullanın.
+ MSBuild artık genel derleme önbelleğinde yüklü değil. MSBuild'ı programlı olarak başvurmak için NuGet paketlerini kullanın. Daha fazla bilgi için [MSBuild 15.0 için var olan uygulamayı güncelleştirme](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Özellikleri değiştirilmiş
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685059"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584525"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio'da yazmaçlar penceresi hakkında (C#, C++, Visual Basic F#)
 
@@ -47,7 +47,23 @@ ms.locfileid: "56685059"
  **Kaydeder** penceresi bir kaydın içeriğini görünümü daha fazlasını yapmanıza olanak sağlar. Yerel kodda kesme modunda olduğunda, bir kayıt içeriğine tıklayın ve değerini düzenleyin. Bu, rastgele yapmanız gereken bir şey değildir. Düzenlemekte olduğunuz kayıt ve içerdiği verilere anlamadan dikkatsiz düzenleme sonucunu programın kilitlendiğini ya da diğer bir istenmeyen sonuç olması olasıdır. Ne yazık ki, ayrıntılı bir açıklama çeşitli Intel ve Intel uyumlu işlemci kayıt kümelerinin kadar bu kısa giriş kapsamı dışındadır gider.
 
 ## <a name="register-groups"></a>YAZMAÇ grupları
- Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları gruplar halinde düzenler. Üzerinde sağ tıkladığınızda **kaydeder** penceresinde görüntülemek veya gördüğünüz şekilde Gizle gruplarının bir listesini içeren bir kısayol menüsü göreceksiniz.
+
+Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları gruplar halinde düzenler. Üzerinde sağ tıkladığınızda **kaydeder** penceresinde görüntülemek veya gördüğünüz şekilde Gizle gruplarının bir listesini içeren bir kısayol menüsü göreceksiniz.
+
+## <a name="register-flags"></a>Kayıt Bayrakları
+
+Intel x86 işlemciler için aşağıdaki bayrakları görebilirsiniz **kaydeder** penceresi. Bir hata ayıklama oturumu sırasında bu bayraklar düzenleyebilirsiniz.
+
+|Bayrağı|Değerini ayarla|
+|-|-|
+|taşma|OV = 1|
+|Yön|EN FAZLA = 1|
+|Kesme|EI = 1|
+|oturum|PL = 1|
+|Sıfır|ZR = 1|
+|Yardımcı taşıma|AC = 1|
+|Eşlik|PE = 1|
+|Taşıma|CY = 1|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Nasıl yapılır: Yazmaçlar Penceresi Hakkında](../debugger/how-to-use-the-registers-window.md)

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 9f11de1eaa427fea2d1ab023539e69af59de1f4a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 8c2c6fa6f947f43ed03fd1ec474c9ecb8b84a9fa
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857053"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584473"
 ---
 # <a name="update-visual-studio-for-mac"></a>Mac için Visual Studio güncelleştirme
 
@@ -51,6 +51,10 @@ Güncelleştirmeleri yüklemeye başlamak için seçin **yeniden başlat ve gün
 ![Güncelleştirmeleri yüklemeye başlamak için düğme](media/update-image4.png)
 
 Yüklenmesi gereken bileşenleri bağlı olarak, Ek lisanslar kabul edin veya makinenizin yönetici kullanıcı adı ve parola girmeniz gerekebilir.
+
+## <a name="troubleshooting"></a>Sorun giderme
+
+Güncelleştirici ile sorun yaşıyorsanız aşağıdaki adımları deneyin [güncelleştirici sorun giderme](updater-troubleshooting.md)Kılavuzu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610612"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584564"
 ---
 # <a name="common-msbuild-project-properties"></a>Yaygın MSBuild proje özellikleri
 Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil listeleri sık kullanılan özellikler *.targets* MSBuild'ın sağladığı dosyaları.
@@ -54,7 +54,7 @@ Aşağıdaki tablo, Visual Studio proje dosyalarında tanımlı ya da dahil list
 | CscToolPath | Yolu *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] derleyici. |
 | CustomBeforeMicrosoftCommonTargets | Proje dosyası veya ortak hedefler içe önce otomatik olarak içe aktarılacak hedefler dosyasının adı. |
 | DebugSymbols | Semboller yapı tarafından oluşturulup oluşturulmadığını gösteren bir Boole değeri.<br /><br /> Ayarı **- p: DebugSymbols = false** komut satırında, program veritabanı oluşturulmasını devre dışı bırakır (*.pdb*) sembol dosyaları. |
-| DebugType | Üretilmesini istediğiniz hata ayıklama bilgi düzeyini tanımlar. Geçerli değerler: "full," "pdbonly" ve "none". |
+| DebugType | Üretilmesini istediğiniz hata ayıklama bilgi düzeyini tanımlar. Geçerli değerler: "full," "pdbonly," "taşınabilir", "gömülü" ve "none". |
 | DefineConstants | Koşullu derleyici sabitlerini tanımlar. Sembol/değer çiftleri noktalı virgüllerle ayrılır ve aşağıdaki sözdizimi kullanılarak belirtilir:<br /><br /> *symbol1 = value1; symbol2 = value2*<br /><br /> Özellik `/define` derleyici anahtarı. |
 | DefineDebug | DEBUG sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri. |
 | DefineTrace | TRACE sabitinin tanımlanmasını isteyip istemediğinizi belirten bir Boole değeri. |

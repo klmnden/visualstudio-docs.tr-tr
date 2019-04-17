@@ -4,11 +4,11 @@
 # [Yükleme](installation.md)
 ## [Bir güvenlik duvarı veya ara sunucunun arkasına yükleme ve burada kullanma](install-behind-a-firewall-or-proxy-server.md)
 ## [Bir önizleme sürümünü yükleme](install-preview.md)
-## [Güncelleştirme](update.md)
+## [Güncelleştir](update.md)
 ## [Kaldır](uninstall.md)
 
 # [Kullanıcı Hesapları](user-accounts.md)
-## [Oturum Açma](signing-in.md)
+## [Oturum Açılıyor](signing-in.md)
 ## [Aboneliği Etkinleştirme](enable-subscription.md)
 
 # [IDE’yi Özelleştirme](customizing-the-ide.md)
@@ -16,8 +16,8 @@
 
 
 # [Projeler ve Çözümler](projects-and-solutions.md)
-## [Yeni Projeler oluşturma](create-new-projects.md)
-## [Proje öğeleri ekleme ve kaldırma](add-and-remove-project-items.md)
+## [Yeni Projeler oluşturuluyor](create-new-projects.md)
+## [Proje Öğeleri ekleme ve kaldırma](add-and-remove-project-items.md)
 ## [Çözümleri ve Proje özelliklerini yönetme](managing-solutions-and-project-properties.md)
 ## [Bir projedeki başvuruları yönetme](managing-references-in-a-project.md)
 ### [İzlenecek yol - Projenize NuGet paketi ekleme](nuget-walkthrough.md)
@@ -41,10 +41,10 @@
 # [Derleme ve Oluşturma](compiling-and-building.md)
 ## [Projeleri ve Çözümleri Oluşturma ve Temizleme](building-and-cleaning-projects-and-solutions.md)
 ## [Derleme Eylemleri](build-actions.md)
-## [Nasıl yapılır: Çoklu başlangıç projeleri ayarlama](set-startup-projects.md)
+## [Nasıl yapılır: Birden çok başlangıç projesi ayarlama](set-startup-projects.md)
 ## [Derleme Sistemini Özelleştirme](customizing-build-system.md)
 ## [Yapılandırmalar](configurations.md)
-### [Yapılandırmaları Oluşturma ve Düzenleme](create-and-edit-configurations.md)
+### [Yapılandırmaları oluşturma ve düzenleme](create-and-edit-configurations.md)
 
 # [Sürüm Denetimi](version-control.md)
 ## [TF Sürüm Denetimi](tf-version-control.md)
@@ -75,6 +75,7 @@
 # [Erişilebilirlik](accessibility.md)
 
 # [Sorun giderme](troubleshooting.md)
-## [Visual Studio Müşteri Deneyimini Geliştirme Programı](visual-studio-experience-improvement-program.md)
-## [Sorun Bildirme](report-a-problem.md)
-## [Sorun Giderme: Neden tüm şablonları göremiyorum?](troubleshooting-no-templates.md)
+## [Visual Studio Müşteri Deneyimi Geliştirme Programı](visual-studio-experience-improvement-program.md)
+## [Sorun Bildirin](report-a-problem.md)
+## [Sorun giderme: Neden tüm şablonları göremiyorum?](troubleshooting-no-templates.md)
+## [Sorun giderme: Güncelleştirici, bilgileri alırken hatalarla karşılaşıyor](updater-troubleshooting.md)

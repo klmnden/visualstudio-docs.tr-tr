@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d263344b84ad93cc582d05112c08d2bad1aa998
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632452"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584330"
 ---
 # <a name="special-characters-to-escape"></a>Kaçış için özel karakterler
 Yalnızca özel bir anlamı, kullanıldıkları bağlam içinde oluşturulduysa özel karakterleri kaçış karakterleri eklenmelidir. Örneğin, yıldız işareti (*) bir özel karakter yalnızca bir öğe tanımının "Ekleme" ve "Dışarıda bırak" öznitelikleri veya bir çağrıda olduğu <xref:Microsoft.Build.Tasks.CreateItem>. Diğer durumlarda, yıldız işareti değişmez bir yıldız işareti kabul edilir. Her yerde proje dosyaları yıldız işareti kaçış gerekmez ancak bunun yapılması bir zararı şekilde yapar.
@@ -37,7 +37,7 @@ Yalnızca özel bir anlamı, kullanıldıkları bağlam içinde oluşturulduysa 
 |@|Öğe listeleri başvurmak için kullanılan oturum sırasında.|
 |(|Açık parantez, listelerinde kullanılır.|
 |)|Kapatma parantezleri, listelerinde kullanılır.|
-|`| Kesme işareti (veya değer çizgisi), koşullar ve diğer ifadeleri kullanılır.|
+|\`| Kesme işareti (veya değer çizgisi), koşullar ve diğer ifadeleri kullanılır.|
 |;|Noktalı virgül, liste ayırıcı.|
 |?|Soru işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|
 |*|Yıldız işareti, bir öğenin dahil edin/dışlayın bölümünde bir dosya belirtimi tanımlarken bir joker karakter.|

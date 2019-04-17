@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897744"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584408"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 
@@ -33,7 +33,7 @@ Visual Studio'dan veya MSBuild çalıştırın **komut penceresi**. Bu izlenecek
 
  Visual Studio proje sistemi MSBuild'i temel alır. Bu, Visual Studio kullanarak yeni bir proje dosyası oluşturmayı kolaylaştırır. Bu bölümde, bir Visual C# proje dosyası oluşturun. Bunun yerine bir Visual Basic proje dosyası oluşturmayı seçebilirsiniz. Bu anlatım bağlamında, iki proje dosyası arasındaki fark önemsizdir.
 
-**Bir proje dosyası oluşturmak için**
+**Proje dosyası oluşturmak için**
 
 1. Visual Studio'yu açın ve bir proje oluşturun.
 
@@ -379,7 +379,7 @@ Bir öğe türünün ayracını değiştirmek için, ItemType'ın öğe türü v
 
 Her satırda bir tane Derleme öğesi görüntülemek için taşıma dönüşlerini ve satır beslemelerini (%0A%0D) kullanmak üzere İleti görevini değiştirin.
 
-**Her satırda bir tane öğe türü değeri görüntülemek için**
+**Öğe türü görüntülemek için her satırda bir tane değerleri**
 
 1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
@@ -416,7 +416,7 @@ Her satırda bir tane Derleme öğesi görüntülemek için taşıma dönüşler
  dosya uzantılı tüm dosyaları ekler *.jpeg* içinde *görüntüleri* fotoğraflar öğe türüne bir klasöre sırada
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  dosya uzantılı tüm dosyaları ekler *.jpeg* içinde *görüntüleri* klasörü ve tüm alt klasörlerindeki fotoğraflar öğe türüne için. Daha fazla örnek için bkz. [nasıl yapılır: Derleme dosyaları seçin](../msbuild/how-to-select-the-files-to-build.md).
@@ -428,7 +428,7 @@ Her satırda bir tane Derleme öğesi görüntülemek için taşıma dönüşler
 <Photos Include="images\*.gif" />
 ```
 
- klasördeki tüm dosyaları içeren fotoğraflar olarak adlandırılmış bir öğe türü oluşturur *görüntü* klasör veya dosya uzantılı *.jpeg* veya *.gif*. Bu aşağıdaki satıra eşdeğerdir:
+ klasördeki tüm dosyaları içeren fotoğraflar olarak adlandırılmış bir öğe türü oluşturur *görüntüleri* klasör veya dosya uzantılı *.jpeg* veya *.gif*. Bu aşağıdaki satıra eşdeğerdir:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
@@ -451,7 +451,7 @@ Hariç Tutma özniteliği, sadece Dahil Etme özniteliği tarafından her iki ö
 
 Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 
-**Öğeleri dahil etmek ve dışlamak için**
+**Dahil etmek ve öğelerini hariç tutmak için**
 
 1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
@@ -500,7 +500,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 %(ItemType.MetaDataName)
 ```
 
-**Öğenin meta verilerini incelemek için**
+**Öğe meta verileri incelemek için**
 
 1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
@@ -531,7 +531,7 @@ Dosya dışlamamak *Form1.cs*, önceki item öğesine eklendi.
 
  Öğe bir öğe listesine eklendiğinde bu öğe, bazı iyi bilinen meta verilere atanır. Örneğin, %(Filename) herhangi bir öğenin dosya adını döndürür. İyi bilinen meta verilerin tam bir listesi için bkz. [tanınmış öğe meta verileri](../msbuild/msbuild-well-known-item-metadata.md).
 
-**İyi bilinen meta verileri incelemek için**
+**İyi bilinen meta verilerini incelemek için**
 
 1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 

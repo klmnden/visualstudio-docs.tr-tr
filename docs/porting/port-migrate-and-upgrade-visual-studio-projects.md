@@ -1,7 +1,7 @@
 ---
 title: Projeleri taşıma, geçirme ve yükseltme
 description: Visual Studio ve Visual Studio'nın bir projeyi geçirmek gerektiğinde nasıl karar verir, önceki sürümlerinde oluşturulmuş projeleri Visual Studio 2017'de desteklemeye yönelik bir başvuru.
-ms.date: 04/12/2019
+ms.date: 04/16/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9fb925e323a7008b367a4c6b913f7231b5ab98dd
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537669"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584590"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio için proje geçiş ve yükseltme başvurusu 
 
@@ -154,7 +154,7 @@ Bir proje görmüyorsanız veya dosya türü listelenen Burada, olması, başvur
 | Silverlight | Silverlight projeleri Visual Studio 2019 desteklenmiyor. Silverlight uygulamalarını korumak için Visual Studio 2015 kullanmaya devam edin. |
 | SQL - Redgate | Redgate SQL değişiklik Otomasyon (daha önce ReadyRoll Core olarak adlandırılır) Core, SQL Prompt Core ve SQL Search artık Visual Studio Yükleyicisi'nde aktarma.<br/><br/>Visual Studio 2017 için bu özellikleri kullanmaya devam edebilirsiniz. Visual Studio 2019 Redgate SQL Toolbelt içinde kullanılabilir olan Ücretli SQL değişiklik otomasyon ve SQL Prompt ürünlere yükseltebilirsiniz.|
 | SQL Server Raporlama Hizmetleri ve SQL Server Analysis Services (SSRS, SSDT, SSAS, MSA'lar) | Bu proje türleri için destek, iki uzantılar Visual Studio Galerisi aracılığıyla sağlanır:  [Microsoft Analysis Services modelleme projeleri](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) ve [Microsoft Reporting Services projeler](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). SSDT'yi destek veri depolama ve işleme iş yüküyle Visual Studio 2019 de dahildir. Daha fazla bilgi için [indirin ve Visual Studio için SQL Server veri Araçları (SSDT) yükleme](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) sayfası. |
-| SQL Server Integration Services (SSIS) | Visual Studio 2019 desteği yakında sunulacaktır. Daha fazla bilgi için [indirin ve Visual Studio için SQL Server veri Araçları (SSDT) yükleme](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) sayfasında ve [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) ekip blogu. |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 desteği kullanılabilir. Daha fazla bilgi için [indirin ve Visual Studio için SQL Server veri Araçları (SSDT) yükleme](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) sayfasında [SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) ekip blogundaki ve [SQL Server Tümleştirme hizmetleri projeleri](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview) marketi'ndeki sayfasında. |
 | Test penceresi uzantısı | Visual Studio 2019’da, önceden genel olarak işaretlenmiş olup hiçbir zaman resmi olarak belgelenmemiş olan bazı test zaman aralığı API’leri kaldırılmıştır. Yaygın olarak görünür API'ler, Visual Studio uzantısı maintainers erken bir uyarı vermek için 2017'de kullanım dışı olarak işaretlenmiş. Bizim bilgi için bu API'ler üzerinde bir bağımlılık birkaç uzantıları yönlendirdik. Daha fazla bilgi ve güncelleştirmeleri görüntülemek [kullanım dışı bırakılan test ile ilgili API'ler tam listesi](https://github.com/Microsoft/vstest/issues/1830). Bu senaryonuz etkiliyorsa, lütfen bize bilmeniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com). |
 | Visual C++ | Visual Studio 2010 için geri Visual Studio'nun önceki sürümlerinde oluşturulmuş projeleri çalışma için Visual Studio 2019'ı kullanabilirsiniz. Projeyi ilk kez açtığınızda, en son derleyici ve araç takımı yükseltmek veya özgün olanları kullanmaya devam etmek için seçeneğiniz vardır. Özgün olanları kullanmaya devam etmek seçtiğinizde, Visual Studio 2019 proje dosyasını değiştirmez ve projenizi oluşturmak için araç takımı'önceki Visual Studio yükleme kullanır. Özgün seçenekleri anlamına gelir tutma, hala proje Visual Studio özgün sürümünde gerekirse açabilirsiniz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](/cpp/porting/use-native-multi-targeting). |
 | Visual Studio genişletilebilirlik/VSIX | MinimumVersion 14.0 veya daha az projeleri, projeyi önceki Visual Studio sürümlerinde açılmasını engelleyen MinimumVersion 15.0 bildirmek için güncelleştirilir. MinimumVersion önceki sürümlerinde açmak bir proje izin vermek için kümesine `$(VisualStudioVersion)`. Ayrıca bkz: [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |

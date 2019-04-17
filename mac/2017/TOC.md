@@ -77,3 +77,4 @@
 # [Sorun giderme](/visualstudio/mac/troubleshooting)
 ## [Visual Studio Müşteri Deneyimi Geliştirme Programı](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Sorun Bildirin](/visualstudio/mac/report-a-problem)
+## [Sorun giderme: Güncelleştirici, bilgileri alırken hatalarla karşılaşıyor](updater-troubleshooting.md)

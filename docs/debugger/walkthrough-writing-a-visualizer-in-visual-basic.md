@@ -1,7 +1,7 @@
 ---
 title: Visual Basic'te Görselleştirici yazma | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988369"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584551"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>İzlenecek yol: Visual Basic'de Görselleştirici yazma
 Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedir [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Bu izlenecek yolda oluşturacağınız Görselleştirici, bir Windows Forms ileti kutusunu kullanarak bir dizenin içeriklerini görüntüler. Bu basit dize Görselleştirici nasıl görselleştiriciler diğer veri türleri için daha uygun projelerinize oluşturacağınızı göstermek için basit bir örnektir.
@@ -36,15 +36,16 @@ Görselleştirici kod, hata ayıklayıcı tarafından okunacak DLL'de yerleştir
 
 ### <a name="to-create-a-class-library-project"></a>Bir sınıf kitaplığı projesi oluşturmak için
 
-1. Üzerinde **dosya** menüsünde seçin **yeni** tıklatıp **yeni proje**.
+1. Yeni bir sınıf kitaplığı projesi oluşturun.
 
-2. İçinde **yeni proje** iletişim kutusunda **Visual Basic**.
+    ::: moniker range=">=vs-2019"
+    Tuşuna **Esc** başlangıç penceresini kapatın. Tür **Ctrl + Q** arama kutusunu açmak için şunu yazın **visual basic**, seçin **şablonları**, ardından **yeni bir sınıf kitaplığı (.NET Standard)oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual Basic**, seçin **.NET Standard**seçip Ortadaki bölmeden **sınıf kitaplığı (.NET Standart)**.
+    ::: moniker-end
 
-3. Altında **.NET Standard**, tıklayın **sınıf kitaplığı**.
-
-4. İçinde **adı** gibi sınıf kitaplığı için uygun bir ad yazın **MyFirstVisualizer**.
-
-5. **Tamam**'ı tıklatın.
+2. Sınıf kitaplığı için uygun bir ad yazın `MyFirstVisualizer`ve ardından **Oluştur** veya **Tamam**.
 
    Sınıf kitaplığı oluşturduktan sonra tanımlanan sınıflara var. kullanabilmesi için Microsoft.VisualStudio.DebuggerVisualizers.DLL, bir başvuru eklemeniz gerekir. İlk olarak, ancak, projenize anlamlı bir ad verin.
 
@@ -59,7 +60,9 @@ Görselleştirici kod, hata ayıklayıcı tarafından okunacak DLL'de yerleştir
 
 3. İçinde **Çözüm Gezgini**, sağ **My ilk Görselleştirici**ve kısayol menüsünde **Başvuru Ekle**.
 
-4. İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers.DLL tıklayın.
+4. İçinde **Başvuru Ekle** iletişim kutusundaki **Gözat** sekmesinde **Gözat** Microsoft.VisualStudio.DebuggerVisualizers.DLL bulun.
+
+    DLL içinde bulabilirsiniz  *\<Visual Studio yükleme dizini > \Common7\IDE\PublicAssemblies* Visual Studio'nun yükleme dizininin alt.
 
 5. **Tamam**'ı tıklatın.
 
@@ -105,7 +108,9 @@ Görselleştirici kod, hata ayıklayıcı tarafından okunacak DLL'de yerleştir
 
 1.  İçinde **Çözüm Gezgini**, sağ **başvuruları**ve kısayol menüsünde **Başvuru Ekle**.
 
-2.  İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde **System.Windows.Forms**.
+2. İçinde **Başvuru Ekle** iletişim kutusundaki **Gözat** sekmesinde **Gözat**, System.Windows.Forms.DLL bulun.
+
+    DLL içinde bulabilirsiniz *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
 3.  **Tamam**'ı tıklatın.
 
@@ -163,13 +168,16 @@ Görselleştirici kod, hata ayıklayıcı tarafından okunacak DLL'de yerleştir
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Bir konsol uygulaması projesi çözüme eklemek için
 
-1. Üzerinde **dosya** menüsünü tıklatın **Ekle**ve ardından **yeni proje**.
+1. Çözüm Gezgini'nde çözüme sağ tıklayın, seçin **Ekle**ve ardından **yeni proje**.
 
-2. İçinde **Yeni Proje Ekle** iletişim kutusunda **Visual Basic**ve ardından **konsol uygulaması**.
+    ::: moniker range=">=vs-2019"
+    Arama kutusuna **visual basic**, seçin **şablonları**, ardından **yeni bir konsol uygulaması (.NET Framework) oluşturma**. Görünen iletişim kutusunda **Oluştur**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Üstteki menü çubuğundan seçin **dosya** > **yeni** > **proje**. Sol bölmesinde **yeni proje** iletişim kutusunun **Visual Basic**, seçin **Windows Masaüstü**seçip Ortadaki bölmeden **konsol uygulaması (.NET Framework)**.
+    ::: moniker-end
 
-3. İçinde **adı** gibi konsol uygulaması için anlamlı bir ad yazın **MyTestConsole**.
-
-4. **Tamam**'ı tıklatın.
+2. Sınıf kitaplığı için uygun bir ad yazın `MyTestConsole`ve ardından **Oluştur** veya **Tamam**.
 
    Artık gerekli MyTestConsole MyFirstVisualizer çağırabilmek başvuran eklemeniz gerekir.
 
@@ -177,7 +185,7 @@ Görselleştirici kod, hata ayıklayıcı tarafından okunacak DLL'de yerleştir
 
 1.  İçinde **Çözüm Gezgini**, sağ **MyTestConsole**ve kısayol menüsünde **Başvuru Ekle**.
 
-2.  İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers tıklayın.
+2.  İçinde **Başvuru Ekle** iletişim kutusundaki **Gözat** Microsoft.VisualStudio.DebuggerVisualizers sekmesine,.
 
 3.  **Tamam**'ı tıklatın.
 
