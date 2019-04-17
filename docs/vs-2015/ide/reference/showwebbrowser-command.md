@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fca2c1c1dde167c8028d6ad4d543e108a488b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a1fc4f325167fa0df1f5f69cff19c25af5073d82
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798219"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667904"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tümleşik geliştirme ortamı (IDE) veya IDE dışında içindeki bir Web tarayıcı penceresinde belirttiğiniz URL'yi görüntüler.  
   
 ## <a name="syntax"></a>Sözdizimi  

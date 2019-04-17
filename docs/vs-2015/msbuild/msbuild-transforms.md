@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773091"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653495"
 ---
 # <a name="msbuild-transforms"></a>MSBuild Dönüşümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dönüşüm bir bire bir öğe listesinin başka bir dönüştürmedir. Bir proje öğesi listeleri dönüştürmek etkinleştirmeye ek olarak, bir dönüştürme giriş ve çıkışlarını arasında doğrudan bir eşleme tanımlamak bir hedef sağlar. Bu konu, dönüşümler açıklar ve nasıl [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projeleri daha verimli bir şekilde oluşturmak için bunları kullanır.  
   
 ## <a name="transform-modifiers"></a>Değiştiriciler dönüştürme  

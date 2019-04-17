@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842071"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655666"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Hangi&#39;Visual Studio aboneliklerinde yenilikler
 
@@ -34,7 +34,6 @@ Bulut abonelikleri yönetmek kolaylaştıran Bulut yöneticileri için yeni işl
 * [**Dışarı aktarma**](/visualstudio/subscriptions/exporting-subscriptions): Kullanıcılarınızı ve onların atamaları hakkında daha fazla ayrıntı listesini dışarı aktarın. Atamalar ve sona erme tarihleri izlemek istediğinizde bu gibi bir liste yararlı olabilir.
 
    ![Abone listesini Dışarı Aktar düğmesini kullanarak Excel'e aktarma](media/export-subscriber-list-to-csv.png)
-
 
 * [**Toplu düzenleme**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Toplu birden fazla aboneye abonelik bilgilerini düzenleyin.
 

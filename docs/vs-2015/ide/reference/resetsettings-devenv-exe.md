@@ -13,17 +13,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60e0dd272bd22cce2367e59b16fdea7965cb50e7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a81c0082bc9b8e31c6c64ff1785f5f380709f3b5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761595"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650973"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Geri yükler [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] varsayılan ayarları ve otomatik olarak başlatan [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. İsteğe bağlı olarak belirtilen .vssettings dosya ayarlarını sıfırlar.  
   
  Varsayılan ayarlar, profili tarafından belirlenir seçilen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] önce başlatıldı.  

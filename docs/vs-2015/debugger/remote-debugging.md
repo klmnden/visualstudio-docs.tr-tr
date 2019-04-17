@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871597"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649452"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
 > [!TIP] 
 > Komut satırı yükleme ve komut satırı başvurusu için yardım sayfasına bakın **msvsmon.exe** yazarak ``msvsmon.exe /?`` Visual Studio'nun yüklü olan bilgisayarda bir komut satırında (veya Git **Yardım / kullanım**uzaktan hata ayıklayıcı).
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  Uzak bilgisayarın aşağıdaki işletim sistemlerinden birini çalıştırmalıdır:  
   

@@ -8,17 +8,16 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 69b9fb9bd21ad19199e5ba268c8f0a87fb546d57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d7ad35c95fab41ded9fd15b0f098307d4f7bb3ac
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659092"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu bölümde daha özellikleri Visual Studio Araçları Unity teklifler ve Unity ile daha üretken olmak için bunları nasıl kullanabileceğinizi öğreneceksiniz.  
   
  Unity için Visual Studio Araçları ile (*VSTU*), oyun ve düzenleyici betikleri C# dilinde yazın ve ardından, güçlü bir hata ayıklayıcı hataları bulma ve düzeltme için Visual Studio'yu kullanabilirsiniz. Sözdizimi renklendirme Unity'nın ShaderLab gölgelendirici dili ve daha iyi hata ayıklayıcı Görselleştirmelerini MonoBehavior Sihirbazı için geliştirilmiş kod oluşturma için VSTU en son sürümünü içerir. VSTU, Unity proje dosyalarınızı, konsol iletileri ve daha az zaman için ve Unity Düzenleyicisi'nden kod yazarken geçiş ayırmasına oyununuzu Visual Studio'ya başlatma özelliğini de getirir.  

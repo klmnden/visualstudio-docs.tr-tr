@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ebcb8c317d02ee4a55696f231d5c1b7ef7c06a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 80d5b57d8e0a7b857d8a43e783220847b7b42121
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631165"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665876"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Profil Oluşturucu örnekleme metodunu kullanarak hizmetler için uygulama istatistikleri toplama
 Bu bölümde, Windows Hizmetleri komut satırından örnekleme yöntemini kullanarak performans istatistikleri toplama seçeneklerini ve yordamlar açıklanmaktadır.
@@ -38,7 +38,6 @@ Bu bölümde, Windows Hizmetleri komut satırından örnekleme yöntemini kullan
 |**İzleme metodunu kullanarak profili**|-   [İzleme kullanarak ayrıntılı zamanlama verileri toplama](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
 |**.NET bellek ayırma ve atık koleksiyon profili**|-   [.NET bellek verileri toplama](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
 |**Kaynak çakışması ve iş parçacığı etkinliği profil**|-   [Eşzamanlılık verileri toplama](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
-
 
 ### <a name="profile-by-using-the-sampling-method"></a>Örnekleme yöntemiyle profili
 

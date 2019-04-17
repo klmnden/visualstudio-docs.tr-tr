@@ -2,7 +2,7 @@
 title: Visual Studio'yu yükleme
 titleSuffix: ''
 description: Visual Studio, adım adım yüklemeyi öğrenin.
-ms.date: 03/30/2019
+ms.date: 04/16/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b45778cfbf34a6703de365bcf2a85be994a05173
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857547"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649361"
 ---
 # <a name="install-visual-studio"></a>Visual Studio'yu yükleme
 
@@ -105,14 +105,14 @@ Ardından, Visual Studio önyükleyicisi dosyasını indirin. Bunu yapmak için 
 ::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Visual Studio’yu İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+ > [Visual Studio'yu indirin](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Visual Studio’yu İndir](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Visual Studio'yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Yükleyici yüklendikten sonra bu özellik kümeleri seçerek yüklemenizi özel
 
 1. Yeni iş yükleri ve bileşenler yüklendikten sonra seçin **başlatma**.
 
-   ![Visual Studio 2019: Bir iş yükünü yükleyin](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019 : Bir iş yükünü yükleyin](../install/media/vs-2019/vs-installer-workloads.png)
 
      Örneğin, "ASP.NET ve web geliştirme" iş yükünü seçin. Bu, temel kod düzenleme açın ve projeye gerek kalmadan herhangi bir klasörden kodu düzenleme olanağı 20'den dil için destek içerir ve tümleşik kaynak kod denetimi varsayılan çekirdek Düzenleyicisi ile birlikte gelir.
 
@@ -182,7 +182,6 @@ Visual Studio yüklemenizi özelleştirmek için iş yüklerini özelliğini kul
   ![Visual Studio 2019 - tek tek bileşenleri yükle](media/vs-2019/vs-installer-individual-components.png "tek tek bileşenler Visual Studio'yu yükleyin")
 
 ::: moniker-end
-
 
 ## <a name="step-6---install-language-packs-optional"></a>6. adım - yükleme dil paketleri (isteğe bağlı)
 

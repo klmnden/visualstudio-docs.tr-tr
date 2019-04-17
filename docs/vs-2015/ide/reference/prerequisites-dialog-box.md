@@ -17,17 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 593db9fe2f460229cfdd4c241124ef8270448094
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 50562b74a948365e91a7f36def634030a25aeac9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194664"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657971"
 ---
 # <a name="prerequisites-dialog-box"></a>Önkoşullar İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Bu iletişim kutusu, hangi önkoşul bileşenlerinin yüklendiğini, nasıl yüklendiğini ve sıra paketlerin yüklü olduğunu belirtir.  
   
  Bu iletişim kutusuna erişmek için bir proje düğümü seçin **Çözüm Gezgini**ve ardından **proje** menüsünde tıklatın **özellikleri**. Zaman **Proje Tasarımcısı** görünen tıklayın **Yayımla** sekmesi. Üzerinde **Yayımla** sayfasında **önkoşulları**. Projeler kurmak üzerinde **proje** menüsünde tıklatın **özellikleri**. Zaman **özellik sayfaları** iletişim kutusu görüntülendikten sonra **önkoşulları**.  

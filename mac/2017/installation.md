@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 117dfbe2d9d97dadd02388b7d4f88a047fcb69fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856683"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659065"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac için Visual Studio 2017'yi yükleme
 
 > [!NOTE]
-> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md?view=vsmac-2019).
+> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md?view=vsmac-2019). Mac için Visual Studio'nun eski sürümleri için bkz. Visual Studio [indirmeler sayfası](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -110,8 +110,8 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tan
 ### <a name="android"></a>Android
 
 1. [Xamarin Android SDK Yöneticisi'ni kullanma](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK öykünücüsü](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Geliştirme için cihazı ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Cihazı Dağıtım için Ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
 

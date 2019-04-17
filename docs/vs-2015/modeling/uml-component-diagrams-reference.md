@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80a4c78da4c2aaffcc35fb436dbd8219c2c6fde6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798780"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656992"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML Bileşen Diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,6 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
 
  ![Bileşen diyagramları üzerinde kullanılan öğeleri](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
 
-
 |  **Şekil**  |         **Öğe**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         **Açıklama ve ana özellikleri**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      1.      |        **Bileşen**        |                                                                                                                                                                                                                                                                                                                                  Sistem işlevleri yeniden kullanılabilir bir parçası. Bir bileşen sağlayan ve tüketen arabirimler yoluyla davranış ve diğer bileşenleri kullanabilirsiniz.<br /><br /> Gizleme veya genişletme/daraltma denetimi (9) kullanarak bir bileşenin iç parçalarını gösterme.<br /><br /> Bir bileşeni, sınıf türüdür.<br /><br /> -   **Dolaylı olarak Örneklendirilmiş**. TRUE ise (varsayılan), bileşeni yalnızca bir tasarım yapıt bulunmaktadır. Çalışma zamanında, yalnızca bölümleri mevcuttur.                                                                                                                                                                                                                                                                                                                                  |
@@ -63,7 +62,7 @@ Visual Studio'da bir *bileşen diyagramı* bir yazılım sistemi için bir tasar
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
  [UML Bileşen Diyagramları: Yönergeleri](../modeling/uml-component-diagrams-guidelines.md)   
  [Geliştirme sırasında sisteminizi doğrulama](../modeling/validate-your-system-during-development.md)   
- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML etkinlik diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)   
- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)
+ [UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)   
+ [UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)

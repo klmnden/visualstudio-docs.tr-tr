@@ -1,5 +1,5 @@
 ---
-title: Dotfuscator Community yükleyin
+title: Dotfuscator Community’yi yükleme
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e647ae257bfc6517685310f4a77ef398e775be
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: ef556f71d03cf20767fcba38ff3579dda2627a1b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866618"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653681"
 ---
-# <a name="install-dotfuscator-community"></a>Dotfuscator Community yükleyin
+# <a name="install-dotfuscator-community"></a>Dotfuscator Community’yi yükleme
 
 Dotfuscator Community, Visual Studio'nun isteğe bağlı bir bileşendir.
 Bu yönergeler nasıl yükleneceği açıklanmaktadır.
@@ -37,7 +37,6 @@ Bu yönergeler nasıl yükleneceği açıklanmaktadır.
 > [!NOTE]
 > Visual Studio sürümleriyle birlikte gelen Dotfuscator Community sürümlerinde ek olarak, PreEmptive Solutions, güncelleştirilmiş sürümleri da düzenli aralıklarla ve Web sitesinde sağlar.
 > Karşıdan yüklemek isterseniz **en son sürümü** Visual Studio'dan yüklemek yerine doğrudan **[Dotfuscator indirmeler sayfasına gitmek için buraya tıklayın] [ download]**.
-
 
 ## <a name="within-visual-studio"></a>Visual Studio içinden
 
@@ -62,7 +61,7 @@ Dotfuscator Community, Visual Studio IDE içinden yükleyebilirsiniz:
 
 Dotfuscator Community, Visual Studio IDE içinden yükleyebilirsiniz:
 
-1. İçinde **hızlı başlatma** (Ctrl + Q) arama çubuğunda, türü `dotfuscator`. <br/> <br/> ![Hızlı Başlat](media/install_from_vs_12.png) <br/> <br/>
+1. İçinde **hızlı başlatma** (Ctrl + Q) arama çubuğunda, türü `dotfuscator`. <br/> <br/> ![Hızlı Başlatma](media/install_from_vs_12.png) <br/> <br/>
 
 2. Hızlı Başlatma'altında gösterilen sonuçları *yükleme* başlığı seçin **PreEmptive koruma - Dotfuscator (ayrı ayrı bileşen)**.
    * Bunun yerine, altında görürseniz *menüleri* başlığı **araçları - PreEmptive koruma - Dotfuscator**, Dotfuscator CE zaten yüklü. Bu seçeneğini [başlama][get-started].
@@ -76,7 +75,6 @@ Dotfuscator Community, Visual Studio IDE içinden yükleyebilirsiniz:
 ::: moniker-end
 
 Yükleme tamamlandıktan sonra [Dotfuscator Community kullanmaya başlamak][get-started].
-
 
 ## <a name="during-visual-studio-installation"></a>Visual Studio yüklemesi sırasında
 

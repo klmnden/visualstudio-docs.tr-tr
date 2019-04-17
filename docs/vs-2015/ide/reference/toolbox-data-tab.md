@@ -13,17 +13,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768964"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663922"
 ---
 # <a name="toolbox-data-tab"></a>Araç Kutusu, Veri Sekmesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Veri nesneleri eklemek için bir form görüntüler ve bileşenleri. **Veri** sekmesinde **araç kutusu** ilişkili bir tasarımcı sahip bir proje oluşturduğunuzda görünür. **Araç kutusu** görüntülemek istiyorsanız varsayılan olarak Visual Studio tümleşik geliştirme ortamı; görünen **araç kutusu**seçin **araç kutusu** gelen**Görünümü** menüsü.  
   
 > [!TIP]

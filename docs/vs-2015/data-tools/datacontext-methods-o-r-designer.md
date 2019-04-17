@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790061"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661600"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext yöntemi (O/R Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & autoUpgrade = True) yöntemleri (bağlamında [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)), yöntemler <xref:System.Data.Linq.DataContext> saklı çalıştırılan sınıfı yordamları ve işlevleri bir veritabanında.  
   
  <xref:System.Data.Linq.DataContext> Sınıfı bir [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] bir conduit arasında bir SQL Server veritabanı olarak davranan bir sınıf ve [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] veritabanına eşlenen varlık sınıfları. <xref:System.Data.Linq.DataContext> Sınıfı bağlantı dizesi bilgilerini ve bir veritabanına bağlanma ve veritabanındaki verileri işlemek için yöntemler içerir. Varsayılan olarak, <xref:System.Data.Linq.DataContext> sınıfı içerir, gibi çağırabileceğiniz birkaç yöntem <xref:System.Data.Linq.DataContext.SubmitChanges%2A> gönderen yöntemi güncelleştirilmiş verileri [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] veritabanına sınıfları. Ayrıca, ek oluşturabilirsiniz <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri için eşleme yöntemleri. Diğer bir deyişle, bu özel metotları çağırma saklı yordamı veya işlevi veritabanında, çalışacak <xref:System.Data.Linq.DataContext> yöntemi eşlenmiş durumda. İçin yeni yöntemler ekleyebilirsiniz <xref:System.Data.Linq.DataContext> herhangi bir sınıf genişletmek için yöntemleri eklemek gibi sınıf. Hakkında tartışmalar, ancak <xref:System.Data.Linq.DataContext> bağlamında yöntemleri [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], bu <xref:System.Data.Linq.DataContext> saklı yordamlar ve ele alınmıştır işlevlere eşleme yöntemleri.  

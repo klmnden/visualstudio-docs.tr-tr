@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 35e68a9a359d139fae631d06d5fa847ae6e60b8c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616696"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657317"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme
 Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dinamik olarak ayrıntılı zamanlama verileri, .NET bellek ayırma verilerinin ve .NET nesne ömür verilerini toplamak için profil oluşturma araçları izleme metodunu derlenmiş [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulamaları.
@@ -45,11 +45,9 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 
 3. Aşağıdaki öznitelik adı ekleyin ve değerini **assemblyBinding** öğesi:
 
-
    | Öznitelik adı | Öznitelik değeri |
    |----------------|--------------------------------------|
    | **xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Ekleme bir **dependentAssembly** öğesi alt öğesi olarak **assemblyBinding** öğesi.
 
@@ -59,13 +57,11 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 
 6. Aşağıdaki öznitelik adları ve değerleri eklemek **assemblyIdentity** öğesi:
 
-
    | Öznitelik adı | Öznitelik değeri |
    |--------------------| - |
    | **Adı** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **Kültür** | **Nötr** |
-
 
 7. Ekleme bir **codeBase** öğesi alt öğesi olarak **dependentAssembly** öğesi.
 
@@ -140,12 +136,10 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
 
 3. Aşağıdaki öznitelik adları ve değerleri eklemek **ekleme** öğesi:
 
-
    | Öznitelik adı | Öznitelik değeri |
    |----------------| - |
    | **anahtar** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Başka bir **ekleme** öğesi alt öğesi olarak **appSettings** öğesi.
 
@@ -157,7 +151,6 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] di
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` Profil Oluşturucu yürütülebilir dosyalar yoludur. Profil oluşturma araçları için olan yolu almak için bkz: [komut satırı araçları yolunu belirtin](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

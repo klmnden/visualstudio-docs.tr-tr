@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ebfcd9ad335cf95894aa916412da1a91cf008
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774335"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660976"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik iki kere listelenmiş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir ilişki oluşturulamıyor \<ilişkilendirme adı >. Aynı özellik birden fazla kez listeleniyor: \<özellik adı >.  
   
  İlişkilendirmeleri tanımlanmış tarafından seçilen **ilişkilendirme özellikleri** içinde **ilişkilendirme Düzenleyicisi** iletişim kutusu. Özellikler, ilişkilendirmenin her sınıf için yalnızca bir kez listelenebilir.  

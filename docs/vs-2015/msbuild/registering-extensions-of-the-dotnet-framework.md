@@ -13,17 +13,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18df04fc706ea716f7c22baa6508930f0f94a6f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3cea1375b59b791c7c81c79be0a462d5eb690776
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801472"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664183"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>.NET Framework Uzantılarını Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Belirli bir .NET Framework sürümünü genişleten bir derleme geliştirebilirsiniz. Visual Studio'da görüntülenecek derleme etkinleştirmek için **Add References** iletişim kutusu, sistem kayıt defterine içeren klasöre eklemeniz gerekir.  
   
  Örneğin, Trey Research şirket .NET Framework 4 genişletir ve Kütüphane derlemelerini görünmesini istediği bir kitaplığı geliştirmiştir varsayın **Add References** iletişim kutusuna bir proje .NET Framework 4 hedefliyor. Ayrıca derlemelerin 32 bit bilgisayar veya 64 bit bilgisayarda çalışan 64-bit derlemeler üzerinde çalışan 32 bit derlemeleri olduğundan ve bunların C:\TreyResearch\Extensions4\ klasörüne yükleneceğini varsayılır.  

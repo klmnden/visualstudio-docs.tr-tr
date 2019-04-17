@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796912"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668411"
 ---
 # <a name="generateresource-task"></a>GenerateResource Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma zamanı ikili çalıştırılabilir dosyasına katıştırılabilen veya uydu derlemeleri haline getirilebilen ortak dil çalışma zamanı ikili .resources dosyalarına dönüştürür. Bu görev, genellikle için .resource dosyaları .txt veya .resx dosyalarına dönüştürmek için kullanılır. `GenerateResource` Görev benzer işlevsellik [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parametreler  
@@ -57,11 +56,11 @@ Arasında .txt, .resx (XML tabanlı kaynak biçimi) dosyalarını ve çalışma 
 |`StronglyTypedNamespace`|İsteğe bağlı `String` parametresi.<br /><br /> Kesin belirlenmiş bir kaynak için oluşturulan sınıf kaynağı için kullanılacak ad alanını belirtir. Bu parametre belirtilmezse, türü kesin belirlenmiş kaynak genel ad alanında görüntülenir.|  
 |`TLogReadFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur parametre.<br /><br /> İzleme günlüklerinin okuma temsil eden öğeleri dizisini alır.|  
 |`TLogWriteFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` salt okunur parametre.<br /><br /> Yazma temsil eden öğelerin bir dizisi izleme günlükleri alır.|  
-|`ToolArchitecture`|İsteğe bağlı [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> Tracker.exe ResGen.exe üretme kullanılacak gerekli olup olmadığını belirlemek için kullanılır.<br /><br /> Bir üyesine ayrıştırılabilir olmalıdır <xref:Microsoft.Build.Utilities.ExecutableType> sabit listesi. Varsa `String.Empty`, varsayılan mimariyi belirlemek için bir buluşsal yöntem kullanır. Ayrıştırılabilir Microsoft.Build.Utilities.ExecutableType numaralandırma üyesi olmalıdır.|  
-|`TrackerFrameworkPath`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Yol'dan içeren uygun .NET Framework konumun yolunu belirtir.<br /><br /> Dikkat ederek sorumluluğunu kümesi, kullanıcının aldığı durumlarda bunlar geçirmek Yol'dan mi kullanmak istediğiniz ResGen.exe genişliğinde eşleşir. Aksi durumda kümesi, görev geçerli .NET Framework sürümüne göre uygun konuma karar verir.|  
-|`TrackerLogDirectory`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Bu görev çalışmasını izleme günlüklerini yerleştirileceği Ara dizini belirtir.|  
-|`TrackerSdkPath`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Tracker.exe içeren uygun Windows SDK'sı konumun yolunu belirtir.<br /><br /> Dikkat ederek sorumluluğunu kümesi, kullanıcının aldığı durumlarda bunlar geçirmek Tracker.exe mi kullanmak istediğiniz ResGen.exe genişliğinde eşleşir. Aksi durumda kümesi, görev geçerli Windows SDK'sını alan uygun konuma karar verir.|  
-|`TrackFileAccess`|İsteğe bağlı [Boolean] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> TRUE ise dizin giriş dosyasının göreli dosya yollarını çözümleme için kullanılır.|  
+|`ToolArchitecture`|İsteğe bağlı [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> Tracker.exe ResGen.exe üretme kullanılacak gerekli olup olmadığını belirlemek için kullanılır.<br /><br /> Bir üyesine ayrıştırılabilir olmalıdır <xref:Microsoft.Build.Utilities.ExecutableType> sabit listesi. Varsa `String.Empty`, varsayılan mimariyi belirlemek için bir buluşsal yöntem kullanır. Ayrıştırılabilir Microsoft.Build.Utilities.ExecutableType numaralandırma üyesi olmalıdır.|  
+|`TrackerFrameworkPath`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Yol'dan içeren uygun .NET Framework konumun yolunu belirtir.<br /><br /> Dikkat ederek sorumluluğunu kümesi, kullanıcının aldığı durumlarda bunlar geçirmek Yol'dan mi kullanmak istediğiniz ResGen.exe genişliğinde eşleşir. Aksi durumda kümesi, görev geçerli .NET Framework sürümüne göre uygun konuma karar verir.|  
+|`TrackerLogDirectory`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Bu görev çalışmasını izleme günlüklerini yerleştirileceği Ara dizini belirtir.|  
+|`TrackerSdkPath`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Tracker.exe içeren uygun Windows SDK'sı konumun yolunu belirtir.<br /><br /> Dikkat ederek sorumluluğunu kümesi, kullanıcının aldığı durumlarda bunlar geçirmek Tracker.exe mi kullanmak istediğiniz ResGen.exe genişliğinde eşleşir. Aksi durumda kümesi, görev geçerli Windows SDK'sını alan uygun konuma karar verir.|  
+|`TrackFileAccess`|[Boole] (isteğe bağlı)<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> TRUE ise dizin giriş dosyasının göreli dosya yollarını çözümleme için kullanılır.|  
 |`UseSourcePath`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Varsa `true`, giriş dosyasının dizini göreli dosya yolları çözümlemek için kullanılması gerektiğini belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  

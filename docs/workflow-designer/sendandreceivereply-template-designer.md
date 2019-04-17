@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6731f91544235c3011e458aea7c4c5b90f89908
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e71615e90a23ad8ca6de6e01495de1ea8538a644
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907561"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650458"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply Şablon Tasarımcısı
 
@@ -41,7 +41,6 @@ Kullanma hakkında daha fazla bilgi için **Gönder** yapılandırmak için tasa
 ### <a name="properties-of-receivereply"></a>ReceiveReply özellikleri
 
 Aşağıdaki tabloda <xref:System.ServiceModel.Activities.ReceiveReply> özelliklerini ve bunların Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri Özellikler Kılavuzu ' düzenlenebilir ve bazı iş akışı Tasarımcısı yüzeyine düzenlenebilir.
-
 
 | Özellik Adı | Gerekli | Kullanım |
 |-|----------|-|

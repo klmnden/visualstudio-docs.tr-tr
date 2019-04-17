@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778309"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665708"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Yerel C++ uygulamaları oluşturabileceğinizi iOS, Android ve Windows cihazları ve iOS, Android ve Windows için oluşturulan kitaplıklarda ortak kod paylaşın, kullanarak Visual C++ platformlar arası Mobil Geliştirme için. Yerel uygulamalar ile paylaşılan kitaplıklar ve platformlar arası geliştirme için ihtiyaç duyduğunuz araçları ve SDK'larını yükleyen Visual Studio 2015'te kullanılabilecek bir seçenek budur. Yüklendiğinde, iOS ve Android cihazlar ve platformlar, yanı sıra Windows, Windows Phone ve Xbox üzerinde çalışan kod oluşturmak için Visual C++ kullanabilirsiniz.  
   
  Birden çok platform için kod yazma can sıkıcı olabilir. Birincil geliştirme dillerini ve iOS, Android ve Windows için Araçlar, her platformda farklıdır. Ancak, tüm platformlar kod yazma, C++'da destekler. Platformlar arasında yeniden çekirdek kodu kullanılmasını sağlamak için kullanabileceğiniz ortak paydası budur. C++ programında yazılan yerel kod, iki daha fazla performansa sahip olabilir ve dayanıklı tersine mühendislik. Kod yeniden kullanımını, birden çok platform için uygulamalar oluştururken zaman ve çaba kaydedebilirsiniz.  

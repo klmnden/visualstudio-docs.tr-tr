@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c498fd10403bcb6b62552c30fe3a92b71ded4944
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796887"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659793"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio için uygulama desenleri
 ##  <a name="BKMK_WindowInteractions"></a> Pencere etkileşimleri
@@ -115,7 +115,7 @@ Bazı araç pencerelerinin, kullanıcının etkileşim gezilebilir öğelerin li
 
 | Araç penceresi | İşlev |
 | --- | --- |
-| Yardım | Kullanıcılarının "Nasıl yaparım?" den yardım almanın çeşitli yöntemler erişmesini sağlayan bir pencere MSDN Forumları videoları. |
+| Help | Kullanıcılarının "Nasıl yaparım?" den yardım almanın çeşitli yöntemler erişmesini sağlayan bir pencere MSDN Forumları videoları. |
 | Devingen Yardım | Yardım konuları geçerli seçime uygun bağlantılarını görüntüleyen bir araç penceresi. |
 | Nesne Tarayıcısı | Hiyerarşik nesnenin bileşenlerde sol bölmesinde ve nesnenin özellikleri ve yöntemleri sağ sütunda listesini içeren iki sütunlu çerçeve. |
 
@@ -547,7 +547,6 @@ Kullanıcının her zaman bir öğenin seçilmesi, hedef konuma sürükleyerek v
 
 #### <a name="directory-based-projects"></a>Dizin tabanlı projeler
 Aşağıdaki tabloda, hedef dizin tabanlı projeler için basılan kaynak öğesi ve değiştirici tuşları yapısına göre gerçekleştirilmelidir sürükle ve bırak (yanı sıra Kes/kopyala/yapıştır) işlemleri özetlenmektedir:
-
 
 | Değiştirici | Kategori | Kaynak öğe: Başvuru/bağlantı | Kaynak öğe: Fiziksel bir öğe veya dosya sistemi (`CF_HDROP`) |
 |-----------------|----------| - | - |

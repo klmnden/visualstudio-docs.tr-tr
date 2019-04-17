@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753453"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670331"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Modelleme diyagramında menü komutu tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
 
 2. Projenize aşağıdaki başvuruları ekleyin.  
 
-
    |                                                                                                    Başvuru                                                                                                    |                                                                                                  Bunu yapmak sağlar                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Kullanarak bileşenleri tanımlayın [Yönetilen Genişletilebilirlik Çerçevesi (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -74,7 +73,6 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Model öğe işleyicilerini tanımlar.<br /><br /> Modeldeki değişiklikler dizisini yalıtır. Daha fazla bilgi için [işlemleri kullanarak bağlantı UML model güncelleştirmelerini](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]<br /><br /> (her zaman gerekli)                                                             |                                                                                   Hareket işleyicileri için ek diyagram öğelerine erişir.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Yalnızca Katman diyagramlarındaki komutlar için gereklidir. Daha fazla bilgi için [katman diyagramlarını genişletme](../modeling/extend-layer-diagrams.md). |                                                                                             Katman diyagramları üzerinde komutlar tanımlayın.                                                                                              |
-
 
 3. Projeye bir sınıf dosyası ekleyin ve içeriğini aşağıdaki koda göre ayarlayın.  
 

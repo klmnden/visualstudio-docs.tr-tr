@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773228"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660365"
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML Kod Parçacıklarını Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir. "Kod parçacığı" adlı bir XML kod parçacığı Düzenleyici içeren yeni kod parçacıkları oluşturmak için diğer bir deyişle bir ortak kod parçacığı.  
   
 ## <a name="to-create-a-new-xml-snippet"></a>Yeni bir XML kod parçacığı oluşturmak için  
@@ -116,4 +115,4 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML kod parçacıkları](../xml-tools/xml-snippets.md)   
  [Nasıl yapılır: XML kod parçacıklarını kullanma](../xml-tools/how-to-use-xml-snippets.md)   
- [Nasıl yapılır: XML şemasından XML kod parçacığı oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+ [Nasıl yapılır: XML Şemasından XML Kod Parçacığı Oluşturma](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

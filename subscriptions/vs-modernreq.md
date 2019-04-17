@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio Enterprise aboneliklerine dahil olan ürünleri ModernRequirements paketi hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ffdcc25a90f73ba904ce2e5162031dff0b200274
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660729"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>MODERNRequirements4TFS avantaj olarak Visual Studio abonelikleri
 
 Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve ModernRequirements4TFS altı aylık abonelik içerir.  MODERNRequirements SmartOffice4TFS, TFS'nin veya Azure DevOps Hizmetleri özelliklerini Microsoft Word tabanlı raporlama ve hızlı, Basitleştirilmiş zengin metin yazma genişletir.  ModernRequirements4TFS iş öğesi taban çizgisi oluşturma ve HTML5 benzetimi özellikleri sağlar.
-
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 1. MODERNRequirementsTFS teklifinizi kullanmak için oturum açın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -31,11 +30,9 @@ Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve Modern
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements giriş sayfası](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. Sonraki sayfada, lisans anahtarı içerir.  Lütfen sayfada sağlanan yüklemeler hakkında bilgileri gözden geçirin ve ardından üzerinde mavi tıklayın **indirmek için yazılım lütfen burayı** sayfanın ortasında bağlantı.
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements lisans anahtarı](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. Karşıdan yükleme sayfasında MODERNRequirements paketleri yükleme seçeneğiniz vardır veya SMARTOffice4TFS paketinden bağımsız modüllerini yükleyin.  Sizin için doğru seçenekleri tercihlerinizi, aynı zamanda TFS hangi sürümünün yüklü olduğunu bağlıdır.  Sizin için doğru sürüme sahip ürünleri seçmenize yardımcı olmak için sayfadaki bilgiler planladığınızdan emin olun.
    > [!div class="mx-imgBorder"]
@@ -97,7 +94,6 @@ Seçili Visual Studio abonelikleri MODERNRequirements SmartOffice 4TFS ve Modern
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

@@ -9,16 +9,15 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: e21fdbd55ddfe6088a6b8a7ff4127a05b1fa4ce1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d847d4dcd4ae2edd799c282d43ec717ca8ae0a71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791972"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663511"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Değişiklik günlüğü (Unity için Visual Studio Araçları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Değişiklik günlüğü Unity için Visual Studio Araçları.
 
@@ -163,7 +162,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="20-preview-2"></a>2.0 preview 2
  Yayımlanan 2015-04-02
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   **Unity Proje Gezgini:**
 
@@ -252,7 +251,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="20-preview"></a>2.0 Önizlemesi
  Yayımlanan 2014-11-12
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Visual Studio 2015 için destek.
 
@@ -291,7 +290,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="192"></a>1.9.2
  Yayımlanan 2014-10-09
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity oyuncuların algılanması geliştirin.
 
@@ -314,7 +313,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="191"></a>1.9.1
  Yayımlanan 2014-09-22
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Bağlama kesme noktası için kaynak konumları iyileştirin.
 
@@ -359,7 +358,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="19"></a>1.9
  Yayımlanan 2014-07-29
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity hata ayıklayıcı Ekle penceresinde, bir özel IP ve bağlantı noktası hata ayıklamak için girin olanağı eklendi.
 
@@ -407,7 +406,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="182"></a>1.8.2
  Yayımlanan 2014-01-07
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity'nın komut dosyası altyapısının ağ katmanında bir soruna geçici bir çözüm üzerinde Mavericks düzenleyicileri uzak bulma için çalışır.
 
@@ -434,7 +433,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="181"></a>1.8.1
  Yayımlanan 2013-11-21
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   MonoBehaviour sihirbazları Unity 4.3 API'leri ile ayarlanır.
 
@@ -467,7 +466,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="180"></a>1.8.0
  Yayımlanan 2013-09-24
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Hata ayıklayıcı bağlantı hızını önemli ölçüde geliştirildi.
 
@@ -544,7 +543,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="12"></a>1.2
  Yayımlanan 2013-03-25
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Hata ayıklayıcı bağlantı hızını önemli ölçüde geliştirildi.
 
@@ -656,7 +655,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="1011"></a>1.0.11
  Yayımlanan 2012-11-28
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity 4 resmi desteği.
 
@@ -730,7 +729,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="107"></a>1.0.7
  Yayımlanan 2012-09-14
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Visual Studio 2012 desteği.
 
@@ -758,7 +757,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="104"></a>1.0.4
  Yayımlanan 2012-09-05
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity hata ayıklama sembolleri otomatik dönüştürme.
 
@@ -771,7 +770,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="103"></a>1.0.3
  Yayımlanan 2012-09-04
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity'de dosyaları açmak için UnityVS kullanımını devre dışı bırakmak için yeni yapılandırma seçeneği.
 
@@ -797,7 +796,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="101"></a>1.0.1
  Yayımlanan 2012-08-28
 
-### <a name="new-features"></a>Yeni Özellikler
+### <a name="new-features"></a>Yeni özellikler
 
 -   Unity 4.0 Beta önizlemesi desteği.
 

@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774780"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649413"
 ---
 # <a name="call-hierarchy"></a>Çağrı Hiyerarşisi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Çağrı hiyerarşisini seçili yöntemi, özelliği veya Oluşturucu gelen ve giden tüm çağrıları görüntüleyerek kodunuza gitmenizi sağlar. Bu, daha iyi kodun nasıl aktığını anlamak ve kod değişikliklerinin etkilerini değerlendirilecek sağlar. Kod yöntem çağrıları ve tüm olası yürütme yolları keşfetmenize olanak sağlar koda ek giriş noktaları karmaşık zincirleri görüntülemek için çeşitli düzeylerde inceleyebilirsiniz.  
   
  Çağrı hiyerarşisini, tasarım zamanında hata ayıklayıcı tarafından görüntülenen çağrı yığınını farklı olarak kullanılabilir.  

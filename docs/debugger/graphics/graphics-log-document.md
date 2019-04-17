@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4596015acd94d7d4f1d4d5552cfe6d83ab8727c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714289"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658051"
 ---
 # <a name="graphics-log-document"></a>Grafik Günlük Belgesi
 Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalışırken oluşan bir grafik olaylarını kaydıdır. Kaydedilen sonra Visual Studio grafik Çözümleyicisi aygıtını işleme ve performans sorunlarını tanılama günlüğüne inceleyebilirsiniz.
@@ -97,7 +97,6 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
 |**Sürüm**|Uygulama sürümü.|
 
  **VSG günlük dosyası** grafik günlük belgesi hakkındaki bilgiler listelenir.
-
 
 | Özellik | Açıklama |
 |------------------------| - |

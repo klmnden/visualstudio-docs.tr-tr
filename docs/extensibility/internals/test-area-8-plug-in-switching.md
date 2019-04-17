@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 8: Eklenti değiştirme | Microsoft Docs'
+title: 'Test Alanı 8: Eklenti değiştirme | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605178"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659507"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Test alanı 8: Eklenti değiştirme
+# <a name="test-area-8-plug-in-switching"></a>Test Alanı 8: Eklenti Değiştirme
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE), geçerli kaynak denetimi eklentisi değiştirmek için kullanıcı arabirimi (UI) sahiptir. Bu test alanı kullanmak için çözüm kaynak denetimi eklentisi, çekme işlemini test çalışmalarını sağlar.
 
 ## <a name="command-menu-access"></a>Komut menü erişimi
@@ -39,7 +39,6 @@ ms.locfileid: "56605178"
 #### <a name="expected-behavior"></a>Beklenen davranış
  Bir kullanıcı, kaynak denetimi altında bir çözüm yüklediğinde, çözüm otomatik olarak yüklenir ve ilgili kaynak denetimi eklentisi geçerli olarak seçilir.
 
-
 | Eylem | Test adımları | Beklenen sonuçları doğrulamak için |
 | - | - | - |
 | Otomatik kaynak denetimi eklentisini Değiştir | 1.  Geçerli olarak test altındaki eklenti seçin (**Araçları** -> **seçenekleri** -> **kaynak denetimi** -> **eklentisi Seçimi**.)<br />2.  Yeni bir proje oluşturun.<br />3.  Çözüm kaynak denetimine ekleyin.<br />4.  Başka bir eklentiyi seçin (örneğin, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Kaldırılırken çözüm istemi kabul edin.<br />6.  Diskten çözümü yeniden açın. | Çözüm açılır.<br /><br /> Geçerli kaynak denetimi eklentisi altında test eklentisidir. |
@@ -48,7 +47,6 @@ ms.locfileid: "56605178"
 
 #### <a name="expected-behavior"></a>Beklenen davranış
  Çözüm değiştirilmesi, ilişkili kaynak denetimi eklentisi olabilir.
-
 
 | Eylem | Test adımları | Beklenen sonuçları doğrulamak için |
 |----------------------------------| - | - |

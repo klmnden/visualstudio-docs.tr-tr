@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707048"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653781"
 ---
 # <a name="tool-window-display-configuration"></a>Araç penceresi ekran yapılandırması
 VSPackage araç penceresi, varsayılan konum, boyut, yerleştirme stilini ve diğer görünürlük bilgileri kaydedildiğinde, isteğe bağlı değerler belirtilir. Araç penceresi kayıt hakkında daha fazla bilgi için bkz. [aracı Windows kayıt defteri](../extensibility/tool-windows-in-the-registry.md)
@@ -34,7 +34,6 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
-
 
 | Ad | Tür | Veri | Açıklama |
 |-----------------|-----------| - | - |
@@ -87,7 +86,7 @@ HKEY_LOCAL_MACHINE\
 
 |Ad|Tür|Veri|Açıklama|
 |----------|----------|----------|-----------------|
-|(Varsayılan)|REG_SZ|Hiçbiri|Boş bırakın.|
+|(Varsayılan)|REG_SZ|Yok.|Boş bırakın.|
 |*\<GUID>*|REG_DWORD veya REG_SZ|0 veya açıklayıcı bir dize.|İsteğe bağlı. Girişin adı görünürlük gerektiren bir komutun GUID olması gerekir. Değer, yalnızca bilgilendirici bir dize içerir. Genellikle, değeri olan bir `reg_dword` 0 olarak ayarlayın.|
 
 ### <a name="example"></a>Örnek

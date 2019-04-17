@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcfc0d02b8ffd0d1e178bdde363736d14d99fa17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 871069c2620274f008250cd4f3166de7a6d419e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754959"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670023"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Uluslararası Ayarlar, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Uluslararası Ayarlar sayfasında birden fazla dilde tümleşik geliştirme ortamının (IDE), makinenizde yüklü olduğunda varsayılan dili değiştirmenizi sağlar. Bu iletişim kutusunu seçerek erişebilirsiniz **seçenekleri** gelen **Araçları** menüsüne ve ardından **uluslararası ayarlar** gelen **ortamı** klasör. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]

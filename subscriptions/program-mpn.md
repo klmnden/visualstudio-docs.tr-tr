@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Hangi abonelikler sunulur, hangi kuralları uygulamak ve kaç aboneliğe MPN'ye sunulan ayrıntıları.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843175"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659863"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) iş ortakları için sunulan visual Studio abonelikleri
 Kimin bir uzmanlık kazanın veya MPN eylem paketinde kimler satın iş ortakları, Visual Studio aboneliklerini kullanmak uygundur. Bu abonelik kullanıcı başına lisanslanır ve yalnızca belirli bir iş ortağı şirketin çalışan kullanıcı adlandırılmış atandığında geçerlidir.
@@ -43,7 +43,6 @@ Bir iş ortağı işletmeyse kaç uzmanlıklar ne olursa olsun, Visual Studio ab
 | En fazla teklifi yalnızca silver uzmanlıklar sahip iş ortakları için                   | En az bir gold uzmanlığına sahip iş ortakları için en büyük avantajı               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | Ülke başına 25 visual Studio Enterprise abonelikleri; Dünya çapında 75          | Ülke başına 50 visual Studio Enterprise abonelikleri; dünya genelinde 150         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Eylem paketi satın alma iş ortakları için abonelikler
 Bir uzmanlığa sahip iş ortakları, eylem paketi satın almak uygun değildir. İş ortağı yalnızca bir eylem paketi satın alınabilir.

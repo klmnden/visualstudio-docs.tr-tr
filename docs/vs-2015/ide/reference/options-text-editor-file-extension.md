@@ -16,17 +16,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d42495542f96a4ae4918d9d6477f0877979871d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755012"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655900"
 ---
 # <a name="options-text-editor-file-extension"></a>Seçenekler, Metin Düzenleyici, Dosya Uzantısı
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyaların nasıl belirtmenize olanak tanır, Visual Studio tümleşik geliştirme ortamı (IDE) tarafından işlenir. Her **uzantısı** girdiğiniz, bir düzenleme deneyimi seçebilirsiniz. Bu IDE Düzenleyici veya belirli bir türden belgeleri açılacağı Tasarımcısı seçmenize olanak sağlar. Bu seçenekleri görüntülemek için seçin **seçenekleri** gelen **Araçları** menüsünde genişletin **metin düzenleyici** düğüm ve select **dosya uzantısı**.  
   
  Bir seçenek "ile kodlama" seçtiğinizde, bu belge için bir kodlama düzeni seçmenize olanak sağlar, bu türdeki bir belge açtığınızda bir iletişim kutusu görüntülenir. Bu, farklı platformlarda veya farklı hedef dilde kullanmak için proje belgelerinizi sürümlerini hazırlanma istediğinizde yararlı olabilir.  
@@ -57,4 +56,4 @@ Bu seçenekler iletişim kutusu belirli dosya uzantılarına sahip tüm dosyalar
  Aynı liste olarak sağlar **Düzenleyicisi**. Dosya uzantıları olmadan belgeleri açılacağı Tasarımcısı ve IDE Düzenleyicisi'ni seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Düzenleyici modlarını yönetme](../../ide/how-to-manage-editor-modes.md)
+ [Nasıl yapılır: Düzenleyici Modlarını Yönetme](../../ide/how-to-manage-editor-modes.md)

@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856962"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663200"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Azure sanal makinelerinde Canlı ASP.NET uygulamalarında hata ayıklamak ve Snapshot Debugger'ı kullanarak Azure sanal makine ölçek kümeleri
 
@@ -35,11 +35,11 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-* Azure sanal makineler (VM) ve Azure sanal makine ölçek kümeleri (VMSS) için Snapshot Debugger, yalnızca Visual Studio 2019 Enterprise Önizleme veya üzeri ile **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
+* Azure sanal makineler (VM) ve Azure sanal makine ölçek kümeleri için Snapshot Debugger, yalnızca Visual Studio 2019 Enterprise için kullanılabilir veya üzeri ile **Azure geliştirme iş yükü**. (Altında **tek tek bileşenler** sekmesinde bulduğunuz altında **hata ayıklama ve test** > **anlık görüntü hata ayıklayıcısı**.)
 
-    Henüz yüklü değilse, yükleme [Visual Studio 2019 Enterprise preview](https://visualstudio.microsoft.com/vs/preview/).
+    Henüz yüklü değilse, yükleme [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
-* Anlık görüntü koleksiyonu, aşağıdaki Azure VM/VMSS web uygulamaları için kullanılabilir:
+* Anlık görüntü koleksiyonu, aşağıdaki Azure sanal Machines\Virtual makine ölçek kümeleri web uygulamaları için kullanılabilir:
   * .NET Framework 4.6.1 üzerinde çalışan ASP.NET uygulamalarından veya üzeri.
   * .NET Core 2.0 veya daha sonra Windows üzerinde çalışan ASP.NET Core uygulamaları.
 
@@ -48,9 +48,9 @@ Bu öğreticide şunları yapacaksınız:
 1. Anlık görüntü hata ayıklama için istediğiniz projeyi açın.
 
     > [!IMPORTANT]
-    > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure VM/VMSS hizmetinize yayımlanmış.
+    > Anlık görüntü hata ayıklama, açmanıza gerek *kaynak kodu sürümüyle aynı sürümü* Azure sanal Machine\Virtual makine ölçek kümesi hizmetinize yayımlanmış.
 
-1. Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Web uygulamanızın dağıtıldığı hedef Azure VM/VMSS ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
+1. Seçin **hata ayıklama > Snapshot Debugger iliştirebilmek...** . Azure sanal Machine\Virtual makine ölçeği, web uygulamanızın dağıtıldığı kümesi ve bir Azure depolama hesabını seçin ve ardından **iliştirme**.
 
       ![Hata ayıklama menüsünden snapshot debugger'ı Başlat](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ Bu öğreticide şunları yapacaksınız:
 
     > [!IMPORTANT]
     > Seçtiğiniz ilk kez **Snapshot Debugger Ekle** VM'niz için IIS otomatik olarak yeniden başlatılır.
-    > Seçtiğiniz ilk kez **Snapshot Debugger Ekle** , VMSS için VMSS her örneğinin el ile yükseltme gerektirir.
+    > Seçtiğiniz ilk kez **Snapshot Debugger Ekle** sanal makine ölçek kümeleri için sanal makine ölçek kümelerinin her örneğinin el ile yükseltme gerektirir.
 
     Meta verileri **modülleri** başlangıçta etkinleştirilmeyecek, web uygulamasına gidin ve **toplamaya Başla** düğmesi etkin olacak. Visual Studio anlık hata ayıklama modu sunulmuştur.
 
@@ -66,9 +66,9 @@ Bu öğreticide şunları yapacaksınız:
 
     > [!NOTE]
     > Application Insights site uzantısı, anlık görüntü hata ayıklaması da destekler. Bir "site uzantısı güncel değil" hata iletisi ile karşılaşırsanız, bkz [sorun giderme ipuçları ve anlık görüntü hata ayıklama için bilinen sorunlar](../debugger/debug-live-azure-apps-troubleshooting.md) ayrıntıları yükseltme.
-    > VMSS için Snapshot Debugger için ilk kez ekledikten sonra onların VMSS örnekleri el ile yükseltme kullanıcısı gereklidir.
+    > VMSS için Snapshot Debugger için ilk kez ekledikten sonra sanal makine ölçek kümeleri durumlarda el ile yükseltme kullanıcısı gereklidir.
 
-   **Modülleri** penceresi gösterir, tüm modüller için Azure VM/VMSS zaman yüklediniz (seçin **hata ayıklama > Windows > modülleri** bu pencereyi açmak için).
+   **Modülleri** penceresi gösterir, tüm modülleri Azure sanal Machine\Virtual makine ölçek kümesi için zaman yüklemiş olduğunuz (seçin **hata ayıklama > Windows > modülleri** bu pencereyi açmak için).
 
    ![Modüller penceresini denetleyin](../debugger/media/snapshot-modules.png)
 

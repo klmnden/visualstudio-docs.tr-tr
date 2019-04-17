@@ -1,5 +1,5 @@
 ---
-title: Azure işlevleri'ne giriş
+title: Azure İşlevleri’ne Giriş
 description: Mac için Visual Studio'daki Azure işlevleri'ni kullanarak
 author: conceptdev
 ms.author: crdun
@@ -7,14 +7,14 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857249"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670348"
 ---
-# <a name="introduction-to-azure-functions"></a>Azure işlevleri'ne giriş
+# <a name="introduction-to-azure-functions"></a>Azure İşlevleri’ne Giriş
 
 Azure işlevleri, bir şekilde oluşturun ve – – işlevleri – – kod parçacıkları olay temelli açıkça sağlamak veya altyapıyı yönetmek zorunda kalmadan bulutta çalıştırın. Azure işlevleri hakkında daha fazla bilgi için bkz. [Azure işlevleri belgelerinde](/azure/azure-functions/).
 
@@ -104,7 +104,7 @@ Daha fazla işlev, işlev uygulaması projenizi eklemek için yukarıdaki yordam
     |---------|---------|
     |**App Service adı**|Yeni işlev uygulamanızı tanımlayan genel olarak benzersiz bir ad.|
     |**Abonelik**|Kullanılacak Azure aboneliği.|
-    |**[Kaynak Grubu](/azure/azure-resource-manager/resource-group-overview)**|İşlev uygulamanızın oluşturulacağı kaynak grubunun adı. Seçin **+** yeni bir kaynak grubu oluşturmak için.|
+    |**[Kaynak grubu](/azure/azure-resource-manager/resource-group-overview)**|İşlev uygulamanızın oluşturulacağı kaynak grubunun adı. Seçin **+** yeni bir kaynak grubu oluşturmak için.|
     |**[Hizmet planı](/azure/azure-functions/functions-scale)**|Mevcut bir planı seçebilir veya özel bir plan oluşturun. İşlevleri erişiminizi erişeceği diğer hizmetlere ya da size yakın bir bölgede bir konum seçin.|
 
 5. Tıklayın **sonraki** bir depolama hesabı oluşturmak için. İşlevler çalışma zamanı tarafından bir Azure depolama hesabı gereklidir. Tıklayın **özel** bir genel amaçlı depolama hesabı oluşturun veya var olanı kullanın:
@@ -147,9 +147,7 @@ Ayarlanacak ihtiyacınız bir önemli ayar `FUNCTIONS_EXTENSION_VERSION`. Mac i�
     - HTTP POST CRUD
     - Parametrelerle HTTP tetikleyicisi
 
-
 - **Zamanlayıcı** – önceden tanımlanmış bir zamanlamaya göre temizleme veya diğer toplu işlem görevlerini yürütün. Bu şablon iki alanlarını alır: bir ad ve bir zamanlama altı alanı CRON ifadesidir. Daha fazla bilgi için [Azure işlevleri zamanında makalesi](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Kuyruk tetikleyicisi** – bunlar Azure Storage kuyruğuna geldiklerinde iletilere yanıt vereceğini bir işlev budur. İşlev adının yanı sıra bu şablon götüren bir **yolu** (ileti okuması Kuyruğun adı) ve depolama hesabı **bağlantı** (depolama alanınızı içeren uygulama ayarının adı hesabı bağlantı dizesi). Daha fazla bilgi için [Azure işlevleri kuyruk depolama üzerinde makale](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

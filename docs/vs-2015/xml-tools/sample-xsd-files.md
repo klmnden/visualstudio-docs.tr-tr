@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a80f1aa49f214c43a772a48c88fdad6f0d0db7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc746e66bc08d980c11a9e582ccc9db23690d59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776132"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650845"
 ---
 # <a name="sample-xsd-files"></a>Örnek XSD Dosyaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aşağıdaki örnek dosyaları XSD şema Tasarımcısı belgelerinde kullanılır.  
   
 > [!NOTE]
@@ -29,6 +28,6 @@ Aşağıdaki örnek dosyaları XSD şema Tasarımcısı belgelerinde kullanılı
   
 |Konu|Açıklama|  
 |-----------|-----------------|  
-|[Örnek XSD dosyası: Satın alma siparişi şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Tipik satın alma siparişi şeması içeren bir XSD belgesi.|  
-|[Örnek XSD dosyası: Basit şema](../xml-tools/sample-xsd-file-simple-schema.md)|Basit bir şema içeriyor XSD belgesi.|  
-|[Örnek XSD dosyası: İlişkileri](../xml-tools/sample-xsd-file-relationships.md)|Bir şema ile ilişkisi içeren bir XSD belgesi.|
+|[Örnek XSD Dosyası: Satın Alma Siparişi Şeması](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Tipik satın alma siparişi şeması içeren bir XSD belgesi.|  
+|[Örnek XSD Dosyası: Basit Şema](../xml-tools/sample-xsd-file-simple-schema.md)|Basit bir şema içeriyor XSD belgesi.|  
+|[Örnek XSD Dosyası: İlişkiler](../xml-tools/sample-xsd-file-relationships.md)|Bir şema ile ilişkisi içeren bir XSD belgesi.|

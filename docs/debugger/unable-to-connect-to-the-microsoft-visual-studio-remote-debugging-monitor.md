@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953674"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665629"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 Bu ileti, uzaktan hata ayıklama İzleyicisi düzgün uzak makinede kurulu değil veya uzak makineye ağ sorunlarının veya güvenlik duvarı varlığını nedeniyle erişilemez olduğu için meydana gelebilir.
@@ -80,7 +80,6 @@ Visual Studio uzaktan hata ayıklayıcıyı bağlanamadı. Bu ileti, çeşitli n
 - Güvenlik duvarında bağlantı noktası engellenir. Güvenlik Duvarı olduğundan emin olun [isteğiniz engellemeyen](#firewall), özellikle bir üçüncü taraf güvenlik duvarı kullanıyorsanız.
 
 - Visual Studio uzaktan hata ayıklayıcı sürümü eşleşmiyor. Uzaktan hata ayıklayıcı doğru sürümünü almak için bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md)
-
 
 ## <a name="valid_name"></a> İstenen ad geçerli, ancak istenen türde hiçbir veri bulunamadı
 

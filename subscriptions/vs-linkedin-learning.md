@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium aboneliği bir parçası olarak dahil LinkedIn Learning Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: bdc7eaf4aa5c7105b996d25494643209b38f51d3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841555"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670049"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -28,7 +28,6 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 2. Eğitim kategorisinde LinkedIn Learning kutucuğu bulun ve tıklatın **alma kodu** bağlantı.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning avantajı kutucuğu](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Bir LinkedIn hesabınız zaten varsa ve otomatik olarak oturum açmadıysanız, LinkedIn Learning avantajı etkinleştirme sayfasına hemen gidersiniz.  Bir LinkedIn hesabınız varsa, ancak otomatik olarak oturum açmadıysanız, yalnızca kullanıcı adı ve parola girin ve ardından **oturum**.  Lütfen atlamak [bu adımı](#activate-your-offer) teklifinizi etkinleştirin.
 
@@ -80,7 +79,6 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning etkinleştir](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. İlginizi çeken becerileri keşfetmeye başlayabilirsiniz.  Öneriler, diğer becerileri arama listesinden seçin veya tıklatın **atla** becerileri seçme olmadan devam etmek için.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning beceriler](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ LinkedIn Premium aboneliğiniz ve LinkedIn Learning avantajı etkinleştirmek i�
 | Visual Studio Professional (standart) | VL, Azure, perakende                                       | 3 ay                                                            |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | Visual Studio Test Professional (standart)                         | Toplu Lisans, perakende                                              | 3 ay                                             |  Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
 | MSDN platformları (standart)                                          | Toplu Lisans, perakende                                              | 3 ay                                              | Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir         |
-| Visual Studio Dev Essentials | Yok  | 3 ay |Hayır.  Yalnızca yeni aboneleri tarafından kullanılabilir |
+| Visual Studio Dev Essentials | Yok  | Yok |Yok|
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure                                       | Yok                                                           |Yok|
 
 <sup>1</sup>*içerir:  Yeniden Satılamaz (NFR), Visual Studio Endüstri ortağı (VSIP).  Dışlar:  Microsoft iş ortağı ağı (MPN), FTE, MCT yazılım ve geliştirici Hizmetleri, BizSpark, Imagine, en değerli Professional (MVP), bölgesel Yöneticisi (RD).  MCT yazılım ve Hizmetleri.*
 
-
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

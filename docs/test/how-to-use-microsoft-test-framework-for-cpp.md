@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: f4508856fd2aa280a9e9d62c7e4add9e6ca383c1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324915"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649231"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
@@ -32,12 +32,10 @@ Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test eder
 
    2. Aşağıdaki satırları aşağı oka tıklayın ve seçin  **\<Düzenle >** :
 
-
       | Dizin | Özellik |
       |-| - |
       | **Ekleme kodu dizinleri** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Kitaplık dizinleri** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
-
 
 2. Bir C++ birim testi dosyası ekleyin:
 

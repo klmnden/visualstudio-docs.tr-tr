@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 85c5cef12ed92cbd37b303aa7bd1e23cbced76ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754977"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653872"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Devenv, tümleşik geliştirme ortamı (IDE) için çeşitli seçenekleri de derleme, hata ayıklama ve projeleri, komut satırından dağıtma olanak tanır. Bu anahtarlar, IDE bir betik veya .bat dosyası, örneğin, Gecelik Yapı betiği çalıştırmak için veya belirli bir yapılandırmada IDE başlatmak için kullanın.  
   
 > [!NOTE]

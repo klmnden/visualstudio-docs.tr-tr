@@ -15,24 +15,24 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355001"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657135"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Serileştirme metotlarını doğru uygulayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio ile ilgili en son belgeler için bkz. [CA2238: Serileştirme yöntemlerini doğru uygulama](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA2238: Serileştirme yöntemlerini doğru uygulama](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).  
   
 |||  
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
 |Kategori|Microsoft.Usage|  
-|Yeni Değişiklik|Derlemenin dışında görünür bir yöntem ise - kesiliyor.<br /><br /> Yöntemin, derlemenin dışında görünür değilse, olmayan son -.|  
+|Yeni Değişiklik|Derlemenin dışında görünür bir yöntem ise - kesiliyor.<br /><br /> Bölünemez - yöntemi derlemenin dışında görünür değilse.|  
   
 ## <a name="cause"></a>Sebep  
  Seri hale getirme olayı tanıtan yöntem türü, doğru imzaya, dönüş türüne veya görünürlüğe sahip değil.  

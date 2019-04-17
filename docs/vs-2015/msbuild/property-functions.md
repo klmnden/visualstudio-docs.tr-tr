@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758367"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649244"
 ---
 # <a name="property-functions"></a>Özellik İşlevleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 .NET Framework sürüm 4 ve 4.5, MSBuild komut değerlendirilecek özellik işlevleri kullanılabilir. Özellik işlevleri özellikleri görünür her yerde kullanılabilir. Görevleri farklı özellik işlevleri hedefleri dışında kullanılabilir ve tüm hedef çalışmadan önce değerlendirilir.  
   
  MSBuild görevlerini kullanmadan, sistem saatini okuyabilir, dizeleri karşılaştırmak, normal ifadeleri eşleştirebilir ve derleme betiğinizin diğer eylemleri gerçekleştirin. MSBuild, dize ve numarası dizeye Dönüştür ve gerektiği gibi diğer dönüştürme yapmak çalışacaktır.  

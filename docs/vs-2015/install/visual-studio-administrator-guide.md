@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868891"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649374"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017 Yönetici Kılavuzu](/visualstudio/install/visual-studio-administrator-guide).
+Visual Studio ile ilgili en son belgeler için bkz. [Visual Studio Yönetici Kılavuzu](/visualstudio/install/visual-studio-administrator-guide).
 
 Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağıtabilirsiniz [minimum yükleme gereksinimlerini](https://visualstudio.microsoft.com/vs/older-downloads/). Bir ağ paylaşımı ile/layout anahtarını yükleme dosyasını çalıştırarak oluşturabilirsiniz (üzerinde açıklandığı [bir çevrimdışı Visual Studio yüklemesi oluşturma](../install/create-an-offline-installation-of-visual-studio.md) sayfası) ve ardından yerel makinede ağ paylaşımına kopyalama. Bir ISO kullanıyorsanız ISO'yu bağlamak ve paylaşın veya ISO dosyasını bir ağ paylaşımına kopyalayın.  
   
@@ -57,12 +57,13 @@ Her hedef bilgisayar karşıladığı sürece Visual Studio 2015 bir ağda dağ�
  Yönetici dosya deneyimi hakkında daha fazla bilgi için bkz. [nasıl yapılır: Oluşturma ve Visual Studio katılımsız yükleme çalıştırma](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) ve [nasıl yapılır: Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Komut satırı denetimleri hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin komut satırı parametreleri kullanmak](../install/use-command-line-parameters-to-install-visual-studio.md) sayfası.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Müşteri geri bildirim ayarlarını belirtme  
- Varsayılan olarak, Visual Studio yüklemesini müşteri geri bildirim sağlar. "0" dizesi için aşağıdaki kayıt defteri anahtarının değerini değiştirerek tek tek bilgisayarlarda müşteri geri bildirimleri devre dışı bırakmak için Visual Studio yapılandırabilirsiniz:  
+
+Varsayılan olarak, Visual Studio yüklemesini müşteri geri bildirim sağlar. "0" dizesi için aşağıdaki kayıt defteri anahtarının değerini değiştirerek tek tek bilgisayarlarda müşteri geri bildirimleri devre dışı bırakmak için Visual Studio yapılandırabilirsiniz:  
   
- **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**  
 **OptIn**  
   
- (Örneğin, HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn olarak değiştirmek = "0")  
+(Örneğin, HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn olarak değiştirmek = "0")  
   
 ## <a name="related-topics"></a>İlgili Konular  
   

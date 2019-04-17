@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641760"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665213"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>İzlenecek yol: İlk VSTO eklentinizi projesi oluşturma
   Bu kılavuzda, Microsoft Office Project için VSTO eklentisi oluşturma işlemini göstermektedir. Bu tür bir çözüm içinde oluşturduğunuz özellikler uygulamanın kendisinin projeleri açık olan bağımsız olarak kullanılabilir. Daha fazla bilgi için [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -91,7 +91,6 @@ ms.locfileid: "56641760"
 1.  C# kullanıyorsanız, aşağıdaki kodu ekleyin `ThisAddIn_Startup` olay işleyicisi. Bu kod bağlanır `Application_Newproject` NewProject olayı olay işleyicisi.
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>Test projesi
  Derleme ve projeyi çalıştırın, ortaya çıkan yeni projede yeni bir görev göründüğünü doğrulayın.

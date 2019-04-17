@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789845"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648841"
 ---
 # <a name="code-snippet-picker"></a>Kod Parçacığı Seçici
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Kod Düzenleyicisi sağlar bir **kod parçacığı Seçici** sağlayan, kullanıma hazır kod bloklarını etkin belgeye eklemek için birkaç fare tıklama.  
   
  Görüntülenecek yordamı **kod parçacığı Seçici** kullanmakta olduğunuz bir dile göre değişir.  
@@ -59,4 +58,4 @@ ms.locfileid: "54789845"
  [Kod parçacıkları için en iyi uygulamalar](../../ide/best-practices-for-using-code-snippets.md)   
  [Visual Basic IntelliSense kod parçacıkları](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Kodda yer işaretleri ayarlama](../../ide/setting-bookmarks-in-code.md)   
- [Nasıl yapılır: Surround-with kod parçacıklarını kullanma](../../ide/how-to-use-surround-with-code-snippets.md)
+ [Nasıl yapılır: Surround-with Kod Parçacıklarını Kullanma](../../ide/how-to-use-surround-with-code-snippets.md)

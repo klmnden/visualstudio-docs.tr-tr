@@ -23,17 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765966"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651131"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Veri kaynakları penceresine özel denetimler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir öğeyi sürüklediğinizde **veri kaynakları** penceresinde bir veriye bağlı denetim oluşturmak için bir tasarım yüzeyine, oluşturduğunuz denetim türünü seçebilirsiniz. Penceresinde her öğenin, aralarından seçim yapabileceğiniz denetimleri görüntüleyen bir açılır liste vardır. Her bir öğeyle ilişkili denetimler kümesini öğesinin veri türüne göre belirlenir. Oluşturmak istediğiniz Denetim listede görünmüyorsa, denetim listesine eklemek için bu konudaki yönergeleri takip edebilirsiniz.  
   
  Öğeleri oluşturmak için verilere bağlı denetimler seçme hakkında daha fazla bilgi için **veri kaynakları** penceresinde görmek [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  

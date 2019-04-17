@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792948"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665850"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımı için benzersiz bir kimliği tanımlayarak dağıtım bildirimini bir uygulama dağıtımını açıklar, tanımlayıcı dağıtım özellikleri yükleme veya uygulama belirtme çevrimiçi modu gibi ayarları ve konumları, güncelleştirme ve ilgili [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi.  
   
 ## <a name="parameters"></a>Parametreler  
@@ -44,7 +43,7 @@ Oluşturur bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım
 |`Description`|İsteğe bağlı `String` parametresi.<br /><br /> Uygulama için isteğe bağlı bir açıklama belirtir.|  
 |`DisallowUrlActivation`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Bir URL üzerinden açıldığında uygulama otomatik olarak çalıştırılıp çalıştırılmayacağını belirtir. Bu parametre `true`, uygulama yalnızca Başlat menüsünden başlatılabilir. Bu parametrenin varsayılan değeri `false`. Bu giriş, yalnızca geçerli `Install` parametre değeri `true`.|  
 |`EntryPoint`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Üretilen bildirim derlemesi için giriş noktasını belirtir. İçin bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bildirimi, bu giriş belirtir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bildirimi.<br /><br /> İçinde [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], [GenerateApplicationManifest görevi](../msbuild/generateapplicationmanifest-task.md) gerekli bir `EntryPoint` bir uygulama bildirimi oluşturmak için. (Derleme veya yerel bildirimler gerektirmez bir `EntryPoint`.) Bu gereksinim, şu yapı hatasıyla zorlandı: "MSB3185: Bildirim için EntryPoint belirtilmemiş."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Bu hata kesmez olduğunda `EntryPoint` görev parametresi belirtilmedi. Bunun yerine, \<customHostSpecified > etiketi, bir alt öğesi olarak eklenir \<entryPoint > etiketinin, örneğin:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Aşağıdaki adımları kullanarak, uygulama bildirimine DLL bağımlılıkları ekleyebilirsiniz:<br /><br /> 1.  Bir çağrı ile derleme başvurularını çözümlemek <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Önceki görev ve derleme çıkışını geçirmek için <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Kullanarak bağımlılıkları geçirin `Dependencies` parametresi <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|İsteğe bağlı [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> ClickOnce yüklemeleri sırasında iletişim kutularında görüntülenen Web sayfasının URL'sini belirtir.|  
+|`ErrorReportUrl`|İsteğe bağlı [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> ClickOnce yüklemeleri sırasında iletişim kutularında görüntülenen Web sayfasının URL'sini belirtir.|  
 |`InputManifest`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> parametresi.<br /><br /> Bildirim oluşturucu için bir temel olarak hizmet verecek girdi XML belgesini belirtir. Bu, çıktı bildiriminde yansıtılmasını özel bildirim tanımları gibi yapılandırılmış verilerin sağlar. XML belgesi kök öğesi asmv1 ad alanı içerisinde bir derleme düğümü olmalıdır.|  
 |`Install`|İsteğe bağlı `Boolean` parametresi.<br /><br /> Uygulamanın yüklü bir uygulama ya da yalnızca çevrimiçi bir uygulama olup olmadığını belirtir. Bu parametre `true`, uygulama kullanıcının Başlat menüsüne yüklenir ve Program Ekle veya Kaldır iletişim kutusu kullanılarak kaldırılabilir. Bu parametre `false`, uygulama bir Web sayfasından çevrimiçi kullanılması amaçlanmıştır. Bu parametrenin varsayılan değeri `true`.|  
 |`MapFileExtensions`|İsteğe bağlı `Boolean` parametresi.<br /><br /> .Deploy dosya adı uzantısı eşlemesinin kullanılıp kullanılmayacağını belirtir. Bu parametre `true`, her program dosyası .deploy dosya adı uzantısıyla yayımlanır. Bu seçenek, Web sunucusu güvenliği etkinleştirme engelinin kaldırılması gerekir ve dosya adı uzantıları sayısını sınırlamak kullanışlıdır [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama dağıtımı. Bu parametrenin varsayılan değeri `false`.|  

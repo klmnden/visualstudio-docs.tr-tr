@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702284"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660794"
 ---
 # <a name="core-interfaces"></a>Temel Arabirimler
 Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıdaki arabirimdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -138,7 +138,6 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 ##  <a name="Events"></a> Olayları
  Bu arabirimler DE oturum hata ayıklama Yöneticisi (SDM) arasında gönderilen tüm olayları temsil eder.
 
-
 | Arabirim | Uygulayan | Açıklama |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | Açılması için bir belge için DE tarafından gönderilir. |
@@ -211,7 +210,6 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 
 ##  <a name="Ports"></a> Bağlantı noktaları
  Bu arabirimler, bağlantı noktası ve bağlantı noktası sağlayıcıları temsil eder.
-
 
 | Arabirim | Uygulayan | Açıklama |
 | - |----------------| - |

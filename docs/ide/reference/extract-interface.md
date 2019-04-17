@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983211"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651307"
 ---
 # <a name="extract-an-interface-refactoring"></a>Bir arabirimi yeniden düzenleme ayıklayın
 
@@ -58,13 +58,11 @@ Bu yeniden düzenleme için geçerlidir:
 
    ![Ayıklama Arabirimi](media/extractinterface-dialog-same-file.png)
 
-
    | Alan | Açıklama |
    | - | - |
    | **Yeni arabirimin adı** | Oluşturulacak arabirimin adı. T adı varsayılan*ClassName*burada *ClassName* Yukarıda seçilen sınıf adıdır. |
    | **Yeni dosya adı** | Arabirim içeren oluşturulan dosyanın adı. Arabirim adı ile bu ad t varsayılacaktır gibi*ClassName*burada *ClassName* Yukarıda seçilen sınıf adıdır. Seçeneğini de seçebilirsiniz **geçerli dosyaya eklemek**. |
    | **Form arabirimi için genel üyeleri seçin** | Ayıklama arabirimi öğelerdir. İstediğiniz kadar çok seçebilirsiniz. |
-
 
 4. Seçin **Tamam**.
 
@@ -73,15 +71,13 @@ Bu yeniden düzenleme için geçerlidir:
    - C#:
 
       ![Sonuçta elde edilen sınıfı-C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Sonuçta elde edilen Interface-C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
       ![Sonuçta elde edilen sınıfı - Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Sonuçta elde edilen Interface - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Ayrıca bkz.

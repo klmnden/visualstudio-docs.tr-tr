@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665009"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir veya daha fazla tür kitaplığı adları veya .tlb dosyaları listesini alır ve bu tür kitaplıklarını disk üzerindeki konumlara giderir.  
   
 ## <a name="parameters"></a>Parametreler  
@@ -47,10 +46,10 @@ Bir veya daha fazla tür kitaplığı adları veya .tlb dosyaları listesini al�
 |`ResolvedAssemblyReferences`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Çözümlenen derleme başvurularını belirtir.|  
 |`ResolvedFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` çıkış parametresi.<br /><br /> Bu görev için giriş olarak sağlanan tür kitaplıklarının fiziksel konuma karşılık gelen tam dosyaları diskte belirtir.|  
 |`ResolvedModules`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]`parametresi.|  
-|`SdkToolsPath`|İsteğe bağlı [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> Varsa `ExecuteAsTool` olduğu `true`, bu parametre, hedeflenen framework sürümü için SDK araçlarını yola ayarlamanız gerekir.|  
-|`StateFile`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> COM bileşeni zaman damgaları için önbellek dosyası belirtir. Her çalıştırma, yoksa tüm sarmalayıcıları yeniden oluşturulacak.|  
-|`TargetFrameworkVersion`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Proje hedef framework sürümünü belirtir.<br /><br /> Varsayılan, `String.Empty` değeridir. Hedef framework'ü temel bir başvuru için filtre yoktur anlamına gelir.|  
-|`TargetProcessorArchitecture`|İsteğe bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametresi.<br /><br /> Tercih edilen hedef İşlemci mimarisi belirtir. Tlbimp.exe/Machine bayrak sonra çeviri geçirildi.<br /><br /> Parametre değeri bir üyesi olmalıdır <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`SdkToolsPath`|İsteğe bağlı [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> Varsa `ExecuteAsTool` olduğu `true`, bu parametre, hedeflenen framework sürümü için SDK araçlarını yola ayarlamanız gerekir.|  
+|`StateFile`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> COM bileşeni zaman damgaları için önbellek dosyası belirtir. Her çalıştırma, yoksa tüm sarmalayıcıları yeniden oluşturulacak.|  
+|`TargetFrameworkVersion`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Proje hedef framework sürümünü belirtir.<br /><br /> Varsayılan, `String.Empty` değeridir. Hedef framework'ü temel bir başvuru için filtre yoktur anlamına gelir.|  
+|`TargetProcessorArchitecture`|İsteğe Bağlı <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametre.<br /><br /> Tercih edilen hedef İşlemci mimarisi belirtir. Tlbimp.exe/Machine bayrak sonra çeviri geçirildi.<br /><br /> Parametre değeri bir üyesi olmalıdır <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> COM başvuruları tür kitaplığı dosyası yolunu belirtir. Bu parametrede bulunan öğelerin öğe meta verileri içerebilir. Daha fazla bilgi için "TypeLibFiles öğe meta verileri" aşağıdaki bölüme bakın.|  
 |`TypeLibNames`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Çözümlenecek tür kitaplığı adları belirtir. Bu parametrede bulunan öğelerin, bazı öğe meta verileri içermelidir. Daha fazla bilgi için "TypeLibNames öğe meta verileri" aşağıdaki bölüme bakın.|  
 |`WrapperOutputDirectory`|İsteğe bağlı `String` parametresi.<br /><br /> Disk üzerindeki oluşturulan birlikte çalışma derlemesi yerleştirildiği konum. Bu öğe meta verileri belirtilmezse görev proje dosyasının bulunduğu dizinin mutlak yolu kullanır.|  

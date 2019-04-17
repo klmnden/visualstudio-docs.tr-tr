@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645881"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648556"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>İzlenecek yol: Bir belgeye çalışma zamanında VSTO eklenti denetimler ekleme
   Bir VSTO eklentisi kullanarak, Microsoft Office Word'ün herhangi bir açık belgeye denetimler ekleyebilirsiniz. Bu izlenecek yol ekleme olanağı Şerit kullanmayı gösterir. bir <xref:Microsoft.Office.Tools.Word.Controls.Button> veya <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeye.
@@ -78,21 +78,17 @@ ms.locfileid: "56645881"
 
 8. İçinde **özellikleri** penceresinde, aşağıdaki özellikleri değiştirin.
 
-
    | Özellik | Değer |
    |-----------|-----------------------|
    | **Ad** | **addButtonCheckBox** |
    | **Etiket** | **Ekle düğmesi** |
 
-
 9. İkinci bir onay kutusu ekleme **group1**ve ardından aşağıdaki özellikleri değiştirin.
-
 
    | Özellik | Değer |
    |-----------|---------------------------|
    | **Ad** | **addRichTextCheckBox** |
    | **Etiket** | **Zengin metin denetimi ekleme** |
-
 
 10. Şerit Tasarımcısı'nda çift **Ekle düğmesi**.
 

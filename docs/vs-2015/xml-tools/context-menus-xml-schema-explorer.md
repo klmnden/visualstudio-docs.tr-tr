@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756794"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653964"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Bağlam menüleri (XML Şeması Gezgini)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aşağıdaki bağlam menüsü öğelerine, şema özel aramalar ve diğer işlemleri gerçekleştirmek için kullanılır.  
   
 ## <a name="node-type-schema-set"></a>Düğüm türü: Şema kümesi  

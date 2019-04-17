@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623833"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653339"
 ---
 # <a name="vbc-task"></a>Vbc görevi
 Sarmalar *vbc.exe*, yürütülebilir dosyalar oluşturur (*.exe*), dinamik bağlantı kitaplıklarını (*.dll*), veya kod modüllerini (*.netmodule*). Daha fazla bilgi için *vbc.exe*, bkz: [Visual Basic komut satırı derleyicisi](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parametreler
  Parametreleri aşağıdaki tabloda açıklanmıştır `Vbc` görev.
-
 
 | Parametre | Açıklama |
 |------------------------------| - |

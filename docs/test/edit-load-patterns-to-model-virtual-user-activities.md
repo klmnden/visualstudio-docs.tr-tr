@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b09ebf838b33eaddff485e179209a564ae81807a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956421"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657892"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Model sanal kullanıcı etkinlikleri için yük desenlerini düzenleme
 
@@ -46,7 +46,6 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 
 > [!NOTE]
 > Toplam test süresi en fazla kullanıcı yükü en fazla adım için gerekli olan süreden kısadır sonra test geçen süre durdurur ve değil ulaşın **en yüksek kullanıcı sayısı** hedef.
-
 
  Adım hedefi bir noktaya sunucu ulaşıncaya kadar yükünü artırmak için kullanabileceğiniz performansının önemli ölçüde azaldığı. Yük arttıkça sunucu sonunda kaynaklar yetersiz çalıştırın. Adım yükü bu gerçekleştiğinde kullanıcı sayısını belirlemek için iyi bir yoludur. Adımlama yükü ile ayrıca yakından aracıları istenen yükü oluşturmak emin olmak için aracı kaynakları izlemek vardır.
 
@@ -122,12 +121,10 @@ Yük düzeni, bir senaryonun bir bileşenidir. Bir yük testi tanımlanmış yü
 > [!NOTE]
 > Yük testi senaryosu özelliklerini ve açıklamalarının tam listesi için bkz [yük testi senaryosu özellikleri](../test/load-test-scenario-properties.md).
 
-
  Yük düzeni, etkin bir yük testi ve yeni kullanıcıların eklendiği oranı sırasında sanal kullanıcıların sayısını belirtir. Üç kullanılabilir düzen arasından seçim yapabilirsiniz: adım düzeni, sabit ve hedef temelli. Daha fazla bilgi için [yük desenleriyle bir yük testi senaryosunda sanal kullanıcı sayısını belirtin](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > Bir yük testi eklentisi kullanarak yükleme özelliklerini programlı olarak da değiştirebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Bir yük testi eklentisi oluşturma](../test/how-to-create-a-load-test-plug-in.md).
-
 
 ### <a name="to-change-the-load-pattern"></a>Yük Düzeni değiştirmek için
 

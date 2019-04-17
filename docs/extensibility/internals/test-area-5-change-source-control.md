@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 5: Kaynak denetimini Değiştir | Microsoft Docs'
+title: 'Test Alanı 5: Kaynak denetimini Değiştir | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599655"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649257"
 ---
-# <a name="test-area-5-change-source-control"></a>Test alanı 5: Kaynak denetimini Değiştir
+# <a name="test-area-5-change-source-control"></a>Test Alanı 5: Kaynak Denetimini Değiştirme
 Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak denetimi değiştirilmeden **kaynak denetimini Değiştir** komutu.
 
  **Kaynak denetimini Değiştir** komut, kullanıcı için dört temel işlevleri sağlar:
@@ -45,7 +45,6 @@ Bu kaynak denetimi eklentisi test alanını kapsayan aracılığıyla kaynak den
 
 ### <a name="case-5a-bind"></a>Büyük/küçük harf 5a: bağlama
  Bağlama seçili projeler ve çözümler için kaynak kodu denetim bilgisi eklemesine izin verir. Kullanıcı bir proje kaynak denetimine eklenecek bunlar tanımlamak için genellikle istenir. Kullanıcı yeni bir proje kaynak denetimi (kaynak denetimine Ekle karşıtlığını) bu işlemin bir parçası olarak oluşturamazsınız.
-
 
 | Eylem | Test adımları | Beklenen sonuçları doğrulamak için |
 | - | - | - |

@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834445"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665148"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 ile ilgili bir sorun bildirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017'de bir sorunu bildirmek nasıl](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Visual Studio ile ilgili en son belgeler için bkz. [Visual Studio'daki sorun bildirme](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 Visual Studio 2015 ile ilgili bir sorun yaşarsanız, böylece biz de tanılayın ve düzeltin bunu bilmek istiyoruz.  Kullanarak **sorun bildir** aracı, sorun hakkında ayrıntılı bilgi toplamak ve birkaç düğme tıklamasıyla Microsoft'a gönderin.
 
- Microsoft, gizliliğinize saygı duyar. Biz bize gönderdiğiniz verileri nasıl kabul hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
+Microsoft, gizliliğinize saygı duyar. Biz bize gönderdiğiniz verileri nasıl kabul hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Sorun raporu açın
- Kullanıcı geri bildirim simgesine tıklayın **hızlı başlatma** başlık çubuğunda veya tıklayarak **yardımcı &#124; geri bildirim gönder &#124; sorun bildir**.
 
- ![Bir sorun menü öğesi rapor](../ide/media/report-a-problem-menu-item.png "rapor sorun menü öğesi")
+Kullanıcı geri bildirim simgesine tıklayın **Hızlı Başlat** başlık çubuğunda veya tıklayarak **Yardım > geri bildirim gönder > bir sorun bildirmek**.
+
+![Bir sorun menü öğesi rapor](../ide/media/report-a-problem-menu-item.png "rapor sorun menü öğesi")
 
 ## <a name="describe-the-problem"></a>Sorunu açıklayın
 
@@ -43,7 +44,8 @@ Visual Studio 2015 ile ilgili bir sorun yaşarsanız, böylece biz de tanılayı
    ![Bir sorun iletişim kutusu rapor](../ide/media/report-a-problem-dialog.png "sorun iletişim raporu")
 
 ## <a name="provide-a-screenshot-optional"></a>(İsteğe bağlı) bir ekran görüntüsü sağlayın
- Seçin **ekran görüntüsü Ekle** geçerli ekranınızın Microsoft'a gönderilecek. Araç yalnızca sorunu gösteren ekran parçası gösterilecek görüntü kırpma sağlar. Tıklayarak bir ek ekran görüntüleri veya diğer dosyaları iliştirebilirsiniz **ek dosyalar iliştirmek** düğmesi.
+
+Seçin **ekran görüntüsü Ekle** geçerli ekranınızın Microsoft'a gönderilecek. Araç yalnızca sorunu gösteren ekran parçası gösterilecek görüntü kırpma sağlar. Tıklayarak bir ek ekran görüntüleri veya diğer dosyaları iliştirebilirsiniz **ek dosyalar iliştirmek** düğmesi.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Bir izleme ve yığın dökümü (isteğe bağlı) girin
 
@@ -60,10 +62,13 @@ Visual Studio 2015 ile ilgili bir sorun yaşarsanız, böylece biz de tanılayı
      ![Bir izleme dosyası kayıt](../ide/media/record-a-trace-file.png "bir izleme dosyası kaydı")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Geçici çözüm varsa açıklayın
- Sorunu çözmek mümkün değilse lütfen geçici çözüm bu amaçla sağlanan düzenleme kutusuna açıklayın. Bu, yalnızca sorunu tanılamak için aynı zamanda aynı sorunla karşılaşabilirsiniz diğer kullanıcılara yardımcı olmak için bize yardımcı olur.
+
+Sorunu çözmek mümkün değilse lütfen geçici çözüm bu amaçla sağlanan düzenleme kutusuna açıklayın. Bu, yalnızca sorunu tanılamak için aynı zamanda aynı sorunla karşılaşabilirsiniz diğer kullanıcılara yardımcı olmak için bize yardımcı olur.
 
 ## <a name="submit-the-report"></a>Rapor gönderme
- Tüm görüntü ve izleme ya da döküm dosyaları ile birlikte, rapor göndermek için Gönder düğmesine tıklayın. Varsa **Gönder** düğmesi gri, bir başlık ve açıklama sağladığınızdan emin olun.
+
+Tüm görüntü ve izleme ya da döküm dosyaları ile birlikte, rapor göndermek için Gönder düğmesine tıklayın. Varsa **Gönder** düğmesi gri, bir başlık ve açıklama sağladığınızdan emin olun.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Bizimle İletişime Geçin](../ide/talk-to-us.md)
+
+- [Bizimle İletişime Geçin](../ide/talk-to-us.md)

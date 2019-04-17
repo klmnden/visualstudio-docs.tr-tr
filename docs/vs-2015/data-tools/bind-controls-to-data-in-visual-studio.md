@@ -19,16 +19,15 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca10874d27664902f98baff47a2fe1e7a0adb0e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767948"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667956"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere denetimler bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Denetimlere veri bağlama ile uygulamanızın kullanıcılarına verileri görüntüleyebilirsiniz. Öğeleri sürükleyerek bu verilere bağlı denetimler oluşturabilirsiniz **veri kaynakları** penceresinden bir tasarım yüzeyine veya Visual Studio'da bir yüzeydeki denetimleri.
 

@@ -10,18 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707169e0b4c7463cb2df45a40ebe4380b6706a52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ee2dff8cab226d3df724d7a8295de52c56e11a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609468"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668151"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild satır içi görevleri
 MSBuild görevleri, derleme uygulayan bir sınıf tarafından genellikle oluşturulur <xref:Microsoft.Build.Framework.ITask> arabirimi. Daha fazla bilgi için [görevleri](../msbuild/msbuild-tasks.md).
 
  .NET Framework sürüm 4 başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Bu, kaynak kodu izlemek daha kolay ve görev dağıtmayı daha kolay hale getirir. Kaynak kodunu komut dosyasında tümleşiktir.
-
 
  MSBuild 15,8 içinde [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) , .NET Standard platformlar arası satır içi görevleri oluşturabileceğiniz eklendi.  Satır içi görevleri üzerinde .NET Core kullanmanız gerekiyorsa, RoslynCodeTaskFactory kullanmanız gerekir.
 ## <a name="the-structure-of-an-inline-task"></a>Satır içi göre yapısı

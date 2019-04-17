@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366620"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665756"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Kod ve Metin Düzenleyici'de Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Visual Studio'nun "Gitmek için" komut belirtilen öğeleri, kod dosyaları, dos
     Siz yazarken, sonuçları bir açılan listedeki metin kutusunun altında görüntülenir.
 1. Bir öğeye gitmek için listeden seçin.
 
-
 ### <a name="filter-your-search"></a>Aramanızı filtreleyin
 
 Yalnızca Simgeler kodu için arama sınırlamak için gitmek için sorgu ile yazdığınızdan bir "\@" karakter. Örneğin, arama `@application`, gezinmek için görüntüler, örneğin, yalnızca "uygulama" sözcüğünü içeren sınıflar.
@@ -189,9 +188,9 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
  Dile özgü Düzenleyici seçenekleri hakkında daha fazla bilgi için aşağıdakilere bakın:  
 
--   [Visual Basic Ayarları](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+-   [Visual Basic ayarları](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [C# için Visual Studio geliştirme ortamını kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
@@ -203,7 +202,7 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 -   [Anahat Oluşturma](../ide/outlining.md)  
 
--   [Yeniden Düzenle](../ide/refactoring-in-visual-studio.md)  
+-   [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)  
 
 -   [Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)  
 
@@ -211,9 +210,9 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
 -   [Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)  
 
--   [Nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [Nasıl yapılır: Kaydırma Çubuğunu Özelleştirerek Kodunuzu İzleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Nasıl yapılır: Görüntüleme ve Özet tanımı (Alt + F12) kullanarak kod düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Nasıl yapılır: Tanıma Göz At Özelliğini (Alt+F12) Kullanarak Kodu Görüntüleme ve Düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md)  
 

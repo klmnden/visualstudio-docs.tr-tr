@@ -27,17 +27,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782481"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657434"
 ---
 # <a name="midl-task"></a>MIDL Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
 ## <a name="parameters"></a>Parametreler  

@@ -6,17 +6,16 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 623e47e7244e9e4317e89f47cfda02bda465273b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772041"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670296"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac kullanıcıları için kurulum, yükleme ve doğrulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu konuda, Mac'te bir Windows sanal makine içinde Visual Studio isteğe bağlı olarak kullanacak, öncelikle bir Mac üzerinde çalışan geliştiriciler için tasarlanmıştır Öncelikle bir Windows bilgisayarda çalışan bir geliştirici olan ve ikincil Mac iOS hedeflemek için ayarlanacak ihtiyacınız varsa, ana bkz [Kurulum ve yükleme](../cross-platform/setup-and-install.md) konu.  
   
  Mac'te Xamarin ile çalışmak için şunlar gerekir:  

@@ -8,17 +8,16 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 99f36287c6ab1aa6b8157e6dde2a84bb97233fcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766967"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666526"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio ve Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Xamarin yerel iOS, Android ve Windows uygulamaları için mobil uygulama geliştirme platformu olan ortak bir uygulamalardan C#/.NET kod tabanı, neredeyse % 100 yeniden kod platformlar arasında %75 elde edin. Xamarin ve C# ile yazılan uygulamaları, API'leri temel alınan platforma tam erişim ve yerel kullanıcı arabirimleri oluşturun ve çalışma zamanı performansı üzerinde çok az etkisi için platforma özel paketler için derleme olanağı vardır. (Not: Xamarin de destekler F#, ancak bu belgeler üzerinde odaklanır C# yalnızca. Visual Basic şu anda desteklenmiyor.)  
   
  Yine de daha iyi geliştiriciler C#, .NET ve Visual Studio ile aynı verimlilik ve güç Xamarin ile Android, iOS ve Windows cihazlarda uzaktan hata ayıklama da dahil olmak üzere, mobil uygulamalar için çalışırken keyfini çıkarın — yerel kodlama öğrenmek zorunda kalmadan Objective-C ya da Java gibi diller. Küçük şaşkınlık ve ardından, güzel kullanıcı arabirimleri ile diğer birçok yüksek performanslı uygulamaları olan — NASCAR, Aviva ve MixRadio gibi — Xamarin kullanılarak oluşturulan.  

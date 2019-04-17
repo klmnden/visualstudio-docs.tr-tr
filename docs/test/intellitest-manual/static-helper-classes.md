@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c639175e74d13a35724a4388505a177c8b60db0b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f7d1fe7213bff39f83f315b472f29cb06eda06ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653693"
 ---
 # <a name="static-helper-classes"></a>Statik yardımcı sınıfları
 
@@ -123,7 +123,6 @@ PexObserve.Value<string>("result", result);
 public static class MathEx {
      public static int Square(int value) { return value * value; }
 }
-
 
 // fixture
 [TestClass]

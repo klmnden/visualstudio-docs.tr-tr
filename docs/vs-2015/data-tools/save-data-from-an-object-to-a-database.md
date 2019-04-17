@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764550"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659026"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Verileri bir nesneden veritabanına kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Değerleri, bir nesneden bir TableAdapter bağdaştırıcısının DBDirect yöntemleri geçirerek bir veritabanı nesneleri veri kaydedebilir (örneğin, `TableAdapter.Insert`).
   
  Veri nesneleri (örneğin, bir sonraki için döngü) nesne koleksiyonunu döngü koleksiyonundan kaydedip değerlerin her nesne için TableAdapter bağdaştırıcısının DBDirect yöntemleri birini kullanarak veritabanına göndermek için.  

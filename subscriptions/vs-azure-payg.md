@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Azure Kullandıkça Öde hesabınızı ayarlama konusunda bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843915"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657655"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Azure geliştirme ve Test Kullandıkça Öde aboneliği ayarlama
 Ekibinizle bulutta işbirliği yapın.  Diğer abonelerle işbirliğine yandan ekipler ve ortamlar arasında yalıtımı da sağlar etkinleştirme, çeşitli geliştirme ve Test Kullandıkça Öde abonelikleri oluşturun.  Geliştirme/test için özel indirimli saat ücretleri alın ve kullanım hakları, azure'da abonelik yazılımınızın bulut.
@@ -31,11 +31,9 @@ Ekibinizle bulutta işbirliği yapın.  Diğer abonelerle işbirliğine yandan e
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG kaydolma](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. Ardından, lütfen hesabınız için fatura bilgileri sağlayın ve tıklayın **sonraki**.  (Bu, Azure tüm satın alımlarda ücretlendirilir kredi kartı olacaktır.)
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG ödeme](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. Sözleşme bölümünde abonelik sözleşmesini kabul edin, ayrıntıları ve gizlilik bildirimini sunar ve ardından onay kutusunu tıklatın **satın alma**.
 

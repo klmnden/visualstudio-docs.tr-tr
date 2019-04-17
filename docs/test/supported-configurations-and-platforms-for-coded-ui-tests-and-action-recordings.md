@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: e0bb62bb8b7ea64bc01e18e47974d4035b9e1bd1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796575"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666696"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Kodlanmış UI testleri ve eylem kayıtları için desteklenen yapılandırmalar ve platformlar
 
@@ -40,7 +40,6 @@ Desteklenen yapılandırmalar ve platformlar için kodlanmış UI testleri için
 
 > [!NOTE]
 > *UI Eşitlemesi* kayıttan yürütme her denetimin ileti kuyrukta doğrulanan burada bir özelliktir. Bir denetim kendisine gönderilen olaya yanıt vermiyorsa, olay yeniden gönderilir.
-
 
 ## <a name="platform-support"></a>Platform desteği
 

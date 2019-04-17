@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9d3533f2eb6cfb5bc2e3a68370f48daa4acfc1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752327"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661213"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Özellik &lt;özellik adı&gt; silinemiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Özellik \<özellik adı > arasında devralma için ayrıştırıcı özelliği olarak ayarlandığından silinemiyor \<sınıf adı > ve \<sınıf adı >  
   
  Seçilen özellik olarak ayarlandığından **ayrıştırıcı özelliği** hata iletisinde belirtilen sınıfları arasındaki devralma için. Veri sınıfları arasındaki devralma yapılandırmasında katılan varsa özellikleri silinemez.  

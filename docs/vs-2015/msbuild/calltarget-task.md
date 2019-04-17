@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c0992cd9d1ece4f9d3ea0d22512948fafaf5cf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9093b35cc444fc0b346f81a91d20afe73bd476cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791400"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667592"
 ---
 # <a name="calltarget-task"></a>CallTarget Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Proje dosyası içinde belirtilen hedefleri çağırır.  
   
 ## <a name="task-parameters"></a>Görev parametreleri  

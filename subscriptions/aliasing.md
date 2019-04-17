@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Diğer ad veya kolay adlar kullanılması durumunda oturum açma başarısız olabilir
 searchscope: VS Subscription
-ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: cef5c71a62088fdef410dccb22b93eb0d7ad025d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195157"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668541"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikleri için oturum açarken diğer adlar kullanırken başarısız olabilir
 
@@ -50,7 +50,6 @@ Lütfen bir dizin hesabıyla yeni aboneleri eklemek için bu adımları izleyin.
 
     > [!div class="mx-imgBorder"]
     > ![Abonelik menü](_img//vlsc/vlsc-subscriptions.png)
-
 
 3. Tıklayın **anlaşma numarası** Visual Studio aboneliği ile ilişkili.
 

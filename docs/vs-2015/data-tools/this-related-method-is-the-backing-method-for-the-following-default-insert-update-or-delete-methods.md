@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8229eaa612675f949d716477eda4627840dfca89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 01c044c86922e5161aaf3d7d342dd02d3ff01afc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667320"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Bu ilgili metot, aşağıdaki varsayılan ekleme, güncelleştirme ve silme metotları için yedek bir metottur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu ilgili metot, aşağıdaki varsayılan ekleme, güncelleştirme veya silme yöntemleri için destek yöntemidir. Silinirse, bu yöntemler de silinir. Devam etmek istiyor musunuz?  
   
  Seçili `DataContext` yöntemi şu anda kullanılan INSERT, Update veya Delete yöntemlerinden biri olarak O/R Tasarımcısı'ndaki varlık sınıflarının biri için. Seçilen yöntemi silme INSERT, Update, gerçekleştirmek için varsayılan çalışma zamanı davranışını geri dönmek için bu yöntemi kullanan varlık sınıfı neden veya güncelleştirme sırasında silin.  

@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781705"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662081"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin ile mobil geliştirme hakkında bilgi edinin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anlamanıza yardımcı olan genel bakış malzeme için yönlendirir. Henüz Visual Studio ve Xamarin yüklü değilse, başlangıç [Kurulum ve yükleme](../cross-platform/setup-and-install.md) işlemi ilk olarak, daha sonra dönmek burada yükleyicileri çalışırken bu kaynak ile çalışmak için.  
   
 > [!NOTE]

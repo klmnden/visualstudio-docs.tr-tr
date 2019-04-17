@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783431"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668996"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Verilere Windows Forms denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nesnelerden sürükleyerek veri kaynakları denetimlerine bağlayabilirsiniz **veri kaynakları** Windows forma veya varolan bir denetimi form üzerinde oturum penceresi. Öğeleri sürükleme önce bağlamak istediğiniz denetim türünü ayarlayabilirsiniz. Tablo kendisi veya bir bireysel sütunda seçmenize bağlı olarak farklı değerler görüntülenir.  Özel değerler de ayarlayabilirsiniz. Bir tablo için her sütun için ayrı bir denetim bağlıdır "Details" anlamına gelir.  
   
  ![Veri kaynağına bağlamak için DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata DataGridView veri kaynağına bağlama")  

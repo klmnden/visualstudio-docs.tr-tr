@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759799"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664326"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Nasıl yapılır: Visual Studio Uzantıları için Kural Tabanlı UI Bağlamı Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio VSPackages belirli zaman yüklenmesini sağlayan iyi bilinen <xref
 |ActiveProjectCapability:\<ifadesi >|Etkin proje özellikleri sağlanan ifade eşleştiğinde true bir terimdir. VB gibi bir ifade olabilir &#124; CSharp|
 |SolutionHasProjectCapability:\<ifadesi >|Yukarıdaki benzer; ancak terimi olduğunda true ifade ile eşleşen tüm yüklenen proje çözümü vardır.|
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Her bir çözüm (toplu) özellikli proje varsa ve GUID belirli proje türüyle eşleşen bir özellik terimi true olur.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Sürümler arası uzantısı ile uyumluluk
  Tabanlı UI bağlamı Visual Studio 2015'te yeni bir özelliktir ve önceki sürümleri için unity'nin değil kuralı. Bu, Visual Studio 2013'te otomatik olarak yüklenir ve önceki olması gerekir, ancak otomatik-Visual Studio 2015'te yüklenmesini önlemek için kural tabanlı UI bağlamı yararlanabilir Visual Studio'nun birden çok sürümünü hedefleyen uzantıları/paketleri ile ilgili bir sorun oluşturur.

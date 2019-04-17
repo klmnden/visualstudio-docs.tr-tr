@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805518"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664222"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür bağlantı dizeleri tanımlama, veri ekleme ve saklı yordamları çalıştırma temel görevleri gerçekleştirin. Bu konuyu takip ederek, Visual C# veya Visual Basic ve ADO.NET kullanarak basit bir "veriler üzerinden formlar" Windows Forms uygulaması dahilinden bir veritabanıyla etkileşime nasıl bulabilir.  Tüm .NET veri teknolojilerini — LINQ to SQL ve Entity Framework veri kümeleri dahil olmak üzere; sonuç olarak, bu makalede gösterilen bu çok benzer adımları gerçekleştirin.  
   
  Bu makalede, çok hızlı bir şekilde bir veritabanından veri almak için basit bir yol gösterir. Uygulamanızın veri Önemsiz olmayan yollarla değiştirmek ve veritabanını güncellemek gerekiyorsa, Entity Framework ve veri kullanıcı arabirimi denetimleri için temel alınan verilerde yapılan değişiklikler otomatik olarak eşitlenecek bağlama kullanarak düşünmelisiniz.  

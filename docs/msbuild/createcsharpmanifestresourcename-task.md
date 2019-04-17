@@ -16,19 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ddede6870a982520b87cf8ec497788b4731244
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef3baf383a01523cb173d6aeb1f7231680e892ce
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640551"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665343"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName görevi
 Oluşturur bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-stili bildirim adından bir verilen *.resx* dosya adı veya diğer kaynak.
 
 ## <a name="parameters"></a>Parametreler
  Parametreleri aşağıdaki tabloda açıklanmıştır [CreateCSharpManifestResourceName görevi](../msbuild/createcsharpmanifestresourcename-task.md).
-
 
 | Parametre | Açıklama |
 | - | - |

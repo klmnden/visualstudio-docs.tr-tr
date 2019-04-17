@@ -19,17 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802195"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659702"
 ---
 # <a name="vbc-task"></a>Vbc Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Yürütülebilir dosyalar (.exe), dinamik bağlantı kitaplığı (.dll) veya modülleri (.netmodule) oluşturan vbc.exe sarmalar. Vbc.exe hakkında daha fazla bilgi için bkz. [Visual Basic komut satırı derleyicisi](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
 ## <a name="parameters"></a>Parametreler  
@@ -53,7 +52,7 @@ Yürütülebilir dosyalar (.exe), dinamik bağlantı kitaplığı (.dll) veya mo
 |`Imports`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Belirtilen öğe koleksiyonlardan ad alanlarını alır. Bu parametre için karşılık gelen [/Imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) vbc.exe derleyicisinin anahtar.|  
 |`KeyContainer`|İsteğe bağlı `String` parametresi.<br /><br /> Şifreleme anahtar kapsayıcısı adını belirtir. Bu parametre corresonds için [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) vbc.exe derleyicisinin anahtar.|  
 |`KeyFile`|İsteğe bağlı `String` parametresi.<br /><br /> Şifreleme anahtarını içeren dosya adını belirtir. Daha fazla bilgi için [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|İsteğe bağlı [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> "9" veya "10", dil sürümünü belirtir.|  
+|`LangVersion`|İsteğe bağlı [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametre.<br /><br /> "9" veya "10", dil sürümünü belirtir.|  
 |`LinkResources`|İsteğe bağlı <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametresi.<br /><br /> Çıkış dosyasında .NET Framework kaynağına bağlantı oluşturur. kaynak dosyası çıkış dosyasına yerleştirilmez. Bu parametre için karşılık gelen [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) vbc.exe derleyicisinin anahtar.|  
 |`MainEntryPoint`|İsteğe bağlı `String` parametresi.<br /><br /> Sınıf veya içeren modül belirtir `Sub Main` yordamı. Bu parametre corresonds için [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) vbc.exe derleyicisinin anahtar.|  
 |`ModuleAssemblyName`|İsteğe bağlı `String` parametresi.<br /><br /> Bu modül bir parçası olan derlemeyi belirtir.|  

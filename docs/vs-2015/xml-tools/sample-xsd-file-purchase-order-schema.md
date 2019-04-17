@@ -1,5 +1,5 @@
 ---
-title: 'Örnek XSD dosyası: Satınalma siparişi şeması | Microsoft Docs'
+title: 'Örnek XSD Dosyası: Satınalma siparişi şeması | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6680c9ca768dcb551d98cc9c393f8e5c59500794
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d3a699ed1eecfbd41e40a84d185e4d1d7d45fa59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752590"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650752"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Örnek XSD dosyası: Satınalma Siparişi Şeması
+# <a name="sample-xsd-file-purchase-order-schema"></a>Örnek XSD Dosyası: Satınalma Siparişi Şeması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSD şema Tasarımcısı çeşitli örneklerini aşağıdaki XSD dosyası kullanılır. Satın alma siparişi şeması dosyasıdır.  
   
 ```xml  

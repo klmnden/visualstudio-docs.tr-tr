@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b47950ea00f8ea7a6ec55476157a54dcd0aa9c75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799403"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668398"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Kavramsal Model (WCF Veri Hizmetleri) ile çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir veritabanındaki verileri tanımlamak için kavramsal model kullandığınızda, bir veritabanı şeması ve bir nesne modeli arasında ileri ve geri çevirmek zorunda kalmak yerine, nesneleri aracılığıyla verileri sorgulayabilir.  
   
  WCF Veri Hizmetleri uygulamalarla kavramsal modeller kullanabilirsiniz. Aşağıdaki konular, kavramsal modelle veri sorgulama işlemini göstermektedir.  

@@ -15,17 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae2ed3e8a9c07d59f5b1c2fe2350956a54dfaa66
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662848"
 ---
 # <a name="list-source-command"></a>Kaynağı Listele Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Belirtilen kaynak kodu satırlarını görüntüler.  
   
 ## <a name="syntax"></a>Sözdizimi  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897692"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667384"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild proje öğeleri
 İçinde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çeşitli öğeleri ortaktır. Bu öğeleri dosyasında tanımlanan *Microsoft.Build.CommonTypes.xsd*.
@@ -81,7 +81,6 @@ ms.locfileid: "58897692"
 ### <a name="compile"></a>Derleme
  Derleyici için kaynak dosyaları temsil eder.
 
-
 | Öğe meta veri adı | Açıklama |
 |-----------------------| - |
 | DependentUpon | İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyasını belirtir. |
@@ -92,7 +91,6 @@ ms.locfileid: "58897692"
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Üretilen derleme içine gömülü olması için kaynaklar temsil eder.
-
 
 | Öğe meta veri adı | Açıklama |
 |-----------------------| - |
@@ -108,7 +106,6 @@ ms.locfileid: "58897692"
 ### <a name="content"></a>İçerik
  Projeye derlenmemiş ancak katıştırılmış veya olabilir, birlikte yayımlanan dosyaları gösterir.
 
-
 | Öğe meta veri adı | Açıklama |
 |-----------------------| - |
 | DependentUpon | İsteğe bağlı dize. Bu dosyayı doğru şekilde derlenmesi için bağımlı dosyasını belirtir. |
@@ -123,7 +120,6 @@ ms.locfileid: "58897692"
 
 ### <a name="none"></a>Yok.
  Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.
-
 
 | Öğe meta veri adı | Açıklama |
 |-----------------------| - |

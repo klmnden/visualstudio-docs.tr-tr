@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640642"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657278"
 ---
 # <a name="compare-properties-and-items"></a>Özellikleri ve öğeleri karşılaştırma
 MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.
@@ -86,7 +86,6 @@ Bir yapının değerlendirme aşamasında yapı göründükleri sırayla içeri 
 - Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi.
 
 - Öğeleri tanımlanır ve göründükleri sırayla değiştirdi.
-
 
 Bir derleme yürütme aşamasında özellikler ve hedefler içinde tanımlanan öğeleri birlikte tek bir aşamada göründükleri sırayla değerlendirilir.
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c099fac3abba543c177becc1fe375b43ce1dd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7613eed6107f5be4909d57dd0ca617e1113ee0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604437"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651598"
 ---
 # <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor dosyasına dışarı profil oluşturma verileri sınırlamak için veri dosyaları için filtre uygulayabilirsiniz. Bir rapor için zaman damgası değerlerini arasındaki verileri sınırlayabilir ve belirli işlem ve iş parçacıkları için verileri sınırlayabilirsiniz. Filtreler bir dosyaya kaydedin ve kaydedilmiş filtre içeri aktararak Bu filtre üzerinde farklı bir profil oluşturma veri dosyasını oluşturun.
@@ -40,7 +40,6 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
     |**Alan**|Filtre yan tümcesi veri alanlarının görüntülenen listeden kullanmak için rapor alanı seçin.|
     |**İşleci**|Alan ve değer arasında yan tümcesinde istediğiniz ilişkiyi belirtir bir işleç seçin.<br /><br /> = Eşittir<br /><br /> <> Eşit değildir<br /><br /> < Küçüktür<br /><br /> > Büyüktür<br /><br /> < = küçüktür veya eşittir<br /><br /> > = büyüktür veya eşittir|
     |**Değer**|Aranacak bir değer girin veya seçin. Bazı alanları, alan için kullanılabilen değerleri listeler.|
-
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Bir profil oluşturucu rapor filtresi işaretleri rapor görünümünde oluşturmak için
 

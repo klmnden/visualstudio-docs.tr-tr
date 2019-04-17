@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504256"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660703"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio Genişleticileri İzleyici başına tanıma desteği
 Visual Studio 2019 önceki sürümler, Sistem İzleyici başına DPI kullanan (PMA) yerine uyumlu olarak DPI tanıma bağlamları vardı. Düzeyi düşürülmüş bir görselde sonuçlanan sistem tanıma çalışan farklı ölçek Etkenler veya uzaktan değerlerine sahip farklı bir ekranı yapılandırmaları ile makinelere örneğin (farklı işlemek Visual Studio sahip olduğunda (örneğin bulanık yazı tipleri veya simgeler) deneyimi Windows) ölçeklendirme.
@@ -40,10 +40,13 @@ Başvurmak [Windows üzerinde yüksek DPI Masaüstü uygulama geliştirme](https
 ## <a name="enabling-pma"></a>PMA etkinleştirme
 Visual Studio'da PMA etkinleştirmek için aşağıdaki gereksinimlerin karşılanması gerekir:
 1)  Windows 10 Nisan 2018 Güncelleştirmesi (v1803 RS4) veya üzeri
-2)  .NET framework 4.8 RTM veya üzeri (şu anda Önizleme tek başına veya son paketle birlikte Windows Insider derlemeleri)
+2)  .NET framework 4.8 RTM veya üzeri
 3)  Visual Studio 2019 ile ["Farklı piksel densities ekranlar için Optimize işleme"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) seçeneği etkin
 
 Bu gereksinimlerin karşılanıp karşılanmadığından sonra Visual Studio süreci boyunca PMA modu otomatik olarak etkinleştirir.
+
+> [!NOTE]
+> Visual Studio 2019 güncelleştirme #1 olduğunda, Windows Forms içerik (örneğin, özellik tarayıcısı) vs'de PMA destekleyecektir.
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>Uzantılarınızı PMA sorunlar için test etme
 
@@ -106,12 +109,18 @@ Zaman içinde karma mod DPI senaryolarında (farklı DPI tanıma modda işleme �
 #### <a name="out-of-process-ui"></a>İşlem dışı kullanıcı Arabirimi
 İşlem dışı bazı kullanıcı Arabirimi oluşturulur ve dış oluşturma işlemi, Visual Studio daha farklı bir DPI tanıma modda ise, bunu herhangi bir önceki işleme sorunlarını ortaya çıkarabilir.
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows Forms denetimleri, görüntüleri veya windows görünmüyor
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows Forms denetimleri, görüntüleri veya yanlış işlenen düzenleri
+Tüm Windows Formları içeriği PMA modunu destekler. Sonuç olarak, yanlış düzenleri sorun işleme veya ölçeklendirme görebilirsiniz. Olası bir çözüm "Sistem tanıma" DpiAwarenessContext Windows Forms içeriğinde açıkça işlemek için bu durumda, (başvurmak [bir denetimi ile belirli bir DpiAwarenessContext zorlama](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows Forms denetimleri veya windows görünmüyor
 Bu sorunun temel nedeni bir denetim veya farklı bir DpiAwarenessContext ile bir pencere için bir DpiAwarenessContext penceresiyle yeniden üst öğe yap göndermeye çalışan geliştiricilere biridir.
 
-Aşağıdaki resimler, geçerli Windows işletim sistemi kısıtlamaları windows üst öğe oluşturma göster:
+Aşağıdaki resim Göster geçerli **varsayılan** windows üst öğe oluşturma, Windows işletim sistemi kısıtlamaları:
 
 ![Ekran görüntüsü doğru ana öğe davranışı](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> İş parçacığı barındırma davranışı ayarlayarak bu davranışı değiştirebilirsiniz (bkz [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Sonuç olarak, desteklenmeyen modları arasında üst-alt ilişkisi başarısız olur ve denetim veya penceresi beklenen şekilde çizilebilir değil.
 

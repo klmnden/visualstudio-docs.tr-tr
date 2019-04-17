@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600494"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657598"
 ---
 # <a name="application-deployment-prerequisites"></a>Uygulama dağıtımının önkoşulları
 
@@ -70,7 +70,6 @@ Uygulamanızı yüklemek ve başarılı bir şekilde çalıştırılması için 
  *Setup.exe* tarafından oluşturulan [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ve MSBuild görevleri, aşağıdaki komut satırı bağımsız değişkenleri kümesini destekler. Diğer bağımsız değişkenleri uygulama yükleyicisine iletilir.
 
  Önyükleyici seçenekleri değiştirirseniz, işaretsiz önyükleyici değiştirmek ve önyükleyici dosya daha sonra oturum açın.
-
 
 | komut satırı bağımsız değişkeni | Açıklama |
 | - | - |

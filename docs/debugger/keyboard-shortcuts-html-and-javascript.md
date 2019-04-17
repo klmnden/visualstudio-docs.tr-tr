@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789814"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659685"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Klavye kısayolları (HTML ve JavaScript)
 
@@ -28,7 +28,6 @@ ms.locfileid: "58789814"
 ::: moniker range="vs-2017"
  HTML ve JavaScript kullanarak UWP uygulamalarında hata ayıklamaya yönelik Visual Studio'daki klavye kısayollarını.
 ::: moniker-end
-
 
 ## <a name="general-shortcuts"></a>Genel kısayolları
 

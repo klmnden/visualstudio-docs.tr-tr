@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526096"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665681"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Hata ayıklama sırasında çağrı yığınının görsel haritasını oluşturma (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Bir kılavuz için şu videoyu izleyin: [Video: (Kanal 9) kod Haritası hata ay�
 Komutlar ve kod haritaları ile kullanabileceğiniz Eylemler ayrıntıları için bkz: [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Oluşturabileceğiniz kod eşlemeleri yalnızca [Visual Studio Enterprise sürümünde](https://visualstudio.microsoft.com/downloads/).
+>Oluşturabileceğiniz kod eşlemeleri yalnızca [Visual Studio Enterprise sürümünde](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Bir kod Haritası hızlı bir bakış şu şekildedir:
 

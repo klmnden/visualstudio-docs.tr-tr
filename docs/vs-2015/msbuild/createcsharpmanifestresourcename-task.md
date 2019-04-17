@@ -17,17 +17,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05028dabe3ca5c6cff8838a1f4ac69b0cf70bce0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9308f94e865bfe54384719d8f57f3ad1819c79fb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773063"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664209"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Oluşturur bir [!INCLUDE[csprcs](../includes/csprcs-md.md)]-belirtilen .resx dosya adı veya diğer kaynak bildirim adı stili.  
   
 ## <a name="parameters"></a>Parametreler  

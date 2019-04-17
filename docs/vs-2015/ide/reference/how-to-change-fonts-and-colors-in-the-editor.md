@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799114"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661873"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Nasıl yapılır: Yazı tipleri ve renkler düzenleyicide Değiştir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Varsayılan yazı tipini değiştirmek, yazı tipi boyutunu ayarlayın ve çeşitli metin ön ve arka plan renklerini değiştirme **görüntü öğeleri** Kod Düzenleyicisi'nde. Ne zaman yazı tipi ayarlarını değiştirmeyi, aşağıdaki bilgileri göz önünde bulundurun:  
   
 -   Ayarlarını **yazı tipi** ve **boyutu** metin öğeleriyle tüm geneldir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] düzenleyiciler.  
@@ -58,4 +57,4 @@ Varsayılan yazı tipini değiştirmek, yazı tipi boyutunu ayarlayın ve çeşi
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   
  [Metin Düzenleyici Seçenekleri iletişim kutusu](../../ide/reference/text-editor-options-dialog-box.md)   
  [Kod yazma](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Nasıl yapılır: Yazı Tiplerini ve Renkleri Değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

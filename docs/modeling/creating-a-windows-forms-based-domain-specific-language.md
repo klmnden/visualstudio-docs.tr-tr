@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951520"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658715"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model durumunu görüntülemek için Windows Forms kullanabilirsiniz. Bu konuda, bir Windows formu Visual Studio Görselleştirme ve modelleme SDK'sını kullanarak bir DSL için bağlama aracılığıyla açıklanmaktadır.
@@ -28,12 +28,10 @@ Bir DSL diyagramı kullanmak yerine bir etki alanına özgü dil (DSL) model dur
 
     Bu kılavuzda, aşağıdaki adlarını kabul edilir:
 
-
    | | |
    |-|-|
    | Çözüm ve DSL adı | FarmApp |
    | Ad Alanı | Company.FarmApp |
-
 
 2. Şablon sağlar ilk örnek ile denemeler yapın:
 

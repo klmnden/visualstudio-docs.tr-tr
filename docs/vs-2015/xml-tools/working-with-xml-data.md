@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787699"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662978"
 ---
 # <a name="working-with-xml-data"></a>XML Verileriyle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML ve kendi ilgili teknolojileri, verilerin işlenme şekilde bir büyük bir rol oynar [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio. Visual Studio Araçları ve şemaları XML, XSLT ve XML ile çalışmak daha kolay hale getiren özellikleri içerir.  
   
 ## <a name="xml-editor"></a>XML Düzenleyicisi  

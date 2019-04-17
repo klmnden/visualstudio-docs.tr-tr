@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri ile bulunan Power BI Pro aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 176ce1d13faad7143da591f4f04f9feee1b5b2a0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 966db1966b6056b81f143b41db53f132c5b2755b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843876"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663264"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro Visual Studio abonelikleri
 
@@ -37,16 +37,13 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro teklifi, hesap oluştur](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
-
 5. Ardından, kullanıcı kimliği ve parola oluşturun.  Zaten bir hesabınız varsa ve yeni bir tane oluşturuyorsanız, mevcut hesap üzerinde kullanılan daha farklı şirket adı sağlamanız gerekir.  Tıklayın **Hesabımı Oluştur**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro avantajı UserID oluşturma](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
 
-
 6. Bir hesabı gerçek bir insanın oluşturduğundan emin olmak için ' de bir onay kodu girmenizi isteriz.  Lütfen bir telefon numarası girin ve kodunuzu aracılığıyla telefon görüşmesi veya SMS mesajı almak isteyip istemediğinizi seçin.  Tıklayın **bana** veya **beni**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro avantajı değil Robot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
-
 
 7. Kodu alma ve tıklayın girin **sonraki**.
    > [!div class="mx-imgBorder"]
@@ -55,7 +52,6 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
 8. İletişim bilgilerinizi girin ve ardından tıklayın **sonraki**.
    > [!div class="mx-imgBorder"]
    > ![Power BI Pro avantajı iletişim bilgileri](_img/vs-pbi/vs-pbi-contact-cropped.png)
-
 
 9. Sonraki sayfada, Power BI Pro geliştirici (MSDN) aboneliğiniz bir 0,00 ABD Doları fiyatına sahiptir onaylar.  **İleri**'ye tıklayın.
 
@@ -66,7 +62,6 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
 11. Sonraki sayfada, Power BI Pro'yu kullanmaya başlamak için her şey onaylar.  Sayfa, oturum açma sayfasına bir bağlantı sağlar.  Oturum açma sayfası ve bunun yanı sıra kullanıcı kimliğinizi bağlantısını kaydı öneririz  (Ayrıca bir hesap oluşturduğunuzda sağladığınız adresten Hoş Geldiniz e-posta alırsınız.)  Sorularınız varsa kullanabileceğiniz bir otomatik Office 365 Yardımcısı penceresi de görebilirsiniz.  Tıklayın **başlayalım** devam etmek için.
     > [!div class="mx-imgBorder"]
     > ![Power BI Pro avantajı tüm ayarlayın](_img/vs-pbi/vs-pbi-all-set-cropped.png)
-
 
 12. Power BI Pro hesabınızı ayarlama, Office 365 Yönetim Merkezi, burada kullanıcılarını ve etki alanlarını yönetme, Office yazılımı yükleyebilir ve Office 365 hakkında bilgi edinin göreceksiniz.  Bu kadar!  Başlamaya hazırsınız.
 
@@ -86,9 +81,7 @@ Power BI Pro kullanmak için mevcut bir hesabı kullanarak oturum açın veya bi
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
-
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
-
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>S:  Neden avantajı boş ise, ben bir kredi kartı numarası sağlamak zorunda mıyım?
@@ -112,7 +105,6 @@ Y:  Evet.  İleti üzerinde bir yöneticisiniz değil etkin Office 365 kiracıla
     > ![Power BI Pro avantajı özel Kiracı kimliği oluşturma](_img/vs-pbi/vs-pbi-work-userid.png)
 
 4.  İşlemdeki adımların geri kalan adım 6 ile başlayarak, makalenin gövdesinde listelenenlerle aynıdır.
-
 
 ### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>S:  Bir kamu kiracısı üzerinde istiyorum.  Avantajı kullanabilir miyim?
 Y:  Hayır.  Power BI Pro avantajı kamu kiracıları için eklenemez.

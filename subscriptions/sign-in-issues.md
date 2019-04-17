@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri için oturum açarken çıkabilecek sorunlar hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840954"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656225"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio abonelikleri için oturum açma sorunları
 Visual Studio aboneliğinizi kullanmak için önce oturum açmanız gerekir.  Aboneliğinize bağlı olarak, bir Microsoft hesabı (MSA) veya bir Azure Active Directory (AAD) kimlik ile ayarlamış olduğunuz.  Bu makalede, aboneliğiniz için oturum açma sırasında karşılaşabileceğiniz sorunları bazıları açıklanmaktadır.
@@ -55,7 +55,6 @@ Aboneliğinizle ilişkili bir veya daha fazla kimlik (MSA veya AAD) silmeniz hal
 Abonelik erişiminizi yönelik etkileri önlemek için aşağıdaki tekniklerden birini kullanın.
 - Bir tek bir kimlik yönetimi sistemi--MSA veya AAD--ancak ikisini birden dağıtın.
 - AAD ile MSA kimliklerini Kiracı ile ilişkilendirirsiniz.
-
 
 ## <a name="next-steps"></a>Sonraki adımlar
 - Bilgi edinmek için nasıl [bağlantı MSA ve AAD hesaplarının](/azure/active-directory/b2b/add-users-administrator) AAD içinde.

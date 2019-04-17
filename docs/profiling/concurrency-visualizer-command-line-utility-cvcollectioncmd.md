@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074c877e8fd8f1e29aee440bf54e73ceab68767a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612328"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649140"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Eşzamanlılık görselleştiricisi komut satırı yardımcı programı (CVCollectionCmd)
 Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kullanabilirsiniz (*CVCollectionCmd.exe*) bunları Visual Studio eşzamanlılık görselleştiricisi içinde görüntüleyebilmek komut satırından izlemeleri toplamak için. Araçlar, Visual Studio yüklü olmayan bilgisayarlarda kullanılabilir.
@@ -40,7 +40,7 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
 
 |Seçenek|Açıklama|Parametreler|Döndürülen değerler|
 |------------|-----------------|----------------|-------------------|
-|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Hiçbiri|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](/dotnet/framework/wcf/samples/etw-tracing) oturumları zaten etkin.|
+|Sorgu|Koleksiyon başlatıldı olup olmadığını döndürür.|Yok.|Koleksiyon başlatmaya hazır olup olmadığını 0.<br /><br /> 1 koleksiyonu zaten sürüyor.<br /><br /> Toplama ilerleme durumunu, ancak bir veya daha fazla gerekli içinde değilse 2 [ETW](/dotnet/framework/wcf/samples/etw-tracing) oturumları zaten etkin.|
 |Başlat|Belirtilen işlem eşzamanlılık görselleştiricisi altında çalışır.|Yürütülebilir dosyanın yolu.|çalıştırma başarılı olursa 0.<br /><br /> Hedef uygulama başlatılamadı çünkü çalıştırma başarısız olmuşsa 1.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan çalıştırma başarısız olmuşsa 13.|
 |İliştir|Sistem genelinde izleme toplama başlar; belirtilmişse, aksi takdirde, bir işleme iliştirir.|Yok.|Ek başarılı olursa 0.<br /><br /> 1 ek belirtilen işlemi geçersiz veya belirsiz olduğundan başarısız oldu.<br /><br /> CVCollectionCmd belirtilen çıkış dizinine yazmak için yeterli izinlere sahip olduğundan başarısız oldu, 13.|
 |Ayır|Koleksiyonu durdurur.|Yok.|ayrılmayı başarılı olursa 0.<br /><br /> 1 ayrılmayı koleksiyonu şu anda devam eden olmadığından başarısız oldu.<br /><br /> 2 toplama durdurulamadı ayrılmayı başarısız oldu.|
@@ -60,7 +60,6 @@ Eşzamanlılık görselleştiricisi komut satırı yardımcı programını kulla
 
 ### <a name="configuration-file-tags"></a>Yapılandırma dosya etiketleri
  XML-tabanlı yapılandırma dosyasıdır. Geçerli etiketleri ve değerleri şunlardır:
-
 
 | Etiket | Açıklama | Değerler |
 |-------------------------| - | - |

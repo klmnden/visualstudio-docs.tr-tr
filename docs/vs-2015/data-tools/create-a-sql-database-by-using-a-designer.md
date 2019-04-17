@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765551"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661587"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Bir tasarımcı kullanarak bir SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tablo ekleme ve SQL Server Express LocalDB içinde yerel veritabanı dosyası oluşturmak için Visual Studio kullanarak sütun tanımlama gibi temel görevleri gerçekleştirebilirsiniz. Bu izlenecek yolu tamamladığınızda, gereken diğer izlenecek yollar için bir yerel veritabanınızı bir başlangıç noktası olacak şekilde kullanarak daha fazla gelişmiş özelliği keşfedebilirsiniz.  
   
  SQL Server Management Studio (ayrı bir indirme) ya da Transact-SQL deyimlerinde kullanarak bir veritabanı oluşturabilirsiniz **SQL Server Nesne Gezgini** Visual Studio'da araç penceresi.  

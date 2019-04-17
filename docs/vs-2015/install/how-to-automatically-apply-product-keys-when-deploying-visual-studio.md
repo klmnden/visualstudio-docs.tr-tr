@@ -10,22 +10,22 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834854"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656732"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Nasıl yapılır: Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Visual Studio ile ilgili en son belgeler için bkz. [Visual Studio'yu dağıtırken ürün anahtarlarını otomatik olarak uygulama](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Ürün anahtarınızı program aracılığıyla Visual Studio 2015'in dağıtımını otomatikleştirmek için kullanılan bir komut dosyası bir parçası olarak uygulayabilirsiniz. Ürün anahtarları bir cihazda program aracılığıyla Visual Studio'nun veya bir tamamlandıktan sonra yükleme sırasında ayarlanabilir.
 
 ## <a name="apply-the-license-during-installation"></a>Lisans Yükleme sırasında Uygula
- Visual Studio Kurulum işlemi sırasında bir ürün anahtarı uygulamak için / Set-Edition parametresini kullanın. Bu kurulum parametresi/silent kullanılabilir bir son kullanıcı için zaten lisanslı bir durumda Visual Studio'yu yüklemek için parametre. / Set-Edition parametresini kullanmak için bir komut istemi açın. (Örn. vs_enterprise.exe veya vs_professional.exe) Kurulum programını çalıştırın ve çizgi içermeyen içeren bir ürün anahtarı ile (25 karakter) / Set-Edition parametresini ayarlayın:
+ Visual Studio Kurulum işlemi sırasında bir ürün anahtarı uygulamak için / Set-Edition parametresini kullanın. Bu kurulum parametresi/silent kullanılabilir bir son kullanıcı için zaten lisanslı bir durumda Visual Studio'yu yüklemek için parametre. / Set-Edition parametresini kullanmak için bir komut istemi açın. (Örneğin, vs_enterprise.exe veya vs_professional.exe) Kurulum programını çalıştırın ve çizgi içermeyen içeren bir ürün anahtarı ile (25 karakter) / Set-Edition parametresini ayarlayın:
 
  Bu ürün anahtarıyla AAAAABBBBBCCCCCDDDDDEEEEEEE Visual Studio 2015 Enterprise'ı yüklemek için bir örnek komutu.
 
@@ -54,9 +54,10 @@ Visual Studio 2017 için en son belgeler için bkz. [Visual Studio'yu dağıtır
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Bir ürün anahtarı alma hakkında daha fazla bilgi için lütfen bkz [nasıl yapılır: Visual Studio ürün anahtarını bulmak](../install/how-to-locate-the-visual-studio-product-key.md).
+Bir ürün anahtarı alma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Visual Studio ürün anahtarını bulmak](../install/how-to-locate-the-visual-studio-product-key.md).
 
- StorePID.exe ürün anahtarı başarıyla uygulandığında, 0 döndürür. Hatalarla karşılaştığında, 1-6 arasında bir sayı döndürür.
+StorePID.exe ürün anahtarı başarıyla uygulandığında, 0 döndürür. Hatalarla karşılaştığında, 1-6 arasında bir sayı döndürür.
 
-## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Visual Studio'yu yükleyin](../install/install-visual-studio-2015.md)

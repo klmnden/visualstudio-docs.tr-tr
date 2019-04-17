@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 952419c5dda9a64b0f3fde93fd314ed9b54fd1a7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ba7820bfa6df7273f170b2222d6a55e685e445e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54835051"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668138"
 ---
 # <a name="add-new-item-command"></a>Yeni Öğe Ekle Komutu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Geçerli çözüme .htm, .css, .txt veya frameset gibi yeni bir çözüm öğesi ekler ve onu açar.  
   
 ## <a name="syntax"></a>Sözdizimi  

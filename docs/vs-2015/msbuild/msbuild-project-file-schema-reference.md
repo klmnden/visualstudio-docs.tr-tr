@@ -16,17 +16,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67a57953dc0583b105741be358b19a74897c308c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772592"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660534"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild Proje Dosyası Şema Başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tüm bir tablo sağlar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML Şeması öğeleri kullanılabilir öznitelikler ve alt öğeleri.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] derleme ve oluşturma nasıl yapı altyapısının ne istemek için proje dosyalarını kullanır. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Proje dosyalardır izliyor XML dosyaları [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML şeması. Bu bölümde belgeleri için XML şema tanımı (.xsd) dosyası [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

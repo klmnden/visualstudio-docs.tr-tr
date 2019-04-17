@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri Yönetim Portalı açın ve açık lisans geçiş hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843201"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658207"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Açık ve yeni Visual Studio abonelik yönetimi portalına geçiş Open Lisansı
 
@@ -38,7 +38,6 @@ Abonelikleri yönetmek için [Visual Studio abonelikleri Yönetim Portalı](http
 
 - Müşteriler adına Aboneliklerini yönetmek iş ortakları için bunların yönetim portalında kaydetmeniz gerekir. Erişim erişmek için çeşitli yollar aşağıda listelenen (add-açık işlem benzer).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Var olan iş ortakları yeni bir lisans ekleme
 
 Bu zaten erişimi olan iş ortakları için geçerlidir [Visual Studio abonelikleri Yönetim Portalı](https://manage.visualstudio.com), ancak açık lisans ile yönetmeniz gerekecek Visual Studio abonelikleri siparişi.
@@ -48,7 +47,6 @@ Bu zaten erişimi olan iş ortakları için geçerlidir [Visual Studio abonelikl
 - Sözleşme açılır ve En Alta kadar kaydır seçer seçenek olduğu **+ yeni açık lisans**.
 
 - Açılan bölmede iş ortağı Yetkilendirme numarası, Ehliyet numarası, onay kutusunu anlaşmasında select olan müşteri e-posta adresi girin ve ardından **Gönder**.
-
 
 > [!NOTE]
 > Müşteri, bir iş ortağı için Açık Lisans eklendiğini bildiren bir bildirim e-posta alırsınız. İş ortağı Web erişimini kaldırma seçebilirsiniz.
@@ -67,7 +65,6 @@ Bu yeni açık lisans siparişler, ancak kimlerin kaydettirebilir yerleştirme y
 
 - İş ortağı ardından açık lisans Aboneliklerini yönetmek mümkün olacaktır.
 
-
 > [!NOTE]
 > Müşteri, bir iş ortağı için Açık Lisans eklendiğini bildiren bir bildirim e-posta alırsınız. İş ortağı Web erişimini kaldırma seçebilirsiniz.
 
@@ -80,7 +77,6 @@ Bu senaryo için kimin zaten yerleştirdiğinizden Open License yeni siparişler
 - Bunlar, tanınan bir kullanıcı olmadıklarını bir hata alırsınız.
 
 - İş ortağı seçmeniz gerekecek **OLP iş ortakları** kayıt seçeneği ve yetkilendirme numarası, Ehliyet numarası, siparişteki kullanılan müşteri e-posta adresi girin, onay kutusunu seçin ve tıklayın **Gönder**.
-
 
 > [!NOTE]
 > Müşteri, bir iş ortağı için Açık Lisans eklendiğini bildiren bir bildirim e-posta alırsınız. İş ortağı Web erişimini kaldırma seçebilirsiniz.

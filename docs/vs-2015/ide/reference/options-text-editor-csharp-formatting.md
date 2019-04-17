@@ -1,5 +1,5 @@
 ---
-title: Seçenekler, metin düzenleyici, C++, biçimlendirme | Microsoft Docs
+title: Seçenekler, metin düzenleyici, C#, biçimlendirme | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -26,17 +26,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 407e438193e5ee328a8cbc6743829e40f2c366fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800780"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665668"
 ---
 # <a name="options-text-editor-c-formatting"></a>Seçenekler, Metin Düzenleyici, C++, Biçimlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Kullanım **biçimlendirme** özellik sayfası iletişim kutusu için Kod Düzenleyicisi'nde kod biçimlendirme seçeneklerini ayarlayın. Bu iletişim kutusuna erişmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünü genişletin **metin düzenleyici**, genişletin **C#** ve ardından  **Biçimlendirme**.  
   
 > [!NOTE]

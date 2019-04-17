@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873249"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659832"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,6 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
 ##  <a name="Warnings"></a> C++ kod çözümleme uyarıları
  Aşağıdaki uyarılar C++ kodu için Kod Analizi başlatır:
-
 
 |                                      Kural                                      |                                                  Açıklama                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 0ab7293a7b7d956778d1dbab568d609e6bf3d644
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 43b7918dfba6ff1d8076d3173900ecdc1b1223a3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857263"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655783"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Tur Mac için Visual Studio 2017
 
@@ -35,7 +35,7 @@ Mac için Visual Studio geliştirme aşağıdaki türlerini destekler:
 
 Bu makalede, bazı bu uygulamaları oluşturmak için güçlü bir araç hale getiren özellikler sağlayan Mac için Visual Studio çeşitli bölümlerini keşfediyor.
 
-## <a name="ide-tour"></a>IDE turu
+## <a name="ide-tour"></a>IDE Turu
 
 Mac için Visual Studio, uygulama dosyalarını ve ayarlarını yönetme, uygulama kodu oluşturma ve hata ayıklama için çeşitli bölümler halinde düzenlenmiştir.
 
@@ -121,7 +121,6 @@ Visual Studio'da sürüm denetimini kullanma ile ilgili daha fazla bilgi için b
 ## <a name="related-video"></a>İlgili Video
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

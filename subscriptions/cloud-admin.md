@@ -7,12 +7,12 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 description: Yöneticiler bulut abonelikleri için ayarlama
 searchscope: VS Subscription
-ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841458"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664284"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Visual Studio bulut abonelikleri yöneticileri ayarlama
 
@@ -45,7 +45,6 @@ Yöneticiler eklemek için:
 Belirlediğiniz abone sayfasının ortasında görünür ve rollerine "Kullanıcı Erişim Yöneticisi" gösterilir.
 
 Yeni yönetici artık oturum açarak [Yönetim Portalı](https://manage.visualstudio.com)köşe sayfanın sol üst kısımdaki listesinden bulut abonelikleri satın alınması için kullanılan aynı Azure aboneliği seçin ve bunları yönetmeye başlayabilirsiniz Abonelikler.
-
 
 > [!NOTE]
 > Yönetici olarak'kurmak yaramadı bulut aboneliklerinizi düzenlemek için erişimi olan kullanıcılar görürseniz, temel alınan Azure aboneliğinde Aboneliklerini yönetmek izin rolleri sahip olabilir. Bu roller içerir: sahibi, katkıda bulunan, Hizmet Yöneticisi veya ortak yönetici Daha fazla bilgi için ziyaret [faturalama yöneticileri ekleyin](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).

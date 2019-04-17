@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Edinmek ve ürün anahtarlarınızı Visual Studio aboneliklerini yönetme hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953907"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667787"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ürün anahtarlarını kullanma
 
@@ -53,7 +53,6 @@ Bazı anahtarları gibi birçok kez olarak etkinleştirme gerekli olmadığı i�
 
 Anahtar türleri çeşitli ürün bağlı olarak kullanılabilir.
 
-
 ### <a name="product-key-types"></a>Ürün anahtarı türleri
 
 |    Anahtar türü           |    Açıklama                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Bir ürün anahtarı indirme sayfasından alabilir veya yapmanız gereken anahta
 
 ### <a name="claiming-product-keys"></a>Ürün anahtarlarını talep etme
 Yalnızca abonelikleri etkin olan aboneler ürünleri indirebilir ve ürün anahtarlarını talep.  Talep edilen anahtarları dışa aktarabilirsiniz [ürün anahtarlarını](https://my.visualstudio.com/productkeys) , aboneliğinizin etkin durumdayken sayfa.
-
 
 Bir ürün anahtarı talep etmek için:
 1. Visual Studio aboneliğinizde oturum açın.  Ürünleri karşıdan veya ürün anahtarlarını talep oturum açmanız gerekir.

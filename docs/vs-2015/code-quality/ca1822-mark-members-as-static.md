@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355350"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659780"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Üyeleri static olarak işaretleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio ile ilgili en son belgeler için bkz. [CA1822: Üyeleri statik olarak işaretlemek](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [CA1822: Üyeleri statik olarak işaretlemek](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |Kategori|Microsoft.Performance|  
-|Yeni Değişiklik|Bölünemez - üyesi derlemenin dışında görünür değilse bağımsız olarak, değişiklik. Örnek üyesine ile yalnızca üye değiştirmeniz halinde olmayan en son - `this` anahtar sözcüğü.<br /><br /> -Üye statik bir üyeye bir örnek üyesi değiştirirseniz ve derlemenin dışında görünür kesiliyor.|  
+|Yeni Değişiklik|Bölünemez - üyesi derlemenin dışında görünür değilse bağımsız olarak, değişiklik.<br /><br /> Örnek üyesine ile üye yalnızca değiştirirseniz bölünemez - `this` anahtar sözcüğü.<br /><br /> -Üye statik bir üyeye bir örnek üyesi değiştirirseniz ve derlemenin dışında görünür kesiliyor.|  
   
 ## <a name="cause"></a>Sebep  
  Örnek veri erişimi olmayan bir üye statik olarak işaretlenmemiş (paylaşılan [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  

@@ -21,30 +21,29 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649075"
 ---
 # <a name="text-editor-options-dialog-box"></a>Metin Düzenleyici Seçenekleri İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Düzenleyici Seçenekleri **seçenekleri** iletişim kutusu Düzenleyicisi davranışını ve görünümünü özelleştirmek için yol sağlayın.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: Yazı tipleri ve renkler düzenleyicide Değiştir](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Nasıl yapılır: Düzenleyicideki Yazı Tiplerini ve Renkleri Değiştirme](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Düzenleyici yazı tiplerini ve renkleri değiştirme açıklanmaktadır.  
   
- [Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Nasıl yapılır: Düzenleyicide Sözcük Kaydırmayı Yönetme](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Sözcük kaydırma seçenekleri açıklar.  
   
- [Nasıl yapılır: Düzenleyicide satır numaralarını görüntüleme](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Nasıl yapılır: Düzenleyicide Satır Numaralarını Görüntüleme](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Satır numaralarını Aç açıklanmaktadır.  
   
- [Nasıl yapılır: URL'leri Düzenleyicisi'nde bağlantılar olarak görüntüleme](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Nasıl yapılır: Düzenleyicide URL'leri Bağlantılar Olarak Görüntüleme](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  URL'leri bağlantılar olarak görünürler şekilde biçimlendirmek açıklanmaktadır.  
   
  [Dile Özgü Düzenleyici Seçeneklerini Ayarlama](../../ide/reference/setting-language-specific-editor-options.md)  

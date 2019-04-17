@@ -1,5 +1,5 @@
 ---
-title: Azure işlevleri'ne giriş
+title: Azure İşlevleri’ne Giriş
 description: Mac için Visual Studio'daki Azure işlevleri'ni kullanarak
 author: conceptdev
 ms.author: crdun
@@ -7,14 +7,14 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573017"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657331"
 ---
-# <a name="introduction-to-azure-functions"></a>Azure işlevleri'ne giriş
+# <a name="introduction-to-azure-functions"></a>Azure İşlevleri’ne Giriş
 
 Azure işlevleri, bir şekilde oluşturun ve – – işlevleri – – kod parçacıkları olay temelli açıkça sağlamak veya altyapıyı yönetmek zorunda kalmadan bulutta çalıştırın. Azure işlevleri hakkında daha fazla bilgi için bkz. [Azure işlevleri belgelerinde](/azure/azure-functions/).
 
@@ -149,9 +149,7 @@ Ayarlanacak ihtiyacınız bir önemli ayar `FUNCTIONS_EXTENSION_VERSION`. Mac i�
     - HTTP POST CRUD
     - Parametrelerle HTTP tetikleyicisi
 
-
 - **Zamanlayıcı** – önceden tanımlanmış bir zamanlamaya göre temizleme veya diğer toplu işlem görevlerini yürütün. Bu şablon iki alanlarını alır: bir ad ve bir zamanlama altı alanı CRON ifadesidir. Daha fazla bilgi için [Azure işlevleri zamanında makalesi](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Kuyruk tetikleyicisi** – bunlar Azure Storage kuyruğuna geldiklerinde iletilere yanıt vereceğini bir işlev budur. İşlev adının yanı sıra bu şablon götüren bir **yolu** (ileti okuması Kuyruğun adı) ve depolama hesabı **bağlantı** (depolama alanınızı içeren uygulama ayarının adı hesabı bağlantı dizesi). Daha fazla bilgi için [Azure işlevleri kuyruk depolama üzerinde makale](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

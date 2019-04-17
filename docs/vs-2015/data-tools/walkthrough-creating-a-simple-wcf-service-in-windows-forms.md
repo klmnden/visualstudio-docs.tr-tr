@@ -14,17 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775782"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661050"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>İzlenecek yol: Windows Forms'ta basit bir WCF hizmeti oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] hizmet, test etmesine ve sonra bir Windows Forms uygulamasından erişebilirsiniz.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

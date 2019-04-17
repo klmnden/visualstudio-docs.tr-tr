@@ -14,17 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efae349037d6a826c4d267e12d901306eed7629b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f7bf12e9f6c90ce544205370a8ed26440388b0a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758703"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670062"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu görev listesini dosyaları ve ekler kabul `<TargetPath>` zaten belirtilmezse, öznitelikleri.  
   
 ## <a name="task-parameters"></a>Görev parametreleri  

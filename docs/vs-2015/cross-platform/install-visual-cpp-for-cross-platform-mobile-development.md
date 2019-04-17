@@ -11,18 +11,17 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 504f7f002c41832294e61fa968f7cfd2d32b54b0
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659169"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++’ı yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Visual C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com/fwlink/p/?LinkId=536383) Visual Studio 2015'in yüklenebilir bileşendir. Platformlar arası Visual Studio şablonları içerir ve platformlar arası Araçlar ve SDK'lar bulun, indirmek ve bunları kendiniz yapılandırmak zorunda kalmadan hızla kullanmaya başlamak için yükler. Kolayca oluşturma, düzenleme, hata ayıklama ve test platformlar arası projeleri için Visual Studio'da bu araçları kullanabilirsiniz. Bu konuda Araçlar ve üçüncü taraf yazılım Visual Studio kullanarak platformlar arası uygulamalar geliştirmek için gereken nasıl yükleneceğini açıklar. Bileşen genel bakış için bkz. [Visual C++ platformlar arası mobil](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+Görsel C++ platformlar arası Mobil Geliştirme için] (http://go.microsoft.com/fwlink/p/?LinkId=536383) Visual Studio 2015'in yüklenebilir bileşendir. Platformlar arası Visual Studio şablonları içerir ve platformlar arası Araçlar ve SDK'lar bulun, indirmek ve bunları kendiniz yapılandırmak zorunda kalmadan hızla kullanmaya başlamak için yükler. Kolayca oluşturma, düzenleme, hata ayıklama ve test platformlar arası projeleri için Visual Studio'da bu araçları kullanabilirsiniz. Bu konuda Araçlar ve üçüncü taraf yazılım Visual Studio kullanarak platformlar arası uygulamalar geliştirmek için gereken nasıl yükleneceğini açıklar. Bileşen genel bakış için bkz. [Visual C++ platformlar arası mobil](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Gereksinimleri](#Requirements)   
  [Araçları edinin](#GetTheTools)   

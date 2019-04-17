@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f0c1ad2026a23833f777a7a40dffc76e3a379c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed4fca494cfdbd7d74d1446e57ba740580b52d11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632699"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668736"
 ---
 # <a name="summary-view"></a>Özet görünümü
 Özet görünümü profil oluşturma yürütmesine en pahalı performans işlevleri veya nesneler hakkındaki bilgileri görüntüler. Bu görünümde bir zaman çizelgesi grafiği sağlar ve profil oluşturma yöntemine performans ölçümleri temelinde en pahalı işlevleri veya nesneleri iki veya daha fazla listesini alan. Bu görünümdeki veriler kullanılan profil oluşturma yöntemine bağlıdır (örnekleme, izleme veya eşzamanlılık) ve .NET bellek ayırma olup toplanmadı.
@@ -43,7 +43,6 @@ ms.locfileid: "56632699"
 
 ## <a name="report"></a>Rapor
  Farklı görünümlerini açmak için ve karşılaştırmak, Kaydet veya raporu filtrelemek için rapor listesi bağlantılar tıklayabilirsiniz. Zaman Çizelgesi grafiği sağa listesidir.
-
 
 | | |
 |----------------------------| - |

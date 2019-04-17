@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Son kullanıcılarınıza, MPN iş ortakları için Visual Studio abonelikleri atama işlemini.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1cd8e25a0ba1eaddf6f0ab5096e366f577f510e6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842490"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667774"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Microsoft iş ortağı ağı (MPN) aracılığıyla sunulan Visual Studio aboneliklerini yönetme
 
@@ -41,7 +41,6 @@ Microsoft eylem paketi abonesi ve Visual Studio abonelikleri
     - Soyadı
     - İletişim e-postası
 13. Oturum açma tamamlanır ve abonenin avantajlara erişebiliyor olması
-
 
 ### <a name="competency-partners"></a>Uzmanlık iş ortakları
 1. Seçin **gereksinimler ve varlıklar**

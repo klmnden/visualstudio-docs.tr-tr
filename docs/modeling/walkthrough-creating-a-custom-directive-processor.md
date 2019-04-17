@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195131"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649114"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma
 
@@ -654,7 +654,6 @@ Bu bölümde, özel bir yönerge işlemciniz için aynı konumda kayıt defterin
 
      Kayıt defteri anahtarınız aşağıdaki değerlere sahip olmalı:
 
-
    | Ad | Tür | Veri |
    |-|-|-|
    | (Varsayılan) | REG_SZ | (değer ayarlı değil) |
@@ -663,13 +662,11 @@ Bu bölümde, özel bir yönerge işlemciniz için aynı konumda kayıt defterin
 
      Derlemeyi GAC içine koyduysanız, değerler aşağıdaki gibi görünmelidir:
 
-
    | Ad | Tür | Veri |
    |-|-|-|
    | (Varsayılan) | REG_SZ | (değer ayarlı değil) |
    | örneği | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Derleme | REG_SZ | CustomDP.dll |
-
 
 6. Visual Studio'yu yeniden başlatın.
 

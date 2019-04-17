@@ -27,17 +27,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761633"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656033"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **Yazı tipleri ve renkler** sayfasının **seçenekleri** iletişim kutusu, çeşitli kullanıcı arabirimi öğeleri için özel bir yazı tipi ve renk şeması tümleşik geliştirme ortamında (IDE) oluşturmanıza olanak sağlar. Bu iletişim kutusuna tıklayarak erişebilirsiniz **Araçlar / Seçenekler**seçip **ortam / yazı tipleri ve renkler**. Bu sayfa, listede görünmüyorsa, seçin **tüm ayarları göster** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]
@@ -163,7 +162,7 @@ ms.locfileid: "54761633"
 |**Akıllı etiket**|Akıllı etiketler çağrıldığında anahat belirtmek için kullanılır.|  
 |**SQL DML işaretçisi**|Transact-SQL Düzenleyicisi için geçerlidir. Bu düzenleyicide DML deyimleri, varsayılan olarak sınırlayıcı mavi bir kutu ile işaretlenir.|  
 |**Eski kod**|Değiştirilen kodu bir güncelleştirme bekleniyor. Bazı durumlarda, Düzenle ve devam et kod değişikliklerini hemen uygulanamaz, ancak daha sonra hata ayıklamaya devam et olarak uygulanır. Bu şu anda Yürütülüyor işlevini çağırmanız gerekir bir işlev düzenlerseniz veya çağrı yığını üzerinde bekleyen bir işleve 64 bayttan daha fazla yeni değişkenleri eklerseniz oluşur. Bu durumda, hata ayıklayıcı bir "Eski kod Uyarısı" iletişim kutusu görüntüler ve değiştirilen kod söz konusu işlevi tamamlanır ve yeniden çağrılıncaya kadar yürütülmeye devam eder. Düzenle ve devam et, o anda kod değişiklikleri uygular.|  
-|**dize**|Dize sabitleri.|  
+|**Dize**|Dize sabitleri.|  
 |**Dize (C# Verbatim @)**|Verbatim yorumlanır C# dilinde değişmez değerler dize. Örneğin:<br /><br /> @"x"|  
 |**Sözdizimi hatası**|Ayrıştırma hataları.|  
 |**Görev listesi kısayolu**|Varsa bir **görev listesi** bir satır için kısayol eklenir ve gösterge kenar boşluğunu devre dışı bırakıldı, satır vurgulanır.|  
@@ -236,4 +235,4 @@ ms.locfileid: "54761633"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ortam Seçenekleri iletişim kutusu](../../ide/reference/environment-options-dialog-box.md)   
  [Seçenekler iletişim kutusu](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Nasıl yapılır: Yazı Tiplerini ve Renkleri Değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

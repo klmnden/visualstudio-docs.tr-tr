@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Dahil edilen seçili Visual Studio abonelikleri ile Pluralsight eğitim aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0aeedfbbfe2394bb28469023de654cf4a3a00b95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841646"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660222"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Pluralsight eğitim avantajları
 
@@ -21,7 +21,6 @@ Uzmanlar tarafından hazırlanan kurslar, öğrenme yolları, uyum becerisi öl�
 Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Studio abonelik türü için kullanılabilir ayrıntıları.  Bazı aboneler, ayrıca bunların tam katalog erişimi aboneliğinin süresi dolduktan sonra sınırlı kursları yararlanmak mümkün olacaktır. Pluralsight, tam katalog aboneliğinizin süresi dolduğunda, işleminde size yol gösterecek.
 
  Yeni bir Pluralsight avantajına sahip oldukları, abonelik bir Pluralsight aboneliği aracılığıyla bir Visual Studio aboneliği sağlanan kullanabilir daha önce kullanmış tüm abonelerin türüne bağlı olarak sunar. Ek Pluralsight eğitim avantajları kullanmak uygun değilse, Pluralsight Web sitesinde avantajı etkinleştirme girişiminde bulunduğunuzda bir bildirim alacaksınız.
-
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 1. Aboneliğinizi etkinleştirmek için bağlanmak [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) tıklayın **alma kodu** profesyonel geliştirme bölümünde bulunan Pluralsight avantajı kutucuğa bağlantı.
@@ -84,7 +83,6 @@ Aşağıdaki tabloda, hangi Pluralsight abonelik avantajlarının her Visual Stu
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
-
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
@@ -100,7 +98,6 @@ Y: Evet, Visual Studio abonesi olarak, Uzman kanalları Pluralsight eğitimi tek
 • Donovan Brown (DevOps) - [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
 
 •   James Montemagno (Mobility) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
-
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>S: Pluralsight Aboneliğimi dolduğunda ne olur?
 Y:  Ücretsiz Pluralsight aboneliğinizi sonunda Pluralsight'tan doğrudan abonelik satın tercih edebilirsiniz.  Lütfen başvurun [Pluralsight](http://www.pluralsight.com) tüm ayrıntılar için.

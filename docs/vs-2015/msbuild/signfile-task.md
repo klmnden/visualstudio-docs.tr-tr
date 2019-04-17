@@ -19,17 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764898"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660352"
 ---
 # <a name="signfile-task"></a>SignFile Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Belirtilen dosyayı belirtilen sertifikayı kullanarak imzalar.  
   
 ## <a name="parameters"></a>Parametreler  

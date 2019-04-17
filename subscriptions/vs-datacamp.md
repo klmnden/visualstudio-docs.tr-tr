@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleriyle dahil DataCamp eğitim aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c8d18225741c7b514f9b9af5c30f06226a8abcd1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428641"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661551"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>DataCamp eğitim avantajı olarak Visual Studio abonelikleri
 
@@ -48,7 +48,6 @@ Visual Studio aboneliğinizi DataCamp Avantajı'nızı süresi bağlıdır.
    > [!div class="mx-imgBorder"]
    > ![DataCamp veri bilimi beceri kümesi](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. Yol ve Seçenekler, seçtiğiniz bağlı olarak, kariyer parçaları seçimi görürsünüz.  Tıklayarak **kaydetme** tercih ettiğiniz İzle düğmesi.
    > [!div class="mx-imgBorder"]
    > ![DataCamp kariyer İzle](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,17 +74,12 @@ Herhangi bir noktada durdurmak ve eğitim sonraki oturumunuzda sürdürün.  Yal
 | Visual Studio Enterprise (standart)  | NFR<sup>1</sup> |Yok  | Yok |
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) | Azure | Yok | Yok |
 
-
-
 <sup>1</sup>*içerir:  Değil for Resale (NFR), Trainer, BizSpark FTE, en değerli Professional (MVP), bölgesel Yöneticisi (RD), Microsoft iş ortağı ağı (MPN), Visual Studio Endüstri ortağı (VSIP), Microsoft Sertifikalı, Imagine*
-
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
 
-
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
-
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  DataCamp kullanma konusunda yardım mı gerekiyor?  Bu kaynaklara göz atın:

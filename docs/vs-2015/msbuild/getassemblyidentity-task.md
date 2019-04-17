@@ -19,17 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b91510d5b9a896c25c8c96f75767cf8e04183973
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b4a578d1d22c6e912fd3f7edc203195dbba8987
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790132"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666084"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Belirtilen dosyalardan derleme kimlikleri alır ve kimlik bilgilerini çıkarır.  
   
 ## <a name="task-parameters"></a>Görev parametreleri  

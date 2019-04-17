@@ -30,17 +30,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773342"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658116"
 ---
 # <a name="project-and-solution-file-types"></a>Proje ve Çözüm Dosya Türleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] birçok dosya türünü destekler. Belirli bir kurulumda, hangi dosya türlerinin desteklendiğini yüklü bileşenleri belirler. Bu konu, bazı tipik yüklemelerde desteklenen çözüm ve proje dosya türleri listelenmektedir. Diğer dosya türleri hakkında daha fazla bilgi için her türü için dosya adı uzantılarını kullanarak arama yapın.  
   
 ## <a name="solution-files-sln-and-suo"></a>Çözüm dosyaları (.sln ve .suo)  

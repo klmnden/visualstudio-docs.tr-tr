@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790818"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668034"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Yazılan ve yazılmayan veri kümelerinin karşılaştırması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Yazılan veri kümesi temel ilk türetilmiş bir veri kümesidir <xref:System.Data.DataSet> sınıfı ve ardından bilgilerinden **veri kümesi Tasarımcısı**, depolandığı .xsd dosyasına yeni, oluşturmak için bir veri kümesi sınıfı türü kesin belirlenmiş. (Tablolar, sütunlar ve benzeri) şema bilgileri oluşturulur ve bu yeni veri kümesi sınıfına birinci sınıf nesneleri ve özellikleri kümesi olarak derlenir. Yazılan veri kümesi temel devraldığından <xref:System.Data.DataSet> sınıfı, belirlenmiş bir sınıf tüm işlevlerini varsayar <xref:System.Data.DataSet> sınıfı ve bir örneği ele yöntemleriyle kullanılabilir bir <xref:System.Data.DataSet> bir parametre olarak sınıf.  
   
  Yazılmamış bir veri kümesi, buna karşılık, karşılık gelen hiçbir yerleşik şeması vardır. Türü belirtilmiş veri kümesi olduğu gibi tabloları, sütunları ve benzeri yazılmamış bir veri kümesi içerir; ancak bunlar yalnızca koleksiyon olarak sunulur. (El ile tabloları ve diğer veri öğelerini yazılmamış bir veri kümesini oluşturduktan sonra ancak, veri kümesinin yapısı bir şema dataset kullanarak dışa aktarabilirsiniz <xref:System.Data.DataSet.WriteXmlSchema%2A> yöntemi.)  

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803257"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653651"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karşılaştırılabilir tam IntelliSense özelliklerini sağlar. Bu bölümde, XSLT belgeleri ve XML Şeması Tanım Dili (XSD) ile IntelliSense nasıl kullanabileceğiniz açıklanmaktadır.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>Bir XSD belgesi IntelliSense  
@@ -122,4 +121,4 @@ XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karş�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)   
  [IntelliSense kullanma](../ide/using-intellisense.md)   
- [İzlenecek yol: XSLT IntelliSense kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)
+ [İzlenecek yol: XSLT IntelliSense Kullanma](../xml-tools/walkthrough-using-xslt-intellisense.md)

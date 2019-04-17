@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4d700bb6d8aebec1ff78e1e0289b89ae4cd0c91a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769425"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650611"
 ---
 # <a name="importgroup-element"></a>ImportGroup Öğesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir koleksiyonunu içeren `Import` isteğe bağlı bir koşul altında gruplandırılmış öğeler. Daha fazla bilgi için [içeri aktarma öğesi (MSBuild)](../msbuild/import-element-msbuild.md).  
   
  \<Proje >  

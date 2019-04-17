@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801826"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658129"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanları*. "Dağıtılmış uygulamalar" ve "çok katmanlı uygulamalar" olarak da bilinir, n katmanlı uygulamalar, istemci ve sunucu arasında dağıtılan farklı katmanlara bir işlem ayırın. Verilere erişen uygulamalar geliştirirken, uygulamayı oluşturan çeşitli katmanları arasında NET bir ayrım olmalıdır.  
   
  Tipik bir n katmanlı uygulamanın sunu katmanı, bir orta katman ve bir veri katmanı içerir. N katmanlı uygulamada çeşitli Katmanları ayırmak için en kolay yolu, uygulamanıza dahil etmek istediğiniz her bir katman için ayrı projeler oluşturmaktır. Örneğin, sunu katmanı Orta katmanda bulunan bir sınıf kitaplığı veri erişim mantığına olabilir ancak bir Windows Forms uygulaması olabilir. Buna ek olarak, sunu katmanı Orta katmanda bir hizmet gibi bir hizmet aracılığıyla veri erişim mantığına iletişim. Uygulama bileşenleri ayrı katmanlara ayırmak Bakım ve uygulama'nın ölçeklenebilirliğini artırır. Bunu, tüm çözümü yeniden tasarlamanıza gereksinimi olmadan tek bir katmana uygulanabilen yeni teknolojilerin daha kolay benimsenmesini sağlayarak yapar. Ayrıca, n katmanlı uygulamalar genellikle hassas bilgileri Orta sunu katmanı yalıtımdan barındıran katman depolayın.  

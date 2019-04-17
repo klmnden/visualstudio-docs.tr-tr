@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795554"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648971"
 ---
 # <a name="schema-cache"></a>Şema Önbelleği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde bulunan bir şema önbelleği sağlar. Şema önbelleği, bilgisayardaki tüm kullanıcılar için genel ve IntelliSense ve XML belgesi doğrulama için kullanılan standart XML şemaları içerir.  
 
  Belirtildiği şemaları XML Düzenleyicisi'ni de çözümde bulunan şemaları bulabilir, **şemaları** belge alanını **özellikleri** penceresi ve şemalar tarafından tanımlanan `xsi:schemaLocation` ve `xsi:noNamespaceSchemaLocation`öznitelikleri.  
 
  Aşağıdaki tablo, XML Düzenleyicisi ile yüklenen şemaları açıklar.  
-
 
 |     Dosya adı      |                                                      Açıklama                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +32,7 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde bulunan bir şema önb
 |    msbuild.xsd    |              MSBuild oluşturma dosyaları için şema "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
 |    msdata.xsd     | Tarafından eklenen XSD ek açıklamalar şeması <xref:System.Data.DataSet> sınıfı, "urn: schemas-microsoft-schemas-msdata". |
 |     msxsl.xsd     |                  Şema Microsoft XSLT betik bloğu uzantıları urn: schemas-microsoft-com:xslt.                   |
-| SnippetFormat.xsd |                 Kod parçacığı XML dosyaları için şema. % InstallDir%\VC#\Expansions örnekler için bkz.                 |
+| SnippetFormat.xsd |                 Kod parçacığı XML dosyaları için şema. Örnekler için bkz: %InstallDir%\VC#\Expansions.                 |
 |    Soap1.1.xsd    |            Basit Nesne Erişim Protokolü (SOAP) 1.1 şeması http://schemas.xmlsoap.org/soap/envelope/.            |
 |    Soap1.2.xsd    |                                     Basit Nesne erişim protokolü 1.2 şeması.                                     |
 | SiteMapSchema.xsd |            ASP.NET site haritası XML dosyası için şema "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>".             |

@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50b38a5ca5c37fe2b372f863f695a968055895ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49dde34079cc7d8b63ab374c0ceb16390f934d58
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752610"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665734"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Nasıl yapılır: Graf Görünümünden ve İçerik Modeli Görünümünden Diyagram Yazdırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu konu, graf görünümünden veya içerik modeli görünümünden diyagram yazdırma açıklar.  
   
 ### <a name="to-print-diagrams-from-the-xml-schema-designer"></a>XML şema Tasarımcısı'ndan diyagramlar yazdırmak için  

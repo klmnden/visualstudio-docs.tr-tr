@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930538"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658999"
 ---
 # <a name="log-command-window-output-command"></a>Command penceresi çıktısı günlüğü tut komutu
 Tüm giriş ve çıkış kopyaları **komut** penceresine bir dosya.
@@ -36,7 +36,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
 > [!TIP]
 > Günlük dosyasına kaydedildiği konumu değiştirmek için yol boşluk içeriyorsa tırnak işareti içine alınmış dosyanın tam yolunu girin.
-
 
 ## <a name="switches"></a>Anahtarlar
  /on

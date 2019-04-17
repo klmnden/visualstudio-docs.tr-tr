@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621077"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662404"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage için yükleme dizinini seçin
 VSPackage ve Tamamlayıcı dosyaları, bir kullanıcının dosya sisteminde olması gerekir. Konumu olup VSPackage'ı yönetilen veya yönetilmeyen, yan yana sürüm oluşturma düzeni ve kullanıcı seçenek bağlıdır.
@@ -56,7 +56,6 @@ VSPackage ve Tamamlayıcı dosyaları, bir kullanıcının dosya sisteminde olma
 4.  Varsayılan alt dili ile sistem varsayılan LCID.
 
 5.  ABD İngilizce (*. \1033* veya *. \0x409*).
-
 
 VSPackage DLL'niz kaynaklar içeriyorsa ve **SatelliteDll\DllName** kayıt defteri girişi, işaret [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] yukarıdaki sırayla yüklemeye çalışır.
 

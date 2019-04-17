@@ -14,25 +14,26 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794045"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651169"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Visual Studio'yu yüklemek için komut satırı parametrelerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 için en son belgeler için bkz. [Visual Studio 2017'yi yüklemek için komut satırı parametreleri kullanmak](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Visual Studio ile ilgili en son belgeler için bkz. [Visual Studio'yu yüklemek için komut satırı parametreleri kullanmak](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 Bir komut isteminden Visual Studio 2015'i yüklediğinizde, aşağıdaki komut satırı parametrelerini (anahtarlar olarak da bilinir) kullanabilirsiniz.
 
 > [!NOTE]
->  Gerçek yükleyici ve önyükleyici dosyayı kullandığınızdan emin olun. Örneğin, kullandığınızdan emin olun **`vs_enterprise.exe`** vs_enterprise_ yerine*GUID*.exe. Bir Yükleyicisi'nden indirebileceğiniz [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+> Gerçek yükleyici ve önyükleyici dosyayı kullandığınızdan emin olun. Örneğin, kullandığınızdan emin olun **`vs_enterprise.exe`** vs_enterprise_ yerine*GUID*.exe. Bir Yükleyicisi'nden indirebileceğiniz [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
 
 ## <a name="list-of-command-line-parameters"></a>Komut satırı parametrelerinin listesi
- Visual Studio komut satırı parametreleri büyük küçük harfe duyarlı değildir.
+
+Visual Studio komut satırı parametreleri büyük küçük harfe duyarlı değildir.
 
 |Parametre|Açıklama|
 |---------------|-----------------|
@@ -62,4 +63,5 @@ Bir komut isteminden Visual Studio 2015'i yüklediğinizde, aşağıdaki komut s
 |**/ Uninstall/Force**<br /><br /> **/u/Force**|Visual Studio'yu ve diğer ürünlerle paylaşılan tüm özellikleri kaldırır. **Uyarı:**  Bu parametreyi kullanırsanız, aynı bilgisayarda yüklü diğer ürünler düzgün çalışmamaya başlayabilir.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Visual Studio Yönetici Kılavuzu](../install/visual-studio-administrator-guide.md)
+
+- [Visual Studio Yönetici Kılavuzu](../install/visual-studio-administrator-guide.md)

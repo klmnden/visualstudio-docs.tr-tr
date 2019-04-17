@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787645"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656602"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik türleri eşleşmiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bir ilişki oluşturulamıyor \<ilişkilendirme adı >-özellik türleri eşleşmiyor. Özellik türlerinin eşleşmesi gerekmez: \<özellik adları >.  
   
  İlişkilendirmeleri tanımlanmış tarafından seçilen **ilişkilendirme özellikleri** içinde **ilişkilendirme Düzenleyicisi** iletişim kutusu. İlişkinin her iki taraftaki özellikleri aynı veri türünde olmalıdır.  

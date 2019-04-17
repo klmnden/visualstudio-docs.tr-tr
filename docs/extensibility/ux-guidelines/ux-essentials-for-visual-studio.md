@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723506"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667461"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio için UX temel bileşenleri
 ## <a name="best-practices"></a>Önerilen uygulamalar
@@ -102,7 +102,6 @@ ms.locfileid: "56723506"
 
 #### <a name="example-video-links-in-team-explorer"></a>Örnek: Takım Gezgini içinde video bağlantıları
 Kullanıcı UI kapatılıyor önce açıklayıcı metin okumak için zorlama, Visual Studio içinden koruma bir desendir. Doğru şekilde tasarlanmış, video bağlantılarını üzerine gelin ve tıklayarak ek bilgileri içeren bir araç ipucu görüntülemesi gereken "&times;" daha fazla etkileşim için gerek kalmadan iletisini kapat.
-
 
  ![Kötü amaçlı yazılımdan koruma açıklayıcı metin&#45;deseni &#45; yanlış](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Video bağlantısı yanlış deseni
 

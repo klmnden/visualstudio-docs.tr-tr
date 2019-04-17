@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16b0f414c87fd1d9dea7305e43e23a59b7dc53b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805003"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658507"
 ---
 # <a name="receive-activity-designer"></a>Receive Etkinlik Tasarımcısı
 **Alma** etkinlik Tasarımcısı oluşturmak ve yapılandırmak için kullanılan bir <xref:System.ServiceModel.Activities.Receive> etkinlik. A <xref:System.ServiceModel.Activities.Receive> etkinlik dışı bir yerleşik bir tür gibi olabilir bir ileti aldığı etkinlik <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> veya <xref:System.Xml.Linq.XElement>, veya bir uygulama tarafından tanımlanan veri anlaşması, ileti anlaşması veya seri hale getirilebilir XML sınıfı.  
@@ -35,7 +35,6 @@ ms.locfileid: "54805003"
 
 ### <a name="the-receive-activity-properties"></a>Etkinlik özelliklerini alma  
  Aşağıdaki tabloda <xref:System.ServiceModel.Activities.Receive> özellikleri Tasarımcısı'nda nasıl kullanıldığı açıklanmaktadır. Bu özellikleri Özellikler kılavuzu veya Cihazınızda düzenlenebilir [!INCLUDE[wfd2](../includes/wfd2-md.md)] yüzeyi. Yalnızca gerekli özellik <xref:System.ServiceModel.Activities.Receive.OperationName%2A> özelliği.  
-
 
 |                              Özellik Adı                               | Gerekli |                                                                                                                                                                                                                                                                                                                                                                                         Kullanım                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

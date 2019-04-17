@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 87cffd39897d0e3122181792409044c6b0aedc99
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 07293e560cc78ecdd04f83a12cd18255d4a4a427
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924688"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662220"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Bir Visual C++ DLL'ye test etme
 
@@ -236,7 +236,6 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
 > [!TIP]
 > Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.
-
 
 ##  <a name="Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama
 

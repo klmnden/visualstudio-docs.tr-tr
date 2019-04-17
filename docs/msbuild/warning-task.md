@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729f09f680969cb6a6653109f57d382cd7238557
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645959"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663891"
 ---
 # <a name="warning-task"></a>Uyarı görevi
 Günlükleri bir derleme sırasında bir uyarı değerlendirilen bir koşullu ifadeye göre.
 
 ## <a name="parameters"></a>Parametreler
  Parametreleri aşağıdaki tabloda açıklanmıştır `Warning` görev.
-
 
 | Parametre | Açıklama |
 |---------------| - |

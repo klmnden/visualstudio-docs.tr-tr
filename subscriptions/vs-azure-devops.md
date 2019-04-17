@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Azure DevOps Visual Studio abonesi olarak nasıl kullanabileceğinizi öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: 01f5f34210b4a562015eb030b9a23ef4d5017add
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 08511fda1cc91d84929ee4fd095e82a0656d26a0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842657"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651294"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio aboneleri için Azure DevOps avantajları
 
@@ -44,8 +44,6 @@ Azure DevOps özellikleri hakkında daha fazla bilgi edinin:
 - [Azure panoları & depoları (Temel)](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [Azure Test planları](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Yapıtları](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-
-
 
 ## <a name="support-resources"></a>Destek kaynakları
 

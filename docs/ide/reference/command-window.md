@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f4e16d6dc3eb7529e2e13ed333cacaf93e36d728
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928757"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653885"
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komut** penceresi komutları veya doğrudan diğer adlar yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir araç çubuğunda hem menü komutları hem de görünmez komutları yürütebilir. Görüntülenecek **komut** penceresinde seçin **diğer Windows** gelen **görünümü** seçin ve menü **komut penceresi**.
@@ -60,7 +60,6 @@ ms.locfileid: "55928757"
 
 > [!TIP]
 > İçin kaydırma, bir kısmını veya tamamını vurgulama ve ardından ENTER tuşuna basarak, giriş satırına önceki komutun bir kısmını veya tamamını kopyalayabilirsiniz.
-
 
 ## <a name="mark-mode"></a>İşaret modu
  İçinde herhangi bir önceki satırdaki tıkladığınızda **komut** penceresinde tıklattığınızda, otomatik olarak işaretleme moduna. Bu, seçin, düzenleme ve herhangi bir metin düzenleyicisinde yaptığınız ve bunları geçerli satıra yapıştırmanıza gibi önceki komutların metnini kopyalamak sağlar.

@@ -17,17 +17,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873642"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664793"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Yükleme veritabanı sistemleri, araçları ve örnekleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio kendi dahili olarak kullandığı dışındaki herhangi bir veritabanı sistemleri içermez. Visual Studio'da veri bağlı bir uygulama geliştirmek için genellikle veritabanı sistemi yerel geliştirme makinenize yükleyin ve hazır olduğunuzda uygulama ve veritabanı bir üretim ortamına ardından dağıtın. Veritabanı sistemi için .NET uygulamaları tarafından erişilebilir olmasını ve Visual Studio veri araçları pencerelerinde görünür olmasını, bir ADO.NET veri sağlayıcısının olması gerekir. Varlık veri modelleri .NET uygulamanızda kullanmayı planlıyorsanız bir sağlayıcı özellikle Entity Framework desteklemesi gerekir.     Birçok sağlayıcı, NuGet Paket Yöneticisi aracılığıyla veya Visual Studio Galerisi aracılığıyla sunulur.  
   
  SQL geliştirme için SQL Server veri araçları Visual Studio'da yüklü olduğundan emin olun. Tıklayın **görünümü** menüsü. SQL Server nesne Gezgini'ni görmüyorsanız, Denetim Masası'na gidin ve Visual Studio değiştirin. Yükleyicide **Microsoft SQL Server veri Araçları**.  

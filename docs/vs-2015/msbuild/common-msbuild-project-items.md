@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796883"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655822"
 ---
 # <a name="common-msbuild-project-items"></a>Yaygın MSBuild Proje Öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 İçinde [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], adlandırılmış bir veya daha fazla dosya başvurusu bir öğedir. Meta veri dosya adları, yollar ve sürüm numaraları gibi öğeleri içerir. Tüm proje türlerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çeşitli öğeleri ortaktır. Bu öğeler, dosya Microsoft.Build.commontypes.xsd'de tanımlanmıştır.  
   
 ## <a name="common-items"></a>Ortak öğeler  
@@ -121,7 +120,7 @@ ms.locfileid: "54796883"
 |Görünür|İsteğe bağlı boolean. Dosyada görüntülenip görüntülenmeyeceğini gösterir **Çözüm Gezgini** içinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|İsteğe bağlı dize. Dosyayı çıkış dizinine kopyalanıp kopyalanmayacağını belirler. Değerler şunlardır:<br /><br /> 1.  hiçbir zaman<br />2.  Her zaman<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Hiçbiri  
+### <a name="none"></a>Yok.  
  Derleme işleminde hiçbir rolü olması gereken dosyaları temsil eder.  
   
 |Öğe adı|Açıklama|  

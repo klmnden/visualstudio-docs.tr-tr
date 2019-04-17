@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerine dahil edilen Azure topluluğu Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5e40621afe4d4211660064c52f97bdbcb96effe1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842110"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653957"
 ---
-# <a name="azure-community"></a>Azure topluluğu
+# <a name="azure-community"></a>Azure Topluluğu
 
 Get Yardım doğrudan Azure ekibinden seçme içinde forumları aracılığıyla Azure topluluk desteği.  Azure topluluğu avantajı, Azure ile ilgili konularda odaklanmış forumları koleksiyonuna erişim sağlar.
 
@@ -27,8 +27,6 @@ Get Yardım doğrudan Azure ekibinden seçme içinde forumları aracılığıyla
 | [Azure çok faktörlü kimlik doğrulaması](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Fiyatlandırma ve faturalama](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Azure komut dosyası & komut satırı araçları](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
 | [Azure Yönetim Portalı](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure yedekleme](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Azure sanal makineleri](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site kurtarma](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Market](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
-
-
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 Azure topluluğuyla kullanmaya kolayca başlayabilirsiniz.
@@ -49,7 +47,6 @@ Azure topluluğuyla kullanmaya kolayca başlayabilirsiniz.
 ## <a name="eligibility"></a>Uygunluk
 Azure topluluğu avantajı kullanılabilirliğini, aşağıda gösterildiği gibi abonelik düzeyinize bağlıdır:
 
-
 |                                          Abonelik düzeyi                                           |     Kanallar      |    Faydası    | Yenilenebilir? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (standart)                           | VL, Azure, perakende |   Bir yıl    |    Evet     |
@@ -64,7 +61,6 @@ Azure topluluğu avantajı kullanılabilirliğini, aşağıda gösterildiği gib
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 

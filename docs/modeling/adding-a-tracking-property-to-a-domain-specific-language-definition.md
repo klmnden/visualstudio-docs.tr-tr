@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e3c4aabd973a755f2289abfa809df556680070
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd4bf8b1b6f43e8ed12b133a621e21157fb87118
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944539"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657395"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Alana Özgü Dil Tanımına İzleme Özelliği ekleme
 
@@ -45,7 +45,6 @@ Bu kılavuzda, modelin varsayılan Namespace özelliği temelinde bir varsayıla
 ## <a name="prerequisites"></a>Önkoşullar
 
 Bu kılavuzda başlamadan önce bu bileşenleri yüklemelisiniz:
-
 
 | | |
 |-|-|
@@ -760,4 +759,4 @@ Birden fazla izleme özelliğini kullanın veya birden çok DSL içinde izleme �
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>
 - [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)
-- [Nasıl yapılır: Bir etki alanına özgü dil çözümü oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md)
+- [Nasıl yapılır: Alana Özgü Dil Çözümü Oluşturma](../modeling/how-to-create-a-domain-specific-language-solution.md)

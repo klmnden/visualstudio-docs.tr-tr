@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504438"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665460"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce kullanarak Office çözümü dağıtma
   ClickOnce kullanırsanız Office çözümünüzü daha az sayıda adımla dağıtabilirsiniz. Güncelleştirmeleri yayımlarsanız, çözümünüz bunları otomatik olarak algılar ve yükler. Bununla birlikte, ClickOnce, çözümünüzü bir bilgisayarın her kullanıcısı için ayrı ayrı yüklemenizi gerektirir. Bu nedenle, Windows Installer kullanmayı düşünmeniz gerekir (*.msi*) aynı bilgisayarda çözümünüzü birden fazla kullanıcı çalıştıracaksa.
@@ -27,21 +27,21 @@ ms.locfileid: "59504438"
 
 - [Çözümü yayımlama](#Publish)
 
-- [Çözüme nasıl güven kazandırmak istediğinize karar verme](#Trust)
+- [Nasıl çözüme güven kazandırmak istediğinize karar verme](#Trust)
 
 - [Kullanıcıların çözümü yüklemesine yardımcı olma](#Helping)
 
-- [Bir çözümün belgesini son kullanıcının bilgisayarına koyma (yalnızca belge düzeyinde özelleştirmeler)](#Put)
+- [Bir çözümün belgesini son kullanıcının bilgisayarına koyma (yalnızca belge düzeyinde özelleştirmeler) yerleştirin.](#Put)
 
-- [Bir çözümün belgesini SharePoint çalıştıran bir sunucuya koyma (yalnızca belge düzeyinde özelleştirmeler)](#SharePoint)
+- [Bir çözümün belgesini SharePoint (yalnızca belge düzeyinde özelleştirmeler) çalıştıran bir sunucuya koyma yerleştirin](#SharePoint)
 
 - [Özel bir yükleyici oluşturma](#Custom)
 
 - [Güncelleştirme yayımlama](#Update)
 
-- [Çözümün yükleme konumunu değiştirme](#Location)
+- [Bir çözümün yükleme konumunu değiştirme](#Location)
 
-- [Çözümü önceki bir sürüme geri alma](#Roll)
+- [Bir çözümü önceki bir sürüme geri alma](#Roll)
 
   Bir Windows Installer dosyası oluşturarak bir Office çözümünü dağıtma hakkında daha fazla bilgi için bkz. [Windows Installer kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -92,7 +92,7 @@ ms.locfileid: "59504438"
     |Seçenek|Açıklama|
     |------------|-----------------|
     |**Bileşen satıcısının web sitesinden önkoşulları karşıdan yükleyin**|Kullanıcıdan, bu önkoşulları satıcının sitesinden indirmesi ve yüklemesi istenir.|
-    |**Uygulamam ile aynı konumdan önkoşulları karşıdan yükleyin**|Önkoşul yazılımı çözümle birlikte yüklenir. Bu seçeneği tercih ederseniz, Visual Studio sizin için önkoşul paketlerinin tümünü yayımlama konumuna kopyalar. Bu seçeneğin çalışması için önkoşul paketleri geliştirme bilgisayarında olmalıdır.|
+    |**Uygulamamla aynı konumdan önkoşulları karşıdan yükleyin**|Önkoşul yazılımı çözümle birlikte yüklenir. Bu seçeneği tercih ederseniz, Visual Studio sizin için önkoşul paketlerinin tümünü yayımlama konumuna kopyalar. Bu seçeneğin çalışması için önkoşul paketleri geliştirme bilgisayarında olmalıdır.|
     |**Aşağıdaki konumdan önkoşulları karşıdan yükleyin**|Visual Studio tüm önkoşul paketlerini belirttiğiniz konuma kopyalar ve bunları çözümle birlikte yükler.|
 
      Bkz: [Önkoşullar iletişim kutusu](../ide/reference/prerequisites-dialog-box.md).
@@ -340,12 +340,11 @@ ms.locfileid: "59504438"
 
  Özel yükleme işleminizin bir parçası, Office çözümleri için yükleyici aracını çağırın (*VSTOInstaller.exe*), varsayılan olarak şu konumda yüklü:
 
- *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Araç bu konumda değilse, kullanabileceğiniz **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\vsto Runtime setup\v4\ınstallerpath** veya **hkey_local_machıne\software\wow6432node\microsoft\vsto Runtime Setup\v4 \InstallerPath** bu aracın yolunu bulmak için kayıt defteri anahtarı.
 
  Aşağıdaki parametreleri kullanabilirsiniz *VSTOinstaller.exe*.
-
 
 | Parametre | Tanım |
 |------------------| - |

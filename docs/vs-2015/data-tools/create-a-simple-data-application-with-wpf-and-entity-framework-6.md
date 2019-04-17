@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870408"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664806"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF ve Entity Framework 6 ile basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bu kılavuzu, Visual Studio ile SQL Server LocalDB, Northwind veritabanı, Entity Framework 6 ve Windows Presentation Foundation temel "veriler üzerinden formlar" uygulama oluşturma işlemi gösterilmektedir. Temel veri bağlama ile ana öğe-ayrıntı görünümü nasıl gösterir ve ayrıca bir özel "bağlama"Sonrakine Taşı"için düğmeleriyle"Taşıma "Başlangıca Taşı" önceki,""taşıma sona erdirmek "Gezgin" sahip "Güncelleştir" ve "Sil"  
   
  Bu makalede, Visual Studio veri araçları kullanmaya odaklanmıştır ve temel teknolojileri herhangi bir şekilde açıklamak çalışmaz. Bu, XAML, Entity Framework ve SQL temel olarak bilindiğini sahibi olduğunuzu varsayar. Bu örnek WPF uygulamaları için standart MVVM mimari, ayrıca göstermemiz gerekmez. Ancak, çok az sayıda değişiklikler ile kendi MVVM uygulamasına bu kodu kopyalayın.  

@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194515"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649270"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio ana [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] yönetilen projeleri yüklemek ve derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] projesi, neredeyse her her proje için sorumlu [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]projeyi farklı bir araç ile yazılmış olsa ve özelleştirilmiş bir yapı işlemi olsa bile.  
   
  Bu konuda, belirli yönlerini anlatmaktadır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'s [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] barındıran sayılacağı projeleri ve yüklemek ve derlemek istediğiniz .targets dosyalarını özelleştirirken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu emin olmanıza yardımcı olacak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IntelliSense ve iş özel projenizde hata ayıklama gibi özellikleri.  

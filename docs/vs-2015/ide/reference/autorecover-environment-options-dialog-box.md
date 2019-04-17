@@ -19,17 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5fc9c1d835979c53b499e88e3949d5023e077e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 210b1ca8d2961f9337472faa1a4f92ee852a7a2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766079"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659484"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, Ortam, Seçenekler İletişim Kutusu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Bu sayfa Seçenekler iletişim kutusunun dosyaları otomatik olarak yedeklenir olup olmadığını belirtmek için kullanın. Bu sayfa Tümleşik geliştirme ortamı (IDE) beklenmedik şekilde kapatıldığında dosyaları geri değişiklik olup olmadığını belirlemenize olanak sağlar. Bu iletişim kutusunu seçerek erişebilirsiniz **Araçları** menü ve seçerek **seçenekleri**seçip **ortam** klasörü ve seçme  **Otomatik Kurtarma** sayfası. Bu sayfa, listede görünmüyorsa, seçin **tüm bir ayarın gösterilip** içinde **seçenekleri** iletişim kutusu.  
   
 > [!NOTE]

@@ -17,18 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36132dce94bb4836242858c82c47562259e83f2e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40b155af29d2d81a43eb0270e776e40df335a4bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596157"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662341"
 ---
 # <a name="sdk-element-msbuild"></a>SDK'sı öğesi (MSBuild)
 Başvurular bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] SDK proje.
 
  \<Project> \<Sdk>
-
 
 ## <a name="syntax"></a>Sözdizimi
 

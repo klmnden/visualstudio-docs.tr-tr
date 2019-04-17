@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802169"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663998"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>UML sınıf diyagramları aracılığıyla kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
  Visual Studio'da UML sınıf diyagramları hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
 
-- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
+- [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)  
 
-- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML Sınıf Diyagramları: Yönergeler](../modeling/uml-class-diagrams-guidelines.md)  
 
   UML sınıf diyagramları Visual Studio'nun hangi sürümlerinin desteklediğini görmek için bkz: [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
@@ -164,7 +164,6 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 
 4. İletişim kutusunda, metin şablon bağlamasının özelliklerini ayarlayın.  
 
-
    |    **Özelliği**    |                                                                                                                                                                                                                                                                                                                    **Açıklama**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Ad        |                                                                                                                                                                                                                                                  Bu bağlama için bir ad. Kapsayan bir paketten veya modelden devralınan bir bağlamayı geçersiz kılmak için geçersiz kılmak istediğiniz bağlamayla aynı adı kullanın.                                                                                                                                                                                                                                                  |
@@ -173,7 +172,6 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
    |    Proje Yolu    |                                                                      Yolunu belirtir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dönüştürme içeren bir proje Çıkış dosyalarını. Yeni bir proje oluşturmak için yazılan değerleri kullanın. Üç nokta düğmesini (**[...]** ) varolan bir projeyi seçin.<br /><br /> Yoksa yeni bir proje oluşturulacaktır. Bu bir C# sınıf kitaplığı projesi olacaktır.<br /><br /> Bunu yapmak için projeyi doğrudan yazmanız gerekir. %ProgramFiles% veya %LocalAppData% gibi ortam değişkeni makrolarını dahil edebilirsiniz.                                                                       |
    |  Hedef Dizin  |                                                                                          Hedef dosyanın oluşturulduğu klasör. Yol, proje klasörüyle ilişkilidir.<br /><br /> Kullanabileceğiniz `{PackageStructure}` kapsayan paketlerin adlarına karşılık gelen bir yol eklemek için ifade. Varsayılan değer `\GeneratedCode\{PackageStructure}` şeklindedir. %TEMP% veya %HomePath% gibi ortam değişkenlerini de ekleyebilirsiniz. **Önemli:** `{PackageStructure}` yalnızca kullanılabilir **hedef dizin** özelliği.                                                                                          |
    | Şablon Dosya Yolu |                                                                                                                                                           Dönüşümü gerçekleştirecek şablon.<br /><br /> Sağlanan şablonları kullanabilir veya kendi şablonunuzu oluşturabilirsiniz. Sağlanan şablonları aşağıdaki konumda bulabilirsiniz:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. Bir öğeye istediğiniz kadar bağlama ekleyebilirsiniz.  
 
@@ -237,6 +235,6 @@ Visual Studio'da UML sınıf diyagramlarından Visual C# .NET kodunu oluşturmak
 - `<#= Expressions #>` değerlendirilir ve dizelere dönüştürülür.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
- [UML sınıf diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Yönergeleri](../modeling/uml-class-diagrams-guidelines.md)   
  [UML modeli aracılığıyla dosya oluşturma](../modeling/generate-files-from-a-uml-model.md)

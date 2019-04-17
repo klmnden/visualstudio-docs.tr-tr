@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835095"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653274"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio için bileşik desenler
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri b
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Grafik Nesne Seçimi Görünümü
  Seçim tutamaçlarını, nesnenin sınırlayıcı kutu çevresinde bir dikdörtgen deseninde çizilmiş karelerdir. Aşağıdaki grafik, bir grafik nesnesi tanıtıcı, boyutlandırma ve yerinde düzenleme görünümü ile olabilen çeşitli durumları örneklerini gösterir. Tutamaçları boyutunu pencere sınırı ve edge ölçümleri kullanarak bağlı olması **GetSystemMetrics** API.
 
-
 |          Durum          |  Görünüm   |                                                                  Görsel ayrıntıları                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **Seçimi kaldırıldı**      |    Varsayılan    |                 ![Varsayılan düğme durumu](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713 10_DefaultState")                 |
@@ -437,7 +436,6 @@ Bileşik desenler farklı yapılandırmalarda etkileşim ve tasarım öğeleri b
 >  **Odak** ve **seçimi** farklı kavram olmasıdır. *Odak* göstergesidir hangi UI öğesi hedeflediği açıkça başka bir nesnede yönlendirilmiş giriş almaya çalışırken *seçimi* sonraki olan bir nesne nesnenin edilme durumunu gösterir işlemleri yer alabilir.
 
  Bitişik, ayrık, seçim listelerindeki olabilir veya bölge. Ne zaman birden çok seçime izin verilen, sürekli ve ayrık seçimi her zaman, bölge (kutu) seçimleri için destek sırasında desteklenmelidir isteğe bağlıdır. Bölge seçim listesi gövdesi içinde beyaz boşluk sürükleyerek başlatılır.
-
 
 | Nesne | Seçim  |
 |--------|------------|

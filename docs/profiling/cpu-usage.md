@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 472535a44e8cc9fe2aef40e1e3bf81c57bfcbe98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366763"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663186"
 ---
 # <a name="analyze-cpu-usage"></a>CPU kullanımını analiz etme
 
@@ -51,7 +51,6 @@ Genellikle, yerel makine en iyi yüklü uygulama yürütme çoğaltır. Windows 
 
    ![CPU kullanım raporu](../profiling/media/cpu_use_wt_report.png "CPU kullanım raporu")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>CPU kullanımı raporunu analiz etme
 
 Tanılama raporu kendisine göre sıralandığı **toplam CPU**, yüksekten en düşüğe. Sütun üst bilgilerini seçerek sıralama sütunu ve sıralama düzenini değiştirin. Kullanın **filtre** görüntülemek ve kullanmak için iş parçacığı seçimini kaldırın veya seçmek için açılan **arama** belirli iş parçacığı veya düğüm için arama kutusu.
@@ -66,7 +65,7 @@ Visual Studio 2019 ' başlayarak, tıklayabilirsiniz **etkin yolu Genişlet** ve
 |-|-|
 |**Toplam CPU [Birim, %]**|![Toplam % veri Denklem](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Milisaniye ve CPU yüzdesi işlev için çağrılar tarafından kullanılan ve seçili zaman aralığında işlev tarafından çağrılan işlevleri. Bu farklıdır **CPU kullanımı** karşılaştıran bir zaman aralığında bir toplam kullanılabilir CPU için toplam CPU etkinliği zaman çizelgesi grafiği.|
 |**İç CPU [Birim, %]**|![Kendi kendine % Denklem](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> CPU yüzdesi seçili zaman aralığındaki işlev tarafından çağrılan işlevler hariç işlev için çağrılar tarafından kullanılan ve milisaniye.|
-|**Modül**|İşlevi içeren modül adı.
+|**Module**|İşlevi içeren modül adı.
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU kullanımı çağrı ağacı
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliğine dahildir Xamarin University eğitimi aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21fd09f6c3b33b00abb377dad14409c138edcf00
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842534"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664295"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Xamarin University eğitimi avantajı olarak Visual Studio abonelikleri
 
@@ -27,7 +27,6 @@ Xamarin University çoğu sertifika ve Xamarin.Forms kurslar taşınmadan, zaman
 Bkz: [Xamarin University SSS](https://university.xamarin.com/faq) Ayrıntılar için.
 
 21 aralık 2018'e kadar Visual Studio Enterprise aboneleri, altı aylık sınırsız erişim tam Xamarin University kataloğuna alırsınız.  Visual Studio Professional aboneleri, üç ay boyunca erişim alırsınız.
-
 
 ## <a name="support-resources"></a>Destek kaynakları
 -  Xamarin University yardıma mı ihtiyacınız var?  Destek kaynakları çeşitli bulabilirsiniz [ https://university.xamarin.com/support ](https://university.xamarin.com/support).

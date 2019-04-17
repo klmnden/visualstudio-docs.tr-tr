@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Beceri bana seçili Visual Studio aboneliğine dahildir Opsgility eğitimi avantajı ile güçlendirilmiş artırma hakkında-bilgi edinin.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f87cdf71db8c2c06445c7c76379065e44e78ab76
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843850"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656134"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Yetenek bana yukarı - Opsgility eğitimi avantajı olarak Visual Studio abonelikleri tarafından desteklenir
 
@@ -25,13 +25,11 @@ Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe b
    > [!div class="mx-imgBorder"]
    > ![Opsgility avantajı kutucuğu](_img/vs-opsgility/vs-opsgility-tile.png)
 
-
 3. Uygun beceri bana giriş sayfası, aboneliğinize ilişkin AYARLAMAK üzere yönlendirilirsiniz.  (, Bir destek uzmanı ile bir sohbet oturumu başlatmak için bir fırsat sunulabilir.  Bir sohbet başlatmak istemiyorsanız, bu pencerenin en aza indirebilirsiniz.)  İstenen kişi bilgileri doldurun, kutusuna hüküm ve koşulları kabul eden denetleyin ve ardından tıklayın **kaydetme**.
    > [!div class="mx-imgBorder"]
    > ![Opsgility avantajı giriş sayfası](_img/vs-opsgility/vs-vse-landing-page.png)
 
 4. Tüm İşte bu kadar kolay!  Öğrenme başlamaya hazırsınız!
-
 
 ## <a name="eligibility"></a>Uygunluk
 
@@ -48,7 +46,6 @@ Seçili Visual Studio Abonelikleri, en fazla altı ay erişimle uzman, isteğe b
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio satın almak için farklı seçenekleri keşfedin.
-
 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
