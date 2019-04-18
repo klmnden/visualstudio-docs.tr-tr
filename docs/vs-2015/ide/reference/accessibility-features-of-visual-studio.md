@@ -12,16 +12,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eebaaf8887358e1eb527a69e6e26d100dfc230a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778519"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660963"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun Erişilebilirlik Özellikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aşağıdaki özellikler Visual Studio 2013'ün daha erişilebilir engelli kişiler için hale getirir:
 
@@ -40,15 +39,15 @@ Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aş
 
  Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Nasıl yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Nasıl yapılır: Yalnızca klavyeyi kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Nasıl yapılır: Yalnızca Klavyeyi Kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Varsayılan Klavye Kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 -   [Erişilebilirlik İpuçları ve Püf Noktaları](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Nasıl yapılır: Yazı Tiplerini ve Renkleri Değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Microsoft'tan Erişilebilirlik Ürünleri ve Hizmetleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

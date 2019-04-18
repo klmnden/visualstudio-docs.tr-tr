@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57868307"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660725"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Yardım Görüntüleyicisi SDK’sı
 
@@ -63,7 +63,7 @@ Desteklenen dil dizeleri (büyük/küçük harfe duyarlı değil):
 
 -   JavaScript
 
--   CSharp veya C#
+-   CSharp veya c#
 
 -   cplusplus visualc ++ ya da c ++
 
@@ -360,7 +360,6 @@ Yardım menü öğesi altında IDE içindeki seçin **hata ayıklama yardımcı 
 
 Aşağıdaki tabloda, köşeli ayraç görünen herhangi bir dize tarafından tanınan bir değer değiştirilmesi gereken bir yer tutucudur. Örneğin, \<meta name="Microsoft.Help.Locale" içerik = "[dil kodu]" / >, "[dil kodu]" gerekir yerine değere göre gibi "en-us".
 
-
 | Özellik (HTML gösterim) | Açıklama |
 | - | - |
 | \< İçerik meta name="Microsoft.Help.Locale" = "[kodu dil]" / > | Bu konu için bir yerel ayar ayarlar. Bu etiket, bir konu başlığında kullanılıyorsa, yalnızca bir kez kullanılmalıdır ve diğer tüm Microsoft Help etiketleri eklenmelidir. Bu etiket kullanılmıyorsa konunun gövde metni belirtilmişse, ürün yerel ayar ile ilişkili bir sözcük ayırıcı kullanılarak dizinlenir; Aksi takdirde, en-us Sözcük bölücü kullanıldı. Bu etiket ISOC RFC 4646 için uygundur. Microsoft Help düzgün çalıştığından emin olmak için genel dil özniteliği yerine bu özelliği kullanın. |
@@ -451,7 +450,7 @@ Not: "{n}" tarafından belirtilen değişkenlerin kod bağımlılıklarını sah
 | Özellik: | **CollapsibleArea** |
 | Kullanım: | Daraltır içerik denetimi metni Genişlet |
 | **Öğe** | **Değer** |
-| ExpandText | Genişletin |
+| ExpandText | Expand |
 | CollapseText | Daralt |
 | Özellik: | **CodeSnippet** |
 | Kullanım: | Kod parçacığı denetim metin.  Not: Kod parçacığı içerikle "Bölünemez" alanı için alan değiştirilecektir. |

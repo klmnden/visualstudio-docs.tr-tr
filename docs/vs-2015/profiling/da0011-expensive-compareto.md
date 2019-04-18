@@ -14,17 +14,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281bdbb3ba974b3aacb9c349575727675bb59305
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354771"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655757"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Pahalı CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio ile ilgili en son belgeler için bkz. [DA0011: Pahalı CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) docs.microsoft.com'da.  
+Visual Studio ile ilgili en son belgeler için bkz. [DA0011: Pahalı CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto).  
   
 |||  
 |-|-|  
