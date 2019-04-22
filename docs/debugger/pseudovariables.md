@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366854"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio Hata Ayıklayıcısı'sözde değişken
@@ -68,5 +68,5 @@ Sözde değişkenler, bir değişken penceresinde belirli bilgileri görüntüle
 |`$dynamic`|Özel görüntüler **dinamik Görünüm** uygulayan bir nesne düğümü `IDynamicMetaObjectProvider`. Arabirim. Söz dizimi `$dynamic,` *nesne*. Bu özellik yalnızca .NET Framework sürüm 4 kullanan kod için geçerlidir.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [İzleme ve QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
-- [Değişken Pencereler](../debugger/debugger-windows.md)
+- [İzleme ve Hızlı İzleme Pencereleri](../debugger/watch-and-quickwatch-windows.md)
+- [Değişken Windows](../debugger/debugger-windows.md)

@@ -18,10 +18,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018122"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Öğretici: Visual Studio 2019 ile Entity Framework kullanarak ilk ASP.NET Core uygulamanızı oluşturma

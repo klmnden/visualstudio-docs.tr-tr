@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857534"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Yükleme ve bir güvenlik duvarı veya proxy sunucusunun arkasına Visual Studio ve Azure hizmetlerini kullanma
@@ -141,8 +141,8 @@ Birkaç diğer destek seçenekleri şunlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [LiveShare için bağlantı gereksinimleri](/visualstudio/liveshare/reference/connectivity/)
+* [Live Share için bağlantı gereksinimleri](/visualstudio/liveshare/reference/connectivity/)
 * [Visual Studio'nun bir ağ oluşturun](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio'da ağ ile ilgili hataları giderme](troubleshooting-network-related-errors-in-visual-studio.md)
-* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [(Mac için Visual Studio) bir güvenlik duvarı veya proxy sunucusunun arkasına yükleme](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857431"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio'nun bir ağ oluşturun
@@ -270,6 +270,6 @@ Diğer destek seçenekleri, çok sahibiz. Bir listesi için bkz. bizim [konuşma
 
 * [Visual Studio’nun ağ tabanlı yüklemesini güncelleştirme](update-a-network-installation-of-visual-studio.md)
 * [Ağ tabanlı Visual Studio dağıtımlarına yönelik güncelleştirmeleri denetleme](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio yönetici kılavuzu](visual-studio-administrator-guide.md)
+* [Visual Studio Yönetici Kılavuzu](visual-studio-administrator-guide.md)
 * [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio iş yükü ve bileşen kimlikleri](workload-and-component-ids.md)

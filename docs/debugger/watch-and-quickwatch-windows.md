@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366819"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>İzleme ve QuickWatch değişkenlerle izleyin
@@ -292,7 +292,7 @@ Gözlemlemek için `a` değişkeni
 1. Hata ayıklamaya devam et. Değişkeninde inceleyebileceğiniz **Watch** penceresi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Hata ayıklama nedir?](../debugger/what-is-debugging.md)
+- [Hata ayıklıyor?](../debugger/what-is-debugging.md)
 - [Hata ayıklama teknikleri ve araçları](../debugger/write-better-code-with-visual-studio.md)
 - [Hata ayıklama ilk bakış](../debugger/debugger-feature-tour.md)
-- [Hata ayıklayıcı pencereleri](../debugger/debugger-windows.md)
+- [Hata ayıklayıcısı pencereleri](../debugger/debugger-windows.md)

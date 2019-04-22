@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232703"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise için IntelliTrace (C#, Visual Basic, C++)
@@ -44,9 +44,9 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 |||
 |-|-|
 |**Uygulamamın IntelliTrace ile hata ayıklama:**<br /><br /> -Geçmişteki olayları göster.<br />-Geçmiş olaylar ile ilgili çağrı bilgilerini göster.<br />-IntelliTrace Oturumumu Kaydet.<br />-Intellitrace'in topladığı verileri kontrol et.|- [IntelliTrace kullanarak önceki uygulama durumlarını İnceleme](../debugger/view-historical-application-state.md)<br />- [İzlenecek yol: IntelliTrace’i Kullanma](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace özellikleri](../debugger/intellitrace-features.md)<br />- [Geçmiş hata ayıklama](../debugger/historical-debugging.md)|
-|**Test Yöneticisi'nde bir sınama oturumu sırasında IntelliTrace verisi topla**|- [El ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Test Yöneticisi'nde bir sınama oturumu sırasında IntelliTrace verisi Topla**|- [El ile testlerde daha fazla tanılama verisi toplama](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Dağıtılmış uygulamalardan IntelliTrace verilerini toplama**|- [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)|
-|**Bir IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı başla.**|- [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|
+|**Bir IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı başlatın.**|- [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|
 
 ## <a name="IntelliTraceSupport"></a> IntelliTrace ile hangi uygulamaların ayıklayabilirim?
 
@@ -54,7 +54,7 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 |---------------------| - |
 | **Tam destek** | -.NET Framework 2.0 veya üzeri sürümleri kullanan Visual Basic ve Visual C# uygulamalar.<br/>ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows iş akışı, SharePoint 2010, SharePoint 2013 ve 64-bit uygulamalar da dahil olmak üzere çoğu uygulamada hata ayıklaması yapabilirsiniz.<br/>IntelliTrace ile SharePoint uygulamalarında hata ayıklamak için bkz: [izlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Microsoft Azure uygulamalarında IntelliTrace ile hata ayıklamak için bkz: [bulut hizmet yayımlanan IntelliTrace ve Visual Studio ile hata ayıklama](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md). |
 | **Sınırlı destek** | -Windows Destek IntelliTrace geri adım atmayı kullanarak anlık görüntüleri görüntüleme hedefleyen C++ uygulamaları. Yalnızca hata ayıklayıcı ve özel durum olaylarını desteklenir.<br />-.NET core ve ASP.NET Core uygulamaları belirli yerel hata ayıklama yalnızca olaylar (MVC denetleyicisi, ADO.NET ve HTTPClient olaylarını) desteklenir. Tek başına Toplayıcı, .NET Core veya ASP.NET Core uygulamaları için desteklenmez.<br />- F# Deneysel olarak uygulamalar<br />-Yalnızca olaylar için desteklenen UWP uygulamaları |
-| **Desteklenmez** | -Diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya Windows mobil uygulamaları |
+| **Desteklenmiyor** | -Diğer diller ve komut dosyası<br />-Windows Hizmetleri, Silverlight, Xbox veya Windows mobil uygulamaları |
 
 > [!NOTE]
 > Zaten çalışan bir işlemde hata ayıklamak istiyorsanız, yalnızca IntelliTrace olayları (çağrı bilgileri) toplayabilir. Yerel makinede yalnızca bir 32 bit veya 64-bit işleme iliştirebilirsiniz. İşleme İliştir önce meydana gelen olayları toplanmadı.
@@ -125,7 +125,7 @@ Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata
 
     - Yönetilmeyen özel durumlar
 
-- **.NET Framework olayları**
+- **.NET framework olayları**
 
    Varsayılan olarak, IntelliTrace en sık görülen .NET Framework olaylarını kaydeder. Örneğin, bir <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> olay, IntelliTrace, onay kutusunun durumunu ve metnini toplar.
 

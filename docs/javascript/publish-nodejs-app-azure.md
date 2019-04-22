@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790283"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Bir Node.js uygulaması (App Service Linux) azure'a yayımlama
@@ -29,7 +29,7 @@ Linux App Service Node.js uygulaması (aksine, Windows uygulama Node.js uygulama
 
 Bu öğreticide Visual Studio için Node.js araçları ile yüklenen bir şablon başlayarak bir Node.js uygulaması oluşturma, kod github'daki depoya itme ve gelen dağıtabilirsiniz, böylece bir Azure App Service Azure web portalı üzerinden sağlama işlemini gösterir. GitHub deposu. Azure uygulama hizmeti sağlama ve yerel bir Git deposundan kod göndermek için komut satırı kullanmak için bkz. [Node.js uygulaması oluşturma](/azure/app-service/containers/quickstart-nodejs).
 
-Bu öğreticide şunların nasıl yapıldığını öğreneceksiniz:
+Bu öğreticide şunların nasıl yapıladığını öğreneceksiniz:
 > [!div class="checklist"]
 > * Node.js projesi oluşturma
 > * Kodunuz için bir GitHub deposu oluşturma

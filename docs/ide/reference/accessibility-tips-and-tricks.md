@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58789698"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Erişilebilirlik ipuçları ve püf noktaları için Visual Studio
@@ -65,7 +65,7 @@ Bazı diğer yararlı kısayol tuş birleşimleri arasında şunlar yer alır.
 |Bağlam menüleri|(Sağ tıklama) bağlam menüsünü açın. <br> <br> **NOT:** Standart Windows kısayol|**Shift** + **F10**|
 |Menüler|Bir menü öğesi, Hızlandırıcı tuşlarıyla hızlıca erişin. Seçin **Alt** bir menü komutu etkinleştirmek için altı çizili harfler arkasından anahtarı. Örneğin, Visual Studio'da proje Aç iletişim kutusunu görüntülemek için seçtiğiniz **Alt** + **F** + **O**  +  **P**.  <br><br> **NOT:** Standart Windows kısayol|**Alt** + **[harf]**|
 |Arama kutusu|Visual Studio'da arama özelliğini kullanın.|**CTRL** + **Q**|
-|Araç penceresi|Araç kutusu sekmeleri arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> ve<br /><br /> **CTRL** + **DARALTILDI**|
+|Araç penceresi|Araç kutusu sekmeleri arasında taşıyın.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DARALTILDI**|
 |Araç penceresi|Bir denetimi araç kutusundan bir form veya Tasarımcısı ekleyin.|**Girin**|
 |Seçenekler iletişim kutusu: Ortam > klavye|Girilen bir tuş bileşimi Sil **kısayol tuşlarına basın** seçeneği.|**Geri Al**|
 

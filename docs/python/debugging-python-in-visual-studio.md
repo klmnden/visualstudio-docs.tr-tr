@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366503"
 ---
 # <a name="debug-your-python-code"></a>Python kodunuzun hatalarını ayıklama
@@ -68,12 +68,12 @@ Bir kesme noktasında durduruldu sonra kodunuz içinde adım adım veya yeniden 
 
 | Özellik | Tuş vuruşu | Açıklama |
 | --- | --- | --- |
-| **Devam et** | **F5** | Kod, sonraki kesme noktasına ulaşılıncaya kadar çalışır. |
+| **Continue** | **F5** | Kod, sonraki kesme noktasına ulaşılıncaya kadar çalışır. |
 | **Adımla** | **F11** | Sonraki deyimi çalıştırır ve durdurur. Sonraki ifade bir işlev çağrısı ise, hata ayıklayıcı çağrılan işlevin ilk satırına durdurur. |
 | **Üzerinden adımla** | **F10** | (Çalışan tüm kodun) bir işlev çağrısını yapmadan dahil olmak üzere, sonraki deyimi çalıştırır ve herhangi bir dönüş değeri uygulanıyor. Üzerinden Adımlama kolayca hata ayıklama gerekmez işlevleri atlamanızı sağlar. |
 | **Dışına adımla** | **Shift**+**F11** | Kod için çağırma deyimine adımları sonra geçerli işlevin sonuna kadar çalışır.  Bu komut, geçerli işlevin geri kalanında hata ayıklamak ihtiyacınız kalmadığında yararlıdır. |
 | **İmlece kadar Çalıştır** | **CTRL**+**F10** | Kod Düzenleyicisi'nde şapka konumuna çalıştırır. Bu komut bir parçası olduğundan, hata ayıklamak için ihtiyacınız olmayan kod üzerinde kolayca atlamanızı sağlar. |
-| **Sonraki Deyimi Belirle** | **CTRL**+**Shift**+**F10** | Giriş işareti konumuna kod noktası çalıştırma geçerli değiştirir. Bu komut, gibi bildiğiniz kodu bozuk veya istenmeyen bir yan etkisi üretir, çalıştırılan kodun bir parçasını atlamak sağlar. |
+| **Sonraki deyimi belirle** | **CTRL**+**Shift**+**F10** | Giriş işareti konumuna kod noktası çalıştırma geçerli değiştirir. Bu komut, gibi bildiğiniz kodu bozuk veya istenmeyen bir yan etkisi üretir, çalıştırılan kodun bir parçasını atlamak sağlar. |
 | **Sonraki bildirimi Göster** | **Alt**+**Num****&#42;**| Sonraki deyimi çalıştırmak için döndürür. Bu komut, kodunuzda arıyorsunuz geçici bir çözüm ve hata ayıklayıcı durduğu hatırlamıyorum yararlıdır. |
 
 ### <a name="inspect-and-modify-values"></a>Denetleme ve değerleri değiştirme

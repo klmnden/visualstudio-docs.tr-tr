@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366997"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Veri Kümesi Görselleştiricisi İletişim Kutusu
@@ -36,7 +36,7 @@ Veri kümesi görselleştiricisi, bir veri kümesi, DataTable, DataView veya Dat
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-- [Hata Ayıklama Güvenliği](../debugger/debugger-security.md)
-- [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)
-- [Windows hata ayıklayıcı](../debugger/debugger-windows.md)
+- [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)
+- [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)
+- [Hata Ayıklayıcısı Pencereleri](../debugger/debugger-windows.md)
 - [Veri İpuçları'ndaki veri değerlerini görüntüleme](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

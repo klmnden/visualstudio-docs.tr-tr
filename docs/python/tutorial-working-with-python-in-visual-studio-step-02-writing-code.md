@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366438"
 ---
 # <a name="step-2-write-and-run-code"></a>2. Adım: Yazma ve kod çalıştırma
@@ -94,6 +94,6 @@ Ancak **Çözüm Gezgini** proje dosyaları, yönettiği yerdir *Düzenleyicisi*
 ## <a name="go-deeper"></a>Daha ayrıntılı şekilde inceleyin
 
 - [Kodu düzenleme](editing-python-code-in-visual-studio.md)
-- [Kodu biçimlendirme](formatting-python-code.md)
+- [Biçim Kodu](formatting-python-code.md)
 - [Kodu yeniden düzenleme](refactoring-python-code.md)
 - [PyLint kullanma](linting-python-code.md)

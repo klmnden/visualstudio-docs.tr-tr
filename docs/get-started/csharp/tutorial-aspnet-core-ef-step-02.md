@@ -17,10 +17,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58859150"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>2. Adım: İlk ASP.NET Core web uygulamanızı oluşturma
@@ -47,7 +47,7 @@ Visual Studio 2019 başlatır ve **yeni proje oluştur**. Seçin **ASP.NET Core 
 
 *Wwwroot* klasör web uygulamasından genel olarak erişilebilir olan statik dosyalar tutar. Genellikle, stil sayfaları, istemci tarafı komut dosyası ve görüntü de içerir.
 
-### <a name="pages"></a>Sayfaları
+### <a name="pages"></a>Sayfalar
 
 *Sayfaları* klasör sitenin Razor sayfaları içerir. Varsayılan şablon dahil olmak üzere çeşitli sayfalar sağlar *Index.cshtml* uygulama giriş sayfası, de olarak hakkında her şey sayfası, kişi ve benzeri.
 

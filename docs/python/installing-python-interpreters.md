@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59365229"
 ---
 # <a name="install-python-interpreters"></a>Python yorumlayıcılarını yükleme
@@ -38,7 +38,7 @@ Visual Studio gösterir bilinen tüm ortamlarda [ **Python ortamları** ](managi
 | Yorumlayıcı | Açıklama |
 | --- | --- |
 | [CPython](https://www.python.org/) | "Yerel" ve en yaygın olarak kullanılan Yorumlayıcı, 32-bit ve 64-bit sürümleri (32-bit önerilir) kullanılabilir. En son dil özellikleri, en yüksek Python paket uyumluluğu, tam hata ayıklama desteği ve birlikte çalışma içerir [Ipython](https://ipython.org/). Ayrıca bkz: [Python 2 veya Python 3 kullanmalıyım? ](https://wiki,python.org/moin/Python2orPython3). Visual Studio 2015 veya önceki Python 3.6 + desteklemez ve hatalar gibi verebilirsiniz Not **desteklenmeyen python 3.6 sürümünü**. Python 3.5 veya daha önceki kullanmak yerine. |
-| [IronPython](https://github.com/IronLanguages/ironpython2) | Python, 32-bit ve 64 bit sürümlerde kullanılabilir sağlayan bir .NET uygulaması C#/F#/Visual Basic birlikte çalışabilirliği, .NET API'leri, standart Python hata ayıklama (ancak değil C++ karışık mod hata ayıklama için) erişim ve IronPython karışık /C# hata ayıklama. Ancak, IronPython, sanal ortamları desteklemez. |
+| [V Ironpythonu](https://github.com/IronLanguages/ironpython2) | Python, 32-bit ve 64 bit sürümlerde kullanılabilir sağlayan bir .NET uygulaması C#/F#/Visual Basic birlikte çalışabilirliği, .NET API'leri, standart Python hata ayıklama (ancak değil C++ karışık mod hata ayıklama için) erişim ve IronPython karışık /C# hata ayıklama. Ancak, IronPython, sanal ortamları desteklemez. |
 | [Anaconda](https://www.continuum.io) | Bir açık veri bilimi platformu Python tarafından desteklenen ve CPython ve zor yükleme paketlerinin en son sürümünü içerir. Aksi takdirde karar veremez, öneririz. |
 | [PyPy](https://www.pypy.org/) | Yüksek performans izleme JIT uzun süre çalışan programlar ve performans tanımlamak burada durumlar için iyi bir Python uygulamasıdır verir ancak diğer çözümleri bulunamıyor. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
 | [Jython](http://www.jython.org/) | Java sanal makine'üzerinde (JVM) Python uygulaması. Benzer şekilde, IronPython, Jython içinde çalışan kod Java sınıfları ve kitaplıkları ile etkileşim kurabilir, ancak birçok kitaplıkları CPython için hedeflenen kullanmanız mümkün olmayabilir. Visual Studio ile ancak sınırlı destek ile çalıştığı için Gelişmiş hata ayıklama özellikleri. |
@@ -62,7 +62,7 @@ Bu işlem Visual Studio kullanan Yorumlayıcı'nın konumu tanımlayan kayıt de
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Python ortamlarını yönetme](managing-python-environments-in-visual-studio.md)
+- [Python ortamları yönetme](managing-python-environments-in-visual-studio.md)
 - [Proje için yorumlayıcıyı seçme](selecting-a-python-environment-for-a-project.md)
 - [Bağımlılıklar için Requirements.txt dosyasını kullanma](managing-required-packages-with-requirements-txt.md)
 - [Arama yolları](search-paths.md)

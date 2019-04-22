@@ -18,10 +18,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59365804"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio'da Python için seçenekleri
@@ -55,7 +55,7 @@ Vardır ayrıca ek Python özgü seçenekler **metin düzenleyici** > **Python**
 | **Sistem genelinde ise PYTHONPATH değişkenleri yoksay** | Açık | Visual Studio ortamları ve projeleri arama yollarını belirtmek için daha doğrudan bir yolu sağladığından ise PYTHONPATH varsayılan olarak sayılır. Bkz: [arama yolları](search-paths.md) Ayrıntılar için. |
 | **Bağlantılı dosyaları eklerken güncelleştirme arama yolları** | Açık | Ayarlanırsa, ekleme, bir [bağlı dosya](managing-python-projects-in-visual-studio.md#linked-files) projeye güncelleştirmeleri [arama yolları](search-paths.md) böylece IntelliSense tamamlanma veritabanına bağlı dosya klasörünün içeriğini içerebilir. İçeriklerin tamamlama veritabanından hariç tutmak için bu seçeneği temizleyin. |
 | **İçeri aktarılan uyar, modül bulunamıyor** | Açık | Temiz bir içeri aktarılan modül bildiğinizde uyarıları bastırmak için bu seçeneği şu anda kullanılamıyor ancak Aksi takdirde kodu işlemi etkilemez. |
-| **Rapor olarak tutarsız girinti** | **Uyarılar** | Python yorumlayıcısı kapsamını belirlemek için uygun girintisini yoğun bir şekilde bağlı olduğundan, varsayılan olarak Visual Studio kodlama hatalar gösterebilir tutarsız girintileri algıladığında uyarı verir. Kümesine **hataları** daha katı olacak şekilde, programın bu gibi durumlarda, çıkmak neden olur. Bu davranış tamamen devre dışı bırakmak için seçin **yoksa**. |
+| **Rapor olarak tutarsız girinti** | **Uyarıları** | Python yorumlayıcısı kapsamını belirlemek için uygun girintisini yoğun bir şekilde bağlı olduğundan, varsayılan olarak Visual Studio kodlama hatalar gösterebilir tutarsız girintileri algıladığında uyarı verir. Kümesine **hataları** daha katı olacak şekilde, programın bu gibi durumlarda, çıkmak neden olur. Bu davranış tamamen devre dışı bırakmak için seçin **yoksa**. |
 | **Anket/haber denetle** | **Haftada bir** | *Visual Studio 2017 ve önceki sürümleri.* Varsa bir web sayfasıyla Python ilgili anketler ve haber öğelerini içeren bir pencere açmak Visual Studio izin sıklığını ayarlar. Seçenekler **hiçbir zaman**, **günde bir kez**, **haftada bir kez**, ve **ayda bir kez**. |
 | **Tüm gizli kalıcı iletişim kutuları sıfırlama** düğmesi | yok | Farklı iletişim kutularını sağlayan seçenekleri gibi **bunu bir daha gösterme**. Bu seçenekleri temizleyin ve yeniden açmak için iletişim kutularını neden için bu düğmeyi kullanın. |
 

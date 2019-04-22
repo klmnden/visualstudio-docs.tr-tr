@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504347"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio'da yüklü bir UWP uygulama paketinin hatalarını ayıklama
@@ -96,7 +96,7 @@ Uzaktan dağıtım UWP uygulamaları hakkında daha fazla bilgi için bkz. [UWP 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da Hata Ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.md)
 - [Hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md)
 - [Uzaktan hata ayıklama](../debugger/remote-debugging.md)
 - [Windows Güvenlik Duvarı’nı uzaktan hata ayıklama için yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

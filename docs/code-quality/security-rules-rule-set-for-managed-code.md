@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366048"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Yönetilen kod için Güvenlik Kuralları kural kümesi
@@ -63,9 +63,9 @@ Microsoft Güvenlik kuralları kural raporlanan olası güvenlik sorunlarını s
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Saydam metotlar güvenlik onay deyimlerini kullanmamalıdır|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Saydam metotlar yerel kod içine çağırmamalıdır|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Derlemelerin geçerli tanımlayıcı adları olmalıdır|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Güvenli olmayan seri durumdan çıkarıcının BinaryFormatter kullanmayın|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|İlk ayarlamadan BinaryFormatter.Binder BinaryFormatter.Deserialize çağırmayın|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Binder BinaryFormatter.Deserialize çağırmadan önce ayarlandığından emin olun|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Güvenli olmayan seri durumdan çıkarıcı BinaryFormatter kullanmayın|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|İlk olarak BinaryFormatter.Binder öğesini ayarlamadan önce BinaryFormatter.Deserialize çağırmayın|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|BinaryFormatter.Deserialize çağırmadan önce BinaryFormatter.Binder öğesinin ayarlandığından emin olun|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|SQL ekleme güvenlik açıkları için inceleme kodu|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|XSS güvenlik açıkları için inceleme kodu|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Dosya yolu ekleme güvenlik açıkları için inceleme kodu|

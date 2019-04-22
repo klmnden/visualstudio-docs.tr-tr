@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790348"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio'da C++ kullanmaya başlama
@@ -38,7 +38,7 @@ Bu hızlı başlangıcı tamamlamak için C++ ile ilgili bilgi sahibi olmanız g
 
 ::: moniker-end
 
-## <a name="create-a-console-app"></a>Bir konsol uygulaması oluşturma
+## <a name="create-a-console-app"></a>Konsol uygulaması oluşturma
 
 Henüz çalışmıyorsa, Visual Studio'yu açın.
 

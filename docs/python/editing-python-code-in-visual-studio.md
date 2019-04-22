@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366282"
 ---
 # <a name="edit-python-code"></a>Python kodunu düzenleme
@@ -228,5 +228,5 @@ Herhangi bir ad çift veya ok tuşlarını seçerek ve **Enter**, bu tanımlayı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Biçimlendirme](formatting-python-code.md)
-- [Yeniden Düzenle](refactoring-python-code.md)
+- [Yeniden Düzenleme](refactoring-python-code.md)
 - [Bir lint kullanın](linting-python-code.md)

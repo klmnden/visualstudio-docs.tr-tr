@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366737"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: Bir Web sitesi için performans verilerini topla
@@ -103,7 +103,7 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
      Profil Oluşturucu veri dosyasını oluşturur ve veri Özet görünümünü görüntüler [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ana penceresi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- ['a Genel Bakış](../profiling/overviews-performance-tools.md)   
- [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)   
- [İzleme Veri Değerlerini Anlama](../profiling/understanding-instrumentation-data-values.md)   
+ [Genel bakış](../profiling/overviews-performance-tools.md)   
+ [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   
+ [İzleme veri değerlerini anlama](../profiling/understanding-instrumentation-data-values.md)   
  [Örnekleme Veri Değerlerini Anlama](../profiling/understanding-sampling-data-values.md)

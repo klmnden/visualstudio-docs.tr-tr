@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366594"
 ---
 # <a name="python-web-application-project-templates"></a>Python web uygulaması proje şablonları
@@ -54,7 +54,7 @@ Tüm  **\<Framework > Web projesini** şablonları, seçilen framework bağıms�
 | **Bottle Web projesi** | Statik dosyalar içerdiği bir uygulama oluşturur *statik* klasörü ve aracılığıyla kod içinde işlenmesini *app.py*. Tek tek sayfaları için yönlendirme kapsanıyorsa *routes.py*ve *görünümleri* klasörü sayfası şablonlarını içerir.|
 | **Django Web projesi** | Django projesi ve üç sayfası, kimlik doğrulama desteği ve bir SQLite veritabanı (ancak hiçbir veri modelleri) ile bir Django uygulaması oluşturur. Daha fazla bilgi için [Django şablonları](python-django-web-application-project-template.md) ve [Django adımı 4 bilgi](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
 | **Flask Web projesi** | Statik dosyalar içerdiği bir uygulama oluşturur *statik* klasör. Kod *views.py* işleme bulunan Jinja altyapısı kullanarak şablonların yönlendirme *şablonları* klasör. *Runserver.py* dosya başlatma kodunu sağlar. Bkz: [Flask adımı 4 bilgi](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
-| **Flask/Jade Web Project** | Olarak aynı uygulamayla oluşturur **Flask Web projesi** şablon ancak Jade uzantısıyla Jinja şablon oluşturma altyapısı için. |
+| **Webový projekt ve Flask/Jade** | Olarak aynı uygulamayla oluşturur **Flask Web projesi** şablon ancak Jade uzantısıyla Jinja şablon oluşturma altyapısı için. |
 
 ### <a name="polls-group"></a>Polls – grubu
 
@@ -65,7 +65,7 @@ Tüm  **\<Framework > Web projesini** şablonları, seçilen framework bağıms�
 | **Polls – Bottle Webový projekt** | Bir bellek içi veritabanına, MongoDB veya kullanılarak yapılandırılan Azure tablo depolama karşı çalışan bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kod içerdiği *modelleri* klasöründe ve *settings.py* hangi veri deposu kullanıldığını belirlemek için kod dosyası içerir. |
 | **Yoklamalar Django Web projesi** | Django projesi ve bir Django uygulaması üç sayfası ve bir SQLite veritabanı oluşturur. Django yönetim arabirimini oluşturun ve anketler yönetmek kimliği doğrulanmış bir yönetici izin vermek için özelleştirmeleri içerir. Daha fazla bilgi için [Django şablonları](python-django-web-application-project-template.md) ve [öğrenin Django adım 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
 | **Polls – Flask Web projesi** | Bir bellek içi veritabanına, MongoDB veya kullanılarak yapılandırılan Azure tablo depolama karşı çalışan bir uygulama oluşturur `REPOSITORY_NAME` ortam değişkeni. Veri modelleri ve veri deposu kod içerdiği *modelleri* klasöründe ve *settings.py* hangi veri deposu kullanıldığını belirlemek için kod dosyası içerir. Uygulama sayfası şablonları Jinja altyapısı kullanır. Bkz: [Flask adım 5 öğrenin](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
-| **Polls Flask/Jade Web Project** | Olarak aynı uygulamayla oluşturur **yoklamalar Flask Web projesi** şablon ancak Jade uzantısıyla Jinja şablon oluşturma altyapısı için. |
+| **Polls – Webový projekt Flask/Jade** | Olarak aynı uygulamayla oluşturur **yoklamalar Flask Web projesi** şablon ancak Jade uzantısıyla Jinja şablon oluşturma altyapısı için. |
 
 ## <a name="install-project-requirements"></a>Projenizin gereksinimlerini yükleyin
 
@@ -113,7 +113,7 @@ MSBuild söz dizimine sahip herhangi bir proje özelliği veya ortam değişkeni
 
 - **Sunucu komut hata ayıklama** Grup:
   - **Komut**: `bottle` (Modülü)
-  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **bağımsız değişkenler** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Seçeneği, Visual Studio hata ayıklama için kullanırken önerilmez.
 

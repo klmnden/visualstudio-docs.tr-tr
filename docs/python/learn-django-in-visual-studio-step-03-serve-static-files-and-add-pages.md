@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59365710"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>3. Adım: Statik dosyaları işleme, sayfalar eklemek ve şablonu devralma kullanın

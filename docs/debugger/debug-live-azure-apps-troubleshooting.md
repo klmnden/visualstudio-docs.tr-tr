@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857768"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio'da anlık görüntü hata ayıklama için sorun giderme ve bilinen sorunlar
@@ -141,7 +141,7 @@ Anlık görüntü hata ayıklama ve Application Insights site işleme yükler ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'da Hata Ayıklama](../debugger/index.md)
+- [Visual Studio’da hata ayıklama](../debugger/index.md)
 - [Snapshot Debugger'ı kullanarak canlı ASP.NET uygulamalarının hatalarını ayıklama](../debugger/debug-live-azure-applications.md)
 - [Canlı ASP.NET Azure sanal Machines\Virtual makineler ölçek Snapshot Debugger'ı kullanarak kümeleri hata ayıklama](../debugger/debug-live-azure-virtual-machines.md)
 - [Snapshot Debugger'ı kullanarak canlı ASP.NET Azure Kubernetes hata ayıklama](../debugger/debug-live-azure-kubernetes.md)

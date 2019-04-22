@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504412"
 ---
 # <a name="debug-page-project-designer"></a>Hata Ayıklama Sayfası, Proje Tasarımcısı

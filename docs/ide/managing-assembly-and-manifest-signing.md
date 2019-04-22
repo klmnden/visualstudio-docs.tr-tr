@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866698"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Derleme ve bildirim imzalamayı yönetme
@@ -28,7 +28,7 @@ Güçlü bir ad derlemenin kimliğinden (basit metin adından, sürüm numarası
 
 Visual Basic ve C# projelerinde imzalama derlemeler hakkında daha fazla bilgi için bkz: [tanımlayıcı adlı derlemeler oluşturma ve kullanma](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Visual C++ projelerinde imzalama derlemeler hakkında daha fazla bilgi için bkz: [tanımlayıcı adlandırılmış derlemeler (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Görselde derlemeleri imzalama hakkında bilgi için C++ projeleri için bkz: [tanımlayıcı adlandırılmış derlemeler (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > Ters mühendislik karşı derlemenin tanımlayıcı ad imzalama korumaz. Ters mühendislik karşı korumak için bkz: [Dotfuscator Community](dotfuscator/index.md).
@@ -73,4 +73,4 @@ Bildirimleri imzalama hakkında daha fazla bilgi için bkz: [nasıl yapılır: U
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Tanımlayıcı adlı derlemeler](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Tanımlayıcı adlandırılmış derlemeler (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Tanımlayıcı adlandırılmış derlemeler (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

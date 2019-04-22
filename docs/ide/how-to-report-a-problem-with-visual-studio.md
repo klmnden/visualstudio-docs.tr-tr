@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232547"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio veya Visual Studio Yükleyicisi ile ilgili bir sorun bildirme
@@ -126,4 +126,4 @@ Rapor, ancak bir özellik önermek istediğiniz bir sorun yoksa yoktur, bir yer 
 * [Mac için Visual Studio ile ilgili bir sorun bildirin](/visualstudio/mac/report-a-problem)
 * [C++ ile ilgili sorun](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)
-* [Geliştirici Topluluğu veri gizliliği](developer-community-privacy.md)
+* [Geliştirici topluluğu veri gizliliği](developer-community-privacy.md)

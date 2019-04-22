@@ -17,10 +17,10 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018304"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio iş yükü ve bileşen kimlikleri
@@ -31,17 +31,17 @@ Sürüm adlarını aşağıdaki tabloda kullanılabilir iş yükü ve Bileşen k
 
 **İçin güncelleştirilmiş [15,9 sürüm](/visualstudio/releasenotes/vs2017-relnotes/)**
 
-| **Sürüm** | **Kimlik** | **Açıklama** |
+| **Sürümü** | **ID** | **Açıklama** |
 | ----------- | ------ | --------------- |
-| [Görsel&nbsp;Studio Kurumsal&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Üretkenlik ve her boyutta ekiplere yönelik koordinasyonuna yönelik Microsoft DevOps çözümü |
-| [Görsel&nbsp;Studio profesyonel&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Küçük ekipler için profesyonel geliştirici araçları ve Hizmetleri |
+| [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Üretkenlik ve her boyutta ekiplere yönelik koordinasyonuna yönelik Microsoft DevOps çözümü |
+| [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Küçük ekipler için profesyonel geliştirici araçları ve Hizmetleri |
 | [Görsel&nbsp;Studio topluluk&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Ücretsiz, tam olarak Öğrenciler, açık kaynak ve bireysel geliştiriciler için özellikli IDE |
 | [Görsel&nbsp;Studio Takım&nbsp;Gezgini&nbsp;2017](workload-component-id-vs-team-explorer.md?vs-2017) | Microsoft.VisualStudio.Product.TeamExplorer | Visual Studio Geliştirici Araç Seti olmadan Team Foundation Server ve Azure DevOps Hizmetleri ile etkileşim kurma |
-| [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi ile WPF, WinForms ve Win32 gibi yerel ve yönetilen uygulamalar oluşturun. C#, Visual Basic ve Visual C++ desteği içerir. |
+| [Visual Studio Masaüstü Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Söz dizimine duyarlı kod düzenleme, kaynak kodu denetimi ve iş öğesi yönetimi ile WPF, WinForms ve Win32 gibi yerel ve yönetilen uygulamalar oluşturun. C#, Visual Basic ve Visual C++ desteği içerir. |
 | [Görsel&nbsp;Studio derlemesi&nbsp;Araçları&nbsp;2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio derleme araçları Visual Studio IDE'ye gerek kalmadan yerel ve yönetilen MSBuild tabanlı uygulamalar oluşturmanıza olanak tanır. Visual C++ Derleyicileri ve kitaplıkları, MFC, ATL ve C + yüklemek için aşağıdaki seçenek +/ CLI desteği. |
 | [Görsel&nbsp;Studio Test&nbsp;aracı&nbsp;2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft.VisualStudio.Product.TestAgent | Otomatikleştirilmiş testleri ve yük testleri uzaktan çalıştırmak destekler |
 | [Görsel&nbsp;Studio Test&nbsp;denetleyicisi 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Otomatik testleri birden çok makineye dağıtma |
-| [Görsel&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Uzmanı 2017 |
+| [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Uzmanı 2017 |
 | [Görsel&nbsp;Studio geri bildirim&nbsp;istemci&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Geri Bildirim İstemcisi 2017 |
 
 Bu listeler kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'yi yüklemek için komut satırı parametrelerini kullanın](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) sayfası ve [nasıl yapılır: Genişletilebilirlik projeleri Visual Studio 2017'ye geçirme](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) sayfası.
@@ -52,10 +52,10 @@ Bu listeler kullanma hakkında daha fazla bilgi için bkz. [Visual Studio 2017'y
 
 **İçin güncelleştirilmiş [Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/)**
 
-| **Sürüm** | **Kimlik** | **Açıklama** |
+| **Sürümü** | **ID** | **Açıklama** |
 | ----------- | ------ | --------------- |
 | [Görsel&nbsp;Studio Kurumsal&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | Üretkenlik ve her boyutta ekiplere yönelik koordinasyonuna yönelik Microsoft DevOps çözümü |
-| [Görsel&nbsp;Studio profesyonel&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Küçük ekipler için profesyonel geliştirici araçları ve Hizmetleri |
+| [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Küçük ekipler için profesyonel geliştirici araçları ve Hizmetleri |
 | [Görsel&nbsp;Studio topluluk&nbsp;2019](workload-component-id-vs-community.md?vs-2019) | Microsoft.VisualStudio.Product.Community | Ücretsiz, tam olarak Öğrenciler, açık kaynak ve bireysel geliştiriciler için özellikli IDE |
 | [Görsel&nbsp;Studio Takım&nbsp;Gezgini&nbsp;2019](workload-component-id-vs-team-explorer.md?vs-2019) | Microsoft.VisualStudio.Product.TeamExplorer | Visual Studio Geliştirici Araç Seti olmadan Team Foundation Server ve Azure DevOps Hizmetleri ile etkileşim kurma |
 | [Görsel&nbsp;Studio derlemesi&nbsp;Araçları&nbsp;2019](workload-component-id-vs-build-tools.md?vs-2019) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio derleme araçları Visual Studio IDE'ye gerek kalmadan yerel ve yönetilen MSBuild tabanlı uygulamalar oluşturmanıza olanak tanır. Visual C++ Derleyicileri ve kitaplıkları, MFC, ATL ve C + yüklemek için aşağıdaki seçenek +/ CLI desteği. |

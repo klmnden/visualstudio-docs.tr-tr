@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857144"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio ürün geri bildirimi
@@ -63,4 +63,4 @@ Lütfen kullanın **bu sayfa yardımcı oldu?** sayfanın alt kısmındaki geri 
 
 * [Visual Studio ile ilgili bir sorun bildirme](how-to-report-a-problem-with-visual-studio.md)
 * [Geliştirici topluluğu](https://developercommunity.visualstudio.com)
-* [Geliştirici Topluluğu veri gizliliği](developer-community-privacy.md)
+* [Geliştirici topluluğu veri gizliliği](developer-community-privacy.md)

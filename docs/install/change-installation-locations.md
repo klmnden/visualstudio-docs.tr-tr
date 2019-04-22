@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58856333"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio'da yükleme konumları seçin
@@ -108,7 +108,7 @@ Başlamaya hazır mısınız? İşte nasıl.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleme](install-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Visual Studio’yu güncelleştirme](update-visual-studio.md)
 * [Visual Studio’yu değiştirme](update-visual-studio.md)
 * [Visual Studio'yu kaldırma](uninstall-visual-studio.md)

@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: a635ca7369470788f0813f6e246767b64f6af445
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477671"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Değişiklik günlüğü (Unity, Windows için Visual Studio Araçları)
@@ -743,7 +743,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   Sihirbazlar NetworkBehavior iletiler için destek eklendi.
 
--   **KULLANICI ARABİRİMİ:**
+-   **UI:**
 
     -   MonoBehavior iletilerin görünürlüğünü yapılandırmak için bir seçenek eklenmiştir.
 
@@ -767,7 +767,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 
     -   Visual Studio'nun hata ayıklama sırasında donmasıyla sonuçlanabiliyor nedeni bir sorun düzeltildi.
 
--   **KULLANICI ARABİRİMİ:**
+-   **UI:**
 
     -   Bir uyumsuzluk sabit [sekmeleri Studio](https://tabsstudio.com/) Visual Studio uzantısı.
 
@@ -836,7 +836,7 @@ Değişiklik günlüğü Unity için Visual Studio Araçları.
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 preview 2
  2 Nisan 2015'i yayınladı
 
-### <a name="new-features"></a>Yeni özellikler
+### <a name="new-features"></a>Yeni Özellikler
 
 -   **Unity Proje Gezgini:**
 

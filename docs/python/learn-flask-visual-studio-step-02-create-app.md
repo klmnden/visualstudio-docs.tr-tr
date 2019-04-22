@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366607"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2. Adım: Görünümleri ve şablonların ile bir Flask uygulaması oluşturma

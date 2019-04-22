@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ebe87ef6c391f0beae7183c7baa396f5bd95cf02
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366017"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Kendi İşaretçilerimin Bellek Adresini Bozup Bozmadığını Nasıl Anlarım?
@@ -45,5 +45,5 @@ ms.locfileid: "59366017"
 2.  Kesme noktasına ulaştığınızda kullanın **bellek** bellek görüntülemek için pencere içeriği 0x00408000 başlatılıyor. Daha fazla bilgi için [bellek Windows](../debugger/memory-windows.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-- [Yerel Kod Hata Ayıklaması SSS](../debugger/debugging-native-code-faqs.md)
+- [Yerel Kodda Hata Ayıklama SSS](../debugger/debugging-native-code-faqs.md)
 - [Yerel Kodda Hata Ayıklama](../debugger/debugging-native-code.md)

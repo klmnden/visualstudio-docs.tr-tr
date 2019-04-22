@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857586"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio kuruluş dağıtımları için varsayılanları ayarlama
@@ -50,7 +50,7 @@ Bazı kayıt defteri değerlerini, bunların kullanılan değilse zaten ayarlanm
 
 Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 
-| **Ad** | **Tür** | **Varsayılan** | **Açıklama** |
+| **Ad** | **Türü** | **Default** | **Açıklama** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` veya `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Burada paket bildirimlerini dizini ve isteğe bağlı, yükü depolanır. Daha fazla bilgi için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) sayfası. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1. | Hatta yüklendikten sonra paket yüklerini tutun. Değer dilediğiniz zaman değiştirebilirsiniz. İlkeyi devre dışı bırakma örneği onarmak veya değiştirmek için herhangi bir önbelleğe alınan paket yüklerini kaldırır. Daha fazla bilgi için [devre dışı bırakın veya paket önbelleğini taşıma](disable-or-move-the-package-cache.md) sayfası. |
@@ -64,6 +64,6 @@ Aşağıdaki kayıt defteri değerlerini ayarlayabilirsiniz:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Visual Studio'yu yükleme](install-visual-studio.md)
+- [Visual Studio'yu yükleyin](install-visual-studio.md)
 - [Paket önbelleğini devre dışı bırakma veya taşıma](disable-or-move-the-package-cache.md)
 - [Komut satırı parametrelerini kullanarak Visual Studio'yu yükleme](use-command-line-parameters-to-install-visual-studio.md)

@@ -12,10 +12,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58856936"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio sürümlerini yan yana yükleme
@@ -67,7 +67,7 @@ Dile özgü bilgiler için aşağıdaki tabloda ilgili konuya bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleme](install-visual-studio.md?view=vs-2017)
+* [Visual Studio'yu yükleyin](install-visual-studio.md?view=vs-2017)
 * [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
 * [C/C++ oluşturma yalıtılmış uygulamalar ve yan yana derlemeler](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
@@ -86,7 +86,7 @@ Dile özgü bilgiler için aşağıdaki tabloda ilgili konuya bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleme](install-visual-studio.md)
+* [Visual Studio'yu yükleyin](install-visual-studio.md)
 * [Taşıma, geçirme ve Visual Studio projelerini yükseltme](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [C/C++ oluşturma yalıtılmış uygulamalar ve yan yana derlemeler](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366321"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter uzantısını kullanma
@@ -37,7 +37,7 @@ Cookiecutter giriş sayfasında, aşağıdaki gruplar halinde düzenlenmiş aral
 
 | Grup | Açıklama |
 | --- | --- |
-| **Yüklü** | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, havuz için bir alt otomatik olarak kopyalanmış olan *~/.cookiecutters*. Tuşlarına basarak seçilen yüklü şablon silebilmeniz için **Sil**. |
+| **Yüklendi** | Yerel bilgisayarınızda yüklü şablonlar. Çevrimiçi bir şablon kullanıldığında, havuz için bir alt otomatik olarak kopyalanmış olan *~/.cookiecutters*. Tuşlarına basarak seçilen yüklü şablon silebilmeniz için **Sil**. |
 | **Önerilen** | Şablonlar, önerilen akıştan yüklendi. Varsayılan akış, Microsoft tarafından özenle seçilmiş içeriklerden oluşur. Bkz: [Cookiecutter seçenekleri](#cookiecutter-options) aşağıda akışı özelleştirme ile ilgili ayrıntılar. |
 | **GitHub** | GitHub arama sonuçları cookiecutter anahtar sözcüğü. Github'dan sonuçları gelen geri sayfalandırılmış, daha fazla sonuç mevcutsa **yük daha fazla** listesinin sonunda görünür. |
 | **Özel** | Arama kutusuna özel bir konuma girdikten sonra bu grupta görünür. Yerel diskinizde GitHub deposunu tam yolunu yazın veya bir klasörün tam yolunu kullanabilirsiniz. |
@@ -222,4 +222,4 @@ Hataları çalıştırın:
 
 Kullanan bash (Önemli değil):
 
-- **openstack-geliştirme/cookiecutteru**
+- **openstack-dev/cookiecutter**

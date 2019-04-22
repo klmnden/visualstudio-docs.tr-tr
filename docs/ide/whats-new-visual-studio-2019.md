@@ -16,10 +16,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477547"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
@@ -27,7 +27,7 @@ ms.locfileid: "59477547"
 **İçin güncelleştirilmiş [16,0 sürüm](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Visual Studio 2019'ı indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Visual Studio 2019’u İndirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
 Visual Studio 2019 ile tüm geliştiriciler, herhangi bir uygulama ve herhangi bir platform için sınıfının en iyisi Araçlar ve hizmetler elde edersiniz. Visual Studio ilk kez kullanıyorsanız veya bu yıl için kullanmakta olduğunuz bu yeni sürümde beğenmek çok yoktur!
 

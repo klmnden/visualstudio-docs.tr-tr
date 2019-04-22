@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897731"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>UI otomasyonunu kullanarak kodunuzu test etme
@@ -445,7 +445,7 @@ Kodlanmış UI test günlüklerini kullanarak kodlanmış UI testlerini analiz e
 
 - [Test Gezgini ile birim testleri çalıştırma](../test/run-unit-tests-with-test-explorer.md)
 
-- [Yapı işlerinde test yapma](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Yapı işleminizdeki testleri çalıştırın](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Nasıl yapılır: Masaüstüyle etkileşim kuran testleri çalıştırmak için test aracınızı ayarlama](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 

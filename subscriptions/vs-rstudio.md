@@ -8,10 +8,10 @@ ms.topic: conceptual
 description: Visual Studio Enterprise aboneliklerine dahil edilen RStudio Desktop Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
 ms.openlocfilehash: 5bd24bd07254c1173f7590111c27fdcc68206d2a
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/04/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59018890"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Visual Studio Enterprise aboneliklerine dahil edilen RStudio Desktop avantajı
@@ -98,7 +98,7 @@ RStudio, açık kaynak ve ticari sürümlerinde kullanılabilir ve Masaüstü (W
 | Visual Studio Enterprise, Visual Studio Professional (aylık bulut) |       Azure       | Yok |       Yok       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Yok |       Yok       |
 
-<sup>1</sup>*NFR içerir:    Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet, en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
+<sup>1</sup>*NFR içerir:  Değil satışıyla (NFR), Visual Studio Endüstri ortağı (VSIP), BizSpark, MCT yazılım ve Hizmetleri geliştirici, MCT yazılım ve hizmet, en değerli Professional (MVP), bölgesel Yöneticisi (RD) için Microsoft iş ortağı ağı (MPN) FTE, düşünün.*
 
 > [!NOTE]
 > Microsoft Visual Studio Professional yıllık abonelikleri ve Visual Studio Enterprise yıllık bulut aboneliklerine Aboneliklerde artık sunar. Mevcut müşteriler deneyimi ve yenileme, artırın, azaltın veya aboneliklerini iptal olanağı için hiçbir değişiklik olmayacak. Yeni müşteriler Git izlemeleri [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) Visual Studio abonelikleri satın almak için farklı seçenekleri keşfedin.

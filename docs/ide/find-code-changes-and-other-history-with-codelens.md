@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232716"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>CodeLens ile kod değişikliklerini ve diğer geçmişi bulma
@@ -172,7 +172,7 @@ Yerel sürümünüzle birlikte gelen bir değişikliği tuşlarına basarak kar�
 
 Simge **dal** sütun bildirir dal nasıl ilişkili olduğunu içinde çalışmakta olduğunuz dalı için.
 
-|**Simge**|**Değişiklik geldiği:**|
+|**Simgesi**|**Değişiklik geldiği:**|
 |--------------| - |
 |![CodeLens: Geçerli dal simgesini değiştirme](../ide/media/codelensbranchcurrenticon.png)|Geçerli dal|
 |![CodeLens: Ana dal simgesini değiştirme](../ide/media/codelensbranchparenticon.png)|Üst dal|

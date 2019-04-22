@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9fa8837a45939da3dcda16864b3cad697e659da
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232528"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET derleyici platformu Paket sürümü başvurusu
@@ -42,5 +42,5 @@ Aşağıdaki tabloda gösterir [.NET derleyici Platformu (Roslyn) paketi](https:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [.NET Compiler Platform SDK’sı](/dotnet/csharp/roslyn-sdk/)
+- [.NET derleyici Platformu SDK'sı](/dotnet/csharp/roslyn-sdk/)
 - [Roslyn çözümleyicileriyle çalışmaya başlama](getting-started-with-roslyn-analyzers.md)

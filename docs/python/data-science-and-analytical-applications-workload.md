@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366334"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio'da veri bilimi desteğini yükleme

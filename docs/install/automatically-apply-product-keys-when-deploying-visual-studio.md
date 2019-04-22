@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 51cd23fad1aa6964e0d27c20218a13a824ce318d
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59477573"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Visual Studio’yu dağıtırken ürün anahtarlarını otomatik olarak uygulama
@@ -101,5 +101,5 @@ Varsa `StorePID.exe` başarıyla döndürür ürün anahtarı geçerli bir `%ERR
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-* [Visual Studio'yu yükleme](../install/install-visual-studio.md)
+* [Visual Studio'yu yükleyin](../install/install-visual-studio.md)
 * [Visual Studio’nun çevrimdışı yüklemesini oluşturma](../install/create-an-offline-installation-of-visual-studio.md)

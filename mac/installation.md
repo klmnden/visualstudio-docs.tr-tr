@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857326"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 yükleyin
@@ -32,20 +32,20 @@ MacOS üzerinde yerel, platformlar arası .NET uygulamalarını geliştirmeye ba
 1. Yükleyici'den indirin [indirme sayfasında Mac için Visual Studio](https://aka.ms/vsmac).
 2. İndirme tamamlandıktan sonra tıklayın **VisualStudioforMacInstaller.dmg** yükleyici bağlamak için çalıştırın ve ok logosu çift tıklayarak:
 
-    [![Cyüklemeye başlamak için büyük bir ok'yi tıklatın](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Yüklemeye başlamak için büyük oku](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. Internet'ten yüklenen uygulama hakkında bir uyarı ile sunulan. Tıklayın **açık**.
 4. Yükleyicinin sisteminizi denetlerken bekleyin:
 
-    [![THe yükleyici sisteminiz için yüklü bileşenlerin denetler](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![Sisteminiz yüklü bileşenleri için yükleyici denetler](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. Gizlilik ve lisans koşullarını kabul etmek isteyen bir uyarı görüntülenir. Bunları okuyun ve sonra basın için bağlantıları izleyin **devam** kabul ediyorsanız:
 
-    [![Follow koşullarını ve gizlilik bağlantılarını devam kabul etmiyorsanız](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Koşulları ve gizlilik için bağlantıları izleyin, sonra kabul etmiyorsanız devam edin](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
 6. Kullanılabilir iş yüklerinin listesi görüntülenir. Kullanmak için istediklerinizi seçin:
 
-    [![Cİsteğe bağlı hangi iş yükü özelliklerine toplanmasını yüklemek istiyorsunuz](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![İsteğe bağlı bir iş yükü özellikleri yüklemek istediğiniz seçin](media/install-selection-sml.png)](media/install-selection.png#lightbox)
 
 7. Seçimlerinizi yaptıktan sonra basın **yükleme** düğmesi.
 8. İndirir ve Mac ve seçilen iş yükleri için Visual Studio'yu yükler yükleyici ilerleme durumunu görüntüler. Yükleme için gerekli ayrıcalıklara vermek için parolanızı girmeniz istenebilir.
@@ -77,8 +77,8 @@ Mac için Visual Studio yükleme, uygulamalarınız için kod yazmaya olanak tan
 ### <a name="android"></a>Android
 
 1. [Xamarin Android SDK Yöneticisi'ni kullanma](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK öykünücüsü](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Geliştirme için cihazı ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+2. [Android SDK Emulator](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Cihazı Dağıtım için Ayarlama](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET core uygulamaları, ASP.NET Core web uygulamaları, Unity oyun geliştirme
 

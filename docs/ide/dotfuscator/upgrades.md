@@ -1,5 +1,5 @@
 ---
-title: Dotfuscator Community yükseltme
+title: Dotfuscator Community’yi yükseltme
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
@@ -25,13 +25,13 @@ author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866685"
 ---
-# <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community yükseltme
+# <a name="upgrade-dotfuscator-community"></a>Dotfuscator Community’yi yükseltme
 
 Dotfuscator Community birçok uygulama koruması ve sağlamlaştırma özelliklerini hemen Microsoft Visual Studio kullanarak tüm geliştiricilere sunar.
 Ancak, daha fazla özellikler mevcuttur, Dotfuscator sürümüne yükseltme kullanıcılar için kullanılabilir.

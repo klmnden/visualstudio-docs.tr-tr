@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58866724"
 ---
 # <a id="top"> </a> Azure'da Visual Studio görüntüleri
@@ -36,7 +36,7 @@ En son ana sürümleri, Visual Studio 2019, Visual Studio 2017 ve Visual Studio 
 
 | Yayın sürümü                                              | Sürümler                     |     Ürün sürümü      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: RTW                                |    Kurumsal ve topluluk     |      Sürüm 16.0.0      |
+|       Visual Studio 2019 : RTW                                |    Kurumsal ve topluluk     |      Sürüm 16.0.0      |
 | Visual Studio 2017: En son (sürüm 15.9)                    |    Kurumsal ve topluluk     |      Sürüm 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Kurumsal ve topluluk     |      Sürüm 15.0.22     |
 |   Visual Studio 2015: En son (Aktualizace 3)                      |    Kurumsal ve topluluk     |  Sürüm 14.0.25431.01   |

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366906"
 ---
 # <a name="create-a-c-extension-for-python"></a>Python için C++ uzantısı oluşturma
@@ -303,7 +303,7 @@ Aşağıdaki adımlarda anlatıldığı alternatif bir yöntem de diğer Python 
 
     Bkz: [yapı C ve C++ uzantıları](https://docs.python.org/3/extending/building.html) (python.org) bu betik hakkında bilgi için.
 
-    **PyBind11 (superfastcode2 project):**
+    **PyBind11 (superfastcode2 Proje):**
 
     ```python
     import os, sys

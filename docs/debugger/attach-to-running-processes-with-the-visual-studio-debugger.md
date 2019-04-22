@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366412"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
@@ -171,7 +171,7 @@ Hızlı bir şekilde çalışan bir işleme eklemek, Visual Studio'da seçmek i�
 |Uzaktan hata ayıklama ASP.NET 4 veya 4.5 üzerinde bir IIS sunucusu|Uzak Araçlar'ı kullanın ve **iliştirme**|*W3wp.exe*|Bkz: [uzaktan uzak bir IIS bilgisayarında ASP.NET hata ayıklama](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Uzaktan hata ayıklamayı ASP.NET Core IIS sunucusu|Uzak Araçlar'ı kullanın ve **iliştirme**|*dotnet.exe*|Uygulama dağıtımı için bkz: [IIS Yayımla](https://docs.asp.net/en/latest/publishing/iis.html). Hata ayıklama için bkz: [uzak bir IIS bilgisayarda uzaktan hata ayıklama ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Desteklenen uygulama türleri için yerel bir IIS sunucusunda istemci tarafı betikte hata ayıklama |Kullanım **işleme**|*Chrome.exe*, *MicrosoftEdgeCP.exe*, veya *iexplore.exe*|Komut dosyası hata ayıklaması etkinleştirilmelidir. Chrome için ayrıca Chrome seçin ve hata ayıklama modu çalıştırmalısınız **Webkit kod** içinde **ekleme** alan.|
-|Yerel makinede bir C#, Visual Basic veya C++ uygulamasında hata ayıklama|Standart ya da hata ayıklama kullanın (**F5**) veya **iliştirme**|*\<appname>.exe*|Çoğu senaryoda, standart hata ayıklama kullanın ve **iliştirme**.|
+|Yerel makinede bir C#, Visual Basic veya C++ uygulamasında hata ayıklama|Standart ya da hata ayıklama kullanın (**F5**) veya **iliştirme**|*\<Appname > .exe*|Çoğu senaryoda, standart hata ayıklama kullanın ve **iliştirme**.|
 |Uzaktan hata ayıklama bir Windows masaüstü uygulaması|Uzak Araçlar|Yok| Bkz: [uzaktan hata ayıklama, C# veya Visual Basic uygulama](../debugger/remote-debugging-csharp.md) veya [uzaktan hata ayıklama, C++ uygulama](../debugger/remote-debugging-cpp.md)|
 |Hata Ayıklayıcı olmadan uygulamayı başlattıktan sonra yerel makine üzerinde bir ASP.NET uygulamasında hata ayıklama|Kullanım **işleme**|*iiexpress.exe*|Bu yük uygulamanızı hale getirmek yardımcı olabilecek daha hızlı gibi (örneğin) profili oluşturulurken. |
 |Başka bir sunucu işlemi desteklenen uygulama türlerinde hata ayıklama|Sunucu uzak ise, uzak Araçlar kullanın ve **iliştirme**|*Chrome.exe*, *iexplore.exe*, veya diğer işlemler|Gerekirse, Kaynak İzleyicisi işlemi belirlemenize yardımcı olması için kullanın. Bkz: [uzaktan hata ayıklama](../debugger/remote-debugging.md).|
@@ -218,5 +218,5 @@ Uygulamayı doğru sembol dosyaları varsa bazı yerel hata ayıklama senaryolar
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Birden çok işlemde hata ayıklama](../debugger/debug-multiple-processes.md)
-- [Tam Zamanında hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Just-In-Time hata ayıklama](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Uzaktan hata ayıklama](../debugger/remote-debugging.md)
