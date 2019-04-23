@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079155"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Nasıl yapılır: Çalışma sayfalarını veritabanı verileriyle doldurma
 
@@ -35,17 +35,17 @@ Aşağıdaki örnek, bir tasarımcı kullanarak belge düzeyinde projelerde veri
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Bir çalışma sayfasına bir veritabanındaki verilerle doldurmak için
 
-1.  Excel belge düzeyi projesi çalışma açıkken tasarımcıda Visual Studio'da açın.
+1. Excel belge düzeyi projesi çalışma açıkken tasarımcıda Visual Studio'da açın.
 
-2.  Açık **veri kaynakları** penceresi ve projeniz için bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
+2. Açık **veri kaynakları** penceresi ve projeniz için bir veri kaynağı oluşturun. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
 
-3.  İstediğiniz tablo ve alan sürükleyin **veri kaynakları** çalışma penceresine.
+3. İstediğiniz tablo ve alan sürükleyin **veri kaynakları** çalışma penceresine.
 
 Aşağıdaki denetimlerden birini çalışma sayfasında oluşturulur:
 
--   Bir alanı sürüklediğinizde bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi, çalışma sayfasında oluşturulur. Daha fazla bilgi için [NamedRange denetimi](../vsto/namedrange-control.md).
+- Bir alanı sürüklediğinizde bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi, çalışma sayfasında oluşturulur. Daha fazla bilgi için [NamedRange denetimi](../vsto/namedrange-control.md).
 
--   Bir tablo sürüklerseniz bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi, çalışma sayfasında oluşturulur. Daha fazla bilgi için [ListObject denetimine](../vsto/listobject-control.md).
+- Bir tablo sürüklerseniz bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi, çalışma sayfasında oluşturulur. Daha fazla bilgi için [ListObject denetimine](../vsto/listobject-control.md).
 
 Tabloyu seçerek farklı denetim ekleme ya da, alan **veri kaynakları** penceresini açın ve ardından açılır listeden farklı bir denetim seçme.
 
@@ -53,19 +53,19 @@ Tabloyu seçerek farklı denetim ekleme ya da, alan **veri kaynakları** pencere
 
 Denetimin yanı sıra aşağıdaki verilerle ilgili nesneleri otomatik olarak projenize eklenir:
 
--   Veritabanına bağlı veri tablolarının kapsülleyen bir türü belirtilmiş veri kümesi. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
+- Veritabanına bağlı veri tablolarının kapsülleyen bir türü belirtilmiş veri kümesi. Daha fazla bilgi için [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
--   A <xref:System.Windows.Forms.BindingSource> , Denetim türü belirtilmiş veri kümesine bağlanır. Daha fazla bilgi için [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- A <xref:System.Windows.Forms.BindingSource> , Denetim türü belirtilmiş veri kümesine bağlanır. Daha fazla bilgi için [BindingSource bileşenine genel bakış](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Bir TableAdapter veritabanına yazılan veri kümesi bağlar. Daha fazla bilgi için [TableAdapter genel bakışı](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- Bir TableAdapter veritabanına yazılan veri kümesi bağlar. Daha fazla bilgi için [TableAdapter genel bakışı](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   Hiyerarşik güncelleştirmeleri etkinleştirmek için veri kümesinde tablo bağdaştırıcıları koordine etmek için kullanılan bir TableAdapterManager. Daha fazla bilgi için [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md) ve [TableAdapterManager başvuru](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Hiyerarşik güncelleştirmeleri etkinleştirmek için veri kümesinde tablo bağdaştırıcıları koordine etmek için kullanılan bir TableAdapterManager. Daha fazla bilgi için [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md) ve [TableAdapterManager başvuru](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Projeyi çalıştırdığınızda, denetim veri kaynağındaki ilk kaydı görüntüler. Kullanabileceğiniz <xref:System.Windows.Forms.BindingSource> kayıtlarda gezinin olanağı.
 
 ### <a name="to-scroll-through-the-records"></a>Kayıtlarda gezinmek için
 
--   Kullanım <xref:System.Windows.Forms.BindingSource> gibi yöntemler <xref:System.Windows.Forms.BindingSource.MoveNext%2A> ve <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Kullanım <xref:System.Windows.Forms.BindingSource> gibi yöntemler <xref:System.Windows.Forms.BindingSource.MoveNext%2A> ve <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Güncelleştirmeleri yazılmış veri kümesi ve veritabanına gönderme hakkında daha fazla bilgi için bkz: [nasıl yapılır: Bir konak kontrolü verileriyle veri kaynağını güncelleme](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

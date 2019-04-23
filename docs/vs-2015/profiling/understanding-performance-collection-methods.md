@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7432009cb64081fc235ec48a3de5400311260f3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079064"
 ---
 # <a name="understanding-performance-collection-methods"></a>Performans toplama metotlarını anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
  Bazı profil oluşturma yöntemlerini kullanarak, yazılım ve donanım performans sayaçları gibi ek verileri toplayabilirsiniz. Daha fazla bilgi için [ek performans verileri toplama](../profiling/collecting-additional-performance-data.md).  
   
-##  <a name="sampling"></a> Örnekleme  
+## <a name="sampling"></a> Örnekleme  
  Örnekleme profili oluşturma yöntemi, bir profil oluşturma çalışması sırasında bir uygulama tarafından gerçekleştirilen iş hakkında istatistiksel veriler toplar. Örnekleme yöntemi basit ve uygulama yöntemlerini yürütülmesi çok az etkisi.  
   
  Örnekleme profil oluşturma Visual Studio Araçları'nın varsayılan yöntemdir. Aşağıdakiler için kullanışlıdır:  
@@ -57,7 +57,7 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
   [Örnekleme Yöntemi Veri Görünümleri](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> İzleme  
+## <a name="instrumentation"></a> İzleme  
  İzleme profili oluşturma metodu profili oluşturulmuş bir uygulamada işlev çağrıları için ayrıntılı zamanlama toplar. İzleme profil aşağıdakiler için yararlıdır:  
   
 - Disk g/ç gibi giriş/çıkış performans sorunlarını araştırma.  
@@ -82,7 +82,7 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
   [İzleme Metodu Veri Görünümleri](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> Eşzamanlılık  
+## <a name="concurrency"></a> Eşzamanlılık  
  Eşzamanlılık profil oluşturması, çok iş parçacıklı uygulamalar hakkında bilgi toplar. Paylaşılan bir kaynağa erişim için beklenecek toplar profil oluşturma kaynak çekişmesini, rakip iş parçacıkları her zaman ayrıntılı çağrı yığını bilgileri zorla. Eşzamanlılık görselleştirmesi ayrıca kendisi, donanım, işletim sistemi ve diğer işlemleri ana bilgisayarda birden çok iş parçacıklı uygulamanızın nasıl etkileşim hakkında daha fazla genel bilgi toplar:  
   
 - Kaynak Çekişme raporları Çekişme ve modüller, İşlevler, kaynak kod satırlarına ve yönergeleri bekleniyor gerçekleştiği için bir kaynak beklerken geçen toplam süre toplam sayısını görüntüler. Bunlar oluştuğundan zaman çizelgesi grafikleri de çakışmaları gösterir.  
@@ -97,7 +97,7 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
   [Eşzamanlılık görselleştiricisi](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> .NET bellek  
+## <a name="net_memory"></a> .NET bellek  
  .NET bellek ayırma profil oluşturma yöntemi, bilgisayar işlemci, profili oluşturulmuş bir uygulama .NET Framework nesnesinin her ayırma kesintiye uğratır. Nesne yaşam verisi ayrıca toplandığında, profil oluşturucu işlemci her .NET Framework çöp toplamanın ardından kesintiye uğratır.  
   
  Profil Oluşturucu türü, boyut ve sayısının bir ayırmayı oluşturulan ya da bir çöp toplama tahrip edilmiş nesne hakkında bilgi toplar.  
@@ -118,7 +118,7 @@ Visual Studio Profil Araçları performans verilerini toplamak için kullanabile
   
   [.NET Bellek Verisi Görünümleri](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> Katman etkileşimi  
+## <a name="tier_interaction"></a> Katman etkileşimi  
  Katman etkileşimli profil oluşturma ekler bilgi hakkında zaman uyumlu bir profil oluşturma veri dosyasını [!INCLUDE[vstecado](../includes/vstecado-md.md)] arasında çağıran bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sayfa veya diğer uygulama ve [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] veritabanı. Veri sayısı ve zaman çağrıları ve maksimum ve minimum içerir. Örnekleme, izleme, .NET bellek veya eşzamanlılık yöntemi ile toplanan verileri profil oluşturma için katman etkileşim verileri eklenebilir.  
   
  ![Katman etkileşimi profil oluşturma verilerini](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  

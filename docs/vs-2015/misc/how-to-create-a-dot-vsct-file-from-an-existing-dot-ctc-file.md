@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117862"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Nasıl yapılır: Oluşturma bir. Vsct mevcut bir dosya. Ctc dosyası
 Varolan komut tablosu .ctc kaynak dosyasından bir XML tabanlı .vsct dosyası oluşturabilirsiniz. Bunu yaptığınızda yeni avantajlarından yararlanabilirsiniz XML tabanlı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komut tablosu (VSCT) derleyici biçimi.  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Bir .ctc dosyasından .vsct dosyası oluşturmak için  
   
-1.  Perl dil bir kopyasını edinin.  
+1. Perl dil bir kopyasını edinin.  
   
-2.  Perl betik ConvertCTCToVSCT.pl, tipik olarak bulunan bir kopyasını elde  *\<Visual Studio SDK'sını yükleme yolu >* \VisualStudioIntegration\Tools\bin klasör.  
+2. Perl betik ConvertCTCToVSCT.pl, tipik olarak bulunan bir kopyasını elde  *\<Visual Studio SDK'sını yükleme yolu >* \VisualStudioIntegration\Tools\bin klasör.  
   
-3.  Dönüştürmek istediğiniz .ctc kaynak dosyasının bir kopyasını edinin.  
+3. Dönüştürmek istediğiniz .ctc kaynak dosyasının bir kopyasını edinin.  
   
-4.  Dosyaları aynı dizine koyun.  
+4. Dosyaları aynı dizine koyun.  
   
-5.  İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komut istemi penceresinin, dizine gidin.  
+5. İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] komut istemi penceresinin, dizine gidin.  
   
-6.  Tür  
+6. Tür  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

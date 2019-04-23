@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086604"
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Internet'ten İngilizce içeriği yüklemek için  
   
-1.  Seçin **Başlat** seçip **çalıştırma**.  
+1. Seçin **Başlat** seçip **çalıştırma**.  
   
-2.  Aşağıdakileri yazın:  
+2. Aşağıdakileri yazın:  
   
      C:\Program dosyaları (x86) \Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation yüklemek/catalogname VisualStudio14/Locale en-us  
   
-3.  Press ENTER.  
+3. Press ENTER.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>İstemci bilgisayarlarda önceden yüklenmiş yerel Yardım içeriğini dağıtma  
  İçerik kümesi Online'dan tek bir bilgisayara yükleyin ve ardından, yüklenen içerik kümesini başka bilgisayarlara kopyalayabilirsiniz.  
@@ -117,15 +117,15 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
 ##### <a name="to-package-the-content"></a>İçeriği paketlemek için  
   
-1.  Daha sonra dağıtım için içeriğin kopyalanacağı bir klasör oluşturun.  
+1. Daha sonra dağıtım için içeriğin kopyalanacağı bir klasör oluşturun.  
   
      Örneğin: c:\VS12Help.  
   
-2.  Yönetici izinlerine sahip cmd.exe açın.  
+2. Yönetici izinlerine sahip cmd.exe açın.  
   
-3.  1. adımda oluşturduğunuz klasöre gidin.  
+3. 1. adımda oluşturduğunuz klasöre gidin.  
   
-4.  Aşağıdakileri yazın:  
+4. Aşağıdakileri yazın:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o  
   
@@ -135,11 +135,11 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
   
 ##### <a name="to-deploy-the-content"></a>İçerik dağıtmak için  
   
-1.  Bir ağ paylaşımı oluşturun ve theee Yardım içeriğini bu konuma kopyalayın.  
+1. Bir ağ paylaşımı oluşturun ve theee Yardım içeriğini bu konuma kopyalayın.  
   
      Örneğin, c:\VS12Help için içeriği kopyalayın \\\myserver\VS12Help.  
   
-2.  Yardım içeriği için dağıtım komut dosyasını içerecek bir .bat dosyası oluşturun. İstemci büyük olasılıkla bir okuma kilidi itmenin parçası silinen dosyaların hiçbirinde olabileceğinden, güncelleştirmeleri göndermeden önce kapatma istemci olmalıdır.  
+2. Yardım içeriği için dağıtım komut dosyasını içerecek bir .bat dosyası oluşturun. İstemci büyük olasılıkla bir okuma kilidi itmenin parçası silinen dosyaların hiçbirinde olabileceğinden, güncelleştirmeleri göndermeden önce kapatma istemci olmalıdır.  
   
      Örneğin:  
   
@@ -199,7 +199,7 @@ Yardım Görüntüleyici ile veya internet erişimi olmayan ağ ortamları için
     :CONTINUE  
     ```  
   
-3.  Yardım içeriğinin üzerine yükleneceği yerel makinede bat dosyasını çalıştırın.  
+3. Yardım içeriğinin üzerine yükleneceği yerel makinede bat dosyasını çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut satırı bağımsız değişkenleri için Yardım içeriği Yöneticisi](../ide/command-line-arguments-for-the-help-content-manager.md)   

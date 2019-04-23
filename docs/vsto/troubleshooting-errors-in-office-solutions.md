@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084578"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office çözümleri hatalarında sorun giderme
   Visual Studio'da Office çözümleri geliştirirken, aşağıdaki görevleri gerçekleştirirken sorunlarla karşılaşabilirsiniz:
 
--   [Projeleri oluşturma ve yükseltme](#creating)
+- [Projeleri oluşturma ve yükseltme](#creating)
 
--   [Tasarımcıları](#designers)
+- [Tasarımcıları](#designers)
 
--   [Kod yazma](#code)
+- [Kod yazma](#code)
 
--   [Projeler derleme](#building)
+- [Projeler derleme](#building)
 
--   [Proje hata ayıklama](#debugging)
+- [Proje hata ayıklama](#debugging)
 
-##  <a name="creating"></a> Projeleri oluşturma ve yükseltme
+## <a name="creating"></a> Projeleri oluşturma ve yükseltme
  Office projeleri oluşturduğunuzda veya açtığınızda şu hatalarla karşılaşabilirsiniz.
 
 ### <a name="the-project-cannot-be-created"></a>Proje oluşturulamıyor
@@ -60,13 +60,13 @@ ms.locfileid: "56610924"
 
  Bu hatalar, belge Inspector'ı kullanarak kendi kişisel bilgilerine sahip bir çalışma kitabını temel alan bir proje oluşturmak deneyin ortaya çıkabilir. Bu hatadan kaçınmak için proje oluşturmadan önce aşağıdaki adımları gerçekleştirin.
 
-1.  Çalışma kitabını Excel'de açın.
+1. Çalışma kitabını Excel'de açın.
 
-2.  Excel'de, Güven Merkezi'ni açın.
+2. Excel'de, Güven Merkezi'ni açın.
 
-3.  Üzerinde **Gizlilik Seçenekleri** sekmesini Temizle **kaydederken dosya özelliklerinden kişisel bilgileri Kaldır** onay kutusu.
+3. Üzerinde **Gizlilik Seçenekleri** sekmesini Temizle **kaydederken dosya özelliklerinden kişisel bilgileri Kaldır** onay kutusu.
 
-4.  Çalışma kitabını kaydedin ve Excel'i kapatın.
+4. Çalışma kitabını kaydedin ve Excel'i kapatın.
 
 ### <a name="cannot-open-a-project-after-migration"></a>Bir proje, geçişten sonra açılamıyor
  Bir Office çözüm Microsoft Office 2010'a geçirildikten sonra yalnızca 2007 Microsoft Office sistemi yüklü bir geliştirme bilgisayarında proje açılamıyor. Aşağıdaki hatayla karşılaşabilirsiniz.
@@ -84,17 +84,17 @@ ms.locfileid: "56610924"
 
  Projenizi yükseltmeyi tamamladığınızda, başka bir Office çözümü tarafından kullanılmadığından, Visual Studio 2005 araçları Office Second Edition Runtime Geliştirme bilgisayarınızdan kaldırabilirsiniz.
 
-##  <a name="designers"></a> Tasarımcıları
+## <a name="designers"></a> Tasarımcıları
  Belge, çalışma kitabı veya çalışma sayfasını tasarımcıda belge düzeyi projeler ile çalışırken hatalarla karşılaşabilirsiniz.
 
 ### <a name="designer-failed-to-load-correctly"></a>Tasarımcı düzgün yüklenemedi
  Visual Studio, aşağıdaki durumlarda Tasarımcı açılamıyor:
 
--   Excel veya Word'den zaten açık olan ve kalıcı bir iletişim kutusu görüntüleniyor. Tasarımcısını açmak için Excel veya Word'den kalıcı bir iletişim kutusu açmak ve açık kalıcı iletişim kutularını kapatmak sahip olup olmadığını denetleyin. Açık hiçbir kalıcı iletişim kutuları varsa, önce Excel gereken başka bir eylem olabilir veya Word yanıt verir.
+- Excel veya Word'den zaten açık olan ve kalıcı bir iletişim kutusu görüntüleniyor. Tasarımcısını açmak için Excel veya Word'den kalıcı bir iletişim kutusu açmak ve açık kalıcı iletişim kutularını kapatmak sahip olup olmadığını denetleyin. Açık hiçbir kalıcı iletişim kutuları varsa, önce Excel gereken başka bir eylem olabilir veya Word yanıt verir.
 
--   Proje şu anda hata ayıklama yapılıyor. Tasarımcı açmak için durdurmak veya hata ayıklamasını bitirdiğinizde.
+- Proje şu anda hata ayıklama yapılıyor. Tasarımcı açmak için durdurmak veya hata ayıklamasını bitirdiğinizde.
 
--   Bir Excel VSTO geliştirme bilgisayarında yüklü eklenti Excel başlatıldığında bir iletişim kutusu görüntülüyor. Bir Excel belge düzeyi projesi oluşturmak için önce VSTO eklentisi devre dışı bırakmanız gerekir.
+- Bir Excel VSTO geliştirme bilgisayarında yüklü eklenti Excel başlatıldığında bir iletişim kutusu görüntülüyor. Bir Excel belge düzeyi projesi oluşturmak için önce VSTO eklentisi devre dışı bırakmanız gerekir.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Siyah Dikdörtgenler belge veya çalışma sayfasındaki denetimleri görünür
  Denetimleri bir belge veya çalışma grubu, Visual Studio artık denetimleri tanır. Gruplandırılmış denetimleri erişilemez **özellikleri** penceresi ve belge veya çalışma sayfası üzerinde siyah dikdörtgenler olarak görünür. İşlevselliğini geri yüklemek için Denetim grubunu gerekir.
@@ -105,10 +105,10 @@ ms.locfileid: "56610924"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Küçük Resim Ekle komutu Visual Studio Tasarımcısı'nda hiçbir şey yapılmaz
  Excel veya Word Visual Studio tasarımcıda açık olduğunda, tıklayarak **küçük resim** düğmesini **çizimler** Şerit sekmesinde açılmaz **küçük resim** görev bölmesi. Küçük resim eklemek için çalışma kitabı veya ana proje klasöründe belgenin bir kopyasını açın (olan kopyalamayacak *\bin* klasör) Visual Studio dışında küçük resim ekleyin ve ardından çalışma kitabını veya belgeyi kaydedin.
 
-##  <a name="code"></a> Kod yazma
+## <a name="code"></a> Kod yazma
  Office projelerinde kod yazdığınızda, şu hatalarla karşılaşabilirsiniz.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Office nesne bazı olayları C# kullanırken erişilemez
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Bazı olaylar Office nesnelerinin C kullanırken erişilebilir değil\#
  Bazı durumlarda, bir Office birincil birlikte çalışma derlemesi (PIA), bir Visual C# projesinde türü örneği belirli bir olay erişmeyi denediğinizde aşağıdaki gibi bir derleyici hatası görebilirsiniz.
 
  "'Microsoft.Office.Interop.Excel._Application.NewWorkbook' ve 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook' arasında belirsizlik var"
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Word veya Excel ad alanı içe aktardıktan ve içindeki tüm sınıflar erişiminiz olsa bile, tam ad alanı belirsizliğini kaldırmak için Word ve Excel ile tüm türleri nitelemeniz gerekir.
 
-##  <a name="building"></a> Projeler derleme
+## <a name="building"></a> Projeler derleme
  Office projeleri oluşturduğunuzda şu hatalarla karşılaşabilirsiniz.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Sınırlı izinler ile bir belge temel alan bir belge düzeyi projesi derlenemiyor
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>NamedRange denetimi silindikten sonra derleme hataları oluşur.
  Silerseniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> etkin çalışma tasarımcısında, otomatik olarak oluşturulan kodu olmayan bir çalışma denetiminden projenizden kaldırılmayabilir ve derleyici hataları oluşabilir. Kod kaldırıldığından emin olmak için her zaman içeren çalışma seçmelisiniz <xref:Microsoft.Office.Tools.Excel.NamedRange> denetim silmeden önce etkin çalışma yapmak için denetim. Denetim sildiğinizde otomatik olarak oluşturulan kod silinmez, kod çalışma etkinleştirme ve böylece çalışma değiştirilmiş olarak işaretlemek bir değişiklik yapılarak silmek Tasarımcı neden olabilir. Projeyi yeniden kod kaldırılır.
 
-##  <a name="debugging"></a> Proje hata ayıklama
+## <a name="debugging"></a> Proje hata ayıklama
  Office projelerinde hata ayıklaması yaparken şu hatalarla karşılaşabilirsiniz.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Yayımlama ve bir çözüm geliştirme bilgisayarına yüklemeniz kaldırmak için istem görüntülendiğinde

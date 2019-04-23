@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651925"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115373"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>N katmanlı uygulamalarda TableAdapter’lara kod ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "59651925"
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Bir TableAdapter n katmanlı bir uygulama içinde kullanıcı kodu eklemek için  
   
-1.  (Veri kümesi) .xsd dosyasını içeren proje bulun.  
+1. (Veri kümesi) .xsd dosyasını içeren proje bulun.  
   
-2.  Çift tıklayarak **.xsd** dosyayı veri kümesini açın.  
+2. Çift tıklayarak **.xsd** dosyayı veri kümesini açın.  
   
-3.  Sağ `TableAdapter` kodu ekleyin ve ardından istediğiniz**kodu görüntüle**.  
+3. Sağ `TableAdapter` kodu ekleyin ve ardından istediğiniz**kodu görüntüle**.  
   
      Kısmi sınıf oluşturulur ve Kod Düzenleyicisi'nde açılır.  
   
-4.  Kısmi sınıf bildirimi içinde kod ekleyin.  
+4. Kısmi sınıf bildirimi içinde kod ekleyin.  
   
-5.  Aşağıdaki örnek için kodunun nereye ekleneceğini gösterir `CustomersTableAdapter` içinde `NorthwindDataSet`:  
+5. Aşağıdaki örnek için kodunun nereye ekleneceğini gösterir `CustomersTableAdapter` içinde `NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116673"
 ---
 # <a name="navigate-the-uml-model"></a>UML modelinde gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Bu konu UML modelinin ana türlerini tanıtır.
   
  IElement dışında tüm türler özelliklerini bir veya daha fazla üst türden devralır.  
   
--   Model türlerinin özeti için bkz: [UML model öğe türleri](../modeling/uml-model-element-types.md).  
+- Model türlerinin özeti için bkz: [UML model öğe türleri](../modeling/uml-model-element-types.md).  
   
--   API tam ayrıntıları için bkz. [UML modelleme genişletilebilirliği için API Başvurusu](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- API tam ayrıntıları için bkz. [UML modelleme genişletilebilirliği için API Başvurusu](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
 ### <a name="relationships"></a>İlişkiler  
  Özellikler ve UML belirtiminde tanımlanmış ilişkiler .NET özellikleri olarak uygulanır.  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Başka bir model ve diyagramlara erişme  
  Şunları yapabilirsiniz:  
   
--   Kullanım [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] model farklı modellerdeki öğeler arasında bağlantılar oluşturmak için veri yolu. Daha fazla bilgi için [tümleştirme UML modellerini diğer modeller ve araçlarla birlikte](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Kullanım [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] model farklı modellerdeki öğeler arasında bağlantılar oluşturmak için veri yolu. Daha fazla bilgi için [tümleştirme UML modellerini diğer modeller ve araçlarla birlikte](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Bir modelleme projesi ve diyagramları salt okunur modda görünür yapmadan yük [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kullanıcı arabirimi. Daha fazla bilgi için [program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md).  
+- Bir modelleme projesi ve diyagramları salt okunur modda görünür yapmadan yük [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kullanıcı arabirimi. Daha fazla bilgi için [program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Bir modelleme projesi ve onun diyagramlarını açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ve sonra içeriklere erişin. Daha fazla bilgi için [Visual Studio API kullanarak bir UML modeli açma](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
+- Bir modelleme projesi ve onun diyagramlarını açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ve sonra içeriklere erişin. Daha fazla bilgi için [Visual Studio API kullanarak bir UML modeli açma](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)   

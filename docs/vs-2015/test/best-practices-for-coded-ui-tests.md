@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081261"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Kodlanmış UI Testleri için En İyi Yöntemler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Bu konu, kodlanmış UI testleri geliştirirken izlenecek en iyi uygulamaları a
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>En İyi Yöntemler  
  Esnek bir kodlanmış UI testi oluşturmak için aşağıdaki kılavuzları kullanın.  
@@ -64,11 +64,11 @@ Bu konu, kodlanmış UI testleri geliştirirken izlenecek en iyi uygulamaları a
   
 - Bir denetimi artık geçerli olmayan bir onaylama işlemi varsa:  
   
-  -   Onaylama içeren yöntemi silin.  
+  - Onaylama içeren yöntemi silin.  
   
-  -   Test yönteminin'dan bu yöntem çağrısını kaldırın.  
+  - Test yönteminin'dan bu yöntem çağrısını kaldırın.  
   
-  -   UI denetiminin üzerine artı düğmesi sürükleyerek yeni bir onaylama Ekle, UI haritasını açın ve yeni onaylama Ekle.  
+  - UI denetiminin üzerine artı düğmesi sürükleyerek yeni bir onaylama Ekle, UI haritasını açın ve yeni onaylama Ekle.  
   
   Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [kullanım UI Otomasyon için Test kodunuzu](../test/use-ui-automation-to-test-your-code.md).  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 5539f698ba4b4c0998d23e413d2d71ac14e810e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117778"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Nasıl yapılır: Graf görünümünü kullanarak şema genel bakış
 
@@ -21,20 +21,20 @@ Bu konu nasıl kullanılacağını açıklar [graf görünümünü](../xml-tools
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Yeni bir XSD dosyası oluşturun ve kök öğe içerik modeli Görünümü'nde görüntülemek için
 
-1.  Yeni bir XML şema dosyası oluşturma ve dosyayı farklı Kaydet *Relationships.xsd*.
+1. Yeni bir XML şema dosyası oluşturma ve dosyayı farklı Kaydet *Relationships.xsd*.
 
-2.  Tıklayın **görüntülemek ve temel alınan XML şema dosyası düzenleme için kullanım XML Düzenleyicisi** başlangıç görünümünde bağlantı.
+2. Tıklayın **görüntülemek ve temel alınan XML şema dosyası düzenleme için kullanım XML Düzenleyicisi** başlangıç görünümünde bağlantı.
 
-3.  XML şema örnek koddan kopyalama [örnek XML şeması: ilişkileri](../xml-tools/sample-xsd-file-relationships.md) ve varsayılan olarak yeni bir XSD dosyasına eklenen kodu değiştirmek için yapıştırın.
+3. XML şema örnek koddan kopyalama [örnek XML şeması: ilişkileri](../xml-tools/sample-xsd-file-relationships.md) ve varsayılan olarak yeni bir XSD dosyasına eklenen kodu değiştirmek için yapıştırın.
 
-4.  XML Düzenleyicisi'nde herhangi bir yere sağ tıklayıp **Görünüm Tasarımcısı**.
+4. XML Düzenleyicisi'nde herhangi bir yere sağ tıklayıp **Görünüm Tasarımcısı**.
 
-5.  Graf görünümünden seçim **XSD araç**.
+5. Graf görünümünden seçim **XSD araç**.
 
-6.  Seçin **şeması Ayarla** düğümünde **XML Şeması Gezgini** ve düğümü graf görünümünü tasarım yüzeyine sürükleyin. Tüm genel düğümleri ve ilişkileri düğümlerini bağlayan oklar görmeniz gerekir.
+6. Seçin **şeması Ayarla** düğümünde **XML Şeması Gezgini** ve düğümü graf görünümünü tasarım yüzeyine sürükleyin. Tüm genel düğümleri ve ilişkileri düğümlerini bağlayan oklar görmeniz gerekir.
 
      ![Graf Görünümü](../xml-tools/media/relationshipingraphview.gif)
 
-7.  Tasarım yüzeyinde herhangi bir düğümde tıklayın ve şema kümesindeki Seçili düğümün nerede bulunduğunu görmek için içerik haritası çubuğu bakın.
+7. Tasarım yüzeyinde herhangi bir düğümde tıklayın ve şema kümesindeki Seçili düğümün nerede bulunduğunu görmek için içerik haritası çubuğu bakın.
 
-8.  Tasarım yüzeyi ve select herhangi bir öğe düğümü Rick tıklayın **örnek XML oluşturmak** XML örneği görmek için.
+8. Tasarım yüzeyi ve select herhangi bir öğe düğümü Rick tıklayın **örnek XML oluşturmak** XML örneği görmek için.

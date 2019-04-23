@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116218"
 ---
 # <a name="format-specifiers-in-c"></a>C++ içindeki Biçim Belirticileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ ms.locfileid: "54769677"
  İçindeki Biçim belirticileri kullanabilirsiniz **hemen** penceresinde **komut** penceresinde ve hatta kaynak pencerelerinde. Bu pencereler içinde bir ifade üzerinde duraklarsanız, sonuç DataTip içinde görünür. DataTip görünen biçim belirticisini yansıtır.  
   
 > [!NOTE]
->  Yeni bir hata ayıklama motoru değiştirildi ve Visual Studio yerel hata. Bu değişikliğin bir parçası olarak bazı yeni biçimli belirteçler eklendi eklenen ve bazı eskileri kaldırıldı. (Karışık özgün ve yönetilen) birlikte çalışabilirliği bunu yaptığınızda eski hata ayıklayıcı hala kullanılmaktadır hata ayıklamayı C + +/ CLI. Bu konudaki aşağıdaki bölümler her hata ayıklama altyapısı için biçim belirteçlerini gösterir.  
+>  Yeni bir hata ayıklama motoru değiştirildi ve Visual Studio yerel hata. Bu değişikliğin bir parçası olarak bazı yeni biçimli belirteçler eklendi eklenen ve bazı eskileri kaldırıldı. (Karışık özgün ve yönetilen) birlikte çalışabilirliği bunu yaptığınızda eski hata ayıklayıcı hala kullanılmaktadır, hata ayıklama C++/CLI. Bu konudaki aşağıdaki bölümler her hata ayıklama altyapısı için biçim belirteçlerini gösterir.  
 > 
 > - [Biçim belirleyiciler](#BKMK_Visual_Studio_2012_format_specifiers) yeni hata ayıklama altyapısındaki biçim belirteçlerini açıklar.  
->   -   [Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) eski hata ayıklama altyapısında biçimi Belirleyicileri açıklar.  
+>   - [Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) eski hata ayıklama altyapısında biçimi Belirleyicileri açıklar.  
   
 ## <a name="using-format-specifiers"></a>Biçim belirticilerini kullanma  
  Aşağıdaki koda sahipseniz:  
@@ -63,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Biçim belirticileri  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Biçim belirticileri  
  Aşağıdaki tablolarda, Visual Studio'da kullanabileceğiniz biçim tanımlayıcıları gösterilmektedir. Kalın yazılı tanımlayıcıları birlikte çalışma C + ile hata ayıklama için desteklenmez +/ CLI.  
   
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
@@ -94,7 +94,7 @@ int main() {
 > [!NOTE]
 >  Zaman **hv** Biçim belirleyicisi varsa, hata ayıklayıcı arabellek uzunluğunu belirlemek ve uygun öğelerin sayısını görüntülemek çalışır. Her zaman bir dizinin tam arabellek boyutunu bulmak hata ayıklayıcının mümkün olmadığı için belirleyici Boyutlandır kullanması gereken `(pBuffer,[bufferSize])` mümkün olduğunda. **Hv** biçim belirticisi, arabellek boyutu kullanılabilir olduğu senaryoları için tasarlanmıştır  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Diziler olarak işaretçiler için tanımlayıcılar boyutlandırın  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Diziler olarak işaretçiler için tanımlayıcılar boyutlandırın  
  Bir dizi olarak görüntülemek istediğiniz bir nesne işaretçiniz varsa, dizi öğelerinin sayısını belirtmek için bir tamsayı ya da bir ifade kullanabilirsiniz:  
   
 |Belirleyici|Biçimi|Özgün Watch Valuen|Görüntülenen değer|  
@@ -103,7 +103,7 @@ int main() {
 |**[exp]**|Bir tamsayı olarak değerlendirir. geçerli bir C++ ifadesi.|pBuffer, [bufferSize]|Bir dizisi olarak pBuffer görüntüler `bufferSize` öğeleri.|  
 |**expand(n)**|Geçerli bir tamsayı olarak değerlendirir bir C++ ifadesi|pBuffer, expand(2)|Üçüncü öğesine görüntüler  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Biçim belirleyiciler birlikte çalışma C + ile hata ayıklama için +/ CLI  
  Belirleyicilerde **kalın** yalnızca yerel ve C + hata ayıklama için destekleniyor +/ CLI kodu.  
   
 |Belirleyici|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
@@ -126,7 +126,7 @@ int main() {
 |WM|Windows ileti numaraları|0x0010|WM_CLOSE KOMUTU|  
 |!|herhangi bir veri türü görünümü özelleştirmelerini yok sayan, ham biçim|\<gösterim özelleştirilmiş >|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Biçim belirleyiciler bellek konumları'birlikte çalışma'C + ile hata ayıklama +/ CLI  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Biçim belirleyiciler bellek konumları'birlikte çalışma'C + ile hata ayıklama +/ CLI  
  Aşağıdaki tablo, bellek konumları için kullanılan biçimlendirme simgeleri bulunmaktadır. Herhangi bir değer veya konumu değerlendiren bir ifade ile bellek konumu belirleyici kullanabilirsiniz.  
   
 |Sembol|Biçimi|Özgün izleme değeri|Görüntülenen değer|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-bayt karakter (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Birlikte çalışma'C + ile hata ayıklama diziler olarak işaretçiler için belirleyici Boyutlandır +/ CLIt  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Birlikte çalışma'C + ile hata ayıklama diziler olarak işaretçiler için belirleyici Boyutlandır +/ CLIt  
  Bir dizi olarak görüntülemek istediğiniz bir nesne işaretçiniz varsa, dizi öğelerinin sayısını belirtmek için bir tamsayı kullanabilirsiniz:  
   
 |Belirleyici|Biçimi|İfade|Görüntülenen değer|  

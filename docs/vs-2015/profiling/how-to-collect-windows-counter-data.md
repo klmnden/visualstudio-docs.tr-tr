@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4fb88d4db82bde5f93d33716b65e2e8a4b48305a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115672"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Nasıl yapılır: Windows sayaç verileri toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Windows sayaçları profil oluşturma sırasında belirlenen aralıklarla toplan
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>Windows sayaç verileri toplamak için  
   
-1.  Performans Gezgini içinde Windows sayaçları yapılandırmak ve seçmek istediğiniz oturumu sağ **özellikleri**.  
+1. Performans Gezgini içinde Windows sayaçları yapılandırmak ve seçmek istediğiniz oturumu sağ **özellikleri**.  
   
-2.  İçinde **özellik sayfaları**, tıklayın **Windows sayaçları**.  
+2. İçinde **özellik sayfaları**, tıklayın **Windows sayaçları**.  
   
-3.  Seçin **Windows sayaçları toplamak** onay kutusu.  
+3. Seçin **Windows sayaçları toplamak** onay kutusu.  
   
-4.  İçinde **toplama aralığı (milisaniye)** metin kutusunda, bir zaman aralığı yazın.  
+4. İçinde **toplama aralığı (milisaniye)** metin kutusunda, bir zaman aralığı yazın.  
   
-5.  Bir kategori seçin **sayaç kategorisi** aşağı açılan listesi.  
+5. Bir kategori seçin **sayaç kategorisi** aşağı açılan listesi.  
   
-6.  Bir örnekten seçin **örneği** aşağı açılan listesi.  
+6. Bir örnekten seçin **örneği** aşağı açılan listesi.  
   
-7.  Uygulamanızın profilini, kullanmak istediğiniz sayaçları seçin.  
+7. Uygulamanızın profilini, kullanmak istediğiniz sayaçları seçin.  
   
-8.  Tıklayın **uygulayın.**  
+8. Tıklayın **uygulayın.**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

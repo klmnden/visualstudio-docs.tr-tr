@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Visual Studio IDE, Visual Studio aboneliğinize dahil yükleyip öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: 00168d9ab31c29264cc4ca3dc3a65412861aac52
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ecd0baa87b2fd7cfddcc3e5f9bd1298393b5d7ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113839"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Visual Studio 2019 avantajının kullanılmasıyla
 
@@ -77,7 +77,7 @@ IDE indirmek için:
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  İhtiyacınız Visual Studio IDE Yardım, bu kaynaklara göz atın:
+- İhtiyacınız Visual Studio IDE Yardım, bu kaynaklara göz atın:
     - Teknik Destek: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Belgeler](/visualstudio/)
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).

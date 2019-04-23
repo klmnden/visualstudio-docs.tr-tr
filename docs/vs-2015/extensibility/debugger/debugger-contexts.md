@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116244"
 ---
 # <a name="debugger-contexts"></a>Hata Ayıklayıcı Bağlamları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 İçinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hata ayıklama, hata ayıklama altyapısı (DE) aynı anda birçok farklı bağlamları içinde şu şekilde çalışır:  
   
--   Kod bağlamı bir programın yürütülmesine stream'de geçerli konumu açıklar.  
+- Kod bağlamı bir programın yürütülmesine stream'de geçerli konumu açıklar.  
   
--   Belge bağlamı veya konum, kaynak belge içindeki geçerli konumu açıklar.  
+- Belge bağlamı veya konum, kaynak belge içindeki geçerli konumu açıklar.  
   
--   Hangi ifadesinde değerlendirmesi yer alacak bağlam tanımlayan ifade değerlendirme bağlamı.  
+- Hangi ifadesinde değerlendirmesi yer alacak bağlam tanımlayan ifade değerlendirme bağlamı.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Kod Bağlamı](../../extensibility/debugger/code-context.md)  

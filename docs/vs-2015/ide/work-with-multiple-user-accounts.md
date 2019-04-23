@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d269cdb4fe84820174ded9c477fc3c9f917b0b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081235"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Birden çok kullanıcı hesabıyla çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece
   
 #### <a name="sign-in-to-visual-studio"></a>Visual Studio’da oturum açma  
   
-1.  Visual Studio 2015, bir Microsoft hesabı veya kuruluş hesabı ile oturum açın. Kullanıcı adınızı benzer penceresi sağ alt köşesindeki yansıtılan görmeniz gerekir:  
+1. Visual Studio 2015, bir Microsoft hesabı veya kuruluş hesabı ile oturum açın. Kullanıcı adınızı benzer penceresi sağ alt köşesindeki yansıtılan görmeniz gerekir:  
   
      ![Currentlly oturum açmış kullanıcı olarak](../ide/media/vs2015-username.png "VS2015_UserName")  
   
@@ -44,14 +44,14 @@ Birden çok Microsoft hesabına ve/veya iş veya Okul hesapları varsa, böylece
   
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Bağlı hizmet Ekle iletişim kutusu aracılığıyla Azure hesabınıza erişin  
   
-1.  C# dilinde bir evrensel uygulama projesi oluşturun.  
+1. C# dilinde bir evrensel uygulama projesi oluşturun.  
   
-2.  Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle > bağlı hizmet**. Bağlı Sihirbazı görünür ve gösterir Hizmet Ekle, Visual Studio oturum açma ile ilişkili Azure hesabındaki hizmetlerin listesi kimliği Azure için ayrı ayrı oturum açmanız gerekmez unutmayın. Ancak, diğer hesapları için belirli bir bilgisayardan kullanıcıların kaynaklara erişmeye ilk kez oturum açmanız gerekir.  
+2. Çözüm Gezgini'nde proje düğümüne sağ tıklayın ve seçin **Ekle > bağlı hizmet**. Bağlı Sihirbazı görünür ve gösterir Hizmet Ekle, Visual Studio oturum açma ile ilişkili Azure hesabındaki hizmetlerin listesi kimliği Azure için ayrı ayrı oturum açmanız gerekmez unutmayın. Ancak, diğer hesapları için belirli bir bilgisayardan kullanıcıların kaynaklara erişmeye ilk kez oturum açmanız gerekir.  
   
     > [!WARNING]
     >  Bu ilk kez kullanıyorsanız, belirli bir bilgisayarda Visual Studio 2015'te bir Store uygulaması oluşturuyorsanız, Cihazınızı geliştirme modu için ekranına giderek etkinleştirirsiniz istenir **ayarları &#124; . Güncelleştirmeler ve güvenlik &#124; geliştiriciler için** bilgisayarınızda. Daha fazla bilgi için [Cihazınızı geliştirme için etkinleştirme](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
-###  <a name="access_azure"></a> Web projesinde erişimi Azure Active Directory  
+### <a name="access_azure"></a> Web projesinde erişimi Azure Active Directory  
  Azure AD, son kullanıcı çoklu oturum açma ASP.NET MVC web uygulamaları veya Web API hizmetlerindeki AD kimlik doğrulaması için destek sağlar. Etki alanı kimlik doğrulaması, kullanıcı hesabı kimlik doğrulamasını farklıdır; Active Directory etki alanınıza erişimi olan kullanıcılar, mevcut Azure AD hesaplarına web uygulamalarınıza bağlanmak için kullanabilirsiniz. Office 365 uygulamaları, etki alanı kimlik doğrulaması olarak da kullanabilirsiniz. Bu uygulamada görmek için bir web uygulaması oluşturma (**Dosya > Yeni Proje > C# > bulut > ASP.NET Web uygulaması**). Yeni ASP.NET projesi iletişim kutusunda seçin **kimlik doğrulamayı Değiştir**. Kimlik doğrulaması Sihirbazı görünür ve uygulamanızda kullanılacak kimlik doğrulaması türünü seçmenize olanak tanır.  
   
  ![ASP.NET kimlik doğrulaması iletişim kutusu değişimi](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")  

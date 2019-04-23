@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080793"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>İzlenecek yol: Bir veri kaynağı tanımlamak için bir yapılandırma dosyası kullanma
 
@@ -52,7 +52,7 @@ Bu kılavuzu tamamlamak için gerekenler:
 
 3. Seçin **uygulama yapılandırma dosyası** şablonu ve tıklatın **Ekle**.
 
-##  <a name="define-a-custom-configuration-section"></a>Özel yapılandırma bölümü tanımlayın
+## <a name="define-a-custom-configuration-section"></a>Özel yapılandırma bölümü tanımlayın
 
 İnceleme *app.config* dosya. En az bir kök öğe ve XML bildirimi de içerir.
 

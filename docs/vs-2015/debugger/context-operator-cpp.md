@@ -23,22 +23,22 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116621"
 ---
 # <a name="context-operator-c"></a>Bağlam işleci (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu içerik işlecini kullanabilirsiniz. Bağlam işleci, aksi takdirde yerel bir ad tarafından gizlenen bir dış kapsam adı belirtmek için kullanışlıdır.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Söz dizimi  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Söz dizimi  
  Bağlam belirtmenin iki yolu vardır:  
   
-1.  {, [*Modülü*]} *ifadesi*  
+1. {, [*Modülü*]} *ifadesi*  
   
      Küme ayraçları iki virgül ve modül içermelidir (yürütülebilir veya DLL) adını veya tam yolu.  
   
@@ -48,7 +48,7 @@ Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *Modül*! *ifade*  
+2. *Modül*! *ifade*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -66,12 +66,12 @@ Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu
   
   İfade değerlendirici bir ifadede bir sembol karşılaştığında sembolünün şu sırayla arar:  
   
-1.  Sözcük kapsamı geçerli blok küme ayraçları içine alındığına ve dışa doğru kapsayan bir blok ile devam bir deyimler serisini başlayarak dışa doğru. Geçerli blok yönerge işaretçisi adresi geçerli konumu içeren kodudur.  
+1. Sözcük kapsamı geçerli blok küme ayraçları içine alındığına ve dışa doğru kapsayan bir blok ile devam bir deyimler serisini başlayarak dışa doğru. Geçerli blok yönerge işaretçisi adresi geçerli konumu içeren kodudur.  
   
-2.  İşlev kapsamı. Geçerli işlev.  
+2. İşlev kapsamı. Geçerli işlev.  
   
-3.  C++ üye işlevinin içerisinde geçerli konumu ise sınıf kapsamı. Sınıf kapsamı, tüm temel sınıflar içerir. İfade değerlendirici, normal baskınlık kurallarını kullanır.  
+3. C++ üye işlevinin içerisinde geçerli konumu ise sınıf kapsamı. Sınıf kapsamı, tüm temel sınıflar içerir. İfade değerlendirici, normal baskınlık kurallarını kullanır.  
   
-4.  Genel semboller geçerli modül içinde.  
+4. Genel semboller geçerli modül içinde.  
   
-5.  Ortak semboller geçerli programı.
+5. Ortak semboller geçerli programı.

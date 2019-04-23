@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: e1b93685dad395fbda3415e529dbc618c266da66
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58873064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118937"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Visual Studio çekirdek Düzenleyicisi (ile Visual Studio Community 2019'da dahildir)
 
@@ -346,7 +346,7 @@ Microsoft.Net.Component.4.6.1.SDK | .NET framework 4.6.1 SDK'sı | 16.0.28517.75
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET framework 4.6.1 targeting pack | 16.0.28517.75 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 - VS 2015 C++ derleme Araçları (v14.00) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.ATLMFC | V142 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61 | İsteğe Bağlı
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI desteği v142 için derleme araçları | 16.0.28625.61 | İsteğe Bağlı
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++/ CLI v142 derleme araçları desteği | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | C++ modülleri v142 için derleme Araçları (x64/x86 – Deneysel) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017 C++ x64/x86 derleme Araçları (v14.16) | 16.0.28625.61 | İsteğe Bağlı
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | İsteğe Bağlı
@@ -863,7 +863,7 @@ Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | V141 derleme araçlar
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | V141 derleme Araçları (ARM64) için C++ ATL | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | C++ ATL v141 için derleme araçlarını Spectre azaltmalarının bulunduğu (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | Spectre azaltmaları (x86 & x64) ile C++ ATL v141 derleme araçları | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C + +/ CLI desteği v141 için derleme araçları | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++/ CLI v141 derleme araçları desteği | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC | V141 derleme Araçları (x86 & x64) için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | V141 derleme Araçları (ARM) için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | V141 derleme araçları için Spectre azaltmaları (ARM) ile C++ MFC | 16.0.28625.61
@@ -872,5 +872,5 @@ Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC v141 için 
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | Spectre azaltmaları (x86 & x64) ile v141 derleme araçları için C++ MFC | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017 C++ x64/x86 Spectre azaltılabilir kitaplıklar (v14.16) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VisualStudioData | Veri kaynakları ve hizmet başvuruları | 16.0.28707.177
-Microsoft.VisualStudio.Component.WinXP | VS 2017 (v141) araçları [kullanım dışı] için C++ Windows XP desteği | 16.0.28625.61
+Microsoft.VisualStudio.Component.WinXP | C++VS 2017 için Windows XP desteği (v141) araçları [kullanım dışı] | 16.0.28625.61
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 16.0.28621.142

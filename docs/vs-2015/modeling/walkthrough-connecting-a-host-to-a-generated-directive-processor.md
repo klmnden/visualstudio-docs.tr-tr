@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083224"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>İzlenecek yol: Üretilen bir yönerge işlemcisine ana bilgisayar bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
   
  Bu izlenecek yol aşağıdaki görevleri içerir:  
   
--   Kullanarak [!INCLUDE[dsl](../includes/dsl-md.md)] bir etki alanı modeline dayalı bir yönerge işlemcisi oluşturmak için.  
+- Kullanarak [!INCLUDE[dsl](../includes/dsl-md.md)] bir etki alanı modeline dayalı bir yönerge işlemcisi oluşturmak için.  
   
--   Özel metin şablonu ana bilgisayar üretilen bir yönerge işlemcisine bağlama.  
+- Özel metin şablonu ana bilgisayar üretilen bir yönerge işlemcisine bağlama.  
   
--   Özel ana bilgisayarı ile oluşturulan yönerge işlemcisini test etme.  
+- Özel ana bilgisayarı ile oluşturulan yönerge işlemcisini test etme.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bir DSL tanımlamak için aşağıdaki bileşenler yüklemiş olmanız gerekir:  
@@ -87,27 +87,27 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Bir özel metin şablonu konağı üretilen bir yönerge işlemcisine bağlanmak için  
   
-1.  CustomHost çözümü açın.  
+1. CustomHost çözümü açın.  
   
-2.  Üzerinde **proje** menüsünü tıklatın **Başvuru Ekle**.  
+2. Üzerinde **proje** menüsünü tıklatın **Başvuru Ekle**.  
   
      **Başvuru Ekle** iletişim kutusu açılır **.NET** sekmesi görüntülenir.  
   
-3.  Aşağıdaki başvuruları ekleyin:  
+3. Aşağıdaki başvuruları ekleyin:  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.11.0  
+    - Microsoft.VisualStudio.TextTemplating.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  Program.cs veya Module1.vb üst kısmında, aşağıdaki kod satırını ekleyin:  
+4. Program.cs veya Module1.vb üst kısmında, aşağıdaki kod satırını ekleyin:  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -117,7 +117,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
     Imports Microsoft.Win32  
     ```  
   
-5.  Bir özellik için kodu bulun `StandardAssemblyReferences`, aşağıdaki kodla değiştirin:  
+5. Bir özellik için kodu bulun `StandardAssemblyReferences`, aşağıdaki kodla değiştirin:  
   
     > [!NOTE]
     >  Bu adımda, ana destekleyecek oluşturulan yönerge işlemcisi tarafından gerekli derlemelere başvurular ekleyin.  
@@ -153,7 +153,7 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
     }  
     ```  
   
-6.  İşlev kodunu bulun `ResolveDirectiveProcessor`, aşağıdaki kodla değiştirin:  
+6. İşlev kodunu bulun `ResolveDirectiveProcessor`, aşağıdaki kodla değiştirin:  
   
     > [!IMPORTANT]
     >  Bu kod, bağlanmak istediğiniz üretilen bir yönerge işlemcisine adını sabit kodlanmış başvurular içerir. Kolayca bu daha genel yapabileceğiniz, kayıt defterinde listelenen tüm yönerge işlemcileri için bu durumda görünüyor ve bir eşleşme bulmayı dener. Bu durumda, konak ile üretilen bir yönerge işlemcisine işe yarar.  
@@ -227,18 +227,18 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
             }  
     ```  
   
-7.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
+7. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
   
-8.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+8. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Özel ana bilgisayarı ile yönerge işlemcisini test etme  
  İlk özel metin şablonu ana bilgisayarı sınamak için üretilen bir yönerge işlemcisine çağıran bir metin şablonu yazmanız gerekir. Ardından, özel ana bilgisayarı çalıştırırsınız, metin şablonunun adını geçirin ve yönerge düzgün şekilde işlendiğinden emin olun.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Özel ana bilgisayarı sınamak amacıyla metin şablonu oluşturmak için  
   
-1.  Bir metin dosyası oluşturun ve adlandırın `TestTemplateWithDP.tt`. Not Defteri gibi herhangi bir metin düzenleyicisi, dosyayı oluşturmak için kullanabilirsiniz.  
+1. Bir metin dosyası oluşturun ve adlandırın `TestTemplateWithDP.tt`. Not Defteri gibi herhangi bir metin düzenleyicisi, dosyayı oluşturmak için kullanabilirsiniz.  
   
-2.  Aşağıdakileri metin dosyasına ekleyin:  
+2. Aşağıdakileri metin dosyasına ekleyin:  
   
     > [!NOTE]
     >  Metin şablonunun programlama diline özel ana bilgisayarı eşleşmesi gerekmez.  
@@ -310,15 +310,15 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
     #>  
     ```  
   
-3.  Kod içinde \<bilgisayarınızı yolu > ile ilk yordamda oluşturduğunuz özel tasarım dili Sample.min dosyasının yolu.  
+3. Kod içinde \<bilgisayarınızı yolu > ile ilk yordamda oluşturduğunuz özel tasarım dili Sample.min dosyasının yolu.  
   
-4.  Dosyayı kaydedin ve kapatın.  
+4. Dosyayı kaydedin ve kapatın.  
   
 #### <a name="to-test-the-custom-host"></a>Özel ana bilgisayarı sınamak için  
   
-1.  Bir komut istemi penceresi açın.  
+1. Bir komut istemi penceresi açın.  
   
-2.  Özel ana bilgisayar için yürütülebilir dosyanın yolunu yazın, ancak henüz ENTER'a basmayın.  
+2. Özel ana bilgisayar için yürütülebilir dosyanın yolunu yazın, ancak henüz ENTER'a basmayın.  
   
      Örneğin, şunu yazın:  
   
@@ -327,9 +327,9 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
     > [!NOTE]
     >  Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer**ve ardından da dosyayı komut istemi penceresine sürükleyebilirsiniz.  
   
-3.  Bir boşluk yazın.  
+3. Bir boşluk yazın.  
   
-4.  Metin şablonu dosyasının yolunu yazın ve ENTER tuşuna basın.  
+4. Metin şablonu dosyasının yolunu yazın ve ENTER tuşuna basın.  
   
      Örneğin, şunu yazın:  
   
@@ -340,11 +340,11 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
   
      Özel ana bilgisayar uygulaması çalışır ve metin şablonu dönüştürme süreci başlar.  
   
-5.  İçinde **Windows Explorer**, TestTemplateWithDP.txt dosyasını içeren klasöre göz atın.  
+5. İçinde **Windows Explorer**, TestTemplateWithDP.txt dosyasını içeren klasöre göz atın.  
   
      Klasör, dosya TestTemplateWithDP1.txt da içerir.  
   
-6.  Metin şablonu dönüştürme sonuçlarını görmek için bu dosyayı açın.  
+6. Metin şablonu dönüştürme sonuçlarını görmek için bu dosyayı açın.  
   
      Sonuçları oluşturulan metin çıktısı görüntülenir ve şu şekilde görünmelidir:  
   
@@ -359,4 +359,4 @@ Metin şablonlarını işleme kendi ana bilgisayar yazabilirsiniz. Temel özel b
     ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yol: Bir özel metin şablonu konağı oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+ [İzlenecek yol: Özel Metin Şablonu Ana Bilgisayarı Oluşturma](../modeling/walkthrough-creating-a-custom-text-template-host.md)

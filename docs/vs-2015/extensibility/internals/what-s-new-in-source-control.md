@@ -11,12 +11,12 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087328"
 ---
 # <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>Hangi&#39;'teki Visual Studio 2015'te kaynak denetimi
 
@@ -33,17 +33,17 @@ ms.locfileid: "57868697"
   
  Aşağıdaki adımları, kaynak denetim paketi uygulamak için gereken genel bir bakış sağlar. Ayrıntılar için bkz [bir kaynak denetimi VSPackage'ı oluşturma](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
-1.  Özel kaynak denetimi hizmetini proffers bir VSPackage'ı oluşturun.  
+1. Özel kaynak denetimi hizmetini proffers bir VSPackage'ı oluşturun.  
   
-2.  Tarafından proffered kaynak denetimi ile ilgili hizmetler, arabirimler uygulama [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (örneğin, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> arabirimi).  
+2. Tarafından proffered kaynak denetimi ile ilgili hizmetler, arabirimler uygulama [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (örneğin, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> ve <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> arabirimi).  
   
-3.  Kaynak denetimi VSPackage'ı kaydedin.  
+3. Kaynak denetimi VSPackage'ı kaydedin.  
   
-4.  Tüm menü öğelerini, iletişim kutuları, araç çubukları ve bağlam menülerini de dahil olmak üzere kullanıcı Arabirimi, kaynak denetimi uygulayın.  
+4. Tüm menü öğelerini, iletişim kutuları, araç çubukları ve bağlam menülerini de dahil olmak üzere kullanıcı Arabirimi, kaynak denetimi uygulayın.  
   
-5.  Etkin olan ve sizin VSPackage tarafından işlenmesi gereken tüm kaynak denetimi ile ilgili olaylar, kaynak denetimine VSackage geçirilir.  
+5. Etkin olan ve sizin VSPackage tarafından işlenmesi gereken tüm kaynak denetimi ile ilgili olaylar, kaynak denetimine VSackage geçirilir.  
   
-6.  Kaynak denetimi VSPackage'ı gerekir dinlemek için olanlar gibi olayları uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> arabirim yanı sıra izleme proje belge (TPD) olayları (tarafından uygulanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> arabirimi) ve gerekli eylemi gerçekleştirin.  
+6. Kaynak denetimi VSPackage'ı gerekir dinlemek için olanlar gibi olayları uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> arabirim yanı sıra izleme proje belge (TPD) olayları (tarafından uygulanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> arabirimi) ve gerekli eylemi gerçekleştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114333"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Nasıl yapılır: Bir yük testine ek çalışma ayarları ekleme
 
@@ -26,21 +26,21 @@ Yük testi farklı koşullar altında çalıştırabilmeniz için daha fazla yü
 
 ## <a name="to-add-another-run-setting"></a>Başka bir çalıştırma ayarı eklemek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  (İsteğe bağlı) Genişletin **çalıştırma ayarları** klasör.
+2. (İsteğe bağlı) Genişletin **çalıştırma ayarları** klasör.
 
-3.  Sağ **çalıştırma ayarları** klasörü ve select **çalıştırma ayarları Ekle**.
+3. Sağ **çalıştırma ayarları** klasörü ve select **çalıştırma ayarları Ekle**.
 
      Yeni bir çalışma ayarı eklenir **çalıştırma ayarları** klasör.
 
-4.  Üzerinde **görünümü** menüsünde seçin **Özellikler penceresi**.
+4. Üzerinde **görünümü** menüsünde seçin **Özellikler penceresi**.
 
      **Özellikleri** seçili çalışma ayarı için özelliklerle penceresi görüntülenir.
 
-5.  İçinde **özellikleri** penceresinde metin kutusunu kullanın **adı** ayar bir adı çalıştırılmasına vermek için özelliği çalışma ayarı amacını açıklar (örneğin, **ayarı çalıştırın: Beş dakika çalıştırma**).
+5. İçinde **özellikleri** penceresinde metin kutusunu kullanın **adı** ayar bir adı çalıştırılmasına vermek için özelliği çalışma ayarı amacını açıklar (örneğin, **ayarı çalıştırın: Beş dakika çalıştırma**).
 
-6.  Kullanım **özellikleri** çalıştırma ayarlarını değiştirmek için penceresi. Örneğin, çalışma süresini **00:05:00** testiniz için beş dakika çalıştırılacak.
+6. Kullanım **özellikleri** çalıştırma ayarlarını değiştirmek için penceresi. Örneğin, çalışma süresini **00:05:00** testiniz için beş dakika çalıştırılacak.
 
     > [!NOTE]
     > Çalıştırma ayarları özellikleri ve açıklamalarının tam listesi için bkz: [yük testi çalıştırma ayarları özellikleri](../test/load-test-run-settings-properties.md).

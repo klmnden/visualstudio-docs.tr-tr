@@ -13,40 +13,40 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d42c6159cdfadf84edd2c02205dea0b102b134a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4016597d6c88cfe03ebf823e2fea17730b69562
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090985"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Nasıl yapılır: Sıralı İş Akışı Konsol Uygulamaları Oluşturma (Eski)
 Eski kullanarak bir sıralı iş akışı konsol uygulaması projesi oluşturmak için bu adımları [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
 ### <a name="to-create-a-sequential-workflow-console-application"></a>Bir sıralı iş akışı konsol uygulaması oluşturmak için  
   
-1.  Visual Studio’yu çalıştırın.  
+1. Visual Studio’yu çalıştırın.  
   
-2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
      **Yeni proje** iletişim kutusu açılır.  
   
-3.  Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** açılan listenin en üstündeki seçeneğinde **yeni proje** eski Tasarımcı erişmek için pencereye.  
+3. Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** açılan listenin en üstündeki seçeneğinde **yeni proje** eski Tasarımcı erişmek için pencereye.  
   
     > [!NOTE]
     >  Varsayılan seçenek [!INCLUDE[vs2010](../includes/vs2010-md.md)] olduğu **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] ve eski Tasarımcısı'nı kullanmaz.  
   
-4.  İçinde **proje türleri** bölmesi, seçme Visual C# projeleri veya Visual Basic projeleri (altında **diğer diller**) ve ardından **iş akışı**.  
+4. İçinde **proje türleri** bölmesi, seçme Visual C# projeleri veya Visual Basic projeleri (altında **diğer diller**) ve ardından **iş akışı**.  
   
-5.  İçinde **şablonları** bölmesinde **sıralı iş akışı konsol uygulaması**.  
+5. İçinde **şablonları** bölmesinde **sıralı iş akışı konsol uygulaması**.  
   
-6.  İçinde **adı** kutusunda, tanımlamakta kolaylaştırmak, projeniz için açıklayıcı bir ad girin.  
+6. İçinde **adı** kutusunda, tanımlamakta kolaylaştırmak, projeniz için açıklayıcı bir ad girin.  
   
-7.  İçinde **konumu** kutusunda, projeyi kaydedin veya istediğiniz dizin girin **Gözat** gitmek için.  
+7. İçinde **konumu** kutusunda, projeyi kaydedin veya istediğiniz dizin girin **Gözat** gitmek için.  
   
      Windows Form Tasarımcısı açılır ve oluşturduğunuz projenin Form1 görüntüler.  
   
-8.  **Tamam**'ı tıklatın.  
+8. **Tamam**'ı tıklatın.  
   
      İş Akışı Tasarımcısı açılır ve oluşturduğunuz sıralı iş akışı iş akışı tasarım yüzeyine görüntüler.  
   

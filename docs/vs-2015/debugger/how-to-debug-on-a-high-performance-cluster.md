@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a283cfd34d0990a59bc5d8ce1109f2c0ae6b38bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117557"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Nasıl yapılır: Yüksek performanslı kümede hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Yüksek performanslı kümede çoklu işlem program hata ayıklama uzak bilgisay
   
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Kesme noktası filtresi iletişim kutusunu açmak için  
   
-1.  Bir kaynak penceresinde kesme noktası glifine sağ **ayrıştırılmış kodu** penceresinde **çağrı yığını** penceresinde veya **kesme noktaları** penceresi.  
+1. Bir kaynak penceresinde kesme noktası glifine sağ **ayrıştırılmış kodu** penceresinde **çağrı yığını** penceresinde veya **kesme noktaları** penceresi.  
   
-2.  Kısayol menüsünde **filtre**. Bu seçenek üst düzey veya alt menüsü altında görünebilir **kesme noktaları**.  
+2. Kısayol menüsünde **filtre**. Bu seçenek üst düzey veya alt menüsü altında görünebilir **kesme noktaları**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Belirli bir bilgisayarda bir kesme noktası ayarlamak için  
   
-1.  Bilgisayar adını alın **işlemleri** penceresi.  
+1. Bilgisayar adını alın **işlemleri** penceresi.  
   
-2.  Bir kesme noktası seçin ve açın **kesme noktası filtresi** önceki yordamda açıklanan iletişim kutusu.  
+2. Bir kesme noktası seçin ve açın **kesme noktası filtresi** önceki yordamda açıklanan iletişim kutusu.  
   
-3.  İçinde **kesme noktası filtresi** iletişim kutusunda:  
+3. İçinde **kesme noktası filtresi** iletişim kutusunda:  
   
      MachineName =*yourmachinename*  
   
      Daha karmaşık bir filtre oluşturmak için kullanarak ifadeleri birleştirebilirsiniz `&`, AND işleci `||`, OR işleci `!`, NOT işleci ve parantezler.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Belirli bir işlemde bir kesme noktası ayarlamak için  
   
-1.  İşlem adı alma veya işlem kimlik numarasını **işlemleri** penceresi.  
+1. İşlem adı alma veya işlem kimlik numarasını **işlemleri** penceresi.  
   
-2.  Bir kesme noktası seçin ve açın **kesme noktası filtresi** ve ilk yordamdaki gibi iletişim kutusu.  
+2. Bir kesme noktası seçin ve açın **kesme noktası filtresi** ve ilk yordamdaki gibi iletişim kutusu.  
   
-3.  İçinde **kesme noktası filtresi** iletişim kutusunda:  
+3. İçinde **kesme noktası filtresi** iletişim kutusunda:  
   
      `ProcessName =`  *yourprocessname*  
   
@@ -73,15 +73,15 @@ Yüksek performanslı kümede çoklu işlem program hata ayıklama uzak bilgisay
   
      Daha karmaşık bir filtre oluşturmak için kullanarak ifadeleri birleştirebilirsiniz `&`, AND işleci `||`, OR işleci `!`, NOT işleci ve parantezler.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Belirli bir iş parçacığında bir kesme noktası ayarlamak için  
   
-1.  İş parçacığı adı veya iş parçacığı kimlik numarasını **iş parçacıkları** penceresi.  
+1. İş parçacığı adı veya iş parçacığı kimlik numarasını **iş parçacıkları** penceresi.  
   
-2.  Bir kesme noktası seçin ve açın **kesme noktası filtresi** bölümündeki ilk yordamda açıklandığı gibi iletişim kutusu.  
+2. Bir kesme noktası seçin ve açın **kesme noktası filtresi** bölümündeki ilk yordamda açıklandığı gibi iletişim kutusu.  
   
-3.  İçinde **kesme noktası filtresi** iletişim kutusunda:  
+3. İçinde **kesme noktası filtresi** iletişim kutusunda:  
   
      `ThreadName =` *yourthreadname*  
   
@@ -91,7 +91,7 @@ Yüksek performanslı kümede çoklu işlem program hata ayıklama uzak bilgisay
   
      Daha karmaşık bir filtre oluşturmak için kullanarak ifadeleri birleştirebilirsiniz `&`, AND işleci `||`, OR işleci `!`, NOT işleci ve parantezler.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, adlı bir bilgisayarda bir kesme noktası için bir filtre oluşturma işlemi gösterilmektedir `marvin` ve adlı bir iş parçacığı `fourier1`.  

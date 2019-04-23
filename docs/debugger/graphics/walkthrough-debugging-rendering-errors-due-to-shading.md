@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091336"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>İzlenecek yol: Gölgeleme nedeniyle çıkan oluşturma hatalarını ayıklama
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gölgelendirici hata nedeniyle yanlış renklendirilmiştir nesneyi incelemek için grafik tanılama.
 
  Bu izlenecek yol gösterir nasıl yapılır:
 
--   Sorunu gösteren piksel tanımlamak için grafik günlük belgesi inceleyin.
+- Sorunu gösteren piksel tanımlamak için grafik günlük belgesi inceleyin.
 
--   Kullanım **grafik piksel geçmişi** penceresini piksel durumu daha yakından inceleyin.
+- Kullanım **grafik piksel geçmişi** penceresini piksel durumu daha yakından inceleyin.
 
--   Kullanım **HLSL hata ayıklayıcısı** piksel ve köşe gölgelendiricileri incelemek için.
+- Kullanım **HLSL hata ayıklayıcısı** piksel ve köşe gölgelendiricileri incelemek için.
 
 ## <a name="scenario"></a>Senaryo
  Yaygın olarak yanlış renklendirme nesneler üzerinde bir köşe gölgelendiricisi piksel geçtiğinde gerçekleşir gölgelendirici yanlış veya tamamlanmamış bilgiler.

@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e5b50a3f2969f8f22ce938522526a6010c640a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 56ec28d0d9202bfd72d31e95c53038dd1fa475e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111785"
 ---
 # <a name="servers-visual-studio-sdk"></a>Sunucular (Visual Studio SDK)
 Hata ayıklayıcı mimarisinde bir *sunucu*:
 
--   Bir kapsayıcı bağlantı noktaları ve bağlantı noktası sağlayıcıları ve bağlantı noktaları ve bağlantı noktası sağlayıcıları oturum hata ayıklama Yöneticisi (SDM) ve hata ayıklama altyapısı ile iletişim kurar.
+- Bir kapsayıcı bağlantı noktaları ve bağlantı noktası sağlayıcıları ve bağlantı noktaları ve bağlantı noktası sağlayıcıları oturum hata ayıklama Yöneticisi (SDM) ve hata ayıklama altyapısı ile iletişim kurar.
 
--   Kendi adına göre tanımlayabilir ve kendi bağlantı noktası ve bağlantı noktası sağlayıcıları numaralandırılamadı.
+- Kendi adına göre tanımlayabilir ve kendi bağlantı noktası ve bağlantı noktası sağlayıcıları numaralandırılamadı.
 
--   Tarafından temsil edilen bir [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) yalnızca Visual Studio (bir Visual Studio çalışan her örneği için bir sunucu örneğini) tarafından uygulanan arabirimi.
+- Tarafından temsil edilen bir [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) yalnızca Visual Studio (bir Visual Studio çalışan her örneği için bir sunucu örneğini) tarafından uygulanan arabirimi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Bağlantı Noktaları](../../extensibility/debugger/ports.md)

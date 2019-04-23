@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081391"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
 Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] barındırılan bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını ve sonra bir Windows Forms uygulamasından erişebilirsiniz.
@@ -90,11 +90,11 @@ Sonraki adımda oluşturduğunuz bir [!INCLUDE[adonet_edm](../data-tools/include
 
 5. Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki adımlardan birini gerçekleştirin:
 
-    -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
+    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
          -veya-
 
-    -   Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmeye. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
+    - Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmeye. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).
 
 6. Veritabanına parola gerekiyorsa seçin **Evet, bağlantı dizesini hassas verileri eklemek** seçenek düğmesini ve ardından **sonraki** düğmesi.
 

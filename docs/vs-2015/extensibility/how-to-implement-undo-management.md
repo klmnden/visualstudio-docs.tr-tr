@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112617"
 ---
 # <a name="how-to-implement-undo-management"></a>Nasıl yapılır: Uygulama geri alma yönetimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.Visu
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Geri alma yönetimini desteklemek için tek görünüm Düzenleyicisi için  
   
-1.  Çağrı `QueryInterface` üzerinde `IServiceProvider` pencere çerçevesi için arabirimdeki `IOleUndoManager`, geri alma yöneticisi erişmek için belge görünümü nesnesinden (`IID_IOLEUndoManager`).  
+1. Çağrı `QueryInterface` üzerinde `IServiceProvider` pencere çerçevesi için arabirimdeki `IOleUndoManager`, geri alma yöneticisi erişmek için belge görünümü nesnesinden (`IID_IOLEUndoManager`).  
   
-2.  Bir görünümü bir pencere çerçevesine tarihli, onu çağırmak için kullanabileceğiniz bir site işaretçi alır. `QueryInterface` için `IServiceProvider`.  
+2. Bir görünümü bir pencere çerçevesine tarihli, onu çağırmak için kullanabileceğiniz bir site işaretçi alır. `QueryInterface` için `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Burada bir düzenleyici birden çok görünüm destekler durumları  
  Belge ve görünüm ayrımı varsa, belge ile ilişkili normalde bir geri alma yöneticisi yok. Tüm geri alma birimi belge veri nesneyle ilişkili bir geri alma yöneticisi yerleştirilir.  
@@ -48,17 +48,17 @@ Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.Visu
   
 3. Geçiş, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> saklı çağırıyor `IOleCommandTarget` arabirimi aşağıdaki StandardCommandSet97 komutlar için:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Çağrı `QueryInterface` üzerinde `IOleUndoManager` için `IID_IVsChangeTrackingUndoManager`. İşaretçi Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   

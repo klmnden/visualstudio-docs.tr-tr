@@ -12,52 +12,52 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9c67f16e81bd0176ec25aa490c2119267b94159
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bc878a7f4469d7f8ef8bf61d0d5f3b721f39b7e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117752"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Nasıl yapılır: İş Akışı Projeleri Oluşturma (Eski)
 Oluşturmak için bu adımları bir [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen proje [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Bu yordam, eski kullanır [!INCLUDE[wfd1](../includes/wfd1-md.md)] tarafından sağlanan [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
 ### <a name="to-create-a-workflow-project"></a>Bir iş akışı projesi oluşturma  
   
-1.  Başlangıç [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].  
+1. Başlangıç [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].  
   
-2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
      **Yeni proje** iletişim kutusu açılır.  
   
-3.  Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** açılan listenin en üstündeki seçeneğinde **yeni proje** eski Tasarımcı erişmek için pencereye.  
+3. Şunlardan birini seçin **.NET Framework 3.0** seçeneği veya **.NET Framework 3.5** açılan listenin en üstündeki seçeneğinde **yeni proje** eski Tasarımcı erişmek için pencereye.  
   
     > [!NOTE]
     >  Varsayılan seçenek [!INCLUDE[vs2010](../includes/vs2010-md.md)] olduğu **.NET Framework 4**. Bu seçenek oluşturmak için kullanılan [!INCLUDE[wf](../includes/wf-md.md)] hedefleyen uygulamalar [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] ve eski Tasarımcısı'nı kullanmaz.  
   
-4.  İçinde **proje türleri** bölmesinde projeleri Visual C# veya Visual Basic projeleri seçin ve ardından **iş akışı**.  
+4. İçinde **proje türleri** bölmesinde projeleri Visual C# veya Visual Basic projeleri seçin ve ardından **iş akışı**.  
   
-5.  İçinde **şablonları** bölmesinde yüklü proje şablonları birini seçin:  
+5. İçinde **şablonları** bölmesinde yüklü proje şablonları birini seçin:  
   
-    -   Sıralı iş akışı konsol uygulaması  
+    - Sıralı iş akışı konsol uygulaması  
   
-    -   Sıralı iş akışı kitaplığı  
+    - Sıralı iş akışı kitaplığı  
   
-    -   İş akışı etkinlik kitaplığı  
+    - İş akışı etkinlik kitaplığı  
   
-    -   Durum makinesi iş akışı konsol uygulaması  
+    - Durum makinesi iş akışı konsol uygulaması  
   
-    -   Durum makinesi iş akışı kitaplığı  
+    - Durum makinesi iş akışı kitaplığı  
   
-    -   Boş iş akışı projesi  
+    - Boş iş akışı projesi  
   
-6.  İçinde **adı** kutusunda, tanımlamakta kolaylaştırmak, projeniz için açıklayıcı bir ad girin.  
+6. İçinde **adı** kutusunda, tanımlamakta kolaylaştırmak, projeniz için açıklayıcı bir ad girin.  
   
-7.  İçinde **konumu** kutusunda, projeyi kaydedin veya istediğiniz dizin girin **Gözat** dizine gidin.  
+7. İçinde **konumu** kutusunda, projeyi kaydedin veya istediğiniz dizin girin **Gözat** dizine gidin.  
   
      Proje için oluşturulan bir çözüm dizini istiyorsanız belirleyin **çözüm için dizin oluştur** bir ad girin ve onay kutusunu **çözüm adı** kutusu.  
   
-8.  **Tamam**'ı tıklatın.  
+8. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski İş Akışı Projeleri Oluşturma](../workflow-designer/creating-legacy-workflow-projects.md)

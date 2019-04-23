@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079610"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Temel Proje Sistemi Oluşturma, Bölüm 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../ext
   
  Bu izlenecek yol aşağıdaki görevlerin nasıl yerine getirileceğini öğretir:  
   
--   Visual Studio şablonu oluşturun.  
+- Visual Studio şablonu oluşturun.  
   
--   Visual Studio şablonu dağıtın.  
+- Visual Studio şablonu dağıtın.  
   
--   Bir proje türü alt düğüm oluşturma **yeni proje** iletişim kutusu.  
+- Bir proje türü alt düğüm oluşturma **yeni proje** iletişim kutusu.  
   
--   Parametre değiştirme Visual Studio şablonunda etkinleştirin.  
+- Parametre değiştirme Visual Studio şablonunda etkinleştirin.  
   
--   Proje özellik sayfası oluşturun.  
+- Proje özellik sayfası oluşturun.  
   
 > [!NOTE]
 >  Bu kılavuzda açıklanan adımları bir C# projesini temel alıyor. Ancak, dosya adı uzantıları ve kod gibi özellikleri dışında bir Visual Basic projesi için aynı adımları kullanabilirsiniz.  
@@ -120,9 +120,9 @@ Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../ext
 ## <a name="adding-a-minimal-vsct-file"></a>Bir Minimal .vsct dosyası ekleme  
  Visual Studio, yeni veya değiştirilmiş bir Visual Studio şablonu tanıyabilmesi için Kurulum modunda çalıştırılmalıdır. Kurulum modu .vsct dosyası mevcut olmasını gerektirir. Bu nedenle, en az .vsct dosyası projeye eklemeniz gerekir.  
   
-1.  SimpleProject.vsct SimpleProject projeye adlı bir XML dosyası ekleyin.  
+1. SimpleProject.vsct SimpleProject projeye adlı bir XML dosyası ekleyin.  
   
-2.  SimpleProject.vsct dosyasının içeriğini aşağıdaki kodla değiştirin.  
+2. SimpleProject.vsct dosyasının içeriğini aşağıdaki kodla değiştirin.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ Bu serideki ilk izlenecek [1. bölüm bir temel proje sistemi oluşturma](../ext
     </CommandTable>  
     ```  
   
-3.  Ayarlama **derleme eylemi** bu dosyanın **VSCTCompile**. Bu .csproj dosyasında yalnızca de yapabilirsiniz **özellikleri** penceresi. Emin olun **derleme eylemi** bu dosya kümesine **hiçbiri** bu noktada.  
+3. Ayarlama **derleme eylemi** bu dosyanın **VSCTCompile**. Bu .csproj dosyasında yalnızca de yapabilirsiniz **özellikleri** penceresi. Emin olun **derleme eylemi** bu dosya kümesine **hiçbiri** bu noktada.  
   
-    1.  SimpleProject düğümüne sağ tıklayın ve ardından **Düzenle SimpleProject.csproj**.  
+    1. SimpleProject düğümüne sağ tıklayın ve ardından **Düzenle SimpleProject.csproj**.  
   
-    2.  .Csproj dosyasında SimpleProject.vsct öğeyi bulun.  
+    2. .Csproj dosyasında SimpleProject.vsct öğeyi bulun.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Derleme eylemi değiştirme **VSCTCompile**.  
+    3. Derleme eylemi değiştirme **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  Proje dosyası ve düzenleyiciyi kapatın.  
+    4. Proje dosyası ve düzenleyiciyi kapatın.  
   
-    5.  SimpleProject düğümü kaydedin ve sonra da **Çözüm Gezgini** tıklayın **projeyi**.  
+    5. SimpleProject düğümü kaydedin ve sonra da **Çözüm Gezgini** tıklayın **projeyi**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Visual Studio şablon derleme adımlarını İnceleme  
  VSPackage Proje yapı sistemi genellikle Visual Studio Kurulum modunda .vstemplate dosyası değiştirildiğinde veya .vstemplate dosyasını içeren proje yeniden çalıştırır. Normal veya yüksek MSBuild ayrıntı düzeyini ayarlayarak izleyebilirsiniz.  
@@ -209,11 +209,11 @@ ZipProjects:
   
  Bu bölümde, bir konsol alt düğümü SimpleProject proje türü için oluşturma işlemi gösterilmektedir.  
   
-1.  \Templates\Projects\SimpleProject\ klasörü yeniden adlandırmak için \Templates\Projects\ConsoleApp\\.  
+1. \Templates\Projects\SimpleProject\ klasörü yeniden adlandırmak için \Templates\Projects\ConsoleApp\\.  
   
-2.  İçinde **özellikleri** penceresinde \Templates\Projects\ConsoleApp\ klasördeki tüm beş dosyayı seçin ve emin **derleme eylemi** ayarlanır **ZipProject**.  
+2. İçinde **özellikleri** penceresinde \Templates\Projects\ConsoleApp\ klasördeki tüm beş dosyayı seçin ve emin **derleme eylemi** ayarlanır **ZipProject**.  
   
-3.  SimpleProject.vstemplate dosyanın sonuna aşağıdaki satırı ekleyin \<TemplateData > bölümü, kapanış etiketinin hemen önce.  
+3. SimpleProject.vstemplate dosyanın sonuna aşağıdaki satırı ekleyin \<TemplateData > bölümü, kapanış etiketinin hemen önce.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      Bu hem de konsol alt düğüm alt düğüm bir düzeyin SimpleProject üst düğümündeki görünmesini konsol uygulaması şablonu neden olur.  
   
-4.  SimpleProject.vstemplate dosyayı kaydedin.  
+4. SimpleProject.vstemplate dosyayı kaydedin.  
   
-5.  .Csproj dosyasında, ekleme \<OutputSubPath > ZipProject öğelerin her biri için. Önce olarak da projeyi kaldırmak ve proje dosyasını düzenleyin.  
+5. .Csproj dosyasında, ekleme \<OutputSubPath > ZipProject öğelerin her biri için. Önce olarak da projeyi kaldırmak ve proje dosyasını düzenleyin.  
   
-6.  Bulun \<ZipProject > öğeleri. Her \<ZipProject > öğesini ekleyin bir \<OutputSubPath > öğesi ve bu değeri konsol verin. The ZipProject  
+6. Bulun \<ZipProject > öğeleri. Her \<ZipProject > öğesini ekleyin bir \<OutputSubPath > öğesi ve bu değeri konsol verin. The ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Bu ekleme \<PropertyGroup > Proje dosyasına:  
+7. Bu ekleme \<PropertyGroup > Proje dosyasına:  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Proje dosyasını kaydedin ve projeyi yeniden yükleyin.  
+8. Proje dosyasını kaydedin ve projeyi yeniden yükleyin.  
   
 ## <a name="testing-the-project-type-child-node"></a>Proje türü alt düğüm sınaması  
  Değiştirilen proje dosyasını görmek için test olmadığını **konsol** alt düğüm görünür **yeni proje** iletişim kutusu.  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>Proje şablonu parametreleri değiştirmek için  
   
-1.  SimpleProjectNode.cs dosyasında kaldırın `AddFileFromTemplate` yöntemi.  
+1. SimpleProjectNode.cs dosyasında kaldırın `AddFileFromTemplate` yöntemi.  
   
-2.  \Templates\Projects\ConsoleApp\SimpleProject.myproj dosyasında \<RootNamespace > özelliği ve değerini $safeprojectname$ olarak değiştirin.  
+2. \Templates\Projects\ConsoleApp\SimpleProject.myproj dosyasında \<RootNamespace > özelliği ve değerini $safeprojectname$ olarak değiştirin.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  \Templates\Projects\SimpleProject\Program.cs dosyasında, dosyanın içeriğini aşağıdaki kodla değiştirin:  
+3. \Templates\Projects\SimpleProject\Program.cs dosyasında, dosyanın içeriğini aşağıdaki kodla değiştirin:  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  SimpleProject projeyi yeniden derleyin ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.  
+4. SimpleProject projeyi yeniden derleyin ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.  
   
-5.  Yeni bir SimpleProject konsol uygulaması oluşturun. (İçinde **proje türleri** bölmesinde **SimpleProject**. Altında **Visual Studio yüklenmiş şablonlar**seçin **konsol uygulaması**.)  
+5. Yeni bir SimpleProject konsol uygulaması oluşturun. (İçinde **proje türleri** bölmesinde **SimpleProject**. Altında **Visual Studio yüklenmiş şablonlar**seçin **konsol uygulaması**.)  
   
-6.  Yeni oluşturulan projeye, program.cs dosyasını açın. Aşağıdaki gibi görünmelidir (dosyanızdaki GUID değerleri, farklı.):  
+6. Yeni oluşturulan projeye, program.cs dosyasını açın. Aşağıdaki gibi görünmelidir (dosyanızdaki GUID değerleri, farklı.):  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  Bu bölümde oluşturduğunuz özellik sayfasını, alter ve bu proje özelliklerini kaydetmek olanak sağlar:  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. Bu SimpleProjectPackage.cs dosyasına ekleyin `ProvideObject` özniteliğini `SimpleProjectPackage` sınıfı:  
   

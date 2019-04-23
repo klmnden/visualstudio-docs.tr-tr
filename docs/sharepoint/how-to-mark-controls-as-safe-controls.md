@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082041"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Nasıl yapılır: Denetimleri güvenli denetim olarak işaretleme
   Güvenlik için SharePoint, betik ekleme karşı korumalı Web denetimleri ve olmayan Web denetimleri ayırır. Denetimler, korumalı veya *güvenli denetimler*, güvenilir olmayan kullanıcılar tarafından erişilebilir. Denetimleri güvenli denetim girdileri özelliğini bir SharePoint Proje öğesinin veya güvende olarak işaretleyebilirsiniz **paket Tasarımcısı** eklediğinizde bir derleme paketi. Daha fazla bilgi için bkz.
@@ -33,47 +33,47 @@ ms.locfileid: "56646427"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Denetimleri güvenli veya güvenli denetim girdileri özelliğinde Güvensiz olarak işaretlemek için
 
-1.  Bir SharePoint çözümünü bir görsel Web Bölümü projesi oluşturun.
+1. Bir SharePoint çözümünü bir görsel Web Bölümü projesi oluşturun.
 
-2.  İki denetimi Web bölümüne ekleyin: bir metin kutusu ve düğme. Adları, varsayılan değerlerinde, TextBox1 ve Button1, sırasıyla bırakın.
+2. İki denetimi Web bölümüne ekleyin: bir metin kutusu ve düğme. Adları, varsayılan değerlerinde, TextBox1 ve Button1, sırasıyla bırakın.
 
-3.  Web Bölümü'nın iki giriş eklemek **güvenli denetim girdileri** özelliği. Bunu yapmak için üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) düğmesinin yanındaki **güvenli denetim girdileri** özelliği **Özellikleri** penceresi.
+3. Web Bölümü'nın iki giriş eklemek **güvenli denetim girdileri** özelliği. Bunu yapmak için üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) düğmesinin yanındaki **güvenli denetim girdileri** özelliği **Özellikleri** penceresi.
 
      **Güvenli denetim girdileri** iletişim kutusu görüntülenir.
 
-4.  İçinde **güvenli denetim girdileri** iletişim kutusunda **Ekle** iki kez için iki güvenli denetim girdileri eklemek için Ekle düğmesine **üyeleri** bölmesi: düğme ve metin kutusu için bir tane.
+4. İçinde **güvenli denetim girdileri** iletişim kutusunda **Ekle** iki kez için iki güvenli denetim girdileri eklemek için Ekle düğmesine **üyeleri** bölmesi: düğme ve metin kutusu için bir tane.
 
-5.  İlk güvenli denetim girişi seçin ve ardından değerini değiştirebilir, **güvenli** özelliğini **False**, kendi **tür adı** özelliğini **Button1**ve onun **karşı güvenli betik** özelliğini **False**.
+5. İlk güvenli denetim girişi seçin ve ardından değerini değiştirebilir, **güvenli** özelliğini **False**, kendi **tür adı** özelliğini **Button1**ve onun **karşı güvenli betik** özelliğini **False**.
 
      Bu adım, bir güvenli denetim olarak düğme denetimini tanımlar.
 
-6.  İkinci güvenli denetim girişi listeden seçin. Değerini değiştirmeden bırakın, **güvenli** özelliği olarak **True** ve kendi **tür adı** özelliğini **TextBox1** ve kendi **güvenli Betiğe karşı** özelliğini **True**.
+6. İkinci güvenli denetim girişi listeden seçin. Değerini değiştirmeden bırakın, **güvenli** özelliği olarak **True** ve kendi **tür adı** özelliğini **TextBox1** ve kendi **güvenli Betiğe karşı** özelliğini **True**.
 
      Metin kutusu denetimini betik ekleme karşı güvenli bir denetim olarak işaretlendi.
 
-7.  Seçin **Tamam** iletişim kutusunu kapatmak için düğme.
+7. Seçin **Tamam** iletişim kutusunu kapatmak için düğme.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Paket Tasarımcısı'nda güvenli denetim olarak işaretleme
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Güvenli veya paket Tasarımcısı'nda güvenli olarak işaretlemek için denetler
 
-1.  Bir SharePoint çözümünü bir görsel Web Bölümü projesi oluşturun.
+1. Bir SharePoint çözümünü bir görsel Web Bölümü projesi oluşturun.
 
-2.  İki denetimi Web bölümüne ekleyin: bir metin kutusu ve düğme. Adları, varsayılan değerlerinde, TextBox1 ve Button1, sırasıyla bırakın.
+2. İki denetimi Web bölümüne ekleyin: bir metin kutusu ve düğme. Adları, varsayılan değerlerinde, TextBox1 ve Button1, sırasıyla bırakın.
 
      Daha sonra kullanıldığından denetimin ad alanı not alın.
 
-3.  Menü çubuğunda, **derleme** > **Çözümü Derle** Projeyi derlemek için.
+3. Menü çubuğunda, **derleme** > **Çözümü Derle** Projeyi derlemek için.
 
-4.  Başka bir SharePoint çözüm oluşturun.
+4. Başka bir SharePoint çözüm oluşturun.
 
-5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın *Package.Package* dosya ve ardından **açın** açmak için **paket Tasarımcısı**.
+5. İçinde **Çözüm Gezgini**, kısayol menüsünü açın *Package.Package* dosya ve ardından **açın** açmak için **paket Tasarımcısı**.
 
-6.  İçinde **paket Tasarımcısı**, seçin **Gelişmiş** sekmesi.
+6. İçinde **paket Tasarımcısı**, seçin **Gelişmiş** sekmesi.
 
-7.  Altında **ek derlemeler**, seçin **Ekle** düğmesine ve ardından **mevcut bütünleştirilmiş kodu Ekle** listeden.
+7. Altında **ek derlemeler**, seçin **Ekle** düğmesine ve ardından **mevcut bütünleştirilmiş kodu Ekle** listeden.
 
-8.  İçinde **mevcut bütünleştirilmiş kodu Ekle** iletişim kutusunda, üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) düğmesinin yanındaki  **Kaynak yolu**.
+8. İçinde **mevcut bütünleştirilmiş kodu Ekle** iletişim kutusunda, üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) düğmesinin yanındaki  **Kaynak yolu**.
 
 9. 1. adımda oluşturduğunuz SharePoint çözümünden derlemeyi seçin ve ardından **açık** düğmesi.
 

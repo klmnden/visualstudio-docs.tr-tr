@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089295"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Kod ölçümleri sonuçları penceresini kullanma
 
@@ -48,15 +48,15 @@ Görüntülenen sonuçlarını filtreleyebilirsiniz **kod ölçümleri sonuçlar
 
 ### <a name="to-filter-the-code-metrics-results"></a>Kod ölçümleri sonuçları filtrelemek için
 
-1.  Gelen **filtre** listesinde, sütun adı seçin.
+1. Gelen **filtre** listesinde, sütun adı seçin.
 
-2.  İçinde **Min**, görüntülenecek en düşük değerini yazın.
+2. İçinde **Min**, görüntülenecek en düşük değerini yazın.
 
-3.  İçinde **Max**, görüntülenecek maksimum değeri yazın.
+3. İçinde **Max**, görüntülenecek maksimum değeri yazın.
 
-4.  Tıklayın **Filtre Uygula** düğmesi.
+4. Tıklayın **Filtre Uygula** düğmesi.
 
-5.  Sonuç ayrıntıları görmek için hiyerarşi ağacı genişletin.
+5. Sonuç ayrıntıları görmek için hiyerarşi ağacı genişletin.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Eklemek, kaldırmak ve veri sütunları yeniden düzenleme
 
@@ -88,23 +88,23 @@ Azure panoları hakkında daha fazla bilgi için iş öğeleri, bkz: [iş öğel
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Bir sonuca bağlı bir iş öğesi oluşturmak için
 
-1.  Bir sonuca sağ tıklayın.
+1. Bir sonuca sağ tıklayın.
 
-2.  İşaret **iş öğesi oluştur**ve ardından oluşturmak istediğiniz iş öğesinin türüne tıklayın (**hata**, **görev**, vb.).
+2. İşaret **iş öğesi oluştur**ve ardından oluşturmak istediğiniz iş öğesinin türüne tıklayın (**hata**, **görev**, vb.).
 
-3.  Tüm gerekli alanları doldurarak iş öğesi formu tamamlayın.
+3. Tüm gerekli alanları doldurarak iş öğesi formu tamamlayın.
 
-4.  Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet** iş öğesini kaydetmek için.
+4. Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet** iş öğesini kaydetmek için.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Bir sonuca bağlı bir hata oluşturmak için
 
-1.  Seçmek için sonuca tıklayın.
+1. Seçmek için sonuca tıklayın.
 
-2.  Tıklayın **iş öğesi oluşturma** düğmesi.
+2. Tıklayın **iş öğesi oluşturma** düğmesi.
 
-3.  Tüm gerekli alanları doldurarak iş öğesi formu tamamlayın.
+3. Tüm gerekli alanları doldurarak iş öğesi formu tamamlayın.
 
-4.  Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet** iş öğesini kaydetmek için.
+4. Üzerinde **dosya** menüsünde tıklatın **Tümünü Kaydet** iş öğesini kaydetmek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

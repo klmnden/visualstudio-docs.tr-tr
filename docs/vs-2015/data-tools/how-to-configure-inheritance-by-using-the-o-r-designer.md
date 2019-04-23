@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115607"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662276"
   
 ### <a name="to-create-inherited-data-classes"></a>Devralınan veri sınıfları oluşturmak için  
   
-1.  Açık [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ekleyerek bir **LINQ to SQL sınıfları** varolan bir Visual Basic veya C# projesine öğesi.  
+1. Açık [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ekleyerek bir **LINQ to SQL sınıfları** varolan bir Visual Basic veya C# projesine öğesi.  
   
-2.  Temel sınıf olarak kullanmak istediğiniz tabloyu sürükleyin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Temel sınıf olarak kullanmak istediğiniz tabloyu sürükleyin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-3.  İkinci bir kopyası tablosunu sürükleyin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ve yeniden adlandırın. Türetilmiş bir sınıf ya da alt budur.  
+3. İkinci bir kopyası tablosunu sürükleyin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ve yeniden adlandırın. Türetilmiş bir sınıf ya da alt budur.  
   
-4.  Tıklayın **devralma** içinde **Object Relational Designer** sekmesinde **araç kutusu**, alt (adlandırdığınız tablosu) tıklayın ve ardından temel sınıfa bağlanın.  
+4. Tıklayın **devralma** içinde **Object Relational Designer** sekmesinde **araç kutusu**, alt (adlandırdığınız tablosu) tıklayın ve ardından temel sınıfa bağlanın.  
   
     > [!NOTE]
     >  Tıklayın **devralma** öğesi **araç kutusu** ve fare düğmesini bırakın, 3. adımda oluşturulan sınıf ikinci bir kopyası tıklatın ve 2. adımda oluşturduğunuz ilk sınıf'ye tıklayın. Devralım çizgisi üzerindeki oku ilk sınıfa işaret etmesini sağlayacaksınız.  
   
-5.  Her sınıfta görünmesini istemiyorsanız ve ilişkileri için kullanılmayan tüm nesne özellikleri silin. İlişkileri için kullanılan nesne özellikleri silmek çalışırsanız hata alırsınız: [Özellik \<özellik adı > ilişkilendirmesine katıldığından silinemiyor \<ilişkilendirme adı >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5. Her sınıfta görünmesini istemiyorsanız ve ilişkileri için kullanılmayan tüm nesne özellikleri silin. İlişkileri için kullanılan nesne özellikleri silmek çalışırsanız hata alırsınız: [Özellik \<özellik adı > ilişkilendirmesine katıldığından silinemiyor \<ilişkilendirme adı >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
     >  Türetilmiş bir sınıf kendi temel sınıfta tanımlanan özellikleri devraldığından, aynı sütunlara her sınıfında tanımlanamaz. (Sütunları özellikleri olarak uygulanır.) Temel sınıf özelliğini temel alan ait devralma değiştiricisinin ayarlayarak türetilmiş sınıftaki sütunları oluşturulmasını etkinleştirebilirsiniz. Daha fazla bilgi için [NOT ın derleme: Özellikleri ve yöntemleri geçersiz kılan](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-6.  İçinde devralım çizgisini seçin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+6. İçinde devralım çizgisini seçin [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-7.  İçinde **özellikleri** penceresinde **ayrıştırıcı özelliği** sınıflarınızı kayıtları ayırmak için kullanılan sütun adı.  
+7. İçinde **özellikleri** penceresinde **ayrıştırıcı özelliği** sınıflarınızı kayıtları ayırmak için kullanılan sütun adı.  
   
-8.  Ayarlama **türetilen sınıf ayrıştırıcısı değerinin** kaydı devralınan türü olarak atar veritabanındaki değerle özelliği. (Bu, ayrıştırıcı sütunu depolanır ve devralınan sınıf belirlemek için kullanılan değerdir.)  
+8. Ayarlama **türetilen sınıf ayrıştırıcısı değerinin** kaydı devralınan türü olarak atar veritabanındaki değerle özelliği. (Bu, ayrıştırıcı sütunu depolanır ve devralınan sınıf belirlemek için kullanılan değerdir.)  
   
 9. Ayarlama **temel sınıf ayrıştırıcı değeri** özelliğini kaydı temel tür olarak belirten değer. (Bu, ayrıştırıcı sütunu depolanır ve temel sınıf belirlemek için kullanılan değerdir.)  
   

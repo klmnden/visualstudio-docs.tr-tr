@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112058"
 ---
 # <a name="step-7-keep-pairs-visible"></a>7. Adım: Çiftleri Görünür Durumda Tutma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün 
   
 ### <a name="to-keep-pairs-visible"></a>Çiftleri görünür durumda tutmak için  
   
-1.  Aşağıdaki `if` ifadesine `label_Click()` olay işleyicisi yönteminde, Zamanlayıcıyı başladığı deyimi yalnızca yukarıdaki kodu sonuna yakın. Kodu programa eklerken yakından inceleyin. Kodun nasıl çalıştığını bir düşünün.  
+1. Aşağıdaki `if` ifadesine `label_Click()` olay işleyicisi yönteminde, Zamanlayıcıyı başladığı deyimi yalnızca yukarıdaki kodu sonuna yakın. Kodu programa eklerken yakından inceleyin. Kodun nasıl çalıştığını bir düşünün.  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]  
@@ -54,13 +54,13 @@ Oyuncu yalnızca eşleşmeyen simge çiftlerini seçtiği sürece oyun düzgün 
   
      Bu deyimlerden birincisi iki simgenin aynı olup olmadığını denetler. İki değer karşılaştırıldığı için Visual C# programı kullanan `==` eşitlik işleci. İkinci deyim aslında değeri değiştirir (adlı *atama*) ayarını `firstClicked` başvuru değişkenini eşit `null` sıfırlamak için. İşte bu kullandığı `=` atama işleci bunun yerine. Visual C# kullanan `=` değerleri ayarlamak için ve `==` bunları karşılaştırmak için. Visual Basic kullanan `=` hem değişken ataması hem de karşılaştırma için.  
   
-2.  Programı kaydedip çalıştırın ve sonra formdaki simgeleri seçmeye başlayın. Eşleşmeyen bir çift seçerseniz, zamanlayıcının Tick olayı tetiklenir ve iki simge de kaybolur. Eşleşen bir çift seçerseniz yeni `if` deyimi yürütür ve return deyiminin yöntemi aşağıdaki resimde gösterildiği gibi simgeler görünür durumda kalır, böylece Zamanlayıcıyı başlatan kodu atlamasına neden olur.  
+2. Programı kaydedip çalıştırın ve sonra formdaki simgeleri seçmeye başlayın. Eşleşmeyen bir çift seçerseniz, zamanlayıcının Tick olayı tetiklenir ve iki simge de kaybolur. Eşleşen bir çift seçerseniz yeni `if` deyimi yürütür ve return deyiminin yöntemi aşağıdaki resimde gösterildiği gibi simgeler görünür durumda kalır, böylece Zamanlayıcıyı başlatan kodu atlamasına neden olur.  
   
      ![Bu öğreticide oluşturduğunuz oyun](../ide/media/express-finishedgame.png "Express_FinishedGame")  
 Eşleştirme oyunu ve görünür simge çiftleri  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 8: Oyuncunun kazanıp kazanmadığını doğrulamak için yöntem ekleme](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+- Sonraki öğretici adımına gitmek için bkz: [adım 8: Oyuncunun kazanıp kazanmadığını doğrulamak için yöntem ekleme](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [adım 6: Bir zamanlayıcı ekleyin](../ide/step-6-add-a-timer.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 6: Bir zamanlayıcı ekleyin](../ide/step-6-add-a-timer.md).

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089932"
 ---
 # <a name="how-to-manage-editor-windows"></a>Nasıl yapılır: Düzenleyici Windows yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "54761646"
   
 #### <a name="to-split-a-pane"></a>Bir bölme bölmek için  
   
-1.  Odak sağlamak için düzenleyici penceresi içinde'e tıklayın.  
+1. Odak sağlamak için düzenleyici penceresi içinde'e tıklayın.  
   
-2.  Gelen **penceresi** menüsünde **bölünmüş**.  
+2. Gelen **penceresi** menüsünde **bölünmüş**.  
   
      Bir ayırıcı çubukla ayırarak iki bölme düzenleme alanı ayırır. Bağımsız olarak görüntüleyin ve aynı anda farklı kısımlarını etkin belgeyi düzenlemek için bu bölmeleri gezinebilirsiniz. Bir bölmede yapılan değişiklikler diğer yansıtılır.  
   
@@ -45,14 +45,14 @@ ms.locfileid: "54761646"
   
 #### <a name="to-return-to-single-pane-view"></a>Tek bölmeli görünümüne dönmek için  
   
--   Gelen **penceresi** menüsünde **Bölmeyi Kaldır**.  
+- Gelen **penceresi** menüsünde **Bölmeyi Kaldır**.  
   
 ## <a name="creating-new-windows"></a>Yeni Windows oluşturma  
  Bir düzenleyici penceresi birden çok örneğini de oluşturabilirsiniz. Bu özellik, görüntüleyebilir ve farklı bölümlerde aynı anda ayrı ve tam boyutlu düzenleyici pencereleri düzenleme için bir düzenleyici birden fazla örneğini uzun bir belge açmak üzere sağlar.  
   
 #### <a name="to-create-a-new-window"></a>Yeni bir pencere oluşturmak için  
   
--   Üzerinde **penceresi** menüsünde tıklatın **yeni pencere**.  
+- Üzerinde **penceresi** menüsünde tıklatın **yeni pencere**.  
   
      Düzenleyici yeni bir sekmeli örneğini eklenir.  
   

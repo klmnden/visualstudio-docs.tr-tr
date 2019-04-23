@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114243"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel için belge düzeyi özelleştirmelerini programlama kullanmaya başlayın
   Yeni Visual Studio kullanarak, Microsoft Office Excel için belge düzeyi özelleştirmeleri oluşturmaya başlıyor, işte bilmeniz gerekenler.
@@ -44,11 +44,11 @@ ms.locfileid: "56603800"
 
  Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
+- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
 
--   [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
+- [Genişletilmiş nesneleri kullanarak Excel'i otomatikleştirmek](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Excel kullanıcı arabirimini özelleştirme
  Microsoft Office çözümlerinin çoğu, kullanıcıların çözümü ile etkileşim kurmak herhangi bir şekilde sağlamak için Office uygulamasının kullanıcı arabirimini (UI) değiştirin. Belge düzeyi özelleştirmesi kullanılarak Excel UI değiştirmeniz için birçok yol vardır. Örneğin, Şerit denetimleri ekleyebilirsiniz veya Eylemler bölmesinde görüntüleyebilirsiniz. Daha fazla bilgi için [Office UI özelleştirmesi](../vsto/office-ui-customization.md).

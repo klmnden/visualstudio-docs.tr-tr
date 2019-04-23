@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117947"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Gezinti Çubuğu için Destek
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   Uygulanışı <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi genellikle aşağıdaki adımları gerçekleştirir:  
   
-1.  Kaynak dosyası için geçerli bildirimleri bir listesini alın.  
+1. Kaynak dosyası için geçerli bildirimleri bir listesini alın.  
   
      Çeşitli yollarla listelerini doldurmak için vardır. Bir yaklaşım ise özel bir yönteme sürümünüze oluşturmak için <xref:Microsoft.VisualStudio.Package.LanguageService> çağıran sınıfı <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi bir özel ayrıştırma sebeple tüm bildirimleri listesini döndürür. Çağırmak için başka bir yaklaşım olabilir <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi doğrudan <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> özel ayrıştırma nedeni yöntemi. Bildirimler önbelleğe almak için üçüncü bir yaklaşım olabilir <xref:Microsoft.VisualStudio.Package.AuthoringScope> son tam ayrıştırma işlemi tarafından döndürülen sınıfı <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı ve buradan almak <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi.  
   
-2.  Doldurmak veya türlerinin listesi güncelleştirilemiyor.  
+2. Doldurmak veya türlerinin listesi güncelleştirilemiyor.  
   
      Kaynak değiştiğinde veya geçerli giriş işareti konumuna bağlı türleri metin stilini değiştirme seçtiyseniz güncelleştirilmesini türleri listesi içeriğini olabilir. Bu konum için geçirilen Not <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi.  
   
-3.  Geçerli giriş işareti konumuna bağlı türleri listesinde seçilecek türünü belirleyin.  
+3. Geçerli giriş işareti konumuna bağlı türleri listesinde seçilecek türünü belirleyin.  
   
      Geçerli giriş işareti konumunu kapsayan türü bulmak için 1. adımda edinilen bildirimleri arayın ve sonra da türüne türlerini listesine dizinini belirlemek türler listesinde arama yapın.  
   
-4.  Doldurmak veya seçilen türe göre üye listesini güncelleştirin.  
+4. Doldurmak veya seçilen türe göre üye listesini güncelleştirin.  
   
      Üye listesi içinde görüntülenenleri yansıtır **üyeleri** açılır. Üye listesi içeriğini kaynak değiştiyse veya yalnızca seçili türün üyeleri görüntülediğiniz ve seçili türünü değiştirdi güncelleştirilmesi gerekebilir. Kaynak dosyadaki tüm üyelerini görüntülemeyi seçerseniz, listedeki her bir üyesinin metin stili oluşturma, şu anda seçili türün değiştiyse güncelleştirilmesi gerekir.  
   
-5.  Geçerli giriş işareti konumuna bağlı üye listesi seçmek için üye belirleyin.  
+5. Geçerli giriş işareti konumuna bağlı üye listesi seçmek için üye belirleyin.  
   
      Edinilen bildirimleri geçerli giriş işareti konumunu içeren bir üye için 1. adımda arayın ve ardından üye listesinde üye listesine dizinini belirlemek bu üye için arama yapın.  
   
-6.  Dönüş `true` listeleri ya da her iki listesinden seçim için herhangi bir değişiklik yapılmadıysa.
+6. Dönüş `true` listeleri ya da her iki listesinden seçim için herhangi bir değişiklik yapılmadıysa.

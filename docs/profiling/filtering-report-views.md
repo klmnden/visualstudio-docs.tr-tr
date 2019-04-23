@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7613eed6107f5be4909d57dd0ca617e1113ee0d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084394"
 ---
 # <a name="filter-report-views"></a>Rapor görünümlerini filtreleme
 Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor dosyasına dışarı profil oluşturma verileri sınırlamak için veri dosyaları için filtre uygulayabilirsiniz. Bir rapor için zaman damgası değerlerini arasındaki verileri sınırlayabilir ve belirli işlem ve iş parçacıkları için verileri sınırlayabilirsiniz. Filtreler bir dosyaya kaydedin ve kaydedilmiş filtre içeri aktararak Bu filtre üzerinde farklı bir profil oluşturma veri dosyasını oluşturun.
@@ -28,11 +28,11 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
 
 #### <a name="to-create-a-profiler-report-filter"></a>Bir profil oluşturucu rapor filtresi oluşturmak için
 
-1.  Performans Raporu Görünüm Filtresi penceresi görüntülenmiyorsa, tıklayın **Göster filtre** performans rapor görünümü araç.
+1. Performans Raporu Görünüm Filtresi penceresi görüntülenmiyorsa, tıklayın **Göster filtre** performans rapor görünümü araç.
 
      Performans Raporu Görünüm filtresi bir tablodur. Tablodaki her satır bir filtre yan tümcesi temsil eder. Bir filtre için istediğiniz sayıda yan tümce ekleyebilirsiniz.
 
-2.  Filtre eklemek istediğiniz her yan tümce için bir satır aşağıdaki alanlarda değerleri girin veya seçin.
+2. Filtre eklemek istediğiniz her yan tümce için bir satır aşağıdaki alanlarda değerleri girin veya seçin.
 
     |Alan|Açıklama|
     |-----------|-----------------|
@@ -61,33 +61,33 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Bir dosyadan varolan bir filtreyi yüklemek için
 
-1.  Performans rapor görünümü araç çubuğunda **içeri aktarma filtre**.
+1. Performans rapor görünümü araç çubuğunda **içeri aktarma filtre**.
 
      **Yük filtre** iletişim kutusu görüntülenir.
 
-2.  Filtre (.vspf) dosyası yüklemek için konum ve dosya adını belirtin.
+2. Filtre (.vspf) dosyası yüklemek için konum ve dosya adını belirtin.
 
 #### <a name="to-execute-a-filter"></a>Bir filtre yürütmek için
 
--   Performans rapor görünümü araç çubuğunda **yürütme filtre**.
+- Performans rapor görünümü araç çubuğunda **yürütme filtre**.
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Yürütülmesi çok uzun sürecek bir filtre durdurmak için
 
--   Performans rapor görünümü araç çubuğunda **Durdur filtre**.
+- Performans rapor görünümü araç çubuğunda **Durdur filtre**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Rapor görünümünde filtreyi kaldırmak için
 
-1.  Performans Raporu Görünüm filtresi yan tümcelerinde satırlarını silin.
+1. Performans Raporu Görünüm filtresi yan tümcelerinde satırlarını silin.
 
-2.  Performans rapor görünümü araç çubuğunda **yürütme filtre**.
+2. Performans rapor görünümü araç çubuğunda **yürütme filtre**.
 
 #### <a name="to-save-a-filter-to-a-file"></a>Bir filtre bir dosyaya kaydetmek için
 
-1.  Performans rapor görünümü araç çubuğunda **dışarı aktarma filtre**.
+1. Performans rapor görünümü araç çubuğunda **dışarı aktarma filtre**.
 
      **Kaydet filtre** iletişim kutusu görüntülenir.
 
-2.  Filtre (.vspf) dosyası kaydetmek için konum ve dosya adını belirtin.
+2. Filtre (.vspf) dosyası kaydetmek için konum ve dosya adını belirtin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Performans Araçları Rapor Görünümlerini Özelleştirme](../profiling/customizing-performance-tools-report-views.md)

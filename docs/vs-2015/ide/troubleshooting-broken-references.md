@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113956"
 ---
 # <a name="troubleshooting-broken-references"></a>Bozuk Başvurularda Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Bozuk bir proje başvurusu, başvuru yolu düzelterek düzeltmek için  
   
-1.  İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve tıklayın **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve tıklayın **özellikleri**.  
   
-2.  **Proje Tasarımcısı** görünür.  
+2. **Proje Tasarımcısı** görünür.  
   
-3.  Visual Basic kullanıyorsanız **başvuruları** sayfasında ve tıklayın **başvuru yolları** düğmesi. İçinde **başvuru yolları** iletişim içinde başvurmak istediğiniz öğeyi içeren klasörün yolunu yazın **klasör** alan ve ardından **klasörü Ekle** düğmesi.  
+3. Visual Basic kullanıyorsanız **başvuruları** sayfasında ve tıklayın **başvuru yolları** düğmesi. İçinde **başvuru yolları** iletişim içinde başvurmak istediğiniz öğeyi içeren klasörün yolunu yazın **klasör** alan ve ardından **klasörü Ekle** düğmesi.  
   
      -veya-  
   
@@ -69,20 +69,20 @@ Uygulamanızı kırık referans kullanmaya çalışırsa, bir özel durum hatas�
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Artık bir dosya bozuk proje başvurusunu sürücünüzde düzeltmek için  
   
--   Başvuruyu silin.  
+- Başvuruyu silin.  
   
--   Başvuru bilgisayarınızda başka bir konum varsa, o konumdan okuyun.  
+- Başvuru bilgisayarınızda başka bir konum varsa, o konumdan okuyun.  
   
--   Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Başvurulan dosya yeniden adlandırıldı  
  Bu, başvurulan dosya yeniden adlandırıldı mümkündür.  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Bozuk bir başvuruyu yeniden adlandırıldı bir dosya için düzeltme  
   
--   Başvuru silin ve ardından yeniden adlandırılan dosyaya bir başvuru ekleyin.  
+- Başvuru silin ve ardından yeniden adlandırılan dosyaya bir başvuru ekleyin.  
   
--   Başvuru bilgisayarınızda başka bir konum varsa, onu o konumdan okumak zorundasınız. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Başvuru bilgisayarınızda başka bir konum varsa, onu o konumdan okumak zorundasınız. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Ağ bağlantısı veya kimlik doğrulaması başarısız oldu  
  Erişilemeyen dosyalar için birçok olası nedenleri şunlar olabilir: başarısız bir ağ bağlantısı veya örneğin başarısız bir kimlik doğrulama. Her bir nedenden kurtarma benzersiz bir çeşit olabilir; Örneğin, gerekli kaynaklara erişim için yerel yönetici başvurmanız gerekebilir. Ancak, başvuru silme ve onu kullanan kod çözme her zaman bir seçenektir. Daha fazla bilgi için [NIB nasıl: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  

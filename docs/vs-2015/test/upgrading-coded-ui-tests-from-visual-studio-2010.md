@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080702"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Visual Studio 2010'dan Kodlanmış UI Testlerini Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Test projeleri oluşturulan kodlanmış UI testleri içeren [!INCLUDE[vs_dev10_l
 
  **Gereksinimler**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!NOTE]
 >  Visual Studio, birden fazla test proje türü içerir. Yeni kodlanmış UI testi oluşturursanız, bir kodlanmış UI testi proje türü oluşturulur. Daha fazla bilgi için [Visual Studio'nun önceki sürümleri yükseltme testlerden](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
@@ -46,7 +46,7 @@ Test projeleri oluşturulan kodlanmış UI testleri içeren [!INCLUDE[vs_dev10_l
 |Yeni kullanıcı Arabirimi kodu test API'leri eklenmiş [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Yapı başarısız olur**<br /><br /> Kodlanmış UI testleri, kullanıcı Arabirimi testi yeni API'yi kullandığınızda oluşturursanız [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], bu proje açılamıyor [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Yeni API'yi kullanarak projeleri yönetilmesi gereken [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] yalnızca.|
 |İçinde [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], başvuruları csproj dosyasının bir 'Seç' deyiminde içine eklendi. İçinde [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], kodlanmış UI Test bütünleştirilmiş kod başvuruları eklemek için bir geri bildirim hedefler dosyası kullanıyoruz.|İçinde [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], bir kodlanmış UI testi içinde oluşturulan bir Test projesine eklenemez [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (veya SP1) bir kodlanmış UI testi içermiyordu.<br /><br /> Onarım işlemini hedefler dosyası ve Seç ifadesi ekler. Kodlanmış UI testi ve Test projesinde değil sonra projeyi onarıldı olarak işaretlenir ve uygun başvuruları eklenmeyecek, kodlanmış UI testi eklerken [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Kullanarak aynı çözüm içinde yeni bir Test projesi oluşturmanız gerekecektir [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve yeni kodlanmış UI testi ekleyin. Alternatif olarak, Test projesine kodlanmış UI testleri ekleyebilirsiniz [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 ve açın, proje içinde [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 Güncelleştirmesi
+## <a name="UpgradingCodedUIFromVS2010_Update"></a> Visual Studio 2010 SP1 Güncelleştirmesi
  Bir güncelleştirme [!INCLUDE[vs2010](../includes/vs2010-md.md)] adresten SP1 uyumluluk desteği için Visual Studio 2012 ve Windows 8 ile kullanılabilir [Microsoft Download Center](http://www.microsoft.com/download/details.aspx?id=34677) ve ayrıca Visual Studio olarak güncelleştirin.
 
  Aşağıdaki güncelleştirme uygulandıktan sonra [!INCLUDE[vs2010](../includes/vs2010-md.md)] kodlanmış UI test aracı özellikleri, Windows 8 için geliştirilir SP1:

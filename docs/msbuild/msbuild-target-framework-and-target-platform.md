@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111954"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild hedef çerçevesi ve hedef platform
 Çalıştırmak için bir proje oluşturulabilmeden bir *hedef Framework'ü*, .NET Framework'ün belirli bir sürümü olduğu ve bir *hedef platform*, belirli yazılım mimarisi olduğu.  Örneğin, 802 x 86 işlemci ailesi ("x86") ile uyumlu bir 32 bit platformda .NET Framework 2.0 üzerinde çalışacak bir uygulamayı hedefleyebilirsiniz. Hedef Çerçeve ve hedef platform bileşimi olarak da bilinen *hedef bağlam*.
@@ -61,11 +61,11 @@ Hedef Framework'ü belirtilen `TargetFrameworkVersion` proje dosyasındaki özel
 ## <a name="target-platform"></a>Hedef platform
  A *platform* , belirli bir çalışma zamanı ortamı tanımlayan donanım ve yazılım birleşimidir. Örneğin,
 
--   `x86` Intel 80 x 86 işlemcisi ya da eşdeğerine çalışan 32 bit Windows işletim sistemi belirtir.
+- `x86` Intel 80 x 86 işlemcisi ya da eşdeğerine çalışan 32 bit Windows işletim sistemi belirtir.
 
--   `x64` x64 Intel işlemci veya eşdeğeri, çalışan bir 64 bit Windows işletim sistemi belirtir.
+- `x64` x64 Intel işlemci veya eşdeğeri, çalışan bir 64 bit Windows işletim sistemi belirtir.
 
--   `Xbox` Xbox 360'ı Microsoft Platformu belirtir.
+- `Xbox` Xbox 360'ı Microsoft Platformu belirtir.
 
 A *hedef platform* projenizi çalıştırmak için oluşturulmuştur belirli platformudur. Hedef platform belirtilen `PlatformTarget` özelliğinde bir proje dosyası oluşturun. Hedef platform proje özelliği sayfalarından kullanarak değiştirebileceğiniz veya **Configuration Manager** IDE.
 

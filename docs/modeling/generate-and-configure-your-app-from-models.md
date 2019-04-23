@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de62cb46c591b554ea4204e88fedbbfa99381fef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ec2d1c471365dcd55aa33f00209c4154300e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078443"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Uygulamanızı modeller aracılığıyla oluşturma ve yapılandırma
 Oluşturma veya modelden uygulamanızın parçalarını yapılandırın.
@@ -37,7 +37,7 @@ Oluşturma veya modelden uygulamanızın parçalarını yapılandırın.
 ## <a name="configuring-your-application-from-a-model"></a>Model aracılığıyla uygulamanızı yapılandırma
  Çalışma zamanında uygulamanızın davranışını değiştirmek istiyorsanız, uygulama derlenmeden önce kaynak kodunu üretir ve kod oluşturma kullanamazsınız. Bunun yerine, modeli okumak ve buna göre davranışını değiştirmek için uygulamanızı tasarlayabilirsiniz. Daha fazla bilgi için bkz.:
 
-- [Nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Bu yöntem aynı zamanda artımlı olarak uygulanabilir, ancak daha fazla iş başında yoktur. Modeli okumak ve değişken parçaları için erişilebilir olmasını değerleri olanak tanıyan bir altyapı ayarlamak kod yazmanız gerekir. Değişken parçaları genel yapma, kod oluşturmaktan daha pahalıdır.
 
@@ -46,32 +46,32 @@ Oluşturma veya modelden uygulamanızın parçalarını yapılandırın.
 ## <a name="developing-a-derived-application"></a>Türetilen bir uygulama geliştirme
  Aşağıdaki genel yönergeleri yararlı bulabilirsiniz.
 
--   **Belirli başlayın, daha sonra genelleştirin.** İlk uygulamanızı belirli bir sürümünü yazın. Bu sürüm, koşulları bir dizi çalışması gerekir. Memnun kaldığınızda BT'nin düzgün çalıştığından, bir modelinden türetilen bazıları da yapabilirsiniz. Türetilmiş bölümlerini kademeli olarak genişletin.
+- **Belirli başlayın, daha sonra genelleştirin.** İlk uygulamanızı belirli bir sürümünü yazın. Bu sürüm, koşulları bir dizi çalışması gerekir. Memnun kaldığınızda BT'nin düzgün çalıştığından, bir modelinden türetilen bazıları da yapabilirsiniz. Türetilmiş bölümlerini kademeli olarak genişletin.
 
      Örneğin, bir modelde tanımlanan sayfaları sunan web uygulaması tasarlamadan önce web sayfaları belirli bir dizi olan bir Web sitesi tasarlayın.
 
--   **Değişken görünüşlerini modelleyin.** Ya da bir dağıtım ve başka arasında farklılık veya gereksinimleri zamanla değiştirme yönleri tanımlar. Bir modelden türetilmesi gereken yönleri şunlardır.
+- **Değişken görünüşlerini modelleyin.** Ya da bir dağıtım ve başka arasında farklılık veya gereksinimleri zamanla değiştirme yönleri tanımlar. Bir modelden türetilmesi gereken yönleri şunlardır.
 
      Örneğin, web sayfaları ve arası bağlantılar, bunları değiştirir ancak stil ve biçim sayfaların her zaman aynı olduğu model bağlantıları açıklamalıdır ancak sayfaları biçimini açıklamak zorunda değildir.
 
--   **Sorunları ayırın.** Değişken yönleri bağımsız alanlarına ayrılabilir, ayrı modelleri her alan için kullanın. ModelBus kullanarak modelleri hem aralarında kısıtlamaları etkileyen işlemleri tanımlayabilirsiniz.
+- **Sorunları ayırın.** Değişken yönleri bağımsız alanlarına ayrılabilir, ayrı modelleri her alan için kullanın. ModelBus kullanarak modelleri hem aralarında kısıtlamaları etkileyen işlemleri tanımlayabilirsiniz.
 
      Örneğin, web sayfalarını ve sayfa düzeni tanımlamak için farklı bir model arasında gezinmeyi tanımlamak için bir model kullanın.
 
--   **Gereksinim, çözüm modeli.** Model kullanıcı gereksinimleri açıklanır şekilde tasarlayın. Bunun aksine, değişken yönleri göre gösterimini uygulamasının tasarlamayın.
+- **Gereksinim, çözüm modeli.** Model kullanıcı gereksinimleri açıklanır şekilde tasarlayın. Bunun aksine, değişken yönleri göre gösterimini uygulamasının tasarlamayın.
 
      Örneğin, web gezinti modeli, web sayfaları ve bunlar arasında köprü temsil etmelidir. Web gezinti modeli HTML veya uygulamanızdaki sınıfları parçalarını temsil etmiyor.
 
--   **Oluşturma veya yorumlama?** Belirli bir dağıtım için gereksinimleri nadiren değişiklik, program kodu modeli oluşturur. Gereksinimleri, sık sık değişebilir veya aynı dağıtımda birden fazla değişken içinde birlikte var, böylece okumak ve yorumlamak bir model uygulaması yazma.
+- **Oluşturma veya yorumlama?** Belirli bir dağıtım için gereksinimleri nadiren değişiklik, program kodu modeli oluşturur. Gereksinimleri, sık sık değişebilir veya aynı dağıtımda birden fazla değişken içinde birlikte var, böylece okumak ve yorumlamak bir model uygulaması yazma.
 
      Bir dizi farklı ve ayrı olarak yüklenmiş bir Web sitesi geliştirmek için Web sitesi model kullanıyorsanız, örneğin, daha sonra site kodunu modelden oluşturmanız gerekir. Ancak, yazma modeli okuyan ve buna göre site sunan bir web sunucusu daha iyi ise her gün bir site denetlemek için modelinizi kullanın.
 
--   **UML veya DSL?** UML genişletmek için stereotipleri kullanarak, modelleme gösterimi oluşturmayı düşünün. Amaca uygun hiçbir UML diyagram ise bir DSL tanımlayın. Ancak, UML Standart semantiği bozmayı önlemek.
+- **UML veya DSL?** UML genişletmek için stereotipleri kullanarak, modelleme gösterimi oluşturmayı düşünün. Amaca uygun hiçbir UML diyagram ise bir DSL tanımlayın. Ancak, UML Standart semantiği bozmayı önlemek.
 
      Örneğin, bir UML sınıf diyagramı kutuları ve oklar oluşan bir koleksiyondur; Bu gösterim teorik olarak herhangi bir şey tanımlayabilirsiniz. Ancak burada aslında bir dizi türleri tanımlamakta olduğunuz dışında sınıf diyagramı kullanmanızı önermiyoruz. Örneğin, web sayfalarının farklı türlerini tanımlamak için sınıf diyagramları uyarlayabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Etki Alanına Özgü Dilden Kod Oluşturma](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Nasıl yapılır: Program kodunda dosyadan Model açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Nasıl yapılır: Program Kodunda Dosyadan Model Açma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

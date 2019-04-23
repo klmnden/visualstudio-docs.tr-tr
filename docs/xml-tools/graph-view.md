@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079714"
 ---
 # <a name="graph-view"></a>Graf görünümü
 
@@ -120,11 +120,11 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
 
  Aşağıdaki eylemler için graf görünümünü geri al/Yinele özelliği etkin:
 
--   Tek bir düğüm sürükleme ve bırakma ekleniyor.
+- Tek bir düğüm sürükleme ve bırakma ekleniyor.
 
--   Şema Gezgini veya başlangıç görünümünde sorgular arama sonuçları penceresinde birden çok düğüm ekleme.
+- Şema Gezgini veya başlangıç görünümünde sorgular arama sonuçları penceresinde birden çok düğüm ekleme.
 
--   Tek veya birden çok düğüm siliniyor.
+- Tek veya birden çok düğüm siliniyor.
 
 ## <a name="zoom"></a>Yakınlaştır
 
@@ -132,9 +132,9 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
 
  Yakınlaştırma, aşağıdaki yollarla denetlenebilir:
 
--   Basılı tutarak **Ctrl** anahtar ve fare dönen Tekerlek fare graf görünümünü yüzeyi gelindiğinde.
+- Basılı tutarak **Ctrl** anahtar ve fare dönen Tekerlek fare graf görünümünü yüzeyi gelindiğinde.
 
--   Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.
+- Kaydırıcı denetimi kullanarak. Kaydırıcı geçerli yakınlaştırma düzeyini gösterir.
 
 Bunu seçtiğinizde, üzerine gelin veya kullanın yakınlaştırma kaydırıcısı donuktur **Ctrl** yakınlaştırma için fare tekerleğini ile; her zaman saydamdır.
 

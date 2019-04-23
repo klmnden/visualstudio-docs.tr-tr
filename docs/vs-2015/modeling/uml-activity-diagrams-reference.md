@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087150"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML etkinlik diyagramları: Başvuru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
 |13|**Sinyal eylemi Gönder**|Başka bir etkinlik veya eş zamanlı bir iş parçacığı aynı etkinlik için bir mesaj ya da sinyal gönderen bir eylem. İleti içeriği ve tür eyleme ait başlık tarafından kapsanan veya ek açıklamalarda belirlenir.<br /><br /> Eylem, bir nesne akışı veya giriş PIN (16) eyleme geçirilebilir sinyal içinde veri gönderebilirsiniz.|  
 |14|**Olay eylemi kabul edin**|Eylem devam etmeden önce bir ileti ya da sinyal bekleyen bir eylem. Eylem alabilir iletisinin türü başlık tarafından kapsanan veya ek açıklamalarda belirlenir.<br /><br /> Gelen denetim akışı eylem varsa her bir ileti aldığında bir belirteç oluşturur.<br /><br /> Eylem, bir nesne akışı veya çıkış PIN'i (17) geçirilebilir sinyal içinde veri alabilir.<br /><br /> -   **IsUnmarshall türde** - true ise birden çok çıktı pini olabilir ve veri açtığına unmarshalled ise. False ise, tüm veriler tek bir PIN'in görünür.|  
   
-###  <a name="DataFlow"></a> Bir veri akışı  
+### <a name="DataFlow"></a> Bir veri akışı  
  Bir eylem veri akışını tanımlayabilir. Bu bölümde kullanılan öğeleri hakkında daha fazla bilgi için etkinlik diyagramı çizmek için yönergeler çizim veri akışları bölümüne bakın.  
   
  ![Etkinlik diyagramı veri akışını gösteren](../modeling/media/uml-actovdata.png "UML_ActOvData")  
@@ -101,4 +101,4 @@ Bir *etkinlik diyagramı* yazılım işlem veya iş sürecini, bir dizi eylem i�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md)
+ [UML Etkinlik Diyagramları: Yönergeler](../modeling/uml-activity-diagrams-guidelines.md)

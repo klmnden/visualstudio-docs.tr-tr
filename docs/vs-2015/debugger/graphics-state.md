@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091791"
 ---
 # <a name="graphics-state"></a>Grafik Durumu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio grafik tanılama durumu penceresinde bir çizim çağrısı gibi g
   
 ##### <a name="to-change-the-state-view"></a>Durum görünümü değiştirmek için  
   
--   Titlebar hemen sol üst kısımdaki durum Penceresi'ni kullanmak istediğiniz durum görünümü stiline karşılık gelen düğmeyi seçin.  
+- Titlebar hemen sol üst kısımdaki durum Penceresi'ni kullanmak istediğiniz durum görünümü stiline karşılık gelen düğmeyi seçin.  
   
-    -   **API giriş durumu görünümünü göster**  
+    - **API giriş durumu görünümünü göster**  
   
-    -   **Mantıksal durumu görünümünü göster**  
+    - **Mantıksal durumu görünümünü göster**  
   
-    -   **Pinned durumu görünümünü göster**  
+    - **Pinned durumu görünümünü göster**  
   
 > [!IMPORTANT]
 >  Durumda sabitleme gerekir **Göster API giriş durumu** veya **Göster mantıksal durumlarına** görüntülenmesi için görünümleri **durum görünümü göster sabitlenmiş**.  
@@ -67,8 +67,8 @@ Visual Studio grafik tanılama durumu penceresinde bir çizim çağrısı gibi g
   
 ##### <a name="to-pin-state-in-place"></a>Yerinde durumu sabitlemek için  
   
-1.  İlginizi çeken durumu durum penceresinde bulun. İlgilendiğiniz ayrıntılarını bulmak için üst düzey durum genişletmeniz gerekebilir.  
+1. İlginizi çeken durumu durum penceresinde bulun. İlgilendiğiniz ayrıntılarını bulmak için üst düzey durum genişletmeniz gerekebilir.  
   
-2.  İlginizi çeken durumu üzerine imleci yerleştirin. Raptiye simgesini, durum öğesi solunda görünür.  
+2. İlginizi çeken durumu üzerine imleci yerleştirin. Raptiye simgesini, durum öğesi solunda görünür.  
   
-3.  Yerinde durumu öğesi sabitlemek için Raptiye simgesini seçin.
+3. Yerinde durumu öğesi sabitlemek için Raptiye simgesini seçin.

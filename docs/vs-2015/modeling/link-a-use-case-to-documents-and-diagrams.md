@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088684"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Kullanım örneğini belgelere ve diyagramlara bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,51 +40,51 @@ Bir kullanım örneği bir kullanım durumu diyagramı, başka bir diyagrama vey
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Bir yapı ile ilişkilendirilmiş bir belgeyi açmak için  
   
--   Kullanım durumu diyagramında yapıt şekle çift tıklayın.  
+- Kullanım durumu diyagramında yapıt şekle çift tıklayın.  
   
      İlişkili belge açılır.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Bir kullanım durumu diyagramı veya aynı çözüm içindeki dosya bağlamak için  
   
-1.  Bir sıralı diyagram veya kullanım örneğinin bir senaryoyu göstermek üzere etkinlik diyagramı gibi bir diyagramı.  
+1. Bir sıralı diyagram veya kullanım örneğinin bir senaryoyu göstermek üzere etkinlik diyagramı gibi bir diyagramı.  
   
-2.  Kullanım durumu diyagramı geri dönün.  
+2. Kullanım durumu diyagramı geri dönün.  
   
-3.  Çözüm Gezgini'nden boş bir kısmına kullanım durumu diyagramı diyagram veya dosya sürükleyin.  
+3. Çözüm Gezgini'nden boş bir kısmına kullanım durumu diyagramı diyagram veya dosya sürükleyin.  
   
-4.  Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
+4. Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Bir çözüm dosyası gibi bir Word belgesi veya PowerPoint sunumu bağlamak için  
   
-1.  Belge ekleyin.  
+1. Belge ekleyin.  
   
-    1.  Word belgesi çözümü olarak aynı Windows klasöre taşıyın.  
+    1. Word belgesi çözümü olarak aynı Windows klasöre taşıyın.  
   
-    2.  Çözüm Gezgini'nde çözüme sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**.  
+    2. Çözüm Gezgini'nde çözüme sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**.  
   
-    3.  Word belgesine gelin ve tıklayın **Ekle**.  
+    3. Word belgesine gelin ve tıklayın **Ekle**.  
   
          Word belgesi bir çözüm klasörü Çözüm Gezgini'nde görünür.  
   
-2.  Çözüm Gezgini'nden kullanım durumu diyagramı boş bir kısmına Word belgesi sürükleyin.  
+2. Çözüm Gezgini'nden kullanım durumu diyagramı boş bir kısmına Word belgesi sürükleyin.  
   
      Yeni Yapıt görünür.  
   
-3.  Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
+3. Yapıdan kullanım örneği bağlanırken bir **bağımlılık**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Paylaşılan belge, OneNote öğesi veya web sayfası bağlamak için  
   
-1.  Paylaşılan öğe URL'sini alın. Bu, örneğin, bir ağ dosya yolu başlangıç olabilir '\\\\', veya bir web sayfası veya Sharepoint URL'si başına 'http://' veya bir OneNote bölümüne bir bağlantı sayfa, paragraf başına ' onenote:'.  
+1. Paylaşılan öğe URL'sini alın. Bu, örneğin, bir ağ dosya yolu başlangıç olabilir '\\\\', veya bir web sayfası veya Sharepoint URL'si başına 'http://' veya bir OneNote bölümüne bir bağlantı sayfa, paragraf başına ' onenote:'.  
   
-2.  Araç kutusunda tıklayın **Yapıt** ve kullanım örneği diyagramı'ye tıklayın.  
+2. Araç kutusunda tıklayın **Yapıt** ve kullanım örneği diyagramı'ye tıklayın.  
   
-3.  Yeni yapıt seçili yazın veya URL'sini yapıştırın **köprü** özelliği.  
+3. Yeni yapıt seçili yazın veya URL'sini yapıştırın **köprü** özelliği.  
   
     > [!NOTE]
     >  Bir dosya yolu sağlamak istiyorsanız, bir dosya ya da ortak bir çalışma alanı seçmek en iyi (başlayarak '\\\\'), veya Visual Studio çözümündeki bir dosya. Bu dosya yolu başka bir takım üyesinin bilgisayarda geçerli olarak kalmasını sağlar veya çözüm taşınır. Bir Word belgesi gibi bir belge çözümünüze eklemek için Çözüm Gezgini'nde çözüme sağ tıklatın, **Ekle** ve ardından **var olan öğe**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML Kullanım Örneği Diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)

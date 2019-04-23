@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090387"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Nasıl yapılır: Bir hizmetteki verilere bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ Uygulamanızı çalıştırarak bir hizmetten döndürülen veri bağlama [veri 
   
 ### <a name="to-connect-your-application-to-a-service"></a>Uygulamanız bir hizmete bağlanmak için  
   
-1.  Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.  
+1. Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.  
   
-2.  Seçin **hizmet** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
+2. Seçin **hizmet** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
   
-3.  İstediğiniz kullanın veya hizmeti adresini girmek **bulma** geçerli çözümde hizmeti bulun ve ardından **Git**.  
+3. İstediğiniz kullanın veya hizmeti adresini girmek **bulma** geçerli çözümde hizmeti bulun ve ardından **Git**.  
   
-4.  İsteğe bağlı olarak, yeni **Namespace** yerine varsayılan değer türü belirtilmiş olmalıdır.  
+4. İsteğe bağlı olarak, yeni **Namespace** yerine varsayılan değer türü belirtilmiş olmalıdır.  
   
     > [!NOTE]
     >  Tıklayın **Gelişmiş** açmak için [hizmeti başvuru iletişim kutusunu](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Tıklayın **Tamam** projenize bir hizmet başvurusu eklemek için.  
+5. Tıklayın **Tamam** projenize bir hizmet başvurusu eklemek için.  
   
-6.  **Son**'a tıklayın.  
+6. **Son**'a tıklayın.  
   
      Veri kaynağı eklenir **veri kaynakları** penceresi.  
   
@@ -64,7 +64,7 @@ Uygulamanızı çalıştırarak bir hizmetten döndürülen veri bağlama [veri 
   
 #### <a name="to-add-functionality-to-your-application"></a>Uygulamanıza işlev eklemek için  
   
--   Bir öğe seçin **veri kaynakları** penceresi ve ilişkili denetimler oluşturmak için bir form üzerine sürükleyin. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+- Bir öğe seçin **veri kaynakları** penceresi ve ilişkili denetimler oluşturmak için bir form üzerine sürükleyin. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir WCF veri hizmetine WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

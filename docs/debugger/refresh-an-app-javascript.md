@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790296"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088034"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio'da bir UWP uygulaması Yenile
 
@@ -32,34 +32,34 @@ ms.locfileid: "58790296"
 
  Yenileme değil, uygulama durumunu korumak veya uygulamanız için aşağıdaki değişiklikleri yansıtacak:
 
--   Görüntü paketi bildiriminde belirtilen değişiklikler de dahil olmak üzere paket bildirim dosyası değişiklikler.
+- Görüntü paketi bildiriminde belirtilen değişiklikler de dahil olmak üzere paket bildirim dosyası değişiklikler.
 
--   Başvuru ekleme veya bir SDK başvurusu kaldırma gibi değiştirir veya Windows çalışma zamanı bileşenleri (.winmd dosyaları) değiştirir.
+- Başvuru ekleme veya bir SDK başvurusu kaldırma gibi değiştirir veya Windows çalışma zamanı bileşenleri (.winmd dosyaları) değiştirir.
 
--   Kaynak dizeleri .resjson dosyalardaki değişiklikler gibi değiştirir.
+- Kaynak dizeleri .resjson dosyalardaki değişiklikler gibi değiştirir.
 
--   Proje dosyası yolu adı değişiklikleri, yeni proje dosyaları ya da silinen dosyaları ile sonuçlanan değiştirir.
+- Proje dosyası yolu adı değişiklikleri, yeni proje dosyaları ya da silinen dosyaları ile sonuçlanan değiştirir.
 
--   Proje ve öğe özellik değişiklikleri seçili hata ayıklama cihazı değişiklikleri gibi veya paket eylemi (Özellikler penceresinde) bir dosya için değişiklikler.
+- Proje ve öğe özellik değişiklikleri seçili hata ayıklama cihazı değişiklikleri gibi veya paket eylemi (Özellikler penceresinde) bir dosya için değişiklikler.
 
 > [!IMPORTANT]
 >  Başvuruları değiştirme, paket bildirimini değiştirmek veya önceki listesinde belirtilen diğer değişiklikleri yapın, HTML, CSS ve JavaScript kaynak dosyalarını güncelleştirmek için hata ayıklayıcıyı yeniden başlatın ve durdurun gerekir.
 
 ### <a name="to-refresh-an-app"></a>Bir uygulamayı yenilemek için
 
-1.  Visual Studio'da açın, UWP projesi ile seçin **yerel makine** hata ayıklama hedefi olarak.
+1. Visual Studio'da açın, UWP projesi ile seçin **yerel makine** hata ayıklama hedefi olarak.
 
      ![Select hata ayıklama hedef liste](../debugger/media/js_select_target.png "JS_Select_Target")
 
-3.  Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.
+3. Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.
 
-4.  Visual Studio'ya geçiş yapın.
+4. Visual Studio'ya geçiş yapın.
 
-5.  UWP uygulamanızın giriş sayfasının HTML bazıları düzenleyin.
+5. UWP uygulamanızın giriş sayfasının HTML bazıları düzenleyin.
 
-7.  Tıklayın **Yenile Windows uygulama** şuna benzeyen düğmesi: ![Windows uygulama düğmesine Yenile](../debugger/media/js_refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)
+7. Tıklayın **Yenile Windows uygulama** şuna benzeyen düğmesi: ![Windows uygulama düğmesine Yenile](../debugger/media/js_refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)
 
-8.  Uygulamasına geçin. Uygulama yüklenir ve güncelleştirilmiş HTML uygulaması oluşturmak için kullanılır.
+8. Uygulamasına geçin. Uygulama yüklenir ve güncelleştirilmiş HTML uygulaması oluşturmak için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)

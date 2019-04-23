@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091622"
 ---
 # <a name="performance-report-overview"></a>Performans Raporuna Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Bir performans oturumu profil oluşturma verilerini görüntüleyebilirsiniz **p
 ## <a name="customizable-filter-control"></a>Özelleştirilebilir filtre denetimi  
  Özelleştirilebilir filtre denetimi şu seçeneklere sahiptir:  
   
--   **Filtre alma** -özel önceden kaydedilmiş bir sorgu alır.  
+- **Filtre alma** -özel önceden kaydedilmiş bir sorgu alır.  
   
--   **Filtre dışarı** -özel sorgu belirtilen konuma kaydeder.  
+- **Filtre dışarı** -özel sorgu belirtilen konuma kaydeder.  
   
--   **Sorguyu** -sorgu özel sorgu denetimde görüntülenen gibi çalışır.  
+- **Sorguyu** -sorgu özel sorgu denetimde görüntülenen gibi çalışır.  
   
--   **Sorguyu Durdur** -çalışmakta olan bir sorgu yürütülmesini durdurur. Sorgu çalışıyorsa bu düğmesi kullanılamaz.  
+- **Sorguyu Durdur** -çalışmakta olan bir sorgu yürütülmesini durdurur. Sorgu çalışıyorsa bu düğmesi kullanılamaz.  
   
--   **Sorgu Göster** -gösterir/Özel sorgu denetimi gizler.  
+- **Sorgu Göster** -gösterir/Özel sorgu denetimi gizler.  
   
--   **Analyzed Kaydet** -raporu geçerli Analizine birlikte bir .vsps dosyası olarak kaydeder.  
+- **Analyzed Kaydet** -raporu geçerli Analizine birlikte bir .vsps dosyası olarak kaydeder.  
   
--   **Dışarı aktarma** -geçerli raporda kaydeder. CVS olarak biçimlendirilmiş veya. XML biçimli dosya için farklı görünümlerini kaydetme seçeneği ile.  
+- **Dışarı aktarma** -geçerli raporda kaydeder. CVS olarak biçimlendirilmiş veya. XML biçimli dosya için farklı görünümlerini kaydetme seçeneği ile.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri Araçları performansını analiz etme](../profiling/analyzing-performance-tools-data.md)   

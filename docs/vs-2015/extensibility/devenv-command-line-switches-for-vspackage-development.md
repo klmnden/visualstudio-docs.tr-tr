@@ -17,12 +17,12 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118051"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage Geliştirme için Devenv Komut Satırı Anahtarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54791047"
   
  Görevler aşağıdakileri içerir:  
   
--   IDE dışında tasarlanmış yapılandırmalardan uygulamalarda dağıtılıyor.  
+- IDE dışında tasarlanmış yapılandırmalardan uygulamalarda dağıtılıyor.  
   
--   Otomatik olarak önayarını kullanarak proje oluşturma, derleme ayarları veya hata ayıklama yapılandırması.  
+- Otomatik olarak önayarını kullanarak proje oluşturma, derleme ayarları veya hata ayıklama yapılandırması.  
   
--   IDE dışında tüm gelen belirli yapılandırmalar, IDE'de yükleniyor. Buna ek olarak, IDE başlatma sırasında özelleştirebilirsiniz.  
+- IDE dışında tüm gelen belirli yapılandırmalar, IDE'de yükleniyor. Buna ek olarak, IDE başlatma sırasında özelleştirebilirsiniz.  
   
 ## <a name="guidelines-for-switches"></a>Anahtarlar için yönergeler  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] belgeler, kullanıcı düzeyi devenv komut satırı anahtarları açıklar. Daha fazla bilgi için [Devenv komut satırı anahtarları](../ide/reference/devenv-command-line-switches.md). Devenv VSPackage geliştirme, dağıtım ve hata ayıklama için yararlı olan ek komut satırı anahtarları da destekler.  

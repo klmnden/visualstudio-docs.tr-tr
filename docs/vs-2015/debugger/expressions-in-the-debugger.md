@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080747"
 ---
 # <a name="expressions-in-the-debugger"></a>Hata Ayıklayıcıdaki İfadeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Durumunu korumak üzere hata ayıklayıcı iç işlevleri kullanma  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Durumunu korumak üzere hata ayıklayıcı iç işlevleri kullanma  
  Hata ayıklayıcı iç işlevleri size uygulama durumunu değiştirmeden ifadelerinde belirli C/C++ işlevleri çağırmak için bir yol sağlar.  
   
  Hata ayıklayıcı iç işlevleri:  
@@ -116,17 +116,17 @@ int main()
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Bu işlevler, Windows 8 üzerinde çalıştırılması ayıklanmakta olan işlem gerekir. Bir Windows 8 cihazında döküm dosyalarında hata ayıklanırken ayrıca Visual Studio bilgisayarı olmasını gerektirir Windows 8 çalıştıran. Ancak, Windows 8 cihazını uzaktan ayıklıyorsanız, Visual Studio bilgisayarı Windows 7 çalışabilir.|  
 |**Çeşitli**|__log2<br /><br /> Günlük taban 2 daha düşük en yakın tamsayıya yuvarlanır, belirtilen bir tamsayı döndürür.|  
   
-## <a name="ccli---unsupported-expressions"></a>C + +/ CLI - desteklenmeyen ifadeler  
+## <a name="ccli---unsupported-expressions"></a>C++/ CLI - desteklenmeyen ifadeler  
   
--   İşaretçiler içeren atamaları veya kullanıcı tanımlı atamalar desteklenmez.  
+- İşaretçiler içeren atamaları veya kullanıcı tanımlı atamalar desteklenmez.  
   
--   Nesne karşılaştırma ve ataması desteklenmez.  
+- Nesne karşılaştırma ve ataması desteklenmez.  
   
--   Aşırı yüklenmiş işleçler ve aşırı yüklenmiş işlevler desteklenmez.  
+- Aşırı yüklenmiş işleçler ve aşırı yüklenmiş işlevler desteklenmez.  
   
--   Kutulama ve kutudan çıkarma desteklenmez.  
+- Kutulama ve kutudan çıkarma desteklenmez.  
   
--   `Sizeof` işleci desteklenmiyor.  
+- `Sizeof` işleci desteklenmiyor.  
   
 ## <a name="c---unsupported-expressions"></a>C# - desteklenmeyen ifadeler  
   
@@ -135,19 +135,19 @@ int main()
   
  Dinamik nesneler aşağıdaki özellikleri desteklenmez:  
   
--   Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve `*=`  
+- Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve `*=`  
   
--   Sayısal yayınları ve tür bağımsız değişkeni atamaları dahil olmak üzere birçok yayınları  
+- Sayısal yayınları ve tür bağımsız değişkeni atamaları dahil olmak üzere birçok yayınları  
   
--   Yöntem çağrıları ikiden fazla bağımsız değişken  
+- Yöntem çağrıları ikiden fazla bağımsız değişken  
   
--   Özellik alıcılar ikiden fazla bağımsız değişken  
+- Özellik alıcılar ikiden fazla bağımsız değişken  
   
--   Özellik ayarlayıcılarına bağımsız değişken  
+- Özellik ayarlayıcılarına bağımsız değişken  
   
--   Bir dizin oluşturucu için atama  
+- Bir dizin oluşturucu için atama  
   
--   Boole işleçleri `&&` ve `||`  
+- Boole işleçleri `&&` ve `||`  
   
 ### <a name="anonymous-methods"></a>Anonim Yöntemler  
  Yeni anonim yöntemler oluşturulması desteklenmiyor.  
@@ -159,19 +159,19 @@ int main()
   
  Dinamik nesneler aşağıdaki özellikleri desteklenmez:  
   
--   Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve `*=`  
+- Bileşik işleçleri `+=`, `-=`, `%=`, `/=`, ve `*=`  
   
--   Sayısal yayınları ve tür bağımsız değişkeni atamaları dahil olmak üzere birçok yayınları  
+- Sayısal yayınları ve tür bağımsız değişkeni atamaları dahil olmak üzere birçok yayınları  
   
--   Yöntem çağrıları ikiden fazla bağımsız değişken  
+- Yöntem çağrıları ikiden fazla bağımsız değişken  
   
--   Özellik alıcılar ikiden fazla bağımsız değişken  
+- Özellik alıcılar ikiden fazla bağımsız değişken  
   
--   Özellik ayarlayıcılarına bağımsız değişken  
+- Özellik ayarlayıcılarına bağımsız değişken  
   
--   Bir dizin oluşturucu için atama  
+- Bir dizin oluşturucu için atama  
   
--   Boole işleçleri `&&` ve `||`  
+- Boole işleçleri `&&` ve `||`  
   
 ### <a name="local-constants"></a>Yerel sabitleri  
  Yerel sabitleri desteklenmez.  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Desteklenmeyen anahtar sözcükleri  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Namespace veya modül düzeyinde anahtar sözcükler gibi `End Sub` veya `Module`.  
+- Namespace veya modül düzeyinde anahtar sözcükler gibi `End Sub` veya `Module`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ içindeki Biçim belirticileri](../debugger/format-specifiers-in-cpp.md)   

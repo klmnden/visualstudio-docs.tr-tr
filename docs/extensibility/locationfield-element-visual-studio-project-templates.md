@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078310"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField öğesi (Visual Studio Proje şablonları)
 Belirtir olup olmadığını **konumu** metin kutusu **yeni proje** iletişim kutusu etkin, devre dışı veya gizli proje şablonu.
@@ -51,11 +51,11 @@ Belirtir olup olmadığını **konumu** metin kutusu **yeni proje** iletişim ku
 
  Geçerli bir metin değerleri şunlardır:
 
--   `Enabled`, hangi belirtir **konumu** kutusunun **yeni proje** iletişim kutusu etkin.
+- `Enabled`, hangi belirtir **konumu** kutusunun **yeni proje** iletişim kutusu etkin.
 
--   `Disabled`, hangi belirtir **konumu** kutusunun **yeni proje** iletişim kutusu devre dışı bırakıldı.
+- `Disabled`, hangi belirtir **konumu** kutusunun **yeni proje** iletişim kutusu devre dışı bırakıldı.
 
--   `Hidden`, hangi belirtir **konumu** kutusunun **yeni proje** iletişim kutusu gizlenir.
+- `Hidden`, hangi belirtir **konumu** kutusunun **yeni proje** iletişim kutusu gizlenir.
 
 ## <a name="remarks"></a>Açıklamalar
  Varsayılan değer `Enabled` şeklindedir.

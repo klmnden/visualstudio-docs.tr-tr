@@ -8,12 +8,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118129"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Araç Penceresi İçeren Bir Uzantı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Bu yordamda, VSIX proje şablonu kullanmayı öğrenin ve **özel araç penceres
   
 ### <a name="creating-a-tool-window"></a>Araç penceresi oluşturma  
   
-1.  Adlı bir VSIX projesi oluşturun **FirstWindow**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C# / genişletilebilirlik**.  
+1. Adlı bir VSIX projesi oluşturun **FirstWindow**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C# / genişletilebilirlik**.  
   
-2.  Projeyi açtığında, adlı bir araç penceresi öğesi şablonu ekleme **FirstWindow**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** alan penceresinin en altında bir araç penceresi dosya adını değiştirerek **FirstWindow.cs**.  
+2. Projeyi açtığında, adlı bir araç penceresi öğesi şablonu ekleme **FirstWindow**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **özel araç penceresi**. İçinde **adı** alan penceresinin en altında bir araç penceresi dosya adını değiştirerek **FirstWindow.cs**.  
   
-3.  Projeyi oluşturmak ve hata ayıklamaya başlayın.  
+3. Projeyi oluşturmak ve hata ayıklamaya başlayın.  
   
      Visual Studio'nun deneysel örneğinde görünür. Deneysel örnek hakkında daha fazla bilgi için bkz. [deneysel örneğinde](../extensibility/the-experimental-instance.md).  
   
-4.  Deneysel örneğinde Git **görünüm / diğer Windows**.  
+4. Deneysel örneğinde Git **görünüm / diğer Windows**.  
   
      Bir menü öğesi için görmelisiniz **FirstWindow**. Tıklayın.  
   

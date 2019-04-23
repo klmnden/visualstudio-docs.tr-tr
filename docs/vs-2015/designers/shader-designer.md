@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116825"
 ---
 # <a name="shader-designer"></a>Gölgelendirici Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>Projenize DGSL gölgelendirici ekleme  
   
-1.  İçinde **Çözüm Gezgini**, gölgelendiriciye ekleyin ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
+1. İçinde **Çözüm Gezgini**, gölgelendiriciye ekleyin ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **görsel gölgelendirici grafiği (.dgsl)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **görsel gölgelendirici grafiği (.dgsl)**.  
   
-3.  Belirtin **adı** gölgelendirici dosyası ve **konumu** sonra istediğiniz yere oluşturulacak.  
+3. Belirtin **adı** gölgelendirici dosyası ve **konumu** sonra istediğiniz yere oluşturulacak.  
   
-4.  Seçin **Ekle** düğmesi.  
+4. Seçin **Ekle** düğmesi.  
   
 ### <a name="the-default-shader"></a>Varsayılan gölgelendiriciyi  
  İsteğe bağlı olarak bir DGSL gölgelendirici oluşturmak her zaman sadece sahip en az bir gölgelendirici başladığı bir **nokta rengi** bağlı düğüm **son rengini** düğümü. Bu gölgelendiriciyi tam ve işlevsel olsa da, çok yapmaz. Bu nedenle, çalışma gölgelendirici oluşturmanın ilk adımı genellikle silmektir **nokta rengi** düğümü veya bağlantısını kesmeniz **son rengini** diğer düğümler için yer açmak için düğümü.  
@@ -91,19 +91,19 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Seçim modunda temel işlemleri gerçekleştirmek için  
   
--   İşte nasıl:  
+- İşte nasıl:  
   
-    -   Grafiğe bir düğüm eklemek, onu seçip **araç kutusu** ve ardından tasarım yüzeyine taşıyın.  
+    - Grafiğe bir düğüm eklemek, onu seçip **araç kutusu** ve ardından tasarım yüzeyine taşıyın.  
   
-    -   Grafikten bir düğümü kaldırmak için onu seçin ve Sil'e basın.  
+    - Grafikten bir düğümü kaldırmak için onu seçin ve Sil'e basın.  
   
-    -   Bir düğüme yeniden konumlandırmak için onu seçin ve ardından yeni bir konuma taşıyın.  
+    - Bir düğüme yeniden konumlandırmak için onu seçin ve ardından yeni bir konuma taşıyın.  
   
-    -   İki düğüm bağlanmak için bir çıkış terminal düğümün diğer düğümü için bir giriş uç taşıyın. Uyumlu türleri olan terminaller bağlanabilir. Bir satır Terminaller arasında bağlantı gösterir.  
+    - İki düğüm bağlanmak için bir çıkış terminal düğümün diğer düğümü için bir giriş uç taşıyın. Uyumlu türleri olan terminaller bağlanabilir. Bir satır Terminaller arasında bağlantı gösterir.  
   
-    -   Kısayol menüsünde herhangi birine bağlı terminaller yönelik bir bağlantı kaldırmak için **Bağlantıları Kes**.  
+    - Kısayol menüsünde herhangi birine bağlı terminaller yönelik bir bağlantı kaldırmak için **Bağlantıları Kes**.  
   
-    -   Bir düğüm özelliklerini yapılandırmak için düğümü seçin ve ardından **özellikleri** penceresinde özellikleri için yeni değerler belirtin.  
+    - Bir düğüm özelliklerini yapılandırmak için düğümü seçin ve ardından **özellikleri** penceresinde özellikleri için yeni değerler belirtin.  
   
 ### <a name="previewing-shaders"></a>Gölgelendiricileri Önizleme  
  Gölgelendirici uygulamanızda nasıl görüneceğini anlamanıza yardımcı olması için etkili nasıl önizlemesini görebilirsiniz yapılandırabilirsiniz. Uygulamanızı yaklaşık olarak belirlemenizi sağlayan, işleme, dokuları ve diğer malzeme parametreleri yapılandırmak, animasyon zaman tabanlı etkileri etkinleştirmek ve farklı açılardan Önizleme incelemek için birkaç şekil birini seçebilirsiniz.  
@@ -113,9 +113,9 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ###### <a name="to-choose-a-preview-shape"></a>Bir önizleme şekli seçmek için  
   
--   Üzerinde **gölgelendirici Tasarımcısı modu** araç, istediğiniz şekli seçin.  
+- Üzerinde **gölgelendirici Tasarımcısı modu** araç, istediğiniz şekli seçin.  
   
-####  <a name="WWS_MaterialParameters"></a> Dokular ve malzeme parametreleri  
+#### <a name="WWS_MaterialParameters"></a> Dokular ve malzeme parametreleri  
  Dokular ve malzeme özelliklerine nesne uygulamanızdaki her tür için benzersiz bir görünüm oluşturmak için birçok gölgelendirici dayanır. Gölgelendiricinizi, uygulamanızda nasıl görüneceğini görmek için dokular ve doku ve uygulamanızda kullanabileceğiniz parametreler eşleştirmek için Önizleme işlemek için kullanılan malzeme özellikleri ayarlayabilirsiniz.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Bir doku kaydı için farklı bir doku bağlamak için veya diğer malzeme parametreleri değiştirmek için  
@@ -140,14 +140,14 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ###### <a name="to-enable-real-time-rendering"></a>Gerçek zamanlı işleme olanağı  
   
--   Gölgelendirici Tasarımcısı araç çubuğunda **gerçek zamanlı işleme**.  
+- Gölgelendirici Tasarımcısı araç çubuğunda **gerçek zamanlı işleme**.  
   
 #### <a name="examining-the-effect"></a>Etkisi İnceleme  
  Birçok gölgelendirici açısını veya tek yönlü ışık görüntüleme gibi değişkenleri etkilenir. Bu değişkenler değiştikçe etkisi nasıl yanıt vereceğini incelemek için Önizleme şekle serbestçe döndürmek ve gölgelendirici nasıl davranacağını gözlemleyin.  
   
 ###### <a name="to-rotate-the-shape"></a>Şekil döndürmek için  
   
--   Tuşuna basın, Alt tuşunu basılı ve tasarım yüzeyinde herhangi bir noktasını seçin ve taşıyın.  
+- Tuşuna basın, Alt tuşunu basılı ve tasarım yüzeyinde herhangi bir noktasını seçin ve taşıyın.  
   
 ### <a name="exporting-shaders"></a>Gölgelendiricileri dışarı aktarma  
  Uygulamanızda bir gölgelendirici kullanmadan önce DirectX anlayan bir biçimde dışarı gerekir.  

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091615"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Nasıl yapılır: Bir ActiveX denetiminde hata ayıklama
 
@@ -40,19 +40,19 @@ ActiveX denetimi hata ayıklamak için bir kapsayıcı (çalıştırmak denetimi
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>Hata ayıklama oturumu için bir kapsayıcı belirtmek için
 
-1.  Çözüm Gezgini'nde projeyi seçin.
+1. Çözüm Gezgini'nde projeyi seçin.
 
-2.  Gelen **görünümü** menüsünde seçin **özellik sayfaları**.
+2. Gelen **görünümü** menüsünde seçin **özellik sayfaları**.
 
-3.  İçinde **proje özellik sayfaları** açık iletişim kutusunu **yapılandırma özellikleri** klasörü ve select **hata ayıklama**.
+3. İçinde **proje özellik sayfaları** açık iletişim kutusunu **yapılandırma özellikleri** klasörü ve select **hata ayıklama**.
 
-4.  Altında **hata ayıklama** kategori bulun **komut** özelliği.
+4. Altında **hata ayıklama** kategori bulun **komut** özelliği.
 
-5.  Kapsayıcı için yol adı belirtin. Örneğin, C:\Program Files\Internet Explorer\IEXPLORE. EXE.
+5. Kapsayıcı için yol adı belirtin. Örneğin, C:\Program Files\Internet Explorer\IEXPLORE. EXE.
 
-6.  Internet Explorer kapsayıcısı olarak belirtin ve etkin Desktop uygulamasını kullanıyorsanız, yazın `/new` içinde **komut satırı bağımsız değişkenlerini** kutusu.
+6. Internet Explorer kapsayıcısı olarak belirtin ve etkin Desktop uygulamasını kullanıyorsanız, yazın `/new` içinde **komut satırı bağımsız değişkenlerini** kutusu.
 
-7.  **Tamam**'ı tıklatın.
+7. **Tamam**'ı tıklatın.
 
      Bir kapsayıcıda belirtmezseniz **proje özellik sayfaları** iletişim kutusunda belirtebilirsiniz kapsayıcı hatalarını ayıklamaya başladığınızda. Hata ayıklamayı başlatmak için bir yürütme komutu seçtiğinizde [oturumu için yürütülebilir hata ayıklama iletişim kutusu](../debugger/executable-for-debugging-session-dialog-box.md) görünür. İletişim kutusundaki kapsayıcı yol adını belirtin.
 

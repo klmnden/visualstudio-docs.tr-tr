@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117258"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Nasıl yapılır: İfade Düzenleyicisini Kullanma
 
@@ -36,18 +36,18 @@ Değişmez değerler veya Visual Basic kodunu bağımsız değişkenler veya öz
 
 ## <a name="use-the-expression-editor"></a>İfade Düzenleyicisini Kullanma
 
-1.  Visual Studio'da, yeni veya var olan iş akışı projesi açın.
+1. Visual Studio'da, yeni veya var olan iş akışı projesi açın.
 
-2.  Ekleme, örneğin, <xref:System.Activities.Statements.Assign> etkinlik akışınıza.
+2. Ekleme, örneğin, <xref:System.Activities.Statements.Assign> etkinlik akışınıza.
 
     > [!NOTE]
     > Birden çok iş akışı etkinlikleri ifade düzenleyicileri vardır. İfade TextBlock'lar değişken tasarımcısını, bağımsız değişken tasarımcısını ve dinamik bağımsız değişken tasarımcısını da görünür. <xref:System.Activities.Statements.Assign> Etkinliği, örnek olarak kullanılır.
 
-3.  Sol ifade Düzenleyicisi için etkinlik Tasarımcısı'nda <xref:System.Activities.Statements.Assign> etkinlik.
+3. Sol ifade Düzenleyicisi için etkinlik Tasarımcısı'nda <xref:System.Activities.Statements.Assign> etkinlik.
 
      Gri Filigran dizeleri  **\<için >** ve  **\<zadejte Výraz jazyka vb. >** varsayılan ifade Düzenleyicilerde metin dizelerini içindir <xref:System.Activities.Statements.Assign> etkinlik.
 
-4.  İfadeniz girin. Bir dize girin, dize etrafında tırnak işareti koymak emin olun. İfade bağımsız değişkeni bir değişkene bağlamak isterseniz, tırnak işaretleri bırakın.
+4. İfadeniz girin. Bir dize girin, dize etrafında tırnak işareti koymak emin olun. İfade bağımsız değişkeni bir değişkene bağlamak isterseniz, tırnak işaretleri bırakın.
 
      İşiniz bittiğinde, bir bölge ya da alanı dışında ifade odağı tasarımcının başka bir parçası için Düzenleyici'yi seçin. Odağı kaydırma, daha önce açıklandığı şekilde ifadeyi doğrulamak derleyicinin neden olur.
 

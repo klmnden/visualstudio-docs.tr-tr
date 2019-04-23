@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117609"
 ---
 # <a name="graphics-log-document"></a>Grafik Günlük Belgesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
   
 #### <a name="to-inspect-a-frame"></a>Bir çerçeveyi incelemek için  
   
--   İçinde **çerçeve listesi**, incelemek istediğiniz çerçeveyi seçin. İşleme hedefi çıktısı grafik günlük belgesi üst kısmında seçilen çerçevenin görüntülemek için güncelleştirilir.  
+- İçinde **çerçeve listesi**, incelemek istediğiniz çerçeveyi seçin. İşleme hedefi çıktısı grafik günlük belgesi üst kısmında seçilen çerçevenin görüntülemek için güncelleştirilir.  
   
 #### <a name="to-inspect-a-pixel"></a>Bir pikselin incelemek için  
   
--   Grafik günlük belgesi üst kısmında, işleme hedefi çıktısı istediğiniz piksel seçin. Bir pikselin seçildiğinde, kullanabileceğiniz **grafik piksel geçmişi** seçilen piksel hakkında ayrıntılı bilgi görüntülemek için pencere. Daha fazla bilgi için [piksel geçmişi](../debugger/graphics-pixel-history.md).  
+- Grafik günlük belgesi üst kısmında, işleme hedefi çıktısı istediğiniz piksel seçin. Bir pikselin seçildiğinde, kullanabileceğiniz **grafik piksel geçmişi** seçilen piksel hakkında ayrıntılı bilgi görüntülemek için pencere. Daha fazla bilgi için [piksel geçmişi](../debugger/graphics-pixel-history.md).  
   
 ## <a name="playback-machine"></a>Kayıttan yürütme makinesi  
  Ayrıca sağ üst köşesinde görüntülenen **çerçeve listesi** olduğu **kayıttan yürütme makinesi**. Kayıttan yürütme makinesi, bir makine ya da grafik olaylarını bir grafik günlüğü dosyasından daha yeni bir grafik Tanılama oturumu sırasında kayıttan yürütmek için kullanılan cihaz ' dir. Yakalanan olaylar kayıttan yürütmek için geliştirme makinenizi yerine farklı bir cihaz kullanarak tarafından sorun oluştuğu yürütme ortamı daha doğru bir şekilde üretebileceği — Örneğin, farklı grafik donanımının veya sürücüleri olan bir makine kullanabilirsiniz. Geliştirme makinenizde kullanan olanları veya diğer tür cihazlar, bir tablet ARM tabanlı Windows RT veya Windows Phone cihazı gibi.  

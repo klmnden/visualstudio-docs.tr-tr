@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 732fa9a5d32916545b281a006cbeeaa93771f3ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f525f4b31a3535f6ea7b89d0443402240365cc7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088658"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Görüntü içeriği ardışık düzeni, projenizin yapı evresinin parçası ol
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Görüntü içeriği ardışık düzeni tarafından işlenecek kaynak görüntüyü yapılandırma.  
+- Görüntü içeriği ardışık düzeni tarafından işlenecek kaynak görüntüyü yapılandırma.  
   
--   Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırma.  
+- Mipmaps oluşturmak için görüntü içeriği ardışık yapılandırma.  
   
 ## <a name="exporting-mipmaps"></a>Mipmapları dışa aktarma  
  Mipeşlem, 3D oyun veya uygulamada dokulu yüzeyler için otomatik ekran alanı düzeyi ayrıntı düzeyi sağlar. Bu dokunun tamamı her zaman, örneklenen alt örneklenen gerekmez böylece bir dokunun alt örneklenen sürümlerini önceden hesaplayarak bir oyunun veya uygulamanın işleme performansını geliştirir.  

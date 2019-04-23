@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8496e31778765ed92ddca55efbb9e4747c8df81e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086760"
 ---
 # <a name="target-build-order"></a>Hedef derleme sırası
 Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri sıralanmış olmaları gerekmektedir. Bu öznitelikler, hedef çalıştığı sırayı belirtmek için kullanabilirsiniz:
@@ -104,21 +104,21 @@ Başka bir hedef üzerinde çıkışını bir hedef girişi bağlıysa hedefleri
 ## <a name="determine-the-target-build-order"></a>Hedef derleme sırasını belirleme
  MSBuild hedef derleme sırası gibi belirler:
 
-1.  `InitialTargets` hedefleri çalıştırılır.
+1. `InitialTargets` hedefleri çalıştırılır.
 
-2.  Komut satırı tarafından belirtilen hedefleri **-hedef** anahtar çalıştırılır. Hiçbir hedef komut satırında belirtin, ardından `DefaultTargets` hedefleri çalıştırın. Ardından ikisi de mevcutsa karşılaşılan ilk hedef çalıştırılır.
+2. Komut satırı tarafından belirtilen hedefleri **-hedef** anahtar çalıştırılır. Hiçbir hedef komut satırında belirtin, ardından `DefaultTargets` hedefleri çalıştırın. Ardından ikisi de mevcutsa karşılaşılan ilk hedef çalıştırılır.
 
-3.  `Condition` Özniteliği hedef değerlendirilir. Varsa `Condition` özniteliği var ve değerlendiren `false`, hedef yürütülen değildir ve yapı üzerinde başka hiçbir etkisi olmaz.
+3. `Condition` Özniteliği hedef değerlendirilir. Varsa `Condition` özniteliği var ve değerlendiren `false`, hedef yürütülen değildir ve yapı üzerinde başka hiçbir etkisi olmaz.
 
     Koşullu hedef liste hedefleri `BeforeTargets` veya `AfterTargets` hala önceden belirlenmiş bir sırada yürütün
 
-4.  Bir hedef yürütülen veya atlandı ise önce kendi `Condition` özniteliği eksik veya için Değerlendirilmedi `false`, kendi `DependsOnTargets` hedefleri çalıştırın.
+4. Bir hedef yürütülen veya atlandı ise önce kendi `Condition` özniteliği eksik veya için Değerlendirilmedi `false`, kendi `DependsOnTargets` hedefleri çalıştırın.
 
-5.  Bir hedef yürütülen veya içinde listeler herhangi bir hedef atlandı önce bir `BeforeTargets` özniteliği çalıştırılır.
+5. Bir hedef yürütülen veya içinde listeler herhangi bir hedef atlandı önce bir `BeforeTargets` özniteliği çalıştırılır.
 
-6.  Bir hedef yürütülmeden önce kendi `Inputs` özniteliği ve `Outputs` özniteliği karşılaştırılır. MSBuild belirlerse herhangi bir çıktı dosyalarını karşılık gelen girdi dosyası veya dosya ile ilgili güncel değil ve MSBuild hedefi yürütür. Aksi takdirde, MSBuild hedefini atlar.
+6. Bir hedef yürütülmeden önce kendi `Inputs` özniteliği ve `Outputs` özniteliği karşılaştırılır. MSBuild belirlerse herhangi bir çıktı dosyalarını karşılık gelen girdi dosyası veya dosya ile ilgili güncel değil ve MSBuild hedefi yürütür. Aksi takdirde, MSBuild hedefini atlar.
 
-7.  Bir hedef yürütülen veya içinde listeler herhangi bir hedef atlandı sonra bir `AfterTargets` özniteliği çalıştırılır.
+7. Bir hedef yürütülen veya içinde listeler herhangi bir hedef atlandı sonra bir `AfterTargets` özniteliği çalıştırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Hedefler](../msbuild/msbuild-targets.md)

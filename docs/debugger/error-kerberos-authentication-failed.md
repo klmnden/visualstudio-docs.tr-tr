@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb327ad703c744f94970162f493cb61dffb8fac3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087572"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Hata: Kerberos kimlik doğrulaması başarısız oldu
 Uzaktan hata ayıklama yapmayı denediğinizde aşağıdaki hata iletisini alabilirsiniz:
@@ -44,19 +44,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Hedef bilgisayarda DNS doğru hata ayıklayıcısı ana bilgisayar adı çözdüğünü doğrulamak için
 
-1.  Hedef bilgisayarda açın **Başlat** menüsünde **Donatılar** ve ardından **komut istemi**.
+1. Hedef bilgisayarda açın **Başlat** menüsünde **Donatılar** ve ardından **komut istemi**.
 
-2.  İçinde **komut istemi** penceresinde, tür:
+2. İçinde **komut istemi** penceresinde, tür:
 
     ```cmd
     ping <debugger_host_computer_name>
     ```
 
-3.  İlk satırı `ping` yanıt tam bilgisayar adını ve belirtilen bilgisayar için DNS tarafından döndürülen IP adresini gösterir.
+3. İlk satırı `ping` yanıt tam bilgisayar adını ve belirtilen bilgisayar için DNS tarafından döndürülen IP adresini gösterir.
 
-4.  Hata ayıklayıcı ana bilgisayarda açık bir **komut istemi** penceresi ve çalışma `ipconfig`.
+4. Hata ayıklayıcı ana bilgisayarda açık bir **komut istemi** penceresi ve çalışma `ipconfig`.
 
-5.  IP adresi değerini karşılaştırır.
+5. IP adresi değerini karşılaştırır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Uzaktan Hata Ayıklama Hataları ve Sorun Giderme](../debugger/remote-debugging-errors-and-troubleshooting.md)

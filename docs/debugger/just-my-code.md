@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081872"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Yalnızca kullanıcı kodunu yalnızca kendi kodum ile hata ayıklama
 
@@ -110,7 +110,7 @@ Hata ayıklayıcı kullanıcı olmayan kodu keserse (örneğin, kullandığını
 
 Hata ayıklayıcısı özel bir durum olursa, kullanıcı veya kullanıcı olmayan kod olup olmadığını özel durum durdurur. **Kullanıcı-işlenmemiş** seçeneklerini **özel durum ayarları** iletişim kutusunu yok sayılır.
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> C++ çağrı yığını ve kodu Adımlama davranışını özelleştirme
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> C++ çağrı yığını ve kodu Adımlama davranışını özelleştirme
 
 C++ projeleri için modüller, kaynak dosyaları ve işlevleri belirtebilirsiniz **çağrı yığını** penceresi, bunları belirterek kullanıcı olmayan kod olarak değerlendirir  *\*.natjmc* dosyaları. Bu özelleştirme en son derleyiciyi kullanıyorsanız atlama kodu için de geçerlidir (bkz [C++ Yalnızca benim kodum](#BKMK_CPP_User_and_non_user_code)).
 
@@ -160,7 +160,7 @@ A *.natjmc* dosyasıdır bu söz dizimi olan bir XML dosyası:
 |`Module`|İsteğe bağlı. İşlevi içeren modül tam yolu ve adı. Aynı ada sahip işlevler belirsizliğini ortadan kaldırmak için bu özniteliği kullanabilirsiniz.|
 |`ExceptionImplementation`|Ayarlandığında `true`, özel durum oluşturdu işlevi yerine bu işlev çağrı yığınını görüntüler.|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> C++ atlama davranışını yalnızca kendi kodum ayarlarını bağımsız özelleştirme
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> C++ atlama davranışını yalnızca kendi kodum ayarlarını bağımsız özelleştirme
 
 C++ projelerinde, İşlevler kullanıcı olmayan kod olarak listelenerek tarafından devralınırsa adım belirtebilirsiniz  *\*.natstepfilter* dosyaları. Listelenen işlevleri  *\*.natstepfilter* dosyaları yalnızca kendi kodum ayarlarına bağlı değildir.
 
@@ -192,7 +192,7 @@ A *.natstepfilter* dosyasıdır bu söz dizimi olan bir XML dosyası:
 |`Module`|İsteğe bağlı. ECMA 262 işlevi içeren modül tam yolunu belirtmeyi normal ifade biçimlendirilmiş. Eşleşme büyük/küçük harf duyarlıdır.|
 |`Action`|Gerekli. Büyük/küçük harfe şu değerlerden biri:<br /><br /> `NoStepInto`  -işlevin adımlamak için hata ayıklayıcıya bildirir.<br /> `StepInto`  -işleve, hata ayıklayıcının söyleyen diğer geçersiz kılma `NoStepInto` eşleşen işlevi.|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript yalnızca kendi kodum
+## <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript yalnızca kendi kodum
 
 <a name="BKMK_JS_User_and_non_user_code"></a> JavaScript yalnızca kendi kodum, bu sınıflandırmaları birinde kod gruplayarak adımlama ve çağrı yığını görüntü denetimleri:
 
@@ -205,10 +205,10 @@ A *.natstepfilter* dosyasıdır bu söz dizimi olan bir XML dosyası:
 JavaScript hata ayıklayıcı, kodu kullanıcı veya kullanıcı olmayan bu sırayla olarak sınıflandırır:
 
 1. Varsayılan sınıflandırmalar.
-   -   Ana bilgisayar tarafından sağlanan için bir dize geçirerek yürütülen betik `eval` işlevi **MyCode**.
-   -   Bir dizeye geçirerek yürütülen betik `Function` oluşturucudur **LibraryCode**.
-   -   WinJS ya da Azure SDK'sı gibi framework başvurusu betiğidir **LibraryCode**.
-   -   Bir dizeye geçirerek yürütülen betik `setTimeout`, `setImmediate`, veya `setInterval` işlevleri, **UnrelatedCode**.
+   - Ana bilgisayar tarafından sağlanan için bir dize geçirerek yürütülen betik `eval` işlevi **MyCode**.
+   - Bir dizeye geçirerek yürütülen betik `Function` oluşturucudur **LibraryCode**.
+   - WinJS ya da Azure SDK'sı gibi framework başvurusu betiğidir **LibraryCode**.
+   - Bir dizeye geçirerek yürütülen betik `setTimeout`, `setImmediate`, veya `setInterval` işlevleri, **UnrelatedCode**.
 
 2. Tüm Visual Studio JavaScript projeleri için belirtilen sınıflandırmalar *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* dosya.
 
@@ -298,7 +298,7 @@ Bu anahtar sözcüklerden biri için değer değiştirebilirsiniz:
 |||
 |-|-|
 |**MyCode**|Bir dizi olarak sınıflandırılan dosyalar veya URL'ler **MyCode**.|
-|**Kitaplıkları**|Bir dizi olarak sınıflandırılan dosyalar veya URL'ler **LibraryCode**.|
+|**Kitaplıklar**|Bir dizi olarak sınıflandırılan dosyalar veya URL'ler **LibraryCode**.|
 |**İlişkisiz**|Bir dizi olarak sınıflandırılan dosyalar veya URL'ler **UnrelatedCode**.|
 
 Bir veya daha fazla URL veya dosya dize olabilir `*` karakter sıfır veya daha fazla karakterini eşleştirin. `*` Normal ifade aynı `.*`.

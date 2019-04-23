@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086643"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>İzlenecek yol: SDK'sını kullanarak oluşturma C# veya Visual Basic
 Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak oluşturma ve sonra bir Visual Studio Uzantısı (VSIX) olarak SDK paketini öğreneceksiniz. Aşağıdaki yordamları tamamlamanız:
 
--   [SimpleMath Windows çalışma zamanı bileşeni oluşturma](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [SimpleMath Windows çalışma zamanı bileşeni oluşturma](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [SimpleMathVSIX uzantı projesini oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [SimpleMathVSIX uzantı projesini oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> SimpleMath Windows çalışma zamanı bileşeni oluşturma
+## <a name="createClassLibrary"></a> SimpleMath Windows çalışma zamanı bileşeni oluşturma
 
 1. Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.
 
@@ -54,25 +54,25 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
 9. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SimpleMath** proje düğümünü ve ardından **yapı**.
 
-##  <a name="createVSIX"></a> SimpleMathVSIX uzantı projesini oluşturmak için
+## <a name="createVSIX"></a> SimpleMathVSIX uzantı projesini oluşturmak için
 
-1.  Kısayol menüsünde **çözüm 'SimpleMath'** düğümünü seçin **Ekle** > **yeni proje**.
+1. Kısayol menüsünde **çözüm 'SimpleMath'** düğümünü seçin **Ekle** > **yeni proje**.
 
-2.  Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**, seçin **genişletilebilirlik** düğümünü seçip **VSIX projesi** şablonu.
+2. Şablonlar listesinde genişletin **Visual C#** veya **Visual Basic**, seçin **genişletilebilirlik** düğümünü seçip **VSIX projesi** şablonu.
 
-3.  İçinde **adı** kutusunda, belirtin **SimpleMathVSIX**ve ardından **Tamam** düğmesi.
+3. İçinde **adı** kutusunda, belirtin **SimpleMathVSIX**ve ardından **Tamam** düğmesi.
 
-4.  İçinde **Çözüm Gezgini**, seçin **source.extension.vsixmanifest** öğesi.
+4. İçinde **Çözüm Gezgini**, seçin **source.extension.vsixmanifest** öğesi.
 
-5.  Menü çubuğunda, **görünümü** > **kod**.
+5. Menü çubuğunda, **görünümü** > **kod**.
 
-6.  Var olan XML aşağıdaki XML ile değiştirin:
+6. Var olan XML aşağıdaki XML ile değiştirin:
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  İçinde **Çözüm Gezgini**, seçin **SimpleMathVSIX** proje.
+7. İçinde **Çözüm Gezgini**, seçin **SimpleMathVSIX** proje.
 
-8.  Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+8. Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
 9. Listesinde **ortak öğeler**, genişletme **veri**ve ardından **XML dosyası**.
 
@@ -83,6 +83,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 12. Dosyanın içeriğini aşağıdaki XML ile değiştirin:
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 
 30. Seçin **yükleme** düğmesi, yüklemenin tamamlanmasını bekleyin ve sonra Visual Studio'yu yeniden başlatın.
 
-##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için
+## <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **yeni proje**.
 
@@ -176,6 +178,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
 10. İçinde **Çözüm Gezgini**açın **MainPage.xaml**ve içeriğini aşağıdaki XAML ile değiştirin:
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ Bu kılavuzda, bir basit matematik kitaplığı SDK'sı, Visual C# kullanarak ol
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"

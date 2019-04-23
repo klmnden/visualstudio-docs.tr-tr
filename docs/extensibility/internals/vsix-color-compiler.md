@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112344"
 ---
 # <a name="vsix-color-compiler"></a>VSIX Renk Derleyicisi
 Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'da bu renkleri kullanılabilir olacak şekilde dönüştürür ve mevcut Visual Studio Tema renkleri temsil eden bir .xml dosyasına götüren bir konsol uygulamasına bir araçtır. .Xml dosyaları arasındaki farkları karşılaştırmak kolay olduğundan, bu kaynak denetiminde özel renkler yönetmek için kullanışlı bir araçtır. Böylece yapı çıkışını geçerli .pkgdef dosyası derleme ortamlara da bağlanabilir.
@@ -111,7 +111,7 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 |-|-|
 |**Öznitelik**|**Tanım**|
 |Tür|[Gerekli] Renk türü. Aşağıdakilerden biri olabilir:<br /><br /> *CT_INVALID:* Geçersiz ya da ayarlanmadığından rengi.<br /><br /> *CT_RAW:* Ham ARGB değeri.<br /><br /> *CT_COLORINDEX:* KULLANMAYIN.<br /><br /> *CT_SYSCOLOR:* Bir Windows sistem renk SysColor.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX bir Visual Studio renk.<br /><br /> *CT_AUTOMATIC:* Otomatik rengi.<br /><br /> *CT_TRACK_FOREGROUND:* KULLANMAYIN.<br /><br /> *CT_TRACK_BACKGROUND:* KULLANMAYIN.|
-|Kaynak|[Gerekli] Rengin onaltılık olarak temsil edilen değeri|
+|Source|[Gerekli] Rengin onaltılık olarak temsil edilen değeri|
 
  Tür özniteliği yer alan şemada __VSCOLORTYPE numaralandırması tarafından desteklenen tüm değerleri desteklenir. Ancak, yalnızca CT_RAW ve CT_SYSCOLOR kullanmanızı öneririz.
 
@@ -149,15 +149,15 @@ Visual Studio uzantısı renk derleyicisi bir .pkgdef için dosya Visual Studio'
 
  **Örnekler**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml/nologo
+- VsixColorCompiler D:\xml\colors.xml/nologo
 
 ## <a name="notes"></a>Notlar
 
--   Bu araç, VC ++ Çalışma zamanı en son sürümü yüklü olmasını gerektirir.
+- Bu araç, VC ++ Çalışma zamanı en son sürümü yüklü olmasını gerektirir.
 
--   Yalnızca tek dosyalar desteklenir. Klasör yolları aracılığıyla toplu dönüştürme desteklenmiyor.
+- Yalnızca tek dosyalar desteklenir. Klasör yolları aracılığıyla toplu dönüştürme desteklenmiyor.
 
 ## <a name="sample-output"></a>Örnek çıktı
  Aracı tarafından oluşturulan .pkgdef dosyası şuna benzeyecektir anahtarları aşağıda:

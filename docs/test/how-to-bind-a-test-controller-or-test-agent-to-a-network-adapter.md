@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086500"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Nasıl yapılır: Bir ağ bağdaştırıcısına bir test denetleyicisi veya test aracısı bağlama
 
@@ -35,19 +35,19 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Ağ bağdaştırıcılarının IP adreslerini almak için
 
-1.  Microsoft Windows seçin **Başlat**, seçin **Aramaya Başla** kutusuna **cmd**ve ardından **Enter**.
+1. Microsoft Windows seçin **Başlat**, seçin **Aramaya Başla** kutusuna **cmd**ve ardından **Enter**.
 
-2.  Tür **ipconfig/all**.
+2. Tür **ipconfig/all**.
 
      Ağ bağdaştırıcılarınız için IP adresleri görüntülenir. Denetleyicinizi bağlamak istediğiniz ağ bağdaştırıcısının IP adresini kaydedin.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Bir ağ bağdaştırıcısına bir test Denetleyicisi'ne bağlamak için
 
-1.  Microsoft Windows seçin **Başlat**, seçin **Aramaya Başla** kutusuna **services.msc**ve ardından **Enter**.
+1. Microsoft Windows seçin **Başlat**, seçin **Aramaya Başla** kutusuna **services.msc**ve ardından **Enter**.
 
      **Hizmetleri** iletişim kutusu görüntülenir.
 
-2.  Sonuçlar bölmesinde altında **adı** sütun sağ **Visual Studio Test denetleyicisi** hizmet ve ardından **Durdur**.
+2. Sonuçlar bölmesinde altında **adı** sütun sağ **Visual Studio Test denetleyicisi** hizmet ve ardından **Durdur**.
 
      veya
 
@@ -55,9 +55,9 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
 
      `net stop vsttcontroller`
 
-3.  Açık *QTCcontroller.exe.config* bulunan XML yapılandırma dosyasını *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<sürümü > \Common7\IDE*.
+3. Açık *QTCcontroller.exe.config* bulunan XML yapılandırma dosyasını *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<sürümü > \Common7\IDE*.
 
-4.  bulun `<appSettings>` etiketi.
+4. bulun `<appSettings>` etiketi.
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
     </appSettings>
     ```
 
-5.  Ekleme `BindTo` hangi ağ bağdaştırıcısının kullanılacağını belirlemek için anahtar `<appSettings>` bölümü.
+5. Ekleme `BindTo` hangi ağ bağdaştırıcısının kullanılacağını belirlemek için anahtar `<appSettings>` bölümü.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Test denetleyicisi hizmetini başlatın. Bunu yapmak için bir komut isteminde aşağıdaki komutu çalıştırın:
+6. Test denetleyicisi hizmetini başlatın. Bunu yapmak için bir komut isteminde aşağıdaki komutu çalıştırın:
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Bir test aracısı için bir ağ arabirimi kartı bağlamak için
 
-1.  Microsoft Windows seçin **Başlat**, seçin **Aramaya Başla** kutusuna **services.msc**ve ardından **Enter**.
+1. Microsoft Windows seçin **Başlat**, seçin **Aramaya Başla** kutusuna **services.msc**ve ardından **Enter**.
 
     **Hizmetleri** iletişim kutusu görüntülenir.
 
-2.  Sonuçlar bölmesinde altında **adı** sütun sağ **Visual Studio Test aracısı** hizmet ve ardından **Durdur**.
+2. Sonuçlar bölmesinde altında **adı** sütun sağ **Visual Studio Test aracısı** hizmet ve ardından **Durdur**.
 
      veya
 
@@ -101,9 +101,9 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
 
      **net stop vsttagent**
 
-3.  Açık *QTAgentService.exe.config* bulunan XML yapılandırma dosyasını *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<sürümü > \Common7\IDE*.
+3. Açık *QTAgentService.exe.config* bulunan XML yapılandırma dosyasını *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\\<sürümü > \Common7\IDE*.
 
-4.  bulun `<appSettings>` etiketi.
+4. bulun `<appSettings>` etiketi.
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ Test denetleyicisi veya test aracısı yazılımı yüklü olduğu bir bilgisaya
     </appSettings>  </appSettings>
     ```
 
-5.  Ekleme `BindTo` hangi ağ bağdaştırıcısının kullanılacağını belirlemek için anahtar `<appSettings>` bölümü.
+5. Ekleme `BindTo` hangi ağ bağdaştırıcısının kullanılacağını belirlemek için anahtar `<appSettings>` bölümü.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Test aracısı hizmetini başlatın. Bunu yapmak için bir komut isteminde aşağıdaki komutu çalıştırın:
+6. Test aracısı hizmetini başlatın. Bunu yapmak için bir komut isteminde aşağıdaki komutu çalıştırın:
 
     `net start vsttagent`
 

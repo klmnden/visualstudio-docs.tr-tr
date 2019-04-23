@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088151"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Paylaşılan ve Sürümü Tutulan VSPackage’lar Arasında Seçim Yapma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Visual Studio'nun farklı sürümleri aynı bilgisayarda bulunabilir. VSPackage'
 ## <a name="shared-vspackages"></a>Paylaşılan VSPackage'ları  
  Paylaşılan bir VSPackage'ı kullanarak uygun içinde birden çok sürümünü aynı VSPackage'ı kullandığınızda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Paylaşılan bir VSPackage'ı uygulamak için aşağıdaki adımları izlemelisiniz:  
   
--   VSPackage, birden çok sürümü ile uyumlu hale getirmek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu nedenle iki şekilde de kullanılabilir:  
+- VSPackage, birden çok sürümü ile uyumlu hale getirmek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Bu nedenle iki şekilde de kullanılabilir:  
   
-    -   Yalnızca en eski sürümünü özelliklerini kullanarak, VSPackage sınırlamak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] destek.  
+    - Yalnızca en eski sürümünü özelliklerini kullanarak, VSPackage sınırlamak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] destek.  
   
-    -   Sürümüne uyum sağlamak için VSPackage program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalıştığı içinde. Ardından, yeni hizmetler için sorgu başarısız olursa, VSPackage'ı eski sürümlerinde desteklenen diğer hizmet sunabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    - Sürümüne uyum sağlamak için VSPackage program [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çalıştığı içinde. Ardından, yeni hizmetler için sorgu başarısız olursa, VSPackage'ı eski sürümlerinde desteklenen diğer hizmet sunabilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   VSPackage'ı uygun şekilde kaydedin. Daha fazla bilgi için [VSPackage kaydı](../extensibility/internals/vspackage-registration.md) ve [yönetilen VSPackage kaydı](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- VSPackage'ı uygun şekilde kaydedin. Daha fazla bilgi için [VSPackage kaydı](../extensibility/internals/vspackage-registration.md) ve [yönetilen VSPackage kaydı](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
--   Dosya uzantılarını uygun şekilde kaydedin. Daha fazla bilgi için [yan yana dağıtımlar için dosya adı uzantılarını kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+- Dosya uzantılarını uygun şekilde kaydedin. Daha fazla bilgi için [yan yana dağıtımlar için dosya adı uzantılarını kaydetme](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Uygun sürümleri için VSPackage dağıtan bir yükleyici oluşturma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [yükleme VSPackage'ları ile Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) ve [bileşen Yönetim](../extensibility/internals/component-management.md).  
+- Uygun sürümleri için VSPackage dağıtan bir yükleyici oluşturma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Daha fazla bilgi için [yükleme VSPackage'ları ile Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) ve [bileşen Yönetim](../extensibility/internals/component-management.md).  
   
--   Kayıt çakışma sorunu giderir. Daha fazla bilgi için [VSPackage kaydı](../extensibility/internals/vspackage-registration.md).  
+- Kayıt çakışma sorunu giderir. Daha fazla bilgi için [VSPackage kaydı](../extensibility/internals/vspackage-registration.md).  
   
--   Paylaşılan ve sürümü tutulan dosyaları birden çok sürümünün kaldırılması ve güvenli yüklenmesine izin vermek için başvuru sayımını uyduğunuzdan emin olun. Daha fazla bilgi için [bileşen Yönetim](../extensibility/internals/component-management.md).  
+- Paylaşılan ve sürümü tutulan dosyaları birden çok sürümünün kaldırılması ve güvenli yüklenmesine izin vermek için başvuru sayımını uyduğunuzdan emin olun. Daha fazla bilgi için [bileşen Yönetim](../extensibility/internals/component-management.md).  
   
 ## <a name="versioned-vspackages"></a>Sürümü tutulan Vspackage'lar  
  Tutulan VSPackage stratejisi altında bir VSPackage'ı her sürümü için oluşturduğunuz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] destek. Bunu yapmanın uygun sonraki sürümleri tarafından sağlanan hizmetlerin avantajlarından yararlanmak beklediğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], diğerleri etkilenmeden her VSPackage geliştirebilirsiniz. Bununla birlikte, tek bir kod tabanını veya birden çok bağımsız kod tabanlarında, birden çok ikili dosyaları oluşturma tutulan stratejisi paylaşılan stratejisi değerinden daha fazla ilk geliştirme gerektirdiği. Her sürümü için ayrı bir kurulum veya sürümleri algılayan tek bir kurulum oluşturmanız gerekir çünkü Ayrıca, ek kurulum çalışması gerekebilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yüklenen ve, VSPackage'ı destekler.  

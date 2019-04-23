@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117635"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Nasıl yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ Birden çok proje içeren bir çözüm derlerken, belirli projeleri ilk oluştur
   
 ### <a name="to-remove-dependencies-from-projects"></a>Proje bağımlılıkları kaldırmak için  
   
-1.  Çözüm Gezgini'nde bir proje seçin.  
+1. Çözüm Gezgini'nde bir proje seçin.  
   
-2.  Üzerinde **proje** menüsünde seçin **proje bağımlılıkları**.  
+2. Üzerinde **proje** menüsünde seçin **proje bağımlılıkları**.  
   
      **Proje bağımlılıkları** iletişim kutusu açılır.  
   
     > [!NOTE]
     >  **Proje bağımlılıkları** seçeneği, yalnızca kullanılabilir birden fazla proje içeren bir çözümde.  
   
-3.  Üzerinde **bağımlılıkları** sekmesinde, bir proje seçin **proje** açılan menüsü.  
+3. Üzerinde **bağımlılıkları** sekmesinde, bir proje seçin **proje** açılan menüsü.  
   
-4.  İçinde **bağlıdır** alan, bu projenin bağımlılıklarıdır artık herhangi bir projeyi yanındaki onay kutularını temizleyin.  
+4. İçinde **bağlıdır** alan, bu projenin bağımlılıklarıdır artık herhangi bir projeyi yanındaki onay kutularını temizleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Projeleri ve Visual Studio çözümleri oluşturma ve temizleme](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116790"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>ASP.NET ve AJAX Uygulamalarında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hata ayıklama [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web uygulamalarının her iki türde uygulamalar denetimleri ve olayları içerdiğinden dolayı bir Windows Form veya başka bir Windows uygulama hatalarının ayıklanmasına benzer. Ancak, vardır de iki tür uygulama arasındaki temel farklar:  
   
--   Durumu izlemek, bir Web uygulamasında daha karmaşıktır.  
+- Durumu izlemek, bir Web uygulamasında daha karmaşıktır.  
   
--   Bir Windows uygulamasında ayıklanacak kod çoğunlukla bir konumdadır; bir Web uygulamasında, istemci ve sunucu kodu olabilir. Sırada [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kodu tüm sunucu üzerinde Ayrıca JavaScript de olabilir veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] istemci kodu.  
+- Bir Windows uygulamasında ayıklanacak kod çoğunlukla bir konumdadır; bir Web uygulamasında, istemci ve sunucu kodu olabilir. Sırada [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kodu tüm sunucu üzerinde Ayrıca JavaScript de olabilir veya [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] istemci kodu.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [ASP.NET'de Hata Ayıklamaya Hazırlanıyor](../debugger/preparing-to-debug-aspnet.md)  

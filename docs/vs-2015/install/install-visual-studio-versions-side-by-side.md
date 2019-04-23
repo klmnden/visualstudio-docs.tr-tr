@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117648"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio sürümlerini yan yana yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Visual Studio'nun bu sürümü zaten daha önceki bir sürümün yüklü olduğu
 
  Sürümleri yan yana yüklemeden önce aşağıdaki koşulları gözden geçirin:
 
--   İçinde oluşturulmuş bir çözümü açmak için Visual Studio 2015 kullanıyorsanız [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], daha sonra açın ve Visual Studio 2015'e özgü herhangi bir özellik uygulamadığınız sürece çözümü yeniden eski sürümü değiştirin.
+- İçinde oluşturulmuş bir çözümü açmak için Visual Studio 2015 kullanıyorsanız [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], daha sonra açın ve Visual Studio 2015'e özgü herhangi bir özellik uygulamadığınız sürece çözümü yeniden eski sürümü değiştirin.
 
--   İçinde oluşturulmuş bir çözümü açmak için Visual Studio 2015 kullanmaya çalışırsanız [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] veya önceki bir sürümü projelerinizi ve dosyalarınızı Visual Studio 2015 ile uyumlu olacak şekilde değiştirmeniz gerekebilir. Daha fazla bilgi için [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) sayfası.
+- İçinde oluşturulmuş bir çözümü açmak için Visual Studio 2015 kullanmaya çalışırsanız [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] veya önceki bir sürümü projelerinizi ve dosyalarınızı Visual Studio 2015 ile uyumlu olacak şekilde değiştirmeniz gerekebilir. Daha fazla bilgi için [bağlantı noktası, geçirme ve yükseltme Visual Studio projeleri](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) sayfası.
 
--   Bir sürümünü kaldırırsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] birden fazla sürümü yüklü olan bir bilgisayarda dosya ilişkilendirmeleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tüm sürümler için kaldırılır. Kullanarak bu dosya ilişkilerini yeniden eşleyebilirsiniz **dosya ilişkilerini geri yükle** düğmesini **ortam**, **genel** sayfasının [seçenekleri](../ide/reference/general-environment-options-dialog-box.md) iletişim kutusu.
+- Bir sürümünü kaldırırsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] birden fazla sürümü yüklü olan bir bilgisayarda dosya ilişkilendirmeleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tüm sürümler için kaldırılır. Kullanarak bu dosya ilişkilerini yeniden eşleyebilirsiniz **dosya ilişkilerini geri yükle** düğmesini **ortam**, **genel** sayfasının [seçenekleri](../ide/reference/general-environment-options-dialog-box.md) iletişim kutusu.
 
--   Tüm uzantıları uyumlu olmadığından visual Studio uzantıları otomatik olarak yükseltmez. Uzantılar'dan yeniden yüklemeniz gerekir [Visual Studio Market](http://go.microsoft.com/fwlink/?LinkId=178891) veya yazılım yayımcısından.
+- Tüm uzantıları uyumlu olmadığından visual Studio uzantıları otomatik olarak yükseltmez. Uzantılar'dan yeniden yüklemeniz gerekir [Visual Studio Market](http://go.microsoft.com/fwlink/?LinkId=178891) veya yazılım yayımcısından.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET framework sürümleri ve yan yana yüklemeler
 
--   Visual Basic, Visual C#, görsel ve F# projelerde kullan **hedef Framework'ü** seçeneğini **Proje Tasarımcısı** bir projenin hangi .NET Framework sürümünü kullandığını belirtmek için. Bir C++ projesi için .vcxproj dosyasını değiştirerek hedef Framework'ü el ile değiştirebilirsiniz. Daha fazla bilgi için [sürüm uyumluluğu](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C#, görsel ve F# projelerde kullan **hedef Framework'ü** seçeneğini **Proje Tasarımcısı** bir projenin hangi .NET Framework sürümünü kullandığını belirtmek için. Bir C++ projesi için .vcxproj dosyasını değiştirerek hedef Framework'ü el ile değiştirebilirsiniz. Daha fazla bilgi için [sürüm uyumluluğu](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Bir proje oluşturduğunuzda, projenin hangi .NET Framework sürümünü hedefleyeceğini belirtebilirsiniz **.NET Framework** listesinde **yeni proje** iletişim kutusu.
 

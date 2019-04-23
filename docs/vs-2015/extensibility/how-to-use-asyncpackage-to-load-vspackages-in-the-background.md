@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091674"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Nasıl yapılır: AsyncPackage Kullanarak Arka Planda VSPackage Yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Mevcut bir VSPackage AsyncPackage için Dönüştür  
  İşin çoğunu yeni oluşturma aynıdır **AsyncPackage**. 1 ile 5 yukarıdaki adımları izlemeniz gerekir. Aşağıdakilere çok dikkatli olması gerekir:  
   
-1.  Kaldırmayı unutmayın **başlatmak** geçersiz kılma paketinizdeki vardı.  
+1. Kaldırmayı unutmayın **başlatmak** geçersiz kılma paketinizdeki vardı.  
   
-2.  Kilitlenmeler kaçının: Olabilir, kodunuzda artık bir arka plan iş parçacığında gerçekleştirilmesi RPC gizli. Bir RPC yapıyorsanız emin olmanız gerekir (örneğin **GetService**), ana iş parçacığı (1) ya da geç yapmanız veya var (2) zaman uyumsuz bir API sürümünü kullanın (örneğin **Asyncpackage'dan**).  
+2. Kilitlenmeler kaçının: Olabilir, kodunuzda artık bir arka plan iş parçacığında gerçekleştirilmesi RPC gizli. Bir RPC yapıyorsanız emin olmanız gerekir (örneğin **GetService**), ana iş parçacığı (1) ya da geç yapmanız veya var (2) zaman uyumsuz bir API sürümünü kullanın (örneğin **Asyncpackage'dan**).  
   
-3.  Çok sık iş parçacıkları arasında geçiş. Arka plan iş parçacığında oluşabilir iş yerelleştirmek deneyin. Bu yükleme süresini azaltır.  
+3. Çok sık iş parçacıkları arasında geçiş. Arka plan iş parçacığında oluşabilir iş yerelleştirmek deneyin. Bu yükleme süresini azaltır.  
   
 ## <a name="querying-services-from-asyncpackage"></a>AsyncPackage hizmetlerinden sorgulama  
  Bir **AsyncPackage** olabilir veya zaman uyumsuz olarak bağlı olarak çağıran yüklenmeyebilir. Örneğin,  

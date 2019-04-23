@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087189"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Nasıl yapılır: Bir Şerit grubuna iletişim kutusu başlatıcısı ekleme
   Herhangi bir Şerit grubuna iletişim kutusu başlatıcısı ekleyebilirsiniz. İletişim kutusu başlatıcısı içinde bir grup görünür küçük bir simgedir. Kullanıcılar, ilgili iletişim kutusu veya Grup ile ilgili daha fazla seçenek sağlayan görev bölmeleri açmak için bu simgeye tıklayın.
@@ -27,11 +27,11 @@ ms.locfileid: "56629956"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Şerit grubuna iletişim kutusu başlatıcısı ekleme
 
-1.  Şerit kod dosyasını seçin (*.vb* veya *.cs* dosya) içinde **Çözüm Gezgini**.
+1. Şerit kod dosyasını seçin (*.vb* veya *.cs* dosya) içinde **Çözüm Gezgini**.
 
-2.  Üzerinde **görünümü** menüsünde tıklatın **Tasarımcısı**.
+2. Üzerinde **görünümü** menüsünde tıklatın **Tasarımcısı**.
 
-3.  Şerit Tasarımcısı'nda tüm grubuna sağ tıklayın ve ardından **DialogBoxLauncher Ekle**.
+3. Şerit Tasarımcısı'nda tüm grubuna sağ tıklayın ve ardından **DialogBoxLauncher Ekle**.
 
      Kodu <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> olay grubu yerleşik veya özel iletişim kutusunu açın.
 

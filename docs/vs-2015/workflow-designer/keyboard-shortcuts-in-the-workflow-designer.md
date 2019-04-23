@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117310"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafından erişilebilir.  
@@ -54,13 +54,13 @@ Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafın
   
 - Etkinlikleri bağlanmak için:  
   
-  1.  Kaynak etkinliği için etkinlik sekmelerle seçin.  
+  1. Kaynak etkinliği için etkinlik sekmelerle seçin.  
   
-  2.  CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.  
+  2. CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.  
   
-  3.  CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.  
+  3. CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.  
   
-  4.  CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.  
+  4. CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.  
   
   Etkinlikleri tarafından klavye bağlama hakkında notlar:  
   
@@ -73,18 +73,18 @@ Tüm temel işlevlerini [!INCLUDE[wfd1](../includes/wfd1-md.md)] klavye tarafın
 ### <a name="expression-editing"></a>İfade düzenleme  
  Varsayılan olarak, varsayılan klavye kısayolları [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ifade Düzenleyicisi'nde içinde uygulama metni düzenleme [!INCLUDE[wfd2](../includes/wfd2-md.md)], aşağıdaki kısıtlamalarla:  
   
--   Aşağıdaki komutlar için klavye kısayolları yeniden eşleme, hiçbir etkisi olmaz. Bir ifade düzenlerken bu komutlara erişmek için yalnızca klavye kısayolları kullanabilirsiniz.  
+- Aşağıdaki komutlar için klavye kısayolları yeniden eşleme, hiçbir etkisi olmaz. Bir ifade düzenlerken bu komutlara erişmek için yalnızca klavye kısayolları kullanabilirsiniz.  
   
-    1.  Kes  
+    1. Kes  
   
-    2.  Kopyala  
+    2. Kopyala  
   
-    3.  Yapıştır  
+    3. Yapıştır  
   
-    4.  Tümünü Seç  
+    4. Tümünü Seç  
   
-    5.  Geri alma  
+    5. Geri alma  
   
-    6.  Yinele  
+    6. Yinele  
   
--   İfade içindeki komutları düzenlemek için klavye kısayolları yeniden eşlemek için [!INCLUDE[wfd2](../includes/wfd2-md.md)] içinde [!INCLUDE[vs2010](../includes/vs2010-md.md)], kısayolları Düzenle [!INCLUDE[wfd2](../includes/wfd2-md.md)] kapsam. Metin Düzenleyici kapsamı içinde yapılan değişiklikleri otomatik olarak geçerli olmayan [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Her iki yerde kısayolları eşlemek isterseniz değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).
+- İfade içindeki komutları düzenlemek için klavye kısayolları yeniden eşlemek için [!INCLUDE[wfd2](../includes/wfd2-md.md)] içinde [!INCLUDE[vs2010](../includes/vs2010-md.md)], kısayolları Düzenle [!INCLUDE[wfd2](../includes/wfd2-md.md)] kapsam. Metin Düzenleyici kapsamı içinde yapılan değişiklikleri otomatik olarak geçerli olmayan [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Her iki yerde kısayolları eşlemek isterseniz değişiklikleri iki kez uygulamanız gerekir (her kapsam için bir kez).

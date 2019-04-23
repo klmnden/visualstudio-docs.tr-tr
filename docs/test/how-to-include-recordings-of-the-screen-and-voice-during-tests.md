@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9043411cd6681078e9e4d0418e6f3686aa37fc17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 663f89c65604c42b356830b3a0c6d61bdcb265e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085746"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Nasıl yapılır: Test ayarlarını kullanarak testler sırasında ekran ve ses kayıtlarını dahil
 
@@ -28,35 +28,35 @@ Ekran ve Ses Kaydedici el ile veya otomatikleştirilmiş testlerle kullanılabil
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Ekran ve ses kaydını test ayarlarınız için yapılandırmak için
 
-1.  Ekran ve ses kaydetmek için yapılandırmak istediğiniz test ayarlarını açın. Daha fazla bilgi için [(Azure Test planları) test sırasında tanılama verilerini toplama](/azure/devops/test/collect-diagnostic-data?view=vsts) veya [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
+1. Ekran ve ses kaydetmek için yapılandırmak istediğiniz test ayarlarını açın. Daha fazla bilgi için [(Azure Test planları) test sırasında tanılama verilerini toplama](/azure/devops/test/collect-diagnostic-data?view=vsts) veya [test ayarlarını kullanarak tanılama bilgi toplayan](../test/collect-diagnostic-information-using-test-settings.md).
 
-2.  Test ayarları'nda seçin **rol** ekran ve ses kaydetmekte kullanılacak.
+2. Test ayarları'nda seçin **rol** ekran ve ses kaydetmekte kullanılacak.
 
     > [!NOTE]
     > El ile ve otomatikleştirilmiş testler için bu testleri çalıştıran makine olabilir.
 
-3.  Seçin **ekran ve Ses Kaydedici** seçip **yapılandırma**.
+3. Seçin **ekran ve Ses Kaydedici** seçip **yapılandırma**.
 
      **Yapılandırma tanılama veri bağdaştırıcısı-ekran ve Ses Kaydedici** iletişim kutusu görüntülenir.
 
      ![Video yapılandırma](../test/media/testsettingvideoconfiggdr.png)
 
-4.  (İsteğe bağlı) Seçin **ses kaydını etkinleştir** Kaydınızda bir ses içeriğini yakalamak için.
+4. (İsteğe bağlı) Seçin **ses kaydını etkinleştir** Kaydınızda bir ses içeriğini yakalamak için.
 
-5.  (İsteğe bağlı) Yanındaki onay kutusunu işaretleyin **test durumu geçerse kaydı Kaydet** ekran ve ses kayıtları için her ikisini de kaydetme başarısız ve başarılı test belirtmek için.
+5. (İsteğe bağlı) Yanındaki onay kutusunu işaretleyin **test durumu geçerse kaydı Kaydet** ekran ve ses kayıtları için her ikisini de kaydetme başarısız ve başarılı test belirtmek için.
 
     > [!WARNING]
     > Seçerseniz **test durumu geçerse kaydı Kaydet**, kayıt sunucu üzerinde depolama alanı kullanan test sonuçları ile saklanır. Kullanabileceğiniz **Test eki Temizleyicisi** bu ekleri temizlemek için aracı.
 
-6.  Altında **ekran kaydı kalitesi**, aşağıdaki açılır liste seçenekleri yapılandırın:
+6. Altında **ekran kaydı kalitesi**, aşağıdaki açılır liste seçenekleri yapılandırın:
 
-    1.  **Kare hızı:** Ekran ve ses kaydında kullanmak istediğiniz saniyede kaç kare belirtin. 4 Saniyedeki varsayılan değerdir. 2 ile 20 arasındaki değerler belirtilebilir.
+    1. **Kare hızı:** Ekran ve ses kaydında kullanmak istediğiniz saniyede kaç kare belirtin. 4 Saniyedeki varsayılan değerdir. 2 ile 20 arasındaki değerler belirtilebilir.
 
-    2.  **Bit hızı:** Ekran ve ses kaydında kullanılacak saniyede kaç kilobayt belirtin. Varsayılan değer 512'dır. 512 ve 10.000 arasındaki değerler belirtilebilir.
+    2. **Bit hızı:** Ekran ve ses kaydında kullanılacak saniyede kaç kilobayt belirtin. Varsayılan değer 512'dır. 512 ve 10.000 arasındaki değerler belirtilebilir.
 
-    3.  **Kalite(1-100):** Ekran ve ses 1 ile 100 arasında bir aralık belirleyerek kalitesini belirtebilirsiniz. 50 (Orta aralık) varsayılandır.
+    3. **Kalite(1-100):** Ekran ve ses 1 ile 100 arasında bir aralık belirleyerek kalitesini belirtebilirsiniz. 50 (Orta aralık) varsayılandır.
 
-7.  **Tamam**’ı seçin. Tanılama izleme toplayıcı ayarları şimdi yapılandırılır ve test ayarlarınız için kaydedildi.
+7. **Tamam**’ı seçin. Tanılama izleme toplayıcı ayarları şimdi yapılandırılır ve test ayarlarınız için kaydedildi.
 
     > [!TIP]
     > Bu tanılama veri bağdaştırıcısı için yapılandırmayı sıfırlamak için seçin **varsayılan yapılandırmaya Sıfırla** Visual Studio için ve **Varsayılana Sıfırla** Microsoft Test Yöneticisi için.

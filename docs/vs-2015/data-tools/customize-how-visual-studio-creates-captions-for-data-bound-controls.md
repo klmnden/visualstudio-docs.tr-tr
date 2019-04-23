@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079493"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio'nun verilere bağlı denetimler için başlık oluşturma biçimini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ ms.locfileid: "59647965"
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Veri kaynakları penceresi akıllı açıklamalı alt yazı davranışını değiştirmek için
 
-1.  Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
+1. Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
 
-2.  Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
+2. Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
 
-3.  Genişletin **HKEY_CURRENT_USER** düğümü.
+3. Genişletin **HKEY_CURRENT_USER** düğümü.
 
-4.  Genişletin **yazılım** düğümü.
+4. Genişletin **yazılım** düğümü.
 
-5.  Genişletin **Microsoft** düğümü.
+5. Genişletin **Microsoft** düğümü.
 
-6.  Genişletin **VisualStudio** düğümü.
+6. Genişletin **VisualStudio** düğümü.
 
-7.  Sağ **10.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+7. Sağ **10.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
 
-8.  Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionExpression`.
+8. Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionExpression`.
 
 9. Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionReplacement`.
 
@@ -96,21 +96,21 @@ ms.locfileid: "59647965"
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Akıllı açıklamalı alt yazı özelliği devre dışı bırakmak için
 
-1.  Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
+1. Bir komut penceresi açın **Başlat** ardından **çalıştırma**.
 
-2.  Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
+2. Tür `regedit` içinde **çalıştırma** iletişim kutusu seçeneğine tıklayıp **Tamam**.
 
-3.  Genişletin **HKEY_CURRENT_USER** düğümü.
+3. Genişletin **HKEY_CURRENT_USER** düğümü.
 
-4.  Genişletin **yazılım** düğümü.
+4. Genişletin **yazılım** düğümü.
 
-5.  Genişletin **Microsoft** düğümü.
+5. Genişletin **Microsoft** düğümü.
 
-6.  Genişletin **VisualStudio** düğümü.
+6. Genişletin **VisualStudio** düğümü.
 
-7.  Sağ **10.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
+7. Sağ **10.0** düğümünü ve yeni bir **anahtarı** adlı `Data Designers`.
 
-8.  Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionExpression`.
+8. Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionExpression`.
 
 9. Sağ **veri tasarımcıları** düğümünü ve yeni bir **dize değeri** adlı `SmartCaptionReplacement`.
 

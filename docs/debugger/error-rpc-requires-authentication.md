@@ -14,22 +14,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf72110e82fc3cd920f571a5630faafbf2aa5ec
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c473916a6b689984f234736eb8b763056fc002d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092012"
 ---
 # <a name="error-rpc-requires-authentication"></a>Hata: RPC kimlik doğrulaması gerektiriyor
 Visual Studio hata ayıklayıcı uzak bilgisayara bağlanamıyor. Yerel bilgisayarda uzaktan hata ayıklamayı engelleyen bir RPC ilkesi etkin.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1.  Çalıştırma `\` *windir*`\system32\regedt32.exe`
+1. Çalıştırma `\` *windir*`\system32\regedt32.exe`
 
-2.  Bulun ve Sil `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.
+2. Bulun ve Sil `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.
 
-3.  Kayıt defteri değişikliği etkili şekilde bilgisayarınızı yeniden başlatın.
+3. Kayıt defteri değişikliği etkili şekilde bilgisayarınızı yeniden başlatın.
 
-4.  Sorun devam ederse, ilgili etki alanı yöneticinizle iletişime **bilgisayar yapılandırması > Yönetim Şablonları > Sistem > uzak yordam çağrısı > kimliği doğrulanmamış RPC istemciler için kısıtlamaları** Grup İlkesi ayar.
+4. Sorun devam ederse, ilgili etki alanı yöneticinizle iletişime **bilgisayar yapılandırması > Yönetim Şablonları > Sistem > uzak yordam çağrısı > kimliği doğrulanmamış RPC istemciler için kısıtlamaları** Grup İlkesi ayar.

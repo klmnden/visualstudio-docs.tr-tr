@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080715"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>N Katmanlı bir veri kümesine doğrulama ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,14 +58,14 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Ayrı ayrı sütun değerlerine değişiklikler sırasında doğrulama eklemek için  
   
-1.  Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Doğrulamak istediğiniz sütunu çift tıklatın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.  
+2. Doğrulamak istediğiniz sütunu çift tıklatın. Bu eylem oluşturur <xref:System.Data.DataTable.ColumnChanging> olay işleyicisi.  
   
     > [!NOTE]
     >  Dataset Designer C# olayı için olay işleyicisi otomatik olarak oluşturmaz. C# ' taki olayı işlemek gerekli olan kod, sonraki bölümde eklenmiştir. `SampleColumnChangingEvent` oluşturulur ve en fazla kancalandı <xref:System.Data.DataTable.ColumnChanging> olayında <xref:System.Data.DataTable.EndInit%2A> yöntemi.  
   
-3.  Doğrulamak için kod ekleme `e.ProposedValue` uygulamanızın gereksinimlerini karşılayan verileri içerir. Önerilen değer kabul edilemezse, hata içerdiğini belirtmek için sütunu ayarlayın.  
+3. Doğrulamak için kod ekleme `e.ProposedValue` uygulamanızın gereksinimlerini karşılayan verileri içerir. Önerilen değer kabul edilemezse, hata içerdiğini belirtmek için sütunu ayarlayın.  
   
      Aşağıdaki kod örneği, doğrulama **miktar** 0'dan fazla sütun içeriyor. Varsa **miktar** küçük veya ona eşit 0, sütun hata olarak ayarlanır. `Else` Yan tümcesi hatayı siler, **miktar** 0 değerinden fazla. Sütun değiştirme olay işleyicisinin kodu aşağıdakine benzemelidir:  
   
@@ -117,18 +117,18 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Tüm satırlara değişiklikler sırasında doğrulama eklemek için  
   
-1.  Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Veri kümesi Tasarımcısı'nda çift tıklayarak açın **.xsd** dosyası **Çözüm Gezgini**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Tasarımcı üzerinde veri tablosunun başlık çubuğunu çift tıklatın.  
+2. Tasarımcı üzerinde veri tablosunun başlık çubuğunu çift tıklatın.  
   
      Kısmi sınıf oluşturulur bir `RowChanging` olay işleyicisi ve Kod Düzenleyicisi'nde açılır.  
   
     > [!NOTE]
     >  Veri kümesi Tasarımcısı için bir olay işleyicisi otomatik olarak oluşturmaz <xref:System.Data.DataTable.RowChanging> C# projelerinde olay. İşlemek için bir yöntem oluşturmak sahip olduğunuz <xref:System.Data.DataTable.RowChanging> olayı tablonun başlatma yöntemine bağlamak için olay ve kodu çalıştırın.  
   
-3.  Kısmi sınıf bildirimi içerisine kullanıcı kodu ekleyin.  
+3. Kısmi sınıf bildirimi içerisine kullanıcı kodu ekleyin.  
   
-4.  Aşağıdaki kod sırasında doğrulamak üzere kullanıcı kodunun nereye ekleneceğini göstermektedir <xref:System.Data.DataTable.RowChanging> Visual Basic için olay:  
+4. Aşağıdaki kod sırasında doğrulamak üzere kullanıcı kodunun nereye ekleneceğini göstermektedir <xref:System.Data.DataTable.RowChanging> Visual Basic için olay:  
   
     ```vb  
     Partial Class OrdersDataTable  
@@ -145,7 +145,7 @@ End Sub
     End Class  
     ```  
   
-5.  Aşağıdaki kod nasıl oluşturulacağını gösterir `RowChanging` olay işleyicisi ve sırasında doğrulamak üzere kullanıcı kodunun nereye ekleneceğini <xref:System.Data.DataTable.RowChanging> olay C# için:  
+5. Aşağıdaki kod nasıl oluşturulacağını gösterir `RowChanging` olay işleyicisi ve sırasında doğrulamak üzere kullanıcı kodunun nereye ekleneceğini <xref:System.Data.DataTable.RowChanging> olay C# için:  
   
     ```csharp  
     partial class OrdersDataTable  

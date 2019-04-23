@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087085"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Bir yük testi senaryosuna hangi web tarayıcısı türlerini belirtmek için test karışımını düzenleyin
 
@@ -34,34 +34,34 @@ Tarayıcı karışımı belirttikten sonra daha sonra ekleyebilir ve web tarayı
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Yeni tarayıcılar bir senaryoya eklemek için
 
-1.  Belirtme işleminde bir senaryo için tarayıcı karışımını seçerken **Ekle**.
+1. Belirtme işleminde bir senaryo için tarayıcı karışımını seçerken **Ekle**.
 
      Yeni bir tarayıcı giriş kılavuza eklenir.
 
     > [!NOTE]
     > Görüntülenecek **Tarayıcı Karışımını Düzenle** iletişim kutusu, varolan bir senaryoyu sağ tıklayın ve ardından **Tarayıcı Karışımını Düzenle**.
 
-2.  İçinde **tarayıcı türü** sütununda yeni giriş için oku seçin ve istenen tarayıcı türü seçin.
+2. İçinde **tarayıcı türü** sütununda yeni giriş için oku seçin ve istenen tarayıcı türü seçin.
 
-3.  (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın.
+3. (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın.
 
-4.  Tarayıcılar eklemeyi tamamladığınızda, seçin **Tamam**.
+4. Tarayıcılar eklemeyi tamamladığınızda, seçin **Tamam**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Tarayıcılar senaryodan Kaldır
+## <a name="remove-browsers-from-a-scenario"></a>Tarayıcılar senaryodan Kaldır
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Tarayıcılar senaryodan kaldırmak için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Bir tarayıcı kaldırın ve ardından istediğiniz senaryoyu **Tarayıcı Karışımını Düzenle**.
+2. Bir tarayıcı kaldırın ve ardından istediğiniz senaryoyu **Tarayıcı Karışımını Düzenle**.
 
      **Tarayıcı Karışımını Düzenle** iletişim kutusu görüntülenir.
 
-3.  Kılavuzda tarayıcı seçin ve sonra **Kaldır**.
+3. Kılavuzda tarayıcı seçin ve sonra **Kaldır**.
 
-4.  (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın.
+4. (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın.
 
-5.  Tarayıcıları kaldırma işlemini tamamladığınızda, seçin **Tamam**.
+5. Tarayıcıları kaldırma işlemini tamamladığınızda, seçin **Tamam**.
 
 ## <a name="about-the-mix-control"></a>Karışım denetimi hakkında
 

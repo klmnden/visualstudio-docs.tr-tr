@@ -22,12 +22,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fe876b9205d7efede2f5c1085c082f7b0ec6fd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631b1d35a0878bfc362b03751f35909839c7da19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088060"
 ---
 # <a name="com-server-and-container-debugging"></a>COM Sunucusunda ve Kapsayıcısında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ COM uygulamaları programcının doğrudan denetimi dışında görevleri gerçe
   
  Visual Studio hata ayıklayıcı üzerinden ve kapsayıcılar ve sunucular içine Adımlama destekler. Bu uzaktan yordam çağrısı (RPC) adım yeteneğini içerir.  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> Aynı çözümdeki bir COM sunucusu ve hata ayıklama  
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a> Aynı çözümdeki bir COM sunucusu ve hata ayıklama  
  COM sunucusunda ve aynı çözüm içinde iki proje kullanarak kapsayıcı ayıklayabilirsiniz. Her bir proje ve hata ayıklama uygun kesme noktaları ayarlayın. Kapsayıcı içine bir kesme noktasına denk gelir sunucunun bir çağrı yaptığında, kapsayıcı (diğer bir deyişle, hata ayıklama bitene kadar), sunucu kodu dönene kadar bekler.  
   
  Bir COM kapsayıcısında hata ayıklama standart bir programın hatalarının ayıklanmasına benzer. Olaya (örneğin, veri üzerinde kapsayıcı uygulaması sürükleyerek), bir geri çağırma oluşturur hata ayıklaması yaparken bir farktır. Bu durumda, bir kesme noktası içindeki geri arama işlevi ayarlamanız gerekir.  
   
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Kapsayıcı bilgileri olmadan bir sunucu uygulamasında hata ayıklama  
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Kapsayıcı bilgileri olmadan bir sunucu uygulamasında hata ayıklama  
  Sahip değil ya da kapsayıcı uygulamanızı hata ayıklama bilgilerini kullanmak istiyor musunuz, sunucu uygulamasının hata ayıklamayı başlatma işlemi üç adımdan şöyledir:  
   
-1.  Sunucunun normal bir uygulama olarak hatalarını ayıklamaya başlayın.  
+1. Sunucunun normal bir uygulama olarak hatalarını ayıklamaya başlayın.  
   
-2.  Kesme noktaları, istediğiniz şekilde ayarlayın.  
+2. Kesme noktaları, istediğiniz şekilde ayarlayın.  
   
-3.  Kapsayıcı uygulamasını başlatın.  
+3. Kapsayıcı uygulamasını başlatın.  
   
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Bir sunucu veya etki alanı yalıtımı (SDI) uygulama hata ayıklama  
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Bir sunucu veya etki alanı yalıtımı (SDI) uygulama hata ayıklama  
  Bir SDI sunucu uygulaması hata ayıklaması yaptığınız varsa, belirtmeniz gerekir `/Embedding` veya `/Automation` içinde **komut satırı bağımsız değişkenleri** özelliğinde *proje* özellik sayfaları iletişim kutusu için C/C++, C#, veya Visual Basic projeleri.  
   
  Bu komut satırı bağımsız değişkenleri ile onu başlatan bir kapsayıcıdan artırmadığı hata ayıklayıcı sunucu uygulaması başlatabilirsiniz. Program Yöneticisi'nden veya Dosya Yöneticisi kapsayıcıyı başlangıç hata ayıklayıcıda çalışmaya server örneğini kullanmak için kapsayıcısını neden olur.  

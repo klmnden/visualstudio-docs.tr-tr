@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079804"
 ---
 # <a name="remote-r-service-for-linux"></a>Linux için Uzak R Hizmeti
 
@@ -166,5 +166,6 @@ Her durumda, uzak bilgisayarda yüklü aşağıdaki R yorumlayıcı birine sahip
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. Kullanım `az container list` durumunu denetlemek için komutu. Aranacak `provisioningState`: `Succeeded`.
 1. Sağlama başarılı olursa, kapsayıcıya artık bağlanabilirsiniz. Genel IP adresi de arayın `ipAddress` docker dosyasının kimlik bilgileri ile kapsayıcıya RTVS bağlanmak için kullandığınız alanı.

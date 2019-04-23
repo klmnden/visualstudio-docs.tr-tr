@@ -10,38 +10,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e831136014a47052d8d16b5127765cafbf13b785
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083744"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>İzlenecek yol: Metin görünümünü özelleştirme
 Bir metin görünümünü kendi Düzenleyicisi biçim eşlemesi şu özelliklerde değiştirerek özelleştirebilirsiniz:
 
--   Belirteç kenar boşluğu
+- Belirteç kenar boşluğu
 
--   Ekleme düzeltme işareti
+- Ekleme düzeltme işareti
 
--   Giriş işaretini üzerine yaz
+- Giriş işaretini üzerine yaz
 
--   Seçili metni
+- Seçili metni
 
--   Etkin olmayan seçili metin (odağını kaybetmiş diğer bir deyişle, seçilen metin)
+- Etkin olmayan seçili metin (odağını kaybetmiş diğer bir deyişle, seçilen metin)
 
--   Görünür boşluk
+- Görünür boşluk
 
 ## <a name="prerequisites"></a>Önkoşullar
  Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden yüklemeyin. Visual Studio kurulumunda isteğe bağlı bir özellik eklemiştir. VS SDK'yi daha sonra yükleyebilirsiniz. Daha fazla bilgi için [Visual Studio SDK'yı yükleme](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>MEF proje oluşturma
 
-1.  Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `ViewPropertyTest`.
+1. Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `ViewPropertyTest`.
 
-2.  Bir düzenleyici sınıflandırıcı öğe şablonu, projeye ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Bir düzenleyici sınıflandırıcı öğe şablonu, projeye ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Varolan sınıf dosyaları silin.
+3. Varolan sınıf dosyaları silin.
 
 ## <a name="define-the-content-type"></a>İçerik türünü tanımlayın
 
@@ -68,28 +68,28 @@ Bir metin görünümünü kendi Düzenleyicisi biçim eşlemesi şu özelliklerd
 
 ## <a name="change-the-view-properties"></a>Görünüm özelliklerini değiştir
 
-1.  Ayarlanan <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> yöntemi böylece görünüm açıldığında Görünüm Özellikleri değiştirilir. Değişiklik yapmak için öncelikle bulma <xref:System.Windows.ResourceDictionary> bulmak istediğiniz görünümü en/boy karşılık gelir. Ardından, kaynak sözlüğünde uygun özelliğini değiştirin ve özelliklerini ayarlayın. Toplu işlem çağrıları <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> yöntemi çağırarak <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> özellikleri ayarlanmadan önce yöntemi ve ardından <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> özellikleri ayarladıktan sonra.
+1. Ayarlanan <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> yöntemi böylece görünüm açıldığında Görünüm Özellikleri değiştirilir. Değişiklik yapmak için öncelikle bulma <xref:System.Windows.ResourceDictionary> bulmak istediğiniz görünümü en/boy karşılık gelir. Ardından, kaynak sözlüğünde uygun özelliğini değiştirin ve özelliklerini ayarlayın. Toplu işlem çağrıları <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> yöntemi çağırarak <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> özellikleri ayarlanmadan önce yöntemi ve ardından <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> özellikleri ayarladıktan sonra.
 
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
 
 ## <a name="build-and-test-the-code"></a>Kod oluşturup test
 
-1.  Çözümü oluşturun.
+1. Çözümü oluşturun.
 
      Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.
 
-2.  Bir metin dosyası oluşturun ve bir metin yazın.
+2. Bir metin dosyası oluşturun ve bir metin yazın.
 
-    -   Ekleme giriş işaretini Eflatun olmalıdır ve üzerine yazma giriş işaretini Turkuaz olmalıdır.
+    - Ekleme giriş işaretini Eflatun olmalıdır ve üzerine yazma giriş işaretini Turkuaz olmalıdır.
 
-    -   Belirteç kenar boşluğu ('metin görünümünü sol) açık olması gereken yeşil.
+    - Belirteç kenar boşluğu ('metin görünümünü sol) açık olması gereken yeşil.
 
-3.  Yazdığınız metni seçin. Seçili metnin rengini açık olmalıdır pembe.
+3. Yazdığınız metni seçin. Seçili metnin rengini açık olmalıdır pembe.
 
-4.  Metin seçili durumdayken metni penceresi dışında herhangi bir yere tıklayın. Seçili metnin rengini koyu pembe olmalıdır.
+4. Metin seçili durumdayken metni penceresi dışında herhangi bir yere tıklayın. Seçili metnin rengini koyu pembe olmalıdır.
 
-5.  Üzerinde görünür boşluk bırakın. (Üzerinde **Düzenle** menüsünde **Gelişmiş** ve ardından **beyaz boşluğu görüntüle**). Bazı sekmeler metin girin. Sekmeleri temsil eden kırmızı ok görüntülenmesi gerekir.
+5. Üzerinde görünür boşluk bırakın. (Üzerinde **Düzenle** menüsünde **Gelişmiş** ve ardından **beyaz boşluğu görüntüle**). Bazı sekmeler metin girin. Sekmeleri temsil eden kırmızı ok görüntülenmesi gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)

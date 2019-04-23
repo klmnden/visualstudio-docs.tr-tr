@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085635"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Geçersiz kılma ve genişletme oluşturulan sınıflar
 
@@ -54,9 +54,9 @@ Bununla birlikte, ayarlayarak bu yöntemleri geçersiz kılabilirsiniz **Generat
 
 Örneğin, örnekte Library.dsl, `CirculationBook` etki alanı sınıfında `Generates``Double Derived` özelliğini `true`. Bu etki alanı sınıfı için oluşturulan kod, iki sınıf içerir:
 
--   `CirculationBookBase`, bir soyut olduğu ve tüm yöntemleri ve özellikleri içerir.
+- `CirculationBookBase`, bir soyut olduğu ve tüm yöntemleri ve özellikleri içerir.
 
--   `CirculationBook`, türetilen `CirculationBookBase`. Kendi oluşturucular dışında boş.
+- `CirculationBook`, türetilen `CirculationBookBase`. Kendi oluşturucular dışında boş.
 
 Herhangi bir yöntemi geçersiz kılmak için kısmi türetilmiş bir sınıf tanımlaması gibi oluşturduğunuz `CirculationBook`. Hem oluşturulan ve modelleme framework devralınan yöntemleri geçersiz kılabilirsiniz.
 

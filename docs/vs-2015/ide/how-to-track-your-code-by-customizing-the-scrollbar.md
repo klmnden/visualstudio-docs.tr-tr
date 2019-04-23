@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113838"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Nasıl yapılır: Kaydırma çubuğunu özelleştirerek kodunuzu izleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
   
 ### <a name="to-show-annotations-on-the-scroll-bar"></a>Ek açıklamalar kaydırma çubuğundaki göstermek için  
   
-1.  Kod değişiklikleri, kesme noktaları, hataları ve yer işaretlerini göstermek için kaydırma çubuğunu ayarlayabilirsiniz.  
+1. Kod değişiklikleri, kesme noktaları, hataları ve yer işaretlerini göstermek için kaydırma çubuğunu ayarlayabilirsiniz.  
   
      Açık **kaydırma çubuğu** seçenekler sayfası (**Araçlar, Seçenekler, metin düzenleyici. Tüm diller** veya belirli bir dil, veya tür **kaydırma çubuğu** hızlı başlatma penceresinde).  
   
-2.  Seçin **dikey kaydırma çubuğunun üzerinde ek açıklamalarını göster**, görmek istediğiniz ek açıklamaları'ı seçin. ( **İşaretleri** seçeneği, kesme noktaları ve yer imlerini içerir.)  
+2. Seçin **dikey kaydırma çubuğunun üzerinde ek açıklamalarını göster**, görmek istediğiniz ek açıklamaları'ı seçin. ( **İşaretleri** seçeneği, kesme noktaları ve yer imlerini içerir.)  
   
-3.  Şimdi deneyin. Büyük kod dosyasını açın ve dosyanın çeşitli yerlerde oluşan bir şey değiştirin. Kaydırma çubuğu bir şey kaydetmemeniz değiştirirse, değişikliklerinizi yedekleyebilirsiniz bu nedenle değişiklik etkisini gösterir.  
+3. Şimdi deneyin. Büyük kod dosyasını açın ve dosyanın çeşitli yerlerde oluşan bir şey değiştirin. Kaydırma çubuğu bir şey kaydetmemeniz değiştirirse, değişikliklerinizi yedekleyebilirsiniz bu nedenle değişiklik etkisini gösterir.  
   
      İşte nasıl bir dize için arama yaptıktan sonra kaydırma çubuğu görünür. Dizesinin tüm örnekleri görüntülendiğine dikkat edin.  
   
@@ -41,7 +41,7 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
   
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Kaydırma çubuğu için görüntü modunu ayarlamak için  
   
-1.  Kaydırma çubuğu iki mod, çubuk modu (varsayılan) eşleme modu sahiptir. Yalnızca modu ek açıklama göstergeleri kaydırma çubuğundaki görüntüler. Harita modunda kod satırlarını kaydırma çubuğunu temsil edilir. Olduklarını ne kadar geniş ve olup, arka plandaki kod Göster bunlar üzerinde işaretçiyi getirdiğinizde seçebilirsiniz. İmleç kaydırma çubuğundaki bir konuma tıkladığınızda, kod içinde ilgili konuma taşır. Daraltılmış bölgeleri farklı büyük/küçük harf gölgeliyse; bunları çift tıkladığınızda genişletilir.  
+1. Kaydırma çubuğu iki mod, çubuk modu (varsayılan) eşleme modu sahiptir. Yalnızca modu ek açıklama göstergeleri kaydırma çubuğundaki görüntüler. Harita modunda kod satırlarını kaydırma çubuğunu temsil edilir. Olduklarını ne kadar geniş ve olup, arka plandaki kod Göster bunlar üzerinde işaretçiyi getirdiğinizde seçebilirsiniz. İmleç kaydırma çubuğundaki bir konuma tıkladığınızda, kod içinde ilgili konuma taşır. Daraltılmış bölgeleri farklı büyük/küçük harf gölgeliyse; bunları çift tıkladığınızda genişletilir.  
   
      Üzerinde **kaydırma çubuğu** seçenekleri sayfasında **dikey kaydırma çubuğu için kullanım çubuğu modu** veya **dikey kaydırma çubuğu için eşleme kullanma modunu**. Genişliği seçebilirsiniz **kaynak genel bakış** açılır.  
   
@@ -49,7 +49,7 @@ Uzun kod dosyaları ile çalışırken, her şeyi göz önünde bulundurmanız z
   
      ![Kaydırma çubuğu eşleme modunda](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
-2.  İmleç kaydırma çubuğu yukarı ve Aşağı Taşı kodun önizlemeler etkinleştirmek için eşleme modunda seçin **önizleme araç ipucunu göster** seçeneği. İşte şöyle:  
+2. İmleç kaydırma çubuğu yukarı ve Aşağı Taşı kodun önizlemeler etkinleştirmek için eşleme modunda seçin **önizleme araç ipucunu göster** seçeneği. İşte şöyle:  
   
      ![Bir araç ipucu ile kaydırma çubuğunu](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   

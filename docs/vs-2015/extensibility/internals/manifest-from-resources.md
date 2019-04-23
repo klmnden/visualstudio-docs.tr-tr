@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112838"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ Bildirim kaynakları aracından görüntü kaynakları (.png veya .xaml dosyalar
   
  **Örnekler**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>Notlar  
   
--   Araç yalnızca .png ve .xaml dosyalarını destekler. Diğer resim veya dosya türleri göz ardı edilir. Tüm desteklenmeyen türler kaynakları ayrıştırılırken bir uyarı oluşturulur. Desteklenen Hayır ise görüntüleri aracı tamamlandığında bulunan kaynakları ayrıştırma, bir hata oluşturulur  
+- Araç yalnızca .png ve .xaml dosyalarını destekler. Diğer resim veya dosya türleri göz ardı edilir. Tüm desteklenmeyen türler kaynakları ayrıştırılırken bir uyarı oluşturulur. Desteklenen Hayır ise görüntüleri aracı tamamlandığında bulunan kaynakları ayrıştırma, bir hata oluşturulur  
   
--   Görüntünün gerçek boyutundan farklı olsa bile .png görüntüleri için önerdiğimiz biçimi takip ederek, aracı .png boyutu/boyut değeri biçimi belirtilen boyutuna ayarlanır.  
+- Görüntünün gerçek boyutundan farklı olsa bile .png görüntüleri için önerdiğimiz biçimi takip ederek, aracı .png boyutu/boyut değeri biçimi belirtilen boyutuna ayarlanır.  
   
--   Genişliği/yüksekliğinin biçimi için .png görüntü atlanmış olabilir, ancak aracın görüntünün gerçek genişliği/yüksekliğinin okuyun ve bu görüntünün boyutu/boyut değeri için kullanın.  
+- Genişliği/yüksekliğinin biçimi için .png görüntü atlanmış olabilir, ancak aracın görüntünün gerçek genişliği/yüksekliğinin okuyun ve bu görüntünün boyutu/boyut değeri için kullanın.  
   
--   Görüntü şeridi tek başına görüntülere bölmek ve bu varolan bir bildirimi eklemek aracın çalıştığı aynı görüntü şeridi birden çok kez aynı .imagemanifest için bu aracı üzerinde çalışan yinelenen bildirimi girişlerinde neden olur.  
+- Görüntü şeridi tek başına görüntülere bölmek ve bu varolan bir bildirimi eklemek aracın çalıştığı aynı görüntü şeridi birden çok kez aynı .imagemanifest için bu aracı üzerinde çalışan yinelenen bildirimi girişlerinde neden olur.  
   
--   (/NewGuids veya /newIds atlama) Birleştirme aracı tarafından oluşturulan bildirimleri yalnızca yapılmalıdır. Özelleştirilmiş veya başka yollarla oluşturulan bildirimleri doğru şekilde birleştirilebilir değil.  
+- (/NewGuids veya /newIds atlama) Birleştirme aracı tarafından oluşturulan bildirimleri yalnızca yapılmalıdır. Özelleştirilmiş veya başka yollarla oluşturulan bildirimleri doğru şekilde birleştirilebilir değil.  
   
--   Yerel derlemeler için oluşturulan bildirimleri kaynak kimliklerini yerel derlemenin .rc dosyasından eşleşen kimliği semboller yapmak için nesil sonra elle düzenlenerek olması gerekebilir.  
+- Yerel derlemeler için oluşturulan bildirimleri kaynak kimliklerini yerel derlemenin .rc dosyasından eşleşen kimliği semboller yapmak için nesil sonra elle düzenlenerek olması gerekebilir.  
   
 ## <a name="sample-output"></a>Örnek Çıktı  
  **Basit görüntü bildirimi**  

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089087"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode * uygulama kodu uygulama yayımcısının özgünlüğünü doğrul
   
  Kod üç yoldan biriyle imzalama için bir sertifika edinebilirsiniz:  
   
--   Bir sertifika satıcıdan satın alın.  
+- Bir sertifika satıcıdan satın alın.  
   
--   Dijital sertifikalar oluşturmaktan sorumlu, kuruluşunuzdaki bir gruptan alırsınız.  
+- Dijital sertifikalar oluşturmaktan sorumlu, kuruluşunuzdaki bir gruptan alırsınız.  
   
--   Dahil olan MakeCert.exe ile kendi sertifikanızı oluşturmak [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
+- Dahil olan MakeCert.exe ile kendi sertifikanızı oluşturmak [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Sertifika yetkililerini kullanarak kullanıcıların nasıl yardımcı  
  MakeCert.exe yardımcı programını kullanılarak oluşturulan sertifika yaygın olarak adlandırılan bir *self-cert* veya *test cert*. Bu tür bir sertifika bir .snk dosyası çalışan .NET Framework'teki Server'dakine benzer şekilde çalışır. Yalnızca bir ortak/özel şifreleme anahtar çiftinden oluşur ve doğrulanabilir hiçbir yayımcı bilgilerini içerir. Kendi kendine sertifikaları dağıtmak için kullanabileceğiniz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] intranet yüksek güven uygulamaları. Ancak, bu uygulamaların çalıştırdığınızda bir istemci bilgisayara [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bunları Bilinmeyen bir yayımcıdan gelen olarak tanımlar. Varsayılan olarak, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] self-certs ile imzalanmış ve Internet üzerinden dağıtılan uygulamaları, güvenilir uygulama dağıtımı faydalanamaz.  
@@ -61,15 +61,15 @@ Authenticode * uygulama kodu uygulama yayımcısının özgünlüğünü doğrul
 ### <a name="updating-expired-certificates"></a>Süresi dolan sertifikaları güncelleştirme  
  Önceki .NET Framework sürümlerinde, sertifikanın süresi dolmuş uygulamayı güncelleştirme, Uygulama çalışmayı durdurmasına neden olabilir. Bu sorunu çözmek için aşağıdaki yöntemlerden birini kullanın:  
   
--   .NET Framework sürüm 2.0 SP1 veya daha sonra Windows XP veya sürüm 3.5 veya Windows Vista için daha sonra güncelleştirin.  
+- .NET Framework sürüm 2.0 SP1 veya daha sonra Windows XP veya sürüm 3.5 veya Windows Vista için daha sonra güncelleştirin.  
   
--   Uygulamayı kaldırın ve yeni bir sürümünü geçerli bir sertifika ile yeniden yükleyin.  
+- Uygulamayı kaldırın ve yeni bir sürümünü geçerli bir sertifika ile yeniden yükleyin.  
   
--   Sertifika güncelleştirmeleri bir komut satırı derlemesi oluşturun. Bu işlem hakkında adım adım bilgiler bulunabilir [Microsoft destek makalesi 925521](http://go.microsoft.com/fwlink/?LinkId=179454).  
+- Sertifika güncelleştirmeleri bir komut satırı derlemesi oluşturun. Bu işlem hakkında adım adım bilgiler bulunabilir [Microsoft destek makalesi 925521](http://go.microsoft.com/fwlink/?LinkId=179454).  
   
 ### <a name="storing-certificates"></a>Sertifika depolama  
   
--   Dosya sisteminizde bir .pfx dosyası olarak sertifikaları depolayabilirsiniz veya bir anahtar kapsayıcısı içinde depolayabilirsiniz. Bir kullanıcı bir Windows etki alanındaki bir anahtar kapsayıcı sayısı olabilir. Bu bir .pfx dosyasına bunun yerine kaydetmeniz gerekir, belirtmediğiniz sürece varsayılan olarak, sertifikaları MakeCert.exe, kişisel anahtar kapsayıcısı içinde saklamak. Mage.exe ve MageUI.exe [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] oluşturmaya yönelik Araçlar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımları, her iki şekilde depolanan sertifikaları kullanmak etkinleştirin.  
+- Dosya sisteminizde bir .pfx dosyası olarak sertifikaları depolayabilirsiniz veya bir anahtar kapsayıcısı içinde depolayabilirsiniz. Bir kullanıcı bir Windows etki alanındaki bir anahtar kapsayıcı sayısı olabilir. Bu bir .pfx dosyasına bunun yerine kaydetmeniz gerekir, belirtmediğiniz sürece varsayılan olarak, sertifikaları MakeCert.exe, kişisel anahtar kapsayıcısı içinde saklamak. Mage.exe ve MageUI.exe [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] oluşturmaya yönelik Araçlar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımları, her iki şekilde depolanan sertifikaları kullanmak etkinleştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

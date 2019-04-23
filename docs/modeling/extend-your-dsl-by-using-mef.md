@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084251"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF kullanarak DSL'nizi genişletme
 
@@ -24,7 +24,7 @@ MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çer�
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>MEF tarafından genişletilmesi DSL'nizi etkinleştirmek için
 
-1.  Adlı yeni bir klasör oluşturun **MefExtension** içinde **DslPackage** proje. Aşağıdaki dosyaları ekleyin:
+1. Adlı yeni bir klasör oluşturun **MefExtension** içinde **DslPackage** proje. Aşağıdaki dosyaları ekleyin:
 
      Dosya adı: `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çer�
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Adlı yeni bir klasör oluşturun **MefExtension** içinde **Dsl** proje. Aşağıdaki dosyaları ekleyin:
+2. Adlı yeni bir klasör oluşturun **MefExtension** içinde **Dsl** proje. Aşağıdaki dosyaları ekleyin:
 
      Dosya adı: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çer�
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Adlı varolan dosyaya aşağıdaki satırı ekleyin **DslPackage\Commands.vsct**:
+3. Adlı varolan dosyaya aşağıdaki satırı ekleyin **DslPackage\Commands.vsct**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,17 +103,17 @@ MEF hakkında daha fazla bilgi için bkz: [Yönetilen Genişletilebilirlik Çer�
 
     Var olan sonra satır Ekle `<Include>` yönergesi.
 
-4.  Açık *DslDefinition.dsl*.
+4. Açık *DslDefinition.dsl*.
 
-5.  DSL Gezgini içinde seçin **Editor\Validation**.
+5. DSL Gezgini içinde seçin **Editor\Validation**.
 
-6.  Özellikler penceresinde özelliklerinden en az birini adlı emin **kullanan** olduğu `true`.
+6. Özellikler penceresinde özelliklerinden en az birini adlı emin **kullanan** olduğu `true`.
 
-7.  İçinde **Çözüm Gezgini** araç çubuğunda tıklatın **tüm Şablonları Dönüştür**.
+7. İçinde **Çözüm Gezgini** araç çubuğunda tıklatın **tüm Şablonları Dönüştür**.
 
      Paketinizle dosyalar her eklediğiniz dosyaların altında görünür.
 
-8.  Derleme ve hala çalıştığından emin olmak için çözümü çalıştırın.
+8. Derleme ve hala çalıştığından emin olmak için çözümü çalıştırın.
 
 DSL'nizi MEF özellikli sunulmuştur. Menü komutları, hareket işleyicileri ve doğrulama kısıtlamalarını MEF uzantıları yazabilirsiniz. DSL çözümünüzdeki diğer özel kod ile birlikte bu uzantıları yazabilirsiniz. Ayrıca, sizin veya diğer geliştiriciler DSL'nizi genişletme ayrı Visual Studio uzantıları yazabilirsiniz.
 
@@ -135,15 +135,15 @@ MEF özellikli kendinize veya başka bir kullanıcı tarafından oluşturulan bi
 
 3. Aşağıdaki .NET derlemelere başvurular ekleyin:
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
 4. Yeni bir **VSIX projesi** proje.
 

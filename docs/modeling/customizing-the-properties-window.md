@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083342"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde davranışını ve görünümünü özelleştirebilirsiniz. DSL tanımındaki her etki alanı sınıfı üzerinde etki alanı özelliklerini tanımlayın. Diyagram üzerinde veya Model Gezgini'nde sınıfının bir örneğini seçtiğinizde varsayılan olarak, her etki alanı özelliği Özellikler penceresinde listelenir. Bunları diyagramdaki şekil alanları eşlenmedi olsa bile bu görmek ve etki alanı özelliklerinin değerlerini düzenlemek, sağlar.
@@ -47,13 +47,13 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 ### <a name="default-property-forwarding-cases"></a>Varsayılan özellik iletme durumlar
  Kullanıcı Gezgini'nde bir şekil veya Bağlayıcısı veya bir öğe seçtiğinde, aşağıdaki özellikleri Özellikler penceresinde görüntülenir:
 
--   Etki alanı sınıfı, temel sınıflarında tanımlanan de dahil olmak üzere model öğesi üzerinde tanımlanan etki alanı özellikleri. Etki alanı özellikleri, ayarladığınız bir istisnası **olan gözatılabilir** için `False`.
+- Etki alanı sınıfı, temel sınıflarında tanımlanan de dahil olmak üzere model öğesi üzerinde tanımlanan etki alanı özellikleri. Etki alanı özellikleri, ayarladığınız bir istisnası **olan gözatılabilir** için `False`.
 
--   0..1 çokluğu olan ilişkileri bağlı öğelerin adları. İlişki için bir bağlayıcı eşlemesi tanımlanmamış olsa bile bu isteğe bağlı olarak görmek için kullanışlı bir yöntem öğeleri, bağlı sağlar.
+- 0..1 çokluğu olan ilişkileri bağlı öğelerin adları. İlişki için bir bağlayıcı eşlemesi tanımlanmamış olsa bile bu isteğe bağlı olarak görmek için kullanışlı bir yöntem öğeleri, bağlı sağlar.
 
--   Öğesini hedefleyen bir gömme ilişkisi etki alanı özellikleri. Gömme ilişkiler genellikle açıkça gösterilmez olduğundan, bu kullanıcının özelliklerine bakın olanak tanır.
+- Öğesini hedefleyen bir gömme ilişkisi etki alanı özellikleri. Gömme ilişkiler genellikle açıkça gösterilmez olduğundan, bu kullanıcının özelliklerine bakın olanak tanır.
 
--   Seçilen şekil veya bağlayıcının üzerinde tanımlanan etki alanı özellikleri.
+- Seçilen şekil veya bağlayıcının üzerinde tanımlanan etki alanı özellikleri.
 
 ### <a name="adding-property-forwarding"></a>İletme özelliği ekleme
  Bir özellik iletmek için bir etki alanı tür tanımlayıcısı tanımlayın. İki alan sınıfı arasındaki bir etki alanı ilişkisi varsa, ikinci etki alanı sınıfı, bir etki alanı özelliğinin değeri ilk sınıf bir etki alanı özelliği ayarlamak için bir etki alanı tür tanımlayıcısı'nı kullanabilirsiniz. Arasında bir ilişki varsa, örneğin, bir **kitap** etki alanı sınıfı ve bir **Yazar** etki alanı sınıfı, bir etki alanı tür tanımlayıcısı yapmak için kullanabileceğiniz **adı** özelliği bir Kitaptaki **Yazar** kullanıcının kitaptan seçtiğinde, Özellikler penceresinde görünür.
@@ -112,14 +112,14 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 
 2. Türüne eklemek **etki alanı türleri** zaten yapmış sürece listesi.
 
-   1.  DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.
+   1. DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.
 
         Altında yeni bir giriş belirir **etki alanı türleri** düğümü.
 
        > [!WARNING]
        >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.
 
-   2.  Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.
+   2. Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.
 
 3. Bir alan özelliği için bir etki alanı sınıfı, her zamanki şekilde ekleyin.
 
@@ -144,9 +144,9 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Bir dosya adı etki alanı özelliği tanımlamak için
 
-1.  Bir etki alanı sınıfı, DSL tanımındaki alan özelliği ekleyin.
+1. Bir etki alanı sınıfı, DSL tanımındaki alan özelliği ekleyin.
 
-2.  Yeni özellik seçin. İçinde **özel özniteliği** alanına Özellikler penceresinde, aşağıdaki öznitelik. Bu öznitelik girmek için üç noktaya tıklayın **[...]**  ve öznitelik adı ve parametreleri ayrı olarak girin:
+2. Yeni özellik seçin. İçinde **özel özniteliği** alanına Özellikler penceresinde, aşağıdaki öznitelik. Bu öznitelik girmek için üç noktaya tıklayın **[...]**  ve öznitelik adı ve parametreleri ayrı olarak girin:
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -155,15 +155,15 @@ Etki alanına özgü dil (DSL) Visual Studio içinde Özellikler penceresinde da
 
     ```
 
-3.  Etki alanı özelliğinin türü, kendi varsayılan ayarını bırakın **dize**.
+3. Etki alanı özelliğinin türü, kendi varsayılan ayarını bırakın **dize**.
 
-4.  Düzenleyici test etmek için kullanıcılar, etki alanı özelliği düzenlemek için dosya adı Düzenleyicisi'ni açabilir doğrulayın.
+4. Düzenleyici test etmek için kullanıcılar, etki alanı özelliği düzenlemek için dosya adı Düzenleyicisi'ni açabilir doğrulayın.
 
-    1.  CTRL + F5 veya F5 tuşuna basın. Hata ayıklama çözümde test dosyasını açın. Etki alanı sınıfı, bir öğe oluşturun ve seçin.
+    1. CTRL + F5 veya F5 tuşuna basın. Hata ayıklama çözümde test dosyasını açın. Etki alanı sınıfı, bir öğe oluşturun ve seçin.
 
-    2.  Özellikler penceresinde etki alanı özelliğini seçin. Üç nokta değerini alan gösterir **[...]** .
+    2. Özellikler penceresinde etki alanı özelliğini seçin. Üç nokta değerini alan gösterir **[...]** .
 
-    3.  Üç nokta simgesine tıklayın. Dosya iletişim kutusu görünür. Bir dosya seçin ve iletişim kutusunu kapatın. Dosya yolu, etki alanı özelliğinin değeri bir sunulmuştur.
+    3. Üç nokta simgesine tıklayın. Dosya iletişim kutusu görünür. Bir dosya seçin ve iletişim kutusunu kapatın. Dosya yolu, etki alanı özelliğinin değeri bir sunulmuştur.
 
 ### <a name="defining-your-own-property-editor"></a>Kendi özellik Düzenleyici tanımlama
  Kendi düzenleyicinizi tanımlayabilirsiniz. Kullanıcı, tanımladığınız bir türü düzenleyin veya standart bir türü özel bir şekilde düzenlemek için izin vermek için bunu. Örneğin, bir formül temsil eden bir dize girişi kullanıcıya izin verebilir.

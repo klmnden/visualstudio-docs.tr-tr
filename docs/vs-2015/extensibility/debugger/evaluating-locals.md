@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117688"
 ---
 # <a name="evaluating-locals"></a>Yerel Öğeleri Değerlendirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "54797613"
   
  Yerel bir değerini alarak, bu işlev, aşağıdaki görevleri gerçekleştiren bir yardımcı işlevini kapsüllenir:  
   
-1.  Bağlar `IDebugField` bellek elde etmek için nesneye bir `IDebugObject` nesne.  
+1. Bağlar `IDebugField` bellek elde etmek için nesneye bir `IDebugObject` nesne.  
   
-2.  Bellekten değerini alır. Bu değer, bayt dizisi olarak temsil edilir.  
+2. Bellekten değerini alır. Bu değer, bayt dizisi olarak temsil edilir.  
   
-3.  Yerel'ın türüne göre değeri biçimlendirir.  
+3. Yerel'ın türüne göre değeri biçimlendirir.  
   
-4.  Yerel'ın değerini içeren genel bir nesne döndürür. C# ' ta Bu, bir `object`, ve C++'da, bu, bir `VARIANT`.  
+4. Yerel'ın değerini içeren genel bir nesne döndürür. C# ' ta Bu, bir `object`, ve C++'da, bu, bir `VARIANT`.  
   
 ## <a name="managed-code"></a>Yönetilen kod  
  Yönetilen kod içinde yerel bir değeri alır. bir işlev uygulaması budur.  

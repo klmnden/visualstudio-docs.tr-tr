@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868068"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090621"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Etki Alanına Özgü Dillerle Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
 6. Uygun Sihirbazı sayfasında DSL'nizi için bir dosya adı uzantısını girin. Bu örnekleri DSL'nizi içeren dosyalar kullanacağınız uzantısıdır.  
   
-   -   Bilgisayarınızda veya DSL yüklemek istediğiniz herhangi bir bilgisayarda herhangi bir uygulama ile ilişkili olmayan bir uzantı seçin. Örneğin, **docx** ve **htm** kabul edilemez bir dosya adı uzantıları olacaktır.  
+   - Bilgisayarınızda veya DSL yüklemek istediğiniz herhangi bir bilgisayarda herhangi bir uygulama ile ilişkili olmayan bir uzantı seçin. Örneğin, **docx** ve **htm** kabul edilemez bir dosya adı uzantıları olacaktır.  
   
-   -   Girdiğiniz uzantısı DSL kullanılıp kullanılmadığını, sihirbaz sizi uyarır. Farklı dosya adı uzantısını kullanmayı düşünün. Eski Deneysel tasarımcıları temizlemek için Visual Studio SDK deneysel örneği de sıfırlayabilirsiniz. Tıklayın **Başlat**, tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, ardından **Microsoft sıfırlama Visual Studio 2010 deneysel örneği**.  
+   - Girdiğiniz uzantısı DSL kullanılıp kullanılmadığını, sihirbaz sizi uyarır. Farklı dosya adı uzantısını kullanmayı düşünün. Eski Deneysel tasarımcıları temizlemek için Visual Studio SDK deneysel örneği de sıfırlayabilirsiniz. Tıklayın **Başlat**, tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, ardından **Microsoft sıfırlama Visual Studio 2010 deneysel örneği**.  
   
 7. Diğer sayfalarını inceleyin ve ardından **son**.  
   
@@ -90,13 +90,13 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
 ## <a name="the-important-parts-of-the-dsl-solution"></a>DSL çözümünün önemli bölümleri  
  Yeni çözüm şu yönlerini dikkat edin.  
   
--   **Dsl\DslDefinition.DSL** bu DSL bir çözüm oluşturduğunuzda, gördüğünüz dosyasıdır. Çözümdeki neredeyse tüm kod bu dosyadan oluşturulur ve bir DSL tanımını için yaptığınız değişikliklerin çoğu burada sunulur. Daha fazla bilgi için bkz. Working with [DSL tanım diyagramı ile çalışma](../modeling/working-with-the-dsl-definition-diagram.md).  
+- **Dsl\DslDefinition.DSL** bu DSL bir çözüm oluşturduğunuzda, gördüğünüz dosyasıdır. Çözümdeki neredeyse tüm kod bu dosyadan oluşturulur ve bir DSL tanımını için yaptığınız değişikliklerin çoğu burada sunulur. Daha fazla bilgi için bkz. Working with [DSL tanım diyagramı ile çalışma](../modeling/working-with-the-dsl-definition-diagram.md).  
   
--   **DSL projesi** bu proje etki alanına özgü dil tanımlayan kodu içerir.  
+- **DSL projesi** bu proje etki alanına özgü dil tanımlayan kodu içerir.  
   
--   **DslPackage proje** bu proje açılamaz ve düzenlendi için DSL örneklerini veren kod içeriyor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- **DslPackage proje** bu proje açılamaz ve düzenlendi için DSL örneklerini veren kod içeriyor [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-##  <a name="Debugging"></a> DSL çalıştırma  
+## <a name="Debugging"></a> DSL çalıştırma  
  Oluşturduktan hemen sonra DSL çözüm çalıştırabilirsiniz. Daha sonra çözümü yeniden her değişiklikten sonra çalıştırırken DSL tanımını yavaş yavaş değiştirebilirsiniz.  
   
 #### <a name="to-experiment-with-the-dsl"></a>DSL ile denemek için  
@@ -124,9 +124,9 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
 4. Diyagramdaki şekilleri ve bağlayıcıları oluşturma araçlarını kullanın.  
   
-   1.  Şekil oluşturmak için örnek şekil aracı diyagram üzerine sürükleyin.  
+   1. Şekil oluşturmak için örnek şekil aracı diyagram üzerine sürükleyin.  
   
-   2.  İki şekil bağlanmak için örnek bağlayıcı Aracı'nı tıklatın, ilk şekle tıklayın ve ardından ikinci şekle tıklayın.  
+   2. İki şekil bağlanmak için örnek bağlayıcı Aracı'nı tıklatın, ilk şekle tıklayın ve ardından ikinci şekle tıklayın.  
   
 5. Etiketleri şekillerin bunları değiştirmek için tıklayın.  
   
@@ -190,43 +190,43 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
 ##### <a name="to-rename-domain-classes-relationships-and-tools"></a>Etki alanı sınıfları, ilişkilerini ve araçları yeniden adlandırmak için  
   
-1.  DslDefinition diyagramda, yeniden adlandırma **ExampleModel** için **FamilyTreeModel**, **ExampleElement** için **kişi**,  **Hedefleri** için **üst**, ve **kaynakları** için **alt**. Her bir etiketi değiştirmek için tıklayabilirsiniz.  
+1. DslDefinition diyagramda, yeniden adlandırma **ExampleModel** için **FamilyTreeModel**, **ExampleElement** için **kişi**,  **Hedefleri** için **üst**, ve **kaynakları** için **alt**. Her bir etiketi değiştirmek için tıklayabilirsiniz.  
   
      ![DSL tanım diyagramı &#45; ailesi ağaç modeli](../modeling/media/familyt-person.png "FamilyT_Person")  
   
-2.  Öğe ve bağlayıcı Araçlar yeniden adlandırın.  
+2. Öğe ve bağlayıcı Araçlar yeniden adlandırın.  
   
-    1.  DSL Gezgini penceresi, Çözüm Gezgini altında sekmesine tıklayarak açın. Üzerinde göremiyorsanız, **görünümü** menüsünde **diğer Windows** ve ardından **DSL Gezgini**. DSL tanım diyagramı etkin pencere olduğunda DSL Gezgini görünür olur.  
+    1. DSL Gezgini penceresi, Çözüm Gezgini altında sekmesine tıklayarak açın. Üzerinde göremiyorsanız, **görünümü** menüsünde **diğer Windows** ve ardından **DSL Gezgini**. DSL tanım diyagramı etkin pencere olduğunda DSL Gezgini görünür olur.  
   
-    2.  Özellikler penceresini açın ve aynı anda DSL Gezgini ve özellikleri görebilmek konumlandırın.  
+    2. Özellikler penceresini açın ve aynı anda DSL Gezgini ve özellikleri görebilmek konumlandırın.  
   
-    3.  DSL Gezgini'nde **Düzenleyicisi**, **araç kutusu sekmeleri**,  *\<DSL'nizi >*, ardından **Araçları**.  
+    3. DSL Gezgini'nde **Düzenleyicisi**, **araç kutusu sekmeleri**,  *\<DSL'nizi >*, ardından **Araçları**.  
   
-    4.  Tıklayın **ExampleElement**. Öğeleri oluşturmak için kullanılan araç kutusu öğesi budur.  
+    4. Tıklayın **ExampleElement**. Öğeleri oluşturmak için kullanılan araç kutusu öğesi budur.  
   
-    5.  Özellikler penceresinde değişiklik **adı** özelliğini **kişi**.  
+    5. Özellikler penceresinde değişiklik **adı** özelliğini **kişi**.  
   
          Dikkat **açıklamalı alt yazı** özelliği de değişir.  
   
-    6.  Aynı şekilde, adını değiştirmek **ExampleConnector** aracını **ParentLink**. ALTER **açıklamalı alt yazı** BT'nin Name özelliği bir kopyasını, yani özelliği. Örneğin, **üst bağlantı**.  
+    6. Aynı şekilde, adını değiştirmek **ExampleConnector** aracını **ParentLink**. ALTER **açıklamalı alt yazı** BT'nin Name özelliği bir kopyasını, yani özelliği. Örneğin, **üst bağlantı**.  
   
-3.  DSL yeniden oluşturun.  
+3. DSL yeniden oluşturun.  
   
-    1.  DSL tanım dosyasını kaydedin.  
+    1. DSL tanım dosyasını kaydedin.  
   
-    2.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç çubuğundaki  
+    2. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç çubuğundaki  
   
-    3.  F5 tuşuna basın. Deneysel örneğini kadar bekleyin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] görünür.  
+    3. F5 tuşuna basın. Deneysel örneğini kadar bekleyin [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] görünür.  
   
-4.  Deneysel örneğinde hata ayıklama çözümdeki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], test model dosyasını açın. Öğeleri sürüklediğinizde araç kutusundan sürükleyin. Aracı açıklamalı alt yazılar ve DSL Gezgini içindeki tür adları değiştirildi dikkat edin.  
+4. Deneysel örneğinde hata ayıklama çözümdeki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], test model dosyasını açın. Öğeleri sürüklediğinizde araç kutusundan sürükleyin. Aracı açıklamalı alt yazılar ve DSL Gezgini içindeki tür adları değiştirildi dikkat edin.  
   
-5.  Model dosyasını kaydedin.  
+5. Model dosyasını kaydedin.  
   
-6.  .Tt dosyasını açın ve yeni adları ile eski türünü ve özellik adlarını değiştirme.  
+6. .Tt dosyasını açın ve yeni adları ile eski türünü ve özellik adlarını değiştirme.  
   
-7.  .Tt dosyası içinde belirtilen dosya adı test modelinizi belirttiğinden emin olun.  
+7. .Tt dosyası içinde belirtilen dosya adı test modelinizi belirttiğinden emin olun.  
   
-8.  .Tt dosyayı kaydedin. .Tt dosyasında kod çalıştırmanın sonuçlarını görmek için oluşturulan dosyasını açın. Doğru olduğundan emin olun.  
+8. .Tt dosyayı kaydedin. .Tt dosyasında kod çalıştırmanın sonuçlarını görmek için oluşturulan dosyasını açın. Doğru olduğundan emin olun.  
   
 ### <a name="add-domain-properties-to-classes"></a>Sınıflar için etki alanı özellikleri ekleyin  
  Özellikler, örneğin doğum yılı ve bir kişinin ölüm temsil etmek bir alan sınıfına ekleyin.  
@@ -237,29 +237,29 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
 1. Özellikleri ekleyin.  
   
-   1.  DSL tanım diyagramı içinde sağ **kişi** etki alanı sınıfı, noktasına **Ekle**ve ardından **Domain özelliği**.  
+   1. DSL tanım diyagramı içinde sağ **kişi** etki alanı sınıfı, noktasına **Ekle**ve ardından **Domain özelliği**.  
   
-   2.  Yeni özellik adlarının bir listesini yazın **Doğum** ve **ölüm**. Tuşuna **Enter** sonra her biri.  
+   2. Yeni özellik adlarının bir listesini yazın **Doğum** ve **ölüm**. Tuşuna **Enter** sonra her biri.  
   
 2. Özellikleri şeklinde görüntüler dekoratörler ekleyin.  
   
-   1.  Kişinin etki alanı diyagramı diğer tarafında sınıftan gri çizgi izleyin. Diyagram öğesi eşlemesi budur. Bu etki alanı sınıfı bir şekil sınıfına bağlar.  
+   1. Kişinin etki alanı diyagramı diğer tarafında sınıftan gri çizgi izleyin. Diyagram öğesi eşlemesi budur. Bu etki alanı sınıfı bir şekil sınıfına bağlar.  
   
-   2.  Bu şeklin sınıf sağ tıklatın, **Ekle**ve ardından **metin Dekoratör**.  
+   2. Bu şeklin sınıf sağ tıklatın, **Ekle**ve ardından **metin Dekoratör**.  
   
-   3.  Adlara sahip iki dekoratörler gibi ekleme **BirthDecorator** ve **DeathDecorator**.  
+   3. Adlara sahip iki dekoratörler gibi ekleme **BirthDecorator** ve **DeathDecorator**.  
   
-   4.  Her yeni dekoratör seçin ve Özellikler penceresinde ayarlayın **konumu** alan. Bu, etki alanı özellik değeri şeklin üzerinde nerede görüntüleneceğini belirler. Örneğin, **InnerBottomLeft** ve **InnerBottomRight**.  
+   4. Her yeni dekoratör seçin ve Özellikler penceresinde ayarlayın **konumu** alan. Bu, etki alanı özellik değeri şeklin üzerinde nerede görüntüleneceğini belirler. Örneğin, **InnerBottomLeft** ve **InnerBottomRight**.  
   
         ![Bölme şekli tanımı](../modeling/media/familyt-compartment.png "FamilyT_Compartment")  
   
 3. Dekoratörler özelliklerine eşlenir.  
   
-   1.  DSL ayrıntıları penceresini açın. Genellikle bir sekmede çıkış penceresi yanındaki olur. Üzerinde göremiyorsanız, **görünümü** menüsünde **diğer Windows**ve ardından **DSL ayrıntıları**.  
+   1. DSL ayrıntıları penceresini açın. Genellikle bir sekmede çıkış penceresi yanındaki olur. Üzerinde göremiyorsanız, **görünümü** menüsünde **diğer Windows**ve ardından **DSL ayrıntıları**.  
   
-   2.  DSL tanım diyagramı üzerinde bağlanan çizgi **kişi** shape sınıfı için etki alanı sınıfı.  
+   2. DSL tanım diyagramı üzerinde bağlanan çizgi **kişi** shape sınıfı için etki alanı sınıfı.  
   
-   3.  İçinde **DSL ayrıntıları**, **Dekoratör eşlemeleri** sekmesinde, eşlenmemiş bir dekoratör onay kutusuna tıklayın. İçinde **görüntüleme özelliği**, istediğiniz, eşlenmiş etki alanı özelliğini seçin. Örneğin, harita **BirthDecorator** için **Doğum**.  
+   3. İçinde **DSL ayrıntıları**, **Dekoratör eşlemeleri** sekmesinde, eşlenmemiş bir dekoratör onay kutusuna tıklayın. İçinde **görüntüleme özelliği**, istediğiniz, eşlenmiş etki alanı özelliğini seçin. Örneğin, harita **BirthDecorator** için **Doğum**.  
   
 4. DSL kaydedin, tüm Şablonları Dönüştür'e tıklayın ve F5 tuşuna basın.  
   
@@ -276,9 +276,9 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
 ##### <a name="to-add-and-display-a-new-domain-class"></a>Ekleme ve yeni bir etki alanı sınıfını görüntüle  
   
-1.  Bir etki alanı sınıf ekleyin ve alt model kökünün yapın.  
+1. Bir etki alanı sınıf ekleyin ve alt model kökünün yapın.  
   
-    1.  DSL tanım diyagramı içinde tıklayın **gömme ilişkisi** aracı, kök sınıfı tıklatın **FamilyTreeModel**ve ardından diyagramın boş bir bölümüne tıklayın.  
+    1. DSL tanım diyagramı içinde tıklayın **gömme ilişkisi** aracı, kök sınıfı tıklatın **FamilyTreeModel**ve ardından diyagramın boş bir bölümüne tıklayın.  
   
          Yeni bir etki alanı sınıfı, FamilyTreeModel gömme ilişkisi ile bağlı görünür.  
   
@@ -287,60 +287,60 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
         > [!NOTE]
         >  Gömme hedefi bir sınıftan devralmalıdır veya en az bir gömme ilişkisi hedef modelin kökü dışındaki her etki alanı sınıfı olmalıdır. Bu nedenle, sık gömme ilişkisi aracını kullanarak bir etki alanı sınıfı oluşturmak uygun.  
   
-    2.  Yeni sınıfa, bir alan özelliği ekleyin, örneğin **adı**.  
+    2. Yeni sınıfa, bir alan özelliği ekleyin, örneğin **adı**.  
   
-2.  Bir kişi ve şehir arasındaki başvuru ilişkisi ekleyin.  
+2. Bir kişi ve şehir arasındaki başvuru ilişkisi ekleyin.  
   
-    1.  Tıklayın **başvuru ilişkisi** aracı, kişi ve ardından belediye tıklayın.  
+    1. Tıklayın **başvuru ilişkisi** aracı, kişi ve ardından belediye tıklayın.  
   
          ![DSL tanımının parçası: ailesi Ağaç kökü](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
         >  Başvuru ilişkilerini çapraz model ağacına bir bölümünden diğerine temsil eder.  
   
-3.  Model diyagramlarda kasabalarında şubeleri temsil etmek için bir şekil ekleyin.  
+3. Model diyagramlarda kasabalarında şubeleri temsil etmek için bir şekil ekleyin.  
   
-    1.  Sürükleme bir **geometri şekli** araç kutusundan diyagrama ve örneğin, yeniden adlandırma **TownShape**.  
+    1. Sürükleme bir **geometri şekli** araç kutusundan diyagrama ve örneğin, yeniden adlandırma **TownShape**.  
   
-    2.  Özellikler penceresinde dolgu rengi ve Geometry gibi yeni şekil görünüm alanlarını ayarlayın.  
+    2. Özellikler penceresinde dolgu rengi ve Geometry gibi yeni şekil görünüm alanlarını ayarlayın.  
   
-    3.  Belediye adını görüntülemek için bir Dekoratör ekleyin ve NameDecorator yeniden adlandırın. Kendi konum özelliğini ayarlayın.  
+    3. Belediye adını görüntülemek için bir Dekoratör ekleyin ve NameDecorator yeniden adlandırın. Kendi konum özelliğini ayarlayın.  
   
-4.  Belediye etki alanı sınıfı için TownShape eşleyin.  
+4. Belediye etki alanı sınıfı için TownShape eşleyin.  
   
-    1.  Tıklayın **diyagram öğesi eşlemesi** aracı ve şehir etki alanı sınıfı ve TownShape şekli sınıfı'ı tıklatın.  
+    1. Tıklayın **diyagram öğesi eşlemesi** aracı ve şehir etki alanı sınıfı ve TownShape şekli sınıfı'ı tıklatın.  
   
-    2.  İçinde **Dekoratör eşlemeleri** sekmesinde **DSL ayrıntıları** map bağlayıcı penceresiyle seçili ve NameDecorator denetleyin **görüntüleme özelliği** adı.  
+    2. İçinde **Dekoratör eşlemeleri** sekmesinde **DSL ayrıntıları** map bağlayıcı penceresiyle seçili ve NameDecorator denetleyin **görüntüleme özelliği** adı.  
   
-5.  Kişi ve kasabalarında şubeleri arasındaki ilişkiyi görüntülemek için bir bağlayıcı oluşturun.  
+5. Kişi ve kasabalarında şubeleri arasındaki ilişkiyi görüntülemek için bir bağlayıcı oluşturun.  
   
-    1.  Bir bağlayıcı araç kutusundan diyagrama sürükleyin. Yeniden adlandırmak ve görünüm özelliklerini ayarlayın.  
+    1. Bir bağlayıcı araç kutusundan diyagrama sürükleyin. Yeniden adlandırmak ve görünüm özelliklerini ayarlayın.  
   
-    2.  Kullanım **diyagram öğesi eşlemesi** yeni bağlayıcı kişi ve şehir arasındaki ilişkiyi bağlamak için aracı.  
+    2. Kullanım **diyagram öğesi eşlemesi** yeni bağlayıcı kişi ve şehir arasındaki ilişkiyi bağlamak için aracı.  
   
          ![Eklenmiş bir şekil Haritası ailesi ağaç tanımıyla](../modeling/media/familyt-shapemap.png "FamilyT_ShapeMap")  
   
-6.  Yeni belediye yapmak için bir öğe aracı oluşturun.  
+6. Yeni belediye yapmak için bir öğe aracı oluşturun.  
   
-    1.  İçinde **DSL Gezgini**, genişletme **Düzenleyicisi** ardından **araç kutusu sekmeleri**.  
+    1. İçinde **DSL Gezgini**, genişletme **Düzenleyicisi** ardından **araç kutusu sekmeleri**.  
   
-    2.  Sağ  *\<DSL'nizi >* ve ardından **yeni öğe aracı ekleme**.  
+    2. Sağ  *\<DSL'nizi >* ve ardından **yeni öğe aracı ekleme**.  
   
-    3.  Ayarlama **adı** özellik kümesi ve yeni aracı kendi **sınıfı** belediye özelliğini.  
+    3. Ayarlama **adı** özellik kümesi ve yeni aracı kendi **sınıfı** belediye özelliğini.  
   
-    4.  Ayarlama **araç kutusu simgesi** özelliği. Tıklayın **[...]**  ve **dosya adı** alanında, bir simge dosyası seçin.  
+    4. Ayarlama **araç kutusu simgesi** özelliği. Tıklayın **[...]**  ve **dosya adı** alanında, bir simge dosyası seçin.  
   
-7.  Kasabalarında şubeleri ve kişiler arasında bağlantı yapmak için bir bağlayıcı aracını oluşturun.  
+7. Kasabalarında şubeleri ve kişiler arasında bağlantı yapmak için bir bağlayıcı aracını oluşturun.  
   
-    1.  Sağ  *\<DSL'nizi >* ve ardından **ekleme yeni bağlayıcı aracını**.  
+    1. Sağ  *\<DSL'nizi >* ve ardından **ekleme yeni bağlayıcı aracını**.  
   
-    2.  Yeni aracı ad özelliğini ayarlayın.  
+    2. Yeni aracı ad özelliğini ayarlayın.  
   
-    3.  İçinde **ConnectionBuilder** özelliği, kişi belediye ilişki adını içeren Oluşturucusu'nu seçin.  
+    3. İçinde **ConnectionBuilder** özelliği, kişi belediye ilişki adını içeren Oluşturucusu'nu seçin.  
   
-    4.  Ayarlama **araç kutusu simgesi**.  
+    4. Ayarlama **araç kutusu simgesi**.  
   
-8.  DSL tanımını kaydedin, tıklayın **tüm Şablonları Dönüştür**ve tuşuna **F5**.  
+8. DSL tanımını kaydedin, tıklayın **tüm Şablonları Dönüştür**ve tuşuna **F5**.  
   
 9. Deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], test model dosyasını açın. Yeni Araçları kasabalarında şubeleri ve kasabalarında şubeleri ve kişiler arasında bağlantı oluşturmak için kullanın. Yalnızca doğru türde öğe arasında bağlantılar oluşturabilirsiniz dikkat edin.  
   
@@ -385,7 +385,7 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
  Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a> Eski Deneysel DSL'ler kaldırılıyor  
+## <a name="Reset"></a> Eski Deneysel DSL'ler kaldırılıyor  
  Bu Deneysel DSL'ler oluşturduysanız, artık istediğiniz kaldırabilirsiniz bilgisayarınızdan sıfırlayarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deneysel örneği.  
   
  Bu Deneysel tüm DSL'ler ve diğer Deneysel bilgisayarınızdan kaldırır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantıları. Bu hata ayıklama modunda yürütülen uzantılarıdır.  
@@ -394,9 +394,9 @@ Bu konu tanımlama ve Visual Studio için modelleme SDK'sı ile oluşturulan bir
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Visual Studio deneysel örneği sıfırlamak için  
   
-1.  Tıklayın **Başlat**, tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, ardından **Microsoft sıfırlama Visual Studio 2010 deneysel örneği**.  
+1. Tıklayın **Başlat**, tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**, ardından **Microsoft sıfırlama Visual Studio 2010 deneysel örneği**.  
   
-2.  Deneysel hiçbir DSL'ler veya diğer Deneysel yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hala kullanmak istediğiniz uzantıları.  
+2. Deneysel hiçbir DSL'ler veya diğer Deneysel yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hala kullanmak istediğiniz uzantıları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modelleri, sınıfları ve ilişkileri anlama](../modeling/understanding-models-classes-and-relationships.md)   

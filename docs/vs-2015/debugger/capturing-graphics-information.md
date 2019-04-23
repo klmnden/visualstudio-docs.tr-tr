@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114240"
 ---
 # <a name="capturing-graphics-information"></a>Grafik Bilgilerini Yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ ms.locfileid: "54764754"
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Grafik tanılama yakalama seçeneklerini yapılandırmak için  
   
-1.  Menü çubuğunda, Araçlar, Seçenekler'i seçin. Seçenekler iletişim kutusu görünür.  
+1. Menü çubuğunda, Araçlar, Seçenekler'i seçin. Seçenekler iletişim kutusu görünür.  
   
-2.  Sol taraftaki seçenekleri Kategori listesinden, grafik Tanılama'yı seçin ve sonra istediğiniz grafik tanılama seçenekleri yapılandırın.  
+2. Sol taraftaki seçenekleri Kategori listesinden, grafik Tanılama'yı seçin ve sonra istediğiniz grafik tanılama seçenekleri yapılandırın.  
   
      **Yakalama sırasında çağrı yığınlarını TOPLA (yakalamayı yavaşlatır)**  
      Çağrı yığınlarını Topla için bu kutuyu işaretleyin. Varsayılan olarak, çağrı yığını toplanmadı. Çağrı yığınlarını yakalamak için emin **toplama çağrı yığınları yakalama sırasında (yakalamayı yavaşlatır** toplamayı etkinleştirin ve ardından ya da ayarlamak için onay kutusuna olarak **çizim,gönderme,mevcutveperformansişaretleyicileriiçin**yalnızca en önemli çağrı yığınlarını, toplanacak (varsayılan) seçeneğini veya **her şeyi** seçeneği tüm çağrı yığınlarını topla. Çağrı yığınlarını sonraki toplamayı durdurmak için temizleyin **toplama çağrı yığınları yakalama sırasında (yakalamayı yavaşlatır** onay kutusu.  

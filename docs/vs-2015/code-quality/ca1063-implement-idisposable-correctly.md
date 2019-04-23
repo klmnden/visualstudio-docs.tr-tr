@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081404"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable'ı doğru uygulayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "54785471"
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Kesip kodunuzu inceleyebilir ve aşağıdaki çözümlerden birini, bu ihlali düzeltir belirleyin.
 
--   IDisposable tarafından uygulanan arabirimler listesinden kaldırın {0} ve temel sınıfın Dispose uygulamasını geçersiz kılın.
+- IDisposable tarafından uygulanan arabirimler listesinden kaldırın {0} ve temel sınıfın Dispose uygulamasını geçersiz kılın.
 
--   Sonlandırıcı türünden kaldırın {0}, Dispose (bool disposing) yöntemini geçersiz kılın ve sonlandırma mantığını 'disposing ' değerinin false olduğu kod yoluna koyun.
+- Sonlandırıcı türünden kaldırın {0}, Dispose (bool disposing) yöntemini geçersiz kılın ve sonlandırma mantığını 'disposing ' değerinin false olduğu kod yoluna koyun.
 
--   Kaldırma {0}, Dispose (bool disposing) yöntemini geçersiz kılın ve atma mantığını 'disposing ' değerinin true olduğu kod yoluna koyun.
+- Kaldırma {0}, Dispose (bool disposing) yöntemini geçersiz kılın ve atma mantığını 'disposing ' değerinin true olduğu kod yoluna koyun.
 
--   Emin {0} genel olarak bildirildi ve korumalı.
+- Emin {0} genel olarak bildirildi ve korumalı.
 
--   Yeniden adlandırma {0} yöntemini 'Dispose' ve onu public ve sealed olarak bildirildiğinden emin olun.
+- Yeniden adlandırma {0} yöntemini 'Dispose' ve onu public ve sealed olarak bildirildiğinden emin olun.
 
--   Emin olun {0} korumalı olarak sanal bildirilen ve korumasız.
+- Emin olun {0} korumalı olarak sanal bildirilen ve korumasız.
 
--   Değiştirme {0} Dispose(true) çağırır, böylece daha sonra GC çağırır. IDisposable.Dispose geçerli nesne örneğinde ('this' veya 'Me' [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ve ardından döndürür.
+- Değiştirme {0} Dispose(true) çağırır, böylece daha sonra GC çağırır. IDisposable.Dispose geçerli nesne örneğinde ('this' veya 'Me' [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ve ardından döndürür.
 
--   Değiştirme {0} böylece Dispose(false) yöntemini çağıracak ve sonra döndürür.
+- Değiştirme {0} böylece Dispose(false) yöntemini çağıracak ve sonra döndürür.
 
--   Bir korumasız kök IDisposable sınıfı yazıyorsanız, aşağıdaki IDisposable uygulamasını daha önce bu bölümde açıklanan desene uygun olduğunu emin olun.
+- Bir korumasız kök IDisposable sınıfı yazıyorsanız, aşağıdaki IDisposable uygulamasını daha önce bu bölümde açıklanan desene uygun olduğunu emin olun.
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Bu kuraldan uyarıyı bastırmayın.

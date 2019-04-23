@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088996"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Nasıl yapılır: Ortak çıkış dizinine derleme
 
@@ -26,13 +26,13 @@ Varsayılan olarak, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ç
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Tüm çözüm yerleştirmek için ortak bir dizine çıkarır.
 
-1.  Çözümde bir proje tıklayın.
+1. Çözümde bir proje tıklayın.
 
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 
-3.  Proje türüne bağlı olarak, üzerinde tıklayın **derleme** sekmesini veya **derleme** sekmesini tıklatıp ayarlayın **çıkış yolu** Çözümdeki tüm projeleri için kullanılacak bir klasöre.
+3. Proje türüne bağlı olarak, üzerinde tıklayın **derleme** sekmesini veya **derleme** sekmesini tıklatıp ayarlayın **çıkış yolu** Çözümdeki tüm projeleri için kullanılacak bir klasöre.
 
-4.  Çözümdeki tüm projeleri için 1-3. adımları tekrarlayın.
+4. Çözümdeki tüm projeleri için 1-3. adımları tekrarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

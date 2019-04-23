@@ -1,19 +1,19 @@
 ---
-title: Mac için Visual Studio'yu genişletme
+title: Mac için Visual Studio’yu Genişletme
 description: Mac özellikleri ve işlevleri için Visual Studio uzantı paketleri adlı modülleriyle genişletilebilir. Bu kılavuzun ilk bölümü, bir basit bir belgeye tarih ve saat için Visual Studio'yu Mac uzantı paketi oluşturur. İkinci bölümü, bu kılavuzun uzantı paketi sistemi temelleri ve bazı çekirdek temelini Mac için Visual Studio'nun API'leri sunar.
 author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086128"
 ---
-# <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio'yu genişletme
+# <a name="extending-visual-studio-for-mac"></a>Mac için Visual Studio’yu Genişletme
 
 Mac için Visual Studio modülleri adlı bir dizi oluşur *uzantı paketleri*. Uzantı paketleri gibi ek bir dil veya yeni bir proje şablonu için destek, Mac için Visual Studio için yeni işlevleri tanıtmak için kullanabilirsiniz.
 
@@ -81,10 +81,10 @@ Komut uzantıları girdileri ekleme tarafından tanımlanan `/MonoDevelop/Ide/Co
 
 Uzantı düğüm, bu durumda takarak genişletme noktası belirtir bir path özniteliği içeren `/MonoDevelop/Ide/Commands/Edit`. Ayrıca, komutu bir üst düğüme görür. Komut düğümü aşağıdaki özniteliklere sahiptir:
 
-*   **Kimliği** -bu komut için bir tanımlayıcı belirtir. Komut tanımlayıcıları numaralandırma üyeleri bildirilmesi gerekir ve komutları için Commandıtems'lara bağlanmak için kullanılır.
-*   **_etiketi** -menülerde gösterilecek metin.
-*   **açı_klama** -araç çubuğu düğmeleri araç ipucu olarak gösterilecek metin.
-*   **defaultHandler** -belirtir `CommandHandler` komutu güç katan sınıfı
+* **Kimliği** -bu komut için bir tanımlayıcı belirtir. Komut tanımlayıcıları numaralandırma üyeleri bildirilmesi gerekir ve komutları için Commandıtems'lara bağlanmak için kullanılır.
+* **_etiketi** -menülerde gösterilecek metin.
+* **açı_klama** -araç çubuğu düğmeleri araç ipucu olarak gösterilecek metin.
+* **defaultHandler** -belirtir `CommandHandler` komutu güç katan sınıfı
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ Bu komut ve CommandItem bağdaştırabilir - CommandItem seçildiğinde CommandI
 
 Geliştirme için kullanılabilir alanları kapsamı hakkında daha fazla bilgi için bkz: [uzantı ağaç başvurusu](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) ve [API'sine genel bakış](http://monodevelop.com/Developers/Articles/API_Overview). Ayrıca başvurmak Gelişmiş uzantı paketleri oluştururken [Geliştirici makaleleri](http://monodevelop.com/Developers/Articles). Özelleştirme için alanları kısmi bir listesi aşağıdadır:
 
-*   Bölmeleri
-*   Tuş bağlama şemalarını
-*   İlkeler
-*   Kod biçimlendiricileri
-*   Proje dosya biçimleri
-*   Tercihler panelleri
-*   Seçenekleri panelleri
-*   Hata ayıklayıcı protokolleri
-*   Hata ayıklama görselleştiricileri
-*   Çalışma alanı düzeni
-*   Çözüm paneli ağaç düğümleri
-*   Kaynak Düzenleyicisi kenar boşlukları
-*   Birim test altyapıları
-*   Kod oluşturucuları
-*   Kod parçacıkları
-*   Hedef Çerçeve
-*   Hedef çalışma zamanı
-*   VC arka uçları
-*   Yeniden Düzenle
-*   Yürütme işleyicileri
-*   Söz dizimi vurgulama
+* Bölmeleri
+* Tuş bağlama şemalarını
+* İlkeler
+* Kod biçimlendiricileri
+* Proje dosya biçimleri
+* Tercihler panelleri
+* Seçenekleri panelleri
+* Hata ayıklayıcı protokolleri
+* Hata ayıklama görselleştiricileri
+* Çalışma alanı düzeni
+* Çözüm paneli ağaç düğümleri
+* Kaynak Düzenleyicisi kenar boşlukları
+* Birim test altyapıları
+* Kod oluşturucuları
+* Kod parçacıkları
+* Hedef çerçeveler
+* Hedef çalışma zamanı
+* VC arka uçları
+* Yeniden Düzenle
+* Yürütme işleyicileri
+* Söz dizimi vurgulama
 
 ## <a name="additional-information"></a>Ek Bilgiler
 

@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9bc74cbd0d7fbcfec26f4bfe3f334623baf066b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113618"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Aracı bir .NET Framework hizmetini ve Profiler komut satırını kullanarak bellek verilerini toplamak
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** ve **/globaltracegclife** bellek ayırma ve nesne yaşam verilerinin koleksiyonunu etkinleştirin.  
+   - **/globaltracegc** ve **/globaltracegclife** bellek ayırma ve nesne yaşam verilerinin koleksiyonunu etkinleştirin.  
 
        |Seçenek|Açıklama|  
        |------------|-----------------|  
@@ -91,14 +91,14 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   İşlem kimliği veya servisin işlem adını belirtin. Windows Görev Yöneticisi'nde, işlem kimliklerini ve isimlerini çalışan tüm işlemlerin görüntüleyebilirsiniz.  
+    - İşlem kimliği veya servisin işlem adını belirtin. Windows Görev Yöneticisi'nde, işlem kimliklerini ve isimlerini çalışan tüm işlemlerin görüntüleyebilirsiniz.  
 
 ## <a name="controlling-data-collection"></a>Veri Toplama Denetimi  
  Hizmet çalışırken dosyasına verilerin yazılmasını durdurmayla ve veri toplamayı kontrol edebilirsiniz **VSPerfCmd.exe** seçenekleri. Veri toplama denetimi uygulamayı kapatma veya başlatma gibi program yürütmenin özel bir bölümü için veri toplamanızı sağlar.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak  
 
--   Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.  
+- Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.  
 
     |Seçenek|Açıklama|  
     |------------|-----------------|  
@@ -111,19 +111,19 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için  
 
-1.  Servis kontrol yöneticisinden hizmeti durdurun.  
+1. Servis kontrol yöneticisinden hizmeti durdurun.  
 
-2.  Profil oluşturucuyu kapatın. Tür:  
+2. Profil oluşturucuyu kapatın. Tür:  
 
      **VSPerfCmd/Shutdown**  
 
-3.  Tüm profil oluşturma işlemini tamamladıktan sonra profil oluşturma ortam değişkenlerini temizleyin. Tür:  
+3. Tüm profil oluşturma işlemini tamamladıktan sonra profil oluşturma ortam değişkenlerini temizleyin. Tür:  
 
      **VSPerfClrEnv /globaloff**  
 
      Belgelenmiş modülü özgün hali ile değiştirin. Gerekirse, hizmetin başlangıç türünü yeniden yapılandırın.  
 
-4.  Bilgisayarı yeniden başlatın.  
+4. Bilgisayarı yeniden başlatın.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Profil oluşturma hizmetleri](../profiling/command-line-profiling-of-services.md)   

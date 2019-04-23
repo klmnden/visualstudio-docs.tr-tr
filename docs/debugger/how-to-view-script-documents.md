@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ca31ffe85f7d932ebb23d6a454b5bccfdcb5ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111824"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Nasıl yapılır: Betik belgelerini görüntüleme (JavaScript)
 
@@ -31,17 +31,17 @@ Sunucu tarafı komut dosyası Çözüm Gezgini'nde görünür. Yalnızca hata ay
 
 ### <a name="to-view-a-server-side-script-document"></a>Bir sunucu tarafı komut dosyası belgesini görüntülemek için
 
-1.  İçinde **Çözüm Gezgini**açın  **\<Web sitesi Pathname >** düğümü.
+1. İçinde **Çözüm Gezgini**açın  **\<Web sitesi Pathname >** düğümü.
 
-2.  Görüntülemek istediğiniz komut dosyasına çift tıklayın.
+2. Görüntülemek istediğiniz komut dosyasına çift tıklayın.
 
      Sunucu tarafı komut dosyası, bir kaynak penceresinde açılır.
 
 ### <a name="to-view-a-client-side-script-document"></a>İstemci tarafı komut dosyası belgeyi görüntülemek için
 
-1.  İçinde **Çözüm Gezgini**açın **betik belgelerini** düğümü.
+1. İçinde **Çözüm Gezgini**açın **betik belgelerini** düğümü.
 
-2.  Görüntülemek istediğiniz komut dosyasına çift tıklayın.
+2. Görüntülemek istediğiniz komut dosyasına çift tıklayın.
 
      İstemci tarafı komut dosyası, bir kaynak penceresinde açılır.
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091981"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Test denetleyicilerini ve test aracılarını yönetme
 
@@ -184,27 +184,27 @@ Test denetleyiciniz, Team Foundation Server Proje koleksiyonu ile kaydetmek isti
 
 Visual Studio için test ayarlarınıza uygulamanız için roller eklediğinizde, her rolünüz için aracı özellikleri ekleyebilirsiniz. Bu, hangi test aracılarının bu rol için kullanılabilen belirler. Kullanarak testlerinizi çalıştırdığınızda, bu test ayarları, test ayarları için seçili test denetleyicisi gerekli aracıların kullanılabilirliğini belirler. Aşağıdaki aracı kullanılabilirliği belirlendiğinde oluşabilecek durumlar şunlardır:
 
--   Testlerin çalıştırılması gereken rol için kullanılabilen hiçbir aracı yoktur. Testleriniz çalıştırılamaz. Aşağıdaki eylemlerden birini gerçekleştirin ve sonra testlerinizi yeniden çalıştırın:
+- Testlerin çalıştırılması gereken rol için kullanılabilen hiçbir aracı yoktur. Testleriniz çalıştırılamaz. Aşağıdaki eylemlerden birini gerçekleştirin ve sonra testlerinizi yeniden çalıştırın:
 
-    -   Bir aracının bu rol testleri çalıştırmak kullanılabilir olmasını bekleyebilirsiniz.
+    - Bir aracının bu rol testleri çalıştırmak kullanılabilir olmasını bekleyebilirsiniz.
 
-    -   Çevrimdışı aracılar varsa, bu rol için kullanılabilir, böylece kullanılabilir aracı yeniden başlatabilirsiniz.
+    - Çevrimdışı aracılar varsa, bu rol için kullanılabilir, böylece kullanılabilir aracı yeniden başlatabilirsiniz.
 
-    -   Bu rol için doğru aracı özellikleriyle başka bir aracı için test denetleyicisi ekleyebilirsiniz.
+    - Bu rol için doğru aracı özellikleriyle başka bir aracı için test denetleyicisi ekleyebilirsiniz.
 
-    -   Test ayarlarını kullanmak istediğiniz diğer aracıları etkinleştirmek üzere bu rol için aracı özelliklerini değiştirebilirsiniz.
+    - Test ayarlarını kullanmak istediğiniz diğer aracıları etkinleştirmek üzere bu rol için aracı özelliklerini değiştirebilirsiniz.
 
--   Tanılama veri bağdaştırıcılarını çalıştıran bir veya daha fazla rol için kullanılabilir aracı yok. Testleriniz çalıştırılabilir, ancak tanılama veri bağdaştırıcısı çalıştırılamaz. Testlerinizi tanılama veri bağdaştırıcısı olmadan çalıştırabilir veya aşağıdaki eylemlerden birini gerçekleştirin ve testlerinizi yeniden çalıştırın:
+- Tanılama veri bağdaştırıcılarını çalıştıran bir veya daha fazla rol için kullanılabilir aracı yok. Testleriniz çalıştırılabilir, ancak tanılama veri bağdaştırıcısı çalıştırılamaz. Testlerinizi tanılama veri bağdaştırıcısı olmadan çalıştırabilir veya aşağıdaki eylemlerden birini gerçekleştirin ve testlerinizi yeniden çalıştırın:
 
-    -   Bir aracının bu rol için kullanılabilir olmasını bekleyebilirsiniz.
+    - Bir aracının bu rol için kullanılabilir olmasını bekleyebilirsiniz.
 
-    -   Çevrimdışı aracılar varsa, bu rol için kullanılabilen, Online'dan için aracı durumunu değiştirme **Test denetleyicisini Yönet** üzerinde **Test** menüsü. Ayrıca, denetleyiciden bağlantısı kesilmişse aracıyı yeniden başlatmanız gerekebilir.
+    - Çevrimdışı aracılar varsa, bu rol için kullanılabilen, Online'dan için aracı durumunu değiştirme **Test denetleyicisini Yönet** üzerinde **Test** menüsü. Ayrıca, denetleyiciden bağlantısı kesilmişse aracıyı yeniden başlatmanız gerekebilir.
 
-    -   Bu test için ihtiyacınız olabilecek aracılarının testleri çalıştırmakla meşgul olmadığından emin olun. Tüm aracıların durumunu kontrol edebilirsiniz **Test denetleyicisini Yönet** üzerinde **Test** menüsü.
+    - Bu test için ihtiyacınız olabilecek aracılarının testleri çalıştırmakla meşgul olmadığından emin olun. Tüm aracıların durumunu kontrol edebilirsiniz **Test denetleyicisini Yönet** üzerinde **Test** menüsü.
 
-    -   Test denetleyicisi rolü için doğru aracı özellikleriyle başka bir aracı ekleyebilirsiniz.
+    - Test denetleyicisi rolü için doğru aracı özellikleriyle başka bir aracı ekleyebilirsiniz.
 
-    -   Kullanmak istediğiniz diğer aracıları etkinleştirmek üzere test ayarları rolünde için aracı özelliklerini değiştirebilirsiniz.
+    - Kullanmak istediğiniz diğer aracıları etkinleştirmek üzere test ayarları rolünde için aracı özelliklerini değiştirebilirsiniz.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Gecikmeli İmzalanmış Derlemelerden Test Yükleme
 

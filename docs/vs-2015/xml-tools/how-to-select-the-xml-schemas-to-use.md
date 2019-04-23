@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091488"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Nasıl yapılır: Kullanılacak XML Şemalarını Seçme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ XML Düzenleyicisi'ni %InstallDir%\Xml\Schemas dizininde bulunan bir şema önbe
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Bir XML Şeması, şema önbelleğine eklemek için  
   
-1.  Düğmesine tıklayarak belge Özellikler penceresinde **şemaları** alan.  
+1. Düğmesine tıklayarak belge Özellikler penceresinde **şemaları** alan.  
   
-2.  **Ekle**'yi tıklatın.  
+2. **Ekle**'yi tıklatın.  
   
      Bu açılır **açık XSD şeması** iletişim.  
   
-3.  Gözat ve şemaları şema önbelleğine eklemek için seçin.  
+3. Gözat ve şemaları şema önbelleğine eklemek için seçin.  
   
-4.  Tıklayın **açık**.  
+4. Tıklayın **açık**.  
   
      Eklenir şemaları önbelleğe alma ve ise **kullanım** sütun değeri ayarı **Bu şemayı kullan**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Bir XML Şeması, şema önbelleğinden silmek için  
   
-1.  Düğmesine tıklayarak belge Özellikler penceresinde **şemaları** alan.  
+1. Düğmesine tıklayarak belge Özellikler penceresinde **şemaları** alan.  
   
-2.  Kaldırın ve ardından şemayı seçin **Kaldır**.  
+2. Kaldırın ve ardından şemayı seçin **Kaldır**.  
   
      Şema bellek içi şema önbelleğinden kaldırılıyor ancak dosya sisteminden kaldırılmaz.  
   

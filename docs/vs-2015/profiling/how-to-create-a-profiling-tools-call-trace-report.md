@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117830"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Nasıl yapılır: Bir profil oluşturma araçları çağrı izleme raporu oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "54774907"
   
 ### <a name="to-create-a-call-trace-report"></a>Çağrı izleme raporu oluşturmak için  
   
-1.  Açık bir **komut istemi**penceresi.  
+1. Açık bir **komut istemi**penceresi.  
   
-2.  Komut satırında, aşağıdaki komutu yazın:  
+2. Komut satırında, aşağıdaki komutu yazın:  
   
      *ToolsPath* **VSPerfReport** *VSPFile* **/calltrace [/ XML]**  
   

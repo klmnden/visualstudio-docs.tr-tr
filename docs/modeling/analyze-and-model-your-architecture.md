@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081248"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Mimarinizi çözümleme ve mimarinizin modelini oluşturma
 
@@ -69,39 +69,39 @@ Kodunuzda organizasyon ve ilişkileri görmenize yardımcı kod eşlemeleri.
 
 **Tipik kullanımları:**
 
--   Program kodu İnceleme yapısı ve bağımlılıklarını daha iyi anlamak için nasıl güncelleştirmek ve maliyetini tahmin etmek önerilen değişiklikleri.
+- Program kodu İnceleme yapısı ve bağımlılıklarını daha iyi anlamak için nasıl güncelleştirmek ve maliyetini tahmin etmek önerilen değişiklikleri.
 
 **Bkz:**
 
--   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
--   [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
--   [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
+- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>Bağımlılık diyagramı
 Bağımlılık diyagramları Katmanlar veya açık bağımlılıkları olan bloklar kümesi olarak uygulamanın yapısını tanımlamanıza olanak sağlar. Kodda bağımlılıklar ve bağımlılıkları bağımlılık diyagramda açıklanan arasındaki çakışmaları bulmak için doğrulama çalıştırabilirsiniz.
 
 **Tipik kullanımları:**
 
--   Uygulama çok sayıda değişiklikleriyle yapısını, kullanım ömrü boyunca Sabitle.
--   Kod değişiklikleri iade etmeden önce istenmeyen bağımlılık çakışmaları keşfedin.
+- Uygulama çok sayıda değişiklikleriyle yapısını, kullanım ömrü boyunca Sabitle.
+- Kod değişiklikleri iade etmeden önce istenmeyen bağımlılık çakışmaları keşfedin.
 
 **Bkz:**
 
--   [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
--   [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
--   [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
+- [Kodunuz aracılığıyla bağımlılık diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)
+- [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
+- [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Etki alanına özgü dil (DSL)
 Bir DSL belirli bir amaç için tasarım bir gösterimidir. Visual Studio'da, genellikle grafik.
 
 **Tipik kullanımları:**
 
--   Oluşturma veya uygulamanın parçaları yapılandırın. İş, araçları ve gösterimi geliştirmek için gereklidir. Sonuç, etki alanınıza daha iyi bir UML özelleştirme daha uygun olabilir.
--   Büyük projeler veya burada DSL ve araçlarını geliştirmeye yatırım tarafından döndürülen birden fazla proje kullanımını ürün serileri.
+- Oluşturma veya uygulamanın parçaları yapılandırın. İş, araçları ve gösterimi geliştirmek için gereklidir. Sonuç, etki alanınıza daha iyi bir UML özelleştirme daha uygun olabilir.
+- Büyük projeler veya burada DSL ve araçlarını geliştirmeye yatırım tarafından döndürülen birden fazla proje kullanımını ürün serileri.
 
 **Bkz:**
 
--   [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Visual Studio için Modelleme SDK'sı - Etki Alanına Özgü Diller](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>Daha fazla bilgiyi nereden bulabilirim?
 

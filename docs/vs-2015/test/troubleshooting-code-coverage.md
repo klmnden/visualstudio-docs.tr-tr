@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117414"
 ---
 # <a name="troubleshooting-code-coverage"></a>Kod Kapsamı Sorunlarını Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Visual Studio'daki kod kapsamı analiz aracı yerel ve yönetilen (.ddl veya .ex
 ### <a name="youre-looking-at-a-previous-result"></a>Bir önceki sonucu arıyorsunuz  
  Testleri değiştirdiğinizde ve yeniden çalıştırdığınızda bir önceki kod kapsamı sonucu eski çalıştırmadan kod renklendirme dahil görünebilir.  
   
-1.  Kod Kapsamı Çözümlemeyi Çalıştırın.  
+1. Kod Kapsamı Çözümlemeyi Çalıştırın.  
   
-2.  En son sonuç kümesini Kod Kapsamı sonuçları penceresinde seçtiğinizden emin olun.  
+2. En son sonuç kümesini Kod Kapsamı sonuçları penceresinde seçtiğinizden emin olun.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (simge) dosyaları kullanılamaz  
  Çözümleme  
@@ -107,17 +107,17 @@ Visual Studio'daki kod kapsamı analiz aracı yerel ve yönetilen (.ddl veya .ex
  Çözüm  
  Olası iki hata türü şunlardır:  
   
--   **XML hatası**  
+- **XML hatası**  
   
      .runsettings dosyasını Visual Studio XML düzenleyicisinde açın. Hata göstergelerine bakın.  
   
--   **Normal ifade hatası**  
+- **Normal ifade hatası**  
   
      Dosyadaki her dize bir düzenli ifadedir. Her birini hatalar için gözden geçirin ve bu belirtilen için bakın:  
   
-    -   Eşleşmeyen parantezler (...) ya da atlatılamayan parantezler \\(...) \\). Arama dizisinde parantezleri eşleştirmek istiyorsanız, atlatmak gerekir. Örneğin, bir işlevi kullanımı eşleştirmek için şunu yazın: `.*MyFunction\(double\)`  
+    - Eşleşmeyen parantezler (...) ya da atlatılamayan parantezler \\(...) \\). Arama dizisinde parantezleri eşleştirmek istiyorsanız, atlatmak gerekir. Örneğin, bir işlevi kullanımı eşleştirmek için şunu yazın: `.*MyFunction\(double\)`  
   
-    -   İfadenin başına yıldız veya artı koyun. Herhangi bir dizenin karakterlerini eşleştirmek için noktadan sonra yıldız kullanın: `.*`  
+    - İfadenin başına yıldız veya artı koyun. Herhangi bir dizenin karakterlerini eşleştirmek için noktadan sonra yıldız kullanın: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Yanlış istisnalarla özelleştirilmiş .runsettings dosyası  
  Çözümleme  

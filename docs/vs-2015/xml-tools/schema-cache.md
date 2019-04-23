@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115997"
 ---
 # <a name="schema-cache"></a>Şema Önbelleği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ XML Düzenleyicisi'ni %InstallRoot%\Xml\Schemas dizininde bulunan bir şema önb
 
 #### <a name="to-change-the-schema-cache-location"></a>Şema önbellek konumunu değiştirmek için  
 
-1.  Gelen **Araçları** menüsünde **seçenekleri**.  
+1. Gelen **Araçları** menüsünde **seçenekleri**.  
 
-2.  Genişletin **metin düzenleyici**, genişletme **XML**ve ardından **çeşitli**.  
+2. Genişletin **metin düzenleyici**, genişletme **XML**ve ardından **çeşitli**.  
 
-3.  Tıklayın **Gözat** düğmesini **şemaları** alan.  
+3. Tıklayın **Gözat** düğmesini **şemaları** alan.  
 
-4.  Şema önbelleği klasörü seçin ve tıklayın **Tamam**.  
+4. Şema önbelleği klasörü seçin ve tıklayın **Tamam**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Ortak şema başka bir dizin eklemek için  
 
-1.  XML Düzenleyicisi şema önbellek dizini catalog.xml dosyayı düzenleyin.  
+1. XML Düzenleyicisi şema önbellek dizini catalog.xml dosyayı düzenleyin.  
 
-2.  Yeni bir `<Catalog href="…"/>` ek şemaları dizinine işaret eden bir öğe.  
+2. Yeni bir `<Catalog href="…"/>` ek şemaları dizinine işaret eden bir öğe.  
 
-3.  Değişikliklerinizi kaydedin.  
+3. Değişikliklerinizi kaydedin.  
 
      Katalog otomatik olarak yüklenir.  
 

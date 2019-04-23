@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117550"
 ---
 # <a name="ribbon-xml"></a>Şerit XML
   Şerit (XML) öğesini Şerit XML kullanarak özelleştirmenize olanak sağlar. Şerit (Görsel Tasarımcı) öğesi tarafından desteklenmeyen bir biçimde Şerit özelleştirmek istiyorsanız Şerit (XML) öğesini kullanın. Her bir öğeyle neler yapabileceğinizi bir karşılaştırması için bkz [Şerite Genel Bakış](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602032"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Özel Şerit davranışını tanımlayın
  Oluşturarak Şeritte bir düğmeye tıklanması gibi kullanıcı eylemlerine yanıtlayabilir *geri çağırma yöntemleri*. Windows Forms denetimlerindeki olaylar geri çağırma yöntemleri benzer, ancak UI öğesinin bir öznitelik tarafından tanımlanır. Şerit sınıfında yöntemleri yazın ve bir denetim öznitelik değeri aynı ada sahip bir yöntemi çağırır. Örneğin, bir kullanıcı Şeritteki bir düğmeyi tıkladığında çağrılan bir geri çağırma yöntemi oluşturabilirsiniz. Bir geri çağırma yöntemi oluşturmak için iki adım gerekir:
 
--   Kodunuzda bir geri çağırma yöntemi tanımlayan Ribbon XML dosyasındaki bir denetim için bir öznitelik atayın.
+- Kodunuzda bir geri çağırma yöntemi tanımlayan Ribbon XML dosyasındaki bir denetim için bir öznitelik atayın.
 
--   Geri çağırma yöntemi, Şerit sınıfında tanımlayın.
+- Geri çağırma yöntemi, Şerit sınıfında tanımlayın.
 
 > [!NOTE]
 >  Outlook için ek bir adım gereklidir. Daha fazla bilgi için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602032"
 
  Farklı türlerde Şerit denetimleri atamak için geri çağırma yöntemleri vardır. Her denetim için geri çağırma yöntemleri tam listesi için teknik makaleye bakın [(Bölüm 3 / 3) geliştiriciler için Office (2007) Şerit kullanıcı arabirimini özelleştirme](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Geri Çağırma yöntemlerini tanımlamak
+### <a name="CallBackMethods"></a> Geri Çağırma yöntemlerini tanımlamak
  Şerit kod dosyasını Şerit sınıfında, geri çağırma yöntemleri tanımlar. Bir geri çağırma yöntemi, birkaç gereksinim vardır:
 
 - Bu genel olarak bildirilmelidir.
@@ -93,7 +93,7 @@ ms.locfileid: "56602032"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Şerit XML dosyası başvurusu
+## <a name="RibbonDescriptorFile"></a> Şerit XML dosyası başvurusu
  Şerit öğe ekleme ve öznitelikleri için Ribbon XML dosyasındaki tanımlayabilirsiniz. Varsayılan olarak, aşağıdaki XML Ribbon XML dosyasındaki içerir.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602032"
 
  Varsayılan öğeler ve öznitelikler Ribbon XML dosyasındaki kullanılabilen öznitelikleri ve öğeleri küçük alt kümesidir. Kullanılabilir öğeler ve öznitelikler tam listesi için teknik makaleye bakın [(Kısım 2 / 3) geliştiriciler için Office (2007) Şerit kullanıcı arabirimini özelleştirme](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Şerit sınıf başvurusu
+## <a name="RibbonExtensionClass"></a> Şerit sınıf başvurusu
  Visual Studio Şerit sınıfı Şerit kod dosyasını oluşturur. Bu sınıf için Şerit üzerindeki denetimleri için geri çağırma yöntemleri ekleyin. Bu sınıfın uyguladığı <xref:Microsoft.Office.Core.IRibbonExtensibility> arabirimi.
 
  Aşağıdaki tabloda, bu sınıf varsayılan yöntemleri açıklar.

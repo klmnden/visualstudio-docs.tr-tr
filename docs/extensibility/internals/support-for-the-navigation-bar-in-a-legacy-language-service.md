@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085941"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Gezinti Çubuğu için Destek
 Düzenleyici görünümü, üst gezinti çubuğunda, türler ve üyeler dosyayı görüntüler. Türleri sol açılan menü gösterilir ve üyeleri sağındaki açılan gösterilir. Kullanıcı türü seçtiğinde kelimeyi ilk satırın türü yerleştirilir. Kullanıcı bir üye seçtiğinde, giriş işaretini üyenin tanımını yerleştirilir. Açılan kutu, geçerli giriş işareti konumunu gösterecek şekilde güncelleştirilir.
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   Uygulanışı <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi genellikle aşağıdaki adımları gerçekleştirir:
 
-1.  Kaynak dosyası için geçerli bildirimleri bir listesini alın.
+1. Kaynak dosyası için geçerli bildirimleri bir listesini alın.
 
      Çeşitli yollarla listelerini doldurmak için vardır. Bir yaklaşım ise özel bir yönteme sürümünüze oluşturmak için <xref:Microsoft.VisualStudio.Package.LanguageService> çağıran sınıfı <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi bir özel ayrıştırma sebeple tüm bildirimleri listesini döndürür. Çağırmak için başka bir yaklaşım olabilir <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> yöntemi doğrudan <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> özel ayrıştırma nedeni yöntemi. Bildirimler önbelleğe almak için üçüncü bir yaklaşım olabilir <xref:Microsoft.VisualStudio.Package.AuthoringScope> son tam ayrıştırma işlemi tarafından döndürülen sınıfı <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı ve buradan almak <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi.
 
-2.  Doldurmak veya türlerinin listesi güncelleştirilemiyor.
+2. Doldurmak veya türlerinin listesi güncelleştirilemiyor.
 
      Kaynak değiştiğinde veya geçerli giriş işareti konumuna bağlı türleri metin stilini değiştirme seçtiyseniz güncelleştirilmesini türleri listesi içeriğini olabilir. Bu konum için geçirilen Not <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> yöntemi.
 
-3.  Geçerli giriş işareti konumuna bağlı türleri listesinde seçilecek türünü belirleyin.
+3. Geçerli giriş işareti konumuna bağlı türleri listesinde seçilecek türünü belirleyin.
 
      Geçerli giriş işareti konumunu kapsayan türü bulmak için 1. adımda edinilen bildirimleri arayın ve sonra da türüne türlerini listesine dizinini belirlemek türler listesinde arama yapın.
 
-4.  Doldurmak veya seçilen türe göre üye listesini güncelleştirin.
+4. Doldurmak veya seçilen türe göre üye listesini güncelleştirin.
 
      Üye listesi içinde görüntülenenleri yansıtır **üyeleri** açılır. Üye listesi içeriğini kaynak değiştiyse veya yalnızca seçili türün üyeleri görüntülediğiniz ve seçili türünü değiştirdi güncelleştirilmesi gerekebilir. Kaynak dosyadaki tüm üyelerini görüntülemeyi seçerseniz, listedeki her bir üyesinin metin stili oluşturma, şu anda seçili türün değiştiyse güncelleştirilmesi gerekir.
 
-5.  Geçerli giriş işareti konumuna bağlı üye listesi seçmek için üye belirleyin.
+5. Geçerli giriş işareti konumuna bağlı üye listesi seçmek için üye belirleyin.
 
      Edinilen bildirimleri geçerli giriş işareti konumunu içeren bir üye için 1. adımda arayın ve ardından üye listesinde üye listesine dizinini belirlemek bu üye için arama yapın.
 
-6.  Dönüş `true` listeleri ya da her iki listesinden seçim için herhangi bir değişiklik yapılmadıysa.
+6. Dönüş `true` listeleri ya da her iki listesinden seçim için herhangi bir değişiklik yapılmadıysa.

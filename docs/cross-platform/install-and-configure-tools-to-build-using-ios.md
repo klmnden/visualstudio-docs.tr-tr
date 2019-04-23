@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58897588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114717"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Yükleme ve yapılandırma araçları kullanarak iOS oluşturmak için
 
@@ -66,13 +66,13 @@ Yüklediğinizde ve uzak aracı iOS için kod geliştirme için önce şu önko�
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> İOS için Uzak aracı yükleme
+## <a name="Install"></a> İOS için Uzak aracı yükleme
 
 Platformlar arası Mobil Geliştirme için Visual C++'ı yüklediğinizde Visual Studio ile iletişim kurabilir [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), dosya aktarımı, oluşturun ve iOS uygulamanızı çalıştırma Mac'inizde çalıştıran uzak bir aracı ve hata ayıklama komutları gönderme.
 
 Uzak Aracı yüklemeden önce memnun emin [önkoşulları](#prerequisites) yüklenip [platformlar arası Mobil Geliştirme için Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
-###  <a name="DownloadInstall"></a> Uzak aracısını indirme ve yükleme için
+### <a name="DownloadInstall"></a> Uzak aracısını indirme ve yükleme için
 
 - Mac Terminal uygulamadan girin:
 
@@ -87,11 +87,11 @@ Uzak Aracı yüklemeden önce memnun emin [önkoşulları](#prerequisites) yükl
 
 Visual Studio'nun yeni bir sürüme güncelleştirmek, uzak aracı de geçerli sürüme güncelleştirmeniz gerekir. Uzak Aracı güncelleştirmek için Uzak aracısını indirme ve yükleme adımları yineleyin.
 
-##  <a name="Start"></a> Uzak Aracı Başlat
+## <a name="Start"></a> Uzak Aracı Başlat
 
 Derleme ve iOS kodunuzu çalıştırmak Visual Studio için Uzak Aracı'nın çalışıyor olması gerekir. Bu iletişim kurabilmesi, visual Studio uzak aracı ile eşleştirilmelidir. Varsayılan olarak, uzak aracı Visual Studio ile eşleştirme için PIN gerektiren güvenli bir bağlantı modunda çalışır.
 
-###  <a name="RemoteAgentStartServer"></a> Uzak Aracı başlatmak için
+### <a name="RemoteAgentStartServer"></a> Uzak Aracı başlatmak için
 
 - Mac Terminal uygulamadan girin:
 
@@ -127,7 +127,7 @@ Uzak Aracı başlattıktan sonra siz durduruncaya kadar bunu Visual Studio'dan k
 
 - Terminal penceresinde vcremote çalışıyor, girin **denetimi**+**C**.
 
-##  <a name="ConfigureVS"></a> Visual Studio'da uzak aracı yapılandırma
+## <a name="ConfigureVS"></a> Visual Studio'da uzak aracı yapılandırma
 
 Visual Studio'dan uzak aracıya bağlanmak için Visual Studio seçenekleri Uzaktan yapılandırma belirtmeniz gerekir.
 
@@ -164,7 +164,7 @@ Visual Studio'dan uzak aracıya bağlanmak için Visual Studio seçenekleri Uzak
 
 Visual Studio Mac bilgisayarınızda uzak aracı her kullanışınızda bağlanmak için bilgilerin aynısını kullanır. Visual Studio ile eşleştirme uzak aracı ile yeniden Mac'inizde yeni bir güvenlik sertifikası oluşturmak ya da kendi ana bilgisayar adı veya IP adresi değişiklikleri sürece ihtiyacınız yoktur.
 
-##  <a name="GeneratePIN"></a> Yeni bir güvenlik PIN'i oluştur
+## <a name="GeneratePIN"></a> Yeni bir güvenlik PIN'i oluştur
 
 Oluşturulmuş bir PIN, uzak aracı ilk kez başlattığınızda, sınırlı bir süre için geçerlidir — varsayılan olarak, 10 dakika. Süresi sona ermeden önce Visual Studio için Uzak Aracı eşleştirilmemiş, yeni bir PIN oluşturmak ihtiyacınız olacak.
 
@@ -178,7 +178,7 @@ Oluşturulmuş bir PIN, uzak aracı ilk kez başlattığınızda, sınırlı bir
 
    Uzak Aracı yeni bir geçici PIN oluşturur. Yeni PIN kullanarak Visual Studio eşleşmesine izin adımlarını yineleyin [Visual Studio'da uzak aracı yapılandırma](#ConfigureVS).
 
-##  <a name="GenerateCert"></a> Yeni bir sunucu sertifikası oluşturma
+## <a name="GenerateCert"></a> Yeni bir sunucu sertifikası oluşturma
 
 Güvenlik nedeniyle, sunucunun IP adresi veya ana bilgisayar adını, Mac için Visual Studio ile uzak aracı işletim sistemi bu çiftin sertifikaları Bu değerleri değiştirirseniz, yeni bir sunucu sertifikası oluşturma ve sonra Visual Studio yeni değerlerle yeniden yapılandırmanız gerekir.
 
@@ -200,7 +200,7 @@ Güvenlik nedeniyle, sunucunun IP adresi veya ana bilgisayar adını, Mac için 
 
 1. Yeni PIN kullanarak Visual Studio eşleşmesine izin adımlarını yineleyin [Visual Studio'da uzak aracı yapılandırma](#ConfigureVS).
 
-##  <a name="ConfigureMac"></a> Mac'te uzak aracı yapılandırma
+## <a name="ConfigureMac"></a> Mac'te uzak aracı yapılandırma
 
 Çeşitli komut satırı seçeneklerini kullanarak uzak aracı yapılandırabilirsiniz. Örneğin, dosya sisteminde korumak için derleme sayısının üst sınırı belirtin ve yapı isteklerini dinlemek için bağlantı noktası belirtebilirsiniz. Varsayılan olarak, 10 derlemeleri bir sınırdır. Uzak Aracı kapatma sırasında en yüksek süreyi aşmasına derlemeleri kaldırır.
 

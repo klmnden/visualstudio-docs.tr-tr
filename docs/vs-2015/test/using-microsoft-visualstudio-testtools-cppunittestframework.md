@@ -8,12 +8,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4315e4008c3a4f14e8d9124da5d7ff83c8275a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02b33bfbb0e7de3007de9e36691fa1524f69b21b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117804"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,18 +24,18 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
   
  LIB dosyaları bulunan _[x 86] VisualStudio2012 InstallFolder_**\VC\UnitTest\lib** klasör.  
   
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
+## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
 - [Test sınıflar ve yöntemler oluşturma](#BKMK_Create_test_classes_and_methods)  
   
 - [Başlatma ve temizleme](#BKMK_Initialize_and_cleanup)  
   
-  -   [Test yöntemleri](#BKMK_Test_methods)  
+  - [Test yöntemleri](#BKMK_Test_methods)  
   
-  -   [Test sınıfları](#BKMK_Test_classes)  
+  - [Test sınıfları](#BKMK_Test_classes)  
   
-  -   [Test modülleri](#BKMK_Test_modules)  
+  - [Test modülleri](#BKMK_Test_modules)  
   
 - [Test öznitelikleri oluşturma](#BKMK_Create_test_attributes)  
   
@@ -51,37 +51,37 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
   
   - [Genel onaylar](#BKMK_General_Asserts)  
   
-    -   [Eşit](#BKMK_General_Are_Equal)  
+    - [Eşit](#BKMK_General_Are_Equal)  
   
-    -   [Eşit değildir](#BKMK_General_Are_Not_Equal)  
+    - [Eşit değildir](#BKMK_General_Are_Not_Equal)  
   
-    -   [Aynı](#BKMK_General_Are_Same)  
+    - [Aynı](#BKMK_General_Are_Same)  
   
-    -   [Aynı değil](#BKMK_General_Are_Not_Same)  
+    - [Aynı değil](#BKMK_General_Are_Not_Same)  
   
-    -   [Null](#BKMK_General_Is_Null)  
+    - [Null](#BKMK_General_Is_Null)  
   
-    -   [Null değil](#BKMK_General_Is_Not_Null)  
+    - [Null değil](#BKMK_General_Is_Not_Null)  
   
-    -   [Geçerlidir](#BKMK_General_Is_True)  
+    - [Geçerlidir](#BKMK_General_Is_True)  
   
-    -   [Yanlış](#BKMK_General_Is_False)  
+    - [Yanlış](#BKMK_General_Is_False)  
   
-    -   [Başarısız](#BKMK_General_Fail)  
+    - [Başarısız](#BKMK_General_Fail)  
   
   - [Windows çalışma zamanı onaylar](#BKMK_WinRT_Asserts)  
   
-    -   [Eşit](#BKMK_WinRT_Are_Equal)  
+    - [Eşit](#BKMK_WinRT_Are_Equal)  
   
-    -   [Aynı](#BKMK_WinRT_Are_Same)  
+    - [Aynı](#BKMK_WinRT_Are_Same)  
   
-    -   [Eşit değildir](#BKMK_WinRT_Are_Not_Equal)  
+    - [Eşit değildir](#BKMK_WinRT_Are_Not_Equal)  
   
-    -   [Aynı değil](#BKMK_WinRT_Are_Not_Same)  
+    - [Aynı değil](#BKMK_WinRT_Are_Not_Same)  
   
-    -   [Null](#BKMK_WinRT_Is_Null)  
+    - [Null](#BKMK_WinRT_Is_Null)  
   
-    -   [Null değil](#BKMK_WinRT_Is_Not_Null)  
+    - [Null değil](#BKMK_WinRT_Is_Not_Null)  
   
   - [Özel durum onaylar](#BKMK_Exception_Asserts)  
   
@@ -93,9 +93,9 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
   
     - [İleti Yaz](#BKMK_Write_Message)  
   
-##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
+## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   
-###  <a name="BKMK_Create_test_classes_and_methods"></a> Test sınıflar ve yöntemler oluşturma  
+### <a name="BKMK_Create_test_classes_and_methods"></a> Test sınıflar ve yöntemler oluşturma  
   
 ```cpp  
 TEST_CLASS(className)  
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
   
  Tanımlar *methodName* bir test yöntemi olarak. `TEST_METHOD` yöntemin sınıf kapsamı içinde bildirilmesi gerekir.  
   
-###  <a name="BKMK_Initialize_and_cleanup"></a> Başlatma ve temizleme  
+### <a name="BKMK_Initialize_and_cleanup"></a> Başlatma ve temizleme  
   
-####  <a name="BKMK_Test_methods"></a> Test yöntemleri  
+#### <a name="BKMK_Test_methods"></a> Test yöntemleri  
   
 ```cpp  
 TEST_METHOD_INITIALIZE(methodName)   
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
   
  Tanımlar *methodName* her test yönteminin çalıştırdıktan sonra çalıştırılan bir yöntem olarak. `TEST_METHOD_CLEANUP` yalnızca bir kez bir test sınıfında tanımlanabilir ve test sınıfı kapsamında tanımlanmış olması gerekir.  
   
-####  <a name="BKMK_Test_classes"></a> Test sınıfları  
+#### <a name="BKMK_Test_classes"></a> Test sınıfları  
   
 ```cpp  
 TEST_CLASS_INITIALIZE(methodName)   
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
   
  Tanımlar *methodName* her test sınıfı oluşturulduktan sonra çalıştırılan bir yöntem olarak. `TEST_CLASS_CLEANUP` yalnızca bir kez bir test sınıfında tanımlanabilir ve test sınıfı kapsamında tanımlanmış olması gerekir.  
   
-####  <a name="BKMK_Test_modules"></a> Test modülleri  
+#### <a name="BKMK_Test_modules"></a> Test modülleri  
   
 ```cpp  
 TEST_MODULE_INITIALIZE(methodName)  
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
   
  Yöntemi tanımlar *methodName* bir modül kaldırıldığında çalışır. `TEST_MODULE_CLEANUP` yalnızca bir kez bir test modülde tanımlanabilir ve ad uzayı kapsamında bildirilmesi gerekir.  
   
-###  <a name="BKMK_Create_test_attributes"></a> Test öznitelikleri oluşturma  
+### <a name="BKMK_Create_test_attributes"></a> Test öznitelikleri oluşturma  
   
-####  <a name="BKMK_Test_method_attributes"></a> Test yöntemi öznitelikleri  
+#### <a name="BKMK_Test_method_attributes"></a> Test yöntemi öznitelikleri  
   
 ```cpp  
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)   
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
   
  A `TEST_METHOD_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.  
   
-####  <a name="BKMK_Test_class_attributes"></a> Test sınıfı öznitelikler  
+#### <a name="BKMK_Test_class_attributes"></a> Test sınıfı öznitelikler  
   
 ```cpp  
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)   
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
   
  A `TEST_CLASS_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.  
   
-####  <a name="BKMK_Test_module_attributes"></a> Test modül öznitelikleri  
+#### <a name="BKMK_Test_module_attributes"></a> Test modül öznitelikleri  
   
 ```cpp  
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)   
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
   
  A `TEST_MODULE_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.  
   
-####  <a name="BKMK_Pre_defined_attributes"></a> Önceden tanımlı öznitelikleri  
+#### <a name="BKMK_Pre_defined_attributes"></a> Önceden tanımlı öznitelikleri  
  Bu önceden tanımlı öznitelik makroları makroları yerine kullanılabileceği `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE`, veya `TEST_MODULE_ATTRIBUTE` yukarıda açıklanan.  
   
 ```cpp  
@@ -250,11 +250,11 @@ TEST_IGNORE()
   
  Bu ada sahip bir öznitelik tanımlar `Ignore` ve öznitelik değeri `true`.  
   
-##  <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
+## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
   
-###  <a name="BKMK_General_Asserts"></a> Genel onaylar  
+### <a name="BKMK_General_Asserts"></a> Genel onaylar  
   
-####  <a name="BKMK_General_Are_Equal"></a> Eşit  
+#### <a name="BKMK_General_Are_Equal"></a> Eşit  
  İki nesnenin eşit olup olmadığını doğrulayın  
   
 ```cpp  
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Equal"></a> Eşit değildir  
+#### <a name="BKMK_General_Are_Not_Equal"></a> Eşit değildir  
  İki çiftten eşit olmadığını doğrulayın  
   
 ```cpp  
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Same"></a> Aynı  
+#### <a name="BKMK_General_Are_Same"></a> Aynı  
  İki başvurunun aynı nesne örneği (kimlik) başvurduğunu doğrulayın.  
   
 ```cpp  
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Same"></a> Aynı değil  
+#### <a name="BKMK_General_Are_Not_Same"></a> Aynı değil  
  Aynı nesne örneği (kimlik) başvurmamasını iki başvuru doğrulayın.  
   
 ```cpp  
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Null"></a> Null  
+#### <a name="BKMK_General_Is_Null"></a> Null  
  Bir işaretçi NULL olduğundan emin olun.  
   
 ```cpp  
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Not_Null"></a> Null değil  
+#### <a name="BKMK_General_Is_Not_Null"></a> Null değil  
  Bir işaretçi NULL olmadığından emin olun  
   
 ```cpp  
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_True"></a> Geçerlidir  
+#### <a name="BKMK_General_Is_True"></a> Geçerlidir  
  Bir koşul doğru olduğundan emin olun  
   
 ```cpp  
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_False"></a> Yanlış  
+#### <a name="BKMK_General_Is_False"></a> Yanlış  
  Bir koşul false olduğundan emin olun  
   
 ```cpp  
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Fail"></a> Başarısız  
+#### <a name="BKMK_General_Fail"></a> Başarısız  
  Test çalışması sonucu başarısız olarak zorla  
   
 ```cpp  
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-###  <a name="BKMK_WinRT_Asserts"></a> Windows çalışma zamanı onaylar  
+### <a name="BKMK_WinRT_Asserts"></a> Windows çalışma zamanı onaylar  
   
-####  <a name="BKMK_WinRT_Are_Equal"></a> Eşit  
+#### <a name="BKMK_WinRT_Are_Equal"></a> Eşit  
  İki Windows çalışma zamanı işaretçileri eşit olduğunu doğrular.  
   
 ```  
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Same"></a> Aynı  
+#### <a name="BKMK_WinRT_Are_Same"></a> Aynı  
  İki Windows Runtime başvuru aynı nesneye referans gösterdiğini doğrular.  
   
 ```  
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Equal"></a> Eşit değildir  
+#### <a name="BKMK_WinRT_Are_Not_Equal"></a> Eşit değildir  
  İki Windows çalışma zamanı işaretçileri eşit olmadığını doğrular.  
   
 ```  
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Same"></a> Aynı değil  
+#### <a name="BKMK_WinRT_Are_Not_Same"></a> Aynı değil  
  İki Windows Runtime başvuru aynı nesneye başvurma doğrular.  
   
 ```  
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Null"></a> Null  
+#### <a name="BKMK_WinRT_Is_Null"></a> Null  
  Bir Windows çalışma zamanı işaretçi bir nullptr olduğunu doğrular.  
   
 ```  
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Not_Null"></a> Null değil  
+#### <a name="BKMK_WinRT_Is_Not_Null"></a> Null değil  
  Bir Windows çalışma zamanı işaretçi bir nullptr olmadığını doğrular.  
   
 ```  
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-###  <a name="BKMK_Exception_Asserts"></a> Özel durum onaylar  
+### <a name="BKMK_Exception_Asserts"></a> Özel durum onaylar  
   
-####  <a name="BKMK_Expect_Exception"></a> Özel durum beklediğiniz  
+#### <a name="BKMK_Expect_Exception"></a> Özel durum beklediğiniz  
  Bir işlev özel durum harekete doğrulayın:  
   
 ```  
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-##  <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
+## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
   
-###  <a name="BKMK_Logger"></a> Günlükçü  
+### <a name="BKMK_Logger"></a> Günlükçü  
  Günlükçü sınıf yazmak için statik yöntemler içerir.  
   
 ```  
 class Logger  
 ```  
   
-###  <a name="BKMK_Write_Message"></a> İleti Yaz  
+### <a name="BKMK_Write_Message"></a> İleti Yaz  
   
 ```  
 static void   

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9b31859d677ab69108ad5e2681890a8c4a88f854
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111889"
 ---
 # <a name="set-up-remote-workspaces"></a>Uzak çalışma alanlarını ayarlayın
 
@@ -96,14 +96,19 @@ Kendiniz otomatik olarak imzalanan bir sertifika vermek için:
 
 1. SSH veya Linux makinenizde oturum açın.
 2. Yükleme `ssl-cert` paket:
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. Çalıştırma `make-ssl-cert` varsayılan otomatik olarak imzalanan SSL sertifikasını oluşturmak için:
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. PEM dosyaları ve oluşturulan anahtarı PFX dosyasına dönüştürün. Oluşturulan PFX giriş klasörünüzde olmalıdır:
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```

@@ -11,12 +11,12 @@ ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 39dc13c1cc1960b0b5cad6c88b2617ea326e7875
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1b45b3876872ec181d2243b810b15ab860672a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089243"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>Anahtar İfade Değerlendiricisi Arabirimleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,33 +28,33 @@ ms.locfileid: "54781359"
   
 ## <a name="interface-descriptions"></a>Arabirimi açıklamaları  
   
--   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
      Tek bir yöntemi, [GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md), geçerli yürütme noktasını temsil eder, veri yapısını alır. Hata ayıklama altyapısı (DE) geçirir üç bağımsız değişken, bu veri yapısını biridir [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) bir ifadeyi değerlendirmek için yöntemi. Bu arabirim, genellikle sembol sağlayıcısı tarafından uygulanır.  
   
--   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
      Sahip [bağlama](../../extensibility/debugger/reference/idebugbinder-bind.md) yöntemi bir simge geçerli değerini içeren bellek alanını alır. Tarafından temsil edilen her iki içeren yöntem, verilen bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) nesnesi ve tarafından temsil edilen simgenin kendisine bir [IDebugField](../../extensibility/debugger/reference/idebugfield.md) nesnesi `IDebugBinder::Bind` sembolün değerini döndürür. `IDebugBinder` Genel DE uygulanır.  
   
--   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
+- [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
      Basit veri türünü temsil eder. Diziler ve yöntemler gibi daha karmaşık türler kullanmak türetilmiş [IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md) ve [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) arabirimleri, sırasıyla. [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) yöntemleri veya sınıfları gibi diğer semboller içeren sembolleri temsil eden başka bir önemli türetilmiş arabirimidir. `IDebugField` Arabirimi (ve CIM'in) sembol sağlayıcısı tarafından uygulanan genellikle.  
   
      Bir `IDebugField` nesne bir simgenin türünü ve adını bulmak için kullanılan ve, birlikte olabilir bir [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) nesne, değerini bulmak için kullanılabilir.  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
      Gerçek bitlik bir simgenin çalışma zamanı değerini temsil eder. [Bağlama](../../extensibility/debugger/reference/idebugbinder-bind.md) götüren bir [IDebugField](../../extensibility/debugger/reference/idebugfield.md) temsil eden bir simge ve döndüren bir nesne bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) nesne. [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md) yöntemi, bir bellek arabellek sembolün değerini döndürür. Bir DE genellikle bellekte bir özelliğin değerini temsil etmek için bu arabirimi uygular.  
   
--   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
+- [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
      Bu arabirim, ifade değerlendiricisi temsil eder. Anahtar yöntemi [ayrıştırma](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md), döndüren bir [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) arabirimi.  
   
--   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
+- [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
      Bu arabirim, değerlendirilecek hazır ayrıştırılmış bir ifade temsil eder. Anahtar yöntemi [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) IDebugProperty2 bir ifadenin türü ve değeri temsil eden döndürür.  
   
--   [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)  
+- [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)  
   
      Bu arabirim, değer ve türünü temsil eder ve bir ifade değerlendirme sonucu.  
   

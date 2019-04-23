@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115165"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile çalıştırma işlemleri iliştirme
 Visual Studio hata ayıklayıcı bir yerel veya uzak bilgisayarda çalışan bir işleme ekleyebilirsiniz. İşlem çalışmaya başladıktan sonra seçin **hata ayıklama** > **iliştirme** veya basın **Ctrl**+**Alt** + **P** Visual Studio ve kullanım **iliştirme** işleme hata ayıklayıcı için iletişim kutusu.
@@ -43,7 +43,7 @@ Kullanabileceğiniz **iliştirme** yerel veya uzak bilgisayarlarda çalışan uy
 > [!TIP]
 > Emin değilim kullanıp kullanmayacağınızı **iliştirme** hata ayıklama senaryonuz için? Bkz: [yaygın hata ayıklama senaryoları](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Yerel makinenizde çalışan bir işleme iliştirin
+## <a name="BKMK_Attach_to_a_running_process"></a> Yerel makinenizde çalışan bir işleme iliştirin
 
 Hızlı bir şekilde bağlı için daha önce bir İliştir için bkz: [bir İliştir](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Uzak bilgisayarda bir işlemde hata ayıklamak için bkz: [uzak bilgisayardaki b
 >[!NOTE]
 >Hata ayıklama için birden fazla uygulama için bağlı, ancak bir kerede yalnızca bir uygulama hata ayıklayıcıda etkin olur. Visual Studio'da etkin uygulaması ayarlayabilirsiniz **hata ayıklama konumu** araç veya **işlemleri** penceresi.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Uzak bilgisayardaki bir işleme ekleme
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Uzak bilgisayardaki bir işleme ekleme
 
 Uzak bir bilgisayarda da seçebilirsiniz **iliştirme** iletişim kutusunda, bu bilgisayar üzerinde çalışan kullanılabilir süreçlerin listesini görüntüleyebilir ve bir veya daha fazla hata ayıklama için ekleyebilirsiniz. Uzaktan hata ayıklayıcı (*msvsmon.exe*) uzak bilgisayar üzerinde çalışıyor olması gerekir. Daha fazla bilgi için [uzaktan hata ayıklama](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ Uzaktan hata ayıklama senaryoları için Visual Studio'da açık kaynak kodu (v
 
 Uygulamayı doğru sembol dosyaları varsa bazı yerel hata ayıklama senaryolarında, Visual Studio'da kaynağına erişimi olmayan hata ayıklaması yapabilirsiniz. Varsayılan olarak, bu hata ayıklama derlemesi gerektirir. Daha fazla bilgi için [sembol ve kaynak dosyaları belirtme](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Sorun giderme hataları iliştirme
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Sorun giderme hataları iliştirme
  Çalışan bir işleme hata ayıklayıcı ekler, işlemi bir veya daha fazla kod türlerini içerebilir. Hata ayıklayıcının iliştirebileceği kod türleri görüntülenir ve seçili **kod türünü seç** iletişim kutusu.
 
  Bazen, hata ayıklayıcı başarıyla bir kod türüne, ancak başka bir kod türüne ekleyebilirsiniz. Uzak bir bilgisayarda çalışan bir işlem eklemeye çalışıyorsanız, bu durum oluşabilir. Uzak bilgisayarda uzaktan hata ayıklama bileşenleri belirli kod türleri için kullanılabilir ancak diğerleri yüklü olabilir. Doğrudan veritabanı hata ayıklamaya iki veya daha fazla işlem eklemeye çalışırsanız da meydana gelebilir. SQL hata ayıklama için yalnızca tek bir işlem eklemeyi destekler.
@@ -199,19 +199,19 @@ Uygulamayı doğru sembol dosyaları varsa bazı yerel hata ayıklama senaryolar
 
  **Neden bir kod türü eklemenin başarısız hakkında ayrıntılı bilgi edinmek için:**
 
-1.  İşlemden ayırın. Üzerinde **hata ayıklama** menüsünde **tümünü Ayır**.
+1. İşlemden ayırın. Üzerinde **hata ayıklama** menüsünde **tümünü Ayır**.
 
-1.  Eklenemeye kod türü seçerek işleme yeniden bağlayın.
+1. Eklenemeye kod türü seçerek işleme yeniden bağlayın.
 
-    1.  İçinde **iliştirme** iletişim kutusunda, işlemi seçin **kullanılabilir işlemler** listesi.
+    1. İçinde **iliştirme** iletişim kutusunda, işlemi seçin **kullanılabilir işlemler** listesi.
 
-    2.  Seçin **seçin**.
+    2. Seçin **seçin**.
 
-    3.  İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama** ve eklenemeye kod türü. Diğer kod türleri seçimini kaldırın.
+    3. İçinde **kod türünü seç** Seç iletişim kutusunda **bu tür kodlarda hata ayıklama** ve eklenemeye kod türü. Diğer kod türleri seçimini kaldırın.
 
-    4.  Seçin **Tamam**.
+    4. Seçin **Tamam**.
 
-    5.  İçinde **iliştirme** iletişim kutusunda **iliştirme**.
+    5. İçinde **iliştirme** iletişim kutusunda **iliştirme**.
 
     Bu kez, iliştirme tümüyle başarısız olur ve belirli bir hata iletisi alırsınız.
 

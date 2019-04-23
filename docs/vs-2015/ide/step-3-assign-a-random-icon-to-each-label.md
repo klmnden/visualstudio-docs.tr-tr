@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085993"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>3. Adım: Her Etikete Rastgele Bir Simge Atama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
   
 ### <a name="to-assign-a-random-icon-to-each-label"></a>Her etikete rasgele bir simge atamak için  
   
-1.  Aşağıdaki kodu eklemeden önce yöntemin nasıl çalıştığını düşünün. Yeni bir anahtar sözcük yoktur: `foreach` Visual C# ve `For Each` Visual Basic'te. (Satırlardan biri bilerek derleme dışı bırakılmıştır; bunun nedeni bu yordamın sonunda açıklanmaktadır.)  
+1. Aşağıdaki kodu eklemeden önce yöntemin nasıl çalıştığını düşünün. Yeni bir anahtar sözcük yoktur: `foreach` Visual C# ve `For Each` Visual Basic'te. (Satırlardan biri bilerek derleme dışı bırakılmıştır; bunun nedeni bu yordamın sonunda açıklanmaktadır.)  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#2)]  
   
-2.  Ekleme `AssignIconsToSquares()` önceki adımda gösterildiği yöntemi. Eklediğiniz kodun hemen altına koyabilirsiniz [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+2. Ekleme `AssignIconsToSquares()` önceki adımda gösterildiği yöntemi. Eklediğiniz kodun hemen altına koyabilirsiniz [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
      Daha önce bahsedildiği gibi var. yeni bir öğe, `AssignIconsToSquares()` yöntemi: bir `foreach` döngü Visual C# ve `For Each` Visual Basic'te. Kullanabileceğiniz bir `For Each` döngü aynı eylemi birden çok kez yapmak istediğiniz zaman. Bu durumda, aşağıdaki kod ile açıklandığı gibi, TableLayoutPanel denetiminizdeki her öğe için aynı deyimleri yürütmek istiyorsunuz. İlk satırı adında bir değişken oluşturur `control` , her denetimi birer birer denetim üzerinde yürütülen Döngüdeki deyimler olduğunu depolar.  
   
@@ -49,7 +49,7 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
   
      Kodun belirli bir bölümünün ne işe yaradığından emin olamadığınızda, fare işaretçisini kod öğesinin üzerine getirip ortaya çıkan araç ipucunu gözden geçirebileceğinizi unutmayın. Ayrıca, Visual Studio hata ayıklayıcısını kullanarak, program çalışırken kodun her satırını adım adım geçebilirsiniz. Bkz: [nasıl yaparım? Visual Studio hata ayıklayıcı ile adım? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) veya [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md) daha fazla bilgi için.  
   
-3.  Oyun tahtasını simgelerle doldurmak için çağrılacak ihtiyacınız `AssignIconsToSquares()` program başlar başlamaz yöntemi. Visual C# kullanıyorsanız, yalnızca çağrının altına bir deyim ekleyin `InitializeComponent()` yönteminde `Form1` *Oluşturucusu*, böylece formunuz gösterilmeden önce kendini ayarlamak için yeni yönteminizi çağırır. Oluşturucular, sınıf veya yapı gibi yeni bir nesne oluşturduğunuzda çağrılır. Bkz: [oluşturucular (C# programlama Kılavuzu)](http://msdn.microsoft.com/library/ace5hbzh.aspx) veya [oluşturucuları ve yıkıcıları kullanma](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) daha fazla bilgi için Visual Basic'te.  
+3. Oyun tahtasını simgelerle doldurmak için çağrılacak ihtiyacınız `AssignIconsToSquares()` program başlar başlamaz yöntemi. Visual C# kullanıyorsanız, yalnızca çağrının altına bir deyim ekleyin `InitializeComponent()` yönteminde `Form1` *Oluşturucusu*, böylece formunuz gösterilmeden önce kendini ayarlamak için yeni yönteminizi çağırır. Oluşturucular, sınıf veya yapı gibi yeni bir nesne oluşturduğunuzda çağrılır. Bkz: [oluşturucular (C# programlama Kılavuzu)](http://msdn.microsoft.com/library/ace5hbzh.aspx) veya [oluşturucuları ve yıkıcıları kullanma](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) daha fazla bilgi için Visual Basic'te.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   
@@ -61,9 +61,9 @@ Simgeler her oyunda aynı hücrelerde gösterilirse, oyun pek de zorlu olmaz. Bu
     End Sub  
     ```  
   
-4.  Programınızı kaydedip çalıştırın. Her etikete rasgele simgelerin atandığı bir form gösterilmesi gerekir.  
+4. Programınızı kaydedip çalıştırın. Her etikete rasgele simgelerin atandığı bir form gösterilmesi gerekir.  
   
-5.  Programınızı kapatın ve yeniden çalıştırın. Aşağıdaki resimde gösterildiği gibi, her etikete farklı simgeler atandığına dikkat edin.  
+5. Programınızı kapatın ve yeniden çalıştırın. Aşağıdaki resimde gösterildiği gibi, her etikete farklı simgeler atandığına dikkat edin.  
   
      ![Eşleştirme oyunu rasgele simgeleri içeren](../ide/media/express-tut4step3.png "Express_Tut4Step3")  
 Rasgele simgeleri içeren eşleştirme oyunu  
@@ -73,15 +73,15 @@ Rasgele simgeleri içeren eşleştirme oyunu
     > [!TIP]
     >  Etiket gibi denetimleri gizlemenin bir diğer yolu ayarlamaktır kendi **görünür** özelliğini `False`.  
   
-6.  Simgeleri gizlemek için kod içinde derleme dışı bırakılan satırı açıklama işaretlerini kaldırın ve programı durdurmak `For Each` döngü.  
+6. Simgeleri gizlemek için kod içinde derleme dışı bırakılan satırı açıklama işaretlerini kaldırın ve programı durdurmak `For Each` döngü.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#15](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#15)]
      [!code-vb[VbExpressTutorial4Step2_3_4#15](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#15)]  
   
-7.  Menü çubuğunda, **Tümünü Kaydet** programınızı kaydetmek için düğmesini ve ardından çalıştırın. Simgelerin kaybolduğu görülür ve yalnızca mavi bir arka plan görüntülenir. Bununla birlikte simgeler rasgele atanırlar ve halen oradadırlar. Simgeler arka plan ile aynı renkte olduğundan, oyuncudan gizlenmiş olurlar. Sonuçta, oyuncu simgelerin tümünü doğrudan görebilseydi hiç de zorlayıcı bir oyun olmazdı!  
+7. Menü çubuğunda, **Tümünü Kaydet** programınızı kaydetmek için düğmesini ve ardından çalıştırın. Simgelerin kaybolduğu görülür ve yalnızca mavi bir arka plan görüntülenir. Bununla birlikte simgeler rasgele atanırlar ve halen oradadırlar. Simgeler arka plan ile aynı renkte olduğundan, oyuncudan gizlenmiş olurlar. Sonuçta, oyuncu simgelerin tümünü doğrudan görebilseydi hiç de zorlayıcı bir oyun olmazdı!  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [4. adım: Her etikete Click olay işleyicisi ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
+- Sonraki öğretici adımına gitmek için bkz: [4. adım: Her etikete Click olay işleyicisi ekleme](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Önceki öğretici adımına dönmek için bkz: [2. adım: Rasgele nesne ve simge listesi ekleme](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

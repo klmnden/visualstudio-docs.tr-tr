@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111720"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Nasıl yapılır: Yük testi senaryolarında kullanılacak test aracıları belirtme
 
@@ -45,24 +45,24 @@ Bir test aracısı makineye CPU kullanımı yüzde 75'inden daha vardır veya y�
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Bir senaryo için kullanılacak aracı belirtmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
      **Yük Testi Düzenleyicisi** görünür. Yük testi ağacında görüntülenir.
 
-2.  Yük testi **senaryoları** klasöründe kullanılacak aracı belirtmek istediğiniz senaryoyu düğümünü seçin.
+2. Yük testi **senaryoları** klasöründe kullanılacak aracı belirtmek istediğiniz senaryoyu düğümünü seçin.
 
-3.  Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
+3. Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
      Kategoriler ve özellikler bu senaryonun görüntülenen **özellikleri** penceresi.
 
-4.  Metin kutusunda **kullanılacak aracılar** özellik, senaryo çalışabilir aracıların listesini yazın.
+4. Metin kutusunda **kullanılacak aracılar** özellik, senaryo çalışabilir aracıların listesini yazın.
 
      Aracıları ayrılmalıdır virgüllerle, örneğin "**agent1'e, birim testi Agent2, Aracı3**". Özellik boş bırakılırsa, senaryo kullanılabilir tüm aracılar kullanması gerektiğini belirtir.
 
     > [!NOTE]
     > **Kullanılacak aracılar** özelliği yerel çalışmalar için yoksayılır. Belirtilen aracıların hiçbiri uzaktan çalıştırmalar için **kullanılacak aracılar** var, testlerin senaryoda çalışmaz.
 
-5.  Özellik değiştirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Ardından, yeni kullanarak yük testi çalıştırabilirsiniz **kullanılacak aracılar** değeri.
+5. Özellik değiştirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Ardından, yeni kullanarak yük testi çalıştırabilirsiniz **kullanılacak aracılar** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 435f189d22abed9697953fc8b946deac64f86740
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113046"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Nasıl yapılır: Pencereler Görünümünde Pencere Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,16 +27,16 @@ Arama ölçütü olarak tanıtıcısını, açıklamalı alt yazı, sınıf veya
   
 ### <a name="to-search-for-a-window-in-windows-view"></a>Windows görünümünde pencere arama  
   
-1.  Bu nedenle pencereleri bu Spy ++, [Windows görünümü](../debugger/windows-view.md) penceresi ve hedef penceresi görünür.  
+1. Bu nedenle pencereleri bu Spy ++, [Windows görünümü](../debugger/windows-view.md) penceresi ve hedef penceresi görünür.  
   
-2.  Gelen **arama** menüsünde seçin **Bul penceresi**.  
+2. Gelen **arama** menüsünde seçin **Bul penceresi**.  
   
      [Pencere arama iletişim kutusu](../debugger/window-search-dialog-box.md) açılır.  
   
     > [!TIP]
     >  Ekranda kapladığı alanı azaltmak için seçin **Gizle Spy** seçeneği. Bu seçenek ana Spy ++ penceresini gizler ve yalnızca bırakır **arama penceresi** iletişim kutusu, diğer uygulamalar üzerinde görünür. Spy ++ ana pencereyi geri tıkladığınızda **Tamam** veya **iptal**, veya kaldırdığınızda **Gizle Spy ++** seçeneği.  
   
-3.  Sürükleme **Bulucu Aracı** hedef aralığında. Aracı sürüklerken **arama penceresi** iletişim kutusunda seçili penceresinde ayrıntılarını görüntüler.  
+3. Sürükleme **Bulucu Aracı** hedef aralığında. Aracı sürüklerken **arama penceresi** iletişim kutusunda seçili penceresinde ayrıntılarını görüntüler.  
   
      – veya –  
   
@@ -46,8 +46,8 @@ Arama ölçütü olarak tanıtıcısını, açıklamalı alt yazı, sınıf veya
   
      Açıklamalı alt yazı ve/veya istediğiniz pencere sınıfının biliyorsanız bunları yazabilirsiniz **açıklamalı alt yazı** ve **sınıfı** metin kutuları ve clear **işlemek** metin kutusu.  
   
-4.  Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
+4. Seçin **yukarı** veya **aşağı** için ilk arama yönünü.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
      Eşleşen bir pencere bulunursa, vurgulanır [Windows görünümü](../debugger/windows-view.md) penceresi.

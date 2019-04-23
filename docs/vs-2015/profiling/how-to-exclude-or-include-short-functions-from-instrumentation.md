@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d37984b6535e353053ba6ee71090797e4ce119d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078596"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Nasıl yapılır: Hariç tutma veya kısa işlevleri izlemeden içerir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Varsayılan olarak, profil oluşturma araçları hariç *küçük işlevlerin* �
   
 ### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Kısa işlevleri izlemeden hariç tutmak veya  
   
-1.  İçinde **performans Gezgini**seçin **performans oturumu** ve ardından sağ tıklayıp **özellikleri**.  
+1. İçinde **performans Gezgini**seçin **performans oturumu** ve ardından sağ tıklayıp **özellikleri**.  
   
      **Özellik sayfaları** iletişim kutusu görüntülenir.  
   
-2.  İçinde **özellik sayfaları**, tıklayın **izleme** özellikleri.  
+2. İçinde **özellik sayfaları**, tıklayın **izleme** özellikleri.  
   
-3.  Kısa işlevleri izlemeden hariç tutmak için seçin **kısa işlevleri izlemeden hariç**. Varsayılan ayar budur.  
+3. Kısa işlevleri izlemeden hariç tutmak için seçin **kısa işlevleri izlemeden hariç**. Varsayılan ayar budur.  
   
      -veya-  
   
      Kısa işlevleri Araçları'nda dahil etmek için Temizle **kısa işlevleri izlemeden hariç**.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri toplama denetimi](../profiling/controlling-data-collection.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088463"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Blend'de nesnlerin stilini değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "57869308"
   
  **Bu konudaki**:  
   
--   [Fırçalar: Bir nesnenin görünümünü değiştirme](#Brushes)  
+- [Fırçalar: Bir nesnenin görünümünü değiştirme](#Brushes)  
   
--   [Stilleri ve şablonları: Denetimler arasında tutarlı bir görünüm oluşturma](#Styles)  
+- [Stilleri ve şablonları: Denetimler arasında tutarlı bir görünüm oluşturma](#Styles)  
   
--   [Görsel durumları: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme](#Visual)  
+- [Görsel durumları: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme](#Visual)  
   
--   [Kaynaklar: Renkleri, Stiller ve şablonlar oluşturma ve bunları daha sonra yeniden](#Resources)  
+- [Kaynaklar: Renkleri, Stiller ve şablonlar oluşturma ve bunları daha sonra yeniden](#Resources)  
   
-##  <a name="Brushes"></a> Fırçalar: Bir nesnenin görünümünü değiştirme  
+## <a name="Brushes"></a> Fırçalar: Bir nesnenin görünümünü değiştirme  
  Görünümünü değiştirmek istiyorsanız bir fırça bir nesneye uygulayın.  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [fırçaları Düzenleyicisi](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
@@ -57,7 +57,7 @@ ms.locfileid: "57869308"
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Kutucuğuna Fırçalar](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a> Stilleri ve şablonları: Denetimler arasında tutarlı bir görünüm oluşturma  
+## <a name="Styles"></a> Stilleri ve şablonları: Denetimler arasında tutarlı bir görünüm oluşturma  
  Görünümünü ve davranışını bir kez tasarlayabilir ve ayrı ayrı tutmak zorunda kalmazsınız, tasarım diğer denetimlere uygulanır.  
   
  **Bir stil kullanmalısınız?** : (Örneğin, bir düğme rengi) varsayılan özellikleri ayarlamak istiyorsanız kullanmak bir *stil*. Bile sizin için bir stil uygulamış olduğunuz sonra bir denetim değiştirebilirsiniz.  
@@ -102,14 +102,14 @@ ms.locfileid: "57869308"
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Varsayılan stil veya şablon denetiminin geri yükleme  
  İstediğiniz denetimi seçin ve [özellikleri](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) paneli, bulun **stili** veya **şablon** özelliği. ' A tıklayarak **Gelişmiş Seçenekler** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")ve ardından **sıfırlama** kısayol menüsünde.  
   
-##  <a name="Visual"></a> Görsel durumları: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme  
+## <a name="Visual"></a> Görsel durumları: Kendi durumunu temel alan bir denetiminin görünüşünü değiştirme  
  Denetimlerin kullanıcı denetimine göre farklı görsel görünümlerini olabilir. Örneğin, bir kullanıcı buna tıkladığında veya bir animasyon çalıştırabilir yeşile bir düğme yapabilirsiniz. Kısaltır veya geçişleri kullanarak görsel durumlar arasındaki süreyi uzatabilir.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF denetimleri durumunu yöneten](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a> Kaynaklar: Renkleri, Stiller ve şablonlar oluşturma ve bunları daha sonra yeniden  
+## <a name="Resources"></a> Kaynaklar: Renkleri, Stiller ve şablonlar oluşturma ve bunları daha sonra yeniden  
  Her şey, projenizdeki bir kaynağa dönüştürebilirsiniz. Farklı yerlerde uygulamanızda yeniden bir nesne bir kaynaktır. Örneğin, bir renk bir kez oluşturun, bir kaynak yapın ve ardından bu renk birkaç nesnelerinde kullanın. Tüm bu nesneleri rengini değiştirmek için renk kaynağı değiştirmeniz yeterlidir.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  

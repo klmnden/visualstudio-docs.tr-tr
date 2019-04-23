@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117661"
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türd
   
  Aşağıdaki değişiklikler, C# kodu için hata ayıklama oturumu sırasında uygulanamaz:  
   
--   Geçerli deyimi veya herhangi bir etkin deyim yapılan değişiklikler.  
+- Geçerli deyimi veya herhangi bir etkin deyim yapılan değişiklikler.  
   
      Etkin deyimleri için geçerli durumunu almak için çağrılan işlevler çağrı yığını üzerinde herhangi bir deyim ekleyin.  
   
      Geçerli deyimi kaynak penceresinde sarı arka plan olarak işaretlenir. Diğer etkin deyimleri gölgeli bir arka plan işaretlenir ve salt okunurdur. Bu varsayılan renkleri değiştirilebilir **seçenekleri** iletişim kutusu.  
   
--   İmza türü değiştiriliyor.  
+- İmza türü değiştiriliyor.  
   
--   Önce yakalanmayan bir değişken yakalayan bir anonim yöntem ekleniyor.  
+- Önce yakalanmayan bir değişken yakalayan bir anonim yöntem ekleniyor.  
   
--   Ekleme, kaldırma veya değiştirme.  
+- Ekleme, kaldırma veya değiştirme.  
   
--   Ekleme, kaldırma veya değiştirme `using` yönergeleri.  
+- Ekleme, kaldırma veya değiştirme `using` yönergeleri.  
   
--   Ekleme bir `foreach`, `using`, veya `lock` etkin bir deyim etrafındaki.  
+- Ekleme bir `foreach`, `using`, veya `lock` etkin bir deyim etrafındaki.  
   
 ## <a name="unsafe-code"></a>Güvenli olmayan kod  
  Güvenli olmayan kod değişiklikleri başka bir kısıtlama ile güvenli kod değişiklikleri onunla aynı sınırlamalara sahiptir: Düzenle ve devam et değişiklikleri içeren bir yöntemi içinde güvenli olmayan kod desteklemiyor `stackalloc` işleci.  
@@ -55,35 +55,35 @@ Düzenle ve devam et, metot gövdeleri içinde kod değişiklikleri çoğu türd
 ## <a name="unsupported-scenarios"></a>Desteklenmeyen Senaryolar  
  Düzenle ve devam et hata ayıklama aşağıdaki senaryolarda kullanılabilir değil:  
   
--   Bazı durumlarda LINQ kodda hata ayıklama. Daha fazla bilgi için [LINQ hata ayıklama](../debugger/debugging-linq.md).  
+- Bazı durumlarda LINQ kodda hata ayıklama. Daha fazla bilgi için [LINQ hata ayıklama](../debugger/debugging-linq.md).  
   
-    -   Önce yakalanmayan bir değişken yakalama.  
+    - Önce yakalanmayan bir değişken yakalama.  
   
-    -   Sorgu ifadesi türünün değiştirilmesi (örneğin, a ='ı seçin > Yeni seçme {A = bir};)  
+    - Sorgu ifadesi türünün değiştirilmesi (örneğin, a ='ı seçin > Yeni seçme {A = bir};)  
   
-    -   Kaldırma bir `where` , etkin bir deyim içerir.  
+    - Kaldırma bir `where` , etkin bir deyim içerir.  
   
-    -   Kaldırma bir `let` , etkin bir deyim içerir.  
+    - Kaldırma bir `let` , etkin bir deyim içerir.  
   
-    -   Kaldırma bir `join` , etkin bir deyim içerir.  
+    - Kaldırma bir `join` , etkin bir deyim içerir.  
   
-    -   Kaldırma bir `orderby` , etkin bir deyim içerir.  
+    - Kaldırma bir `orderby` , etkin bir deyim içerir.  
   
--   Karma mod (yerel/yönetilen) hata ayıklama.  
+- Karma mod (yerel/yönetilen) hata ayıklama.  
   
--   SQL hata ayıklama.  
+- SQL hata ayıklama.  
   
--   Bir Dr hata ayıklama. Watson dökümü.  
+- Bir Dr hata ayıklama. Watson dökümü.  
   
--   İşlenmeyen bir özel durumdan sonra kod düzenleme, "**işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme**" seçeneği belirlenmez.  
+- İşlenmeyen bir özel durumdan sonra kod düzenleme, "**işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme**" seçeneği belirlenmez.  
   
--   Katıştırılmış çalışma zamanı uygulama hata ayıklama.  
+- Katıştırılmış çalışma zamanı uygulama hata ayıklama.  
   
--   Sahip bir uygulamada hata ayıklama **ekleme** seçerek uygulamayı çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.  
+- Sahip bir uygulamada hata ayıklama **ekleme** seçerek uygulamayı çalıştırmak yerine **Başlat** gelen **hata ayıklama** menüsü.  
   
--   En iyi duruma getirilmiş kodda hata ayıklama.  
+- En iyi duruma getirilmiş kodda hata ayıklama.  
   
--   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
+- Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenle ve devam et (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   

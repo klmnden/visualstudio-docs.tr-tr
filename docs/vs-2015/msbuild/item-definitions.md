@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090765"
 ---
 # <a name="item-definitions"></a>Öğe Tanımları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668507"
   
  *Itemdefinitiongroup* öğesi görünür hemen sonra [proje](../msbuild/project-element-msbuild.md) proje dosyasının öğesi. Öğe tanımları aşağıdaki işlevleri sağlar:  
   
--   Öğeleri dışında bir hedef için genel varsayılan meta verileri tanımlayabilirsiniz. Diğer bir deyişle, aynı meta verileri belirtilen türdeki tüm öğeler için geçerlidir.  
+- Öğeleri dışında bir hedef için genel varsayılan meta verileri tanımlayabilirsiniz. Diğer bir deyişle, aynı meta verileri belirtilen türdeki tüm öğeler için geçerlidir.  
   
--   Öğesi türleri, birden çok tanımına sahip olabilir. Ek meta veri belirtimleri türüne eklenir, son belirtimi önceliklidir. \(Meta veri özelliklerini izleyin aynı alma sırada izler.\)  
+- Öğesi türleri, birden çok tanımına sahip olabilir. Ek meta veri belirtimleri türüne eklenir, son belirtimi önceliklidir. \(Meta veri özelliklerini izleyin aynı alma sırada izler.\)  
   
--   Meta veri olabilir eklenebilir. Örneğin, CDefines değerleri koşullu olarak ayarlanan özellikler bağlı olarak toplanır. Örneğin: `MT;STD_CALL;DEBUG;UNICODE`  
+- Meta veri olabilir eklenebilir. Örneğin, CDefines değerleri koşullu olarak ayarlanan özellikler bağlı olarak toplanır. Örneğin: `MT;STD_CALL;DEBUG;UNICODE`  
   
--   Meta veri kaldırılabilir.  
+- Meta veri kaldırılabilir.  
   
--   Koşullar, eklenmesi, meta verileri denetlemek için kullanılabilir.  
+- Koşullar, eklenmesi, meta verileri denetlemek için kullanılabilir.  
   
 ## <a name="item-metadata-default-values"></a>Öğe meta verileri varsayılan değerler  
  Bir Itemdefinitiongroup içinde tanımlanan öğe meta verileri yalnızca bir varsayılan meta veri bildirimidir. Meta veri değerleri içeren bir ItemGroup kullanan bir öğeyi tanımlamak sürece meta veriler geçerli değildir.  
@@ -66,21 +66,21 @@ ms.locfileid: "59668507"
 ## <a name="value-sources"></a>Değer kaynakları  
  Bir Itemdefinitiongroup içinde tanımlanmış meta verileri değerlerini gibi birçok farklı kaynaklardan gelebilir:  
   
--   PropertyGroup özelliği  
+- PropertyGroup özelliği  
   
--   Bir Itemdefinitiongroup öğesi  
+- Bir Itemdefinitiongroup öğesi  
   
--   Itemdefinitiongroup öğesi üzerinde öğesi dönüştürme  
+- Itemdefinitiongroup öğesi üzerinde öğesi dönüştürme  
   
--   Ortam değişkeni  
+- Ortam değişkeni  
   
--   Genel özellik \(MSBuild.exe komut satırından\)  
+- Genel özellik \(MSBuild.exe komut satırından\)  
   
--   Ayrılmış bir özellik  
+- Ayrılmış bir özellik  
   
--   İyi\-meta verileri bir öğe üzerinde bir Itemdefinitiongroup bilinen  
+- İyi\-meta verileri bir öğe üzerinde bir Itemdefinitiongroup bilinen  
   
--   CDATA bölümü \< \! \[CDATA\[burada bir şey ayrıştırılmaz\]\]\>  
+- CDATA bölümü \< \! \[CDATA\[burada bir şey ayrıştırılmaz\]\]\>  
   
 > [!NOTE]
 >  Itemdefinitiongroup öğeler ItemGroup öğelerini önce işlendiğinden bir ItemGroup öğesi meta verilerini bir Itemdefinitiongroup meta veri bildiriminde faydalı değil.  

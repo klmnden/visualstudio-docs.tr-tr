@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080819"
 ---
 # <a name="use-roslyn-analyzers"></a>Roslyn çözümleyicilerini kullanın
 
@@ -108,42 +108,42 @@ Bir kuraldan önemi değiştirebilirsiniz **Çözüm Gezgini**, veya içinde  *\
 
 Kural ihlallerinin bastırmak için birden çok yolu vardır:
 
-- Tüm geçerli ihlal gizlemek için seçin **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır** menü çubuğundaki. Bu bazen "taban çizgisi oluşturma" adlandırılır.
+- Gelen **Çözümle** menüsü
 
-- Bir tanılama işlemince bastırmak için **Çözüm Gezgini**, önemine kümesine **hiçbiri**.
+   Seçin **Çözümle** > **kod analizini Çalıştır ve etkin sorunlar bastır** tüm geçerli ihlal gizlemek için menü çubuğunda. Bu bazen "taban çizgisi oluşturma" adlandırılır.
 
-- Kural kümesi Düzenleyici'den bir tanılama bastırmak için adının yanındaki kutuyu'seçeneğinin işaretini kaldırın veya ayarlayın **eylem** için **hiçbiri**.
+- Gelen **Çözüm Gezgini**
 
-- Kod düzenleyicisinden bir tanılama bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+**.** açmak için **hızlı Eylemler** menüsü. Seçin **CAxxxx bastır** > **kaynağındaki** veya **CAxxxx bastır** > **gizleme dosyasında**.
+   Bir ihlali bastırmak için **Çözüm Gezgini**, kural önem derecesi kümesine **hiçbiri**.
+
+- Gelen **kural kümesi Düzenleyicisi**
+
+   Kural kümesi Düzenleyici'den bir ihlali bastırmak için adının yanındaki kutuyu'seçeneğinin işaretini kaldırın veya ayarlayın **eylem** için **hiçbiri**.
+
+- Gelen **Kod Düzenleyicisi**
+
+   Kod düzenleyicisinden ihlal bastırmak için tuşuna basın ve ihlali ile kod satırının imleci yerleştirin. **Ctrl**+**.** açmak için **hızlı Eylemler** menüsü. Seçin **CAXXXX bastır** > **kaynak/gizleme dosyasında**.
 
    ![Hızlı Eylemler menüsünden tanılama Gizle](media/suppress-diagnostic-from-editor.png)
 
-- Bir tanılama işlemince bastırmak için **hata listesi**, bkz: [hata Listesi'ndeki ihlallerini gösterme](#suppress-violations-from-the-error-list).
+- Gelen **hata listesi**
 
-### <a name="suppress-violations-from-the-error-list"></a>Hata listesinde ihlallerini gösterme
+   Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak için istediklerinizi seçerek ve ardından sağ tıklayarak ve seçerek **bastır** > **içinde Source/In Gizleme dosyası**.
 
-Bir veya daha çok tanılamadan gizleyebilirsiniz **hata listesi** bastırmak için istediklerinizi seçerek ve ardından sağ tıklayarak ve seçerek **bastır** > **içinde kaynak**  veya **bastır** > **gizleme dosyasında**.
+   - Varsa, bastır **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini C# [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#Disable Uyarı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
 
-- Seçerseniz **içinde kaynak**, **Değişiklikleri Önizle** iletişim kutusu açılır ve C# önizlemesini [#pragma Uyarısı](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) veya Visual Basic [#DisableUyarısı](/dotnet/visual-basic/language-reference/directives/directives) kaynak koduna eklenen yönergesi.
+      ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
 
-   ![#Pragma uyarısı kod dosyasına ekleme Önizleme](media/pragma-warning-preview.png)
+   - Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
 
-- Seçerseniz **gizleme dosyası içinde**, **Değişiklikleri Önizle** iletişim kutusu açılır ve önizlemesini <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> özniteliği genel dosyasına eklenir.
+      ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
 
-   ![SuppressMessage özniteliğini gizleme dosyasına ekleme Önizleme](media/preview-changes-in-suppression-file.png)
+   İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
 
-İçinde **Değişiklikleri Önizle** iletişim kutusunda **Uygula**.
-
-**Hata listesi** Tanılama veya ihlalleri, hem Canlı kod analizi ve yapı kuralı görüntüler. Derleme tanılama eski olduğundan, ve ihlali gidermek için kodu düzenlenmiş, ancak henüz yeniden, örneğin, bu Tanılama'ya başlatmayı önleyemez **hata listesi**. Ancak, tanılama Canlı analysis veya IntelliSense, her zaman geçerli kaynaklarıyla güncel olduğundan ve gelen gizlenebilir **hata listesi**. Gizleme seçeneğini sağ tıklayın veya bağlam menüsünde devre dışıysa, çünkü bir veya daha fazla tanılama Seçiminizdeki yapı olasıdır. Derleme tanılama seçimden hariç tutmak için geçiş **hata listesi** kaynak filtresinden **derleme + IntelliSense** için **yalnızca IntelliSense**. Ardından daha önce açıklandığı gibi yarayan istediğiniz Tanılama'yı seçin.
-
-![Visual Studio hata listesi kaynak filtresi](media/error-list-filter.png)
-
-> [!NOTE]
-> NuGet Çözümleyicileri, sahip olan bir projeyi bir başvuru eklerken bir .NET Core projesinde bu Çözümleyicileri otomatik olarak bağımlı projenin çok eklenir. Örneğin bağımlı proje bir birim test projesi ise, bu davranışı devre dışı bırakmak için NuGet paketini private olarak işaretlemek *.csproj* veya *.vbproj* başvurulan projenin dosya:
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Görmüyorsanız **bastır** menü seçeneğini **Çözüm Gezgini**, ihlalin büyük olasılıkla derleme ve değil Canlı analysis geliyor. **Hata listesi** Tanılama veya ihlalleri, hem Canlı kod analizi ve yapı kuralı görüntüler. Derleme tanılama eski olduğundan, ve ihlali gidermek için kodu düzenlenmiş, ancak henüz yeniden, örneğin, bu Tanılama'ya başlatmayı önleyemez **hata listesi**. Canlı analysis veya IntelliSense, tanılama her zaman geçerli kaynaklarıyla güncel olduğundan ve gelen gizlenebilir **hata listesi**. Dışlanacak *derleme* seçiminizden tanılama geçiş **hata listesi** kaynak filtresinden **derleme + IntelliSense** için **IntelliSense yalnızca**. Ardından daha önce açıklandığı gibi yarayan istediğiniz Tanılama'yı seçin.
+   >
+   > ![Visual Studio hata listesi kaynak filtresi](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Komut satırı kullanımı
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 Aşağıdaki görüntüde Çözümleyicisi Kuralı ihlali içeren bir proje oluşturma komut satırı derleme çıktı gösterilmektedir:
 
 ![MSBuild çıkışıyla kuralı ihlali](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Bağımlı projeleri
+
+NuGet Çözümleyicileri, sahip olan bir projeyi bir başvuru eklerken bir .NET Core projesinde bu Çözümleyicileri otomatik olarak bağımlı projenin çok eklenir. Örneğin bağımlı proje bir birim test projesi ise, bu davranışı devre dışı bırakmak için NuGet paketini private olarak işaretlemek *.csproj* veya *.vbproj* ayarlayarakbaşvurulanprojenindosya**PrivateAssets** özniteliği:
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

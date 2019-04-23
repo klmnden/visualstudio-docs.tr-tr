@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116400"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Visual Studio'dan Windows Store uygulamaları dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 
 - Başlatıldığında ayıklanacak bir uygulamayı başka bir uygulama veya metodu tarafından dağıtılıyor.
 
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki
+## <a name="BKMK_In_this_topic"></a> Bu konudaki
  Bu konu başlığında şunları öğrenebilirsiniz:
 
  [Windows Store uygulaması dağıtma](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 
  [Dağıtım seçenekleri](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Windows Store uygulaması dağıtma
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Windows Store uygulaması dağıtma
  El ile uygulama dağıtma basit bir işlemdir:
 
-1.  Uzak cihaza dağıtıyorsanız, uygulamanın başlangıç projesi özellik Proje sayfasının adını veya cihazın IP adresini belirtin. (Bu olan yapmak için bu konudaki aşağıya listelenen adımları.).
+1. Uzak cihaza dağıtıyorsanız, uygulamanın başlangıç projesi özellik Proje sayfasının adını veya cihazın IP adresini belirtin. (Bu olan yapmak için bu konudaki aşağıya listelenen adımları.).
 
-2.  Yanındaki aşağı açılan listeden hata ayıklayıcı Visual Studio araç çubuğunda dağıtım hedefini seçin **hata ayıklamayı Başlat** düğmesi.
+2. Yanındaki aşağı açılan listeden hata ayıklayıcı Visual Studio araç çubuğunda dağıtım hedefini seçin **hata ayıklamayı Başlat** düğmesi.
 
      ![Yerel makinede çalıştırma](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  Üzerinde **derleme** menüsünde seçin **Dağıt**
+3. Üzerinde **derleme** menüsünde seçin **Dağıt**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Uzak cihaz belirtme
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Uzak cihaz belirtme
  **Önkoşullar**
 
  Uzak cihaza bir uygulama dağıtmak için:
 
--   Bir geliştirici lisansı uzak cihaz üzerinde yüklü olmalıdır.
+- Bir geliştirici lisansı uzak cihaz üzerinde yüklü olmalıdır.
 
--   Visual Studio uzak araçları, uzak cihazda yüklü olmalıdır ve uzaktan hata ayıklama İzleyicisi çalışıyor olması gerekir.
+- Visual Studio uzak araçları, uzak cihazda yüklü olmalıdır ve uzaktan hata ayıklama İzleyicisi çalışıyor olması gerekir.
 
      Dağıtım, uygulama dosyaları uzak cihaza göndermek için uzaktan hata ayıklayıcı ağ kanalının kullanır.
 
@@ -101,7 +101,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 
 8. Uzak cihaz ağ adını **uzak makine** kutusuna veya tıklayın **bulmak** cihazı seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.
 
-##  <a name="BKMK_Deployment_options"></a> Dağıtım seçenekleri
+## <a name="BKMK_Deployment_options"></a> Dağıtım seçenekleri
  Aşağıdaki dağıtım seçeneklerinden başlangıç projesinin hata ayıklama özellik sayfasından ayarlayabilirsiniz.
 
  **Ağ geri döngüsüne izin ver** güvenlik nedenleriyle bir [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] yüklü cihaz ağ çağrı yapmak için standart bir biçimde yüklü uygulama verilmez. Varsayılan olarak, Visual Studio dağıtımı bu kuraldan dağıtılmış uygulama için bir istisna oluşturur. Bu muafiyet iletişim yordamları tek bir makinede test etmenizi sağlar. Uygulamanıza göndermeden önce [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], uygulamanızı muafiyet olmadan test etmeniz gerekir.

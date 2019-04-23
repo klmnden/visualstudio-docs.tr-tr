@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082184"
 ---
 # <a name="n-tier-data-applications-overview"></a>N Katmanlı Veri Uygulamalarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanla
   
  Visual Studio, geliştiricilerin n katmanlı uygulamalar oluşturmasına yardımcı olmak için çeşitli özellikler içerir:  
   
--   Veri kümesi Tasarımcısı sağlar bir **DataSet projesi** dataset (veri varlık katmanı) ayrı olanak tanıyan özellik ve `TableAdapter`s (veri erişim katmanı) farklı projelere.  
+- Veri kümesi Tasarımcısı sağlar bir **DataSet projesi** dataset (veri varlık katmanı) ayrı olanak tanıyan özellik ve `TableAdapter`s (veri erişim katmanı) farklı projelere.  
   
--   [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ayrı ad alanında DataContext ve veri sınıfları oluşturmak için ayarları sağlar. Bu mantıksal ayrılığı veri varlık katmanı ve veri erişimi sağlar.  
+- [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md) ayrı ad alanında DataContext ve veri sınıfları oluşturmak için ayarları sağlar. Bu mantıksal ayrılığı veri varlık katmanı ve veri erişimi sağlar.  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sağlar <xref:System.Data.Linq.Table%601.Attach%2A> yönteminin bir uygulamada farklı katmanlarından gelen DataContext bir araya getirmenize olanak tanıyan. Daha fazla bilgi için [N katmanı ve uzak uygulamalarla LINQ-SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) sağlar <xref:System.Data.Linq.Table%601.Attach%2A> yönteminin bir uygulamada farklı katmanlarından gelen DataContext bir araya getirmenize olanak tanıyan. Daha fazla bilgi için [N katmanı ve uzak uygulamalarla LINQ-SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Sunu katmanı  
  *Sunu katmanı* kullanıcıların uygulamayla etkileşim katmanı gösterir. Ek uygulama mantığı genellikle de içerir. Tipik bir sunu katmanı bileşenleri şunları içerir:  
@@ -57,11 +57,11 @@ N-katmanı * veri uygulamaları, birden çok ayrılmış veri uygulama *katmanla
   
 - Bileşenleri ve aşağıdaki gibi bir mantıksal veri erişim:  
   
-  -   [TableAdapter bağdaştırıcıları](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve [DataAdapters ve DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [TableAdapter bağdaştırıcıları](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) ve [DataAdapters ve DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  -   Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları.  
+  - Verilerin temsillerini gibi nesne [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) varlık sınıfları.  
   
-  -   Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.  
+  - Kimlik doğrulama, yetkilendirme ve kişiselleştirme gibi ortak uygulama hizmetleri.  
   
   Özellikleri ve teknolojileri Visual Studio'da bulunan ve burada, n katmanlı bir uygulama orta katman için uygun olmayabilir aşağıdaki çizimde gösterilmektedir.  
   

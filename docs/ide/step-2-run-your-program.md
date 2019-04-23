@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5eedfa6104b5462b0fe61682635338cb9337a408
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117060"
 ---
 # <a name="step-2-run-your-program"></a>2. Adım: Programınızı çalıştırma
 Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşik. Çok henüz — yalnızca gösteren boş bir pencere görüntüler **Form1** başlık çubuğundaki. Ancak hakkında bilgi edinmek için oluşturuyoruz, çalıştırın.
@@ -22,40 +22,40 @@ Yeni bir çözüm oluşturduğunuzda, aslında çalışan bir programı yerleşi
 
 ## <a name="to-run-your-program"></a>Programınızı çalıştırmak için
 
-1.  Programınızı çalıştırmak için aşağıdaki yöntemlerden birini kullanın.
+1. Programınızı çalıştırmak için aşağıdaki yöntemlerden birini kullanın.
 
-    -   Seçin **F5** anahtarı.
+    - Seçin **F5** anahtarı.
 
-    -   Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**.
+    - Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**.
 
-    -   Araç çubuğunda **hata ayıklamayı Başlat** gibi görünen bir düğme.
+    - Araç çubuğunda **hata ayıklamayı Başlat** gibi görünen bir düğme.
 
          ![Hata ayıklama araç çubuğu düğmesini Başlat](../ide/media/express_icondebug.png)
 **hata ayıklamayı Başlat** araç çubuğu düğmesi
 
-2.  Visual Studio programınızı çalıştırır ve bir pencere olarak adlandırılan **Form1** görünür. Aşağıdaki diyagramda, az önce oluşturduğunuz programı gösterir. Program çalışıyor ve yakında buna ekleyeceksiniz.
+2. Visual Studio programınızı çalıştırır ve bir pencere olarak adlandırılan **Form1** görünür. Aşağıdaki diyagramda, az önce oluşturduğunuz programı gösterir. Program çalışıyor ve yakında buna ekleyeceksiniz.
 
      ![Windows Form application programı çalıştıran](../ide/media/express_firstrun.png)
 **Windows Forms** uygulama programı çalıştırma
 
-3.  Visual Studio tümleşik geliştirme ortamı (IDE) geri dönün ve yeni araç çubuğuna bakın. Ek düğmeler, programı çalıştırdığınızda araç çubuğunda görünür. Bu düğmeler durdurma gibi şeyler ve başlangıç programı ve yakınlarında hataları (hatalar) izlemenize yardımcı olur belirlemenizi sağlar. Bu örnekte, yalnızca, başlatmak ve programı durdurmak için kullanıyoruz.
+3. Visual Studio tümleşik geliştirme ortamı (IDE) geri dönün ve yeni araç çubuğuna bakın. Ek düğmeler, programı çalıştırdığınızda araç çubuğunda görünür. Bu düğmeler durdurma gibi şeyler ve başlangıç programı ve yakınlarında hataları (hatalar) izlemenize yardımcı olur belirlemenizi sağlar. Bu örnekte, yalnızca, başlatmak ve programı durdurmak için kullanıyoruz.
 
      ![Hata ayıklama araç çubuğu](../ide/media/express_debugtoolbar.png)
 **hata ayıklama** araç çubuğu
 
-4.  Programınızı durdurmak için aşağıdaki yöntemlerden birini kullanın.
+4. Programınızı durdurmak için aşağıdaki yöntemlerden birini kullanın.
 
-    -   Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.
+    - Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.
 
-    -   Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Durdur**.
+    - Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Durdur**.
 
-    -   Seçin **X** üst köşesindeki düğmeyi **Form1** penceresi.
+    - Seçin **X** üst köşesindeki düğmeyi **Form1** penceresi.
 
     > [!NOTE]
     >  IDE içinde programınızı çalıştırdığınızda, bulun ve programda hataları (sorunları) gidermek için genellikle yaptığınız çünkü hata ayıklama çağrılır. Bu program küçük ve gerçekten henüz bir işe yaramaz, ama yine de gerçek bir program vardır. Çalıştırmak ve diğer programlarda hata ayıklama için aynı yordamı izleyin. Hata ayıklama hakkında daha fazla bilgi için bkz. [hata ayıklayıcıya ilk bakış](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).
+- Sonraki öğretici adımına gitmek için bkz: [3. adım: Form özelliklerinizi ayarlama](../ide/step-3-set-your-form-properties.md).
 
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Bir Windows Forms uygulaması projesi oluşturmak](../ide/step-1-create-a-windows-forms-application-project.md).
+- Önceki öğretici adımına dönmek için bkz: [1. adım: Bir Windows Forms uygulaması projesi oluşturmak](../ide/step-1-create-a-windows-forms-application-project.md).

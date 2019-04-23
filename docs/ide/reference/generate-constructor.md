@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083835"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio'da bir oluşturucu üret
 
@@ -30,11 +30,11 @@ Bu kod oluşturma için geçerlidir:
 
 **Nasıl:** Bir oluşturucu oluşturmak için birkaç yol vardır:
 
-   - [Oluşturucu Oluşturma ve üyeleri seçin](#pick)
-   - [Seçili alanları oluşturucusunu üret](#selection)
-   - [Yeni kullanımdan oluşturucusunu üret](#usage)
-   - [Mevcut oluşturucusuna parametre Ekle](#addparameter)
-   - [Oluştur ve alan/özellik bir oluşturucu parametreden Başlat](#create)
+- [Oluşturucu Oluşturma ve üyeleri seçin](#pick)
+- [Seçili alanları oluşturucusunu üret](#selection)
+- [Yeni kullanımdan oluşturucusunu üret](#usage)
+- [Mevcut oluşturucusuna parametre Ekle](#addparameter)
+- [Oluştur ve alan/özellik bir oluşturucu parametreden Başlat](#create)
 
 ## <a id = "pick"></a> Oluşturucu Oluşturma ve üyeleri (C# yalnızca) seçin
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081326"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office çözümleriyle ilgili belirli güvenlik konuları
   Microsoft Office ve Microsoft .NET Framework tarafından sağlanan güvenlik özelliklerine Office çözümünüzü olası güvenlik tehditlerine karşı korunmasına yardımcı olabilir. Bu konu, bu tehditleri bazıları açıklanmıştır ve bunlara karşı koruma sağlamak için öneriler sağlar. Ayrıca, Microsoft Office güvenlik ayarları Office çözümlerini nasıl etkilediği hakkında bilgi içerir.
@@ -39,13 +39,13 @@ ms.locfileid: "56629085"
 
 ### <a name="recommendations"></a>Öneriler
 
--   Kullanıcı, belge, bir veritabanı, bir web hizmeti veya diğer kaynaklardan gelmediğini giriş ve verileri her zaman doğrulayın.
+- Kullanıcı, belge, bir veritabanı, bir web hizmeti veya diğer kaynaklardan gelmediğini giriş ve verileri her zaman doğrulayın.
 
--   Kullanıcı adına ayrıcalıklı veri alma ve korumasız bir çalışma sayfasına koyarak gibi işlevselliği, belirli türde oluştururken dikkatli olun.
+- Kullanıcı adına ayrıcalıklı veri alma ve korumasız bir çalışma sayfasına koyarak gibi işlevselliği, belirli türde oluştururken dikkatli olun.
 
--   Uygulamanın türüne bağlı olarak, özgün belgenin herhangi bir kod yürütülmeden önce çalıştığını doğrulamak için mantıklı olabilir. Örneğin, bilinen ve güvenli bir konumda depolanan bir belgeden çalıştığından emin olun.
+- Uygulamanın türüne bağlı olarak, özgün belgenin herhangi bir kod yürütülmeden önce çalıştığını doğrulamak için mantıklı olabilir. Örneğin, bilinen ve güvenli bir konumda depolanan bir belgeden çalıştığından emin olun.
 
--   Uygulamanızın tüm ayrıcalıklı Eylemler gerçekleştiriyorsa belgeyi açtığında bir uyarı görüntülemek için iyi bir fikir olabilir. Örneğin, giriş ekranı veya uygulama kişisel bilgilere erişebilir ve devam etmek İptal'i seçin kullanıcının olduğunu belirten bir başlatma iletişim kutusu oluşturabilirsiniz. Son kullanıcı, bu tür bir uyarı görünüşte zararsız bir belgeden alırsa, isterse herhangi bir şey güvenliği ihlal edilmeden önce bu uygulamadan çıkmak mümkün olacaktır.
+- Uygulamanızın tüm ayrıcalıklı Eylemler gerçekleştiriyorsa belgeyi açtığında bir uyarı görüntülemek için iyi bir fikir olabilir. Örneğin, giriş ekranı veya uygulama kişisel bilgilere erişebilir ve devam etmek İptal'i seçin kullanıcının olduğunu belirten bir başlatma iletişim kutusu oluşturabilirsiniz. Son kullanıcı, bu tür bir uyarı görünüşte zararsız bir belgeden alırsa, isterse herhangi bir şey güvenliği ihlal edilmeden önce bu uygulamadan çıkmak mümkün olacaktır.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Kod Outlook nesne modeli Koruması tarafından engellendi
  Microsoft Office, belirli özellikleri, yöntemleri ve nesneler içinde nesne modeli kullanarak kodu kısıtlayabilirsiniz. Bu nesnelere erişimi kısıtlayarak Outlook e-posta solucanlar ve virüs kötü amaçlar için nesne modeli kullanarak önlemeye yardımcı olur. Bu güvenlik özelliğini Outlook nesne modeli koruması bilinir. Bir VSTO eklentisi nesne modeli koruması etkin durumdayken sınırlı bir özellik veya yöntem kullanmayı denerse, Outlook, işlemi durdurmak kullanıcının sağlar ya da kullanıcının t sınırlı bir süre için özellik veya yöntem erişim izni sağlar bir güvenlik uyarısı görüntüler. IME. Kullanıcının işlemi durdurur, Visual Studio'da Office çözümleri kullanılarak oluşturulan Outlook VSTO eklentileri oluşturur bir <xref:System.Runtime.InteropServices.COMException>.
@@ -103,17 +103,17 @@ ms.locfileid: "56629085"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>VSTO eklentilerinde Microsoft Office 2010 ve Microsoft devre dışı bırakmak için [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] uygulamaları
 
-1.  Seçin **dosya** sekmesi.
+1. Seçin **dosya** sekmesi.
 
-2.  Seçin *ApplicationName* **seçenekleri** düğmesi.
+2. Seçin *ApplicationName* **seçenekleri** düğmesi.
 
-3.  Kategorileri bölmesinde **Güven Merkezi**.
+3. Kategorileri bölmesinde **Güven Merkezi**.
 
-4.  Ayrıntılar bölmesinde **Güven Merkezi Ayarları**.
+4. Ayrıntılar bölmesinde **Güven Merkezi Ayarları**.
 
-5.  Kategorileri bölmesinde **eklentileri**.
+5. Kategorileri bölmesinde **eklentileri**.
 
-6.  Ayrıntılar bölmesinde seçin **gerektiren uygulama güvenilen bir yayımcı tarafından imzalanmalıdır eklentileri** veya **tüm uygulama eklentileri devre dışı**.
+6. Ayrıntılar bölmesinde seçin **gerektiren uygulama güvenilen bir yayımcı tarafından imzalanmalıdır eklentileri** veya **tüm uygulama eklentileri devre dışı**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümleri güvenliğini sağlama](../vsto/securing-office-solutions.md)

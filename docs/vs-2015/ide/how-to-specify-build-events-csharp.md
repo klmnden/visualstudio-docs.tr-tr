@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781091"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113865"
 ---
 # <a name="how-to-specify-build-events-c"></a>Nasıl yapılır: Derleme Olayları Belirtme (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
   
 #### <a name="to-specify-a-build-event"></a>Derleme olayı belirtmek için  
   
-1.  İçinde **Çözüm Gezgini**, derleme olayı belirtmek istediğiniz projeyi seçin.  
+1. İçinde **Çözüm Gezgini**, derleme olayı belirtmek istediğiniz projeyi seçin.  
   
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
   
-3.  Seçin **Build Events** sekmesi.  
+3. Seçin **Build Events** sekmesi.  
   
-4.  İçinde **derleme öncesi olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.  
+4. İçinde **derleme öncesi olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.  
   
     > [!NOTE]
     >  Derleme öncesi olayları, projenin güncel olduğundan ve hiçbir derlemenin tetiklenmesinin çalıştırmayın.  
   
-5.  İçinde **derleme sonrası olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.  
+5. İçinde **derleme sonrası olay komut satırı** kutusunda, derleme olay sözdizimini belirtin.  
   
     > [!NOTE]
     >  Ekleme bir `call` .bat dosyaları çalıştıran tüm derleme sonrası komutları önce deyimi. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-6.  İçinde **oluşturma sonrası olayı çalıştırılsın** kutusunda, hangi derleme sonrası olay çalıştırmak için koşullar altında belirtin.  
+6. İçinde **oluşturma sonrası olayı çalıştırılsın** kutusunda, hangi derleme sonrası olay çalıştırmak için koşullar altında belirtin.  
   
     > [!NOTE]
     >  Uzun söz dizimi eklemek ya da seçmek için herhangi bir makrolarından derleme [derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), üç nokta düğmesini (**...** ) düzenleme kutusu görüntülenecek.  
@@ -145,15 +145,15 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için  
   
-1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde **yeni**ve ardından **proje**.  
+1. Yayımlanacak proje için bir Windows uygulaması oluşturun. Gelen **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **Visual C#**, tıklayın **Windows**ve ardından **Windows Forms uygulaması** şablonu. Projeyi adlandırın `CSWinApp`.  
+2. İçinde **yeni proje** iletişim kutusunda **Visual C#**, tıklayın **Windows**ve ardından **Windows Forms uygulaması** şablonu. Projeyi adlandırın `CSWinApp`.  
   
-3.  Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
+3. Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-4.  Proje Tasarımcısı'nda bulmak **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için `C:\TEMP\`.  
+4. Proje Tasarımcısı'nda bulmak **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için `C:\TEMP\`.  
   
-5.  Tıklayarak projeyi yayımlama **Şimdi Yayımla**.  
+5. Tıklayarak projeyi yayımlama **Şimdi Yayımla**.  
   
      Bildirim dosyası oluşturulmuş ve koymak `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Bildirimi görüntülemek için dosyaya sağ tıklayın, **birlikte Aç**seçin **program bir listeden seçim**ve ardından **not defteri**.  
   
@@ -163,9 +163,9 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  Proje Tasarımcısı'nda tıklatın **Build Events** sekmesine **Düzenle derleme sonrası** düğmesi.  
+6. Proje Tasarımcısı'nda tıklatın **Build Events** sekmesine **Düzenle derleme sonrası** düğmesi.  
   
-7.  İçinde **derleme sonrası olay komut satırı** aşağıdaki komutu yazın:  
+7. İçinde **derleme sonrası olay komut satırı** aşağıdaki komutu yazın:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -173,7 +173,7 @@ Oluşturma başlamadan önce veya derleme tamamlandıktan sonra çalışan komut
   
      Çünkü `$(TargetPath)` makro oluşturulmasını, yürütülebilir dosyanın tam yolunu ifade `$(TargetPath)`.manifest bin dizininde oluşturulan uygulama bildirimi belirtin. Yayımlama bu bildirimi daha önce belirlediğiniz yayımlama konumuna kopyalar.  
   
-8.  Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.  
+8. Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.  
   
      Bildirim yeniden görüntüleyin. Bildirimi görüntülemek için Yayımla dizinini açın, dosyaya sağ tıklayın, **açın**seçin **program bir listeden seçim**ve ardından **not defteri**.  
   

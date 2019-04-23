@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112292"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasında ilişkilendirme oluşturma
 Varlık sınıfları arasındaki ilişkilendirmeleri [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] veritabanındaki tablolar arasında ilişki benzer. Kullanarak varlık sınıfları arasında ilişkiler oluşturabilirsiniz **ilişkilendirme Düzenleyicisi** iletişim kutusu.
@@ -36,15 +36,15 @@ Kullandığınızda, bir üst ve alt sınıfı seçmelisiniz **ilişkilendirme D
 
 ## <a name="to-create-an-association-between-entity-classes"></a>Varlık sınıfları arasında ilişkilendirme oluşturma
 
-1.  İlişkideki üst sınıfın temsil ettiği varlık sınıfı sağ tıklatın, **Ekle**ve ardından **ilişkilendirme**.
+1. İlişkideki üst sınıfın temsil ettiği varlık sınıfı sağ tıklatın, **Ekle**ve ardından **ilişkilendirme**.
 
-2.  Doğrulayın doğru **üst sınıf** seçili **ilişkilendirme Düzenleyicisi** iletişim kutusu.
+2. Doğrulayın doğru **üst sınıf** seçili **ilişkilendirme Düzenleyicisi** iletişim kutusu.
 
-3.  Seçin **alt sınıf** birleşik giriş kutusundaki.
+3. Seçin **alt sınıf** birleşik giriş kutusundaki.
 
-4.  Seçin **ilişkilendirme özellikleri** sınıfları ilgilidir. Genellikle, bu veritabanında tanımlanan yabancı anahtar ilişkisi eşlenir. Örneğin, `Customers` ve `Orders` association **ilişkilendirme özellikleri** olan `CustomerID` her sınıf için.
+4. Seçin **ilişkilendirme özellikleri** sınıfları ilgilidir. Genellikle, bu veritabanında tanımlanan yabancı anahtar ilişkisi eşlenir. Örneğin, `Customers` ve `Orders` association **ilişkilendirme özellikleri** olan `CustomerID` her sınıf için.
 
-5.  Tıklayın **Tamam** bir ilişki oluşturmak için.
+5. Tıklayın **Tamam** bir ilişki oluşturmak için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

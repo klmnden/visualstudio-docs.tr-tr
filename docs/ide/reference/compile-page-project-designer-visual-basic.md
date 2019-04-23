@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a226f22370f128374433e78b787ad730a3bbdfc9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083991"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Derleme Sayfası, Proje Tasarımcısı (Visual Basic)
 
@@ -70,11 +70,11 @@ Aşağıdaki ayarlar, derleyici yapılandırma seçenekleri ayarlamanızı sağl
 
  **Katı tanımlama seçeneği** katı türü anlamları zorlanıp zorlanmayacağını belirtir. Zaman **Option Strict** olduğu **üzerinde**, bir derleme zamanı hatası aşağıdaki durumlar neden:
 
--   Örtük daraltma dönüşümleri
+- Örtük daraltma dönüşümleri
 
--   Geç bağlama
+- Geç bağlama
 
--   Örtük sonuçlanan yazarak bir `Object` türü
+- Örtük sonuçlanan yazarak bir `Object` türü
 
 Bir daraltma dönüştürmesi olan bir örtük veri türü dönüştürme olduğunda daraltma örtük dönüştürme hataları oluşur. Daha fazla bilgi için [Option Strict deyimi](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [örtük ve açık dönüştürmeler](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions), ve [Widening ve daraltma dönüşümleri](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
@@ -91,11 +91,11 @@ Bir proje oluşturduğunuzda **Option Strict** ayarını **derleme sayfası** de
 **Bireysel uyarıları katı seçeneği.**
 **Uyarı yapılandırmaları** bölümünü **derleme sayfa** karşılık gelen bir derleme zamanı hatasına neden olan üç koşulları ayarlarına sahip olduğunda `Option Strict` açıktır. Bu ayarlar şunlardır:
 
--   **Örtük dönüştürme**
+- **Örtük dönüştürme**
 
--   **Geç bağlama; Çağrı çalışma zamanında başarısız olabilir**
+- **Geç bağlama; Çağrı çalışma zamanında başarısız olabilir**
 
--   **Örtük tür; Nesne varsayıldı**
+- **Örtük tür; Nesne varsayıldı**
 
 Ayarladığınızda **Option Strict** için **üzerinde**, bu uyarı yapılandırma ayarlarını üç kümesine **hata**. Ayarladığınızda **Option Strict** için **kapalı**, tüm üç ayarları kümesine **hiçbiri**.
 
@@ -127,11 +127,11 @@ Daha fazla bilgi için [/Platform (Visual Basic)](/dotnet/visual-basic/reference
 
 Bu onay kutusu yalnızca aşağıdaki koşulların tümü doğruysa, kullanılabilir:
 
--   Üzerinde **derle sayfası**, **hedef CPU** listesinin **herhangi bir CPU**.
+- Üzerinde **derle sayfası**, **hedef CPU** listesinin **herhangi bir CPU**.
 
--   Üzerinde **uygulama sayfası**, **uygulama türü** listesi, projenin bir uygulama olduğunu belirtir.
+- Üzerinde **uygulama sayfası**, **uygulama türü** listesi, projenin bir uygulama olduğunu belirtir.
 
--   Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.
+- Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.
 
 **Uyarı yapılandırmaları** derleme koşullar ve karşılık gelen bildirim düzeyini bu tabloda **hiçbiri**, **uyarı**, veya **hata** her.
 

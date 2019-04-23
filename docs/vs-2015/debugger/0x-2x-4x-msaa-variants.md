@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090036"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA çeşitleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Geçersiz kılmalar birden çok örnek düzgünleştirme (MSAA) ayarları tüm i
   
 - `D3D11_TEXTURE2D_DESC` Geçirilen nesne `pDesc` olan bir işleme hedefi; açıklar:  
   
-  -   BindFlags üyesi D3D11_BIND_TARGET bayrağı veya D3D11_BIND_DEPTH_STENCIL bayrağı ayarlanmış sahiptir.  
+  - BindFlags üyesi D3D11_BIND_TARGET bayrağı veya D3D11_BIND_DEPTH_STENCIL bayrağı ayarlanmış sahiptir.  
   
-  -   Kullanım üye D3D11_USAGE_DEFAULT için ayarlanır.  
+  - Kullanım üye D3D11_USAGE_DEFAULT için ayarlanır.  
   
-  -   CPUAccessFlags üye 0 olarak ayarlanır.  
+  - CPUAccessFlags üye 0 olarak ayarlanır.  
   
-  -   MipLevels üye 1 olarak ayarlayın.  
+  - MipLevels üye 1 olarak ayarlayın.  
   
 - İstenen işleme tarafından belirlenen şekilde hedef biçimi (D3D11_TEXTURE2D_DESC::Format üyesi) için cihaz istenen örnek sayısı (0, 2 veya 4) ve örnek kalitesi (0) destekler. `ID3D11Device::CheckMultisampleQualityLevels`.  
   

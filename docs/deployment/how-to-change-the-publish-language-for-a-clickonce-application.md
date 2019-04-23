@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115295"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için yayımlama dilini değiştirme
 
@@ -34,15 +34,15 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 
 ## <a name="to-change-the-publish-language"></a>Yayımlama dili değiştirmek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **seçenekleri** açmak için düğmeyi **yayımlama seçeneği** iletişim kutusu.
+3. Tıklayın **seçenekleri** açmak için düğmeyi **yayımlama seçeneği** iletişim kutusu.
 
-4.  Tıklayın **açıklama**.
+4. Tıklayın **açıklama**.
 
-5.  İçinde **yayımlama seçeneği** iletişim kutusunda, bir dil seçin ve gelen kültür **yayımlama dilini** aşağı açılan liste ve ardından **Tamam**.
+5. İçinde **yayımlama seçeneği** iletişim kutusunda, bir dil seçin ve gelen kültür **yayımlama dilini** aşağı açılan liste ve ardından **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117505"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio Tümleştirmesi (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>İşlem İçi Derleyiciler  
  Mümkün olduğunda, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] işlemde sürümünü kullanmayı dener [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] performansı artırmak için derleyici. (Uygulanamaz [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Bunun düzgün çalışması için aşağıdaki koşullar karşılanmalıdır:  
   
--   Proje bir hedef olmalıdır adında bir görev `Vbc` için [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri.  
+- Proje bir hedef olmalıdır adında bir görev `Vbc` için [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri.  
   
--   `UseHostCompilerIfAvailable` Görev parametresi ayarlanmalıdır true.  
+- `UseHostCompilerIfAvailable` Görev parametresi ayarlanmalıdır true.  
   
 ## <a name="design-time-intellisense"></a>Tasarım Zamanı IntelliSense  
  IntelliSense desteği almak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir derleme bir çıktı derlemesi üretmeden önce aşağıdaki koşulların karşılanması gerekir:  
   
--   Adlı bir hedef olmalıdır `Compile`.  
+- Adlı bir hedef olmalıdır `Compile`.  
   
--   Her iki `Compile` hedefi ya da bağımlılıklarından biri çağırmalıdır derleyici görevinin projesi için gibi `Csc` veya `Vbc`.  
+- Her iki `Compile` hedefi ya da bağımlılıklarından biri çağırmalıdır derleyici görevinin projesi için gibi `Csc` veya `Vbc`.  
   
--   Her iki `Compile` hedefi ya da bağımlılıklarından biri derleyicinin IntelliSense, özellikle tüm başvurular için gereken tüm parametreleri almasını sağlamalıdır.  
+- Her iki `Compile` hedefi ya da bağımlılıklarından biri derleyicinin IntelliSense, özellikle tüm başvurular için gereken tüm parametreleri almasını sağlamalıdır.  
   
--   "İşlem içi derleyiciler" bölümünde listelenen koşulların karşılanması gerekir.  
+- "İşlem içi derleyiciler" bölümünde listelenen koşulların karşılanması gerekir.  
   
 ## <a name="building-solutions"></a>Çözümler Oluşturma  
  İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], çözüm dosyası ve proje derleme sıralaması tarafından denetlenen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kendisi. Komut satırında msbuild.exe ile bir çözüm derlerken [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] çözüm dosyasını ayrıştırır ve proje derlemelerini sıralar. Her iki durumda da projeler ayrı olarak bağımlılık sırasında oluşturulur ve projeden projeye başvurular geçirilmez. Buna karşılık, ayrı ayrı projeler msbuild.exe ile oluşturulduğunda, projeden projeye başvurular geçirilir.  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Tasarım Zamanı Hedef Yürütme  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir projeyi yüklediğinde belirli adları olan hedefleri yürütmeyi dener. Bu hedefler arasında `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, ve `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bu hedefleri derleyicinin IntelliSense sağlamak için başlatılabilir, hata ayıklayıcının başlatılabilmesi ve Çözüm Gezgini'nde gösterilen başvuruların çözümlenebilmesi için çalıştırır. Bu hedefler mevcut değilse projeyi yüklemek ve tasarım zamanı deneyimi ancak doğru şekilde derlenmesi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tam işlevsel olmayacaktır.  
   
-##  <a name="BKMK_EditingProjects"></a> Visual Studio'da proje dosyalarını düzenleme  
+## <a name="BKMK_EditingProjects"></a> Visual Studio'da proje dosyalarını düzenleme  
  Düzenlenecek bir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doğrudan projesi, proje dosyası Visual Studio XML düzenleyicisinde açabilirsiniz.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio'da bir proje dosyasının yüklemesini kaldırmak ve düzenlemek için  
   
-1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **projeyi**.  
+1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **projeyi**.  
   
      Proje işaretlenmiş **(kullanılamıyor)**.  
   
-2.  İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >**.  
+2. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >**.  
   
      Proje dosyası Visual Studio XML Düzenleyicisi'nde açılır.  
   
-3.  Düzenleyin, kaydedin ve ardından Proje dosyasını kapatın.  
+3. Düzenleyin, kaydedin ve ardından Proje dosyasını kapatın.  
   
-4.  İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **projeyi**.  
+4. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **projeyi**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense ve Doğrulama  
  Proje dosyalarını düzenlemek için XML düzenleyicisini kullanırken, IntelliSense ve doğrulama tarafından yönlendirilir [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] şema dosyaları. Bunlar bulunabilir şema önbelleğinde yüklü  *\<Visual Studio yükleme dizini >* \Xml\Schemas\1033\MSBuild.  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Başvuru Çözümleme  
  Başvuru çözümleme, gerçek derlemeleri bulmak için bir proje dosyasında depolanan başvuru öğelerini kullanma işlemidir. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] içinde her başvurunun özelliklerini ayrıntılı göstermek için başvuru çözümlemesini tetiklemelidir **özellikleri** penceresi. Aşağıdaki liste, üç başvuru türünü ve bunların nasıl kullanıldığını açıklar.  
   
--   Bütünleştirilmiş kod başvuruları:  
+- Bütünleştirilmiş kod başvuruları:  
   
      Proje sistemi bir hedefi iyi bilinen adıyla çağırır `ResolveAssemblyReferences`. Bu hedef, öğe türü adı öğeleriyle üretmelidir `ReferencePath`. Bu öğelerin her biri bir öğe belirtimine sahip olmalıdır (değerini `Include` bir öğenin özniteliğini) içeren başvuru tam yolu. Öğeleri aracılığıyla aşağıdaki yeni meta veriler ek olarak geçirilen girdi öğelerinin tüm meta verilerine sahip olmanız gerekir:  
   
-    -   `CopyLocal`, derlemenin çıktı klasörüne kopyalanıp kopyalanmayacağını belirten true veya false ayarlayın.  
+    - `CopyLocal`, derlemenin çıktı klasörüne kopyalanıp kopyalanmayacağını belirten true veya false ayarlayın.  
   
-    -   `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.  
+    - `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.  
   
-    -   `ResolvedFrom`, bunu çözümlenirse "{TargetFrameworkDirectory}" kümesi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dizin.  
+    - `ResolvedFrom`, bunu çözümlenirse "{TargetFrameworkDirectory}" kümesi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dizin.  
   
--   COM başvuruları:  
+- COM başvuruları:  
   
      Proje sistemi bir hedefi iyi bilinen adıyla çağırır `ResolveCOMReferences`. Bu hedef, öğe türü adı öğeleriyle üretmelidir `ComReferenceWrappers`. Bu öğelerin her biri, COM başvurusu için birlikte çalışabilirlik derlemesine giden tam yolu içeren bir öğe belirtimine sahip olmalıdır. Öğeleri girdi öğelerinin geçilen, ayrıca yeni meta veri adı ile tüm meta verilerine de sahip `CopyLocal`, derlemenin çıktı klasörüne kopyalanıp kopyalanmayacağını belirten true veya false ayarlayın  
   
--   Yerel başvurular  
+- Yerel başvurular  
   
      Proje sistemi bir hedefi iyi bilinen adıyla çağırır `ResolveNativeReferences`. Bu hedef, öğe türü adı öğeleriyle üretmelidir `NativeReferenceFile`. Öğeleri geçtiğini, meta verilerin adlı yeni bir ek girdi öğelerinin tüm meta verilerine olmalıdır `OriginalItemSpec`, başvurunun Asıl öğe belirtimini içeren.  
   

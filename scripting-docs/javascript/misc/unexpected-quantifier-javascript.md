@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f18195f344adca16fce7403d225c42826a2af544
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117154"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Beklenmeyen niceleyici (JavaScript)
 Normal ifade arama kriterinizi oluştururken bir geçersiz yineleme faktörü ile bir desen öğesi oluşturuldu. Örneğin, deseni  
@@ -45,7 +45,7 @@ Normal ifade arama kriterinizi oluştururken bir geçersiz yineleme faktörü il
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Arama deseni öğeniz yalnızca geçerli yinelemeyi faktörleri içeren emin olun.  
+- Arama deseni öğeniz yalnızca geçerli yinelemeyi faktörleri içeren emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Normal ifade nesnesi](../../javascript/reference/regular-expression-object-javascript.md)   

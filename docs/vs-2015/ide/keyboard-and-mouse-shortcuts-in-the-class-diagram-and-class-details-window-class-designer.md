@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113020"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Sınıf Diyagramında ve Sınıf Ayrıntıları Penceresinde Klavye ve Fare Kısayolları (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Sınıf Tasarımcısı ve gezinme eylemleri gerçekleştirmek için fare yanı s
   
  **Bu konudaki**  
   
--   [Sınıf Tasarımcısı'nda fareyle](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Sınıf Tasarımcısı'nda fareyle](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Sınıf Ayrıntıları penceresinde fareyle](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Sınıf Ayrıntıları penceresinde fareyle](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Sınıf Tasarımcısı'nda için klavyeyi kullanma](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Sınıf Tasarımcısı'nda için klavyeyi kullanma](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Sınıf Ayrıntıları penceresinde klavye kullanma](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Sınıf Ayrıntıları penceresinde klavye kullanma](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Sınıf Tasarımcısı'nda fareyle  
+## <a name="MouseClassDesigner"></a> Sınıf Tasarımcısı'nda fareyle  
  Sınıf diyagramları aşağıdaki fare eylemleri desteklenir:  
   
 |Fare birleşimi|Bağlam|Açıklama|  
@@ -49,20 +49,20 @@ Sınıf Tasarımcısı ve gezinme eylemleri gerçekleştirmek için fare yanı s
 |CTRL + fare tekerleği|Sınıf diyagramı|Yakınlaştırma.|  
 |CTRL + SHIFT + tıklama|Sınıf diyagramı|Yakınlaştırma.|  
   
-##  <a name="MouseClassDetails"></a> Sınıf Ayrıntıları penceresinde fareyle  
+## <a name="MouseClassDetails"></a> Sınıf Ayrıntıları penceresinde fareyle  
  Fare kullanıyorsanız, sınıf Ayrıntıları penceresinde ve bunu aşağıdaki yöntemlerle görüntüler veri görünümünü değiştirebilirsiniz:  
   
--   Düzenlenebilir bir hücreye tıklayıp söz konusu hücrenin içeriğini düzenlemenize olanak tanır. Değişikliklerinizi veri depolanan veya görüntülenen tüm konumları yansıtılır Özellikler penceresinde ve kaynak kodu içerir.  
+- Düzenlenebilir bir hücreye tıklayıp söz konusu hücrenin içeriğini düzenlemenize olanak tanır. Değişikliklerinizi veri depolanan veya görüntülenen tüm konumları yansıtılır Özellikler penceresinde ve kaynak kodu içerir.  
   
--   Bir satırın herhangi bir hücreye tıklayıp satır tarafından temsil edilen öğeyi özelliklerini görüntülemek için Özellikler penceresini neden olur.  
+- Bir satırın herhangi bir hücreye tıklayıp satır tarafından temsil edilen öğeyi özelliklerini görüntülemek için Özellikler penceresini neden olur.  
   
--   Bir sütunun genişliğini değiştirmek için sütun genişliğini istediğiniz kadar sınır sütun başlığını sağ tarafında sürükleyin.  
+- Bir sütunun genişliğini değiştirmek için sütun genişliğini istediğiniz kadar sınır sütun başlığını sağ tarafında sürükleyin.  
   
--   Genişletme veya satır solundaki oka simgeleri tıklayarak bölme ya da özellik düğümleri Daralt.  
+- Genişletme veya satır solundaki oka simgeleri tıklayarak bölme ya da özellik düğümleri Daralt.  
   
--   Sınıf Ayrıntıları penceresi, geçerli sınıf içinde yeni üyeler oluşturmak ve sınıf Ayrıntıları penceresi kılavuzunda üyelerin bölmeler arasında gezinmek için çeşitli düğmeler sunar. Daha fazla bilgi için sınıf Ayrıntıları penceresi düğmeleri bakın.  
+- Sınıf Ayrıntıları penceresi, geçerli sınıf içinde yeni üyeler oluşturmak ve sınıf Ayrıntıları penceresi kılavuzunda üyelerin bölmeler arasında gezinmek için çeşitli düğmeler sunar. Daha fazla bilgi için sınıf Ayrıntıları penceresi düğmeleri bakın.  
   
-##  <a name="KeyboardClassDesigner"></a> Sınıf Tasarımcısı'nda için klavyeyi kullanma  
+## <a name="KeyboardClassDesigner"></a> Sınıf Tasarımcısı'nda için klavyeyi kullanma  
  Sınıf diyagramları aşağıdaki klavye eylemleri desteklenir:  
   
 |Anahtar|Bağlam|Açıklama|  
@@ -89,7 +89,7 @@ Sınıf Tasarımcısı ve gezinme eylemleri gerçekleştirmek için fare yanı s
 |SHIFT+TAB|Tüm bağlamları|Önceki alt (kaydırma destekler) aynı üst içinde gider.|  
 |ALANI|Tüm bağlamları|Seçim geçerli öğe yapar.|  
   
-##  <a name="KeyboardClassDetails"></a> Sınıf Ayrıntıları penceresinde klavye kullanma  
+## <a name="KeyboardClassDetails"></a> Sınıf Ayrıntıları penceresinde klavye kullanma  
   
 > [!NOTE]
 >  Aşağıdaki anahtar bağlamaları için özel kod yazma deneyimi taklit edecek şekilde seçilmiştir.  

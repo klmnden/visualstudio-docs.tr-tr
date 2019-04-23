@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087949"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Nasıl yapılır: Dağıtım Güncelleştirmeleri için Alternatif Bir Konum Belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Yükleyebilirsiniz, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygul
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>MageUI.exe (Windows Forms tabanlı yardımcı program) kullanarak güncelleştirmeleri için alternatif bir konum belirtme  
   
-1.  Bir .NET Framework komut istemini açıp türü:  
+1. Bir .NET Framework komut istemini açıp türü:  
   
      **mageui.exe**  
   
-2.  Üzerinde **dosya** menüsünde seçin **açın** uygulamanızın dağıtım bildirimini açmak için.  
+2. Üzerinde **dosya** menüsünde seçin **açın** uygulamanızın dağıtım bildirimini açmak için.  
   
-3.  Seçin **dağıtım seçenekleri** sekmesi.  
+3. Seçin **dağıtım seçenekleri** sekmesi.  
   
-4.  Metin kutusuna adlı **başlatma konumu**, uygulama güncelleştirmeleri için dağıtım bildirimi içeren dizine URL'sini girin.  
+4. Metin kutusuna adlı **başlatma konumu**, uygulama güncelleştirmeleri için dağıtım bildirimi içeren dizine URL'sini girin.  
   
-5.  Dağıtım bildirimi kaydedin.  
+5. Dağıtım bildirimi kaydedin.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Mage.exe kullanarak güncelleştirmeleri için alternatif bir konum belirtme  
   
-1.  .NET Framework komut istemini açın.  
+1. .NET Framework komut istemini açın.  
   
-2.  Aşağıdaki komutu kullanarak güncelleştirme konumunu ayarlayın. Bu örnekte, **HelloWorld.exe.application** yoludur, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] her zaman .application uzantılı, uygulama bildiriminin ve **http://adatum.com/Update/Path** bu URL'dir[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama güncelleştirmelerini denetler.  
+2. Aşağıdaki komutu kullanarak güncelleştirme konumunu ayarlayın. Bu örnekte, **HelloWorld.exe.application** yoludur, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] her zaman .application uzantılı, uygulama bildiriminin ve **http://adatum.com/Update/Path** bu URL'dir[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama güncelleştirmelerini denetler.  
   
      **Görüntü-HelloWorld.exe.application - ProviderUrl güncelleştir http://adatum.com/Update/Path**  
   
-3.  Dosyayı kaydedin.  
+3. Dosyayı kaydedin.  
   
     > [!NOTE]
     >  Şimdi, Mage.exe dosyayı yeniden imzalamanız gerekir. Daha fazla bilgi için [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

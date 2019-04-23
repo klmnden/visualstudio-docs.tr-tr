@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58149678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117182"
 ---
 # <a name="shared-colors"></a>Paylaşılan renkler
 Açıklamayı buraya ekleyin.  
@@ -24,40 +24,40 @@ Açıklamayı buraya ekleyin.
   
  Doğru belirteci adları kullandığınızdan emin olun:  
   
--   **İşlevi, renk üzerinde dayalı belirteç adları kullanın.** Ortak paylaşılan renkler, belirli bir arabirim öğeleri ile ilişkili ve yalnızca aynı veya benzer özellikler için kullanılmak üzere tasarlanmıştır. Örneğin, dönen ilerleme animasyonunun basılı açılan kutusu rengi renk istediğiniz olduğundan yeniden kullanmayın. Birleşik giriş kutusu ve animasyon işlevleri farklıdır ve renk birleşik giriş kutusu değişikliklerle ilişkili, artık animasyon öğeniz için uygun bir renk olabilir. Renk tutarlı kullanımı, kullanıcılarınızın yönlendirmek ve Karışıklığı önlemek yardımcı olur.  
+- **İşlevi, renk üzerinde dayalı belirteç adları kullanın.** Ortak paylaşılan renkler, belirli bir arabirim öğeleri ile ilişkili ve yalnızca aynı veya benzer özellikler için kullanılmak üzere tasarlanmıştır. Örneğin, dönen ilerleme animasyonunun basılı açılan kutusu rengi renk istediğiniz olduğundan yeniden kullanmayın. Birleşik giriş kutusu ve animasyon işlevleri farklıdır ve renk birleşik giriş kutusu değişikliklerle ilişkili, artık animasyon öğeniz için uygun bir renk olabilir. Renk tutarlı kullanımı, kullanıcılarınızın yönlendirmek ve Karışıklığı önlemek yardımcı olur.  
   
--   **Arka plan ve metin renklerini doğru birlikte kullanın.** Metin ile kullanılmaya yönelik arka plan renklerini, ilişkili metin rengi sahip olur. Metin renkler, arka plan bilgileri için belirtilen dışında kullanmayın. İlişkili metin rengi değilse, arka plan rengi metni görüntülemek beklediğiniz tüm yüzeyi için kullanmayın. Diğer metin ve arkaplan renklerini birleşimlerini okunamayan bir arabirimde neden olabilir.  
+- **Arka plan ve metin renklerini doğru birlikte kullanın.** Metin ile kullanılmaya yönelik arka plan renklerini, ilişkili metin rengi sahip olur. Metin renkler, arka plan bilgileri için belirtilen dışında kullanmayın. İlişkili metin rengi değilse, arka plan rengi metni görüntülemek beklediğiniz tüm yüzeyi için kullanmayın. Diğer metin ve arkaplan renklerini birleşimlerini okunamayan bir arabirimde neden olabilir.  
   
--   **Konumlarına için uygun olan denetim renkleri kullanın.** Bazı durumlarda, bazı Visual Studio denetimler ayrı kenarlık ve arka plan renkleri yoktur. Bunun yerine, bu yüzeyleri arkasına renkleri ayarlama seçin. Her zaman burada denetimin yerleştirme konumu için uygun olan belirteci adları kullandığınızdan emin olun.  
+- **Konumlarına için uygun olan denetim renkleri kullanın.** Bazı durumlarda, bazı Visual Studio denetimler ayrı kenarlık ve arka plan renkleri yoktur. Bunun yerine, bu yüzeyleri arkasına renkleri ayarlama seçin. Her zaman burada denetimin yerleştirme konumu için uygun olan belirteci adları kullandığınızdan emin olun.  
   
 > [!IMPORTANT]
 >  "Başlangıç sayfası" veya "Şarabıı" kategoride bulunan belirteçleri kullanmayın!  
   
 ### <a name="command-structures"></a>Komut yapıları  
   
-####  <a name="BKMK_CommandMenus"></a> Menüler  
+#### <a name="BKMK_CommandMenus"></a> Menüler  
  Menüleri, Visual Studio 2013 içinde çeşitli yerlerde oluşabilir: belge veya araç pencerelerini veya IDE tamamında çeşitli konumlarda sağ katıştırılmış ana menü çubuğu. Menü diğer UI öğeleri ile ilişkili uygulamalar için ilgili öğenin bölümünde ele alınmıştır. Visual Studio ortamı tarafından sağlanan standart menü uygulama her zaman kullanmalısınız. Ancak, bazı ender durumlarda, standart bir Visual Studio menülerinin erişimi olmayabilir. Bu gibi durumlarda, kullanıcı Arabirimi diğer Visual Studio menülerinde ile tutarlı olmasını sağlamak için aşağıdaki belirteci adları kullanın.  
   
  ![Menüler kırmızı çizgi](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")  
   
- Kullan...  
- -   herhangi bir zamanda, özel bir menü oluşturmanız gerekir.  
+Kullan...  
+- herhangi bir zamanda, özel bir menü oluşturmanız gerekir.  
   
 - Visual Studio menülerinin eşleştirmek istediğiniz yeni bir kullanıcı Arabirimi bileşeninin olduğunda.  
   
-  Kullanmayın...  
-  tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.  
+Kullanmayın...  
+tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.  
   
 ##### <a name="menu-title"></a>Menü başlığı  
  Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan, kenarlık ve başlık metnini yanı isteğe bağlı bir karakter oluşur.  
   
  ![Menü başlığı kırmızı çizgi](../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")  
   
- Kullan...  
- Her bir özel menü başlığı oluşturuyorsunuz.  
+Kullan...  
+Her bir özel menü başlığı oluşturuyorsunuz.  
   
- Kullanmayın...  
- -   her şey için her zaman istemediğiniz menü başlığının eşleştirin.  
+Kullanmayın...  
+- her şey için her zaman istemediğiniz menü başlığının eşleştirin.  
   
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
@@ -65,7 +65,7 @@ Açıklamayı buraya ekleyin.
   
 |Bileşen|Öğe|Belirteç adı: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Menü başlığı varsayılan](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Menü başlığı**|Arka Plan|Hiçbiri|  
+|![Menü başlığı varsayılan](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Menü başlığı**|Arka Plan|None|  
 |![Menü başlığı varsayılan](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Menü başlığı**|Ön plan (metin)|`Environment.CommandBarTextActive`|  
 |![Menü başlığı glif varsayılan](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Menü başlığı karakter ile**|Ön plan (karakter)|`Environment.CommandBarMenuGlyph`|  
 |![Menü başlığı glif varsayılan](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Menü başlığı karakter ile**|Kenarlık|Yok.|  
@@ -92,7 +92,7 @@ Açıklamayı buraya ekleyin.
   
 |Bileşen|Öğe|Belirteç adı: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Menü başlığı devre dışı karakter ile](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Menü başlığı karakter ile**|Arka Plan|Hiçbiri|  
+|![Menü başlığı devre dışı karakter ile](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Menü başlığı karakter ile**|Arka Plan|Yok.|  
 |![Menü başlığı devre dışı karakter ile](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Menü başlığı karakter ile**|Ön plan (metin)|`Environment.CommandBarTextInactive`|  
 |![Menü başlığı devre dışı karakter ile](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Menü başlığı karakter ile**|Ön plan (karakter)|`Environment.CommandBarTextInactive`|  
 |![Menü başlığı devre dışı karakter ile](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Menü başlığı karakter ile**|Kenarlık|Yok.|  
@@ -105,9 +105,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  herhangi bir aşağı açılan listesi için menü çubuğunun ya da komut çubuğu başlatılır.  
   
- Kullanmayın...  
- -   herhangi bir aşağı açılan listeyi, başka bir bağlamda gerçekleşir.  
-  
+Kullanmayın...  
+- herhangi bir aşağı açılan listeyi, başka bir bağlamda gerçekleşir.  
+
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
   **Default**  
@@ -159,10 +159,10 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  Katıştırılmış bir komut için gerek duyduğunuz yerde çubuğu ancak standart bir Visual Studio komut çubuğu uygulaması kullanamaz.  
   
- Kullanmayın...  
- -   Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.  
-  
--   belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
+Kullanmayın...  
+- Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.  
+
+- belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
   
 ##### <a name="command-bar-group"></a>Komut çubuğu grubu  
  Bir komut çubuğu grubuyla ilgili bir komut çubuğu denetimleri kümesinden oluşur ve herhangi bir sayıda düğmeler, aşağı açılan menüler, birleşik giriş kutuları veya menüler Bölünmüş düğme içerebilir. Bu denetimler için renkleri ayrı belirteci adlarına göre düzenlenen ve ayrı olarak başka bir yerde bu kılavuzda ele alınmıştır. Ayırıcı çizginin bir komut çubuğu grubuyla ilgili alt gruplar ayırmak için kullanılır.  
@@ -172,9 +172,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  Katıştırılmış bir komut için gerek duyduğunuz yerde çubuğu ancak standart bir Visual Studio komut çubuğu uygulaması kullanamaz.  
   
- Kullanmayın...  
- -   Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.  
-  
+Kullanmayın...  
+- Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.  
+
 - belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.  
   
   **Varsayılan** (başka hiçbir durum)  
@@ -194,9 +194,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  düğmeleri için komut çubuğunda yer alır.  
   
- Kullanmayın...  
- -   denetimler için belirteç adlarına sahip.  
-  
+Kullanmayın...  
+- denetimler için belirteç adlarına sahip.  
+
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
   **Default**  
@@ -237,21 +237,21 @@ Açıklamayı buraya ekleyin.
 |![Komut simgesinin devre dışı](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Devre dışı bir komut simgesi**|Ön plan (metin)|`Environment.CommandBarTextInactive`|  
 |![Komut simgesinin devre dışı](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Devre dışı bir komut simgesi**|Kenarlık|Yok|  
   
-#####  <a name="BKMK_CommandComboBox"></a> Birleşik giriş kutusu  
+##### <a name="BKMK_CommandComboBox"></a> Birleşik giriş kutusu  
   
 > [!IMPORTANT]
 >  Birleşik giriş kutuları, açılan listeler için benzerdir, ancak düzenlenebilir metin bölge. Düzenlenebilir metin bölge, açılan içermez, altında bulunan renk belirteçleri kullanın. [açılan](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Birleşik giriş kutusu kırmızı çizgi](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
- Kullan...  
- -   özel bir birleşik giriş kutuları oluştururken.  
-  
+Kullan...  
+- özel bir birleşik giriş kutuları oluştururken.  
+
 - bir birleşik giriş kutusuna benzeyen bir komut çubuğu denetimini oluştururken.  
-  
-  Kullanmayın...  
-  -   her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.  
-  
+
+Kullanmayın...  
+- her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.  
+
 - erişim için bir stil uygulanmış bir birleşik giriş kutusu olduğunda.  
   
   **Default**  
@@ -312,10 +312,10 @@ Açıklamayı buraya ekleyin.
 |![Birleşik giriş kutusu giriş alanını devre dışı](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Giriş alanı**|Ön plan (metin)|`Environment.ComboBoxDisabledText`|  
 |![Birleşik giriş kutusu giriş alanını devre dışı](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Giriş alanı**|Kenarlık|`Environment.ComboBoxDisabledBorder`|  
 |![Birleşik giriş kutusu giriş alanını devre dışı](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Giriş alanı**|Ayırıcı|Hiçbir ayırıcısı|  
-|![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Arka Plan|Hiçbiri|  
+|![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Arka Plan|None|  
 |![Birleşik giriş kutusu&#47;bırak&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Ön plan (karakter)|`Environment.ComboBoxDisabledGlyph`|  
   
-#####  <a name="BKMK_CommandDropDown"></a> Açılan  
+##### <a name="BKMK_CommandDropDown"></a> Açılan  
   
 > [!IMPORTANT]
 >  Açılan listeler, birleşik giriş kutuları için benzerdir, ancak düzenlenebilir metin bölgeleri yoksundur. Düzenlenebilir metin bölge, açılan içerir, altında bulunan renk belirteçleri kullanın. [birleşik giriş kutusu](../misc/shared-colors.md#BKMK_CommandComboBox).  
@@ -325,9 +325,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.  
   
- Kullanmayın...  
- -   her şey için aşağı açılan listesine benzer değil.  
-  
+Kullanmayın...  
+- her şey için aşağı açılan listesine benzer değil.  
+
 - Birleşik giriş kutuları veya Bölünmüş düğme.  
   
   **Default**  
@@ -338,7 +338,7 @@ Açıklamayı buraya ekleyin.
 |![DROP&#45;seçim alanı aşağı](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Seçim alanı**|Ön plan (metin)|`DropDownText`|  
 |![DROP&#45;seçim alanı aşağı](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Seçim alanı**|Kenarlık|`DropDownBorder`|  
 |![DROP&#45;seçim alanı aşağı](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Seçim alanı**|Ayırıcı|Hiçbir ayırıcısı|  
-|![DROP&#45;Kapat düğmesi](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Aşağı açılan düğmesi**|Arka Plan|Hiçbiri|  
+|![DROP&#45;Kapat düğmesi](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Aşağı açılan düğmesi**|Arka Plan|None|  
 |![DROP&#45;Kapat düğmesi](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Aşağı açılan düğmesi**|Ön plan (karakter)|`Environment.DropDownGlyph`|  
 |![DROP&#45;açılan listesinde](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Aşağı açılan listesi**|Arka Plan|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Modern temalı Arabiriminde kullanılmaz, ancak gradyan durakları ve arka planı için bu değerleri vardır.|  
 |![DROP&#45;açılan listesinde](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Aşağı açılan listesi**|Ön plan (metin)|`Environment.ComboBoxItemText`|  
@@ -389,16 +389,16 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.  
   
- Kullanmayın...  
- -   diğer düğme türleri için.  
-  
+Kullanmayın...  
+- diğer düğme türleri için.  
+
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
   **Default**  
   
 |Bileşen|Öğe|Belirteç adı: Category.Color|  
 |---------------|-------------|--------------------------------|  
-|![Bölünmüş düğme](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Bölünmüş düğme (varsayılan)**|Arka Plan|Hiçbiri|  
+|![Bölünmüş düğme](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Bölünmüş düğme (varsayılan)**|Arka Plan|None|  
 |![Bölünmüş düğme](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Bölünmüş düğme (varsayılan)**|Ön plan (metin)|`Environment.CommandBarTextActive`|  
 |![Bölünmüş düğme](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Bölünmüş düğme (varsayılan)**|Ön plan (karakter)|`Environment.CommandBarSplitButtonGlyph`|  
 |![Bölünmüş düğme](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Bölünmüş düğme (varsayılan)**|Kenarlık|Yok|  
@@ -555,7 +555,7 @@ Açıklamayı buraya ekleyin.
   ne zaman özel belge sekmeleri oluşturuyorsunuz.  
   
   Kullanmayın...  
-  -   (Önizleme) provisional sekmeler için.  
+  - (Önizleme) provisional sekmeler için.  
   
 - otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
   
@@ -603,9 +603,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizleme sekme rengini eşleştirilecek istiyor.  
   
- Kullanmayın...  
- -   Belge ya da geçici olmayan sekmesinde herhangi bir türdeki (Önizleme).  
-  
+Kullanmayın...  
+- Belge ya da geçici olmayan sekmesinde herhangi bir türdeki (Önizleme).  
+
 - otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.  
   
   **Seçili bir önizleme sekmesinde: Odaklanmış**  
@@ -647,12 +647,12 @@ Açıklamayı buraya ekleyin.
   
  ![Taşma kırmızı çizgi](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
   
- Kullan...  
- ne zaman bir özel belge taşma düğmesini oluşturuyorsunuz.  
-  
- Kullanmayın...  
- -   taşma düğmesini için benzer değil kullanıcı Arabirimi için.  
-  
+Kullan...  
+ne zaman bir özel belge taşma düğmesini oluşturuyorsunuz.  
+
+Kullanmayın...  
+- taşma düğmesini için benzer değil kullanıcı Arabirimi için.  
+
 - Komut çubuğu taşma düğmeleri.  
   
   **Default**  
@@ -757,9 +757,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  araç penceresinin başlık çubuğu renk belirteçleri kullanan kullanıcı arabiriminde görünen düğme.  
   
- Kullanmayın...  
- -   diğer konumlardaki düğmeler.  
-  
+Kullanmayın...  
+- diğer konumlardaki düğmeler.  
+
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
   **Default**  
@@ -879,7 +879,7 @@ Açıklamayı buraya ekleyin.
   ne zaman bir özel arama kutusu tasarlarken.  
   
   Kullanmayın...  
-  -   her şey için bir arama kutusu değil.  
+  - her şey için bir arama kutusu değil.  
   
 - her zaman arama eşleştirilecek istemediğiniz her şey için kullanıcı Arabirimi kutusu.  
   
@@ -891,7 +891,7 @@ Açıklamayı buraya ekleyin.
 |![Arama giriş alanı odaklanmış](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Giriş alanı**|Ön plan (metin)|`SearchControl.FocusedBackground`|  
 |![Arama giriş alanı odaklanmış](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Giriş alanı**|Kenarlık|`SearchControl.FocusedBorder`|  
 |![Arama giriş alanı odaklanmış](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Giriş alanı**|Ayırıcı|`SearchControl.FocusedDropDownSeparator`|  
-|![Arama eylem düğmesi odaklanmış](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Eylem düğmesi**|Arka Plan|Hiçbiri|  
+|![Arama eylem düğmesi odaklanmış](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Eylem düğmesi**|Arka Plan|Yok.|  
 |![Arama eylem düğmesi odaklanmış](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Eylem düğmesi**|Ön plan (arama karakter)|`SearchControl.SearchGlyph`|  
 |![Arama eylem düğmesi odaklanmış](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Eylem düğmesi**|Ön plan (durdurma karakter)|`SearchControl.StopGlyph`|  
 |![Arama eylem düğmesi odaklanmış](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Eylem düğmesi**|Ön plan (NET karakter)|`SearchControl.ClearGlyph`|  
@@ -938,7 +938,7 @@ Açıklamayı buraya ekleyin.
 |---------------|-------------|--------------------------------|  
 |![Arama giriş alanı vurgulama](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Giriş alanı vurgulanmış metin**|Arka Plan|`SearchControl.Selection`|  
 |![Arama giriş alanı vurgulama](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Giriş alanı vurgulanmış metin**|Ön plan (metin)|`SearchControl.FocusedBackground`|  
-|![Arama giriş alanı vurgulama](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Giriş alanı vurgulanmış metin**|Kenarlık|Hiçbiri|  
+|![Arama giriş alanı vurgulama](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Giriş alanı vurgulanmış metin**|Kenarlık|None|  
 |![Arama giriş alanı vurgulama](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Giriş alanı vurgulanmış metin**|Ayırıcı|`SearchControl.FocusedDropDownSeparator`|  
   
  **Devre dışı**  
@@ -949,10 +949,10 @@ Açıklamayı buraya ekleyin.
 |![Arama giriş alanını devre dışı](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Giriş alanı**|Ön plan (metin)|`SearchControl.Disabled`|  
 |![Arama giriş alanını devre dışı](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Giriş alanı**|Kenarlık|`SearchControl.DisabledBorder`|  
 |![Arama giriş alanını devre dışı](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Giriş alanı**|Ayırıcı|`SearchControl.DropDownSeparator`|  
-|![Arama eylem düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Eylem düğmesi**|Arka Plan|Hiçbiri|  
+|![Arama eylem düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Eylem düğmesi**|Arka Plan|Yok.|  
 |![Arama eylem düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Eylem düğmesi**|Ön plan (karakter)|`SearchControl.ActionButtonDisabledGlyph`|  
 |![Arama eylem düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Eylem düğmesi**|Kenarlık|Yok.|  
-|![Arama açılan&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Arka Plan|Hiçbiri|  
+|![Arama açılan&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Arka Plan|Yok.|  
 |![Arama açılan&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Ön plan (karakter)|`SearchControl.DisabledDownButtonGlyph`|  
 |![Arama açılan&#45;Kapat düğmesi devre dışı](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Aşağı açılan düğmesi**|Kenarlık|Yok.|  
   
@@ -961,14 +961,14 @@ Açıklamayı buraya ekleyin.
   
  ![Arama açılan&#45;aşağı kırmızı çizgi](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")  
   
- Kullan...  
- -   ne zaman bir özel arama açılan listedeki oluşturuyorsunuz.  
-  
+Kullan...  
+- ne zaman bir özel arama açılan listedeki oluşturuyorsunuz.  
+
 - Düzeltme listesi bileşenleri için doğru belirteci adları.  
-  
-  Kullanmayın...  
-  -   diğer bağlamlarda görünen açılan listeler.  
-  
+
+Kullanmayın...  
+- diğer bağlamlarda görünen açılan listeler.  
+
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
   **Varsayılan (başka hiçbir durum)**  
@@ -1117,7 +1117,7 @@ Açıklamayı buraya ekleyin.
 |![Kaydırma basılı ok](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br /><br /> **Kaydırma ok**|Arka Plan|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Kaydırma çubuğu aynı renge ayarlayın.|  
 |![Kaydırma basılı ok](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br /><br /> **Kaydırma ok**|Ön plan (karakter)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-####  <a name="BKMK_TreeView"></a> Ağaç görünümü  
+#### <a name="BKMK_TreeView"></a> Ağaç görünümü  
  Çözüm Gezgini, Sunucu Gezgini ve sınıf görünümü de dahil olmak üzere birçok araç pencereleri, renklerini rengi adları TreeView kategorisinde denetlediği hiyerarşik bir kuruluş uygulamaz. Ağaç görünümünde tüm öğeler, arka plan ve metin renklerini içerir. Alt öğelerinin iç içe geçmiş öğeler de öğe genişletilmiş veya daraltılmış olup olmadığını belirten karakterler var.  
   
  ![Ağaç görünümü kırmızı çizgi](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")  
@@ -1125,9 +1125,9 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.  
   
- Kullanmayın...  
- -   her şey için bir ağaç görünümüne benzer değil.  
-  
+Kullanmayın...  
+- her şey için bir ağaç görünümüne benzer değil.  
+
 - Belirtilen dışındaki tüm arka plan/ön plan arada.  
   
   **Default**  
@@ -1284,12 +1284,12 @@ Açıklamayı buraya ekleyin.
 #### <a name="drop-boxcombo-box-controls"></a>Açılan kutusu/birleşik giriş kutusu denetimleri  
  ![DROP&#45;aşağı&#47;birleşik giriş kutusu kırmızı çizgi](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")  
   
- Kullan...  
- açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.  
-  
- Kullanmayın...  
- -   bir açılan veya birleşik giriş kutusu değil herhangi bir UI için.  
-  
+Kullan...  
+açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.  
+
+Kullanmayın...  
+- bir açılan veya birleşik giriş kutusu değil herhangi bir UI için.  
+
 - için bir [açılan](../misc/shared-colors.md#BKMK_CommandDropDown) veya [birleşik giriş kutusu](../misc/shared-colors.md#BKMK_CommandComboBox) komut çubuğunda.  
   
   **Default**  
@@ -1420,20 +1420,20 @@ Açıklamayı buraya ekleyin.
   
  ![Bildirim Tasarımcısı kırmızı çizgi](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
   
- Kullan...  
- -   Bildirim Tasarımcısı için benzer tasarımcıları.  
-  
+Kullan...  
+- Bildirim Tasarımcısı için benzer tasarımcıları.  
+
 - bir düzenleyici belgesi içinde üst kısmındaki ortak sekme denetimleri kullanarak yerine yanı sıra.  
-  
-  Kullanmayın...  
-  -   altıdan fazla sekme varsa.  
-  
+
+Kullanmayın...  
+- altıdan fazla sekme varsa.  
+
 - Bildirim Tasarımcısı gibi yapılandırılmamış herhangi bir UI için.  
   
 |Durum|Bileşen|Öğe|Belirteç adı: Category.Color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Varsayılan (Seçili)|Tab|Arka Plan|`ManifestDesigner.TabActive`|  
-|Varsayılan (Seçili)|Tab|Kenarlık|Hiçbiri|  
+|Varsayılan (Seçili)|Tab|Kenarlık|Yok.|  
 |Varsayılan (Seçili)|Açıklama bölmesi|Arka Plan|`ManifestDesigner.DescriptionPane`|  
 |Varsayılan (Seçili)|İçerik sayfası|Arka Plan|`ManifestDesigner.Background`|  
 |Varsayılan (Seçili)|İçerik sayfası|İletişim yardımcı metni|`ManifestDesigner.WatermarkText`<br /><br /> Bu belirteç adı işlevini eşleşmiyor.|  
@@ -1521,10 +1521,10 @@ Açıklamayı buraya ekleyin.
  Kullan...  
  Visual Studio ortamının arka eşleştirmek istediğiniz yerde.  
   
- Kullanmayın...  
- -   arka plan yüzeyleri olmayan basamak için dolgu olarak.  
-  
--   ön plan öğeleri yerleştirmek istediğiniz arka plan olarak.  
+Kullanmayın...  
+- arka plan yüzeyleri olmayan basamak için dolgu olarak.  
+
+- ön plan öğeleri yerleştirmek istediğiniz arka plan olarak.  
   
 |Bileşen|Öğe|Belirteç adı: Category.Color|  
 |---------------|-------------|--------------------------------|  
@@ -1542,9 +1542,9 @@ Açıklamayı buraya ekleyin.
   
  ![Komut raf kırmızı çizgi](../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")  
   
- Kullan...  
- -   menüleri ve araç çubukları yerleştirdiğiniz alanları.  
-  
+Kullan...  
+- menüleri ve araç çubukları yerleştirdiğiniz alanları.  
+
 - doğru arka plan / ön plan belirteç adı birleşimi.  
   
   Kullanmayın...  
@@ -1576,8 +1576,8 @@ Açıklamayı buraya ekleyin.
 |---------------|-------------|--------------------------------|  
 |![Araç kutusu üst düğümü](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Üst düğümü**|Arka Plan|`Environment.ToolboxContent`<br /><br /> Başlıkları<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Bireysel öğeleri veya hiçbir kullanılabilir denetimleri, tüm pencere|  
 |![Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Alt düğümü**|Arka Plan|`Environment.ToolboxContent`<br /><br /> Başlıkları<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Bireysel öğeleri veya hiçbir kullanılabilir denetimleri, tüm pencere|  
-|![Araç kutusu üst düğümü](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Üst düğümü**|Kenarlık|Hiçbiri|  
-|![Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Alt düğümü**|Kenarlık|Hiçbiri|  
+|![Araç kutusu üst düğümü](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Üst düğümü**|Kenarlık|Yok.|  
+|![Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Alt düğümü**|Kenarlık|Yok.|  
 |![Araç kutusu üst düğümü](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Üst düğümü**|Ön plan (karakter)|`Environment.ToolboxContent`|  
 |![Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Alt düğümü**|Ön plan (karakter)|`Environment.ToolboxContent`|  
 |![Araç kutusu üst düğümü](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Üst düğümü**|Ön plan (metin)|`Environment.ToolboxContent`|  
@@ -1588,7 +1588,7 @@ Açıklamayı buraya ekleyin.
 |Bileşen|Öğe|Belirteç adı: Category.Color|  
 |---------------|-------------|--------------------------------|  
 |![Üzerine gelindiğinde Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Alt düğümü üzerine gelindiğinde Araç kutusu**|Arka Plan|`Environment.ToolboxContentMouseOver`<br /><br /> Yalnızca tek tek öğeleri|  
-|![Üzerine gelindiğinde Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Alt düğümü üzerine gelindiğinde Araç kutusu**|Kenarlık|Hiçbiri|  
+|![Üzerine gelindiğinde Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Alt düğümü üzerine gelindiğinde Araç kutusu**|Kenarlık|None|  
 |![Üzerine gelindiğinde Araç kutusu alt düğüm](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Alt düğümü üzerine gelindiğinde Araç kutusu**|Ön plan (metin)|`Environment.ToolboxContentMouseOver`<br /><br /> Yalnızca tek tek öğeleri|  
   
  **Seçili**  
@@ -1605,8 +1605,8 @@ Açıklamayı buraya ekleyin.
 |![Araç kutusu alt düğüm odaklanmış](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Odaklanmış alt düğümü**|Ön plan (metin)|`TreeView.SelectedItemActive`<br /><br /> Gelen [ağaç görünümü](../misc/shared-colors.md#BKMK_TreeView) kategorisi|  
 |![Araç kutusu üst düğümü odaklanmadan](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Plana odaklanmadan üst düğümü**|Arka Plan|`TreeView.SelectedItemInactive`<br /><br /> Gelen [ağaç görünümü](../misc/shared-colors.md#BKMK_TreeView) kategorisi|  
 |![Araç kutusu alt düğüm odaklanmadan](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Plana odaklanmadan alt düğümü**|Arka Plan|`TreeView.SelectedItemInactive`<br /><br /> Gelen [ağaç görünümü](../misc/shared-colors.md#BKMK_TreeView) kategorisi|  
-|![Araç kutusu üst düğümü odaklanmadan](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Plana odaklanmadan üst düğümü**|Kenarlık|Hiçbiri|  
-|![Araç kutusu alt düğüm odaklanmadan](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Plana odaklanmadan alt düğümü**|Kenarlık|Hiçbiri|  
+|![Araç kutusu üst düğümü odaklanmadan](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Plana odaklanmadan üst düğümü**|Kenarlık|Yok.|  
+|![Araç kutusu alt düğüm odaklanmadan](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Plana odaklanmadan alt düğümü**|Kenarlık|None|  
 |![Araç kutusu üst düğümü odaklanmadan](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Plana odaklanmadan üst düğümü**|Ön plan (karakter)|`TreeView.SelectedItemInactive`<br /><br /> Gelen [ağaç görünümü](../misc/shared-colors.md#BKMK_TreeView) kategorisi|  
 |![Araç kutusu alt düğüm odaklanmadan](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Plana odaklanmadan alt düğümü**|Ön plan (karakter)|`TreeView.SelectedItemInactive`<br /><br /> Gelen [ağaç görünümü](../misc/shared-colors.md#BKMK_TreeView) kategorisi|  
 |![Araç kutusu üst düğümü odaklanmadan](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Plana odaklanmadan üst düğümü**|Ön plan (metin)|`TreeView.SelectedItemInactive`<br /><br /> Gelen [ağaç görünümü](../misc/shared-colors.md#BKMK_TreeView) kategorisi|  

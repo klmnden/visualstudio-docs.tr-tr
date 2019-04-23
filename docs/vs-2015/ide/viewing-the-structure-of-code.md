@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115074"
 ---
 # <a name="viewing-the-structure-of-code"></a>Kod Yapısını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Nesneleri ve üyeleri Visual Studio projelerinde ve nesneleri ve üyeleri .NET F
 > [!NOTE]
 >  Visual Studio sürümü ve kullandığınız ayarlar IDE içindeki özellikleri etkileyebilir. Bunlar, bu konuda açıklanan olanlardan farklı olabilir.  
   
-##  <a name="BKMK_ClassView"></a> Sınıf Görünümü (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Sınıf Görünümü (Visual Basic, C#, C++)  
  **Sınıf Görünümü** parçası olarak gösterilen **Çözüm Gezgini** gibi ayrı bir pencerede iyi. **Sınıf görünümü** penceresi uygulamanın öğelerini görüntüler. Üst bölme ad alanlarını, türleri, arabirimleri, numaralandırmalar ve sınıflar ve alt bölmesinde üst bölmede seçilen türe ait üyelerini görüntüler. Bu pencere öğesini kullanarak, kaynak kodu üye tanımlarında taşıyabilirsiniz (veya **Nesne Tarayıcısı** öğe çözümünüzü dışında tanımlı ise).  
   
  Alt öğeleri görüntülemek için bir proje derlemek zorunda değilsiniz **sınıf görünümü**. Kod projenizde değiştirirken penceresi yenilenir.  
@@ -110,7 +110,7 @@ Nesneleri ve üyeleri Visual Studio projelerinde ve nesneleri ve üyeleri .NET F
 |**Başvuruya Git**|Türe veya üyeye başvuru varsa kaynak kodunu görüntüler.|  
 |**Çağrı hiyerarşisini görüntüle**|Seçili yöntemi görüntüler **çağrı hiyerarşisi** penceresi.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Çağrı hiyerarşisi (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Çağrı hiyerarşisi (Visual Basic, C#, C++)  
  **Çağrı hiyerarşisi** penceresi gösterir, burada belirtilen yöntem (veya özellik veya Oluşturucu) olarak adlandırılır ve söz konusu yönteminden çağrılan yöntemler listelenmiştir. Belirtilen kapsamda olan yöntemleri çağıran/çağrılan ilişkileri gösteren çağrı grafı birden fazla düzeyde görüntüleyebilirsiniz.  
   
  Görüntüleyebileceğiniz **çağrı hiyerarşisi** yöntem (veya özellik veya Oluşturucu) seçip ardından penceresi **sınıf hiyerarşisini görüntüle** kısayol menüsünde. Aşağıdaki resimde görünen benzemelidir.  
@@ -135,7 +135,7 @@ Nesneleri ve üyeleri Visual Studio projelerinde ve nesneleri ve üyeleri .NET F
 |**Kopyala**|Seçili düğümü (ancak onun alt düğümleri) kopyalar.|  
 |**Yenileme**|Bilgileri yeniler.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Nesne Tarayıcısı  
+## <a name="BKMK_ObjectBrowser"></a> Nesne Tarayıcısı  
  **Nesne Tarayıcısı** projelerinizde kod açıklamaları görüntüler.  
   
  Görüntülemek istediğiniz filtreleyebilirsiniz **Nesne Tarayıcısı**. Pencerenin en üstündeki açılan listeyi kullanarak, aşağıdaki seçenekleri arasından seçim yapabilirsiniz:  
@@ -194,7 +194,7 @@ Nesneleri ve üyeleri Visual Studio projelerinde ve nesneleri ve üyeleri .NET F
 |**Başvuruya Git**|Türe veya üyeye başvuru varsa kaynak kodunu görüntüler.|  
 |**Çağrı hiyerarşisini görüntüle**|Seçili yöntemi görüntüler **çağrı hiyerarşisi** penceresi.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Kod tanımı penceresi (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Kod tanımı penceresi (C#, C++)  
  **Kod tanımı** penceresinde etkin projedeki seçili tür veya üyenin tanımı gösterilir. Türe veya üyeye bir kod Görünümü penceresi veya Kod düzenleyicisinde seçilebilir.  
   
  Bu pencereyi salt okunur olsa da, yer imlerinde veya kesme noktaları ayarlayabilirsiniz. Görüntülenen tanımı değiştirmek için seçin **tanımını Düzenle** kısayol menüsünde. Bu kaynak dosyasını Kod düzenleyicisinde açar ve tanımı başladığı noktasını satıra taşır.  

@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e424078580ff4a739046b2555c3fb94ee17dafa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089671"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 Bit Desteği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ ms.locfileid: "54775923"
 ## <a name="deploying-a-64-bit-application"></a>64 bitlik bir uygulama dağıtma
  Aşağıdaki konular, 64 bitlik uygulamaların dağıtımını tartışır.
 
--   [64 bit Uygulamalar için Dağıtım Önkoşulları](../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [64 bit Uygulamalar için Dağıtım Önkoşulları](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Nasıl yapılır: Bir 64-bit platformu için bir Windows Yükleyici oluşturma](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+- [Nasıl yapılır: Bir 64-bit platformu için bir Windows Yükleyici oluşturma](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Projeleri 64-bit uygulamalar yapılandırma
  Aşağıdaki başlıklar 64 bitlik uygulamalara oluşturulacak yapılandırma projelerini tartışır.
 
--   [Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)
+- [Nasıl yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Bir 64 bit uygulamanın hatalarını ayıklama
  Düzenle ve devam et seçenekleri çalışmaz [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] bir 64 bit Windows işletim sisteminde çalışıyor. Aşağıdaki konular, 64 bitlik uygulamalardaki hata ayıklamayı tartışır.
 
--   [Nasıl yapılır: 64-bit platformlarda hata ayıklama](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
+- [Nasıl yapılır: 64-bit platformlarda hata ayıklama](http://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
--   [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)
+- [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)
 
--   [Döküm Dosyalarını Kullanma](../debugger/using-dump-files.md)
+- [Döküm Dosyalarını Kullanma](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)
+ [Nasıl yapılır: Projeleri Hedef Platformlar İçin Yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md)

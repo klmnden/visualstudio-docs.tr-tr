@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091830"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>İzlenecek yol: N katmanlı veri uygulaması oluşturma
 *N katmanlı* veri uygulamaları verilere erişen ve birden çok mantıksal katmana ayrılmış uygulamalarıdır veya *katmanları*. Uygulama bileşenlerini farklı katmanlara ayırmak uygulamanızın yönetilebilirliğini ve ölçeklenebilirliğini artırır. Bunu, tüm çözümü yeniden tasarlamanıza gerek kalmadan tek bir katmana uygulanabilen yeni teknolojilerin daha kolay benimsenmesini sağlayarak yapar. N katmanlı mimaride bir sunu katmanı, bir orta katman ve bir veri katmanı bulunur. Orta katmanda genellikle bir veri erişim katmanı, iş mantığı katmanı ve kimlik doğrulaması ve doğrulama gibi paylaşılan bileşenler bulunur. Veri katmanında ilişkisel bir veritabanı vardır. N katmanlı uygulamalar hassas bilgileri orta katmanın veri erişimi katmanında depolayarak sunu katmanına erişimi olan son kullanıcılardan uzakta tutulmasını sağlar. Daha fazla bilgi için [N katmanlı veri uygulamalarına genel bakış](../data-tools/n-tier-data-applications-overview.md).
@@ -30,23 +30,23 @@ Bu izlenecek yolda, veri kümesi nasıl ayrıldığı gösterilir ve `TableAdapt
 
 Bu kılavuz boyunca aşağıdaki adımları gerçekleştirin:
 
--   Birden çok proje içeren yeni bir n katmanlı çözüm oluşturma.
+- Birden çok proje içeren yeni bir n katmanlı çözüm oluşturma.
 
--   N katmanlı çözüme iki sınıf kitaplığı ekleme.
+- N katmanlı çözüme iki sınıf kitaplığı ekleme.
 
--   Kullanarak bir türü belirtilmiş veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.
+- Kullanarak bir türü belirtilmiş veri kümesi oluşturma **veri kaynağı Yapılandırma Sihirbazı**.
 
--   Oluşturulan ayrı [TableAdapters](create-and-configure-tableadapters.md) ve veri kümesi kodunu farklı projelere.
+- Oluşturulan ayrı [TableAdapters](create-and-configure-tableadapters.md) ve veri kümesi kodunu farklı projelere.
 
--   Veri erişim katmanına çağrı göndermek için bir Windows Communication Foundation (WCF) hizmeti oluşturma.
+- Veri erişim katmanına çağrı göndermek için bir Windows Communication Foundation (WCF) hizmeti oluşturma.
 
--   Veri erişim katmanından veri almak için hizmet içinde işlevler oluşturma.
+- Veri erişim katmanından veri almak için hizmet içinde işlevler oluşturma.
 
--   Sunu katmanı olarak hizmet verecek bir Windows Forms uygulaması oluşturma.
+- Sunu katmanı olarak hizmet verecek bir Windows Forms uygulaması oluşturma.
 
--   Veri kaynağına bağlanan Windows Forms denetimleri oluşturma.
+- Veri kaynağına bağlanan Windows Forms denetimleri oluşturma.
 
--   Veri tablolarını doldurmak için kod yazma.
+- Veri tablolarını doldurmak için kod yazma.
 
 ![video bağlantısı](../data-tools/media/playvideo.gif) bu konunun video sürümü için bkz: [Video nasıl yapılır: N katmanlı veri uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkId=115188).
 
@@ -301,7 +301,7 @@ Biz belirleyeceğim **PresentationTier** sunan ve verilerle etkileşime giren ge
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Yeni sunu katmanı projesini başlangıç projesi olarak ayarlamak için
 
--   İçinde **Çözüm Gezgini**, sağ **PresentationTier** tıklatıp **başlangıç projesi olarak ayarla**.
+- İçinde **Çözüm Gezgini**, sağ **PresentationTier** tıklatıp **başlangıç projesi olarak ayarla**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Sunu katmanına başvuru ekleme
  İstemci uygulaması, hizmetteki yöntemlere erişmek için bir veri hizmetine hizmet başvurusu PresentationTier gerektirir. Buna ek olarak, WCF hizmeti tür paylaşımını etkinleştirmek için veri kümesine bir başvuru gerektirir. Veri hizmeti aracılığıyla tür paylaşımı etkinleştirilinceye kadar kısmi veri kümesi sınıfına eklenen kod sunu katmanı kullanılamıyor. Satır ve sütun değişikliği olaylarını veri tablosunun bir doğrulama kodu gibi bir kod genellikle eklediğinden bu kodu istemcisinden erişmek isteyeceksiniz olasıdır.
@@ -375,9 +375,9 @@ Tuşlarına basarak uygulamayı çalıştırmak **F5**. Verilerden `Customers` v
 ## <a name="next-steps"></a>Sonraki adımlar
  Uygulama gereksinimlerinize bağlı olarak, Windows tabanlı bir uygulama içinde ilgili verileri kaydettikten sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Örneğin, bu uygulamada aşağıdaki geliştirmeleri yapabilirsiniz:
 
--   Veri kümesine doğrulama ekleme.
+- Veri kümesine doğrulama ekleme.
 
--   Verileri tekrar veritabanında güncelleştirmek için hizmete ek yöntemler ekleme.
+- Verileri tekrar veritabanında güncelleştirmek için hizmete ek yöntemler ekleme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

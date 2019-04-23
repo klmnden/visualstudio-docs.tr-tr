@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 709643cf082e8018153459845bba55fa133d1332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: aba17e94486ca04e12055c7bf9959f927440c53d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089386"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Nasıl yapılır: Proje Dosyalarında Ayrılmış XML Karakterlerini Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Proje dosyaları yazdığınızda, ayrılmış XML karakterleri, örneğin özel
   
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Çift tırnak işareti bir proje dosyasında kullanmak için  
   
--   Adlandırılmış varlık, ilgili ile çift tırnak işaretleri yerine &quot;. Örneğin, çift tırnak işaretlerini yerleştirmek için `EXEFile` öğe listesi, türü:  
+- Adlandırılmış varlık, ilgili ile çift tırnak işaretleri yerine &quot;. Örneğin, çift tırnak işaretlerini yerleştirmek için `EXEFile` öğe listesi, türü:  
   
     ```  
     <Message Text="The output file is "@(EXEFile)"."/>  

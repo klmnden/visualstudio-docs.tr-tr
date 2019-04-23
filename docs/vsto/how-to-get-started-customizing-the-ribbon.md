@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081573"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Nasıl yapılır: Şerit özelleştirmeye başlama
   Bir Microsoft Office uygulamasının Şeritine özelleştirmek için ekleyin bir **Şerit (Görsel Tasarımcı)** veya **Ribbon (XML)** bir Office projesi için öğesi.
@@ -37,33 +37,33 @@ ms.locfileid: "56640122"
 
     Adları şu karakterleri içeremez:
 
-   -   Pound (#)
+   - Pound (#)
 
-   -   Yüzde (%)
+   - Yüzde (%)
 
-   -   Ve işareti (&)
+   - Ve işareti (&)
 
-   -   Yıldız işareti (*)
+   - Yıldız işareti (*)
 
-   -   Dikey çubuk (|)
+   - Dikey çubuk (|)
 
-   -   Ters eğik çizgi (\\)
+   - Ters eğik çizgi (\\)
 
-   -   İki nokta üst üste (:)
+   - İki nokta üst üste (:)
 
-   -   Çift tırnak işareti (")
+   - Çift tırnak işareti (")
 
-   -   Küçüktür (\<)
+   - Küçüktür (\<)
 
-   -   Büyüktür (>)
+   - Büyüktür (>)
 
-   -   Soru işareti (?)
+   - Soru işareti (?)
 
-   -   Eğik çizgi (/)
+   - Eğik çizgi (/)
 
-   -   Baştaki veya sondaki boşlukları (' ')
+   - Baştaki veya sondaki boşlukları (' ')
 
-   -   Windows veya DOS ("nul", "yedek", "con", "com1", "lpt1" vb. gibi) ayrılmış adları
+   - Windows veya DOS ("nul", "yedek", "con", "com1", "lpt1" vb. gibi) ayrılmış adları
 
 4. **Tamam**'ı tıklatın.
 

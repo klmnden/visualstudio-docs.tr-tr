@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ab2925024fdf9e4f0b4e93db34b375b89933a48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58155949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113917"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Birim testi için uygulamanızı diğer derlemelerden yalıtmak üzere dolgular kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Dolgu türleri ** test ortamı'ndan kolayca yalıtmak bileşenleri bildirmek iç
   
   Bkz: [Video (1 saat 16): Visual Studio 2012'de beklemediğiniz test edilebilir kod Fakes ile test etme](http://go.microsoft.com/fwlink/?LinkId=261837)
   
-##  <a name="BKMK_Example__The_Y2K_bug"></a> Örnek: Y2K hata  
+## <a name="BKMK_Example__The_Y2K_bug"></a> Örnek: Y2K hata  
  1 Ocak 2000'in üzerinde özel durum oluşturan bir yöntem düşünelim:  
   
 ```csharp  
@@ -62,19 +62,19 @@ using (ShimsContext.Create()
   
 ```  
   
-##  <a name="BKMK_Fakes_requirements"></a> Dolgular kullanma  
+## <a name="BKMK_Fakes_requirements"></a> Dolgular kullanma  
   
-###  <a name="AddFakes"></a> Fakes derlemeleri ekleyin  
+### <a name="AddFakes"></a> Fakes derlemeleri ekleyin  
   
-1.  Çözüm Gezgini'nde birim test projesinin genişletin **başvuruları**.  
+1. Çözüm Gezgini'nde birim test projesinin genişletin **başvuruları**.  
   
-    -   Visual Basic'te çalışıyorsanız, seçmelisiniz **tüm dosyaları göster** başvuru listesini görmek için Çözüm Gezgini araç.  
+    - Visual Basic'te çalışıyorsanız, seçmelisiniz **tüm dosyaları göster** başvuru listesini görmek için Çözüm Gezgini araç.  
   
-2.  Dolgular oluşturmak istediğiniz sınıf tanımlarını içeren derlemeyi seçin. DateTime dolgu oluşturmak istiyorsanız, örneğin System.dll seçin  
+2. Dolgular oluşturmak istediğiniz sınıf tanımlarını içeren derlemeyi seçin. DateTime dolgu oluşturmak istiyorsanız, örneğin System.dll seçin  
   
-3.  Kısayol menüsünde **Fakes derlemesi Ekle**.  
+3. Kısayol menüsünde **Fakes derlemesi Ekle**.  
   
-###  <a name="ShimsContext"></a> ShimsContext kullanın  
+### <a name="ShimsContext"></a> ShimsContext kullanın  
  Shim/dolgu türlerini birim test çerçevesinde bulunmayan kullanırken, test kodu içindedir sarmalamanız gerekir bir `ShimsContext` , dolgular ömrünü denetlemek için. Biz bu yaramadı gerekiyorsa, dolgular AppDomain kapatılmasını en son. Oluşturmanın en kolay yolu bir `ShimsContext` statik kullanarak `Create()` aşağıdaki kodda gösterildiği gibi yöntemi:  
   
 ```csharp  
@@ -90,7 +90,7 @@ public void Y2kCheckerTest() {
   
  Her dolgu bağlamı düzgün bir şekilde silmek için önemlidir. Bir kural karşısında, her zaman çağrı `ShimsContext.Create` içine bir `using` kayıtlı dolgular, uygun temizleme emin olmak için deyimi. Örneğin, yerini alan bir test yöntemi için dolgu kaydetme `DateTime.Now` yöntemi her zaman döndüren bir temsilci ile ilk'ın Ocak 2000. Test yönteminde kayıtlı dolgu temizlemek unutursanız, test çalıştırmasının geri kalan her zaman döndürecekti ilk, Ocak 2000 DateTime.Now olarak değeri. Bu, suprising ve kafa karıştırıcı olabilir.  
   
-###  <a name="WriteShims"></a> Dolgular ile bir test yazma  
+### <a name="WriteShims"></a> Dolgular ile bir test yazma  
  Test kodunuzda bir *sapma* sahtesini oluşturmak istediğiniz yöntem için. Örneğin:  
   
 ```csharp  
@@ -159,10 +159,10 @@ End Class
   
  Fakes ad alanı var olmadığını belirten bir derleme hatası görebilirsiniz. Bu hata, bazen diğer derleme hataları olduğunda görüntülenir. Diğer hataları giderin ve onu kaybolur.  
   
-##  <a name="BKMK_Shim_basics"></a> Farklı türlerde yöntemleri için dolgular  
+## <a name="BKMK_Shim_basics"></a> Farklı türlerde yöntemleri için dolgular  
  Shim/dolgu türlerini statik yöntemler veya kendi temsilcileri ile sanal olmayan yöntemler de dahil olmak üzere, herhangi bir .NET yöntemi değiştirmenizi sağlar.  
   
-###  <a name="BKMK_Static_methods"></a> Statik yöntemler  
+### <a name="BKMK_Static_methods"></a> Statik yöntemler  
  Dolgular için statik yöntemler eklemek için özellikler bir dolgu türü yerleştirilir. Hedef yöntemin bir temsilciyi bağlamak için kullanılan bir ayarlayıcı her bir özellik vardır. Örneğin, bir sınıf verilen `MyClass` statik bir yöntem `MyMethod`:  
   
 ```csharp  
@@ -181,7 +181,7 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;  
 ```  
   
-###  <a name="BKMK_Instance_methods__for_all_instances_"></a> (Tüm örnekler için) örnek yöntemleri  
+### <a name="BKMK_Instance_methods__for_all_instances_"></a> (Tüm örnekler için) örnek yöntemleri  
  Benzer şekilde statik yöntemler için örnek yöntemler için tüm örnekleri için dolgu. Bu dolgular eklemek için özellikler, Karışıklığı önlemek için AllInstances adlı iç içe geçmiş bir tür içinde yerleştirilir. Örneğin, bir sınıf verilen `MyClass` bir örnek yöntemi ile `MyMethod`:  
   
 ```csharp  
@@ -217,7 +217,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
  Fakes dikkat edin, çalışma zamanı örneği bu durumda temsilci ilk bağımsız değişkeni geçirir.  
   
-###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Örnek yöntemler (örneğin bir çalışma zamanı)  
+### <a name="BKMK_Instance_methods__for_one_instance_"></a> Örnek yöntemler (örneğin bir çalışma zamanı)  
  Örnek yöntemleri için çağrı alıcıda göre farklı temsilcileri tarafından da dolgu. Bu türün örneğini başına farklı davranışları sağlamak aynı örnek yöntemi sağlar. Bu dolgular ayarlanacak özellikler Dolgu türü örneği yöntemlerdir. Her örneklenen Dolgu türü, bir ham dolgulu türün örneğini ile de ilişkilidir.  
   
  Örneğin, bir sınıf verilen `MyClass` bir örnek yöntemi ile `MyMethod`:  
@@ -277,7 +277,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance  
 ```  
   
-###  <a name="BKMK_Constructors"></a> Oluşturucular  
+### <a name="BKMK_Constructors"></a> Oluşturucular  
  Oluşturucular için gelecekteki nesnelere Shim/dolgu türlerini iliştirmek için de dolgu. Her Oluşturucu Dolgu türü statik yöntemde Oluşturucu olarak gösterilir. Örneğin, bir sınıf verilen `MyClass` tamsayı alan bir Oluşturucu ile:  
   
 ```csharp  
@@ -327,7 +327,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }  
 ```  
   
-###  <a name="BKMK_Base_members"></a> Temel üyeler  
+### <a name="BKMK_Base_members"></a> Temel üyeler  
  Temel üyeler dolgu özelliklerini temel türü için dolgu oluşturarak ve alt örneği temel dolgu sınıf oluşturucusuna bir parametre olarak geçirerek erişilebilir.  
   
  Örneğin, bir sınıf verilen `MyBase` bir örnek yöntemi ile `MyMethod` ve alt `MyChild`:  
@@ -370,16 +370,16 @@ public class ShimMyBase : ShimBase<MyBase> {
 }  
 ```  
   
-###  <a name="BKMK_Static_constructors"></a> Statik oluşturucular  
+### <a name="BKMK_Static_constructors"></a> Statik oluşturucular  
  Shim/dolgu türlerini statik bir yöntemi açığa `StaticConstructor` bir türün statik Oluşturucu dolguya yeniden. Statik oluşturucular çalıştırıldığından emin olmak gereken yalnızca bir kez Dolgu türü herhangi bir üyesi erişmeden önce yapılandırılır.  
   
-###  <a name="BKMK_Finalizers"></a> Sonlandırıcılar  
+### <a name="BKMK_Finalizers"></a> Sonlandırıcılar  
  Sonlandırıcılar Fakes içinde desteklenmez.  
   
-###  <a name="BKMK_Private_methods"></a> Özel yöntemler  
+### <a name="BKMK_Private_methods"></a> Özel yöntemler  
  Fakes Kod Oluşturucusu yalnızca görünebilir türler imzası, yani parametre türleri ve dönüş türü görünür olan özel yöntem için dolgu özellikleri oluşturur.  
   
-###  <a name="BKMK_Binding_interfaces"></a> Bağlama arabirimleri  
+### <a name="BKMK_Binding_interfaces"></a> Bağlama arabirimleri  
  Dolgulu türün bir arabirim uygular, Kod Oluşturucu tüm üyeleri aynı anda arabirimden bağlama izin veren bir yöntem yayar.  
   
  Örneğin, bir sınıf verilen `MyClass` uygulayan `IEnumerable<int>`:  
@@ -415,7 +415,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
 ```  
   
-##  <a name="BKMK_Changing_the_default_behavior"></a> Varsayılan davranışını değiştirme  
+## <a name="BKMK_Changing_the_default_behavior"></a> Varsayılan davranışını değiştirme  
  Her bir üretilen Dolgu türü bir örneğini tutan `IShimBehavior` arabirimi aracılığıyla `ShimBase<T>.InstanceBehavior` özelliği. Bir istemci değil açıkça dolgu bir örnek üyesi çağırdığında davranışı kullanılır.  
   
  Davranışı açıkça ayarlı değil, özelliğinden döndürülen statik örneği kullanacak `ShimsBehaviors.Current` özelliği. Varsayılan olarak, bu özellik atan bir davranış döndürür. bir `NotImplementedException` özel durum.  
@@ -441,7 +441,7 @@ ShimsBehaviors.Current =
   
 ```  
   
-##  <a name="BKMK_Detecting_environment_accesses"></a> Algılama ortam erişir  
+## <a name="BKMK_Detecting_environment_accesses"></a> Algılama ortam erişir  
  Belirli bir türün atayarak statik yöntemleri dahil olmak üzere tüm üyeleri bir davranış eklemek mümkündür `ShimsBehaviors.NotImplemented` statik özelliği için davranış `Behavior` karşılık gelen Dolgu türü:  
   
 ```csharp  
@@ -453,10 +453,10 @@ ShimMyClass.BehaveAsNotImplemented();
   
 ```  
   
-##  <a name="BKMK_Concurrency"></a> Eşzamanlılık  
+## <a name="BKMK_Concurrency"></a> Eşzamanlılık  
  Shim/dolgu türlerini AppDomain tüm iş parçacıklarının uygulamak ve iş parçacığı benzeşimini yok. Eşzamanlılık destekleyen bir test Çalıştırıcısı'nı kullanmayı planlıyorsanız önemli bir olgu budur: Shim/dolgu türlerini içeren testler aynı anda çalıştırılamaz. Bu özellik, Fakes çalışma zamanı tarafından enfored değildir.  
   
-##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Dolgu yöntemden asıl yöntemi çağırma  
+## <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Dolgu yöntemden asıl yöntemi çağırma  
  Biz aslında yönteme geçirilen dosya adı doğrulama sonra metni dosya sistemine yazmak istediğinizi düşünelim. Bu durumda, biz dolgu yöntemi ortasında özgün yöntemini çağırmak istersiniz.  
   
  Bu sorunu çözmek için bir ilk yaklaşım bir temsilci kullanarak orijinal yönteme bir çağrı sarmaktır ve `ShimsContext.ExecuteWithoutShims()` şu kod gibi:  
@@ -498,7 +498,7 @@ ShimFile.WriteAllTextStringString = shim;
   
 ```  
   
-##  <a name="BKMK_Limitations"></a> Sınırlamaları  
+## <a name="BKMK_Limitations"></a> Sınırlamaları  
  Dolgular, .NET temel sınıf kitaplığı'ndan tüm türlerde kullanılamaz **mscorlib** ve **sistem**.  
   
 ## <a name="external-resources"></a>Dış kaynaklar  

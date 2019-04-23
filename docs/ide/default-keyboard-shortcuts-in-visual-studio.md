@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091063"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio'daki klavye kısayolları
 
@@ -40,22 +40,22 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |[Hata ayıklayıcı bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Diğer bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation bağlam menüleri](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Tanılama Merkezi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Genel
+## <a name="bkmk_global"></a> Genel
 
-###  <a name="bkmk_analyze"></a> Analiz edin
+### <a name="bkmk_analyze"></a> Analiz edin
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift + Alt + 3**|
 |Analyze.NavigateForward|**Shift + Alt + 4**|
 
-###  <a name="bkmk_architecture"></a> Mimarisi
+### <a name="bkmk_architecture"></a> Mimarisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |Architecture.NewDiagram|**CTRL +\\, Ctrl + N**|
 
-###  <a name="bkmk_build"></a> Derleme
+### <a name="bkmk_build"></a> Derleme
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -64,13 +64,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Build.Compile|**CTRL + F7**|
 |Build.RunCodeAnalysisonSolution|**Alt + F11**|
 
-###  <a name="bkmk_classview"></a> Sınıf Görünümü Bağlam menüleri
+### <a name="bkmk_classview"></a> Sınıf Görünümü Bağlam menüleri
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt + girin**|
 
-###  <a name="bkmk_debug"></a> Hata ayıklama
+### <a name="bkmk_debug"></a> Hata ayıklama
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -138,7 +138,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Debug.Watch3|**Ctrl + Alt + W, 3**|
 |Debug.Watch4|**Ctrl + Alt + W, 4**|
 
-###  <a name="bkmk_debugger"></a> Hata ayıklayıcı bağlam menüleri
+### <a name="bkmk_debugger"></a> Hata ayıklayıcı bağlam menüleri
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -146,13 +146,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt + F9 A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt + F9 S**|
 
-###  <a name="bkmk_diagnostics"></a> Tanılama Merkezi
+### <a name="bkmk_diagnostics"></a> Tanılama Merkezi
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl + Alt + F2**|
 
-###  <a name="bkmk_edit"></a> Düzenle
+### <a name="bkmk_edit"></a> Düzenle
 
 |Komutlar|Klavye kısayolları|
 |--------------|-|
@@ -211,7 +211,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.SurroundWith|**CTRL + K, Ctrl + S**|
 |Edit.Undo|**CTRL + Z**<br /><br /> veya<br /><br /> **Alt + Geri Al**|
 
-###  <a name="bkmk_editorContext"></a> Düzenleyici bağlam menüleri
+### <a name="bkmk_editorContext"></a> Düzenleyici bağlam menüleri
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -222,7 +222,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL + K, Ctrl + O** (harf ' O')|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL + K, Ctrl + T**<br /><br /> veya<br /><br /> **CTRL + K, T**|
 
-###  <a name="bkmk_file"></a> Dosya
+### <a name="bkmk_file"></a> Dosya
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -238,7 +238,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |File.SaveSelectedItems|**CTRL + S**|
 |File.ViewinBrowser|**Ctrl + Shift + W**|
 
-###  <a name="bkmk_help"></a> Yardım
+### <a name="bkmk_help"></a> Yardım
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -247,19 +247,19 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Help.ViewHelp|**CTRL + F1**|
 |Help.WindowHelp|**Shift + F1**|
 
-###  <a name="bkmk_loadtest"></a> Yük testi
+### <a name="bkmk_loadtest"></a> Yük testi
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**CTRL + R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Diğer bağlam menüleri
+### <a name="bkmk_otherContext"></a> Diğer bağlam menüleri
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Ekle**|
 
-###  <a name="bkmk_project"></a> Proje
+### <a name="bkmk_project"></a> Proje
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -271,14 +271,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Project.Publishselectedfiles|**Alt +;**  ardından **Alt + P**|
 |Project.Replaceselectedfilesfromserver|**Alt +;**  ardından **Alt + R**|
 
-###  <a name="bkmk_projectContext"></a> Proje ve çözüm bağlam menüleri
+### <a name="bkmk_projectContext"></a> Proje ve çözüm bağlam menüleri
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt + Aşağı Ok**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt + Yukarı Ok**|
 
-###  <a name="bkmk_refactor"></a> Yeniden düzenleme
+### <a name="bkmk_refactor"></a> Yeniden düzenleme
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -289,7 +289,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Refactor.Rename|**CTRL + R, Ctrl + R**|
 |Refactor.ReorderParameters|**CTRL + R, Ctrl + O** (harf ' O')|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Çözüm Gezgini
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Çözüm Gezgini
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -297,7 +297,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |SolutionExplorer.PendingChangesFilter|**CTRL + [**, **P**<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + P**|
 |SolutionExplorer.SyncWithActiveDocument|**CTRL + [**, **S**<br /><br /> veya<br /><br /> **CTRL + [**, **Ctrl + S**|
 
-###  <a name="bkmk_team"></a> Takım
+### <a name="bkmk_team"></a> Takım
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -306,7 +306,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Team.Git.GoToGitCommits|**CTRL + 0** (sıfır) **Ctrl + O** (harf ' O')<br /><br /> veya<br /><br /> **CTRL + 0, O**|
 |Team.TeamExplorerSearch|**CTRL +'**|
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation bağlam menüleri
+### <a name="bkmk_TFcontext"></a> Team Foundation bağlam menüleri
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -321,14 +321,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL + 0** (sıfır) **Ctrl + A**<br /><br /> veya<br /><br /> **CTRL + 0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL + 0** (sıfır) **Ctrl + W**<br /><br /> veya<br /><br /> **CTRL + 0, W**|
 
-###  <a name="bkmk_test"></a> Test
+### <a name="bkmk_test"></a> Test
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**CTRL +\\, Ctrl + C**|
 |Test.UseExistingActionRecording|**CTRL +\\, Ctrl + A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Test Gezgini
+### <a name="bkmk_testexplorerGLOBAL"></a> Test Gezgini
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -338,7 +338,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TestExplorer.RunAllTests|**CTRL + R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL + R, T**|
 
-###  <a name="bkmk_tools"></a> Araçları
+### <a name="bkmk_tools"></a> Araçları
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -347,7 +347,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Tools.ForceGC|**Ctrl + Shift + Alt + F12, Ctrl + Shift + Alt + F12**|
 |Tools.GoToCommandLine|**CTRL +/**|
 
-###  <a name="bkmk_view"></a> Görünümü
+### <a name="bkmk_view"></a> Görünümü
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -396,7 +396,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ZoomIn|**CTRL + SHIFT +.**|
 |View.ZoomOut|**CTRL + SHIFT +,**|
 
-###  <a name="bkmk_window"></a> Pencere
+### <a name="bkmk_window"></a> Pencere
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -427,14 +427,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Window.SolutionExplorerSearch|**CTRL +;**|
 |Window.WindowSearch|**Alt +'**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**CTRL + Num \*, Ctrl + R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL + Num \*, Ctrl + D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Varlık Veri Modeli Tasarımcısı
+## <a name="adonet-entity-data-model-designer"></a>ADO.NET Varlık Veri Modeli Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -449,7 +449,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.EntityDataModelBrowser|**CTRL + 1**|
 |View.EntityDataModelMappingDetails|**CTRL + 2**|
 
-##  <a name="class-diagram"></a>Sınıf diyagramı
+## <a name="class-diagram"></a>Sınıf diyagramı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -461,7 +461,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.RemovefromDiagram|**Delete**|
 |View.ViewCode|**Girin**|
 
-##  <a name="coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi
+## <a name="coded-ui-test-editor"></a>Kodlanmış UI Test Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -472,14 +472,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl + Alt + C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl + Shift + T**|
 
-##  <a name="dataset-editor"></a>Veri Kümesi Düzenleyicisi
+## <a name="dataset-editor"></a>Veri Kümesi Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Ekle**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL + L**|
 
-##  <a name="difference-viewer"></a>Fark Görüntüleyicisi
+## <a name="difference-viewer"></a>Fark Görüntüleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -495,7 +495,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |EditorContextMenus.CodeWindow.AddComment|**CTRL + SHIFT + K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl + Shift + P**|
 
-##  <a name="dom-explorer"></a>DOM Gezgini
+## <a name="dom-explorer"></a>DOM Gezgini
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -503,13 +503,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |DOMExplorer.SelectElement|**CTRL + B**|
 |DOMExplorer.ShowLayout|**Ctrl + Shift + ı**|
 
-##  <a name="f-interactive"></a>F# etkileşimli
+## <a name="f-interactive"></a>F# etkileşimli
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl + Break**|
 
-##  <a name="graph-document-editor"></a>Grafik Belgesi Düzenleyicisi
+## <a name="graph-document-editor"></a>Grafik Belgesi Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -521,7 +521,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Delete**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Grafik tanılaması
+## <a name="graphics-diagnostics"></a>Grafik tanılaması
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -535,13 +535,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Graphics.ZoomIn|**Shift + Alt +=**|
 |Graphics.ZoomOut|**Shift + Alt +-**|
 
-##  <a name="html-editor"></a>HTML Düzenleyicisi
+## <a name="html-editor"></a>HTML Düzenleyicisi
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL + M, Ctrl + G**|
 
-##  <a name="html-editor-design-view"></a>HTML Düzenleyicisi Tasarım Görünümü
+## <a name="html-editor-design-view"></a>HTML Düzenleyicisi Tasarım Görünümü
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -564,7 +564,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ViewMarkup|**Shift + F7**|
 |Window.PreviousTab|**CTRL + PgUp**|
 
-##  <a name="html-editor-source-view"></a>HTML Düzenleyicisi Kaynak Görünümü
+## <a name="html-editor-source-view"></a>HTML Düzenleyicisi Kaynak Görünümü
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -574,13 +574,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.ViewDesigner|**Shift + F7**|
 |Window.PreviousTab|**CTRL + PgUp**|
 
-##  <a name="layer-diagram"></a>Katman diyagramı
+## <a name="layer-diagram"></a>Katman diyagramı
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |Edit.Delete|**Shift + Delete**|
 
-##  <a name="managed-resources-editor"></a>Yönetilen Kaynaklar Düzenleyicisi
+## <a name="managed-resources-editor"></a>Yönetilen Kaynaklar Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -595,7 +595,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Resources.Other|**CTRL + 6**|
 |Resources.Strings|**CTRL + 1**|
 
-##  <a name="merge-editor-window"></a>Birleştirme Düzenleyicisi penceresi
+## <a name="merge-editor-window"></a>Birleştirme Düzenleyicisi penceresi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -603,7 +603,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt + 2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt + 3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Veri Araçları, Şema Karşılaştırma
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Veri Araçları, Şema Karşılaştırma
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -614,7 +614,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |SQL.SSDTSchemaCompareStop|**Alt + Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift + Alt + U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Veri Araçları, Tablo Tasarımcısı
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Veri Araçları, Tablo Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -625,7 +625,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |SQL.Rename|**F2**<br /><br /> veya<br /><br /> **CTRL + R R**<br /><br /> veya<br /><br /> **CTRL + R, Ctrl + R**|
 |ViewFileInScriptPanel|**Shift + Alt + PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Veri Araçları, T-SQL Düzenleyicisi
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Veri Araçları, T-SQL Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -646,7 +646,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift + Alt + PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Veri Araçları, T-SQL PDW Düzenleyicisi
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Veri Araçları, T-SQL PDW Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -661,13 +661,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TSqlEditorCloneQuery|**Ctrl + Alt + N**|
 |TSqlEditorDatabaseCombo|**Shift + Alt + PgDn**|
 
-##  <a name="page-inspector"></a>Sayfa Denetçisi
+## <a name="page-inspector"></a>Sayfa Denetçisi
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Sorgu Tasarımcısı
+## <a name="query-designer"></a>Sorgu Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -680,7 +680,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |QueryDesigner.Results|**CTRL + 4**|
 |QueryDesigner.SQL|**CTRL + 3**|
 
-##  <a name="query-results"></a>Sorgu sonuçları
+## <a name="query-results"></a>Sorgu sonuçları
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -688,7 +688,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |SQL.QueryResultsRefresh|**Shift + Alt + R**|
 |SQL.QueryResultsStop|**Alt + Break**|
 
-##  <a name="report-designer"></a>Rapor Tasarımcısı
+## <a name="report-designer"></a>Rapor Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -714,14 +714,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.TabLeft|**Shift + Sekme**|
 |View.ReportData|**Ctrl + Alt + D**|
 
-##  <a name="sequence-diagram"></a>Sıralı diyagram
+## <a name="sequence-diagram"></a>Sıralı diyagram
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift + Del**|
 
-##  <a name="settings-designer"></a>Ayarlar Tasarımcısı
+## <a name="settings-designer"></a>Ayarlar Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -730,13 +730,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>Çözüm Gezgini
+## <a name="solution-explorer"></a>Çözüm Gezgini
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL + K, Ctrl + G**|
 
-##  <a name="team-explorer"></a>Ekip Gezgini
+## <a name="team-explorer"></a>Ekip Gezgini
 
 |Komut|Klavye Kısayolu|
 |-------------| - |
@@ -761,13 +761,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift + Alt + L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Test Gezgini
+## <a name="test-explorer"></a>Test Gezgini
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Metin Düzenleyici
+## <a name="text-editor"></a>Metin Düzenleyici
 
 | Komutlar | Klavye kısayolları |
 | - | - |
@@ -884,38 +884,38 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt + PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt + PgUp** |
 
-##  <a name="uml-activity-diagram"></a>UML etkinlik diyagramı
+## <a name="uml-activity-diagram"></a>UML etkinlik diyagramı
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |Edit.Delete|**Shift + Del**|
 
-##  <a name="uml-class-diagram"></a>UML sınıf diyagramı
+## <a name="uml-class-diagram"></a>UML sınıf diyagramı
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-component-diagram"></a>UML bileşen diyagramı
+## <a name="uml-component-diagram"></a>UML bileşen diyagramı
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="uml-use-case-diagram"></a>UML Kullanım durumu diyagramı
+## <a name="uml-use-case-diagram"></a>UML Kullanım durumu diyagramı
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift + Del**|
 
-##  <a name="vc-accelerator-editor"></a>VC Hızlandırıcı Düzenleyicisi
+## <a name="vc-accelerator-editor"></a>VC Hızlandırıcı Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |Edit.NewAccelerator|**Ekle**|
 |Edit.NextKeyTyped|**CTRL + W**|
 
-##  <a name="vc-dialog-editor"></a>VC İletişim Kutusu Düzenleyicisi
+## <a name="vc-dialog-editor"></a>VC İletişim Kutusu Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -949,7 +949,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**CTRL + G**|
 
-##  <a name="vc-image-editor"></a>VC Görüntü Düzenleyicisi
+## <a name="vc-image-editor"></a>VC Görüntü Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -991,13 +991,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Image.ZoomIn|**CTRL + SHIFT +.**<br /><br /> veya<br /><br /> **CTRL + YUKARI OK**|
 |Image.ZoomOut|**CTRL + SHIFT +,**<br /><br /> veya<br /><br /> **CTRL + AŞAĞI OK**|
 
-##  <a name="vc-string-editor"></a>VC Dize Düzenleyicisi
+## <a name="vc-string-editor"></a>VC Dize Düzenleyicisi
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |Edit.NewString|**Ekle**|
 
-##  <a name="view-designer"></a>Görünüm Tasarımcısı
+## <a name="view-designer"></a>Görünüm Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1010,13 +1010,13 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |QueryDesigner.Results|**CTRL + 4**|
 |QueryDesigner.SQL|**CTRL + 3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Komut|Klavye kısayolu|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL + 1**|
 
-##  <a name="windows-forms-designer"></a>Windows Form Tasarımcısı
+## <a name="windows-forms-designer"></a>Windows Form Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1045,7 +1045,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.SizeControlUp|**CTRL + SHIFT + Yukarı Ok**|
 |Edit.TabLeft|**Shift + Sekme**|
 
-##  <a name="work-item-editor"></a>Çalışma Öğesi Düzenleyicisi
+## <a name="work-item-editor"></a>Çalışma Öğesi Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1053,7 +1053,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift + Alt + L**|
 
-##  <a name="work-item-query-view"></a>Çalışma Öğesi Sorgu Görünümü
+## <a name="work-item-query-view"></a>Çalışma Öğesi Sorgu Görünümü
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1064,7 +1064,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift + Alt + V**|
 
-##  <a name="work-item-results-view"></a>Çalışma Öğesi Sonuçlar Görünümü
+## <a name="work-item-results-view"></a>Çalışma Öğesi Sonuçlar Görünümü
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1077,7 +1077,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift + Alt + V**|
 
-##  <a name="workflow-designer"></a>İş Akışı Tasarımcısı
+## <a name="workflow-designer"></a>İş Akışı Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1105,7 +1105,7 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |WorkflowDesigner.ZoomIn|**CTRL + Num +**|
 |WorkflowDesigner.ZoomOut|**CTRL + Num-**|
 
-##  <a name="xaml-ui-designer"></a>XAML Tasarımcısı
+## <a name="xaml-ui-designer"></a>XAML Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
@@ -1127,14 +1127,14 @@ Aşağıdaki tablonun bölümlerinde, Visual Studio'nun her yerinden klavye kıs
 |View.EdgeRightMoveRight|**CTRL + SHIFT + Alt +.**|
 |View.ShowPropertyMarkerMenu|**Ctrl + Ara çubuğu**|
 
-##  <a name="xml-text-editor"></a>XML (Metin) Düzenleyicisi
+## <a name="xml-text-editor"></a>XML (Metin) Düzenleyicisi
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt + F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl + Alt + F5**|
 
-##  <a name="xml-schema-designer"></a>XML Şema Tasarımcısı
+## <a name="xml-schema-designer"></a>XML Şema Tasarımcısı
 
 |Komutlar|Klavye kısayolları|
 |--------------| - |

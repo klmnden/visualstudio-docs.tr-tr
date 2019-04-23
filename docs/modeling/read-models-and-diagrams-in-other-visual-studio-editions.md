@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087384"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Diğer Visual Studio sürümlerindeki modelleri ve diyagramları okuma
 
@@ -34,16 +34,16 @@ Bu nedenle, bir bağımlılık diyagramı okumak istiyorsanız, oluşturulduğu 
 
 Bir bağımlılık diyagramı okumak için gereken dosyalar en düşük kümesini şu şekildedir:
 
--   İki dosyaları okumak için örneğin, istediğiniz diyagram için diyagram **MyDiagram.classdiagram ve MyDiagram.classdiagram.layout**.
+- İki dosyaları okumak için örneğin, istediğiniz diyagram için diyagram **MyDiagram.classdiagram ve MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Bağımlılık diyagramları için adlı bir dosya da olmalıdır _Diyagramım_**. layerdiagram.suppressions**.
 
--   Modelleme Proje dosyası (**MyModel.modelproj**)
+- Modelleme Proje dosyası (**MyModel.modelproj**)
 
--   Kök model dosyası (**ModelDefinition\MyModel.uml**)
+- Kök model dosyası (**ModelDefinition\MyModel.uml**)
 
--   Şemada başvurulan herhangi bir paket için paket dosyaları (**ModelDefinition\MyPackage.uml**)
+- Şemada başvurulan herhangi bir paket için paket dosyaları (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Salt okunur modunda yaptığınız değişiklikler
 

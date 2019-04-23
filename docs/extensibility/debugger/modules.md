@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f31e3760a0697be8c9fc80eb811c99df79d32b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 611d067030cd935f6957a976c8a3aa2b7d4f8ae3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091310"
 ---
 # <a name="modules"></a>Modüller
 Hata ayıklayıcı mimarisi bakımından bir *Modülü*:
 
--   Kod, bir yürütülebilir dosya veya bir DLL gibi fiziksel bir kapsayıcıdır.
+- Kod, bir yürütülebilir dosya veya bir DLL gibi fiziksel bir kapsayıcıdır.
 
--   Onun semboller yeniden yükleyin ve kendisini açıklar. Modül tanımları, IDE'nin modülleri penceresinde görüntülenir.
+- Onun semboller yeniden yükleyin ve kendisini açıklar. Modül tanımları, IDE'nin modülleri penceresinde görüntülenir.
 
--   Tarafından temsil edilen bir [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) arabirimi, modül tanımlamak için hata ayıklama altyapısı tarafından oluşturuldu.
+- Tarafından temsil edilen bir [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) arabirimi, modül tanımlamak için hata ayıklama altyapısı tarafından oluşturuldu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Hata ayıklayıcı kavramları](../../extensibility/debugger/debugger-concepts.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3608b5d99e8566701f6090e37b659b7a7c8df86e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114970"
 ---
 # <a name="xsd-task"></a>XSD Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Arac�
 ## <a name="parameters"></a>Parametreler  
  Parametreleri aşağıdaki tabloda açıklanmıştır **XSD** görev.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      İsteğe bağlı **dize** parametresi.  
   
      Komut satırında belirtilen seçeneklerin bir listesi. Örneğin, "*/option1 /option2 /option#*". Diğer tarafından temsil edilmez seçeneklerini belirtmek için bu parametreyi kullanın **XSD** görev parametresi.  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -50,11 +50,11 @@ Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Arac�
   
      Her biri bir XSD seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.  
   
-    -   **sınıflar** -   **/sınıfları**  
+    - **sınıflar** -   **/sınıfları**  
   
-    -   **veri kümesi** -   **/DataSet**  
+    - **veri kümesi** -   **/DataSet**  
   
--   **Dil**  
+- **Dil**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -62,25 +62,25 @@ Bir kaynaktan şema ya da sınıf dosyaları oluşturur XML şema tanımı Arac�
   
      Aralarından seçim **CS** (C#, varsayılan değerdir), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
--   **Namespace**  
+- **Namespace**  
   
      İsteğe bağlı **dize** parametresi.  
   
      Oluşturulan türleri için çalışma zamanı ad alanını belirtir.  
   
--   **Kaynakları**  
+- **Kaynakları**  
   
      Gerekli `ITaskItem[]` parametresi.  
   
      Tüketilen ve görevler tarafından yayılan MSBuild kaynak dosya öğeleri bir dizisi tanımlanmaktadır.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      İsteğe bağlı **Boole** parametresi.  
   
      Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisinin görüntülenmesini engeller.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      İsteğe bağlı **dize** parametresi.  
   

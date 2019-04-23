@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116140"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>İzlenecek yol: Bir Windows formu kullanarak veri toplama
   Bu izlenecek yol, bir Windows Form Microsoft Office Excel için belge düzeyi özelleştirmesinde açın, kullanıcıdan bilgi toplar ve bu bilgileri çalışma sayfası hücresine yazma gösterilmektedir.
@@ -32,9 +32,9 @@ ms.locfileid: "56629969"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56629969"
 
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
 
-1.  Adlı bir Excel çalışma kitabı projesi oluşturun **girdiWinFormu**seçip **yeni belge oluşturma** Sihirbazı'nda. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Adlı bir Excel çalışma kitabı projesi oluşturun **girdiWinFormu**seçip **yeni belge oluşturma** Sihirbazı'nda. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **girdiWinFormu** için proje **Çözüm Gezgini**.
 
@@ -52,13 +52,13 @@ ms.locfileid: "56629969"
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>Adlandırılmış aralık Sheet1 eklemek için
 
-1.  Hücresini seçin **A1** üzerinde `Sheet1`.
+1. Hücresini seçin **A1** üzerinde `Sheet1`.
 
-2.  İçinde **adı** kutusuna **girdiFormu**.
+2. İçinde **adı** kutusuna **girdiFormu**.
 
      **Adı** kutusudur sütun hemen üstündeki formül çubuğunun solunda bulunan **A** çalışma sayfası.
 
-3.  Tuşuna **girin**.
+3. Tuşuna **girin**.
 
      A <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi eklenir hücreye **A1**. Çalışma sayfasında görünür bir gösterge yoktur ancak **girdiFormu** görünür **adı** kutusu (yalnızca yukarıda çalışma sol tarafta) ve **özellikleri** penceresi zaman Hücre **A1** seçilir.
 
@@ -107,11 +107,11 @@ ms.locfileid: "56629969"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Çalışma sayfasına bilgileri göndermek için
 
-1.  Sağ **GetInputString** içinde **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.
+1. Sağ **GetInputString** içinde **Çözüm Gezgini**ve ardından **Görünüm Tasarımcısı**.
 
-2.  Düğmenin kod dosyasını açmak için düğmeyi çift tıklatın <xref:System.Windows.Forms.Control.Click> olay işleyicisi eklenir.
+2. Düğmenin kod dosyasını açmak için düğmeyi çift tıklatın <xref:System.Windows.Forms.Control.Click> olay işleyicisi eklenir.
 
-3.  Metin kutusunda girişi alan işleve göndermek için olay işleyicisine kod ekleyin `WriteStringToCell`ve ardından formu kapatın.
+3. Metin kutusunda girişi alan işleve göndermek için olay işleyicisine kod ekleyin `WriteStringToCell`ve ardından formu kapatın.
 
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
@@ -121,20 +121,20 @@ ms.locfileid: "56629969"
 
 ### <a name="to-test-your-workbook"></a>Çalışma kitabınızı test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
-2.  Windows Form göründüğünden emin olun.
+2. Windows Form göründüğünden emin olun.
 
-3.  Tür **Hello World** metin kutusuna ve ardından **Tamam**.
+3. Tür **Hello World** metin kutusuna ve ardından **Tamam**.
 
-4.  Onaylayın **Hello World** hücrede görünür **A1** çalışma sayfası.
+4. Onaylayın **Hello World** hücrede görünür **A1** çalışma sayfası.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu izlenecek yol, bir Windows Form ve çalışma veri geçirme gösteren temellerini gösterir. Gerçekleştirmek isteyebileceğiniz diğer görevler aşağıdakileri içerir:
 
--   Bir Excel çalışma kitabı veya Word belgesi Windows Forms denetimleri kullanın. Daha fazla bilgi için [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
+- Bir Excel çalışma kitabı veya Word belgesi Windows Forms denetimleri kullanın. Daha fazla bilgi için [Windows Forms denetimleri Office belgeleri genel bakış](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
--   Belge düzeyinde özelleştirme veya bir VSTO eklentisi Microsoft Office uygulamasının kullanıcı arabirimini değiştirin. Daha fazla bilgi için [Office UI özelleştirmesi](../vsto/office-ui-customization.md).
+- Belge düzeyinde özelleştirme veya bir VSTO eklentisi Microsoft Office uygulamasının kullanıcı arabirimini değiştirin. Daha fazla bilgi için [Office UI özelleştirmesi](../vsto/office-ui-customization.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümleri geliştirme](../vsto/developing-office-solutions.md)

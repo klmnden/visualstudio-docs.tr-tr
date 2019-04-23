@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117765"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Nasıl yapılır: Temel renk gölgelendiricisi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Bu belge gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendiri
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Bir grafikten düğümleri kaldırma  
+- Bir grafikten düğümleri kaldırma  
   
--   Grafiğe düğüm ekleme  
+- Grafiğe düğüm ekleme  
   
--   Düğüm özelliklerini ayarlama  
+- Düğüm özelliklerini ayarlama  
   
--   Düğümleri bağlanma  
+- Düğümleri bağlanma  
   
 ## <a name="creating-a-flat-color-shader"></a>Düz renk gölgelendiricisi oluşturma  
  Son çıkış rengi bir RGB renk sabiti renk değerini yazarak düz renk gölgelendiricisi uygulayabilirsiniz.  

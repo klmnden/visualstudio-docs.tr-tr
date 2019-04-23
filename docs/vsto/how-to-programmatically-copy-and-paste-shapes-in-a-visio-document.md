@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad4ddf0ff7e4fd2f315b47f8a7e2fddb604932e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091284"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Nasıl yapılır: Program aracılığıyla kopyalayın ve bir Visio belgesinde şekiller yapıştırın
   Program aracılığıyla şekiller bir belgenin tek bir sayfada kopyalayabilir ve aynı belgede yeni bir sayfaya yapıştırın. Özgün sayfa üzerinde sahip oldukları gibi varsayılan konuma (etkin pencere Merkezi) veya aynı koordinat konumlarını bunları yapıştırın seçebilirsiniz.
@@ -28,7 +28,7 @@ ms.locfileid: "56604047"
 
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>Başka bir sayfa merkezine şekiller kopyalamak için
 
--   Aşağıdaki örnek, şekilleri ilk sayfadan kopyalayın ve ikinci sayfasında merkezini yapıştırın gösterilmektedir.
+- Aşağıdaki örnek, şekilleri ilk sayfadan kopyalayın ve ikinci sayfasında merkezini yapıştırın gösterilmektedir.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
@@ -40,7 +40,7 @@ ms.locfileid: "56604047"
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>Şekiller ve Şekil konumları başka bir sayfaya kopyalamak için
 
--   Aşağıdaki örnek, şekilleri ilk sayfadan kopyalayın ve ikinci sayfa koordinat özgün konumlarına ile yapıştırın gösterilmektedir.
+- Aşağıdaki örnek, şekilleri ilk sayfadan kopyalayın ve ikinci sayfa koordinat özgün konumlarına ile yapıştırın gösterilmektedir.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]

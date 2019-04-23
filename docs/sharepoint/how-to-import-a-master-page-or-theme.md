@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635156"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081912"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Nasıl yapılır: Ana sayfa veya temayı içeri aktarma
   Sayfaları SharePoint sitenizde tutarlı bir görünüm oluşturma ve ana sayfalar ve Temalar kullanarak verebilirsiniz. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Bu öğeler için şablonlar içermez, ancak bunları SharePoint Tasarımcısı'nda oluşturabilir ve bunları içe [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Daha fazla bilgi için [yapı taşı: Sayfalar ve kullanıcı arabirimi](http://go.microsoft.com/fwlink/?LinkID=182095) Microsoft Web sitesinde.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Bir ana sayfa veya temayı içeri aktarmak için
 
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturun veya bir SharePoint projesi açın.
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]oluşturun veya bir SharePoint projesi açın.
 
      Bir SharePoint projesi oluşturma hakkında daha fazla bilgi için bkz: [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+2. Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
-3.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **SharePoint** düğümünü seçip **2010** düğümü.
+3. İçinde **Yeni Öğe Ekle** iletişim kutusunda **SharePoint** düğümünü seçip **2010** düğümü.
 
-4.  SharePoint şablonları listesinde seçin **Modülü** şablonu ve ardından modül için bir ad belirtin.
+4. SharePoint şablonları listesinde seçin **Modülü** şablonu ve ardından modül için bir ad belirtin.
 
      Bir modül, SharePoint'te belirttiğiniz bir konuma dağıtımı için (örneğin, ana sayfa veya temayı dosyaları) dosyalarını içerir.
 
-5.  Modülde adlı varsayılan dosyayı Sil *örnek.txt*.
+5. Modülde adlı varsayılan dosyayı Sil *örnek.txt*.
 
-6.  Modül düğümü seçin.
+6. Modül düğümü seçin.
 
-7.  Menü çubuğunda, **proje** > **varolan öğeyi Ekle**, ana sayfa veya temayı dosyası seçin.
+7. Menü çubuğunda, **proje** > **varolan öğeyi Ekle**, ana sayfa veya temayı dosyası seçin.
 
      Ana sayfa dosyalar .master uzantısına sahiptir ve tema dosyalar .thmx uzantısına sahiptir.
 
-8.  Ana sayfa eklediyseniz, değiştirme, **dağıtım çakışması çözümü** ayarını **otomatik** modülün özellikleri.
+8. Ana sayfa eklediyseniz, değiştirme, **dağıtım çakışması çözümü** ayarını **otomatik** modülün özellikleri.
 
     > [!NOTE]
     >  Ana sayfa adını varsayılan ana sayfa veya özel bir ana sayfa olarak işaretlenmiş var olan bir ana sayfa adı ile aynı olduğunda hatalar oluşabilir. Bu sorunun nasıl giderileceği hakkında daha fazla bilgi için bkz. [izlenecek yol: Özel ana sayfasını ve görüntü ile site sayfasını içeri aktarma](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

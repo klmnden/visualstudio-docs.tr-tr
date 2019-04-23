@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080923"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Visual Studio'nun diğer bölümlerini genişletme
 
@@ -29,9 +29,9 @@ Visual Studio genişletilebilirlik temel yapı taşları VSPackage ' dir.  VSPac
 
 Yeni denetimler ve diğer öğeleri araç kutusuna ekleyin ve araç kutusu işlevini nasıl kullanacağınızı öğrenin:
 
--   [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)
+- [WPF araç kutusu denetimi oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Bir Windows Forms araç kutusu denetimi oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Bir Windows Forms araç kutusu denetimi oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Durum çubuğunu genişletme
 

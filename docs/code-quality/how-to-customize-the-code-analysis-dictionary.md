@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ba70f536074365b3b0ead56b845216918f1a6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cbc2d0f0863ae4b9083c0fb56873eb18b665c7c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081651"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Nasıl yapılır: Kod Analizi Sözlüğünü Özelleştirme
 Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NET Framework yönergeleri hataları kodunuzda tanımlayıcıları kontrol etmek için yerleşik bir sözlük kullanır. Eklemek, kaldırmak veya hüküm ve kısaltmalar yerleşik sözlüğüne kısaltmalar değiştirmek için bir özel sözlük Xml dosyası oluşturabilirsiniz.
@@ -71,7 +71,7 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
 - [Sözlük/kısaltmalar/CasingExceptions/kısaltma](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Sözcükleri/tanınan/sözcüğü
+### <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Sözcükleri/tanınan/sözcüğü
  Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinde dahil etmek için bir sözlük/sözcükleri/Recognized/Word öğesinin iç metni terim ekleyin. Koşulları/sözcükleri/Recognized/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.
 
  **Örnek**
@@ -91,21 +91,21 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
  Aşağıdaki kod analizi kuralları için Sözlük/sözcükleri/Recognized düğüm bağlamında uygulanır:
 
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
--   [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
--   [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
 
--   [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> / Sözcükleri/tanınmayan/sözcüğü
+### <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> / Sözcükleri/tanınmayan/sözcüğü
  Bir terim olarak doğru yazıldığından, Kod Analizi tanımlayan koşulları listesinden dışlamak için bir sözlük/sözcükleri/tanınmayan/Word öğesinin iç metni hariç tutmak için terimi ekleyin. Koşulları/sözcükleri/tanınmayan/sözcüğü öğelerinin büyük küçük harfe duyarlı değildir.
 
  **Örnek**
@@ -125,21 +125,21 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
  Terimleri sözlüğü/sözcükleri/tanınmayan düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
--   [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
--   [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
 
--   [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: Değişmez değerler doğru yazılmalıdır](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Sözlük/sözcükleri/kullanım dışı/terimi [@PreferredAlternate]
+### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Sözlük/sözcükleri/kullanım dışı/terimi [@PreferredAlternate]
  Kod Analizi, kullanım dışı olarak tanımlayan koşulları listesinde bir terimi eklemek için bir sözlük/sözcükleri/kullanım dışı/terimi öğesinin iç metni terim ekleyin. Kullanım dışı bir terim doğru yazıldığından, ancak kullanılmaması gereken bir word dosyasıdır.
 
  Uyarıda önerilen alternatif bir terimi eklemek için diğer terimi öğe PreferredAlternate özniteliklerini belirtin. Alternatif önermek istemiyorsanız, öznitelik değeri boş bırakabilirsiniz.
@@ -165,17 +165,17 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
  Terimleri sözlüğü/sözcükleri/kullanım dışı düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
--   [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Tercih edilen terimleri kullanın](../code-quality/ca1726-use-preferred-terms.md)
 
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Sözlük/sözcükleri/bileşik/terimi [@CompoundAlternate]
+### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Sözlük/sözcükleri/bileşik/terimi [@CompoundAlternate]
  Yerleşik sözlük bazı terimi bir bileşik terimi yerine tek ve ayrık terimler olarak tanımlar. Bir terimi bir bileşik sözcük Kod Analizi tanımlayan koşulları listesini dahil etmek ve terimi doğru büyük küçük harfleri belirtmek için terim sözlüğü/sözcükleri/bileşik/terimi öğesinin iç metni ekleyin. Terim öğesinin CompoundAlternate özniteliği bileşik terimi (Pascal harf) kelimeler ilk harfi büyük harf yaparak oluşturan kelimeler belirtin. İç metni belirtilen dönem sözcükleri/sözlük/DiscreteExceptions listesine otomatik olarak eklendiğini unutmayın.
 
 - Sözlük/sözcükleri kullanım dışı terimini/kullanım dışı/terimi öğe büyük küçük harfe duyarlı değildir.
@@ -199,15 +199,15 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
  Terimleri sözlüğü/sözcükleri/bileşik düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
--   [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1703: Kaynak dizeler doğru yazılmalıdır](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
--   [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA1704: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Sözlük/sözcükleri/DiscreteExceptions/terimi
+### <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Sözlük/sözcükleri/DiscreteExceptions/terimi
  Terimi bileşik sözcüklerin büyük/küçük harf kuralları tarafından iade edildiğinde ayrı word bir terim tek bir kod analizi tanımlayan koşulları listesinden dışlamak için bir sözlük/sözcükleri/DiscreteExceptions/terimi öğesinin iç metni terim ekleyin. Terim sözlüğü/sözcükleri/DiscreteExceptions/dönem öğesinde büyük küçük harfe duyarlı değil.
 
  **Örnek**
@@ -227,11 +227,11 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
  Terimleri sözlüğü/sözcükleri/DiscreteExceptions düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
--   [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Kaynak dize bileşik sözcüklerinin doğru yazılmalıdır](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 
--   [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: Bileşik sözcüklerin doğru yazılmalıdır](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Sözlük/kısaltmalar/CasingExceptions/kısaltma
+### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Sözlük/kısaltmalar/CasingExceptions/kısaltma
  Bir kısaltma olarak doğru yazılmış kod analizi tanımlayan koşulları listesini dahil etmek ve terimi büyük/küçük harf olarak işaretlendiğinde kısaltması için bileşik sözcüklerin nasıl kuralları belirtmek için terim sözlüğü/kısaltmalar/CasingExceptions iç metni ekleyin. / Öğesini harflendirme. Sözlük/kısaltmalar/CasingExceptions/kısaltması öğesinde kısaltma büyük/küçük harf duyarlıdır.
 
  **Örnek**
@@ -251,18 +251,18 @@ Kod Analizi yazım ve dilbilgisi çalışması diğer adlandırma kuralları .NE
 
  Terimleri sözlüğü/kısaltmalar/CasingExceptions düğümünde, aşağıdaki kod analizi kuralları uygulanır:
 
--   [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Tanımlayıcılar doğru yazılmalıdır](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Bir projeye özel sözlük uygulamak için
+## <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Bir projeye özel sözlük uygulamak için
 
-1.  İçinde **Çözüm Gezgini**, aşağıdaki yordamlardan birini kullanın:
+1. İçinde **Çözüm Gezgini**, aşağıdaki yordamlardan birini kullanın:
 
-2.  Tek bir projeye bir sözlük eklemek, proje adına sağ tıklayın ve ardından **varolan öğeyi Ekle**. Dosyasında belirtirsiniz **varolan öğeyi Ekle** iletişim kutusu.
+2. Tek bir projeye bir sözlük eklemek, proje adına sağ tıklayın ve ardından **varolan öğeyi Ekle**. Dosyasında belirtirsiniz **varolan öğeyi Ekle** iletişim kutusu.
 
-3.  İki veya daha fazla projeler arasında paylaşılan bir sözlük eklemek için içinde paylaşmak için dosyayı bulun **varolan öğeyi Ekle** iletişim kutusunda, aşağı oka tıklayın **Ekle** düğmesine ve ardından **bağlantı olarak Ekle** .
+3. İki veya daha fazla projeler arasında paylaşılan bir sözlük eklemek için içinde paylaşmak için dosyayı bulun **varolan öğeyi Ekle** iletişim kutusunda, aşağı oka tıklayın **Ekle** düğmesine ve ardından **bağlantı olarak Ekle** .
 
-4.  İçinde **Çözüm Gezgini**, sağ **CustomDictionary.xml** dosya adı ve tıklatın **özellikleri**.
+4. İçinde **Çözüm Gezgini**, sağ **CustomDictionary.xml** dosya adı ve tıklatın **özellikleri**.
 
-5.  Gelen **derleme eylemi** listesinden **CodeAnalysisDictionary**.
+5. Gelen **derleme eylemi** listesinden **CodeAnalysisDictionary**.
 
-6.  Gelen **çıkış dizinine Kopyala** listesinden **kopyalamayın**.
+6. Gelen **çıkış dizinine Kopyala** listesinden **kopyalamayın**.

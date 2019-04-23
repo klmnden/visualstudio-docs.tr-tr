@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 01989e9e9d6b186e520f48d45202687d690410fc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115646"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Yerel Etkinlik Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
  [Yeni bir yerel etkinlik projesi oluşturma](#Create)   
  [Varsayılan Android yerel etkinlik uygulaması derleyebilir ve çalıştırabilirsiniz](#BuildHello)  
   
-##  <a name="req"></a> Gereksinimleri  
+## <a name="req"></a> Gereksinimleri  
  Android yerel etkinlik uygulaması oluşturmadan önce tüm sistem gereksinimleri karşılanıyor ve Visual Studio 2015'te Visual C++ mobil geliştirme seçeneği yüklü emin olmanız gerekir. Daha fazla bilgi için [platformlar arası Mobil Geliştirme için Visual C++ yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Gerekli üçüncü taraf araçları ve SDK'lar yüklemesine dahil ve Android için Microsoft Visual Studio öykünücü yüklendiğinden emin olun.  
   
-##  <a name="Create"></a> Yeni bir yerel etkinlik projesi oluşturma  
+## <a name="Create"></a> Yeni bir yerel etkinlik projesi oluşturma  
  Bu öğreticide, önce yeni bir Android yerel etkinlik projesi oluşturma sonra oluşturun ve varsayılan uygulamasını Android için Visual Studio öykünücüsü'nün içinde çalıştırın.  
   
 #### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
@@ -49,30 +49,30 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
    Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:  
   
--   **MyAndroidApp.NativeActivity** Birleştirici kodlar için uygulamanızı Android'de gibi yerel bir etkinlik çalışmasına ve başvurular içerir. Giriş noktaları tutkal kodun uygulamasını Main.cpp öğesi içinde var. Önceden derlenmiş üst bilgiler pch.h içinde var. Bu yerel etkinlik uygulaması projesi paketleme projesi tarafından devralındığında paylaşılan kitaplık bir .so dosyası derlenir.  
+- **MyAndroidApp.NativeActivity** Birleştirici kodlar için uygulamanızı Android'de gibi yerel bir etkinlik çalışmasına ve başvurular içerir. Giriş noktaları tutkal kodun uygulamasını Main.cpp öğesi içinde var. Önceden derlenmiş üst bilgiler pch.h içinde var. Bu yerel etkinlik uygulaması projesi paketleme projesi tarafından devralındığında paylaşılan kitaplık bir .so dosyası derlenir.  
   
--   **MyAndroidApp.Packaging** .apk dosyası dağıtım için bir Android cihaz veya öykünücü üzerinde oluşturur. Bu, kaynakları ve bildirim özelliklerini ayarladığınız yerdir AndroidManifest.xml dosyası içerir. Ayrıca, Ant yapı işlemini denetleyen build.xml dosyası içerir. Dağıtılan ve doğrudan Visual Studio'dan çalıştırma varsayılan olarak, başlangıç projesi olarak ayarlanır.  
+- **MyAndroidApp.Packaging** .apk dosyası dağıtım için bir Android cihaz veya öykünücü üzerinde oluşturur. Bu, kaynakları ve bildirim özelliklerini ayarladığınız yerdir AndroidManifest.xml dosyası içerir. Ayrıca, Ant yapı işlemini denetleyen build.xml dosyası içerir. Dağıtılan ve doğrudan Visual Studio'dan çalıştırma varsayılan olarak, başlangıç projesi olarak ayarlanır.  
   
-##  <a name="BuildHello"></a> Varsayılan Android yerel etkinlik uygulaması derleyebilir ve çalıştırabilirsiniz  
+## <a name="BuildHello"></a> Varsayılan Android yerel etkinlik uygulaması derleyebilir ve çalıştırabilirsiniz  
  Oluşturup yükleme ve Kurulum doğrulamak için şablon tarafından oluşturulan uygulamayı çalıştırın. Bu ilk test için Android için Visual Studio öykünücüsü'nün yüklü cihaz profilleri bir uygulamayı çalıştırın. Başka bir hedef uygulamanızı test etmek isterseniz, hedef öykünücü yükleyin veya cihazı bilgisayarınıza bağlayın.  
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>Derleme ve varsayılan yerel etkinlik uygulaması çalıştırmak için  
   
-1.  Zaten seçili değilse, seçin **x86** gelen **çözüm platformları** açılır liste.  
+1. Zaten seçili değilse, seçin **x86** gelen **çözüm platformları** açılır liste.  
   
      ![Çözüm platformları x86 açılan liste seçimine](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
      Varsa **çözüm platformları** seçin, listeyi görüntülenmiyorsa **çözüm platformları** gelen **Ekle/Kaldır düğmeleri** listeleyin ve ardından platformunuzu seçin.  
   
-2.  Menü çubuğunda, **derleme**, **Çözümü Derle**.  
+2. Menü çubuğunda, **derleme**, **Çözümü Derle**.  
   
      Çıkış penceresi çözümde iki proje için yapı işleminin çıkış görüntüler.  
   
-3.  VS öykünücüsü Android telefon (x86) profilleri, dağıtım hedefi seçin.  
+3. VS öykünücüsü Android telefon (x86) profilleri, dağıtım hedefi seçin.  
   
      Diğer öykünücü yüklü veya bir Android cihazına bağlı, dağıtım hedef açılan listeden seçebilirsiniz.  
   
-4.  Hata ayıklamayı başlatmak için F5'e veya hata ayıklama olmadan Başlat için Shift + F5 tuşlarına basın.  
+4. Hata ayıklamayı başlatmak için F5'e veya hata ayıklama olmadan Başlat için Shift + F5 tuşlarına basın.  
   
      Varsayılan Uygulama Visual Studio öykünücüsü'nde Android için nasıl göründüğüne aşağıda verilmiştir.  
   
@@ -80,6 +80,6 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
      Visual Studio öykünücü, yüklemek ve kodunuzu dağıtmak için birkaç saniye sürer başlatır. Uygulama başlatıldıktan sonra kesme noktaları ayarlayın ve hata ayıklayıcı kodunuz içinde adım adım, Yereller inceleyin ve izlemek için kullanın.  
   
-5.  SHIFT + hata ayıklamayı durdurmak için F5 tuşuna basın.  
+5. SHIFT + hata ayıklamayı durdurmak için F5 tuşuna basın.  
   
      Öykünücüyü çalıştırmak için devam eden ayrı bir işlemdir. Düzenleme, derleme ve kodunuzun birden çok kez aynı öykünücüye dağıtmak.

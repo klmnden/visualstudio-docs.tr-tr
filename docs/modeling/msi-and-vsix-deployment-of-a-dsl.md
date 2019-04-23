@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e881ef4a016fa44bbb1e38e2bc3145fb11974c56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087371"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
 Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. Visual Studio, hedef bilgisayarda zaten yüklü olmalıdır.
@@ -33,9 +33,9 @@ DSL'nizi bu yöntem tarafından yüklendiğinde, kullanıcı bir DSL dosyası Vi
 
 1. Bulun **.vsix** DSL paket projeniz tarafından oluşturulan dosya:
 
-   1.  İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü dosya Gezgini'nde Aç**.
+   1. İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü dosya Gezgini'nde Aç**.
 
-   2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**. DslPackage.vsix**
+   2. Dosyayı bulmak **bin\\\*\\**_projeniz_**. DslPackage.vsix**
 
 2. Kopyalama **.vsix** DSL yüklemek istediğiniz hedef bilgisayara dosya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.
 
@@ -74,9 +74,9 @@ DSL'nizi bu yöntem tarafından yüklendiğinde, kullanıcı bir DSL dosyası Vi
 
 1. Ayarlama `InstalledByMsi` uzantı bildiriminde. Bu VSX yüklü ve dışında bir MSI tarafından engeller. Bu, diğer Bileşenleri MSI'dahil edilecekse önemlidir.
 
-   1.  Open DslPackage\source.extension.tt
+   1. Open DslPackage\source.extension.tt
 
-   2.  Önce aşağıdaki satır ekler `<SupportedProducts>`:
+   2. Önce aşağıdaki satır ekler `<SupportedProducts>`:
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -86,15 +86,15 @@ DSL'nizi bu yöntem tarafından yüklendiğinde, kullanıcı bir DSL dosyası Vi
 
 3. Aşağıdaki öznitelikler, DSL'nin doğru olduğundan emin olun:
 
-   -   DSL Gezgini kök düğümüne tıklayın ve Özellikler penceresinde gözden geçirin:
+   - DSL Gezgini kök düğümüne tıklayın ve Özellikler penceresinde gözden geçirin:
 
-       -   Açıklama
+       - Açıklama
 
-       -   Sürüm
+       - Sürüm
 
-   -   Tıklayın **Düzenleyicisi** düğüm ve Özellikler penceresinde tıklayın **simgesi**. Bir simge dosyasına bir değere ayarlayın **DslPackage\Resources**, gibi **File.ico**
+   - Tıklayın **Düzenleyicisi** düğüm ve Özellikler penceresinde tıklayın **simgesi**. Bir simge dosyasına bir değere ayarlayın **DslPackage\Resources**, gibi **File.ico**
 
-   -   Üzerinde **derleme** menüsünde, açık **Configuration Manager**, gibi oluşturmak istediğiniz yapılandırma seçip **yayın** veya **hata ayıklama** .
+   - Üzerinde **derleme** menüsünde, açık **Configuration Manager**, gibi oluşturmak istediğiniz yapılandırma seçip **yayın** veya **hata ayıklama** .
 
 4. Git [Görselleştirme ve modelleme SDK'sı giriş sayfası](http://go.microsoft.com/fwlink/?LinkID=186128), gelen ve giden **indirir** sekmesinde, yükleme **CreateMsiSetupProject.tt**.
 
@@ -122,16 +122,16 @@ DSL'nizi bu yöntem tarafından yüklendiğinde, kullanıcı bir DSL dosyası Vi
 
 11. Hedef bilgisayarda, DSL'nin dosya uzantısına sahip yeni bir dosya oluşturun. Aşağıdakileri doğrulayın:
 
-    -   Windows Gezgini liste görünümünde dosya tanımladığınız açıklaması ve simge ile görünür.
+    - Windows Gezgini liste görünümünde dosya tanımladığınız açıklaması ve simge ile görünür.
 
-    -   Ne zaman çift tıklayın dosya, Visual Studio başlatılır ve DSL dosyası DSL Düzenleyicisi'nde açılır.
+    - Ne zaman çift tıklayın dosya, Visual Studio başlatılır ve DSL dosyası DSL Düzenleyicisi'nde açılır.
 
     Tercih ederseniz, metin şablonu kullanmak yerine Kurulum projesi el ile oluşturabilirsiniz. Bu yordam içeren bir kılavuz için bkz: Bölüm 5, [Görselleştirme ve modelleme SDK'sı Laboratuvar](http://go.microsoft.com/fwlink/?LinkId=208878).
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Konumundan bir MSI yüklü olduğu bir DSL kaldırmak için
 
-1.  Windows içinde açın **programlar ve Özellikler** Denetim Masası.
+1. Windows içinde açın **programlar ve Özellikler** Denetim Masası.
 
-2.  DSL kaldırın.
+2. DSL kaldırın.
 
-3.  Visual Studio'yu yeniden başlatın.
+3. Visual Studio'yu yeniden başlatın.

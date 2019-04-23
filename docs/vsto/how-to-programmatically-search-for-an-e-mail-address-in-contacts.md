@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6b29e46a61a46ae5e986dec7b14733e3807064b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115230"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Nasıl yapılır: Program aracılığıyla bir e-posta adresi arama
   Bu örnekte, etki alanı adına sahip kişiler için kişi bir klasör arama **example.com** kendi e-posta adresleri.
@@ -32,7 +32,7 @@ ms.locfileid: "56615500"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek gerektirir:
 
--   Etki alanı adına sahip kişiler **example.com** e-posta (örneğin, `somebody@example.com`), ve ilk ve son adları vardır.
+- Etki alanı adına sahip kişiler **example.com** e-posta (örneğin, `somebody@example.com`), ve ilk ve son adları vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Kişi öğeleriyle çalışma](../vsto/working-with-contact-items.md)

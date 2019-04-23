@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118090"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio için renk değeri başvurusu
 
@@ -26,13 +26,13 @@ Renk belirteçleri mevcut kullanıcı Arabirimi ile kullanmak, bkz: [renkleri i�
 
 Bu başvuru kılavuzunu kullanırken unutmayın:
 
--   **Her zaman birlikte ön ve arka plan tonları kopyalayın.** Tonları istediğiniz çünkü bir ön plan bir kullanıcı Arabirimi öğesi ve başka bir arka plan seçmeyin.
+- **Her zaman birlikte ön ve arka plan tonları kopyalayın.** Tonları istediğiniz çünkü bir ön plan bir kullanıcı Arabirimi öğesi ve başka bir arka plan seçmeyin.
 
--   **Onaltılık kodlar, olmayan renk belirteçleri şunlardır.** Belirteçlerin nasıl gelecekte değiştirilebilir denetleyemeyeceğiniz için bu kullanıcı Arabirimi öğeleri gerçek renk belirteci adlarını kullanamazsınız. Bunun yerine, kendi kategoride belirteçleri oluşturun ve tablolarda gösterilen hue değerleri kullanın. Var olan bir kullanıcı Arabirimi içinde bulunabilir belirteçleri renk [renkleri için Visual Studio paylaşılan](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Onaltılık kodlar, olmayan renk belirteçleri şunlardır.** Belirteçlerin nasıl gelecekte değiştirilebilir denetleyemeyeceğiniz için bu kullanıcı Arabirimi öğeleri gerçek renk belirteci adlarını kullanamazsınız. Bunun yerine, kendi kategoride belirteçleri oluşturun ve tablolarda gösterilen hue değerleri kullanın. Var olan bir kullanıcı Arabirimi içinde bulunabilir belirteçleri renk [renkleri için Visual Studio paylaşılan](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Yüksek Karşıtlık örnekleri yalnızca karşılaştırma gösterilmektedir.** Yüksek Karşıtlık UI için sistem renk adı kullanın ve bu örnekleri üzerinde bir renk damlalığı veya Renk Seçici kullanmayın. Bu konuda yüksek karşıtlık örnekleri Windows yüksek karşıtlık #1 temada yansıtır. Renkleri, diğer yüksek karşıtlık Temalar da farklı görünecektir.
 
--   **En iyi sonuçlar için örneğe benzer kullanıcı Arabirimi ile çifti rengini ayarlar.**
+- **En iyi sonuçlar için örneğe benzer kullanıcı Arabirimi ile çifti rengini ayarlar.**
 
 ## <a name="properties-window"></a>Özellik penceresi
 
@@ -96,7 +96,7 @@ Bu başvuru kılavuzunu kullanırken unutmayın:
 | Ön plan: üzerine gelme | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![#FFF1F1F1 örneğini](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 örneği")<br />`#FFF1F1F1` | ![#FF1E1E1E örneğini](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E örneği")<br />`#FF1E1E1E` | ![HighlightText örneğini](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText örneği")<br />`HighlightText` |
 | Arka Plan | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![#FF292929 örneğini](../../extensibility/ux-guidelines/media/292929.png "#FF292929 örneği")<br />`#FF292929` | ![#FFEEEEF2 örneğini](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 örneği")<br />`#FFEEEEF2` | ![Denetim örneği](../../extensibility/ux-guidelines/media/HCControl.png "denetim örneği")<br />`Control` |
 | Arka plan: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFFFFCF4 örneğini](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 örneği")<br />`#FFFFFCF4` | ![Renk örneği vurgulayın](../../extensibility/ux-guidelines/media/HCHighlight.png "vurgulama renk")<br />`Highlight` |
-| Kenarlık | Hiçbiri | Yok. | Yok. | Hiçbiri |
+| Kenarlık | Yok. | Yok. | Yok. | None |
 | Kenarlık: üzerine gelme | ![#FFC9DEF5 örneğini](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 örneği")<br />`#FFC9DEF5` | ![#FF3E3E40 örneğini](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 örneği")<br />`#FF3E3E40` | ![#FFE5C365 örneğini](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 örneği")<br />`#FFE5C365` | ![WindowFrame örneğini](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame örneği")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Kategori grubu

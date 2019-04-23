@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091024"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Visual Studio ortamında Office projeleri
   Microsoft Office projeleri, Visual Studio'daki diğer proje türlerine (Windows Forms projeleri gibi) benzer bir geliştirme deneyimine sahiptir. Proje öğeleri oluşturduğunuzda veya bir Office projesi görünür **Çözüm Gezgini**. Belge düzeyinde projeler için, belge (yani, Word belgesi veya Excel çalışma kitabı) Visual Studio'da açılır ve belge bir görsel tasarımcı gibi davranır.
@@ -73,7 +73,7 @@ ms.locfileid: "54865989"
 ### <a name="temporary-certificates"></a>Geçici Sertifikalar
  Office projeleri ayrıca adlı geçici bir sertifika içerir *proje adı*_TemporaryKey.pfx. Bu sertifika, geliştirme sırasında projenin uygulama ve dağıtım bildirimlerini imzalamak için kullanılır. Daha fazla bilgi için [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md) ve [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Gizli proje dosyaları
+### <a name="hiddenfiles"></a> Gizli proje dosyaları
  Bazı proje dosyaları varsayılan olarak gizlidir. Bu dosyalar Visual Studio tarafından oluşturulur ve proje türüne göre farklılık gösterir. Gizli dosyaları görüntülemek için tıklatın **tüm dosyaları göster** içinde **Çözüm Gezgini**.
 
  Gizli proje dosyalarında değişiklik yapmayın. Bu dosyaların doğrudan değiştirilmesi desteklenmez ve projenizin bozulmasına neden olabilir. Gizli proje dosyaları, belgede belirli değişiklikler olduğu durumlarda yeniden oluşturulur. Gizli bir proje dosyasında el ile değişiklikler yaparsanız, dosya yeniden oluşturulduğunda bu değişiklikler kaybolur.

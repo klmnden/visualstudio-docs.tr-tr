@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114738"
 ---
 # <a name="rename-refactoring-c"></a>Yeniden Düzenlemeyi (C#) yeniden adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "54783292"
   
 #### <a name="to-rename-an-identifier"></a>Bir tanımlayıcı yeniden adlandırmak için  
   
-1.  Adlı bir konsol uygulaması oluşturun `RenameIdentifier`ve ardından `Program` ile aşağıdaki kod örneği.  
+1. Adlı bir konsol uygulaması oluşturun `RenameIdentifier`ve ardından `Program` ile aşağıdaki kod örneği.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "54783292"
     }  
     ```  
   
-2.  İmleci üzerine getirin `MethodB`, yöntem bildiriminde veya yöntem çağrısı.  
+2. İmleci üzerine getirin `MethodB`, yöntem bildiriminde veya yöntem çağrısı.  
   
-3.  Gelen **yeniden düzenleme** menüsünde **Yeniden Adlandır**. **Yeniden Adlandır** iletişim kutusu görüntülenir.  
+3. Gelen **yeniden düzenleme** menüsünde **Yeniden Adlandır**. **Yeniden Adlandır** iletişim kutusu görüntülenir.  
   
      Ayrıca, imleç sağ işaret **yeniden düzenleyin** bağlam menüsünü ve ardından **Yeniden Adlandır** görüntülemek için **Yeniden Adlandır** iletişim kutusu.  
   
-4.  İçinde **yeni adı** alanına `MethodC`.  
+4. İçinde **yeni adı** alanına `MethodC`.  
   
-5.  Seçin **açıklamalarda arama** onay kutusu.  
+5. Seçin **açıklamalarda arama** onay kutusu.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
-7.  İçinde **Değişiklikleri Önizle** iletişim kutusu, tıklayın **Uygula**.  
+7. İçinde **Değişiklikleri Önizle** iletişim kutusu, tıklayın **Uygula**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Akıllı etiketleri kullanarak bir tanımlayıcı yeniden adlandırmak için  
   
-1.  Adlı bir konsol uygulaması oluşturun `RenameIdentifier`ve ardından `Program` ile aşağıdaki kod örneği.  
+1. Adlı bir konsol uygulaması oluşturun `RenameIdentifier`ve ardından `Program` ile aşağıdaki kod örneği.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "54783292"
     }  
     ```  
   
-2.  Öğesinin bildiriminde `MethodB`yazın veya yöntem tanımlayıcısının üzerine geri al. Akıllı etiket istemi bu tanımlayıcının altında görünür.  
+2. Öğesinin bildiriminde `MethodB`yazın veya yöntem tanımlayıcısının üzerine geri al. Akıllı etiket istemi bu tanımlayıcının altında görünür.  
   
     > [!NOTE]
     >  Yalnızca bir tanımlayıcının bildirimi akıllı etiketleri kullanarak yeniden adlandırma düzenlemesi de çağırabilirsiniz.  
   
-3.  SHIFT + ALT + F10 klavye kısayolunu yazın ve ardından akıllı etiket menüsündeki görüntülemek için aşağı ok tuşuna basın.  
+3. SHIFT + ALT + F10 klavye kısayolunu yazın ve ardından akıllı etiket menüsündeki görüntülemek için aşağı ok tuşuna basın.  
   
      -veya-  
   
      Akıllı etiketi görüntülemek için akıllı etiketin üzerine fare işaretçisini taşıyın. Ardından akıllı etiket üzerine fare işaretçisini Taşı ve aşağı akıllı etiket menüsündeki görüntülemek için OKA tıklayın.  
   
-4.  Seçin **Yeniden Adlandır '\<identifer1 >' için '\<identifier2 >'** kodunuzda değişiklik önizlemesi olmadan yeniden adlandırma düzenlemesi çağırmak için menü öğesi. Tüm başvuruları  **\<identifer1 >** şekilde otomatik olarak güncelleştirilecek  **\<identifier2 >**.  
+4. Seçin **Yeniden Adlandır '\<identifer1 >' için '\<identifier2 >'** kodunuzda değişiklik önizlemesi olmadan yeniden adlandırma düzenlemesi çağırmak için menü öğesi. Tüm başvuruları  **\<identifer1 >** şekilde otomatik olarak güncelleştirilecek  **\<identifier2 >**.  
   
      -veya-  
   

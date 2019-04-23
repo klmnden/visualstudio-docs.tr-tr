@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36551a1a70973409768b7971545c783b3621ffb6
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a02848230187eb465d56ed73e44380e4b043b117
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084433"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Döngü dışında 'break' olamaz
 Kullanmaya çalıştığınız **sonu** anahtar sözcüğü bir döngü dışında. **Sonu** anahtar sözcüğü, bir döngü sonlandırmak için kullanılır veya `switch` deyimi. Döngü gövdesinde gömülü olması gerekir veya `switch` deyimi. Ancak, bir **etiket** break anahtar sözcüğü izleyebilirsiniz.  
@@ -32,7 +32,7 @@ break labelname;
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Emin **sonu** anahtar sözcüğü, kapsayan bir döngü veya switch deyimi içinde görünür.  
+- Emin **sonu** anahtar sözcüğü, kapsayan bir döngü veya switch deyimi içinde görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [break deyimi](../../javascript/reference/break-statement-javascript.md)   

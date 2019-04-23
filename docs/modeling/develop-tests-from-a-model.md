@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 289d21b4828e22877ac139f2f29b6500907cf4e0
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090490"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için gereksinimleri ve mimari modelleri kullanabilirsiniz. Bu uygulama, kullanıcıların ve diğer proje katılımcıları için önemli olan gereksinimleri test etmek ve gereklilikler değiştiğinde testleri hızlı bir şekilde güncelleştirmenize yardımcı emin olun yardımcı olur. Kullanırsanız [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], modeller ve testler arasındaki bağlantıları da sağlayabilirsiniz.
@@ -40,17 +40,17 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
 
  Bu yönergeler yararlı olabilir:
 
--   Her kullanım örneği, ana yollar ve özel sonuçlar için çeşitli sınamalar olması gerekir.
+- Her kullanım örneği, ana yollar ve özel sonuçlar için çeşitli sınamalar olması gerekir.
 
--   Bir kullanım örneği gereksinimlerini modeli, açıklayan, diğer bir deyişle, daha ayrıntılı bir yordam tanımlamak için kullanıcı kaydetme amacına ulaşmanız için takip eden sağlanır, hedef kendi sonkoşulunu tanımlamak daha önemlidir. Örneğin, yemek siparişi Sonkoşul, olabilir bir restoran, bir müşterinin yemek hazırlanıyor ve müşteriye ödediği. Sonkoşul testlerinizi doğrulamalıdır ölçüttür.
+- Bir kullanım örneği gereksinimlerini modeli, açıklayan, diğer bir deyişle, daha ayrıntılı bir yordam tanımlamak için kullanıcı kaydetme amacına ulaşmanız için takip eden sağlanır, hedef kendi sonkoşulunu tanımlamak daha önemlidir. Örneğin, yemek siparişi Sonkoşul, olabilir bir restoran, bir müşterinin yemek hazırlanıyor ve müşteriye ödediği. Sonkoşul testlerinizi doğrulamalıdır ölçüttür.
 
--   Ayrı yan tümceleri Sonkoşul temel ayrı testler. Örneğin, restorana sipariş bilgilendirme ve müşterinin Ödeme almak için ayrı testler oluşturun. Bu ayrım bu avantajları vardır:
+- Ayrı yan tümceleri Sonkoşul temel ayrı testler. Örneğin, restorana sipariş bilgilendirme ve müşterinin Ödeme almak için ayrı testler oluşturun. Bu ayrım bu avantajları vardır:
 
-    -   Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.
+    - Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.
 
-    -   Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.
+    - Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.
 
--   Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.
+- Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.
 
 #### <a name="linking-tests-to-use-cases"></a>Kullanım örnekleri için testleri bağlama
  Kullanıyorsanız [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] tasarlama ve testleri çalıştırmak için testlerinizin gereksinimi, kullanım durumu ve kullanıcı hikayesi iş öğeleri altında düzenleyebilirsiniz. Bu bağlantı iş öğeleri, modelinizde kullanım için. Bu hızlı bir şekilde izleme gereksinimleri değişiklikler testleri sağlar ve kullanım örneği her ilerlemesini izlemenize yardımcı olur.
@@ -133,15 +133,15 @@ Assert (countAfter == countBefore = 1);
 
  Tüm öğe türleri için testleri bağlayabilirsiniz. Bazı örnekler şunlardır:
 
--   Kullanım örneği, onu çalıştıran testlere bağlayın.
+- Kullanım örneği, onu çalıştıran testlere bağlayın.
 
--   Yan tümceleri bir kullanım örneği sonkoşulunun veya hedef, kullanım örneğine bağlı yorumlar üzerine yazma ve testler her açıklama bağlayın.
+- Yan tümceleri bir kullanım örneği sonkoşulunun veya hedef, kullanım örneğine bağlı yorumlar üzerine yazma ve testler her açıklama bağlayın.
 
--   Sınıf diyagramları veya etkinlik diyagramları açıklamalarda sabit kuralları yazma ve bunları testler bağlayabilirsiniz.
+- Sınıf diyagramları veya etkinlik diyagramları açıklamalarda sabit kuralları yazma ve bunları testler bağlayabilirsiniz.
 
--   Testleri bir etkinlik diyagramı veya tek tek etkinliklerin bağlayın.
+- Testleri bir etkinlik diyagramı veya tek tek etkinliklerin bağlayın.
 
--   Bir test paketi bileşen veya alt test bağlayın.
+- Bir test paketi bileşen veya alt test bağlayın.
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Testleri bir model öğe veya ilişki bağlamak için
 

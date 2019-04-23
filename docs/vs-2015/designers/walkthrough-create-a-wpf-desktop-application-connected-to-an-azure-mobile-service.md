@@ -9,56 +9,56 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118025"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>İzlenecek yol: Bir Azure mobil hizmetinize bağlanan bir WPF masaüstü uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sağlamak için bir Azure mobil hizmet kullanan modern bir masaüstü uygulaması oluşturmak için kullanabilirsiniz.  
   
-##  <a name="Requirements"></a> Önkoşullar  
+## <a name="Requirements"></a> Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdakiler gerekir:  
   
--   Visual Studio 2015 – WPF geliştirmesini destekleyen herhangi bir sürümü.  
+- Visual Studio 2015 – WPF geliştirmesini destekleyen herhangi bir sürümü.  
   
--   Etkin bir Microsoft Azure hesabı.  
+- Etkin bir Microsoft Azure hesabı.  
   
-    -   Ücretsiz bir deneme hesabı için kaydolabilirsiniz [burada](http://azure.microsoft.com/pricing/free-trial/).  
+    - Ücretsiz bir deneme hesabı için kaydolabilirsiniz [burada](http://azure.microsoft.com/pricing/free-trial/).  
   
-    -   Etkinleştirebilir [MSDN abone Avantajlarınızı](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). MSDN aboneliğiniz, ücretli Azure hizmetlerinizi kullanabildiğiniz her ay krediler sunar.  
+    - Etkinleştirebilir [MSDN abone Avantajlarınızı](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). MSDN aboneliğiniz, ücretli Azure hizmetlerinizi kullanabildiğiniz her ay krediler sunar.  
   
 ## <a name="create-a-project-and-add-references"></a>Bir proje oluşturma ve başvurular ekleme  
  İlk adım, bir WPF projesi oluşturun ve Azure mobil Hizmetler'e bağlanmasına olanak sağlayan bir NuGet paketi eklemektir.  
   
 #### <a name="to-create-the-project"></a>Proje oluşturmak için  
   
-1.  Menü çubuğunda, **dosya**, **yeni**, **proje**.  
+1. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda, ya da genişletin **Visual C#** veya **Visual Basic** düğüm ve **Windows** düğümünü ve ardından **Windows** düğümünü seçip **Klasik Masaüstü** düğümü.  
+2. İçinde **yeni proje** iletişim kutusunda, ya da genişletin **Visual C#** veya **Visual Basic** düğüm ve **Windows** düğümünü ve ardından **Windows** düğümünü seçip **Klasik Masaüstü** düğümü.  
   
-3.  Şablon listesinde **WPF uygulaması** şablonu.  
+3. Şablon listesinde **WPF uygulaması** şablonu.  
   
-4.  İçinde **adı** metin kutusuna `WPFQuickStart`ve ardından **Tamam** düğmesi.  
+4. İçinde **adı** metin kutusuna `WPFQuickStart`ve ardından **Tamam** düğmesi.  
   
      Proje oluşturulur ve proje dosyaları eklenir **Çözüm Gezgini**ve adlı varsayılan uygulama penceresi için tasarımcı **MainWindow.xaml** görüntülenir.  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Windows Azure mobil hizmetler SDK'sına bir başvuru eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **başvuruları** düğüm ve **NuGet paketlerini Yönet**.  
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **başvuruları** düğüm ve **NuGet paketlerini Yönet**.  
   
-2.  İçinde **NuGet Paket Yöneticisi**, seçin **arama** girin ve alan `mobileservices`.  
+2. İçinde **NuGet Paket Yöneticisi**, seçin **arama** girin ve alan `mobileservices`.  
   
-3.  Sol bölmede seçin **WindowsAzure.MobileServices**seçip sağ bölmede **yükleme** düğmesi.  
+3. Sol bölmede seçin **WindowsAzure.MobileServices**seçip sağ bölmede **yükleme** düğmesi.  
   
     > [!NOTE]
     >  Varsa bir **Önizleme** iletişim kutusu açılır, önerilen değişiklikleri gözden geçirin ve ardından **Tamam** düğmesi.  
   
-4.  İçinde **lisans kabulü** iletişim kutusunda, lisans koşulları ve daha sonra bunları seçerek kabul İnceleme **kabul ediyorum** düğmesi.  
+4. İçinde **lisans kabulü** iletişim kutusunda, lisans koşulları ve daha sonra bunları seçerek kabul İnceleme **kabul ediyorum** düğmesi.  
   
      Gerekli başvuruları eklenecek **Çözüm Gezgini**.  
   
@@ -70,17 +70,17 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
 #### <a name="to-add-a-user-control"></a>Bir kullanıcı denetimi eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **WPFQuickStart** düğüm ve **Ekle**, **yeni klasör**.  
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **WPFQuickStart** düğüm ve **Ekle**, **yeni klasör**.  
   
-2.  Klasör adı `Common`.  
+2. Klasör adı `Common`.  
   
-3.  Kısayol menüsünü açın **ortak** klasörü seçin **Ekle**, **kullanıcı denetimi**.  
+3. Kısayol menüsünü açın **ortak** klasörü seçin **Ekle**, **kullanıcı denetimi**.  
   
-4.  İçinde **Yeni Öğe Ekle** iletişim kutusunda, ad alanını seçin ve girin `QuickStartTask`ve ardından **Ekle** düğmesi.  
+4. İçinde **Yeni Öğe Ekle** iletişim kutusunda, ad alanını seçin ve girin `QuickStartTask`ve ardından **Ekle** düğmesi.  
   
      Kullanıcı denetimi projeye eklenir ve **QuickStartTask.xaml** dosyası tasarımcıda açılır.  
   
-5.  Tasarımcı alt bölmesinde seçin `<Grid>` ve `</Grid>` etiketleri ve bunları aşağıdaki XAML kod ile değiştirin:  
+5. Tasarımcı alt bölmesinde seçin `<Grid>` ve `</Grid>` etiketleri ve bunları aşağıdaki XAML kod ile değiştirin:  
   
     ```xaml  
     <Grid VerticalAlignment="Top">  
@@ -100,9 +100,9 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
      ![QuickStartTask kullanıcı denetimi](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6.  İçinde **Çözüm Gezgini**, genişletme **QuickStartTask.xaml** düğüm ve açık **QuickStartTask.xaml.cs** veya **QuickStartTask.xaml.vb**dosya.  
+6. İçinde **Çözüm Gezgini**, genişletme **QuickStartTask.xaml** düğüm ve açık **QuickStartTask.xaml.cs** veya **QuickStartTask.xaml.vb**dosya.  
   
-7.  Kod Düzenleyicisi'nde değiştirin `namespace WPFQuickStart.Common` (C#) ad alanı veya `Public Class QuickStartTask` (VB) yöntemini aşağıdaki kod ile:  
+7. Kod Düzenleyicisi'nde değiştirin `namespace WPFQuickStart.Common` (C#) ad alanı veya `Public Class QuickStartTask` (VB) yöntemini aşağıdaki kod ile:  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -200,27 +200,27 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
      Bu kod, çalışma zamanında sayı, başlık ve açıklama alanlarının değerlerini ayarlamak için bağımlılık özellikleri kullanır.  
   
-8.  Menü çubuğunda, **derleme**, **derleme WPFQuickStart** kullanıcı denetimi oluşturmak için.  
+8. Menü çubuğunda, **derleme**, **derleme WPFQuickStart** kullanıcı denetimi oluşturmak için.  
   
 #### <a name="to-create-and-modify-the-main-window"></a>Oluşturma ve ana pencereyi değiştirme  
   
-1.  İçinde **Çözüm Gezgini**açın **MainWindow.xaml** dosya.  
+1. İçinde **Çözüm Gezgini**açın **MainWindow.xaml** dosya.  
   
-2.  **Önemli**. Bu C# için yalnızca bir adımdır. Visual Basic kullanıyorsanız, sonraki adıma atlayın. Tasarımcı alt bölmede satırı bulun `xmlns:local=”clr-namespace:WPFQuickStart”` aşağıdaki XAML kod ile değiştirin:  
+2. **Önemli**. Bu C# için yalnızca bir adımdır. Visual Basic kullanıyorsanız, sonraki adıma atlayın. Tasarımcı alt bölmede satırı bulun `xmlns:local=”clr-namespace:WPFQuickStart”` aşağıdaki XAML kod ile değiştirin:  
   
     ```xaml  
     xmlns:local=”clr-namespace:WPFQuickStart.Common”  
     ```  
   
-3.  İçinde **özellikleri** penceresinde genişletin **ortak** kategorisi düğümünü seçip **başlık** özelliği ve enter `WPF Todo List` tuşuna basın **Enter**  anahtarı.  
+3. İçinde **özellikleri** penceresinde genişletin **ortak** kategorisi düğümünü seçip **başlık** özelliği ve enter `WPF Todo List` tuşuna basın **Enter**  anahtarı.  
   
      Dikkat **başlık** XAML pencere öğesinde değişiklikler yeni değer ile eşleşmelidir. XAML penceresinde XAML özellikleri değiştirebilirsiniz veya **özellikleri** penceresi ve değişiklikleri eşitlenir.  
   
-4.  XAML penceresinde değerini **yükseklik** öğesine `768`ve değerini ayarlama **genişliği** özelliğini `1280`.  
+4. XAML penceresinde değerini **yükseklik** öğesine `768`ve değerini ayarlama **genişliği** özelliğini `1280`.  
   
      Bu öğeler karşılık **yükseklik** ve **genişliği** bulunan özellikler, **Düzen** kategorisinde **özellikleri** penceresi.  
   
-5.  Seçin `<Grid>` ve `</Grid>` etiketleri ve bunları aşağıdaki XAML kod ile değiştirin:  
+5. Seçin `<Grid>` ve `</Grid>` etiketleri ve bunları aşağıdaki XAML kod ile değiştirin:  
   
     ```xaml  
     <Grid>  
@@ -290,9 +290,9 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
     > [!NOTE]
     >  Sonraki birkaç yordamları izleyerek sırasında hatalar görebilirsiniz **hata listesi** açıksa. Endişelenmeyin; Kalan yordamları tamamladıktan sonra bu hatalar kaybolur.  
   
-6.  İçinde **Çözüm Gezgini**, genişletme **MainWindow.xaml** düğüm ve açık **MainWindow.xaml.cs** veya **MainWindow.xaml.vb** dosya.  
+6. İçinde **Çözüm Gezgini**, genişletme **MainWindow.xaml** düğüm ve açık **MainWindow.xaml.cs** veya **MainWindow.xaml.vb** dosya.  
   
-7.  Kod Düzenleyicisi'nde, aşağıdaki ekleyin `using` veya `Imports` yönergelerini dosyanın en üstüne:  
+7. Kod Düzenleyicisi'nde, aşağıdaki ekleyin `using` veya `Imports` yönergelerini dosyanın en üstüne:  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -304,7 +304,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
     Imports Newtonsoft.Json  
     ```  
   
-8.  Tüm kod değiştirmek **WPFQuickStart** ad alanı (C#) veya **sınıfı MainWindow** sınıfı (VB) aşağıdaki kod ile:  
+8. Tüm kod değiştirmek **WPFQuickStart** ad alanı (C#) veya **sınıfı MainWindow** sınıfı (VB) aşağıdaki kod ile:  
   
     ```csharp  
     namespace WPFQuickStart  
@@ -475,31 +475,31 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
 #### <a name="to-create-a-mobile-service"></a>Bir mobil hizmet oluşturmak için  
   
-1.  Bir web tarayıcısı açın ve, Microsoft Azure Portal'da oturum açın ve ardından **mobil Hizmetler** sekmesi.  
+1. Bir web tarayıcısı açın ve, Microsoft Azure Portal'da oturum açın ve ardından **mobil Hizmetler** sekmesi.  
   
-2.  Seçin **yeni** düğmesini ve ardından iletişim kutusu açılır, **işlem**, **mobil hizmeti, oluşturma**.  
+2. Seçin **yeni** düğmesini ve ardından iletişim kutusu açılır, **işlem**, **mobil hizmeti, oluşturma**.  
   
-3.  İçinde **yeni mobil hizmet** iletişim kutusunda seçin **URL** metin girin `wpfquickstart01`.  
+3. İçinde **yeni mobil hizmet** iletişim kutusunda seçin **URL** metin girin `wpfquickstart01`.  
   
     > [!NOTE]
     >  URL sayısal bölümünü değiştirmeniz gerekebilir. Microsoft Azure, her mobil hizmetiniz için benzersiz bir URL gerektirir.  
   
      Bu hizmete URL'sini ayarlar `https://wpfquickstart01.azure-mobile.net/`.  
   
-4.  İçinde **veritabanı** listesinde, bir veritabanı seçeneği belirleyin. Bu büyük olasılıkla çok sayıda kullanım vermeyeceğiz bir uygulama olduğundan, seçmek isteyebilirsiniz **ücretsiz 20 MB SQL veritabanı oluşturma** seçeneğini veya zaten aboneliğinizle ilişkili bir ücretsiz veritabanı seçin.  
+4. İçinde **veritabanı** listesinde, bir veritabanı seçeneği belirleyin. Bu büyük olasılıkla çok sayıda kullanım vermeyeceğiz bir uygulama olduğundan, seçmek isteyebilirsiniz **ücretsiz 20 MB SQL veritabanı oluşturma** seçeneğini veya zaten aboneliğinizle ilişkili bir ücretsiz veritabanı seçin.  
   
-5.  İçinde **bölge** mobil hizmet dağıtma ve ardından istediğiniz veri merkezinde liste öğesini **sonraki** (sağ ok) düğmesini.  
+5. İçinde **bölge** mobil hizmet dağıtma ve ardından istediğiniz veri merkezinde liste öğesini **sonraki** (sağ ok) düğmesini.  
   
     > [!NOTE]
     >  Bu hizmet için varsayılan kullanacağınız **arka UÇ** ayarını **JavaScript**.  
   
-6.  Yeni bir veritabanı oluşturuyorsanız **veritabanı ayarlarını belirt** sayfasında **sunucu** liste seçin **yeni SQL veritabanı sunucusu**, girin, **SQL oturum açma ADI** ve **parola**ve ardından **tam** (onay işareti) düğmesi.  
+6. Yeni bir veritabanı oluşturuyorsanız **veritabanı ayarlarını belirt** sayfasında **sunucu** liste seçin **yeni SQL veritabanı sunucusu**, girin, **SQL oturum açma ADI** ve **parola**ve ardından **tam** (onay işareti) düğmesi.  
   
-7.  Varolan bir veritabanını seçerseniz **veritabanı ayarlarını** girin, **oturum açma PAROLASI** seçip **tam** (onay işareti) düğmesi.  
+7. Varolan bir veritabanını seçerseniz **veritabanı ayarlarını** girin, **oturum açma PAROLASI** seçip **tam** (onay işareti) düğmesi.  
   
      Mobil hizmet oluşturma işlemi başlayacak. İşlem tamamlandıktan sonra durumu değişir **hazır** ve sonraki adıma geçin.  
   
-8.  Portalda, yeni oluşturduğunuz mobil hizmete seçin ve sonra **ANAHTARLARI Yönet** düğmesi.  
+8. Portalda, yeni oluşturduğunuz mobil hizmete seçin ve sonra **ANAHTARLARI Yönet** düğmesi.  
   
 9. İçinde **erişim anahtarlarını Yönet** iletişim kutusunda, kopyalama **uygulama anahtarı**.  
   
@@ -507,17 +507,17 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
 #### <a name="to-create-a-table"></a>Bir tablo oluşturmak için  
   
-1.  Microsoft Azure Portalı'nda, mobil hizmetinize ve menü çubuğundan adının yanındaki oka seçin, **veri**ve ardından **ADD A tablo** bağlantı.  
+1. Microsoft Azure Portalı'nda, mobil hizmetinize ve menü çubuğundan adının yanındaki oka seçin, **veri**ve ardından **ADD A tablo** bağlantı.  
   
-2.  İçinde **yeni tablo oluştur** iletişim, **tablo adı** metin kutusuna girin `TodoItem`ve ardından **tam** (onay işareti) düğmesi.  
+2. İçinde **yeni tablo oluştur** iletişim, **tablo adı** metin kutusuna girin `TodoItem`ve ardından **tam** (onay işareti) düğmesi.  
   
      Tablo oluşturulmasını bekleyin ve ardından son yordama geçin.  
   
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>Mobil hizmet için bir bildirim eklemek için  
   
-1.  Visual Studio'ya geri dönün. İçinde **Çözüm Gezgini**, genişletme **App.xaml** (C#) veya **Application.xaml** (Visual Basic) düğüm ve açık **App.xaml.cs** veya  **App.xaml.vb** dosya.  
+1. Visual Studio'ya geri dönün. İçinde **Çözüm Gezgini**, genişletme **App.xaml** (C#) veya **Application.xaml** (Visual Basic) düğüm ve açık **App.xaml.cs** veya  **App.xaml.vb** dosya.  
   
-2.  Kod Düzenleyicisi'nde, aşağıdaki ekleyin `using` veya **içeri aktarmalar** yönergelerini dosyanın en üstüne:  
+2. Kod Düzenleyicisi'nde, aşağıdaki ekleyin `using` veya **içeri aktarmalar** yönergelerini dosyanın en üstüne:  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -527,7 +527,7 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
     Imports Microsoft.WindowsAzure.MobileServices  
     ```  
   
-3.  Sınıfına aşağıdaki bildirimi ekleyin değiştirerek *YOUR SERVICE_HERE* hizmetinizin URL'sini adıyla ve değiştirme *YOUR-KEY-HERE* önceki kopyaladığınız uygulama anahtarına sahip yordam:  
+3. Sınıfına aşağıdaki bildirimi ekleyin değiştirerek *YOUR SERVICE_HERE* hizmetinizin URL'sini adıyla ve değiştirme *YOUR-KEY-HERE* önceki kopyaladığınız uygulama anahtarına sahip yordam:  
   
     ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
@@ -547,17 +547,17 @@ Windows Presentation Foundation (WPF), hızlı bir şekilde depolamak ve veri sa
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
-1.  Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat** (veya F5 tuşuna basın).  
+1. Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat** (veya F5 tuşuna basın).  
   
-2.  İçinde **Todoıtem Ekle** metin girin `Do something`ve ardından **Kaydet** düğmesi.  
+2. İçinde **Todoıtem Ekle** metin girin `Do something`ve ardından **Kaydet** düğmesi.  
   
-3.  Girin `Do something else`ve ardından **Kaydet** düğmesini tekrar.  
+3. Girin `Do something else`ve ardından **Kaydet** düğmesini tekrar.  
   
      İki girişin eklenen bildirimi **sorgu ve güncelleştirme veri** listesinde, aşağıdaki çizimde gösterildiği gibi.  
   
      ![Todo öğeleri listesine eklenir. ](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
-4.  Onay kutusunu seçip **başka bir şey** listesinde girişi.  
+4. Onay kutusunu seçip **başka bir şey** listesinde girişi.  
   
      Bu çağrı **UpdateCheckedTodoItem** yöntemi ve hem liste hem de veritabanı öğeyi kaldırır.  
   

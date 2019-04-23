@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090348"
 ---
 # <a name="domain-property-value-change-handlers"></a>Etki alanı özellik değeri değişiklik işleyicileri
 
@@ -52,15 +52,15 @@ public partial class Comment
 
 Özellik işleyicileri hakkında aşağıdaki noktalara dikkat edin:
 
--   Kullanıcı bir alan özelliği için değişiklik yapıldığında, hem program kodu özelliği için farklı bir değer atandığında özellik işleyici yöntemleri çağrılır.
+- Kullanıcı bir alan özelliği için değişiklik yapıldığında, hem program kodu özelliği için farklı bir değer atandığında özellik işleyici yöntemleri çağrılır.
 
--   Yöntemleri aslında yalnızca değeri değiştiğinde çağrılır. Program kodu geçerli değerine eşit olan bir değer atar, işleyici çağrılmaz.
+- Yöntemleri aslında yalnızca değeri değiştiğinde çağrılır. Program kodu geçerli değerine eşit olan bir değer atar, işleyici çağrılmaz.
 
--   Hesaplanan ve özel depolama etki alanı özellikleri T:System.Windows.PropertyChangedCallback ve OnValueChanging yöntemleri yok.
+- Hesaplanan ve özel depolama etki alanı özellikleri T:System.Windows.PropertyChangedCallback ve OnValueChanging yöntemleri yok.
 
--   Bir değişiklik işleyici yeni değeri değiştirmek için kullanamazsınız. Örneğin belirli bir aralık değeri kısıtlamak, tanımlamak Bunu yapmak istiyorsanız bir `ChangeRule`.
+- Bir değişiklik işleyici yeni değeri değiştirmek için kullanamazsınız. Örneğin belirli bir aralık değeri kısıtlamak, tanımlamak Bunu yapmak istiyorsanız bir `ChangeRule`.
 
--   Bir ilişkinin bir rolü temsil eden bir özellik için bir değişiklik işleyicisi eklenemiyor. Bunun yerine tanımlayın bir `AddRule` ve `DeleteRule` ilişki sınıfı üzerinde. Bağlantı oluşturulduğunda veya değiştirildiğinde, bu kural tetiklenir. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
+- Bir ilişkinin bir rolü temsil eden bir özellik için bir değişiklik işleyicisi eklenemiyor. Bunun yerine tanımlayın bir `AddRule` ve `DeleteRule` ilişki sınıfı üzerinde. Bağlantı oluşturulduğunda veya değiştirildiğinde, bu kural tetiklenir. Daha fazla bilgi için [kuralları yaymak değişiklikleri içinde modeli](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Mağazada değişiklikleri
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117935"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML şemaları ve belge düzeyi özelleştirmelerdeki veriler
   **Önemli** Microsoft Word ile ilgili bu konu kümesindeki bilgileri avantajı ve kişiler ve kimin bulunur Amerika Birleşik Devletleri ve kendi bölgeler dışında veya servis kullanan kuruluşlar için özel olarak sunulan veya geliştirme üzerinde çalışan programlar Ocak Microsoft uygulaması belirli işlevlerin ne zaman kaldırıldı 2010'dan önce Microsoft lisanslı Microsoft Word ürünler, Microsoft Word için özel XML ilgili. Bu bilgileri Microsoft Word ile ilgili değil okuma veya kişi ve kuruluşların Amerika Birleşik Devletleri ya da kullanarak veya Microsoft tarafından 10 Ocak 2010'dan sonra lisansına sahip Microsoft Word ürünleri üzerinde çalışan programlar geliştirme alt bölgeleri tarafından kullanılan ; Bu ürünlerin bu tarihten önce lisanslı veya satın alınan ve Amerika Birleşik Devletleri dışında kullanım için lisanslı ürünleri aynı davranmaz.
@@ -40,16 +40,16 @@ ms.locfileid: "54875465"
 
  İki ana nesnesi vardır:
 
--   XML Şeması (XSD dosyası). Çalışma kitabındaki tüm şema için Visual Studio şema projeye ekler. Bu proje öğesiyle XSD uzantı olarak görünür **Çözüm Gezgini**.
+- XML Şeması (XSD dosyası). Çalışma kitabındaki tüm şema için Visual Studio şema projeye ekler. Bu proje öğesiyle XSD uzantı olarak görünür **Çözüm Gezgini**.
 
--   Bir türü belirtilmiş <xref:System.Data.DataSet> sınıfı. Bu sınıf şemaya göre oluşturulur. Bu veri kümesi sınıfı görülebilir **sınıf görünümü**.
+- Bir türü belirtilmiş <xref:System.Data.DataSet> sınıfı. Bu sınıf şemaya göre oluşturulur. Bu veri kümesi sınıfı görülebilir **sınıf görünümü**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Excel çalışma sayfalarına şema öğeleri eşleştirildiğinde oluşturulan nesneleri
  Bir şema öğesinden eşlediğinizde **XML kaynağı** görev bölmesinde Visual Studio çalışma sayfasına otomatik olarak birkaç nesnesi oluşturur ve bunları projenize ekler:
 
--   Denetimler. Çalışma kitabında, eşlenen her nesneye ilişkin bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimi (yinelenmeyen şema öğeleri) veya bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi (şema öğeleri yinelenen için) programlama modeli içinde oluşturulur. <xref:Microsoft.Office.Tools.Excel.ListObject> Denetimi yalnızca eşlemeleri ve eşlenen nesneler çalışma kitabından silindiğinde silinebilir. Denetimleri hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
+- Denetimler. Çalışma kitabında, eşlenen her nesneye ilişkin bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimi (yinelenmeyen şema öğeleri) veya bir <xref:Microsoft.Office.Tools.Excel.ListObject> denetimi (şema öğeleri yinelenen için) programlama modeli içinde oluşturulur. <xref:Microsoft.Office.Tools.Excel.ListObject> Denetimi yalnızca eşlemeleri ve eşlenen nesneler çalışma kitabından silindiğinde silinebilir. Denetimleri hakkında daha fazla bilgi için bkz. [konak öğelerini ve denetimlerine genel bakış için ana bilgisayar](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Oluştururken bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> çalışma için yinelenmeyen bir şema öğesine eşleyerek bir <xref:System.Windows.Forms.BindingSource> oluşturulur ve <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimin bağlı <xref:System.Windows.Forms.BindingSource>. Bağlamalısınız <xref:System.Windows.Forms.BindingSource> belirlenmiş örneği gibi bir belge için eşlenen şemaya uyan veri kaynağının bir örneği için <xref:System.Data.DataSet> oluşturulan sınıf. Bağlama ayarlayarak oluşturma <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> sunulan özellikler **özellikleri** penceresi.
+- BindingSource. Oluştururken bir <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> çalışma için yinelenmeyen bir şema öğesine eşleyerek bir <xref:System.Windows.Forms.BindingSource> oluşturulur ve <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> denetimin bağlı <xref:System.Windows.Forms.BindingSource>. Bağlamalısınız <xref:System.Windows.Forms.BindingSource> belirlenmiş örneği gibi bir belge için eşlenen şemaya uyan veri kaynağının bir örneği için <xref:System.Data.DataSet> oluşturulan sınıf. Bağlama ayarlayarak oluşturma <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> sunulan özellikler **özellikleri** penceresi.
 
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource> İçin oluşturulmamış <xref:Microsoft.Office.Tools.Excel.ListObject> nesneleri. El ile bağlamanız gerekir <xref:Microsoft.Office.Tools.Excel.ListObject> ayarlayarak veri kaynağına <xref:System.Windows.Forms.BindingSource.DataSource%2A> ve <xref:System.Windows.Forms.BindingSource.DataMember%2A> özelliklerinde **özellikleri** penceresi.

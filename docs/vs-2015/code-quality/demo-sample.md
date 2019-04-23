@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 4b00e20f262596354a02c5c54978e4f663fa185a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112110"
 ---
 # <a name="demo-sample"></a>Gösterim Örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,39 +34,39 @@ Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo çözüm ve CodeDefects proje oluşturma  
   
-1.  Tıklayın **dosya** menüsünde **yeni**ve ardından **yeni proje**.  
+1. Tıklayın **dosya** menüsünde **yeni**ve ardından **yeni proje**.  
   
-2.  İçinde **proje türleri** ağaç listesi, Visual C++ varsayılan dilinizi vs'de değilse genişletin **diğer diller**.  
+2. İçinde **proje türleri** ağaç listesi, Visual C++ varsayılan dilinizi vs'de değilse genişletin **diğer diller**.  
   
-3.  Genişletin **Visual C++** ve ardından **genel**.  
+3. Genişletin **Visual C++** ve ardından **genel**.  
   
-4.  İçinde **şablonları**, tıklayın **boş proje**.  
+4. İçinde **şablonları**, tıklayın **boş proje**.  
   
-5.  İçinde **adı** metin kutusunda, **CodeDefects**.  
+5. İçinde **adı** metin kutusunda, **CodeDefects**.  
   
-6.  Seçin **çözüm için dizin oluştur** onay kutusu.  
+6. Seçin **çözüm için dizin oluştur** onay kutusu.  
   
-7.  İçinde **çözüm adı** metin kutusunda, **CppDemo**.  
+7. İçinde **çözüm adı** metin kutusunda, **CppDemo**.  
   
 ### <a name="configure-the-codedefects-project-as-a-static-library"></a>Statik kitaplık olarak CodeDefects proje yapılandırma  
   
-1.  Çözüm Gezgini'nde sağ **CodeDefects** ve ardından **özellikleri**.  
+1. Çözüm Gezgini'nde sağ **CodeDefects** ve ardından **özellikleri**.  
   
-2.  Genişletin **yapılandırma özellikleri** ve ardından **genel**.  
+2. Genişletin **yapılandırma özellikleri** ve ardından **genel**.  
   
-3.  İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.  
+3. İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.  
   
-4.  İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.  
+4. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Üst bilgi ve kaynak dosya CodeDefects projeye ekleyin.  
   
-1.  Çözüm Gezgini'nde **CodeDefects**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.  
+1. Çözüm Gezgini'nde **CodeDefects**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod**ve ardından **üst bilgi dosyası (.h)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod**ve ardından **üst bilgi dosyası (.h)**.  
   
-3.  İçinde **adı** kutusuna **Bug.cpp** ve ardından **Ekle**.  
+3. İçinde **adı** kutusuna **Bug.cpp** ve ardından **Ekle**.  
   
-4.  Aşağıdaki kodu kopyalayın ve yapıştırın **Bug.cpp** dosyası [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
+4. Aşağıdaki kodu kopyalayın ve yapıştırın **Bug.cpp** dosyası [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
   
     ```  
     #include <windows.h>  
@@ -88,13 +88,13 @@ Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol
     const int ACCOUNT_DOMAIN_LEN = 128;  
     ```  
   
-5.  Çözüm Gezgini'nde sağ **kaynak dosyaları**, işaret **yeni**ve ardından **yeni öğe**.  
+5. Çözüm Gezgini'nde sağ **kaynak dosyaları**, işaret **yeni**ve ardından **yeni öğe**.  
   
-6.  İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **C++ dosyası (.cpp)**  
+6. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **C++ dosyası (.cpp)**  
   
-7.  İçinde **adı** kutusuna **Bug.cpp** ve ardından **Ekle**.  
+7. İçinde **adı** kutusuna **Bug.cpp** ve ardından **Ekle**.  
   
-8.  Aşağıdaki kodu kopyalayın ve Bug.h dosyasında yapıştırın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
+8. Aşağıdaki kodu kopyalayın ve Bug.h dosyasında yapıştırın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
   
     ```  
     #include <stdlib.h>  
@@ -158,29 +158,29 @@ Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol
   
 ### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Ek açıklamalar projeye ekleyin ve statik bir kitaplık olarak yapılandırma  
   
-1.  Çözüm Gezgini'nde tıklayın **CppDemo**, işaret **Ekle**ve ardından **yeni proje**.  
+1. Çözüm Gezgini'nde tıklayın **CppDemo**, işaret **Ekle**ve ardından **yeni proje**.  
   
-2.  İçinde **Yeni Proje Ekle** iletişim kutusunda, Visual C++'ı genişletin, **genel**ve ardından **boş proje**.  
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda, Visual C++'ı genişletin, **genel**ve ardından **boş proje**.  
   
-3.  İçinde **adı** metin kutusunda, **ek açıklamaları**ve ardından **Ekle**.  
+3. İçinde **adı** metin kutusunda, **ek açıklamaları**ve ardından **Ekle**.  
   
-4.  Çözüm Gezgini'nde sağ **ek açıklamaları** ve ardından **özellikleri**.  
+4. Çözüm Gezgini'nde sağ **ek açıklamaları** ve ardından **özellikleri**.  
   
-5.  Genişletin **yapılandırma özellikleri** ve ardından **genel**.  
+5. Genişletin **yapılandırma özellikleri** ve ardından **genel**.  
   
-6.  İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.  
+6. İçinde **genel** listesinde, metin sütunu yanındaki seçin **hedef uzantısı**, Anahtar'a tıklayın ve **.lib**.  
   
-7.  İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.  
+7. İçinde **Proje Varsayılanları**, sütun tıklayın **yapılandırma türü**ve ardından **statik kitaplık (.lib)**.  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Kaynak dosya ve üstbilgi dosyası ek açıklamaları projeye ekleyin.  
   
-1.  Çözüm Gezgini'nde **ek açıklamaları**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.  
+1. Çözüm Gezgini'nde **ek açıklamaları**, sağ **üst bilgi dosyaları**, tıklayın **Ekle**ve ardından **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **üst bilgi dosyası (.h)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **üst bilgi dosyası (.h)**.  
   
-3.  İçinde **adı** kutusuna **annotations.h** ve ardından **Ekle**.  
+3. İçinde **adı** kutusuna **annotations.h** ve ardından **Ekle**.  
   
-4.  Aşağıdaki kodu kopyalayın ve yapıştırın **annotations.h** dosyası [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
+4. Aşağıdaki kodu kopyalayın ve yapıştırın **annotations.h** dosyası [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -197,13 +197,13 @@ Bu prosedürler için örnek oluşturma işlemi gösterilmektedir [izlenecek yol
   
     ```  
   
-5.  Çözüm Gezgini'nde sağ **kaynak dosyaları**, işaret **yeni**ve ardından **yeni öğe**.  
+5. Çözüm Gezgini'nde sağ **kaynak dosyaları**, işaret **yeni**ve ardından **yeni öğe**.  
   
-6.  İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod** ve ardından **C++ dosyası (.cpp)**  
+6. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kod** ve ardından **C++ dosyası (.cpp)**  
   
-7.  İçinde **adı** kutusuna **annotations.cpp** ve ardından **Ekle**.  
+7. İçinde **adı** kutusuna **annotations.cpp** ve ardından **Ekle**.  
   
-8.  Aşağıdaki kodu kopyalayın ve yapıştırın **annotations.cpp** dosyası [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
+8. Aşağıdaki kodu kopyalayın ve yapıştırın **annotations.cpp** dosyası [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Düzenleyici.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

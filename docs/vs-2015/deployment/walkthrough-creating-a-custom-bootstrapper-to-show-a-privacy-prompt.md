@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781338"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116523"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>İzlenecek yol: Bir gizlilik istemi göstermek için özel bir önyükleyici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Visual Studio 2010.  
+- Visual Studio 2010.  
   
 ## <a name="creating-an-update-consent-dialog-box"></a>Bir güncelleştirme Onayı iletişim kutusu oluşturma  
  Bir gizlilik istemi görüntülenecek uygulama için Otomatik Güncelleştirmeler onay okuyucunun soran bir uygulama oluşturun.  
@@ -143,29 +143,29 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
   
  Bu yordam, aşağıdaki belgeler oluşturarak özel önyükleyici paketi oluşturma işlemini göstermektedir:  
   
--   Bir Product.XML önyükleyici içeriğini açıklamak için dosyası.  
+- Bir Product.XML önyükleyici içeriğini açıklamak için dosyası.  
   
--   Dizeler ve Yazılım Lisans Koşulları'nı gibi paketinizi yerelleştirme özgü yönlerini listelemek için package.xml bildirim dosyası.  
+- Dizeler ve Yazılım Lisans Koşulları'nı gibi paketinizi yerelleştirme özgü yönlerini listelemek için package.xml bildirim dosyası.  
   
--   Yazılım Lisans Koşulları'nı bir belge.  
+- Yazılım Lisans Koşulları'nı bir belge.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>1. Adım: Önyükleyici dizini oluşturmak için  
   
-1.  Adlı bir dizin oluşturmak **UpdateConsentDialog** SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft içinde.  
+1. Adlı bir dizin oluşturmak **UpdateConsentDialog** SDKs\Windows\v7.0A\Bootstrapper\Packages %PROGRAMFILES%\Microsoft içinde.  
   
     > [!NOTE]
     >  Bu klasör oluşturmak için yönetici ayrıcalıkları gerekir.  
   
-2.  UpdateConsentDialog dizininde, tr adlı bir dizin oluşturun.  
+2. UpdateConsentDialog dizininde, tr adlı bir dizin oluşturun.  
   
     > [!NOTE]
     >  Her yerel ayar için yeni bir dizin oluşturun. Örneğin, fr ve de yerel ayarlar için alt ekleyebilirsiniz. Bu dizinler, dil paketlerini ve Fransızca ve Almanca dizeleri gerekirse içerecektir.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>2. Adım: Product.xml bildirim dosyası oluşturmak için  
   
-1.  Adlı bir metin dosyası oluşturma `product.xml`.  
+1. Adlı bir metin dosyası oluşturma `product.xml`.  
   
-2.  Product.xml dosyasında aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
+2. Product.xml dosyasında aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
   
     ```  
     <Product  
@@ -191,13 +191,13 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
     </Product>  
     ```  
   
-3.  Dosyayı UpdateConsentDialog önyükleyici dizine kaydedin.  
+3. Dosyayı UpdateConsentDialog önyükleyici dizine kaydedin.  
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>3. Adım: Package.xml bildirim dosyası ve Yazılım Lisans Koşulları'nı oluşturmak için  
   
-1.  Adlı bir metin dosyası oluşturma `package.xml`.  
+1. Adlı bir metin dosyası oluşturma `package.xml`.  
   
-2.  Package.xml dosyasında, yerel ayar tanımlayın ve Yazılım Lisans Koşulları'nı eklemek için aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
+2. Package.xml dosyasında, yerel ayar tanımlayın ve Yazılım Lisans Koşulları'nı eklemek için aşağıdaki XML kodunu ekleyin. Var olan XML kodunun üzerine yazma emin olun.  
   
     ```  
     <Package   
@@ -219,87 +219,87 @@ Yeni dosya ve derleme sürümlerini sahip derlemeler kullanılabilir olduğunda 
     </Package>  
     ```  
   
-3.  UpdateConsentDialog önyükleyici dizinindeki en alt dosyayı kaydedin.  
+3. UpdateConsentDialog önyükleyici dizinindeki en alt dosyayı kaydedin.  
   
-4.  Yazılım Lisans koşulları EULA.rtf adlı bir belge oluşturun.  
+4. Yazılım Lisans koşulları EULA.rtf adlı bir belge oluşturun.  
   
     > [!NOTE]
     >  Yazılım Lisans Koşulları'nı lisanslama, garanti, yükümlülükler ve yerel yasalarınız hakkında bilgi içermelidir. Bu dosyalar yerel ayara özgü, bu nedenle dosyanın MBCS ya da UNICODE karakterleri destekler bir biçimde kaydedildiğinden emin olun. İçeriği hakkında hukuk departmanınıza Yazılım Lisans Koşulları'nın başvurun.  
   
-5.  Belge UpdateConsentDialog önyükleyici dizinindeki en alt kaydedin.  
+5. Belge UpdateConsentDialog önyükleyici dizinindeki en alt kaydedin.  
   
-6.  Gerekirse, her yerel ayar için yazılım lisans koşulları için yeni package.xml bildirim dosyası ve yeni bir eula.rtf belgesi oluşturun. Örneğin, fr ve de yerel ayarlar için alt oluşturduysanız, ayrı package.xml bildirim dosyaları ve Yazılım Lisans Koşulları'nı oluşturun ve bunları fr ve de alt dizinler için kaydedin.  
+6. Gerekirse, her yerel ayar için yazılım lisans koşulları için yeni package.xml bildirim dosyası ve yeni bir eula.rtf belgesi oluşturun. Örneğin, fr ve de yerel ayarlar için alt oluşturduysanız, ayrı package.xml bildirim dosyaları ve Yazılım Lisans Koşulları'nı oluşturun ve bunları fr ve de alt dizinler için kaydedin.  
   
 ## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Bir önkoşul olarak güncelleştirme onayı uygulamasını ayarlama  
  Visual Studio'da bir önkoşul olarak güncelleştirme onayı uygulamasını ayarlayabilirsiniz.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Güncelleştirme Onayı uygulaması bir önkoşul olarak ayarlamak için  
   
-1.  İçinde **Çözüm Gezgini**, dağıtmak istediğiniz, uygulamanızın adına tıklayın.  
+1. İçinde **Çözüm Gezgini**, dağıtmak istediğiniz, uygulamanızın adına tıklayın.  
   
-2.  Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.  
+2. Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.  
   
-3.  Tıklayın **Yayımla** sayfasında ve ardından **önkoşulları**.  
+3. Tıklayın **Yayımla** sayfasında ve ardından **önkoşulları**.  
   
-4.  Seçin **güncelleştirme onay iletişim kutusunu**.  
+4. Seçin **güncelleştirme onay iletişim kutusunu**.  
   
     > [!NOTE]
     >  Güncelleştirme Onayı iletişim önkoşulları iletişim kutusunda görmek için Visual Studio'yu kapatıp gerekebilir.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
 ## <a name="creating-and-testing-the-setup-program"></a>Oluşturma ve Kurulum programını sınama  
  Uygulamanız için bir önkoşul olarak güncelleştirme onayı uygulamasını ayarladıktan sonra önyükleyici ve yükleyici oluşturabilirsiniz.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Oluşturma ve Kurulum programını tıklamadan test kabul ediyorum  
   
-1.  İçinde **Çözüm Gezgini**, dağıtmak istediğiniz, uygulamanızın adına tıklayın.  
+1. İçinde **Çözüm Gezgini**, dağıtmak istediğiniz, uygulamanızın adına tıklayın.  
   
-2.  Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.  
+2. Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.  
   
-3.  Tıklayın **Yayımla** sayfasında ve ardından **Şimdi Yayımla**.  
+3. Tıklayın **Yayımla** sayfasında ve ardından **Şimdi Yayımla**.  
   
-4.  Yayınlama çıktısı otomatik olarak açılmazsa, yayınlama çıktısı için gidin.  
+4. Yayınlama çıktısı otomatik olarak açılmazsa, yayınlama çıktısı için gidin.  
   
-5.  Setup.exe programını çalıştırın.  
+5. Setup.exe programını çalıştırın.  
   
      Kurulum programı Güncelleştirme Onayı iletişim yazılım lisans sözleşmesini gösterir.  
   
-6.  Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
+6. Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
   
      Güncelleştirme Onayı iletişim uygulaması görüntülenir ve aşağıdaki metni gösterir: Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
   
-7.  Uygulamayı kapatın veya İptal'e tıklayın.  
+7. Uygulamayı kapatın veya İptal'e tıklayın.  
   
      Uygulama, bir hatayı gösterir: İçin sistem bileşenleri yüklenirken bir hata oluştu *ApplicationName*. Tüm sistem bileşenleri başarıyla yükleninceye kadar kurulum devam edemiyor.  
   
-8.  Aşağıdaki hata iletisini göstermek için Ayrıntılar'a tıklayın: Bileşen Güncelleştirme Onayı iletişim, şu hata iletisiyle başarısız oldu: "Otomatik güncelleştirme anlaşmayı kabul edilmiyor." Aşağıdaki bileşenler yüklenemedi:-Güncelleştirme Onayı iletişim  
+8. Aşağıdaki hata iletisini göstermek için Ayrıntılar'a tıklayın: Bileşen Güncelleştirme Onayı iletişim, şu hata iletisiyle başarısız oldu: "Otomatik güncelleştirme anlaşmayı kabul edilmiyor." Aşağıdaki bileşenler yüklenemedi:-Güncelleştirme Onayı iletişim  
   
 9. **Kapat**'ı tıklatın.  
   
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Oluşturma ve Kurulum programını tıklayarak test kabul ediyorum  
   
-1.  İçinde **Çözüm Gezgini**, dağıtmak istediğiniz, uygulamanızın adına tıklayın.  
+1. İçinde **Çözüm Gezgini**, dağıtmak istediğiniz, uygulamanızın adına tıklayın.  
   
-2.  Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.  
+2. Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.  
   
-3.  Tıklayın **Yayımla** sayfasında ve ardından **Şimdi Yayımla**.  
+3. Tıklayın **Yayımla** sayfasında ve ardından **Şimdi Yayımla**.  
   
-4.  Yayınlama çıktısı otomatik olarak açılmazsa, yayınlama çıktısı için gidin.  
+4. Yayınlama çıktısı otomatik olarak açılmazsa, yayınlama çıktısı için gidin.  
   
-5.  Setup.exe programını çalıştırın.  
+5. Setup.exe programını çalıştırın.  
   
      Kurulum programı Güncelleştirme Onayı iletişim yazılım lisans sözleşmesini gösterir.  
   
-6.  Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
+6. Yazılım lisans sözleşmesini okuyun ve ardından **kabul**.  
   
      Güncelleştirme Onayı iletişim uygulaması görüntülenir ve aşağıdaki metni gösterir: Web üzerinde en son güncelleştirmeleri yüklemek üzere olduğunuz uygulama denetler. Kabul ediyorum düğmesini tıklatarak Internet'teki otomatik olarak güncelleştirmeleri denetlemek için uygulamayı yetkilendirme.  
   
-7.  Tıklayın **ediyorum**ve ardından **İlerle**.  
+7. Tıklayın **ediyorum**ve ardından **İlerle**.  
   
      Uygulama yüklemeye başlar.  
   
-8.  Uygulama Yükle iletişim kutusu görünürse, tıklatın **yükleme**.  
+8. Uygulama Yükle iletişim kutusu görünürse, tıklatın **yükleme**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulama dağıtımının önkoşulları](../deployment/application-deployment-prerequisites.md)   

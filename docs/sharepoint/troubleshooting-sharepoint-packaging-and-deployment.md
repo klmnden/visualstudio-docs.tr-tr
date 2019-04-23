@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087605"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint paketleme ve dağıtım sorunlarını giderme
   Bu konuda, paketleyebilir ve SharePoint çözümlerini dağıtma karşılaşabileceğiniz çeşitli sorunları kapsar.
@@ -51,7 +51,7 @@ ms.locfileid: "54868046"
 |-----------|-----------------|
 |Otomatik|Çarpışmaları algılar ve çakışmaları otomatik olarak çözer.|
 |İstem|Çarpışmaları algılar ve çakışmaları çözmeden önce bunları geliştiriciye bildirir.|
-|Hiçbiri|Çarpışmaları algılamaz.|
+|Yok.|Çarpışmaları algılamaz.|
 
 ## <a name="differences-between-f5-deployment"></a>F5 dağıtımı arasındaki farklar
  Kullanırken [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint projenizi test ve hata ayıklama için yerel SharePoint sunucusuna dağıtmak için tarafından gerçekleştirilen bazı ek adımlar vardır [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -73,9 +73,9 @@ ms.locfileid: "54868046"
 ### <a name="resolution"></a>Çözüm
  Bu sorunu çözmek için aşağıdaki adımları gerçekleştirin:
 
-1.  KB967535 güncelleştirmesini Microsoft Support makalesini açıklandığı biçimde yükleyin [DÜZELTİN: ASP.NET IIS 7.0 üzerinde Windows Vista ve Windows Server 2008 için iki sorunu düzeltmek bir düzeltme kullanılabilir](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. KB967535 güncelleştirmesini Microsoft Support makalesini açıklandığı biçimde yükleyin [DÜZELTİN: ASP.NET IIS 7.0 üzerinde Windows Vista ve Windows Server 2008 için iki sorunu düzeltmek bir düzeltme kullanılabilir](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Aşağıdaki satırı Web.config dosyasına ekleyin:
+2. Aşağıdaki satırı Web.config dosyasına ekleyin:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

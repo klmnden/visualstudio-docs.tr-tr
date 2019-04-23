@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113800"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Kodunuzu Test Etmek için UI Otomasyonunu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
 
 - [Kodlanmış UI testleri oluşturma](#VerifyingCodeUsingCUITCreate)
 
-  -   [Main yordamı](#VerifyingCodeUsingCUITCreate)
+  - [Main yordamı](#VerifyingCodeUsingCUITCreate)
 
-  -   [Başlatma ve durdurma uygulama](#starting)
+  - [Başlatma ve durdurma uygulama](#starting)
 
-  -   [UI denetimlerinin özelliklerini doğrulama](#VerifyingCodeUsingCUITGenerateAssertions)
+  - [UI denetimlerinin özelliklerini doğrulama](#VerifyingCodeUsingCUITGenerateAssertions)
 
 - [Kodlanmış UI testleri özelleştirme](#VerifyingCodeCUITModify)
 
-  -   [Oluşturulan kod](#generatedCode)
+  - [Oluşturulan kod](#generatedCode)
 
-  -   [UI denetim eylemlerini ve özelliklerini kodlama](#actions)
+  - [UI denetim eylemlerini ve özelliklerini kodlama](#actions)
 
-  -   [Hata Ayıklama](#debugging)
+  - [Hata Ayıklama](#debugging)
 
 - [Yenilikler](#VerifyCodeUsingCUITWhatsNext)
 
-##  <a name="VerifyingCodeUsingCUITCreate"></a> Kodlanmış UI testleri oluşturma
+## <a name="VerifyingCodeUsingCUITCreate"></a> Kodlanmış UI testleri oluşturma
 
 1. **Kodlanmış UI testi projesi oluşturun.**
 
@@ -156,18 +156,18 @@ Uygulamanızın kullanıcı arabirimi (UI) sürücü otomatik testler olarak bil
 
    Daha ayrıntılı bir örnek için bkz. [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). İzlenecek yolda, oluşturmak, düzenlemek ve bir kodlanmış UI testinin nasıl yükleneceğini göstermek için basit bir Windows Presentation Foundation (WPF) uygulaması oluşturacaksınız. İzlenecek yol çeşitli zamanlama sorunları ve yeniden düzenlemeyi denetleme tarafından kırılan testleri düzeltmeye ilişkin çözümler sağlar.
 
-###  <a name="starting"></a> Başlatma ve durdurma test altındaki uygulama
+### <a name="starting"></a> Başlatma ve durdurma test altındaki uygulama
  *My application, tarayıcı veya veritabanı her test için ayrı ayrı durdurmak ve başlatmak istemiyorum. Bu nasıl kaçınabilirim?*
 
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") test altındaki uygulamanızı başlatmak için eylemleri kaydetmek istemiyorsanız, seçmeden önce uygulamanızı başlamalıdır **kayıt** simgesi.
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") test altındaki uygulamanızı başlatmak için eylemleri kaydetmek istemiyorsanız, seçmeden önce uygulamanızı başlamalıdır **kayıt** simgesi.
 
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et")test sonunda, testin çalıştığı işlem sonlandırıldı. Uygulamanızı test başlattıysanız, uygulama genellikle kapatır.  Çıktığında uygulamanız kapatmak için test istemiyorsanız kullanın ve çözüm bir .runsettings dosyası eklemelisiniz `KeepExecutorAliveAfterLegacyRun` seçeneği. Daha fazla bilgi için [bir .runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et")test sonunda, testin çalıştığı işlem sonlandırıldı. Uygulamanızı test başlattıysanız, uygulama genellikle kapatır.  Çıktığında uygulamanız kapatmak için test istemiyorsanız kullanın ve çözüm bir .runsettings dosyası eklemelisiniz `KeepExecutorAliveAfterLegacyRun` seçeneği. Daha fazla bilgi için [bir .runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") her test yönteminin başlangıcında kod çalıştıran bir [TestInitialize] özniteliği tarafından tanımlanan bir test başlatma yöntemi ekleyebilirsiniz. Örneğin, uygulama TestInitialize yöntemden başlatabilir.
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") her test yönteminin başlangıcında kod çalıştıran bir [TestInitialize] özniteliği tarafından tanımlanan bir test başlatma yöntemi ekleyebilirsiniz. Örneğin, uygulama TestInitialize yöntemden başlatabilir.
 
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") kod her test yönteminin sonunda çalıştırılan bir [TestCleanup] özniteliği tarafından tanımlanan bir test temizleme yöntemi ekleyebilirsiniz. Örneğin, uygulamayı kapatmak için bu yöntem, TestCleanup yöntemi çağrılabilir.
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") kod her test yönteminin sonunda çalıştırılan bir [TestCleanup] özniteliği tarafından tanımlanan bir test temizleme yöntemi ekleyebilirsiniz. Örneğin, uygulamayı kapatmak için bu yöntem, TestCleanup yöntemi çağrılabilir.
 
-###  <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> UI denetimlerinin özelliklerini doğrulama
+### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> UI denetimlerinin özelliklerini doğrulama
  Kullanabileceğiniz **kodlanmış UI Test Oluşturucusu** bir kullanıcı arabirimi (UI) denetimine eklemek için <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> test veya onaylama UI denetimini kullanan bir doğrulama yöntemi için kod oluşturmak için.
 
  Onaylar için kullanıcı Arabirimi denetimleri oluşturmak için Seç **onaylama Ekle** doğrulamak istediğiniz test edilen uygulamada denetime doğru sürükleyin ve kodlanmış UI Test Oluşturucusu araç. Denetim kutusu özetlenmektedir, fare düğmesini bırakın. Denetimi sınıf kodunun hemen oluşturulur `UIMap.Designer.cs` dosya.
@@ -288,34 +288,34 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
-##  <a name="VerifyingCodeCUITModify"></a> Kodlanmış UI testleri özelleştirme
+## <a name="VerifyingCodeCUITModify"></a> Kodlanmış UI testleri özelleştirme
  Kodlanmış UI testi oluşturduktan sonra Visual Studio'da aşağıdaki araçlardan herhangi birini kullanarak düzenleyebilirsiniz:
 
--   **Kodlanmış UI Test Oluşturucusu:** Ek denetimleri ve doğrulama testlerinde eklemek için kodlanmış UI Test Oluşturucusu'nu kullanın. Bölümüne bakın [denetimleri ekleme ve bunların özelliklerini doğrulama](#VerifyingCodeUsingCUITGenerateAssertions) bu konuda.
+- **Kodlanmış UI Test Oluşturucusu:** Ek denetimleri ve doğrulama testlerinde eklemek için kodlanmış UI Test Oluşturucusu'nu kullanın. Bölümüne bakın [denetimleri ekleme ve bunların özelliklerini doğrulama](#VerifyingCodeUsingCUITGenerateAssertions) bu konuda.
 
--   **Kodlanmış UI Test Düzenleyicisi:** Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolayca değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntüleyin ve test yöntemlerinizi düzenleyin. UI eylemlerini ve bunların ilişkili denetimleri UI kontrol haritasında de düzenleyebilirsiniz. Daha fazla bilgi için [düzenleme kodlanmış UI Test düzenleyicisini kullanarak kodlanmış UI testleri](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- **Kodlanmış UI Test Düzenleyicisi:** Kodlanmış UI Test Düzenleyicisi'ni kullanarak kodlanmış UI testlerini kolayca değiştirmenize olanak tanır. Kodlanmış UI Test Düzenleyicisi'ni kullanarak bulun, görüntüleyin ve test yöntemlerinizi düzenleyin. UI eylemlerini ve bunların ilişkili denetimleri UI kontrol haritasında de düzenleyebilirsiniz. Daha fazla bilgi için [düzenleme kodlanmış UI Test düzenleyicisini kullanarak kodlanmış UI testleri](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
--   **Kod Düzenleyicisi:**
+- **Kod Düzenleyicisi:**
 
-    -   Bölümünde anlatıldığı gibi denetimler için kodu testinizde el ile ekleyin [kodlama UI denetim eylemlerini ve özelliklerini](#actions) bölümüne bakın.
+    - Bölümünde anlatıldığı gibi denetimler için kodu testinizde el ile ekleyin [kodlama UI denetim eylemlerini ve özelliklerini](#actions) bölümüne bakın.
 
-    -   Kodlanmış UI testi oluşturduktan sonra veri odaklı olarak değiştirebilirsiniz. Daha fazla bilgi için [veri tabanlı kodlanmış bir UI testi oluşturma](../test/creating-a-data-driven-coded-ui-test.md).
+    - Kodlanmış UI testi oluşturduktan sonra veri odaklı olarak değiştirebilirsiniz. Daha fazla bilgi için [veri tabanlı kodlanmış bir UI testi oluşturma](../test/creating-a-data-driven-coded-ui-test.md).
 
-    -   Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için uygun UITestControl.WaitForControlXXX() yöntemini ekleyin. Kullanılabilir yöntemleri tam bir listesi için bkz. [yapmadan kodlanmış UI testleri beklemek için belirli olayları sırasında kayıttan yürütme](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Bir denetim WaitForControlEnabled yöntemi kullanarak etkin olmasını bekler, kodlanmış UI testi örneği için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Bir kodlanmış UI Testi kayıttan yürütmesinde kaybolur ve benzeri için ilerleme çubuğunu oluşmasına görünmesi için bir pencere gibi belirli olaylar için beklenecek test bildirebilirsiniz. Bunu yapmak için uygun UITestControl.WaitForControlXXX() yöntemini ekleyin. Kullanılabilir yöntemleri tam bir listesi için bkz. [yapmadan kodlanmış UI testleri beklemek için belirli olayları sırasında kayıttan yürütme](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Bir denetim WaitForControlEnabled yöntemi kullanarak etkin olmasını bekler, kodlanmış UI testi örneği için bkz [izlenecek yol: Oluşturma, düzenleme ve kodlanmış UI testi koruma](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    -   Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir. Daha fazla bilgi için [kodlanmış UI testlerinde HTML5 denetimleri kullanma](../test/using-html5-controls-in-coded-ui-tests.md).
+    - Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denetimleri bazıları için destek içerir. Daha fazla bilgi için [kodlanmış UI testlerinde HTML5 denetimleri kullanma](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    -   **Kodlanmış UI testi kodlama Kılavuzu:**
+    - **Kodlanmış UI testi kodlama Kılavuzu:**
 
-        -   [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
+        - [Kodlanmış UI Testinin Anatomisi](../test/anatomy-of-a-coded-ui-test.md)
 
-        -   [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
+        - [Kodlanmış UI Testleri için En İyi Yöntemler](../test/best-practices-for-coded-ui-tests.md)
 
-        -   [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
+        - [Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        -   [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+        - [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
-###  <a name="generatedCode"></a> Oluşturulan kod
+### <a name="generatedCode"></a> Oluşturulan kod
  Seçeneğini belirlediğinizde **kod üret**, bazı kod parçalarını oluşturulur:
 
 - **Bir test yönteminin satır.**
@@ -383,7 +383,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   Oluşturulan kod hakkında daha fazla bilgi için bkz: [kodlanmış UI testinin anatomisi](../test/anatomy-of-a-coded-ui-test.md).
 
-###  <a name="actions"></a> UI denetim eylemlerini ve özelliklerini kodlama
+### <a name="actions"></a> UI denetim eylemlerini ve özelliklerini kodlama
  UI test denetimleri ile çalışırken kodlanmış UI testleri, iki bölüme ayrılır: akce a vlastnosti.
 
 - İlk bölümü, kullanıcı Arabirimi test denetimleri üzerinde gerçekleştirebileceğiniz eylemler oluşur. Örneğin, kodlanmış UI testleri, kullanıcı Arabirimi test denetim üzerinde fare tıklamasına benzetimini yapmak veya klavye kullanıcı Arabirimi test denetimini etkilemek için yazılan anahtarları benzetimi.
@@ -410,7 +410,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Özellikleri almak veya kullanıcı Arabirimi test denetimlerinden doğrudan ayarlamak için
 
--   T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, t:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList veya T: gibi türetilen denetimler ile Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, alma ya da özellik değerlerine, doğrudan, aşağıdaki gibi ayarlayın:
+- T:Microsoft.VisualStudio.TestTools.UITesting.UITestControl, t:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList veya T: gibi türetilen denetimler ile Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox, alma ya da özellik değerlerine, doğrudan, aşağıdaki gibi ayarlayın:
 
     ```
     int i = myHtmlList.ItemCount;
@@ -419,11 +419,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ##### <a name="to-get-properties-from-ui-test-controls"></a>UI test denetimlerden özellikleri almak için
 
--   Bir özellik değeri bir denetiminden almak için kullanın <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
+- Bir özellik değeri bir denetiminden almak için kullanın <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
 
--   Özelliği almak için denetimin belirtmek için uygun dize ile kullanmak `PropertyNames` sınıfı parametresi olarak her bir denetimde <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
+- Özelliği almak için denetimin belirtmek için uygun dize ile kullanmak `PropertyNames` sınıfı parametresi olarak her bir denetimde <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.
 
--   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> uygun veri türü, ancak bu dönüş değeri olarak atandığında döndürür bir <xref:System.Object>. Dönüş <xref:System.Object> uygun türü olarak dönüştürülmelidir.
+- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> uygun veri türü, ancak bu dönüş değeri olarak atandığında döndürür bir <xref:System.Object>. Dönüş <xref:System.Object> uygun türü olarak dönüştürülmelidir.
 
      Örnek:
 
@@ -431,18 +431,18 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ##### <a name="to-set-properties-for-ui-test-controls"></a>UI testi denetimlerin özelliklerini ayarlamak için
 
--   Bir denetimde bir özelliği ayarlamak için kullanın <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.
+- Bir denetimde bir özelliği ayarlamak için kullanın <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.
 
--   Ayarlanacak denetim özelliği belirtmek için uygun dize ile kullanmak `PropertyNames` ilk parametre olarak sınıf <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, ikinci parametre olarak özellik değeri ile.
+- Ayarlanacak denetim özelliği belirtmek için uygun dize ile kullanmak `PropertyNames` ilk parametre olarak sınıf <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, ikinci parametre olarak özellik değeri ile.
 
      Örnek:
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-###  <a name="debugging"></a> Hata Ayıklama
+### <a name="debugging"></a> Hata Ayıklama
  Kodlanmış UI test günlüklerini kullanarak kodlanmış UI testlerini analiz edebilirsiniz. Kodlanmış UI test günlüklerini filtre ve kayıt kodlanmış UI testleri hakkında önemli bilgiler çalıştırır. Günlükleri biçimi sorunları hızla ayıklamanıza olanak tanır. Daha fazla bilgi için [çözümleme kodlanmış UI testleri kullanarak kodlanmış UI Test günlüklerini](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-##  <a name="VerifyCodeUsingCUITWhatsNext"></a> Sırada ne var?
+## <a name="VerifyCodeUsingCUITWhatsNext"></a> Sırada ne var?
  **Kodlanmış UI testleri çalıştırmak için ek seçenekler:** Bu konunun önceki kısımlarında açıklandığı gibi kodlanmış UI testleri doğrudan Visual Studio'dan çalıştırabilirsiniz. Ayrıca, otomatikleştirilmiş UI testleri çalıştırabilirsiniz [!INCLUDE[TCMext](../includes/tcmext-md.md)], veya [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Kodlanmış UI testlerini otomatik olduğunda, bunları diğer otomatik testler çalıştırdığınızda, masaüstü ile etkileşimine izin sahiptirler.
 
 - [Nasıl yapılır: Microsoft Visual Studio'dan testler çalıştırma](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

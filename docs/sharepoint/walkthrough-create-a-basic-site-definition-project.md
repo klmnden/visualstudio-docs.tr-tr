@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 078fcc4d30613e4fe19b493150ce4570196b73ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083380"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>İzlenecek yol: Temel bir site tanımı projesi oluşturma
   Bu izlenecek yol, üzerinde bazı denetimler içeren bir görsel Web bölümü içeren bir temel site tanımını nasıl oluşturulacağını gösterir. Açıklık için oluşturduğunuz görsel Web Bölümü, yalnızca birkaç denetimlerine sahiptir. Ancak, daha fazla işlevsellik içeren daha karmaşık SharePoint site tanımları oluşturabilirsiniz.
@@ -38,9 +38,9 @@ ms.locfileid: "56608883"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   Microsoft Windows ve SharePoint sürümleri desteklenir. SharePoint çözümleri geliştirmek için gereksinimler daha fazla bilgi için bkz.
+- Microsoft Windows ve SharePoint sürümleri desteklenir. SharePoint çözümleri geliştirmek için gereksinimler daha fazla bilgi için bkz.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Site tanımı çözümü oluşturma
  İlk olarak, bir site tanımı projesi oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -80,19 +80,19 @@ ms.locfileid: "56608883"
 
 #### <a name="to-create-a-visual-web-part"></a>Bir görsel web bölümü oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, seçin **tüm dosyaları göster** düğmesi.
+1. İçinde **Çözüm Gezgini**, seçin **tüm dosyaları göster** düğmesi.
 
-2.  Seçin **SiteDefinition1** proje düğümünü ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+2. Seçin **SiteDefinition1** proje düğümünü ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
      **Yeni Öğe Ekle** iletişim kutusu görünür.
 
-3.  Genişletin **Visual C#**  düğümü veya **Visual Basic** düğümünü genişletin **SharePoint** düğümünü seçip **2010** düğümü.
+3. Genişletin **Visual C#**  düğümü veya **Visual Basic** düğümünü genişletin **SharePoint** düğümünü seçip **2010** düğümü.
 
-4.  Şablonlar listesinde seçin **görsel Web Bölümü** şablon, varsayılan VisualWebPart1 adlandırın ve ardından canlı **Ekle** düğmesi.
+4. Şablonlar listesinde seçin **görsel Web Bölümü** şablon, varsayılan VisualWebPart1 adlandırın ve ardından canlı **Ekle** düğmesi.
 
      *VisualWebPart1.ascx* dosyasını açar.
 
-5.  Sayfanın alt kısmında *VisualWebPart1.ascx*, üç denetim forma eklemek için aşağıdaki işaretlemeyi ekleyin: bir metin kutusu, bir düğme ve bir etiketi:
+5. Sayfanın alt kısmında *VisualWebPart1.ascx*, üç denetim forma eklemek için aşağıdaki işaretlemeyi ekleyin: bir metin kutusu, bir düğme ve bir etiketi:
 
     ```aspx-csharp
     <table>
@@ -110,7 +110,7 @@ ms.locfileid: "56608883"
     </table>
     ```
 
-6.  Altında *VisualWebPart1.ascx*açın *VisualWebPart1.ascx.cs* dosyası (için [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) veya *VisualWebPart1.ascx.vb* (için [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) ve ardından ekleyin Aşağıdaki kodu:
+6. Altında *VisualWebPart1.ascx*açın *VisualWebPart1.ascx.cs* dosyası (için [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) veya *VisualWebPart1.ascx.vb* (için [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) ve ardından ekleyin Aşağıdaki kodu:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -122,7 +122,7 @@ ms.locfileid: "56608883"
 
 #### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Varsayılan ASPX sayfasına bir görsel web bölümü eklemek için
 
-1.  Default.aspx sayfasını açın ve ardından altındaki şu satırı ekleyin `WebPartPages` etiketi:
+1. Default.aspx sayfasını açın ve ardından altındaki şu satırı ekleyin `WebPartPages` etiketi:
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
@@ -130,7 +130,7 @@ ms.locfileid: "56608883"
 
      Bu satırı adı MyWebPartControls Web Bölümü ve kodu ile ilişkilendirir. *Namespace* parametre olarak kullanılan ad alanı eşleşiyor *VisualWebPart1.ascx* kod dosyası.
 
-2.  Sonra `</asp:Content>` öğesi tamamını değiştirin `ContentPlaceHolderId="PlaceHolderMain"` bölümü ve içeriğini aşağıdaki kodla:
+2. Sonra `</asp:Content>` öğesi tamamını değiştirin `ContentPlaceHolderId="PlaceHolderMain"` bölümü ve içeriğini aşağıdaki kodla:
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -140,16 +140,16 @@ ms.locfileid: "56608883"
 
      Bu kod, daha önce oluşturduğunuz bir görsel Web Bölümü bir başvuru oluşturur.
 
-3.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SiteDefinition1** düğümünü seçip **başlangıç öğesi olarak ayarla**.
+3. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SiteDefinition1** düğümünü seçip **başlangıç öğesi olarak ayarla**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Dağıtma ve site tanım çözümü çalıştırma
  Ardından, projeyi SharePoint için dağıtın ve ardından projeyi çalıştırın.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>Site tanımını dağıtmak ve çalıştırmak için
 
--   Menü çubuğunda, **derleme** > **dağıtma TestSiteDef**.
+- Menü çubuğunda, **derleme** > **dağıtma TestSiteDef**.
 
--   Seçin **F5** anahtarı.
+- Seçin **F5** anahtarı.
 
      Visual Studio kodu derler özelliklerini ekler, tüm dosyaları bir SharePoint çözüm (WSP) dosyası paketler ve WSP dosyasını SharePoint sunucusuna dağıtır. SharePoint ardından dosyalarını yükler ve ardından özellikleri etkinleştirir.
 
@@ -158,17 +158,17 @@ ms.locfileid: "56608883"
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>Site tanımını kullanarak bir site oluşturmak için
 
-1.  SharePoint sitesinde yeni SharePoint sitesi sayfası görüntülenir.
+1. SharePoint sitesinde yeni SharePoint sitesi sayfası görüntülenir.
 
-2.  İçinde **başlık ve açıklama** bölümünde, girin **Yeni Sitem** başlığı ve bir sitenin açıklaması.
+2. İçinde **başlık ve açıklama** bölümünde, girin **Yeni Sitem** başlığı ve bir sitenin açıklaması.
 
-3.  İçinde **Web sitesi adresi** bölümünde, girin **YeniSitem** içinde **URL adı** kutusu.
+3. İçinde **Web sitesi adresi** bölümünde, girin **YeniSitem** içinde **URL adı** kutusu.
 
-4.  İçinde **şablon** bölümünde, seçin **SharePoint özelleştirmeleri** sekmesi.
+4. İçinde **şablon** bölümünde, seçin **SharePoint özelleştirmeleri** sekmesi.
 
-5.  İçinde **bir şablon seçin** listesinde **SiteDefinition1**.
+5. İçinde **bir şablon seçin** listesinde **SiteDefinition1**.
 
-6.  Diğer ayarları varsayılan değerlerinde bırakın ve ardından **Oluştur** düğmesi.
+6. Diğer ayarları varsayılan değerlerinde bırakın ve ardından **Oluştur** düğmesi.
 
      Yeni site görünür.
 
@@ -177,7 +177,7 @@ ms.locfileid: "56608883"
 
 #### <a name="to-test-the-new-site"></a>Yeni siteyi sınamak için
 
--   Varsayılan ASPX sayfasına üzerinde bazı metinler girin ve ardından **değişiklik etiket metni** metin kutusunun yanındaki düğmeyi.
+- Varsayılan ASPX sayfasına üzerinde bazı metinler girin ve ardından **değişiklik etiket metni** metin kutusunun yanındaki düğmeyi.
 
      İşlecin sağ tarafındaki düğmenin etiket metni görüntülenir.
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089379"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office çözümlerini geçirme ve yükseltme
   Visual Studio'nun önceki bir sürümde oluşturulan Microsoft Office projeniz varsa, geçerli Visual Studio sürümlerinde kullanmak için projeyi yükseltmeniz gerekir. Microsoft Office projesini yükseltmek için bir Microsoft Office geliştirici araçlarını içeren Visual Studio sürümünde açın. Microsoft Office geliştirici araçlarını içeren Visual Studio sürümleri hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635715"
 ## <a name="changes-to-upgraded-projects"></a>Yükseltilen Projelerdeki değişiklikler
  Visual Studio, Microsoft Office projesini yükselttiğinizde, aşağıdaki öğeleri hedefleyecek şekilde projeyi değiştirir:
 
--   Office çalışma zamanı için Visual Studio 2010 Araçları. Daha fazla bilgi için [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Office çalışma zamanı için Visual Studio 2010 Araçları. Daha fazla bilgi için [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Geçerli derleme referansları.
+- Geçerli derleme referansları.
 
--   (Visual Studio 2013'e yalnızca yükseltme sırasında) proje türü tarafından desteklenen .NET Framework sürümü.
+- (Visual Studio 2013'e yalnızca yükseltme sırasında) proje türü tarafından desteklenen .NET Framework sürümü.
 
--   (Visual Studio 2013'e yalnızca yükseltme sırasında), proje türü tarafından desteklenen Microsoft Office sürümü.
+- (Visual Studio 2013'e yalnızca yükseltme sırasında), proje türü tarafından desteklenen Microsoft Office sürümü.
 
 ## <a name="assembly-references"></a>Derleme başvuruları
  Visual Studio projede aşağıdaki derleme başvurularını yükseltir:
 
--   Microsoft Office birincil birlikte çalışma derlemeleri (PIA).
+- Microsoft Office birincil birlikte çalışma derlemeleri (PIA).
 
--   Derlemelerde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Bu derlemeler hakkında daha fazla bilgi için bkz. [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Derlemelerde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Bu derlemeler hakkında daha fazla bilgi için bkz. [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Bağımlı derlemelerin yeni veya güncelleştirilmiş sürümleri.
+- Bağımlı derlemelerin yeni veya güncelleştirilmiş sürümleri.
 
 ## <a name="targeted-net-framework"></a>Hedeflenen .NET Framework
  Bir projeyi Visual Studio 2013'e yükselttiğinizde, Visual Studio ya da hedeflemek için projeyi değiştirir [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] veya [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Projenin hedeflediği .NET framework sürümü hangi Office sürümü bilgisayarınızda yüklü bağlıdır. Varsa [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] olan yüklü Visual Studio hedeflemek için projeyi değiştirir [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aksi takdirde, Visual Studio hedeflemek için projeyi değiştirir [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

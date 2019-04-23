@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113761"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Nasıl yapılır: Temel Phong gölgelendiricisi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Bu belge, gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendir
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Düğüm için bir gölgelendirici grafiği ekleme  
+- Düğüm için bir gölgelendirici grafiği ekleme  
   
--   Düğüm bağlantısı kesiliyor  
+- Düğüm bağlantısı kesiliyor  
   
--   Düğümleri bağlanma  
+- Düğümleri bağlanma  
   
 ## <a name="the-phong-lighting-model"></a>Phong aydınlatma modeli  
  Phong aydınlatma modeli, yansıtıcı bir yüzeyi özellikleri benzetir Yansımalı vurgulama içerecek şekilde Lambert aydınlatma modeli genişletir. Lambert aydınlatma modeli kullandığınız aynı kaynaktan Yönlü ışık ek aydınlatma Yansımalı bileşen sağlar, ancak kendi son renk katkısı farklı şekilde işlenir. Yansımalı vurgulama her yüzeyi sahnedeki farklı görünüm yönünü, yönü ışık kaynağı yüzey yönü arasındaki ilişkiye bağlı etkiler. Yansımalı renk, yansımalı güç ve yönlendirmesini yüzeyi ve renk, şiddeti ve yönü ışık kaynaklarına bir üründür. Maksimum Yansımalı katkı Görüntüleyicisi, doğrudan ışık kaynağına yansıtacak yüzeylerini alır ve ışık kaynağına Sırtı Görüntüleyicisi yansıtacak yüzeylerini hiçbir katkı alırsınız. Phong aydınlatma modeli altında bir veya daha fazla Yansımalı bileşenleri her noktasında bir nesne için yansımalı vurgulamanın yoğunluğu ve renk belirlemek için birleştirilir ve ardından pikselin son rengini üretmek için Lambert aydınlatma modeli sonucuna eklenir .  

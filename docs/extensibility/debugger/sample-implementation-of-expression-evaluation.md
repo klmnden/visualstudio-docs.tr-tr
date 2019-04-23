@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090547"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Örnek İfade değerlendirme uygulaması
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684981"
 
  `IDebugExpressionEvaluator::Parse` Aşağıdaki görevleri gerçekleştirir:
 
-1.  [Yalnızca C++] Hataları aramak için ifade ayrıştırır.
+1. [C++ yalnızca] Hataları aramak için ifade ayrıştırır.
 
-2.  Bir sınıf oluşturur (adlı `CParsedExpression` Bu örnekte) çalıştıran `IDebugParsedExpression` arabirim ve ayrıştırılacak ifade sınıfında depolar.
+2. Bir sınıf oluşturur (adlı `CParsedExpression` Bu örnekte) çalıştıran `IDebugParsedExpression` arabirim ve ayrıştırılacak ifade sınıfında depolar.
 
-3.  Döndürür `IDebugParsedExpression` alanından arabirim `CParsedExpression` nesne.
+3. Döndürür `IDebugParsedExpression` alanından arabirim `CParsedExpression` nesne.
 
 > [!NOTE]
 >  Aşağıdaki örneklerde ve MyCEE örnek ifade değerlendiricisi değerlendirmesinden gelen ayrıştırma ayrı değil.

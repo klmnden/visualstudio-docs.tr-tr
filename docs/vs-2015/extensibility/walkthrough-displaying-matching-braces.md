@@ -10,12 +10,12 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084940"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>İzlenecek yol: Eşleşen Küme Ayraçlarını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,50 +29,50 @@ Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp gi
   
 #### <a name="to-create-a-mef-project"></a>MEF projesi oluşturmak için  
   
-1.  Bir düzenleyici sınıflandırıcı projesi oluşturun. Çözüm adı `BraceMatchingTest`.  
+1. Bir düzenleyici sınıflandırıcı projesi oluşturun. Çözüm adı `BraceMatchingTest`.  
   
-2.  Bir düzenleyici sınıflandırıcı öğe şablonu, projeye ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Bir düzenleyici sınıflandırıcı öğe şablonu, projeye ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Varolan sınıf dosyaları silin.  
+3. Varolan sınıf dosyaları silin.  
   
 ## <a name="implementing-a-brace-matching-tagger"></a>Etiketlerde eşlemesi uygulama  
  Visual Studio'da kullanılan benzer etkisi vurgulama ayraç almak için türü bir etiketlerde uygulayabileceğiniz <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Aşağıdaki kod, iç içe geçme herhangi bir düzeyde küme ayracı çiftleri için etiketlerde tanımlamak gösterilmektedir. Bu örnekte, küme ayracı çiftleri [']. [], ve {} etiketlerde oluşturucusu, ancak ilgili küme ayracı çiftleri dil belirtiminde tanımlanmış bir tam dil uygulaması tanımlanır.  
   
 #### <a name="to-implement-a-brace-matching-tagger"></a>Etiketlerde eşlemesi uygulamak için  
   
-1.  Bir sınıf dosyası ekleyin ve BraceMatching adlandırın.  
+1. Bir sınıf dosyası ekleyin ve BraceMatching adlandırın.  
   
-2.  Aşağıdaki ad alanlarını içeri aktarın.  
+2. Aşağıdaki ad alanlarını içeri aktarın.  
   
      [!code-csharp[VSSDKBraceMatchingTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#1)]
      [!code-vb[VSSDKBraceMatchingTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#1)]  
   
-3.  Bir sınıf tanımlama `BraceMatchingTagger` öğesinden devralan <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3. Bir sınıf tanımlama `BraceMatchingTagger` öğesinden devralan <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> türü <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#2)]
      [!code-vb[VSSDKBraceMatchingTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#2)]  
   
-4.  Metin görünümünü, kaynak arabelleği ve geçerli anlık görüntü noktası ve ayrıca küme ayracı çiftleri kümesini özellikler ekleyin.  
+4. Metin görünümünü, kaynak arabelleği ve geçerli anlık görüntü noktası ve ayrıca küme ayracı çiftleri kümesini özellikler ekleyin.  
   
      [!code-csharp[VSSDKBraceMatchingTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#3)]
      [!code-vb[VSSDKBraceMatchingTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#3)]  
   
-5.  Etiketlerde oluşturucuda özellikleri ayarlayın ve görünüm değişiklik olaylara abone <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> ve <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. Bu örnekte, yalnızca tanım amaçlıdır için eşleşen çiftleri de oluşturucu içinde tanımlanır.  
+5. Etiketlerde oluşturucuda özellikleri ayarlayın ve görünüm değişiklik olaylara abone <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> ve <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. Bu örnekte, yalnızca tanım amaçlıdır için eşleşen çiftleri de oluşturucu içinde tanımlanır.  
   
      [!code-csharp[VSSDKBraceMatchingTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#4)]
      [!code-vb[VSSDKBraceMatchingTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#4)]  
   
-6.  Bir parçası olarak <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> uygulaması TagsChanged olay bildirin.  
+6. Bir parçası olarak <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> uygulaması TagsChanged olay bildirin.  
   
      [!code-csharp[VSSDKBraceMatchingTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#5)]
      [!code-vb[VSSDKBraceMatchingTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#5)]  
   
-7.  Geçerli giriş işareti konumuna olay işleyicileri güncelleştirme `CurrentChar` özelliği ve raise TagsChanged olay.  
+7. Geçerli giriş işareti konumuna olay işleyicileri güncelleştirme `CurrentChar` özelliği ve raise TagsChanged olay.  
   
      [!code-csharp[VSSDKBraceMatchingTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#6)]
      [!code-vb[VSSDKBraceMatchingTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#6)]  
   
-8.  Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> eşleştirilecek yöntemi ayraçları ya da geçerli karakteri açık bir ayraç veya önceki karakteri bir kapatma ayracı, Visual Studio olduğu gibi olduğunda olduğunda. Eşleşme bulunduğunda, bu yöntem için açık küme ayracı biri diğeri için kapatma ayracı iki etiket örneği oluşturur.  
+8. Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> eşleştirilecek yöntemi ayraçları ya da geçerli karakteri açık bir ayraç veya önceki karakteri bir kapatma ayracı, Visual Studio olduğu gibi olduğunda olduğunda. Eşleşme bulunduğunda, bu yöntem için açık küme ayracı biri diğeri için kapatma ayracı iki etiket örneği oluşturur.  
   
      [!code-csharp[VSSDKBraceMatchingTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#7)]
      [!code-vb[VSSDKBraceMatchingTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#7)]  
@@ -92,12 +92,12 @@ Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp gi
   
 #### <a name="to-implement-a-brace-matching-tagger-provider"></a>Ayraç eşleştirme etiketlerde sağlayıcısını uygulamak için  
   
-1.  Devralınan bir etiketlerde sağlayıcısı bildirimini <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>BraceMatchingTaggerProvider adlandırın ve ile dışarı aktarın bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "metin" ve <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> , <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1. Devralınan bir etiketlerde sağlayıcısı bildirimini <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>BraceMatchingTaggerProvider adlandırın ve ile dışarı aktarın bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "metin" ve <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> , <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#10)]
      [!code-vb[VSSDKBraceMatchingTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#10)]  
   
-2.  Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> bir BraceMatchingTagger örneklemek için yöntemi.  
+2. Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> bir BraceMatchingTagger örneklemek için yöntemi.  
   
      [!code-csharp[VSSDKBraceMatchingTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#11)]
      [!code-vb[VSSDKBraceMatchingTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#11)]  
@@ -107,11 +107,11 @@ Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp gi
   
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>Derleme ve BraceMatchingTest çözümü test etmek için  
   
-1.  Çözümü oluşturun.  
+1. Çözümü oluşturun.  
   
-2.  Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.  
+2. Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.  
   
-3.  Bir metin dosyası oluşturun ve eşleşen küme ayraçlarını içeren bir metin yazın.  
+3. Bir metin dosyası oluşturun ve eşleşen küme ayraçlarını içeren bir metin yazın.  
   
     ```  
     hello {  
@@ -122,7 +122,7 @@ Ayraç eşleştirme eşleştirmek istediğiniz küme ayraçları tanımlayıp gi
     {hello}  
     ```  
   
-4.  Giriş işaretini bir açık ayraç önce getirdiğinizde, küme ayracı hem de eşleşen kapatma ayracı vurgulanmış olmalıdır. Yalnızca kapatma küme ayracından sonra işaretçiyi getirdiğinizde, küme ayracı hem de eşleşen açık küme ayracı vurgulanmış olmalıdır.  
+4. Giriş işaretini bir açık ayraç önce getirdiğinizde, küme ayracı hem de eşleşen kapatma ayracı vurgulanmış olmalıdır. Yalnızca kapatma küme ayracından sonra işaretçiyi getirdiğinizde, küme ayracı hem de eşleşen açık küme ayracı vurgulanmış olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

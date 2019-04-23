@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082964"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Visual Studio için Blend’i kullanarak kullanıcı arabirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
 
  **Bu konudaki**:
 
--   [Araçlar panelini turu](#Tools)
+- [Araçlar panelini turu](#Tools)
 
--   [Varlıklar panelini turu](#Assets)
+- [Varlıklar panelini turu](#Assets)
 
--   [Nesneler ve zaman çizelgesi Gezinti paneli](#Objects)
+- [Nesneler ve zaman çizelgesi Gezinti paneli](#Objects)
 
--   [Özellikler panelini turu](#Properties)
+- [Özellikler panelini turu](#Properties)
 
-##  <a name="Tools"></a> Araçlar panelini turu
+## <a name="Tools"></a> Araçlar panelini turu
  Kullanabileceğiniz **Araçları** uygulamanızdaki nesneleri oluşturup değiştirmesi Visual Studio için blend'de paneli. Bir araç seçerek ve farenizle çalışma yüzeyi üzerinde çizim nesneleri oluşturun.
 
  ![Araçlar paneli](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
 
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [araç](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a> Varlıklar panelini turu
+## <a name="Assets"></a> Varlıklar panelini turu
  Tüm denetimleri bulabilirsiniz **varlıklar** paneli, benzer **araç kutusu** Visual Studio'da. Denetimleri ek olarak, her şey için çalışma yüzeyine ekleyebilirsiniz bulabilirsiniz **varlıklar** paneli, stilleri, ortam, davranışları ve efektleri gibi.
 
  ![Varlıklar paneli](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
 |![](../designers/media/b1-4.png "B1_4")|**Stilleri** kaynak sözlüğünde yer alan tüm stilleri gösterir.|
 |![](../designers/media/b1-5.png "B1_5")|**Açıklama** seçili varlıklar kategorisinin veya alt kategorinin açıklamasını görüntüleyin.|
 
-##  <a name="Objects"></a> Nesneler ve zaman çizelgesi Gezinti paneli
+## <a name="Objects"></a> Nesneler ve zaman çizelgesi Gezinti paneli
  Çalışma yüzeyinde nesneleri düzenlemek için bu paneli kullanın ve bunları animasyon uygulamak isterseniz.
 
  ![Nesne ve zaman çizelgesi panelinde Animasyon modunda](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Visual Studio için Blend, XAML tabanlı Windows Masaüstü, web tasarlamanıza 
 |![](../designers/media/b1-15.png "B1_15")|**Zaman Çizelgesi Yakınlaştırması** zaman çizelgesinin yakınlaştırma çözünürlüğünü ayarlayın. Yakınlaştırma bir animasyonu daha ayrıntılı düzenlemenize izin verir ve uzaklaştırmaysa daha uzun süreler boyunca neler olduğuna ilişkin daha kapsamlı bir özet gösterir. Yakınlaştırma yapar, ancak zaman içinde istediğiniz konumunda bir ana kare ayarlayamazsınız, yaslama çözünürlüğünün yeterince yüksek olarak ayarlandığını doğrulayın.|
 |![Belirtme çizgisi 16](../designers/media/b5-label-16.png "b5_label_16")|**Zaman Çizelgesi kompozisyon alanı** zaman çizelgesini görüntüleyin ve ana kareleri sürükleyerek veya kendi kısayol menülerini kullanarak taşıyabilirsiniz.|
 
-##  <a name="Properties"></a> Özellikler panelini turu
+## <a name="Properties"></a> Özellikler panelini turu
  Bir nesnenin özelliklerini görüntüleme ve değiştirme için bu paneli kullanın. Bunları doğrudan çalışma yüzeyi üzerinde de ayarlayabilirsiniz. Bunu yaparsanız, özellik değişikliklerinin yansıtılır **özellikleri** paneli.
 
  ![Özellikler panelini](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

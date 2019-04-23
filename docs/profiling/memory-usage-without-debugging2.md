@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088580"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Hata Ayıklayıcı olmadan bellek kullanımını analiz etme
 
@@ -56,13 +56,13 @@ Uygulama çok sayıda nesne kullanır ve bir senaryoya analizinizi odaklanmasın
 
 Anlık görüntüleri toplamak için seçin **anlık görüntü Al** bellek verileri yakalamak istediğinizde.
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> Tanılama oturumu kapat
+### <a name="BKMK_Close_a_monitoring_session"></a> Tanılama oturumu kapat
 
 Rapor oluşturmadan bir izleme oturumunu durdurmak için tanılama pencereyi kapatmanız yeterlidir. İşiniz bittiğinde, rapor oluşturmak için seçim anlık görüntüler aldıysanız veya toplama **toplamasını Durdur**.
 
 ![Toplamayı Durdur](../profiling/media/memuse__stopcollection.png "koleksiyonu Durdur")
 
-##  <a name="memory-usage-reports"></a>Bellek Kullanım raporları
+## <a name="memory-usage-reports"></a>Bellek Kullanım raporları
 
 Veri toplamayı durdurduktan sonra **bellek kullanımı** aracı uygulamayı durdurur ve görüntüler **bellek kullanımı** genel bakış sayfası.
 
@@ -103,7 +103,7 @@ Anlık görüntü raporu:
 
 - **Başvurulan türleri** veya **başvurulan nesneleri** ağacı seçili türü veya örnek başvuru nesneleri gösterir.
 
-###  <a name="BKMK_Report_tree_filters_"></a> Rapor ağaç filtreleri
+### <a name="BKMK_Report_tree_filters_"></a> Rapor ağaç filtreleri
 
 Uygulama geliştiricileri için ilgi çekici uygulamalarda birçok türü değil. Anlık görüntü raporu filtreleri bu türlerin çoğu gizleyebilirsiniz **Yönetilen yığın** ve **kök yolları** ağaçları.
 
@@ -123,7 +123,7 @@ Uygulama geliştiricileri için ilgi çekici uygulamalarda birçok türü değil
 
 Her iki bağlantı aynı raporu açın. Tek fark, başlangıç sıralama **Yönetilen yığın** ağaç. Rapor tarafından boyutu bağlantı sıralar **kapsamlı boyut (bayt)** sütun. Rapor tarafından nesneleri bağlantı sıralar **sayısı** sütun. Rapor açıldıktan sonra sıralama sütunu veya sırasını değiştirebilirsiniz.
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Yönetilen yığın ağaç (anlık görüntü ayrıntılarını raporları)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Yönetilen yığın ağaç (anlık görüntü ayrıntılarını raporları)
  **Yönetilen yığın** ağaç bellekte tutulan nesne türlerini listeler. On en büyük boyuta göre sıralayarak türü örneklerini görüntülemek için bir tür adı'nı genişletin. Bir türü veya örnek görüntülemek için seçin **kök yolları** ve **başvurulan nesneleri** ağaçları seçili öğe için.
 
  ![Yönetilen yığın ağaç](../profiling/media/memuse__snapshotdetails_managedheaptree.png "yönetilen yığını ağacı")
@@ -138,14 +138,14 @@ Her iki bağlantı aynı raporu açın. Tek fark, başlangıç sıralama **Yöne
 |**Kapsamlı boyut (bayt)**|Kapsanan nesneler boyutunu türdeki örneklerin boyutunu veya tek bir örnek boyutu dahil.|
 |**Module**|Nesne içeren modül.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Yolları (anlık görüntü raporları ayrıntıları) kök ağacı
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Yolları (anlık görüntü raporları ayrıntıları) kök ağacı
 **Ağaç kök yolları** zincirini, bir tür veya örnek başvuru nesnelerin gösterir. .NET Framework atık toplayıcı, yalnızca tüm başvuruları serbest bıraktığınızda bir nesne için bellek temizler.
 
 Bir türü için **kök yolları** ağacı, bu türe yapılan başvuruları tutan nesne sayısını görünür **başvuru sayısını** sütun.
 
 ![Kök yolları türleri için ağaç](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "kök yolları türleri için ağaç")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Başvurulan türler veya başvurulan nesneleri ağaç (anlık görüntü raporları ayrıntıları)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Başvurulan türler veya başvurulan nesneleri ağaç (anlık görüntü raporları ayrıntıları)
 **Başvurulan türleri** veya **başvurulan nesneleri** ağacı seçili türü veya örnek başvuru nesneleri gösterir.
 
 ![Başvurulan nesne ağacının örnekler](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "için başvurulan nesneleri ağacı örnekleri")
@@ -168,7 +168,7 @@ Her iki bağlantı aynı raporu açın. Tek fark, başlangıç sıralama **Yöne
 
  ![Fark bağlanan bir anlık görüntü bölmesinde raporu](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "fark bağlanan bir anlık görüntü bölmesinde raporu")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Yönetilen yığın ağaç (anlık görüntü fark raporları)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Yönetilen yığın ağaç (anlık görüntü fark raporları)
 
  **Yönetilen yığın** ağaç bellekte tutulan nesne türlerini listeler. On en büyük boyuta göre sıralayarak türü örneklerini görüntülemek için bir tür adı genişletebilirsiniz. Bir türü veya örnek görüntülemek için seçin **kök yolları** ve **başvurulan nesneleri** ağaçları seçili öğe için.
 
@@ -187,7 +187,7 @@ Her iki bağlantı aynı raporu açın. Tek fark, başlangıç sıralama **Yöne
 |**Kapsamlı boyut farkı (bayt)**|Bir tür, türün tüm örneklerin boyutunu birincil anlık görüntü ve önceki anlık görüntü arasındaki farkı için nesneleri nesnelerin boyutunu dahil olmak üzere. Alan bir örneği için boştur.|
 |**Module**|Nesne içeren modül.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Kök ağaç (anlık görüntü fark raporları) yolları
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Kök ağaç (anlık görüntü fark raporları) yolları
 
 **Ağaç kök yolları** zincirini, bir tür veya örnek başvuru nesnelerin gösterir. .NET Framework atık toplayıcı, yalnızca tüm başvuruları serbest bıraktığınızda bir nesne için bellek temizler.
 
@@ -195,7 +195,7 @@ Bir türü için **kök yolları** ağacı, bu türe yapılan başvuruları tuta
 
  ![Bir fark rapor yollar için kök ağacında](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "yollar için kök ağacında bir fark raporu")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Başvurulan türler veya başvurulan nesneleri ağaç (anlık görüntü fark raporları)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Başvurulan türler veya başvurulan nesneleri ağaç (anlık görüntü fark raporları)
 
 **Başvurulan türleri** veya **başvurulan nesneleri** ağacı seçili türü veya örnek başvuru nesneleri gösterir.
 

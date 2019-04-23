@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 07293e560cc78ecdd04f83a12cd18255d4a4a427
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088294"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Bir Visual C++ DLL'ye test etme
 
@@ -22,33 +22,33 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
  Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya ayrı çözümler için birim testleri oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/how-to-use-microsoft-test-framework-for-cpp.md) kullanmak için hangi yapı ilişkin ipuçları için.
 
-##  <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma
+## <a name="Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma
 
-1.  Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje**.
+1. Üzerinde **dosya** menüsünde seçin **yeni** > **yeni proje**.
 
-2.  Yeni Proje iletişim kutusunda Genişlet **yüklü** > **Visual C++** ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
+2. Yeni Proje iletişim kutusunda Genişlet **yüklü** > **Visual C++** ve **Windows Evrensel**. Ardından **birim testi uygulaması (Evrensel Windows)** proje şablonları listesinden.
 
-3.  Projeyi adlandırın `RooterLibTests`; konumu belirtin; çözümünü arlandırın `RooterLib`; emin **çözüm için dizin oluştur** denetlenir.
+3. Projeyi adlandırın `RooterLibTests`; konumu belirtin; çözümünü arlandırın `RooterLib`; emin **çözüm için dizin oluştur** denetlenir.
 
      ![Çözüm ve proje adını ve konumunu belirtin](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4.  Yeni projeyi **unittest1.cpp**.
+4. Yeni projeyi **unittest1.cpp**.
 
      ![UnitTest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Aşağıdakilere dikkat edin:
 
-    -   Her bir testi kullanılarak tanımlanmış `TEST_METHOD(YourTestName){...}`.
+    - Her bir testi kullanılarak tanımlanmış `TEST_METHOD(YourTestName){...}`.
 
          Geleneksel işlev imzası yazmanız gerekmez. İmza TEST_METHOD makro tarafından oluşturulur. Makro, void döndüren bir örnek işlevi oluşturur. Ayrıca, test yöntemi hakkında bilgi döndüren statik bir işlev oluşturur. Test Gezgini, yöntem bulmak bu bilgileri sağlar.
 
-    -   Test yöntemleri, sınıflara kullanarak gruplanır `TEST_CLASS(YourClassName){...}`.
+    - Test yöntemleri, sınıflara kullanarak gruplanır `TEST_CLASS(YourClassName){...}`.
 
          Testler çalıştırıldığında, her test sınıfının bir örneği oluşturulur. Test yöntemlerini belirtilmemiş sırayla çağrılır. Önce ve sonra her bir modül, sınıf veya yöntemi çağıran özel yöntemi tanımlayabilirsiniz. Daha fazla bilgi için [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](how-to-use-microsoft-test-framework-for-cpp.md).
 
-##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Testleri Test Gezgini'nde çalıştırma doğrulayın
+## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Testleri Test Gezgini'nde çalıştırma doğrulayın
 
-1.  Bazı test kodu ekleyin:
+1. Bazı test kodu ekleyin:
 
     ```cpp
     TEST_METHOD(TestMethod1)
@@ -59,21 +59,21 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
      Dikkat `Assert` sınıfı yöntemleri test sonuçlarında doğrulamak için kullanabileceğiniz birkaç statik yöntemler sağlar.
 
-2.  Üzerinde **Test** menüsünde seçin **çalıştırma** seçip **tümünü Çalıştır**.
+2. Üzerinde **Test** menüsünde seçin **çalıştırma** seçip **tümünü Çalıştır**.
 
      Test projesi oluşturur ve çalıştırır. **Test Gezgini** penceresi görünür ve test altında listelenen **başarılı testler**. **Özeti** pencerenin alt kısmındaki bölmesi, seçilen test hakkında ek ayrıntılar sağlar.
 
      ![Test Gezgini](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-##  <a name="Add_the_DLL_project_to_the_solution"></a> DLL projesi çözüme ekleyin.
+## <a name="Add_the_DLL_project_to_the_solution"></a> DLL projesi çözüme ekleyin.
 
-1.  İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **Yeni Proje Ekle**.
+1. İçinde **Çözüm Gezgini**, çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **Yeni Proje Ekle**.
 
      ![RooterLib projesi oluşturma](../test/media/ute_cpp_windows_rooterlib_create.png)
 
-2.  İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (UWP uygulamaları)**.
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (UWP uygulamaları)**.
 
-3.  Aşağıdaki kodu ekleyin *RooterLib.h* dosyası:
+3. Aşağıdaki kodu ekleyin *RooterLib.h* dosyası:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,17 +99,17 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
      `CRooterLib` Sınıfı Oluşturucu bildirir ve `SqareRoot` estimator yöntemi.
 
-4.  ROOTERLIB_EXPORTS sembol komut satırına ekleyin.
+4. ROOTERLIB_EXPORTS sembol komut satırına ekleyin.
 
-    1.  İçinde **Çözüm Gezgini**, seçin **RooterLib** proje ve ardından **özellikleri** kısayol menüsünden.
+    1. İçinde **Çözüm Gezgini**, seçin **RooterLib** proje ve ardından **özellikleri** kısayol menüsünden.
 
          ![Önişlemci sembolü tanımı Ekle](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  İçinde **RooterLib özellik sayfası** iletişim kutusunda **yapılandırma özellikleri**, genişletme **C++** ve **önişlemci**.
+    2. İçinde **RooterLib özellik sayfası** iletişim kutusunda **yapılandırma özellikleri**, genişletme **C++** ve **önişlemci**.
 
-    3.  Seçin  **\<Düzenle … >** gelen **önişlemci tanımları** listeleyin ve ardından ekleyin `ROOTERLIB_EXPORTS` içinde **önişlemci tanımları** iletişim kutusu.
+    3. Seçin  **\<Düzenle … >** gelen **önişlemci tanımları** listeleyin ve ardından ekleyin `ROOTERLIB_EXPORTS` içinde **önişlemci tanımları** iletişim kutusu.
 
-5.  Bildirilen işlevlerin en az uygulamaları ekleyin. Açık *RooterLib.cpp* ve aşağıdaki kodu ekleyin:
+5. Bildirilen işlevlerin en az uygulamaları ekleyin. Açık *RooterLib.cpp* ve aşağıdaki kodu ekleyin:
 
     ```cpp
     // constructor
@@ -125,23 +125,23 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
     ```
 
-##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Dll işlevleri test kodu tarafından görülebilir kılma
+## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Dll işlevleri test kodu tarafından görülebilir kılma
 
 1. RooterLib RooterLibTests projeye ekleyin.
 
-   1.  İçinde **Çözüm Gezgini**, seçin **RooterLibTests** proje ve ardından **başvuruları** kısayol menüsünde.
+   1. İçinde **Çözüm Gezgini**, seçin **RooterLibTests** proje ve ardından **başvuruları** kısayol menüsünde.
 
-   2.  Üzerinde **RooterLib proje özellikleri** iletişim kutusunda **ortak özellikler** ve **çerçeve ve başvurular**.
+   2. Üzerinde **RooterLib proje özellikleri** iletişim kutusunda **ortak özellikler** ve **çerçeve ve başvurular**.
 
-   3.  Seçin **Yeni Başvuru Ekle**
+   3. Seçin **Yeni Başvuru Ekle**
 
-   4.  İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.
+   4. İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.
 
 2. RooterLib üstbilgi dosyasına eklenecek *unittest1.cpp*.
 
-   1.  Açık *unittest1.cpp*.
+   1. Açık *unittest1.cpp*.
 
-   2.  Bu kod için aşağıdaki ekleme `#include "CppUnitTest.h"` satırı:
+   2. Bu kod için aşağıdaki ekleme `#include "CppUnitTest.h"` satırı:
 
        ```cpp
        #include "..\RooterLib\RooterLib.h"
@@ -177,9 +177,9 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
    Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.
 
-##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Yinelemeli olarak testleri genişletme ve onları geçirin
+## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Yinelemeli olarak testleri genişletme ve onları geçirin
 
-1.  Yeni bir test ekleyin:
+1. Yeni bir test ekleyin:
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -200,16 +200,16 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
     >
     > Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.
 
-2.  İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
+2. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**.
 
-3.  Test başarısız olur.
+3. Test başarısız olur.
 
      ![RangeTest başarısız](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.
 
-4.  Yeni test geçer, test edilen kod geliştirin. Ekleyin *RooterLib.cpp*:
+4. Yeni test geçer, test edilen kod geliştirin. Ekleyin *RooterLib.cpp*:
 
     ```cpp
     #include <math.h>
@@ -230,14 +230,14 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
     ```
 
-5.  Çözümü derleyin ve ardından **Test Gezgini**, seçin **tümünü Çalıştır**.
+5. Çözümü derleyin ve ardından **Test Gezgini**, seçin **tümünü Çalıştır**.
 
      Her iki testler başarılı.
 
 > [!TIP]
 > Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.
 
-##  <a name="Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama
+## <a name="Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama
 
 1. Başka bir test eklemek *unittest1.cpp*:
 
@@ -278,13 +278,13 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
 3. Testin neden başarısız görmek için işlev adım:
 
-   1.  Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.
+   1. Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.
 
-   2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.
+   2. Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.
 
         Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.
 
-   3.  Kodu *RooterLib.cpp* istisna yakalamak için:
+   3. Kodu *RooterLib.cpp* istisna yakalamak için:
 
        ```cpp
        #include <stdexcept>
@@ -300,15 +300,15 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
 
        ```
 
-   1.  İçinde **Test Gezgini**, seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.
+   1. İçinde **Test Gezgini**, seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.
 
    Artık tüm sınamaları geçmesi.
 
    ![Tüm testler başarılı](../test/media/ute_ult_alltestspass.png)
 
-##  <a name="Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleme
+## <a name="Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleme
 
-1.  Merkezi hesaplamaya basitleştirmek `SquareRoot` işlevi:
+1. Merkezi hesaplamaya basitleştirmek `SquareRoot` işlevi:
 
     ```csharp
     // old code
@@ -317,7 +317,7 @@ Bu konuda, C++ için birim testleri Microsoft Test Çerçevesi ile Evrensel Wind
     result = (result + v/result) / 2.0;
     ```
 
-2.  Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.
+2. Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.
 
     > [!TIP]
     > Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.

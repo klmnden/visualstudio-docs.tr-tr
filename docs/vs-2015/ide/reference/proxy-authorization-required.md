@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 74f8fdd738c613977a73cc3d79b5ba880c7e6e74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116101"
 ---
 # <a name="proxy-authorization-required"></a>Proxy kimlik doğrulaması gerekli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,29 +23,29 @@ Bu hata genellikle kullanıcılar Visual Studio Online için bir proxy sunucu ü
   
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Visual Studio'yu yeniden başlatın. Bir ara sunucu kimlik doğrulaması iletişim kutusu görünür. İletişim kutusunda kimlik bilgilerinizi girin.  
+- Visual Studio'yu yeniden başlatın. Bir ara sunucu kimlik doğrulaması iletişim kutusu görünür. İletişim kutusunda kimlik bilgilerinizi girin.  
   
--   Yukarıdaki adım sorunu çözmezse, proxy sunucusu için kimlik bilgileri istenmez Bunun nedeni olabilir http://go.microsoft.com yöneliktir ancak bunu yapar *. visualStudio.com adresleri. Bu sunucular için güvenilir listeye Visual Studio'da tüm oturum açma senaryoları engelini kaldırmak için aşağıdaki listeyi gerekir:  
+- Yukarıdaki adım sorunu çözmezse, proxy sunucusu için kimlik bilgileri istenmez Bunun nedeni olabilir http://go.microsoft.com yöneliktir ancak bunu yapar *. visualStudio.com adresleri. Bu sunucular için güvenilir listeye Visual Studio'da tüm oturum açma senaryoları engelini kaldırmak için aşağıdaki listeyi gerekir:  
   
-    -   *.windows.net  
+    - *.windows.net  
   
-    -   *.microsoftonline.com  
+    - *.microsoftonline.com  
   
-    -   *.visualstudio.com  
+    - *.visualstudio.com  
   
-    -   *.microsoft.com  
+    - *.microsoft.com  
   
-    -   *.live.com  
+    - *.live.com  
   
--   Aksi takdirde kaldırabilirsiniz http://go.microsoft.com adresi için hem de proxy kimlik doğrulaması iletişim kutusu gösterilir böylece bir beyaz liste http://go.microsoft.com adresi ve Visual Studio başlatıldığında sunucu uç noktaları.  
+- Aksi takdirde kaldırabilirsiniz http://go.microsoft.com adresi için hem de proxy kimlik doğrulaması iletişim kutusu gösterilir böylece bir beyaz liste http://go.microsoft.com adresi ve Visual Studio başlatıldığında sunucu uç noktaları.  
   
--   VEYA  
+- VEYA  
   
--   Ara sunucunuzda varsayılan kimlik bilgilerinizi kullanmak istiyorsanız, aşağıdakileri yapabilirsiniz:  
+- Ara sunucunuzda varsayılan kimlik bilgilerinizi kullanmak istiyorsanız, aşağıdakileri yapabilirsiniz:  
   
-    1.  Devenv.exe.config (devenv.exe yapılandırma dosyası) bulun: **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (veya **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
+    1. Devenv.exe.config (devenv.exe yapılandırma dosyası) bulun: **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (veya **% ProgramFiles (x86) %\Microsoft Visual Studio 14.0\Common7\IDE**) .  
   
-    2.  Yapılandırma dosyasında bulunamıyor `<system.net>` engelleyin ve bu kodu ekleyin:  
+    2. Yapılandırma dosyasında bulunamıyor `<system.net>` engelleyin ve bu kodu ekleyin:  
   
         ```xml  
         <defaultProxy enabled="true" useDefaultCredentials="true">  
@@ -56,6 +56,6 @@ Bu hata genellikle kullanıcılar Visual Studio Online için bir proxy sunucu ü
   
          Doğru ara sunucu adresi için ağınızda eklemelisiniz `proxyaddress="<http://<yourproxy:port#>`.  
   
--   VEYA  
+- VEYA  
   
--   Yönergeleri de izleyebilirsiniz [yazıya](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) Ara sunucusunu kullanacak şekilde sağlayacak kodu eklemek için.
+- Yönergeleri de izleyebilirsiniz [yazıya](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) Ara sunucusunu kullanacak şekilde sağlayacak kodu eklemek için.

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112181"
 ---
 # <a name="xml-editor"></a>XML Düzenleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ XML Düzenleyicisi'ni temel alır [!INCLUDE[msCoName](../includes/msconame-md.md
 ## <a name="express-editions"></a>Express Editions  
  Aşağıdaki XML Düzenleyicisi özelliklerini Visual Studio Express sürümlerinde kullanılamaz:  
   
--   Bir XML şeması bir XML örneği belge oluşturma.  
+- Bir XML şeması bir XML örneği belge oluşturma.  
   
--   XSLT çıkış XML Düzenleyicisi'nden görüntüleme.  
+- XSLT çıkış XML Düzenleyicisi'nden görüntüleme.  
   
--   XSLT stil sayfalarını düzenlerken akıllı doğrulama.  
+- XSLT stil sayfalarını düzenlerken akıllı doğrulama.  
   
--   XML Şeması Gezgini.  
+- XML Şeması Gezgini.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [XML Belgesi Doğrulama](../xml-tools/xml-document-validation.md)  

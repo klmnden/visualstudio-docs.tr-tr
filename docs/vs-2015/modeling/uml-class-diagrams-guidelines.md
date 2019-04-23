@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088892"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML sınıf diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
 > [!NOTE]
 >  Bu konu UML sınıf diyagramları hakkındadır. Program kodunu görselleştirmek için oluşturabileceğiniz ve kullanabileceğiniz başka tür bir sınıf diyagramı vardır. Bkz: [sınıfları ve türleri tasarlama ve görüntüleme](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="Using"></a> UML sınıf diyagramlarını kullanma  
+## <a name="Using"></a> UML sınıf diyagramlarını kullanma  
  Bir UML sınıf diyagramını çeşitli amaçlarla kullanabilirsiniz:  
   
--   Bir sistemde kullanılan ve bileşenleri arasında geçirilen türlerin uygulamadan bağımsız açıklamasını sağlamak için.  
+- Bir sistemde kullanılan ve bileşenleri arasında geçirilen türlerin uygulamadan bağımsız açıklamasını sağlamak için.  
   
      Örneğin, Yemek Siparişi türü iş katmanı içinde .NET kodda, bileşenler arasındaki arabirimlerde XML'de, veritabanı içinde SQL'de ve kullanıcı arabirimi içinde HTML'de uygulanabilir. Bu uygulamalar ayrıntıları bakımından farklı olsa da, Yemek Siparişi ile Menü ve Ödeme gibi diğer türler arasındaki ilişki her zaman aynıdır. UML sınıf diyagramı, uygulamalardan ayrı olarak bu ilişkileri tartışmanıza olanak sağlar.  
   
--   Uygulama ve kullanıcıları arasında iletişim kurmak ve kullanıcı ihtiyaçlarını açıklamak kullanılan terimlerin sözlüğünü açıklığa kavuşturmak amacıyla. Bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+- Uygulama ve kullanıcıları arasında iletişim kurmak ve kullanıcı ihtiyaçlarını açıklamak kullanılan terimlerin sözlüğünü açıklığa kavuşturmak amacıyla. Bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
      Örneğin, bir restoran uygulamasının kullanıcı öykülerini, kullanım örneklerini veya diğer gereksinim açıklamalarını düşünün. Böyle bir açıklamada; Menü, Sipariş, Öğün, Fiyat, Ödeme ve buna benzer terimleri bulabilirsiniz. Bu terimler arasındaki ilişkileri tanımlayan UML sınıf diyagramı çizebilirsiniz. Bu; gereksinim tanımlamalarında, kullanıcı arabiriminde ve yardım belgelerinde tutarsızlık oluşma riskini azaltacaktır.  
   
@@ -78,7 +78,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Bkz: [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Sınıf diyagramları çizmek için temel adımlar  
+## <a name="BasicSteps"></a> Sınıf diyagramları çizmek için temel adımlar  
  UML sınıf diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML Class Diagrams: Başvuru](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
@@ -86,35 +86,35 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
 #### <a name="to-create-a-uml-class-diagram"></a>Bir UML Sınıf diyagramı oluşturmak için  
   
-1.  Üzerinde **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**.  
   
-2.  Altında **şablonları**, seçin **UML sınıf diyagramı**.  
+2. Altında **şablonları**, seçin **UML sınıf diyagramı**.  
   
-3.  Diyagrama ad verin.  
+3. Diyagrama ad verin.  
   
-4.  İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
+4. İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**.  
   
      Yeni bir sınıf diyagramı görünür **UMLClass diyagram** araç kutusu. Araç Kutusu gereken öğeleri ve ilişkileri içerir.  
   
 #### <a name="to-draw-a-uml-class-diagram"></a>UML Sınıf Diyagramı çizmek için  
   
-1.  Bir tür oluşturmak için Seç **sınıfı**, **arabirimi** veya **numaralandırma** araç ve ardından diyagramın boş bir kısmına tıklayın. (Araç Kutusunu göremiyorsanız, CTRL+ALT+X tuşlarına basın.)  
+1. Bir tür oluşturmak için Seç **sınıfı**, **arabirimi** veya **numaralandırma** araç ve ardından diyagramın boş bir kısmına tıklayın. (Araç Kutusunu göremiyorsanız, CTRL+ALT+X tuşlarına basın.)  
   
-2.  Öznitelikler veya işlemler türleri veya sabit listesine değişmez değerler eklemek için **öznitelikleri**, **işlemleri** veya **değişmez değerleri** başlık yazın ve ENTER tuşuna basın.  
+2. Öznitelikler veya işlemler türleri veya sabit listesine değişmez değerler eklemek için **öznitelikleri**, **işlemleri** veya **değişmez değerleri** başlık yazın ve ENTER tuşuna basın.  
   
      Gibi bir imza yazabilirsiniz `f(x:Boolean):Integer`. Bkz: [öznitelikler ve işlemler](#AttributesAndOperations).  
   
      Çeşitli öğeleri hızlıca eklemek için her öğenin sonunda ENTER tuşuna iki kez basın. Listeyi yukarı veya aşağı taşımak için ok tuşlarını kullanabilirsiniz.  
   
-3.  Bir türü genişletmek veya daraltmak için üst sol köşesindeki köşeli çift ayraç simgesini seçin. Siz de genişletebileceğiniz ve daraltabileceğiniz **öznitelikleri** ve **işlemleri** bölümünü bir sınıf veya arabirim.  
+3. Bir türü genişletmek veya daraltmak için üst sol köşesindeki köşeli çift ayraç simgesini seçin. Siz de genişletebileceğiniz ve daraltabileceğiniz **öznitelikleri** ve **işlemleri** bölümünü bir sınıf veya arabirim.  
   
-4.  Türler arasındaki ilişkilendirmeler, devralma veya bağımlılık bağlantılarını çizmek için uygun araca tıklayın ve ardından kaynak türüne ve hedef türüne tıklayın.  
+4. Türler arasındaki ilişkilendirmeler, devralma veya bağımlılık bağlantılarını çizmek için uygun araca tıklayın ve ardından kaynak türüne ve hedef türüne tıklayın.  
   
-5.  Bir pakette türleri oluşturmak için kullanarak bir paket oluşturun **paket** aracını ve ardından paket içinde yeni türler ve paketler oluşturun. Ayrıca, türleri kopyalamak için kopyala komutunu kullanabilir ve onları pakete yapıştırabilirsiniz.  
+5. Bir pakette türleri oluşturmak için kullanarak bir paket oluşturun **paket** aracını ve ardından paket içinde yeni türler ve paketler oluşturun. Ayrıca, türleri kopyalamak için kopyala komutunu kullanabilir ve onları pakete yapıştırabilirsiniz.  
   
-6.  Her diyagram, aynı projede diğer diyagramlar arasında paylaşılan modeldeki bir görünümdür. Tam modelin ağaç görünümünü görmek için **görünümü**, **diğer Windows**, **UML Model Gezgini**.  
+6. Her diyagram, aynı projede diğer diyagramlar arasında paylaşılan modeldeki bir görünümdür. Tam modelin ağaç görünümünü görmek için **görünümü**, **diğer Windows**, **UML Model Gezgini**.  
   
-##  <a name="UsingTypes"></a> Sınıfları, arabirimleri ve sabit listelerini kullanma  
+## <a name="UsingTypes"></a> Sınıfları, arabirimleri ve sabit listelerini kullanma  
  Araç kutusunda kullanılabilir olan standart üç tür sınıflandırıcı vardır. Bunlar olarak adlandırılır *türleri* bu belge boyunca.  
   
  ![Bir sınıf, bir numaralandırma ve bir arabirim](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
@@ -125,9 +125,9 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
 - Kullanım bir **numaralandırma** (örneğin sınırlı sayıda değişmez değeri olan bir türü temsil etmek için 3) `Stop` ve `Go`.  
   
-  -   Sabit listesine değişmez değerleri ekleyin. Her birine ayrı bir ad verin.  
+  - Sabit listesine değişmez değerleri ekleyin. Her birine ayrı bir ad verin.  
   
-  -   İsterseniz her değişmez değer için sayısal bir değer de sağlayabilirsiniz. Açık listesinde değişmez değerin kısayol menüsünü seçin **özellikleri**, bir sayı yazın **değer** alanındaki **özellikleri** penceresi.  
+  - İsterseniz her değişmez değer için sayısal bir değer de sağlayabilirsiniz. Açık listesinde değişmez değerin kısayol menüsünü seçin **özellikleri**, bir sayı yazın **değer** alanındaki **özellikleri** penceresi.  
   
   Her türe benzersiz bir ad verin.  
   
@@ -154,7 +154,7 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Yaşam çizgisinden bir sınıf oluşturmak için Yaşam çizgisinin kısayol menüsünü açın ve ardından **Sınıf Oluştur** veya **oluşturma arabirimi**. Bkz: [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-##  <a name="AttributesAndOperations"></a> Öznitelikler ve işlemler  
+## <a name="AttributesAndOperations"></a> Öznitelikler ve işlemler  
  Bir öznitelik (4) bir türün her örneğinin sahip olabileceği adlandırılmış değerdir. Bir özniteliğe erişme, örneğin durumunu değiştirmez.  
   
  Bir işlem (5), türün örneklerinin gerçekleştirebildiği bir yöntem veya işlevdir. Bir değer döndürebilir. Varsa, **isQuery** özelliği true ise, örneğinin durumunu değiştiremezsiniz.  
@@ -167,9 +167,9 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Ayarlayabileceğiniz tüm özellikler hakkında ayrıntılı bilgi için bkz.  
   
--   [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki özniteliklerin özellikleri](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML sınıf diyagramlarındaki işlemlerin özellikleri](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>Öznitelik ve İşlemlerin Türleri  
  Her *türü* bir öznitelik veya işlem ve her bir parametre türü, aşağıdakilerden biri olabilir:  
@@ -214,9 +214,9 @@ Visual Studio'da kullanabileceğiniz bir *UML sınıf diyagramı* veri türlerin
   
  Çokluk 1'den fazla ise, bu özellikleri de ayarlayabilirsiniz:  
   
--   **IsOrdered** - true, koleksiyonun tanımlanmış bir düzeni vardır.  
+- **IsOrdered** - true, koleksiyonun tanımlanmış bir düzeni vardır.  
   
--   **IsUnique** - true, koleksiyonda yinelenen değerler varsa.  
+- **IsUnique** - true, koleksiyonda yinelenen değerler varsa.  
   
 ### <a name="visibility"></a>Görünürlük  
  *Görünürlük* özniteliğin veya işlemin sınıf dışından erişilebilir olup olmadığını gösterir. İzin verilen değerler aşağıdaki gibidir:  
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Genellikle tam imza, yalnızca siz onu düzenlerken diyagramda görünür. Düzenlemeyi bitirdiğinizde, ek özellikler gizlenir. Tam imzayı her zaman görmek istiyorsanız, türün kısayol menüsünü açın ve ardından **tam imzayı Göster**.  
   
-##  <a name="Associations"></a> İlişkilendirmeleri çizme ve kullanma  
+## <a name="Associations"></a> İlişkilendirmeleri çizme ve kullanma  
  Bağlantının yazılımda nasıl uygulandığını dikkate almaksızın, iki öğe arasındaki herhangi bir türden bağlantıyı göstermek için bir ilişkilendirme kullanın. Örneğin; C#'ta işaretçiyi, veritabanındaki ilişkiyi veya XML dosyasının bir bölümünden diğerine yapılan çapraz başvuruyu göstermek için ilişkilendirme kullanabilirsiniz. Gerçek dünyada, dünya ve güneş gibi nesneler arasındaki ilişkilendirmeyi gösterebilir. İlişkilendirme bağlantının nasıl gösterildiğini değil, yalnızca bilginin var olduğunu söyler.  
   
 ### <a name="properties-of-an-association"></a>Bir İlişkilendirmenin Özellikleri  
@@ -362,7 +362,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Eşdeğer ilişkilendirme ve öznitelikler](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")  
   
-##  <a name="Inheritance"></a> Devralma  
+## <a name="Inheritance"></a> Devralma  
  Kullanım **devralma** aşağıdaki ilişkileri oluşturmak için aracı:  
   
 - A *Genelleştirme* uzmanlaşmış bir türü ve genel bir tür arasındaki ilişki  
@@ -405,7 +405,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Bağlayıcı ve lollipop ile gösterilen gerçekleştirme](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")  
   
-##  <a name="Templates"></a> Şablon türleri  
+## <a name="Templates"></a> Şablon türleri  
  Diğer türler veya değerler tarafından parametrelendirilebilen genel veya şablon türü tanımlayabilirsiniz.  
   
  Örneğin, anahtar ve değer türleri tarafından parametrelendirilmiş genel bir Sözlük oluşturabilirsiniz:  
@@ -446,37 +446,37 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-use-a-template-type"></a>Bir şablon türü kullanmak için  
   
-1.  Örneğin, yeni bir tür oluşturma `AddressTable`.  
+1. Örneğin, yeni bir tür oluşturma `AddressTable`.  
   
-2.  Yeni türün kısayol menüsünü açın ve ardından **özellikleri**.  
+2. Yeni türün kısayol menüsünü açın ve ardından **özellikleri**.  
   
-3.  İçinde **şablon bağlama** şablon türünün, örneğin özelliği, select `Dictionary`, aşağı açılan listeden.  
+3. İçinde **şablon bağlama** şablon türünün, örneğin özelliği, select `Dictionary`, aşağı açılan listeden.  
   
-4.  Genişletin **şablon bağlama** özelliği.  
+4. Genişletin **şablon bağlama** özelliği.  
   
      Şablon türünün her parametresi için bir satır görünür.  
   
-5.  Her parametreyi uygun bir değere ayarlayın. Örneğin, `Key` parametresine bir sınıf adlı `Name`.  
+5. Her parametreyi uygun bir değere ayarlayın. Örneğin, `Key` parametresine bir sınıf adlı `Name`.  
   
-##  <a name="Packages"></a> Paketleri  
+## <a name="Packages"></a> Paketleri  
  Bir UML sınıf diyagramında paketleri görüntüleyebilirsiniz. Bir paket diğer model öğeleri için bir kapsayıcıdır. Bir paket içinde herhangi bir öğe oluşturabilirsiniz. Diyagramda, paketi taşıdığınız zaman paket içindeki öğeler de taşınacaktır.  
   
  Paketin içeriğini gizlemek veya göstermek için daralt/genişlet denetimini kullanabilirsiniz.  
   
  Bkz: [paketleri ve ad alanlarını tanımlama](../modeling/define-packages-and-namespaces.md).  
   
-##  <a name="generating"></a> UML sınıf diyagramlarından kod üretme  
+## <a name="generating"></a> UML sınıf diyagramlarından kod üretme  
  UML sınıf diyagramında sınıfları uygulamaya başlamak için C# kodu oluşturabilir veya kod oluşturma için şablonları özelleştirebilirsiniz. Sağlanan C# şablonlarını kullanarak kod oluşturmaya başlamak için:  
   
--   Diyagram veya öğenin kısayol menüsünü açın seçin **kod üret**ve ardından gerekli özellikleri ayarlayın.  
+- Diyagram veya öğenin kısayol menüsünü açın seçin **kod üret**ve ardından gerekli özellikleri ayarlayın.  
   
      Bu özellikleri ayarlama ve sağlanan şablonları özelleştirme hakkında daha fazla bilgi için bkz. [UML sınıf diyagramlarından kod oluşturma](../modeling/generate-code-from-uml-class-diagrams.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [Kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)

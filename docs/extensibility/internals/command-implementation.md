@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089759"
 ---
 # <a name="command-implementation"></a>Komut uygulama
 Komut içinde bir VSPackage'ı uygulamak için aşağıdaki görevleri gerçekleştirmeniz gerekir:
 
-1.  İçinde *.vsct* dosya, bir komut grubu oluşturun ve komut ekleyin. Daha fazla bilgi için [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. İçinde *.vsct* dosya, bir komut grubu oluşturun ve komut ekleyin. Daha fazla bilgi için [Visual Studio komut tablosu (.vsct) dosyaları](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Komutu, Visual Studio ile kaydedin.
+2. Komutu, Visual Studio ile kaydedin.
 
-3.  Komut uygulayın.
+3. Komut uygulayın.
 
 Aşağıdaki bölümlerde, kaydetme ve komutları uygulamak açıklanmaktadır.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>QueryStatus yöntemleri
  Ya da uyguluyorsanız <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> yöntemi veya <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> yöntemi, denetimi Ayarla komutu ait olduğu komutun GUID ve komut kimliği. Aşağıdaki yönergeleri izleyin:
 
--   GUID, tanınmıyor, uygulamanız her iki yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- GUID, tanınmıyor, uygulamanız her iki yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Her iki yöntem uygulamanıza GUID tanır, ancak komut uygulamadı durumunda yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Her iki yöntem uygulamanıza GUID tanır, ancak komut uygulamadı durumunda yöntem döndürmelidir <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Her iki yöntem uygulamanıza GUID hem komutu tanır sonra yöntem, her komut komut bayrakları alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> bayraklar:
+- Her iki yöntem uygulamanıza GUID hem komutu tanır sonra yöntem, her komut komut bayrakları alanı ayarlamanız gerekir (içinde `prgCmds` parametresi) aşağıdaki kullanarak <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> bayraklar:
 
-    -   `OLECMDF_SUPPORTED`: Komut desteklenir.
+    - `OLECMDF_SUPPORTED`: Komut desteklenir.
 
-    -   `OLECMDF_INVISIBLE`: Komutun görünür olmamalıdır.
+    - `OLECMDF_INVISIBLE`: Komutun görünür olmamalıdır.
 
-    -   `OLECMDF_LATCHED`: Komut çubuğunda açılıp ve denetlendi görünür.
+    - `OLECMDF_LATCHED`: Komut çubuğunda açılıp ve denetlendi görünür.
 
-    -   `OLECMDF_ENABLED`: Komut etkin.
+    - `OLECMDF_ENABLED`: Komut etkin.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Kısayol menüsünde görünmüyorsa, komut gizlenmelidir.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: Kısayol menüsünde görünmüyorsa, komut gizlenmelidir.
 
-    -   `OLECMDF_NINCHED`: Komut menü denetleyicisi ve etkin değil ancak aşağı açılan listesinin boş değil ve yine de kullanılabilir. (Bu bayrağı nadiren kullanılır.)
+    - `OLECMDF_NINCHED`: Komut menü denetleyicisi ve etkin değil ancak aşağı açılan listesinin boş değil ve yine de kullanılabilir. (Bu bayrağı nadiren kullanılır.)
 
--   Komut içinde tanımlanmışsa *.vsct* ile dosya `TextChanges` bayrağı, aşağıdaki parametreleri ayarlayın:
+- Komut içinde tanımlanmışsa *.vsct* ile dosya `TextChanges` bayrağı, aşağıdaki parametreleri ayarlayın:
 
-    -   Ayarlama `rgwz` öğesinin `pCmdText` yeni metin komut parametresi.
+    - Ayarlama `rgwz` öğesinin `pCmdText` yeni metin komut parametresi.
 
-    -   Ayarlama `cwActual` öğesinin `pCmdText` komut dize boyutu parametresi.
+    - Ayarlama `cwActual` öğesinin `pCmdText` komut dize boyutu parametresi.
 
 Ayrıca, komutunuzu Otomasyon işlevleri işlemek için özellikle tasarlanmıştır sürece geçerli bağlam bir Otomasyon işlevi olmadığından emin olun.
 

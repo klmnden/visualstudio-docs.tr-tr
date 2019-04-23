@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115581"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Nasıl yapılır: XML Şemasından XML Kod Parçacığı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ XML Düzenleyicisi'ni XML Şeması Tanım Dili (XSD) şemasından XML kod parça
   
 - Geçerli öğe düzenleyicide özniteliklere boş olmalıdır. Örneğin, tüm geçerli aşağıda verilmiştir  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - İmleç hemen öğe adı sağa bulunmalıdır.  
   
@@ -51,31 +51,31 @@ XML Düzenleyicisi'ni XML Şeması Tanım Dili (XSD) şemasından XML kod parça
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Yeni bir XML dosyası oluşturun ve bir XML şeması ile ilişkilendirmek için  
   
-1.  Üzerinde **dosya** menüsünde **yeni**, tıklatıp **dosya**.  
+1. Üzerinde **dosya** menüsünde **yeni**, tıklatıp **dosya**.  
   
-2.  Seçin **XML dosyası** içinde **şablonları** bölmesi ve tıklatın **açık**.  
+2. Seçin **XML dosyası** içinde **şablonları** bölmesi ve tıklatın **açık**.  
   
      Yeni bir dosya düzenleyicide açılır. Varsayılan XML bildirimi dosyasını içeren `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  Belge Özellikler penceresinde, Gözat düğmesine tıklayın (**...** ) üzerinde **şemaları** alan.  
+3. Belge Özellikler penceresinde, Gözat düğmesine tıklayın (**...** ) üzerinde **şemaları** alan.  
   
      **XSD şemaları** iletişim kutusu görüntülenir.  
   
-4.  **Ekle**'yi tıklatın.  
+4. **Ekle**'yi tıklatın.  
   
      **Açık XSD şeması** iletişim kutusu görüntülenir.  
   
-5.  Şema dosyası seçin ve tıklayın **açık**.  
+5. Şema dosyası seçin ve tıklayın **açık**.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
      XML Şeması sunulmuştur XML belge ile ilişkilendirilmiş.  
   
 #### <a name="to-generate-an-xml-snippet"></a>XML kod parçacığı oluşturmak için  
   
-1.  Tür `<` Düzenleyicisi bölmesinde.  
+1. Tür `<` Düzenleyicisi bölmesinde.  
   
-2.  Üye listesi, mümkün olan öğeleri görüntüler:  
+2. Üye listesi, mümkün olan öğeleri görüntüler:  
   
      **!--** açıklama eklemek için.  
   
@@ -85,11 +85,11 @@ XML Düzenleyicisi'ni XML Şeması Tanım Dili (XSD) şemasından XML kod parça
   
      **İlgili kişi** kök öğe eklemek için.  
   
-3.  Seçin **kişi** üye listesi ve ENTER tuşuna basın.  
+3. Seçin **kişi** üye listesi ve ENTER tuşuna basın.  
   
      Düzenleyici başlangıç etiketi ekler `<Contact` ve imleci öğe adından sonra konumlandırır.  
   
-4.  XML verileri oluşturmak için TAB'a basın `Contact` öğesi üzerinde şema bilgilerini temel.  
+4. XML verileri oluşturmak için TAB'a basın `Contact` öğesi üzerinde şema bilgilerini temel.  
   
 ### <a name="input"></a>Giriş  
  Aşağıdaki şema dosyası izlenecek yol tarafından kullanılır.  

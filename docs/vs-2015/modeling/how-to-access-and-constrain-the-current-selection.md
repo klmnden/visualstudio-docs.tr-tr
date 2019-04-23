@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 731968f79565742595b4f574e986d69a311d5f90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c3f6d0d481b91f7c475a37d33d43d47aff69ac8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114034"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Bir komut veya hareket işleyici alana özgü dilinizi yazarken, hangi öğe kul
   
 #### <a name="to-access-selection-information"></a>Seçimi bilgilere erişmek için  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Sınıfı, geçerli seçimi erişmek için kullanılan aşağıdaki üyeleri tanımlar.  
+1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> Sınıfı, geçerli seçimi erişmek için kullanılan aşağıdaki üyeleri tanımlar.  
   
     |Üye|Açıklama|  
     |------------|-----------------|  
@@ -43,24 +43,24 @@ Bir komut veya hareket işleyici alana özgü dilinizi yazarken, hangi öğe kul
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> Özelliği|Model tasarımcısında seçimin birincil öğe alır.|  
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> Özelliği|Seçimin birincil öğe Etkin pencerede alır.|  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> sınıfı erişim sağlar <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> model Tasarımcısı penceresinde temsil eder ve seçilen öğeleri modeli Tasarımcısı'nda ek erişim sağlayan nesne.  
+2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> sınıfı erişim sağlar <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> model Tasarımcısı penceresinde temsil eder ve seçilen öğeleri modeli Tasarımcısı'nda ek erişim sağlayan nesne.  
   
-3.  Ayrıca, oluşturulan kod bir Gezgini araç penceresi özelliği tanımlar ve etki alanına özgü dil için sınıf komutu Gezgini seçimi özelliğinde ayarlayın.  
+3. Ayrıca, oluşturulan kod bir Gezgini araç penceresi özelliği tanımlar ve etki alanına özgü dil için sınıf komutu Gezgini seçimi özelliğinde ayarlayın.  
   
-    -   Gezgini araç penceresi özelliği etki alanına özgü dil Gezgini araç penceresi sınıfının bir örneğini döndürür. Gezgini araç penceresi sınıfın türetildiği <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> sınıfı ve etki alanına özgü dil modeli Gezgini temsil eder.  
+    - Gezgini araç penceresi özelliği etki alanına özgü dil Gezgini araç penceresi sınıfının bir örneğini döndürür. Gezgini araç penceresi sınıfın türetildiği <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> sınıfı ve etki alanına özgü dil modeli Gezgini temsil eder.  
   
-    -   `ExplorerSelection` Özelliği etki alanına özgü dil modeli Gezgini penceresinde seçilen öğeyi döndürür.  
+    - `ExplorerSelection` Özelliği etki alanına özgü dil modeli Gezgini penceresinde seçilen öğeyi döndürür.  
   
 ## <a name="determining-which-window-is-active"></a>Hangi pencerenin etkin olduğundan belirleme  
  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Arabirimi içeren geçerli seçim durumu Kabuğu'nda erişim sağlayan üyeleri tanımlar. Alabileceğiniz bir <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> paketi sınıf ya da komut kümesi sınıfı etki alanına özgü dil nesneden `MonitorSelection` her bir temel sınıfta tanımlanan özellik. Paket sınıfın türetildiği <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> sınıfı ve komut kümesi sınıfı türetilir <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> sınıfı.  
   
 #### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>Hangi türde bir pencere etkin olan bir komut işleyici belirlemek için  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> sınıfı döndürür bir <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Kabuğu'nda geçerli seçim durumu erişim sağlayan nesne.  
+1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> sınıfı döndürür bir <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> Kabuğu'nda geçerli seçim durumu erişim sağlayan nesne.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> arabirimi etkin penceresinden farklı olabilir etkin seçimin kapsayıcısı alır.  
+2. <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A> Özelliği <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> arabirimi etkin penceresinden farklı olabilir etkin seçimin kapsayıcısı alır.  
   
-3.  Komutu aşağıdaki özelliklerde sınıfı sizin için ne tür bir pencere etkin olduğunu belirlemek için etki alanına özgü dil kümesine ekleyin.  
+3. Komutu aşağıdaki özelliklerde sınıfı sizin için ne tür bir pencere etkin olduğunu belirlemek için etki alanına özgü dil kümesine ekleyin.  
   
     ```csharp  
     // using Microsoft.VisualStudio.Modeling.Shell;  
@@ -93,17 +93,17 @@ Bir komut veya hareket işleyici alana özgü dilinizi yazarken, hangi öğe kul
   
 #### <a name="to-create-a-selection-rule"></a>Bir seçim kuralı oluşturmak için  
   
-1.  DSL projesi içinde bir özel kod dosyası oluşturma  
+1. DSL projesi içinde bir özel kod dosyası oluşturma  
   
-2.  Türetilen bir seçim kuralı sınıf tanımlama <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> sınıfı.  
+2. Türetilen bir seçim kuralı sınıf tanımlama <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> sınıfı.  
   
-3.  Geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> seçimi kural sınıfının seçim ölçütlerini uygulamak için yöntemi.  
+3. Geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> seçimi kural sınıfının seçim ölçütlerini uygulamak için yöntemi.  
   
-4.  Özel kod dosyanıza ClassDiagram sınıfı için bir parçalı sınıf tanımı ekleyin.  
+4. Özel kod dosyanıza ClassDiagram sınıfı için bir parçalı sınıf tanımı ekleyin.  
   
      `ClassDiagram` Sınıf türetilir <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> sınıfı ve DSL projedeki Diagram.cs, üretilen kod dosyasında tanımlanır.  
   
-5.  Geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> özelliği `ClassDiagram` özel seçim kural döndürmek için sınıf.  
+5. Geçersiz kılma <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> özelliği `ClassDiagram` özel seçim kural döndürmek için sınıf.  
   
      Varsayılan uygulaması <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> özellik seçimi değiştirmez bir seçim kuralı nesnesi alır.  
   

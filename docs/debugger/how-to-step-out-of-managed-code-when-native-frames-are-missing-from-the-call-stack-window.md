@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112877"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Nasıl yapılır: Yerel çerçeveler eksik çağrı yığını penceresinde olmadığında yönetilen kodların dışına adımla
 
@@ -39,9 +39,9 @@ Kodunuzu görünmez yerel çerçeveler varsa **çağrı yığını** yönetilen 
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Yerel çerçeveler çağrı yığını görüntüden eksik olmadığında yönetilen kodların dışına adımla
 
-1.  Yerel kodda, yönetilen kod çağrısından sonra bir konum kesme noktası ayarlayın.
+1. Yerel kodda, yönetilen kod çağrısından sonra bir konum kesme noktası ayarlayın.
 
-2.  Üzerinde **hata ayıklama** menüsünde seçin **devam**.
+2. Üzerinde **hata ayıklama** menüsünde seçin **devam**.
 
      Yönetilen çağrı yapıldığında yürütme yerel kodda kesme noktasında durur.
 

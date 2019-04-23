@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078934"
 ---
 # <a name="build-office-solutions"></a>Office çözümleri oluşturun
   Genel olarak, derleme ve hata ayıklama Office projeleri derleme ve Windows Forms gibi Visual Studio'da proje türlerinde hata ayıklama ile aynı olur. Bu bölümdeki konular, mevcut farkları açıklamaktadır. Uygulamaları oluşturma hakkında genel bilgi için bkz. [derlemek ve oluşturmak Visual Studio'da](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945423"
 ### <a name="document-level-projects"></a>Belge düzeyi projeleri
  Belge düzeyi projesi oluşturduğunuzda proje çıktısına aşağıdakiler dahildir:
 
--   Proje belgenin bir kopyasını.
+- Proje belgenin bir kopyasını.
 
--   Sahip başvurulmuş tüm Derlemelerle ve proje derlemesi kendi **Yereli Kopyala** özelliğini **true**.
+- Sahip başvurulmuş tüm Derlemelerle ve proje derlemesi kendi **Yereli Kopyala** özelliğini **true**.
 
--   Dosya adı uzantısına sahip uygulama bildirimini *.manifest*. Daha fazla bilgi için [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
+- Dosya adı uzantısına sahip uygulama bildirimini *.manifest*. Daha fazla bilgi için [Office çözümleri için uygulama bildirimleri](../vsto/application-manifests-for-office-solutions.md).
 
--   Dosya adı uzantısına sahip olan dağıtım bildirimi *.vsto*. Daha fazla bilgi için [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).
+- Dosya adı uzantısına sahip olan dağıtım bildirimi *.vsto*. Daha fazla bilgi için [Office çözümleri için dağıtım bildirimleri](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Bir program veritabanı (*PDB*) dosyası.
+- Bir program veritabanı (*PDB*) dosyası.
 
 > [!NOTE]
 >  Yerel bilgisayar yerine bir uzak konuma bir belge düzeyi çözüm oluşturuyorsanız, tam yolunu uygulamanın Güven Merkezi'ndeki güvenilen konumlar listesine ekleyin. Daha fazla bilgi için bkz belgelere güven verme adlı bölüme [güvenli Office çözümleri](../vsto/securing-office-solutions.md).

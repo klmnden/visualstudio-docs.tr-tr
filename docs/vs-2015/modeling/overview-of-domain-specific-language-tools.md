@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088749"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Etki Alanına Özgü Dil Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "54802981"
   
  Aşağıdaki araçlar, DSL araçları dahil edilmiştir:  
   
--   Alana özgü dilinizi geliştirmeye başlamanıza yardımcı olmak için farklı çözüm şablonları kullanan bir Proje Sihirbazı.  
+- Alana özgü dilinizi geliştirmeye başlamanıza yardımcı olmak için farklı çözüm şablonları kullanan bir Proje Sihirbazı.  
   
--   Oluşturma ve düzenleme, etki alanına özgü dil tanımı için bir grafik Tasarımcı.  
+- Oluşturma ve düzenleme, etki alanına özgü dil tanımı için bir grafik Tasarımcı.  
   
--   Etki alanına özgü dil tanımı iyi biçimlendirilmemiş ve ilgili sorun varsa, hataları ve uyarıları görüntüler xenapp'i doğrulama motoru.  
+- Etki alanına özgü dil tanımı iyi biçimlendirilmemiş ve ilgili sorun varsa, hataları ve uyarıları görüntüler xenapp'i doğrulama motoru.  
   
--   Etki alanına özgü dil tanımıma girdi olarak alır ve çıktı olarak kaynak kodu üretir bir kod Oluşturucu.  
+- Etki alanına özgü dil tanımıma girdi olarak alır ve çıktı olarak kaynak kodu üretir bir kod Oluşturucu.  
   
 ## <a name="the-dsl-tools-solution"></a>DSL araçları çözümü  
  Etki alanına özgü Tasarımcısı Sihirbazı'nı aşağıdaki çözüm şablonlarını sunar:  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61509b7427a9c1a95fe15bba93d231f0dc37d136
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111980"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>İzlenecek yol: Tek tablo devralma (O/R Tasarımcısı) kullanarak LINQ to SQL sınıfları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,31 +23,31 @@ ms.locfileid: "59665003"
   
  Bu kılavuz boyunca aşağıdaki görevleri gerçekleştireceksiniz:  
   
--   Bir veritabanı tablosu oluşturun ve verilerini ekleyin.  
+- Bir veritabanı tablosu oluşturun ve verilerini ekleyin.  
   
--   Bir Windows Forms uygulaması oluşturun.  
+- Bir Windows Forms uygulaması oluşturun.  
   
--   Ekleme bir [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] bir projeye.  
+- Ekleme bir [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] bir projeye.  
   
--   Yeni varlık sınıfları oluşturun.  
+- Yeni varlık sınıfları oluşturun.  
   
--   Varlık sınıflarının devralma kullanmak için yapılandırın.  
+- Varlık sınıflarının devralma kullanmak için yapılandırın.  
   
--   Devralınan sınıf sorgulayın.  
+- Devralınan sınıf sorgulayın.  
   
--   Bir Windows formunda veri görüntüleme.  
+- Bir Windows formunda veri görüntüleme.  
   
 ## <a name="create-a-table-to-inherit-from"></a>Verileri devralmak için tablo oluşturma  
  Devralma nasıl çalıştığını görmek için küçük bir kişi tablo oluşturma, temel sınıf olarak kullanın ve sonra da bundan devralan çalışan nesne oluşturmak.  
   
 #### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Devralma göstermek için temel bir tablo oluşturmak için  
   
-1.  İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, sağ **tabloları** düğüm ve tıklatın **Yeni Tablo Ekle**.  
+1. İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, sağ **tabloları** düğüm ve tıklatın **Yeni Tablo Ekle**.  
   
     > [!NOTE]
     >  Northwind veritabanına veya tabloya eklediğiniz herhangi bir veritabanını kullanabilirsiniz.  
   
-2.  Tablo Tasarımcısı'nda tabloda aşağıdaki sütunları ekleyin:  
+2. Tablo Tasarımcısı'nda tabloda aşağıdaki sütunları ekleyin:  
   
     |Sütun adı|Veri Türü|Null değerlere izin ver|  
     |-----------------|---------------|-----------------|  
@@ -57,18 +57,18 @@ ms.locfileid: "59665003"
     |**Soyadı**|**nvarchar(200)**|**False**|  
     |**Yöneticisi**|**int**|**TRUE**|  
   
-3.  Kimlik sütunu birincil anahtar olarak ayarlayın.  
+3. Kimlik sütunu birincil anahtar olarak ayarlayın.  
   
-4.  Tabloyu kaydettikten ve adlandırın **kişi**.  
+4. Tabloyu kaydettikten ve adlandırın **kişi**.  
   
 ## <a name="add-data-to-the-table"></a>Tabloya veri ekleme  
  Devralma doğru yapılandırdığınızı onaylayın, böylece tabloya bazı veriler tek tablolu devralma her sınıf için gerekir.  
   
 #### <a name="to-add-data-to-the-table"></a>Tabloya veri eklemek için  
   
-1.  Tablo Veri Görünümü'nde açın. (Sağ **kişi** tablosundaki **Sunucu Gezgini**/**veritabanı Gezgini** tıklatıp **tablo verilerini Göster**.)  
+1. Tablo Veri Görünümü'nde açın. (Sağ **kişi** tablosundaki **Sunucu Gezgini**/**veritabanı Gezgini** tıklatıp **tablo verilerini Göster**.)  
   
-2.  Aşağıdaki veriler, tabloya kopyalayın. (Kopyalayın ve ardından sonuçlar bölmesinde tüm satırı seçerek tablosuna Yapıştır.)  
+2. Aşağıdaki veriler, tabloya kopyalayın. (Kopyalayın ve ardından sonuçlar bölmesinde tüm satırı seçerek tablosuna Yapıştır.)  
   
     ||||||  
     |-|-|-|-|-|  
@@ -91,24 +91,24 @@ ms.locfileid: "59665003"
   
 #### <a name="to-create-the-new-windows-application"></a>Yeni bir Windows uygulaması oluşturmak için  
   
-1.  Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
+1. Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
   
-2.  Projeyi adlandırın **InheritanceWalkthrough**.  
+2. Projeyi adlandırın **InheritanceWalkthrough**.  
   
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Visual Basic ve C# projelerinde desteklenir. Yeni projeyi bu dillerden birinde oluşturun.  
   
-3.  Tıklayın **Windows Forms uygulaması** şablonu ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Tıklayın **Windows Forms uygulaması** şablonu ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
-4.  InheritanceWalkthrough projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
+4. InheritanceWalkthrough projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>LINQ to SQL ekleme projeye dosya sınıfları  
   
 #### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>LINQ to SQL dosyası projeye eklemek için  
   
-1.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
+1. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
-2.  Tıklayın **LINQ to SQL sınıfları** şablonu ve ardından **Ekle**.  
+2. Tıklayın **LINQ to SQL sınıfları** şablonu ve ardından **Ekle**.  
   
      Bir .dbml dosyası projenize eklenir ve [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] açılır.  
   
@@ -117,21 +117,21 @@ ms.locfileid: "59665003"
   
 #### <a name="to-create-the-inheritance"></a>Devralma oluşturmak için  
   
-1.  İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, gitmek **kişi** daha önce oluşturduğunuz bir tablo.  
+1. İçinde **Sunucu Gezgini**/**veritabanı Gezgini**, gitmek **kişi** daha önce oluşturduğunuz bir tablo.  
   
-2.  Sürükleme **kişi** üzerine tablo [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tasarım yüzeyi.  
+2. Sürükleme **kişi** üzerine tablo [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tasarım yüzeyi.  
   
-3.  İkinci sürükleyin **kişi** üzerine tablo [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] adını değiştirip **çalışan**.  
+3. İkinci sürükleyin **kişi** üzerine tablo [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] adını değiştirip **çalışan**.  
   
-4.  Silme **Manager** özelliğinden **kişi** nesne.  
+4. Silme **Manager** özelliğinden **kişi** nesne.  
   
-5.  Silme **türü**, **kimliği**, **FirstName**, ve **LastName** özelliklerinden **çalışan** nesne. (Diğer bir deyişle, dışındaki tüm özellikleri Sil **Manager**.)  
+5. Silme **türü**, **kimliği**, **FirstName**, ve **LastName** özelliklerinden **çalışan** nesne. (Diğer bir deyişle, dışındaki tüm özellikleri Sil **Manager**.)  
   
-6.  Gelen **Object Relational Designer** sekmesinde **araç kutusu**, oluşturun bir **devralma** arasında **kişi** ve  **Çalışan** nesneleri. Bunu yapmak için tıklatın **devralma** öğesi **araç kutusu** ve fare düğmesini bırakın. Ardından, **çalışan** nesnesi ve ardından **kişi** nesnesine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Devralım çizgisi üzerindeki oku işaret edecek **kişi** nesne.  
+6. Gelen **Object Relational Designer** sekmesinde **araç kutusu**, oluşturun bir **devralma** arasında **kişi** ve  **Çalışan** nesneleri. Bunu yapmak için tıklatın **devralma** öğesi **araç kutusu** ve fare düğmesini bırakın. Ardından, **çalışan** nesnesi ve ardından **kişi** nesnesine [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Devralım çizgisi üzerindeki oku işaret edecek **kişi** nesne.  
   
-7.  Tıklayın **devralma** tasarım yüzeyinde satır.  
+7. Tıklayın **devralma** tasarım yüzeyinde satır.  
   
-8.  Ayarlama **ayrıştırıcı özelliği** özelliğini **türü**.  
+8. Ayarlama **ayrıştırıcı özelliği** özelliğini **türü**.  
   
 9. Ayarlama **türetilen sınıf ayrıştırıcısı değerinin** özelliğini **2**.  
   
@@ -146,11 +146,11 @@ ms.locfileid: "59665003"
   
 #### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>LINQ sorgusu oluşturun ve sonuçları formunda görüntülemek için  
   
-1.  Sürükleme bir **ListBox** Form1.  
+1. Sürükleme bir **ListBox** Form1.  
   
-2.  Formu oluşturmak için bir `Form1_Load` olay işleyicisi.  
+2. Formu oluşturmak için bir `Form1_Load` olay işleyicisi.  
   
-3.  Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi:  
+3. Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi:  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -180,11 +180,11 @@ ms.locfileid: "59665003"
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  F5 tuşuna basın.  
+1. F5 tuşuna basın.  
   
-2.  Yalnızca kendi Türü sütununda 2 değerine sahip kayıtların görüntülendiğini doğrulayın.  
+2. Yalnızca kendi Türü sütununda 2 değerine sahip kayıtların görüntülendiğini doğrulayın.  
   
-3.  Formu kapatın. (Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur**.)  
+3. Formu kapatın. (Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur**.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f655979e010ea7aa0dafee78648a970cb2e3229
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113748"
 ---
 # <a name="extend-the-status-bar"></a>Durum çubuğunu genişletme
 IDE'nin en altında Visual Studio durum çubuğunda, bilgilerini görüntülemek için kullanabilirsiniz.
@@ -32,9 +32,9 @@ IDE'nin en altında Visual Studio durum çubuğunda, bilgilerini görüntülemek
 
 ### <a name="read-and-write-to-the-status-bar"></a>Okuma ve yazma için durum çubuğu
 
-1.  Adlı bir VSIX projesi oluşturun **TestStatusBarExtension** ve adlı bir menü komutu eklemek **TestStatusBarCommand**.
+1. Adlı bir VSIX projesi oluşturun **TestStatusBarExtension** ve adlı bir menü komutu eklemek **TestStatusBarCommand**.
 
-2.  İçinde *TestStatusBarCommand.cs*, komut işleyicisi yöntemi kodu değiştirin (`MenuItemCallback`) aşağıdaki:
+2. İçinde *TestStatusBarCommand.cs*, komut işleyicisi yöntemi kodu değiştirin (`MenuItemCallback`) aşağıdaki:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ IDE'nin en altında Visual Studio durum çubuğunda, bilgilerini görüntülemek
     }
     ```
 
-3.  Kodu derlemek ve hata ayıklamaya başlayın.
+3. Kodu derlemek ve hata ayıklamaya başlayın.
 
-4.  Açık **Araçları** Visual Studio'nun Deneysel örneğinin menü. Tıklayın **çağırma TestStatusBarCommand** düğmesi.
+4. Açık **Araçları** Visual Studio'nun Deneysel örneğinin menü. Tıklayın **çağırma TestStatusBarCommand** düğmesi.
 
      Durumunda olduklarını görmüş olmalısınız durum çubuğunda şimdi okuma metin **durum çubuğu için az önce yazdığımız.** ' i tıklatın ve görüntülenen ileti kutusunda aynı metni içerir.
 
 ### <a name="update-the-progress-bar"></a>Güncelleştirme ilerleme çubuğu
 
-1.  Bu yordamda başlatmak ve ilerleme çubuğunu güncellemek nasıl göstereceğiz.
+1. Bu yordamda başlatmak ve ilerleme çubuğunu güncellemek nasıl göstereceğiz.
 
-2.  Açık *TestStatusBarCommand.cs* değiştirin ve dosya `MenuItemCallback` yöntemini aşağıdaki kod ile:
+2. Açık *TestStatusBarCommand.cs* değiştirin ve dosya `MenuItemCallback` yöntemini aşağıdaki kod ile:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ IDE'nin en altında Visual Studio durum çubuğunda, bilgilerini görüntülemek
     }
     ```
 
-3.  Kodu derlemek ve hata ayıklamaya başlayın.
+3. Kodu derlemek ve hata ayıklamaya başlayın.
 
-4.  Açık **Araçları** Visual Studio'nun Deneysel örneğinin menü. Tıklayın **çağırma TestStatusBarCommand** düğmesi.
+4. Açık **Araçları** Visual Studio'nun Deneysel örneğinin menü. Tıklayın **çağırma TestStatusBarCommand** düğmesi.
 
      Durumunda olduklarını görmüş olmalısınız durum çubuğunda şimdi okuma metin **ilerleme çubuğu için yazma.** Ayrıca, her saniye için 20 saniye güncelleştirilmesi ilerleme çubuğu görürsünüz. Bundan sonra durum çubuğunu ve ilerleme çubuğu temizlenir.
 
 ### <a name="display-an-animation"></a>Bir animasyon görüntüleme
 
-1.  Durum çubuğunu gösterir ya da bir döngü animasyon uzun süreli bir işlemi (örneğin, bir çözümde birden çok proje derleme) görüntüler. Bu animasyonu görmüyorsanız doğru olduğundan emin olun **Araçları** > **seçenekleri** ayarları:
+1. Durum çubuğunu gösterir ya da bir döngü animasyon uzun süreli bir işlemi (örneğin, bir çözümde birden çok proje derleme) görüntüler. Bu animasyonu görmüyorsanız doğru olduğundan emin olun **Araçları** > **seçenekleri** ayarları:
 
      Git **Araçları** > **seçenekleri** > **genel** işaretini kaldırın ve sekme **istemcide dayalı görsel deneyimi otomatik olarak ayarla Performans**. Ardından alt seçeneği işaretleyin **zengin istemci görsel deneyimini etkinleştir**. Artık Visual Studio'nun Deneysel Örneğinizde proje oluşturduğunuzda, animasyon görebilmek için olmalıdır.
 
      Bu yordamda bir proje veya çözüm oluşturmaya temsil eden standart bir Visual Studio animasyon görüntüleriz.
 
-2.  Açık *TestStatusBarCommand.cs* değiştirin ve dosya `MenuItemCallback` yöntemini aşağıdaki kod ile:
+2. Açık *TestStatusBarCommand.cs* değiştirin ve dosya `MenuItemCallback` yöntemini aşağıdaki kod ile:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ IDE'nin en altında Visual Studio durum çubuğunda, bilgilerini görüntülemek
     }
     ```
 
-3.  Kodu derlemek ve hata ayıklamaya başlayın.
+3. Kodu derlemek ve hata ayıklamaya başlayın.
 
-4.  Açık **Araçları** tıklayın ve Visual Studio deneysel örneğinde menüde **çağırma TestStatusBarCommand**.
+4. Açık **Araçları** tıklayın ve Visual Studio deneysel örneğinde menüde **çağırma TestStatusBarCommand**.
 
      İleti kutusu gördüğünüzde, ayrıca durum çubuğunda bir animasyon sağda görmeniz gerekir. İleti kutusu kapatırken animasyon kaybolur.

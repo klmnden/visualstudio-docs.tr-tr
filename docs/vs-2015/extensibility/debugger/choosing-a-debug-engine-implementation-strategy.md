@@ -10,12 +10,12 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80e9e34547580560e79d408935fd10f17b577037
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117700"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Hata Ayıklama Altyapısı Uygulama Stratejisi Seçme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Hata ayıklama altyapısı (DE) uygulaması stratejinizi belirleme için çalı�
   
  Aksi takdirde, işlem içinde SDM veya işlemdeki ayıklanacak programın DE oluşturma arasında seçim yapabilirsiniz. Olup ifade değerlendiricisi ' DE, program simge deposuna sık erişmesi ve hızlı erişim için belleğe simge deposundaki olup yüklenebilir göz önünde bulundurmanız önemlidir. Ayrıca aşağıdakileri dikkate alın:  
   
--   İfade değerlendirici ve sembol deposundaki arasında birçok çağrı varsa veya sembol deposu SDM bellek alanı okunabiliyorsa DE işlem içinde SDM oluşturun. Programınızı ekler, SDM için hata ayıklama altyapısı CLSID değeri döndürmesi gerekir. SDM bu CLSID DE bir işlem örneğini oluşturmak için kullanır.  
+- İfade değerlendirici ve sembol deposundaki arasında birçok çağrı varsa veya sembol deposu SDM bellek alanı okunabiliyorsa DE işlem içinde SDM oluşturun. Programınızı ekler, SDM için hata ayıklama altyapısı CLSID değeri döndürmesi gerekir. SDM bu CLSID DE bir işlem örneğini oluşturmak için kullanır.  
   
--   Sembol deposuna erişmek için program DE çağırmanız gerekir, işlemdeki DE programla oluşturun. Bu durumda, program DE örneğini oluşturur.  
+- Sembol deposuna erişmek için program DE çağırmanız gerekir, işlemdeki DE programla oluşturun. Bu durumda, program DE örneğini oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio Hata Ayıklayıcı Genişletilebilirliği](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

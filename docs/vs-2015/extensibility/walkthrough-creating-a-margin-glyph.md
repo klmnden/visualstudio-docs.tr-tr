@@ -10,12 +10,12 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d22607dd4e32ac29a773b6217056c2484121cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa18b900ca44fbb52c646bfdf021beed6e77f504
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112474"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>İzlenecek yol: Dış Boşluk Karakteri Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ ms.locfileid: "54794594"
   
 ## <a name="creating-a-mef-project"></a>MEF proje oluşturma  
   
-1.  Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `TodoGlyphTest`.  
+1. Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `TodoGlyphTest`.  
   
-2.  Bir düzenleyici sınıflandırıcı proje öğesi ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Bir düzenleyici sınıflandırıcı proje öğesi ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Varolan sınıf dosyaları silin.  
+3. Varolan sınıf dosyaları silin.  
   
 ## <a name="defining-the-glyph"></a>Glif tanımlama  
  Glif uygulayarak tanımlama <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory> arabirimi.  
   
 #### <a name="to-define-the-glyph"></a>Glif tanımlamak için  
   
-1.  Bir sınıf dosyası ekleyin ve adlandırın `TodoGlyphFactory`.  
+1. Bir sınıf dosyası ekleyin ve adlandırın `TodoGlyphFactory`.  
   
-2.  Aşağıdaki bildirimi kullanarak.  
+2. Aşağıdaki bildirimi kullanarak.  
   
      [!code-csharp[VSSDKTodoGlyphTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#1)]
      [!code-vb[VSSDKTodoGlyphTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#1)]  
   
-3.  Adlı bir sınıf ekleyin `TodoGlyphFactory` uygulayan <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.  
+3. Adlı bir sınıf ekleyin `TodoGlyphFactory` uygulayan <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>.  
   
      [!code-csharp[VSSDKTodoGlyphTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#2)]
      [!code-vb[VSSDKTodoGlyphTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#2)]  
   
-4.  Karakter boyutları tanımlayan özel bir alan ekleyin.  
+4. Karakter boyutları tanımlayan özel bir alan ekleyin.  
   
      [!code-csharp[VSSDKTodoGlyphTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#3)]
      [!code-vb[VSSDKTodoGlyphTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#3)]  
   
-5.  Uygulama `GenerateGlyph` tanımlayarak karakter kullanıcı arabirimi (UI) öğesi. `TodoTag` Bu yönergelerin ilerleyen bölümünde tanımlanır.  
+5. Uygulama `GenerateGlyph` tanımlayarak karakter kullanıcı arabirimi (UI) öğesi. `TodoTag` Bu yönergelerin ilerleyen bölümünde tanımlanır.  
   
      [!code-csharp[VSSDKTodoGlyphTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#4)]
      [!code-vb[VSSDKTodoGlyphTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#4)]  
   
-6.  Adlı bir sınıf ekleyin `TodoGlyphFactoryProvider` uygulayan <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Bu sınıf ile dışarı aktarma bir <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "TodoGlyph", bir <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> VsTextMarker, sonra bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "kod" ve <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> TodoTag biri.  
+6. Adlı bir sınıf ekleyin `TodoGlyphFactoryProvider` uygulayan <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>. Bu sınıf ile dışarı aktarma bir <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "TodoGlyph", bir <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> VsTextMarker, sonra bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "kod" ve <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> TodoTag biri.  
   
      [!code-csharp[VSSDKTodoGlyphTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#5)]
      [!code-vb[VSSDKTodoGlyphTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#5)]  
   
-7.  Uygulama <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> örnekleme yöntemi `TodoGlyphFactory`.  
+7. Uygulama <xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A> örnekleme yöntemi `TodoGlyphFactory`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#6)]
      [!code-vb[VSSDKTodoGlyphTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#6)]  
@@ -75,39 +75,39 @@ ms.locfileid: "54794594"
   
 #### <a name="to-define-a-todo-tag-and-tagger"></a>Bir todo etiketi ve etiketlerde tanımlamak için  
   
-1.  Projeye yeni bir sınıf dosyası ekleyin ve adlandırın `TodoTagger`.  
+1. Projeye yeni bir sınıf dosyası ekleyin ve adlandırın `TodoTagger`.  
   
-2.  Aşağıdaki içeri aktarmaları ekleyin.  
+2. Aşağıdaki içeri aktarmaları ekleyin.  
   
      [!code-csharp[VSSDKTodoGlyphTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#7)]
      [!code-vb[VSSDKTodoGlyphTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#7)]  
   
-3.  Adlı bir sınıf ekleyin `TodoTag`.  
+3. Adlı bir sınıf ekleyin `TodoTag`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#8)]
      [!code-vb[VSSDKTodoGlyphTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#8)]  
   
-4.  Adlı sınıfını değiştirmek `TodoTagger` uygulayan <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> türü `TodoTag`.  
+4. Adlı sınıfını değiştirmek `TodoTagger` uygulayan <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> türü `TodoTag`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#9)]
      [!code-vb[VSSDKTodoGlyphTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#9)]  
   
-5.  İçin `TodoTagger` sınıfı için özel alanlar ekleme bir <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> ve sınıflandırma bulunacak metin için yayılır.  
+5. İçin `TodoTagger` sınıfı için özel alanlar ekleme bir <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> ve sınıflandırma bulunacak metin için yayılır.  
   
      [!code-csharp[VSSDKTodoGlyphTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#10)]
      [!code-vb[VSSDKTodoGlyphTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#10)]  
   
-6.  Sınıflandırıcı ayarlayan bir oluşturucu ekleyin.  
+6. Sınıflandırıcı ayarlayan bir oluşturucu ekleyin.  
   
      [!code-csharp[VSSDKTodoGlyphTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#11)]
      [!code-vb[VSSDKTodoGlyphTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#11)]  
   
-7.  Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> kapsayan tüm sınıflandırma bulma yöntemi, adları "Açıklama" sözcüğü içerir ve arama metnini metni içerir. Arama metni bulunduğunda, geri yeni bir yield <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> türü `TodoTag`.  
+7. Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> kapsayan tüm sınıflandırma bulma yöntemi, adları "Açıklama" sözcüğü içerir ve arama metnini metni içerir. Arama metni bulunduğunda, geri yeni bir yield <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> türü `TodoTag`.  
   
      [!code-csharp[VSSDKTodoGlyphTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#12)]
      [!code-vb[VSSDKTodoGlyphTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#12)]  
   
-8.  Bildirme bir `TagsChanged` olay.  
+8. Bildirme bir `TagsChanged` olay.  
   
      [!code-csharp[VSSDKTodoGlyphTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#13)]
      [!code-vb[VSSDKTodoGlyphTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#13)]  
@@ -132,12 +132,12 @@ ms.locfileid: "54794594"
   
 #### <a name="to-build-and-test-the-todoglyphtest-solution"></a>Derleme ve TodoGlyphTest çözümü test etmek için  
   
-1.  Çözümü oluşturun.  
+1. Çözümü oluşturun.  
   
-2.  F5 tuşuna basarak projeyi çalıştırın. Visual Studio'nun ikinci bir örneği oluşturulur.  
+2. F5 tuşuna basarak projeyi çalıştırın. Visual Studio'nun ikinci bir örneği oluşturulur.  
   
-3.  Belirteç kenar boşluğu gösterildiğini doğrulayın. (Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**. Üzerinde **metin düzenleyici** sayfasında, aşağıdakileri sağlayın **gösterge kenar boşluğunu** seçilir.)  
+3. Belirteç kenar boşluğu gösterildiğini doğrulayın. (Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**. Üzerinde **metin düzenleyici** sayfasında, aşağıdakileri sağlayın **gösterge kenar boşluğunu** seçilir.)  
   
-4.  Açıklamaları olan bir kod dosyası açın. "Todo" sözcüğü açıklama bölümlerden birine ekleyin.  
+4. Açıklamaları olan bir kod dosyası açın. "Todo" sözcüğü açıklama bölümlerden birine ekleyin.  
   
-5.  Koyu mavi anahat sahip bir açık mavi daireye gösterge kenar boşluğunda kod penceresinin sol görüntülenmesi gerekir.
+5. Koyu mavi anahat sahip bir açık mavi daireye gösterge kenar boşluğunda kod penceresinin sol görüntülenmesi gerekir.

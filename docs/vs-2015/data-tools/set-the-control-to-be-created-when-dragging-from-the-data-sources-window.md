@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c9902080ae501c1d77a59f152d7d272462d2264
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115425"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Veri Kaynakları penceresinden sürüklendiğinde denetimin oluşturulmasını ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,13 +57,13 @@ ms.locfileid: "59657460"
   
 #### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Sütun veya özellikleri için oluşturulacak denetimleri ayarlamak için  
   
-1.  WPF Tasarımcısı ya da Windows Form Tasarımcısı açık olduğundan emin olun.  
+1. WPF Tasarımcısı ya da Windows Form Tasarımcısı açık olduğundan emin olun.  
   
-2.  İçinde **veri kaynakları** penceresinde istediğiniz tabloyu genişletin veya kendi sütunları veya özelliklerini görüntülemek için nesne.  
+2. İçinde **veri kaynakları** penceresinde istediğiniz tabloyu genişletin veya kendi sütunları veya özelliklerini görüntülemek için nesne.  
   
-3.  Oluşturulacak denetimi ayarlamak istediğiniz her sütun veya özelliği seçin.  
+3. Oluşturulacak denetimi ayarlamak istediğiniz her sütun veya özelliği seçin.  
   
-4.  Sütun veya özellik açılan menüsüne tıklayın ve ardından öğeyi tasarımcıya sürüklediğinizde oluşturmak istediğiniz denetimi seçin.  
+4. Sütun veya özellik açılan menüsüne tıklayın ve ardından öğeyi tasarımcıya sürüklediğinizde oluşturmak istediğiniz denetimi seçin.  
   
      Projenizin hedeflediği açık, .NET Framework'ün hangi sürümünün sahip hangi tasarımcıda mevcut denetimlerin listesinin bağlıdır ve hangi özel denetimleri için veri bağlama, eklediğiniz destekleyen **araç kutusu**. Oluşturmak istediğiniz denetim mevcut denetimlerin listesinin içinde ise, denetim listesine ekleyebilirsiniz. Daha fazla bilgi için [veri kaynakları penceresine özel denetimler ekleme](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

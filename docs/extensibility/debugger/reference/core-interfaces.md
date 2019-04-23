@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084875"
 ---
 # <a name="core-interfaces"></a>Temel Arabirimler
 Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıdaki arabirimdir [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -65,7 +65,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 
 - Visual Studio (VS)
 
-##  <a name="Breakpoints"></a> Kesme noktaları
+## <a name="Breakpoints"></a> Kesme noktaları
  Bu arabirimler ilgili uygulama ve kesme noktaları, izleme.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -86,7 +86,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Bir numaralandırma üzerinde bağlı kesme noktaları kümesini temsil eder.|
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Bir numaralandırma üzerinde bir bellek konumuna bağlanamadı kesme noktaları kümesinin temsil eder.|
 
-##  <a name="Contexts"></a> Bağlamları
+## <a name="Contexts"></a> Bağlamları
  Bu arabirimler, çeşitli bağlamları içinde hata ayıklanan programa temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -100,7 +100,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Bir yığın çerçevesi bağlamında bir kesme noktası veya özel durumu temsil eder.|
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Bir numaralandırma üzerinde kod bağlamları kümesini temsil eder.|
 
-##  <a name="CoreServer"></a> Çekirdek sunucusu
+## <a name="CoreServer"></a> Çekirdek sunucusu
  Bu arabirimler, bir program ayıklanmakta olan makine temsil eder. Bunlar tarafından uygulanan [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ancak içine hata ayıklama motoru tarafından çağrılabilir.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -108,7 +108,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Bilgisayar hakkında bilgilerin yanı sıra bağlantı noktaları ve bağlantı noktası sağlayıcıları erişim sağlar.|
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Temsil eden bir [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) uzaktan hata ayıklamayı destekler.|
 
-##  <a name="DebugEngines"></a> Hata ayıklama altyapıları
+## <a name="DebugEngines"></a> Hata ayıklama altyapıları
  Bu arabirimler, hata ayıklama altyapısı ve ilişkili olayları temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -120,7 +120,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Birden çok hata ayıklama motorlarını işleyen bir program düğümünü temsil eder.|
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|SDM bir arabirimi iş parçacığı, program veya yığın çerçevesi için hata ayıklama altyapısı elde etmek bir yol sağlar.|
 
-##  <a name="Documents"></a> Belgeleri
+## <a name="Documents"></a> Belgeleri
  Bu arabirimler, belgeleri (kaynak dosyaları) ve onların ilişkilendirilmiş öğelerini temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -135,7 +135,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|DE tarafından sağlanan bir metin belgesi temsil eder (türetilen [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), gerçek metni belirtin.|
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Bellekte bir kaynak dosya değişiklikleri belirlemek için DE tarafından gönderilir.|
 
-##  <a name="Events"></a> Olayları
+## <a name="Events"></a> Olayları
  Bu arabirimler DE oturum hata ayıklama Yöneticisi (SDM) arasında gönderilen tüm olayları temsil eder.
 
 | Arabirim | Uygulayan | Açıklama |
@@ -180,7 +180,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 | [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) | DE | Bir iş parçacığı kaldırıldığında tarafından DE gönderilir. |
 | [IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md) | DE | Bir iş parçacığı adı değiştiğinde tarafından DE gönderilir. |
 
-##  <a name="Expressions"></a> İfadeleri
+## <a name="Expressions"></a> İfadeleri
  Bu arabirimler, belirli bir bağlamda değerlendirilecek ifade temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -189,7 +189,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Bir ifadenin değerlendirilme bir bağlamı temsil eder. Alınan [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) arabirimi.|
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Zaman uyumsuz bir ifade değerlendirme işlemi tamamlandıktan sonra tarafından DE gönderilir.|
 
-##  <a name="Memory"></a> Bellek
+## <a name="Memory"></a> Bellek
  Bu arabirimler, bellek bayt dizilerini temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -197,7 +197,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Okunan veya yazılan bellek bayt dizisini temsil eder.|
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Bir dizinin bellekte bir konuma bayt temsil eder.|
 
-##  <a name="Modules"></a> Modüller
+## <a name="Modules"></a> Modüller
  Bu arabirimleri temsil eden bir yürütülebilir dosyaya karşılık gelen bir modül veya. DLL dosyası.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -208,7 +208,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|PDB dosyasında yer alan kaynak sunucu bilgileri temsil eder.|
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Bir numaralandırma tarafından bilinen modülleri kümesi üzerinden temsil eder bir [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|
 
-##  <a name="Ports"></a> Bağlantı noktaları
+## <a name="Ports"></a> Bağlantı noktaları
  Bu arabirimler, bağlantı noktası ve bağlantı noktası sağlayıcıları temsil eder.
 
 | Arabirim | Uygulayan | Açıklama |
@@ -228,7 +228,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 | [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | Bir numaralandırma, bir dizi bağlantı noktası temsil eder. |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | Bir numaralandırma üzerinde bağlantı noktası sağlayıcıları kümesini temsil eder. |
 
-##  <a name="Processes"></a> İşlemler
+## <a name="Processes"></a> İşlemler
  Bu arabirimler, işlemler, bir veya daha fazla programları içeren tek bir yürütülebilir dosyayı temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -240,7 +240,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Oturum bağlı izleyen bir işlemi temsil eder.|
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Numaralandırması bir bağlantı noktası üzerinde işlemler kümesini temsil eder.|
 
-##  <a name="Programs"></a> Programlar
+## <a name="Programs"></a> Programlar
  Bu arabirimler, programları yürütme mutlaka bir fiziksel yürütülebilir veya modül benzemez mantıksal birimleri temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -259,7 +259,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Temsil eden bir [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , sıralama arabirimleri iş parçacığı veya işlem sınırları boyunca.|
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Bir dizi program numaralandırması temsil eder.|
 
-##  <a name="Properties"></a> Özellikleri
+## <a name="Properties"></a> Özellikleri
  Bu arabirimler, özellikleri, genellikle bir ifade değerlendirme sonucu gibi belirli bir bağlam ile ilişkili bir değeri temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -273,7 +273,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) yapılar değişkenleri, kayıtları, parametreleri ve ifadeler açıklanmaktadır.|
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) yapıları.|
 
-##  <a name="StackFrames"></a> Yığın çerçeveleri
+## <a name="StackFrames"></a> Yığın çerçeveleri
  Bu arabirimleri temsil eden bir yığın çerçevesi bir bağlam içinde bir kesme noktası veya özel durum oluştu.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -283,7 +283,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) belirttiğiniz işlev yapıların belirli bir yığın çerçevesini ulaşmak için kullanılan dizisi çağırın.|
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Bir numaralandırma üzerinde kümesini temsil eder [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) yığın çerçevelerini açıklayan yapılar.|
 
-##  <a name="Threads"></a> İş parçacıkları
+## <a name="Threads"></a> İş parçacıkları
  Bu arabirimler, iş parçacıkları ve ilişkili olayları temsil eder.
 
 |Arabirim|Uygulayan|Açıklama|
@@ -294,7 +294,7 @@ Temel arabirimler kullanarak hata ayıklayıcıyı genişletmek için aşağıda
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Bir iş parçacığı adı değiştiğinde tarafından DE gönderilir.|
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Bir numaralandırma üzerinde iş parçacıkları kümesini temsil eder.|
 
-##  <a name="TypeVisualizers"></a> Tür Görselleştiricileri
+## <a name="TypeVisualizers"></a> Tür Görselleştiricileri
  Bu arabirimler tür görselleştiricileri için destek sağlar. Bu arabirimler genellikle bir ifade değerlendiricisi tarafından uygulanır.
 
 |Arabirim|Uygulayan|Açıklama|

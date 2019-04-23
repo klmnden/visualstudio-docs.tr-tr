@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090505"
 ---
 # <a name="file-properties-javascript"></a>Dosya Özellikleri, JavaScript
 Dosya özellikleri, proje sistemi dosyalarda gerçekleştirmesi gereken eylemleri belirtmek için kullanabilirsiniz. Örneğin, bir dosya için paket kaynak dosyası olarak eklenmesi gerekip gerekmediğini belirtmek için dosya özelliklerini ayarlayabilirsiniz.
@@ -46,13 +46,13 @@ Dosya özellikleri, proje sistemi dosyalarda gerçekleştirmesi gereken eylemler
 ### <a name="package-action"></a>Paket eylemi
  **Paket eylemi** özelliği, bir yapı çalıştırıldığında Visual Studio ile bir dosyanın ne yaptığını gösterir. **Paket eylemi** değerlerden biri olabilir:
 
--   **Hiçbiri** -dosya paketi bildiriminde yer almaz. Örnek bir benioku dosyası gibi bir belge içeren bir metin dosyasıdır.
+- **Hiçbiri** -dosya paketi bildiriminde yer almaz. Örnek bir benioku dosyası gibi bir belge içeren bir metin dosyasıdır.
 
--   **İçerik** -dosya paketi bildiriminde bulunur. Örneğin, bu ayar bir .htm, .js, .css, görüntü, ses veya video dosyası için varsayılan değerdir.
+- **İçerik** -dosya paketi bildiriminde bulunur. Örneğin, bu ayar bir .htm, .js, .css, görüntü, ses veya video dosyası için varsayılan değerdir.
 
--   **Bildirim** -dosya paketi bildiriminde yer almaz. Bunun yerine, dosya girişi için paket bildirimi oluşturulurken kullanılır. Package.appxmanifest dosyasını için varsayılan değer budur.
+- **Bildirim** -dosya paketi bildiriminde yer almaz. Bunun yerine, dosya girişi için paket bildirimi oluşturulurken kullanılır. Package.appxmanifest dosyasını için varsayılan değer budur.
 
--   **Kaynak** -dosya paketi bildiriminde yer almaz. Bunun yerine, paket kaynak dizini (PRI) içinde paket bildirimi gider dosyasının içeriği dizine eklenir. Genellikle, kaynak dosyaları için de kullanılır.
+- **Kaynak** -dosya paketi bildiriminde yer almaz. Bunun yerine, paket kaynak dizini (PRI) içinde paket bildirimi gider dosyasının içeriği dizine eklenir. Genellikle, kaynak dosyaları için de kullanılır.
 
 İçin varsayılan değer **paket eylemi** çözüme ekleyin dosya uzantısını bağlıdır.
 

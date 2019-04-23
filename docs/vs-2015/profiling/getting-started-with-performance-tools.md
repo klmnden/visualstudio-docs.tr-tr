@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078986"
 ---
 # <a name="getting-started-with-performance-tools"></a>Performans araçları ile çalışmaya başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Bu bölümde, kavramlar ve Topla, görüntülemek ve Visual Studio performans ar
   
  Bu araçlar, performans verilerini toplamanıza ve analiz için birkaç yol sağlar. Ancak birçok durumda, başlamak için en iyi yolu, performans sorunlarını kodunuzda işaret edebilir ve uygulama istatistikleri toplamanıza olanak tanır performans Sihirbazı'nın varsayılan ayarlarını kullanın.  
   
--   *Performans uyarıları* yaygın kodlama sorunlarını size bildirir. Uyarılar Visual Studio hata penceresinde görüntülenir. Kaynak kodunuzu uyarıdan arttıracağına ve ayrıntılı yardımcı olacak Yardım konularını daha verimli kod yazın.  
+- *Performans uyarıları* yaygın kodlama sorunlarını size bildirir. Uyarılar Visual Studio hata penceresinde görüntülenir. Kaynak kodunuzu uyarıdan arttıracağına ve ayrıntılı yardımcı olacak Yardım konularını daha verimli kod yazın.  
   
--   Performans raporları, tüm uygulamanın çağırma ağacına belirli bir işlevin çağrılmasından ve çağrılan işlevlerinden işlemleri ve program yürütme verilerine kod satırlarını uygulama yapınızın farklı düzeylerine kaynağından görünümler sağlar.  
+- Performans raporları, tüm uygulamanın çağırma ağacına belirli bir işlevin çağrılmasından ve çağrılan işlevlerinden işlemleri ve program yürütme verilerine kod satırlarını uygulama yapınızın farklı düzeylerine kaynağından görünümler sağlar.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
   

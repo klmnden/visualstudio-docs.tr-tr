@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079778"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Nasıl yapılır: Şablonlarda sorun giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,24 +28,24 @@ Geliştirme ortamında yüklemek bir şablon başarısız olursa, sorunu bulmak 
   
 #### <a name="to-validate-the-vstemplate-file"></a>.Vstemplate dosyasını doğrulamak için  
   
-1.  Şablonu içeren .zip dosyasını bulun.  
+1. Şablonu içeren .zip dosyasını bulun.  
   
-2.  .Zip dosyasını çıkartın.  
+2. .Zip dosyasını çıkartın.  
   
-3.  Üzerinde **dosya** menüde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tıklayın **açık**ve ardından **dosya**.  
+3. Üzerinde **dosya** menüde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tıklayın **açık**ve ardından **dosya**.  
   
-4.  Şablonu için .vstemplate dosyasını seçin ve tıklayın **açık**.  
+4. Şablonu için .vstemplate dosyasını seçin ve tıklayın **açık**.  
   
-5.  .Vstemplate dosyasının XML için uyar doğrulayın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] şablon şeması. .Vstemplate şeması hakkında daha fazla bilgi için bkz. [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md).  
+5. .Vstemplate dosyasının XML için uyar doğrulayın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] şablon şeması. .Vstemplate şeması hakkında daha fazla bilgi için bkz. [Visual Studio şablon şeması başvurusu](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
     >  .Vstemplate dosyası geliştirme sırasında IntelliSense desteği almak için ekleyin bir `xmlns` özniteliğini `VSTemplate` öğe değerini atayın http://schemas.microsoft.com/developer/vstemplate/2005.  
   
-6.  .vstemplate dosyasını kaydedip kapatın.  
+6. .vstemplate dosyasını kaydedip kapatın.  
   
-7.  Şablonunuzda, içerdiği dosyaları seçin sağ tıklayın, **göndermek için**, tıklatıp **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
+7. Şablonunuzda, içerdiği dosyaları seçin sağ tıklayın, **göndermek için**, tıklatıp **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
   
-8.  Eski bir .zip dosyası olarak aynı dizinde yeni bir .zip dosyası yerleştirin.  
+8. Eski bir .zip dosyası olarak aynı dizinde yeni bir .zip dosyası yerleştirin.  
   
 9. Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.  
   
@@ -54,13 +54,13 @@ Geliştirme ortamında yüklemek bir şablon başarısız olursa, sorunu bulmak 
   
 #### <a name="to-locate-template-errors-in-event-viewer"></a>Olay Görüntüleyicisi'nde şablon hataları bulmak için  
   
-1.  Windows içinde tıklayın **Başlat**, tıklayın **Denetim Masası**, çift tıklatın **Yönetimsel Araçlar**ve çift tıklatarak **Olay Görüntüleyicisi'ni**.  
+1. Windows içinde tıklayın **Başlat**, tıklayın **Denetim Masası**, çift tıklatın **Yönetimsel Araçlar**ve çift tıklatarak **Olay Görüntüleyicisi'ni**.  
   
-2.  Sol bölmede **uygulama**.  
+2. Sol bölmede **uygulama**.  
   
-3.  Olayları arayın bir **kaynak** değerini `Visual Studio - VsTemplate`.  
+3. Olayları arayın bir **kaynak** değerini `Visual Studio - VsTemplate`.  
   
-4.  Hata görüntülemek için bir şablon olayı çift tıklatın.  
+4. Hata görüntülemek için bir şablon olayı çift tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)   

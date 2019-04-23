@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 8: Eklenti değiştirme | Microsoft Docs'
+title: 'Test Alanı 8: Eklenti değiştirme | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112956"
 ---
-# <a name="test-area-8-plug-in-switching"></a>Test alanı 8: Eklenti değiştirme
+# <a name="test-area-8-plug-in-switching"></a>Test Alanı 8: Eklenti Değiştirme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Tümleşik geliştirme ortamı (IDE), geçerli kaynak denetimi eklentisi değiştirmek için kullanıcı arabirimi (UI) sahiptir. Bu test alanı kullanmak için çözüm kaynak denetimi eklentisi, çekme işlemini test çalışmalarını sağlar.  
@@ -26,9 +26,9 @@ ms.locfileid: "54763517"
 ## <a name="command-menu-access"></a>Komut menü erişimi  
  Aşağıdaki [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır.  
   
--   Geçerli kaynak denetimi Eklentisi: **Araçlar** -> **seçenekleri** -> **kaynak denetimi** -> **Eklenti Seçimi**.  
+- Geçerli kaynak denetimi Eklentisi: **Araçlar** -> **seçenekleri** -> **kaynak denetimi** -> **Eklenti Seçimi**.  
   
--   Değişiklik kaynak denetim bağlantısı: **Dosya** -> **kaynak denetimi** -> **değiştirmek kaynak denetimi**...  
+- Değişiklik kaynak denetim bağlantısı: **Dosya** -> **kaynak denetimi** -> **değiştirmek kaynak denetimi**...  
   
 ## <a name="common-expected-behavior"></a>Ortak beklenen davranışı  
  Visual Studio çıkmadan veya çözümü yeniden kaynak denetimi için bir çözüm eklentisi değiştirmek mümkündür. Ayrıca, geçerli kaynak denetimi eklentisi Bu çözüm yüklendiğinde bir çözüm tarafından kullanılan bir otomatik olarak değiştirir.  

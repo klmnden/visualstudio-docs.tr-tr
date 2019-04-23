@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091583"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Bir ilişki oluşturulamıyor &lt;ilişkilendirme adı&gt; -özellik iki kere listelenmiş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Bir ilişki oluşturulamıyor \<ilişkilendirme adı >. Aynı özellik birden fa
   
 ### <a name="to-resolve-this-condition"></a>Bu durumu düzeltmek için  
   
--   İletisini inceleyin ve message içinde belirtilen özelliğini not edin.  
+- İletisini inceleyin ve message içinde belirtilen özelliğini not edin.  
   
--   Tıklayın **Tamam** ileti kutusunu kapatın.  
+- Tıklayın **Tamam** ileti kutusunu kapatın.  
   
--   İnceleme **ilişkilendirme özellikleri** ve yinelenen girdileri kaldırın.  
+- İnceleme **ilişkilendirme özellikleri** ve yinelenen girdileri kaldırın.  
   
--   **Tamam**'ı tıklatın.  
+- **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

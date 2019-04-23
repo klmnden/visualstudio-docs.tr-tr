@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f9b02b84644bd748c88e9d08647fa7d57d951b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5baa2168eeae12f1a85fdce0b2981e267dcd6fbc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083887"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Visual Studio API kullanarak UML modeli açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Ayrıca API kullanarak modelleri ve diyagramları Visual Studio kullanıcı arab
   
  Kullanıcıya görünür yapmadan program kodundaki modeli okumak istiyorsanız, aşağıdaki yöntemleri kullanabilirsiniz:  
   
--   Visual Studio Model veri yolu, bunları içindeki modellere ve öğelere erişmenize olanak sağlar ve bir model ile başka arasında bağlantı yapmak için standart bir yöntemini sağlar. Daha fazla bilgi için [tümleştirme UML modellerini diğer modeller ve araçlarla birlikte](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Visual Studio Model veri yolu, bunları içindeki modellere ve öğelere erişmenize olanak sağlar ve bir model ile başka arasında bağlantı yapmak için standart bir yöntemini sağlar. Daha fazla bilgi için [tümleştirme UML modellerini diğer modeller ve araçlarla birlikte](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Salt okunur modunda model açabilirsiniz. Daha fazla bilgi için [program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md).  
+- Salt okunur modunda model açabilirsiniz. Daha fazla bilgi için [program kodundaki UML modelini okuma](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Showing"></a> Visual Studio'da modelleri ve diyagramları açma  
+## <a name="Showing"></a> Visual Studio'da modelleri ve diyagramları açma  
  Kullanıcı arabiriminde model açmak için standart bir Visual Studio API kullanın. `EnvDTE.DTE`. Modelleme projesi öğeleri üzerinde gerçekleştirebileceğiniz iki yararlı dönüştürme vardır:  
   
 - `EnvDTE.Project` ve ondan dönüştürme `IModelingProject`, proje bir modelleme projesi ise ve geçerli AppDomain'e durumunda.  

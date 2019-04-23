@@ -27,12 +27,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078297"
 ---
 # <a name="how-to-use-the-modules-window"></a>Nasıl yapılır: Modüller penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ ms.locfileid: "54769647"
   
 ### <a name="to-display-the-modules-window-in-break-mode-or-in-run-mode"></a>Modüller penceresini kesme modunda veya çalıştırma modunda görüntülemek için  
   
--   Üzerinde **hata ayıklama** menüsünde seçin **Windows**ve ardından **modülleri**.  
+- Üzerinde **hata ayıklama** menüsünde seçin **Windows**ve ardından **modülleri**.  
   
      Varsayılan olarak, **modülleri** penceresi modülleri yükleme sırası tarafından sıralar. Ancak, herhangi bir sütuna göre sıralamak seçebilirsiniz.  
   
 ### <a name="to-sort-by-any-column"></a>Herhangi bir sütuna göre sıralamak için  
   
--   Sütun üst kısmındaki düğmeye tıklayın.  
+- Sütun üst kısmındaki düğmeye tıklayın.  
   
      Sembolleri yüklemek veya bir sembol yolu belirtin **modülleri** kısayol menüsünü kullanarak pencere.  
   
@@ -59,23 +59,23 @@ ms.locfileid: "54769647"
   
 #### <a name="to-load-symbols-manually"></a>Simgeleri el ile yüklemek için  
   
-1.  İçinde **modülleri** penceresinde, kendisi için olmayan semboller modülü sağ tıklatın.  
+1. İçinde **modülleri** penceresinde, kendisi için olmayan semboller modülü sağ tıklatın.  
   
-2.  İşaret **sembolleri şuradan Yükle** ve ardından **Microsoft sembol sunucuları** veya **sembol yolu**.  
+2. İşaret **sembolleri şuradan Yükle** ve ardından **Microsoft sembol sunucuları** veya **sembol yolu**.  
   
 #### <a name="to-change-symbol-load-settings"></a>Sembol yükleme ayarlarını değiştirmek için  
   
-1.  İçinde **modülleri** penceresinde herhangi bir modülden sağ tıklayın.  
+1. İçinde **modülleri** penceresinde herhangi bir modülden sağ tıklayın.  
   
-2.  Tıklayın **sembol ayarları**.  
+2. Tıklayın **sembol ayarları**.  
   
      Artık açıklandığı gibi sembol yükleme ayarlarını değiştirebilirsiniz [sembol konumlarını belirtin ve yükleme davranışını](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Değişiklikler, hata ayıklama oturumunu yeniden başlatılana kadar etkili olmaz.  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Belirli bir modül için Sembol yükleme davranışını değiştirmek için  
   
-1.  İçinde **modülleri** penceresinde modülü sağ tıklatın.  
+1. İçinde **modülleri** penceresinde modülü sağ tıklatın.  
   
-2.  İşaret **otomatik sembol yükleme ayarlarını** ve ardından **elle her zaman yük** veya **varsayılan**. Değişiklikler, hata ayıklama oturumunu yeniden başlatılana kadar etkili olmaz.  
+2. İşaret **otomatik sembol yükleme ayarlarını** ve ardından **elle her zaman yük** veya **varsayılan**. Değişiklikler, hata ayıklama oturumunu yeniden başlatılana kadar etkili olmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yürütmeyi kesme](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   

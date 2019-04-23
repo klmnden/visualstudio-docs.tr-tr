@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
-ms.openlocfilehash: 52ca70a0a3c4e129063c5d861fd4692dcd85cc9c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086019"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Öğesinden türetme, menü komutlarını oluşturabilirsiniz <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesne ve ilgili olay işleyicileri uygulama. Çoğu durumda, kullanabileceğiniz <xref:System.ComponentModel.Design.MenuCommand>VSPackage proje şablonu yapar, ancak bazen kullanmanız gerekebilir gibi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.
@@ -63,9 +63,9 @@ ms.locfileid: "56335510"
    </Button>
    ```
 
-   1.  Ayarlama `guid` ve `id` yeni komut GUID:ID eşleşecek alanları.
+   1. Ayarlama `guid` ve `id` yeni komut GUID:ID eşleşecek alanları.
 
-   2.  Ayarlama `priority` özniteliği.
+   2. Ayarlama `priority` özniteliği.
 
         `priority` Özniteliği tarafından .vsct kendi üst grubundaki diğer nesneler arasında düğmenin konumu belirlemek için kullanılır.
 
@@ -73,7 +73,7 @@ ms.locfileid: "56335510"
 
         Atlama `priority` öznitelik değerini 0 olarak ayarlar.
 
-   3.  Ayarlama `type` özniteliği. Çoğu durumda, değeri olacak `"Button"`. Diğer geçerli düğmesi türlerinin açıklamaları için bkz. [Button öğesi](../extensibility/button-element.md).
+   3. Ayarlama `type` özniteliği. Çoğu durumda, değeri olacak `"Button"`. Diğer geçerli düğmesi türlerinin açıklamaları için bkz. [Button öğesi](../extensibility/button-element.md).
 
 5. Düğme tanımındaki oluşturmak bir [dizeleri](../extensibility/strings-element.md) öğesini içeren bir [ButtonText](../extensibility/buttontext-element.md) IDE içinde göründüğü gibi menünün adını içerecek şekilde öğesi ve bir [CommandName](../extensibility/commandname-element.md) menüde erişmek için kullanılan komut adını içerecek şekilde öğesi **komut** penceresi.
 
@@ -127,11 +127,11 @@ ms.locfileid: "56335510"
 
  Kullanan kod için <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirim doğrudan komut işlemesi için uygulanmalı <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi ve yöntemleri. İki en önemli yöntemlerdir <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.
 
-1.  Alma <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , aşağıdaki örnekte gösterildiği gibi örnek.
+1. Alma <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , aşağıdaki örnekte gösterildiği gibi örnek.
 
      [!code-csharp[ButtonGroup#21](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_5.cs)]
 
-2.  Oluşturma bir <xref:System.ComponentModel.Design.CommandID> GUID ve ID işlemek için komut olan aşağıdaki örnekte gösterildiği gibi parametre olarak nesne.
+2. Oluşturma bir <xref:System.ComponentModel.Design.CommandID> GUID ve ID işlemek için komut olan aşağıdaki örnekte gösterildiği gibi parametre olarak nesne.
 
      [!code-csharp[ButtonGroup#22](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_6.cs)]
 
@@ -139,7 +139,7 @@ ms.locfileid: "56335510"
 
      Alternatif olarak, doldurabilirsiniz <xref:System.ComponentModel.Design.CommandID> GUID'yi ham dize değeri ve kimliği tamsayı değerini kullanarak nesne
 
-3.  Ya da örneği bir <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ile birlikte komutu işleyen yöntem belirten nesne <xref:System.ComponentModel.Design.CommandID>aşağıdaki örnekte gösterildiği gibi.
+3. Ya da örneği bir <xref:System.ComponentModel.Design.MenuCommand> veya <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ile birlikte komutu işleyen yöntem belirten nesne <xref:System.ComponentModel.Design.CommandID>aşağıdaki örnekte gösterildiği gibi.
 
      [!code-csharp[ButtonGroup#23](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_7.cs)]
 
@@ -147,7 +147,7 @@ ms.locfileid: "56335510"
 
      Paket şablon tarafından oluşturulan komutlar için varsayılan olarak geçirilir bir <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesnesine `Initialize()` paket sınıfının yöntemi.
 
-4.  <xref:System.ComponentModel.Design.MenuCommand> Statik komutları için uygundur. Dinamik menü öğesi görüntüler QueryStatus olay işleyicileri gerektirir. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Ekler <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> ana menü komut açılmış ve başka bazı özellikleri gibi olduğunda oluşan olay <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.
+4. <xref:System.ComponentModel.Design.MenuCommand> Statik komutları için uygundur. Dinamik menü öğesi görüntüler QueryStatus olay işleyicileri gerektirir. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Ekler <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> ana menü komut açılmış ve başka bazı özellikleri gibi olduğunda oluşan olay <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.
 
      Paket şablon tarafından oluşturulan komutlar için varsayılan olarak geçirilir bir <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> nesnesine `Initialize()` paket sınıfının yöntemi. Visual Studio Sihirbazı'nı uygulayan `Initialize` yöntemi kullanarak `MenuCommand`. Dinamik menü öğesi görüntüler için bu değiştirmelisiniz `OleMenuCommand`sonraki adımda gösterildiği gibi. Ayrıca, menü öğesi metni değiştirmek için bir TextChanges komut bayrak .vsct dosyası menü komut düğmesine aşağıdaki örnekte gösterildiği gibi eklemeniz gerekir
 
@@ -164,11 +164,11 @@ ms.locfileid: "56335510"
     </Button>
     ```
 
-5.  Yeni menü Command'e <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> yönteminde <xref:System.ComponentModel.Design.IMenuCommandService> arabirimi. Bu paket şablon tarafından oluşturulan komutlar için varsayılan olarak aşağıdaki örnekte gösterildiği gibi gerçekleştirilir
+5. Yeni menü Command'e <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> yönteminde <xref:System.ComponentModel.Design.IMenuCommandService> arabirimi. Bu paket şablon tarafından oluşturulan komutlar için varsayılan olarak aşağıdaki örnekte gösterildiği gibi gerçekleştirilir
 
      [!code-csharp[ButtonGroup#24](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_9.cs)]
 
-6.  Komutu işleyen yöntem uygulayın.
+6. Komutu işleyen yöntem uygulayın.
 
 ### <a name="to-implement-querystatus"></a>QueryStatus uygulamak için
 
@@ -247,11 +247,11 @@ ms.locfileid: "56335510"
 
 #### <a name="to-implement-the-exec-method"></a>Exec yöntemi uygulamak için
 
--   Komut `GUID` bilinmiyor, iade `OLECMDERR_E_UNKNOWNGROUP`.
+- Komut `GUID` bilinmiyor, iade `OLECMDERR_E_UNKNOWNGROUP`.
 
--   Varsa `GUID` bilinen ancak komut kimliği bilinmiyor, iade `OLECMDERR_E_NOTSUPPORTED`.
+- Varsa `GUID` bilinen ancak komut kimliği bilinmiyor, iade `OLECMDERR_E_NOTSUPPORTED`.
 
--   Varsa `GUID` ve komut kimliği aynı komutta tarafından kullanılan GUID:ID çifti *.vsct* dosya, komut ve iade ile ilişkili kod yürütmesine <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
+- Varsa `GUID` ve komut kimliği aynı komutta tarafından kullanılan GUID:ID çifti *.vsct* dosya, komut ve iade ile ilişkili kod yürütmesine <xref:Microsoft.VisualStudio.VSConstants.S_OK>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

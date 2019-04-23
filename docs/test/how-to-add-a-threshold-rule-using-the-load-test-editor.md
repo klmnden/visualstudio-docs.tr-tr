@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112721"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak bir eşik kuralı ekleme
 
@@ -26,17 +26,17 @@ Yük testlerindeki eşik kuralları, bir performans sayacı değeri bir sabit de
 
 ## <a name="to-add-a-threshold-rule"></a>Eşik kuralı ekleme
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Yük Testi Düzenleyicisi'nde genişletin **sayaç kümeleri** düğümü.
+2. Yük Testi Düzenleyicisi'nde genişletin **sayaç kümeleri** düğümü.
 
-3.  Birini genişletin **sayaç kategorileri** sayaç kümelerinden birinde. Örneğin, seçebileceğiniz **YüklemeTesti**. Düğümünü genişletin.
+3. Birini genişletin **sayaç kategorileri** sayaç kümelerinden birinde. Örneğin, seçebileceğiniz **YüklemeTesti**. Düğümünü genişletin.
 
-4.  Örneğin, sayaçları birine sağ tıklayın **kullanıcı yükü**altında **YüklemeTesti**. Seçin **eşik kuralı ekleme**.
+4. Örneğin, sayaçları birine sağ tıklayın **kullanıcı yükü**altında **YüklemeTesti**. Seçin **eşik kuralı ekleme**.
 
      **Eşik Kuralı Ekle** iletişim kutusu görüntülenir.
 
-5.  İki kural türlerinden birini seçebilirsiniz: **Sabiti Karşılaştır** ve **karşılaştırma sayaç**. Uygun türünü seçin ve şu değerleri ayarlayın.
+5. İki kural türlerinden birini seçebilirsiniz: **Sabiti Karşılaştır** ve **karşılaştırma sayaç**. Uygun türünü seçin ve şu değerleri ayarlayın.
 
     > [!NOTE]
     > Ayarlama **aşarsa uyar** özelliğini **True** bir Eşiği aşan bir sorun olduğunu belirtmek için veya **False** eşiğin altında kalan bir sorun olduğunu belirtmek için.

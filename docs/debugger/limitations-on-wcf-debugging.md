@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721491"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082028"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCE Hata Ayıklamasında Sınırlamalar
 Bir WCF Hizmeti hatasını ayıklamaya başlayabilmeniz için üç yol vardır:
@@ -37,13 +37,13 @@ Bir WCF Hizmeti hatasını ayıklamaya başlayabilmeniz için üç yol vardır:
 ## <a name="limitations-on-stepping-into-a-service"></a>Bir hizmette Adımlama sınırlamaları
  Bir istemci uygulamalarında hata ayıklaması yaptığınız bir hizmette adımlamak için aşağıdaki koşullar karşılanmalıdır:
 
--   İstemci, bir zaman uyumlu istemci nesnesini kullanarak hizmet çağırmanız gerekir.
+- İstemci, bir zaman uyumlu istemci nesnesini kullanarak hizmet çağırmanız gerekir.
 
--   Sözleşme işlemi, tek yönlü olamaz.
+- Sözleşme işlemi, tek yönlü olamaz.
 
--   Zaman uyumsuz sunucusuysa, hizmet içinde kod çalıştırılıyorken tam çağrı yığınını görüntüleyemezsiniz.
+- Zaman uyumsuz sunucusuysa, hizmet içinde kod çalıştırılıyorken tam çağrı yığınını görüntüleyemezsiniz.
 
--   Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kod ile etkinleştirilmesi gerekir:
+- Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kod ile etkinleştirilmesi gerekir:
 
     ```xml
     <system.web>

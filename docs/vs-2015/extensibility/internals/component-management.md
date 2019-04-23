@@ -11,12 +11,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090452"
 ---
 # <a name="component-management"></a>Bileşen Yönetimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Windows Installer görevlerin birimleri (bazen WICs veya yalnızca bileşenleri 
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Yan yana yüklemesi için Kurulum yazma yönergeleri  
   
--   Yazar dosyaları ve kayıt defteri anahtarlarını, kendi bileşenlerine sürümleri arasında paylaşılır.  
+- Yazar dosyaları ve kayıt defteri anahtarlarını, kendi bileşenlerine sürümleri arasında paylaşılır.  
   
      Bu, bir sonraki sürümünde bunları kolayca kullanmasını sağlar. Örneğin, küresel olarak kayıtlı bir tür kitaplıklarını dosya uzantıları, kayıtlı HKEY_CLASSES_ROOT ve benzeri diğer öğeler.  
   
--   Paylaşılan bileşenler ayrı birleştirme modülleri gruplayın.  
+- Paylaşılan bileşenler ayrı birleştirme modülleri gruplayın.  
   
      Bu, yazar-ilerletme yan için doğru şekilde yardımcı olur.  
   
--   Paylaşılan dosyaları ve kayıt defteri anahtarlarını sürümleri arasında aynı Windows Yükleyici bileşenlerini kullanarak yükleyin.  
+- Paylaşılan dosyaları ve kayıt defteri anahtarlarını sürümleri arasında aynı Windows Yükleyici bileşenlerini kullanarak yükleyin.  
   
      Farklı bir bileşen kullanırsanız, dosyaları ve kayıt defteri girdilerini tutulan bir VSPackage kaldırılır ancak başka bir VSPackage yüklüdür kaldırılır.  
   
--   Oluşturulan ve paylaşılan öğeleri aynı bileşende karıştırmayın.  
+- Oluşturulan ve paylaşılan öğeleri aynı bileşende karıştırmayın.  
   
      Bunun yapılması, genel bir konum ve yalıtılmış konumlara sürümlü öğeleri paylaşılan öğeleri yüklemek mümkün kılar.  
   
--   Tutulan dosyalarının olduğu noktaya paylaşılan kayıt defteri anahtarlarını yok.  
+- Tutulan dosyalarının olduğu noktaya paylaşılan kayıt defteri anahtarlarını yok.  
   
      Bunu yaparsanız, başka bir sürümü tutulan VSPackage yüklendiğinde paylaşılan anahtarların üzerine yazılır. Dosyanın ikinci sürümü kaldırdıktan sonra anahtar işaret ettiği dosya kayboluyor.  
   

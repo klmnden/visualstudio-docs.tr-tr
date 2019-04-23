@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114506"
 ---
 # <a name="network-usage"></a>Ağ kullanımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Visual Studio **ağ** Tanılama aracını kullanarak gerçekleştirilen ağ işl
 ### <a name="analysis-tips"></a>Çözümleme ipuçları  
  Bu aracı vurgular çalıştırırken, faydalı olabilecek bazı alanlarını ağ analiz ilgili:  
   
-1.  Önbellekten tam olarak sunulan istekleri olarak gösterilen **(önbellekten)** içinde **alınan** sütun. Bu, önbelleğin etkili bir şekilde kullanıcı bant genişliğinden tasarruf etmek kullanmanıza veya yanlışlıkla yanıtları önbelleğe alma ve güncel olmayan verileri ile uygulamanızın son kullanıcı sağlama belirlemenize yardımcı olabilir.  
+1. Önbellekten tam olarak sunulan istekleri olarak gösterilen **(önbellekten)** içinde **alınan** sütun. Bu, önbelleğin etkili bir şekilde kullanıcı bant genişliğinden tasarruf etmek kullanmanıza veya yanlışlıkla yanıtları önbelleğe alma ve güncel olmayan verileri ile uygulamanızın son kullanıcı sağlama belirlemenize yardımcı olabilir.  
   
-2.  Hata yanıtları (4xx veya 5xx) görüntülenir, **sonuçları** kırmızı bir duruma sahip sütun kod ve Özet çubuğunda ayrıca vurgulanır. Bu, birçok olası istekler arasında kolay nokta hataları uygulamanızı sağlar.  
+2. Hata yanıtları (4xx veya 5xx) görüntülenir, **sonuçları** kırmızı bir duruma sahip sütun kod ve Özet çubuğunda ayrıca vurgulanır. Bu, birçok olası istekler arasında kolay nokta hataları uygulamanızı sağlar.  
   
-3.  Yanıt düzgün yazdırmada düğme (içinde gövde sekmesi) JSON, XML, HTML, CSS, JavaScript ve TypeScript yanıt yükleri içeriğin okunabilirliği artırarak ayrıştırmanıza yardımcı olabilir.  
+3. Yanıt düzgün yazdırmada düğme (içinde gövde sekmesi) JSON, XML, HTML, CSS, JavaScript ve TypeScript yanıt yükleri içeriğin okunabilirliği artırarak ayrıştırmanıza yardımcı olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   

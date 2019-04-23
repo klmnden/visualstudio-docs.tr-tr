@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113995"
 ---
 # <a name="the-text-template-transformation-process"></a>Metin Şablonu Dönüştürme Süreci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,22 +38,22 @@ Metin şablonu dönüştürme süreci, bir metin şablonu dosyasını girdi olar
 ## <a name="the-engine"></a>Altyapısı  
  Altyapı şablonu dönüştürme işleminde kullanılan tüm dosyaları işler ana bilgisayarından bir dize olarak alır. Altyapı sonra herhangi bir özel yönerge işlemcileri ve ortam diğer yönlerini bulmak için ana ister. Altyapı derler ve oluşturulan dönüştürme sınıfına çalıştırır. Altyapı, normalde bir dosyaya metin kaydeder barındırmak için oluşturulan metni döndürür.  
   
-## <a name="the-host"></a>Ana bilgisayar  
+## <a name="the-host"></a>Konak  
  Konak, ortamın dışında aşağıdakiler dahil olmak üzere dönüştürme işlemi, ilgili her şeyin sorumludur:  
   
--   Metin ve ikili dosyaları altyapısı veya bir yönerge işlemcisi tarafından istenen bulunuyor. Konak, dizinler ve genel derleme önbelleğinde derlemeleri bulmak için arama yapabilirsiniz. Özel yönerge işlemcisi kod altyapısı için konak bulabilirsiniz. Konak ayrıca bulun ve metin dosyalarını okuma ve içeriklerini dize olarak döndürür.  
+- Metin ve ikili dosyaları altyapısı veya bir yönerge işlemcisi tarafından istenen bulunuyor. Konak, dizinler ve genel derleme önbelleğinde derlemeleri bulmak için arama yapabilirsiniz. Özel yönerge işlemcisi kod altyapısı için konak bulabilirsiniz. Konak ayrıca bulun ve metin dosyalarını okuma ve içeriklerini dize olarak döndürür.  
   
--   Standart derlemeler ve altyapı tarafından oluşturulan dönüştürme sınıfına oluşturmak için kullanılan ad alanları listesi sağlama.  
+- Standart derlemeler ve altyapı tarafından oluşturulan dönüştürme sınıfına oluşturmak için kullanılan ad alanları listesi sağlama.  
   
--   Altyapı derler ve oluşturulan dönüştürme sınıfına çalıştırdığında kullanılan uygulama etki alanı sağlama. Ayrı uygulama etki alanı, şablon kodunun hataları konak uygulama korumak için kullanılır.  
+- Altyapı derler ve oluşturulan dönüştürme sınıfına çalıştırdığında kullanılan uygulama etki alanı sağlama. Ayrı uygulama etki alanı, şablon kodunun hataları konak uygulama korumak için kullanılır.  
   
--   Oluşturulan çıktı dosyası yazılıyor.  
+- Oluşturulan çıktı dosyası yazılıyor.  
   
--   Oluşturulan çıktı dosyası için varsayılan uzantı ayarlanıyor.  
+- Oluşturulan çıktı dosyası için varsayılan uzantı ayarlanıyor.  
   
--   Metin şablonu dönüştürme hataları işleme. Örneğin, ana bilgisayar hataları kullanıcı arabiriminde görüntülemek veya bunları bir dosyaya yazma. (İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], hatalar, hata iletisi penceresinde görüntülenir.)  
+- Metin şablonu dönüştürme hataları işleme. Örneğin, ana bilgisayar hataları kullanıcı arabiriminde görüntülemek veya bunları bir dosyaya yazma. (İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], hatalar, hata iletisi penceresinde görüntülenir.)  
   
--   Bir kullanıcı bir değer sağlamadan bir yönerge olarak adlandırılan, gerekli parametre değerini sağlama. Yönerge işlemcisini, yönerge ve parametre adını belirtin ve varsa varsayılan değer sağlamak için konak isteyin.  
+- Bir kullanıcı bir değer sağlamadan bir yönerge olarak adlandırılan, gerekli parametre değerini sağlama. Yönerge işlemcisini, yönerge ve parametre adını belirtin ve varsa varsayılan değer sağlamak için konak isteyin.  
   
 ## <a name="directives-and-directive-processors"></a>Yönergeleri ve yönerge işlemcileri  
  Bir yönerge, metin şablonunuza bir komuttur. Bu, oluşturma işlemi parametrelerini sağlar. Genellikle kaynak ve türü modeli veya başka bir giriş ve çıkış dosyasının dosya adı uzantısı yönergeleri tanımlar.  

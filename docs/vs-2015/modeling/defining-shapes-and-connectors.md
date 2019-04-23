@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02b470926001c08695bc6c18712cbd0db41503cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112331"
 ---
 # <a name="defining-shapes-and-connectors"></a>Şekiller ve Bağlayıcıları Tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir etki alanına özgü dil (DSL) diyagramda hakkındaki bilgileri görüntülemek için kullanılan şekillerinin birkaç temel türü vardır.  
   
-##  <a name="shapeTypes"></a> Şekilleri ve bağlayıcıları temel türleri  
+## <a name="shapeTypes"></a> Şekilleri ve bağlayıcıları temel türleri  
  Bir DSL diyagramı koleksiyonu gösterir *şekiller* birbirine satırlarla veya *Bağlayıcılar*.  Genellikle, ancak her zaman:  
   
 - Şekiller görünür gösterimini model öğeleri var.  
@@ -45,5 +45,5 @@ Bir etki alanına özgü dil (DSL) diyagramda hakkındaki bilgileri görüntüle
 |Kulvarlar|Kulvarlar diyagram parçalara yatay veya dikey bölümleme. Kulvar, her zaman diğer şekillerin diyagram üzerinde altında kalır.<br /><br /> Model kökünde genellikle kulvarın model öğeleri arasındaki shapemap ve diğer öğeleri üzerinde shapemap. Örneğin, Görev akışı çözüm şablonundan bir DSL oluşturun.|  
 |Bağlayıcılar|Şekiller arasında genellikle çizilmiş satırları başvuru ilişkileri temsil eder. Bir bağlayıcı düz veya dönüşler yapmak ve ok ucu farklı türleri için seçenekleri ayarlayabilirsiniz.|  
   
-##  <a name="shapeInheritance"></a> Şekil devralma  
+## <a name="shapeInheritance"></a> Şekil devralma  
  Bir şekli başka bir şekilden devralabilir. Ancak, şekilleri aynı türde olmalıdır. Örneğin, yalnızca geometri şekli geometri şekilden devralabilir. Devralınan şekilleri bölmeleri ve kendi temel şeklin dekoratörler bulunur. Bağlayıcılar bağlayıcılardan devralabilir.

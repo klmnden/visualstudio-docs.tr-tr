@@ -10,12 +10,12 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112265"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Kodlanmış UI Testi için Excel Eklenti Örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Bu örnek için eklenti [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] özel
   
  Bu eklenti, önemli bölümleri:  
   
--   `ThisAddIn`  Sınıf - arasında .NET uzaktan iletişim kanalı yönetir `ExcelUICommunicator` ve [örnek kodlanmış UI testi uzantısı için Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
+- `ThisAddIn`  Sınıf - arasında .NET uzaktan iletişim kanalı yönetir `ExcelUICommunicator` ve [örnek kodlanmış UI testi uzantısı için Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
--   `ExcelCodedUIAddinHelper_TemporaryKey.pfx`  -Eklenti test etme bir güvenlik sertifikası.  
+- `ExcelCodedUIAddinHelper_TemporaryKey.pfx`  -Eklenti test etme bir güvenlik sertifikası.  
   
--   `ExcelUICommunicator`  Class - bu sınıfın uyguladığı `IExcelUICommunication` arabirimi.  
+- `ExcelUICommunicator`  Class - bu sınıfın uyguladığı `IExcelUICommunication` arabirimi.  
   
 ## <a name="thisaddin-class"></a>ThisAddIn sınıfı  
  Bu sınıfın çoğu Office için Visual Studio Araçları tarafından oluşturulan gerçekten `ThisAddIn.Designer.cs` dosya Excel eklenti projenizi oluşturduğunuzda.  

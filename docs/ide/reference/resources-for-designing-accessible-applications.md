@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086149"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Erişilebilir uygulamalar tasarlama için kaynaklar
 
@@ -43,13 +43,13 @@ Erişilebilir bir Windows uygulamaları ve Web siteleri geliştirmek için eriş
 
 ## <a name="websites"></a>Web siteleri
 
--   [İzlenecek yol: Görüntü denetimleri kullanarak, menü denetimleri ve AutoPostBack erişilebilirlik yönergeleri](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) bu makalede örnek bir web sayfası erişilebilir denetimleri dahil etmek için adım adım yönergeler sağlar. Ayrıca bazı erişilebilirlik için Web tasarım ipuçları tanır.
+- [İzlenecek yol: Görüntü denetimleri kullanarak, menü denetimleri ve AutoPostBack erişilebilirlik yönergeleri](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) bu makalede örnek bir web sayfası erişilebilir denetimleri dahil etmek için adım adım yönergeler sağlar. Ayrıca bazı erişilebilirlik için Web tasarım ipuçları tanır.
 
--   **DHTML ile erişilebilir Web sayfaları oluşturma** Bu teknik makaleye erişilebilir web tasarım ipuçları yanı sıra erişilebilir HTML 4.0 öğelerini listeler. Daha fazla bilgi için [DHTML ile erişilebilir web sayfaları oluşturmak](https://msdn.microsoft.com/library/ms528445.aspx).
+- **DHTML ile erişilebilir Web sayfaları oluşturma** Bu teknik makaleye erişilebilir web tasarım ipuçları yanı sıra erişilebilir HTML 4.0 öğelerini listeler. Daha fazla bilgi için [DHTML ile erişilebilir web sayfaları oluşturmak](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Üçüncü parti Kaynaklar
 
--   **World Wide Web Consortium (W3C) erişilebilirlik girişim Web** bu Web sitesi erişilebilir Web sitesi geliştirme için kılavuzları ve teknikleri sağlar. Daha fazla bilgi için bkz. [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **World Wide Web Consortium (W3C) erişilebilirlik girişim Web** bu Web sitesi erişilebilir Web sitesi geliştirme için kılavuzları ve teknikleri sağlar. Daha fazla bilgi için bkz. [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

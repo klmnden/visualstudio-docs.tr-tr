@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083655"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Visual Studio 2015 ile ilgili bir sorun bildirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Kullanıcı geri bildirim simgesine tıklayın **Hızlı Başlat** başlık çub
 
 ## <a name="describe-the-problem"></a>Sorunu açıklayın
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Yol, Visual Studio içinde doğru takıma yardımcı olacak sorun için açıklayıcı bir başlık verin.
 
@@ -49,15 +49,15 @@ Seçin **ekran görüntüsü Ekle** geçerli ekranınızın Microsoft'a gönderi
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Bir izleme ve yığın dökümü (isteğe bağlı) girin
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  İzleme ve yığın dökümü dosyaları, sorunları tanılamamıza yardımcı çok yararlı olur.   Yeniden oluşturma adımlarınızı kaydetmek ve Microsoft'a veri göndermek için sorun raporu kullandığınızda, çok önem veriyoruz.
+1. İzleme ve yığın dökümü dosyaları, sorunları tanılamamıza yardımcı çok yararlı olur.   Yeniden oluşturma adımlarınızı kaydetmek ve Microsoft'a veri göndermek için sorun raporu kullandığınızda, çok önem veriyoruz.
 
-2.  Köşeli Çift Ayraca tıklayın **sorunu yeniden oluşturmak için eylemlerinizi kaydedin**. Visual Studio askıda veya kilitlenme sorunu neden oluyorsa açın başka bir Visual Studio örneği ayarlama ve listesi görünümünden seçin.
+2. Köşeli Çift Ayraca tıklayın **sorunu yeniden oluşturmak için eylemlerinizi kaydedin**. Visual Studio askıda veya kilitlenme sorunu neden oluyorsa açın başka bir Visual Studio örneği ayarlama ve listesi görünümünden seçin.
 
-3.  Tıklayarak **kaydı Başlat** ve sorunu yeniden oluşturma adımları gerçekleştirin. İşiniz bittiğinde tıklayarak **kaydı durdurmak** kayan pencere düğmesi.
+3. Tıklayarak **kaydı Başlat** ve sorunu yeniden oluşturma adımları gerçekleştirin. İşiniz bittiğinde tıklayarak **kaydı durdurmak** kayan pencere düğmesi.
 
-4.  Toplama ve kaydedilen bilgilerini paketlemek Visual Studio için birkaç dakika bekleyin. Toplama işlemi tamamlandıktan sonra iletişim kutusu aşağıdakine benzer görünecektir:
+4. Toplama ve kaydedilen bilgilerini paketlemek Visual Studio için birkaç dakika bekleyin. Toplama işlemi tamamlandıktan sonra iletişim kutusu aşağıdakine benzer görünecektir:
 
      ![Bir izleme dosyası kayıt](../ide/media/record-a-trace-file.png "bir izleme dosyası kaydı")
 

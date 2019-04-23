@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 25ed4c8032133f08b975a22d56de4911efbd50a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081365"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio'da ölçü bellek kullanımı
 
@@ -41,22 +41,22 @@ Bu öğreticide şunları yapacaksınız:
 
 ## <a name="collect-memory-usage-data"></a>Bellek kullanım verilerini toplama
 
-1.  Visual Studio'da hata ayıklama ve bellek kullanımı İnceleme başlamak istediğiniz noktada uygulamanızda bir kesme noktası ayarlamak istediğiniz projeyi açın.
+1. Visual Studio'da hata ayıklama ve bellek kullanımı İnceleme başlamak istediğiniz noktada uygulamanızda bir kesme noktası ayarlamak istediğiniz projeyi açın.
 
     Burada, bir bellek sorunu şüphelendiğiniz bir alan varsa, bellek sorunu gerçekleşmeden önce ilk kesme noktası ayarlayın.
 
     > [!TIP]
     >  Uygulamanız sıklıkla ayırır ve belleği serbest bırakır ilginizi çeken bir işlem bellek profilini yakalamak için bu zor olabilir çünkü başlangıç ve bitiş tam noktası bulmak için işlemi (veya adım işlemi aracılığıyla) kesme noktaları ayarlayın bellek değişti.
 
-2.  İşlev veya bölge analiz etmek istediğiniz kodu sonunda ikinci bir kesme noktası ayarlayın (veya bir tespit edildiğinde alınan önlemlerin bir bellek sorunu gerçekleştikten sonra).
+2. İşlev veya bölge analiz etmek istediğiniz kodu sonunda ikinci bir kesme noktası ayarlayın (veya bir tespit edildiğinde alınan önlemlerin bir bellek sorunu gerçekleştikten sonra).
 
-3.  **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
+3. **Tanılama araçları** penceresi görünür otomatik olarak, bunu devre dışı bırakmış sürece. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
 
-4.  Seçin **bellek kullanımı** ile **seçtiğiniz Araçları** araç ayarlama.
+4. Seçin **bellek kullanımı** ile **seçtiğiniz Araçları** araç ayarlama.
 
      ![Tanılama araçlarını Göster](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  Tıklayın **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
+5. Tıklayın **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
      Uygulamanın yüklenmesi tamamlandığında, Tanılama Araçları'nın Özet görünümü görüntülenir.
 
@@ -69,20 +69,20 @@ Bu öğreticide şunları yapacaksınız:
      >
      >  Durdur (kısayol tuşu: **Kaydırma**+**F5**) ve hata ayıklamayı yeniden başlatın.
 
-6.  Hata ayıklama oturumunuzu başlangıcında bir anlık görüntüsünü almak için seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu. (Bu da bir kesme noktası Burada ayarlanan yardımcı olabilir.)
+6. Hata ayıklama oturumunuzu başlangıcında bir anlık görüntüsünü almak için seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu. (Bu da bir kesme noktası Burada ayarlanan yardımcı olabilir.)
 
     ![Anlık Görüntü Al](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      >  Bellek karşılaştırmaları için bir temel oluşturmak için bir anlık görüntü hata ayıklama oturumunuzu başlangıcında alma göz önünde bulundurun.
 
-6.  İlk kesme noktasına ulaşılmasına neden olacak senaryo çalıştırın.
+6. İlk kesme noktasına ulaşılmasına neden olacak senaryo çalıştırın.
 
-7.  Hata ayıklayıcıyı ilk kesme noktasında duraklatılmış durumdayken seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu.
+7. Hata ayıklayıcıyı ilk kesme noktasında duraklatılmış durumdayken seçin **anlık görüntü Al** üzerinde **bellek kullanımı** özeti araç çubuğu.
 
-8.  Tuşuna **F5** , ikinci bir kesme noktasına uygulamayı çalıştırmak için.
+8. Tuşuna **F5** , ikinci bir kesme noktasına uygulamayı çalıştırmak için.
 
-9.  Artık, başka bir anlık görüntüsünü alın.
+9. Artık, başka bir anlık görüntüsünü alın.
 
      Bu noktada, verileri çözümlemek başlayabilirsiniz.
 
@@ -93,9 +93,9 @@ Bellek kullanımı Özet tablonun satırlarını, hata ayıklama oturumu sıras�
 
  Sütun adı, seçtiğiniz proje özelliklerinde hata ayıklama modunu bağlıdır: .NET, yerel veya karma (.NET ve yerel).
 
--   **Nesneler (fark)** ve **ayırmalar (fark)** sütunları görüntülemek nesne sayısını .NET ve yerel bellek anlık görüntü alındığında.
+- **Nesneler (fark)** ve **ayırmalar (fark)** sütunları görüntülemek nesne sayısını .NET ve yerel bellek anlık görüntü alındığında.
 
--   **Yığın boyutu (fark)** sütunu, .NET ve yerel yığın bayt sayısını gösterir
+- **Yığın boyutu (fark)** sütunu, .NET ve yerel yığın bayt sayısını gösterir
 
 Birden çok anlık görüntüleri gerçekleştirdiğinizden, Özet Tablo hücrelerinin değişiklik satır anlık görüntü ve önceki anlık görüntüye arasında bir değer ekleyin.
 
@@ -136,13 +136,13 @@ Bellek kullanımını analiz etme için bellek kullanımının ayrıntılı bir 
 
  **Türler görünümü** sayısı ve boyutu türleri anlık görüntüler.
 
--   Örnekleri simgesini (![nesne türü sütununda örneği simgesi](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) anlık seçilen türe ait nesneleri hakkındaki bilgileri görüntülemek için seçilen bir tür.
+- Örnekleri simgesini (![nesne türü sütununda örneği simgesi](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) anlık seçilen türe ait nesneleri hakkındaki bilgileri görüntülemek için seçilen bir tür.
 
      **Örnekleri** Görünüm Seçili türünün her örneğinin görüntüler. Görüntüler oluşturma örneğinde sonuçlanan çağrı yığınını örneği seçerek **ayırma çağrı yığını** bölmesi.
 
      ![Örnekler görünümü](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   Seçin **yığınlar görünümü** içinde **görünüm modu** seçili türü için ayırma yığını görmek için listenin.
+- Seçin **yığınlar görünümü** içinde **görünüm modu** seçili türü için ayırma yığını görmek için listenin.
 
      ![Yığınlar görünümü](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 

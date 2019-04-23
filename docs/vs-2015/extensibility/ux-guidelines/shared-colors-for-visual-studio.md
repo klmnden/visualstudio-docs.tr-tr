@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086435"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlarken veya arabirimi öğeniz benzer özellikleri ile tutarlı olmasını istediğiniz, mevcut belirteç adları paket tanımı dosyaları seçin ve renkleri atamak için kullanın. Bu tema eklendiğinde veya güncelleştirildiğinde, otomatik olarak güncelleştirir ve kullanıcı Arabirimi ile genel Visual Studio ortamının tutarlı kalmasını sağlar.
 
- Bu makalede, sık kullanılan UI öğeleri ve benzer kullanıcı Arabirimi oluşturma sırasında başvuran kullandıkları, belirteç adlarını açıklanır. Bu renk belirteçleri erişim hakkında ayrıntılı bilgi için bkz: [VSColor hizmet](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+Bu makalede, sık kullanılan UI öğeleri ve benzer kullanıcı Arabirimi oluşturma sırasında başvuran kullandıkları, belirteç adlarını açıklanır. Bu renk belirteçleri erişim hakkında ayrıntılı bilgi için bkz: [VSColor hizmet](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
- Doğru belirteci adları kullandığınızdan emin olun:
+Doğru belirteci adları kullandığınızdan emin olun:
 
--   **İşlevi, renk üzerinde dayalı belirteç adları kullanın.** Ortak paylaşılan renkler, belirli bir arabirim öğeleri ile ilişkili ve yalnızca aynı veya benzer özellikler için kullanılmak üzere tasarlanmıştır. Örneğin, dönen ilerleme animasyonunun basılı açılan kutusu rengi renk istediğiniz olduğundan yeniden kullanmayın. Birleşik giriş kutusu ve animasyon işlevleri farklıdır ve renk birleşik giriş kutusu değişikliklerle ilişkili, artık animasyon öğeniz için uygun bir renk olabilir. Renk tutarlı kullanımı, kullanıcılarınızın yönlendirmek ve Karışıklığı önlemek yardımcı olur.
+- **İşlevi, renk üzerinde dayalı belirteç adları kullanın.** Ortak paylaşılan renkler, belirli bir arabirim öğeleri ile ilişkili ve yalnızca aynı veya benzer özellikler için kullanılmak üzere tasarlanmıştır. Örneğin, dönen ilerleme animasyonunun basılı açılan kutusu rengi renk istediğiniz olduğundan yeniden kullanmayın. Birleşik giriş kutusu ve animasyon işlevleri farklıdır ve renk birleşik giriş kutusu değişikliklerle ilişkili, artık animasyon öğeniz için uygun bir renk olabilir. Renk tutarlı kullanımı, kullanıcılarınızın yönlendirmek ve Karışıklığı önlemek yardımcı olur.
 
--   **Arka plan ve metin renklerini doğru birlikte kullanın.** Metin ile kullanılmaya yönelik arka plan renklerini, ilişkili metin rengi sahip olur. Metin renkler, arka plan bilgileri için belirtilen dışında kullanmayın. İlişkili metin rengi değilse, arka plan rengi metni görüntülemek beklediğiniz tüm yüzeyi için kullanmayın. Diğer metin ve arkaplan renklerini birleşimlerini okunamayan bir arabirimde neden olabilir.
+- **Arka plan ve metin renklerini doğru birlikte kullanın.** Metin ile kullanılmaya yönelik arka plan renklerini, ilişkili metin rengi sahip olur. Metin renkler, arka plan bilgileri için belirtilen dışında kullanmayın. İlişkili metin rengi değilse, arka plan rengi metni görüntülemek beklediğiniz tüm yüzeyi için kullanmayın. Diğer metin ve arkaplan renklerini birleşimlerini okunamayan bir arabirimde neden olabilir.
 
--   **Konumlarına için uygun olan denetim renkleri kullanın.** Bazı durumlarda, bazı Visual Studio denetimler ayrı kenarlık ve arka plan renkleri yoktur. Bunun yerine, bu yüzeyleri arkasına renkleri ayarlama seçin. Her zaman burada denetimin yerleştirme konumu için uygun olan belirteci adları kullandığınızdan emin olun.
+- **Konumlarına için uygun olan denetim renkleri kullanın.** Bazı durumlarda, bazı Visual Studio denetimler ayrı kenarlık ve arka plan renkleri yoktur. Bunun yerine, bu yüzeyleri arkasına renkleri ayarlama seçin. Her zaman burada denetimin yerleştirme konumu için uygun olan belirteci adları kullandığınızdan emin olun.
 
 > [!IMPORTANT]
->  "Başlangıç sayfası" veya "Şarabıı." kategoride bulunan belirteçleri kullanmayın
+> "Başlangıç sayfası" veya "Şarabıı." kategoride bulunan belirteçleri kullanmayın
 
 ## <a name="command-structures"></a>Komut yapıları
 
-###  <a name="BKMK_CommandMenus"></a> Menüler
- Menüleri, Visual Studio içinde çeşitli yerlerde oluşabilir: belge veya araç pencerelerini veya IDE tamamında çeşitli konumlarda sağ katıştırılmış ana menü çubuğu. Menü diğer UI öğeleri ile ilişkili uygulamalar için ilgili öğenin bölümünde ele alınmıştır. Visual Studio ortamı tarafından sağlanan standart menü uygulama her zaman kullanmalısınız. Ancak, bazı ender durumlarda, standart bir Visual Studio menülerinin erişimi olmayabilir. Bu gibi durumlarda, kullanıcı Arabirimi diğer Visual Studio menülerinde ile tutarlı olmasını sağlamak için aşağıdaki belirteci adları kullanın.
+### <a name="BKMK_CommandMenus"></a> Menüler
 
- ![Menüler kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+Menüleri, Visual Studio içinde çeşitli yerlerde oluşabilir: belge veya araç pencerelerini veya IDE tamamında çeşitli konumlarda sağ katıştırılmış ana menü çubuğu. Menü diğer UI öğeleri ile ilişkili uygulamalar için ilgili öğenin bölümünde ele alınmıştır. Visual Studio ortamı tarafından sağlanan standart menü uygulama her zaman kullanmalısınız. Ancak, bazı ender durumlarda, standart bir Visual Studio menülerinin erişimi olmayabilir. Bu gibi durumlarda, kullanıcı Arabirimi diğer Visual Studio menülerinde ile tutarlı olmasını sağlamak için aşağıdaki belirteci adları kullanın.
 
- Kullan...
- -   herhangi bir zamanda, özel bir menü oluşturmanız gerekir.
+![Menüler kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+
+Kullan...
+- herhangi bir zamanda, özel bir menü oluşturmanız gerekir.
 
 - Visual Studio menülerinin eşleştirmek istediğiniz yeni bir kullanıcı Arabirimi bileşeninin olduğunda.
 
-  Kullanmayın...
-  tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.
+Kullanmayın...
+tek başına arka plan rengi. Her zaman arka plan/ön plan birlikte belirtilen kullanın.
 
 #### <a name="menu-title"></a>Menü başlığı
- Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan, kenarlık ve başlık metnini yanı isteğe bağlı bir karakter oluşur.
 
- ![Menü başlığı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan, kenarlık ve başlık metnini yanı isteğe bağlı bir karakter oluşur.
 
- Kullan...
+![Menü başlığı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+
+Kullan...
 Her bir özel menü başlığı oluşturuyorsunuz.
 
- Kullanmayın...
- -   her şey için her zaman istemediğiniz menü başlığının eşleştirin.
+Kullanmayın...
+- her şey için her zaman istemediğiniz menü başlığının eşleştirin.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -192,15 +195,16 @@ Her bir özel menü başlığı oluşturuyorsunuz.
   Yok.
 
 #### <a name="menu"></a>Menü
- Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.
 
- ![Menü öğelerini kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.
 
- Kullan...
+![Menü öğelerini kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+
+Kullan...
 herhangi bir aşağı açılan listesi için menü çubuğunun ya da komut çubuğu başlatılır.
 
- Kullanmayın...
- -   herhangi bir aşağı açılan listeyi, başka bir bağlamda gerçekleşir.
+Kullanmayın...
+- herhangi bir aşağı açılan listeyi, başka bir bağlamda gerçekleşir.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -351,32 +355,34 @@ herhangi bir aşağı açılan listesi için menü çubuğunun ya da komut çubu
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>Komut çubuğu
- Komut çubuğunda, birden fazla yerde Visual Studio IDE içinde komut raf ve katıştırılmış araç veya belge pencereleri özellikle görünebilir.
 
- Genel olarak, Visual Studio ortamı tarafından sağlanan standart komut çubuğu uygulaması her zaman kullanın. Standart mekanizmasını kullanarak tüm görsel Ayrıntılar doğru görünür ve etkileşimli öğeleri davrandığını tutarlı bir şekilde ile diğer Visual Studio komut çubuğu denetimleri sağlar. Ancak, kendi komut çubuğu oluşturmak için gerekli değilse, doğru aşağıdaki belirteci adları kullanarak stil emin olun.
+Komut çubuğunda, birden fazla yerde Visual Studio IDE içinde komut raf ve katıştırılmış araç veya belge pencereleri özellikle görünebilir.
 
- ![Komut çubuğu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+Genel olarak, Visual Studio ortamı tarafından sağlanan standart komut çubuğu uygulaması her zaman kullanın. Standart mekanizmasını kullanarak tüm görsel Ayrıntılar doğru görünür ve etkileşimli öğeleri davrandığını tutarlı bir şekilde ile diğer Visual Studio komut çubuğu denetimleri sağlar. Ancak, kendi komut çubuğu oluşturmak için gerekli değilse, doğru aşağıdaki belirteci adları kullanarak stil emin olun.
 
- ![Taşma düğmesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+![Komut çubuğu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
- Kullan...
+![Taşma düğmesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
+
+Kullan...
 Katıştırılmış bir komut için gerek duyduğunuz yerde çubuğu ancak standart bir Visual Studio komut çubuğu uygulaması kullanamaz.
 
- Kullanmayın...
- -   Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.
+Kullanmayın...
+- Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.
 
--   belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.
+- belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.
 
 #### <a name="command-bar-group"></a>Komut çubuğu grubu
- Bir komut çubuğu grubuyla ilgili bir komut çubuğu denetimleri kümesinden oluşur ve herhangi bir sayıda düğmeler, aşağı açılan menüler, birleşik giriş kutuları veya menüler Bölünmüş düğme içerebilir. Bu denetimler için renkleri ayrı belirteci adlarına göre düzenlenen ve ayrı olarak başka bir yerde bu kılavuzda ele alınmıştır. Ayırıcı çizginin bir komut çubuğu grubuyla ilgili alt gruplar ayırmak için kullanılır.
 
- ![Komut çubuğu grubu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+Bir komut çubuğu grubuyla ilgili bir komut çubuğu denetimleri kümesinden oluşur ve herhangi bir sayıda düğmeler, aşağı açılan menüler, birleşik giriş kutuları veya menüler Bölünmüş düğme içerebilir. Bu denetimler için renkleri ayrı belirteci adlarına göre düzenlenen ve ayrı olarak başka bir yerde bu kılavuzda ele alınmıştır. Ayırıcı çizginin bir komut çubuğu grubuyla ilgili alt gruplar ayırmak için kullanılır.
 
- Kullan...
+![Komut çubuğu grubu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+
+Kullan...
 Katıştırılmış bir komut için gerek duyduğunuz yerde çubuğu ancak standart bir Visual Studio komut çubuğu uygulaması kullanamaz.
 
- Kullanmayın...
- -   Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.
+Kullanmayın...
+- Kullanıcı Arabirimi öğeleri için Komut çubuğuna benzer değildir.
 
 - belirteç adları dışında olduğu için istediklerinizi belirtilen komut çubuğu bileşenleri için.
 
@@ -407,15 +413,16 @@ Katıştırılmış bir komut için gerek duyduğunuz yerde çubuğu ancak stand
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>Komut simgeleri
- ![Komut simgesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- ![Komut simgesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Komut simgesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- Kullan...
+![Komut simgesi kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+
+Kullan...
 düğmeleri için komut çubuğunda yer alır.
 
- Kullanmayın...
- -   denetimler için belirteç adlarına sahip.
+Kullanmayın...
+- denetimler için belirteç adlarına sahip.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -551,20 +558,20 @@ düğmeleri için komut çubuğunda yer alır.
 
   Yok
 
-####  <a name="BKMK_CommandComboBox"></a> Birleşik giriş kutusu
+#### <a name="BKMK_CommandComboBox"></a> Birleşik giriş kutusu
 
 > [!IMPORTANT]
->  Birleşik giriş kutuları, açılan listeler için benzerdir, ancak düzenlenebilir metin bölge. Düzenlenebilir metin bölge, açılan içermez, altında bulunan renk belirteçleri kullanın. [açılan](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Birleşik giriş kutuları, açılan listeler için benzerdir, ancak düzenlenebilir metin bölge. Düzenlenebilir metin bölge, açılan içermez, altında bulunan renk belirteçleri kullanın. [açılan](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
- ![Birleşik giriş kutusu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
+![Birleşik giriş kutusu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
 
- Kullan...
- -   özel bir birleşik giriş kutuları oluştururken.
+Kullan...
+- özel bir birleşik giriş kutuları oluştururken.
 
 - bir birleşik giriş kutusuna benzeyen bir komut çubuğu denetimini oluştururken.
 
   Kullanmayın...
-  -   her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.
+  - her şey için her zaman komut eşleştirilecek istemediğiniz çubuğu kullanıcı Arabirimi.
 
 - erişim için bir stil uygulanmış bir birleşik giriş kutusu olduğunda.
 
@@ -798,18 +805,18 @@ düğmeleri için komut çubuğunda yer alır.
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> Açılan
+#### <a name="BKMK_CommandDropDown"></a> Açılan
 
 > [!IMPORTANT]
->  Açılan listeler, birleşik giriş kutuları için benzerdir, ancak düzenlenebilir metin bölgeleri yoksundur. Düzenlenebilir metin bölge, açılan içerir, altında bulunan renk belirteçleri kullanın. [birleşik giriş kutusu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Açılan listeler, birleşik giriş kutuları için benzerdir, ancak düzenlenebilir metin bölgeleri yoksundur. Düzenlenebilir metin bölge, açılan içerir, altında bulunan renk belirteçleri kullanın. [birleşik giriş kutusu](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
- ![DROP&#45;aşağı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
+![DROP&#45;aşağı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
 
- Kullan...
+Kullan...
 ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.
 
- Kullanmayın...
- -   her şey için aşağı açılan listesine benzer değil.
+Kullanmayın...
+- her şey için aşağı açılan listesine benzer değil.
 
 - Birleşik giriş kutuları veya Bölünmüş düğme.
 
@@ -1010,15 +1017,16 @@ ne zaman özel aşağı açılan liste denetimleri oluşturuyorsunuz.
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Bölünmüş düğme
- Bölünmüş düğme fazla belirteç ad düğmeler, menüler ve komut çubuğu metni gibi diğer komut çubuğu denetimleri ile paylaşın. Tüm gerekli eylem ve açılan düğmeyi belirteci adları kolaylık olması için burada yinelenir. Bölünmüş düğme açılan listeleri, uygulamaları komut çubuğunun [menüleri](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- ![Bölünmüş düğme kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+Bölünmüş düğme fazla belirteç ad düğmeler, menüler ve komut çubuğu metni gibi diğer komut çubuğu denetimleri ile paylaşın. Tüm gerekli eylem ve açılan düğmeyi belirteci adları kolaylık olması için burada yinelenir. Bölünmüş düğme açılan listeleri, uygulamaları komut çubuğunun [menüleri](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- Kullan...
+![Bölünmüş düğme kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+
+Kullan...
 ne zaman özel bir Bölünmüş düğme oluşturuyorsunuz.
 
- Kullanmayın...
- -   diğer düğme türleri için.
+Kullanmayın...
+- diğer düğme türleri için.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -1425,7 +1433,7 @@ Kabuk güncelleştirme bir tema olduğunda otomatik olarak değiştirmek istemed
   ne zaman özel belge sekmeleri oluşturuyorsunuz.
 
   Kullanmayın...
-  -   (Önizleme) provisional sekmeler için.
+  - (Önizleme) provisional sekmeler için.
 
 - otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.
 
@@ -1538,15 +1546,16 @@ Kabuk güncelleştirme bir tema olduğunda otomatik olarak değiştirmek istemed
  Aynı arka plan rengini ayarlayın.
 
 #### <a name="preview-tab"></a>Önizleme sekmesi
- Önizleme sekmesini, kullanıcı Çözüm Gezgini araç penceresindeki bir öğeyi tıklattığında belge sekme kanal sağ tarafında görünür. Bu belgenin önizleme olarak davranır ve kullanıcı belgeyi belge sekme kanal sol tarafında açık tutmak için seçeneği de sunar. Bir kerede yalnızca bir Önizleme sekmesini Aç açık olabilir. Önizleme sekmeleri sahip hem de arka plan ve seçili durumlardan sekmeleri Aç gibi ve kullanıcıların etkin durumda odaklanmış veya plana odaklanmadan olabilir.
 
- ![Önizleme sekmesini kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+Önizleme sekmesini, kullanıcı Çözüm Gezgini araç penceresindeki bir öğeyi tıklattığında belge sekme kanal sağ tarafında görünür. Bu belgenin önizleme olarak davranır ve kullanıcı belgeyi belge sekme kanal sol tarafında açık tutmak için seçeneği de sunar. Bir kerede yalnızca bir Önizleme sekmesini Aç açık olabilir. Önizleme sekmeleri sahip hem de arka plan ve seçili durumlardan sekmeleri Aç gibi ve kullanıcıların etkin durumda odaklanmış veya plana odaklanmadan olabilir.
 
- Kullan...
+![Önizleme sekmesini kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+
+Kullan...
 herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizleme sekme rengini eşleştirilecek istiyor.
 
- Kullanmayın...
- -   Belge ya da geçici olmayan sekmesinde herhangi bir türdeki (Önizleme).
+Kullanmayın...
+- Belge ya da geçici olmayan sekmesinde herhangi bir türdeki (Önizleme).
 
 - otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi için bir tema güncelleştirme Kabuk sahiptir.
 
@@ -1661,15 +1670,16 @@ herhangi bir provisional Önizleme oluşturma ve bazı öğesi geçerli Önizlem
   Aynı arka plan rengini ayarlayın.
 
 #### <a name="document-overflow-button"></a>Belge Taşma düğmesi
- Belge Taşma düğmesi, bir veya daha fazla belge olup olmamasına bakılmaksızın açık, mevcut ise tüm belge sekmeleri uyacak şekilde, geçerli yapılandırma dikey boşluk yoktur. Denetlenen belge taşma açılan menüsünü **CommandBarMenu** renkleri (bkz [menüleri](../../misc/shared-colors.md#BKMK_CommandMenus)), bütün açık belgeleri, görünür ve gizli ve taşma glif değişikliklerin bir listesini görüntüler bağlı olarak tüm açık belgeleri sekmesini kanalda olup görüntülenir.
 
- ![Taşma kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+Belge Taşma düğmesi, bir veya daha fazla belge olup olmamasına bakılmaksızın açık, mevcut ise tüm belge sekmeleri uyacak şekilde, geçerli yapılandırma dikey boşluk yoktur. Denetlenen belge taşma açılan menüsünü **CommandBarMenu** renkleri (bkz [menüleri](../../misc/shared-colors.md#BKMK_CommandMenus)), bütün açık belgeleri, görünür ve gizli ve taşma glif değişikliklerin bir listesini görüntüler bağlı olarak tüm açık belgeleri sekmesini kanalda olup görüntülenir.
 
- Kullan...
+![Taşma kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
+
+Kullan...
 ne zaman bir özel belge taşma düğmesini oluşturuyorsunuz.
 
- Kullanmayın...
- -   taşma düğmesini için benzer değil kullanıcı Arabirimi için.
+Kullanmayın...
+- taşma düğmesini için benzer değil kullanıcı Arabirimi için.
 
 - Komut çubuğu taşma düğmeleri.
 
@@ -1895,13 +1905,14 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>Başlık çubuğu düğmeleri
- ![Başlık çubuğu düğme kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
 
- Kullan...
+![Başlık çubuğu düğme kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+
+Kullan...
 araç penceresinin başlık çubuğu renk belirteçleri kullanan kullanıcı arabiriminde görünen düğme.
 
- Kullanmayın...
- -   diğer konumlardaki düğmeler.
+Kullanmayın...
+- diğer konumlardaki düğmeler.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -2227,7 +2238,7 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
   ne zaman bir özel arama kutusu tasarlarken.
 
   Kullanmayın...
-  -   her şey için bir arama kutusu değil.
+  - her şey için bir arama kutusu değil.
 
 - her zaman arama eşleştirilecek istemediğiniz her şey için kullanıcı Arabirimi kutusu.
 
@@ -2516,17 +2527,18 @@ otomatik olarak değiştirmeyi istemediğiniz herhangi bir kullanıcı Arabirimi
   Yok.
 
 #### <a name="search-drop-down-lists"></a>Arama açılan listeler
- Arama kutusu açılır menüsünde, Visual Studio'daki diğer açılan menüler biraz daha karmaşık hale olasılığına sahiptir. "Önerilen aramalar" ve "Arama Seçenekleri" bölümleri tek başına görünebilir veya birlikte menü ve her biri ayrı ayrı renktedir. Bir satır da birlikte görünür ve tüm açılan menüden bir kenarlık çevreleyen bu iki bölüme ayırır.
 
- ![Arama açılan&#45;aşağı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+Arama kutusu açılır menüsünde, Visual Studio'daki diğer açılan menüler biraz daha karmaşık hale olasılığına sahiptir. "Önerilen aramalar" ve "Arama Seçenekleri" bölümleri tek başına görünebilir veya birlikte menü ve her biri ayrı ayrı renktedir. Bir satır da birlikte görünür ve tüm açılan menüden bir kenarlık çevreleyen bu iki bölüme ayırır.
 
- Kullan...
- -   ne zaman bir özel arama açılan listedeki oluşturuyorsunuz.
+![Arama açılan&#45;aşağı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+
+Kullan...
+- ne zaman bir özel arama açılan listedeki oluşturuyorsunuz.
 
 - Düzeltme listesi bileşenleri için doğru belirteci adları.
 
   Kullanmayın...
-  -   diğer bağlamlarda görünen açılan listeler.
+  - diğer bağlamlarda görünen açılan listeler.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -2906,16 +2918,17 @@ ne zaman Visual Studio kaydırma çubukları eşleştirmek istediğiniz kullanı
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> Ağaç görünümü
- Çözüm Gezgini, Sunucu Gezgini ve sınıf görünümü de dahil olmak üzere birçok araç pencereleri, renklerini rengi adları TreeView kategorisinde denetlediği hiyerarşik bir kuruluş uygulamaz. Ağaç görünümünde tüm öğeler, arka plan ve metin renklerini içerir. Alt öğelerinin iç içe geçmiş öğeler de öğe genişletilmiş veya daraltılmış olup olmadığını belirten karakterler var.
+### <a name="BKMK_TreeView"></a> Ağaç görünümü
 
- ![Ağaç görünümü kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+Çözüm Gezgini, Sunucu Gezgini ve sınıf görünümü de dahil olmak üzere birçok araç pencereleri, renklerini rengi adları TreeView kategorisinde denetlediği hiyerarşik bir kuruluş uygulamaz. Ağaç görünümünde tüm öğeler, arka plan ve metin renklerini içerir. Alt öğelerinin iç içe geçmiş öğeler de öğe genişletilmiş veya daraltılmış olup olmadığını belirten karakterler var.
 
- Kullan...
+![Ağaç görünümü kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+
+Kullan...
 herhangi bir hiyerarşik bir kuruluş görünümü yapması gerekir.
 
- Kullanmayın...
- -   her şey için bir ağaç görünümüne benzer değil.
+Kullanmayın...
+- her şey için bir ağaç görünümüne benzer değil.
 
 - Belirtilen dışındaki tüm arka plan/ön plan arada.
 
@@ -3332,13 +3345,14 @@ herhangi bir UI için bu onay kutusu denetimi değil.
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>Açılan kutusu/birleşik giriş kutusu denetimleri
- ![DROP&#45;aşağı&#47;birleşik giriş kutusu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
 
- Kullan...
+![DROP&#45;aşağı&#47;birleşik giriş kutusu kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
+
+Kullan...
 açılan listeler ve birleşik giriş kutuları da belgeyi bir parçası olan.
 
- Kullanmayın...
- -   bir açılan veya birleşik giriş kutusu değil herhangi bir UI için.
+Kullanmayın...
+- bir açılan veya birleşik giriş kutusu değil herhangi bir UI için.
 
 - için bir [açılan](../../misc/shared-colors.md#BKMK_CommandDropDown) veya [birleşik giriş kutusu](../../misc/shared-colors.md#BKMK_CommandComboBox) komut çubuğunda.
 
@@ -3690,17 +3704,18 @@ bir tablo veya kılavuz denetimi değil herhangi bir UI için.
  Yok.
 
 ## <a name="manifest-designer"></a>Bildirim Tasarımcısı
- Bildirim Tasarımcısı, Windows 8 ve Windows Phone 8 projeleri bildirim dosyasında düzenlemek daha kolay bir şekilde tasarlanmıştır. Tüketim için kullanılabilir paylaşılan çerçeve ederken tasarım düzeni ve yön/gezinme sekmeleri ve genel yapısı renklerini eşleştirmek için uygun olabilir. Düzen ayrıntıları hakkında daha fazla bilgi için bkz. [Visual Studio için Düzen](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- ![Bildirim Tasarımcısı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+Bildirim Tasarımcısı, Windows 8 ve Windows Phone 8 projeleri bildirim dosyasında düzenlemek daha kolay bir şekilde tasarlanmıştır. Tüketim için kullanılabilir paylaşılan çerçeve ederken tasarım düzeni ve yön/gezinme sekmeleri ve genel yapısı renklerini eşleştirmek için uygun olabilir. Düzen ayrıntıları hakkında daha fazla bilgi için bkz. [Visual Studio için Düzen](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- Kullan...
- -   Bildirim Tasarımcısı için benzer tasarımcıları.
+![Bildirim Tasarımcısı kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+
+Kullan...
+- Bildirim Tasarımcısı için benzer tasarımcıları.
 
 - bir düzenleyici belgesi içinde üst kısmındaki ortak sekme denetimleri kullanarak yerine yanı sıra.
 
-  Kullanmayın...
-  -   altıdan fazla sekme varsa.
+Kullanmayın...
+- altıdan fazla sekme varsa.
 
 - Bildirim Tasarımcısı gibi yapılandırılmamış herhangi bir UI için.
 
@@ -3964,15 +3979,16 @@ başka türde UI için.
 ## <a name="shell"></a>Kabuk
 
 ### <a name="background"></a>Arka Plan
- Ortam arka plan iki katmandan oluşur. Tüm IDE kapsayan düz renk alt katmanıdır. Üst katman komut raf altında ve araç penceresi otomatik gizleme kanalları IDE'nin sol ve sağ kenarları arasındaki uyar. Visual Studio 2013'ten itibaren aynı açık ve koyu Tema rengi için üst ve alt arka plan katmanlarının ayarlanır.
 
- ![Kabuk arka plan kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+Ortam arka plan iki katmandan oluşur. Tüm IDE kapsayan düz renk alt katmanıdır. Üst katman komut raf altında ve araç penceresi otomatik gizleme kanalları IDE'nin sol ve sağ kenarları arasındaki uyar. Visual Studio 2013'ten itibaren aynı açık ve koyu Tema rengi için üst ve alt arka plan katmanlarının ayarlanır.
 
- Kullan...
+![Kabuk arka plan kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+
+Kullan...
 Visual Studio ortamının arka eşleştirmek istediğiniz yerde.
 
- Kullanmayın...
- -   arka plan yüzeyleri olmayan basamak için dolgu olarak.
+Kullanmayın...
+- arka plan yüzeyleri olmayan basamak için dolgu olarak.
 
 - ön plan öğeleri yerleştirmek istediğiniz arka plan olarak.
 
@@ -4009,17 +4025,18 @@ Visual Studio ortamının arka eşleştirmek istediğiniz yerde.
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>Komut raf
- İki simge adları, komut raf planları kullanılır: menü çubuğu burada yer alan, biri burada komut çubukları sit ayarlayın. Bir tek tek komut çubuğu grubu "Komut çubuğunda" bölümünde daha ayrıntılı olarak ele alınmıştır, kendi arka plan renk değerleri var. Menü çubuğu ve komut çubuğundan metin sırasıyla menü ve komut çubuğu bölümlerinde ele alınmıştır.
 
- ![Komut raf kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+İki simge adları, komut raf planları kullanılır: menü çubuğu burada yer alan, biri burada komut çubukları sit ayarlayın. Bir tek tek komut çubuğu grubu "Komut çubuğunda" bölümünde daha ayrıntılı olarak ele alınmıştır, kendi arka plan renk değerleri var. Menü çubuğu ve komut çubuğundan metin sırasıyla menü ve komut çubuğu bölümlerinde ele alınmıştır.
 
- Kullan...
- -   menüleri ve araç çubukları yerleştirdiğiniz alanları.
+![Komut raf kırmızı çizgi](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+
+Kullan...
+- menüleri ve araç çubukları yerleştirdiğiniz alanları.
 
 - doğru arka plan /? ön plan belirteç adı birleşimi.
 
-  Kullanmayın...
-  bir komut raf için benzer olmayan alanları.
+Kullanmayın...
+bir komut raf için benzer olmayan alanları.
 
   Bileşen
 

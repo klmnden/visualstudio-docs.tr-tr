@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 64a0fb4dbc91ff09bddf037a8ce140f134e41e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091427"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Nasıl yapılır: Şeritte Geliştirici sekmesini gösterme
   Erişim için **Geliştirici** sekmesini bir Office uygulamasının Şerit üzerinde varsayılan olarak görünmez sekmenin gösterileceği şekilde yapılandırmanız gerekir. Örneğin, eklemek istediğiniz sekmenin Göster gerekir bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word için belge düzeyi özelleştirmeyi için.
@@ -34,9 +34,9 @@ ms.locfileid: "56614668"
 
 ## <a name="to-show-the-developer-tab"></a>Geliştirici sekmesini göstermek için
 
-1.  Bu konu tarafından desteklenen Office uygulamalarından herhangi birini başlatın. Bkz: **geçerlidir:** bu konunun önceki kısımlarında Not.
+1. Bu konu tarafından desteklenen Office uygulamalarından herhangi birini başlatın. Bkz: **geçerlidir:** bu konunun önceki kısımlarında Not.
 
-2.  Üzerinde **dosya** sekmesini, **seçenekleri** düğmesi.
+2. Üzerinde **dosya** sekmesini, **seçenekleri** düğmesi.
 
      Aşağıdaki şekil gösterir **dosya** sekmesi ve **seçenekleri** Office 2010'daki düğmesi.
 
@@ -50,19 +50,19 @@ ms.locfileid: "56614668"
 
      ![Outlook 2013 Preview'teki Seçenekler düğmesi](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview'teki Seçenekler düğmesi")
 
-3.  İçinde _ApplicationName_**seçenekleri** iletişim kutusunda **Şeridi Özelleştir** düğmesi.
+3. İçinde _ApplicationName_**seçenekleri** iletişim kutusunda **Şeridi Özelleştir** düğmesi.
 
      Aşağıdaki şekil gösterir **seçenekleri** iletişim kutusu ve **Şeridi Özelleştir** Excel 2010'daki düğmesi. Bu düğmenin konumu bu konunun üstündeki "Aşağıdakilere Uygulanır" bölümünde listelenen tüm diğer uygulamalarda benzerdir.
 
      ![Şeridi Özelleştir düğmesi](../vsto/media/vsto-office2010-customizeribbonbutton.png "Şeridi Özelleştir düğmesi")
 
-4.  Ana sekmeler listesinde seçin **Geliştirici** onay kutusu.
+4. Ana sekmeler listesinde seçin **Geliştirici** onay kutusu.
 
      Aşağıdaki şekil gösterir **Geliştirici** Word 2010 onay kutusuna ve [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Bu onay kutusunun konumu bu konunun üstündeki "Aşağıdakilere Uygulanır" bölümünde listelenen tüm diğer uygulamalarda benzerdir.
 
      ![Word Seçenekleri iletişim kutusunda Geliştirici onay kutusu](../vsto/media/vsto-office2010-developercheckbox.png "Geliştirici onay kutusuna Word Seçenekleri iletişim kutusu")
 
-5.  Seçin **Tamam** kapatmak için düğme **seçenekleri** iletişim kutusu.
+5. Seçin **Tamam** kapatmak için düğme **seçenekleri** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office kullanıcı arabirimini özelleştirme](../vsto/office-ui-customization.md)

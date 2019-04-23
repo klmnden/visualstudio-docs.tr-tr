@@ -27,33 +27,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c2cee0e0b823e5fe17fbc5720137163dcb300b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083081"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Web uygulamalarında hata ayıklama: Hatalar ve sorun giderme
 Web uygulamalarında hata ayıklama çalışırken hatalarla karşılaşabilirsiniz.
 
--   [Sorun giderme](../debugger/debugging-web-applications-troubleshooting.md)
+- [Sorun giderme](../debugger/debugging-web-applications-troubleshooting.md)
 
--   [Hata: Site IP Adresi Kullanıyor](../debugger/error-site-uses-ip-address.md)
+- [Hata: Site IP Adresi Kullanıyor](../debugger/error-site-uses-ip-address.md)
 
--   [Hata: IIS Yönetici Hizmeti Yanıt Vermediğinden Bir Güvenlik Denetimi Başarısız Oldu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+- [Hata: IIS Yönetici Hizmeti Yanıt Vermediğinden Bir Güvenlik Denetimi Başarısız Oldu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
 
--   [Hata: ASP.NET Yüklü Değil](../debugger/error-aspnet-not-installed.md)
+- [Hata: ASP.NET Yüklü Değil](../debugger/error-aspnet-not-installed.md)
 
--   [Hata: Tümleşik Windows Kimlik Doğrulaması Etkinleştirilmediğinden Hata Ayıklama Başarısız Oldu](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
+- [Hata: Tümleşik Windows Kimlik Doğrulaması Etkinleştirilmediğinden Hata Ayıklama Başarısız Oldu](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
 
--   [Hata: Web sunucusu doğru yapılandırılmamış](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- [Hata: Web sunucusu doğru yapılandırılmamış](../debugger/error-the-web-server-is-not-configured-correctly.md)
 
--   [Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [Hata: Web Sunucusu Kilitli ve DEBUG Fiilini Engelliyor](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
--   [Hata: Web Hizmetlerinde Hata Ayıklama Sırasında Zaman Aşımı](../debugger/error-timeout-while-debugging-web-services.md)
+- [Hata: Web Hizmetlerinde Hata Ayıklama Sırasında Zaman Aşımı](../debugger/error-timeout-while-debugging-web-services.md)
 
--   [Hata: Web Sunucusunda Hata Ayıklama Başlatılamıyor](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [Hata: Web Sunucusunda Hata Ayıklama Başlatılamıyor](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Hata Ayıklayıcısı Güvenliği](../debugger/debugger-security.md)

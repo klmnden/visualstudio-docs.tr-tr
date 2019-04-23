@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782261"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088801"
 ---
 # <a name="customizing-the-properties-window"></a>Özellikler Penceresini Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ ms.locfileid: "54782261"
 ### <a name="default-property-forwarding-cases"></a>Varsayılan özellik iletme durumlar  
  Kullanıcı Gezgini'nde bir şekil veya Bağlayıcısı veya bir öğe seçtiğinde, aşağıdaki özellikleri Özellikler penceresinde görüntülenir:  
   
--   Etki alanı sınıfı, temel sınıflarında tanımlanan de dahil olmak üzere model öğesi üzerinde tanımlanan etki alanı özellikleri. Etki alanı özellikleri, ayarladığınız bir istisnası **olan gözatılabilir** için `False`.  
+- Etki alanı sınıfı, temel sınıflarında tanımlanan de dahil olmak üzere model öğesi üzerinde tanımlanan etki alanı özellikleri. Etki alanı özellikleri, ayarladığınız bir istisnası **olan gözatılabilir** için `False`.  
   
--   0..1 çokluğu olan ilişkileri bağlı öğelerin adları. İlişki için bir bağlayıcı eşlemesi tanımlanmamış olsa bile bu isteğe bağlı olarak görmek için kullanışlı bir yöntem öğeleri, bağlı sağlar.  
+- 0..1 çokluğu olan ilişkileri bağlı öğelerin adları. İlişki için bir bağlayıcı eşlemesi tanımlanmamış olsa bile bu isteğe bağlı olarak görmek için kullanışlı bir yöntem öğeleri, bağlı sağlar.  
   
--   Öğesini hedefleyen bir gömme ilişkisi etki alanı özellikleri. Gömme ilişkiler genellikle açıkça gösterilmez olduğundan, bu kullanıcının özelliklerine bakın olanak tanır.  
+- Öğesini hedefleyen bir gömme ilişkisi etki alanı özellikleri. Gömme ilişkiler genellikle açıkça gösterilmez olduğundan, bu kullanıcının özelliklerine bakın olanak tanır.  
   
--   Seçilen şekil veya bağlayıcının üzerinde tanımlanan etki alanı özellikleri.  
+- Seçilen şekil veya bağlayıcının üzerinde tanımlanan etki alanı özellikleri.  
   
 ### <a name="adding-property-forwarding"></a>İletme özelliği ekleme  
  Bir özellik iletmek için bir etki alanı tür tanımlayıcısı tanımlayın. İki alan sınıfı arasındaki bir etki alanı ilişkisi varsa, ikinci etki alanı sınıfı, bir etki alanı özelliğinin değeri ilk sınıf bir etki alanı özelliği ayarlamak için bir etki alanı tür tanımlayıcısı'nı kullanabilirsiniz. Arasında bir ilişki varsa, örneğin, bir **kitap** etki alanı sınıfı ve bir **Yazar** etki alanı sınıfı, bir etki alanı tür tanımlayıcısı yapmak için kullanabileceğiniz **adı** özelliği bir Kitaptaki **Yazar** kullanıcının kitaptan seçtiğinde, Özellikler penceresinde görünür.  
@@ -69,29 +69,29 @@ ms.locfileid: "54782261"
   
 ##### <a name="to-forward-a-property-from-another-element"></a>Başka bir öğeden bir özellik iletmek için  
   
-1.  Oluşturma bir [!INCLUDE[dsl](../includes/dsl-md.md)] olarak adlandırılır, bu örnekte, en az iki sınıf içeren çözüm **kitap** ve **Yazar**. İki tür arasında bir ilişki olmalıdır **kitap** ve **Yazar**.  
+1. Oluşturma bir [!INCLUDE[dsl](../includes/dsl-md.md)] olarak adlandırılır, bu örnekte, en az iki sınıf içeren çözüm **kitap** ve **Yazar**. İki tür arasında bir ilişki olmalıdır **kitap** ve **Yazar**.  
   
      Kaynak rolünün çokluğu (rolün **kitap** tarafı) 0.. 1 veya 1..1, olmalıdır böylece her **kitap** varsa **Yazar**.  
   
-2.  İçinde **DSL Gezgini**, sağ **kitap** etki alanı sınıfı ve ardından **ekleme yeni DomainTypeDescriptor**.  
+2. İçinde **DSL Gezgini**, sağ **kitap** etki alanı sınıfı ve ardından **ekleme yeni DomainTypeDescriptor**.  
   
      Adlı bir düğüm **özel özellik tanımlayıcılarının yolları** altında görünür **özel tür tanımlayıcısının** düğümü.  
   
-3.  Sağ **özel tür tanımlayıcısının** düğümünü ve ardından **ekleme yeni PropertyPath**.  
+3. Sağ **özel tür tanımlayıcısının** düğümünü ve ardından **ekleme yeni PropertyPath**.  
   
      Yeni bir özellik yolu altında görünür **özel özellik tanımlayıcılarının yolları** düğümü.  
   
-4.  Yeni özellik yolu seçin ve **özellikleri** penceresinde **özelliğinin yolu** uygun model öğesi yolu.  
+4. Yeni özellik yolu seçin ve **özellikleri** penceresinde **özelliğinin yolu** uygun model öğesi yolu.  
   
      Bu özellik sağındaki aşağı oka tıklayarak ağaç görünümünde yolu düzenleyebilirsiniz. Etki alanı yolları hakkında daha fazla bilgi için bkz. [etki alanı yolu sözdizimi](../modeling/domain-path-syntax.md). Düzenlediğinizde, yolun benzemelidir **BookReferencesAuthor.Author/! Yazar**.  
   
-5.  Ayarlama **özelliği** için **adı** etki alanı özelliğine **Yazar**.  
+5. Ayarlama **özelliği** için **adı** etki alanı özelliğine **Yazar**.  
   
-6.  Ayarlama **görünen adı** için **yazar adı**.  
+6. Ayarlama **görünen adı** için **yazar adı**.  
   
-7.  Tüm Şablonları dönüştürme, oluşturma ve DSL çalıştırın.  
+7. Tüm Şablonları dönüştürme, oluşturma ve DSL çalıştırın.  
   
-8.  Bir modeli diyagramı yazar, kitap oluşturur ve başvuru ilişkisi kullanarak bunları bağlayabilirsiniz. Kitap öğesini seçin ve Özellikler penceresinde kitabı özelliklerine ek olarak yazar adını görmeniz gerekir. Bağlantılı yazarının adını değiştirin veya başka bir yazar kitap bağlayın ve kitap yazar adını değiştiğini gözlemleyin.  
+8. Bir modeli diyagramı yazar, kitap oluşturur ve başvuru ilişkisi kullanarak bunları bağlayabilirsiniz. Kitap öğesini seçin ve Özellikler penceresinde kitabı özelliklerine ek olarak yazar adını görmeniz gerekir. Bağlantılı yazarının adını değiştirin veya başka bir yazar kitap bağlayın ve kitap yazar adını değiştiğini gözlemleyin.  
   
 ## <a name="custom-property-editors"></a>Özel özellik düzenleyicileri  
  Özellik penceresi, düzenleme deneyimi her bir etki alanı özellik türü için uygun bir varsayılan sağlar. Örneğin, bir listeden seçimli türü için bir açılan liste kullanıcının gördüğü ve sayısal bir özellik için kullanıcı basamak girebilirsiniz. Bu yalnızca yerleşik türler için geçerlidir. Dış tür belirtirseniz, kullanıcının özellik değerleri görebilirsiniz, ancak düzenleme olmadan mümkün olacaktır.  
@@ -116,14 +116,14 @@ ms.locfileid: "54782261"
   
 2. Türüne eklemek **etki alanı türleri** zaten yapmış sürece listesi.  
   
-   1.  DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.  
+   1. DslDefinition.dsl, açın ve **DSL Gezgini**kök düğümüne sağ tıklayın ve ardından **yeni dış türü Ekle**.  
   
         Altında yeni bir giriş belirir **etki alanı türleri** düğümü.  
   
        > [!WARNING]
        >  Menü öğesi DSL kök düğümde değil **etki alanı türleri** düğümü.  
   
-   2.  Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.  
+   2. Özellikler penceresinde, adı ve yeni türünün ad alanını ayarlayın.  
   
 3. Bir alan özelliği için bir etki alanı sınıfı, her zamanki şekilde ekleyin.  
   
@@ -149,9 +149,9 @@ ms.locfileid: "54782261"
   
 ##### <a name="to-define-a-file-name-domain-property"></a>Bir dosya adı etki alanı özelliği tanımlamak için  
   
-1.  Bir etki alanı sınıfı, DSL tanımındaki alan özelliği ekleyin.  
+1. Bir etki alanı sınıfı, DSL tanımındaki alan özelliği ekleyin.  
   
-2.  Yeni özellik seçin. İçinde **özel özniteliği** alanına Özellikler penceresinde, aşağıdaki öznitelik. Bu öznitelik girmek için üç noktaya tıklayın **[...]**  ve öznitelik adı ve parametreleri ayrı olarak girin:  
+2. Yeni özellik seçin. İçinde **özel özniteliği** alanına Özellikler penceresinde, aşağıdaki öznitelik. Bu öznitelik girmek için üç noktaya tıklayın **[...]**  ve öznitelik adı ve parametreleri ayrı olarak girin:  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -160,15 +160,15 @@ ms.locfileid: "54782261"
   
     ```  
   
-3.  Etki alanı özelliğinin türü, kendi varsayılan ayarını bırakın **dize**.  
+3. Etki alanı özelliğinin türü, kendi varsayılan ayarını bırakın **dize**.  
   
-4.  Düzenleyici test etmek için kullanıcılar, etki alanı özelliği düzenlemek için dosya adı Düzenleyicisi'ni açabilir doğrulayın.  
+4. Düzenleyici test etmek için kullanıcılar, etki alanı özelliği düzenlemek için dosya adı Düzenleyicisi'ni açabilir doğrulayın.  
   
-    1.  CTRL + F5 veya F5 tuşuna basın. Hata ayıklama çözümde test dosyasını açın. Etki alanı sınıfı, bir öğe oluşturun ve seçin.  
+    1. CTRL + F5 veya F5 tuşuna basın. Hata ayıklama çözümde test dosyasını açın. Etki alanı sınıfı, bir öğe oluşturun ve seçin.  
   
-    2.  Özellikler penceresinde etki alanı özelliğini seçin. Üç nokta değerini alan gösterir **[...]** .  
+    2. Özellikler penceresinde etki alanı özelliğini seçin. Üç nokta değerini alan gösterir **[...]** .  
   
-    3.  Üç nokta simgesine tıklayın. Dosya iletişim kutusu görünür. Bir dosya seçin ve iletişim kutusunu kapatın. Dosya yolu, etki alanı özelliğinin değeri bir sunulmuştur.  
+    3. Üç nokta simgesine tıklayın. Dosya iletişim kutusu görünür. Bir dosya seçin ve iletişim kutusunu kapatın. Dosya yolu, etki alanı özelliğinin değeri bir sunulmuştur.  
   
 ### <a name="defining-your-own-property-editor"></a>Kendi özellik Düzenleyici tanımlama  
  Kendi düzenleyicinizi tanımlayabilirsiniz. Kullanıcı, tanımladığınız bir türü düzenleyin veya standart bir türü özel bir şekilde düzenlemek için izin vermek için bunu. Örneğin, bir formül temsil eden bir dize girişi kullanıcıya izin verebilir.  

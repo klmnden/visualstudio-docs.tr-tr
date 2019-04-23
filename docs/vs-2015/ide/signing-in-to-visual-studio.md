@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083965"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio'da Oturum Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Kişiselleştirin ve kişiselleştirme hesabınız IDE açarak ayarlarsanız, Vi
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Neden Visual Studio'da oturum açmam gerekiyor?
  Visual Studio'da oturum açma ile şu avantajlara sahip olabilirsiniz:
 
--   **Çok çeşitli avantajları erişim verir** Visual Studio Dev Essentials programından ücretsiz yazılım, eğitim, destek ve daha fazla dahil. Bkz: [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) daha fazla bilgi için.
+- **Çok çeşitli avantajları erişim verir** Visual Studio Dev Essentials programından ücretsiz yazılım, eğitim, destek ve daha fazla dahil. Bkz: [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) daha fazla bilgi için.
 
--   **Visual Studio ayarlarınızı eşitler** –, tuş bağlamaları gibi pencere düzenini özelleştirme ve renk temasını ayarları uygulamak için Visual Studio herhangi bir cihazda oturum açtığınızda hemen. Bkz: [Visual Studio'da eşitlenen ayarlar](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Visual Studio ayarlarınızı eşitler** –, tuş bağlamaları gibi pencere düzenini özelleştirme ve renk temasını ayarları uygulamak için Visual Studio herhangi bir cihazda oturum açtığınızda hemen. Bkz: [Visual Studio'da eşitlenen ayarlar](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
--   **Kalıcı olarak Visual Studio Express Edition kilidini açarak** – 30 günlük deneme süresiyle sınırlı kalmadan istediğiniz sürece Visual Studio Express için herhangi bir sürümünü kullanabilirsiniz.
+- **Kalıcı olarak Visual Studio Express Edition kilidini açarak** – 30 günlük deneme süresiyle sınırlı kalmadan istediğiniz sürece Visual Studio Express için herhangi bir sürümünü kullanabilirsiniz.
 
--   **Visual Studio Community Edition kilidini açarak** 30 günlük deneme süresiyle sınırlı kalmak yerine.
+- **Visual Studio Community Edition kilidini açarak** 30 günlük deneme süresiyle sınırlı kalmak yerine.
 
--   **Visual Studio deneme süresi genişletir** – gündür bir ek 90 30 günlük deneme süresiyle sınırlı kalmak yerine, Visual Studio Professional veya Visual Studio Enterprise kullanabilirsiniz.
+- **Visual Studio deneme süresi genişletir** – gündür bir ek 90 30 günlük deneme süresiyle sınırlı kalmak yerine, Visual Studio Professional veya Visual Studio Enterprise kullanabilirsiniz.
 
--   **Bir MSDN veya VSO aboneliği ile ilişkili bir hesabı kullanırsanız Visual Studio'nun kilidini kaldırır**. Bkz: [Visual Studio'nun kilidini açma](../ide/how-to-unlock-visual-studio.md).
+- **Bir MSDN veya VSO aboneliği ile ilişkili bir hesabı kullanırsanız Visual Studio'nun kilidini kaldırır**. Bkz: [Visual Studio'nun kilidini açma](../ide/how-to-unlock-visual-studio.md).
 
--   **Visual Studio Team Services gibi Azure Hizmetleri ile otomatik olarak bağlanan** IDE'de sormadan yeniden aynı hesap için kimlik bilgileri.
+- **Visual Studio Team Services gibi Azure Hizmetleri ile otomatik olarak bağlanan** IDE'de sormadan yeniden aynı hesap için kimlik bilgileri.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio'ya oturum açma
  Visual Studio'yu ilk kez başlattığınızda, oturum açın ve bazı temel kayıt bilgilerini sağlamanız istenir. Bir Microsoft hesabı ya da en iyisi, temsil eden bir iş veya Okul hesabı seçmeniz gerekir. Bu hesapların yoksa, ücretsiz bir Microsoft hesabı oluşturabilirsiniz. Bkz: [nasıl oturum açabilirim bir Microsoft hesabı için mi?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
@@ -53,12 +53,12 @@ Kişiselleştirin ve kişiselleştirme hesabınız IDE açarak ayarlarsanız, Vi
 ## <a name="to-change-your-profile-information"></a>Profil bilginizi değiştirmek için
  İçinde **dosya &#124; hesap ayarları** görebilir ve Visual Studio profiliniz ve lisansınız hakkındaki bilgileri güncelleştirin. Hesap adınızı, avatar resmini gibi profil bilgilerinizi düzenleme veya e-posta adresi için:
 
-1.  Git **dosya &#124; hesap ayarları**.
+1. Git **dosya &#124; hesap ayarları**.
 
-2.  İçinde **hesap ayarları** iletişim kutusu, **Visual Studio profilini Yönet** bağlantı.
+2. İçinde **hesap ayarları** iletişim kutusu, **Visual Studio profilini Yönet** bağlantı.
 
-3.  Üzerinde **Microsoft Bilgilerim** sayfasında tarayıcıda **bilgileri Düzenle** düğmesi.
+3. Üzerinde **Microsoft Bilgilerim** sayfasında tarayıcıda **bilgileri Düzenle** düğmesi.
 
-4.  İstediğiniz ayarları değiştirin.
+4. İstediğiniz ayarları değiştirin.
 
-5.  İşiniz bittiğinde seçin **değişiklikleri kaydetmek** düğmesi.
+5. İşiniz bittiğinde seçin **değişiklikleri kaydetmek** düğmesi.

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fdac7018ec67250514836f22f3c297ddce5bd382
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118233"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Oluşturma ve bir kaynağı uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,27 +28,27 @@ Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adl�
   
 ### <a name="to-create-a-new-resource"></a>Yeni bir kaynak oluşturmak için  
   
-1.  XAML Tasarımcısı'nda açık bir XAML dosyası, bir öğe oluşturun veya belge ana hattı pencerede bir öğe seçin.  
+1. XAML Tasarımcısı'nda açık bir XAML dosyası, bir öğe oluşturun veya belge ana hattı pencerede bir öğe seçin.  
   
-2.  Özellikler penceresinde, bir özellik değeri sağındaki kutusunda sembol olarak görünür, özellik işaretçisi seçin ve ardından **yeni kaynağa dönüştürün**. Varsayılan değer beyaz kutu simgesi gösterir ve bir siyah kutu sembol genellikle yerel kaynak uygulandığını gösterir  
+2. Özellikler penceresinde, bir özellik değeri sağındaki kutusunda sembol olarak görünür, özellik işaretçisi seçin ve ardından **yeni kaynağa dönüştürün**. Varsayılan değer beyaz kutu simgesi gösterir ve bir siyah kutu sembol genellikle yerel kaynak uygulandığını gösterir  
   
      Bir kaynak oluşturmak için uygun bir iletişim kutusu görüntülenir. Bir fırçadan bir kaynak oluştururken bu iletişim kutusu görüntülenir:  
   
      ![Kaynak Oluştur iletişim kutusu](../designers/media/xaml-create-resource.png "xaml_create_resource")  
   
-3.  İçinde **adı (anahtar)** kutusunda, bir anahtar adı girin. Bu kaynak başvurmak için diğer öğeleri istediğiniz zaman kullanabileceğiniz addır.  
+3. İçinde **adı (anahtar)** kutusunda, bir anahtar adı girin. Bu kaynak başvurmak için diğer öğeleri istediğiniz zaman kullanabileceğiniz addır.  
   
-4.  Altında **tanımlamak**, kaynağın tanımlanmasını istediğiniz yeri belirten seçeneği seçin:  
+4. Altında **tanımlamak**, kaynağın tanımlanmasını istediğiniz yeri belirten seçeneği seçin:  
   
-    -   Kaynağınızı uygulamanızdaki herhangi bir belge kullanılabilir hale getirmek için seçin **uygulama**.  
+    - Kaynağınızı uygulamanızdaki herhangi bir belge kullanılabilir hale getirmek için seçin **uygulama**.  
   
-    -   Kaynağınızı yalnızca geçerli belgede kullanılabilir hale getirmek için seçin **bu belgeyi**.  
+    - Kaynağınızı yalnızca geçerli belgede kullanılabilir hale getirmek için seçin **bu belgeyi**.  
   
-    -   Kaynak kaynağın oluşturulduğu veya onun alt öğeleri sadece öğe kullanılabilir hale getirmek için seçin **bu belgeyi**, aşağı açılan listesinde seçin *öğesi*: *adı* .  
+    - Kaynak kaynağın oluşturulduğu veya onun alt öğeleri sadece öğe kullanılabilir hale getirmek için seçin **bu belgeyi**, aşağı açılan listesinde seçin *öğesi*: *adı* .  
   
-    -   Diğer projelerde yeniden kullanılabilir bir kaynak sözlüğü dosyası içinde kaynağı tanımlamak için tıklatın **kaynak sözlüğü**ve ardından var olan bir kaynak sözlüğü dosyası gibi seçin **StandardStyles.xaml**, aşağı açılan listesinde.  
+    - Diğer projelerde yeniden kullanılabilir bir kaynak sözlüğü dosyası içinde kaynağı tanımlamak için tıklatın **kaynak sözlüğü**ve ardından var olan bir kaynak sözlüğü dosyası gibi seçin **StandardStyles.xaml**, aşağı açılan listesinde.  
   
-5.  Seçin **Tamam** kaynak oluşturmak ve oluşturduğunuz bu öğeye uygulamak için düğme.  
+5. Seçin **Tamam** kaynak oluşturmak ve oluşturduğunuz bu öğeye uygulamak için düğme.  
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Bir öğe veya özellik için bir kaynak uygulamak için  
   
@@ -69,11 +69,11 @@ Stilleri ve şablonları XAML Tasarımcısı'nda öğeler için kaynakları adl�
   
 ### <a name="to-edit-a-resource"></a>Bir kaynak düzenlemek için  
   
-1.  Çalışma yüzeyinde veya belge ana hattı penceresinin bir öğe seçin.  
+1. Çalışma yüzeyinde veya belge ana hattı penceresinin bir öğe seçin.  
   
-2.  Özellikler penceresinde özelliğinin varsayılan veya yerel özellik işaretçiye seçin ve ardından **kaynağı Düzenle** açmak için **kaynağı Düzenle** iletişim kutusu.  
+2. Özellikler penceresinde özelliğinin varsayılan veya yerel özellik işaretçiye seçin ve ardından **kaynağı Düzenle** açmak için **kaynağı Düzenle** iletişim kutusu.  
   
-3.  Kaynak seçeneklerini değiştirin.  
+3. Kaynak seçeneklerini değiştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XAML Tasarımcısı’nı kullanarak bir kullanıcı arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

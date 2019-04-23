@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091765"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio'da veri kaynağı olarak nesneleri bağlama
 
@@ -40,25 +40,25 @@ Genellikle, özel nesneleri herhangi bir belirli arabirimleri, Oluşturucular ve
 
 Veri kaynağı olarak nesneleriyle çalışırken, uygulama mantığını uygulamak için sayısız yollar olsa da, SQL var. Visual Studio tarafından oluşturulan TableAdapter nesneleri kullanılarak basitleştirilebilir birkaç standart işlem veritabanlarıdır. Bu sayfa, TableAdapter'ı kullanarak bu standart işlemleri uygulamak üzere açıklanmaktadır. Bir kılavuz olarak, özel nesneleri oluşturmak için tasarlanmamıştır. Örneğin, genellikle nesnelerinizi ya da uygulamanın mantıksal özgü uygulama bağımsız olarak standart aşağıdaki işlemleri gerçekleştirir:
 
--   Veri nesneleri (genellikle bir veritabanından) yükleme.
+- Veri nesneleri (genellikle bir veritabanından) yükleme.
 
--   Nesne türü belirtilmiş koleksiyonu oluşturuluyor.
+- Nesne türü belirtilmiş koleksiyonu oluşturuluyor.
 
--   Nesneler ekleme ve nesneleri bir koleksiyonundan kaldırılıyor.
+- Nesneler ekleme ve nesneleri bir koleksiyonundan kaldırılıyor.
 
--   Nesne verilerini bir formu kullanıcılara görüntüleniyor.
+- Nesne verilerini bir formu kullanıcılara görüntüleniyor.
 
--   Değiştirme veya bir nesne verileri düzenleme.
+- Değiştirme veya bir nesne verileri düzenleme.
 
--   Veri nesneleri veritabanına geri kaydediliyor.
+- Veri nesneleri veritabanına geri kaydediliyor.
 
 ### <a name="load-data-into-objects"></a>Nesnelerine veri yükleme
 
 Bu örnek için TableAdapter'ı kullanarak, nesneleri verileri yükleyin. Varsayılan olarak, TableAdapter bağdaştırıcıları veritabanından veri getirir ve veri tablolarını doldurmak yöntemleri iki tür oluşturulur.
 
--   `TableAdapter.Fill` Yöntemi, mevcut bir veri tablosu döndürülen verilerle doldurur.
+- `TableAdapter.Fill` Yöntemi, mevcut bir veri tablosu döndürülen verilerle doldurur.
 
--   `TableAdapter.GetData` Yöntemi verilerle doldurulmuş yeni bir veri tablosu döndürür.
+- `TableAdapter.GetData` Yöntemi verilerle doldurulmuş yeni bir veri tablosu döndürür.
 
 Özel nesnelerinizi veri yüklemek için en kolay yolu çağırmaktır `TableAdapter.GetData` yöntemi döndürülen veri tablosundaki satır koleksiyonu aracılığıyla döngü ve her satırdaki değerlerin her nesnesiyle doldurur. Oluşturabileceğiniz bir `GetData` doldurulmuş veri tablosunu TableAdapter bağdaştırıcısına eklenen herhangi bir sorgu için döndüren yöntem.
 

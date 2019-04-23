@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087982"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>İzleme Kullanarak Ayrıntılı Zamanlama Verileri Toplama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54794332"
   
  Araçlar yöntemini aşağıdaki yordamlardan birini kullanarak belirtebilirsiniz:  
   
--   Profil Oluşturma Sihirbazı'nın ilk sayfasında, seçin **izleme**.  
+- Profil Oluşturma Sihirbazı'nın ilk sayfasında, seçin **izleme**.  
   
--   Üzerinde **performans Gezgini** araç penceresindeki **yöntemi** listesinde **izleme**.  
+- Üzerinde **performans Gezgini** araç penceresindeki **yöntemi** listesinde **izleme**.  
   
--   Üzerinde **genel** sayfa seçin performans oturumu Özellikleri iletişim kutusunun **izleme**.  
+- Üzerinde **genel** sayfa seçin performans oturumu Özellikleri iletişim kutusunun **izleme**.  
   
 ## <a name="common-tasks"></a>Ortak Görevler  
  Ek seçenekler belirtebilirsiniz _performans oturumu_**özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:  

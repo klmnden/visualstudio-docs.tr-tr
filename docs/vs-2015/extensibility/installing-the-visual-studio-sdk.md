@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091154"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Visual Studio SDK'sını yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,26 +26,26 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 > [!NOTE]
 >  Yürütülebilir Kurulum, Visual Studio SDK çağrılır **Visual Studio genişletilebilirlik Araçları**.  
   
-1.  Visual Studio 2015 yüklemesini başlatın. Visual Studio Express dışında herhangi bir sürümünü yükleyebilirsiniz.  
+1. Visual Studio 2015 yüklemesini başlatın. Visual Studio Express dışında herhangi bir sürümünü yükleyebilirsiniz.  
   
-2.  İlk ekranda seçin **özel**değil **varsayılan**. **İleri**'ye tıklayın.  
+2. İlk ekranda seçin **özel**değil **varsayılan**. **İleri**'ye tıklayın.  
   
-3.  Özel özellikler ağaç görünümünü görürsünüz. Açık **ortak Araçlar**. Görmelisiniz **Visual Studio genişletilebilirlik Araçları** .  
+3. Özel özellikler ağaç görünümünü görürsünüz. Açık **ortak Araçlar**. Görmelisiniz **Visual Studio genişletilebilirlik Araçları** .  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4.  Denetleme **Visual Studio genişletilebilirlik Araçları** , ardından **sonraki** yüklemeye devam edin.  
+4. Denetleme **Visual Studio genişletilebilirlik Araçları** , ardından **sonraki** yüklemeye devam edin.  
   
 ## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Visual Studio yüklendikten sonra Visual Studio SDK'sını yükleme  
  Visual Studio yüklemenizin tamamladıktan sonra Visual Studio SDK'sı yüklemeye karar verirseniz, aşağıdaki yordamı izlemeniz gerekir:  
   
-1.  Git **Denetim Masası / programları / programlar ve Özellikler**ve Ara **Visual Studio 2015**. Visual Studio SDK'sı için Visual Studio 2015 Express dışında herhangi bir sürümünü yükleyebilirsiniz.  
+1. Git **Denetim Masası / programları / programlar ve Özellikler**ve Ara **Visual Studio 2015**. Visual Studio SDK'sı için Visual Studio 2015 Express dışında herhangi bir sürümünü yükleyebilirsiniz.  
   
-2.  Sağ **Visual Studio 2015**ve ardından **değişiklik**. Yükleme sayfası görmeniz gerekir.  
+2. Sağ **Visual Studio 2015**ve ardından **değişiklik**. Yükleme sayfası görmeniz gerekir.  
   
-3.  Olarak aynı yordamı izleyin **Visual Studio yüklemesinin bir parçası Visual Studio SDK'sını yükleme** yukarıda.  
+3. Olarak aynı yordamı izleyin **Visual Studio yüklemesinin bir parçası Visual Studio SDK'sını yükleme** yukarıda.  
   
-4.  Tıklayın **Visual Studio genişletilebilirlik Araçları** Visual Studio SDK'yı yüklemek için bağlantı.  
+4. Tıklayın **Visual Studio genişletilebilirlik Araçları** Visual Studio SDK'yı yüklemek için bağlantı.  
   
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Bir çözümü Visual Studio SDK'sını yükleme  
  VSSDK yüklemeden bir genişletilebilirlik projesi bir çözüm açarsanız, Çözüm Gezgini'nde üzerindeki bir vurgulanan bilgi çubuğuna tarafından istenir. Aşağıdaki gibi görünmelidir:  

@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114619"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Nasıl yapılır: Yük testi API'si kullanma
 
@@ -30,27 +30,27 @@ Web performans testleri için eklentileri de oluşturabilirsiniz. Daha fazla bil
 
 ## <a name="to-use-the-loadtesting-namespace"></a>LoadTesting ad alanını kullanmak için
 
-1.  Bir web performansı ve yük testi içeren bir yük testi projesi açın.
+1. Bir web performansı ve yük testi içeren bir yük testi projesi açın.
 
-2.  Visual C# veya Visual Basic kitaplık projesi sınama çözümünüze ekleyin.
+2. Visual C# veya Visual Basic kitaplık projesi sınama çözümünüze ekleyin.
 
-3.  Bir başvuru, sınıf kitaplığı projesi için web performansı ve yük testi projesi ekleyin.
+3. Bir başvuru, sınıf kitaplığı projesi için web performansı ve yük testi projesi ekleyin.
 
-4.  Sınıf kitaplığı projesinde gt;Microsoft.VisualStudio.QualityTools.LoadTestFramework & DLL'ye bir başvuru ekleyin.
+4. Sınıf kitaplığı projesinde gt;Microsoft.VisualStudio.QualityTools.LoadTestFramework & DLL'ye bir başvuru ekleyin.
 
-5.  Sınıf kitaplığı projesinde yer alan sınıf dosyasında, ekleme bir `using` bildirimi <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ad alanı.
+5. Sınıf kitaplığı projesinde yer alan sınıf dosyasında, ekleme bir `using` bildirimi <xref:Microsoft.VisualStudio.TestTools.LoadTesting> ad alanı.
 
-6.  Uygulayan bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> arabirimi.
+6. Uygulayan bir ortak sınıf oluşturun <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> arabirimi.
 
-7.  Projeyi oluşturun.
+7. Projeyi oluşturun.
 
-8.  Yeni Yük testi kullanarak Yük Testi Düzenleyicisi eklentisini ekleyin:
+8. Yeni Yük testi kullanarak Yük Testi Düzenleyicisi eklentisini ekleyin:
 
-    1.  Yük testi kök düğümüne sağ tıklayın ve ardından **Yük Testi Eklentisi Ekle**.
+    1. Yük testi kök düğümüne sağ tıklayın ve ardından **Yük Testi Eklentisi Ekle**.
 
-    2.  **Yük Testi Eklentisi Ekle** iletişim kutusu görüntülenir.
+    2. **Yük Testi Eklentisi Ekle** iletişim kutusu görüntülenir.
 
-    3.  İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
+    3. İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
 
         > [!NOTE]
         > Eklentilerinizi istediğiniz sayıda özelliği üzerinden kullanıma sunabilirsiniz. Bunları yalnızca genel, ayarlanabilir ve tam sayı, Boole veya dize gibi bir temel türden yapın. Yük Testi Eklentisi özelliklerini de düzenleyebilirsiniz daha sonra kullanarak **özellikleri** penceresi.

@@ -12,12 +12,12 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12701abf66d49a3b462502700b3b57933369b6e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085681"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Hata Ayıklayıcı Genişletilebilirliği ile Çalışmaya Başlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "54760819"
   
  En iyi şekilde kullanmanız [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], aşağıdakiler konusunda bilgi sahibi olmanız gerekir:  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Tümleşik geliştirme ortamı (IDE)  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Tümleşik geliştirme ortamı (IDE)  
   
--   C++ programlama dili  
+- C++ programlama dili  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Hata Ayıklayıcıyı Genişletmek için Yol Haritası](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114372"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları 
 >  Proje sistemi bir bütünleştirilmiş kod başvurusu bulduğunda, sistem aşağıdaki sırayla şu konumlarda bakarak başvuru çözer:  
 > 
 > 1. Proje klasörü. Proje klasörü dosyaları görünür **Çözüm Gezgini** olduğunda **tüm dosyaları göster** geçerli değildir.  
->    2.  İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.  
->    3.  Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.  
->    4.  Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)  
+>    2. İçinde belirtilen klasörler **başvuru yolları** iletişim kutusu.  
+>    3. Dosyaları görüntüleme klasörleri **Başvuru Ekle** iletişim kutusu.  
+>    4. Projenin obj klasörü. (Bir veya daha fazla derlemeleri projenize bir COM başvurusu eklediğinizde, projenin obj klasöre eklenebilir.)  
   
  **Başvurular**  
  Bu liste, projede kullanılan tüm başvuruları gösterir veya kullanılmayan.  
@@ -80,11 +80,11 @@ Kullanım **başvuruları** sayfasının **Proje Tasarımcısı** başvuruları 
  **Güncelleştirme kullanıcı içeri aktarma**  
  Ad alanları listesinde bir kullanıcı tarafından belirtilen ad alanı seçin, içinde değiştirmek istediğiniz adı yazın **içeri aktarılan ad alanlarını** kutusuna ve ardından yeni bir ad alanına değiştirmek için bu düğmeye tıklayın. Düğme seçili ad alanı kullanılarak listeye eklenen bir ise etkinleştirilmeden **kullanıcı içeri aktarma eklemek** düğmesi. Ekleyebilirsiniz:  
   
--   Sınıf veya ad alanları gibi <xref:System.Math?displayProperty=fullName>.  
+- Sınıf veya ad alanları gibi <xref:System.Math?displayProperty=fullName>.  
   
--   Diğer adlı alır, gibi `VB=Microsoft.VisualBasic`.  
+- Diğer adlı alır, gibi `VB=Microsoft.VisualBasic`.  
   
--   XML ad alanları gibi `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- XML ad alanları gibi `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [NIB nasıl yapılır: Başvuru Ekle iletişim kutusunu kullanarak başvuruları kaldırın veya ekleyin](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

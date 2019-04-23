@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111746"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Harfleri yerelleştirilmiş parametreler olarak göndermeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "54785425"
 
  Bu uyarı, bir değişmez dize değeri olarak bir parametre veya özellik geçirilir ve bir veya daha fazla aşağıdaki durumlarda true olduğunda ortaya çıkar:
 
--   <xref:System.ComponentModel.LocalizableAttribute> Özniteliği parametre ya da özelliğin true.
+- <xref:System.ComponentModel.LocalizableAttribute> Özniteliği parametre ya da özelliğin true.
 
--   Parametresi veya özellik adı "Metin", "İleti" veya "Başlık" içeriyor.
+- Parametresi veya özellik adı "Metin", "İleti" veya "Başlık" içeriyor.
 
--   "Value" veya "biçim" Console.Write veya Console.WriteLine yönteme geçirilen dize parametresi adıdır.
+- "Value" veya "biçim" Console.Write veya Console.WriteLine yönteme geçirilen dize parametresi adıdır.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Kaynak koduna gömülü dize değişmez değerleri yerelleştirmek zordur.

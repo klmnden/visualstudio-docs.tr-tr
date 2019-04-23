@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086409"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Kodlanmış web performans testi oluşturma
 
@@ -29,13 +29,13 @@ Web performans testleri, web uygulamanızla göz atarak kaydedilir. Testler, bir
 
 ## <a name="generate-a-coded-web-performance-test"></a>Kodlanmış web performans testi üret
 
-1.  Web performans testi oluşturmadıysanız bkz [web performans testi](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Web performans testi oluşturmadıysanız bkz [web performans testi](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Kodlanmış test üretin.
+2. Kodlanmış test üretin.
 
      ![Kodlanmış web performans testi üret](../test/media/web_test_coded_generate.png)
 
-3.  Testi adlandırın.
+3. Testi adlandırın.
 
      ![Kodlanmış web performans testi için bir ad girin](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Web performans testleri, web uygulamanızla göz atarak kaydedilir. Testler, bir
 
      Kodda, GetRequestEnumerator() yönteminde C# veya Visual Basic uygulamasındaki Run() yönteminde yönteminde olduğu her doğrulama kuralının ve web isteğinin bulunduğunu görebilirsiniz.
 
-4.  Bazı basit kod eklemenin nasıl yapılacağını göstermek için yöntemin ve son web isteğine ilişkin koddan sonra aşağı kaydırın ve aşağıdaki kodu ekleyin:
+4. Bazı basit kod eklemenin nasıl yapılacağını göstermek için yöntemin ve son web isteğine ilişkin koddan sonra aşağı kaydırın ve aşağıdaki kodu ekleyin:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Web performans testleri, web uygulamanızla göz atarak kaydedilir. Testler, bir
     End If
     ```
 
-5.  Özel kodunuzun derlendiğinden emin doğrulamak için çözümü oluşturun.
+5. Özel kodunuzun derlendiğinden emin doğrulamak için çözümü oluşturun.
 
-6.  Testi çalıştırın.
+6. Testi çalıştırın.
 
      ![Kodlanmış web performans testini çalıştırma](../test/media/web_test_coded_generate_run.png)
 

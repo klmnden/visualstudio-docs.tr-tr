@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116179"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Visual Studio'da Tam Zamanında Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
 
 - Olmalıdır [Visual Studio'nun yüklü](https://visualstudio.microsoft.com/vs/older-downloads/) hata hakkında ayrıntılı bilgi görüntülemek ve hata ayıklamak deneyin. Bkz: [kullanarak JIT](#BKMK_Using_JIT) ayrıntılı yönergeler için. Hatayı çözün ve uygulama düzeltme, hatayı gidermek için uygulama sahibine başvurun.
 
-##  <a name="BKMK_Enabling"></a> Etkinleştirme veya devre dışı bırakma, Just-ın-Time hata ayıklama
+## <a name="BKMK_Enabling"></a> Etkinleştirme veya devre dışı bırakma, Just-ın-Time hata ayıklama
  Etkinleştirebilir veya tam zamanında Visual Studio'dan hata ayıklama devre dışı **Araçlar / Seçenekler** iletişim kutusu.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Etkinleştirme veya devre dışı bırakma, Just-ın-Time hata ayıklama
@@ -73,36 +73,36 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Kayıt defterini düzenleyerek devre dışı bırakma, Just-ın-Time hata ayıklama
 
-1.  Üzerinde **Başlat** menü, arayın ve çalıştırın `regedit.exe`
+1. Üzerinde **Başlat** menü, arayın ve çalıştırın `regedit.exe`
 
-2.  İçinde **Kayıt Defteri Düzenleyicisi'ni** penceresinde bulun ve izleme kayıt defteri girişleri silin:
+2. İçinde **Kayıt Defteri Düzenleyicisi'ni** penceresinde bulun ve izleme kayıt defteri girişleri silin:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger
 
-3.  Bilgisayarınızı bir 64-bit işletim sistemi çalıştırıyorsa aşağıdaki kayıt defteri girdilerini de silin:
+3. Bilgisayarınızı bir 64-bit işletim sistemi çalıştırıyorsa aşağıdaki kayıt defteri girdilerini de silin:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
 
-4.  Yanlışlıkla silmemek veya herhangi bir kayıt defteri anahtarı değiştirmek için dikkatli olun.
+4. Yanlışlıkla silmemek veya herhangi bir kayıt defteri anahtarı değiştirmek için dikkatli olun.
 
-5.  Kapat **Kayıt Defteri Düzenleyicisi'ni** penceresi.
+5. Kapat **Kayıt Defteri Düzenleyicisi'ni** penceresi.
 
 > [!NOTE]
 >  Tam zamanında hata ayıklama için bir sunucu tarafı uygulama devre dışı bırakmaya çalıştığınız ve bu adımlar sorunu yok, IIS uygulama ayarlarında, sunucu tarafı hata ayıklamayı kapatmanız ve yeniden deneyin.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Etkinleştirme Just-ın-Time hata ayıklama için bir Windows formu
 
-1.  Varsayılan olarak, Windows Forms uygulamaları program, kurtarabilirsiniz durumunda çalışmaya devam etmesini sağlar bir üst düzey özel durum işleyicisine sahiptir. Örneğin, Windows Forms uygulaması işlenmeyen bir özel durum oluşturursa, aşağıdakine benzer bir iletişim kutusu görürsünüz:
+1. Varsayılan olarak, Windows Forms uygulamaları program, kurtarabilirsiniz durumunda çalışmaya devam etmesini sağlar bir üst düzey özel durum işleyicisine sahiptir. Örneğin, Windows Forms uygulaması işlenmeyen bir özel durum oluşturursa, aşağıdakine benzer bir iletişim kutusu görürsünüz:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Bir Windows Forms uygulamasına etkinleştirme Just-ın-Time hata ayıklama için aşağıdaki ek adımları gerçekleştirmeniz gerekir:
 
-2.  Ayarlama `jitDebugging` değerini `true` içinde `system.windows.form` machine.config bölümünde veya  *\<uygulama adı >*. exe.config dosyası:
+2. Ayarlama `jitDebugging` değerini `true` içinde `system.windows.form` machine.config bölümünde veya  *\<uygulama adı >*. exe.config dosyası:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Visual Studio Just-ın-Time gördüğünüzde sürecektir eylemleri hata ayıkla
     </configuration>
     ```
 
-3.  Bir C++ Windows Form uygulamasında de ayarlamalısınız `DebuggableAttribute` .config dosyasında ya da kodunuzda. Derleme yaparsanız [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) ve olmadan [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), derleyici bu özniteliği sizin için ayarlar. Ancak, bir yayın olmayan yapılandırmada yapı hata ayıklamak istiyorsanız, bu kendiniz ayarlamanız gerekir. Bunu, aşağıdaki satırı uygulamanızın AssemblyInfo.cpp dosyasına olduğunuz ekleyerek yapabilirsiniz:
+3. Bir C++ Windows Form uygulamasında de ayarlamalısınız `DebuggableAttribute` .config dosyasında ya da kodunuzda. Derleme yaparsanız [/zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) ve olmadan [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), derleyici bu özniteliği sizin için ayarlar. Ancak, bir yayın olmayan yapılandırmada yapı hata ayıklamak istiyorsanız, bu kendiniz ayarlamanız gerekir. Bunu, aşağıdaki satırı uygulamanızın AssemblyInfo.cpp dosyasına olduğunuz ekleyerek yapabilirsiniz:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Just-ın-Time ile ilişkili aşağıdaki hata iletilerinden görebileceğiniz hata ayıklama.
 
--   **Kilitlenen işleme iliştirilemiyor. Belirtilen program Windows veya bir MS-DOS programı değil.**
+- **Kilitlenen işleme iliştirilemiyor. Belirtilen program Windows veya bir MS-DOS programı değil.**
 
      Başka bir kullanıcı olarak çalışan bir işleme eklemeyi denediğinizde, bu hata oluşur.
 
      Bu soruna geçici bir çözüm, Visual Studio, başlangıç açmak **iliştirme** iletişim kutusundan **hata ayıklama** menü ve hata ayıklamak istediğiniz bulma işlemi **kullanılabilir işlemler**listesi. İşlemin adını bilmiyorsanız, bakmak **Visual Studio anlık hata ayıklayıcısı** iletişim ve Not işlem kimliği İşlemi seçin **kullanılabilir işlemler** listelemek ve tıklayın **iliştirme**. İçinde **Visual Studio anlık hata ayıklayıcısı** iletişim kutusunda, tıklayın **Hayır** iletişim kutusunu kapatın.
 
--   **Hiçbir kullanıcı giriş yapmadığından hata ayıklayıcı başlatılamadı.**
+- **Hiçbir kullanıcı giriş yapmadığından hata ayıklayıcı başlatılamadı.**
 
      Just-ın-Time olduğunda bu hata oluşur çalışır bir makinede Visual Studio'yu başlatmak hata ayıklama konsolda oturum açmış hiçbir kullanıcı olduğu. Hiçbir kullanıcı oturum açmadığından, Just-ın-Time görüntülemek için bir kullanıcı oturumu var. hata ayıklama iletişim kutusu.
 
      Bu sorunu gidermek için makinede oturum açın.
 
--   **Sınıf kayıtlı değil.**
+- **Sınıf kayıtlı değil.**
 
      Bu hata, hata ayıklayıcının, büyük olasılıkla bir yükleme sorunu nedeniyle kayıtlı olmayan bir COM sınıfı oluşturmayı denediğini gösterir.
 

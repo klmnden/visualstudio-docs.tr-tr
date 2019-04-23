@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 1: İçin açık kaynak denetiminden Ekle | Microsoft Docs'
+title: 'Test Alanı 1: İçin açık kaynak denetiminden Ekle | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083523"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Test alanı 1: / Açık kaynak denetiminden Ekle
+# <a name="test-area-1-add-toopen-from-source-control"></a>Test Alanı 1: / Açık kaynak denetiminden Ekle
 Bu kaynak denetimi eklentisi test çözümlerin veya projelerin kaynak denetimi altındaki yerleştirmek ve onları kaynak denetiminden alma alan kapsar.
 
 ## <a name="command-menu-access"></a>Komut menü erişimi
@@ -41,15 +41,15 @@ Bu kaynak denetimi eklentisi test çözümlerin veya projelerin kaynak denetimi 
 
 ## <a name="expected-behavior"></a>Beklenen davranış
 
--   Her desteklenen proje türü için bir kullanıcı, "Ekle" ve "kaynak denetimi açık" olmalıdır.
+- Her desteklenen proje türü için bir kullanıcı, "Ekle" ve "kaynak denetimi açık" olmalıdır.
 
--   Karşılık gelen kaynak denetimi için bir proje eklendiğinde \< *ProjectName*> .vspscc dosyalarını _ıgnorablefilesınprojectfolder (Proje ipucu dosyası) oluşturulur. Bu dışlama dosya listesi ve bağlantı bilgilerini içerir. Projeye özel bilgiler içerdiği için bu dosyayı silmeyin.
+- Karşılık gelen kaynak denetimi için bir proje eklendiğinde \< *ProjectName*> .vspscc dosyalarını _ıgnorablefilesınprojectfolder (Proje ipucu dosyası) oluşturulur. Bu dışlama dosya listesi ve bağlantı bilgilerini içerir. Projeye özel bilgiler içerdiği için bu dosyayı silmeyin.
 
--   Kaynak denetimi için karşılık gelen bir çözüm eklendiğinde \< *SolutionName*> .vssscc (üçlü S) dosyası oluşturulur. Metin dosyası bir proje ipucu dosyasına benzer dışlama dosya listesi ve bağlantı bilgilerini içerir. Bu dosya geçicidir ve yalnızca kaynak denetim veritabanında bulunmuyor.
+- Kaynak denetimi için karşılık gelen bir çözüm eklendiğinde \< *SolutionName*> .vssscc (üçlü S) dosyası oluşturulur. Metin dosyası bir proje ipucu dosyasına benzer dışlama dosya listesi ve bağlantı bilgilerini içerir. Bu dosya geçicidir ve yalnızca kaynak denetim veritabanında bulunmuyor.
 
--   Kaynak denetiminden bir çözüm açıldığında bir \< *SolutionName*> yalnızca kaynak denetim veritabanında var olan .vsscc (çift S) dosyası yerel olarak geçici bir dosya olarak oluşturulur. Bu dosya çözüm bağlantı klasörden çözüm dosyasının yolunu içerir. Bu dosya geçicidir ve "Açık kaynak denetimi" işlemi tamamlandığında yerel kopya silinir.
+- Kaynak denetiminden bir çözüm açıldığında bir \< *SolutionName*> yalnızca kaynak denetim veritabanında var olan .vsscc (çift S) dosyası yerel olarak geçici bir dosya olarak oluşturulur. Bu dosya çözüm bağlantı klasörden çözüm dosyasının yolunu içerir. Bu dosya geçicidir ve "Açık kaynak denetimi" işlemi tamamlandığında yerel kopya silinir.
 
--   Kaynak denetimi için bir proje eklendikten sonra (kullanıma, alma vb.) üzerindeki herhangi bir kaynak denetimi eylemlerini gerçekleştirebilirsiniz.
+- Kaynak denetimi için bir proje eklendikten sonra (kullanıma, alma vb.) üzerindeki herhangi bir kaynak denetimi eylemlerini gerçekleştirebilirsiniz.
 
 ## <a name="test-cases"></a>Test çalışmaları
  Belirli test çalışmaları Ekle şunlardır / açık kaynak denetimine test alanından.

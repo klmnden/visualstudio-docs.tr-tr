@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079350"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly öğesi (Visual Studio şablonları)
 Projelere derlemeye bir başvuru eklemek için şablonu kullanan bir derlemeyle ilgili bilgileri belirtir.
@@ -52,7 +52,7 @@ Projelere derlemeye bir başvuru eklemek için şablonu kullanan bir derlemeyle 
 
  Bu metin, öğe şablonu örneği oluşturulduğunda bir projeye Eklenecek derlemeyi belirtir. Bu derleme adı aşağıdaki yollardan birinde belirtilmelidir:
 
--   Tam derleme adı. Örneğin:
+- Tam derleme adı. Örneğin:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ Projelere derlemeye bir başvuru eklemek için şablonu kullanan bir derlemeyle 
     </Assembly>
     ```
 
--   Basit metin başvuru olarak. Örneğin:
+- Basit metin başvuru olarak. Örneğin:
 
     ```
     <Assembly> System </Assembly>

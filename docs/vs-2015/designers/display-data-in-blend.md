@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 168e136f3a50c5055a9b9fb6d05925dac3586a23
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080871"
 ---
 # <a name="display-data-in-blend"></a>Blend'de verileri görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Sayfa düzenini özelleştirme olarak, örnek veri Tasarımcısı'nda görüntü
   
  **Bu konuda:**  
   
--   [Örnek veri üretme](#Scratch)  
+- [Örnek veri üretme](#Scratch)  
   
--   [Bir sınıftan örnek veri üretme](#Existing)  
+- [Bir sınıftan örnek veri üretme](#Existing)  
   
--   [WPF uygulamasında canlı verileri göster](#LiveWPF)  
+- [WPF uygulamasında canlı verileri göster](#LiveWPF)  
   
--   [Bir Store veya telefon uygulaması canlı verileri göster](#LiveStore)  
+- [Bir Store veya telefon uygulaması canlı verileri göster](#LiveStore)  
   
-##  <a name="Scratch"></a> Örnek veri üretme  
+## <a name="Scratch"></a> Örnek veri üretme  
  Örnek verileri oluşturmak için bir XAML belgesi açın. İçinde **veri** panelinde öğesini **örnek veri oluşturma**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") düğmesine ve ardından  **Yeni örnek veri**.  
   
  Verilerinizi yapısını tanımlayan **veri** paneli ve herhangi bir sayfa UI öğelerine bağlayın.  
@@ -46,7 +46,7 @@ Sayfa düzenini özelleştirme olarak, örnek veri Tasarımcısı'nda görüntü
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bazı veri bağlaması Blend ile karıştırma](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="Existing"></a> Bir sınıftan örnek veri üretme  
+## <a name="Existing"></a> Bir sınıftan örnek veri üretme  
  Verilerinizin yapısını açıklayan sınıflar zaten oluşturduysanız, bunları örnek veriler üretebilir.  
   
  Bir sınıftan örnek veri oluşturmak için bir XAML belgesi açın ve ardından **veri** panelinde, tıklayın **örnek veri oluşturma** ![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png " 30540d76-7256-43ce-b5d9-4b2edf3d339f") düğmesine ve ardından **sınıftan örnek veri Oluştur**.  
@@ -55,10 +55,10 @@ Sayfa düzenini özelleştirme olarak, örnek veri Tasarımcısı'nda görüntü
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bazı veri bağlaması Blend ile karıştırma](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="LiveWPF"></a> WPF uygulamasında canlı verileri göster  
+## <a name="LiveWPF"></a> WPF uygulamasında canlı verileri göster  
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bir XML veri kaynağı oluşturma](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
-##  <a name="LiveStore"></a> Bir Store veya telefon uygulaması canlı verileri göster  
+## <a name="LiveStore"></a> Bir Store veya telefon uygulaması canlı verileri göster  
  Bkz: [çalışma ile verileri ve dosyaları (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

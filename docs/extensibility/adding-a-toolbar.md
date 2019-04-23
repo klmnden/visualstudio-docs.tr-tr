@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6426572ff346debba32029024a96c9cc5af52ff4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082301"
 ---
 # <a name="add-a-toolbar"></a>Araç çubuğu ekleme
 Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
@@ -35,7 +35,7 @@ Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
 
 ## <a name="create-a-toolbar-for-the-ide"></a>IDE için bir araç çubuğu oluştur
 
-1.  İçinde *ToolbarTestCommandPackage.vsct*, semboller bölümüne bakın. GuidToolbarTestCommandPackageCmdSet adlı GuidSymbol öğesi içinde bildirimler için bir araç çubuğu ve araç çubuğu grubu, aşağıdaki şekilde ekleyin.
+1. İçinde *ToolbarTestCommandPackage.vsct*, semboller bölümüne bakın. GuidToolbarTestCommandPackageCmdSet adlı GuidSymbol öğesi içinde bildirimler için bir araç çubuğu ve araç çubuğu grubu, aşağıdaki şekilde ekleyin.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -43,7 +43,7 @@ Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
 
     ```
 
-2.  Komutları bölümünün üstünde bir menü bölümü oluşturun. Bir menü öğesi menülerini bölümüne araç tanımlamak için ekleyin.
+2. Komutları bölümünün üstünde bir menü bölümü oluşturun. Bir menü öğesi menülerini bölümüne araç tanımlamak için ekleyin.
 
     ```xml
     <Menus>
@@ -60,7 +60,7 @@ Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
 
      Araç Çubukları alt menüler gibi iç içe olamaz. Bu nedenle, bir üst grup atama gerekmez. Ayrıca, kullanıcı araç çubukları taşıyabilirsiniz çünkü bir öncelikler gerekmez. Genellikle, ilk araç çubuğu yerleşimini programlı olarak tanımlanır, ancak kullanıcı tarafından sonraki değişiklikleri kalıcı.
 
-3.  İçinde [grupları](../extensibility/groups-element.md) bölümünde, mevcut Grup girişten sonra tanımlayan bir [grubu](../extensibility/group-element.md) araç için komutları içeren öğe.
+3. İçinde [grupları](../extensibility/groups-element.md) bölümünde, mevcut Grup girişten sonra tanımlayan bir [grubu](../extensibility/group-element.md) araç için komutları içeren öğe.
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -69,7 +69,7 @@ Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
     </Group>
     ```
 
-4.  Araç çubuğunda görünen bir düğme olun. Düğmeler bölümünde, üst bloğu düğmenin araç değiştirin. Sonuçta elde edilen düğmesi bloğu gibi görünmelidir:
+4. Araç çubuğunda görünen bir düğme olun. Düğmeler bölümünde, üst bloğu düğmenin araç değiştirin. Sonuçta elde edilen düğmesi bloğu gibi görünmelidir:
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,11 +83,11 @@ Bu izlenecek yol, araç Visual Studio IDE ekleme işlemi gösterilmektedir.
 
      Araç çubuğu hiçbir komut varsa, varsayılan olarak, bu görünmüyor.
 
-5.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.
+5. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görüntülenmesi gerekir.
 
-6.  Araç çubukları listesini almak için Visual Studio menü çubuğunun sağ tıklayın. Seçin **Test araç**.
+6. Araç çubukları listesini almak için Visual Studio menü çubuğunun sağ tıklayın. Seçin **Test araç**.
 
-7.  Şimdi, simge dosyaları simge Bul sağındaki araç görmeniz gerekir. Simgeye tıkladığında bildiren bir ileti kutusu görmeniz gerekir **ToolbarTestCommandPackage. İçinde IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Şimdi, simge dosyaları simge Bul sağındaki araç görmeniz gerekir. Simgeye tıkladığında bildiren bir ileti kutusu görmeniz gerekir **ToolbarTestCommandPackage. İçinde IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)

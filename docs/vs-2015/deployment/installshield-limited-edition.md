@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080637"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ InstallShield Limited Edition'ı kullanarak, kurulum dosyası oluşturabilir ve 
   
 ### <a name="to-enable-installshield-limited-edition"></a>InstallShield Limited Edition'ı etkinleştirmek için  
   
-1.  Menü çubuğunda, **dosya**, **yeni**, **proje**.  
+1. Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **diğer proje türleri** düğümünü seçip **Kurulum ve dağıtım** düğümü.  
+2. İçinde **yeni proje** iletişim kutusunda **diğer proje türleri** düğümünü seçip **Kurulum ve dağıtım** düğümü.  
   
-3.  Şablon listesinde **InstallShield Limited Edition'ı Etkinleştir**ve ardından **Tamam** düğmesi.  
+3. Şablon listesinde **InstallShield Limited Edition'ı Etkinleştir**ve ardından **Tamam** düğmesi.  
   
-4.  Açılır tarayıcı penceresinde yönergeleri okuyun ve ardından **indirme web sitesine gidin** bağlantı.
+4. Açılır tarayıcı penceresinde yönergeleri okuyun ve ardından **indirme web sitesine gidin** bağlantı.

@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 613a1ac89242daeee9b6647f63946eae23c9af1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079285"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>JavaScript IntelliSense için XML belge açıklamaları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54802064"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Bir JavaScript işlevi için XML belge açıklamaları oluşturma  
   
--   İşlevinde [ \<Özet >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), ve [ \<döndürür >](../ide/returns-javascript.md) öğeleri ve her bir öğeyle koyun üç (/ / /) işaretleri eğik çizgi.  
+- İşlevinde [ \<Özet >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), ve [ \<döndürür >](../ide/returns-javascript.md) öğeleri ve her bir öğeyle koyun üç (/ / /) işaretleri eğik çizgi.  
   
     > [!NOTE]
     >  Her öğe, tek bir satırda olmalıdır.  
@@ -52,7 +52,7 @@ ms.locfileid: "54802064"
     }  
     ```  
   
--   XML belge açıklamaları görüntülemek için adı ve açma parantezi aşağıdaki örnekte olduğu gibi XML belgeleri yorumları ile işaretlenmiş bir işlevin yazın:  
+- XML belge açıklamaları görüntülemek için adı ve açma parantezi aşağıdaki örnekte olduğu gibi XML belgeleri yorumları ile işaretlenmiş bir işlevin yazın:  
   
     ```javascript  
     var areaVal = getArea(  
@@ -62,7 +62,7 @@ ms.locfileid: "54802064"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>Bir JavaScript alan için XML belge açıklamaları oluşturma  
   
--   Bir oluşturucu işlevin veya nesnenin tanımında ekleme bir [ \<alan >](../ide/field-javascript.md) öğesi öncesinde üç eğik çizgi işareti (/ / /).  
+- Bir oluşturucu işlevin veya nesnenin tanımında ekleme bir [ \<alan >](../ide/field-javascript.md) öğesi öncesinde üç eğik çizgi işareti (/ / /).  
   
      Aşağıdaki örnek kullanımını gösterir `<field>` öğesinde bir oluşturucu işlevi. Diğer örnekler için [ \<alan >](../ide/field-javascript.md).  
   
@@ -73,13 +73,13 @@ ms.locfileid: "54802064"
     }  
     ```  
   
--   XML belge açıklamaları görüntülemek için aşağıdaki örnekteki gibi XML belgeleri yorumları olarak işaretlenmiş işlev oluşturucu kullanılarak bir nesne oluşturun.  
+- XML belge açıklamaları görüntülemek için aşağıdaki örnekteki gibi XML belgeleri yorumları olarak işaretlenmiş işlev oluşturucu kullanılarak bir nesne oluşturun.  
   
     ```javascript  
     var eng = new Engine();  
     ```  
   
--   Sonraki satırda nesne ve alan için IntelliSense bilgilerini göstermek için bir nokta adını yazın.  
+- Sonraki satırda nesne ve alan için IntelliSense bilgilerini göstermek için bir nokta adını yazın.  
   
     ```javascript  
     eng.  
@@ -87,7 +87,7 @@ ms.locfileid: "54802064"
   
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>XML belge açıklamaları için aşırı yüklenmiş bir işlev oluşturmak için  
   
-1.  İşlevinde, bir [ \<imza >](../ide/signature-javascript.md) her aşırı yükleme için öğesi. Bu öğeler, gibi diğer öğeleri ekleyin `<summary>`, `<param>`, ve `<returns>`, önceki üç eğik çizgi işareti (/ / /) her bir öğe.  
+1. İşlevinde, bir [ \<imza >](../ide/signature-javascript.md) her aşırı yükleme için öğesi. Bu öğeler, gibi diğer öğeleri ekleyin `<summary>`, `<param>`, ve `<returns>`, önceki üç eğik çizgi işareti (/ / /) her bir öğe.  
   
      Aşağıdaki örnek, aşırı yüklenmiş bir JavaScript işlevi gösterir. Bu örnekte, aşırı parametre türüne göre farklılık gösterir.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "54802064"
     }  
     ```  
   
-2.  XML belge açıklamaları görüntülemek için adı ve aşağıdaki örnekte olduğu gibi XML belgeleri yorumları ile işaretlenmiş işlevi ait sol ayraçtan yazın:  
+2. XML belge açıklamaları görüntülemek için adı ve aşağıdaki örnekte olduğu gibi XML belgeleri yorumları ile işaretlenmiş işlevi ait sol ayraçtan yazın:  
   
     ```javascript  
     calc(  
@@ -115,7 +115,7 @@ ms.locfileid: "54802064"
   
 ### <a name="to-create-localized-intellisense"></a>Yerelleştirilmiş IntelliSense oluşturmak için  
   
-1.  Belge açıklamaları OpenAjax MessageBundle biçime sahip bir XML dosyası oluşturun.  
+1. Belge açıklamaları OpenAjax MessageBundle biçime sahip bir XML dosyası oluşturun.  
   
     > [!IMPORTANT]
     >  MessageBundle önerilen bir biçimidir. Bu biçim, Microsoft AJAX veya .winmd dosyalarında desteklenmiyor. Alternatif kullanma hakkında bilgi için `VSDoc` biçimlendirmek için bkz: [ \<loc >](../ide/loc-javascript.md).  
@@ -131,14 +131,14 @@ ms.locfileid: "54802064"
   
     ```  
   
-2.  .Js dosyanıza aşağıdaki kodu ekleyin. `<loc>` Öğesi herhangi bir betik önce bildirilmelidir ve olarak aynı kullanım kurallara `<reference>` öğesi. Daha fazla bilgi için [JavaScript IntelliSense](../ide/javascript-intellisense.md) ve [ \<loc >](../ide/loc-javascript.md).  
+2. .Js dosyanıza aşağıdaki kodu ekleyin. `<loc>` Öğesi herhangi bir betik önce bildirilmelidir ve olarak aynı kullanım kurallara `<reference>` öğesi. Daha fazla bilgi için [JavaScript IntelliSense](../ide/javascript-intellisense.md) ve [ \<loc >](../ide/loc-javascript.md).  
   
     ```javascript  
     /// <loc filename="messageFilename.xml" format="messagebundle"/>  
   
     ```  
   
-3.  XML belgeleri öğelerini ve varsayılan açıklamaları .js dosyanıza ekleyin. Ayarlama `locid` öznitelik değerleri karşılık gelen eşleşecek şekilde `name` öznitelik değerlerini sepet dosyasından. Varsa, varsayılan açıklamaları yerelleştirilmiş IntelliSense bilgisi değiştirilecek.  
+3. XML belgeleri öğelerini ve varsayılan açıklamaları .js dosyanıza ekleyin. Ayarlama `locid` öznitelik değerleri karşılık gelen eşleşecek şekilde `name` öznitelik değerlerini sepet dosyasından. Varsa, varsayılan açıklamaları yerelleştirilmiş IntelliSense bilgisi değiştirilecek.  
   
     ```javascript  
     function add(a,b)   
@@ -150,7 +150,7 @@ ms.locfileid: "54802064"
   
     ```  
   
-4.  XML belge açıklamaları görüntülemek için adını ve parantez işlev için aşağıdaki örnekte olduğu gibi yazın:  
+4. XML belge açıklamaları görüntülemek için adını ve parantez işlev için aşağıdaki örnekte olduğu gibi yazın:  
   
     ```javascript  
     add(  

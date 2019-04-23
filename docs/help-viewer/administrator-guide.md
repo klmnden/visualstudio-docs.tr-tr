@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078661"
 ---
 # <a name="help-viewer-administrator-guide"></a>Yardım Görüntüleyicisi Yönetici Kılavuzu
 
@@ -45,13 +45,13 @@ Hakkında daha fazla bilgi için *HlpCtntMgr.exe* komut satırı sözdizimi, bkz
 
 Gereksinimler:
 
--   İstemci bilgisayarların Internet'e erişimi olmalıdır.
+- İstemci bilgisayarların Internet'e erişimi olmalıdır.
 
--   Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.
+- Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.
 
 Uyarılar:
 
--   Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.
+- Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.
 
 ### <a name="example"></a>Örnek
 
@@ -59,13 +59,13 @@ Aşağıdaki örnek, Visual Studio için İngilizce içeriği bir istemci bilgis
 
 #### <a name="to-install-english-content-from-the-internet"></a>Internet'ten İngilizce içeriği yüklemek için
 
-1.  Seçin **Başlat** seçip **çalıştırma**.
+1. Seçin **Başlat** seçip **çalıştırma**.
 
-2.  Aşağıdakileri yazın:
+2. Aşağıdakileri yazın:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  Tuşuna **girin**.
+3. Tuşuna **girin**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>İstemci bilgisayarlarda önceden yüklenmiş yerel Yardım içeriğini dağıtma
 
@@ -73,16 +73,16 @@ Aşağıdaki örnek, Visual Studio için İngilizce içeriği bir istemci bilgis
 
 Gereksinimler:
 
--   İçerik kümesini yüklediğiniz bilgisayarın internet erişimi olmalıdır.
+- İçerik kümesini yüklediğiniz bilgisayarın internet erişimi olmalıdır.
 
--   Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.
+- Kullanıcılar, güncelleştirme, ekleme veya yüklendikten sonra yerel Yardım içeriğini kaldırmak için yönetici haklarına sahip olmalıdır.
 
     > [!TIP]
     > Kullanıcıların yönetici hakları yoksa, devre dışı bırakmayı önerilir **içeriği Yönet** Yardım Görüntüleyicisi'nde sekmesi. Daha fazla bilgi için [Yardım İçerik Yöneticisi geçersiz kılmaları](../help-viewer/behavior-overrides.md).
 
 Uyarılar:
 
--   Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.
+- Yardım için varsayılan kaynak çevrimiçi olmaya devam edecektir.
 
 ### <a name="create-the-content-set"></a>İçerik kümesi oluşturma
 
@@ -104,23 +104,23 @@ Temel içerik kümesini oluşturabilmeniz için önce hedef bilgisayardaki tüm 
 
 #### <a name="to-download-the-content"></a>İçerik indirmek için
 
-1.  Yardım Görüntüleyici'de seçin **içeriği Yönet** sekmesi.
+1. Yardım Görüntüleyici'de seçin **içeriği Yönet** sekmesi.
 
-2.  Altında **önerilen belgeleri** veya **kullanılabilir belgeler**, indirin ve ardından istediğiniz belge kümelerine gidin **Ekle**.
+2. Altında **önerilen belgeleri** veya **kullanılabilir belgeler**, indirin ve ardından istediğiniz belge kümelerine gidin **Ekle**.
 
-3.  Seçin **güncelleştirme**.
+3. Seçin **güncelleştirme**.
 
 Ardından, istemci bilgisayarlara dağıtılacak şekilde içeriği paketlemek gerekir.
 
 #### <a name="to-package-the-content"></a>İçeriği paketlemek için
 
-1.  Daha sonra dağıtım için içeriğin kopyalanacağı bir klasör oluşturun. Örneğin: *C:\VSHelp*.
+1. Daha sonra dağıtım için içeriğin kopyalanacağı bir klasör oluşturun. Örneğin: *C:\VSHelp*.
 
-2.  Açık *cmd.exe* yönetici izinlerine sahip.
+2. Açık *cmd.exe* yönetici izinlerine sahip.
 
-3.  1. adımda oluşturduğunuz klasöre gidin.
+3. 1. adımda oluşturduğunuz klasöre gidin.
 
-4.  Aşağıdakileri yazın:
+4. Aşağıdakileri yazın:
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ Ardından, istemci bilgisayarlara dağıtılacak şekilde içeriği paketlemek g
 
 ### <a name="deploy-the-content"></a>İçerik dağıtma
 
-1.  Bir ağ paylaşımı oluşturmanız ve Yardım içeriğini bu konuma kopyalayın.
+1. Bir ağ paylaşımı oluşturmanız ve Yardım içeriğini bu konuma kopyalayın.
 
      Örneğin, içeriği kopyalayın *C:\VSHelp* için  *\\\myserver\VSHelp*.
 
-2.  Oluşturma bir *.bat* Yardım içeriği için dağıtım betiği içeren dosya. İstemci büyük olasılıkla bir okuma kilidi itmenin parçası silinen dosyaların hiçbirinde olabileceğinden, güncelleştirmeleri göndermeden önce kapatma istemci olmalıdır. Örneğin:
+2. Oluşturma bir *.bat* Yardım içeriği için dağıtım betiği içeren dosya. İstemci büyük olasılıkla bir okuma kilidi itmenin parçası silinen dosyaların hiçbirinde olabileceğinden, güncelleştirmeleri göndermeden önce kapatma istemci olmalıdır. Örneğin:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ Ardından, istemci bilgisayarlara dağıtılacak şekilde içeriği paketlemek g
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Çalıştırma *.bat* Yardım içeriğini yüklemek istediğiniz makinelerde yerel dosya.
+3. Çalıştırma *.bat* Yardım içeriğini yüklemek istediğiniz makinelerde yerel dosya.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

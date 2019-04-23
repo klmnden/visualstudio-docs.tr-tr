@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117986"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office belgelerinde Dinamik denetimleri kalıcı
 
@@ -76,11 +76,11 @@ VSTO eklentileri denetimler kaldırılır, ancak ActiveX sarmalayıcısının be
 
 Kullanıcı belgeyi yeniden açana zaman silinen Windows Forms denetimleri yeniden oluşturabilirsiniz. Bunu yapmak için çözümünüzün aşağıdaki görevleri gerçekleştirmeniz gerekir:
 
-1.  Belge kaydedildiğinde veya boyutunu, konumu ve durumu denetimleri hakkında bilgi Store. Belge düzeyi özelleştirmesinde, belge verileri önbelleğe veri kaydedebilirsiniz. Bir VSTO eklenti, verileri özel bir XML parçasına belgedeki kaydedebilirsiniz.
+1. Belge kaydedildiğinde veya boyutunu, konumu ve durumu denetimleri hakkında bilgi Store. Belge düzeyi özelleştirmesinde, belge verileri önbelleğe veri kaydedebilirsiniz. Bir VSTO eklenti, verileri özel bir XML parçasına belgedeki kaydedebilirsiniz.
 
-2.  Belge açıldığında bir olay denetimlerinde yeniden oluşturun. Belge düzeyinde projelerde bunu yapabilirsiniz `Sheet` *n* `_Startup` veya `ThisDocument_Startup` olay işleyicileri. Projelerinde, VSTO eklentisi, bu olay işleyicileri yapabileceğiniz <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> veya <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> olayları.
+2. Belge açıldığında bir olay denetimlerinde yeniden oluşturun. Belge düzeyinde projelerde bunu yapabilirsiniz `Sheet` *n* `_Startup` veya `ThisDocument_Startup` olay işleyicileri. Projelerinde, VSTO eklentisi, bu olay işleyicileri yapabileceğiniz <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> veya <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> olayları.
 
-###  <a name="removingActiveX"></a> Bir eklenti ActiveX sarmalayıcısının Kaldır
+### <a name="removingActiveX"></a> Bir eklenti ActiveX sarmalayıcısının Kaldır
 
 Bir VSTO eklentisi kullanarak belgelerine dinamik bir Windows Forms denetimleri ekleme, denetimleri için ActiveX sarmalayıcısının belge içinde sonraki seferde aşağıdaki yollarla açıldığında görüntülenmesini engelleyebilirsiniz.
 

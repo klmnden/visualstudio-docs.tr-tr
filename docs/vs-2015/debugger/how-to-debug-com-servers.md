@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088320"
 ---
 # <a name="how-to-debug-com-servers"></a>Nasıl yapılır: COM sunucularında hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ COM sunucu uygulamalarında hata ayıklama, bir dizi benzersiz olmayan her zaman
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Kapsayıcı bilgileri olmadan bir sunucu uygulamasında hata ayıklamak için  
   
-1.  Sunucunun normal bir uygulama olarak hatalarını ayıklamaya başlayın.  
+1. Sunucunun normal bir uygulama olarak hatalarını ayıklamaya başlayın.  
   
-2.  Kesme noktaları, istediğiniz şekilde ayarlayın.  
+2. Kesme noktaları, istediğiniz şekilde ayarlayın.  
   
-3.  Kapsayıcı uygulamasını başlatın.  
+3. Kapsayıcı uygulamasını başlatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM ve ActiveX hata ayıklaması](../debugger/com-and-activex-debugging.md)   

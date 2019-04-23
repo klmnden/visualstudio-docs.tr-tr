@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090426"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 Metin Şablonları Kullanarak Tasarım Zamanı Kodu Oluşturma
 Tasarım zamanı T4 metin şablonları program kodu ve diğer dosyaları, Visual Studio projenize oluşturmanıza olanak tanır. Genellikle, böylece verileri göre hazırlanmasının kod farklılık şablonları yazma bir *model*. Bir dosya veya uygulama gereksinimleri hakkında önemli bilgiler içeren veritabanı modelidir.
@@ -141,9 +141,9 @@ Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için progra
 
 #### <a name="to-generate-program-code-or-resources"></a>Program kodu veya kaynakları oluşturmak için
 
-1.  Çıktı yönergesi .cs, .vb, .resx veya .xml gibi uygun türde bir dosya oluşturmak için değiştirin.
+1. Çıktı yönergesi .cs, .vb, .resx veya .xml gibi uygun türde bir dosya oluşturmak için değiştirin.
 
-2.  İstediğiniz çözümü kod üreten kodu ekleyin. Örneğin, bir sınıfta üç tamsayı alan bildirimleri oluşturmak istiyorsanız:
+2. İstediğiniz çözümü kod üreten kodu ekleyin. Örneğin, bir sınıfta üç tamsayı alan bildirimleri oluşturmak istiyorsanız:
 
     ```csharp
 
@@ -176,7 +176,7 @@ Metin şablonları oluşturulan dosyanın içeriğini değiştirmek için progra
 
     ```
 
-3.  Dosyayı kaydedin ve artık aşağıdaki kodu içeren oluşturulan dosyasını inceleyin:
+3. Dosyayı kaydedin ve artık aşağıdaki kodu içeren oluşturulan dosyasını inceleyin:
 
     ```csharp
     class MyGeneratedClass {

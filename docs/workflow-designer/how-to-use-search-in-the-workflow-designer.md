@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091297"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Nasıl yapılır: İş Akışı Tasarımcısında Aramayı kullanma
 
@@ -23,13 +23,13 @@ Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak iç
 
 Hızlı Bul Tasarımcısı'nda aşağıdaki bulur:
 
--   Özelliklerini <xref:System.Activities.Activity> nesneleri <xref:System.Activities.Statements.FlowNode> nesneleri <xref:System.Activities.Statements.State> nesneleri, geçişleri ve diğer özel akış denetimi öğeleri.
+- Özelliklerini <xref:System.Activities.Activity> nesneleri <xref:System.Activities.Statements.FlowNode> nesneleri <xref:System.Activities.Statements.State> nesneleri, geçişleri ve diğer özel akış denetimi öğeleri.
 
--   Değişkenler
+- Değişkenler
 
--   Arguments
+- Arguments
 
--   İfadeler
+- İfadeler
 
 ### <a name="use-quick-find"></a>Hızlı Bul'u kullanma
 
@@ -47,8 +47,8 @@ Dosyalarda Bula dizeleri XAML dosyaları dahil olmak üzere iş akışı dosyala
 
 ### <a name="use-find-in-files"></a>Dosyalarda Bul kullanın
 
-1.  Visual Studio'da **Ctrl**+**Shift**+**F**, ya da seçin **Düzenle**  >   **Bul ve Değiştir** > **dosyalarda Bul**.
+1. Visual Studio'da **Ctrl**+**Shift**+**F**, ya da seçin **Düzenle**  >   **Bul ve Değiştir** > **dosyalarda Bul**.
 
-2.  Arama öğesine girin **Aranan** textbox tıklatıp **Tümünü Bul**.
+2. Arama öğesine girin **Aranan** textbox tıklatıp **Tümünü Bul**.
 
-3.  Bulma sonucu gösterilen **bulma sonucu** görünümü. İş Akışı Tasarımcısı'nda eşleşme içeren etkinlik için bir sonuç öğesi çift gider.
+3. Bulma sonucu gösterilen **bulma sonucu** görünümü. İş Akışı Tasarımcısı'nda eşleşme içeren etkinlik için bir sonuç öğesi çift gider.

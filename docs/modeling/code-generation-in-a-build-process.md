@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117102"
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme sürecinde kod oluşturma
 
@@ -28,7 +28,7 @@ Kullandığınız oluşturma motoruna bağlı olarak, yapı görevleri farklı i
 
 Başka bir deyişle, MSBuild içinde metin şablonu oluşturduğunuzda, proje dosyası adları gibi şeyler aynı şekilde erişemezsiniz. Ancak, [ortam bilgilerini yapı parametrelerini kullanarak metin şablonlarına ve yönerge işlemcilerine geçirmek](#parameters).
 
-##  <a name="buildserver"></a> Makinelerinizi yapılandırma
+## <a name="buildserver"></a> Makinelerinizi yapılandırma
 
 Geliştirme bilgisayarınızda yapı görevlerini etkinleştirmek için Visual Studio için modelleme SDK'sını yükleyin.
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Şablonlara yapı bağlamı verilerini geçirme
+## <a name="parameters"></a> Şablonlara yapı bağlamı verilerini geçirme
 
 Proje dosyasında parametre değerlerini ayarlayabilirsiniz. Örneğin, geçirebilirsiniz [derleme](../msbuild/msbuild-properties.md) özellikleri ve [ortam değişkenlerini](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` öğesinden veri alır `T4ParameterValues` yalnızca MSBuild kullandığınızda. Visual Studio kullanarak şablon dönüştürdüğünüzde, parametrelerin varsayılan değerleri olacaktır.
 
-##  <a name="msbuild"></a> Derlemede proje özelliklerini kullanmak ve ekleme yönergelerinde
+## <a name="msbuild"></a> Derlemede proje özelliklerini kullanmak ve ekleme yönergelerinde
 
 Visual Studio Makroları ister **$(SolutionDir)** MSBuild içinde çalışmaz. Bunun yerine, proje özelliklerini kullanabilirsiniz.
 

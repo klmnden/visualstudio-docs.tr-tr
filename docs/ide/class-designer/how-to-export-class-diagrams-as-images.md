@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c0b46c1c9fbb8aef5a2e31e42a02fe6a0db494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087318"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Nasıl yapılır: Sınıf diyagramlarını görüntü olarak dışarı aktarma
 
@@ -25,15 +25,15 @@ Bir projedeki koddan oluşturulan bir sınıf diyagramı dışarı aktarmak içi
 
 ## <a name="export-a-diagram"></a>Bir diyagram dışarı aktarma
 
-1.  Sınıf diyagramınızı açın (*.cd*) dosyası.
+1. Sınıf diyagramınızı açın (*.cd*) dosyası.
 
-2.  Gelen **sınıf diyagramı** menüsünden veya diyagram yüzeyi kısayol menüsünden seçin **diyagramı görüntü olarak dışa aktar**.
+2. Gelen **sınıf diyagramı** menüsünden veya diyagram yüzeyi kısayol menüsünden seçin **diyagramı görüntü olarak dışa aktar**.
 
-3.  Bir diyagram seçin.
+3. Bir diyagram seçin.
 
-4.  İstediğiniz biçimi seçin.
+4. İstediğiniz biçimi seçin.
 
-5.  Seçin **dışarı** dışarı aktarmayı bitirmek için.
+5. Seçin **dışarı** dışarı aktarmayı bitirmek için.
 
 Diğer belgelerden bağlı dışarı aktarılan görüntüleri otomatik olarak güncelleştirmek için Visual Studio diyagramda yeniden dışarı aktarın.
 

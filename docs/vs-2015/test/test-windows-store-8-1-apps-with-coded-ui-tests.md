@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114671"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Kodlanmış UI testleriyle Windows UWP ve 8.1 Store uygulamaları test etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
   
 ## <a name="create-a-simple-windows-store-app"></a>Basit bir Windows Store uygulaması oluşturun  
   
-1.  XAML tabanlı Windows Store uygulaması için kodlanmış UI testlerini çalıştırmak istiyorsanız, şunları yapmalısınız [her denetimi tanımlayan benzersiz Otomasyon özelliği ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1. XAML tabanlı Windows Store uygulaması için kodlanmış UI testlerini çalıştırmak istiyorsanız, şunları yapmalısınız [her denetimi tanımlayan benzersiz Otomasyon özelliği ayarlama](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      Üzerinde **Araçları** menüsünde **seçenekleri** seçip **metin düzenleyici**, ardından **XAML**ve son olarak **çeşitli** .  
   
@@ -30,15 +30,15 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
   
      ![XAML çeşitli seçenekleri](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Boş bir XAML tabanlı Visual C# veya Visual Basic şablonu kullanarak Windows Store uygulaması için yeni bir proje oluşturun.  
+2. Boş bir XAML tabanlı Visual C# veya Visual Basic şablonu kullanarak Windows Store uygulaması için yeni bir proje oluşturun.  
   
      ![Boş bir Windows Store uygulaması oluşturma &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  Solution Explorer'da mainpage.XAML dosyasını açın. Araç kutusundan tasarım yüzeyine bir düğme denetimi ve bir metin kutusu denetimi sürükleyin.  
+3. Solution Explorer'da mainpage.XAML dosyasını açın. Araç kutusundan tasarım yüzeyine bir düğme denetimi ve bir metin kutusu denetimi sürükleyin.  
   
      ![Windows Store uygulaması tasarım](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  Düğme denetimini çift tıklayın ve aşağıdaki kodu ekleyin:  
+4. Düğme denetimini çift tıklayın ve aşağıdaki kodu ekleyin:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
     End Class  
     ```  
   
-5.  Windows Store uygulamanızı çalıştırmak için F5 tuşuna basın.  
+5. Windows Store uygulamanızı çalıştırmak için F5 tuşuna basın.  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Oluşturma ve Windows Store uygulaması için kodlanmış UI testi çalıştırma  
 
@@ -294,15 +294,15 @@ Bu izlenecek yol, UWP uygulamaları ve XAML tabanlı Store 8.1 uygulamaları iç
   
 ## <a name="q--a"></a>Soru - Yanıt  
   
--   **S: Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?**  
+- **S: Kodlanmış UI testi iletişim kutusu için kod üret içinde kodlanmış UI testimi kaydetme seçeneğini neden görmüyorum?**  
   
      **A**: Kaydedilecek seçenek Windows Store uygulamaları için desteklenmiyor.  
   
--   **S: WinJS üzerinde temel Windows Store uygulamalarım için kodlanmış UI testi oluşturabilir miyim?**  
+- **S: WinJS üzerinde temel Windows Store uygulamalarım için kodlanmış UI testi oluşturabilir miyim?**  
   
      **A**: Hayır, yalnızca XAML tabanlı uygulamalar desteklenir.  
   
--   **S: Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde Windows Store uygulamalarım için kodlanmış UI testleri oluşturabilir miyim?**  
+- **S: Windows 8.1 veya Windows 10 çalıştırmayan bir sistemde Windows Store uygulamalarım için kodlanmış UI testleri oluşturabilir miyim?**  
   
      **A**: Hayır, kodlanmış UI Test projesi şablonları yalnızca Windows 8.1 ve Windows 10'da kullanılabilir. Otomasyon için evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Windows 10 gerekir.  
 

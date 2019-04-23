@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084047"
 ---
 # <a name="managing-external-tools"></a>Dış Araçları Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Visual Studio Araçları menüsündeki araçları  
  Aşağıdaki araçları çağırabilirsiniz **Araçları** menüde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Adından tarafından de çağırabilirsiniz **hızlı başlatma** penceresi. GuidGen.exe çağırmak için örneğin **GUID Oluştur**.  
   
-1.  GUID oluştur: bir GUID oluşturur.  
+1. GUID oluştur: bir GUID oluşturur.  
   
-2.  Hata arama: girilen değerin bir hata iletisi alır. Daha fazla bilgi için [ERRLOOK başvurusu](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Hata arama: girilen değerin bir hata iletisi alır. Daha fazla bilgi için [ERRLOOK başvurusu](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
-3.  ATL/MFC izleme aracı: hata ayıklama İzleyici iletileri ATL ve MFC kaynakları gösterir.  
+3. ATL/MFC izleme aracı: hata ayıklama İzleyici iletileri ATL ve MFC kaynakları gösterir.  
   
-4.  PreEmptive koruma - Dotfuscator: .NET programlarının tersine mühendislik karşı korur.  
+4. PreEmptive koruma - Dotfuscator: .NET programlarının tersine mühendislik karşı korur.  
   
-5.  SPY++: Grafik işlemleri, iş parçacıkları, windows ve pencere iletilerini görüntüler.  
+5. SPY++: Grafik işlemleri, iş parçacıkları, windows ve pencere iletilerini görüntüler.  
   
-6.  WCF Hizmeti Yapılandırma Düzenleyicisi: Oluşturma ve WCF hizmetleri için yapılandırma ayarlarını değiştirmenize olanak sağlar.  
+6. WCF Hizmeti Yapılandırma Düzenleyicisi: Oluşturma ve WCF hizmetleri için yapılandırma ayarlarını değiştirmenize olanak sağlar.  
   
 > [!WARNING]
 >  Dış araçların farklı bir liste görebilirsiniz, hangi Visual Studio sürümü bağlı olarak, yüklediğiniz ve uyguladığınız ayarları profili. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,11 +90,11 @@ Dış Araçları'ndan çağırabilirsiniz Visual Studio içinde. Birkaç varsay�
 ## <a name="adding-new-tools"></a>Yeni araçları ekleme  
  Harici bir aracı için ekleyebilirsiniz **Araçları** menüsü. Açık **dış Araçlar** iletişim kutusu ve tıklatın **Ekle**, ardından bilgileri doldurun. Örneğin, Windows Explorer'ın şu anda dosya dizininde açmak için şu girdiyi Visual Studio'da Aç nedenleri:  
   
-1.  Başlık: Dosya konumunu Aç  
+1. Başlık: Dosya konumunu Aç  
   
-2.  Komut: explorer.exe  
+2. Komut: explorer.exe  
   
-3.  Bağımsız değişkenleri: / root, "$(ItemDir)"  
+3. Bağımsız değişkenleri: / root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>Dış araçlar bağımsız değişkenleri  
  Şu bağımsız değişkenler bir dış Aracı'nı başlattığınızda, atanmış olan Visual Studio değişkenlerdir. Not Defteri'ni veya Spy ++ hakkında listelenebilir gibi dış araçlara bağlantıları **Araçları** dış Araçlar iletişim kutusunu kullanarak menüsü.  

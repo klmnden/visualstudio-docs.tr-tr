@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089609"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Ekleme ve programdan ayırma
 Hata ayıklayıcısı ekleniyor, yöntemlerini ve olaylarını uygun özniteliklerle doğru sırasını gönderilmesi gerekir.
@@ -31,11 +31,11 @@ Hata ayıklayıcısı ekleniyor, yöntemlerini ve olaylarını uygun öznitelikl
 
     Varsa `S_OK` döndürülür, DE aynı işlemde SDM olarak yüklenecek. SDM aşağıdaki görevleri gerçekleştirir:
 
-   1.  Çağrıları [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) altyapısı DE almak için.
+   1. Çağrıları [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) altyapısı DE almak için.
 
-   2.  Birlikte DE oluşturur.
+   2. Birlikte DE oluşturur.
 
-   3.  Çağrıları [ekleme](../../extensibility/debugger/reference/idebugengine2-attach.md).
+   3. Çağrıları [ekleme](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 2. DE gönderen bir [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) ile SDM için bir `EVENT_SYNC` özniteliği.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc91bff6819cc5a1ed1e22864157143843f88ba9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71593496613c75485fd30481777d0fcc1102c11c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117817"
 ---
 # <a name="how-to-configure-performance-rules"></a>Nasıl yapılır: Performans kurallarını yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Th Visual Studio Profil Araçları Performans uyarılarını, program yürütme 
   
 ### <a name="to-configure-profiler-performance-warnings"></a>Profil Oluşturucu Performans uyarılarını yapılandırmak için  
   
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-2.  Genişletin **performans araçları**ve ardından **kuralları**.  
+2. Genişletin **performans araçları**ve ardından **kuralları**.  
   
-3.  Bir uyarıyı devre dışı bırakmak veya etkinleştirmek için seçin veya uyarı yanındaki onay kutusunu temizleyin **kimliği** ve adı.  
+3. Bir uyarıyı devre dışı bırakmak veya etkinleştirmek için seçin veya uyarı yanındaki onay kutusunu temizleyin **kimliği** ve adı.  
   
-4.  Bir kural hanedan arasındaki düzeyini belirtmek için **eylem** hücre yanındaki kural ve uyarı düzeyi'ye tıklayın.  
+4. Bir kural hanedan arasındaki düzeyini belirtmek için **eylem** hücre yanındaki kural ve uyarı düzeyi'ye tıklayın.  
   
-    -   **Devre dışı bırakılmış** -(Bu, kural kimliği yanındaki onay kutusunu temizleyerek ile aynı) kuralı devre dışı bırakır.  
+    - **Devre dışı bırakılmış** -(Bu, kural kimliği yanındaki onay kutusunu temizleyerek ile aynı) kuralı devre dışı bırakır.  
   
-    -   **Uyarı** -uyarı kuralı görüntüler.  
+    - **Uyarı** -uyarı kuralı görüntüler.  
   
-    -   **Hata** - yürütme profil oluşturmayı durdurur ve kuralın hata olarak görüntüler.  
+    - **Hata** - yürütme profil oluşturmayı durdurur ve kuralın hata olarak görüntüler.  
   
-    -   **Bilgi** -görüntüler kural yalnızca bilgi olarak.
+    - **Bilgi** -görüntüler kural yalnızca bilgi olarak.

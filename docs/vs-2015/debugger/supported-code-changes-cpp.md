@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57872281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090894"
 ---
 # <a name="supported-code-changes-c"></a>Desteklenen Kod Değişiklikleri (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Düzenle ve devam et Visual C++ için kod değişiklikleri çoğu türde işler.
   
  Bkz: [Düzenle ve devam et (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) Visual Studio'da C++ için Düzenle ve devam et ile çalışma hakkında bilgi.  
   
-##  <a name="BKMK_Unsupported_changes"></a> Desteklenmeyen değişiklikleri  
+## <a name="BKMK_Unsupported_changes"></a> Desteklenmeyen değişiklikleri  
 
 Aşağıdaki değişiklikler C/C++ hata ayıklama oturumu sırasında uygulanamaz:  
   
@@ -68,51 +68,51 @@ Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulama
   
 - Düzenle ve devam et, statik kitaplıklar güncelleştirilmez. Statik kitaplıkta bir değişiklik yaparsanız, eski sürümü ile yürütme devam eder ve herhangi bir uyarı verilir.  
   
-##  <a name="BKMK_Unsupported_scenarios"></a> Desteklenmeyen senaryolar  
+## <a name="BKMK_Unsupported_scenarios"></a> Desteklenmeyen senaryolar  
  Düzenle ve devam et C/C++ için hata ayıklama aşağıdaki senaryolarda kullanılabilir:  
   
--   Hata ayıklama ile derlenen yerel uygulamalar [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Hata ayıklama ile derlenen yerel uygulamalar [/Zo (geliştirmek için iyileştirilmiş hata ayıklama)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
--   Visual Studio 2015 güncelleştirme 1'önceki Visual Studio sürümlerinde, Windows Store uygulamaları veya bileşenleri hata ayıklama. Artık desteklediği için Visual Studio 2015 güncelleştirme 1'de başlayarak, Düzenle ve devam et DirectX uygulamaları, Windows Store C++ uygulamaları ile kullanabileceğiniz `/ZI` derleyici anahtarıyla `/bigobj` geçin. Düzenleme da kullanabilirsiniz ve ikili dosyalarla devam et ile derlenmiş olan `/FASTLINK` geçin.  
+- Visual Studio 2015 güncelleştirme 1'önceki Visual Studio sürümlerinde, Windows Store uygulamaları veya bileşenleri hata ayıklama. Artık desteklediği için Visual Studio 2015 güncelleştirme 1'de başlayarak, Düzenle ve devam et DirectX uygulamaları, Windows Store C++ uygulamaları ile kullanabileceğiniz `/ZI` derleyici anahtarıyla `/bigobj` geçin. Düzenleme da kullanabilirsiniz ve ikili dosyalarla devam et ile derlenmiş olan `/FASTLINK` geçin.  
   
--   Windows 98'hata ayıklama.  
+- Windows 98'hata ayıklama.  
   
--   Karma mod (yerel/yönetilen) hata ayıklama.  
+- Karma mod (yerel/yönetilen) hata ayıklama.  
   
--   JavaScript hata ayıklama.  
+- JavaScript hata ayıklama.  
   
--   SQL hata ayıklama.  
+- SQL hata ayıklama.  
   
--   Bir döküm dosyası hata ayıklama.  
+- Bir döküm dosyası hata ayıklama.  
   
--   İşlenmeyen bir özel durumdan sonra kod düzenleme, **işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme** seçeneği belirlenmez.  
+- İşlenmeyen bir özel durumdan sonra kod düzenleme, **işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme** seçeneği belirlenmez.  
   
--   Bir uygulama kullanarak hata ayıklama **ekleme** seçerek uygulamayı çalıştırmak yerine **Başlat** üzerinde **hata ayıklama** menüsü.  
+- Bir uygulama kullanarak hata ayıklama **ekleme** seçerek uygulamayı çalıştırmak yerine **Başlat** üzerinde **hata ayıklama** menüsü.  
   
--   En iyi duruma getirilmiş kodda hata ayıklama.  
+- En iyi duruma getirilmiş kodda hata ayıklama.  
   
--   Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
+- Derleme hataları nedeniyle oluşturmak yeni bir sürüm başarısız olduktan sonra kodunuzu eski bir sürümü hata ayıklama.  
   
-##  <a name="BKMK_Linking_limitations"></a> Bağlama sınırlamaları  
+## <a name="BKMK_Linking_limitations"></a> Bağlama sınırlamaları  
   
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Düzenle ve Devam Et'i devre dışı bırakan bağlayıcı seçenekleri  
+### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Düzenle ve Devam Et'i devre dışı bırakan bağlayıcı seçenekleri  
  Aşağıdaki bağlayıcı Seçenekleri Düzenle ve Devam Et'i devre dışı bırakın:  
   
--   Ayarı **/OPT: ref**, **/OPT: ICF**, veya **/Incremental: No** devre dışı bırakır, Düzenle ve devam şu uyarıyı vererek:  
+- Ayarı **/OPT: ref**, **/OPT: ICF**, veya **/Incremental: No** devre dışı bırakır, Düzenle ve devam şu uyarıyı vererek:  
   
      BAĞLANTI: Uyarısı LNK4075: / edıtandcontınue OPT nedeniyle yoksayılıyor  
   
      belirtim  
   
--   Ayarı **/sipariş**, **/yayın**, veya **/FORCE** devre dışı bırakır, Düzenle ve devam etmek bu uyarı ile:  
+- Ayarı **/sipariş**, **/yayın**, veya **/FORCE** devre dışı bırakır, Düzenle ve devam etmek bu uyarı ile:  
   
      BAĞLANTI: Uyarısı LNK4075: / Incremental, / OPTION nedeniyle yoksayılıyor  
   
      belirtim  
   
--   Herhangi bir seçenek ayarı devre dışı Düzenle ve devam herhangi belirli bir uyarı ile bir program veritabanı (.pdb) dosyası oluşturulmasını engeller.  
+- Herhangi bir seçenek ayarı devre dışı Düzenle ve devam herhangi belirli bir uyarı ile bir program veritabanı (.pdb) dosyası oluşturulmasını engeller.  
   
-###  <a name="BKMK_Auto_relinking_limitations"></a> Otomatik yeniden bağlantılandırmayı sınırlamaları  
+### <a name="BKMK_Auto_relinking_limitations"></a> Otomatik yeniden bağlantılandırmayı sınırlamaları  
  Varsayılan olarak, Düzenle ve devam et i programınızı güncel yürütülebilir bir dosya oluşturmak için hata ayıklama oturumu sonunda.  
   
  Orijinal derleme konumu dışında bir konumdan ayıkladığınız, Düzenle ve devam et programınızı yeniden kullanılamaz. Bir ileti el ile yeniden oluşturmanız gerektiğini bildirir.  
@@ -123,24 +123,24 @@ Bu değişikliklerden birini yapın ve ardından kod değişikliklerini uygulama
   
  **Düzenle ve devam et sonra yeniden bağlantılandırmayı devre dışı bırakmak için**  
   
-1.  Üzerinde **hata ayıklama** menüsünde seçin **seçenekler ve ayarlar**.  
+1. Üzerinde **hata ayıklama** menüsünde seçin **seçenekler ve ayarlar**.  
   
-2.  İçinde **seçenekleri** iletişim kutusunun **hata ayıklama** düğüm ve select **Düzenle ve devam et** düğümü.  
+2. İçinde **seçenekleri** iletişim kutusunun **hata ayıklama** düğüm ve select **Düzenle ve devam et** düğümü.  
   
-3.  NET **kod değişikliklerini hata ayıklama sonrasında yeniden Bağla** onay kutusu.  
+3. NET **kod değişikliklerini hata ayıklama sonrasında yeniden Bağla** onay kutusu.  
   
-##  <a name="BKMK_Precompiled_Header_Limitations"></a> Önceden derlenmiş başlık sınırlamaları  
+## <a name="BKMK_Precompiled_Header_Limitations"></a> Önceden derlenmiş başlık sınırlamaları  
  Varsayılan olarak, düzenleyin ve yükler ve işlemleri önceden derlenmiş üst bilgiler kod değişikliklerinin işlemleri hızlandırmak için arka planda devam edin. Önceden derlenmiş üst bilgiler yüklenirken bir makinede sınırlı RAM ile derleme yapıyorsanız, bir sorun olabilir, fiziksel bellek ayırma gerektirir. Bu sorun, hata ayıklama sırasında kullanılabilir fiziksel bellek miktarını belirlemek için Windows Görev Yöneticisi'ni kullanarak olabilir, belirleyebilirsiniz. Bu miktar, önceden derlenmiş üst bilgilerin boyutundan daha büyük ise, Düzenle ve devam et hiç sorun değil olmalıdır. Tutar, önceden derlenmiş üst bilgilerin boyuttan daha az ise, arka planda önceden derlenmiş üst bilgiler yüklenmesini Düzenle ve devam et engelleyebilirsiniz.  
   
  **Düzenle ve devam et için arka plan önceden derlenmiş üstbilgilerin yüklenmesini devre dışı bırakmak için**  
   
-1.  Üzerinde **hata ayıklama** menüsünde seçin **seçenekler ve ayarlar**.  
+1. Üzerinde **hata ayıklama** menüsünde seçin **seçenekler ve ayarlar**.  
   
-2.  İçinde **seçenekleri** iletişim kutusunun **hata ayıklama** düğüm ve select **Düzenle ve devam et** düğümü.  
+2. İçinde **seçenekleri** iletişim kutusunun **hata ayıklama** düğüm ve select **Düzenle ve devam et** düğümü.  
   
-3.  NET **izin önceden derleme** onay kutusu.  
+3. NET **izin önceden derleme** onay kutusu.  
   
-##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL öznitelik sınırlamaları  
+## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL öznitelik sınırlamaları  
  Düzenle ve devam et değil yeniden arabirim tanımı (IDL) dosyaları. Bu nedenle, hata ayıklama sırasında IDL öznitelikleri değişiklikler yansıtılmaz. IDL öznitelikleri için değişiklik sonucunu görmek için hata ayıklamayı durdurmak ve uygulamanızı yeniden oluşturun. Düzenle ve devam et oluşturmaz bir hata veya uyarı IDL öznitelikleri değiştirdiyseniz. Daha fazla bilgi için [IDL öznitelikleri](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

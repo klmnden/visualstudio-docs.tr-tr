@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079643"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Nasıl yapılır: Birincil birlikte çalışma derlemeleriyle Office uygulamalarını hedefleme
   Yeni bir Office projesi oluşturduğunuzda, Visual Studio, projenizi yaratmanız için gerekli olan Microsoft Office birincil birlikte çalışma derlemeleri (PIA) başvurular otomatik olarak ekler. Aşağıdaki senaryolarda diğer pıa'lara başvuru eklemeniz gerekir:
@@ -36,18 +36,18 @@ ms.locfileid: "56614330"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Bir birincil birlikte çalışma derlemesine bir başvuru eklemek için
 
-1.  Office projenizi açın ve proje adlarında seçin **Çözüm Gezgini**.
+1. Office projenizi açın ve proje adlarında seçin **Çözüm Gezgini**.
 
-2.  Üzerinde **proje** menüsünü tıklatın **Başvuru Ekle**.
+2. Üzerinde **proje** menüsünü tıklatın **Başvuru Ekle**.
 
-3.  Üzerinde **Framework** sekmesinde, istediğiniz PIA'yı seçerek **bileşen adı** listesi. Kullanılabilir Microsoft Office birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).
+3. Üzerinde **Framework** sekmesinde, istediğiniz PIA'yı seçerek **bileşen adı** listesi. Kullanılabilir Microsoft Office birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).
 
      Projenizin hedeflediği [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ya da sonraki **birlikte çalışma türlerini katıştır** özelliği için bütünleştirilmiş kod başvurusu **True** varsayılan olarak. Bu ayarı kullanarak, son kullanıcı bilgisayarlarında PIA çözümünüzü gerektirmez. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
     >  Her zaman Office projelerinde kullanarak Office PIA başvuruları eklemek **.NET** sekmesinde **Başvuru Ekle** iletişim yerine **COM** sekmesi. Daha fazla bilgi için [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).
 
-4.  **Tamam**'ı tıklatın.
+4. **Tamam**'ı tıklatın.
 
      Derleme adı görünür **başvuruları** klasörü **Çözüm Gezgini**.
 

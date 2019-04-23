@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117895"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Nasıl yapılır: Program aracılığıyla otomatik biçimde aralıkları artımlı şekilde değişen verilerle ile doldurun.
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Yöntemi <xref:Microsoft.Office.Interop.Excel.Range> nesne değerlerle otomatik olarak çalışma sayfasındaki bir aralığı doldurmanıza olanak sağlar. Çoğu zaman <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> yöntemi artımlı olarak artan veya azalan bir aralıktaki değerleri depolamak için kullanılır. Gelen isteğe bağlı bir sabit sağlanarak davranış belirtebilirsiniz <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> sabit listesi.
@@ -29,9 +29,9 @@ ms.locfileid: "56638536"
 
  İki aralık kullanırken belirtmelisiniz <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
 
--   Çağıran aralık <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> dolgu başlangıç noktasını belirtir ve bir başlangıç değeri içeren yöntemi.
+- Çağıran aralık <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> dolgu başlangıç noktasını belirtir ve bir başlangıç değeri içeren yöntemi.
 
--   Bir parametre olarak geçirilen doldurmak istediğiniz aralık <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> yöntemi. Hedef aralığın başlangıç değeri içeren aralığını içermelidir.
+- Bir parametre olarak geçirilen doldurmak istediğiniz aralık <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> yöntemi. Hedef aralığın başlangıç değeri içeren aralığını içermelidir.
 
     > [!NOTE]
     >  Geçiremezsiniz bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi <xref:Microsoft.Office.Interop.Excel.Range>. Daha fazla bilgi için [konak denetimlerinin ve konak öğelerinin programlama sınırlamaları](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -45,11 +45,11 @@ ms.locfileid: "56638536"
 
  Örnek, üç bölgeleri dolgu gerektirir:
 
--   Sütun B beş iş günü eklemektir. Başlangıç değeri için tür **Pazartesi** B1 hücresine.
+- Sütun B beş iş günü eklemektir. Başlangıç değeri için tür **Pazartesi** B1 hücresine.
 
--   Sütun C'yi, beşinci aya dahil etmektir. Başlangıç değeri için tür **Ocak** hücresinde C1.
+- Sütun C'yi, beşinci aya dahil etmektir. Başlangıç değeri için tür **Ocak** hücresinde C1.
 
--   Sütun D numaraları, iki her satır için artan bir dizi eklemektir. Başlangıç değerleri için tür **4** D1 hücresinde ve **6** D2 hücresine.
+- Sütun D numaraları, iki her satır için artan bir dizi eklemektir. Başlangıç değerleri için tür **4** D1 hücresinde ve **6** D2 hücresine.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Aralıklarla çalışma](../vsto/working-with-ranges.md)

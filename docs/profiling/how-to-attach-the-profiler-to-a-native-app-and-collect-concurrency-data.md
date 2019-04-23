@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a16aa073583c62577f6a40fb24aac69c7e95b93e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34fe188a26b4a971ec683cbea7b4a5334bead12c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083978"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Komut satırını kullanarak eşzamanlılık verileri toplamak ve yerel bir bağımsız uygulamaya profil oluşturucu ekleme
 Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çalışan yerel bir (C/C++) tek başına uygulamaya profil oluşturucu ekleme ve toplamak için profil oluşturma araçları komut satırı araçlarının iş parçacığı Çekişme verisi.
@@ -28,7 +28,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
 #### <a name="to-attach-the-profiler-to-a-running-native-application"></a>Profil oluşturucuyu çalışan yerel bir uygulamaya eklemek için
 
-1.  Bir komut isteminde aşağıdaki komutu yazın:
+1. Bir komut isteminde aşağıdaki komutu yazın:
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
 
@@ -42,7 +42,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
     |[/automark](../profiling/automark.md) **:** `Interval`|İle kullanma **/wincounter** yalnızca. Windows performans sayacı toplama olayları arasındaki milisaniye sayısını belirtir. Varsayılan değer 500'dür.|
     |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Profil oluşturma sırasında Tahsil edilecek bir olay izleme için Windows (ETW) olayı belirtir. ETW olayları ayrı (.etl) dosyasında toplanır.|
 
-2.  Profil Oluşturucu hedef uygulama için aşağıdaki komutu yazarak ekleyin:
+2. Profil Oluşturucu hedef uygulama için aşağıdaki komutu yazarak ekleyin:
 
      **VSPerfCmd**[/ ekleme](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}
 
@@ -53,7 +53,7 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak
 
--   Aşağıdaki tabloda seçenekleri çiftlerini başlatın ve veri toplama işlemini durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
+- Aşağıdaki tabloda seçenekleri çiftlerini başlatın ve veri toplama işlemini durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
 
     |Seçenek|Açıklama|
     |------------|-----------------|
@@ -66,10 +66,10 @@ Bu makalede nasıl kullanılacağını [!INCLUDE[vsprvs](../code-quality/include
 
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için
 
-1.  Hedef uygulamadaki profil oluşturucuyu kapatarak veya aşağıdaki komutu yazarak bağlantısını kesin:
+1. Hedef uygulamadaki profil oluşturucuyu kapatarak veya aşağıdaki komutu yazarak bağlantısını kesin:
 
      **VSPerfCmd / detach**
 
-2.  Aşağıdaki komutu yazarak profil oluşturucuyu kapatın:
+2. Aşağıdaki komutu yazarak profil oluşturucuyu kapatın:
 
      **VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)

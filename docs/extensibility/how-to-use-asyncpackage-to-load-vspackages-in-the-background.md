@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113969"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Nasıl yapılır: Arka planda VSPackage yükleme için AsyncPackage kullanın
 Yükleme ve VS paket başlatma disk g/ç neden olabilir. Böyle g/ç UI iş parçacığı üzerinde olursa bu yanıt hızını sorunlarına yol açabilir. Bunu ele almak için Visual Studio 2015 kullanıma sunulan <xref:Microsoft.VisualStudio.Shell.AsyncPackage> paketi yükleme arka plan iş parçacığında sağlayan sınıf.
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Mevcut bir VSPackage AsyncPackage için Dönüştür
  İşin çoğunu yeni oluşturma aynıdır **AsyncPackage**. 1 ile 5 yukarıdaki adımları izleyin. Aşağıdaki öneriler ek dikkatli olması gerekir:
 
-1.  Kaldırmayı unutmayın `Initialize` geçersiz kılma paketinizdeki vardı.
+1. Kaldırmayı unutmayın `Initialize` geçersiz kılma paketinizdeki vardı.
 
-2.  Kilitlenmeler kaçının: Olabilir, kodunuzda RPC gizli. artık bir arka plan iş parçacığında gerçekleşir. Bir RPC yapıyorsanız emin olun (örneğin, **GetService**), ana iş parçacığı (1) ya da geç yapmanız veya var (2) zaman uyumsuz bir API sürümünü kullanın (örneğin, **Asyncpackage'dan**).
+2. Kilitlenmeler kaçının: Olabilir, kodunuzda RPC gizli. artık bir arka plan iş parçacığında gerçekleşir. Bir RPC yapıyorsanız emin olun (örneğin, **GetService**), ana iş parçacığı (1) ya da geç yapmanız veya var (2) zaman uyumsuz bir API sürümünü kullanın (örneğin, **Asyncpackage'dan**).
 
-3.  Çok sık iş parçacıkları arasında geçiş. Yükleme zamanını azaltmak için arka plan iş parçacığında oluşabilir iş yerelleştirmek deneyin.
+3. Çok sık iş parçacıkları arasında geçiş. Yükleme zamanını azaltmak için arka plan iş parçacığında oluşabilir iş yerelleştirmek deneyin.
 
 ## <a name="querying-services-from-asyncpackage"></a>AsyncPackage hizmetlerinden sorgulama
  Bir **AsyncPackage** olabilir veya zaman uyumsuz olarak bağlı olarak çağıran yüklenmeyebilir. Örneğin,

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088762"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Yönetilen Kod için Özel Kod Çözümleme İade İlkelerini Uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Sürüm denetimi klasörü İade İlkesi kural kümesi oluşturmak için  
   
-1.  İçinde [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]ekip projesi düğümünü genişletin ve ardından **kaynak denetimi**.  
+1. İçinde [!INCLUDE[esprtfc](../includes/esprtfc-md.md)]ekip projesi düğümünü genişletin ve ardından **kaynak denetimi**.  
   
-2.  İçinde **klasörleri** bölmesinde, takım projesine sağ tıklayın ve ardından **yeni klasör**.  
+2. İçinde **klasörleri** bölmesinde, takım projesine sağ tıklayın ve ardından **yeni klasör**.  
   
-3.  Ana Kaynak Denetim Masası'nda, sağ **yeni klasör**, tıklayın **Yeniden Adlandır**, klasör kural kümesi için bir ad yazın.  
+3. Ana Kaynak Denetim Masası'nda, sağ **yeni klasör**, tıklayın **Yeniden Adlandır**, klasör kural kümesi için bir ad yazın.  
   
 #### <a name="to-create-the-check-in-policy-rule-set"></a>İade İlkesi kural kümesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde **yeni**ve ardından **dosya**.  
+1. Üzerinde **dosya** menüsünde **yeni**ve ardından **dosya**.  
   
-2.  İçinde **kategorileri** listesinde **genel**.  
+2. İçinde **kategorileri** listesinde **genel**.  
   
-3.  İçinde **şablonları** listesinde, çift **Kod Analizi kural kümesi**.  
+3. İçinde **şablonları** listesinde, çift **Kod Analizi kural kümesi**.  
   
-4.  Kural kümesinden dahil edilecek kuralları belirtin ve sonra kural kümesi dosyası oluşturduğunuz kural kümesi klasörüne kaydedin.  
+4. Kural kümesinden dahil edilecek kuralları belirtin ve sonra kural kümesi dosyası oluşturduğunuz kural kümesi klasörüne kaydedin.  
   
      Daha fazla bilgi için [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md)  
   
 #### <a name="to-add-the-rule-set-file-to-version-control"></a>Kural eklemek için dosya sürüm denetimi için ayarlama  
   
-1.  İçinde **Kaynak Denetim Gezgini**yeni klasörü sağ tıklatın ve ardından **öğeleri klasöre Ekle**.  
+1. İçinde **Kaynak Denetim Gezgini**yeni klasörü sağ tıklatın ve ardından **öğeleri klasöre Ekle**.  
   
      Daha fazla bilgi için [sürüm denetimi kullanın](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
-2.  Kural kümesi oluşturduğunuz dosya tıklayın ve ardından **son**.  
+2. Kural kümesi oluşturduğunuz dosya tıklayın ve ardından **son**.  
   
      Dosya kaynak denetimine eklediğiniz ve sizin için kullanıma.  
   
-3.  İçinde **Kaynak Denetim Gezgini** Ayrıntıları penceresi, dosya adına sağ tıklayın ve ardından **bekleyen değişiklikleri iade et**.  
+3. İçinde **Kaynak Denetim Gezgini** Ayrıntıları penceresi, dosya adına sağ tıklayın ve ardından **bekleyen değişiklikleri iade et**.  
   
-4.  İçinde **iade** iletişim kutusu, bir açıklama ekleyin ve ardından seçeneğine sahip **iade**.  
+4. İçinde **iade** iletişim kutusu, bir açıklama ekleyin ve ardından seçeneğine sahip **iade**.  
   
     > [!NOTE]
     >  Takım projeniz için Kod Analizi İlkesi iade zaten yapılandırdıysanız ve seçtiğiniz **yalnızca geçerli çözümün bir parçası olan dosyaları içerecek şekilde iade zorunlu**, bir ilke hatası uyarısı tetikler. İlke hatası iletişim kutusunda **ilke hatası geçersiz kıl ve iade etmeye devam et**. Gerekli bir açıklama ekleyin ve ardından **Tamam**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Dosyası kural belirtmek için iade ilke olarak ayarlayın  
   
-1.  Üzerinde **takım** menüsünde **takım projesi ayarları**ve ardından **kaynak denetimi**.  
+1. Üzerinde **takım** menüsünde **takım projesi ayarları**ve ardından **kaynak denetimi**.  
   
-2.  Tıklayın **iade ilkesi**ve ardından **Ekle**.  
+2. Tıklayın **iade ilkesi**ve ardından **Ekle**.  
   
-3.  İçinde **iade ilkesi** listesinde, çift **Kod Analizi**, emin olun **yönetilen kod için kod analizini zorla** onay kutusu seçilidir.  
+3. İçinde **iade ilkesi** listesinde, çift **Kod Analizi**, emin olun **yönetilen kod için kod analizini zorla** onay kutusu seçilidir.  
   
-4.  İçinde **bu kural kümesini Çalıştır** listesinde  **\<kaynak denetiminden kural kümesi seçin >**.  
+4. İçinde **bu kural kümesini Çalıştır** listesinde  **\<kaynak denetiminden kural kümesi seçin >**.  
   
-5.  Sürüm denetimine iade ilkesi kural kümesi dosyası yolunu yazın.  
+5. Sürüm denetimine iade ilkesi kural kümesi dosyası yolunu yazın.  
   
      Yol aşağıdaki sözdizimine uygun olmalıdır:  
   
@@ -93,29 +93,29 @@ Kod Analizi iade ilkesi sürüm denetimine iade edilmeden önce bir takım proje
     > [!NOTE]
     >  Yolu aşağıdaki yordamlardan birini kullanarak kopyalayabilirsiniz **Kaynak Denetim Gezgini**:  
   
-    -   İçinde **klasörleri** bölmesinde, kural kümesi dosyası içeren klasörü tıklatın. Görünen klasörün sürüm denetim yolu Kopyala **kaynak** kutusuna ve kural kümesi dosyası adını elle yazın.  
+    - İçinde **klasörleri** bölmesinde, kural kümesi dosyası içeren klasörü tıklatın. Görünen klasörün sürüm denetim yolu Kopyala **kaynak** kutusuna ve kural kümesi dosyası adını elle yazın.  
   
-    -   Kural kümesi dosyası Ayrıntıları penceresinde sağ tıklayın ve ardından **özellikleri**. Üzerinde **genel** sekmesinde, bu değeri kopyalayın **sunucu adı**.  
+    - Kural kümesi dosyası Ayrıntıları penceresinde sağ tıklayın ve ardından **özellikleri**. Üzerinde **genel** sekmesinde, bu değeri kopyalayın **sunucu adı**.  
   
 ## <a name="synchronizing-code-projects-to-the-check-in-policy-rule-set"></a>İade İlkesi kural kümesi için kod projelerini eşitleme  
  Belirttiğiniz bir takım projesi iade ilkesi kuralı Özellikler iletişim kutusunda kod projesinin kod proje yapılandırmasının Kod Analizi kural kümesi olarak ayarlayın. Kural kümesi kod projesini aynı sürücüde yer alıyorsa, göreli bir yol kural kümesi yolu dosya iletişim kutusundan seçildiğinde belirtmek için kullanılır. Denetim yapıları benzer yerel sürüm kullanan diğer bilgisayarlar için taşınabilir proje özellikleri ayarlar göreli bir yol sağlar.  
   
 #### <a name="to-specify-a-team-project-rule-set-as-the-rule-set-of-a-code-project"></a>Bir takım projesi kural belirtmek için bir kod proje kural kümesi olarak ayarlayın.  
   
-1.  Gerekirse, iade ilkesi kuralı kümesi klasör ve dosya sürüm denetiminden alın.  
+1. Gerekirse, iade ilkesi kuralı kümesi klasör ve dosya sürüm denetiminden alın.  
   
      Bu adımda gerçekleştirdiğiniz **Kaynak Denetim Gezgini** sağ tıklayarak kural klasörünü ve ardından kümesi **en son sürümü Al**.  
   
-2.  İçinde **Çözüm Gezgini**kod projesine sağ tıklayın ve ardından **özellikleri**.  
+2. İçinde **Çözüm Gezgini**kod projesine sağ tıklayın ve ardından **özellikleri**.  
   
-3.  **Kod Analizi tıklayın**.  
+3. **Kod Analizi tıklayın**.  
   
-4.  Gerekirse, uygun seçenekleri tıklayın **yapılandırma** ve **Platform** listeler.  
+4. Gerekirse, uygun seçenekleri tıklayın **yapılandırma** ve **Platform** listeler.  
   
-5.  Kod Analizi proje kodu belirtilen yapılandırma kullanılarak oluşturulan her tamamlanışında çalıştırılacak seçin **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** onay kutusu.  
+5. Kod Analizi proje kodu belirtilen yapılandırma kullanılarak oluşturulan her tamamlanışında çalıştırılacak seçin **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** onay kutusu.  
   
-6.  Diğer şirketlerin bileşenleri kodda yoksaymak için seçin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
+6. Diğer şirketlerin bileşenleri kodda yoksaymak için seçin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
   
-7.  İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
+7. İçinde **bu kural kümesini Çalıştır** listesinde  **\<Gözat … >**.  
   
-8.  İade İlkesi kural kümesi dosyası yerel sürümünü belirtin.
+8. İade İlkesi kural kümesi dosyası yerel sürümünü belirtin.

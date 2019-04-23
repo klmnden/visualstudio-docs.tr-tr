@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111759"
 ---
 # <a name="programming-with-the-uml-api"></a>UML API ile Programlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ UML API Visual Studio'nun oluşturmak, okumak ve UML modellerini ve diyagramlar�
   
  Bu platform üzerinden türler, UML uzantıları yazmak üzere başvurduğunuz derlemelerin bazılarında görünürdür. UML araçlarına erişerek uzantılar yapabilmenize rağmen [!INCLUDE[dsl](../includes/dsl-md.md)] API, aşağıdaki konuları göz önünde bulundurmalısınız:  
   
--   Bazı görünürde çok basit değişikliklerin tutarsızlıklar ve beklenmeyen etkilere neden olduğunu bulabilirsiniz.  
+- Bazı görünürde çok basit değişikliklerin tutarsızlıklar ve beklenmeyen etkilere neden olduğunu bulabilirsiniz.  
   
--   Böylece kullanarak yaptığınız uyarlamalar uygulama gelecekte değişebilir [!INCLUDE[dsl](../includes/dsl-md.md)] API artık çalışmıyor.  
+- Böylece kullanarak yaptığınız uyarlamalar uygulama gelecekte değişebilir [!INCLUDE[dsl](../includes/dsl-md.md)] API artık çalışmıyor.  
   
 ## <a name="the-api-assemblies"></a>API derlemeleri  
  Bu tablo, UML araçları ve kullanmak için önerilen ad alanları için genişletilebilirlik sağlayan derlemeleri özetler.  

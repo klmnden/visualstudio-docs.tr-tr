@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088632"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Nasıl yapılır: Program aracılığıyla klasörü ada göre alma
   Bu örnekte, özel adlandırılmış bir klasör için bir başvuru alır ve ardından klasörün içeriğini görüntüler.
@@ -30,7 +30,7 @@ ms.locfileid: "56620895"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek gerektirir:
 
--   TestFolder adlı bir klasör.
+- TestFolder adlı bir klasör.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Klasörlerle çalışma](../vsto/working-with-folders.md)

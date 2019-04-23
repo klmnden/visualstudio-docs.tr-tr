@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 395fc5976f31fb2d465c57f036b3e5369aaa0c07
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081966"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Nasıl yapılır: Olay alıcısı oluşturma
   Oluşturarak *Olay alıcıları*, bir kullanıcı SharePoint öğeleri listeleri gibi veya liste öğesi ile etkileşim kurduğunda, yanıt verebilirsiniz. Örneğin, bir kullanıcı takvimi değiştirir veya bir ad kişiler listeden silmesi olay alıcısı kodda tetiklenebilir. Bu konuyu takip ederek, bir liste örneği için bir olay alıcısı ekleme konusunda bilgi edinebilirsiniz.
@@ -34,23 +34,23 @@ ms.locfileid: "54865105"
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Liste örneği için olay alıcı eklemek için
 
-1.  Oluşturduğunuz proje açmak [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1. Oluşturduğunuz proje açmak [izlenecek yol: SharePoint için site sütunu, içerik türü ve liste oluşturma](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2.  İçinde **Çözüm Gezgini**, adlı SharePoint proje düğümünü seçin **Clinic**.
+2. İçinde **Çözüm Gezgini**, adlı SharePoint proje düğümünü seçin **Clinic**.
 
-3.  Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+3. Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
-4.  Ya da altında **Visual C#** veya **Visual Basic**, genişletme **SharePoint** düğümünü seçip **2010** öğesi.
+4. Ya da altında **Visual C#** veya **Visual Basic**, genişletme **SharePoint** düğümünü seçip **2010** öğesi.
 
-5.  İçinde **şablonları** bölmesinde seçin **olay alıcısı**, adlandırın **TestEventReceiver1**ve ardından **Tamam** düğmesi.
+5. İçinde **şablonları** bölmesinde seçin **olay alıcısı**, adlandırın **TestEventReceiver1**ve ardından **Tamam** düğmesi.
 
      **SharePoint Özelleştirme Sihirbazı** görünür.
 
-6.  İçinde **ne tür bir olay alıcısı istiyor musunuz?** listesinde **liste öğesi etkinlikleri**.
+6. İçinde **ne tür bir olay alıcısı istiyor musunuz?** listesinde **liste öğesi etkinlikleri**.
 
-7.  İçinde **olay kaynağı hangi öğe olmalıdır?** listesinde **Hastalara (Clinic\Patients)**.
+7. İçinde **olay kaynağı hangi öğe olmalıdır?** listesinde **Hastalara (Clinic\Patients)**.
 
-8.  İçinde **aşağıdaki olayları işlemek** yanındaki onay kutusunu işaretleyin, listesi **bir öğe eklendikten sonra**ve ardından **son** düğmesi.
+8. İçinde **aşağıdaki olayları işlemek** yanındaki onay kutusunu işaretleyin, listesi **bir öğe eklendikten sonra**ve ardından **son** düğmesi.
 
      Adlı tek bir yöntem yeni bir olay alıcısı için kod dosyasını içeren `ItemAdded`. Sonraki adımda, böylece her kişi Scott Brown varsayılan olarak adlandırılacak bu yöntem için kod ekleyeceksiniz.
 

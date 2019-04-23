@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd40ac13cf00db2903f9c9dca7cf154572e2b81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091960"
 ---
 # <a name="breakpoint-related-methods"></a>Kesme noktasıyla ilgili metotlar
 Hata ayıklama altyapısı (DE), kesme noktaları ayarını desteklemesi gerekir. Visual Studio hata ayıklama kesme noktaları aşağıdaki türlerini destekler:
 
--   bağlı
+- bağlı
 
      Kullanıcı Arabirimi aracılığıyla istenen ve başarılı bir şekilde bir kod belirtilen konuma bağlı
 
--   Bekleniyor
+- Bekleniyor
 
      UI ancak gerçek henüz bağlı yönergeleri istendi
 

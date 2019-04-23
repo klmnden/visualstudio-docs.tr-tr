@@ -8,29 +8,29 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27d38a1e984f5705c52d8c6b310ead7a522f4ecb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 09656b9afac82eec8981f8573af87391c99a3688
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114268"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio düzeni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), bu izleme standart iletişim kutuları unthemed olduğu [Windows Masaüstü iletişim düzeni ilkeleri](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx). Visual Studio kullanıcı arabirimini yenilemek hareket ettikçe daha belirgin iletişim kutularının bunları olarak ürün tanımlama deneyimler oluşturur, yeni bir tasarım vardır. Bunlar [temalı iletişim düzeni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) konulu bir görünüme sahip.
 
-##  <a name="BKMK_UtilityDialogLayout"></a> Yardımcı program iletişim düzeni
+## <a name="BKMK_UtilityDialogLayout"></a> Yardımcı program iletişim düzeni
 
--   Bir yardımcı programı iletişim kutusu içindeki tüm denetimleri, üst/sol başlaması ve aşağı akış gerekir.
+- Bir yardımcı programı iletişim kutusu içindeki tüm denetimleri, üst/sol başlaması ve aşağı akış gerekir.
 
--   Merkezi denetimleri büyük alanını doldurmak için bir iletişim kutusu üzerinde hiçbir zaman.
+- Merkezi denetimleri büyük alanını doldurmak için bir iletişim kutusu üzerinde hiçbir zaman.
 
--   Ortam yazı tipi için tüm iletişim metin kullanın. Bir görsel spec yazarken, belirli bir yazı tipi ve boyutu seçmek yerine ortam yazı tipi belirtin. Bkz: [ortam yazı tipi](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Ortam yazı tipi için tüm iletişim metin kullanın. Bir görsel spec yazarken, belirli bir yazı tipi ve boyutu seçmek yerine ortam yazı tipi belirtin. Bkz: [ortam yazı tipi](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
--   Tutarlı denetim aralığı ve yerleşim hedef craftsmanship kalite desteklemek için kullanın.
+- Tutarlı denetim aralığı ve yerleşim hedef craftsmanship kalite desteklemek için kullanın.
 
--   İletişim kutuları arasında denetimleri, benzersiz bir juxtaposition denetimlerin veya her ikisini de daha büyük bir sayı daha karmaşık hale gelebilir. Bu karmaşık durumlarda, kullanıcıya ayrıştırmak için bir mantıksal akış vermek için Denetim gruplandırmaları arasında yeterli boşluk izin verir.
+- İletişim kutuları arasında denetimleri, benzersiz bir juxtaposition denetimlerin veya her ikisini de daha büyük bir sayı daha karmaşık hale gelebilir. Bu karmaşık durumlarda, kullanıcıya ayrıştırmak için bir mantıksal akış vermek için Denetim gruplandırmaları arasında yeterli boşluk izin verir.
 
 ### <a name="utility-dialog-layout-examples"></a>Yardımcı program iletişim düzeni örnekleri
  Tüm boyutlar piksel cinsinden ifade edilir.
@@ -47,11 +47,11 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
 #### <a name="margins"></a>Kenar boşlukları
 
--   Tüm iletişim kutuları, tüm köşelerindeki 12-piksel kenarlık olması gerekir.
+- Tüm iletişim kutuları, tüm köşelerindeki 12-piksel kenarlık olması gerekir.
 
--   Kenar boşlukları bir grup çerçevesinde çerçevenin kenarına 9 piksel olmalıdır.
+- Kenar boşlukları bir grup çerçevesinde çerçevenin kenarına 9 piksel olmalıdır.
 
--   Kenar boşlukları sekme denetimindeki sekme denetimi kenarından 6 piksel olmalıdır.
+- Kenar boşlukları sekme denetimindeki sekme denetimi kenarından 6 piksel olmalıdır.
 
 #### <a name="command-buttons"></a>Komut düğmeleri
 
@@ -71,13 +71,13 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
 #### <a name="labels"></a>Etiketler
 
--   Sola Hizala tüm etiketleri.
+- Sola Hizala tüm etiketleri.
 
--   Bir denetimin üzerine sit etiketler, bunlar sol-denetimi altındaki ile tam olarak hizalanmasını ve alt etiketinin üst denetimin diğer (örneğin, bir birleşik giriş kutusu) yukarıda 5 piksel olmalıdır.
+- Bir denetimin üzerine sit etiketler, bunlar sol-denetimi altındaki ile tam olarak hizalanmasını ve alt etiketinin üst denetimin diğer (örneğin, bir birleşik giriş kutusu) yukarıda 5 piksel olmalıdır.
 
--   Denetimleri solunda sit etiketleri, minimum genişliğini giriş denetiminin etiket arasındaki 10 pikseldir. Metin kutuları, birleşik giriş kutuları veya diğer denetimleri hizalama için örtük bir ikinci sütunda kurulmalıdır.
+- Denetimleri solunda sit etiketleri, minimum genişliğini giriş denetiminin etiket arasındaki 10 pikseldir. Metin kutuları, birleşik giriş kutuları veya diğer denetimleri hizalama için örtük bir ikinci sütunda kurulmalıdır.
 
--   Etiketleri cümle olduğunu ve bir üste. Bkz: [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Etiketleri cümle olduğunu ve bir üste. Bkz: [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Denetimler arasındaki uzaklığı
  Denetimleri makul yığın. Yığılmış denetimler arasındaki aralığı için mutlak hiçbir kılavuz yoktur. Denetimler arasındaki tightness iletişim kutuları arasında biraz farklılık gösterebilir. Önerilen boşluk dikey denetim/etiket çiftleri için 20 piksel ve yatay denetimi etiketi çiftleri için 9 piksel olabilir. Yatay çiftleri için en az bir denetim aralığı 6 pikseldir.
@@ -98,11 +98,11 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 
 #### <a name="helper-text"></a>Yardımcı metni
 
--   Bir iletişim kutusu iletişim amacı hakkında daha fazla bilgi sağlayan bir yardımcı metni görüntüleyebilirsiniz. Bu genellikle en üstünde yer alan ve 1-2 cümleler olabilir.
+- Bir iletişim kutusu iletişim amacı hakkında daha fazla bilgi sağlayan bir yardımcı metni görüntüleyebilirsiniz. Bu genellikle en üstünde yer alan ve 1-2 cümleler olabilir.
 
--   Satır uzunluğu, ayrıştırma ve okumak bir kullanıcı için rahat genişliği olmalıdır. Orta ölçekli bir iletişim kutusu, en fazla 550 piksel genişliğinde olmalıdır.
+- Satır uzunluğu, ayrıştırma ve okumak bir kullanıcı için rahat genişliği olmalıdır. Orta ölçekli bir iletişim kutusu, en fazla 550 piksel genişliğinde olmalıdır.
 
-####  <a name="BKMK_InteriorCommandButtons"></a> İç komut düğmeleri
+#### <a name="BKMK_InteriorCommandButtons"></a> İç komut düğmeleri
  Daha karmaşık iletişim kutularında, bir iç denetim iletişim kutusunun yürütme düğmeleri bulunduğu yere şeklinizi etkileyebilecek olan ilgili kendi düğmeleri olabilir.
 
 - İç bir dikey hizalama (sütun) düğmelerini kullanın **Tamam**/**iptal** sağ alt köşede yatay olarak yerleştirilir.
@@ -122,22 +122,22 @@ Visual Studio iletişim kutularını etkinleştirildiklerinde [yardımcı ileti�
 #### <a name="browse-button"></a>[Gözat...] Düğme
  **[Gözat...]**  izleyen bir metin kutusu düğmeleri nokta dahil olmak üzere, tam olarak "Gözat..." Yazım. Alanı sıkı veya birden fazla varsa **[Gözat...]**  ekrandaki düğmeye düğmeleri yalnızca üç nokta sınırlı.
 
-##  <a name="BKMK_ThemedDialogLayout"></a> Temalı iletişim düzeni
+## <a name="BKMK_ThemedDialogLayout"></a> Temalı iletişim düzeni
  Visual Studio'da temalı iletişim kutuları, daha açık bir görünüme sahip ve daha fazla boşluk sunar. Daha fazla vurgu ve ilgi alanı, daha açık satır aralığı ve yazı tipi boyutu ve ağırlıklarını çeşitlemesi sunan tipografi sağlar. Mümkünse, chrome ve başlık çubukları sınırlı veya kaldırılan. Bu iletişim kutularını düzenini temel bu deseni izlemelidir:
 
-1.  İletişim kutusunun arka plan beyaz.
+1. İletişim kutusunun arka plan beyaz.
 
-2.  Orta değer gri renkle kural 1 piksel kenarlık yoktur.
+2. Orta değer gri renkle kural 1 piksel kenarlık yoktur.
 
-3.  İletişim kutusu başlığı artık, başlık çubuğunda bulunur, ancak görsel açıdan ilgi çekici ve Vurgu daha büyük bir nokta boyutu sağlar. (Yazı tipi boyutu bölümüne bakın [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. İletişim kutusu başlığı artık, başlık çubuğunda bulunur, ancak görsel açıdan ilgi çekici ve Vurgu daha büyük bir nokta boyutu sağlar. (Yazı tipi boyutu bölümüne bakın [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4.  Bir açıklama gibi ek metin ile birlikte etiketleri olmalıdır **ortam yazı tipi + kalın**.
+4. Bir açıklama gibi ek metin ile birlikte etiketleri olmalıdır **ortam yazı tipi + kalın**.
 
-5.  İç sütun açık gri 1 piksel kuralda tarafından ayrılır.
+5. İç sütun açık gri 1 piksel kuralda tarafından ayrılır.
 
-6.  Altı çizili olmadığı varsayılan bağlantıları vardır. Hover ve basılı durumları rengi değiştirme ve alt çizgi vardır.
+6. Altı çizili olmadığı varsayılan bağlantıları vardır. Hover ve basılı durumları rengi değiştirme ve alt çizgi vardır.
 
-7.  Yürütme düğmeleri (gibi **Tamam**/**iptal**) sağ alt köşesinde yaslanın.
+7. Yürütme düğmeleri (gibi **Tamam**/**iptal**) sağ alt köşesinde yaslanın.
 
 ### <a name="themed-dialog-layout-examples"></a>Temalı iletişim düzeni örnekleri
  ![Temalı iletişim düzeni](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801 h_ThemedDialog")

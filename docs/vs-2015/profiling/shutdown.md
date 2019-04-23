@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9b8848399ea88b5f4ce7ebf30f970e2091e6406
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fbbbd27cfe7d720349592050419f5c73d1843c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784605"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115412"
 ---
 # <a name="shutdown"></a>Kapat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `Timeout`  
- -   (İsteğe bağlı) Belirtilmişse seçeneği belirtilen sayıda saniye geçtikten sonra profil oluşturucuyu kapatmak veya profil oluşturma veri dosyasını kapatmadan döndürür.  
+`Timeout`  
+- (İsteğe bağlı) Belirtilmişse seçeneği belirtilen sayıda saniye geçtikten sonra profil oluşturucuyu kapatmak veya profil oluşturma veri dosyasını kapatmadan döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

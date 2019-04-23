@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93cc5fdef5c3d91281f01db8d4946dee17394170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077270"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Kullanıcıların kendi modellere eklemek istediğiniz öğeleri için araç kut
   
  Bu konuda:  
   
--   [Araç kutusu nasıl tanımlanır](#ToolboxDef)  
+- [Araç kutusu nasıl tanımlanır](#ToolboxDef)  
   
--   [Öğe Araçlarını Özelleştirme](#customizing)  
+- [Öğe Araçlarını Özelleştirme](#customizing)  
   
--   [Bir aracından öğelerin grupları oluşturma](#groups)  
+- [Bir aracından öğelerin grupları oluşturma](#groups)  
   
--   [Bağlantı araçlarını özelleştirme](#connections)  
+- [Bağlantı araçlarını özelleştirme](#connections)  
   
-##  <a name="ToolboxDef"></a> Araç kutusu nasıl tanımlanır  
+## <a name="ToolboxDef"></a> Araç kutusu nasıl tanımlanır  
  DSL Gezgini içinde Düzenleyici düğüm ve bunun altındaki düğümleri genişletin. Genellikle bu benzer bir hiyerarşi görürsünüz:  
   
 ```  
@@ -53,15 +53,15 @@ Editor
   
  DSL Gezgini bu kısmında, şunları yapabilirsiniz:  
   
--   Yeni sekmeler oluşturun. Sekmeleri bölüm başlıkları araç kutusunda tanımlayın.  
+- Yeni sekmeler oluşturun. Sekmeleri bölüm başlıkları araç kutusunda tanımlayın.  
   
--   Yeni Araçları oluşturun.  
+- Yeni Araçları oluşturun.  
   
--   Araçlar kopyalayıp yeniden açın.  
+- Araçlar kopyalayıp yeniden açın.  
   
--   Listede araçları yukarı veya aşağı taşıyın.  
+- Listede araçları yukarı veya aşağı taşıyın.  
   
--   Sekmeler ve Araçları'nı silin.  
+- Sekmeler ve Araçları'nı silin.  
   
 > [!IMPORTANT]
 >  Eklemek veya DSL Gezgini içinde öğeleri yapıştırmak için Yeni düğümün dizinleriyle sağ tıklayın. Örneğin, bir aracı eklemek için sekmesinde sağ tıklayın ve **Araçları** düğümü. Sekme eklemek için sağ **Düzenleyicisi** düğümü.  
@@ -74,38 +74,38 @@ Editor
   
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Araç kutusuna bir aracı eklemek için  
   
-1.  Bir şeklin sınıfını oluşturup bir etki alanı sınıfı için eşlenmiş sonra genellikle bir öğe aracı oluşturun.  
+1. Bir şeklin sınıfını oluşturup bir etki alanı sınıfı için eşlenmiş sonra genellikle bir öğe aracı oluşturun.  
   
      Bağlayıcı sınıfı oluşturup bir başvuru ilişkisi için eşlenmiş sonra genellikle bir bağlayıcı aracını oluşturun.  
   
-2.  DSL Gezgini'nde **Düzenleyicisi** düğüm ve **araç kutusu sekmeleri** düğümü.  
+2. DSL Gezgini'nde **Düzenleyicisi** düğüm ve **araç kutusu sekmeleri** düğümü.  
   
      Araç kutusu sekmesi düğümüne sağ tıklayın ve ardından **yeni öğe aracı ekleme** veya **ekleme yeni bağlantı aracını**.  
   
-3.  Ayarlama **araç kutusu simgesi** 16 x 16 bit eşleme başvurmak için özellik.  
+3. Ayarlama **araç kutusu simgesi** 16 x 16 bit eşleme başvurmak için özellik.  
   
      Rapordaki yeni simge tanımlamak istiyorsanız, Çözüm Gezgini içindeki bir bit eşlem dosyası oluştur **Dsl\Resources** klasör. Dosyada, aşağıdaki özellik değerlerini olmalıdır: **Derleme eylemi** = **içerik**; **Çıkış dizinine Kopyala** = **kopyalamayın**.  
   
-4.  **Öğe araç için:** Ayarlama **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.  
+4. **Öğe araç için:** Ayarlama **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.  
   
      **Bağlayıcı aracı için:** Ayarlama **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.  
   
-5.  DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], örnek model dosyasını açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.  
+5. DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], örnek model dosyasını açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.  
   
      Aracı görünmüyorsa, Deneysel Durdur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Windows içinde **Başlat** menüsü çalıştırma **Microsoft Visual Studio 2010 Deneysel örneğini sıfırlama**. Üzerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **derleme** menüsünde tıklatın **çözümü yeniden derle**. DSL yeniden sınayın.  
   
-##  <a name="customizing"></a> Öğe araçlarını özelleştirme  
+## <a name="customizing"></a> Öğe araçlarını özelleştirme  
  Varsayılan olarak, aracı belirtilen sınıf tek bir örneğini oluşturur, ancak bu iki yolla değişebilir:  
   
--   Öğe birleştirme yönergeleri Bu sınıfın yeni örneklerini kabul etmelerine izin etkinleştirme ve bunları yeni bir öğe oluşturulduğunda ek bağlantılar oluşturmak etkinleştirmek diğer sınıflarında tanımlayın. Örneğin, kullanıcının başka bir öğenin üzerine yorum bırakın izin verin ve böylece ikisi arasında bir referans bağlantı oluşturun.  
+- Öğe birleştirme yönergeleri Bu sınıfın yeni örneklerini kabul etmelerine izin etkinleştirme ve bunları yeni bir öğe oluşturulduğunda ek bağlantılar oluşturmak etkinleştirmek diğer sınıflarında tanımlayın. Örneğin, kullanıcının başka bir öğenin üzerine yorum bırakın izin verin ve böylece ikisi arasında bir referans bağlantı oluşturun.  
   
      Kullanıcı yapıştırabilir veya sürüklediğinde ve bir öğeyi aşağı doğru ne olur, bu özelleştirmeler de etkiler.  
   
      Daha fazla bilgi için [özelleştirme öğe oluşturma ve hareketini](../modeling/customizing-element-creation-and-movement.md).  
   
--   Öğelerin gruplar oluşturabilmesi aracı özelleştirmek için kod yazın. Araç, geçersiz kılabilirsiniz ToolboxHelper.cs yöntemleri tarafından başlatılır. Daha fazla bilgi için [oluşturma grupları öğeleri aracından](#groups).  
+- Öğelerin gruplar oluşturabilmesi aracı özelleştirmek için kod yazın. Araç, geçersiz kılabilirsiniz ToolboxHelper.cs yöntemleri tarafından başlatılır. Daha fazla bilgi için [oluşturma grupları öğeleri aracından](#groups).  
   
-##  <a name="groups"></a> Bir aracından öğelerin grupları oluşturma  
+## <a name="groups"></a> Bir aracından öğelerin grupları oluşturma  
  Her öğe araç oluşturması gereken öğelerin bir prototip içeriyor. Varsayılan olarak, her öğe aracı, tek bir öğe oluşturur, ancak bir aracı ile ilgili nesneler bir grup oluşturmak mümkündür. Bunu yapmak için aracı ile başlatılamıyor. bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> , ilgili öğeleri içerir.  
   
  Aşağıdaki örnek, bir tür transistör olduğu DSL'de alınır. Her transistör üç adlandırılmış terminaller sahiptir. Öğe araç transistörler için dört model öğelerini ve üç ilişki bağlantılarını içeren bir prototip depolar. Kullanıcı araç diyagram üzerine sürüklediğinde, prototip örneği ve model köküne bağlanır.  
@@ -155,7 +155,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a> Bağlantı araçlarını özelleştirme  
+## <a name="connections"></a> Bağlantı araçlarını özelleştirme  
  Genellikle, yeni bir bağlayıcı sınıfı oluşturduğunuzda, bir öğe aracı oluşturun. Alternatif olarak, bir aracı ilişki türünü belirlemek için iki ucu türleri sağlayarak aşırı yüklenebilir. Örneğin, kişi yüze ilişkileri hem kişi belediye ilişkileri oluşturabilir bir bağlantı aracını tanımlayabilirsiniz.  
   
  Bağlantı Araçları bağlantı oluşturucular çağırın. Bağlantı oluşturucular kullanıcılar oluşturulan tasarımcıda öğeleri nasıl bağlayabilirsiniz belirtmek için kullanın. Bağlantı oluşturucular bağlanabilir öğelerin ve bunlar arasında oluşturulan bağlantı türünü belirtin.  

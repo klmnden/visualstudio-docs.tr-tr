@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089360"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Bu projeyi oluşturmak için kullanılan çalışma kitabı tasarımcının yükleyemeyeceği ActiveX denetimleri içeriyor
   Bu hata, bir Word belgesi için bir denetim eklediğinizde veya Excel çalışma programlı olarak belge veya çalışma kitabını kaydedin ve belge veya çalışma kitabını temel alan yeni bir belge düzeyi çözümü oluşturup görüntülenir.
@@ -26,11 +26,11 @@ ms.locfileid: "56638198"
 
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1.  Belge veya çalışma kitabını açın.
+1. Belge veya çalışma kitabını açın.
 
-2.  Çalışma zamanında eklenen denetimlerini kaldırma. Belge veya çalışma kitabı ve tuşlarına basarak seçerek bunu yapabilirsiniz **Sil** anahtarı.
+2. Çalışma zamanında eklenen denetimlerini kaldırma. Belge veya çalışma kitabı ve tuşlarına basarak seçerek bunu yapabilirsiniz **Sil** anahtarı.
 
-3.  Belge veya çalışma kitabını temel alan bir belge düzeyi çözümü oluşturun.
+3. Belge veya çalışma kitabını temel alan bir belge düzeyi çözümü oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md)

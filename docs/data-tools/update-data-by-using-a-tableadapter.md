@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 546ca45ed48f9fc247bd5706005153f41cf206e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082405"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter kullanarak verileri güncelleştirme
 
@@ -34,11 +34,11 @@ Veri kümenizdeki verileri değiştiren ve doğrulanmış sonra güncelleştiril
 
  Tam bir veri kaynağını güncelleştirme yordamı, iş gereksinimlerinize bağlı olarak farklılık gösterebilir, ancak aşağıdaki adımları içerir:
 
-1.  Bağdaştırıcının çağrı `Update` yönteminde bir `try` / `catch` blok.
+1. Bağdaştırıcının çağrı `Update` yönteminde bir `try` / `catch` blok.
 
-2.  Bir özel durum yakalandığında, hataya neden olan veri satırı bulun.
+2. Bir özel durum yakalandığında, hataya neden olan veri satırı bulun.
 
-3.  Sorun verilerinde mutabakat (program aracılığıyla yapabilirsiniz veya kullanıcıya değiştirilmesi için geçersiz satır sunarak) öğesini ve ardından güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Sorun verilerinde mutabakat (program aracılığıyla yapabilirsiniz veya kullanıcıya değiştirilmesi için geçersiz satır sunarak) öğesini ve ardından güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
 
 ## <a name="save-data-to-a-database"></a>Verileri bir veritabanına kaydetme
 
@@ -46,7 +46,7 @@ Veri kümenizdeki verileri değiştiren ve doğrulanmış sonra güncelleştiril
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>Bir TableAdapter'ı kullanarak bir veritabanını güncelleştirmek için
 
--   TableAdapter bağdaştırıcısının içine`Update` yönteminde bir `try` / `catch` blok. Aşağıdaki örnek, içeriği güncelleştirmek gösterilmektedir `Customers` tablosundaki `NorthwindDataSet` içinden bir `try` / `catch` blok.
+- TableAdapter bağdaştırıcısının içine`Update` yönteminde bir `try` / `catch` blok. Aşağıdaki örnek, içeriği güncelleştirmek gösterilmektedir `Customers` tablosundaki `NorthwindDataSet` içinden bir `try` / `catch` blok.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

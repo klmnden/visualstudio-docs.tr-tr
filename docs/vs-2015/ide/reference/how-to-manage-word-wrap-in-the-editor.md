@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088047"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ay
   
 #### <a name="to-set-word-wrap-preferences"></a>Sözcük kaydırmayı tercihleri ayarlamak için  
   
-1.  Üzerinde **Araçları** menüsünde **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünde **seçenekleri**.  
   
-2.  İçinde **metin düzenleyici** klasörü seçin **genel** seçeneklerini **tüm diller** genel olarak bu seçeneği ayarlamak için alt.  
+2. İçinde **metin düzenleyici** klasörü seçin **genel** seçeneklerini **tüm diller** genel olarak bu seçeneği ayarlamak için alt.  
   
      — veya —  
   
      Seçin **genel** alt programlama dili için Seçenekler.  
   
-3.  Altında **ayarları**seçin veya temizleyin **sözcük kaydırmayı** seçeneği.  
+3. Altında **ayarları**seçin veya temizleyin **sözcük kaydırmayı** seçeneği.  
   
      Zaman **sözcük kaydırmayı** seçeneği belirlenmişse **sözcük kaydırma için görsel karakterleri Göster** seçeneği etkinleştirilir.  
   
-4.  Seçin **sözcük kaydırma için görsel karakterleri Göster** burada bir uzun satır sarmalar ikinci satıra bir dönüş ok göstergesi görüntülenmesini isterseniz seçeneği. Gösterge oklar görüntülenmemesi isterseniz bu seçeneği temizleyin.  
+4. Seçin **sözcük kaydırma için görsel karakterleri Göster** burada bir uzun satır sarmalar ikinci satıra bir dönüş ok göstergesi görüntülenmesini isterseniz seçeneği. Gösterge oklar görüntülenmemesi isterseniz bu seçeneği temizleyin.  
   
     > [!NOTE]
     >  Bu anımsatıcı okları kodunuza eklenmez: yalnızca görüntüleme amacıyla oldukları.  

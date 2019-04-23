@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114775"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 
@@ -85,7 +85,7 @@ Bazı durumlarda, bir kod Düzenleyicisi'ni veya tasarım yüzeyine oluştururke
 
 ![Araçlar &gt; Seçenekleri iletişim kutusu](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "a_ToolsOptionsDialog 0301")<br />Araçlar &gt; Seçenekleri iletişim kutusu
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor hizmeti
+## <a name="BKMK_TheVSColorService"></a> VSColor hizmeti
 
 Visual Studio VSColor hizmeti veya kabuk renk hizmeti olarak da bilinir bir ortam rengi hizmeti sağlar. Bu hizmet, kullanıcı Arabirimi öğeleri renk değerlerini ayarlamak için her bir Tema renkleri içeren bir ad-değer rengi bağlamak sağlar. Renkleri otomatik olarak geçerli bir kullanıcı tarafından seçilen tema yansıtacak şekilde değişir ve böylece kullanıcı Arabirimi ortam rengi hizmetine bağlı yeni temalarınızı gelecekte Visual Studio sürümlerini tümleştirme VSColor hizmeti tüm kullanıcı Arabirimi öğeleri için kullanılmalıdır.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Yüksek Karşıtlık renklerini seçme
+## <a name="BKMK_ChoosingHighContrastColors"></a> Yüksek Karşıtlık renklerini seçme
 
 ### <a name="overview"></a>Genel Bakış
 
@@ -330,7 +330,7 @@ Yüksek Karşıtlık renklerini tanımlanmış birçok ortak kullanıcı Arabiri
 | WindowFrame | -IDE kenarlık |
 | WindowText | -Otomatik gizleme sekmesini ön plan<br />-Seçili aracı penceresi sekmesini ön plan<br />-Odaklanmadan belge penceresi sekmesinin ve plana odaklanmadan veya seçili geçici sekmesinde ön plan<br />-Ağaç görünüm varsayılan ön plan ve vurgulu içinde seçili olmayan karakter<br />-Araç penceresi seçili sekme kenarlığı<br />-Thumb arka plan, kenarlık ve glif kaydırın |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Son kullanıcılar için renk gösterme
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Son kullanıcılar için renk gösterme
 
 ### <a name="overview"></a>Genel Bakış
 

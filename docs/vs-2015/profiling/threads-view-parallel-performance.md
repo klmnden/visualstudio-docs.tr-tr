@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114801"
 ---
 # <a name="threads-view-parallel-performance"></a>İş Parçacıkları Görünümü (Paralel Performans)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "54756810"
 ## <a name="usage"></a>Kullanım  
  İş Parçacıkları görünümü kullanabileceğiniz bazı yollar şunlardır:  
   
--   Kullanıcı Arabirimi (UI) bir uygulamanın belirli yürütme aşamaları sırasında yanıt vermiyor neden nedeniyle belirleyin.  
+- Kullanıcı Arabirimi (UI) bir uygulamanın belirli yürütme aşamaları sırasında yanıt vermiyor neden nedeniyle belirleyin.  
   
--   Eşitleme, g/ç, sayfa hataları ve diğer olayları engelleme harcadığı süre miktarını belirleyin.  
+- Eşitleme, g/ç, sayfa hataları ve diğer olayları engelleme harcadığı süre miktarını belirleyin.  
   
--   Sistemde yürütülen diğer işlemleri girişime derecesini tanımlayın.  
+- Sistemde yürütülen diğer işlemleri girişime derecesini tanımlayın.  
   
--   Paralel yürütme için Yük Dengeleme sorunları belirleyin.  
+- Paralel yürütme için Yük Dengeleme sorunları belirleyin.  
   
--   (Daha mantıksal çekirdekler kullanılabilir olduğunda, paralel bir uygulaması performansını iyileştirmez nedeni) yetersiz ya da yok ölçeklenebilirlik nedenlerini belirleyin.  
+- (Daha mantıksal çekirdekler kullanılabilir olduğunda, paralel bir uygulaması performansını iyileştirmez nedeni) yetersiz ya da yok ölçeklenebilirlik nedenlerini belirleyin.  
   
--   Uygulamasındaki paralelleştirme, yardımcı olmak için eşzamanlılık derecesini anlayın.  
+- Uygulamasındaki paralelleştirme, yardımcı olmak için eşzamanlılık derecesini anlayın.  
   
--   Çalışan iş parçacıkları ve kritik yürütme yollarına arasında bağımlılıklar anlayın.  
+- Çalışan iş parçacıkları ve kritik yürütme yollarına arasında bağımlılıklar anlayın.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Belirli zaman aralıkları ve iş parçacığı İnceleme  
  İş Parçacıkları görünümü zaman çizelgesi gösterir. Yakınlaştırma ve kaydırma belirli aralıklarla ve uygulamanızın iş parçacıklarını incelemek için zaman çizelgesi içinde. X ekseninde zaman ve y ekseninde çeşitli kanallar:  

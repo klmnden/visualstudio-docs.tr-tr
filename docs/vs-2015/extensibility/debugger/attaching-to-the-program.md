@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0caeb922ecf908f56d9792e6363ac66c339c53e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088697"
 ---
 # <a name="attaching-to-the-program"></a>Programa Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,16 +45,16 @@ Programlarınızın uygun bağlantı noktası ile kaydettikten sonra hata ayıkl
   
   Sonra `IDebugEngine2::Attach` yöntemi çağrıldığında, uygulamanızda adımları `IDebugEngine2::Attach` yöntemi:  
   
-1.  Gönderme bir [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM olay nesnesiyle. Daha fazla bilgi için [olayları gönderme](../../extensibility/debugger/sending-events.md).  
+1. Gönderme bir [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM olay nesnesiyle. Daha fazla bilgi için [olayları gönderme](../../extensibility/debugger/sending-events.md).  
   
-2.  Çağrı [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metodunda [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) geçildi nesne `IDebugEngine2::Attach` yöntemi.  
+2. Çağrı [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metodunda [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) geçildi nesne `IDebugEngine2::Attach` yöntemi.  
   
      Bu döndürür bir `GUID` program tanımlamak için kullanılır. `GUID` Temsil yerel için DE program ve bunu ne zaman döndürülmelidir nesnede depolanan `IDebugProgram2::GetProgramId` yöntemi çağrıldığında `IDebugProgram2` arabirimi.  
   
     > [!NOTE]
     >  Uygularsanız `IDebugProgramNodeAttach2` arabirim, programın `GUID` geçirilir `IDebugProgramNodeAttach2::OnAttach` yöntemi. Bu `GUID` programın için kullanılan `GUID` tarafından döndürülen `IDebugProgram2::GetProgramId` yöntemi.  
   
-3.  Gönder bir [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM bildirmek üzere olay nesnesi, yerel `IDebugProgram2` nesne program için DE göstermek için oluşturuldu. Ayrıntılar için bkz [olayları gönderme](../../extensibility/debugger/sending-events.md).  
+3. Gönder bir [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) SDM bildirmek üzere olay nesnesi, yerel `IDebugProgram2` nesne program için DE göstermek için oluşturuldu. Ayrıntılar için bkz [olayları gönderme](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
     >  Bu aynı değil `IDebugProgram2` yöntemlere geçirilen nesne `IDebugEngine2::Attach` yöntemi. Daha önce geçirilen `IDebugProgram2` nesne yalnızca bağlantı noktası tarafından kabul edilir ve ayrı bir nesnedir.  

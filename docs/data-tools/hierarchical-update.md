@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089321"
 ---
 # <a name="hierarchical-update"></a>Hiyerarşik güncelleştirme
 
@@ -87,9 +87,9 @@ Oluşturulan kodu kaydetmek bir çağıran kod satırı içerecek `CustomersBind
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Kod değişiklikleri kaydetmeden önce ilişkili tabloları için güncelleştirmek için
 
-1.  Çift **Kaydet** düğmesini <xref:System.Windows.Forms.BindingNavigator> açmak için **Form1** Kod Düzenleyicisi'nde.
+1. Çift **Kaydet** düğmesini <xref:System.Windows.Forms.BindingNavigator> açmak için **Form1** Kod Düzenleyicisi'nde.
 
-2.  Çağırmak için kod satırını ekleyin `OrdersBindingSource.EndEdit` yöntemi çağıran satırdan `CustomersBindingSource.EndEdit` yöntemi. Kodda **Kaydet** düğmesi tıklamasından olay aşağıdaki benzemesi gerekir:
+2. Çağırmak için kod satırını ekleyin `OrdersBindingSource.EndEdit` yöntemi çağıran satırdan `CustomersBindingSource.EndEdit` yöntemi. Kodda **Kaydet** düğmesi tıklamasından olay aşağıdaki benzemesi gerekir:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ Verileri bir veritabanına kaydetme önce ilgili alt tablo üzerinde değişikli
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Yeni alt kayıtları eklemeden önce üst kayıtlar veri kümesini yürütmek için kodu eklemek için
 
-1.  İçin bir olay işleyicisi oluşturun `OrdersBindingSource.AddingNew` olay.
+1. İçin bir olay işleyicisi oluşturun `OrdersBindingSource.AddingNew` olay.
 
-    -   Açık **Form1** Tasarım görünümünde seçin **OrdersBindingSource** bileşen tepsisinde seçin **olayları** içinde **özellikleri** penceresinde ve ardından çift **AddingNew** olay.
+    - Açık **Form1** Tasarım görünümünde seçin **OrdersBindingSource** bileşen tepsisinde seçin **olayları** içinde **özellikleri** penceresinde ve ardından çift **AddingNew** olay.
 
-2.  Çağıran olay işleyicisine kod satırını ekleyin `CustomersBindingSource.EndEdit` yöntemi. Kodda `OrdersBindingSource_AddingNew` olay işleyicisi aşağıdaki benzemesi gerekir:
+2. Çağıran olay işleyicisine kod satırını ekleyin `CustomersBindingSource.EndEdit` yöntemi. Kodda `OrdersBindingSource_AddingNew` olay işleyicisi aşağıdaki benzemesi gerekir:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]

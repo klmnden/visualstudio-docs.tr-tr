@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47fb4084e54915e44e79c3da2e50a418d2d8cc39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 117d9c57ae5c4a4fbb76a6168fdd6667f3ed6869
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091895"
 ---
 # <a name="unable-to-attach-to-the-process"></a>İşleme İliştirilemiyor
 İşleme iliştirilemiyor. Hata ayıklayıcı bileşeni sunucuda bu makineye bağlanırken erişim aldı.
@@ -38,26 +38,26 @@ ms.locfileid: "56693184"
 
 ### <a name="to-solve-scenario-1"></a>Senaryo 1 çözmek için
 
--   Hata ayıklayıcı ve yönetilen uygulama aynı kullanıcı hesabı adı ve parola altında çalıştırın.
+- Hata ayıklayıcı ve yönetilen uygulama aynı kullanıcı hesabı adı ve parola altında çalıştırın.
 
 ### <a name="to-solve-scenario-2"></a>Senaryo 2 çözmek için
 
-1.  Gelen **Başlat** menüsünde seçin **Denetim Masası**.
+1. Gelen **Başlat** menüsünde seçin **Denetim Masası**.
 
-2.  Denetim Masası'ndaki çift **Yönetimsel Araçlar**.
+2. Denetim Masası'ndaki çift **Yönetimsel Araçlar**.
 
-3.  Yönetimsel Araçlar penceresinde, **yerel güvenlik ilkesi**.
+3. Yönetimsel Araçlar penceresinde, **yerel güvenlik ilkesi**.
 
-4.  Yerel Güvenlik İlkesi penceresinde **yerel ilkeler**.
+4. Yerel Güvenlik İlkesi penceresinde **yerel ilkeler**.
 
-5.  İçinde **ilkeleri** sütunu, çift **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli**.
+5. İçinde **ilkeleri** sütunu, çift **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli**.
 
-6.  İçinde **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** iletişim kutusunda, yerel güvenlik ayarını **Klasik**, tıklatıp **Tamam**.
+6. İçinde **ağ erişimi: Yerel hesaplar için paylaşım ve güvenlik modeli** iletişim kutusunda, yerel güvenlik ayarını **Klasik**, tıklatıp **Tamam**.
 
     > [!CAUTION]
     >  Güvenlik modeli Klasik olarak değiştirilmesi beklenmeyen Access'te paylaşılan dosyaları ve DCOM bileşenleri için neden olabilir. Bu değişiklik yaparsanız, uzak bir kullanıcı, yerel kullanıcı hesabı yerine ile Konuk kimlik doğrulaması yapabilir. Uzak bir kullanıcı, kullanıcı adınızı ve parolanızı eşleşiyorsa, bu kullanıcı herhangi bir klasör veya DCOM nesne dışarı paylaştığı erişebilir olacaktır. Bu güvenlik modeli kullandığınız makinedeki tüm kullanıcı hesaplarını güçlü parolalar veya hata ayıklama için bir yalıtılmış ağ Adası ayarlama ve yetkisiz erişimi önlemek için makineleri hata ayıklaması emin olun.
 
-7.  Tüm pencereleri kapatın.
+7. Tüm pencereleri kapatın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Hata Ayıklayıcısı Ayarları ve Hazırlığı](../debugger/debugger-settings-and-preparation.md)

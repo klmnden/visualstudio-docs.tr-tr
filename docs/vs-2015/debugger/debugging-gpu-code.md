@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f48baa33577bc383e48b6535fef0a8448836609e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114138"
 ---
 # <a name="debugging-gpu-code"></a>GPU Kodunda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
 ## <a name="configuring-gpu-debugging"></a>GPU hata ayıklama yapılandırma  
  Hata ayıklayıcı, hem CPU kod hem de GPU kodu aynı uygulama yürütme kesemez. Varsayılan olarak, hata ayıklayıcı CPU kodu keser. GPU kodunda hata ayıklamak için aşağıdaki iki adımlardan birini kullanın:  
   
--   İçinde **hata ayıklama türü** listesini **standart** araç seçin **yalnızca GPU**.  
+- İçinde **hata ayıklama türü** listesini **standart** araç seçin **yalnızca GPU**.  
   
--   İçinde **Çözüm Gezgini**, projenin kısayol menüsünde **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda **hata ayıklama**ve ardından **yalnızca GPU** içinde **hata ayıklayıcı türü** listesi.  
+- İçinde **Çözüm Gezgini**, projenin kısayol menüsünde **özellikleri**. İçinde **özellik sayfaları** iletişim kutusunda **hata ayıklama**ve ardından **yalnızca GPU** içinde **hata ayıklayıcı türü** listesi.  
   
 ## <a name="launching-and-attaching-to-applications"></a>Başlatma ve uygulamalarına iliştirme  
  Visual Studio hata ayıklama komutları başlatmak ve GPU hata ayıklamayı durdurmak için kullanabilirsiniz. Daha fazla bilgi için [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md). Bu işlemin GPU kodu yürütür, GPU hata ayıklayıcısı ancak çalışan bir işleme ekleyebilirsiniz. Daha fazla bilgi için [çalışan işlemlere ekleme](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
@@ -45,22 +45,22 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>İmleç ve imlece kadar Çalıştır geçerli parçayı Çalıştır  
  GPU üzerinde hata ayıklama için İmleç konumuna çalıştırmak için iki seçeneğiniz vardır. Her iki seçenek için komutlar, kod düzenleyicinin kısayol menüsünden kullanılabilir.  
   
-1.  **İmlece kadar Çalıştır** İmleç konumuna ulaşıncaya ve sonra kesildiğinde kadar uygulamanız komutu çalıştırır. Bu, geçerli iş parçacığının imlece çalıştırıldığında göstermez; Bunun yerine, imleç noktasına ulaştığında ilk iş parçacığında sonu tetikler anlamına gelir. Bkz: [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)  
+1. **İmlece kadar Çalıştır** İmleç konumuna ulaşıncaya ve sonra kesildiğinde kadar uygulamanız komutu çalıştırır. Bu, geçerli iş parçacığının imlece çalıştırıldığında göstermez; Bunun yerine, imleç noktasına ulaştığında ilk iş parçacığında sonu tetikler anlamına gelir. Bkz: [hata ayıklayıcısı ile kodlarda gezinme](../debugger/navigating-through-code-with-the-debugger.md)  
   
-2.  **İmlece kadar geçerli Kutucuğuna çalıştırma** komutu tüm iş parçacıklarının geçerli kutucuğunda imleç ve ardından sonları ulaşana kadar uygulamanızı çalıştırır.  
+2. **İmlece kadar geçerli Kutucuğuna çalıştırma** komutu tüm iş parçacıklarının geçerli kutucuğunda imleç ve ardından sonları ulaşana kadar uygulamanızı çalıştırır.  
   
 ## <a name="debugging-windows"></a>Windows hata ayıklama  
  Belirli hata ayıklama pencerelerini kullanarak, inceleyin, bayrak ve GPU iş parçacıklarını Dondur. Daha fazla bilgi için bkz.:  
   
--   [Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)  
+- [Paralel Yığınlar Penceresini Kullanma](../debugger/using-the-parallel-stacks-window.md)  
   
--   [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)  
+- [Görevleri Penceresini Kullanma](../debugger/using-the-tasks-window.md)  
   
--   [Nasıl yapılır: Paralel İzleme Penceresini Kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [Nasıl yapılır: Paralel İzleme Penceresini Kullanma](../debugger/how-to-use-the-parallel-watch-window.md)  
   
--   [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md) (hata ayıklama konumu araç çubuğu)  
+- [İş parçacıklarında ve işlemlerde hata ayıklama](../debugger/debug-threads-and-processes.md) (hata ayıklama konumu araç çubuğu)  
   
--   [Nasıl yapılır: GPU İş Parçacıkları Penceresini Kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
+- [Nasıl yapılır: GPU İş Parçacıkları Penceresini Kullanma](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Veri eşitleme özel durumları  
  Hata ayıklayıcı yürütme sırasında birkaç veri eşitleme koşullar tanımlayabilirsiniz. Bir koşul algılandığında, hata ayıklayıcı kesme durumuna girer. İki seçeneğiniz vardır —**sonu** veya **devam**. Kullanarak **özel durumları** iletişim kutusu, hata ayıklayıcı Bu koşullar algılar ve ayrıca hangi koşullar Bu için keser olup olmadığını yapılandırabilirsiniz. Daha fazla bilgi için [yönetme özel durumları hata ayıklayıcısı ile](../debugger/managing-exceptions-with-the-debugger.md). Ayrıca **seçenekleri** yazılan veriler veri değerini değiştirmez, hata ayıklayıcısını özel durumlar yoksayması gerektiğini belirtmek için iletişim kutusu. Daha fazla bilgi için [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  
@@ -68,7 +68,7 @@ Grafik işlemci birimi (GPU) üzerinde çalışan C++ kodu hata ayıklaması yap
 ## <a name="troubleshooting"></a>Sorun giderme  
   
 ### <a name="specifying-an-accelerator"></a>Bir Hızlandırıcı belirtme  
- Kod çalışıyorsa, GPU kodda kesme noktaları isabet yalnızca [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) Hızlandırıcı. Kodunuzda bir Hızlandırıcı belirtmezseniz, REF Hızlandırıcı olarak otomatik olarak seçilir **hata ayıklama Hızlandırıcı türü** proje özelliklerinde. Kodunuzu açıkça bir Hızlandırıcı seçerse, REF Hızlandırıcı, hata ayıklama sırasında kullanılmaz ve hata ayıklama desteği, GPU donanım sahip olmadığı sürece kesme noktaları isabet edilmeyecektir. Hata ayıklama sırasında REF Hızlandırıcısını kullanır, böylece kod yazarak bunu çözebilirsiniz. Daha fazla bilgi için bkz: Proje özelliklerini ve [Hızlandırıcı ve accelerator_view nesnelerini kullanma](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) ve [C++ hata ayıklama yapılandırması proje ayarları](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Kod çalışıyorsa, GPU kodda kesme noktaları isabet yalnızca [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) Hızlandırıcı. Kodunuzda bir Hızlandırıcı belirtmezseniz, REF Hızlandırıcı olarak otomatik olarak seçilir **hata ayıklama Hızlandırıcı türü** proje özelliklerinde. Kodunuzu açıkça bir Hızlandırıcı seçerse, REF Hızlandırıcı, hata ayıklama sırasında kullanılmaz ve hata ayıklama desteği, GPU donanım sahip olmadığı sürece kesme noktaları isabet edilmeyecektir. Hata ayıklama sırasında REF Hızlandırıcısını kullanır, böylece kod yazarak bunu çözebilirsiniz. Daha fazla bilgi için bkz: Proje özelliklerini ve [Hızlandırıcı ve accelerator_view nesnelerini kullanma](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) ve [proje ayarları bir C++ hata ayıklama Yapılandırması](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Koşullu kesme noktaları  
  GPU kodunda koşullu kesme noktaları desteklenir ancak her ifade cihazda değerlendirilebilir. Cihazda bir ifade değerlendirilemiyor, hata ayıklayıcıyı değerlendirilir. Hata ayıklayıcı, cihaz daha yavaş çalışmasına olasıdır.  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081846"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Nasıl yapılır: Otomatik olarak artırma ClickOnce yayım sürümü
 
@@ -35,11 +35,11 @@ Bu davranışı devre dışı bırakabilirsiniz **Yayımla** sayfasının **Proj
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Yayınlama sürümünü otomatik olarak artırma devre dışı bırakmak için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  İçinde **yayımlama sürümü** bölümünde, NET **her yayında düzeltmeyi otomatik artış** onay kutusu.
+3. İçinde **yayımlama sürümü** bölümünde, NET **her yayında düzeltmeyi otomatik artış** onay kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

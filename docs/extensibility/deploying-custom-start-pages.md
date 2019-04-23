@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078258"
 ---
 # <a name="deploy-custom-start-pages"></a>Özel başlangıç sayfaları dağıtma
 
@@ -27,9 +27,9 @@ ms.locfileid: "57873017"
 
 Başlangıç sayfası proje şablonunu kullanarak bir başlangıç sayfası oluşturmak ve ardından projeyi oluşturun, Visual Studio oluşturur bir *.vsix* dağıtabileceğiniz dosya. Bir başlangıç sayfası paketleme bir *.vsix* dosyasını, hedef kitle bağlı olarak dağıtım için aşağıdaki seçenekleri sağlar:
 
--   Koyabilirsiniz *.vsix* dosyası bir ağ paylaşımına veya genel bir Web sitesi. Birisi bir dosyayı açtığında, başlangıç sayfası otomatik olarak yüklenir.
+- Koyabilirsiniz *.vsix* dosyası bir ağ paylaşımına veya genel bir Web sitesi. Birisi bir dosyayı açtığında, başlangıç sayfası otomatik olarak yüklenir.
 
--   Karşıya yüklediğiniz *.vsix* dosyasını [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi kullanıcılar kullanarak yükleyebilir **Uzantı Yöneticisi**.
+- Karşıya yüklediğiniz *.vsix* dosyasını [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesi kullanıcılar kullanarak yükleyebilir **Uzantı Yöneticisi**.
 
 Böylece değiştirebilir ve orijinal korumak başlangıç sayfası proje şablonu Visual Studio Başlangıç sayfası varsayılan bir kopyasını oluşturur.
 
@@ -62,9 +62,9 @@ Başlangıç sayfası paketinizi derlemeleri içerir, böylece Visual Studio ba�
 
 ### <a name="to-create-an-all-users-deployment"></a>Tüm kullanıcılar dağıtımı oluşturmak için
 
-1.  Açık *extension.vsixmanifest* dosyasında kod görünümü.
+1. Açık *extension.vsixmanifest* dosyasında kod görünümü.
 
-2.  İçinde `Identifier` VSIX bildirimi öğesi < ekleme bir `AllUsers` değerine sahip öğe `true`.
+2. İçinde `Identifier` VSIX bildirimi öğesi < ekleme bir `AllUsers` değerine sahip öğe `true`.
 
     ```
     <AllUsers>true</AllUsers>
@@ -72,9 +72,9 @@ Başlangıç sayfası paketinizi derlemeleri içerir, böylece Visual Studio ba�
 
      Bu VSIX Yükleyicisi için yönetici izinleri ister ve ardından dosyaları yüklemek neden *\Common7\IDE\Extensions*.
 
-3.  Açık *.pkgdef* dosya.
+3. Açık *.pkgdef* dosya.
 
-4.  Değiştirme *.pkgdef* aşağıdakileri ekleyerek HKLM altında varsayılan başlangıç sayfasını ayarlama burada *MyStartPage.xaml* adıdır *.xaml* başlatma içeren dosya Sayfa.
+4. Değiştirme *.pkgdef* aşağıdakileri ekleyerek HKLM altında varsayılan başlangıç sayfasını ayarlama burada *MyStartPage.xaml* adıdır *.xaml* başlatma içeren dosya Sayfa.
 
      [$RootKey$\StartPage\Default]
 
@@ -89,11 +89,11 @@ Başlangıç sayfası paketinizi derlemeleri içerir, böylece Visual Studio ba�
 
 ### <a name="to-manually-install-a-custom-start-page"></a>El ile özel bir başlangıç sayfası yüklemek için
 
-1.  Kopyalama *.xaml* derlemeler dışındaki destek dosyalarıyla birlikte Başlangıç sayfası biçimlendirmesini içeren ve kullanıcının yapıştırın dosya * \StartPages\* klasör.
+1. Kopyalama *.xaml* derlemeler dışındaki destek dosyalarıyla birlikte Başlangıç sayfası biçimlendirmesini içeren ve kullanıcının yapıştırın dosya * \StartPages\* klasör.
 
-2.  Başlangıç sayfası derlemeleri gerektiriyorsa, bunları kopyalayıp bunları *... \\{Visual Studio yükleme klasörü} \Common7\IDE\PrivateAssemblies\\*.
+2. Başlangıç sayfası derlemeleri gerektiriyorsa, bunları kopyalayıp bunları *... \\{Visual Studio yükleme klasörü} \Common7\IDE\PrivateAssemblies\\*.
 
-3.  İçinde **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında, yeni başlangıç sayfası seçin. Daha fazla bilgi için [başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md).
+3. İçinde **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında, yeni başlangıç sayfası seçin. Daha fazla bilgi için [başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

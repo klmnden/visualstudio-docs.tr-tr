@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078778"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP uygulamalarında enerji kullanımını analiz etme
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Uygulamanız için enerji profili verilerini toplama
 
-1.  Üzerinde **hata ayıklama** menüsünde seçin **tanılama hata ayıklama olmadan Başlat**.
+1. Üzerinde **hata ayıklama** menüsünde seçin **tanılama hata ayıklama olmadan Başlat**.
 
      ![Enerji tüketimi tanılama hub'ı seçin.](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Seçin **enerji tüketimi** seçip **Başlat**.
+2. Seçin **enerji tüketimi** seçip **Başlat**.
 
     > [!NOTE]
     > Başladığınızda **enerji tüketimi** profil, bir **kullanıcı hesabı denetimi** çalıştırmak için izninizi isteyen bir pencere *Vsetwcollector.exe'yi*. Seçin **Evet**.
 
-3.  Veri toplamak için uygulamanızda alıştırma yapın.
+3. Veri toplamak için uygulamanızda alıştırma yapın.
 
-4.  Profil oluşturmayı durdurmak için Visual Studio'ya dönün (Alt + Sekme) ve seçin **koleksiyonu Durdur** tanılama hub'ı sayfasında.
+4. Profil oluşturmayı durdurmak için Visual Studio'ya dönün (Alt + Sekme) ve seçin **koleksiyonu Durdur** tanılama hub'ı sayfasında.
 
      ![Veri toplamayı durdurmak](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 

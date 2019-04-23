@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: brgeorge
 manager: jillfra
-ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3e36b9deb2d5837927d239232cafbcac15dfe406
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58158087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117518"
 ---
 # <a name="visual-language-dictionary"></a>Görsel dil sözlüğü
 
@@ -19,24 +19,24 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 
 ## <a name="general-guidelines"></a>Genel yönergeler
 
--   Görsel bu kavramları kendi sözlükten ile tutarlı bir şekilde kullanılması gerekir. Aksi takdirde, kafa karıştırıcı beklediğiniz tutarlı anlamları için ortak öğeler, kullanıcılar, risk.
+- Görsel bu kavramları kendi sözlükten ile tutarlı bir şekilde kullanılması gerekir. Aksi takdirde, kafa karıştırıcı beklediğiniz tutarlı anlamları için ortak öğeler, kullanıcılar, risk.
 
--   Böylece tanımayı NET ve kolay ayırt etmek yalnızca en ilgili ve önemli kavramlar kullanmak için simgeleri seçin.
+- Böylece tanımayı NET ve kolay ayırt etmek yalnızca en ilgili ve önemli kavramlar kullanmak için simgeleri seçin.
 
--   Her bir resim, yalnızca bir veya iki kavramları kullanın.
+- Her bir resim, yalnızca bir veya iki kavramları kullanın.
 
--   Tasarlama simgeler için daha fazla stratejileri için bkz [simgesi tasarım](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).
+- Tasarlama simgeler için daha fazla stratejileri için bkz [simgesi tasarım](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).
 
 **Bölümüne atla:**
 
-1.  [Kavramları A-Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
-2.  [Ürün ve platformlar](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
-3.  [Oklarını kullanarak genel kavramlar](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
-4.  [Durum göstergeleri](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+1. [Kavramları A-Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+2. [Ürün ve platformlar](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+3. [Oklarını kullanarak genel kavramlar](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+4. [Durum göstergeleri](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
 
-##  <a name="BKMK_VLDConcepts"></a> Kavramları A-Z
+## <a name="BKMK_VLDConcepts"></a> Kavramları A-Z
 
-###  <a name="BKMK_VLDConceptsA"></a> A
+### <a name="BKMK_VLDConceptsA"></a> A
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | - | - | - | - |
@@ -61,7 +61,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Ses kaydı** | ![Ses kaydı simgesi](../../extensibility/ux-guidelines/media/vld_c_audiorecording.png "VLD_C_AudioRecording") | ![Kayıt Sessiz simgesini](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordmute.png "VLD_C_AudioRecording_RecordMute")<br />Kayıt Sessiz<br />![Ekran ve ses kayıt simgesini](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice")<br />Kaydı ekran ve ses | |
 | **Toplam** | ![Sütunun simgesine](../../extensibility/ux-guidelines/media/vld_c_autosum.png "VLD_C_Autosum") | | |
 
-###  <a name="BKMK_VLDConceptsB"></a> B
+### <a name="BKMK_VLDConceptsB"></a> B
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **İş** | ![İş simgesi](../../extensibility/ux-guidelines/media/vld_c_business.png "VLD_C_Business") | ![İş modeli şablon simgesi](../../extensibility/ux-guidelines/media/vld_c_business_businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate")<br />İş modeli şablonu<br />![İş nesne veri kaynağı simgesi](../../extensibility/ux-guidelines/media/vld_c_business_businessobjectsdatasource.png "VLD_C_Business_BusinessObjectsDataSource")<br />İş nesne veri kaynağı<br />![Çevrimiçi iş simgesi](../../extensibility/ux-guidelines/media/vld_c_business_onlinebusiness.png "VLD_C_Business_OnlineBusiness")<br />Çevrimiçi iş ||
 | **Düğme** |![Düğme simgesi](../../extensibility/ux-guidelines/media/vld_c_button.png "VLD_C_Button") | ![Ekle düğmesi simgesi](../../extensibility/ux-guidelines/media/vld_c_button_addbutton.png "VLD_C_Button_AddButton")<br />Ekle düğmesi<br />![Görüntü düğmesinin simgesi](../../extensibility/ux-guidelines/media/vld_c_button_imagebutton.png "VLD_C_Button_ImageButton")<br />Resim düğmesi<br />![Bağlantılı düğmesinin simgesi](../../extensibility/ux-guidelines/media/vld_c_button_linkedbutton.png "VLD_C_Button_LinkedButton")<br />Bağlantılı düğmesi ||
 
-###  <a name="BKMK_VLDConceptsC"></a> C
+### <a name="BKMK_VLDConceptsC"></a> C
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -116,7 +116,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Özel ifade**<br />Tahmin | ![Özel ifade simgesi](../../extensibility/ux-guidelines/media/vld_c_customexpression.png "VLD_C_CustomExpression") | ![Veri madenciliği tahmini](../../extensibility/ux-guidelines/media/vld_c_customexpression_dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction")<br />Veri madenciliği tahmini ||
 | **Kes** | ![Simge Kes](../../extensibility/ux-guidelines/media/vld_c_cut.png "VLD_C_Cut") |||
 
-###  <a name="BKMK_VLDConceptsD"></a> D
+### <a name="BKMK_VLDConceptsD"></a> D
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -138,7 +138,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Dinamik** | ![Dinamik simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamic.png "VLD_C_Dynamic") | ![ASP.NET dinamik denetim simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamic_aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl")<br />ASP.NET dinamik denetim<br />![C&#35; dinamik veri Web sitesi simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamic_csdynamicdatawebsite.png "VLD_C_Dynamic_CSDynamicDataWebsite")<br />C# dinamik veri Web sitesi<br />![Dinamik Doğrulayıcı simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamic_dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator")<br />Dinamik Doğrulayıcı ||
 | **Dinamik değer** | ![Dinamik değerin simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue.png "VLD_C_DynamicValue") | ![Kopyalama dinamik değerin simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue")<br />Dinamik değerini kopyalayın<br />![Boş bir dinamik değerin simgesi](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue")<br />Boş bir dinamik değer ||
 
-###  <a name="BKMK_VLDConceptsE"></a> E
+### <a name="BKMK_VLDConceptsE"></a> E
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -152,7 +152,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Genişlet/Sözleşmesi** | ![Genişletme simgesini](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") ![sözleşme &#40;fiil&#41; simgesi](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract") || **Genişletin sözleşme** simgeler Düzen durumlarda iki öğe arasındaki boşluk sıkıştırılmış olduğunu belirtmek için kullanılır. |
 | **Dışarı aktarma**<br />*Aynı "Açık" olarak*| ![Dışarı aktarma simgesi](../../extensibility/ux-guidelines/media/vld_c_export.png "VLD_C_Export") | ![Dışarı aktarma filtre simgesi](../../extensibility/ux-guidelines/media/vld_c_export_exportfilter.png "VLD_C_Export_ExportFilter")<br />Verme Filtresi<br />![Rapor verileri dışarı aktarma simgesi](../../extensibility/ux-guidelines/media/vld_c_export_exportreportdata.png "VLD_C_Export_ExportReportData") <br />Rapor verilerini dışarı aktar<br />![Dışarı aktarma raporu filtre simgesi](../../extensibility/ux-guidelines/media/vld_c_export_exportreportfilter.png "VLD_C_Export_ExportReportFilter")<br />Rapor Filtresi dışarı aktarma ||
 
-###  <a name="BKMK_VLDConceptsF"></a> F
+### <a name="BKMK_VLDConceptsF"></a> F
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -169,7 +169,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Friend** | ![Arkadaş simgesi](../../extensibility/ux-guidelines/media/vld_c_friend.png "VLD_C_Friend") |||
 | **İşlevi**<br />İfade<br />*Aynı "Etkiler" ve "Değişken (Genel)"* | ![İşlev simgesi](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![İşlev uyarı simgesi](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />Uyarı işlevi<br />![WPF sayfası işlevi simgesi](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />WPF sayfa işlevi ||
 
-###  <a name="BKMK_VLDConceptsG"></a> G
+### <a name="BKMK_VLDConceptsG"></a> G
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -180,7 +180,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Kılavuz web düzeni** | ![Kılavuz web düzeni simgesi](../../extensibility/ux-guidelines/media/vld_c_gridweblayout.png "VLD_C_GridWebLayout") | ![Kılavuz öğesi simgesi](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridelement.png "VLD_C_GridWebLayout_GridElement")<br />Kılavuz öğesi<br />![Kılavuz ayırıcısı öğesi simgesi](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridsplitterelement.png "VLD_C_GridWebLayout_GridSplitterElement")<br />Kılavuz ayırıcı öğesi ||
 | **Gruplandırma** | ![Gruplandırma simgesi](../../extensibility/ux-guidelines/media/vld_c_grouping.png "VLD_C_Grouping") | ![İletişim grubu simgesi](../../extensibility/ux-guidelines/media/vld_c_grouping_dialoggroup.png "VLD_C_Grouping_DialogGroup")<br />İletişim kutusu grubu<br />![Takım simgesi](../../extensibility/ux-guidelines/media/vld_c_grouping_team.png "VLD_C_Grouping_Team")<br />Takım<br />![Sanal makineler simgesine](../../extensibility/ux-guidelines/media/vld_c_grouping_virtualmachines.png "VLD_C_Grouping_VirtualMachines")<br />Sanal makineler| Birden çok nesne birbirinin yığınlama kavramını temsil eder **gruplandırma** veya çokluğu. |
 
-###  <a name="BKMK_VLDConceptsH"></a> H
+### <a name="BKMK_VLDConceptsH"></a> H
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -188,7 +188,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Geçmişi** | ![Geçmiş simgesine](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
 | **Giriş** | ![Giriş simgesini](../../extensibility/ux-guidelines/media/vld_c_home.png "VLD_C_Home") | ![LightSwitch giriş ekranı simge](../../extensibility/ux-guidelines/media/vld_c_home_lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen")<br />LightSwitch giriş ekranı ||
 
-###  <a name="BKMK_VLDConceptsI"></a> BEN
+### <a name="BKMK_VLDConceptsI"></a> BEN
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -201,14 +201,14 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Arabirimi** | ![Arabirimi simgesi](../../extensibility/ux-guidelines/media/vld_c_interface.png "VLD_C_Interface") | ![Uygulama arabirimi simgesi](../../extensibility/ux-guidelines/media/vld_c_interface_implementinterface.png "VLD_C_Interface_ImplementInterface")<br />Arabirim uygulama ||
 | **Öğesi** | ![Öğesi simgesi](../../extensibility/ux-guidelines/media/vld_c_item.png "VLD_C_Item") | ![Kopya öğesi simgesi](../../extensibility/ux-guidelines/media/vld_c_item_copyitem.png "VLD_C_Item_CopyItem")<br />Öğeyi Kopyala<br />![Liste öğesi simgesi oluşturma](../../extensibility/ux-guidelines/media/vld_c_item_createlistitem.png "VLD_C_Item_CreateListItem")<br />Liste öğesi oluşturun<br />![Öğe içinde denetleyin](../../extensibility/ux-guidelines/media/vld_c_item_checkinitem.png "VLD_C_Item_CheckInItem")<br />Öğeyi iade ||
 
-###  <a name="BKMK_VLDConceptsK"></a> K
+### <a name="BKMK_VLDConceptsK"></a> K
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
 | **Key**<br />İzin, kimliği | ![Anahtar simgesi](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![Yeni bir anahtar simgesi](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />Yeni anahtar<br />![İzni simgesi](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />İzin<br />![Geçerli öğe kimliği simgesini](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />Geçerli öğe Kimliğini alın ||
 | **Ana performans göstergesinin (KPI)** | ![KPI simgesini](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![KPI simgesini silmek](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />KPI'yı Sil<br />![KPI Tarayıcı Görünümü simgesi](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />KPI tarayıcı görünümü<br />![Hata simgesi ile KPI](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />Hata ile KPI ||
 
-###  <a name="BKMK_VLDConceptsL"></a> M
+### <a name="BKMK_VLDConceptsL"></a> M
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -218,7 +218,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Günlük** | ![Günlük simgesi](../../extensibility/ux-guidelines/media/vld_c_log.png "VLD_C_Log") | ![Katalog özellikler simgesi](../../extensibility/ux-guidelines/media/vld_c_log_catalogproperties.png "VLD_C_Log_CatalogProperties")<br />Kataloğu özellikleri<br />![Eylem günlüğü simgesi](../../extensibility/ux-guidelines/media/vld_c_log_actionlog.png "VLD_C_Log_ActionLog")<br />Eylem günlüğü<br />![Bağlantı test planı simgesi](../../extensibility/ux-guidelines/media/vld_c_log_connecttestplan.png "VLD_C_Log_ConnectTestPlan")<br />Test planına bağlanın ||
 | **döngü** | ![Döngü simgesi](../../extensibility/ux-guidelines/media/vld_c_loop.png "VLD_C_Loop") | ![Ekleme veya koşullu döngü Simge Ekle](../../extensibility/ux-guidelines/media/vld_c_loop_addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop")<br />Ekleme veya koşullu döngü Ekle<br />![Koşullu döngü simgesi](../../extensibility/ux-guidelines/media/vld_c_loop_conditionalloop.png "VLD_C_Loop_ConditionalLoop")<br />Koşullu döngü ||
 
-###  <a name="BKMK_VLDConceptsM"></a> M
+### <a name="BKMK_VLDConceptsM"></a> M
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -241,7 +241,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Module** | ![Modül simgesini](../../extensibility/ux-guidelines/media/vld_c_module.png "VLD_C_Module") | ![Birleştirme modülü proje simgesi](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleproject.png "VLD_C_Module_MergeModuleProject")<br />Birleştirme modülü projesi<br />![Modül simge eklemek](../../extensibility/ux-guidelines/media/vld_c_module_addmodule.png "VLD_C_Module_AddModule")<br />Modül Ekle<br />![Birleştirme modülü dışlama simgesi](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude")<br />Birleştirme modülü dışlama ||
 | **Taşı** | ![Taşıma simgesi](../../extensibility/ux-guidelines/media/vld_c_move.png "VLD_C_Move") |||
 
-###  <a name="BKMK_VLDConceptsN"></a> N
+### <a name="BKMK_VLDConceptsN"></a> N
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -251,14 +251,14 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Nonsubstantive (gizli veya şablon)**<br />*"Sanal" ile aynı* | ![Nonsubstantive simgesi](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![Gizli alan simgesi](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />Gizli alan<br />![Gizli bir klasör simgesini](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />Gizli bir klasör<br />![Dinamik şablon simgesi](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />Dinamik şablonu | Bir nesnenin noktalı bir anahat olduğuna **gizli veya şablonlu**. |
 | **Not** | ![Not simgesi](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||
 
-###  <a name="BKMK_VLDConceptsO"></a> O
+### <a name="BKMK_VLDConceptsO"></a> O
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
 | **açın**<br />*Aynı "Export"* | ![Açık simge](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![Eki Aç simgesine](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />Eki Aç<br />![Açık karşılaştırma sonucu simgesi](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />Karşılaştırma sonucunu Aç<br />![Dosya Aç iletişim simgesi](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />Dosya Aç iletişim kutusu ||
 | **Output** | ![Çıkış simgesi](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
 
-###  <a name="BKMK_VLDConceptsP"></a> P
+### <a name="BKMK_VLDConceptsP"></a> P
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -277,13 +277,13 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Yordam**<br />Etkileşimli pencere | ![Yordam simgesi](../../extensibility/ux-guidelines/media/vld_c_procedure.png "VLD_C_Procedure") | ![Python etkileşimli penceresinde simgesine](../../extensibility/ux-guidelines/media/vld_c_procedure_pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow")<br />Python etkileşimli penceresi<br />![Yordam uyarı simgesi](../../extensibility/ux-guidelines/media/vld_c_procedure_procedurewarning.png "VLD_C_Procedure_ProcedureWarning")<br />Yordam Uyarısı<br />![Saklı yordam simgesi](../../extensibility/ux-guidelines/media/vld_c_procedure_storedprocedure.png "VLD_C_Procedure_StoredProcedure")<br />Saklı yordam ||
 | **Özelliği**<br />Ayarları yapılandırma | ![Özellik simgesi](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![Özellik simgesi Ekle](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />Özellik Ekle<br />![Genişletilmiş özellik uyarı simgesi](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />Genişletilmiş özelliği&mdash;Uyarısı<br />![Yeni özellik simgesi](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />Yeni özellik ||
 
-###  <a name="BKMK_VLDConceptsQ"></a> Q
+### <a name="BKMK_VLDConceptsQ"></a> Q
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
 | **Sorgu** | ![Sorgu simgesi](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![Sorgu simgesi Düzenle](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />Sorguyu düzenle<br />![Sorgu genişletici simgesi](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />Sorgu genişletici<br />![Hızlı sorgu simgesi](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />Hızlı sorgu ||
 
-###  <a name="BKMK_VLDConceptsR"></a> R
+### <a name="BKMK_VLDConceptsR"></a> R
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -301,7 +301,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Kural** | ![Kural simgesi](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![Yeni ayıklama kuralı simgesi](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />Yeni ayıklama kuralı<br />![Yeni eşik kuralı simgesi](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />Yeni eşik kuralı<br />![Yeni doğrulama kuralı simgesi](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />Yeni doğrulama kuralı ||
 | **Cetvel**<br />Ölçü Kılavuzu | ![Cetvel simgesi](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![Ölçüm modu simgesini](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />Ölçüm modu açık<br />![Ölçü simgesinin birimleri](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />Ölçü birimleri ||
 
-###  <a name="BKMK_VLDConceptsS"></a> S
+### <a name="BKMK_VLDConceptsS"></a> S
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -322,7 +322,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Stil sayfası** | ![Stil sayfası simgesi](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![Yeni stil sayfası simgesi](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />Yeni stil sayfası<br />![Stil sayfası simgesi ekleme](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />Stil Sayfası Ekle ||
 | **Eşitleme**<br />Güncelleştirme | ![Eşitleme simgesini](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![Güncelleştirilmiş JavaScript simgesi](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />Güncelleştirilmiş JavaScript<br />![Veritabanı Güncelleştirme Items Icon](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />Veritabanı öğeleri güncelleştirme<br />![Eşitleme simgesini](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />Eşitleme ||
 
-###  <a name="BKMK_VLDConceptsT"></a> T
+### <a name="BKMK_VLDConceptsT"></a> T
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -338,7 +338,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Aç/Kapat** | ![İki durumlu simgesi](../../extensibility/ux-guidelines/media/vld_c_toggle.png "VLD_C_Toggle") | ![Tüm kesme noktalarını simgesi geçiş](../../extensibility/ux-guidelines/media/vld_c_toggle_toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints")<br />Tüm kesme noktalarını Değiştir<br />![İki durumlu simgesi](../../extensibility/ux-guidelines/media/vld_c_toggle_toggle.png "VLD_C_Toggle_Toggle")<br />İki Durumlu Düğme ||
 | **Araç Kutusu** | ![Araç kutusu simgesi](../../extensibility/ux-guidelines/media/vld_c_toolbox.png "VLD_C_Toolbox") | ![Araç kutusu denetimi simgesi WinForm](../../extensibility/ux-guidelines/media/vld_c_toolbox_winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl")<br />WinForm araç kutusu denetimi<br />![WPF araç kutusu denetimi simgesi](../../extensibility/ux-guidelines/media/vld_c_toolbox_wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl")<br />WPF araç kutusu denetimi ||
 
-###  <a name="BKMK_VLDConceptsU"></a> U
+### <a name="BKMK_VLDConceptsU"></a> U
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -347,7 +347,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Kullanıcı**<br />Rol, profili | ![Kullanıcı simgesi](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![Kullanıcı simgesi Ekle](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />Kullanıcı Ekle<br />![Web kullanıcı denetimi simge eklemek](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />Web kullanıcı denetimi Ekle<br />![SQL kullanıcı&#45;türleri simgesi tanımlanan](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />SQL kullanıcı tanımlı türler ||
 | **Kullanıcı arabirimi**<br />UI | ![Kullanıcı arabirimi simgesini](../../extensibility/ux-guidelines/media/vld_c_userinterface.png "VLD_C_UserInterface") |||
 
-###  <a name="BKMK_VLDConceptsV"></a> V
+### <a name="BKMK_VLDConceptsV"></a> V
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -358,7 +358,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Sanal**<br />*Aynı "Nonsubstantive (gizli veya şablonu)"* | ![Sanal simgesi](../../extensibility/ux-guidelines/media/vld_c_virtual.png "VLD_C_Virtual") | ![Sanal ortam simgesi](../../extensibility/ux-guidelines/media/vld_c_virtual_virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment")<br />Sanal ortam ||
 | **Görünür** | ![Görünür simge](../../extensibility/ux-guidelines/media/vld_c_visible.png "VLD_C_Visible") | ![Gizlemek veya simge gizleme](../../extensibility/ux-guidelines/media/vld_c_visible_cloakorhide.png "VLD_C_Visible_CloakOrHide")<br />Gizli veya gizleme ||
 
-###  <a name="BKMK_VLDConceptsW"></a> W
+### <a name="BKMK_VLDConceptsW"></a> W
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
@@ -367,19 +367,19 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Sihirbazı** | ![Sihirbazı simgesi](../../extensibility/ux-guidelines/media/vld_c_wizard.png "VLD_C_Wizard") | ![Harita katmanı Sihirbazı simgesini](../../extensibility/ux-guidelines/media/vld_c_wizard_maplayerwizard.png "VLD_C_Wizard_MapLayerWizard")<br />Harita katmanı Sihirbazı<br />![MFC Sınıf Sihirbazı simgesi](../../extensibility/ux-guidelines/media/vld_c_wizard_mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard")<br />MFC Sınıf Sihirbazı<br />![Harita Sihirbazı simgesi](../../extensibility/ux-guidelines/media/vld_c_wizard_mapwizard.png "VLD_C_Wizard_MapWizard")<br />Harita Sihirbazı ||
 | **İş öğesi** | ![İş öğesi simgesi](../../extensibility/ux-guidelines/media/vld_c_workitem.png "VLD_C_WorkItem") | ![İş öğesi simgesi Git](../../extensibility/ux-guidelines/media/vld_c_workitem_gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem")<br />İş öğesine Git<br />![İş öğesi sorgu simgesi](../../extensibility/ux-guidelines/media/vld_c_workitem_workitemquery.png "VLD_C_WorkItem_WorkItemQuery")<br />İş öğesi sorgusu ||
 
-###  <a name="BKMK_VLDConceptsY"></a> Y
+### <a name="BKMK_VLDConceptsY"></a> Y
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
 | **yield** | ![Simge yield](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
 
-###  <a name="BKMK_VLDConceptsZ"></a> Z
+### <a name="BKMK_VLDConceptsZ"></a> Z
 
 | Kavram | Ana simgesi | Diğer örnekleri | Notlar |
 | --- | --- | --- | --- |
 | **Yakınlaştırma** | ![Yakınlaştır simgesi](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![Yakınlaştır simgesi](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />Yakınlaştır<br />![Yakınlaştır simgesi](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />Uzaklaştır ||
 
-##  <a name="BKMK_VLDProducts"></a> Ürün ve platformlar
+## <a name="BKMK_VLDProducts"></a> Ürün ve platformlar
 
 | Kavram | Ana simgesi | Diğer örnekleri |
 | --- | --- | --- |
@@ -395,7 +395,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **WCF** | ![WCF simgesi](../../extensibility/ux-guidelines/media/vld_p_wcf.png "VLD_P_WCF") | ![WCF Veri Hizmetleri simgesi](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfdataservices.png "VLD_P_WCF_WCFDataServices")<br />WCF Veri Hizmetleri<br />![WCF proje F&#35; simgesi](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectfs.png "VLD_P_WCF_WCFProjectFS")<br />WCF projeF#<br />![WCF proje VB simgesini](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectvb.png "VLD_P_WCF_WCFProjectVB")<br />WCF proje VB |
 | **WF** | ![WF simgesi](../../extensibility/ux-guidelines/media/vld_p_wf.png "VLD_P_WF") | ![WF proje C&#35; simgesi](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectcs.png "VLD_P_WF_WFProjectCS")<br />WF proje C#<br />![WF proje VB simgesini](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectvb.png "VLD_P_WF_WFProjectVB")<br />WF proje VB |
 
-##  <a name="BKMK_VLDArrows"></a> Oklarını kullanarak genel kavramlar
+## <a name="BKMK_VLDArrows"></a> Oklarını kullanarak genel kavramlar
 
 | Kavram | Ana simgesi | Diğer örnekleri |
 | --- | --- | --- | --- |
@@ -437,7 +437,7 @@ Visual Studio, kendi yansır ve diğer tanımayı yapı taşlarıdır kavramlar�
 | **Geri alma**<br />Geri döndürme, geri yükleme | ![Simgeyi geri](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![Görüntü geri yükleme simgesi](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />Görüntü geri yükleme<br />![Simge açıklamadan çıkarın](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />Açıklama kaldırma |
 | **Ayarlama**<br />Karşıya Yükle | ![Simge'kurmak](../../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up") | ![Dosya karşıya yükleme parametresi simgesi](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />Karşıya dosya yükleme parametresi<br />![Bir düzey yukarı simgesi](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />Bir düzey yukarı |
 
-##  <a name="BKMK_VLDStatus"></a> Durum göstergeleri
+## <a name="BKMK_VLDStatus"></a> Durum göstergeleri
 
 | Kavram | Ana simgesi | Diğer örnekleri |
 | --- | --- | --- |

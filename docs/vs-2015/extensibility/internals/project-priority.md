@@ -10,12 +10,12 @@ ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55dc8d911f458ef2eae801117c02058d41698611
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b012136c30f72cfdddadfc1a370ed76f567afffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079681"
 ---
 # <a name="project-priority"></a>Proje Önceliği
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ Bir proje öğesi genellikle yalnızca bir proje çözümde üyesidir. Bu nedenl
   
  Aşağıdaki liste, proje Öncelik düzenini gösterir:  
   
--   IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> belge proje üyesi olup olmadığını belirlemek için çözümde her proje için yöntemi.  
+- IDE çağrıları <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> belge proje üyesi olup olmadığını belirlemek için çözümde her proje için yöntemi.  
   
--   Belge proje üyesi ise, proje önceliğine sahip, projeyi bu belgeyi kendi işlenmesini göre atar yanıt verir. Örneğin, bir dil proje kendi dil kaynak dosyaları için yüksek bir öncelik verir ancak kendi yapı işleminin bir parçası kullanılmayan bir tanınmayan dosya türü için daha düşük bir öncelik verir.  
+- Belge proje üyesi ise, proje önceliğine sahip, projeyi bu belgeyi kendi işlenmesini göre atar yanıt verir. Örneğin, bir dil proje kendi dil kaynak dosyaları için yüksek bir öncelik verir ancak kendi yapı işleminin bir parçası kullanılmayan bir tanınmayan dosya türü için daha düşük bir öncelik verir.  
   
--   Bir belge için özel, projeye özgü düzenleyicileri veya tasarımcıları sağlayan projeleri de yüksek öncelik alır.  
+- Bir belge için özel, projeye özgü düzenleyicileri veya tasarımcıları sağlayan projeleri de yüksek öncelik alır.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Numaralandırma belge öncelik değerleri sağlar.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Numaralandırma belge öncelik değerleri sağlar.  
   
--   En yüksek öncelikli belirten proje bağlamı belgeyi açmak için verilir. İki proje eşit öncelik değerleri dönerseniz, etkin proje tercih edilir. Bu belgeyi açamazsınız çözümdeki hiçbir proje yanıt verirse, IDE diğer dosyalar projesinde belge koyar. Daha fazla bilgi için [diğer dosyalar projesi](../../extensibility/internals/miscellaneous-files-project.md).  
+- En yüksek öncelikli belirten proje bağlamı belgeyi açmak için verilir. İki proje eşit öncelik değerleri dönerseniz, etkin proje tercih edilir. Bu belgeyi açamazsınız çözümdeki hiçbir proje yanıt verirse, IDE diğer dosyalar projesinde belge koyar. Daha fazla bilgi için [diğer dosyalar projesi](../../extensibility/internals/miscellaneous-files-project.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çeşitli dosyalar projesi](../../extensibility/internals/miscellaneous-files-project.md)   

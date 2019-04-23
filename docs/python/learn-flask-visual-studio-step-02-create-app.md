@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078908"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>2. Adım: Görünümleri ve şablonların ile bir Flask uygulaması oluşturma
 
@@ -77,6 +77,7 @@ Bu adımda, daha fazla bilgi için nasıl:
 
         app.run(HOST, PORT)
     ```
+
 6. Proje yapısı aşağıdaki gibi görünmelidir:
 
     ![Kodu yeniden düzenlemeye sonra proje yapısı](media/flask/step02-project-structure.png)

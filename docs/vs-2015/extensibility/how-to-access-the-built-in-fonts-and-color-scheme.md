@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091531"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Nasıl yapılır: Yerleşik yazı tipi ve renk şeması erişim
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle i
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Yerleşik yazı tipleri ve renkler kullanarak bir kategori kaydetmek için  
   
-1.  Özel bir kategori aşağıdaki konumda kayıt defteri girdisi türü oluşturun:  
+1. Özel bir kategori aşağıdaki konumda kayıt defteri girdisi türü oluşturun:  
   
      [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio sürümü >* \FontAndColors\\*\<Kategori >*]  
   
      *\<Kategori >* kategorisi yerelleştirilmemiş adıdır.  
   
-2.  Stok yazı tipi ve renk şeması dört değerlerle kullanılacak kayıt defteri doldurun:  
+2. Stok yazı tipi ve renk şeması dört değerlerle kullanılacak kayıt defteri doldurun:  
   
     |Ad|Tür|Veri|Açıklama|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ Visual Studio tümleşik geliştirme ortamı (IDE) Düzenleyicisi penceresiyle i
     |Nameıd|REG_DWORD|Kimlik|VSPackage'ı bir yerelleştirilebilir kategori adı kaynak kimliği.|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage'ı uygulama GUID'i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> arabirimi.|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Sistem tarafından sağlanan yazı tipleri ve renkler kullanımı başlatmak için  
   

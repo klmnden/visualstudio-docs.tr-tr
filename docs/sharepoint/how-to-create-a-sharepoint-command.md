@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ac6e63bf0f669364e3011360fa74b7d8fde8662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082327"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Nasıl yapılır: Bir SharePoint komutu oluşturma
   Sunucu nesne modeli SharePoint Araçlar uzantısından kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'sini çağırmak için. Sunucu nesne modeline doğrudan çağırabilir miyim bir derlemede SharePoint komutunun tanımlarsınız.
@@ -26,36 +26,36 @@ ms.locfileid: "56645114"
 
 ### <a name="to-create-a-sharepoint-command"></a>Bir SharePoint komutu oluşturma
 
-1.  Aşağıdaki yapılandırmaya sahip bir sınıf kitaplığı projesi oluşturun:
+1. Aşağıdaki yapılandırmaya sahip bir sınıf kitaplığı projesi oluşturun:
 
-    -   .NET Framework 3.5 hedefler. Hedef Framework'ü seçme hakkında daha fazla bilgi için bkz. [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    - .NET Framework 3.5 hedefler. Hedef Framework'ü seçme hakkında daha fazla bilgi için bkz. [nasıl yapılır: .NET Framework sürümü hedefleme](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-    -   AnyCPU veya x64 hedef platformu. Varsayılan olarak, hedef sınıf kitaplığı projeleri için AnyCPU platformudur. Hedef platformu seçme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).
+    - AnyCPU veya x64 hedef platformu. Varsayılan olarak, hedef sınıf kitaplığı projeleri için AnyCPU platformudur. Hedef platformu seçme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Projeleri hedef platformlar için yapılandırma](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
     >  .NET Framework 3.5 ve SharePoint araçları uzantıları hedef SharePoint komutları hedef, bir SharePoint komutu, SharePoint Araçlar uzantısından tanımlar aynı projede uygulanamıyor [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Uzantınızı ayrı bir proje tarafından kullanılan herhangi bir SharePoint komut tanımlamanız gerekir. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-2.  Aşağıdaki derlemelere başvurular ekleyin:
+2. Aşağıdaki derlemelere başvurular ekleyin:
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-3.  Projedeki bir sınıfta, SharePoint komutu tanımlayan bir yöntem oluşturun. Yöntemi, aşağıdaki yönergelere uygun olmalıdır:
+3. Projedeki bir sınıfta, SharePoint komutu tanımlayan bir yöntem oluşturun. Yöntemi, aşağıdaki yönergelere uygun olmalıdır:
 
-    -   Bir veya iki parametre sağlayabilirsiniz.
+    - Bir veya iki parametre sağlayabilirsiniz.
 
          İlk parametre olmalıdır bir <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> nesne. Bu nesne Microsoft.SharePoint.SPSite ya da komut yürütüldüğü Microsoft.SharePoint.SPWeb sağlar. Ayrıca sağlar bir <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> ileti yazmak için kullanılan nesne **çıkış** penceresi veya **hata listesi** Visual Studio'daki.
 
          İkinci parametre, tercih ettiğiniz bir tür olabilir, ancak bu isteğe bağlı bir parametredir. Komutu, SharePoint Araçlar uzantısından veri iletmek gerekiyorsa, bu parametre, SharePoint komutu için ekleyebilirsiniz.
 
-    -   Dönüş değerine sahip olabilir, ancak bu özellik isteğe bağlıdır.
+    - Dönüş değerine sahip olabilir, ancak bu özellik isteğe bağlıdır.
 
-    -   İkinci parametre ve dönüş değeri, Windows Communication Foundation (WCF) tarafından seri hale getirilebilir bir tür olmalıdır. Daha fazla bilgi için [veri sözleşme seri hale getirici tarafından desteklenen türleri](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) ve [XmlSerializer sınıfını kullanarak](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
+    - İkinci parametre ve dönüş değeri, Windows Communication Foundation (WCF) tarafından seri hale getirilebilir bir tür olmalıdır. Daha fazla bilgi için [veri sözleşme seri hale getirici tarafından desteklenen türleri](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) ve [XmlSerializer sınıfını kullanarak](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    -   Yöntem herhangi bir görünürlük sağlayabilirsiniz (**genel**, **iç**, veya **özel**), ve statik veya statik olmayan olabilir.
+    - Yöntem herhangi bir görünürlük sağlayabilirsiniz (**genel**, **iç**, veya **özel**), ve statik veya statik olmayan olabilir.
 
-4.  Uygulama <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> yöntemi. Bu öznitelik komutu için benzersiz bir tanımlayıcı belirtir. Bu tanımlayıcı, yöntem adıyla eşleşecek şekilde yok.
+4. Uygulama <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> yöntemi. Bu öznitelik komutu için benzersiz bir tanımlayıcı belirtir. Bu tanımlayıcı, yöntem adıyla eşleşecek şekilde yok.
 
      Komutu, SharePoint Araçlar uzantısından çağırdığınızda aynı benzersiz tanımlayıcıya belirtmeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint komutu yürütme](../sharepoint/how-to-execute-a-sharepoint-command.md).
 
@@ -70,9 +70,9 @@ ms.locfileid: "56645114"
 ## <a name="compiling-the-code"></a>Kod derleme
  Bu örnek aşağıdaki derlemelere başvurular gerektirir:
 
--   Microsoft.VisualStudio.SharePoint.Commands
+- Microsoft.VisualStudio.SharePoint.Commands
 
--   Microsoft.SharePoint
+- Microsoft.SharePoint
 
 ## <a name="deploying-the-command"></a>Komut dağıtma
  Komut dağıtmak için komut derlemeyi aynı dahil etmek [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (*VSIX*) komut uzantısı derlemeyle paket. Ayrıca extension.vsixmanifest dosyasındaki komut derleme için bir girdi eklemeniz gerekir. Daha fazla bilgi için [Visual Studio'da SharePoint araçları için uzantıları dağıtma](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

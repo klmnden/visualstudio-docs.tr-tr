@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113462"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
   
 1. Doğrulamayı etkinleştirmek **Editor\Validation** düğüm:  
   
-   1.  Açık **Dsl\DslDefinition.dsl**.  
+   1. Açık **Dsl\DslDefinition.dsl**.  
   
-   2.  DSL Gezgini'nde **Düzenleyicisi** düğümünü seçip alt **doğrulama**.  
+   2. DSL Gezgini'nde **Düzenleyicisi** düğümünü seçip alt **doğrulama**.  
   
-   3.  Özellikler penceresinde ayarlayın **kullanan** özelliklerine `true`. Tüm bu özellikleri ayarlamak oldukça kullanışlıdır.  
+   3. Özellikler penceresinde ayarlayın **kullanan** özelliklerine `true`. Tüm bu özellikleri ayarlamak oldukça kullanışlıdır.  
   
-   4.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç.  
+   4. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç.  
   
 2. Bir veya daha fazla alan sınıfları veya etki alanı ilişkileri için kısmi sınıf tanımları yazma. Yeni bir kod dosyasında bu tanımları yazma **Dsl** proje.  
   
@@ -74,7 +74,7 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   Varsayılan olarak, bu öznitelik de türetilmiş sınıflar için doğrulama sağlayacaktır. Belirli bir türetilmiş sınıf için doğrulama devre dışı bırakmak isterseniz, kullanabileceğiniz `ValidationState.Disabled`.  
+   - Varsayılan olarak, bu öznitelik de türetilmiş sınıflar için doğrulama sağlayacaktır. Belirli bir türetilmiş sınıf için doğrulama devre dışı bırakmak isterseniz, kullanabileceğiniz `ValidationState.Disabled`.  
   
 4. Doğrulama yöntemlerinin sınıfları ekleyin. Her doğrulama yöntemi herhangi bir ada sahip ancak türünde bir parametreye sahip <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  İşleyiciler, bağlantıları veya öğeleri etkileyen geri alma veya yineleme işlemleri sonra olarak da adlandırılır.  
   
-##  <a name="custom"></a> Özel doğrulama kategorileri  
+## <a name="custom"></a> Özel doğrulama kategorileri  
  Standart doğrulama kategoriler, menü ve açık gibi ek olarak, kendi kategorilerinizi tanımlayabilirsiniz. Bu kategorilerden bir program kodunu çağırabilirsiniz. Kullanıcı bunları doğrudan çağrılamaz.  
   
  Özel kategoriler için genel kullanım modeli belirli bir Aracı'nın önkoşulları karşılayıp karşılamadığını test eden bir kategori tanımlamaktır.  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Doğrulama alternatifleri  
+## <a name="alternatives"></a> Doğrulama alternatifleri  
  Doğrulama kısıtlamaları hataları bildirin, ancak modelin değiştirmeyin. Bunun yerine, geçersiz olma modeli engellemek istiyorsanız, diğer teknikleri kullanabilirsiniz.  
   
  Ancak, bu teknikler önerilmez. Geçersiz bir model nasıl karar izin vermek daha iyi.  

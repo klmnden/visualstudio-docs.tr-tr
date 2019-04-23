@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080910"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Nasıl yapılır: Menü Öğesini Kullanarak Uyarıları Bastırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "54759191"
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Menü öğesini kullanarak bir uyarıyı bastırmak için  
   
-1.  Üzerinde **Çözümle** menüsünde seçin **Windows** seçip **Kod Analizi**.  
+1. Üzerinde **Çözümle** menüsünde seçin **Windows** seçip **Kod Analizi**.  
   
-2.  İçinde **Kod Analizi** penceresinde, uyarı bastır seçin.  
+2. İçinde **Kod Analizi** penceresinde, uyarı bastır seçin.  
   
-3.  Eylem seçin ve ardından **iletileri gösterme**seçin **içinde kaynak** veya **proje gizleme dosyası**.  
+3. Eylem seçin ve ardından **iletileri gösterme**seçin **içinde kaynak** veya **proje gizleme dosyası**.  
   
      Özel uyarı bastırılır ve üzeri Kod Analizi penceresi bir uyarı görüntülenir.  
   

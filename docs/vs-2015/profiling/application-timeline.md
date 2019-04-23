@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89e1b8460ccfa99a1adef93ed6bcd78990f75d67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078622"
 ---
 # <a name="application-timeline"></a>Uygulama zaman çizelgesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,20 +27,20 @@ Kullanım **uygulama zaman çizelgesi** ilgili XAML uygulamalarında performans 
   
  Aşağıdaki platformlarda bu aracı kullanabilirsiniz:  
   
-1.  Evrensel Windows uygulamaları (üzerinde Windows 10)  
+1. Evrensel Windows uygulamaları (üzerinde Windows 10)  
   
-2.  Windows Store 8.1  
+2. Windows Store 8.1  
   
-3.  Windows Phone 8.1 (ortak XAML Platform)  
+3. Windows Phone 8.1 (ortak XAML Platform)  
   
-4.  Windows Presentation Foundation (.Net 4.0 ve üzeri)  
+4. Windows Presentation Foundation (.Net 4.0 ve üzeri)  
   
-5.  Windows 7  
+5. Windows 7  
   
 > [!NOTE]
 >  Toplama ve CPU kullanım verileri ve enerji tüketimi verilerini ile birlikte analiz **ApplicationTimeline** veri. Bkz: [hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Uygulama zaman çizelgesi verileri toplama  
+## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Uygulama zaman çizelgesi verileri toplama  
  Yerel makinenize, bağlı cihaz, Visual Studio simulatorunda veya öykünücüleri veya uzak cihaz üzerinde uygulamanızın yanıt verme hızı profilini oluşturabilirsiniz. Bkz: [hata ayıklama olmadan profil oluşturma araçları çalıştırma](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
@@ -48,51 +48,51 @@ Kullanım **uygulama zaman çizelgesi** ilgili XAML uygulamalarında performans 
   
  Temel adımlar şunlardır:  
   
-1.  XAML uygulamanızı açın.  
+1. XAML uygulamanızı açın.  
   
-2.  Tıklayın **hata ayıklama / performans Profiler...** . Profil oluşturma araçları .diagsession penceresinde listesini görmeniz gerekir.  
+2. Tıklayın **hata ayıklama / performans Profiler...** . Profil oluşturma araçları .diagsession penceresinde listesini görmeniz gerekir.  
   
-3.  Seçin **uygulama zaman çizelgesi** ve ardından **Başlat** pencerenin alt kısmındaki.  
+3. Seçin **uygulama zaman çizelgesi** ve ardından **Başlat** pencerenin alt kısmındaki.  
   
     > [!NOTE]
     >  Vsetwcollector.exe'yi çalıştırmak için izninizi isteyen bir kullanıcı hesabı denetimi penceresinde görebilirsiniz. **Evet**'i tıklayın.  
   
-4.  Uygulamanızda performans verilerini toplamak için profil oluşturma ilgilendiğiniz senaryonun çalıştırın.  
+4. Uygulamanızda performans verilerini toplamak için profil oluşturma ilgilendiğiniz senaryonun çalıştırın.  
   
-5.  Profil oluşturmayı durdurmak için .diagsession penceresine geçin ve **Durdur** pencerenin üst kısmındaki.  
+5. Profil oluşturmayı durdurmak için .diagsession penceresine geçin ve **Durdur** pencerenin üst kısmındaki.  
   
      Visual Studio toplanan verileri analiz eder ve sonuçları görüntüler.  
   
      ![Zaman Çizelgesi profil oluşturucu rapor](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Zaman Çizelgesi profil oluşturma verilerini analiz edin  
+## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Zaman Çizelgesi profil oluşturma verilerini analiz edin  
  Profil oluşturma verilerini topladıktan sonra analizinizi başlatmak için aşağıdaki adımları kullanabilirsiniz:  
   
-1.  Bilgileri inceleyin **UI iş parçacığı kullanımı** ve **görsel üretilen iş (FPS)** grafikler ve zaman çizelgesi gezinti çubuklarını çözümlemek istediğiniz bir zaman aralığını seçmek için kullanın.  
+1. Bilgileri inceleyin **UI iş parçacığı kullanımı** ve **görsel üretilen iş (FPS)** grafikler ve zaman çizelgesi gezinti çubuklarını çözümlemek istediğiniz bir zaman aralığını seçmek için kullanın.  
   
-2.  Bilgileri kullanarak **UI iş parçacığı kullanımı** veya **görsel üretilen iş (FPS)** grafikler, ayrıntıları inceleyin **zaman çizelgesi ayrıntıları** olası nedenlerini keşfetmek için görünümü herhangi bir görünen kaçağın yanıt süresi için.  
+2. Bilgileri kullanarak **UI iş parçacığı kullanımı** veya **görsel üretilen iş (FPS)** grafikler, ayrıntıları inceleyin **zaman çizelgesi ayrıntıları** olası nedenlerini keşfetmek için görünümü herhangi bir görünen kaçağın yanıt süresi için.  
   
-###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Rapor senaryoları, kategoriler ve olaylar  
+### <a name="BKMK_Report_scenarios_categories_and_events"></a> Rapor senaryoları, kategoriler ve olaylar  
  **Uygulama zaman çizelgesi** araç senaryoları, kategoriler ve XAML performansıyla ilgili olayları için zamanlama verileri görüntüler.  
   
-###  <a name="BKMK_Diagnostic_session_timeline"></a> Tanılama oturumu zaman çizelgesi  
+### <a name="BKMK_Diagnostic_session_timeline"></a> Tanılama oturumu zaman çizelgesi  
  ![Performans ve tanılama zaman çizelgesi](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  Sayfanın üst cetvel profili oluşturulan bilgiler için zaman çizelgesini gösterir. Bu zaman çizelgesi hem de geçerli **UI iş parçacığı kullanımı** grafiği ve **görsel üretilen iş** grafiği. Zaman çizelgesinin bir bölümü seçmek için, zaman çizelgesindeki gezinti çubuklarını sürükleyerek raporun kapsamını daraltabilirsiniz.  
   
  Zaman çizelgesi ayrıca, eklediğiniz kullanıcı işaretlerini ve uygulamanın etkinleştirme yaşam döngüsü olaylarını da görüntüler.  
   
-###  <a name="BKMK_UI_thread_utilization_graph"></a> UI iş parçacığı kullanım grafiği  
+### <a name="BKMK_UI_thread_utilization_graph"></a> UI iş parçacığı kullanım grafiği  
  ![CPU kullanım grafiği](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
   
  **UI iş parçacığı kullanımı (%)** grafiğidir göreli harcanan süreyi bir kategori için bir koleksiyon aralığı sırasında görüntüleyen bir çubuk grafiği.  
   
-###  <a name="BKMK_Visual_throughput_FPS_graph"></a> Görsel üretilen iş (FPS) grafiği  
+### <a name="BKMK_Visual_throughput_FPS_graph"></a> Görsel üretilen iş (FPS) grafiği  
  ![Görsel üretilen iş grafiklerini](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  **Görsel üretilen iş (FPS)** çizgi grafiği, uygulama için kullanıcı Arabirimi ve kompozisyon iş parçacığında saniyedeki kare sayısını (FPS) gösterir.  
   
-###  <a name="BKMK_Timeline_details_"></a> Zaman Çizelgesi ayrıntıları  
+### <a name="BKMK_Timeline_details_"></a> Zaman Çizelgesi ayrıntıları  
  Ayrıntılar görünümü, burada çözümleme rapor zamanınızın çoğunu harcama ' dir. Bu, UI çerçevesi alt sistemi veya CPU kullanılan sistem bileşeni tarafından kategorilere uygulamanızın CPU kullanımını ayrıntılı bir görünümünü gösterir.  
   
  Aşağıdakiler desteklenir:  
@@ -109,7 +109,7 @@ Kullanım **uygulama zaman çizelgesi** ilgili XAML uygulamalarında performans 
 > [!TIP]
 >  Seçin **CPU kullanımı** ile birlikte aracı **uygulama zaman çizelgesi** aracı, UI iş parçacığında yürütülen görünümü uygulama yöntemler için profil oluşturmayı başlat. Uzun süre çalışan uygulama kodu taşımak için bir arka plan iş parçacığı UI yanıtlama hızını artırabilir.  
   
-####  <a name="BKMK_Customizing_Timeline_details_"></a> Zaman Çizelgesi ayrıntıları özelleştirme  
+#### <a name="BKMK_Customizing_Timeline_details_"></a> Zaman Çizelgesi ayrıntıları özelleştirme  
  Kullanım **zaman çizelgesi ayrıntıları** sıralama, filtreleme ve açıklamalarını belirtmek için araç **zaman çizelgesi ayrıntıları** girişleri görüntüleyin.  
   
 |||  

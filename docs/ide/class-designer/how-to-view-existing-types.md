@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087279"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda varolan türleri görüntüleme
 
@@ -31,9 +31,9 @@ Sınıf diyagramları üzerinde yeni türleri tasarımı için bkz: [nasıl yap�
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Projedeki türleri bir sınıf diyagramı üzerinde görmek için
 
-1.  İçinde bir projeden **Çözüm Gezgini**, var olan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: Projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md).
+1. İçinde bir projeden **Çözüm Gezgini**, var olan bir sınıf diyagramı (.cd) dosyası açın. Ya da hiçbir sınıf diyagramı yoksa, projeye yeni bir sınıf diyagramı ekleyin. Bkz: [nasıl yapılır: Projelere sınıf diyagramları ekleme](how-to-add-class-diagrams-to-projects.md).
 
-2.  Projesi ile **Çözüm Gezgini**, bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.
+2. Projesi ile **Çözüm Gezgini**, bir kaynak kodu dosyasını sınıf diyagramına sürükleyin.
 
     > [!NOTE]
     > Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:

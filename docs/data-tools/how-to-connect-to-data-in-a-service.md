@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085968"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Nasıl yapılır: Bir hizmetteki verilere bağlanma
 
@@ -36,20 +36,20 @@ Sihirbaz tamamlandıktan sonra bir hizmet başvurusu projenize eklenir ve hemen 
 
 ## <a name="to-connect-your-application-to-a-service"></a>Uygulamanız bir hizmete bağlanmak için
 
-1.  Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.
+1. Üzerinde **veri** menüsünü tıklatın **yeni veri kaynağı Ekle**.
 
-2.  Seçin **hizmet** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
+2. Seçin **hizmet** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
 
-3.  İstediğiniz kullanın veya hizmeti adresini girmek **bulma** geçerli çözümde hizmeti bulun ve ardından **Git**.
+3. İstediğiniz kullanın veya hizmeti adresini girmek **bulma** geçerli çözümde hizmeti bulun ve ardından **Git**.
 
-4.  İsteğe bağlı olarak, yeni bir yazabilirsiniz **Namespace** varsayılan değer yerine.
+4. İsteğe bağlı olarak, yeni bir yazabilirsiniz **Namespace** varsayılan değer yerine.
 
     > [!NOTE]
     > Tıklayın **Gelişmiş** açmak için [hizmet başvurusu Yapılandır iletişim kutusu](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Tıklayın **Tamam** projenize bir hizmet başvurusu eklemek için.
+5. Tıklayın **Tamam** projenize bir hizmet başvurusu eklemek için.
 
-6.  **Son**'a tıklayın.
+6. **Son**'a tıklayın.
 
      Veri kaynağı eklenir **veri kaynakları** penceresi.
 

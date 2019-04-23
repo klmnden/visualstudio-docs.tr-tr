@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf5a7c3f7587869a30ca2f367915fba1a42ec262
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091440"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Nasıl yapılır: Bir modül kullanarak dosyaları içerme
   *Modüller* (ile karıştırılmamalıdır [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modülleri) dosyaları gibi ASPX ana sayfalar, metin dosyaları ya da görüntülerini SharePoint'e dağıtmanıza olanak tanıyan kapsayıcılardır.
@@ -29,31 +29,31 @@ ms.locfileid: "56642982"
 
 #### <a name="to-add-a-module"></a>Bir modül eklemek için
 
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]bir SharePoint projesi oluşturun veya açın.
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]bir SharePoint projesi oluşturun veya açın.
 
      Daha fazla bilgi için [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+2. İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
      **Yeni Öğe Ekle** iletişim kutusu açılır.
 
-3.  SharePoint şablonları listesinde seçin **Modülü** şablonu seçip **Ekle** düğmesi.
+3. SharePoint şablonları listesinde seçin **Modülü** şablonu seçip **Ekle** düğmesi.
 
      Bu adımda, bir düğüm Module1 adlı projede oluşturulur.
 
-4.  Module1'ın altında Sil *örnek.txt* dosya.
+4. Module1'ın altında Sil *örnek.txt* dosya.
 
      Örnek.txt tüm yeni modüller örneğin amacıyla bulunur ve gerekli değildir. (Dosyayı silme da girdisini modülün kaldırır, Not *Elements.xml* dosyası.)
 
-5.  Dosyaları SharePoint'teki belirli bir klasör yapısı dağıtmak istiyorsanız, bu klasörleri Module1 altında oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Module1 düğüm seçerek ve ardından, menü çubuğundan seçme **proje**, **yeni Klasör**.
+5. Dosyaları SharePoint'teki belirli bir klasör yapısı dağıtmak istiyorsanız, bu klasörleri Module1 altında oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Module1 düğüm seçerek ve ardından, menü çubuğundan seçme **proje**, **yeni Klasör**.
 
-6.  Dosyayı ekleyin ve ardından menü çubuğunda, istediğiniz klasörü seçin **proje**, **varolan öğeyi Ekle**.
+6. Dosyayı ekleyin ve ardından menü çubuğunda, istediğiniz klasörü seçin **proje**, **varolan öğeyi Ekle**.
 
-7.  SharePoint'e dağıtmanıza ve ardından istediğiniz bir veya daha fazla dosya seçin **Ekle** düğmesi.
+7. SharePoint'e dağıtmanıza ve ardından istediğiniz bir veya daha fazla dosya seçin **Ekle** düğmesi.
 
      Projeye bir dosya eklediğinizde, bunun için bir giriş için modülün Elements.xml dosyası otomatik olarak eklenir. Proje dağıtılırken, dosyalar tarafından belirtilen proje kök dizinine göreli bir SharePoint sunucusuna kopyalanır **dosya** öğenin **Url** gibi öznitelik `Url="Module1/New Folder/SomeFile.doc`. Dağıtım konumu bir dosya için değiştirmek istiyorsanız, ya da başka bir klasöre taşıyın **Çözüm Gezgini** veya değiştirmek, **Url** ayarı.
 
-8.  Bir belge kitaplığındaki görünmesini istediğiniz tüm dosyaları için ekleme `Type="GhostableInLibrary"` girdisini özniteliği *Elements.xml*. Örneğin,
+8. Bir belge kitaplığındaki görünmesini istediğiniz tüm dosyaları için ekleme `Type="GhostableInLibrary"` girdisini özniteliği *Elements.xml*. Örneğin,
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

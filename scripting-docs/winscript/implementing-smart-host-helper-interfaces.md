@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d79d1a4176a10ea236d1ac91084bdcbfd5ca73d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083939"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Akıllı Konak Yardımcı Arabirimleri Uygulama
 [Idebugdocumenthelper arabirimi](../winscript/reference/idebugdocumenthelper-interface.md) arabirimi akıllı barındırmak için gereken birçok arabirimler için uygulamaları sağladığından etkin hata ayıklama için bir akıllı ana bilgisayar oluşturma görevini büyük ölçüde basitleştirir.  
@@ -42,13 +42,13 @@ ms.locfileid: "58154601"
   
 #### <a name="to-create-an-application-object"></a>Bir uygulama nesnesi oluşturmak için  
   
-1.  İşlem hata ayıklama örneği Yöneticisi'ni kullanarak oluşturun `CoCreateInstance`.  
+1. İşlem hata ayıklama örneği Yöneticisi'ni kullanarak oluşturun `CoCreateInstance`.  
   
-2.  Çağrı [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md).  
+2. Çağrı [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md).  
   
-3.  Kullanarak uygulamayı kümesinin adı [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md).  
+3. Kullanarak uygulamayı kümesinin adı [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md).  
   
-4.  Uygulama nesnesi kullanarak hata ayıklanabilir uygulamalar listesine eklemek [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md).  
+4. Uygulama nesnesi kullanarak hata ayıklanabilir uygulamalar listesine eklemek [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md).  
   
      Aşağıdaki kod işlem özetlenmektedir, ancak hata denetimi veya sağlam diğer programlama teknikleri içermez.  
   
@@ -66,15 +66,15 @@ ms.locfileid: "58154601"
   
 #### <a name="to-use-the-helper-minimal-sequence-of-steps"></a>' % S'Yardımcısı (en az bir dizi adımdan) kullanmak için  
   
-1.  Her ana belge için bir yardımcı kullanarak oluşturma [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
+1. Her ana belge için bir yardımcı kullanarak oluşturma [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
   
-2.  Çağrı [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) Yardımcısı adı, belge öznitelikleri ve benzeri verir.  
+2. Çağrı [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) Yardımcısı adı, belge öznitelikleri ve benzeri verir.  
   
-3.  Çağrı [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) belge (veya belge kökü ise NULL) için üst Yardımcısı ile ağacında belgenin konumunu tanımlamak ve hata ayıklayıcı görünür hale getirmek için.  
+3. Çağrı [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) belge (veya belge kökü ise NULL) için üst Yardımcısı ile ağacında belgenin konumunu tanımlamak ve hata ayıklayıcı görünür hale getirmek için.  
   
-4.  Çağrı [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) veya [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) belgenin metni tanımlamak için. (Bir tarayıcı durumunda olduğu gibi belge kademeli olarak yüklediyseniz bu birden çok kez çağrılabilir.)  
+4. Çağrı [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) veya [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md) belgenin metni tanımlamak için. (Bir tarayıcı durumunda olduğu gibi belge kademeli olarak yüklediyseniz bu birden çok kez çağrılabilir.)  
   
-5.  Çağrı [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) her betik bloğu hem de ilişkili komut dosyası motorları aralıklarını tanımlamak için.  
+5. Çağrı [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) her betik bloğu hem de ilişkili komut dosyası motorları aralıklarını tanımlamak için.  
   
 ## <a name="implementing-iactivescriptsitedebug"></a>Iactivescriptsitedebug uygulama  
  Uygulamak için [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)belirtilen siteye karşılık gelen Yardımcısı alın ve sonra belirtilen kaynak bağlamı, aşağıdaki gibi kaydırın Başlangıç belgesini alın:  
@@ -96,13 +96,13 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
 ## <a name="the-optional-idebugdocumenthost-interface"></a>İsteğe bağlı Idebugdocumenthost arabirimi  
  Ana bilgisayar uygulaması sağlayabilir [Idebugdocumenthost arabirimi](../winscript/reference/idebugdocumenthost-interface.md) kullanarak [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md) yardımcı ek denetiminin kendilerinde olmasına. Konak arabirimi gerçekleştirmenize izin verir gereken önemli noktalar bazıları şunlardır:  
   
--   Metin ekleme [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) böylece ana karakterlerini hemen sağlamanız gerekmez. Karakterleri gerçekten gerektiğinde, yardımcı çağıracak [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) konaktaki.  
+- Metin ekleme [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) böylece ana karakterlerini hemen sağlamanız gerekmez. Karakterleri gerçekten gerektiğinde, yardımcı çağıracak [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) konaktaki.  
   
--   Yardımcısı tarafından sağlanan varsayılan söz dizimi renklendirmesi geçersiz kılar. Yardımcısı çağrıları [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) konak dönerseniz varsayılan uygulanması dönülüyor karakter, bir dizi renklendirme belirlemek için `E_NOTIMPL`.  
+- Yardımcısı tarafından sağlanan varsayılan söz dizimi renklendirmesi geçersiz kılar. Yardımcısı çağrıları [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) konak dönerseniz varsayılan uygulanması dönülüyor karakter, bir dizi renklendirme belirlemek için `E_NOTIMPL`.  
   
--   Belge bağlamı uygulama tarafından Yardımcısı tarafından oluşturulan bir kontrol eden bilinmeyen sağlayın [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md). Bu, varsayılan belge bağlamı uygulama işlevselliğini geçersiz kılmak konak sağlar.  
+- Belge bağlamı uygulama tarafından Yardımcısı tarafından oluşturulan bir kontrol eden bilinmeyen sağlayın [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md). Bu, varsayılan belge bağlamı uygulama işlevselliğini geçersiz kılmak konak sağlar.  
   
--   Bir yol adı dosya sistemindeki belge için sağlar. Bazı hata ayıklama kullanıcı arabirimleri düzenlemek ve değişiklikleri belgeye kaydetmek için kullanıcının izin vermek için bunu kullanın. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) Belge kaydedildikten sonra ana bilgisayara bildirmek için çağırılır.  
+- Bir yol adı dosya sistemindeki belge için sağlar. Bazı hata ayıklama kullanıcı arabirimleri düzenlemek ve değişiklikleri belgeye kaydetmek için kullanıcının izin vermek için bunu kullanın. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) Belge kaydedildikten sonra ana bilgisayara bildirmek için çağırılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etkin Betik Hata Ayıklamaya Genel Bakış](../winscript/active-script-debugging-overview.md)

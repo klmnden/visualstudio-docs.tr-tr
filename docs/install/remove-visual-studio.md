@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e363065d96169660817a548fb97d39f09cf679c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088229"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio Kaldır
 
@@ -45,6 +45,7 @@ Aşağıdaki yönergelerde aşağıdaki davranış farklı komut satırı anahta
    * Tür **cmd** "aramak için buraya yazın" kutusunda.
    * **Komut İstemi**'ne sağ tıklayın ve ardından **Yönetici olarak çalıştır**'a tıklayın.
 3. Tam yolunu yazın `InstallCleanup.exe` yardımcı programı ve istediğiniz herhangi bir komut satırı anahtarı geçirin. Varsayılan olarak, yardımcı program yolu aşağıdaki gibidir:
+
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```

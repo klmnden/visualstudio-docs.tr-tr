@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077348"
 ---
 # <a name="template-parameters"></a>Şablon Parametreleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "54787098"
 ## <a name="declaring-and-enabling-template-parameters"></a>Bildirme ve şablon parametreleri etkinleştirme  
  Şablon parametreleri biçimi $ içinde bildirilen*parametre*$. Örneğin:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Parametre değiştirme şablonlarındaki etkinleştirmek için  
   
-1.  Şablonun .vstemplate dosyasında bulun `ProjectItem` parametre değiştirme etkinleştirmek istediğiniz öğeye karşılık gelen öğe.  
+1. Şablonun .vstemplate dosyasında bulun `ProjectItem` parametre değiştirme etkinleştirmek istediğiniz öğeye karşılık gelen öğe.  
   
-2.  Ayarlama `ReplaceParameters` özniteliği `ProjectItem` öğesine `true`.  
+2. Ayarlama `ReplaceParameters` özniteliği `ProjectItem` öğesine `true`.  
   
-3.  Proje öğesi için kod dosyasında, uygun yerlerde parametreleri içerir. Örneğin, aşağıdaki parametre dosyasındaki ad alanı için güvenli bir proje adı kullanılması belirtir:  
+3. Proje öğesi için kod dosyasında, uygun yerlerde parametreleri içerir. Örneğin, aşağıdaki parametre dosyasındaki ad alanı için güvenli bir proje adı kullanılması belirtir:  
   
     ```  
     namespace $safeprojectname$  

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e8a9210b842d6fe63140f643ac3c0712cd100d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114151"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Hizmet Başvurusu Yapılandırma İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ ms.locfileid: "59656771"
   
 ## <a name="task-list"></a>Görev Listesi  
   
--   Bir WCF Hizmeti barındırıldığı adresini değiştirmek için yeni adresi girin. **adresi** alan.  
+- Bir WCF Hizmeti barındırıldığı adresini değiştirmek için yeni adresi girin. **adresi** alan.  
   
--   WCF istemci sınıfları için erişim düzeyini değiştirmek için bir erişim düzeyi anahtar sözcüğünü seçin **erişim sınıflar için erişim düzeyi** listesi.  
+- WCF istemci sınıfları için erişim düzeyini değiştirmek için bir erişim düzeyi anahtar sözcüğünü seçin **erişim sınıflar için erişim düzeyi** listesi.  
   
--   Zaman uyumsuz olarak bir WCF Hizmeti yöntemlerini çağırmak için seçin **zaman uyumsuz işlemler oluşturma** onay kutusu.  
+- Zaman uyumsuz olarak bir WCF Hizmeti yöntemlerini çağırmak için seçin **zaman uyumsuz işlemler oluşturma** onay kutusu.  
   
--   Bir WCF İstemcisi'nde ileti anlaşması türleri oluşturmak için Seç **her zaman ileti anlaşmaları Oluştur** onay kutusu.  
+- Bir WCF İstemcisi'nde ileti anlaşması türleri oluşturmak için Seç **her zaman ileti anlaşmaları Oluştur** onay kutusu.  
   
--   Bir WCF istemcisi için liste veya sözlük koleksiyon türleri belirtmek için türlerinden seçin **koleksiyon türü** ve **zlük koleksiyon türü** listeler.  
+- Bir WCF istemcisi için liste veya sözlük koleksiyon türleri belirtmek için türlerinden seçin **koleksiyon türü** ve **zlük koleksiyon türü** listeler.  
   
--   Tür paylaşımı devre dışı bırakma, temizleme **bütünleştirilmiş kodlardaki türleri yeniden** onay kutusu. Tür başvurulan derlemeleri bir alt kümesi için paylaşımını etkinleştirmek için işaretleyin **bütünleştirilmiş kodlardaki türleri yeniden** onay kutusunu seçin **belirtilen bütünleştirilmiş kodlardaki türleri yeniden**, istenen seçin başvurularının **başvurulan derlemelerin listesini**.  
+- Tür paylaşımı devre dışı bırakma, temizleme **bütünleştirilmiş kodlardaki türleri yeniden** onay kutusu. Tür başvurulan derlemeleri bir alt kümesi için paylaşımını etkinleştirmek için işaretleyin **bütünleştirilmiş kodlardaki türleri yeniden** onay kutusunu seçin **belirtilen bütünleştirilmiş kodlardaki türleri yeniden**, istenen seçin başvurularının **başvurulan derlemelerin listesini**.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Adresi**  

@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113124"
 ---
 # <a name="attaching-after-a-launch"></a>Başlatmadan Sonra Ekleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Bir programı başlatan sonra hata ayıklama oturumu için söz konusu program h
 ## <a name="design-decisions"></a>Tasarım kararları  
  İletişim paylaşılan adres alanı içinde daha kolay olduğundan, hata ayıklama oturumunu DE arasındaki veya DE ve program arasındaki iletişimi kolaylaştırmak için daha fazla mantıklı olmadığını karar vermeniz gerekir. Aşağıdakiler arasında seçim yapın:  
   
--   Hata ayıklama oturumunu DE arasındaki iletişimi kolaylaştırmak için daha anlamlı olur, hata ayıklama oturumunu DE birlikte oluşturur ve programa eklemek için DE ister. Bu hata ayıklama oturumu ve DE birlikte bir adres alanı ve çalışma zamanı ortamı ve program başka bir araya bırakır.  
+- Hata ayıklama oturumunu DE arasındaki iletişimi kolaylaştırmak için daha anlamlı olur, hata ayıklama oturumunu DE birlikte oluşturur ve programa eklemek için DE ister. Bu hata ayıklama oturumu ve DE birlikte bir adres alanı ve çalışma zamanı ortamı ve program başka bir araya bırakır.  
   
--   Ardından DE ve program arasındaki iletişimi kolaylaştırmak için daha anlamlı olur, çalışma zamanı ortamı birlikte DE oluşturur. SDM bir adres alanında ve DE, çalışma zamanı ortamı ve program başka bir araya bırakır. Tipik bir komut dosyası dilleri çalıştırmak için yorumlayıcıyı ile uygulanan bir DE budur.  
+- Ardından DE ve program arasındaki iletişimi kolaylaştırmak için daha anlamlı olur, çalışma zamanı ortamı birlikte DE oluşturur. SDM bir adres alanında ve DE, çalışma zamanı ortamı ve program başka bir araya bırakır. Tipik bir komut dosyası dilleri çalıştırmak için yorumlayıcıyı ile uygulanan bir DE budur.  
   
     > [!NOTE]
     >  Ne DE programına iliştirir uygulamaya bağlıdır. KODU ve program arasındaki iletişimi de uygulamaya bağlıdır.  

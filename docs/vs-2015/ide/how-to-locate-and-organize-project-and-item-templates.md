@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091245"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Nasıl yapılır: Bulma ve düzenleme proje ve öğe şablonları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,23 +90,23 @@ ms.locfileid: "54778532"
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Yeni yüklenen öğe şablonu kategoriler oluşturmak için  
   
-1.  Yüklü şablon dizini dil klasörde bir klasör oluşturun. Örneğin, bir Web kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] öğe şablonları oluşturma şu dizin:  
+1. Yüklü şablon dizini dil klasörde bir klasör oluşturun. Örneğin, bir Web kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] öğe şablonları oluşturma şu dizin:  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
+2. Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
   
-3.  Tüm örneklerini kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Tüm örneklerini kapatın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Üzerinde **Başlat** menüsünde tıklayın **çalıştırma**, türü **cmd**, tıklatıp **Tamam**.  
+4. Üzerinde **Başlat** menüsünde tıklayın **çalıştırma**, türü **cmd**, tıklatıp **Tamam**.  
   
-5.  Devenv.exe ve türü içeren dizine komut isteminde bulun **devenv/Setup**.  
+5. Devenv.exe ve türü içeren dizine komut isteminde bulun **devenv/Setup**.  
   
-6.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'i çalıştırın.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]'i çalıştırın.  
   
-7.  Bir proje oluşturun veya varolan bir projeyi açın.  
+7. Bir proje oluşturun veya varolan bir projeyi açın.  
   
-8.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
+8. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
 9. Web kategori göründüğünü doğrulayın **Yeni Öğe Ekle** iletişim kutusundaki **proje türleri** bölmesi.  
   
@@ -129,30 +129,30 @@ ms.locfileid: "54778532"
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Yeni özel öğe şablonu kategoriler oluşturmak için  
   
-1.  Özel öğesi şablon dizini dil klasöründe bir klasör oluşturun. Örneğin, bir HelloWorld kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] şablonları şu dizin oluşturmanız:  
+1. Özel öğesi şablon dizini dil klasöründe bir klasör oluşturun. Örneğin, bir HelloWorld kategorisi için oluşturmak için [!INCLUDE[csprcs](../includes/csprcs-md.md)] şablonları şu dizin oluşturmanız:  
   
      \My belgeleri\\< Visual Studio sürümü\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
+2. Bu kategori için tüm şablonları yeni klasöre yerleştirin.  
   
-3.  Bir proje oluşturun veya varolan bir projeyi açın.  
+3. Bir proje oluşturun veya varolan bir projeyi açın.  
   
-4.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
+4. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.  
   
-5.  HelloWorld kategori göründüğünü doğrulayın **Yeni Öğe Ekle** iletişim kutusundaki **proje türleri** bölmesi.  
+5. HelloWorld kategori göründüğünü doğrulayın **Yeni Öğe Ekle** iletişim kutusundaki **proje türleri** bölmesi.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Ana kategoride şablonları görüntüleme  
  Alt kategoriler kullanarak kendi üst kategorilerde görüntülenecek şablonlarında etkinleştirebilirsiniz `NumberOfParentCategoriesToRollUp` .vstemplate dosyasında öğe. Bu adımlar, proje şablonları ve öğe şablonları için aynıdır.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>Üst kategorilerdeki şablonları görüntülemek için  
   
-1.  Şablonu içeren .zip dosyasını bulun.  
+1. Şablonu içeren .zip dosyasını bulun.  
   
-2.  .Zip dosyasını çıkartın.  
+2. .Zip dosyasını çıkartın.  
   
-3.  İçindeki .vstemplate dosyasını açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. İçindeki .vstemplate dosyasını açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  İçinde `TemplateData` öğe, Ekle bir `NumberOfParentCategoriesToRollUp` öğesi. Örneğin, aşağıdaki kodu, üst kategori görünür, ancak bundan daha yüksek şablonu sağlar.  
+4. İçinde `TemplateData` öğe, Ekle bir `NumberOfParentCategoriesToRollUp` öğesi. Örneğin, aşağıdaki kodu, üst kategori görünür, ancak bundan daha yüksek şablonu sağlar.  
   
     ```  
     <TemplateData>  
@@ -164,17 +164,17 @@ ms.locfileid: "54778532"
     </TemplateData>  
     ```  
   
-5.  .vstemplate dosyasını kaydedip kapatın.  
+5. .vstemplate dosyasını kaydedip kapatın.  
   
-6.  Şablonunuzda dosyaları seçin, seçime sağ tıklayın, **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Dosyaları bir .zip dosyasına sıkıştırılır.  
+6. Şablonunuzda dosyaları seçin, seçime sağ tıklayın, **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Dosyaları bir .zip dosyasına sıkıştırılır.  
   
-7.  Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.  
+7. Ayıklanan şablon dosyalarını ve eski şablonu .zip dosyasını silin.  
   
-8.  Yeni bir .zip dosyası silinen .zip dosyasını olduğu dizine yerleştirin.  
+8. Yeni bir .zip dosyası silinen .zip dosyasını olduğu dizine yerleştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Şablonları özelleştirme](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio şablonları)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md)   
- [Nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)
+ [Nasıl yapılır: Öğe Şablonları Oluşturma](../ide/how-to-create-item-templates.md)

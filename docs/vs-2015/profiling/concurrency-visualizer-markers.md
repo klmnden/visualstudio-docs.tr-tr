@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 143cea7a60fd136777943e849713ca0bdfe171fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078323"
 ---
 # <a name="concurrency-visualizer-markers"></a>Eşzamanlılık Görselleştiricisi İşaretleyicileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ Eşzamanlılık görselleştiricisi içinde temsil eden bir uygulama olayları s
 ## <a name="kinds-of-markers"></a>Tür işaretleyicileri  
  Eşzamanlılık görselleştiricisi işaretleyicileri üç tür uygulama olayları göstermek için kullanır.: işaretler, iletileri ve yayılır.  
   
-1.  Kullanım bir *bayrağı* zamanlı uygulamanızda ilgi çekici bir noktası belirtmek için.  Örneğin, bir değişken değeri belirli bir eşiği ulaştı veya bir özel durum oluştu göstermenin bir bayrak kullanabilirsiniz.  
+1. Kullanım bir *bayrağı* zamanlı uygulamanızda ilgi çekici bir noktası belirtmek için.  Örneğin, bir değişken değeri belirli bir eşiği ulaştı veya bir özel durum oluştu göstermenin bir bayrak kullanabilirsiniz.  
   
-2.  A *ileti* de işaretler, fakat bir noktasında günlük stili izleme için kullanabilirsiniz.  Örneğin, ne, izleme ve eşzamanlılık görselleştiricisi içinde görüntülemek için artık bir ileti arama kaydırılabilir bir günlük dosyasına yazılan. Bu veri bir CSV dosyasına aktarmak için eşzamanlılık görselleştiricisi'ni de kullanabilirsiniz.  
+2. A *ileti* de işaretler, fakat bir noktasında günlük stili izleme için kullanabilirsiniz.  Örneğin, ne, izleme ve eşzamanlılık görselleştiricisi içinde görüntülemek için artık bir ileti arama kaydırılabilir bir günlük dosyasına yazılan. Bu veri bir CSV dosyasına aktarmak için eşzamanlılık görselleştiricisi'ni de kullanabilirsiniz.  
   
-3.  A *span* uygulamanızda, örneğin, biri, bir aşamaya, zaman aralığını temsil eder.  
+3. A *span* uygulamanızda, örneğin, biri, bir aşamaya, zaman aralığını temsil eder.  
   
 ## <a name="marker-linkage-to-threads"></a>İşaret bağlantı iş parçacıkları  
  Ayrı zaman çizelgesi kanal işaretçileri oluşturan her bir iş parçacığı vardır.  İşaret olayları oluşturmaktan sorumlu bir iş parçacığı Kimliğini yanındaki işaret kanal açıklaması gösterilir.  İşaret kanal sol tarafında gösterilen kimliği, geçerli işlemdeki başka bir iş parçacığı kimliği eşleşir.  

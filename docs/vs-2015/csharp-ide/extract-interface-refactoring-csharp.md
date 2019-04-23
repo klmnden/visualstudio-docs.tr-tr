@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116751"
 ---
 # <a name="extract-interface-refactoring-c"></a>Ayıklama Arabirimi Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Ayıklama arabirimi bir varolan bir sınıf, yapı veya arabirim üyeleri ile ye
   
 ### <a name="to-use-extract-interface"></a>Arabirimi Ayıkla kullanmak için  
   
-1.  Adlı bir konsol uygulaması oluşturun `ExtractInterface`ve ardından `Program` aşağıdaki kodla  
+1. Adlı bir konsol uygulaması oluşturun `ExtractInterface`ve ardından `Program` aşağıdaki kodla  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Ayıklama arabirimi bir varolan bir sınıf, yapı veya arabirim üyeleri ile ye
     }  
     ```  
   
-2.  İçinde bulunan imleç ile `MethodB`, tıklatıp **Arabirimi Ayıkla** üzerinde **yeniden düzenleme** menüsü.  
+2. İçinde bulunan imleç ile `MethodB`, tıklatıp **Arabirimi Ayıkla** üzerinde **yeniden düzenleme** menüsü.  
   
      **Arabirimi Ayıkla** iletişim kutusu görüntülenir.  
   
@@ -53,9 +53,9 @@ Ayıklama arabirimi bir varolan bir sınıf, yapı veya arabirim üyeleri ile ye
   
      Ayrıca farenin sağ işaret **yeniden düzenleme**ve ardından **Arabirimi Ayıkla** görüntülenecek **Arabirimi Ayıkla** iletişim kutusu.  
   
-3.  Tıklayın **Tümünü Seç**.  
+3. Tıklayın **Tümünü Seç**.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
      Yeni dosyanın, IProtoA.cs ve aşağıdaki kodu görürsünüz:  
   

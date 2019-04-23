@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 805a8d6616b4f6c198173ad2a9c9d733ad50de32
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086279"
 ---
 # <a name="copy-task"></a>Kopyalama Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ Dosyaları, dosya sisteminde yeni bir konuma kopyalar.
 ## <a name="warnings"></a>Uyarılar  
  Uyarılar dahil olmak üzere kaydedilir:  
   
--   `Copy.DestinationIsDirectory`  
+- `Copy.DestinationIsDirectory`  
   
--   `Copy.SourceIsDirectory`  
+- `Copy.SourceIsDirectory`  
   
--   `Copy.SourceFileNotFound`  
+- `Copy.SourceFileNotFound`  
   
--   `Copy.CreatesDirectory`  
+- `Copy.CreatesDirectory`  
   
--   `Copy.HardLinkComment`  
+- `Copy.HardLinkComment`  
   
--   `Copy.RetryingAsFileCopy`  
+- `Copy.RetryingAsFileCopy`  
   
--   `Copy.FileComment`  
+- `Copy.FileComment`  
   
--   `Copy.RemovingReadOnlyAttribute`  
+- `Copy.RemovingReadOnlyAttribute`  
   
 ## <a name="remarks"></a>Açıklamalar  
  `DestinationFolder` veya `DestinationFiles` parametresinin belirtilmesi gerekir, ancak ikisi birden belirtilmemelidir. Eğer her ikisi de belirtilirse görev başarısız olur ve bir hata günlüğe kaydedilir.  

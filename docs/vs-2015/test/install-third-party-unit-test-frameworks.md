@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117376"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Nasıl yapılır: Üçüncü taraf birim test çerçevelerini yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Visual Studio Test Gezgini'yle herhangi bir bağdaştırıcı arabirimi Gezgini 
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise, Visual Studio Professional  
+- Visual Studio Enterprise, Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>Üçüncü taraf çerçeve alınıyor  
  İndirin ve Visual Studio Uzantı Yöneticisi'ni kullanarak ya da MSDN Web sitesindeki Visual Studio Galerisi'nden birçok üçüncü taraf birim testi çerçevelerini yükleme. Çerçeveler, framework'ün bir Web sitesi gibi diğer sitelerdeki de indirilebilir.  

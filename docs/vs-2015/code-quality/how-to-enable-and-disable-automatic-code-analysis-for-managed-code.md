@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 451afe75d71969b4a4a866fc9a7cda1fd85562d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079077"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için otomatik kod analizini devre dışı bırakma ve etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,10 +23,10 @@ Her bir yönetilen kod projesi derlemeden önce çalıştırılacak Kod Analizi 
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Etkinleştirme veya devre dışı otomatik kod çözümlemesini  
   
-1.  İçinde **Çözüm Gezgini**projeye sağ tıklayın ve ardından **özellikleri**.  
+1. İçinde **Çözüm Gezgini**projeye sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Proje Özellikleri iletişim kutusunda tıklayın **Kod Analizi**.  
+2. Proje Özellikleri iletişim kutusunda tıklayın **Kod Analizi**.  
   
-3.  İçinde derleme türünü belirtmeniz **yapılandırma** ve hedef platform **Platform**.  
+3. İçinde derleme türünü belirtmeniz **yapılandırma** ve hedef platform **Platform**.  
   
-4.  Etkinleştirmek veya otomatik kod analizini devre dışı bırakmak için seçin veya temizleyin **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** onay kutusu.
+4. Etkinleştirmek veya otomatik kod analizini devre dışı bırakmak için seçin veya temizleyin **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** onay kutusu.

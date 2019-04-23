@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090725"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Nasıl yapılır: Yer işareti denetimlerini yeniden boyutlandırma
   Boyutunu ayarlamak bir <xref:Microsoft.Office.Tools.Word.Bookmark> Microsoft Office Word belgesine eklediğinizde denetim. Ayrıca daha sonraki bir zamanda boyutlandırabilirsiniz.
@@ -47,15 +47,15 @@ ms.locfileid: "56644958"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Tasarım zamanında bir belge düzeyi projede yer işareti yeniden boyutlandırmak için
 
-1.  Yer işaretini seçin **özellikleri** penceresi.
+1. Yer işaretini seçin **özellikleri** penceresi.
 
-2.  Artırma veya azaltma değerini <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> özelliği.
+2. Artırma veya azaltma değerini <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> özelliği.
 
-3.  Artırma veya azaltma değerini <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliği.
+3. Artırma veya azaltma değerini <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliği.
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Çalışma zamanında bir belge düzeyi projede yer işareti yeniden boyutlandırmak için
 
-1.  Değiştirme <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> ve <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliklerini bir <xref:Microsoft.Office.Tools.Word.Bookmark> tasarım zamanında ya da çalışma zamanında oluşturulan.
+1. Değiştirme <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> ve <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliklerini bir <xref:Microsoft.Office.Tools.Word.Bookmark> tasarım zamanında ya da çalışma zamanında oluşturulan.
 
      Aşağıdaki kod örneği, adında bir yer işareti başlangıcına kadar beş karakteri ekler `SampleBookmark`. Bu kod, en az beş karakteri yer işaretinden önce gelen metin olduğunu varsayar.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644958"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Çalışma zamanında VSTO eklenti projesinde bir yer işareti yeniden boyutlandırmak için
 
-1.  Değiştirme <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> ve <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliklerini bir <xref:Microsoft.Office.Tools.Word.Bookmark> çalışma zamanında oluşturulan.
+1. Değiştirme <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> ve <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> özelliklerini bir <xref:Microsoft.Office.Tools.Word.Bookmark> çalışma zamanında oluşturulan.
 
      Aşağıdaki kod örneği oluşturur bir <xref:Microsoft.Office.Tools.Word.Bookmark> etkin belgenin ilk paragrafa metin içeren ve ardından Başlat ve sonuna beş karakteri kaldırır <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644958"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Tasarım zamanında bir belge düzeyi projede yer işareti yeniden oluşturmak için
 
-1.  Yeni konacak metni seçin <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.
+1. Yeni konacak metni seçin <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi.
 
-2.  Üzerinde **Ekle** menüsünü tıklatın **yer işareti**.
+2. Üzerinde **Ekle** menüsünü tıklatın **yer işareti**.
 
-3.  İçinde **yer işareti** iletişim kutusunda, yeniden boyutlandırın ve istediğiniz yer işaretinin adı seçin **Ekle**.
+3. İçinde **yer işareti** iletişim kutusunda, yeniden boyutlandırın ve istediğiniz yer işaretinin adı seçin **Ekle**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Word belgelerine yer işareti denetimi ekleme](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

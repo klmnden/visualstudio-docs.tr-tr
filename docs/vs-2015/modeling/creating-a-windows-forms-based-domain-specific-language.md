@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084784"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Windows Forms Tabanlı Etki Alanına Özgü Dil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 2. Şablon sağlar ilk örnek ile denemeler yapın:  
 
-   1.  Tüm Şablonları Dönüştür.  
+   1. Tüm Şablonları Dönüştür.  
 
-   2.  Derleme ve çalıştırma örneği (**CTRL + F5**).  
+   2. Derleme ve çalıştırma örneği (**CTRL + F5**).  
 
-   3.  Visual Studio'nun deneysel örneğinde açın `Sample` hata ayıklama proje dosyasında.  
+   3. Visual Studio'nun deneysel örneğinde açın `Sample` hata ayıklama proje dosyasında.  
 
         Bir Windows Forms denetiminde görüntülendiğini dikkat edin.  
 
@@ -54,17 +54,17 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
    Ana örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], DSL çözüm hakkında aşağıdaki noktalara dikkat edin:  
 
--   `DslDefinition.dsl` hiçbir diyagram öğeleri içerir. Bu DSL örneği modelleri görüntülemek için DSL diyagramları kullanmaz olmasıdır. Bunun yerine, bir Windows Form modeline bağlar ve formu üzerindeki öğelerin model görüntülenir.  
+- `DslDefinition.dsl` hiçbir diyagram öğeleri içerir. Bu DSL örneği modelleri görüntülemek için DSL diyagramları kullanmaz olmasıdır. Bunun yerine, bir Windows Form modeline bağlar ve formu üzerindeki öğelerin model görüntülenir.  
 
--   Ek olarak `Dsl` ve `DslPackage` projeleri, çözümü içeren adlı üçüncü bir proje `UI.` **UI** projesini içeren bir Windows Forms denetiminin tanımı. `DslPackage` bağımlı `UI`, ve `UI` bağlıdır `Dsl`.  
+- Ek olarak `Dsl` ve `DslPackage` projeleri, çözümü içeren adlı üçüncü bir proje `UI.` **UI** projesini içeren bir Windows Forms denetiminin tanımı. `DslPackage` bağımlı `UI`, ve `UI` bağlıdır `Dsl`.  
 
--   İçinde `DslPackage` projesi `UI\DocView.cs` tanımlanan Windows Forms Denetim kod bulunur `UI` proje.  
+- İçinde `DslPackage` projesi `UI\DocView.cs` tanımlanan Windows Forms Denetim kod bulunur `UI` proje.  
 
--   `UI` Projesini içeren bir çalışma örneği DSL için bağlı bir form denetimi. Ancak, DSL tanımını değiştiğinde, çalışmaz. `UI` Proje içerir:  
+- `UI` Projesini içeren bir çalışma örneği DSL için bağlı bir form denetimi. Ancak, DSL tanımını değiştiğinde, çalışmaz. `UI` Proje içerir:  
 
-    -   Adlı bir Windows Forms sınıf `ModelViewControl`.  
+    - Adlı bir Windows Forms sınıf `ModelViewControl`.  
 
-    -   Adlı bir dosya `DataBinding.cs` ek kısmi bir tanımını içeren `ModelViewControl`. İçeriği görmek için **Çözüm Gezgini**dosyası için kısayol menüsünü açın ve seçin **kodu görüntüle**.  
+    - Adlı bir dosya `DataBinding.cs` ek kısmi bir tanımını içeren `ModelViewControl`. İçeriği görmek için **Çözüm Gezgini**dosyası için kısayol menüsünü açın ve seçin **kodu görüntüle**.  
 
 ### <a name="about-the-ui-project"></a>UI projesi hakkında  
  DSL tanım dosyası kendi DSL tanımlamak için güncelleştirdiğinizde, bağlantı denetimi güncellemek zorunda kalırsınız `UI` DSL'nizi görüntülemek için proje. Farklı `Dsl` ve `DslPackage` projeleri, örnek `UI` gelen proje oluşturulmuyor `DslDefinitionl.dsl`. İsterseniz, bu izlenecek yolda kapsamında olmayan ancak kodunu oluşturmak için .tt dosyaları ekleyebilirsiniz.  
@@ -76,34 +76,34 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 #### <a name="to-update-the-dsl-definition"></a>DSL tanımını güncelleştirmek için  
 
-1.  DslDefinition.dsl DSL Tasarımcısı'nda açın.  
+1. DslDefinition.dsl DSL Tasarımcısı'nda açın.  
 
-2.  Silme **ExampleElement**  
+2. Silme **ExampleElement**  
 
-3.  Yeniden adlandırma **ExampleModel** etki alanı sınıfı `Farm`.  
+3. Yeniden adlandırma **ExampleModel** etki alanı sınıfı `Farm`.  
 
      Adlı ek bir etki alanı özellikleri vermek `Size` türü **Int32**, ve `IsOrganic` türü **Boole**.  
 
     > [!NOTE]
     >  Kök etki alanı sınıfını silmek ve ardından yeni bir kök oluşturun, düzenleyici kök sınıfı özelliği döndürme gerekecektir. İçinde **DSL Gezgini**seçin **Düzenleyicisi**. Özellikler penceresinde ayarlayın **kök sınıfı** için `Farm`.  
 
-4.  Kullanım **adlı etki alanı sınıfı** aşağıdaki alan sınıfları oluşturmak için aracı:  
+4. Kullanım **adlı etki alanı sınıfı** aşağıdaki alan sınıfları oluşturmak için aracı:  
 
-    -   `Field` – Bu adlı bir ek etki alanı özelliği size `Size`.  
+    - `Field` – Bu adlı bir ek etki alanı özelliği size `Size`.  
 
-    -   `Animal` – Özellikler penceresinde ayarlayın **devralma değiştiricisi** için **soyut**.  
+    - `Animal` – Özellikler penceresinde ayarlayın **devralma değiştiricisi** için **soyut**.  
 
-5.  Kullanım **etki alanı sınıfı** aşağıdaki sınıflar oluşturmak için aracı:  
+5. Kullanım **etki alanı sınıfı** aşağıdaki sınıflar oluşturmak için aracı:  
 
-    -   `Sheep`  
+    - `Sheep`  
 
-    -   `Goat`  
+    - `Goat`  
 
-6.  Kullanım **devralma** aracının `Goat` ve `Sheep` devralınacak `Animal`.  
+6. Kullanım **devralma** aracının `Goat` ve `Sheep` devralınacak `Animal`.  
 
-7.  Kullanım **katıştırma** eklemek için araç `Field` ve `Animal` altında `Farm`.  
+7. Kullanım **katıştırma** eklemek için araç `Field` ve `Animal` altında `Farm`.  
 
-8.  Diyagram düzenli hale getirmek isteyebilirsiniz. Yinelenen öğe sayısını azaltmak için kullanma **alt ağacı buraya getirin** yaprak öğelerin kısayol menüsündeki komutu.  
+8. Diyagram düzenli hale getirmek isteyebilirsiniz. Yinelenen öğe sayısını azaltmak için kullanma **alt ağacı buraya getirin** yaprak öğelerin kısayol menüsündeki komutu.  
 
 9. **Tüm Şablonları dönüştürme** Çözüm Gezgini araç çubuğundaki.  
 
@@ -117,13 +117,13 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>DSL model veri kaynağı olarak tanımlamak için  
 
-1.  Üzerinde **veri** menüsünde seçin **veri kaynaklarını Göster**.  
+1. Üzerinde **veri** menüsünde seçin **veri kaynaklarını Göster**.  
 
      **Veri kaynakları** penceresi açılır.  
 
      Seçin **yeni veri kaynağı Ekle**. **Veri kaynağı Yapılandırma Sihirbazı** açılır.  
 
-2.  Seçin **nesne**, **sonraki**.  
+2. Seçin **nesne**, **sonraki**.  
 
      Genişletin **Dsl**, **Company.FarmApp**seçip **grubu**, modelinizin kök sınıf. Seçin **son**.  
 
@@ -181,7 +181,7 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>DSL bağlamaları tamamlamak için  
 
-1.  Ayrı bir kod dosyasında aşağıdaki kodu ekleyin **UI** proje:  
+1. Ayrı bir kod dosyasında aşağıdaki kodu ekleyin **UI** proje:  
 
     ```csharp  
     using System.ComponentModel;  
@@ -207,7 +207,7 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
     }  
     ```  
 
-2.  İçinde **DslPackage** proje, düzenleme **DslPackage\DocView.tt** aşağıdaki değişken tanımını güncelleştirmek için:  
+2. İçinde **DslPackage** proje, düzenleme **DslPackage\DocView.tt** aşağıdaki değişken tanımını güncelleştirmek için:  
 
     ```csharp  
     string viewControlTypeName = "FarmControl";  
@@ -218,18 +218,18 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 #### <a name="to-test-the-dsl"></a>DSL test etmek için  
 
-1.  Derleme ve çözümü çalıştırın.  
+1. Derleme ve çözümü çalıştırın.  
 
-2.  Visual Studio'nun deneysel örneğinde açın **örnek** dosya.  
+2. Visual Studio'nun deneysel örneğinde açın **örnek** dosya.  
 
-3.  İçinde **FarmApp Gezgini**, kısayol menüsünü açın **grubu** seçin ve kök düğümü **yeni geçmiş ekleme**.  
+3. İçinde **FarmApp Gezgini**, kısayol menüsünü açın **grubu** seçin ve kök düğümü **yeni geçmiş ekleme**.  
 
      `Goat1` görünür **hayvanlar** görünümü.  
 
     > [!WARNING]
     >  Kısayol menüsünü kullanmanız gerekir **grubu** düğümünü değil **hayvanlar** düğümü.  
 
-4.  Seçin **grubu** kök düğümü ve özelliklerini görüntüleyin.  
+4. Seçin **grubu** kök düğümü ve özelliklerini görüntüleyin.  
 
      Form görünümünde değiştirme **adı** veya **boyutu** grubunun.  
 
@@ -239,13 +239,13 @@ Bir Windows formu kullanıcı Arabirimi ve model gezginini gösteren bir DSL ör
 
 #### <a name="to-make-the-properties-update-immediately"></a>Hemen güncelleştirme özellikleri yapma  
 
-1.  FarmControl.cs Tasarım görünümünde, ad, boyut veya IsOrganic gibi basit bir alan seçin.  
+1. FarmControl.cs Tasarım görünümünde, ad, boyut veya IsOrganic gibi basit bir alan seçin.  
 
-2.  Özellikler penceresinde genişletin **DataBindings** açın **(Gelişmiş)**.  
+2. Özellikler penceresinde genişletin **DataBindings** açın **(Gelişmiş)**.  
 
      İçinde **biçimlendirme ve Gelişmiş bağlama** iletişim altında **veri kaynağı güncelleştirme modu**, seçin **OnPropertyChanged**.  
 
-3.  Derleme ve çözümü çalıştırın.  
+3. Derleme ve çözümü çalıştırın.  
 
      Alan grubu modeli değişikliklerini hemen karşılık gelen özelliği içeriğini değiştirdiğinizde doğrulayın.  
 

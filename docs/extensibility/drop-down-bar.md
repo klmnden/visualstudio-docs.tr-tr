@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9de8ea0a42d80adca560655c5f70c5dba84e015d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 77fc67d50d448ef58714f4c6a8a137c86d7f9d66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112318"
 ---
 # <a name="drop-down-bar"></a>Aşağı açılan çubuğu
 Aşağı açılan çubuğu kod penceresinin en üstünde sağlanır ve iki açılan listeleri içerir.
@@ -27,19 +27,19 @@ Aşağı açılan çubuğu kod penceresinin en üstünde sağlanır ve iki açı
 
  Bir açılan çubuğu uygularken birincil önem dört arabirimi vardır:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>
 
      Aşağı açılan çubuğunun içeriğini eklemek için bu arabirimi uygulayın. Her bir açılan birleşimini düz metin veya başvurmaktan metin içerebilir (kalın, italik veya alt çizgi), pencere metin yazı tipi renkleri veya çıkış gri yazı tipi renklendirme sahip olabilir ve isteğe bağlı olarak açılan öğesinin yanındaki küçük bir bit eşlem sağlayabilir. Benzer şekilde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> arabirimi, bit eşlem resimleri görüntü listeleri sağlanır. Farklı bir görüntü listesini her bir açılan bileşimi olabilir; Ancak, her bir görüntü listesi görüntüler aynı yükseklikte içermelidir. Ayrıca, kullanarak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> yöntemi, her bir birleşimi için bir araç ipucu sağlayabilir.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>
 
      Bu arabirim oluşturmak veya bir kod penceresinde açılan çubuğunu yok etmek için çağırın. Bu arabirim, aşağı açılan çubuğu zaten bir kod penceresine çağırarak ekli olup olmadığını belirlemek için de kullanılabilir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> yöntemi. Çağrı <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> gelen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>
 
      Doğrudan aşağı açılan çubuğu ile iletişim kurmak için bu arabirimi çağırın. Bu arabirim, açılan listeyi yenilemeye zorlamak için kullanabileceğiniz içeriği çubuk veya Seçimi liste kutuları biriyle değiştirin.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>
 
      Kayıtlı `ShowDropdownBarOption` dil hizmeti kayıt defteri anahtarında, kod penceresi yöneticinize açılan çubuğu görüntülenip görüntülenmeyeceğini ilgili kullanıcı tercihlerini ile eşitlemek için bu olay izlemelidir. Bu seçenek Dil hizmeti anahtarınızı kaydetmeyin sonra açılan çubuğunu gösterme veya gizleme seçeneğini devre dışı **seçenekleri** menüsü.
 

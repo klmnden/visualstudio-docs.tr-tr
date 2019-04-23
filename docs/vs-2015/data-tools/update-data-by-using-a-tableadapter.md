@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113836"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter kullanarak verileri güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Veri kümenizdeki verileri değiştiren ve doğrulandı sonra güncelleştirilen
   
  Tam bir veri kaynağını güncelleştirme yordamı, iş gereksinimlerinize bağlı olarak farklılık gösterebilir, ancak aşağıdaki adımları içerir:  
   
-1.  Bağdaştırıcının çağrı `Update` yönteminde bir `try` / `catch` blok.  
+1. Bağdaştırıcının çağrı `Update` yönteminde bir `try` / `catch` blok.  
   
-2.  Bir özel durum yakalandığında, hataya neden olan veri satırı bulun. Daha fazla bilgi için [nasıl yapılır: Hatalar içeren satırların bulun](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
+2. Bir özel durum yakalandığında, hataya neden olan veri satırı bulun. Daha fazla bilgi için [nasıl yapılır: Hatalar içeren satırların bulun](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
-3.  Sorun verilerinde mutabakat (program aracılığıyla yapabilirsiniz veya kullanıcıya değiştirilmesi için geçersiz satır sunarak) öğesini ve ardından güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
+3. Sorun verilerinde mutabakat (program aracılığıyla yapabilirsiniz veya kullanıcıya değiştirilmesi için geçersiz satır sunarak) öğesini ve ardından güncelleştirmeyi yeniden deneyin (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
 ## <a name="savedata-to-a-database"></a>Bir veritabanına SaveData  
  Çağrı `Update` TableAdapter bağdaştırıcısının yöntemi. Veritabanına yazılmak için değerleri içeren veri tablosunun adı geçirin.  
   
 #### <a name="to-update-a-database-by-using-a-tableadapter"></a>Bir TableAdapter'ı kullanarak bir veritabanını güncelleştirmek için  
   
--   TableAdapter bağdaştırıcısının içine`Update` yönteminde bir `try` / `catch` blok. Aşağıdaki örnek, içeriği güncelleştirmek gösterilmektedir `Customers` tablosundaki `NorthwindDataSet` içinden bir `try` / `catch` blok.  
+- TableAdapter bağdaştırıcısının içine`Update` yönteminde bir `try` / `catch` blok. Aşağıdaki örnek, içeriği güncelleştirmek gösterilmektedir `Customers` tablosundaki `NorthwindDataSet` içinden bir `try` / `catch` blok.  
   
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
      [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  

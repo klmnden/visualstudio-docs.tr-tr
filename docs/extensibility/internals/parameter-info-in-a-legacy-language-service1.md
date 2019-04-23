@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1c2c053a9e2c906e5ca9e530a5a46a2501a840
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086319"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Eski dil hizmetinde parametre bilgisi
 Parametre bilgisi IntelliSense araç ipucu, kullanıcılara bir dil yapısı içinde olduğu hakkında ipuçları sağlar.
@@ -43,31 +43,31 @@ Parametre bilgisi IntelliSense araç ipucu, kullanıcılara bir dil yapısı iç
 
  Olduğunda, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> sınıfı çağrıldığında, metotlarını aşağıdaki sırayla çağrılır:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
 
      Geçerli metin arabelleğini konumu ve ilgili verileri uzunluğunu döndürür. Bu araç ipucu penceresinin bu verilerle gizlememeniz değil IDE'ye bildirir.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
 
      Başlangıçta görüntülenmesini istediğiniz yöntemi (sıfır tabanlı dizini) döndürür. Sıfır döndürürse, örneğin, ardından ilk aşırı yüklenmiş yöntem başlangıçta sunulur.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
 
      Geçerli bağlamda geçerli olan aşırı yüklenmiş yöntemler sayısını döndürür. Bu yöntem için 1'den büyük bir değer döndürürse, daha sonra metin görünümünü yukarı ve aşağı okları sizin için görüntüler. Aşağı oka tıkladığınızda, IDE çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> yöntemi. Yukarı Oka tıkladığınızda, IDE çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> yöntemi.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
 
      Parametre bilgisi araç ipucu metnini çeşitli çağrılar sırasında oluşturulan <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> yöntemleri.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
 
      Yönteminde görüntülemek için parametre sayısını döndürür.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
 
      Görüntülenmesini istediğiniz aşırı yükleme ile ilgili bir yöntem numarası dönerseniz, bu yöntem, ardından bir çağrı tarafından çağrılır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> yöntemi.
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
 
      Metot ipucu görüntülendiğinde Düzenleyicisi, dil hizmetinin bildirir. İçinde <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> yöntemi, aşağıdaki çağrı:
 
@@ -75,6 +75,6 @@ Parametre bilgisi IntelliSense araç ipucu, kullanıcılara bir dil yapısı iç
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
     ```
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
 
      Bir çağrı alma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> yöntemi ipucu penceresini kapattığınızda yöntemi.

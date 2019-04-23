@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 347b35a1ed47236c0d6e6c187224ee50fd79852c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ec4fb02607ab4760f29acc2164c69fe8625e8fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090491"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: Başvuru Pencereleri sembol bilgileri
 Visual Studio profil oluşturma araçları simgesini kullanın (. *pdb*) dosyaları gibi sembolik adları çözümlemek için işlev adlarını program ikili dosyaları. Otomatik olarak indirip doğru güncelleştirmek için aşağıdaki adımları izleyebilirsiniz. *pdb* dosyaları yerel bilgisayarda Windows sürümü için.
@@ -30,17 +30,17 @@ Visual Studio profil oluşturma araçları simgesini kullanın (. *pdb*) dosyala
 
 ### <a name="to-use-the-microsoft-symbol-server"></a>Microsoft sembol sunucusu kullanmak için
 
-1.  C:\SymbolCache gibi sembol dosyası bilgilerini içeren bir klasör oluşturun.
+1. C:\SymbolCache gibi sembol dosyası bilgilerini içeren bir klasör oluşturun.
 
-2.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
+2. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
      **Seçenekleri** iletişim kutusu görüntülenir.
 
-3.  Genişletin **hata ayıklama** ağaç ve ardından **sembolleri**.
+3. Genişletin **hata ayıklama** ağaç ve ardından **sembolleri**.
 
-4.  İçinde **sembol dosyası (.pdb) konumlar**seçin **Microsoft sembol sunucuları**
+4. İçinde **sembol dosyası (.pdb) konumlar**seçin **Microsoft sembol sunucuları**
 
-5.  İçinde **semboller sembol sunucusundan bu dizine önbelleğe**, örneğin, 1. adımda oluşturduğunuz klasör yolunu yazın:
+5. İçinde **semboller sembol sunucusundan bu dizine önbelleğe**, örneğin, 1. adımda oluşturduğunuz klasör yolunu yazın:
 
      **C:\SymbolCache**
 

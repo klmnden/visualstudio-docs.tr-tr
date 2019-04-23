@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089984"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Nasıl yapılır: İş Akışlarında Kesme Noktası Ayarlama
 Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodunda yaptığınız gibi grafik iş akışlarında kesme noktalarını ayarlayabilir. Beklendiği gibi iş akışı yürütme ayarladığınız her bir kesme noktasında durur.  
@@ -32,13 +32,13 @@ Kullanırken [!INCLUDE[wfd1](../includes/wfd1-md.md)], Visual Basic veya C# kodu
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Tasarım görünümünde bir etkinlikte bir kesme noktası ayarlamak için  
   
-1.  Hata ayıklayıcı kesmek istediğiniz etkinliği seçin.  
+1. Hata ayıklayıcı kesmek istediğiniz etkinliği seçin.  
   
-2.  Üzerinde **hata ayıklama** menüsünde **iki durumlu kesme noktası**. Etkinlik sol üst kenarına kırmızı bir simge görünür.  
+2. Üzerinde **hata ayıklama** menüsünde **iki durumlu kesme noktası**. Etkinlik sol üst kenarına kırmızı bir simge görünür.  
   
      Alternatif olarak, aynı zamanda kısayol tuşlarına basabilirsiniz **F9** etkinlik veya seçerek etkinliğe sağ tıklayın ve da seçin sonra anahtar **kesme noktası** ardından **kesme noktası Ekle**bağlam menüsünden.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: İş akışı hata ayıklayıcısını çağırma](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [İş Akışı Tasarımcısı ile iş akışlarında hata ayıklama](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
- [Nasıl yapılır: İş Akışı Tasarımcısı ile XAML hatalarını ayıklama](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Nasıl yapılır: İş Akışı Tasarımcısı ile XAML Hatalarını Ayıklama](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

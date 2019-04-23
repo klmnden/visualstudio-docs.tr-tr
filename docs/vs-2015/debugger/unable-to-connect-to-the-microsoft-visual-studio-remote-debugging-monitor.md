@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085772"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Geçersiz bir Visual Studio uzaktan hata ayıklama İzleyicisi ad girdiğinizde 
   
 ## <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Visual Studio uzaktan hata ayıklama İzleyicisi yüklü ve uzak makinede çalışıyor olduğundan emin olun. Uzaktan hata ayıklayıcı ve nasıl yükleneceği hakkında daha fazla bilgi için bkz. [uzaktan hata ayıklama](../debugger/remote-debugging.md).  
+- Visual Studio uzaktan hata ayıklama İzleyicisi yüklü ve uzak makinede çalışıyor olduğundan emin olun. Uzaktan hata ayıklayıcı ve nasıl yükleneceği hakkında daha fazla bilgi için bkz. [uzaktan hata ayıklama](../debugger/remote-debugging.md).  
   
--   Visual Studio'da proje özelliklerine bakmak (**proje / özellikleri / hata ayıklama**). Emin **uzak sunucu adı** doğrudur.  
+- Visual Studio'da proje özelliklerine bakmak (**proje / özellikleri / hata ayıklama**). Emin **uzak sunucu adı** doğrudur.  
   
--   Uzak makinenin ağda erişilebilir olduğunu doğrulayın.  
+- Uzak makinenin ağda erişilebilir olduğunu doğrulayın.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>Uzak makineye ulaşılamıyor  
  Deneyin [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) uzak makine. Ping işlemine yanıt vermez, uzak Araçlar ya da bağlanmak mümkün olmayacaktır. Uzak makine yeniden başlatılıyor ve aksi takdirde ağ üzerinde doğru yapılandırıldığından emin deneyin.  
@@ -58,13 +58,13 @@ Geçersiz bir Visual Studio uzaktan hata ayıklama İzleyicisi ad girdiğinizde 
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Uzaktan hata ayıklayıcı farklı bir kullanıcı hesabı altında çalışıyor  
  Bu aşağıdaki yollardan biriyle çözebilirsiniz:  
   
--   Uzaktan hata ayıklayıcıyı durdurun ve yerel bilgisayarda kullanmakta olduğunuz hesapla yeniden başlatın.  
+- Uzaktan hata ayıklayıcıyı durdurun ve yerel bilgisayarda kullanmakta olduğunuz hesapla yeniden başlatın.  
   
--   Komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: `msvsmon /allow <username@computer>`  
+- Komut satırından uzaktan hata ayıklayıcıyı başlatabilirsiniz **/ allow \<kullanıcıadı >** parametresi: `msvsmon /allow <username@computer>`  
   
--   Uzaktan hata ayıklayıcının izinleri kullanıcı ekleyebilir (uzaktan hata ayıklayıcı penceresinde **araçları / izinleri**).  
+- Uzaktan hata ayıklayıcının izinleri kullanıcı ekleyebilir (uzaktan hata ayıklayıcı penceresinde **araçları / izinleri**).  
   
--   Önceki adımlarda yöntemlerini kullanamıyorsanız, uzaktan hata ayıklama yapmak herhangi bir kullanıcı izin verebilirsiniz. Uzaktan hata ayıklayıcı penceresinde Git **araçları/Options** iletişim. Seçtiğinizde, **kimlik doğrulaması yok**, daha sonra kontrol edebilirsiniz **tüm kullanıcıların hata ayıklamasına izin**. Ancak, bu seçeneği yalnızca hiçbir seçenek varsa ya da özel bir ağda olması durumunda kullanmanız gerekir.  
+- Önceki adımlarda yöntemlerini kullanamıyorsanız, uzaktan hata ayıklama yapmak herhangi bir kullanıcı izin verebilirsiniz. Uzaktan hata ayıklayıcı penceresinde Git **araçları/Options** iletişim. Seçtiğinizde, **kimlik doğrulaması yok**, daha sonra kontrol edebilirsiniz **tüm kullanıcıların hata ayıklamasına izin**. Ancak, bu seçeneği yalnızca hiçbir seçenek varsa ya da özel bir ağda olması durumunda kullanmanız gerekir.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>Uzak makinedeki güvenlik duvarı uzaktan hata ayıklayıcı gelen bağlantılara izin vermiyor  
  Visual Studio makinede güvenlik duvarı ve güvenlik duvarı uzak makinede Visual Studio uzaktan hata ayıklayıcı arasındaki iletişime izin verecek şekilde yapılandırılması gerekir. Uzaktan hata ayıklayıcıyı kullanarak bağlantı noktaları hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklayıcı bağlantı noktası atamaları](../debugger/remote-debugger-port-assignments.md). Windows Güvenlik duvarını yapılandırma hakkında daha fazla bilgi için bkz: [uzaktan hata ayıklama için Windows Güvenlik Duvarı Yapılandırma](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  

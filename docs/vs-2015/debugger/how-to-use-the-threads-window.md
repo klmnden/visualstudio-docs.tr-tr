@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092103"
 ---
 # <a name="how-to-use-the-threads-window"></a>Nasıl yapılır: İş parçacıkları penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,43 +38,43 @@ ms.locfileid: "54757209"
   
  **İş parçacıkları** penceresi, her satır bir iş parçacığında uygulamanızı temsil ettiği bir tablo içerir. Varsayılan olarak, uygulamanızı tüm iş parçacıklarının tabloda listelenir, ancak yalnızca sizi ilgilendiren iş parçacıklarını gösterilecek listeyi filtreleyebilirsiniz. Her sütun, farklı türde bilgi içerir. Ayrıca, bazı sütunları gizleyebilirsiniz. Tüm sütunları görüntülemek, aşağıdaki bilgileri, soldan sağa doğru görünür:  
   
--   Burada, özen istediğiniz bir iş parçacığını işaretleyebileyeceğiniz Bayrak sütunu. Bir iş parçacığı bayrak hakkında daha fazla bilgi için bkz: [nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md).  
+- Burada, özen istediğiniz bir iş parçacığını işaretleyebileyeceğiniz Bayrak sütunu. Bir iş parçacığı bayrak hakkında daha fazla bilgi için bkz: [nasıl yapılır: İş parçacıklarını bayrakla işaretleme ve bayrak](../debugger/how-to-flag-and-unflag-threads.md).  
   
--   Sarı okun etkin bir iş parçacığında burada gösterir etkin iş parçacığı sütunu. Burada hata ayıklayıcıya yürütmeyi kesmeden iş parçacığı bir ok bir özetini gösterir.  
+- Sarı okun etkin bir iş parçacığında burada gösterir etkin iş parçacığı sütunu. Burada hata ayıklayıcıya yürütmeyi kesmeden iş parçacığı bir ok bir özetini gösterir.  
   
--   **Kimliği** her iş parçacığı kimlik numarasını içeren sütun.  
+- **Kimliği** her iş parçacığı kimlik numarasını içeren sütun.  
   
--   **Yönetilen kimliği** yönetilen iş parçacıkları için yönetilen kimlik sayıları içeren sütun.  
+- **Yönetilen kimliği** yönetilen iş parçacıkları için yönetilen kimlik sayıları içeren sütun.  
   
--   **Kategori** sütunu kullanıcı arabirimi iş parçacıkları, uzak yordam çağrı işleyicisi veya çalışan iş parçacıkları iş parçacıkları kategorilere ayırır. Uygulamanın ana iş parçacığı bir özel kategori tanımlar.  
+- **Kategori** sütunu kullanıcı arabirimi iş parçacıkları, uzak yordam çağrı işleyicisi veya çalışan iş parçacıkları iş parçacıkları kategorilere ayırır. Uygulamanın ana iş parçacığı bir özel kategori tanımlar.  
   
--   **Adı** varsa veya olarak ada göre her bir iş parçacığı tanımlayan sütun \<No Name >.  
+- **Adı** varsa veya olarak ada göre her bir iş parçacığı tanımlayan sütun \<No Name >.  
   
--   **Konumu** sütun, iş parçacığı çalıştığı hangi gösterir. Bu konum iş parçacığı için tam çağrı yığınını Göster genişletebilirsiniz.  
+- **Konumu** sütun, iş parçacığı çalıştığı hangi gösterir. Bu konum iş parçacığı için tam çağrı yığınını Göster genişletebilirsiniz.  
   
--   **Öncelik** öncelik ya da sistem her iş parçacığı için atanan öncelik içeren sütun.  
+- **Öncelik** öncelik ya da sistem her iş parçacığı için atanan öncelik içeren sütun.  
   
--   **Benzeşim maskesi** genellikle gizli bir Gelişmiş sütunu olan sütun. Her iş parçacığı için İşlemci benzeşim maskesi bu sütunda görüntülenir. Çok işlemcili bir sistemde, bir iş parçacığı üzerinde çalışabileceği hangi İşlemci benzeşim maskesi belirler.  
+- **Benzeşim maskesi** genellikle gizli bir Gelişmiş sütunu olan sütun. Her iş parçacığı için İşlemci benzeşim maskesi bu sütunda görüntülenir. Çok işlemcili bir sistemde, bir iş parçacığı üzerinde çalışabileceği hangi İşlemci benzeşim maskesi belirler.  
   
--   **Askıya sayısı** askıda sayma içeren sütun. Bu sayaç, bir iş parçacığı çalıştırılıp çalıştırılamayacağını belirler. Askıda sayma açıklaması için "Dondurma ve çözme iş parçacığı sayısı" bölümüne bakın.  
+- **Askıya sayısı** askıda sayma içeren sütun. Bu sayaç, bir iş parçacığı çalıştırılıp çalıştırılamayacağını belirler. Askıda sayma açıklaması için "Dondurma ve çözme iş parçacığı sayısı" bölümüne bakın.  
   
--   **İşlem adı** her iş parçacığı ait olduğu için işlem içeren sütun. Bu sütun, birden çok işlemde hata ayıklama, ancak genellikle gizli yararlı olabilir.  
+- **İşlem adı** her iş parçacığı ait olduğu için işlem içeren sütun. Bu sütun, birden çok işlemde hata ayıklama, ancak genellikle gizli yararlı olabilir.  
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>İş parçacıkları penceresini kesme modunda veya çalıştırma modunda görüntülemek için  
   
--   Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **iş parçacıkları**.  
+- Üzerinde **hata ayıklama** menüsünde **Windows**ve ardından **iş parçacıkları**.  
   
 ### <a name="to-display-or-hide-a-column"></a>Bir sütunu sakla ya da görüntülemek için  
   
--   Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **sütunları**sonra seçin veya temizleyin, göstermek veya gizlemek istediğiniz sütun adı.  
+- Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **sütunları**sonra seçin veya temizleyin, göstermek veya gizlemek istediğiniz sütun adı.  
   
 ### <a name="to-switch-the-active-thread"></a>Etkin iş parçacığı geçiş yapmak için  
   
--   Aşağıdaki adımlardan birini gerçekleştirin:  
+- Aşağıdaki adımlardan birini gerçekleştirin:  
   
-    -   Herhangi bir iş parçacığı çift tıklayın.  
+    - Herhangi bir iş parçacığı çift tıklayın.  
   
-    -   Bir iş parçacığı sağ tıklatıp **iş parçacığına geçiş**.  
+    - Bir iş parçacığı sağ tıklatıp **iş parçacığına geçiş**.  
   
          Yeni etkin iş parçacığı yanındaki sarı ok görünür. Bir ok gri özetini burada hata ayıklayıcıya yürütmeyi kesmeden iş parçacığını tanımlar.  
   
@@ -85,44 +85,44 @@ ms.locfileid: "54757209"
   
 #### <a name="to-sort-threads"></a>İş parçacıkları sıralamak için  
   
-1.  Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde herhangi bir sütun üst kısmındaki düğmeye tıklayın.  
+1. Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde herhangi bir sütun üst kısmındaki düğmeye tıklayın.  
   
      İş parçacıkları, artık bu sütundaki değerlere göre sıralanır.  
   
-2.  Sıralama düzenini tersine çevirmek istiyorsanız, aynı düğmesine tekrar tıklayın.  
+2. Sıralama düzenini tersine çevirmek istiyorsanız, aynı düğmesine tekrar tıklayın.  
   
      Artık listesinin üstünde görünen iş parçacıkları ve en altında görünür.  
   
 #### <a name="to-group-threads"></a>İş parçacıklarını gruplandırma  
   
--   İçinde **iş parçacıkları** penceresi araç çubuğu, tıklayın **gruplandırma ölçütü** listelemek ve iş parçacıklarını gruplandırma istediğiniz ölçütleri'ı tıklatın.  
+- İçinde **iş parçacıkları** penceresi araç çubuğu, tıklayın **gruplandırma ölçütü** listelemek ve iş parçacıklarını gruplandırma istediğiniz ölçütleri'ı tıklatın.  
   
 #### <a name="to-sort-threads-within-groups"></a>Grupları içindeki dizileri sıralama  
   
-1.  Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **gruplandırma ölçütü** listelemek ve iş parçacıklarını gruplandırma istediğiniz ölçütleri'ı tıklatın.  
+1. Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **gruplandırma ölçütü** listelemek ve iş parçacıklarını gruplandırma istediğiniz ölçütleri'ı tıklatın.  
   
-2.  İçinde **iş parçacıkları** penceresinde herhangi bir sütun üst kısmındaki düğmeye tıklayın.  
+2. İçinde **iş parçacıkları** penceresinde herhangi bir sütun üst kısmındaki düğmeye tıklayın.  
   
      İş parçacıkları, artık bu sütundaki değerlere göre sıralanır.  
   
 #### <a name="to-expand-or-collapse-all-groups"></a>Tüm grupları genişletin veya daraltın için  
   
--   Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **Grupları Genişlet** veya **grupları Daralt**.  
+- Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **Grupları Genişlet** veya **grupları Daralt**.  
   
 ## <a name="searching-for-specific-threads"></a>Belirli iş parçacığı arama  
  İçinde [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], belirtilen bir dizenin eşleşen iş parçacığı için arama yapabilirsiniz. İş parçacıkları için arama yaptığınızda **iş parçacıkları** penceresinde herhangi bir sütunda arama dizesiyle eşleşen tüm iş parçacıkları pencere görüntüler. Çağrı yığınında üstünde görünen iş parçacığı konumu bilgilerdir **konumu** sütun. Varsayılan olarak, ancak tam çağrı yığınını aranmaz.  
   
 #### <a name="to-search-for-specific-threads"></a>Belirli iş parçacığı arama  
   
--   Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde, Git **arama** kutusu ve ya da:  
+- Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde, Git **arama** kutusu ve ya da:  
   
-    -   Bir arama dizesi yazın ve ENTER tuşuna basın.  
+    - Bir arama dizesi yazın ve ENTER tuşuna basın.  
   
          \- veya -  
   
-    -   Aşağı açılan listeye tıklayın **arama** kutusunda ve bir önceki aramaya ait arama dizesini seçin.  
+    - Aşağı açılan listeye tıklayın **arama** kutusunda ve bir önceki aramaya ait arama dizesini seçin.  
   
--   (İsteğe bağlı) Tam çağrı yığınını aramanızda eklemek için işaretleyin **arama çağrı yığını**.  
+- (İsteğe bağlı) Tam çağrı yığınını aramanızda eklemek için işaretleyin **arama çağrı yığını**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Dondurma ve iş parçacıklarını çözme  
  Bir iş parçacığını Dondur, sistem kaynakları kullanılabilir olsa bile, iş parçacığının yürütülmesini başlatılmaz.  
@@ -136,7 +136,7 @@ ms.locfileid: "54757209"
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Dondurma veya çözme iş parçacığı yürütme için  
   
--   Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **iş parçacıklarını dondurma** veya **çözme iş parçacığı**.  
+- Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **iş parçacıklarını dondurma** veya **çözme iş parçacığı**.  
   
      Bu eylem, seçili iş parçacıklarını etkiler **iş parçacıkları** penceresi.  
   
@@ -145,20 +145,20 @@ ms.locfileid: "54757209"
   
 #### <a name="to-display-only-flagged-threads"></a>Yalnızca bayraklı iş parçacıklarını görüntülemek için  
   
--   Sol üst köşesinde bayrağı düğmesini **iş parçacıkları** penceresi.  
+- Sol üst köşesinde bayrağı düğmesini **iş parçacıkları** penceresi.  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>İş parçacığı çağrı yığınlarını görüntüleme ve çerçeveler arasında geçiş yapma  
  Bir çoklu iş parçacığı kullanan programda her iş parçacığı kendi çağrı yığınına sahiptir. **İş parçacıkları** penceresi bu yığınlarını görüntülemek için kullanışlı bir yol sağlar.  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>İş parçacığı çağrı yığınını görüntülemek için  
   
--   İçinde **konumu** sütun, iş parçacığı konumu yanındaki ters üçgene tıklayın.  
+- İçinde **konumu** sütun, iş parçacığı konumu yanındaki ters üçgene tıklayın.  
   
      İş parçacığı için çağrı yığınını Göster konumuna genişletir.  
   
 #### <a name="to-view-or-collapse-the-call-stacks-of-all-threads"></a>Görüntüleme veya tüm iş parçacığı çağrı yığınlarını Daralt  
   
--   Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **çağrı yığınlarını genişletme** veya **Daralt çağrı yığınlarını**.  
+- Üst kısmındaki araç çubuğunda **iş parçacıkları** penceresinde tıklayın **çağrı yığınlarını genişletme** veya **Daralt çağrı yığınlarını**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok iş parçacıklı uygulamalarda hata ayıklama](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

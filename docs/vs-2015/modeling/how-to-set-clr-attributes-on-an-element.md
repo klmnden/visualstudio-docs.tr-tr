@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54c3bd854f824818d9656a33ccf30391f750a491
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080728"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Nasıl yapılır: Bir Öğede CLR Özniteliklerini Ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "54804339"
   
 ### <a name="to-add-a-custom-attribute"></a>Özel bir öznitelik eklemek için  
   
-1.  İçinde **DSL Gezgini**, özel bir öznitelik eklemek istediğiniz öğeyi seçin.  
+1. İçinde **DSL Gezgini**, özel bir öznitelik eklemek istediğiniz öğeyi seçin.  
   
-2.  İçinde **özellikleri** penceresi, sonraki **özel öznitelikler** özelliği, Gözat'a tıklayın (**...** ) simgesi.  
+2. İçinde **özellikleri** penceresi, sonraki **özel öznitelikler** özelliği, Gözat'a tıklayın (**...** ) simgesi.  
   
      **Düğmeye tıklandığında öznitelikleri Düzenle** iletişim kutusu açılır.  
   
-3.  İçinde **adı** sütun tıklayın  **\<öznitelik Ekle >** , öznitelik adı yazın. Press ENTER.  
+3. İçinde **adı** sütun tıklayın  **\<öznitelik Ekle >** , öznitelik adı yazın. Press ENTER.  
   
-4.  Öznitelik adı altında satırın parantez gösterir. Parametre türü özniteliği için bu satıra yazın (örneğin, `string`), ve ardından ENTER tuşuna basın.  
+4. Öznitelik adı altında satırın parantez gösterir. Parametre türü özniteliği için bu satıra yazın (örneğin, `string`), ve ardından ENTER tuşuna basın.  
   
-5.  İçinde **Name özelliği** sütun, uygun bir ad yazın örneğin, `MyString`.  
+5. İçinde **Name özelliği** sütun, uygun bir ad yazın örneğin, `MyString`.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
      **Özel öznitelikler** özelliği artık şu biçimde öznitelik görüntüler:  
   

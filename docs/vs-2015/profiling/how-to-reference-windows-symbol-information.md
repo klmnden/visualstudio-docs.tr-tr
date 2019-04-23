@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086708"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Nasıl yapılır: Başvuru Windows sembol bilgileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual Studio profil oluşturma araçları, işlev adlarını program ikili dosy
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Microsoft sembol sunucusu kullanmak için  
   
-1.  C:\SymbolCache gibi sembol dosyası bilgilerini içeren bir klasör oluşturun.  
+1. C:\SymbolCache gibi sembol dosyası bilgilerini içeren bir klasör oluşturun.  
   
-2.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+2. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
      **Seçenekleri** iletişim kutusu görüntülenir.  
   
-3.  Genişletin **hata ayıklama** ağaç ve ardından **sembolleri**.  
+3. Genişletin **hata ayıklama** ağaç ve ardından **sembolleri**.  
   
-4.  İçinde **sembol dosyası (.pdb) konumlar**seçin **Microsoft sembol sunucuları**  
+4. İçinde **sembol dosyası (.pdb) konumlar**seçin **Microsoft sembol sunucuları**  
   
-5.  İçinde **semboller sembol sunucusundan bu dizine önbelleğe**, örneğin, 1. adımda oluşturduğunuz klasör yolunu yazın:  
+5. İçinde **semboller sembol sunucusundan bu dizine önbelleğe**, örneğin, 1. adımda oluşturduğunuz klasör yolunu yazın:  
   
      **C:\SymbolCache**  
   

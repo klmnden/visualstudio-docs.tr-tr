@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087553"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Nasıl yapılır: Erişim yük testi sonuçlarını çözümleme
 
@@ -31,24 +31,24 @@ Tamamlanan yük testi için yük testi sonucu performans sayaç örneklerini ve 
 
 ## <a name="to-access-a-load-test-result"></a>Bir yük testi sonucu erişmek için
 
-1.  Bir web performansı ve yük testi projesinden, bir yük testi açın.
+1. Bir web performansı ve yük testi projesinden, bir yük testi açın.
 
-2.  Yük Testi Düzenleyicisi'nin araç çubuğunda seçin **sonuçları Aç ve Yönet** düğmesi.
+2. Yük Testi Düzenleyicisi'nin araç çubuğunda seçin **sonuçları Aç ve Yönet** düğmesi.
 
      **Sonuçları Aç ve Yönet** iletişim kutusu görüntülenir.
 
-3.  İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel >-denetleyici yok** yerel olarak depolanmış sonuçlara erişmek için.
+3. İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel >-denetleyici yok** yerel olarak depolanmış sonuçlara erişmek için.
 
-4.  İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
+4. İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
 
      Yük testi sonuçları yoksa görünürler **yük testi sonuçları** listesi. Sütunların **zaman**, **süresi**, **kullanıcı**, **sonucu**, **Test**, ve  **Açıklama**. **Test** test adını içerir ve **açıklama** test çalıştırılmadan önce eklenir isteğe bağlı bir açıklama içerir.
 
     > [!NOTE]
     > En son sonuçları listenin üst kısmındaki sonuçlar görüntülenir.
 
-5.  İçinde **yük testi sonuçları** listesinde, istediğiniz çözümleyin ve yük testi sonuçlarını seçin **açık**.
+5. İçinde **yük testi sonuçları** listesinde, istediğiniz çözümleyin ve yük testi sonuçlarını seçin **açık**.
 
-6.  **Yük Testi Çözümleyicisi** görünür. Seçilen yük testi sonucu Özet görünümünde görüntülenir. Daha fazla bilgi için [yük testi sonuçları özetine genel bakış](../test/load-test-results-summary-overview.md).
+6. **Yük Testi Çözümleyicisi** görünür. Seçilen yük testi sonucu Özet görünümünde görüntülenir. Daha fazla bilgi için [yük testi sonuçları özetine genel bakış](../test/load-test-results-summary-overview.md).
 
      Yük testi sonuçlarında diğer özelliklerini yönetebilir **sonuçları Aç ve Yönet** iletişim kutusu içeri aktarma, dışarı aktarma ve yük testi sonuçları kaldırma gibi. Daha fazla bilgi için [Yönet yük testi sonuçları Yük Testi Sonuçları Deposu](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

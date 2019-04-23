@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114359"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>İzlenecek yol: Sorunları yalıtmak için sanal kullanıcı aktivite Grafiği'ni kullanma
 
@@ -26,19 +26,19 @@ Sanal kullanıcı aktivite grafiği yük testi ile ilişkili olan sanal kullanı
 
 ## <a name="prerequisites"></a>Önkoşullar
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Bu yordamları tamamlayın:
+- Bu yordamları tamamlayın:
 
-    -   [Bir web performans testini kaydetme ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+    - [Bir web performans testini kaydetme ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Bir yük testi oluşturma ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Bir yük testi oluşturma ve çalıştırma](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Önceki İzlenecek içinde oluşturulmuş ColorWebApp çözümünü açın
 
-1.  Visual Studio'yu açın.
+1. Visual Studio'yu açın.
 
-2.  Açık **ColorWebApp** içeren çözüm *LoadTest1.loadtest*. Bu yük testi sonuçları bu konunun önkoşullar bölümünde listelenen üç izlenecek adımlarda yürütülmesi.
+2. Açık **ColorWebApp** içeren çözüm *LoadTest1.loadtest*. Bu yük testi sonuçları bu konunun önkoşullar bölümünde listelenen üç izlenecek adımlarda yürütülmesi.
 
      Bu kılavuzda kalan adımlarda ColorWebApp, adlandırılan bir web performans testi adlı bir web uygulaması varsayılır *ColorWebAppTest.webtest'i* ve adlandırılmış test yükü *LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ Sanal kullanıcı aktivite grafiği yük testi ile ilişkili olan sanal kullanı
 
 Sanal kullanıcı etkinliği verilerini toplamak için yük testi çalıştırın.
 
--   İçinde **Yük Testi Düzenleyicisi**, seçin **çalıştırma** araç çubuğunda. LoadTest1 çalışmaya başlar.
+- İçinde **Yük Testi Düzenleyicisi**, seçin **çalıştırma** araç çubuğunda. LoadTest1 çalışmaya başlar.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Sanal kullanıcı aktivite grafiği sorunları yalıtmak
 
@@ -54,11 +54,11 @@ Yük testinizi çalıştırın ve sanal kullanıcı etkinliği verilerini toplan
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Yük testi sonuçlarında sanal kullanıcı aktivite Grafiği'ni kullanmak için
 
-1.  Sonra Yük testi bittikten çalıştıran, **özeti** yük testi sonuçları sayfası görüntülenir **Yük Testi Çözümleyicisi**. Seçin **grafikleri** araç çubuğunda.
+1. Sonra Yük testi bittikten çalıştıran, **özeti** yük testi sonuçları sayfası görüntülenir **Yük Testi Çözümleyicisi**. Seçin **grafikleri** araç çubuğunda.
 
      Graflar görünümü görüntülenir.
 
-2.  Üzerinde **sayfa yanıt süresi** grafiği, bir eşik ihlali simgelerinin sağ tıklayıp **kullanıcı ayrıntılarına Git**.
+2. Üzerinde **sayfa yanıt süresi** grafiği, bir eşik ihlali simgelerinin sağ tıklayıp **kullanıcı ayrıntılarına Git**.
 
     > [!NOTE]
     > Kullanabileceğiniz **ayrıntıları** düğmesine **Yük Testi Düzenleyicisi** kullanıcı etkinlik grafiğini çok açmak için araç. Ancak, kullanırsanız **kullanıcı ayrıntılarına Git** seçeneği **sanal kullanıcı aktivite grafiği** otomatik olarak grafiğe sağ tıklanan test yoluna yakınlaştırmak.
@@ -67,37 +67,37 @@ Yük testinizi çalıştırın ve sanal kullanıcı etkinliği verilerini toplan
 
      Y ekseninde, tek tek sanal kullanıcıların yatay çizimler temsil eder. X ekseni yük testi çalışması için zaman çizelgesi görüntüler.
 
-3.  İçinde **zaman dönemini Yakınlaştır** aracı aşağıdaki **sanal kullanıcı aktivite grafiği**sol ayarlayın ve her ikisi de kadar doğru kaydırıcıları eşik ihlali simgesine kapatın. Bu içindeki zaman ölçeğini değiştirir **sanal kullanıcı aktivite grafiği**
+3. İçinde **zaman dönemini Yakınlaştır** aracı aşağıdaki **sanal kullanıcı aktivite grafiği**sol ayarlayın ve her ikisi de kadar doğru kaydırıcıları eşik ihlali simgesine kapatın. Bu içindeki zaman ölçeğini değiştirir **sanal kullanıcı aktivite grafiği**
 
-4.  İçinde **ayrıntı göstergesi**, onay kutusunu seçin **(hataları vurgula)**. Eşik ihlali nedeniyle sanal kullanıcı vurgulandığından emin olun.
+4. İçinde **ayrıntı göstergesi**, onay kutusunu seçin **(hataları vurgula)**. Eşik ihlali nedeniyle sanal kullanıcı vurgulandığından emin olun.
 
-5.  İçinde **sonuçlarını filtreleme** panelinde, onay kutularını temizleyin **başarılı sonuçları göster** ve **HTTP hatası** ancak **ValidationRuleError**onay kutusu seçili.
+5. İçinde **sonuçlarını filtreleme** panelinde, onay kutularını temizleyin **başarılı sonuçları göster** ve **HTTP hatası** ancak **ValidationRuleError**onay kutusu seçili.
 
      **Sanal kullanıcı aktivite grafiği** 3 saniyeden fazla üzerinde harcanan sanal kullanıcıların görüntüler *Red.aspx* sayfasında önceki yönergelerde yapılandırılmış eşik ihlali belirtildiği gibi.
 
-6.  Fare işaretçisini eşik ihlali için doğrulama kuralı hatası sanal kullanıcıyla temsil eden yatay çizgi üzerine bırakın.
+6. Fare işaretçisini eşik ihlali için doğrulama kuralı hatası sanal kullanıcıyla temsil eden yatay çizgi üzerine bırakın.
 
-7.  Aşağıdaki bilgileri içeren bir araç ipucu görüntülenir:
+7. Aşağıdaki bilgileri içeren bir araç ipucu görüntülenir:
 
-    -   **Kullanıcı Kimliği**
+    - **Kullanıcı Kimliği**
 
-    -   **Senaryo**
+    - **Senaryo**
 
-    -   **Test**
+    - **Test**
 
-    -   **Sonucu**
+    - **Sonucu**
 
-    -   **Ağ**
+    - **Ağ**
 
-    -   **Başlangıç saati**
+    - **Başlangıç saati**
 
-    -   **Süresi**
+    - **Süresi**
 
-    -   **Aracı**
+    - **Aracı**
 
-    -   **Test günlüğü**
+    - **Test günlüğü**
 
-8.  Dikkat **Test günlüğü** bir bağlantıdır. Seçin **Test günlüğü** bağlantı.
+8. Dikkat **Test günlüğü** bir bağlantıdır. Seçin **Test günlüğü** bağlantı.
 
 9. Günlükle ilişkili ColorWebTest öğesini web performans testi açılır **Web Performans Testi Sonuçları Görüntüleyicisi**. Eşik ihlallerinin gerçekleştiği yalıtmanıza olanak sağlar.
 

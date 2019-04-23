@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084927"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl yapılır: Projeleri Hedef Platformlar İçin Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791416"
   
 2. İçinde **etkin çözüm platformu** listesinde, hedef çözümü için 64 bit platform seçin ve ardından **Kapat** düğmesi.  
   
-   1.  İstediğiniz platform görünmüyorsa **etkin çözüm platformu** listesinde **yeni**.  
+   1. İstediğiniz platform görünmüyorsa **etkin çözüm platformu** listesinde **yeni**.  
   
         **Yeni çözüm platformu** iletişim kutusu görüntülenir.  
   
-   2.  İçinde **yazın veya seçin yeni platformu** listesinde **x64**.  
+   2. İçinde **yazın veya seçin yeni platformu** listesinde **x64**.  
   
        > [!NOTE]
        >  Yapılandırmanızı yeni bir ad verin, ayarlarını değiştirmeniz gerekebilir **Proje Tasarımcısı** doğru platformunu hedeflemek için.  
   
-   3.  Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.  
+   3. Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.  
   
    64-bit platformu hedefleyen tüm projeler için özellikler güncelleştirilir ve projenin sonraki derleme için 64-bit platformlarda iyileştirilir.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791416"
   
  Bu görevi gerçekleştirmek, kullandığınız programlama diline göre değişir. Daha fazla bilgi için aşağıdaki bağlantılara bakın:  
   
--   İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri için bkz: [/Platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeleri için bkz: [/Platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   İçin [!INCLUDE[csprcs](../includes/csprcs-md.md)] projeleri için bkz: [derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md).  
+- İçin [!INCLUDE[csprcs](../includes/csprcs-md.md)] projeleri için bkz: [derleme sayfası, Proje Tasarımcısı (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   İçin [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projeleri için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- İçin [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projeleri için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme platformlarını anlama](../ide/understanding-build-platforms.md)   

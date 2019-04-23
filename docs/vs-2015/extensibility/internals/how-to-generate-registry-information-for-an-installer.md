@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117739"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Nasıl yapılır: Bir Yükleyicinin Kayıt Defteri Bilgilerini Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ RegPkg.exe yardımcı programı, yönetilen bir VSPackage için bir kayıt bildi
   
 ### <a name="to-create-a-registration-manifest"></a>Bir kayıt bildirimi oluşturmak için  
   
--   RegPkg ile çalıştırma **/regfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.  
+- RegPkg ile çalıştırma **/regfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.  
   
      Örneğin, komut isteminde, aşağıdaki gibi yazın:  
   
@@ -39,7 +39,7 @@ RegPkg.exe yardımcı programı, yönetilen bir VSPackage için bir kayıt bildi
   
 ### <a name="to-view-a-registration-manifest"></a>Bir kayıt bildirimi görüntülemek için  
   
--   Kayıt bildirimi herhangi bir metin düzenleyicisinde açın.  
+- Kayıt bildirimi herhangi bir metin düzenleyicisinde açın.  
   
      RegPkg IronPython dil hizmeti oluşturan kayıt bildirimi örnektir:  
   
@@ -100,7 +100,7 @@ RegPkg.exe yardımcı programı, yönetilen bir VSPackage için bir kayıt bildi
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Bir Windows Installer XML araç takımı içerme dosyası oluşturmak için  
   
--   RegPkg ile çalıştırma **/wixfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.  
+- RegPkg ile çalıştırma **/wixfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.  
   
      Örneğin, komut isteminde, aşağıdaki gibi yazın:  
   
@@ -110,7 +110,7 @@ RegPkg.exe yardımcı programı, yönetilen bir VSPackage için bir kayıt bildi
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Bir Windows Installer XML araç takımı içerme dosyası görüntülemek için  
   
--   Açık Windows Installer XML araç takımı içerme dosyası herhangi bir metin düzenleyicisinde.  
+- Açık Windows Installer XML araç takımı içerme dosyası herhangi bir metin düzenleyicisinde.  
   
      RegPkg oluşturan içerme dosyası IronPython dil hizmeti örnektir:  
   

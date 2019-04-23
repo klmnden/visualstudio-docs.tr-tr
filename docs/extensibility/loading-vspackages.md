@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117570"
 ---
 # <a name="load-vspackages"></a>VSPackage yükleme
 İşlevleri gerekli olduğunda VSPackages Visual Studio'ya yüklenir. Örneğin, Visual Studio bir proje fabrikası ya da VSPackage'ı uygulayan bir hizmet kullanırken bir VSPackage yüklenir. Bu özellik, mümkün olduğunda performansını artırmak kullanılan Gecikmeli yüklemeyi çağrılır.
@@ -28,7 +28,7 @@ ms.locfileid: "56702063"
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>Otomatik belirli bir bağlamda VSPackage yükleme
 
--   Ekleme `ProvideAutoLoad` özniteliği VSPackage öznitelikleri:
+- Ekleme `ProvideAutoLoad` özniteliği VSPackage öznitelikleri:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ ms.locfileid: "56702063"
 
      Numaralandırılmış alanlarını bkz <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI bağlamı ve GUID değerlerinin listesi.
 
--   Bir kesim noktası <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.
+- Bir kesim noktası <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yöntemi.
 
--   VSPackage'ı oluşturun ve hata ayıklamaya başlayın.
+- VSPackage'ı oluşturun ve hata ayıklamaya başlayın.
 
--   Bir çözümü yüklemek veya bir tane oluşturabilirsiniz.
+- Bir çözümü yüklemek veya bir tane oluşturabilirsiniz.
 
      VSPackage'ı yükler ve kesme noktasında durur.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56702063"
 
  Kullanabileceğiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> VSPackage'ı yüklemeye zorlamak için yöntemi.
 
--   Bu koda Ekle <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yüklemek için başka bir VSPackage zorlar VSPackage'ı yöntemi:
+- Bu koda Ekle <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> yüklemek için başka bir VSPackage zorlar VSPackage'ı yöntemi:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

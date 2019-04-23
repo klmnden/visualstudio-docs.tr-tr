@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56121354e9c6e508ab591d306f7e210f6963694
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699bf71da01a34cdb7e943d65d545ce0496f2b91
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078290"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Nasıl yapılır: Performans araçlarını çalışan işlemlere ekleme ve bunlardan ayırma
 Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha kolay hale getirmek için çalışan bir işlemden ayırmak için kullanılabilir. Uygulama yükleme süresi hakkında veri toplama kaçınmak istiyorsanız ya da sonraki bir işlemin performansını izlemek için belirli bir duruma ulaştığında bir işlem profili için bu yöntemi kullanabilirsiniz.
@@ -42,23 +42,23 @@ Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha k
 
 ### <a name="to-attach-to-a-running-process"></a>Çalışan bir işleme iliştirmek için
 
-1.  Üzerinde **hata ayıklama** menüsünde **Profiler**, ardından **performans Gezgini**ve ardından **iliştirme**.
+1. Üzerinde **hata ayıklama** menüsünde **Profiler**, ardından **performans Gezgini**ve ardından **iliştirme**.
 
      **İşleme iliştirmek Profiler** iletişim kutusu görüntülenir.
 
-2.  Eklemek istediğiniz işlemin adını tıklayın.
+2. Eklemek istediğiniz işlemin adını tıklayın.
 
-3.  Tıklayın **ekleme**.
+3. Tıklayın **ekleme**.
 
 ### <a name="to-detach-from-a-running-process"></a>Çalışan bir işlemden ayırmak için
 
-1.  n **hata ayıklama** menüsünde **Profiler**, ardından **performans Gezgini**ve ardından **ayırma**.
+1. n **hata ayıklama** menüsünde **Profiler**, ardından **performans Gezgini**ve ardından **ayırma**.
 
      **İşleme iliştirmek Profiler** iletişim kutusu görüntülenir.
 
-2.  Ayırmak istediğiniz görüntü adına tıklayın.
+2. Ayırmak istediğiniz görüntü adına tıklayın.
 
-3.  Tıklayın **ayırma**.
+3. Tıklayın **ayırma**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Veri toplamayı denetleme](../profiling/controlling-data-collection.md)

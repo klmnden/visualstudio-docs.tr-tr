@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083049"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>İzlenecek yol: Bir uygulama sayfasını bir iş akışına ekleme
   Bu izlenecek yol, bir iş akışı projesine bir iş akışından türetilen veriyi görüntüleyen bir uygulama sayfasını nasıl ekleneceğini gösterir. Bu konu başlığı altında açıklanan projede derlemeler [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -38,22 +38,22 @@ ms.locfileid: "54865836"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint.
+- Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Konu başlığı projeyi tamamlamak de [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Konu başlığı projeyi tamamlamak de [izlenecek yol: İlişki ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend iş akışı kodu
  İlk olarak, harcama raporlarını miktarını sonucu sütununun değerini ayarlamak için iş akışına bir kod satırı ekleyin. Bu değer daha sonra harcama raporu Özet hesaplamaya kullanılır.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>İş akışında sonucu sütununun değerini ayarlamak için
 
-1.  Tamamlanmış projeyi konu başlığından yük [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) içine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Tamamlanmış projeyi konu başlığından yük [izlenecek yol: İlişkilendirme ve başlatma formları ile iş akışı oluşturma](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) içine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Kodu açık *Workflow1.cs* veya *Workflow1.vb* (bağlı olarak, programlama dili).
+2. Kodu açık *Workflow1.cs* veya *Workflow1.vb* (bağlı olarak, programlama dili).
 
-3.  Alt kısmına `createTask1_MethodInvoking` yöntemine aşağıdaki kodu ekleyin:
+3. Alt kısmına `createTask1_MethodInvoking` yöntemine aşağıdaki kodu ekleyin:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "54865836"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Bir uygulama sayfasını projeye eklemek için
 
-1.  ExpenseReport projeyi seçin ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+1. ExpenseReport projeyi seçin ve ardından, menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
-2.  İçinde **şablonları** bölmesinde seçin **uygulama sayfası** Şablonu proje öğesi için varsayılan adı kullanın (**ApplicationPage1.aspx**) ve **Ekle** düğmesi.
+2. İçinde **şablonları** bölmesinde seçin **uygulama sayfası** Şablonu proje öğesi için varsayılan adı kullanın (**ApplicationPage1.aspx**) ve **Ekle** düğmesi.
 
-3.  İçinde [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx değiştirin `PlaceHolderMain` aşağıdaki bölümü:
+3. İçinde [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx değiştirin `PlaceHolderMain` aşağıdaki bölümü:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "54865836"
 
      Bu kod sayfası başlığı ile birlikte bir tablo ekler.
 
-4.  Uygulama sayfası başlık değiştirerek ekleme `PlaceHolderPageTitleInTitleArea` aşağıdaki bölümü:
+4. Uygulama sayfası başlık değiştirerek ekleme `PlaceHolderPageTitleInTitleArea` aşağıdaki bölümü:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "54865836"
 
 #### <a name="to-code-the-application-page"></a>Uygulama sayfası kod
 
-1.  Seçin **ApplicationPage1.aspx** düğümünü ve ardından, menü çubuğunda, **görünümü** > **kod** uygulama sayfası arka plan kod görüntülenecek.
+1. Seçin **ApplicationPage1.aspx** düğümünü ve ardından, menü çubuğunda, **görünümü** > **kod** uygulama sayfası arka plan kod görüntülenecek.
 
-2.  Değiştirin **kullanarak** veya **alma** üst sınıf aşağıdaki deyimleri (bağlı olarak, programlama dili):
+2. Değiştirin **kullanarak** veya **alma** üst sınıf aşağıdaki deyimleri (bağlı olarak, programlama dili):
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "54865836"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Aşağıdaki kodu ekleyin `Page_Load` yöntemi:
+3. Aşağıdaki kodu ekleyin `Page_Load` yöntemi:
 
     ```vb
     Try
@@ -343,9 +343,9 @@ ms.locfileid: "54865836"
 
  Visual Studio'da Visual Web Designer aşağıdaki konulardan kullanarak SharePoint sayfası içeriği tasarlama hakkında daha fazla bilgi:
 
--   [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [SharePoint için Web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Web bölümleri veya uygulama sayfaları için yeniden kullanılabilir denetimler oluşturma](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

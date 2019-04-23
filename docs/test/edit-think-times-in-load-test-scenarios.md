@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090034"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Yük testleri senaryolarında Web sitesi insan etkileşimi gecikmelerini benzetmek için Düşünme zamanlarını düzenleme
 
@@ -48,13 +48,13 @@ Düşünme süreleri kullanılır, ancak normal bir eğri üzerinde değişir. D
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Bir yük testi senaryosunda bir Düşünme profili değiştirmek için
 
-1.  Web performansı ve yük testi projesinden, bir yük testi açın.
+1. Web performansı ve yük testi projesinden, bir yük testi açın.
 
-2.  İçinde **Yük Testi Düzenleyicisi**, değiştirmek istediğiniz senaryoyu düğümü seçin **Düşünme profili**. **Düşünme profili** görüntülenen **özellikleri** penceresi. Tuşuna **F4** görüntülenecek **özellikleri** penceresi.
+2. İçinde **Yük Testi Düzenleyicisi**, değiştirmek istediğiniz senaryoyu düğümü seçin **Düşünme profili**. **Düşünme profili** görüntülenen **özellikleri** penceresi. Tuşuna **F4** görüntülenecek **özellikleri** penceresi.
 
-3.  Değişiklik **Düşünme profili** özelliğinde **özellikleri** penceresi.
+3. Değişiklik **Düşünme profili** özelliğinde **özellikleri** penceresi.
 
-4.  Özelliklerini değiştirme işlemini tamamladıktan sonra seçin **Kaydet** üzerinde **dosya** menüsü. Bu gibi durumlarda, Yük testiniz daha sonra yeni bir Düşünme profili ile çalıştırabilirsiniz.
+4. Özelliklerini değiştirme işlemini tamamladıktan sonra seçin **Kaydet** üzerinde **dosya** menüsü. Bu gibi durumlarda, Yük testiniz daha sonra yeni bir Düşünme profili ile çalıştırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

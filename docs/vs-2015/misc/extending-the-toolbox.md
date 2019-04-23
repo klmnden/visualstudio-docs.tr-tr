@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088710"
 ---
 # <a name="extending-the-toolbox"></a>Araç kutusu genişletme
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Araç kutusu** sunar IDE'nin sürükle ve bırak mekanizma aracılığıyla düzenleyiciler ve tasarımcılar için işlevsellik sağlayan nesneleri koleksiyonu.  
   
  VSPackage çalıştığı ile iki temel yolu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **araç kutusu**:  
   
--   VSPackage yeni veri öğeleri ve denetimlere ekleyebilirsiniz **araç kutusu**.  
+- VSPackage yeni veri öğeleri ve denetimlere ekleyebilirsiniz **araç kutusu**.  
   
--   VSPackage hedefi ya da mevcut tüketici olabilir **araç kutusu** sürükle ve bırak işlemleri destekleyen ve yapılandırma işlevselliği **araç kutusu**ait görünüm.  
+- VSPackage hedefi ya da mevcut tüketici olabilir **araç kutusu** sürükle ve bırak işlemleri destekleyen ve yapılandırma işlevselliği **araç kutusu**ait görünüm.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Nasıl yapılır: Windows Forms kullanan bir araç kutusu denetimi oluşturma](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

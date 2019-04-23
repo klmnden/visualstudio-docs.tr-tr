@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085642"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage’ların Kullanıcı Arabirimi Öğeleri Eklemesi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubu
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio komut tablosu mimarisi  
  Belirtildiği gibi komut tablosu mimarisi hükümlerde mimari ilkeleri destekler. Soyutlamalar, veri yapılarını ve araçlar komut tablosu mimarisinin arkasında sacayakları aşağıdaki gibidir:  
   
--   Üç temel türlerde öğeler vardır: menü komutları ve gruplar. Menüleri kullanıcı Arabiriminde, menüleri, alt menüler, araç çubukları ve araç pencereleri sunulabilir. Kullanıcı IDE içinde yürütülebilir, ve menü öğeleri, düğmeler, liste kutuları veya diğer denetimleri sunulabilir yordamları komutlardır. Grupları, menüler ve komutlar kapsayıcılardır.  
+- Üç temel türlerde öğeler vardır: menü komutları ve gruplar. Menüleri kullanıcı Arabiriminde, menüleri, alt menüler, araç çubukları ve araç pencereleri sunulabilir. Kullanıcı IDE içinde yürütülebilir, ve menü öğeleri, düğmeler, liste kutuları veya diğer denetimleri sunulabilir yordamları komutlardır. Grupları, menüler ve komutlar kapsayıcılardır.  
   
--   Her öğe, öğe diğer öğeleri ve davranışını değiştirmek bayrakları göreli önceliğini açıklayan tanımı tarafından belirtilir.  
+- Her öğe, öğe diğer öğeleri ve davranışını değiştirmek bayrakları göreli önceliğini açıklayan tanımı tarafından belirtilir.  
   
--   Her öğenin üst öğesinin açıklayan bir yerleştirme vardır. Böylece kullanıcı arabiriminde birden fazla konumda görünebilir bir öğe birden çok üst öğeye sahip olabilir.  
+- Her öğenin üst öğesinin açıklayan bir yerleştirme vardır. Böylece kullanıcı arabiriminde birden fazla konumda görünebilir bir öğe birden çok üst öğeye sahip olabilir.  
   
      Bu gruptaki yalnızca alt olsa bile, her komut kendi üst öğesi olarak bir grup olmalıdır. Her standart menü, ayrıca bir üst grubu olmalıdır. Araç çubukları ve araç pencerelerini, kendi üst davranır. Bir grup ana Visual Studio menü çubuğunda, üst veya tüm menü, araç çubuğunda veya araç penceresi olabilir.  
   
@@ -76,15 +76,15 @@ VSPackage kullanıcı arabirimi (UI) öğeleri, örneğin, menüler, araç çubu
 ### <a name="menus-groups-and-commands"></a>Menüleri, gruplar ve komutlar  
  Bir menü, Grup veya komut bir GUID ve ID olduğunda, IDE eklenebilir. Her kullanıcı Arabirimi öğesi şunları içermelidir:  
   
--   A `guid` adıyla eşleşen öznitelik `GuidSymbol` UI öğesi altında tanımlanmış bir öğe.  
+- A `guid` adıyla eşleşen öznitelik `GuidSymbol` UI öğesi altında tanımlanmış bir öğe.  
   
--   Bir `id` ilişkili adıyla eşleşen öznitelik `IDSymbol` öğesi.  
+- Bir `id` ilişkili adıyla eşleşen öznitelik `IDSymbol` öğesi.  
   
      Birlikte `guid` ve `id` öznitelikleri compose *imza* UI öğesi.  
   
--   A `priority` UI öğesi kendi üst menü ya da Grup yerleşimini belirler özniteliği.  
+- A `priority` UI öğesi kendi üst menü ya da Grup yerleşimini belirler özniteliği.  
   
--   A [üst öğe](../../extensibility/parent-element.md) olan `guid` ve `id` imza üst menü veya grubun belirten öznitelikleri.  
+- A [üst öğe](../../extensibility/parent-element.md) olan `guid` ve `id` imza üst menü veya grubun belirten öznitelikleri.  
   
 #### <a name="menus"></a>Menüler  
  Her menüye olarak tanımlanan bir [menü öğesi](../../extensibility/menu-element.md) içinde `Menus` bölümü. Menüler olmalıdır `guid`, `id`, ve `priority` öznitelikleri ve `Parent` öğesini ve ayrıca aşağıdaki ek öznitelikleri ve alt öğeleri:  
@@ -271,17 +271,17 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>Genel gereksinimler  
  Önce görüntülenen ve etkin, komut aşağıdaki dizi test geçirilmelidir:  
   
--   Komutu, doğru yerleştirilir.  
+- Komutu, doğru yerleştirilir.  
   
--   `DefaultInvisible` Bayrağı ayarlı değil.  
+- `DefaultInvisible` Bayrağı ayarlı değil.  
   
--   Üst menü veya araç çubuğu görünür olur.  
+- Üst menü veya araç çubuğu görünür olur.  
   
--   Komut bir bağlam giriş nedeniyle görünmez değil [VisibilityConstraints öğesi](../../extensibility/visibilityconstraints-element.md) bölümü.  
+- Komut bir bağlam giriş nedeniyle görünmez değil [VisibilityConstraints öğesi](../../extensibility/visibilityconstraints-element.md) bölümü.  
   
--   VSPackage'ı uygulayan kodu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi görüntüler ve komutunuzu sağlar. Hiçbir arabirimi kodu, bunu engelledik ve üzerinde işlem.  
+- VSPackage'ı uygulayan kodu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi görüntüler ve komutunuzu sağlar. Hiçbir arabirimi kodu, bunu engelledik ve üzerinde işlem.  
   
--   Kullanıcı komutu tıkladığında, ana hatlarıyla açıklanan yordamı tabi olur [yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md).  
+- Kullanıcı komutu tıkladığında, ana hatlarıyla açıklanan yordamı tabi olur [yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md).  
   
 ## <a name="calling-pre-defined-commands"></a>Arama önceden tanımlı komutları  
  [UsedCommands öğesi](../../extensibility/usedcommands-element.md) VSPackages IDE veya diğer VSPackage'ları tarafından sağlanan erişim komutlarını sağlar. Bunu yapmak için oluşturun bir [UsedCommand öğesi](../../extensibility/usedcommand-element.md) GUID ve kullanmak için komutu kimliği vardır. Geçerli Visual Studio yapılandırmasının bir parçası olmasa bile bu komutu Visual Studio tarafından yüklenen sağlar. Daha fazla bilgi için [UsedCommand öğesi](../../extensibility/usedcommand-element.md).  
@@ -289,17 +289,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Arabirim öğesi görünümü  
  Seçme ve komut öğeleri konumlandırma konuları aşağıdaki gibidir:  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] farklı yerleştirme bağlı olarak görünen birçok kullanıcı Arabirimi öğeleri sunar.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] farklı yerleştirme bağlı olarak görünen birçok kullanıcı Arabirimi öğeleri sunar.  
   
--   Tarafından tanımlanan bir kullanıcı Arabirimi öğesi `DefaultInvisible` bayrağı görüntülenmeyecek IDE'de ya da kendi VSPackage uygulaması tarafından görüntülenen olmadığı sürece <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> yöntemi veya belirli bir kullanıcı Arabirimi bağlamda ilişkili `VisibilityConstraints` bölümü.  
+- Tarafından tanımlanan bir kullanıcı Arabirimi öğesi `DefaultInvisible` bayrağı görüntülenmeyecek IDE'de ya da kendi VSPackage uygulaması tarafından görüntülenen olmadığı sürece <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> yöntemi veya belirli bir kullanıcı Arabirimi bağlamda ilişkili `VisibilityConstraints` bölümü.  
   
--   Başarıyla konumlandırılmış bir komut görüntülenmeyebilir. Bu IDE otomatik olarak gizler veya VSPackage'ı (veya değil) arabirimler bağlı olarak bazı komutlar görüntüler için uygulanır. Örneğin, bazı VSPackage'nın uygulama yapı arabirimleri nedenleri derlemeyle ilgili menü öğeleri otomatik olarak gösterilecek.  
+- Başarıyla konumlandırılmış bir komut görüntülenmeyebilir. Bu IDE otomatik olarak gizler veya VSPackage'ı (veya değil) arabirimler bağlı olarak bazı komutlar görüntüler için uygulanır. Örneğin, bazı VSPackage'nın uygulama yapı arabirimleri nedenleri derlemeyle ilgili menü öğeleri otomatik olarak gösterilecek.  
   
--   Uygulama `CommandWellOnly` UI öğesinin tanımını bayrağı anlamına gelir komutu yalnızca özelleştirme tarafından eklenebilir.  
+- Uygulama `CommandWellOnly` UI öğesinin tanımını bayrağı anlamına gelir komutu yalnızca özelleştirme tarafından eklenebilir.  
   
--   IDE Tasarım görünümünde olduğunda yalnızca bir iletişim kutusu görüntülendiğinde, komutları yalnızca belirli kullanıcı Arabirimi bağlamlarda Bu, örneğin, kullanılabilir olabilir.  
+- IDE Tasarım görünümünde olduğunda yalnızca bir iletişim kutusu görüntülendiğinde, komutları yalnızca belirli kullanıcı Arabirimi bağlamlarda Bu, örneğin, kullanılabilir olabilir.  
   
--   IDE içinde görüntülenecek belirli UI öğeleri neden olmak için bir veya daha fazla arabirimi uygulayan veya biraz kod yazalım.  
+- IDE içinde görüntülenecek belirli UI öğeleri neden olmak için bir veya daha fazla arabirimi uygulayan veya biraz kod yazalım.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Menüleri ve Komutlari Genişletme](../../extensibility/extending-menus-and-commands.md)

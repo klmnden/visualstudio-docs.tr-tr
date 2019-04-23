@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113319"
 ---
 # <a name="validate-your-uml-model"></a>UML modelinizi doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Visual Studio'da çizebilirsiniz UML modellerini bazıları projenizde geçersiz
   
 #### <a name="to-install-a-visual-studio-extension"></a>Visual Studio Uzantısı'nı yüklemek için  
   
-1.  Çift **.vsix** Windows Explorer (veya dosya Gezgini) dosyası.  
+1. Çift **.vsix** Windows Explorer (veya dosya Gezgini) dosyası.  
   
-2.  Herhangi bir örneğini yeniden başlatmanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zaten çalışıyor.  
+2. Herhangi bir örneğini yeniden başlatmanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zaten çalışıyor.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Doğrulama kısıtlamaları kaldırma ve devre dışı bırakma  
  Kısıtlamaları değil uygulama modeli ile çalışmak istediğinizde, bunları içeren bir uzantı geçici olarak devre dışı bırakabilirsiniz. Bu şekilde, modeli farklı türlerde farklı zamanlarda farklı uzantılarını devre dışı bırakma ve etkinleştirme ile çalışabilirsiniz.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Devre dışı bırakın veya Visual Studio Uzantısı'nı kaldırmak için  
   
-1.  Üzerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
+1. Üzerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.  
   
-2.  Uzantıyla birlikte tıklayın **devre dışı** uzantısı geçici olarak devre dışı. Daha sonra dönme tarafından yeniden etkinleştirebilmeniz için **Uzantılar ve güncelleştirmeler** penceresi.  
+2. Uzantıyla birlikte tıklayın **devre dışı** uzantısı geçici olarak devre dışı. Daha sonra dönme tarafından yeniden etkinleştirebilmeniz için **Uzantılar ve güncelleştirmeler** penceresi.  
   
      \- veya -  
   
      Tıklayın **kaldırma** uzantıyı kaldırmak için.  
   
-3.  Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Yeniden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modelleri için doğrulama kısıtlamaları tanımlama](../modeling/define-validation-constraints-for-uml-models.md)   

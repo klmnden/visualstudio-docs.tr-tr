@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b78f2f7bec4858f3b76caa12cdcfe983814834ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5840662956a43a8bc1ad7232dae8fc86ea6fb068
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089553"
 ---
 # <a name="color-theme-tools"></a>Renk teması araçları
 Visual Studio SDK oluşturma ve renk temaları yönetmenize yardımcı olmak için çeşitli araçlar sağlar.
 
--   [VSIX renk Düzenleyicisi](../../extensibility/internals/vsix-color-editor.md) aracı oluşturabilir ve Visual Studio için özel renkler düzenleyebilirsiniz.
+- [VSIX renk Düzenleyicisi](../../extensibility/internals/vsix-color-editor.md) aracı oluşturabilir ve Visual Studio için özel renkler düzenleyebilirsiniz.
 
--   [VSIX renk derleyicisi](../../extensibility/internals/vsix-color-compiler.md) aracı mevcut Visual Studio temasını dönüştürür *.xml* dosyalarınızı *.pkgdef* Uzantınız için dosyaları.
+- [VSIX renk derleyicisi](../../extensibility/internals/vsix-color-compiler.md) aracı mevcut Visual Studio temasını dönüştürür *.xml* dosyalarınızı *.pkgdef* Uzantınız için dosyaları.

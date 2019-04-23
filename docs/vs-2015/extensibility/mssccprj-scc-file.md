@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117726"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC Dosyası
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Bir Visual Studio çözüm veya projeyi IDE'yi kullanarak kaynak denetimi altın
   
  MSSCCPRJ destekleyen bir kaynak denetimi eklentisi. SCC dosya, aşağıdaki yönergelere uyması gerekir:  
   
--   Yalnızca bir MSSCCPRJ olabilir. Dizin başına SCC dosyası.  
+- Yalnızca bir MSSCCPRJ olabilir. Dizin başına SCC dosyası.  
   
--   Bir MSSCCPRJ. SCC dosyası, belirli bir dizinin içindeki kaynak denetimi altında olan birden çok dosya için "AuxPath" ve "ProjName" içerebilir.  
+- Bir MSSCCPRJ. SCC dosyası, belirli bir dizinin içindeki kaynak denetimi altında olan birden çok dosya için "AuxPath" ve "ProjName" içerebilir.  
   
--   "AuxPath" dizesini tırnak işaretleri içine olmaması gerekir. Tırnak içine sınırlayıcı olarak sağlamak için kullanılabilir (örneğin, bir çift tırnak boş bir dize belirtmek için kullanılabilir). MSSCCPRJ okunduğunda IDE "AuxPath" dizesi gelen tüm teklifler çıkartır. SCC dosyası.  
+- "AuxPath" dizesini tırnak işaretleri içine olmaması gerekir. Tırnak içine sınırlayıcı olarak sağlamak için kullanılabilir (örneğin, bir çift tırnak boş bir dize belirtmek için kullanılabilir). MSSCCPRJ okunduğunda IDE "AuxPath" dizesi gelen tüm teklifler çıkartır. SCC dosyası.  
   
--   MSSCCPRJ "ProjName" dizesi. SCC dosyası, döndürülen dizenin tam olarak eşleşmelidir `SccGetProjPath` işlevi. İşlev tarafından döndürülen dize tırnak içine MSSCCPRJ dizesinde varsa. SCC dosya, tırnak işareti olmalıdır çevresinde ve bunun tersi de geçerlidir.  
+- MSSCCPRJ "ProjName" dizesi. SCC dosyası, döndürülen dizenin tam olarak eşleşmelidir `SccGetProjPath` işlevi. İşlev tarafından döndürülen dize tırnak içine MSSCCPRJ dizesinde varsa. SCC dosya, tırnak işareti olmalıdır çevresinde ve bunun tersi de geçerlidir.  
   
--   Bir MSSCCPRJ. SCC dosya oluşturulduğunda veya bir dosya, kaynak denetimi altında yerleştirilmiş her güncelleştirildiğinde.  
+- Bir MSSCCPRJ. SCC dosya oluşturulduğunda veya bir dosya, kaynak denetimi altında yerleştirilmiş her güncelleştirildiğinde.  
   
--   Eğer bir MSSCCPRJ. SCC dosya silindiğinde, sağlayıcı bu dizine ilgili kaynak denetimi işlemi gerçekleştiren bir sonraki açışınızda yeniden oluşturmalıdır.  
+- Eğer bir MSSCCPRJ. SCC dosya silindiğinde, sağlayıcı bu dizine ilgili kaynak denetimi işlemi gerçekleştiren bir sonraki açışınızda yeniden oluşturmalıdır.  
   
--   Bir MSSCCPRJ. SCC dosya kesin olarak tanımlı biçime uymalıdır.  
+- Bir MSSCCPRJ. SCC dosya kesin olarak tanımlı biçime uymalıdır.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ gösterimi. SCC dosya biçimi  
  MSSCCPRJ örneği aşağıda verilmiştir. SCC dosya biçimi (satır numaralarını yalnızca bir kılavuz olarak sağlanır ve dosya gövdesinde dahil edilmemesi gereken):  

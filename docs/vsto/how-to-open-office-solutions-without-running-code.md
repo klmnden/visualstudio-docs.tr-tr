@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117206"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Nasıl yapılır: Kod çalıştırmadan Office çözümlerini açma
   Yönetilen kod uzantıları ile oluşturulan Microsoft Office çözümü son kullanıcı Office uygulamasında güvenlik ayarı Yüksek olarak ayarlansa bile çalışır. .NET derleme kod güvenliği, Microsoft Office tarafından değil, Microsoft .NET Framework tarafından yönetilen olmasıdır.
@@ -36,7 +36,7 @@ ms.locfileid: "56616137"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Shift tuşunu kullanarak derleme atlamak için
 
--   Açık belgeler ve çalışma kitaplarından **dosya** menüsünü tutarken **Shift** Word ve Excel belge açılırken başlatma olayları oluşturma önlemek için anahtarı.
+- Açık belgeler ve çalışma kitaplarından **dosya** menüsünü tutarken **Shift** Word ve Excel belge açılırken başlatma olayları oluşturma önlemek için anahtarı.
 
     > [!NOTE]
     >  Bir belge veya çalışma kitabından açarsanız **Başlarken** görev bölmesi, basılı **Shift** kodu atlamaz. Ayrıca SHIFT tuşunu basılı olayları belge açıldıktan sonra gerçekleştirilen engellemez.
@@ -45,7 +45,7 @@ ms.locfileid: "56616137"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Yeniden adlandırma veya kaldırmadan bir derlemenin atlamak için
 
--   Derleme bulunduğu bilgisayarda gerekli izinlere sahipseniz, yeniden adlandırabilir veya belge veya çalışma kitabı bulunamıyor derlemeyi kaldırın. Bu, Office belge her açıldığında gerçekleştirilen hatayla sonuçlanır.
+- Derleme bulunduğu bilgisayarda gerekli izinlere sahipseniz, yeniden adlandırabilir veya belge veya çalışma kitabı bulunamıyor derlemeyi kaldırın. Bu, Office belge her açıldığında gerçekleştirilen hatayla sonuçlanır.
 
      Çözüm, birden çok kişi tarafından kullanılıyorsa, bu yöntem çözümü için tümünün çalışmasını engeller. Bu sorun kod veya başvurulan bir sunucu bulunan ve tüm kullanıcıların yürütme engellemek istiyorsanız yararlı olabilir.
 

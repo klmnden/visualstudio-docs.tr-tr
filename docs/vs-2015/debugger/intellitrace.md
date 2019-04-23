@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079311"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 |**Dağıtılmış uygulamalardan IntelliTrace verilerini toplama**|-   [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Bir IntelliTrace günlük dosyasından (.iTrace dosyası) hata ayıklamayı başlatın.**|-   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a> IntelliTrace ile hangi uygulamaların ayıklayabilirim?  
+## <a name="IntelliTraceSupport"></a> IntelliTrace ile hangi uygulamaların ayıklayabilirim?  
   
 |||  
 |-|-|  
@@ -64,7 +64,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
 > [!NOTE]
 >  Zaten çalışan bir işlemde hata ayıklamak istiyorsanız, IntelliTrace kullanamazsınız. IntelliTrace'i işlem başladığında başlatmanız gerekir.  
   
-##  <a name="IntelliTraceVSTraditional"></a> Neden IntelliTrace ile hata ayıklama?  
+## <a name="IntelliTraceVSTraditional"></a> Neden IntelliTrace ile hata ayıklama?  
  Geleneksel veya *canlı* hata ayıklama sadece uygulamanızın geçerli durumunu gösterir, geçmiş olaylar hakkında sınırlı veri ile. Bu olayları uygulamanın mevcut durumuna göre ya da sahip veya bu olayları uygulamanızı yeniden çalıştırarak yeniden oluşturmanız gerekir.  
   
  IntelliTrace bu zamanlardaki belirli olayları ve verileri kaydederek bu geleneksel hata ayıklama deneyimini genişletir. Bu, özellikle hatanın bulunduğu son adım, uygulamanızda, yeniden başlatmadan ne görmenize olanak sağlar. IntelliTrace geleneksel hata ayıklama işlemi sırasında varsayılan olarak açıktır ve görünmez ve otomatik olarak veri toplar. Bu, geleneksel hata ayıklama ve IntelliTrace hata ayıklama arasında kaydedilen bilgileri görmek için kolayca geçiş yapmanızı sağlar. Bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md) ve [IntelliTrace hangi verileri toplar?](#WhatData)  
@@ -101,7 +101,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
    Bu, dağıtımdaki uygulamalarla ilgili sorunları tanılamak istediğinizde kullanışlıdır. Bkz: [IntelliTrace collector kullanarak](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-##  <a name="WhatData"></a> IntelliTrace hangi verileri toplar?  
+## <a name="WhatData"></a> IntelliTrace hangi verileri toplar?  
  **Olay bilgilerini toplama**  
   
  Varsayılan olarak, IntelliTrace yalnızca IntelliTrace olayları kaydeder: hata ayıklayıcı olayları, özel durumlar, .NET Framework olayları ve hata ayıklamaya yardımcı olabilecek diğer sistem olaylarıdır. Hata ayıklayıcı olayları ve her zaman toplanan özel durumlar dışında toplamak istediğiniz IntelliTrace olaylarının türlerini seçebilirsiniz. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
@@ -112,27 +112,27 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
    IntelliTrace, performansa yardımcı olmak için bir hata ayıklayıcı olayında olası her değeri kaydetmez. Bunun yerine, bu değerleri kaydeder:  
   
-  -   Değerler **Yereller** penceresi. Tutun **Yereller** penceresinde bu değerleri görmek için açık.  
+  - Değerler **Yereller** penceresi. Tutun **Yereller** penceresinde bu değerleri görmek için açık.  
   
-  -   Değerler **Otolar** penceresi **Otolar** penceresini aç  
+  - Değerler **Otolar** penceresi **Otolar** penceresini aç  
   
-  -   Kaynak penceresinde değerini görmek için bir değişkenin üzerine fare işaretçisini getirdiğinizde görüntülenen DataTips değerleri. IntelliTrace sabitlenmiş DataTips değerlerini toplamaz.  
+  - Kaynak penceresinde değerini görmek için bir değişkenin üzerine fare işaretçisini getirdiğinizde görüntülenen DataTips değerleri. IntelliTrace sabitlenmiş DataTips değerlerini toplamaz.  
   
 - **Özel Durumlar**  
   
    IntelliTrace özel durum türünü ve iletisini bu tür özel durumlar için kaydeder:  
   
-  -   Özel durumun ortaya çıktığı ve yakalandığı yönetilen özel durumlar  
+  - Özel durumun ortaya çıktığı ve yakalandığı yönetilen özel durumlar  
   
-  -   Yönetilmeyen özel durumlar  
+  - Yönetilmeyen özel durumlar  
   
 - **.NET framework olayları**  
   
    Varsayılan olarak, IntelliTrace en sık görülen .NET Framework olaylarını kaydeder. Örneğin:  
   
-  -   Bir dosya erişim olayında IntelliTrace dosya adını toplar.  
+  - Bir dosya erişim olayında IntelliTrace dosya adını toplar.  
   
-  -   Bir Onay Kutusu Denetimi olayında IntelliTrace onay kutusunun durumunu ve metnini toplar.  
+  - Bir Onay Kutusu Denetimi olayında IntelliTrace onay kutusunun durumunu ve metnini toplar.  
   
 - **SharePoint 2010 ve SharePoint 2013 uygulama olayları**  
   
@@ -142,11 +142,11 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
    Bkz.  
   
-  -   [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  - [IntelliTrace tek başına toplayıcısını kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-  -   [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
+  - [Kayıtlı IntelliTrace verilerini kullanma](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [İzlenecek yol: IntelliTrace'i kullanarak SharePoint uygulamasında hata ayıklama](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **İşlev çağrısı bilgilerini toplama**  
   
@@ -169,7 +169,7 @@ Kodunuzun yürütme geçmişini izlemek ve kaydetmek için IntelliTrace kulland�
   
  IntelliTrace'in ne kadar çağrı bilgisi topladığını denetlemek için, yalnızca istediğiniz modülleri belirtin. Bu uygulamanızın toplama esnasındaki performansını iyileştirmeye yardımcı olabilir. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-##  <a name="AffectPerformance"></a> IntelliTrace uygulamamı yavaş?  
+## <a name="AffectPerformance"></a> IntelliTrace uygulamamı yavaş?  
  Varsayılan olarak, IntelliTrace yalnızca seçili IntelliTrace olaylarının verilerini toplar. Bu işlem sonrasında veya aşağı yapısı ve kuruluşuna kodunuzun bağlı olarak uygulamanızı yavaşlatabilir değil. Örneğin, IntelliTrace bir olayı sıklıkla kaydediyorsa, bu sizin uygulamanızı yavaşlatabilir. Bu ayrıca, uygulamanızı yeniden düzenlemeyi düşünmenizi neden olabilir.  
   
  Çağrı bilgilerini toplama uygulamanızı önemli ölçüde yavaşlatabilir. Diske kaydettiğiniz IntelliTrace herhangi bir günlük dosyasının (.iTrace dosyaları) boyutunu da artırabilir. Bu etkileri en aza indirmek için yalnızca ilginiz dahilinde olan modüller için çağrı bilgilerini toplayın.  .İTrace dosyalarınızın en büyük boyutunu değiştirmek için Git **Araçları**, **seçenekleri**, **IntelliTrace**, **Gelişmiş**. Bkz: [IntelliTrace yapılandırma](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  

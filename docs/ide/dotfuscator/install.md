@@ -22,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef556f71d03cf20767fcba38ff3579dda2627a1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0a6945713d86c510112992be3fefd2d41280ef14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083507"
 ---
 # <a name="install-dotfuscator-community"></a>Dotfuscator Community’yi yükleme
 
@@ -47,7 +47,7 @@ Dotfuscator Community, Visual Studio IDE içinden yükleyebilirsiniz:
 1. İçinde **arama kutusuna** (Ctrl + Q) türü `dotfuscator`. <br/> <br/> ![Arama kutusu](media/install_in_vs19_12.png) <br/> <br/>
 
 2. Arama sonuçlarında gösterilen, altında *bileşenleri* başlığı seçin **PreEmptive Protection yükle - Dotfuscator**.
-  * Bunun yerine, altında görürseniz *menüleri* başlığı **PreEmptive koruma - Dotfuscator Community**, Dotfuscator Community zaten yüklü. Bu seçeneğini [başlama][get-started].
+   * Bunun yerine, altında görürseniz *menüleri* başlığı **PreEmptive koruma - Dotfuscator Community**, Dotfuscator Community zaten yüklü. Bu seçeneğini [başlama][get-started].
 
 3. Bir Visual Studio yükleyicisi penceresi başlatılır, önceden yapılandırılmış Dotfuscator Community yüklemek için.
    > [!NOTE]

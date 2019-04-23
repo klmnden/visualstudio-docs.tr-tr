@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfefb49b2dea575a7a99c2531a6f241872cd4704
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078947"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Nasıl yapılır: Program aracılığıyla yeni Visio belgeleri oluşturma
   Yeni Microsoft Office Visio çizim belgesi oluşturduğunuzda, ona ekleme `Microsoft.Office.Interop.Visio.Documents` açık Visio belgeleri koleksiyonu. Sonuç olarak, `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi yeni bir Visio çizim belgesi oluşturur. Daha fazla bilgi için bkz: VBA başvuru belgelerine [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) yöntemi.
@@ -27,7 +27,7 @@ ms.locfileid: "56629995"
 
 ### <a name="to-create-a-new-document"></a>Yeni bir belge oluşturmak için
 
--   Kullanım `Microsoft.Office.Interop.Visio.Documents.Add` şablona dayalı yeni, boş bir belge oluşturmak için yöntemi.
+- Kullanım `Microsoft.Office.Interop.Visio.Documents.Add` şablona dayalı yeni, boş bir belge oluşturmak için yöntemi.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]
@@ -37,7 +37,7 @@ ms.locfileid: "56629995"
 
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>Mevcut bir belgesinden kopyalanan bir yeni belge oluşturma
 
--   Çağrı `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi ve bir Visio diyagramını yolunu belirtin.
+- Çağrı `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi ve bir Visio diyagramını yolunu belirtin.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
@@ -47,7 +47,7 @@ ms.locfileid: "56629995"
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Varolan kalıptan kopyalanır ve yeni bir şablon oluşturmak için
 
--   Çağrı `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi ve şablon yolunu belirtin.
+- Çağrı `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi ve şablon yolunu belirtin.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
@@ -57,7 +57,7 @@ ms.locfileid: "56629995"
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Mevcut bir şablonu temel alan yeni bir belge oluşturmak için
 
--   Çağrı `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi ve şablonun yolunu belirtin.
+- Çağrı `Microsoft.Office.Interop.Visio.Documents.Add` yöntemi ve şablonun yolunu belirtin.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]
@@ -65,11 +65,11 @@ ms.locfileid: "56629995"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu kod örneği için aşağıdakiler gereklidir:
 
--   Adlı bir Visio belgesini `myDrawing.vsd` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
+- Adlı bir Visio belgesini `myDrawing.vsd` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
 
--   Adlı bir Visio belgesini `myStencil.vss` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
+- Adlı bir Visio belgesini `myStencil.vss` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
 
--   Adlı bir Visio belgesini `myTemplate.vst` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
+- Adlı bir Visio belgesini `myTemplate.vst` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visio çözümleri](../vsto/visio-solutions.md)

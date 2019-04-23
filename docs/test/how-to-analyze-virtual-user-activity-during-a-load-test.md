@@ -8,12 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079467"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Nasıl yapılır: Sanal kullanıcı etkinlik grafiğini kullanarak yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme
 
@@ -25,9 +25,9 @@ Aşağıdaki yordamlar nasıl görüntüleneceğini göstermektedir **sanal kull
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Yük testi sonuçlarınızda Sanal kullanıcı aktivite grafiği görüntülemek için
 
-1.  Sanal kullanıcı verilerini görüntülemek için öncelikle yapılandırmalısınız **Tüm Bireysel Ayrıntılar** ayarını **Zamanlama Ayrıntıları Deposu** yük testi ile ilişkili olan özellik. Daha sonra Yük testi çalıştırın.
+1. Sanal kullanıcı verilerini görüntülemek için öncelikle yapılandırmalısınız **Tüm Bireysel Ayrıntılar** ayarını **Zamanlama Ayrıntıları Deposu** yük testi ile ilişkili olan özellik. Daha sonra Yük testi çalıştırın.
 
-2.  Sonra Yük test çalıştırmaları, test sonuçları Özet sayfasında görüntülenir. Seçin **kullanıcı ayrıntı** araç çubuğunda.
+2. Sonra Yük test çalıştırmaları, test sonuçları Özet sayfasında görüntülenir. Seçin **kullanıcı ayrıntı** araç çubuğunda.
 
      veya
 

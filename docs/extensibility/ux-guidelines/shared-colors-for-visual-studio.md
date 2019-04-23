@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089570"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio için paylaşılan renkler
 Ortak Visual Studio shell öğeleri kullanan kullanıcı Arabirimi tasarlama konusunda ya da arabirimi öğeniz benzer özellikleri ile tutarlı olmasını istediğiniz seçin ve renkleri atamak için paket tanım dosyalarında mevcut belirteci adları kullanın. Bu tema eklendiğinde veya güncelleştirildiğinde, otomatik olarak güncelleştirir ve kullanıcı Arabirimi ile genel Visual Studio ortamının tutarlı kalmasını sağlar.
@@ -22,11 +22,11 @@ Bu makalede, sık kullanılan UI öğeleri ve benzer kullanıcı Arabirimi oluş
 
 Doğru belirteci adları kullandığınızdan emin olun:
 
--   **İşlevi, renk üzerinde dayalı belirteç adları kullanın.** Ortak paylaşılan renkler, belirli bir arabirim öğeleri ile ilişkili ve yalnızca aynı veya benzer özellikler için kullanılmak üzere tasarlanmıştır. Örneğin, dönen ilerleme animasyonunun basılı açılan kutusu rengi renk istediğiniz olduğundan yeniden kullanmayın. Birleşik giriş kutusu ve animasyon işlevleri farklıdır ve renk birleşik giriş kutusu değişikliklerle ilişkili, artık animasyon öğeniz için uygun bir renk olabilir. Renk tutarlı kullanımı, kullanıcılarınızın yönlendirmek ve Karışıklığı önlemek yardımcı olur.
+- **İşlevi, renk üzerinde dayalı belirteç adları kullanın.** Ortak paylaşılan renkler, belirli bir arabirim öğeleri ile ilişkili ve yalnızca aynı veya benzer özellikler için kullanılmak üzere tasarlanmıştır. Örneğin, dönen ilerleme animasyonunun basılı açılan kutusu rengi renk istediğiniz olduğundan yeniden kullanmayın. Birleşik giriş kutusu ve animasyon işlevleri farklıdır ve renk birleşik giriş kutusu değişikliklerle ilişkili, artık animasyon öğeniz için uygun bir renk olabilir. Renk tutarlı kullanımı, kullanıcılarınızın yönlendirmek ve Karışıklığı önlemek yardımcı olur.
 
--   **Arka plan ve metin renklerini doğru birlikte kullanın.** Metin ile kullanılmaya yönelik arka plan renklerini, ilişkili metin rengi sahip olur. Metin renkler, arka plan bilgileri için belirtilen dışında kullanmayın. İlişkili metin rengi değilse, bu arka plan rengi metni görüntülemek beklediğiniz tüm yüzeyi için kullanmayın. Diğer metin ve arkaplan renklerini birleşimlerini okunamayan bir arabirimde neden olabilir.
+- **Arka plan ve metin renklerini doğru birlikte kullanın.** Metin ile kullanılmaya yönelik arka plan renklerini, ilişkili metin rengi sahip olur. Metin renkler, arka plan bilgileri için belirtilen dışında kullanmayın. İlişkili metin rengi değilse, bu arka plan rengi metni görüntülemek beklediğiniz tüm yüzeyi için kullanmayın. Diğer metin ve arkaplan renklerini birleşimlerini okunamayan bir arabirimde neden olabilir.
 
--   **Konumlarına için uygun olan denetim renkleri kullanın.** Bazı durumlarda, bazı Visual Studio denetimler ayrı kenarlık ve arka plan renkleri yok. Bunun yerine, bu yüzeyleri arkasına renkleri ayarlama seçin. Her zaman burada denetimin yerleştirme konumu için uygun olan belirteci adları kullandığınızdan emin olun.
+- **Konumlarına için uygun olan denetim renkleri kullanın.** Bazı durumlarda, bazı Visual Studio denetimler ayrı kenarlık ve arka plan renkleri yok. Bunun yerine, bu yüzeyleri arkasına renkleri ayarlama seçin. Her zaman burada denetimin yerleştirme konumu için uygun olan belirteci adları kullandığınızdan emin olun.
 
 > [!IMPORTANT]
 > "Başlangıç sayfası" veya "Şarabıı." kategoride bulunan belirteçleri kullanmayın
@@ -623,13 +623,13 @@ Mümkün olduğunda, Visual Studio ortamı tarafından sağlanan genel arama den
 
 Bir arama kutusu bazıları birbirini dışlayan olan çeşitli durumları biri olabilir:
 
--   "Odaklı" veya "odaklanmadan" olup olmadığını imleç ve metin kutusundaki için kısaltmasıdır.
+- "Odaklı" veya "odaklanmadan" olup olmadığını imleç ve metin kutusundaki için kısaltmasıdır.
 
--   Kullanıcının metin kutusuna bir arama sorgusu girişinin için "Etkin" veya "etkin" anlamına gelir.
+- Kullanıcının metin kutusuna bir arama sorgusu girişinin için "Etkin" veya "etkin" anlamına gelir.
 
--   "Vurgu", kullanıcı (Bu durumda, diğer tüm durumları geçersiz kılar) fare ile arama kutusuna moused anlamına gelir.
+- "Vurgu", kullanıcı (Bu durumda, diğer tüm durumları geçersiz kılar) fare ile arama kutusuna moused anlamına gelir.
 
--   "Devre dışı" arama işlevi için geçerli bağlam kapalı anlamına gelir.
+- "Devre dışı" arama işlevi için geçerli bağlam kapalı anlamına gelir.
 
 ![Arama kutusuna (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303 110_SearchBoxRedline")<br />Arama kutusuna (kırmızı çizgi)
 
@@ -735,7 +735,7 @@ Bir arama kutusu bazıları birbirini dışlayan olan çeşitli durumları biri 
 | --- | --- |
 | Arka Plan | Yok. |
 | Ön plan (karakter) | `SearchControl.ActionButtonDisabledGlyph` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Odaklanmış arama açılan düğmesi**
 
@@ -854,7 +854,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Bağlantı arka plan | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Temalı kullanıcı Arabiriminde kullanılmayan bu belirteç için gradyan duraklarının.) |
 | Ön plan (bağlantı metni) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Ağaç görünümleri
+### <a name="BKMK_TreeView"></a> Ağaç görünümleri
 Çözüm Gezgini, Sunucu Gezgini ve sınıf görünümü de dahil olmak üzere birçok araç pencereleri renklerini, renk adlarında tarafından denetlenen bir hiyerarşik kuruluş şeması uygulayan `TreeView` kategorisi. Ağaç görünümünde tüm öğeler, arka plan ve metin renklerini içerir. Alt öğelerinin iç içe geçmiş öğeler de öğe genişletilmiş veya daraltılmış olup olmadığını belirten karakterler var.
 
 ![Ağaç görünümü (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Ağaç görünümü (kırmızı çizgi)
@@ -884,7 +884,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.Background` |
 | Ön plan (metin) | `TreeView.Background` |
 | Ön plan (karakter) | `TreeView.GlyphMouseOver` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Ağaç görünümü öğesi: durum sürükleyin.**
 
@@ -917,7 +917,7 @@ Arama kutusunun yanıdaki açılan menüsü diğer Visual Studio açılan menül
 | Arka Plan | `TreeView.SelectedItemInactive` |
 | Ön plan (metin) | `TreeView.SelectedItemInactive` |
 | Ön plan (karakter) | `TreeView.SelectedItemInactiveGlyph` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Ağaç görünümü öğesi: durumu odaklı vurgulanan ve seçili**
 
@@ -1037,7 +1037,7 @@ Bildirim Tasarımcısı, Windows 8 ve Windows Phone 8 projeleri bildirim dosyas�
 
 ## <a name="command-structures"></a>Komut yapıları
 
-###  <a name="BKMK_CommandMenus"></a> Menüler
+### <a name="BKMK_CommandMenus"></a> Menüler
 Menüleri, Visual Studio içinde çeşitli yerlerde oluşabilir: belge veya araç pencerelerini veya IDE tamamında çeşitli konumlarda sağ katıştırılmış ana menü çubuğu. Menü diğer UI öğeleri ile ilişkili uygulamalar için ilgili öğenin bölümünde ele alınmıştır. Visual Studio ortamı tarafından sağlanan standart menü uygulama her zaman kullanmalısınız. Ancak, bazı ender durumlarda, standart bir Visual Studio menülerinin erişimi olmayabilir. Bu gibi durumlarda, kullanıcı Arabirimi diğer Visual Studio menülerinde ile tutarlı olmasını sağlamak için aşağıdaki belirteci adları kullanın.
 
 ![Visual Studio menüsünde (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Visual Studio menüsünde (kırmızı çizgi)
@@ -1068,7 +1068,7 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 | Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextActive` |
 | Ön plan (karakter) | `Environment.CommandBarMenuGlyph` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 **Menü başlığı: duruma getirin**
 
@@ -1105,7 +1105,7 @@ Genellikle bir Komut çubuğuna menü bulunduğunda menü başlığı arka plan,
 | Arka Plan | Yok. |
 | Ön plan (metin) | `Environment.CommandBarTextInactive` |
 | Ön plan (karakter) | `Environment.CommandBarTextInactive` |
-| Kenarlık | Yok. |
+| Kenarlık | None |
 
 #### <a name="menu-items"></a>Menü öğeleri
 Bir tek menü öğesinin menü metnini ve bir isteğe bağlı simge, onay kutusu veya alt simge oluşur. Arka plan ve metin rengi değişiklik üzerine gelindiğinde. Bu renk belirteci, bir arka plan/ön plan çiftidir.
@@ -1278,7 +1278,7 @@ Bir komut çubuğu grubuyla ilgili bir komut çubuğu denetimleri kümesinden ol
 | Ön plan (metin) | `Environment.CommandBarTextInactive` |
 | Kenarlık | Yok |
 
-####  <a name="BKMK_CommandComboBox"></a> Komut çubuğu birleşik giriş kutuları
+#### <a name="BKMK_CommandComboBox"></a> Komut çubuğu birleşik giriş kutuları
 
 > [!IMPORTANT]
 > Birleşik giriş kutuları, açılan listeler için benzerdir, ancak düzenlenebilir metin bölge. Düzenlenebilir metin bölge, açılan içermez, renk belirteçleri için kullanın. [komut çubuğu açılır listeleri](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,7 +1410,7 @@ Bir komut çubuğu grubuyla ilgili bir komut çubuğu denetimleri kümesinden ol
 | Arka Plan | Yok. |
 | Ön plan (karakter) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Komut çubuğu açılır listeleri
+#### <a name="BKMK_CommandDropDown"></a> Komut çubuğu açılır listeleri
 
 > [!IMPORTANT]
 >  Açılan listeler, birleşik giriş kutuları için benzerdir, ancak düzenlenebilir metin bölgeleri yoksundur. Renk belirteçleri için açılan bir düzenlenebilir metin bölgesi içeriyorsa kullanmak [komut çubuğu birleşik giriş kutuları](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -1713,9 +1713,9 @@ Belge sekmeleri hangi belgelerin yanı sıra etkin belgeyi hangisinin seçili ge
 #### <a name="open-document-tabs"></a>Açık belge sekmeleri
 Her açık belge adını görüntüleyen belge sekme kanalda bir sekmesi vardır. Belge ya da seçilebilir veya arka planda açın ve bu durumları sekmeleri yansıtacak:
 
--   Seçili belgeyi de şu anda görüntülenen belgenin temsil eder. Seçili bir sekme iyi belgenin üst kenarı genişlettiği belge kenarlık vardır.
+- Seçili belgeyi de şu anda görüntülenen belgenin temsil eder. Seçili bir sekme iyi belgenin üst kenarı genişlettiği belge kenarlık vardır.
 
--   Arka plan sekmeleri şu anda seçilen sekmesi olmayan herhangi bir belge sekme var. Tıklattıktan sonra seçili duruma ve tüm arka plan, kenarlık ve metin renklerini Bu belirteci adlarından Al.
+- Arka plan sekmeleri şu anda seçilen sekmesi olmayan herhangi bir belge sekme var. Tıklattıktan sonra seçili duruma ve tüm arka plan, kenarlık ve metin renklerini Bu belirteci adlarından Al.
 
 ![Açık belge sekme (kırmızı çizgi)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")<br />Açık belge sekme (kırmızı çizgi)
 

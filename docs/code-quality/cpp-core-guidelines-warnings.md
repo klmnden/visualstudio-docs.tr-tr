@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087930"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
@@ -84,17 +84,17 @@ C++ temel yönergeleri daha iyi ve daha güvenli kod yazmanıza yardımcı vard�
 
 Yeni kurallar, C++ temel yönergeleri denetleyici için eklendikçe önceden mevcut olan kod için üretilen uyarıların sayısını artırabilir. Önceden tanımlanmış kural kümeleri, hangi tür kuralların etkinleştirmek için filtre uygulamak için kullanabilirsiniz. Visual Studio 2017'den itibaren sürüm 15.3, desteklenen kural kümesi şunlardır:
 
-  - **Sahip işaretçisi kuralları** zorunlu [kaynak yönetimi denetler ilgili sahibine\<T > C++ temel yönergeleri'ndeki](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Sahip işaretçisi kuralları** zorunlu [kaynak yönetimi denetler ilgili sahibine\<T > C++ temel yönergeleri'ndeki](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Const kuralları** zorunlu [C++ temel yönergeleri'ndeki const ile ilgili denetimleri](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Const kuralları** zorunlu [C++ temel yönergeleri'ndeki const ile ilgili denetimleri](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Ham işaretçi kuralları** zorunlu [kaynak yönetimi, C++ temel yönergeleri'ndeki ilgili ham işaretçiler denetler](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Ham işaretçi kuralları** zorunlu [kaynak yönetimi, C++ temel yönergeleri'ndeki ilgili ham işaretçiler denetler](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Benzersiz işaretçi kuralları** zorunlu [kaynak yönetimi denetler C++ temel yönergeleri'ndeki ilgili benzersiz işaretçi semantiğine sahip türlerle](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Benzersiz işaretçi kuralları** zorunlu [kaynak yönetimi denetler C++ temel yönergeleri'ndeki ilgili benzersiz işaretçi semantiğine sahip türlerle](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Sınır kuralları** zorunlu [sınırların profili C++ temel yönergeleri](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Sınır kuralları** zorunlu [sınırların profili C++ temel yönergeleri](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Kural türü** zorunlu [yazın C++ temel yönergeleri profili](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Kural türü** zorunlu [yazın C++ temel yönergeleri profili](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 Uyarıları yalnızca bir veya birkaç gruplarının sınırlandırmayı seçebilirsiniz. **Yerel Minimum** ve **yerel önerilen** kural kümeleri PREfast diğer denetimleri ek olarak, C++ temel denetimi kuralları içerir. Kural kümeleri, Proje Özellikleri iletişim kutusunu açın kullanılabilir görmek için seçin **kod Analysis\General**, açılır menüde açın **kural kümeleri** birleşik giriş kutusu ve çekme **birden çok kural kümesi seçin** . Visual Studio'da kural kümeleri kullanma hakkında daha fazla bilgi için bkz. [Kod Analizi kurallarını gruplandırmak için kural kümeleri kullanma](using-rule-sets-to-group-code-analysis-rules.md).
 

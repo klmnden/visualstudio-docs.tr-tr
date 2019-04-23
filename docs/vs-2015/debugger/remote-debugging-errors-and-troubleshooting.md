@@ -25,25 +25,25 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eac2e46195fcf8713a5838c57c2869ed4e736b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7d35f763500d48b356305a4ed6cce7a282a42a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116738"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Uzaktan Hata Ayıklama Hataları ve Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uzaktan hata ayıklama çalışırken hatalarla karşılaşabilirsiniz.  
   
--   [Hata: Otomatik Olarak Sunucunun İçine Adımlanamıyor](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+- [Hata: Otomatik Olarak Sunucunun İçine Adımlanamıyor](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Hata: Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi (MSVSMON.EXE) uzak bilgisayar üzerinde çalışıyor görünmüyor.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running?view=vs-2015)  
+- [Hata: Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi (MSVSMON.EXE) uzak bilgisayar üzerinde çalışıyor görünmüyor.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running?view=vs-2015)  
   
--   [Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
+- [Microsoft Visual Studio Uzaktan Hata Ayıklama İzleyicisi'ne Bağlanılamıyor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Hata: Uzak makine, Uzaktan Bağlantılar iletişim kutusunda görünmüyor](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+- [Hata: Uzak makine, Uzaktan Bağlantılar iletişim kutusunda görünmüyor](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

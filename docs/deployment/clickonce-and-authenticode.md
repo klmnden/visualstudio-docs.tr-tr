@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 329f5c801fabce5f47e915fe54a885a98dda8500
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089594"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce ve Authenticode
 *Authenticode* uygulama kodu uygulama yayımcısının özgünlüğünü doğrulamak dijital sertifika ile imzalamak için endüstri standardı şifreleme kullanan bir Microsoft teknolojisidir. Uygulama dağıtımı için Authenticode kullanılarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Truva atı riskini azaltır. Truva atı, virüs veya kötü amaçlı bir üçüncü taraf kurulu olan güvenilir bir kaynaktan gelen yasal bir program olarak görünen diğer zararlı programı değil. İmzalama [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bir dijital sertifika ile dağıtımları derlemeleri ve dosyaları değil doğrulamak için isteğe bağlı bir adımdır.
@@ -58,11 +58,11 @@ ms.locfileid: "56631542"
 ### <a name="update-expired-certificates"></a>Süresi dolan sertifikaları güncelleştirme
  Önceki .NET Framework sürümlerinde, sertifikanın süresi dolmuş uygulamayı güncelleştirme, Uygulama çalışmayı durdurmasına neden olabilir. Bu sorunu çözmek için aşağıdaki yöntemlerden birini kullanın:
 
--   .NET Framework sürüm 2.0 SP1 veya daha sonra Windows XP veya sürüm 3.5 veya Windows Vista için daha sonra güncelleştirin.
+- .NET Framework sürüm 2.0 SP1 veya daha sonra Windows XP veya sürüm 3.5 veya Windows Vista için daha sonra güncelleştirin.
 
--   Uygulamayı kaldırın ve yeni bir sürümünü geçerli bir sertifika ile yeniden yükleyin.
+- Uygulamayı kaldırın ve yeni bir sürümünü geçerli bir sertifika ile yeniden yükleyin.
 
--   Sertifika güncelleştirmeleri bir komut satırı derlemesi oluşturun. Bu işlem hakkında adım adım bilgiler bulunabilir [Microsoft destek makalesi 925521](http://go.microsoft.com/fwlink/?LinkId=179454).
+- Sertifika güncelleştirmeleri bir komut satırı derlemesi oluşturun. Bu işlem hakkında adım adım bilgiler bulunabilir [Microsoft destek makalesi 925521](http://go.microsoft.com/fwlink/?LinkId=179454).
 
 ### <a name="store-certificates"></a>Store sertifikaları
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087332"
 ---
 # <a name="project-persistence"></a>Proje Kalıcılığı
 Kalıcılık, projeniz için bir temel tasarım noktadır. Çoğu proje dosyaları temsil edecek proje öğeleri kullanın. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verisini dosya tabanlı olmayan projeleri de destekler. Proje ve proje dosyası tarafından sahip olunan dosyaları, her iki kalıcı gerekir. IDE kendisi veya bir proje öğesi kaydetmek için projeyi bildirir.
@@ -25,9 +25,9 @@ Kalıcılık, projeniz için bir temel tasarım noktadır. Çoğu proje dosyalar
 
  Proje öğeleri, dosya tabanlı veya dosya tabanlı olmayan olabilir:
 
--   Yerel veya uzak dosya tabanlı öğeleri olabilir. Uzak sistemde dosyaların kalıcı ise C# Web projelerinde, örneğin, uzak bir sistem dosyalarına yönelik bağlantıları yerel olarak kalıcı hale getirin.
+- Yerel veya uzak dosya tabanlı öğeleri olabilir. Uzak sistemde dosyaların kalıcı ise C# Web projelerinde, örneğin, uzak bir sistem dosyalarına yönelik bağlantıları yerel olarak kalıcı hale getirin.
 
--   Dosya tabanlı olmayan öğeler için bir veritabanı veya havuz öğeleri kaydedebilirsiniz.
+- Dosya tabanlı olmayan öğeler için bir veritabanı veya havuz öğeleri kaydedebilirsiniz.
 
 ## <a name="commit-models"></a>Yürütme modelleri
  Proje öğeleri bulunduğu yere karar verdikten sonra uygun bir yürütme modeli seçmeniz gerekir. Örneğin, bir dosya tabanlı model ile yerel dosyaları, her proje otonom olarak kaydedilebilir. Bir depo modelde bir işlemde birden çok öğe kaydedebilirsiniz. Daha fazla bilgi için [proje türü tasarım kararları](../../extensibility/internals/project-type-design-decisions.md).
