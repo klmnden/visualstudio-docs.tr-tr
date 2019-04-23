@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054306"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio'da Çok İş Parçacıklı Uygulamalarda Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Bir iş parçacığı, işletim sisteminin işlemci süresi ayırdığı yönerg
  [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](../debugger/how-to-use-the-gpu-threads-window.md) inceleyin ve hata ayıklama sırasında GPU'da çalışan iş parçacıklarının birlikte çalışır.
 
 ## <a name="related-sections"></a>İlgili Bölümler
- [Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)
- -   Tek bir iş parçacığında bir kesme noktası yerleştirmek istediğinizde kesme noktası filtrelerini kullanın.
+
+[Kesme Noktalarını Kullanma](../debugger/using-breakpoints.md)
+- Tek bir iş parçacığında bir kesme noktası yerleştirmek istediğinizde kesme noktası filtrelerini kullanın.
 
 - İzleme noktaları olmadan, programınızın yürütülmesini izlemek için etkinleştirin. Bu, kilitlenmeler gibi sorunları incelemek için yararlı olabilir.
 

@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048937"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Nasıl yapılır: Yük testi sonuçlarındaki grafiklerde sayaç ekleme ve silme
 
@@ -51,25 +51,25 @@ Daha fazla bilgi için [nasıl yapılır: Zamanlama Ayrıntıları Depolama öze
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Bir yük testi grafiğinde belirli bir performans sayacına görüntülemek için
 
-1.  Bir yük testi tamamlandıktan sonra veya Yük Testi Çözümleyicisi'nin araç çubuğunda, bir test sonucunu seçin **grafikleri**.
+1. Bir yük testi tamamlandıktan sonra veya Yük Testi Çözümleyicisi'nin araç çubuğunda, bir test sonucunu seçin **grafikleri**.
 
      **Sayaçları** paneli, grafik görünümünde görüntülenir.
 
     > [!NOTE]
     > Varsa **sayaçları** paneli görünür değilse, seçin **Sayaçlar panelini Göster** araç.
 
-2.  İçinde **sayaçları** panelinden, düğümleri hiyerarşideki grafik şeklinde görüntülenmesini görmek istediğiniz performans sayacı bulana kadar genişletin.
+2. İçinde **sayaçları** panelinden, düğümleri hiyerarşideki grafik şeklinde görüntülenmesini görmek istediğiniz performans sayacı bulana kadar genişletin.
 
      Örneğin, testleri çalıştığı bir bilgisayarda kullanılabilir bellek görüntülemek için genişletin **bilgisayarlar**bilgisayar düğümünü genişletin ve ardından **bellek**. Göreceğiniz **Kullanılabilir MBayt** sayacı.
 
-3.  Performans sayacı görüntülemek istediğiniz graph'ı seçin.
+3. Performans sayacı görüntülemek istediğiniz graph'ı seçin.
 
-4.  Performans sayacı seçiminde sağ **sayaçları** seçin ve panel **grafik üzerinde sayaç Göster**.
+4. Performans sayacı seçiminde sağ **sayaçları** seçin ve panel **grafik üzerinde sayaç Göster**.
 
     > [!TIP]
     > Performans sayacının verileri bir grafikte görüntüleme geçici olarak durdurmak için göstergede performans sayacı için onay kutusunu temizleyin. Bu grafikte eğilim çizgisi görüntülemeden hala çözümlenecek min, Maks ve ortalama istatistikler sağlar. Bu grafik, çakışan birçok performans sayacı çizimleri içeriyorsa sorunları çözümlerken yararlı olabilir. Daha fazla bilgi için [yük testlerini çözümlemek için grafik görünümü göstergesini kullanma](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5.  Graftan performans sayacı verilerini kaldırmak için performans sayacı seçiminde sağ **sayacı** seçin ve gösterge sütunu **Sil**.
+5. Graftan performans sayacı verilerini kaldırmak için performans sayacı seçiminde sağ **sayacı** seçin ve gösterge sütunu **Sil**.
 
      \- veya -
 

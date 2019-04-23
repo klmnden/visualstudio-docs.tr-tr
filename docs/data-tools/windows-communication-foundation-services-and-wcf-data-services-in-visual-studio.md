@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045194"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri
 
@@ -139,9 +139,9 @@ Böyle bir durumda, belirttiğiniz `endpointConfigurationName` bir parametresi o
 
 ### <a name="to-select-a-service-endpoint"></a>Hizmet uç noktası seçin
 
-1.  ' Nde proje düğümüne sağ tıklayarak bir WCF hizmeti bir başvuru ekleyin **Çözüm Gezgini** seçip **hizmet Başvurusu Ekle**.
+1. ' Nde proje düğümüne sağ tıklayarak bir WCF hizmeti bir başvuru ekleyin **Çözüm Gezgini** seçip **hizmet Başvurusu Ekle**.
 
-2.  Kod Düzenleyicisi'nde hizmet başvurusu için bir oluşturucu ekleyin:
+2. Kod Düzenleyicisi'nde hizmet başvurusu için bir oluşturucu ekleyin:
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -154,24 +154,24 @@ Böyle bir durumda, belirttiğiniz `endpointConfigurationName` bir parametresi o
     > [!NOTE]
     > Değiştirin *ServiceReference* değiştirin ve hizmet başvurusu için ad alanı ile *Service1Client* hizmetin adı.
 
-3.  Bir IntelliSense listesi için oluşturucu aşırı yüklemeleri içeren görüntüler. Seçin `endpointConfigurationName As String` aşırı yükleme.
+3. Bir IntelliSense listesi için oluşturucu aşırı yüklemeleri içeren görüntüler. Seçin `endpointConfigurationName As String` aşırı yükleme.
 
-4.  Aşırı yükleme yazın `=` *ConfigurationName*burada *ConfigurationName* kullanmak istediğiniz uç noktaya adıdır.
+4. Aşırı yükleme yazın `=` *ConfigurationName*burada *ConfigurationName* kullanmak istediğiniz uç noktaya adıdır.
 
     > [!NOTE]
     > Kullanılabilir uç noktalar adını bilmiyorsanız, bunları bulabilirsiniz *app.config* dosya.
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Bir WCF hizmeti için kullanılabilir uç noktalar bulmak için
 
-1.  İçinde **Çözüm Gezgini**, sağ **app.config** hizmet başvurusunu içeren proje için dosya ve ardından **açık**. Dosya, Kod Düzenleyicisi'nde görünür.
+1. İçinde **Çözüm Gezgini**, sağ **app.config** hizmet başvurusunu içeren proje için dosya ve ardından **açık**. Dosya, Kod Düzenleyicisi'nde görünür.
 
-2.  Arama `<Client>` dosyasındaki etiketi.
+2. Arama `<Client>` dosyasındaki etiketi.
 
-3.  Altındaki arama `<Client>` etiketi ile başlayan etiket `<Endpoint>`.
+3. Altındaki arama `<Client>` etiketi ile başlayan etiket `<Endpoint>`.
 
      Hizmet başvurusu birden fazla uç nokta sağlıyorsa, olacaktır iki veya daha fazla `<Endpoint` etiketler.
 
-4.  İçinde `<EndPoint>` etiketlemek, size bir `name="` *SomeService* `"` parametresi (burada *SomeService* bir uç nokta adı temsil eder). Geçirilebilir uç nokta unvanıdır `endpointConfigurationName As String` bir hizmet başvurusu için bir oluşturucu aşırı yüklemesi.
+4. İçinde `<EndPoint>` etiketlemek, size bir `name="` *SomeService* `"` parametresi (burada *SomeService* bir uç nokta adı temsil eder). Geçirilebilir uç nokta unvanıdır `endpointConfigurationName As String` bir hizmet başvurusu için bir oluşturucu aşırı yüklemesi.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Nasıl yapılır: Bir hizmet yöntemini zaman uyumsuz olarak çağırma
 
@@ -186,11 +186,11 @@ Bir hizmet başvurusu bir projeye eklendiğinde varsayılan olarak, zaman uyumlu
 
 ### <a name="to-call-a-service-method-asynchronously"></a>Bir hizmet yöntemini zaman uyumsuz olarak çağırma
 
-1.  İçinde **Çözüm Gezgini**, hizmet başvurusunu seçin.
+1. İçinde **Çözüm Gezgini**, hizmet başvurusunu seçin.
 
-2.  Üzerinde **proje** menüsünü tıklatın **hizmet başvurusu Yapılandır**.
+2. Üzerinde **proje** menüsünü tıklatın **hizmet başvurusu Yapılandır**.
 
-3.  İçinde **hizmet başvurusu yapılandırma** iletişim kutusunda **zaman uyumsuz işlemler oluşturma** onay kutusu.
+3. İçinde **hizmet başvurusu yapılandırma** iletişim kutusunda **zaman uyumsuz işlemler oluşturma** onay kutusu.
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>Nasıl yapılır: Bir hizmet tarafından döndürülen veri bağlama
 
@@ -198,33 +198,33 @@ Yalnızca bir denetim için herhangi bir veri kaynağını bağlayabilirsiniz gi
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Bir WCF hizmeti tarafından döndürülen tek bir veri alanı denetim Bağlanılacak
 
-1.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.
+1. Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.
 
    **Veri kaynakları** penceresi görüntülenir.
 
-2.  İçinde **veri kaynakları** penceresinde, hizmet başvurusu düğümünü genişletin. Hizmet görünen tarafından döndürülen, bileşik bir tür.
+2. İçinde **veri kaynakları** penceresinde, hizmet başvurusu düğümünü genişletin. Hizmet görünen tarafından döndürülen, bileşik bir tür.
 
-3.  Bir tür için bir düğümünü genişletin. Bu tür için veri alanlarını görünür.
+3. Bir tür için bir düğümünü genişletin. Bu tür için veri alanlarını görünür.
 
-4.  Bir alan seçin ve veri türü için uygun olan denetimler listesini görüntülemek için açılan oka tıklayın.
+4. Bir alan seçin ve veri türü için uygun olan denetimler listesini görüntülemek için açılan oka tıklayın.
 
-5.  Bağlamak istediğiniz denetim türünü tıklayın.
+5. Bağlamak istediğiniz denetim türünü tıklayın.
 
-6.  Alanı form üzerine sürükleyin. Denetim ile birlikte formuna eklenir bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni.
+6. Alanı form üzerine sürükleyin. Denetim ile birlikte formuna eklenir bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni.
 
-7.  6 herhangi diğer alanları ancak 4 arasındaki adımları yineleyin bağlamak istediğiniz.
+7. 6 herhangi diğer alanları ancak 4 arasındaki adımları yineleyin bağlamak istediğiniz.
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Bir WCF hizmeti tarafından döndürülen bileşik türü bir denetim Bağlanılacak
 
-1.  Üzerinde **veri** menüsünde **veri kaynaklarını Göster**. **Veri kaynakları** penceresi görüntülenir.
+1. Üzerinde **veri** menüsünde **veri kaynaklarını Göster**. **Veri kaynakları** penceresi görüntülenir.
 
-2.  İçinde **veri kaynakları** penceresinde, hizmet başvurusu düğümünü genişletin. Hizmet görünen tarafından döndürülen, bileşik bir tür.
+2. İçinde **veri kaynakları** penceresinde, hizmet başvurusu düğümünü genişletin. Hizmet görünen tarafından döndürülen, bileşik bir tür.
 
-3.  Bir tür için bir düğüm seçin ve kullanılabilir seçeneklerin bir listesini görüntülemek için açılan oka tıklayın.
+3. Bir tür için bir düğüm seçin ve kullanılabilir seçeneklerin bir listesini görüntülemek için açılan oka tıklayın.
 
-4.  Tıklayın **DataGridView** veri kılavuzunda görüntülemek için veya **ayrıntıları** bireysel denetimlerinde verileri görüntülemek için.
+4. Tıklayın **DataGridView** veri kılavuzunda görüntülemek için veya **ayrıntıları** bireysel denetimlerinde verileri görüntülemek için.
 
-5.  Düğümü form üzerine sürükleyin. İle birlikte formu için denetimler ekleninceye bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni.
+5. Düğümü form üzerine sürükleyin. İle birlikte formu için denetimler ekleninceye bir <xref:System.Windows.Forms.BindingSource> bileşeni ve bir <xref:System.Windows.Forms.BindingNavigator> bileşeni.
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Nasıl yapılır: Varolan türleri yeniden kullan bir hizmetini yapılandırma
 
@@ -234,21 +234,21 @@ Bu sorunu önlemek için bütünleştirilmiş kodlardaki türleri varsayılan ol
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Tek bir bütünleştirilmiş kod paylaşımı türü devre dışı bırakmak için
 
-1.  İçinde **Çözüm Gezgini**, hizmet başvurusunu seçin.
+1. İçinde **Çözüm Gezgini**, hizmet başvurusunu seçin.
 
-2.  Üzerinde **proje** menüsünü tıklatın **hizmet başvurusu Yapılandır**.
+2. Üzerinde **proje** menüsünü tıklatın **hizmet başvurusu Yapılandır**.
 
-3.  İçinde **yapılandırma hizmet başvuruları** iletişim kutusunda **belirtilen bütünleştirilmiş kodlardaki türleri yeniden**.
+3. İçinde **yapılandırma hizmet başvuruları** iletişim kutusunda **belirtilen bütünleştirilmiş kodlardaki türleri yeniden**.
 
-4.  Tür paylaşımını etkinleştirmek istediğiniz her derleme için onay kutusunu seçin. Bir derleme için paylaşım türü devre dışı bırakmak için onay kutusunu temizleyin.
+4. Tür paylaşımını etkinleştirmek istediğiniz her derleme için onay kutusunu seçin. Bir derleme için paylaşım türü devre dışı bırakmak için onay kutusunu temizleyin.
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>Tüm derlemelerde paylaşım türü devre dışı bırakmak için
 
-1.  İçinde **Çözüm Gezgini**, hizmet başvurusunu seçin.
+1. İçinde **Çözüm Gezgini**, hizmet başvurusunu seçin.
 
-2.  Üzerinde **proje** menüsünü tıklatın **hizmet başvurusu Yapılandır**.
+2. Üzerinde **proje** menüsünü tıklatın **hizmet başvurusu Yapılandır**.
 
-3.  İçinde **yapılandırma hizmet başvuruları** iletişim kutusu, NET **bütünleştirilmiş kodlardaki türleri yeniden** onay kutusu.
+3. İçinde **yapılandırma hizmet başvuruları** iletişim kutusu, NET **bütünleştirilmiş kodlardaki türleri yeniden** onay kutusu.
 
 ## <a name="related-topics"></a>İlgili konular
 

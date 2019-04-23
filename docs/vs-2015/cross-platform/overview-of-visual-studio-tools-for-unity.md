@@ -8,12 +8,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d7ad35c95fab41ded9fd15b0f098307d4f7bb3ac
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 27ef5a1f79b97a5be5583917f1c9703b3d624c16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049782"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçlarına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Bu bölümde daha özellikleri Visual Studio Araçları Unity teklifler ve Unity
 ## <a name="integration-with-unity"></a>Unity ile tümleştirme  
  Unity için visual Studio Araçları ve geriye her zaman Visual Studio ve Unity Düzenleyicisi arasında geçiş yapmak zorunda üretkenlik Geliştirici olmaz mıydı. İşte bu Unity için Visual Studio Araçları Visual Studio'dan ayrılmanıza gerek kalmadan iş yapmaya devam kolaylaştırır.  
   
--   **Unity Proje Gezgini** tüm Unity projenizi Visual Studio'da Unity Düzenleyicisi'nde görüntülenen aynı hiyerarşiyi kullanarak görüntüler.  
+- **Unity Proje Gezgini** tüm Unity projenizi Visual Studio'da Unity Düzenleyicisi'nde görüntülenen aynı hiyerarşiyi kullanarak görüntüler.  
   
--   Unity Konsolu Tümleştirmesi Hata penceresi Visual Studio'nun içinde Unity konsolundan çıkış görüntüler.  
+- Unity Konsolu Tümleştirmesi Hata penceresi Visual Studio'nun içinde Unity konsolundan çıkış görüntüler.  
   
--   Visual Studio – geri Unity için F5 tuşuna basarak geçiş gerek oyununuzu hatalarını ayıklamaya başlayın.  
+- Visual Studio – geri Unity için F5 tuşuna basarak geçiş gerek oyununuzu hatalarını ayıklamaya başlayın.  
   
 ## <a name="superior-debugging"></a>Üst düzey hata ayıklama  
  Unity oyununuzu C# betik ve DLL'leri, tek başına çalışıp çalışmadığını veya Unity Editor'daki hata ayıklamak için Visual Studio'nun güçlü hata ayıklayıcı bağlanın. Visual Studio'dan beklediğiniz tüm hata ayıklama özelliklerini kullanabilirsiniz.  
@@ -49,22 +49,22 @@ Bu bölümde daha özellikleri Visual Studio Araçları Unity teklifler ve Unity
 ## <a name="productivity"></a>Üretkenlik  
  Yazma ve C# kodu yeniden düzenleme için Visual Studio'nun kurulu üretkenlik ek olarak, Unity için Visual Studio Araçları, Unity geliştiricileri için fazladan üretkenlik özellikleri sağlar.  
   
--   Sözdizimi renklendirme Unity'nın ShaderLab dil için hataları haline gelmeden önce hataları, gölgelendiriciler içinde nokta yardımcı olur. Yalnızca ShaderLab dosyalarınızı Visual Studio'da açın.  
+- Sözdizimi renklendirme Unity'nın ShaderLab dil için hataları haline gelmeden önce hataları, gölgelendiriciler içinde nokta yardımcı olur. Yalnızca ShaderLab dosyalarınızı Visual Studio'da açın.  
   
--   MonoBehavior sihirbaz Unity davranışları listesini göz atmanızı sağlar ve davranışları hakkında bilginiz olmayabilir için ortak kod oluşturur. CTRL + SHIFT + M tuşlarına basın.  
+- MonoBehavior sihirbaz Unity davranışları listesini göz atmanızı sağlar ve davranışları hakkında bilginiz olmayabilir için ortak kod oluşturur. CTRL + SHIFT + M tuşlarına basın.  
   
--   En sık kullandığınız Unity davranışlarıyla ilgili bilgi sahibi olduğunuzda hızlı MonoBehavior sihirbaz bunları larına koyar. CTRL + ALT + Q tuşlarına basın.  
+- En sık kullandığınız Unity davranışlarıyla ilgili bilgi sahibi olduğunuzda hızlı MonoBehavior sihirbaz bunları larına koyar. CTRL + ALT + Q tuşlarına basın.  
   
--   Visual Studio'da Unity belgelere erişebilir. Yalnızca API çağrısı hakkında bilgi edinin ve ardından CTRL + ALT + M, CTRL + H tuşuna istediğiniz vurgulayın.  
+- Visual Studio'da Unity belgelere erişebilir. Yalnızca API çağrısı hakkında bilgi edinin ve ardından CTRL + ALT + M, CTRL + H tuşuna istediğiniz vurgulayın.  
   
--   Bu özelliklerin tümünü ve daha fazla klavye kısayolları ile erişin.  
+- Bu özelliklerin tümünü ve daha fazla klavye kısayolları ile erişin.  
   
 ## <a name="visual-studio-tools-for-unity-api"></a>Unity API için Visual Studio Araçları  
  Özelleştirme ve sağlanan API'leri kullanarak Unity için Visual Studio Araçları davranışını genişletme.  
   
--   Unity için visual Studio Araçları, Visual Studio için Unity konsolundan akışını sağlamak için günlük geri çağırma kaydeder. Günlük bilgileri Düzenleyicisi betikleriniz varsa, Visual Studio için ileti göndermek için aynı geri çağırma içine takabilirsiniz. Daha fazla bilgi için günlük geri örneğe bakın.  
+- Unity için visual Studio Araçları, Visual Studio için Unity konsolundan akışını sağlamak için günlük geri çağırma kaydeder. Günlük bilgileri Düzenleyicisi betikleriniz varsa, Visual Studio için ileti göndermek için aynı geri çağırma içine takabilirsiniz. Daha fazla bilgi için günlük geri örneğe bakın.  
   
--   Unity stili geri ProjectFileGeneration kullanarak Unity için Visual Studio Araçları proje dosyalarını nasıl oluşturur değiştirebilirsiniz. Daha fazla bilgi için proje dosyası oluşturma örneğe bakın.  
+- Unity stili geri ProjectFileGeneration kullanarak Unity için Visual Studio Araçları proje dosyalarını nasıl oluşturur değiştirebilirsiniz. Daha fazla bilgi için proje dosyası oluşturma örneğe bakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unity giriş sayfası](http://unity3d.com)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb89fea3e364c5933a4b1cfeaf90b44dc14e83d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 31a61dd337fce614c1271f994a42ec90f3be8acb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054085"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için bir güvenlik bölgesi ayarlama
 Temel bir izin kümesi ile başlatmak gereken kod erişim güvenlik izinlerini ClickOnce uygulaması için ayarladığınızda, **güvenlik** sayfasının **Proje Tasarımcısı**.
@@ -30,17 +30,17 @@ Temel bir izin kümesi ile başlatmak gereken kod erişim güvenlik izinlerini C
 
 ### <a name="to-set-a-security-zone"></a>Bir güvenlik bölgesi ayarlama
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünü tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünü tıklatın **özellikleri**.
 
-2.  Tıklayın **güvenlik** sekmesi.
+2. Tıklayın **güvenlik** sekmesi.
 
-3.  Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
+3. Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
 
-4.  Seçin **kısmi güven uygulamasıdır** seçenek düğmesini.
+4. Seçin **kısmi güven uygulamasıdır** seçenek düğmesini.
 
      Denetimlerde **ClickOnce güvenlik izinleri** bölüm etkinleştirilir.
 
-5.  İçinde **uygulamanızı yükleneceği kaynak bölge** aşağı açılan listesinde, bir güvenlik bölgesi seçin.
+5. İçinde **uygulamanızı yükleneceği kaynak bölge** aşağı açılan listesinde, bir güvenlik bölgesi seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: ClickOnce uygulaması için özel izinleri ayarlama](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

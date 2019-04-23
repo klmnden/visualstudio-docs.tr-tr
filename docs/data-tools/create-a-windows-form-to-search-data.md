@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041685"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Veri aramak için Windows Form oluşturma
 
@@ -69,25 +69,25 @@ Yeni bir **Windows Forms uygulaması** ya da proje C# veya Visual Basic. Projeyi
 
 Bu adımda veri kaynağı kullanarak bir veritabanı oluşturulur **veri kaynağı yapılandırması** Sihirbazı:
 
-1.  Açmak için **veri kaynakları** penceresi, **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
+1. Açmak için **veri kaynakları** penceresi, **veri** menüsünde tıklatın **veri kaynaklarını Göster**.
 
-2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.
+2. İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı yapılandırması** Sihirbazı.
 
-3.  Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
+3. Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
 
-4.  Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:
+4. Üzerinde **veri bağlantınızı seçin** sayfasında aşağıdakilerden birini yapın:
 
     - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
     - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
 
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
+5. Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
 
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
+6. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **sonraki**.
 
-7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.
+7. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları** düğümü.
 
-8.  Seçin **müşteriler** tablosunu ve ardından **son**.
+8. Seçin **müşteriler** tablosunu ve ardından **son**.
 
      **NorthwindDataSet** projenize eklenir ve **müşteriler** tablo görünür **veri kaynakları** penceresi.
 
@@ -95,9 +95,9 @@ Bu adımda veri kaynağı kullanarak bir veritabanı oluşturulur **veri kaynağ
 
 Öğe sürükleyerek veriye bağlı denetimler oluşturabilirsiniz **veri kaynakları** formunuza penceresi:
 
-1.  Genişletin **müşteriler** düğümünde **veri kaynakları** penceresi.
+1. Genişletin **müşteriler** düğümünde **veri kaynakları** penceresi.
 
-2.  Sürükleme **müşteriler** düğümünden **veri kaynakları** penceresinden formunuza.
+2. Sürükleme **müşteriler** düğümünden **veri kaynakları** penceresinden formunuza.
 
      A <xref:System.Windows.Forms.DataGridView> ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.
 
@@ -105,11 +105,11 @@ Bu adımda veri kaynağı kullanarak bir veritabanı oluşturulur **veri kaynağ
 
 Özgün kullanarak sorgu, WHERE yan tümcesi ekleyebilirsiniz **arama ölçütü Oluşturucu** iletişim kutusunda:
 
-1.  Seçin <xref:System.Windows.Forms.DataGridView> denetlemek ve ardından **Sorgu Ekle** üzerinde **veri** menüsü.
+1. Seçin <xref:System.Windows.Forms.DataGridView> denetlemek ve ardından **Sorgu Ekle** üzerinde **veri** menüsü.
 
-2.  Tür **FillByCity** içinde **yeni sorgu adı** alanı **arama ölçütü Oluşturucu** iletişim kutusu.
+2. Tür **FillByCity** içinde **yeni sorgu adı** alanı **arama ölçütü Oluşturucu** iletişim kutusu.
 
-3.  Ekleme `WHERE City = @City` sorguya **sorgu metni** alan.
+3. Ekleme `WHERE City = @City` sorguya **sorgu metni** alan.
 
      Sorgu aşağıdakine benzemelidir:
 
@@ -123,7 +123,7 @@ Bu adımda veri kaynağı kullanarak bir veritabanı oluşturulur **veri kaynağ
     > [!NOTE]
     > Erişim ve OLE DB veri kaynakları, soru işareti kullanın ('? ') parametreleri belirtmek için bu nedenle WHERE yan tümcesi şuna benzeyecektir: `WHERE City = ?`.
 
-4.  Tıklayın **Tamam** kapatmak için **arama ölçütü Oluşturucu** iletişim kutusu.
+4. Tıklayın **Tamam** kapatmak için **arama ölçütü Oluşturucu** iletişim kutusu.
 
      A **FillByCityToolStrip** formuna eklenir.
 
@@ -131,9 +131,9 @@ Bu adımda veri kaynağı kullanarak bir veritabanı oluşturulur **veri kaynağ
 
 Uygulamayı çalıştıran formunuza açar ve giriş olarak parametreyi almak hazır hale getirir:
 
-1.  Tuşuna **F5** uygulamayı çalıştırın.
+1. Tuşuna **F5** uygulamayı çalıştırın.
 
-2.  Tür **Londra** içine **Şehir** metin kutusuna ve ardından **FillByCity**.
+2. Tür **Londra** içine **Şehir** metin kutusuna ve ardından **FillByCity**.
 
      Veri Kılavuzu ölçütlere uyan müşterilerle doldurulur. Bu örnekte, veri kılavuzu yalnızca değeri olan müşterileri görüntüler **Londra** içinde kendi **Şehir** sütun.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053903"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Uyarı. Davranışı Yapılandır iletişim kutusunda, uygulanmamış değişiklikler gerçekleştirildi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Uyarı. Henüz uygulanmamış davranışı Yapılandır iletişim kutusu için d
   
 ### <a name="to-apply-the-change-and-continue"></a>Değişikliği uygulamak ve devam etmek için  
   
--   Tıklayın **Evet** seçili değişikliği uygulamak için **sınıfı** ve **davranışı**.  
+- Tıklayın **Evet** seçili değişikliği uygulamak için **sınıfı** ve **davranışı**.  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>Önceki değişikliğinizi ve devam etmek için  
   
--   Tıklayın **Hayır** seçili değişikliğinizi **sınıfı** ve **davranışı**.  
+- Tıklayın **Hayır** seçili değişikliğinizi **sınıfı** ve **davranışı**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

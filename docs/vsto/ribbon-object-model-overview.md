@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040722"
 ---
 # <a name="ribbon-object-model-overview"></a>Şerit nesne modeline genel bakış
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Almak ve çalışma zamanında Şerit denetimlerinin özelliklerini ayarlamak için kullanabileceğiniz sağlam biçimde yazılmış nesne modeli sunar. Örneğin, dinamik olarak menü denetimlerini doldurmak veya gösterebilir ve bağlamsal denetimlerini gizle. Şerit, ancak yalnızca Şerit tarafından Office uygulamasına yüklenmeden önce sekmeler, gruplar ve denetimler de ekleyebilirsiniz. Bilgi için [salt okunur özelliklerini ayarlama](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601042"
 
  Şerit nesne modeli çoğunlukla oluşan [Şerit sınıfı](#RibbonClass), [Şerit olaylarını](#RibbonEvents), ve [Şerit denetim sınıfları](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Şerit sınıfı
+## <a name="RibbonClass"></a> Şerit sınıfı
  Yeni bir eklediğinizde **Şerit (Görsel Tasarımcı)** öğesi için bir proje, Visual Studio ekler bir **Şerit** projenize sınıfı. **Şerit** sınıfının devraldığı <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> sınıfı.
 
  Bu sınıf, Şerit kod dosyasını ve Şerit Tasarımcısı kod dosyası arasında bölünür kısmi bir sınıf olarak görünür.
 
-##  <a name="RibbonEvents"></a> Şerit olayları
+## <a name="RibbonEvents"></a> Şerit olayları
  **Şerit** sınıfı, aşağıdaki üç olaylar içerir:
 
 |Olay|Açıklama|
@@ -40,7 +40,7 @@ ms.locfileid: "56601042"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Şerit yüklediğinde, Şerit Özelleştirmelerini önbellek görüntüleri sağlar. Bu olay işleyicisi Şerit görüntüleri önbelleğe almak için kod yazma, küçük bir performans kazancı elde edebilirsiniz. Daha fazla bilgi için bkz. <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Şerit örneği kapandığında ortaya çıkar.|
 
-##  <a name="RibbonControlClasses"></a> Şerit denetimleri
+## <a name="RibbonControlClasses"></a> Şerit denetimleri
  <xref:Microsoft.Office.Tools.Ribbon> Ad alanı içeren bir tür gördüğünüz her denetim için **Office Şerit denetimleri** grubunu **araç kutusu**.
 
  Türü her biri için aşağıdaki tabloda gösterilir `Ribbon` denetimi. Her denetim açıklaması için bkz: [Şerite Genel Bakış](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601042"
 |Grupları Al bir <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> özelliği.|
 |Satırları ve sütunları görünen sayısını bir <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Kullanım <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> ve <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> özellikleri.|
 
-##  <a name="SettingReadOnlyProperties"></a> Salt okunur özelliklerini ayarlama
+## <a name="SettingReadOnlyProperties"></a> Salt okunur özelliklerini ayarlama
  Bazı özellikler, yalnızca Şerit yüklenmeden önce ayarlanabilir. Bu özellikleri ayarlamak için üç yer vardır:
 
 - Visual Studio **özellikleri** penceresi.
@@ -126,7 +126,7 @@ ms.locfileid: "56601042"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Salt okunur özellikler
+### <a name="ReadOnlyProperties"></a> Salt okunur özellikler
  Aşağıdaki tabloda, Şerit yüklemeden önce yalnızca ayarlanabilir özelliklerini gösterir.
 
 > [!NOTE]

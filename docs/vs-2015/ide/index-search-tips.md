@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a05e767330f0c1df5b30af6660a3f6e5ba4971e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044219"
 ---
 # <a name="index-search-tips"></a>Dizin Arama İpuçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,32 +31,32 @@ Anahtar sözcükleri girerek dizin bilgileri bulabilirsiniz. Bu konuda Yardım d
   
 ### <a name="general-guidelines"></a>Genel Yönergeler  
   
--   Dizin girişlerini gözden geçirdiğiniz. Tüm konuları aynı şekilde dizine eklenir ve en çok yardımcı olabilecek bir liste beklediğinizden daha düşük veya yüksek olabilir.  
+- Dizin girişlerini gözden geçirdiğiniz. Tüm konuları aynı şekilde dizine eklenir ve en çok yardımcı olabilecek bir liste beklediğinizden daha düşük veya yüksek olabilir.  
   
--   Dizin yok saymasıdır çünkü makaleleri gibi "bir" veya "" atlayın.  
+- Dizin yok saymasıdır çünkü makaleleri gibi "bir" veya "" atlayın.  
   
--   Beklediğiniz girişleri bulamazsanız, girdiğiniz sözcük tersine çevirir.  
+- Beklediğiniz girişleri bulamazsanız, girdiğiniz sözcük tersine çevirir.  
   
      Örneğin, "satır içi derleme kodunda hata ayıklama" tüm ilgili girişler görüntülenmiyorsa, yazmak, "hata ayıklama satır içi bütünleştirilmiş kodu" deneyin.  
   
--   Filtreleri ile **dizin** sonuçları sayısını azaltmak için sekmesinde.  
+- Filtreleri ile **dizin** sonuçları sayısını azaltmak için sekmesinde.  
   
 ### <a name="syntax-tips"></a>Söz dizimi ipuçları  
  Bir giriş için bir sözcük veya tümcecik girdiğiniz bulamazsanız, aşağıdakileri deneyin:  
   
--   İlk birkaç harfini veya sözcük kökü yazın. Kısmi bir dize girerek, tekil veya çoğul sözcüklerle dizine konulara alabilirsiniz.  
+- İlk birkaç harfini veya sözcük kökü yazın. Kısmi bir dize girerek, tekil veya çoğul sözcüklerle dizine konulara alabilirsiniz.  
   
      Örneğin, özellikler ve özellik yukarıda aramayı başlatmak için "Özellikleri" girin.  
   
--   Gerund girin (-ing) tamamlamak için istediğiniz görev için fiili biçimleri. Daha özel dizin girdileri bulmak için tam olarak aradığınız şeyi açıklayan bir sözcük ekleyin.  
+- Gerund girin (-ing) tamamlamak için istediğiniz görev için fiili biçimleri. Daha özel dizin girdileri bulmak için tam olarak aradığınız şeyi açıklayan bir sözcük ekleyin.  
   
      Örneğin, daha fazla girişleri veya "çalışan programlar" almak için "çalışıyor" yazın. daha az alınamıyor.  
   
--   Tek başına sıfat girin. Sonuçları daraltmak için tam olarak aradığınız şeyi açıklayan bir sözcük ekleyin.  
+- Tek başına sıfat girin. Sonuçları daraltmak için tam olarak aradığınız şeyi açıklayan bir sözcük ekleyin.  
   
      Örneğin, "Veya"COM + bileşenleri"girişleri geniş kapsamlı almak için com" girin daha az alınamıyor.  
   
--   Bir eş anlamlı sözcük veya aradığınız fiili girin.  
+- Bir eş anlamlı sözcük veya aradığınız fiili girin.  
   
      Girdiğiniz, örneğin, "building" gerund "oluşturma" Bunun yerine deneyin.  
   

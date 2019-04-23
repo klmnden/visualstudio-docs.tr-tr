@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040152"
 ---
 # <a name="ribbon-overview"></a>Şerite Genel Bakış
   Şerit, bunlar daha kolay olacak şekilde ilgili komutları düzenlemek için bir yoldur. Komutlar, Şerit üzerindeki denetimleri olarak görünür. Denetimler halinde düzenlenir *grupları* uygulama penceresinin üst kenarındaki yatay bir çubuk boyunca. Sekmelerde ilgili gruplar halinde düzenlenir.
@@ -93,12 +93,12 @@ ms.locfileid: "56599486"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Birden çok Şerit öğeleri bir projeye ekleyin.
  Birden fazla Şerit öğesi tek bir projeye ekleyebilirsiniz. Bu, aşağıdaki iki görevden herhangi birini gerçekleştirmek istiyorsanız yararlıdır:
 
--   Outlook için Şerit oluşturma *denetçiler*. Daha fazla bilgi için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
+- Outlook için Şerit oluşturma *denetçiler*. Daha fazla bilgi için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Bir denetçi kullanıcılar bir e-posta iletisi oluşturmak gibi belirli görevleri gerçekleştirdiğinde, açılan bir penceredir.
 
--   Çalışma zamanında görüntülemek için hangi Şerit'i seçin.
+- Çalışma zamanında görüntülemek için hangi Şerit'i seçin.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Çalışma zamanında görüntülemek için hangi şeritler seçin
  Bir projenin birden fazla Şerit içerebileceğinden, çalışma zamanında görüntülemek üzere hangi Şerit seçebilirsiniz.

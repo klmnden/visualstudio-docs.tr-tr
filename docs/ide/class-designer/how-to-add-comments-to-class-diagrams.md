@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052317"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Nasıl yapılır: Sınıf diyagramlarına açıklama ekleme
 
@@ -31,9 +31,9 @@ Açıklama Şekli yeniden boyutlandırmak, ancak diğer yönleri gibi arka plan 
 
 ## <a name="to-add-a-comment"></a>Açıklama eklemek için
 
-1.  Bir açıklama da sürükleyin **Sınıf Tasarımcısı araç kutusu** sınıf diyagramına sürükleyebilirsiniz.
+1. Bir açıklama da sürükleyin **Sınıf Tasarımcısı araç kutusu** sınıf diyagramına sürükleyebilirsiniz.
 
-2.  Yeni Yorum şekli diyagram üzerinde tıklayın ve istediğiniz metni yazın.
+2. Yeni Yorum şekli diyagram üzerinde tıklayın ve istediğiniz metni yazın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044037"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Başvurular Sayfası, Proje Tasarımcısı (Visual Basic)
 
@@ -82,14 +82,14 @@ Erişim için bu düğmeye tıklayın **başvuru yolları** iletişim kutusu.
 
  Ad alanları listesinde bir kullanıcı tarafından belirtilen ad alanı seçin, içinde değiştirmek istediğiniz adı yazın **içeri aktarılan ad alanlarını** kutusuna ve ardından yeni bir ad alanına değiştirmek için bu düğmeye tıklayın. Düğme seçili ad alanı kullanılarak listeye eklenen bir ise etkinleştirilmeden **kullanıcı içeri aktarma eklemek** düğmesi. Ekleyebilirsiniz:
 
--   Sınıf veya ad alanları gibi <xref:System.Math?displayProperty=fullName>.
+- Sınıf veya ad alanları gibi <xref:System.Math?displayProperty=fullName>.
 
--   Diğer adlı alır, gibi `VB=Microsoft.VisualBasic`.
+- Diğer adlı alır, gibi `VB=Microsoft.VisualBasic`.
 
--   XML ad alanları gibi `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- XML ad alanları gibi `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Bir projedeki başvuruları yönetme](../../ide/managing-references-in-a-project.md)
-- [Nasıl yapılır: Ekleme veya kaldırma içeri aktarılan ad alanlarını (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Nasıl yapılır: İçeri Aktarılan Ad Alanlarını Ekleme veya Kaldırma (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports Deyimi (XML Ad Alanı)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

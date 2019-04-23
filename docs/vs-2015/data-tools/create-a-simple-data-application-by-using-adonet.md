@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047431"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
   
  **Bu konudaki**  
   
--   [Örnek veritabanı kurma](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Örnek veritabanı kurma](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Formlar oluşturun ve denetimler ekleme](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Formlar oluşturun ve denetimler ekleme](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Bağlantı dizesi Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Bağlantı dizesi Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Bağlantı dizesi alma](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Bağlantı dizesi alma](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Formlar için kodu yazın](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Formlar için kodu yazın](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Uygulamanızı test edin](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Uygulamanızı test edin](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Uygulama oluşturmak için gerekir:  
@@ -58,10 +58,10 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
   
   Bu konuda, Visual Studio IDE temel işlevsellikle biliyor ve bir Windows Forms uygulaması oluşturma, forms düğme ve diğer denetimleri formlarda, put, bu proje için bu denetimleri ve olay özelliklerini ayarlamak ekleyin, varsayılır . Bu görevler konusunda deneyimli değilseniz, tamamlamanızı öneririz [Visual C# ve Visual Basic ile çalışmaya başlama](../ide/getting-started-with-visual-csharp-and-visual-basic.md) bu konuya başlamadan önce.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Örnek veritabanı kurma  
+## <a name="BKMK_setupthesampledatabase"></a> Örnek veritabanı kurma  
  Bu izlenecek yol için örnek veritabanı, müşteri ve sipariş tablolarından oluşur. Tabloları başlangıçta herhangi bir veri içermez, ancak oluşturacağınız uygulamayı çalıştırdığınızda veri eklersiniz. Veritabanının beş basit saklı yordamı de var. [Bir komut dosyası kullanarak SQL veritabanı oluşturma](../data-tools/create-a-sql-database-by-using-a-script.md) tabloları, birincil ve yabancı anahtarları, kısıtlamaları ve saklı yordamları oluşturan bir Transact-SQL betiği içerir.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Formlar oluşturun ve denetimler ekleme  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Formlar oluşturun ve denetimler ekleme  
   
 1. Bir Windows Forms uygulaması projesi oluşturun ve SimpleDataApp adlandırın.  
   
@@ -69,11 +69,11 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
   
 2. Üç sahip olacak şekilde iki Windows formunu projenize ekleyin ve ardından bunları aşağıdaki adlar verin:  
   
-   -   Gezinti  
+   - Gezinti  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Her form için aşağıdaki resimlerde metin kutularını, düğmeleri ve görüntülenen diğer denetimleri ekleyin. Her denetim için tabloların açıkladığı özellikleri ayarlayın.  
   
@@ -119,33 +119,33 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
 |Düğme|Ad = btnFillOrder|  
 |Düğme|Ad = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Bağlantı dizesi Store  
+## <a name="BKMK_storetheconnectionstring"></a> Bağlantı dizesi Store  
  Uygulamanız veritabanına bir bağlantı açmaya çalıştığında, uygulamanızın bağlantı dizesine erişimi olmalıdır. Dizeyi her bir formda el ile girmekten kaçınmak için uygulama yapılandırma dosyasını projenize dize depolamak ve yöntem uygulamanızdaki herhangi bir formdan çağrıldığında dizeyi döndüren bir yöntem oluşturma.  
   
  Bağlantı dizesinde bulabilirsiniz **SQL Server Nesne Gezgini** veritabanını sağ tıklatın, seçerek **özellikleri**ve ardından ConnectionString özelliği bulma. Dize seçmek için CTRL + A tuş bileşimini kullanın.  
   
-1.  İçinde **Çözüm Gezgini**seçin **özellikleri** proje tıklayın ve ardından düğümünde **Settings.settings**.  
+1. İçinde **Çözüm Gezgini**seçin **özellikleri** proje tıklayın ve ardından düğümünde **Settings.settings**.  
   
-2.  İçinde **adı** sütun girin `connString`.  
+2. İçinde **adı** sütun girin `connString`.  
   
-3.  İçinde **türü** listesinden **(bağlantı dizesi)**.  
+3. İçinde **türü** listesinden **(bağlantı dizesi)**.  
   
-4.  İçinde **kapsam** listesinden **uygulama**.  
+4. İçinde **kapsam** listesinden **uygulama**.  
   
-5.  İçinde **değer** sütunu (olmadan herhangi bir dış tırnak işaretleri) bağlantı dizenizi girin ve ardından değişikliklerinizi kaydedin.  
+5. İçinde **değer** sütunu (olmadan herhangi bir dış tırnak işaretleri) bağlantı dizenizi girin ve ardından değişikliklerinizi kaydedin.  
   
 > [!NOTE]
 >  Gerçek bir uygulamada, bağlantı dizesini açıklandığı gibi güvenli bir saklamalısınız [bağlantı dizeleri ve yapılandırma dosyalarını](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Bağlantı dizesi alma  
+## <a name="BKMK_retrievetheconnectionstring"></a> Bağlantı dizesi alma  
   
-1.  Menü çubuğunda, seçin **proje** > **Başvuru Ekle**ve ardından System.Configuration.dll dosyasına bir başvuru ekleyin.  
+1. Menü çubuğunda, seçin **proje** > **Başvuru Ekle**ve ardından System.Configuration.dll dosyasına bir başvuru ekleyin.  
   
-2.  Menü çubuğunda, seçin **proje** > **sınıfı Ekle** projenize bir sınıf dosyası ekleyin ve ardından dosya adı `Utility`.  
+2. Menü çubuğunda, seçin **proje** > **sınıfı Ekle** projenize bir sınıf dosyası ekleyin ve ardından dosya adı `Utility`.  
   
      Visual Studio dosyayı oluşturur ve görüntüler **Çözüm Gezgini**.  
   
-3.  Yardımcı dosyada, yer tutucu kodunu aşağıdaki kodla değiştirin. Kodun bölümlerini tanımlayan numaralandırılmış açıklamalara (Util - önekiyle başlayan bulunur) dikkat edin. Kodu izleyen tablo anahtar noktaları çağırır.  
+3. Yardımcı dosyada, yer tutucu kodunu aşağıdaki kodla değiştirin. Kodun bölümlerini tanımlayan numaralandırılmış açıklamalara (Util - önekiyle başlayan bulunur) dikkat edin. Kodu izleyen tablo anahtar noktaları çağırır.  
   
     ```csharp  
     using System;  
@@ -219,7 +219,7 @@ Bir veritabanındaki verileri işleyen bir uygulama oluşturduğunuzda, bu tür 
     |Kullanımı-2|Bir değişken tanımlayın `returnValue`ve kendisine başlatma `null` (C#) veya `Nothing` (Visual Basic).|  
     |Util-3|Girdiğiniz olsa bile `connString` bağlantı dizesinin adı olarak **özellikleri** penceresinde belirtmelisiniz `"SimpleDataApp.Properties.Settings.connString"` (C#) veya `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) kod.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Formlar için kodu yazın  
+## <a name="BKMK_writethecodefortheforms"></a> Formlar için kodu yazın  
  Bu bölüm, neleri her bir form mu ve formları oluşturan kodu gösterir kısa genel bakış bilgileri içerir. Numaralandırılmış açıklamalar kod bölümlerini tanımlar.  
   
 ### <a name="navigation-form"></a>Gezinti formu  
@@ -1139,5 +1139,5 @@ End Namespace
 |FC-8|Tıklama olay işleyicisine kod ekleyin `btnFillOrder`. Bu kod çalışır `Sales.uspFillOrder` saklı yordamı.|  
 |FC-9|Doğrulamak için bir yöntem oluşturma `OrderID` bir parametre olarak göndermeye hazır `SqlCommand` nesne.<br /><br /> -Olun kimlik olarak girilen emin `txtOrderID`.<br />-Kullanma `Regex.IsMatch` tamsayı olmayan karakterler için basit bir denetim tanımlamak için.<br />-Bu, bildirilen `parsedOrderID` FC-2 sırasında değişken.<br />-Giriş geçerliyse, metni bir tamsayıya dönüştürün ve değeri depolamak `parsedOrderID` değişkeni.<br />-Wrap `isOrderID` etrafında yöntemi `btnFindByOrderID`, `btnCancelOrder`, ve `btnFillOrder` tıklama olay işleyicileri.|  
   
-##  <a name="BKMK_testyourapplication"></a> Uygulamanızı test edin  
+## <a name="BKMK_testyourapplication"></a> Uygulamanızı test edin  
  Yapı ve her Click olay işleyicisini kodladıktan sonra uygulamanızı test etmek için F5 tuşunu seçin ve yine kodlamayı bitirdikten sonra sonra.

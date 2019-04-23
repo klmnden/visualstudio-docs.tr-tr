@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045648"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Kullanılmayan parametreleri gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Visual Studio ile ilgili en son belgeler için bkz. [CA1801: Kullanılmayan para
 ## <a name="cause"></a>Sebep  
  Yöntem imzası, yöntemin gövdesinde kullanılmayan bir parametre içerir. Bu kural, aşağıdaki yöntemlerden incelemez:  
   
--   Temsilci tarafından başvurulan yöntemleri.  
+- Temsilci tarafından başvurulan yöntemleri.  
   
--   Olay işleyicileri kullanılan yöntemleri.  
+- Olay işleyicileri kullanılan yöntemleri.  
   
--   Yöntemleri ile bildirilmiş `abstract` (`MustOverride` Visual Basic) değiştirici.  
+- Yöntemleri ile bildirilmiş `abstract` (`MustOverride` Visual Basic) değiştirici.  
   
--   Yöntemleri ile bildirilmiş `virtual` (`Overridable` Visual Basic) değiştirici.  
+- Yöntemleri ile bildirilmiş `virtual` (`Overridable` Visual Basic) değiştirici.  
   
--   Yöntemleri ile bildirilmiş `override` (`Overrides` Visual Basic) değiştirici.  
+- Yöntemleri ile bildirilmiş `override` (`Overrides` Visual Basic) değiştirici.  
   
--   Yöntemleri ile bildirilmiş `extern` (`Declare` deyimi Visual Basic) değiştirici.  
+- Yöntemleri ile bildirilmiş `extern` (`Declare` deyimi Visual Basic) değiştirici.  
   
 ## <a name="rule-description"></a>Kural Tanımı  
  Parametreleri onlara erişmek için hata doğruluk hiçbir olduğundan emin olmak için yöntemin gövdesinde kullanılmayan sanal olmayan yöntemlerde gözden geçirin. Kullanılmayan parametreler Bakım ve performans ücret yansıtılmaz.  

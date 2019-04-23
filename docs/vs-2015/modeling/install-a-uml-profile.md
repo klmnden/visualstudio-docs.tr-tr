@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043451"
 ---
 # <a name="install-a-uml-profile"></a>UML profili yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Visual Studio bir UML profili ile genişletebilirsiniz. Bir profili UML modeller
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Bilgisayarınızda bir UML profili yüklemek için  
   
-1.  Profili, Visual Studio uzantısı biçiminde verilmiş olmalıdır (`.vsix`) dosyası. Aynı dosyadaki başka özellikler olabilir.  
+1. Profili, Visual Studio uzantısı biçiminde verilmiş olmalıdır (`.vsix`) dosyası. Aynı dosyadaki başka özellikler olabilir.  
   
      Taşıma `.vsix` dosyayı bilgisayarınızdaki uygun bir konuma.  
   
-2.  Çift `.vsix` Windows Explorer (veya dosya Gezgini) dosya veya içinde açmayı [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+2. Çift `.vsix` Windows Explorer (veya dosya Gezgini) dosya veya içinde açmayı [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-3.  Tıklayın **yükleme** iletişim kutusunda görüntülenir.  
+3. Tıklayın **yükleme** iletişim kutusunda görüntülenir.  
   
-4.  Kaldırmak veya geçici olarak uzantıyı devre dışı bırakmak için açık **Uzantı Yöneticisi** gelen **Araçları** menüsü.  
+4. Kaldırmak veya geçici olarak uzantıyı devre dışı bırakmak için açık **Uzantı Yöneticisi** gelen **Araçları** menüsü.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Kaldırın veya bir profil uzantısı devre dışı bırakma  
   
-1.  Visual Studio **Araçları** menüsünü tıklatın **Uzantı Yöneticisi**.  
+1. Visual Studio **Araçları** menüsünü tıklatın **Uzantı Yöneticisi**.  
   
-2.  Kaldırın ve ardından istediğiniz uzantısına tıklayın **devre dışı** veya **kaldırma**.  
+2. Kaldırın ve ardından istediğiniz uzantısına tıklayın **devre dışı** veya **kaldırma**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

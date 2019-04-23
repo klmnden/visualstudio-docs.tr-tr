@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e65a92e1dba9a6f6dcdd243681313e0aec9096a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2084b2768a4b93b6174dfdb637b91d69a2072902
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046359"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>İzlenecek yol: Kullanımdan Oluştur özelliği ile önce test geliştirmesi
 
@@ -50,13 +50,13 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Sınıf kitaplığı projesine bir başvuru ekleyin
 
-1.  İçinde **Çözüm Gezgini**, altında birim testi projesi, sağ **başvuruları** girişi ve **Başvuru Ekle**.
+1. İçinde **Çözüm Gezgini**, altında birim testi projesi, sağ **başvuruları** girişi ve **Başvuru Ekle**.
 
-2.  İçinde **başvuru Yöneticisi** iletişim kutusunda **projeleri** ve sınıf kitaplığı Projesi'ni seçin.
+2. İçinde **başvuru Yöneticisi** iletişim kutusunda **projeleri** ve sınıf kitaplığı Projesi'ni seçin.
 
-3.  Seçin **Tamam** kapatmak için **başvuru Yöneticisi** iletişim kutusu.
+3. Seçin **Tamam** kapatmak için **başvuru Yöneticisi** iletişim kutusu.
 
-4.  Çözümünüzü kaydedin. Artık testleri yazmaya başlamak hazırsınız.
+4. Çözümünüzü kaydedin. Artık testleri yazmaya başlamak hazırsınız.
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Yeni bir sınıf bir birim testi oluşturma
 
@@ -107,11 +107,11 @@ Bu konu nasıl kullanılacağını gösterir [kullanımından Oluştur](../ide/v
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Tıklayın **hızlı Eylemler** hata ampul altında kırmızı dalgalı oku ve ardından **'Otomobil' Oluşturucu üret**.
+2. Tıklayın **hızlı Eylemler** hata ampul altında kırmızı dalgalı oku ve ardından **'Otomobil' Oluşturucu üret**.
 
      İçinde `Automobile` sınıf dosyası, yeni oluşturucuyu Oluşturucusu çağrısında kullanılan yerel değişkenlerin adlarını incelenmiştir dikkat edin, aynı adlara sahip özellikler bulundu `Automobile` sınıf ve oluşturucu gövdesinde için sağlanan kod bağımsız değişken değerleri depolamak `Model` ve `TopSpeed` özellikleri.
 
-3.  Yeni oluşturucuyu oluşturduktan sonra varsayılan oluşturucu çağrısı altında dalgalı çizgi görünür `DefaultAutomobileIsInitializedCorrectly`. Hata iletisi `Automobile` sınıfın sıfır bağımsız değişken alan hiçbir oluşturucu vardır. Parametreleri olmayan bir açık bir varsayılan oluşturucu oluşturmak için tıklayın **hızlı Eylemler** hata ampule ve ardından **'Otomobil' Oluşturucu üret**.
+3. Yeni oluşturucuyu oluşturduktan sonra varsayılan oluşturucu çağrısı altında dalgalı çizgi görünür `DefaultAutomobileIsInitializedCorrectly`. Hata iletisi `Automobile` sınıfın sıfır bağımsız değişken alan hiçbir oluşturucu vardır. Parametreleri olmayan bir açık bir varsayılan oluşturucu oluşturmak için tıklayın **hızlı Eylemler** hata ampule ve ardından **'Otomobil' Oluşturucu üret**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Bir yöntem Saplaması
 Belirtimi belirten varsayar yeni bir `Automobile` içine koyabilirsiniz bir `IsRunning` , durum, `Model` ve `TopSpeed` özellikleri için varsayılan değerlerin dışında bir şey ayarlanır.
@@ -121,15 +121,15 @@ Belirtimi belirten varsayar yeni bir `Automobile` içine koyabilirsiniz bir `IsR
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Tıklayın **hızlı Eylemler** hata ampul `myAuto.Start` yöntemi çağırın ve ardından **'Automobile.Start' metodunu üret**.
+2. Tıklayın **hızlı Eylemler** hata ampul `myAuto.Start` yöntemi çağırın ve ardından **'Automobile.Start' metodunu üret**.
 
-3.  Tıklayın **hızlı Eylemler** ampul için `IsRunning` özelliği ve ardından **'Automobile.IsRunning' özelliğini üret**.
+3. Tıklayın **hızlı Eylemler** ampul için `IsRunning` özelliği ve ardından **'Automobile.IsRunning' özelliğini üret**.
 
      `Automobile` Sınıf adlı bir yöntem artık içeren `Start()` ve adlı bir özellik `IsRunning`.
 
 ### <a name="run-the-tests"></a>Testleri çalıştırın
 
-1.  Üzerinde **Test** menüsünde seçin **çalıştırma** > **tüm testleri**.
+1. Üzerinde **Test** menüsünde seçin **çalıştırma** > **tüm testleri**.
 
      **Çalıştırma** > **tüm testleri** komut için geçerli çözüm yazılan tüm test çerçeveleri tüm testleri çalıştırır. Bu durumda, iki test, ve her ikisi de beklendiği gibi başarısız olur. `DefaultAutomobileIsInitializedCorrectly` Test başarısız çünkü `Assert.IsTrue` koşul döndürür `False`. `AutomobileWithModelNameCanStart` Test başarısız çünkü `Start` yönteminde `Automobile` sınıfı bir özel durum oluşturur.
 
@@ -137,16 +137,16 @@ Belirtimi belirten varsayar yeni bir `Automobile` içine koyabilirsiniz bir `IsR
 
      ![Başarısız olan test sonuçları](../ide/media/testsfailed.png)
 
-2.  İçinde **Test sonuçları** penceresi, her test sonucu sırada her test konuma gitmek için çift tıklatın.
+2. İçinde **Test sonuçları** penceresi, her test sonucu sırada her test konuma gitmek için çift tıklatın.
 
 ### <a name="implement-the-source-code"></a>Uygulama kaynak kodu
 
-1.  Aşağıdaki kod için varsayılan oluşturucu bu nedenle, ekleme `Model`, `TopSpeed` ve `IsRunning` özellikleri tüm başlatıldığı için doğru varsayılan değerleri `"Not specified"`, `-1`, ve `False` (veya `false` için C#).
+1. Aşağıdaki kod için varsayılan oluşturucu bu nedenle, ekleme `Model`, `TopSpeed` ve `IsRunning` özellikleri tüm başlatıldığı için doğru varsayılan değerleri `"Not specified"`, `-1`, ve `False` (veya `false` için C#).
 
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
      [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
 
-2.  Zaman `Start` yöntemi çağrıldığında, ayarlamanız gerekir `IsRunning` bayrak yalnızca gerekirse true `Model` veya `TopSpeed` özellikleri varsayılan değerlerine dışında bir şey ayarlanır. Kaldırma `NotImplementedException` yönteminden gövde ve aşağıdaki kodu ekleyin.
+2. Zaman `Start` yöntemi çağrıldığında, ayarlamanız gerekir `IsRunning` bayrak yalnızca gerekirse true `Model` veya `TopSpeed` özellikleri varsayılan değerlerine dışında bir şey ayarlanır. Kaldırma `NotImplementedException` yönteminden gövde ve aşağıdaki kodu ekleyin.
 
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
      [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038336"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Görünen olay işleyicilerini gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "54779719"
 
  İsteğe bağlı bir olay işleyicisi tarafından çağrılan bir yöntem güvenilir bir şekilde koruyamaz. Güvenlik talepleri Yardım çağrı yığınında çağıranlar inceleyerek güvenilmeyen çağrı yapanlardan kod koruma. Olay işleyicinin yöntemleri çalıştırdığınızda bir olay için bir olay işleyicisi ekler kod çağrı yığınındaki mutlaka mevcut değil. Bu nedenle, olay işleyicisi yöntemi çağrıldığında çağrı yığınını çağıranlar yalnızca yüksek oranda güvenilir. Bu, başarılı olması için olay işleyicisi yöntemi tarafından yapılan talepleri neden olur. Ayrıca, yöntem çağrıldığında talep edilen izni onaylanan. Bu nedenlerle, olay işleme yöntemi gözden geçirdikten sonra riskini bu kural ihlalini düzeltmek için değil yalnızca belirlenebilir. Kodunuzu gözden geçirirken, aşağıdaki konuları göz önünde bulundurun:
 
--   Olayı işleyicinizi tehlikeli ya da açıklardan izinleri bırakmışsa veya yönetilmeyen kod iznini gizleme gibi herhangi bir işlem gerçekleştirir?
+- Olayı işleyicinizi tehlikeli ya da açıklardan izinleri bırakmışsa veya yönetilmeyen kod iznini gizleme gibi herhangi bir işlem gerçekleştirir?
 
--   İle herhangi bir zamanda yalnızca yüksek oranda çalışması için kodunuzu gelen ve giden güvenlik tehditlerini nelerdir yığında çağıranlar güvenilen?
+- İle herhangi bir zamanda yalnızca yüksek oranda çalışması için kodunuzu gelen ve giden güvenlik tehditlerini nelerdir yığında çağıranlar güvenilen?
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için yöntemin gözden geçirin ve aşağıdakileri değerlendirin:
 
--   Olay işleme yöntemi genel olmayan yapabilirsiniz?
+- Olay işleme yöntemi genel olmayan yapabilirsiniz?
 
--   Olay işleyicisi tehlikeli tüm işlevsellik taşıyabilir miyim?
+- Olay işleyicisi tehlikeli tüm işlevsellik taşıyabilir miyim?
 
--   Bir güvenlik talebi uygulanmaz, bu diğer herhangi bir biçimde gerçekleştirilebilir?
+- Bir güvenlik talebi uygulanmaz, bu diğer herhangi bir biçimde gerçekleştirilebilir?
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Kodunuzu bir güvenlik tehdidi yol açmaz emin olmak için dikkatli bir güvenlik incelemesinden sonra yalnızca uyarı bu kuraldan gösterme.

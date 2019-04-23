@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3d21ad2edd01ee5b7a939c6c0ddfdaa882e38754
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045661"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Nasıl yapılır: Özel Kural Kümesi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54786812"
   
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Kural boş açmak için kural kümesi Düzenleyicisi'nde dosya kümesi  
   
-1.  Üzerinde **dosya** menüsü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], işaret **yeni** ve ardından **dosya**.  
+1. Üzerinde **dosya** menüsü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], işaret **yeni** ve ardından **dosya**.  
   
-2.  İçinde **yeni dosya** iletişim kutusu, tıklayın **genel** içinde **yüklü şablonlar** listeleyin ve ardından **Kod Analizi kural kümesi**.  
+2. İçinde **yeni dosya** iletişim kutusu, tıklayın **genel** içinde **yüklü şablonlar** listeleyin ve ardından **Kod Analizi kural kümesi**.  
   
-3.  Kural kümesi Düzenleyicisi görünür. Düzenleyici listesinde hiçbir kural seçilmedi.  
+3. Kural kümesi Düzenleyicisi görünür. Düzenleyici listesinde hiçbir kural seçilmedi.  
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Var olan tek kural kümesinden özel bir kural oluşturmak için  
   
@@ -55,33 +55,33 @@ ms.locfileid: "54786812"
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Özel bir kural oluşturmak için var olan birden çok kural kümelerinden ayarlayın.  
   
-1.  Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.  
+1. Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Üzerinde **özellikleri** sekmesinde **Kod Analizi**.  
+2. Üzerinde **özellikleri** sekmesinde **Kod Analizi**.  
   
-3.  Seçin  **\<birden çok kural kümeleri... seçin >** gelen **bu kural kümesini Çalıştır**.  
+3. Seçin  **\<birden çok kural kümeleri... seçin >** gelen **bu kural kümesini Çalıştır**.  
   
-4.  İçinde **Ekle veya Kaldır kural kümeleri** kural kümeleri üzerinde iletişim kutusunda, yeni bir kural kümesi temel ve ardından istediğiniz **Tamam**.  
+4. İçinde **Ekle veya Kaldır kural kümeleri** kural kümeleri üzerinde iletişim kutusunda, yeni bir kural kümesi temel ve ardından istediğiniz **Tamam**.  
   
-5.  Yeni kural kümesi kaydedin.  
+5. Yeni kural kümesi kaydedin.  
   
      Yeni Kural kümesinin adını seçili **bu kural kümesini Çalıştır** listesi. Kural kümesi sonraki adımda görünen adını değiştirebilirsiniz.  
   
-6.  (İsteğe bağlı) Kural kümesi görünen adını değiştirmek için **görünümü** menüsünde tıklatın **Özellikler penceresi**. Görünen ad yazın **adı** kutusu.  
+6. (İsteğe bağlı) Kural kümesi görünen adını değiştirmek için **görünümü** menüsünde tıklatın **Özellikler penceresi**. Görünen ad yazın **adı** kutusu.  
   
-7.  Eklemek, kaldırmak veya yeni bir kural kümesi içinde belirli bir kod analizi kuralları Değiştir, tıklayın **açık**.  
+7. Eklemek, kaldırmak veya yeni bir kural kümesi içinde belirli bir kod analizi kuralları Değiştir, tıklayın **açık**.  
   
 ## <a name="modifying-a-rule-set"></a>Bir kural kümesini değiştirme  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Bir kuralı değiştirmek için kural kümesi Düzenleyicisi'nde ayarlayın.  
   
--   Kural kümesi görünen adını değiştirmek için **görünümü** menüsünde tıklatın **Özellikler penceresi**. Görünen ad girin **adı** kutusu. Görünen ad dosya adından farklı olabilir dikkat edin.  
+- Kural kümesi görünen adını değiştirmek için **görünümü** menüsünde tıklatın **Özellikler penceresi**. Görünen ad girin **adı** kutusu. Görünen ad dosya adından farklı olabilir dikkat edin.  
   
--   Özel kural kümesi için tüm Grup kurallarını eklemek için grubunun onay kutusunu seçin. Grubun tüm kuralları kaldırmak için onay kutusunu temizleyin.  
+- Özel kural kümesi için tüm Grup kurallarını eklemek için grubunun onay kutusunu seçin. Grubun tüm kuralları kaldırmak için onay kutusunu temizleyin.  
   
--   Özel kural kümesi için belirli bir kural eklemek için kuralın onay kutusunu seçin. Kural kural kümesinden kaldırmak için onay kutusunu temizleyin.  
+- Özel kural kümesi için belirli bir kural eklemek için kuralın onay kutusunu seçin. Kural kural kümesinden kaldırmak için onay kutusunu temizleyin.  
   
--   Bir kod analizi kural ihlal edildiğinde gerçekleştirilecek eylemi değiştirmek için tıklayın **eylem** kural için alan ve sonra aşağıdaki değerlerden birini seçin:  
+- Bir kod analizi kural ihlal edildiğinde gerçekleştirilecek eylemi değiştirmek için tıklayın **eylem** kural için alan ve sonra aşağıdaki değerlerden birini seçin:  
   
      **Uyar** -bir uyarı oluşturur.  
   
@@ -93,23 +93,23 @@ ms.locfileid: "54786812"
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Gruplandırmak için filtre veya kural kümesi Düzenleyici'sini alanları, kural kümesi Düzenleyici araç kullanarak  
   
--   Tüm grupları kurallarında genişletmek için **Tümünü Genişlet**.  
+- Tüm grupları kurallarında genişletmek için **Tümünü Genişlet**.  
   
--   Tüm grupları kurallarında daraltmak için tıklatın **Daralt tüm**.  
+- Tüm grupları kurallarında daraltmak için tıklatın **Daralt tüm**.  
   
--   Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kurallarını görüntülemek için seçin  **\<yok >**.  
+- Kurallar tarafından gruplandırılır alanını değiştirmek için alanı seçin **Group By** listesi. Gruplandırılmamış kurallarını görüntülemek için seçin  **\<yok >**.  
   
--   Alan kuralı sütunlar ekleyip için tıklatın **sütun seçenekleri**.  
+- Alan kuralı sütunlar ekleyip için tıklatın **sütun seçenekleri**.  
   
--   Geçerli çözüme, geçerli olmayan kuralları gizlemek için **Gizle geçerli çözüme geçerli olmayan kuralları**.  
+- Geçerli çözüme, geçerli olmayan kuralları gizlemek için **Gizle geçerli çözüme geçerli olmayan kuralları**.  
   
--   Hata eylemi atanmış olan kuralları gizleme ve gösterme arasında geçiş yapmak için tıklatın **kod analiz hataları verebilen kuralları göster**.  
+- Hata eylemi atanmış olan kuralları gizleme ve gösterme arasında geçiş yapmak için tıklatın **kod analiz hataları verebilen kuralları göster**.  
   
--   Uyarı eylemi atanmış olan kuralları gizleme ve gösterme arasında geçiş yapmak için tıklatın **kod analiz uyarıları üretebilen kuralları göster**.  
+- Uyarı eylemi atanmış olan kuralları gizleme ve gösterme arasında geçiş yapmak için tıklatın **kod analiz uyarıları üretebilen kuralları göster**.  
   
--   Atanan kuralları gizleme ve gösterme arasında geçiş yapmak için **hiçbiri** eylem tıklayın **etkin olmayan kuralları göster**.  
+- Atanan kuralları gizleme ve gösterme arasında geçiş yapmak için **hiçbiri** eylem tıklayın **etkin olmayan kuralları göster**.  
   
--   Varsayılan kural kümeleri geçerli kural kümesine Microsoft ekleyip için tıklatın **alt kural kümelerini Ekle veya Kaldır**.  
+- Varsayılan kural kümeleri geçerli kural kümesine Microsoft ekleyip için tıklatın **alt kural kümelerini Ekle veya Kaldır**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

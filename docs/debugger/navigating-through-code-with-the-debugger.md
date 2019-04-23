@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041584"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio hata ayıklayıcısı ile kodda gidin
 
@@ -44,7 +44,7 @@ Kaynak veya sembol yok kodda kesme durumunda (*.pdb*) hata ayıklayıcı yüklen
 
 Her zaman başında bir uygulamayı yeniden başlatarak hata ayıklamayı Başlat gerekmez. Tuşlarına da basabilirsiniz **F11** için [kod içine Adımlama](#BKMK_Step_into__over__or_out_of_the_code), basın **F10** için [kodu Adımlama](#BKMK_Step_over_Step_out), veya [belirli bir konuma yeniden çalıştırın veya işlev](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
-##  <a name="step-through-code"></a>Kodunuz içinde adım adım
+## <a name="step-through-code"></a>Kodunuz içinde adım adım
 
 Hata ayıklayıcı adım komutları, uygulama durumunu incelemek veya kendi yürütme akışı hakkında daha fazla bilgi edinin yardımcı olur.
 
@@ -75,7 +75,7 @@ Bir iç içe geçmiş işlev çağrısında **içine adımla** en derin yuvalanm
 >[!TIP]
 >Her kod satırının yürütürken, değerlerine bakın veya değişkenleri gelerek [Yereller](autos-and-locals-windows.md) ve [Watch](watch-and-quickwatch-windows.md) değiştirme değerleri izlemek için windows. Ayrıca, işlevlere adımlamayla girerken çağrı yığınını görsel olarak da izleyebilirsiniz. Bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-###  <a name="BKMK_Step_over_Step_out"></a> Kod içinde gezinebilmek ve bazı işlevler atla
+### <a name="BKMK_Step_over_Step_out"></a> Kod içinde gezinebilmek ve bazı işlevler atla
 
 Bir işlev hakkında hata ayıklama sırasında önemsemez veya biliyorsanız gibi çalışır, iyi sınanmış kitaplık kodu. Kod üzerinden geçmek için aşağıdaki komutları kullanabilirsiniz. İşlevler yine de yürütme, ancak bunlar üzerinde hata ayıklayıcı atlar.
 
@@ -84,7 +84,7 @@ Bir işlev hakkında hata ayıklama sırasında önemsemez veya biliyorsanız gi
 |**F10**|**Üzerinden adımla**|Geçerli satır bir işlev çağrısı içeriyorsa, **Step Over** kodu çalıştırır ve ardından kod ilk satırında, çağrılan işlev döndürdükten sonra yürütmeyi askıya alır.|
 |**Shift**+**F11**|**Dışına adımla**|**Step Out** kod çalışmaya devam eder ve geçerli işlevi döndüğünde yürütmeyi askıya alır. Hata ayıklayıcı geçerli işlevin atlar.|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Belirli bir konuma veya işleve kadar çalıştırma
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Belirli bir konuma veya işleve kadar çalıştırma
 
 İncelemek istediğiniz hangi kodun tam olarak biliyorsanız, doğrudan bir belirli bir konuma veya işleve kadar çalıştırma tercih edebilirsiniz veya hata ayıklamaya başlamak istediğiniz bildirin.
 
@@ -139,7 +139,7 @@ Hata ayıklayıcısında duraklatıldıktan karşın, bir kaynak kodu deyiminde 
 
 Çalışan bir uygulamanın kod kullanılabilir bir sonraki satırda kesmek için seçin **hata ayıklama** > **tümünü Kes**, veya basın **Ctrl**+**Alt**  + **Sonu**.
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Yürütme akışı değiştirmek için işaretçiyi taşıyın
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> Yürütme akışı değiştirmek için işaretçiyi taşıyın
 
 Hata Ayıklayıcı duraklatılmış durumdayken, kaynak kodunun kenar boşluğundaki bir sarı ok veya **ayrıştırılmış kodu** penceresi yürütülecek sonraki deyimin konumunu işaretler. Bu Ok ucunu taşıyarak yürütülecek sonraki deyimi değiştirebilirsiniz. Kodun bir kısmını atlayın veya önceki bir satıra geri dönebilirsiniz. İşaretçiyi taşıma, bilinen bir hata içeren kod bölümünü atlama gibi durumlar için kullanışlıdır.
 
@@ -181,7 +181,7 @@ Microsoft simgeleri yüklemek için bkz: [sembol konumlarını yapılandırma ve
 
 1. İçinde **modülleri** penceresinde, öğrenebilirsiniz hangi modüllerinizin yüklenmiş semboller **sembol durumu** sütun. Sembolleri ve istediğiniz modülü sağ **yük sembolleri**.
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Yönetilen kod içindeki özellikler ve işleçlerin içine adımla
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Yönetilen kod içindeki özellikler ve işleçlerin içine adımla
  Varsayılan olarak hata ayıklama adımlarında yönetilen kod içindeki özellikler ve işleçlerin üzerinden. Çoğu durumda, bunu bir daha iyi hata ayıklama deneyimi sunar. Özellikleri veya işleçleri adımlamak için seçin **hata ayıklama** > **seçenekleri**. Üzerinde **hata ayıklama** > **genel** sayfasında, NET **özellikleri ve işleçleri (sadece yönetilen) üzerinden adımla** onay kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043555"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Visual Studio ile Azure bulut hizmeti rollerini yapılandırma
 Azure bulut hizmeti çalışan veya web rollerinin bir veya daha fazla olabilir. Her rol için bu rolü nasıl ayarlandığı tanımlayın ve bu rolü nasıl çalıştığını da yapılandırmanız gerekir. Cloud Services rolleri hakkında daha fazla bilgi edinmek için videoyu bkz [Azure bulut hizmetlerine giriş](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -255,7 +255,7 @@ Aşağıdaki kod, yerel depolama alanına bir metin dosyası yazmak nasıl bir �
 
 Önceki bölümde kod tarafından oluşturulan bir dosyayı görüntülemek için aşağıdaki adımları izleyin:
 
-1.  Windows bildirim alanındaki Azure simgesine sağ tıklayın ve bağlam menüsünden seçin **Göster işlem öykünücüsü kullanıcı Arabiriminde**.
+1. Windows bildirim alanındaki Azure simgesine sağ tıklayın ve bağlam menüsünden seçin **Göster işlem öykünücüsü kullanıcı Arabiriminde**.
 
     ![Azure işlem öykünücüsünü Göster](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

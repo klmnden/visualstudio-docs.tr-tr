@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041908"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Nasıl yapılır: Çalışma sayfası hücreleri içinde denetimleri yeniden boyutlandırma
   Çalışma sayfasında satırları veya sütunları yeniden boyutlandırdığınızda, hücreleri içinde herhangi bir ana bilgisayar denetimleri yeniden boyutlandırılmış hücre genişliği veya yüksekliği otomatik olarak yeniden boyutlandırın. Windows Forms denetimleri varsayılan olarak otomatik olarak yeniden boyutlandırma değil.
@@ -35,13 +35,13 @@ ms.locfileid: "56625471"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Denetimleri tasarım zamanında hücreleri yeniden boyutlandırmak için
 
-1.  Gelen **araç kutusu**, çalışma için bir Windows Forms denetimi sürükleyin.
+1. Gelen **araç kutusu**, çalışma için bir Windows Forms denetimi sürükleyin.
 
-2.  Denetime sağ tıklayın ve ardından **biçim denetimi**.
+2. Denetime sağ tıklayın ve ardından **biçim denetimi**.
 
-3.  İçinde **biçim denetimi** iletişim kutusu, tıklayın **özellikleri** sekmesi.
+3. İçinde **biçim denetimi** iletişim kutusu, tıklayın **özellikleri** sekmesi.
 
-4.  Altında **Nesne konumlandırma**seçin **taşıyın ve hücrelerle** seçeneğini ve ardından **Tamam**.
+4. Altında **Nesne konumlandırma**seçin **taşıyın ve hücrelerle** seçeneğini ve ardından **Tamam**.
 
      Denetimi içeren hücreye yeniden boyutlandırdığınızda, denetimin hücreye sığacak şekilde yeniden boyutlandırır.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625471"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Denetimleri hücrelerle çalışma zamanında yeniden boyutlandırmak için
 
-1.  A1 aralığı için bir denetim ekleyin.
+1. A1 aralığı için bir denetim ekleyin.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625471"
 ## <a name="reset-control-placement"></a>Denetim yerleşimini Sıfırla
  Yerleştirme ve denetimin ayarlayarak yeniden boyutlandırma sıfırlayabilirsiniz `Placement` aşağıdakilerden birini özelliğini <xref:Microsoft.Office.Interop.Excel.XlPlacement> değerleri:
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Böylece bırakmaz yeniden boyutlandırmak veya hücrenin taşıma denetiminin davranışını değiştirmek için
 
-1.  Denetimin yerleşimi özelliğini çağırın ve değeri <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Denetimin yerleşimi özelliğini çağırın ve değeri <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

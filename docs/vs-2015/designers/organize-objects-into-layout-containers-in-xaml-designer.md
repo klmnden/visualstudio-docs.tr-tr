@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fca04d921fb423bafccbeef56c9f3ff499d05d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059207"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML Tasarımcısı’nda nesneleri düzen kapsayıcılarına yerleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +35,26 @@ Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, 
   
  Aşağıdaki Düzen bölmelerini bu özellik en kullanılır, ancak diğerleri vardır. Bunları bulabilirsiniz tümü **varlıklar** paneli.  
   
--   [Kılavuz](#Grid)  
+- [Kılavuz](#Grid)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Tuval](#Canvas)  
+- [Tuval](#Canvas)  
   
--   [StackPanel](#Stack)  
+- [StackPanel](#Stack)  
   
--   [WrapPanel](#Wrap)  
+- [WrapPanel](#Wrap)  
   
--   [DockPanel](#Dock)  
+- [DockPanel](#Dock)  
   
-###  <a name="Grid"></a> Kılavuz  
+### <a name="Grid"></a> Kılavuz  
  Nesneleri, satırlar ve sütunlar halinde düzenleyin.  
   
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [kılavuzları kullanma](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
-###  <a name="Uniform"></a> UniformGrid  
+### <a name="Uniform"></a> UniformGrid  
  Nesneler eşit veya tek düzen kılavuz bölgeye yerleştirin. Bu panelde, görüntülerin listesini düzenlemek için idealdir.  
   
  ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
@@ -63,21 +63,21 @@ Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, 
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [bir UniformGrid ile çalışma](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
-###  <a name="Canvas"></a> Tuval  
+### <a name="Canvas"></a> Tuval  
  Nesneleri istediğiniz gibi düzenleyin. Kullanıcıların uygulamanızı çalıştırdığınızda, bu öğeleri ekranında konumları sabit.  
   
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [tuval ile çalışma](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
-###  <a name="Stack"></a> StackPanel  
+### <a name="Stack"></a> StackPanel  
  Tek bir satırda nesneleri, yatay veya dikey olarak düzenleyin.  
   
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [StackPanel ve WrapPanel ile çalışma](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Wrap"></a> WrapPanel  
+### <a name="Wrap"></a> WrapPanel  
  Nesneleri sırayla soldan sağa düzenleyin. Bölmenin en sağdaki ucuna dışında yer çalıştığında, *sarmalar* içeriği sonraki satıra vb. soldan sağa üst-alt. Böylece nesnelerin üst alta, akış, ayrıca bir sarmalama panelinin yönü dikey soldan sağa yapabilirsiniz.  
   
  (Yalnızca WPF projeleri için kullanılabilir)  
@@ -86,7 +86,7 @@ Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, 
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [StackPanel ve WrapPanel ile çalışma](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Dock"></a> DockPanel  
+### <a name="Dock"></a> DockPanel  
  Böylece bunlar kalmasını nesneleri düzenleyin veya *dock*, panelin bir kenarında için.  
   
  (Yalnızca WPF projeleri için kullanılabilir)  
@@ -100,32 +100,32 @@ Nesneleri bir sayfada görüntülenmesini istediğiniz düşünün; Görüntü, 
   
  Aşağıdaki Düzen denetimler bu özellik en kullanılır, ancak diğerleri vardır. Bunları bulabilirsiniz tümü **varlıklar** paneli.  
   
--   [Kenarlık](#Border)  
+- [Kenarlık](#Border)  
   
--   [Açılan Pencere](#Popup)  
+- [Açılan Pencere](#Popup)  
   
--   [ScrollViewer](#Scroll)  
+- [ScrollViewer](#Scroll)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Viewbox](#View)  
+- [Viewbox](#View)  
   
-###  <a name="Border"></a> Kenarlık  
+### <a name="Border"></a> Kenarlık  
  Kenarlık, arka plan veya her ikisi de bir nesnenin çevresindeki oluşturun. Yalnızca bir nesne için ekleyebileceğiniz bir **kenarlık**. Kenarlık veya arka plan bilgileri için birden fazla nesne uygulamak istediğiniz düzen paneline ekleyin **kenarlık**. Ardından, nesneleri, paneli veya denetim ekleyin.  
   
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-BBC4-57538b8289ff")  
   
  **Kısa bir video izleyin:** ![Yüklü Özellikleri Yapılandır](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [kenarlık ile çalışma](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
-###  <a name="Popup"></a> Açılan menüsü  
+### <a name="Popup"></a> Açılan menüsü  
  Bilgileri veya seçenekleri kullanıcılar bir pencerede gösterilir. Yalnızca bir nesne için ekleyebileceğiniz bir **açılan**. Varsayılan olarak, bir **açılan** içeren bir **kılavuz** ancak isterseniz bunu değiştirebilirsiniz.  
   
-###  <a name="Scroll"></a> ScrollViewer  
+### <a name="Scroll"></a> ScrollViewer  
  Bir sayfa veya bir sayfa alanı aşağı etkinleştir kullanır. İçin yalnızca bir nesne ekleyebileceğiniz bir **ScrollViewer** mantıklı bir düzen paneli gibi eklemek için kolaylaştırır. böylece bir **kılavuz** veya **StackPanel**.  
   
  ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
   
-###  <a name="View"></a> Viewbox  
+### <a name="View"></a> Viewbox  
  Yakınlaştırma Denetimi ile ölçek nesneleri çok benzer olacaktır. Yalnızca bir nesne için ekleyebileceğiniz bir **Viewbox**. Birden fazla nesne için efekti uygulamak istiyorsanız, bir düzen paneline Ekle **ViewBox**ve ardından bu düzen paneline denetimleri ekleyin.  
   
  (Yalnızca WPF projeleri için kullanılabilir)  

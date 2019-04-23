@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ad83886b6545aa8f498f0304dc172f68976e9c72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a37ef652fa91cf4412f27bf03d9d62f9d83f880f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057273"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Nasıl yapılır: Gereç dinamik olarak derlenmiş bir ASP.NET web uygulamasını ve profil oluşturucu komut satırını kullanarak bellek verilerini toplamak
 Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ayrıntılı .NET bellek ayırma ve nesne yaşam süresi verilerini dinamik olarak derlenmiş toplamak için profil oluşturma araçları komut satırı araçlarının [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulamasını izleme profili oluşturma yöntemi kullanarak.
@@ -31,11 +31,11 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>ASP.NET web uygulaması ve web sunucusunu yapılandırmak için
 
-1.  Değiştirme *web.config* hedef uygulamanın dosya. Bkz: [nasıl yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Değiştirme *web.config* hedef uygulamanın dosya. Bkz: [nasıl yapılır: İzleme ve profil dinamik olarak derlenmiş ASP.NET web uygulamaları için web.config dosyalarını değiştirme](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2.  Web uygulamasını barındıran bilgisayarda bir komut istemi penceresi açın.
+2. Web uygulamasını barındıran bilgisayarda bir komut istemi penceresi açın.
 
-3.  Profil oluşturma ortamı değişkenlerini başlatın. Tür:
+3. Profil oluşturma ortamı değişkenlerini başlatın. Tür:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** bellek ayırma verilerinin toplanmasını etkinleştirir.
+    - **/globaltracegc** bellek ayırma verilerinin toplanmasını etkinleştirir.
 
-    -   **/globaltracegclife** bellek ayırma verilerinin ve nesne yaşam verisi toplamayı etkinleştirir.
+    - **/globaltracegclife** bellek ayırma verilerinin ve nesne yaşam verisi toplamayı etkinleştirir.
 
-4.  Bilgisayarı yeniden başlatın.
+4. Bilgisayarı yeniden başlatın.
 
 ## <a name="run-the-profiling-session"></a>Profil oluşturma oturumu çalıştırma
 
@@ -83,7 +83,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak
 
--   Aşağıdaki seçenekleri çiftlerini başlatın ve veri toplama işlemini durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
+- Aşağıdaki seçenekleri çiftlerini başlatın ve veri toplama işlemini durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
 
     |Seçenek|Açıklama|
     |------------|-----------------|
@@ -91,7 +91,7 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Başlar (**/processon**) veya durdurur (**/processoff**) işlem kimliği tarafından belirtilen işlem için veri toplama (`PID`).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Başlar (**/threadon**) veya durdurur (**/threadoff**) veri toplama iş parçacığı kimliği tarafından belirtilen iş parçacığı için (`TID`).|
 
--   Ayrıca **VSPerfCmd.exe**[/mark](../profiling/mark.md) veri dosyasına bir profil oluşturma işareti eklemek için seçeneği. **/Mark** komut tanımlayıcı, bir zaman damgası ve isteğe bağlı kullanıcı tanımlı bir metin dizesi ekler. İşaretler profil oluşturucu raporlar ve veri görünümlerindeki verilere filtre için kullanılabilir.
+- Ayrıca **VSPerfCmd.exe**[/mark](../profiling/mark.md) veri dosyasına bir profil oluşturma işareti eklemek için seçeneği. **/Mark** komut tanımlayıcı, bir zaman damgası ve isteğe bağlı kullanıcı tanımlı bir metin dizesi ekler. İşaretler profil oluşturucu raporlar ve veri görünümlerindeki verilere filtre için kullanılabilir.
 
 ## <a name="end-the-profiling-session"></a>Profil oluşturma oturumunu sona erdirme
  Profil oluşturma oturumunu sona erdirmek için hedef kapatmak [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web uygulaması, Internet Information Services (IIS), profilli işlemin durdurun ve sonra profil oluşturucuyu kapatın durdurun. Ardından, IIS'yi yeniden başlatın.
@@ -117,13 +117,13 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/i
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>Uygulama ve bilgisayar yapılandırmasını geri yüklemek için
 
-1.  Değiştirin *web.config* özgün dosyanın bir kopyasını içeren dosya.
+1. Değiştirin *web.config* özgün dosyanın bir kopyasını içeren dosya.
 
-2.  (İsteğe bağlı). Profil oluşturma ortam değişkenlerini temizleyin. Tür:
+2. (İsteğe bağlı). Profil oluşturma ortam değişkenlerini temizleyin. Tür:
 
      **VSPerfCmd /globaloff**
 
-3.  Bilgisayarı yeniden başlatın.
+3. Bilgisayarı yeniden başlatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Profil ASP.NET web uygulamaları](../profiling/command-line-profiling-of-aspnet-web-applications.md)

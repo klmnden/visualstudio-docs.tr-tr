@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050792"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Nasıl yapılır: PolicyActivity Kural Kümesi Oluşturma (Eski)
 Bu konu eski kullanılarak ayarlanan ilke etkinlik kuralının nasıl oluşturulacağını açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -32,33 +32,33 @@ Bu konu eski kullanılarak ayarlanan ilke etkinlik kuralının nasıl oluşturul
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Seçmek veya PolicyActivity etkinliği için bir kural oluşturmak için  
   
-1.  Sağ [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)ve ardından **özellikleri** açmak için **özellikleri** penceresi.  
+1. Sağ [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)ve ardından **özellikleri** açmak için **özellikleri** penceresi.  
   
-2.  Tıklayın **RuleSetReference** özelliği.  
+2. Tıklayın **RuleSetReference** özelliği.  
   
-3.  Aşağıdakilerden birini yapın:  
+3. Aşağıdakilerden birini yapın:  
   
-    -   Tıklayın **RuleSetReference** üç nokta **[...]** seçip kümesinde mevcut bir kuralı [seçin kuralı Ayarla iletişim kutusu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Ardından 10. adıma gidin.  
-  
-         -veya-  
-  
-    -   Bir kural kümesi için bir ad yazın. Tıklayın **RuleSetReference** üç nokta **[...]** ve ardından **Düzenle** içinde [seçin kuralı Ayarla iletişim kutusu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+    - Tıklayın **RuleSetReference** üç nokta **[...]** seçip kümesinde mevcut bir kuralı [seçin kuralı Ayarla iletişim kutusu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Ardından 10. adıma gidin.  
   
          -veya-  
   
-    -   Bir kural kümesi için bir ad yazın. Genişletin **RuleSetReference** özelliği ve üç noktayı seçin **[...]**  içinde **RuleSet tanımı** özelliği.  
+    - Bir kural kümesi için bir ad yazın. Tıklayın **RuleSetReference** üç nokta **[...]** ve ardından **Düzenle** içinde [seçin kuralı Ayarla iletişim kutusu (eski)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+  
+         -veya-  
+  
+    - Bir kural kümesi için bir ad yazın. Genişletin **RuleSetReference** özelliği ve üç noktayı seçin **[...]**  içinde **RuleSet tanımı** özelliği.  
   
          [Kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) açılır.  
   
-4.  İçinde [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), tıklayın **Kuralı Ekle** kural kümesine yeni bir kural eklemek için.  
+4. İçinde [kural kümesi Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), tıklayın **Kuralı Ekle** kural kümesine yeni bir kural eklemek için.  
   
-5.  Girin **adı**, **öncelik**, ve **yeniden değerlendirme** özellikleri veya varsayılan değerleri koruyun.  
+5. Girin **adı**, **öncelik**, ve **yeniden değerlendirme** özellikleri veya varsayılan değerleri koruyun.  
   
-6.  Metni girin **koşul**.  
+6. Metni girin **koşul**.  
   
-7.  Metni girin **ardından Eylemler** ve **başka eylemler**.  
+7. Metni girin **ardından Eylemler** ve **başka eylemler**.  
   
-8.  Tıklayın **Kuralı Ekle** yeniden başka bir kural eklemek için.  
+8. Tıklayın **Kuralı Ekle** yeniden başka bir kural eklemek için.  
   
 9. İşiniz bittiğinde **Tamam**'a tıklayın.  
   

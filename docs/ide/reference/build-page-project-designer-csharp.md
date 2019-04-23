@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: eea14ebd5e4c56b62054a982aef83c1b8964b662
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049822"
 ---
 # <a name="build-page-project-designer-c"></a>Derleme Sayfası, Proje Tasarımcısı (C#)
 Kullanım **derleme** sayfasının **Proje Tasarımcısı** projenin yapı yapılandırması özelliklerini belirtmek için. Bu sayfa uygulandığı [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] yalnızca projeleri.
@@ -56,11 +56,11 @@ Daha fazla bilgi için [/Platform (C# Derleyici Seçenekleri)](/dotnet/csharp/la
 
 Bu onay kutusu yalnızca aşağıdaki koşulların tümü doğruysa, kullanılabilir:
 
--   Üzerinde **yapı sayfası**, **Platform hedefi** listesinin **herhangi bir CPU**.
+- Üzerinde **yapı sayfası**, **Platform hedefi** listesinin **herhangi bir CPU**.
 
--   Üzerinde **uygulama sayfası**, **çıkış türü** listesi, projenin bir uygulama olduğunu belirtir.
+- Üzerinde **uygulama sayfası**, **çıkış türü** listesi, projenin bir uygulama olduğunu belirtir.
 
--   Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.
+- Üzerinde **uygulama sayfası**, **hedef Framework'ü** listesi .NET Framework 4.5 belirtir.
 
 **Güvenli olmayan koda izin ver** kullanan verir kod [güvenli](/dotnet/csharp/language-reference/keywords/unsafe) derlemek için anahtar sözcüğü. Daha fazla bilgi için [/ unsafe (C# Derleyici Seçenekleri)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

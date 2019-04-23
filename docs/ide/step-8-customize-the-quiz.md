@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 168c86ace7fde9a2d354b4e9089b386f5cd876c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e4ecd650b931fe5d79ca4617022fba8577fbd39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052304"
 ---
 # <a name="step-8-customize-the-quiz"></a>8. Adım: Testi özelleştirme
 Öğreticinin son bölümünde testi özelleştirme ve zaten öğrendiklerinizi üzerinde genişletmek için bazı yollar hakkında bilgi edineceksiniz. Örneğin, programın yanıt hiçbir zaman bir kesir olduğu rastgele bölme problemleri nasıl oluşturduğunu hakkında düşünün. Daha fazla bilgi için kapatma `timeLabel` farklı bir renkte denetlemek ve sınava giren bir ipucu verir.
 
 ## <a name="to-customize-the-quiz"></a>Test özelleştirmek için
 
--   Yalnızca beş saniyede bir sınavda kalan zaman **timeLabel** denetiminde kırmızı renkte ayarlayarak onun **BackColor** özelliği (`timeLabel.BackColor = Color.Red;`). Test bittiğinde rengi sıfırlayın.
+- Yalnızca beş saniyede bir sınavda kalan zaman **timeLabel** denetiminde kırmızı renkte ayarlayarak onun **BackColor** özelliği (`timeLabel.BackColor = Color.Red;`). Test bittiğinde rengi sıfırlayın.
 
--   Sınava halinde doğru yanıtı girildiğinde ses çalma bir ipucu verir. bir <xref:System.Windows.Forms.NumericUpDown> denetimi. (Her denetim için bir olay işleyicisi yazmanız gereken <xref:System.Windows.Forms.NumericUpDown.ValueChanged> sınava denetimin değeri değiştiğinde harekete olayı,.)
+- Sınava halinde doğru yanıtı girildiğinde ses çalma bir ipucu verir. bir <xref:System.Windows.Forms.NumericUpDown> denetimi. (Her denetim için bir olay işleyicisi yazmanız gereken <xref:System.Windows.Forms.NumericUpDown.ValueChanged> sınava denetimin değeri değiştiğinde harekete olayı,.)
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sınavın tamamlanmış bir sürümünü indirmek için bkz [tam matematik sınavı öğretici örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+- Sınavın tamamlanmış bir sürümünü indirmek için bkz [tam matematik sınavı öğretici örneği](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
--   Sonraki eğitime gitmek için bkz: [Tutorial 3: Eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).
+- Sonraki eğitime gitmek için bkz: [Tutorial 3: Eşleşen bir oluşturma oyun](../ide/tutorial-3-create-a-matching-game.md).
 
--   Önceki öğretici adımına dönmek için bkz: [adım 7: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 7: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).

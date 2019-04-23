@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047729"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML dosyalarını düzenleyerek kod haritalarını özelleştirme
 
@@ -80,9 +80,9 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 ## <a name="ChangeGraphStyle"></a> Harita stilini değiştirme
  Haritanın .dgml dosyasını düzenleyerek haritanın kenarlık rengini ve arka plan rengini değiştirebilirsiniz. Kod öğeleri ve bağlantıların stilini değiştirmek için bkz [kod öğeleri ve bağlantıların stilini değiştirme](#Highlight).
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  İçinde `<DirectedGraph>` öğesinde, stilini değiştirmek için aşağıdaki özniteliklerin herhangi birini ekleyin:
+2. İçinde `<DirectedGraph>` öğesinde, stilini değiştirmek için aşağıdaki özniteliklerin herhangi birini ekleyin:
 
      Arka plan rengi
 
@@ -110,20 +110,20 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 ### <a name="CreateCustomStyles"></a>
  Aşağıdaki kod öğeleri özel stilleri uygulayabilirsiniz:
 
--   Tek bir kod öğeleri ve bağlantılarına
+- Tek bir kod öğeleri ve bağlantılarına
 
--   Kod öğeleri ve bağlantı grupları
+- Kod öğeleri ve bağlantı grupları
 
--   Kod öğeleri ve belirli koşullara göre bağlantı grupları
+- Kod öğeleri ve belirli koşullara göre bağlantı grupları
 
 > [!TIP]
 >  Stilleri birçok kod öğeleri veya bağlantı arasında tekrarlanan varsa, bu kod öğeleri veya bağlantılara bir kategoriyi uygulama ve ardından bu kategoriye bir stil uygulamadan düşünebilirsiniz. Daha fazla bilgi için [kod öğeleri ve bağlantılara kategori atama](#AssignCategories) ve [kod öğeleri ve bağlantılara özellikler atama](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Bir tek bir kod öğesi için özel bir stil uygulamak için
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  Kod öğesinin Bul `<Node/>` öğesi. Stilini özelleştirmek için bu özelliklerden herhangi birini ekleyin:
+2. Kod öğesinin Bul `<Node/>` öğesi. Stilini özelleştirmek için bu özelliklerden herhangi birini ekleyin:
 
      Arka plan rengi
 
@@ -212,11 +212,11 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>Özel bir stili tek bir bağlantıya uygulamak için
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  Bulma `<Link/>` adlarını kaynak kod öğesi ve hedef kod öğe içeren öğe.
+2. Bulma `<Link/>` adlarını kaynak kod öğesi ve hedef kod öğe içeren öğe.
 
-3.  İçinde `<Link/>` öğesinde, stilini özelleştirmek için aşağıdaki özniteliklerin herhangi birini ekleyin:
+3. İçinde `<Link/>` öğesinde, stilini özelleştirmek için aşağıdaki özniteliklerin herhangi birini ekleyin:
 
      Anahat ve ok ucu rengi
 
@@ -373,11 +373,11 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
  Bu örnekte:
 
-1.  Varsa `Coverage` > 80 ise ayarlayın `Background` özelliğini yeşile.
+1. Varsa `Coverage` > 80 ise ayarlayın `Background` özelliğini yeşile.
 
-2.  Else if `Coverage` > 50 ise ayarlayın `Background` göre turuncu gölgeye özelliğini değerini temel alarak `Coverage` özelliği.
+2. Else if `Coverage` > 50 ise ayarlayın `Background` göre turuncu gölgeye özelliğini değerini temel alarak `Coverage` özelliği.
 
-3.  Ayarlayın `Background` özelliğini kırmızı gölgeye değerini temel alarak `Coverage` özelliği.
+3. Ayarlayın `Background` özelliğini kırmızı gölgeye değerini temel alarak `Coverage` özelliği.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -440,9 +440,9 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>Bir kod öğesi için bir özellik atamak için
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  Bulma `<Node/>` Bu kod öğesi için öğesi. Özelliğin adını ve değerini belirtin. Örneğin:
+2. Bulma `<Node/>` Bu kod öğesi için öğesi. Özelliğin adını ve değerini belirtin. Örneğin:
 
     ```xml
     <Nodes>
@@ -450,7 +450,7 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
     </Nodes>
     ```
 
-3.  Ekleme bir `<Property/>` öğesine `<Properties>` bölümünde görünen adı ve veri türü gibi öznitelikleri belirtmek için:
+3. Ekleme bir `<Property/>` öğesine `<Properties>` bölümünde görünen adı ve veri türü gibi öznitelikleri belirtmek için:
 
     ```xml
     <Properties>
@@ -460,11 +460,11 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
 #### <a name="to-assign-a-property-to-a-link"></a>Bağlantıya bir özellik atamak için
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  Bulma `<Link/>` adlarını kaynak kod öğesi ve hedef kod öğe içeren öğe.
+2. Bulma `<Link/>` adlarını kaynak kod öğesi ve hedef kod öğe içeren öğe.
 
-3.  İçinde `<Node/>` öğesinde, özelliğin adını ve değerini belirtin. Örneğin:
+3. İçinde `<Node/>` öğesinde, özelliğin adını ve değerini belirtin. Örneğin:
 
     ```xml
     <Links>
@@ -472,7 +472,7 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
     </Links>
     ```
 
-4.  Ekleme bir `<Property/>` öğesine `<Properties>` bölümünde görünen adı ve veri türü gibi öznitelikleri belirtmek için:
+4. Ekleme bir `<Property/>` öğesine `<Properties>` bölümünde görünen adı ve veri türü gibi öznitelikleri belirtmek için:
 
     ```xml
     <Properties>
@@ -485,11 +485,11 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>Bir kod öğesi için bir kategori atamak için
 
--   .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+- .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
--   Bulma `<Node/>` istediğiniz kod öğesi için öğesi.
+- Bulma `<Node/>` istediğiniz kod öğesi için öğesi.
 
--   İçinde `<Node/>` öğe, Ekle bir `Category` kategorinin adını belirtmek için özniteliği. Örneğin:
+- İçinde `<Node/>` öğe, Ekle bir `Category` kategorinin adını belirtmek için özniteliği. Örneğin:
 
     ```xml
     <Nodes>
@@ -507,11 +507,11 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
 #### <a name="to-assign-a-category-to-a-link"></a>Bir bağlantıya kategori atamak için
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  Bulma `<Link/>` adlarını kaynak kod öğesi ve hedef kod öğe içeren öğe.
+2. Bulma `<Link/>` adlarını kaynak kod öğesi ve hedef kod öğe içeren öğe.
 
-3.  İçinde `<Link/>` öğe, Ekle bir `Category` kategorinin adını belirtmek için özniteliği. Örneğin:
+3. İçinde `<Link/>` öğe, Ekle bir `Category` kategorinin adını belirtmek için özniteliği. Örneğin:
 
     ```xml
     <Links>
@@ -519,7 +519,7 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
     </Links>
     ```
 
-4.  Ekleme bir `<Category/>` öğesine `<Categories>` kullanabileceğiniz bölümüne `Label` o kategorinin görüntü metnini belirtmek için özniteliği:
+4. Ekleme bir `<Category/>` öğesine `<Categories>` kullanabileceğiniz bölümüne `Label` o kategorinin görüntü metnini belirtmek için özniteliği:
 
     ```xml
     <Categories>
@@ -529,9 +529,9 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
 #### <a name="to-create-hierarchical-categories"></a>Hiyerarşik kategoriler oluşturmak için
 
-1.  .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
+1. .Dgml dosyasını bir metin veya XML düzenleyicisinde açın.
 
-2.  Ekleme bir `<Category/>` öğesi üst kategori için ve ardından eklemek `BasedOn` özniteliği alt kategorinin `<Category/>` öğesi.
+2. Ekleme bir `<Category/>` öğesi üst kategori için ve ardından eklemek `BasedOn` özniteliği alt kategorinin `<Category/>` öğesi.
 
      Örneğin:
 
@@ -559,13 +559,13 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
  Örneğin, aşağıdaki kod öğeleri bağlamak isteyebilirsiniz:
 
--   Sınıfta yapılan değişiklikleri açıklamak için bir iş kod öğesi, belge veya başka bir .dgml dosyasının URL'sini bir sınıf için kod öğesi bağlayabilirsiniz.
+- Sınıfta yapılan değişiklikleri açıklamak için bir iş kod öğesi, belge veya başka bir .dgml dosyasının URL'sini bir sınıf için kod öğesi bağlayabilirsiniz.
 
--   Bir bağımlılık diyagramını yazılımın mantıksal mimarisinde bir katmanı gösteren bir grup kod öğesi bağlayabilirsiniz.
+- Bir bağımlılık diyagramını yazılımın mantıksal mimarisinde bir katmanı gösteren bir grup kod öğesi bağlayabilirsiniz.
 
--   Bir arabirimi kullanıma sunan bir bileşen hakkında daha fazla bilgi göstermek için bu arabirim için kod öğesi için Bileşen diyagramını bağlayabilirsiniz.
+- Bir arabirimi kullanıma sunan bir bileşen hakkında daha fazla bilgi göstermek için bu arabirim için kod öğesi için Bileşen diyagramını bağlayabilirsiniz.
 
--   Bir kod öğesi Team Foundation Server çalışma öğesine, hataya veya kod öğesine ilgili bazı diğer bilgilere bağlayın.
+- Bir kod öğesi Team Foundation Server çalışma öğesine, hataya veya kod öğesine ilgili bazı diğer bilgilere bağlayın.
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Bir belgeye veya URL'ye kod öğesine bağlamak için
 
@@ -599,13 +599,13 @@ Kod Haritası'nın .dgml dosyasını bir metin veya XML Düzenleyicisi'ni düzen
 
    2. İçinde `<Properties>` bölümü:
 
-      1.  Ekleme bir `<Property/>` her yeni başvuru türü için öğesi.
+      1. Ekleme bir `<Property/>` her yeni başvuru türü için öğesi.
 
-      2.  Ayarlama `Id` özniteliğini yeni başvuru özniteliğinin adına.
+      2. Ayarlama `Id` özniteliğini yeni başvuru özniteliğinin adına.
 
-      3.  Ekleme `IsReference` özniteliği ve değerini `True` başvuruyu kod öğenin üzerinde görünür yapmak için **Git başvurusu için** kısayol menüsü.
+      3. Ekleme `IsReference` özniteliği ve değerini `True` başvuruyu kod öğenin üzerinde görünür yapmak için **Git başvurusu için** kısayol menüsü.
 
-      4.  Kullanım `Label` kod öğenin üzerinde görüntü metnini belirtmek için özniteliği **başvuru Git** kısayol menüsü.
+      4. Kullanım `Label` kod öğenin üzerinde görüntü metnini belirtmek için özniteliği **başvuru Git** kısayol menüsü.
 
       Örneğin:
 

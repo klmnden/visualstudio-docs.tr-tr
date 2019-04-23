@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052096"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Windows UWP ve 8.1 Phone Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,23 +22,23 @@ Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamalar�
   
 ## <a name="create-a-simple-windows-phone-app"></a>Basit bir Windows Phone uygulaması oluşturun  
   
-1.  Visual C# veya Visual Basic şablonu kullanarak boş bir Windows Phone uygulaması için yeni bir proje oluşturun.  
+1. Visual C# veya Visual Basic şablonu kullanarak boş bir Windows Phone uygulaması için yeni bir proje oluşturun.  
   
      ![Yeni bir Windows Phone uygulaması oluşturma](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")  
   
-2.  Solution Explorer'da mainpage.XAML dosyasını açın. Araç kutusundan tasarım yüzeyine bir düğme denetimi ve bir metin kutusu denetimi sürükleyin.  
+2. Solution Explorer'da mainpage.XAML dosyasını açın. Araç kutusundan tasarım yüzeyine bir düğme denetimi ve bir metin kutusu denetimi sürükleyin.  
   
      ![MainPage.xaml için metinse ekleme](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")  
   
-3.  Özellikler penceresinde düğme denetimini adlandırın.  
+3. Özellikler penceresinde düğme denetimini adlandırın.  
   
      ![Düğme denetimini ad](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")  
   
-4.  Ad metin kutusu denetimi.  
+4. Ad metin kutusu denetimi.  
   
      ![Textbox denetimi adı](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")  
   
-5.  Tasarımcı yüzeyinde düğme denetimini çift tıklayın ve aşağıdaki kodu ekleyin:  
+5. Tasarımcı yüzeyinde düğme denetimini çift tıklayın ve aşağıdaki kodu ekleyin:  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,15 +58,15 @@ Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamalar�
     End Class  
     ```  
   
-6.  Windows Phone uygulamanızı öykünücüde çalıştırma ve çalıştığını doğrulamak için F5 tuşuna basın.  
+6. Windows Phone uygulamanızı öykünücüde çalıştırma ve çalıştığını doğrulamak için F5 tuşuna basın.  
   
      ![Windows Phone çalıştıran uygulama](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")  
   
-7.  Öykünücü çıkın.  
+7. Öykünücü çıkın.  
   
 ## <a name="deploy-the-windows-phone-app"></a>Windows Phone dağıtma uygulama  
   
-1.  Kodlanmış UI testi uygulamanın denetimleri eşleyebilmeniz için önce uygulamayı dağıtmak zorunda.  
+1. Kodlanmış UI testi uygulamanın denetimleri eşleyebilmeniz için önce uygulamayı dağıtmak zorunda.  
   
      ![Windows Phone dağıtma uygulama](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")  
   
@@ -287,7 +287,7 @@ Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamalar�
   
 ## <a name="run-the-coded-ui-test"></a>Kodlanmış UI testi Çalıştır  
   
-1.  Testinizi oluşturun ve sonra test Gezginini kullanarak testi çalıştırın.  
+1. Testinizi oluşturun ve sonra test Gezginini kullanarak testi çalıştırın.  
   
      ![Derleme ve Test Gezgini'ni kullanarak test çalıştırma](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")  
   
@@ -299,7 +299,7 @@ Bu kılavuz, mobil cihaz veya öykünücü üzerinde çalışan UWP uygulamalar�
   
      ![Test Explorer sonuçları](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")  
   
-##  <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Kullanım veri tabanlı kodlanmış UI testleri Windows Phone uygulamalarını  
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Kullanım veri tabanlı kodlanmış UI testleri Windows Phone uygulamalarını  
  Farklı koşulları test etmeye yönelik bir kodlanmış UI testi birden çok kez farklı veri kümelerini çalıştırılabilir.  
   
  Windows Phone için verilerle çalışan kodlanmış UI testleri bir test yönteminde DataRow özniteliği kullanılarak tanımlanır. Aşağıdaki örnek, x ve y ilk yineleme ve -1 -2 için ikinci bir test yinelemesini için 1 ve 2 değerlerini kullanın.  
@@ -317,7 +317,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>S: UI denetimine eşlemek için Windows Phone öykünücüsünde uygulamayı dağıtmak zorunda mıyım?  
  **A**: Evet, kodlanmış UI test Oluşturucusu bir öykünücü çalıştırması ve uygulama dağıtılmış gerekir. Aksi takdirde, hiçbir çalışan öykünücüsü bulunamadı hata mesajını durum oluşturur.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> S: Testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim?  
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> S: Testleri yalnızca öykünücü üzerinde yürütülebilir veya fiziksel bir cihaz ayrıca kullanabilirim?  
  **A**: Her iki seçenek desteklenir. Test yürütmesi için hedef öykünücü türünü değiştirme veya cihaz cihaz araç çubuğunda seçerek seçilir. Cihaz seçiliyse, telefon mavi bir cihaz makinenin USB bağlantı noktalarından birine bağlanması gerekir.  
   
  ![Physcial cihaz veya öykünücü sürümü seçin](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  

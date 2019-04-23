@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 408b13892d24689fb163aea0105a47028defad59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051328"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Kaynak Çakışmaları Görünümü - Çakışma Verileri
 Çekişme olayları kaynağı olan kaynaklar için Çekişme verisi kaynak çakışması görünümü listeler. Bir iş parçacığında bir işlev kaynağa erişim için başka bir iş parçacığı bir işlevde kaynağına özel erişim aldığından beklenecek zorlanır Çekişme olayı oluşur. Her kaynak Çekişme olayıyla sonuçlandı işlevi yürütme yollarını görüntüler bir çağrı ağacı kök düğümüdür.
@@ -30,9 +30,9 @@ ms.locfileid: "56622078"
 ### <a name="function-values"></a>İşlev değerleri
  İşlev değerleri, çağrı ağacında temsil yürütme yolunu ortaya işlevi örneklerini temel alır.
 
--   Özel değerler deyimleri kendi işlev gövdesindeki işlev yürütülürken gerçekleşen olayları temel alır. İşlev tarafından çağrılan işlevler içinde oluşan olaylar özel değerleri dahil edilmez.
+- Özel değerler deyimleri kendi işlev gövdesindeki işlev yürütülürken gerçekleşen olayları temel alır. İşlev tarafından çağrılan işlevler içinde oluşan olaylar özel değerleri dahil edilmez.
 
--   Kapsamlı değerler, işlev veya işlev tarafından çağrılan bir işlev yürütülürken gerçekleşen olayları temel alır.
+- Kapsamlı değerler, işlev veya işlev tarafından çağrılan bir işlev yürütülürken gerçekleşen olayları temel alır.
 
 ### <a name="percentage-values"></a>Yüzde değerleri
  Yüzde değerleri, profil oluşturma verilerinin toplam süre veya Çekişme olayları temel alır. Rapor veya profil oluşturma çalışması görünümünü filtrelediyseniz yalnızca engellenme süresi ve çekişmeleri filtrelenmiş veri toplam değeri olarak kullanılır.

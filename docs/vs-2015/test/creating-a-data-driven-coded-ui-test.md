@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb765bebba4aaa3fe0cece4b64d33d2e810bdfb7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048989"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Verilerle Çalışan Kodlanmış UI Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,26 +24,26 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="create-a-data-driven-coded-ui-test"></a>Verilerle çalışan kodlanmış UI testi oluşturma  
  Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış UI testi oluşturur. İki sayıyı toplar ve toplamı doğru olduğunu doğrulamak için bir onay kullanır. Ardından, onaylama işlemi ve parametre değerlerini iki sayı için veri odaklı ve depolanan bir virgülle ayrılmış değer (.csv) dosyasında olacak kodlanmıştır.  
   
 #### <a name="step-1---create-a-coded-ui-test"></a>1. adım - kodlanmış UI testi oluşturma  
   
-1.  Bir proje oluşturun.  
+1. Bir proje oluşturun.  
   
      ![Kodlanmış UI test projesi oluşturma](../test/media/cuit-datadriven.png "CUIT_dataDriven_")  
   
-2.  Eylemleri kaydetmek bu seçeneği seçin.  
+2. Eylemleri kaydetmek bu seçeneği seçin.  
   
      ![Eylemleri kaydetmeyi](../test/media/cuit-datadriven-generatecodedialog.png "CUIT_dataDriven_GenerateCodeDialog")  
   
-3.  Hesaplayıcı uygulamasını açın ve testi kaydetmeyi başlatın.  
+3. Hesaplayıcı uygulamasını açın ve testi kaydetmeyi başlatın.  
   
      ![Eylemleri Kaydet](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")  
   
-4.  1 ve 2 ekleme, kaydedicisini durdurur ve test yöntemi oluşturun. Daha sonra veri dosyasındaki değerlerle Biz bu kullanıcı girişi değerleri değiştirirsiniz.  
+4. 1 ve 2 ekleme, kaydedicisini durdurur ve test yöntemi oluşturun. Daha sonra veri dosyasındaki değerlerle Biz bu kullanıcı girişi değerleri değiştirirsiniz.  
   
      ![Test metodunu üret](../test/media/cuit-datadriven-cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
@@ -59,21 +59,21 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
     }  
     ```  
   
-5.  Kullanım `AddNumbers()` test çalıştırdığını doğrulamak için yöntem. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **çalıştırmak testlerini**. (Klavye kısayolu: CTRL + R, T).  
+5. Kullanım `AddNumbers()` test çalıştırdığını doğrulamak için yöntem. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **çalıştırmak testlerini**. (Klavye kısayolu: CTRL + R, T).  
   
      Test sonucu geçti veya başarısız olan test Test Gezgini penceresinde gösterilip gösterilmediğini gösterir. Gelen Test Gezgini penceresi açmak için **TEST** menüsünde seçin **Windows** seçip **Test Gezgini**.  
   
-6.  Bir veri kaynağı onaylama parametre değerleri için de kullanılabilir olduğundan — beklenen değerlerini doğrulamak için test tarafından kullanılır — iki sayının toplamını doğru olduğunu doğrulamak için onaylama ekleyelim. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **kodlanmış UI testi için kod üret**, ardından **kullanım kodlanmış UI Test Oluşturucusu**.  
+6. Bir veri kaynağı onaylama parametre değerleri için de kullanılabilir olduğundan — beklenen değerlerini doğrulamak için test tarafından kullanılır — iki sayının toplamını doğru olduğunu doğrulamak için onaylama ekleyelim. Yukarıda gösterilen test yönteminde imleci, bağlam menüsünü açın ve seçin **kodlanmış UI testi için kod üret**, ardından **kullanım kodlanmış UI Test Oluşturucusu**.  
   
      Toplamı görüntüleyen hesaplayıcı metin denetiminde eşleyin.  
   
      ![Harita UI metin denetimi](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")  
   
-7.  Toplam değeri doğru olduğunu doğrulayan bir onay ekleyin. Seçin **görüntü metni** sahip özellik **3** seçip **onaylama Ekle**. Kullanım **AreEqual** karşılaştırıcı ve karşılaştırma değeri olduğundan emin olun **3**.  
+7. Toplam değeri doğru olduğunu doğrulayan bir onay ekleyin. Seçin **görüntü metni** sahip özellik **3** seçip **onaylama Ekle**. Kullanım **AreEqual** karşılaştırıcı ve karşılaştırma değeri olduğundan emin olun **3**.  
   
      ![Onay yapılandırma](../test/media/cuit-datadriven-builderaddassertion2.png "CUIT_dataDriven_BuilderAddAssertion2")  
   
-8.  Onaylama yapılandırdıktan sonra kodu yeniden Oluşturucu oluşturur. Bu, doğrulama için yeni bir yöntem oluşturur.  
+8. Onaylama yapılandırdıktan sonra kodu yeniden Oluşturucu oluşturur. Bu, doğrulama için yeni bir yöntem oluşturur.  
   
      ![Onaylama işlemi metodunu üret](../test/media/cuit-datadriven-assertiongencode.png "CUIT_dataDriven_AssertionGenCode")  
   
@@ -96,11 +96,11 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
 #### <a name="step-2---create-a-data-set"></a>2. adım - veri kümesi oluşturma  
   
-1.  Bir metin dosyası adlı dataDrivenSample projeye eklemek `data.csv`.  
+1. Bir metin dosyası adlı dataDrivenSample projeye eklemek `data.csv`.  
   
      ![Bir virgülle ayrılmış değer dosyası projeye eklemek](../test/media/cuit-datadriven-addcsvfile.png "CUIT_dataDriven_AddCSVFile")  
   
-2.  .Csv dosyasında aşağıdaki verilerle doldurur:  
+2. .Csv dosyasında aşağıdaki verilerle doldurur:  
   
     |Num1|Num2|TOPLA|  
     |----------|----------|---------|  
@@ -112,9 +112,9 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
      ![Doldurun. Veri içeren CSV dosyası](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")  
   
-3.  Doğru kodlama kullanılarak .csv dosyasını kaydetmek önemlidir. Üzerinde **dosya** menüsünde seçin **Gelişmiş kaydetme seçenekleri** ve **Unicode (UTF-8 imza olmadan) – kod sayfası 65001** kodlama olarak.  
+3. Doğru kodlama kullanılarak .csv dosyasını kaydetmek önemlidir. Üzerinde **dosya** menüsünde seçin **Gelişmiş kaydetme seçenekleri** ve **Unicode (UTF-8 imza olmadan) – kod sayfası 65001** kodlama olarak.  
   
-4.  Çıkış dizinine .csv dosyasını kopyaladığınız veya test çalıştırılamıyor. Kopyalamak için Özellikler penceresini kullanın.  
+4. Çıkış dizinine .csv dosyasını kopyaladığınız veya test çalıştırılamıyor. Kopyalamak için Özellikler penceresini kullanın.  
   
      ![Dağıtın. CSV dosyası](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")  
   
@@ -122,7 +122,7 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
 #### <a name="step-3--add-data-source-binding"></a>3. adım – veri kaynağına bağlama Ekle  
   
-1.  Veri kaynağına bağlamak için ekleme bir `DataSource` görüntülenmesi için öznitelik `[TestMethod]` hemen test metodu özniteliği.  
+1. Veri kaynağına bağlamak için ekleme bir `DataSource` görüntülenmesi için öznitelik `[TestMethod]` hemen test metodu özniteliği.  
   
     ```  
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
@@ -142,7 +142,7 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
     > [!TIP]
     >  Bkz: [veri kaynağı özniteliği örnekleri](#CreateDataDrivenCUIT_QA_DataSourceAttributes) soru-cevap'ta XML, SQL Express ve Excel gibi diğer veri kaynağı türleri kullanma örnekleri için bir bölüm.  
   
-2.  Testi çalıştırın.  
+2. Testi çalıştırın.  
   
      Üç yineleme ile test çalışmaları dikkat edin. Veri kaynağına bağlanan üç veri satırı içerdiğinden budur. Ancak, test yine de sabit parametre değerlerini kullanıyor ve her zaman 1 + 2 3 toplamı ile ekliyor de görürsünüz.  
   
@@ -150,7 +150,7 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
 #### <a name="step-4--use-the-data-in-the-coded-ui-test"></a>4. adım – kodlanmış UI testi verileri kullanma  
   
-1.  Ekleme `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` CodedUITest.cs dosyanın en üstüne:  
+1. Ekleme `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` CodedUITest.cs dosyanın en üstüne:  
   
     ```  
     using System;  
@@ -166,7 +166,7 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
     ```  
   
-2.  Ekleme `TestContext.DataRow[]` içinde `CodedUITestMethod1()` yöntemi değerleri veri kaynağından uygulanır. Veri kaynağı değerleri denetimlerini kullanarak UIMap denetimlerine atanan sabitleri geçersiz kılma `SearchProperties`:  
+2. Ekleme `TestContext.DataRow[]` içinde `CodedUITestMethod1()` yöntemi değerleri veri kaynağından uygulanır. Veri kaynağı değerleri denetimlerini kullanarak UIMap denetimlerine atanan sabitleri geçersiz kılma `SearchProperties`:  
   
     ```  
     public void CodedUITestMethod1()  
@@ -183,19 +183,19 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
      Verileri kodlamak için hangi arama özelliklerinin ekleyeceğimi için kodlanmış UI Test Düzenleyicisi'ni kullanın.  
   
-    -   UIMap.uitest dosyasını açın.  
+    - UIMap.uitest dosyasını açın.  
   
          ![Kodlanmış UI Test Düzenleyicisi'ni açma](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")  
   
-    -   UI eylemi seçin ve karşılık gelen UI denetim eşlemesi gözlemleyin. Nasıl eşleme kod, örneğin, karşılık gelen fark `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
+    - UI eylemi seçin ve karşılık gelen UI denetim eşlemesi gözlemleyin. Nasıl eşleme kod, örneğin, karşılık gelen fark `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.  
   
          ![Kod ile yardımcı olması için kodlanmış UI Test Düzenleyicisi'ni kullanın](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")  
   
-    -   Özellikler penceresinde açın **arama özellikleri**. Arama özellikleri **adı** değerdir veri kaynağını kullanma kodda neler değiştirildiği. Örneğin, `SearchProperties` her veri satırının ilk sütununu değerler atanır: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Bu test için üç yineleme, değişir **adı** 3, sonra 5 ve 6 son arama özelliği için değer.  
+    - Özellikler penceresinde açın **arama özellikleri**. Arama özellikleri **adı** değerdir veri kaynağını kullanma kodda neler değiştirildiği. Örneğin, `SearchProperties` her veri satırının ilk sütununu değerler atanır: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Bu test için üç yineleme, değişir **adı** 3, sonra 5 ve 6 son arama özelliği için değer.  
   
          ![Kodlama yardımcı olmak için arama özelliklerini kullanın](../test/media/cuit-datadriven-searchproperties.png "CUIT_dataDriven_SearchProperties")  
   
-3.  Çözümünüzü kaydedin.  
+3. Çözümünüzü kaydedin.  
   
 #### <a name="step-5--run-the-data-driven-test"></a>Adım 5-veri tabanlı test çalıştırma  
   
@@ -209,28 +209,28 @@ Farklı koşulları test etmeye yönelik farklı parametre değerleriniz ile bir
   
 ## <a name="q--a"></a>Soru - Yanıt  
   
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express veya XML gibi diğer veri kaynağı türleri için veri kaynağı öznitelikleri nelerdir?  
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> SQL Express veya XML gibi diğer veri kaynağı türleri için veri kaynağı öznitelikleri nelerdir?  
  Kodunuza kopyalayarak ve gereken özelleştirmeleri yaparak, aşağıdaki tabloda örnek veri kaynağı dizeleri kullanabilirsiniz.  
   
  **Veri kaynağı türleri ve öznitelikleri**  
   
--   CSV  
+- CSV  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`  
   
--   Excel  
+- Excel  
   
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`  
   
--   Team Foundation Server test çalışmasında  
+- Team Foundation Server test çalışmasında  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`  
   
--   XML  
+- XML  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`  
   
--   SQL Express  
+- SQL Express  
   
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`  
   

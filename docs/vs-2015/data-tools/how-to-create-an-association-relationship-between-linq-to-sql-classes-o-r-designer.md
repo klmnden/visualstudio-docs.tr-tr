@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056776"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Nasıl yapılır: LINQ to SQL sınıfları (O/R Tasarımcısı) arasındaki ilişkiyi (ilişki) oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Varlık sınıfları arasındaki ilişkilendirmeleri [!INCLUDE[vbtecdlinq](../in
   
 ### <a name="to-create-an-association-between-entity-classes"></a>Varlık sınıfları arasında ilişkilendirme oluşturma  
   
-1.  İlişkideki üst sınıfın temsil ettiği varlık sınıfı sağ tıklatın, **Ekle**ve ardından **ilişkilendirme**.  
+1. İlişkideki üst sınıfın temsil ettiği varlık sınıfı sağ tıklatın, **Ekle**ve ardından **ilişkilendirme**.  
   
-2.  Doğrulayın doğru **üst sınıf** seçili **ilişkilendirme Düzenleyicisi** iletişim kutusu.  
+2. Doğrulayın doğru **üst sınıf** seçili **ilişkilendirme Düzenleyicisi** iletişim kutusu.  
   
-3.  Seçin **alt sınıf** birleşik giriş kutusundaki.  
+3. Seçin **alt sınıf** birleşik giriş kutusundaki.  
   
-4.  Seçin **ilişkilendirme özellikleri** sınıfları ilgilidir. Genellikle, bu veritabanında tanımlanan yabancı anahtar ilişkisi eşlenir. Örneğin, müşteriler ve siparişler ilişkilendirme olarak **ilişkilendirme özellikleri** CustomerID her sınıf için olan.  
+4. Seçin **ilişkilendirme özellikleri** sınıfları ilgilidir. Genellikle, bu veritabanında tanımlanan yabancı anahtar ilişkisi eşlenir. Örneğin, müşteriler ve siparişler ilişkilendirme olarak **ilişkilendirme özellikleri** CustomerID her sınıf için olan.  
   
-5.  Tıklayın **Tamam** bir ilişki oluşturmak için.  
+5. Tıklayın **Tamam** bir ilişki oluşturmak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

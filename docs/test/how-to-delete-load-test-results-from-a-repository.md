@@ -13,12 +13,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041735"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Nasıl yapılır: Yük testi sonuçlarını bir depodan silme
 
@@ -30,21 +30,21 @@ Kullanarak yük testi sonuçları Yük Testi Düzenleyicisi'nden yönetebilirsin
 
 ## <a name="to-delete-results-from-a-repository"></a>Depodan sonuçları silmek için
 
-1.  Bir web performansı ve yük testi projesinden, bir yük testi açın.
+1. Bir web performansı ve yük testi projesinden, bir yük testi açın.
 
-2.  Gömülü araç çubuğunda **sonuçları Aç ve Yönet**.
+2. Gömülü araç çubuğunda **sonuçları Aç ve Yönet**.
 
      **Yönetme yük testi sonuçlarını Aç ve** iletişim kutusu görüntülenir.
 
-3.  İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel - denetleyici yok >** yerel olarak depolanmış sonuçlara ulaşmak için.
+3. İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel - denetleyici yok >** yerel olarak depolanmış sonuçlara ulaşmak için.
 
-4.  İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
+4. İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
 
      Yük testi sonuçları kullanamıyorsanız, görünürler **yük testi sonuçları** listesi. Sütunların **zaman**, **süresi**, **kullanıcı**, **sonucu**, **Test**, ve  **Açıklama**. **Test** test adını içerir ve **açıklama** test çalıştırılmadan önce eklenir isteğe bağlı bir açıklama içerir. **Açıklama** sütunu içindeki girilen kısa açıklamaları görüntüler **analiz yorumları** bunun için test sonucu.
 
-5.  İçinde **yük testi sonuçları** listesinde, bir sonuç seçin. Kullanabileceğiniz **Shift** anahtar **Ctrl** anahtar ya da her ikisini birden fazla sonuç seçin.
+5. İçinde **yük testi sonuçları** listesinde, bir sonuç seçin. Kullanabileceğiniz **Shift** anahtar **Ctrl** anahtar ya da her ikisini birden fazla sonuç seçin.
 
-6.  Seçin **Kaldır**.
+6. Seçin **Kaldır**.
 
      Depodan sonuçları kaldırılır.
 

@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040970"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Özel Durumları Hata Ayıklayıcısı ile Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata dur
   
  Ne zaman hata ayıklayıcının çıkış penceresinde bir özel durum iletisi yazar. bir özel durum oluşur. Aşağıdaki durumlarda yürütmeyi Kes:  
   
--   Ne zaman bir özel durum oluşturulur ve işlenmezse.  
+- Ne zaman bir özel durum oluşturulur ve işlenmezse.  
   
--   ne zaman herhangi bir işleyici çağrılmadan önce hemen bir özel durum oluştuğunda hata ayıklayıcının ayarlanır.  
+- ne zaman herhangi bir işleyici çağrılmadan önce hemen bir özel durum oluştuğunda hata ayıklayıcının ayarlanır.  
   
--   ayarladıysanız [yalnızca kendi kodum](../debugger/just-my-code.md), ve hata ayıklayıcının kullanıcı kodunda işlenmemiş bir özel durumla kesmek ayarlanır.  
+- ayarladıysanız [yalnızca kendi kodum](../debugger/just-my-code.md), ve hata ayıklayıcının kullanıcı kodunda işlenmemiş bir özel durumla kesmek ayarlanır.  
   
 > [!NOTE]
 >  ASP.NET hata sayfalarını bir tarayıcıda gösteren bir üst düzey özel durum işleyicisine sahiptir. Bu yürütme sürece kesmez **yalnızca kendi kodum** açıktır. Bir örnek için bkz. [kullanıcının işlemediği özel durumları devam etmek için hata ayıklayıcı ayarlama](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) aşağıda.  
@@ -141,7 +141,7 @@ Bir özel durum bir program yürütüldüğü sırada gerçekleşen bir hata dur
   
    ![Özel durum Ayarları'nda Varsayılanları Geri Yükle](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Kullanıcı tarafından işlenmeyen özel durumları devam etmek için hata ayıklayıcı ayarlama  
+### <a name="BKMK_UserUnhandled"></a> Kullanıcı tarafından işlenmeyen özel durumları devam etmek için hata ayıklayıcı ayarlama  
  .NET veya JavaScript kodu ile hata ayıklaması yapıyorsanız [yalnızca kendi kodum](../debugger/just-my-code.md), başka bir yere işlenir ancak kullanıcı kodunda işlenmemiş özel durumları değil hata ayıklayıcının işlemi durdurmasını sağlayabilirsiniz.  
   
 1. İçinde **özel durum ayarları** penceresinde penceresinde sağ tıklatıp ardından seçerek, bağlam menüsünü açın **sütunları göster**. (Kapalı durumunda **yalnızca kendi kodum**, bu komut görmezsiniz.)  

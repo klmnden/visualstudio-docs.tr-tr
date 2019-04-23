@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039092"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Test ayarlarını kullanarak tanılama bilgileri Topla
 
 Kullanabileceğiniz *Test ayarları* testlerinizi çalıştırdığınızda fazladan veri toplamak için Visual Studio'da. Örneğin, bir video testinizi çalıştırırken kaydı yapmak isteyebilirsiniz. Tanılama veri bağdaştırıcıları vardır:
 
--   Metin biçiminde her UI eylemi adımını toplayın
+- Metin biçiminde her UI eylemi adımını toplayın
 
--   Kayıttan yürütme için her UI eylemini kaydedin
+- Kayıttan yürütme için her UI eylemini kaydedin
 
--   Sistem bilgilerini toplayın
+- Sistem bilgilerini toplayın
 
--   Olay günlüğü verisini toplayın
+- Olay günlüğü verisini toplayın
 
--   Tekrarlanabilir olmayan hataları yalıtmaya yardımcı IntelliTrace verilerini toplama
+- Tekrarlanabilir olmayan hataları yalıtmaya yardımcı IntelliTrace verilerini toplama
 
 Tanılama veri bağdaştırıcıları test makinesinin davranışını değiştirmek için de kullanılabilir. Örneğin, Visual Studio'da bir test ayarı ile takımınızın uygulamasının performansını değerlendirmek için çeşitli ağ topolojisi engellerini taklit edebilir.
 

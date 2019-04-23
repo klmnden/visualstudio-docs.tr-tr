@@ -10,22 +10,22 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 148ec42a7c0a0f8c040eabb75991b54c78f511ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045220"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web performans testindeki dinamik parametreleri algılayamama sorununu çözme
 
 Bazı Web siteleri, web isteklerinin bazılarını işlemek için dinamik parametreler kullanır. Dinamik bir parametre değeri, kullanıcı uygulamayı çalıştırdığında her seferinde yeniden bir parametredir. Bir dinamik parametreyi, bir oturum kimliği örneğidir Oturum kimliği genellikle her 5 ila 30 dakika arasında değişir. Web Performans Testi Kaydedicisi ve kayıttan yürütme motoru en sık karşılaşılan dinamik parametre otomatik olarak işler:
 
--   Tanımlama bilgisi değeri içinde düzenlenmiş dinamik parametre değerleri. Web performans testi motoru kayıttan yürütme sırasında otomatik olarak işler.
+- Tanımlama bilgisi değeri içinde düzenlenmiş dinamik parametre değerleri. Web performans testi motoru kayıttan yürütme sırasında otomatik olarak işler.
 
--   ASP.NET gibi HTML sayfalarında gizli alanlar olarak düzenlenmiş dinamik parametre değerleri durumunu görüntüleyebilirsiniz. Bunlar otomatik olarak teste gizli alan ayıklama kuralları ekler kaydedici tarafından işlenir.
+- ASP.NET gibi HTML sayfalarında gizli alanlar olarak düzenlenmiş dinamik parametre değerleri durumunu görüntüleyebilirsiniz. Bunlar otomatik olarak teste gizli alan ayıklama kuralları ekler kaydedici tarafından işlenir.
 
--   Sorgu dizisi veya form düzenlenmiş dinamik parametre değerleri, parametreleri gönderin. Bir web performansı sınamasını kaydettikten sonra bunlar dinamik parametrelerin algılanması aracılığıyla işlenir.
+- Sorgu dizisi veya form düzenlenmiş dinamik parametre değerleri, parametreleri gönderin. Bir web performansı sınamasını kaydettikten sonra bunlar dinamik parametrelerin algılanması aracılığıyla işlenir.
 
 Bazı dinamik parametre türleri algılanmadı. Bir algılanmayan dinamik parametre, web performans testinizi test her çalıştığında dinamik değer farklı olacaktır çünkü çalıştırdığınızda başarısız olmasına neden olur. Bu parametreleri doğru bir şekilde işlemek için ayıklama kuralları için dinamik parametreleri web performans testlerinizdeki el ile ekleyebilirsiniz.
 
@@ -35,17 +35,17 @@ Bazı dinamik parametre türleri algılanmadı. Bir algılanmayan dinamik parame
 
 Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için birkaç denetim ve özel kod ile üç web formu bulunan basit bir ASP.NET web uygulaması oluşturacağız. Ardından dinamik parametrelerin nasıl ayrıldığını ve bunları nasıl ele alınacağını öğreneceğiz.
 
-1.  Adlı yeni bir ASP.NET projesi oluşturma **DynamicParameterSample**.
+1. Adlı yeni bir ASP.NET projesi oluşturma **DynamicParameterSample**.
 
      ![Boş bir ASP.NET web uygulaması projesi oluşturma](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  Adlandırılan web formu ekleyin *Querystring.aspx*.
+2. Adlandırılan web formu ekleyin *Querystring.aspx*.
 
-3.  Tasarım görünümünde, bir Hiddenfield'i sayfanın üzerine ve içinde sürükleyin, sonra (ID) özellik değerini HiddenFieldSessionID olarak değiştirin.
+3. Tasarım görünümünde, bir Hiddenfield'i sayfanın üzerine ve içinde sürükleyin, sonra (ID) özellik değerini HiddenFieldSessionID olarak değiştirin.
 
      ![Bir Hiddenfield'i Ekle](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
-4.  Querystring sayfası için kaynak görünümünü değiştirin ve sahte oturum kimliği dinamik parametreleri oluşturmak için kullanılan ASP.NET ve JavaScript kodu aşağıdaki vurgulanmış ekleyin:
+4. Querystring sayfası için kaynak görünümünü değiştirin ve sahte oturum kimliği dinamik parametreleri oluşturmak için kullanılan ASP.NET ve JavaScript kodu aşağıdaki vurgulanmış ekleyin:
 
     ```html
     <head runat="server">
@@ -62,7 +62,7 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
     </html>
     ```
 
-5.  Açık *Querystring.aspx.cs* dosya ve Page_Load yöntemine aşağıdaki vurgulanmış kodu ekleyin:
+5. Açık *Querystring.aspx.cs* dosya ve Page_Load yöntemine aşağıdaki vurgulanmış kodu ekleyin:
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,13 +74,13 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
     }
     ```
 
-6.  Adlı ikinci bir web formu ekleyin *ASPQuery.aspx*.
+6. Adlı ikinci bir web formu ekleyin *ASPQuery.aspx*.
 
-7.  Tasarım görünümünde sürükleyin bir **etiket** sayfaya ve değerini kendi **(ID)** özelliğini **IndexLabel**.
+7. Tasarım görünümünde sürükleyin bir **etiket** sayfaya ve değerini kendi **(ID)** özelliğini **IndexLabel**.
 
      ![Web formu için bir etiket ekleyin](../test/media/web_test_dynamicparameter_label.png)
 
-8.  Sürükleme bir **köprü** sayfaya yü değiştirip kendi **metin** özelliğini **geri**.
+8. Sürükleme bir **köprü** sayfaya yü değiştirip kendi **metin** özelliğini **geri**.
 
      ![Web formu için köprü ekleme](../test/media/web_test_dynamicparameter_hyperlink.png)
 
@@ -132,31 +132,31 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
 ## <a name="create-a-web-performance-test"></a>Web performans testi oluşturma
 
-1.  Çözümünüze web performansı ve yük testi projesi ekleyin.
+1. Çözümünüze web performansı ve yük testi projesi ekleyin.
 
      ![Web performans ve yük testi projesi ekleme](../test/media/web_test_dynamicparameter_addtestproject.png)
 
-2.  WebTest1.webtest öğesini DynamicParameterSampleApp.webtest olarak yeniden adlandırın.
+2. WebTest1.webtest öğesini DynamicParameterSampleApp.webtest olarak yeniden adlandırın.
 
      ![Web performans testini yeniden adlandır](../test/media/web_test_dynamicparameter_renametest.png)
 
-3.  Testi Kaydet.
+3. Testi Kaydet.
 
      ![Web performans testi Kaydet](../test/media/web_test_dynamicparameter_recordtest.png)
 
-4.  Kopyalama ve tarayıcıda test ettiğiniz Web sitesinden URL'yi yapıştırın.
+4. Kopyalama ve tarayıcıda test ettiğiniz Web sitesinden URL'yi yapıştırın.
 
      ![Test edilen Web sitesinden URL'yi yapıştırın](../test/media/web_test_dynamicparameter_recordtest2.png)
 
-5.  Web uygulaması aracılığıyla göz atın. ASP.NET bağlantısını, geri bağlantısını ve ardından geri bağlantısıyla ardından javascript bağlantısını seçin.
+5. Web uygulaması aracılığıyla göz atın. ASP.NET bağlantısını, geri bağlantısını ve ardından geri bağlantısıyla ardından javascript bağlantısını seçin.
 
      Web Testi Kaydedicisi, web uygulamasında gezinirken HTTP istek ve yanıt URL'lerini görüntüler.
 
-6.  Seçin **Durdur** test kaydedicisinde düğmesi.
+6. Seçin **Durdur** test kaydedicisinde düğmesi.
 
      Dinamik parametreleri algılama iletişim kutusunda, alınan HTTP yanıtlarında parametre algılama durumunu gösteren bir ilerleme çubuğu görüntülenir.
 
-7.  ASPQuery sayfasındaki CustomQueryString için dinamik parametre otomatik olarak algılanır. Ancak JScriptQuery sayfasındaki CustomQueryString için dinamik parametre algılanmaz.
+7. ASPQuery sayfasındaki CustomQueryString için dinamik parametre otomatik olarak algılanır. Ancak JScriptQuery sayfasındaki CustomQueryString için dinamik parametre algılanmaz.
 
      Seçin **Tamam** bir ayıklama kuralı eklemek için *Querystring.aspx*, ASPQuery sayfasına bağlayarak.
 
@@ -170,15 +170,15 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
      ![Çıkarma kuralına bağlı CustomQueryString](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
-8.  Testi kaydedin.
+8. Testi kaydedin.
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>Algılanmayan dinamik parametreyi yalıtmak için testi çalıştırın
 
-1.  Testi çalıştırın.
+1. Testi çalıştırın.
 
      ![Web performans testini çalıştırın](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  İçin dördüncü istek *JScriptQuery.aspx* sayfasında başarısız olur. Web testine gidin.
+2. İçin dördüncü istek *JScriptQuery.aspx* sayfasında başarısız olur. Web testine gidin.
 
      ![Test sonuçları içinde dinamik parametre hatası](../test/media/web_test_dynamicparameter_runresults.png)
 
@@ -186,11 +186,11 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
      ![Dinamik parametre CustomQueryString şüpheli](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  Web Performans Test Sonuçları Görüntüleyicisi'ne dönün ve seçin *JScriptQuery.aspx* sayfasında başarısız oldu. Daha sonra istek sekmesini seçin, ham veriyi göster onay kutusunu işaretlenmemiş olduğunu doğrulayın, aşağı kaydırın ve CustomQueryString üzerinde Hızlı Bul öğesini seçin.
+3. Web Performans Test Sonuçları Görüntüleyicisi'ne dönün ve seçin *JScriptQuery.aspx* sayfasında başarısız oldu. Daha sonra istek sekmesini seçin, ham veriyi göster onay kutusunu işaretlenmemiş olduğunu doğrulayın, aşağı kaydırın ve CustomQueryString üzerinde Hızlı Bul öğesini seçin.
 
      ![Dinamik parametreyi yalıtmak için Hızlı Bul'u kullanma](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  Test düzenleyicisine baktığımız bakarak biliyoruz, *JScriptQuery.aspx* request's CustomQueryString'in bir değeri atandı: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, ve şüpheli dinamik bölümün "1v0yhyiyr0raa2w4j4pwf5zl" olduğunu. Aranan açılır listesinde, arama dizesinin şüpheli bölümünü kaldırın. Dize "CustomQueryString = jScriptQueryString___".
+4. Test düzenleyicisine baktığımız bakarak biliyoruz, *JScriptQuery.aspx* request's CustomQueryString'in bir değeri atandı: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`, ve şüpheli dinamik bölümün "1v0yhyiyr0raa2w4j4pwf5zl" olduğunu. Aranan açılır listesinde, arama dizesinin şüpheli bölümünü kaldırın. Dize "CustomQueryString = jScriptQueryString___".
 
      Dinamik parametrelere değerleri hataya sahip istekten önce gelen isteklerden isteklerden birini atanır. Bu nedenle, arama onay kutusunu seçin ve istek için önceki görünceye kadar Sonrakini Bul öğesini *Querystring.aspx* istek panelinde vurgulanır. Bul üç kez sonraki seçtikten sonra gerçekleşmelidir.
 
@@ -205,17 +205,17 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
      Artık, nerede hata oluştuğunu ve ayrıca SessionID değerini ayıklamak ihtiyacımız biliyoruz. Bu nedenle SessionID'nin gerçek değerinin görüntülendiği bir dizeyi bulmaya çalışarak hatayı daha da yalıtmak seçmeliyiz ancak çıkarma değeri yalnızca metindir. Koda bakarak var SessionID'nin HiddenFieldSessionID tarafından döndürülen değere eşit olduğunu görebilirsiniz.
 
-5.  Kullanım hızlı arama onay kutusunu temizleyerek ve geçerli isteği seçerek HiddenFieldSessionID üzerinde bulun.
+5. Kullanım hızlı arama onay kutusunu temizleyerek ve geçerli isteği seçerek HiddenFieldSessionID üzerinde bulun.
 
      ![HiddenFieldSession üzerinde Hızlı Bul'u kullanma](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      Bir değer değil aynı dize orijinal web performans testi kaydındakiyle döndürdüğünü dikkat edin. Bu test çalıştırması için döndürülen değer "5w4v3yrse4wa4axrafykqksq" olur ve özgün kayıtta "1v0yhyiyr0raa2w4j4pwf5zl" değeridir. Değer özgün kaydın değeriyle eşleşmediği için hata oluşturulur.
 
-6.  Biz orijinal kayıtta dinamik parametreyi düzeltmek zorunda olduğunuzdan araç çubuğunda kayıtlı sonucu seçin.
+6. Biz orijinal kayıtta dinamik parametreyi düzeltmek zorunda olduğunuzdan araç çubuğunda kayıtlı sonucu seçin.
 
      ![Kayıtlı sonucu seçin](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  Kaydedilen sonuçlar içindeki aynı olan üçüncü isteği seçin *Querystringrequest.aspx* test çalıştırma sonuçlarında yalıtılmış isteği.
+7. Kaydedilen sonuçlar içindeki aynı olan üçüncü isteği seçin *Querystringrequest.aspx* test çalıştırma sonuçlarında yalıtılmış isteği.
 
      ![Kaydedilen sonuçlar içindeki aynı istekte seçin](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -229,7 +229,7 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
      ![Ayıklama kuralı oluşturuldu](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  Seçin **Sonrakini Bul**. İlk eşleşmeyi değiştirmek için gereken ve JScriptQuery sayfası için CustomQueryString parametresi olan sertifikadır.
+8. Seçin **Sonrakini Bul**. İlk eşleşmeyi değiştirmek için gereken ve JScriptQuery sayfası için CustomQueryString parametresi olan sertifikadır.
 
      ![Parametresi için metin bulma ve değiştirme](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
@@ -253,7 +253,7 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
  **Y:** Evet, aşağıdaki yordamı kullanın:
 
-1.  Araç çubuğunda seçin **dinamik parametreleri Web Test Parametrelerine Yükselt** düğmesi.
+1. Araç çubuğunda seçin **dinamik parametreleri Web Test Parametrelerine Yükselt** düğmesi.
 
      Herhangi bir dinamik parametre algılanırsa, algılama işlemi tamamlandıktan sonra **Yükselt dinamik parametreleri web test parametreleri** iletişim kutusu görüntülenir.
 
@@ -261,7 +261,7 @@ Hem algılanabilir hem de algılanamaz bir dinamik parametre göstermek için bi
 
      Bir dinamik parametreyi seçerseniz **Yükselt dinamik parametreleri web test parametreleri** iletişim kutusu, iki isteği Web Performans Test Düzenleyicisi istek ağacında vurgulanan. İlk istek, ayıklama kuralı ekleneceği istek olacaktır. Burada Ayıklanan değerin bağlanacağı ikinci isteğidir.
 
-2.  Seçin veya otomatik olarak ilişkilendirmek istediğiniz dinamik parametrelerin yanındaki onay kutusunu temizleyin. Varsayılan olarak, tüm dinamik parametreler denetlenir.
+2. Seçin veya otomatik olarak ilişkilendirmek istediğiniz dinamik parametrelerin yanındaki onay kutusunu temizleyin. Varsayılan olarak, tüm dinamik parametreler denetlenir.
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>S: Dinamik parametreleri algılamak için Visual Studio'yu yapılandırma gerekiyor mu?
 

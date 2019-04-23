@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050121"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Hatalı Davranan Çok İş Parçacıklı Uygulamalar için Ortak Desenler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Eşzamanlılık görselleştiricisi, geliştiricilerin çok iş parçacıklı uy
   
  Bu sorunu değerlendirirken aşağıdakileri dikkate almanız gerekir:  
   
--   Genel sistem oversubscribed. Sistemdeki diğer işlemler, iş parçacığı öncelik verme, göz önünde bulundurun. İş Parçacıkları görünümü önalım segmente üzerine geldiğinizde, araç ipucu iş parçacığı ve iş parçacığı etkisiz işlemi tanımlayın. Bu işlem mutlaka işleminizi boşaltıldı çalıştınız sırasında yürütülen bir değildir, ancak ne işleminizi karşı önalım baskısı oluşturulan hakkında bir ipucu sağlar.  
+- Genel sistem oversubscribed. Sistemdeki diğer işlemler, iş parçacığı öncelik verme, göz önünde bulundurun. İş Parçacıkları görünümü önalım segmente üzerine geldiğinizde, araç ipucu iş parçacığı ve iş parçacığı etkisiz işlemi tanımlayın. Bu işlem mutlaka işleminizi boşaltıldı çalıştınız sırasında yürütülen bir değildir, ancak ne işleminizi karşı önalım baskısı oluşturulan hakkında bir ipucu sağlar.  
   
--   İşleminizi iş parçacıkları bu aşamada iş yürütme için uygun sayıda nasıl belirlediğini değerlendirin. İşleminizi doğrudan active paralel iş parçacığı sayısını hesaplar, sistem üzerindeki kullanılabilir mantıksal çekirdek sayısı için daha iyi hesabına bu algoritmayı değiştirme göz önünde bulundurun. Eşzamanlılık Çalışma zamanı, görev paralel kitaplığı veya PLINQ kullanırsanız, bu kitaplıklara iş parçacığı sayısını hesaplama işini gerçekleştirir.  
+- İşleminizi iş parçacıkları bu aşamada iş yürütme için uygun sayıda nasıl belirlediğini değerlendirin. İşleminizi doğrudan active paralel iş parçacığı sayısını hesaplar, sistem üzerindeki kullanılabilir mantıksal çekirdek sayısı için daha iyi hesabına bu algoritmayı değiştirme göz önünde bulundurun. Eşzamanlılık Çalışma zamanı, görev paralel kitaplığı veya PLINQ kullanırsanız, bu kitaplıklara iş parçacığı sayısını hesaplama işini gerçekleştirir.  
   
 ## <a name="inefficient-io"></a>Verimli g/ç  
  ![Verimsiz miyim&#47;O](../profiling/media/inefficient-io.png "Inefficient_IO")  

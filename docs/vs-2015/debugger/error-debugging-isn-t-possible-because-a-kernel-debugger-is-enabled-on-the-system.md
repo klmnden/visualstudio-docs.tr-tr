@@ -21,12 +21,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdc000a4ad825be495c28bb59d35f8ef378c563f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056919"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Hata: Birincile hata ayıklama&#39;olası bir çekirdek hata ayıklayıcısı sistemde etkin olduğundan t
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  Yönetilen kod hata ayıklamayı denediğinizde bu ileti oluşur:  
   
--   üzerinde bir [!INCLUDE[win7](../includes/win7-md.md)] veya [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]hata ayıklama modunda çalışmaya sistem.  
+- üzerinde bir [!INCLUDE[win7](../includes/win7-md.md)] veya [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)]hata ayıklama modunda çalışmaya sistem.  
   
--   Uygulama, CLR 2.0, 3.0 veya 3.5 CLR sürümünü kullanır.  
+- Uygulama, CLR 2.0, 3.0 veya 3.5 CLR sürümünü kullanır.  
   
 ## <a name="solution"></a>Çözüm  
   
 #### <a name="to-fix-this-problem"></a>Bu sorunu gidermek için  
   
--   CLR 4.0 veya 4.5 sürümü kullanmak için uygulamanızı yükseltme  
+- CLR 4.0 veya 4.5 sürümü kullanmak için uygulamanızı yükseltme  
   
      —veya—  
   
--   Çekirdek hata ayıklamasını devre dışı bırak ve hata ayıklayın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Çekirdek hata ayıklamasını devre dışı bırak ve hata ayıklayın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
      —veya—  
   
--   Çekirdek hata ayıklayıcı yerine kullanarak hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Çekirdek hata ayıklayıcı yerine kullanarak hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
      —veya—  
   
--   Çekirdek hata ayıklayıcısı kullanıcı modu özel durumlarını devre dışı bırakın.  
+- Çekirdek hata ayıklayıcısı kullanıcı modu özel durumlarını devre dışı bırakın.  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Geçerli oturumda çekirdek hata ayıklamasını devre dışı bırakmak için  
   
--   Komut isteminde, şunları yazın:  
+- Komut isteminde, şunları yazın:  
   
     ```  
     Kdbgctrl.exe -d  
@@ -71,23 +71,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Tüm oturumlardaki (Windows Vista ve Windows 7) çekirdek hata ayıklamasını devre dışı bırakmak için  
   
-1.  Komut isteminde, şunları yazın:  
+1. Komut isteminde, şunları yazın:  
   
     ```  
     bcdedit /debug off   
     ```  
   
-2.  Bilgisayarı yeniden başlatın.  
+2. Bilgisayarı yeniden başlatın.  
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Tüm oturumlardaki (diğer Windows işletim sistemleri) çekirdek hata ayıklamasını devre dışı bırakmak için  
   
-1.  Sistem sürücünüzde Boot.ini bulun (genellikle C:\\). Boot.ini dosyası, gizli ve salt okunur olabilir. Bu nedenle, görmek için aşağıdaki komutu kullanmanız gerekir:  
+1. Sistem sürücünüzde Boot.ini bulun (genellikle C:\\). Boot.ini dosyası, gizli ve salt okunur olabilir. Bu nedenle, görmek için aşağıdaki komutu kullanmanız gerekir:  
   
     ```  
     dir /ASH  
     ```  
   
-2.  Not Defteri'ni kullanarak boot.ini açın ve aşağıdaki seçenekleri kaldırın:  
+2. Not Defteri'ni kullanarak boot.ini açın ve aşağıdaki seçenekleri kaldırın:  
   
     ```  
     /debug  
@@ -95,13 +95,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate  
     ```  
   
-3.  Bilgisayarı yeniden başlatın.  
+3. Bilgisayarı yeniden başlatın.  
   
 #### <a name="to-debug-with-the-kernel-debugger"></a>Çekirdek hata ayıklayıcısı ile hata ayıklamak için  
   
-1.  Çekirdek hata ayıklayıcısı ölçekledikçe, hatalarını ayıklamaya devam etmek isteyip istemediğinizi soran bir ileti görürsünüz. Devam etmek için düğmeye tıklayın.  
+1. Çekirdek hata ayıklayıcısı ölçekledikçe, hatalarını ayıklamaya devam etmek isteyip istemediğinizi soran bir ileti görürsünüz. Devam etmek için düğmeye tıklayın.  
   
-2.  Alma bir `User break exception(Int 3).` bu meydana gelirse, hatalarını ayıklamaya devam etmek için aşağıdaki çekirdek hata ayıklayıcısı komutu yazın:  
+2. Alma bir `User break exception(Int 3).` bu meydana gelirse, hatalarını ayıklamaya devam etmek için aşağıdaki çekirdek hata ayıklayıcısı komutu yazın:  
   
      `gn`  
   

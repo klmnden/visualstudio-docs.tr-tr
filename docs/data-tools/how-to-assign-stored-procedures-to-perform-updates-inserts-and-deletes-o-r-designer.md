@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049848"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama
 
@@ -33,23 +33,23 @@ Varsayılan olarak, bir veritabanı (ekleme, güncelleştirme ve silme) veri LIN
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Bir varlık sınıfı varsayılan davranışı geçersiz kılmak için saklı yordamlar atama
 
-1.  Açık **LINQ to SQL** Tasarımcısı'nda dosya. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
+1. Açık **LINQ to SQL** Tasarımcısı'nda dosya. (Çift **.dbml** dosyası **Çözüm Gezgini**.)
 
-2.  İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** INSERT, Update, kullanma ve/veya silmek istediğiniz saklı yordamları bulun Varlık sınıfı komutları.
+2. İçinde **Sunucu Gezgini** veya **veritabanı Gezgini**, genişletme **saklı yordamlar** INSERT, Update, kullanma ve/veya silmek istediğiniz saklı yordamları bulun Varlık sınıfı komutları.
 
-3.  Saklı yordam üzerine sürükleyin **O/R Tasarımcısı**.
+3. Saklı yordam üzerine sürükleyin **O/R Tasarımcısı**.
 
      Saklı yordam yöntemler bölmesi eklenen bir <xref:System.Data.Linq.DataContext> yöntemi. Daha fazla bilgi için [DataContext yöntemi (O/R Tasarımcısı)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4.  Güncelleştirmeleri gerçekleştirmek için saklı yordam kullanmak istediğiniz varlık sınıfı seçin.
+4. Güncelleştirmeleri gerçekleştirmek için saklı yordam kullanmak istediğiniz varlık sınıfı seçin.
 
-5.  İçinde **özellikleri** penceresinde komut geçersiz kılmayı seçin (**Ekle**, **güncelleştirme**, veya **Sil**).
+5. İçinde **özellikleri** penceresinde komut geçersiz kılmayı seçin (**Ekle**, **güncelleştirme**, veya **Sil**).
 
-6.  Sözcükleri yanındaki üç nokta (...) tıklayın **kullanım çalışma zamanı** açmak için **davranışı Yapılandır** iletişim kutusu.
+6. Sözcükleri yanındaki üç nokta (...) tıklayın **kullanım çalışma zamanı** açmak için **davranışı Yapılandır** iletişim kutusu.
 
-7.  Seçin **özelleştirme**.
+7. Seçin **özelleştirme**.
 
-8.  İstenen saklı yordamda **Özelleştir** listesi.
+8. İstenen saklı yordamda **Özelleştir** listesi.
 
 9. Listesini denetleyin **yöntem bağımsız değişkenleri** ve **sınıfı özellikleri** doğrulamak için **yöntem bağımsız değişkenleri** uygun eşleme **sınıfıözellikleri**. Özgün yöntemi bağımsız değişken eşleme (`Original_<ArgumentName>`) özgün özelliklerine (`<PropertyName> (Original)`) için `Update` ve `Delete` komutları.
 

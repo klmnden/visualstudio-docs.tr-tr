@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045466"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Nasıl yapılır: Visual Studio özel başlangıç sayfası yükseltme
 Visual Studio 2010 yükseltebilir veya Visual Studio 2012 özel başlangıç sayfasına Visual Studio 2015 için aşağıda listelenen adımları izleyin.
@@ -22,19 +22,19 @@ Visual Studio 2010 yükseltebilir veya Visual Studio 2012 özel başlangıç say
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Özel başlangıç sayfası, Visual Studio 2015'e yükseltmek için
 
-1.  Visual Studio 2015 ve Visual Studio 2015 SDK yüklü olduğundan emin olun. VSSDK dan indirebileceğiniz [Microsoft Visual Studio 2013 SDK'sı](https://my.visualstudio.com/Downloads?pid=1436).
+1. Visual Studio 2015 ve Visual Studio 2015 SDK yüklü olduğundan emin olun. VSSDK dan indirebileceğiniz [Microsoft Visual Studio 2013 SDK'sı](https://my.visualstudio.com/Downloads?pid=1436).
 
-2.  Özel şablon projenizi açın. Yükseltilecek projedir bildiren bir ileti görürsünüz. Tıklayın **Tamam** ve yükseltmenin tamamlanması için bekleyin.
+2. Özel şablon projenizi açın. Yükseltilecek projedir bildiren bir ileti görürsünüz. Tıklayın **Tamam** ve yükseltmenin tamamlanması için bekleyin.
 
-3.  Başlangıç sayfası proje hem denetimi projesi için proje özelliklerinde, hedef Framework'ü en az olduğundan emin olun. .NET Framework 4.5.
+3. Başlangıç sayfası proje hem denetimi projesi için proje özelliklerinde, hedef Framework'ü en az olduğundan emin olun. .NET Framework 4.5.
 
-4.  Başlangıç sayfası proje için proje özellikleri hata ayıklama kategorisinde devenv.exe Visual Studio 2015 sürümüne yolunu ayarlayın.
+4. Başlangıç sayfası proje için proje özellikleri hata ayıklama kategorisinde devenv.exe Visual Studio 2015 sürümüne yolunu ayarlayın.
 
-5.  Her iki proje için proje başvuruları, Microsoft.VisualStudio.Shell.11.0 yönelik başvuruları kaldırmanız ve Microsoft.VisualStudio.Shell.14.0 başvurular ekleyin.
+5. Her iki proje için proje başvuruları, Microsoft.VisualStudio.Shell.11.0 yönelik başvuruları kaldırmanız ve Microsoft.VisualStudio.Shell.14.0 başvurular ekleyin.
 
-6.  StartPage.xaml ile XML Düzenleyicisi'ni açın ve aşağıdaki değişiklikleri yapın:
+6. StartPage.xaml ile XML Düzenleyicisi'ni açın ve aşağıdaki değişiklikleri yapın:
 
-    1.  Ad alanlarını güncelleştirin. Aşağıdaki satırları değiştirin:
+    1. Ad alanlarını güncelleştirin. Aşağıdaki satırları değiştirin:
 
         ```
 
@@ -52,4 +52,4 @@ Visual Studio 2010 yükseltebilir veya Visual Studio 2012 özel başlangıç say
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7.  MyControl.xaml açın ve ad alanı başvurusu `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` için `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. MyControl.xaml açın ve ad alanı başvurusu `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` için `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .

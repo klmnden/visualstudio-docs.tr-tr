@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047572"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio'da normal ifadeler kullanma
 
@@ -61,12 +61,12 @@ Bazı örnekler şunlardır:
 |Bir sözcük sınırını eşleştir|\b (bir karakter sınıfı dışında `\b` bir sözcük sınırını belirler ve bir karakter sınıfı içinde `\b` Geri Al ile eşleşir.)|`\bin` "içinde" inside "içinde" değil "pinto" eşleşir.|
 |Satır sonu (yeni bir satır tarafından izlenen diğer bir deyişle, bir satır başı) eşleştirin.|\r?\n|`End\r?\nBegin` "Son" ve "olduğunda yalnızca"End"bir satırdaki son dizeyse ve"Begin"sonraki satırdaki ilk dizedir Begin" ile eşleşir.|
 |Herhangi bir alfasayısal karakteri eşleştir|\w|`a\wd` eşleşme "Ekle" ve "a1d ile eşleşir" ancak "a d".|
-|Bir boşluk karakteriyle Eşleştir.|(? ([^ \r\n])\s)|`Public\sInterface` ' % s'ifadesinin "Ortak arabirim" ile eşleşir.|
+|Bir boşluk karakteriyle Eşleştir.|\s|`Public\sInterface` ' % s'ifadesinin "Ortak arabirim" ile eşleşir.|
 |Bir sayısal karakterle eşleştir|\d|`\d` eşleşiyor ve "3", "3456" 23" içinde" 2"ve"1"içinde"1".|
 |Unicode karakterini eşleştir|\uXXXX nerede XXXX Unicode karakter değerini belirtir.|`\u0065` "e" karakteriyle eşleşir.|
 |Tanımlayıcı eşleştir|\b [\_\w-[0-9]] [\_\w]*\b|Eşleşme "type1" değil "& type1" veya "#define".|
 |Tırnak işaretleri içindeki bir dizeyle eşleştir|((\\".+?\\")&#124;('.+?'))|Tek veya çift tırnak içindeki herhangi bir dizeyle eşleşir.|
-|Onaltılık bir sayıyla eşleştir|\b0[xx]([0-9a-FA-F]\)\b|"0xc67f ile eşleşir" ancak "0xc67fc67f" ile eşleşir.|
+|Onaltılık bir sayıyla eşleştir|\b0[xX]([0-9a-fA-F]+\)\b|"0xc67f ile eşleşir" değil "0xc67g" ile eşleşir.|
 |Eşleşme tamsayıları ve ondalık sayıları|\b[0-9]*\\.\*[0-9]+\b|"1.333" eşleşir.|
 
 > [!TIP]

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18239c01707e63acaf7602ec77dad3bc6b42a884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057894"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Nasıl yapılır: Visual Studio IDE'de gezinme
 
@@ -43,9 +43,9 @@ Geriye doğru gidin ve erişimin sağlandığı ölçütüne göre düzenleyicid
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Kullanım sırasına göre açık dosyalar arasında taşımak için
 
--   Açık belgeler kullanıcılar en son dokunulan sırada etkinleştirmek için basın **Ctrl**+**-**.
+- Açık belgeler kullanıcılar en son dokunulan sırada etkinleştirmek için basın **Ctrl**+**-**.
 
--   Ters sırada açık belgeler etkinleştirmek için basın **Ctrl**+**Shift**+**-**.
+- Ters sırada açık belgeler etkinleştirmek için basın **Ctrl**+**Shift**+**-**.
 
     > [!NOTE]
     > **Geriye doğru gidin** ve **Navigate Forward** üzerinde bulunabilir **görünümü** menüsü.
@@ -63,20 +63,20 @@ Belirli bir dosyayı dosya son erişildiği zaman bağımsız olarak düzenleyic
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Düzenleyicideki belirli dosyalar geçmek için
 
--   Tuşuna **Ctrl**+**sekmesini** görüntülenecek **haldeyken IDE Gezgini'ni**. Basılı **Ctrl** anahtarı ve ENTER tuşuna **sekmesini** kadar art arda, geçiş yapmak istediğiniz dosyayı seçin.
+- Tuşuna **Ctrl**+**sekmesini** görüntülenecek **haldeyken IDE Gezgini'ni**. Basılı **Ctrl** anahtarı ve ENTER tuşuna **sekmesini** kadar art arda, geçiş yapmak istediğiniz dosyayı seçin.
 
     > [!TIP]
     > Hangi geçtiğiniz sırasını tersine çevirmek için **etkin dosyaların** listesinde, basılı **Ctrl**+**Shift** anahtarları ve ENTER tuşuna **sekmesini**.
 
     \- veya -
 
--   Düzenleyici sağ alt köşesinde, seçin **etkin dosyaların** düğmesini ve ardından geçmek için listeden bir dosya seçin.
+- Düzenleyici sağ alt köşesinde, seçin **etkin dosyaların** düğmesini ve ardından geçmek için listeden bir dosya seçin.
 
     \- veya -
 
--   Menü çubuğunda, **penceresi** > **Windows**.
+- Menü çubuğunda, **penceresi** > **Windows**.
 
--   Listesinde, görüntülemek ve ardından istediğiniz dosyayı seçin **etkinleştirme**.
+- Listesinde, görüntülemek ve ardından istediğiniz dosyayı seçin **etkinleştirme**.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Araç Pencereleri IDE içinde gezinme
 
@@ -87,7 +87,7 @@ Belirli bir dosyayı dosya son erişildiği zaman bağımsız olarak düzenleyic
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>IDE'nin belirli araç penceresine geçin
 
--   Tuşuna **Alt**+**F7** görüntülenecek **haldeyken IDE Gezgini'ni**. Basılı **Alt** anahtarı ve ENTER tuşuna **F7** geçmek için istediğinize penceresi tekrar tekrar seçtiğiniz kadar.
+- Tuşuna **Alt**+**F7** görüntülenecek **haldeyken IDE Gezgini'ni**. Basılı **Alt** anahtarı ve ENTER tuşuna **F7** geçmek için istediğinize penceresi tekrar tekrar seçtiğiniz kadar.
 
     > [!TIP]
     > Hangi geçtiğiniz sırasını tersine çevirmek için **etkin aracı Windows** listesinde, basılı **Shift**+**Alt** anahtarları ve ENTER tuşuna **F7**.

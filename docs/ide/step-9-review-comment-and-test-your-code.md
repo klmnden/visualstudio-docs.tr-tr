@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ff907289233bf0a7bea8321df35c8f755f16fe5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049756"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Gözden geçirme, açıklama ve kodunuzu test
 Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını değiştirmeyen bir nottur. Ne yaptığını anlamak için kodunuzu okuyan kişi için kolaylaştırır. Kodunuza yorumlar eklemek, öğrenmek için iyi bir alışkanlıktır. Visual C# içinde iki İleri eğik çizgi (/ /) satırı bir açıklama olarak işaretler. Visual Basic'te, tek tırnak işareti ('), bir satırı yorum olarak işaretlemek için kullanılır. Bir açıklama ekledikten sonra programınızı test edin. Çalıştırın ve sık yakalayın ve erken önce kod daha karmaşık sorunları düzeltmek için projeler üzerinde çalıştığınız sırada kodunuzu test etmek için iyi bir uygulamadır. Bu adlandırılır *yinelemeli sınama*.
@@ -46,7 +46,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
 
 ## <a name="to-add-comments"></a>Yorum eklemek için
 
-1.  Aşağıdaki açıklamayı kodunuza ekleyin.
+1. Aşağıdaki açıklamayı kodunuza ekleyin.
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
@@ -61,7 +61,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
     >
     >  Kod yazarken bir parçacığı etkinleştirmek için yazın ve seçin **sekmesini** anahtarı. Birçok Parçacıklar görüntülenir **IntelliSense** seçtiğiniz neden olan bir pencere **sekmesini** tuşunu iki kez: kod parçacığından önce seçilecek **IntelliSense** penceresinde ve bildirmek için kod parçacığını kullanmak için bir IDE. (IntelliSense'i destekler `if` kod parçacığı, ama `ifelse` kod parçacığı.)
 
-2.  Programı çalıştırmadan önce seçerek programınızı kaydedin **Tümünü Kaydet** gibi görünen araç çubuğu düğmesi.
+2. Programı çalıştırmadan önce seçerek programınızı kaydedin **Tümünü Kaydet** gibi görünen araç çubuğu düğmesi.
 
      ![Tüm araç çubuğu düğmesi Kaydet](../ide/media/express_iconsaveall.png)
 **Tümünü Kaydet** düğmesi
@@ -75,19 +75,19 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
 
 ## <a name="to-test-your-program"></a>Programınızı test etmek için
 
-1.  Seçin **F5** seçin ya da anahtar **hata ayıklamayı Başlat** araç çubuğu düğmesi.
+1. Seçin **F5** seçin ya da anahtar **hata ayıklamayı Başlat** araç çubuğu düğmesi.
 
-2.  Seçin **resim Göster** az önce yazdığınız kodu çalıştırmak için düğme. İlk olarak, programı açar bir **açık dosya** iletişim kutusu. Filtrelerinizi göründüğünü doğrulayın **dosya türü** iletişim kutusunun altındaki açılır listede. Ardından bir resme gidin ve açın. Windows işletim sistemi ile gönderilen örnek resimler çoğunlukla olabilir, *Belgelerim* klasöründe *resimlerim\örnek Resimlerim* klasör.
+2. Seçin **resim Göster** az önce yazdığınız kodu çalıştırmak için düğme. İlk olarak, programı açar bir **açık dosya** iletişim kutusu. Filtrelerinizi göründüğünü doğrulayın **dosya türü** iletişim kutusunun altındaki açılır listede. Ardından bir resme gidin ve açın. Windows işletim sistemi ile gönderilen örnek resimler çoğunlukla olabilir, *Belgelerim* klasöründe *resimlerim\örnek Resimlerim* klasör.
 
     > [!NOTE]
     >  Herhangi bir görüntü görmüyorsanız **bir resim dosyası seçin** iletişim kutusunda, olduğundan emin olun **tüm dosyalar (*.\*)**  filtre iletişim kutusunun alt sağ tarafındaki aşağı açılan listede seçili.
 
-3.  Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle, kullanılan <xref:System.Windows.Forms.TableLayoutPanel> ve <xref:System.Windows.Forms.FlowLayoutPanel> kapsayıcıları: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.
+3. Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle, kullanılan <xref:System.Windows.Forms.TableLayoutPanel> ve <xref:System.Windows.Forms.FlowLayoutPanel> kapsayıcıları: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.
 
      Şimdi, daha büyük resimler, resim görüntüleyicinizin kenarlıklarının dışına gider. Sonraki adımda, resimleri pencereye sığdırmak için kod ekleyeceksiniz.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Sonraki öğretici adımına gitmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
--   Önceki öğretici adımına dönmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

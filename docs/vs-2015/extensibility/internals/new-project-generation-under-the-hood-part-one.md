@@ -1,5 +1,5 @@
 ---
-title: 'Yeni proje oluşturma: Bir altyapı öğeleri, bölüm | Microsoft Docs'
+title: 'Yeni Proje Oluşturma: Bir altyapı öğeleri, bölüm | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,29 +11,29 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054244"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Yeni proje oluşturma: Bir altyapı öğeleri, bölüm
+# <a name="new-project-generation-under-the-hood-part-one"></a>Yeni Proje Oluşturma: Arka Plan, 1. Bölüm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hiç kendi proje türünüzü oluşturmak hakkında düşündüğünüz? Yeni bir proje oluşturduğunuzda, gerçekte ne olacağını merak ediyorsunuz? Şimdi başlık altında bir göz atalım ve gerçekten neler olup bittiğini bakın.  
   
  Visual Studio sizin için koordine eden çeşitli görevler vardır:  
   
--   Tüm kullanılabilir proje türlerinin ağacını gösterir.  
+- Tüm kullanılabilir proje türlerinin ağacını gösterir.  
   
--   Her proje türü için uygulama şablonları listesini görüntüler ve birini seçmenize olanak sağlar.  
+- Her proje türü için uygulama şablonları listesini görüntüler ve birini seçmenize olanak sağlar.  
   
--   Bu proje adı ve yolu gibi uygulama için proje bilgileri toplar.  
+- Bu proje adı ve yolu gibi uygulama için proje bilgileri toplar.  
   
--   Bu, bu bilgileri açın proje fabrikası geçirir.  
+- Bu, bu bilgileri açın proje fabrikası geçirir.  
   
--   Bu, geçerli çözümde proje öğeleri ve klasörleri oluşturur.  
+- Bu, geçerli çözümde proje öğeleri ve klasörleri oluşturur.  
   
 ## <a name="the-new-project-dialog-box"></a>Yeni Proje iletişim kutusu  
  Yeni bir proje için bir proje türü seçtiğinizde tüm başlar. Tıklayarak başlayalım **yeni proje** üzerinde **dosya** menüsü. **Yeni proje** iletişim kutusu görüntülenirse, şöyle bir şey görünümlü:  
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  Zaman **yeni proje** iletişim kutusu açılır ve [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ProjectTemplates klasörü erişir ve alt yapısında oluşturur **proje türleri** ağacıyla bazı değişiklikler:  
   
--   Kök düğümünde **proje türleri** ağaç uygulama şablonu tarafından belirlenir.  
+- Kök düğümünde **proje türleri** ağaç uygulama şablonu tarafından belirlenir.  
   
--   Düğüm adı yerelleştirilmiş olmalıdır ve özel karakterler içerebilir.  
+- Düğüm adı yerelleştirilmiş olmalıdır ve özel karakterler içerebilir.  
   
--   Sıralama düzenini değiştirilebilir.  
+- Sıralama düzenini değiştirilebilir.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Bir proje türü için kök düğümü bulma  
  Visual Studio ProjectTemplates klasörleri erişir, tüm .zip dosyalarını açan ve herhangi bir .vstemplate dosyaları ayıklanır. .Vstemplate dosyası bir uygulama şablonunu açıklayan XML kullanır. Daha fazla bilgi için [yeni proje oluşturma: Altyapı öğeleri, bölüm iki](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

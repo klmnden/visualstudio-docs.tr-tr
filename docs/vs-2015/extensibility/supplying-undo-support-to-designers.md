@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049314"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Tasarımcılara Geri Alma Desteği Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
 ## <a name="obtaining-undo-support-automatically"></a>Otomatik olarak geri alma desteği alma  
  Oluşturduğunuz herhangi bir tasarımcı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otomatik ve tam geri desteğine sahip ise, Tasarımcı:  
   
--   Kullanan bir <xref:System.Windows.Forms.Control> kullanıcı arabirimi için sınıf tabanlı.  
+- Kullanan bir <xref:System.Windows.Forms.Control> kullanıcı arabirimi için sınıf tabanlı.  
   
--   Standart CodeDOM tabanlı kod oluşturma ve ayrıştırma sistem kod oluşturma ve kalıcılığı için kullanır.  
+- Standart CodeDOM tabanlı kod oluşturma ve ayrıştırma sistem kod oluşturma ve kalıcılığı için kullanır.  
   
      Visual Studio CodeDOM desteği ile çalışma hakkında daha fazla bilgi için bkz. [dinamik kaynak kodu oluşturma ve derleme](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ Tasarımcılar, düzenleyiciler gibi genellikle kullanıcılar, bir kod öğesi 
   
 - Bu <xref:System.IServiceProvider> sınıfı aşağıdaki hizmetleri sağlar:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Tasarımcılar kullanarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDOM serileştirme kullanmayı seçebilir <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> ile sağlanan [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] uygulaması olarak <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        Bu durumda, <xref:System.IServiceProvider> sınıfı için sağlanan <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Oluşturucusu uygulaması bu nesne döndürmelidir <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> sınıfı.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Varsayılan değeri kullanmanın tasarımcıları <xref:System.ComponentModel.Design.DesignSurface> tarafından sağlanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tasarım konak varsayılan bir uygulama olmasını garanti edilir <xref:System.ComponentModel.Design.IComponentChangeService> sınıfı.  
   

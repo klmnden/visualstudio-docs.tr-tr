@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047053"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Nasıl yapılır: ClickOnce Güven İstemi Davranışını Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>ClickOnce güven istemi Kayıt Defteri Düzenleyicisi'ni kullanarak etkinleştirmek için  
   
-1.  Kayıt Defteri Düzenleyicisi'ni açın:  
+1. Kayıt Defteri Düzenleyicisi'ni açın:  
   
-    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
+    1. Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
+    2. İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
   
-2.  Aşağıdaki kayıt defteri anahtarını bulun:  
+2. Aşağıdaki kayıt defteri anahtarını bulun:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Anahtar mevcut değilse oluşturun.  
   
-3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, aşağıdaki tabloda gösterilen ilişkili değerleri ile mevcut değil.  
+3. Aşağıdaki alt olarak eklemeniz **dize değeri**, aşağıdaki tabloda gösterilen ilişkili değerleri ile mevcut değil.  
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>ClickOnce güven istemi programlı olarak etkinleştirmek için  
   
-1.  Visual Studio'da Visual Basic veya Visual C# konsol uygulaması oluşturun.  
+1. Visual Studio'da Visual Basic veya Visual C# konsol uygulaması oluşturun.  
   
-2.  Düzenleme için Program.vb veya Program.cs dosyasını açın ve aşağıdaki kodu ekleyin.  
+2. Düzenleme için Program.vb veya Program.cs dosyasını açın ve aşağıdaki kodu ekleyin.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
     key.Close();  
     ```  
   
-3.  Derleme ve uygulamayı çalıştırın.  
+3. Derleme ve uygulamayı çalıştırın.  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>ClickOnce güven istemi kısıtlama  
  Güven istemi kısıtlayabilirsiniz, böylece bu çözümleri kullanıcılar için bir güven karar istenmeden önce kimlik bilinen Authenticode sertifikalar ile imzalanması gerekir.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Kayıt Defteri Düzenleyicisi'ni kullanarak ClickOnce güven istemi kısıtlamak için  
   
-1.  Kayıt Defteri Düzenleyicisi'ni açın:  
+1. Kayıt Defteri Düzenleyicisi'ni açın:  
   
-    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
+    1. Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
+    2. İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
   
-2.  Aşağıdaki kayıt defteri anahtarını bulun:  
+2. Aşağıdaki kayıt defteri anahtarını bulun:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Anahtar mevcut değilse oluşturun.  
   
-3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, aşağıdaki tabloda gösterilen ilişkili değerleri ile mevcut değil.  
+3. Aşağıdaki alt olarak eklemeniz **dize değeri**, aşağıdaki tabloda gösterilen ilişkili değerleri ile mevcut değil.  
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>ClickOnce güven istemi programlı bir şekilde kısıtlamak için  
   
-1.  Visual Studio'da Visual Basic veya Visual C# konsol uygulaması oluşturun.  
+1. Visual Studio'da Visual Basic veya Visual C# konsol uygulaması oluşturun.  
   
-2.  Düzenleme için Program.vb veya Program.cs dosyasını açın ve aşağıdaki kodu ekleyin.  
+2. Düzenleme için Program.vb veya Program.cs dosyasını açın ve aşağıdaki kodu ekleyin.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
     key.Close();  
     ```  
   
-3.  Derleme ve uygulamayı çalıştırın.  
+3. Derleme ve uygulamayı çalıştırın.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>ClickOnce güven istemi devre dışı bırakma  
  Böylece son kullanıcılar kendi güvenlik ilkesinde zaten güvenilmiyor çözümlerini yüklemek için seçeneği sunulmaz güven istemi devre dışı bırakabilirsiniz.  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Kayıt Defteri Düzenleyicisi'ni kullanarak ClickOnce güven istemi devre dışı bırakmak için  
   
-1.  Kayıt Defteri Düzenleyicisi'ni açın:  
+1. Kayıt Defteri Düzenleyicisi'ni açın:  
   
-    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.  
+    1. Tıklayın **Başlat**ve ardından **çalıştırma**.  
   
-    2.  İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
+    2. İçinde **açık** kutusuna `regedit` (veya `regedit32` 32-bit Windows üzerinde) ve ardından **Tamam**.  
   
-2.  Aşağıdaki kayıt defteri anahtarını bulun:  
+2. Aşağıdaki kayıt defteri anahtarını bulun:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Anahtar mevcut değilse oluşturun.  
   
-3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, aşağıdaki tabloda gösterilen ilişkili değerleri ile mevcut değil.  
+3. Aşağıdaki alt olarak eklemeniz **dize değeri**, aşağıdaki tabloda gösterilen ilişkili değerleri ile mevcut değil.  
   
     |Dize değeri alt anahtarı|Değer|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Program aracılığıyla ClickOnce güven istemi devre dışı bırakmak için  
   
-1.  Visual Studio'da Visual Basic veya Visual C# konsol uygulaması oluşturun.  
+1. Visual Studio'da Visual Basic veya Visual C# konsol uygulaması oluşturun.  
   
-2.  Düzenleme için Program.vb veya Program.cs dosyasını açın ve aşağıdaki kodu ekleyin.  
+2. Düzenleme için Program.vb veya Program.cs dosyasını açın ve aşağıdaki kodu ekleyin.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ Son kullanıcıların Windows Forms uygulamaları, Windows Presentation Foundati
   
     ```  
   
-3.  Derleme ve uygulamayı çalıştırın.  
+3. Derleme ve uygulamayı çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   

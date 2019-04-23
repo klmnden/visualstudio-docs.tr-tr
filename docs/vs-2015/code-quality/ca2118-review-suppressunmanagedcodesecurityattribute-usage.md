@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059181"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: SuppressUnmanagedCodeSecurityAttribute kullanımını gözden geçirin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "54770558"
 
  Yerel bilgisayardan yürütme ya da aşağıdaki gruplardan birinin üyesi olduğu sürece varsayılan güvenlik ilkesini yönetilmeyen kodu bir bütünleştirilmiş kod izni vermez:
 
--   Bilgisayar bölge kodu grubum
+- Bilgisayar bölge kodu grubum
 
--   Microsoft güçlü adı kod grubu
+- Microsoft güçlü adı kod grubu
 
--   ECMA tanımlayıcı adı kod grubu
+- ECMA tanımlayıcı adı kod grubu
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu öznitelik kesinlikle gerekli olduğundan emin olmak için kodunuzu dikkatle inceleyin. İle yönetilen kod güvenlik bilginiz ya da bu özniteliği kullanarak güvenlik etkilerini anlamak değil, kodunuzdan kaldırın. Öznitelik gerekliyse, Arayanların kodunuzu amaçla kullanamazsınız emin olmanız gerekir. Kodunuzu yönetilmeyen kod yürütmek için izinlere sahip değilse, bu öznitelik etkiye sahip değildir ve kaldırılması gerekiyor.

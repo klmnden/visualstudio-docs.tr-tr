@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 663665c77a966d793930326ae04f8d30c71de771
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 70fe24a642ef1bb5dc872f2b4e48438a26aaea07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040008"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bir veri kümesine WPF denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-create-the-project"></a>Proje oluşturmak için  
   
-1.  Visual Studio’yu çalıştırın.  
+1. Visual Studio’yu çalıştırın.  
   
-2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-3.  Genişletin **Visual Basic** veya **Visual C#** ve ardından **Windows**.  
+3. Genişletin **Visual Basic** veya **Visual C#** ve ardından **Windows**.  
   
-4.  Seçin **WPF uygulaması** proje şablonu.  
+4. Seçin **WPF uygulaması** proje şablonu.  
   
-5.  İçinde **adı** kutusuna `AdventureWorksProductsEditor` tıklatıp **Tamam**.  
+5. İçinde **adı** kutusuna `AdventureWorksProductsEditor` tıklatıp **Tamam**.  
   
      Visual Studio oluşturur `AdventureWorksProductsEditor` proje.  
   
@@ -79,29 +79,29 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-create-a-dataset"></a>Bir veri kümesini oluşturmak için  
   
-1.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
+1. Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
   
      **Veri kaynakları** penceresi açılır.  
   
-2.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
+2. İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
   
      **Veri kaynağı yapılandırması** Sihirbazı açılır.  
   
-3.  Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı**ve ardından **sonraki**.  
+3. Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı**ve ardından **sonraki**.  
   
-4.  Üzerinde **veritabanı modeli seçin** sayfasında **veri kümesi**ve ardından **sonraki**.  
+4. Üzerinde **veritabanı modeli seçin** sayfasında **veri kümesi**ve ardından **sonraki**.  
   
-5.  Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki seçeneklerden birini seçin:  
+5. Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki seçeneklerden birini seçin:  
   
-    -   AdventureWorksLT örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir haldeyse, onu seçin ve ardından **sonraki**.  
+    - AdventureWorksLT örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir haldeyse, onu seçin ve ardından **sonraki**.  
   
-    -   Tıklayın **yeni bağlantı**ve AdventureWorksLT veritabanına bağlantı oluşturun.  
+    - Tıklayın **yeni bağlantı**ve AdventureWorksLT veritabanına bağlantı oluşturun.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **Evet, bağlantıyı bu adla Kaydet** onay kutusunu işaretleyin ve ardından **sonraki**.  
+6. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfasında **Evet, bağlantıyı bu adla Kaydet** onay kutusunu işaretleyin ve ardından **sonraki**.  
   
-7.  Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları**ve ardından **ürün (SalesLT)** tablo.  
+7. Üzerinde **veritabanı nesnelerinizi seçin** sayfasında **tabloları**ve ardından **ürün (SalesLT)** tablo.  
   
-8.  **Son**'a tıklayın.  
+8. **Son**'a tıklayın.  
   
      Visual Studio, projeye yeni bir AdventureWorksLTDataSet.xsd dosyası ekler ve ilgili ekler **AdventureWorksLTDataSet** öğesinin **veri kaynakları** penceresi. AdventureWorksLTDataSet.xsd dosyası adlı bir türü belirtilmiş veri kümesi tanımlar `AdventureWorksLTDataSet` ve adlı bir TableAdapter `ProductTableAdapter`. Bu kılavuzda daha sonra kullanacağınız `ProductTableAdapter` veri kümesini verilerle doldurma ve değişiklikleri veritabanına geri kaydedin.  
   
@@ -112,32 +112,32 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-load-product-rows-that-have-photos"></a>Fotoğraf içeren ürün satırları yüklemek için  
   
-1.  İçinde **Çözüm Gezgini**, AdventureWorksLTDataSet.xsd dosyasına çift tıklayın.  
+1. İçinde **Çözüm Gezgini**, AdventureWorksLTDataSet.xsd dosyasına çift tıklayın.  
   
      Veri kümesi Tasarımcısı'nı açar.  
   
-2.  Tasarımcıda sağ **Fill,GetData()** seçin ve sorgu **yapılandırma**.  
+2. Tasarımcıda sağ **Fill,GetData()** seçin ve sorgu **yapılandırma**.  
   
      **TableAdapter yapılandırma** Sihirbazı açılır.  
   
-3.  İçinde **bir SQL deyimi girin** sayfasında, aşağıdaki WHERE yan tümcesinden sonra eklemek `SELECT` metin kutusuna deyimi.  
+3. İçinde **bir SQL deyimi girin** sayfasında, aşağıdaki WHERE yan tümcesinden sonra eklemek `SELECT` metin kutusuna deyimi.  
   
     ```  
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'  
     ```  
   
-4.  **Son**'a tıklayın.  
+4. **Son**'a tıklayın.  
   
 ## <a name="define-the-user-interface"></a>Kullanıcı arabirimi tanımlama  
  Çeşitli düğmeler, XAML içinde WPF Tasarımcısı değiştirerek pencereye ekleyin. Bu kılavuzda daha sonra kullanıcıların bu düğmeleri kullanarak ürünleri kayıtları yapılan değişiklikleri kaydedin ve aracılığıyla kaydırma olanak sağlayan bir kod ekleyeceksiniz.  
   
 #### <a name="to-define-the-user-interface-of-the-window"></a>Kullanıcı arabirimi penceresinin tanımlamak için  
   
-1.  İçinde **Çözüm Gezgini**, MainWindow.xaml çift tıklayın.  
+1. İçinde **Çözüm Gezgini**, MainWindow.xaml çift tıklayın.  
   
      WPF Tasarımcısı'nda penceresi açılır.  
   
-2.  İçinde [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] görüntülemek tasarımcısına, arasına aşağıdaki kodu ekleyin `<Grid>` etiketler:  
+2. İçinde [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] görüntülemek tasarımcısına, arasına aşağıdaki kodu ekleyin `<Grid>` etiketler:  
   
     ```  
     <Grid.RowDefinitions>  
@@ -149,64 +149,64 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>  
     ```  
   
-3.  Projeyi oluşturun.  
+3. Projeyi oluşturun.  
   
 ## <a name="createdata-bound-controls"></a>Veri bağlama denetimleri  
  Müşteri kayıtları sürükleyerek görüntüleyen denetimler oluşturma `Product` tablosunda **veri kaynakları** penceresinden WPF tasarımcısına.  
   
 #### <a name="to-create-data-bound-controls"></a>Verilere bağlı denetimler oluşturmak için  
   
-1.  İçinde **veri kaynakları** penceresinde açılan menüsüne tıklayın **ürün** düğümünü seçip alt **ayrıntıları**.  
+1. İçinde **veri kaynakları** penceresinde açılan menüsüne tıklayın **ürün** düğümünü seçip alt **ayrıntıları**.  
   
-2.  Genişletin **ürün** düğümü.  
+2. Genişletin **ürün** düğümü.  
   
-3.  Bu örnekte, bazı alanlar görüntülenmez, bu nedenle aşağıdaki düğümler yanındaki açılır menüyü tıklayın ve seçin **hiçbiri**:  
+3. Bu örnekte, bazı alanlar görüntülenmez, bu nedenle aşağıdaki düğümler yanındaki açılır menüyü tıklayın ve seçin **hiçbiri**:  
   
-    -   ProductCategoryID  
+    - ProductCategoryID  
   
-    -   ProductModelID  
+    - ProductModelID  
   
-    -   ThumbnailPhotoFileName  
+    - ThumbnailPhotoFileName  
   
-    -   ROWGUID  
+    - ROWGUID  
   
-    -   ModifiedDate  
+    - ModifiedDate  
   
-4.  Yanındaki açılır menüyü tıklayın **ThumbNailPhoto** düğümünü seçip alt **görüntü**.  
+4. Yanındaki açılır menüyü tıklayın **ThumbNailPhoto** düğümünü seçip alt **görüntü**.  
   
     > [!NOTE]
     >  Varsayılan olarak, öğeler **veri kaynakları** resimleri temsil eden pencere sahip ayarlamak varsayılan denetim **hiçbiri**. Bu resimler veritabanlarındaki bayt dizisi olarak depolanır ve bayt dizileri her şey basit bir yürütülebilir dosyanın büyük bir uygulamanın bir bayt dizisi içerebilir olmasıdır.  
   
-5.  Gelen **veri kaynakları** penceresinde Sürükle **ürün** kılavuz satırı düğmeleri içeren satırı altında düğüm.  
+5. Gelen **veri kaynakları** penceresinde Sürükle **ürün** kılavuz satırı düğmeleri içeren satırı altında düğüm.  
   
      Visual Studio'nun oluşturduğu verilere bağlı denetimler kümesini tanımlayan XAML **ürünleri** tablo. Ayrıca, veri yükleyen kod oluşturur. Oluşturulan XAML ve kod hakkında daha fazla bilgi için bkz. [Visual Studio'da veri bağlama WPF denetimleri](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  Tasarımcıda metin kutusunun yanındaki tıklatın **ürün kimliği** etiketi.  
+6. Tasarımcıda metin kutusunun yanındaki tıklatın **ürün kimliği** etiketi.  
   
-7.  İçinde **özellikleri** yanındaki onay kutusunu penceresinde **IsReadOnly** özelliği.  
+7. İçinde **özellikleri** yanındaki onay kutusunu penceresinde **IsReadOnly** özelliği.  
   
 ## <a name="navigating-product-records"></a>Ürün kayıtların gezinmesi  
  Kullanıcıların kullanarak ürün kayıtlarda gezinin olanak sağlayan bir kod ekleme **\<** ve **>** düğmeleri.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Kullanıcıların bu ürün kaydı etkinleştirmek için  
   
-1.  Tasarımcıda çift **<** penceresi yüzeyinde düğmesi.  
+1. Tasarımcıda çift **<** penceresi yüzeyinde düğmesi.  
   
      Visual Studio arka plan kod dosyasını açar ve yeni bir oluşturur `backButton_Click` için olay işleyicisi <xref:System.Windows.Controls.Primitives.ButtonBase.Click> olay.  
   
-2.  Değiştirme `Window_Loaded` olay işleyicisi, böylece `ProductViewSource`, `AdventureWorksLTDataSet`, ve `AdventureWorksLTDataSetProductTableAdapter` yöntemi dışında ve formun tamamı için erişilebilir durumdadır. Yalnızca bu forma genel olarak bildirmek ve bunların içinde Ata `Window_Loaded` olay işleyicisi aşağıdakine benzer:  
+2. Değiştirme `Window_Loaded` olay işleyicisi, böylece `ProductViewSource`, `AdventureWorksLTDataSet`, ve `AdventureWorksLTDataSetProductTableAdapter` yöntemi dışında ve formun tamamı için erişilebilir durumdadır. Yalnızca bu forma genel olarak bildirmek ve bunların içinde Ata `Window_Loaded` olay işleyicisi aşağıdakine benzer:  
   
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]  
   
-3.  Aşağıdaki kodu ekleyin `backButton_Click` olay işleyicisi:  
+3. Aşağıdaki kodu ekleyin `backButton_Click` olay işleyicisi:  
   
      [!code-csharp[Data_WPFDATASET#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFDATASET#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#2)]  
   
-4.  İade tasarımcı ve çift **>** düğmesi.  
+4. İade tasarımcı ve çift **>** düğmesi.  
   
-5.  Aşağıdaki kodu ekleyin `nextButton_Click` olay işleyicisi:  
+5. Aşağıdaki kodu ekleyin `nextButton_Click` olay işleyicisi:  
   
      [!code-csharp[Data_WPFDATASET#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]  
@@ -216,11 +216,11 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>Değişiklikleri kaydetmek için ürün kayıtları özelliği eklemek için  
   
-1.  Tasarımcıda çift **değişiklikleri kaydetmek** düğmesi.  
+1. Tasarımcıda çift **değişiklikleri kaydetmek** düğmesi.  
   
      Visual Studio arka plan kod dosyasını açar ve yeni bir oluşturur `saveButton_Click` için olay işleyicisi <xref:System.Windows.Controls.Primitives.ButtonBase.Click> olay.  
   
-2.  Aşağıdaki kodu ekleyin `saveButton_Click` olay işleyicisi:  
+2. Aşağıdaki kodu ekleyin `saveButton_Click` olay işleyicisi:  
   
      [!code-csharp[Data_WPFDATASET#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
@@ -233,28 +233,28 @@ Bu kılavuzda, verilere bağlı denetimler içeren bir WPF uygulaması oluştura
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  Tuşuna **F5**.  
+1. Tuşuna **F5**.  
   
      Uygulamayı derler ve çalıştırır. Aşağıdakileri doğrulayın:  
   
-    -   Metin kutuları, fotoğraf olan ilk ürün kaydın verileri görüntüler. Bu ürün ürün kimliği 713 ve adına sahip **uzun kollu logolu forma, S**.  
+    - Metin kutuları, fotoğraf olan ilk ürün kaydın verileri görüntüler. Bu ürün ürün kimliği 713 ve adına sahip **uzun kollu logolu forma, S**.  
   
-    -   Tıklayabilirsiniz **>** veya **<** diğer ürün Kayıtlarda gezinmek için düğmeler.  
+    - Tıklayabilirsiniz **>** veya **<** diğer ürün Kayıtlarda gezinmek için düğmeler.  
   
-2.  Ürün kayıtların her birinde değişiklik **boyutu** değeri ve ardından **değişiklikleri kaydetmek**.  
+2. Ürün kayıtların her birinde değişiklik **boyutu** değeri ve ardından **değişiklikleri kaydetmek**.  
   
-3.  Uygulamayı kapatın ve ardından tuşlarına basarak uygulamayı yeniden **F5** Visual Studio'da.  
+3. Uygulamayı kapatın ve ardından tuşlarına basarak uygulamayı yeniden **F5** Visual Studio'da.  
   
-4.  Değiştirdiğiniz ürün kaydı için gezinme ve değişiklik kalıcı olduğunu doğrulayın.  
+4. Değiştirdiğiniz ürün kaydı için gezinme ve değişiklik kalıcı olduğunu doğrulayın.  
   
-5.  Uygulamayı kapatın.  
+5. Uygulamayı kapatın.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Bu kılavuzu tamamladıktan sonra aşağıdaki görevleri gerçekleştirebilirsiniz:  
   
--   Nasıl kullanacağınızı öğrenin **veri kaynakları** WPF bağlama için Visual Studio penceresinde başka türde veri kaynaklarını denetler. Daha fazla bilgi için [denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
+- Nasıl kullanacağınızı öğrenin **veri kaynakları** WPF bağlama için Visual Studio penceresinde başka türde veri kaynaklarını denetler. Daha fazla bilgi için [denetimleri bir WCF veri hizmetine WPF bağlama](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
   
--   Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+- Nasıl kullanacağınızı öğrenin **veri kaynakları** Visual Studio'daki WPF denetimlerindeki ilgili verileri (diğer bir deyişle, bir üst-alt ilişkisi veri) görüntülenecek. Daha fazla bilgi için [izlenecek yol: Bir WPF uygulamasında ilgili verileri görüntüleme](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere WPF denetimleri bağlama](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

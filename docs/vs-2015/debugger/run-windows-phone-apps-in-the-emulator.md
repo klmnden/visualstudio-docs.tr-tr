@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052225"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Öykünücüde Windows Phone uygulamaları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
  Visual Studio ile birlikte öykünücü içinde tasarlayabilir, geliştirme, hata ayıklama ve Windows Phone uygulamalarını test etmek için eksiksiz bir ortam sağlar.  
   
-##  <a name="BKMK_run"></a> Bir Windows Phone uygulaması öykünücüde çalıştırma  
+## <a name="BKMK_run"></a> Bir Windows Phone uygulaması öykünücüde çalıştırma  
  Windows Phone Uygulama geliştirirken olsa da, Windows Phone öykünücüsü dağıtın ve uygulamanızı hızlı bir şekilde test etmek için kullanabilirsiniz. Windows Phone Store uygulamanızı yayımlamadan önce uygulamanızın gerçek bir Windows Phone cihazında ancak sınamanızı öneririz. Bu, kullanıcıların bu deneyimi gibi uygulama deneyimi sağlar.  
   
  Bir Windows Phone uygulaması Windows Phone öykünücüsü ilk kez çalıştırdığınızda, aşağıdaki olaylar gerçekleşir:  
@@ -50,17 +50,17 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 > [!TIP]
 >  Emulator'da uygulamanızı test ederken öykünücü açık olarak bırakın ve yeniden hızlı bir şekilde uygulamanızı çalıştırabilmeniz için hata ayıklama oturumları arasında.  
   
-###  <a name="BKMK_vs"></a> Uygulamayı Visual Studio'dan çalıştırma  
+### <a name="BKMK_vs"></a> Uygulamayı Visual Studio'dan çalıştırma  
   
 ##### <a name="to-deploy-and-run-an-app-from-visual-studio"></a>Dağıtma ve uygulamayı Visual Studio'dan çalıştırma  
   
-1.  Visual Studio'da bir Windows Phone projesini açın.  
+1. Visual Studio'da bir Windows Phone projesini açın.  
   
-2.  Üzerinde **standart** araç öykünücü seçeneklerden birini belirleyin.  
+2. Üzerinde **standart** araç öykünücü seçeneklerden birini belirleyin.  
   
      ![Windows Phone öykünücü görüntüleri](../debugger/media/wp-emulator-list.png "WP_Emulator_list")  
   
-3.  Dağıtma ve hata ayıklama ile uygulamanız üzerinde çalıştırma **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat**, veya F5 tuşuna basın.  
+3. Dağıtma ve hata ayıklama ile uygulamanız üzerinde çalıştırma **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat**, veya F5 tuşuna basın.  
   
      Dağıtma ve hata ayıklama olmadan uygulamanız üzerinde çalıştırmak için **hata ayıklama** menüsünde tıklatın **hata ayıklama olmadan Başlat**, ya da Ctrl + F5 tuşlarına basın.  
   
@@ -80,32 +80,32 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Hata ayıklama olmadan bir uygulamayı yeniden başlatmanız  
   
-1.  Öykünücüde, başlangıç ekranında uygulama listesini görüntülemek için geçirme kalmadı.  
+1. Öykünücüde, başlangıç ekranında uygulama listesini görüntülemek için geçirme kalmadı.  
   
-2.  Uygulama listesi, uygulama simgesine dokunun. Uygulamayı hata ayıklama olmadan yeniden başlatır.  
+2. Uygulama listesi, uygulama simgesine dokunun. Uygulamayı hata ayıklama olmadan yeniden başlatır.  
   
 ##### <a name="to-deactivate-a-running-app"></a>Çalışan bir uygulamanın devre dışı bırakmak için  
   
-1.  Uygulamanızı çalıştırmadan önce Visual Studio'daki Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri** açmak için **Proje Tasarımcısı**.  
+1. Uygulamanızı çalıştırmadan önce Visual Studio'daki Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri** açmak için **Proje Tasarımcısı**.  
   
-2.  İçinde **Proje Tasarımcısı**, **hata ayıklama** sayfasında **silinmiş öğe işareti devre dışı bırakma, hata ayıklama sırasında üzerine** bir etkinliği olmayan gitmek için bir uygulama istiyorsanız denetlenmeyen kutuyu durumuna devre dışı bırakıldı. Uygulamayı devre dışı olduğunda kaldırıldı olmasını istiyorsanız onay kutusunu işaretleyin.  
+2. İçinde **Proje Tasarımcısı**, **hata ayıklama** sayfasında **silinmiş öğe işareti devre dışı bırakma, hata ayıklama sırasında üzerine** bir etkinliği olmayan gitmek için bir uygulama istiyorsanız denetlenmeyen kutuyu durumuna devre dışı bırakıldı. Uygulamayı devre dışı olduğunda kaldırıldı olmasını istiyorsanız onay kutusunu işaretleyin.  
   
-3.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**, veya uygulamayı çalıştırmak için F5 tuşuna basın.  
+3. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat**, veya uygulamayı çalıştırmak için F5 tuşuna basın.  
   
-4.  Öykünücüde basın **Başlat** düğmesi. Başlangıç ekranı görünür ve uygulama devre dışı bırakılır. Uygulama ya da bir etkinliği olmayan durumuna geçtiğinde veya ayarına bağlı olarak kaldırıldı **silinmiş öğe işareti devre dışı bırakma, hata ayıklama sırasında üzerine** onay kutusu.  
+4. Öykünücüde basın **Başlat** düğmesi. Başlangıç ekranı görünür ve uygulama devre dışı bırakılır. Uygulama ya da bir etkinliği olmayan durumuna geçtiğinde veya ayarına bağlı olarak kaldırıldı **silinmiş öğe işareti devre dışı bırakma, hata ayıklama sırasında üzerine** onay kutusu.  
   
 ##### <a name="to-reactivate-a-dormant-or-tombstoned-app"></a>Bir etkinliği olmayan veya kaldırıldı uygulaması yeniden etkinleştirmek için  
   
--   Öykünücüde basın **geri** uygulamaya döndürülecek düğmesi. Diğer sayfalara çıkıldığında veya başka bir uygulama açılır, basmanız gerekebilir **geri** uygulamayı yeniden etkinleştirmek için birden çok kez düğmesi.  
+- Öykünücüde basın **geri** uygulamaya döndürülecek düğmesi. Diğer sayfalara çıkıldığında veya başka bir uygulama açılır, basmanız gerekebilir **geri** uygulamayı yeniden etkinleştirmek için birden çok kez düğmesi.  
   
      Hata ayıklama oturumu devam ettirir. Hata ayıklayıcı uygulamadan ayrılmış, hata ayıklama oturumu sürdürmek için F5'e olabilir.  
   
-###  <a name="BKMK_depltool"></a> Uygulama dağıtımı aracı ile uygulamayı çalıştırma  
+### <a name="BKMK_depltool"></a> Uygulama dağıtımı aracı ile uygulamayı çalıştırma  
  Windows Phone uygulama dağıtımı aracı da kullanabilirsiniz (**AppDeploy.exe**) uygulamanızı öykünücüde çalıştırma için. Bu araç, Windows Phone geliştirme araçları yüklediğinizde, yüklü olduğu tek başına bir uygulamadır.  
   
  Daha fazla bilgi için bkz. [dağıtma Windows Phone 8.1 uygulamaları ile uygulama dağıtımı aracı](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
-##  <a name="BKMK_toolbar"></a> Öykünücü araç ile Windows Phone öykünücüsü'nü yapılandırma  
+## <a name="BKMK_toolbar"></a> Öykünücü araç ile Windows Phone öykünücüsü'nü yapılandırma  
  Bu tabloda öykünücü araç çubuğunda kullanılabilir yapılandırma düğmeleri gösterilir.  
   
 |Araç çubuğu düğmeleri|Yapılandırma seçenekleri|  
@@ -114,7 +114,7 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 |![Windows Phone öykünücüsü araç çubuğu üzerinde yön](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**Öykünücü yönlendirmesini yapılandırma**<br /><br /> Windows Phone öykünücüsü yönde üç yönleri birini değiştirebilirsiniz: dikey, yatay sol veya sağ yatay. Öykünücü boyutunu, yönünü değiştirdiğinizde değiştirmez.<br /><br /> Verilerin yönünü değiştirmek için tıklayın **Sola Döndür** düğmesini veya **Sağa Döndür** düğmesi.|  
 |![Windows Phone öykünücüsü araç çubuğundaki seçenekleri boyut](../debugger/media/wp-emulator-size.png "WP_Emulator_size")|**Öykünücü boyutunu yapılandırma**<br /><br /> Ana bilgisayar ekranında öykünücü boyutunu değiştirebilirsiniz. Nokta / inç (DPI) öykünücüsü yakınlaştırma değerinden bağımsız olarak konak İzleyicisi DPI dayanır.<br /><br /> -Öykünücü ekrana sığacak şekilde tıklayın **ekrana Sığdır** düğmesi.<br />-Yakınlaştırma ayarını değiştirmek için tıklayın **yakınlaştırma** düğmesi. **Yakınlaştırma** iletişim kutusu açılır. İçinde **yakınlaştırma** iletişim kutusunda, 33 ile 100 arasında bir yakınlaştırma değeri girin.|  
   
-##  <a name="BKMK_buttons"></a> Öykünücü üzerinde sanal donanım düğmeleri kullanın  
+## <a name="BKMK_buttons"></a> Öykünücü üzerinde sanal donanım düğmeleri kullanın  
  Bir telefonun donanım düğmelerinin kullanımını öykünücü ekranın sağ tarafında sanal donanım düğmeleri kullanarak benzetimini yapar.  
   
 - Tıklayın **güç** görünen açılıp kapatılması benzetimini yapmak için düğme. ' A tıklayın ve telefon kapatma benzetimini yapmak için basılı tutun.  
@@ -133,7 +133,7 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
    ![Windows Phone öykünücüsü düğmelerini](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
-##  <a name="BKMK_tasks_kbd"></a> Öykünücü ile bilgisayar klavyeyi kullanma  
+## <a name="BKMK_tasks_kbd"></a> Öykünücü ile bilgisayar klavyeyi kullanma  
  Öykünücü, geliştirme bilgisayarınızda bir Windows Phone klavyede donanım klavye eşleme destekler. Anahtarları davranışını bir Windows Phone cihazında aynıdır.  
   
  Varsayılan olarak, donanım klavye etkin değil. Bu uygulama, kullanabilmeniz için önce dağıtılmış olması gereken bir kayan klavye eşdeğerdir. Donanım klavye etkinleştirmeden önce öykünücünün anahtar girişini yalnızca denetim anahtarları kabul eder.  
@@ -152,20 +152,20 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
 |F2|BAŞLANGIÇ|Uzun basma işlemlerine beklendiği gibi çalışmayabilir.|  
 |F3|ARAMA||  
 |F4|Windows 10 öykünücüsünde yerel bilgisayarın Klavyesi kullanılmadan değil ve yerel bilgisayarın Klavyesi kullanılmadan arasında geçiş yapar.|Windows 8/8.1 öykünücüsü geçerli değildir.|  
-|F5|Uygulanamaz.||  
+|F5|Geçerli değildir.||  
 |F6|KAMERA YARI|Olan sürenin yarısına ulaşıldığında basıldığında adanmış kamera düğme.|  
 |F7|CAMERA FULL|Adanmış kamera düğme.|  
-|F8|Uygulanamaz.||  
+|F8|Geçerli değildir.||  
 |F9|BİRİMİ||  
 |F10|BİRİM AŞAĞI||  
-|F11|Uygulanamaz.||  
+|F11|Geçerli değildir.||  
 |F12|GÜÇ|Kilit ekranında iki kez etkinleştirmek için F12 tuşuna basın.<br /><br /> Uzun basma işlemlerine beklendiği gibi çalışmayabilir.|  
 |ESC|GERİ|Uzun basma işlemlerine beklendiği gibi çalışmayabilir.|  
 |PAUSE/BREAK|İki durumlu klavye (yalnızca windows 8/8.1 öykünücüsü).|Windows 10 öykünücüsü için geçerli değildir.|  
 |AYARLAMA SAYFASI|Donanım klavye (yalnızca Windows 8/8.1 öykünücünüzde) sağlar.|Windows 10 öykünücüsü için geçerli değildir.|  
 |PAGE DOWN|Donanım klavye (yalnızca Windows 8/8.1 öykünücünüzde) devre dışı bırakır.|Windows 10 öykünücüsü için geçerli değildir.|  
   
-##  <a name="BKMK_checkpoints"></a> Kaydetme ve özel kontrol noktaları yükleme  
+## <a name="BKMK_checkpoints"></a> Kaydetme ve özel kontrol noktaları yükleme  
  Öykünücü'nın durumunun bir anlık görüntüsünü kullanarak kaydedin **kontrol noktaları** öykünücü'nın sekmesinde **ek araçlar**. Bu özellik, sık sık aynı verileri ve ayarları ile uygulamanızı test yararlıdır.  
   
  Örneğin, uygulamanızı birkaç kişi gerektiriyorsa, kişi kayıtlarını bir kez oluşturun ve bir anlık görüntüsünü öykünücüsü. Aksi takdirde öykünücü her başlattığınızda kişi kayıtlarını yeniden oluşturmanız gerekir.  
@@ -186,7 +186,7 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
   ![Windows Phone öykünücüsü'nü kontrol noktaları sekmesinde](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
-##  <a name="BKMK_tasks_shot"></a> Ekran görüntüleri öykünücüsünde yakalama  
+## <a name="BKMK_tasks_shot"></a> Ekran görüntüleri öykünücüsünde yakalama  
  Windows Phone uygulamalarınızın ekran görüntülerini ek araçlar penceresinden ekran aracını kullanarak oluşturabilirsiniz. Aracı, çalışan öykünücüsü çözümleme eşleşen PNG dosyaları oluşturur.  
   
  ![Ekran görüntüleri Windows Phone öykünücüsü](../debugger/media/wp-emulator-screenshots.png "WP_Emulator_screenshots")  
@@ -217,6 +217,6 @@ Windows Phone öykünücü hata ayıklama ve fiziksel bir cihaz olmadan bilgisay
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Kare hızı sayaçları öykünücüsünde ekran görüntüleri yakalamayı önce devre dışı bırakmak için  
   
--   Visual Studio'da bir yayın yapısı belirtmek. Yayın derlemesi belirttikten sonra uygulamanızı seçerek başlatın. **Dağıt _[uygulama adı]_**  bağlantısını **derleme** menüsü.  
+- Visual Studio'da bir yayın yapısı belirtmek. Yayın derlemesi belirttikten sonra uygulamanızı seçerek başlatın. **Dağıt _[uygulama adı]_**  bağlantısını **derleme** menüsü.  
   
--   Alternatif olarak, değerini ayarlar app.xaml.cs veya app.xaml.vb dosyasında kod satırı yorum yapabilecek `EnableFrameRateCounter` için `true`.
+- Alternatif olarak, değerini ayarlar app.xaml.cs veya app.xaml.vb dosyasında kod satırı yorum yapabilecek `EnableFrameRateCounter` için `true`.

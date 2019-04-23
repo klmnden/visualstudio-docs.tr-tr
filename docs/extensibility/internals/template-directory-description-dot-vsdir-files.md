@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050368"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Şablon Dizin Açıklaması (.Vsdir) Dosyaları
 Bir şablon dizin açıklaması (.vsdir) tümleşik geliştirme ortamı (IDE) klasörleri, sihirbaz .vsz dosyasına ve iletişim kutularında projenizle ilişkili şablon dosyaları görüntülemek için etkinleştiren bir metin dosyası dosyasıdır. İçeriği, her dosya veya klasör için bir kayıt içerir. Tüm .vsdir dosyalarını başvurulan bir konumda, yalnızca bir .vsdir dosyası birden çok klasör, sihirbazlar veya şablon dosyalarını tanımlamak için genellikle bulunmakla birleştirilir.
@@ -50,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Sihirbaz dosyası oluşturduğunuzda, aşağıdaki sorunları dikkate almanız gereken.
 
--   Kendisi için anlamlı veri bulunmayan gerekli olmayan alan yer tutucu olarak 0 (sıfır) içermelidir.
+- Kendisi için anlamlı veri bulunmayan gerekli olmayan alan yer tutucu olarak 0 (sıfır) içermelidir.
 
--   Yerelleştirilmiş adı sağlanmazsa, göreli yol adı sihirbaz dosyasında kullanılır.
+- Yerelleştirilmiş adı sağlanmazsa, göreli yol adı sihirbaz dosyasında kullanılır.
 
--   DLLPath clsidPackage simge konumu için geçersiz kılar.
+- DLLPath clsidPackage simge konumu için geçersiz kılar.
 
--   Herhangi bir simge tanımlanmazsa, IDE yerine bu uzantıya sahip bir dosya için varsayılan simgeyi koyar.
+- Herhangi bir simge tanımlanmazsa, IDE yerine bu uzantıya sahip bir dosya için varsayılan simgeyi koyar.
 
--   Önerilen taban adı verilmezse, 'Project' kullanılır.
+- Önerilen taban adı verilmezse, 'Project' kullanılır.
 
--   .Vsz dosyaları, klasörleri ve şablon dosyalarını silerseniz, aynı zamanda ilişkili kayıtlarını .vsdir dosyasından kaldırmanız gerekir.
+- .Vsz dosyaları, klasörleri ve şablon dosyalarını silerseniz, aynı zamanda ilişkili kayıtlarını .vsdir dosyasından kaldırmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Sihirbazlar](../../extensibility/internals/wizards.md)

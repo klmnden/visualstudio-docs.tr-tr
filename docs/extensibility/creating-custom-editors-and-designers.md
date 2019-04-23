@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057439"
 ---
 # <a name="create-custom-editors-and-designers"></a>Özel düzenleyiciler ve tasarımcılar oluşturma
+
 Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenleyici barındırabilirsiniz:
 
 - Visual Studio çekirdek Düzenleyicisi
@@ -29,10 +30,11 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
 
 - Tasarımcılar
 
-  Aşağıdaki bilgileri Düzenleyicisi ihtiyacınız türünü seçmenize yardımcı olur.
+Aşağıdaki bilgileri Düzenleyicisi ihtiyacınız türünü seçmenize yardımcı olur.
 
 ## <a name="types-of-editor"></a>Düzenleyici türleri
- Visual Studio çekirdek Düzenleyicisi hakkında daha fazla bilgi için bkz. [düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md).
+
+Visual Studio çekirdek Düzenleyicisi hakkında daha fazla bilgi için bkz. [düzenleyici ve dil hizmetlerini genişletme](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Özel düzenleyiciler
  Özel bir düzenleyici, özel durumlarda çalışmak üzere tasarlanmış bir uygulamadır. Örneğin, okumak ve Microsoft Exchange server gibi belirli bir depoya veri yazmak için işlev, bir düzenleyici oluşturabilirsiniz. Yalnızca, proje türü ile birlikte çalışan bir düzenleyici istediğiniz ya da bir düzenleyici istiyorsanız, yalnızca birkaç belirli komutları olan özel bir düzenleyici seçin. Ancak, kullanıcıların standart düzenlemek için özel bir düzenleyici kullanmanız mümkün olmayacaktır unutmayın [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeleri.
@@ -70,24 +72,36 @@ Visual Studio tümleşik geliştirme ortamı (IDE), farklı türde bir düzenley
    Gömülü olması, bir ana penceresi için dış düzenleyici oluşturma ve sonra çağrı gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> yöntemi ve kümesi <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> numaralandırma değerini `DP_External`. Düzenleyici eklenemiyor, IDE otomatik olarak için ayrı bir pencere oluşturur.
 
 ## <a name="in-this-section"></a>Bu Bölümde
-- [İzlenecek yol: Özel bir düzenleyici oluşturmak](../extensibility/walkthrough-creating-a-custom-editor.md) özel düzenleyici oluşturma açıklanır.
 
-- [İzlenecek yol: Özellikler eklemek için özel bir düzenleyici](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) özellikler için özel bir düzenleyici ekleme işlemi açıklanmaktadır.
+[İzlenecek yol: Bir özel düzenleyici oluşturma](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Bir özel düzenleyici oluşturma açıklanır.
 
-- [Tasarımcı başlatma ve meta verileri yapılandırma](../extensibility/designer-initialization-and-metadata-configuration.md) bir designer başlatılmaya açıklanmaktadır.
+[İzlenecek yol: Özel bir düzenleyici özellikleri ekleyin](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Özellikler için özel bir düzenleyici ekleme işlemi açıklanmaktadır.
 
-- [Tasarımcılara geri alma desteği sağlamak](../extensibility/supplying-undo-support-to-designers.md) tasarımcıları için geri alma desteği açıklanmaktadır.
+[Tasarımcı başlatma ve meta verileri yapılandırma](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Bir designer başlatılmaya açıklanmaktadır.
 
-- [Özel düzenleyicilerde söz dizimi renklendirmesi](../extensibility/syntax-coloring-in-custom-editors.md) sözdizimi çekirdek Düzenleyicisi'nde ve özel düzenleyicilerde renklendirme arasındaki farkı açıklar.
+[Tedarik tasarımcılara geri alma desteği](../extensibility/supplying-undo-support-to-designers.md)\
+Tasarımcılar için geri alma desteği açıklanmaktadır.
 
-- [Veri ve belge görünümü özel düzenleyicilerde belge](../extensibility/document-data-and-document-view-in-custom-editors.md) nasıl özel düzenleyicilerde belge verileri ve belge görünümleri uygulanacağını açıklar.
+[Özel düzenleyicilerde söz dizimi renklendirmesi](../extensibility/syntax-coloring-in-custom-editors.md)\
+Sözdizimi çekirdek Düzenleyicisi'nde ve özel düzenleyicilerde renklendirme arasındaki farkı açıklar.
+
+[Belge verileri ve özel düzenleyicilerde belge görünümü](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Özel düzenleyicilerde belge verileri ve belge görünümleri uygulamak açıklanmaktadır.
 
 ## <a name="related-sections"></a>İlgili bölümler
-- [Eski arabirimleri Düzenleyicisi'nde](../extensibility/legacy-interfaces-in-the-editor.md) çekirdek Düzenleyici yoluyla eski API erişimi açıklar.
 
-- [Eski dil hizmeti geliştirme](../extensibility/internals/developing-a-legacy-language-service.md) dil hizmeti ekleme açıklanmaktadır.
+[Eski arabirimleri Düzenleyicisi](../extensibility/legacy-interfaces-in-the-editor.md)\
+Çekirdek Düzenleyici yoluyla eski api'de açıklanmaktadır.
 
-- [Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md) geri kalanını eşleşen kullanıcı Arabirimi öğeleri oluşturma açıklanır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Eski dil hizmeti geliştirme](../extensibility/internals/developing-a-legacy-language-service.md)\
+Dil hizmeti ekleme açıklanmaktadır.
+
+[Visual Studio'nun diğer bölümlerini genişletme](../extensibility/extending-other-parts-of-visual-studio.md)\
+Kalan eşleşen kullanıcı Arabirimi öğeleri oluşturma açıklanır [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Ayrıca bkz.
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

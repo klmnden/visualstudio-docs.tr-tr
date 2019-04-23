@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051628"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Nasıl yapılır: IDE Erişilebilirlik Seçeneklerini Ayarlama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "59670335"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Metin tabanlı araç pencereleri ve düzenleyicileri metin boyutunu değiştirmek için  
   
-1.  Gelen **Araçları** menüsünde seçin **seçenekleri**.  
+1. Gelen **Araçları** menüsünde seçin **seçenekleri**.  
   
-2.  Seçin **yazı tipleri ve renkler** üzerinde **ortam** klasör.  
+2. Seçin **yazı tipleri ve renkler** üzerinde **ortam** klasör.  
   
-3.  Üzerinde bir seçenek belirleyin **ayarlarını göster** açılan menüsü.  
+3. Üzerinde bir seçenek belirleyin **ayarlarını göster** açılan menüsü.  
   
      Düzenleyicide metni için yazı tipi boyutunu değiştirmek için seçin **metin düzenleyici**.  
   
@@ -56,16 +56,16 @@ ms.locfileid: "59670335"
   
      Deyim tamamlama açılır pencereleri metin yazı tipi boyutunu değiştirmek için seçin **deyim tamamlama**.  
   
-4.  Gelen **görüntü öğeleri**seçin **düz metin**.  
+4. Gelen **görüntü öğeleri**seçin **düz metin**.  
   
-5.  İçinde **yazı tipi**, yeni bir yazı tipi seçin.  
+5. İçinde **yazı tipi**, yeni bir yazı tipi seçin.  
   
-6.  İçinde **boyutu**, yeni bir yazı tipi boyutu seçin.  
+6. İçinde **boyutu**, yeni bir yazı tipi boyutu seçin.  
   
     > [!NOTE]
     >  Metin tabanlı araç pencereleri ve düzenleyiciler için metin boyutu Sıfırla tercih **Varsayılanlar kullan**.  
   
-7.  **Tamam**’ı seçin.  
+7. **Tamam**’ı seçin.  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>IDE içinde kullanılan renkleri değiştirme  
  Metin, kenar boşluğu göstergeleri, boşluk ve düzenleyicide kod öğeleri için varsayılan renkleri değiştirmek seçebilirsiniz.  
@@ -75,40 +75,40 @@ ms.locfileid: "59670335"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Düzenleyicide öğelerinin rengini değiştirmek için  
   
-1.  Gelen **Araçları** menüsünde seçin **seçenekleri**.  
+1. Gelen **Araçları** menüsünde seçin **seçenekleri**.  
   
-2.  Seçin **yazı tipleri ve renkler** gelen **ortam** klasör.  
+2. Seçin **yazı tipleri ve renkler** gelen **ortam** klasör.  
   
-3.  İçinde **ayarlarını göster**, seçin **metin düzenleyici**.  
+3. İçinde **ayarlarını göster**, seçin **metin düzenleyici**.  
   
-4.  Gelen **görüntü öğeleri**, görüntü gibi değiştirmek istediğiniz öğeyi seçin **düz metin**, **gösterge kenar boşluğunu**, **görünür boşluk**, **HTML öznitelik adı**, veya **XML özniteliği**.  
+4. Gelen **görüntü öğeleri**, görüntü gibi değiştirmek istediğiniz öğeyi seçin **düz metin**, **gösterge kenar boşluğunu**, **görünür boşluk**, **HTML öznitelik adı**, veya **XML özniteliği**.  
   
-5.  Görüntü ayarlarını, aşağıdaki seçeneklerden birini seçin: **Öğe ön plan**, **öğesi arka plan**, ve **kalın**.  
+5. Görüntü ayarlarını, aşağıdaki seçeneklerden birini seçin: **Öğe ön plan**, **öğesi arka plan**, ve **kalın**.  
   
-6.  **Tamam**’ı seçin.  
+6. **Tamam**’ı seçin.  
   
 ## <a name="toolbars"></a>Araç Çubukları  
  Araç çubuklarının kullanılabilirliğini ve erişilebilirliğini geliştirmek için araç çubuğu düğmeleri için metin ekleyebilirsiniz.  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>Araç çubuğu düğmeleri için metin atamak için  
   
-1.  Gelen **Araçları** menüsünde seçin **Özelleştir**.  
+1. Gelen **Araçları** menüsünde seçin **Özelleştir**.  
   
-2.  İçinde **Özelleştir** iletişim kutusunda **komutları** sekmesi.  
+2. İçinde **Özelleştir** iletişim kutusunda **komutları** sekmesi.  
   
-3.  Seçin **araç** metnini görüntülemek için istediğinize düğmesini içeren bir araç çubuğu adı seçin.  
+3. Seçin **araç** metnini görüntülemek için istediğinize düğmesini içeren bir araç çubuğu adı seçin.  
   
-4.  Listede, değiştirmek istediğiniz komutu seçin.  
+4. Listede, değiştirmek istediğiniz komutu seçin.  
   
-5.  Seçin **seçimi değiştirme**.  
+5. Seçin **seçimi değiştirme**.  
   
-6.  Seçin **resim ve metin**.  
+6. Seçin **resim ve metin**.  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>Metin görüntüleniyor düğmeyi değiştirmek için  
   
-1.  Yeniden seçin **seçimi değiştirme**.  
+1. Yeniden seçin **seçimi değiştirme**.  
   
-2.  Bitişik içinde **adı**, Ekle, seçili düğme için yeni bir resim yazısı sağlayın.  
+2. Bitişik içinde **adı**, Ekle, seçili düğme için yeni bir resim yazısı sağlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'nun erişilebilirlik özellikleri](../../ide/reference/accessibility-features-of-visual-studio.md)   

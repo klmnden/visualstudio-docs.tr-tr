@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042387"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce Dağıtımları içinde belirli hataları giderme
 Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve her sorunu gidermek için adımları sağlar.
@@ -81,9 +81,9 @@ Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler
 
  Şunları yapmanız:
 
--   Dağıtım bildirimi kimliğini, uygulama bildiriminin kimlik ve kimlik EXE ana uygulamanın tüm benzersiz olduğundan emin olun.
+- Dağıtım bildirimi kimliğini, uygulama bildiriminin kimlik ve kimlik EXE ana uygulamanın tüm benzersiz olduğundan emin olun.
 
--   Dosya yolu 100 karakterden uzun olmadığını doğrulayın. Uygulamanız çok uzun dosya yollarını içeriyorsa, depolamanın en fazla yol sınırlamalar aşabilir. Yolları kısaltmayı deneyin ve yeniden yükleyin.
+- Dosya yolu 100 karakterden uzun olmadığını doğrulayın. Uygulamanız çok uzun dosya yollarını içeriyorsa, depolamanın en fazla yol sınırlamalar aşabilir. Yolları kısaltmayı deneyin ve yeniden yükleyin.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Uygulama yapılandırma dosyasında PrivatePath ayarları onaylanmaz
  PrivatePath (Fusion algılama yolları) kullanmak için uygulama tam güven izni istemeniz gerekir. Uygulama bildiriminin tam güven isteme ve yeniden deneyin değiştirmeyi deneyin.
@@ -112,9 +112,9 @@ Bu makalede, dağıtırken oluşabilecek aşağıdaki yaygın hataları listeler
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Sertifika deponuza ve alınan boş ileti kutusu içinde bir sertifika ile oturum açmaya
  İçinde **imzalama** iletişim kutusunda, şunları yapmalısınız:
 
--   Seçin **depolanan bir sertifika ile oturum**, ve
+- Seçin **depolanan bir sertifika ile oturum**, ve
 
--   Listeden bir sertifika seçin; ilk sertifikayı varsayılan seçim değil.
+- Listeden bir sertifika seçin; ilk sertifikayı varsayılan seçim değil.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>"Oturum yok" düğmesine tıklayarak bir özel durum neden olur
  Bu sorunun bilinen bir hatadır. Tüm [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bildirimlerinin imzalanmasını gerekli. İmzalama seçeneklerden birini seçin ve ardından **Tamam**.

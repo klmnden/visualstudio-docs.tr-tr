@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052408"
 ---
 # <a name="customize-your-build"></a>Derlemenizi özelleştirme
 
@@ -51,6 +51,7 @@ Bununla birlikte, artık yeni bir özellik tek bir adımda her proje için bir t
     </PropertyGroup>
    </Project>
    ```
+
 3. MSBuild Çalıştır. Projenizin mevcut aktarımlarının *Microsoft.Common.props* ve *Microsoft.Common.targets* dosyasını bulun ve içe aktarın.
 
 ### <a name="search-scope"></a>Arama kapsamı

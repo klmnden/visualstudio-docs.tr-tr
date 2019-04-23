@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618841"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062002"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO eklentileri programlama kullanmaya başlayın
   VSTO eklentileri, Microsoft Office uygulamalarını otomatikleştirmek, uygulamanın özelliklerini genişletmek ve uygulamanın kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz. Visual Studio kullanarak oluşturabileceğiniz nasıl VSTO Eklentileri Office çözümlerinin diğer türleri için karşılaştırma hakkında bilgi için bkz [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618841"
 
  Belirli Microsoft Office uygulamasının nesne modelleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)
+- [Excel nesne modeline genel bakış](../vsto/excel-object-model-overview.md)
 
--   [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)
+- [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md)
 
--   [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)
+- [Outlook nesne modeline genel bakış](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath çözümleri](../vsto/infopath-solutions.md)
+- [InfoPath çözümleri](../vsto/infopath-solutions.md)
 
--   [PowerPoint çözümleri](../vsto/powerpoint-solutions.md)
+- [PowerPoint çözümleri](../vsto/powerpoint-solutions.md)
 
--   [Proje çözümleri](../vsto/project-solutions.md)
+- [Proje çözümleri](../vsto/project-solutions.md)
 
--   [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)
+- [Visio nesne modeline genel bakış](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Uygulamalar kullanıcı arabirimini özelleştirme
  Bir VSTO eklentisi kullanarak konak uygulamanın kullanıcı arabirimini özelleştirmek için birçok farklı yol vardır:

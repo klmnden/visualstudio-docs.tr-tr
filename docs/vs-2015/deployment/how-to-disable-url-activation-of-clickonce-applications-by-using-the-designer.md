@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043855"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Nasıl yapılır: Tasarımcıyı Kullanarak ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Genellikle, bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama 
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Uygulamanız için URL etkinleştirmeyi devre dışı bırakmak için  
   
-1.  İçinde proje adınıza sağ **Çözüm Gezgini**, tıklatıp **özellikleri**.  
+1. İçinde proje adınıza sağ **Çözüm Gezgini**, tıklatıp **özellikleri**.  
   
-2.  Üzerinde **özellikleri** sayfasında **Yayımla** sekmesi.  
+2. Üzerinde **özellikleri** sayfasında **Yayımla** sekmesi.  
   
-3.  Tıklayın **seçenekleri**.  
+3. Tıklayın **seçenekleri**.  
   
-4.  Tıklayın **bildirimlerini**.  
+4. Tıklayın **bildirimlerini**.  
   
-5.  Etiketli onay kutusunu seçin **engelleyecek bir URL ile etkinleştirilmekte olan uygulamanın**.  
+5. Etiketli onay kutusunu seçin **engelleyecek bir URL ile etkinleştirilmekte olan uygulamanın**.  
   
-6.  Uygulamanızı dağıtın.  
+6. Uygulamanızı dağıtın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulamalarını Yayımlama](../deployment/publishing-clickonce-applications.md)

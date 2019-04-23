@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057102"
 ---
 # <a name="managing-references-in-a-project"></a>Bir projedeki başvuruları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
   
  Aşağıdaki bileşenler/hizmet türlerini başvuru yapabilir:  
   
--   Windows Store app başvuruları  
+- Windows Store app başvuruları  
   
--   .NET framework sınıf kitaplıkları veya derlemeleri  
+- .NET framework sınıf kitaplıkları veya derlemeleri  
   
--   COM bileşenleri  
+- COM bileşenleri  
   
--   Diğer derlemeleri veya aynı çözüm içindeki projelerin sınıf kitaplıkları  
+- Diğer derlemeleri veya aynı çözüm içindeki projelerin sınıf kitaplıkları  
   
--   XML Web hizmetleri  
+- XML Web hizmetleri  
   
 ## <a name="windows-store-app-references"></a>Windows Store App başvuruları  
   
-### <a name="project-references"></a>Proje başvuruları  
+### <a name="project-references"></a>Proje Başvuruları  
  Windows 10'u hedefleyen Evrensel Windows Platformu (UWP) projeleri çözümdeki diğer UWP projeleri veya Windows Store projeleri veya ikilileri başvuruları hedefleyen oluşturabilirsiniz [!INCLUDE[win81](../includes/win81-md.md)]bu projeleri, kullanımdan kaldırılan API'leri kullanmıyorsa, sağlanan Windows 10'da. Daha fazla bilgi için [UWP için Windows çalışma zamanı 8'den taşıma](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx).  
   
  Yeniden hedeflemek seçerseniz [!INCLUDE[win81](../includes/win81-md.md)] projeleri Windows 10 için bkz. [yükseltme Visual Studio projelerini taşıma, geçirme ve](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)  
@@ -63,9 +63,9 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
   
  Belirlerseniz, uygulamanız tarafından başvurulan uzantı SDK'SİNİN desteklenmediğini ve ardından aşağıdaki adımları gerçekleştirmeniz gerekir:  
   
-1.  Hataya neden olan projenin adını arayın. Projenizin hedeflediği platform, proje adı yanında, parantez içinde belirtilir. Örneğin, **MyProjectName (Windows 8.1)** projenizi anlamına **MyProjectName** platform sürümünü hedeflediği [!INCLUDE[win81](../includes/win81-md.md)].  
+1. Hataya neden olan projenin adını arayın. Projenizin hedeflediği platform, proje adı yanında, parantez içinde belirtilir. Örneğin, **MyProjectName (Windows 8.1)** projenizi anlamına **MyProjectName** platform sürümünü hedeflediği [!INCLUDE[win81](../includes/win81-md.md)].  
   
-2.  Desteklenmeyen uzantı SDK'sine sahip satıcının sitesine gidin ve projenizin hedeflediği platformun sürümü ile uyumlu olan bağımlılıkları içeren uzantı SDK'SİNİN sürümünü yükleyin.  
+2. Desteklenmeyen uzantı SDK'sine sahip satıcının sitesine gidin ve projenizin hedeflediği platformun sürümü ile uyumlu olan bağımlılıkları içeren uzantı SDK'SİNİN sürümünü yükleyin.  
   
     > [!NOTE]
     >  Bir uzantı SDK bağımlılıklar başka uzantı SDK'lar üzerinde olup bulmanın bir yolu olan Visual Studio'yu yeniden başlatın, yeni bir C# Windows Store projesi oluşturun, projeye sağ tıklayın ve seçin **Başvuru Ekle**Git  **Windows** sekmesine gidin **uzantıları** alt sekmesinde, uzantı SDK'yı seçip sağ bölmede bakmak **başvuru Yöneticisi**. Bağımlılıkları varsa, burada listelenir.  
@@ -73,20 +73,20 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
     > [!IMPORTANT]
     >  Windows 10 projenizin hedeflediği ve önceki adımda yüklenen uzantı SDK'de Microsoft Visual C++ çalışma zamanı paketinde bağımlılık vardır, Microsoft Visual C++ çalışma zamanı sürümü Windows 10 ile uyumlu olan v14.0 olduğu ve yüklü Visual Studio 2015 ile.  
   
-3.  Önceki adımda yüklenen uzantı SDK'de başka uzantı SDK'lar üzerinde bağımlılıkları varsa, sdk'lerinde bağımlılıklar siteleri için Git ve platformun sürümü ile uyumlu olan bu bağımlılıkların sürümlerini yükleyin, projenin hedeflediği.  
+3. Önceki adımda yüklenen uzantı SDK'de başka uzantı SDK'lar üzerinde bağımlılıkları varsa, sdk'lerinde bağımlılıklar siteleri için Git ve platformun sürümü ile uyumlu olan bu bağımlılıkların sürümlerini yükleyin, projenin hedeflediği.  
   
-4.  Visual Studio'yu yeniden başlatın ve uygulamanızı açın.  
+4. Visual Studio'yu yeniden başlatın ve uygulamanızı açın.  
   
-5.  Sağ **başvuruları** hataya ve proje düğümünde **Başvuru Ekle**  
+5. Sağ **başvuruları** hataya ve proje düğümünde **Başvuru Ekle**  
   
-6.  Tıklayın **Windows** sekmesini ve ardından **uzantıları** alt sekmesine, ardından eski uzantı Sdk'lerinin onay kutularının işaretini kaldırın ve yeni uzantı Sdk'lerinin onay kutularını işaretleyin. **Tamam**'ı tıklatın.  
+6. Tıklayın **Windows** sekmesini ve ardından **uzantıları** alt sekmesine, ardından eski uzantı Sdk'lerinin onay kutularının işaretini kaldırın ve yeni uzantı Sdk'lerinin onay kutularını işaretleyin. **Tamam**'ı tıklatın.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Tasarım zamanında başvuru ekleme  
  Projenizde bir derlemeye bir başvuru yaptığınızda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] derleme aşağıdaki konumlarda arar:  
   
--   Geçerli proje dizini. (Kullanarak bu derlemeleri bulabilirsiniz **Gözat** sekmesini.)  
+- Geçerli proje dizini. (Kullanarak bu derlemeleri bulabilirsiniz **Gözat** sekmesini.)  
   
--   Aynı çözüm içindeki diğer proje dizinleri. (Bu derlemeleri bulabilirsiniz **projeleri** sekmesini.)  
+- Aynı çözüm içindeki diğer proje dizinleri. (Bu derlemeleri bulabilirsiniz **projeleri** sekmesini.)  
   
 > [!NOTE]
 >  Tüm projeler, mscorlib öğesine dolaylı bir başvuru içerir. Visual Basic projeleri dolaylı bir başvuru içeren `Microsoft.VisualBasic`.  
@@ -119,4 +119,4 @@ Bir dış bileşene karşı kodu yazın veya bağlı hizmet önce projeniz ilk b
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bozuk başvurularda sorun giderme](../ide/troubleshooting-broken-references.md)   
  [Bütünleştirilmiş kodlarla programlama](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Nasıl yapılır: Başvuru Yöneticisi'ni kullanarak başvuruları kaldırın veya ekleyin](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [Nasıl yapılır: Başvuru Yöneticisi’ni Kullanarak Başvuru Ekleme veya Kaldırma](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

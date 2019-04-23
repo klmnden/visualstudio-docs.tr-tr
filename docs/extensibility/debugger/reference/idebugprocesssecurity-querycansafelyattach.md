@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44b125f44f3345e7bd28a9993a7a44be2e378b53
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 891a0c200b02f8768ef68d1d87649bfd35cf59d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040617"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 Bu yöntem, kullanıcının güvenli olmayan bir işleme iliştirir önce bir uyarı görüntülenecek bağlantı noktası sağlayıcısı sağlar.
@@ -33,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Dönüş Değeri
  Dönüş değerleri aşağıdaki gibidir:
 
--   `S_OK`: İşlemine iliştirme güvenlidir ve uyarı iletişim kutusu gösterilir.
+- `S_OK`: İşlemine iliştirme güvenlidir ve uyarı iletişim kutusu gösterilir.
 
--   `S_FALSE`: İliştirme bir güvenlik sorunu olabilir ve bir uyarı ile bir iletişim kutusu gösterilir.
+- `S_FALSE`: İliştirme bir güvenlik sorunu olabilir ve bir uyarı ile bir iletişim kutusu gösterilir.
 
--   `FAILURE`: İşlemine iliştirme başarısız.
+- `FAILURE`: İşlemine iliştirme başarısız.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

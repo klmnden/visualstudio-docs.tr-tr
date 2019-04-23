@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee24cd3dac57f3daca340eabacdbf05f20d35156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c65b2be057836811c8b91ef5ee0d1f1743b24ea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045420"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Nasıl yapılır: MIP düzeyleri oluşturma ve değiştirme
 Bu belgenin nasıl kullanılacağını gösteren **Resim Düzenleyicisi** oluşturmak ve değiştirmek amacıyla *MIP düzeyleri* doku alanı düzeyi ayrıntı düzeyi (LoD) için.
@@ -23,9 +23,9 @@ Bu belgenin nasıl kullanılacağını gösteren **Resim Düzenleyicisi** oluşt
 
 #### <a name="to-generate-mip-levels"></a>MIP düzeyleri oluşturmak için
 
-1.  Bölümünde anlatıldığı gibi temel bir doku ile başlayan [nasıl yapılır: Temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). En iyi sonuçlar için genişliği ve yüksekliği, örneğin 256, 512, 1024, boyut olarak ikinin kuvveti olan bir doku belirtin ve benzeri.
+1. Bölümünde anlatıldığı gibi temel bir doku ile başlayan [nasıl yapılır: Temel doku oluşturma](../designers/how-to-create-a-basic-texture.md). En iyi sonuçlar için genişliği ve yüksekliği, örneğin 256, 512, 1024, boyut olarak ikinin kuvveti olan bir doku belirtin ve benzeri.
 
-2.  MIP düzeylerini oluşturun. Üzerinde **resim düzenleyici modu** araç seçin **Gelişmiş** > **Araçları** > **Mips üret**.
+2. MIP düzeylerini oluşturun. Üzerinde **resim düzenleyici modu** araç seçin **Gelişmiş** > **Araçları** > **Mips üret**.
 
      Dikkat **sonraki MIP düzeyine Git** ve **önceki MIP düzeyine Git** düğmeler artık görünür **resim düzenleyici modu** araç çubuğu. Varsa **özellikleri** penceresi görüntüleniyorsa, ayrıca dikkat salt okunur özellikler **MIP düzeyini** ve **Mip düzeyi sayısı** artık görüntü özelliklerinde göründüğüne.
 
@@ -34,9 +34,9 @@ Bu belgenin nasıl kullanılacağını gösteren **Resim Düzenleyicisi** oluşt
 
 #### <a name="to-modify-an-individual-mip-level"></a>Bir tek tek MIP düzeyini değiştirmek için
 
-1.  Değiştirmek istediğiniz MIP düzeyini seçin. Üzerinde **resim düzenleyici modu** araç kullanımı **sonraki MIP düzeyine Git** ve **önceki MIP düzeyine Git** düğmeleri MIP düzeyleri arasında hareket etmek.
+1. Değiştirmek istediğiniz MIP düzeyini seçin. Üzerinde **resim düzenleyici modu** araç kullanımı **sonraki MIP düzeyine Git** ve **önceki MIP düzeyine Git** düğmeleri MIP düzeyleri arasında hareket etmek.
 
-2.  Değiştirmek istediğiniz MIP düzeyini seçtikten sonra diğer MIP düzeylerinin içeriğini değiştirmeden değiştirmek için çizim araçlarını kullanabilirsiniz. Çizim Araçları mevcuttur **Resim Düzenleyicisi** araç çubuğu. Bir aracı seçtikten sonra özelliklerini değiştirebilirsiniz **özellikleri** penceresi. Çizim araçları ve özellikleri hakkında daha fazla bilgi için bkz. [Resim Düzenleyicisi](../designers/image-editor.md).
+2. Değiştirmek istediğiniz MIP düzeyini seçtikten sonra diğer MIP düzeylerinin içeriğini değiştirmeden değiştirmek için çizim araçlarını kullanabilirsiniz. Çizim Araçları mevcuttur **Resim Düzenleyicisi** araç çubuğu. Bir aracı seçtikten sonra özelliklerini değiştirebilirsiniz **özellikleri** penceresi. Çizim araçları ve özellikleri hakkında daha fazla bilgi için bkz. [Resim Düzenleyicisi](../designers/image-editor.md).
 
 > [!NOTE]
 >  Bireysel MIP seviyelerindeki içeriği değiştirmek gerekmez, — bazı efektler elde etmek için yapabileceğiniz gibi — derleme zamanında kaynak dokudan Mipmap üretmek öneririz. Bu, MIP düzeyinde yapılan değişiklikler diğer düzeylere otomatik olarak yayılmadığından dolayı MIP düzeylerinin kaynak doku ile eşit kalmasını sağlamaya yardımcı olur. Derleme zamanında Mipmap konusunda daha fazla bilgi için bkz. [nasıl yapılır: Mipmap'leri içeren dokuyu dışa aktarma](../designers/how-to-export-a-texture-that-contains-mipmaps.md).

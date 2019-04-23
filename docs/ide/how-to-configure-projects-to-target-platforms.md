@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e9f605e761380b3dc856926dff5bd1712753a8ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045687"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Nasıl yapılır: Projeleri hedef platformlar için yapılandırma
 
@@ -35,20 +35,20 @@ Visual Studio uygulamalarınızı 64 bit platformlar da dahil olmak üzere, fark
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Bir 64 bit platformları hedefleyen bir proje yapılandırma
 
-1.  Menü çubuğunda, **derleme** > **Configuration Manager**.
+1. Menü çubuğunda, **derleme** > **Configuration Manager**.
 
-2.  İçinde **etkin çözüm platformu** listesinde, hedef çözümü için 64 bit platform seçin ve ardından **Kapat** düğmesi.
+2. İçinde **etkin çözüm platformu** listesinde, hedef çözümü için 64 bit platform seçin ve ardından **Kapat** düğmesi.
 
-    1.  İstediğiniz platform görünmüyorsa **etkin çözüm platformu** listesinde **yeni**.
+    1. İstediğiniz platform görünmüyorsa **etkin çözüm platformu** listesinde **yeni**.
 
          **Yeni çözüm platformu** iletişim kutusu görüntülenir.
 
-    2.  İçinde **yazın veya seçin yeni platformu** listesinde **x64**.
+    2. İçinde **yazın veya seçin yeni platformu** listesinde **x64**.
 
         > [!NOTE]
         >  Yapılandırmanızı yeni bir ad verin, ayarlarını değiştirmeniz gerekebilir **Proje Tasarımcısı** doğru platformunu hedeflemek için.
 
-    3.  Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.
+    3. Geçerli bir platform yapılandırmasını ayarlar kopyalamak istiyorsanız, bunu seçin ve ardından **Tamam** düğmesi.
 
 64-bit platformu hedefleyen tüm projeler için özellikler güncelleştirilir ve projenin sonraki derleme için 64-bit platformlarda iyileştirilir.
 

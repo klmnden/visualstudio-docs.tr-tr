@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b02d831093173b28cfd6c004e16c4514977a044
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061612"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>SharePoint Proje sistemini genişletme
   Visual Studio Proje şablonları ve öğe şablonları kullanarak SharePoint çözümleri oluşturabilirsiniz. Bu şablonlar birçok geliştirme senaryosu gereksinimlerini karşılamak, ancak bazı durumlarda, ihtiyaç duyduğunuz işlevsellik burada sağlamayan keşfedebilirsiniz. Bu durumlarda, SharePoint Proje sistemi genişletebilirsiniz.
@@ -33,20 +33,20 @@ ms.locfileid: "56617411"
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>SharePoint Proje sistemini genişletme
  SharePoint Proje sistemini aşağıdaki yollarla genişletebilirsiniz:
 
--   Kendi SharePoint proje öğesi türleri tanımlayın ve bunları yeni öğe şablonları veya Visual Studio Proje şablonları ile ilişkilendirin. Örneğin, özel bir eylem veya bir alan oluşturmak için bir SharePoint proje öğesi türü tanımlayabilirsiniz. Daha fazla bilgi için [özel SharePoint proje öğesi türleri tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md).
+- Kendi SharePoint proje öğesi türleri tanımlayın ve bunları yeni öğe şablonları veya Visual Studio Proje şablonları ile ilişkilendirin. Örneğin, özel bir eylem veya bir alan oluşturmak için bir SharePoint proje öğesi türü tanımlayabilirsiniz. Daha fazla bilgi için [özel SharePoint proje öğesi türleri tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
--   Visual Studio'da yüklü SharePoint proje öğesi türleri genişletir. Örneğin, bir proje öğesine bir kısayol menü öğesi ekleyebilirsiniz **Çözüm Gezgini** ve proje öğesi bir geliştirici menü öğesi seçtiğinde özelleştirin. Daha fazla bilgi için [genişletmek SharePoint Proje öğeleri](../sharepoint/extending-sharepoint-project-items.md).
+- Visual Studio'da yüklü SharePoint proje öğesi türleri genişletir. Örneğin, bir proje öğesine bir kısayol menü öğesi ekleyebilirsiniz **Çözüm Gezgini** ve proje öğesi bir geliştirici menü öğesi seçtiğinde özelleştirin. Daha fazla bilgi için [genişletmek SharePoint Proje öğeleri](../sharepoint/extending-sharepoint-project-items.md).
 
--   SharePoint projeleri genişletin. Örneğin, öğeleri eklendiğinde veya kaldırıldığında SharePoint projeleri, belirli görevlerin gerçekleştirilmesi için olay işleyicileri ekleyebilirsiniz. Daha fazla bilgi için [genişletmek SharePoint projeleri](../sharepoint/extending-sharepoint-projects.md).
+- SharePoint projeleri genişletin. Örneğin, öğeleri eklendiğinde veya kaldırıldığında SharePoint projeleri, belirli görevlerin gerçekleştirilmesi için olay işleyicileri ekleyebilirsiniz. Daha fazla bilgi için [genişletmek SharePoint projeleri](../sharepoint/extending-sharepoint-projects.md).
 
--   SharePoint Proje öğeleri ve SharePoint projeleri paketleme ve dağıtım davranışını genişletin. Örneğin, dağıtmak veya bir proje Ayıkla ya da Visual Studio, belirli dağıtım adımları yürütüldüğünde, ek özel görevleri yerine getirebilirsiniz yürütmek için kendi dağıtım adımları oluşturabilirsiniz. Daha fazla bilgi için [genişletmek SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+- SharePoint Proje öğeleri ve SharePoint projeleri paketleme ve dağıtım davranışını genişletin. Örneğin, dağıtmak veya bir proje Ayıkla ya da Visual Studio, belirli dağıtım adımları yürütüldüğünde, ek özel görevleri yerine getirebilirsiniz yürütmek için kendi dağıtım adımları oluşturabilirsiniz. Daha fazla bilgi için [genişletmek SharePoint paketleme ve dağıtım](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ## <a name="common-development-tasks"></a>Genel geliştirme görevleri
  SharePoint Proje sisteminin uzantılarında aşağıdaki yaygın görevleri gerçekleştirebilirsiniz:
 
--   Özel dize verileri, proje öğeleri ve proje dosyaları birkaç farklı türde Kaydet. Daha fazla bilgi için [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+- Özel dize verileri, proje öğeleri ve proje dosyaları birkaç farklı türde Kaydet. Daha fazla bilgi için [SharePoint Proje sisteminin uzantılarında veri kaydetme](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
--   Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne için SharePoint Proje sistemindeki bir nesneyi dönüştürmek veya bunun tersi de geçerlidir. Daha fazla bilgi için [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında Dönüştür](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+- Visual Studio Otomasyon nesne modeli veya tümleştirme nesne modeli, karşılık gelen bir nesne için SharePoint Proje sistemindeki bir nesneyi dönüştürmek veya bunun tersi de geçerlidir. Daha fazla bilgi için [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında Dönüştür](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Özel SharePoint proje öğesi türlerini tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md)

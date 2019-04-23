@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046923"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Kodunuz aracılığıyla bağımlılık diyagramları oluşturma
 
@@ -43,13 +43,13 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü bir modelle p
 > [!NOTE]
 > Bağımlılık diyagramları Visual Studio'da .NET Core projelerinde desteklenmez.
 
-1.  Üzerinde **mimarisi** menüsünde seçin **yeni bağımlılık diyagramı**.
+1. Üzerinde **mimarisi** menüsünde seçin **yeni bağımlılık diyagramı**.
 
-2.  Altında **şablonları**, seçin **bağımlılık diyagramı**.
+2. Altında **şablonları**, seçin **bağımlılık diyagramı**.
 
-3.  Diyagrama ad verin.
+3. Diyagrama ad verin.
 
-4.  İçinde **modelleme projesine Ekle**göz atın ve çözümünüzde varolan modelleme projesini seçin.
+4. İçinde **modelleme projesine Ekle**göz atın ve çözümünüzde varolan modelleme projesini seçin.
 
      -veya-
 
@@ -58,7 +58,7 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü bir modelle p
     > [!NOTE]
     > Bağımlılık diyagramı modelleme projesinin içinde bulunmalıdır. Bununla birlikte, bunu çözümün herhangi bir yerindeki öğelere bağlayabilirsiniz.
 
-5.  Hem modelleme projesini hem de bağımlılık diyagramını kaydettiğinizden emin olun.
+5. Hem modelleme projesini hem de bağımlılık diyagramını kaydettiğinizden emin olun.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Sürükleyin ve bırakın veya kopyalayın ve yapıştırın, bir kod Haritası
 
@@ -101,19 +101,19 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü bir modelle p
 
  Bir katmandaki sayı, katmana bağlı olan yapıların sayısını gösterir. Ancak, bu sayıyı okurken, aşağıdakileri unutmayın:
 
--   Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.
+- Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.
 
      Örneğin, bir katman tek bir ad alanına bağlanırsa, ad alanı sınıflar içerse bile, bağlı yapıların sayısı 1'dir. Katmanın ad alanındaki her bir sınıfa da bağlantıları bulunuyorsa, sayı bağlantılı sınıfları da içerecektir.
 
--   Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.
+- Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.
 
 ## <a name="Managing"></a> Katmanlar ve Yapılar arasındaki bağlantıları yönetme
 
-1.  Bağımlılık diyagramında katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**.
+1. Bağımlılık diyagramında katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**.
 
      **Katman Gezgini** seçili katman için yapı bağlantılarını gösterir.
 
-2.  Bu bağlantıları yönetmek için aşağıdaki görevleri kullanın.
+2. Bu bağlantıları yönetmek için aşağıdaki görevleri kullanın.
 
 |**Alıcı**|**Katman Gezgini**|
 |-|-|
@@ -150,17 +150,17 @@ Bir bağımlılık diyagramı oluşturmadan önce çözümünüzü bir modelle p
 ## <a name="Codemaps"></a> Desenler ve kod haritasında bağımlılıklarını keşfedin
  Bağımlılık diyagramları oluştururken, aynı zamanda oluşturacağınız **kod haritaları**. Bu diyagramları Kodu Keşfetme sırasında desenleri ve bağımlılıkları keşfetmenize yardımcı olabilir. Derlemeler, ad alanlarını ve genellikle de varolan katmanlarla - sınıfları keşfetmek için Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı'nı kullanın. Kod haritaları hakkında daha fazla bilgi için bkz:
 
--   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
+- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 - [Mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Gerçek zamanlı mimari bağımlılıklarınızı doğrula](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Bağımlılık diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)
-- [Bağımlılık diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)
+- [Bağımlılık diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)
 - [Bağımlılık diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)
 - [Kodu görselleştirme](../modeling/visualize-code.md)

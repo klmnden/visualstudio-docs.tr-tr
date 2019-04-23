@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045635"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Nasıl yapılır: Kod Ölçüm Verileri Üretme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Bütün bir çözüm ya da Seçili proje için kod ölçümleri sonuçları olu�
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Bütün bir çözüm için kod ölçümleri sonuçları oluşturmak için  
   
--   Tıklayın **analiz menü**ve ardından **çözüm için ölçümleri CalculateCode**.  
+- Tıklayın **analiz menü**ve ardından **çözüm için ölçümleri CalculateCode**.  
   
      \- veya -  
   
--   İçinde **Çözüm Gezgini**, çözüme sağ tıklayın ve ardından **CalculateCode ölçümleri**.  
+- İçinde **Çözüm Gezgini**, çözüme sağ tıklayın ve ardından **CalculateCode ölçümleri**.  
   
      \- veya -  
   
--   İçinde **kod ölçümleri sonuçları** penceresinde tıklayın **çözüm için ölçümleri CalculateCode** düğmesi.  
+- İçinde **kod ölçümleri sonuçları** penceresinde tıklayın **çözüm için ölçümleri CalculateCode** düğmesi.  
   
      Sonuçları oluşturulur ve **kod ölçümleri sonuçları** penceresi görüntülenir.  
   
@@ -57,7 +57,7 @@ Bütün bir çözüm ya da Seçili proje için kod ölçümleri sonuçları olu�
   
 ### <a name="to-view-the-results-details"></a>Sonuçları ayrıntılarını görüntülemek için  
   
--   Ağacında genişletin **hiyerarşi** sütun.  
+- Ağacında genişletin **hiyerarşi** sütun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönetilen Kodun Ölçüm Karmaşıklığı ve Bakımı](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

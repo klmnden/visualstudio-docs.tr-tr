@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84c55f9568cc227d067875d7579a99acb81f12a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49a27141fb8d681f2b3f91b5bf32818fd2cd5045
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047313"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
 
  Windows 10, Windows 8.1 çalıştıran bir geliştirme makinesinden çalıştıran bir uzak kayıttan yürütme makinesi kullanmak için bir geliştirme makineniz ve kayıttan yürütme makinesi üzerinde isteğe bağlı grafik araçları özelliğinin Windows 10 SDK'yı yüklemeniz gerekir.
 
-##  <a name="InstallGraphicsTools"></a> Windows 10 için grafik araçları yükleme
+## <a name="InstallGraphicsTools"></a> Windows 10 için grafik araçları yükleme
  Windows 10, grafik Tanılama Altyapısı isteğe bağlı bir adlı Windows özelliği tarafından sağlanan *grafik araçları*. Bu özellik, yakalama ve hedefleri olan uygulama olup olmadığını yakalanan ne olursa olsun, grafik bilgilerini Windows 10, windows veya kullandığı Direct3D'ın hangi sürümünün önceki bir sürümünü oynatmak için gereklidir. Grafik araçları özelliğinin önceden yüklemeyi seçebilirsiniz; Aksi durumda, Visual Studio'dan bir grafik Tanılama oturumu başlatın yüklü üzerine ilk zaman olur.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Windows 10 için grafik araçları yüklemek için
@@ -87,7 +87,7 @@ Bu bölümde, grafik Tanılama'yı ilk kez kullanmak hazırlarsınız ve ardınd
 
 ##### <a name="to-capture-single-frames"></a>Tek çerçeve yakalama
 
--   Visual Studio'da **kare Yakala** Grafik araç çubuğu veya Tanılama oturumu penceresinden düğmesi. Ya da uygulamanızın odak varsa tuşuna basarak **Print Screen**.
+- Visual Studio'da **kare Yakala** Grafik araç çubuğu veya Tanılama oturumu penceresinden düğmesi. Ya da uygulamanızın odak varsa tuşuna basarak **Print Screen**.
 
 ##### <a name="to-capture-a-sequence-of-frames"></a>Bir dizi kare yakalamak için
 

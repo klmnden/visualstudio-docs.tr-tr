@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052538"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede karmaşık veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede karmaşık veri bağlama ilişkin temel bilgileri gösterir. Alanları Northwind SQL Server veritabanındaki birden çok hücre Microsoft Office Excel çalışma sayfasındaki bağlayabilirsiniz.
@@ -40,20 +40,20 @@ ms.locfileid: "56643112"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   SQL Server Northwind örnek veritabanı ile bir sunucu erişim.
+- SQL Server Northwind örnek veritabanı ile bir sunucu erişim.
 
--   SQL Server veritabanına yazma ve okuma izni.
+- SQL Server veritabanına yazma ve okuma izni.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
  İlk adım, bir Excel çalışma kitabı projesi oluşturmaktır.
 
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
 
-1.  Adlı bir Excel çalışma kitabı projesi oluşturun **karmaşık veri bağlaması**. Sihirbazda **yeni belge oluşturma**.
+1. Adlı bir Excel çalışma kitabı projesi oluşturun **karmaşık veri bağlaması**. Sihirbazda **yeni belge oluşturma**.
 
      Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643112"
 
 #### <a name="to-add-a-list-object"></a>Bir liste nesnesi eklemek için
 
-1.  Doğrulayın **My karmaşık veri Binding.xlsx** Visual Studio tasarımcıda açık çalışma kitabı ile **Sayfa1** görüntülenir.
+1. Doğrulayın **My karmaşık veri Binding.xlsx** Visual Studio tasarımcıda açık çalışma kitabı ile **Sayfa1** görüntülenir.
 
-2.  Açık **veri kaynakları** penceresi ve select **çalışanlar** düğümü.
+2. Açık **veri kaynakları** penceresi ve select **çalışanlar** düğümü.
 
-3.  Görüntülenen açılan oka tıklayın.
+3. Görüntülenen açılan oka tıklayın.
 
-4.  Seçin **ListObject** aşağı açılan listesinde.
+4. Seçin **ListObject** aşağı açılan listesinde.
 
-5.  Sürükleme **çalışanlar** hücre tabloya **A6**.
+5. Sürükleme **çalışanlar** hücre tabloya **A6**.
 
      A <xref:Microsoft.Office.Tools.Excel.ListObject> adlı Denetim `EmployeesListObject` hücresinde oluşturulan **A6**. Aynı anda bir <xref:System.Windows.Forms.BindingSource> adlı `EmployeesBindingSource`, bir tablo bağdaştırıcısı ve <xref:System.Data.DataSet> örnek projeye eklenir. Denetimin bağlı <xref:System.Windows.Forms.BindingSource>, sırayla bağlı <xref:System.Data.DataSet> örneği.
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643112"
 
 ### <a name="to-save-changes-to-the-database"></a>Değişiklikleri veritabanına kaydetmek için
 
-1.  İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `button`ve veritabanına geri kümesinde yapılan tüm değişiklikleri kaydetmek için aşağıdaki kodu ekleyin.
+1. İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `button`ve veritabanına geri kümesinde yapılan tüm değişiklikleri kaydetmek için aşağıdaki kodu ekleyin.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643112"
 
 ### <a name="to-test-the-data-binding"></a>Veri bağlamayı test etmek için
 
--   Tuşuna **F5**.
+- Tuşuna **F5**.
 
      Çalışma kitabınızı açtığında, liste nesnesi verilerle doldurulmuş doğrulayın **çalışanlar** tablo.
 
 ### <a name="to-modify-data"></a>Verileri değiştirmek için
 
-1.  Bir hücreyi tıklatın **B7**, adı içermelidir **doğan**.
+1. Bir hücreyi tıklatın **B7**, adı içermelidir **doğan**.
 
-2.  Adı **Anderson**ve tuşuna **Enter**.
+2. Adı **Anderson**ve tuşuna **Enter**.
 
 ### <a name="to-modify-a-column-header"></a>Bir sütun başlığını değiştirme
 
-1.  Sütun başlığını içeren hücreyi tıklatın **LastName**.
+1. Sütun başlığını içeren hücreyi tıklatın **LastName**.
 
-2.  Tür **Soyadı**iki sözcükleri arasına bir boşluk içeren ve tuşuna **Enter**.
+2. Tür **Soyadı**iki sözcükleri arasına bir boşluk içeren ve tuşuna **Enter**.
 
 ### <a name="to-save-data"></a>Verileri kaydetmek için
 
-1.  Tıklayın **Kaydet** çalışma sayfasında.
+1. Tıklayın **Kaydet** çalışma sayfasında.
 
-2.  Excel'den çıkın. Tıklayın **Hayır** yaptığınız değişiklikleri kaydetmek isteyip istemediğiniz sorulduğunda.
+2. Excel'den çıkın. Tıklayın **Hayır** yaptığınız değişiklikleri kaydetmek isteyip istemediğiniz sorulduğunda.
 
-3.  Tuşuna **F5** projeyi yeniden çalıştırın.
+3. Tuşuna **F5** projeyi yeniden çalıştırın.
 
      Liste nesnesinin verilerle doldurulmuş **çalışanlar** tablo.
 
-4.  Dikkat hücresindeki **B7** hala **Anderson**, veri olduğu yapılan ve veritabanına kaydedilmiş değiştirin. Sütun üst bilgisine **LastName** geri özgün biçimlerinde boşluk, çünkü sütun üst bilgisine veritabanına bağlı değil ve çalışma sayfası için yaptığınız değişiklikleri kaydetmedi değiştirildi.
+4. Dikkat hücresindeki **B7** hala **Anderson**, veri olduğu yapılan ve veritabanına kaydedilmiş değiştirin. Sütun üst bilgisine **LastName** geri özgün biçimlerinde boşluk, çünkü sütun üst bilgisine veritabanına bağlı değil ve çalışma sayfası için yaptığınız değişiklikleri kaydetmedi değiştirildi.
 
 ### <a name="to-add-new-rows"></a>Yeni satır eklemek için
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643112"
 
 ### <a name="to-delete-rows"></a>Satırları silmek için
 
--   Sayısı 16 (satır 16) en sol tarafında çalışma sağ tıklayın ve ardından **Sil**.
+- Sayısı 16 (satır 16) en sol tarafında çalışma sağ tıklayın ve ardından **Sil**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Listedeki satırlar sıralamak için
 
-1.  Listenin içinde bir hücre seçin.
+1. Listenin içinde bir hücre seçin.
 
      Her bir sütun başlığına ok düğmelerini görünür.
 
-2.  Ok düğmesi **Soyadı** sütun başlığı.
+2. Ok düğmesi **Soyadı** sütun başlığı.
 
-3.  Tıklayın **Sıralama artan**.
+3. Tıklayın **Sıralama artan**.
 
      Satır son adlarına göre alfabetik olarak sıralanır.
 
 ### <a name="to-filter-information"></a>Filtre bilgilerine
 
-1.  Listenin içinde bir hücre seçin.
+1. Listenin içinde bir hücre seçin.
 
-2.  Ok düğmesi **başlık** sütun başlığı.
+2. Ok düğmesi **başlık** sütun başlığı.
 
-3.  Tıklayın **satış temsilcisi**.
+3. Tıklayın **satış temsilcisi**.
 
      Liste içeren satırları gösterir **satış temsilcisine** içinde **başlık** sütun.
 
-4.  Ok düğmesi **başlık** sütun başlığını tekrar.
+4. Ok düğmesi **başlık** sütun başlığını tekrar.
 
-5.  Tıklayın **(Tümü)**.
+5. Tıklayın **(Tümü)**.
 
      Filtre kaldırılır ve tüm satırların görünmesini.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu izlenecek yol, bir tablo, Liste nesnesine bir veritabanında bağlama hakkındaki temel bilgileri gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:
 
--   Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Çözümü dağıtın. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
+- Çözümü dağıtın. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
 
--   Bir alan ve tablo arasında bir ana/ayrıntı ilişkisi oluşturun. Daha fazla bilgi için [izlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Bir alan ve tablo arasında bir ana/ayrıntı ilişkisi oluşturun. Daha fazla bilgi için [izlenecek yol: Önbellekteki veri kümesini kullanarak bir ana ayrıntı ilişkisi oluşturma](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)

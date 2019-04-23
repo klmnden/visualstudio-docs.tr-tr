@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ce0a3f35001c468f887c1a595cd37231b38cb72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b2473654bf05a66ef94bd0e88f06ae3e27dbf12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060546"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>4. Adım: CheckTheAnswer() Yöntemi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Bu Eğitimin dördüncü kısmında bir yöntem yazacaksınız `CheckTheAnswer()
   
 ### <a name="to-verify-whether-the-answers-are-correct"></a>Yanıtların doğru olup olmadığını doğrulamak için  
   
-1.  Ekleme `CheckTheAnswer()` yöntemi.  
+1. Ekleme `CheckTheAnswer()` yöntemi.  
   
      Bu yöntem çağrıldığında, addend1 ve addend2 değerleri toplar ve sonucu toplama karşılaştırır `NumericUpDown` denetimi. Değerler eşitse yöntem değerini döndürür. `true`. Aksi takdirde yöntem bir değeri döndürür `false`. Kodunuzu aşağıdaki gibi görünmelidir.  
   
@@ -35,14 +35,14 @@ Bu Eğitimin dördüncü kısmında bir yöntem yazacaksınız `CheckTheAnswer()
   
      Ardından, yeni çağırmak Zamanlayıcının Tick olay işleyicisinin yöntemini kodu güncelleştirerek yanıtı kontrol edeceğiz `CheckTheAnswer()` yöntemi.  
   
-2.  Aşağıdaki kodu ekleyin `if else` deyimi.  
+2. Aşağıdaki kodu ekleyin `if else` deyimi.  
   
      [!code-csharp[VbExpressTutorial3Step4#10](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step4/cs/form1.cs#10)]
      [!code-vb[VbExpressTutorial3Step4#10](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step4/vb/form1.vb#10)]  
   
      Yanıt doğru ise, `CheckTheAnswer()` döndürür `true`. Olay işleyicisi Zamanlayıcıyı durdurur, bir kutlama iletisini gösterir ve sonra yapar **Başlat** düğmesini tekrar kullanılabilir. Aksi halde sınav devam eder.  
   
-3.  Programınızı kaydedin, çalıştırın, bir sınav başlatın ve ek soruya doğru yanıtı sağlayın.  
+3. Programınızı kaydedin, çalıştırın, bir sınav başlatın ve ek soruya doğru yanıtı sağlayın.  
   
     > [!NOTE]
     >  Yanıtınızı girerken, varsayılan değeri Seçmeli başlangıç veya sıfırı el ile silmelisiniz önce ya da seçmeniz gerekir. Bu öğreticinin ilerleyen bölümlerinde bu davranışı düzelteceksiniz.  
@@ -51,6 +51,6 @@ Bu Eğitimin dördüncü kısmında bir yöntem yazacaksınız `CheckTheAnswer()
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [5. adım: Ekleme NumericUpDown denetimleri için giriş olay işleyicileri girin](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).  
+- Sonraki öğretici adımına gitmek için bkz: [5. adım: Ekleme NumericUpDown denetimleri için giriş olay işleyicileri girin](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).
+- Önceki öğretici adımına dönmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).

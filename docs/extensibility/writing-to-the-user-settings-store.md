@@ -8,42 +8,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a576c692ffb03f631aa0d85d02b99ad74cd4b9c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054111"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Kullanıcı Ayarları Deposuna Yazma
 Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekler** iletişim ve özellikleri windows belirli bir iletişim kutusu. Visual Studio uzantıları bunlar küçük miktarlarda veri depolamak için kullanabilirsiniz. Bu izlenecek yolda not defteri için Visual Studio dış bir araç olarak okuma ve kullanıcı ayarları deposuna yazma tarafından nasıl ekleneceğini gösterir.
 
 ### <a name="backing-up-your-user-settings"></a>Kullanıcı ayarlarınızı yedekleme
 
-1.  Hata ayıklama ve yordamı yineleyin dış Araçlar ayarlarına olması gerekir. Bunu yapmak için bunları gerektiği gibi geri yükleyebilirsiniz, böylece özgün ayarlarına kaydetmeniz gerekir.
+1. Hata ayıklama ve yordamı yineleyin dış Araçlar ayarlarına olması gerekir. Bunu yapmak için bunları gerektiği gibi geri yükleyebilirsiniz, böylece özgün ayarlarına kaydetmeniz gerekir.
 
-2.  Regedit.exe'yi açın.
+2. Regedit.exe'yi açın.
 
-3.  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External araçları gidin\\.
+3. HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External araçları gidin\\.
 
     > [!NOTE]
     >  \14.0Exp\ ve değil \14.0 içeren anahtar baktığınızdan emin olun\\. Visual Studio'nun deneysel örneği çalıştırdığınızda, kullanıcı ayarlarınızı kayıt defteri kovanında "14.0Exp" dir.
 
-4.  \External Tools\ alt sağ tıklayın ve ardından **dışarı**. Emin olun **Seçili dal** seçilir.
+4. \External Tools\ alt sağ tıklayın ve ardından **dışarı**. Emin olun **Seçili dal** seçilir.
 
-5.  Sonuçta elde edilen dış Tools.reg dosyayı kaydedin.
+5. Sonuçta elde edilen dış Tools.reg dosyayı kaydedin.
 
-6.  Daha sonra dış araçların ayarlarını sıfırlamak istediğiniz zaman HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ içinde kayıt defteri anahtarı seçin ve tıklayın **Sil** bağlam menüsünde.
+6. Daha sonra dış araçların ayarlarını sıfırlamak istediğiniz zaman HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ içinde kayıt defteri anahtarı seçin ve tıklayın **Sil** bağlam menüsünde.
 
-7.  Zaman **Anahtar Silinmesini Onayla** iletişim kutusu görüntülendikten sonra **Evet**.
+7. Zaman **Anahtar Silinmesini Onayla** iletişim kutusu görüntülendikten sonra **Evet**.
 
-8.  Daha önce kaydettiğiniz dış Tools.reg dosyaya sağ tıklayın, **birlikte Aç**ve ardından **Kayıt Defteri Düzenleyicisi'ni**.
+8. Daha önce kaydettiğiniz dış Tools.reg dosyaya sağ tıklayın, **birlikte Aç**ve ardından **Kayıt Defteri Düzenleyicisi'ni**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Kullanıcı Ayarları Deposuna Yazma
 
-1.  UserSettingsStoreExtension adlı bir VSIX projesi oluşturun ve ardından UserSettingsStoreCommand adlı özel bir komut ekleyin. Özel komut oluşturma hakkında daha fazla bilgi için bkz. [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. UserSettingsStoreExtension adlı bir VSIX projesi oluşturun ve ardından UserSettingsStoreCommand adlı özel bir komut ekleyin. Özel komut oluşturma hakkında daha fazla bilgi için bkz. [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2.  UserSettingsStoreCommand.cs içinde aşağıdaki ekleme using deyimlerini:
+2. UserSettingsStoreCommand.cs içinde aşağıdaki ekleme using deyimlerini:
 
     ```csharp
     using System.Collections.Generic;
@@ -51,7 +51,7 @@ Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekl
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3.  MenuItemCallback, yöntem gövdesi silme ve kullanıcı ayarlarını depolamak, aşağıdaki gibi alır:
+3. MenuItemCallback, yöntem gövdesi silme ve kullanıcı ayarlarını depolamak, aşağıdaki gibi alır:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -61,7 +61,7 @@ Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekl
     }
     ```
 
-4.  Artık, Not Defteri zaten dış bir araç olarak ayarlanmasına bulun. İle tüm dış araçları ToolCmd ayarı "Not", şu şekilde olup olmadığını belirlemek için yineleme yapmanız gerekir:
+4. Artık, Not Defteri zaten dış bir araç olarak ayarlanmasına bulun. İle tüm dış araçları ToolCmd ayarı "Not", şu şekilde olup olmadığını belirlemek için yineleme yapmanız gerekir:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -85,7 +85,7 @@ Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekl
 
     ```
 
-5.  Not Defteri'ni dış bir araç olarak ayarlanmamışsa, aşağıdaki gibi ayarlayın:
+5. Not Defteri'ni dış bir araç olarak ayarlanmamışsa, aşağıdaki gibi ayarlayın:
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -121,10 +121,10 @@ Kullanıcı ayarları benzeyen yazılabilir ayarlarıdır **Araçlar / Seçenekl
     }
     ```
 
-6.  Kodu test edin. İkinci kez çalıştırmadan önce kayıt defterini geri alma işlemleri gerekir böylece onu dış bir araç olarak not defteri ekler unutmayın.
+6. Kodu test edin. İkinci kez çalıştırmadan önce kayıt defterini geri alma işlemleri gerekir böylece onu dış bir araç olarak not defteri ekler unutmayın.
 
-7.  Kodu derlemek ve hata ayıklamaya başlayın.
+7. Kodu derlemek ve hata ayıklamaya başlayın.
 
-8.  Üzerinde **Araçları** menüsünde tıklatın **çağırma UserSettingsStoreCommand**. Bu Not Defteri'ne ekler **Araçları** menüsü.
+8. Üzerinde **Araçları** menüsünde tıklatın **çağırma UserSettingsStoreCommand**. Bu Not Defteri'ne ekler **Araçları** menüsü.
 
 9. Not Defteri'ni araçları görürsünüz / Seçenekler menüsü ve tıklayarak **not defteri** bir not defteri örneği ayarlama duruma getirmeniz gerekir.

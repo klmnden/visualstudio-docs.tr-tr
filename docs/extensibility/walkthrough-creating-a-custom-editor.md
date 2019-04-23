@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90c6456789762943422384755212edef1456a499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f85963712fa1b051ea7256e6f805fe8e7c7e70d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056556"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>İzlenecek yol: Özel düzenleyici oluşturma
 VSPackage proje şablonu basit bir özel düzenleyici, C++'da oluşturabilirsiniz. VSPackage proje şablonu, artık C# veya Visual Basic projeleri destekler. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
@@ -28,21 +28,21 @@ VSPackage proje şablonu basit bir özel düzenleyici, C++'da oluşturabilirsini
 
 ### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Visual Studio Paket şablonu kullanarak bir VSPackage'ı oluşturmak için
 
-1.  Visual Studio Paketi şablonu ile bir proje oluşturun.
+1. Visual Studio Paketi şablonu ile bir proje oluşturun.
 
-2.  Seçin **özel düzenleyici** seçeneğini ve tıklayın **sonraki**. **Düzenleyici Seçenekleri** sayfası görüntülenir.
+2. Seçin **özel düzenleyici** seçeneğini ve tıklayın **sonraki**. **Düzenleyici Seçenekleri** sayfası görüntülenir.
 
-3.  Düzenleyicinizde adı **Düzenleyici adı** kutusu. Düzenleyicinizde ilişkili olmasını istediğiniz dosya uzantısı türü **dosya uzantısı** kutusu. Düzenleyici, bu uzantılı dosyalar için kullanılabilir. Dosya uzantısı için Visual Studio, Windows için değil yalnızca kaydedilir. Düzenleyicinizde ile oluşturulan yeni belgeler için varsayılan dosya adı yazın **varsayılan dosya adı** kutusu.
+3. Düzenleyicinizde adı **Düzenleyici adı** kutusu. Düzenleyicinizde ilişkili olmasını istediğiniz dosya uzantısı türü **dosya uzantısı** kutusu. Düzenleyici, bu uzantılı dosyalar için kullanılabilir. Dosya uzantısı için Visual Studio, Windows için değil yalnızca kaydedilir. Düzenleyicinizde ile oluşturulan yeni belgeler için varsayılan dosya adı yazın **varsayılan dosya adı** kutusu.
 
-4.  Tıklayın **son** belirttiğiniz klasöre, VSPackage'ı oluşturmak için.
+4. Tıklayın **son** belirttiğiniz klasöre, VSPackage'ı oluşturmak için.
 
 ### <a name="to-test-your-custom-editor"></a>Özel düzenleyiciniz test etmek için
 
-1.  Üzerinde **dosya** menüsünde **yeni** ve ardından **dosya**.
+1. Üzerinde **dosya** menüsünde **yeni** ve ardından **dosya**.
 
-2.  İçinde **yüklü şablonlar** bölmesinde **yeni dosya** dosya şablonu ve ardından dosyayı, kayıtlı iletişim kutusunda, türünü seçin.
+2. İçinde **yüklü şablonlar** bölmesinde **yeni dosya** dosya şablonu ve ardından dosyayı, kayıtlı iletişim kutusunda, türünü seçin.
 
-3.  Tıklayın **açık** görüntüleme ve belgeyi düzenleyebilir.
+3. Tıklayın **açık** görüntüleme ve belgeyi düzenleyebilir.
 
      Düzenleyici açık yük Kes ve Yapıştır ve Bul ve Değiştir işlemleri destekler.
 

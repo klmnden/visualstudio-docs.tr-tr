@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6342b571d1116d4a67e5ae01268c636ffbba6722
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048956"
 ---
 # <a name="create-custom-data-visualizers"></a>Özel veri görselleştiriciler oluşturma
  A *Görselleştirici* parçasıdır [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] bir değişkeni veya nesneyi, veri türüne uygun şekilde görüntüler hata ayıklayıcı kullanıcı arabirimi. Örneğin, bir HTML Görselleştirici bir HTML dizesi olarak yorumlar ve sonucu bir tarayıcı penceresinde görüneceği şekilde görüntüler. Bit eşlem Görselleştirici bir bit eşlem yapısı yorumlar ve onu gösteren grafiği görüntüler. Bazı görselleştiriciler, yanı sıra veri değiştirmenizi sağlar.
@@ -64,21 +64,21 @@ Aşağıdaki adımları görselleştiricisi oluşturma üst düzey bir genel bak
 
 Hata ayıklayıcı tarafında görselleştiricisi kullanıcı arabirimi oluşturmak için devralınan bir sınıf oluşturun. <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>ve geçersiz kılma <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> arabirim görüntülemesi için yöntemi. Kullanabileceğiniz <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> Windows forms iletişim kutuları ve denetimleri, görselleştiricisi içinde görüntülenecek.
 
-1.  Kullanım <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> görselleştirilen nesne hata ayıklayıcı tarafta almak için yöntemleri.
+1. Kullanım <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> görselleştirilen nesne hata ayıklayıcı tarafta almak için yöntemleri.
 
-1.  Devralınan bir sınıf oluşturmanız <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
+1. Devralınan bir sınıf oluşturmanız <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.
 
-1.  Geçersiz kılma <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> Arabiriminizin görüntülemek için yöntemi. Kullanım <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> Windows forms iletişim kutuları ve denetimleri, arabirimde görüntülemek için yöntemleri.
+1. Geçersiz kılma <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> Arabiriminizin görüntülemek için yöntemi. Kullanım <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> Windows forms iletişim kutuları ve denetimleri, arabirimde görüntülemek için yöntemleri.
 
-4.  Uygulama <xref:System.Diagnostics.DebuggerVisualizerAttribute>, görüntülenecek görselleştiricisi veren (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
+4. Uygulama <xref:System.Diagnostics.DebuggerVisualizerAttribute>, görüntülenecek görselleştiricisi veren (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).
 
 ### <a name="to-create-the-debuggee-side"></a>Hata ayıklanan yan oluşturmak için
 
 Hata ayıklanan tarafın kod kullanarak belirttiğiniz <xref:System.Diagnostics.DebuggerVisualizerAttribute>.
 
-1.  Uygulama <xref:System.Diagnostics.DebuggerVisualizerAttribute>, Görselleştirici veren (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) ve bir nesne kaynağı (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Nesne kaynağı atlarsanız, varsayılan nesne kaynak görselleştiricisi kullanır.
+1. Uygulama <xref:System.Diagnostics.DebuggerVisualizerAttribute>, Görselleştirici veren (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) ve bir nesne kaynağı (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Nesne kaynağı atlarsanız, varsayılan nesne kaynak görselleştiricisi kullanır.
 
-1.  Yanı sıra veri nesneleri görüntüleme düzenleme Görselleştirici izin vermek için geçersiz kılma `TransferData` veya `CreateReplacementObject` yöntemlerinden <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
+1. Yanı sıra veri nesneleri görüntüleme düzenleme Görselleştirici izin vermek için geçersiz kılma `TransferData` veya `CreateReplacementObject` yöntemlerinden <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

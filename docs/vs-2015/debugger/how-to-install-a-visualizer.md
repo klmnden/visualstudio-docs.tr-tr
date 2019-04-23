@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a75386844e3653a4dbf791980737f8d339072c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059714"
 ---
 # <a name="how-to-install-a-visualizer"></a>Nasıl yapılır: Görselleştiriciyi yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Görselleştirici oluşturduktan sonra kullanıma sunulacak böylece görselleş
   
 ### <a name="to-install-a-visualizer"></a>Görselleştirici yüklemek için  
   
-1.  Derlediğiniz görselleştiricisi içeren DLL bulun.  
+1. Derlediğiniz görselleştiricisi içeren DLL bulun.  
   
-2.  DLL aşağıdaki konumlardan birini kopyalayın:  
+2. DLL aşağıdaki konumlardan birini kopyalayın:  
   
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
   
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`  
   
-3.  Uzaktan hata ayıklama için yönetilen Görselleştirici kullanmak istiyorsanız, DLL uzak bilgisayarda aynı yoluna kopyalayın.  
+3. Uzaktan hata ayıklama için yönetilen Görselleştirici kullanmak istiyorsanız, DLL uzak bilgisayarda aynı yoluna kopyalayın.  
   
-4.  Hata ayıklama oturumunu yeniden başlatın.  
+4. Hata ayıklama oturumunu yeniden başlatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel Görselleştiriciler oluşturma](../debugger/create-custom-visualizers-of-data.md)   

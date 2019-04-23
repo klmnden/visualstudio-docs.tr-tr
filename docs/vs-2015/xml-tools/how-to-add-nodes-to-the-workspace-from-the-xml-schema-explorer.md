@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043980"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Nasıl yapılır: XML Şema Gezgininden Çalışma Alanına Düğüm Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,35 +26,35 @@ Bu konuda nasıl düğüm ekleneceği açıklanmaktadır [XML şema Tasarımcıs
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>XML Gezgini bağlam menüsü aracılığıyla düğümler eklemek için  
   
-1.  Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Sağ tıklayın `PurchaseOrderType` düğümünde bir XSD Gezgini. Seçin **graf görünümünde göster**.  
+2. Sağ tıklayın `PurchaseOrderType` düğümünde bir XSD Gezgini. Seçin **graf görünümünde göster**.  
   
      `purchaseOrderType` Düğümü graf görünümünü tasarım yüzeyinde görünür.  
   
 ### <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Sürükle ve bırak bir düğüm bir görünüm açmak için  
   
-1.  Sağ tıklayın `PurchaseOrderType` graf görünümünü düğümü. Seçin **XML Şeması Gezgini gösterme**.  
+1. Sağ tıklayın `PurchaseOrderType` graf görünümünü düğümü. Seçin **XML Şeması Gezgini gösterme**.  
   
      Düğümün içinde XML Şeması Gezgini vurgulanır.  
   
-2.  Sağ tıklayın `PurchaseOrderType` düğümünü seçin ve XML Şeması Gezgini **tüm başvuruları göster**.  
+2. Sağ tıklayın `PurchaseOrderType` düğümünü seçin ve XML Şeması Gezgini **tüm başvuruları göster**.  
   
      `purchaseOrder` Düğümü vurgulanır.  
   
-3.  Sürükleme `purchaseOrder` düğüm graf görünümünü açın.  
+3. Sürükleme `purchaseOrder` düğüm graf görünümünü açın.  
   
      `purchaseOrder` Düğüm ve `PurchaseOrderType` düğüm birbirinin yanına graf görünümünü tasarım yüzeyinde görünür. İki düğüm kullanıcılarla ilgili olduğundan ( `purchaseOrder` öğesi olduğu `PurchaseOrderType` türü), bir ok, aralarında çizilir.  
   
 ### <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>Şema Gezgini arama özelliğini kullanarak düğümleri eklemek için  
   
-1.  "PurchaseOrder" yazın arama metin kutusuna [XML Gezgini](../xml-tools/xml-schema-explorer.md) araç çubuğu ve Ara düğmesine tıklayın.  
+1. "PurchaseOrder" yazın arama metin kutusuna [XML Gezgini](../xml-tools/xml-schema-explorer.md) araç çubuğu ve Ara düğmesine tıklayın.  
   
      ![XML şema Gezgini anahtar sözcük arama](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Arama sonuçları XML şema Gezgini içinde vurgulanmış ve dikey kaydırma çubuğu üzerinde işaretleri tarafından işaretlenen.  
   
-2.  Arama sonuçlarını tıklayarak çalışma alanına ekleme **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine.  
+2. Arama sonuçlarını tıklayarak çalışma alanına ekleme **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine.  
   
      ![XML şema Gezgini arama sonucu](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   

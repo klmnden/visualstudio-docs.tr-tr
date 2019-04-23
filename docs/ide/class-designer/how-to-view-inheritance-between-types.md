@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048001"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Nasıl yapılır: Sınıf tasarımcısında türler arasında devralmayı görüntüleme
 
@@ -27,9 +27,9 @@ Bir taban türü ve içinde bir sınıf diyagramında, türetilmiş türler aras
 
 ## <a name="to-find-the-base-type"></a>Temel tür bulmak için
 
-1.  Sınıf diyagramı üzerinde taban sınıf veya arabirim görmek istediğiniz türe tıklayın.
+1. Sınıf diyagramı üzerinde taban sınıf veya arabirim görmek istediğiniz türe tıklayın.
 
-2.  Üzerinde **sınıf diyagramı** menüsünde seçin **temel sınıfı Göster** veya **temel arabirimleri göster**.
+2. Üzerinde **sınıf diyagramı** menüsünde seçin **temel sınıfı Göster** veya **temel arabirimleri göster**.
 
      Türün temel sınıf veya arabirim diyagramda seçilen görünür. Tüm gizli devralım çizgileri şimdi iki şekiller arasında görünür.
 
@@ -37,9 +37,9 @@ Ayrıca temel tür görüntülemek ve seçmek için istediğiniz tür sağ **tem
 
 ## <a name="to-find-the-derived-types"></a>Türetilmiş tür bulmak için
 
-1.  Sınıf diyagramında, türetilmiş sınıf veya arabirim görmek istediğiniz türe tıklayın.
+1. Sınıf diyagramında, türetilmiş sınıf veya arabirim görmek istediğiniz türe tıklayın.
 
-2.  Üzerinde **sınıf diyagramı** menüsünde seçin **türetilmiş sınıfları Göster** veya **türetilmiş arabirimleri göster**.
+2. Üzerinde **sınıf diyagramı** menüsünde seçin **türetilmiş sınıfları Göster** veya **türetilmiş arabirimleri göster**.
 
      Türün türetilmiş sınıflar veya arabirimleri diyagramda görünür. Tüm gizli devralım çizgileri şimdi şekiller arasında görünür.
 

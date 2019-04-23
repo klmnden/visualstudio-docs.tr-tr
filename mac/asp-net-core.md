@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7fc08e4896965e87315466ef6acd7d015eb98174
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056741"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core kullanmaya başlama
 
@@ -63,6 +63,7 @@ Açın ve İnceleme **Program.cs** projenizdeki dosya. Çeşitli nda şeyler bil
                 .UseStartup<Startup>();
     }
 ```
+
 ASP.NET Core uygulaması bir web sunucusunu yapılandırarak ve bir ana bilgisayar örneği aracılığıyla başlatma kendi ana yönteminde oluşturur [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Bu oluşturucu yapılandırılması konağın izin vermek için yöntemler sağlar. Şablon uygulaması, aşağıdaki yapılandırmaları kullanılır:
 
 * `.UseStartup<Startup>()`: Başlangıç sınıfı belirtir.
@@ -106,8 +107,8 @@ Açın ve İnceleme **Startup.cs** proje dosyasında:
 
 Bu başlangıç sınıfı, her zaman şu kurallara uymalıdır:
 
- - Her zaman genel olmalıdır
- - İki genel yöntemini içermelidir: `ConfigureServices` ve `Configure`
+- Her zaman genel olmalıdır
+- İki genel yöntemini içermelidir: `ConfigureServices` ve `Configure`
 
 `ConfigureServices` Uygulamanız tarafından kullanılan hizmetler yöntemi tanımlar.
 

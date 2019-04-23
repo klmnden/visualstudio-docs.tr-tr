@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045988"
 ---
 # <a name="automatic-feature-suspension"></a>Otomatik özelliği askıya alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54789781"
 
  Bir düşük bellek koşulunda aşağıdakiler gerçekleşir:
 
--   Visual C# ve Visual Basic için tam çözüm analizini devre dışı bırakıldı.
+- Visual C# ve Visual Basic için tam çözüm analizini devre dışı bırakıldı.
 
--   [Çöp toplama](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) Visual C# ve Visual Basic için düşük gecikmeli modu devre dışı bırakıldı.
+- [Çöp toplama](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) (GC) Visual C# ve Visual Basic için düşük gecikmeli modu devre dışı bırakıldı.
 
--   Visual Studio önbellekler temizlenir.
+- Visual Studio önbellekler temizlenir.
 
 ## <a name="improve-visual-studio-performance"></a>Visual Studio performansını
  İpuçları ve püf noktaları ile büyük çözümlerin veya düşük bellek koşullarını ilgilenirken Visual Studio performansını geliştirmeye yönelik bkz [büyük çözümler için başarım düşünceleri](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
@@ -48,11 +48,11 @@ ms.locfileid: "54789781"
 
 Tüm Visual Studio önbellekleri hemen boşaltılması, ancak geçerli geliştirme oturumunuzu devam ya da Visual Studio'yu yeniden derlenmeye başlar. Temizlenen önbellekleri önbellekler için aşağıdaki özellikleri içerir.
 
--   Tüm başvuruları Bul
+- Tüm başvuruları Bul
 
--   Gidin
+- Gidin
 
--   Using ekleme
+- Using ekleme
 
 Ayrıca, iç Visual Studio işlemleri için kullanılan önbellekler de temizlenir.
 

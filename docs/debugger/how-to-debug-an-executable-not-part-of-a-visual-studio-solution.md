@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051342"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Visual Studio çözümünün parçası olmayan bir uygulamanın hatalarını ayıklamak (C++, C#, Visual Basic F#)
 
@@ -58,7 +58,7 @@ Bu durumda, uygulama için bir Visual Studio EXE projesi oluşturabilir, veya va
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Bir uygulama var olan bir Visual Studio çözümüne aktarmak için
 
-1.  Bir C++ ile C#, veya Visual Basic çözümünü Visual Studio'da Aç seçin **dosya** > **Ekle** > **mevcut proje**.
+1. Bir C++ ile C#, veya Visual Basic çözümünü Visual Studio'da Aç seçin **dosya** > **Ekle** > **mevcut proje**.
 
 1. İçinde **Proje Aç** iletişim kutusunda **tüm proje dosyaları**, açılır menüde yanındaki seçili değilse **dosya adı**.
 

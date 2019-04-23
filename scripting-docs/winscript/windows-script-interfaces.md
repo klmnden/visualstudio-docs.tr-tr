@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58154432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038231"
 ---
 # <a name="windows-script-interfaces"></a>Windows Komut Dosyası Arabirimleri
 
@@ -62,21 +62,21 @@ Aşağıdaki resimde, bir Windows Script host ile bir Windows komut dosyası alt
 
 Konak ve altyapısı arasındaki etkileşim içinde yer alan adımların aşağıdaki listede verilmiştir.
 
-1.  Bir proje oluşturun. Konak, bir proje veya belgeyi yükler. (Bu adım Windows betiği için belirli değil, ancak bütünlük açısından buraya dahil edilir.)
+1. Bir proje oluşturun. Konak, bir proje veya belgeyi yükler. (Bu adım Windows betiği için belirli değil, ancak bütünlük açısından buraya dahil edilir.)
 
-2.  Windows komut dosyası altyapısı oluşturun. Konak çağrıları `CoCreateInstance` yeni bir Windows komut dosyası altyapısı oluşturmak için kullanılacak belirli komut dosyası altyapısı sınıf tanımlayıcısı (CLSID) belirtme. Örneğin, Internet Explorer'ın HTML tarayıcı komut dosyası altyapısının sınıf tanımlayıcısı CLSID aracılığıyla alır HTML öznitelik = \<Nesne > etiketi.
+2. Windows komut dosyası altyapısı oluşturun. Konak çağrıları `CoCreateInstance` yeni bir Windows komut dosyası altyapısı oluşturmak için kullanılacak belirli komut dosyası altyapısı sınıf tanımlayıcısı (CLSID) belirtme. Örneğin, Internet Explorer'ın HTML tarayıcı komut dosyası altyapısının sınıf tanımlayıcısı CLSID aracılığıyla alır HTML öznitelik = \<Nesne > etiketi.
 
-3.  Komut dosyası yükleyin. Betik içeriği kalıcı ise ana komut dosyası altyapısının çağırır `IPersist*::Load` betik depolama, stream veya özellik paketi akışa yöntemi. Aksi takdirde, konak ya da kullandığı `IPersist*::InitNew` veya [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) null betiği oluşturmak için yöntemi. Metin kullanabilirsiniz gibi bir betik tutan bir konak [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) komut dosyası altyapısı çağırdıktan sonra betiğin metnini akışa `IActiveScriptParse::InitNew`.
+3. Komut dosyası yükleyin. Betik içeriği kalıcı ise ana komut dosyası altyapısının çağırır `IPersist*::Load` betik depolama, stream veya özellik paketi akışa yöntemi. Aksi takdirde, konak ya da kullandığı `IPersist*::InitNew` veya [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) null betiği oluşturmak için yöntemi. Metin kullanabilirsiniz gibi bir betik tutan bir konak [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) komut dosyası altyapısı çağırdıktan sonra betiğin metnini akışa `IActiveScriptParse::InitNew`.
 
-4.  Adlandırılmış öğeleri ekleyin. Komut dosyası altyapısının ad alanı alınan her üst düzey adlandırılmış öğe için (örneğin, sayfaları ve formları), konak çağırır [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) altyapının ad alanında bir giriş oluşturmak için yöntemi. Bu adım, üst düzey adlandırılmış öğeleri kalıcı durumunu 3. adımda yüklenen komut dosyasının bir parçası olduğunda gerekli değildir. Bir konak kullanmaz `IActiveScript::AddNamedItem` öğeleri (örneğin, HTML sayfasındaki denetimleri) adlı alt düzey eklemek için; bunun yerine, altyapı dolaylı olarak alt düzey öğeleri üst düzey öğeleri ana bilgisayarın kullanarak alır `ITypeInfo` ve `IDispatch` arabirimleri.
+4. Adlandırılmış öğeleri ekleyin. Komut dosyası altyapısının ad alanı alınan her üst düzey adlandırılmış öğe için (örneğin, sayfaları ve formları), konak çağırır [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) altyapının ad alanında bir giriş oluşturmak için yöntemi. Bu adım, üst düzey adlandırılmış öğeleri kalıcı durumunu 3. adımda yüklenen komut dosyasının bir parçası olduğunda gerekli değildir. Bir konak kullanmaz `IActiveScript::AddNamedItem` öğeleri (örneğin, HTML sayfasındaki denetimleri) adlı alt düzey eklemek için; bunun yerine, altyapı dolaylı olarak alt düzey öğeleri üst düzey öğeleri ana bilgisayarın kullanarak alır `ITypeInfo` ve `IDispatch` arabirimleri.
 
-5.  Betiği çalıştırın. Konak SCRIPTSTATE_CONNECTED bayrak ayarlayarak betiği çalıştırmaya başlamak altyapı neden [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) yöntemi. Bu çağrı, büyük olasılıkla statik bağlama, takma olayları (aşağıya bakın) ve bir komut dosyası için benzer şekilde bir kod yürütmeden dahil olmak üzere tüm komut dosyası altyapısı oluşturma iş gerçekleştirecek `main()` işlevi.
+5. Betiği çalıştırın. Konak SCRIPTSTATE_CONNECTED bayrak ayarlayarak betiği çalıştırmaya başlamak altyapı neden [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md) yöntemi. Bu çağrı, büyük olasılıkla statik bağlama, takma olayları (aşağıya bakın) ve bir komut dosyası için benzer şekilde bir kod yürütmeden dahil olmak üzere tüm komut dosyası altyapısı oluşturma iş gerçekleştirecek `main()` işlevi.
 
-6.  Öğe bilgi alın. Komut dosyası altyapısı bir üst düzey öğesi ile bir simge ilişkilendirmek için her durumda çağrı [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) yöntemi verilen öğe hakkında bilgi verir.
+6. Öğe bilgi alın. Komut dosyası altyapısı bir üst düzey öğesi ile bir simge ilişkilendirmek için her durumda çağrı [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md) yöntemi verilen öğe hakkında bilgi verir.
 
-7.  Olayları bağlayın. Gerçek betiğini başlatmadan önce komut dosyası altyapısı aracılığıyla tüm nesneleri olaylarını bağlandığı `IConnectionPoint` arabirimi.
+7. Olayları bağlayın. Gerçek betiğini başlatmadan önce komut dosyası altyapısı aracılığıyla tüm nesneleri olaylarını bağlandığı `IConnectionPoint` arabirimi.
 
-8.  Özellikleri ve yöntemleri çağırır. Komut dosyası çalıştırılırken, komut dosyası altyapısı yöntemlere ve özelliklere başvuruları adlandırılmış nesneler üzerinde fark etti `IDispatch::Invoke` veya diğer OLE bağlama mekanizmalarını.
+8. Özellikleri ve yöntemleri çağırır. Komut dosyası çalıştırılırken, komut dosyası altyapısı yöntemlere ve özelliklere başvuruları adlandırılmış nesneler üzerinde fark etti `IDispatch::Invoke` veya diğer OLE bağlama mekanizmalarını.
 
 ## <a name="windows-script-terms"></a>Windows betik koşulları
 

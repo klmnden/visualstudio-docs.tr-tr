@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4e16d6dc3eb7529e2e13ed333cacaf93e36d728
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3c38701ce222090f14b6880489eea4d22f053d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061768"
 ---
 # <a name="command-window"></a>Komut Penceresi
 **Komut** penceresi komutları veya doğrudan diğer adlar yürütmek için kullanılan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı (IDE). Hiçbir araç çubuğunda hem menü komutları hem de görünmez komutları yürütebilir. Görüntülenecek **komut** penceresinde seçin **diğer Windows** gelen **görünümü** seçin ve menü **komut penceresi**.
@@ -80,13 +80,13 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  Bu örnekte,
 
--   `Edit.ReplaceInFiles` Bu komut
+- `Edit.ReplaceInFiles` Bu komut
 
--   `/case` ve `/pattern:regex` olan anahtarları (eğik çizgi [/] karakteriyle başlar)
+- `/case` ve `/pattern:regex` olan anahtarları (eğik çizgi [/] karakteriyle başlar)
 
--   `regex` değeri `/pattern` geçin; `/case` anahtar değere sahip değil
+- `regex` değeri `/pattern` geçin; `/case` anahtar değere sahip değil
 
--   `var[1-3]+` ve `oldpar` parametreleri
+- `var[1-3]+` ve `oldpar` parametreleri
 
     > [!NOTE]
     >  Komutu, parametre, anahtar veya boşluk içeren değer iki tarafında çift tırnak işareti olmalıdır.

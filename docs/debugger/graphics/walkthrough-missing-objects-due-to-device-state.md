@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047460"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>İzlenecek yol: Cihaz durumu nedeniyle nesnelerin eksikliği
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nedeni eksik bir nesne incelemek için grafik Tanılama, cihaz durumu yanlış.
 
  Bu izlenecek yol gösterir nasıl yapılır:
 
--   Kullanım **grafik olay listesi** olası sorun kaynaklarını bulmak için.
+- Kullanım **grafik olay listesi** olası sorun kaynaklarını bulmak için.
 
--   Kullanım **grafik ardışık düzen aşamaları** etkisini denetlemek için pencere `DrawIndexed` Direct3D API'sini çağırır.
+- Kullanım **grafik ardışık düzen aşamaları** etkisini denetlemek için pencere `DrawIndexed` Direct3D API'sini çağırır.
 
--   Kullanım **grafik piksel geçmişi** sorunu daha ayrıntılı belirtmek gerekirse bulunacak penceresi.
+- Kullanım **grafik piksel geçmişi** sorunu daha ayrıntılı belirtmek gerekirse bulunacak penceresi.
 
--   Olası sorunları veya yanlış yapılandırmalar için cihaz durumunu inceleyin.
+- Olası sorunları veya yanlış yapılandırmalar için cihaz durumunu inceleyin.
 
 ## <a name="scenario"></a>Senaryo
  Nedenlerden biri dolayısıyla nesneler, 3B bir uygulamada nereye beklenen görünmeyebilir olduğundan işleme çıkarılacak nesneleri neden olur grafik cihazlarının yanlış yapılandırma — Örneğin, Sarım düzeni sebep olduğunda hata culled üçgen , veya Derinlik test işlevi sebep olduğunda tüm piksel nesneyi reddedilir.

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4b559b80613197dae62bc6246bd7ef1532d7071
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057010"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Diyagram Üzerinde Arka Plan Görüntüsü Ayarlama
 Visual Studio Görselleştirme ve modelleme SDK'sı, özel kod kullanılarak oluşturulan bir tasarımcı için arka plan görüntüsü ayarlayabilirsiniz.
@@ -21,21 +21,21 @@ Visual Studio Görselleştirme ve modelleme SDK'sı, özel kod kullanılarak olu
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>İçin oluşturulan bir tasarımcının arka plan görüntüsü ayarlama
 
-1.  Diyagram arkaplanı olarak Dsl\Resources dizine geçerli proje için kullanmak istediğiniz görüntü dosyasını kopyalayın.
+1. Diyagram arkaplanı olarak Dsl\Resources dizine geçerli proje için kullanmak istediğiniz görüntü dosyasını kopyalayın.
 
-2.  İçinde **Çözüm Gezgini**, Dsl\Resources klasöre sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**.
+2. İçinde **Çözüm Gezgini**, Dsl\Resources klasöre sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**.
 
-3.  İçinde **varolan öğeyi Ekle** iletişim kutusunda, Dsl\Resources klasöre gidin.
+3. İçinde **varolan öğeyi Ekle** iletişim kutusunda, Dsl\Resources klasöre gidin.
 
-4.  İçinde **dosya türü** listesinde **görüntü dosyaları**.
+4. İçinde **dosya türü** listesinde **görüntü dosyaları**.
 
-5.  Kopyaladığınız dizine görüntü dosyasına tıklayın ve ardından **Ekle**.
+5. Kopyaladığınız dizine görüntü dosyasına tıklayın ve ardından **Ekle**.
 
-6.  DSL sağ tıklayın ve **özellikleri** Dsl proje özelliklerini açın.
+6. DSL sağ tıklayın ve **özellikleri** Dsl proje özelliklerini açın.
 
-7.  Üzerinde **kaynakları** sekmesinde **bu projenin varsayılan kaynak dosyası içermiyor. Oluşturmak için buraya tıklayın.**
+7. Üzerinde **kaynakları** sekmesinde **bu projenin varsayılan kaynak dosyası içermiyor. Oluşturmak için buraya tıklayın.**
 
-8.  Resim sürükleyerek resim dosyası kaynak dosyaya ekleyin **Çözüm Gezgini** kaynakları penceresine.
+8. Resim sürükleyerek resim dosyası kaynak dosyaya ekleyin **Çözüm Gezgini** kaynakları penceresine.
 
 9. Dosya menüsünü açın ve proje özelliklerini Kaydet seçeneğine tıklayın.
 

@@ -10,12 +10,12 @@ ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f5db7f20cf77df72a8c103eea68b3e64cc148b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038672"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>VSIX Proje Şablonunu Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,39 +29,39 @@ VSIX proje şablonu, bir uzantı oluşturmak veya mevcut bir uzantı için dağ�
 ## <a name="deploying-a-custom-project-template-using-the-vsix-project-template"></a>VSIX proje şablonunu kullanarak özel bir proje şablonu dağıtma  
  Aşağıdaki adımlar diğer geliştiriciler ile paylaşabilir veya Visual Studio Galeri'ye yükleyin, bir proje şablonu paketlemek için VSIX projesi kullanma işlemini gösterir.  
   
-1.  Bir proje şablonu oluşturun.  
+1. Bir proje şablonu oluşturun.  
   
-    1.  Bir şablon oluşturmak, projeyi açın. Bu proje bir proje türünde olabilir.  
+    1. Bir şablon oluşturmak, projeyi açın. Bu proje bir proje türünde olabilir.  
   
-    2.  Üzerinde **dosya** menüsünü tıklatın **şablonu dışarı aktar**. Sihirbazın adımlarını tamamlayın.  
+    2. Üzerinde **dosya** menüsünü tıklatın **şablonu dışarı aktar**. Sihirbazın adımlarını tamamlayın.  
   
          Bir .zip dosyası, %USERPROFILE%\My Documents\Visual Studio içinde oluşturulan  *\<sürüm >* \My dışarı aktarılan şablonları\\.  
   
-2.  Boş bir VSIX projesi oluşturun.  
+2. Boş bir VSIX projesi oluşturun.  
   
      Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**. Şunlardan birini seçin **Visual Basic** veya **Visual C#**. Seçili düğümü altında seçin **genişletilebilirlik**ve ardından **VSIX projesi**.  
   
-3.  .Zip dosyasını projeye ekleyin. Ayarlama, **çıkış dizinine Kopyala** özelliğini `Copy Always`.  
+3. .Zip dosyasını projeye ekleyin. Ayarlama, **çıkış dizinine Kopyala** özelliğini `Copy Always`.  
   
-4.  İçinde **Çözüm Gezgini**, çift `source.extension.vsixmanifest` içinde açmak için dosyaya **VSIX bildirim Tasarımcısı**ve ardından aşağıdaki değişiklikleri yapın:  
+4. İçinde **Çözüm Gezgini**, çift `source.extension.vsixmanifest` içinde açmak için dosyaya **VSIX bildirim Tasarımcısı**ve ardından aşağıdaki değişiklikleri yapın:  
   
-    -   Ayarlama **ürün adı** alanı **My proje şablonu**.  
+    - Ayarlama **ürün adı** alanı **My proje şablonu**.  
   
-    -   Ayarlama **ürün kimliği** alanı **MyProjectTemplate - 1**.  
+    - Ayarlama **ürün kimliği** alanı **MyProjectTemplate - 1**.  
   
-    -   Ayarlama **Yazar** alanı **Fabrikam**.  
+    - Ayarlama **Yazar** alanı **Fabrikam**.  
   
-    -   Ayarlama **açıklama** alanı **proje şablonumu**.  
+    - Ayarlama **açıklama** alanı **proje şablonumu**.  
   
-    -   İçinde **varlıklar** bölümünde, eklemek bir **Microsoft.VisualStudio.ProjectTemplate** yazın ve yolu .zip dosyasının adına ayarlayın.  
+    - İçinde **varlıklar** bölümünde, eklemek bir **Microsoft.VisualStudio.ProjectTemplate** yazın ve yolu .zip dosyasının adına ayarlayın.  
   
-5.  Source.extension.vsixmanifest dosyasını kaydedip kapatın.  
+5. Source.extension.vsixmanifest dosyasını kaydedip kapatın.  
   
-6.  Projeyi oluşturun.  
+6. Projeyi oluşturun.  
   
-7.  Çıktı dizininde .vsix dosyasını çift tıklayın.  
+7. Çıktı dizininde .vsix dosyasını çift tıklayın.  
   
-8.  A **VSIX yükleyicisi** ileti kutusu görünür. Uzantıyı yüklemek için yönergeleri izleyin.  
+8. A **VSIX yükleyicisi** ileti kutusu görünür. Uzantıyı yüklemek için yönergeleri izleyin.  
   
 9. Visual Studio'yu kapatın ve yeniden açın.  
   
@@ -71,18 +71,18 @@ VSIX proje şablonu, bir uzantı oluşturmak veya mevcut bir uzantı için dağ�
   
 #### <a name="to-specify-the-location-of-the-template-in-the-new-project-dialog-box"></a>Yeni Proje iletişim kutusunda şablon konumunu belirtmek için  
   
-1.  Şablon klasörlere yerleştirilir *Visual Studio yükleme yolu*\Common7\IDE\ProjectTemplates ve *Visual Studio yükleme yolu*\Common7\IDE\ItemTemplates dizinleri. Yeni Proje iletişim kutusunun üst düzey bölümlerin adlarını şablon klasörlerin adlarını tam olarak aynı. Bunların değişiklik gösterdiği durumlarda, şablon klasörün adını kullanın.  
+1. Şablon klasörlere yerleştirilir *Visual Studio yükleme yolu*\Common7\IDE\ProjectTemplates ve *Visual Studio yükleme yolu*\Common7\IDE\ItemTemplates dizinleri. Yeni Proje iletişim kutusunun üst düzey bölümlerin adlarını şablon klasörlerin adlarını tam olarak aynı. Bunların değişiklik gösterdiği durumlarda, şablon klasörün adını kullanın.  
   
      .Vsix dosyasını uzantısını .zip olarak değiştirin ve dosyayı açın.  
   
-2.  Yeni Proje iletişim bölümünü şablonu görüntülenmelidir aynı ada sahip yeni bir klasör oluşturun.  
+2. Yeni Proje iletişim bölümünü şablonu görüntülenmelidir aynı ada sahip yeni bir klasör oluşturun.  
   
-3.  Şablonun bir alt bölümünde görüntülenecek ise, aynı ada sahip bir alt klasör oluşturun.  
+3. Şablonun bir alt bölümünde görüntülenecek ise, aynı ada sahip bir alt klasör oluşturun.  
   
-4.  Şablon .zip dosyası, yeni bir klasöre taşıyın.  
+4. Şablon .zip dosyası, yeni bir klasöre taşıyın.  
   
-5.  .Zip uzantısı .vsix değiştirin.  
+5. .Zip uzantısı .vsix değiştirin.  
   
-6.  VSIX bildirimi açın.  
+6. VSIX bildirimi açın.  
   
-7.  VSIX bildiriminin güncelleştirme **varlık** olan şablon dosyasını içeren dizin ağacında kök dizinine işaret için şablonun yolu. Örneğin, şablonu içinde \CSharp\Windows ise, başvuru için \CSharp işaret etmelidir.
+7. VSIX bildiriminin güncelleştirme **varlık** olan şablon dosyasını içeren dizin ağacında kök dizinine işaret için şablonun yolu. Örneğin, şablonu içinde \CSharp\Windows ise, başvuru için \CSharp işaret etmelidir.

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ebe69697541a15cc8981d9bf9ab0d23b95e3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051654"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için güncelleştirmeleri yönetme
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Uygulama güncelleştirmeleri otomatik olarak veya programlama yoluyla denetleyebilirsiniz. Bir geliştirici olarak ne zaman ve nasıl güncelleme kontrolleri gerçekleştirilir, güncelleştirmeleri zorunlu olan ve burada uygulama güncelleştirmeleri denetlemeli belirtme esneklik kullanabileceğiniz birçok seçenek mevcuttur.
@@ -41,69 +41,69 @@ ms.locfileid: "56599629"
 
 ### <a name="to-check-for-updates-before-the-application-starts"></a>Uygulama başlamadan önce güncelleştirmeleri denetlemek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
+3. Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
 
-4.  İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin olun **uygulama güncelleştirmeleri denetlesin** onay kutusu seçilidir.
+4. İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin olun **uygulama güncelleştirmeleri denetlesin** onay kutusu seçilidir.
 
-5.  İçinde **uygulamanın güncelleştirmeleri denetleyeceği zamanı seçin** bölümünden **Uygulama başlatılmadan önce**. Bu, kullanıcıların ağa her zaman bağlı uygulama yapılan son güncelleştirmelerle birlikte çalışmasını sağlar.
+5. İçinde **uygulamanın güncelleştirmeleri denetleyeceği zamanı seçin** bölümünden **Uygulama başlatılmadan önce**. Bu, kullanıcıların ağa her zaman bağlı uygulama yapılan son güncelleştirmelerle birlikte çalışmasını sağlar.
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Uygulama başlatıldıktan sonra arka planda güncelleştirmeleri denetlemek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
+3. Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
 
-4.  İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin onay kutusunu **uygulama güncelleştirmeleri denetlesin** seçilir.
+4. İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin onay kutusunu **uygulama güncelleştirmeleri denetlesin** seçilir.
 
-5.  İçinde **uygulama için güncelleştirmeleri bölümüne denetleyeceği zamanı seçin**seçin **uygulama başladıktan sonra**. Uygulama, böylece daha hızlı başlatılır ve ardından, arka planda güncelleştirmeleri denetler ve bir güncelleştirme kullanılabilir olduğunda yalnızca kullanıcıya bildir. Uygulama yeniden başlatılana kadar yüklendikten sonra güncelleştirmeleri etkili olmaz.
+5. İçinde **uygulama için güncelleştirmeleri bölümüne denetleyeceği zamanı seçin**seçin **uygulama başladıktan sonra**. Uygulama, böylece daha hızlı başlatılır ve ardından, arka planda güncelleştirmeleri denetler ve bir güncelleştirme kullanılabilir olduğunda yalnızca kullanıcıya bildir. Uygulama yeniden başlatılana kadar yüklendikten sonra güncelleştirmeleri etkili olmaz.
 
-6.  İçinde **uygulamanın güncelleştirmeleri ne sıklıkla denetleyeceğini belirtin** bölümünde, ya da seçin **uygulama her çalıştırıldığında denetle** (varsayılan) veya **denetleyin her** ve bir sayı ve zaman aralığı girin.
+6. İçinde **uygulamanın güncelleştirmeleri ne sıklıkla denetleyeceğini belirtin** bölümünde, ya da seçin **uygulama her çalıştırıldığında denetle** (varsayılan) veya **denetleyin her** ve bir sayı ve zaman aralığı girin.
 
 ### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Uygulama için gerekli en düşük sürüm olarak belirtmek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
+3. Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
 
-4.  İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin olun **uygulama güncelleştirmeleri denetlesin** onay kutusu seçilidir.
+4. İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin olun **uygulama güncelleştirmeleri denetlesin** onay kutusu seçilidir.
 
-5.  Seçin **bu uygulama için gerekli en düşük sürüm belirtin** onay kutusunu işaretleyin ve ardından girin **ana**, **küçük**, **derleme**ve  **Düzeltme** uygulama için sayı.
+5. Seçin **bu uygulama için gerekli en düşük sürüm belirtin** onay kutusunu işaretleyin ve ardından girin **ana**, **küçük**, **derleme**ve  **Düzeltme** uygulama için sayı.
 
 ### <a name="to-specify-a-different-update-location"></a>Farklı güncelleştirme konumunu belirtmek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
+3. Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
 
-4.  İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin olun **uygulama güncelleştirmeleri denetlesin** onay kutusu seçilidir.
+4. İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin olun **uygulama güncelleştirmeleri denetlesin** onay kutusu seçilidir.
 
-5.  İçinde **güncelleştirme konumu** alanına, aşağıdaki biçimi kullanarak tam bir URL ile güncelleştirme konumu *http://Hostname/ApplicationName*, ya da UNC yolu biçiminde  *\\\Server\ ApplicationName*, veya **Gözat** güncelleştirme konumu için Gözat düğmesini.
+5. İçinde **güncelleştirme konumu** alanına, aşağıdaki biçimi kullanarak tam bir URL ile güncelleştirme konumu *http://Hostname/ApplicationName*, ya da UNC yolu biçiminde  *\\\Server\ ApplicationName*, veya **Gözat** güncelleştirme konumu için Gözat düğmesini.
 
 ### <a name="to-check-for-updates-programmatically"></a>Güncelleştirmeleri programlı olarak denetlemek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
+3. Tıklayın **güncelleştirmeleri** açmak için düğmeyi **uygulama güncelleştirmeleri** iletişim kutusu.
 
-4.  İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin **uygulama güncelleştirmeleri denetlesin** onay kutusu işaretli değilse. (İsteğe bağlı olarak, güncelleştirmeleri programlama yoluyla ve aynı zamanda güncelleştirmeleri otomatik olarak denetle ClickOnce çalışma zamanı denetlemesine izin vermek için bu onay kutusunu seçebilirsiniz.)
+4. İçinde **uygulama güncelleştirmeleri** iletişim kutusunda, emin **uygulama güncelleştirmeleri denetlesin** onay kutusu işaretli değilse. (İsteğe bağlı olarak, güncelleştirmeleri programlama yoluyla ve aynı zamanda güncelleştirmeleri otomatik olarak denetle ClickOnce çalışma zamanı denetlemesine izin vermek için bu onay kutusunu seçebilirsiniz.)
 
-5.  İçinde **güncelleştirme konumu** alanına, aşağıdaki biçimi kullanarak tam bir URL ile güncelleştirme konumu *http://Hostname/ApplicationName*, ya da UNC yolu biçiminde  *\\\Server\ ApplicationName*, veya **Gözat** güncelleştirme konumu için Gözat düğmesini. Uygulamanın güncelleştirilmiş bir sürümünü kendisi için nerede görüneceğini güncelleştirme konumdur.
+5. İçinde **güncelleştirme konumu** alanına, aşağıdaki biçimi kullanarak tam bir URL ile güncelleştirme konumu *http://Hostname/ApplicationName*, ya da UNC yolu biçiminde  *\\\Server\ ApplicationName*, veya **Gözat** güncelleştirme konumu için Gözat düğmesini. Uygulamanın güncelleştirilmiş bir sürümünü kendisi için nerede görüneceğini güncelleştirme konumdur.
 
-6.  Güncelleştirmeleri denetlemek için kullanıcıları seçip bir Windows formunda bir düğme, menü öğesi veya diğer kullanıcı arabirimi öğesi oluşturun. Bu öğenin olay işleyicisinden denetlemek ve güncelleştirmeleri yüklemek için bir yöntemini çağırın. Visual Basic ve Visual örneği bulabilirsiniz C# benzer bir yöntem için kod [nasıl yapılır: ClickOnce dağıtım API'sini kullanarak program aracılığıyla uygulama güncelleştirmelerini denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
+6. Güncelleştirmeleri denetlemek için kullanıcıları seçip bir Windows formunda bir düğme, menü öğesi veya diğer kullanıcı arabirimi öğesi oluşturun. Bu öğenin olay işleyicisinden denetlemek ve güncelleştirmeleri yüklemek için bir yöntemini çağırın. Visual Basic ve Visual örneği bulabilirsiniz C# benzer bir yöntem için kod [nasıl yapılır: ClickOnce dağıtım API'sini kullanarak program aracılığıyla uygulama güncelleştirmelerini denetleme](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
 
-7.  Uygulamanızı oluşturun.
+7. Uygulamanızı oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - <xref:System.Deployment.Application.ApplicationDeployment>

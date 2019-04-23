@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052785"
 ---
 # <a name="custom-xml-parts-overview"></a>Özel XML bölümlerine genel bakış
   Bazı Microsoft Office uygulamaları için belgelerde XML veri ekleyebilir. Bir belgedeki XML verileri ekleme, veriler adlı bir *özel XML bölümleri*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616228"
 
  Open XML ve özel XML bölümleri yapısı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
--   [Office (2007) Open XML dosya biçimleri](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Office (2007) Open XML dosya biçimleri](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Nasıl yapılır: Açık XML Biçimleri belgelerini değiştirme](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Nasıl yapılır: Açık XML Biçimleri belgelerini değiştirme](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [İzlenecek yol: Word 2007 XML biçimi](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [İzlenecek yol: Word 2007 XML biçimi](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Word 2007 belgelerini açık XML biçimleri kullanarak derleme](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Word 2007 belgelerini açık XML biçimleri kullanarak derleme](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Ayrıca Excel, Word ve PowerPoint ikili dosya biçimlerinde kaydedilir belgelerde özel XML bölümleri kullanmanıza olanak sağlar. Ancak, ikili biçimde bir belge kaydedilirse, ekleyemez veya Microsoft Office uygulamasını başlatmadan özel XML bölümleri değiştirin.
@@ -66,9 +66,9 @@ ms.locfileid: "56616228"
 
  Visual Studio kullanarak özel XML parçaları oluşturmak için yeni bir ekleme <xref:Microsoft.Office.Core.CustomXMLPart> için <xref:Microsoft.Office.Core.CustomXMLParts> belgedeki koleksiyonu. Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Nasıl yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Nasıl yapılır: Belge düzeyi özelleştirmelerine özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Nasıl yapılır: VSTO eklentileri kullanarak belgelere özel XML bölümleri ekleme](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Office uygulamasını başlatmadan XML bölümlerini Değiştir
  Ekleyebilir veya Excel, PowerPoint ve Word başlatmadan özel bir XML parçasına değiştirebilirsiniz. Bu, yüklü bir sunucu gibi Microsoft Office uygulamalarının yüklü olmadığı bir bilgisayarda, bir belgedeki XML verileriyle çalışmak istiyorsanız kullanışlıdır.

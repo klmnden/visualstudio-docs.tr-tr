@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059285"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Çağrı yığınını görüntüleme ve hata ayıklayıcı çağrı yığını penceresini kullanma
 
@@ -60,7 +60,7 @@ Sarı bir ok, yürütme işaretçisinin şu anda bulunduğu yığın çerçevesi
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Kullanıcı olmayan kod çağrı yığını penceresinde görüntüleme
 
--   Sağ **çağrı yığını** penceresi ve select **harici kodu Göster**.
+- Sağ **çağrı yığını** penceresi ve select **harici kodu Göster**.
 
 Kullanıcı olmayan kod olduğu zaman gösterilmez herhangi bir kod [yalnızca kendi kodum](../debugger/just-my-code.md) etkinleştirilir. Yönetilen kodda kullanıcı olmayan kod çerçevelerini varsayılan olarak gizlidir. Aşağıdaki gösterim, kullanıcı olmayan kod çerçevelerini yerine görüntülenir:
 
@@ -68,29 +68,29 @@ Kullanıcı olmayan kod olduğu zaman gösterilmez herhangi bir kod [yalnızca k
 
 ## <a name="bkmk_switch"></a> (Hata ayıklayıcı bağlamını değiştirme) başka bir yığın çerçevesine geçiş
 
-1.  İçinde **çağrı yığını** penceresinde, yığın çerçeve kodunu ve görüntülemek istediğiniz veri sağ tıklatın.
+1. İçinde **çağrı yığını** penceresinde, yığın çerçeve kodunu ve görüntülemek istediğiniz veri sağ tıklatın.
 
     Veya çerçevede çift tıkladığınızda **çağrı yığını** penceresinde bu çerçeveye geçiş yap.
 
-2.  Seçin **çerçeveye geçiş yap**.
+2. Seçin **çerçeveye geçiş yap**.
 
      Kıvrık kuyruklu yeşil bir ok, seçtiğiniz yığın çerçevenin yanında görünür. Yürütme işaretçisi halen sarı ok ile işaretlenmiş olan özgün çerçevede kalır. Seçerseniz **adım** veya **devam** gelen **hata ayıklama** menüsünde, yürütme devam eder özgün çerçevede, seçtiğiniz çerçevenin.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Çağrı yığınındaki bir işlevi için kaynak kodu görüntüleme
 
--   İçinde **çağrı yığını** penceresinde, istediğiniz kaynak kodunu işlevi görmek ve seçmek için sağ tıklama **kaynak koda Git**.
+- İçinde **çağrı yığını** penceresinde, istediğiniz kaynak kodunu işlevi görmek ve seçmek için sağ tıklama **kaynak koda Git**.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Çağrı yığını penceresinden belirli bir işleve çalıştırın
 
--  İçinde **çağrı yığını** penceresinde işlevi seçin, sağ tıklayın ve ardından **imlece kadar Çalıştır**.
+- İçinde **çağrı yığını** penceresinde işlevi seçin, sağ tıklayın ve ardından **imlece kadar Çalıştır**.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Bir işlev çağrısının çıkış noktası üzerinde bir kesme noktası ayarlayın
 
--   Bkz: [bir çağrı yığını işlevi bir kesme noktası ayarlamak](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Bkz: [bir çağrı yığını işlevi bir kesme noktası ayarlamak](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>İçin veya başka bir iş parçacığından çağrıları görüntüleme
 
--   Sağ **çağrı yığını** penceresi ve select **dahil çağrıları öğesine/öğesinden diğer iş parçacıkları**.
+- Sağ **çağrı yığını** penceresi ve select **dahil çağrıları öğesine/öğesinden diğer iş parçacıkları**.
 
 ## <a name="visually-trace-the-call-stack"></a>Çağrı yığınını görsel olarak izleme
 
@@ -104,11 +104,11 @@ Visual Studio Enterprise'da (yalnızca), hata ayıklama sırasında çağrı yı
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Çağrı yığınındaki bir işleve ilişkin ayrıştırma kodunu görüntülemek (C#, C++, Visual Basic F#)
 
--   İçinde **çağrı yığını** penceresinde, sökme kodunu istediğiniz işlevi görebilir ve sağ **Ayrıştırılımış**.
+- İçinde **çağrı yığını** penceresinde, sökme kodunu istediğiniz işlevi görebilir ve sağ **Ayrıştırılımış**.
 
 ## <a name="change-the-optional-information-displayed"></a>Görüntülenen isteğe bağlı bilgileri değiştirmek
 
--   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.
+- Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.
 
 ## <a name="bkmk_symbols"></a> Bir modüle ilişkin simgeleri yüklemek (C#, C++, Visual Basic F#)
 
@@ -118,25 +118,25 @@ Bkz: [belirtin, sembol (.pdb) ve kaynak dosyaları](../debugger/specify-symbol-d
 
 ### <a name="to-load-symbols"></a>Simgeleri yüklemek için
 
-1.  İçinde **çağrı yığını** penceresinde, simgelerin yığın çerçevesi yüklenmedi sağ tıklatın. Çerçeve soluk görünecektir.
+1. İçinde **çağrı yığını** penceresinde, simgelerin yığın çerçevesi yüklenmedi sağ tıklatın. Çerçeve soluk görünecektir.
 
-2.  İşaret **sembolleri Yükle** seçip **Microsoft sembol sunucuları** (varsa), ya da sembol yoluna göz atın.
+2. İşaret **sembolleri Yükle** seçip **Microsoft sembol sunucuları** (varsa), ya da sembol yoluna göz atın.
 
 ### <a name="to-set-the-symbol-path"></a>Sembol yolunu ayarlamak için
 
-1.  İçinde **çağrı yığını** penceresinde seçin **sembol ayarları** kısayol menüsünden.
+1. İçinde **çağrı yığını** penceresinde seçin **sembol ayarları** kısayol menüsünden.
 
      **Seçenekleri** iletişim kutusu açılır ve **sembolleri** sayfası görüntülenir.
 
-2.  Seçin **sembol ayarları**.
+2. Seçin **sembol ayarları**.
 
-3.  İçinde **seçenekleri** iletişim kutusunda, klasör simgesine tıklayın.
+3. İçinde **seçenekleri** iletişim kutusunda, klasör simgesine tıklayın.
 
      İçinde **sembol dosyası (.pdb) konumlar** kutusunda, bir imleç görüntülenir.
 
-4.  Bir dizin yol adı, hata ayıklaması yaptığınız bilgisayarda simge konumuna girin. Yerel ve uzak hata ayıklama için yerel bilgisayarınızda bir yolu budur.
+4. Bir dizin yol adı, hata ayıklaması yaptığınız bilgisayarda simge konumuna girin. Yerel ve uzak hata ayıklama için yerel bilgisayarınızda bir yolu budur.
 
-5.  Seçin **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
+5. Seçin **Tamam** kapatmak için **seçenekleri** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

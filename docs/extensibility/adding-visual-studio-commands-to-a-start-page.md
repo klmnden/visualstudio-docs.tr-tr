@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040165"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Visual Studio komutları için bir başlangıç sayfası Ekle
 
@@ -73,15 +73,15 @@ Kullanabileceğiniz `vscom:` Visual Studio komutları için XAML bağlamak için
 
 ### <a name="to-call-a-command-from-an-assembly"></a>Bir derlemeden bir komutu çağırmak için
 
-1.  Çözümünüz içinde derlemesine bir başvuru ekleyin.
+1. Çözümünüz içinde derlemesine bir başvuru ekleyin.
 
-2.  Üst kısmındaki *StartPage.xaml* , derleme için bir ad alanı yönerge ekleyin aşağıdaki örnekte gösterildiği gibi dosya.
+2. Üst kısmındaki *StartPage.xaml* , derleme için bir ad alanı yönerge ekleyin aşağıdaki örnekte gösterildiği gibi dosya.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  Komut ayarlayarak çağırma `Command` aşağıdaki örnekte gösterildiği gibi bir XAML nesnesinin özelliği.
+3. Komut ayarlayarak çağırma `Command` aşağıdaki örnekte gösterildiği gibi bir XAML nesnesinin özelliği.
 
      Xaml
 

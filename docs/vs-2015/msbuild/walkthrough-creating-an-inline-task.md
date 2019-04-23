@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061599"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>İzlenecek yol: Satır İçi Görev Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ MSBuild görevleri, derleme uygulayan bir sınıf tarafından genellikle oluştu
   
 #### <a name="to-create-and-modify-a-project-file"></a>Oluşturma ve bir proje dosyasını değiştirmek için  
   
-1.  Visual Studio'da üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**.  
+1. Visual Studio'da üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**.  
   
-2.  İçinde **yeni proje** Visual C# proje türü ve ardından iletişim kutusunda **Windows Forms uygulaması** şablonu. İçinde **adı** kutusuna `InlineTasks`. Tür a **konumu** çözümü, örneğin, `D:\`. Emin **çözüm için dizin oluştur** seçildiğinde **kaynak denetimine Ekle** temizlenir, ve **çözüm adı** olduğu `InlineTasks`.  
+2. İçinde **yeni proje** Visual C# proje türü ve ardından iletişim kutusunda **Windows Forms uygulaması** şablonu. İçinde **adı** kutusuna `InlineTasks`. Tür a **konumu** çözümü, örneğin, `D:\`. Emin **çözüm için dizin oluştur** seçildiğinde **kaynak denetimine Ekle** temizlenir, ve **çözüm adı** olduğu `InlineTasks`.  
   
      Tıklayın **Tamam** proje dosyası oluşturmak için.  
   
-3.  İçinde **Çözüm Gezgini**InlineTasks proje düğümüne sağ tıklayın ve ardından **projeyi**.  
+3. İçinde **Çözüm Gezgini**InlineTasks proje düğümüne sağ tıklayın ve ardından **projeyi**.  
   
-4.  Proje düğümüne sağ tıklayın ve ardından **Düzenle InlineTasks.csproj**.  
+4. Proje düğümüne sağ tıklayın ve ardından **Düzenle InlineTasks.csproj**.  
   
      Proje dosyası kod düzenleyicisinde görüntülenir.  
   

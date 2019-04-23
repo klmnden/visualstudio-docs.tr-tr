@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d305fdfa74ff680a9d5ef0b12b1a84be10958204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f2dc0f425c86b7304ccde5778f8479678bc41f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037888"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Etki Alanına Özgü Dil Gezgini ile Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ ms.locfileid: "54803809"
   
  Aşağıdaki düğümleri içerir:  
   
--   **Bağlantı oluşturucular**. Modelde bağlantı oluşturucular bir listesi. Bağlantı oluşturucular hakkında daha fazla bilgi için bkz: [bağlantı oluşturmayı özelleştirme - yeniden yönlendirme](../misc/customizing-link-creation-redirection.md).  
+- **Bağlantı oluşturucular**. Modelde bağlantı oluşturucular bir listesi. Bağlantı oluşturucular hakkında daha fazla bilgi için bkz: [bağlantı oluşturmayı özelleştirme - yeniden yönlendirme](../misc/customizing-link-creation-redirection.md).  
   
--   **Bağlayıcılar**. Model Bağlayıcısı diyagram öğeleri listesi. Bağlayıcılar hakkında daha fazla bilgi için bkz. [türleri, şekiller ve bağlayıcıları - yeniden yönlendirme](../misc/types-of-shapes-and-connectors-redirect.md).  
+- **Bağlayıcılar**. Model Bağlayıcısı diyagram öğeleri listesi. Bağlayıcılar hakkında daha fazla bilgi için bkz. [türleri, şekiller ve bağlayıcıları - yeniden yönlendirme](../misc/types-of-shapes-and-connectors-redirect.md).  
   
--   **Diyagram**. Diyagram ve bağlayıcı eşlemeleri ve Şekil eşlemeleri listesi tanımlayan özellikleri kümesi.  
+- **Diyagram**. Diyagram ve bağlayıcı eşlemeleri ve Şekil eşlemeleri listesi tanımlayan özellikleri kümesi.  
   
--   **Etki alanı sınıfları**. Etki alanı sınıfları modelinde listesi.  
+- **Etki alanı sınıfları**. Etki alanı sınıfları modelinde listesi.  
   
--   **Etki alanı ilişkileri**. Etki alanı ilişkileri modelinde listesi.  
+- **Etki alanı ilişkileri**. Etki alanı ilişkileri modelinde listesi.  
   
--   **Etki alanı türleri**. Model içinde kullanılan yerleşik ve dış türleri listesi.  
+- **Etki alanı türleri**. Model içinde kullanılan yerleşik ve dış türleri listesi.  
   
--   **Düzenleyici**. Listesini **araç kutusu** sekmeler ve içerdikleri öğelerin ve model için doğrulama ayarları. Doğrulama hakkında daha fazla bilgi için bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).  
+- **Düzenleyici**. Listesini **araç kutusu** sekmeler ve içerdikleri öğelerin ve model için doğrulama ayarları. Doğrulama hakkında daha fazla bilgi için bkz: [etki alanına özgü bir dilde doğrulama](../modeling/validation-in-a-domain-specific-language.md).  
   
--   **Gezgin davranışı**. Gezgin davranışını belirtin oluşturulan tasarımcıdaki ayarlar. Explorer özelleştirme hakkında daha fazla bilgi için bkz. [Model Gezginini özelleştirme](../modeling/customizing-the-model-explorer.md).  
+- **Gezgin davranışı**. Gezgin davranışını belirtin oluşturulan tasarımcıdaki ayarlar. Explorer özelleştirme hakkında daha fazla bilgi için bkz. [Model Gezginini özelleştirme](../modeling/customizing-the-model-explorer.md).  
   
--   **Şekiller**. Modeldeki şekli diyagram öğeleri listesi.  
+- **Şekiller**. Modeldeki şekli diyagram öğeleri listesi.  
   
--   **XML serileştirme davranışı**. Model için serileştirme ayarlar. Seri hale getirme hakkında daha fazla bilgi için bkz: [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).  
+- **XML serileştirme davranışı**. Model için serileştirme ayarlar. Seri hale getirme hakkında daha fazla bilgi için bkz: [özelleştirme dosya depolamayı ve XML serileştirmeyi](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Etki alanına özgü dil araçları sözlüğü](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039801"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uzak makinede Windows Mağazası uygulamalarını çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
  Visual Studio uzak Araçlar uygulaması, hata ayıklama, profil ve Visual Studio çalıştıran ikinci bir bilgisayardan bir cihazda çalışan bir Windows Store uygulaması test çalıştırmak sağlar. Visual Studio bilgisayarı, Windows Store uygulamaları dokunmatik, coğrafi konum ve fiziksel yön gibi belirli işlevleri desteklemiyorsa, uzak bir cihazda çalıştırma özellikle etkili olabilir. Bu konu başlığı altında yapılandırmak ve bir uzak oturumu başlatmak için gereken yordamları açıklar.  
   
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
+## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  Şunları öğrenebilirsiniz:  
   
  [Önkoşullar](#BKMK_Prerequisites)  
@@ -51,27 +51,27 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
   [Uzaktan hata ayıklama oturumu çalıştırma](#BKMK_RunRemoteDebug)  
   
-##  <a name="BKMK_Prerequisites"></a> Önkoşullar  
+## <a name="BKMK_Prerequisites"></a> Önkoşullar  
  Uzak bir cihazda hata ayıklamak için:  
   
--   Uzak cihaz ve Visual Studio yüklü bilgisayar, ağ üzerinden bağlı veya doğrudan Ethernet kablosu ile bağlı olmalıdır. Internet üzerinden hata ayıklama desteklenmez.  
+- Uzak cihaz ve Visual Studio yüklü bilgisayar, ağ üzerinden bağlı veya doğrudan Ethernet kablosu ile bağlı olmalıdır. Internet üzerinden hata ayıklama desteklenmez.  
   
--   Bir geliştirici lisansı uzak cihaz üzerinde yüklü olmalıdır.  
+- Bir geliştirici lisansı uzak cihaz üzerinde yüklü olmalıdır.  
   
--   Uzaktaki cihaz uzaktan hata ayıklama bileşenlerini çalıştırıyor olmalıdır.  
+- Uzaktaki cihaz uzaktan hata ayıklama bileşenlerini çalıştırıyor olmalıdır.  
   
--   Yükleme sırasında güvenlik duvarını yapılandırmak için Uzak cihazda yönetici olmanız gerekir. Çalıştırmak veya uzaktan hata ayıklayıcıya bağlanmak için Uzak cihaza kullanıcı erişiminiz olmalıdır.  
+- Yükleme sırasında güvenlik duvarını yapılandırmak için Uzak cihazda yönetici olmanız gerekir. Çalıştırmak veya uzaktan hata ayıklayıcıya bağlanmak için Uzak cihaza kullanıcı erişiminiz olmalıdır.  
   
-##  <a name="BKMK_Security"></a> Güvenlik  
+## <a name="BKMK_Security"></a> Güvenlik  
  Varsayılan olarak, uzaktan hata ayıklayıcıyı Windows kimlik doğrulaması kullanır.  
   
 > [!WARNING]
 >  Uzaktan hata ayıklayıcıyı kimlik doğrulaması yok modunda çalıştırmayı seçebilirsiniz, ancak bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Ağın, kötü amaçlı veya tehlikeli trafik riskinden uzak olduğundan eminseniz Kimlik Doğrulaması Yok modunu seçin.  
   
-##  <a name="BKMK_DirectConnect"></a> Uzak cihaza doğrudan bağlanma  
+## <a name="BKMK_DirectConnect"></a> Uzak cihaza doğrudan bağlanma  
  Uzak cihaza doğrudan bağlanmak için Visual Studio bilgisayarını cihaza standart bir Ethernet kablosu ile bağlanın. Cihazın Ethernet bağlantı noktası yoksa kablo bağlantısı için bir USB Ethernet Bağdaştırıcısı kullanabilirsiniz.  
   
-##  <a name="BKMK_Installing_the_Remote_Tools"></a> Uzak araçları yükleme  
+## <a name="BKMK_Installing_the_Remote_Tools"></a> Uzak araçları yükleme  
   
 > [!NOTE]
 >  **Sürümler ve güncelleştirmeler**  
@@ -98,7 +98,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
  Varsayılan olarak, uzaktan hata ayıklama bileşenleri yüklendiği **C:\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\Remote hata ayıklayıcı** klasör.  
   
-##  <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Uzaktan hata ayıklama İzleyicisi başlatılıyor  
+## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Uzaktan hata ayıklama İzleyicisi başlatılıyor  
   
 > [!NOTE]
 >  Uzaktan hata ayıklayıcı Visual Studio konak ile iletişime izin vermek için Güvenlik Duvarı'nı yapılandırdığından; uzaktan hata ayıklayıcıyı ilk kez başlattığınızda, uzak cihazda yönetici olması gerekir.  
@@ -107,22 +107,22 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
  Üzerinde **uzaktan hata ayıklama Yapılandırması** iletişim kutusunda:  
   
-1.  Windows Web Hizmetleri API'si yüklü değilse seçin **yükleyin**  
+1. Windows Web Hizmetleri API'si yüklü değilse seçin **yükleyin**  
   
-2.  İçinde **Windows Güvenlik Duvarı Yapılandırma** grubunda, bağlantılara izin vermek istediğiniz ağları seçin. Cihaz şu anda bağlı olduğu ağlar etkinleştirilir. En az bir ağ seçmelisiniz.  
+2. İçinde **Windows Güvenlik Duvarı Yapılandırma** grubunda, bağlantılara izin vermek istediğiniz ağları seçin. Cihaz şu anda bağlı olduğu ağlar etkinleştirilir. En az bir ağ seçmelisiniz.  
   
-3.  Seçin **uzaktan hata ayıklamayı Yapılandır** duvarını ayarlamak ve uzaktan hata ayıklayıcıyı başlatın.  Açık **Visual Studio uzaktan hata ayıklama İzleyicisi** uzak araçlar için kullanıcılara izin vermek ve diğer ayarlamak için iletişim kutusu Gelişmiş Seçenekleri.  
+3. Seçin **uzaktan hata ayıklamayı Yapılandır** duvarını ayarlamak ve uzaktan hata ayıklayıcıyı başlatın.  Açık **Visual Studio uzaktan hata ayıklama İzleyicisi** uzak araçlar için kullanıcılara izin vermek ve diğer ayarlamak için iletişim kutusu Gelişmiş Seçenekleri.  
   
-4.  **Visual Studio uzaktan hata ayıklama İzleyicisi** iletişim kutusu görüntülenir. Uzak araçlar için kullanıcılara izin verin ve bu iletişim kutusundan diğer gelişmiş seçenekleri ayarlayın.  
+4. **Visual Studio uzaktan hata ayıklama İzleyicisi** iletişim kutusu görüntülenir. Uzak araçlar için kullanıcılara izin verin ve bu iletişim kutusundan diğer gelişmiş seçenekleri ayarlayın.  
   
-##  <a name="BKMK_ConfigureRemoteDebugger"></a> Uzaktan hata ayıklayıcı yapılandırma  
+## <a name="BKMK_ConfigureRemoteDebugger"></a> Uzaktan hata ayıklayıcı yapılandırma  
  Uzaktan hata ayıklayıcı yapılandırmasını değiştirmek için iki aracı kullanın.  
   
 1. Üzerinde **Araçları** menüsü **Visual Studio uzaktan hata ayıklama İzleyicisi**:  
   
-   1.  Seçin **seçenekleri** bağlantı noktası numarasını, kimlik doğrulama modunu veya uzaktan hata ayıklayıcı zaman aşımı aralığını değiştirmek için.  
+   1. Seçin **seçenekleri** bağlantı noktası numarasını, kimlik doğrulama modunu veya uzaktan hata ayıklayıcı zaman aşımı aralığını değiştirmek için.  
   
-   2.  Seçin **izinleri** uzaktan hata ayıklama iznine sahip kullanıcı eklemek veya kaldırmak için.  
+   2. Seçin **izinleri** uzaktan hata ayıklama iznine sahip kullanıcı eklemek veya kaldırmak için.  
   
        > [!NOTE]
        >  Her kullanıcı hesabı için uzaktan hata ayıklamasına izin verilmelidir.  
@@ -133,7 +133,7 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
   
 3. Üzerinde **hata ayıklama için Windows Güvenlik Duvarı Yapılandırma** sayfasında, eklemek veya bağlanmak için uzaktan hata ayıklayıcı istediğiniz ağ türünü kaldırın. Cihaz şu anda bağlı olduğu ağlar etkinleştirilir. En az bir ağ seçmelisiniz.  
   
-##  <a name="BKMK_ConnectVS"></a> Uzaktan hata ayıklama için Visual Studio projesini yapılandırma  
+## <a name="BKMK_ConnectVS"></a> Uzaktan hata ayıklama için Visual Studio projesini yapılandırma  
  Proje özelliklerinde Bağlanılacak uzak cihazı belirtin. Yordam programlama diline bağlı olarak farklılık gösterir. Uzak cihaz ağ adını yazmanız veya uzaktan hata ayıklayıcı bağlantısı Seç iletişim kutusundan seçebilirsiniz.  
   
  ![Select uzaktan hata ayıklayıcı bağlantısı iletişim kutusu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -143,29 +143,29 @@ Yalnızca Windows için geçerlidir] (.. /Image/windows_only_content.png "window
 > [!TIP]
 >  Bir uzak cihaza bağlanırken sorun yaşıyorsanız, cihazın IP adresini girmeyi deneyin. Bir cihazın IP adresini belirlemek için bir komut penceresi açın ve ardından yazın **ipconfig**. IP adresi olarak listelenip listelenmediğini **IPv4 adresi**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> C# ve Visual Basic projeleri için Uzak cihaz seçme  
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> C# ve Visual Basic projeleri için Uzak cihaz seçme  
  ![Uzaktan hata ayıklama için proje özellikleri yönetilen](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Çözüm Gezgini'nde proje adını seçin ve ardından **özellikleri** kısayol menüsünden.  
+1. Çözüm Gezgini'nde proje adını seçin ve ardından **özellikleri** kısayol menüsünden.  
   
-2.  Seçin **hata ayıklama**.  
+2. Seçin **hata ayıklama**.  
   
-3.  Seçin **uzak makine** gelen **hedef cihaz** listesi.  
+3. Seçin **uzak makine** gelen **hedef cihaz** listesi.  
   
-4.  Uzak cihaz ağ adını **uzak makine** kutusuna veya seçin **Bul** cihazı seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
+4. Uzak cihaz ağ adını **uzak makine** kutusuna veya seçin **Bul** cihazı seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> JavaScript ve C++ projeleri için Uzak cihaz seçme  
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> JavaScript ve C++ projeleri için Uzak cihaz seçme  
  ![C&#43; &#43; proje uzaktan hata ayıklama özellikleri](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Çözüm Gezgini'nde proje adını seçin ve ardından **özellikleri** kısayol menüsünden.  
+1. Çözüm Gezgini'nde proje adını seçin ve ardından **özellikleri** kısayol menüsünden.  
   
-2.  Genişletin **yapılandırma özellikleri** düğümünü ve ardından **hata ayıklama**.  
+2. Genişletin **yapılandırma özellikleri** düğümünü ve ardından **hata ayıklama**.  
   
-3.  Seçin **uzaktan hata ayıklayıcı** gelen **başlatmak için hata ayıklayıcı** listesi.  
+3. Seçin **uzaktan hata ayıklayıcı** gelen **başlatmak için hata ayıklayıcı** listesi.  
   
-4.  Uzak cihaz ağ adını **makine adı** kutusuna veya kutusuna cihazı seçin aşağı oku seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
+4. Uzak cihaz ağ adını **makine adı** kutusuna veya kutusuna cihazı seçin aşağı oku seçin **uzaktan hata ayıklayıcı bağlantısı Seç** iletişim kutusu.  
   
-##  <a name="BKMK_RunRemoteDebug"></a> Uzaktan hata ayıklama oturumu çalıştırma  
+## <a name="BKMK_RunRemoteDebug"></a> Uzaktan hata ayıklama oturumu çalıştırma  
  Başlatın, durdurun ve uzaktan hata ayıklama oturumu, bir yerel oturumda olduğu gibi gidin. Hata ayıklamaya başlamadan önce uzaktan hata ayıklama İzleyicisi uzak cihazda çalıştığından emin olun.  
   
  Ardından **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menü (klavye: F5). Proje yeniden derlenen, ardından dağıtılan ve uzak cihaz üzerinde başlatıldı. Hata ayıklayıcı kesme noktalarında yürütmeyi askıya alır ve içine, üzerine ve dışına kodunuzu geçebilirsiniz. Seçin **hata ayıklamayı Durdur** hata ayıklama oturumunuzu bitirmek ve uzak uygulamayı kapatmak için. Daha fazla bilgi için [uygulamaları Visual Studio'da hata ayıklama](../debugger/debug-store-apps-in-visual-studio.md).  

@@ -15,67 +15,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048066"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Nasıl yapılır: Bir parametrenin tür tanımlayıcısını tanımlama
   Bir tür tanımlayıcı bir parametrenin veri türünü tanımlayan özellikler içerir. Tür tanımlayıcısını bir alan, bir varlık veya varlık koleksiyonunu tanımlayabilirsiniz. Daha fazla bilgi için [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Bir parametrenin tür tanımlayıcısını tanımlamak için
 
-1.  İçinde **BDC yöntem ayrıntıları** penceresinde, parametrenin tür tanımlayıcısını seçin.
+1. İçinde **BDC yöntem ayrıntıları** penceresinde, parametrenin tür tanımlayıcısını seçin.
 
-2.  Menü çubuğunda, **görünümü**, **Özellikler penceresi**.
+2. Menü çubuğunda, **görünümü**, **Özellikler penceresi**.
 
-3.  İçinde **özellikleri** penceresinde tür tanımlayıcısı özelliklerini ayarlayın.
+3. İçinde **özellikleri** penceresinde tür tanımlayıcısı özelliklerini ayarlayın.
 
      Aşağıdaki yordamlarda, bir tür tanımlayıcı bir alanı, varlığı veya varlık koleksiyonu olarak tanımlamak açıklanır.
 
 ### <a name="to-define-a-field"></a>Bir alanı tanımlamak için
 
-1.  İçinde **özellikleri** penceresinde **adı** özelliği tür tanımlayıcı bir varlığı temsil eden tür alanı adını (örneğin: **FirstName**).
+1. İçinde **özellikleri** penceresinde **adı** özelliği tür tanımlayıcı bir varlığı temsil eden tür alanı adını (örneğin: **FirstName**).
 
-2.  Listesinde yanında **TypeName** özelliği, uygun veri türünü seçin (örneğin, **Int32**).
+2. Listesinde yanında **TypeName** özelliği, uygun veri türünü seçin (örneğin, **Int32**).
 
      Diğer isteğe bağlı parametreler hakkında daha fazla bilgi için bkz: [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>Bir varlık tanımlamak için
 
-1.  İçinde **özellikleri** penceresinde **adı** özelliğini varlığı tanımlayan bir ad (örneğin: **Kişi**).
+1. İçinde **özellikleri** penceresinde **adı** özelliğini varlığı tanımlayan bir ad (örneğin: **Kişi**).
 
-2.  Ayarlama **TypeName** özelliğini tam olarak nitelenmiş adını varlığı temsil eden tür. Bu tür bir sınıf projenizi, çözümünüzde başvurduğunuz bir derlemede tanımlı bir tür veya BDC nesne modelinde tanımlı bir tür olabilir.
+2. Ayarlama **TypeName** özelliğini tam olarak nitelenmiş adını varlığı temsil eden tür. Bu tür bir sınıf projenizi, çözümünüzde başvurduğunuz bir derlemede tanımlı bir tür veya BDC nesne modelinde tanımlı bir tür olabilir.
 
-    -   Projenizdeki bir sınıf için yanındaki aşağı oku seçin **TypeName** özelliği seçin **geçerli proje** sekmede görünür ve ardından projenizdeki sınıfı seçin iletişim kutusu.
+    - Projenizdeki bir sınıf için yanındaki aşağı oku seçin **TypeName** özelliği seçin **geçerli proje** sekmede görünür ve ardından projenizdeki sınıfı seçin iletişim kutusu.
 
          Tam adı ad alanı ve LOB sistemi adından önce gelen sınıfın adını içerir. Aşağıdaki örnekte ayarlar **TypeName** projenizdeki bir sınıf.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
-    -   Çözümünüzdeki bir derlemede bulunan bir tür için tam nitelikli ad tür adını, derleme, sürüm numarasını, kültürü ve ortak anahtar belirteci adını içerir.
+    - Çözümünüzdeki bir derlemede bulunan bir tür için tam nitelikli ad tür adını, derleme, sürüm numarasını, kültürü ve ortak anahtar belirteci adını içerir.
 
          Aşağıdaki örnekte ayarlar **TypeName** çözümünüz içerisinde referans bir derlemede tanımlı bir tür özelliği.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
-    -   İVB nesne modelinde tanımlı bir tür için tam adı ad alanı ve tür adını içerir.
+    - İVB nesne modelinde tanımlı bir tür için tam adı ad alanı ve tür adını içerir.
 
          Aşağıdaki örnekte ayarlar **TypeName** BDC nesne modeli içerisindeki bir türe özelliği.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3.  İçinde **BDC yöntem ayrıntıları** penceresinde tür tanımlayıcısı için görüntülenen listeyi açın ve ardından **Düzenle**.
+3. İçinde **BDC yöntem ayrıntıları** penceresinde tür tanımlayıcısı için görüntülenen listeyi açın ve ardından **Düzenle**.
 
      **BDC Gezgini** penceresi açılır.
 
-4.  İçinde **BDC Gezgini**, tür tanımlayıcı kısayol menüsünü açın ve ardından **tür tanımlayıcı Ekle**.
+4. İçinde **BDC Gezgini**, tür tanımlayıcı kısayol menüsünü açın ve ardından **tür tanımlayıcı Ekle**.
 
      Yeni bir tür tanımlayıcı alt öğe olarak varlık türü tanımlayıcısına eklenir. Bu tür tanımlayıcıyı alan olarak yapılandırın.
 
-5.  Varlığın her alanı için bir alt tür tanımlayıcısı eklemek için 4. adımı yineleyin.
+5. Varlığın her alanı için bir alt tür tanımlayıcısı eklemek için 4. adımı yineleyin.
 
 ### <a name="to-define-a-collection-of-entities"></a>Bir varlık koleksiyonu tanımlamak için
 

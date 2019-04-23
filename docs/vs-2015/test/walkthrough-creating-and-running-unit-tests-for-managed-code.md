@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058895"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>İzlenecek yol: Oluşturma ve yönetilen kod için birim testleri çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Bu izlenecek yol oluşturma, çalıştırma ve yönetilen kod ve Visual Studio T
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   Banka projesi. Bkz: [birim testleri oluşturmak için proje örnek](../test/sample-project-for-creating-unit-tests.md).  
+- Banka projesi. Bkz: [birim testleri oluşturmak için proje örnek](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> İzlenecek yol hazırla  
+## <a name="BKMK_Prepare_the_walkthrough"></a> İzlenecek yol hazırla  
   
 1. Visual Studio'yu açın.  
   
@@ -107,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Bir birim testi projesi oluşturma  
+## <a name="BKMK_Create_a_unit_test_project"></a> Bir birim testi projesi oluşturma  
  **Önkoşul**: Yordamdaki adımları [Yönergeyi Hazırla](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Birim testi projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde seçin **Ekle**ve ardından **yeni proje...** .  
+1. Üzerinde **dosya** menüsünde seçin **Ekle**ve ardından **yeni proje...** .  
   
-2.  Yeni Proje iletişim kutusunda Genişlet **yüklü**, genişletme **Visual C#** ve ardından **Test**.  
+2. Yeni Proje iletişim kutusunda Genişlet **yüklü**, genişletme **Visual C#** ve ardından **Test**.  
   
-3.  Şablonlar listesinden **birim testi projesi**.  
+3. Şablonlar listesinden **birim testi projesi**.  
   
-4.  İçinde **adı** kutusuna BankTest girin ve ardından **Tamam**.  
+4. İçinde **adı** kutusuna BankTest girin ve ardından **Tamam**.  
   
      **BankTests** projesi eklenir **banka** çözüm.  
   
-5.  İçinde **BankTests** projesi, bir başvuru ekleyin **banka** çözüm.  
+5. İçinde **BankTests** projesi, bir başvuru ekleyin **banka** çözüm.  
   
      Çözüm Gezgini'nde seçin **başvuruları** içinde **BankTests** proje ve ardından **Başvuru Ekle...**  bağlam menüsünden.  
   
-6.  Başvuru Yöneticisi iletişim kutusunda Genişlet **çözüm** iade edin **banka** öğesi.  
+6. Başvuru Yöneticisi iletişim kutusunda Genişlet **çözüm** iade edin **banka** öğesi.  
   
-##  <a name="BKMK_Create_the_test_class"></a> Test sınıfı oluşturun  
+## <a name="BKMK_Create_the_test_class"></a> Test sınıfı oluşturun  
  Doğrulamak için bir test sınıfına ihtiyacımız `BankAccount` sınıfı. Proje şablonu tarafından oluşturulan Unittest1.cs'yi kullanabiliriz, ancak dosyaya verin ve daha açıklayıcı adlar vermeliyiz. Tek bir adımda Çözüm Gezgini'nde dosyayı yeniden adlandırarak yapabiliriz.  
   
  **Bir sınıf dosyasını yeniden adlandırma**  
@@ -163,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Test sınıfı gereksinimleri  
+### <a name="BKMK_Test_class_requirements"></a> Test sınıfı gereksinimleri  
  Bir test sınıfı için en düşük gereksinimler aşağıda verilmiştir:  
   
 - `[TestClass]` Özniteliği, kod herhangi sınıflar, Test Gezgini'nde de çalıştırmak istediğiniz birim test yöntemlerini içeren Microsoft birim testi çerçevesi ile yönetilen için gereklidir.  
@@ -172,12 +172,12 @@ using BankAccountNS;
   
   Sahip olmadığınız diğer birim testi projesi sınıflarda olabilir `[TestClass]` özniteliği ve diğer yöntemler bulunabilir sahip olmayan test sınıflarında `[TestMethod]` özniteliği. Diğer sınıfları ve yöntemleri test yöntemlerinizde kullanabilirsiniz.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> İlk test yöntemini oluştur  
+## <a name="BKMK_Create_the_first_test_method"></a> İlk test yöntemini oluştur  
  Bu yordamda, biz birim testi davranışını doğrulamak için yöntem yazacak `Debit` yöntemi `BankAccount` sınıfı. Yöntem yukarıda listelenmiştir.  
   
  Test altındaki yöntemi çözümleyerek, denetlenmesi gereken en az üç davranış olduğu belirleriz:  
   
-1. Çağırılıyorsa yöntem bir [üretiliyor] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) borç tutarı bakiyeden büyükse.  
+1. [Üretiliyor] (çağırılıyorsa yöntem<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) borç tutarı bakiyeden büyükse.  
   
 2. Ayrıca `ArgumentOutOfRangeException` borç tutarını küçükse sıfır.  
   
@@ -213,28 +213,28 @@ using BankAccountNS;
   
    Yöntem oldukça basittir. Yeni bir ayarladığımız `BankAccount` nesnesi bir Başlangıç bakiyesi ve geçerli bir süre sonra geri alma. Yönetilen kod için Microsoft birim test çerçevesi kullandığımız <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> yöntemi, beklediğimiz bitiş bakiyesini olduğundan emin olun.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Test yöntemi gereksinimleri  
+### <a name="BKMK_Test_method_requirements"></a> Test yöntemi gereksinimleri  
  Bir test yönteminin aşağıdaki gereksinimleri karşılaması gerekir:  
   
--   Yöntem ile belirtilmiş olmalıdır `[TestMethod]` özniteliği.  
+- Yöntem ile belirtilmiş olmalıdır `[TestMethod]` özniteliği.  
   
--   Yöntem döndürmelidir `void`.  
+- Yöntem döndürmelidir `void`.  
   
--   Yöntemin parametreleri olamaz.  
+- Yöntemin parametreleri olamaz.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Derleme ve test çalıştırma  
+## <a name="BKMK_Build_and_run_the_test"></a> Derleme ve test çalıştırma  
   
 #### <a name="to-build-and-run-the-test"></a>Derleme ve test çalıştırmak için  
   
-1.  Üzerinde **derleme** menüsünde seçin **Çözümü Derle**.  
+1. Üzerinde **derleme** menüsünde seçin **Çözümü Derle**.  
   
      Herhangi bir hata varsa ile birlikte UnitTestExplorer penceresi görünür **Not** listelenen **çalıştırılmamış testler** grubu. Test Explorer başarılı bir oluşturmadan sonra görünmüyorsa seçin **Test** menüde ardından **Windows**ve ardından **Test Gezgini**.  
   
-2.  Seçin **tümünü Çalıştır** testi çalıştırmak için. Durum çubuğu test çalışırken pencerenin en üstünde bir animasyon görünür. Testler başarısız olursa test çalışmasının sonunda, tüm test yöntemleri geçerse yeşil veya Kırmızı çubuk kapatır.  
+2. Seçin **tümünü Çalıştır** testi çalıştırmak için. Durum çubuğu test çalışırken pencerenin en üstünde bir animasyon görünür. Testler başarısız olursa test çalışmasının sonunda, tüm test yöntemleri geçerse yeşil veya Kırmızı çubuk kapatır.  
   
-3.  Bu durumda, test başarısızdır. Test yöntemi taşınır **başarısız testler**. Grup. Pencerenin alt kısmındaki ayrıntılarını görüntülemek için Test Gezgini'nde yöntemi seçin.  
+3. Bu durumda, test başarısızdır. Test yöntemi taşınır **başarısız testler**. Grup. Pencerenin alt kısmındaki ayrıntılarını görüntülemek için Test Gezgini'nde yöntemi seçin.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Kodunuzu düzeltin ve testlerinizi yeniden çalıştırın  
  **Test sonuçlarını çözümleme**  
   
  Test sonucu hatayı açıklayan bir ileti içerir. İçin `AreEquals` yöntemi iletiyi görüntüler, ne bekleniyordu ((<strong>beklenen\<*XXX*></strong>parametresi) ve hangi gerçekten alındı ( **Gerçek\<*YYY* >** parametresi). Biz başlangıç bakiyesinden azalmasını bekliyorduk, ancak bunun yerine artırmıştır oranda arttı.  
@@ -259,7 +259,7 @@ m_balance -= amount;
   
  Test Gezgini'nde seçin **tümünü Çalıştır** ve testi yeniden çalıştırın. Kırmızı/yeşil çubuk yeşile döner ve test taşınır **başarılı testler** grubu.  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Kodunuzu geliştirmek için birim testleri kullanın  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Kodunuzu geliştirmek için birim testleri kullanın  
  Bu bölümde, analiz, birim testi geliştirmenin ve yeniden düzenleme düzenlemenin yinelemeli işleminin üretim kodunuzu daha sağlam ve verimli hale getirmek nasıl yardımcı olabileceğini açıklar.  
   
  **Sorunları Çözümle**  

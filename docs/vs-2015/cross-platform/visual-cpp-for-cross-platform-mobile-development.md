@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ec4bc799c3a808a7259e4dd39565e2e21940ca56
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e947800c82036b061b2f48303733690a95ec53bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053981"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Çoklu Platform Mobil Uygulama Geliştirme için Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Yerel C++ uygulamaları oluşturabileceğinizi iOS, Android ve Windows cihazlar�
   
  Platformlar arası Mobil Geliştirme için Visual C++ kullanarak geliştirme, çeşitli avantajları vardır:  
   
-1.  **Kolay yükleme.** Visual Studio yükleyicisi, edinme ve Android ve iOS için uygulama veya kitaplık oluşturmak için ihtiyacınız olan SDK'lar ve gerekli üçüncü taraf araçları yükler. Yapılandırma ve Kurulum, basit ve çoğunlukla otomatik.  
+1. **Kolay yükleme.** Visual Studio yükleyicisi, edinme ve Android ve iOS için uygulama veya kitaplık oluşturmak için ihtiyacınız olan SDK'lar ve gerekli üçüncü taraf araçları yükler. Yapılandırma ve Kurulum, basit ve çoğunlukla otomatik.  
   
-2.  **Bir güçlü ve bilindik yapı ortamı.** Kolayca paylaşılabilir platformlar arası çözümler ve projeler Visual Studio şablonları ile oluşturun. Tek bir ortak arabirim kullanarak tüm projelerde özelliklerini yönetin. Tüm kodunuzu Visual Studio düzenleyicisinde düzenleyin ve kod tamamlama ve hata vurgulama için yerleşik platformlar arası Intellisense'ten yararlanın.  
+2. **Bir güçlü ve bilindik yapı ortamı.** Kolayca paylaşılabilir platformlar arası çözümler ve projeler Visual Studio şablonları ile oluşturun. Tek bir ortak arabirim kullanarak tüm projelerde özelliklerini yönetin. Tüm kodunuzu Visual Studio düzenleyicisinde düzenleyin ve kod tamamlama ve hata vurgulama için yerleşik platformlar arası Intellisense'ten yararlanın.  
   
-3.  **Birleştirilmiş bir hata ayıklama deneyimi.** Birinci sınıf hata ayıklama araçları, Visual Studio'da izleyin ve C++ kodu adımlayın Android cihazlar ve Öykünücüler, iOS simülatörleri ve cihazları ve Windows veya Windows Phone cihazları ve öykünücüleri dahil olmak üzere tüm platformlarda kullanın.  
+3. **Birleştirilmiş bir hata ayıklama deneyimi.** Birinci sınıf hata ayıklama araçları, Visual Studio'da izleyin ve C++ kodu adımlayın Android cihazlar ve Öykünücüler, iOS simülatörleri ve cihazları ve Windows veya Windows Phone cihazları ve öykünücüleri dahil olmak üzere tüm platformlarda kullanın.  
   
 ## <a name="get-the-tools"></a>Araçları edinin  
  Visual C++ platformlar arası Mobil Geliştirme için Visual Studio 2015 ile birlikte gelen yüklenebilir bir seçenektir. Önkoşullar ve yükleme yönergeleri için bkz: [platformlar arası Mobil Geliştirme için Visual C++ yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). İOS için kod oluşturmak için ayrıca bir Mac bilgisayara ve Apple iOS Geliştirici hesabı gerekir. Daha fazla bilgi için [yükleme ve yapılandırma araçları iOS kullanarak derlemeye](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
@@ -41,55 +41,55 @@ Yerel C++ uygulamaları oluşturabileceğinizi iOS, Android ve Windows cihazlar�
   
  Platformlar arası Mobil Geliştirme için Visual C++ uygulamalarınızı başlamanıza yardımcı olmak için birkaç şablon içerir:  
   
--   OpenGLES 2 uygulaması (Android, iOS, Windows Evrensel)  
+- OpenGLES 2 uygulaması (Android, iOS, Windows Evrensel)  
   
      Android yerel etkinlik uygulaması, bir iOS uygulaması ve paylaşılan bir C++ kod kitaplığı ile birlikte bir evrensel Windows uygulaması projeleri kümesi içeren bir çözüm oluşturur. Bu uygulamalar, platforma özgü kitaplıklar her uygulamada aynı dönen küp çizmek için ortak C++ OpenGL ES kod kullanılarak oluşturulan kullanın. Bu şablonun kullanılabilmesi için Visual Studio yüklediğinizde Evrensel Windows uygulama geliştirme araçları seçeneğini eklemeniz gerekir.  
   
--   Native-Activity uygulaması (Android)  
+- Native-Activity uygulaması (Android)  
   
      Bir Android yerel etkinlik projesi olarak bir tam C++ OpenGL uygulaması oluşturur.  
   
--   OpenGLES uygulaması (Android, iOS)  
+- OpenGLES uygulaması (Android, iOS)  
   
      Çözüm projeleri Android yerel etkinlik uygulaması hem bir iOS uygulaması oluşturmak için bir dizi oluşturur. Bu uygulamalar, platforma özgü kitaplıklar her uygulamada aynı dönen küp çizmek için ortak C++ OpenGL ES kod kullanılarak oluşturulan kullanın.  
   
--   Paylaşılan kitaplık (Android, iOS)  
+- Paylaşılan kitaplık (Android, iOS)  
   
      Paylaşılan projede ortak C++ kod kullanarak bir Android dinamik kitaplık (.so) dosyası ve bir iOS statik kitaplık (.a) dosyası oluşturmak için projeleri içeren bir çözüm oluşturur.  
   
--   Temel uygulama (Android, Ant)  
+- Temel uygulama (Android, Ant)  
   
      Bir Android oluşturur Java kaynak kodu ve Ant yapı sistemi yalnızca kullanır "Hello, World" uygulaması projesi.  
   
--   Temel uygulama (Android, Gradle)  
+- Temel uygulama (Android, Gradle)  
   
      Bir Android oluşturur sistem Java kaynak kodu ve Gradle derleme yalnızca kullanır "Hello, World" uygulaması projesi.  
   
--   Temel kitaplık (Android, Ant)  
+- Temel kitaplık (Android, Ant)  
   
      Bir Android oluşturur Java kaynak kodu ve Ant yapı sistemi yalnızca kullanan "Hello, World" kitaplığı projesi.  
   
--   Temel kitaplık (Android, Gradle)  
+- Temel kitaplık (Android, Gradle)  
   
      Bir Android oluşturur sistem Java kaynak kodu ve Gradle derleme yalnızca kullanan "Hello, World" kitaplığı projesi.  
   
--   Dinamik paylaşılan kitaplık (Android)  
+- Dinamik paylaşılan kitaplık (Android)  
   
      C++ kod kullanarak bir Android dinamik kitaplık (.so) dosyası oluşturur.  
   
--   OpenGLES 2 uygulaması (iOS)  
+- OpenGLES 2 uygulaması (iOS)  
   
      Çözüm projeleri OpenGL ES 2 iOS uygulaması oluşturmak için bir dizi oluşturur. Uygulama, bir iOS uygulama dönen küp çizmek için C++ OpenGL ES kod içeren bir kitaplık kullanır. Bu uygulama, iOS uygulamanız C++ kitaplıkları içeri aktarma görmek için iyi bir başlangıç noktası olabilir.  
   
--   Statik kitaplık (Android)  
+- Statik kitaplık (Android)  
   
      Android için bir statik kitaplık oluşturmak için bir proje oluşturur. Yalnızca bir dinamik kitaplık bir Android uygulaması kullanabilirsiniz, ancak herhangi bir sayıda statik kitaplıklar bağlayabilirsiniz.  
   
--   Statik kitaplık (iOS)  
+- Statik kitaplık (iOS)  
   
      İOS için bir statik kitaplık oluşturmak için bir proje oluşturur.  
   
--   Derleme görevleri dosyası projesi (Android)  
+- Derleme görevleri dosyası projesi (Android)  
   
      Kendi Android derleme görevleri dosyası projeleri için proje sarmalayıcı oluşturur.  
   
@@ -98,12 +98,12 @@ Yerel C++ uygulamaları oluşturabileceğinizi iOS, Android ve Windows cihazlar�
   
 ## <a name="in-this-section"></a>Bu bölümde  
   
-1.  [Platformlar Arası Mobil Geliştirme için Visual C++’ı yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1. [Platformlar Arası Mobil Geliştirme için Visual C++’ı yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [İOS Kullanarak Derlemeye Yönelik Araçları Yükleme ve Yapılandırma](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2. [İOS Kullanarak Derlemeye Yönelik Araçları Yükleme ve Yapılandırma](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-3.  [Android Yerel Etkinlik Uygulaması Oluşturma](../cross-platform/create-an-android-native-activity-app.md)  
+3. [Android Yerel Etkinlik Uygulaması Oluşturma](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Android ve iOS Üzerinde OpenGL ES Uygulaması Oluşturma](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4. [Android ve iOS Üzerinde OpenGL ES Uygulaması Oluşturma](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Platformlar Arası Mobil Geliştirme Örnekleri](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [Platformlar Arası Mobil Geliştirme Örnekleri](../cross-platform/cross-platform-mobile-development-examples.md)

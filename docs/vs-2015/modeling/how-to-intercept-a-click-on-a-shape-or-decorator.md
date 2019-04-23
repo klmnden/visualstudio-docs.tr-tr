@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044241"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Nasıl yapılır: Şekil veya Dekoratörde bir Click için Araya Girme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>İçin bir simge dekoratörde bir click için araya girme  
   
-1.  Bir DSL çözüm oluşturun veya açın.  
+1. Bir DSL çözüm oluşturun veya açın.  
   
-2.  Seçin veya bir simge dekoratör olan şekil oluşturma ve bir etki alanı sınıfı eşleyin.  
+2. Seçin veya bir simge dekoratör olan şekil oluşturma ve bir etki alanı sınıfı eşleyin.  
   
-3.  Dosyalarından ayrı bir kod dosyasında `GeneratedCode` klasöründe ImageField yeni alt sınıfını oluşturun:  
+3. Dosyalarından ayrı bir kod dosyasında `GeneratedCode` klasöründe ImageField yeni alt sınıfını oluşturun:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -89,7 +89,7 @@ public partial class MyShape // change
   
      İşlenmiş olay içeren şekle geçirilmesi istemezseniz true olarak ayarlamanız gerekir.  
   
-4.  Aşağıdaki kısmi sınıf tanımını ekleyerek, Şekil classs InitializeShapeFields yöntemi geçersiz.  
+4. Aşağıdaki kısmi sınıf tanımını ekleyerek, Şekil classs InitializeShapeFields yöntemi geçersiz.  
   
     ```  
     public partial class MyShape // change  
@@ -116,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Derleme ve çözümü çalıştırın.  
+1. Derleme ve çözümü çalıştırın.  
   
-2.  Şekil örneği simgeye çift tıklayın. Sınama iletisi görüntülenmelidir.  
+2. Şekil örneği simgeye çift tıklayın. Sınama iletisi görüntülenmelidir.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Kesintiye tıklar ve CompartmentShape listelerde sürüklediğinde  
  Aşağıdaki örnek, kullanıcıların sürükleyerek bir bölme şeklindeki öğeleri yeniden sıralamak sağlar. Bu kodu çalıştırmak için:  
@@ -135,19 +135,19 @@ public partial class MyShape // change
   
    Özet olarak, kod aşağıdaki gibi çalışır. Bu örnekte, `ClassShape` bölme şekli adıdır.  
   
--   Oluşturulduğunda bir dizi fare olay işleyicileri her bölme örneğine eklenir.  
+- Oluşturulduğunda bir dizi fare olay işleyicileri her bölme örneğine eklenir.  
   
--   `ClassShape.MouseDown` Olay, geçerli öğenin depolar.  
+- `ClassShape.MouseDown` Olay, geçerli öğenin depolar.  
   
--   Ne zaman fareyi hareket geçerli öğenin dışında imleç ayarlar ve serbest bırakılıncaya kadar fare yakalar MouseAction örneği oluşturulur.  
+- Ne zaman fareyi hareket geçerli öğenin dışında imleç ayarlar ve serbest bırakılıncaya kadar fare yakalar MouseAction örneği oluşturulur.  
   
      Bir öğenin metin seçme gibi fare Eylemler ile karışmasından kaçınmak için özgün öğe fareyi ayrıldı kadar MouseAction oluşturulmaz.  
   
      Alternatif bir MouseAction oluşturmak için MouseUp dinlemek için yalnızca olacaktır. Kullanıcı fare bölme sürükleyip ardından yayımlarsa ancak, bu düzgün çalışmaz. MouseAction fare serbest nerede olursa olsun uygun eylemi gerçekleştirebilir.  
   
--   Fare serbest bırakıldığında MouseAction.MouseUp model öğeleri arasında bağlantılar sırasını yeniden düzenler.  
+- Fare serbest bırakıldığında MouseAction.MouseUp model öğeleri arasında bağlantılar sırasını yeniden düzenler.  
   
--   Rol sırası değişikliği görünen güncelleştiren bir kural tetikler. Bu davranış zaten tanımlanmış olan ve hiçbir ek kod gerekmez.  
+- Rol sırası değişikliği görünen güncelleştiren bir kural tetikler. Bu davranış zaten tanımlanmış olan ve hiçbir ek kod gerekmez.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  

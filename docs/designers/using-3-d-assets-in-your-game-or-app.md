@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043835"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Oyununuzda veya uygulamanızda 3B varlıklar kullanma
 
@@ -34,9 +34,9 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Projenize yapı özelleştirmeleri eklemek için
 
-1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı bağımlılıkları** > **yapı özelleştirmeleri**. **Visual C++ derleme özelleştirme dosyaları** iletişim kutusu görüntülenir.
+1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı bağımlılıkları** > **yapı özelleştirmeleri**. **Visual C++ derleme özelleştirme dosyaları** iletişim kutusu görüntülenir.
 
-2.  Altında **kullanılabilir yapı özelleştirme dosyaları**, aşağıdaki tabloda açıklandığı şekilde, projenizde kullanmak istediğiniz varlık türlerine karşılık gelen onay kutularını işaretleyin:
+2. Altında **kullanılabilir yapı özelleştirme dosyaları**, aşağıdaki tabloda açıklandığı şekilde, projenizde kullanmak istediğiniz varlık türlerine karşılık gelen onay kutularını işaretleyin:
 
     |Varlık türü|Özelleştirme adı oluştur|
     |----------------| - |
@@ -44,23 +44,23 @@ Bu makalede, 3B varlıkları işlemek ve bunları derlemelerinize dahil etmek i�
     |3B modeller|**MeshContentTask (.targets, .props)**|
     |Gölgelendiriciler|**ShaderGraphContentTask (.targets, .props)**|
 
-3.  Seçin **Tamam** düğmesi.
+3. Seçin **Tamam** düğmesi.
 
 ## <a name="include-assets-in-your-build"></a>Yapınızda varlıkları içerir
  Projeniz hakkında kullanmak istediğiniz 3B varlıkların farklı türlerini bildiğine göre sonraki adım, hangi dosyaların 3B varlıklar olduğunu ve hangi türde varlıkları bunlar söylemek olacaktır.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Yapınıza bir varlık eklemek için
 
-1.  İçinde **Çözüm Gezgini**, projenizde bir varlığın kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
+1. İçinde **Çözüm Gezgini**, projenizde bir varlığın kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
 
-2.  Emin olun **yapılandırma** ve **Platform** özellikleri, yaptığınız değişiklikleri uygulamak istediğiniz değerlere ayarlanır.
+2. Emin olun **yapılandırma** ve **Platform** özellikleri, yaptığınız değişiklikleri uygulamak istediğiniz değerlere ayarlanır.
 
-3.  Altında **yapılandırma özellikleri**, seçin **genel**ve sonra özellik kılavuzunda altında **genel**ayarlayın **öğesi türü** özelliği uygun içerik ardışık düzeni öğe türüne. Örneğin, bir resim veya doku dosyası için tercih **görüntü içeriği ardışık düzeni**.
+3. Altında **yapılandırma özellikleri**, seçin **genel**ve sonra özellik kılavuzunda altında **genel**ayarlayın **öğesi türü** özelliği uygun içerik ardışık düzeni öğe türüne. Örneğin, bir resim veya doku dosyası için tercih **görüntü içeriği ardışık düzeni**.
 
     > [!IMPORTANT]
     > Varsayılan olarak, Visual Studio pek çok resim dosyalarını kullanarak kategorize olması gerektiğini varsayar **görüntü** öğesi Visual Studio'da yerleşik olarak bulunan türü. Bu nedenle, değiştirmek zorunda **öğesi türü** , görüntü içeriği ardışık düzeni tarafından işlenmesini istediğiniz her görüntünün özelliği. Diğer içerik türlerine işlem hattı, kaynak dosyaları, 3B modeller ve görsel gölgelendirici grafikler varsayılan olarak doğru **öğesi türü**.
 
-4.  Seçin **Tamam** düğmesi.
+4. Seçin **Tamam** düğmesi.
 
 Aşağıda, üç içeriği ardışık düzeni öğe türleri ve bunların ilişkili kaynakları ve çıktı dosya türleri.
 
@@ -76,13 +76,13 @@ Her varlık dosyasının içerik kanalı özelliklerini ayarlayabilirsiniz, böy
 
 ### <a name="to-configure-content-pipeline-properties"></a>İçerik ardışık düzeni özelliklerini yapılandırmak için
 
-1.  İçinde **Çözüm Gezgini**bulunan projenizde varlık dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
+1. İçinde **Çözüm Gezgini**bulunan projenizde varlık dosyası için kısayol menüsünü açın ve ardından **özellikleri**. Varlığın **özellik sayfası** iletişim kutusu görüntülenir.
 
-2.  Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.
+2. Emin olun **yapılandırma** ve **Platform** özellikleri, değişikliklerinizi uygulanmasını istediğiniz değerlere ayarlanır.
 
-3.  Altında **yapılandırma özellikleri**, içeriği ardışık düzeni düğümünü seçin; örneğin, **görüntü içeriği ardışık düzeni** doku ve resim varlıkları için — ve sonra özellik kılavuzunda özellikleri ayarlayın uygun değerleri. Örneğin, oluşturma zamanında doku varlığı için Mipmap üretmek için ayarlanmış **Mips üret** özelliğini **Evet**.
+3. Altında **yapılandırma özellikleri**, içeriği ardışık düzeni düğümünü seçin; örneğin, **görüntü içeriği ardışık düzeni** doku ve resim varlıkları için — ve sonra özellik kılavuzunda özellikleri ayarlayın uygun değerleri. Örneğin, oluşturma zamanında doku varlığı için Mipmap üretmek için ayarlanmış **Mips üret** özelliğini **Evet**.
 
-4.  Seçin **Tamam** düğmesi.
+4. Seçin **Tamam** düğmesi.
 
 ### <a name="image-content-pipeline-configuration"></a>Görüntü içeriği ardışık düzeni yapılandırması
 

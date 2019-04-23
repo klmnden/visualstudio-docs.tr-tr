@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038912"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Nasıl yapılır: Alana Özgü Dil Tasarımcısını Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ DSL tanımlarına düzenlemek için kullandığınız Tasarımcı için Uzantıl
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Bir DSL Tasarımcısı uzantısı çözümü oluşturmak için  
   
-1.  Sınıf kitaplığı proje şablonunu kullanarak yeni bir proje oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve tıklayın ardından Orta penceresinde **sınıf kitaplığı**.  
+1. Sınıf kitaplığı proje şablonunu kullanarak yeni bir proje oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve tıklayın ardından Orta penceresinde **sınıf kitaplığı**.  
   
      Bu proje uzantılarınızı kodunu içerir.  
   
-2.  VSIX proje şablonunu kullanarak yeni bir proje oluşturun. İçinde **yeni proje** iletişim kutusunda **Visual C#**, tıklayın **genişletilebilirlik**ve ardından Orta penceresi seçin **VSIX projesi**.  
+2. VSIX proje şablonunu kullanarak yeni bir proje oluşturun. İçinde **yeni proje** iletişim kutusunda **Visual C#**, tıklayın **genişletilebilirlik**ve ardından Orta penceresi seçin **VSIX projesi**.  
   
      Seçin **çözüme ekleyin**.  
   
      Source.extension.vsixmanifest VSIX bildirim düzenleyicisinde açılır.  
   
-3.  İçerik alanı **İçerik Ekle**.  
+3. İçerik alanı **İçerik Ekle**.  
   
-4.  İçinde **İçerik Ekle** iletişim kutusu, kümesi **içerik türünü seçin** için **MEF Bileşeni**, ayarlayıp **proje** sınıf kitaplığı projenize.  
+4. İçinde **İçerik Ekle** iletişim kutusu, kümesi **içerik türünü seçin** için **MEF Bileşeni**, ayarlayıp **proje** sınıf kitaplığı projenize.  
   
-5.  Tıklayın **sürümleri seçin** emin olun **Visual Studio Enterprise** denetlenir.  
+5. Tıklayın **sürümleri seçin** emin olun **Visual Studio Enterprise** denetlenir.  
   
-6.  VSIX projesinin çözümün başlangıç projesi olduğundan emin olun.  
+6. VSIX projesinin çözümün başlangıç projesi olduğundan emin olun.  
   
-7.  Sınıf kitaplığı projesinde aşağıdaki derlemelere başvurular ekleyin:  
+7. Sınıf kitaplığı projesinde aşağıdaki derlemelere başvurular ekleyin:  
   
      Microsoft.VisualStudio.CoreUtility  
   

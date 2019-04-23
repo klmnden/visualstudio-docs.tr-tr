@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041086"
 ---
 # <a name="extend-the-output-window"></a>Çıkış penceresini genişletme
 **Çıkış** penceresinde okuma/yazma metin bölmelerinin bir kümesidir. Visual Studio, bu yerleşik bölmeler sahiptir: **Derleme**, hangi projelerinde yapılar hakkındaki iletileri iletişim kurmak ve **genel**, hangi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] iletileri IDE hakkında iletişim kurar. Projeleri, bir başvuru alma **derleme** bölmesinde otomatik olarak ile <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> arabirim yöntemleri ve Visual Studio, doğrudan erişim sunar **genel** bölmesi aracılığıyla <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> hizmeti. Ek olarak yerleşik bölmeler, oluşturabilir ve kendi özel bölmeleri yönetin.
@@ -25,22 +25,22 @@ ms.locfileid: "56706216"
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>Çıkış Bölmesi ' kullanan bir uzantı oluşturma
  Çıkış bölmesinde farklı yönlerini sınayan bir uzantı yapabilirsiniz.
 
-1.  Adlı bir VSIX projesi oluşturun `TestOutput` bir menü komutuyla adlı **TestOutput**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Adlı bir VSIX projesi oluşturun `TestOutput` bir menü komutuyla adlı **TestOutput**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Aşağıdaki başvuruları ekleyin:
+2. Aşağıdaki başvuruları ekleyin:
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  İçinde *TestOutput.cs*, aşağıdaki using deyimi:
+3. İçinde *TestOutput.cs*, aşağıdaki using deyimi:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  İçinde *TestOutput.cs*, silme `ShowMessageBox` yöntemi. Aşağıdaki metot taslağı ekleyin:
+4. İçinde *TestOutput.cs*, silme `ShowMessageBox` yöntemi. Aşağıdaki metot taslağı ekleyin:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "56706216"
     }
     ```
 
-5.  TestOutput oluşturucusunun içinde komut işleyici OutputCommandHandler için değiştirin. Komutları ekler bölümü aşağıda verilmiştir:
+5. TestOutput oluşturucusunun içinde komut işleyici OutputCommandHandler için değiştirin. Komutları ekler bölümü aşağıda verilmiştir:
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "56706216"
     }
     ```
 
-6.  Aşağıdaki bölümlerde, çıkış bölmesine uğraşmanızı farklı şekillerde gösterir farklı yöntemleri vardır. Body bu yöntemleri çağırabilirsiniz `OutputCommandHandler()` yöntemi. Örneğin, aşağıdaki kodu ekler `CreatePane()` sonraki bölümde verilen yöntemi.
+6. Aşağıdaki bölümlerde, çıkış bölmesine uğraşmanızı farklı şekillerde gösterir farklı yöntemleri vardır. Body bu yöntemleri çağırabilirsiniz `OutputCommandHandler()` yöntemi. Örneğin, aşağıdaki kodu ekler `CreatePane()` sonraki bölümde verilen yöntemi.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

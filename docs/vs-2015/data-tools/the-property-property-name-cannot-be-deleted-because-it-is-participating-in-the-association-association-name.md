@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 348dc0cdce8345f0b7de4fb15dcd7175f496dba7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3ba746f9e4dcd8da45a002c5c763384558342ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053916"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Özellik &lt;özellik adı&gt; ilişkilendirmesine katıldığından silinemiyor &lt;ilişkilendirme adı&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Seçilen özellik olarak ayarlandığından **ilişkilendirme** hata iletisinde 
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
-1.  Hata iletisinde belirtilen veri sınıfları bağlanan O/R Tasarımcısı'ndaki ilişkilendirme çizgisi seçin.  
+1. Hata iletisinde belirtilen veri sınıfları bağlanan O/R Tasarımcısı'ndaki ilişkilendirme çizgisi seçin.  
   
-2.  Satırı açmak için çift tıklatın **ilişkilendirme Düzenleyicisi** iletişim kutusu.  
+2. Satırı açmak için çift tıklatın **ilişkilendirme Düzenleyicisi** iletişim kutusu.  
   
-3.  Özelliğinden kaldırılacak **ilişkilendirme özellikleri**.  
+3. Özelliğinden kaldırılacak **ilişkilendirme özellikleri**.  
   
-4.  Özelliği yeniden silmeyi deneyin.  
+4. Özelliği yeniden silmeyi deneyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

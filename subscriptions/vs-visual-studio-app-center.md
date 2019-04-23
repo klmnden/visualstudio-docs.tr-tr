@@ -7,24 +7,24 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio abonelikleri dahil Visual Studio App Center teklifi hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 2333c7d47fdb0108576d87345d6a4124c36b50dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049507"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio Abonelikleri, Visual Studio App Center
 
 Uygulama, uygulamalar için görev denetimi merkezidir.
 
--  Otomatik olarak uygulamanızı oluşturun, gerçek cihazlarda test edin ve beta test edicilere dağıtın
--  Kilitlenme raporları ve özel olaylar dahil olmak üzere, kullanıcı analizi toplayın.
--  Dakikalar içinde uygulamanıza anında iletme bildirimleri ekleme
+- Otomatik olarak uygulamanızı oluşturun, gerçek cihazlarda test edin ve beta test edicilere dağıtın
+- Kilitlenme raporları ve özel olaylar dahil olmak üzere, kullanıcı analizi toplayın.
+- Dakikalar içinde uygulamanıza anında iletme bildirimleri ekleme
 
 ## <a name="activation-steps"></a>Etkinleştirme adımları
 Visual Studio App Center ile kullanmaya kolayca başlayabilirsiniz.
-1.  [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
+1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) adresinde oturum açın.
 
 2. Visual Studio App Center kutucuğu bulun ve tıklatın **başlama**.
     > [!div class="mx-imgBorder"]
@@ -59,15 +59,15 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>S:  Tarayıcımda desteklenmeyen olduğunu belirten bir hata alıyorum.  Ne oldu?
 Y:  App Center, bazı eski tarayıcılar tarafından sağlanan değil daha yeni özellikleri gerektirir.  Tarayıcınız desteklenmiyor, bu adımları izleyin:
-1.  Microsoft Edge veya Google Chrome, Firefox veya Safari'nin son sürümleri gibi farklı bir tarayıcı açın.
-2.  Visual Studio'ya bağlanın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve oturum açın.
-3.  Artık tıklayarak **başlama** Visual Studio App Center kutucuğunda bulunan bağlantı.
+1. Microsoft Edge veya Google Chrome, Firefox veya Safari'nin son sürümleri gibi farklı bir tarayıcı açın.
+2. Visual Studio'ya bağlanın [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ve oturum açın.
+3. Artık tıklayarak **başlama** Visual Studio App Center kutucuğunda bulunan bağlantı.
 
 Artık App Center portala erişmek ve hesabınızı oluşturmak mümkün olması gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  App Center yardıma mı ihtiyacınız var?
+- App Center yardıma mı ihtiyacınız var?
     - App Center takımda öneriler ve yanıtlar elde [App Center Yardım Merkezi](https://intercom.help/appcenter/).
     - Tam kullanıma [App Center belgeleri](/appcenter/)
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

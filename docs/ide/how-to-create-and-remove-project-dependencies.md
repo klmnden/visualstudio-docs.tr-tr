@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062158"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Nasıl yapılır: Proje bağımlılıklarını oluşturma ve kaldırma
 
@@ -47,18 +47,18 @@ Birden çok proje içeren bir çözüm derlerken, belirli projeleri ilk oluştur
 
 ## <a name="to-remove-dependencies-from-projects"></a>Proje bağımlılıkları kaldırmak için
 
-1.  İçinde **Çözüm Gezgini**, bir proje seçin.
+1. İçinde **Çözüm Gezgini**, bir proje seçin.
 
-2.  Üzerinde **proje** menüsünde seçin **proje bağımlılıkları**.
+2. Üzerinde **proje** menüsünde seçin **proje bağımlılıkları**.
 
      **Proje bağımlılıkları** iletişim kutusu açılır.
 
     > [!NOTE]
     > **Proje bağımlılıkları** seçeneği, yalnızca kullanılabilir birden fazla proje içeren bir çözümde.
 
-3.  Üzerinde **bağımlılıkları** sekmesinde, bir proje seçin **proje** açılan menüsü.
+3. Üzerinde **bağımlılıkları** sekmesinde, bir proje seçin **proje** açılan menüsü.
 
-4.  İçinde **bağlıdır** alan, bu projenin bağımlılıklarıdır artık herhangi bir projeyi yanındaki onay kutularını temizleyin.
+4. İçinde **bağlıdır** alan, bu projenin bağımlılıklarıdır artık herhangi bir projeyi yanındaki onay kutularını temizleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

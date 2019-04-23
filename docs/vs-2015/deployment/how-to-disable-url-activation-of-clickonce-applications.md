@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22128d20bf83a8c6f2295b79653eabb3439c4b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046974"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Nasıl yapılır: ClickOnce Uygulamalarında URL Etkinleştirmeyi Devre Dışı Bırakma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Genellikle, bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama 
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Uygulamanız için URL etkinleştirmeyi devre dışı bırakmak için  
   
-1.  Dağıtım bildiriminin MageUI.exe açın. Henüz bir oluşturmadıysanız, adımları [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Dağıtım bildiriminin MageUI.exe açın. Henüz bir oluşturmadıysanız, adımları [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Seçin **dağıtım seçenekleri** sekmesi.  
+2. Seçin **dağıtım seçenekleri** sekmesi.  
   
-3.  NET **otomatik olarak yükledikten sonra uygulamayı çalıştırmak** onay kutusu.  
+3. NET **otomatik olarak yükledikten sonra uygulamayı çalıştırmak** onay kutusu.  
   
-4.  Kaydet ve bildirim oturum açın.  
+4. Kaydet ve bildirim oturum açın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulamalarını Yayımlama](../deployment/publishing-clickonce-applications.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a272c01f76787e60e7796173b52b563f8e8718
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 708d9c7e41a3be24f9eaf28d86da94d47b187a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054020"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Genişletilebilirlik Çerçevesi Düzenleyicisi'nde yönetilen
 Düzenleyici, Yönetilen Genişletilebilirlik Çerçevesi (MEF) bileşenleri kullanılarak oluşturulmuştur. Kod Düzenleyicisi bileşenleri kullanabilir ve kendi MEF bileşenlerini düzenleyicisini genişletmek için oluşturabilirsiniz.
@@ -82,25 +82,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Bir MEF Bileşeni bölümünden Düzenleyici işlevselliği kullanmak için
 
-1.  Başvuruları Ekle *System.Composition.ComponentModel.dll*, genel derleme önbelleğinde (GAC) ve düzenleyici derlemelere olan.
+1. Başvuruları Ekle *System.Composition.ComponentModel.dll*, genel derleme önbelleğinde (GAC) ve düzenleyici derlemelere olan.
 
-2.  İlgili ekleme using deyimleri.
+2. İlgili ekleme using deyimleri.
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3.  Ekleme `[Import]` hizmeti arabirimine özniteliğini aşağıdaki gibi.
+3. Ekleme `[Import]` hizmeti arabirimine özniteliğini aşağıdaki gibi.
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4.  Hizmet edindiğinizde, bileşenlerinden herhangi birini kullanabilir.
+4. Hizmet edindiğinizde, bileşenlerinden herhangi birini kullanabilir.
 
-5.  Ne zaman, önceleri derlendiği böyle derlemenizi *... \Common7\IDE\Components\* Visual Studio yüklemenizin klasör.
+5. Ne zaman, önceleri derlendiği böyle derlemenizi *... \Common7\IDE\Components\* Visual Studio yüklemenizin klasör.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Dil hizmeti ve düzenleyici uzantı noktaları](../extensibility/language-service-and-editor-extension-points.md)

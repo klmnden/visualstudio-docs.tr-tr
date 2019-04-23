@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040850"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Paketleme ve SharePoint çözümlerini dağıtma
   Genellikle, bir SharePoint çözüm, bir çözüm paketi (.wsp) dosyası kullanarak bir SharePoint sunucusuna dağıtılır. Visual Studio, SharePoint Proje öğeleri özelliklerini düzenlemek ve SharePoint özelliklerinizi dağıtmak için bir paket oluşturmak için kullanabilirsiniz.
 
  Bu konuda, aşağıdaki bilgiler sağlanmaktadır:
 
--   [Özellikler ve paketler oluşturun](#create-features-and-packages)
+- [Özellikler ve paketler oluşturun](#create-features-and-packages)
 
--   [Özellik ve paketleme araç desteği](#feature-and-packaging-tool-support)
+- [Özellik ve paketleme araç desteği](#feature-and-packaging-tool-support)
 
--   [SharePoint çözümlerini dağıtma](#deploy-sharepoint-solutions)
+- [SharePoint çözümlerini dağıtma](#deploy-sharepoint-solutions)
 
--   [Dosyaları SharePoint çözümlerini dağıtma](#deploy-files-in-sharepoint-solutions)
+- [Dosyaları SharePoint çözümlerini dağıtma](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Özellikler ve paketler oluşturun
  Visual Studio ile ilgili SharePoint öğeleri gruplandırmak için kullanabileceğiniz bir *özellik*. Örneğin, bir kişi liste tanımı için bir özellik liste örneği ve liste tanımını içerebilir. Dağıtım amaçları için tek bir özelliği bu iki öğenin birleştirebilirsiniz. Özellikler hakkında daha fazla bilgi için bkz. [yapı taşı: Özellikleri](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867570"
 ## <a name="feature-and-packaging-tool-support"></a>Özellik ve paketleme araç desteği
  Visual Studio'da SharePoint geliştirme araçları, hızla özellikleri ve daha kolay dağıtım için çözüm paketleri SharePoint dosyalarınızı düzenlemek için kullanabilirsiniz. Özellik ve çözüm paketini yapılandırmak için aşağıdaki araçları kullanabilirsiniz.
 
--   Özellik Tasarımcısı ve paket Tasarımcısı.
+- Özellik Tasarımcısı ve paket Tasarımcısı.
 
--   Paketleme Gezgini, bir araç penceresi.
+- Paketleme Gezgini, bir araç penceresi.
 
--   Çözüm Gezgini.
+- Çözüm Gezgini.
 
 ### <a name="feature-designer-and-package-designer"></a>Özellik Tasarımcısı ve paket Tasarımcısı
  Özellikler oluşturmak, kapsamı ayarla ve diğer özellikleri, özellik Tasarımcısı kullanarak bağımlılıkları olarak işaretleyin. Tasarımcı, ayrıca her bir özellik tanımlayan son XML dosyasını görüntüler. Daha fazla bilgi için [oluşturma SharePoint özelliklerini](../sharepoint/creating-sharepoint-features.md).

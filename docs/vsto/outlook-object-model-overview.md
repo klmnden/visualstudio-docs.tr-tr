@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3f937b819628414430104782459da65d350dd69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061937"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook nesne modeline genel bakış
   Microsoft Office Outlook için VSTO eklentileri geliştirmek için Outlook nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilir. Outlook nesne modeline sınıflar ve kullanıcı arabirimi öğelerini temsil eden arabirim sağlar. Örneğin, <xref:Microsoft.Office.Interop.Outlook.Application> nesnesini temsil eder tüm uygulama <xref:Microsoft.Office.Interop.Outlook.Folder> nesne e-posta veya diğer öğeleri içeren bir klasörü temsil eder ve <xref:Microsoft.Office.Interop.Outlook.MailItem> nesnesi, bir e-posta iletisini temsil eder.
@@ -37,21 +37,21 @@ ms.locfileid: "56597718"
 ## <a name="access-objects-in-an-outlook-project"></a>Outlook projesinde nesnelere erişme
  Outlook birçok nesne ile etkileşim sağlar. Nesne modeline etkili bir şekilde kullanmak için aşağıdaki üst düzey nesneleri ile ilgili bilgi sahibi olması gerekir:
 
--   <xref:Microsoft.Office.Interop.Outlook.Application>
+- <xref:Microsoft.Office.Interop.Outlook.Application>
 
--   <xref:Microsoft.Office.Interop.Outlook.Explorer>
+- <xref:Microsoft.Office.Interop.Outlook.Explorer>
 
--   <xref:Microsoft.Office.Interop.Outlook.Inspector>
+- <xref:Microsoft.Office.Interop.Outlook.Inspector>
 
--   <xref:Microsoft.Office.Interop.Outlook.Folder>
+- <xref:Microsoft.Office.Interop.Outlook.Folder>
 
--   <xref:Microsoft.Office.Interop.Outlook.MailItem>
+- <xref:Microsoft.Office.Interop.Outlook.MailItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
+- <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.TaskItem>
+- <xref:Microsoft.Office.Interop.Outlook.TaskItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.ContactItem>
+- <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
 ### <a name="application-object"></a>Uygulama nesnesi
  <xref:Microsoft.Office.Interop.Outlook.Application> Nesnesini temsil eden Outlook uygulaması ve Outlook nesne modelinde en üst düzey nesnedir. Bu nesnenin en önemli üyeleri bazıları şunlardır:
@@ -72,22 +72,22 @@ ms.locfileid: "56597718"
 
  Alınacak bir <xref:Microsoft.Office.Interop.Outlook.Explorer> nesne, aşağıdakilerden birini yapın:
 
--   Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> özelliği <xref:Microsoft.Office.Interop.Outlook.Application> tüm erişmek için nesne <xref:Microsoft.Office.Interop.Outlook.Explorer> Outlook'ta nesneleri.
+- Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> özelliği <xref:Microsoft.Office.Interop.Outlook.Application> tüm erişmek için nesne <xref:Microsoft.Office.Interop.Outlook.Explorer> Outlook'ta nesneleri.
 
--   Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> alınacak nesne <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli odağa sahip.
+- Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> alınacak nesne <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli odağa sahip.
 
--   Kullanım `GetExplorer` yöntemi <xref:Microsoft.Office.Interop.Outlook.Folder> alınacak nesne <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli klasör.
+- Kullanım `GetExplorer` yöntemi <xref:Microsoft.Office.Interop.Outlook.Folder> alınacak nesne <xref:Microsoft.Office.Interop.Outlook.Explorer> geçerli klasör.
 
 ### <a name="inspector-object"></a>Inspector nesnesi
  <xref:Microsoft.Office.Interop.Outlook.Inspector> Nesnesi gibi bir e-posta iletisi, görev veya randevu tek bir öğeyi görüntüleyen bir pencereyi temsil eder. <xref:Microsoft.Office.Interop.Outlook.Inspector> Yöntemleri ve penceresini değiştirmek için kullanabileceğiniz özellikler ve pencere değiştiğinde başlatılan olaylara nesne içerir.
 
  Alınacak bir <xref:Microsoft.Office.Interop.Outlook.Inspector> nesne, aşağıdakilerden birini yapın:
 
--   Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> özelliği <xref:Microsoft.Office.Interop.Outlook.Application> tüm erişmek için nesne <xref:Microsoft.Office.Interop.Outlook.Inspector> Outlook'ta nesneleri.
+- Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> özelliği <xref:Microsoft.Office.Interop.Outlook.Application> tüm erişmek için nesne <xref:Microsoft.Office.Interop.Outlook.Inspector> Outlook'ta nesneleri.
 
--   Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> alınacak nesne <xref:Microsoft.Office.Interop.Outlook.Inspector> geçerli odağa sahip.
+- Kullanım <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> yöntemi <xref:Microsoft.Office.Interop.Outlook.Application> alınacak nesne <xref:Microsoft.Office.Interop.Outlook.Inspector> geçerli odağa sahip.
 
--   Kullanım `GetInspector` gibi belirli bir yöntemi öğesi bir <xref:Microsoft.Office.Interop.Outlook.MailItem> veya <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, onunla ilişkilendirilen Inspector'ı almak için.
+- Kullanım `GetInspector` gibi belirli bir yöntemi öğesi bir <xref:Microsoft.Office.Interop.Outlook.MailItem> veya <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, onunla ilişkilendirilen Inspector'ı almak için.
 
 ### <a name="folder-object"></a>Nesnesinin klasörünü
  <xref:Microsoft.Office.Interop.Outlook.Folder> Nesne e-posta iletileri, kişiler, görevler ve diğer öğeleri içeren bir klasörü temsil eder. Outlook 16 varsayılan sağlar <xref:Microsoft.Office.Interop.Outlook.Folder> nesneleri.
@@ -118,7 +118,7 @@ ms.locfileid: "56597718"
 
  Yeni bir kişi oluşturulacağını gösteren bir örnek için bkz: [nasıl yapılır: Program aracılığıyla Outlook Kişilerine bir giriş ekleyin](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Var olan bir kişi arama gösteren bir örnek için bkz [nasıl yapılır: Program aracılığıyla belirli bir kişi arama](../vsto/how-to-programmatically-search-for-a-specific-contact.md).
 
-##  <a name="refdoc"></a> Outlook nesne modeli belgeleri kullanın
+## <a name="refdoc"></a> Outlook nesne modeli belgeleri kullanın
  Outlook nesne modeli hakkında tam bilgi için Outlook birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.
 
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma bütünleştirilmiş kod başvurusu

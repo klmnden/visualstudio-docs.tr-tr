@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059259"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Kod Kapsamı Çözümlemeyi Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,11 +183,11 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Komut satırı testinde ayarları çalıştırmayı özelleştirmek için  
  Komut satırından testleri çalıştırmak için vstest.console.exe kullanın. Ayarlar dosyası, bu yardımcı programın bir parametresidir. Daha fazla bilgi için [kullanarak vstest.Console aracını komut satırından](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Visual Studio Geliştirici Komut Satırını başlatın:  
+1. Visual Studio Geliştirici Komut Satırını başlatın:  
   
      Windows üzerinde **Başlat**, seçin **tüm programlar**, **Microsoft Visual Studio**, **Visual Studio Araçları**, **Geliştirici Komut İstemi**.  
   
-2.  Çalıştır:  
+2. Çalıştır:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -208,7 +208,7 @@ Varsayılan olarak, Visual Studio kod kapsamı aracını birim testleri sırası
   
    Sonuçlar yapı raporunun özet bölümünde görünürdür.  
   
-##  <a name="sample"></a> Örnek .runsettings dosyası  
+## <a name="sample"></a> Örnek .runsettings dosyası  
  Bu kodu kopyalayın ve kendi gereksinimlerinize göre düzenleyin. Bu varsayılan .runsettings dosyasıdır.  
   
  (.Runsettings dosyasının diğer kullanımları bkz [bir .runsettings dosyasını kullanarak birim testlerini yapılandırma](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  

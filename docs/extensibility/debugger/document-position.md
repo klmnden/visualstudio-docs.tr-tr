@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051797"
 ---
 # <a name="document-position"></a>Belge konumu
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hata ayıklama, bir *belge konumu*:
 
--   IDE için bilinen bir konumdaki kaynak dosyada bir Özet sağlar. Çoğu diller için bugün, bir belge konumu, kaynak dosyada bir konum olarak düşünülebilir.
+- IDE için bilinen bir konumdaki kaynak dosyada bir Özet sağlar. Çoğu diller için bugün, bir belge konumu, kaynak dosyada bir konum olarak düşünülebilir.
 
--   Hata ayıklama altyapısı için kaynak belgedeki bir konumu açıklar.
+- Hata ayıklama altyapısı için kaynak belgedeki bir konumu açıklar.
 
--   Tarafından uygulanan bir [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) arabirimi.
+- Tarafından uygulanan bir [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) arabirimi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Kod bağlamı](../../extensibility/debugger/code-context.md)

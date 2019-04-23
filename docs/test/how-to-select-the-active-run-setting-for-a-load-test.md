@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042034"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Nasıl yapılır: Etkin çalışma yük testi için ayarı seçin
 
@@ -32,11 +32,11 @@ Yük testi çalışma ayarı yalnızca bir düğümünde içeriyorsa **çalışt
 
 ## <a name="select-the-active-run-setting"></a>Etkin çalışma ayarını seçin
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Genişletin **çalıştırma ayarları** klasör.
+2. Genişletin **çalıştırma ayarları** klasör.
 
-3.  Etkin düğüm olmasını ve ardından istediğiniz çalışma ayarları düğümünü sağ **etkin olarak ayarla**.
+3. Etkin düğüm olmasını ve ardından istediğiniz çalışma ayarları düğümünü sağ **etkin olarak ayarla**.
 
      İçinde **Yük Testi Düzenleyicisi**r, etkilenen çalışma ayarı düğümünü, "[etkin]" soneki ile güncelleştirilir.
 

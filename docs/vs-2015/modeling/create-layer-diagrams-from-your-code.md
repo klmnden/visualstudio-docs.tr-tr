@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050218"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Kodunuz aracılığıyla katman diyagramları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
   
  Bir katman diyagramı, Visual Studio çözüm öğeleri adı verilen mantıklı, soyut gruplar halinde düzenlemenizi sağlar *katmanları*. Bu yapıların gerçekleştirdiği temel görevleri veya sistemin ana bileşenlerini açıklamak için katmanları kullanabilirsiniz. Her katman, daha ayrıntılı görevleri açıklayan başka katmanlar içerebilir. Hedeflenen veya varolan de belirtebilirsiniz *bağımlılıkları* katmanlar arasında. Oklar olarak temsil edilen bu bağımlılıklar, hangi katmanların diğer katmanlar tarafından temsil edilen işlevi kullanabileceğini veya kullanmakta olduğunu gösterir. Kodunun mimari denetimini sağlamak için diyagram üzerinde hedeflenen bağımlılıkları gösterin ve ardından kodu diyagrama karşı doğrulayın.  
   
-##  <a name="CreateDiagram"></a> Katman diyagramı oluşturma  
+## <a name="CreateDiagram"></a> Katman diyagramı oluşturma  
  Bir katman diyagramı oluşturmadan önce, çözümünüzde bir modelle projesi olduğundan emin olun. Bkz: [oluşturma UML modelleme projeleri ve diyagramları](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
@@ -40,13 +40,13 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Modelleme projesine yeni bir katman diyagramı eklemek için  
   
-1.  Üzerinde **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** menüsünde seçin **yeni UML veya katman diyagramı**.  
   
-2.  Altında **şablonları**, seçin **katman diyagramı**.  
+2. Altında **şablonları**, seçin **katman diyagramı**.  
   
-3.  Diyagrama ad verin.  
+3. Diyagrama ad verin.  
   
-4.  İçinde **modelleme projesine Ekle**göz atın ve çözümünüzde varolan modelleme projesini seçin.  
+4. İçinde **modelleme projesine Ekle**göz atın ve çözümünüzde varolan modelleme projesini seçin.  
   
      -veya-  
   
@@ -55,9 +55,9 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
     > [!NOTE]
     >  Katman diyagramı modelleme projesinin içinde olmalıdır. Bununla birlikte, bunu çözümün herhangi bir yerindeki öğelere bağlayabilirsiniz.  
   
-5.  Hem modelleme projesini hem de katman diyagramını kaydettiğinizden emin olun.  
+5. Hem modelleme projesini hem de katman diyagramını kaydettiğinizden emin olun.  
   
-##  <a name="CreateLayers"></a> Yapılardan katmanlar oluşturma  
+## <a name="CreateLayers"></a> Yapılardan katmanlar oluşturma  
  Visual Studio çözüm öğelerinden projeler, kod dosyaları, ad alanları, sınıflar ve yöntemler gibi katmanlar oluşturabilirsiniz. Bu, katmanlar ve öğeler arasında otomatik olarak bağlantılar oluşturarak bunları katman doğrulama işlemine dahil eder.  
   
  Katmanları Word belgeleri veya PowerPoint sunumları gibi doğrulamayı desteklemeyen öğelere de ekleyebilir ve böylece bir katmanı belirtimlerle veya planlarla ilişkilendirebilirsiniz. Katmanları birden fazla uygulama arasında paylaşılan projelerdeki dosyalara da bağlayabilirsiniz, ancak doğrulama işlemi "Katman 1" ve "Katman 2" gibi genel adlarla görünen bu katmanları içermez.  
@@ -80,19 +80,19 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
   
  Bir katmandaki sayı, katmana bağlı olan yapıların sayısını gösterir. Ancak, bu sayıyı okurken, aşağıdakileri unutmayın:  
   
--   Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.  
+- Bir katman diğer yapıları içeren bir yapıya bağlanırsa, ancak katman doğrudan diğer yapılara bağlanmazsa, sayı yalnızca bağlı yapıyı içerir. Bununla birlikte, diğer yapılar katman doğrulanırken analiz için alınır.  
   
      Örneğin, bir katman tek bir ad alanına bağlanırsa, ad alanı sınıflar içerse bile, bağlı yapıların sayısı 1'dir. Katmanın ad alanındaki her bir sınıfa da bağlantıları bulunuyorsa, sayı bağlantılı sınıfları da içerecektir.  
   
--   Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.  
+- Bir katman yapılarla bağlantılı diğer katmanları içeriyorsa, kapsayıcı katman da üzerindeki sayı bu yapıları içermese bile bu yapılara bağlıdır.  
   
-##  <a name="Managing"></a> Katmanlar ve Yapılar arasındaki bağlantıları yönetme  
+## <a name="Managing"></a> Katmanlar ve Yapılar arasındaki bağlantıları yönetme  
   
-1.  Katman diyagramında katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**.  
+1. Katman diyagramında katmanın kısayol menüsünü açın ve ardından **bağlantıları görüntüle**.  
   
      **Katman Gezgini** seçili katman için yapı bağlantılarını gösterir.  
   
-2.  Bu bağlantıları yönetmek için aşağıdaki görevleri kullanın.  
+2. Bu bağlantıları yönetmek için aşağıdaki görevleri kullanın.  
   
 |**Alıcı**|**Katman Gezgini**|  
 |------------|---------------------------|  
@@ -102,7 +102,7 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
 |Varolan yapı bağlantısından yeni bir katman oluşturma|Yapı bağlantısını diyagramdaki boş bir alana sürükleyin.|  
 |Bağlantılı bir yapının, katman diyagramına karşı doğrulamayı desteklediğini onaylayın.|Bakmak **doğrulamayı destekler** Yapı bağlantısını için sütun.|  
   
-##  <a name="Discovering"></a> Varolan bağımlılıklara ters mühendislik  
+## <a name="Discovering"></a> Varolan bağımlılıklara ters mühendislik  
  Bir bağımlılık, bir katman ile ilişkili yapının başka bir katman ile ilişkili bir yapıya başvurusu olduğu yerde var olur. Örneğin, bir katmandaki sınıf başka bir katmanda sınıfı olan değişkeni bildirir. Diyagramdaki katmanlara bağlanmış yapılar için varolan bağımlılıklara ters mühendislik uygulayabilirsiniz.  
   
 > [!NOTE]
@@ -112,7 +112,7 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
   
   Genellikle var olmaması gereken bazı bağımlılıklar göreceksiniz. Bu bağımlılıkları hedeflenen tasarım ile uyumlu hale getirmek için düzenleyebilirsiniz.  
   
-##  <a name="EditDependencies"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
+## <a name="EditDependencies"></a> Katmanları ve bağımlılıkları hedeflenen tasarımı göstermek için düzenleme  
  Sisteminizde veya hedeflenen mimaride yapmayı planladığınız değişiklikleri açıklamak için katman diyagramını düzenleyin:  
   
 |**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
@@ -123,21 +123,21 @@ Yazılım sisteminizin üst düzey, mantıksal mimarisini görselleştirmek içi
 |Bir katman ile ilişkili yapıların belirli ad alanlarına ait olmaması gerektiğini belirtme|Katmanın ad alanlarını yazın **Yasak Ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
 |Bir katman ile ilişkili yapıların belirli ad alanlarından birine ait olması gerektiğini belirtme|Katmanın ad türü **gerekli ad alanları** özelliği. Noktalı virgül kullanın (**;**) ad alanlarını ayırmak için.|  
   
-##  <a name="EditLayout"></a> Öğelerin diyagramda görüntülenme şeklini değiştirme  
+## <a name="EditLayout"></a> Öğelerin diyagramda görüntülenme şeklini değiştirme  
  Özelliklerini düzenleyerek katmanların boyutunu, şeklini, rengini ve konumunu veya bağımlılıkların rengini değiştirebilirsiniz.  
   
-##  <a name="Codemaps"></a> Desenler ve kod haritasında bağımlılıklarını keşfedin  
+## <a name="Codemaps"></a> Desenler ve kod haritasında bağımlılıklarını keşfedin  
  Katman diyagramları oluştururken, aynı zamanda oluşturacağınız **kod haritaları**. Bu diyagramları Kodu Keşfetme sırasında desenleri ve bağımlılıkları keşfetmenize yardımcı olabilir. Derlemeler, ad alanlarını ve genellikle de varolan katmanlarla - sınıfları keşfetmek için Çözüm Gezgini, sınıf görünümü ve Nesne Tarayıcısı'nı kullanın. Kod haritaları hakkında daha fazla bilgi için bkz:  
   
--   [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  
+- [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Uygulamalarınızda hata ayıklamak için kod haritalarını kullanma](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Kod haritası çözümleyicilerini kullanarak olası sorunları bulma](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kanal 9 Video: Tasarlama ve katman diyagramlarını kullanarak Mimarinizi doğrulama](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)   
- [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)   
+ [Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)   
+ [Katman Diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)   
  [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)   
  [Kodu görselleştirme](../modeling/visualize-code.md)

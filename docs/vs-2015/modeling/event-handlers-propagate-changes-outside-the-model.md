@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059909"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Görselleştirme ve modelleme SDK'sı, mağaza içi değişkenler, dosyalar, ba�
   
 1. İzlemek istediğiniz olay türünü seçin. Tam bir listesi için özelliklerine bakmak <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Her bir özellik bir olay türüne karşılık gelir. En sık olay türleri kullanılır:  
   
-   -   `ElementAdded` – bir model öğesini tetiklenir, ilişki bağlantısı, Şekil veya bağlayıcının oluşturulur.  
+   - `ElementAdded` – bir model öğesini tetiklenir, ilişki bağlantısı, Şekil veya bağlayıcının oluşturulur.  
   
-   -   Tetiklenen ElementPropertyChanged – değerini bir `Normal` etki alanı özelliği. Yalnızca eski ve yeni değerler eşit değilse, olay tetiklenir. Olay, hesaplanan ve özel depolama özellikleri için uygulanamaz.  
+   - Tetiklenen ElementPropertyChanged – değerini bir `Normal` etki alanı özelliği. Yalnızca eski ve yeni değerler eşit değilse, olay tetiklenir. Olay, hesaplanan ve özel depolama özellikleri için uygulanamaz.  
   
         İlişki bağlantılarını karşılık gelen rol özellikleri için uygulanamaz. Bunun yerine, `ElementAdded` etki alanı ilişkisi izlemek için.  
   
-   -   `ElementDeleted` – bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.  
+   - `ElementDeleted` – bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.  
   
 2. İçin bir parçalı sınıf tanımı ekleyin _YourDsl_**DocData** ayrı bir kod dosyasında **DslPackage** proje.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Bir olay yazarsanız, deponun güncelleştirir:  
   
--   Kullanım `store.InUndoRedoOrRollback` geri model öğelerini değişiklik yapmasını önlemek için. İşlem Yöneticisi, özgün durumuna geri deposundaki her şeyi ayarlanır.  
+- Kullanım `store.InUndoRedoOrRollback` geri model öğelerini değişiklik yapmasını önlemek için. İşlem Yöneticisi, özgün durumuna geri deposundaki her şeyi ayarlanır.  
   
--   Kullanım `store.InSerializationTransaction` model dosyasından yüklenirken değişiklik yapmasını önlemek için.  
+- Kullanım `store.InSerializationTransaction` model dosyasından yüklenirken değişiklik yapmasını önlemek için.  
   
--   Değişikliklerinizi başka tetiklenmesi olayları neden olur. Sonsuz bir döngüye önlemek emin olun.  
+- Değişikliklerinizi başka tetiklenmesi olayları neden olur. Sonsuz bir döngüye önlemek emin olun.  
   
 ## <a name="store-event-types"></a>Store olay türleri  
  Her olay türüne bir koleksiyon Store.EventManagerDirectory karşılık gelir. Ekleyip olay işleyicileri dilediğiniz zaman kaldırabilirsiniz, ancak belge yüklendiğinde bunları eklemek için normal.  

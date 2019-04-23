@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70c77e3b093947703680ab7253fdee0a6c3d60cd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041540"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office çözümlerinde WPF denetimlerini kullanma
 
@@ -27,13 +27,13 @@ Visual Studio'da Office geliştirme araçlarını kullanarak oluşturulan çöz�
 
 Office çözümünü Windows Forms denetimlerinde barındıran herhangi bir kullanıcı Arabirimi öğesi, WPF denetimleri de barındırabilir. Bunlar, aşağıdaki öğeleri içerir:
 
--   Belgeleri ve belge düzeyi özelleştirmelerdeki çalışma.
+- Belgeleri ve belge düzeyi özelleştirmelerdeki çalışma.
 
--   Belge düzeyi özelleştirmelerdeki Eylemler bölmesi.
+- Belge düzeyi özelleştirmelerdeki Eylemler bölmesi.
 
--   VSTO eklentileri özel görev bölmeleri.
+- VSTO eklentileri özel görev bölmeleri.
 
--   VSTO eklentileri için Outlook form bölgeleri.
+- VSTO eklentileri için Outlook form bölgeleri.
 
 ## <a name="add-wpf-controls-to-office-projects-at-design-time"></a>WPF denetimleri Office projelerini tasarım zamanında ekleyin.
 
@@ -41,49 +41,49 @@ Office çözümlerinde UI öğelerine doğrudan WPF denetimleri ekleyemezsiniz. 
 
 ### <a name="to-add-wpf-controls-to-an-actions-pane-custom-task-pane-or-form-region"></a>Eylemler bölmesinde, özel görev bölmesi veya form bölgesi WPF denetimleri eklemek için
 
-1.  Özel görev bölmesi, Eylemler bölmesi ve form bölgesini eklemek istediğiniz bir projeyi açın.
+1. Özel görev bölmesi, Eylemler bölmesi ve form bölgesini eklemek istediğiniz bir projeyi açın.
 
-2.  Ekleme bir **kullanıcı denetimi (WPF)** projenize öğesi.
+2. Ekleme bir **kullanıcı denetimi (WPF)** projenize öğesi.
 
-3.  Gelen **araç kutusu**, WPF denetimlerinin WPF kullanıcı denetimi tasarım yüzeyine ekleyin.
+3. Gelen **araç kutusu**, WPF denetimlerinin WPF kullanıcı denetimi tasarım yüzeyine ekleyin.
 
      WPF kullanıcı denetimi Tasarımcısı açıkken, varsayılan olarak **araç kutusu** sadece WPF denetimleri içerir.
 
-4.  Projeyi oluşturun.
+4. Projeyi oluşturun.
 
-5.  Eylemler bölmesinde, form bölgesi ya da özel görev bölmesi projenize ekleyin:
+5. Eylemler bölmesinde, form bölgesi ya da özel görev bölmesi projenize ekleyin:
 
-    -   Form bölgeleri için ekleme bir **Outlook Form bölgesi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    - Form bölgeleri için ekleme bir **Outlook Form bölgesi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Bir Outlook eklenti projesine form bölgesi ekleme](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Eylemler bölmeleri için ekleme bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) ve [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Eylemler bölmeleri için ekleme bir **Eylemler bölmesi denetimi** veya **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) ve [nasıl yapılır: Eylemler bölmesi ekleme Word belgelerine veya Excel çalışma kitapları](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Özel görev bölmeleri için ekleme bir **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    - Özel görev bölmeleri için ekleme bir **kullanıcı denetimi** projeye öğe. Daha fazla bilgi için [nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6.  Gelen *ProjectName* **WPF kullanıcı denetimleri** sekmesinde **araç kutusu**, Eylemler bölmesinde, form bölgesi veya özel görev bölmesi için tasarımcı WPF kullanıcı denetimi sürükleyin.
+6. Gelen *ProjectName* **WPF kullanıcı denetimleri** sekmesinde **araç kutusu**, Eylemler bölmesinde, form bölgesi veya özel görev bölmesi için tasarımcı WPF kullanıcı denetimi sürükleyin.
 
      Visual Studio otomatik olarak oluşturur bir <xref:System.Windows.Forms.Integration.ElementHost> UI öğesi üzerinde WPF kullanıcı denetimi barındıran bir nesne.
 
-7.  Projeyi yeniden derleyin.
+7. Projeyi yeniden derleyin.
 
 #### <a name="to-add-wpf-controls-to-a-document-or-worksheet-in-a-document-level-project"></a>Belge veya çalışma bir belge düzeyi projede WPF denetimleri eklemek için
 
-1.  Word veya Excel için belge düzeyi projesi açın.
+1. Word veya Excel için belge düzeyi projesi açın.
 
-2.  Ekleme bir **kullanıcı denetimi (WPF)** projenize öğesi.
+2. Ekleme bir **kullanıcı denetimi (WPF)** projenize öğesi.
 
-3.  Gelen **araç kutusu**, WPF denetimlerinin WPF kullanıcı denetimi tasarım yüzeyine ekleyin.
+3. Gelen **araç kutusu**, WPF denetimlerinin WPF kullanıcı denetimi tasarım yüzeyine ekleyin.
 
-4.  Projeyi oluşturun.
+4. Projeyi oluşturun.
 
-5.  Ekleme bir **kullanıcı denetimi** projeye öğe (diğer bir deyişle, bir Windows Forms kullanıcı denetimi).
+5. Ekleme bir **kullanıcı denetimi** projeye öğe (diğer bir deyişle, bir Windows Forms kullanıcı denetimi).
 
-6.  Windows Forms kullanıcı denetimi Tasarımcısı'nı açın.
+6. Windows Forms kullanıcı denetimi Tasarımcısı'nı açın.
 
-7.  Gelen *ProjectName* **WPF kullanıcı denetimleri** sekmesinde **araç kutusu**, WPF kullanıcı denetimi tasarımcıya sürükleyin.
+7. Gelen *ProjectName* **WPF kullanıcı denetimleri** sekmesinde **araç kutusu**, WPF kullanıcı denetimi tasarımcıya sürükleyin.
 
      Visual Studio otomatik olarak oluşturur bir <xref:System.Windows.Forms.Integration.ElementHost> WPF kullanıcı denetimi Windows Forms kullanıcı denetimi barındıran bir nesne.
 
-8.  Windows Forms kullanıcı denetimi belge veya çalışma kitabındaki programlı olarak ekleyen bir kod yazın. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
+8. Windows Forms kullanıcı denetimi belge veya çalışma kitabındaki programlı olarak ekleyen bir kod yazın. Daha fazla bilgi için [Office belgelerine çalışma zamanında denetimler ekleme](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
     > [!NOTE]
     > Windows Forms kullanıcı denetimi, belge veya çalışma sayfasını tasarımcıda sürükleyemezsiniz.
@@ -100,21 +100,21 @@ WPF denetimlerini kullanma <xref:System.Windows.Forms.Integration.ElementHost> s
 
 Daha fazla mimari hakkında bilgi ve Windows Forms denetimleri ve forms, WPF denetimleri barındırma için tasarım konuları için aşağıdaki konulara bakın:
 
--   [Windows Forms ve WPF birlikte çalışabilirlik giriş mimarisi](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
+- [Windows Forms ve WPF birlikte çalışabilirlik giriş mimarisi](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
 
--   [Windows Forms ve WPF özelliğini eşleme](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
+- [Windows Forms ve WPF özelliğini eşleme](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
 
--   [WPF ve Windows Forms birlikte çalışması](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
+- [WPF ve Windows Forms birlikte çalışması](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
--   [Windows Forms denetimleri ve eşdeğer WPF denetimleri](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Windows Forms denetimleri ve eşdeğer WPF denetimleri](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Windows Forms denetimleri ve Visual Studio formlarında tasarım zamanında WPF denetimleri ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [İzlenecek yol: Tasarım zamanında Windows Forms yeni bir WPF içeriği oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [İzlenecek yol: Tasarım zamanında Windows Forms yeni bir WPF içeriği oluşturma](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [İzlenecek yol: Tasarım zamanında WPF içeriği Windows Forms'ta düzenleme](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [İzlenecek yol: Tasarım zamanında WPF içeriği Windows Forms'ta düzenleme](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [İzlenecek yol: WPF içeriği için stil](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+- [İzlenecek yol: WPF içeriği için stil](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

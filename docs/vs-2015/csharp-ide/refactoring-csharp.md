@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046324"
 ---
 # <a name="refactoring-c"></a>Yeniden Düzenleme (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Yeniden düzenleme, kod dış davranışını değiştirmeden kodu iç yapısın
   
  Visual C# yeniden düzenleme aşağıdaki komutları hakkında sağlar **yeniden düzenleme** menüsü:  
   
--   [Ayıklama Yöntemi Yeniden Düzenlemesi (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Ayıklama Yöntemi Yeniden Düzenlemesi (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Yeniden Düzenlemeyi (C#) Yeniden Adlandırma](../csharp-ide/rename-refactoring-csharp.md)  
+- [Yeniden Düzenlemeyi (C#) Yeniden Adlandırma](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Alan Yeniden Düzenlemesini Yalıtma (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Alan Yeniden Düzenlemesini Yalıtma (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Ayıklama Arabirimi Yeniden Düzenlemesi (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Ayıklama Arabirimi Yeniden Düzenlemesi (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Parametreleri Kaldır Yeniden Düzenlemesi (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Parametreleri Kaldır Yeniden Düzenlemesi (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Parametreleri Yeniden Sırala (C#) Yeniden Düzenlemesi](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Parametreleri Yeniden Sırala (C#) Yeniden Düzenlemesi](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Birden çok proje yeniden düzenleme  
  Visual Studio, birden çok proje aynı Çözümdeki projeler için yeniden düzenleme destekler. Tüm dosyalardaki başvuruları düzeltmek yeniden düzenleme işlemleri, aynı dili tüm projeler genelinde bu başvuruları düzeltin. Bu, herhangi bir projeden projeye başvurular için çalışır. Örneğin, bir sınıf kitaplığı, bir sınıf kitaplığı türü yeniden adlandırdığınızda başvuran bir konsol uygulaması varsa (kullanarak `Rename` yeniden düzenleme işlemi), konsol uygulamasındaki sınıf kitaplığı türü başvuruları de güncellenir.  
@@ -108,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C# için Visual Studio geliştirme ortamını kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Nasıl yapılır: Geri yükleme C# yeniden düzenleme kod parçacıklarını](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Nasıl yapılır: C# Yeniden Düzenleme Kod Parçacıklarını Geri Yükleme](../ide/how-to-restore-csharp-refactoring-snippets.md)

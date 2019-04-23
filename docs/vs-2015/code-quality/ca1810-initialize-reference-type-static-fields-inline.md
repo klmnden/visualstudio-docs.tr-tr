@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037874"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Başvuru türü statik alanları satır içinden başlatın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54785413"
 
  Statik oluşturucu denetimleri performansı düşürebilir. Genellikle bir statik Oluşturucu, yalnızca statik alanları, servis talebi, yalnızca statik başlatmanın emin olmalısınız statik bir alana erişim ilk önce oluştuğu başlatmak için kullanılır. `beforefieldinit` Davranıştır bu ve diğer birçok tür için uygun. Yalnızca statik başlatma genel durumunu etkiler ve aşağıdaki koşullardan biri uygunsuz olur:
 
--   Genel durum üzerindeki etkisini, pahalıdır ve türü kullanılmaz, gerekli değildir.
+- Genel durum üzerindeki etkisini, pahalıdır ve türü kullanılmaz, gerekli değildir.
 
--   Genel durum etkileri herhangi türü statik alanları erişmeden erişilebilir.
+- Genel durum etkileri herhangi türü statik alanları erişmeden erişilebilir.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için bildirildiğinde, tüm statik veriyi başlatın ve statik oluşturucuyu kaldırın.

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062054"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>İlgili Hizmetler ve Arabirimler (Kaynak Denetimi VSPackage’ı)
 Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenmiştir [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Kaynak denetimi VSPackage'ı, bazı bu arabirimleri uygulayan ve diğer kaynak denetimi görevlerini gerçekleştirmek için kullanır.
@@ -30,11 +30,11 @@ Bu bölümde, tüm kaynak denetimi VSPackage'ı ile ilgili arabirimler listelenm
 
  Arabirimleri şunlardır:
 
--   Gerekli: İlgili varlık (Proje kaynak denetimi VSPackage'ı, kaynak denetimi saplama) arabirimini uygulaması gerekir.
+- Gerekli: İlgili varlık (Proje kaynak denetimi VSPackage'ı, kaynak denetimi saplama) arabirimini uygulaması gerekir.
 
--   Önerilen: Varlık, bu arabirimi uygulayan; Aksi takdirde, kaynak denetimi işlevlerini sınırlı olabilir.
+- Önerilen: Varlık, bu arabirimi uygulayan; Aksi takdirde, kaynak denetimi işlevlerini sınırlı olabilir.
 
--   İsteğe bağlı: varlık daha zengin bir özellik kümesi sağlamak için bu arabirimi uygulayabilir.
+- İsteğe bağlı: varlık daha zengin bir özellik kümesi sağlamak için bu arabirimi uygulayabilir.
 
 | Arabirim | Amaç | Uygulayan | Uygulansın mı? |
 | - | - |--------------------------|-------------|

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057257"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder öğesi (Visual Studio Proje şablonları)
 Projeye eklenecek klasörü belirtir.
@@ -62,7 +62,7 @@ Projeye eklenecek klasörü belirtir.
 
  Bir şablonda klasörlere proje öğeleri düzenlemek için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz:
 
--   Klasörleri şablona dahil *.zip* dosya ve bunları projeye eklemek *.vstemplate* dosyasında yolunu belirterek dosya `ProjectItem` öğelerle Hayır `Folder` öğeleri. Önerilen yöntem budur. Örneğin:
+- Klasörleri şablona dahil *.zip* dosya ve bunları projeye eklemek *.vstemplate* dosyasında yolunu belirterek dosya `ProjectItem` öğelerle Hayır `Folder` öğeleri. Önerilen yöntem budur. Örneğin:
 
      `...`
 
@@ -72,7 +72,7 @@ Projeye eklenecek klasörü belirtir.
 
      `...`
 
--   Klasörleri şablona dahil *.zip* dosya ve bunları projeye eklemek *.vstemplate* ile dosya `Folder` öğeleri. Örneğin:
+- Klasörleri şablona dahil *.zip* dosya ve bunları projeye eklemek *.vstemplate* ile dosya `Folder` öğeleri. Örneğin:
 
      `...`
 
@@ -86,7 +86,7 @@ Projeye eklenecek klasörü belirtir.
 
      `...`
 
--   Klasörleri şablonda içermez *.zip* dosya ve klasörleri ekleme `TargetFileName` özniteliği `ProjectItem` öğesi. Örneğin:
+- Klasörleri şablonda içermez *.zip* dosya ve klasörleri ekleme `TargetFileName` özniteliği `ProjectItem` öğesi. Örneğin:
 
      `...`
 

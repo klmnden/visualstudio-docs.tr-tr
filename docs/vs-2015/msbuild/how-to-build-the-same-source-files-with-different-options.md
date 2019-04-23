@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663151"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045609"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Nasıl yapılır: Farklı Seçeneklerle Aynı Kaynak Dosyaları Derleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Bir grubu başka bir özelliğe dayalı özellikleri ayarlamak için  
   
--   Kullanım bir `Condition` özniteliğini bir `PropertyGroup` öğesi şuna benzer:  
+- Kullanım bir `Condition` özniteliğini bir `PropertyGroup` öğesi şuna benzer:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Başka bir özelliğe dayalı bir özelliği tanımlamak için  
   
--   Kullanım bir `Condition` özniteliğini bir `Property` öğesi şuna benzer:  
+- Kullanım bir `Condition` özniteliğini bir `Property` öğesi şuna benzer:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ Projeleri oluşturduğunuzda, farklı bir derleme seçenekleri ile aynı bileşe
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Komut satırında bir proje özelliğini ayarlamak için  
   
--   Kullanım **/Property** özellik ve özellik değeri ile geçiş yapın. Örneğin:  
+- Kullanım **/Property** özellik ve özellik değeri ile geçiş yapın. Örneğin:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

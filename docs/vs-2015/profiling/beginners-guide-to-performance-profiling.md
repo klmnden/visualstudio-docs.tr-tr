@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e243c1202ffbc9bd61f42073d6e464de858ff87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059233"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Performans Profili Oluşturma Başlangıç Kılavuzu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,33 +36,33 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
 > [!TIP]
 >  Windows işlevlerini çağıran kodu yazıyorsanız, en güncel .pdb dosyalarına sahip olduğunuzdan emin olun. Bu dosyalar olmadan rapor görünümleriniz karmaşık ve anlaşılması zor olan Windows işlev adlarını listeler. Gereksinim duyduğunuz dosyaların bilgisayarınızda yüklü olduğundan emin olma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Başvuru Windows sembol bilgileri](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a> Oluşturma ve performans oturumu çalıştırma  
+## <a name="Step1"></a> Oluşturma ve performans oturumu çalıştırma  
  Analiz etmek için gereken verileri almak için öncelikle bir performans oturumu oluşturmanız ve ardından çalıştırmanız gerekir. **Performans Sihirbazı** her ikisini de yapmanızı sağlar.  
   
  Windows masaüstü uygulaması veya ASP.NET uygulamasını profil değil, bir profil oluşturma araçlarından birini kullanmanız gerekir. Bkz: [profil oluşturma araçları](../profiling/profiling-tools.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Oluşturma ve performans oturumu çalıştırma  
   
-1.  Visual Studio içinde çözümü açın. Yapılandırması yayın olarak ayarlanmış. (Bul **çözüm yapılandırmaları** ayarlamak için araç çubuğundaki **hata ayıklama** varsayılan olarak. Değiştirin **yayın**.)  
+1. Visual Studio içinde çözümü açın. Yapılandırması yayın olarak ayarlanmış. (Bul **çözüm yapılandırmaları** ayarlamak için araç çubuğundaki **hata ayıklama** varsayılan olarak. Değiştirin **yayın**.)  
   
     > [!IMPORTANT]
     >  Kullanmakta olduğunuz bilgisayarda yönetici değilseniz, profil oluşturucuyu kullanırken, Visual Studio Yönetici olarak çalıştırmalısınız. (Visual Studio uygulama simgesini sağ tıklatın ve ardından **yönetici olarak çalıştır**.  
   
-2.  Üzerinde **hata ayıklama** menüsünü tıklatın **performans Profiler**.  
+2. Üzerinde **hata ayıklama** menüsünü tıklatın **performans Profiler**.  
   
-3.  Denetleme **performans Sihirbazı** seçeneğini ve tıklayın **Başlat**.  
+3. Denetleme **performans Sihirbazı** seçeneğini ve tıklayın **Başlat**.  
   
-4.  Denetleme **CPU örnekleme (önerilir)** seçeneğini ve tıklayın **son**.  
+4. Denetleme **CPU örnekleme (önerilir)** seçeneğini ve tıklayın **son**.  
   
-5.  Uygulamanız başlatılır ve Profil Oluşturucu veri toplamaya başlar.  
+5. Uygulamanız başlatılır ve Profil Oluşturucu veri toplamaya başlar.  
   
-6.  Performans sorunları içerebilecek işlevi çalıştırın.  
+6. Performans sorunları içerebilecek işlevi çalıştırın.  
   
-7.  Her zaman yaptığınız gibi uygulamayı kapatın.  
+7. Her zaman yaptığınız gibi uygulamayı kapatın.  
   
      Uygulamayı yürütmeyi bitirdikten sonra **özeti** profil oluşturma verilerinin görünümü ana Visual Studio penceresinde görüntülenir ve yeni bir oturum için bir simge görünür **performans Gezgini** penceresi.  
   
-##  <a name="Step2"></a> 2. adım: Örnekleme verileri analiz edin  
+## <a name="Step2"></a> 2. adım: Örnekleme verileri analiz edin  
  Bir performans oturumunu çalıştırmayı bitirdiğinizde **özeti** Visual Studio ana penceresinde profil oluşturma rapor görünümünde görünür.  
   
  İnceleyerek verilerinizi analiz etmeye başlamanızı öneririz **sık kullanılan yol** ardından fazla çalışmayı yapan ve son olarak diğer işlevlere odaklanarak üzerinde kullanarak işlevlerin listesi **Özet zaman çizelgesi** . Profil oluşturma önerilerini ve Uyarıları da görüntüleyebilirsiniz **hata listesi** penceresi.  
@@ -75,23 +75,23 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
   
 #### <a name="to-analyze-sampling-data"></a>Örnekleme verileri analiz etmek için  
   
-1.  İçinde **özeti** görünümü **etkin yolu** en kapsamlı örneklerle uygulamanızın çağrı ağacının dalını gösterir. Bu, veriler toplandığında en aktif olan yürütme yoludur. Çağrı ağacını üreten algoritmayı iyileştirilebilir yüksek içeren değerler belirtebilirsiniz. Kodunuzda yoldaki en düşük işlevi bulun. Bir yolu da sistem işlevlerini veya İşlevler harici modüllerdeki içerebileceğine dikkat edin.  
+1. İçinde **özeti** görünümü **etkin yolu** en kapsamlı örneklerle uygulamanızın çağrı ağacının dalını gösterir. Bu, veriler toplandığında en aktif olan yürütme yoludur. Çağrı ağacını üreten algoritmayı iyileştirilebilir yüksek içeren değerler belirtebilirsiniz. Kodunuzda yoldaki en düşük işlevi bulun. Bir yolu da sistem işlevlerini veya İşlevler harici modüllerdeki içerebileceğine dikkat edin.  
   
      ![Profiler etkin yolu](../profiling/media/profiler-hotpath.png "Profiler_HotPath")  
   
-    1.  **Kapsamlı örnekler** işlevi ve olarak adlandırılan her türlü işlev ne kadar iş yapıldığı gösterir. Yüksek içeren sayılar işlevin, genel olarak en pahalı olduğunu işaret eder.  
+    1. **Kapsamlı örnekler** işlevi ve olarak adlandırılan her türlü işlev ne kadar iş yapıldığı gösterir. Yüksek içeren sayılar işlevin, genel olarak en pahalı olduğunu işaret eder.  
   
-    2.  **Dışlamalı örnekler** tarafından çağrılan işlevler tarafından yapılan iş hariç işlev gövdesindeki kod tarafından ne kadar iş yapıldığı gösterir. Yüksek dışlamalı sayımlar işlevin kendisi içinde bir performans engelini işaret edebilir.  
+    2. **Dışlamalı örnekler** tarafından çağrılan işlevler tarafından yapılan iş hariç işlev gövdesindeki kod tarafından ne kadar iş yapıldığı gösterir. Yüksek dışlamalı sayımlar işlevin kendisi içinde bir performans engelini işaret edebilir.  
   
-2.  Görüntülemek için işlevin adını tıklayarak **işlev ayrıntıları** profil oluşturma verilerinin görünümü. **İşlev ayrıntıları** görünümü, o işlevi çağıran tüm işlevlere ve seçili işlev tarafından çağrılan tüm işlevleri gösteren seçili işlev için profil verilerinin grafik bir görünümünü sunar.  
+2. Görüntülemek için işlevin adını tıklayarak **işlev ayrıntıları** profil oluşturma verilerinin görünümü. **İşlev ayrıntıları** görünümü, o işlevi çağıran tüm işlevlere ve seçili işlev tarafından çağrılan tüm işlevleri gösteren seçili işlev için profil verilerinin grafik bir görünümünü sunar.  
   
-    -   Çağıran ve çağrılan işlevlerin blok boyutu, işlevlerin yaptığını veya çağrıldığını sıklıkta temsil eder.  
+    - Çağıran ve çağrılan işlevlerin blok boyutu, işlevlerin yaptığını veya çağrıldığını sıklıkta temsil eder.  
   
-    -   Bir arama adını tıklayabilirsiniz ya da çağrılan işlev Ayrıntıları görünümünde seçili işlev yapmak için işlev.  
+    - Bir arama adını tıklayabilirsiniz ya da çağrılan işlev Ayrıntıları görünümünde seçili işlev yapmak için işlev.  
   
-    -   Alt bölmesinde **işlev ayrıntıları** windows işlev kodunu görüntüler. Kodu inceleyerek performansını iyileştirme fırsatı bulursanız, Visual Studio Düzenleyicisi'nde dosyayı açmak için kaynak dosya adına tıklayın.  
+    - Alt bölmesinde **işlev ayrıntıları** windows işlev kodunu görüntüler. Kodu inceleyerek performansını iyileştirme fırsatı bulursanız, Visual Studio Düzenleyicisi'nde dosyayı açmak için kaynak dosya adına tıklayın.  
   
-3.  Çözümlemenize devam etmek için iade **özeti** görünümü seçerek **özeti** görünüm açılır listesinden. Ardından deki işlevleri inceleyin **en bireysel işleri yapan işlevler**. Bu liste, en yüksek dışlamalı örnek işlevleri görüntüler. Bu işlevlerin işlev gövdesindeki kod önemli işler yapar ve bunu en iyi duruma olabilir. Daha fazla belirli bir işlev analiz edin, içinde görüntülemek için işlevin adını tıklayarak için **işlev ayrıntıları** görünümü.  
+3. Çözümlemenize devam etmek için iade **özeti** görünümü seçerek **özeti** görünüm açılır listesinden. Ardından deki işlevleri inceleyin **en bireysel işleri yapan işlevler**. Bu liste, en yüksek dışlamalı örnek işlevleri görüntüler. Bu işlevlerin işlev gövdesindeki kod önemli işler yapar ve bunu en iyi duruma olabilir. Daha fazla belirli bir işlev analiz edin, içinde görüntülemek için işlevin adını tıklayarak için **işlev ayrıntıları** görünümü.  
   
      ![En fazla çalışmayı yapan işlevler listesini](../profiling/media/functions-mostwork.png "Functions_MostWork")  
   
@@ -101,24 +101,24 @@ Visual Studio profil oluşturma araçları, uygulamanızdaki performans sorunlar
   
      ![Performans Özet görünümü zaman çizelgesi](../profiling/media/performancesummary.png "PerformanceSummary")  
   
-4.  Profil Oluşturucu ayrıca profil oluşturma çalıştırılmasına ilişkin iyileştirme yollarını önermek ve olası performans sorunlarını tanımlamak için bir kural kümesi kullanır. Bir sorun bulunursa, bir uyarı görüntülenen **hata listesi** penceresi. Açmak için **hata listesi** penceresi, **görünümü** menüsünü tıklatın **hata listesi**.  
+4. Profil Oluşturucu ayrıca profil oluşturma çalıştırılmasına ilişkin iyileştirme yollarını önermek ve olası performans sorunlarını tanımlamak için bir kural kümesi kullanır. Bir sorun bulunursa, bir uyarı görüntülenen **hata listesi** penceresi. Açmak için **hata listesi** penceresi, **görünümü** menüsünü tıklatın **hata listesi**.  
   
-    -   Uyarı çalıştıran işlevi görmek için **işlev ayrıntıları** görüntülemek için uyarıyı çift tıklatın.  
+    - Uyarı çalıştıran işlevi görmek için **işlev ayrıntıları** görüntülemek için uyarıyı çift tıklatın.  
   
-    -   Uyarı hakkında ayrıntılı bilgi görüntülemek için hatayı sağ tıklayın ve ardından **hata yardımını göster**  
+    - Uyarı hakkında ayrıntılı bilgi görüntülemek için hatayı sağ tıklayın ve ardından **hata yardımını göster**  
   
-##  <a name="Step3"></a> 3. adım: Kodu gözden geçirin ve bir oturumu yeniden çalıştırın  
+## <a name="Step3"></a> 3. adım: Kodu gözden geçirin ve bir oturumu yeniden çalıştırın  
  Bulmak ve bir veya daha fazla işlev en iyi duruma getirme sonra profil oluşturma çalıştırmasını yineleyebilirsiniz ve uygulamanızın performansını için Değişikliklerinizi yaptıktan farkı görmek için verileri karşılaştırabilirsiniz.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Kodu gözden geçirin ve profil oluşturucuyu yeniden çalıştırmak için  
   
-1.  Kodunuzu değiştirin.  
+1. Kodunuzu değiştirin.  
   
-2.  Açmak için **performans Gezgini**, **hata ayıklama** menüsünü tıklatın **Profiler**, ardından **performans Gezgini** ve ardından**Göster performans Gezgini**.  
+2. Açmak için **performans Gezgini**, **hata ayıklama** menüsünü tıklatın **Profiler**, ardından **performans Gezgini** ve ardından**Göster performans Gezgini**.  
   
-3.  İçinde **performans Gezgini**, yeniden çalıştırın ve ardından istediğiniz oturumu sağ **profil ile Başlat.**  
+3. İçinde **performans Gezgini**, yeniden çalıştırın ve ardından istediğiniz oturumu sağ **profil ile Başlat.**  
   
-4.  Oturumu yeniden çalıştırdıktan sonra başka bir veri dosyası eklenir **raporları** klasörü oturumda **performans Gezgini**. Hem özgün seçin ve yeni profil oluşturma verisini, seçime sağ tıklayın ve ardından **Performans raporlarını Karşılaştır**.  
+4. Oturumu yeniden çalıştırdıktan sonra başka bir veri dosyası eklenir **raporları** klasörü oturumda **performans Gezgini**. Hem özgün seçin ve yeni profil oluşturma verisini, seçime sağ tıklayın ve ardından **Performans raporlarını Karşılaştır**.  
   
      Karşılaştırma sonuçlarını görüntüleyen yeni bir rapor penceresi açılır. Karşılaştırma görünümünün nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: Performans veri dosyalarını karşılaştırma](../profiling/how-to-compare-performance-data-files.md).  
   

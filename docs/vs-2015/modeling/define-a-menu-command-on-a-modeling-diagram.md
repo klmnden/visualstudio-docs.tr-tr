@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046258"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Modelleme diyagramında menü komutu tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
 ## <a name="defining-the-menu-command"></a>Menü komutunu tanımlama  
  Bir UML tasarımcısı için bir menü komutu oluşturmak için komutun davranışını tanımlayan bir sınıf oluşturmanız ve sınıfı bir Visual Studio Tümleştirme Uzantısı'na (VSIX) katıştırmanız gerekir. VSIX komutu yükleyebilecek bir kapsayıcı gibi davranır. Bir menü komutunu tanımlamanın iki farklı yöntemi vardır:  
 
--   **Bir proje şablonunu kullanarak kendi VSIX'inde bir menü komutu oluşturun.** Bu daha hızlı bir yöntemdir. Menü komutlarınızı uzantı doğrulama uzantıları, özel araç kutusu öğeleri veya hareket işleyicileri gibi diğer tür birleştirmek istemiyorsanız, bunu kullanın.  
+- **Bir proje şablonunu kullanarak kendi VSIX'inde bir menü komutu oluşturun.** Bu daha hızlı bir yöntemdir. Menü komutlarınızı uzantı doğrulama uzantıları, özel araç kutusu öğeleri veya hareket işleyicileri gibi diğer tür birleştirmek istemiyorsanız, bunu kullanın.  
 
--   **Ayrı menü komutu ve VSIX projeleri oluşturun.** Aynı VSIX içinde kaç tür uzantıyı birleştirmek istiyorsanız bu yöntemi kullanın. Örneğin, menü komutunuz modelin belirli kısıtlamalar ortaya koyacağını ön görüyorsa bunu bir doğrulama yöntemi olarak aynı VSIX içine katıştırabilirsiniz.  
+- **Ayrı menü komutu ve VSIX projeleri oluşturun.** Aynı VSIX içinde kaç tür uzantıyı birleştirmek istiyorsanız bu yöntemi kullanın. Örneğin, menü komutunuz modelin belirli kısıtlamalar ortaya koyacağını ön görüyorsa bunu bir doğrulama yöntemi olarak aynı VSIX içine katıştırabilirsiniz.  
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Kendi VSIX'inde bir menü komutu oluşturmak için  
 
@@ -55,13 +55,13 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
 
 1. Bir sınıf kitaplığı projesini yeni bir Visual Studio çözüm veya varolan bir çözüm içerisinde oluşturun.  
 
-   1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+   1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
 
-   2.  Altında **yüklü şablonlar**seçin **Visual C#** veya **Visual Basic**. Orta sütundaki seçin **sınıf kitaplığı**.  
+   2. Altında **yüklü şablonlar**seçin **Visual C#** veya **Visual Basic**. Orta sütundaki seçin **sınıf kitaplığı**.  
 
-   3.  Ayarlama **çözüm** yeni bir çözüm oluşturmak veya önceden açmış olduğunuz VSIX çözümüne bir bileşen eklemek isteyip istemediğinizi belirtmek için.  
+   3. Ayarlama **çözüm** yeni bir çözüm oluşturmak veya önceden açmış olduğunuz VSIX çözümüne bir bileşen eklemek isteyip istemediğinizi belirtmek için.  
 
-   4.  Proje kümesi adını ve konumunu ve Tamam'a tıklayın.  
+   4. Proje kümesi adını ve konumunu ve Tamam'a tıklayın.  
 
 2. Projenize aşağıdaki başvuruları ekleyin.  
 
@@ -142,23 +142,23 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
 
 #### <a name="to-add-a-menu-command-to-a-vsix-project"></a>Bir menü komutu bir VSIX projesine eklemek için  
 
-1.  Kendi VSIX'i olan bir menü komutu oluşturduysanız, bu yordama ihtiyacınız yoktur.  
+1. Kendi VSIX'i olan bir menü komutu oluşturduysanız, bu yordama ihtiyacınız yoktur.  
 
-2.  Çözümünüz zaten içermiyorsa, bir VSIX projesi oluşturun.  
+2. Çözümünüz zaten içermiyorsa, bir VSIX projesi oluşturun.  
 
-    1.  İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
+    1. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
 
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
 
-3.  Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
+3. Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
 
-4.  Açık **source.extension.vsixmanifest**.  
+4. Açık **source.extension.vsixmanifest**.  
 
-    1.  Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
+    1. Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
 
-    2.  Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
+    2. Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
 
-    3.  Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
+    3. Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
 
          **Tür** = **MEF Bileşeni**  
 
@@ -166,7 +166,7 @@ Visual Studio'da UML diyagramının kısayol menülerindeki ek menü öğelerini
 
          **Proje** = *, sınıf kitaplığı projesi*  
 
-##  <a name="Implementing"></a> Menü komutunu uygulama  
+## <a name="Implementing"></a> Menü komutunu uygulama  
  Menü komut sınıfı için gerekli yöntemleri uygular <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.  
 
 |||  
@@ -209,57 +209,57 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Ancak, model depolamasının bir iş parçacığı güvenli olmadığını bilmeniz gerekir. Her zaman kullanıcı arabirimini (UI) iş parçacığı güncelleştirmeleri yapma ve mümkünse, kullanıcının arka plandaki işlem devam ederken kullanıcıların düzenlemeler yapmasını önlemek gerekir. Bir örnek için bkz. [arka plan iş parçacığı'ndan bir UML modeli güncelleştirme](../modeling/update-a-uml-model-from-a-background-thread.md).  
 
-##  <a name="Executing"></a> Menü komutunu yürütme  
+## <a name="Executing"></a> Menü komutunu yürütme  
  Test amaçları için komutunuzu hata ayıklama modunda yürütün.  
 
 #### <a name="to-test-the-menu-command"></a>Menü komutunu test etmek için  
 
-1.  Tuşuna **F5**, veya **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
+1. Tuşuna **F5**, veya **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
 
      Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
 
      **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
 
-    -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
+    - Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
 
-    -   Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde seçin **özellikleri**. Proje özellik Düzenleyicisi'ndeki **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
+    - Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde seçin **özellikleri**. Proje özellik Düzenleyicisi'ndeki **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
-2.  Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun. Menü komutu sınıfınızın özniteliklerinde listelenen türlerden birine ait bir diyagram kullanın.  
+2. Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun. Menü komutu sınıfınızın özniteliklerinde listelenen türlerden birine ait bir diyagram kullanın.  
 
-3.  Diyagram üzerindeki herhangi bir yerde kısayol menüsünü açın. Komutunuz menüde görünmeli.  
+3. Diyagram üzerindeki herhangi bir yerde kısayol menüsünü açın. Komutunuz menüde görünmeli.  
 
      **Sorun giderme**: Komut menüsünde görünmüyorsa, emin olun:  
 
-    -   Menü komut projesi, bir MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
+    - Menü komut projesi, bir MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
 
-    -   Parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
+    - Parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
 
-    -   `QueryStatus` Yöntemi `command`.`Enabled` veya `Visible` alanlarını `false`.  
+    - `QueryStatus` Yöntemi `command`.`Enabled` veya `Visible` alanlarını `false`.  
 
-    -   Menü komut sınıfı özniteliklerinden biri olarak listelenir (UML sınıfı, dizisi ve benzeri) kullandığınız model diyagramın türü `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` ve benzeri.  
+    - Menü komut sınıfı özniteliklerinden biri olarak listelenir (UML sınıfı, dizisi ve benzeri) kullandığınız model diyagramın türü `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` ve benzeri.  
 
-##  <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
+## <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
  Yükleyebileceğiniz bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hem kendi bilgisayarınıza hem de diğer bilgisayarlara uzantısı.  
 
 #### <a name="to-install-an-extension"></a>Bir uzantı yüklemek için  
 
-1.  Bilgisayarınızda, bulma **.vsix** VSIX projeniz tarafından oluşturulan dosya.  
+1. Bilgisayarınızda, bulma **.vsix** VSIX projeniz tarafından oluşturulan dosya.  
 
-    1.  İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
+    1. İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
 
-    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
 
-2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
+2. Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
 
      Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] belirttiğiniz **source.extension.vsixmanifest**.  
 
-3.  Hedef bilgisayarda açın **.vsix** örneğin çift tıklayarak dosyayı.  
+3. Hedef bilgisayarda açın **.vsix** örneğin çift tıklayarak dosyayı.  
 
      **Visual Studio Uzantı Yükleyicisi** açılır ve uzantıyı yükler.  
 
-4.  Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
 
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
 
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *% LocalAppData %* **\Local\Microsoft\VisualStudio\\[sürüm] \Extensions**  
 
-##  <a name="MenuExample"></a> Örnek  
+## <a name="MenuExample"></a> Örnek  
  Aşağıdaki örnek, bir sınıf diyagramı üzerindeki iki öğenin adlarını değiştirecek menü komutu için kod gösterir. Bu kod yerleşik olarak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantı projesi ve önceki bölümlerde açıklandığı gibi yüklenmelidir.  
 
 ```  

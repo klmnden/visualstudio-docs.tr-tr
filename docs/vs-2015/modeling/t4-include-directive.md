@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057712"
 ---
 # <a name="t4-include-directive"></a>T4 Include Yönergesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> MSBuild hem Visual Studio'da proje özelliklerini kullanma  
+## <a name="msbuild"></a> MSBuild hem Visual Studio'da proje özelliklerini kullanma  
  Ekleme yönergesinde $(SolutionDir) gibi Visual Studio makrolarını kullanabilirsiniz, fakat bu makrolar MSBuild'de çalışmaz. Şablonları yapı makinenizde dönüştürmek isterseniz, bunun yerine proje özelliklerini kullanmanız gerekir.  
   
  Proje özelliği tanımlamak için .csproj veya .vbproj dosyanızı düzenleyin. Bu örnek adlı bir özellik tanımlar `myIncludeFolder`:  

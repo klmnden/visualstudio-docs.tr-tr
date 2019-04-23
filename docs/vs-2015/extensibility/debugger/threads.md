@@ -11,23 +11,23 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c59ef3bdbbd96db82c8e865379907d95227628ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 028ad25495ba01d9763c8bec3bbb9c4480d72ff8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054592"
 ---
 # <a name="threads"></a>İş Parçacıkları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hata ayıklayıcı mimarisi bakımından bir **iş parçacığı**:  
   
--   Temel hesaplama birimidir. Bir iş parçacığı bağlamı içinde kendi yönergeler tek bir kod bağlamdan sonraki taşıma, bir tek bir çağrı yığınının sıralı olarak yürütür.  
+- Temel hesaplama birimidir. Bir iş parçacığı bağlamı içinde kendi yönergeler tek bir kod bağlamdan sonraki taşıma, bir tek bir çağrı yığınının sıralı olarak yürütür.  
   
--   Kendisi ve bunu, çalıştığı adlı, askıya ve sürdürüldü program tanımlayabilirsiniz. Bir iş parçacığı, ayrıca kendi ilişkili yığın çerçevelerini numaralandırabilirsiniz ve bazı koşullar altında başka bir yığın çerçevesine taşınabilir. Bir yığın çerçevesi bağlamında göz önünde bulundurulduğunda, bir iş parçacığı, ilişkili mantıksal iş parçacığı varsa döndürebilir. Bir iş parçacığı IDE iş parçacıkları penceresinde görüntülenen bir askıya alma sayımı gibi özellikleri vardır.  
+- Kendisi ve bunu, çalıştığı adlı, askıya ve sürdürüldü program tanımlayabilirsiniz. Bir iş parçacığı, ayrıca kendi ilişkili yığın çerçevelerini numaralandırabilirsiniz ve bazı koşullar altında başka bir yığın çerçevesine taşınabilir. Bir yığın çerçevesi bağlamında göz önünde bulundurulduğunda, bir iş parçacığı, ilişkili mantıksal iş parçacığı varsa döndürebilir. Bir iş parçacığı IDE iş parçacıkları penceresinde görüntülenen bir askıya alma sayımı gibi özellikleri vardır.  
   
--   Tarafından temsil edilen bir [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) arabirimi, genellikle bir hata ayıklama altyapısı (DE) veya bir programı yürütme söz konusu kümelerdeki sanal makine tarafından oluşturuldu.  
+- Tarafından temsil edilen bir [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) arabirimi, genellikle bir hata ayıklama altyapısı (DE) veya bir programı yürütme söz konusu kümelerdeki sanal makine tarafından oluşturuldu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Programlar](../../extensibility/debugger/programs.md)   

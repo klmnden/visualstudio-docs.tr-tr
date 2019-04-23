@@ -11,23 +11,23 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039848"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Nasıl yapılır: Kaynak Denetimi Eklentisi Yükleme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:  
   
-1.  Bu belge kaynak denetimi eklentisi API başvuru bölümünde tanımlanan işlevleri ile bir dll dosyası oluşturun.  
+1. Bu belge kaynak denetimi eklentisi API başvuru bölümünde tanımlanan işlevleri ile bir dll dosyası oluşturun.  
   
-2.  Kaynak Denetimi Eklentisi API tarafından tanımlanan işlevleri uygulayın. Zaman [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çağrıları, eklentiden kullanılabilir duruma arabirimleri ve iletişim kutuları.  
+2. Kaynak Denetimi Eklentisi API tarafından tanımlanan işlevleri uygulayın. Zaman [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çağrıları, eklentiden kullanılabilir duruma arabirimleri ve iletişim kutuları.  
   
-3.  DLL uygun kayıt defteri girişlerini yaparak kaydedin.  
+3. DLL uygun kayıt defteri girişlerini yaparak kaydedin.  
   
 ## <a name="integration-with-visual-studio"></a>Visual Studio ile Tümleştirme  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Kaynak denetimi için kaynak denetimi eklentisi API uygun eklentileri destekler.  
@@ -37,7 +37,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Kaynak Denetimi Eklentisi DLL'sini kaydetmek için  
   
-1.  Ürün adı alt anahtarı tarafından izlenen, şirket adı alt belirten yazılım alt HKEY_LOCAL_MACHINE anahtarı altında iki giriş ekleyin. HKEY_LOCAL_MACHINE\Software desendir\\ *[CompanyName]*\\ *[Ürün adı]*\\ *[Giriş]* = değer. İki girişin her zaman SCCServerName ve SCCServerPath çağrılır. Her bir normal bir dizedir.  
+1. Ürün adı alt anahtarı tarafından izlenen, şirket adı alt belirten yazılım alt HKEY_LOCAL_MACHINE anahtarı altında iki giriş ekleyin. HKEY_LOCAL_MACHINE\Software desendir\\ *[CompanyName]*\\ *[Ürün adı]*\\ *[Giriş]* = değer. İki girişin her zaman SCCServerName ve SCCServerPath çağrılır. Her bir normal bir dizedir.  
   
      Örneğin, şirket adınız, Microsoft ve kaynak denetimi ürününüzü ise SourceSafe, bu kayıt defteri yolu HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe şu şekilde olacaktır adı verilir. Bu alt anahtar ilk girişi SCCServerName, ürününüzü adlandırma bir kullanıcı tarafından okunabilen bir dizedir. İkinci girdi, SCCServerPath, kaynak tam yolunu kontrol IDE bağlanması gereken eklentisi DLL ' dir. Aşağıdaki örnek kayıt defteri girdileri sağlar:  
   
@@ -49,13 +49,13 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
     > [!NOTE]
     >  SCCServerPath SourceSafe eklentisinde tam yoludur. Kaynak Denetimi Eklentisi, aynı kayıt defteri girişi yolları ancak farklı şirket ve ürün adlarını kullanır.  
   
-2.  Aşağıdaki isteğe bağlı bir kayıt defteri girdilerini, kaynak denetimi eklentiniz davranışını değiştirmek için kullanılabilir. Bu girişler SccServerName ve SccServerPath olarak aynı alt gidin.  
+2. Aşağıdaki isteğe bağlı bir kayıt defteri girdilerini, kaynak denetimi eklentiniz davranışını değiştirmek için kullanılabilir. Bu girişler SccServerName ve SccServerPath olarak aynı alt gidin.  
   
-    -   Kaynak denetimi-Tak-eklentisi seçim listesinde görünmesini istediğiniz değil HideInVisualStudioregistry giriş kullanılabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu giriş, kaynak denetimi eklentisi otomatik geçiş da etkiler. Bu giriş için bir olası kullanım kaynak denetimi eklentiniz yerini alan bir kaynak denetim paketi sağladığınız ancak kullanıcı kaynak denetimi Eklentisi Kaynak denetimi pakete geçiş yapma kolaylaştırmak istiyorsanız ' dir. Kaynak Denetim paketi yüklendiğinde, eklenti gizler. Bu kayıt defteri girdisi ayarlar.  
+    - Kaynak denetimi-Tak-eklentisi seçim listesinde görünmesini istediğiniz değil HideInVisualStudioregistry giriş kullanılabilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Bu giriş, kaynak denetimi eklentisi otomatik geçiş da etkiler. Bu giriş için bir olası kullanım kaynak denetimi eklentiniz yerini alan bir kaynak denetim paketi sağladığınız ancak kullanıcı kaynak denetimi Eklentisi Kaynak denetimi pakete geçiş yapma kolaylaştırmak istiyorsanız ' dir. Kaynak Denetim paketi yüklendiğinde, eklenti gizler. Bu kayıt defteri girdisi ayarlar.  
   
          HideInVisualStudio bir DWORD değeri ve eklenti gizlemek için 1 veya eklenti göstermek için 0 olarak ayarlanır. Kayıt defteri girişini görünmüyorsa, varsayılan davranışı eklenti göstermektir.  
   
-    -   DisableSccManager kayıt defteri girdisini devre dışı bırakmak veya gizlemek için kullanılabilir **başlatma \<kaynak denetim sunucusuna >** normalde altında görüntülenen menü seçeneği **dosya**  ->   **Kaynak denetimi** alt menü. Bu menü seçme seçeneği çağrıları [SccRunScc](../../extensibility/sccrunscc-function.md) işlevi. Kaynak Denetimi Eklentisi bir dış program desteklemiyor olabilir ve bu nedenle, hatta Gizle veya devre dışı bırakmak isteyebilirsiniz **başlatma** menü seçeneği.  
+    - DisableSccManager kayıt defteri girdisini devre dışı bırakmak veya gizlemek için kullanılabilir **başlatma \<kaynak denetim sunucusuna >** normalde altında görüntülenen menü seçeneği **dosya**  ->   **Kaynak denetimi** alt menü. Bu menü seçme seçeneği çağrıları [SccRunScc](../../extensibility/sccrunscc-function.md) işlevi. Kaynak Denetimi Eklentisi bir dış program desteklemiyor olabilir ve bu nedenle, hatta Gizle veya devre dışı bırakmak isteyebilirsiniz **başlatma** menü seçeneği.  
   
          DisableSccManager ayarlanmadı DWORD değerini 0 olarak etkinleştirmek için **başlatma \<kaynak denetim sunucusuna >** menü seçeneğini menü seçeneği devre dışı bırakmak için 1 olarak ayarlayın ve menü seçeneğini gizleme 2 olarak ayarlayın. Bu kayıt defteri girdisi görünmüyorsa, menü seçeneği varsayılan davranışı göstermektir.  
   
@@ -64,7 +64,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1.|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1.|  
   
-3.  Alt anahtar SourceCodeControlProvider, yazılım alt HKEY_LOCAL_MACHINE anahtarı altında ekleyin.  
+3. Alt anahtar SourceCodeControlProvider, yazılım alt HKEY_LOCAL_MACHINE anahtarı altında ekleyin.  
   
      Bu alt anahtarı kayıt defteri girişini 1. adım kayıt defterinde yerleştirilen alt anahtarını temsil eden bir dize ProviderRegKey ayarlanır. HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey desendir yazılım =\\ *[CompanyName]*\\ *[Ürün adı]*.  
   
@@ -77,7 +77,7 @@ Kaynak Denetimi Eklentisi oluşturma üç adımdan oluşur:
     > [!NOTE]
     >  Kaynak Denetimi Eklentisi giriş adları ve aynı alt kullanır ancak değeri farklı olacaktır.  
   
-4.  InstalledSCCProviders SourceCodeControlProvider alt anahtarı altında adlı bir alt anahtarını oluşturmak ve ardından bu alt anahtarı altında bir girdi yerleştirebilirsiniz.  
+4. InstalledSCCProviders SourceCodeControlProvider alt anahtarı altında adlı bir alt anahtarını oluşturmak ve ardından bu alt anahtarı altında bir girdi yerleştirebilirsiniz.  
   
      Bu giriş adı sağlayıcı (aynı SCCServerName girişi için belirtilen değer) kullanıcı tarafından okunabilen adıdır ve değeri, bir kez daha, 1. adımda oluşturduğunuz alt ise. HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders desendir\\ *[görünen adı]* yazılım =\\ *[CompanyName]* \\ *[Ürün adı]*.  
   

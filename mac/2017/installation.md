@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 117dfbe2d9d97dadd02388b7d4f88a047fcb69fa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057426"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Mac için Visual Studio 2017'yi yükleme
 
 > [!NOTE]
-> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md?view=vsmac-2019). Mac için Visual Studio'nun eski sürümleri için bkz. Visual Studio [indirmeler sayfası](https://visualstudio.microsoft.com/vs/older-downloads/).
+> Mac için Visual Studio 2019 olduğunu [sunuldu](installation.md?view=vsmac-2019). Mac için Visual Studio'nun eski sürümleri için bkz. Visual Studio [indirmeler sayfası](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac).
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 ' eski sürüme düşürme?
+
+En iyi deneyim için düşürme önce sağlayın, [kaldırma](uninstall.md) Mac için Visual Studio 2019 İndirmek neden olan sorunları varsa bize bildirin tarafından emin olun [bir sorun bildirme](report-a-problem.md).
+ 
 ## <a name="requirements"></a>Gereksinimler
 
 Başlangıç yerel geliştirme için Visual Studio Mac için orada karşıdan yüklerken platformlar arası birkaç şey yükleyin ve hazırlık ayarlanan uygulamalardır.
@@ -31,7 +35,7 @@ Visual Studio'da iOS ile çalışmak için şu bilgilere ihtiyacınız vardır:
 
 ## <a name="install"></a>Yükleme
 
-1. Mac için Visual Studio'yu indirin [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
+1. Mac için Visual Studio'yu indirin [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
 2. Yükleyici paketini indirdikten sonra tıklayın **VisualStudioForMacInstaller.dmg** yükleyici bağlamanız ve ardından çalıştırın logoyu tıklatarak tarafından aşağıdaki görüntüde gösterildiği gibi dosya:
 

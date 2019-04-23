@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047143"
 ---
 # <a name="validate-data-in-datasets"></a>Veri kümelerindeki verileri doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,9 +103,9 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>(Visual Basic) değiştiğinde verileri bir satır doğrulamak için  
   
-1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Doğrulamak istediğiniz tablonun başlık çubuğunu çift tıklatın. Bu eylem otomatik olarak oluşturur <xref:System.Data.DataTable.RowChanging> olay işleyicisine <xref:System.Data.DataTable> veri kümesinin parçalı sınıf dosyasında.  
+2. Doğrulamak istediğiniz tablonun başlık çubuğunu çift tıklatın. Bu eylem otomatik olarak oluşturur <xref:System.Data.DataTable.RowChanging> olay işleyicisine <xref:System.Data.DataTable> veri kümesinin parçalı sınıf dosyasında.  
   
     > [!TIP]
     >  Satır değiştiren olay işleyicisi oluşturmak için tablo adının solunda çift tıklayın. Tablo adını çift tıklatırsanız, düzenleyebilirsiniz.  
@@ -114,14 +114,14 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Bir satır (C#) değiştiğinde verileri doğrulamak için  
   
-1.  Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Kümenizde açın **veri kümesi Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Veri kümesi Tasarımcısı'nda bir veri kümesini açma](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Doğrulamak istediğiniz tablonun başlık çubuğunu çift tıklatın. Bu eylem için bir parçalı sınıf dosyası oluşturur <xref:System.Data.DataTable>.  
+2. Doğrulamak istediğiniz tablonun başlık çubuğunu çift tıklatın. Bu eylem için bir parçalı sınıf dosyası oluşturur <xref:System.Data.DataTable>.  
   
     > [!NOTE]
     >  **Veri kümesi Tasarımcısı** otomatik olarak bir olay işleyicisi oluşturmaz <xref:System.Data.DataTable.RowChanging> olay. İşlemek için bir yöntem oluşturmak sahip olduğunuz <xref:System.Data.DataTable.RowChanging> olayı tablonun başlatma yöntemine bağlamak için olay ve kodu çalıştırın.  
   
-3.  Aşağıdaki kodu kısmi sınıfın içine kopyalayın:  
+3. Aşağıdaki kodu kısmi sınıfın içine kopyalayın:  
   
     ```  
     public override void EndInit()  
@@ -155,7 +155,7 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>Bir veri kümesinden değişen tüm kayıtları almak için  
   
--   Çağrı <xref:System.Data.DataSet.GetChanges%2A> bir veri kümesinin yöntemi.  
+- Çağrı <xref:System.Data.DataSet.GetChanges%2A> bir veri kümesinin yöntemi.  
   
      Aşağıdaki örnekte adlı yeni bir veri kümesi oluşturur `changedRecords` ve adlı başka bir veri kümesindeki tüm kayıtlar ile doldurur `dataSet1`.  
   
@@ -164,7 +164,7 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>Bir veri tablosundan değişen tüm kayıtları almak için  
   
--   Çağrı <xref:System.Data.DataTable.GetChanges%2A> DataTable yöntemi.  
+- Çağrı <xref:System.Data.DataTable.GetChanges%2A> DataTable yöntemi.  
   
      Aşağıdaki örnekte adlı yeni bir veri tablosu oluşturur `changedRecordsTable` ve adlı başka bir veri tablosundaki tüm kayıtlar ile doldurur `dataTable1`.  
   
@@ -173,14 +173,14 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>Belirli bir satır durumunda olan tüm kayıtları almak için  
   
--   Çağrı `GetChanges` yöntemi, bir veri kümesi veya veri tablosu ve geçişi bir <xref:System.Data.DataRowState> bağımsız değişken olarak sabit listesi değeri.  
+- Çağrı `GetChanges` yöntemi, bir veri kümesi veya veri tablosu ve geçişi bir <xref:System.Data.DataRowState> bağımsız değişken olarak sabit listesi değeri.  
   
      Aşağıdaki örnekte adlı yeni bir veri kümesi oluşturma işlemi gösterilmektedir `addedRecords` ve yalnızca eklenmiş kayıtlarla doldurmak `dataSet1` veri kümesi.  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   Aşağıdaki örnek, en son eklenen tüm kayıtları döndürmek gösterilmektedir `Customers` tablosu:  
+- Aşağıdaki örnek, en son eklenen tüm kayıtları döndürmek gösterilmektedir `Customers` tablosu:  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -195,7 +195,7 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-get-the-original-version-of-a-record"></a>Bir kaydın orijinal sürümünü almak için  
   
--   Geçirerek bir sütun değerine erişin <xref:System.Data.DataRowVersion> döndürmek istediğiniz satırın.  
+- Geçirerek bir sütun değerine erişin <xref:System.Data.DataRowVersion> döndürmek istediğiniz satırın.  
   
      Aşağıdaki örnek nasıl kullanılacağını gösteren bir <xref:System.Data.DataRowVersion> orijinal değerini almak için değer bir `CompanyName` alanındaki bir <xref:System.Data.DataRow>:  
   
@@ -206,7 +206,7 @@ Verileri doğrulama içinde bir veri kümesi şema kısıtlamalara uyması veri 
   
 #### <a name="to-get-the-current-version-of-a-record"></a>Bir kaydın geçerli sürümünü almak için  
   
--   Bir sütun değerine erişin ve hangi satır sürümünü döndürmek istediğinizi belirten dizine bir parametre ekleyin.  
+- Bir sütun değerine erişin ve hangi satır sürümünü döndürmek istediğinizi belirten dizine bir parametre ekleyin.  
   
      Aşağıdaki örnek nasıl kullanılacağını gösteren bir <xref:System.Data.DataRowVersion> değeri geçerli değerini almak için bir `CompanyName` alanındaki bir <xref:System.Data.DataRow>:  
   

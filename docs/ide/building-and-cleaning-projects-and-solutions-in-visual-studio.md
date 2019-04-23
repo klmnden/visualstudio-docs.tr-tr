@@ -1,5 +1,5 @@
 ---
-title: Projeler ve çözümler oluşturma ve temizleme
+title: Projeleri ve Çözümleri Oluşturma ve Temizleme
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057881"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Derleme ve temizleme projeleri ve Visual Studio çözümleri
 
@@ -42,44 +42,44 @@ Bu konudaki yordamları kullanarak, derleme, yeniden veya tüm veya bazı projel
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Derleme, yeniden oluşturmanız veya bütün bir çözüm Temizle
 
-1.  İçinde **Çözüm Gezgini**, seçin veya çözümü açın.
+1. İçinde **Çözüm Gezgini**, seçin veya çözümü açın.
 
-2.  Menü çubuğunda, **derleme**ve ardından aşağıdaki komutlardan birini seçin:
+2. Menü çubuğunda, **derleme**ve ardından aşağıdaki komutlardan birini seçin:
 
-    -   Seçin **derleme** veya **Çözümü Derle** yalnızca bu dosyaları ve en son derlemeden sonra değiştirilen bileşenleri proje derlemek için.
+    - Seçin **derleme** veya **Çözümü Derle** yalnızca bu dosyaları ve en son derlemeden sonra değiştirilen bileşenleri proje derlemek için.
 
         > [!NOTE]
         > **Derleme** komut olur **Çözümü Derle** ne zaman bir çözüm birden fazla proje içerir.
 
-    -   Seçin **çözümü yeniden derle** "çözümü Temizle" ve sonra tüm proje dosyaları ve bileşenleri oluşturun.
+    - Seçin **çözümü yeniden derle** "çözümü Temizle" ve sonra tüm proje dosyaları ve bileşenleri oluşturun.
 
-    -   Seçin **çözümü Temizle** tüm ara ve Çıkış dosyalarını silmek için. Yalnızca proje ve bileşen dosyalarını sol yeni örneklerini Ara ve Çıkış dosyalarını sonra oluşturulabilir.
+    - Seçin **çözümü Temizle** tüm ara ve Çıkış dosyalarını silmek için. Yalnızca proje ve bileşen dosyalarını sol yeni örneklerini Ara ve Çıkış dosyalarını sonra oluşturulabilir.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Derleme veya tek projeyi yeniden derleyin
 
-1.  İçinde **Çözüm Gezgini**, seçin veya projeyi açın.
+1. İçinde **Çözüm Gezgini**, seçin veya projeyi açın.
 
-2.  Menü çubuğunda, **derleme**seçin **derleme** *ProjectName* veya **yeniden** *ProjectName*.
+2. Menü çubuğunda, **derleme**seçin **derleme** *ProjectName* veya **yeniden** *ProjectName*.
 
-    -   Seçin **derleme** *ProjectName* en son derlemeden sonra değiştirilen bileşenleri bu proje yalnızca oluşturulacak.
+    - Seçin **derleme** *ProjectName* en son derlemeden sonra değiştirilen bileşenleri bu proje yalnızca oluşturulacak.
 
-    -   Seçin **yeniden** *ProjectName* "projeyi Temizle" ve ardından Proje dosyalarını ve tüm proje bileşenler oluşturun.
+    - Seçin **yeniden** *ProjectName* "projeyi Temizle" ve ardından Proje dosyalarını ve tüm proje bileşenler oluşturun.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Başlangıç projesi ve bağımlılıklarını oluşturma
 
-1.  Menü çubuğunda, **Araçları** > **seçenekleri**.
+1. Menü çubuğunda, **Araçları** > **seçenekleri**.
 
-2.  İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler** düğümünü seçip **derleme ve çalıştırma** sayfası.
+2. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler** düğümünü seçip **derleme ve çalıştırma** sayfası.
 
      **Derleme ve çalıştırma** > **projeler ve çözümler** > **seçenekleri** iletişim kutusu açılır.
 
-3.  Seçin **çalıştırıldığında yalnızca başlangıç projelerini ve bağımlılıkları derle** onay kutusu.
+3. Seçin **çalıştırıldığında yalnızca başlangıç projelerini ve bağımlılıkları derle** onay kutusu.
 
      Bu onay kutusu işaretli olduğunda, aşağıdaki adımlardan birini gerçekleştirdiğinizde yalnızca geçerli başlangıç projesi ve bağımlılıklarını oluşturulur:
 
-    -   Menü çubuğunda, **hata ayıklama** > **Başlat** (**F5**).
+    - Menü çubuğunda, **hata ayıklama** > **Başlat** (**F5**).
 
-    -   Menü çubuğunda, **derleme** > **Çözümü Derle** (**Ctrl**+**Shift** +  **B**).
+    - Menü çubuğunda, **derleme** > **Çözümü Derle** (**Ctrl**+**Shift** +  **B**).
 
     Bu onay kutusunun işareti kaldırıldığında, önceki komutlardan birini çalıştırdığınızda tüm projeler, bağımlılıklarını ve çözüm dosyaları oluşturulur. Varsayılan olarak, bu onay kutusu işaretli değildir.
 

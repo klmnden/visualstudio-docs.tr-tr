@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22704b0d754b9d77c45c1a7beb49e2e8863a3eb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059168"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend’de klavye kısayolları ve değiştirici tuşlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ Klavye kısayolları, bir tek klavye kısayolu birden çok fare düğmesi tıkla
 ## <a name="modifier-keys"></a>Değiştirici tuşları  
  Bazı klavye kısayolları sahip ilişkilendirilmemiş menü öğeleri, kullanamayacağınız anlamına gelir [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] bunları bulmak için kullanıcı arabirimi. Aşağıdaki konular, araçları davranışını değiştirmek veya nesneyi yeniden boyutlandırma gibi bir eylem değiştiren kısayolları listeleyin:  
   
--   [Çalışma yüzeyi değiştirici tuşları](../designers/artboard-modifier-keys-in-blend.md)  
+- [Çalışma yüzeyi değiştirici tuşları](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Kalem aracı değiştirici tuşları](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Kalem aracı değiştirici tuşları](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Doğrudan Seçim aracı değiştirici tuşları](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Doğrudan Seçim aracı değiştirici tuşları](../designers/direct-selection-tool-modifier-keys-in-blend.md)

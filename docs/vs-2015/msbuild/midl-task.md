@@ -27,12 +27,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062041"
 ---
 # <a name="midl-task"></a>MIDL Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
 ## <a name="parameters"></a>Parametreler  
  Parametreleri aşağıdaki tabloda açıklanmıştır **MIDL** görev. Çoğu görev parametreleri ve parametrelerin birkaç kümeleri bir komut satırı seçeneğine karşılık gelir.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      İsteğe bağlı **String []** parametresi.  
   
@@ -50,7 +50,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/I** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -58,7 +58,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için "MIDL komut satırı başvurusu" bakın [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -66,7 +66,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/app_config** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -74,7 +74,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/cstub** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca bkz: **ServerStubFile** bu tablodaki parametresi.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -82,7 +82,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/cpp_opt** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -98,7 +98,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/char** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -106,7 +106,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/dlldata** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -122,7 +122,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Error** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -130,7 +130,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Error ayırma** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -138,7 +138,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Error bounds_check** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -146,7 +146,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Error enum** komut satırı Yardımı seçeneğinde (**/?**) midl.exe'yi için.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -154,7 +154,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Error ref** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -162,7 +162,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Error stub_data** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -177,7 +177,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Client** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -192,7 +192,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/Server** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -200,7 +200,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/oicf** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -208,7 +208,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/notlb** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -216,7 +216,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/h** veya **/header** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -224,7 +224,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/no_def_idir** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -232,7 +232,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/iid** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **LocaleID**  
+- **LocaleID**  
   
      İsteğe bağlı **int** parametresi.  
   
@@ -240,7 +240,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/lcid** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca, "Yerel ayar kimlikleri atanan tarafından Microsoft'ta" MSDN bakın.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -248,7 +248,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/mktyplib203** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca MSDN Web sitesindeki "ODL FILE söz Dizimiyle" bakın.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -256,7 +256,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/out** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      İsteğe bağlı **String []** parametresi.  
   
@@ -264,7 +264,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/D** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca bkz **UndefinePreprocessorDefinitions** bu tablodaki parametresi.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -272,7 +272,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/proxy** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -280,7 +280,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/o** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -288,13 +288,13 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/sstub** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca bkz **ClientStubFile** bu tablodaki parametresi.  
   
--   **Kaynak**  
+- **Kaynak**  
   
      Gerekli `ITaskItem[]` parametresi.  
   
      Kaynak dosyaları boşluklarla ayrılmış bir listesini belirtir.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -312,7 +312,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/ZP** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. **/ZP** seçenektir eşdeğer **/paketi** seçeneği ve eski **/ hizalama** seçeneği.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      İsteğe bağlı **Boole** parametresi.  
   
@@ -320,7 +320,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/no_warn** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      İsteğe bağlı `Boolean` parametresi.  
   
@@ -328,7 +328,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/nologo** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -345,13 +345,13 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/env** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      İsteğe bağlı `String` parametresi.  
   
      Bu görev için izleme günlüklerinin depolandığı Ara dizini belirtir.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -366,7 +366,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/newtlb** ve **/oldtlb** Seçenekleri "İçinde MIDL komut satırı başvurusu" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      İsteğe bağlı **dize** parametresi.  
   
@@ -374,7 +374,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/TLB** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      İsteğe bağlı **String []** parametresi.  
   
@@ -382,7 +382,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/U** "İçinde MIDL komut satırı başvuru" seçeneğini [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca bkz **PreprocessorDefinitions** bu tablodaki parametresi.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      İsteğe bağlı `Boolean` parametresi.  
   
@@ -390,7 +390,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **/ robust** ve **/no_robust** Seçenekleri "İçinde MIDL komut satırı başvurusu" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi.  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      İsteğe bağlı `Boolean` parametresi.  
   
@@ -400,7 +400,7 @@ Sarmalar Microsoft arabirim tanımı dili (MIDL) derleyici aracı midl.exe'yi. D
   
      Daha fazla bilgi için **wx** Seçenekleri "İçinde MIDL komut satırı başvurusu" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Web sitesi. Ayrıca bkz **WarningLevel** bu tablodaki parametresi.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      İsteğe bağlı **dize** parametresi.  
   

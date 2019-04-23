@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0941834b3153a8d56f8892ef10d9d388af6f2c6c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049569"
 ---
 # <a name="code-metrics-values"></a>Kod Ölçüm Değerleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Kod ölçümleri, geliştiricilere, geliştirdikleri daha iyi bir anlayış kod 
 ## <a name="software-measurements"></a>Yazılım ölçümleri  
  Kod ölçümleri sonuçları aşağıda gösterilir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] hesaplar:  
   
--   **Bakım dizini** – 0 ile 100 arasında göreceli bir kolayca kod bakım temsil eden dizin değeri hesaplar. Yüksek bir değer daha iyi bakım anlamına gelir. Renk kodlu derecelendirmeleri, hızlı bir şekilde kodunuzda sorunlu noktaları tanımlamak için kullanılabilir. Yeşil bir derecelendirme 20 ile 100 arasında ve kod iyi bakım sahip olduğunu gösterir. Sarı bir derecelendirme 10 ile 19 arasında ve kod oldukça sürdürülebilir olduğunu gösterir. Kırmızı derecesi 0 ile 9 arasında bir derecelendirme ve düşük bakım belirtir.  
+- **Bakım dizini** – 0 ile 100 arasında göreceli bir kolayca kod bakım temsil eden dizin değeri hesaplar. Yüksek bir değer daha iyi bakım anlamına gelir. Renk kodlu derecelendirmeleri, hızlı bir şekilde kodunuzda sorunlu noktaları tanımlamak için kullanılabilir. Yeşil bir derecelendirme 20 ile 100 arasında ve kod iyi bakım sahip olduğunu gösterir. Sarı bir derecelendirme 10 ile 19 arasında ve kod oldukça sürdürülebilir olduğunu gösterir. Kırmızı derecesi 0 ile 9 arasında bir derecelendirme ve düşük bakım belirtir.  
   
--   **Döngüsel karmaşıklık** – kod yapısal karmaşıklığını ölçer. Program akışını farklı kod yollarında sayısını hesaplayarak oluşturulur. Karmaşık denetim akışı olan bir program daha sürdürülebilir ve daha iyi kod kapsamını elde etmek için daha fazla test gerektirir.  
+- **Döngüsel karmaşıklık** – kod yapısal karmaşıklığını ölçer. Program akışını farklı kod yollarında sayısını hesaplayarak oluşturulur. Karmaşık denetim akışı olan bir program daha sürdürülebilir ve daha iyi kod kapsamını elde etmek için daha fazla test gerektirir.  
   
     > [!NOTE]
     >  Bazı durumlarda, bir yöntem için döngüzel karmaşıklığına hesaplanması [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] önceki sürümlerden farklıdır. Daha fazla bilgi için "değişiklikleri, Visual Studio 2010 kod karmaşıklığı hesaplamalar bölümünde" olmadığını [kod ölçümleri sorunlarını giderme](../code-quality/troubleshooting-code-metrics-issues.md).  
   
--   **Devralma derinliği** – sınıf hiyerarşisini köküne genişleten sınıf tanımları sayısını gösterir. Belirli yöntemleri ve alanları tanımlandığı anlamak için olabilir derinde hiyerarşi daha zor veya / ve yeniden tanımlanan.  
+- **Devralma derinliği** – sınıf hiyerarşisini köküne genişleten sınıf tanımları sayısını gösterir. Belirli yöntemleri ve alanları tanımlandığı anlamak için olabilir derinde hiyerarşi daha zor veya / ve yeniden tanımlanan.  
   
--   **Sınıf bağlantısından** – ölçer bağlantı parametreleri, yerel değişkenler, dönüş türleri, yöntem çağrılarını, genel veya şablon örneklemeleri, temel sınıflar, arabirim uygulamalarını, dış türlerinde tanımlanan alanların benzersiz sınıflara ve özniteliği düzenleme. İyi yazılım tasarımı, türleri ve yöntemleri uyumun yüksek olması sahip ve eşlenmesiyle düşük olduğunu belirler. Yüksek bağlantısından yeniden kullanabilir ve diğer türleri, birçok bağımlılıkları nedeniyle korumak zor bir tasarımın belirtisidir.  
+- **Sınıf bağlantısından** – ölçer bağlantı parametreleri, yerel değişkenler, dönüş türleri, yöntem çağrılarını, genel veya şablon örneklemeleri, temel sınıflar, arabirim uygulamalarını, dış türlerinde tanımlanan alanların benzersiz sınıflara ve özniteliği düzenleme. İyi yazılım tasarımı, türleri ve yöntemleri uyumun yüksek olması sahip ve eşlenmesiyle düşük olduğunu belirler. Yüksek bağlantısından yeniden kullanabilir ve diğer türleri, birçok bağımlılıkları nedeniyle korumak zor bir tasarımın belirtisidir.  
   
--   **Kod satırlarını** – yaklaşık kod içinde satır sayısını belirtir. Sayısı IL kodunu alır ve bu nedenle satır kaynak kodu dosyasının tam sayı değil. Çok yüksek bir sayı, bir türün veya yöntemin çok fazla iş yapmak çalışıyor ve bölünmesi gösterebilir. Ayrıca, tür veya yöntem korumak zor olabilir gösterebilir.  
+- **Kod satırlarını** – yaklaşık kod içinde satır sayısını belirtir. Sayısı IL kodunu alır ve bu nedenle satır kaynak kodu dosyasının tam sayı değil. Çok yüksek bir sayı, bir türün veya yöntemin çok fazla iş yapmak çalışıyor ve bölünmesi gösterebilir. Ayrıca, tür veya yöntem korumak zor olabilir gösterebilir.  
   
 ## <a name="anonymous-methods"></a>Anonim Yöntemler  
  Bir *anonim yöntem* ada sahip bir yöntem. Anonim yöntemler, en sık temsilcinin parametre olarak bir kod bloğu geçirmek için kullanılır. Ölçümleri sonuçları bir yöntem veya erişimci gibi bir üye olarak bildirilen anonim yöntemi için yöntem bildiren bir üye ile ilişkili. Bunlar, bu yöntemi çağıran bir üye ile ilişkili değildir.  

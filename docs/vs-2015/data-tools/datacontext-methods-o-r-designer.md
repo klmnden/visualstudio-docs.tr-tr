@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042759"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext yöntemi (O/R Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
 ## <a name="two-types-of-datacontext-methods"></a>İki tür DataContext yöntemi  
  DataContext yöntemi saklı yordamları ve işlevleri veritabanında eşleyen bu yöntemlerdir. Oluşturun ve yöntemleri bölmesinde DataContext yöntemler [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. İki ayrı türü vardır <xref:System.Data.Linq.DataContext> yöntemleri; Bu, bir veya daha fazla sonuç kümesi döndüren ve desteklemeyenler:  
   
--   <xref:System.Data.Linq.DataContext> bir veya daha fazla sonuç kümesi döndüren yöntemler:  
+- <xref:System.Data.Linq.DataContext> bir veya daha fazla sonuç kümesi döndüren yöntemler:  
   
      Bu tür oluşturma <xref:System.Data.Linq.DataContext> saklı yordamları ve işlevleri veritabanında çalıştırın ve sonuçları döndürmek uygulamanızı yalnızca gerektiğinde yöntemi. Daha fazla bilgi için [nasıl yapılır: Saklı yordamları ve işlevleri (O/R Tasarımcısı) için eşlenen DataContext-metotları oluşturma](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >, ve <xref:System.Data.Linq.IMultipleResults>.  
   
--   <xref:System.Data.Linq.DataContext> Sonuç kümesi döndürmüyor yöntemleri: gibi ekler, güncelleştirmeler ve özel varlık sınıfı için siler.  
+- <xref:System.Data.Linq.DataContext> Sonuç kümesi döndürmüyor yöntemleri: gibi ekler, güncelleştirmeler ve özel varlık sınıfı için siler.  
   
      Bu tür oluşturma <xref:System.Data.Linq.DataContext> uygulamanızın varsayılan kullanmak yerine saklı yordamları çalıştırmak sahip olduğunda yöntemi [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] kaydetme davranışını değiştiren bir varlık sınıfı ve veritabanı arasında veri. Daha fazla bilgi için [nasıl yapılır: Güncelleştirme, ekleme ve silme (O/R Tasarımcısı) gerçekleştirmek için saklı yordamlar atama](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   

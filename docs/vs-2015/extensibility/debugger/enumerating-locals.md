@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039205"
 ---
 # <a name="enumerating-locals"></a>Yerel Öğeleri Numaralandırma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "54833791"
   
  Bu uygulaması `IDebugProperty2::EnumChildren` aşağıdaki görevleri gerçekleştirir:  
   
-1.  Bu bir yöntemi temsil eden sağlar.  
+1. Bu bir yöntemi temsil eden sağlar.  
   
-2.  Kullanan `guidFilter` çağırmak için hangi yöntemin belirlemek için bağımsız değişken [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) nesne. Varsa `guidFilter` eşittir:  
+2. Kullanan `guidFilter` çağırmak için hangi yöntemin belirlemek için bağımsız değişken [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) nesne. Varsa `guidFilter` eşittir:  
   
-    1.  `guidFilterLocals`, çağrı [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) almak için bir [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) nesne.  
+    1. `guidFilterLocals`, çağrı [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) almak için bir [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) nesne.  
   
-    2.  `guidFilterArgs`, çağrı [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) almak için bir `IEnumDebugFields` nesne.  
+    2. `guidFilterArgs`, çağrı [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) almak için bir `IEnumDebugFields` nesne.  
   
-    3.  `guidFilterLocalsPlusArgs`, sonuçları bir araya getiren bir numaralandırma sentezlemek `IDebugMethodField::EnumLocals` ve `IDebugMethodField::EnumArguments`. Bu sentezi sınıfı tarafından temsil edilen `CEnumMethodField`.  
+    3. `guidFilterLocalsPlusArgs`, sonuçları bir araya getiren bir numaralandırma sentezlemek `IDebugMethodField::EnumLocals` ve `IDebugMethodField::EnumArguments`. Bu sentezi sınıfı tarafından temsil edilen `CEnumMethodField`.  
   
-3.  Bir sınıf oluşturur (adlı `CEnumPropertyInfo` Bu örnekte) uygulayan `IEnumDebugPropertyInfo2` arabirim ve içeren `IEnumDebugFields` nesne.  
+3. Bir sınıf oluşturur (adlı `CEnumPropertyInfo` Bu örnekte) uygulayan `IEnumDebugPropertyInfo2` arabirim ve içeren `IEnumDebugFields` nesne.  
   
-4.  Döndürür `IEnumDebugProperty2Info2` alanından arabirim `CEnumPropertyInfo` nesne.  
+4. Döndürür `IEnumDebugProperty2Info2` alanından arabirim `CEnumPropertyInfo` nesne.  
   
 ## <a name="managed-code"></a>Yönetilen kod  
  Bu örnekte uygulanışı gösterilmektedir `IDebugProperty2::EnumChildren` yönetilen kod.  

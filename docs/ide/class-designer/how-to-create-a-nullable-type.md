@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043906"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı'nda bir boş değer atanabilir tür oluşturma
 
@@ -29,9 +29,9 @@ A *boş değer atanabilir tür* türü ve ayrıca bir null değer için tipik de
 
 Boş değer atanabilir türler örnekleridir <xref:System.Nullable%601> yapısı. Boş değer atanabilir bir tür örneği her iki genel salt okunur özelliklere sahip `HasValue` ve `Value`:
 
--   `HasValue` tür `bool` ve değişken tanımlı bir değer içerip içermediğini belirtir. `True` değişkeni boş olmayan bir değer içeren anlamına gelir. İçin tanımlı bir değer gibi bir deyim kullanarak test edebilirsiniz `if (x.HasValue)` veya `if (y != null)`.
+- `HasValue` tür `bool` ve değişken tanımlı bir değer içerip içermediğini belirtir. `True` değişkeni boş olmayan bir değer içeren anlamına gelir. İçin tanımlı bir değer gibi bir deyim kullanarak test edebilirsiniz `if (x.HasValue)` veya `if (y != null)`.
 
--   `Value` temel alınan aynı türde değil. Varsa `HasValue` olduğu `True`, `Value` anlamlı bir değer içeriyor. Varsa `HasValue` olduğu `False`, erişim `Value` bir geçersiz işlem özel durum oluşturur.
+- `Value` temel alınan aynı türde değil. Varsa `HasValue` olduğu `True`, `Value` anlamlı bir değer içeriyor. Varsa `HasValue` olduğu `False`, erişim `Value` bir geçersiz işlem özel durum oluşturur.
 
 Varsayılan, boş değer atanabilir bir tür olarak bir değişken bildirdiğinizde tanımlı değer yok sahiptir (`HasValue` olan `False`), kendi temel değer türünün varsayılan değeri diğer.
 
@@ -43,26 +43,26 @@ C# dilinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz: 
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Sınıf Tasarımcısı kullanarak boş değer atanabilir bir tür eklemek için
 
-1.  Sınıf diyagramında varolan bir sınıfı genişletebilir veya yeni bir sınıf oluşturun.
+1. Sınıf diyagramında varolan bir sınıfı genişletebilir veya yeni bir sınıf oluşturun.
 
-2.  Projeye bir sınıf eklemek için **sınıf diyagramı** menüsünde tıklatın **Ekle** > **sınıfı Ekle**.
+2. Projeye bir sınıf eklemek için **sınıf diyagramı** menüsünde tıklatın **Ekle** > **sınıfı Ekle**.
 
-3.  Sınıf şeklinin genişletme için **sınıf diyagramı** menüsünde tıklatın **genişletme**.
+3. Sınıf şeklinin genişletme için **sınıf diyagramı** menüsünde tıklatın **genişletme**.
 
-4.  Sınıf şekli seçin. Üzerinde **sınıf diyagramı** menüsünü tıklatın **Ekle** > **alan**. Varsayılan ada sahip yeni bir alan **alan** sınıf şeklinin ve ayrıca görünür **sınıf ayrıntıları** penceresi.
+4. Sınıf şekli seçin. Üzerinde **sınıf diyagramı** menüsünü tıklatın **Ekle** > **alan**. Varsayılan ada sahip yeni bir alan **alan** sınıf şeklinin ve ayrıca görünür **sınıf ayrıntıları** penceresi.
 
-5.  İçinde **adı** sütununun **sınıf ayrıntıları** penceresi (veya kendi sınıfında Şekil), yeni alan adı geçerli ve anlamlı bir adla değiştirin.
+5. İçinde **adı** sütununun **sınıf ayrıntıları** penceresi (veya kendi sınıfında Şekil), yeni alan adı geçerli ve anlamlı bir adla değiştirin.
 
-6.  İçinde **türü** sütununun **sınıf ayrıntıları** penceresinde, aşağıdaki belirterek türü boş değer atanabilir bir tür bildirin:
+6. İçinde **türü** sütununun **sınıf ayrıntıları** penceresinde, aşağıdaki belirterek türü boş değer atanabilir bir tür bildirin:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Kod Düzenleyicisi'ni kullanarak boş değer atanabilir bir tür eklemek için
 
-1.  Projeye bir sınıf ekleyin. İçinde proje düğümünü seçin **Çözüm Gezgini**ve **proje** menüsünde tıklatın **sınıfı Ekle**.
+1. Projeye bir sınıf ekleyin. İçinde proje düğümünü seçin **Çözüm Gezgini**ve **proje** menüsünde tıklatın **sınıfı Ekle**.
 
-2.  Yeni bir sınıf .cs veya .vb dosyasında yeni bir sınıf içinde bir veya daha fazla boş değer atanabilir türler için sınıf bildirimi ekleyin.
+2. Yeni bir sınıf .cs veya .vb dosyasında yeni bir sınıf içinde bir veya daha fazla boş değer atanabilir türler için sınıf bildirimi ekleyin.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,11 +79,11 @@ C# dilinde boş değer atanabilir türler hakkında daha fazla bilgi için bkz: 
     End Class
     ```
 
-3.  Sınıf Görünümü'ndeki yeni sınıf simgesi Sınıf Tasarımcısı tasarım yüzeyine sürükleyin. Sınıf diyagramında sınıf şekline görünür.
+3. Sınıf Görünümü'ndeki yeni sınıf simgesi Sınıf Tasarımcısı tasarım yüzeyine sürükleyin. Sınıf diyagramında sınıf şekline görünür.
 
-4.  Sınıf şeklinin ayrıntılarını genişletin ve sınıf üyeleri fare işaretçisini taşıyın. Araç İpucu her üyesi bildirimi görüntüler.
+4. Sınıf şeklinin ayrıntılarını genişletin ve sınıf üyeleri fare işaretçisini taşıyın. Araç İpucu her üyesi bildirimi görüntüler.
 
-5.  Sınıf şeklinin sağ tıklatıp **sınıf ayrıntıları**. Görüntüleyebilir veya yeni türün özelliklerinde değişiklik **sınıf ayrıntıları** penceresi.
+5. Sınıf şeklinin sağ tıklatıp **sınıf ayrıntıları**. Görüntüleyebilir veya yeni türün özelliklerinde değişiklik **sınıf ayrıntıları** penceresi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

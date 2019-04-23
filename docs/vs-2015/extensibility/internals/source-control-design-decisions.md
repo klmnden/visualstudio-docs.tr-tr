@@ -10,12 +10,12 @@ ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6948290350bf931bb3b8af58bb060f755348f188
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 89d125dc52340e8528ee9692d5de00784632e6f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047922"
 ---
 # <a name="source-control-design-decisions"></a>Kaynak Denetimi Tasarım Kararları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Aşağıdaki tasarım kararlarını projeler için kaynak denetimi uygularken di
 ## <a name="will-the-project-include-special-files"></a>Projeye özel dosyaları içerecek?  
  Başka bir önemli tasarım proje özel dosyaları kullanıp kullanmadığını kararıdır. Çözüm Gezgini'nde ve iade görünür ve kullanıma iletişim kutuları dosyaları temelini oluşturan gizli dosyalar özel dosyalarıdır. Özel dosyaları kullanıyorsanız, aşağıdaki yönergeleri izleyin:  
   
-1.  Özel dosyalar proje kök düğümü ile ilişkilendirilmemiş — diğer bir deyişle, kendi proje ile dosya. Proje dosyanız, tek bir dosya olmalıdır.  
+1. Özel dosyalar proje kök düğümü ile ilişkilendirilmemiş — diğer bir deyişle, kendi proje ile dosya. Proje dosyanız, tek bir dosya olmalıdır.  
   
-2.  Ne zaman özel dosya eklendiğinde, kaldırılır veya bir proje, uygun olarak yeniden adlandırıldı <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> dosyalarıdır özel dosyaları gösteren bayrak kümesi ile olayları tetiklendi. Bu olaylar uygun çağırma projeye yanıt ortama göre adlandırılır <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> yöntemleri.  
+2. Ne zaman özel dosya eklendiğinde, kaldırılır veya bir proje, uygun olarak yeniden adlandırıldı <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> dosyalarıdır özel dosyaları gösteren bayrak kümesi ile olayları tetiklendi. Bu olaylar uygun çağırma projeye yanıt ortama göre adlandırılır <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> yöntemleri.  
   
-3.  Proje veya Düzenleyicisi çağırdığında <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> bir dosya için özel bu dosyayla ilişkili dosyaları otomatik olarak kullanıma alınmamış. Özel dosyaların yanı sıra üst dosya geçirin. Ortam içinde geçirilen tüm dosyaları arasındaki ilişki algılar ve uygun şekilde kullanıma kullanıcı arabiriminde özel dosyaları gizle.  
+3. Proje veya Düzenleyicisi çağırdığında <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> bir dosya için özel bu dosyayla ilişkili dosyaları otomatik olarak kullanıma alınmamış. Özel dosyaların yanı sıra üst dosya geçirin. Ortam içinde geçirilen tüm dosyaları arasındaki ilişki algılar ve uygun şekilde kullanıma kullanıcı arabiriminde özel dosyaları gizle.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   

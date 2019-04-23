@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043726"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. SCC dosyası
 Bir Visual Studio çözüm veya projeyi IDE'yi kullanarak kaynak denetimi altında koyun, IDE iki temel bilgi parçasını alır. Kaynak Denetimi Eklentisi dizeleri biçiminde bilgi gelir. "AuxPath" ve "ProjName" Bu dizeler IDE donuk, ancak bunlar eklenti tarafından sürüm denetimine çözüm veya projeyi bulmak için kullanılırlar. IDE genellikle bu dizeler ilk kez çağırarak alır [SccGetProjPath](../extensibility/sccgetprojpath-function.md), ve ardından bunları gelecekteki çağrılar için çözüm veya proje dosyasında kaydeder [SccOpenProject](../extensibility/sccopenproject-function.md). Bir kullanıcı, çatallar, dallar veya sürüm denetimindeki çözüm ve proje dosyalarını kopyalar çözüm ve proje dosyalarında eklendiğinde, "AuxPath" ve "ProjName" dizeleri otomatik olarak güncelleştirilmez. Çözüm ve proje dosyaları sürüm denetiminde kendi doğru konuma işaret ettiğinden emin olmak için kullanıcıların el ile dizeler güncelleştirmeniz gerekir. Dizeleri donuk yöneliktir olduğundan, bu her zaman nasıl güncelleştirileceğini açık olmayabilir.
@@ -25,19 +25,19 @@ Bir Visual Studio çözüm veya projeyi IDE'yi kullanarak kaynak denetimi altın
 
  Destekleyen bir kaynak denetimi eklentisi *MSSCCPRJ.SCC* dosya, aşağıdaki yönergelere uyması gerekir:
 
--   Yalnızca bir olabilir *MSSCCPRJ.SCC* her dizin dosyası.
+- Yalnızca bir olabilir *MSSCCPRJ.SCC* her dizin dosyası.
 
--   Bir *MSSCCPRJ.SCC* dosya içerebilir "AuxPath" ve "ProjName" belirli bir dizinin içindeki kaynak denetimi altında olan birden çok dosya için.
+- Bir *MSSCCPRJ.SCC* dosya içerebilir "AuxPath" ve "ProjName" belirli bir dizinin içindeki kaynak denetimi altında olan birden çok dosya için.
 
--   "AuxPath" dizesini tırnak işaretleri içine olmaması gerekir. Tırnak içine sınırlayıcı olarak sağlamak için kullanılabilir (örneğin, bir çift tırnak boş bir dize belirtmek için kullanılabilir). IDE alanından okurken "AuxPath" dizesi gelen tüm teklifler çıkartır *MSSCCPRJ.SCC* dosya.
+- "AuxPath" dizesini tırnak işaretleri içine olmaması gerekir. Tırnak içine sınırlayıcı olarak sağlamak için kullanılabilir (örneğin, bir çift tırnak boş bir dize belirtmek için kullanılabilir). IDE alanından okurken "AuxPath" dizesi gelen tüm teklifler çıkartır *MSSCCPRJ.SCC* dosya.
 
--   "ProjName" dizesi *MSSCCPRJ. SCC dosya* döndürülen dizenin tam olarak eşleşmelidir `SccGetProjPath` işlevi. İşlev tarafından döndürülen dize tırnak içine dizesinde varsa *MSSCCPRJ.SCC* dosya, tırnak işareti olmalıdır çevresinde ve bunun tersi de geçerlidir.
+- "ProjName" dizesi *MSSCCPRJ. SCC dosya* döndürülen dizenin tam olarak eşleşmelidir `SccGetProjPath` işlevi. İşlev tarafından döndürülen dize tırnak içine dizesinde varsa *MSSCCPRJ.SCC* dosya, tırnak işareti olmalıdır çevresinde ve bunun tersi de geçerlidir.
 
--   Bir *MSSCCPRJ.SCC* dosya oluşturulduğunda veya bir dosya, kaynak denetimi altında yerleştirilmiş her güncelleştirildiğinde.
+- Bir *MSSCCPRJ.SCC* dosya oluşturulduğunda veya bir dosya, kaynak denetimi altında yerleştirilmiş her güncelleştirildiğinde.
 
--   Varsa bir *MSSCCPRJ.SCC* dosyası silindi, sağlayıcı bu dizine ilgili kaynak denetimi işlemi gerçekleştirir, sonraki açışınızda yeniden oluşturmalıdır.
+- Varsa bir *MSSCCPRJ.SCC* dosyası silindi, sağlayıcı bu dizine ilgili kaynak denetimi işlemi gerçekleştirir, sonraki açışınızda yeniden oluşturmalıdır.
 
--   Bir *MSSCCPRJ.SCC* dosya kesin olarak tanımlanan biçime uymalıdır.
+- Bir *MSSCCPRJ.SCC* dosya kesin olarak tanımlanan biçime uymalıdır.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ gösterimi. SCC dosya biçimi
  Bir örnek aşağıdadır *MSSCCPRJ.SCC* (satır numaralarını yalnızca bir kılavuz olarak sağlanır ve dosya gövdesinde dahil edilmemesi gereken) dosya biçimi:

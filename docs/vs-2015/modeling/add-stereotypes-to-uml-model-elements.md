@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d60d20e7fd62ee05b6c74f580ef60e23c577c96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043652"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>UML model öğelerine stereotipler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,51 +29,51 @@ UML model öğesine açıklama eklemek ve özel özellikler sağlamak için bir 
   
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Bir profili bir model veya paket bağlamak için  
   
-1.  Açık **UML Model Gezgini**. Üzerinde **mimarisi** menüsünde **Windows**ve ardından **UML Model Gezgini**.  
+1. Açık **UML Model Gezgini**. Üzerinde **mimarisi** menüsünde **Windows**ve ardından **UML Model Gezgini**.  
   
-2.  Bir paket veya profildeki stereotiplerin uygulamak istediğiniz tüm öğeleri içeren bir model bulun.  
+2. Bir paket veya profildeki stereotiplerin uygulamak istediğiniz tüm öğeleri içeren bir model bulun.  
   
-3.  Paket veya model sağ tıklayın ve ardından **özellikleri**.  
+3. Paket veya model sağ tıklayın ve ardından **özellikleri**.  
   
-4.  İçinde **özellikleri** penceresinde **profilleri** kullanmak istediğiniz stereotipler içeren profillerini özelliği.  
+4. İçinde **özellikleri** penceresinde **profilleri** kullanmak istediğiniz stereotipler içeren profillerini özelliği.  
   
      Profil stereotipler model veya paket içindeki tüm öğelerde artık kullanılabilir. Paket diğer paketler içeriyorsa, stereotip ayrıca içinde öğeleri üzerinde kullanılabilir.  
   
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>Model öğelerini veya ilişkileri stereotipler eklemek için  
   
-1.  Model öğe veya ilişki, diyagram üzerinde veya sağ **UML Model Gezgini**ve ardından **özellikleri**.  
+1. Model öğe veya ilişki, diyagram üzerinde veya sağ **UML Model Gezgini**ve ardından **özellikleri**.  
   
     > [!NOTE]
     >  Birkaç öğe için aynı stereotipler eklemek, birçok öğeyi seçin ve ardından bunları birine sağ tıklayın.  
   
-2.  Tıklayın **stereotipler** özelliği ve uygulamak istediğiniz stereotipler seçin.  
+2. Tıklayın **stereotipler** özelliği ve uygulamak istediğiniz stereotipler seçin.  
   
      «Ayraç» içinde model öğesi çoğu öğe ve ilişki türleri için Seçili stereotipler görünür.  
   
     > [!NOTE]
     >  Göremiyorsanız **stereotipler** özelliği veya istediğiniz stereotip görünmüyorsa, model öğesi bir paket veya model için uygun profili bağlandı içinde olduğundan emin olun.  
   
-3.  Bazı stereotipler model öğesi için ek özelliklerin değerlerini ayarlamanıza olanak sağlar. Bu özellikleri görmek için genişletin **stereotipler** özelliği.  
+3. Bazı stereotipler model öğesi için ek özelliklerin değerlerini ayarlamanıza olanak sağlar. Bu özellikleri görmek için genişletin **stereotipler** özelliği.  
   
 ### <a name="to-create-model-elements-within-a-package"></a>Bir paket içindeki model öğelerini oluşturmak için  
   
-1.  Bir UML sınıf diyagramı içinde veya bir paket oluşturma **UML Model Gezgini**.  
+1. Bir UML sınıf diyagramı içinde veya bir paket oluşturma **UML Model Gezgini**.  
   
-2.  Model öğelerini paketi aşağıdaki yollardan birini ekleyin:  
+2. Model öğelerini paketi aşağıdaki yollardan birini ekleyin:  
   
-    -   UML sınıf diyagramında, bir öğe için Aracı'nı tıklatın ve ardından diyagram üzerinde paket içine tıklayın.  
-  
-         \- veya -  
-  
-    -   UML Model Gezgini'nde, pakete sağ tıklayın, fareyle **Ekle**ve ardından bir öğe türüne tıklayın.  
+    - UML sınıf diyagramında, bir öğe için Aracı'nı tıklatın ve ardından diyagram üzerinde paket içine tıklayın.  
   
          \- veya -  
   
-    -   UML Model Gezgini'nde, var olan bir öğe pakete sürükleyin.  
+    - UML Model Gezgini'nde, pakete sağ tıklayın, fareyle **Ekle**ve ardından bir öğe türüne tıklayın.  
   
          \- veya -  
   
-    -   Bir diyagram paketi bağlantısını ve ardından diyagram öğeleri oluşturun.  
+    - UML Model Gezgini'nde, var olan bir öğe pakete sürükleyin.  
+  
+         \- veya -  
+  
+    - Bir diyagram paketi bağlantısını ve ardından diyagram öğeleri oluşturun.  
   
          Bunu yapmak için diyagramın boş bir bölümüne sağ tıklayın ve ardından **özellikleri**. İçinde **özellikleri** penceresinde **bağlantılı paket** istediğiniz paket için.  
   

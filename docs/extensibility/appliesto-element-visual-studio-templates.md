@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055203"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo öğesi (Visual Studio şablonları)
 
@@ -60,19 +60,19 @@ Bir metin değeri gereklidir. Bu metin projenin yeteneklerini belirtir.
 
 Geçerli ifade sözdizimi şu şekilde tanımlanır:
 
--   Yetenek ifadesi gibi "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- Yetenek ifadesi gibi "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   "&#124;" OR işlecidir.
+- "&#124;" OR işlecidir.
 
--   "&" Ve "+" karakterlerinin ikisi de AND işleçleridir.
+- "&" Ve "+" karakterlerinin ikisi de AND işleçleridir.
 
--   "!" karakteri NOT işlecidir.
+- "!" karakteri NOT işlecidir.
 
--   Parantezler değerlendirme-öncelik sırasını zorlar.
+- Parantezler değerlendirme-öncelik sırasını zorlar.
 
--   Null veya boş ifade bir eşleşme olarak değerlendirilir.
+- Null veya boş ifade bir eşleşme olarak değerlendirilir.
 
--   Proje özellikleri, bu ayrılmış karakterler dışında herhangi bir karakter olabilir: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r
+- Proje özellikleri, bu ayrılmış karakterler dışında herhangi bir karakter olabilir: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r
 
 ## <a name="example"></a>Örnek
 

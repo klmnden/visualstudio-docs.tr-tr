@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052083"
 ---
 # <a name="create-a-software-development-kit"></a>Bir yazılım geliştirme seti oluşturma
 Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak başvurabilirsiniz API koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, projeye ilgili tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, API'ler, Visual Studio'da kullanılabilir.
@@ -30,7 +30,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 
 - [Uzantı SDK'ları](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> Platform SDK'ları
+## <a name="PlatformSDKs"></a> Platform SDK'ları
  Platform SDK'larını, bir platform için uygulamalar geliştirmek için gereklidir. Örneğin, [!INCLUDE[win81](../debugger/includes/win81_md.md)] uygulamaları geliştirmek için SDK'sı gereklidir [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Yükleme
@@ -58,7 +58,7 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 | *Mimari* klasörü | Tüm desteklenen *mimarisi* klasör bulunabilir. Visual Studio aşağıdaki mimarilerine destekler: x86, x64, ARM ve neutral. Not: Win32 için x86 eşlenir ve buna AnyCPU için nötr eşler.<br /><br /> MSBuild arar yalnızca şuranın altında *\CommonConfiguration\neutral* Platform SDK'ları için. |
 | *SDKManifest.xml* | Bu dosya, Visual Studio SDK'yı nasıl tüketmesi gereken açıklar. SDK bildirimi için bakın [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Nesne Tarayıcısı göz atma listesinde gösteren değer.<br /><br /> **PlatformIdentity:** Bu öznitelik varlığını Visual Studio ve platform SDK'sı, SDK ve ondan eklenen başvuruları kopyaladığınız olmamalıdır MSBuild yerel olarak bildirir.<br /><br /> **TargetFramework:** Bu öznitelik, yalnızca hedefleyen projelerde bu değeri belirtildiği gibi aynı çerçeveleri emin olmak için Visual Studio tarafından kullanılan öznitelik, SDK'sını kullanabilir.<br /><br /> **MinVSVersion:** Bu öznitelik için geçerli olan SDK'lar kullanmak için Visual Studio tarafından kullanılır.<br /><br /> **Başvuru:** Bu öznitelik denetimler içeren yalnızca bu başvuruları için belirtilmesi gerekir. Bir başvuru denetimleri içerip içermediğini belirtme hakkında daha fazla bilgi için aşağıya bakın. |
 
-##  <a name="ExtensionSDKs"></a> Uzantı SDK'ları
+## <a name="ExtensionSDKs"></a> Uzantı SDK'ları
  Aşağıdaki bölümlerde, uzantı SDK dağıtmak için yapmanız gerekenler açıklanmaktadır.
 
 ### <a name="installation"></a>Yükleme
@@ -72,13 +72,13 @@ Bir yazılım geliştirme seti (SDK), Visual Studio'da tek bir öğe olarak baş
 
  Farklı bir konum kullanmak istiyorsanız, ikisinden birini yapmanız gerekir:
 
-1.  Bu kayıt defteri anahtarında belirtin:
+1. Bu kayıt defteri anahtarında belirtin:
 
      **HKLM\Software\Microsoft\Microsoft SDK'ları\<hedef platform > \v < platform sürüm numarası\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      ve değeri olan bir (varsayılan) alt ekleyin `<path to SDK><SDKName><SDKVersion>`.
 
-2.  MSBuild özelliği Ekle `SDKReferenceDirectoryRoot` proje dosyanıza. Bu özelliğin değeri başvurmak istediğiniz uzantı Sdk'lerine bulunduğu dizinlerin noktalı virgülle ayrılmış listesidir.
+2. MSBuild özelliği Ekle `SDKReferenceDirectoryRoot` proje dosyanıza. Bu özelliğin değeri başvurmak istediğiniz uzantı Sdk'lerine bulunduğu dizinlerin noktalı virgülle ayrılmış listesidir.
 
 ### <a name="installation-layout"></a>Yükleme düzeni
  Uzantı SDK'ları aşağıdaki yükleme düzenini vardır:
@@ -191,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Dosya başvurusu: Denetimler içeren ya da yerel Winmd'lerin yalnızca bu başvuruları için belirtilmiş. Bir başvuru denetimleri içerip içermediğini belirtme hakkında daha fazla bilgi için bkz: [araç kutusu öğeleri konumunu belirtin](#ToolboxItems) aşağıda.
 
-##  <a name="ToolboxItems"></a> Araç kutusu öğeleri konumunu belirtin
+## <a name="ToolboxItems"></a> Araç kutusu öğeleri konumunu belirtin
  ToolBoxItems öğesinin *SDKManifest.xml* şema platformu hem de uzantı SDK'ları kategori ve konuma araç kutusu öğeleri belirtir. Aşağıdaki örnekler, farklı konumlar belirtebilirsiniz gösterilmektedir. WinMD veya DLL başvurularını uygun budur.
 
-1.  Araç kutusu varsayılan kategorideki denetimleri yerleştirin.
+1. Araç kutusu varsayılan kategorideki denetimleri yerleştirin.
 
     ```
     <File Reference = "sample.winmd">
@@ -202,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  Belirli bir kategori adı altında denetimlerini yerleştirin.
+2. Belirli bir kategori adı altında denetimlerini yerleştirin.
 
     ```
     <File Reference = "sample.winmd">
@@ -210,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  Belirli bir kategori adlarıyla denetimlerini yerleştirin.
+3. Belirli bir kategori adlarıyla denetimlerini yerleştirin.
 
     ```
     <File Reference = "sample.winmd">
@@ -221,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Denetimleri farklı bir kategori adlarıyla Blend ve Visual Studio koyun.
+4. Denetimleri farklı bir kategori adlarıyla Blend ve Visual Studio koyun.
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -231,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Belirli denetimlerle Blend ve Visual Studio farklı şekilde sıralar.
+5. Belirli denetimlerle Blend ve Visual Studio farklı şekilde sıralar.
 
     ```
     <File Reference = "sample.winmd">
@@ -242,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  Belirli denetimler listeleme ve bunları Visual Studio ortak yolunda veya yalnızca tüm denetimleri grubuna yerleştirin.
+6. Belirli denetimler listeleme ve bunları Visual Studio ortak yolunda veya yalnızca tüm denetimleri grubuna yerleştirin.
 
     ```
     <File Reference = "sample.winmd">
@@ -253,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  Belirli denetimler numaralandırabilir ve yalnızca belirli bir grup içinde ChooseItems onlar olmadan göster araç kutusunda oluşturuluyor.
+7. Belirli denetimler numaralandırabilir ve yalnızca belirli bir grup içinde ChooseItems onlar olmadan göster araç kutusunda oluşturuluyor.
 
     ```
     <File Reference = "sample.winmd">

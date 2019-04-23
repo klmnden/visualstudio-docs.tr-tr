@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044699"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Windows Formunda bir Diyagram ekleme
 
@@ -20,15 +20,15 @@ Bir DSL diyagramı Visual Studio penceresinde görünür bir Windows Denetim ekl
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Bir DSL diyagramı Windows denetimi ekleme
 
-1.  Yeni bir **kullanıcı denetimi** DslPackage projeye dosya.
+1. Yeni bir **kullanıcı denetimi** DslPackage projeye dosya.
 
-2.  Panel denetimi, kullanıcı denetimine ekleyin. Bu panelde DSL diyagramı içerir.
+2. Panel denetimi, kullanıcı denetimine ekleyin. Bu panelde DSL diyagramı içerir.
 
      İhtiyacınız olan diğer denetimleri ekleyin.
 
      Denetimin bağlantı özelliklerini ayarlayın.
 
-3.  Çözüm Gezgini'nde, kullanıcı denetimi dosyaya sağ tıklayın ve **kodu görüntüle**. Bu oluşturucu ve değişken için kodu ekleyin:
+3. Çözüm Gezgini'nde, kullanıcı denetimi dosyaya sağ tıklayın ve **kodu görüntüle**. Bu oluşturucu ve değişken için kodu ekleyin:
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ Bir DSL diyagramı Visual Studio penceresinde görünür bir Windows Denetim ekl
     private MyDSLDocView docView;
     ```
 
-4.  Aşağıdaki içeriğe sahip DslPackage projeye yeni bir dosya ekleyin:
+4. Aşağıdaki içeriğe sahip DslPackage projeye yeni bir dosya ekleyin:
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ Bir DSL diyagramı Visual Studio penceresinde görünür bir Windows Denetim ekl
     } } } }
     ```
 
-5.  DSL test etmek için basın **F5** ve bir örnek model dosyasını açın. Denetim içinde diyagramda görünür. Araç kutusu ve diğer özellikler normal şekilde çalışır.
+5. DSL test etmek için basın **F5** ve bir örnek model dosyasını açın. Denetim içinde diyagramda görünür. Araç kutusu ve diğer özellikler normal şekilde çalışır.
 
 ## <a name="update-the-form-using-store-events"></a>Formu deposu olayları kullanarak güncelleştirme
 
-1.  Form Tasarımcısı'nda ekleme bir **ListBox** adlı `listBox1`. Bu modelde öğeleri listesi görüntülenir. Kullanarak modeli ile eşitlenir *olayları depolamak*. Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Form Tasarımcısı'nda ekleme bir **ListBox** adlı `listBox1`. Bu modelde öğeleri listesi görüntülenir. Kullanarak modeli ile eşitlenir *olayları depolamak*. Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  Özel kod dosyasında, daha fazla DocView sınıfı yöntemleri geçersiz kıl:
+2. Özel kod dosyasında, daha fazla DocView sınıfı yöntemleri geçersiz kıl:
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ Bir DSL diyagramı Visual Studio penceresinde görünür bir Windows Denetim ekl
      }
     ```
 
-3.  Kullanıcı denetimi arkasındaki kodda eklenebilen ve kaldırılabilen öğelerde dinlemek için yöntemleri ekleyin:
+3. Kullanıcı denetimi arkasındaki kodda eklenebilen ve kaldırılabilen öğelerde dinlemek için yöntemleri ekleyin:
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ Bir DSL diyagramı Visual Studio penceresinde görünür bir Windows Denetim ekl
     }
     ```
 
-4.  DSL test etmek için basın **F5** ve bir örnek model dosyasını Visual Studio'nun deneysel örneğinde açın.
+4. DSL test etmek için basın **F5** ve bir örnek model dosyasını Visual Studio'nun deneysel örneğinde açın.
 
      Liste kutusu model içinde öğeleri listesini gösterir ve sonra tüm ekleme veya silmeyi ve sonra geri al ve Yinele doğru olup olmadığını dikkat edin.
 

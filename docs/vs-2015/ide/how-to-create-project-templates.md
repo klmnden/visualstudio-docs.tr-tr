@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 918462bff3c2ac8dc57cb9c2c55a7d901707683c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051550"
 ---
 # <a name="how-to-create-project-templates"></a>Nasıl yapılır: Proje şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ Bu yordamı kullanarak bir şablonu oluşturmanızı sağlayan **şablonu dışa
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Standart dışarı aktarma Şablonu Sihirbazı ile bir özel Proje şablonu oluşturmak için  
   
-1.  Bir proje oluşturun.  
+1. Bir proje oluşturun.  
   
     > [!NOTE]
     >  Bir proje adlandırma şablon kaynağını ne zaman yalnızca geçerli tanımlayıcı karakterler kullanın. Bir proje adı geçersiz karakterler ile'den dışarı aktarılan bir şablonu gelecekteki projeleri şablonu temel alan derleme hatalarına neden olabilir. Geçerli tanımlayıcı karakter hakkında daha fazla bilgi için bkz. [bildirilen öğe adları](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
-2.  Bir şablon olarak dışarı hazır olana kadar proje düzenleyin.  
+2. Bir şablon olarak dışarı hazır olana kadar proje düzenleyin.  
   
-3.  Burada parametre değişikliğini gerçekleşmesi belirtmek için kod dosyaları uygun şekilde düzenleyin. Parametre değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md).  
+3. Burada parametre değişikliğini gerçekleşmesi belirtmek için kod dosyaları uygun şekilde düzenleyin. Parametre değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: Bir şablonda parametreleri ikame etme](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Üzerinde **dosya** menüsünü tıklatın **şablonu dışarı aktar**. **Şablonu dışarı aktar** Sihirbazı açılır.  
+4. Üzerinde **dosya** menüsünü tıklatın **şablonu dışarı aktar**. **Şablonu dışarı aktar** Sihirbazı açılır.  
   
-5.  Tıklayın **proje şablonu**.  
+5. Tıklayın **proje şablonu**.  
   
-6.  Geçerli çözümdeki birden fazla projeniz varsa, bir şablonu dışarı aktarmak istediğiniz projeleri seçin.  
+6. Geçerli çözümdeki birden fazla projeniz varsa, bir şablonu dışarı aktarmak istediğiniz projeleri seçin.  
   
-7.  **İleri**'ye tıklayın.  
+7. **İleri**'ye tıklayın.  
   
-8.  Bir simge ve şablonunuz için bir önizleme görüntüsü seçin. Bunlar görünür **yeni proje** iletişim kutusu.  
+8. Bir simge ve şablonunuz için bir önizleme görüntüsü seçin. Bunlar görünür **yeni proje** iletişim kutusu.  
   
 9. Bir şablon adı ve açıklama girin.  
   
@@ -58,4 +58,4 @@ Bu yordamı kullanarak bir şablonu oluşturmanızı sağlayan **şablonu dışa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
- [Nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)
+ [Nasıl yapılır: Öğe Şablonları Oluşturma](../ide/how-to-create-item-templates.md)

@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042359"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Diyagramlar üzerinde model görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Program kodunda uzantı Visual Studio için diyagramlar üzerinde model öğelerini nasıl görüntüleneceğini denetleyebilirsiniz. Visual Studio'nun hangi sürümlerinin UML modellerini desteklemek için bkz [mimari ve Modelleme Araçları sürüm desteği](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- Bu konuda:  
- -   [Diyagramdaki bir öğe görüntülemek için](#Display)  
+Bu konuda:  
+- [Diyagramdaki bir öğe görüntülemek için](#Display)  
   
--   [Bir öğeyi temsil eden şekiller erişme](#GetShapes)  
+- [Bir öğeyi temsil eden şekiller erişme](#GetShapes)  
   
--   [Şekiller yeniden boyutlandırma ve taşıma](#Moving)  
+- [Şekiller yeniden boyutlandırma ve taşıma](#Moving)  
   
--   [Şekil diyagramdan kaldırmak için](#Removing)  
+- [Şekil diyagramdan kaldırmak için](#Removing)  
   
--   [Açma ve diyagramları oluşturma](#Opening)  
+- [Açma ve diyagramları oluşturma](#Opening)  
   
--   [Örnek: Şekilleri Hizalama komutu](#AlignCommand)  
+- [Örnek: Şekilleri Hizalama komutu](#AlignCommand)  
   
-##  <a name="Display"></a> Diyagramdaki bir öğe görüntülemek için  
+## <a name="Display"></a> Diyagramdaki bir öğe görüntülemek için  
  Kullanım örneği veya bir eylem gibi bir öğe oluşturduğunuzda, kullanıcı UML Model Gezgini'nde görebilirsiniz, ancak bir diyagramda her zaman otomatik olarak görüntülenmez. Bazı durumlarda, görüntülenmesi için kod yazmanız gerekir. Aşağıdaki tabloda seçenekler özetlenmektedir.  
   
 |Öğe türü|Örneğin:|Bunu görüntülemek için kodunuzu gerekir.|  
@@ -47,7 +47,7 @@ Program kodunda uzantı Visual Studio için diyagramlar üzerinde model öğeler
 |Alt davranışı|Yaşam çizgilerini, iletileri, Eylemler, nesne düğümleri|Otomatik - kod gerekmez.<br /><br /> Üst bir diyagrama bağlıysa görüntülenir.|  
 |İlişki|İlişkilendirme, Genelleştirme, akış, bağımlılık|Otomatik - kod gerekmez.<br /><br /> Bu diyagramda her ikisinde görüntülendiği görüntülenir.|  
   
-##  <a name="GetShapes"></a> Bir öğeyi temsil eden şekiller erişme  
+## <a name="GetShapes"></a> Bir öğeyi temsil eden şekiller erişme  
  Bir öğeyi temsil eden şekle türlerine ait:  
   
  `IShape`  
@@ -68,7 +68,7 @@ Program kodunda uzantı Visual Studio için diyagramlar üzerinde model öğeler
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Genel tür dönüştürme `IShape` için türü kesin belirlenmiş `IShape<IElement>`.|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Bir şekil parametreli bir şekil türden diğerine dönüştürün.|  
   
-##  <a name="Moving"></a> Şekiller yeniden boyutlandırma ve taşıma  
+## <a name="Moving"></a> Şekiller yeniden boyutlandırma ve taşıma  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ Program kodunda uzantı Visual Studio için diyagramlar üzerinde model öğeler
   
  Bir örnek için bkz. [hizalama komutunu tanımlama](#AlignCommand).  
   
-##  <a name="Removing"></a> Şekil diyagramdan kaldırmak için  
+## <a name="Removing"></a> Şekil diyagramdan kaldırmak için  
  Bazı öğe türleri şekilleri öğe silmeden silebilirsiniz.  
   
 |Model öğesi|Şekil kaldırmak için|  
@@ -86,7 +86,7 @@ Program kodunda uzantı Visual Studio için diyagramlar üzerinde model öğeler
 |Bir davranış: etkileşimi veya etkinlik|Diyagram projeden silebilirsiniz. Kullanım `IDiagram.FileName` olan yolu almak için.<br /><br /> Bu davranışı modelden silmez.|  
 |Başka bir şekil|Bu gibi durumlarda, diğer şekiller açıkça diyagramdan silemezsiniz. Şekil, otomatik olarak modelden öğeyi silinirse veya üst şekil diyagramdan kaldırılır kaybolur.|  
   
-##  <a name="Opening"></a> Açma ve diyagramları oluşturma  
+## <a name="Opening"></a> Açma ve diyagramları oluşturma  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Kullanıcının geçerli diyagrama bir komut veya hareket uzantısını erişmek için  
  İçeri aktarılan bu özelliği sınıfınızda bildirin:  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Örnek: Şekilleri Hizalama komutu  
+## <a name="AlignCommand"></a> Örnek: Şekilleri Hizalama komutu  
  Aşağıdaki kod, şekilleri düzgünce hizalayan bir menü komutu uygular. Kullanıcının ilk iki veya daha fazla şekil yaklaşık uyum içinde dikey veya yatay yerleştirmeniz gerekir. Ardından Hizala komutu merkezlerini hizalamak için kullanılabilir.  
   
  Komutunu kullanabilmek için bu kodu bir menü komutu projesine ekleyin ve sonra elde edilen uzantısı kullanıcılarınıza dağıtın. Daha fazla bilgi için [modelleme diyagramında menü komutu tanımlama](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  

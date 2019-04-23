@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049886"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Bir komut dosyası kullanarak SQL veritabanı oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,30 +28,30 @@ Bu izlenecek yolda, Visual Studio için örnek kod içeren küçük bir veritaba
   
  **Bu konudaki**  
   
--   [Veritabanı şeması içeren bir komut dosyası oluşturma](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+- [Veritabanı şeması içeren bir komut dosyası oluşturma](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [Bir veritabanı projesi oluşturun ve şemayı içe aktarın](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+- [Bir veritabanı projesi oluşturun ve şemayı içe aktarın](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [Veritabanı dağıtma](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+- [Veritabanı dağıtma](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için SQL Server Express LocalDB veya başka bir SQL veritabanı, yüklü olmalıdır.  
   
-##  <a name="CreateScript"></a> Veritabanı şeması içeren bir komut dosyası oluşturma  
+## <a name="CreateScript"></a> Veritabanı şeması içeren bir komut dosyası oluşturma  
   
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Şema içe aktarabileceğiniz bir komut dosyası oluşturmak için  
   
-1.  İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], menü çubuğunda, seçin **dosya** > **yeni** > **dosya**.  
+1. İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], menü çubuğunda, seçin **dosya** > **yeni** > **dosya**.  
   
      **Yeni dosya** iletişim kutusu görüntülenir.  
   
-2.  İçinde **kategorileri** listesinden **genel**.  
+2. İçinde **kategorileri** listesinden **genel**.  
   
-3.  İçinde **şablonları** listesinden **Sql dosyası**ve ardından **açık** düğmesi.  
+3. İçinde **şablonları** listesinden **Sql dosyası**ve ardından **açık** düğmesi.  
   
      Transact-SQL editor açılır.  
   
-4.  Aşağıdaki Transact-SQL kodunu kopyalayın ve ardından Transact-SQL düzenleyicisine yapıştırın.  
+4. Aşağıdaki Transact-SQL kodunu kopyalayın ve ardından Transact-SQL düzenleyicisine yapıştırın.  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -213,34 +213,34 @@ Bu izlenecek yolda, Visual Studio için örnek kod içeren küçük bir veritaba
     GO  
     ```  
   
-5.  Menü çubuğunda, seçin **dosya** > **SqlQuery_1.sql farklı**.  
+5. Menü çubuğunda, seçin **dosya** > **SqlQuery_1.sql farklı**.  
   
      **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir.  
   
-6.  İçinde **dosya adı** kutusuna `SampleImportScript.sql`, burada, dosyayı kaydedin ve ardından konum Not **Kaydet** düğmesi.  
+6. İçinde **dosya adı** kutusuna `SampleImportScript.sql`, burada, dosyayı kaydedin ve ardından konum Not **Kaydet** düğmesi.  
   
-7.  Menü çubuğunda, seçin **dosya** > **çözümü Kapat**.  
+7. Menü çubuğunda, seçin **dosya** > **çözümü Kapat**.  
   
      Ardından, bir veritabanı projesi oluşturun ve ardından şemayı oluşturduğunuz komut dosyasından içe aktarın.  
   
-##  <a name="CreateProject"></a> Bir veritabanı projesi oluşturun ve şemayı içe aktarın  
+## <a name="CreateProject"></a> Bir veritabanı projesi oluşturun ve şemayı içe aktarın  
   
 #### <a name="to-create-a-database-project"></a>Veritabanı projesi oluşturmak için  
   
-1.  Menü çubuğunda, seçin **dosya** > **yeni** > **proje**.  
+1. Menü çubuğunda, seçin **dosya** > **yeni** > **proje**.  
   
      **Yeni Proje** iletişim kutusu görünür.  
   
-2.  Altında **yüklü**, genişletme **şablonları** düğümünü genişletin **diğer diller** düğümünü **SQL Server** kategorisi ve ardından seçin **SQL Server veritabanı projesi** şablonu.  
+2. Altında **yüklü**, genişletme **şablonları** düğümünü genişletin **diğer diller** düğümünü **SQL Server** kategorisi ve ardından seçin **SQL Server veritabanı projesi** şablonu.  
   
     > [!NOTE]
     >  **Diğer diller** düğümü, Visual Studio'nun tüm yüklemelerinde görünmez.  
   
-3.  İçinde **adı** kutusuna `Small Database`.  
+3. İçinde **adı** kutusuna `Small Database`.  
   
-4.  Seçin **çözüm için dizin oluştur** zaten seçili değilse, onay kutusu.  
+4. Seçin **çözüm için dizin oluştur** zaten seçili değilse, onay kutusu.  
   
-5.  NET **kaynak denetimine Ekle** zaten temizlenmiş ve ardından değilse, onay kutusunu **Tamam** düğmesi.  
+5. NET **kaynak denetimine Ekle** zaten temizlenmiş ve ardından değilse, onay kutusunu **Tamam** düğmesi.  
   
      Veritabanı projesi oluşturulur ve görünür **Çözüm Gezgini**.  
   
@@ -248,27 +248,27 @@ Bu izlenecek yolda, Visual Studio için örnek kod içeren küçük bir veritaba
   
 #### <a name="to-import-a-database-schema-from-a-script"></a>Veritabanı şemasını komut dosyasından içeri aktarmak için  
   
-1.  Menü çubuğunda, seçin **proje** > **alma** > **betik**.  
+1. Menü çubuğunda, seçin **proje** > **alma** > **betik**.  
   
-2.  Üzerinde **Hoş Geldiniz** sayfasında metni gözden geçirin ve ardından **sonraki** düğmesi.  
+2. Üzerinde **Hoş Geldiniz** sayfasında metni gözden geçirin ve ardından **sonraki** düğmesi.  
   
-3.  Seçin **tek dosya** seçenek düğmesini ve ardından **Gözat** düğmesi.  
+3. Seçin **tek dosya** seçenek düğmesini ve ardından **Gözat** düğmesi.  
   
      **SQL komut dosyasını içeri aktar** iletişim kutusu görüntülenir.  
   
-4.  Sampleımportscript.SQL dosyasını kaydettiğiniz klasörü açın, dosyayı seçin ve ardından **açık** düğmesi.  
+4. Sampleımportscript.SQL dosyasını kaydettiğiniz klasörü açın, dosyayı seçin ve ardından **açık** düğmesi.  
   
-5.  Seçin **son** kapatmak için düğme **SQL komut dosyasını içeri aktar** iletişim kutusu.  
+5. Seçin **son** kapatmak için düğme **SQL komut dosyasını içeri aktar** iletişim kutusu.  
   
      Komut dosyası içe aktarılır ve komut dosyasını tanımlayan nesneler veritabanı projenize eklenir.  
   
-6.  Özeti gözden geçirin ve ardından **son** kapatmak için düğme **alma SQL betik dosyası** iletişim kutusu.  
+6. Özeti gözden geçirin ve ardından **son** kapatmak için düğme **alma SQL betik dosyası** iletişim kutusu.  
   
-7.  İçinde **Çözüm Gezgini**, Satışlar, betikler ve güvenlik'i genişletin, projenizin klasörler ve bunların .sql dosyaları içerdiğini doğrulayın.  
+7. İçinde **Çözüm Gezgini**, Satışlar, betikler ve güvenlik'i genişletin, projenizin klasörler ve bunların .sql dosyaları içerdiğini doğrulayın.  
   
-8.  İçinde **SQL Server Nesne Gezgini**, veritabanı altında göründüğünü doğrulayın **projeleri** düğümü.  
+8. İçinde **SQL Server Nesne Gezgini**, veritabanı altında göründüğünü doğrulayın **projeleri** düğümü.  
   
      Bu noktada, veritabanı, tablolar ve depolanmış yordamlar gibi sistem nesnelerini yalnızca içerir. Veritabanını dağıttıktan sonra kullanıcı tablolarını ve betiğin tanımlandığı saklı yordamları içerecektir.  
   
-##  <a name="DeployDatabase"></a> Veritabanı dağıtma  
+## <a name="DeployDatabase"></a> Veritabanı dağıtma  
  Bastığınızda **F5** anahtar dağıttığınızda (veya yayımlama) bir LocalDB veritabanına varsayılan veritabanı. Proje için Özellikler sayfasını açarak veritabanını farklı bir konuma dağıtabilirsiniz seçerek **hata ayıklama** sekmesini ve sonra bağlantı dizesini değiştirerek.

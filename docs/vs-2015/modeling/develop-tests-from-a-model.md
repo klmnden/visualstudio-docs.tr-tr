@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042060"
 ---
 # <a name="develop-tests-from-a-model"></a>Model aracılığıyla test geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Sisteminiz ve bileşenlerinin testleri düzenlemenize yardımcı olması için g
   
  Bu yönergeler yararlı olabilir:  
   
--   Her kullanım örneği, ana yollar ve özel sonuçlar için çeşitli sınamalar olması gerekir.  
+- Her kullanım örneği, ana yollar ve özel sonuçlar için çeşitli sınamalar olması gerekir.  
   
--   Bir kullanım örneği gereksinimlerini modeli, açıklayan, diğer bir deyişle, daha ayrıntılı bir yordam tanımlamak için kullanıcı kaydetme amacına ulaşmanız için takip eden sağlanır, hedef kendi sonkoşulunu tanımlamak daha önemlidir. Örneğin, yemek siparişi Sonkoşul, olabilir bir restoran, bir müşterinin yemek hazırlanıyor ve müşteriye ödediği. Sonkoşul testlerinizi doğrulamalıdır ölçüttür.  
+- Bir kullanım örneği gereksinimlerini modeli, açıklayan, diğer bir deyişle, daha ayrıntılı bir yordam tanımlamak için kullanıcı kaydetme amacına ulaşmanız için takip eden sağlanır, hedef kendi sonkoşulunu tanımlamak daha önemlidir. Örneğin, yemek siparişi Sonkoşul, olabilir bir restoran, bir müşterinin yemek hazırlanıyor ve müşteriye ödediği. Sonkoşul testlerinizi doğrulamalıdır ölçüttür.  
   
--   Ayrı yan tümceleri Sonkoşul temel ayrı testler. Örneğin, restorana sipariş bilgilendirme ve müşterinin Ödeme almak için ayrı testler oluşturun. Bu ayrım bu avantajları vardır:  
+- Ayrı yan tümceleri Sonkoşul temel ayrı testler. Örneğin, restorana sipariş bilgilendirme ve müşterinin Ödeme almak için ayrı testler oluşturun. Bu ayrım bu avantajları vardır:  
   
-    -   Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.  
+    - Gereksinimleri farklı yönlerini değişiklikleri sık bağımsız olarak gerçekleşir. Bu şekilde farklı yönlere testleri ayırarak, testleri gereklilikler değiştiğinde güncelleştirmenin kolaylaştırır.  
   
-    -   Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.  
+    - Geliştirme planı önce başka bir kullanım örneği tek bir yönüne uygularsa, geliştirme ilerledikçe testleri ayrı ayrı etkinleştirebilirsiniz.  
   
--   Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.  
+- Testleri tasarlarken, test verileri seçimi sonkoşulun olup olmadığını belirten bir betik veya kod ayırın. Örneğin, bir basit aritmetik işlevinin bir test olabilir: Giriş 4; Çıkış 2 olduğundan emin olun. Bunun yerine, betiği şu şekilde tasarlayın: Bir giriş seçin. Çıkış kendisi tarafından çarpma ve sonuç, özgün girişi olduğundan emin olun. Bu stil, testin ana gövdesini değiştirmeden test girdilerine değiştirmenizi sağlar.  
   
 #### <a name="linking-tests-to-use-cases"></a>Kullanım örnekleri için testleri bağlama  
  Kullanıyorsanız [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] tasarlama ve testleri çalıştırmak için testlerinizin gereksinimi, kullanım durumu ve kullanıcı hikayesi iş öğeleri altında düzenleyebilirsiniz. Bu bağlantı iş öğeleri, modelinizde kullanım için. Bu hızlı bir şekilde izleme gereksinimleri değişiklikler testleri sağlar ve kullanım örneği her ilerlemesini izlemenize yardımcı olur.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Bir test açısından bakıldığında, gereksinimler modelini testler için bir toplu olarak görülebilir. Bu nedenle, testler ve proje boyunca model arasındaki ilişkiyi sağlamak önemlidir.  
   
-##  <a name="Attaching"></a> Model öğelerine test çalışmalarını ekleme  
+## <a name="Attaching"></a> Model öğelerine test çalışmalarını ekleme  
  Projeniz kullanıyorsa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], testleri modelinizde öğelerine bağlayabilirsiniz. Bu değişikliği gereksinimleri etkilenen testleri hızla bulmanıza olanak tanır ve bir gereksinim gerçekleşti ölçüde izlemenize yardımcı olur.  
   
  Tüm öğe türleri için testleri bağlayabilirsiniz. Bazı örnekler şunlardır:  
   
--   Kullanım örneği, onu çalıştıran testlere bağlayın.  
+- Kullanım örneği, onu çalıştıran testlere bağlayın.  
   
--   Yan tümceleri bir kullanım örneği sonkoşulunun veya hedef, kullanım örneğine bağlı yorumlar üzerine yazma ve testler her açıklama bağlayın.  
+- Yan tümceleri bir kullanım örneği sonkoşulunun veya hedef, kullanım örneğine bağlı yorumlar üzerine yazma ve testler her açıklama bağlayın.  
   
--   Sınıf diyagramları veya etkinlik diyagramları açıklamalarda sabit kuralları yazma ve bunları testler bağlayabilirsiniz.  
+- Sınıf diyagramları veya etkinlik diyagramları açıklamalarda sabit kuralları yazma ve bunları testler bağlayabilirsiniz.  
   
--   Testleri bir etkinlik diyagramı veya tek tek etkinliklerin bağlayın.  
+- Testleri bir etkinlik diyagramı veya tek tek etkinliklerin bağlayın.  
   
--   Bir test paketi bileşen veya alt test bağlayın.  
+- Bir test paketi bileşen veya alt test bağlayın.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Testleri bir model öğe veya ilişki bağlamak için  
   
-1.  İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. İçinde [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], bir gereksinim oluşturmanız ve bir test paketi üzerinde temel. Bunun hakkında bilgi edinmek için [uygulamayı test etme](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      Bir iş öğesinde oluşturduğunuz gereksinimi olan [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Bir kullanıcı hikayesi, gereksinim veya kullanım örneği iş öğesi ile projenizin kullandığı işlem şablonuna bağlı olarak olabilir [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Daha fazla bilgi için [Visual Studio Team Services veya Team Foundation Server kullanarak iş izleme](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.  
+2. Bir veya daha fazla öğe modelinizdeki gereksinim iş öğesine bağlayın.  
   
      Modelleme diyagramında bir öğe, yorum veya ilişkiye sağ tıklayın ve ardından **iş öğesine bağlantı**. Daha fazla bilgi için [bağlantı model öğelerini ve iş öğeleri](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Model öğe ifade gereksinim doğrulayın test çalışmalarını test paketine ekleyin.  
+3. Model öğe ifade gereksinim doğrulayın test çalışmalarını test paketine ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md)   

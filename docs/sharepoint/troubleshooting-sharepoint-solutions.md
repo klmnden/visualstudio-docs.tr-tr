@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048625"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint çözümlerinde sorun giderme
   SharePoint çözümlerini kullanarak hata ayıklaması yaparken aşağıdaki sorunları veya uyarılar ortaya çıkabilir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hata ayıklayıcı. Daha fazla bilgi için [hata ayıklama SharePoint 2007 iş akışı çözümleri](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -115,9 +115,9 @@ ms.locfileid: "54870629"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>İş akışı Sihirbazı'nı yeniden girmek için
 
-1.  İçinde **Çözüm Gezgini**, iş akışı düğümünü seçin.
+1. İçinde **Çözüm Gezgini**, iş akışı düğümünü seçin.
 
-2.  İçinde **özellikleri** penceresinde üç noktalı düğme bulunan herhangi bir özellikte nokta (...) düğmesini seçin.
+2. İçinde **özellikleri** penceresinde üç noktalı düğme bulunan herhangi bir özellikte nokta (...) düğmesini seçin.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Kullanıcı uygulama sayfasını tarayıcıda güncelleştirilmiş resmi görmek için hata ayıklama sırasında yenilemeniz gerekir
  Gibi bir resim görüntüleyen bir denetimi ile bir uygulama sayfasını içeren bir SharePoint çözüm hata ayıklama, bir [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] görüntü denetimi görüntüye yapılan değişiklikleri görüntülemek için tarayıcı içinde sayfayı yenileyin gerekir.
@@ -127,13 +127,13 @@ ms.locfileid: "54870629"
 
 ### <a name="error-message"></a>Hata iletisi
 
--   SharePoint site konumu geçerli değil.
+- SharePoint site konumu geçerli değil.
 
 ### <a name="resolution"></a>Çözüm
 
--   [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]yükleyin.
+- [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]yükleyin.
 
--   SharePoint Web sitesine yönetici erişimi olduğundan emin olun. Daha fazla bilgi için [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] çevrimiçi makalede [atama veya SharePoint Server yöneticileri, hizmet uygulaması kaldırma](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- SharePoint Web sitesine yönetici erişimi olduğundan emin olun. Daha fazla bilgi için [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] çevrimiçi makalede [atama veya SharePoint Server yöneticileri, hizmet uygulaması kaldırma](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Site silme web olayı olay alıcısı projesinde gerçekleşmez
  Bir olay alıcısı projesi oluşturun ve "bir site silinirken gibi" belirli Web olayları seçin, olayı hiçbir zaman oluşur.
@@ -156,46 +156,46 @@ ms.locfileid: "54870629"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Özellik kapsamına ait olay alıcısının değiştirmek için
 
-1.  İçinde **Çözüm Gezgini**, olay alıcının açın *.feature* dosyası **özellik Tasarımcısı** dosyasına çift veya onun kısayol menüsünü açın ve ardından seçme **açık**.
+1. İçinde **Çözüm Gezgini**, olay alıcının açın *.feature* dosyası **özellik Tasarımcısı** dosyasına çift veya onun kısayol menüsünü açın ve ardından seçme **açık**.
 
-2.  Yanındaki oku seçin **kapsam**ve ardından **Site** listesinde görünür.
+2. Yanındaki oku seçin **kapsam**ve ardından **Site** listesinde görünür.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Bir iş verileri bağlantısı modeli proje bir tanımlayıcı adı değiştirildikten sonra dağıtım hatası görünür.
  Bir varlıkta bir iş verileri bağlantısı (BDC) modeli tanımlayıcı adını değiştirin ve sonra çözümü dağıtmak deneyin, bu sorun oluşur.
 
 ### <a name="error-messages"></a>Hata iletileri
 
--   \<*model adı*> şu dış içerik türü etkinleştirme hatalar...
+- \<*model adı*> şu dış içerik türü etkinleştirme hatalar...
 
--   Adla IMetadataObject '\<*model adı*>' 'yineleniyor alan adı ' bir değere sahip...
+- Adla IMetadataObject '\<*model adı*>' 'yineleniyor alan adı ' bir değere sahip...
 
 ### <a name="resolution"></a>Çözüm
  Bu sorunu çözmek için model el ile silin ve ardından çözümü yeniden dağıtın.  Aşağıdaki araçlardan birini kullanarak model silebilirsiniz:
 
--   SharePoint 2010 Merkezi Yönetim'ı seçin. Daha fazla bilgi için [İVB Model Yönetimi](http://go.microsoft.com/fwlink/?LinkID=181472) Microsoft TechNet Web sitesinde.
+- SharePoint 2010 Merkezi Yönetim'ı seçin. Daha fazla bilgi için [İVB Model Yönetimi](http://go.microsoft.com/fwlink/?LinkID=181472) Microsoft TechNet Web sitesinde.
 
--   Windows PowerShell. Komut isteminde aşağıdaki komutu yazarak, model silebilirsiniz: **Remove-SPBusinessDataCatalogModel**. Daha fazla bilgi için [genel cmdlet'leri (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) Microsoft TechNet Web sitesinde.
+- Windows PowerShell. Komut isteminde aşağıdaki komutu yazarak, model silebilirsiniz: **Remove-SPBusinessDataCatalogModel**. Daha fazla bilgi için [genel cmdlet'leri (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) Microsoft TechNet Web sitesinde.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>SharePoint'te bir görsel web bölümü görüntülemeye çalıştığınızda bir hata görüntülenir.
  Bu sorun, **yolu** özelliği kullanıcı denetiminin dizesi ile başlayan değil "CONTROLTEMPLATES\\".
 
 ### <a name="error-messages"></a>Hata iletileri
 
--   Dosya ' /_CONTROLTEMPLATES/*\<proje adı >*/*\<Web Bölümü adı >*/*\<kullanıcı denetimi adı >*.ascx' mevcut değil.
+- Dosya ' /_CONTROLTEMPLATES/*\<proje adı >*/*\<Web Bölümü adı >*/*\<kullanıcı denetimi adı >*.ascx' mevcut değil.
 
--   '/' Uygulamasında sunucu hatası.
+- '/' Uygulamasında sunucu hatası.
 
 ### <a name="resolution"></a>Çözüm
 
 ##### <a name="to-resolve-this-issue"></a>Bu sorunu çözmek için
 
-1.  İçinde **Çözüm Gezgini**, dosya adı uzantısı olan kullanıcı denetimi dosya *.ascx*.
+1. İçinde **Çözüm Gezgini**, dosya adı uzantısı olan kullanıcı denetimi dosya *.ascx*.
 
-2.  Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
+2. Menü çubuğunda, **görünümü** > **Özellikler penceresi**.
 
-3.  İçinde **özellikleri** penceresini genişletin **dağıtım konumu** düğümü.
+3. İçinde **özellikleri** penceresini genişletin **dağıtım konumu** düğümü.
 
-4.  Değerini emin **yolu** özelliği dizesi ile başlar "CONTROLTEMPLATES\\".
+4. Değerini emin **yolu** özelliği dizesi ile başlar "CONTROLTEMPLATES\\".
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Bir görev form alanı içeren bir içeri aktarılan yeniden kullanılabilir iş akışını çalıştırdığınızda hata görüntülenir.
  Bir alanı görev formuna içeren bir iş akışı alın ve ardından aktardığınız aynı sistemde yeni iş akışını çalıştırmak, bu sorun oluşur.
@@ -230,26 +230,26 @@ ms.locfileid: "54870629"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>IIS uygulama havuzu ayarlarını erişmek için
 
-1.  IIS Yöneticisi'ni açın.
+1. IIS Yöneticisi'ni açın.
 
-2.  İçinde **bağlantıları** bölmesinde, SharePoint sunucu düğümünü genişletin ve ardından **uygulama havuzları** düğümü.
+2. İçinde **bağlantıları** bölmesinde, SharePoint sunucu düğümünü genişletin ve ardından **uygulama havuzları** düğümü.
 
-3.  Üzerinde **uygulama havuzları** (genellikle "SharePoint - 80"), SharePoint uygulama havuzu seçin ve ardından **eylemleri** bölmesinde seçin **Gelişmiş ayarlar** bağlantı.
+3. Üzerinde **uygulama havuzları** (genellikle "SharePoint - 80"), SharePoint uygulama havuzu seçin ve ardından **eylemleri** bölmesinde seçin **Gelişmiş ayarlar** bağlantı.
 
-4.  IIS zaman aşımından önce bekleme süresini artırmak için değerini değiştirmek **Ping en yüksek yanıt süresi (saniye)** 90 saniyeden büyük olan bir değer.
+4. IIS zaman aşımından önce bekleme süresini artırmak için değerini değiştirmek **Ping en yüksek yanıt süresi (saniye)** 90 saniyeden büyük olan bir değer.
 
-5.  Ping IIS devre dışı bırakmak için ayarlanmış **Ping etkin** için **False**.
+5. Ping IIS devre dışı bırakmak için ayarlanmış **Ping etkin** için **False**.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>SharePoint'te bırakır yalnız bırakılmış bir liste örneği otomatik geri çek
  Aşağıdaki adımlar bu sorun oluşur.
 
-1.  Bir liste örneği sahip bir liste tanımı oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Bir liste örneği sahip bir liste tanımı oluşturma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Seçin **F5** çözümü çalıştırmak için anahtar.
+2. Seçin **F5** çözümü çalıştırmak için anahtar.
 
-3.  Hata ayıklamayı durdurmak veya SharePoint sitesi kapatın.
+3. Hata ayıklamayı durdurmak veya SharePoint sitesi kapatın.
 
-4.  SharePoint sitesine yeniden açın ve liste örneği açın.
+4. SharePoint sitesine yeniden açın ve liste örneği açın.
 
 ### <a name="error-message"></a>Hata iletisi
  '/' Uygulamasında sunucu hatası.

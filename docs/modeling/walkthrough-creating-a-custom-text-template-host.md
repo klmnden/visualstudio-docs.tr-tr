@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055029"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: Bir özel metin şablonu konağı oluşturma
+# <a name="walkthrough-create-a-custom-text-template-host"></a>İzlenecek yol: Özel Metin Şablonu Konağı Oluşturma
 
 A *metin şablonu ana bilgisayarı* bir ortam sağlayan *metin şablonu dönüştürme motoru* çalıştırılacak. Ana bilgisayar, motorun dosya sistemiyle etkileşimini yönetmekten sorumludur. Altyapı veya *yönerge işlemcisi* , gerekli bir dosya veya bir derlemenin kaynak konaktan talep edebilir. Böylece, ana bilgisayar, istenen kaynağın yerini belirlemek amacıyla dizinlerde ve genel derleme önbelleğinde arama yapabilir. Daha fazla bilgi için [metin şablonu dönüştürme süreci](../modeling/the-text-template-transformation-process.md).
 
@@ -31,19 +31,19 @@ Kullanmak istiyorsanız özel bir ana bilgisayar yazabilirsiniz *metin şablonu 
 
 Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   Özel metin şablonu ana bilgisayarı oluşturma.
+- Özel metin şablonu ana bilgisayarı oluşturma.
 
--   Özel ana bilgisayarı sınama.
+- Özel ana bilgisayarı sınama.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
 Bu kılavuzu tamamlamak için aşağıdakilere ihtiyacınız vardır:
 
--   Visual Studio 2010 veya sonrası
+- Visual Studio 2010 veya sonrası
 
--   Visual Studio SDK
+- Visual Studio SDK
 
-## <a name="create-a-custom-text-template-host"></a>Bir özel metin şablonu konağı oluşturma
+## <a name="create-a-custom-text-template-host"></a>Özel Metin Şablonu Konağı Oluşturma
 
 Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabilen özel bir ana bilgisayar oluşturursunuz. Uygulama, metin şablonu dosyasını bağımsız değişken olarak kabul eder, şablonu okur, şablonu dönüştürmek üzere motoru çağırır ve komut satırı penceresinde meydana gelen tüm hataları görüntüler.
 
@@ -51,9 +51,9 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
 
 2. Aşağıdaki derlemelere başvurular ekleyin:
 
-   -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**
 
 3. Program.cs veya Module1.vb dosyasındaki kodu aşağıdaki kodla değiştirin:
 
@@ -726,11 +726,11 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Özel ana bilgisayarı sınamak amacıyla metin şablonu oluşturmak için
 
-1.  Bir metin dosyası oluşturun ve adlandırın `TestTemplate.tt`.
+1. Bir metin dosyası oluşturun ve adlandırın `TestTemplate.tt`.
 
      Dosyayı oluşturmak için herhangi bir metin düzenleyicisi (ör. Notepad) kullanabilirsiniz.
 
-2.  Aşağıdakileri dosyaya ekleyin:
+2. Aşağıdakileri dosyaya ekleyin:
 
     > [!NOTE]
     > Metin şablonunun programlama dilinin, özel ana bilgisayarınkiyle eşleşmesi gerekmez.
@@ -773,13 +773,13 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
 
     ```
 
-3.  Dosyayı kaydedin ve kapatın.
+3. Dosyayı kaydedin ve kapatın.
 
 ### <a name="to-test-the-custom-host"></a>Özel ana bilgisayarı sınamak için
 
-1.  Komut İstemi penceresini açın.
+1. Komut İstemi penceresini açın.
 
-2.  Özel ana bilgisayar için yürütülebilir dosyanın yolunu yazın, ancak henüz ENTER'a basmayın.
+2. Özel ana bilgisayar için yürütülebilir dosyanın yolunu yazın, ancak henüz ENTER'a basmayın.
 
      Örneğin, şunu yazın:
 
@@ -788,9 +788,9 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
     > [!NOTE]
     > Adresi yazmak yerine CustomHost.exe dosyasına göz atabilir, **Windows Explorer** ve sonra da dosyayı komut istemi penceresine sürükleyebilirsiniz.
 
-3.  Bir boşluk yazın.
+3. Bir boşluk yazın.
 
-4.  Metin şablonu dosyasının yolunu yazın ve ENTER tuşuna basın.
+4. Metin şablonu dosyasının yolunu yazın ve ENTER tuşuna basın.
 
      Örneğin, şunu yazın:
 
@@ -801,11 +801,11 @@ Bu kılavuzda, yürütülebilir bir uygulamada, komut satırından çağrılabil
 
      Özel ana bilgisayar uygulaması çalışır ve metin şablonu dönüştürme işlemini tamamlar.
 
-5.  İçinde **Windows Explorer**, TestTemplate.tt dosyasını içeren klasöre göz atın.
+5. İçinde **Windows Explorer**, TestTemplate.tt dosyasını içeren klasöre göz atın.
 
      Bu klasör, aynı zamanda TestTemplate1.txt dosyasını da içerir.
 
-6.  Metin şablonu dönüştürme sonuçlarını görmek için bu dosyayı açın.
+6. Metin şablonu dönüştürme sonuçlarını görmek için bu dosyayı açın.
 
      Oluşturulan metin çıktısı görüntülenir ve aşağıdaki gibi görünür:
 

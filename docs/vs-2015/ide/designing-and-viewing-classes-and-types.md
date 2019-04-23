@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756865"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045050"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Sınıfları ve Türleri Tasarlama ve Görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Tasarım, görselleştirin ve sınıflar ve Sınıf Tasarımcısı'nda Visual St
   
  Sınıf diyagramları ile yapabilecekleriniz hakkında daha fazla şöyledir:  
   
--   **Tasarım**: Proje kodunuzun sınıf diyagramına düzenleyerek düzenleyin. Yeni öğeler eklemek ve istemediklerinizi silin. Yaptığınız değişiklikleri, kod içinde yansıtılır.  
+- **Tasarım**: Proje kodunuzun sınıf diyagramına düzenleyerek düzenleyin. Yeni öğeler eklemek ve istemediklerinizi silin. Yaptığınız değişiklikleri, kod içinde yansıtılır.  
   
--   **Görselleştirme**: Diyagram üzerinde projenizdeki sınıflar görüntüleyerek projenizin yapıyı anlayın. Böylece, en çok önem verdiğiniz proje ayrıntılarını odaklanabilirsiniz diyagramınızı özelleştirin. Diyagram tanıtım veya belge için daha sonra kullanmak üzere kaydedin.  
+- **Görselleştirme**: Diyagram üzerinde projenizdeki sınıflar görüntüleyerek projenizin yapıyı anlayın. Böylece, en çok önem verdiğiniz proje ayrıntılarını odaklanabilirsiniz diyagramınızı özelleştirin. Diyagram tanıtım veya belge için daha sonra kullanmak üzere kaydedin.  
   
--   **Yeniden düzenleme**: Geçersiz kılma yöntemleri, tanımlayıcıları, yeniden düzenleme parametreleri yeniden adlandırın ve arabirimleri ve soyut sınıflar uygular.  
+- **Yeniden düzenleme**: Geçersiz kılma yöntemleri, tanımlayıcıları, yeniden düzenleme parametreleri yeniden adlandırın ve arabirimleri ve soyut sınıflar uygular.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Sınıflarla ve Diğer Türlerle Çalışma (Sınıf Tasarımcısı)](../ide/working-with-classes-and-other-types-class-designer.md)  

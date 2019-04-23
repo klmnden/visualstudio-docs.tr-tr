@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038476"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Araç uzantılarının programlama modeline SharePoint genel bakış
   Visual Studio'da SharePoint araçları için bir uzantı oluşturduğunuzda, SharePoint araçları tarafından kullanıma sunulan bir veya daha fazla genişletilebilirlik arabirimlerini uygulayarak başlayın. Çoğu durumda, uzantı özellikleri uygulamak için SharePoint araçları tarafından sağlanan diğer türleri de kullanır. Bazı senaryolarda Visual Studio ve SharePoint tarafından sağlanan diğer nesne modellerini türleri de kullanabilirsiniz. Bu nesne modellerinin her biri amacı anlamak ve bunları birbiriyle SharePoint araçları için uzantıları oluşturmak için nasıl kullanılacağını bilmek gerekir.
@@ -45,14 +45,14 @@ ms.locfileid: "58325246"
 ## <a name="understand-the-object-models-that-you-use-in-sharepoint-tools-extensions"></a>SharePoint araçları uzantılarında kullandığınız nesne modellerini anlama
  SharePoint araçları için uzantıları oluştururken kullanabileceğiniz birçok nesne modeli vardır:
 
--   *SharePoint araçları nesne modeli*. Bu nesne modeli, SharePoint araç uzantıları ve diğer ilgili türleri oluşturmak için uygulamadan genişletilebilirlik arabirimleri sağlar.
+- *SharePoint araçları nesne modeli*. Bu nesne modeli, SharePoint araç uzantıları ve diğer ilgili türleri oluşturmak için uygulamadan genişletilebilirlik arabirimleri sağlar.
 
--   *Visual Studio Otomasyonu ve tümleştirme nesne modellerini*. SharePoint araçları nesne modeli kapsamı dışındaki bir Visual Studio özelliklerine erişmek için bu nesne modellerini kullanın.
+- *Visual Studio Otomasyonu ve tümleştirme nesne modellerini*. SharePoint araçları nesne modeli kapsamı dışındaki bir Visual Studio özelliklerine erişmek için bu nesne modellerini kullanın.
 
     > [!NOTE]
     >  Bazı nesneler Visual Studio Otomasyon nesneleri için SharePoint araçları nesne modeli ve tümleştirme nesne modelleri ve tersi, SharePoint Proje hizmetini kullanarak dönüştürebilirsiniz. Daha fazla bilgi için [SharePoint Proje sistem türleri ve diğer Visual Studio Proje türleri arasında dönüştürme](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
--   *SharePoint sunucu ve istemci nesne modellerini*. Bu nesne modeli, bir SharePoint sitesi değiştirmek veya SharePoint Araçlar uzantısından bağlamında bir SharePoint sitesinden veri almak için kullanın.
+- *SharePoint sunucu ve istemci nesne modellerini*. Bu nesne modeli, bir SharePoint sitesi değiştirmek veya SharePoint Araçlar uzantısından bağlamında bir SharePoint sitesinden veri almak için kullanın.
 
 ### <a name="sharepoint-tools-object-model"></a>SharePoint araçları nesne modeli
  Her SharePoint Araçlar uzantısından uzantının işlevselliği ve çekirdek davranışını tanımlamak için SharePoint araçları nesne modelinde türleri kullanır. Aşağıdaki tablolarda, bu nesne modelinde bunları içeren derleme tarafından dahil edilen ad alanlarını açıklar.

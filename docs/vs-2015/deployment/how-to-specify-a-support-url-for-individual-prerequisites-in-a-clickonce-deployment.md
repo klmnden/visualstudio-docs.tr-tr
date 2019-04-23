@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059142"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Nasıl yapılır: ClickOnce dağıtımı'nda bağımsız Önkoşullar için destek URL'sini belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Tek bir önkoşulu için destek URL'sini belirtme  
   
-1.  Uygulama bildirimini (.manifest dosyası) açın, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir metin düzenleyicisinde uygulama.  
+1. Uygulama bildirimini (.manifest dosyası) açın, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir metin düzenleyicisinde uygulama.  
   
-2.  Bir işletim sistemi önkoşulları ekleme `supportUrl` özniteliğini `dependentOS` öğesi:  
+2. Bir işletim sistemi önkoşulları ekleme `supportUrl` özniteliğini `dependentOS` öğesi:  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
       </dependency>  
     ```  
   
-3.  Belirli bir ortak dil çalışma zamanı sürümü için bir önkoşul ekleme `supportUrl` özniteliğini `dependentAssembly` ortak dil çalışma zamanı bağımlılık belirten girişi:  
+3. Belirli bir ortak dil çalışma zamanı sürümü için bir önkoşul ekleme `supportUrl` özniteliğini `dependentAssembly` ortak dil çalışma zamanı bağımlılık belirten girişi:  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
       </dependency>  
     ```  
   
-4.  Genel derleme önbelleğinde önceden bir derleme için önkoşulları ayarlamak `supportUrl` için `dependentAssembly` gerekli derleme belirten öğe:  
+4. Genel derleme önbelleğinde önceden bir derleme için önkoşulları ayarlamak `supportUrl` için `dependentAssembly` gerekli derleme belirten öğe:  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
       </dependency>  
     ```  
   
-5.  İsteğe bağlı. Açık için .NET Framework 4'ü hedefleyen uygulamalar için dağıtım bildirimi (.application dosya), [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir metin düzenleyicisinde uygulama.  
+5. İsteğe bağlı. Açık için .NET Framework 4'ü hedefleyen uygulamalar için dağıtım bildirimi (.application dosya), [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bir metin düzenleyicisinde uygulama.  
   
-6.  Bir .NET Framework 4 önkoşulları ekleme `supportUrl` özniteliğini `compatibleFrameworks` öğesi:  
+6. Bir .NET Framework 4 önkoşulları ekleme `supportUrl` özniteliğini `compatibleFrameworks` öğesi:  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım için istemc
     </compatibleFrameworks>  
     ```  
   
-7.  El ile uygulama bildirimini değiştirmiş sonra gerekir, dijital sertifikayı kullanarak uygulama bildirimini yeniden imzalamanız sonra güncelleştirme ve de dağıtım bildirimini yeniden imzalamanız. Mage.exe kullanmalısınız veya MageUI.exe SDK araçlarını kullanarak bu dosyaları yeniden olarak bağlı olarak, bu görevi gerçekleştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el ile yaptığınız değişiklikleri siler. Bildirimleri yeniden imzalamak için Mage.exe kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. El ile uygulama bildirimini değiştirmiş sonra gerekir, dijital sertifikayı kullanarak uygulama bildirimini yeniden imzalamanız sonra güncelleştirme ve de dağıtım bildirimini yeniden imzalamanız. Mage.exe kullanmalısınız veya MageUI.exe SDK araçlarını kullanarak bu dosyaları yeniden olarak bağlı olarak, bu görevi gerçekleştirmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el ile yaptığınız değişiklikleri siler. Bildirimleri yeniden imzalamak için Mage.exe kullanma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>.NET Framework Güvenliği  
  Uygulama kısmi güvende çalıştırmak için işaretlendiyse, destek URL'sini iletişim kutusunda görüntülenmez.  

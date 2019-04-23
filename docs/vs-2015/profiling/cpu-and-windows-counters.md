@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046259"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU ve Windows Sayaçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio Profiler, işletim sistemi tarafından (Windows sayaçları) oluş
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özellikleri Visual Studio profil oluşturucu bu platformlarda veri toplayan bir şekilde önemli değişiklikler gerekmiştir. Windows Store apps ayrıca yeni toplama teknikleri gerektirir. Bkz: [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -104,13 +104,13 @@ Visual Studio Profiler, işletim sistemi tarafından (Windows sayaçları) oluş
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Geçerli platformda desteklenen penceresi sayaçları listesini bir listesini görüntülemek için  
   
-1.  Performans Gezgini performans oturumu sağ tıklayın ve ardından **özellikleri**.  
+1. Performans Gezgini performans oturumu sağ tıklayın ve ardından **özellikleri**.  
   
-2.  Tıklayın **Windows sayaçları**.  
+2. Tıklayın **Windows sayaçları**.  
   
-3.  Seçin **Windows sayaçları toplamak**.  
+3. Seçin **Windows sayaçları toplamak**.  
   
-4.  Gelen **sayaç kategorisi** listesinde, bir sayaç grubunu seçin. Liste kutusunda grup için Windows sayaç görüntülenir.  
+4. Gelen **sayaç kategorisi** listesinde, bir sayaç grubunu seçin. Liste kutusunda grup için Windows sayaç görüntülenir.  
   
      **Not:** Tıklayın **iptal** önceki sayaç koleksiyonu yapılandırmaya dönmek için.  
   
@@ -119,9 +119,9 @@ Visual Studio Profiler, işletim sistemi tarafından (Windows sayaçları) oluş
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Geçerli platformda desteklenen CPU sayaçları bir listesi için  
   
-1.  Bir komut istemi penceresi açın.  
+1. Bir komut istemi penceresi açın.  
   
-2.  Tür  
+2. Tür  
   
      **\<Visual Studio performans araçları dizinine > \VSPerfCmd/querycounters**  
   

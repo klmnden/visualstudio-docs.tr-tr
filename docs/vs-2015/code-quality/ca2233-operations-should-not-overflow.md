@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054800"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: İşleçler taşmamalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,11 +107,11 @@ End Sub
 
  **İşaretli aritmetik taşma ve alttaşmayı C# ' ta açılıp açılmayacağı**
 
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.
 
-2.  Seçin **derleme** sekmesine **Gelişmiş**.
+2. Seçin **derleme** sekmesine **Gelişmiş**.
 
-3.  Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.
+3. Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  <xref:System.OverflowException?displayProperty=fullName> [C# işleçleri](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked ve Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

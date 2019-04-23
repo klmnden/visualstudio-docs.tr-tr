@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5b4b3c73dede1a25f9c104ff85534623691002e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041295"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Visual Studio Modelbus'ı Kullanarak Modelleri Tümleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ ms.locfileid: "57873783"
 
  Ek bilgi ve örnek kod için bkz:
 
--   [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Visual Studio için modelleme SDK'sı](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Visual Studio için modelleme SDK'sı](https://www.microsoft.com/download/details.aspx?id=48148)
 
-##  <a name="provide"></a> Bir DSL için erişim sağlama
+## <a name="provide"></a> Bir DSL için erişim sağlama
  Bir model veya öğelerini ModelBus başvuruları oluşturabilmek için DSL ModelBusAdapter tanımlamanız gerekir. Bunu yapmanın en kolay yolu kullanmaktır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL Tasarımcısı için komutları ekler Model veri yolu uzantısı.
 
-###  <a name="expose"></a> Model veri yolu için bir DSL tanımını ortaya çıkarmak için
+### <a name="expose"></a> Model veri yolu için bir DSL tanımını ortaya çıkarmak için
 
 1. İndirin ve zaten yüklemiş olduğunuz sürece, Visual Studio Model veri yolu uzantıyı yükleyin. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı](http://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -80,32 +80,32 @@ ms.locfileid: "57873783"
 
    Alternatif olarak, öğe adları yerine GUID öğeleri tanımlamak için kullanmak istiyorsanız, oluşturulan bağdaştırıcıların bölümlerini geçersiz kılabilirsiniz. Bağdaştırıcı sınıfı aşağıdaki yöntemleri geçersiz kıl:
 
--   Geçersiz kılma `GetElementId` kullanmak istediğiniz kimlik döndürmek için. Bu yöntem, başvuruları oluştururken çağrılır.
+- Geçersiz kılma `GetElementId` kullanmak istediğiniz kimlik döndürmek için. Bu yöntem, başvuruları oluştururken çağrılır.
 
--   Geçersiz kılma `ResolveElementReference` Model veri yolu başvurudan doğru öğesi bulunamıyor.
+- Geçersiz kılma `ResolveElementReference` Model veri yolu başvurudan doğru öğesi bulunamıyor.
 
-##  <a name="editRef"></a> Bir DSL başka bir DSL erişme
+## <a name="editRef"></a> Bir DSL başka bir DSL erişme
  Bir etki alanı özelliği DSL model veri yolu başvuruları depolayabilirsiniz ve bunları kullanan özel kod yazabilirsiniz. Ayrıca kullanıcının bir model dosyası ve bir öğesiyle seçerek bir modeli bus başvurusu oluşturmasını sağlayabilirsiniz.
 
  Başka bir DSL başvurular kullanmak bir DSL etkinleştirmek için öncelikle bunu olmalısınız bir *tüketici* model veri yolu başvuruları.
 
 #### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>Bir DSL oluşturulan bir DSL başvurular kullanmak üzere etkinleştirmek için
 
-1.  DSL tanım diyagramı, diyagram ana bölümü sağ tıklayın ve ardından **etkinleştirme Modelbus**.
+1. DSL tanım diyagramı, diyagram ana bölümü sağ tıklayın ve ardından **etkinleştirme Modelbus**.
 
-2.  İletişim kutusunda **modeli yol başvuruları kullanmak bu modeli etkinleştirmek istiyorum**.
+2. İletişim kutusunda **modeli yol başvuruları kullanmak bu modeli etkinleştirmek istiyorum**.
 
-3.  Alıcı DSL Dsl projesinde aşağıdaki derlemeler projenin başvurular ekleyin. Bu derlemeleri (.dll dosyaları) içinde ModelBusAdapter\bin bulabilirsiniz\\* sunulan DSL dizin.
+3. Alıcı DSL Dsl projesinde aşağıdaki derlemeler projenin başvurular ekleyin. Bu derlemeleri (.dll dosyaları) içinde ModelBusAdapter\bin bulabilirsiniz\\* sunulan DSL dizin.
 
-    -   Örneğin sunulan DSL derleme **Fabrikam.FamilyTree.Dsl.dll**
+    - Örneğin sunulan DSL derleme **Fabrikam.FamilyTree.Dsl.dll**
 
-    -   İfşa edilen modeli bağdaştırıcısı derlemesini, örneğin veri yolu **Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - İfşa edilen modeli bağdaştırıcısı derlemesini, örneğin veri yolu **Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
-4.  Aşağıdaki .NET derlemelerini alıcı DSL proje proje başvurular ekleyin.
+4. Aşağıdaki .NET derlemelerini alıcı DSL proje proje başvurular ekleyin.
 
-    1.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 #### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>Bir etki alanı özelliği bir Model veri yolu başvuru depolamak için
 
@@ -119,39 +119,39 @@ ms.locfileid: "57873783"
 
 #### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>Model veri yolu başvuru bir etki alanı özelliği ayarlamak izin vermek için
 
-1.  Etki alanı özelliği sağ tıklayın ve ardından **Düzenle ModelBusReference belirli özellikleri**. Bir iletişim kutusu açılır. Bu *Model veri yolu Seçici*.
+1. Etki alanı özelliği sağ tıklayın ve ardından **Düzenle ModelBusReference belirli özellikleri**. Bir iletişim kutusu açılır. Bu *Model veri yolu Seçici*.
 
-2.  Uygun seçin **tür ModelBusReference**: bir Modeli'ne veya bir model içinde bir öğe.
+2. Uygun seçin **tür ModelBusReference**: bir Modeli'ne veya bir model içinde bir öğe.
 
-3.  Dosya iletişim filtre dizesi içinde bir dize gibi girin `Family Tree files |*.ftree`. DEVICEHIGH sunulan DSL'nizi dosya uzantısı.
+3. Dosya iletişim filtre dizesi içinde bir dize gibi girin `Family Tree files |*.ftree`. DEVICEHIGH sunulan DSL'nizi dosya uzantısı.
 
-4.  Bir modeldeki bir öğeye başvuru seçerseniz, kullanıcı seçebilirsiniz, örneğin Company.FamilyTree.Person türlerinin bir listesini ekleyebilirsiniz.
+4. Bir modeldeki bir öğeye başvuru seçerseniz, kullanıcı seçebilirsiniz, örneğin Company.FamilyTree.Person türlerinin bir listesini ekleyebilirsiniz.
 
-5.  Tıklayın **Tamam**ve ardından **tüm Şablonları Dönüştür** Çözüm Gezgini araç.
+5. Tıklayın **Tamam**ve ardından **tüm Şablonları Dönüştür** Çözüm Gezgini araç.
 
     > [!WARNING]
     >  Geçerli model veya varlık seçmediyseniz, Tamam düğmesine etkin görünebilir olsa bile hiçbir etkisi gerekir.
 
-6.  Company.FamilyTree.Person gibi hedef türlerinin bir listesi belirtilmişse, ardından bir bütünleştirilmiş kod başvurusu DSL projenize DLL hedef DSL, örneğin Company.FamilyTree.Dsl.dll başvuru eklemeniz gerekir
+6. Company.FamilyTree.Person gibi hedef türlerinin bir listesi belirtilmişse, ardından bir bütünleştirilmiş kod başvurusu DSL projenize DLL hedef DSL, örneğin Company.FamilyTree.Dsl.dll başvuru eklemeniz gerekir
 
 #### <a name="to-test-a-model-bus-reference"></a>Model veri yolu başvuru test etmek için
 
-1.  Kullanıma sunulan ve alıcı DSL'ler oluşturun.
+1. Kullanıma sunulan ve alıcı DSL'ler oluşturun.
 
-2.  Bir DSL, Deneysel modda F5 veya CTRL + F5 tuşlarına basarak çalıştırın.
+2. Bir DSL, Deneysel modda F5 veya CTRL + F5 tuşlarına basarak çalıştırın.
 
-3.  Deneysel örneğinde hata ayıklama projede [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], her DSL örneklerini dosyaları ekleyin.
+3. Deneysel örneğinde hata ayıklama projede [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], her DSL örneklerini dosyaları ekleyin.
 
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus yalnızca aynı öğeleri modellere başvurular çözmek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] çözüm. Örneğin, dosya sisteminizi başka bir kısmında bir model dosyasına bir başvuru oluşturulamıyor.
 
-4.  Bazı öğeleri ve bağlantılarına sunulan DSL örneğini oluşturun ve kaydedin.
+4. Bazı öğeleri ve bağlantılarına sunulan DSL örneğini oluşturun ve kaydedin.
 
-5.  Alıcı DSL örneği açın ve model veri yolu başvuru özelliğine sahip bir model öğesini seçin.
+5. Alıcı DSL örneği açın ve model veri yolu başvuru özelliğine sahip bir model öğesini seçin.
 
-6.  Özellikler penceresinde model veri yolu başvuru özelliği çift tıklayın. Seçici iletişim kutusunu açar.
+6. Özellikler penceresinde model veri yolu başvuru özelliği çift tıklayın. Seçici iletişim kutusunu açar.
 
-7.  Tıklayın **Gözat** ve sunulan DSL örneğini seçin.
+7. Tıklayın **Gözat** ve sunulan DSL örneğini seçin.
 
      Model veri yolu başvurusu özel öğe türü belirtilirse Seçici Ayrıca, modeldeki bir öğe seçin olanak tanır.
 
@@ -382,9 +382,9 @@ ModelBusReference elementReferenceRestored =
 
  MBR iki aşamada seri durumda:
 
--   `ModelBusReferencePropertySerializer` MBR üstbilgiyle ilgilenen standart seri hale getirici ' dir. Standart DSL kullanan `SerializationContext` depolanan özellik paketi `ReferenceContext` anahtar kullanılarak `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Özellikle, `SerializationContext` örneğini içermelidir `ModelBus`.
+- `ModelBusReferencePropertySerializer` MBR üstbilgiyle ilgilenen standart seri hale getirici ' dir. Standart DSL kullanan `SerializationContext` depolanan özellik paketi `ReferenceContext` anahtar kullanılarak `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Özellikle, `SerializationContext` örneğini içermelidir `ModelBus`.
 
--   ModelBus bağdaştırıcınızı MBR bağdaştırıcısı özel bölümü ile ilgilidir. Bunu yapmak için MBR ' ReferenceContext içinde depolanan ek bilgileri kullanabilirsiniz. Kök dosya yolları anahtarlar kullanılarak basit dosya tabanlı bağdaştırıcısı tutar `FilePathLoadContextKey` ve `FilePathSaveContextKey`.
+- ModelBus bağdaştırıcınızı MBR bağdaştırıcısı özel bölümü ile ilgilidir. Bunu yapmak için MBR ' ReferenceContext içinde depolanan ek bilgileri kullanabilirsiniz. Kök dosya yolları anahtarlar kullanılarak basit dosya tabanlı bağdaştırıcısı tutar `FilePathLoadContextKey` ve `FilePathSaveContextKey`.
 
      Yalnızca kullanıldığında bir bağdaştırıcı başvuru bir model dosyası seri durumdan.
 

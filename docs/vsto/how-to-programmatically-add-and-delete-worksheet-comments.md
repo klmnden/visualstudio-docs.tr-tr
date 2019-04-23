@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a9d174773493546a4d9cd8d7889c39945afafe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d7251efb4c7917b67b7b6e7642c78c1cd1041997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049250"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Nasıl yapılır: Programlı olarak ekleyin ve çalışma yorumları Sil
   Programlı olarak ekleyebilir ve Microsoft Office Excel çalışma sayfalarında yorumları Sil. Açıklamalar, birden çok hücre aralıklarının için tek hücrelere yalnızca eklenebilir.
@@ -31,14 +31,14 @@ ms.locfileid: "56636768"
 
 ### <a name="to-add-a-new-comment-to-a-named-range"></a>Adlandırılmış bir aralık için yeni bir açıklama eklemek için
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.NamedRange> denetlemek ve açıklama metni girin. Bu kod yerleştirilmelidir `Sheet1` sınıfı.
+1. Çağrı <xref:Microsoft.Office.Tools.Excel.NamedRange.AddComment%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.NamedRange> denetlemek ve açıklama metni girin. Bu kod yerleştirilmelidir `Sheet1` sınıfı.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#30)]
      [!code-vb[Trin_VstcoreExcelAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#30)]
 
 #### <a name="to-delete-a-comment-from-a-named-range"></a>Adlandırılmış bir aralıktan bir açıklamayı silmek için
 
-1.  Bir yorum aralıkta var olduğunu doğrulayın ve silin. Bu kod yerleştirilmelidir `Sheet1` sınıfı.
+1. Bir yorum aralıkta var olduğunu doğrulayın ve silin. Bu kod yerleştirilmelidir `Sheet1` sınıfı.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#29)]
@@ -48,14 +48,14 @@ ms.locfileid: "56636768"
 
 ### <a name="to-add-a-new-comment-to-an-excel-range"></a>Bir Excel aralığı için yeni bir açıklama eklemek için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> yöntemi <xref:Microsoft.Office.Interop.Excel.Range> ve açıklama metni girin.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel.Range.AddComment%2A> yöntemi <xref:Microsoft.Office.Interop.Excel.Range> ve açıklama metni girin.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#20)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#20](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#20)]
 
 ### <a name="to-delete-a-comment-from-an-excel-range"></a>Bir Excel aralığında bir açıklamayı silmek için
 
-1.  Bir yorum aralıkta var olduğunu doğrulayın ve silin.
+1. Bir yorum aralıkta var olduğunu doğrulayın ve silin.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]

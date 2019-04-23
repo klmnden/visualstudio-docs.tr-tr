@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046610"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Visual Studio Projelerine Taşıma, Geçiş ve Yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 
  Kullanırsanız [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ile birlikte [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1 oluşturabilir ve projeleri ve dosyaları sürümlerinden herhangi birini değiştirin. Sürümlerden birinin desteklemediği özellikler eklemediğiniz sürece sürümler arasında proje ve dosya aktarımı yapabilirsiniz.
 
-##  <a name="project"></a> Projeleri
+## <a name="project"></a> Projeleri
  Aşağıdaki listede desteği açıklanmaktadır [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] ve [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] kullanılarak oluşturulmuş projeler için [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1. İçinde "olduğu gibi" bir projeyi açabilir olup olmadığını belirlemenize yardımcı olması için bu listeyi kullanın [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], veya Visual Studio 2010 SP1 veya uyumluluğu sağlamak için değiştirmeniz gerekip gerekmediğini belirtir.
 
 |Proje Türü|Uyumluluk|
@@ -101,7 +101,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 
   Ek sorun giderme bilgileri için bkz. [Visual Studio 2013 uyumluluğu](http://support.microsoft.com/kb/2863286) KB makalesi.
 
-##  <a name="file"></a> Dosyaları
+## <a name="file"></a> Dosyaları
  Aşağıdaki listede tanımlar olup olmadığını [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] her bir dosya türünü destekleyip dosyasında açabileceğiniz desteklemediğini [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ve Visual Studio 2010 SP1 ve uyumluluğu sağlamak için değiştirmeniz gerekip gerekmediğini belirtir.
 
 |Dosya Türü|Uyumluluk|
@@ -121,7 +121,7 @@ Bu belgede hangi çözümler bulmak için kullanabileceğiniz Visual Studio'nun 
 |Öğesinden IntelliTrace günlük dosyaları [!INCLUDE[vs2010](../includes/vs2010-md.md)]|İçinde bu dosyaları açabilirsiniz [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]ve Visual Studio 2010 SP1.|
 |JavaScript Bellek Çözümleyicisi (.diagsession) dosyaları|Visual Studio'nun eski sürümleriyle oluşturulan dosyalar görüntülenebilir [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Ancak toplanan bilgilere bağlı olarak, oluşturulan dosyalar [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] içinde açılmayabilir [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] veya Visual Studio 2010 SP1.|
 
-##  <a name="integration"></a> Tümleştirme varlıkları
+## <a name="integration"></a> Tümleştirme varlıkları
  Visual Studio Team Foundation Server ürününün farklı sürümlerine ait istemciler ve sunucular kullanırsanız uyumluluk sorunlarıyla karşılaşabilirsiniz.
 
 |Tümleştirme Türü|Uyumluluk|

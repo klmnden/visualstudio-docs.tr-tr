@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045037"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile birlikte, DSL tanımı dosyası tarafından tanımlanır. DSL çözüm program kodunda çoğu bu dosyadan oluşturulur.
@@ -61,13 +61,13 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
 
  DSL tanım diyagramı yeniden düzenlemek için şunları yapabilirsiniz:
 
--   Ana takas ve görünümleri başvuru kullanarak **ağacı buraya getirin** ve **ağacı Böl** komutları. Bir tek etki alanı sınıfı, bu komutları görmek için sağ tıklayın.
+- Ana takas ve görünümleri başvuru kullanarak **ağacı buraya getirin** ve **ağacı Böl** komutları. Bir tek etki alanı sınıfı, bu komutları görmek için sağ tıklayın.
 
--   Etki alanı sınıfları ve şekil sınıfları Ctrl + Yukarı Ok ve Ctrl + aşağı ok tuşlarına basarak yeniden sıralayabilir.
+- Etki alanı sınıfları ve şekil sınıfları Ctrl + Yukarı Ok ve Ctrl + aşağı ok tuşlarına basarak yeniden sıralayabilir.
 
--   Daraltabilir veya her bir şeklin üst-sağ taraftaki simgesini kullanarak sınıfları genişletin.
+- Daraltabilir veya her bir şeklin üst-sağ taraftaki simgesini kullanarak sınıfları genişletin.
 
--   Bir alan sınıfının altındaki eksi işareti (-) tıklayarak ağacı bölümlerini daraltın.
+- Bir alan sınıfının altındaki eksi işareti (-) tıklayarak ağacı bölümlerini daraltın.
 
 ## <a name="inheritance"></a>Devralma
  Etki alanı sınıflar, devralma kullanılarak tanımlanabilir. Devralma türetme oluşturmak için devralma Aracı'nı tıklatın ve türetilen sınıfın temel sınıf'ye tıklayın. Bir model öğesini kendi etki alanı sınıfı, temel sınıftan devralınan tüm özelliklerle birlikte tanımlanan tüm özelliklerine sahiptir. Ayrıca, kendi ilişkileri rollerinde devralır.

@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054098"
 ---
 # <a name="extending-the-isolated-shell"></a>Yalıtılmış Kabuğu genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ Visual Studio yalıtılmış kabuğu, yalıtılmış Kabuk uygulaması için bir
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio Paket projesi şablonu için konumları  
  Visual Studio Paket proje şablonu, üç farklı konumlarda bulunabilir **yeni proje** iletişim:  
   
-1.  Altında **Visual Basic**, **genişletilebilirlik**. Visual Basic proje varsayılan dildir.  
+1. Altında **Visual Basic**, **genişletilebilirlik**. Visual Basic proje varsayılan dildir.  
   
-2.  Altında **Visual C#**, **genişletilebilirlik**. Varsayılan proje C# dilidir.  
+2. Altında **Visual C#**, **genişletilebilirlik**. Varsayılan proje C# dilidir.  
   
-3.  Altında **diğer proje türleri**, **genişletilebilirlik**. C++ projesinin varsayılan dildir.  
+3. Altında **diğer proje türleri**, **genişletilebilirlik**. C++ projesinin varsayılan dildir.  
   
 ## <a name="adding-a-vspackage"></a>VSPackage ekleme  
  VSPackage yalıtılmış kabuk uygulamanıza ekleyebilirsiniz. Aşağıdaki adımlar, menü komutlarını ekleyen oluşturma işlemi gösterilmektedir.  
   
 #### <a name="to-add-a-new-vspackage"></a>Yeni bir VSPackage'ı eklemek için  
   
-1.  Adlı bir Visual Studio Paket projesi Ekle `MenuCommandsPackage`.  
+1. Adlı bir Visual Studio Paket projesi Ekle `MenuCommandsPackage`.  
   
-2.  Üzerinde **Temel VSPackage Bilgileri** sihirbazının ayarlamak **şirket adı** için `Fabrikam` ve **VSPackage'ı adı** için `FabrikamMenuCommands`. Seçin **sonraki** düğmesi.  
+2. Üzerinde **Temel VSPackage Bilgileri** sihirbazının ayarlamak **şirket adı** için `Fabrikam` ve **VSPackage'ı adı** için `FabrikamMenuCommands`. Seçin **sonraki** düğmesi.  
   
-3.  Sonraki sayfada seçin **menü komutu** seçip **sonraki**.  
+3. Sonraki sayfada seçin **menü komutu** seçip **sonraki**.  
   
-4.  Sonraki sayfada ayarlamak **komut adı** için `Fabrikam Command` ve **komut kimliği** için `cmdidFabrikamCommand`ve ardından **sonraki**.  
+4. Sonraki sayfada ayarlamak **komut adı** için `Fabrikam Command` ve **komut kimliği** için `cmdidFabrikamCommand`ve ardından **sonraki**.  
   
-5.  Üzerinde **proje seçenekleri Test** sayfasında, test seçenekleri temizleyin ve ardından **son** düğmesi.  
+5. Üzerinde **proje seçenekleri Test** sayfasında, test seçenekleri temizleyin ve ardından **son** düğmesi.  
   
-6.  ShellExtensionsVSIX projesinde olan source.extension.vsixmanifest dosyasını açın.  
+6. ShellExtensionsVSIX projesinde olan source.extension.vsixmanifest dosyasını açın.  
   
      **Varlıklar** bölümü VSShellStub.AboutBoxPackage proje için bir girdi içermelidir.  
   
-7.  Seçin **yeni** düğmesi.  
+7. Seçin **yeni** düğmesi.  
   
-8.  İçinde **yeni varlık Ekle** penceresi içinde **türü** listesinden **Microsoft.VisualStudio.VsPackage**.  
+8. İçinde **yeni varlık Ekle** penceresi içinde **türü** listesinden **Microsoft.VisualStudio.VsPackage**.  
   
 9. İçinde **kaynak** emin olun, liste **mevcut çözümde bir proje** seçilir. İçinde **proje** liste kutusu, select **MenuCommandsPackage**.  
   
@@ -74,21 +74,21 @@ Visual Studio yalıtılmış kabuğu, yalıtılmış Kabuk uygulaması için bir
   
 #### <a name="to-add-a-mef-component"></a>MEF bileşeni eklemek için  
   
-1.  İçinde **Yeni Proje Ekle** iletişim kutusunun **Visual C#**, **genişletilebilirlik**, kullanın **Düzenleyici kenar** şablonunu bir projeye ekleyin. Adlandırın `ShellEditorMargin`.  
+1. İçinde **Yeni Proje Ekle** iletişim kutusunun **Visual C#**, **genişletilebilirlik**, kullanın **Düzenleyici kenar** şablonunu bir projeye ekleyin. Adlandırın `ShellEditorMargin`.  
   
-2.  ShellExtensionsVSIX projesinde tasarım görünümünde, kod görünümü olan Source.extension.vsixmanifest dosyasını açın.  
+2. ShellExtensionsVSIX projesinde tasarım görünümünde, kod görünümü olan Source.extension.vsixmanifest dosyasını açın.  
   
-3.  İçinde `Asset` bölümünde, seçin **İçerik Ekle**.  
+3. İçinde `Asset` bölümünde, seçin **İçerik Ekle**.  
   
-4.  İçinde **yeni varlık Ekle** penceresi içinde **türü** listesinden **Microsoft.VisualStudio.MefComponent**.  
+4. İçinde **yeni varlık Ekle** penceresi içinde **türü** listesinden **Microsoft.VisualStudio.MefComponent**.  
   
-5.  İçinde **kaynak** emin olun, liste **mevcut çözümde bir proje** seçilir. İçinde **proje** liste kutusu, select **ShellEditorMargin**.  
+5. İçinde **kaynak** emin olun, liste **mevcut çözümde bir proje** seçilir. İçinde **proje** liste kutusu, select **ShellEditorMargin**.  
   
-6.  Dosyayı kaydedin ve kapatın.  
+6. Dosyayı kaydedin ve kapatın.  
   
-7.  Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın.  
+7. Çözümü yeniden oluşturun ve yalıtılmış Kabuk hata ayıklamaya başlayın.  
   
-8.  Bir metin dosyası açın.  
+8. Bir metin dosyası açın.  
   
      "Hello world!" sözcüklerini içeren bir yeşil bir kenar boşluğu metin dosyası penceresinin en altında görüntülenmesi gerekir.  
   
@@ -98,27 +98,27 @@ Visual Studio yalıtılmış kabuğu, yalıtılmış Kabuk uygulaması için bir
   
 #### <a name="to-add-a-generic-vsix-project"></a>Genel bir VSIX projesi eklemek için  
   
-1.  İçinde **Yeni Proje Ekle** iletişim kutusunun **Visual C#**, **genişletilebilirlik**, kullanın **VSIXProject** şablonunu bir projeye ekleyin. Adlandırın `EmptyVSIX`.  
+1. İçinde **Yeni Proje Ekle** iletişim kutusunun **Visual C#**, **genişletilebilirlik**, kullanın **VSIXProject** şablonunu bir projeye ekleyin. Adlandırın `EmptyVSIX`.  
   
-2.  ShellExtensionsVSIX projesinde tasarım görünümünde, kod görünümü Source.extensions.vsixmanifest dosyayı açın.  
+2. ShellExtensionsVSIX projesinde tasarım görünümünde, kod görünümü Source.extensions.vsixmanifest dosyayı açın.  
   
-3.  İçinde `Assets` bölümünde, seçin **yeni**.  
+3. İçinde `Assets` bölümünde, seçin **yeni**.  
   
-4.  İçinde **yeni varlık Ekle** penceresi içinde **türü** listesinde, eklemek istediğiniz içerik türü seçin.  
+4. İçinde **yeni varlık Ekle** penceresi içinde **türü** listesinde, eklemek istediğiniz içerik türü seçin.  
   
-5.  İçinde **kaynak**, emin **mevcut çözümde bir proje** seçeneği belirlenir. Liste kutusunda, VSIX projesinin adını seçin.  
+5. İçinde **kaynak**, emin **mevcut çözümde bir proje** seçeneği belirlenir. Liste kutusunda, VSIX projesinin adını seçin.  
   
-6.  Dosyayı kaydedin ve kapatın.  
+6. Dosyayı kaydedin ve kapatın.  
   
-7.  Bu proje derlenmiş kodu içeriyorsa, projeyi derleme çıktısında dahildir böylece düzenlemeniz gerekir.  
+7. Bu proje derlenmiş kodu içeriyorsa, projeyi derleme çıktısında dahildir böylece düzenlemeniz gerekir.  
   
-    1.  VSIX projeyi kaldırmak ve proje dosyasını açın.  
+    1. VSIX projeyi kaldırmak ve proje dosyasını açın.  
   
-    2.  İlk `<PropertyGroup>` değerini değiştirebilir, block `<CopyBuildOutputToOutputDirectory>` için `true`.  
+    2. İlk `<PropertyGroup>` değerini değiştirebilir, block `<CopyBuildOutputToOutputDirectory>` için `true`.  
   
-    3.  Kaydedin ve projeyi yeniden yükleyin.  
+    3. Kaydedin ve projeyi yeniden yükleyin.  
   
-8.  Derleme ve çözümü çalıştırın.  
+8. Derleme ve çözümü çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Bir temel yalıtılmış Kabuk uygulaması oluşturma](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

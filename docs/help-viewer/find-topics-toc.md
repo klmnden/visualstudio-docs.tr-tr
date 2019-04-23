@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062080"
 ---
 # Nasıl yapılır: İçindekilerde konuları bulun
 
@@ -33,9 +33,9 @@ ms.locfileid: "55942108"
 
 Görünen konuların kapsamını daraltmak üzere TOC için filtre uygulayabilirsiniz **içeriği** sekmesi. Başlıkları, yalnızca belirttiğiniz terimin kök içeriyorsa listede görünür. Örneğin, "filtre olarak sorun giderme" belirtirseniz, yalnızca "sorun giderme" içeren başlıklar veya "sorun giderme" görünür. Başlıkları terim içermeyen düğümler üç nokta ile tek bir düğüm için daraltılmış (**...** ).
 
-1.  Seçin **içeriği** sekmesi.
+1. Seçin **içeriği** sekmesi.
 
-2.  İçinde **filtre içeriğini** metin kutusunda, bir terimi girin.
+2. İçinde **filtre içeriğini** metin kutusunda, bir terimi girin.
 
 > [!NOTE]
 > Filtre çalıştırmak için bir uzun sürerse, sonuçları daha hızlı bir şekilde kullanarak görüntüleyebilir `title:` Gelişmiş arama işleci.
@@ -44,9 +44,9 @@ Görünen konuların kapsamını daraltmak üzere TOC için filtre uygulayabilir
 
 Dizin veya tam metin arama özelliklerini kullanarak bir konu açtıysanız, TOC'yi konu penceresiyle eşitleyerek bu konunun TOC'de nerede olduğunu belirleyebilirsiniz.
 
-1.  Bir konu görüntüleyin.
+1. Bir konu görüntüleyin.
 
-2.  Tıklayın **içindekilerde konuyu Göster** basın veya araç çubuğu düğmesini **Ctrl**+**S**.
+2. Tıklayın **içindekilerde konuyu Göster** basın veya araç çubuğu düğmesini **Ctrl**+**S**.
 
      **İçeriği** sekmesi açılır ve TOC içinde konunun yerini görüntüler.
 

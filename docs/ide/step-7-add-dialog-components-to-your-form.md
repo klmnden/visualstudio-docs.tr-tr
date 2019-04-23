@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e93bd1c254f16b8034a267be90a90573b7ac86e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047806"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>7. Adım: Formunuza iletişim kutusu bileşenleri ekleme
 Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan rengini seçin etkinleştirmek için bir <xref:System.Windows.Forms.OpenFileDialog> bileşeni ve bir <xref:System.Windows.Forms.ColorDialog> formunuza bileşen.
@@ -24,25 +24,25 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Formunuza iletişim kutusu bileşenleri eklemek için
 
-1.  Seçin **Windows Form Tasarımcısı** (**Form1.cs [Design]** veya **Form1.vb [Design]**) ve ardından açın **iletişim kutuları** grubu **Araç kutusu**.
+1. Seçin **Windows Form Tasarımcısı** (**Form1.cs [Design]** veya **Form1.vb [Design]**) ve ardından açın **iletişim kutuları** grubu **Araç kutusu**.
 
     > [!NOTE]
     >  **İletişim kutuları** grubu **araç kutusu** açma ve dosyaları kaydetmek, klasörlere göz atma ve yazı tiplerini ve renkleri seçmek için kullanılabilecek pek çok yararlı iletişim kutuları, açılan bileşenden oluşur. Bu projede iki iletişim kutusu bileşeni kullanırsınız: OpenFileDialog ve ColorDialog.
 
-2.  Adlı bir bileşen eklemek için **openFileDialog1** formunuza, çift **OpenFileDialog**. Adlı bir bileşen eklemek için **colorDialog1** formunuza, çift **ColorDialog** içinde **araç kutusu**. (Bir sonraki Eğitmen adımında kullanın.) Sayfanın alt kısmında bir alan görmelisiniz **Windows Form Tasarımcısı** (altındaki **resim görüntüleyici** form) sahip bir simge her biri, eklediğiniz iki iletişim kutusu bileşenleri için aşağıdaki resimde gösterildiği gibi.
+2. Adlı bir bileşen eklemek için **openFileDialog1** formunuza, çift **OpenFileDialog**. Adlı bir bileşen eklemek için **colorDialog1** formunuza, çift **ColorDialog** içinde **araç kutusu**. (Bir sonraki Eğitmen adımında kullanın.) Sayfanın alt kısmında bir alan görmelisiniz **Windows Form Tasarımcısı** (altındaki **resim görüntüleyici** form) sahip bir simge her biri, eklediğiniz iki iletişim kutusu bileşenleri için aşağıdaki resimde gösterildiği gibi.
 
      ![İletişim kutusu bileşenleri](../ide/media/express_dialogsadded.png)
 **iletişim** bileşenleri
 
-3.  Seçin **openFileDialog1** kısmındaki alanındaki simgenin **Windows Form Tasarımcısı**. İki özellikleri ayarlayın:
+3. Seçin **openFileDialog1** kısmındaki alanındaki simgenin **Windows Form Tasarımcısı**. İki özellikleri ayarlayın:
 
-    -   Ayarlama **filtre** özelliğini aşağıdaki (kopyalayın ve yapıştırın):
+    - Ayarlama **filtre** özelliğini aşağıdaki (kopyalayın ve yapıştırın):
 
         ```
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    -   Ayarlama **başlık** özelliğini aşağıdaki: **Bir resim dosyası seçin**
+    - Ayarlama **başlık** özelliğini aşağıdaki: **Bir resim dosyası seçin**
 
          **Filtre** özellik ayarları görüntülenecek dosya türlerinin çeşitlerini belirtir **Resim Seç** dosya iletişim kutusu.
 
@@ -51,6 +51,6 @@ Programınızın resim dosyalarınızı açmasını ve bu adımda, bir arka plan
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Sonraki öğretici adımına gitmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
--   Önceki öğretici adımına dönmek için bkz: [adım 6: Düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 6: Düğme denetimlerinizi adlandırma](../ide/step-6-name-your-button-controls.md).

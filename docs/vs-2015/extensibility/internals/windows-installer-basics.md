@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054386"
 ---
 # <a name="windows-installer-basics"></a>Temel Windows Installer Bilgileri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Windows Installer yükler ve uygulamalar veya yazılım ürünlerinin bir kullan
   
 #### <a name="installer-enforced-rules"></a>Yükleyici tarafından zorlanan kuralları  
   
--   Belirli bir bileşene tüm dosyalar aynı dizinine yüklenmelidir. Buna karşılık, dosya klasörleri ayırmak için yüklü bileşenleri ayrı ait olmalıdır.  
+- Belirli bir bileşene tüm dosyalar aynı dizinine yüklenmelidir. Buna karşılık, dosya klasörleri ayırmak için yüklü bileşenleri ayrı ait olmalıdır.  
   
--   Bileşen başına yalnızca bir anahtar yolu olabilir. Tüm bileşeni gösteren basit bir dosya veya kayıt defteri anahtarı anahtar yoludur.  
+- Bileşen başına yalnızca bir anahtar yolu olabilir. Tüm bileşeni gösteren basit bir dosya veya kayıt defteri anahtarı anahtar yoludur.  
   
 #### <a name="component-provider-responsibilities"></a>Bileşen sağlayıcısı sorumlulukları  
   
--   Sonraki sürümlerde de ayrı olarak sevk herhangi iki kaynakları ayrı bileşenler var olmalıdır. Yalnızca bu kaynakları hiçbir zaman ayrı olarak sevk edilir, belirli işiniz kaynakları aynı bileşenin gruplandırılmalıdır. Aslında, önerilir tüm birincil kaynaklar (örneğin, dll) her zaman ayrı WICs içinde mevcut. Daha fazla bilgi için [tanımlama yükleyici bileşenlerini](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Sonraki sürümlerde de ayrı olarak sevk herhangi iki kaynakları ayrı bileşenler var olmalıdır. Yalnızca bu kaynakları hiçbir zaman ayrı olarak sevk edilir, belirli işiniz kaynakları aynı bileşenin gruplandırılmalıdır. Aslında, önerilir tüm birincil kaynaklar (örneğin, dll) her zaman ayrı WICs içinde mevcut. Daha fazla bilgi için [tanımlama yükleyici bileşenlerini](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
--   Tutulan kaynak hiç olmadığı kadar içinde birden fazla WIC sevk etmesi.  
+- Tutulan kaynak hiç olmadığı kadar içinde birden fazla WIC sevk etmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bileşen kuralları bozuk olması durumunda ne olur?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

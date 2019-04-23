@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 07c5ba8d28a053b83481cf24e3bc1e450c28844e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050068"
 ---
 # <a name="xml-schema-explorer"></a>XML Şema Gezgini
 
@@ -21,40 +21,40 @@ ms.locfileid: "57525716"
 
  **XML Şeması Gezgini** aşağıdakileri sağlar:
 
--   Şema kümesi hızlı bir bakış edinin.
+- Şema kümesi hızlı bir bakış edinin.
 
--   Gözat ve ağaç gidin.
+- Gözat ve ağaç gidin.
 
--   Anahtar sözcüğü ve şema özgü aramaları gerçekleştirin. Daha fazla bilgi için [şema kümesini arama](../xml-tools/searching-the-schema-set.md).
+- Anahtar sözcüğü ve şema özgü aramaları gerçekleştirin. Daha fazla bilgi için [şema kümesini arama](../xml-tools/searching-the-schema-set.md).
 
--   Arama sonuçlarını grafik görünümü veya içerik modeli görünümü ekleme
+- Arama sonuçlarını grafik görünümü veya içerik modeli görünümü ekleme
 
--   Belge sırada, tür veya ad ağaç sıralayın. Daha fazla bilgi için [sıralama, filtreleme ve gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+- Belge sırada, tür veya ad ağaç sıralayın. Daha fazla bilgi için [sıralama, filtreleme ve gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
--   XML Düzenleyicisi'ni açın ve XSD dosyası kod konumlarda atlayın. Daha fazla bilgi için [XML Düzenleyicisi ile tümleştirme](../xml-tools/integration-with-xml-editor.md).
+- XML Düzenleyicisi'ni açın ve XSD dosyası kod konumlarda atlayın. Daha fazla bilgi için [XML Düzenleyicisi ile tümleştirme](../xml-tools/integration-with-xml-editor.md).
 
--   Genel öğeler için XML örneği oluşturur.
+- Genel öğeler için XML örneği oluşturur.
 
 **XML Şeması Gezgini** bir ağaç görünümü ayarlamak şema Cerberus bir görünümünü sağlar. **XML Şeması Gezgini** arama, filtreleme, gezinti ve sıralama de sağlar. Erişim için **XML Şeması Gezgini**, aşağıdakilerden birini yapın:
 
--   Kullanıyorsanız [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **XML Şeması Gezgini** bağlantı.
+- Kullanıyorsanız [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **XML Şeması Gezgini** bağlantı.
 
--   Kullanıyorsanız [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, seçmek için (sağ tıklama) bağlam menüsünü kullanın **XML Şeması Gezgini**.
+- Kullanıyorsanız [graf görünümünü](../xml-tools/graph-view.md) veya [içerik modeli görünümünü](../xml-tools/content-model-view.md) ve çalışma alanınızda düğümünüz, seçmek için (sağ tıklama) bağlam menüsünü kullanın **XML Şeması Gezgini**.
 
--   Belirleyebilirsiniz **XML Şeması Gezgini** gelen **görünümü** menüsü.
+- Belirleyebilirsiniz **XML Şeması Gezgini** gelen **görünümü** menüsü.
 
--   Erişebildiğiniz **XML Şeması Gezgini** gelen bir *.vb* ile ilişkili bir Visual Basic XML değişmez değeri olan dosyası bir *.xsd* dosya. Şema görmek için kümesinde **XML Şeması Gezgini**, bir XML değişmez değeri ya da bir XML ad alanı alma bir XML düğümünü sağ tıklatın ve seçin **şema Gezgini'nde Göster** komutu. Daha fazla bilgi için [XML Şeması Gezgini ile tümleştirme, XML değişmez değerleri](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Erişebildiğiniz **XML Şeması Gezgini** gelen bir *.vb* ile ilişkili bir Visual Basic XML değişmez değeri olan dosyası bir *.xsd* dosya. Şema görmek için kümesinde **XML Şeması Gezgini**, bir XML değişmez değeri ya da bir XML ad alanı alma bir XML düğümünü sağ tıklatın ve seçin **şema Gezgini'nde Göster** komutu. Daha fazla bilgi için [XML Şeması Gezgini ile tümleştirme, XML değişmez değerleri](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Ağaç görünümü
  **XML Şeması Gezgini** görüntüler önceden derlenmiş şema ağaç yapısında bilgilerini ayarlayabilir. Ağaç yapısı şu şekilde düzenlenmiştir:
 
--   En üst düzeyinde şema düğüm ayarlanır.
+- En üst düzeyinde şema düğüm ayarlanır.
 
--   İkinci düzey ad alanlarını içerir.
+- İkinci düzey ad alanlarını içerir.
 
--   Üçüncü düzeyini dosyaları içerir.
+- Üçüncü düzeyini dosyaları içerir.
 
--   Dördüncü düzey genel düğümleri içerir. Bu içerebilir öğeler, grupları, karmaşık türler, basit türler, öznitelikleri, öznitelik grupları ve `include`, `import`, ve `redefine` deyimleri.
+- Dördüncü düzey genel düğümleri içerir. Bu içerebilir öğeler, grupları, karmaşık türler, basit türler, öznitelikleri, öznitelik grupları ve `include`, `import`, ve `redefine` deyimleri.
 
 Bir ağaç yapısı örneği verilmiştir:
 
@@ -65,11 +65,11 @@ Bir ağaç yapısı örneği verilmiştir:
 
  Bir düğüm etkinleştirmek için çift tıklayın veya basın **Enter** düğümü seçildiğinde.
 
--   Bir düğüm etkinleştirme bu düğümde tanımlanan (dosya zaten açık değilse) dosya açılır ve dosyayı düğümü seçer.
+- Bir düğüm etkinleştirme bu düğümde tanımlanan (dosya zaten açık değilse) dosya açılır ve dosyayı düğümü seçer.
 
--   Bir dosya düğümü etkinleştirme (zaten açık değilse), seçili dosyayı açar ve vurgular `<schema>` düğümü.
+- Bir dosya düğümü etkinleştirme (zaten açık değilse), seçili dosyayı açar ve vurgular `<schema>` düğümü.
 
--   Bir SchemaSet veya bir ad alanı düğümü etkinleştirme hiçbir şey yapmaz.
+- Bir SchemaSet veya bir ad alanı düğümü etkinleştirme hiçbir şey yapmaz.
 
 ## <a name="drag-and-drop-nodes"></a>Sürükle ve bırak düğümleri
  Sürükleyin ve genel düğümler, dosya düğümleri ve ad alanı düğümleri bir XSD Tasarımcısı görünümü üzerine bırakın. Geçerli Görünüm ise [başlangıç görünümündeki](../xml-tools/start-view.md), bir düğüm görünümü açın sürükleyerek açılır [graf görünümünü](../xml-tools/graph-view.md). Geçerli Görünüm ise [içerik modeli görünümünü](../xml-tools/content-model-view.md) veya grafik görünümü, görünümün üzerine bir düğüm düşürdüğünüzde değiştirmez.

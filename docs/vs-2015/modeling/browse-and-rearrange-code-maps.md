@@ -24,14 +24,14 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a79aeabcbe0a405248d530e56ed5fe9e3f4e9994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055255"
 ---
-# <a name="browse-and-rearrange-code-maps"></a>Kod haritalarına göz atma ve bunları yeniden düzenleme
+# <a name="browse-and-rearrange-code-maps"></a>Kod eşlemelerine göz atma ve bunları yeniden düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Okuma ve bunların performansı daha kolay hale getirmek için kod haritalarını öğelerde yeniden düzenleyin.  
@@ -40,26 +40,26 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
   
  **Gereksinimler**  
   
--   Kod haritaları oluşturmak için Visual Studio Enterprise'ı olması gerekir.  
+- Kod haritaları oluşturmak için Visual Studio Enterprise'ı olması gerekir.  
   
--   Kod haritaları görüntüleyebilir ve kod haritaları ile Visual Studio Professional için sınırlı düzenlemeler yapmak.  
+- Kod haritaları görüntüleyebilir ve kod haritaları ile Visual Studio Professional için sınırlı düzenlemeler yapmak.  
   
-##  <a name="ManageLargeGraphs"></a> Kod haritaları ile çalışmaya başlama  
+## <a name="ManageLargeGraphs"></a> Kod haritaları ile çalışmaya başlama  
  Bir kod Haritası oluşturun (bkz [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md) daha fazla ayrıntı için). Harita oluşturma işleminin tamamlanması beklenecek istemiyorsanız **iptal** oluşturma işlemini durdurmak için herhangi bir zamanda bağlantı. Ancak bunu yaparsanız tüm bağımlılıkları ve bağlantı ayrıntılarını görmemeniz.  
   
  Harita oluşturduktan sonra kodunuzu gözden geçirme için bu ipuçlarını kullanmaya başlayın:  
   
--   Kod doğal bağımlılık kümelerinde bakın. Harita araç çubuğunda **Düzen**, **hızlı kümeler**![Grafik araç çubuğu düğmesi hızlı kümeler](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Bkz: [eşleme düzenini](#Selecting).  
+- Kod doğal bağımlılık kümelerinde bakın. Harita araç çubuğunda **Düzen**, **hızlı kümeler**![Grafik araç çubuğu düğmesi hızlı kümeler](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Bkz: [eşleme düzenini](#Selecting).  
   
      ![Bağımlılık grafiği &#45; hızlı kümeler yerleşimini](../modeling/media/dependencygraph-quickclusters.png "DependencyGraph_QuickClusters")  
   
--   Harita, ilgili düğümlerin gruplandırarak daha küçük alanlarına düzenleyin. Otomatik olarak görünen yalnızca intergroup bağımlılıkları görmek için bu grupları daraltabilirsiniz. Bkz: [Grup düğümleri](#OrganizeGroups).  
+- Harita, ilgili düğümlerin gruplandırarak daha küçük alanlarına düzenleyin. Otomatik olarak görünen yalnızca intergroup bağımlılıkları görmek için bu grupları daraltabilirsiniz. Bkz: [Grup düğümleri](#OrganizeGroups).  
   
--   Haritayı basitleştirmek ve düğümlere veya bağlantılara ilgilendiğiniz türlerini odaklanmak için filtreleri kullanın. Bkz: [filtre düğümlere ve bağlantılara](#FilterNodes).  
+- Haritayı basitleştirmek ve düğümlere veya bağlantılara ilgilendiğiniz türlerini odaklanmak için filtreleri kullanın. Bkz: [filtre düğümlere ve bağlantılara](#FilterNodes).  
   
--   Büyük haritalar performansını en üst düzeye çıkarın. Bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md) daha fazla bilgi için. Örneğin, açma **Atla derleme** eşlemedeki öğeler güncelleştirdiğinizde, Visual Studio çözümünüzü yeniden olmayan şekilde harita araç çubuğunda.  
+- Büyük haritalar performansını en üst düzeye çıkarın. Bkz: [Çözümlerinizdeki bağımlılıkları eşleme](../modeling/map-dependencies-across-your-solutions.md) daha fazla bilgi için. Örneğin, açma **Atla derleme** eşlemedeki öğeler güncelleştirdiğinizde, Visual Studio çözümünüzü yeniden olmayan şekilde harita araç çubuğunda.  
   
-##  <a name="Selecting"></a> Harita düzenini değiştirme  
+## <a name="Selecting"></a> Harita düzenini değiştirme  
   
 |**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
@@ -70,7 +70,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 |Diğer düğümlere bağımsız olarak bir grup ve harita üzerinde gruplar içinde düzenini değiştirin.|Bir düğüm seçin ve kısayol menüsünü açın. Seçin **Düzen** ve bir düzen stili seçin.<br /><br /> - veya -<br /><br /> Bir düğüm seçin ve alt düğümleri göstermek için genişletin. Grup açılır araç çubuğunu gösterme ve açmak için düğümü başlığını tıklatın **grubun yerleşim stilini değiştir**![bağımlılık grafiği &#45; grubu araç &#45; Düzen](../modeling/media/dependencygraph-grouptoolbar.gif "DependencyGraph_ GroupToolbar") listesi. Bir ağaç düzeni seçin **hızlı kümeler**, veya **liste görünümü** (hangi düzenler grubun içeriğinin bir liste olarak).<br /><br /> Bkz: [Grup düğümleri](#OrganizeGroups) daha fazla ayrıntı için.|  
 |Eşlem içindeki bir eylemi geri al.|Tuşuna **CTRL** + **Z** veya Visual Studio **geri** komutu.|  
   
-##  <a name="Explore"></a> Harita Gözat  
+## <a name="Explore"></a> Harita Gözat  
   
 |**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
@@ -82,7 +82,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 |Seçili olmayan tüm düğümleri seçin.|Seçili düğümlerin kısayol menüsünü açın. Seçin **seçin**, **seçimi ters çevir**.|  
 |Seçili düğümlere bağlanacak ek düğümler'i seçin.|Seçili düğümlerin kısayol menüsünü açın. Seçin **seçin** ve bunlardan biri:<br /><br /> -Doğrudan Seçili düğüme bağlanan ek düğümler seçmek için Seç **gelen bağımlılıklar**.<br />-Doğrudan seçili düğümden bağlanan ek düğümler seçmek için seçin **giden bağımlılıklar**.<br />-Doğrudan ve seçili düğümden bağlanan ek düğümler seçmek için Seç **hem**.<br />-İçin ve seçili düğümden bağlanan tüm düğümleri seçmek için Seç **bağlı alt grafik**.<br />-Seçili düğümün tüm alt öğeleri seçmek için Seç **alt**.|  
   
-##  <a name="FilterNodes"></a> Filtre düğümleri ve bağlantıları  
+## <a name="FilterNodes"></a> Filtre düğümleri ve bağlantıları  
   
 |**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
@@ -93,14 +93,14 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
   
  Harita göstergesi panel içinde gösterilen simge listesinde yaptığınız ayarları yansıtır. Gösterge panelini göstermek veya gizlemek için tıklayın **gösterge** kod harita araç çubuğunda düğme.  
   
-##  <a name="Inspect"></a> Düğümlere ve bağlantılara inceleyin  
+## <a name="Inspect"></a> Düğümlere ve bağlantılara inceleyin  
  Kod Haritaları, bu tür bağlantıları göster:  
   
--   Tek bir bağlantı iki düğüm arasındaki tek bir ilişkiyi temsil eder.  
+- Tek bir bağlantı iki düğüm arasındaki tek bir ilişkiyi temsil eder.  
   
--   Çapraz Grup bağlantısı farklı gruplardaki iki düğüm arasındaki bir ilişkiyi temsil eder.  
+- Çapraz Grup bağlantısı farklı gruplardaki iki düğüm arasındaki bir ilişkiyi temsil eder.  
   
--   Toplu bir bağlantının iki grupları arasında aynı yönde işaret eden tüm ilişkiler temsil eder.  
+- Toplu bir bağlantının iki grupları arasında aynı yönde işaret eden tüm ilişkiler temsil eder.  
   
 > [!TIP]
 >  Varsayılan olarak, çapraz grup bağlantılarını seçili düğümler için yalnızca eşlemeyi gösterir. Gruplar arasında toplanmış bağlantıları göstermek veya gizlemek için bu davranışı değiştirmek için tıklayın **Düzen** kodu seçin ve araç harita **Gelişmiş**, ardından **tüm çapraz grup bağlantılarını göster** veya **Tüm çapraz grup bağlantılarını Gizle**. Bkz: [Gizle veya Göster düğümlere ve bağlantılara](#HidingShowing) daha fazla ayrıntı için.  
@@ -114,7 +114,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 |Farklı gruplardaki birden fazla düğümde bağımlılıkları inceleyin.|Tüm alt öğelerini görebilmeniz için gruplar'ı genişletin. Bunların alt öğeleri dahil olmak üzere ilginizi çeken tüm düğümleri seçin. Çapraz grup bağlantılarını seçili düğümler arasındaki eşlemeyi gösterir.<br /><br /> Bir gruptaki tüm düğümleri seçmek için basılı **SHIFT** ve bu gruba çevresinde bir dikdörtgen çizerken farenin sol düğmesi. Bir haritada tüm düğümleri seçmek için basın **CTRL**+**A**. **İpucu:**  Çapraz grup bağlantılarını her zaman göstermek için **Düzen** harita araç çubuğunda **Gelişmiş**, **tüm çapraz grup bağlantılarını göster**.|  
 |Bir düğümün veya bağlantının başvuran öğeler bakın.|Düğümü için kısayol menüsünü açın ve seçin **tüm başvuruları Bul**. **Not:**  Bu yalnızca geçerlidir `Reference` öznitelik düğümü veya bağlantıyı ayarlayın haritanın .dgml dosyası olarak. Düğümleri veya bağlantıları öğelere başvurular eklemek için bkz [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|  
   
-##  <a name="HidingShowing"></a> Düğümlere ve bağlantılara gösterme veya gizleme  
+## <a name="HidingShowing"></a> Düğümlere ve bağlantılara gösterme veya gizleme  
  Düğümlerin gizlenmesi, düzen algoritmasına katılmalarını engeller. Varsayılan olarak, çapraz grup bağlantıları gizlidir. Çapraz grup bağlantıları, düğümleri gruplar arasında bağlayan tek bağlantılardır. Gruplar daraltıldığında, haritada tüm çapraz grup bağlantılarını gruplar arasındaki tek bağlantılar içinde toplar. Bir grubu genişlettiğinizde veya grup içindeki düğümleri seçtiğinizde, çapraz grup bağlantıları görünür ve o gruptaki bağımlılıkları gösterir.  
   
 > [!CAUTION]
@@ -137,7 +137,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 |Seçilen düğümler için yalnızca çapraz grup bağlantılarını göster.|**Çapraz grup bağlantılarını seçili düğümler üzerinde göster**|  
 |Tüm bağlantıları gizle.|**Tüm bağlantıları gizle**. Yeniden bağlantıları göstermek için yukarıda listelenen seçeneklerden birini seçin.|  
   
-##  <a name="OrganizeGroups"></a> Düğümleri gruplandırma  
+## <a name="OrganizeGroups"></a> Düğümleri gruplandırma  
   
 |**Alıcı**|**Aşağıdaki adımları gerçekleştirin**|  
 |------------|-----------------------------|  
@@ -149,7 +149,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 |Grupları kaldırın.|Kaldırmak istediğiniz grup veya grupları seçin. Seçiminizin kısayol menüsünü açın ve seçin **grubu**, **grubunu kaldırma**.|  
 |Düğümleri onların üst grubundan kaldırın.|Taşımak istediğiniz düğümleri seçin. Seçiminizin kısayol menüsünü açın ve seçin **grubu**, **Üst Gruptan Kaldır**. Bunlar hiçbir üst grupları yoksa grubun bu düğümleri yukarı kendi dizinleriyle veya çok grubun dışına kaldırır.<br /><br /> - veya -<br /><br /> Düğümleri seçin ve bunları grubun dışına sürükleyin.|  
   
-##  <a name="AddRemoveNodesLinks"></a> Ekleme, kaldırma veya düğümler ve bağlantılar açıklamaları yeniden adlandır  
+## <a name="AddRemoveNodesLinks"></a> Ekleme, kaldırma veya düğümler ve bağlantılar açıklamaları yeniden adlandır  
  Detaya gitme veya haritayı basitleştirmek için daha fazla veya daha az öğe bir haritada görüntüleyebilirsiniz. Öğeleri yeniden adlandırmak ve açıklama öğeleri ekleyin.  
   
 > [!CAUTION]
@@ -172,7 +172,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
 |Kod öğeleri haritaya ilgili kod öğeleri.|Tıklayın **Göster ilgili** kod harita araç çubuğunda düğmesini ve ilgilendiğiniz öğeyi seçin.<br /><br /> - veya -<br /><br /> Kod öğesi için kısayol menüsünü açın. Birini **göster...** ilginizi çeken ilişki türünü bağlı olarak menüsündeki öğeler. Örneğin, geçerli öğeye başvuran öğeleri başvuran sınıflar, yöntemi çağıranlar ve içeren sınıflar, ad alanları ve derlemeler için temel ve türetilen türlerin, geçerli öğe öğeleri görebilir.<br /><br /> Daha fazla ayrıntı için [bu konuda](../modeling/map-dependencies-across-your-solutions.md).|  
 |Derlenmiş .NET derlemeleri (.dll veya .exe) veya ikili dosyaları.|Derlemeleri veya ikili dosyaları dış Visual Studio'dan bir haritasına sürükleyin.<br /><br /> Yalnızca Visual Studio ve aynı kullanıcı erişim denetimi (UAC) izni düzeyinde çalıştırıyorsanız, Windows Gezgini veya dosya Gezgini'nden sürükleyebilirsiniz. Örneğin, UAC açıksa ve Visual Studio'yu yönetici olarak çalıştırıyorsanız, Windows Gezgini veya dosya Gezgini sürükleme işlemini engelleyecektir.|  
   
-###  <a name="AddNodes"></a>   
+### <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Varolan kod öğeleri arasında bir bağlantı ekleyin  
   
 1. Kaynak kodu öğesi seçin. Bir araç çubuğu üzerinde kod öğesi görünür.  
@@ -195,83 +195,83 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
   
 8. Tuşuna **dönüş**.  
   
-###  <a name="AddComments"></a>   
+### <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Harita üzerinde varolan düğüm için bir açıklama ekleyin  
   
-1.  Kod öğesi seçin. Bir araç çubuğu üzerinde görünür.  
+1. Kod öğesi seçin. Bir araç çubuğu üzerinde görünür.  
   
      ![Bağımlılık grafiği araç](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Üçüncü simgesi, araç çubuğunda **Seçili düğüme yeni bir bağlantı ile yeni bir açıklama düğümü Oluştur**.  
+2. Üçüncü simgesi, araç çubuğunda **Seçili düğüme yeni bir bağlantı ile yeni bir açıklama düğümü Oluştur**.  
   
      \- veya -  
   
      Kod öğesi için kısayol menüsünü açın ve seçin **Düzenle**, **yeni açıklama**.  
   
-3.  Açıklamalarınızı yazın. Yeni bir satıra yazmak için basın **SHIFT** + **dönüş**.  
+3. Açıklamalarınızı yazın. Yeni bir satıra yazmak için basın **SHIFT** + **dönüş**.  
   
 ##### <a name="add-a-comment-to-the-map-itself"></a>Eşleme için bir açıklama ekleyin  
   
-1.  Eşleme için kısayol menüsünü açın ve seçin **Düzenle**, **yeni açıklama**.  
+1. Eşleme için kısayol menüsünü açın ve seçin **Düzenle**, **yeni açıklama**.  
   
-2.  Açıklamalarınızı yazın. Yeni bir satıra yazmak için basın **SHIFT** + **dönüş**.  
+2. Açıklamalarınızı yazın. Yeni bir satıra yazmak için basın **SHIFT** + **dönüş**.  
   
-###  <a name="RenameNodes"></a>   
+### <a name="RenameNodes"></a>   
 ##### <a name="rename-a-code-element-or-link"></a>Bir kod öğesi veya bağlantı yeniden adlandır  
   
-1.  Kod öğesi veya yeniden adlandırmak istediğiniz bağlantıyı seçin.  
+1. Kod öğesi veya yeniden adlandırmak istediğiniz bağlantıyı seçin.  
   
-2.  Tuşuna **F2**, kısayol menüsünü açın ve seçin **Düzenle**, **Yeniden Adlandır**.  
+2. Tuşuna **F2**, kısayol menüsünü açın ve seçin **Düzenle**, **Yeniden Adlandır**.  
   
-3.  Haritada düzenleme kutusu göründüğünde, kod öğesi veya bağlantıyı yeniden adlandırın.  
+3. Haritada düzenleme kutusu göründüğünde, kod öğesi veya bağlantıyı yeniden adlandırın.  
   
      \- veya -  
   
-4.  Kısayol menüsünü açın ve seçin **Düzenle**, **özellikleri**.  
+4. Kısayol menüsünü açın ve seçin **Düzenle**, **özellikleri**.  
   
-5.  Düzen **etiket** Visual Studio Özellikler penceresindeki özellik.  
+5. Düzen **etiket** Visual Studio Özellikler penceresindeki özellik.  
   
 ##### <a name="remove-a-code-element-or-link-from-the-map"></a>Haritadaki bir kod öğesi veya bağlantı kaldırma  
   
-1.  Kod öğesi veya bağlantı ve ENTER tuşuna seçin **Sil** anahtarı.  
+1. Kod öğesi veya bağlantı ve ENTER tuşuna seçin **Sil** anahtarı.  
   
      \- veya -  
   
      Bağlantı ve kod öğesi için kısayol menüsünü açın ve seçin **Düzenle**, **Kaldır**.  
   
-2.  Öğe veya bağlantı bir grubun parçası ise **alt öğeleri tekrar Al** düğmesi ![öğeleri tekrar Al alt simge](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") grup içinde görünür. Bu eksik öğeleri ve bağlantılarına almak için tıklayın.  
+2. Öğe veya bağlantı bir grubun parçası ise **alt öğeleri tekrar Al** düğmesi ![öğeleri tekrar Al alt simge](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") grup içinde görünür. Bu eksik öğeleri ve bağlantılarına almak için tıklayın.  
   
--   Temel kodu etkilemeden bir eşlemden kod öğeleri ve bağlantılarına kaldırabilirsiniz. Bunları sildiğinizde, tanımları DGML (.dgml) dosyasından kaldırılır.  
+- Temel kodu etkilemeden bir eşlemden kod öğeleri ve bağlantılarına kaldırabilirsiniz. Bunları sildiğinizde, tanımları DGML (.dgml) dosyasından kaldırılır.  
   
--   DGML düzenlenerek, tanımsız kod öğeleri ekleyerek veya Visual Studio'nun bazı daha önceki sürümleri kullanılarak oluşturulan eşlemeler bu özelliği desteklemez.  
+- DGML düzenlenerek, tanımsız kod öğeleri ekleyerek veya Visual Studio'nun bazı daha önceki sürümleri kullanılarak oluşturulan eşlemeler bu özelliği desteklemez.  
   
 ##### <a name="flag-a-code-element-for-follow-up"></a>İzleme için kod öğesi bayrak  
   
-1.  Kod öğesi veya için izleme bayrağı istediğiniz bağlantıyı seçin.  
+1. Kod öğesi veya için izleme bayrağı istediğiniz bağlantıyı seçin.  
   
-2.  Kısayol menüsünü açın ve seçin **Düzenle**, **izleme bayrağı**.  
+2. Kısayol menüsünü açın ve seçin **Düzenle**, **izleme bayrağı**.  
   
--   Varsayılan olarak, kırmızı bir arka plan kod öğesi kazanır. Göz önünde bulundurun [açıklama ekleme](#AddComments) bunu ilgili izleme bilgileri.  
+- Varsayılan olarak, kırmızı bir arka plan kod öğesi kazanır. Göz önünde bulundurun [açıklama ekleme](#AddComments) bunu ilgili izleme bilgileri.  
   
--   Öğenin arka plan rengini değiştirme veya izleme bayrağı seçerek temizleyin **Düzenle**, **diğer bayrağı renkleri**.  
+- Öğenin arka plan rengini değiştirme veya izleme bayrağı seçerek temizleyin **Düzenle**, **diğer bayrağı renkleri**.  
   
-##  <a name="ChangeStyleCodeOrLink"></a> Bir kod öğesi veya bağlantı stilini değiştirme  
+## <a name="ChangeStyleCodeOrLink"></a> Bir kod öğesi veya bağlantı stilini değiştirme  
  Kod öğeleri düğümlerdeki simgeleri ve kod öğeleri ve önceden tanımlanmış simgeleri ve renkleri kullanarak bağlantıların renklerini değiştirebilirsiniz. Örneğin, kod öğeleri ve belirli bir kategori veya özellik sahip bağlantıları vurgulamak için bir renk seçebilirsiniz. Bu belirleyip harita belirli alanlara odaklanmanıza olanak tanır. Özel simgeleri ve renkleri haritanın .dgml dosyasını düzenleyerek belirtebilirsiniz; bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 #### <a name="to-apply-a-predefined-color-or-icon-to-code-elements-or-links-with-a-certain-category-or-property"></a>Kod öğeleri veya belirli bir kategori veya özellik bağlantılarıyla bir önceden tanımlanmış bir rengi veya simgeyi uygulamak için  
   
-1.  Harita araç çubuğunda **gösterge**.  
+1. Harita araç çubuğunda **gösterge**.  
   
-2.  İçinde **gösterge** kutusunda, kod öğesi kategori veya özellik zaten listede görünüp görünmediğine bakın.  
+2. İçinde **gösterge** kutusunda, kod öğesi kategori veya özellik zaten listede görünüp görünmediğine bakın.  
   
-3.  Liste kategori veya özellik içermiyorsa seçin **+** içinde **gösterge** kutusuna ve ardından **düğüm özelliği**, **düğüm kategorisi** , **Bağlantı özelliğinin**, veya **bağlantı kategorisi**. Özellik veya kategori seçin. Kategori veya özellik artık görünür **gösterge** kutusu.  
+3. Liste kategori veya özellik içermiyorsa seçin **+** içinde **gösterge** kutusuna ve ardından **düğüm özelliği**, **düğüm kategorisi** , **Bağlantı özelliğinin**, veya **bağlantı kategorisi**. Özellik veya kategori seçin. Kategori veya özellik artık görünür **gösterge** kutusu.  
   
     > [!NOTE]
     >  Oluşturma ve bir kategori veya özellik için bir kod öğesi atamak için haritanın .dgml dosyasını düzenleyebilirsiniz; bkz: [Özelleştir kod eşlemeleri DGML dosyalarını düzenleyerek](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-4.  İçinde **gösterge** kutusunda, kategori veya özellik eklediğiniz yanındaki simgeye tıklamanız veya değiştirmek istediğiniz.  
+4. İçinde **gösterge** kutusunda, kategori veya özellik eklediğiniz yanındaki simgeye tıklamanız veya değiştirmek istediğiniz.  
   
-5.  Değiştirmek istediğiniz stili seçmek için aşağıdaki tabloyu kullanın:  
+5. Değiştirmek istediğiniz stili seçmek için aşağıdaki tabloyu kullanın:  
   
     |**Değiştirmek için**|**Seçin**|  
     |-----------------------|----------------|  
@@ -282,7 +282,7 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
   
      **Renk kümesi Seçicisi** veya **simge kümesi Seçicisi** rengi veya simgeyi seçmeniz için iletişim kutusu görüntülenir.  
   
-6.  İçinde **renk kümesi Seçicisi** veya **simge kümesi Seçicisi** iletişim kutusunda, aşağıdakilerden birini yapın:  
+6. İçinde **renk kümesi Seçicisi** veya **simge kümesi Seçicisi** iletişim kutusunda, aşağıdakilerden birini yapın:  
   
     |**Uygulanacak bir**|**Aşağıdaki adımları gerçekleştirin**|  
     |--------------------|-----------------------------|  
@@ -292,12 +292,12 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
     > [!NOTE]
     >  Yeniden düzenleyebilir, silebilir veya geçici olarak stillerini devre dışı bırak **gösterge** kutusu. Bkz: [Gösterge kutusunu Düzenle](#ModifyLegend).  
   
-##  <a name="ModifyLegend"></a> Gösterge kutusunu Düzenle  
+## <a name="ModifyLegend"></a> Gösterge kutusunu Düzenle  
  Yeniden düzenleyebilir, silebilir veya geçici olarak stillerini devre dışı bırak **gösterge** kutusunda:  
   
-1.  Bir stilin kısayol menüsünü açın **gösterge** kutusu.  
+1. Bir stilin kısayol menüsünü açın **gösterge** kutusu.  
   
-2.  Aşağıdaki görevlerden birini uygulayın:  
+2. Aşağıdaki görevlerden birini uygulayın:  
   
     |**Alıcı**|**Seçin**|  
     |------------|----------------|  
@@ -306,15 +306,15 @@ Okuma ve bunların performansı daha kolay hale getirmek için kod haritaların�
     |Stili yukarı taşıyın|**Yukarı Taşı**|  
     |Kod öğesini Aşağı Taşı|**Aşağı Taşı**|  
   
-##  <a name="CopyLegend"></a> Stilleri bir eşlemden kopyalayın  
+## <a name="CopyLegend"></a> Stilleri bir eşlemden kopyalayın  
   
-1.  Emin **gösterge** kutusu kaynak harita üzerinde görüntülenir. Harita araç çubuğunda görünür durumda değilse, **gösterge**.  
+1. Emin **gösterge** kutusu kaynak harita üzerinde görüntülenir. Harita araç çubuğunda görünür durumda değilse, **gösterge**.  
   
-2.  Kısayol menüsünü açın **gösterge** kutusu. Seçin **kopyalama gösterge**.  
+2. Kısayol menüsünü açın **gösterge** kutusu. Seçin **kopyalama gösterge**.  
   
-3.  Göstergeyi hedef harita yapıştırın.  
+3. Göstergeyi hedef harita yapıştırın.  
   
-##  <a name="MergeMaps"></a> Kod haritaları Birleştir  
+## <a name="MergeMaps"></a> Kod haritaları Birleştir  
  Kod öğeleri arasındaki eşlemeleri yapıştırarak haritalar birleştirebilirsiniz. Kod öğesi tanımlayıcıları eşleşirse, yapıştırma kod öğeleri işlevleri bir birleştirme işlemi gibi. Bu görevi kolaylaştırmak için tüm derlemeleri veya tam yolun her derlemenin veya ikili birleştirmek istediğiniz her eşleme için aynı olması, aynı klasörde görselleştirmek istediğiniz ikili dosyaları'nı koyun.  
   
  Alternatif olarak, bu klasörden aynı Eşle bu derlemeleri veya ikili dosyaları sürükleyebilirsiniz.  

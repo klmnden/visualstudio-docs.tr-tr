@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ece85279e4ecff20eff0a79c75f4f316de1a54cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040178"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>İzlenecek yol: SharePoint projeleri için bir özel dağıtım adımı oluşturma
   Bir SharePoint projesi dağıttığınızda, Visual Studio, belirli bir sırayla bir dizi dağıtım adımı yürütür. Visual Studio, birçok yerleşik dağıtım adımlarını içerir, ancak kendi oluşturabilirsiniz.
@@ -27,17 +27,17 @@ ms.locfileid: "56609403"
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:
+- Visual Studio uzantısı oluşturma iki ana görevleri gerçekleştirir:
 
-    -   SharePoint çözümlerini yükseltmek için özel bir dağıtım adımı uzantısını tanımlar.
+    - SharePoint çözümlerini yükseltmek için özel bir dağıtım adımı uzantısını tanımlar.
 
-    -   Uzantısı için belirli bir projenin yürütülen dağıtım adımları olan yeni bir dağıtım yapılandırması tanımlayan bir proje uzantısı oluşturur. Yeni Dağıtım Yapılandırması, özel dağıtım adımını ve birkaç yerleşik dağıtım adımlarını içerir.
+    - Uzantısı için belirli bir projenin yürütülen dağıtım adımları olan yeni bir dağıtım yapılandırması tanımlayan bir proje uzantısı oluşturur. Yeni Dağıtım Yapılandırması, özel dağıtım adımını ve birkaç yerleşik dağıtım adımlarını içerir.
 
--   Uzantı derlemesini çağıran iki özel SharePoint komutu oluşturun. SharePoint komutları için SharePoint sunucusu nesne modelinde API'lerini kullanmayı uzantısı derlemeler tarafından çağrılan yöntemlerdir. Daha fazla bilgi için [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).
+- Uzantı derlemesini çağıran iki özel SharePoint komutu oluşturun. SharePoint komutları için SharePoint sunucusu nesne modelinde API'lerini kullanmayı uzantısı derlemeler tarafından çağrılan yöntemlerdir. Daha fazla bilgi için [SharePoint nesne modellerini çağırma](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
--   Derlemelerin hem de dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.
+- Derlemelerin hem de dağıtmak için Visual Studio Uzantısı (VSIX) paketini derleme.
 
--   Yeni bir dağıtım adımı test etme.
+- Yeni bir dağıtım adımı test etme.
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için geliştirme bilgisayarında aşağıdaki bileşenler ihtiyacınız vardır:
@@ -67,84 +67,84 @@ ms.locfileid: "56609403"
 
 #### <a name="to-create-the-vsix-project"></a>VSIX projesi oluşturmak için
 
-1.  Başlangıç [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Başlangıç [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
+2. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-3.  İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
+3. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **genişletilebilirlik** düğümü.
 
     > [!NOTE]
     >  **Genişletilebilirlik** düğümüdür yalnızca, Visual Studio SDK yüklenmiş ise kullanılabilir. Daha fazla bilgi için bu konudaki Önkoşullar bölümüne bakın.
 
-4.  İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinde.
+4. İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinde.
 
-5.  Seçin **VSIX projesi** şablon, proje adı **UpgradeDeploymentStep**ve ardından **Tamam** düğmesi.
+5. Seçin **VSIX projesi** şablon, proje adı **UpgradeDeploymentStep**ve ardından **Tamam** düğmesi.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **UpgradeDeploymentStep** için proje **Çözüm Gezgini**.
 
 #### <a name="to-create-the-extension-project"></a>Uzantı projesini oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, UpgradeDeploymentStep çözüm düğümü için kısayol menüsünü açın, **Ekle**ve ardından **yeni proje**.
+1. İçinde **Çözüm Gezgini**, UpgradeDeploymentStep çözüm düğümü için kısayol menüsünü açın, **Ekle**ve ardından **yeni proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **Windows** düğümü.
+2. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic** düğümler ve ardından **Windows** düğümü.
 
-3.  İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinde.
+3. İletişim kutusunun en üstünde **.NET Framework 4.5** .NET Framework sürümleri listesinde.
 
-4.  Seçin **sınıf kitaplığı** proje şablonu, projeyi adlandırın **DeploymentStepExtension**ve ardından **Tamam** düğmesi.
+4. Seçin **sınıf kitaplığı** proje şablonu, projeyi adlandırın **DeploymentStepExtension**ve ardından **Tamam** düğmesi.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ekler **DeploymentStepExtension** çözüme ve varsayılan Class1 kod dosyasını açar.
 
-5.  Projeden Class1 kod dosyasını silin.
+5. Projeden Class1 kod dosyasını silin.
 
 #### <a name="to-create-the-sharepoint-command-project"></a>SharePoint komutu projeyi oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, UpgradeDeploymentStep çözüm düğümü için kısayol menüsünü açın, **Ekle**ve ardından **yeni proje**.
+1. İçinde **Çözüm Gezgini**, UpgradeDeploymentStep çözüm düğümü için kısayol menüsünü açın, **Ekle**ve ardından **yeni proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic**ve ardından **Windows** düğümü.
+2. İçinde **yeni proje** iletişim kutusunda **Visual C#** veya **Visual Basic**ve ardından **Windows** düğümü.
 
-3.  İletişim kutusunun en üstünde **.NET Framework 3.5** .NET Framework sürümleri listesinde.
+3. İletişim kutusunun en üstünde **.NET Framework 3.5** .NET Framework sürümleri listesinde.
 
-4.  Seçin **sınıf kitaplığı** proje şablonu, projeyi adlandırın **SharePointCommands**ve ardından **Tamam** düğmesi.
+4. Seçin **sınıf kitaplığı** proje şablonu, projeyi adlandırın **SharePointCommands**ve ardından **Tamam** düğmesi.
 
      Visual Studio ekler **SharePointCommands** çözüme ve varsayılan Class1 kod dosyasını açar.
 
-5.  Projeden Class1 kod dosyasını silin.
+5. Projeden Class1 kod dosyasını silin.
 
 ## <a name="configure-the-projects"></a>Projeleri yapılandırma
  Özel dağıtım adımı oluşturmak için kod yazmadan önce kod dosyaları ve derleme başvurularını ekleyin ve projeleri yapılandırmanız gerekir.
 
 #### <a name="to-configure-the-deploymentstepextension-project"></a>DeploymentStepExtension projeyi yapılandırmak için
 
-1.  İçinde **DeploymentStepExtension** projesinde, aşağıdaki adlara sahip iki kod dosyasını ekleyin:
+1. İçinde **DeploymentStepExtension** projesinde, aşağıdaki adlara sahip iki kod dosyasını ekleyin:
 
-    -   UpgradeStep
+    - UpgradeStep
 
-    -   DeploymentConfigurationExtension
+    - DeploymentConfigurationExtension
 
-2.  DeploymentStepExtension projenin kısayol menüsünü açın ve ardından **Başvuru Ekle**.
+2. DeploymentStepExtension projenin kısayol menüsünü açın ve ardından **Başvuru Ekle**.
 
-3.  Üzerinde **Framework** sekmesinde, System.ComponentModel.Composition derleme için onay kutusunu seçin.
+3. Üzerinde **Framework** sekmesinde, System.ComponentModel.Composition derleme için onay kutusunu seçin.
 
-4.  Üzerinde **uzantıları** sekmesinde Microsoft.VisualStudio.SharePoint derleme için onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
+4. Üzerinde **uzantıları** sekmesinde Microsoft.VisualStudio.SharePoint derleme için onay kutusunu işaretleyin ve ardından **Tamam** düğmesi.
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>SharePointCommands projeyi yapılandırmak için
 
-1.  İçinde **SharePointCommands** proje, komutları adlı bir kod dosyası ekleyin.
+1. İçinde **SharePointCommands** proje, komutları adlı bir kod dosyası ekleyin.
 
-2.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SharePointCommands** proje düğümünü ve ardından **Başvuru Ekle**.
+2. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **SharePointCommands** proje düğümünü ve ardından **Başvuru Ekle**.
 
-3.  Üzerinde **uzantıları** sekmesinde aşağıdaki derlemeler için onay kutularını seçin ve tıklayın ardından **Tamam** düğmesi
+3. Üzerinde **uzantıları** sekmesinde aşağıdaki derlemeler için onay kutularını seçin ve tıklayın ardından **Tamam** düğmesi
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
 ## <a name="define-the-custom-deployment-step"></a>Özel dağıtım adımı tanımlayın
  Yükseltme dağıtım adımı tanımlayan bir sınıf oluşturun. Sınıfının Implements dağıtım adımı tanımlamak için <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> arabirimi. Özel bir dağıtım adımı tanımlamak istediğinizde bu arabirimi uygulayın.
 
 #### <a name="to-define-the-custom-deployment-step"></a>Özel dağıtım adımı tanımlamak için
 
-1.  İçinde **DeploymentStepExtension** proje UpgradeStep kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
+1. İçinde **DeploymentStepExtension** proje UpgradeStep kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
 
     > [!NOTE]
     >  Ne zaman bu kodu ekleyin, proje bazı derleme hataları olacaktır, ancak bunlar kaybolur sonra sonraki adımlarda kod ekleyin.
@@ -159,7 +159,7 @@ ms.locfileid: "56609403"
 
 #### <a name="to-create-the-deployment-configuration"></a>Dağıtım yapılandırması oluşturmak için
 
-1.  İçinde **DeploymentStepExtension** proje DeploymentConfigurationExtension kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
+1. İçinde **DeploymentStepExtension** proje DeploymentConfigurationExtension kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
@@ -169,7 +169,7 @@ ms.locfileid: "56609403"
 
 #### <a name="to-define-the-sharepoint-commands"></a>SharePoint komutları tanımlamak için
 
-1.  İçinde **SharePointCommands** proje, komutları kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
+1. İçinde **SharePointCommands** proje, komutları kod dosyasını açın ve ardından aşağıdaki kodu yapıştırın.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
@@ -179,37 +179,37 @@ ms.locfileid: "56609403"
 
 #### <a name="to-build-the-projects"></a>Projeleri derlemek için
 
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **DeploymentStepExtension** proje ve ardından **yapı**.
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **DeploymentStepExtension** proje ve ardından **yapı**.
 
-2.  Kısayol menüsünü açın **SharePointCommands** proje ve ardından **yapı**.
+2. Kısayol menüsünü açın **SharePointCommands** proje ve ardından **yapı**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Uzantıyı dağıtmak için VSIX paketi oluşturma
  Uzantıyı dağıtmak için VSIX paketi oluşturmak için çözümünüzdeki VSIX projesi kullanın. İlk olarak, VSIX projesinde source.extension.vsixmanifest dosyasını değiştirerek VSIX paketini yapılandırın. Ardından çözümü oluşturarak VSIX paketini oluşturun.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Yapılandırma ve VSIX paketini oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**altında **UpgradeDeploymentStep** ilişkin kısayol menüsünü açın, proje **source.extension.vsixmanifest** dosya ve seçin **Açık**.
+1. İçinde **Çözüm Gezgini**altında **UpgradeDeploymentStep** ilişkin kısayol menüsünü açın, proje **source.extension.vsixmanifest** dosya ve seçin **Açık**.
 
      Visual Studio, dosyayı bildirim düzenleyicisinde açar. Source.extension.vsixmanifest dosyası, tüm VSIX paketleri gerektiren extension.vsixmanifest dosyasının temelidir. Bu dosya hakkında daha fazla bilgi için bkz. [VSIX Uzantı Şeması 1.0 başvurusu](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  İçinde **ürün adı** kutusuna **SharePoint projeleri için yükseltme dağıtım adımı**.
+2. İçinde **ürün adı** kutusuna **SharePoint projeleri için yükseltme dağıtım adımı**.
 
-3.  İçinde **Yazar** kutusuna **Contoso**.
+3. İçinde **Yazar** kutusuna **Contoso**.
 
-4.  İçinde **açıklama** kutusuna **SharePoint projelerinde kullanılabilir bir yükseltme özel dağıtım adımı sağlar**.
+4. İçinde **açıklama** kutusuna **SharePoint projelerinde kullanılabilir bir yükseltme özel dağıtım adımı sağlar**.
 
-5.  İçinde **varlıklar** sekmesini düzenleyicinin seçin **yeni** düğmesi.
+5. İçinde **varlıklar** sekmesini düzenleyicinin seçin **yeni** düğmesi.
 
      **Yeni varlık Ekle** iletişim kutusu görüntülenir.
 
-6.  İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
+6. İçinde **türü** listesinde **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
     >  Bu değer karşılık gelen `MefComponent` extension.vsixmanifest dosyasındaki öğesi. Bu öğe VSIX paketinde bir uzantı derlemesinin adını belirtir. Daha fazla bilgi için [MEFComponent öğesi (VSX şema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
+7. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.
 
-8.  İçinde **proje** listesinde **DeploymentStepExtension**ve ardından **Tamam** düğmesi.
+8. İçinde **proje** listesinde **DeploymentStepExtension**ve ardından **Tamam** düğmesi.
 
 9. Bildirim düzenleyicisinde seçin **yeni** düğmesini tekrar.
 
@@ -237,13 +237,13 @@ ms.locfileid: "56609403"
 
 #### <a name="to-start-debugging-the-extension"></a>Uzantı hata ayıklamasını başlatmak için
 
-1.  Yönetici kimlik bilgileriyle Visual Studio'yu yeniden başlatın ve ardından UpgradeDeploymentStep çözümü açın.
+1. Yönetici kimlik bilgileriyle Visual Studio'yu yeniden başlatın ve ardından UpgradeDeploymentStep çözümü açın.
 
-2.  DeploymentStepExtension projesinde UpgradeStep kod dosyasını açın ve ardından ilk kod satırına bir kesme noktası ekleyin `CanExecute` ve `Execute` yöntemleri.
+2. DeploymentStepExtension projesinde UpgradeStep kod dosyasını açın ve ardından ilk kod satırına bir kesme noktası ekleyin `CanExecute` ve `Execute` yöntemleri.
 
-3.  Seçim yaparak hata ayıklamayı Başlat **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **hata ayıklamayı Başlat**.
+3. Seçim yaparak hata ayıklamayı Başlat **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **hata ayıklamayı Başlat**.
 
-4.  Visual Studio için SharePoint Projects\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade dağıtım adımı için uzantıyı yükleyen ve Visual Studio'nun deneysel örneği başlar. Yükseltme dağıtım adımı bu Visual Studio örneğinde test edeceğiz.
+4. Visual Studio için SharePoint Projects\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade dağıtım adımı için uzantıyı yükleyen ve Visual Studio'nun deneysel örneği başlar. Yükseltme dağıtım adımı bu Visual Studio örneğinde test edeceğiz.
 
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Liste tanımı ve liste örneği ile bir SharePoint projesi oluşturmak için
 
@@ -288,13 +288,13 @@ ms.locfileid: "56609403"
 
 12. Liste tasarımcısında üzerinde **sütunları** sekmesini, **yeni veya var olan sütun adı yazın** satır ve ardından aşağıdaki sütunları ekleyin **sütun görünen adı** listesi:
 
-    1.  Ad
+    1. Ad
 
-    2.  Şirket
+    2. Şirket
 
-    3.  İş Telefonu
+    3. İş Telefonu
 
-    4.  E-posta
+    4. E-posta
 
 13. Tüm dosyaları kaydedin ve ardından listeyi Tasarımcısı'nı kapatın.
 
@@ -335,21 +335,21 @@ ms.locfileid: "56609403"
 
 #### <a name="to-deploy-the-list-definition-and-list-instance"></a>Liste tanımı ve liste örneği dağıtmak için
 
-1.  İçinde **Çözüm Gezgini**, seçin **EmployeesListDefinition** proje düğümü.
+1. İçinde **Çözüm Gezgini**, seçin **EmployeesListDefinition** proje düğümü.
 
-2.  İçinde **özellikleri** penceresinde emin **etkin Dağıtım Yapılandırması** özelliği **varsayılan**.
+2. İçinde **özellikleri** penceresinde emin **etkin Dağıtım Yapılandırması** özelliği **varsayılan**.
 
-3.  Seçin **F5** tuşunu veya menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**.
+3. Seçin **F5** tuşunu veya menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Başlat**.
 
-4.  Proje başarıyla oluşturulursa, web tarayıcısı SharePoint sitesine açıldığını doğrulayın, **listeler** Hızlı Başlat çubuğunda öğesi içerir yeni **çalışanlar** listesi ve  **Çalışanların** listesi Jim Hance için giriş içerir.
+4. Proje başarıyla oluşturulursa, web tarayıcısı SharePoint sitesine açıldığını doğrulayın, **listeler** Hızlı Başlat çubuğunda öğesi içerir yeni **çalışanlar** listesi ve  **Çalışanların** listesi Jim Hance için giriş içerir.
 
-5.  Web tarayıcısını kapatın.
+5. Web tarayıcısını kapatın.
 
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Liste tanımı ve liste örneği değiştirin ve bunları yeniden dağıtma
 
-1.  EmployeesListDefinition projeyi *Elements.xml* alt öğesi olan dosya **çalışan liste örneği** proje öğesi.
+1. EmployeesListDefinition projeyi *Elements.xml* alt öğesi olan dosya **çalışan liste örneği** proje öğesi.
 
-2.  Kaldırma `Data` öğe ve alt öğelerinde harcanan giriş Jim Hance için listeden kaldırmak için.
+2. Kaldırma `Data` öğe ve alt öğelerinde harcanan giriş Jim Hance için listeden kaldırmak için.
 
      İşiniz bittiğinde, aşağıdaki XML dosya içermelidir.
 
@@ -365,19 +365,19 @@ ms.locfileid: "56609403"
     </Elements>
     ```
 
-3.  Kaydet ve Kapat *Elements.xml* dosya.
+3. Kaydet ve Kapat *Elements.xml* dosya.
 
-4.  Kısayol menüsünü açın **çalışanların listesi** proje öğesi ve ardından **açık** veya **özellikleri**.
+4. Kısayol menüsünü açın **çalışanların listesi** proje öğesi ve ardından **açık** veya **özellikleri**.
 
-5.  Liste Tasarımcısı'nda **görünümleri** sekmesi.
+5. Liste Tasarımcısı'nda **görünümleri** sekmesi.
 
-6.  İçinde **Seçili sütunlar** listesinde **ekleri**ve ardından < bu sütuna taşımanız için bir tuşa **kullanılabilir sütunlar** listesi.
+6. İçinde **Seçili sütunlar** listesinde **ekleri**ve ardından < bu sütuna taşımanız için bir tuşa **kullanılabilir sütunlar** listesi.
 
-7.  Taşımak için önceki adımı yineleyin **iş telefonu** sütundan **Seçili sütunlar** listesindeki **kullanılabilir sütunlar** listesi.
+7. Taşımak için önceki adımı yineleyin **iş telefonu** sütundan **Seçili sütunlar** listesindeki **kullanılabilir sütunlar** listesi.
 
      Bu eylem, bu alanlar varsayılan görünümden kaldırır. **çalışanlar** SharePoint sitesinde listesi.
 
-8.  Seçim yaparak hata ayıklamayı Başlat **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **hata ayıklamayı Başlat**.
+8. Seçim yaparak hata ayıklamayı Başlat **F5** anahtar veya, menü çubuğundan seçme **hata ayıklama** > **hata ayıklamayı Başlat**.
 
 9. Doğrulayın **dağıtım çakışmalarını** iletişim kutusu görüntülenir.
 
@@ -389,28 +389,28 @@ ms.locfileid: "56609403"
 
 11. İçinde **listeler** bölümü Hızlı Başlat çubuğuna seçin **çalışanlar** listeleyin ve ardından aşağıdaki ayrıntıları doğrulayın:
 
-    -   **Ekleri** ve **ev telefonu** sütunları, bu liste görünümünde görünmez.
+    - **Ekleri** ve **ev telefonu** sütunları, bu liste görünümünde görünmez.
 
-    -   Liste boş olduğu. Kullanıldığında, **varsayılan** çözümü yeniden dağıtmak için Dağıtım Yapılandırması **çalışanlar** listesi yeni boş liste, projenizdeki ile değiştirilmiştir.
+    - Liste boş olduğu. Kullanıldığında, **varsayılan** çözümü yeniden dağıtmak için Dağıtım Yapılandırması **çalışanlar** listesi yeni boş liste, projenizdeki ile değiştirilmiştir.
 
 ## <a name="test-the-deployment-step"></a>Dağıtım adımı test
  Yükseltme dağıtım adımı test etmek artık hazırsınız. İlk olarak, SharePoint liste örneği için bir öğe ekleyin. Sonra liste tanımı ve liste örneği değiştirin, bunlar SharePoint sitesinde yükseltme ve yükseltme dağıtım adımı yeni öğe üzerine değil onaylayın.
 
 #### <a name="to-manually-add-an-item-to-the-list"></a>El ile listeye öğe eklemek için
 
-1.  SharePoint sitesindeki Şeritte altında **liste Araçları** sekmesini, **öğeleri** sekmesi.
+1. SharePoint sitesindeki Şeritte altında **liste Araçları** sekmesini, **öğeleri** sekmesi.
 
-2.  İçinde **yeni** Grup öğesini **yeni öğe**.
+2. İçinde **yeni** Grup öğesini **yeni öğe**.
 
      Alternatif olarak, seçtiğiniz **Yeni Öğe Ekle** bağlantıyı öğe listesi.
 
-3.  İçinde **çalışanları - yeni öğe** penceresi içinde **başlık** kutusuna **tesis Manager**.
+3. İçinde **çalışanları - yeni öğe** penceresi içinde **başlık** kutusuna **tesis Manager**.
 
-4.  İçinde **ad** kutusuna **Andy**.
+4. İçinde **ad** kutusuna **Andy**.
 
-5.  İçinde **şirket** kutusuna **Contoso**.
+5. İçinde **şirket** kutusuna **Contoso**.
 
-6.  Seçin **Kaydet** düğmesi, yeni öğe listesinde göründüğünü doğrulayın ve ardından web tarayıcısını kapatın.
+6. Seçin **Kaydet** düğmesi, yeni öğe listesinde göründüğünü doğrulayın ve ardından web tarayıcısını kapatın.
 
      Bu kılavuzda daha sonra bu öğeyi yükseltme dağıtım adımı bu listenin içeriği üzerine değil doğrulamak için kullanın.
 
@@ -457,31 +457,31 @@ ms.locfileid: "56609403"
 
 #### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>Liste örneği SharePoint sitesinden kaldırmak için
 
-1.  Açık **çalışanlar** liste zaten açık değilse SharePoint sitesinde listesi.
+1. Açık **çalışanlar** liste zaten açık değilse SharePoint sitesinde listesi.
 
-2.  SharePoint sitesindeki Şeritte seçin **liste Araçları** sekmesine ve ardından **listesi** sekmesi.
+2. SharePoint sitesindeki Şeritte seçin **liste Araçları** sekmesine ve ardından **listesi** sekmesi.
 
-3.  İçinde **ayarları** Grup öğesini **listesi ayarları** öğesi.
+3. İçinde **ayarları** Grup öğesini **listesi ayarları** öğesi.
 
-4.  Altında **izinler ve Yönetim**, seçin **bu listeyi Sil** komutu öğesini **Tamam** listeyi Geri Dönüşüm Kutusu'na göndermek ve ardından web kapatmak istediğinizi onaylamak için Tarayıcı.
+4. Altında **izinler ve Yönetim**, seçin **bu listeyi Sil** komutu öğesini **Tamam** listeyi Geri Dönüşüm Kutusu'na göndermek ve ardından web kapatmak istediğinizi onaylamak için Tarayıcı.
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Liste tanımı SharePoint sitesinden kaldırmak için
 
-1.  Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **derleme** > **geri çek**.
+1. Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **derleme** > **geri çek**.
 
      Visual Studio, SharePoint sitesinden liste tanımı geri çeker.
 
 #### <a name="to-uninstall-the-extension"></a>Uzantıyı kaldırmak için
 
-1.  Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
+1. Visual Studio'nun Deneysel örneğinin menü çubuğunda seçin **Araçları** > **Uzantılar ve güncelleştirmeler**.
 
      **Uzantılar ve güncelleştirmeler** iletişim kutusu açılır.
 
-2.  Uzantılar listesinde seçin **SharePoint projeleri için yükseltme dağıtım adımı**ve ardından **kaldırma** komutu.
+2. Uzantılar listesinde seçin **SharePoint projeleri için yükseltme dağıtım adımı**ve ardından **kaldırma** komutu.
 
-3.  Görünen iletişim kutusunda **Evet** uzantıyı kaldırın ve ardından istediğinizi onaylamak için **şimdi yeniden Başlat** kaldırma işlemini tamamlamak için.
+3. Görünen iletişim kutusunda **Evet** uzantıyı kaldırın ve ardından istediğinizi onaylamak için **şimdi yeniden Başlat** kaldırma işlemini tamamlamak için.
 
-4.  (Deneysel örneği ve Visual Studio'nun UpgradeDeploymentStep çözüm açık olduğu örneği) Visual Studio'nun her iki örneklerini kapatın.
+4. (Deneysel örneği ve Visual Studio'nun UpgradeDeploymentStep çözüm açık olduğu örneği) Visual Studio'nun her iki örneklerini kapatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [SharePoint paketleme ve dağıtımını genişletme](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

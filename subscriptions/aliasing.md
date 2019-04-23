@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Diğer ad veya kolay adlar kullanılması durumunda oturum açma başarısız olabilir
 searchscope: VS Subscription
-ms.openlocfilehash: cef5c71a62088fdef410dccb22b93eb0d7ad025d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041391"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Visual Studio abonelikleri için oturum açarken diğer adlar kullanırken başarısız olabilir
 
@@ -81,21 +81,23 @@ Lütfen mevcut bir abone directory hesabıyla güncelleştirmek için aşağıda
 
 Hoş Geldiniz e-posta başarıyla abonenizi ulaşarak olduğundan, Lütfen kopyalama ve yapıştırma aşağıda iletiye bir e-posta ve abonenizi Gönder. Word'ün % her abone için uygun bilgi ile değiştirin.
 
----Kopyalama aşağıdaki (Ctrl + C)---
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Hello % abone adı %
+Hello %SUBSCRIBER NAME%
 
-Visual Studio aboneliği atandı. Lütfen https://my.visualstudio.com, etkinleştirmek ve aboneliğinize erişmek için % dizin ADRESİNİN % adresinizi bilgilerinizle oturum açın.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Sorun yaşıyorsanız, lütfen Destek ekibine başvurun (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-Sayfanın en altında aşağıdakileri seçin:
-   - Hesapları, abonelikleri ve faturalandırma desteği
-   - Sorunu, abonelik oturum desteği seçin.
-   - İlgili ülke seçin
-   - İstenen Yardımlı Destek seçeneğini belirleyin
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
----Son kopyalama---
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Bir iş veya Okul hesabı kişisel bir hesap tanımlama
 
@@ -126,35 +128,37 @@ Aboneye abonelik atandıktan sonra bunları ziyaret etmek isteyen bir e-posta al
 
 Yukarıda özetlenen senaryo, abonenin "Hoş Geldiniz e" alırsınız, ancak diğer ad kullanımı nedeniyle oturum açamıyor oldukları oldukları fark edebilirsiniz.  Kullanabileceğiniz aşağıdaki abonenizi yukarıdaki adımların bildirim ve destek seçenekleri gerekirse önermek için metni.  Word'ün % her abone için uygun bilgi ile değiştirin.
 
----Kopyalama aşağıdaki (Ctrl + C)---
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Hello % abone adı %
+Hello %SUBSCRIBER NAME%
 
-Visual Studio aboneliği atanmış olan ve oturum açmak için yönlendirilmiş https://my.visualstudio.com Hoş Geldiniz e-postalarınızı göre.  Bu avantajlar kullanma için doğru Web sitesi olsa da, kuruluşumuz site erişebilmeniz için önce bazı ek adımlar uygulaması gerekir.  Lütfen şu adımları izleyin, "Microsoft, müşterilerimizin şirket e-posta adresine bağlanan Account" oluşturmanıza yardımcı olacak yönergeler aşağıda.  Bu adımları tamamladıktan sonra aboneliğinizin avantajlarına erişmek için e-posta adresinizi kullanır.
-1. Ziyaret edin https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Sağ taraftaki yeni Microsoft Account Oluştur'a tıklayın.
+2. Click Create new Microsoft Account on the right hand side
 
-3. Formu doldurun:
-   - Şirket e-posta adresinizi someone@example.com kutusu
-   - Bir parola girin
-   - Promosyon tercihlerinizi seçin
-   - İleri'ye tıklayın
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Hesap doğrulama adımları tamamlayın
+4. Complete the account validation steps
 
-5. Gerekirse, Visual Studio profilini tamamlayın
+5. If necessary, complete the Visual Studio profile
 
-6. Avantajlarınızı hemen görmeniz gerekir
+6. You should now see your benefits
 
-Not:  Ziyaret https://my.visualstudio.com gelecekte (örn. kullanmak istediğiniz hesabı seçin istenebilir "İş veya Okul hesabı" veya "Kişisel hesap").  Yukarıdaki adımları tamamladıktan sonra "Kişisel hesap" seçeneğini yararlanarak gerekecektir.
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Sorun yaşıyorsanız, lütfen Destek ekibine başvurun (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-Sayfanın en altında aşağıdakileri seçin:
-   - Hesapları, abonelikleri ve faturalandırma desteği
-   - Sorunu, abonelik oturum desteği seçin.
-   - İlgili ülke seçin
-   - İstenen Yardımlı Destek seçeneğini belirleyin
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
----Son kopyalama---
+----------- End Copy -----------
+```

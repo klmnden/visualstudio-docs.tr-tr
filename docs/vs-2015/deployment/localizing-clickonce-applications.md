@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039870"
 ---
 # <a name="localizing-clickonce-applications"></a>ClickOnce Uygulamalarını Yerelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
   
  Bu konuda dağıtmak için üç yol açıklar bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] diğer kültürler için uygulama:  
   
--   Tek bir dağıtımda tüm uydu derlemelerini içerir.  
+- Tek bir dağıtımda tüm uydu derlemelerini içerir.  
   
--   Her bulunan tek bir uydu derlemesi ile her bir kültür için bir dağıtım oluşturun.  
+- Her bulunan tek bir uydu derlemesi ile her bir kültür için bir dağıtım oluşturun.  
   
--   Uydu derlemelerini indirme.  
+- Uydu derlemelerini indirme.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Tüm uydu derlemelerin bir dağıtımda  
  Yayımlama birden çok yerine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtımlarında, tek bir yayımlayabilirsiniz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tüm uydu derlemelerini içeren dağıtım.  
@@ -77,9 +77,9 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
   
  Uygulamanızın müşteriler için kullanılabilir hale getirmeden önce yerelleştirilmiş dağıtımları test etmek için üç seçeneğiniz vardır:  
   
--   Çalıştırabileceğiniz, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygun bir uygulama yerelleştirilmiş Windows sürümleri.  
+- Çalıştırabileceğiniz, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygun bir uygulama yerelleştirilmiş Windows sürümleri.  
   
--   Ayarlayabileceğiniz <xref:System.Threading.Thread.CurrentUICulture%2A> program aracılığıyla uygulamanızdaki özelliği. (Bu özelliği çağırmadan önce ayarlanmalıdır <xref:System.Windows.Forms.Application.Run%2A> yöntemi.)  
+- Ayarlayabileceğiniz <xref:System.Threading.Thread.CurrentUICulture%2A> program aracılığıyla uygulamanızdaki özelliği. (Bu özelliği çağırmadan önce ayarlanmalıdır <xref:System.Windows.Forms.Application.Run%2A> yöntemi.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<assemblyIdentity > öğesi](../deployment/assemblyidentity-element-clickonce-deployment.md)   

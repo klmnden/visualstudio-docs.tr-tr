@@ -12,21 +12,21 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29590b96a8d8d2ad8fbddaf0d97b9ed55e6aadf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044024"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Başvuru Eklerken NuGet veya Uzantı SDK Kullanma Karşılaştırması
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir paketi, Visual Studio için NuGet uzantısı ya da bir yazılım geliştirme seti (SDK) kullanarak Visual Studio projeleri içinde kullanılmaya sağlayabilir. Arasındaki benzerlikleri ve farkları iki mekanizma açıklayarak, bu konuda en iyi göreviniz için seçmenize yardımcı olabilir.  
   
--   NuGet, bir proje çözümde kitaplıkları ekleme işlemini basitleştiren bir açık kaynak, paket Yönetimi sistemidir. Daha fazla bilgi için [NuGet genel bakış](http://go.microsoft.com/fwlink/?LinkId=254877).  
+- NuGet, bir proje çözümde kitaplıkları ekleme işlemini basitleştiren bir açık kaynak, paket Yönetimi sistemidir. Daha fazla bilgi için [NuGet genel bakış](http://go.microsoft.com/fwlink/?LinkId=254877).  
   
--   SDK, Visual Studio tek başvuru öğesi olarak davranır dosyaları koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, bu iletişim kutusu görüntülediğinizde, açık olan proje için uygun olan tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, tüm bu SDK içeriği IntelliSense erişebilir **araç kutusu**, tasarımcılar, **Nesne Tarayıcısı**, MSBuild, dağıtım, hata ayıklama ve paketleme. SDK'ları hakkında daha fazla bilgi için bkz. [yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md).  
+- SDK, Visual Studio tek başvuru öğesi olarak davranır dosyaları koleksiyonudur. **Başvuru Yöneticisi** iletişim kutusu, bu iletişim kutusu görüntülediğinizde, açık olan proje için uygun olan tüm SDK'ları listeler. Bir SDK için bir proje eklediğinizde, tüm bu SDK içeriği IntelliSense erişebilir **araç kutusu**, tasarımcılar, **Nesne Tarayıcısı**, MSBuild, dağıtım, hata ayıklama ve paketleme. SDK'ları hakkında daha fazla bilgi için bkz. [yazılım geliştirme seti oluşturma](../extensibility/creating-a-software-development-kit.md).  
   
 ## <a name="which-mechanism-should-i-use"></a>Hangi mekanizması kullanmalıyım?  
  Aşağıdaki tablo başvuru özelliklerinin bir SDK'sı NuGet başvuru özellikleriyle karşılaştırmanıza yardımcı olur.  

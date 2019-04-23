@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046507"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
    >  Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, bir sınıf diyagramına dosyaları veya kodu yalnızca şu kaynaklardan sürükleyebilirsiniz:  
    > 
    > - Diyagramı içeren uygulama projesi  
-   >   -   Uygulama projesi tarafından içeri aktarılan bir paylaşılan proje  
-   >   -   Başvurulan bir proje  
-   >   -   Bir derleme  
+   >   - Uygulama projesi tarafından içeri aktarılan bir paylaşılan proje  
+   >   - Başvurulan bir proje  
+   >   - Bir derleme  
   
     Kaynak kodu dosyasında tanımlı türleri temsil eden şekiller, diyagram üzerinde dosyayı sürüklediğiniz konumda görünür.  
   
@@ -61,7 +61,7 @@ Varolan bir türünü ve üyelerini görmek için bir sınıf diyagramına şekl
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Bir sınıf diyagramında bir projeyi içeriğini görüntülemek için  
   
-1.  Çözüm Gezgini veya sınıf görünümü, projeye sağ tıklayıp seçin **görünümü**, ardından **sınıf diyagramını görüntüle**.  
+1. Çözüm Gezgini veya sınıf görünümü, projeye sağ tıklayıp seçin **görünümü**, ardından **sınıf diyagramını görüntüle**.  
   
      Otomatik olarak doldurulan bir Sınıf Diyagramı oluşturulur.  
   

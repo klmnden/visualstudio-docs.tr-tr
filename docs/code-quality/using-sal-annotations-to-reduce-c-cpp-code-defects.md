@@ -12,47 +12,47 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: becbf24e8f957925584e9049b38b41cb6c511683
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab90a2e03aae60f3027b61d1f3358c05f490ebdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045102"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 SAL Microsoft kaynak kodu ek açıklama dilidir. Kaynak kod ek açıklamaları kullanarak, amaç, arka plan kod açık yapabilirsiniz. Bu ek açıklamalar, ayrıca otomatik statik çözümleme araçları, kodunuzu daha doğru bir şekilde önemli ölçüde daha az hatalı pozitif sonuçları ve hatalı negatif analiz etmek etkinleştirin.
 
  Belgelerin bu bölümdeki makaleleri SAL yönlerini tartışmanıza, başvuru için SAL söz dizimi sağlar ve verin, kullanım örnekleri.
 
--   [SAL'yi Anlama](../code-quality/understanding-sal.md)
+- [SAL'yi Anlama](../code-quality/understanding-sal.md)
 
      Bilgi ve çekirdek SAL ek açıklamalarını gösteren örnekler sağlar.
 
--   [İşlev Parametrelerini ve Dönüş Değerlerini Açıklama](../code-quality/annotating-function-parameters-and-return-values.md)
+- [İşlev Parametrelerini ve Dönüş Değerlerini Açıklama](../code-quality/annotating-function-parameters-and-return-values.md)
 
      İşlevler ve işlev parametreleri için SAL ek açıklamalarını listeler.
 
--   [İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)
+- [İşlev Davranışını Yorumlama](../code-quality/annotating-function-behavior.md)
 
      İşlevler ve işlevin davranışı için SAL ek açıklamalarını listeler.
 
--   [Yapıları ve Sınıfları Yorumlama](../code-quality/annotating-structs-and-classes.md)
+- [Yapıları ve Sınıfları Yorumlama](../code-quality/annotating-structs-and-classes.md)
 
      Yapılar ve sınıflar için SAL ek açıklamalarını listeler.
 
--   [Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)
+- [Kilitlenme Davranışını Yorumlama](../code-quality/annotating-locking-behavior.md)
 
      Kilit mekanizmalarıyla SAL ek açıklamalarını kullanma açıklanmaktadır.
 
--   [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [Açıklamanın Ne Zaman ve Nereye Uygulanacağını Belirtme](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
      Koşul veya diğer SAL ek açıklamaları (yerleştirme) kapsamını belirtin SAL ek açıklamalarını listeler.
 
--   [İç İşlevler](../code-quality/intrinsic-functions.md)
+- [İç İşlevler](../code-quality/intrinsic-functions.md)
 
      İç SAL ek açıklamalarını listeler.
 
--   [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
+- [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
      SAL ek açıklamalarını kullanma işlemini gösteren örnekler sağlar. Ayrıca yaygın görülen tehlikeleri açıklar.
 

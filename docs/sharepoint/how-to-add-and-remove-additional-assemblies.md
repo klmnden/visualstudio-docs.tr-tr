@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13bb8c394468b209c55af2878e15232a08ff9f7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa25413a40c9b2333acbaba96d55008dbcebfd39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051619"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Nasıl yapılır: Ekleme ve ek bütünleştirilmiş kodları Kaldır
   SharePoint paketinin, diğer derlemelerdeki işlevi veya verileri bağlıysa, derlemeleri, çözüm paketine (.wsp) ekleyebilirsiniz. Bu şekilde, SharePoint server özel derlemeler ile bir pakete yüklenmesini sağlar.
@@ -31,82 +31,82 @@ ms.locfileid: "56621168"
 
 #### <a name="to-add-an-existing-assembly"></a>Mevcut bir bütünleştirilmiş kodu eklemek için
 
-1.  Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+1. Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2.  Seçin **Gelişmiş** sekmesi.
+2. Seçin **Gelişmiş** sekmesi.
 
-3.  Seçin **Ekle** düğmesine ve ardından **mevcut bütünleştirilmiş kodu Ekle** listeden.
+3. Seçin **Ekle** düğmesine ve ardından **mevcut bütünleştirilmiş kodu Ekle** listeden.
 
      **Mevcut bütünleştirilmiş kodu Ekle** iletişim kutusu görüntülenir.
 
-4.  Üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")), eklemek istediğiniz bütünleştirilmiş kod seçin. Seçilen derleme göreli yolu taşınabilirliği amacıyla kullanmanızı öneririz.
+4. Üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")), eklemek istediğiniz bütünleştirilmiş kod seçin. Seçilen derleme göreli yolu taşınabilirliği amacıyla kullanmanızı öneririz.
 
-5.  İçin **dağıtım hedefi**, seçin **GlobalAssemblyCache** derlemeyi genel bütünleştirilmiş kod önbelleğine dağıtın veya seçmek için seçenek düğmesini **WebApplication** seçeneği SharePoint çalıştıran sunucudaki WebApplication klasörüne derlemesini dağıtmak için düğmesi.
+5. İçin **dağıtım hedefi**, seçin **GlobalAssemblyCache** derlemeyi genel bütünleştirilmiş kod önbelleğine dağıtın veya seçmek için seçenek düğmesini **WebApplication** seçeneği SharePoint çalıştıran sunucudaki WebApplication klasörüne derlemesini dağıtmak için düğmesi.
 
 #### <a name="to-add-an-assembly-from-project-output"></a>Proje çıkışından bütünleştirilmiş eklemek için
 
-1.  Açık **paket Tasarımcısı**.
+1. Açık **paket Tasarımcısı**.
 
      Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2.  Seçin **Gelişmiş** sekmesi.
+2. Seçin **Gelişmiş** sekmesi.
 
-3.  Seçin **Ekle** düğmesine ve ardından **proje çıkışından bütünleştirilmiş kodu Ekle** listeden.
+3. Seçin **Ekle** düğmesine ve ardından **proje çıkışından bütünleştirilmiş kodu Ekle** listeden.
 
      **Proje çıkışından bütünleştirilmiş kodu Ekle** iletişim kutusu görüntülenir.
 
-4.  İçinde **kaynak proje** listelemek ve eklemek istediğiniz kaynak projesini seçin.
+4. İçinde **kaynak proje** listelemek ve eklemek istediğiniz kaynak projesini seçin.
 
-5.  İçin **dağıtım hedefi**, seçin **GlobalAssemblyCache** derlemeyi genel bütünleştirilmiş kod önbelleğine dağıtın veya seçmek için seçenek düğmesini **WebApplication** seçeneği SharePoint çalıştıran sunucudaki WebApplication klasörüne derlemesini dağıtmak için düğmesi.
+5. İçin **dağıtım hedefi**, seçin **GlobalAssemblyCache** derlemeyi genel bütünleştirilmiş kod önbelleğine dağıtın veya seçmek için seçenek düğmesini **WebApplication** seçeneği SharePoint çalıştıran sunucudaki WebApplication klasörüne derlemesini dağıtmak için düğmesi.
 
 #### <a name="to-add-a-safe-control"></a>Güvenli denetim eklemek için
 
-1.  Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
+1. Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
 
-2.  İçinde **güvenli denetimler** bölmesinde seçin **yeni bir öğe eklemek için burayı tıklatın** düğmesi.
+2. İçinde **güvenli denetimler** bölmesinde seçin **yeni bir öğe eklemek için burayı tıklatın** düğmesi.
 
-3.  İçinde **derleme adı** sütun, derleme adını girin.
+3. İçinde **derleme adı** sütun, derleme adını girin.
 
-4.  İçinde **Namespace** sütun, ad alanı için güvenli denetim adı girin.
+4. İçinde **Namespace** sütun, ad alanı için güvenli denetim adı girin.
 
-5.  İçinde **tür adı** sütun türü adını girin.
+5. İçinde **tür adı** sütun türü adını girin.
 
 #### <a name="to-add-a-class-resource"></a>Bir sınıf kaynak eklemek için
 
-1.  Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
+1. Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
 
-2.  İçinde **sınıf kaynakları** bölmesinde seçin **yeni bir öğe eklemek için burayı tıklatın** düğmesi.
+2. İçinde **sınıf kaynakları** bölmesinde seçin **yeni bir öğe eklemek için burayı tıklatın** düğmesi.
 
-3.  İçinde **dosya adı** sütun, üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) ve eklemek istediğiniz sınıf kaynağı seçin.
+3. İçinde **dosya adı** sütun, üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) ve eklemek istediğiniz sınıf kaynağı seçin.
 
 ## <a name="delete-custom-assemblies"></a>Derlemeleri Sil
  Bir SharePoint paketi derlemeleri silmek ya da mevcut derlemelerden güvenli denetimler ve sınıf kaynakları silin.
 
 #### <a name="to-delete-an-existing-assembly"></a>Mevcut bir bütünleştirilmiş kodu silmek için
 
-1.  Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+1. Açık **paket Tasarımcısı**. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2.  Seçin **Gelişmiş** sekmesi.
+2. Seçin **Gelişmiş** sekmesi.
 
-3.  İçinde **ek derlemeler** bölmesinde, silmek istediğiniz özel bütünleştirilmiş kod seçin.
+3. İçinde **ek derlemeler** bölmesinde, silmek istediğiniz özel bütünleştirilmiş kod seçin.
 
-4.  Seçin **Sil** düğmesi.
+4. Seçin **Sil** düğmesi.
 
 #### <a name="to-delete-a-safe-control-for-an-assembly"></a>Bir derleme için güvenli denetim silinemedi
 
-1.  Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
+1. Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
 
-2.  Silmek istediğiniz güvenli denetim seçin.
+2. Silmek istediğiniz güvenli denetim seçin.
 
-3.  Delete tuşunu seçin.
+3. Delete tuşunu seçin.
 
 #### <a name="to-delete-a-class-resource-for-an-assembly"></a>Bir derleme için bir sınıf kaynak silinemedi
 
-1.  Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
+1. Açık **mevcut bütünleştirilmiş kodu Düzenle** iletişim kutusu. Bunu yapmak için paket Tasarımcısı'nı açın, **Gelişmiş** sekmesinde, bir derleme seçin ve ardından **Düzenle** düğmesi.
 
-2.  Silmek istediğiniz sınıf kaynağı seçin.
+2. Silmek istediğiniz sınıf kaynağı seçin.
 
-3.  Delete tuşunu seçin.
+3. Delete tuşunu seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [SharePoint özellikleri oluşturma](../sharepoint/creating-sharepoint-features.md)

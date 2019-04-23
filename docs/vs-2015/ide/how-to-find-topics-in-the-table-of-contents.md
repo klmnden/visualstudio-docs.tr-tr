@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055504"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Nasıl yapılır: İçindekilerde Konu Bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "54778348"
   
 #### <a name="to-filter-the-toc"></a>TOC için filtre uygulamak için  
   
-1.  Seçin **içeriği** sekmesi.  
+1. Seçin **içeriği** sekmesi.  
   
-2.  İçinde **filtre içeriğini** metin kutusunda, bir terimi girin.  
+2. İçinde **filtre içeriğini** metin kutusunda, bir terimi girin.  
   
 > [!NOTE]
 >  Filtre çalıştırmak için bir uzun sürerse, sonuçları daha hızlı bir şekilde kullanarak görüntüleyebilir `title:` Gelişmiş arama işleci.  
@@ -48,9 +48,9 @@ ms.locfileid: "54778348"
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>TOC öğesini konu penceresiyle eşitlemek için  
   
-1.  Bir konu görüntüleyin.  
+1. Bir konu görüntüleyin.  
   
-2.  Tıklayın **içindekilerde konuyu Göster** araç çubuğunda düğmesini ya da Ctrl + S tuşlarına basın.  
+2. Tıklayın **içindekilerde konuyu Göster** araç çubuğunda düğmesini ya da Ctrl + S tuşlarına basın.  
   
      **İçeriği** sekmesi açılır ve TOC içinde konunun yerini görüntüler.  
   

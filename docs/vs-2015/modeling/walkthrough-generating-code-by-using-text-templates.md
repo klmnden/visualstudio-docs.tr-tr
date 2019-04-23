@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052889"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>İzlenecek yol: Metin şablonları kullanarak kod oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Proje oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünü tıklatın **yeni** ve ardından **proje**.  
+1. Üzerinde **dosya** menüsünü tıklatın **yeni** ve ardından **proje**.  
   
-2.  Tıklayın **Visual C#** düğümünü ve ardından **şablonları** bölmesinde tıklayın **konsol uygulaması.**  
+2. Tıklayın **Visual C#** düğümünü ve ardından **şablonları** bölmesinde tıklayın **konsol uygulaması.**  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Bir prototip XML dosyası projeye ekleyin.  
  Bu dosyanın amacı, okuyabilir, uygulamanızın istediğiniz XML düğüm türleri örnekleri sağlamaktır. Uygulamanızı test etmek için kullanılacak bir dosya olabilir. Bu dosyadaki her düğüm türü için bir C# sınıf şablonu oluşturur.  

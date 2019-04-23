@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053942"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>İzlenecek yol: Bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışını Visual Studio'ya içeri aktarma
   Bu kılavuzda SharePoint Designer 2010 içinde oluşturulan bir yeniden kullanılabilir iş akışını içeri aktarma gösteren bir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint iş akışı projesi.
@@ -48,11 +48,11 @@ ms.locfileid: "56603431"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint.
+- Desteklenen sürümleri [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ve SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010'u.
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010'u.
 
 ## <a name="create-target-sharepoint-subsites"></a>Hedef SharePoint alt siteleri oluşturma
  İlk olarak, iki yeni SharePoint alt siteleri oluşturun: biri dönüştürülmüş iş akışlarını barındırmak için başka bir SharePoint Tasarımcısı yeniden kullanılabilir iş akışlarından barındırmak için.
@@ -80,27 +80,27 @@ ms.locfileid: "56603431"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>SharePoint Designer yeniden kullanılabilir iş akışı oluşturmak için
 
-1.  İçinde **alt** bölümünde, seçin **SPD1** değiştirmek için site.
+1. İçinde **alt** bölümünde, seçin **SPD1** değiştirmek için site.
 
-2.  Şerit üzerinde **yeniden kullanılabilir iş akışını** düğmesi.
+2. Şerit üzerinde **yeniden kullanılabilir iş akışını** düğmesi.
 
      Yeniden kullanılabilir iş akışı oluşturma sihirbazı görünür.
 
-3.  İçinde **adı** kutusuna **SPD görev iş akışı**.
+3. İçinde **adı** kutusuna **SPD görev iş akışı**.
 
-4.  İçinde **içerik türü** listesinde **görev**ve ardından **Tamam** düğmesi.
+4. İçinde **içerik türü** listesinde **görev**ve ardından **Tamam** düğmesi.
 
      İş Akışı Tasarımcısı SharePoint iş akışı Tasarımcısı'nda açılır.
 
-5.  İş akışı tasarımcısında, 1. Adım'ı seçin ve ardından, Şerit üzerinde **koşul** düğmesi.
+5. İş akışı tasarımcısında, 1. Adım'ı seçin ve ardından, Şerit üzerinde **koşul** düğmesi.
 
-6.  Koşullar listesinde seçin **geçerli öğesi alanı değeri eşitse**.
+6. Koşullar listesinde seçin **geçerli öğesi alanı değeri eşitse**.
 
      Bu adım adlı bir koşul ekler **alanı değere eşitse**.
 
-7.  İçinde **alanı değere eşitse** koşul öğesini **alan** bağlantı.
+7. İçinde **alanı değere eşitse** koşul öğesini **alan** bağlantı.
 
-8.  Değerler listesinde seçin **başlık**.
+8. Değerler listesinde seçin **başlık**.
 
 9. İçinde **alanı değere eşitse** koşul öğesini **değer** bağlantı.
 
@@ -128,23 +128,23 @@ ms.locfileid: "56603431"
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Yeniden kullanılabilir iş akışını kaydetmek ve dağıtmak için
 
-1.  SharePoint Designer'ın en üstünde **Kaydet** ilerlemenizi kaydetmek için düğmesine ve ardından **Yayımla** düğme akışına dağıtmak için **SPD1** SharePoint sitesi .
+1. SharePoint Designer'ın en üstünde **Kaydet** ilerlemenizi kaydetmek için düğmesine ve ardından **Yayımla** düğme akışına dağıtmak için **SPD1** SharePoint sitesi .
 
-2.  Gezinti bölmesinde **iş akışları** nesne.
+2. Gezinti bölmesinde **iş akışları** nesne.
 
-3.  Altında **yeniden kullanılabilir iş akışını**, seçin **SPD görev iş akışı**.
+3. Altında **yeniden kullanılabilir iş akışını**, seçin **SPD görev iş akışı**.
 
-4.  Şerit üzerinde **şablon olarak Kaydet** iş akışı olarak kaydetmek için bir *.wsp* dosya.
+4. Şerit üzerinde **şablon olarak Kaydet** iş akışı olarak kaydetmek için bir *.wsp* dosya.
 
-5.  Açık **SPD1** bir tarayıcıda görüntülemek için SharePoint sitesi *.wsp* SharePoint'te dosya.
+5. Açık **SPD1** bir tarayıcıda görüntülemek için SharePoint sitesi *.wsp* SharePoint'te dosya.
 
-6.  Hızlı Başlat çubuğunda **kitaplıkları** bağlantı.
+6. Hızlı Başlat çubuğunda **kitaplıkları** bağlantı.
 
-7.  İçinde **belge kitaplıkları** bölümünde, seçin **sitesi varlıklarını** bağlantı.
+7. İçinde **belge kitaplıkları** bölümünde, seçin **sitesi varlıklarını** bağlantı.
 
      **SPD görev iş akışı** dosyası, diğer site varlıklarla listelenir.
 
-8.  Dosyalar listesinde, bu dosyanın adını seçin
+8. Dosyalar listesinde, bu dosyanın adını seçin
 
 9. İçinde **dosya indirme** iletişim kutusunda **Kaydet** kaydetmek için *.wsp* yerel sisteminizde dosyanın.
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603431"
 
 11. Çünkü **yeniden kullanılabilir SharePoint 2010 iş akışını içeri aktarma** şablonu içeri aktarılan iş akışının ilişkilendirme özellik değerlerini alma değil, bunları girmeniz gerekir. Bunu yapmak için:
 
-    1.  İçinde **Çözüm Gezgini**, seçin **SPD_Workflow_TestFT** düğümü.
+    1. İçinde **Çözüm Gezgini**, seçin **SPD_Workflow_TestFT** düğümü.
 
-    2.  Üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) gibi bir liste özelliklerinin yanında düğmesini **hedef liste** özelliği.
+    2. Üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) gibi bir liste özelliklerinin yanında düğmesini **hedef liste** özelliği.
 
-    3.  SharePoint Özelleştirme Sihirbazı'nda bulunan eksik değerleri doldurun ve ardından **son** düğmesi.
+    3. SharePoint Özelleştirme Sihirbazı'nda bulunan eksik değerleri doldurun ve ardından **son** düğmesi.
 
 12. .Xoml dosyayı seçin ve ardından, menü çubuğunda, **görünümü** > **Tasarımcısı** alınan iş akışı iş akışı Tasarımcısı'nda görüntülenecek.
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603431"
 
 14. Aşağıdaki adım kümelerinden birini uygulayın:
 
-    -   Çift **CodeActivity1** bir olay işleyicisi oluşturmak ve kodu görüntüleyin.
+    - Çift **CodeActivity1** bir olay işleyicisi oluşturmak ve kodu görüntüleyin.
 
-    -   İçinde **özellikleri** penceresi **CodeActivity1**, değerini **ExecuteCode** özelliğini **codeActivity_ExecuteCode**.
+    - İçinde **özellikleri** penceresi **CodeActivity1**, değerini **ExecuteCode** özelliğini **codeActivity_ExecuteCode**.
 
 15. Varolan altında aşağıdaki **kullanarak** veya **içeri aktarmalar** ifadeleri:
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603431"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>Projeyi dağıtmak ve iş akışını ilişkilendirmek için
 
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], seçin **F5** çalıştırın ve dönüştürülmüş iş akışı projesi dağıtmak için anahtar.
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], seçin **F5** çalıştırın ve dönüştürülmüş iş akışı projesi dağıtmak için anahtar.
 
-2.  Hızlı Başlat çubuğunda **görevleri** Görevler listesini görüntülemek için bağlantı.
+2. Hızlı Başlat çubuğunda **görevleri** Görevler listesini görüntülemek için bağlantı.
 
-3.  Üzerinde **liste Araçları** sekmesini, **öğeleri** düğmesine ve ardından **yeni öğe** düğmesi.
+3. Üzerinde **liste Araçları** sekmesini, **öğeleri** düğmesine ve ardından **yeni öğe** düğmesi.
 
      **Görevler - yeni öğe** iletişim kutusu açılır.
 
-4.  İçinde **başlık** kutusuna **yeni görev**ve ardından **Kaydet** düğmesi.
+4. İçinde **başlık** kutusuna **yeni görev**ve ardından **Kaydet** düğmesi.
 
-5.  Üzerinde **liste Araçları** sekmesini, **listesi** düğmesine ve ardından **listesi ayarları** düğmesi.
+5. Üzerinde **liste Araçları** sekmesini, **listesi** düğmesine ve ardından **listesi ayarları** düğmesi.
 
      **Listesi ayarları** sayfası görüntülenir.
 
-6.  İçinde **izinler ve Yönetim** bölümünde, seçin **iş akışı ayarları** bağlantı.
+6. İçinde **izinler ve Yönetim** bölümünde, seçin **iş akışı ayarları** bağlantı.
 
      **İş akışı ayarları** sayfası görüntülenir.
 
-7.  Seçin **bir iş akışı Ekle** bağlantı.
+7. Seçin **bir iş akışı Ekle** bağlantı.
 
-8.  İçinde **iş akışı** listesinde **WorkflowImportProject1 - SPD iş akışı Test**.
+8. İçinde **iş akışı** listesinde **WorkflowImportProject1 - SPD iş akışı Test**.
 
 9. İçinde **adı** kutusuna **SPD iş akışı Test**ve ardından **Tamam** düğmesi.
 

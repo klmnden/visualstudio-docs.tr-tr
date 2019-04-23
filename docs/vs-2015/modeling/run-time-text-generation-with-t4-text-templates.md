@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059272"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 Metin Şablonları İle Çalışma Süresi Metni Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Bir çalışma zamanı metin şablonu oluşturmak için  
   
-1.  Çözüm Gezgini'nde projenizin kısayol menüsünden seçin **Ekle**, **yeni öğe**.  
+1. Çözüm Gezgini'nde projenizin kısayol menüsünden seçin **Ekle**, **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **çalışma zamanı metin şablonu**. (İçinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] altına bakın **ortak Items\General**.)  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunda **çalışma zamanı metin şablonu**. (İçinde [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] altına bakın **ortak Items\General**.)  
   
-3.  Şablon dosyanız için bir ad yazın.  
+3. Şablon dosyanız için bir ad yazın.  
   
     > [!NOTE]
     >  Şablon dosyası adı, oluşturulan kodda bir sınıf adı olarak kullanılacaktır. Bu nedenle, boşluk veya noktalama işareti olmamalıdır.  
   
-4.  Seçin **ekleme**.  
+4. Seçin **ekleme**.  
   
      Yeni bir dosya uzantısı olan oluşturulduğunda **.tt**. Kendi **özel araç** özelliği **TextTemplatingFilePreprocessor**. Aşağıdaki satırları aşağıdakileri içerir:  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Var olan bir metin dosyası için bir çalışma zamanı şablonu dönüştürmek için  
   
-1.  Dosyaya dahil, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje. Çözüm Gezgini'nde projenizin kısayol menüsünden seçin **Ekle**, **var olan öğe**.  
+1. Dosyaya dahil, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje. Çözüm Gezgini'nde projenizin kısayol menüsünden seçin **Ekle**, **var olan öğe**.  
   
-2.  Dosya kümesi **özel Araçlar** özelliğini **TextTemplatingFilePreprocessor**. Çözüm Gezgini içinde dosyanın kısayol menüsünden seçin **özellikleri**.  
+2. Dosya kümesi **özel Araçlar** özelliğini **TextTemplatingFilePreprocessor**. Çözüm Gezgini içinde dosyanın kısayol menüsünden seçin **özellikleri**.  
   
     > [!NOTE]
     >  Özellik zaten ayarlanmışsa, bu olduğundan emin olun **TextTemplatingFilePreprocessor** değil **TextTemplatingFileGenerator**. Uzantı zaten olan bir dosya eklerseniz bu durum ortaya çıkabilir **.tt**.  
   
-3.  İçin dosya adı uzantısını değiştiren **.tt**. Bu adım isteğe bağlı olsa da, dosyanın yanlış bir düzenleyicide açmayı önlemek yardımcı olur.  
+3. İçin dosya adı uzantısını değiştiren **.tt**. Bu adım isteğe bağlı olsa da, dosyanın yanlış bir düzenleyicide açmayı önlemek yardımcı olur.  
   
-4.  Dosya adının ana bölümünden herhangi bir boşluk veya noktalama işareti kaldırın. Örneğin, "My Web Page.tt" yanlış olacaktır, ancak "MyWebPage.tt" doğrudur. Dosya adı, oluşturulan kodda bir sınıf adı olarak kullanılacaktır.  
+4. Dosya adının ana bölümünden herhangi bir boşluk veya noktalama işareti kaldırın. Örneğin, "My Web Page.tt" yanlış olacaktır, ancak "MyWebPage.tt" doğrudur. Dosya adı, oluşturulan kodda bir sınıf adı olarak kullanılacaktır.  
   
-5.  Aşağıdaki satırı dosyasının başına ekleyin. Visual Basic projesinde çalışıyorsanız, "C#" "VB" ile değiştirin.  
+5. Aşağıdaki satırı dosyasının başına ekleyin. Visual Basic projesinde çalışıyorsanız, "C#" "VB" ile değiştirin.  
   
      `<#@ template language="C#" #>`  
   

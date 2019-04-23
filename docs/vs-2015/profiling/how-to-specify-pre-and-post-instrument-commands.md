@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038349"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Nasıl yapılır: Ön ve son izleme komutları belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,39 +53,39 @@ ms.locfileid: "54792854"
   
 ### <a name="to-specify-pre-instrument-commands"></a>İşaretleme öncesi komut belirtmek için  
   
-1.  Aşağıdaki adımlardan birini uygulayın:  
+1. Aşağıdaki adımlardan birini uygulayın:  
   
-    -   İşaretleme öncesi komutlar tüm ikili dosyaları için bir performans oturumu belirtmek için performans oturumu düğümünde seçin **performans Gezgini**ve ardından sağ tıklayıp **özellikleri**.  
+    - İşaretleme öncesi komutlar tüm ikili dosyaları için bir performans oturumu belirtmek için performans oturumu düğümünde seçin **performans Gezgini**ve ardından sağ tıklayıp **özellikleri**.  
   
-    -   İşaretleme öncesi komut için belirli bir ikili belirtmek için ikili adına sağ tıklayın **hedefleri** performans oturumu tıklayın ve ardından listesi **özellikleri**.  
+    - İşaretleme öncesi komut için belirli bir ikili belirtmek için ikili adına sağ tıklayın **hedefleri** performans oturumu tıklayın ve ardından listesi **özellikleri**.  
   
-2.  İçinde **özellik sayfaları**, tıklayın **izleme**.  
+2. İçinde **özellik sayfaları**, tıklayın **izleme**.  
   
-3.  Komut türü **komut satırı** metin kutusu altında **işaretleme öncesi olaylar**.  
+3. Komut türü **komut satırı** metin kutusu altında **işaretleme öncesi olaylar**.  
   
     > [!NOTE]
     >  Üç nokta düğmesine tıklayabilirsiniz **(...)**  bitişik olan **komut satırı** kutusunu göz atın ve uygun .exe, .cmd veya .bat dosyasını seçin.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
      Komut çalışmasını kaldırmadan devre dışı bırakmak için seçin **İzleme'den Dışla** onay kutusu. Derleyici veya bağlayıcı ayarları değiştirmek için proje özellik sayfalarını kullanın.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Son izleme komutları belirtmek için  
   
-1.  Aşağıdaki adımlardan birini uygulayın:  
+1. Aşağıdaki adımlardan birini uygulayın:  
   
-    -   Son izleme komutları tüm ikili dosyaları için bir performans oturumu belirtmek için performans oturumu düğümünde seçin **performans Gezgini**ve ardından sağ tıklayıp **özellikleri**.  
+    - Son izleme komutları tüm ikili dosyaları için bir performans oturumu belirtmek için performans oturumu düğümünde seçin **performans Gezgini**ve ardından sağ tıklayıp **özellikleri**.  
   
-    -   Son izleme komutları için belirli bir ikili belirtmek için ikili adına sağ tıklayın **hedefleri** performans oturumu tıklayın ve ardından listesi **özellikleri**.  
+    - Son izleme komutları için belirli bir ikili belirtmek için ikili adına sağ tıklayın **hedefleri** performans oturumu tıklayın ve ardından listesi **özellikleri**.  
   
-2.  İçinde **özellik sayfaları**, tıklayın **izleme**.  
+2. İçinde **özellik sayfaları**, tıklayın **izleme**.  
   
-3.  Komut türü **komut satırı** metin kutusu altında **son izleme olayları**.  
+3. Komut türü **komut satırı** metin kutusu altında **son izleme olayları**.  
   
     > [!NOTE]
     >  Üç nokta düğmesine tıklayabilirsiniz **(...)**  bitişik olan **komut satırı** kutusunu göz atın ve uygun .exe, .cmd veya .bat dosyasını seçin.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
      Komut çalışmasını kaldırmadan devre dışı bırakmak için seçin **İzleme'den Dışla** onay kutusu. Derleyici veya bağlayıcı ayarları değiştirmek için proje özellik sayfalarını kullanın.  
   

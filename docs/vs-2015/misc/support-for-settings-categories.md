@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054488"
 ---
 # <a name="support-for-settings-categories"></a>Ayarlar kategorileri için destek
 Ayarları kategorisi tümleşik geliştirme ortamı (IDE) özelleştirme seçenekleri grubundan oluşur. Örneğin, ayarları düzenini denetleyebilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows ve menüler içeriği. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -29,11 +29,11 @@ Ayarları kategorisi tümleşik geliştirme ortamı (IDE) özelleştirme seçene
   
  Yönetilen paket çerçevesini (MPF) en az ek kod oluşturma ayarlarını kategorileri destekler.  
   
--   Kategori için bir kapsayıcı tarafından sınıflara sağlamak VSPackage oluşturduğunuz <xref:Microsoft.VisualStudio.Shell.Package> sınıfı.  
+- Kategori için bir kapsayıcı tarafından sınıflara sağlamak VSPackage oluşturduğunuz <xref:Microsoft.VisualStudio.Shell.Package> sınıfı.  
   
--   Türevi göre kategorisi oluşturma gelen <xref:Microsoft.VisualStudio.Shell.DialogPage> sınıfı.  
+- Türevi göre kategorisi oluşturma gelen <xref:Microsoft.VisualStudio.Shell.DialogPage> sınıfı.  
   
--   İki bağlantı <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- İki bağlantı <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Ayarlar kategorileri için destek  
  <xref:Microsoft.VisualStudio.Shell.Package> Sınıfı kategoriler oluşturmak için destek sağlar. <xref:Microsoft.VisualStudio.Shell.DialogPage> Sınıfı bir kategori uygular. Varsayılan uygulaması <xref:Microsoft.VisualStudio.Shell.DialogPage> bir kategori olarak kullanıcıya genel özelliklerini sunar. Daha fazla bilgi için [ayarları kategorisi oluşturma](../extensibility/creating-a-settings-category.md).  

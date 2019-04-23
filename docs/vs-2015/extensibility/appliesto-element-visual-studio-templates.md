@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044193"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo Öğesi (Visual Studio Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Bir veya daha fazla yeteneği karşılamak için isteğe bağlı bir ifade belir
   
  Geçerli ifade sözdizimi şu şekilde tanımlanır:  
   
--   Yetenek ifadesi gibi "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- Yetenek ifadesi gibi "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   "&#124;" OR işlecidir.  
+- "&#124;" OR işlecidir.  
   
--   "&" Ve "+" karakterlerinin ikisi de AND işleçleridir.  
+- "&" Ve "+" karakterlerinin ikisi de AND işleçleridir.  
   
--   "!" karakteri NOT işlecidir.  
+- "!" karakteri NOT işlecidir.  
   
--   Parantezler değerlendirme-öncelik sırasını zorlar.  
+- Parantezler değerlendirme-öncelik sırasını zorlar.  
   
--   Null veya boş ifade bir eşleşme olarak değerlendirilir.  
+- Null veya boş ifade bir eşleşme olarak değerlendirilir.  
   
--   Proje özellikleri, bu ayrılmış karakterler dışında herhangi bir karakter olabilir: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r  
+- Proje özellikleri, bu ayrılmış karakterler dışında herhangi bir karakter olabilir: "'' :;,+-*/\\! ~&#124;& %$@^() ={}[] <>? \t\b\n\r  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, üç farklı şablonu göstermektedir. `Template1` tüm C# projesi türleri veya destekleyen herhangi bir proje türü geçerli `WindowsAppContainer` yeteneği. `Template2` tüm C# projeleri için geçerlidir. `Template3` olmayan C# projeleri için geçerlidir `WindowsAppContainer` projeleri.  

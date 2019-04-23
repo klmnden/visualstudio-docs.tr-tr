@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041214"
 ---
 # <a name="troubleshoot-code-coverage"></a>Kod kapsamı sorunlarını giderme
 
@@ -43,9 +43,9 @@ Açıklama&mdash;Testler çalışırken kod kapsamı analizi yapılır. Testler 
 
 Değiştirme ve testlerinizi yeniden çalıştırın, bir önceki kod kapsamı sonucu eski çalıştırmadan renklendirme kodu ile birlikte görünür olabilir.
 
-1.  Kod Kapsamı Çözümlemeyi Çalıştırın.
+1. Kod Kapsamı Çözümlemeyi Çalıştırın.
 
-2.  En son sonuç kümesini seçtiğinizden emin olun **kod kapsamı sonuçlarını** penceresi.
+2. En son sonuç kümesini seçtiğinizden emin olun **kod kapsamı sonuçlarını** penceresi.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb (simge) dosyaları kullanılamaz
 
@@ -91,17 +91,17 @@ Açıklama&mdash;özel bir birim testlerinizin çalıştırabileceğiniz *.runse
 
 Çözüm&mdash;hatalarının olası iki tür vardır:
 
--   **XML hatası**
+- **XML hatası**
 
      Açık *.runsettings* dosyasını Visual Studio XML düzenleyicisinde. Hata göstergelerine bakın.
 
--   **Normal ifade hatası**
+- **Normal ifade hatası**
 
      Dosyadaki her dize bir düzenli ifadedir. Her biri için belirli bir görünüm ve hatalar için gözden geçirin:
 
-    -   Eşleşmeyen parantezler (...) ya da atlatılamayan parantezler \\(...) \\). Arama dizisinde parantezleri eşleştirmek istiyorsanız, atlatmak gerekir. Örneğin, bir işlevi kullanımı eşleştirmek için şunu yazın: `.*MyFunction\(double\)`
+    - Eşleşmeyen parantezler (...) ya da atlatılamayan parantezler \\(...) \\). Arama dizisinde parantezleri eşleştirmek istiyorsanız, atlatmak gerekir. Örneğin, bir işlevi kullanımı eşleştirmek için şunu yazın: `.*MyFunction\(double\)`
 
-    -   İfadenin başına yıldız veya artı koyun. Herhangi bir dizenin karakterlerini eşleştirmek için noktadan sonra yıldız kullanın: `.*`
+    - İfadenin başına yıldız veya artı koyun. Herhangi bir dizenin karakterlerini eşleştirmek için noktadan sonra yıldız kullanın: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Yanlış istisnalarla özelleştirilmiş .runsettings dosyası
 

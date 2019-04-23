@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83a685b0dfc9b4f260d082230a5b58dcb025eff4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039364"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Nasıl yapılır: Gizli hata ayıklayıcı komutlarını geri yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Visual Studio'yu kurarken IDE ayarları birincil programlama diliniz için bir d
   
 ### <a name="to-restore-hidden-debugger-commands"></a>Gizli hata ayıklayıcı komutlarını geri yükleme  
   
-1.  Açık bir projeyle **Araçları** menüsünde tıklatın **Özelleştir**.  
+1. Açık bir projeyle **Araçları** menüsünde tıklatın **Özelleştir**.  
   
-2.  İçinde **Özelleştir** iletişim kutusu, tıklayın **komutları** sekmesi.  
+2. İçinde **Özelleştir** iletişim kutusu, tıklayın **komutları** sekmesi.  
   
-3.  İçinde **menü çubuğu:** açılan listesinde, select **hata ayıklama** geri yüklenen komut içermesini istediğiniz menü.  
+3. İçinde **menü çubuğu:** açılan listesinde, select **hata ayıklama** geri yüklenen komut içermesini istediğiniz menü.  
   
-4.  Tıklayın **komut Ekle...** düğmesi.  
+4. Tıklayın **komut Ekle...** düğmesi.  
   
-5.  İçinde **Add Command** kutusunda, ardından istediğiniz komutu seçin **Tamam**.  
+5. İçinde **Add Command** kutusunda, ardından istediğiniz komutu seçin **Tamam**.  
   
-6.  Başka bir komut eklemek için önceki adımı yineleyin.  
+6. Başka bir komut eklemek için önceki adımı yineleyin.  
   
-7.  Tıklayın **Kapat** tamamladığınızda menüsüne komut ekleme.  
+7. Tıklayın **Kapat** tamamladığınızda menüsüne komut ekleme.  
   
     > [!WARNING]
     >  Bazı menü öğeleri yalnızca hata ayıklayıcı çalışma modunda veya kesme moduna gibi belirli modda olduğunda görünür. Bu nedenle, bu adımları tamamladıktan sonra eklenen öğenin hemen görünür olmayabilir.  
@@ -60,21 +60,21 @@ Visual Studio'yu kurarken IDE ayarları birincil programlama diliniz için bir d
   
 #### <a name="to-import-new-ide-settings"></a>Yeni IDE ayarları içeri aktarmak için  
   
-1.  Üzerinde **Araçları** menüsünde tıklatın **içeri ve dışarı aktarma ayarları**.  
+1. Üzerinde **Araçları** menüsünde tıklatın **içeri ve dışarı aktarma ayarları**.  
   
-2.  Üzerinde **içeri aktarma ve dışarı aktarma ayarları Sihirbazı Hoş Geldiniz** sayfasında **seçili ortam ayarlarını içeri aktarma**ve ardından **sonraki**.  
+2. Üzerinde **içeri aktarma ve dışarı aktarma ayarları Sihirbazı Hoş Geldiniz** sayfasında **seçili ortam ayarlarını içeri aktarma**ve ardından **sonraki**.  
   
-3.  Üzerinde **geçerli ayarları Kaydet** sayfasında, mevcut ayarlarınızı kaydedin ve ardından gerekip gerekmediğini karar **sonraki**.  
+3. Üzerinde **geçerli ayarları Kaydet** sayfasında, mevcut ayarlarınızı kaydedin ve ardından gerekip gerekmediğini karar **sonraki**.  
   
-4.  Üzerinde **içeri aktarmak için bir ayarlar koleksiyonu seçin** sayfasındaki **varsayılan ayarları** klasörü, kullanmak istediğiniz komutları olan geliştirme ayarlar koleksiyonu seçin. Hangi koleksiyonu seçmek için bilmiyorsanız deneyin **genel geliştirme ayarları** veya **Visual C++ geliştirme ayarları**, en iyi hata ayıklayıcı komutlarını sağlar.  
+4. Üzerinde **içeri aktarmak için bir ayarlar koleksiyonu seçin** sayfasındaki **varsayılan ayarları** klasörü, kullanmak istediğiniz komutları olan geliştirme ayarlar koleksiyonu seçin. Hangi koleksiyonu seçmek için bilmiyorsanız deneyin **genel geliştirme ayarları** veya **Visual C++ geliştirme ayarları**, en iyi hata ayıklayıcı komutlarını sağlar.  
   
-5.  **İleri**'ye tıklayın.  
+5. **İleri**'ye tıklayın.  
   
-6.  Üzerinde **ayarlarını içeri aktarmak için seçin** sayfasındaki **seçenekleri**, emin **hata ayıklama** seçilir. Bu ayarların yanı içe aktarmak istediğiniz sürece diğer onay kutularını temizleyin.  
+6. Üzerinde **ayarlarını içeri aktarmak için seçin** sayfasındaki **seçenekleri**, emin **hata ayıklama** seçilir. Bu ayarların yanı içe aktarmak istediğiniz sürece diğer onay kutularını temizleyin.  
   
-7.  **Son**'a tıklayın.  
+7. **Son**'a tıklayın.  
   
-8.  Üzerinde **içeri aktarma tamamlandı** sayfasında, ayarlarınızı altında sıfırlama ile ilişkili hataları gözden geçirin **ayrıntıları**.  
+8. Üzerinde **içeri aktarma tamamlandı** sayfasında, ayarlarınızı altında sıfırlama ile ilişkili hataları gözden geçirin **ayrıntıları**.  
   
 9. **Kapat**'ı tıklatın.  
   

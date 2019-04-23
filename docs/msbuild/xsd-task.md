@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038270"
 ---
 # <a name="xsd-task"></a>XSD görevi
 XML şema tanımı aracı sarmalar (*XSD.exe'nin*), bir kaynaktan şema ya da sınıf dosyaları oluşturur.
@@ -36,13 +36,13 @@ XML şema tanımı aracı sarmalar (*XSD.exe'nin*), bir kaynaktan şema ya da s�
 ## <a name="parameters"></a>Parametreler
  Parametreleri aşağıdaki tabloda açıklanmıştır **XSD** görev.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      İsteğe bağlı **dize** parametresi.
 
      Komut satırında belirtilen seçeneklerin bir listesi. Örneğin, /\<Seçenek1 > /\<Seçenek2 > /\<seçeneği #>. Diğer tarafından temsil edilmez seçeneklerini belirtmek için bu parametreyi kullanın **XSD** görev parametresi.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -50,37 +50,37 @@ XML şema tanımı aracı sarmalar (*XSD.exe'nin*), bir kaynaktan şema ya da s�
 
      Her biri bir XSD seçeneğine karşılık gelir aşağıdaki değerlerden birini belirtin.
 
-    -   **sınıflar** -   **/sınıfları**
+    - **sınıflar** -   **/sınıfları**
 
-    -   **veri kümesi** -   **/DataSet**
+    - **veri kümesi** -   **/DataSet**
 
--   **Dil**
+- **Dil**
 
      İsteğe bağlı **dize** parametresi.
 
      Oluşturulan kod için kullanılacak programlama dilini belirtir.
 
-     Aralarından seçim **CS** (C varsayılan değer olan #), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.
+     Aralarından seçim **CS** (C#, varsayılan değerdir), **VB** (Visual Basic) veya **JS** (JScript). Ayrıca uygulayan bir sınıf için tam bir ad belirtin `System.CodeDom.Compiler.CodeDomProvider Class`.
 
--   **Namespace**
+- **Namespace**
 
      İsteğe bağlı **dize** parametresi.
 
      Oluşturulan türleri için çalışma zamanı ad alanını belirtir.
 
--   **Kaynakları**
+- **Kaynakları**
 
      Gerekli `ITaskItem[]` parametresi.
 
      Tüketilen ve görevler tarafından yayılan MSBuild kaynak dosya öğeleri bir dizisi tanımlanmaktadır.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      İsteğe bağlı **Boole** parametresi.
 
      Varsa `true`, görev başladığında telif hakkı ve sürüm numarası iletisinin görüntülenmesini engeller.
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      İsteğe bağlı **dize** parametresi.
 

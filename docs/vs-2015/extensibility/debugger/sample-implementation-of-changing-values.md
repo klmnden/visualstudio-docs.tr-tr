@@ -11,12 +11,12 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66b949ee2bd065186c13f32e788eea8f40faf34d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056412"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Örnek Değer Değiştirme Uygulaması
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "54752613"
   
  Bu uygulaması `IDebugProperty2::SetValueAsString` aşağıdaki görevleri gerçekleştirir:  
   
-1.  Bir değer üretmek için ifadeyi değerlendirir.  
+1. Bir değer üretmek için ifadeyi değerlendirir.  
   
-2.  İlişkili bağlar [IDebugField](../../extensibility/debugger/reference/idebugfield.md) üreten ve nesne bellek konumuna bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) nesne.  
+2. İlişkili bağlar [IDebugField](../../extensibility/debugger/reference/idebugfield.md) üreten ve nesne bellek konumuna bir [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) nesne.  
   
-3.  Değer bir dizi bayt dönüştürür.  
+3. Değer bir dizi bayt dönüştürür.  
   
-4.  Çağrıları [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) bellekte bayt depolamak için.  
+4. Çağrıları [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) bellekte bayt depolamak için.  
   
 ## <a name="managed-code"></a>Yönetilen kod  
  Bu uygulamasıdır `IDebugProperty2::SetValueAsString` yönetilen kod.  

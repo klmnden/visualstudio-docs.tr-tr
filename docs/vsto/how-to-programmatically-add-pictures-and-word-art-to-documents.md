@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e1d181c67628db52aa8e4f135109f1446a34816
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f805153a35517c473e95beb871ae7d12a2776bd4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043800"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Nasıl yapılır: Belgelere program aracılığıyla resim ve Word Art ekleme
   Tasarım zamanında veya çalışma zamanı sırasında belgelere resimler ve çizim nesneleri ekleyebilirsiniz. WordArt Microsoft Office Word belgelerine dekoratif metin eklemenize olanak tanır. Bu özel yazı efektleri çizim özelleştirebilir ve belgenize eklemek nesneleridir.
@@ -33,13 +33,13 @@ ms.locfileid: "56617918"
 
 ### <a name="to-add-a-picture-to-a-word-document-at-design-time"></a>Tasarım zamanında bir Word belgesi için resim eklemek için
 
-1.  İmlecinizi, belgede resim eklemek istediğiniz konuma yerleştirin.
+1. İmlecinizi, belgede resim eklemek istediğiniz konuma yerleştirin.
 
-2.  Tıklayın **Ekle** Şerit sekmesi.
+2. Tıklayın **Ekle** Şerit sekmesi.
 
-3.  İçinde **çizimler** grubunda **resim**.
+3. İçinde **çizimler** grubunda **resim**.
 
-4.  İçinde **resim** iletişim kutusunda, eklemek istediğiniz resme gidin ve tıklayın **Ekle**.
+4. İçinde **resim** iletişim kutusunda, eklemek istediğiniz resme gidin ve tıklayın **Ekle**.
 
      Resim geçerli imleç konumundan belgenize eklenir.
 
@@ -48,7 +48,7 @@ ms.locfileid: "56617918"
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>İmleç konumuna resim eklemek için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> yöntemi <xref:Microsoft.Office.Interop.Word.InlineShapes> toplama ve dosya oluşturdular.
+1. Çağrı <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> yöntemi <xref:Microsoft.Office.Interop.Word.InlineShapes> toplama ve dosya oluşturdular.
 
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
@@ -58,13 +58,13 @@ ms.locfileid: "56617918"
 
 ### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>Tasarım zamanında bir Word belgesi için WordArt eklemek için
 
-1.  İmlecinizi WordArt belgede eklemek istediğiniz yere yerleştirin.
+1. İmlecinizi WordArt belgede eklemek istediğiniz yere yerleştirin.
 
-2.  Tıklayın **Ekle** Şerit sekmesi.
+2. Tıklayın **Ekle** Şerit sekmesi.
 
-3.  İçinde **metin** grubunda **WordArt**ve ardından WordArt stili seçin.
+3. İçinde **metin** grubunda **WordArt**ve ardından WordArt stili seçin.
 
-4.  Belgeye görünmesini istediğiniz metni Ekle **WordArt Metni Düzenle** iletişim kutusu ve tıklatın **Tamam**.
+4. Belgeye görünmesini istediğiniz metni Ekle **WordArt Metni Düzenle** iletişim kutusu ve tıklatın **Tamam**.
 
      Metin Seçili WordArt stil uygulanmış belgenize eklenir.
 
@@ -73,31 +73,31 @@ ms.locfileid: "56617918"
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesinde İmleç konumuna WordArt eklemek için
 
-1.  Geçerli imleç konumu sol ve üst konumunu alır.
+1. Geçerli imleç konumu sol ve üst konumunu alır.
 
      [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
 
-2.  Çağrı <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Shapes> belge nesnesi.
+2. Çağrı <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Shapes> belge nesnesi.
 
      [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>Bir VSTO eklentisi imleç konumu WordArt eklemek için
 
-1.  Geçerli imleç konumu sol ve üst konumunu alır.
+1. Geçerli imleç konumu sol ve üst konumunu alır.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
 
-2.  Çağrı <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Shapes> nesne etkin belge (veya belirttiğiniz başka bir belge).
+2. Çağrı <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Shapes> nesne etkin belge (veya belirttiğiniz başka bir belge).
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
 
 ## <a name="compile-the-code"></a>Kod derleme
 
--   Adlı bir resim *SamplePicture.jpg* c sürücüsünde bulunan mevcut olması gerekir
+- Adlı bir resim *SamplePicture.jpg* c sürücüsünde bulunan mevcut olması gerekir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Varolan belgeleri program aracılığıyla açma](../vsto/how-to-programmatically-open-existing-documents.md)

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045543"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: İşleçler taşmamalıdır
 
@@ -102,11 +102,11 @@ Aşağıdaki örnek, önceki ihlali işlemi işaretli bir blok içinde sarmalama
 
 Açmak için aritmetik taşma ve alttaşmayı C# dilinde kullanıma:
 
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve seçin **özellikleri**.
 
-2.  Seçin **derleme** sekmesine **Gelişmiş**.
+2. Seçin **derleme** sekmesine **Gelişmiş**.
 
-3.  Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.
+3. Seçin **aritmetik taşma ve alttaşmayı denetle** tıklatıp **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

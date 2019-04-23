@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e72c04d5d8ce4419938ca30c719e82c403ae0157
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 93d65574012d219d0f65d5b42600c75cf7a624fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046715"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Nasıl yapılır: Bir DataContext yöntemi (O/R Tasarımcısı) dönüş türünü değiştirme
 Dönüş türü bir <xref:System.Data.Linq.DataContext> yöntemi (bir saklı yordamı veya işlevi temel alarak oluşturduğunuz) farklı bağlı olarak burada bırak saklı yordamı veya işlevi **O/R Tasarımcısı**. Bir öğeyi doğrudan mevcut bir varlık sınıfı üzerine sürükleyip bıraktığınızda bir <xref:System.Data.Linq.DataContext> varlık sınıfı için dönüş türüne sahip yöntemi (saklı yordamı veya işlevi tarafından döndürülen veri şeması varlık sınıfı şeklini eşleşiyorsa) oluşturulur. Boş bir alanının bir öğeyi bırak varsa **O/R Tasarımcısı**, <xref:System.Data.Linq.DataContext> otomatik olarak oluşturulan bir tür döndüren yöntem oluşturulur. Dönüş türünü değiştirebilirsiniz bir <xref:System.Data.Linq.DataContext> yöntemleri bölmesine ekledikten sonra yöntemi. İnceleme veya dönüş türünü değiştirmek için bir <xref:System.Data.Linq.DataContext> yöntemi seçin ve **dönüş türü** özelliğinde **özellikleri** penceresi.
@@ -25,19 +25,19 @@ Dönüş türü bir <xref:System.Data.Linq.DataContext> yöntemi (bir saklı yor
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Bir DataContext yöntemin dönüş türü bir varlık sınıfı için otomatik olarak oluşturulan türü değiştirmek için
 
-1.  Seçin <xref:System.Data.Linq.DataContext> yöntemleri bölmesinde yöntemi.
+1. Seçin <xref:System.Data.Linq.DataContext> yöntemleri bölmesinde yöntemi.
 
-2.  Seçin **dönüş türü** içinde **özellikleri** penceresi ve ardından kullanılabilir varlık sınıfı içinde **dönüş türü** listesi. İstenen varlık sınıfı listesinde değilse, ekleyin veya oluşturun **O/R Tasarımcısı** listesine eklenecek.
+2. Seçin **dönüş türü** içinde **özellikleri** penceresi ve ardından kullanılabilir varlık sınıfı içinde **dönüş türü** listesi. İstenen varlık sınıfı listesinde değilse, ekleyin veya oluşturun **O/R Tasarımcısı** listesine eklenecek.
 
-3.  Kaydet *.dbml* dosya.
+3. Kaydet *.dbml* dosya.
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Bir DataContext yöntemin dönüş türü bir varlık sınıfından otomatik olarak üretilen türe geri değiştirmek için
 
-1.  Seçin <xref:System.Data.Linq.DataContext> yönteminde **yöntemleri** bölmesi ve silin.
+1. Seçin <xref:System.Data.Linq.DataContext> yönteminde **yöntemleri** bölmesi ve silin.
 
-2.  Veritabanı nesneyi sürükleyin **Sunucu Gezgini** veya **veritabanı Gezgini** boş bir alanı üzerine **O/R Tasarımcısı**.
+2. Veritabanı nesneyi sürükleyin **Sunucu Gezgini** veya **veritabanı Gezgini** boş bir alanı üzerine **O/R Tasarımcısı**.
 
-3.  Kaydet *.dbml* dosya.
+3. Kaydet *.dbml* dosya.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

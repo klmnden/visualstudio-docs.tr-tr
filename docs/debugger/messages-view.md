@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049135"
 ---
 # <a name="messages-view"></a>İletiler Görünümü
 Her pencere bir ilişkili ileti akışı içerir. İletiler Görünümü penceresi bu ileti akışı görüntüler. Pencere tanıtıcısı, ileti kodu ve ileti gösterilir. Bir iş parçacığı veya işlem de bir iletiler görünümü oluşturabilirsiniz. Bu, belirli bir işlem veya pencere Başlatma iletilerinin yakalamak için özellikle yararlıdır iş parçacığı tarafından sahip olunan tüm windows gönderilen iletileri görüntülemenize olanak sağlar.
@@ -30,21 +30,21 @@ Her pencere bir ilişkili ileti akışı içerir. İletiler Görünümü pencere
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Bir pencere, işlem veya iş parçacığı için bir iletiler görünümünü açmak için
 
-1.  Odağı Taşı bir [Windows görünümü](../debugger/windows-view.md), [işlemler görünümü](../debugger/processes-view.md), veya [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi.
+1. Odağı Taşı bir [Windows görünümü](../debugger/windows-view.md), [işlemler görünümü](../debugger/processes-view.md), veya [iş parçacıkları görünümü](../debugger/threads-view.md) penceresi.
 
-2.  Öğe için iletileri incelemek istediğiniz düğümü bulun ve seçin.
+2. Öğe için iletileri incelemek istediğiniz düğümü bulun ve seçin.
 
-3.  Gelen **Spy** menüsünde seçin **günlük iletilerini**.
+3. Gelen **Spy** menüsünde seçin **günlük iletilerini**.
 
      [İleti seçenekleri iletişim kutusu](../debugger/message-options-dialog-box.md) açılır.
 
-4.  Görüntülemek istediğiniz iletisi için seçenekleri seçin.
+4. Görüntülemek istediğiniz iletisi için seçenekleri seçin.
 
-5.  Tuşuna **Tamam** günlük iletilerini başlatmak için.
+5. Tuşuna **Tamam** günlük iletilerini başlatmak için.
 
      Bir ileti Görünümü penceresini açar ve bir **iletileri** Spy ++ araç çubuğuna menü eklenir. Seçilen seçeneklere bağlı olarak, iletileri etkin iletileri görünüm penceresine akış başlayın.
 
-6.  Yeterli sayıda ileti olduğunda seçin **Günlüğü Durdur** gelen **iletileri** menüsü.
+6. Yeterli sayıda ileti olduğunda seçin **Günlüğü Durdur** gelen **iletileri** menüsü.
 
 ## <a name="in-this-section"></a>Bu Bölümde
  [İletiler görünümünü denetleme](../debugger/how-to-control-messages-view.md) nasıl iletiler görünümünü yönetileceği açıklanmaktadır.

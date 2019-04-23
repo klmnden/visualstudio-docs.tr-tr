@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056725"
 ---
 # <a name="troubleshooting-service-references"></a>Hizmet Başvurularında Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ Bu konu ile çalışırken oluşabilecek genel sorunları listelemektedir [!INCL
 
  Bu hatayı düzeltmek için:
 
-1.  İçinde **Çözüm Gezgini**, açmak için app.config dosyasına çift tıklayın.
+1. İçinde **Çözüm Gezgini**, açmak için app.config dosyasına çift tıklayın.
 
-2.  Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değere değiştirin.
+2. Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değere değiştirin.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Bir hizmet çözümüm içinde bulunamıyor
  Tıkladığınızda **bulma** düğmesine **hizmet başvuruları ekleme** iletişim kutusu, bir veya daha fazla WCF hizmet kitaplığı projeleri çözümdeki Hizmetler listesinde görünmez. Bu hizmet kitaplığı çözüme eklendi ancak henüz derlenmiş ortaya çıkabilir.
 
  Bu hatayı düzeltmek için:
 
--   İçinde **Çözüm Gezgini**, WCF hizmet kitaplığı projesi sağ tıklatıp **yapı**.
+- İçinde **Çözüm Gezgini**, WCF hizmet kitaplığı projesi sağ tıklatıp **yapı**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Bir hizmet Uzak Masaüstü erişilirken hata oluştu
  Bir kullanıcı eriştiğinde bir Web barındırılan WCF hizmeti üzerinden bir Uzak Masaüstü Bağlantısı ve kullanıcı yönetici izinlerine sahip değil, NTLM kimlik doğrulaması kullanılır. Kullanıcı, kullanıcı yönetici izinlerine sahip değilse, aşağıdaki hata iletisini alabilirsiniz: "HTTP istek istemci kimlik doğrulama düzeni 'Anonymous' yetkilendirilmemiş. Sunucudan alınan kimlik doğrulama üst bilgisi 'NTLM' sağladı."
 
  Bu hatayı düzeltmek için:
 
-1.  Web sitesi projesi içinde açın **özellikleri** sayfaları.
+1. Web sitesi projesi içinde açın **özellikleri** sayfaları.
 
-2.  Üzerinde **Başlat seçenekleri** sekmesi, NET **NTLM kimlik doğrulaması** onay kutusu.
+2. Üzerinde **Başlat seçenekleri** sekmesi, NET **NTLM kimlik doğrulaması** onay kutusu.
 
     > [!NOTE]
     > Yalnızca özel olarak WCF hizmetlerini içeren Web siteleri için NTLM kimlik doğrulama etkinleştirmeniz gerekir. WCF hizmetleri için güvenlik web.config dosyasındaki yapılandırmayı aracılığıyla yönetilir. Bu, NTLM kimlik doğrulaması gereksiz kılar.
@@ -70,32 +70,32 @@ Bu konu ile çalışırken oluşabilecek genel sorunları listelemektedir [!INCL
 
  Bu hatayı düzeltmek için hizmet projesi el ile yeniden oluşturmanız gerekir:
 
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2.  İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **genel**.
+2. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **genel**.
 
-3.  Emin olun **Show Gelişmiş derleme yapılandırmaları** onay kutusunun seçili olduğundan ve ardından **Tamam**.
+3. Emin olun **Show Gelişmiş derleme yapılandırmaları** onay kutusunun seçili olduğundan ve ardından **Tamam**.
 
-4.  WCF hizmet projesini yükleyin. Daha fazla bilgi için [NIB nasıl: Birden çok proje çözümü oluşturma](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. WCF hizmet projesini yükleyin. Daha fazla bilgi için [NIB nasıl: Birden çok proje çözümü oluşturma](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
+5. İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
 
-6.  İçinde **Çözüm Gezgini**, WCF Hizmeti projesini seçin.
+6. İçinde **Çözüm Gezgini**, WCF Hizmeti projesini seçin.
 
-7.  Üzerinde **derleme** menüsünde tıklatın **yeniden** WCF Hizmeti projeyi yeniden derlemek için.
+7. Üzerinde **derleme** menüsünde tıklatın **yeniden** WCF Hizmeti projeyi yeniden derlemek için.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Veri Hizmetleri tarayıcıda görüntüleme
  Ne zaman çalışır bir XML temsilini verileri görüntülemek bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], Internet Explorer verileri bir RSS akışı olarak hatalı yorumlayan. RSS akışlarını görüntüleme seçeneğinin devre dışı bırakıldığından emin olmalısınız.
 
  Bu hatayı düzeltmek için RSS akışı devre dışı bırakın:
 
-1.  Internet Explorer'da üzerinde **Araçları** menüsünde tıklatın **Internet Seçenekleri**.
+1. Internet Explorer'da üzerinde **Araçları** menüsünde tıklatın **Internet Seçenekleri**.
 
-2.  Üzerinde **içerik** sekmesinde **akışları** bölümünde **ayarları**.
+2. Üzerinde **içerik** sekmesinde **akışları** bölümünde **ayarları**.
 
-3.  İçinde **akış ayarları** iletişim kutusu, NET **akış okuma görünümünde açmak** onay kutusunu işaretleyin ve ardından **Tamam**.
+3. İçinde **akış ayarları** iletişim kutusu, NET **akış okuma görünümünde açmak** onay kutusunu işaretleyin ve ardından **Tamam**.
 
-4.  Tıklayın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
+4. Tıklayın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

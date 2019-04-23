@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042244"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; öğesi (ClickOnce uygulaması)
 Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik izinleri açıklar.
@@ -78,28 +78,28 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
 ## <a name="permissionset"></a>PermissionSet
  Gerekli. Bu öğenin alt öğesi olan `applicationRequestMinimum` öğesi ve içeren `IPermission` öğesi. Bu öğe aşağıdaki özniteliklere sahiptir.
 
--   `ID`
+- `ID`
 
      Gerekli. İzin kümesi tanımlar. Bu öznitelik herhangi bir değer olabilir. Kimliği başvurulduğundan `defaultAssemblyRequest` ve `assemblyRequest` öznitelikleri.
 
--   `version`
+- `version`
 
      Gerekli. İzni sürümünü tanımlar. Normalde bu değer, `1`.
 
 ## <a name="ipermission"></a>IPermission
  İsteğe bağlı. Bu öğenin alt öğesi olan `PermissionSet` öğesi. `IPermission` Öğesi tam olarak içinde izin sınıfını tanımlar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Öğesi izin sınıfını özelliklere karşılık gelen ek öznitelikler şu öznitelikler bulunur, ancak. Belirli bir izni sözdizimi öğrenmek için Security.config dosyasında listelenen örneklere bakın.
 
--   `class`
+- `class`
 
      Gerekli. Tanımlayıcı adla izin sınıfını tanımlar. Örneğin, aşağıdaki kodu tanımlayan `FileDialogPermission` türü.
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
      Gerekli. İzni sürümünü tanımlar. Genellikle bu değer, `1`.
 
--   `Unrestricted`
+- `Unrestricted`
 
      Gerekli. Uygulamanın bir sınırsız kullanım hakkı bu izne ihtiyacı olup olmadığını tanımlar. Varsa `true`, izin verme koşulsuz olur. Varsa `false`, veya bu öznitelik tanımlanmamışsa, üzerinde tanımlanan izin özgü özniteliklere göre kısıtlı `IPermission` etiketi. Şu izinleri alın:
 
@@ -119,18 +119,18 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  İsteğe bağlı. Tüm derlemeler için verilen izinler kümesini tanımlar. Bu öğenin alt öğesi olan `applicationRequestMinimum` öğesi ve aşağıdaki özniteliklere sahiptir.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Gerekli. Varsayılan izin izin kümesi kimliği tanımlar. İzin kümesi içinde bildirildiği `PermissionSet` öğesi.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  İsteğe bağlı. Belirli bir derlemenin izinlerini tanımlar. Bu öğenin alt öğesi olan `applicationRequestMinimum` öğesi ve aşağıdaki özniteliklere sahiptir.
 
--   `Name`
+- `Name`
 
      Gerekli. Derleme adını tanımlar.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Gerekli. Bu derlemeyi izin kümesi kimliği tanımlar. İzin kümesi içinde bildirildiği `PermissionSet` öğesi.
 

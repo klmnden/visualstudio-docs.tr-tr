@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057413"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Nasıl yapılır: Ürün bildirimi oluşturma
 Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluşturabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Paket bildirimi paketinin yerelleştirme özgü özelliklerini içerir. Bu dizeler, son kullanıcı lisans sözleşmelerini ve dil paketlerini içerir.
@@ -34,11 +34,11 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
 
 #### <a name="to-create-the-product-manifest"></a>Ürün bildirimi oluşturma
 
-1.  Önyükleyici paketi için bir dizin oluşturun. Bu örnek, C:\package kullanır.
+1. Önyükleyici paketi için bir dizin oluşturun. Bu örnek, C:\package kullanır.
 
-2.  Adlı yeni bir XML dosyasını Visual Studio'da oluşturma *product.xml*ve kaydetmesi *C:\package* klasör.
+2. Adlı yeni bir XML dosyasını Visual Studio'da oluşturma *product.xml*ve kaydetmesi *C:\package* klasör.
 
-3.  XML ad alanı ve ürün kodu için paket açıklamak için aşağıdaki XML'i ekleyin. Ürün kodu, paket için benzersiz bir tanımlayıcıyla değiştirin.
+3. XML ad alanı ve ürün kodu için paket açıklamak için aşağıdaki XML'i ekleyin. Ürün kodu, paket için benzersiz bir tanımlayıcıyla değiştirin.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  Paket bağımlılığı olduğunu belirtmek için XML ekleyin. Bu örnek, bir bağımlılık üzerinde Microsoft Windows Installer 3.1 kullanır.
+4. Paket bağımlılığı olduğunu belirtmek için XML ekleyin. Bu örnek, bir bağımlılık üzerinde Microsoft Windows Installer 3.1 kullanır.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
       </RelatedProducts>
     ```
 
-5.  Önyükleyici paketteki tüm dosyaların listesi için XML ekleyin. Bu örnekte paket dosyası adı *CorePackage.msi*.
+5. Önyükleyici paketteki tüm dosyaların listesi için XML ekleyin. Bu örnekte paket dosyası adı *CorePackage.msi*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
     </PackageFiles>
     ```
 
-6.  Kopyalamak veya taşımak *CorePackage.msi* dosyasını *C:\package* klasör.
+6. Kopyalamak veya taşımak *CorePackage.msi* dosyasını *C:\package* klasör.
 
-7.  Önyükleyici komutları kullanarak paketini yüklemek için XML ekleyin. Önyükleyici otomatik olarak ekler **/qn** bayrak *.msi* dosyasını sessizce yükler. Eğer dosya bir *.exe*, önyükleyici çalıştıran *.exe* kabuğunu kullanarak dosya. Aşağıdaki XML bağımsız değişken olmadan gösterir *CorePackage.msi*, ancak komut satırı bağımsız değişkeni içine koyabilirsiniz `Arguments` özniteliği.
+7. Önyükleyici komutları kullanarak paketini yüklemek için XML ekleyin. Önyükleyici otomatik olarak ekler **/qn** bayrak *.msi* dosyasını sessizce yükler. Eğer dosya bir *.exe*, önyükleyici çalıştıran *.exe* kabuğunu kullanarak dosya. Aşağıdaki XML bağımsız değişken olmadan gösterir *CorePackage.msi*, ancak komut satırı bağımsız değişkeni içine koyabilirsiniz `Arguments` özniteliği.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  Bu önyükleyici paketi yüklü olup olmadığını denetlemek için aşağıdaki XML'i ekleyin. Yeniden dağıtılabilir bileşen için GUID ürün kodu değiştirin.
+8. Bu önyükleyici paketi yüklü olup olmadığını denetlemek için aşağıdaki XML'i ekleyin. Yeniden dağıtılabilir bileşen için GUID ürün kodu değiştirin.
 
     ```xml
     <InstallChecks>

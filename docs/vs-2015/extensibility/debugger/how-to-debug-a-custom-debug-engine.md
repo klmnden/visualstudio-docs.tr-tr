@@ -11,12 +11,12 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5292d2cde8a75a239f7a905d8cf5d80b09a8f61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039955"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Nasıl yapılır: Özel hata ayıklama altyapısında hata ayıklama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Bir proje türü, gelen hata ayıklama altyapısı (DE) başlatır. <xref:Micros
   
 ### <a name="debugging-a-custom-debug-engine"></a>Özel hata ayıklama altyapısında hata ayıklama  
   
-1.  Msvsmon.exe, uzaktan hata ayıklama İzleyicisi'ni başlatın.  
+1. Msvsmon.exe, uzaktan hata ayıklama İzleyicisi'ni başlatın.  
   
-2.  Gelen **Araçları** msvsmon.exe, seçim menüsünde **seçenekleri** açmak için **seçenekleri** iletişim kutusu.  
+2. Gelen **Araçları** msvsmon.exe, seçim menüsünde **seçenekleri** açmak için **seçenekleri** iletişim kutusu.  
   
-3.  "Kimlik doğrulaması" seçeneğini ve tıklayın **Tamam**.  
+3. "Kimlik doğrulaması" seçeneğini ve tıklayın **Tamam**.  
   
-4.  Bir örneği başlatın [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve özel DE projenizi açın.  
+4. Bir örneği başlatın [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve özel DE projenizi açın.  
   
-5.  İkinci bir örneğini Başlat [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve DE başlatan özel projenizi açın (geliştirme için genellikle VSIP yüklendiğinde, ayarlanmış Deneysel bir kayıt defteri kovanında budur).  
+5. İkinci bir örneğini Başlat [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ve DE başlatan özel projenizi açın (geliştirme için genellikle VSIP yüklendiğinde, ayarlanmış Deneysel bir kayıt defteri kovanında budur).  
   
-6.  Bu ikinci örneğini [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], projenize özel bir kaynak dosya yükleyin ve programı görüntüde hata ayıklamayı başlatın. Yük ya da bir kesme noktasına isabet beklemek DE izin vermek için birkaç dakika bekleyin.  
+6. Bu ikinci örneğini [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], projenize özel bir kaynak dosya yükleyin ve programı görüntüde hata ayıklamayı başlatın. Yük ya da bir kesme noktasına isabet beklemek DE izin vermek için birkaç dakika bekleyin.  
   
-7.  İlk örneğinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] seçin (DE projenize) **iliştirme** gelen **hata ayıklama** menüsü.  
+7. İlk örneğinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] seçin (DE projenize) **iliştirme** gelen **hata ayıklama** menüsü.  
   
-8.  İçinde **iliştirme** iletişim kutusunda, değişiklik **aktarım** için **uzaktan (kimlik doğrulama olmadan yalnızca yerel)**.  
+8. İçinde **iliştirme** iletişim kutusunda, değişiklik **aktarım** için **uzaktan (kimlik doğrulama olmadan yalnızca yerel)**.  
   
 9. Değişiklik **niteleyicisi** makinenizin adı (Not: Bu ad yalnızca bir kez yazın gerek girişlerini geçmişi olan).  
   
@@ -57,21 +57,21 @@ Bir proje türü, gelen hata ayıklama altyapısı (DE) başlatır. <xref:Micros
   
 ### <a name="debugging-a-custom-project-type"></a>Özel proje türünü hata ayıklama  
   
-1.  Başlangıç [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projeniz normal kayıt defteri kovanı ve yük (Bu, proje türünüzü proje türünüzü değil bir örneğinin kaynak) projesini yazın.  
+1. Başlangıç [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projeniz normal kayıt defteri kovanı ve yük (Bu, proje türünüzü proje türünüzü değil bir örneğinin kaynak) projesini yazın.  
   
-2.  Proje özelliklerini açın ve gidin **hata ayıklama** sayfası. İçin **komut**, yolunu yazın [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (varsayılan olarak, *[sürücü]* \Program [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe).  
+2. Proje özelliklerini açın ve gidin **hata ayıklama** sayfası. İçin **komut**, yolunu yazın [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (varsayılan olarak, *[sürücü]* \Program [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 8\Common7\IDE\devenv.exe).  
   
-3.  İçin **komut satırı bağımsız değişkenlerini**, türü `/rootsuffix exp` (VSIP yüklendiğinde oluşturulan) Deneysel kayıt defteri kovanı için.  
+3. İçin **komut satırı bağımsız değişkenlerini**, türü `/rootsuffix exp` (VSIP yüklendiğinde oluşturulan) Deneysel kayıt defteri kovanı için.  
   
-4.  Değişiklikleri kabul etmek için **Tamam** 'ı tıklayın.  
+4. Değişiklikleri kabul etmek için **Tamam** 'ı tıklayın.  
   
-5.  Proje türünüzü, F5 tuşuna basarak başlatın. Bu ikinci bir örneğini başlatır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+5. Proje türünüzü, F5 tuşuna basarak başlatın. Bu ikinci bir örneğini başlatır [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-6.  Bu noktada, proje türü kaynak kodunuzda kesme noktaları yerleştirebilirsiniz.  
+6. Bu noktada, proje türü kaynak kodunuzda kesme noktaları yerleştirebilirsiniz.  
   
-7.  İkinci örneğinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], yükleme veya proje türünüzü yeni bir örneğini oluşturun. Yük ya da oluşturma sırasında kesme noktalarınıza isabet ettirmek.  
+7. İkinci örneğinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], yükleme veya proje türünüzü yeni bir örneğini oluşturun. Yük ya da oluşturma sırasında kesme noktalarınıza isabet ettirmek.  
   
-8.  Hata ayıklama, proje türü.  
+8. Hata ayıklama, proje türü.  
   
 9. Bir DE başlatma işlemi hata ayıklama kullanmayı tercih ederseniz, başlatıldıktan sonra DE olarak eklemek için "Hata ayıklama bir özel hata ayıklama altyapısı" yordamdaki adımları gerçekleştirebilirsiniz. Bu üç örneklerini verir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] çalıştıran: bir proje türü kaynağınız, örneklenmiş proje türü ve sizin DE olarak bağlı üçüncü bir saniye.  
   

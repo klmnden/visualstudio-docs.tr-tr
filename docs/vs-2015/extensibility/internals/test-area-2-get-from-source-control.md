@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 2: Kaynak denetiminden almak | Microsoft Docs'
+title: 'Test Alanı 2: Kaynak denetiminden almak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78ecbcb50effc133487f03ffd2f2edee3cbd8d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052592"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Test alanı 2: Kaynak denetiminden alma
+# <a name="test-area-2-get-from-source-control"></a>Test Alanı 2: Kaynak Denetiminden Alma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu test alanı Get komutu aracılığıyla sürüm deposundan öğeleri almak için test çalışmaları kapsar. Bu test çalışmaları, yerel ve Web projeleri için uygulanabilir.  
@@ -28,13 +28,13 @@ Bu test alanı Get komutu aracılığıyla sürüm deposundan öğeleri almak i�
   
 ##### <a name="get-latest-version"></a>En son sürümü Al:  
   
--   **Dosya**, **kaynak denetimi**, **en son sürümü Al**.  
+- **Dosya**, **kaynak denetimi**, **en son sürümü Al**.  
   
--   **Dosya**, **en son sürümü Al**.  
+- **Dosya**, **en son sürümü Al**.  
   
--   Kısayol menüsünde, **en son sürümü Al**.  
+- Kısayol menüsünde, **en son sürümü Al**.  
   
--   Al: **Dosya**, **kaynak denetimi**, **alma**.  
+- Al: **Dosya**, **kaynak denetimi**, **alma**.  
   
 ## <a name="expected-behavior"></a>Beklenen davranış  
   

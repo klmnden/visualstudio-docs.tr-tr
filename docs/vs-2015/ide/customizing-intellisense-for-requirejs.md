@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049873"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>RequireJS için IntelliSense'i özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Visual Studio 2013 güncelleştirme 4 ile başlayarak, popüler RequireJS JavaSc
   
  Bu konu açıklar nasıl yapılır:  
   
--   RequireJS ASP.NET projelerinde özelleştirme  
+- RequireJS ASP.NET projelerinde özelleştirme  
   
--   Apache Cordova uygulamaları, Windows Store uygulamaları ve LightSwitch HTML uygulamaları oluşturmak için kullanılan JSProj projelerinde RequireJS özelleştirme  
+- Apache Cordova uygulamaları, Windows Store uygulamaları ve LightSwitch HTML uygulamaları oluşturmak için kullanılan JSProj projelerinde RequireJS özelleştirme  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>RequireJS ASP.NET projelerinde özelleştirme  
  RequireJS için destek require.js adlı bir dosya, geçerli bir JavaScript dosyası tarafından başvurulduğunda otomatik olarak etkinleştirilir (daha fazla bilgi için bkz: IntelliSense bağlamını belirleme bölümünde [JavaScript IntelliSense](../ide/javascript-intellisense.md)). ASP.NET projelerinde require.js başvuran genellikle yapılır kullanarak bir / / / \<başvuru / > _references.js dosyasındaki bir yönerge.  

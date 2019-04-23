@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048768"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Hata: Web sunucusunda hata ayıklama başlatılamıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Bir Web sunucusunda çalışan bir ASP.NET uygulamasında hata ayıklama kaydetm
   
 IIS düzgün yapılandırılmadığından, çoğu durumda, bu hata oluşur.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> IIS yapılandırmanızı denetleyin
+## <a name="vxtbshttpservererrorsthingstocheck"></a> IIS yapılandırmanızı denetleyin
 
 Burada ve hata ayıklamak yeniden denemeden önce ayrıntılı bir sorunu gidermek için adımları uyguladıktan sonra Ayrıca IIS sıfırlamanız gerekebilir. Bir yönetici komut istemi'ni açıp yazarak bunu yapabilirsiniz `iisreset`, veya IIS Yöneticisi'nde bunu yapabilirsiniz. 
 

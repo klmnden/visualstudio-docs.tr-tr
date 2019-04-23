@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052070"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>İzlenecek yol: Özel bir Kural Kümesini Yapılandırma ve Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
   
  Bu izlenecek yolda, bu işlemleri adım:  
   
--   Bir sınıf kitaplığı oluşturun.  
+- Bir sınıf kitaplığı oluşturun.  
   
--   Seçin **Microsoft temel tasarım yönerge kuralları** Kod Analizi kural kümesi.  
+- Seçin **Microsoft temel tasarım yönerge kuralları** Kod Analizi kural kümesi.  
   
--   Kendi kodunuzu sınıfına ekleyin.  
+- Kendi kodunuzu sınıfına ekleyin.  
   
--   Kod analizini Çalıştır.  
+- Kod analizini Çalıştır.  
   
--   Kural kümesi özelleştirin.  
+- Kural kümesi özelleştirin.  
   
--   Kod Analizi çalıştırmak ve nasıl özelleştirme davranışı works kural kümesi bakın.  
+- Kod Analizi çalıştırmak ve nasıl özelleştirme davranışı works kural kümesi bakın.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], veya [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Kural Kod Analizi ile kümeleri kullanma  
  İlk olarak, bir basit sınıf kitaplığı oluşturun.  
@@ -148,9 +148,9 @@ Bu izlenecek yol, özelleştirilmiş kullanmak üzere yapılandırıldıkların�
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>İkinci kez RuleSetSample proje üzerinde kod analizini Çalıştır  
   
-1.  Üzerinde **Çözümle** menüsünde tıklatın **RuleSetSample kod çözümlemeyi Çalıştır**.  
+1. Üzerinde **Çözümle** menüsünde tıklatın **RuleSetSample kod çözümlemeyi Çalıştır**.  
   
-2.  ' A tıkladığınızda dikkat Hata Listesi penceresindeki **uyarıları**, CA1704 uyarı ihlalleri "Tanımlayıcılar doğru yazılmalıdır" kuralı için artık bkz.  
+2. ' A tıkladığınızda dikkat Hata Listesi penceresindeki **uyarıları**, CA1704 uyarı ihlalleri "Tanımlayıcılar doğru yazılmalıdır" kuralı için artık bkz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

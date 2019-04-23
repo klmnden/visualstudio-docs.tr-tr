@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 626f4e2328a208412d1e4e10857f336f37578f51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea2ec3162ae7ffdee20f65452f67b0ddf4cc2dd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049288"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Nasıl yapılır: Çalışma kitaplarını program aracılığıyla kapatma
   Etkin çalışma kitabının kapatabilir veya kapatmak için bir çalışma kitabı belirtebilirsiniz.
@@ -30,14 +30,14 @@ ms.locfileid: "56620076"
 
 ### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>Etkin çalışma kitabının belge düzeyi özelleştirmesinde kapatmak için
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> özelleştirme ile ilişkili çalışma kitabını kapatmak için yöntemi. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `Sheet1` Excel için belge düzeyi projesinde sınıfı.
+1. Çağrı <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> özelleştirme ile ilişkili çalışma kitabını kapatmak için yöntemi. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `Sheet1` Excel için belge düzeyi projesinde sınıfı.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]
 
 ### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>Bir VSTO eklenti, etkin çalışma kitabının kapatmak için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> etkin çalışma kitabının kapatmak için yöntemi. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `ThisAddIn` Excel için VSTO eklenti projesinde sınıfı.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> etkin çalışma kitabının kapatmak için yöntemi. Aşağıdaki kod örneğinde kullanmak amacıyla içinde çalıştırın `ThisAddIn` Excel için VSTO eklenti projesinde sınıfı.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
@@ -47,7 +47,7 @@ ms.locfileid: "56620076"
 
 ### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Belirttiğiniz ada göre bir çalışma kitabı kapatmak için
 
-1.  Bağımsız değişken olarak çalışma kitabının adını belirtin <xref:Microsoft.Office.Interop.Excel.Workbooks> koleksiyonu. Aşağıdaki kod örneğinde adlı bir çalışma kitabı olduğunu varsayar **NewWorkbook** Excel'de açıktır.
+1. Bağımsız değişken olarak çalışma kitabının adını belirtin <xref:Microsoft.Office.Interop.Excel.Workbooks> koleksiyonu. Aşağıdaki kod örneğinde adlı bir çalışma kitabı olduğunu varsayar **NewWorkbook** Excel'de açıktır.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]

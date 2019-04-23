@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047819"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığından emin olmak için gereken, Visual Studio'da genel yapısı, açıklamasını ve yazılım sisteminin veya uygulamanın davranışını bir parçası olarak modeller oluşturabilirsiniz. Modelleri kullanarak tasarım boyunca kullanılan desenleri de tanımlayabilirsiniz. Bu modeller mevcut mimarisini anlama, değişiklikleri tartışmak ve amacınızı NET bir şekilde iletişim kurmasına yardımcı olur.
@@ -28,9 +28,9 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
  Bir sistem mimarisi, iki alana ayrılabilir:
 
--   [Üst düzey tasarım](#Structure). Bu, ana bileşenleri ve her gereksinimi karşılamak için birbiriyle nasıl etkileşim kurduklarını açıklar. Sistem büyükse, her bileşenin nasıl daha küçük bileşenlerden oluştuğunu gösteren kendi üst düzey tasarım olabilir.
+- [Üst düzey tasarım](#Structure). Bu, ana bileşenleri ve her gereksinimi karşılamak için birbiriyle nasıl etkileşim kurduklarını açıklar. Sistem büyükse, her bileşenin nasıl daha küçük bileşenlerden oluştuğunu gösteren kendi üst düzey tasarım olabilir.
 
--   [Tasarım Düzenleri](#Patterns) ve bileşenleri tasarımları boyunca kullanılan kuralları. Bir programlama hedefini sağlamak için belirli bir yaklaşım bir deseni açıklar. Bir tasarım boyunca aynı desenleri kullanarak, takımınızın değişiklikleri yapma ve yeni yazılım geliştirme maliyetini azaltabilir.
+- [Tasarım Düzenleri](#Patterns) ve bileşenleri tasarımları boyunca kullanılan kuralları. Bir programlama hedefini sağlamak için belirli bir yaklaşım bir deseni açıklar. Bir tasarım boyunca aynı desenleri kullanarak, takımınızın değişiklikleri yapma ve yeni yazılım geliştirme maliyetini azaltabilir.
 
 ## <a name="Structure"></a> Üst düzey tasarım
  Üst düzey tasarım ana bileşenleri sisteminizi ve tasarım hedeflere ulaşmak için birbiriyle nasıl etkileşim kurduklarını açıklar. Etkinlikler, aşağıdaki listede, üst düzey tasarım, geliştirme mutlaka belirli bir sırada ancak faydalanırsınız.
@@ -39,11 +39,11 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
  Her durumda, farklı etkinlikler paralel geliştirmeyi ve kod geliştirmelerine yardımcı olur ve erken bir aşamada test eder. Başka bir başlamadan önce bu yönlerinden tamamlanması çalışmaktan kaçının. Genellikle, yazma ve test ederken gereksinimleri hem Anlayışınızı sistemi tasarlamak için en iyi yolu değişir. Bu nedenle, anlama ve gereksinimleri ve tasarımınızı ana özelliklerini kodlama başlamalısınız. Projenin sonraki yinelemeler ayrıntıları doldurun.
 
--   [Gereksinimleri anlama](#Requirements). Herhangi bir tasarım Kullanıcıların ihtiyaçlarını NET bir anlayış başlangıçtır.
+- [Gereksinimleri anlama](#Requirements). Herhangi bir tasarım Kullanıcıların ihtiyaçlarını NET bir anlayış başlangıçtır.
 
--   [Mimari desenleri](#BigDecisions). Çekirdek teknolojiler ve sistemin mimari öğeleri yaptığınız seçimleri.
+- [Mimari desenleri](#BigDecisions). Çekirdek teknolojiler ve sistemin mimari öğeleri yaptığınız seçimleri.
 
--   Veri modeli bileşenleri ve arabirimleri. Bileşenleri arasında geçirilen ve bileşenler içinde depolanan bilgileri tanımlamak için sınıf diyagramlarını çizebilirsiniz.
+- Veri modeli bileşenleri ve arabirimleri. Bileşenleri arasında geçirilen ve bileşenler içinde depolanan bilgileri tanımlamak için sınıf diyagramlarını çizebilirsiniz.
 
 ## <a name="Requirements"></a> Gereksinimleri anlama
  Tam bir uygulamayı üst düzey tasarımı, gereksinimler modelini veya diğer kullanıcıların ihtiyaçlarını açıklaması ile birlikte en etkili bir şekilde geliştirilmiştir. Gereksinim modelleri hakkında daha fazla bilgi için bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 
  Bir tasarım deseni bir belgede açıklanan ve genellikle aşağıdaki bölümleri içerir:
 
--   Adı.
+- Adı.
 
--   Komutun geçerli olduğu açıklaması. Hangi kriterleri, bir geliştirici bu düzeni uygularken yapmanız gerekir?
+- Komutun geçerli olduğu açıklaması. Hangi kriterleri, bir geliştirici bu düzeni uygularken yapmanız gerekir?
 
--   Çözdüğü sorunun kısa bir açıklama.
+- Çözdüğü sorunun kısa bir açıklama.
 
--   Başlıca parçaları ve aralarındaki ilişkiler modeli. Bunlar, sınıfları veya bileşenleri ve arabirimler, ilişkileri ve aralarındaki bağımlılıkları olabilir. Öğeleri genellikle iki kategoriye ayrılır:
+- Başlıca parçaları ve aralarındaki ilişkiler modeli. Bunlar, sınıfları veya bileşenleri ve arabirimler, ilişkileri ve aralarındaki bağımlılıkları olabilir. Öğeleri genellikle iki kategoriye ayrılır:
 
--   Adlandırma kuralları.
+- Adlandırma kuralları.
 
--   Nasıl deseni sorunu çözdü açıklaması.
+- Nasıl deseni sorunu çözdü açıklaması.
 
--   Geliştiricilerin benimseyebileceği değişikliklerin çeşitlemeleri açıklaması.
+- Geliştiricilerin benimseyebileceği değişikliklerin çeşitlemeleri açıklaması.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

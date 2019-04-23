@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc9ba407e91ddc8125d2836c8e2bb4329d5ad91f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059078"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasıyla Önkoşulları Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ ms.locfileid: "54798558"
 > [!NOTE]
 >  .NET Framework için bir yükleyici paket eklemek için bkz [geliştiriciler için .NET Framework Dağıtım Kılavuzu](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a> Package.xml kullanarak bir yükleyici paket eklemek için  
+## <a name="Package"></a> Package.xml kullanarak bir yükleyici paket eklemek için  
   
-1.  Dosya Gezgini'nde Aç **paketleri** klasör.  
+1. Dosya Gezgini'nde Aç **paketleri** klasör.  
   
      Varsayılan olarak, C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages 32-bit sistem üzerinde ve C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages 64-bit sistemde yoludur.  
   
-2.  Eklemek istediğiniz ön koşul için klasörü açın ve ardından'ın yüklü sürümü için dil klasörü açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (örneğin, **tr** İngilizce).  
+2. Eklemek istediğiniz ön koşul için klasörü açın ve ardından'ın yüklü sürümü için dil klasörü açın [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (örneğin, **tr** İngilizce).  
   
-3.  Not Defteri'nde açın **Package.xml** dosya.  
+3. Not Defteri'nde açın **Package.xml** dosya.  
   
-4.  Bulun **adı** öğesini içeren **http://go.microsoft.com/fwlink**ve URL'yi kopyalayın. Dahil **LinkId** bölümü.  
+4. Bulun **adı** öğesini içeren **http://go.microsoft.com/fwlink**ve URL'yi kopyalayın. Dahil **LinkId** bölümü.  
   
     > [!NOTE]
     >  Hayır ise **adı** ögesinin **http://go.microsoft.com/fwlink**açın **Product.xml** bulun ve ön koşul için kök klasöründeki dosya **fwlink** dize.  
@@ -42,11 +42,11 @@ ms.locfileid: "54798558"
     > [!IMPORTANT]
     >  Bazı ön koşullar (örneğin, 32-bit veya 64-bit sistemler için) birden çok yükleme paketine sahiptirler. Birden çok **adı** öğeleri içeren **fwlink**, bunların her biri için kalan adımları yinelemeniz gerekir.  
   
-5.  Tarayıcınızın adres çubuğuna URL'yi yapıştırın ve ardından, çalıştırmanız veya kaydetmeniz istendiğinde **Kaydet**.  
+5. Tarayıcınızın adres çubuğuna URL'yi yapıştırın ve ardından, çalıştırmanız veya kaydetmeniz istendiğinde **Kaydet**.  
   
      Bu adım, yükleyici dosyasını bilgisayarınıza yükler.  
   
-6.  Dosyayı ön koşul için kök klasörüne kopyalayın.  
+6. Dosyayı ön koşul için kök klasörüne kopyalayın.  
   
      Örneğin, Windows Installer 4.5 ön koşulları için dosyayı \Packages\WindowsInstaller4_5 klasörüne kopyalayın.  
   

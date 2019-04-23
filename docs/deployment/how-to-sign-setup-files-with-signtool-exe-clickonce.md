@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041073"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Nasıl yapılır: Kurulum dosyalarını SignTool.exe (ClickOnce) ile
 Kullanabileceğiniz *SignTool.exe* Kurulum programını imzalamak için (*setup.exe*). Bu işlem, değiştirilen dosyaların son kullanıcı bilgisayarlarında yüklü olmadığını garanti eder.
@@ -34,23 +34,23 @@ Kullanabileceğiniz *SignTool.exe* Kurulum programını imzalamak için (*setup.
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>İmzalanmamış bir Kurulum programı oluşturun ve daha sonra oturum için
 
-1.  Geliştirme bilgisayarında oturum bildirimleri istediğiniz sertifikayı yükleme ile.
+1. Geliştirme bilgisayarında oturum bildirimleri istediğiniz sertifikayı yükleme ile.
 
-2.  Projede seçin **Çözüm Gezgini**.
+2. Projede seçin **Çözüm Gezgini**.
 
-3.  Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.
+3. Üzerinde **proje** menüsünde tıklatın *ProjectName* **özellikleri**.
 
-4.  İçinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala**.
+4. İçinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala**.
 
-5.  İçinde **Yayımla** sayfasında **önkoşulları**.
+5. İçinde **Yayımla** sayfasında **önkoşulları**.
 
-6.  Tüm Önkoşullar seçilir ve ardından doğrulamak **Tamam**.
+6. Tüm Önkoşullar seçilir ve ardından doğrulamak **Tamam**.
 
-7.  İçinde **Yayımla** sayfasında yayınlama ayarları doğrulayın ve ardından **Şimdi Yayımla**.
+7. İçinde **Yayımla** sayfasında yayınlama ayarları doğrulayın ve ardından **Şimdi Yayımla**.
 
      İmzasız uygulama bildirimi, işaretsiz bir dağıtım bildirimi, sürümüne özel dosyalar ve imzalanmamış bir Kurulum programı, çözümü yayımlama klasörü konumu için yayımlar.
 
-8.  İçinde **Yayımla** sayfasında **önkoşulları**.
+8. İçinde **Yayımla** sayfasında **önkoşulları**.
 
 9. İçinde **önkoşulları** iletişim kutusu, NET **Önkoşul bileşenlerini yüklemek için Kurulum programını Oluştur**.
 

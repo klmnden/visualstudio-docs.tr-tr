@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047404"
 ---
 # <a name="manage-universal-windows-projects"></a>Evrensel Windows projeleri yönetme
 
@@ -25,11 +25,11 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 
 ### <a name="navigate-the-shared-project"></a>Paylaşılan proje gidin
 
-1.  Adlı bir C# VSIX projesi oluşturun **TestUniversalProject**. (**Dosya** > **yeni** > **proje** ardından **C#**  >   **Genişletilebilirlik** > **Visual Studio paket**). Ekle bir **özel komut** proje öğesi şablonu (üzerinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe** gidin **genişletilebilirlik**). Dosya adı **TestUniversalProject**.
+1. Adlı bir C# VSIX projesi oluşturun **TestUniversalProject**. (**Dosya** > **yeni** > **proje** ardından **C#**  >   **Genişletilebilirlik** > **Visual Studio paket**). Ekle bir **özel komut** proje öğesi şablonu (üzerinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle** > **yeni öğe** gidin **genişletilebilirlik**). Dosya adı **TestUniversalProject**.
 
-2.  Bir başvuru ekleyin *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* ve *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (içinde **Uzantıları** bölümü).
+2. Bir başvuru ekleyin *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* ve *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (içinde **Uzantıları** bölümü).
 
-3.  Açık *TestUniversalProject.cs* ve aşağıdakileri ekleyin `using` ifadeleri:
+3. Açık *TestUniversalProject.cs* ve aşağıdakileri ekleyin `using` ifadeleri:
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     using System.Windows.Forms;
     ```
 
-4.  İçinde `TestUniversalProject` sınıf işaret eden özel bir alan ekleyin **çıkış** penceresi.
+4. İçinde `TestUniversalProject` sınıf işaret eden özel bir alan ekleyin **çıkış** penceresi.
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     }
     ```
 
-5.  Çıkış Bölmesi'TestUniversalProject oluşturucu içinde başvuru ayarlayın:
+5. Çıkış Bölmesi'TestUniversalProject oluşturucu içinde başvuru ayarlayın:
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     }
     ```
 
-6.  Mevcut koddan kaldırdığınızdan `ShowMessageBox` yöntemi:
+6. Mevcut koddan kaldırdığınızdan `ShowMessageBox` yöntemi:
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     }
     ```
 
-7.  Bu kılavuzda birkaç farklı amaçlar için kullanırız DTE nesnesini Al. Ayrıca, menü düğmesine tıklandığında bir çözüm yüklendiğinden emin olun.
+7. Bu kılavuzda birkaç farklı amaçlar için kullanırız DTE nesnesini Al. Ayrıca, menü düğmesine tıklandığında bir çözüm yüklendiğinden emin olun.
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     }
     ```
 
-8.  Paylaşılan proje bulun. Paylaşılan proje saf bir kapsayıcıdır; derleme yok veya çıktılar üretir. Aşağıdaki yöntem ilk paylaşılan proje bakarak çözümde bulur <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> paylaşılan proje özelliğine sahip bir nesne.
+8. Paylaşılan proje bulun. Paylaşılan proje saf bir kapsayıcıdır; derleme yok veya çıktılar üretir. Aşağıdaki yöntem ilk paylaşılan proje bakarak çözümde bulur <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> paylaşılan proje özelliğine sahip bir nesne.
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -306,7 +306,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Platform projesinde paylaşılan öğeleri yönetme
 
-1.  Platform projesinde paylaşılan öğeleri bulur. Paylaşılan proje öğelerinde platformu projede paylaşılan öğeleri olarak görünür. Bunları göremez **Çözüm Gezgini**, ancak bunları bulmak için proje hiyerarşisi inceleyebileceğiniz. Aşağıdaki yöntem, hiyerarşi gezer ve paylaşılan tüm öğeleri toplar. Bu isteğe bağlı olarak her bir öğenin başlığını çıkarır. Paylaşılan öğeler yeni bir özelliği tarafından tanımlanan <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
+1. Platform projesinde paylaşılan öğeleri bulur. Paylaşılan proje öğelerinde platformu projede paylaşılan öğeleri olarak görünür. Bunları göremez **Çözüm Gezgini**, ancak bunları bulmak için proje hiyerarşisi inceleyebileceğiniz. Aşağıdaki yöntem, hiyerarşi gezer ve paylaşılan tüm öğeleri toplar. Bu isteğe bağlı olarak her bir öğenin başlığını çıkarır. Paylaşılan öğeler yeni bir özelliği tarafından tanımlanan <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>.
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     }
     ```
 
-2.  İçinde `ShowMessageBox` yöntemi, platform proje hiyerarşisi öğeleri görmek için aşağıdaki kodu ekleyin. IT içinde `foreach` blok.
+2. İçinde `ShowMessageBox` yöntemi, platform proje hiyerarşisi öğeleri görmek için aşağıdaki kodu ekleyin. IT içinde `foreach` blok.
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  Paylaşılan öğeler okuyun. Paylaşılan öğeler platform projesinde gizli bağlı dosyalar olarak görünür ve tüm özellikleri olarak sıradan bağlantılı dosyaları okuyabilir. Aşağıdaki kod, yolun tamamı ilk paylaşılan öğenin okur.
+3. Paylaşılan öğeler okuyun. Paylaşılan öğeler platform projesinde gizli bağlı dosyalar olarak görünür ve tüm özellikleri olarak sıradan bağlantılı dosyaları okuyabilir. Aşağıdaki kod, yolun tamamı ilk paylaşılan öğenin okur.
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ Visual Studio 2015'ten başlayarak, size Visual Studio SDK İndirme Merkezi'nden
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  Şimdi deneyin. Tuşuna **F5** deneysel örneği başlatmak için. Oluşturma bir C# deneysel örneğinde hub'ı Evrensel uygulama projesi (içinde **yeni proje** iletişim kutusu, **Visual C#**   >  **Windows**  >  **Windows 8** > **Evrensel** > **Hub uygulaması**) Git **Araçları** menü tıklayın **TestUniversalProject çağırma**ve ardından metin iade **çıkış** bölmesi. Aşağıdaki gibi görmeniz gerekir:
+4. Şimdi deneyin. Tuşuna **F5** deneysel örneği başlatmak için. Oluşturma bir C# deneysel örneğinde hub'ı Evrensel uygulama projesi (içinde **yeni proje** iletişim kutusu, **Visual C#**   >  **Windows**  >  **Windows 8** > **Evrensel** > **Hub uygulaması**) Git **Araçları** menü tıklayın **TestUniversalProject çağırma**ve ardından metin iade **çıkış** bölmesi. Aşağıdaki gibi görmeniz gerekir:
 
     ```
     Found shared project: HubApp.Shared

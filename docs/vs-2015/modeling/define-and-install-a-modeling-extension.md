@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049743"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Modelleme uzantısı tanımlama ve yükleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Menü komutları, hareket işleyicileri veya doğrulama için bir sınıf kitaplığı projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
-2.  Altında **yüklü şablonlar**seçin **Visual C#** veya **Visual Basic**, ardından **sınıf kitaplığı**.  
+2. Altında **yüklü şablonlar**seçin **Visual C#** veya **Visual Basic**, ardından **sınıf kitaplığı**.  
   
 #### <a name="to-create-a-vsix-project"></a>Bir VSIX projesi oluşturmak için  
   
-1.  Kodu ile bir bileşeni oluşturuyorsanız, ilk sınıf kitaplığı projesi oluşturmak en kolayıdır. Bu proje için kod ekleyeceksiniz.  
+1. Kodu ile bir bileşeni oluşturuyorsanız, ilk sınıf kitaplığı projesi oluşturmak en kolayıdır. Bu proje için kod ekleyeceksiniz.  
   
-2.  Bir VSIX projesi oluşturun.  
+2. Bir VSIX projesi oluşturun.  
   
-    1.  İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
+    1. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
   
-3.  VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
+3. VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
   
-    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
+    - Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
   
-4.  Açık **source.extension.vsixmanifest**. Dosyayı bildirim düzenleyicisinde açar.  
+4. Açık **source.extension.vsixmanifest**. Dosyayı bildirim düzenleyicisinde açar.  
   
-5.  Üzerinde **meta verileri** sekmesinde, VSIX açıklayıcı alanlarının ve adını belirleyin.  
+5. Üzerinde **meta verileri** sekmesinde, VSIX açıklayıcı alanlarının ve adını belirleyin.  
   
-6.  Üzerinde **hedefleri Yükle** sekmesini, **yeni** ve Visual Studio sürümlerini hedefler olarak ayarlayın.  
+6. Üzerinde **hedefleri Yükle** sekmesini, **yeni** ve Visual Studio sürümlerini hedefler olarak ayarlayın.  
   
-7.  Üzerinde **varlıklar** sekmesinde, bileşenleriniz için Visual Studio uzantısı ekleyin.  
+7. Üzerinde **varlıklar** sekmesinde, bileşenleriniz için Visual Studio uzantısı ekleyin.  
   
-    1.  Seçin **yeni**.  
+    1. Seçin **yeni**.  
   
-    2.  Kod içeren bileşen için bu alanlar kümesinde **yeni varlık Ekle** iletişim kutusunda:  
+    2. Kod içeren bileşen için bu alanlar kümesinde **yeni varlık Ekle** iletişim kutusunda:  
   
         |||  
         |-|-|  
@@ -97,36 +97,36 @@ Visual Studio'da modelleme diyagramları için uzantı tanımlayabilirsiniz. Bu 
   
 #### <a name="to-run-an-extension-during-its-development"></a>Geliştirme sırasında uzantı çalıştırmak için  
   
-1.  İçinde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
+1. İçinde [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
   
      Proje yapılarında ve yeni bir örneğini [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Deneysel modunda başlatılır.  
   
-    -   Alternatif olarak seçebileceğiniz **hata ayıklama olmadan Başlat**. Bu programı başlatmak için geçen süreyi azaltır.  
+    - Alternatif olarak seçebileceğiniz **hata ayıklama olmadan Başlat**. Bu programı başlatmak için geçen süreyi azaltır.  
   
-2.  Oluşturun veya bir modelleme projesi Visual Studio'nun deneysel örneğinde açın ve oluşturabilir veya bir diyagramı açın.  
+2. Oluşturun veya bir modelleme projesi Visual Studio'nun deneysel örneğinde açın ve oluşturabilir veya bir diyagramı açın.  
   
      Uzantınızı yüklenecek ve çalışacaktır.  
   
-3.  Kullandıysanız **hata ayıklama olmadan Başlat** ancak istediğiniz hata ayıklayıcıyı kullanın, Visual Studio ana örneğine geri dönün. Üzerinde **hata ayıklama** menüsünü tıklatın **iliştirme**. İletişim kutusunda, program adı olan Visual Studio Deneysel örneğini seçin **devenv**.  
+3. Kullandıysanız **hata ayıklama olmadan Başlat** ancak istediğiniz hata ayıklayıcıyı kullanın, Visual Studio ana örneğine geri dönün. Üzerinde **hata ayıklama** menüsünü tıklatın **iliştirme**. İletişim kutusunda, program adı olan Visual Studio Deneysel örneğini seçin **devenv**.  
   
-##  <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
+## <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
  Uzantınızı ana Visual Studio örneğine kendi bilgisayarınıza veya diğer bilgisayarlarda çalıştırmak için aşağıdaki adımları gerçekleştirin.  
   
-1.  Bilgisayarınızda, bulma **.vsix** uzantı projeniz tarafından oluşturulan dosya.  
+1. Bilgisayarınızda, bulma **.vsix** uzantı projeniz tarafından oluşturulan dosya.  
   
-    1.  İçinde **Çözüm Gezgini**, projenizin kısayol menüsünden seçin **klasörü Windows Gezgini'nde Aç**.  
+    1. İçinde **Çözüm Gezgini**, projenizin kısayol menüsünden seçin **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
   
-2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
+2. Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   
-    -   Hedef bilgisayarda belirttiğiniz Visual Studio sürümlerinden birini olmalıdır **yükleme hedeflerinden** sekmesinde **source.extension.vsixmanifest**.  
+    - Hedef bilgisayarda belirttiğiniz Visual Studio sürümlerinden birini olmalıdır **yükleme hedeflerinden** sekmesinde **source.extension.vsixmanifest**.  
   
-3.  Hedef bilgisayarda açın **.vsix** örneğin çift tıklayarak dosyayı.  
+3. Hedef bilgisayarda açın **.vsix** örneğin çift tıklayarak dosyayı.  
   
      **Visual Studio Uzantı Yükleyicisi** açılır ve uzantıyı yükler.  
   
-4.  Veya Visual Studio'yu yeniden başlatın.  
+4. Veya Visual Studio'yu yeniden başlatın.  
   
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
   

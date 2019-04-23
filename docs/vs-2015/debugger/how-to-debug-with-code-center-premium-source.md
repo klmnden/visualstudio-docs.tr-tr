@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039883"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Nasıl yapılır: Kod Merkezi birincil kaynağı ile hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ ms.locfileid: "58193911"
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>İşleme İliştir kullanarak kaynak kodunuz hata ayıklamak için  
   
-1.  Akıllı kart okuyucu bağlanmak ve paylaşılan kaynak girişimi aldığınız kart ekleyin.  
+1. Akıllı kart okuyucu bağlanmak ve paylaşılan kaynak girişimi aldığınız kart ekleyin.  
   
-2.  Visual Studio'yu başlatın.  
+2. Visual Studio'yu başlatın.  
   
-3.  Visual Studio projenizi açın.  
+3. Visual Studio projenizi açın.  
   
-4.  Üzerinde **Araçları** menüsünü tıklatın **iliştirme**.  
+4. Üzerinde **Araçları** menüsünü tıklatın **iliştirme**.  
   
-5.  İçinde **iliştirme** iletişim kutusu, tıklayın **seçin**.  
+5. İçinde **iliştirme** iletişim kutusu, tıklayın **seçin**.  
   
-6.  İçinde **kod türünü seç** iletişim kutusunun **bu tür kodlarda algılamak**seçin **yerel**, **yönetilen**, ve **yönetilen () v4.0)**.  
+6. İçinde **kod türünü seç** iletişim kutusunun **bu tür kodlarda algılamak**seçin **yerel**, **yönetilen**, ve **yönetilen () v4.0)**.  
   
-7.  Tıklayın **Tamam** kapatmak için **kod türünü seç** iletişim kutusu.  
+7. Tıklayın **Tamam** kapatmak için **kod türünü seç** iletişim kutusu.  
   
-8.  İçinde **kullanılabilir işlemler** kutusunda, hata ayıklamak istediğiniz işlemi seçin.  
+8. İçinde **kullanılabilir işlemler** kutusunda, hata ayıklamak istediğiniz işlemi seçin.  
   
 9. Tıklayın **ekleme**.  
   
@@ -117,27 +117,27 @@ ms.locfileid: "58193911"
   
 4. Çözümünüzdeki her yönetilen proje için aşağıdakileri yapın  
   
-   1.  Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
+   1. Çözüm Gezgini'nde, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-   2.  Seçin **hata ayıklama** seçip **unmanged kod hata ayıklamayı**.  
+   2. Seçin **hata ayıklama** seçip **unmanged kod hata ayıklamayı**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Çözümünüzü kod merkezi birincil kaynağı ile hata ayıklamak için  
   
-1.  İçinde `Package` sınıfı, paket Oluşturucu bir kesme noktası ayarlayın.  
+1. İçinde `Package` sınıfı, paket Oluşturucu bir kesme noktası ayarlayın.  
   
-2.  İçinde `Debug` menüsünü tıklatın **hata ayıklamayı Başlat**.  
+2. İçinde `Debug` menüsünü tıklatın **hata ayıklamayı Başlat**.  
   
-3.  Paket oluşturucu içinde kesme noktasına ulaştığınızda, Git **çağrı yığını** penceresini açın ve sonra simgeler, yüklemek istediğiniz derlemenin yığın çerçevesi sağ tıklayın **yük sembolleri**.  
+3. Paket oluşturucu içinde kesme noktasına ulaştığınızda, Git **çağrı yığını** penceresini açın ve sonra simgeler, yüklemek istediğiniz derlemenin yığın çerçevesi sağ tıklayın **yük sembolleri**.  
   
      Kaynak yüklemek için çağrı çerçevesi çift tıklayın.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>Kod Merkezi birincil kaynak koduna gidin  
   
-1.  Akıllı kart okuyucu bağlanmak ve paylaşılan kaynak girişimi aldığınız kart ekleyin.  
+1. Akıllı kart okuyucu bağlanmak ve paylaşılan kaynak girişimi aldığınız kart ekleyin.  
   
-2.  Internet Explorer başlatma aşağıdaki URL'yi girin: `https://codepremium.msdn.microsoft.com`  
+2. Internet Explorer başlatma aşağıdaki URL'yi girin: `https://codepremium.msdn.microsoft.com`  
   
-3.  İstediğiniz kaynak bulmak için Gözat'ı tıklatın.  
+3. İstediğiniz kaynak bulmak için Gözat'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcı ayarları ve hazırlığı](../debugger/debugger-settings-and-preparation.md)   

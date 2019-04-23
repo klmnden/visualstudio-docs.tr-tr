@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054475"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Nasıl yapılır: Visual Studio'nun belirli bir sürüm yükleyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,18 +46,18 @@ ms.locfileid: "54756366"
 >  Kullanmak istediğiniz dile bağlı olarak, lütfen "enu" (İngilizce) aşağıdaki değerlerden biriyle değiştirin:
 >
 > - CHS (için Çince (Basitleştirilmiş))
->   -   CHT (için Çince (Geleneksel))
->   -   CSY (Çekçe için)
->   -   Almanca (Almanya için)
->   -   ESN (İspanyolca için)
->   -   FRA (için Fransızca)
->   -   ITA (İtalyanca için)
->   -   jpa (Japonca için)
->   -   KOR (için Korece)
->   -   PLK (Lehçe için)
->   -   PTB (Portekizce için)
->   -   RUS (Rusça)
->   -   Dim (Türkçe için)
+>   - CHT (için Çince (Geleneksel))
+>   - CSY (Çekçe için)
+>   - Almanca (Almanya için)
+>   - ESN (İspanyolca için)
+>   - FRA (için Fransızca)
+>   - ITA (İtalyanca için)
+>   - jpa (Japonca için)
+>   - KOR (için Korece)
+>   - PLK (Lehçe için)
+>   - PTB (Portekizce için)
+>   - RUS (Rusça)
+>   - Dim (Türkçe için)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Visual Studio Yönetici Kılavuzu](../install/visual-studio-administrator-guide.md)

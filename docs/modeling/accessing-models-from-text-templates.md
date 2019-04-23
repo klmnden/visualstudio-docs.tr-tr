@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040696"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 Metin şablonları kullanarak rapor dosyaları, kaynak kodu dosyaları ve etki alanına özgü dil modelleri tabanlı diğer metin dosyaları oluşturabilirsiniz. Temel metin şablonları hakkında daha fazla bilgi için [kod oluşturma ve T4 metin şablonları](../modeling/code-generation-and-t4-text-templates.md). Metin şablonlarını DSL'nizi ayıklanırken Deneysel modda çalışır ve DSL dağıtmış olan bir bilgisayar üzerinde de çalışır.
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  DSL yönerge işlemcisini asıl iki görevleri gerçekleştirir:
 
--   Etkili bir şekilde derleme ve içeri aktarma yönergeleri DSL'nizi başvuran şablona ekler. Bu, etki alanı sınıfları şablon kodunda kullanmanızı sağlar.
+- Etkili bir şekilde derleme ve içeri aktarma yönergeleri DSL'nizi başvuran şablona ekler. Bu, etki alanı sınıfları şablon kodunda kullanmanızı sağlar.
 
--   Belirttiğiniz dosya yükler `requires` parametre ve bir özellik ayarlar `this` yüklenen modelin kök öğesine başvuruyor.
+- Belirttiğiniz dosya yükler `requires` parametre ve bir özellik ayarlar `this` yüklenen modelin kök öğesine başvuruyor.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Şablonu çalıştırmadan önce model doğrulama
  Şablon yürütülmeden önce doğrulanması modeli neden olabilir.

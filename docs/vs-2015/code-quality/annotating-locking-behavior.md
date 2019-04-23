@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052395"
 ---
 # <a name="annotating-locking-behavior"></a>Kilitlenme Davranışını Yorumlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ ms.locfileid: "54834372"
   
  Aklınızda tutmanız gereken bazı iş parçacığı sahipliği kuralları:  
   
--   Döndürme kilitlerini Temizle iş parçacığı sahipliğine uncounted kilitleri.  
+- Döndürme kilitlerini Temizle iş parçacığı sahipliğine uncounted kilitleri.  
   
--   NET iş parçacığı sahipliğine kilitleri Mutex'leri ve kritik bölüm sayılır.  
+- NET iş parçacığı sahipliğine kilitleri Mutex'leri ve kritik bölüm sayılır.  
   
--   Semafor ve olayları Temizle iş parçacığı sahipliği olmayan kilitleri sayılır.  
+- Semafor ve olayları Temizle iş parçacığı sahipliği olmayan kilitleri sayılır.  
   
 ## <a name="locking-annotations"></a>Kilitleme ek açıklamaları  
  Aşağıdaki tabloda, kilitleme ek açıklamalar listelenmektedir.  

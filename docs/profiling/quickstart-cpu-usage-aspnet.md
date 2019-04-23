@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058869"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Hızlı Başlangıç: CPU kullanım verilerini, Visual Studio (ASP.NET) çözümleme
 
@@ -153,30 +153,30 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
+## <a name="step-1-collect-profiling-data"></a>1. Adım: Profil oluşturma verilerini topla
 
-1.  İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `Simple` Oluşturucusu:
+1. İlk olarak, bu kod satırı üzerinde uygulamanızda bir kesme noktası ayarlamak `Simple` Oluşturucusu:
 
     `for (int i = 0; i < 200; i++)`
 
     Bir kesme noktası cilt payını sola kod satırının tıklayarak ayarlayın.
 
-1.  Ardından, sonunda kapanış ayracı ikinci bir kesme noktası ayarlamak `Simple` Oluşturucusu:
+1. Ardından, sonunda kapanış ayracı ikinci bir kesme noktası ayarlamak `Simple` Oluşturucusu:
 
      ![Profil oluşturma için kesme noktaları belirleyin](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > İki kesme noktaları ayarlayarak veri toplamayı çözümlemek istediğiniz kod parçalarını sınırlayabilirsiniz.
 
-1.  **Tanılama araçları** pencere zaten görünür değilse, bunu devre dışı bırakmış. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
+1. **Tanılama araçları** pencere zaten görünür değilse, bunu devre dışı bırakmış. Pencereyi ayarlayıp yeniden getirmek için tıklayın **hata ayıklama** > **Windows** > **tanılama araçlarını Göster**.
 
-1.  Tıklayın **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
+1. Tıklayın **hata ayıklama** > **hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).
 
-1.  Uygulama yükleme bittiğinde, bilgisayarınızı **hakkında** yeni kod çalıştırmaya başlamak için web sayfasının üstündeki bağlantısı.
+1. Uygulama yükleme bittiğinde, bilgisayarınızı **hakkında** yeni kod çalıştırmaya başlamak için web sayfasının üstündeki bağlantısı.
 
-1.  Bakmak **özeti** Tanılama Araçları'nın görünümü görüntülenir.
+1. Bakmak **özeti** Tanılama Araçları'nın görünümü görüntülenir.
 
-1.  Seçerek hata ayıklayıcıyı duraklatılmış durumdayken, CPU kullanım verileri toplamayı etkinleştir **kayıt CPU profili**ve ardından açın **CPU kullanımı** sekmesi.
+1. Seçerek hata ayıklayıcıyı duraklatılmış durumdayken, CPU kullanım verileri toplamayı etkinleştir **kayıt CPU profili**ve ardından açın **CPU kullanımı** sekmesi.
 
      ![Tanılama araçları, CPU profili oluşturmayı etkinleştir](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ Windows 8 ve üzeri, hata ayıklayıcısı ile profil oluşturma araçları çal
 
      Seçeneğini belirlediğinizde **kayıt CPU profili**, Visual Studio, işlevlerinizin kaydı başlayacak ve aldıkları yürütmek için ne kadar süre ve örnekleme oturumunun belirli segmentlerine odaklanmak için kullanabileceğiniz bir zaman çizelgesi grafiği sağlar. Uygulamanız bir kesme noktasında durdurulur, yalnızca bu toplanan verileri görüntüleyebilirsiniz.
 
-6.  Uygulamayı, ikinci bir kesme noktasına kadar çalıştırmak için F5'e basın.
+6. Uygulamayı, ikinci bir kesme noktasına kadar çalıştırmak için F5'e basın.
 
      Şimdi, artık performans verileri bölge için özellikle uygulamanız iki kesme noktaları arasında çalışan kod için var.
 

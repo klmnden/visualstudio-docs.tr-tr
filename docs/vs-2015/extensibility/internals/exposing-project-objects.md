@@ -11,12 +11,12 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1c949d4668089a2cc06543169a1c3ce6619409d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044676"
 ---
 # <a name="exposing-project-objects"></a>Proje Nesnelerini Kullanıma Sunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54776401"
   
 ### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>VSPackage özgü bir nesne için bir proje katkıda bulunma  
   
-1.  Uygun anahtarlara, VSPackage .pkgdef dosyasına ekleyin.  
+1. Uygun anahtarlara, VSPackage .pkgdef dosyasına ekleyin.  
   
      Örneğin, C++ dil projesi için .pkgdef ayarları şunlardır:  
   
@@ -40,7 +40,7 @@ ms.locfileid: "54776401"
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  Koda uygulanması <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi, aşağıdaki örnekte olduğu gibi.  
+2. Koda uygulanması <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> yöntemi, aşağıdaki örnekte olduğu gibi.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  

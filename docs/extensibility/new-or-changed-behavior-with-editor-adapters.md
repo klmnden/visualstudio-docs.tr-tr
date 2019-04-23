@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41dafb118120d14004eae07e56a954675b8ffc4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 63c04e808228898e7542f67ec72bf9d36203547d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061264"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Düzenleyici bağdaştırıcıları ile yeni veya değiştirilen davranışı
 Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış kodu güncelleştirmekte olduğunuz ve yeni API kullanmak yerine Düzenleyicisi bağdaştırıcıları (veya dolgular) kullanmayı planlıyorsanız, düzenleyici bağdaştırıcılarının davranışta aşağıdaki farklar farkında olmalıdır önceki çekirdek Düzenleyici göre.
@@ -83,29 +83,29 @@ Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış
 
  Etkilenen yöntemleri (listesi değil kapsamlı) şunları içerir:
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>
 
 #### <a name="outlining"></a>Anahat Oluşturma
  İstemcileri <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> kullanılarak eklenen bu anahat bölgeleri görürsünüz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>veya <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Düzenleyici bağdaştırıcıları aracılığıyla ekli değil çünkü geçici bölgeleri görmezsiniz. Benzer şekilde, bu istemciler Düzenleyicisi bağdaştırıcıları yerine yeni Kod Düzenleyicisi'ni kullanma (C# ve C++ dahil) dilleri tarafından eklenen bölgeleri anahat oluşturma görmezsiniz.
@@ -118,7 +118,7 @@ Visual Studio çekirdek Düzenleyicisi önceki sürümlerini karşı yazılmış
 
 #### <a name="intellisense"></a>IntelliSense
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Yöntemi başarısız olur ya da uygulamayan bir sınıfta geçirirseniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> veya <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Özel bir Win32 sahip tarafından çizilmiş açılan pencereler artık desteklenmemektedir.
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> Yöntemi başarısız olur ya da uygulamayan bir sınıfta geçirirseniz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> veya <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Özel bir Win32 sahip tarafından çizilmiş açılan pencereler artık desteklenmemektedir.
 
 #### <a name="smarttags"></a>Akıllı etiketler
  Akıllı etiketler, oluşturulan için bağdaştırıcı desteği yoktur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> arabirimleri.

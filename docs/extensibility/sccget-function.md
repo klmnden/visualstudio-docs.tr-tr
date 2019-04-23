@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044506"
 ---
 # <a name="sccget-function"></a>SccGet işlevi
 Bu işlev, bir veya daha fazla dosyaları görüntülemek ve derleme ancak düzenleme için bir kopyasını alır. Çoğu sistemde, dosyaları salt okunur olarak etiketlenir.
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Kaynak Denetimi sürümü, yerel önbellek burada kaynak denetimi veritabanı ile eşitlenmemiş hale gelir, bu sorunu çözmek için iki yolu vardır:
 
-1.  Kaynak denetim veritabanında şu anda kullanıma alınmış dosya yeniden adlandırılırken izin vermez.
+1. Kaynak denetim veritabanında şu anda kullanıma alınmış dosya yeniden adlandırılırken izin vermez.
 
-2.  "Eski Sil"tarafından yeni Ekle"ve ardından" denk yapın. Bunu yapmanın bir yolu algoritmasıdır.
+2. "Eski Sil"tarafından yeni Ekle"ve ardından" denk yapın. Bunu yapmanın bir yolu algoritmasıdır.
 
-    1.  Çağrı [SccQueryChanges](../extensibility/sccquerychanges-function.md) işlevi, yeniden adlandırma hakkında bilgi edinmek için *.txt* için *b.txt* kaynak denetim veritabanındaki.
+    1. Çağrı [SccQueryChanges](../extensibility/sccquerychanges-function.md) işlevi, yeniden adlandırma hakkında bilgi edinmek için *.txt* için *b.txt* kaynak denetim veritabanındaki.
 
-    2.  Yerel Yeniden Adlandır *.txt* için *b.txt*.
+    2. Yerel Yeniden Adlandır *.txt* için *b.txt*.
 
-    3.  Çağrı `SccGet` işlevi hem *.txt* ve *b.txt*.
+    3. Çağrı `SccGet` işlevi hem *.txt* ve *b.txt*.
 
-    4.  Çünkü *.txt* yok kaynak denetim veritabanında eksik olan yerel sürüm önbellek temizlenir *.txt* sürüm bilgisi.
+    4. Çünkü *.txt* yok kaynak denetim veritabanında eksik olan yerel sürüm önbellek temizlenir *.txt* sürüm bilgisi.
 
-    5.  *B.txt* kullanıma alınan dosya içeriğini yerel ile birleştirilmiş *b.txt* dosya.
+    5. *B.txt* kullanıma alınan dosya içeriğini yerel ile birleştirilmiş *b.txt* dosya.
 
-    6.  Güncelleştirilmiş *b.txt* dosya artık iade edilmelidir.
+    6. Güncelleştirilmiş *b.txt* dosya artık iade edilmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Kaynak Denetimi Eklentisi API işlevleri](../extensibility/source-control-plug-in-api-functions.md)

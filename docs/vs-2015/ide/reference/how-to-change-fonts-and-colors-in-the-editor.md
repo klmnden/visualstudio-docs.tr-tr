@@ -15,43 +15,43 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040956"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Nasıl yapılır: Yazı tipleri ve renkler düzenleyicide Değiştir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Varsayılan yazı tipini değiştirmek, yazı tipi boyutunu ayarlayın ve çeşitli metin ön ve arka plan renklerini değiştirme **görüntü öğeleri** Kod Düzenleyicisi'nde. Ne zaman yazı tipi ayarlarını değiştirmeyi, aşağıdaki bilgileri göz önünde bulundurun:  
   
--   Ayarlarını **yazı tipi** ve **boyutu** metin öğeleriyle tüm geneldir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] düzenleyiciler.  
+- Ayarlarını **yazı tipi** ve **boyutu** metin öğeleriyle tüm geneldir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] düzenleyiciler.  
   
--   Sabit genişlikli yazı tipi adları kalın olarak listelenir.  
+- Sabit genişlikli yazı tipi adları kalın olarak listelenir.  
   
--   **Öğe ön plan**, **öğesi arka plan**, ve **kalın** seçenekler, metin öğesinin her türü için ayarlanabilir. Renkleri değiştirmek ve seçin, örneğin, **kalın** için **yorum** ve **yer işaretleri**, diğer metin öğelerini türleri etkilenmez.  
+- **Öğe ön plan**, **öğesi arka plan**, ve **kalın** seçenekler, metin öğesinin her türü için ayarlanabilir. Renkleri değiştirmek ve seçin, örneğin, **kalın** için **yorum** ve **yer işaretleri**, diğer metin öğelerini türleri etkilenmez.  
   
 > [!NOTE]
 >  İletişim kutuları ve menü komutları gördüğünüz içinde açıklanana göre farklılık **yardımcı** bağlı olarak, etkin ayarlarınıza ve sürüm. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Varsayılan yazı tipini, boyutunu ve renkleri değiştirmek için  
   
-1.  Seçin **seçenekleri** gelen **Araçları** menüsünde ve **ortam** klasörüne **yazı tipleri ve renkler**.  
+1. Seçin **seçenekleri** gelen **Araçları** menüsünde ve **ortam** klasörüne **yazı tipleri ve renkler**.  
   
      [Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) açılır.  
   
-2.  İçinde **ayarlarını göster**seçin **metin düzenleyici**.  
+2. İçinde **ayarlarını göster**seçin **metin düzenleyici**.  
   
-3.  Değiştirme **yazı tipi** ve **boyutu** yazı tipini ve metin öğeleriyle tüm düzenleyicilerde boyutunu değiştirmek için Seçenekler.  
+3. Değiştirme **yazı tipi** ve **boyutu** yazı tipini ve metin öğeleriyle tüm düzenleyicilerde boyutunu değiştirmek için Seçenekler.  
   
-4.  Uygun öğeyi seçin **görüntü öğeleri**ve ardından **öğe ön plan** ve **öğesi arka plan** seçenekleri.  
+4. Uygun öğeyi seçin **görüntü öğeleri**ve ardından **öğe ön plan** ve **öğesi arka plan** seçenekleri.  
   
     > [!TIP]
     >  Tıklayın **Varsayılanlar kullan** varsayılan ayarlarına sıfırlanır.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Düzenleyiciyi özelleştirme](../../ide/customizing-the-editor.md)   

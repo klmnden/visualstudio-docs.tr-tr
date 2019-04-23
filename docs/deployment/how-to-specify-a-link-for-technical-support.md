@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0acf30ee16669901da89a23587729599c7b4039
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051680"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Nasıl yapılır: Teknik destek için bir bağlantı belirtme
 Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama **destek URL'si** özelliği, bir Web sayfası veya kullanıcılar nereye uygulama hakkında bilgi almak için dosya paylaşımı tanımlar. Bu özellik isteğe bağlıdır; URL sağlanırsa, uygulamanın girişinde görüntülenir **Program Ekle veya Kaldır** iletişim kutusu.
@@ -34,15 +34,15 @@ Yayımlama sırasında bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecc
 
 ### <a name="to-specify-a-support-url"></a>İçin destek URL'sini belirtme
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **seçenekleri** açmak için düğmeyi **yayımlama seçeneği** iletişim kutusu.
+3. Tıklayın **seçenekleri** açmak için düğmeyi **yayımlama seçeneği** iletişim kutusu.
 
-4.  Tıklayın **açıklama**.
+4. Tıklayın **açıklama**.
 
-5.  İçinde **destek URL'si** alanında, bir Web sitesi, Web sayfası veya UNC paylaşımı tam nitelenmiş bir yol girin.
+5. İçinde **destek URL'si** alanında, bir Web sitesi, Web sayfası veya UNC paylaşımı tam nitelenmiş bir yol girin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)

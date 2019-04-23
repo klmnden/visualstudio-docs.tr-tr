@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1aa698c2c152b33d111ffe893ec22fbf9eec4316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044663"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Hangi web performansı, birim ve kodlanmış UI testleri yük testi senaryosunda içerecek şekilde belirlemek için test karışımını düzenle
 
@@ -41,37 +41,37 @@ Senaryo metin karışımını kullanarak daha fazla web başarım ve birim testl
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Daha fazla test için varolan bir senaryoyu eklemek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  İçinde **Yük Testi Düzenleyicisi**, varolan bir senaryoyu sağ tıklayın ve ardından **Test Ekle**.
+2. İçinde **Yük Testi Düzenleyicisi**, varolan bir senaryoyu sağ tıklayın ve ardından **Test Ekle**.
 
      **Test Ekle** iletişim kutusu görüntülenir. Tüm web performansı, birim ve çözümünüzü senaryonuzda olmayan kodlanmış UI testlerini senaryoya eklemek kullanılabilir.
 
-3.  İçinde **kullanılabilir testler** bölmesinde, web performansı, birim ve eklemek istediğiniz kodlanmış UI testleri seçin. Testler eklemek için sağ oku seçerek **Seçili testler** bölmesi.
+3. İçinde **kullanılabilir testler** bölmesinde, web performansı, birim ve eklemek istediğiniz kodlanmış UI testleri seçin. Testler eklemek için sağ oku seçerek **Seçili testler** bölmesi.
 
-4.  Testleri eklemeyi bitirdiğinizde seçin **Tamam**.
+4. Testleri eklemeyi bitirdiğinizde seçin **Tamam**.
 
      Testleri test karışımına eklenir. Yeni dağıtım, test karışımını testler için otomatik olarak atanır.
 
-5.  (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5. (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="remove-tests-from-a-scenario"></a>Testleri bir senaryodan Kaldır
+## <a name="remove-tests-from-a-scenario"></a>Testleri bir senaryodan Kaldır
  ![Varolan bir yük testi bir test kaldırılıyor](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Testleri bir senaryodan kaldırmak için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  İçinde **Yük Testi Düzenleyicisi**, ağaç yük testi, test ve select kaldırmak istediğiniz senaryoyu **Test Karışımını Düzenle**. **Test Karışımını Düzenle** iletişim kutusu görüntülenir.
+2. İçinde **Yük Testi Düzenleyicisi**, ağaç yük testi, test ve select kaldırmak istediğiniz senaryoyu **Test Karışımını Düzenle**. **Test Karışımını Düzenle** iletişim kutusu görüntülenir.
 
-3.  Kılavuzda web performansı, birim ve kodlanmış UI testi seçin ve sonra **Kaldır**.
+3. Kılavuzda web performansı, birim ve kodlanmış UI testi seçin ve sonra **Kaldır**.
 
     > [!NOTE]
     > Test kaldırdıktan sonra test karışımını, tercih edilen dağıtım için ayarlayın.
 
-4.  Testleri kaldırmayı bitirdiğinizde seçin **Tamam**.
+4. Testleri kaldırmayı bitirdiğinizde seçin **Tamam**.
 
-##  <a name="EditingTestMixAboutMixControl"></a> Karışım denetimi hakkında
+## <a name="EditingTestMixAboutMixControl"></a> Karışım denetimi hakkında
  Karıştırma denetimini testleri, tarayıcı türleri veya bir yük testi senaryosuna ağ türleri arasında dağıtılmış yük yüzdesi ayarlamanızı sağlar. Yüzde değerleri kaydırıcılar hareket ettirilerek ayarlanır. Testler için karışımı ayarlamak, bir sanal kullanıcının bir yük testi senaryosunda belirli bir testi çalıştırma olasılığını belirtir.
 
  Bir kaydırıcı taşıdığınızda, tüm kullanılabilir öğeleri yüzde değerlerini değiştirin. İkiden fazla öğe varsa, ekleme veya kaldırma miktarı diğer öğeler arasında eşit olarak dağıtılır. Bu davranışı geçersiz kılmak mümkündür. Belirli bir öğe için kilit sütunundaki onay kutusunu seçerseniz, o öğe için belirtilen yüzde değerini kilitlersiniz. Ardından, bir kaydırıcıyı taşıdığınızda, ekleme veya kaldırma miktarı yalnızca kilidi kalan tüm öğeleri uygulanır.

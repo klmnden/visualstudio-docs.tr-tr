@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e8a4e1c44928663d0d055d84899c60b968f90a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056282"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Nasıl yapılır: Program aracılığıyla belgeleri kaydetme
   Microsoft Office Word belgeleri kaydetmek için çeşitli yollar vardır. Belge adını değiştirmeden bir belgeyi kaydedebilirsiniz veya yeni bir adla bir belgeyi kaydedebilirsiniz.
@@ -29,7 +29,7 @@ ms.locfileid: "56636469"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>Belge düzeyi özelleştirme ile ilişkilendirilmiş belgeyi kaydetme
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Word.Document.Save%2A> yöntemi <xref:Microsoft.Office.Tools.Word.Document> sınıfı. Bu kod örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.
+1. Çağrı <xref:Microsoft.Office.Tools.Word.Document.Save%2A> yöntemi <xref:Microsoft.Office.Tools.Word.Document> sınıfı. Bu kod örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.
 
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
@@ -45,7 +45,7 @@ ms.locfileid: "56636469"
 
 ### <a name="to-save-a-document-specified-by-name"></a>Belirtilen ada göre bir belgeyi kaydetmek için
 
-1.  Belge adı bağımsız değişkeni olarak kullanma <xref:Microsoft.Office.Interop.Word.Documents> koleksiyonu. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
+1. Belge adı bağımsız değişkeni olarak kullanma <xref:Microsoft.Office.Interop.Word.Documents> koleksiyonu. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
 
      [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
      [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
@@ -58,7 +58,7 @@ ms.locfileid: "56636469"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Belge düzeyi özelleştirmesinde yeni bir adla ilişkilendirilmiş belgeyi kaydetme
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> yöntemi `ThisDocument` tam yol ve dosya adı kullanarak, projenizdeki sınıfı. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır. Bu kod örneği kullanmak için çalıştırın `ThisDocument` sınıfı.
+1. Çağrı <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> yöntemi `ThisDocument` tam yol ve dosya adı kullanarak, projenizdeki sınıfı. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır. Bu kod örneği kullanmak için çalıştırın `ThisDocument` sınıfı.
 
     > [!NOTE]
     >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Yöntemi, bir hedef dizin mevcut değil veya dosya kaydetme diğer sorunları varsa bir özel durum oluşturur. Kullanmak için iyi bir uygulamadır bir **try... catch** geçici olarak engellemek <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> yöntemi veya içinde bir çağırma yöntemi.
@@ -68,7 +68,7 @@ ms.locfileid: "56636469"
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>Yerel belgeyi yeni bir adla kaydetmek için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Document> kaydetmek bir tam yol ve dosya adını kullanarak istediğiniz. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır.
+1. Çağrı <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Document> kaydetmek bir tam yol ve dosya adını kullanarak istediğiniz. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır.
 
      Aşağıdaki kod örneği, etkin belgeyi yeni bir adla kaydeder. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
 
@@ -81,9 +81,9 @@ ms.locfileid: "56636469"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu kod örneği için aşağıdakiler gereklidir:
 
--   Ada göre bir belgeyi kaydetmek için bir belge adlı *NewDocument.doc* adlı bir dizinde bulunmalıdır *Test* c sürücüsünün
+- Ada göre bir belgeyi kaydetmek için bir belge adlı *NewDocument.doc* adlı bir dizinde bulunmalıdır *Test* c sürücüsünün
 
--   Belgeye yeni bir adla kaydetmek için adında bir dizin *Test* c sürücüsünde bulunan mevcut olması gerekir
+- Belgeye yeni bir adla kaydetmek için adında bir dizin *Test* c sürücüsünde bulunan mevcut olması gerekir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Program aracılığıyla belgeleri kapatma](../vsto/how-to-programmatically-close-documents.md)

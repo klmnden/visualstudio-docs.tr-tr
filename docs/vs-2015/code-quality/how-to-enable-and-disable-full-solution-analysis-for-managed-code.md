@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044830"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için tam çözüm analizini devre dışı bırakma ve etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "54755790"
   
 #### <a name="to-toggle-full-solution-analysis"></a>Tam çözüm analizini açıp kapatmak için  
   
-1.  Visual Studio ana menüsünde **Araçları** &#124; **seçenekleri** görüntülemek için **seçenekleri** iletişim kutusu.  
+1. Visual Studio ana menüsünde **Araçları** &#124; **seçenekleri** görüntülemek için **seçenekleri** iletişim kutusu.  
   
-2.  İçinde **seçenekleri** iletişim kutusunda **metin düzenleyici** &#124; **C#** veya **temel** &#124; **Gelişmiş**.  
+2. İçinde **seçenekleri** iletişim kutusunda **metin düzenleyici** &#124; **C#** veya **temel** &#124; **Gelişmiş**.  
   
-3.  Seçin **tam çözüm analizini etkinleştirme** onay kutusunu tam çözüm analizini etkinleştirme veya devre dışı bırakmak için onay kutusunu temizleyin. Seçin **Tamam** işiniz bittiğinde düğmesi.  
+3. Seçin **tam çözüm analizini etkinleştirme** onay kutusunu tam çözüm analizini etkinleştirme veya devre dışı bırakmak için onay kutusunu temizleyin. Seçin **Tamam** işiniz bittiğinde düğmesi.  
   
      ![Tam çözüm analizi onay kutusunu etkinleştirin. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   

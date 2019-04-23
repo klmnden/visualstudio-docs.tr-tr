@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049548"
 ---
 # <a name="addressing-dpi-issues"></a>DPI Sorunlarını Çözme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Visual Studio ortamı içinde çalışır, yönetilen koddan DPI yardımcı işlevleri erişmek için:  
   
--   Kullanan projenin Kabuk MPF en son sürümünü başvurmalıdır. Örneğin:  
+- Kullanan projenin Kabuk MPF en son sürümünü başvurmalıdır. Örneğin:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Proje başvuruları olduğundan **System.Windows.Forms**, **PresentationCore**, ve **PresentationUI**.  
+- Proje başvuruları olduğundan **System.Windows.Forms**, **PresentationCore**, ve **PresentationUI**.  
   
--   Kod içinde kullanma **Microsoft.VisualStudio.PlatformUI** DpiHelper sınıfının statik ad alanı ve arama işlevleri. Desteklenen türler için (noktaları, boyutları, dikdörtgenler ve benzeri) nesneleri döndürmek yeni uzantı işlevleri ölçeği sağlanan vardır. Örneğin:  
+- Kod içinde kullanma **Microsoft.VisualStudio.PlatformUI** DpiHelper sınıfının statik ad alanı ve arama işlevleri. Desteklenen türler için (noktaları, boyutları, dikdörtgenler ve benzeri) nesneleri döndürmek yeni uzantı işlevleri ölçeği sağlanan vardır. Örneğin:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -147,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - Menü öğeleri ve yansır görüntüleri <xref:System.Windows.Media.BitmapScalingMode> (en % 200 ve %300) belirsizlik ortadan kaldırmak diğer bozulma yapıtları neden olmaz olduğunda kullanılmalıdır.  
   
-- • Büyük yakınlaştırma için belirsiz, soluk kullanıcı Arabiriminde çift kübik sonuçlarla yansır görüntüleri ölçekleme (örneğin, %250 veya % 350), %100 katları düzeyleri. İlk NearestNeighbor görüntüyle % 100 (örneğin, %200 veya % 300) en büyük birden fazla ölçekleme ve buradan çift kübik ile ölçeklendirme göre daha iyi bir sonuç elde edilir. Özel durum bakın: WPF görüntüleri için büyük DPI prescaling düzeyleri daha fazla bilgi için.  
+- • Büyük yakınlaştırma için belirsiz, soluk kullanıcı Arabiriminde çift kübik sonuçlarla yansır görüntüleri ölçekleme (örneğin, %250 veya % 350), %100 katları düzeyleri. NearestNeighbor görüntüyle en büyük birden fazla % 100 (örneğin, %200 veya % 300) genişleterek daha iyi bir sonuç elde edilir ve buradan çift kübik ile ölçeklendirme. Özel durum bakın: WPF görüntüleri için büyük DPI prescaling düzeyleri daha fazla bilgi için.  
   
   Üye DpiHelper SAX Microsoft.VisualStudio.PlatformUI ad alanındaki <xref:System.Windows.Media.BitmapScalingMode> bağlama için kullanılabilir. Bu modu üründe DPI Ölçeklendirme çarpanı bağlı olarak aynı şekilde, ölçeklendirme bit eşlem denetlemek Visual Studio Kabuğu izin verir.  
   
@@ -165,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  Bazı kullanıcı Arabirimi tasarımcıları WPF tabanlı (WPF Masaüstü ve Windows Store) ve Visual Studio Metin Düzenleyicisi gibi sistem kümesi DPI yakınlaştırma düzeyini bağımsız olarak ölçeklendirebilirsiniz. Bu gibi durumlarda DpiHelper.BitmapScalingMode kullanılmamalıdır. Düzenleyicide bu sorunu gidermek için oluşturulan özel bir özellik IDE takım RenderOptions.BitmapScalingMode başlıklı. Bu özellik değeri, sistem ve kullanıcı Arabirimi, birleştirilmiş yakınlaştırma düzeyine bağlı olarak HighQuality veya NearestNeighbor ayarlayın.  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Özel durum: WPF görüntüleri büyük DPI düzeyleri için prescaling  
- % 100 (örneğin, %250, %350 vb.) katları olan çok büyük yakınlaştırma düzeyleri için belirsiz, soluk kullanıcı arabiriminde çift kübik sonuçlarla yansır görüntüleri ölçeklendirilmesi. Bu görüntüler NET metin yanı sıra izlenimi, optik izlenimini gibi hemen hemen aynıdır. Görüntüleri daha yakından göz ve ilgili metin olarak odak dışında görünür. Büyütülmüş bu boyutta ölçeklendirme sonucu, ilk NearestNeighbor görüntüyle en büyük birden fazla (örneğin, %200 veya % 300) % 100 oranında ölçeklendirme ve çift kübik (ek %50) kalanı için ile ölçeklendirme tarafından geliştirilebilir.  
+ % 100 (örneğin, %250, %350 vb.) katları olan çok büyük yakınlaştırma düzeyleri için belirsiz, soluk kullanıcı arabiriminde çift kübik sonuçlarla yansır görüntüleri ölçeklendirilmesi. Bu görüntüler NET metin yanı sıra izlenimi, optik izlenimini gibi hemen hemen aynıdır. Görüntüleri daha yakından göz ve ilgili metin olarak odak dışında görünür. Büyütülmüş bu boyutta ölçeklendirme sonucu NearestNeighbor görüntüyle % 100 (örneğin, %200 veya % 300) en büyük birden fazla ölçekleyerek geliştirilebilir. ve ölçeklendirme ile çift kübik (ek %50) kalanı için.  
   
  Aşağıdaki sonuçları farklar burada ilk resim ölçeklendirilir örneğidir -> % 100 -> Gelişmiş çift ölçeklendirme algoritması ile %200 % 250 ve ikincisi yalnızca % çift kübik 100 ile -> % 250.  
   
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  WPF kullanıcı Arabirimi için üzerinde UIElement BitmapScalingMode özelliği kullanarak geçerli DPI ölçeklendirme olduğundan, iki veya üç kez büyük kaynağına nasıl görüneceğini prescaled bir görüntü kullanarak bir görüntü denetimi gerekir. Bu etkiyi sayaç birkaç yolu şunlardır:  
   
--   Boyut orijinal görüntünün % 100 biliyorsanız, tam görüntü denetiminin boyutunu belirtebilirsiniz. Bu boyutları ölçeklendirme önce kullanıcı arabiriminin boyutu uygulanan ücreti yansıtılır.  
+- Boyut orijinal görüntünün % 100 biliyorsanız, tam görüntü denetiminin boyutunu belirtebilirsiniz. Bu boyutları ölçeklendirme önce kullanıcı arabiriminin boyutu uygulanan ücreti yansıtılır.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Özgün resmin boyutu bilinmiyorsa LayoutTransform son görüntü nesneyi ölçeklendirmek için kullanılabilir. Örneğin:  
+- Özgün resmin boyutu bilinmiyorsa LayoutTransform son görüntü nesneyi ölçeklendirmek için kullanılabilir. Örneğin:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>İpuçları  
   
-1.  Belge özelliği alma WebOC denetimde değişirse, belge IDocHostUIHandler sınıfı ile yeniden ilişkilendirmeniz gerekebilir.  
+1. Belge özelliği alma WebOC denetimde değişirse, belge IDocHostUIHandler sınıfı ile yeniden ilişkilendirmeniz gerekebilir.  
   
-2.  Yukarıdaki çalışmazsa, değişikliği DPI bayrağı için çekme değil alma WebOC bilinen bir sorun yoktur. Bu düzeltme en güvenilir yakınlaştırma yüzdesi için iki farklı değerlerle iki çağrıları anlamı alma WebOC optik Yakınlaştırması değiştirilecek yoludur. Ayrıca, bu geçici çözüm gerekiyorsa, her navigate çağrısında gerçekleştirmek gerekli olabilir.  
+2. Yukarıdaki çalışmazsa, değişikliği DPI bayrağı için çekme değil alma WebOC bilinen bir sorun yoktur. Bu düzeltme en güvenilir yakınlaştırma yüzdesi için iki farklı değerlerle iki çağrıları anlamı alma WebOC optik Yakınlaştırması değiştirilecek yoludur. Ayrıca, bu geçici çözüm gerekiyorsa, her navigate çağrısında gerçekleştirmek gerekli olabilir.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

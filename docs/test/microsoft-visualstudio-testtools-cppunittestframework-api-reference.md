@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 926b2c35d64ebac060f026dbc212874f261719de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057244"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API Başvurusu
 
@@ -24,18 +24,18 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 
 Üst bilgi ve LIB yolları yerel Test projesinde otomatik olarak yapılandırılır.
 
-##  <a name="In_this_topic"></a> Bu konudaki
+## <a name="In_this_topic"></a> Bu konudaki
  [CppUnitTest.h](#cppUnitTest_h)
 
 - [Test sınıflar ve yöntemler oluşturma](#create_test_classes_and_methods)
 
 - [Başlatma ve temizleme](#Initialize_and_cleanup)
 
-  -   [Test yöntemleri](#test_methods)
+  - [Test yöntemleri](#test_methods)
 
-  -   [Test sınıfları](#test_classes)
+  - [Test sınıfları](#test_classes)
 
-  -   [Test modülleri](#test_modules)
+  - [Test modülleri](#test_modules)
 
 - [Test öznitelikleri oluşturma](#create_test_attributes)
 
@@ -51,37 +51,37 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 
   - [Genel onaylar](#general_asserts)
 
-    -   [Eşit](#general_are_equal)
+    - [Eşit](#general_are_equal)
 
-    -   [Eşit değildir](#general_are_not_equal)
+    - [Eşit değildir](#general_are_not_equal)
 
-    -   [Aynı](#general_are_same)
+    - [Aynı](#general_are_same)
 
-    -   [Aynı değil](#general_are_not_same)
+    - [Aynı değil](#general_are_not_same)
 
-    -   [Null](#general_is_null)
+    - [Null](#general_is_null)
 
-    -   [Null değil](#general_is_not_null)
+    - [Null değil](#general_is_not_null)
 
-    -   [Geçerlidir](#general_is_True)
+    - [Geçerlidir](#general_is_True)
 
-    -   [Yanlış](#general_is_false)
+    - [Yanlış](#general_is_false)
 
-    -   [Başarısız](#general_Fail)
+    - [Başarısız](#general_Fail)
 
   - [Windows çalışma zamanı onaylar](#winrt_asserts)
 
-    -   [Eşit](#winrt_are_equal)
+    - [Eşit](#winrt_are_equal)
 
-    -   [Aynı](#winrt_are_same)
+    - [Aynı](#winrt_are_same)
 
-    -   [Eşit değildir](#winrt_are_not_equal)
+    - [Eşit değildir](#winrt_are_not_equal)
 
-    -   [Aynı değil](#winrt_are_not_same)
+    - [Aynı değil](#winrt_are_not_same)
 
-    -   [Null](#winrt_is_null)
+    - [Null](#winrt_is_null)
 
-    -   [Null değil](#winrt_is_not_null)
+    - [Null değil](#winrt_is_not_null)
 
   - [Özel durum onaylar](#exception_asserts)
 
@@ -95,9 +95,9 @@ Bu konu genel üyeleri listeler `Microsoft::VisualStudio::CppUnitTestFramework` 
 
   - [Kullanım örneği](#example)
 
-##  <a name="cppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppUnitTest_h"></a> CppUnitTest.h
 
-###  <a name="create_test_classes_and_methods"></a> Test sınıflar ve yöntemler oluşturma
+### <a name="create_test_classes_and_methods"></a> Test sınıflar ve yöntemler oluşturma
 
 ```cpp
 TEST_CLASS(className)
@@ -114,9 +114,9 @@ TEST_METHOD(methodName)
 
  Tanımlar *methodName* bir test yöntemi olarak. `TEST_METHOD` yöntemin sınıf kapsamı içinde bildirilmesi gerekir.
 
-###  <a name="Initialize_and_cleanup"></a> Başlatma ve temizleme
+### <a name="Initialize_and_cleanup"></a> Başlatma ve temizleme
 
-####  <a name="test_methods"></a> Test yöntemleri
+#### <a name="test_methods"></a> Test yöntemleri
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -136,7 +136,7 @@ TEST_METHOD_CLEANUP(methodName)
 
  Tanımlar *methodName* her test yönteminin çalıştırdıktan sonra çalıştırılan bir yöntem olarak. `TEST_METHOD_CLEANUP` yalnızca bir kez bir test sınıfında tanımlanabilir ve test sınıfı kapsamında tanımlanmış olması gerekir.
 
-####  <a name="test_classes"></a> Test sınıfları
+#### <a name="test_classes"></a> Test sınıfları
 
 ```cpp
 TEST_CLASS_INITIALIZE(methodName)
@@ -156,7 +156,7 @@ TEST_CLASS_CLEANUP(methodName)
 
  Tanımlar *methodName* her test sınıfı oluşturulduktan sonra çalıştırılan bir yöntem olarak. `TEST_CLASS_CLEANUP` yalnızca bir kez bir test sınıfında tanımlanabilir ve test sınıfı kapsamında tanımlanmış olması gerekir.
 
-####  <a name="test_modules"></a> Test modülleri
+#### <a name="test_modules"></a> Test modülleri
 
 ```cpp
 TEST_MODULE_INITIALIZE(methodName)
@@ -173,9 +173,9 @@ TEST_MODULE_CLEANUP(methodName)
 
  Yöntemi tanımlar *methodName* bir modül kaldırıldığında çalışır. `TEST_MODULE_CLEANUP` yalnızca bir kez bir test modülde tanımlanabilir ve ad uzayı kapsamında bildirilmesi gerekir.
 
-###  <a name="create_test_attributes"></a> Test öznitelikleri oluşturma
+### <a name="create_test_attributes"></a> Test öznitelikleri oluşturma
 
-####  <a name="test_method_attributes"></a> Test yöntemi öznitelikleri
+#### <a name="test_method_attributes"></a> Test yöntemi öznitelikleri
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -188,7 +188,7 @@ END_TEST_METHOD_ATTRIBUTE()
 
  A `TEST_METHOD_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.
 
-####  <a name="test_class_attributes"></a> Test sınıfı öznitelikler
+#### <a name="test_class_attributes"></a> Test sınıfı öznitelikler
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -201,7 +201,7 @@ END_TEST_CLASS_ATTRIBUTE()
 
  A `TEST_CLASS_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.
 
-####  <a name="test_module_attributes"></a> Test modül öznitelikleri
+#### <a name="test_module_attributes"></a> Test modül öznitelikleri
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -214,7 +214,7 @@ END_TEST_MODULE_ATTRIBUTE()
 
  A `TEST_MODULE_ATTRIBUTE` makrosunu tanımlayan bir öznitelik adı ile *attributeName* ve değer *attributeValue*.
 
-####  <a name="pre_defined_attributes"></a> Önceden tanımlı öznitelikleri
+#### <a name="pre_defined_attributes"></a> Önceden tanımlı öznitelikleri
  Bu önceden tanımlı öznitelik makroları makroları yerine kullanılabileceği `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE`, veya `TEST_MODULE_ATTRIBUTE` yukarıda açıklanan.
 
 ```cpp
@@ -247,11 +247,11 @@ TEST_IGNORE()
 
  Bu ada sahip bir öznitelik tanımlar `Ignore` ve öznitelik değeri `true`.
 
-##  <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 
-###  <a name="general_asserts"></a> Genel onaylar
+### <a name="general_asserts"></a> Genel onaylar
 
-####  <a name="general_are_equal"></a> Eşit
+#### <a name="general_are_equal"></a> Eşit
  İki nesnenin eşit olup olmadığını doğrulayın
 
 ```cpp
@@ -307,7 +307,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_are_not_equal"></a> Eşit değildir
+#### <a name="general_are_not_equal"></a> Eşit değildir
  İki çiftten eşit olmadığını doğrulayın
 
 ```cpp
@@ -363,7 +363,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_are_same"></a> Aynı
+#### <a name="general_are_same"></a> Aynı
  İki başvurunun aynı nesne örneği (kimlik) başvurduğunu doğrulayın.
 
 ```cpp
@@ -375,7 +375,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_are_not_same"></a> Aynı değil
+#### <a name="general_are_not_same"></a> Aynı değil
  Aynı nesne örneği (kimlik) başvurmamasını iki başvuru doğrulayın.
 
 ```cpp
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_null"></a> Null
+#### <a name="general_is_null"></a> Null
  Bir işaretçi NULL olduğundan emin olun.
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_not_null"></a> Null değil
+#### <a name="general_is_not_null"></a> Null değil
  Bir işaretçi NULL olmadığından emin olun
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_True"></a> Geçerlidir
+#### <a name="general_is_True"></a> Geçerlidir
  Bir koşul doğru olduğundan emin olun
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_is_false"></a> Yanlış
+#### <a name="general_is_false"></a> Yanlış
  Bir koşul false olduğundan emin olun
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-####  <a name="general_Fail"></a> Başarısız
+#### <a name="general_Fail"></a> Başarısız
  Test çalışması sonucu başarısız olarak zorla
 
 ```cpp
@@ -438,9 +438,9 @@ static void Assert::Fail(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-###  <a name="winrt_asserts"></a> Windows çalışma zamanı onaylar
+### <a name="winrt_asserts"></a> Windows çalışma zamanı onaylar
 
-####  <a name="winrt_are_equal"></a> Eşit
+#### <a name="winrt_are_equal"></a> Eşit
  İki Windows çalışma zamanı işaretçileri eşit olduğunu doğrular.
 
 ```cpp
@@ -463,7 +463,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_are_same"></a> Aynı
+#### <a name="winrt_are_same"></a> Aynı
  İki Windows Runtime başvuru aynı nesneye referans gösterdiğini doğrular.
 
 ```cpp
@@ -475,7 +475,7 @@ static void Assert::AreSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_are_not_equal"></a> Eşit değildir
+#### <a name="winrt_are_not_equal"></a> Eşit değildir
  İki Windows çalışma zamanı işaretçileri eşit olmadığını doğrular.
 
 ```cpp
@@ -498,7 +498,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_are_not_same"></a> Aynı değil
+#### <a name="winrt_are_not_same"></a> Aynı değil
  İki Windows Runtime başvuru aynı nesneye başvurma doğrular.
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_is_null"></a> Null
+#### <a name="winrt_is_null"></a> Null
  Bir Windows çalışma zamanı işaretçi bir nullptr olduğunu doğrular.
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-####  <a name="winrt_is_not_null"></a> Null değil
+#### <a name="winrt_is_not_null"></a> Null değil
  Bir Windows çalışma zamanı işaretçi bir nullptr olmadığını doğrular.
 
 ```cpp
@@ -532,9 +532,9 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-###  <a name="exception_asserts"></a> Özel durum onaylar
+### <a name="exception_asserts"></a> Özel durum onaylar
 
-####  <a name="expect_exception"></a> Özel durum beklediğiniz
+#### <a name="expect_exception"></a> Özel durum beklediğiniz
  Bir işlev özel durum harekete doğrulayın:
 
 ```cpp
@@ -555,12 +555,12 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-##  <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
-###  <a name="logger"></a> Günlükçü
+### <a name="logger"></a> Günlükçü
  Günlükçü sınıfı yazmak için statik yöntemler içeren **çıkış penceresine**.
 
-###  <a name="write_message"></a> İleti Yaz
+### <a name="write_message"></a> İleti Yaz
 Bir dizeye yaz **çıkış penceresi**
 
 ```cpp

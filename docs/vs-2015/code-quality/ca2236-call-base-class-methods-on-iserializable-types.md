@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e7447e45108d8755195ad3c7484d55415c520846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057647"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: ISerializable türler üzerinde taban sınıf metotlarını çağırın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54754861"
 ## <a name="cause"></a>Sebep
  Bir tür uygulayan türünden türer <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> arabirimi ve aşağıdaki koşullar doğruysa:
 
--   Diğer bir deyişle, bir Oluşturucu ile seri hale getirme oluşturucusunu türün uyguladığı <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> parametre imzası, temel türün seri hale getirme oluşturucusunu çağırmaz, ancak.
+- Diğer bir deyişle, bir Oluşturucu ile seri hale getirme oluşturucusunu türün uyguladığı <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> parametre imzası, temel türün seri hale getirme oluşturucusunu çağırmaz, ancak.
 
--   Türün uyguladığı <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> yöntemi ancak arama <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> temel türün yöntemi.
+- Türün uyguladığı <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> yöntemi ancak arama <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> temel türün yöntemi.
 
 ## <a name="rule-description"></a>Kural Tanımı
  Bir özel seri hale getirme işleminde bir türün uyguladığı <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> kendi alanlarına ve seri durumdan çıkarılamıyor alanlar için seri hale getirme oluşturucusunu serileştirmek için yöntemi. Türü uygulayan türünden türer, <xref:System.Runtime.Serialization.ISerializable> arabirim, temel tür <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> yöntemi ve Serileştirme Oluşturucusu çağrılabilir seri hale getirmek/sona erdirme olanağı-serialize için temel türün alanları. Aksi takdirde, türü değil sıralanabilir ve doğru şekilde json'dan seri. Türetilmiş tür yeni alanları eklemez, türü uygulamak gerekmez, unutmayın <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> yöntemi ya da seri hale getirme oluşturucusunu veya temel tür eşdeğeri arayın.

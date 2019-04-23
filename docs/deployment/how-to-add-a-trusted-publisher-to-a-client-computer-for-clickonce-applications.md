@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed282ba7f3c26aafe9cd2c97be0bfa843cb0103
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 071077c54abe3126febdc098b6860a65ce0fd792
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041721"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Nasıl yapılır: ClickOnce uygulamaları için bir istemci bilgisayara güvenilir yayımcı ekleme
 Güvenilir uygulama dağıtımı ile istemci bilgisayarları yapılandırabilirsiniz. böylece, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamaları, kullanıcıya sormadan daha yüksek bir güven düzeyi ile çalışır. Aşağıdaki yordamlar, bir yayımcının sertifika istemci bilgisayarındaki Güvenilen Yayımcılar deposuna eklemek için komut satırı aracı CertMgr.exe kullanmayı gösterir.
@@ -36,21 +36,21 @@ Güvenilir uygulama dağıtımı ile istemci bilgisayarları yapılandırabilirs
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Güvenilen Yayımcılar deposuna altında güvenilen kök sertifika eklemek için
 
-1.  Bir CA'dan bir bir dijital sertifika alacaktır.
+1. Bir CA'dan bir bir dijital sertifika alacaktır.
 
-2.  Base64 X.509 sertifikasını dışarı aktarma (*.cer*) biçimi. Sertifika biçimleri hakkında daha fazla bilgi için bkz. [sertifika verme](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Base64 X.509 sertifikasını dışarı aktarma (*.cer*) biçimi. Sertifika biçimleri hakkında daha fazla bilgi için bkz. [sertifika verme](http://go.microsoft.com/fwlink/?LinkId=164793).
 
-3.  İstemci bilgisayarlarda komut isteminden aşağıdaki komutu çalıştırın:
+3. İstemci bilgisayarlarda komut isteminden aşağıdaki komutu çalıştırın:
 
      **certmgr.exe-certificate.cer - c -s - r localMachine TrustedPublisher Ekle**
 
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Güvenilen Yayımcılar deposuna altında farklı bir kök sertifika eklemek için
 
-1.  Bir CA'dan bir bir dijital sertifika alacaktır.
+1. Bir CA'dan bir bir dijital sertifika alacaktır.
 
-2.  Base64 X.509 sertifikasını dışarı aktarma (*.cer*) biçimi. Sertifika biçimleri hakkında daha fazla bilgi için bkz. [sertifika verme](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Base64 X.509 sertifikasını dışarı aktarma (*.cer*) biçimi. Sertifika biçimleri hakkında daha fazla bilgi için bkz. [sertifika verme](http://go.microsoft.com/fwlink/?LinkId=164793).
 
-3.  İstemci bilgisayarlarda komut isteminden aşağıdaki komutu çalıştırın:
+3. İstemci bilgisayarlarda komut isteminden aşağıdaki komutu çalıştırın:
 
      **certmgr.exe-good.cer - c -s - r localMachine kök Ekle**
 

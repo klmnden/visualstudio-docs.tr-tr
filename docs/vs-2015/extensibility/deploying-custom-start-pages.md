@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039148"
 ---
 # <a name="deploying-custom-start-pages"></a>Özel Başlangıç Sayfaları Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "57867116"
   
 ##### <a name="to-create-an-all-users-deployment"></a>Tüm kullanıcılar dağıtımı oluşturmak için  
   
-1.  .Vsixmanifest uzantı dosyası kod Görünümü'nde açın.  
+1. .Vsixmanifest uzantı dosyası kod Görünümü'nde açın.  
   
-2.  İçinde `Identifier` VSIX bildirimi öğesi < ekleme bir `AllUsers` değerine sahip öğe `true`.  
+2. İçinde `Identifier` VSIX bildirimi öğesi < ekleme bir `AllUsers` değerine sahip öğe `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ ms.locfileid: "57867116"
   
      Bu VSIX Yükleyicisi için yönetici izinleri iste ve dosyalar için \Common7\IDE\Extensions yüklemeyi neden olur.  
   
-3.  .Pkgdef dosyası açın.  
+3. .Pkgdef dosyası açın.  
   
-4.  Varsayılan başlangıç sayfasını HKLM altında aşağıdakileri ekleyerek ayarlamak için .pkgdef değiştirme burada *MyStartPage.xaml* başlangıç sayfası içeren .xaml dosyasının adıdır.  
+4. Varsayılan başlangıç sayfasını HKLM altında aşağıdakileri ekleyerek ayarlamak için .pkgdef değiştirme burada *MyStartPage.xaml* başlangıç sayfası içeren .xaml dosyasının adıdır.  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ ms.locfileid: "57867116"
   
 #### <a name="to-manually-install-a-custom-start-page"></a>El ile özel bir başlangıç sayfası yüklemek için  
   
-1.  Derlemeleri dışında destek dosyalarıyla birlikte Başlangıç sayfası biçimlendirme içeren .xaml dosyasını kopyalayın ve bunları kullanıcının \StartPages\ klasörüne yapıştırın.  
+1. Derlemeleri dışında destek dosyalarıyla birlikte Başlangıç sayfası biçimlendirme içeren .xaml dosyasını kopyalayın ve bunları kullanıcının \StartPages\ klasörüne yapıştırın.  
   
-2.  Başlangıç sayfası derlemeleri gerektiriyorsa, bunları kopyalayıp bunları... \\ *Visual Studio yükleme klasörü*\Common7\IDE\PrivateAssemblies\\.  
+2. Başlangıç sayfası derlemeleri gerektiriyorsa, bunları kopyalayıp bunları... \\ *Visual Studio yükleme klasörü*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  İçinde **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında, yeni başlangıç sayfası seçin. Daha fazla bilgi için [başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. İçinde **başlangıç sayfasını Özelleştir** listesini **başlangıç** seçenekleri sayfasında, yeni başlangıç sayfası seçin. Daha fazla bilgi için [başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başlangıç sayfasını özelleştirme](../ide/customizing-the-start-page-for-visual-studio.md)   

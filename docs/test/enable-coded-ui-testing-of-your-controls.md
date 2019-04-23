@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040492"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Kodlanmış UI denetimlerinizin etkinleştir
 
@@ -37,7 +37,7 @@ Kodlanmış UI test oluşturucusu, kayıt sırasında karşılaştığı ve ard�
 
  ![CUIT&#95;erişilebilir](../test/media/cuit_accessible.png)
 
-1.  Türetilen bir sınıf uygulamak <xref:System.Windows.Forms.Control.ControlAccessibleObject>ve geçersiz kılma <xref:System.Windows.Forms.Control.AccessibilityObject%2A> sınıfınızın bir nesneyi döndürmek için özellik.
+1. Türetilen bir sınıf uygulamak <xref:System.Windows.Forms.Control.ControlAccessibleObject>ve geçersiz kılma <xref:System.Windows.Forms.Control.AccessibilityObject%2A> sınıfınızın bir nesneyi döndürmek için özellik.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ Kodlanmış UI test oluşturucusu, kayıt sırasında karşılaştığı ve ard�
     }
     ```
 
-2.  Erişilebilir nesnenin geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> ve <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> özellikleri ve yöntemleri.
+2. Erişilebilir nesnenin geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> ve <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> özellikleri ve yöntemleri.
 
-3.  Başka bir alt denetimin erişilebilirlik nesne uygulamak ve alt denetimin geçersiz kılma <xref:System.Windows.Forms.Control.AccessibilityObject%2A> erişilebilirlik nesneyi döndürmek için özellik.
+3. Başka bir alt denetimin erişilebilirlik nesne uygulamak ve alt denetimin geçersiz kılma <xref:System.Windows.Forms.Control.AccessibilityObject%2A> erişilebilirlik nesneyi döndürmek için özellik.
 
-4.  Geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, ve <xref:System.Windows.Forms.AccessibleObject.Select%2A> alt denetimin erişilebilirlik nesne için özellikleri ve yöntemleri.
+4. Geçersiz kılma <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>, ve <xref:System.Windows.Forms.AccessibleObject.Select%2A> alt denetimin erişilebilirlik nesne için özellikleri ve yöntemleri.
 
 > [!NOTE]
 > Bu konuda erişilebilirlik örnek başlayan <xref:System.Windows.Forms.AccessibleObject>ve sonra kalan yordamlarda Bu örneği oluşturur. Erişilebilirlik örnek çalışan sürümü oluşturmak istiyorsanız, bir konsol uygulaması oluşturun ve ardından değiştirin *Program.cs* örnek kod ile. Erişilebilirlik ve System.Drawing System.Windows.Forms başvurular ekleyin. Değişiklik **birlikte çalışma türlerini katıştır** erişilebilirlik için **False** bir yapı uyarısı ortadan kaldırmak için. Projenin çıktı türünden değiştirebilirsiniz **konsol uygulaması** için **Windows uygulama** böylece bir konsol penceresi görünmez çalıştırdığınızda uygulama.
@@ -182,19 +182,19 @@ Denetimin özel özellikler erişim sağlamak için bir özellik sağlayıcısı
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Özellik sağlayıcısı veya eylem filtresi hata ayıklamak için
 
-1.  Uzantı paketi kopyanızı hata ayıklama sürümünü derlemek *.dll* ve *.pdb* dosyaları *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Uzantı paketi kopyanızı hata ayıklama sürümünü derlemek *.dll* ve *.pdb* dosyaları *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Uygulamanızı (ayıklayıcıda değil) çalıştırın.
+2. Uygulamanızı (ayıklayıcıda değil) çalıştırın.
 
-3.  Kodlanmış UI test Oluşturucusu'nu çalıştırın.
+3. Kodlanmış UI test Oluşturucusu'nu çalıştırın.
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Hata ayıklayıcı codedUITestBuilder işlemine iliştirin.
+4. Hata ayıklayıcı codedUITestBuilder işlemine iliştirin.
 
-5.  Kodunuzda kesme noktaları ayarlayın.
+5. Kodunuzda kesme noktaları ayarlayın.
 
-6.  Kodlanmış UI test Oluşturucusu'nda oluşturma özelliğine sağlayıcınız çalışma ve eylem filtrelerinizi kullanmak için Eylemler kaydetmek için onaylar.
+6. Kodlanmış UI test Oluşturucusu'nda oluşturma özelliğine sağlayıcınız çalışma ve eylem filtrelerinizi kullanmak için Eylemler kaydetmek için onaylar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

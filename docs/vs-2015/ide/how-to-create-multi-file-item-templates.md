@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056916"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Nasıl yapılır: Çok dosyalı öğe şablonları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54785906"
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Çok dosyalı öğe şablonu el ile oluşturmak için  
   
-1.  Öğe şablonu, tek dosyalı öğe şablonu oluşturacak şekilde oluşturun. Daha fazla bilgi için [nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md).  
+1. Öğe şablonu, tek dosyalı öğe şablonu oluşturacak şekilde oluşturun. Daha fazla bilgi için [nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md).  
   
-2.  Ekleme `TargetFileName` her öznitelikleri `ProjectItem` öğesi. Değerlerini ayarlayın `TargetFileName` öznitelikleri için $fileinputname$. *FileExtension*burada *FileExtension* şablonuna dahil dosyasının dosya adı uzantısıdır. Örneğin:  
+2. Ekleme `TargetFileName` her öznitelikleri `ProjectItem` öğesi. Değerlerini ayarlayın `TargetFileName` öznitelikleri için $fileinputname$. *FileExtension*burada *FileExtension* şablonuna dahil dosyasının dosya adı uzantısıdır. Örneğin:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -53,9 +53,9 @@ ms.locfileid: "54785906"
   
      Bu şablondan türetilmiş bir öğe için bir proje eklendiğinde, dosya adları, kullanıcı yazdığınız ad hesaplanır **Yeni Öğe Ekle** iletişim kutusu.  
   
-3.  Şablonunuzda eklenmesi, seçime sağ tıklayın, dosyaları seçin **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
+3. Şablonunuzda eklenmesi, seçime sağ tıklayın, dosyaları seçin **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Seçtiğiniz dosyaların bir .zip dosyasına sıkıştırılır.  
   
-4.  .Zip dosyasını kullanıcı öğe şablonu konuma yerleştirin. Varsayılan olarak, \My Documents\Visual Studio dizindir *sürüm*\Templates\ItemTemplates\\. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. .Zip dosyasını kullanıcı öğe şablonu konuma yerleştirin. Varsayılan olarak, \My Documents\Visual Studio dizindir *sürüm*\Templates\ItemTemplates\\. Daha fazla bilgi için [nasıl yapılır: Şablonları bulma ve düzenleme](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte gösterildiği bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Windows Forms şablonu. Bu şablona dayalı bir öğe oluşturulduğunda oluşturulan üç dosyalarının adlarını girdiğiniz ad eşleşecektir **Yeni Öğe Ekle** iletişim kutusu.  
@@ -87,4 +87,4 @@ ms.locfileid: "54785906"
  [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)   
  [Nasıl yapılır: Öğe şablonları oluşturma](../ide/how-to-create-item-templates.md)   
  [Şablon parametreleri](../ide/template-parameters.md)   
- [Nasıl yapılır: Bir şablonda parametreleri ikame](../ide/how-to-substitute-parameters-in-a-template.md)
+ [Nasıl yapılır: Şablonda Parametreleri Değiştirme](../ide/how-to-substitute-parameters-in-a-template.md)

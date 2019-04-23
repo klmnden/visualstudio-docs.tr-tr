@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060560"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Nasıl yapılır: Bir Web sitesi için performans verilerini topla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
   
 ### <a name="to-profile-a-web-site-project"></a>Bir Web sitesi projesi profilini çıkarmak için  
   
-1.  Açık [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web projesinde [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] veya [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Açık [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web projesinde [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] veya [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Üzerinde **Çözümle** menüsünü tıklatın **performans Sihirbazını Başlat**.  
+2. Üzerinde **Çözümle** menüsünü tıklatın **performans Sihirbazını Başlat**.  
   
-3.  Sihirbazın ilk sayfasında, profil oluşturma yöntemini seçin ve ardından **sonraki**. Profil oluşturma yöntemlerini hakkında daha fazla bilgi için bkz. [anlama performans koleksiyon metotları](../profiling/understanding-performance-collection-methods.md). Profil oluşturma yöntemi eşzamanlılık görselleştiricisi web uygulamaları için kullanılabilir olmadığını unutmayın.  
+3. Sihirbazın ilk sayfasında, profil oluşturma yöntemini seçin ve ardından **sonraki**. Profil oluşturma yöntemlerini hakkında daha fazla bilgi için bkz. [anlama performans koleksiyon metotları](../profiling/understanding-performance-collection-methods.md). Profil oluşturma yöntemi eşzamanlılık görselleştiricisi web uygulamaları için kullanılabilir olmadığını unutmayın.  
   
-4.  İçinde **hangi uygulamanın profilini oluşturmak için hedeflemek istiyorsunuz?** aşağı açılan listesinde, geçerli projenin'in seçili olduğundan emin olun ve ardından **sonraki**.  
+4. İçinde **hangi uygulamanın profilini oluşturmak için hedeflemek istiyorsunuz?** aşağı açılan listesinde, geçerli projenin'in seçili olduğundan emin olun ve ardından **sonraki**.  
   
-5.  Sihirbazın üçüncü sayfasında Katman etkileşimi profil oluşturma (TIP) verileri, JavaScript Web sayfaları veya her ikisi içinde çalışan verilerini eklemek seçebilirsiniz.  
+5. Sihirbazın üçüncü sayfasında Katman etkileşimi profil oluşturma (TIP) verileri, JavaScript Web sayfaları veya her ikisi içinde çalışan verilerini eklemek seçebilirsiniz.  
   
-    -   Katman etkileşim toplamak için seçin **Katman etkileşimi profil oluşturmayı etkinleştir** onay kutusu.  
+    - Katman etkileşim toplamak için seçin **Katman etkileşimi profil oluşturmayı etkinleştir** onay kutusu.  
   
-    -   JavaScript Web sayfaları'nda çalışan veri toplamak için seçin **JavaScript profili** onay kutusu.  
+    - JavaScript Web sayfaları'nda çalışan veri toplamak için seçin **JavaScript profili** onay kutusu.  
   
-6.  **İleri**'ye tıklayın.  
+6. **İleri**'ye tıklayın.  
   
-7.  Sihirbazının dördüncü sayfasında tıklayın **son**.  
+7. Sihirbazının dördüncü sayfasında tıklayın **son**.  
   
-8.  Performans oturumu için oluşturulan [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulaması ve Web sitesi tarayıcıda başlatılır. Profil oluşturmak istediğiniz işlevi çalıştırın ve sonra Tarayıcıyı kapatın.  
+8. Performans oturumu için oluşturulan [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulaması ve Web sitesi tarayıcıda başlatılır. Profil oluşturmak istediğiniz işlevi çalıştırın ve sonra Tarayıcıyı kapatın.  
   
      Profil Oluşturucu veri dosyasını oluşturur ve veri Özet görünümünü görüntüler [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ana penceresi.  
   
@@ -90,9 +90,9 @@ Kullanabileceğiniz **performans Sihirbazı** için performans verilerini toplam
   
 6. Sihirbazın üçüncü sayfasında Katman etkileşimi profil oluşturma (TIP) verileri, JavaScript Web sayfaları veya her ikisi içinde çalışan verilerini eklemek seçebilirsiniz.  
   
-   -   Katman etkileşim toplamak için seçin **Katman etkileşimi profil oluşturmayı etkinleştir** onay kutusu.  
+   - Katman etkileşim toplamak için seçin **Katman etkileşimi profil oluşturmayı etkinleştir** onay kutusu.  
   
-   -   JavaScript Web sayfaları'nda çalışan veri toplamak için seçin **JavaScript profili** onay kutusu.  
+   - JavaScript Web sayfaları'nda çalışan veri toplamak için seçin **JavaScript profili** onay kutusu.  
   
 7. **İleri**'ye tıklayın.  
   

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048599"
 ---
 # <a name="troubleshoot-service-references"></a>Hizmet başvurularında sorun giderme
 
@@ -33,9 +33,9 @@ Döndüğünüzde bir `DataSet` veya `DataTable` bir hizmetten bir "gelen iletil
 
 Bu hatayı düzeltmek için:
 
-1.  İçinde **Çözüm Gezgini**, çift *app.config* dosyasını açın.
+1. İçinde **Çözüm Gezgini**, çift *app.config* dosyasını açın.
 
-2.  Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değere değiştirin.
+2. Bulun `MaxReceivedMessageSize` özellik ve daha büyük bir değere değiştirin.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Bir hizmet çözümüm içinde bulunamıyor
 
@@ -43,7 +43,7 @@ Tıkladığınızda **bulma** düğmesine **hizmet başvuruları ekleme** ileti�
 
 Bu hatayı düzeltmek için:
 
--   İçinde **Çözüm Gezgini**, WCF hizmet kitaplığı projesi sağ tıklatıp **yapı**.
+- İçinde **Çözüm Gezgini**, WCF hizmet kitaplığı projesi sağ tıklatıp **yapı**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Bir hizmet Uzak Masaüstü erişilirken hata oluştu
 
@@ -51,9 +51,9 @@ Bir kullanıcı eriştiğinde bir Web barındırılan WCF hizmeti üzerinden bir
 
 Bu hatayı düzeltmek için:
 
-1.  Web sitesi projeyi **özellikleri** sayfaları.
+1. Web sitesi projeyi **özellikleri** sayfaları.
 
-2.  Üzerinde **Başlat seçenekleri** sekmesi, NET **NTLM kimlik doğrulaması** onay kutusu.
+2. Üzerinde **Başlat seçenekleri** sekmesi, NET **NTLM kimlik doğrulaması** onay kutusu.
 
     > [!NOTE]
     > NTLM kimlik doğrulama özel olarak WCF hizmetlerini içeren Web siteleri için etkinleştirmeniz gerekir. WCF hizmetleri için güvenlik yapılandırmada aracılığıyla yönetilir *web.config* dosya. Bu, NTLM kimlik doğrulaması gereksiz kılar.
@@ -74,19 +74,19 @@ Hizmet projeyi çözümden kaldırılırsa, bu açık derleme bağımlılık ge�
 
 Bu hatayı düzeltmek için hizmet projesi el ile yeniden oluşturmanız gerekir:
 
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2.  İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **genel**.
+2. İçinde **seçenekleri** iletişim kutusunda **projeler ve çözümler**ve ardından **genel**.
 
-3.  Emin olun **Show Gelişmiş derleme yapılandırmaları** onay kutusunun seçili olduğundan ve ardından **Tamam**.
+3. Emin olun **Show Gelişmiş derleme yapılandırmaları** onay kutusunun seçili olduğundan ve ardından **Tamam**.
 
-4.  WCF hizmet projesini yükleyin.
+4. WCF hizmet projesini yükleyin.
 
-5.  İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
+5. İçinde **Configuration Manager** iletişim kutusu, kümesi **etkin çözüm yapılandırması** için **hata ayıklama**. Daha fazla bilgi için [nasıl yapılır: Yapılandırmaları oluşturma ve düzenleme](../ide/how-to-create-and-edit-configurations.md).
 
-6.  İçinde **Çözüm Gezgini**, WCF Hizmeti projesini seçin.
+6. İçinde **Çözüm Gezgini**, WCF Hizmeti projesini seçin.
 
-7.  Üzerinde **derleme** menüsünde tıklatın **yeniden** WCF Hizmeti projeyi yeniden derlemek için.
+7. Üzerinde **derleme** menüsünde tıklatın **yeniden** WCF Hizmeti projeyi yeniden derlemek için.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Veri Hizmetleri tarayıcıda görüntüleme
 
@@ -94,13 +94,13 @@ Ne zaman çalışır bir XML temsilini verileri görüntülemek bir [!INCLUDE[ss
 
 Bu hatayı düzeltmek için RSS akışı devre dışı bırakın:
 
-1.  Internet Explorer'da üzerinde **Araçları** menüsünde tıklatın **Internet Seçenekleri**.
+1. Internet Explorer'da üzerinde **Araçları** menüsünde tıklatın **Internet Seçenekleri**.
 
-2.  Üzerinde **içerik** sekmesinde **akışları** bölümünde **ayarları**.
+2. Üzerinde **içerik** sekmesinde **akışları** bölümünde **ayarları**.
 
-3.  İçinde **akış ayarları** iletişim kutusu, NET **akış okuma görünümünde açmak** onay kutusunu işaretleyin ve ardından **Tamam**.
+3. İçinde **akış ayarları** iletişim kutusu, NET **akış okuma görünümünde açmak** onay kutusunu işaretleyin ve ardından **Tamam**.
 
-4.  Tıklayın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
+4. Tıklayın **Tamam** kapatmak için **Internet Seçenekleri** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

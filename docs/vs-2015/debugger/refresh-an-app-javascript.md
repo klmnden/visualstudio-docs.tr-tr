@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e55e108901d9be62531e459f2b7805f86cfe6a08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040647"
 ---
 # <a name="refresh-an-app-javascript"></a>Uygulamayı yenileme (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,38 +35,38 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
  Yenileme değil, uygulama durumunu korumak veya uygulamanız için aşağıdaki değişiklikleri yansıtacak:  
   
--   Görüntü paketi bildiriminde belirtilen değişiklikler de dahil olmak üzere paket bildirim dosyası değişiklikler.  
+- Görüntü paketi bildiriminde belirtilen değişiklikler de dahil olmak üzere paket bildirim dosyası değişiklikler.  
   
--   Başvuru ekleme veya bir SDK başvurusu kaldırma gibi değiştirir veya Windows çalışma zamanı bileşenleri (.winmd dosyaları) değiştirir.  
+- Başvuru ekleme veya bir SDK başvurusu kaldırma gibi değiştirir veya Windows çalışma zamanı bileşenleri (.winmd dosyaları) değiştirir.  
   
--   Kaynak dizeleri .resjson dosyalardaki değişiklikler gibi değiştirir.  
+- Kaynak dizeleri .resjson dosyalardaki değişiklikler gibi değiştirir.  
   
--   Proje dosyası yolu adı değişiklikleri, yeni proje dosyaları ya da silinen dosyaları ile sonuçlanan değiştirir.  
+- Proje dosyası yolu adı değişiklikleri, yeni proje dosyaları ya da silinen dosyaları ile sonuçlanan değiştirir.  
   
--   Proje ve öğe özellik değişiklikleri seçili hata ayıklama cihazı değişiklikleri gibi veya paket eylemi (Özellikler penceresinde) bir dosya için değişiklikler.  
+- Proje ve öğe özellik değişiklikleri seçili hata ayıklama cihazı değişiklikleri gibi veya paket eylemi (Özellikler penceresinde) bir dosya için değişiklikler.  
   
 > [!IMPORTANT]
 >  Başvuruları değiştirme, paket bildirimini değiştirmek veya önceki listesinde belirtilen diğer değişiklikleri yapın, HTML, CSS ve JavaScript kaynak dosyalarını güncelleştirmek için hata ayıklayıcıyı yeniden başlatın ve durdurun gerekir.  
   
 ### <a name="to-refresh-an-app"></a>Bir uygulamayı yenilemek için  
   
-1.  Visual Studio'da gezinti uygulaması proje şablonunu kullanarak yeni bir proje oluşturun.  
+1. Visual Studio'da gezinti uygulaması proje şablonunu kullanarak yeni bir proje oluşturun.  
   
      Bu, Windows Store uygulaması, Windows Phone Store uygulaması veya bir evrensel uygulama olabilir.  
   
-2.  Şablon ile Visual Studio'da açın, hata ayıklama hedefi seçin.  
+2. Şablon ile Visual Studio'da açın, hata ayıklama hedefi seçin.  
   
      Bir Windows Phone projesi geçerli başlangıç projeniz varsa, hata ayıklama hedefi için bir Windows Phone öykünücüsü seçin. Aksi takdirde seçin **simülatör** veya **yerel makine**.  
   
      ![Select hata ayıklama hedef liste](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-3.  Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
+3. Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.  
   
-4.  Visual Studio'ya geçiş yapın. (F12 tuşuna basın.)  
+4. Visual Studio'ya geçiş yapın. (F12 tuşuna basın.)  
   
-5.  İçinde **Çözüm Gezgini**, **sayfaları** > **giriş** klasör, açık home.html.  
+5. İçinde **Çözüm Gezgini**, **sayfaları** > **giriş** klasör, açık home.html.  
   
-6.  Sayfa başlığı metni değiştirme  
+6. Sayfa başlığı metni değiştirme  
   
     ```html  
     Welcome to yourAppName!  
@@ -78,9 +78,9 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     Hello!  
     ```  
   
-7.  Tıklayın **Yenile Windows uygulama** şuna benzeyen düğmesi: ![Windows uygulama düğmesine Yenile](../debugger/media/js-refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)  
+7. Tıklayın **Yenile Windows uygulama** şuna benzeyen düğmesi: ![Windows uygulama düğmesine Yenile](../debugger/media/js-refresh.png "JS_Refresh"). (Veya F4 tuşuna basın.)  
   
-8.  Uygulamasına geçin. Uygulamayı yeniden başlatmayı hata ayıklayıcı olmadan yüklenir ve yeni sayfa başlığı görüntülenir.  
+8. Uygulamasına geçin. Uygulamayı yeniden başlatmayı hata ayıklayıcı olmadan yüklenir ve yeni sayfa başlığı görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlı Başlangıç: HTML ve CSS hatalarını ayıklama](../debugger/quickstart-debug-html-and-css.md)

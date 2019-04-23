@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040345"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint projesi ve proje öğesi şablonları
   Aşağıdaki bölümlerde kullanılabilir SharePoint Proje açıklamak ve proje öğesi şablonları ve bunların nasıl kullanıldığı.
@@ -41,17 +41,17 @@ ms.locfileid: "57867880"
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 projesi
  İçeriği bir *SharePoint 2010 projesi* her SharePoint projesi şablonu içine dahil edilir. SharePoint 2010 projesi içerir:
 
--   Bir proje dosyası.
+- Bir proje dosyası.
 
--   Proje özellikleri sayfasında.
+- Proje özellikleri sayfasında.
 
--   A **başvuruları** tüm derleme başvurularını projedeki listeleyen bir klasör.
+- A **başvuruları** tüm derleme başvurularını projedeki listeleyen bir klasör.
 
--   A **özellikleri** içeren klasörü bir *.feature* özellik SharePoint sunucusuna dağıtmak için kullanılan yapılandırma dosyası.
+- A **özellikleri** içeren klasörü bir *.feature* özellik SharePoint sunucusuna dağıtmak için kullanılan yapılandırma dosyası.
 
--   A **paket** içeren klasörü bir *Package.package* SharePoint'e çözümü dağıtmak için kullanılan dosya,.
+- A **paket** içeren klasörü bir *Package.package* SharePoint'e çözümü dağıtmak için kullanılan dosya,.
 
--   Gelişmiş güvenlik için derlemeyi bir katı adla imzalamak için kullanılan bir key.snk (tanımlayıcı ad anahtarı) dosyası.
+- Gelişmiş güvenlik için derlemeyi bir katı adla imzalamak için kullanılan bir key.snk (tanımlayıcı ad anahtarı) dosyası.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>SharePoint 2010 Silverlight web bölümü
  *SharePoint 2010 Silverlight Web Bölümü* projeleri olanak oluştur web bölümleri için Silverlight uygulamaları görüntülemek için SharePoint. Bu proje oluşturduğunuzda, ona yeni bir Silverlight uygulaması eklemek veya mevcut bir başvuru belirtebilirsiniz. Daha fazla bilgi için [için SharePoint web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md) ve [izlenecek yol: SharePoint için OData görüntüleyen bir Silverlight web bölümü oluşturma](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).

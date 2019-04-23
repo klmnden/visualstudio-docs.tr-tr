@@ -7,27 +7,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 00da6f72bfafcc62075bc06739e4daec0fe45994
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038146"
 ---
 # <a name="writing-user-commands-and-actions"></a>Kullanıcı Komutları ve Eylemleri Yazma
 Bir etki alanına özgü dil komutları diyagrama ve gibi sürükle ve bırak hareketlerini yanıtlama tıklayın ve olaylara çift tıklayın ekleyerek özelleştirebilirsiniz.
 
 ## <a name="user-actions"></a>Kullanıcı eylemleri
 
--   [Nasıl yapılır: Bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -kopyalama gibi komut davranışını özelleştirmek ve yazdırma.
+- [Nasıl yapılır: Bir standart menü komutunu değiştirme](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) -kopyalama gibi komut davranışını özelleştirmek ve yazdırma.
 
--   [Nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -model veya dış kaynaklara güncelleştirebilirsiniz kendi komutlar oluşturur.
+- [Nasıl yapılır: Kısayol menüsüne komut ekleme](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -model veya dış kaynaklara güncelleştirebilirsiniz kendi komutlar oluşturur.
 
--   [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md) -UML diyagramları gibi öğeleri bir diyagramından diğerine taşımak izin verin. Başka bir Modeli'ne başvuruları depolayabilirsiniz.
+- [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md) -UML diyagramları gibi öğeleri bir diyagramından diğerine taşımak izin verin. Başka bir Modeli'ne başvuruları depolayabilirsiniz.
 
--   [Nasıl yapılır: Şekil veya Dekoratörde bir Click için araya girme](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -bir öğe, ona başvuran başka bir öğe için tıklama yoluyla kullanıcıya izin.
+- [Nasıl yapılır: Şekil veya Dekoratörde bir Click için araya girme](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -bir öğe, ona başvuran başka bir öğe için tıklama yoluyla kullanıcıya izin.
 
--   [Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama](../modeling/how-to-access-and-constrain-the-current-selection.md)
+- [Nasıl yapılır: Geçerli Seçime Erişme ve Seçimi Kısıtlama](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

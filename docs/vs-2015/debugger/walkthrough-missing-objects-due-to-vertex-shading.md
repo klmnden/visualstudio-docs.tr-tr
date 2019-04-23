@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046386"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>İzlenecek yol: Köşe gölgeleme nedeniyle nesnelerin eksikliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../inc
   
  Bu örneklerde bu görevler gösterilir:  
   
--   Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.  
+- Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.  
   
--   Kullanarak **grafik ardışık düzen aşamaları** etkisini denetlemek için pencere `DrawIndexed` Direct3D API'sini çağırır.  
+- Kullanarak **grafik ardışık düzen aşamaları** etkisini denetlemek için pencere `DrawIndexed` Direct3D API'sini çağırır.  
   
--   Kullanarak **HLSL hata ayıklayıcısı** köşe gölgelendiricisi incelemek için.  
+- Kullanarak **HLSL hata ayıklayıcısı** köşe gölgelendiricisi incelemek için.  
   
--   Kullanarak **grafik olay çağrı yığını** yanlış bir HLSL sabiti kaynağını bulmaya yardımcı olacak.  
+- Kullanarak **grafik olay çağrı yığını** yanlış bir HLSL sabiti kaynağını bulmaya yardımcı olacak.  
   
 ## <a name="scenario"></a>Senaryo  
  Eksik bir nesnenin bir 3B uygulamada sık karşılaşılan nedenlerinden oluşur köşe gölgelendiricisi nesnenin köşe hatalı veya beklenmedik bir şekilde dönüştürür — Örneğin, nesne çok küçük bir boyuta ölçeklendirilir veya kamera göründüğü şekilde dönüştürülmüş , yerine önündeki.  

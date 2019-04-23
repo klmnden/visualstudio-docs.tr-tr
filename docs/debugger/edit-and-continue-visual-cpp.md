@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1122e59d804387172d14f5ac9b24b6fad42213f9
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9ff67be52c36050f513fc3ef6530a6bd81d8988d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046676"
 ---
 # <a name="edit-and-continue-visual-c"></a>Düzenle ve Devam Et (Visual C++)
 Visual C++ projelerinde, Düzenle ve devam et kullanabilirsiniz. Bkz: [desteklenen kod değişiklikleri (C++)](../debugger/supported-code-changes-cpp.md) Düzenle ve devam et sınırlamaları hakkında bilgi için.
@@ -33,7 +33,7 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
 
  **/ZO** devre dışı bırakır, Düzenle ve devam et. Bkz: [nasıl yapılır: İyileştirilmiş kodda hata ayıklama](../debugger/how-to-debug-optimized-code.md).
 
-##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Düzenle ve Devam Et'i devre dışı bırakmak veya etkinleştirmek
+## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Düzenle ve Devam Et'i devre dışı bırakmak veya etkinleştirmek
  Geçerli hata ayıklama oturumu sırasında uygulanan istemediğiniz kod düzenlemeler yapmasını durumunda Düzenle ve devam et otomatik çağrılmasını devre dışı bırakmak isteyebilirsiniz. Ayrıca otomatik Düzenle ve devam et yeniden etkinleştirebilirsiniz.
 
 > [!IMPORTANT]
@@ -51,14 +51,14 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
 
    Bu ayarı değiştirmeden üzerinde çalışan tüm projeleri etkiler. Bu ayarı değiştirdikten sonra uygulamanızı yeniden gerekmez. Ayarlarsanız uygulamanızı bir derleme görevleri dosyası veya komut satırından derleme, ancak Visual Studio ortamında Hata Ayıkla, Düzenle ve devam et kullanmaya devam edebilirsiniz **/zi** seçeneği.
 
-##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Kod değişikliklerini açıkça uygulama
+## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Kod değişikliklerini açıkça uygulama
  Visual C++'da, Düzenle ve devam et, iki yolla kod değişiklikleri uygulayabilirsiniz. Kod değişiklikleri uygulanabilir örtük olarak, bir yürütme komutu seçtiğinizde veya açıkça kullanarak **kod değişikliklerini uygulama** komutu.
 
  Kod değişikliklerini açıkça uygulama, programınız kesme modunda - hiçbir yürütülmenin kalır.
 
--   Kod değişikliklerini açıkça uygulamak için üzerinde **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulama**.
+- Kod değişikliklerini açıkça uygulamak için üzerinde **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulama**.
 
-##  <a name="BKMK_How_to_stop_code_changes"></a> Kod değişikliklerini durdurma
+## <a name="BKMK_How_to_stop_code_changes"></a> Kod değişikliklerini durdurma
  Düzenle ve devam ederken kod değişikliklerini uygulama sürecinde, işlemi durdurabilirsiniz.
 
  Kod değişiklikleri uygulanırken durdurmak için:
@@ -69,12 +69,12 @@ Visual Studio 2015 güncelleştirme 3'ü iyileştirmeleri hakkında daha fazla b
 
   Bu seçeneği seçerseniz, hiçbir kod değişikliği kabul edilir.
 
-##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Yürütme noktası sıfırlama
+## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Yürütme noktası sıfırlama
  Bazı kod değişiklikleri, Düzenle ve devam et değişiklikleri uygulandığında, yeni bir konuma taşımak için yürütme noktasını neden olabilir. Düzenle ve devam et yerleştirir yürütme noktası olarak doğru bir şekilde, ancak sonuçları her durumda doğru olmayabilir.
 
  Visual C++'da, bir iletişim kutusu yürütme noktası değiştiğinde bildirir. Hata ayıklama devam etmeden önce konumun doğru olduğunu doğrulamanız gerekir. Doğru değilse, **sonraki deyimi Ayarla** komutu. Daha fazla bilgi için [yürütülecek sonraki deyimi ayarlamak](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
 
-##  <a name="BKMK_How_to_work_with_stale_code"></a> Eski kod ile çalışma
+## <a name="BKMK_How_to_work_with_stale_code"></a> Eski kod ile çalışma
  Bazı durumlarda, Düzenle ve devam et kod değişikliklerini yürütülebilir dosyaya hemen uygulanamaz, ancak hata ayıklama devam ederseniz daha sonra kod değişikliklerini uygulamak mümkün olabilir. Bu geçerli işlevi çağıran bir işlev düzenlerseniz veya çağrı yığınında bir işleve 64 bayttan daha fazla yeni değişkenleri eklerseniz gerçekleşir
 
  Bu gibi durumlarda, hata ayıklayıcı, değişikliklerin uygulanması kadar özgün kod yürütülmeye devam eder. Eski kod bir başlığa sahip ayrı bir kaynak penceresinde bir geçici kaynak dosya penceresi gibi görünür `enc25.tmp`. Düzenlenen kaynak özgün kaynak penceresinde görünmeye devam eder. Eski kod düzenlemeye çalışırsanız, bir uyarı iletisi görüntülenir.

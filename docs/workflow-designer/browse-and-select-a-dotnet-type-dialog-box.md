@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7cbe3b0593b3a71c65667e78d7b0284cacc4538
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f48a30e11e28daef2d1803646d2b495bcb718b84
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046195"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET Türüne Gözat ve Seç İletişim Kutusu
 
@@ -24,11 +24,11 @@ ms.locfileid: "55942199"
 
 Bu iletişim kutusu, kullanıcı senaryoları, aşağıdakiler dahil olmak üzere bir dizi içinde kullanılır:
 
--   Bir değişken veya bağımsız değişken türü ayarlarken.
+- Bir değişken veya bağımsız değişken türü ayarlarken.
 
--   Genel etkinlik için bir türü seçerken.
+- Genel etkinlik için bir türü seçerken.
 
--   Bir catch eklenirken <xref:System.Activities.Statements.TryCatch> etkinlik.
+- Bir catch eklenirken <xref:System.Activities.Statements.TryCatch> etkinlik.
 
 > [!NOTE]
 > Tür tarayıcı olmayan çok boyutlu dizi türleri, ancak Visual Basic Basit dizi türlerini görüntüleyebilirsiniz. Bkz: [basit diziler](http://go.microsoft.com/fwlink/?LinkId=195226) ve [çok boyutlu diziler](http://go.microsoft.com/fwlink/?LinkId=195227) Ayrıntılar için.
@@ -37,19 +37,19 @@ Bu iletişim kutusu, kullanıcı senaryoları, aşağıdakiler dahil olmak üzer
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Bir değer veya başvuru türü tür tarayıcısından seçin
 
-1.  İçinde **tür adı** kutusunda, kullanmak istediğiniz türün adını girin.
+1. İçinde **tür adı** kutusunda, kullanmak istediğiniz türün adını girin.
 
-2.  Aşağıdakilerden birini yapın:
+2. Aşağıdakilerden birini yapın:
 
-    -   Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, seçmek için türü'ne çift tıklayın.
+    - Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, seçmek için türü'ne çift tıklayın.
 
-    -   Yeterli karakterler girdiğinizde, bu **tür adı** türünü seçmek için ENTER tuşuna basın ve kullanmak istediğiniz türü benzersiz olarak tanımlanabilmesi için kutusu
+    - Yeterli karakterler girdiğinizde, bu **tür adı** türünü seçmek için ENTER tuşuna basın ve kullanmak istediğiniz türü benzersiz olarak tanımlanabilmesi için kutusu
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>Genel tür tür tarayıcısından seçmek için
 
-1.  İçinde **tür adı** kutusunda, kullanmak istediğiniz tür adını yazın.
+1. İçinde **tür adı** kutusunda, kullanmak istediğiniz tür adını yazın.
 
-2.  Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, açılır kutuları neden seçmek için türü görünür tıklatın.
+2. Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, açılır kutuları neden seçmek için türü görünür tıklatın.
 
      Açılan kutu genel kapatın ve ardından kullanmak istediğiniz türü seçin **Tamam**.
 
@@ -65,9 +65,9 @@ Türleri listesini **tür adı** kutusu daha kısa bir eşleştirme bulmak üzer
 
 Örneğin:
 
-1.  Yazarak **işlemi** eşleşen <xref:System.OperationCanceledException> ama <xref:System.InvalidOperationException>. Eşleştirilecek <xref:System.InvalidOperationException>, System.I ya da geçersiz yazmaya başlayın.
+1. Yazarak **işlemi** eşleşen <xref:System.OperationCanceledException> ama <xref:System.InvalidOperationException>. Eşleştirilecek <xref:System.InvalidOperationException>, System.I ya da geçersiz yazmaya başlayın.
 
-2.  Yazarak **genel** eşleşen <xref:System.GenericUriParser> ancak türlerini değil <xref:System.Collections.Generic> ad alanı. Türler için aranacak <xref:System.Collections.Generic> ad alanı, ad alanının tam adını yazın.
+2. Yazarak **genel** eşleşen <xref:System.GenericUriParser> ancak türlerini değil <xref:System.Collections.Generic> ad alanı. Türler için aranacak <xref:System.Collections.Generic> ad alanı, ad alanının tam adını yazın.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Tür Tarayıcı iletişim kutusunu kullanarak bir hizmet sözleşmesini seçme
 

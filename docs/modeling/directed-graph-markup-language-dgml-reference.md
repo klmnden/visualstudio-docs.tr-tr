@@ -1,5 +1,5 @@
 ---
-title: Yönlendirilmiş Grafik İşaretleme Dili (DGML) başvurusu
+title: Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) başvurusu
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c18c9537358cd40d574bed47e9a7d357ee3dacb7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040239"
 ---
-# <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik İşaretleme Dili (DGML) başvurusu
+# <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) başvurusu
 
 Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıklık analizleri gerçekleştirmek için kullanılan bilgileri açıklar ve biçimi Visual Studio'daki kod haritaları kalıcı hale getirmek için kullanılır. Döngüsel ve döngüsel olmayan yönlendirilmiş grafikleri açıklamak için basit XML kullanır. Yönlendirilmiş bir grafik, bağlantılarla veya kenarlarla bağlanmış bir düğüm kümesidir. Düğümler ve bağlantılar, bir yazılım projesindeki öğeler gibi ağ yapılarını açıklamak için kullanılabilir.
 
@@ -23,7 +23,7 @@ Visual Studio'nun bazı sürümlerinin yalnızca bir alt kümesini DGML özellik
 > [!NOTE]
 > Bir .dgml dosyasını düzenlerken, IntelliSense her öğe için kullanılabilen öznitelikleri ve değerlerini belirlemenize yardımcı olur. Bir öznitelikte renk belirlemek için "Mavi" gibi genel renklerin adlarını veya "#ffa0b1c3" gibi ARGB onaltılık değerlerini kullanın. DGML Windows Presentation Foundation (WPF) renk tanımı biçimlerinin küçük bir alt kümesini kullanır. Daha fazla bilgi için [renkler sınıfı](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-##  <a name="DGML"></a> DGML söz dizimi
+## <a name="DGML"></a> DGML söz dizimi
 
 Aşağıdaki tabloda, DGML'de kullanılan öğelerin türleri açıklanmaktadır:
 
@@ -300,7 +300,7 @@ Aşağıdaki tabloda, DGML'de kullanılan öğelerin türleri açıklanmaktadır
   </DirectedGraph>
   ```
 
-###  <a name="AddAlias"></a> Sık kullanılan yolların diğer adları
+### <a name="AddAlias"></a> Sık kullanılan yolların diğer adları
 
 Yaygın olarak kullanılan yolların takma adlarla değiştirilmesi .dgml dosyasının boyutunu azaltır ve dosyayı yüklemek veya kaydetmek için gereken süreyi kısaltır. Bir diğer ad oluşturmak için bir `<Paths></Paths>` .dgml dosyasının sonundaki bölümü. Bu bölümde, ekleme bir `<Path/>` yolu için bir diğer ad tanımlamak için:
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042905"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio öykünücüsü sistem gereksinimleri
 
@@ -26,7 +26,7 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 > [!IMPORTANT]
 > Kurulum programı öykünücüsü Android için Visual Studio öykünücüsü'nü çalıştıran önkoşulları denetler. Önkoşulları mevcut değildir, ancak bunları gerektirmeyen uyarıları görüntüler.
 
-##  <a name="Checklist"></a> Hızlı Denetim listesi
+## <a name="Checklist"></a> Hızlı Denetim listesi
 
 Android için Visual Studio öykünücü çalıştırmak için gereksinimleri hızlı listesi aşağıda verilmiştir. Daha ayrıntılı bilgi için bu konudaki sonraki bölümlere bakın.
 
@@ -50,11 +50,11 @@ Hyper-V gereksinimleri
 
 - Aşağıdaki özellikler BIOS'ta desteklenmesi gerekir:
 
-  -   Donanım destekli sanallaştırma
+  - Donanım destekli sanallaştırma
 
-  -   İkinci düzey adres çevirisi (SLAT)
+  - İkinci düzey adres çevirisi (SLAT)
 
-  -   Donanım tabanlı Veri Yürütme Engellemesi (DEP)
+  - Donanım tabanlı Veri Yürütme Engellemesi (DEP)
 
 - Windows Hyper-V etkinleştirilmiş ve çalışıyor olması gerekir.
 

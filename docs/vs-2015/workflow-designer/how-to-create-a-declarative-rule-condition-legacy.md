@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039536"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Nasıl yapılır: Bildirime Dayanan Kural Koşulu Oluşturma (Eski)
 Bu konu, bir kural koşulu kullanılarak bildirmek açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)] hedefleyen [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -27,37 +27,37 @@ Bu konu, bir kural koşulu kullanılarak bildirmek açıklar [!INCLUDE[wfd1](../
   
  Bildirime dayanan kural koşulları aşağıdaki Windows Workflow Foundation out-of-box etkinliklerini kullanılır:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Kural Koşulu Düzenleyicisi'ni kullanarak bir bildirime dayanan Kural koşulu oluşturma  
   
-1.  Etkinliğin içinde **özellikleri** penceresinde tıklayın **koşul** özelliği veya **UntilCondition** etkinliğe bağlı bir özellik.  
+1. Etkinliğin içinde **özellikleri** penceresinde tıklayın **koşul** özelliği veya **UntilCondition** etkinliğe bağlı bir özellik.  
   
-2.  Seçin **bildirim temelli bir kural koşulu** özelliği için listeden.  
+2. Seçin **bildirim temelli bir kural koşulu** özelliği için listeden.  
   
-3.  Genişletin **koşul** veya **UntilCondition** özelliği.  
+3. Genişletin **koşul** veya **UntilCondition** özelliği.  
   
-4.  Tıklayın **ConditionName** özelliği.  
+4. Tıklayın **ConditionName** özelliği.  
   
-5.  Tıklayın **ConditionName** üç nokta **[...]**  açmak için **koşulu seçin** iletişim kutusu.  
+5. Tıklayın **ConditionName** üç nokta **[...]**  açmak için **koşulu seçin** iletişim kutusu.  
   
-6.  Tıklayın **yeni koşul** açmak için **Kural Koşulu Düzenleyicisi** iletişim kutusu.  
+6. Tıklayın **yeni koşul** açmak için **Kural Koşulu Düzenleyicisi** iletişim kutusu.  
   
-7.  Koşul ifadesi türü **koşul** metin kutusu.  
+7. Koşul ifadesi türü **koşul** metin kutusu.  
   
      Koşul ifadeleri oluşturma hakkında daha fazla bilgi için bkz: [Kural Koşulu Düzenleyicisi iletişim kutusu (eski)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  Koşul ifadesi oluşturmayı tamamladığınızda, tıklayın **Tamam** iletişim kutusunu kapatmak ve Kural koşulu ile atanan bir ad oluşturun.  
+8. Koşul ifadesi oluşturmayı tamamladığınızda, tıklayın **Tamam** iletişim kutusunu kapatmak ve Kural koşulu ile atanan bir ad oluşturun.  
   
      **Koşulu seçin** iletişim kutusu açılır.  
   

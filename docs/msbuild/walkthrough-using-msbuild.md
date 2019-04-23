@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: fadc901ce09c6e85541956d800201a53b6d73490
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054971"
 ---
 # <a name="walkthrough-use-msbuild"></a>İzlenecek yol: MSBuild kullanma
 
@@ -56,13 +56,13 @@ Visual Studio'dan veya MSBuild çalıştırın **komut penceresi**. Bu izlenecek
 
 **Projeyi dosyasını incelemek için**
 
-1.  İçinde **Çözüm Gezgini**, proje düğümünü tıklatın **BuildApp**.
+1. İçinde **Çözüm Gezgini**, proje düğümünü tıklatın **BuildApp**.
 
-2.  İçinde **özellikleri** tarayıcı dikkat **proje dosyası** özelliği *Buildapp.csproj'u*. Tüm proje dosyaları soneki ile adlandırılır *proj*. Visual Basic projesi oluşturduysanız, proje dosyası adı olacaktır *BuildApp.vbproj*.
+2. İçinde **özellikleri** tarayıcı dikkat **proje dosyası** özelliği *Buildapp.csproj'u*. Tüm proje dosyaları soneki ile adlandırılır *proj*. Visual Basic projesi oluşturduysanız, proje dosyası adı olacaktır *BuildApp.vbproj*.
 
-3.  Proje düğümünü sağ tıklatın ve ardından **projeyi**.
+3. Proje düğümünü sağ tıklatın ve ardından **projeyi**.
 
-4.  Proje düğümünü yeniden sağ tıklatın ve ardından **Buildapp.csproj'u Düzenle**.
+4. Proje düğümünü yeniden sağ tıklatın ve ardından **Buildapp.csproj'u Düzenle**.
 
      Proje dosyası kod düzenleyicisinde görüntülenir.
 
@@ -222,16 +222,20 @@ $(PropertyName)
 4. Çıktıyı inceleyin. Şu iki satırı görmeniz gerekir (.NET Framework sürümünüz farklı olabilir):
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **Komut satırından bir özellik değerini ayarlamak için**
 
-1.  Gelen **komut penceresi**girin ve bu satırı yürütün:
+1. Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:
+2. Çıktıyı inceleyin. Şu satırı görmeniz gerekir:
 
     ```
     Configuration is Release.
@@ -381,21 +385,21 @@ Her satırda bir tane Derleme öğesi görüntülemek için taşıma dönüşler
 
 **Öğe türü görüntülemek için her satırda bir tane değerleri**
 
-1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
+1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  Proje dosyasını kaydedin.
+2. Proje dosyasını kaydedin.
 
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:
+4. Çıktıyı inceleyin. Şu satırları görmeniz gerekir:
 
     ```
     Compile item type contains Form1.cs

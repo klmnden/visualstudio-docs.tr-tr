@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041404"
 ---
 # <a name="extract-method-refactoring-c"></a>Ayıklama Yöntemi Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "54754830"
   
  **Extrahovat metodu** aşağıdaki faydaları sağlar:  
   
--   En iyi kodlama uygulamalarını teşvik etmektedir ayrık, yeniden kullanılabilir yöntemleri vurgulayarak.  
+- En iyi kodlama uygulamalarını teşvik etmektedir ayrık, yeniden kullanılabilir yöntemleri vurgulayarak.  
   
--   Kod iyi kuruluş aracılığıyla kendi kendine tanım teşvik eder.  
+- Kod iyi kuruluş aracılığıyla kendi kendine tanım teşvik eder.  
   
      Daha fazla bilgi edinin, açıklayıcı adlar kullanılan, üst düzey yöntemleri olduğunda açıklamaları dizisi ister.  
   
--   Geçersiz kılma basitleştirmek için yöntemleri dağıtımına oluşturulmasını önerir.  
+- Geçersiz kılma basitleştirmek için yöntemleri dağıtımına oluşturulmasını önerir.  
   
--   Kod yinelemesinden azaltır.  
+- Kod yinelemesinden azaltır.  
   
 ### <a name="to-use-extract-method"></a>Ayıklama yöntemi kullanmak için  
   
-1.  Adlı bir konsol uygulaması oluşturun `ExtractMethod`ve ardından `Program` ile aşağıdaki kod örneği.  
+1. Adlı bir konsol uygulaması oluşturun `ExtractMethod`ve ardından `Program` ile aşağıdaki kod örneği.  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "54754830"
     }  
     ```  
   
-2.  Ayıklamak istediğiniz kod parçasını seçin:  
+2. Ayıklamak istediğiniz kod parçasını seçin:  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  Üzerinde **yeniden düzenleme** menüsünde tıklatın **yöntemi ayıklama**.  
+3. Üzerinde **yeniden düzenleme** menüsünde tıklatın **yöntemi ayıklama**.  
   
      **Yöntemi ayıklama** iletişim kutusu görüntülenir.  
   
@@ -82,11 +82,11 @@ ms.locfileid: "54754830"
   
      Ayrıca seçili sağ tıklayabilirsiniz kod, işaret **yeniden düzenleyin**ve ardından **yöntemi ayıklama** görüntülenecek **yöntemi ayıklama** iletişim kutusu.  
   
-4.  Yeni bir yöntem için bir ad belirtin `CircleArea`, **yeni yöntem adı** kutusu.  
+4. Yeni bir yöntem için bir ad belirtin `CircleArea`, **yeni yöntem adı** kutusu.  
   
      Yeni metot imzasını önizlemesini görüntüler altında **metot imzasını Önizle**.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Kullanırken **yöntemi ayıklama** komutunu kaynak üye aynı sınıftaki aşağıdaki yeni yöntemi eklenir.  

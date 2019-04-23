@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056685"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# Hata Ayıklama Yapılandırması Proje Ayarları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Bir C# hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **
 > [!WARNING]
 >  Bu konu, Windows Store uygulamaları için geçerli değil. Bkz: [(VB, C#, C++ ve XAML) bir hata ayıklama oturumu başlatın](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Hata ayıklama sekmesi  
+## <a name="BKMK_Debug_tab"></a> Hata ayıklama sekmesi  
   
 |**Ayar**|**Açıklama**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ Bir C# hata ayıklama yapılandırması proje ayarları değiştirebilirsiniz **
 |**Yönetilmeyen kodun hata ayıklamasını etkinleştir**|Yerel (yönetilmeyen) Win32 koddaki çağrıları yönetilen uygulamanızın hatalarını ayıklamanızı sağlar.|  
 |**SQL Server hata ayıklamayı etkinleştir**|SQL Server veritabanı nesnelerini hata ayıklamasını sağlar.|  
   
-##  <a name="BKMK_Build_tab"></a> Derleme sekmesi  
+## <a name="BKMK_Build_tab"></a> Derleme sekmesi  
   
 |Ayar|Açıklama|  
 |-------------|-----------------|  

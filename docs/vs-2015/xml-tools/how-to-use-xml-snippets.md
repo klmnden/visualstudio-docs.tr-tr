@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055268"
 ---
 # <a name="how-to-use-xml-snippets"></a>Nasıl yapılır: XML Kod Parçacıklarını Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,46 +31,46 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Kısayol menüsünden kod parçacığı eklemek için  
   
-1.  XML kod parçacığı eklemek istediğiniz imleci getirin.  
+1. XML kod parçacığı eklemek istediğiniz imleci getirin.  
   
-2.  Sağ tıklayıp **parçacık Ekle**.  
+2. Sağ tıklayıp **parçacık Ekle**.  
   
      Kullanılabilir XML kod parçacıklarını listesi görüntülenir.  
   
-3.  Fareyi kullanarak listeden veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
+3. Fareyi kullanarak listeden veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>IntelliSense menüsünü kullanarak kod parçacığı eklemek için  
   
-1.  XML kod parçacığı eklemek istediğiniz imleci getirin.  
+1. XML kod parçacığı eklemek istediğiniz imleci getirin.  
   
-2.  Gelen **Düzenle** menüsünde **IntelliSense**ve ardından **parçacık Ekle**.  
+2. Gelen **Düzenle** menüsünde **IntelliSense**ve ardından **parçacık Ekle**.  
   
      Kullanılabilir XML kod parçacıklarını listesi görüntülenir.  
   
-3.  Fareyi kullanarak liste veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
+3. Fareyi kullanarak liste veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Tam sözcük IntelliSense listesinde kod parçacığı eklemek için  
   
-1.  XML kod parçacığı eklemek istediğiniz imleci getirin.  
+1. XML kod parçacığı eklemek istediğiniz imleci getirin.  
   
-2.  Dosyanıza eklemek istediğiniz XML kod parçacığı yazmaya başlayın. Otomatik tamamlama açıksa, IntelliSense tam sözcük listesi görüntülenir. Etkinleştirmek için CTRL + Ara çubuğu görünmüyorsa, basın.  
+2. Dosyanıza eklemek istediğiniz XML kod parçacığı yazmaya başlayın. Otomatik tamamlama açıksa, IntelliSense tam sözcük listesi görüntülenir. Etkinleştirmek için CTRL + Ara çubuğu görünmüyorsa, basın.  
   
-3.  XML kod parçacığı tam sözcük listeden seçin.  
+3. XML kod parçacığı tam sözcük listeden seçin.  
   
-4.  Sekme tuşuna basın, XML kod parçacığı çağırmak için SEKMESİNDE.  
+4. Sekme tuşuna basın, XML kod parçacığı çağırmak için SEKMESİNDE.  
   
 > [!NOTE]
 >  XML kod parçacığı çağrılmayacağı durumlar olabilir. Örneğin, eklemeye çalışırsanız bir `xs:complexType` öğesi içinde bir `xs:element` düğüm, düzenleyici XML kod parçacığı oluşturmaz. Olduğunda bir `xs:complexType` öğesi içinde kullanılan bir `xs:element` düğüm, düzenleyici eklemek için herhangi bir veri içermez gerekli öznitelikleri veya alt öğeleri, yoktur.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Kısayol adı kullanarak kod parçacığı eklemek için  
   
-1.  XML kod parçacığı eklemek istediğiniz imleci getirin.  
+1. XML kod parçacığı eklemek istediğiniz imleci getirin.  
   
-2.  Tür `<` Düzenleyicisi bölmesinde.  
+2. Tür `<` Düzenleyicisi bölmesinde.  
   
-3.  Tam sözcük IntelliSense listesini kapatmak için ESC tuşuna basın.  
+3. Tam sözcük IntelliSense listesini kapatmak için ESC tuşuna basın.  
   
-4.  Kod parçacığı kısayol adını yazın ve XML kod parçacığı çağırmak için SEKME tuşuna basın.  
+4. Kod parçacığı kısayol adını yazın ve XML kod parçacığı çağırmak için SEKME tuşuna basın.  
   
 ## <a name="surround-with"></a>Şununla Çevrele  
  Aşağıdaki yordamlar nasıl erişileceğini açıklar **Surround With** komutu.  
@@ -80,23 +80,23 @@ XML Düzenleyicisi kısayol menüsünde aşağıdaki iki komutu kullanarak XML k
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Bağlam menüsünden çevrelemeyi kullanmak için  
   
-1.  XML Düzenleyicisi'nde kapsamak için metni seçin.  
+1. XML Düzenleyicisi'nde kapsamak için metni seçin.  
   
-2.  Sağ tıklayıp **Surround With**.  
+2. Sağ tıklayıp **Surround With**.  
   
      XML kod parçacıklarını kullanılabilir çevreleyen listesi görüntülenir.  
   
-3.  Fareyi kullanarak listeden veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
+3. Fareyi kullanarak listeden veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>IntelliSense menüsünden çevrelemeyi kullanmak için  
   
-1.  XML Düzenleyicisi'nde kapsamak için metni seçin.  
+1. XML Düzenleyicisi'nde kapsamak için metni seçin.  
   
-2.  Gelen **Düzenle** menüsünde **IntelliSense**ve ardından **Surround With**.  
+2. Gelen **Düzenle** menüsünde **IntelliSense**ve ardından **Surround With**.  
   
      XML kod parçacıklarını kullanılabilir çevreleyen listesi görüntülenir.  
   
-3.  Fareyi kullanarak listeden veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
+3. Fareyi kullanarak listeden veya kod parçacığı adını yazarak ve sekme veya ENTER tuşuna basarak bir kod parçacığı seçin.  
   
 ## <a name="using-xml-snippets"></a>XML kod parçacıklarını kullanma  
  XML kod parçacığı seçtikten sonra metin kod parçacığının İmleç konumuna otomatik olarak eklenir. Kod parçacığı düzenlenebilir tüm alanlarda vurgulanır ve ilk düzenlenebilir bir alanı otomatik olarak seçilir. Şu anda seçili alanı Kutulu olmasıdır.  

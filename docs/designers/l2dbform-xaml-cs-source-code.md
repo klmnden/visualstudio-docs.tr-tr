@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060130"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs kaynak kodu
 
@@ -23,9 +23,9 @@ Bu konu, içeriği ve C# kaynak kodu dosyasında açıklamasını içerir *L2DBF
 
 Bu sınıf kullanılan pencere kaynaklara ilişkilendirmek için kullanılan iki özel veri üyesi *L2DBForm.xaml*.
 
--   Ad alanı değişkeni `myBooks` değerine ayarlanır `"http://www.mybooks.com"`.
+- Ad alanı değişkeni `myBooks` değerine ayarlanır `"http://www.mybooks.com"`.
 
--   Üye `bookList` CDATA dizesinde oluşturucu içinde başlatılan *L2DBForm.xaml* aşağıdaki satırı ile:
+- Üye `bookList` CDATA dizesinde oluşturucu içinde başlatılan *L2DBForm.xaml* aşağıdaki satırı ile:
 
     ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -35,11 +35,11 @@ Bu sınıf kullanılan pencere kaynaklara ilişkilendirmek için kullanılan iki
 
 Bu yöntem, aşağıdaki üç deyimi içerir:
 
--   İlk koşul deyimi, giriş doğrulaması için kullanılır.
+- İlk koşul deyimi, giriş doğrulaması için kullanılır.
 
--   İkinci deyim yeni bir oluşturur <xref:System.Xml.Linq.XElement> girilen kullanıcı dizesi değerleri **ekleme yeni kitabı** kullanıcı arabirimi (UI) bölümü.
+- İkinci deyim yeni bir oluşturur <xref:System.Xml.Linq.XElement> girilen kullanıcı dizesi değerleri **ekleme yeni kitabı** kullanıcı arabirimi (UI) bölümü.
 
--   Son deyim veri sağlayıcısının bu yeni kitabı öğesi ekler *L2DBForm.xaml*. Sonuç olarak, dinamik veri bağlama kullanıcı arabirimini otomatik olarak bu yeni bir öğe ile güncelleştirilir; Ek kullanıcı tarafından sağlanan kod gereklidir.
+- Son deyim veri sağlayıcısının bu yeni kitabı öğesi ekler *L2DBForm.xaml*. Sonuç olarak, dinamik veri bağlama kullanıcı arabirimini otomatik olarak bu yeni bir öğe ile güncelleştirilir; Ek kullanıcı tarafından sağlanan kod gereklidir.
 
 ## <a name="onremove-event-handler"></a>OnRemove olay işleyicisi
 
@@ -47,13 +47,13 @@ Bu yöntem, aşağıdaki üç deyimi içerir:
 
 Ancak, seçilen bir kitap öğesi kaldırmanın çekirdek iş yalnızca iki deyim tarafından gerçekleştirilir:
 
--   İlk olarak, şu anda seçili öğeyi liste kutusunda ilişkili kitap öğesi alınır:
+- İlk olarak, şu anda seçili öğeyi liste kutusunda ilişkili kitap öğesi alınır:
 
     ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   Ardından, bu öğe, veri sağlayıcısı'ndan silinir:
+- Ardından, bu öğe, veri sağlayıcısı'ndan silinir:
 
     ```csharp
     selBook.Remove();

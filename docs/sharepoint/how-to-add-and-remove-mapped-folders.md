@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21ecf370134558d7b47faad1c215fa9a65019316
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d5d1acc40b23c979a5746c50be50a584d11112b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046987"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Nasıl yapılır: eşlenmiş klasörler ekleme ve kaldırma
   Görüntüleri ve düzenleri, katıştırılmış derin bir şekilde dosya hiyerarşide olarak bazı klasörler SharePoint, yaygın olarak kullanılan. Bu klasörleri daha kolay erişmek için bir SharePoint projesine eşleyebilirsiniz. Eşlenen klasörler SharePoint Server'ın yükleme dosyalarının fiziksel konuma karşılık gelen SharePoint Proje klasörlerdir.
@@ -33,23 +33,23 @@ Eşlenen klasörler proje için komutları menü çubuğundan veya kısayol men�
 
 #### <a name="to-add-mapped-folders-to-a-project"></a>Eşlenen klasörler bir projeye eklemek için
 
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda, ya da genişletin **Visual Basic** veya **Visual C#**  düğümünü genişletin **Office/SharePoint** düğümünü seçip **SharePoint çözümleri** düğümü.
+2. İçinde **yeni proje** iletişim kutusunda, ya da genişletin **Visual Basic** veya **Visual C#**  düğümünü genişletin **Office/SharePoint** düğümünü seçip **SharePoint çözümleri** düğümü.
 
-3.  Proje şablonları listesinde seçin **SharePoint 2013 görsel Web Bölümü** şablonu.
+3. Proje şablonları listesinde seçin **SharePoint 2013 görsel Web Bölümü** şablonu.
 
-4.  İçinde **adı** kutusuna **TestProject1**ve ardından **Tamam** düğmesi.
+4. İçinde **adı** kutusuna **TestProject1**ve ardından **Tamam** düğmesi.
 
-5.  İçinde **SharePoint Özelleştirme Sihirbazı**, seçin **son** varsayılan ayarları korumak için düğme.
+5. İçinde **SharePoint Özelleştirme Sihirbazı**, seçin **son** varsayılan ayarları korumak için düğme.
 
-6.  İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **SharePoint Ekle "Görüntüler" eşlenen klasörü**.
+6. İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **SharePoint Ekle "Görüntüler" eşlenen klasörü**.
 
      Adlı bir klasör **görüntüleri** projenizde görünür ve TestProject1 adlı bir alt klasör içerir. Bu eşlenmiş klasör visual web bölümü projesi için görüntüleri içerir.
 
-7.  İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **SharePoint eşlenen klasörü Ekle** görüntülemekiçin **SharePoint eşlenen klasörü Ekle** iletişim kutusu.
+7. İçinde **Çözüm Gezgini**, proje düğümünü seçin ve ardından, menü çubuğunda, **proje** > **SharePoint eşlenen klasörü Ekle** görüntülemekiçin **SharePoint eşlenen klasörü Ekle** iletişim kutusu.
 
-8.  Eşleme için kullanılabilir olan klasörler ağaç görünümünde seçin **kaynakları** klasörünü ve ardından **Tamam** düğmesi.
+8. Eşleme için kullanılabilir olan klasörler ağaç görünümünde seçin **kaynakları** klasörünü ve ardından **Tamam** düğmesi.
 
      Adlı bir klasör **kaynakları** projenizde görünür. Bu klasör, dize kaynak dosyaları gibi öğeleri depolayabilirsiniz. Alt klasörleri eşlenen klasörün içeriği düzenlemek için yararlı olabilir, ancak eşlenmiş bir klasöre kullanarak eklediğinizde, bunlar otomatik olarak oluşturulan **SharePoint eşlenen klasörü Ekle** komutu. Bir alt klasör eklemek için **kaynakları** klasörünü ve ardından, menü çubuğunda, **proje** > **yeni klasör**.
 
@@ -58,25 +58,25 @@ Eşlenen klasörler proje için komutları menü çubuğundan veya kısayol men�
 
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Eşlenmiş bir klasöre dağıtım konumunu değiştirmek için
 
-1.  Daha önce oluşturduğunuz projede, eşleşen bir klasör seçin.
+1. Daha önce oluşturduğunuz projede, eşleşen bir klasör seçin.
 
-2.  İçinde **özellikleri** penceresinde üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) düğmesini **dağıtım Konum** özelliği.
+2. İçinde **özellikleri** penceresinde üç noktayı seçin (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcısı elips")) düğmesini **dağıtım Konum** özelliği.
 
-3.  İçinde **SharePoint eşlenen klasörü Ekle** iletişim kutusunda, işaret edecek şekilde eşlenen klasörü istediğiniz klasöre gidin.
+3. İçinde **SharePoint eşlenen klasörü Ekle** iletişim kutusunda, işaret edecek şekilde eşlenen klasörü istediğiniz klasöre gidin.
 
-4.  Düğümü seçin ve ardından **Tamam** düğmesi.
+4. Düğümü seçin ve ardından **Tamam** düğmesi.
 
 ## <a name="rename-or-remove-mapped-folders"></a>Yeniden adlandırma veya eşlenmiş klasörler Kaldır
 
 #### <a name="to-rename-or-remove-a-mapped-folder"></a>Yeniden adlandırmakta ya da eşlenen klasörü Kaldır
 
-1.  Daha önce oluşturduğunuz projede, eşleşen bir klasör seçin.
+1. Daha önce oluşturduğunuz projede, eşleşen bir klasör seçin.
 
-2.  Eşlenen klasörü yeniden adlandırmak için kısayol menüsünü açın, **Yeniden Adlandır**, yeni bir ad girin ve ardından Enter tuşuna basın.
+2. Eşlenen klasörü yeniden adlandırmak için kısayol menüsünü açın, **Yeniden Adlandır**, yeni bir ad girin ve ardından Enter tuşuna basın.
 
      Alternatif olarak, yeniden adlandırma, açmak istediğiniz eşlenen klasörü seçebilirsiniz **özellikleri** penceresinde ve ardından değerini **klasör adı** özelliğini yeni adı.
 
-3.  Eşlenmiş bir klasöre projeden kaldırmak için kısayol menüsünü açın, **Sil**ve ardından **Tamam** kaldırma işlemini onaylamak için iletişim kutusunda düğmesi.
+3. Eşlenmiş bir klasöre projeden kaldırmak için kısayol menüsünü açın, **Sil**ve ardından **Tamam** kaldırma işlemini onaylamak için iletişim kutusunda düğmesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [SharePoint çözümleri geliştirme](../sharepoint/developing-sharepoint-solutions.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044982"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Nasıl yapılır: Bir uygulama yapılandırma dosyasına ekleyin bir C# proje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Bir C# projesine uygulama yapılandırma dosyası (app.config dosyası) ekleyere
   
 ### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>C# projenize bir uygulama yapılandırma dosyası eklemek için  
   
-1.  Menü çubuğunda, **proje**, **Yeni Öğe Ekle**.  
+1. Menü çubuğunda, **proje**, **Yeni Öğe Ekle**.  
   
      **Yeni Öğe Ekle** iletişim kutusu görünür.  
   
-2.  Genişletin **yüklü**, genişletme **Visual C# öğeleri**ve ardından **uygulama yapılandırma dosyası** şablonu.  
+2. Genişletin **yüklü**, genişletme **Visual C# öğeleri**ve ardından **uygulama yapılandırma dosyası** şablonu.  
   
-3.  İçinde **adı** metin kutusuna bir ad girin ve ardından **Ekle** düğmesi.  
+3. İçinde **adı** metin kutusuna bir ad girin ve ardından **Ekle** düğmesi.  
   
      App.config adlı bir dosyayı projenize eklenir.  
   

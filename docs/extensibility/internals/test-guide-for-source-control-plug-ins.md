@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf16f79401f4b8df3bafff0f92963510110dff1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061040"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Kaynak Denetimi Eklentileri için Test Kılavuzu
 Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlanmaktadır [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Test en yaygın alanlara ek olarak bazı sorunlu olabilecek daha karmaşık alanları kapsamlı bir bakış sağlanır. Bu genel bakış, test çalışmalarının kapsamlı bir liste olarak tasarlanmamıştır.
@@ -51,55 +51,55 @@ Bu bölümde, kaynak denetimi eklentisi ile test etmek için yönergeler sağlan
 
 ## <a name="test-areas-covered-in-this-section"></a>Bu bölümde yer alan test alanlarını
 
--   [Test alanı 1: / Açık kaynak denetiminden Ekle](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Test alanı 1: / Açık kaynak denetiminden Ekle](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    -   Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle
+    - Büyük/küçük harf 1a: Kaynak Denetimine Çözüm Ekle
 
-    -   Büyük/küçük harf 1b: Açık çözüm kaynak denetimi
+    - Büyük/küçük harf 1b: Açık çözüm kaynak denetimi
 
-    -   Durum 1c: Kaynak denetiminden çözüm ekleyin
+    - Durum 1c: Kaynak denetiminden çözüm ekleyin
 
--   [Test alanı 2: Kaynak denetiminden alma](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Test alanı 2: Kaynak denetiminden alma](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
--   [Test alanı 3: Kullanıma almayı geri al / gözden geçirin](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Test alanı 3: Kullanıma almayı geri al / gözden geçirin](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    -   3. durum: Kullanıma almayı geri al / gözden geçirin
+    - 3. durum: Kullanıma almayı geri al / gözden geçirin
 
-    -   Büyük/küçük harf 3a: Kullanıma Al
+    - Büyük/küçük harf 3a: Kullanıma Al
 
-    -   Büyük/küçük harf 3b: Bağlantısı kesilen kullanıma alma
+    - Büyük/küçük harf 3b: Bağlantısı kesilen kullanıma alma
 
-    -   Durum 3c: Sorgu düzenleme/sorgu kaydetme (QEQS)
+    - Durum 3c: Sorgu düzenleme/sorgu kaydetme (QEQS)
 
-    -   Case 3d: Sessiz kullanıma alma
+    - Case 3d: Sessiz kullanıma alma
 
-    -   Büyük/küçük harf 3e: Kullanıma almayı geri al
+    - Büyük/küçük harf 3e: Kullanıma almayı geri al
 
--   [Test alanı 4: Teslim etme](../../extensibility/internals/test-area-4-check-in.md)
+- [Test alanı 4: Teslim etme](../../extensibility/internals/test-area-4-check-in.md)
 
-    -   Büyük/küçük harf 4a: Değiştirilen öğeler
+    - Büyük/küçük harf 4a: Değiştirilen öğeler
 
-    -   Büyük/küçük harf 4b: Dosya ekleme
+    - Büyük/küçük harf 4b: Dosya ekleme
 
-    -   4c. durum: Ekleme projeleri
+    - 4c. durum: Ekleme projeleri
 
--   [Test alanı 5: Kaynak denetimini Değiştir](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Test alanı 5: Kaynak denetimini Değiştir](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    -   Büyük/küçük harf 5a: bağlama
+    - Büyük/küçük harf 5a: bağlama
 
-    -   Büyük/küçük harf 5b: Bağlamayı Kaldır
+    - Büyük/küçük harf 5b: Bağlamayı Kaldır
 
-    -   Durum 5c: yeniden bağlayın
+    - Durum 5c: yeniden bağlayın
 
--   [Test alanı 6: DELETE](../../extensibility/internals/test-area-6-delete.md)
+- [Test alanı 6: DELETE](../../extensibility/internals/test-area-6-delete.md)
 
--   [Test alanı 7: Paylaş](../../extensibility/internals/test-area-7-share.md)
+- [Test alanı 7: Paylaş](../../extensibility/internals/test-area-7-share.md)
 
--   [Test alanı 8: Eklenti değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Test alanı 8: Eklenti değiştirme](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    -   Büyük/küçük harf 8a: Otomatik değiştirme
+    - Büyük/küçük harf 8a: Otomatik değiştirme
 
-    -   Büyük/küçük harf 8b: Çözüm tabanlı Değiştir
+    - Büyük/küçük harf 8b: Çözüm tabanlı Değiştir
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Kaynak Denetimi Eklentileri](../../extensibility/source-control-plug-ins.md)

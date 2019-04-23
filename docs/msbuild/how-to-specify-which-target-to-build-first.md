@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa6e2fdcbca0a434af044b842cf2b4ece10c8ef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046571"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Nasıl yapılır: İlk olarak oluşturmak için hangi hedef belirtin
 Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluşturulduğunu tanımlayan öğeler. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Altyapısı yapılar ilk proje dosyası içermedikçe bulur ve tüm bağımlılıkları, proje bir `DefaultTargets` öznitelik, bir `InitialTargets` özniteliği veya bir hedef belirtilen komut satırını kullanarak **- Hedef** geçin.
@@ -35,7 +35,7 @@ Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluş
 
 #### <a name="to-specify-more-than-one-initial-target"></a>Birden fazla ilk hedef belirtmek için
 
--   İçinde noktalı virgülle ayrılmış başlangıç hedefleri listesinde `InitialTargets` özniteliği `Project` öğesi. Örneğin, çalıştırılacak `Clean` hedef ve ardından `Compile` hedef, yazın:
+- İçinde noktalı virgülle ayrılmış başlangıç hedefleri listesinde `InitialTargets` özniteliği `Project` öğesi. Örneğin, çalıştırılacak `Clean` hedef ve ardından `Compile` hedef, yazın:
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,7 +52,7 @@ Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluş
 
 #### <a name="to-specify-more-than-one-default-target"></a>Birden fazla varsayılan hedef belirtmek için
 
--   Varsayılan hedefler olarak noktalı virgülle ayrılmış liste `DefaultTargets` özniteliği `Project` öğesi. Örneğin, çalıştırılacak `Clean` hedef ve ardından `Compile` hedef, yazın:
+- Varsayılan hedefler olarak noktalı virgülle ayrılmış liste `DefaultTargets` özniteliği `Project` öğesi. Örneğin, çalıştırılacak `Clean` hedef ve ardından `Compile` hedef, yazın:
 
      `<Project DefaultTargets="Clean;Compile">`
 
@@ -61,13 +61,13 @@ Bir veya daha fazla proje dosyasını içerebilir `Target` projenin nasıl oluş
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Varsayılan hedef dışında bir hedef ilk kullanmak için
 
--   Hedef olarak ilk kullanarak hedef belirtin **-hedef** komut satırı anahtarı. Örneğin:
+- Hedef olarak ilk kullanarak hedef belirtin **-hedef** komut satırı anahtarı. Örneğin:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Varsayılan hedefler dışında çeşitli hedeflere ilk kullanmak için
 
--   Noktalı virgül veya kullanarak, virgülle ayrılmış hedefleri listesinde **-hedef** komut satırı anahtarı. Örneğin:
+- Noktalı virgül veya kullanarak, virgülle ayrılmış hedefleri listesinde **-hedef** komut satırı anahtarı. Örneğin:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

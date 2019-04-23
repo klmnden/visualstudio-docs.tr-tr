@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040565"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>İzlenecek yol: Görselle basit bir uygulama oluşturma C# veya Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 > [!NOTE]
 >  Bu izlenecek yol, Visual Studio Prosessional sürümünü temel almaktadır ve bu sürüm, bu izlenecek yol için projeyi oluştururken temel olarak kullanacağınız WPF Uygulaması şablonunu sunar. Windows Masaüstü için Visual Studio Express sürümü de bu şablonu sağlar, ancak Windows için Visual Studio Express ve Web için Visual Studio Express sağlamaz. Visual Studio Express için Windows kullanımı hakkında tanıtıcı bilgiler için bkz [Windows Store uygulamaları için Geliştirici Merkezi](http://msdn.microsoft.com/windows/apps/br229519). Web için Visual Studio Express kullanımı hakkında tanıtıcı bilgiler için bkz [ASP.NET ile çalışmaya başlama](http://www.asp.net/get-started). Ayrıca, Visual Studio sürümünüz ve kullandığınız ayarlar, kullanıcı arabiriminin bazı öğelerinin adlarını ve bulundukları yerleri belirler. Bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> IDE'yi yapılandırma  
+## <a name="BKMK_ConfigureIDE"></a> IDE'yi yapılandırma  
  Visual Studio'yu ilk kez başlattığınızda, Visual Studio, bir Microsoft hizmeti hesabı (MSA oturum), oturum ister [Visual Studio'ya oturum](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Oturum açın ve gerekmez, daha sonra yapın.  
   
  Visual Studio başlatma, sonraki bir dizi önceden tanımlı bir özelleştirmeler grubunu IDE'ye uygulayan ayarlar bileşimini seçmelisiniz. Her bir ayarlar bileşimi, uygulamaları geliştirmenizi kolaylaştırmak amacıyla tasarlanmıştır.  
@@ -69,7 +69,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
    Bu kılavuzda kalan resimler için kullanılan renk teması açık temadır. IDE'yi özelleştirme hakkında daha fazla bilgi için bkz. [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Basit bir uygulama oluşturma  
+## <a name="BKMK_CreateApp"></a> Basit bir uygulama oluşturma  
   
 ### <a name="create-the-project"></a>Projeyi oluşturma  
  Visual Studio'da bir uygulama oluştururken önce bir proje ve bir çözüm oluşturursunuz. Bu örnekte, bir Windows Presentation Foundation (WPF) projesi oluşturacaksınız.  
@@ -199,7 +199,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
 ##### <a name="add-code-to-display-message-boxes"></a>İleti kutularını görüntülemek için kod ekleme  
   
-1.  Tasarım yüzeyinde, çift **görünen** düğmesi.  
+1. Tasarım yüzeyinde, çift **görünen** düğmesi.  
   
      Greetings.xaml.vb veya Greetings.xaml.cs açılır ve imleç Button_Click olayının içinde olur. (Büyük olasılıkla değil tasarım yüzeyinde RadioButton denetimlerinin seçer ve bunları yeniden adlandırabilir yapıştırılan koda herhangi bir adı altında bir kırmızı dalgalı varsa,) gibi bir tıklama olayı işleyicisi de ekleyebilirsiniz:  
   
@@ -220,7 +220,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
     }  
     ```  
   
-2.  Visual Basic için şu kodu girin:  
+2. Visual Basic için şu kodu girin:  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
     }  
     ```  
   
-3.  Uygulamayı kaydedin.  
+3. Uygulamayı kaydedin.  
   
-##  <a name="BKMK_DebugTest"></a> Hata ayıklama ve uygulamayı test etme  
+## <a name="BKMK_DebugTest"></a> Hata ayıklama ve uygulamayı test etme  
  Şimdi, hatalara bakmak için uygulamadan hata ayıklayacak ve her iki ileti kutusunun da doğru görünüp görünmediğini test edeceksiniz. Aşağıdaki yönergeler size nasıl oluşturacağınızı ve hata ayıklayıcıyı başlatma, ancak daha sonra okuyabilir [bir WPF uygulaması (WPF) oluşturma](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) ve [hata ayıklama WPF](../debugger/debugging-wpf.md) daha fazla bilgi için.  
   
 ### <a name="find-and-fix-errors"></a>Hataları bulma ve düzeltme  
@@ -280,29 +280,29 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
   
 ##### <a name="to-add-breakpoints"></a>Kesme noktaları eklemek için  
   
-1.  Greetings.xaml.vb veya Greetings.xaml.cs açın ve aşağıdaki satırı seçin: `MessageBox.Show("Hello.")`  
+1. Greetings.xaml.vb veya Greetings.xaml.cs açın ve aşağıdaki satırı seçin: `MessageBox.Show("Hello.")`  
   
-2.  Bir kesme noktası menüden seçerek ekleyin **hata ayıklama**, ardından **iki durumlu kesme noktası**.  
+2. Bir kesme noktası menüden seçerek ekleyin **hata ayıklama**, ardından **iki durumlu kesme noktası**.  
   
      ![Kesme noktası komutu hata ayıklama menüsünden geçiş](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE ToggleBreakpoint")  
   
      Düzenleyici penceresinin en sol kenar boşluğunda, kod satırının yanında kırmızı bir daire görünür.  
   
-3.  Aşağıdaki satırı seçin: `MessageBox.Show("Goodbye.")`.  
+3. Aşağıdaki satırı seçin: `MessageBox.Show("Goodbye.")`.  
   
-4.  Bir kesme noktası eklemek için F9 tuşuna basın ve ardından hata ayıklamayı başlatmak için F5 tuşuna basın.  
+4. Bir kesme noktası eklemek için F9 tuşuna basın ve ardından hata ayıklamayı başlatmak için F5 tuşuna basın.  
   
-5.  İçinde **Greetings** penceresinde seçin **Hello** radyo düğmesini ve ardından **görünen** düğmesi.  
+5. İçinde **Greetings** penceresinde seçin **Hello** radyo düğmesini ve ardından **görünen** düğmesi.  
   
      Satır `MessageBox.Show("Hello.")` sarı renkle vurgulanır. IDE, Otolar, Yereller ve İzle altındaki windows birlikte sol tarafa yerleşir ve çağrı yığını, kesme noktaları, komut, anlık ve çıkış pencereleri birlikte sağ tarafta yerleşir.  
   
-6.  Menü çubuğunda, **hata ayıklama**, **Step Out**.  
+6. Menü çubuğunda, **hata ayıklama**, **Step Out**.  
   
      Uygulama yürütmeyi devam ettirir ve "Merhaba" sözcüğünü içeren bir ileti kutusu görünür.  
   
-7.  Seçin **Tamam** ileti kutusunu kapatmak için düğme.  
+7. Seçin **Tamam** ileti kutusunu kapatmak için düğme.  
   
-8.  İçinde **Greetings** penceresinde seçin **güle güle** radyo düğmesini ve ardından **görünen** düğmesi.  
+8. İçinde **Greetings** penceresinde seçin **güle güle** radyo düğmesini ve ardından **görünen** düğmesi.  
   
      Satır `MessageBox.Show("Goodbye.")` sarı renkle vurgulanır.  
   

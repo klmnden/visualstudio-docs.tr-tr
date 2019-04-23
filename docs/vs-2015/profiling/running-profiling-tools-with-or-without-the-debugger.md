@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054072"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>İle veya hata ayıklayıcı olmadan profil oluşturma araçları çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Sunan Visual Studio artık, bir performans, tercih ettiğiniz araçları, bazıl
   
  Ne tür bir aracı amacınız için doğru olduğuna karar vermenize yardımcı olabilecek bazı sorular şunlardır:  
   
-1.  Sorun uygulama geliştirildiği bilgisayardakinden ya da bu bulundu, yayımlanmış bir sürüm bulundu?  
+1. Sorun uygulama geliştirildiği bilgisayardakinden ya da bu bulundu, yayımlanmış bir sürüm bulundu?  
   
      Geliştirme sırasında ilgilendiğiniz sorun bulunursa, bir yayın performans araçları çalıştırdığınız gerekmez. Bir sürümde bulunmazsa, bir yayın yapılandırmasına sahip sorunu yeniden oluşturun ve sonra hata ayıklayıcı daha fazla araştırma için yardımcı olup olmadığına karar gerekir.  
   
-2.  CPU-yoğun tarafından neden sorun işliyor?  
+2. CPU-yoğun tarafından neden sorun işliyor?  
   
      Performans araçları ile veya hata ayıklayıcı olmadan çalışan çok fark yaratmak olmaması gerekir böylece birçok dosya g/ç veya ağ yanıtlama, gibi dış performans sorunları nedeniyle sorunlardır. Sorunu nedeniyle CPU yoğunluklu çağrıdır, sürüm ve hata ayıklama yapılandırmaları arasındaki fark önemli olabilir ve büyük olasılıkla gereken hata ayıklayıcı ile tümleşik araçları kullanarak önce sorun yayın yapıda var olup olmadığını denetleyin  
   
-3.  Tam olarak performansını ölçmek ihtiyacınız ya da yaklaşık bir sayı kabul edilebilirdir?  
+3. Tam olarak performansını ölçmek ihtiyacınız ya da yaklaşık bir sayı kabul edilebilirdir?  
   
      Yapılar olmaması sürüm yapıları sağlayan bazı iyileştirmeler hata ayıklamak için örneğin satır içi işlev çağrıları ve sabitler, ayıklama kullanılmayan kod yollarını ve hata ayıklayıcı tarafından kullanılan bir şekilde depolanmasını değişkenleri. (Örneğin özel durum ve modül yükleme olayları kesintiye) hata ayıklama için gereken belirli işlemler gerçekleştirdiğinden hata ayıklayıcının kendisi performans süreleri değişir. Bu nedenle performans hata ayıklayıcı ile tümleşik Araçlar doğru yalnızca milisaniye onlarca içinde sayılardır. Performans hata ayıklayıcı olmayan araçlarla yayın yapılandırmaları için daha kesin sayılardır.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verilerini topla  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Hata ayıklama sırasında profil oluşturma verilerini topla  
  Aşağıdaki bölümde, yerel olarak hata ayıklama ile ilgilidir. Bir cihaz veya uzaktan, sonraki bölümlerde hata ayıklama hata ayıklama hakkında bilgi edinebilirsiniz.  
   
 1. Açık ayıklamak istediğiniz proje ardından **hata ayıklama / hata ayıklamayı Başlat** (veya **Başlat** araç çubuğunda veya **F5**).  

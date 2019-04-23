@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b08e806db430a6e8a24f83016c27c70afd2abed3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 22a564da1de8a7f375209ff4c02236a3e2baca8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043100"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Hata: Web sunucusu kilitli ve DEBUG fiilini engelliyor
 Bir Web uygulaması veya XML Web hizmeti içine Adımlama, IIS Kilitleme aracını çalıştırın ve URLScan yüklü ve etkin olduğundan başarısız oldu. Bu durum, IIS DEBUG fiilini almasını engeller.
@@ -32,21 +32,21 @@ Bir Web uygulaması veya XML Web hizmeti içine Adımlama, IIS Kilitleme aracın
 
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>Bir Web sunucusunda yüklü URLScan ile hata ayıklamayı etkinleştirmek için
 
-1.  Urlscan.ini dosyasını bulun. Normalde, şuna benzer bir dizinde bulacaksınız:
+1. Urlscan.ini dosyasını bulun. Normalde, şuna benzer bir dizinde bulacaksınız:
 
      C:\WINNT\System32\Inetsrv\urlscan
 
-2.  Dosyanın bir kopyasını oluşturun ve adlandırın **Urlscan.old**.
+2. Dosyanın bir kopyasını oluşturun ve adlandırın **Urlscan.old**.
 
-3.  Özgün kopyasını Urlscan.ini dosyasını Not Defteri'nde veya tercih ettiğiniz metin düzenleyiciyi kullanarak açın.
+3. Özgün kopyasını Urlscan.ini dosyasını Not Defteri'nde veya tercih ettiğiniz metin düzenleyiciyi kullanarak açın.
 
-4.  URLScan.ini içinde [AllowVerbs] bölümünü bulun. Hata ayıklama [AllowVerbs] bölümüne ekleyin. Görürseniz; [AllowVerbs] bölümünde hata AYIKLAMAK için noktalı fiili açıklamasını kaldırın.
+4. URLScan.ini içinde [AllowVerbs] bölümünü bulun. Hata ayıklama [AllowVerbs] bölümüne ekleyin. Görürseniz; [AllowVerbs] bölümünde hata AYIKLAMAK için noktalı fiili açıklamasını kaldırın.
 
-5.  [DenyVerbs] bölümünü bulun. Hata ayıklama [DenyVerbs] bölümünde görünüyorsa, bunu kaldırın.
+5. [DenyVerbs] bölümünü bulun. Hata ayıklama [DenyVerbs] bölümünde görünüyorsa, bunu kaldırın.
 
-6.  Dosyayı kaydedin.
+6. Dosyayı kaydedin.
 
-7.  Sunucuyu yeniden başlatın veya IIS'yi yeniden başlatın.
+7. Sunucuyu yeniden başlatın veya IIS'yi yeniden başlatın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

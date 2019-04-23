@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038414"
 ---
 # <a name="use-models-in-your-development-process"></a>Geliştirme sürecinizde modelleri kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yard
   
  Normalde modelleri ile birlikte kullanılan belirtimi diğer yönleri arasında şunlar yer alır. Ölçek ve projenizin stili bağlı olarak birkaç bu görünüşler kullanın veya herhangi kullanmamak:  
   
--   Kullanıcı hikayeleri. Kullanıcı hikayesi kullanıcıların ve diğer proje katılımcıları projenin yineleme birinde teslim sistemin davranışı durumunun ele kısa bir açıklamasıdır. "Müşteri şunları yapabilecek..." tipik bir kullanıcı hikayesi başlar. Kullanıcı hikayesi, kullanım örnekleri grubu yapabilecek veya kullanım örneklerinin önceden geliştirilen uzantıları tanımlayabilirsiniz. Tanımlama veya kullanım örneklerinin genişletme kullanıcı hikayesinin daha anlaşılır hale getirmeye yardımcı olur.  
+- Kullanıcı hikayeleri. Kullanıcı hikayesi kullanıcıların ve diğer proje katılımcıları projenin yineleme birinde teslim sistemin davranışı durumunun ele kısa bir açıklamasıdır. "Müşteri şunları yapabilecek..." tipik bir kullanıcı hikayesi başlar. Kullanıcı hikayesi, kullanım örnekleri grubu yapabilecek veya kullanım örneklerinin önceden geliştirilen uzantıları tanımlayabilirsiniz. Tanımlama veya kullanım örneklerinin genişletme kullanıcı hikayesinin daha anlaşılır hale getirmeye yardımcı olur.  
   
--   Değişiklik istekleri. Daha resmi proje içinde bir değişiklik isteğinin, Çevik bir proje içinde bir kullanıcı hikayesini çok benzer. Çevik bir yaklaşım, önceki yinelemelerde geliştirildiği bilgisayardakinden için tüm gereksinimleri değiştikçe değerlendirir.  
+- Değişiklik istekleri. Daha resmi proje içinde bir değişiklik isteğinin, Çevik bir proje içinde bir kullanıcı hikayesini çok benzer. Çevik bir yaklaşım, önceki yinelemelerde geliştirildiği bilgisayardakinden için tüm gereksinimleri değiştikçe değerlendirir.  
   
--   Kullanım örneği açıklaması. Kullanım örneği, bir kullanıcı belirli bir hedefe ulaşmak için sistemi ile etkileşime giren bir yolunu temsil eder. Tam bir açıklaması, olaylar ve olağanüstü sonuçlar ana ve alternatif dizileri, hedef içerir. Bir kullanım durumu diyagramı özetlemenize ve kullanım örneklerine genel bakış sağlayan yardımcı olur.  
+- Kullanım örneği açıklaması. Kullanım örneği, bir kullanıcı belirli bir hedefe ulaşmak için sistemi ile etkileşime giren bir yolunu temsil eder. Tam bir açıklaması, olaylar ve olağanüstü sonuçlar ana ve alternatif dizileri, hedef içerir. Bir kullanım durumu diyagramı özetlemenize ve kullanım örneklerine genel bakış sağlayan yardımcı olur.  
   
--   Senaryo. Bir sistem, kullanıcıların ve diğer sistemler için birlikte nasıl değer proje katılımcılarına sağlamak çalıştığını gösteren bir olay dizisi oldukça ayrıntılı bir açıklaması bir senaryodur. Bu kullanıcı arabiriminin bir slide show veya kullanıcı arabiriminin bir prototip biçiminde. Bir kullanım örneği veya kullanım örneklerinin bir dizisini tanımlayabilirsiniz.  
+- Senaryo. Bir sistem, kullanıcıların ve diğer sistemler için birlikte nasıl değer proje katılımcılarına sağlamak çalıştığını gösteren bir olay dizisi oldukça ayrıntılı bir açıklaması bir senaryodur. Bu kullanıcı arabiriminin bir slide show veya kullanıcı arabiriminin bir prototip biçiminde. Bir kullanım örneği veya kullanım örneklerinin bir dizisini tanımlayabilirsiniz.  
   
--   Sözlük. Projenin gereksinimleri sözlüğü, müşteriler kendi dünya tartışmak kelimeleri açıklar. Kullanıcı arabirimi ve gereksinim modelleri de bu koşulları kullanmalısınız. Bir sınıf diyagramı, çoğu bu terimlerin arasındaki ilişkiler açıklanmasına yardımcı olabilir. Sözlük ve diyagramları oluşturma yalnızca kullanıcılar ve geliştiriciler arasında anlamaları azaltır, ancak artırarak yanlış anlaşılmaların farklı iş hissedarları arasında de neredeyse her zaman kullanıma sunar.  
+- Sözlük. Projenin gereksinimleri sözlüğü, müşteriler kendi dünya tartışmak kelimeleri açıklar. Kullanıcı arabirimi ve gereksinim modelleri de bu koşulları kullanmalısınız. Bir sınıf diyagramı, çoğu bu terimlerin arasındaki ilişkiler açıklanmasına yardımcı olabilir. Sözlük ve diyagramları oluşturma yalnızca kullanıcılar ve geliştiriciler arasında anlamaları azaltır, ancak artırarak yanlış anlaşılmaların farklı iş hissedarları arasında de neredeyse her zaman kullanıma sunar.  
   
--   İş kuralları. Birçok iş kuralları, ilişkileri ve gereksinimleri sınıfı modeldeki öznitelik sabit kısıtlama olarak ve sıralı diyagramlar üzerinde kısıtlama olarak belirtilebilir.  
+- İş kuralları. Birçok iş kuralları, ilişkileri ve gereksinimleri sınıfı modeldeki öznitelik sabit kısıtlama olarak ve sıralı diyagramlar üzerinde kısıtlama olarak belirtilebilir.  
   
--   Üst düzey tasarım. Başlıca parçaları ve bunlar birbirine nasıl uyduğunu açıklar. Bileşen, dizisi ve arabirimi diyagramları bir üst düzey tasarım önemli bir parçasıdır.  
+- Üst düzey tasarım. Başlıca parçaları ve bunlar birbirine nasıl uyduğunu açıklar. Bileşen, dizisi ve arabirimi diyagramları bir üst düzey tasarım önemli bir parçasıdır.  
   
--   Tasarım desenleri. Sistemin farklı bölümlerinin arasında paylaşılan Tasarım Kuralları açıklar.  
+- Tasarım desenleri. Sistemin farklı bölümlerinin arasında paylaşılan Tasarım Kuralları açıklar.  
   
--   Sınama belirtimleri. Test betikleri ve test kodu tasarımlarında test adımları dizileri tanımlamak için etkinlik ve sıra diyagramları iyi kullanımını yapabilirsiniz. Böylece gereksinimleri değiştiğinde bunlar kolayca değiştirilebilir sistem testleri gereksinimleri modeli açısından ifade edilmelidir.  
+- Sınama belirtimleri. Test betikleri ve test kodu tasarımlarında test adımları dizileri tanımlamak için etkinlik ve sıra diyagramları iyi kullanımını yapabilirsiniz. Böylece gereksinimleri değiştiğinde bunlar kolayca değiştirilebilir sistem testleri gereksinimleri modeli açısından ifade edilmelidir.  
   
--   Proje planı. Proje planı veya biriktirme listesine her bir özelliğin ne zaman teslim edilecek tanımlar. Her özellik, çalışmaları ve iş kuralları uygulayan veya genişletir kullandıklarınız belirterek tanımlayabilirsiniz. İş kuralları ve kullanım durumları için plan doğrudan ya da başvurabilir veya bir özellikler kümesi içinde ayrı bir belge tanımlayın ve özellik başlıkları plandaki kullanın.  
+- Proje planı. Proje planı veya biriktirme listesine her bir özelliğin ne zaman teslim edilecek tanımlar. Her özellik, çalışmaları ve iş kuralları uygulayan veya genişletir kullandıklarınız belirterek tanımlayabilirsiniz. İş kuralları ve kullanım durumları için plan doğrudan ya da başvurabilir veya bir özellikler kümesi içinde ayrı bir belge tanımlayın ve özellik başlıkları plandaki kullanın.  
   
 ### <a name="use-models-in-iteration-planning"></a>Yineleme planlamasında modelleri kullanma  
  Tüm projeler, ölçek ve kuruluşun farklı olsa da, tipik bir proje yinelemesi iki ve altı hafta arasında bir dizi olarak sunulması planlanmaktadır. Erken yinelemeler kapsam ve sonraki yinelemeler için planları ayarlamak için kullanılacak görüşleri izin vermek için yeterli yinelemeler önemlidir.  
@@ -80,28 +80,28 @@ Visual Studio'da anlamanıza ve sistem, uygulama veya bileşen değiştirme yard
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Her yineleme yaklaşımlar odak keskinleştirin  
  Her yineleme yaklaştığında, yinelemenin sonunda teslim edilecek nedir tanımlamaya yardımcı olmak için modelleri kullanır.  
   
--   Erken yinelemeler ayrıntılı her şeyi model yok. İlk yinelemeyi kullanıcı sözlüğündeki ana öğeler için bir sınıf diyagramı oluşturun, önemli kullanım örneği diyagramı çizme ve ana bileşenleri diyagramı çizme. Daha sonra projede ayrıntı değişeceği ince ayrıntılı olarak bunlardan birine tanımlamaz. Bu modelde tanımlanan koşullara özellikleri veya kullanıcı hikayelerini listesini oluşturmak için kullanın. Özellikleri yaklaşık proje boyunca tahmini iş yükünü dengelemek için yinelemelere atayabilirsiniz. Bu atamaları, daha sonra projeyi değiştirir.  
+- Erken yinelemeler ayrıntılı her şeyi model yok. İlk yinelemeyi kullanıcı sözlüğündeki ana öğeler için bir sınıf diyagramı oluşturun, önemli kullanım örneği diyagramı çizme ve ana bileşenleri diyagramı çizme. Daha sonra projede ayrıntı değişeceği ince ayrıntılı olarak bunlardan birine tanımlamaz. Bu modelde tanımlanan koşullara özellikleri veya kullanıcı hikayelerini listesini oluşturmak için kullanın. Özellikleri yaklaşık proje boyunca tahmini iş yükünü dengelemek için yinelemelere atayabilirsiniz. Bu atamaları, daha sonra projeyi değiştirir.  
   
--   En önemli kullanım örneklerini Basitleştirilmiş sürümleri erken bir yineleme uygulamak bu seçeneği deneyin. Genişletme sonraki yinelemelerde bu kullanım örnekleri. Bu yaklaşım, özel olarak gereksinimler eksiktir veya mimari hakkında herhangi bir şey yapmak için çok geç projesinde keşfetme riskini azaltmaya yardımcı olur.  
+- En önemli kullanım örneklerini Basitleştirilmiş sürümleri erken bir yineleme uygulamak bu seçeneği deneyin. Genişletme sonraki yinelemelerde bu kullanım örnekleri. Bu yaklaşım, özel olarak gereksinimler eksiktir veya mimari hakkında herhangi bir şey yapmak için çok geç projesinde keşfetme riskini azaltmaya yardımcı olur.  
   
--   Her yinelemenin sonuna, ayrıntılı olarak sonraki yinelemesine geliştirilen kullanıcı hikayeleri ve gereksinimlerini tanımlamak için gereksinimler Atölyesi tutun. Kullanıcılar ve öncelikler, yanı sıra geliştiricilere ve sistem test edicilere karar verebilirsiniz iş hissedarlar davet edin. 2 haftalık yineleme gereksinimlerini tanımlamak üç saat bekleyin.  
+- Her yinelemenin sonuna, ayrıntılı olarak sonraki yinelemesine geliştirilen kullanıcı hikayeleri ve gereksinimlerini tanımlamak için gereksinimler Atölyesi tutun. Kullanıcılar ve öncelikler, yanı sıra geliştiricilere ve sistem test edicilere karar verebilirsiniz iş hissedarlar davet edin. 2 haftalık yineleme gereksinimlerini tanımlamak üç saat bekleyin.  
   
--   Atölyesi amacı, sonraki yineleme sonunda elde edilecek kabul herkese yöneliktir. Modelleri araçlarından birini gereksinimleri belirlemenize yardımcı olması için kullanın. Atölyesi çıktısını bir yineleme biriktirme listesi olduğu: geliştirme listesi diğer bir deyişle, görevlerinin [!INCLUDE[esprfound](../includes/esprfound-md.md)] ve test paketleri [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- Atölyesi amacı, sonraki yineleme sonunda elde edilecek kabul herkese yöneliktir. Modelleri araçlarından birini gereksinimleri belirlemenize yardımcı olması için kullanın. Atölyesi çıktısını bir yineleme biriktirme listesi olduğu: geliştirme listesi diğer bir deyişle, görevlerinin [!INCLUDE[esprfound](../includes/esprfound-md.md)] ve test paketleri [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   Geliştirme görevlerini tahminleri belirlemek yalnızca gereksinim duymanıza kadar tasarımı gereksinimlerini atölyeyi tartışın. Aksi takdirde, kullanıcıların doğrudan deneyebileceği sistemi davranışını tartışmaya tutun. Gereksinimler modelini mimari modelden ayrı tutun.  
+- Geliştirme görevlerini tahminleri belirlemek yalnızca gereksinim duymanıza kadar tasarımı gereksinimlerini atölyeyi tartışın. Aksi takdirde, kullanıcıların doğrudan deneyebileceği sistemi davranışını tartışmaya tutun. Gereksinimler modelini mimari modelden ayrı tutun.  
   
--   Yedeğin proje katılımcıları, genellikle sizden bazı yönergeler içeren bir UML diyagramları anlama herhangi bir sorun vardır.  
+- Yedeğin proje katılımcıları, genellikle sizden bazı yönergeler içeren bir UML diyagramları anlama herhangi bir sorun vardır.  
   
 #### <a name="link-model-to-work-items"></a>İş öğelerine bağlantı modeli  
  Gereksinimleri Atölyesi sonra gereksinimler modelini ayrıntılarını özenli ve model geliştirme görevlerine bağlayın. İş öğelerini bağlayarak bunu yapabilirsiniz [!INCLUDE[esprfound](../includes/esprfound-md.md)] modeldeki öğeleri. Bunu yapma hakkında bilgi için bkz: [bağlantı model öğelerini ve iş öğeleri](../modeling/link-model-elements-and-work-items.md).  
   
  Herhangi bir öğe iş öğelerine bağlayabilirsiniz, ancak en yararlı öğeler aşağıdaki gibidir:  
   
--   Kullanım örnekleri. Bir kullanım durumu, uygulama geliştirme görevleri bağlayabilirsiniz.  
+- Kullanım örnekleri. Bir kullanım durumu, uygulama geliştirme görevleri bağlayabilirsiniz.  
   
--   Uzantılar büyük/küçük harf kullanın. Yalnızca bir kullanım örneği tek bir yönüne yinelemeyi uygulanacak bir veya daha fazla uzantıları ile birlikte temel bir kullanım örneği içine ayırabilirsiniz. «Genişletmek» ilişki temel çalışmasıyla bağlantılı kullanım örnekleri uzantılarıdır. Kullanım örneği uzantıları hakkında daha fazla bilgi için bkz. [UML örneği diyagramları kullanın: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
+- Uzantılar büyük/küçük harf kullanın. Yalnızca bir kullanım örneği tek bir yönüne yinelemeyi uygulanacak bir veya daha fazla uzantıları ile birlikte temel bir kullanım örneği içine ayırabilirsiniz. «Genişletmek» ilişki temel çalışmasıyla bağlantılı kullanım örnekleri uzantılarıdır. Kullanım örneği uzantıları hakkında daha fazla bilgi için bkz. [UML örneği diyagramları kullanın: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
   
--   İş kuralları veya hizmet gereksinimlerinin kalitesini açıklayan yorumlar. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
+- İş kuralları veya hizmet gereksinimlerinin kalitesini açıklayan yorumlar. Daha fazla bilgi için [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Testler için bağlantı modeli  
  Kabul testleri tasarım kılavuzu için gereksinimler modelini kullanın. Bu testleri eşzamanlı geliştirme işi oluşturun.  

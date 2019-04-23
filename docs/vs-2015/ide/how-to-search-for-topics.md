@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054644"
 ---
 # <a name="how-to-search-for-topics"></a>Nasıl yapılır: Konu Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,27 +23,27 @@ Belirli bir sözcüğün içeren tüm konuları bulmak için tam metin arama öz
   
 ### <a name="to-open-the-search-tab"></a>Arama sekmesi açın  
   
--   Seçin **arama** sekmesinde Yardım Görüntüleyici penceresinde veya Ctrl seçin + E anahtarları.  
+- Seçin **arama** sekmesinde Yardım Görüntüleyici penceresinde veya Ctrl seçin + E anahtarları.  
   
 ### <a name="to-perform-a-full-text-search"></a>Tam metin araması gerçekleştirmek için  
   
-1.  Arama kutusuna bulmak istediğiniz sözcüğü yazın.  
+1. Arama kutusuna bulmak istediğiniz sözcüğü yazın.  
   
-2.  Arama sorgusunda, varsa hangi mantıksal ve Gelişmiş arama işleçleri, aramayı uygulamak için belirtin. Tüm kullanılabilir Yardım aranacak işleçleri kullanmayın.  
+2. Arama sorgusunda, varsa hangi mantıksal ve Gelişmiş arama işleçleri, aramayı uygulamak için belirtin. Tüm kullanılabilir Yardım aranacak işleçleri kullanmayın.  
   
     > [!NOTE]
     >  İçinde **Görüntüleyici seçenekleri** iletişim kutusu, bir saat ve birincil yerel ayarınız İngilizce değilse, İngilizce içeriği dahil edilip edilmeyeceğini görüntülemek için arama sonuçlarının maksimum sayısı gibi ek tercihleri belirtebilirsiniz.  
   
-3.  Enter tuşunu seçin.  
+3. Enter tuşunu seçin.  
   
      Bir arama varsayılan olarak en fazla 200 isabetli okuma sayısının döndürür ve bunları arama sonuçlarını alanında görüntüler.  
   
      Ek sürüm bilgileri için her sonuç içeriğe bağlı olarak görünebilir.  
   
-4.  Bir konu görüntülemek için sonuçlar listesinden başlığını seçin.  
+4. Bir konu görüntülemek için sonuçlar listesinden başlığını seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tam metin arama ipuçları](../ide/full-text-search-tips.md)   
  [Arama ifadelerindeki mantıksal işleçler](../ide/logical-operators-in-search-expressions.md)   
  [Arama işleçlerini arama ifadelerindeki Gelişmiş](../ide/advanced-search-operators-in-search-expressions.md)   
- [Nasıl yapılır: Arama sonuçlarını özelleştirme](../ide/how-to-customize-search-results.md)
+ [Nasıl yapılır: Arama Sonuçlarını Özelleştirme](../ide/how-to-customize-search-results.md)

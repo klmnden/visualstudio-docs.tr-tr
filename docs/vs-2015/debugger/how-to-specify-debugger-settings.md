@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051462"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Nasıl yapılır: Hata ayıklayıcısı ayarlarını belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "54799129"
   
 ### <a name="to-set-debugger-options"></a>Hata ayıklayıcı seçeneklerini ayarlamak için  
   
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
-2.  İçinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** klasör.  
+2. İçinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** klasör.  
   
-3.  İçinde **hata ayıklama** klasör seçenekleri kategorisini seçin.  
+3. İçinde **hata ayıklama** klasör seçenekleri kategorisini seçin.  
   
      En yaygın seçenekler bulunur **genel** kategorisi. Daha fazla bilgi için [genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md).  
   
-4.  Seçin veya istenen seçeneği veya seçenekleri temizleyin. Seçenekler hakkında Yardım almak için F1 tuşuna basın.  
+4. Seçin veya istenen seçeneği veya seçenekleri temizleyin. Seçenekler hakkında Yardım almak için F1 tuşuna basın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel, hata ayıklama, Seçenekler iletişim kutusu](../debugger/general-debugging-options-dialog-box.md)   

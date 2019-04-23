@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045804"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Parametreleri Kaldır Yeniden Düzenlemesi (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54775201"
   
 ### <a name="to-remove-parameters"></a>Parametreleri kaldırmak için  
   
-1.  Adlı bir konsol uygulaması oluşturun `RemoveParameters`ve ardından `Program` aşağıdaki kod ile.  
+1. Adlı bir konsol uygulaması oluşturun `RemoveParameters`ve ardından `Program` aşağıdaki kod ile.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "54775201"
     }  
     ```  
   
-2.  İmleci metodunda `A`, yöntem bildiriminde veya yöntem çağrısı.  
+2. İmleci metodunda `A`, yöntem bildiriminde veya yöntem çağrısı.  
   
-3.  Gelen **yeniden düzenleme** menüsünde **parametreleri Kaldır** görüntülenecek **parametreleri Kaldır** iletişim kutusu.  
+3. Gelen **yeniden düzenleme** menüsünde **parametreleri Kaldır** görüntülenecek **parametreleri Kaldır** iletişim kutusu.  
   
      Ayrıca CTRL + R, görüntülenecek V klavye kısayolunu yazın **parametreleri Kaldır** iletişim kutusu.  
   
      Ayrıca, imleç sağ işaret **yeniden düzenleyin**ve ardından **parametreleri Kaldır** görüntülenecek **parametreleri Kaldır** iletişim kutusu.  
   
-4.  Kullanarak **parametreleri** alan, imleci getirin `int i`ve ardından **Kaldır**.  
+4. Kullanarak **parametreleri** alan, imleci getirin `int i`ve ardından **Kaldır**.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
-6.  İçinde **Değişiklikleri Önizle — Parametreleri Kaldır** iletişim kutusu, tıklayın **Uygula**.  
+6. İçinde **Değişiklikleri Önizle — Parametreleri Kaldır** iletişim kutusu, tıklayın **Uygula**.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yöntem bildiriminde veya yöntem çağrısı parametreleri kaldırabilirsiniz. Yöntem bildiriminde ya da temsilci adı imleci yerleştirin ve parametreleri Kaldır çağırın.  

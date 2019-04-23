@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702466"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042125"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Nasıl yapılır: Visual Studio uzantısını güncelleştirme
 Kullanarak, sisteminizde Visual Studio uzantısı güncelleştirebilirsiniz **Uzantılar ve güncelleştirmeler** güncelleştirilmiş sürümünü yüklemek için. Bir uzantının güncelleştirilmiş bir sürümü oluşturursanız, geldiğiniz VSIX bildirimi sürüm numarasını artırılarak güncelleştirilmiş gibi.
@@ -28,30 +28,30 @@ Kullanarak, sisteminizde Visual Studio uzantısı güncelleştirebilirsiniz **Uz
 
 ## <a name="to-update-an-extension-on-your-system"></a>Sisteminizde bir uzantı güncelleştirmek için
 
-1.  Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
+1. Üzerinde **Araçları** menüsünü tıklatın **Uzantılar ve güncelleştirmeler**.
 
-2.  Sol bölmede **güncelleştirmeleri**.
+2. Sol bölmede **güncelleştirmeleri**.
 
-3.  Orta bölmede, yüklemek istediğiniz Güncelleştirme'ye tıklayın.
+3. Orta bölmede, yüklemek istediğiniz Güncelleştirme'ye tıklayın.
 
      Uzantının güncelleştirilmiş sürüm numarası, sağ bölmede, diğer bilgileriyle birlikte görüntülenir.
 
-4.  Sağ bölmenin altında tıklatın **güncelleştirme**.
+4. Sağ bölmenin altında tıklatın **güncelleştirme**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Bir güncelleştirme uzantı yayımlamak için
 
-1.  Visual Studio'da, güncelleştirmek istediğiniz uzantısı için çözümü açın. Değişiklikleri yapın.
+1. Visual Studio'da, güncelleştirmek istediğiniz uzantısı için çözümü açın. Değişiklikleri yapın.
 
     > [!IMPORTANT]
     >  İmzalanmamış tüm kullanıcı uzantıları otomatik olarak güncelleştirilmesini değil. Her zaman uzantılarınızı imzalamanız gerekir.
 
-2.  İçinde **Çözüm Gezgini**açın *source.extension.manifest*.
+2. İçinde **Çözüm Gezgini**açın *source.extension.manifest*.
 
-3.  Bildirim Tasarımcısı'nda sayı değerini artırın **sürüm** alan.
+3. Bildirim Tasarımcısı'nda sayı değerini artırın **sürüm** alan.
 
-4.  Çözümü kaydetmek ve derleyin.
+4. Çözümü kaydetmek ve derleyin.
 
-5.  Yeni Yükleme *.vsix* dosyası (içinde * \bin\Debug\* proje klasörü) için [Visual Studio Market](https://marketplace.visualstudio.com/vs) Web sitesi.
+5. Yeni Yükleme *.vsix* dosyası (içinde * \bin\Debug\* proje klasörü) için [Visual Studio Market](https://marketplace.visualstudio.com/vs) Web sitesi.
 
      Uzantı önceki bir sürümü olan bir kullanıcı açıldığında **Uzantılar ve güncelleştirmeler**, yeni sürümü görünür **güncelleştirmeleri** aracı güncelleştirme otomatik olarak aramak için ayarlanmış olması koşuluyla, liste.
 

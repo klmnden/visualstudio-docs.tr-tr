@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045493"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument sınıfını kullanarak bir sunucu üzerinde belgeleri yönetme
   Kullanabileceğiniz `ServerDocument` sınıfını [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word ve Microsoft Office Excel yüklü değilse, belge düzeyinde özelleştirmeler, çeşitli yönlerini yönetmek için. Aşağıdaki görevleri gerçekleştirebilirsiniz:
@@ -40,7 +40,7 @@ ms.locfileid: "56630086"
 > [!NOTE]
 >  Kullanan eski bir uygulama varsa `ServerDocument` sınıfını `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), `Visual Studio Tools for Office` sistem (sürüm 3.0 çalışma zamanı), uygulamayı çalıştıran bilgisayarlarda yüklü olması gerekir. `Visual Studio 2010 Tools for Office runtime` Bu uygulamaları çalıştıramazsınız.
 
-##  <a name="CachedData"></a> Belge önbelleğe alınan verilerle çalışın
+## <a name="CachedData"></a> Belge önbelleğe alınan verilerle çalışın
  `ServerDocument` Özelleştirilmiş belgeleri veri önbelleğindeki çalışmak için kullanabileceğiniz üyeleri sınıf sağlar. Önbelleğe alınan veriler hakkında daha fazla bilgi için bkz. [veriyi önbelleğe alma](../vsto/caching-data.md) ve [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).
 
  Aşağıdaki tabloda, önbelleğe alınan verilerle çalışmak için kullanabileceğiniz üyeleri listeler.
@@ -50,7 +50,7 @@ ms.locfileid: "56630086"
 |Bir belge bir veri önbelleği olup olmadığını belirlemek için.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Yöntemi.|
 |Bir belgede önbelleğe alınan verilere erişmek için.<br /><br /> Daha fazla bilgi için [sunucudaki belgelerde verilere erişme](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Özelliği.|
 
-##  <a name="CustomizationInfo"></a> Belge özelleştirme yönetme
+## <a name="CustomizationInfo"></a> Belge özelleştirme yönetme
  Üyelerinin kullanabileceği `ServerDocument` bir belgeyle ilişkilidir özelleştirme bütünleştirilmiş kodu yönetmek için sınıf. Örneğin, böylece belge artık bir özelleştirme parçasıdır belgeden özelleştirme programlı olarak kaldırabilirsiniz.
 
  Aşağıdaki tabloda özelleştirme bütünleştirilmiş kodu yönetmek için kullanabileceğiniz üyeleri listeler.

@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057166"
 ---
 # <a name="in-source-suppression-overview"></a>Kaynak Bastırmaya Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kaynak gizleme özelliği ekleyerek yönetilen kodda Kod Analizi ihlallerini görmezden mı olduğunu **SuppressMessage** ihlallerine neden bir kod kesimlerini özniteliği. **SuppressMessage** yalnızca derleme zamanında code_analysıs derleme simge tanımlanmışsa, yönetilen kod derlemenizin IL meta verilerde bulunan conditional özniteliği bir özniteliktir.  
   
- C + +/ CLI, öznitelik eklemek için üst bilgi dosyasında CA_SUPPRESS_MESSAGE veya CA_GLOBAL_SUPPRESS_MESSAGE makrolarını kullanın.  
+ İçinde C++/CLI, öznitelik eklemek için üst bilgi dosyasında CA_SUPPRESS_MESSAGE veya CA_GLOBAL_SUPPRESS_MESSAGE makrolarını kullanın.  
   
  Kaynak gizlemeleri yayın derlemelerinde kaynak gizleme meta verileri yanlışlıkla sevkiyat önlemek için kullanmamanız gerekir. Kaynak gizleme işlem maliyetini nedeniyle, kaynak gizleme meta veriler dahil ederek uygulamanızın performansını da düşebilir.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Konum:  
   
--   **Kural kategorisi** -kategori kural tanımlanır. Kod Analizi kural kategorileri hakkında daha fazla bilgi için bkz: [yönetilen kod uyarıları için Kod Analizi](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Kural kategorisi** -kategori kural tanımlanır. Kod Analizi kural kategorileri hakkında daha fazla bilgi için bkz: [yönetilen kod uyarıları için Kod Analizi](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Kural Kimliği** -kural tanımlayıcısı. Hem bir kural tanımlayıcısı için kısa ve uzun ad desteği içerir. CAXXXX kısa adıdır; uzun CAXXXX:FriendlyTypeName adıdır.  
+- **Kural Kimliği** -kural tanımlayıcısı. Hem bir kural tanımlayıcısı için kısa ve uzun ad desteği içerir. CAXXXX kısa adıdır; uzun CAXXXX:FriendlyTypeName adıdır.  
   
--   **Gerekçe** -iletisini engelleme nedenini belge için kullanılan metin.  
+- **Gerekçe** -iletisini engelleme nedenini belge için kullanılan metin.  
   
--   **İleti kimliği** -bir sorun için her iletinin benzersiz tanımlayıcısı.  
+- **İleti kimliği** -bir sorun için her iletinin benzersiz tanımlayıcısı.  
   
--   **Kapsam** -hedef üzerinde uyarı engellenir. Hedef belirtilmemişse, özniteliğin hedef ayarlanır. Desteklenen kapsamları aşağıdakileri içerir:  
+- **Kapsam** -hedef üzerinde uyarı engellenir. Hedef belirtilmemişse, özniteliğin hedef ayarlanır. Desteklenen kapsamları aşağıdakileri içerir:  
   
-    -   Modül  
+    - Modül  
   
-    -   Ad Alanı  
+    - Ad Alanı  
   
-    -   Kaynak  
+    - Kaynak  
   
-    -   Tür  
+    - Tür  
   
-    -   Üye  
+    - Üye  
   
--   **Hedef** - üzerinde uyarı engellenir hedef belirtmek için kullanılan tanımlayıcı bir. Bir öğe tam adı içermelidir.  
+- **Hedef** - üzerinde uyarı engellenir hedef belirtmek için kullanılan tanımlayıcı bir. Bir öğe tam adı içermelidir.  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage kullanımı  
  Kod çözümleme uyarıları hangi düzeyde gizlenir örneği **SuppressMessage** özniteliği uygulanır. Bunun amacı, sıkı bir şekilde kod gizleme bilgileri eşleştiği ihlalin gerçekleştiği sağlamaktır.  

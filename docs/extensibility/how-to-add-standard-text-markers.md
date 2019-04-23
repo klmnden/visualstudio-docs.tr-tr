@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ad7dd9ef83f9de3cfe406dc4fda2cd00837464
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060091"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Nasıl yapılır: Standart metin işaretçileri Ekle
 İle sağlanan varsayılan metin işaretçisi türleri oluşturmak için aşağıdaki yordamı kullanın. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] çekirdek Düzenleyici.
 
 ## <a name="to-create-a-text-marker"></a>Bir metin işaretçisi oluşturmak için
 
-1.  Bir tane veya two dimensional koordinat sistemini kullanarak bağlı olarak, çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> yöntemi veya <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> yöntemini yeni bir metin işaretçisi.
+1. Bir tane veya two dimensional koordinat sistemini kullanarak bağlı olarak, çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> yöntemi veya <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> yöntemini yeni bir metin işaretçisi.
 
      Bu yöntem çağrısında bir işaret türü bir işaretçi üzerinde oluşturmak için metin aralığı belirtin ve bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> arabirimi. Bu yöntem, ardından yeni oluşturulan metin işaretçisi için bir işaretçi döndürür. İşaretçi türleri verilerinden alınır <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> sabit listesi. Belirtin bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> işaret olayları hakkında bilgi sahibi olmak istiyorsanız, arabirim.
 
@@ -34,15 +34,15 @@ ms.locfileid: "56720646"
 
 ### <a name="to-add-a-custom-command-to-the-context-menu"></a>Bağlam menüsüne özel komut ekleme
 
-1.  Bağlam menüsü görüntülenmeden önce ortam çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> yöntemi ve metin işaretçisi için bir işaretçi sorundan geçişleri ve bağlam menüsünden komut öğe sayısı.
+1. Bağlam menüsü görüntülenmeden önce ortam çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> yöntemi ve metin işaretçisi için bir işaretçi sorundan geçişleri ve bağlam menüsünden komut öğe sayısı.
 
      Örneğin, kesme noktası özgü komutlar bağlam menüsünde yer **kesme noktasını Kaldır** aracılığıyla **yeni kesme noktası**, aşağıdaki ekran görüntüsünde gösterildiği.
 
      ![İşaretli bağlam menüsü](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")
 
-2.  Özel komut adını tanımlayan bir metin geri geçirin. Örneğin, **kesme noktasını Kaldır** bu ortamı zaten sağlamadı özel komut olabilir. Ayrıca geri geçirdiğiniz komutu desteklenen, kullanılabilir ve etkin olup ve/veya açık-kapalı Değiştir. Ortam, özel komut bağlam menüsü doğru şekilde görüntülemek için bu bilgileri kullanır.
+2. Özel komut adını tanımlayan bir metin geri geçirin. Örneğin, **kesme noktasını Kaldır** bu ortamı zaten sağlamadı özel komut olabilir. Ayrıca geri geçirdiğiniz komutu desteklenen, kullanılabilir ve etkin olup ve/veya açık-kapalı Değiştir. Ortam, özel komut bağlam menüsü doğru şekilde görüntülemek için bu bilgileri kullanır.
 
-3.  Ortam çağrıları komutu yürütmek için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> yöntemi, metin işaretçisi ve bağlam menüsünden Seçili komut sayısı için bir işaretçi geçirme.
+3. Ortam çağrıları komutu yürütmek için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> yöntemi, metin işaretçisi ve bağlam menüsünden Seçili komut sayısı için bir işaretçi geçirme.
 
      Metin işaretçisi hangi eylemleri belirler, özel bir komut yürütmek için bu çağrı bu bilgileri kullanın.
 

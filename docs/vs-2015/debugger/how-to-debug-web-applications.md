@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039550"
 ---
 # <a name="how-to-debug-web-applications"></a>Nasıl yapılır: Web uygulamalarında hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "54805044"
   
  Hata ayıklamak için bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama:  
   
--   Gerekli izinleriniz gerekir. Daha fazla bilgi için, bkz. [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+- Gerekli izinleriniz gerekir. Daha fazla bilgi için, bkz. [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] içinde hata ayıklaması etkinleştirilmelidir **proje özellikleri**.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] içinde hata ayıklaması etkinleştirilmelidir **proje özellikleri**.  
   
--   Uygulamanızın yapılandırma dosyası (Web.config) hata ayıklama moduna ayarlanmalıdır. Hata ayıklama modu nedenleri [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] iliştirmek hata ayıklayıcı sağlar ve dinamik olarak oluşturulan dosyaları simgeleri üretmesine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Web proje şablonunu projenizi oluşturduysanız, hata ayıklamak başlattığınızda bu otomatik olarak ayarlar.  
+- Uygulamanızın yapılandırma dosyası (Web.config) hata ayıklama moduna ayarlanmalıdır. Hata ayıklama modu nedenleri [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] iliştirmek hata ayıklayıcı sağlar ve dinamik olarak oluşturulan dosyaları simgeleri üretmesine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Web proje şablonunu projenizi oluşturduysanız, hata ayıklamak başlattığınızda bu otomatik olarak ayarlar.  
   
--   Daha fazla bilgi için [nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Daha fazla bilgi için [nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Bir Web uygulaması geliştirme sırasında hata ayıklamak için  
   
-1.  Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat** Web uygulamasına hata ayıklamayı başlatmak için.  
+1. Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat** Web uygulamasına hata ayıklamayı başlatmak için.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Web uygulaması projesi oluşturur, gerekirse başlarsa ASP.NET geliştirme sunucusu yerel olarak hata ayıklaması yapıyorsanız, uygulama dağıtır ve ekler [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] çalışan işlemi.  
   
-2.  Hata ayıklayıcısını kümesi ve açık kesme noktaları, adım ve herhangi bir uygulamada olduğu gibi diğer hata ayıklama işlemlerini gerçekleştirin.  
+2. Hata ayıklayıcısını kümesi ve açık kesme noktaları, adım ve herhangi bir uygulamada olduğu gibi diğer hata ayıklama işlemlerini gerçekleştirin.  
   
      Daha fazla bilgi için [hata ayıklayıcı temel bilgileri](../debugger/debugger-basics.md).  
   
-3.  Üzerinde **hata ayıklama** menüsünde tıklayın **hata ayıklamayı Durdur** son hata ayıklama oturumu veya üzerinde **dosya** Internet Explorer'da menüsünü **Kapat**.  
+3. Üzerinde **hata ayıklama** menüsünde tıklayın **hata ayıklamayı Durdur** son hata ayıklama oturumu veya üzerinde **dosya** Internet Explorer'da menüsünü **Kapat**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Web uygulamalarında ve betikte hata ayıklama](../debugger/debugging-web-applications-and-script.md)   

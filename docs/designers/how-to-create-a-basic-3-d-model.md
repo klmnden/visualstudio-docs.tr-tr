@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059194"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Nasıl yapılır: Temel 3B model oluşturma
 
 Bu makalede, Model Düzenleyicisi temel 3B model oluşturma için nasıl kullanılacağını gösterir. Aşağıdaki eylemler ele alınmaktadır:
 
--   Nesneler bir Sahne ekleme
+- Nesneler bir Sahne ekleme
 
--   Yüzleri ve kenar seçme
+- Yüzleri ve kenar seçme
 
--   Seçimleri çevirme
+- Seçimleri çevirme
 
--   Kullanarak **yüzü alt bölümlere ayırır** ve **yüzü kalıptan geçirir** araçları
+- Kullanarak **yüzü alt bölümlere ayırır** ve **yüzü kalıptan geçirir** araçları
 
--   Kullanarak **üçgenlere** komutu
+- Kullanarak **üçgenlere** komutu
 
 ## <a name="create-a-basic-3d-model"></a>Temel 3B model oluşturma
  3B modeller ve oyunlarda veya uygulamalarda için sahneler oluşturmak ve değiştirmek için Model Düzenleyicisi'ni kullanabilirsiniz. Aşağıdaki adımlar, Model Düzenleyicisi evin basitleştirilmiş bir 3B model oluşturmak için nasıl kullanılacağını gösterir. Basitleştirilmiş bir model bir stand-in yine de, çakışma algılaması için ağ veya temsil ettiği nesneyi daha ayrıntılı işleme yararlanmak için çok uzakta olduğunda kullanılacak düşük ayrıntı model olarak oluşturulmakta olan son resim varlıkları için kullanılabilir.

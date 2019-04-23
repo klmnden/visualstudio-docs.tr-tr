@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045791"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Uygulama ve Dağıtım Bildirimlerini İmzalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Uygulama ve dağıtım yeniden imzalamak için Mage.exe ile bildirimleri  
   
-1.  Açık bir **Visual Studio komut istemi** penceresi.  
+1. Açık bir **Visual Studio komut istemi** penceresi.  
   
-2.  Dizinleri oturum istediğiniz dosyaları içeren klasöre değiştirin.  
+2. Dizinleri oturum istediğiniz dosyaları içeren klasöre değiştirin.  
   
-3.  Uygulama bildirim dosyasını imzalamak için aşağıdaki komutu yazın. ManifestFileName'i yanı sıra uzantı bildirim dosyasının adıyla değiştirin. Sertifika, sertifika dosyasının göreli veya tam yoluyla değiştirin ve parola sertifika parolasını değiştirin.  
+3. Uygulama bildirim dosyasını imzalamak için aşağıdaki komutu yazın. ManifestFileName'i yanı sıra uzantı bildirim dosyasının adıyla değiştirin. Sertifika, sertifika dosyasının göreli veya tam yoluyla değiştirin ve parola sertifika parolasını değiştirin.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Güncelleştirmek ve önceki adımla yer tutucu adlarını değiştirme dağıtım bildirimi dosyasını imzalamak için aşağıdaki komutu yazın.  
+4. Güncelleştirmek ve önceki adımla yer tutucu adlarını değiştirme dağıtım bildirimi dosyasını imzalamak için aşağıdaki komutu yazın.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  İsteğe bağlı olarak, ana dağıtım bildirimini kopyalayın (Yayımlama\\*appname*.application) sürüm dağıtım dizinine (publish\Application dosyaları\\*appname*_ *sürüm*).  
+5. İsteğe bağlı olarak, ana dağıtım bildirimini kopyalayın (Yayımlama\\*appname*.application) sürüm dağıtım dizinine (publish\Application dosyaları\\*appname*_ *sürüm*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Güncelleştirme ve uygulama ve dağıtım bildirimlerini yeniden imzalama  
  Bu yordam, zaten uygulamanıza bildirim dosyası (.manifest) değişiklikler yaptınız, ancak güncelleştirildi diğer dosyalar olduğunu varsayar. Dosya güncelleştirildiğinde, dosyayı temsil eden karma da güncelleştirilmesi gerekir.  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Güncelleştirme ve uygulama ve dağıtım yeniden imzalamak için Mage.exe ile bildirimleri  
   
-1.  Açık bir **Visual Studio komut istemi** penceresi.  
+1. Açık bir **Visual Studio komut istemi** penceresi.  
   
-2.  Dizinleri oturum istediğiniz dosyaları içeren klasöre değiştirin.  
+2. Dizinleri oturum istediğiniz dosyaları içeren klasöre değiştirin.  
   
-3.  Yayımlama çıktı klasöründe bulunan dosyaları .deploy dosya uzantısını kaldırın.  
+3. Yayımlama çıktı klasöründe bulunan dosyaları .deploy dosya uzantısını kaldırın.  
   
-4.  Güncelleştirilen dosyaların yeni karma uygulama bildirimini güncelleştirin ve uygulama bildirim dosyasını imzalamak için aşağıdaki komutu yazın. ManifestFileName'i yanı sıra uzantı bildirim dosyasının adıyla değiştirin. Sertifika, sertifika dosyasının göreli veya tam yoluyla değiştirin ve parola sertifika parolasını değiştirin.  
+4. Güncelleştirilen dosyaların yeni karma uygulama bildirimini güncelleştirin ve uygulama bildirim dosyasını imzalamak için aşağıdaki komutu yazın. ManifestFileName'i yanı sıra uzantı bildirim dosyasının adıyla değiştirin. Sertifika, sertifika dosyasının göreli veya tam yoluyla değiştirin ve parola sertifika parolasını değiştirin.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Güncelleştirmek ve önceki adımla yer tutucu adlarını değiştirme dağıtım bildirimi dosyasını imzalamak için aşağıdaki komutu yazın.  
+5. Güncelleştirmek ve önceki adımla yer tutucu adlarını değiştirme dağıtım bildirimi dosyasını imzalamak için aşağıdaki komutu yazın.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Windows Forms uygulamaları, Windows Presentation Foundation uygulamaları (xbap
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Uygulama ve dağıtım bildirim dosyaları dışında dosyaları için .deploy dosya uzantısı ekleyin.  
+6. Uygulama ve dağıtım bildirim dosyaları dışında dosyaları için .deploy dosya uzantısı ekleyin.  
   
-7.  İsteğe bağlı olarak, ana dağıtım bildirimini kopyalayın (Yayımlama\\*appname*.application) sürüm dağıtım dizinine (publish\Application dosyaları\\*appname*_ *sürüm*).  
+7. İsteğe bağlı olarak, ana dağıtım bildirimini kopyalayın (Yayımlama\\*appname*.application) sürüm dağıtım dizinine (publish\Application dosyaları\\*appname*_ *sürüm*).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarının güvenliğini sağlama](../deployment/securing-clickonce-applications.md)   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057179"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Nasıl yapılır: Şemaları Visual Studio içindeki çalışma sayfalarıyla eşleştirme
   Visual Studio'da çalışma açıkken bir XML Şeması çalışma sayfasına eşleyebilirsiniz. Visual Studio'nun dışında çalışma kitabını açtığınızda kullandığınız aynı Microsoft Office Excel araçları kullanırsınız. Office project, çalışma sayfasında önce şemayı eşleştirdiğinizde veya Excel çözümünüzü oluşturduktan sonra aynı nesneleri oluşturur.
@@ -34,28 +34,28 @@ ms.locfileid: "56637379"
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Visual Studio'da bir Excel çalışma sayfasına bir XML Şeması eşlemek için
 
-1.  Excel çalışma kitabı veya şablondaki projeyi Visual Studio içinde açın.
+1. Excel çalışma kitabı veya şablondaki projeyi Visual Studio içinde açın.
 
-2.  Çalışma sayfası tasarımcıya odağı taşımak için tıklayın.
+2. Çalışma sayfası tasarımcıya odağı taşımak için tıklayın.
 
-3.  Şerit üzerinde tıklayın **Geliştirici** sekmesi.
+3. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
     >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  İçinde **XML** grubunda **kaynak**.
+4. İçinde **XML** grubunda **kaynak**.
 
      **XML kaynağı** penceresi açılır.
 
-5.  İçinde **XML kaynağı** penceresinde tıklayın **XML eşlemeleri**.
+5. İçinde **XML kaynağı** penceresinde tıklayın **XML eşlemeleri**.
 
      **XML eşlemeleri** iletişim kutusu açılır.
 
-6.  İçinde **XML eşlemeleri** iletişim kutusu, tıklayın **Ekle**.
+6. İçinde **XML eşlemeleri** iletişim kutusu, tıklayın **Ekle**.
 
-7.  Şema dosyasına göz atın, onu seçin ve ardından **açık**.
+7. Şema dosyasına göz atın, onu seçin ve ardından **açık**.
 
-8.  **Tamam**'ı tıklatın.
+8. **Tamam**'ı tıklatın.
 
      Şema temsil edilir **XML kaynağı** penceresi. Projenizde, belirlenmiş bir <xref:System.Data.DataSet> şemaya göre oluşturulur ve <xref:System.Windows.Forms.BindingSource> oluşturulur.
 

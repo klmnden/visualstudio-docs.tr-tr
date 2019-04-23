@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040075"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>ClickOnce Uygulamalarında Yerel ve Uzak Veri Erişimi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "54761779"
 ## <a name="local-data"></a>Yerel veriler  
  İle [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], aşağıdaki yöntemlerden birini kullanarak yerel olarak veri depolamak ve yükleyin:  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Veri dizini  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Veri dizini  
   
--   Yalıtılmış Depolama  
+- Yalıtılmış Depolama  
   
--   Diğer yerel dosyaları  
+- Diğer yerel dosyaları  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce Data Directory  
  Her [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yerel bir bilgisayarda yüklü uygulama kullanıcının belgeler ve ayarlar klasöründe depolanan bir veri dizinine sahip. Dahil herhangi bir dosyayı bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama ve işaretli bir "veri" dosyası, bir uygulama yüklendiğinde bu dizine kopyalanır. Veri dosyaları en sık kullanılan bir dosya türünde olabilir metin, XML ve Microsoft Access .mdb dosyaları gibi veritabanı dosyaları.  

@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051641"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>İzlenecek yol: XSLT hiyerarşisi kullanma
 
@@ -69,7 +69,7 @@ Bu konudaki örnek, bir başvurulan stil sayfasında hata ayıklama gösterir.
     </xsl:stylesheet>
     ```
 
-3.  Aşağıdaki *xslinclude.xsl* dosyası:
+3. Aşağıdaki *xslinclude.xsl* dosyası:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ Bu konudaki örnek, bir başvurulan stil sayfasında hata ayıklama gösterir.
     </xsl:stylesheet>
     ```
 
-4.  Yönerge bir kesme noktası ekleyin `<xsl:include href="xslincludefile.xsl" />`.
+4. Yönerge bir kesme noktası ekleyin `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Hata ayıklama başlatılamıyor.
+5. Hata ayıklama başlatılamıyor.
 
-6.  Hata ayıklayıcı yönerge durduğunda `<xsl:include href="xslincludefile.xsl" />`, basın **içine adımla** düğmesi. Hata ayıklama başvurulan stil sayfasına devam edebilir. Hiyerarşi görünür ve tasarımcı doğru yolunu görüntüler.
+6. Hata ayıklayıcı yönerge durduğunda `<xsl:include href="xslincludefile.xsl" />`, basın **içine adımla** düğmesi. Hata ayıklama başvurulan stil sayfasına devam edebilir. Hiyerarşi görünür ve tasarımcı doğru yolunu görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

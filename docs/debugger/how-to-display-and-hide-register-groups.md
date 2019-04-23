@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037826"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Nasıl yapılır: Görüntüleme ve gizleme yazmaç gruplarını (C#, C++, Visual Basic F#)
 
@@ -37,9 +37,9 @@ Dağınıklığı, azaltmak için **kaydeder** penceresi kayıtları gruplar hal
 
 ## <a name="display-or-hide-register-groups"></a>YAZMAÇ gruplarını görüntüleme veya gizleme
 
-1.  Sağ **kaydeder** penceresi.
+1. Sağ **kaydeder** penceresi.
 
-2.  Kısayol menüsünde, göstermek veya gizlemek istediğiniz yazmaç gruplarını seçin.
+2. Kısayol menüsünde, göstermek veya gizlemek istediğiniz yazmaç gruplarını seçin.
 
      Seçilemez bu nedenle üzerinde hata ayıklama donanım tarafından desteklenmeyen yazmaç gruplarını kısayol menüsünde, devre dışı bırakıldı.
 

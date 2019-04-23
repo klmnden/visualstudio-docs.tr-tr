@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056334"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word için belge düzeyi özelleştirmelerini programlama kullanmaya başlayın
   Yeni Visual Studio kullanarak, Microsoft Office Word için belge düzeyi özelleştirmeleri oluşturmaya başlıyor, işte bilmeniz gerekenler.
@@ -44,11 +44,11 @@ ms.locfileid: "56631503"
 
  Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
+- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
 
--   [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)
+- [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)
 
--   [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
+- [Konak öğelerine ve denetimlerine genel bakış](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Word kullanıcı arayüzünü özelleştirme
  Microsoft Office çözümlerinin çoğu, kullanıcıların çözümü ile etkileşim kurmak herhangi bir şekilde sağlamak için Office uygulamasının kullanıcı arabirimini (UI) değiştirin. Belge düzeyi özelleştirmesi kullanılarak UI Word'ün değiştirmeniz için birçok yol vardır. Örneğin, Şerit denetimleri ekleyebilirsiniz ve Eylemler bölmesinde görüntüleyebilirsiniz. Daha fazla bilgi için [Office UI özelleştirmesi](../vsto/office-ui-customization.md).

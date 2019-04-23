@@ -2,7 +2,7 @@
 title: Hangi&#39;tasarım için Yenilikler
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-techdebt
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - what's new [VIsual Studio], architecture and modeling
@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1a6f89f8fe99895bd445e0ec7f248c2cc83a7ca
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039065"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Visual Studio 2015'te Visual Studio tasarımındaki yenilikler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Visual Studio'nun bu sürümü daha iyi anlamanıza ve kod tasarlamanıza yardı
 
 - **Mimari Gezgini**. Mimari Gezgini artık diyagramları oluşturmak için de kullanabilirsiniz. Ancak Çözüm Gezgini'ni kullanmaya devam edebilirsiniz.
 
-##  <a name="VersionSupport"></a> Mimari ve Modelleme Araçları sürüm desteği
+## <a name="VersionSupport"></a> Mimari ve Modelleme Araçları sürüm desteği
 
 Visual Studio 2015, birkaç sürümlerinde kullanılabilir. Bunların tümü, mimari ve Modelleme Araçları için destek sağlar. Aşağıdaki tabloda her bir aracı kullanılabilirliğini gösterir.
 

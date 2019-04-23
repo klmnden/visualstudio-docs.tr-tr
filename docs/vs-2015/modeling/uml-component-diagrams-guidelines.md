@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056789"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML Bileşen Diyagramları: Kuralları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
   Bileşen diyagramını, tasarımın kullandığı veya kullanacağı dile ya da platforma bakılmaksızın tasarımınızı göstermek için kullanabilirsiniz.  
   
-##  <a name="OtherDiagrams"></a> Diğer diyagramlarla ilişki  
+## <a name="OtherDiagrams"></a> Diğer diyagramlarla ilişki  
  Bileşen diyagramını başka diyagramlarla birlikte kullanabilirsiniz.  
   
 |Başka diyagram|Tasarımınızın bu yönlerini tartışmanıza ve iletişim kurmanıza yardımcı olur|  
@@ -51,7 +51,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
 |Etkinlik Diyagramları|-Gelen iletilere yanıt olarak bir bileşen tarafından gerçekleştirilen iç işleme.<br /><br /> Daha fazla bilgi için [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).|  
 |Katman Diyagramları|-Mantıksal mimari katmanları bileşenleriniz için.<br /><br /> Daha fazla bilgi için [katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md).|  
   
-##  <a name="Basics"></a> Bileşen diyagramları çizmek için temel adımlar  
+## <a name="Basics"></a> Bileşen diyagramları çizmek için temel adımlar  
  Bileşen diyagramlarındaki öğeler hakkında başvuru bilgileri için bkz [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md).  
   
  Tasarım aşamasında Bileşen diyagramlarının nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [uygulama Mimarinizi modelleme](../modeling/model-your-app-s-architecture.md).  
@@ -61,13 +61,13 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 #### <a name="to-create-a-component-diagram"></a>Bir bileşen diyagramı oluşturmak için  
   
-1.  Üzerinde **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
+1. Üzerinde **mimarisi** menüsünü tıklatın **yeni UML veya katman diyagramı**.  
   
-2.  Altında **şablonları**, tıklayın **UML bileşen diyagramı**.  
+2. Altında **şablonları**, tıklayın **UML bileşen diyagramı**.  
   
-3.  Diyagrama ad verin.  
+3. Diyagrama ad verin.  
   
-4.  İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**...  
+4. İçinde **modelleme projesine Ekle**, çözümünüzde varolan modelleme projesini seçin veya **yeni modelleme projesi oluşturma**ve ardından **Tamam**...  
   
      Yeni bileşen diyagramı UML görünür **bileşen diyagramı** araç kutusu. Araç kutusu gereken öğeleri ve ilişkileri içerir.  
   
@@ -80,25 +80,25 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 ##### <a name="to-create-components"></a>Bileşenler oluşturmak için  
   
-1.  Tıklayın **bileşen** Araç Kutusu'nda ve ardından diyagramın boş bir kısmına tıklayın.  
+1. Tıklayın **bileşen** Araç Kutusu'nda ve ardından diyagramın boş bir kısmına tıklayın.  
   
      \- veya -  
   
      Varolan bileşeni kopyalayıp yapıştırın.  
   
-    1.  Diyagramda veya varolan bileşeni bulun **UML Model Gezgini**.  
+    1. Diyagramda veya varolan bileşeni bulun **UML Model Gezgini**.  
   
-    2.  Bileşene sağ tıklayın ve ardından **kopyalama**.  
+    2. Bileşene sağ tıklayın ve ardından **kopyalama**.  
   
-    3.  Kopyalanan bileşenin görünmesini istediğiniz yerde diyagramı açın.  
+    3. Kopyalanan bileşenin görünmesini istediğiniz yerde diyagramı açın.  
   
-    4.  Diyagramın boş bir bölümüne sağ tıklayın ve ardından **Yapıştır**.  
+    4. Diyagramın boş bir bölümüne sağ tıklayın ve ardından **Yapıştır**.  
   
          Bileşenin kopyası yeni bir adla görünür.  
   
-2.  Değiştirmek için bileşenin adına tıklayın.  
+2. Değiştirmek için bileşenin adına tıklayın.  
   
-3.  Yalnızca bileşenin başlığını görmek istiyorsanız köşeli çift ayraca (5) tıklayın.  
+3. Yalnızca bileşenin başlığını görmek istiyorsanız köşeli çift ayraca (5) tıklayın.  
   
 ### <a name="showing-the-ports-of-a-component"></a>Bileşenin Bağlantı Noktalarını Gösterme  
  A *bağlantı noktası* (2, 3) temsil grubunu iletileri ya da veya bir bileşen dışından geçen, işlem çağrıları gösterir. Grup, bağlantı noktasının türünü tanımlayan arabirim tarafından açıklanır. Bağlantı noktası, arabirim sağlar veya arabirim gerektirir.  
@@ -144,24 +144,24 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Varolan arabirim için bileşene bağlantı noktası eklemek üzere  
   
--   Ndeki arabirimi bulun **UML Model Gezgini** ve onu buradan bileşene sürükleyin.  
+- Ndeki arabirimi bulun **UML Model Gezgini** ve onu buradan bileşene sürükleyin.  
   
      -veya-  
   
--   Başvuruyu diyagramdan arabirime kopyalayıp yapıştırın.  
+- Başvuruyu diyagramdan arabirime kopyalayıp yapıştırın.  
   
-    1.  Bir sınıf diyagramı veya bileşen diyagramında arabirime sağ tıklayın ve ardından **kopyalama**.  
+    1. Bir sınıf diyagramı veya bileşen diyagramında arabirime sağ tıklayın ve ardından **kopyalama**.  
   
-    2.  Bileşen diyagramında bileşene sağ tıklayın ve ardından **başvuruyu Yapıştır**.  
+    2. Bileşen diyagramında bileşene sağ tıklayın ve ardından **başvuruyu Yapıştır**.  
   
          Sağlanan arabirim bileşende görünür. Yakında bir Eylem etiketi görünür.  
   
         > [!NOTE]
         >  Kullanırsanız **Yapıştır** yerine **başvuruyu Yapıştır**, yeni bir ada sahip bir yeni arabirim oluşturulacaktır.  
   
-    3.  Gerekli arabirimi oluşturmak istediyseniz, eylem'e ve ardından **gerekli arabirime Dönüştür**.  
+    3. Gerekli arabirimi oluşturmak istediyseniz, eylem'e ve ardından **gerekli arabirime Dönüştür**.  
   
-##  <a name="Parts"></a> Bir bileşenin iç parçalarını gösterme  
+## <a name="Parts"></a> Bir bileşenin iç parçalarını gösterme  
  ![Bileşen Diyagramı iç parçalarını gösterme](../modeling/media/uml-compshowing.png "UML_CompShowing")  
   
  Nasıl birbiriyle etkileşim kuran daha küçük bileşenlerden oluştuğunu göstermek için bileşene (1) parçalar (3) yerleştirebilirsiniz.  
@@ -180,9 +180,9 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 #### <a name="to-add-parts-to-a-component"></a>Bileşene parçalar eklemek için  
   
-1.  Ana bileşenin bir parçası olarak düşündüğünüz her ana işlevsel birim için parça oluşturun.  
+1. Ana bileşenin bir parçası olarak düşündüğünüz her ana işlevsel birim için parça oluşturun.  
   
-    1.  Tıklayın **bileşen** araç ve (1) ana bileşenin içine tıklayın.  
+    1. Tıklayın **bileşen** araç ve (1) ana bileşenin içine tıklayın.  
   
          Yeni parça (3) ana bileşenin içinde görünür.  
   
@@ -202,9 +202,9 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
          Yeni parça (3) ana bileşenin içinde görünür. Türü kopyaladığınız bileşendir.  
   
-    2.  Değiştirmek için yeni parçanın adına tıklayın. Türünü değiştiremezsiniz.  
+    2. Değiştirmek için yeni parçanın adına tıklayın. Türünü değiştiremezsiniz.  
   
-    3.  Yeni parçaya sağlanan ve gerekli arabirimleri (4, 5) ekleyebilirsiniz. Tıklayın **sağlanan arabirim** veya **gerekli arabirim** aracını ve ardından parçanın içine tıklayın.  
+    3. Yeni parçaya sağlanan ve gerekli arabirimleri (4, 5) ekleyebilirsiniz. Tıklayın **sağlanan arabirim** veya **gerekli arabirim** aracını ve ardından parçanın içine tıklayın.  
   
          \- veya -  
   
@@ -212,15 +212,15 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
          Arabirimler parçanın türüne eklenir ve kendi parçası üzerinde görünür. Gerekirse ana bileşen kendi boyutunu ayarlar.  
   
-2.  Parçaları birbirine bağlayın.  
+2. Parçaları birbirine bağlayın.  
   
-    -   Kullanım **bağımlılık** (6) farklı parçaların bağlantı noktalarını bağlanmak için aracı.  
+    - Kullanım **bağımlılık** (6) farklı parçaların bağlantı noktalarını bağlanmak için aracı.  
   
-3.  Parçaları ana bileşenin bağlantı noktalarına bağlayın:  
+3. Parçaları ana bileşenin bağlantı noktalarına bağlayın:  
   
-    1.  Ana bileşen üzerinde bir veya daha çok bağlantı noktası (7) oluşturun. Tıklayın **gerekli arabirim** veya **sağlanan arabirim** araç kutusunda ve ardından ana bileşene tıklayın.  
+    1. Ana bileşen üzerinde bir veya daha çok bağlantı noktası (7) oluşturun. Tıklayın **gerekli arabirim** veya **sağlanan arabirim** araç kutusunda ve ardından ana bileşene tıklayın.  
   
-    2.  Bağlantı noktalarını (9) bir veya daha çok parçaya atayın. Tıklayın **temsilci** aracı sonra ana bileşen üzerindeki bir bağlantı noktası ve bir bağlantı noktasında bir parçası. Bağlantı noktalarını sağlanan veya gerekli arabirimlerle aynı şekilde bağlayabilirsiniz.  
+    2. Bağlantı noktalarını (9) bir veya daha çok parçaya atayın. Tıklayın **temsilci** aracı sonra ana bileşen üzerindeki bir bağlantı noktası ve bir bağlantı noktasında bir parçası. Bağlantı noktalarını sağlanan veya gerekli arabirimlerle aynı şekilde bağlayabilirsiniz.  
   
 ### <a name="showing-the-parts-of-a-part"></a>Bir Parçanın Parçalarını Gösterme  
  Bir bileşeni parçalara ayırdıktan sonra, parça türlerinin her birini kendi iç parçalarına ayırabilirsiniz.  
@@ -229,13 +229,13 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 ##### <a name="to-place-a-parts-type-on-a-diagram"></a>Diyagrama parçanın türünü yerleştirmek için  
   
-1.  Parça türünün tam adını belirleyin.  
+1. Parça türünün tam adını belirleyin.  
   
      Parçaya sağ tıklayın ve ardından **özellikleri**.  
   
      Tür adı görünür **türü** Özellikler penceresinin alan.  
   
-2.  Nde parçanın türünü bulun **UML Model Gezgini**.  
+2. Nde parçanın türünü bulun **UML Model Gezgini**.  
   
      Tıklayın **görünümü**, işaret **diğer Windows**ve ardından **UML Model Gezgini**.  
   
@@ -245,9 +245,9 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
      İsterseniz adını burada değiştirebilirsiniz.  
   
-3.  Başka bir bileşen diyagramı açın veya oluşturun.  
+3. Başka bir bileşen diyagramı açın veya oluşturun.  
   
-4.  UML Model Gezgini'ndeki türden diyagram üzerine sürükleyin.  
+4. UML Model Gezgini'ndeki türden diyagram üzerine sürükleyin.  
   
      Türün görünümü diyagramda bileşen olarak görüntülenir.  
   
@@ -255,7 +255,7 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
      Artık parçaları içine ekleyebilirsiniz.  
   
-##  <a name="Designing"></a> Bileşeni tasarlama  
+## <a name="Designing"></a> Bileşeni tasarlama  
   
 ### <a name="describing-how-the-parts-collaborate"></a>Parçaların Birlikte Nasıl Çalıştığını Açıklama  
  Parçaların ana bileşene ulaşan iletiye yanıt olarak birlikte nasıl çalıştığını göstermek için sıralı diyagram çizebilirsiniz.  
@@ -274,23 +274,23 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Parçalar arasındaki işbirliğini gösteren sıralı diyagram çizmek için  
   
-1.  Yeni bir sıralı diyagram oluşturun.  
+1. Yeni bir sıralı diyagram oluşturun.  
   
      Daha fazla bilgi için [UML Sequence Diagrams: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-2.  Dış bileşen, kullanıcı, cihaz veya bu bileşene iletiler gönderen diğer aktör (1) için yaşam çizgisi oluşturun.  
+2. Dış bileşen, kullanıcı, cihaz veya bu bileşene iletiler gönderen diğer aktör (1) için yaşam çizgisi oluşturun.  
   
      Ayarlayabileceğiniz **aktör** özelliği bu yaşam çizgisinin bileşenin olduğunu belirtmek için true. Çubuk şekli yaşam çizgisinin üzerinde görünür.  
   
-3.  Seçilen aktörün iletiler gönderdiği bu bileşenin sağlanan arabirimi (2) için yaşam çizgisi oluşturun.  
+3. Seçilen aktörün iletiler gönderdiği bu bileşenin sağlanan arabirimi (2) için yaşam çizgisi oluşturun.  
   
-4.  Bileşenin her parçası (3) için yaşam çizgisi oluşturun.  
+4. Bileşenin her parçası (3) için yaşam çizgisi oluşturun.  
   
-5.  Bileşenin gerekli her arabirimi (4) için yaşam çizgisi oluşturun.  
+5. Bileşenin gerekli her arabirimi (4) için yaşam çizgisi oluşturun.  
   
-6.  Dış aktörden (5) gelen iletileri çizin. İletinin parçalara nasıl geçtiğini ve iletiye yanıt vermek için nasıl işbirliği yaptıklarını gösterin.  
+6. Dış aktörden (5) gelen iletileri çizin. İletinin parçalara nasıl geçtiğini ve iletiye yanıt vermek için nasıl işbirliği yaptıklarını gösterin.  
   
-7.  Gerektiği yerde gerekli arabirime (6) gönderilen iletileri gösterin. İletinin yürütmesi içinde hiçbir ayrıntıyı göstermeyin.  
+7. Gerektiği yerde gerekli arabirime (6) gönderilen iletileri gösterin. İletinin yürütmesi içinde hiçbir ayrıntıyı göstermeyin.  
   
 ### <a name="is-the-component-more-than-its-parts"></a>Bileşen Parçalarından Daha Fazla Mıdır?  
  Bazı durumlarda bileşen, parçalar topluluğuna verilen bir addan daha fazlası değildir. Tüm iş parçalar tarafından yapılır ve çalışma zamanında bileşeni gösteren kod veya başka bir yapı yoktur.  
@@ -309,11 +309,11 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
 ### <a name="defining-data-and-classes"></a>Veri ve Sınıfları Tanımlama  
  UML sınıf diyagramını şunların ayrıntılı içeriğini açıklamak için kullanabilirsiniz:  
   
--   Bileşenlerin arabirimleri. Bir bileşene gerektirir veya sağlar bağlantı noktası eklediğinizde, UML Model Gezgini'nde bir arabirim görünür. Bunu, özniteliklerini, işlemlerini ve diğer arabirimleriyle olan ilişkilerini göstermek için UML Sınıf Diyagramına sürükleyebilir veya kopyalayabilirsiniz.  
+- Bileşenlerin arabirimleri. Bir bileşene gerektirir veya sağlar bağlantı noktası eklediğinizde, UML Model Gezgini'nde bir arabirim görünür. Bunu, özniteliklerini, işlemlerini ve diğer arabirimleriyle olan ilişkilerini göstermek için UML Sınıf Diyagramına sürükleyebilir veya kopyalayabilirsiniz.  
   
--   Arabirimlerdeki işlemlerin parametrelerinde geçirilen veriler.  
+- Arabirimlerdeki işlemlerin parametrelerinde geçirilen veriler.  
   
--   Etkinlik diyagramlarındaki nesne akışlarında gösterildiği gibi bileşenlerde depolanan veriler.  
+- Etkinlik diyagramlarındaki nesne akışlarında gösterildiği gibi bileşenlerde depolanan veriler.  
   
 ### <a name="general-dependencies-between-components"></a>Bileşenler Arasındaki Genel Bağımlılıklar  
  Yalnızca tasarımınızın ana parçalarını ve onların bağımlılıklarını göstermek için bileşen diyagramını kullanabilirsiniz.  
@@ -335,8 +335,8 @@ Visual Studio'da çizdiğiniz bir *bileşen diyagramı* bir yazılım sisteminin
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
- [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
- [UML sınıf diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
+ [UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)   
  [UML Bileşen Diyagramları: Başvuru](../modeling/uml-component-diagrams-reference.md)   
  [Video: Bileşen diyagramları kullanarak fiziksel yapıyı tasarlama](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)

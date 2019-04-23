@@ -27,12 +27,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059598"
 ---
 # <a name="memory-windows"></a>Bellek Pencereleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ ms.locfileid: "54834087"
   
 #### <a name="to-open-a-memory-window"></a>Bellek penceresi açmak için  
   
-1.  Değil zaten hata ayıklama modunda iseniz hata ayıklamayı başlatın.  
+1. Değil zaten hata ayıklama modunda iseniz hata ayıklamayı başlatın.  
   
-2.  İçinde **hata ayıklama** menüsünde **Windows**. Ardından, fareyle **bellek** ve ardından **bellek 1**, **bellek 2**, **bellek 3**, veya **bellek 4**. (Alt düzey sürümleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yalnızca tek bir **bellek** penceresi. Bu sürümlerinden birini kullanıyorsanız, tıklamanız **bellek**.)  
+2. İçinde **hata ayıklama** menüsünde **Windows**. Ardından, fareyle **bellek** ve ardından **bellek 1**, **bellek 2**, **bellek 3**, veya **bellek 4**. (Alt düzey sürümleri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] yalnızca tek bir **bellek** penceresi. Bu sürümlerinden birini kullanıyorsanız, tıklamanız **bellek**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Bellek penceresi disk belleği  
  **Bellek** penceresine standart olmayan bir şekilde çalışır. dikey bir kaydırma çubuğuna sahip. Çok büyük modern bir bilgisayarın adres alanı ve, kolayca kaydırma çubuğunun Kaydırma kutusu yazılımdır ve rastgele bir konuma sürükleyerek kayıp. Bu nedenle thumb "üzerinde" ve her zaman kaydırma çubuğunu Merkezi'nde kalır. Yerel kod uygulamalarında yukarı veya aşağı sayfa ancak hakkında ücretsiz kaydırma yapılamıyor.  
@@ -56,33 +56,33 @@ ms.locfileid: "54834087"
   
 #### <a name="to-page-up-or-down-in-memory"></a>Yukarı veya aşağı bellekte sayfa için  
   
-1.  Dikey kaydırma çubuğu'nda thumb altında page DOWN (daha yüksek bir bellek adresi taşıma) için tıklayın.  
+1. Dikey kaydırma çubuğu'nda thumb altında page DOWN (daha yüksek bir bellek adresi taşıma) için tıklayın.  
   
-2.  (Daha düşük bir bellek adresi taşıma) ayarlama sayfası için thumb dikey kaydırma çubuğu'a tıklayın.  
+2. (Daha düşük bir bellek adresi taşıma) ayarlama sayfası için thumb dikey kaydırma çubuğu'a tıklayın.  
   
 ## <a name="selecting-a-memory-location"></a>Bellek konumu seçme  
  Anında bellekte seçili bir konuma taşımak istiyorsanız, bir Sürükle ve bırak işlemi kullanarak veya değer düzenleyerek bunu yapabilirsiniz **adresi** kutusu. **Adresi** kutusu yalnızca sayısal değerler aynı zamanda adreslere değerlendirilen ifadeleri kabul eder. Varsayılan olarak, **bellek** penceresi değerlendirir bir **adresi** ifade olarak değerlendirilir, program yürütme sırasında dinamik bir ifade. Dinamik ifadeler çok kullanışlı olabilir. Örneğin, bir işaretçi tarafından dokunulan bellek görüntülemek için bunları kullanabilirsiniz.  
   
 #### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Sürükleme ve bırakma bellek konumu seçmek için  
   
-1.  Herhangi bir pencerede bir bellek adresi içeren bir bellek adresi ya da işaretçi değişkeni seçin.  
+1. Herhangi bir pencerede bir bellek adresi içeren bir bellek adresi ya da işaretçi değişkeni seçin.  
   
-2.  Adres veya işaretçi sürükleyin **bellek** penceresi.  
+2. Adres veya işaretçi sürükleyin **bellek** penceresi.  
   
 #### <a name="to-select-a-memory-location-by-editing"></a>Düzenleyerek bir bellek konumu seçmek için  
   
-1.  İçinde **bellek** penceresinde **adresi** kutusu.  
+1. İçinde **bellek** penceresinde **adresi** kutusu.  
   
-2.  Ardından basın ve istediğiniz adresini yazın veya yapıştırın **ENTER**.  
+2. Ardından basın ve istediğiniz adresini yazın veya yapıştırın **ENTER**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Bilgileri bellek penceresini görüntüler biçimini değiştirme  
  Şeklini özelleştirebilir **bellek** penceresi bellek içeriğini gösterir. Varsayılan olarak, bellek içeriğini tek baytlık tamsayı olarak onaltılık biçimde görünür ve sütun sayısı geçerli pencerenin genişliğini tarafından otomatik olarak belirlenir.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Bellek içeriği biçimini değiştirmek için  
   
-1.  Sağ **bellek** penceresi.  
+1. Sağ **bellek** penceresi.  
   
-2.  İstediğiniz biçimi seçin.  
+2. İstediğiniz biçimi seçin.  
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Bellek penceresi sütun sayısını değiştirmek için  
   
@@ -104,9 +104,9 @@ ms.locfileid: "54834087"
   
 #### <a name="to-toggle-the-toolbar"></a>Araç çubuğunu değiştirme  
   
-1.  Sağ bir **bellek** penceresi.  
+1. Sağ bir **bellek** penceresi.  
   
-2.  Kısayol menüsünde **araç çubuğunu göster**.  
+2. Kısayol menüsünde **araç çubuğunu göster**.  
   
      Araç çubuğu, önceki durumuna bağlı olarak kaybolur ya da görünür.  
   
@@ -115,9 +115,9 @@ ms.locfileid: "54834087"
   
 #### <a name="to-follow-a-pointer-through-memory"></a>Bellek işaretçiyle izlemek için  
   
-1.  İçinde **bellek** penceresi **adresi** bir işaretçi ifadesi yazın. İşaretçi değişkeninin geçerli kapsamda olmalıdır. Dile bağlı olarak, bu başvuru gerekebilir.  
+1. İçinde **bellek** penceresi **adresi** bir işaretçi ifadesi yazın. İşaretçi değişkeninin geçerli kapsamda olmalıdır. Dile bağlı olarak, bu başvuru gerekebilir.  
   
-2.  Tuşuna **ENTER**.  
+2. Tuşuna **ENTER**.  
   
      Şimdi, kullanırken bir yürütme komutu gibi **adım**, görüntülenen adres bellek işaretçi değiştikçe otomatik olarak değiştirilir.  
   

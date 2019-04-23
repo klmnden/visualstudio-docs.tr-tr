@@ -11,12 +11,12 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 5d41c68adc544806acc7a6abc02229e00f216f39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048586"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>İzlenecek yol: Başlangıç Sayfasına Özel XAML Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Bu kılavuzda, özel bir Visual Studio Başlangıç içeren bir Web tarayıcıs�
   
 ## <a name="adding-custom-xaml"></a>Özel XAML ekleme  
   
-1.  Bir başlangıç sayfası'ndaki yönergeleri takip ederek oluşturma [bir özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
+1. Bir başlangıç sayfası'ndaki yönergeleri takip ederek oluşturma [bir özel başlangıç sayfası oluşturma](../extensibility/creating-a-custom-start-page.md).  
   
-2.  MainWindow.xaml dosyasını bulun \<kılavuz > bölümü.  
+2. MainWindow.xaml dosyasını bulun \<kılavuz > bölümü.  
   
-3.  Ekleme bir \<TabControl > öğesi ve bir \<TabItem > içinde \< kılavuz > öğesi, aşağıdaki örnekte gösterildiği gibi.  
+3. Ekleme bir \<TabControl > öğesi ve bir \<TabItem > içinde \< kılavuz > öğesi, aşağıdaki örnekte gösterildiği gibi.  
   
     ```xml  
     <Grid>  
@@ -41,7 +41,7 @@ Bu kılavuzda, özel bir Visual Studio Başlangıç içeren bir Web tarayıcıs�
     </Grid>  
     ```  
   
-4.  İkinci bir ekleme \<TabItem >, ile bir \<düğmesi > Yeni bir proje açılır öğe:  
+4. İkinci bir ekleme \<TabItem >, ile bir \<düğmesi > Yeni bir proje açılır öğe:  
   
     ```xml  
     <Grid>  
@@ -61,31 +61,31 @@ Bu kılavuzda, özel bir Visual Studio Başlangıç içeren bir Web tarayıcıs�
   
 ## <a name="testing-the-custom-start-page"></a>Özel başlangıç sayfasını test etme  
   
-1.  F5 tuşuna basın.  
+1. F5 tuşuna basın.  
   
      Visual Studio'nun deneysel örneğinde, özel başlangıç yüklendi, ancak seçili sayfası ile açılır.  
   
-2.  Visual Studio'nun deneysel örneğinde açın **araçları/Options / ortam** sayfası.  
+2. Visual Studio'nun deneysel örneğinde açın **araçları/Options / ortam** sayfası.  
   
-3.  Seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
+3. Seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
   
-4.  Üzerinde **görünümü** menüsünü tıklatın **başlangıç sayfası**.  
+4. Üzerinde **görünümü** menüsünü tıklatın **başlangıç sayfası**.  
   
-5.  Tıklayın **Bing** sekmesi.  
+5. Tıklayın **Bing** sekmesi.  
   
      Bing web sayfası görmeniz gerekir.  
   
-6.  Tıklayın **MyButton** sekmesi.  
+6. Tıklayın **MyButton** sekmesi.  
   
      Görmelisiniz bir **MyProject** düğmesini açan **yeni proje** iletişim.  
   
-7.  Deneysel örneği kapatın.  
+7. Deneysel örneği kapatın.  
   
 ## <a name="applying-the-custom-start-page"></a>Özel başlangıç sayfası uygulama  
   
 #### <a name="to-test-the-custom-start-page"></a>Özel başlangıç sayfası test etmek için  
   
-1.  İçinde **Araçlar / Seçenekler / ortam**seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
+1. İçinde **Araçlar / Seçenekler / ortam**seçin **başlangıç**. Üzerinde **başlangıç sayfasını Özelleştir** listesinde, .xaml dosyanızı seçin ve tıklayın **Tamam**.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Visual Studio Başlangıç sayfası artık bir Web tarayıcısı sekmesi ve MyButton sekme görüntüleyen bir sekme içerir. Özel başlangıç diğer işlevleri kullanarak olan sayfaları oluşturabilirsiniz *arka plan kod* gösterildiği gibi özel bir .dll dosyasını eklemek için model [başlangıç sayfasına kullanıcı denetimi ekleme](../extensibility/adding-user-control-to-the-start-page.md). Özel başlangıç sayfaları için elde edilen .vsix dosyasını yayımlayarak diğer kullanıcılarla paylaşabilir miyim [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesini veya başka bir Web sitesinin veya ağ paylaşımı. Daha fazla bilgi için [özel başlangıç sayfaları dağıtma](../extensibility/deploying-custom-start-pages.md).  

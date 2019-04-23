@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059961"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Nasıl yapılır: ASP.NET uygulamaları için hata ayıklamayı etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ Hata ayıklamayı etkinleştirmek için hem de etkinleştirmelisiniz **proje öz
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Proje özelliklerinde ASP.NET hata ayıklamayı etkinleştirmek için (Visual Basic / C#)  
   
-1.  İçinde **Çözüm Gezgini**, bir Web projesinin adını sağ tıklatın ve seçin **özellikleri**.  
+1. İçinde **Çözüm Gezgini**, bir Web projesinin adını sağ tıklatın ve seçin **özellikleri**.  
   
-2.  Proje özellikleri sayfasında tıklayın **Web** sekmesi.  
+2. Proje özellikleri sayfasında tıklayın **Web** sekmesi.  
   
-3.  Altında **hata ayıklayıcıları**seçin **ASP.NET** onay kutusu.  
+3. Altında **hata ayıklayıcıları**seçin **ASP.NET** onay kutusu.  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Web.config dosyasında hata ayıklamayı etkinleştirmek için  
   
-1.  Herhangi standart bir metin düzenleyicisi veya XML ayrıştırıcısını kullanarak web.config dosyasını açın.  
+1. Herhangi standart bir metin düzenleyicisi veya XML ayrıştırıcısını kullanarak web.config dosyasını açın.  
   
     > [!NOTE]  
     > Ancak, bir Web tarayıcısı kullanarak dosyaya uzaktan erişemezsiniz. Güvenlik nedenleriyle, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], Microsoft IIS'i Web.config dosyalarına doğrudan tarayıcı erişimini engellemeye yardımcı olacak şekilde yapılandırır. Bir tarayıcı kullanarak bir yapılandırma dosyasına erişmeye çalışırsanız, HTTP erişim hatası 403 (yasak) alırsınız.  
   
-2.  Web.config bir XML dosyasıdır ve bu yüzden etiketlerle işaretlenmiş iç içe yerleştirilmiş bölümler içerir. Bulun `configuration/system.web/compilation` öğesi. Derleme ögesi yoksa, onu oluşturun.  
+2. Web.config bir XML dosyasıdır ve bu yüzden etiketlerle işaretlenmiş iç içe yerleştirilmiş bölümler içerir. Bulun `configuration/system.web/compilation` öğesi. Derleme ögesi yoksa, onu oluşturun.  
   
-3.  `compilation` öğesi bir `debug` özniteliği içermiyorsa, özniteliği öğeye ekleyin.  
+3. `compilation` öğesi bir `debug` özniteliği içermiyorsa, özniteliği öğeye ekleyin.  
   
-4.  `debug` öznitelik değerinin `true`olarak ayarlandığından emin olun.  
+4. `debug` öznitelik değerinin `true`olarak ayarlandığından emin olun.  
   
 Web.config dosyası, aşağıdaki örnek gibi görünmelidir. Yapılandırma ve system.web öğeleri arasında bölümler olabileceğini unutmayın  
   
--   yapılandırma ve system.web öğeleri arasındaki öğe bölümleri  
+- yapılandırma ve system.web öğeleri arasındaki öğe bölümleri  
   
--   system.web ve derleme öğeleri arasındaki öğe bölümleri  
+- system.web ve derleme öğeleri arasındaki öğe bölümleri  
   
--   Derleme ögesi, diğer öznitelikleri ve öğeleri içerebilir.  
+- Derleme ögesi, diğer öznitelikleri ve öğeleri içerebilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -79,7 +79,7 @@ Web.config dosyası, aşağıdaki örnek gibi görünmelidir. Yapılandırma ve 
 ```  
   
 ## <a name="robust-programming"></a>Güçlü Programlama  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)], Web.config dosyalarına yapılan değişiklikleri otomatik olarak algılar ve yeni yapılandırma ayarlarını uygular. Değişikliklerin etkili olması IIS sunucusunu yeniden başlatın veya bilgisayarı yeniden başlatmanız gerekmez.  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] otomatik olarak Web.config dosyalarına yapılan tüm değişiklikleri algılar ve yeni yapılandırma ayarlarını uygular. Değişikliklerin etkili olması IIS sunucusunu yeniden başlatın veya bilgisayarı yeniden başlatmanız gerekmez.  
   
 Bir Web sitesi birden çok sanal dizin ve alt dizinler içerebilir ve her birinde Web.config dosyaları bulunabilir. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulamaları, URL yolunda daha yüksek düzeylerde Web.config dosyalarından ayarları miras alabilir. Hiyerarşik yapılandırma dosyaları, aynı anda çeşitli [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulamalarının ayarlarını değiştirmenize olanak tanır, örneğin hiyerarşide onun altındaki tüm uygulamalar için. Ancak, `debug`, hiyerarşide daha düşük bir dosyada ayarlanırsa, daha yüksek değeri geçersiz kılar.  
   

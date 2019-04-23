@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052565"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Nasıl yapılır: Dosyaları Derlemeden Dışlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Form2 dışındaki tüm .cs veya .vb dosyaları eklemek için  
   
--   Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:  
+- Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Form2 ve Form3 hariç tüm .cs veya .vb dosya eklemek için  
   
--   Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:  
+- Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Alt dizinlerdeki görüntüleri dizinin Version2 dizin hariç tüm .jpg dosyaları eklemek için  
   
--   Aşağıdaki `Include` ve `Exclude` öznitelikleri:  
+- Aşağıdaki `Include` ve `Exclude` öznitelikleri:  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Yalnızca sürüm yapılarında Formula.vb dosya eklemek için  
   
--   Kullanım bir `Condition` özniteliği aşağıdakine benzer:  
+- Kullanım bir `Condition` özniteliği aşağıdakine benzer:  
   
     ```  
     <Compile  

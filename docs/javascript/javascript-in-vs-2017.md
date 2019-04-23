@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041254"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017’de JavaScript
 
@@ -52,14 +52,14 @@ JavaScript dosyalarını derlemek için bir `tsconfig.json` dosya eklenmelidir v
 
 Tsconfig dosya için gerekli ayarları aşağıdaki gibidir:
 
- - `allowJs`: Bu değer ayarlanmalıdır `true` tanınması JavaScript dosyaları için. Varsayılan değer `false`, çünkü TypeScript JavaScript derler ve derleyicinin yalnızca derlenmiş dosyalar içermemelidir.
- - `outDir`: Bu değer, yayılan JavaScript dosyaları algılanmaz ve sonra projeye dahil edebilmesi projede yer almayan bir konuma ayarlamanız gerekir (bkz `exclude`).
- - `module`: Modülleri kullanılıyorsa, bu ayar gösterilen kod kullanması gereken hangi modül biçimi derleyiciye (örneğin `commonjs` düğümüne veya paketleyicileri Browserify gibi).
- - `exclude`: Bu ayar, projede içermeyecek şekilde klasörleri belirtir.
- Proje-olmayan klasörler gibi yanı sıra çıkış konumunu `node_modules` veya `temp`, bu ayarı eklenmesi gerekir.
- - `enableAutoDiscovery`: Bu ayar, daha önce belirtildiği gibi otomatik algılama ve tanım dosyalarını indirilmesini sağlar.
- - `compileOnSave`: Bu ayar, Visual Studio'da herhangi bir kaynak dosyası kaydedildiğinde derlemeniz, derleyiciye bildirir.
- - `typeAcquisition`: Bu ayarları kümesi otomatik tür alımı davranışını denetleyen (daha ayrıntılı olarak açıklayın [Bu bölümde](/visualstudio/ide/javascript-intellisense#Auto))
+- `allowJs`: Bu değer ayarlanmalıdır `true` tanınması JavaScript dosyaları için. Varsayılan değer `false`, çünkü TypeScript JavaScript derler ve derleyicinin yalnızca derlenmiş dosyalar içermemelidir.
+- `outDir`: Bu değer, yayılan JavaScript dosyaları algılanmaz ve sonra projeye dahil edebilmesi projede yer almayan bir konuma ayarlamanız gerekir (bkz `exclude`).
+- `module`: Modülleri kullanılıyorsa, bu ayar gösterilen kod kullanması gereken hangi modül biçimi derleyiciye (örneğin `commonjs` düğümüne veya paketleyicileri Browserify gibi).
+- `exclude`: Bu ayar, projede içermeyecek şekilde klasörleri belirtir.
+Proje-olmayan klasörler gibi yanı sıra çıkış konumunu `node_modules` veya `temp`, bu ayarı eklenmesi gerekir.
+- `enableAutoDiscovery`: Bu ayar, daha önce belirtildiği gibi otomatik algılama ve tanım dosyalarını indirilmesini sağlar.
+- `compileOnSave`: Bu ayar, Visual Studio'da herhangi bir kaynak dosyası kaydedildiğinde derlemeniz, derleyiciye bildirir.
+- `typeAcquisition`: Bu ayarları kümesi otomatik tür alımı davranışını denetleyen (daha ayrıntılı olarak açıklayın [Bu bölümde](/visualstudio/ide/javascript-intellisense#Auto))
 
 CommonJS modüller için JavaScript dosyalarını dönüştürmek ve bunları yerleştirmek için bir `./out` klasöründe aşağıdaki kullanabileceğinizi `tsconfig.json` dosyası:
 

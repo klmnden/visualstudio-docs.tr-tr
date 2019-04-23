@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81c85adc3aaa3bedb92709ce59dd2192a6756473
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062223"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla koruma
   Microsoft Office Excel koruma özelliği, kullanıcıları ve kod çalışma sayfasındaki nesneleri değiştirmesini önlemeye yardımcı olur. Korumayı etkinleştirme sonra varsayılan olarak, tüm hücreler kilitlenir.
@@ -44,7 +44,7 @@ ms.locfileid: "56601245"
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>Belirli aralıkları düzenlemeye izin vermek için
 
-1.  İçinde **değişiklikleri** grubunu **gözden geçirme** sekmesini tıklatın, **düzenlemesine izin kullanıcılara**.
+1. İçinde **değişiklikleri** grubunu **gözden geçirme** sekmesini tıklatın, **düzenlemesine izin kullanıcılara**.
 
      **Düzenlemesine izin kullanıcılara** iletişim kutusu görüntülenir. Bir parola ve parola kullanmadan aralıkları düzenleyebilecek kullanıcıları kullanarak kilitsiz aralıkları belirtebilirsiniz.
 
@@ -53,14 +53,14 @@ ms.locfileid: "56601245"
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesinde kod kullanarak bir çalışma sayfasını korumak için
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> çalışma sayfasının yöntemi. Bu örnek adlı bir çalışma sayfası ile çalıştığını varsayar `Sheet1`.
+1. Çağrı <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> çalışma sayfasının yöntemi. Bu örnek adlı bir çalışma sayfası ile çalıştığını varsayar `Sheet1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Bir VSTO eklenti kod kullanarak bir çalışma sayfasını korumak için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> etkin çalışma sayfasının yöntemi.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> etkin çalışma sayfasının yöntemi.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]

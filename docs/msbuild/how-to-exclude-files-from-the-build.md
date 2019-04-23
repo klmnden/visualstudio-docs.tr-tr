@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a798f200734dd4db885aee4a25258bfdb49c69c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f30454cb88b9310e78af70997949d970a161027a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044895"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Nasıl yapılır: Dosyaları derlemeden dışlama
 Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz. Ancak, bir dosya dizinine veya bir dizin, iç içe geçmiş bir derleme için giriş olarak dahil etmek istemediğiniz dizinler kümesi olabilir. Açıkça girişleri listesinden söz konusu dosya veya dizin dışlayabilirsiniz. Ayrıca olabilir bir dosyayı yalnızca belirli koşullar altında dahil etmek istediğiniz bir proje. Bir yapı içinde bir dosya dahil koşullar açıkça bildirebilirsiniz.
@@ -36,7 +36,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Tüm içerecek şekilde *.cs* veya *.vb* dışında dosyaları *Form2*
 
--   Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:
+- Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Tüm içerecek şekilde *.cs* veya *.vb* dışında dosyaları *Form2* ve *Form3*
 
--   Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:
+- Aşağıdakilerden birini kullanın `Include` ve `Exclude` öznitelikleri:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Tüm içerecek şekilde *.jpg* dizinlerindeki dosyaları *görüntüleri* hariç dizin *Version2* dizini
 
--   Aşağıdaki `Include` ve `Exclude` öznitelikleri:
+- Aşağıdaki `Include` ve `Exclude` öznitelikleri:
 
     ```xml
     <JPGFile
@@ -80,7 +80,7 @@ Bir proje dosyasında tüm dosyaları bir derleme için girdi olarak bir dizin v
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Dosya eklemek için *Formula.vb* yayın derlemeleri de yalnızca
 
--   Kullanım bir `Condition` özniteliği aşağıdakine benzer:
+- Kullanım bir `Condition` özniteliği aşağıdakine benzer:
 
     ```xml
     <Compile

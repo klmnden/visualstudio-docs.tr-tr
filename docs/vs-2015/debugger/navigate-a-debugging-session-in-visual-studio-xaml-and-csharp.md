@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059883"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Visual Studio’da (Xaml ve C#) bir hata ayıklama oturumunda gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 ## <a name="in-this-topic"></a>Bu konuda
  Bilgi edinmek nasıl yapılır:
 
--   [Örnek uygulamayı oluşturma](#BKMK_CreateTheApplication)
+- [Örnek uygulamayı oluşturma](#BKMK_CreateTheApplication)
 
--   [Ayarlayın ve program verileri incelemek için bir kesme noktası, bir yöntem adımla çalıştırın](#BKMK_StepInto)
+- [Ayarlayın ve program verileri incelemek için bir kesme noktası, bir yöntem adımla çalıştırın](#BKMK_StepInto)
 
--   [İçine, üzerine ve dışına yöntemleri adım](#BKMK_StepIntoOverOut)
+- [İçine, üzerine ve dışına yöntemleri adım](#BKMK_StepIntoOverOut)
 
--   [Koşullu kesme noktası ayarlayın, imleci çalıştırmak ve bir değişken görselleştirin](#BKMK_ConditionCursorVisualize)
+- [Koşullu kesme noktası ayarlayın, imleci çalıştırmak ve bir değişken görselleştirin](#BKMK_ConditionCursorVisualize)
 
--   [Düzenle ve devam etmek için bir özel durumdan kurtarma](#BKMK_EditContinueRecoverExceptions)
+- [Düzenle ve devam etmek için bir özel durumdan kurtarma](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Örnek uygulamayı oluşturma
+## <a name="BKMK_CreateTheApplication"></a> Örnek uygulamayı oluşturma
  Örnek uygulama, yalnızca hata ayıklama oturumu gezinme nasıl çalıştığı ve nasıl program durumunu inceleyebilir ve görebilirsiniz bir kaynak dosyası oluşturmak için Windows Store uygulaması çerçevesini kullanır. Bu nedenle, hata ayıklama, kodla ilgilidir. Tüm çağırır, kodun ana sayfasında oluşturucudan çağrılır; Hiçbir denetim eklenir ve hiçbir olay işlenir.
 
  **Bir varsayılan C# Windows Store uygulaması oluşturacaksınız.** Visual Studio'yu açın. Giriş sayfasından Yeni'yi seçin **yeni proje** bağlantı. Yeni Proje iletişim kutusunda, seçmek **Visual C#** içinde **yüklü** listeleyin ve ardından **Windows Store**. Proje şablonları listesinde seçin **uygulama**. Visual Studio yeni çözüm ve proje oluşturur ve MainPage.xaml Tasarımcısı ve XAML Kod düzenleyicisinde görüntüler.
@@ -56,7 +56,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
  Şimdi, bu konudaki örnekleri birlikte izleyebilirsiniz.
 
-##  <a name="BKMK_StepInto"></a> Ayarlayın ve program verileri incelemek için bir kesme noktası, bir yöntem adımla çalıştırın
+## <a name="BKMK_StepInto"></a> Ayarlayın ve program verileri incelemek için bir kesme noktası, bir yöntem adımla çalıştırın
  Bir hata ayıklama oturumu başlatabilirsiniz en yaygın yolu seçmektir **hata ayıklamayı Başlat** gelen **hata ayıklama** menü (klavye: F5). Yürütme başlar ve bir kesme noktasına ulaşıldığında, el ile özel bir durum oluştuğunda, yürütme askıya veya uygulama sona kadar devam eder.
 
  Yürütme hata ayıklayıcıda askıya alındığında, değişkenin fare gelerek bir veri ipucunda etkin bir değişkenin değerini görüntüleyebilirsiniz. Etkin değişkenleri ve geçerli değerlerini listesini görmek için Yereller ve Arabalar'da windows da açabilirsiniz. Bir veya daha fazla değişkenleri uygulama yürütme devam ettikçe değişkenlerinin değere odaklanmak bir Gözcü penceresi imkan tanır ekleniyor.
@@ -112,7 +112,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
   Birden çok izleme penceresi değişkenleri izleyebilirsiniz. Değerleri Yereller ve veri ipucu windows gibi izlenen değişkenlerin değerleri, her yürütme askıya alındığında güncelleştirilir. Kod düzenleyicisinden İzle penceresine değişkenler de ekleyebilirsiniz. İzlemek için değişkeni seçin, sağ tıklatın ve ardından **Gözcü Ekle**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> İçine, üzerine ve dışına yöntemleri adım
+## <a name="BKMK_StepIntoOverOut"></a> İçine, üzerine ve dışına yöntemleri adım
  Üst yöntemi tarafından adlı bir yöntem içine Adımlama, aksine bir yöntem Adımlama alt yöntemini yürütür ve üst sürdürür olarak çağıran yöntem yürütme bekletir. Yöntem çalışır ve yürütme göreceğiniz Araştırdığınız sorunun etkilemez eminseniz işlemleriyle ilgili bilgi sahibi olduğunda bir yöntem adım.
 
  Bir yöntem çağrısı içermiyor kod satırı Adımlama, satır satır Adımlama gibi yürütür.
@@ -144,7 +144,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
  **Hata ayıklamayı durdurun.** Hata Ayıklama menüsünde, hata ayıklamayı Durdur seçin (klavye: Shift + F5). Bu, hata ayıklama oturumunuzu sonlandırır.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Koşullu kesme noktası ayarlayın, imleci çalıştırmak ve bir değişken görselleştirin
+## <a name="BKMK_ConditionCursorVisualize"></a> Koşullu kesme noktası ayarlayın, imleci çalıştırmak ve bir değişken görselleştirin
  Koşullu kesme noktası yürütmeyi askıya almak hata ayıklayıcı neden olan bir koşulu belirtir. Koşul true veya false sonucu verebilen herhangi bir kod ifade belirtilir. Örneğin, yalnızca bir değişken belirli bir değere ulaştığında sıkça çağrılan yöntemde programınızın durumunu incelemek için bir koşullu kesme noktası kullanabilirsiniz.
 
  İmlece gitme, tek seferlik bir kesme noktası ayarlama gibi ' dir. Yürütme askıya alındığında, kaynak olarak bir satır seçin ve seçilen satırın ulaşılana kadar yürütmeyi devam. Örneğin, olabileceğiniz olması bir yöntem bir döngüde üzerinden adımlama ve döngü içinde kod doğru şekilde çalıştığını belirlemek. Döngünün her yinelemesinden Adımlama yerine, döngü yürütüldükten sonra konumlandırılmış bir imleç çalıştırabilirsiniz.
@@ -180,7 +180,7 @@ Bu hızlı başlangıçta, Visual Studio hata ayıklama oturumları gitmek ve g�
 
  **Hata ayıklamayı durdurun.** Hata Ayıklama menüsünde, hata ayıklamayı Durdur seçin (klavye: Shift + F5). Bu, hata ayıklama oturumunuzu sonlandırır.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Düzenle ve devam etmek için bir özel durumdan kurtarma
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Düzenle ve devam etmek için bir özel durumdan kurtarma
  Visual Studio hata ayıklayıcısı koda böldüğünüzde bazı durumlarda, değişkenlerin değerini ve hatta deyimlerinin logics değiştirme olanağına sahiptir. Bu işlev, düzen olarak adlandırılır ve devam edin.
 
  Düzenle ve devam et sırasında bir özel durum böldüğünüzde özellikle kullanışlı olabilir. Özel durumdan kaçınmak için bir uzun ve ilgili yordam hata ayıklamayı yeniden başlatmak ve durdurmak zorunda kalmak yerine, "hemen özel durum oluşmadan önceki yürütme noktasına taşımak için özel durumu geriye doğru İzle" ve sorunlu değişken veya deyimi değiştirin ve Geçerli hata ayıklama oturumu ile bir özel durum oluşturmaz durumda devam edin.

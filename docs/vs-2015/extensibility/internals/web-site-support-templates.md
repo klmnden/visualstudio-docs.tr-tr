@@ -10,12 +10,12 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044384"
 ---
 # <a name="web-site-support-templates"></a>Web Sitesi Destek Şablonları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,66 +35,66 @@ ms.locfileid: "54801982"
 ## <a name="project-templates"></a>Proje şablonları  
  Yanıt olarak yeni Web siteleri oluşturmak için kullanılan Web sitesi projesi şablonları **yeni Web sitesi** komutunu **dosya** menüsü. Şu anda desteklenen üç Web sitesi projesi türleri:  
   
--   Boş Web sitesi projeleri  
+- Boş Web sitesi projeleri  
   
--   Web sitesi projeleri  
+- Web sitesi projeleri  
   
--   Web hizmeti projelerini Microsoft Azure  
+- Web hizmeti projelerini Microsoft Azure  
   
 ### <a name="empty-web-site-projects"></a>Boş Web sitesi projeleri  
  Bu dosyalar, yanıt olarak yeni bir boş Web sitesi oluşturma **boş Web sitesi** işaret sonra kullanılabilir olan komut **yeni Web sitesi** üzerinde **dosya** menüsü:  
   
--   EmptyWeb.vstemplate  
+- EmptyWeb.vstemplate  
   
      Yeni bir boş Web sitesi oluşturmayı kılavuzları şablon dosyası.  
   
--   EmptyWeb.webproj  
+- EmptyWeb.webproj  
   
      Bu dosya, proje şablonu sisteminin bir yapıdır. Bu proje dosyası başvurusu EmptyWeb.vstemplate dosyasındaki karşılar.  
   
 ### <a name="web-site-projects"></a>Web sitesi projeleri  
  Bu dosyalar, yanıt olarak yeni bir Web sitesi oluşturma **ASP.NET Web sitesi** işaret sonra kullanılabilir olan komut **yeni Web sitesi** üzerinde **dosya** menüsü:  
   
--   Default.aspx  
+- Default.aspx  
   
      Yeni Web sitesi için varsayılan giriş sayfası. Language özniteliği codebehind dilini belirtir ve bu sayfayla ilişkili codebehind kodu içeren bağımlı dosya CodeFile özniteliği belirtir.  
   
--   Default.aspx.*extension*  
+- Default.aspx.*extension*  
   
      Bağımlı dosya varsayılan giriş sayfasını codebehind kodunu içerir. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
--   Web.config  
+- Web.config  
   
      Kök web.site yapılandırma dosyası.  
   
--   WebApplication.vstemplate  
+- WebApplication.vstemplate  
   
      Web sitesi çözüm içeriğini belirler ve App_Data klasöründe oluşturulmasını zorlar şablon dosyası.  
   
--   WebApplication.webproj  
+- WebApplication.webproj  
   
      Bu dosya, proje şablonu sisteminin bir yapıdır. Bu proje dosyası başvurusu WebApplication.vstemplate dosyasındaki karşılar.  
   
 ### <a name="web-service-projects"></a>Web hizmeti projelerini Microsoft Azure  
  Bu dosyalar, yanıt olarak yeni bir Web sitesi oluşturma **ASP.NET Web hizmeti** işaret sonra kullanılabilir olan komut **yeni Web sitesi** üzerinde **dosya** menüsü:  
   
--   Service.asmx  
+- Service.asmx  
   
      Yeni bir Web hizmeti için HTML sayfası. Language özniteliği codebehind dilini belirtir ve bu hizmetle ilişkili codebehind kodu içeren bağımlı dosya CodeBehind özniteliğinin belirtir.  
   
--   Hizmeti. *Uzantı*  
+- Hizmeti. *Uzantı*  
   
      Bağımlı dosya hizmet sınıfını uygular. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
--   Web.config  
+- Web.config  
   
--   Kök web.site yapılandırma dosyası.  
+- Kök web.site yapılandırma dosyası.  
   
--   WebService.vstemplate  
+- WebService.vstemplate  
   
      Web sitesi çözüm içeriğini belirler ve App_Data ve App_Code klasörleri oluşturulmasını zorlar şablon dosyası. Hizmet. *uzantısı* dosya, App_Code klasörüne kopyalanır.  
   
--   WebService.webproj  
+- WebService.webproj  
   
      Bu dosya, proje şablonu sisteminin bir yapıdır. Bu proje dosyası başvurusu WebService.vstemplate dosyasındaki karşılar.  
   
@@ -104,33 +104,33 @@ ms.locfileid: "54801982"
 ## <a name="project-item-templates"></a>Proje öğesi şablonları  
  Yeni Web sayfaları yanıt olarak bir Web sitesi eklemek için kullanılan Web sitesi proje öğesi şablonları **varolan öğeyi Ekle** komutu. Şu anda, bu tür bir Web sayfaları desteklenmektedir:  
   
--   Yeni sınıfı  
+- Yeni sınıfı  
   
--   Yeni HTML sayfası  
+- Yeni HTML sayfası  
   
--   Yeni Web formu  
+- Yeni Web formu  
   
--   Yeni ana sayfası  
+- Yeni ana sayfası  
   
 ### <a name="new-class"></a>Yeni sınıfı  
  Bu şablon, yanıt olarak boş bir sınıf tanımlayan yeni bir kaynak dosyası oluşturur. **yeni sınıf Ekle** komutu.  
   
--   sınıf. *Uzantı*  
+- sınıf. *Uzantı*  
   
      Boş sınıf uygulayan kaynak dosyası. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
--   Class.vstemplate  
+- Class.vstemplate  
   
      Kaynak dosyası oluşturur ve içeriğini belirleyen şablon dosyası.  
   
 ### <a name="new-html-page"></a>Yeni HTML sayfası  
  Bu şablon, yanıt olarak yeni bir Web sayfası oluşturur. **yeni HTML sayfası Ekle** komutu.  
   
--   HTMLPage.htm  
+- HTMLPage.htm  
   
      Başlangıç Web sayfası içeriği. Bu Web sayfası, genellikle hiçbir ilişkili codebehind bağımlı dosya vardır. Akıllı bir sayfa ile ilişkili bir dosyası oluşturmak için Web formu şablonu kullanın.  
   
--   HTMLPage.vstemplate  
+- HTMLPage.vstemplate  
   
      Web sayfası oluşturur ve içeriğini belirleyen şablon dosyası.  
   
@@ -141,27 +141,27 @@ ms.locfileid: "54801982"
   
  Seçilen ana sayfa için içerik sayfası oluşturmak için Seç **Select ana sayfa**.  
   
--   WebForm.aspx  
+- WebForm.aspx  
   
      Başlangıç Web sayfası içeriği. Bu Web sayfası hiçbir ilişkili codebehind bağımlı dosya vardır.  
   
--   WebForm_cb.aspx  
+- WebForm_cb.aspx  
   
      Başlangıç Web sayfası içeriği. Bu Web sayfasında ilişkili codebehind bağımlı dosya vardır.  
   
--   Codebehind. *Uzantı*  
+- Codebehind. *Uzantı*  
   
      Bağımlı dosya webform sınıfı uygular. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
--   ContentPage.aspx  
+- ContentPage.aspx  
   
      İçerik sayfası olarak Web sayfasının başlangıç içeriği. Bu Web sayfası hiçbir ilişkili codebehind bağımlı dosya vardır.  
   
--   ContentPage_cb.aspx  
+- ContentPage_cb.aspx  
   
      İçerik sayfası olarak Web sayfasının başlangıç içeriği. Bu Web sayfasında ilişkili codebehind bağımlı dosya vardır.  
   
--   WebForm.vstemplate  
+- WebForm.vstemplate  
   
      Varsa yeni web sayfası ve onun bağımlı dosya içeriğini belirleyen şablon dosyası.  
   
@@ -170,19 +170,19 @@ ms.locfileid: "54801982"
   
  Bağımlı bir kaynak dosyası oluşturmak için Seç **kod ayrı dosyaya Yerleştir**. Aksi takdirde tek bir Web sayfası boş bir komut dosyası bloğu ve Hayır sahip oluşturulur \<% sayfa % > bağımlı bir dosyanın yeteneklerinizi yönergeleri.  
   
--   MasterPage.master  
+- MasterPage.master  
   
      Ana sayfaya başlangıç içeriği. Bu ana sayfası hiçbir ilişkili codebehind bağımlı dosya vardır.  
   
--   MasterPage_cb.master  
+- MasterPage_cb.master  
   
      Ana sayfaya başlangıç içeriği. Bu ana sayfanın ilişkili codebehind bağımlı dosya vardır.  
   
--   Codebehind. *uzantısı*  
+- Codebehind. *uzantısı*  
   
      Ana sayfa sınıfın uyguladığı bağımlı dosya. Codebehind dili belirler *uzantısı* bu dosyanın.  
   
--   MasterPage.vstemplate  
+- MasterPage.vstemplate  
   
      Varsa yeni bir ana sayfa ve onun bağımlı dosya içeriğini belirleyen şablon dosyası.  
   

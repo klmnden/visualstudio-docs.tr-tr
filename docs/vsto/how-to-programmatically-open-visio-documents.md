@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b87d3b1659d46a69e5a2e950997d3c0474e84d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037861"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Nasıl yapılır: Program aracılığıyla Visio belgelerini açma
   Mevcut Microsoft Office Visio belgelerini açma için iki yöntem vardır: Açık ve OpenEx. OpenEx yöntemi, çağırana nasıl belge açılır belirtebilirsiniz bağımsız değişkenleri sağlar dışında açık yönteme aynıdır.
@@ -29,7 +29,7 @@ ms.locfileid: "56598394"
 
 ### <a name="to-open-a-visio-document"></a>Visio belgelerini açma
 
--   Çağrı `Microsoft.Office.Interop.Visio.Documents.Open` yöntemi ve tedarik Visio belgenin tam yolu.
+- Çağrı `Microsoft.Office.Interop.Visio.Documents.Open` yöntemi ve tedarik Visio belgenin tam yolu.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
@@ -38,7 +38,7 @@ ms.locfileid: "56598394"
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>Salt okunur ve dayalı olarak bir Visio belgelerini açma
 
--   Çağrı `Microsoft.Office.Interop.Visio.Documents.OpenEx` yöntemi, Visio belgesi tam yolunu girin ve kullanmak istediğiniz bağımsız değişkenleri ekleyin; bu durum, yerleşik ve salt okunur.
+- Çağrı `Microsoft.Office.Interop.Visio.Documents.OpenEx` yöntemi, Visio belgesi tam yolunu girin ve kullanmak istediğiniz bağımsız değişkenleri ekleyin; bu durum, yerleşik ve salt okunur.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]
@@ -46,7 +46,7 @@ ms.locfileid: "56598394"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu kod örneği için aşağıdakiler gereklidir:
 
--   Adlı bir Visio belgesini `myDrawing.vsd` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
+- Adlı bir Visio belgesini `myDrawing.vsd` adlı bir dizinde bulunmalıdır `Test` içinde *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visio çözümleri](../vsto/visio-solutions.md)

@@ -8,21 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1289aa8da4bb61d8c5cae6ca79257291a14f8ce9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c17686ab0e14e483019416560c3fa06ce6aa3206
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056997"
 ---
 # <a name="xml-schema-designer"></a>XML Şema Tasarımcısı
 
 XML şema Tasarımcısı'nı (XSD Tasarımcısı) soyutlama farklı düzeyde ayarlanmış bir şema görselleştirmenize olanak tanıyan bir grafik aracıdır. XSD Tasarımcısı'nın ana bileşenleri şunlardır:
 
--   [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md) göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanır.
+- [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md) göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanır.
 
--   [Başlangıç görünümündeki](../xml-tools/start-view.md) başlatma noktası XSD Tasarımcısı; başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın.
+- [Başlangıç görünümündeki](../xml-tools/start-view.md) başlatma noktası XSD Tasarımcısı; başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın.
 
--   [Graf görünümünü](../xml-tools/graph-view.md) bakış şema kümesine ve şema düğümler arasındaki ilişkileri görmenize olanak sağlar.
+- [Graf görünümünü](../xml-tools/graph-view.md) bakış şema kümesine ve şema düğümler arasındaki ilişkileri görmenize olanak sağlar.
 
--   [İçerik modeli görünümünü](../xml-tools/content-model-view.md) basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi sağlar.
+- [İçerik modeli görünümünü](../xml-tools/content-model-view.md) basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi sağlar.

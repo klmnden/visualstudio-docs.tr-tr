@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061716"
 ---
 # <a name="when-to-create-project-types"></a>Proje Türlerinin Oluşturulacağı Durumlar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ Yeni bir proje türü oluşturmayı sağlayan temel özelleştirmek için [!INCL
 ## <a name="create-a-new-project-type"></a>Yeni bir proje türü oluştur  
  Özelleştirmek istiyorsanız, bir proje türü oluşturmalısınız [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bir veya daha fazla aşağıdaki yollardan biriyle davranacak şekilde:  
   
--   Yapıya katılan, dağıtım, yapılandırmaları ve kaynak denetimi.  
+- Yapıya katılan, dağıtım, yapılandırmaları ve kaynak denetimi.  
   
--   Hata ayıklama desteği sunar.  
+- Hata ayıklama desteği sunar.  
   
--   Proje öğeleri görüntülemek **Çözüm Gezgini**.  
+- Proje öğeleri görüntülemek **Çözüm Gezgini**.  
   
--   Kullanım **Proje Aç** veya **yeni proje** iletişim kutusu.  
+- Kullanım **Proje Aç** veya **yeni proje** iletişim kutusu.  
   
--   Proje iç içe geçirmeyi destekler.  
+- Proje iç içe geçirmeyi destekler.  
   
 ## <a name="extend-an-existing-project-type"></a>Mevcut bir proje türünü genişletme  
  Kullanabileceğiniz yeni bir proje türü oluşturmak isteyebilirsiniz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] değiştirin veya varolan bir proje türünü davranışını genişletmek için aşağıdaki yollarla, örneğin, yapı işlemi için değiştirme [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projeleri:  
   
--   Birden çok dosya ile tek bir birim olarak çalışır.  
+- Birden çok dosya ile tek bir birim olarak çalışır.  
   
--   Tek bir dosya alt öğelerinin bir hiyerarşi görüntüler.  
+- Tek bir dosya alt öğelerinin bir hiyerarşi görüntüler.  
   
--   Bir komut içerik düzenleyicileri geçici olarak görüntüler.  
+- Bir komut içerik düzenleyicileri geçici olarak görüntüler.  
   
--   Hizmet bağlamı için düzenleyicileri görüntüler.  
+- Hizmet bağlamı için düzenleyicileri görüntüler.  
   
 ## <a name="use-an-existing-project-type"></a>Mevcut bir proje türünü kullanın.  
  Yeni proje oluşturma bazen gerekli değildir. Aşağıdaki tabloda bir proje türü için oluşturmak zorunda değilsiniz görevler gösterilmektedir.  

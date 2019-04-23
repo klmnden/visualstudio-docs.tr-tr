@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2fa3e57660b6ac68fdc792f3837a9766b497a78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053865"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için kod çözümlemesini elle çalıştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,6 +25,6 @@ Kod Analizi aracı bilgileri, kaynak kodunuzdaki olası hataları hakkında sağ
   
 ### <a name="to-run-code-analysis-manually"></a>İçin kod çözümlemesini elle çalıştırma  
   
-1.  İçinde **Çözüm Gezgini**, projeye tıklayın.  
+1. İçinde **Çözüm Gezgini**, projeye tıklayın.  
   
-2.  Üzerinde **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır** *proje adı*.
+2. Üzerinde **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır** *proje adı*.

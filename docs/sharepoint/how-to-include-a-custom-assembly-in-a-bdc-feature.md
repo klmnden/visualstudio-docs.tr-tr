@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efbbef540ddd7759fe0614eecccc663368bd23b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059629"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Nasıl yapılır: İçinde bir BDC özelliğine özel bir derlemeyi etme
   Projenizi derlemeleri aynı çözümdeki diğer projelerden başvuruda bulunabilir. Projenin özellik dosyasına kullanarak bu derlemeleri ancak eklemelisiniz **Ata başvurulan bütünleştirilmiş kodları LobSystem için** iletişim kutusu.
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Bir iş verileri bağlantısı (BDC) özelliği bir özel bütünleştirilmiş kod eklemek için
 
-1.  İçinde **Çözüm Gezgini**, İVB Modeli içeren klasörü seçin.
+1. İçinde **Çözüm Gezgini**, İVB Modeli içeren klasörü seçin.
 
-2.  Üzerinde **görünümü** menüsünde tıklatın **Özellikler penceresi**.
+2. Üzerinde **görünümü** menüsünde tıklatın **Özellikler penceresi**.
 
-3.  İçinde **özellikleri** penceresinde seçin **derlemeleri** özelliği ve üç nokta düğmesini (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcı elips")).
+3. İçinde **özellikleri** penceresinde seçin **derlemeleri** özelliği ve üç nokta düğmesini (![ASP.NET Mobil Tasarımcısı elips](../sharepoint/media/mwellipsis.gif "ASP.NET Mobil Tasarımcı elips")).
 
      **Ata başvurulan bütünleştirilmiş kodları LobSystem için** iletişim kutusu görüntülenir.
 
-4.  İçinde **bir derleme seçin** listesinde, özel bir derlemeyi seçin.
+4. İçinde **bir derleme seçin** listesinde, özel bir derlemeyi seçin.
 
     > [!NOTE]
     >  Derlemeleri yalnızca görünür **Ata başvurulan bütünleştirilmiş kodları LobSystem için** derlemeyi içeren projeye başvuru eklediyseniz iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Başvurular ekleme veya kaldırma Başvuru Ekle iletişim kutusunu kullanarak](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-5.  İçinde **başvurusu özellikleri** için açılan listeyi açın, grup **LobSystem kapsamı** özelliği, özel bir derlemeyi kullanın ve ardından yöntemleri LOB sistemine seçin **Tamam**  düğmesi.
+5. İçinde **başvurusu özellikleri** için açılan listeyi açın, grup **LobSystem kapsamı** özelliği, özel bir derlemeyi kullanın ve ardından yöntemleri LOB sistemine seçin **Tamam**  düğmesi.
 
     > [!NOTE]
     >  Özel derleme kodunda hata ayıklamak için derleme çözüm paketine eklemeniz gerekir. Daha fazla bilgi için [nasıl yapılır: Ek derlemeler ekleyip](../sharepoint/how-to-add-and-remove-additional-assemblies.md).

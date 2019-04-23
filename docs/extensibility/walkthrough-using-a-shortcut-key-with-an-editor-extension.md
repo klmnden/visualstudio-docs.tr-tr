@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048694"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>İzlenecek yol: Düzenleyici uzantısı ile kısayol tuşu kullanma
 Kısayol tuşları için düzenleyici uzantı yanıt verebilir. Aşağıdaki örneklerde, bir kısayol tuşu kullanarak görünüm kenarlığı metin görünümü ekleme işlemi gösterilmektedir. Bu izlenecek yol, Görünüm penceresi kenarlığı Düzenleyicisi şablonunu temel alıyorsa ve kenarlığı kullanarak eklemek imkan + karakter.
@@ -61,9 +61,9 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
 
  Komut filtre uygulamasıdır <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, hangi işleme komut kenarlığı oluşturarak.
 
-1.  Bir sınıf dosyası ekleyin ve adlandırın `KeyBindingCommandFilter`.
+1. Bir sınıf dosyası ekleyin ve adlandırın `KeyBindingCommandFilter`.
 
-2.  Aşağıdaki using deyimlerini.
+2. Aşağıdaki using deyimlerini.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
 
     ```
 
-3.  KeyBindingCommandFilter adlı sınıfını alması gerektiğini <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. KeyBindingCommandFilter adlı sınıfını alması gerektiğini <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  Metin görünümü için özel alanlar, sonraki komutu komut zinciri ve komut filtresi zaten eklenmiş olup olmadığını göstermek için bir bayrak ekleyin.
+4. Metin görünümü için özel alanlar, sonraki komutu komut zinciri ve komut filtresi zaten eklenmiş olup olmadığını göstermek için bir bayrak ekleyin.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
     internal bool m_adorned;
     ```
 
-5.  Metin görünümünü ayarlayan bir oluşturucu ekleyin.
+5. Metin görünümünü ayarlayan bir oluşturucu ekleyin.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
     }
     ```
 
-6.  Uygulama `QueryStatus()` yöntemini aşağıdaki şekilde.
+6. Uygulama `QueryStatus()` yöntemini aşağıdaki şekilde.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
     }
     ```
 
-7.  Uygulama `Exec()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi (**+**) karakter türü.
+7. Uygulama `Exec()` bir artı işareti, BT'nin mor kutusu görünümüne ekler, böylece yöntemi (**+**) karakter türü.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>(Visual Studio 2017 sürüm 15.6 önce) komut Filtre Ekle
  Kenarlığı sağlayıcısı için metin görünümü bir komutu filtresi eklemeniz gerekiyor. Bu örnekte, sağlayıcı uygulayan <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> metni görünümü oluşturma olayları dinleyecek şekilde. Bu kenarlığı sağlayıcısı ayrıca kenarlığı Z-sıralamasını tanımlar kenarlığı katmanı dışa aktarır.
 
-1.  KeyBindingTestTextViewCreationListener dosyasına aşağıdakileri ekleyin using deyimlerini:
+1. KeyBindingTestTextViewCreationListener dosyasına aşağıdakileri ekleyin using deyimlerini:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
 
     ```
 
-2.  Metin görünümü bağdaştırıcısı almak için aktarmalısınız <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. Metin görünümü bağdaştırıcısı almak için aktarmalısınız <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
 
     ```
 
-3.  Değişiklik <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> olan ekler için yöntemi `KeyBindingCommandFilter`.
+3. Değişiklik <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> olan ekler için yöntemi `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Visual Studio 2017 sürüm 15.6 Düzenleyici uzantısı komutları işlemek içi
     }
     ```
 
-4.  `AddCommandFilter` İşleyicisi metin view bağdaştırıcısı alır ve komut filtre ekler.
+4. `AddCommandFilter` İşleyicisi metin view bağdaştırıcısı alır ve komut filtre ekler.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ Komut işleyici uygulamasıdır <xref:Microsoft.VisualStudio.Commanding.ICommand
        return false;
    }
    ```
+
    7. Kenarlığı katman tanımından kopyalama *KeyBindingTestTextViewCreationListener.cs* dosyasını *KeyBindingCommandHandler.cs* ve delete  *KeyBindingTestTextViewCreationListener.cs* dosyası:
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>Kod oluşturup test
 
-1.  KeyBindingTest Çözümü derleyin ve deneysel örneğinde çalıştırın.
+1. KeyBindingTest Çözümü derleyin ve deneysel örneğinde çalıştırın.
 
-2.  Oluşturun veya bir metin dosyası açın. Karakter içeren bazı sözcükleri yazın 'a' ve ardından yazın **+** metni görünümü herhangi bir yerindeki.
+2. Oluşturun veya bir metin dosyası açın. Karakter içeren bazı sözcükleri yazın 'a' ve ardından yazın **+** metni görünümü herhangi bir yerindeki.
 
      Mor kare dosyasındaki 'bir' her bir karakter görünmelidir.

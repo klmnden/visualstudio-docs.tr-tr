@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057829"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio'da C++ Kullanmaya Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
  [Uygulama sürümü oluşturma](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-##  <a name="BKMK_Configure"></a> Visual Studio'da oturum açın
+## <a name="BKMK_Configure"></a> Visual Studio'da oturum açın
  Visual Studio'yu ilk kez başlattığınızda, Live veya Outlook gibi bir Microsoft hesabı ile oturum açması olasılığını verilir. Oturum açarken ayarlarınızı tüm cihazlarınızda eşitlenmesine izin verir. Daha fazla bilgi için [Visual Studio'da oturum açma](../ide/signing-in-to-visual-studio.md)
 
  Şekil 1: Visual Studio IDE
@@ -42,7 +42,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
  Visual Studio'yu açtıktan sonra IDE üç temel bölümlerini görebilirsiniz: windows, menüler ve araç çubuklarını ve ana pencere alanını aracı. Araç pencereleri tutturulmuştur ve uygulama penceresinin sol tarafında ile **hızlı başlatma**, menü çubuğu ve en üstte standart araç çubuğu. Uygulama penceresinin merkezi içerir **başlangıç sayfası**. Bir çözüm veya projeyi açtığınızda, düzenleyiciler ve tasarımcılar Bu alanda görüntülenir. Uygulama geliştirirken zamanınızın çoğunu bu orta alanda geçireceksiniz.
 
-##  <a name="BKMK_CreateApp"></a> Basit bir uygulama oluşturma
+## <a name="BKMK_CreateApp"></a> Basit bir uygulama oluşturma
  Visual Studio'da bir uygulama oluşturduğunuzda, proje ve çözüm ilk oluşturun. Bu örnekte, bir Windows konsol uygulaması oluşturacaksınız.
 
 #### <a name="to-create-a-console-app"></a>Bir konsol uygulaması oluşturmak için
@@ -65,12 +65,12 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
    ![Çözüm Gezgini'nde çözüm dosyalarını](../ide/media/c-ide-solutioncontents.png "C ++ IDE_SolutionContents")
 
-##  <a name="BKMK_AddCode"></a> Uygulamanıza kod eklemek
+## <a name="BKMK_AddCode"></a> Uygulamanıza kod eklemek
  Ardından konsol penceresinde "Hello" word görüntülenecek kod ekleyeceksiniz.
 
 #### <a name="to-display-hello-in-the-console-window"></a>"Hello" Konsol penceresinde görüntülemek için
 
-1.  Boş bir satır satırından önce GreetingsConsoleApp.cpp dosyasında girin `return 0;` ve ardından aşağıdaki kodu girin:
+1. Boş bir satır satırından önce GreetingsConsoleApp.cpp dosyasında girin `return 0;` ve ardından aşağıdaki kodu girin:
 
     ```
     cout << "Hello\n";
@@ -84,7 +84,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
      [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) dahil \<iostream\> üst bilgi dosyası.
 
-2.  İostream üstbilgi eklemek için sonra aşağıdaki kodu girin. `#include "stdafx.h"`:
+2. İostream üstbilgi eklemek için sonra aşağıdaki kodu girin. `#include "stdafx.h"`:
 
     ```
     #include \<iostream\>
@@ -95,16 +95,16 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
      Altında kırmızı dalgalı çizgi `cout` hatayı düzeltmeniz kaybolur.
 
-3.  Değişiklikleri dosyaya kaydedin.
+3. Değişiklikleri dosyaya kaydedin.
 
      ![Cout hata düzeltmeleri kod](../ide/media/c-ide-coutfix.png "C ++ IDE_CoutFix")
 
-##  <a name="BKMK_DebugTest"></a> Hata ayıklama ve uygulamayı test etme
+## <a name="BKMK_DebugTest"></a> Hata ayıklama ve uygulamayı test etme
  "Hello" sözcüğünü konsol penceresinde görünür olup olmadığını görmek için GreetingsConsoleApp ayıklayabilirsiniz.
 
 #### <a name="to-debug-the-application"></a>Uygulamada hata ayıklamak için
 
--   Hata ayıklayıcıyı başlatın.
+- Hata ayıklayıcıyı başlatın.
 
      ![Hata ayıklama menüsünden hata ayıklamayı Başlat](../ide/media/exploreide-startdebugging.png "ExploreIDE StartDebugging")
 
@@ -128,7 +128,7 @@ Bu izlenecek yolu tamamlayarak, Visual Studio ile uygulamalar geliştirirken kul
 
    Daha fazla bilgi için [konsol projeleri](../debugger/debugging-preparation-console-projects.md).
 
-##  <a name="BKMK_BuildRelease"></a> Uygulama sürümü oluşturma
+## <a name="BKMK_BuildRelease"></a> Uygulama sürümü oluşturma
  Her şeyin çalıştığını doğruladığınıza göre artık, uygulamanın bir yayın derlemesini hazırlayabilirsiniz.
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Çözüm dosyalarını temizlemek ve yayın sürümünü oluşturmak için

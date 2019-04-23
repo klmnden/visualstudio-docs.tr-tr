@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ccd3d6b6f9c1d995a0aebb4bc1e3007e025ca5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051707"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Nasıl yapılır: Oturum uygulama ve dağıtım bildirimlerini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,43 +41,43 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Uygulama ve dağıtım bildirimlerini imzalamak için bir sertifika kullanıyor  
   
-1.  Proje Özellikleri penceresine gidin ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**, veya tür **proje özellikleri** içinde**Hızlı başlatma** penceresinde ya da alt + ENTER tuşlarına basın **Çözüm Gezgini** pencere). Üzerinde **imzalama** sekmesinde **ClickOnce bildirimlerini imzala** onay kutusu.  
+1. Proje Özellikleri penceresine gidin ('nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**, veya tür **proje özellikleri** içinde**Hızlı başlatma** penceresinde ya da alt + ENTER tuşlarına basın **Çözüm Gezgini** pencere). Üzerinde **imzalama** sekmesinde **ClickOnce bildirimlerini imzala** onay kutusu.  
   
-2.  Tıklayın **Store ' seçin** düğmesi.  
+2. Tıklayın **Store ' seçin** düğmesi.  
   
      **Bir sertifika seçin** iletişim kutusu görünür ve Windows sertifika deposunun içeriğini görüntüler.  
   
     > [!TIP]
     >  Tıklarsanız **sertifika özelliklerini görüntülemek için burayı tıklatın**, **sertifika ayrıntıları** iletişim kutusu görüntülenir. Bu iletişim kutusu sertifika ile ilgili ayrıntılı bilgiler içerir ve ek seçenekler içerir. Tıklayabilirsiniz **sertifikaları** Ek Yardım bilgilerini görüntülemek için.  
   
-3.  Bildirimleri imzalamak için kullanmak istediğiniz sertifikayı seçin.  
+3. Bildirimleri imzalamak için kullanmak istediğiniz sertifikayı seçin.  
   
-4.  Ayrıca, bir zaman damgası sunucusunun adresini belirleyebilirsiniz **zaman damgası sunucu URL'si** metin kutusu. Bu, bildirimin imzalandığı zamanı belirten bir zaman damgası sağlayan bir sunucudur.  
+4. Ayrıca, bir zaman damgası sunucusunun adresini belirleyebilirsiniz **zaman damgası sunucu URL'si** metin kutusu. Bu, bildirimin imzalandığı zamanı belirten bir zaman damgası sağlayan bir sunucudur.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Uygulama ve dağıtım bildirimlerini imzalamak için mevcut bir anahtar dosyasını kullanarak  
   
-1.  Üzerinde **imzalama** sayfasında **ClickOnce bildirimlerini imzala** onay kutusu.  
+1. Üzerinde **imzalama** sayfasında **ClickOnce bildirimlerini imzala** onay kutusu.  
   
-2.  Tıklayın **dosyadan Seç** düğmesi.  
+2. Tıklayın **dosyadan Seç** düğmesi.  
   
      **Dosya Seç** iletişim kutusu görüntülenir.  
   
-3.  İçinde **Dosya Seç iletişim** kutusunda, kullanmak ve ardından istediğiniz anahtar dosyanın (.pfx) konumuna göz atın **açık**.  
+3. İçinde **Dosya Seç iletişim** kutusunda, kullanmak ve ardından istediğiniz anahtar dosyanın (.pfx) konumuna göz atın **açık**.  
   
     > [!NOTE]
     >  Bu seçenek yalnızca .pfx uzantılı dosyaları destekler. Bir anahtar dosyası veya başka bir biçim, Windows sertifika deposuna kaydedin ve sertifikayı seçin sertifika varsa önceki yordamda açıklanmıştır. Seçilen sertifikanın amacı kod imzalamayı içermelidir.  
   
      **Dosyasını açmak için parola gir** iletişim kutusu görüntülenir. (.Pfx dosyası zaten Windows sertifika deponuza depolanır ve parola korumalı ise, bir parola girmeniz istenmez.)  
   
-4.  Anahtar dosyaya erişmek için parolayı girin ve ENTER tuşuna basın.  
+4. Anahtar dosyaya erişmek için parolayı girin ve ENTER tuşuna basın.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Uygulama ve dağıtım bildirimlerini imzalamak için bir test sertifikası kullanarak  
   
-1.  Üzerinde **imzalama** sayfasında **ClickOnce bildirimlerini imzala** onay kutusu.  
+1. Üzerinde **imzalama** sayfasında **ClickOnce bildirimlerini imzala** onay kutusu.  
   
-2.  Test için yeni bir sertifika oluşturmak için tıklayın **Test sertifikası Oluştur** düğmesi.  
+2. Test için yeni bir sertifika oluşturmak için tıklayın **Test sertifikası Oluştur** düğmesi.  
   
-3.  İçinde **Test sertifikası Oluştur** iletişim kutusunda, test sertifikanızın güvenliğinin sağlanmasına yardımcı olmak için bir parola girin.  
+3. İçinde **Test sertifikası Oluştur** iletişim kutusunda, test sertifikanızın güvenliğinin sağlanmasına yardımcı olmak için bir parola girin.  
   
 ## <a name="generating-unsigned-manifests"></a>İmzalanmamış bildirimler oluşturma  
  ClickOnce bildirimlerini imzalanması, .exe tabanlı uygulamalar için isteğe bağlıdır. Aşağıdaki yordamlar imzasız ClickOnce bildirimlerinin nasıl oluşturulacağını gösterir.  
@@ -89,24 +89,24 @@ Bir uygulamayı ClickOnce dağıtımını kullanarak yayınlamak istiyorsanız u
   
 #### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>İmzalanmamış bildirimler oluşturmak ve tüm dosyaları oluşturulan karmaya dahil etmek için  
   
-1.  Tüm dosyalar karmaya dahil etmek imzalanmamış bildirimler oluşturmak için öncelikle uygulamayı imzalanmış bildirimlerle birlikte yayınlamanız gerekir. Bu nedenle, ilk önceki yordamlardan birini izleyerek ClickOnce bildirimlerini imzala ve ardından uygulamayı yayınlayın.  
+1. Tüm dosyalar karmaya dahil etmek imzalanmamış bildirimler oluşturmak için öncelikle uygulamayı imzalanmış bildirimlerle birlikte yayınlamanız gerekir. Bu nedenle, ilk önceki yordamlardan birini izleyerek ClickOnce bildirimlerini imzala ve ardından uygulamayı yayınlayın.  
   
-2.  Üzerinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala** onay kutusu.  
+2. Üzerinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala** onay kutusu.  
   
-3.  Yayınlama sürümünü, uygulamanızın yalnızca bir sürümü kalacak şekilde sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için [nasıl yapılır: Kümesi ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3. Yayınlama sürümünü, uygulamanızın yalnızca bir sürümü kalacak şekilde sıfırlayın. Varsayılan olarak, Visual Studio otomatik olarak uygulama yayımlama Yayımla sürümü her zaman değişiklik sayısını artırır. Daha fazla bilgi için [nasıl yapılır: Kümesi ClickOnce yayım sürümünü](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
-4.  Uygulamayı yayınlayın.  
+4. Uygulamayı yayınlayın.  
   
 #### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>İmzalanmamış bildirimler oluşturmak ve bir veya daha fazla dosya ve oluşturulan karmadan hariç tutmak için  
   
-1.  Üzerinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala** onay kutusu.  
+1. Üzerinde **imzalama** sayfasında, NET **ClickOnce bildirimlerini imzala** onay kutusu.  
   
-2.  Açık **uygulama dosyaları** iletişim kutusu ve kümesi **karma** için **hariç** ve oluşturulan karmadan hariç tutmak istediğiniz dosyaları için.  
+2. Açık **uygulama dosyaları** iletişim kutusu ve kümesi **karma** için **hariç** ve oluşturulan karmadan hariç tutmak istediğiniz dosyaları için.  
   
     > [!NOTE]
     >  Bir dosyayı karma oluşturmadan hariç, böylece önceki yordamda gösterildiği imzalı bildirimleri önce yayınlamanız gerekmez bildirimler, otomatik imzalama devre dışı bırakmak üzere ClickOnce yapılandırır.  
   
-3.  Uygulamayı yayınlayın.  
+3. Uygulamayı yayınlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tanımlayıcı adlı derlemeler](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   

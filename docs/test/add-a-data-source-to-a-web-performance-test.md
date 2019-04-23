@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059896"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Web performans testine veri kaynağı ekleme
 
@@ -34,7 +34,9 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 
 ## <a name="create-a-sql-database"></a>SQL veritabanı oluşturma
 
-1. Visual Studio Enterprise yoksa, buradan indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) sayfası.
+::: moniker range="vs-2017"
+
+1. Visual Studio Enterprise yoksa, buradan indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) sayfası.
 
 2. SQL veritabanı oluşturun.
 
@@ -59,6 +61,38 @@ Aynı teste farklı değerler örneğin sağlamak için parametreleri formunuza 
 7. Veri alanları ekleyin.
 
      ![Alanlara veri ekleyin](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Visual Studio Enterprise yoksa, buradan indirebilirsiniz [Visual Studio indirmeleri](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) sayfası.
+
+2. SQL veritabanı oluşturun.
+
+     ![Yeni SQL veritabanı Ekle](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Bir veritabanı projesi oluşturun.
+
+     ![Veritabanından yeni proje oluşturma](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Veritabanı projesine tablo ekleyin.
+
+     ![Veritabanı projesine yeni bir tablo ekleyin](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Tabloya alanlar ekleyin.
+
+     ![Tabloya alanlar ekleyin](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Veritabanı projesini yayımlayın.
+
+     ![Çözüm Gezgini'nden veritabanı projesini yayımlayın](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Veri alanları ekleyin.
+
+     ![Alanlara veri ekleyin](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Veri kaynağı ekleme
 

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcd465ebef68a6627935b00438f6c218938eb3de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052006"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Belge düzeyi özelleştirmeler mimarisi
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Microsoft Office Word ve Microsoft Office Excel için belge düzeyi özelleştirmelerini oluşturmak için projeleri içerir. Bu konu, belge düzeyinde özelleştirmeler şu yönlerini açıklar:
@@ -39,7 +39,7 @@ ms.locfileid: "56629475"
 
   Belge düzeyinde özelleştirmeler oluşturma hakkında genel bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Wordiçinbelgedüzeyiözelleştirmeleriniprogramlamakullanmayabaşlayın](../vsto/getting-started-programming-document-level-customizations-for-word.md), ve [Excel için belge düzeyi özelleştirmelerini programlama başlama](../vsto/getting-started-programming-document-level-customizations-for-excel.md).
 
-##  <a name="UnderstandingCustomizations"></a> Özelleştirmeleri anlama
+## <a name="UnderstandingCustomizations"></a> Özelleştirmeleri anlama
  Belge düzeyi özelleştirmesi oluşturmak için Visual Studio Office geliştirici araçları kullandığınızda, belirli bir belge ile ilişkilendirilen bir yönetilen kod derlemesi oluşturun. Bir belge veya çalışma kitabıyla bağlantılı bir derleme, yönetilen kod uzantıları bildirilir. Daha fazla bilgi için [tasarım ve Office çözümleri oluşturma](../vsto/designing-and-creating-office-solutions.md).
 
  Belgeyi bir kullanıcı oturum açtığında, derleme Microsoft Office uygulaması tarafından yüklenir. Derleme yüklendikten sonra belgeyi açıkken özelleştirme olaylara yanıt verebilir. Özelleştirme otomatikleştirmek ve belge açıksa ve sınıflarda birini kullanabilirsiniz ancak uygulamayı genişletmek için nesne modelini de çağırabilirsiniz [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
@@ -57,18 +57,18 @@ ms.locfileid: "56629475"
 #### <a name="design-time"></a>Tasarım zamanı
  Tasarım zamanı deneyimi, aşağıdaki adımları içerir:
 
-1.  Bir belge düzeyi projede Geliştirici oluşturur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Projeyi, belge ve belgenin arkasında çalışan derleme içerir. Belge zaten (bir tasarımcı tarafından oluşturulan) mevcut veya yeni bir belge projesiyle birlikte oluşturulabilir.
+1. Bir belge düzeyi projede Geliştirici oluşturur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Projeyi, belge ve belgenin arkasında çalışan derleme içerir. Belge zaten (bir tasarımcı tarafından oluşturulan) mevcut veya yeni bir belge projesiyle birlikte oluşturulabilir.
 
-2.  Tasarımcı — proje veya bir başkasının oluşturur ya da Geliştirici — son kullanıcıya belgeyi son Görünüm ve yapısını oluşturur.
+2. Tasarımcı — proje veya bir başkasının oluşturur ya da Geliştirici — son kullanıcıya belgeyi son Görünüm ve yapısını oluşturur.
 
 #### <a name="runtime"></a>Çalışma zamanı
  Çalışma zamanı deneyimi, aşağıdaki adımları içerir:
 
-1.  Son kullanıcı, belge veya yönetilen kod uzantıları çalışma kitabı açılır.
+1. Son kullanıcı, belge veya yönetilen kod uzantıları çalışma kitabı açılır.
 
-2.  Derlenmiş bütünleştirilmiş kodun belge veya çalışma kitabındaki yükler.
+2. Derlenmiş bütünleştirilmiş kodun belge veya çalışma kitabındaki yükler.
 
-3.  Kullanıcı belge veya çalışma kitabındaki içinde çalıştığı derleme olaylara yanıt verir.
+3. Kullanıcı belge veya çalışma kitabındaki içinde çalıştığı derleme olaylara yanıt verir.
 
 #### <a name="developer-and-end-user-perspective-compared"></a>Geliştirici ve son kullanıcı açısından karşılaştırma
  Geliştirici birincil olarak çalıştığından [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve son kullanıcının Word veya Excel'de çalışır, belge düzeyinde özelleştirmeler anlama iki yolu vardır.
@@ -97,7 +97,7 @@ ms.locfileid: "56629475"
 
   Son kullanıcılarınızın bu dosya biçimlerinde özelleştirmeleri kullanmak istiyorsanız, oluşturun ve yukarıdaki tabloda belirtilen desteklenen dosya biçimleri birini kullanan bir özelleştirme dağıtın. Özelleştirme yükledikten sonra son kullanıcıların Word XML belgesinde belgeyi kaydedebilirsiniz (*\*xml*) biçimi veya Word 2003 XML belgesi (*\*xml*) biçiminde ve özelleştirme beklendiği gibi çalışmayı sürdürecektir.
 
-##  <a name="Components"></a> Özelleştirmelerin bileşenleri
+## <a name="Components"></a> Özelleştirmelerin bileşenleri
  Temel bir özelleştirme belge ve derleme bileşenleridir. Bu bileşenlerin yanı sıra, Microsoft Office uygulamalarını keşfedin ve yükledikleri nasıl önemli bir rol oynar diğer birkaç bölümü vardır.
 
 ### <a name="deployment-manifest-and-application-manifest"></a>Dağıtım bildirimini ve uygulama bildirimi
@@ -108,7 +108,7 @@ ms.locfileid: "56629475"
 
  Daha fazla bilgi için [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowCustomizationsWork"></a> Özelleştirmeleri Microsoft Office uygulamaları ile nasıl çalışır?
+## <a name="HowCustomizationsWork"></a> Özelleştirmeleri Microsoft Office uygulamaları ile nasıl çalışır?
  Bir kullanıcı bir Microsoft Office Özelleştirme bir parçası olan bir belgeyi açtığında, uygulama bulmak ve özelleştirme bütünleştirilmiş kodu en güncel sürümünü yüklemek için belgenin bağlı olduğu dağıtım bildirimini kullanır. Dağıtım bildiriminin konumunu adlı bir özel belge özelliğinde depolanıyor **AssemblyLocation**. Çözüm derlediğinizde, bu konumu tanımlayan dize özelliğe eklenir.
 
  Dağıtım bildirimi işaret sonra en son derlemeye işaret eden bir uygulama bildirimi. Daha fazla bilgi için [uygulama ve dağıtım bildirimlerini Office çözümlerinde](../vsto/application-and-deployment-manifests-in-office-solutions.md).
@@ -123,21 +123,21 @@ ms.locfileid: "56629475"
 ### <a name="loading-process"></a>Yükleme işlemi
  Aşağıdaki adımlar, bir kullanıcı bir Microsoft Office çözümünün parçası olan bir belgeyi açtığında gerçekleşir.
 
-1.  Microsoft Office uygulamasının özel belge özellikleri, yönetilen kod uzantıları belgeyle ilişkili olup olmadığını denetler. Daha fazla bilgi için [özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md).
+1. Microsoft Office uygulamasının özel belge özellikleri, yönetilen kod uzantıları belgeyle ilişkili olup olmadığını denetler. Daha fazla bilgi için [özel belge özelliklerine genel bakış](../vsto/custom-document-properties-overview.md).
 
-2.  Yönetilen kod uzantıları varsa, uygulamayı yükleyen *VSTOEE.dll*, hangi yükleri *VSTOLoader.dll*. Yönetilmeyen bunlar yükleyici bileşenleri Office çalışma zamanı için Visual Studio 2010 Araçları DLL'ler. Daha fazla bilgi için [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Yönetilen kod uzantıları varsa, uygulamayı yükleyen *VSTOEE.dll*, hangi yükleri *VSTOLoader.dll*. Yönetilmeyen bunlar yükleyici bileşenleri Office çalışma zamanı için Visual Studio 2010 Araçları DLL'ler. Daha fazla bilgi için [Office çalışma zamanına genel bakış için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *VSTOLoader.dll* yükler [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] ve yönetilen kısmına başlar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *VSTOLoader.dll* yükler [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] ve yönetilen kısmına başlar [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  Belgeyi yerel bilgisayardan farklı bir konumdan açarsa [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] belgenin konumunu olduğunu doğrular **Güvenilen Konumlar** listesinde **Güven Merkezi Ayarları** için Bu belirli Office uygulaması. İçin belge konumunu güvenilir değilse, özelleştirme güvenilir değil ve yükleme işlemi burada durdurulur.
+4. Belgeyi yerel bilgisayardan farklı bir konumdan açarsa [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] belgenin konumunu olduğunu doğrular **Güvenilen Konumlar** listesinde **Güven Merkezi Ayarları** için Bu belirli Office uygulaması. İçin belge konumunu güvenilir değilse, özelleştirme güvenilir değil ve yükleme işlemi burada durdurulur.
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Çözümü yükler henüz yüklü değil, en son uygulama ve dağıtım bildirimlerini indirir ve bir dizi güvenlik denetimi gerçekleştirir. Daha fazla bilgi için [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Çözümü yükler henüz yüklü değil, en son uygulama ve dağıtım bildirimlerini indirir ve bir dizi güvenlik denetimi gerçekleştirir. Daha fazla bilgi için [güvenli Office çözümleri](../vsto/securing-office-solutions.md).
 
-6.  Özelleştirme çalıştırmak için güvenilir ise [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] derleme güncelleştirmeleri denetlemek için dağıtım bildirimini ve uygulama bildirimini kullanır. Derlemenin yeni bir sürüm varsa, çalışma zamanı derlemesi için yeni sürümü indirmeleri [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] istemci bilgisayarda önbelleği. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
+6. Özelleştirme çalıştırmak için güvenilir ise [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] derleme güncelleştirmeleri denetlemek için dağıtım bildirimini ve uygulama bildirimini kullanır. Derlemenin yeni bir sürüm varsa, çalışma zamanı derlemesi için yeni sürümü indirmeleri [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] istemci bilgisayarda önbelleği. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Özelleştirme derlemesini yüklemek yeni bir uygulama etki alanı oluşturur.
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Özelleştirme derlemesini yüklemek yeni bir uygulama etki alanı oluşturur.
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Özelleştirme bütünleştirilmiş kodu, uygulama etki alanına yükler.
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Özelleştirme bütünleştirilmiş kodu, uygulama etki alanına yükler.
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Çağrıları **başlangıç** özelleştirme derlemenizde olay işleyicisi. Daha fazla bilgi için [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md)
 

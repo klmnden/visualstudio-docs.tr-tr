@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056488"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Hata: bağımlılık &#39;dosya&#39; projesinde &#39;proje&#39; bağımlılığı ile çakışacağından çalıştırma dizinine kopyalanamıyor &#39;dosyası&#39;
 Başvuruları arasında bir çakışma yoktur; uygulamanın çalıştırılması bin dizinini kopyalanan aynı dosya adına sahip birden fazla ayrı bağımlılığı. Bağımlılıkları hiçbiri birincil başvurular olmadığından çalıştırma dizinine çakışması çözümlenemiyor.  
@@ -27,15 +27,15 @@ Başvuruları arasında bir çakışma yoktur; uygulamanın çalıştırılması
   
  **Bu hatayı düzeltmek için**  
   
--   Bir doğrudan başvuru projenizi biri olun. Bu yaklaşımın olası bir dezavantajı, seçtiğiniz derleme başvurulan derlemenin farklı bir sürümünü gerektiren derlemeleri ile çalışmak için garanti edilmez ' dir.  
+- Bir doğrudan başvuru projenizi biri olun. Bu yaklaşımın olası bir dezavantajı, seçtiğiniz derleme başvurulan derlemenin farklı bir sürümünü gerektiren derlemeleri ile çalışmak için garanti edilmez ' dir.  
   
      \- veya -  
   
--   Her iki kopyasında derlemenin tanımlayıcı adlı ve genel derleme önbelleğinde olduğundan emin olun. Bu derlemeler bin dizinine kopyalanması gereği ortadan kaldırır.  
+- Her iki kopyasında derlemenin tanımlayıcı adlı ve genel derleme önbelleğinde olduğundan emin olun. Bu derlemeler bin dizinine kopyalanması gereği ortadan kaldırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md)   
  [Genel Derleme Önbelleği](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
  [Tanımlayıcı adlı derlemeler](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [Bütünleştirilmiş kod sürümü oluşturma](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
- [Nasıl yapılır: Oluşturma ve proje bağımlılıkları Kaldır](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Nasıl yapılır: Proje Bağımlılıklarını Oluşturma ve Kaldırma](../ide/how-to-create-and-remove-project-dependencies.md)

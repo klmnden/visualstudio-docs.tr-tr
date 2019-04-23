@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 427e854c19e65463abcd8780cfe95d38f3ea66f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d62f1936e4cf424bde526301210e61f38e5b767
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038811"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Nasıl yapılır: İş Akışı Tasarımcısında Aramayı kullanma
 Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak için arama iş akışı Tasarımcısı'nda öğelerini bulmak için anahtar sözcüğü tarafından kullanılabilir. Tasarımcıyı Değiştir desteklemiyor unutmayın. Arama Tasarımcısı'nda aşağıdakileri bulacaksınız:  
@@ -22,21 +22,21 @@ Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak iç
 ## <a name="quick-find"></a>Hızlı Bul  
  Hızlı Bul Tasarımcısı'nda aşağıdakileri bulacaksınız:  
   
--   Özelliklerini <xref:System.Activities.Activity> nesneleri <xref:System.Activities.Statements.FlowNode> nesneleri <xref:System.Activities.Statements.State> nesneleri, geçişleri ve diğer özel akış denetimi öğeleri.  
+- Özelliklerini <xref:System.Activities.Activity> nesneleri <xref:System.Activities.Statements.FlowNode> nesneleri <xref:System.Activities.Statements.State> nesneleri, geçişleri ve diğer özel akış denetimi öğeleri.  
   
--   Değişkenler  
+- Değişkenler  
   
--   Arguments  
+- Arguments  
   
--   İfadeler  
+- İfadeler  
   
 #### <a name="using-quick-find"></a>Hızlı Bul'u kullanma  
   
-1.  Açık iş akışı Tasarımcısı ile basın **Ctrl + F**, ya da seçin **Düzenle**, **Bul ve Değiştir**, **Hızlı Bul**.  
+1. Açık iş akışı Tasarımcısı ile basın **Ctrl + F**, ya da seçin **Düzenle**, **Bul ve Değiştir**, **Hızlı Bul**.  
   
-2.  Arama terimini girin **Aranan** textbox tıklatıp **Sonrakini Bul**.  
+2. Arama terimini girin **Aranan** textbox tıklatıp **Sonrakini Bul**.  
   
-3.  Arama terimi geçerli iş akışı içinde yer alır. Aşağıdaki ekran Tasarımcısı'nda bulunuyor bir etkinlik görünen adı gösterir.  
+3. Arama terimi geçerli iş akışı içinde yer alır. Aşağıdaki ekran Tasarımcısı'nda bulunuyor bir etkinlik görünen adı gösterir.  
   
      ![İş Akışı Tasarımcısı'nda arama sonucu](../workflow-designer/media/designersearch.png "DesignerSearch")  
   
@@ -45,8 +45,8 @@ Daha büyük, daha karmaşık iş akışları oluşturmayı kolaylaştırmak iç
   
 #### <a name="using-find-in-files"></a>Dosyalarda Bul kullanma  
   
-1.  Visual Studio'da **Ctrl + Shift + F**, ya da seçin **Düzenle**, **Bul ve Değiştir**, **dosyalarda Bul**  
+1. Visual Studio'da **Ctrl + Shift + F**, ya da seçin **Düzenle**, **Bul ve Değiştir**, **dosyalarda Bul**  
   
-2.  Arama öğesine girin **Aranan** textbox tıklatıp **Tümünü Bul**  
+2. Arama öğesine girin **Aranan** textbox tıklatıp **Tümünü Bul**  
   
-3.  Bulma sonucu gösterilir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **bulma sonucu** görünümü. İş Akışı Tasarımcısı'nda eşleşme içeren etkinlik için bir sonuç öğesi çift gider.
+3. Bulma sonucu gösterilir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **bulma sonucu** görünümü. İş Akışı Tasarımcısı'nda eşleşme içeren etkinlik için bir sonuç öğesi çift gider.

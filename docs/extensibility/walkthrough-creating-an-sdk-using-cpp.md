@@ -8,70 +8,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049080"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>İzlenecek yol: C++ kullanarak SDK oluşturma
 Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı (VSIX) olarak SDK paketi oluşturma ve bir uygulama oluşturmak için kullanmak gösterir. İzlenecek yol, bu adımları ayrılmıştır:
 
--   [Yerel ve Windows çalışma zamanı kitaplıkları oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [Yerel ve Windows çalışma zamanı kitaplıkları oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
--   [NativeMathVSIX uzantı projesini oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
+- [NativeMathVSIX uzantı projesini oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
--   [Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
+- [Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolda takip etmek için Visual Studio SDK'yı yüklemeniz gerekir. Daha fazla bilgi için [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Yerel ve Windows çalışma zamanı kitaplıkları oluşturmak için
+## <a name="createClassLibrary"></a> Yerel ve Windows çalışma zamanı kitaplıkları oluşturmak için
 
-1.  Menü çubuğunda, **dosya** > **yeni** > **proje**.
+1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 
-2.  Şablonlar listesinde genişletin **Visual C++** > **Windows Evrensel**ve ardından **DLL (Evrensel Windows uygulamaları)** şablonu. İçinde **adı** kutusunda, belirtin `NativeMath`ve ardından **Tamam** düğmesi.
+2. Şablonlar listesinde genişletin **Visual C++** > **Windows Evrensel**ve ardından **DLL (Evrensel Windows uygulamaları)** şablonu. İçinde **adı** kutusunda, belirtin `NativeMath`ve ardından **Tamam** düğmesi.
 
-3.  Güncelleştirme *NativeMath.h* aşağıdaki kodu eşleştirilecek.
+3. Güncelleştirme *NativeMath.h* aşağıdaki kodu eşleştirilecek.
 
      [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
 
-4.  Güncelleştirme *NativeMath.cpp* bu kodu eşleştirmek için:
+4. Güncelleştirme *NativeMath.cpp* bu kodu eşleştirmek için:
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle** > **yeni proje**.
+5. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle** > **yeni proje**.
 
-6.  Şablonlar listesinde genişletin **Visual C++** ve ardından **Windows çalışma zamanı bileşeni** şablonu. İçinde **adı** kutusunda, belirtin `NativeMathWRT`ve ardından **Tamam** düğmesi.
+6. Şablonlar listesinde genişletin **Visual C++** ve ardından **Windows çalışma zamanı bileşeni** şablonu. İçinde **adı** kutusunda, belirtin `NativeMathWRT`ve ardından **Tamam** düğmesi.
 
-7.  Güncelleştirme *Class1.h* bu kodu eşleştirmek için:
+7. Güncelleştirme *Class1.h* bu kodu eşleştirmek için:
 
      [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
 
-8.  Güncelleştirme *Class1.cpp* bu kodu eşleştirmek için:
+8. Güncelleştirme *Class1.cpp* bu kodu eşleştirmek için:
 
      [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
 
 9. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
-##  <a name="createVSIX"></a> NativeMathVSIX uzantı projesini oluşturmak için
+## <a name="createVSIX"></a> NativeMathVSIX uzantı projesini oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle** > **yeni proje**.
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **çözüm 'NativeMath'** ve ardından **Ekle** > **yeni proje**.
 
-2.  Şablonlar listesinde genişletin **Visual C#** > **genişletilebilirlik**ve ardından **VSIX projesi**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.
+2. Şablonlar listesinde genişletin **Visual C#** > **genişletilebilirlik**ve ardından **VSIX projesi**. İçinde **adı** kutusunda, belirtin **NativeMathVSIX**ve ardından **Tamam** düğmesi.
 
-3.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest**ve ardından **kodu görüntüle**.
+3. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **source.extension.vsixmanifest**ve ardından **kodu görüntüle**.
 
-4.  Var olan XML değiştirmek için aşağıdaki XML kullanın.
+4. Var olan XML değiştirmek için aşağıdaki XML kullanın.
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathVSIX** proje ve ardından **Ekle** > **yeni öğe**.
+5. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **NativeMathVSIX** proje ve ardından **Ekle** > **yeni öğe**.
 
-6.  Listesinde **Visual C# öğeleri**, genişletme **veri**ve ardından **XML dosyası**. İçinde **adı** kutusunda, belirtin `SDKManifest.xml`ve ardından **Tamam** düğmesi.
+6. Listesinde **Visual C# öğeleri**, genişletme **veri**ve ardından **XML dosyası**. İçinde **adı** kutusunda, belirtin `SDKManifest.xml`ve ardından **Tamam** düğmesi.
 
-7.  Bu XML dosyasının içeriğini değiştirmek için kullanın:
+7. Bu XML dosyasının içeriğini değiştirmek için kullanın:
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
@@ -137,7 +137,7 @@ Bu izlenecek yol, yerel C++ matematik kitaplığı SDK, Visual Studio Uzantısı
 
 18. Seçin **yükleme** düğmesi, yüklemenin tamamlanmasını bekleyin ve sonra Visual Studio'yu açın.
 
-##  <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için
+## <a name="createSample"></a> Sınıf kitaplığı kullanan örnek bir uygulama oluşturmak için
 
 1. Menü çubuğunda, **dosya** > **yeni** > **proje**.
 

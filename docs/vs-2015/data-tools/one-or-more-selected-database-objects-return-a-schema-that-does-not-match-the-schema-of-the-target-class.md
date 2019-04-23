@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043035"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Seçili veritabanı nesnelerinin biri veya daha fazlası, hedef sınıfın şemasıyla eşleşmeyen bir şema döndürüyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Bir veya daha fazla seçili veritabanı nesnelerini hedef sınıfın şemasıyla
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
-1.  Tıklayın **Tamam** iletişim kutusunu kapatın.  
+1. Tıklayın **Tamam** iletişim kutusunu kapatın.  
   
-2.  (Veritabanı nesnesi üzerine O/R Tasarımcısı'nda bırakılıyor sınıfı) hedef sınıfın şemasıyla eşleşen veri döndüren bir veritabanı nesnesi seçin.  
+2. (Veritabanı nesnesi üzerine O/R Tasarımcısı'nda bırakılıyor sınıfı) hedef sınıfın şemasıyla eşleşen veri döndüren bir veritabanı nesnesi seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

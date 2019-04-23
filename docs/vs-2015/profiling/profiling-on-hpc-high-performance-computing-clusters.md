@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038957"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>HPC (Yüksek Performanslı Hesaplama) Kümelerinde Profil Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "57867935"
   
   Yüklenecek [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] ve tek başına profil oluşturma araçları etkin bir HPC bilgi işlem düğümü ve etkin küme makinede profil oluşturma, şu adımları izleyin:  
   
-1.  HPC pack ile yüklü bir komut istemi penceresi açın.  
+1. HPC pack ile yüklü bir komut istemi penceresi açın.  
   
-2.  Ayrı bir komut istemlerinde aşağıdaki komutları yazın:  
+2. Ayrı bir komut istemlerinde aşağıdaki komutları yazın:  
   
-    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *% Baş ayıklaması ProfilerPath %* `/q /norestart`  
+    3. `clusrun /all /scheduler:` *% Baş ayıklaması ProfilerPath %* `/q /norestart`  
   
 |||  
 |-|-|  
@@ -63,47 +63,47 @@ ms.locfileid: "57867935"
   
 #### <a name="to-profile-on-an-hpc-compute-node"></a>Bir HPC işlem düğümünde profilini çıkarmak için  
   
-1.  Üzerinde **Çözümle** menüsünü tıklatın **HPC performans Sihirbazını Başlat**. Komut kullanılabilir durumda değilse, yukarıda listelenen önkoşullara sahip olduğunuzdan emin olun.  
+1. Üzerinde **Çözümle** menüsünü tıklatın **HPC performans Sihirbazını Başlat**. Komut kullanılabilir durumda değilse, yukarıda listelenen önkoşullara sahip olduğunuzdan emin olun.  
   
-2.  Tıklayın **sonraki** sihirbazının ilk sayfasında.  
+2. Tıklayın **sonraki** sihirbazının ilk sayfasında.  
   
-3.  Sihirbazın ikinci sayfasında, profil oluşturmak istediğiniz uygulamayı seçin.  
+3. Sihirbazın ikinci sayfasında, profil oluşturmak istediğiniz uygulamayı seçin.  
   
-    -   Şu anda açık olan proje profilini [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]seçin **bir veya daha fazla kullanılabilir projeler** seçeneğini ve ardından listeden proje adını seçin.  
+    - Şu anda açık olan proje profilini [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]seçin **bir veya daha fazla kullanılabilir projeler** seçeneğini ve ardından listeden proje adını seçin.  
   
-    -   Kullanımda olmayan bir ikili profilini çıkarmak için açık bir proje seçin **bir yürütülebilir dosya (. EXE dosyası)** seçeneği.  
+    - Kullanımda olmayan bir ikili profilini çıkarmak için açık bir proje seçin **bir yürütülebilir dosya (. EXE dosyası)** seçeneği.  
   
-4.  **İleri**'ye tıklayın.  
+4. **İleri**'ye tıklayın.  
   
-5.  Sihirbazın üçüncü sayfasında:  
+5. Sihirbazın üçüncü sayfasında:  
   
-    -   Açık bir projedeymiş değil bir yürütülebilir dosya profili oluşturuyorsanız, ikili dosyanın yolunu belirtin **yürütülebilir dosyanın tam yolunu nedir**.  
+    - Açık bir projedeymiş değil bir yürütülebilir dosya profili oluşturuyorsanız, ikili dosyanın yolunu belirtin **yürütülebilir dosyanın tam yolunu nedir**.  
   
-    -   Açık bir projedeymiş değil bir yürütülebilir dosya profili oluşturuyorsanız, işlem geçirilecek komut satırı bağımsız değişkenlerini belirtebilirsiniz **komut satırı bağımsız değişkenleri**.  
+    - Açık bir projedeymiş değil bir yürütülebilir dosya profili oluşturuyorsanız, işlem geçirilecek komut satırı bağımsız değişkenlerini belirtebilirsiniz **komut satırı bağımsız değişkenleri**.  
   
-    -   İçinde **uzak çalışma dizini**, işlem düğümleri ayrı ayrı işlem örneklerinde tarafından kullanılan bir klasörün yolunu belirtin.  
+    - İçinde **uzak çalışma dizini**, işlem düğümleri ayrı ayrı işlem örneklerinde tarafından kullanılan bir klasörün yolunu belirtin.  
   
-    -   İçinde **dağıtım konumu**, HPC server görüntüleri aşama dağıtımı için kullanacağı dizinin yolunu belirtin.  
+    - İçinde **dağıtım konumu**, HPC server görüntüleri aşama dağıtımı için kullanacağı dizinin yolunu belirtin.  
   
-6.  **İleri**'ye tıklayın.  
+6. **İleri**'ye tıklayın.  
   
-7.  Sihirbazının dördüncü sayfasında:  
+7. Sihirbazının dördüncü sayfasında:  
   
-    -   İçinde **baş düğüm** listesinde, profil oluşturma çalışması içinde HPC baş düğümü görevi gören bilgisayarı tıklatın. Baş düğüm, profili bir küme gerek kalmadan yerel makinede olanak "localhost" olabilir.  
+    - İçinde **baş düğüm** listesinde, profil oluşturma çalışması içinde HPC baş düğümü görevi gören bilgisayarı tıklatın. Baş düğüm, profili bir küme gerek kalmadan yerel makinede olanak "localhost" olabilir.  
   
-    -   İçinde **işlemlerin sayısı** listesinde, uygulamayı çalıştırmak için örnek sayısını tıklayın.  
+    - İçinde **işlemlerin sayısı** listesinde, uygulamayı çalıştırmak için örnek sayısını tıklayın.  
   
-    -   Gelen **seçenekleri profil oluşturma** listesinde, profil oluşturma hedefi seçin.  
+    - Gelen **seçenekleri profil oluşturma** listesinde, profil oluşturma hedefi seçin.  
   
          Küme içindeki belirli bir işlem profili oluşturmak için Seç **profilindeki boyut** seçeneğini ve ardından işlem sırasını aşağı açılan listeden seçin.  
   
          HPC küme içindeki belirli bir düğümde çalışan işlemler ve işlem profili oluşturmak için Seç **düğümde profili** seçeneğini ve ardından düğümü aşağı açılan listeden seçin.  
   
-8.  **İleri**'ye tıklayın.  
+8. **İleri**'ye tıklayın.  
   
 9. Beşinci sihirbaz sayfasında, profil oluşturucu ve profil oluşturma işlemi hemen başlatmak için ya da daha sonra performans Gezgini kullanarak profil oluşturmayı başlatmak için seçebilirsiniz.  
   
-    -   Seçin **Sihirbaz sonlandıktan sonra profil oluşturmayı Başlat** hemen profilini oluşturmaya başla veya el ile profil oluşturmayı başlatmak için onay kutusunu temizleyin.  
+    - Seçin **Sihirbaz sonlandıktan sonra profil oluşturmayı Başlat** hemen profilini oluşturmaya başla veya el ile profil oluşturmayı başlatmak için onay kutusunu temizleyin.  
   
 10. **Son**'a tıklayın.  
   
@@ -112,17 +112,17 @@ ms.locfileid: "57867935"
   
 #### <a name="to-open-the-performance-session-property-pages"></a>Performans oturumu özellik sayfalarını açmak için  
   
-1.  Gerekirse, performans Gezgini içinde performans oturumu (.psess) dosyası açın. Üzerinde **dosya** menüsünde tıklatın **açık** ve dosyayı bulun.  
+1. Gerekirse, performans Gezgini içinde performans oturumu (.psess) dosyası açın. Üzerinde **dosya** menüsünde tıklatın **açık** ve dosyayı bulun.  
   
-2.  Performans Gezgini, performans oturumu adına sağ tıklayın ve ardından **özellikleri**.  
+2. Performans Gezgini, performans oturumu adına sağ tıklayın ve ardından **özellikleri**.  
   
-3.  Özellik sayfaları iletişim kutusunda, aşağıdaki yöntemlerden birini kullanın:  
+3. Özellik sayfaları iletişim kutusunda, aşağıdaki yöntemlerden birini kullanın:  
   
-    -   Tıklayın **genel** seçip **HPC kümesinde toplamak** profil oluşturma HPC etkinleştirmek ya da HPC profili oluşturma devre dışı bırakmak için onay kutusunu temizleyin.  
+    - Tıklayın **genel** seçip **HPC kümesinde toplamak** profil oluşturma HPC etkinleştirmek ya da HPC profili oluşturma devre dışı bırakmak için onay kutusunu temizleyin.  
   
-    -   Tıklayın **HPC başlatma özellikleri** HPC uygulaması başlangıç özelliklerini değiştirmek için.  
+    - Tıklayın **HPC başlatma özellikleri** HPC uygulaması başlangıç özelliklerini değiştirmek için.  
   
-    -   Tıklayın **HPC Gelişmiş Özellikler** ek seçeneklerini ayarlamak için  
+    - Tıklayın **HPC Gelişmiş Özellikler** ek seçeneklerini ayarlamak için  
   
 ### <a name="hpc-launch-properties"></a>HPC başlatma özellikleri  
   

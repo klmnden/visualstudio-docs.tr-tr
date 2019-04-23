@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fa7b0ed959fba781397b3b85ee59f2e62588596c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061664"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android ve iOS Üzerinde OpenGL ES Uygulaması Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,10 +29,10 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
  [İOS uygulaması derleyebilir ve çalıştırabilirsiniz](#BuildIOS)   
  [Uygulamalarınızı özelleştirin](#Customize)  
   
-##  <a name="req"></a> Gereksinimleri  
+## <a name="req"></a> Gereksinimleri  
  İOS ve Android için OpenGL ES uygulama oluşturabilmeniz için önce tüm sistem gereksinimlerini karşılamanızın emin olmanız gerekir. Visual Studio 2015'te Visual C++ platformlar arası mobil geliştirme seçeneği için yüklemeniz gerekir. Gerekli üçüncü taraf araçları ve SDK'lar yüklemesine dahil ve Android için Visual Studio öykünücü yüklendiğinden emin olun. Daha fazla bilgi ve ayrıntılı yönergeler için bkz. [platformlar arası Mobil Geliştirme için Visual C++ yükleme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Yapı ve test iOS uygulaması için bir Mac ihtiyaç duyarsınız bilgisayar, yükleme yönergelerine göre ayarlayın. İOS geliştirme için ayarlama hakkında daha fazla bilgi için bkz: [yükleme ve yapılandırma araçları kullanarak iOS derleme](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-##  <a name="Create"></a> Yeni bir OpenGLES uygulaması projesi oluşturma  
+## <a name="Create"></a> Yeni bir OpenGLES uygulaması projesi oluşturma  
  Bu öğreticide, ardından oluşturabilir ve varsayılan uygulamasını Android için Visual Studio öykünücüsü'nün içinde çalıştırmak önce yeni bir OpenGL ES uygulaması projesi oluşturun. Ardından iOS için uygulama oluşturun ve uygulamayı iOS Simulator'da çalıştırmak.  
   
 #### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için  
@@ -63,7 +63,7 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
 - **MyOpenGLESApp.iOS.Application** kaynakları ve bir iOS uygulaması içinde MyOpenGLESApp.iOS.StaticLibrary bağlanan C++ statik kitaplık kodu oluşturmak için Objective-C Birleştirici kodlar içerir. Bu proje, Mac için Visual Studio ve uzak aracı tarafından aktarılan bir derleme paketi oluşturur. Bu proje oluşturduğunuzda, Visual Studio Mac uygulamanızı oluşturup komutları ve dosya gönderir.  
   
-##  <a name="BuildAndroid"></a> Android uygulaması derleyebilir ve çalıştırabilirsiniz  
+## <a name="BuildAndroid"></a> Android uygulaması derleyebilir ve çalıştırabilirsiniz  
  Şablon tarafından oluşturulan çözüm Android uygulamasını varsayılan proje olarak ayarlar.  Derleme ve yükleme ve Kurulum doğrulamak için bu uygulamayı çalıştırın. İlk test için Android için Visual Studio öykünücüsü'nün yüklü cihaz profilleri bir uygulamayı çalıştırın. Başka bir hedef uygulamanızı test etmek isterseniz, hedef öykünücü yükleyin veya cihazı bilgisayarınıza bağlayın.  
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>Derleme ve Android yerel etkinlik uygulaması çalıştırmak için  
@@ -104,7 +104,7 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
    Visual Studio Android platform araç takımını Clang kullanan NDK, kullanarak Android yerel etkinlik projeleri derler. Visual Studio için komut satırı anahtarları NativeActivity proje özelliklerinde eşleştirir ve derlemek için kullanılan seçenekler bağlantı ve hedef platformda hata ayıklama. Ayrıntılar için açık **özellik sayfaları** MyOpenGLESApp.Android.NativeActivity proje için iletişim kutusu. Komut satırı anahtarları hakkında daha fazla bilgi için bkz. [Clang derleyici kullanıcının el ile](http://clang.llvm.org/docs/UsersManual.html).  
   
-##  <a name="BuildIOS"></a> İOS uygulaması derleyebilir ve çalıştırabilirsiniz  
+## <a name="BuildIOS"></a> İOS uygulaması derleyebilir ve çalıştırabilirsiniz  
  İOS uygulama projesi oluşturulur ve Visual Studio'da düzenlenemez, ancak lisans kısıtlamaları nedeniyle, oluşturulan ve gerekir bir Mac'ten dağıtılan Visual Studio, proje dosyaları aktarmak ve derleme, dağıtım ve hata ayıklama komutları yürütmek için Mac bilgisayarda çalışan uzak bir aracı ile iletişim kurar. Ayarlayın ve Visual Studio ve Mac kullanarak iOS uygulaması oluşturmadan önce iletişim kurmak için yapılandırmanız gerekir. Ayrıntılı yönergeler için bkz. [yükleme ve yapılandırma araçları iOS kullanarak derlemeye](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Uzak aracı çalıştırmak ve Visual Studio Mac ile eşleştirildi sonra oluşturun ve yükleme ve Kurulum doğrulamak üzere iOS uygulamasını çalıştırın.  
   
 #### <a name="to-build-and-run-the-ios-app"></a>Derleme ve iOS uygulamasını çalıştırmak için  
@@ -143,7 +143,7 @@ Visual C++ platformlar arası mobil geliştirme seçeneği için yükleme sıras
   
    Visual Studio proje dosyalarını aktarır ve komutları Xcode kullanarak uygulamayı oluşturmak için uzak istemciye gönderir. Uzak istemci gönderir yapı durumu bilgileri Visual Studio dönün. Uygulama başarıyla oluşturdu, çalıştırın ve uygulamanın hatalarını ayıklamak için komutları göndermek için Visual Studio kullanabilirsiniz. Visual Studio hata ayıklayıcının iOS simülatörü çalışır mac'inizde veya bağlı bir iOS cihazında çalışan uygulama denetler. Visual Studio için komut satırı anahtarları StaticLibrary proje özelliklerinde eşleştirir ve oluşturmak için kullanılan seçenekler bağlantı ve hedef iOS platformunda hata ayıklama. Derleyici komut satırı seçeneği ayrıntılarını açın **özellik sayfaları** MyOpenGLESApp.iOS.StaticLibrary proje için iletişim kutusu.  
   
-##  <a name="Customize"></a> Uygulamalarınızı özelleştirin  
+## <a name="Customize"></a> Uygulamalarınızı özelleştirin  
  Paylaşılan C++ koduna eklemek veya ortak işlevselliği değiştirmek için değiştirebilirsiniz. Paylaşılan kod MyOpenGLESApp.Android.NativeActivity ve MyOpenGLESApp.iOS.Application projelerinde çağrıları eşleşecek şekilde değiştirmeniz gerekir. Önişlemci makroları, platforma özgü bölümler ortak kodunuzda belirtmek için kullanabilirsiniz. Önişlemci makrosu `__ANDROID__` Android için oluşturduğunuzda önceden tanımlanmış. Önişlemci makrosu `__APPLE__` iOS için oluşturduğunuzda önceden tanımlanmış.  
   
  Belirli proje platformu için IntelliSense görmek için bağlam değiştiricisi açılan Düzenleyicisi penceresinin üst gezinti çubuğunda projeyi seçin.  

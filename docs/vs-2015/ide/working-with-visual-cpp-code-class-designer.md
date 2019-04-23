@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054631"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Visual C++ Kodu ile Çalışma (Sınıf Tasarımcısı)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Sınıf Tasarımcısı görüntüler olarak adlandırılan bir görsel tasarım 
   
  Sınıf Tasarımcısı aşağıdaki C++ kod öğeleri destekler:  
   
--   (Birden çok devralma ilişkisi olabilir bir yönetilen sınıf şeklinin benzer) sınıfı  
+- (Birden çok devralma ilişkisi olabilir bir yönetilen sınıf şeklinin benzer) sınıfı  
   
--   Anonim sınıf (anonim tür sınıfı görünümün oluşturulan adını görüntüler.)  
+- Anonim sınıf (anonim tür sınıfı görünümün oluşturulan adını görüntüler.)  
   
--   Şablon sınıfı  
+- Şablon sınıfı  
   
--   Yapı  
+- Yapı  
   
--   Enum  
+- Enum  
   
--   Makro (makro sonrası işlenen görünümünü görüntüler)  
+- Makro (makro sonrası işlenen görünümünü görüntüler)  
   
--   tür tanımı  
+- tür tanımı  
   
 > [!NOTE]
 >  Bu bir modelleme projesinde oluşturduğunuz UML sınıf diyagramı ile aynı değildir. Daha fazla bilgi için [UML Class Diagrams: Başvuru](../modeling/uml-class-diagrams-reference.md).  
@@ -84,27 +84,27 @@ Sınıf Tasarımcısı görüntüler olarak adlandırılan bir görsel tasarım 
 ### <a name="troubleshooting-other-error-messages"></a>Diğer hata iletileri sorunları giderme  
  Microsoft Developer Network (MSDN) ortak forumlarında sorun giderme hataları ve Uyarıları ile ilgili Yardım bulabilirsiniz. Bkz: [Visual Studio Sınıf Tasarımcısı Forumu](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> C++ kod öğeleri için kısıtlamalar  
+## <a name="limitations"></a> C++ kod öğeleri için kısıtlamalar  
   
--   Ne zaman Visual C++ projesi yüklenir, Sınıf Tasarımcısı işlevleri bir salt okunur şekilde. Sınıf diyagramı değiştirebilirsiniz, ancak sınıf diyagramından kaynak koduna değişiklikleri kaydedemezsiniz.  
+- Ne zaman Visual C++ projesi yüklenir, Sınıf Tasarımcısı işlevleri bir salt okunur şekilde. Sınıf diyagramı değiştirebilirsiniz, ancak sınıf diyagramından kaynak koduna değişiklikleri kaydedemezsiniz.  
   
--   Sınıf Tasarımcısı yalnızca yerel C++ semantiği destekler. Yönetilen kod derlenmiş Visual C++ projeleri için Sınıf Tasarımcısı yalnızca yerel türler kod öğelerini görselleştirin. Bu nedenle, bir sınıf diyagramı projeye ekleyebilirsiniz, ancak Sınıf Tasarımcısı izin vermez, öğeleri görselleştirmek `IsManaged` özelliği `true` (diğer bir deyişle, değer türleri ve başvuru türleri).  
+- Sınıf Tasarımcısı yalnızca yerel C++ semantiği destekler. Yönetilen kod derlenmiş Visual C++ projeleri için Sınıf Tasarımcısı yalnızca yerel türler kod öğelerini görselleştirin. Bu nedenle, bir sınıf diyagramı projeye ekleyebilirsiniz, ancak Sınıf Tasarımcısı izin vermez, öğeleri görselleştirmek `IsManaged` özelliği `true` (diğer bir deyişle, değer türleri ve başvuru türleri).  
   
--   Visual C++ projeleri için Sınıf Tasarımcısı yalnızca türünün tanımını okur. Örneğin, bir üstbilgi (.h) dosyasına tanımlayan bir tür ve üyeleri tanımlayan bir uygulama (.cpp) dosyasında varsayalım. Uygulama (.cpp) dosyasında "sınıf diyagramını görüntüle" çağırma, Sınıf Tasarımcısı hiçbir şey görüntülenir. Başka bir örnek olarak kullanan bir .cpp dosya çubuğunda "sınıf diyagramını görüntüle" çağırma bir `#include` deyimini diğer dahil etme dosyaları, ancak herhangi bir gerçek sınıf tanımı içermiyor, Sınıf Tasarımcısı yeniden görüntüler hiçbir şey.  
+- Visual C++ projeleri için Sınıf Tasarımcısı yalnızca türünün tanımını okur. Örneğin, bir üstbilgi (.h) dosyasına tanımlayan bir tür ve üyeleri tanımlayan bir uygulama (.cpp) dosyasında varsayalım. Uygulama (.cpp) dosyasında "sınıf diyagramını görüntüle" çağırma, Sınıf Tasarımcısı hiçbir şey görüntülenir. Başka bir örnek olarak kullanan bir .cpp dosya çubuğunda "sınıf diyagramını görüntüle" çağırma bir `#include` deyimini diğer dahil etme dosyaları, ancak herhangi bir gerçek sınıf tanımı içermiyor, Sınıf Tasarımcısı yeniden görüntüler hiçbir şey.  
   
--   C++ yerel koda derlenmiş sürece IDL (.idl) dosyaları, COM arabirimi tanımlayın ve tür kitaplığı, diyagramlarında görüntülemez.  
+- C++ yerel koda derlenmiş sürece IDL (.idl) dosyaları, COM arabirimi tanımlayın ve tür kitaplığı, diyagramlarında görüntülemez.  
   
--   Sınıf Tasarımcısı, genel işlevler ve değişkenler desteklemez.  
+- Sınıf Tasarımcısı, genel işlevler ve değişkenler desteklemez.  
   
--   Sınıf Tasarımcısı, birleşimler desteklemez. Ayrılan belleğin yalnızca tutarı Birliği'nin en büyük veri üyesi için gerekli olduğu sınıf özel bir tür budur.  
+- Sınıf Tasarımcısı, birleşimler desteklemez. Ayrılan belleğin yalnızca tutarı Birliği'nin en büyük veri üyesi için gerekli olduğu sınıf özel bir tür budur.  
   
--   Sınıf Tasarımcısı temel veri türleri gibi görüntülemez `int` ve `char`.  
+- Sınıf Tasarımcısı temel veri türleri gibi görüntülemez `int` ve `char`.  
   
--   Sınıf Tasarımcısı proje doğru başvuru türlerine sahip değilse, geçerli projenin dışında tanımlanan türlerinden görüntülemez.  
+- Sınıf Tasarımcısı proje doğru başvuru türlerine sahip değilse, geçerli projenin dışında tanımlanan türlerinden görüntülemez.  
   
--   Sınıf Tasarımcısı, iç içe geçmiş türler ancak iç içe türü ve diğer türleri arasında ilişkileri görüntüleyebilir.  
+- Sınıf Tasarımcısı, iç içe geçmiş türler ancak iç içe türü ve diğer türleri arasında ilişkileri görüntüleyebilir.  
   
--   Sınıf Tasarımcısı, void olan veya, void bir türden türetilmiş türlerini görüntüleyemez.  
+- Sınıf Tasarımcısı, void olan veya, void bir türden türetilmiş türlerini görüntüleyemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfları ve türleri tasarlama ve görüntüleme](../ide/designing-and-viewing-classes-and-types.md)   

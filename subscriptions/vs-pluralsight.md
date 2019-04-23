@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Dahil edilen seçili Visual Studio abonelikleri ile Pluralsight eğitim aboneliği hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 0aeedfbbfe2394bb28469023de654cf4a3a00b95
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044283"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Pluralsight eğitim avantajları
 
@@ -103,9 +103,9 @@ Y: Evet, Visual Studio abonesi olarak, Uzman kanalları Pluralsight eğitimi tek
 Y:  Ücretsiz Pluralsight aboneliğinizi sonunda Pluralsight'tan doğrudan abonelik satın tercih edebilirsiniz.  Lütfen başvurun [Pluralsight](http://www.pluralsight.com) tüm ayrıntılar için.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  [Pluralsight Yardım Merkezi](https://help.pluralsight.com/help) Pluralsight derslerini alan veya Pluralsight Web sitesini kullanarak Yardım sağlar.
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- [Pluralsight Yardım Merkezi](https://help.pluralsight.com/help) Pluralsight derslerini alan veya Pluralsight Web sitesini kullanarak Yardım sağlar.
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 Hesabınızı oluşturduktan sonra eğitim başlamak hazırsınız.  Ziyaret [ https://www.pluralsight.com ](http://www.pluralsight.com) ve dokunun **oturum** yeni kursu Başlat veya bir kurs devam eden geri dönmek için sayfanın üst sağ köşesindeki.

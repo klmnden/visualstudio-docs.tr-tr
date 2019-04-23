@@ -8,37 +8,37 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6bd64908c902c83023bc48bc72ab6443b2a7df7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e21caa6b73d6cf23a41bd7691fa19b1f7ff8e2f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047757"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>8. Adım: Oyuncunun kazanıp kazanmadığını doğrulamak için yöntem ekleme
 Eğlenceli bir oyun oluşturdunuz, ancak bitirmek için bir şeye daha ihtiyaç var. Oyuncu eklemeniz gerekir. Bu nedenle oyun bitmeli; bu bir `CheckForWinner()` oyuncunun kazanıp kazanmadığını doğrulamak için yöntem.
 
 ## <a name="to-add-a-method-to-verify-whether-the-player-won"></a>Oyuncunun kazanıp kazanmadığını doğrulamak üzere bir yöntem eklemek için
 
-1.  Ekleme bir `CheckForWinner()` kodunuz alt kısmına yöntemi aşağıda `timer1_Tick()` olay işleyicisi, aşağıdaki kodda gösterildiği gibi.
+1. Ekleme bir `CheckForWinner()` kodunuz alt kısmına yöntemi aşağıda `timer1_Tick()` olay işleyicisi, aşağıdaki kodda gösterildiği gibi.
 
      [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
      Başka bir yöntem kullanır `foreach` Visual döngüde C# veya `For Each` döngüsü içinde her bir etiketi Git, Visual Basic'te <xref:System.Windows.Forms.TableLayoutPanel>. Eşitlik işlecini kullanır (`==` Visual C# ve `=` Visual Basic'te) arka plan ile eşleşip eşlemediğini doğrulamak için her bir etiketin simge rengini denetlemek için. Renkler eşleşiyorsa simge görünmez halde kalır ve oyuncu kalan simgelerin tümünü eşleştirmemiştir. Bu durumda, programın kullandığı bir `return` deyimi yöntemin geri kalanını atlayın. Döngü tüm etiketleri çalıştırmadan alır, `return` anlamına gelen form üzerindeki simgelerin tümü eşleştirilmiş olan ifade. Program oyuncunun galibiyetini kutlayan bir MessageBox gösterir ve ardından formun çağırır `Close()` da oyunu sonlandırmak için yöntemi.
 
-2.  Ardından, etiketin sahip <xref:System.Windows.Forms.Control.Click> olay işleyicisi çağırma yeni `CheckForWinner()` yöntemi. Oyuncunun seçtiği ikinci simgeyi gösterdikten hemen sonra programınızın bir kazanan olup olmadığını denetlediğinden emin olun. Seçilen ikinci simgenin rengini ayarladığınız satırı arayın ve sonra çağrı `CheckForWinner()` aşağıdaki kodda gösterildiği gibi hemen yöntemi.
+2. Ardından, etiketin sahip <xref:System.Windows.Forms.Control.Click> olay işleyicisi çağırma yeni `CheckForWinner()` yöntemi. Oyuncunun seçtiği ikinci simgeyi gösterdikten hemen sonra programınızın bir kazanan olup olmadığını denetlediğinden emin olun. Seçilen ikinci simgenin rengini ayarladığınız satırı arayın ve sonra çağrı `CheckForWinner()` aşağıdaki kodda gösterildiği gibi hemen yöntemi.
 
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3.  Programı kaydedip çalıştırın. Oyunu oynayın ve tüm simgeleri eşleştirin. Kazandığınızda program kutlama amaçlı bir görüntüler **MessageBox** (olarak gösterilen aşağıdaki resimde) ve sonra da kutuyu kapatır.
+3. Programı kaydedip çalıştırın. Oyunu oynayın ve tüm simgeleri eşleştirin. Kazandığınızda program kutlama amaçlı bir görüntüler **MessageBox** (olarak gösterilen aşağıdaki resimde) ve sonra da kutuyu kapatır.
 
      ![MessageBox ile eşleştirme oyunu](../ide/media/express_tut4step8.png)
 **eşleştirme oyunu** ile **MessageBox**
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [9. adım: Diğer özellikleri deneme](../ide/step-9-try-other-features.md).
+- Sonraki öğretici adımına gitmek için bkz: [9. adım: Diğer özellikleri deneme](../ide/step-9-try-other-features.md).
 
--   Önceki öğretici adımına dönmek için bkz: [adım 7: Çiftleri görünür kılma](../ide/step-7-keep-pairs-visible.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 7: Çiftleri görünür kılma](../ide/step-7-keep-pairs-visible.md).

@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039135"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; öğesi (ClickOnce uygulaması)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
 ## <a name="permissionset"></a>PermissionSet  
  Gerekli. Bu öğenin alt öğesi olan `applicationRequestMinimum` öğesi ve içeren `IPermission` öğesi. Bu öğe aşağıdaki özniteliklere sahiptir.  
   
--   `ID`  
+- `ID`  
   
      Gerekli. İzin kümesi tanımlar. Bu öznitelik herhangi bir değer olabilir. Kimliği başvurulduğundan `defaultAssemblyRequest` ve `assemblyRequest` öznitelikleri.  
   
--   `version`  
+- `version`  
   
      Gerekli. İzni sürümünü tanımlar. Normalde bu değer, `1`.  
   
 ## <a name="ipermission"></a>IPermission  
  İsteğe bağlı. Bu öğenin alt öğesi olan `PermissionSet` öğesi. `IPermission` Öğesi tam olarak içinde izin sınıfını tanımlar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. `IPermission` Öğesi izin sınıfını özelliklere karşılık gelen ek öznitelikler şu öznitelikler bulunur, ancak. Belirli bir izni sözdizimi öğrenmek için Security.config dosyasında listelenen örneklere bakın.  
   
--   `class`  
+- `class`  
   
      Gerekli. Tanımlayıcı adla izin sınıfını tanımlar. Örneğin, aşağıdaki kodu tanımlayan `FileDialogPermission` türü.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Gerekli. İzni sürümünü tanımlar. Genellikle bu değer, `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Gerekli. Uygulamanın bir sınırsız kullanım hakkı bu izne ihtiyacı olup olmadığını tanımlar. Varsa `true`, izin verme koşulsuz olur. Varsa `false`, veya bu öznitelik tanımlanmamışsa, üzerinde tanımlanan izin özgü özniteliklere göre kısıtlı `IPermission` etiketi. Şu izinleri alın:  
   
@@ -122,18 +122,18 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  İsteğe bağlı. Tüm derlemeler için verilen izinler kümesini tanımlar. Bu öğenin alt öğesi olan `applicationRequestMinimum` öğesi ve aşağıdaki özniteliklere sahiptir.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Gerekli. Varsayılan izin izin kümesi kimliği tanımlar. İzin kümesi içinde bildirildiği `PermissionSet` öğesi.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  İsteğe bağlı. Belirli bir derlemenin izinlerini tanımlar. Bu öğenin alt öğesi olan `applicationRequestMinimum` öğesi ve aşağıdaki özniteliklere sahiptir.  
   
--   `Name`  
+- `Name`  
   
      Gerekli. Derleme adını tanımlar.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Gerekli. Bu derlemeyi izin kümesi kimliği tanımlar. İzin kümesi içinde bildirildiği `PermissionSet` öğesi.  
   
@@ -143,7 +143,7 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  İsteğe bağlı. Yürütülecek uygulamanın istekleri güvenlik düzeyini tanımlar. Bu öğenin alt öğesi yok ve aşağıdaki özniteliklere sahiptir.  
   
--   `Level`  
+- `Level`  
   
      Gerekli. Uygulama güvenlik düzeyini isteyen gösterir. Olası değerler şunlardır:  
   
@@ -155,7 +155,7 @@ Uygulamanın istemci bilgisayarda çalışması gereken en düşük güvenlik iz
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamaları yalnızca bir değeri ile yükleme `asInvoker`. Başka bir değer ile yükleme başarısız olur.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      İsteğe bağlı. Uygulama erişim korumalı kullanıcı arabirimi öğeleri için gerekli olup olmadığını gösterir. Değerleri `true` veya `false`, ve varsayılan değer false'dur. Yalnızca imzalı uygulamaları true değeri olması gerekir.  
   

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b314dc9eedbf99ba130772ac226d45239b4de455
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938117"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045063"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>İzlenecek yol: Bir modele erişen metin şablonunda hata ayıklama
 Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüştürürken, Değiştir veya metin şablonları bir etki alanına özgü dil çözümünde eklediğinizde, hatalar alabilirsiniz. Aşağıdaki örneklerde bir metin şablonunda hata ayıklama için yapabileceğiniz şeylerden bazıları gösterilmektedir.
@@ -38,11 +38,11 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 
 #### <a name="to-create-a-text-template"></a>Bir metin şablonu oluşturmak için
 
-1.  Çözümü derleyin ve hata ayıklayıcıda çalıştırmaya başlayın. (Üzerinde **derleme** menüsünde tıklayın **çözümü yeniden derle**ve ardından **hata ayıklama** menüsünde tıklayın **hata ayıklamayı Başlat**.) Hata ayıklama projeyi Visual Studio'nun yeni bir örneğini açar.
+1. Çözümü derleyin ve hata ayıklayıcıda çalıştırmaya başlayın. (Üzerinde **derleme** menüsünde tıklayın **çözümü yeniden derle**ve ardından **hata ayıklama** menüsünde tıklayın **hata ayıklamayı Başlat**.) Hata ayıklama projeyi Visual Studio'nun yeni bir örneğini açar.
 
-2.  Adlı bir metin dosyası Ekle `DebugTest.tt` hata ayıklama projeye.
+2. Adlı bir metin dosyası Ekle `DebugTest.tt` hata ayıklama projeye.
 
-3.  Emin olun **özel araç** DebugTest.tt özelliği ayarlandığında `TextTemplatingFileGenerator`.
+3. Emin olun **özel araç** DebugTest.tt özelliği ayarlandığında `TextTemplatingFileGenerator`.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Bir metin şablonundan bir model erişim yönergeleri hata ayıklama
  Bir model ifadeleri ve bir metin şablonu ifadelerinde erişebilmeniz için önce üretilen bir yönerge işlemcisine çağırmanız gerekir. Üretilen bir yönerge işlemcisine çağırma sınıfları modelinizde metin şablonunun kod özellikleri olarak kullanılabilmesini sağlar. Daha fazla bilgi için [metin şablonlarından modellere erişme](../modeling/accessing-models-from-text-templates.md).
@@ -51,7 +51,7 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 
 #### <a name="to-debug-an-incorrect-directive-name"></a>Hatalı bir yönerge adı hata ayıklama
 
-1.  DebugTest.tt kodu aşağıdaki kodla değiştirin:
+1. DebugTest.tt kodu aşağıdaki kodla değiştirin:
 
     > [!NOTE]
     >  Bir hata kodunu içerir. Hata ayıklama için kullanıma sunuyoruz.
@@ -87,7 +87,7 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
     #>
     ```
 
-2.  İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
+2. İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
 
      **Hata listesi** penceresinde bu hata görüntülenir:
 
@@ -95,9 +95,9 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
 
      Bu durumda, hatalı bir yönerge adı yönerge çağrıyı içerir. Belirttiğiniz `modelRoot` , ancak doğru yönergesi adına yönerge adı olarak `DebuggingTestLanguage`.
 
-3.  Hataya çift **hata listesi** koda gitmek penceresi.
+3. Hataya çift **hata listesi** koda gitmek penceresi.
 
-4.  Kodu düzeltmek için yönerge adına değiştirme `DebuggingTestLanguage`.
+4. Kodu düzeltmek için yönerge adına değiştirme `DebuggingTestLanguage`.
 
      Değişiklik vurgulanır.
 
@@ -109,13 +109,13 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5.  İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
+5. İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
 
      Artık sistem metin şablonunun dönüştürür ve karşılık gelen çıkış dosyası oluşturur. Herhangi bir hata görmeyeceğiniz **hata listesi** penceresi.
 
 #### <a name="to-debug-an-incorrect-property-name"></a>Bir hatalı özellik adı hata ayıklama
 
-1.  DebugTest.tt kodu aşağıdaki kodla değiştirin:
+1. DebugTest.tt kodu aşağıdaki kodla değiştirin:
 
     > [!NOTE]
     >  Bir hata kodunu içerir. Hata ayıklama için kullanıma sunuyoruz.
@@ -151,7 +151,7 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
     #>
     ```
 
-2.  İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
+2. İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
 
      **Hata listesi** penceresi görüntülenir ve bu hatalardan birini görüntüler:
 
@@ -169,9 +169,9 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
     ```
 
-3.  Koda gitmek için Hata Listesi penceresindeki hataya çift tıklayın.
+3. Koda gitmek için Hata Listesi penceresindeki hataya çift tıklayın.
 
-4.  Bu kodu düzeltmek için özellik adına değiştirme `LibraryModel` metin şablonunun kod.
+4. Bu kodu düzeltmek için özellik adına değiştirme `LibraryModel` metin şablonunun kod.
 
      Değişiklikler vurgulanır.
 
@@ -206,6 +206,6 @@ Kaynak kodu veya oluşturulan kodun derlediğinde şablon altyapısı dönüşt�
     #>
     ```
 
-5.  İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
+5. İçinde **Çözüm Gezgini**DebugTest.tt sağ tıklayın ve ardından **özel aracı Çalıştır**.
 
      Artık sistem metin şablonunun dönüştürür ve karşılık gelen çıkış dosyası oluşturur. Herhangi bir hata görmeyeceğiniz **hata listesi** penceresi.

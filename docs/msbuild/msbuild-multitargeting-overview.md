@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb31cf48194f48188b714fb7afb14de053cb584d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043500"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild çoklu sürüm desteğine genel bakış
 MSBuild kullanarak, .NET Framework'ün çeşitli sürümlerinden herhangi birini ve birkaç sistemi platformları herhangi birini çalıştırmak için bir uygulamayı derleyebilirsiniz. Örneğin, bir 32 bit platformda .NET Framework 2.0 üzerinde çalışacak bir uygulama derlemek ve bir 64-bit platformda .NET Framework 4.5 üzerinde çalıştırılacak aynı uygulamayı derleyin.
@@ -23,15 +23,15 @@ MSBuild kullanarak, .NET Framework'ün çeşitli sürümlerinden herhangi birini
 
  MSBuild hedefleme özelliklerinden bazıları şunlardır:
 
--   .NET Framework, örneğin, sürüm 2.0, 3.5 ve 4'ün önceki bir sürümünü hedefleyen bir uygulama geliştirebilirsiniz.
+- .NET Framework, örneğin, sürüm 2.0, 3.5 ve 4'ün önceki bir sürümünü hedefleyen bir uygulama geliştirebilirsiniz.
 
--   Örneğin, Silverlight Framework .NET Framework dışında bir çerçeve hedefleyebilirsiniz.
+- Örneğin, Silverlight Framework .NET Framework dışında bir çerçeve hedefleyebilirsiniz.
 
--   Platformlarını hedefleyebilen bir *framework profili*, hangi hedef framework'ün önceden tanımlanmış bir alt kümesidir.
+- Platformlarını hedefleyebilen bir *framework profili*, hangi hedef framework'ün önceden tanımlanmış bir alt kümesidir.
 
--   Geçerli .NET Framework sürümü için bir hizmet paketi yayımlandığında bunu hedefleyebilirsiniz.
+- Geçerli .NET Framework sürümü için bir hizmet paketi yayımlandığında bunu hedefleyebilirsiniz.
 
--   MSBuild'ı hedefleyen bir uygulama yalnızca hedef framework ve platform kullanılabilir işlevleri kullanır garanti eder.
+- MSBuild'ı hedefleyen bir uygulama yalnızca hedef framework ve platform kullanılabilir işlevleri kullanır garanti eder.
 
 ## <a name="target-framework-and-platform"></a>Hedef framework ve platform
  A *hedef Framework'ü* bir proje üzerinde çalıştırmak için yerleşik olan .NET Framework sürümü ve *hedef platform* projeyi çalıştırmak için yerleşik bir sistem platformudur.  Örneğin, 802 x 86 işlemci ailesini (x86) ile uyumlu bir 32 bit platformda çalıştırmak için bir .NET Framework 2.0 uygulama hedeflemek isteyebilirsiniz. Hedef Çerçeve ve hedef platform bileşimi olarak da bilinen *hedef bağlam*. Daha fazla bilgi için [hedef çerçevesi ve hedef platformu](../msbuild/msbuild-target-framework-and-target-platform.md).

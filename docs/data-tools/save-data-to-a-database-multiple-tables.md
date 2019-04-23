@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051420"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Bir veritabanına (birden çok tablo) veri kaydetme
 
@@ -31,15 +31,15 @@ Uygulama geliştirmede en sık karşılaşılan senaryolardan biri, bir Windows 
 
 Bu kılavuzda gösterilen görevler aşağıdakileri içerir:
 
--  Oluşturma ve bir veri kaynağı ile uygulamanızda yapılandırma [veri kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png).
+- Oluşturma ve bir veri kaynağı ile uygulamanızda yapılandırma [veri kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png).
 
--  Ayarı'ndeki öğelerin kullanımını denetler [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window). Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Ayarı'ndeki öğelerin kullanımını denetler [veri kaynakları penceresi](add-new-data-sources.md#data-sources-window). Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Öğe sürükleyerek veriye bağlı denetimler oluşturma **veri kaynakları** formunuza penceresi.
+- Öğe sürükleyerek veriye bağlı denetimler oluşturma **veri kaynakları** formunuza penceresi.
 
--  Birkaç kayıt kümesindeki her bir tablodaki değiştirme.
+- Birkaç kayıt kümesindeki her bir tablodaki değiştirme.
 
--  Güncelleştirilmiş veri kümesinde veritabanına geri göndermek için kod değiştirme.
+- Güncelleştirilmiş veri kümesinde veritabanına geri göndermek için kod değiştirme.
 
 ## <a name="prerequisites"></a>Önkoşullar
 

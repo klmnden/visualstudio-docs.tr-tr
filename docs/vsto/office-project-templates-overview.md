@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054579"
 ---
 # <a name="office-project-templates-overview"></a>Office proje şablonlarına genel bakış
   Visual Studio'da Microsoft Office geliştirici araçları, aşağıdaki Office çözüm türlerini oluşturmak için proje şablonları içerir:
@@ -53,7 +53,7 @@ ms.locfileid: "56614694"
 > [!NOTE]
 > Office geliştirme araçları Visual Studio'nun belirli sürümlerinde yer alır. Daha fazla bilgi için [Office çözümleri geliştirmek için bilgisayarı yapılandırma](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Belge düzeyinde özelleştirmeler
+## <a name="DocLevel"></a> Belge düzeyinde özelleştirmeler
  **Office** düğümünde **yeni proje** iletişim kutusu başlamanızı sağlayacak şu proje şablonlarını Word ve Excel için belge düzeyi özelleştirmeleri oluşturmaya sunar:
 
 - **Word 2013 ve 2016 VSTO belgesi**
@@ -81,17 +81,17 @@ ms.locfileid: "56614694"
 
  Bu proje türleriyle çalışmaya başlama hakkında bilgi için aşağıdaki konulara bakın:
 
--   [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
+- [Belge düzeyi özelleştirmelerini programlama](../vsto/programming-document-level-customizations.md)
 
--   [Word çözümleri](../vsto/word-solutions.md)
+- [Word çözümleri](../vsto/word-solutions.md)
 
--   [Excel çözümleri](../vsto/excel-solutions.md)
+- [Excel çözümleri](../vsto/excel-solutions.md)
 
--   [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [İzlenecek yol: Word için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [İzlenecek yol: Excel için ilk belge düzeyi özelleştirmeyi oluşturma](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> VSTO eklentileri
+## <a name="AppLevel"></a> VSTO eklentileri
  **Office/SharePoint** düğümünde **yeni proje** iletişim kutusu başlamanızı sağlayacak şu proje şablonlarını sunar VSTO eklentileri oluşturma.
 
 - **Excel 2013 ve 2016 VSTO eklentisi**
@@ -157,7 +157,7 @@ ms.locfileid: "56614694"
 |Kullanıcılar, salt okunur olmadığı sürece belgeyi açıp değiştirebilir. Kaydedilen tüm değişiklikler özgün belgede tutulur.|Kullanıcılar yeni bir belge olarak yerel kopya oluşturmak üzere şablonu açabilir. Özel izinler verilmediği sürece özgün belgede değişiklik yapamazlar.|
 |Belge açılınca <xref:Microsoft.Office.Tools.Word.Document.Open> olay.|Şablon açılınca <xref:Microsoft.Office.Tools.Word.Document.New> olay.|
 
-##  <a name="Limitations"></a> Genel şablonların ve Excel eklentilerinin (.xla dosyaları) sınırlamaları
+## <a name="Limitations"></a> Genel şablonların ve Excel eklentilerinin (.xla dosyaları) sınırlamaları
  Belgelere, çalışma kitapları ve şablonlar, genel şablon veya Excel VSTO eklentileri (.xla dosyaları) düzgün çalışmayabilir.
 
 ## <a name="word-templates"></a>Word şablonları

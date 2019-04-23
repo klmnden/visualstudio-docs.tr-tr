@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038133"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Nasıl yapılır: Görsel stiller etkinken WPF uygulaması yayımlama
 
@@ -31,7 +31,7 @@ Görsel stiller, kullanıcı tarafından seçilen tema göre değiştirmek için
 
   Ardından, yayımlanan dosyaların son kullanıcıların uygulamayı yüklemek istediğiniz konuma taşıyabilirsiniz.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Görsel stiller etkinken çözüm yayımlama
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Görsel stiller etkinken çözüm yayımlama
 
 1. Projenizi görsel stiller etkinken olmadığından emin olun. İlk olarak, projenizin bildirim dosyası için aşağıdaki XML denetleyin. Ardından, XML varsa, XML açıklama etiketi ile alın.
 

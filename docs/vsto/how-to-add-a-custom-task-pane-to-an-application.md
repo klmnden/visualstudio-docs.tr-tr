@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b531fdbbd637d2d505d44ea27bcdfb5350ad36a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039849"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme
   VSTO eklentisi kullanarak bir özel görev bölmesi uygulamaları için yukarıda listelenen ekleyebilirsiniz. Daha fazla bilgi için [özel görev bölmeleri](../vsto/custom-task-panes.md).
@@ -32,24 +32,24 @@ ms.locfileid: "56616793"
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Uygulamaya özel görev bölmesi ekleme
 
-1.  Bir VSTO eklentisi projesi için yukarıda listelenen uygulamalardan birini oluşturun veya açın. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Bir VSTO eklentisi projesi için yukarıda listelenen uygulamalardan birini oluşturun veya açın. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Üzerinde **proje** menüsünü tıklatın **kullanıcı denetimi Ekle**.
+2. Üzerinde **proje** menüsünü tıklatın **kullanıcı denetimi Ekle**.
 
-3.  İçinde **Yeni Öğe Ekle** iletişim kutusunda, yeni kullanıcı denetimine adını değiştirmek **MyUserControl**ve ardından **Ekle**.
+3. İçinde **Yeni Öğe Ekle** iletişim kutusunda, yeni kullanıcı denetimine adını değiştirmek **MyUserControl**ve ardından **Ekle**.
 
      Kullanıcı denetimi Tasarımcısı'nda açılır.
 
-4.  Bir veya daha fazla Windows Forms denetimleri ekleme **araç kutusu** kullanıcı denetimi için.
+4. Bir veya daha fazla Windows Forms denetimleri ekleme **araç kutusu** kullanıcı denetimi için.
 
-5.  Açık **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası.
+5. Açık **ThisAddIn.cs** veya **ThisAddIn.vb** kod dosyası.
 
-6.  Aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Bu kod örneğini bildirir `MyUserControl` ve <xref:Microsoft.Office.Tools.CustomTaskPane> üyesi olarak `ThisAddIn` sınıfı.
+6. Aşağıdaki kodu ekleyin `ThisAddIn` sınıfı. Bu kod örneğini bildirir `MyUserControl` ve <xref:Microsoft.Office.Tools.CustomTaskPane> üyesi olarak `ThisAddIn` sınıfı.
 
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
 
-7.  Aşağıdaki kodu ekleyin `ThisAddIn_Startup` olay işleyicisi. Bu kod yeni bir oluşturur <xref:Microsoft.Office.Tools.CustomTaskPane> ekleyerek `MyUserControl` nesnesini `CustomTaskPanes` koleksiyonu. Kod ayrıca görev bölmesini görüntüler.
+7. Aşağıdaki kodu ekleyin `ThisAddIn_Startup` olay işleyicisi. Bu kod yeni bir oluşturur <xref:Microsoft.Office.Tools.CustomTaskPane> ekleyerek `MyUserControl` nesnesini `CustomTaskPanes` koleksiyonu. Kod ayrıca görev bölmesini görüntüler.
 
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]

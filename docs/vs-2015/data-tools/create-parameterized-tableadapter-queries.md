@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039294"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Parametreleştirilmiş TableAdapter sorguları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Sizin parametreleştirilmiş TableAdapter sorguları veri kümesi Tasarımcısı
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Verilere bağlı bir form tasarlarken, Parametreli sorgu oluşturma  
   
-1.  Formunuzdaki bir veri kümesine zaten bağlı bir denetim seçin. Daha fazla bilgi için [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Formunuzdaki bir veri kümesine zaten bağlı bir denetim seçin. Daha fazla bilgi için [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  Üzerinde **veri** menüsünde**Sorgu Ekle**.  
+2. Üzerinde **veri** menüsünde**Sorgu Ekle**.  
   
-3.  Tamamlamak **arama ölçütü Oluşturucu** iletişim kutusunda, istenen parametrelere sahip bir WHERE yan tümcesi SQL deyiminde ekleme.  
+3. Tamamlamak **arama ölçütü Oluşturucu** iletişim kutusunda, istenen parametrelere sahip bir WHERE yan tümcesi SQL deyiminde ekleme.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Varolan bir verilere bağlı forma bir sorgu Ekle  
   
@@ -91,11 +91,11 @@ Bu bir TableAdapter sorgu olsaydı, aşağıdaki kod ile birlikte gönderilmeyen
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Null değerleri kabul etmek bir sorgu etkinleştir  
   
-1.  İçinde **veri kümesi Tasarımcısı**, null parametre değerlerini kabul etmesi gerekir TableAdapter sorgu seçin.  
+1. İçinde **veri kümesi Tasarımcısı**, null parametre değerlerini kabul etmesi gerekir TableAdapter sorgu seçin.  
   
-2.  İçinde **özellikleri** penceresinde **parametreleri**. Ardından üç nokta simgesine basın (**...** ) açmak için düğmeyi **parametre koleksiyon Düzenleyicisi**.  
+2. İçinde **özellikleri** penceresinde **parametreleri**. Ardından üç nokta simgesine basın (**...** ) açmak için düğmeyi **parametre koleksiyon Düzenleyicisi**.  
   
-3.  Null değerlere izin verir parametreyi seçin ve ayarlayın **AllowDbNull** özelliğini `true`.  
+3. Null değerlere izin verir parametreyi seçin ve ayarlayın **AllowDbNull** özelliğini `true`.  
   
 ## <a name="see-also"></a>Ayrıca bkz.
 

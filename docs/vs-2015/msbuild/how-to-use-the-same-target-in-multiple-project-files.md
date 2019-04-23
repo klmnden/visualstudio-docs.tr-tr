@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056841"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Nasıl yapılır: Birden Çok Proje Dosyasında Aynı Hedefi Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Birkaç yazdıysanız [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] p
   
 #### <a name="to-import-a-project"></a>Bir projeye içeri aktarmak için  
   
-1.  İçeri aktarma proje dosyası, tüm özellikleri ve özellikler için parametre olarak kullanılan öğeleri ve içeri aktarılan projedeki öğeleri tanımlar.  
+1. İçeri aktarma proje dosyası, tüm özellikleri ve özellikler için parametre olarak kullanılan öğeleri ve içeri aktarılan projedeki öğeleri tanımlar.  
   
-2.  Kullanım `Import` projeyi içeri aktarmak için öğesi. Örneğin:  
+2. Kullanım `Import` projeyi içeri aktarmak için öğesi. Örneğin:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  Aşağıdaki `Import` öğe, içeri aktarılan projedeki tüm özelliklerini ve özelliklerinin varsayılan tanımları geçersiz kılmanız gerekir öğeleri ve öğeleri tanımlar.  
+3. Aşağıdaki `Import` öğe, içeri aktarılan projedeki tüm özelliklerini ve özelliklerinin varsayılan tanımları geçersiz kılmanız gerekir öğeleri ve öğeleri tanımlar.  
   
 ## <a name="order-of-evaluation"></a>Değerlendirme Sırası  
  Zaman [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ulaştığında bir `Import` öğe, içeri aktarılan proje konumda alma projesine eklenen etkili bir şekilde `Import` öğesi. Bu nedenle, konumunu `Import` öğesi özellikleri ve öğeleri değerlerini etkileyebilir. İçeri aktarılan proje ve özellikleri ve öğeleri tarafından içeri aktarılan proje kullandığı ayarlanmış olan öğeleri ve özellikleri anlamak önemlidir.  
@@ -77,11 +77,11 @@ Birkaç yazdıysanız [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] p
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>Projeleri içeri aktarılırken aşağıdaki yaklaşımı kullanın.  
   
-1.  , Proje dosyası, tüm özellikleri ve özellikler için parametre olarak kullanılan öğeleri ve içeri aktarılan projedeki öğeleri tanımlar.  
+1. , Proje dosyası, tüm özellikleri ve özellikler için parametre olarak kullanılan öğeleri ve içeri aktarılan projedeki öğeleri tanımlar.  
   
-2.  Projeyi içeri aktarın.  
+2. Projeyi içeri aktarın.  
   
-3.  Proje dosyasında tüm özellikleri ve özelliklerinin varsayılan tanımları geçersiz kılmanız gerekir öğeleri ve içeri aktarılan projedeki öğeleri tanımlar.  
+3. Proje dosyasında tüm özellikleri ve özelliklerinin varsayılan tanımları geçersiz kılmanız gerekir öğeleri ve içeri aktarılan projedeki öğeleri tanımlar.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod örneği, ikinci kod örneğinde aktarır MyCommon.targets dosyasını gösterir. .Targets dosyasının özelliklerini alma projeden yapı yapılandırmak için değerlendirir.  

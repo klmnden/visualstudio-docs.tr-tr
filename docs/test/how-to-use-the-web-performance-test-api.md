@@ -9,12 +9,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: add516e9a8f5cb31b85429b1bf41cfa438e8a438
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059051"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Nasıl yapılır: Web performans testi API'si kullanma
 
@@ -31,34 +31,34 @@ Yük testleri için eklentileri de oluşturabilirsiniz. Daha fazla bilgi için [
 
 ## <a name="to-use-the-webtesting-namespace"></a>WebTesting ad alanını kullanmak için
 
-1.  Bir web performansı ve bir web performans testi içeren bir yük testi projesi açın.
+1. Bir web performansı ve bir web performans testi içeren bir yük testi projesi açın.
 
-2.  Visual C# veya Visual Basic kitaplık projesi sınama çözümünüze ekleyin.
+2. Visual C# veya Visual Basic kitaplık projesi sınama çözümünüze ekleyin.
 
-3.  Bir başvuru, sınıf kitaplığı projesi için web performansı ve yük testi projesi ekleyin.
+3. Bir başvuru, sınıf kitaplığı projesi için web performansı ve yük testi projesi ekleyin.
 
-4.  Sınıf kitaplığı projesinde Microsoft.VisualStudio.QualityTools.WebTestFramework DLL'ye bir başvuru ekleyin.
+4. Sınıf kitaplığı projesinde Microsoft.VisualStudio.QualityTools.WebTestFramework DLL'ye bir başvuru ekleyin.
 
-5.  Sınıf kitaplığı projesinde bulunan sınıf dosyası ekleyin bir `using` bildirimi <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad alanı.
+5. Sınıf kitaplığı projesinde bulunan sınıf dosyası ekleyin bir `using` bildirimi <xref:Microsoft.VisualStudio.TestTools.WebTesting> ad alanı.
 
-6.  Uygulayan bir sınıf oluşturma <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> arabirimi.
+6. Uygulayan bir sınıf oluşturma <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> arabirimi.
 
-7.  Projeyi oluşturun.
+7. Projeyi oluşturun.
 
-8.  Web Performans Testi Düzenleyicisi'ni kullanarak yeni web performans testi eklentisi ekleyin:
+8. Web Performans Testi Düzenleyicisi'ni kullanarak yeni web performans testi eklentisi ekleyin:
 
-    1.  Seçin **Web Testi Eklentisi Ekle** araç.
+    1. Seçin **Web Testi Eklentisi Ekle** araç.
 
          **Web Testi Eklentisi Ekle** iletişim kutusu görüntülenir.
 
-    2.  Altında **bir eklenti seçin**seçin, web performans testi eklentisi sınıfı.
+    2. Altında **bir eklenti seçin**seçin, web performans testi eklentisi sınıfı.
 
-    3.  İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
+    3. İçinde **özelliklerini çili eklenti** bölmesinde, çalışma zamanında kullanmak eklenti için başlangıç değerlerini ayarlayın.
 
         > [!NOTE]
         > Eklentilerinizi istediğiniz sayıda özelliği getirebilir; bunları yalnızca genel, ayarlanabilir ve tam sayı, Boole veya dize gibi bir temel türden yapın. Özellikler penceresini kullanarak web başarım testi eklentisi özelliklerini daha sonra da düzenleyebilirsiniz.
 
-    4.  Seçin **Tamam**.
+    4. Seçin **Tamam**.
 
 9. Web performans testinizi çalıştırın.
 

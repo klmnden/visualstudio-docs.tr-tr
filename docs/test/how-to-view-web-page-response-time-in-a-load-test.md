@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059584"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Nasıl yapılır: Yük Testi Çözümleyicisi kullanarak bir yük testi içindeki görünümü web sayfası yanıt süresi
 
@@ -25,15 +25,15 @@ Her web sayfasının yüklenmesi için geçen süreyi olarak da bilinen *yanıt 
 
 Bir yük testi içinde web performans testinizi yoğunluk altında çalıştırırsanız, her sayfa için aşağıdaki bilgileri analiz etmek mümkün olacaktır:
 
--   Sayfa için ortalama yanıt süresi.
+- Sayfa için ortalama yanıt süresi.
 
--   Sayfanın yanıt süresi hedefi karşılayan test yinelemeleri yüzdesi.
+- Sayfanın yanıt süresi hedefi karşılayan test yinelemeleri yüzdesi.
 
--   Tablolar veya grafikler görünümünde kullanarak web sayfası yanıt sürelerini analiz edebilirsiniz **Yük Testi Çözümleyicisi**:
+- Tablolar veya grafikler görünümünde kullanarak web sayfası yanıt sürelerini analiz edebilirsiniz **Yük Testi Çözümleyicisi**:
 
--   Tablo görünümünde Web sayfası yanıt sürelerini analiz etme
+- Tablo görünümünde Web sayfası yanıt sürelerini analiz etme
 
--   Grafik görünümünde Web sayfası yanıt sürelerini analiz etme
+- Grafik görünümünde Web sayfası yanıt sürelerini analiz etme
 
 ## <a name="view-response-time-data-in-a-table"></a>Bir tablodaki yanıt süresi verilerini görüntüleyin
 

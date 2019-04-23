@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059974"
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme Denetimlerinizi Adlandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Formunuzda tek bir PictureBox vardır. Onu eklediğinizde IDE otomatik olarak bu
   
 ### <a name="to-name-your-button-controls"></a>Düğme denetimlerinizi adlandırmak için  
   
-1.  Form üzerinde seçin **Kapat** düğmesi. (Tüm düğmeler seçiliyse hala varsa seçimini iptal etmek için ESC tuşuna basın.) Kaydırın **özellikleri** penceresini görene kadar **(ad)** özelliği. ( **(Ad)** özelliği, Özellikler alfabetik olduğunda en olan.) Adla değiştirin **closeButton**, aşağıdaki resimde gösterildiği gibi.  
+1. Form üzerinde seçin **Kapat** düğmesi. (Tüm düğmeler seçiliyse hala varsa seçimini iptal etmek için ESC tuşuna basın.) Kaydırın **özellikleri** penceresini görene kadar **(ad)** özelliği. ( **(Ad)** özelliği, Özellikler alfabetik olduğunda en olan.) Adla değiştirin **closeButton**, aşağıdaki resimde gösterildiği gibi.  
   
      ![CloseButton adıyla Özellikler penceresi](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 CloseButton adıyla Özellikler penceresi  
@@ -38,14 +38,14 @@ CloseButton adıyla Özellikler penceresi
     > [!NOTE]
     >  İçin düğmenizin adını değiştirmeyi denerseniz **closeButton**, Kapat ve düğme sözcükleri arasına bir boşluk koyun, IDE bir hata iletisi görüntüler: "Özellik değeri geçerli değil." Denetim adlarında boşluklara (ve diğer birkaç karaktere) izin verilmez.  
   
-2.  Diğer üç düğmeyi yeniden adlandır **Arkaplandüğmesi**, **Temizledüğmesi**, ve **showButton**. Denetim Seçici açılan listesini seçerek adları doğrulayabilirsiniz **özellikleri** penceresi. Yeni düğme adları görüntülenir.  
+2. Diğer üç düğmeyi yeniden adlandır **Arkaplandüğmesi**, **Temizledüğmesi**, ve **showButton**. Denetim Seçici açılan listesini seçerek adları doğrulayabilirsiniz **özellikleri** penceresi. Yeni düğme adları görüntülenir.  
   
-3.  Çift **resim Göster** formundaki düğmesi. Alternatif, **resim Göster** formda düğmesine ve ardından ENTER tuşuna basın. Bunu yaptığınızda, IDE adlı ana penceresinde bir ek sekme açar **Form1.cs** (**Form1.vb** Visual Basic kullanılıyorsa). Bu sekme aşağıdaki resimde gösterildiği gibi formun arkasındaki kod dosyasını gösterir.  
+3. Çift **resim Göster** formundaki düğmesi. Alternatif, **resim Göster** formda düğmesine ve ardından ENTER tuşuna basın. Bunu yaptığınızda, IDE adlı ana penceresinde bir ek sekme açar **Form1.cs** (**Form1.vb** Visual Basic kullanılıyorsa). Bu sekme aşağıdaki resimde gösterildiği gibi formun arkasındaki kod dosyasını gösterir.  
   
      ![Visual C Form1.cs sekmesi&#35; kod](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode")  
 Visual C# koduyla Form1.cs sekmesi  
   
-4.  Bu kod parçası üzerinde odaklanın. (Seçin **VB** aşağıda Visual Basic kullanıyorsanız kod Visual Basic sürümünü görüntülemek için sekmesinde.)  
+4. Bu kod parçası üzerinde odaklanın. (Seçin **VB** aşağıda Visual Basic kullanıyorsanız kod Visual Basic sürümünü görüntülemek için sekmesinde.)  
   
      [!code-csharp[VbExpressTutorial1Step6#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step6#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb#1)]  
@@ -55,9 +55,9 @@ Visual C# koduyla Form1.cs sekmesi
     > [!NOTE]
     >  Bu öğreticide, otomatik olarak oluşturulan Visual Basic kodu parantez () arasındaki her şey kaldırılarak basitleştirilmiştir. Bu her gerçekleştiğinde, aynı kodu kaldırabilirsiniz. Programınız her iki şekilde çalışır. Öğreticiler kalanı için otomatik olarak oluşturulan herhangi bir kod mümkün olduğunda basitleştirilecektir.  
   
-5.  Windows Form Tasarımcısı sekmesini tekrar seçin (**Form1.cs [Design]** görselde C#, **Form1.vb [Design]** Visual Basic'te) ve kod dosyası açın **ResmiTemizle** formun koduna bunun için bir yöntem oluşturmak için düğme. Bu, kalan iki düğme için yineleyin. Her defasında IDE formun kod dosyasına yeni bir yöntem ekler.  
+5. Windows Form Tasarımcısı sekmesini tekrar seçin (**Form1.cs [Design]** görselde C#, **Form1.vb [Design]** Visual Basic'te) ve kod dosyası açın **ResmiTemizle** formun koduna bunun için bir yöntem oluşturmak için düğme. Bu, kalan iki düğme için yineleyin. Her defasında IDE formun kod dosyasına yeni bir yöntem ekler.  
   
-6.  Birden fazla yöntem eklemek için onay kutusu denetimi için kod dosyasını ekleyin için Windows Form Tasarımcısı'nda açın bir `checkBox1_CheckedChanged()` yöntemi. Bu yöntem, her kullanıcı seçer veya temizler onay kutusunu çağrılır.  
+6. Birden fazla yöntem eklemek için onay kutusu denetimi için kod dosyasını ekleyin için Windows Form Tasarımcısı'nda açın bir `checkBox1_CheckedChanged()` yöntemi. Bu yöntem, her kullanıcı seçer veya temizler onay kutusunu çağrılır.  
   
     > [!NOTE]
     >  Bir programda çalışırken, Kod Düzenleyicisi'ni ve Windows Form Tasarımcısı arasında genellikle taşıyın. IDE, projenizde gezinmeyi kolaylaştırır. Kullanım **Çözüm Gezgini** çift tıklayarak Windows Form Tasarımcısı açmak için **Form1.cs** Visual C# veya **Form1.vb** Visual Basic veya menü çubuğunda, seçin**Görünümü**, **Tasarımcısı**.  
@@ -77,6 +77,6 @@ Visual C# koduyla Form1.cs sekmesi
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 7: Formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md).  
+- Sonraki öğretici adımına gitmek için bkz: [adım 7: Formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).
+- Önceki öğretici adımına dönmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).

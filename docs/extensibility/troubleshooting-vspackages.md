@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039739"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackage Sorunlarını Giderme
 İle VSPackage olabilir ve bu sorunları çözmek için ipuçları yaygın sorunlar aşağıda verilmiştir.
@@ -56,7 +56,7 @@ ms.locfileid: "56706996"
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Kaydetme bir VSPackage sorunlarını gidermek için
 
-1.  VSPackage derleme güvenilir bir konumda bulunduğundan emin emin olun. RegPkg derlemeleri varsayılan .net güvenlik yapılandırması ağ paylaşımına gibi bir güvenilmeyen veya kısmen güvenilen konumda kaydedilemiyor. Bir kullanıcı güvenilir olmayan bir konumda bir proje oluşturur. her bir uyarı görüntülenir, ancak "Bu iletiyi tekrar gösterme" onay kutusu bu uyarıyı yeniden oluşmasını öğesinden engelleyebilirsiniz.
+1. VSPackage derleme güvenilir bir konumda bulunduğundan emin emin olun. RegPkg derlemeleri varsayılan .net güvenlik yapılandırması ağ paylaşımına gibi bir güvenilmeyen veya kısmen güvenilen konumda kaydedilemiyor. Bir kullanıcı güvenilir olmayan bir konumda bir proje oluşturur. her bir uyarı görüntülenir, ancak "Bu iletiyi tekrar gösterme" onay kutusu bu uyarıyı yeniden oluşmasını öğesinden engelleyebilirsiniz.
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Görünür değil veya bir komutu tıklattığınızda, bir hata oluşturur. komut sorunlarını gidermek için
 
@@ -64,44 +64,44 @@ ms.locfileid: "56706996"
 
 2. Emin olun [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] UI.dll, VSPackage için bulabilirsiniz.
 
-   1.  VSPackage'ı CLSID kayıt defteri paketleri bölümünü bulun:
+   1. VSPackage'ı CLSID kayıt defteri paketleri bölümünü bulun:
 
         HKLM\Software\Microsoft\Visual Studio\\*\<sürüm >* \Packages
 
-   2.  SatelliteDll alt tarafından verilen yolun doğru olduğundan emin olun.
+   2. SatelliteDll alt tarafından verilen yolun doğru olduğundan emin olun.
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Beklenmedik bir şekilde davranan VSPackage sorunlarını gidermek için
 
-1.  Kodunuzda kesme noktaları ayarlayın.
+1. Kodunuzda kesme noktaları ayarlayın.
 
      Hata ayıklama için iyi bir başlangıç noktası oluşturucusu ve başlatma yöntemi ' dir. Ayrıca, bir menü komutu gibi değerlendirmek istediğiniz alanı kesme noktaları ayarlayabilirsiniz. Kesme noktalarını etkinleştir, hata ayıklayıcı altında çalıştırmanız gerekir.
 
-    1.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.
+    1. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 
-    2.  Üzerinde **özellik sayfaları** iletişim kutusunda **hata ayıklama** sekmesi.
+    2. Üzerinde **özellik sayfaları** iletişim kutusunda **hata ayıklama** sekmesi.
 
-    3.  İçinde **komut satırı bağımsız değişkenleri** geliştirme ortamının kök sonekini yazın, VSPackage hedeflerinizi. Örneğin, deneysel yapı seçmek için şunu yazın: **RootSuffix Exp**.
+    3. İçinde **komut satırı bağımsız değişkenleri** geliştirme ortamının kök sonekini yazın, VSPackage hedeflerinizi. Örneğin, deneysel yapı seçmek için şunu yazın: **RootSuffix Exp**.
 
-    4.  Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** veya F5 tuşuna basın.
+    4. Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Başlat** veya F5 tuşuna basın.
 
         > [!NOTE]
         >  Bir proje hata ayıklaması yapıyorsanız veya projenize mevcut bir örneğini artık yüklenemiyor.
 
-2.  Etkinlik günlüğü'nü kullanın.
+2. Etkinlik günlüğü'nü kullanın.
 
      Temel etkinlik günlüğü bilgilerini yazarak VSPackage davranışını izleme. Bir perakende ortamında bir VSPackage'ı çalıştırdığınızda bu özellikle yararlı bir tekniktir. Daha fazla bilgi için [nasıl yapılır: Etkinlik günlüğü'nün](../extensibility/how-to-use-the-activity-log.md).
 
-3.  Ortak semboller kullanın.
+3. Ortak semboller kullanın.
 
      Hata ayıklama sırasında okunabilirliği artırmak için hata ayıklayıcıya sembolleri ekleyebilirsiniz.
 
-    1.  Gelen **Araçlar/Seçenekler** menüsünde gidin **hata ayıklama/semboller** iletişim kutusu.
+    1. Gelen **Araçlar/Seçenekler** menüsünde gidin **hata ayıklama/semboller** iletişim kutusu.
 
-    2.  Bu ekleme **sembol dosyası (.pdb) konumu**:
+    2. Bu ekleme **sembol dosyası (.pdb) konumu**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  Performansı artırmak için örneğin bir sembol Önbellek klasörü belirtin:
+    3. Performansı artırmak için örneğin bir sembol Önbellek klasörü belirtin:
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ ms.locfileid: "56706996"
 
 1. Yönetilen kod için başvuru yolları doğru olduğundan emin olun.
 
-   1.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.
+   1. Üzerinde **proje** menüsünü tıklatın **özellikleri**.
 
-   2.  Seçin **başvuruları** sekmesinde **özellik sayfaları** iletişim kutusu ve emin tüm yolları doğru. Alternatif olarak, **Nesne Tarayıcısı** başvurulan nesneleri gidin.
+   2. Seçin **başvuruları** sekmesinde **özellik sayfaları** iletişim kutusu ve emin tüm yolları doğru. Alternatif olarak, **Nesne Tarayıcısı** başvurulan nesneleri gidin.
 
         Yönetilen kod için kullanabileceğiniz [Fuslogvw.exe (Derleme bağlaması Günlük Görüntüleyici)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) başarısız derleme yüklerini ayrıntılarını görüntülemek için.
 

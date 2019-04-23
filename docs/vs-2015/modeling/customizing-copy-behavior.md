@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054945"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Öğeleri sürükleyip kullanıcı sağlar.**  
  Bkz: [nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Bağlantı kopyalama davranışını özelleştirme  
+## <a name="customizeLinks"></a> Bağlantı kopyalama davranışını özelleştirme  
  Kullanıcının bir öğe kopyalarken standart katıştırılmış öğeleri de kopyalanır davranışıdır. Standart kopyalama davranışı değiştirebilirsiniz. DSL tanımındaki bir ilişkinin ve Özellikler penceresinde kümedeki bir tarafındaki bir rol seçin **yayar kopyalama** değeri.  
   
  ![Etki alanı rolünün kopyalama özelliği yayar](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  İki yöntem ElementOperations sınıfınızda tanımlayın:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` Kaynak öğesi hedef şekli, bağlayıcı veya diyagram sürüklenebilen olup olmadığını belirler.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` Kaynak öğesi hedef şekli, bağlayıcı veya diyagram sürüklenebilen olup olmadığını belirler.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` hangi hedef kaynak öğesi birleştirir.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` hangi hedef kaynak öğesi birleştirir.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` Diyagram üzerinde fareyi hareket ettirdikçe kullanıcıya verilmesi gerektiğini geri bildirim belirlemek için çağrılır. Yöntem parametreleri fareyi üzerine getirildiğinde öğesi ve sürükleme işlemi gerçekleştirildikten kaynağıyla ilgili verileri bilgileridir. Kullanıcının herhangi bir ekranda sürükleyebilirsiniz. Bu nedenle, kaynak nesnesi, farklı türlerde olabilir ve farklı biçimlerde seri hale getirilebilir. Kaynak bir DSL veya UML model veri parametresi serileştirmek ise, bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Sürükleyin, kopyalama ve araç operations ElementGroupPrototypes modelleri parçalarını temsil etmek için kullanın.  

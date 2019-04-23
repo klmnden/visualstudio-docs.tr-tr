@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053123"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio'da nesne bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio, uygulamanızdaki veri kaynağı olarak özel nesneler ile çalı�
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Özel nesneler veri kaynakları olarak kullanma örnekleri
  Veri kaynağı olarak nesneleriyle çalışırken, uygulama mantığını uygulamak için sayısız yollar olsa da, SQL var. Visual Studio – oluşturulan TableAdapter nesneleri kullanılarak basitleştirilebilir birkaç standart işlem veritabanlarıdır. Bu sayfa, bu standart işlemleri uygulamak üzere açıklanmaktadır TableAdapters.It kullanarak tasarlanmamıştır kılavuz olarak, özel nesneleri oluşturmak için. Örneğin, genellikle nesnelerinizi ya da uygulamanın mantıksal özgü uygulama bağımsız olarak standart aşağıdaki işlemleri gerçekleştirir:
 
--   Veri nesneleri (genellikle bir veritabanından) yükleme.
+- Veri nesneleri (genellikle bir veritabanından) yükleme.
 
--   Nesne türü belirtilmiş koleksiyonu oluşturuluyor.
+- Nesne türü belirtilmiş koleksiyonu oluşturuluyor.
 
--   Nesneler ekleme ve nesneleri bir koleksiyonundan kaldırılıyor.
+- Nesneler ekleme ve nesneleri bir koleksiyonundan kaldırılıyor.
 
--   Nesne verilerini bir formu kullanıcılara görüntüleniyor.
+- Nesne verilerini bir formu kullanıcılara görüntüleniyor.
 
--   Değiştirme veya bir nesne verileri düzenleme.
+- Değiştirme veya bir nesne verileri düzenleme.
 
--   Veri nesneleri veritabanına geri kaydediliyor.
+- Veri nesneleri veritabanına geri kaydediliyor.
 
 > [!NOTE]
 >  Daha iyi anlamanıza ve bu sayfadaki örnekleri için bağlam sağlamak için aşağıdaki tamamlamanızı öneririz: [İzlenecek yol: Nesneler (Windows Forms) verilere bağlanma](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Bu izlenecek yol, burada tartışılan nesneleri oluşturur.

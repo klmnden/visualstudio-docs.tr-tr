@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061586"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Nasıl yapılır: Tablolar ve görünümler (O/R Tasarımcısı) ile eşlenen SQL sınıflarına LINQ oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Veritabanını tablolar ve görünümler ile eşlenen SQL sınıflarına LINQ ç
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Veritabanı tabloları veya görünümleri için eşlenen SQL sınıflarına LINQ oluşturmak için
 
-1.  İçinde **sunucu**/**veritabanı Gezgini**, genişletme **tabloları** veya **görünümleri** veritabanı tablosunu bulun ve istediğiniz görüntülemek uygulamanızda kullanılacak.
+1. İçinde **sunucu**/**veritabanı Gezgini**, genişletme **tabloları** veya **görünümleri** veritabanı tablosunu bulun ve istediğiniz görüntülemek uygulamanızda kullanılacak.
 
-2.  Tabloyu sürükleyin veya üzerine görüntülemek [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Tabloyu sürükleyin veya üzerine görüntülemek [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Bir varlık sınıfı oluşturulur ve tasarım yüzeyinde görünür. Varlık sınıfı için Seçili tabloyu veya görünümü sütunları eşlemek özelliğe sahiptir.
 
@@ -43,22 +43,22 @@ Veritabanını tablolar ve görünümler ile eşlenen SQL sınıflarına LINQ ç
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>LINQ to SQL varlık sınıflarını temel bir nesne veri kaynağı oluşturmak için
 
-1.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle** projenizi yapılandırmak için.
+1. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle** projenizi yapılandırmak için.
 
-2.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.
+2. Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.
 
-3.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.
+3. İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.
 
-4.  Tıklayın **nesne** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
+4. Tıklayın **nesne** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.
 
-5.  Düğümleri genişletin ve bulun ve sonra da, sınıf seçin.
+5. Düğümleri genişletin ve bulun ve sonra da, sınıf seçin.
 
     > [!NOTE]
     > Varsa **müşteri** sınıf kullanılabilir değil, Sihirbazı iptal etmeniz, projeyi derleyin ve sihirbazı yeniden çalıştırın.
 
-6.  Tıklayın **son** veri kaynağı oluşturma ve ekleme **müşteri** varlık sınıfı için **veri kaynakları** penceresi.
+6. Tıklayın **son** veri kaynağı oluşturma ve ekleme **müşteri** varlık sınıfı için **veri kaynakları** penceresi.
 
-7.  Öğeleri sürükleme **veri kaynakları** forma penceresi.
+7. Öğeleri sürükleme **veri kaynakları** forma penceresi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

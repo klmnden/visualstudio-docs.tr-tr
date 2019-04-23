@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059870"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>9. Adım: Kodunuzu Gözden Geçirme, Açıklama ve Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
   
 ### <a name="to-add-comments"></a>Yorum eklemek için  
   
-1.  Aşağıdaki açıklamayı kodunuza ekleyin.  
+1. Aşağıdaki açıklamayı kodunuza ekleyin.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
@@ -64,7 +64,7 @@ Sonraki kod bir açıklama ekleyin. Bir yorum, programın davranışını deği�
     >   
     >  Kod yazarken bir parçacığı etkinleştirmek için bunu yazın ve TAB tuşuna basın. Birçok Parçacıklar görüntülenir **IntelliSense** SEKME tuşunu iki kere seçmenizin nedeni olan penceresi: kod parçacığından önce seçilecek **IntelliSense** penceresinde ve IDE'ye parçacığı kullanmasını söylemek için. (IntelliSense'i destekler `if` kod parçacığı, ama `ifelse` kod parçacığı.)  
   
-2.  Programı çalıştırmadan önce seçerek programınızı kaydedin **Tümünü Kaydet** gibi görünen araç çubuğu düğmesi.  
+2. Programı çalıştırmadan önce seçerek programınızı kaydedin **Tümünü Kaydet** gibi görünen araç çubuğu düğmesi.  
   
      ![Tüm araç çubuğu düğmesi Kaydet](../ide/media/express-iconsaveall.png "Express_IconSaveAll")  
 Tümünü Kaydet düğmesi  
@@ -78,19 +78,19 @@ Resim Görüntüleyici
   
 ### <a name="to-test-your-program"></a>Programınızı test etmek için  
   
-1.  F5 tuşuna basın veya tercih **hata ayıklamayı Başlat** araç çubuğu düğmesi.  
+1. F5 tuşuna basın veya tercih **hata ayıklamayı Başlat** araç çubuğu düğmesi.  
   
-2.  Seçin **resim Göster** az önce yazdığınız kodu çalıştırmak için düğme. İlk olarak, programı açar bir **açık dosya** iletişim kutusu. Filtrelerinizi göründüğünü doğrulayın **dosya türü** iletişim kutusunun altındaki açılır listede. Ardından bir resme gidin ve açın. Windows işletim sistemi ile gönderilen örnek resimler çoğunlukla olabilir, **Belgelerim** klasöründe **resimlerim\örnek Resimlerim** klasör.  
+2. Seçin **resim Göster** az önce yazdığınız kodu çalıştırmak için düğme. İlk olarak, programı açar bir **açık dosya** iletişim kutusu. Filtrelerinizi göründüğünü doğrulayın **dosya türü** iletişim kutusunun altındaki açılır listede. Ardından bir resme gidin ve açın. Windows işletim sistemi ile gönderilen örnek resimler çoğunlukla olabilir, **Belgelerim** klasöründe **resimlerim\örnek Resimlerim** klasör.  
   
     > [!NOTE]
     >  Herhangi bir görüntü görmüyorsanız **bir resim dosyası seçin** iletişim kutusunda, olduğundan emin olun "tüm dosyalar (*.\*)" filtresinin seçili iletişim kutusunun alt sağ tarafındaki aşağı açılan listesinde.  
   
-3.  Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle TableLayoutPanel ve FlowLayoutPanel kapsayıcılarını kullandınız: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.  
+3. Bir resim yükleyin ve PictureBox içinde görüntülenecektir. Sonra kenarlıkları sürükleyerek formunuzu yeniden boyutlandırmaya çalışın. PictureBox TableLayoutPanel içine yerleştirmiş olduğundan, böylece form olarak kadar geniş ve formun üst yüzde 90 doldurur kendi kendini formun içine yerleştirildiğini resim alanınız kendi kendini yeniden boyutlandırarak. İşte bu nedenle TableLayoutPanel ve FlowLayoutPanel kapsayıcılarını kullandınız: Bunlar, formunuzu kullanıcı yeniden boyutlandırdığında doğru boyutta tutun.  
   
      Şimdi, daha büyük resimler, resim görüntüleyicinizin kenarlıklarının dışına gider. Sonraki adımda, resimleri pencereye sığdırmak için kod ekleyeceksiniz.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+- Sonraki öğretici adımına gitmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 8: Bir resim düğme olayı işleyicisi Göster için kod yazma](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

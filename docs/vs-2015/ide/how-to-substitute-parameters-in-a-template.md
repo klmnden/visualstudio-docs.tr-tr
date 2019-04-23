@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039420"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Nasıl yapılır: Bir şablonda parametreleri ikame
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Sınıf adları gibi şablon parametreleri değiştirebilir ve ad alanları bir 
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Ad alanı adı proje adı ile değiştirin. bir parametre kullanılacak  
   
-1.  Bir veya daha fazla kod dosyaları şablonda parametre ekleyin. Örneğin:  
+1. Bir veya daha fazla kod dosyaları şablonda parametre ekleyin. Örneğin:  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ Sınıf adları gibi şablon parametreleri değiştirebilir ve ad alanları bir 
     > [!NOTE]
     >  Şablon parametreleri biçimi $ yazılır*parametre*$.  
   
-2.  Şablonu için .vstemplate dosyasında bulun `ProjectItem` bu dosyayı içeren öğe.  
+2. Şablonu için .vstemplate dosyasında bulun `ProjectItem` bu dosyayı içeren öğe.  
   
-3.  Ayarlama `ReplaceParameters` özniteliğini `true` için `ProjectItem` öğesi. Örneğin:  
+3. Ayarlama `ReplaceParameters` özniteliğini `true` için `ProjectItem` öğesi. Örneğin:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

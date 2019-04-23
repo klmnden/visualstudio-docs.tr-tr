@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050615"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Nasıl yapılır: Visual Studio düzenleyicisinde için yazı tiplerini ve renkleri değiştirme
 
@@ -33,20 +33,20 @@ Varsayılan yazı tipini değiştirmek, yazı tipi boyutunu ayarlayın ve çeşi
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Varsayılan yazı tipini, boyutunu ve renkleri değiştirme
 
-1.  Seçin **seçenekleri** gelen **Araçları** menüsünde ve **ortam** klasörüne **yazı tipleri ve renkler**.
+1. Seçin **seçenekleri** gelen **Araçları** menüsünde ve **ortam** klasörüne **yazı tipleri ve renkler**.
 
      [Yazı tipleri ve renkler, ortam, Seçenekler iletişim kutusu](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) açılır.
 
-2.  İçinde **ayarlarını göster**seçin **metin düzenleyici**.
+2. İçinde **ayarlarını göster**seçin **metin düzenleyici**.
 
-3.  Değiştirme **yazı tipi** ve **boyutu** yazı tipini ve metin öğeleriyle tüm düzenleyicilerde boyutunu değiştirmek için Seçenekler.
+3. Değiştirme **yazı tipi** ve **boyutu** yazı tipini ve metin öğeleriyle tüm düzenleyicilerde boyutunu değiştirmek için Seçenekler.
 
-4.  Uygun öğeyi seçin **görüntü öğeleri**ve ardından **öğe ön plan** ve **öğesi arka plan** seçenekleri.
+4. Uygun öğeyi seçin **görüntü öğeleri**ve ardından **öğe ön plan** ve **öğesi arka plan** seçenekleri.
 
     > [!TIP]
     > Tıklayın **Varsayılanlar kullan** varsayılan ayarlarına sıfırlanır.
 
-5.  **Tamam**'ı tıklatın.
+5. **Tamam**'ı tıklatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

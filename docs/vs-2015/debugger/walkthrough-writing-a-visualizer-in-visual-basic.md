@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050576"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>İzlenecek yol: Visual Basic'de Görselleştirici yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,20 +52,20 @@ Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedi
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Class1.vb yeniden adlandırıp Microsoft.VisualStudio.DebuggerVisualizers Ekle  
   
-1.  İçinde **Çözüm Gezgini**, sağ **Class1.vb**ve kısayol menüsünde **Yeniden Adlandır**.  
+1. İçinde **Çözüm Gezgini**, sağ **Class1.vb**ve kısayol menüsünde **Yeniden Adlandır**.  
   
-2.  Ad Class1.vb DebuggerSide.vb gibi anlamlı değiştirin.  
+2. Ad Class1.vb DebuggerSide.vb gibi anlamlı değiştirin.  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sınıf bildirimi içinde DebuggerSide.vb yeni dosya adı ile eşleşecek şekilde otomatik olarak değiştirir.  
   
-3.  İçinde **Çözüm Gezgini**, sağ **My ilk Görselleştirici**ve kısayol menüsünde **Başvuru Ekle**.  
+3. İçinde **Çözüm Gezgini**, sağ **My ilk Görselleştirici**ve kısayol menüsünde **Başvuru Ekle**.  
   
-4.  İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers.DLL tıklayın.  
+4. İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers.DLL tıklayın.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
-6.  Aşağıdaki deyime DebuggerSide.vb içinde ekleyin `Imports` ifadeleri:  
+6. Aşağıdaki deyime DebuggerSide.vb içinde ekleyin `Imports` ifadeleri:  
   
     ```  
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
@@ -105,13 +105,13 @@ Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedi
   
 #### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, sağ **başvuruları**ve kısayol menüsünde **Başvuru Ekle**.  
+1. İçinde **Çözüm Gezgini**, sağ **başvuruları**ve kısayol menüsünde **Başvuru Ekle**.  
   
-2.  İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde **System.Windows.Forms**.  
+2. İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde **System.Windows.Forms**.  
   
-3.  **Tamam**'ı tıklatın.  
+3. **Tamam**'ı tıklatın.  
   
-4.  Aşağıdaki deyime DebuggerSide.cs içinde ekleyin `Imports` ifadeleri:  
+4. Aşağıdaki deyime DebuggerSide.cs içinde ekleyin `Imports` ifadeleri:  
   
     ```  
     Imports System.Windows.Forms  
@@ -122,7 +122,7 @@ Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedi
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>İletişim kutusunda görselleştiricisi çıkışının görüntülenmesi için  
   
-1.  İçinde `Show` yöntemini aşağıdaki kod satırını ekleyin:  
+1. İçinde `Show` yöntemini aşağıdaki kod satırını ekleyin:  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -130,20 +130,20 @@ Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedi
   
      Bu kod örneği, hata işleme içermez. Hata işleme gerçek Görselleştirici veya herhangi bir uygulama türünü içermelidir.  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **derleme MyFirstVisualizer**. Proje başarıyla oluşturması gerekir. Devam etmeden önce derleme hataları düzeltin.  
+2. Üzerinde **derleme** menüsünde tıklatın **derleme MyFirstVisualizer**. Proje başarıyla oluşturması gerekir. Devam etmeden önce derleme hataları düzeltin.  
   
 ## <a name="add-the-necessary-attribute"></a>Gerekli öznitelik Ekle  
  Hata ayıklayıcı tarafı kodun sonuna olmasıdır. Var olan bir adım daha ancak: görselleştiriciyi hata ayıklanan yan hangi sınıfları koleksiyonu belirten özniteliği oluşur.  
   
 #### <a name="to-add-the-debugee-side-code"></a>Debugee tarafı kod eklemek için  
   
-1.  DebuggerSide.vb için aşağıdaki kodu özniteliği ekleyin `Imports` deyimleri önce `namespace MyFirstVisualizer`:  
+1. DebuggerSide.vb için aşağıdaki kodu özniteliği ekleyin `Imports` deyimleri önce `namespace MyFirstVisualizer`:  
   
     ```  
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **derleme MyFirstVisualizer**. Proje başarıyla oluşturması gerekir. Devam etmeden önce derleme hataları düzeltin.  
+2. Üzerinde **derleme** menüsünde tıklatın **derleme MyFirstVisualizer**. Proje başarıyla oluşturması gerekir. Devam etmeden önce derleme hataları düzeltin.  
   
 ## <a name="create-a-test-harness"></a>Bir Test bandı oluşturma  
  Bu noktada, ilk Görselleştirici tamamlandı. Doğru adımları izlediyseniz, görselleştiricisi oluşturun ve içine yüklemek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Görselleştirici içine yüklemeden önce [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ancak doğru şekilde çalıştığından emin olmak için sınamalısınız. Görselleştirici içine yüklemeden çalıştırmak için test bandı şimdi oluşturacak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -177,17 +177,17 @@ Bu kılavuz kullanılarak basit Görselleştirici yazma işlemi gösterilmektedi
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>MyTestConsole gerekli başvuruları eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, sağ **MyTestConsole**ve kısayol menüsünde **Başvuru Ekle**.  
+1. İçinde **Çözüm Gezgini**, sağ **MyTestConsole**ve kısayol menüsünde **Başvuru Ekle**.  
   
-2.  İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers tıklayın.  
+2. İçinde **Başvuru Ekle** iletişim kutusundaki **.NET** sekmesinde, Microsoft.VisualStudio.DebuggerVisualizers tıklayın.  
   
-3.  **Tamam**'ı tıklatın.  
+3. **Tamam**'ı tıklatın.  
   
-4.  Sağ **MyTestConsole**ve ardından **Başvuru Ekle** yeniden.  
+4. Sağ **MyTestConsole**ve ardından **Başvuru Ekle** yeniden.  
   
-5.  İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **projeleri** sekmesini ve ardından MyFirstVisualizer seçin.  
+5. İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **projeleri** sekmesini ve ardından MyFirstVisualizer seçin.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Son Test Bandınız ve, Görselleştiriciyi test etme  
  Şimdi, test bandı tamamlamak için kod ekleyeceksiniz.  

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db95754fd27820e0686f65a22393f51510467fb6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049194"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Nasıl yapılır: Bir SharePoint komutu yürütme
   Sunucu nesne modeli SharePoint Araçlar uzantısından kullanmak istiyorsanız, özel bir oluşturmalısınız *SharePoint komutu* API'sini çağırmak için. Komut tanımlayıp, SharePoint Araçlar uzantısından ile dağıttıktan sonra uzantınızı komutu SharePoint sunucusu nesne modeline çağrı yürütebilir. Komutu yürütmek için ExecuteCommand yöntemlerinden birini kullanın: bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne.
@@ -26,21 +26,21 @@ ms.locfileid: "56631191"
 
 ### <a name="to-execute-a-sharepoint-command"></a>Bir SharePoint komutu yürütmek için
 
-1.  SharePoint araçları uzantısını edinin bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne. Size yol bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesnesini oluşturmakta olduğunuz uzantı türüne bağlıdır:
+1. SharePoint araçları uzantısını edinin bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne. Size yol bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesnesini oluşturmakta olduğunuz uzantı türüne bağlıdır:
 
-    -   SharePoint Proje sistemi bir uzantı kullanmak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> özelliği.
+    - SharePoint Proje sistemi bir uzantı kullanmak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.SharePointConnection%2A> özelliği.
 
          Proje sistemi uzantıları hakkında daha fazla bilgi için bkz. [SharePoint Proje sistemini genişletmek](../sharepoint/extending-the-sharepoint-project-system.md).
 
-    -   ' In bir uzantısı olarak **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**, kullanın <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> özelliği. Alınacak bir <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> nesnesi <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> özelliği.
+    - ' In bir uzantısı olarak **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**, kullanın <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> özelliği. Alınacak bir <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> nesnesi <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> özelliği.
 
          Hakkında daha fazla bilgi için **Sunucu Gezgini** uzantıları, bakın [Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
-    -   SharePoint araçlarının bir proje şablonu Sihirbazı gibi bir uzantının parçası olmayan kodu kullanmak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> özelliği.
+    - SharePoint araçlarının bir proje şablonu Sihirbazı gibi bir uzantının parçası olmayan kodu kullanmak <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> özelliği.
 
          Proje hizmetini alma hakkında daha fazla bilgi için bkz. [SharePoint Proje hizmetini kullanın](../sharepoint/using-the-sharepoint-project-service.md).
 
-2.  ExecuteCommand yöntemlerinden birini çağırın <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne. ExecuteCommand yöntemin ilk bağımsız değişkeni yürütmek istediğiniz komutun adı geçirin. Komutunuz özel bir parametreye sahipse, bu parametrenin ExecuteCommand yönteminin ikinci bağımsız değişkeni için geçirin.
+2. ExecuteCommand yöntemlerinden birini çağırın <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> nesne. ExecuteCommand yöntemin ilk bağımsız değişkeni yürütmek istediğiniz komutun adı geçirin. Komutunuz özel bir parametreye sahipse, bu parametrenin ExecuteCommand yönteminin ikinci bağımsız değişkeni için geçirin.
 
      Her desteklenen komut imza için farklı bir ExecuteCommand aşırı yüklemesi vardır. Aşağıdaki tabloda, desteklenen imzalar ve her imzası için kullanılacak olan aşırı yükleme listeler.
 
@@ -61,11 +61,11 @@ ms.locfileid: "56631191"
 
  Çağrı ilgili aşağıdaki bilgileri Not <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> yöntemi:
 
--   İlk parametre, aramak istediğiniz komut tanımlar. Bu dize geçirdiğiniz değerle <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> komut tanımı.
+- İlk parametre, aramak istediğiniz komut tanımlar. Bu dize geçirdiğiniz değerle <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> komut tanımı.
 
--   İkinci parametre özel ikinci parametresi komutun geçirmek istediğiniz değerdir. Bu durumda tam yolu olduğu *.wsp* SharePoint sitesine yükseltilmekte olan dosya.
+- İkinci parametre özel ikinci parametresi komutun geçirmek istediğiniz değerdir. Bu durumda tam yolu olduğu *.wsp* SharePoint sitesine yükseltilmekte olan dosya.
 
--   Kod örtük geçirmez <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> komut parametresi. SharePoint Proje sistemi bir uzantı veya uzantısı komuta çağrı yaptığınızda bu parametre komutu otomatik olarak geçirilen **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Çözümler, uygulayan bir proje şablonu Sihirbazı gibi diğer tür <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimidir, bu parametre **null**.
+- Kod örtük geçirmez <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> komut parametresi. SharePoint Proje sistemi bir uzantı veya uzantısı komuta çağrı yaptığınızda bu parametre komutu otomatik olarak geçirilen **SharePoint bağlantıları** düğümünde **Sunucu Gezgini**. Çözümler, uygulayan bir proje şablonu Sihirbazı gibi diğer tür <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> arabirimidir, bu parametre **null**.
 
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek Microsoft.VisualStudio.SharePoint derlemesine bir başvuru gerektirir.

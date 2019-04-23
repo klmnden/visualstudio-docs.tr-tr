@@ -42,12 +42,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052434"
 ---
 # <a name="options-text-editor-all-languages"></a>Seçenekler, Metin Düzenleyici, Tüm Diller
 
@@ -115,9 +115,9 @@ Bu onay kutusu seçildiğinde, görüntüler **gezinti çubuğu** üst kısmınd
 
 Bu seçenek, ekleme noktasını boş bir satıra yerleştirin, hiçbir şey seçin ve ardından kopyaladığınızda veya Kes Düzenleyicisi davranışını ayarlar.
 
--   Bu seçenek belirlendiğinde, boş satır kopyaladığınız veya Kes. Ardından yapıştırırsanız, yeni, boş bir satır eklenir.
+- Bu seçenek belirlendiğinde, boş satır kopyaladığınız veya Kes. Ardından yapıştırırsanız, yeni, boş bir satır eklenir.
 
--   Bu seçenek işaretli değilse, Cut komutu boş satırları kaldırır. Ancak, Panodaki veriler korunur. Ardından Paste komutu kullanırsanız, bu nedenle, en son Pano'ya kopyalanan içeriği yapıştırılır. Daha önce hiçbir şey kopyalandı, hiçbir şey yapıştırılır.
+- Bu seçenek işaretli değilse, Cut komutu boş satırları kaldırır. Ancak, Panodaki veriler korunur. Ardından Paste komutu kullanırsanız, bu nedenle, en son Pano'ya kopyalanan içeriği yapıştırılır. Daha önce hiçbir şey kopyalandı, hiçbir şey yapıştırılır.
 
 Bir satır boş olmadığında bu ayar Kopyala veya Kes üzerinde etkisi yoktur. Hiçbir şey seçili ise, tüm satırı kopyaladığınız veya Kes. Ardından yapıştırırsanız, tüm satırı ve kendi endline karakter yapıştırılan metin.
 

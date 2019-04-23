@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044637"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Nasıl yapılır: Proje dosyalarında ayrılmış XML karakterlerini kullanma
 Proje dosyaları yazdığınızda, ayrılmış XML karakterleri, örneğin özellik değerlerini veya görev parametresi değerleri kullanmak gerekebilir. Ancak, proje dosyası ayrıştırıldığında, bazı ayrılmış karakterleri adlandırılmış varlık tarafından değiştirilmelidir.
@@ -34,7 +34,7 @@ Proje dosyaları yazdığınızda, ayrılmış XML karakterleri, örneğin özel
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Çift tırnak işareti bir proje dosyasında kullanmak için
 
--   Adlandırılmış varlık, ilgili ile çift tırnak işaretleri yerine &amp;quot;. Örneğin, çift tırnak işaretlerini yerleştirmek için `EXEFile` öğe listesi, türü:
+- Adlandırılmış varlık, ilgili ile çift tırnak işaretleri yerine &amp;quot;. Örneğin, çift tırnak işaretlerini yerleştirmek için `EXEFile` öğe listesi, türü:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

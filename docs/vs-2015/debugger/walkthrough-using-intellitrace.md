@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053812"
 ---
 # <a name="walkthrough-using-intellitrace"></a>İzlenecek yol: IntelliTrace’i kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
   
  IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Community sürümlerini değil) kullanabilirsiniz.  
   
-##  <a name="GettingStarted"></a> IntelliTrace olayları ile kullanma  
+## <a name="GettingStarted"></a> IntelliTrace olayları ile kullanma  
  Yalnızca IntelliTrace olayları ile hata ayıklama deneyebilirsiniz. IntelliTrace olayları hata ayıklayıcı olayları, özel durumlar, .NET Framework olayları ve diğer sistem olaylarıdır ' dir. Açın veya hatalarını ayıklamaya başlamadan önce Intellitrace'in kaydettiği olayları kontrol belirli olayları açmak. Daha fazla bilgi için [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
   
  Aşağıdaki adımlar, yalnızca IntelliTrace olayları ile hata ayıklama işlemini gösterir:  
   
-1.  Dosya erişimi için IntelliTrace olayı kapatın. Git **Araçlar / Seçenekler / IntelliTrace / IntelliTrace olayları** sayfasında ve genişletin **dosya** kategorisi. Denetleme **dosya** olay kategorisi. Bu, Kontrol edilecek tüm dosya olayları (erişim, Kapat, silme) neden olur.  
+1. Dosya erişimi için IntelliTrace olayı kapatın. Git **Araçlar / Seçenekler / IntelliTrace / IntelliTrace olayları** sayfasında ve genişletin **dosya** kategorisi. Denetleme **dosya** olay kategorisi. Bu, Kontrol edilecek tüm dosya olayları (erişim, Kapat, silme) neden olur.  
   
-2.  Bir C# konsol uygulaması oluşturun. Program.cs dosyasında, aşağıdaki ekleyin `using` deyimi:  
+2. Bir C# konsol uygulaması oluşturun. Program.cs dosyasında, aşağıdaki ekleyin `using` deyimi:  
   
     ```csharp  
     using System.IO;  
     ```  
   
-3.  Oluşturma bir <xref:System.IO.FileStream> ana yöntemde, kendisinden okuma kapatın ve dosyayı silin. Yalnızca bir kesme noktası ayarlamak için bir yer olması için başka bir satır ekleyin:  
+3. Oluşturma bir <xref:System.IO.FileStream> ana yöntemde, kendisinden okuma kapatın ve dosyayı silin. Yalnızca bir kesme noktası ayarlamak için bir yer olması için başka bir satır ekleyin:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -50,14 +50,14 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
     }  
     ```  
   
-4.  Bir kesme noktası ayarlayın `Console.WriteLine("done");`  
+4. Bir kesme noktası ayarlayın `Console.WriteLine("done");`  
   
-5.  Zamanki gibi hata ayıklamaya başlayın. (Tuşuna **F5** veya **hata ayıklama / hata ayıklamayı Başlat**.  
+5. Zamanki gibi hata ayıklamaya başlayın. (Tuşuna **F5** veya **hata ayıklama / hata ayıklamayı Başlat**.  
   
     > [!TIP]
     >  Tutun **Yereller** ve **Otolar** windows görmek ve bu pencerelerde değerlerini kaydetmek için hata ayıklarken açın.  
   
-6.  Yürütme kesme noktasında durur. Görmüyorsanız, **tanılama araçları** penceresinde tıklayın **hata ayıklama / Windows / IntelliTrace olayları**.  
+6. Yürütme kesme noktasında durur. Görmüyorsanız, **tanılama araçları** penceresinde tıklayın **hata ayıklama / Windows / IntelliTrace olayları**.  
   
      İçinde **tanılama araçları** penceresinde Bul **olayları** sekme (3 sekme görmeniz gerekir **olayları**, **bellek kullanımı**, ve **CPU Kullanım**). **Olayları** sekmesi, olaylar, hata ayıklayıcı yürütmeyi kesmeden son olay ile biten kronolojik bir listesini gösterir. Adlı bir olay görmelisiniz **erişim WordSearchInputs.txt**.  
   
@@ -65,7 +65,7 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
   
      ![IntelliTrace&#45;güncelleştirme 1](../debugger/media/intellitrace-update1.png "IntelliTrace-güncelleştirme 1")  
   
-7.  Ayrıntılarını genişletmek için olayı seçin.  
+7. Ayrıntılarını genişletmek için olayı seçin.  
   
      Aşağıdaki ekran görüntüsünde, Visual Studio 2015 güncelleştirme 1 ' dir.  
   
@@ -79,19 +79,19 @@ Ayrı ayrı işlev çağrıları veya belirli olayları ya da olayların kategor
   
      ![HistoricalDebugging&#45;güncelleştirme 1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-güncelleştirme 1")  
   
-8.  Hatayı bulamadıysanız, hataya diğer olayları İnceleme deneyin. İşlev çağrılarında gezinebilirsiniz girmek, IntelliTrace çağrı bilgileri kaydetmesini sağlayabilirsiniz.  
+8. Hatayı bulamadıysanız, hataya diğer olayları İnceleme deneyin. İşlev çağrılarında gezinebilirsiniz girmek, IntelliTrace çağrı bilgileri kaydetmesini sağlayabilirsiniz.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>IntelliTrace olayları ve işlev çağrıları ile kullanma  
  IntelliTrace işlev çağrılarını olaylarla birlikte kaydedebilir. Bu, çağrı yığını geçmişini görmenizi ve kodunuzdaki çağrılar arasında ileri geri adım sağlar. IntelliTrace işlev adlarını, işlev giriş ve çıkış noktaları ve belirli parametre değerleri ve dönüş değerleri gibi verileri kaydeder. Bkz: [IntelliTrace özellikleri](../debugger/intellitrace-features.md).  
   
-1.  Çağrı koleksiyonunu açın. (Üzerinde **Araçlar / Seçenekler / IntelliTrace / genel**seçin **IntelliTrace olayları ve çağrı bilgileri**. IntelliTrace sonraki hata ayıklama oturumu başladığında bu bilgileri toplamaya başlar.  
+1. Çağrı koleksiyonunu açın. (Üzerinde **Araçlar / Seçenekler / IntelliTrace / genel**seçin **IntelliTrace olayları ve çağrı bilgileri**. IntelliTrace sonraki hata ayıklama oturumu başladığında bu bilgileri toplamaya başlar.  
   
     > [!TIP]
     >  Bu sizin uygulamanızı yavaşlatabilir ve diske kaydettiğiniz herhangi IntelliTrace günlük dosyasının (.iTrace dosyaları) boyutunu artırın. Çoğu arama verilerini almak ancak etkilerini en aza indirmek için ilginizi çeken modüllerden veri kaydedin. .İTrace dosyalarınızın en büyük boyutunu değiştirmek için Git **Araçlar / Seçenekler / IntelliTrace / Gelişmiş**ve en fazla disk alanı miktarını belirtin. Varsayılan değer 250 MB ' dir.  
   
-2.  C# konsol uygulaması önceki bölümde oluşturduğunuz hatalarını ayıklamaya başlayın. Yürütme kesme noktasında durur. Görmüyorsanız, **tanılama araçları** penceresinde tıklayın **hata ayıklama / Windows / IntelliTrace olayları**.  
+2. C# konsol uygulaması önceki bölümde oluşturduğunuz hatalarını ayıklamaya başlayın. Yürütme kesme noktasında durur. Görmüyorsanız, **tanılama araçları** penceresinde tıklayın **hata ayıklama / Windows / IntelliTrace olayları**.  
   
-3.  Geçiş **çağrıları** sekmesi.  
+3. Geçiş **çağrıları** sekmesi.  
   
      Uygulamanızın işlev çağrıları görmek şimdi kök çağrısında (geçerli çözümü, ana giriş noktası) ile başlayan ve hangi yürütme konumu ile biten kesildi.  
   

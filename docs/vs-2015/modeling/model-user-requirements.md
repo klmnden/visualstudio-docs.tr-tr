@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059857"
 ---
 # <a name="model-user-requirements"></a>Kullanıcı gereksinimlerini modelleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
  Diyagram türlerin çoğu başka bir amaçla kullanılabilir dikkat edin. Diyagram türleri genel bakış için bkz. [uygulamanız için model oluşturma](../modeling/create-models-for-your-app.md). Diyagramları çizmek hakkında temel bilgiler için bkz: [Düzenle UML modellerini ve diyagramları](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Sisteminizi nasıl kullanıldığını açıklayan  
+## <a name="UseCases"></a> Sisteminizi nasıl kullanıldığını açıklayan  
  Sistem kullanan ve bunun için kullandıkları açıklamak için kullanım örneği diyagramları oluşturun. Kullanım örneği, bir kullanıcı sistemi ve hedefe ulaşmak için gerçekleştirdikleri yordamı hedefi temsil eder.  
   
  Örneğin, sistem satış bir çevrimiçi yemek menü öğeleri seçme özgürlüğü tanıyın gerekir ve menüyü güncelleştirmek sağlama restoranlar izin vermeniz gerekir. Bu bir kullanım durumu diyagramı özetleyebilir:  
@@ -93,7 +93,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 |Kullanım örneği diyagramındaki öğeler|[UML Kullanım Örneği Diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md)|  
 |Kullanım örneklerinden kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Gereksinimlerini tanımlamak için kullanılan terimleri tanımlama  
+## <a name="RequirementsClasses"></a> Gereksinimlerini tanımlamak için kullanılan terimleri tanımlama  
  UML sınıf diyagramları, tutarlı bir sözlük aşağıdaki amaçlar için kullanılan iş kavramlarını geliştirmenize yardımcı olması için kullanabilirsiniz:  
   
 - Sistem çalıştığı iş tartışmak için kullanıcılar tarafından.  
@@ -140,7 +140,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
   
  Kavramsal bir sınıf diyagramında, bunu genellikle oklar gezinebilirliği ilişkilendirmeleri yerleştirmek kullanışlı değildir. Diyagram uygulaması göstermiyor olmasıdır. İlişkilendirmeleri gerçek nesneler arasındaki ilişkileri temsil eder. Aşağıdaki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı olmayan yönlü oklar varsayılan yap: [Örnek: Etki alanı UML modelleme özellikleri](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> İş kurallarını gösterme  
+## <a name="BusinessRules"></a> İş kurallarını gösterme  
  Bir iş kuralı, belirli kullanım örneği ile ilişkili değil ve sistem genelinde gözlenmelidir bir gereksinimdir.  
   
  Birçok iş kuralları kavramsal sınıflar arasındaki ilişkileri kısıtlamalar şunlardır. Bu yazma *statik iş kuralları* kavramsal sınıf diyagramında ilgili sınıflar ile ilgili açıklamalar olarak. Örneğin:  
@@ -161,7 +161,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 |Kavramsal sınıf diyagramındaki öğeler|[UML Sınıf Diyagramları: Başvuru](../modeling/uml-class-diagrams-reference.md)|  
 |İş kurallarının aynılarını kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan  
+## <a name="QoSRequirements"></a> Hizmet gereksinimlerinin kalitesini açıklayan  
  Hizmet gereksinimi kalitesi birkaç işlem kategorisi vardır. Bunlar aşağıdakileri içerir:  
   
 - Performans  
@@ -185,7 +185,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 |Kullanım örnekleri için ek belgelere ekleme|[Kullanım örneğini belgelere ve diyagramlara bağlama](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Hizmet gereksinimlerinin kalitesini için uyar kod geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Kullanıcılar ve sistem arasındaki iş akışını gösterme  
+## <a name="Workflow"></a> Kullanıcılar ve sistem arasındaki iş akışını gösterme  
  Etkinlik diyagramı, farklı kullanım örnekleri arasında iş akışını göstermek için kullanabilirsiniz. Kullanıcılar - sistemiyle ve bunun dışında gerçekleştirdiği temel görevleri gösteren bir etkinlik diyagramı çizme tarafından gereksinimler modelini başlamak genellikle yararlıdır.  
   
  Örneğin:  
@@ -206,7 +206,7 @@ Etkinlikler ve bölümü hakkında diyagramlar çizerek kullanıcılarınızın 
 |Bir etkinlik diyagramındaki öğeler|[UML Etkinlik Diyagramları: Başvuru](../modeling/uml-activity-diagrams-reference.md)|  
 |Etkinlik diyagramları koddan geliştirme|[Uygulama mimarinizi modelleme](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Kullanıcılar ve sistem arasındaki etkileşimler gösteriliyor  
+## <a name="Sequences"></a> Kullanıcılar ve sistem arasındaki etkileşimler gösteriliyor  
  Sıralı diyagram, ileti sistemi ve harici aktörler arasında ya da sistemin bölümleri arasındaki değişimi göstermek için kullanabilirsiniz. Bu açıkça etkileşimler dizisini gösterir bir kullanım örneğindeki adımların bir görünüm sağlar. Sıralı diyagramlar taraflarla bir kullanım örneği ve sisteminizin bir API'ye sahip olduğu da birkaç etkileşimde bulunduğu özellikle yararlıdır.  
   
  Örneğin:  

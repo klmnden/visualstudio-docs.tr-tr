@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58146077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049374"
 ---
 # <a name="installation"></a>Yükleme
 
@@ -87,6 +87,7 @@ Derin öğrenme çerçeveleri, kendi yükleme için pip dayanır.
 Ardından, Python 3.5 doğru yüklenip yüklenmediğini doğrulayın ve pip bir terminalde aşağıdaki komutları çalıştırarak en son sürüme yükseltmek için ihtiyacımız:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Ardından, Python 3.5 doğru yüklenip yüklenmediğini doğrulayın ve pip bir 
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ Ziyaret [burada](https://caffe2.ai/docs/getting-started.html) kaynak koddan olu�
 MXNet yüklemek için bir terminalde aşağıdaki komutu çalıştırın:
 
 - GPU ile
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

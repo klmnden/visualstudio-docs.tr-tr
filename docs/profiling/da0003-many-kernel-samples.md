@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c44c8417247d4d33f66e8c56ed1775f6c895ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cd12b4944da36e480aa44f312b44133c657365f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607843"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039941"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Pek çok çekirdek örneği
 
@@ -41,6 +41,6 @@ ms.locfileid: "56607843"
 ## <a name="how-to-fix-violations"></a>İhlaller nasıl düzeltilir?
  Uygulamanız aşağıdaki seçeneklerden birini kullanarak yeniden profil oluşturmayı göz önünde bulundurun:
 
--   İzleme metodunu kullanarak profili.
+- İzleme metodunu kullanarak profili.
 
--   Daha fazla örnek kullanıcı modunda toplanacak denemek için örnekleme hızını artırın.
+- Daha fazla örnek kullanıcı modunda toplanacak denemek için örnekleme hızını artırın.

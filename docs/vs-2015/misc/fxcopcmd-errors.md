@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5c7b62ce9e117b348daaa54da3d397346b6eab0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043114"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd Hataları
 FxCopCmd önemli olması için tüm hataları dikkate almaz. FxCopCmd kısmi analiz gerçekleştirmek için yeterli bilgi varsa, oluşan analiz ve raporları hatalar gerçekleştirir. Bir 32 bitlik tamsayıdır, hata kodu karşılaştırmaya hataları karşılık gelen sayısal değerleri içerir.  
@@ -40,13 +40,13 @@ FxCopCmd önemli olması için tüm hataları dikkate almaz. FxCopCmd kısmi ana
   
  Çözümleme hatası için önemli hatalar döndürülür. Analiz tamamlanamadı gösterir. Uygun olduğunda hata kodu önemli hata temel nedenini de içerir. Aşağıdaki koşullar önemli hatalar oluşturur:  
   
--   Analiz tarafından yetersiz girişi nedeniyle gerçekleştirilemedi.  
+- Analiz tarafından yetersiz girişi nedeniyle gerçekleştirilemedi.  
   
--   Analiz FxCopCmd tarafından işlenmemiş özel durum oluşturdu.  
+- Analiz FxCopCmd tarafından işlenmemiş özel durum oluşturdu.  
   
--   Belirtilen proje dosyası bulunamadı veya bozuk olabilir.  
+- Belirtilen proje dosyası bulunamadı veya bozuk olabilir.  
   
--   Output seçeneği belirtilmedi veya dosya yazılmadı.  
+- Output seçeneği belirtilmedi veya dosya yazılmadı.  
   
     > [!NOTE]
     >  FxCopCmd dönüş kodu "Derleme hatası başvuruları" 0x200 tek başına bir hata yerine bir uyarı olduğunu. Bu dönüş kodu eksik dolaylı başvuru bulundu, ancak FxCopCmd bunları işleyebilmesi olduğunu gösterir. Bu, bazı analiz sonuçları gizliliği bozulmuş olabilecek, olasılığı olan bir uyarıdır. Diğer dönüş kodu ile birleştirildiğinde, "Derleme hatası başvuruları" dönüş kodu hata olarak göz önünde bulundurun.  

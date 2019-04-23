@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046155"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>İzlenecek yol: Tasarım zamanında hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Visual Studio kullanabileceğiniz **hemen** uygulamanız çalışmıyorken bir i
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Hemen penceresinde kesme noktaları isabet  
   
-1.  Bir Visual Basic konsol uygulamasına aşağıdaki kodu yapıştırın:  
+1. Bir Visual Basic konsol uygulamasına aşağıdaki kodu yapıştırın:  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ Visual Studio kullanabileceğiniz **hemen** uygulamanız çalışmıyorken bir i
     End Module  
     ```  
   
-2.  Okuma, satırında bir kesme noktası ayarlamak `s="Add BreakPoint Here"`.  
+2. Okuma, satırında bir kesme noktası ayarlamak `s="Add BreakPoint Here"`.  
   
-3.  Aşağıdakileri yazın **hemen** penceresi: `?MyFunction<enter>`  
+3. Aşağıdakileri yazın **hemen** penceresi: `?MyFunction<enter>`  
   
-4.  Kesme noktalarına isabet ettirilmedi ve çağrı yığını doğru olduğunu doğrulayın.  
+4. Kesme noktalarına isabet ettirilmedi ve çağrı yığını doğru olduğunu doğrulayın.  
   
-5.  Üzerinde **hata ayıklama** menüsünde tıklatın **devam**, yine de tasarım modunda olduğunu doğrulayın.  
+5. Üzerinde **hata ayıklama** menüsünde tıklatın **devam**, yine de tasarım modunda olduğunu doğrulayın.  
   
-6.  Aşağıdakileri yazın **hemen** penceresi: `?MyFunction<enter>`  
+6. Aşağıdakileri yazın **hemen** penceresi: `?MyFunction<enter>`  
   
-7.  Aşağıdakileri yazın **hemen** penceresi: `?MySub<enter>`  
+7. Aşağıdakileri yazın **hemen** penceresi: `?MySub<enter>`  
   
-8.  Kesme noktasına isabet ve statik değişkenin değerini inceleyin doğrulayın `i` içinde **Yereller** penceresi. Bu değeri 3 olmalıdır.  
+8. Kesme noktasına isabet ve statik değişkenin değerini inceleyin doğrulayın `i` içinde **Yereller** penceresi. Bu değeri 3 olmalıdır.  
   
 9. Çağrı yığınını doğru olduğundan emin olun.  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039121"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Veri İpuçları'ndaki veri değerlerini kod düzenleyicide görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,34 +52,34 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Bir DataTip kaldırın ve kolaylaştırmak için Kaydır  
   
--   Sabitlenmiş bir DataTip içinde tıklayın **kaynağından Unpın** simgesi.  
+- Sabitlenmiş bir DataTip içinde tıklayın **kaynağından Unpın** simgesi.  
   
      Raptiye simgesini sabitlenmemiş konuma değişir. DataTip artık açık pencerelerin kayar. Hata ayıklama oturumu sona erdiğinde kayan DataTip kapatır.  
   
 ### <a name="to-repin-a-floating-datatip"></a>Kayan bir DataTip Görselden için  
   
--   Bir DataTip içinde Raptiye simgesine tıklayın.  
+- Bir DataTip içinde Raptiye simgesine tıklayın.  
   
      Raptiye simgesini sabitlenmiş konumuna değiştirir. Kaynak penceresi dışında DataTip ise Raptiye simgesini devre dışıdır ve DataTip sabitlenemez.  
   
 ### <a name="to-close-a-datatip"></a>Bir DataTip kapatmak için  
   
--   Fare işaretçisini bir DataTip üzerinde getirin ve ardından **Kapat** simgesi.  
+- Fare işaretçisini bir DataTip üzerinde getirin ve ardından **Kapat** simgesi.  
   
 ### <a name="to-close-all-datatips"></a>Tüm veri ipuçlarını kapatmak için  
   
--   Üzerinde **hata ayıklama** menüsünde tıklatın **Temizle tüm veri ipuçlarını**.  
+- Üzerinde **hata ayıklama** menüsünde tıklatın **Temizle tüm veri ipuçlarını**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Belirli bir dosya için tüm veri ipuçlarını kapatmak için  
   
--   Üzerinde **hata ayıklama** menüsünde tıklatın **Temizle tüm veri ipuçlarını sabitlenmiş için** *dosya*.  
+- Üzerinde **hata ayıklama** menüsünde tıklatın **Temizle tüm veri ipuçlarını sabitlenmiş için** *dosya*.  
   
 ## <a name="expanding-and-editing-information"></a>Genişletme ve bilgilerini düzenleme  
  DataTips, bir dizi, yapı veya üyelerini görüntülemek için bir nesne genişletmek için kullanabilirsiniz. Bir DataTip değişkeninden değerini de düzenleyebilirsiniz.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Bir değişken öğeleri görmek için genişletin  
   
--   Fare işaretçisini bir DataTip içinde yerleştirin **+** değişken adından önce gelen oturum.  
+- Fare işaretçisini bir DataTip içinde yerleştirin **+** değişken adından önce gelen oturum.  
   
      Öğeleri ağaç biçiminde göstermek için değişkeni genişletir.  
   
@@ -87,16 +87,16 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 #### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Bir DataTip kullanarak bir değişkenin değerini düzenlemek için  
   
-1.  Bir DataTip içinde değere tıklayın. Bu salt okunur değerleri için devre dışıdır.  
+1. Bir DataTip içinde değere tıklayın. Bu salt okunur değerleri için devre dışıdır.  
   
-2.  Yeni bir değer yazın ve ENTER tuşuna basın.  
+2. Yeni bir değer yazın ve ENTER tuşuna basın.  
   
 ## <a name="making-a-datatip-transparent"></a>Bir DataTip saydam hale getirme  
  Bir DataTip kod görmek istiyorsanız, DataTip geçici olarak saydam olarak yapabilirsiniz. Bu sabitlenmiş veya kayan DataTips için geçerli değildir.  
   
 #### <a name="to-make-a-datatip-transparent"></a>Bir DataTip saydam yapmak için  
   
--   Bir DataTip içinde CTRL tuşuna basın.  
+- Bir DataTip içinde CTRL tuşuna basın.  
   
      CTRL tuşunu basılı tutun sürece DataTip saydam olarak kalır.  
   
@@ -105,7 +105,7 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Görselleştirici kullanarak değişkenlerin içeriğini görüntülemek için  
   
--   Veri türü için varsayılan Görselleştirici seçmek için büyüteç simgesini tıklayın.  
+- Veri türü için varsayılan Görselleştirici seçmek için büyüteç simgesini tıklayın.  
   
      -veya-  
   
@@ -118,7 +118,7 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>İzle penceresine bir değişken eklemek için  
   
--   Bir DataTip sağ tıklayın ve ardından **Gözcü Ekle**.  
+- Bir DataTip sağ tıklayın ve ardından **Gözcü Ekle**.  
   
      Değişken eklenir **Watch** penceresi. Birden çok destekleyen bir sürüm kullanıyorsanız **Watch** windows, değişkenin eklendiği **Watch 1.**  
   
@@ -127,19 +127,19 @@ DataTips, hata ayıklama sırasında programınızdaki değişkenleri hakkında 
   
 #### <a name="to-export-datatips"></a>Veri ipuçlarını dışarı aktarmak için  
   
-1.  Hata Ayıklama menüsünde **veri ipuçlarını dışarı aktar**.  
+1. Hata Ayıklama menüsünde **veri ipuçlarını dışarı aktar**.  
   
      **Veri ipuçlarını dışarı aktar** iletişim kutusu görüntülenir.  
   
-2.  XML dosyasını, dosyasında için bir ad yazın istediğiniz konuma gitmek için standart dosya teknikleri kullanın **dosya adı** kutusuna ve ardından **Tamam**.  
+2. XML dosyasını, dosyasında için bir ad yazın istediğiniz konuma gitmek için standart dosya teknikleri kullanın **dosya adı** kutusuna ve ardından **Tamam**.  
   
 #### <a name="to-import-datatips"></a>Veri ipuçlarını içeri aktarmak için  
   
-1.  Hata Ayıklama menüsünde **alma DataTips**.  
+1. Hata Ayıklama menüsünde **alma DataTips**.  
   
      **Alma DataTips** iletişim kutusu görüntülenir.  
   
-2.  İletişim kutusunu açıp istediğiniz XML dosyasını bulmak için kullanın **Tamam**.  
+2. İletişim kutusunu açıp istediğiniz XML dosyasını bulmak için kullanın **Tamam**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklayıcıda verileri görüntüleme](../debugger/viewing-data-in-the-debugger.md)   

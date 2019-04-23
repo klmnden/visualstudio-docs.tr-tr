@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad14241f5247e7ce16e84cfe26675bde45cb0de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055281"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Nasıl yapılır: 3B modelin pivot noktasını değiştirme
 
@@ -25,11 +25,11 @@ Kaynak 3B modelin pivot noktası değiştirerek tanımlayabilirsiniz.
 
 Emin olun **özellikleri** penceresi ve **araç kutusu** görüntülenir.
 
-1.  Başlangıç makalesinde bir gibi mevcut bir 3B model ile [nasıl yapılır: Temel 3B model oluşturma](../designers/how-to-create-a-basic-3-d-model.md).
+1. Başlangıç makalesinde bir gibi mevcut bir 3B model ile [nasıl yapılır: Temel 3B model oluşturma](../designers/how-to-create-a-basic-3-d-model.md).
 
-2.  Pivot modu girin. Üzerinde **Model Düzenleyicisi modu** araç seçin **Pivot modu** pivot modunu etkinleştirmek için düğme. Bir kutu çevresinde görünen **Pivot modu** Model Düzenleyicisi artık pivot modunda olduğunu belirtmek için düğme. Pivot modu, dünya alanındaki nesne yapısını yerine nesnenin pivot noktası çeviri gibi işlemleri etkiler.
+2. Pivot modu girin. Üzerinde **Model Düzenleyicisi modu** araç seçin **Pivot modu** pivot modunu etkinleştirmek için düğme. Bir kutu çevresinde görünen **Pivot modu** Model Düzenleyicisi artık pivot modunda olduğunu belirtmek için düğme. Pivot modu, dünya alanındaki nesne yapısını yerine nesnenin pivot noktası çeviri gibi işlemleri etkiler.
 
-3.  Nesnenin pivot noktasını değiştirme. İçinde **seçin** modu, nesneyi seçin ve ardından **Model Görüntüleyici** araç seçin **çevir** aracı. Pivot noktasını temsil eden bir kutu tasarım yüzeyinde görünür. Nesnenin pivot noktasını değiştirme için kutusunu taşıyın.
+3. Nesnenin pivot noktasını değiştirme. İçinde **seçin** modu, nesneyi seçin ve ardından **Model Görüntüleyici** araç seçin **çevir** aracı. Pivot noktasını temsil eden bir kutu tasarım yüzeyinde görünür. Nesnenin pivot noktasını değiştirme için kutusunu taşıyın.
 
      Kutunun taşıyarak, tüm üç farklı boyutta pivot noktasını taşıyabilirsiniz. Pivot noktası bir ekseni çevirmek için bu eksen için karşılık gelen oku taşıyın. Çeviri tarafından etkilenen eksen göstermek üzere bir sarı renk kutusu ve oklar değiştirin.
 
