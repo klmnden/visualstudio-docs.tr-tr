@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079979"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>XAML Tasarımcısı’nda öğelerle çalışma
 
@@ -61,11 +61,11 @@ A *snapline* yardımcı olan görsel bir ipucu hizalama uygulamadaki diğer öğ
 
 İki veya daha fazla öğe, menü komutlarını kullanarak hizalamak için:
 
-1.  Hizalamak için kullanmak istediğiniz öğeleri seçin. Tuşuna basın ve basılı tutarak birden fazla öğe seçebilirsiniz **Ctrl** öğeleri seçerken anahtar.
+1. Hizalamak için kullanmak istediğiniz öğeleri seçin. Tuşuna basın ve basılı tutarak birden fazla öğe seçebilirsiniz **Ctrl** öğeleri seçerken anahtar.
 
-2.  Altında aşağıdaki özelliklerden birini **HorizontalAlignment** içinde **Düzen** Özellikler penceresinin bölümü: **Sol**, **Merkezi**, **sağ**, veya **Esnetme**.
+2. Altında aşağıdaki özelliklerden birini **HorizontalAlignment** içinde **Düzen** Özellikler penceresinin bölümü: **Sol**, **Merkezi**, **sağ**, veya **Esnetme**.
 
-3.  Altında aşağıdaki özelliklerden birini **VerticalAlignment** içinde **Düzen** Özellikler penceresinin bölümü: **Üst**, **Merkezi**, **alt**, veya **Esnetme**.
+3. Altında aşağıdaki özelliklerden birini **VerticalAlignment** içinde **Düzen** Özellikler penceresinin bölümü: **Üst**, **Merkezi**, **alt**, veya **Esnetme**.
 
 Dayama çizgileri, XAML Tasarımcısı'nda, en az iki öğe içeren bir düzende kullanarak iki veya daha fazla öğe hizalamak için sürükleyin veya edge başka bir öğe ile hizalanır. böylece öğelerden birini yeniden boyutlandırın.
 
@@ -77,9 +77,9 @@ XAML Tasarımcısı'nda kenar boşlukları, çalışma yüzeyinde bir öğe etra
 
 Özellikler penceresinde bir öğenin kenar boşluklarını değiştirmek için:
 
-1.  Kenar boşluklarını değiştirmek istediğiniz öğeyi seçin.
+1. Kenar boşluklarını değiştirmek istediğiniz öğeyi seçin.
 
-2.  Altında **Düzen** Özellikler penceresinde değeri (piksel veya yaklaşık 1/96 inç olan CİHAZDAN bağımsız birimler) herhangi birini değiştirin **kenar boşluğu** özellikleri (**üst**, **Sol**, **sağ**, veya **alt**).
+2. Altında **Düzen** Özellikler penceresinde değeri (piksel veya yaklaşık 1/96 inç olan CİHAZDAN bağımsız birimler) herhangi birini değiştirin **kenar boşluğu** özellikleri (**üst**, **Sol**, **sağ**, veya **alt**).
 
 Çalışma yüzeyine, öğenin Düzen kapsayıcısı göreli bir öğenin kenar boşluklarını değiştirmek için tıklayın *margin donatıcıları* öğe seçildiğinde ve bir düzen kapsayıcısı içinde öğesinin çevresinde görünen. Kenar boşluğu donatıcıları gösteren çizim için bkz: [XAML Tasarımcısını kullanarak kullanıcı Arabirimi oluşturma](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 

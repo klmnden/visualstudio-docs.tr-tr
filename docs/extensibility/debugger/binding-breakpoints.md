@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34914f382ded8dc7fbea4db49517c17024a8e3a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c36e5df52d4caa34d611f7f1c26b8a5187a637a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077569"
 ---
 # <a name="bind-breakpoints"></a>Kesme noktaları bağlama
 Kullanıcı bir kesme noktası, belki de tuşlarına basarak ayarlar varsa **F9**, IDE istek formulates ve kesme noktası oluşturmak için hata ayıklama oturumu ister.
@@ -23,15 +23,15 @@ Kullanıcı bir kesme noktası, belki de tuşlarına basarak ayarlar varsa **F9*
 ## <a name="set-a-breakpoint"></a>Bir kesme noktası ayarlayın
  Bir kesme noktası ayarlamak, kod veya veri kesme noktası tarafından etkilenen henüz kullanılabilir olmayabileceğinden iki adımlı bir işlem olduğu. İlk olarak, bir kesme noktası açıklanan ve kod ve veriler kullanıma sunulduğunda, daha sonra bu kod veya veri gibi bağlı olması gerekir:
 
-1.  Kesme noktası (DEs) ilgili hata ayıklama motorlardan istenen ve uygun olduğunda ardından kesme noktası kod veya veri bağlıdır.
+1. Kesme noktası (DEs) ilgili hata ayıklama motorlardan istenen ve uygun olduğunda ardından kesme noktası kod veya veri bağlıdır.
 
-2.  Kesme noktası istek için tüm ilgili DEs gönderir hata ayıklama oturumu için gönderilir. Kesme noktasına karşılık gelen bir kesme noktası işlemek için seçtiği herhangi bir DE oluşturur.
+2. Kesme noktası istek için tüm ilgili DEs gönderir hata ayıklama oturumu için gönderilir. Kesme noktasına karşılık gelen bir kesme noktası işlemek için seçtiği herhangi bir DE oluşturur.
 
-3.  Hata ayıklama oturumu bekleyen kesme noktalarının toplar ve bunları hata ayıklama paketi geri (Visual Studio hata ayıklama bileşeni) gönderir.
+3. Hata ayıklama oturumu bekleyen kesme noktalarının toplar ve bunları hata ayıklama paketi geri (Visual Studio hata ayıklama bileşeni) gönderir.
 
-4.  Hata ayıklama paketi bekleyen kesme noktasının kod veya veri bağlamak için hata ayıklama oturumu ister. Hata ayıklama oturumu için tüm ilgili DEs bu isteği gönderir.
+4. Hata ayıklama paketi bekleyen kesme noktasının kod veya veri bağlamak için hata ayıklama oturumu ister. Hata ayıklama oturumu için tüm ilgili DEs bu isteği gönderir.
 
-5.  Kesme noktasına bağlamak için DE ise, bir kesme noktası olay hata ayıklama oturumu bağımlı gönderir. Aksi durumda, bunun yerine bir kesme noktası hatası olay gönderir.
+5. Kesme noktasına bağlamak için DE ise, bir kesme noktası olay hata ayıklama oturumu bağımlı gönderir. Aksi durumda, bunun yerine bir kesme noktası hatası olay gönderir.
 
 ## <a name="pending-breakpoints"></a>Bekleyen kesme noktaları
  Bir bekleyen kesme noktasının birden çok kod konumlara bağlayabilirsiniz. Örneğin, bir C++ şablon için kaynak kod satırı şablondan oluşturulan her kod dizisi bağlayabilirsiniz. Hata ayıklama oturumu, bir kesme noktası ilişkili olay, olay gönderildiği sırada bir kesme noktasına bağlı kod bağlamları listelemek için kullanabilirsiniz. DE olayları bağlama her istek için birden fazla kesme noktası bağlı gönderebilir. Bu nedenle daha fazla kod bağlamı daha sonra bağlı olabilir. Ancak, bir DE bağlama istek başına yalnızca bir kesme noktası hatası olay göndermesi gerekir.

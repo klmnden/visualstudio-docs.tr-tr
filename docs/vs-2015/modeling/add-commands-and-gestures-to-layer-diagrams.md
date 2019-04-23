@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079830"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Katman diyagramlarına komut ve hareket ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Stud
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Ayrı bir VSIX'e katman uzantıları eklemek için  
   
-1.  Yeni veya mevcut bir Visual Studio çözümünde bir sınıf kitaplığı projesi oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve ardından **sınıf kitaplığı**. Bu projeyi içeren komut veya hareket işleyici sınıflarını.  
+1. Yeni veya mevcut bir Visual Studio çözümünde bir sınıf kitaplığı projesi oluşturun. İçinde **yeni proje** iletişim kutusu, tıklayın **Visual C#** ve ardından **sınıf kitaplığı**. Bu projeyi içeren komut veya hareket işleyici sınıflarını.  
   
     > [!NOTE]
     >  Bir sınıf kitaplığında birden fazla komut veya hareket işleyici sınıf tanımlayabilirsiniz, ancak katman doğrulama sınıflarını ayrı sınıf kitaplığında tanımlamanız gerekir.  
   
-2.  Çözümünüzde bir VSIX projesi oluşturun veya tanımlayın. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**. Bir VSIX projesine eklemek için:  
+2. Çözümünüzde bir VSIX projesi oluşturun veya tanımlayın. Adlı bir dosyaya bir VSIX projesi içeren **source.extension.vsixmanifest**. Bir VSIX projesine eklemek için:  
   
-    1.  İçinde **yeni proje** iletişim kutusunda **Visual C#**, ardından **genişletilebilirlik**ve ardından **VSIX projesi**.  
+    1. İçinde **yeni proje** iletişim kutusunda **Visual C#**, ardından **genişletilebilirlik**ve ardından **VSIX projesi**.  
   
-    2.  Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.  
+    2. Çözüm Gezgini'nde VSIX projesini sağ tıklayın ve ardından **başlangıç projesi olarak ayarla**.  
   
-    3.  Tıklayın **sürümleri seçin** emin olun **Visual Studio** denetlenir.  
+    3. Tıklayın **sürümleri seçin** emin olun **Visual Studio** denetlenir.  
   
-3.  İçinde **source.extension.vsixmanifest**altında **varlıklar**Ekle komut veya hareket işleyicisi projesini MEF Bileşeni olarak.  
+3. İçinde **source.extension.vsixmanifest**altında **varlıklar**Ekle komut veya hareket işleyicisi projesini MEF Bileşeni olarak.  
   
-    1.  İçinde **varlıklar***.tab, seçin **yeni**.  
+    1. İçinde **varlıklar**.tab, seçin **yeni**.  
   
-    2.  Konumunda **türü**seçin **Microsoft.VisualStudio.MefComponent**.  
+    2. Konumunda **türü**seçin **Microsoft.VisualStudio.MefComponent**.  
   
-    3.  Konumunda **kaynak**seçin **geçerli çözümde proje** ve komut veya hareket işleyici projenizin adını seçin.  
+    3. Konumunda **kaynak**seçin **geçerli çözümde proje** ve komut veya hareket işleyici projenizin adını seçin.  
   
-    4.  Dosyayı kaydedin.  
+    4. Dosyayı kaydedin.  
   
-4.  Komut veya hareket işleyici projesine dönün ve aşağıdaki proje başvurularını ekleyin.  
+4. Komut veya hareket işleyici projesine dönün ve aşağıdaki proje başvurularını ekleyin.  
   
 |**Başvuru**|**Bunu yapmak sağlar**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Stud
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|Modelleme uzantılarını tanımla|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]|Şekilleri ve diyagramları güncelleyin|  
   
-1.  Uzantınız için kodu içermesi için C# sınıf kitaplığı projesi sınıfı dosyayı düzenleyin. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:  
+1. Uzantınız için kodu içermesi için C# sınıf kitaplığı projesi sınıfı dosyayı düzenleyin. Daha fazla bilgi için aşağıdaki bölümlerden birine bakın:  
   
      [Bir menü komutunu tanımlama](#command)  
   
@@ -104,13 +104,13 @@ Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Stud
   
      Ayrıca bkz: [erişin ve güncelleştirme modelleri program kodunda katman](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Özelliği test etmek için CTRL + F5 veya F5 tuşuna basın. Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] açılır. Bu örnekte, oluşturma veya bir katman diyagramı açın.  
+2. Özelliği test etmek için CTRL + F5 veya F5 tuşuna basın. Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] açılır. Bu örnekte, oluşturma veya bir katman diyagramı açın.  
   
-3.  Ana örneğine VSIX'i yüklemek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'nde (Windows 8'de dosya Gezgini) VSIX dosyasını çift tıklayın.  
+3. Ana örneğine VSIX'i yüklemek [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veya başka bir bilgisayarda Bul **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'nde (Windows 8'de dosya Gezgini) VSIX dosyasını çift tıklayın.  
   
      Kaldırmak için kullanın **Uzantılar ve güncelleştirmeler** üzerinde **Araçları** menüsü.  
   
-##  <a name="command"></a> Bir menü komutunu tanımlama  
+## <a name="command"></a> Bir menü komutunu tanımlama  
  Varolan bir hareket ya da komut projesine daha fazla menü komutu tanımları ekleyebilirsiniz. Her komut aşağıdaki özelliklere sahip bir sınıf tarafından tanımlanır:  
   
 - Sınıf şu şekilde bildirilir:  
@@ -125,11 +125,11 @@ Bağlam menüsü komutları tanımlayabilir ve hareket işleyicileri Visual Stud
   
 - Uygulayan yöntemler `ICommandExtension` aşağıdaki gibidir:  
   
-  -   `string Text {get;}` -Menüde görüntülenen etiketi.  
+  - `string Text {get;}` -Menüde görüntülenen etiketi.  
   
-  -   `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagrama ve komutun kullanıcının geçerli seçimi için görünür ve etkin olup olmayacağını belirler çağrılır.  
+  - `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagrama ve komutun kullanıcının geçerli seçimi için görünür ve etkin olup olmayacağını belirler çağrılır.  
   
-  -   `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.  
+  - `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.  
   
 - Geçerli seçimi belirlemek için alabilirsiniz `IDiagramContext`:  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> Bir hareket işleyicisi tanımlama  
+## <a name="gesture"></a> Bir hareket işleyicisi tanımlama  
  Kullanıcı katman diyagramına öğeleri sürüklediğinde ve diyagramdaki kullanıcı herhangi bir yere tıkladığında bir hareket işleyicisi yanıt.  
   
  Mevcut komut veya hareket işleyicisi VSIX projeniz için bir hareket işleyicisi tanımlayan bir kod dosyası ekleyebilirsiniz:  

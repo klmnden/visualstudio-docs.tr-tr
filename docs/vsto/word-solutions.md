@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 484998916619a7dc72693d1854d29849bb62d833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bbe703e54c6023a4d14a8610168438acc5c0e953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085148"
 ---
 # <a name="word-solutions"></a>Word çözümleri
   Visual Studio, Microsoft Office Word için belge düzeyi özelleştirmeleri ve VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. Word'ü otomatikleştirmek, Word özelliklerini genişletmek ve Word kullanıcı arabirimini (UI) özelleştirmek için bu çözümleri kullanabilirsiniz. Belge düzeyi özelleştirmeleri ve VSTO eklentileri arasındaki farklar hakkında daha fazla bilgi için bkz. [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56612653"
 
  Bu konuda, aşağıdaki bilgiler sağlanmaktadır:
 
--   [Word'ü otomatikleştirirken](#automating).
+- [Word'ü otomatikleştirirken](#automating).
 
--   [Word için belge düzeyi özelleştirmeleri geliştirme](#doclevel).
+- [Word için belge düzeyi özelleştirmeleri geliştirme](#doclevel).
 
--   [Word için VSTO eklentileri geliştirme](#applevel).
+- [Word için VSTO eklentileri geliştirme](#applevel).
 
--   [Word kullanıcı arayüzünü özelleştirme](#UI).
+- [Word kullanıcı arayüzünü özelleştirme](#UI).
 
-##  <a name="automating"></a> Sözcük otomatikleştirme
+## <a name="automating"></a> Sözcük otomatikleştirme
  Word nesne modeli, Word'ü otomatikleştirirken kullanabileceğiniz birçok türü ortaya çıkarır. Örneğin, program aracılığıyla tablolar oluşturabilir, biçim belgeleri ve aralık ve paragraflardaki metni ayarlama. Daha fazla bilgi için [Word nesne modeline genel bakış](../vsto/word-object-model-overview.md).
 
  Visual Studio'da Word çözümleri geliştirirken aynı zamanda kullanabilirsiniz *konak öğelerini* ve *konak denetimlerini* Çözümlerinizdeki. Bunlar gibi Word nesne modeli, yaygın olarak kullanılan belirli nesneleri genişleten nesnelerdir <xref:Microsoft.Office.Interop.Word.Document> ve <xref:Microsoft.Office.Interop.Word.ContentControl> nesneleri. Genişletilmiş nesneler temel aldıkları Word nesneleri gibi davranırlar fakat nesnelere veri bağlama becerileri ve ek olaylar ekleyin. Daha fazla bilgi için [otomatikleştirmek genişletilmiş nesneleri kullanarak Word'ü](../vsto/automating-word-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Word için belge düzeyi özelleştirmeleri geliştirme
+## <a name="doclevel"></a> Word için belge düzeyi özelleştirmeleri geliştirme
  Microsoft Office Word için belge düzeyi özelleştirmesinde, belirli bir belge ile ilişkilendirilen derleme oluşur. Derleme, genellikle UI'yi özelleştirerek ve Word'ü otomatikleştirerek belgeyi genişletir. Yalnızca ilişkili belge Word'de açık olduğunda bir VSTO Word'ün kendisiyle ilişkilendirilen eklentiyi bir özelleştirmede uyguladığınız işlevsellik kullanılabilir.
 
  Word için belge düzeyi özelleştirme projesi oluşturmak için Word belgesi veya Word Şablonu proje şablonlarını kullanın. **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56612653"
 
  Hakkında daha fazla bilgi için `ThisDocument` sınıfı ve bir belge düzeyi projesinde kullanabileceğiniz diğer özellikler bkz [Program belge düzeyi özelleştirmeleri](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Word için VSTO eklentileri geliştirin
+## <a name="applevel"></a> Word için VSTO eklentileri geliştirin
  Microsoft Office Word'ün bir VSTO eklentisi Word tarafından yüklenen bir derleme içerir. Derleme, genellikle UI'yi özelleştirerek ve Word'ü otomatikleştirerek Word genişletir. Belirli bir belge ile ilişkilendirilen belge düzeyi özelleştirmesinin aksine bir VSTO eklentide uyguladığınız işlevsellik, herhangi bir tek belge ile sınırlı değildir.
 
  Word için VSTO eklentisi projesi oluşturmak için Word eklentisi proje şablonlarını kullanın **yeni proje** Visual Studio'nun iletişim kutusu. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56612653"
 
  Hakkında daha fazla bilgi için `ThisAddIn` sınıfı ve bir VSTO eklenti, kullanabileceğiniz diğer özellikler bkz [Program VSTO eklentileri](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Word kullanıcı arayüzünü özelleştirme
+## <a name="UI"></a> Word kullanıcı arayüzünü özelleştirme
  Word kullanıcı arayüzünü özelleştirmek için birçok farklı yol vardır. Bazı seçenekleri tüm proje türleri için kullanılabilir ve diğer seçenekleri yalnızca VSTO eklentileri veya belge düzeyi özelleştirmeleri için kullanılabilir.
 
 ### <a name="options-for-all-project-types"></a>Tüm proje türleri için Seçenekler

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58573062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085188"
 ---
 # <a name="set-up-a-git-repository"></a>Bir Git deposu ayarlama
 
@@ -44,7 +44,7 @@ Bir Git deposu ayarlama için aşağıdaki adımları uygulayın:
 
 Mevcut bir proje varsa _değil_ zaten sürüm denetiminde Git'te ayarlamak için aşağıdaki adımları kullanın:
 
-1.  Mac için Visual Studio'da Çözüm bölmesi çözüm adı seçin
+1. Mac için Visual Studio'da Çözüm bölmesi çözüm adı seçin
 
 2. Menü çubuğunda **sürüm denetimi > sürüm denetiminde Yayımla** görüntülenecek **depo seçin** iletişim:
 

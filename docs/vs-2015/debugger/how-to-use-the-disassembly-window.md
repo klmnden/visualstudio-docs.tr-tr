@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077504"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Nasıl yapılır: Ayrıştırılmış kod penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Bu özellik yalnızca adres seviyesinde hata ayıklamayı etkinse kullanılabili
   
 ### <a name="to-display-the-disassembly-window"></a>Ayrıştırılmış kod penceresini görüntülemek için  
   
--   Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **ayrıştırılmış kodu**.  
+- Üzerinde **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **ayrıştırılmış kodu**.  
   
      Hata ayıklayıcı, çalışan veya kesme modunda olması gerekir.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>İsteğe bağlı bilgiler açmak veya kapatmak için  
   
--   Sağ **ayrıştırılmış kodu** penceresinde ayarlayın ve kısayol menüsünde istenen seçenekleri temizleyin.  
+- Sağ **ayrıştırılmış kodu** penceresinde ayarlayın ve kısayol menüsünde istenen seçenekleri temizleyin.  
   
      Sol kenar boşluğundaki bir sarı ok geçerli yürütme noktasını konumu işaretler. Yerel kod için CPU'nun program sayacı bu karşılık gelir. Bu konum, programınızda yürütülecek sonraki yönergeyi gösterir.  
   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072754"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Nasıl yapılır: Sayfa yukarı veya aşağı bellekte
 
@@ -44,7 +44,7 @@ Bellek içeriğini görüntülediğinizde bir **bellek** penceresi veya **ayrı�
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Bir yönerge aşağı veya yukarı taşımak için
 
--   Dikey kaydırma çubuğu ortasından altına veya üstüne oka tıklayın.
+- Dikey kaydırma çubuğu ortasından altına veya üstüne oka tıklayın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Bellek Pencereleri](../debugger/memory-windows.md)

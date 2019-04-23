@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2a085306ca72170de22791cfa9e64514d45b4c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080417"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Nasıl yapılır: İçerik ekleme denetimlerine Word belgeleri
   Belge düzeyi Word projelerinde, içerik denetimleri belgeye projenizde tasarım zamanında veya çalışma zamanında ekleyebilirsiniz. Word VSTO eklenti projesinde herhangi bir açık belgeye çalışma zamanında içerik denetimlerine ekleyebilirsiniz.
@@ -48,7 +48,7 @@ ms.locfileid: "56599213"
 
   İçerik denetimleri hakkında daha fazla bilgi için bkz: [içerik denetimleri](../vsto/content-controls.md).
 
-##  <a name="designtime"></a> İçerik ekleme denetimleri tasarım zamanında
+## <a name="designtime"></a> İçerik ekleme denetimleri tasarım zamanında
  Belge düzeyi projesinde tasarım zamanında içerik denetimleri eklemenin birkaç yolu vardır:
 
 - Bir içerik denetimi ekleme **Word denetimleri** sekmesinde **araç kutusu**.
@@ -61,21 +61,21 @@ ms.locfileid: "56599213"
 
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Araç kutusunu kullanarak belge bir içerik denetimi eklemek için
 
-1.  Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, içerik denetimi eklemek veya değiştirmek için içerik denetimi istediğiniz metni seçmek istediğiniz imleci yerleştirin.
+1. Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, içerik denetimi eklemek veya değiştirmek için içerik denetimi istediğiniz metni seçmek istediğiniz imleci yerleştirin.
 
-2.  Açık **araç kutusu** tıklatıp **Word denetimleri** sekmesi.
+2. Açık **araç kutusu** tıklatıp **Word denetimleri** sekmesi.
 
-3.  Denetimi aşağıdaki yollardan birini ekleyin:
+3. Denetimi aşağıdaki yollardan birini ekleyin:
 
-    -   Bir içerik denetimi çift **araç kutusu**.
-
-         veya
-
-    -   İçindeki içerik bir denetimi **araç kutusu** ve tuşuna **Enter** anahtarı.
+    - Bir içerik denetimi çift **araç kutusu**.
 
          veya
 
-    -   Bir içerik denetimi **araç kutusu** belge. İçerik denetimi, fare işaretçisi konumunu değil, geçerli seçime belgedeki eklenir.
+    - İçindeki içerik bir denetimi **araç kutusu** ve tuşuna **Enter** anahtarı.
+
+         veya
+
+    - Bir içerik denetimi **araç kutusu** belge. İçerik denetimi, fare işaretçisi konumunu değil, geçerli seçime belgedeki eklenir.
 
 > [!NOTE]
 >  Ekleyemezsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> kullanarak **araç kutusu**. Yalnızca ekleyebileceğiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> Word veya çalışma zamanında.
@@ -85,16 +85,16 @@ ms.locfileid: "56599213"
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Word belgesinde bir içerik denetimi eklemek için
 
-1.  Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, içerik denetimi eklemek veya değiştirmek için içerik denetimi istediğiniz metni seçmek istediğiniz imleci yerleştirin.
+1. Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, içerik denetimi eklemek veya değiştirmek için içerik denetimi istediğiniz metni seçmek istediğiniz imleci yerleştirin.
 
-2.  Şerit üzerinde tıklayın **Geliştirici** sekmesi.
+2. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
     >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  İçinde **denetimleri** grubunda, eklemek istediğiniz içerik denetiminin simgesine tıklayın.
+3. İçinde **denetimleri** grubunda, eklemek istediğiniz içerik denetiminin simgesine tıklayın.
 
-##  <a name="runtimedoclevel"></a> Çalışma zamanında bir belge düzeyi projede içerik denetimleri ekleme
+## <a name="runtimedoclevel"></a> Çalışma zamanında bir belge düzeyi projede içerik denetimleri ekleme
  İçerik denetimlerine programlı olarak çalışma zamanında belgenize yöntemleri kullanılarak ekleyebilirsiniz <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> özelliği `ThisDocument` projenizdeki sınıfı. Her yöntemin içerik denetimi aşağıdaki yollarla eklemek için kullanabileceğiniz üç aşırı yüklemeleri vardır:
 
 - Geçerli seçimde bir denetim ekleyin.
@@ -110,7 +110,7 @@ ms.locfileid: "56599213"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Geçerli seçimde bir içerik denetimi eklemek için
 
-1.  Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve yeni denetimin adı için tek bir parametreye sahip.
+1. Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve yeni denetimin adı için tek bir parametreye sahip.
 
      Aşağıdaki kod örneğinde <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> yeni bir yöntem <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeyi başlangıcına. Bu kodu çalıştırmak için koda Ekle `ThisDocument` sınıfı proje ve çağrı `AddRichTextControlAtSelection` yönteminden `ThisDocument_Startup` olay işleyicisi.
 
@@ -119,7 +119,7 @@ ms.locfileid: "56599213"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Belirli bir aralıkta bir içerik denetimi eklemek için
 
-1.  Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir <xref:Microsoft.Office.Interop.Word.Range> parametresi.
+1. Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir <xref:Microsoft.Office.Interop.Word.Range> parametresi.
 
      Aşağıdaki kod örneğinde <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> yeni bir yöntem <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgeyi başlangıcına. Bu kodu çalıştırmak için koda Ekle `ThisDocument` sınıfı proje ve çağrı `AddRichTextControlAtRange` yönteminden `ThisDocument_Startup` olay işleyicisi.
 
@@ -128,14 +128,14 @@ ms.locfileid: "56599213"
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Bir yerel içerik denetimine bağlı bir içerik denetimi eklemek için
 
-1.  Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir `Microsoft.Office.Interop.Word.ContentControl` parametresi.
+1. Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir `Microsoft.Office.Interop.Word.ContentControl` parametresi.
 
      Aşağıdaki kod örneğinde <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> yeni bir yöntem <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belgedeki her yerel zengin metin denetimi. Bu kodu çalıştırmak için koda Ekle `ThisDocument` sınıfı proje ve çağrı `CreateRichTextControlsFromNativeControls` yönteminden `ThisDocument_Startup` olay işleyicisi.
 
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-##  <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesindeki içerik denetimleri ekleme
+## <a name="runtimeaddin"></a> Çalışma zamanında VSTO eklenti projesindeki içerik denetimleri ekleme
  İçerik denetimlerini programlı olarak herhangi bir açık belgeye çalışma zamanında VSTO eklenti kullanarak ekleyebilirsiniz. Bunu yapmak için oluşturmak bir <xref:Microsoft.Office.Tools.Word.Document> barındıran bir açık belgeye dayalı öğesini ve ardından yöntemlerinin <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> bu konak öğesi özelliği. Her yöntemin içerik denetimi aşağıdaki yollarla eklemek için kullanabileceğiniz üç aşırı yüklemeleri vardır:
 
 - Geçerli seçimde bir denetim ekleyin.
@@ -153,7 +153,7 @@ ms.locfileid: "56599213"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Geçerli seçimde bir içerik denetimi eklemek için
 
-1.  Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve yeni denetimin adı için tek bir parametreye sahip.
+1. Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve yeni denetimin adı için tek bir parametreye sahip.
 
      Aşağıdaki kod örneğinde <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> yeni bir yöntem <xref:Microsoft.Office.Tools.Word.RichTextContentControl> etkin belgeyi başlangıcına. Bu kodu çalıştırmak için koda Ekle `ThisAddIn` sınıfı proje ve çağrı `AddRichTextControlAtSelection` yönteminden `ThisAddIn_Startup` olay işleyicisi.
 
@@ -162,7 +162,7 @@ ms.locfileid: "56599213"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Belirli bir aralıkta bir içerik denetimi eklemek için
 
-1.  Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir <xref:Microsoft.Office.Interop.Word.Range> parametresi.
+1. Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir <xref:Microsoft.Office.Interop.Word.Range> parametresi.
 
      Aşağıdaki kod örneğinde <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> yeni bir yöntem <xref:Microsoft.Office.Tools.Word.RichTextContentControl> etkin belgeyi başlangıcına. Bu kodu çalıştırmak için koda Ekle `ThisAddIn` sınıfı proje ve çağrı `AddRichTextControlAtRange` yönteminden `ThisAddIn_Startup` olay işleyicisi.
 
@@ -171,7 +171,7 @@ ms.locfileid: "56599213"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Bir yerel içerik denetimine bağlı bir içerik denetimi eklemek için
 
-1.  Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir `Microsoft.Office.Interop.Word.ContentControl` parametresi.
+1. Kullanım bir <xref:Microsoft.Office.Tools.Word.ControlCollection> adına sahip yöntemi `Add` \< *denetim sınıf*> (burada *denetim sınıf* gibi eklemekistediğiniziçerikdenetimisınıfadıdır<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), ve bir `Microsoft.Office.Interop.Word.ContentControl` parametresi.
 
      Aşağıdaki kod örneğinde <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> yeni bir yöntem <xref:Microsoft.Office.Tools.Word.RichTextContentControl> belge açıldıktan sonra bir belgedeki her yerel zengin metin denetimi. Bu kodu çalıştırmak için koda Ekle `ThisAddIn` projenizdeki sınıfı.
 

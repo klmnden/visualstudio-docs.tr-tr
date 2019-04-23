@@ -8,12 +8,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078076"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Örnek Excel uzantısı: TechnologyManager Sınıfı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Bu sınıf genişletir <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.U
 ## <a name="methods-to-get-an-element"></a>Bir öğe almak için yöntemleri  
  Kodlanmış UI test çerçevesi tarafından bir tanıtıcı, bir ekran veya farklı bir teknoloji öğeden noktasında sağlayarak bir öğe teknolojiye özgü almak için kullanılan çeşitli önemli yöntemler vardır. Bu yöntemleri için kod değerleridir. Temel yöntemler aşağıdaki gibidir:  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>ParseQueryId Method  
  Kodlanmış UI testi oluşturulduğunda kullanıcı testteki bazı veya tüm denetimler için özellik değerlerini belirtebilirsiniz. Bu özellik değerleri, test çerçevesi tarafından belirli kullanıcı Arabirimi denetimleri, test sırasında bulmak için kullanılan arama özellikleri olarak adlandırılan ad-değer çiftleri oluşturmak için kullanılır. Tüm arama özellikleri birlikte değerini temsil eden <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> teknolojisinde her denetimi içeren her bir öğenin özellik. Bir denetim, test sırasında birkaç kez bulunacak olabileceğinden, bu yöntem bir teknoloji Yöneticisi belirli bir denetim için arama özelliklerinin ayrıştırma iyileştirmeye yönelik bir yol sağlar. Bu yöntem ayrıca framework sonraki aramalar için bu denetim için kullanabileceğiniz bir tanımlama bilgisi döndürür. Bu yöntemi uygulaması kullanan <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> arama özellikleri ayrıştırmak için yöntemi.  

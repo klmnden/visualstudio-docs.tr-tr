@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 84c1a0a4f74c847da78920a638b37c0294717d02
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073407"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI testlerinde HTML5 denetimleri kullanma
 
@@ -22,7 +22,7 @@ Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denet
 
  **Gereksinimler**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!WARNING]
 > Internet Explorer 10 önceki sürümlerinde, kodlanmış UI testleri, Internet Explorer işlemi kıyasla daha yüksek bir ayrıcalık düzeyinde çalıştırmak mümkün oldu. Kodlanmış UI testleri, Internet Explorer 10'da çalıştırırken, kodlanmış UI testi hem de Internet Explorer işlemi aynı ayrıcalık düzeyinde olması gerekir. Internet Explorer 10 daha güvenli bir AppContainer özellikleri nedeniyle budur.

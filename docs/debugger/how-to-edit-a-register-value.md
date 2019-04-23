@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ee5d0b36196c85d7c81b63503bfcc471d7664
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075111"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Nasıl yapılır: YAZMAÇ değerini düzenleme (C#, C++, Visual Basic F#)
 
@@ -32,9 +32,9 @@ Yazmaçlar penceresi yalnızca adres seviyesinde hata ayıklamayı etkin değils
 
 ### <a name="to-change-the-value-of-a-register"></a>Bir kayıt değeri değiştirmek için
 
-1.  İçinde **kaydeder** penceresinde, SEKME tuşunu veya fare ekleme noktasını değiştirmek istediğiniz değeri için kullanın. Yazmaya başladığınızda, imleci üzerine yazmak istediğiniz değer önünde yer almalıdır.
+1. İçinde **kaydeder** penceresinde, SEKME tuşunu veya fare ekleme noktasını değiştirmek istediğiniz değeri için kullanın. Yazmaya başladığınızda, imleci üzerine yazmak istediğiniz değer önünde yer almalıdır.
 
-2.  Yeni bir değer girin.
+2. Yeni bir değer girin.
 
     > [!CAUTION]
     >  YAZMAÇ değerlerini (özellikle de EIP ve EBP kayıtları) değiştirilmesi, program yürütme etkileyebilir.

@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082836"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Nasıl yapılır: ClickOnce Güvenlik Ayarlarını Etkinleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ClickOnce uygulamaları için kod erişimi güvenliği, uygulama yayımlamak iç
   
 ### <a name="to-enable-clickonce-security-settings"></a>ClickOnce güvenlik ayarlarını etkinleştirme  
   
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-2.  Tıklayın **güvenlik** sekmesi.  
+2. Tıklayın **güvenlik** sekmesi.  
   
-3.  Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.  
+3. Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.  
   
      Ayrıca, uygulamanızın Güvenlik sayfasında artık güvenlik ayarlarını özelleştirebilirsiniz.  
   
@@ -48,11 +48,11 @@ ClickOnce uygulamaları için kod erişimi güvenliği, uygulama yayımlamak iç
   
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce güvenlik ayarlarını devre dışı bırakmak için  
   
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-2.  Tıklayın **güvenlik** sekmesi.  
+2. Tıklayın **güvenlik** sekmesi.  
   
-3.  NET **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.  
+3. NET **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.  
   
      Uygulama tam güven güvenlik ayarlarıyla çalışır; herhangi bir ayarı **güvenlik** sayfa yok sayılacak.  
   

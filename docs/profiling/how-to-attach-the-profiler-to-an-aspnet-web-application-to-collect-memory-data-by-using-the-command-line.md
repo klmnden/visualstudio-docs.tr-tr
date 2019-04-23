@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a1580c2ec230df2560e34f80a076aeca0baf2c5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3ebe328970b34a9fdc6cc7f3717a6aec28b560ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075161"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Nasıl yapılır: Komut satırını kullanarak bellek verileri toplamak için bir ASP.NET web uygulamasına profil oluşturucu ekleme
 Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] iliştirme için profil oluşturma araçları komut satırı araçlarını bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web uygulaması ve toplama veri sayısı ve boyutu, .NET Framework bellek ayırmaları hakkında. Ayrıca, .NET Framework bellek nesnelerinin yaşam süresi hakkında veri toplayabilirsiniz.
@@ -38,7 +38,7 @@ Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quali
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Seçenekler **/globalsamplegc** ve **/globalsamplegclife** toplanacak bellek verilerinin türünü belirtin.
+   - Seçenekler **/globalsamplegc** ve **/globalsamplegclife** toplanacak bellek verilerinin türünü belirtin.
 
         Aşağıdaki seçeneklerden bir ve yalnızca bir tanesini belirtin.
 
@@ -47,7 +47,7 @@ Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quali
        |**/globalsamplegc**|Bellek ayırma verilerinin toplanmasını etkinleştirir.|
        |**/globalsamplegclife**|Bellek ayırma verilerinin ve nesne yaşam süresi verilerinin toplanmasını etkinleştirir.|
 
-   -   Seçenek **/samplelineoff** toplanan verilerin belirli kaynak kod satırlarına atamayı devre dışı bırakır. Bu seçenek belirtilmişse, veri işlev düzeyinde atanır.
+   - Seçenek **/samplelineoff** toplanan verilerin belirli kaynak kod satırlarına atamayı devre dışı bırakır. Bu seçenek belirtilmişse, veri işlev düzeyinde atanır.
 
 3. Yeni ortam yapılandırmasını ayarlamak için bilgisayarı yeniden başlatın.
 
@@ -90,7 +90,7 @@ Bu makalede nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../code-quali
 
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak
 
--   Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
+- Aşağıdaki çiftleri **VSPerfCmd** seçenekleri başlatın ve veri toplamayı durdurun. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.
 
     |Seçenek|Açıklama|
     |------------|-----------------|

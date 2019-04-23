@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072857"
 ---
 # <a name="autos-and-locals-windows"></a>Otolar ve yerel öğeler Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  İşlevler ve bazı durumlarda yöntemlerinin dönüş değerlerini de görebilirsiniz. Bkz: [yöntem çağrılarının dönüş değerlerini görüntüleme](#bkmk_returnValue) aşağıda.  
   
-##  <a name="bkmk_returnValue"></a> Yöntem çağrılarının dönüş değerlerini görüntüleme  
+## <a name="bkmk_returnValue"></a> Yöntem çağrılarının dönüş değerlerini görüntüleme  
  .NET ve C++ kodunda üzerinden veya bir yöntem çağrısının dışına adımladığınızda dönüş değerlerini inceleyebilirsiniz. Bu işlev, bir yöntem parametresi olarak veya başka bir yöntemin dönüş değeri olarak kullanılır, örneğin bir yerel değişken bir yöntem çağrısının sonucuna depolanmaz yararlıdır.  
   
  Aşağıdaki C# kodu iki işlev dönüş değerlerini ekler:  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  Ancak, değerlerini değiştirirken dikkatli olmanız gerekir. Olası bazı sorunlar şunlardır:  
   
--   Bazı ifadelerin değerlendirilmesi bir değişkenin değerini değiştirebilir veya aksi halde, programınızın durumunu etkileyebilir. Örneğin, değerlendirme `var1 = ++var2` değerini değiştirir `var1` ve `var2`.  
+- Bazı ifadelerin değerlendirilmesi bir değişkenin değerini değiştirebilir veya aksi halde, programınızın durumunu etkileyebilir. Örneğin, değerlendirme `var1 = ++var2` değerini değiştirir `var1` ve `var2`.  
   
      Verileri değiştiren ifadelerin söylenebilir sağlamak için [yan etkileri](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), hangi beklenmeyen sonuçlar verebilir, bunları farkında değilseniz. Bunu yapmadan önce böyle bir değişiklik sonuçlarını anladığınızdan emin olun.  
   
--   Kayan nokta değerlerini düzenlemek, kesirli bileşenlerin ondalıktan ikiliye dönüştürülmesi nedeniyle küçük yanlışlıklara neden olabilir. Zararsız görünen bir düzenleme bile, kayan nokta değişkenindeki en az önemli bitlerin bazılarının değişmesine neden olabilir.  
+- Kayan nokta değerlerini düzenlemek, kesirli bileşenlerin ondalıktan ikiliye dönüştürülmesi nedeniyle küçük yanlışlıklara neden olabilir. Zararsız görünen bir düzenleme bile, kayan nokta değişkenindeki en az önemli bitlerin bazılarının değişmesine neden olabilir.  
   
 ## <a name="debug-location-toolbar"></a>Hata Ayıklama Konumu araç çubuğu  
  Kullanabileceğiniz **hata ayıklama konumu** araç istenen işlevi, iş parçacığı ve işlem'i seçin. Bir kesme noktası ayarlayın ve hata ayıklamaya başlayın. (Bu araç görmüyorsanız, araç çubuğu alanında boş bir bölümüne tıklayarak etkinleştirebilirsiniz. Araç çubukları listesini görmeniz gerekir; seçin **hata ayıklama konumu**). Kesme noktası isabet edildiğinde yürütme durur ve aşağıdaki grafikte en alt satırında olan hata ayıklama konumu araç çubuğunda görebilirsiniz:  

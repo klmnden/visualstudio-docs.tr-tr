@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072825"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>.NET Framework 4 veya .NET Framework 4.5 için geçirdiğiniz Office projelerini çalıştırmak için gereken değişiklikler
   Bir Office projesi hedef Framework'ü değiştirilirse [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya daha önceki .NET Framework sürümünden çözüm geliştirme bilgisayarında ve son kullanıcı bilgisayarlarında çalışabildiğinden emin olmak için aşağıdaki görevleri gerçekleştirmeniz gerekir:
@@ -39,14 +39,14 @@ ms.locfileid: "56625705"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>SecurityTransparentAttribute kaldırmak için
 
-1.  Projeyi Visual Studio'da Aç açın **Çözüm Gezgini**.
+1. Projeyi Visual Studio'da Aç açın **Çözüm Gezgini**.
 
-2.  Altında **özellikleri** düğümü (C#) veya **Projem** (Visual Basic) düğümünü AssemblyInfo kod dosyası Kod Düzenleyicisi'nde açmak için çift tıklayın.
+2. Altında **özellikleri** düğümü (C#) veya **Projem** (Visual Basic) düğümünü AssemblyInfo kod dosyası Kod Düzenleyicisi'nde açmak için çift tıklayın.
 
     > [!NOTE]
     >  Visual Basic projelerinde tıklamanız **tüm dosyaları göster** düğmesine **Çözüm Gezgini** AssemblyInfo kod dosyasını görmek için.
 
-3.  Bulun <xref:System.Security.SecurityTransparentAttribute> ve dosyanın kaldırmak veya yorum çıkarın.
+3. Bulun <xref:System.Security.SecurityTransparentAttribute> ve dosyanın kaldırmak veya yorum çıkarın.
 
     ```vb
     <Assembly: SecurityTransparent()>

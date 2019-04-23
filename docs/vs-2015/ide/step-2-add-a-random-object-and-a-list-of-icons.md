@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfdedd3c6666ca6535237de11eb08a9b013fe8c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073013"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>2. Adım: Rastgele Nesne ve Simge Listesi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ Bu adımda, oyun için bir grup eşleşen simge oluşturuyorsunuz. Her simge, fo
   
 ### <a name="to-add-a-random-object-and-a-list-of-icons"></a>Rasgele nesne ve bir simge listesi eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, seçin **Form1.cs** Visual C# kullanıyorsanız veya **Form1.vb** Visual Basic kullanıyorsanız ve menü çubuğunda, ardından **görüntüle** , **Kod**. Alternatif olarak, seçtiğiniz **F7** anahtar veya çift **Form1** içinde **Çözüm Gezgini**.  
+1. İçinde **Çözüm Gezgini**, seçin **Form1.cs** Visual C# kullanıyorsanız veya **Form1.vb** Visual Basic kullanıyorsanız ve menü çubuğunda, ardından **görüntüle** , **Kod**. Alternatif olarak, seçtiğiniz **F7** anahtar veya çift **Form1** içinde **Çözüm Gezgini**.  
   
      Böylece Form1'in arkasındaki kod modülü görüntülenir.  
   
-2.  Varolan kod içine aşağıdaki kodu ekleyin.  
+2. Varolan kod içine aşağıdaki kodu ekleyin.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#1)]  
   
      Visual C# kullanıyorsanız olması emin yerleştirdiğiniz kodu açılış kaşlı ayracından sonra ve yalnızca sınıf bildiriminden sonra (`public partial class Form1 : Form`). Visual Basic kullanıyorsanız sınıf bildiriminden hemen sonra kod yerleştirin (`Public Class Form1`).  
   
-3.  Eklerken `List` nesne, fark **IntelliSense** açılır pencere. Aşağıdaki bir Visual C# örneği olmakla birlikte, Visual Basic'te liste eklediğinizde de benzer bir metin görüntülenir.  
+3. Eklerken `List` nesne, fark **IntelliSense** açılır pencere. Aşağıdaki bir Visual C# örneği olmakla birlikte, Visual Basic'te liste eklediğinizde de benzer bir metin görüntülenir.  
   
      ![Click gösteren Özellikler penceresi olay](../ide/media/express-listintellisense.png "Express_ListIntellisense")  
 IntelliSense penceresi  
@@ -46,7 +46,7 @@ IntelliSense penceresi
   
      Oluştururken bir `List` kullanarak nesne bir `new` deyimi içinde depolamak istediğiniz veri türünü belirtmeniz gerekir. İşte bu nedenle en üstündeki araç ipucu **IntelliSense** penceresi listesinde öğelerin türlerini gösterir. Ayrıca, budur `List<string>` (görselde C#) ve `List(Of String)` (Visual Basic'te) anlamına gelir: Bu bir `List` öğelerini tutan nesne `string` veri türü. Programınızın metin depolamak için kullandığı bir dizedir hangi sağındaki araç ipucu olduğu **IntelliSense** penceresi, unsurdur.  
   
-4.  Visual Basic'te önce geçici bir dizin oluşturulması gerekmesine karşın, Visual C# ortamında listenin tek bir deyimle oluşturulabilmesinin nedenini bir düşünün. Visual C# diline sahip olmasıdır *koleksiyon başlatıcıları*, liste değerleri kabul etmek için hazırlayın. Visual Basic'te bir koleksiyon başlatıcısı kullanabilirsiniz. Ancak, önceki Visual Basic sürümü ile uyumluluk açısından önceki kodu kullanmanızı öneririz.  
+4. Visual Basic'te önce geçici bir dizin oluşturulması gerekmesine karşın, Visual C# ortamında listenin tek bir deyimle oluşturulabilmesinin nedenini bir düşünün. Visual C# diline sahip olmasıdır *koleksiyon başlatıcıları*, liste değerleri kabul etmek için hazırlayın. Visual Basic'te bir koleksiyon başlatıcısı kullanabilirsiniz. Ancak, önceki Visual Basic sürümü ile uyumluluk açısından önceki kodu kullanmanızı öneririz.  
   
      Bir koleksiyon Başlatıcısı kullandığınızda bir `new` ifade, sonra yeni `List` nesnesi oluşturulur, program, kaşlı ayraçlar içinde sağladığınız verilerle doldurur. Bu durumda, adlı dize listesi elde **simgeler**, ve bu liste on altı dize içeren başlatılır. Bu dizelerin her biri tek bir harftir ve bunların tümü etiketlerde yer alacak simgelere karşılık gelir. Dolayısıyla, oyunda bir çift ünlem işareti, bir çift büyük N harfi, bir çift virgül vs. olacaktır. (Bu karakterler Webdings yazı tipine ayarlandığında, otobüs, bisiklet, örümcek vb. simgeler olarak görünür.) `List` Nesne TableLayoutPanel panelindeki her hücreye tüm, on altı dize olacaktır.  
   
@@ -55,6 +55,6 @@ IntelliSense penceresi
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: Her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md).  
+- Sonraki öğretici adımına gitmek için bkz: [3. adım: Her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza tablo ekleme](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).
+- Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza tablo ekleme](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md).

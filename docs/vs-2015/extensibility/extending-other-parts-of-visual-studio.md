@@ -11,12 +11,12 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5a7602a152054587fa450beae56ad6cbe2c72241
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075460"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Visual Studio’nun Diğer Bölümlerini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Visual Studio UI genişletebileceğiniz çok daha fazla bölümü vardır. Burad
 ## <a name="extending-the-toolbox"></a>Araç kutusu genişletme
  Yeni denetimler ve diğer öğeleri araç kutusuna ekleyin ve araç kutusu işlevini nasıl kullanacağınızı öğrenin:
 
--   [WPF Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)
+- [WPF Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Windows Forms Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Windows Forms Araç Kutusu Denetimi Oluşturma](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>Durum Çubuğunu Genişletme
  Durum çubuğu ve ilerleme çubuğu için okuma ve yazma işlemini ve animasyonları ve diğer kullanıcı Arabirimi sağlayan öğrenin: [Durum çubuğunu genişletme](../extensibility/extending-the-status-bar.md).

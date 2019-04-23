@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077387"
 ---
 # <a name="image-editor"></a>Görüntü Düzenleyici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 #### <a name="to-add-an-image-to-your-project"></a>Projenize bir görüntü eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, görüntüye eklemek ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
+1. İçinde **Çözüm Gezgini**, görüntüye eklemek ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından bir görüntü için uygun dosya biçimini seçin. Gereksinimlerinize göre bir dosya biçimini seçme konusunda daha fazla bilgi için aşağıdaki bölüme bakın.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından bir görüntü için uygun dosya biçimini seçin. Gereksinimlerinize göre bir dosya biçimini seçme konusunda daha fazla bilgi için aşağıdaki bölüme bakın.  
   
-3.  Belirtin **adı** görüntü dosyasının ve **konumu** sonra istediğiniz yere oluşturulacak.  
+3. Belirtin **adı** görüntü dosyasının ve **konumu** sonra istediğiniz yere oluşturulacak.  
   
-4.  Seçin **Ekle** düğmesi.  
+4. Seçin **Ekle** düğmesi.  
   
 ### <a name="choosing-the-image-format"></a>Görüntü biçimini seçme  
  Nasıl görüntü kullanmayı planladığınız bağlı olarak, belirli dosya biçimlerine diğerlerine göre daha uygun olabilir. Örneğin, bazı biçimler gereken bir özelliği desteklemiyor olabilir — saydamlık veya belirli renk biçimi gibi — veya gerçekleştirmeyi planladığınız görüntü içerik türü için uygun sıkıştırma sağlamayabilir.  
@@ -146,7 +146,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |**Kalem**, **fırça**, **kabı**, **satırı**, **dikdörtgen**, **Yuvarlatılmış Dikdörtgen** , **Elipsin**, **metin**|Görüntü ile birlikte etkin renk seçimi içinde karıştırmak için **özellikleri** penceresinde genişletin **kanalları** özellik grubu ve küme **çizmek** onaykutusuna **Alfa** kanal ve bu normalde çizin.<br /><br /> Etkin bir renk seçimi kullanarak çizme ve alfa değeri görüntünün yerinde bırakmak için işareti kaldırın **çizmek** , onay kutusu **alfa** kanal ve bu normalde çizin.|  
 |**Dolgu**|Görüntü ile birlikte etkin renk seçimi karıştırmak için yalnızca doldurmak için alanı seçin.<br /><br /> Etkin renk seçimi kullanılacak — alfa kanalı değerini de dahil olmak üzere — görüntünün üzerine yazmak için tuşuna basın ve Shift tuşunu basılı tutun ve doldurmak için alanı seçin.|  
   
-###  <a name="ImageProperties"></a> Görüntü Özellikleri  
+### <a name="ImageProperties"></a> Görüntü Özellikleri  
  Kullanabileceğiniz **özellikleri** penceresi görüntüyü çeşitli özelliklerini belirtmek için. Örneğin, genişlik ve yükseklik özellikleriyle görüntüyü yeniden boyutlandırmak için ayarlayabilirsiniz.  
   
  Aşağıdaki tablo, görüntü özelliklerini açıklar.  
@@ -171,9 +171,9 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 #### <a name="resizing-images"></a>Görüntüleri yeniden boyutlandırma  
  Bir görüntüyü yeniden boyutlandırmak için iki yolu vardır. Her iki durumda da, görüntü yeniden örneklemek için BI doğrusal enterpolasyon Resim Düzenleyicisi'ni kullanır.  
   
--   İçinde **özellikleri** penceresi için yeni değerler belirtin **genişliği** ve **yükseklik** özellikleri.  
+- İçinde **özellikleri** penceresi için yeni değerler belirtin **genişliği** ve **yükseklik** özellikleri.  
   
--   Görüntünün tamamını seçin ve kenarlık işaretlerinin görüntüsünü yeniden boyutlandırma için kullanın.  
+- Görüntünün tamamını seçin ve kenarlık işaretlerinin görüntüsünü yeniden boyutlandırma için kullanın.  
   
 ### <a name="working-with-tools"></a>Araçlar ile çalışma  
   
@@ -207,7 +207,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 |Ctrl|||Kopyalar ve ardından seçili bölgeye içeriğini yeniden boyutlandırır.|  
 |Ctrl|Shift||Kopyalar ve seçili bölgeye içeriğini orantılı olarak yeniden boyutlandırır.|  
   
-####  <a name="ToolProperties"></a> Araç Özellikleri  
+#### <a name="ToolProperties"></a> Araç Özellikleri  
  Bir araç seçiliyken, kullanabileceğiniz **özellikleri** penceresinin görüntüsünü nasıl etkilediği hakkında ayrıntıları belirtin. Örneğin, kalınlığı ayarlayabilirsiniz **kalem** aracını veya rengini **fırça** aracı.  
   
  Hem ön plan rengini ve arka plan rengi ayarlayabilirsiniz. Her ikisi de, kullanıcı tanımlı saydamlık sağlamak için bir alfa kanalı destekler. Tüm Araçlar ayarlar uygulanır. Fare kullanıyorsanız, farenin sol düğmesi için ön plan rengini karşılık gelir ve sağ fare düğmesine karşılık gelen arka plan rengi.  

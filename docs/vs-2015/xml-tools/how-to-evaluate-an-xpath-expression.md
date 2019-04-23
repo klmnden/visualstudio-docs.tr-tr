@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0c79da47b83f8bf5b44af16ca291e2424011b80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075616"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Nasıl yapılır: Bir XPath İfadesini Değerlendirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,32 +23,32 @@ XPath ifadeleri ile değerlendirebilirsiniz **QuickWatch** iletişim kutusu. XPa
   
  Aşağıdaki listede, hangi işlevlerin bir XPath ifadesi değerlendirilirken desteklenen açıklanmaktadır:  
   
--   Yerleşik XPath işlevleri desteklenir.  
+- Yerleşik XPath işlevleri desteklenir.  
   
--   Yerleşik XSLT işlevleri desteklenmez.  
+- Yerleşik XSLT işlevleri desteklenmez.  
   
--   Kullanıcı tanımlı işlevleri desteklenmez.  
+- Kullanıcı tanımlı işlevleri desteklenmez.  
   
 > [!NOTE]
 >  Aşağıdaki yordam belowAvg.xsl ve books.xml dosyalarından kullanır [izlenecek yol: Bir XSLT stil sayfasında hata ayıklama](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) konu.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Bir XPath ifadesini değerlendirme  
   
-1.  Bir kesme noktasında Ekle `xsl:if` başlangıç etiketi.  
+1. Bir kesme noktasında Ekle `xsl:if` başlangıç etiketi.  
   
-2.  Tıklayın **hata ayıklama XSL** XML Düzenleyicisi araç çubuğu düğmesi.  
+2. Tıklayın **hata ayıklama XSL** XML Düzenleyicisi araç çubuğu düğmesi.  
   
      Hata ayıklayıcıyı başlatır ve üzerinde sonları `xsl:if` etiketi.  
   
-3.  Sağ tıklayıp **QuickWatch**.  
+3. Sağ tıklayıp **QuickWatch**.  
   
      **QuickWatch** iletişim kutusu görüntülenir.  
   
-4.  Girin `./price/text()` içinde **ifade** alanını **QuickWatch** iletişim kutusu ve tıklatın **yeniden değerlendir**.  
+4. Girin `./price/text()` içinde **ifade** alanını **QuickWatch** iletişim kutusu ve tıklatın **yeniden değerlendir**.  
   
      Geçerli kitap düğümün fiyatı görünür **değer** kutusu.  
   
-5.  XPath ifadesi değiştirme `./price/text() < $bookAverage` tıklatıp **yeniden değerlendir**.  
+5. XPath ifadesi değiştirme `./price/text() < $bookAverage` tıklatıp **yeniden değerlendir**.  
   
      **Değer** kutusu gösterir XPath ifadesi olarak değerlendirilen `true`.  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcc6e59f1c87cd0c3a82383ac97a80488ac1168d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074927"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Nasıl yapılır: Bir SharePoint çözüm paketini özelleştirme
   Paket Tasarımcısı oluşturmak ve bir paket özelleştirmek için kullanabileceğiniz (*.wsp*). Örneğin, SharePoint Proje öğeleri ve Özellik Ekle, Web sunucusu çözümü dağıtıldığında sıfırlama ve dağıtım sunucusu türü,'nı belirtin.
@@ -31,20 +31,20 @@ ms.locfileid: "56602682"
 
 #### <a name="to-open-the-package-designer"></a>Paket Tasarımcısı'nı açmak için
 
--   İçinde **Çözüm Gezgini**, çift **paket**, ya da seçin **Görünüm Tasarımcısı** kısayol menüsünde **paket**.
+- İçinde **Çözüm Gezgini**, çift **paket**, ya da seçin **Görünüm Tasarımcısı** kısayol menüsünde **paket**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Paketlenmiş manifestfFile görüntüleyin
  Paket Tasarımcısı, paket bildirim dosyası oluşturmak ve değiştirmek için kullanabilirsiniz. Ardından, bu dosya için XML kodu Visual Studio'da görüntüleyebilirsiniz.
 
 #### <a name="to-view-the-xml-source-file"></a>XML kaynak dosyası görüntülemek için
 
-1.  İçinde **paket Tasarımcısı**, seçin **bildirim**.
+1. İçinde **paket Tasarımcısı**, seçin **bildirim**.
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>Paket bildirim dosyası Çözüm Gezgini'ni kullanarak görüntülemek için
 
-1.  İçinde **Çözüm Gezgini**, seçin **tüm dosyaları göster**.
+1. İçinde **Çözüm Gezgini**, seçin **tüm dosyaları göster**.
 
-2.  Paket genişletin Package.package genişletin ve ardından açın *Package.Template.xml* dosya.
+2. Paket genişletin Package.package genişletin ve ardından açın *Package.Template.xml* dosya.
 
     > [!NOTE]
     >  Paket şablon bildirim XML dosyasını açtığınızda, dosyaları otomatik olarak doğrulanır ve Hata Listesi penceresinde görünen uyarıları gözardı edebilirsiniz.
@@ -54,13 +54,13 @@ ms.locfileid: "56602682"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>XML Düzenleyicisi'ni kullanarak bildirim şablonu değiştirmek için
 
-1.  İçinde **paket Tasarımcısı**, seçin **bildirim** sekmesinde, genişletin **düzenleme seçenekleri** düğümünü seçip **XML Düzenleyicisi'nde açık** bağlantı.
+1. İçinde **paket Tasarımcısı**, seçin **bildirim** sekmesinde, genişletin **düzenleme seçenekleri** düğümünü seçip **XML Düzenleyicisi'nde açık** bağlantı.
 
      XML değişiklikleri paket bildirim dosyası birleştirilir.
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>Bildirim şablonu bölmesini kullanarak bildirim şablonu değiştirmek için
 
-1.  İçinde **paket Tasarımcısı**, seçin **bildirim** sekmesinde, genişletme **düzenleme seçenekleri** düğüm ve bildirim şablonu bölmesinde görüntülenen XML değiştirin.
+1. İçinde **paket Tasarımcısı**, seçin **bildirim** sekmesinde, genişletme **düzenleme seçenekleri** düğüm ve bildirim şablonu bölmesinde görüntülenen XML değiştirin.
 
      XML değişiklikleri görünür **paketlenmiş Önizleme, bildirim** bölmesi.
 
@@ -72,9 +72,9 @@ ms.locfileid: "56602682"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Tasarımcı devre dışı bırakarak paket bildirim dosyasının üzerine yazmak için
 
-1.  İçinde **paket Tasarımcısı**, seçin **bildirim** sekmesi.
+1. İçinde **paket Tasarımcısı**, seçin **bildirim** sekmesi.
 
-2.  Genişletin **düzenleme seçenekleri** düğümünü seçin **üzerine yaz XML düzenleyicisinde oluşturulan XML'in ve düzenleme bildiriminin** bağlantısını ve ardından **Evet** düğmesi.
+2. Genişletin **düzenleme seçenekleri** düğümünü seçin **üzerine yaz XML düzenleyicisinde oluşturulan XML'in ve düzenleme bildiriminin** bağlantısını ve ardından **Evet** düğmesi.
 
      Şablonu geçerli paket bildirim dosyası ile güncelleştirilir.
 
@@ -83,7 +83,7 @@ ms.locfileid: "56602682"
 
 #### <a name="to-re-enable-the-designer"></a>Tasarımcı yeniden etkinleştirmek için
 
-1.  İçinde **paket Tasarımcısı**, seçin **atma bildirim düzenlemelerini ve yeniden Tasarımcısı'nı etkinleştirmeniz** bağlantısını ve ardından **Evet** düğmesi.
+1. İçinde **paket Tasarımcısı**, seçin **atma bildirim düzenlemelerini ve yeniden Tasarımcısı'nı etkinleştirmeniz** bağlantısını ve ardından **Evet** düğmesi.
 
      Orijinal metin şablonu yenilenir ve XML için tüm değişiklikler kaybedilir.
 

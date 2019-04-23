@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f4f410656e49b1a76e74898940cbd32314fc8b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075369"
 ---
 # <a name="how-to-clean-a-build"></a>Nasıl yapılır: Derlemeyi Temizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm a
   
 #### <a name="to-create-a-directory-for-output-items"></a>Çıktı öğeleri için bir dizin oluşturmak için  
   
-1.  Kullanım `Property` dizinin adını ve konumunu tanımlamak için. Örneğin, adında bir dizin oluşturma `BuiltApp` proje ve kaynak dosyaları içeren dizine:  
+1. Kullanım `Property` dizinin adını ve konumunu tanımlamak için. Örneğin, adında bir dizin oluşturma `BuiltApp` proje ve kaynak dosyaları içeren dizine:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Kullanım [MakeDir](../msbuild/makedir-task.md) dizini mevcut değilse dizini oluşturmak için görev. Örneğin:  
+2. Kullanım [MakeDir](../msbuild/makedir-task.md) dizini mevcut değilse dizini oluşturmak için görev. Örneğin:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -46,7 +46,7 @@ Derlemeyi temizleme, yalnızca proje ve bileşen dosyalarını bırakarak tüm a
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Bir dizin ve dizinde bulunan tüm dosyaları kaldırmak için  
   
--   Kullanım `RemoveDir` görev dizini kaldırılamıyor. Örneğin:  
+- Kullanım `RemoveDir` görev dizini kaldırılamıyor. Örneğin:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077634"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs kaynak kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ Bu konu, içeriği ve C# kaynak kodu dosyasında L2DBForm.xaml.cs açıklamasın
 ## <a name="data-members"></a>Veri üyeleri  
  İki özel veri üyeleri, bu sınıf L2DBForm.xaml içinde kullanılan pencere kaynaklara ilişkilendirmek için kullanılır.  
   
--   Ad alanı değişkeni `myBooks` değerine ayarlanır `"http://www.mybooks.com"`.  
+- Ad alanı değişkeni `myBooks` değerine ayarlanır `"http://www.mybooks.com"`.  
   
--   Üye `bookList` L2DBForm.xaml CDATA dizesinde aşağıdaki satırı ile oluşturucu içinde başlatılır:  
+- Üye `bookList` L2DBForm.xaml CDATA dizesinde aşağıdaki satırı ile oluşturucu içinde başlatılır:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ Bu konu, içeriği ve C# kaynak kodu dosyasında L2DBForm.xaml.cs açıklamasın
 ## <a name="onaddbook-event-handler"></a>OnAddBook olay işleyicisi  
  Bu yöntem, aşağıdaki üç deyimi içerir:  
   
--   İlk koşul deyimi, giriş doğrulaması için kullanılır.  
+- İlk koşul deyimi, giriş doğrulaması için kullanılır.  
   
--   İkinci deyim yeni bir oluşturur <xref:System.Xml.Linq.XElement> girilen kullanıcı dizesi değerleri **ekleme yeni kitabı** kullanıcı arabirimi (UI) bölümü.  
+- İkinci deyim yeni bir oluşturur <xref:System.Xml.Linq.XElement> girilen kullanıcı dizesi değerleri **ekleme yeni kitabı** kullanıcı arabirimi (UI) bölümü.  
   
--   Son deyim L2DBForm.xaml veri sağlayıcısının bu yeni kitabı öğe ekler. Sonuç olarak, dinamik veri bağlama kullanıcı arabirimini otomatik olarak bu yeni bir öğe ile güncelleştirilir; Ek kullanıcı tarafından sağlanan kod gereklidir.  
+- Son deyim L2DBForm.xaml veri sağlayıcısının bu yeni kitabı öğe ekler. Sonuç olarak, dinamik veri bağlama kullanıcı arabirimini otomatik olarak bu yeni bir öğe ile güncelleştirilir; Ek kullanıcı tarafından sağlanan kod gereklidir.  
   
 ## <a name="onremove-event-handler"></a>OnRemove olay işleyicisi  
  `OnRemove` İşleyicisidir daha karmaşık `OnAddBook` için iki nedenden dolayı işleyici. Ham XML korunan boşluk içerdiğinden, ilk olarak, satır başı eşleşen ayrıca rehberi girişiyle kaldırılması gerekir. İkinci bir kolaylık olarak olan silinmiş öğenin üzerinde olduğu, seçim listesinde önceki bir sıfırlanır.  

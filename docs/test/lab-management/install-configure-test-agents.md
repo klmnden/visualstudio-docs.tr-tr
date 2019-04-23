@@ -1,6 +1,6 @@
 ---
 title: Test aracılarını ve test denetleyicilerini yükleme
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072324"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Test aracılarını ve test denetleyicilerini yükleme
 
@@ -34,9 +34,9 @@ Visual Studio test aracısı veya test denetleyicisi yüklemek için sistem gere
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Test denetleyicisi ve test aracılarını yükleme
 
-Visual Studio için agents indirebileceğiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Ara *Visual Studio 2017 için Agents*, şunlardan birini seçin *aracı* veya *denetleyicisi*ve ardından *indirme*. Denetleyici ve test aracısını yüklemek için indirdiğiniz yürütebilen dosyayı çalıştırın.
+Visual Studio için agents indirebileceğiniz [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Ara *aracıları için Visual Studio 2019*, şunlardan birini seçin *aracı* veya *denetleyicisi*ve ardından *indirme*. Denetleyici ve test aracısını yüklemek için indirdiğiniz yürütebilen dosyayı çalıştırın.
 
-Visual Studio 2015 ve Visual Studio 2013 için agents indirebilirsiniz [eski indirmeler](https://visualstudio.microsoft.com/vs/older-downloads/) sayfası.
+Visual Studio 2017, Visual Studio 2015 ve Visual Studio 2013'ten aracılarını indirin [eski indirmeler](https://visualstudio.microsoft.com/vs/older-downloads/) sayfası.
 
 Bu yükleyici, sanal makinelerde kolay yükleme yapmak için ISO dosyalarını olarak kullanılabilir.
 

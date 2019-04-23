@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Kira Visual Studio Professional veya Visual Studio Enterprise-aylık veya yıllık olarak, ile uzun vadeli bir sözleşme yok.
 searchscope: VS Subscription
-ms.openlocfilehash: 253c81344b8a1536fb25dfd18216db8b3fd5b260
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074771"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional ve Visual Studio Enterprise bulut abonelikleri satın alın
 
@@ -64,12 +64,12 @@ Birden fazla aboneliği satın aldıysanız, devam [Visual Studio abonelikleri Y
 
 ## <a name="manage-subscriptions"></a>Bulut aboneliği satın aldığınız yenileme iptal et
 
-*   Satın alınan abonelik sayısını değiştirmek için:
+* Satın alınan abonelik sayısını değiştirmek için:
 
 > [!div class="mx-imgBorder"]
 > ![Abonelikleri değiştirin](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Bu Abonelikleri iptal etmek için sıfır (0) abonelik sayısını azaltın. Bunlar ve sonraki faturalandırma döneminden (aylık bulut abonelikleri için bir sonraki ayın ilk günü; yıllık bulut abonelikleri için daha sonra 12 ay) başlangıcında yenileme olmaz.
+* Bu Abonelikleri iptal etmek için sıfır (0) abonelik sayısını azaltın. Bunlar ve sonraki faturalandırma döneminden (aylık bulut abonelikleri için bir sonraki ayın ilk günü; yıllık bulut abonelikleri için daha sonra 12 ay) başlangıcında yenileme olmaz.
 
 ## <a name="buy-cloud-subscriptions-now"></a>Bulut abonelikleri hemen satın alın
 

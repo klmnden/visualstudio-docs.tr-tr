@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4817d916fdd29d36f53c6bd3fbca42abb2f7cb15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073079"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Tür Koleksiyonu Düzenleyicisi İletişim Kutusu
 **Editor Typu Kolekce** iletişim kutusu için bilinen türleri eklemek için kullanılan **Gönder** ve **alma** etkinlikler. Bu iletişim için genel tür bağımsız değişkeni eklemek için de kullanılır **InvokeMethod** etkinlik. İçin kullanıldığında **Gönder** ve **alma** bilinen türleri eklenecek etkinlikleri **Editor Typu Kolekce** iletişim kutusu türü eklemeleri benzersiz olmasını gerektirir. Yinelenen tür eklenir ve değişiklik tıklayarak kararlıdır **Tamam**, bir hata iletisi döndürülür. İçin kullanıldığında **InvokeMethod** genel tür bağımsız değişkenleri, eklemek için etkinlik **Editor Typu Kolekce** yinelenen türlerinin eklenmesi iletişim kutusu sağlar.  
@@ -34,16 +34,16 @@ ms.locfileid: "54795545"
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Editor Typu Kolekce yedeklemek için Gönder getirin ve etkinlikleri almak için  
   
-1.  Seçin **Gönder** veya **alma** Tasarım görünümünde etkinlik.  
+1. Seçin **Gönder** veya **alma** Tasarım görünümünde etkinlik.  
   
-2.  Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.  
+2. Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.  
   
-3.  İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **KnownTypes** özelliği.  
+3. İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **KnownTypes** özelliği.  
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>InvokeMethod etkinliği için tür Koleksiyonu Düzenleyicisi'kurmak getirmek için  
   
-1.  Seçin **InvokeMethod** Tasarım görünümünde etkinlik.  
+1. Seçin **InvokeMethod** Tasarım görünümünde etkinlik.  
   
-2.  Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.  
+2. Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.  
   
-3.  İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **GenericTypeArguments** özelliği.
+3. İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **GenericTypeArguments** özelliği.

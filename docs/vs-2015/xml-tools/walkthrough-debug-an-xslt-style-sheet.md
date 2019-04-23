@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085109"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>İzlenecek yol: Bir XSLT stil sayfasında hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Bu kılavuzda açıklanan adımları XSLT hata ayıklayıcının kullanımını 
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Bu adım adım izleme için hazırlanmak amacıyla  
   
-1.  Herhangi bir açık çözümü kapatın.  
+1. Herhangi bir açık çözümü kapatın.  
   
-2.  İki örnek dosyaları yerel bilgisayarınıza kopyalayın.  
+2. İki örnek dosyaları yerel bilgisayarınıza kopyalayın.  
   
 ## <a name="start-debugging"></a>Hata Ayıklamayı Başlat  
   
@@ -59,19 +59,19 @@ Bu kılavuzda açıklanan adımları XSLT hata ayıklayıcının kullanımını 
   
 #### <a name="to-use-the-watch-window"></a>İzleme penceresinde kullanmak için  
   
-1.  Gelen **hata ayıklama** menüsünde **Windows**, işaret **Watch**, tıklatıp **Watch 1**.  
+1. Gelen **hata ayıklama** menüsünde **Windows**, işaret **Watch**, tıklatıp **Watch 1**.  
   
      Bu Watch 1 penceresi görünür hale getirir.  
   
-2.  Tür `$bookAverage` içinde **adı** alanına girin ve ENTER tuşuna basın.  
+2. Tür `$bookAverage` içinde **adı** alanına girin ve ENTER tuşuna basın.  
   
      Değerini `$bookAverage` değişken penceresinde görüntülenir.  
   
-3.  Tür `self::node()` içinde **adı** alanına girin ve ENTER tuşuna basın.  
+3. Tür `self::node()` içinde **adı** alanına girin ve ENTER tuşuna basın.  
   
      `self::node()` Geçerli bağlam düğümünün için değerlendirilen bir XPath ifadesidir. Değerini `self::node()` XPath ifadesidir ilk kitap düğümü. Bu dönüşüm ilerledikçe değiştirir.  
   
-4.  Genişletin `self::node()` düğümünü ve ardından `price` düğümü.  
+4. Genişletin `self::node()` düğümünü ve ardından `price` düğümü.  
   
      Bu kitap Fiyat değeri görmenizi sağlar ve bunu kolayca karşılaştırabilirsiniz `$bookAverage` değeri. Kitap fiyat Ortalamanın altında olduğundan `xsl:if` koşul başarılı olması gerekir.  
   
@@ -80,19 +80,19 @@ Bu kılavuzda açıklanan adımları XSLT hata ayıklayıcının kullanımını 
   
 #### <a name="to-step-through-the-code"></a>Kodunuz içinde adım adım için  
   
-1.  Tuşuna **F5** devam etmek için.  
+1. Tuşuna **F5** devam etmek için.  
   
      İlk kitap düğümün memnun çünkü `xsl:if` koşulu, kitap düğümün XSL çıkış penceresine eklenir. Hata ayıklayıcı üzerinde yeniden konumlandırılmış kadar yürütülmeye devam `xsl:if` stil sayfası öğesinde. Hata ayıklayıcı artık books.xml dosyasını ikinci kitap düğümde konumlandırılır.  
   
      Watch1 penceresinde `self::node()` için ikinci kitap düğümün değerini değiştirir. Fiyat öğenin değerini inceleyerek fiyat ortalamanın üstünde, bu nedenle olduğunu anlayabilirsiniz `xsl:if` koşul başarısız olmalıdır.  
   
-2.  Tuşuna **F5** devam etmek için.  
+2. Tuşuna **F5** devam etmek için.  
   
      İkinci kitap düğümün karşılamıyorsa çünkü `xsl:if` koşulu, kitap düğümün XSL çıkış penceresinde eklenmez. Hata ayıklayıcı üzerinde yeniden konumlandırılmış kadar yürütülmeye devam `xsl:if` stil sayfası öğesinde. Hata ayıklayıcısı artık üçüncü konumlandırıldı `book` books.xml dosyasını düğümü.  
   
      Watch1 penceresinde `self::node()` üçüncü kitap düğümün değerini değiştirir. Değerini inceleme tarafından `price` öğesi, fiyat Ortalamanın altında bu nedenle olduğunu belirleyebilir `xsl:if` koşul başarılı olması gerekir.  
   
-3.  Tuşuna **F5** devam etmek için.  
+3. Tuşuna **F5** devam etmek için.  
   
      Çünkü `xsl:if` koşulu karşılandı üçüncü kitap XSL çıkış penceresine eklenir. XML belgesi içindeki tüm kitaplar işlenen ve hata ayıklayıcıyı durdurur.  
   

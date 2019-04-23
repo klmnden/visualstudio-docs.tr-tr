@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085226"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Nasıl yapılır: O/R Tasarımcısı Tarafından Oluşturulan Kodu Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Tarafından oluşturulan kodu [!INCLUDE[vs_ordesigner_short](../includes/vs-orde
   
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Kısmi bir sınıf oluşturun ve bir varlık sınıfı için kod ekleyin  
   
-1.  Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Çift **.dbml** dosyası **Çözüm Gezgini**/**veritabanı Gezgini**.)  
+1. Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Çift **.dbml** dosyası **Çözüm Gezgini**/**veritabanı Gezgini**.)  
   
-2.  İçinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], doğrulama ekleyin ve ardından istediğiniz sınıfı sağ **kodu görüntüle**.  
+2. İçinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], doğrulama ekleyin ve ardından istediğiniz sınıfı sağ **kodu görüntüle**.  
   
      Seçilen varlık sınıfı için bir parçalı sınıf Kod Düzenleyicisi açılır.  
   
-3.  Kısmi sınıf bildiriminde varlık sınıfı için kodunuzu ekleyin.  
+3. Kısmi sınıf bildiriminde varlık sınıfı için kodunuzu ekleyin.  
   
 ## <a name="adding-code-to-a-datacontext"></a>Bir DataContext için kod ekleme  
   
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Kısmi bir sınıf oluşturun ve bir DataContext için kod ekleyin  
   
-1.  Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Çift **.dbml** dosyası **Çözüm Gezgini**/**veritabanı Gezgini**.)  
+1. Yeni bir LINQ to SQL sınıfları dosyası oluşturun veya açın (**.dbml** dosya) içinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Çift **.dbml** dosyası **Çözüm Gezgini**/**veritabanı Gezgini**.)  
   
-2.  İçinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], Tasarımcı üzerinde boş bir alana sağ tıklayın ve ardından **kodu görüntüle**.  
+2. İçinde [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], Tasarımcı üzerinde boş bir alana sağ tıklayın ve ardından **kodu görüntüle**.  
   
      Kod Düzenleyicisi ile kısmi bir sınıf için DataContext açılır.  
   
-3.  Kısmi sınıf bildiriminde DataContext için kodunuzu ekleyin.  
+3. Kısmi sınıf bildiriminde DataContext için kodunuzu ekleyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075031"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Nasıl yapılır: Modeli Güncelleştirmek için İşlemleri Kullanma
 İşlem depoya yapılan değişiklikler bir grup olarak kabul edilir emin olun. Gruplandırılmış değişiklikler kaydedilmiş veya tek bir birim olarak geri alındı.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Bir işlemi geri alınıyor
  Store kalır veya işlem önce durumuna döner emin olmak için bu taktikleri birini kullanabilirsiniz:
 
-1.  İşlem kapsamı içinde yakalanmamış bir özel durum yükseltir.
+1. İşlem kapsamı içinde yakalanmamış bir özel durum yükseltir.
 
-2.  Açıkça işlem geri alma:
+2. Açıkça işlem geri alma:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

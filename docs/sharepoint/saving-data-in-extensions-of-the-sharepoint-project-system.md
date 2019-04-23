@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082769"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint Proje sisteminin uzantılarında veri kaydetme
   SharePoint Proje sistemi genişlettiğinizde, bir SharePoint projesine kapatıldıktan sonra devam eden bir dize verileri kaydedebilirsiniz. Veriler genellikle belirli bir proje öğesi veya proje ile ilişkilidir.
@@ -35,9 +35,9 @@ ms.locfileid: "56599681"
 ## <a name="save-data-that-is-associated-with-a-project"></a>Bir proje ile ilişkili olan verileri kaydedin
  SharePoint projelerine ekleme bir özelliğin değerini gibi proje düzeyinde verileri varsa, verileri proje dosyasına kaydedebilirsiniz ( *.csproj* dosya veya *.vbproj* dosyası) veya proje kullanıcı seçenekleri dosya ( *. csproj.user* dosya veya *. vbproj.user* dosyası). Verileri kaydetmek için seçtiğiniz dosya, kullanılacak verilerini nasıl istediğinize bağlıdır:
 
--   Verileri, verilerin SharePoint projesini tüm geliştiriciler için kullanılabilir olmasını istiyorsanız, proje dosyasına kaydedin. Bu dosyadaki verileri Projeyi kullanıma diğer geliştiriciler için kullanılabilir, bu nedenle bu dosyayı her zaman kaynak denetim veritabanları için iade edildi.
+- Verileri, verilerin SharePoint projesini tüm geliştiriciler için kullanılabilir olmasını istiyorsanız, proje dosyasına kaydedin. Bu dosyadaki verileri Projeyi kullanıma diğer geliştiriciler için kullanılabilir, bu nedenle bu dosyayı her zaman kaynak denetim veritabanları için iade edildi.
 
--   Veriler SharePoint Proje Visual Studio'da Aç olan geçerli Geliştirici kullanılabilir olmasını istiyorsanız, veri proje kullanıcı seçeneği dosyasına kaydedin. Bu dosyadaki verileri Projeyi kullanıma diğer geliştiriciler için kullanılabilir olmadığından bu dosya genellikle kaynak denetim veritabanları için iade edildiğinde değil.
+- Veriler SharePoint Proje Visual Studio'da Aç olan geçerli Geliştirici kullanılabilir olmasını istiyorsanız, veri proje kullanıcı seçeneği dosyasına kaydedin. Bu dosyadaki verileri Projeyi kullanıma diğer geliştiriciler için kullanılabilir olmadığından bu dosya genellikle kaynak denetim veritabanları için iade edildiğinde değil.
 
 ### <a name="save-data-to-the-project-file"></a>Proje dosyasına veri kaydetme
  Proje dosyasına veri kaydetmek için dönüştürme bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> nesnesini bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> nesnesi ve ardından <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> yöntemi. Aşağıdaki kod örneği, bir proje özelliği değeri proje dosyasına kaydetmek için bu yöntemi kullanmak nasıl gösterir. Bu örnekte bağlamı daha büyük bir örnek görmek için bkz [nasıl yapılır: SharePoint projelerine özellik ekleme](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).

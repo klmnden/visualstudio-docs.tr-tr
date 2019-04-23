@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df8a099470661545666149e32cf02f4481487e54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d348675ca8670aa27035d31657d06bc2c4e0a829
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075356"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>İzlenecek yol: Windows Formunda hata ayıklama
 Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows formu, standart bir Windows uygulaması oluşturur. Bu adım adım işlemleri Visual Basic, C# ya da C++ kullanarak tamamlayabilirsiniz.
@@ -37,36 +37,36 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
 
 ### <a name="to-prepare-for-this-walkthrough"></a>Bu adım adım izleme için hazırlanmak amacıyla
 
--   Açık olan bir çözümünüz varsa, kapatın. (Üzerinde **dosya** menüsünde **çözümü Kapat**.)
+- Açık olan bir çözümünüz varsa, kapatın. (Üzerinde **dosya** menüsünde **çözümü Kapat**.)
 
 ## <a name="create-a-new-windows-form"></a>Yeni bir Windows Formu Oluşturun
  Ardından, yeni bir Windows Formu oluşturacaksınız.
 
 #### <a name="to-create-the-windows-form-for-this-walkthrough"></a>Bu anlatım için Windows formunu oluşturmak amacıyla
 
-1.  Üzerinde **dosya** menüsünde seçin **yeni** tıklatıp **proje**.
+1. Üzerinde **dosya** menüsünde seçin **yeni** tıklatıp **proje**.
 
      **Yeni proje** iletişim kutusu görüntülenir.
 
-2.  Proje Türleri bölmesinde **Visual Basic**, **Visual C#**, veya **Visual C++** düğümünü, ardından
+2. Proje Türleri bölmesinde **Visual Basic**, **Visual C#**, veya **Visual C++** düğümünü, ardından
 
-    1.  Visual Basic veya Visual C# için seçin **Windows Masaüstü** > **Windows Form uygulaması**.
+    1. Visual Basic veya Visual C# için seçin **Windows Masaüstü** > **Windows Form uygulaması**.
 
-    2.  Visual C++ için seçin **Windows masaüstü uygulaması**.
+    2. Visual C++ için seçin **Windows masaüstü uygulaması**.
 
-3.  İçinde **adı** kutusunda, projeyi (örneğin, Walkthrough_SimpleDebug) benzersiz bir ad verin.
+3. İçinde **adı** kutusunda, projeyi (örneğin, Walkthrough_SimpleDebug) benzersiz bir ad verin.
 
-4.  **Tamam**'ı tıklatın.
+4. **Tamam**'ı tıklatın.
 
      Visual Studio, yeni bir proje oluşturur ve Windows Forms Tasarımcısı'nda yeni bir form görüntüler. Daha fazla bilgi için [Windows Form Tasarımcısı](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
 
-5.  Üzerinde **görünümü** menüsünde **araç kutusu**.
+5. Üzerinde **görünümü** menüsünde **araç kutusu**.
 
      Araç Kutusu açılır. Daha fazla bilgi için [araç kutusu](../ide/reference/toolbox.md).
 
-6.  Araç kutusunda tıklayarak **düğmesi** denetlemek ve denetimi Form Tasarım yüzeyine sürükleyin. Düğmeyi form üzerine bırakın.
+6. Araç kutusunda tıklayarak **düğmesi** denetlemek ve denetimi Form Tasarım yüzeyine sürükleyin. Düğmeyi form üzerine bırakın.
 
-7.  Araç kutusunda tıklayarak **TextBox** denetlemek ve denetimi Form Tasarım yüzeyine sürükleyin. DROP **TextBox** form üzerinde.
+7. Araç kutusunda tıklayarak **TextBox** denetlemek ve denetimi Form Tasarım yüzeyine sürükleyin. DROP **TextBox** form üzerinde.
 
 8. Form tasarım yüzeyinde, düğmeyi çift tıklatın.
 
@@ -95,7 +95,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
 
 #### <a name="to-debug-the-windows-form-created-for-this-walkthrough"></a>Bu adım adım izleme için oluşturulmuş Windows Formu hata ayıklaması için
 
-1.  Kaynak penceresinde, eklediğiniz metin ile aynı satırda sol kenar boşluğunu tıklatın:
+1. Kaynak penceresinde, eklediğiniz metin ile aynı satırda sol kenar boşluğunu tıklatın:
 
      ```vb
     textBox1.Text = "Button was clicked!"
@@ -114,31 +114,31 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
     > [!NOTE]
     >  Ayrıca herhangi bir satır sağ kod üzerine **kesme noktası**ve ardından **kesme noktası Ekle** söz konusu satıra bir kesme noktası eklemek için.
 
-2.  ON **hata ayıklama** menüsünde seçin **Başlat**.
+2. ON **hata ayıklama** menüsünde seçin **Başlat**.
 
      Windows Formu çalışmaya başlar.
 
-3.  Windows Formu'nda, eklediğiniz düğmeyi tıklatın.
+3. Windows Formu'nda, eklediğiniz düğmeyi tıklatın.
 
      Visual Studio'da bu, sizi kod satırında kesme noktası eklediğiniz satıra götürür. Bu satır, sarı ile vurgulanmış olmalıdır. Şimdi, uygulamanızda değişkenleri görüntüleyebilir ve yürütülmesini denetleyebilirsiniz. Uygulamanız artık yürütmeyi durdurmuştur ve sizden bir eylem bekliyordur.
 
-4.  Üzerinde **hata ayıklama** menüsünde seçin **Windows**, ardından **Watch**, tıklatıp **Watch1**.
+4. Üzerinde **hata ayıklama** menüsünde seçin **Windows**, ardından **Watch**, tıklatıp **Watch1**.
 
-5.  İçinde **Watch1** penceresinde, boş bir satıra tıklayın. İçinde **adı** sütununa, `textBox1.Text` (Visual Basic veya Visual C# kullanıyorsanız) veya `textBox1->Text` (C++ kullanıyorsanız), ardından ENTER tuşuna basın.
+5. İçinde **Watch1** penceresinde, boş bir satıra tıklayın. İçinde **adı** sütununa, `textBox1.Text` (Visual Basic veya Visual C# kullanıyorsanız) veya `textBox1->Text` (C++ kullanıyorsanız), ardından ENTER tuşuna basın.
 
      **Watch1** penceresi, tırnak işareti içine alınmış bu değişkenin değerini gösterir:
 
     `""`
 
-6.  Üzerinde **hata ayıklama** menüsünde seçin **içine adımla**.
+6. Üzerinde **hata ayıklama** menüsünde seçin **içine adımla**.
 
      Değişiklikleri textBox1.Text değeri **Watch1** penceresine:
 
     `Button was clicked!`
 
-7.  Üzerinde **hata ayıklama** menüsünde seçin **devam** programınızın hatalarını ayıklamayı devam etmek için.
+7. Üzerinde **hata ayıklama** menüsünde seçin **devam** programınızın hatalarını ayıklamayı devam etmek için.
 
-8.  Windows Formunda, düğmeyi yeniden tıklatın.
+8. Windows Formunda, düğmeyi yeniden tıklatın.
 
      Visual Studio, yürütmeyi yeniden keser.
 
@@ -153,7 +153,7 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
 
 #### <a name="to-attach-to-the-windows-form-application-for-debugging"></a>Hata ayıklama için Windows Form Uygulamasına eklemek için
 
-1.  Yukarıda oluşturduğunuz projede, sol kenar boşluğunu tıklatarak, eklediğiniz satırda bir kez daha bir kesme noktası ayarlayın:
+1. Yukarıda oluşturduğunuz projede, sol kenar boşluğunu tıklatarak, eklediğiniz satırda bir kez daha bir kesme noktası ayarlayın:
 
      ```vb
     textBox1.Text = "Button was clicked!"
@@ -166,19 +166,19 @@ Bir Windows formülü en yaygın yönetilen uygulamalardan biridir. Bir Windows 
     ```cpp
     textBox1->Text = "Button was clicked!";
 
-2.  On the **Debug** menu, select **Start Without Debugging**.
+2. On the **Debug** menu, select **Start Without Debugging**.
 
      The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
 
-3.  On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
 
      The **Attach to Process** dialog box appears.
 
-4.  In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
 
-5.  Click the **Attach** button.
+5. Click the **Attach** button.
 
-6.  In your Windows Form, click the one and only button.
+6. In your Windows Form, click the one and only button.
 
      The debugger breaks execution of the Windows Form at the breakpoint.
 

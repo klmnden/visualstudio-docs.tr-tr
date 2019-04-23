@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073370"
 ---
 # <a name="using-the-toolbox"></a>Araç Kutusunu Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ Araç kutusu denetimleri ve diğer öğeleri projenize eklemek için kullanabili
   
  Araç kutusu sekmeyi öğeleri yeniden düzenlemek veya bağlam menüsünde aşağıdaki komutları kullanarak özel sekme ve öğeleri ekleyin:  
   
--   **Öğeyi yeniden adlandır** -seçili öğeyi yeniden adlandırır.  
+- **Öğeyi yeniden adlandır** -seçili öğeyi yeniden adlandırır.  
   
--   **Tümünü Göster** -tüm olası denetimleri (geçerli Tasarımcı için geçerli olanları değil) gösterir.  
+- **Tümünü Göster** -tüm olası denetimleri (geçerli Tasarımcı için geçerli olanları değil) gösterir.  
   
--   **Liste görünümü** -denetimleri dikey listesini gösterir. Denetimleri yatay olarak işaretlenmemişse, görünür.  
+- **Liste görünümü** -denetimleri dikey listesini gösterir. Denetimleri yatay olarak işaretlenmemişse, görünür.  
   
--   **Seç öğeleri** -açılır **araç kutusu öğelerini Seç** iletişim kutusunda görünen öğeler belirtebilirsiniz böylece **araç kutusu**. Göstermek veya seçerek ya da onay kutusunu temizleyerek bir öğeyi gizler.  
+- **Seç öğeleri** -açılır **araç kutusu öğelerini Seç** iletişim kutusunda görünen öğeler belirtebilirsiniz böylece **araç kutusu**. Göstermek veya seçerek ya da onay kutusunu temizleyerek bir öğeyi gizler.  
   
--   **Öğeleri alfabetik olarak Sırala** -öğeleri ada göre sıralar.  
+- **Öğeleri alfabetik olarak Sırala** -öğeleri ada göre sıralar.  
   
--   **Araç çubuğunu sıfırlama** - varsayılan araç kutusunu ayarlarını geri yükler ve öğeleri.  
+- **Araç çubuğunu sıfırlama** - varsayılan araç kutusunu ayarlarını geri yükler ve öğeleri.  
   
--   **Sekme Ekle** -yeni bir araç kutusu sekmesi ekler.  
+- **Sekme Ekle** -yeni bir araç kutusu sekmesi ekler.  
   
--   **Yukarı Taşı** -seçili öğeyi yukarı taşır.  
+- **Yukarı Taşı** -seçili öğeyi yukarı taşır.  
   
--   **Aşağı Taşı** -seçili öğeyi aşağı taşır.  
+- **Aşağı Taşı** -seçili öğeyi aşağı taşır.  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Oluşturma ve özel araç kutusu denetimleri dağıtma  
  Visual Basic veya Visual C# içinde bir özel araç kutusu denetimi oluşturun ve temel alan bir proje şablonu ile başlayabilirsiniz [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) veya [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Denetiminiz için kodunuza dağıtmak veya kullanarak Web'de Yayımlama [araç kutusu denetimleri yükleyici](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

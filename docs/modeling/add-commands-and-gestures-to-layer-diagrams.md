@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077881"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Bağımlılık diyagramlarına komut ve hareket ekleme
 
@@ -108,7 +108,7 @@ Komutların, katman doğrulayıcılarının ve diğer uzantıların bulunduğu b
 
 8. VSIX ana örneğine Visual Studio'nun veya başka bir bilgisayara yüklemek için bulma **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Dosya Gezgini'nde VSIX dosyasına çift tıklayın.
 
-##  <a name="command"></a> Bir menü komutunu tanımlama
+## <a name="command"></a> Bir menü komutunu tanımlama
 
 Varolan bir hareket ya da komut projesine daha fazla menü komutu tanımları ekleyebilirsiniz. Her komut aşağıdaki özelliklere sahip bir sınıf tarafından tanımlanır:
 
@@ -124,11 +124,11 @@ Varolan bir hareket ya da komut projesine daha fazla menü komutu tanımları ek
 
 - Uygulayan yöntemler `ICommandExtension` aşağıdaki gibidir:
 
-  -   `string Text {get;}` -Menüde görüntülenen etiketi.
+  - `string Text {get;}` -Menüde görüntülenen etiketi.
 
-  -   `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagrama ve komutun kullanıcının geçerli seçimi için görünür ve etkin olup olmayacağını belirler çağrılır.
+  - `void QueryStatus(IMenuCommand command)` -Kullanıcı diyagrama ve komutun kullanıcının geçerli seçimi için görünür ve etkin olup olmayacağını belirler çağrılır.
 
-  -   `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.
+  - `void Execute(IMenuCommand command)` -Kullanıcı komutu seçtiğinde çağrılır.
 
 - Geçerli seçimi belirlemek için alabilirsiniz `IDiagramContext`:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Bir hareket işleyicisi tanımlama
+## <a name="gesture"></a> Bir hareket işleyicisi tanımlama
 
 Bir hareket işleyicisi, kullanıcı öğeleri bağımlılık diyagram üzerine sürüklediğinde ve diyagramdaki kullanıcı herhangi bir yere tıkladığında yanıt verir.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Hareket işleyicilerle ilgili aşağıdaki noktalara dikkat edin:
 
--   Üyeleri `IGestureExtension` aşağıdaki gibidir:
+- Üyeleri `IGestureExtension` aşağıdaki gibidir:
 
      **OnDoubleClick** -kullanıcı diyagrama herhangi bir yeri çift tıkladığında çağrılır.
 
@@ -246,7 +246,7 @@ Hareket işleyicilerle ilgili aşağıdaki noktalara dikkat edin:
 
      **OnDragDrop** -kullanıcı diyagrama bir öğe bıraktığında çağrılır.
 
--   Her yöntem için ilk bağımsız değişken bir `IShape`, öğesinden, katman öğesini elde edebilirsiniz. Örneğin:
+- Her yöntem için ilk bağımsız değişken bir `IShape`, öğesinden, katman öğesini elde edebilirsiniz. Örneğin:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Hareket işleyicilerle ilgili aşağıdaki noktalara dikkat edin:
     }
     ```
 
--   Bazı sürüklenen öğe türlerine ilişkin işleyiciler zaten tanımlanmış. Örneğin, kullanıcı öğeleri Çözüm Gezgini'nden bağımlılık diyagram üzerine sürükleyebilirsiniz. Bu öğe türleri için sürükleme işleyicisi tanımlayamazsınız. Bu gibi durumlarda, `DragDrop` yöntemleri çağrılmaz.
+- Bazı sürüklenen öğe türlerine ilişkin işleyiciler zaten tanımlanmış. Örneğin, kullanıcı öğeleri Çözüm Gezgini'nden bağımlılık diyagram üzerine sürükleyebilirsiniz. Bu öğe türleri için sürükleme işleyicisi tanımlayamazsınız. Bu gibi durumlarda, `DragDrop` yöntemleri çağrılmaz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

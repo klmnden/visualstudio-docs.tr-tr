@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0920a624f726aa4fd6f44d0181be75a45e0b7b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070647"
 ---
 # <a name="step-6-name-your-button-controls"></a>6. Adım: Düğme denetimlerinizi adlandırma
 Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu eklediğinizde IDE otomatik olarak bunu adlı **pictureBox1**. Yalnızca bir tane <xref:System.Windows.Forms.CheckBox>, olarak adlandırılmış **checkBox1**. Bir süre sonra biraz kod yazacaksınız ve bu kod CheckBox'a ve PictureBox'a başvuracaktır. Olmadığı için bu denetimlerin her birinden yalnızca biri gördüğünüzde ne anlama geldiğini bilirsiniz **pictureBox1** veya **checkBox1** kodunuzda.
@@ -27,7 +27,7 @@ Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu ekle
 
 ## <a name="to-name-your-button-controls"></a>Düğme denetimlerinizi adlandırmak için
 
-1.  Form üzerinde seçin **Kapat** düğmesi. (Tüm düğmeler seçiliyse hala varsa, seçin **Esc** seçimini iptal etmek için tuşa.) Kaydırın **özellikleri** penceresini görene kadar **(ad)** özelliği. ( **(Ad)** özelliği, Özellikler alfabetik olduğunda en olan.) Adla değiştirin **closeButton**, aşağıdaki resimde gösterildiği gibi.
+1. Form üzerinde seçin **Kapat** düğmesi. (Tüm düğmeler seçiliyse hala varsa, seçin **Esc** seçimini iptal etmek için tuşa.) Kaydırın **özellikleri** penceresini görene kadar **(ad)** özelliği. ( **(Ad)** özelliği, Özellikler alfabetik olduğunda en olan.) Adla değiştirin **closeButton**, aşağıdaki resimde gösterildiği gibi.
 
      ![CloseButton adıyla Özellikler penceresi](../ide/media/express_setnameproperty.png)
 **özellikleri** penceresiyle **closeButton** adı
@@ -35,14 +35,14 @@ Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu ekle
     > [!NOTE]
     >  İçin düğmenizin adını değiştirmeyi denerseniz **closeButton**, Kapat ve düğme sözcükleri arasına bir boşluk koyun, IDE bir hata iletisi görüntüler: "Özellik değeri geçerli değil." Denetim adlarında boşluklara (ve diğer birkaç karaktere) izin verilmez.
 
-2.  Diğer üç düğmeyi yeniden adlandır **Arkaplandüğmesi**, **Temizledüğmesi**, ve **showButton**. Denetim Seçici açılan listesini seçerek adları doğrulayabilirsiniz **özellikleri** penceresi. Yeni düğme adları görüntülenir.
+2. Diğer üç düğmeyi yeniden adlandır **Arkaplandüğmesi**, **Temizledüğmesi**, ve **showButton**. Denetim Seçici açılan listesini seçerek adları doğrulayabilirsiniz **özellikleri** penceresi. Yeni düğme adları görüntülenir.
 
-3.  Çift **resim Göster** formundaki düğmesi. Alternatif, **resim Göster** formda düğmesine ve ardından **Enter** anahtarı. Bunu yaptığınızda, IDE adlı ana penceresinde bir ek sekme açar **Form1.cs** (**Form1.vb** Visual Basic kullanılıyorsa). Bu sekme aşağıdaki resimde gösterildiği gibi formun arkasındaki kod dosyasını gösterir.
+3. Çift **resim Göster** formundaki düğmesi. Alternatif, **resim Göster** formda düğmesine ve ardından **Enter** anahtarı. Bunu yaptığınızda, IDE adlı ana penceresinde bir ek sekme açar **Form1.cs** (**Form1.vb** Visual Basic kullanılıyorsa). Bu sekme aşağıdaki resimde gösterildiği gibi formun arkasındaki kod dosyasını gösterir.
 
      ![Visual C Form1.cs sekmesi&#35; kod](../ide/media/express_showbuttoncode.png)
 **Form1.cs** Visual ile sekmesindeki C# kod
 
-4.  Bu kod parçası üzerinde odaklanın. (Seçin **VB** aşağıda Visual Basic kullanıyorsanız kod Visual Basic sürümünü görüntülemek için sekmesinde.)
+4. Bu kod parçası üzerinde odaklanın. (Seçin **VB** aşağıda Visual Basic kullanıyorsanız kod Visual Basic sürümünü görüntülemek için sekmesinde.)
 
      [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
      [!code-csharp[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]
@@ -52,9 +52,9 @@ Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu ekle
     > [!NOTE]
     >  Bu öğreticide, otomatik olarak oluşturulan Visual Basic kodu parantez arasındaki her şey kaldırılarak basitleştirilmiştir `()`. Bu her gerçekleştiğinde, aynı kodu kaldırabilirsiniz. Programınız her iki şekilde çalışır. Öğreticiler kalanı için otomatik olarak oluşturulan herhangi bir kod mümkün olduğunda basitleştirilecektir.
 
-5.  Seçin **Windows Form Tasarımcısı** sekmesine (**Form1.cs [Design]** görselde C#, **Form1.vb [Design]** Visual Basic'te) ve ardından içinkoddosyasınıaçın **Resmi Temizle** formun koduna bunun için bir yöntem oluşturmak için düğme. Bu, kalan iki düğme için yineleyin. Her defasında IDE formun kod dosyasına yeni bir yöntem ekler.
+5. Seçin **Windows Form Tasarımcısı** sekmesine (**Form1.cs [Design]** görselde C#, **Form1.vb [Design]** Visual Basic'te) ve ardından içinkoddosyasınıaçın **Resmi Temizle** formun koduna bunun için bir yöntem oluşturmak için düğme. Bu, kalan iki düğme için yineleyin. Her defasında IDE formun kod dosyasına yeni bir yöntem ekler.
 
-6.  Birden fazla yöntem eklemek için kod dosyasını açın. **onay kutusu** denetim **Windows Form Tasarımcısı** IDE ekleme yapmak için bir `checkBox1_CheckedChanged()` yöntemi. Bu yöntem, her kullanıcı seçer veya temizler onay kutusunu çağrılır.
+6. Birden fazla yöntem eklemek için kod dosyasını açın. **onay kutusu** denetim **Windows Form Tasarımcısı** IDE ekleme yapmak için bir `checkBox1_CheckedChanged()` yöntemi. Bu yöntem, her kullanıcı seçer veya temizler onay kutusunu çağrılır.
 
     > [!NOTE]
     >  Bir programda çalışırken, Kod Düzenleyicisi arasında genellikle taşıyın ve **Windows Form Tasarımcısı**. IDE, projenizde gezinmeyi kolaylaştırır. Kullanım **Çözüm Gezgini** açmak için **Windows Form Tasarımcısı** çift tıklayarak *Form1.cs* görselde C# veya *Form1.vb* içinde Visual Basic veya menü çubuğunda, **görünümü** > **Tasarımcısı**.
@@ -74,6 +74,6 @@ Yalnızca bir tane <xref:System.Windows.Forms.PictureBox> formunuzdaki. Onu ekle
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [adım 7: Formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md).
+- Sonraki öğretici adımına gitmek için bkz: [adım 7: Formunuza iletişim kutusu bileşenleri ekleme](../ide/step-7-add-dialog-components-to-your-form.md).
 
--   Önceki öğretici adımına dönmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).
+- Önceki öğretici adımına dönmek için bkz: [5. adım: Formunuza denetimler ekleme](../ide/step-5-add-controls-to-your-form.md).

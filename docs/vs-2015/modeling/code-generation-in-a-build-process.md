@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077608"
 ---
 # <a name="code-generation-in-a-build-process"></a>Derleme Sürecinde Kod Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Kullandığınız oluşturma motoruna bağlı olarak, yapı görevleri farklı i
 
 Başka bir deyişle, MSBuild içinde metin şablonu oluşturduğunuzda, proje dosyası adları gibi şeylere aynı şekilde erişemezsiniz. Ancak, [ortam bilgilerini yapı parametrelerini kullanarak metin şablonlarına ve yönerge işlemcilerine geçirmek](#parameters).
 
-##  <a name="buildserver"></a> Makinelerinizi yapılandırma
+## <a name="buildserver"></a> Makinelerinizi yapılandırma
 
 Geliştirme bilgisayarınızda yapı görevlerini etkinleştirmek için yükleme [Visual Studio için modelleme SDK](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Varsa [yapı sunucunuzu](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) üzerinde Visual Studio yüklü değil, bir bilgisayarda çalıştırır geliştirme makinenizden yapı bilgisayarına aşağıdaki dosyaları kopyalayın. En son sürüm numaraları yerine ' *'.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Projeyi dosyasını düzenlemek için
 
@@ -90,7 +90,7 @@ Bu satırın ardından, Metin Şablon Oluşturma almayı ekleyin:
 
 Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebileceğiniz bazı özellikler vardır:
 
--   Dönüştürme görevini her yapı başlangıcında çalıştır:
+- Dönüştürme görevini her yapı başlangıcında çalıştır:
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebil
     </PropertyGroup>
     ```
 
--   Salt okunur dosyaların üzerine yaz (ör. kullanıma alınmamış oldukları için): 
+- Salt okunur dosyaların üzerine yaz (ör. kullanıma alınmamış oldukları için): 
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ Dönüştürme görevini kontrol etmek için proje dosyanızın içine ekleyebil
     </PropertyGroup>
     ```
 
--   Her şablonu her zaman dönüştür:
+- Her şablonu her zaman dönüştür:
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Şablonlara yapı bağlamı verilerini geçirme
+## <a name="parameters"></a> Şablonlara yapı bağlamı verilerini geçirme
 
 Proje dosyasında parametre değerlerini ayarlayabilirsiniz. Örneğin, derleme özellikleri geçirebilirsiniz ve [ortam değişkenlerini](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ Bir metin şablonunda ayarlanan `hostspecific` şablon yönergesinde. Kullanım 
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Proje özelliklerini kullanma derlemede ve ekleme yönergelerinde
+## <a name="msbuild"></a> Proje özelliklerini kullanma derlemede ve ekleme yönergelerinde
 
 $(SolutionDir) gibi Visual Studio makroları MSBuild içinde çalışmaz. Bunun yerine, proje özelliklerini kullanabilirsiniz.
 
@@ -271,13 +271,13 @@ Artık derlemede ve ekleme yönergelerinde proje özelliklerini kullanabilirsini
 
 **Diğer seçenekler yok metin şablonlarını dönüştürmeyle ilgili nelerdir?**
 
--   [TextTransform yardımcı programı](../modeling/generating-files-with-the-texttransform-utility.md) komut dosyalarında kullanılabilir. Çoğu durumda, MSBuild kullanmak daha kolay olur.
+- [TextTransform yardımcı programı](../modeling/generating-files-with-the-texttransform-utility.md) komut dosyalarında kullanılabilir. Çoğu durumda, MSBuild kullanmak daha kolay olur.
 
--   [Bir VS Uzantısında Metin Dönüştürmeyi Çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Bir VS Uzantısında Metin Dönüştürmeyi Çağırma](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Tasarım zamanı metin şablonları](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio tarafından dönüştürülür.
+- [Tasarım zamanı metin şablonları](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio tarafından dönüştürülür.
 
--   [Çalıştırma zamanı metin şablonları](../modeling/run-time-text-generation-with-t4-text-templates.md) uygulamanızdaki çalışma zamanında dönüştürülür.
+- [Çalıştırma zamanı metin şablonları](../modeling/run-time-text-generation-with-t4-text-templates.md) uygulamanızdaki çalışma zamanında dönüştürülür.
 
 ## <a name="read-more"></a>Daha fazla bilgi edinin
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087775"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL Kodunu Anlama
 
@@ -45,15 +45,15 @@ Tuşuna **F5** ve bu çözüm şablonu ile aşina değilseniz denemeler yapın. 
 
  Çözümü yeniden derlediğinizde, yaptığınız düzenlemeleri kaybolacağı için oluşturulan kodun doğrudan düzenlemenizi öneririz. Bunun yerine, DSL'nizi özelleştirmek için:
 
--   DSL tanımındaki birçok parametreleri ayarlayın.
+- DSL tanımındaki birçok parametreleri ayarlayın.
 
--   Kısmi sınıflar ayrı kod dosyalarında tanımlanan veya devralınan tarafından üretilen sınıfları geçersiz kılma yöntemleri yazın. Bazı durumlarda ayarlamak zorunda **Generates Double Derived** oluşturulan bir yöntemi geçersiz kılmak için DSL tanımındaki bir sınıfın seçeneği.
+- Kısmi sınıflar ayrı kod dosyalarında tanımlanan veya devralınan tarafından üretilen sınıfları geçersiz kılma yöntemleri yazın. Bazı durumlarda ayarlamak zorunda **Generates Double Derived** oluşturulan bir yöntemi geçersiz kılmak için DSL tanımındaki bir sınıfın seçeneği.
 
--   DSL tanımındaki 'kancaları' için kendi kodunuzu sağlamak oluşturulan kodu neden seçeneklerini ayarlayın.
+- DSL tanımındaki 'kancaları' için kendi kodunuzu sağlamak oluşturulan kodu neden seçeneklerini ayarlayın.
 
      Örneğin ayarlarsanız, **sahip özel Oluşturucu** alan sınıfının seçeneğini ve ardından Çözümü derleyin, hata iletisi görürsünüz. Bu hata iletilerinden biri çift tıkladığınızda, özel kodunuz sağlamanız açıklayan oluşturulan kod açıklamaları görürsünüz.
 
--   Uygulamanıza özgü kodu oluşturmak için kendi metin şablonlarınızı yazın. Kullanım birçok projelerinde ortak olan şablonları parçalarını paylaşmak için dosyalar içerebilir ve kendi dosya yapısı ile başlatılır projeler kurmak için Visual Studio Proje şablonları oluşturabilirsiniz.
+- Uygulamanıza özgü kodu oluşturmak için kendi metin şablonlarınızı yazın. Kullanım birçok projelerinde ortak olan şablonları parçalarını paylaşmak için dosyalar içerebilir ve kendi dosya yapısı ile başlatılır projeler kurmak için Visual Studio Proje şablonları oluşturabilirsiniz.
 
 ## <a name="generated-files-in-dsl"></a>Dsl içinde oluşturulan dosyalar
  Aşağıdaki oluşturulan dosyalar görünür **Dsl** proje.

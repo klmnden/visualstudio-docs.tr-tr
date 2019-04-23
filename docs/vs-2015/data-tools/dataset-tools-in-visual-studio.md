@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085383"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio'da veri kümesi araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ ms.locfileid: "59666513"
 ## <a name="dataset-workflow"></a>Veri kümesi iş akışı
  Visual Studio, çok sayıda veri kümeleri ile çalışmayı kolaylaştırmak için araçlar sağlar. Temel uçtan uca iş akışı şöyledir:
 
--   Kullanım **veri kaynağı** bir veya daha fazla veri kaynağından yeni bir veri kümesi oluşturmak için pencere. Kullanım **veri kümesi Tasarımcısı** veri kümesini yapılandırma ve özelliklerini ayarlayın. Örneğin, dahil etmek için veri kaynağından tablolar ve her bir tablodaki hangi sütunların belirtmeniz gerekir. Veri kümesi gerektiren bellek miktarını korumak dikkatle seçin. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Kullanım **veri kaynağı** bir veya daha fazla veri kaynağından yeni bir veri kümesi oluşturmak için pencere. Kullanım **veri kümesi Tasarımcısı** veri kümesini yapılandırma ve özelliklerini ayarlayın. Örneğin, dahil etmek için veri kaynağından tablolar ve her bir tablodaki hangi sütunların belirtmeniz gerekir. Veri kümesi gerektiren bellek miktarını korumak dikkatle seçin. Daha fazla bilgi için [oluşturun ve veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
--   Tablolar arasında ilişki, yabancı anahtarlar doğru şekilde işlenir böylece belirtin. Daha fazla bilgi için [TableAdapter kullanarak veri kümelerini dolgu](../data-tools/fill-datasets-by-using-tableadapters.md).
+- Tablolar arasında ilişki, yabancı anahtarlar doğru şekilde işlenir böylece belirtin. Daha fazla bilgi için [TableAdapter kullanarak veri kümelerini dolgu](../data-tools/fill-datasets-by-using-tableadapters.md).
 
--   Kullanım **TableAdapter Yapılandırma Sihirbazı'nı** sorgu ya da veri kümesini doldurur saklı yordam belirlemenizi ve uygulamak için hangi veritabanı işlemleri (güncelleştirme, silme vb.). Daha fazla bilgi için şu konulara bakın:
+- Kullanım **TableAdapter Yapılandırma Sihirbazı'nı** sorgu ya da veri kümesini doldurur saklı yordam belirlemenizi ve uygulamak için hangi veritabanı işlemleri (güncelleştirme, silme vb.). Daha fazla bilgi için şu konulara bakın:
 
-    -   [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [TableAdapter'ları kullanarak veri kümelerini doldurma](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [Veri kümelerindeki verileri düzenleme](../data-tools/edit-data-in-datasets.md)
+    - [Veri kümelerindeki verileri düzenleme](../data-tools/edit-data-in-datasets.md)
 
-    -   [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)
+    - [Veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)
 
-    -   [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
+    - [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)
 
--   Sorgu ve veri kümesinde arayın. Daha fazla bilgi için [sorgu veri kümeleri](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] sağlar [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) verileri üzerinde bir <xref:System.Data.DataSet> nesne. Daha fazla bilgi için [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Sorgu ve veri kümesinde arayın. Daha fazla bilgi için [sorgu veri kümeleri](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] sağlar [LINQ (dil ile tümleşik sorgu)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) verileri üzerinde bir <xref:System.Data.DataSet> nesne. Daha fazla bilgi için [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
--   Kullanım **veri kaynakları** penceresi kullanıcı arabirimi denetimleri, veri kümesi veya tek tek sütunlarını bağlamak için ve hangi sütunların kullanıcı tarafından düzenlenebilir olduğunu belirtmek için. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Kullanım **veri kaynakları** penceresi kullanıcı arabirimi denetimleri, veri kümesi veya tek tek sütunlarını bağlamak için ve hangi sütunların kullanıcı tarafından düzenlenebilir olduğunu belirtmek için. Daha fazla bilgi için [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="datasets-and-n-tier-architecture"></a>Veri kümeleri ve N katmanlı mimari
  N katmanlı uygulamalarda veri kümeleri hakkında daha fazla bilgi için bkz: [n katmanlı uygulamalarda veri kümeleriyle çalışmak](../data-tools/work-with-datasets-in-n-tier-applications.md).

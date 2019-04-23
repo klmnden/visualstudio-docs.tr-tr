@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087852"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Nasıl yapılır: Dağıtılmış yük testi için bir test ayarı oluşturun
 
@@ -25,11 +25,11 @@ Yapılandırma *test ayarları* bu testleri test aracıları kullanarak birden �
 
 Visual Studio için test ayarları bir dosyada depolanır. Test ayarları, her rolle ilgili aşağıdaki bilgileri tanımlayın:
 
--   Test altındaki uygulamanız için gerekli olan roller kümesi
+- Test altındaki uygulamanız için gerekli olan roller kümesi
 
--   Testlerinizi çalıştırmak için kullanılacak rolü
+- Testlerinizi çalıştırmak için kullanılacak rolü
 
--   Her rol için tanılama veri bağdaştırıcıları
+- Her rol için tanılama veri bağdaştırıcıları
 
 Testlerinizi çalıştırdığınızda, test çalışması için gerekli bağlı olarak etkin test ayarlarını kullanmak için test ayarlarını seçin. Test ayarları dosyası çözümünüzün bir parçası olarak depolanır. Dosya adı uzantısına sahip *.testsettings*.
 
@@ -43,33 +43,33 @@ Oluşturun ve Visual Studio'dan çalıştırmayı planladığınız yük testler
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Dağıtılmış yük testi için test ayarları eklemek için
 
-1.  İçinde **Çözüm Gezgini**, sağ **çözüm öğeleri**, işaret **Ekle**ve ardından **yeni öğe**.
+1. İçinde **Çözüm Gezgini**, sağ **çözüm öğeleri**, işaret **Ekle**ve ardından **yeni öğe**.
 
      **Yeni Öğe Ekle** iletişim kutusu görüntülenir.
 
-2.  İçinde **yüklü şablonlar** bölmesinde seçin **Test ayarları**.
+2. İçinde **yüklü şablonlar** bölmesinde seçin **Test ayarları**.
 
-3.  (İsteğe bağlı) İçinde **adı** kutusunda, test ayarları dosyasının adıyla değiştirin.
+3. (İsteğe bağlı) İçinde **adı** kutusunda, test ayarları dosyasının adıyla değiştirin.
 
-4.  Seçin **ekleme**.
+4. Seçin **ekleme**.
 
      Yeni test ayarları dosyası görünür **Çözüm Gezgini**altında **çözüm öğeleri** klasör.
 
     > [!NOTE]
     > Visual Studio Enterprise görüntülediği test ayarları listesi test ayarları dosyalarının listesinden elde edilir **çözüm öğeleri** klasör. Örneğin, test ayarları dosyası içinde **çözüm öğeleri** klasörü kullandığınızda görüntülenir **Etkin Test ayarlarını seçin** seçeneğini **Test** menüsü. Bu test ayarları dosyasını çözüm hiyerarşiniz içinde başka bir konuma taşırsanız, artık Visual Studio tümleşik geliştirme ortamında bir test ayarı olarak kullanılabilmesi için anlamına gelir.
 
-5.  **Test ayarları** iletişim kutusu görüntülenir. **Genel** sayfası seçili.
+5. **Test ayarları** iletişim kutusu görüntülenir. **Genel** sayfası seçili.
 
      Şimdi, düzenleme ve test ayarları değerlerini kaydedin.
 
     > [!NOTE]
     > Oluşturduğunuz her test ayarları için bir seçenek olarak listelendiğini **Etkin Test ayarlarını seçin** ve **Test Ayarlarını Düzenle** seçeneklerinden **Test** menüsü.
 
-6.  Altında **adı**, test ayarları adını yazın.
+6. Altında **adı**, test ayarları adını yazın.
 
-7.  (İsteğe bağlı) Altında **açıklama**, diğer takım üyelerinin ne işe yaradıklarını bilmesi için test ayarında bir açıklama yazın.
+7. (İsteğe bağlı) Altında **açıklama**, diğer takım üyelerinin ne işe yaradıklarını bilmesi için test ayarında bir açıklama yazın.
 
-8.  (İsteğe bağlı) Test çalışmalarınız için varsayılan adlandırma şemasını seçmek için **varsayılan adlandırma düzeni**. Kendi adlandırma düzeninizi tanımlamak için seçin **kullanıcı tanımlı Düzen** ve sonra istediğiniz metni yazın **önek metni**. Test çalışması ismine tarih ve saat damgasını eklemek için seçin **ekleme tarih ve saat damgası**.
+8. (İsteğe bağlı) Test çalışmalarınız için varsayılan adlandırma şemasını seçmek için **varsayılan adlandırma düzeni**. Kendi adlandırma düzeninizi tanımlamak için seçin **kullanıcı tanımlı Düzen** ve sonra istediğiniz metni yazın **önek metni**. Test çalışması ismine tarih ve saat damgasını eklemek için seçin **ekleme tarih ve saat damgası**.
 
 9. Seçin **rolleri**.
 
@@ -154,27 +154,27 @@ Oluşturun ve Visual Studio'dan çalıştırmayı planladığınız yük testler
 
      **Kurulum ve temizleme betikleri** sayfası görüntülenir.
 
-    1.  İçindeki betik dosyasının konumunu yazın **Kurulum betiği** veya üç noktayı seçin (**...** ) Kurulum betiğini bulmak için.
+    1. İçindeki betik dosyasının konumunu yazın **Kurulum betiği** veya üç noktayı seçin (**...** ) Kurulum betiğini bulmak için.
 
-    2.  İçindeki betik dosyasının konumunu yazın **temizleme betiği** veya üç noktayı seçin (**...** ) temizleme betiğini bulmak için.
+    2. İçindeki betik dosyasının konumunu yazın **temizleme betiği** veya üç noktayı seçin (**...** ) temizleme betiğini bulmak için.
 
 24. Testlerinizi farklı bir ana bilgisayar kullanarak çalıştırmak için tercih **konakları**.
 
-    1.  İçinde **konak türü**, doğrulayın **varsayılan** seçilir.
+    1. İçinde **konak türü**, doğrulayın **varsayılan** seçilir.
 
         > [!NOTE]
         > **ASP.NET** içinde **konak türü** yük testlerinde desteklenmez.
 
-    2.  Kullanım **32 bit veya 64 bit test çalıştırması** işlem 32 bit veya 64-bit işlem çalıştırmak için yük testinizde web başarım ve birim testleri isteyip istemediğinizi seçin için açılır.
+    2. Kullanım **32 bit veya 64 bit test çalıştırması** işlem 32 bit veya 64-bit işlem çalıştırmak için yük testinizde web başarım ve birim testleri isteyip istemediğinizi seçin için açılır.
 
         > [!NOTE]
         > Maksimum esneklik için size web performansınızı derlemek ve kullanarak yük **herhangi bir CPU** yapılandırma. Daha sonra hem 32-bit hem de 64 bit aracıların çalıştırabilirsiniz. Derleme web performansı ve yük testi projelerini kullanarak **64-bit** yapılandırma herhangi bir avantaj.
 
 25. (İsteğe bağlı) Her test çalışması ve bireysel testler için süreyi sınırlamak üzere seçin **Test zaman aşımları.**
 
-    1.  Bir zaman sınırı aşıldığında bir test durdurmayı seçin **toplam süre aşıldıysa test iptal** ve bu sınır için bir değer yazın.
+    1. Bir zaman sınırı aşıldığında bir test durdurmayı seçin **toplam süre aşıldıysa test iptal** ve bu sınır için bir değer yazın.
 
-    2.  Bir zaman sınırı aşıldığında belirli bir testi başarısız kılmak için seçin **tek bir testin yürütme zamanı aşılırsa, testi başarısız olarak işaretle**ve bu sınır için bir değer girin.
+    2. Bir zaman sınırı aşıldığında belirli bir testi başarısız kılmak için seçin **tek bir testin yürütme zamanı aşılırsa, testi başarısız olarak işaretle**ve bu sınır için bir değer girin.
 
 26. Skip **birim testi**. Yük testleri bu ayarları kullanmayın.
 

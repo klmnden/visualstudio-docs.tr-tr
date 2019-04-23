@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070696"
 ---
 # <a name="item-element-msbuild"></a>Öğe unsuru (MSBuild)
 Kullanıcı tanımlı bir öğe ve meta verilerini içerir. Kullanılan her öğe bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] alt öğesi olarak proje belirtilen bir `ItemGroup` öğesi.
@@ -107,6 +107,7 @@ Aşağıdaki kod örneği, iki öğe türünde bildirmeniz gösterilmektedir `CS
     </CSFile>
 </ItemGroup>
 ```
+
 Aşağıdaki kod örneği kullanma işlemini gösterir `Update` adlı bir dosyaya meta verilerde değiştirmek için özniteliği *somefile.cs* , bir glob dahil. (Yalnızca Visual Studio 2017 veya sonraki bir sürümünde .NET Core projeleri için kullanılabilir.)
 
 ```xml

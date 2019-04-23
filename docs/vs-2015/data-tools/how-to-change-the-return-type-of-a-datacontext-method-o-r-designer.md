@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be57c5d8a298f37f9cffc7cc4b363651efbc9c2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077478"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Nasıl yapılır: Bir DataContext yöntemi (O/R Tasarımcısı) dönüş türünü değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Dönüş türü bir <xref:System.Data.Linq.DataContext> yöntemi (bir saklı yor
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Bir DataContext yöntemin dönüş türü bir varlık sınıfı için otomatik olarak oluşturulan türü değiştirmek için  
   
-1.  Seçin <xref:System.Data.Linq.DataContext> yöntemleri bölmesinde yöntemi.  
+1. Seçin <xref:System.Data.Linq.DataContext> yöntemleri bölmesinde yöntemi.  
   
-2.  Seçin **dönüş türü** içinde **özellikleri** penceresi ve ardından kullanılabilir varlık sınıfı içinde **dönüş türü** listesi. İstenen varlık sınıfı listesinde değilse, ekleyin veya oluşturun [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] listesine eklenecek.  
+2. Seçin **dönüş türü** içinde **özellikleri** penceresi ve ardından kullanılabilir varlık sınıfı içinde **dönüş türü** listesi. İstenen varlık sınıfı listesinde değilse, ekleyin veya oluşturun [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] listesine eklenecek.  
   
-3.  .Dbml dosyayı kaydedin.  
+3. .Dbml dosyayı kaydedin.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Bir DataContext yöntemin dönüş türü bir varlık sınıfından otomatik olarak üretilen türe geri değiştirmek için  
   
-1.  Seçin <xref:System.Data.Linq.DataContext> yöntemleri bölmesinde yöntemi ve silin.  
+1. Seçin <xref:System.Data.Linq.DataContext> yöntemleri bölmesinde yöntemi ve silin.  
   
-2.  Veritabanı nesneyi sürükleyin **Sunucu Gezgini**/**veritabanı Gezgini** O/R Tasarımcısı'nın boş bir alana sürükleyin.  
+2. Veritabanı nesneyi sürükleyin **Sunucu Gezgini**/**veritabanı Gezgini** O/R Tasarımcısı'nın boş bir alana sürükleyin.  
   
-3.  .Dbml dosyayı kaydedin.  
+3. .Dbml dosyayı kaydedin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to SQL araçlarını Visual Studio'da](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

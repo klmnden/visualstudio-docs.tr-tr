@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075304"
 ---
 # <a name="create-r-markdown-documents"></a>R Markdown belgeleri oluşturma
 
@@ -33,6 +33,7 @@ R araçları için Visual Studio (RTVS) R Markdown öğe şablonu sağlar, Düze
     install.packages("rmarkdown")
 
     ```
+
 1. Yeni bir R Markdown dosyası kullanarak oluşturmak **dosya** > **yeni** > **dosya** menü komutu ve seçerek **R**  >  **R Markdown** listeden. Bir proje bağlamında, Çözüm Gezgini'nde projeye sağ tıklayıp **ekleyin R Markdown** (veya **Ekle** > **yeni öğe** seçerek**R Markdown** listeden).
 
 1. Yeni dosyasının varsayılan içeriklerini aşağıdaki gibidir:

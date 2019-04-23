@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fc915136f64000da94132c0d10e153a206ed1ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072537"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio tümleştirmesi (MSBuild)
 Visual Studio ana [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] yönetilen projeleri yüklemek ve derlemek için. Çünkü [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projesi, neredeyse her her proje için sorumlu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] biçimi başarıyla kullanılabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]projeyi farklı bir araç ile yazılmış olsa ve özelleştirilmiş bir yapı işlemi olsa bile.
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>Tasarım zamanı IntelliSense
  IntelliSense desteği almak için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir derleme bir çıktı derlemesi üretmeden önce aşağıdaki koşulların karşılanması gerekir:
 
--   Adlı bir hedef olmalıdır `Compile`.
+- Adlı bir hedef olmalıdır `Compile`.
 
--   Her iki `Compile` hedefi ya da bağımlılıklarından biri çağırmalıdır derleyici görevinin projesi için gibi `Csc` veya `Vbc`.
+- Her iki `Compile` hedefi ya da bağımlılıklarından biri çağırmalıdır derleyici görevinin projesi için gibi `Csc` veya `Vbc`.
 
--   Her iki `Compile` hedefi ya da bağımlılıklarından biri derleyicinin IntelliSense, özellikle tüm başvurular için gereken tüm parametreleri almasını sağlamalıdır.
+- Her iki `Compile` hedefi ya da bağımlılıklarından biri derleyicinin IntelliSense, özellikle tüm başvurular için gereken tüm parametreleri almasını sağlamalıdır.
 
--   Listelenen koşulların [işlem içi derleyiciler](#in-process-compilers) bölüm sağlanmalıdır.
+- Listelenen koşulların [işlem içi derleyiciler](#in-process-compilers) bölüm sağlanmalıdır.
 
 ## <a name="build-solutions"></a>Çözümleri oluşturun
  İçinde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], çözüm dosyası ve proje derleme sıralaması tarafından denetlenen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] kendisi. Bir çözüm derlerken *msbuild.exe* komut satırında [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] çözüm dosyasını ayrıştırır ve proje derlemelerini sıralar. Her iki durumda da projeler ayrı olarak bağımlılık sırasında oluşturulur ve projeden projeye başvurular geçirilmez. Buna karşılık, ne zaman tek tek projeler derlendikten ile *msbuild.exe*, projeden projeye başvurular geçiş.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Tasarım zamanı hedef yürütme
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bir projeyi yüklediğinde belirli adları olan hedefleri yürütmeyi dener. Bu hedefler arasında `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, ve `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Bu hedefleri derleyicinin IntelliSense sağlamak için başlatılabilir, hata ayıklayıcının başlatılabilmesi ve Çözüm Gezgini'nde gösterilen başvuruların çözümlenebilmesi için çalıştırır. Bu hedefler mevcut değilse projeyi yüklemek ve tasarım zamanı deneyimi ancak doğru şekilde derlenmesi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tam işlevsel olmayacaktır.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Visual Studio'da proje dosyalarını düzenleme
+## <a name="edit-project-files-in-visual-studio"></a>Visual Studio'da proje dosyalarını düzenleme
  Düzenlenecek bir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doğrudan projesi, proje dosyası Visual Studio XML düzenleyicisinde açabilirsiniz.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Visual Studio'da bir proje dosyasının yüklemesini kaldırmak ve düzenlemek için
 
-1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **projeyi**.
+1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **projeyi**.
 
      Proje işaretlenmiş **(kullanılamıyor)**.
 
-2.  İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >**.
+2. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **Düzenle \<proje dosyası >**.
 
      Proje dosyası Visual Studio XML Düzenleyicisi'nde açılır.
 
-3.  Düzenleyin, kaydedin ve ardından Proje dosyasını kapatın.
+3. Düzenleyin, kaydedin ve ardından Proje dosyasını kapatın.
 
-4.  İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **projeyi**.
+4. İçinde **Çözüm Gezgini**, kullanılamayan projenin kısayol menüsünü açın ve ardından **projeyi**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense ve doğrulama
  Proje dosyalarını düzenlemek için XML düzenleyicisini kullanırken, IntelliSense ve doğrulama tarafından yönlendirilir [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] şema dosyaları. Bunlar bulunabilir şema önbelleğinde yüklü  *\<Visual Studio yükleme dizini > \Xml\Schemas\1033\MSBuild*.

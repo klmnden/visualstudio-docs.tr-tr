@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079843"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>.NET Türüne Gözat ve Seç İletişim Kutusu
 İçinde **özellikleri** pencere, iletişim kutuları ve tasarımcıları gibi değişken tasarımcısını seçtiğinizde, **vyhledat Typy...** veri türleri bir listede olan **göz atın ve bir .NET türü seçin** iletişim kutusu (kısaltılmış biçimdeki "türü tarayıcı" olarak adlandırılır). Bu iletişim kutusunda, derlemeleri ve projeleri bir ağaç görünümünden bir türü seçebilirsiniz.  
   
  Bu iletişim kutusu, kullanıcı senaryoları, aşağıdakiler dahil olmak üzere bir dizi içinde kullanılır:  
   
--   Bir değişken veya bağımsız değişken türü ayarlarken.  
+- Bir değişken veya bağımsız değişken türü ayarlarken.  
   
--   Genel etkinlik için bir türü seçerken.  
+- Genel etkinlik için bir türü seçerken.  
   
--   Bir catch eklenirken <xref:System.Activities.Statements.TryCatch> etkinlik.  
+- Bir catch eklenirken <xref:System.Activities.Statements.TryCatch> etkinlik.  
   
 > [!NOTE]
 >  Tür tarayıcı olmayan çok boyutlu dizi türleri, ancak Visual Basic Basit dizi türlerini görüntüleyebilirsiniz. Bkz: [basit diziler](http://go.microsoft.com/fwlink/?LinkId=195226) ve [çok boyutlu diziler](http://go.microsoft.com/fwlink/?LinkId=195227) Ayrıntılar için.  
@@ -37,19 +37,19 @@ ms.locfileid: "54796755"
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Bir değer veya başvuru türü tür tarayıcısından seçin  
   
-1.  İçinde **tür adı** kutusunda, kullanmak istediğiniz türün adını girin.  
+1. İçinde **tür adı** kutusunda, kullanmak istediğiniz türün adını girin.  
   
-2.  Aşağıdakilerden birini yapın:  
+2. Aşağıdakilerden birini yapın:  
   
-    -   Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, seçmek için türü'ne çift tıklayın.  
+    - Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, seçmek için türü'ne çift tıklayın.  
   
-    -   Yeterli karakterler girdiğinizde, bu **tür adı** türünü seçmek için ENTER tuşuna basın ve kullanmak istediğiniz türü benzersiz olarak tanımlanabilmesi için kutusu  
+    - Yeterli karakterler girdiğinizde, bu **tür adı** türünü seçmek için ENTER tuşuna basın ve kullanmak istediğiniz türü benzersiz olarak tanımlanabilmesi için kutusu  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Genel tür tür tarayıcısından seçmek için  
   
-1.  İçinde **tür adı** kutusunda, kullanmak istediğiniz tür adını yazın.  
+1. İçinde **tür adı** kutusunda, kullanmak istediğiniz tür adını yazın.  
   
-2.  Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, açılır kutuları neden seçmek için türü görünür tıklatın.  
+2. Kullanmak istediğiniz türün adını ağaçta göründüğünde **tür adı** kutusunda, açılır kutuları neden seçmek için türü görünür tıklatın.  
   
      Açılan kutu genel kapatın ve ardından kullanmak istediğiniz türü seçin **Tamam**.  
   
@@ -63,9 +63,9 @@ ms.locfileid: "54796755"
   
  Örneğin:  
   
-1.  Yazarak **işlemi** eşleşen <xref:System.OperationCanceledException> ama <xref:System.InvalidOperationException>. Eşleştirilecek <xref:System.InvalidOperationException>, System.I ya da geçersiz yazmaya başlayın.  
+1. Yazarak **işlemi** eşleşen <xref:System.OperationCanceledException> ama <xref:System.InvalidOperationException>. Eşleştirilecek <xref:System.InvalidOperationException>, System.I ya da geçersiz yazmaya başlayın.  
   
-2.  Yazarak **genel** eşleşen <xref:System.GenericUriParser> ancak türlerini değil <xref:System.Collections.Generic> ad alanı. Türler için aranacak <xref:System.Collections.Generic> ad alanı, ad alanının türü tam adı.  
+2. Yazarak **genel** eşleşen <xref:System.GenericUriParser> ancak türlerini değil <xref:System.Collections.Generic> ad alanı. Türler için aranacak <xref:System.Collections.Generic> ad alanı, ad alanının türü tam adı.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Tür Tarayıcı iletişim kutusunu kullanarak bir hizmet sözleşmesini seçme  
  Bir hizmet sözleşme türünü seçerken, türü tarayıcı türleri yalnızca gösterir. <xref:System.ServiceModel.ServiceContractAttribute> özniteliği.  

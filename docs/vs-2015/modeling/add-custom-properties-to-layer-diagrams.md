@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075213"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Katman diyagramlarına özel özellikler ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ Katman diyagramları için uzantı kodu yazdığınızda, herhangi bir öğeyle 
 > [!IMPORTANT]
 >  Özellikleri görünür yapmak için katman özellikleri görünür olmasını istediğiniz her bilgisayarda aşağıdaki değişikliği yapmanız gerekir.  
 > 
-> 1. Kullanarak Not Defteri'ni çalıştırma **yönetici olarak çalıştır**. açın `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
->    2.  İçinde `Content` öğesini ekleyin:  
+>  1. Kullanarak Not Defteri'ni çalıştırma **yönetici olarak çalıştır**. açın `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  
+>  2. İçinde `Content` öğesini ekleyin:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  Altında **Visual Studio Araçları** Visual Studio uygulama başlangıç menüsünde, açık bir bölümünü **Geliştirici komut istemi**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. Altında **Visual Studio Araçları** Visual Studio uygulama başlangıç menüsünde, açık bir bölümünü **Geliştirici komut istemi**.  
 > 
->    Girin:  
+>     Girin:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Visual Studio'yu yeniden başlatın.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Visual Studio'yu yeniden başlatın.  
   
  **Kodunuzun bir VSIX projesinde olduğundan emin olun**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  Özellikleri tanımlayabilirsiniz <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> veya içeren, ondan türetilen sınıflardan biri:  
   
--   `ILayerModel` -model  
+- `ILayerModel` -model  
   
--   `ILayer` -her katman  
+- `ILayer` -her katman  
   
--   `ILayerDependencyLink` -Katmanlar arasında bağlantılar  
+- `ILayerDependencyLink` -Katmanlar arasında bağlantılar  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod tipik bir özel özellik tanımlayıcısıdır. Katman modelinde bir Boolean özelliği tanımlar (`ILayerModel`) olanak tanıyan kullanıcının özel doğrulama yöntemi için değerler sağlayın.  

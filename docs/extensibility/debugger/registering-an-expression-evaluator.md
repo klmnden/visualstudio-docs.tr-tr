@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073377"
 ---
 # <a name="register-an-expression-evaluator"></a>İfade değerlendiricisi kaydetme
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>DLL sunucu işlemi
  EE DLL sunucu kaydı sırasında:
 
-1.  Kendi sınıf üreteci kaydettirir `CLSID` normal COM kurallarına göre.
+1. Kendi sınıf üreteci kaydettirir `CLSID` normal COM kurallarına göre.
 
-2.  Yardımcı işlevini çağıran `SetEEMetric` aşağıdaki tabloda gösterilen EE ölçümleri Visual Studio ile kaydetmek için. İşlev `SetEEMetric` ve aşağıda belirtilen ölçümleri parçası *dbgmetric.lib* kitaplığı. Bkz: [hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Ayrıntılar için.
+2. Yardımcı işlevini çağıran `SetEEMetric` aşağıdaki tabloda gösterilen EE ölçümleri Visual Studio ile kaydetmek için. İşlev `SetEEMetric` ve aşağıda belirtilen ölçümleri parçası *dbgmetric.lib* kitaplığı. Bkz: [hata ayıklama için SDK Yardımcıları](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) Ayrıntılar için.
 
     |Ölçüm|Açıklama|
     |------------|-----------------|
@@ -120,7 +120,7 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID` Tanımlayan adı, ancak dil olan `guidLang` bağımsız değişkeni `SetEEMetric` , dil seçer. Derleyici hata ayıklama bilgileri dosyası oluşturduğunda, uygun yazmalısınız `guidLang` DE kullanmak için hangi EE bilebilmesi. DE genellikle bu dil için Sembol sağlayıcısı ister `GUID`, hata ayıklama bilgileri dosyasında depolanır.
 
-3.  Visual Studio ile anahtarları hkey_local_machıne\software\microsoft\visualstudio altında oluşturarak kaydettirir\\*X.Y*burada *X.Y* kaydetmek için Visual Studio sürümüdür.
+3. Visual Studio ile anahtarları hkey_local_machıne\software\microsoft\visualstudio altında oluşturarak kaydettirir\\*X.Y*burada *X.Y* kaydetmek için Visual Studio sürümüdür.
 
 ### <a name="example"></a>Örnek
  Aşağıdaki işlev yönetilmeyen bir kod (C++) EE nasıl kaydeder ve kendisi ile Visual Studio kaydını gösterir.

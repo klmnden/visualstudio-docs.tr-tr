@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070790"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Eski Etkinlik Tasarımcısını Kullanma
 Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Eski Tasarımcı hedeflenirken kullanın [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,9 +35,9 @@ Bu konuda, etkinlik Tasarımcısı içinde eski kullanmayı açıklar [!INCLUDE[
   
 2. Seçin **etkinlik** veya **etkinlik (kod ayırma ile)** şablonu.  
   
-   1.  Kullanım **etkinlik** etkinlik tanımı ve kullanıcı kodu aynı kod dosyasında olan etkinlik oluşturmak için şablon.  
+   1. Kullanım **etkinlik** etkinlik tanımı ve kullanıcı kodu aynı kod dosyasında olan etkinlik oluşturmak için şablon.  
   
-   2.  Kullanım **etkinlik (kod ayırma ile)** bir etkinlik iş akışı biçimlendirmesi ve kullanıcı kodu ayrı bir kod dosyasında olarak ifade edilen etkinlik tanımı oluşturmak için şablon.  
+   2. Kullanım **etkinlik (kod ayırma ile)** bir etkinlik iş akışı biçimlendirmesi ve kullanıcı kodu ayrı bir kod dosyasında olarak ifade edilen etkinlik tanımı oluşturmak için şablon.  
   
 3. Bir etkinlik adı yazın veya varsayılan adı bırakın ve ardından **Ekle**.  
   

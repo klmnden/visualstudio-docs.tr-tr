@@ -13,46 +13,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7032f868a8012a4c52657301afdc4aa51af02f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072402"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Nasıl yapılır: Rapor görünümü sütunlarını özelleştirme
 Visual Studio Team System geliştirme sürümü Performans araçları tümleşik geliştirme ortamına (IDE) kesintisiz bir kullanıcı deneyimi sağlamak için tam olarak tümleşiktir. Aşağıdaki listede ekleme, kaldırma ve sütunları yeniden düzenleme özelleştirilmiş görünümleri etmektedir:
 
--   [Modüller Görünümü](../profiling/modules-view.md)
+- [Modüller Görünümü](../profiling/modules-view.md)
 
--   [İşlevler Görünümü](../profiling/functions-view.md)
+- [İşlevler Görünümü](../profiling/functions-view.md)
 
--   [Satırlar Görünümü](../profiling/lines-view.md)
+- [Satırlar Görünümü](../profiling/lines-view.md)
 
--   [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view.md)
+- [Yönerge İşaretçileri (IP) Görünümü](../profiling/instruction-pointers-ips-view.md)
 
--   [Çağıran/Çağrılan Görünümü](../profiling/caller-callee-view.md)
+- [Çağıran/Çağrılan Görünümü](../profiling/caller-callee-view.md)
 
--   [Çağrı Ağacı Görünümü](../profiling/call-tree-view.md)
+- [Çağrı Ağacı Görünümü](../profiling/call-tree-view.md)
 
--   [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)
+- [Ayırmalar Görünümü](../profiling/dotnet-memory-allocations-view.md)
 
--   [Nesne Ömrü Görünümü](../profiling/object-lifetime-view.md)
+- [Nesne Ömrü Görünümü](../profiling/object-lifetime-view.md)
 
--   [İşaretler Görünümü](../profiling/marks-view.md)
+- [İşaretler Görünümü](../profiling/marks-view.md)
 
--   [İşlem Görünümü](../profiling/process-view.md)
+- [İşlem Görünümü](../profiling/process-view.md)
 
 ### <a name="to-customize-a-report-view"></a>Bir rapor görünümünü özelleştirmek için
 
-1.  Rapor görünümünü açın.
+1. Rapor görünümünü açın.
 
-2.  Rapor görünümü yüzeyine sağ tıklayın ve ardından **sütunları Ekle/Kaldır**.
+2. Rapor görünümü yüzeyine sağ tıklayın ve ardından **sütunları Ekle/Kaldır**.
 
      **Sütunları Ekle/Kaldır** iletişim kutusu görüntülenir.
 
-3.  Eklemek istediğiniz sütunları seçin.
+3. Eklemek istediğiniz sütunları seçin.
 
-4.  Sütunları yeniden sıralamak için ok düğmesine tıklayın.
+4. Sütunları yeniden sıralamak için ok düğmesine tıklayın.
 
-5.  **Tamam**'ı tıklatın.
+5. **Tamam**'ı tıklatın.

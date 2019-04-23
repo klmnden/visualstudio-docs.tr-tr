@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e82246a750c26881a055e372baa7d5eb0386952
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080208"
 ---
 # <a name="implementing-syntax-coloring"></a>Söz Dizimi Renklendirmesi Uygulama
 Söz dizimi renklendirme dil hizmetinin sağladığı, ayrıştırıcının metin satırı renklendirilebilir öğeleri bir diziye dönüştürür ve belirteç türleri bu renklendirilebilir öğeleri karşılık gelen döndürür. Ayrıştırıcının renklendirilebilir öğeler listesine ait belirteç türleri döndürmeniz gerekir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] renklendirilebilir her öğe için uygun belirteç türü Renklendirici nesne tarafından atanan öznitelikler göre kod penceresinde görüntüler.
@@ -31,33 +31,33 @@ Söz dizimi renklendirme dil hizmetinin sağladığı, ayrıştırıcının meti
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Metin renklendirmek için bir düzenleyici tarafından izlenen adımları
 
-1.  Çağırarak Renklendirici düzenleyiciyi alır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodunda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> nesne.
+1. Çağırarak Renklendirici düzenleyiciyi alır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodunda <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> nesne.
 
-2.  Düzenleyici çağrıları <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Renklendirici Renklendirici dışında tutulması gerektiğini, her satırın durum gerekip gerekmediğini belirlemek için yöntemi.
+2. Düzenleyici çağrıları <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> Renklendirici Renklendirici dışında tutulması gerektiğini, her satırın durum gerekip gerekmediğini belirlemek için yöntemi.
 
-3.  Düzenleyici Renklendirici Renklendirici dışında tutulması durumuna gerektiriyorsa, çağıran <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> ilk satırı durumunu almak için yöntemi.
+3. Düzenleyici Renklendirici Renklendirici dışında tutulması durumuna gerektiriyorsa, çağıran <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> ilk satırı durumunu almak için yöntemi.
 
-4.  Arabellekteki her satır için düzenleyici çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> yöntemi aşağıdaki adımları gerçekleştirir:
+4. Arabellekteki her satır için düzenleyici çağırır <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> yöntemi aşağıdaki adımları gerçekleştirir:
 
-    1.  Metin satırının metni belirteçlere dönüştürmek için bir tarayıcı geçirilir. Her simge, belirteç metni ve belirteç türü belirtir.
+    1. Metin satırının metni belirteçlere dönüştürmek için bir tarayıcı geçirilir. Her simge, belirteç metni ve belirteç türü belirtir.
 
-    2.  Belirteç türü renklendirilebilir öğeleri listesini bir dizine dönüştürülür.
+    2. Belirteç türü renklendirilebilir öğeleri listesini bir dizine dönüştürülür.
 
-    3.  Belirteç bilgileri sağlayacak şekilde dizinin her öğesi satırında bir karaktere karşılık gelen bir dizide doldurmak için kullanılır. Dizide depolanan renklendirilebilir öğeler listeye dizinler değerlerdir.
+    3. Belirteç bilgileri sağlayacak şekilde dizinin her öğesi satırında bir karaktere karşılık gelen bir dizide doldurmak için kullanılır. Dizide depolanan renklendirilebilir öğeler listeye dizinler değerlerdir.
 
-    4.  Her satırı için satır sonunda durumu döndürülür.
+    4. Her satırı için satır sonunda durumu döndürülür.
 
-5.  Düzenleyici Renklendirici sürdürülmesi durumuna gerektiriyorsa, bu satırı durumunu önbelleğe alır.
+5. Düzenleyici Renklendirici sürdürülmesi durumuna gerektiriyorsa, bu satırı durumunu önbelleğe alır.
 
-6.  Öğesinden döndürülen bilgileri kullanarak metin satırının Düzenleyicisi işler <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> yöntemi. Bu, aşağıdaki adımları gerektirir:
+6. Öğesinden döndürülen bilgileri kullanarak metin satırının Düzenleyicisi işler <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> yöntemi. Bu, aşağıdaki adımları gerektirir:
 
-    1.  Satırdaki her karakter için renklendirilebilir öğe dizini alın.
+    1. Satırdaki her karakter için renklendirilebilir öğe dizini alın.
 
-    2.  Varsayılan renklendirilebilir öğeleri kullanma, düzenleyicinin renklendirilebilir öğeleri listesi erişin.
+    2. Varsayılan renklendirilebilir öğeleri kullanma, düzenleyicinin renklendirilebilir öğeleri listesi erişin.
 
-    3.  Aksi takdirde, dil hizmetin çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> renklendirilebilir öğesi elde etmek için yöntemi.
+    3. Aksi takdirde, dil hizmetin çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> renklendirilebilir öğesi elde etmek için yöntemi.
 
-    4.  Bilgileri renklendirilebilir öğesinde ekranını metin işlemek için kullanın.
+    4. Bilgileri renklendirilebilir öğesinde ekranını metin işlemek için kullanın.
 
 ## <a name="managed-package-framework-colorizer"></a>Yönetilen paket Framework Renklendirici
  Yönetilen paket çerçevesini (MPF) bir Renklendirici uygulamak için gereken tüm sınıflar sağlar. Dil hizmeti sınıfınıza alması gerektiğini <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı ve gerekli yöntemleri uygular. Uygulayarak, bir tarayıcı ve ayrıştırıcı sağlamalısınız <xref:Microsoft.VisualStudio.Package.IScanner> arabirim ve arabirimden örneğini döndürmesi <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> yöntemi (içinde uygulanması gereken yöntemlerden birini <xref:Microsoft.VisualStudio.Package.LanguageService> sınıfı). Daha fazla bilgi için [eski dil hizmetinde söz dizimi renklendirme](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).

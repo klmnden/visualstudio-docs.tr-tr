@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075252"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Nasıl yapılır: IIS özellik ayarlarını doğrulama
 
@@ -37,11 +37,11 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
 
 1. Açık **Yönetimsel Araçlar** penceresi: Üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.
 
-   -   Windows 2000'de seçin **Internet Hizmetleri Yöneticisi'ni**.
+   - Windows 2000'de seçin **Internet Hizmetleri Yöneticisi'ni**.
 
-   -   Windows XP'de seçin **Internet Information Services**.
+   - Windows XP'de seçin **Internet Information Services**.
 
-   -   Windows Server 2003'te çift **sunucunuzu yönetin**.
+   - Windows Server 2003'te çift **sunucunuzu yönetin**.
 
         **Sunucunuzu yönetin** penceresi açılır. Altında **uygulama sunucusu**, tıklayın **bu uygulama sunucusunu yönetmek**.
 
@@ -53,23 +53,23 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
 
 4. Web uygulaması için güvenlik ayarlarını doğrulayın:
 
-   1.  Web uygulamasındaki **özellikleri** penceresinde tıklayın **dizin güvenliği** sekmesine ve tıklayın **Düzenle**.
+   1. Web uygulamasındaki **özellikleri** penceresinde tıklayın **dizin güvenliği** sekmesine ve tıklayın **Düzenle**.
 
-   2.  İçinde **kimlik doğrulama yöntemleri** iletişim kutusunda **anonim erişimi etkinleştir** ve **tümleşik Windows kimlik doğrulaması** henüz seçili değilse.
+   2. İçinde **kimlik doğrulama yöntemleri** iletişim kutusunda **anonim erişimi etkinleştir** ve **tümleşik Windows kimlik doğrulaması** henüz seçili değilse.
 
-   3.  Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.
+   3. Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.
 
 5. Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. İçin bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama, uygulama kümesinde bir uygulama adı için sanal klasör emin **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni** veya  **Internet Information Services**.
 
-   1.  Web uygulamasındaki **özellikleri** penceresinde **dizin** sekmesinde, uygulamayı sanal bir dizinde ise veya **giriş dizini** sekmesinde uygulama ise, bir Web sitesi.
+   1. Web uygulamasındaki **özellikleri** penceresinde **dizin** sekmesinde, uygulamayı sanal bir dizinde ise veya **giriş dizini** sekmesinde uygulama ise, bir Web sitesi.
 
-   2.  Doğrulayın adlarında **yerel yol** uygulamanın gerçekten dağıtılacağı dizinin adıyla aynıdır.
+   2. Doğrulayın adlarında **yerel yol** uygulamanın gerçekten dağıtılacağı dizinin adıyla aynıdır.
 
-   3.  Altında **uygulama ayarları**, uygulamayı içeren kök dizinin adını yazın.
+   3. Altında **uygulama ayarları**, uygulamayı içeren kök dizinin adını yazın.
 
-   4.  Tıklayın **Tamam** kapatmak için **özellikleri** iletişim kutusu.
+   4. Tıklayın **Tamam** kapatmak için **özellikleri** iletişim kutusu.
 
 7. İçin bir [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] uygulama tıklayın **ASP.NET** doğrulayın ve sekme doğru sürümünü [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] belirtilir.
 

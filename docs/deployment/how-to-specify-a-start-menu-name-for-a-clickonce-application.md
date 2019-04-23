@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085122"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için Başlat menüsü adı belirtme
 Olduğunda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] çevrimiçi ve çevrimdışı kullanım için bir uygulama yüklendiğinde, bir giriş eklenir **Başlat** menü ve **Program Ekle veya Kaldır** listesi. Varsayılan olarak, görünen adı uygulama derlemenin adı ile aynı olduğu halde ayarlayarak görünen adı değiştirebilirsiniz **ürün adı** içinde **yayımlama seçeneği** iletişim kutusu.
@@ -36,17 +36,17 @@ Olduğunda bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-specify-a-start-menu-name"></a>Başlat menüsü adı belirtmek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **Yayımla** sekmesi.
+2. Tıklayın **Yayımla** sekmesi.
 
-3.  Tıklayın **seçenekleri** açmak için düğmeyi **yayımlama seçeneği** iletişim kutusu.
+3. Tıklayın **seçenekleri** açmak için düğmeyi **yayımlama seçeneği** iletişim kutusu.
 
-4.  Tıklayın **açıklama**.
+4. Tıklayın **açıklama**.
 
-5.  İçinde **yayımlama seçeneği** iletişim kutusunda, görüntülemek için bir ad girin **ürün adı**.
+5. İçinde **yayımlama seçeneği** iletişim kutusunda, görüntülemek için bir ad girin **ürün adı**.
 
-6.  İsteğe bağlı olarak, bir yayımcı adı, girebileceğiniz **Yayımcı adı**.
+6. İsteğe bağlı olarak, bir yayımcı adı, girebileceğiniz **Yayımcı adı**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)

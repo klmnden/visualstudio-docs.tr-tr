@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9247eae19d32ecc21069836d52192e7d466de1b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802846"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072298"
 ---
 # <a name="model-editor"></a>Model Düzenleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 #### <a name="to-add-a-3-d-model-to-your-project"></a>Projenize 3B model eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, görüntüye eklemek ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
+1. İçinde **Çözüm Gezgini**, görüntüye eklemek ve ardından istediğiniz projenin kısayol menüsünü **Ekle**, **yeni öğe**.  
   
-2.  İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **3B Sahne (.fbx)**.  
+2. İçinde **Yeni Öğe Ekle** iletişim kutusunun **yüklü**seçin **grafik**ve ardından **3B Sahne (.fbx)**.  
   
-3.  Belirtin **adı** model dosyasının ve **konumu** sonra istediğiniz yere oluşturulacak.  
+3. Belirtin **adı** model dosyasının ve **konumu** sonra istediğiniz yere oluşturulacak.  
   
-4.  Seçin **Ekle** düğmesi.  
+4. Seçin **Ekle** düğmesi.  
   
 ### <a name="axis-orientation"></a>Eksen yönlendirme  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 3B ekseninin her yönlendirmesini destekler ve onu destekleyen model dosyası biçimlerinden eksen yönlendirmesi bilgilerini yükler. Hiçbir eksen yönlendirmesi belirtilmezse, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] varsayılan olarak sağ taraf yönelimli koordinat sistemini kullanır. **Eksen göstergesi** tasarım yüzeyinin sağ alt köşesinde geçerli eksen yönlendirmesini gösterir. Üzerinde **eksen göstergesi**, kırmızı x eksenini temsil eder, yeşil, y eksenini temsil eder ve mavi z ekseni temsil eder.  
@@ -132,7 +132,7 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 ### <a name="viewing-additional-geometry-details"></a>Ek geometri ayrıntılarını görüntüleme  
  Bir 3B nesneyi veya sahneyi daha iyi anlamak için, her köşe için normal değerler, her yüz için normal değerler, etkin seçimin pivot noktaları ve diğer ayrıntılar gibi ek geometri ayrıntılarını görüntüleyebilirsiniz. Etkinleştirmek veya bunları devre dışı bırakmak **Model Düzenleyicisi** araç seçin **betikleri**, **görünümü**, istediğinizi seçin.  
   
-###  <a name="Adding3DObjects"></a> Oluşturma ve 3B nesneleri içeri aktarma  
+### <a name="Adding3DObjects"></a> Oluşturma ve 3B nesneleri içeri aktarma  
  Sahneye önceden tanımlı bir 3B şekil eklemek için **araç kutusu**, seçmek istediğiniz ve ardından tasarım yüzeyine taşıyın. Yeni şekiller sahnenin başlangıcına yerleştirilir. Model Düzenleyicisi yedi şekil sağlar: **Koni**, **küp**, **silindir**, **disk**, **düzlemi**, **küre**ve **Çaydanlık**.  
   
  Bir dosyadan 3B nesnenin içeri aktarmak için **Model Düzenleyicisi** araç seçin **Gelişmiş**, **Sahne Yönetimi**, **alma**ve ardından belirtin içeri aktarmak istediğiniz dosya.  
@@ -144,11 +144,11 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-transform-an-object-by-using-modeling-tools"></a>Modelleme araçlarını kullanarak bir nesneyi dönüştürmek için  
   
-1.  İçinde **seçin** modunda, dönüştürmek istediğiniz nesneyi seçin. Tel çerçeve yer paylaşımı nesnenin seçili olduğunu gösterir.  
+1. İçinde **seçin** modunda, dönüştürmek istediğiniz nesneyi seçin. Tel çerçeve yer paylaşımı nesnenin seçili olduğunu gösterir.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **çevir**, **ölçek**, veya **Döndür** aracı. Seçili nesne için bir çeviri, ölçeklendirme veya döndürme işleyicisi görüntülenir.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **çevir**, **ölçek**, veya **Döndür** aracı. Seçili nesne için bir çeviri, ölçeklendirme veya döndürme işleyicisi görüntülenir.  
   
-3.  Dönüştürmeyi gerçekleştirmek için işleyiciyi kullanın. Çeviri ve ölçeklendirme dönüşümlerinde işleyici bir eksen göstergesidir. Bir kerede bir eksen değiştirebilir veya göstergenin ortasındaki beyaz küpü kullanarak aynı anda tüm eksenleri değiştirebilirsiniz. Döndürme için işleyici x eksenine (kırmızı), y eksenine (yeşil) ve z eksenine (mavi) karşılık gelen renk kodlu dairelerden oluşan bir küredir. İstediğiniz döndürmeyi oluşturmak için her ekseni tek tek değiştirmeniz gerekir.  
+3. Dönüştürmeyi gerçekleştirmek için işleyiciyi kullanın. Çeviri ve ölçeklendirme dönüşümlerinde işleyici bir eksen göstergesidir. Bir kerede bir eksen değiştirebilir veya göstergenin ortasındaki beyaz küpü kullanarak aynı anda tüm eksenleri değiştirebilirsiniz. Döndürme için işleyici x eksenine (kırmızı), y eksenine (yeşil) ve z eksenine (mavi) karşılık gelen renk kodlu dairelerden oluşan bir küredir. İstediğiniz döndürmeyi oluşturmak için her ekseni tek tek değiştirmeniz gerekir.  
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Özelliklerini ayarlayarak bir nesneyi dönüştürmek için  
   
@@ -173,16 +173,16 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
 ### <a name="world-and-local-modes"></a>Dünya ve yerel modları  
  Çeviri ve döndürme oluşabilir ya da yerel koordinat sisteminde (veya *yerel çerçeve başvuru*) nesnesinin ya da dünyanın koordinat sisteminde (veya *dünya çerçeve başvuru*). Dünya başvuru çerçevesi nesnenin dönüşünden bağımsızdır. Yerel mod varsayılandır. Etkinleştirmek (veya devre dışı bırakmak) için dünya modunu **Model Düzenleyicisi modu** araç seçin **dünya yerel** düğmesi.  
   
-###  <a name="ModifyingObjects"></a> Nesneleri değiştirme  
+### <a name="ModifyingObjects"></a> Nesneleri değiştirme  
  Köşelerini, kenarlarını ve yüzeylerini taşıyarak veya silerek bir 3B nesnenin şeklini değiştirebilirsiniz. Varsayılan olarak, Model Düzenleyicisi bulunduğu *nesne modu*, böylece seçebilir ve tüm nesneleri dönüştürme. Noktaları, kenarları veya yüzeyleri seçmek için uygun seçim modunu seçin. Üzerinde **Model Düzenleyicisi modu** araç seçin **seçim modları**ve ardından istediğiniz modu seçin.  
   
  Çıkarmayla veya alt bölümlere ayırmayla ek köşeler oluşturabilirsiniz. Çıkarma bir yüzün köşelerini (aynı düzlemli bir yüzler kümesi) çoğaltır ve yüz çoğaltılmış köşelerle bağlı kalır. Alt bölümlere ayırma, önceden bir tane olan yüzeyden birçok yüzey oluşturmak için köşeler ekler. Yeni yüzler oluşturmak için, biri özgün yüzün ortasına ve biri de her bir kenarın ortasına olmak üzere yeni köşeler eklenir ve sonra bunlar orijinal köşelerle birleştirilir. Eklenen yüzlerin sayısı, orijinal yüzdeki köşelerin sayısına eşittir. Her iki durumda da, nesnenin geometrisini değiştirmek için yeni köşeleri çevirebilir, döndürebilir ve ölçeklendirebilirsiniz.  
   
 ##### <a name="to-extrude-a-face-from-an-object"></a>Bir nesneden bir yüzü çıkarmak için  
   
-1.  Yüz seçimi modunda, çıkarmak istediğiniz yüzü seçin.  
+1. Yüz seçimi modunda, çıkarmak istediğiniz yüzü seçin.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **Yükselt**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **Yükselt**.  
   
 ##### <a name="to-subdivide-faces"></a>Yüzleri alt bölümlere ayırmak için  
   
@@ -194,21 +194,21 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-triangulate-a-face"></a>Bir yüzü üçgenlere bölmek için  
   
-1.  Yüz seçimi modunda, üçgenlere bölmek istediğiniz yüzü seçin.  
+1. Yüz seçimi modunda, üçgenlere bölmek istediğiniz yüzü seçin.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **üçgenlere**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **üçgenlere**.  
   
 ##### <a name="to-merge-objects"></a>Nesneleri birleştirmek için  
   
-1.  Nesne seçimi modunda, birleştirmek istediğiniz nesneleri seçin.  
+1. Nesne seçimi modunda, birleştirmek istediğiniz nesneleri seçin.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **nesneleri Birleştir**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **nesneleri Birleştir**.  
   
 ##### <a name="to-create-an-object-from-a-polygon-selection"></a>Çokgen seçiminden bir nesne oluşturmak için  
   
-1.  Yüz seçimi modunda yeni bir nesne oluşturmak istediğiniz yüzleri seçin.  
+1. Yüz seçimi modunda yeni bir nesne oluşturmak istediğiniz yüzleri seçin.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **Çokgen seçiminden yeni nesne oluştur**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Araçları**, **Çokgen seçiminden yeni nesne oluştur**.  
   
 ### <a name="working-with-materials-and-shaders"></a>Malzemeler ve gölgelendiriciler ile çalışma  
  Bir nesnenin görünümü, sahnedeki aydınlatma etkileşimi ve nesnenin malzemesi ile belirlenir. Malzemeler, yüzeyin farklı ışık türlerine nasıl tepki verdiğini açıklayan özelliklerle ve nesne yüzeyindeki her pikselin son rengini ışıklandırma bilgisine, doku eşlemelerine, normal eşlemelere ve diğer verilere göre hesaplayan bir gölgelendirici programla tanımlanır.  
@@ -248,9 +248,9 @@ Bu belgede ile nasıl çalışılacağı açıklanmaktadır [!INCLUDE[vsprvs](..
   
 ##### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Üst nesnesi olan bir hiyerarşi oluşturmak için  
   
-1.  İçinde **seçin** modu, iki veya daha fazla nesneleri seçebilir. İlk seçtiğiniz öğe üst nesne olur.  
+1. İçinde **seçin** modu, iki veya daha fazla nesneleri seçebilir. İlk seçtiğiniz öğe üst nesne olur.  
   
-2.  Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **eklemek için üst**.  
+2. Üzerinde **Model Düzenleyicisi** araç seçin **betikleri**, **Sahne Yönetimi**, **eklemek için üst**.  
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Eşdüzeyli nesnelerin hiyerarşisini oluşturmak için  
   

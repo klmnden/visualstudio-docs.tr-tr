@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082808"
 ---
 # <a name="walkthrough-using-msbuild"></a>İzlenecek yol: MSBuild Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
 #### <a name="to-create-a-project-file"></a>Bir proje dosyası oluşturmak için  
   
-1.  Visual Studio'yu açın.  
+1. Visual Studio'yu açın.  
   
-2.  Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
+2. Üzerinde **dosya** menüsünde **yeni**ve ardından **proje**.  
   
-3.  İçinde **yeni proje** Visual C# proje türü ve ardından iletişim kutusunda **Windows Forms uygulaması** şablonu. İçinde **adı** kutusuna `BuildApp`. Girin bir **konumu** çözümü, örneğin, `D:\`. İçin Varsayılanları kabul **çözüm için dizin oluştur** (Seçili) **kaynak denetimine Ekle** (seçili değil), ve **çözüm adı** (`BuildApp`).  
+3. İçinde **yeni proje** Visual C# proje türü ve ardından iletişim kutusunda **Windows Forms uygulaması** şablonu. İçinde **adı** kutusuna `BuildApp`. Girin bir **konumu** çözümü, örneğin, `D:\`. İçin Varsayılanları kabul **çözüm için dizin oluştur** (Seçili) **kaynak denetimine Ekle** (seçili değil), ve **çözüm adı** (`BuildApp`).  
   
      Tıklayın **Tamam** proje dosyası oluşturmak için.  
   
@@ -49,13 +49,13 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
 #### <a name="to-examine-the-project-file"></a>Projeyi dosyasını incelemek için  
   
-1.  İçinde **Çözüm Gezgini**, BuildApp proje düğümünü tıklatın.  
+1. İçinde **Çözüm Gezgini**, BuildApp proje düğümünü tıklatın.  
   
-2.  İçinde **özellikleri** tarayıcı dikkat **proje dosyası** özelliğinin buildapp.csproj. Tüm proje dosyaları "proj" soneki ile adlandırılır. Daha önce bir Visual Basic projesi oluşturduysanız, proje dosyası adı BuildApp.vbproj olur.  
+2. İçinde **özellikleri** tarayıcı dikkat **proje dosyası** özelliğinin buildapp.csproj. Tüm proje dosyaları "proj" soneki ile adlandırılır. Daha önce bir Visual Basic projesi oluşturduysanız, proje dosyası adı BuildApp.vbproj olur.  
   
-3.  Proje düğümünü sağ tıklatın ve ardından **projeyi**.  
+3. Proje düğümünü sağ tıklatın ve ardından **projeyi**.  
   
-4.  Proje düğümünü yeniden sağ tıklatın ve ardından **Buildapp.csproj'u Düzenle**.  
+4. Proje düğümünü yeniden sağ tıklatın ve ardından **Buildapp.csproj'u Düzenle**.  
   
      Proje dosyası kod düzenleyicisinde görüntülenir.  
   
@@ -136,17 +136,17 @@ MSBuild, Microsoft ve Visual Studio için bir yapı platformudur. Bu izlenecek y
   
 #### <a name="to-build-the-target"></a>Hedefi oluşturmak için  
   
-1.  Tıklayın **Başlat**, ardından **tüm programlar**. Bulun ve tıklatın **Visual Studio komut istemi** içinde **Visual Studio Araçları** klasör.  
+1. Tıklayın **Başlat**, ardından **tüm programlar**. Bulun ve tıklatın **Visual Studio komut istemi** içinde **Visual Studio Araçları** klasör.  
   
-2.  Komut penceresinden proje dosyasını içeren klasöre gidin, bu durumda D:\BuildApp\BuildApp.  
+2. Komut penceresinden proje dosyasını içeren klasöre gidin, bu durumda D:\BuildApp\BuildApp.  
   
-3.  /t:HelloWorld komut anahtarı ile msbuild'i çalıştırın. Bu, HelloWorld hedefini seçer ve oluşturur:  
+3. /t:HelloWorld komut anahtarı ile msbuild'i çalıştırın. Bu, HelloWorld hedefini seçer ve oluşturur:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Çıktıyı inceleyin **komut penceresi**. "Hello" ve "World" satırlarını görmeniz gerekir:  
+4. Çıktıyı inceleyin **komut penceresi**. "Hello" ve "World" satırlarını görmeniz gerekir:  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>Bir özellik değerini incelemek için  
   
-1.  Kod düzenleyicisinden HelloWorld hedefini şu kodla değiştirin:  
+1. Kod düzenleyicisinden HelloWorld hedefini şu kodla değiştirin:  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Çıktıyı inceleyin. Şu iki satırı görmeniz gerekir (.NET Framework sürümünüz farklı olabilir):  
+4. Çıktıyı inceleyin. Şu iki satırı görmeniz gerekir (.NET Framework sürümünüz farklı olabilir):  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>Her satırda bir tane öğe türü değeri görüntülemek için  
   
-1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
+1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  Proje dosyasını kaydedin.  
+2. Proje dosyasını kaydedin.  
   
-3.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+3. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  Çıktıyı inceleyin. Şu satırları görmeniz gerekir:  
+4. Çıktıyı inceleyin. Şu satırları görmeniz gerekir:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>Öğeleri dahil etmek ve dışlamak için  
   
-1.  Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
+1. Kod düzenleyicisinden İleti görevini şu satır ile değiştirin:  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  İçe Aktarma öğesinden hemen sonra şu öğe grubunu ekle:  
+2. İçe Aktarma öğesinden hemen sonra şu öğe grubunu ekle:  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  Proje dosyasını kaydedin.  
+3. Proje dosyasını kaydedin.  
   
-4.  Gelen **komut penceresi**girin ve bu satırı yürütün:  
+4. Gelen **komut penceresi**girin ve bu satırı yürütün:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
+5. Çıktıyı inceleyin. Şu satırı görmeniz gerekir:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

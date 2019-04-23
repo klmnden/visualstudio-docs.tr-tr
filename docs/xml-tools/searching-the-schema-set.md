@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070909"
 ---
-# <a name="search-the-schema-set"></a>Şema kümesi arama
+# <a name="search-the-schema-set"></a>Şema kümesini arama
 
 **XML Şeması Gezgini** aşağıdaki yollarla kümesi şeması aramanızı sağlar:
 
--   Anahtar sözcük arama.
+- Anahtar sözcük arama.
 
--   Şema özgü arama.
+- Şema özgü arama.
 
 ## <a name="keyword-search"></a>Anahtar sözcük arama
 
@@ -31,11 +31,11 @@ ms.locfileid: "55930863"
 
  **XML Şeması Gezgini** ayarlamak için aşağıdaki özniteliklerden şema arar:
 
--   Tüm `name` veya `ref` belirtilen anahtar sözcükle eşleşen öznitelikleri. Öğeler, öznitelikler, türler ve vb. adıyla bulabilirsiniz.
+- Tüm `name` veya `ref` belirtilen anahtar sözcükle eşleşen öznitelikleri. Öğeler, öznitelikler, türler ve vb. adıyla bulabilirsiniz.
 
--   `schemaLocation` Özniteliklerini ifadeleri içerir.
+- `schemaLocation` Özniteliklerini ifadeleri içerir.
 
--   `namespace` İçeri aktarma deyimlerini öznitelikleri.
+- `namespace` İçeri aktarma deyimlerini öznitelikleri.
 
 ## <a name="schema-specific-search"></a>Şema özel arama
 

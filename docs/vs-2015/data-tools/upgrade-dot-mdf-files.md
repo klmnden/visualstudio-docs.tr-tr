@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 6cdbb5d092f431f628e76c7ab629d5ed70429cee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079914"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf dosyalarını yükseltme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   
  Bir veritabanını yükseltmeden önce aşağıdaki ölçütleri dikkate alın:  
   
--   Projeniz daha eski bir sürümü hem de Visual Studio'nun daha yeni bir sürümü üzerinde çalışmak istiyorsanız yükseltmeyin.  
+- Projeniz daha eski bir sürümü hem de Visual Studio'nun daha yeni bir sürümü üzerinde çalışmak istiyorsanız yükseltmeyin.  
   
--   Uygulamanızı SQL Server Express LocalDB yerine kullanan ortamlarda kullanılacaksa yükseltmeyin.  
+- Uygulamanızı SQL Server Express LocalDB yerine kullanan ortamlarda kullanılacaksa yükseltmeyin.  
   
--   Uzak bağlantılar, uygulamanız kullanıyorsa LocalDB kabul etmez çünkü yükseltmeyin.  
+- Uzak bağlantılar, uygulamanız kullanıyorsa LocalDB kabul etmez çünkü yükseltmeyin.  
   
--   Uygulamanızı Internet Information Services (IIS) üzerinde dayanıyorsa yükseltmeyin.  
+- Uygulamanızı Internet Information Services (IIS) üzerinde dayanıyorsa yükseltmeyin.  
   
--   Bir korumalı alan ortamında veritabanı uygulamalarını test etmek istediğiniz ancak bir veritabanını yönetmek istemiyorsanız, yükseltme yapmayı düşünün.  
+- Bir korumalı alan ortamında veritabanı uygulamalarını test etmek istediğiniz ancak bir veritabanını yönetmek istemiyorsanız, yükseltme yapmayı düşünün.  
   
 ### <a name="to-upgrade-a-database-file"></a>Bir veritabanını yükseltmek için  
   
@@ -70,17 +70,17 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   
 2. İçinde **Bağlantı Ekle** iletişim kutusunda, aşağıdaki bilgileri belirtin:  
   
-   -   **Veri kaynağı**: `Microsoft SQL Server (SqlClient)`  
+   - **Veri kaynağı**: `Microsoft SQL Server (SqlClient)`  
   
-   -   **Sunucu adı**:  
+   - **Sunucu adı**:  
   
-       -   Varsayılan sürümü kullanmak için: `(localdb)\MSSQLLocalDB`.  Bu ProjectV12 ya da ProjectV13, Visual Studio'nun hangi sürümünün yüklü olduğunu ve ilk LocalDB örneği oluşturulduğu bağlı olarak belirtin. **İfadesini MSSQLLocalDB** düğümünde **SQL Server Nesne Gezgini** hangi sürümün onu işaret etmesi gösterir.  
+       - Varsayılan sürümü kullanmak için: `(localdb)\MSSQLLocalDB`.  Bu ProjectV12 ya da ProjectV13, Visual Studio'nun hangi sürümünün yüklü olduğunu ve ilk LocalDB örneği oluşturulduğu bağlı olarak belirtin. **İfadesini MSSQLLocalDB** düğümünde **SQL Server Nesne Gezgini** hangi sürümün onu işaret etmesi gösterir.  
   
-       -   Belirli bir sürümünü kullanmak için: `(localdb)\ProjectsV12` veya `(localdb)\ProjectsV13`, burada V12 LocalDB 2014 ve V13 LocalDB 2016.  
+       - Belirli bir sürümünü kullanmak için: `(localdb)\ProjectsV12` veya `(localdb)\ProjectsV13`, burada V12 LocalDB 2014 ve V13 LocalDB 2016.  
   
-   -   **Bir veritabanı dosyası iliştirmek**: Birincil .mdf dosyasının fiziksel yolu.  
+   - **Bir veritabanı dosyası iliştirmek**: Birincil .mdf dosyasının fiziksel yolu.  
   
-   -   **Mantıksal ad**: Dosya ile kullanmak istediğiniz adı.  
+   - **Mantıksal ad**: Dosya ile kullanmak istediğiniz adı.  
   
 3. **Tamam** düğmesini seçin.  
   
@@ -102,11 +102,11 @@ Bu konuda, Visual Studio'nun daha yeni bir sürümünü yükledikten sonra verit
   
 ### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>Visual Studio'da veritabanıyla çalışmaya, ancak SQL Server Express ile uyumluluğu korumak için  
   
--   Visual Studio'da, yükseltme yapmadan projeyi açın.  
+- Visual Studio'da, yükseltme yapmadan projeyi açın.  
   
-    -   Projeyi çalıştırmak için F5 tuşunu seçin.  
+    - Projeyi çalıştırmak için F5 tuşunu seçin.  
   
-    -   Veritabanı düzenlemek için .mdf dosyası açın **Çözüm Gezgini**ve düğümde genişletme **Sunucu Gezgini** , veritabanı ile çalışmak üzere.  
+    - Veritabanı düzenlemek için .mdf dosyası açın **Çözüm Gezgini**ve düğümde genişletme **Sunucu Gezgini** , veritabanı ile çalışmak üzere.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Varsayılan veritabanı altyapısı SQL Server Express yapma  
   

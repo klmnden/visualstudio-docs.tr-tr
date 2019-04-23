@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c3c477fa1187dfd6ffc24653915e0e8d708d77c3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ec9d40d889964c3b0f369b87d8cd2c2312aaea18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075148"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Intellitest ile kodunuz için birim testleri oluşturma
 
@@ -38,9 +38,9 @@ Intellitest çalıştırdığınızda, hangi testlerin başarısız oluyor ve on
 
 Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim testleri oluşturma](#NoRun) bunları oluşturmadan önce ilk.
 
-1.  Çözümünüzü Visual Studio'da açın. Ardından test etmek istediğiniz yöntemi içeren sınıf dosyasını açın.
+1. Çözümünüzü Visual Studio'da açın. Ardından test etmek istediğiniz yöntemi içeren sınıf dosyasını açın.
 
-2.  Kodunuzdaki bir yöntemi sağ tıklatın ve seçin **Intellitest Çalıştır** , yönteminde kod için birim testleri oluşturmak için.
+2. Kodunuzdaki bir yöntemi sağ tıklatın ve seçin **Intellitest Çalıştır** , yönteminde kod için birim testleri oluşturmak için.
 
      ![Sağ&#45;Birim testler üretmek için yönteminizi tıklayın](../test/media/runpex.png)
 
@@ -56,7 +56,7 @@ Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim te
 
 ## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Sürdür: Birim testleri bir regresyon paketi kaydedin.
 
-1.  Parametreli birim test projesine kaydetmek istediğiniz veri satırları seçin.
+1. Parametreli birim test projesine kaydetmek istediğiniz veri satırları seçin.
 
      ![Testleri seçin. doğru&#45;tıklayın ve Kaydet'i seçin](../test/media/savepextests.png)
 
@@ -70,13 +70,13 @@ Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim te
 
 ## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Yardımcı: Odağı kod araştırması için Intellitest kullanın
 
-1.  Daha karmaşık bir kod varsa, Intellitest araştırma, kodunuzun odaklanarak ile yardımcı olur. Örneğin, bir parametre olarak arabirime sahip bir yöntemi varsa ve bu arabirimi uygulayan birden fazla sınıf, Intellitest söz konusu sınıfın bulur ve bir uyarı bildirir.
+1. Daha karmaşık bir kod varsa, Intellitest araştırma, kodunuzun odaklanarak ile yardımcı olur. Örneğin, bir parametre olarak arabirime sahip bir yöntemi varsa ve bu arabirimi uygulayan birden fazla sınıf, Intellitest söz konusu sınıfın bulur ve bir uyarı bildirir.
 
      Yapmak istediğinize karar verirken uyarıları görüntüleyin.
 
      ![Uyarıları görüntüle](../test/media/pexviewwarning.png)
 
-2.  Kodu inceleme ve test etmek istediğiniz anlamak sonra arabirimi sınamak üzere kullanmak için hangi sınıfların seçmek için uyarı düzeltebilirsiniz.
+2. Kodu inceleme ve test etmek istediğiniz anlamak sonra arabirimi sınamak üzere kullanmak için hangi sınıfların seçmek için uyarı düzeltebilirsiniz.
 
      ![Sağ&#45;uyarıya tıklayarak ve düzeltme seçin](../test/media/pexfixwarning.png)
 
@@ -84,7 +84,7 @@ Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim te
 
      `[assembly: PexUseType(typeof(Camera))]`
 
-3.  Artık bir parametreli birim testi oluşturma ve verileri yalnızca, sabit sınıfı kullanarak test etmek için Intellitest yeniden çalıştırabilirsiniz.
+3. Artık bir parametreli birim testi oluşturma ve verileri yalnızca, sabit sınıfı kullanarak test etmek için Intellitest yeniden çalıştırabilirsiniz.
 
      ![Intellitest test verileri oluşturmak için yeniden çalıştırın](../test/media/pexwarningsfixed.png)
 
@@ -92,7 +92,7 @@ Birim testler üretmek için türler genel olmalıdır. Aksi takdirde, [birim te
 
 Giriş ve çıkışları doğrulamak için üretilmiş birim testlerini istediğiniz genel ilişkisi belirtin. Bu belirtim, bir test yöntemi gibi görünüyor, ancak Evrensel amaçlarıyla bir yöntem içinde kapsüllenir. Parametreli birim test yöntem budur ve yaptığınız herhangi bir onayları Intellitest oluşturabilen olası tüm giriş değerlerini tutmanız gerekir.
 
-##  <a name="q--a"></a>Soru - Yanıt
+## <a name="q--a"></a>Soru - Yanıt
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>S: Intellitest yönetilmeyen kod için kullanabilir miyim?
 
@@ -104,13 +104,13 @@ Giriş ve çıkışları doğrulamak için üretilmiş birim testlerini istediğ
 
  Özel bazı durumlar oluşursa, geçirilebilecek bir test varsa, test yöntemi, test sınıfına veya derleme gereksinimlerinize göre aşağıdaki özniteliklerden birini düzeyi ayarlayabilirsiniz:
 
--   **PexAllowedExceptionAttribute**
+- **PexAllowedExceptionAttribute**
 
--   **PexAllowedExceptionFromTypeAttribute**
+- **PexAllowedExceptionFromTypeAttribute**
 
--   **PexAllowedExceptionFromTypeUnderTestAttribute**
+- **PexAllowedExceptionFromTypeUnderTestAttribute**
 
--   **PexAllowedExceptionFromAssemblyAttribute**
+- **PexAllowedExceptionFromAssemblyAttribute**
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>S: Parametreli birim testine varsayımlar ekleyebilir miyim?
 
@@ -128,7 +128,7 @@ Giriş ve çıkışları doğrulamak için üretilmiş birim testlerini istediğ
 
  Onaylama Ekle ve Intellitest yeniden çalıştırın, değerinizi geçerli olduğunu ve yüklü değilse test başarısız olduğunu denetler.
 
-###  <a name="NoRun"></a> S: Parametreli birim testleri çalıştırmadan önce Intellitest oluşturabilir miyim?
+### <a name="NoRun"></a> S: Parametreli birim testleri çalıştırmadan önce Intellitest oluşturabilir miyim?
 
 **Y:** Evet, sınıf veya yöntemi içinde sağ tıklayın ve ardından **Intellitest oluşturma**.
 

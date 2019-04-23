@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070927"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio kullanarak Office için VSTO Eklentileri oluşturma
   Office'i genişleten .NET Framework uygulamaları oluşturmak için Visual Studio'da Microsoft Office geliştirici araçları kullanabilirsiniz. Bu uygulamalar olarak da adlandırılır *Office çözümleri*.
@@ -29,9 +29,9 @@ ms.locfileid: "56644386"
 
  Office geliştirme hakkında son bilgiler için MSDN'de aşağıdaki Geliştirme Merkezleri bakın:
 
--   [Visual Studio developer portal ile Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=123844) ürün bilgileri, kod örnekleri, videolar ve Office uygulamalarını Çözümlerinizin bir parçası özelleştirmek için Visual Studio kullanımı hakkında topluluk kaynaklarına bağlantılar içerir .
+- [Visual Studio developer portal ile Office geliştirme](http://go.microsoft.com/fwlink/?LinkId=123844) ürün bilgileri, kod örnekleri, videolar ve Office uygulamalarını Çözümlerinizin bir parçası özelleştirmek için Visual Studio kullanımı hakkında topluluk kaynaklarına bağlantılar içerir .
 
--   [Microsoft Office Geliştirici Merkezi](http://go.microsoft.com/fwlink/?LinkId=83467) teknik makaleler, kod örnekleri, indirmeler, topluluk bilgi, destek ve Office özelleştirmeleri ve Office Business Applications (OBU ilgili diğer belgeler için bağlantılar içerir ).
+- [Microsoft Office Geliştirici Merkezi](http://go.microsoft.com/fwlink/?LinkId=83467) teknik makaleler, kod örnekleri, indirmeler, topluluk bilgi, destek ve Office özelleştirmeleri ve Office Business Applications (OBU ilgili diğer belgeler için bağlantılar içerir ).
 
 ## <a name="in-this-section"></a>Bu bölümde
 - [Başlama &#40;Visual Studio'da Office geliştirme&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

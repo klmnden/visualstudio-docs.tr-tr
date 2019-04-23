@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 798318f55c6f5db599f39a653a4d9ed5edbed8f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077946"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio'nun çevrimdışı yüklemesini oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ Bu sayfa, Internet'e bağlı olmadıkları sırada Visual Studio 2015 yüklemeyi
 > [!IMPORTANT]
 > Çevrimdışı makinenize Windows 7 SP1 veya Windows Server 2008 R2 çalıştırıyorsa, lütfen özel yönergelere bakın [çevrimdışı yükleme sorunlarını giderme](#BKMK_tshoot) bu konudaki.  Bu yönergeleri izlemelidir *önce* Visual Studio 2015'i yükleyin.
 
-##  <a name="BKMK_Offline"></a> Çevrimdışı yükleme oluşturarak yükleme
+## <a name="BKMK_Offline"></a> Çevrimdışı yükleme oluşturarak yükleme
 
 #### <a name="to-create-an-offline-installation-layout"></a>Çevrimdışı yükleme düzeni oluşturmak için
 
-1.  Gelen yüklemek istediğiniz Visual Studio sürümünü seçin [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) indirme sayfası.
+1. Gelen yüklemek istediğiniz Visual Studio sürümünü seçin [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) indirme sayfası.
 
-2.  Dosya sisteminizdeki bir konuma yükleyiciyi indirdikten sonra Çalıştır "\<çalıştırılabilir dosya adı >/layout".
+2. Dosya sisteminizdeki bir konuma yükleyiciyi indirdikten sonra Çalıştır "\<çalıştırılabilir dosya adı >/layout".
 
      Örneğin, şunu çalıştırın: `vs_enterprise.exe /layout D:\VisualStudio2015`
 
      Kullanarak `/layout` anahtarı, neredeyse tüm yükleme paketlerini yalnızca yükleme makinesi için geçerli olanları indirebilirsiniz. Bu yaklaşım, her yerden bu yükleyiciyi çalıştırmak için gereken dosyaları sağlar ve başlangıçta yüklenmemiş bileşenleri yüklemek istiyorsanız yararlı olabilir.
 
-3.  Bu komutu çalıştırdıktan sonra çevrimdışı yükleme düzenini bulunmasını istediğiniz klasörü değiştirmek izin veren bir iletişim kutusu görünür.   Ardından, **indirme** düğmesi.
+3. Bu komutu çalıştırdıktan sonra çevrimdışı yükleme düzenini bulunmasını istediğiniz klasörü değiştirmek izin veren bir iletişim kutusu görünür.   Ardından, **indirme** düğmesi.
 
      Paket başarılı olduğunda, bildiren bir ileti görürsünüz **Kurulum başarılı! Belirtilen tüm bileşenler başarıyla alındı.**
 
-4.  Daha önce belirttiğiniz klasörünü bulun. (Örneğin, D:\VisualStudio2015 bulun.) Bu klasör veya yükleme medyasına paylaşılan bir konuma kopyalamak için ihtiyacınız olan her şeyi içerir.
+4. Daha önce belirttiğiniz klasörünü bulun. (Örneğin, D:\VisualStudio2015 bulun.) Bu klasör veya yükleme medyasına paylaşılan bir konuma kopyalamak için ihtiyacınız olan her şeyi içerir.
 
     > [!CAUTION]
     > Şu anda Android SDK'sı bir çevrimdışı yükleme deneyimi desteklemez. Android SDK Kurulumu öğelerini Internet'e bağlı olmayan bir bilgisayara yüklerseniz, yükleme başarısız olabilir. Daha fazla bilgi için bu konudaki "bir çevrimdışı yükleme sorunlarını giderme" bölümüne bakın.
 
-5.  Dosya konumundan veya yükleme medyasından yüklemeyi çalıştırın.
+5. Dosya konumundan veya yükleme medyasından yüklemeyi çalıştırın.
 
 ## <a name="updating-an-offline-installation"></a>Çevrimdışı yüklemeyi güncelleştirme
  Microsoft Visual Studio 2015 için birkaç güncelleştirme yayımladı. Visual Studio yüklemenizi güncelleştirmek için yalnızca istediğiniz sürümü indirme alanından [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) indirme sayfası. Ardından, yeni bir çevrimdışı yükleme düzeni oluşturmak için bu konuda özetlenen adımları izleyin ve Visual Studio 2015 kopyanızın güncelleştirmek için kullanın.
 
-##  <a name="BKMK_tshoot"></a> Çevrimdışı yükleme sorunlarını giderme
+## <a name="BKMK_tshoot"></a> Çevrimdışı yükleme sorunlarını giderme
  Çevrimdışı yükleme sırasında çevrimdışı durumdan önbelleği yüklemek, bazı bileşenler ve paketleri yüklemek yükleyememeyle ilgili uyarı iletileri görebilirsiniz. Aşağıdaki tablo, bu senaryolar için olası çözümleri içerir.
 
 | Bileşen veya paket | Çözüm |

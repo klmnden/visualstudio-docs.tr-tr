@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077894"
 ---
 # <a name="how-to-debug-injected-code"></a>Nasıl yapılır: Püskürtülen kodda hata ayıklama
 
@@ -46,25 +46,25 @@ ms.locfileid: "55069127"
 
 ## <a name="to-turn-on-source-annotation"></a>Kaynak ek açıklama üzerinde etkinleştirmek için
 
--   Sağ **ayrıştırılmış kodu** penceresinde ve **kaynak kodunu Göster** kısayol menüsünden.
+- Sağ **ayrıştırılmış kodu** penceresinde ve **kaynak kodunu Göster** kısayol menüsünden.
 
      Bir kaynak penceresinde bir öznitelik konumunu biliyorsanız, eklenen kodun bulmak için kısayol menüsünü kullanabilirsiniz **ayrıştırılmış kodu** penceresi.
 
 ## <a name="to-view-injected-code"></a>Eklenen kodu görüntülemek için
 
-1.  Hata ayıklayıcının kesme modunda olması gerekir.
+1. Hata ayıklayıcının kesme modunda olması gerekir.
 
-2.  Bir kaynak kod penceresinde, imleci eklenen kodu görüntülemek istediğiniz öznitelik önüne koyun.
+2. Bir kaynak kod penceresinde, imleci eklenen kodu görüntülemek istediğiniz öznitelik önüne koyun.
 
-3.  Sağ tıklatın ve seçin **Ayrıştırılımış** kısayol menüsünden.
+3. Sağ tıklatın ve seçin **Ayrıştırılımış** kısayol menüsünden.
 
      Öznitelik konumu geçerli yürütme noktasını ise, seçebileceğiniz **ayrıştırılmış kodu** penceresinden **hata ayıklama** menüsü.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Geçerli yürütme noktasına ilişkin ayrıştırma kodunu görüntülemek için
 
-1.  Hata ayıklayıcının kesme modunda olması gerekir.
+1. Hata ayıklayıcının kesme modunda olması gerekir.
 
-2.  Gelen **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **ayrıştırılmış kodu**.
+2. Gelen **hata ayıklama** menüsünde seçin **Windows**, tıklatıp **ayrıştırılmış kodu**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

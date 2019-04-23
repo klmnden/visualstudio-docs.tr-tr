@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082795"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Nasıl yapılır: Belgeleri hizmet verileriyle doldurma
 
@@ -33,21 +33,21 @@ Aşağıdaki örnek, verilere bağlı denetimler, tasarım zamanında belgelere 
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Bir belge düzeyi projesi bir web hizmetinden veri ile doldurmak için
 
-1.  Açık **veri kaynakları** penceresi ve projeniz için bir veri kaynağı hizmeti oluşturun. Daha fazla bilgi için [yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md).
+1. Açık **veri kaynakları** penceresi ve projeniz için bir veri kaynağı hizmeti oluşturun. Daha fazla bilgi için [yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md).
 
-2.  Tablo veya istediğiniz alanı sürükleyin **veri kaynakları** belgenize penceresi.
+2. Tablo veya istediğiniz alanı sürükleyin **veri kaynakları** belgenize penceresi.
 
      Bir denetim, belgede oluşturulur bir <xref:System.Windows.Forms.BindingSource> oluşturulan nesne sınıfı, projenizdeki bağlanır ve sınıflar, hizmet için oluşturulur.
 
-3.  Kodunuzda, 1. adımda bağlandığı web hizmeti sınıfının bir örneğini oluşturun.
+3. Kodunuzda, 1. adımda bağlandığı web hizmeti sınıfının bir örneğini oluşturun.
 
-4.  Web hizmeti ile iletişim için gerekli olan özellikleri varsa, bu özellikleri bir örneğini oluşturun.
+4. Web hizmeti ile iletişim için gerekli olan özellikleri varsa, bu özellikleri bir örneğini oluşturun.
 
-5.  Oluşturun ve 4. adımda oluşturduğunuz Web hizmeti ve herhangi bir özellik örnekleri tarafından kullanıma sunulan yöntemleri kullanarak veri isteği gönderin.
+5. Oluşturun ve 4. adımda oluşturduğunuz Web hizmeti ve herhangi bir özellik örnekleri tarafından kullanıma sunulan yöntemleri kullanarak veri isteği gönderin.
 
      Kullandığınız yöntem, web hizmeti sunduğuna bağlıdır.
 
-6.  Web hizmetine veri yanıtını atamayı <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
+6. Web hizmetine veri yanıtını atamayı <xref:System.Windows.Forms.BindingSource.DataSource%2A> özelliği <xref:System.Windows.Forms.BindingSource>.
 
 Projeyi çalıştırdığınızda, denetimler, veri kaynağındaki ilk kaydı görüntüler. Nesneleri kullanarak para birimi olaylarını işleme göre kayıtlar arasında kaydırma etkinleştirebilirsiniz <xref:System.Windows.Forms.BindingSource>.
 

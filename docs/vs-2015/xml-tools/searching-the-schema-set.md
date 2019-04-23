@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080572"
 ---
 # <a name="searching-the-schema-set"></a>Şema Kümesini Arama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML Şeması Gezgini aşağıdaki yollarla kümesi şeması arama yapmanızı sağlar:  
   
--   Anahtar sözcük arama.  
+- Anahtar sözcük arama.  
   
--   Şema özgü arama.  
+- Şema özgü arama.  
   
 ## <a name="keyword-search"></a>Anahtar sözcük arama  
  Dizeyi girerek anahtar sözcüğü aramalar gerçekleştirmek **arama SchemaSet** XML şema Gezgini araç çubuğu'nun metin kutusu.  
@@ -32,11 +32,11 @@ XML Şeması Gezgini aşağıdaki yollarla kümesi şeması arama yapmanızı sa
   
  Ayarlamak için aşağıdaki şema XML şema Gezgini arar:  
   
--   Tüm `name` veya `ref` belirtilen anahtar sözcükle eşleşen öznitelikleri. Bu öğeler, öznitelikler, türler, ada göre vb. bulmanızı sağlar.  
+- Tüm `name` veya `ref` belirtilen anahtar sözcükle eşleşen öznitelikleri. Bu öğeler, öznitelikler, türler, ada göre vb. bulmanızı sağlar.  
   
--   `schemaLocation` Özniteliklerini ifadeleri içerir.  
+- `schemaLocation` Özniteliklerini ifadeleri içerir.  
   
--   `namespace` İçeri aktarma deyimlerini öznitelikleri.  
+- `namespace` İçeri aktarma deyimlerini öznitelikleri.  
   
 ## <a name="schema-specific-search"></a>Şema özel arama  
  XML Şeması Gezgini XML Şeması Gezgini bağlam menüsünü kullanarak erişebileceğiniz yerleşik aramaları da içerir. Kullanılabilir bağlam menüleri hakkında daha fazla bilgi için bkz: [bağlam menüleri](../xml-tools/context-menus-xml-schema-explorer.md). Başlangıç görünümünden de bir şema özgü arama yapabilirsiniz; "Şema kümesi Ayrıntıları" bölümünde daha fazla bilgi için bkz. [başlangıç görünümündeki](../xml-tools/start-view.md) konu.  

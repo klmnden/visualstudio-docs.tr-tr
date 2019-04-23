@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073053"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Nasıl yapılır: Düzenleyicide sözcük kaydırmayı yönetme
 
@@ -28,19 +28,19 @@ Ayarlayın ve silebileceği **sözcük kaydırmayı** seçeneği. Bu seçenek ay
 
 ## <a name="to-set-word-wrap-preferences"></a>Sözcük kaydırmayı tercihleri ayarlamak için
 
-1.  Üzerinde **Araçları** menüsünde **seçenekleri**.
+1. Üzerinde **Araçları** menüsünde **seçenekleri**.
 
-2.  İçinde **metin düzenleyici** klasörü seçin **genel** seçeneklerini **tüm diller** genel olarak bu seçeneği ayarlamak için alt.
+2. İçinde **metin düzenleyici** klasörü seçin **genel** seçeneklerini **tüm diller** genel olarak bu seçeneği ayarlamak için alt.
 
      — veya —
 
      Seçin **genel** alt programlama dili için Seçenekler.
 
-3.  Altında **ayarları**seçin veya temizleyin **sözcük kaydırmayı** seçeneği.
+3. Altında **ayarları**seçin veya temizleyin **sözcük kaydırmayı** seçeneği.
 
      Zaman **sözcük kaydırmayı** seçeneği belirlenmişse **sözcük kaydırma için görsel karakterleri Göster** seçeneği etkinleştirilir.
 
-4.  Seçin **sözcük kaydırma için görsel karakterleri Göster** burada bir uzun satır sarmalar ikinci satıra bir dönüş ok göstergesi görüntülenmesini isterseniz seçeneği. Gösterge oklar görüntülenmemesi isterseniz bu seçeneği temizleyin.
+4. Seçin **sözcük kaydırma için görsel karakterleri Göster** burada bir uzun satır sarmalar ikinci satıra bir dönüş ok göstergesi görüntülenmesini isterseniz seçeneği. Gösterge oklar görüntülenmemesi isterseniz bu seçeneği temizleyin.
 
     > [!NOTE]
     > Bu anımsatıcı okları kodunuza eklenmez; yalnızca görüntüleme amaçları için değildirler.

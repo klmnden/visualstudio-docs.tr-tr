@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077829"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Kod ve Metin Düzenleyici'de Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,45 +188,45 @@ Bu özellik, uzun adları kodunuz varsa, özellikle yararlı olur.
 
  Dile özgü Düzenleyici seçenekleri hakkında daha fazla bilgi için aşağıdakilere bakın:  
 
--   [Visual Basic ayarları](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Visual Basic ayarları](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [C# için Visual Studio Geliştirme Ortamını Kullanma](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Seçenekler, Metin Düzenleyici, JavaScript, Biçimlendirme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Bu bölümde  
 
--   [Metin Bulma ve Değiştirme](../ide/finding-and-replacing-text.md)  
+- [Metin Bulma ve Değiştirme](../ide/finding-and-replacing-text.md)  
 
--   [Kodlamalar ve Satır Sonları](../ide/encodings-and-line-breaks.md)  
+- [Kodlamalar ve Satır Sonları](../ide/encodings-and-line-breaks.md)  
 
--   [Anahat Oluşturma](../ide/outlining.md)  
+- [Anahat Oluşturma](../ide/outlining.md)  
 
--   [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)  
+- [Yeniden Düzenleme](../ide/refactoring-in-visual-studio.md)  
 
--   [Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)  
+- [Üretkenlik İpuçları](../ide/productivity-tips-for-visual-studio.md)  
 
--   [IntelliSense Kullanma](../ide/using-intellisense.md)  
+- [IntelliSense Kullanma](../ide/using-intellisense.md)  
 
--   [Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)  
+- [Düzenleyiciyi Özelleştirme](../ide/customizing-the-editor.md)  
 
--   [Nasıl yapılır: Kaydırma Çubuğunu Özelleştirerek Kodunuzu İzleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Nasıl yapılır: Kaydırma Çubuğunu Özelleştirerek Kodunuzu İzleme](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Nasıl yapılır: Tanıma Göz At Özelliğini (Alt+F12) Kullanarak Kodu Görüntüleme ve Düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Nasıl yapılır: Tanıma Göz At Özelliğini (Alt+F12) Kullanarak Kodu Görüntüleme ve Düzenleme](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Ampullerle hızlı eylemler gerçekleştirme](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Kod Parçacıkları](../ide/code-snippets.md)  
+- [Kod Parçacıkları](../ide/code-snippets.md)  
 
--   [Araç Kutusunu Kullanma](../ide/using-the-toolbox.md)  
+- [Araç Kutusunu Kullanma](../ide/using-the-toolbox.md)  
 
--   [Kod Yapısını Görüntüleme](../ide/viewing-the-structure-of-code.md)  
+- [Kod Yapısını Görüntüleme](../ide/viewing-the-structure-of-code.md)  
 
--   [Kodda Yer İşaretleri Ayarlama](../ide/setting-bookmarks-in-code.md)  
+- [Kodda Yer İşaretleri Ayarlama](../ide/setting-bookmarks-in-code.md)  
 
--   [Görev Listesini Kullanma](../ide/using-the-task-list.md)  
+- [Görev Listesini Kullanma](../ide/using-the-task-list.md)  
 
--   [Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Kod değişikliklerini ve diğer geçmişi bulma](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

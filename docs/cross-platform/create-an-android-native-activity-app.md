@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079974"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Yerel Etkinlik Uygulaması Oluşturma
 
@@ -45,9 +45,9 @@ Bu öğreticide, önce yeni bir Android yerel etkinlik projesi oluşturma sonra 
 
    Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:
 
--   `MyAndroidApp.NativeActivity` birleştirici kodlar için uygulamanızı Android'de gibi yerel bir etkinlik çalışmasına ve başvurular içerir. Giriş noktaları tutkal kodun uygulaması olan *Main.cpp öğesi*. Önceden derlenmiş üst bilgiler bulunduğunuz *pch.h*. Bu yerel etkinlik uygulaması projesi paylaşılan kitaplığa derlenir *.so* paketleme projesi tarafından devralındığında dosyası.
+- `MyAndroidApp.NativeActivity` birleştirici kodlar için uygulamanızı Android'de gibi yerel bir etkinlik çalışmasına ve başvurular içerir. Giriş noktaları tutkal kodun uygulaması olan *Main.cpp öğesi*. Önceden derlenmiş üst bilgiler bulunduğunuz *pch.h*. Bu yerel etkinlik uygulaması projesi paylaşılan kitaplığa derlenir *.so* paketleme projesi tarafından devralındığında dosyası.
 
--   `MyAndroidApp.Packaging` oluşturur *.apk* dosyası dağıtım için bir Android cihaz veya öykünücü. Bu kaynaklar içeriyor ve *AndroidManifest.xml* dosya bildirim özelliklerini ayarladığınız yerdir. Ayrıca içerdiği *build.xml* Ant denetleyen dosya oluşturma işlemi. Dağıtılan ve doğrudan Visual Studio'dan çalıştırma varsayılan olarak, başlangıç projesi olarak ayarlanır.
+- `MyAndroidApp.Packaging` oluşturur *.apk* dosyası dağıtım için bir Android cihaz veya öykünücü. Bu kaynaklar içeriyor ve *AndroidManifest.xml* dosya bildirim özelliklerini ayarladığınız yerdir. Ayrıca içerdiği *build.xml* Ant denetleyen dosya oluşturma işlemi. Dağıtılan ve doğrudan Visual Studio'dan çalıştırma varsayılan olarak, başlangıç projesi olarak ayarlanır.
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>Varsayılan Android yerel etkinlik uygulaması derleyebilir ve çalıştırabilirsiniz
 
@@ -55,21 +55,21 @@ Oluşturup yükleme ve Kurulum doğrulamak için şablon tarafından oluşturula
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>Derleme ve varsayılan yerel etkinlik uygulaması çalıştırmak için
 
-1.  Zaten seçili değilse, seçin **x86** gelen **çözüm platformları** açılır liste.
+1. Zaten seçili değilse, seçin **x86** gelen **çözüm platformları** açılır liste.
 
      ![Çözüm platformları x86 açılan liste seçimine](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      Varsa **çözüm platformları** seçin, listeyi görüntülenmiyorsa **çözüm platformları** gelen **Ekle/Kaldır düğmeleri** listeleyin ve ardından platformunuzu seçin.
 
-2.  Menü çubuğunda, **derleme** > **Çözümü Derle**.
+2. Menü çubuğunda, **derleme** > **Çözümü Derle**.
 
      Çıkış penceresi çözümde iki proje için yapı işleminin çıkış görüntüler.
 
-3.  VS öykünücüsü Android telefon (x86) profilleri, dağıtım hedefi seçin.
+3. VS öykünücüsü Android telefon (x86) profilleri, dağıtım hedefi seçin.
 
      Diğer öykünücü yüklü veya bir Android cihazına bağlı, dağıtım hedef açılan listeden seçebilirsiniz.
 
-4.  Tuşuna **F5** hata ayıklamayı başlatın veya Shift + F5 hata ayıklama olmadan başlat.
+4. Tuşuna **F5** hata ayıklamayı başlatın veya Shift + F5 hata ayıklama olmadan başlat.
 
      Varsayılan Uygulama Visual Studio öykünücüsü'nde Android için nasıl göründüğüne aşağıda verilmiştir.
 
@@ -77,6 +77,6 @@ Oluşturup yükleme ve Kurulum doğrulamak için şablon tarafından oluşturula
 
      Visual Studio öykünücü, yüklemek ve kodunuzu dağıtmak için birkaç saniye sürer başlatır. Uygulama başlatıldıktan sonra kesme noktaları ayarlayın ve hata ayıklayıcı kodunuz içinde adım adım, Yereller inceleyin ve izlemek için kullanın.
 
-5.  Tuşuna **Shift**+**F5** hata ayıklamayı durdurmak için.
+5. Tuşuna **Shift**+**F5** hata ayıklamayı durdurmak için.
 
      Öykünücüyü çalıştırmak için devam eden ayrı bir işlemdir. Düzenleme, derleme ve kodunuzun birden çok kez aynı öykünücüye dağıtmak.

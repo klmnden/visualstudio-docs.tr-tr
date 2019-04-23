@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8ad8861e2c838de283b7971d7e985fe8a4c591a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080326"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Sürüm denetimi altındaki modelleri ve diyagramları yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,84 +28,84 @@ Modelleme projeleri ve diyagramları, kod haritaları (.dgml dosyaları) dahil o
 > [!IMPORTANT]
 >  Birkaç kullanıcı aynı modelleme projesinde çalıştığı zaman dikkatli olun. Kullanıma alabilirsiniz nasıl [Orta veya büyük ölçekli projelerde modelleri düzenlemek](../modeling/structure-your-modeling-solution.md).  
   
-##  <a name="ModelingProjects"></a> Bir modelleme projesindeki dosyalar  
+## <a name="ModelingProjects"></a> Bir modelleme projesindeki dosyalar  
  Farklı dosyalar üzerinde çalıştıkları sağlanan birden fazla kullanıcı aynı zamanda, bir modelleme projesi üzerinde çalışabilir.  
   
  Farklı kullanıcılar tarafından yapılan değişiklikler arasındaki çakışmaları gidermek veya önlemek için modelin dosyalarda nasıl depolandığını anlamak önemlidir.  
   
--   Her bir paketi ayrı bir depolanır **.uml** tutulan dosya **ModelDefinition** proje klasörü. Modeli de sahip bir **.uml** dosya. Bu dosyalardan biri silinirse veya bozulursa, karşılık gelen paket veya model kaybolacaktır.  
+- Her bir paketi ayrı bir depolanır **.uml** tutulan dosya **ModelDefinition** proje klasörü. Modeli de sahip bir **.uml** dosya. Bu dosyalardan biri silinirse veya bozulursa, karşılık gelen paket veya model kaybolacaktır.  
   
--   Her diyagram iki dosyada depolanır. Örneğin, bir sınıf diyagramı vardır:  
+- Her diyagram iki dosyada depolanır. Örneğin, bir sınıf diyagramı vardır:  
   
-    -   **DiagramName.classdiagram** -bu dosya silinir veya bozulursa diyagram kaybolacaktır değilse, ancak sınıflar ve ilişkilendirmeler modelde olmaya devam eder ve UML Model Gezgini'nde görülebilir.  
+    - **DiagramName.classdiagram** -bu dosya silinir veya bozulursa diyagram kaybolacaktır değilse, ancak sınıflar ve ilişkilendirmeler modelde olmaya devam eder ve UML Model Gezgini'nde görülebilir.  
   
-    -   **DiagramName.classdiagram.layout** -bu dosya, şekiller hala diyagramda görünür fakat boyutlarını ve konumlarını kaybederler. Her Düzen dosyası, diyagram dosyasına kuruluşudur. Bunu görmek için Çözüm Gezgini'nde diyagram dosyasının yanındaki [+]'e tıklayın.  
+    - **DiagramName.classdiagram.layout** -bu dosya, şekiller hala diyagramda görünür fakat boyutlarını ve konumlarını kaybederler. Her Düzen dosyası, diyagram dosyasına kuruluşudur. Bunu görmek için Çözüm Gezgini'nde diyagram dosyasının yanındaki [+]'e tıklayın.  
   
 > [!NOTE]
 >  Dosyalar arasında tutarlılık sağlamak önemlidir. Bir .uml dosyasındaki değişiklikleri geri almak için kaynak denetimi kullanın, örneğin, karşılık gelen değişiklikleri geri. * diyagramı ve .layout dosyaları aynı anda. Öğeleri temsil bir. \*diyagram dosyasını kaybolacak, ayrıca bir .uml dosyasındaki gösterilmez.  
   
-##  <a name="Shared"></a> Paylaşılan modelleme projelerinde çalışma  
+## <a name="Shared"></a> Paylaşılan modelleme projelerinde çalışma  
  Bir projenin farklı kısımlarındaki eşzamanlı işler arasındaki çakışmaları en aza indirmek için:  
   
--   Modelleme projenizi, işin farklı alanlarını gösteren paketlere bölün. Tüm modeli, kök modelde bırakmak yerine paketlerin içine taşıyın. Daha fazla bilgi için [paketleri ve ad alanlarını tanımlama](../modeling/define-packages-and-namespaces.md).  
+- Modelleme projenizi, işin farklı alanlarını gösteren paketlere bölün. Tüm modeli, kök modelde bırakmak yerine paketlerin içine taşıyın. Daha fazla bilgi için [paketleri ve ad alanlarını tanımlama](../modeling/define-packages-and-namespaces.md).  
   
--   Farklı kullanıcılar aynı anda aynı paket veya diyagram üzerinde çalışmamalıdır.  
+- Farklı kullanıcılar aynı anda aynı paket veya diyagram üzerinde çalışmamalıdır.  
   
--   Profilleri kullanıyorsanız, herkesin aynı profili yüklediğinden emin olun. Bkz: [modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
+- Profilleri kullanıyorsanız, herkesin aynı profili yüklediğinden emin olun. Bkz: [modelinizi profiller ve stereotipler aracılığıyla özelleştirme](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  
   
--   Yalnızca üzerinde çalıştığınız paketi değiştirdiğinizden emin olmak için:  
+- Yalnızca üzerinde çalıştığınız paketi değiştirdiğinizden emin olmak için:  
   
-    -   Ayarlama **LinkedPackage** özelliği bir UML sınıfı, bileşenin veya kullanım durumu diyagramı.  
+    - Ayarlama **LinkedPackage** özelliği bir UML sınıfı, bileşenin veya kullanım durumu diyagramı.  
   
-    -   Oluşturduktan hemen sonra UML Model Gezgini'nde, etkinlik veya etkileşimi paketinize sürükleyin. İlk düğümü etkinlik veya sıralı diyagramda oluşturduğunuzda bu öğe UML Model Gezgini'nde görünecektir.  
+    - Oluşturduktan hemen sonra UML Model Gezgini'nde, etkinlik veya etkileşimi paketinize sürükleyin. İlk düğümü etkinlik veya sıralı diyagramda oluşturduğunuzda bu öğe UML Model Gezgini'nde görünecektir.  
   
--   Paketleri izlemenize yardımcı olmak için gerçek paket adlarını yansıtmak için paket dosyalarını yeniden adlandırın.  
+- Paketleri izlemenize yardımcı olmak için gerçek paket adlarını yansıtmak için paket dosyalarını yeniden adlandırın.  
   
--   İçinde [!INCLUDE[esprscc](../includes/esprscc-md.md)], her zaman gerçekleştirmek **iade** ve **en son sürümü Al** tam modelleme projesinde işlemlerini tek dosyalarda.  
+- İçinde [!INCLUDE[esprscc](../includes/esprscc-md.md)], her zaman gerçekleştirmek **iade** ve **en son sürümü Al** tam modelleme projesinde işlemlerini tek dosyalarda.  
   
--   Her zaman gerçekleştirmek bir **alma** hemen, modelleme projesini iade etmeden önce işlemi.  
+- Her zaman gerçekleştirmek bir **alma** hemen, modelleme projesini iade etmeden önce işlemi.  
   
--   Gerçekleştirmeden önce her zaman tüm diyagramları kapatın bir **alma** işlemi.  
+- Gerçekleştirmeden önce her zaman tüm diyagramları kapatın bir **alma** işlemi.  
   
     > [!NOTE]
     >  Bir dosya açık değilse gerçekleştirirken bir **alma**, ve sonra dosyayı yeniden istenir işlem yerel değişikliklerde sonuçlanır. Bu durumda, tıklayın **Hayır**ve sonra tam projeyi yeniden yükleyin. İçinde **Çözüm Gezgini**, modelleme sağ proje düğümünü, tıklayın **projeyi**ve ardından **projeyi**.  
   
-###  <a name="Exclusive"></a> Modeli özel erişim gerektiren değişiklikler  
+### <a name="Exclusive"></a> Modeli özel erişim gerektiren değişiklikler  
  Aşağıdaki tür değişiklikleri yapmadan önce tüm projenin kullanıma al kilidine sahip olduğunuzdan emin olun.  
   
--   Yeniden adlandırma veya diğer paketlerden başvurulan öğeleri silme.  
+- Yeniden adlandırma veya diğer paketlerden başvurulan öğeleri silme.  
   
--   Paket sınırları ilişkilerin özelliklerini değiştirme.  
+- Paket sınırları ilişkilerin özelliklerini değiştirme.  
   
--   Kullanıma Al kilitleri hakkında bilgi edinmek için [denetleyin bulun ve dosyaları düzenleme](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Kullanıma Al kilitleri hakkında bilgi edinmek için [denetleyin bulun ve dosyaları düzenleme](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Bir diyagram dosyası ya da proje klasörünün dışına taşımak için  
   
-1.  Başlangıç **Visual Studio için geliştirici komut istemi**.  
+1. Başlangıç **Visual Studio için geliştirici komut istemi**.  
   
-2.  Kullanım **tf Yeniden Adlandır** diyagram dosyasını taşımak ve kendi **.layout** dosyası:  
+2. Kullanım **tf Yeniden Adlandır** diyagram dosyasını taşımak ve kendi **.layout** dosyası:  
   
      `tf rename sourcePath targetPath`  
   
-3.  Çözüm Gezgini'nde, dosyaya sağ tıklayın ve ardından **projeden Çıkart**.  
+3. Çözüm Gezgini'nde, dosyaya sağ tıklayın ve ardından **projeden Çıkart**.  
   
-4.  Dosyayı hedef klasöre ekleyin.  
+4. Dosyayı hedef klasöre ekleyin.  
   
      Çözüm Gezgini içinde hedef klasöre veya projeye sağ tıklayın, fareyle **Ekle**ve ardından **var olan öğe**. İletişim kutusunda, diyagram dosyasını seçin ve ardından **Ekle**. Düzen dosyası otomatik olarak eklenir.  
   
     > [!NOTE]
     >  Dosyayı farklı bir projeye taşıyamazsınız.  
   
-##  <a name="Merging"></a> Değişiklikleri Model dosya ve diyagramlarında birleştirme  
+## <a name="Merging"></a> Değişiklikleri Model dosya ve diyagramlarında birleştirme  
  Birden fazla kullanıcı bir model üzerinde aynı anda çalıştıktan sonra [!INCLUDE[esprscc](../includes/esprscc-md.md)] değişiklikleri model dosyalarında birleştirme isteyip istemediğinizi sorar. Ayrı proje üzerinde çalışmak birleştirmelerin çoğundan kaçınacaktır önceki bölümlerde açıklandığı gibi kaçınır. Normalde, kalan çakışmalar güvenli bir şekilde otomatik olarak birleştirilebilir. Aşağıdaki tür değişiklikler hiçbir zorluğa neden olmamalıdır:  
   
--   Yaşam çizgilerinin türleri. Bir yaşam çizgisini etkileşime (sıralı diyagram) eklediğinizde, yaşam çizgisini varolan türden oluşturmadıysanız, türü kök modelde depolanır.  
+- Yaşam çizgilerinin türleri. Bir yaşam çizgisini etkileşime (sıralı diyagram) eklediğinizde, yaşam çizgisini varolan türden oluşturmadıysanız, türü kök modelde depolanır.  
   
--   Yeni etkinlikler ve etkileşimler başlangıçta kök modelde depolanır.  
+- Yeni etkinlikler ve etkileşimler başlangıçta kök modelde depolanır.  
   
--   Öğeleri ve ilişkileri ekleme.  
+- Öğeleri ve ilişkileri ekleme.  
   
--   Yeniden adlandırma veya sadece kendi paketleri içinde başvurulmuş öğeleri silme.  
+- Yeniden adlandırma veya sadece kendi paketleri içinde başvurulmuş öğeleri silme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çözümleme ve mimarinin modelini oluşturma](../modeling/analyze-and-model-your-architecture.md)   
