@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54af4da8ccfff04ed51f19b9265659897281f26d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074615"
 ---
 # <a name="introduction-to-wpf"></a>WPF'ye Giriş
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ Windows Presentation Foundation (WPF) masaüstü istemcisi, görsel olarak etkil
   
  Bu genel bakışta yeni gelenlere yöneliktir ve temel işlevleri ve WPF kavramlarını ele alınmaktadır.  
   
-##  <a name="Programming_with_WPF"></a> WPF ile programlama  
+## <a name="Programming_with_WPF"></a> WPF ile programlama  
  WPF mevcut bir alt kümesini çoğunlukla bulunan .NET Framework türleri olarak <xref:System.Windows> ad alanı. ASP.NET ve Windows Forms gibi yönetilen teknolojilerini kullanarak uygulamaları .NET Framework ile daha önce geliştirdim, programlama deneyimi temel WPF tanımanız gerekir; sınıf örneği, özellikleri, yöntemleri çağırabilir ve tüm programlama dili, C# veya Visual Basic gibi en sevdiğiniz .NET kullanarak olayları işleyebilirsiniz.  
   
  WPF özellikleri ve olayları geliştiren ek programlama yapıları içerir: [bağımlılık özellikleri](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx) ve [yönlendirilmiş olaylar](https://msdn.microsoft.com/library/ms742806\(v=vs.100\).aspx).  
   
-##  <a name="Markup_And_Codebehind"></a> Biçimlendirme ve arka plan kod  
+## <a name="Markup_And_Codebehind"></a> Biçimlendirme ve arka plan kod  
  WPF, her ikisini de kullanarak bir uygulama geliştirmenize olanak tanır *biçimlendirme* ve *arka plan kod*, ASP.NET geliştiricilerinin aşina olmanız gereken bir deneyim. Genel olarak yönetilen bir programlama dili (arka plan kod) davranışını uygulamak için kullanırken uygulama görünümünü uygulamak için XAML biçimlendirme kullanın. Görünümünü ve davranışını ayrımı aşağıdaki faydaları sağlar:  
   
 - Görünüm özgü biçimlendirme davranışını özgü kodla sıkı bir şekilde eşleşmediğinden dolayı geliştirme ve bakım maliyetlerinin azaltılır.  
@@ -143,7 +143,7 @@ End Namespace
   
  ![Bir MessageBox](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
-##  <a name="Controls"></a> Denetimleri  
+## <a name="Controls"></a> Denetimleri  
  Uygulama modeli tarafından sunulan kullanıcı deneyimleri oluşturulmuş denetimlerdir. WPF, "control" bir kategoriye bir pencere veya sayfa barındırılan WPF sınıfların geçerli bir genel bir terimdir ve bir kullanıcı arabirimine sahip bazı davranış uygulayın.  
   
  Daha fazla bilgi için [denetimleri](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
@@ -151,38 +151,38 @@ End Namespace
 ### <a name="wpf-controls-by-function"></a>İşleve göre WPF denetimleri  
  Yerleşik WPF denetimleri burada listelenir.  
   
--   **Düğmeler**: <xref:System.Windows.Controls.Button> ve <xref:System.Windows.Controls.Primitives.RepeatButton>.  
+- **Düğmeler**: <xref:System.Windows.Controls.Button> ve <xref:System.Windows.Controls.Primitives.RepeatButton>.  
   
--   **Veri görüntüsüne**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>, ve <xref:System.Windows.Controls.TreeView>.  
+- **Veri görüntüsüne**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>, ve <xref:System.Windows.Controls.TreeView>.  
   
--   **Tarih görüntüleme ve seçim**: <xref:System.Windows.Controls.Calendar> ve <xref:System.Windows.Controls.DatePicker>.  
+- **Tarih görüntüleme ve seçim**: <xref:System.Windows.Controls.Calendar> ve <xref:System.Windows.Controls.DatePicker>.  
   
--   **İletişim kutuları**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>, ve <xref:Microsoft.Win32.SaveFileDialog>.  
+- **İletişim kutuları**: <xref:Microsoft.Win32.OpenFileDialog>, <xref:System.Windows.Controls.PrintDialog>, ve <xref:Microsoft.Win32.SaveFileDialog>.  
   
--   **Dijital Mürekkep**: <xref:System.Windows.Controls.InkCanvas> ve <xref:System.Windows.Controls.InkPresenter>.  
+- **Dijital Mürekkep**: <xref:System.Windows.Controls.InkCanvas> ve <xref:System.Windows.Controls.InkPresenter>.  
   
--   **Belgeler**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, ve <xref:System.Windows.Controls.StickyNoteControl>.  
+- **Belgeler**: <xref:System.Windows.Controls.DocumentViewer>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentScrollViewer>, ve <xref:System.Windows.Controls.StickyNoteControl>.  
   
--   **Giriş**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, ve <xref:System.Windows.Controls.PasswordBox>.  
+- **Giriş**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, ve <xref:System.Windows.Controls.PasswordBox>.  
   
--   **Düzen**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>, ve <xref:System.Windows.Controls.WrapPanel>.  
+- **Düzen**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>, ve <xref:System.Windows.Controls.WrapPanel>.  
   
--   **Medya**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>, ve <xref:System.Windows.Controls.SoundPlayerAction>.  
+- **Medya**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>, ve <xref:System.Windows.Controls.SoundPlayerAction>.  
   
--   **Menüler**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>, ve <xref:System.Windows.Controls.ToolBar>.  
+- **Menüler**: <xref:System.Windows.Controls.ContextMenu>, <xref:System.Windows.Controls.Menu>, ve <xref:System.Windows.Controls.ToolBar>.  
   
--   **Gezinti**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, ve <xref:System.Windows.Controls.TabControl>.  
+- **Gezinti**: <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, ve <xref:System.Windows.Controls.TabControl>.  
   
--   **Seçimi**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>, ve <xref:System.Windows.Controls.Slider>.  
+- **Seçimi**: <xref:System.Windows.Controls.CheckBox>, <xref:System.Windows.Controls.ComboBox>, <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.RadioButton>, ve <xref:System.Windows.Controls.Slider>.  
   
--   **Kullanıcı bilgilerini**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, ve <xref:System.Windows.Controls.ToolTip>.  
+- **Kullanıcı bilgilerini**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, ve <xref:System.Windows.Controls.ToolTip>.  
   
-##  <a name="Input_And_Commanding"></a> Giriş ve komut vermeye genel  
+## <a name="Input_And_Commanding"></a> Giriş ve komut vermeye genel  
  Denetimleri çoğunlukla algılar ve kullanıcı girişine yanıt verir. [WPF giriş sistem](https://msdn.microsoft.com/library/ms754010\(v=vs.100\).aspx) doğrudan ve yönlendirilmiş olaylar metin girişi, odağı yönetim ve fare konumlandırma desteklemek için kullanır.  
   
  Uygulamalar genellikle karmaşık giriş gereksinimlerine sahiptir. WPF sağlar bir [komut sistemi](https://msdn.microsoft.com/library/ms752308\(v=vs.100\).aspx) giriş kullanıcı eylemlerini söz konusu eylemlere yanıt veren kodundan ayırır.  
   
-##  <a name="Layout"></a> Düzen  
+## <a name="Layout"></a> Düzen  
  Bir kullanıcı arabirimi oluşturduğunuzda, konum ve boyut bir düzen oluşturmak için denetimlerinizin düzenleyin. Pencere boyutu değiştiğinde bunlara uyum sağlayabilir ve ayarlarını görüntülemek için herhangi bir düzen anahtarı gereksinimi var. Şu durumlarda bir düzende uyarlamak üzere kod yazmak için zorlama yerine WPF birinci sınıf, Genişletilebilir düzen sistemi için sunar.  
   
  Düzen sistemi göreli konumlandırma, hangi penceresi değişen benimsemesine ve koşullar görüntüleme olanağı artırır taşıdır. Ayrıca, düzen sistemi belirleme düzenini belirlemek için denetimler arasındaki yönetir. Anlaşma iki adımlı bir işlemdir: ilk olarak, bir denetimin hangi konum ve boyut gerektiriyor; üst bildirir İkinci olarak, üst denetimin sağlayabilirsiniz hangi alanı bildirir.  
@@ -214,7 +214,7 @@ End Namespace
   
  ![DockPanel sayfa](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
-##  <a name="Data_Binding"></a> Veri bağlama  
+## <a name="Data_Binding"></a> Veri bağlama  
  Çoğu uygulama, kullanıcılara görüntülemek ve veri düzenleme bulunmasını sağlamak için oluşturulur. WPF uygulamaları için depolama ve veri erişim iş zaten için SQL Server ve ADO .NET gibi teknolojileri tarafından sağlanır. Verilere nasıl erişildiği ve yönetilen nesnelere bir uygulamanın yüklü WPF uygulamaları için sabit çalışmaya başladıktan sonra. Esas olarak, bu iki şey içerir:  
   
 1. Verileri veri burada görüntülenir ve düzenlenebildiği denetimlere yönetilen nesneleri kopyalama.  
@@ -245,16 +245,16 @@ End Namespace
   
    Daha fazla bilgi için [Data Binding Overview](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
   
-##  <a name="Graphics"></a> Grafik  
+## <a name="Graphics"></a> Grafik  
  WPF kapsamlı, ölçeklenebilir ve esnek bir aşağıdaki avantajlara sahip grafik özellikler kümesi sağlar:  
   
--   **Çözüm bağımsız ve CİHAZDAN bağımsız grafik**. WPF Grafik sistemdeki temel ölçü olan 1 cihaz bağımsız piksel/96 inç gerçek bağımsız olarak, ekran çözünürlüğü ve çözümleme bağımsız ve CİHAZDAN bağımsız işleme için bir temel sunar. Her CİHAZDAN bağımsız piksel üzerinde işlediği sistemin nokta / inç (dpi) ayarını eşleşecek şekilde otomatik olarak ölçeklendirir.  
+- **Çözüm bağımsız ve CİHAZDAN bağımsız grafik**. WPF Grafik sistemdeki temel ölçü olan 1 cihaz bağımsız piksel/96 inç gerçek bağımsız olarak, ekran çözünürlüğü ve çözümleme bağımsız ve CİHAZDAN bağımsız işleme için bir temel sunar. Her CİHAZDAN bağımsız piksel üzerinde işlediği sistemin nokta / inç (dpi) ayarını eşleşecek şekilde otomatik olarak ölçeklendirir.  
   
--   **Gelişmiş duyarlılık**. WPF koordinat sistemini tek duyarlıklı yerine çift duyarlıklı kayan noktalı sayıların ile ölçülür. Dönüşümler ve saydamlık değerleri de çift duyarlık ifade edilir. WPF ayrıca geniş renk skalası (scRGB) destekler ve farklı bir renk boşlukları girişleri yönetmek için tümleşik destek sağlar.  
+- **Gelişmiş duyarlılık**. WPF koordinat sistemini tek duyarlıklı yerine çift duyarlıklı kayan noktalı sayıların ile ölçülür. Dönüşümler ve saydamlık değerleri de çift duyarlık ifade edilir. WPF ayrıca geniş renk skalası (scRGB) destekler ve farklı bir renk boşlukları girişleri yönetmek için tümleşik destek sağlar.  
   
--   **Grafikler ve animasyon Gelişmiş**. WPF grafik programlama animasyon sahneler yöneterek basitleştirir; Sahne işleme, işleme döngüler ve çift doğrusal enterpolasyon hakkında endişelenmenize gerek yoktur. Ayrıca, WPF, isabet sınaması ve tam alfa birleştirme desteği sağlar.  
+- **Grafikler ve animasyon Gelişmiş**. WPF grafik programlama animasyon sahneler yöneterek basitleştirir; Sahne işleme, işleme döngüler ve çift doğrusal enterpolasyon hakkında endişelenmenize gerek yoktur. Ayrıca, WPF, isabet sınaması ve tam alfa birleştirme desteği sağlar.  
   
--   **Donanım hızlandırma**. WPF Grafik sistem CPU kullanımını en aza indirmek için grafik donanımının yararlanır.  
+- **Donanım hızlandırma**. WPF Grafik sistem CPU kullanımını en aza indirmek için grafik donanımının yararlanır.  
   
 ### <a name="2-d-shapes"></a>2B şekiller  
  WPF genel vektör çizimli 2B şekiller, dikdörtgenler ve üç nokta simgesini aşağıdaki çizimde gösterildiği gibi bir kitaplık sağlar.  
@@ -299,14 +299,14 @@ End Namespace
   
  Daha fazla bilgi için [3B Grafiklere Genel Bakış](https://msdn.microsoft.com/library/ms747437\(v=vs.100\).aspx).  
   
-##  <a name="Animation"></a> Animasyon  
+## <a name="Animation"></a> Animasyon  
  WPF animasyonu destek sağlar, arttıkça, sallayın denetimleri yaptığınız döndürme ve ilgi çekici oluşturmak için fade geçişleri ve daha fazla sayfa. Çoğu WPF sınıf animasyon, hatta özel sınıflar. Aşağıdaki şekilde basit animasyon gösterilmiştir.  
   
  ![Animasyonlu bir küp görüntülerini](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Daha fazla bilgi için [animasyona genel bakış](https://msdn.microsoft.com/library/ms752312\(v=vs.100\).aspx).  
   
-##  <a name="Media"></a> Medya  
+## <a name="Media"></a> Medya  
  Zengin içerik iletmek için bir görsel ve işitsel ortam genelindeki yoludur. WPF, görüntü, video ve ses için özel desteği sağlar.  
   
 ### <a name="images"></a>Görüntüler  
@@ -327,7 +327,7 @@ End Namespace
   
  Daha fazla bilgi için [WPF Grafik, animasyon ve medya genel bakış](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx).  
   
-##  <a name="Text_and_Typography"></a> Metin ve tipografi  
+## <a name="Text_and_Typography"></a> Metin ve tipografi  
  Yüksek kaliteli metin işleme kolaylaştırmak için WPF aşağıdaki özellikleri sunmaktadır:  
   
 - OpenType yazı tipi desteği.  
@@ -346,7 +346,7 @@ End Namespace
   
   Daha fazla bilgi için [tipografi Windows Presentation Foundation'da](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Customization"></a> WPF uygulamaları özelleştirme  
+## <a name="WPF_Customization"></a> WPF uygulamaları özelleştirme  
  Bu noktaya kadar uygulamaları geliştirmek için çekirdek WPF yapı taşlarını öğrendiniz. Uygulama modeli, barındırmak ve çoğunlukla denetimlerden oluşan uygulama içerik teslim etmek için kullanın. Bir kullanıcı arabirimi denetimleri düzenlemesini basitleştirmek ve pencere boyutunu değişiklikleri karşılaşıldığında düzenlemeyi korunduğundan emin olmak ve ayarlarını görüntülemek için WPF düzen sistemi kullanın. Uygulamaların çoğu verilerle etkileşimde bulunmak kullanıcıların olduğundan, kullanıcı arabirimi ile veri tümleştirme iş miktarını azaltmaya yönelik veri bağlama kullanın. Uygulamanızın görünümünü geliştirmek için WPF tarafından sağlanan kapsamlı grafikler, animasyon ve medya kullanın.  
   
  Genellikle, yine de temellerini oluşturma ve kullanıcı deneyimi görsel olarak etkileyici tamamen ayrı yönetmek için yeterli değildir. Standart WPF denetimleri kullanarak, uygulamanızın istediğiniz görünümü ile tümleştirmemek. Veri en etkili şekilde görüntülenmeyebilir. Varsayılan Görünüm ve yapısını için Windows temaları, uygulamanızın genel kullanıcı deneyimini uygun olmayabilir. Birçok yolla sunu teknolojisi olarak herhangi bir genişletilebilirlik türden görsel genişletilebilirlik gerekir.  
@@ -498,18 +498,18 @@ End Namespace
   
  Özel denetimler hakkında daha fazla bilgi için bkz. [denetim yazmaya genel bakış](https://msdn.microsoft.com/library/ms745025\(v=vs.100\).aspx).  
   
-##  <a name="WPF_Best_Practices"></a> WPF en iyi uygulamalar  
+## <a name="WPF_Best_Practices"></a> WPF en iyi uygulamalar  
  Bir geliştirme platformu olduğu gibi WPF istenen sonucu elde etmek için yol çeşitli içinde kullanılabilir. WPF emin olmanın bir yolu olarak uygulamalar gerekli bir kullanıcı deneyimi sağlar ve İzleyici genel karşılayacak, erişilebilirlik, Genelleştirme ve yerelleştirme ve performans için en iyi var. önerilir. Daha fazla bilgi için aşağıdakilere bakın:  
   
--   [En iyi erişilebilirlik uygulamaları](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)en iyi erişilebilirlik uygulamaları  
+- [En iyi erişilebilirlik uygulamaları](https://msdn.microsoft.com/library/aa350483\(v=vs.100\).aspx)en iyi erişilebilirlik uygulamaları  
   
--   [WPF Genelleştirmesi ve Yerelleştirmesine Genel Bakış](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
+- [WPF Genelleştirmesi ve Yerelleştirmesine Genel Bakış](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx)  
   
--   [WPF Uygulama Performansını İyileştirme](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
+- [WPF Uygulama Performansını İyileştirme](https://msdn.microsoft.com/library/aa970683\(v=vs.100\).aspx)  
   
--   [Windows Presentation Foundation güvenliği](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
+- [Windows Presentation Foundation güvenliği](https://msdn.microsoft.com/library/aa970906\(v=vs.100\).aspx)  
   
-##  <a name="Summary"></a> Özeti  
+## <a name="Summary"></a> Özeti  
  WPF, istemci uygulamalarını görsel olarak etkileyici çeşitli oluşturmaya yönelik bir kapsamlı sunu teknolojisidir. Bu giriş, WPF anahtar özelliklerini göz sağlamıştır.  
   
  Sonraki adım, WPF uygulamaları oluşturmaktır!  

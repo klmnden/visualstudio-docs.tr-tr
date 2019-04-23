@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 458334beebe6be24b2bec70d0160688e48e653d6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 55e18da9eb7e887ca49565725737cfb8c5aa719e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075957"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Visual Studio Kubernetes araçları kullanmaya başlayın
 
@@ -36,13 +36,13 @@ Bu yeni işlevselliği yararlanmak için gerekir:
 ::: moniker range="vs-2017"
 - AKS için Visual Studio'dan yayımlamak isterseniz (*değil* Azure geliştirme alanları kullanarak AKS içinde hata ayıklama için gerekli):
 
-    1.  [Yayınlama araçları AKS](https://aka.ms/get-vsk8spublish), ayrı bir indirme olarak kullanılabilir.
+    1. [Yayınlama araçları AKS](https://aka.ms/get-vsk8spublish), ayrı bir indirme olarak kullanılabilir.
 
-    1.  Azure Kubernetes hizmeti kümesi. Daha fazla bilgi için [bir AKS kümesi oluşturma](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Mutlaka [kümeye bağlanma](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) geliştirme istasyonunuzdan.
+    1. Azure Kubernetes hizmeti kümesi. Daha fazla bilgi için [bir AKS kümesi oluşturma](/azure/aks/kubernetes-walkthrough-portal#create-an-aks-cluster). Mutlaka [kümeye bağlanma](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster) geliştirme istasyonunuzdan.
 
-    1.  Helm CLI geliştirme iş istasyonunuzda yüklü. Daha fazla bilgi için [yükleme Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
+    1. Helm CLI geliştirme iş istasyonunuzda yüklü. Daha fazla bilgi için [yükleme Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  AKS kümenizi karşı kullanılarak yapılandırılan helm `helm init` komutu. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Helm yapılandırma](/azure/aks/kubernetes-helm#configure-helm).
+    1. AKS kümenizi karşı kullanılarak yapılandırılan helm `helm init` komutu. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Helm yapılandırma](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
 
 ## <a name="create-a-new-kubernetes-project"></a>Yeni bir Kubernetes projesi oluşturma

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3af25c298970d9fe7f4a1442dedaf3af9f0172d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095444"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>İzlenecek yol: ClickOnce dağıtım Tasarımcısı'nı kullanarak API'si ile uydu derlemelerini indirme
 Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kültürde yapılandırılabilir. A *uydu derleme* uygulamanın varsayılan kültürünü dışındaki bir kültür için uygulama kaynaklarını içeren bir derlemedir.
@@ -39,39 +39,39 @@ Windows Forms uygulamaları için uydu derlemelerini kullanarak birden çok kül
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>Uydu derlemeleri isteğe bağlı olarak işaretlemek için
 
-1.  Projenizi yapılandırın. Bu, tüm kültürler için yerelleştirme için uydu derlemeleri üretir.
+1. Projenizi yapılandırın. Bu, tüm kültürler için yerelleştirme için uydu derlemeleri üretir.
 
-2.  Çözüm Gezgini'nde proje adına sağ tıklayın ve **özellikleri**.
+2. Çözüm Gezgini'nde proje adına sağ tıklayın ve **özellikleri**.
 
-3.  Tıklayın **Yayımla** sekmesine ve ardından **uygulama dosyaları**.
+3. Tıklayın **Yayımla** sekmesine ve ardından **uygulama dosyaları**.
 
-4.  Seçin **tüm dosyaları göster** uydu derlemelerini görüntülemek için onay kutusu. Varsayılan olarak tüm uydu derlemelerini, dağıtımınızdaki dahil edilir ve bu iletişim kutusunda görünmez.
+4. Seçin **tüm dosyaları göster** uydu derlemelerini görüntülemek için onay kutusu. Varsayılan olarak tüm uydu derlemelerini, dağıtımınızdaki dahil edilir ve bu iletişim kutusunda görünmez.
 
      Uydu derlemesi biçiminde bir ada sahip olacaktır  *\<isoCode > \ApplicationName.resources.dll*burada \<isoCode > RFC 1766 biçiminde bir dil tanımlayıcısı.
 
-5.  Tıklayın **yeni** içinde **indirme grubu** listesini her bir dil tanımlayıcısı. İndirme grubu adı için istendiğinde dil tanımlayıcısı girin. Örneğin, Japonca uydu derlemesi için indirme grubu adını belirtirsiniz `ja-JP`.
+5. Tıklayın **yeni** içinde **indirme grubu** listesini her bir dil tanımlayıcısı. İndirme grubu adı için istendiğinde dil tanımlayıcısı girin. Örneğin, Japonca uydu derlemesi için indirme grubu adını belirtirsiniz `ja-JP`.
 
-6.  Kapat **uygulama dosyaları** iletişim kutusu.
+6. Kapat **uygulama dosyaları** iletişim kutusu.
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>C'de uydu derlemelerini yüklemek için\#
 
-1.  Açık *Program.cs* dosya. Bu dosya Çözüm Gezgini'nde, projenizi seçin görmüyorsanız ve üzerinde **proje** menüsünü tıklatın **tüm dosyaları göster**.
+1. Açık *Program.cs* dosya. Bu dosya Çözüm Gezgini'nde, projenizi seçin görmüyorsanız ve üzerinde **proje** menüsünü tıklatın **tüm dosyaları göster**.
 
-2.  Uygun bir uydu derlemesini indirmek ve uygulamanızı başlatmak için aşağıdaki kodu kullanın.
+2. Uygun bir uydu derlemesini indirmek ve uygulamanızı başlatmak için aşağıdaki kodu kullanın.
 
      [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Visual Basic'te uydu derlemelerini yüklemek için
 
-1.  İçinde **özellikleri** uygulamanın pencereye tıklayın **uygulama** sekmesi.
+1. İçinde **özellikleri** uygulamanın pencereye tıklayın **uygulama** sekmesi.
 
-2.  Sekme sayfanın en altında tıklayın **uygulama olaylarını görüntüle**.
+2. Sekme sayfanın en altında tıklayın **uygulama olaylarını görüntüle**.
 
-3.  Başlangıcına aşağıdaki içeri aktarmaları ekleyin *ApplicationEvents.VB* dosya.
+3. Başlangıcına aşağıdaki içeri aktarmaları ekleyin *ApplicationEvents.VB* dosya.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
-4.  Aşağıdaki kodu ekleyin `MyApplication` sınıfı.
+4. Aşağıdaki kodu ekleyin `MyApplication` sınıfı.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]
 

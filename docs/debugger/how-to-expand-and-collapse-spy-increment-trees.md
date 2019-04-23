@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071193"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Nasıl yapılır: Spy ++ ağaçlarını daraltma ve genişletme
 Genişletin ve iki yöntemi kullanarak Windows, işlemleri ve iş parçacığı görünümleri Daralt: penceresinde veya kullanarak simgeleri tıklayarak **ağaç** menüsü. + Ve - simgeler ağacında Visual C++ proje penceresinde yaptıkları gibi davranacak.
@@ -34,9 +34,9 @@ Genişletin ve iki yöntemi kullanarak Windows, işlemleri ve iş parçacığı 
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>Genişlet veya daralt Spy ++ ağaçlarını için
 
-1.  Windows, işlemleri veya iş parçacıkları görünümünde öğelerden birini seçin.
+1. Windows, işlemleri veya iş parçacıkları görünümünde öğelerden birini seçin.
 
-2.  Gelen **ağaç** menüsünde genişletme birini seçin veya komutları daraltın.
+2. Gelen **ağaç** menüsünde genişletme birini seçin veya komutları daraltın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Spy++ kullanma](../debugger/using-spy-increment.md)

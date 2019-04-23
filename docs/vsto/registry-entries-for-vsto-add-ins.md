@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071814"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO eklentileri için kayıt defteri girişleri
   Visual Studio kullanılarak oluşturulan VSTO Add-Ins dağıttığınızda, belirli bir kayıt defteri girdileri oluşturmanız gerekir. Bu kayıt defteri girdileri bulmak ve VSTO eklentisi yükleme Microsoft Office uygulamasını sağlayan bilgiler sağlar.
@@ -78,7 +78,7 @@ ms.locfileid: "56612718"
 |**LoadBehavior**|REG_DWORD|Gerekli. Uygulama için VSTO eklentisi ve VSTO eklenti (yüklü veya kaldırılmış), geçerli durumunu yüklemeye çalıştığında belirten bir değeri.<br /><br /> Varsayılan olarak, bu girdi, VSTO eklentisi başlangıçta yüklendiğini belirten 3'e ayarlanır. Daha fazla bilgi için [LoadBehavior değerleri](#LoadBehavior). **Not:**  Bir kullanıcı için VSTO eklentisi devre dışı bırakırsa bu eylemi değiştirir **LoadBehavior** değerini **HKEY_CURRENT_USER** kayıt defteri kovanı. Her kullanıcının, değerini **LoadBehavior** HKEY_CURRENT_USER hive değerini geçersiz kılar, varsayılan **LoadBehavior** tanımlanan **HKEY_LOCAL_MACHINE** hive.|
 |**Bildirimi**|REG_SZ|Gerekli. Dağıtım bildirimi için VSTO eklentisi tam yolu. Yerel bilgisayardaki bir konuma yol olabilir bir ağ paylaşımına (UNC) veya bir Web sunucusu (HTTP).<br /><br /> Çözümü dağıtmak için Windows Installer kullanırsanız, ön eki eklemelisiniz **file:///** için **bildirim** yolu. Ayrıca dize eklemeniz gerekir  **&#124;vstolocal** (diğer bir deyişle, dikey çizgi karakterinden **&#124;** ardından **vstolocal**) sonuna kadar bu yolu. Bu, çözümünüzün ClickOnce önbelleğinden yerine yükleme klasörünü yüklenmesini sağlar. Daha fazla bilgi için [Windows Installer kullanarak Office çözümü dağıtma](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Not:**  Visual Studio geliştirme bilgisayarında bir VSTO eklentisi oluşturma sırasında otomatik olarak ekler  **&#124;vstolocal** bu kayıt defteri girdisi için dize.|
 
-###  <a name="OutlookEntries"></a> Outlook form bölgeleri için kayıt defteri girişleri
+### <a name="OutlookEntries"></a> Outlook form bölgeleri için kayıt defteri girişleri
  VSTO eklentisi için Outlook içinde bir özel form bölgesi oluşturursanız, ek kayıt defteri girdileri form bölgesinin Outlook ile kaydetmek için kullanılır. Bu girişler, bir form bölgesinin desteklediği her bir ileti sınıfı için farklı bir kayıt defteri anahtarı altında oluşturulur. Bu kayıt defteri anahtarlarını aşağıdaki konumda bulunan burada *kök* olduğu **HKEY_CURRENT_USER** veya **HKEY_LOCAL_MACHINE**.
 
  *Kök*\Software\Microsoft\Office\Outlook\FormRegions\\*ileti sınıfı*
@@ -87,7 +87,7 @@ ms.locfileid: "56612718"
 
  Form bölgesi kayıt defteri girdileri hakkında daha fazla bilgi için bkz. [özel bir formu bir form bölgesinin konumunu belirtin](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Outlook form bölgeleri hakkında daha fazla bilgi için bkz: [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
 
-##  <a name="LoadBehavior"></a> LoadBehavior değerleri
+## <a name="LoadBehavior"></a> LoadBehavior değerleri
  **LoadBehavior** altında girdisi *kök*\Software\Microsoft\Office\\*uygulama adı*\Addins\\*eklentisi Kimliği* anahtar VSTO eklentisi çalışma zamanı davranışını belirten değerlerinin Bitsel bir birleşimi içerir. En düşük sıralı bitten (değerler 0 ile 1) VSTO eklentisi şu anda kaldırıldı yüklenen mı olduğunu gösterir. Uygulama için VSTO eklentisi yüklemeye çalıştığında diğer bitler gösterir.
 
  Genellikle, **LoadBehavior** girişi, 0, 3 ya da 16 (ondalık)'için ayarlanmış olması amaçlanmıştır VSTO eklentisi yüklü olduğunda son kullanıcı bilgisayarlarında. Varsayılan olarak, Visual Studio ayarlar **LoadBehavior** VSTO eklenti oluşturun veya yayımladığınızda 3 girişi.

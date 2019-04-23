@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a32de469c5b58ca2bf58901e30b81cfb70ed84b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099474"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Kullanım **VsPerf** komut satırı aracı:
   
    Profil oluşturma seçenekleriniz hakkında daha fazla bilgi için bkz. [Windows 8 ve Windows Server 2012 uygulamalarında performans araçları](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
+## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  Bu konu ile kullanabileceğiniz seçenekler açıklanmaktadır `vsperf.exe` komut satırı aracı. Bu konuda aşağıdaki bölümleri içerir:  
   
  [Yalnızca Windows Store uygulamaları](#BKMK_windows_store_apps_only)  
@@ -36,7 +36,7 @@ Kullanım **VsPerf** komut satırı aracı:
   
  [Tüm uygulamalar](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Yalnızca Windows Store uygulamaları  
+## <a name="BKMK_windows_store_apps_only"></a> Yalnızca Windows Store uygulamaları  
  Bu seçenekler yalnızca Windows Store uygulamaları için geçerlidir.  
   
 |||  
@@ -47,7 +47,7 @@ Kullanım **VsPerf** komut satırı aracı:
 |**/noclr**|İsteğe bağlı. CLR veri toplamaz.<br /><br /> Sadece/Package kullanımı veya / ekleyin.<br /><br /> En iyi duruma getirilmesi, yönetilen sembol çözülecektir.|  
 |**/listapps**|Yüklü uygulama adları ve PackageFullNames listeleyin.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Masaüstü uygulamalarını Windows 8 ve Windows Server 2012 uygulamalar  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Masaüstü uygulamalarını Windows 8 ve Windows Server 2012 uygulamalar  
  Bu seçenekler, Windows Store apps üzerinde çalışmaz.  
   
 |||  
@@ -56,7 +56,7 @@ Kullanım **VsPerf** komut satırı aracı:
 |**args: {ExecutableArguments}**|Geçirilecek komut satırı bağımsız değişkenlerini belirtir **/başlatma** hedef.|  
 |**/ Console**|Çalıştırmaları **/başlatma** hedef yeni bir komut penceresinde.|  
   
-##  <a name="BKMK_All_applications"></a> Tüm uygulamalar  
+## <a name="BKMK_All_applications"></a> Tüm uygulamalar  
  Bu seçenek, herhangi bir Windows 8 veya Windows Server 2012 uygulama için geçerlidir.  
   
 |||  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101450"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özelliklerini Visual Studio'ya tümleştirmenize yardımcı olur. Diğer kullanıcılara yanı sıra Visual Studio Marketi uzantılarınızı dağıtabilirsiniz. Visual Studio genişletebileceğiniz yollardan bazılarını aşağıda verilmiştir:
@@ -67,11 +67,11 @@ Visual Studio SDK, Visual Studio özellikleri genişletmek veya yeni özellikler
 
  Daha fazla bilgi bulabilirsiniz [VSX Arcana blog](https://blogs.msdn.microsoft.com/vsx/) ve bloglar Microsoft MVPs tarafından yazılan bir dizi:
 
--   [Sık kullandığınız Visual Studio uzantıları](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Sık kullandığınız Visual Studio uzantıları](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
 
--   [Visual Studio genişletilebilirliği](http://www.visualstudioextensibility.com/overview/vs/)
+- [Visual Studio genişletilebilirliği](http://www.visualstudioextensibility.com/overview/vs/)
 
--   [Visual Studio'yu genişletme](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Visual Studio'yu genişletme](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)

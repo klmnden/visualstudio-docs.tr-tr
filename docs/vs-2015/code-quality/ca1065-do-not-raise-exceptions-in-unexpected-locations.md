@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095359"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Beklenmeyen konumlarda özel durum harekete geçirmeyin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,24 +65,24 @@ ms.locfileid: "54773422"
 
  Aşağıdaki özel durumlar, bir özellik get yöntemi durum oluşturulmasına izin verilir:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> ve tüm türevleri (dahil olmak üzere <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> ve tüm türevleri (dahil olmak üzere <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> ve tüm türevleri
+- <xref:System.NotSupportedException?displayProperty=fullName> ve tüm türevleri
 
--   <xref:System.ArgumentException?displayProperty=fullName> (yalnızca get dizinlenmiş)
+- <xref:System.ArgumentException?displayProperty=fullName> (yalnızca get dizinlenmiş)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (yalnızca get dizinlenmiş)
+- <xref:System.Collections.Generic.KeyNotFoundException> (yalnızca get dizinlenmiş)
 
 ### <a name="event-accessor-methods"></a>Olay erişimci metotları
  Olay erişimcileri, özel durum oluşturması beklenmiyor basit işlemler olmalıdır. Bir olay, bir olay işleyicisi ekleyip çalıştığınızda bir özel durum oluşturmamalıdır.
 
  Aşağıdaki özel durumlar, bir olay accesor durum oluşturulmasına izin verilir:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> ve tüm türevleri (dahil olmak üzere <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> ve tüm türevleri (dahil olmak üzere <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> ve tüm türevleri
+- <xref:System.NotSupportedException?displayProperty=fullName> ve tüm türevleri
 
--   <xref:System.ArgumentException> ve türevleri
+- <xref:System.ArgumentException> ve türevleri
 
 ### <a name="equals-methods"></a>Equals yöntemi
  Aşağıdaki **eşittir** yöntemleri, özel durum oluşturmamalıdır:

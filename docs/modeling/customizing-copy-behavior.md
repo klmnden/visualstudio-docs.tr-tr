@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109835"
 ---
 # <a name="customizing-copy-behavior"></a>Kopyalama Davranışını Özelleştirme
 Visual Studio Görselleştirme ve modelleme SDK'sı ile oluşturulan bir etki alanına özgü dil (DSL), kullanıcı kopyalar ve öğeleri yapıştırır ne olur değiştirebilirsiniz.
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  İki yöntem ElementOperations sınıfınızda tanımlayın:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` Kaynak öğesi hedef şekli, bağlayıcı veya diyagram sürüklenebilen olup olmadığını belirler.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` Kaynak öğesi hedef şekli, bağlayıcı veya diyagram sürüklenebilen olup olmadığını belirler.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` hangi hedef kaynak öğesi birleştirir.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` hangi hedef kaynak öğesi birleştirir.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` Diyagram üzerinde fareyi hareket ettirdikçe kullanıcıya verilmesi gerektiğini geri bildirim belirlemek için çağrılır. Yöntem parametreleri fareyi üzerine getirildiğinde öğesi ve sürükleme işlemi gerçekleştirildikten kaynağıyla ilgili verileri bilgileridir. Kullanıcının herhangi bir ekranda sürükleyebilirsiniz. Bu nedenle, kaynak nesnesi, farklı türlerde olabilir ve farklı biçimlerde seri hale getirilebilir. Kaynak bir DSL veya UML model veri parametresi serileştirmek ise, bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Sürükleyin, kopyalama ve araç operations ElementGroupPrototypes modelleri parçalarını temsil etmek için kullanın.

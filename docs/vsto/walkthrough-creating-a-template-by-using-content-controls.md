@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26632961474f54a545ff0fa900fff6c50a9ec3da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074381"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>İzlenecek yol: İçerik denetimlerini kullanarak şablon oluşturma
   Bu yönerge, yapılandırılmış ve yeniden kullanılabilir içerik bir Microsoft Office Word şablonu oluşturmak için içerik denetimlerini kullanan bir belge düzeyi özelleştirmeyi oluşturma işlemini gösterir.
@@ -47,16 +47,16 @@ ms.locfileid: "56605945"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word.
+- Microsoft Word.
 
 ## <a name="create-a-new-word-template-project"></a>Yeni bir Word şablonu projesi oluşturma
  Word şablonu oluşturun, böylece kullanıcılar kendi kopyalarını kolayca oluşturabilir.
 
 ### <a name="to-create-a-new-word-template-project"></a>Yeni bir Word şablonu projesi oluşturmak için
 
-1.  Adlı bir Word şablonu projesi oluşturun **ne MyBuildingBlockTemplate**. Sihirbazda, çözümdeki bir yeni belge oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Adlı bir Word şablonu projesi oluşturun **ne MyBuildingBlockTemplate**. Sihirbazda, çözümdeki bir yeni belge oluşturun. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Yeni bir Word şablonu Tasarımcısı'nda açılır ve ekler **ne MyBuildingBlockTemplate** için proje **Çözüm Gezgini**.
 
@@ -137,14 +137,14 @@ ms.locfileid: "56605945"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>İçerik denetimleri UI'ını program aracılığıyla değiştirmek için
 
-1.  İçinde **Çözüm Gezgini**, sağ **ThisDocument.vb** veya **ThisDocument.vb**ve ardından **Kodu Görüntüle**.
+1. İçinde **Çözüm Gezgini**, sağ **ThisDocument.vb** veya **ThisDocument.vb**ve ardından **Kodu Görüntüle**.
 
-2.  Aşağıdaki kodu ekleyin `ThisDocument` sınıfı. Bu kod, bu kılavuzda daha sonra kullanacağınız birçok nesne bildirir.
+2. Aşağıdaki kodu ekleyin `ThisDocument` sınıfı. Bu kod, bu kılavuzda daha sonra kullanacağınız birçok nesne bildirir.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
 
-3.  Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı. Bu kod girişleri ekler <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ve <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> tablolar ve kümelerini kullanıcı önce bu denetimlerin her birinden görüntülenen yer tutucu metni bunları düzenler.
+3. Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı. Bu kod girişleri ekler <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ve <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> tablolar ve kümelerini kullanıcı önce bu denetimlerin her birinden görüntülenen yer tutucu metni bunları düzenler.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
@@ -154,7 +154,7 @@ ms.locfileid: "56605945"
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>Kullanıcıların çalışan tablonuzu düzenlemesini önlemek için
 
-1.  Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod içinde tablo koyarak çalışan tablosunu düzenleme kullanıcıların engeller <xref:Microsoft.Office.Tools.Word.GroupContentControl> daha önce bildirilen nesne.
+1. Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod içinde tablo koyarak çalışan tablosunu düzenleme kullanıcıların engeller <xref:Microsoft.Office.Tools.Word.GroupContentControl> daha önce bildirilen nesne.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
@@ -164,12 +164,12 @@ ms.locfileid: "56605945"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Şablon yapı taşları tabloları eklemek için
 
-1.  Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod, şablonu yeniden kullanılabilir tüm yapı taşlarını içeren Microsoft.Office.Interop.Word.BuildingBlockEntries koleksiyonuna tabloları içeren yeni yapı taşları ekler. Yeni yapı taşları adlı yeni bir kategoride tanımlanan **çalışan ve müşteri bilgilerinin** ve yapı taşı türüne atanan `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod, şablonu yeniden kullanılabilir tüm yapı taşlarını içeren Microsoft.Office.Interop.Word.BuildingBlockEntries koleksiyonuna tabloları içeren yeni yapı taşları ekler. Yeni yapı taşları adlı yeni bir kategoride tanımlanan **çalışan ve müşteri bilgilerinin** ve yapı taşı türüne atanan `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
 
-2.  Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod, şablondan tabloları siler. Tablolar, artık yeniden kullanılabilir şablon yapı taşları Galerisine eklediğiniz için gereklidir. Böylece korunan çalışan tablosunun silinebilir kod, ilk belge tasarım moduna geçirir.
+2. Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod, şablondan tabloları siler. Tablolar, artık yeniden kullanılabilir şablon yapı taşları Galerisine eklediğiniz için gereklidir. Böylece korunan çalışan tablosunun silinebilir kod, ilk belge tasarım moduna geçirir.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
@@ -179,7 +179,7 @@ ms.locfileid: "56605945"
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Yapı taşlarını görüntüler bir içerik denetimi oluşturmak için
 
-1.  Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod başlatır <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> daha önce bildirilen nesne. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Kategoride tanımlanan tüm yapı taşlarını görüntüler **çalışan ve müşteri bilgilerinin** ve Yapı bloğu türü `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Aşağıdaki kodu ekleyin `ThisDocument_Startup` yöntemi `ThisDocument` sınıfı, önceki adımda eklediğiniz koddan sonra. Bu kod başlatır <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> daha önce bildirilen nesne. <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> Kategoride tanımlanan tüm yapı taşlarını görüntüler **çalışan ve müşteri bilgilerinin** ve Yapı bloğu türü `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
@@ -189,50 +189,50 @@ ms.locfileid: "56605945"
 
 ### <a name="to-test-the-employee-table"></a>Çalışan tablonuzu test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
-2.  Tıklayın **, ilk Yapı bloğu seçmek** ilk Yapı Taşı Galerisi içerik denetimi görüntülenecek.
+2. Tıklayın **, ilk Yapı bloğu seçmek** ilk Yapı Taşı Galerisi içerik denetimi görüntülenecek.
 
-3.  Aşağı açılan oku tıklatın **Özel Galeri 1** denetimi başlık ve seçin **çalışan tablonuzu**.
+3. Aşağı açılan oku tıklatın **Özel Galeri 1** denetimi başlık ve seçin **çalışan tablonuzu**.
 
-4.  Sağındaki hücreyi tıklatın **çalışan adı** hücre ve bir ad yazın.
+4. Sağındaki hücreyi tıklatın **çalışan adı** hücre ve bir ad yazın.
 
      Bu hücreye yalnızca metin ekleyebilirsiniz doğrulayın. <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> Yalnızca metin, resim veya bir tablo gibi içerik olmayan diğer türleri eklemek kullanıcıların sağlar.
 
-5.  Sağındaki hücreyi tıklatın **işe giriş tarihi** hücre ve bir tarih tarih seçiciden seçin.
+5. Sağındaki hücreyi tıklatın **işe giriş tarihi** hücre ve bir tarih tarih seçiciden seçin.
 
-6.  Sağındaki hücreyi tıklatın **başlık** hücre ve birleşik giriş kutusuna iş başlıklarından birini seçin.
+6. Sağındaki hücreyi tıklatın **başlık** hücre ve birleşik giriş kutusuna iş başlıklarından birini seçin.
 
      İsteğe bağlı olarak, listede olmayan bir iş unvanı adını yazın. Bu mümkün olur çünkü <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> girişleri listesinden seçin veya kendi girişler yazmak için kullanıcıların sağlar.
 
-7.  Simgesini sağındaki hücrede **resim** hücre ve görüntülemek için bir görüntü için göz atın.
+7. Simgesini sağındaki hücrede **resim** hücre ve görüntülemek için bir görüntü için göz atın.
 
-8.  Satırlar veya sütunlar tabloya eklenecek deneyin ve satırları ve sütunları tablodan silmeyi deneyin. Tabloyu değiştiremezsiniz doğrulayın. <xref:Microsoft.Office.Tools.Word.GroupContentControl> Herhangi bir değişiklik yapmanızı önler.
+8. Satırlar veya sütunlar tabloya eklenecek deneyin ve satırları ve sütunları tablodan silmeyi deneyin. Tabloyu değiştiremezsiniz doğrulayın. <xref:Microsoft.Office.Tools.Word.GroupContentControl> Herhangi bir değişiklik yapmanızı önler.
 
 ### <a name="to-test-the-customer-feedback-table"></a>Müşteri geri bildirim tablo test etmek için
 
-1.  Tıklayın **seçin, ikinci bir yapı taşı** ikinci Yapı Taşı Galerisi içerik denetimi görüntülenecek.
+1. Tıklayın **seçin, ikinci bir yapı taşı** ikinci Yapı Taşı Galerisi içerik denetimi görüntülenecek.
 
-2.  Aşağı açılan oku tıklatın **Özel Galeri 1** denetimi başlık ve seçin **müşteri tablosu**.
+2. Aşağı açılan oku tıklatın **Özel Galeri 1** denetimi başlık ve seçin **müşteri tablosu**.
 
-3.  Sağındaki hücreyi tıklatın **müşteri adı** hücre ve bir ad yazın.
+3. Sağındaki hücreyi tıklatın **müşteri adı** hücre ve bir ad yazın.
 
-4.  Sağındaki hücreyi tıklatın **memnuniyeti derecelendirme** hücre ve kullanılabilir seçeneklerden birini belirleyin.
+4. Sağındaki hücreyi tıklatın **memnuniyeti derecelendirme** hücre ve kullanılabilir seçeneklerden birini belirleyin.
 
      Kendi giriş yazamazsınız doğrulayın. <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> Kullanıcıların yalnızca bir girdi listesinden seçmesine izin verir.
 
-5.  Sağındaki hücreyi tıklatın **açıklamaları** hücre ve bir açıklama yazın.
+5. Sağındaki hücreyi tıklatın **açıklamaları** hücre ve bir açıklama yazın.
 
      İsteğe bağlı olarak, metin, resim veya katıştırılmış bir tablo gibi dışındaki bazı içerik ekleyin. Bu mümkün olur çünkü <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kullanıcıların metin dışında içerik eklemesine olanak sağlar.
 
-6.  Tabloya satır veya sütun ekleyebilir ve tablodan satırları ve sütunları silebilirsiniz doğrulayın. Bu olasıdır, tablonun koyarak koruduğu değil çünkü bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
+6. Tabloya satır veya sütun ekleyebilir ve tablodan satırları ve sütunları silebilirsiniz doğrulayın. Bu olasıdır, tablonun koyarak koruduğu değil çünkü bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
-7.  Şablon kapatın.
+7. Şablon kapatın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu konu başlığından içerik denetimleri kullanma hakkında daha fazla bilgi edinebilirsiniz:
 
--   İçerik denetimleri, bir belgeye ekli özel XML parçaları olarak da adlandırılan, XML parçalarının bağlayın. Daha fazla bilgi için [izlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+- İçerik denetimleri, bir belgeye ekli özel XML parçaları olarak da adlandırılan, XML parçalarının bağlayın. Daha fazla bilgi için [izlenecek yol: İçerik denetimlerini özel XML bölümlerine bağlama](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Genişletilmiş nesneleri kullanarak Word'ü otomatikleştirirken](../vsto/automating-word-by-using-extended-objects.md)

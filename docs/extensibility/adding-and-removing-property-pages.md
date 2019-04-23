@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095496"
 ---
 # <a name="add-and-remove-property-pages"></a>Özellik sayfaları eklemenizi ve kaldırmanızı
 
@@ -32,7 +32,7 @@ Proje Tasarımcısı'nda ek özellik sayfaları görüntülemek bir proje alt s�
 
 ### <a name="remove-a-property-page"></a>Bir özellik sayfasını Kaldır
 
-1.  Geçersiz kılma `GetProperty(uint itemId, int propId, out object property)` yöntemi özellik sayfaları filtrelemek ve almak için bir `clsids` listesi.
+1. Geçersiz kılma `GetProperty(uint itemId, int propId, out object property)` yöntemi özellik sayfaları filtrelemek ve almak için bir `clsids` listesi.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Proje Tasarımcısı'nda ek özellik sayfaları görüntülemek bir proje alt s�
     }
     ```
 
-2.  Kaldırma **Build Events** sayfasından alınan `clsids` listesi.
+2. Kaldırma **Build Events** sayfasından alınan `clsids` listesi.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ Proje Tasarımcısı'nda ek özellik sayfaları görüntülemek bir proje alt s�
 
 ### <a name="add-a-property-page"></a>Bir özellik sayfası Ekle
 
-1.  Eklemek istediğiniz bir özellik sayfası oluşturun.
+1. Eklemek istediğiniz bir özellik sayfası oluşturun.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ Proje Tasarımcısı'nda ek özellik sayfaları görüntülemek bir proje alt s�
     }
     ```
 
-2.  Yeni özellik sayfanız kaydedin.
+2. Yeni özellik sayfanız kaydedin.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Proje Tasarımcısı'nda ek özellik sayfaları görüntülemek bir proje alt s�
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  Geçersiz kılma `GetProperty(uint itemId, int propId, out object property)` elde yöntemi özellik sayfaları filtre bir `clsids` listelemek ve yeni bir özellik sayfası ekleyin.
+3. Geçersiz kılma `GetProperty(uint itemId, int propId, out object property)` elde yöntemi özellik sayfaları filtre bir `clsids` listelemek ve yeni bir özellik sayfası ekleyin.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098590"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Visual Studio’da pencere düzenlerini özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Sıfırlama, adı ve pencere düzenlerini arasında geçiş yapma
  Kullanarak ayarlar koleksiyonunuz için özgün pencere düzenini IDE döndürebilir **pencere düzenini Sıfırla** komutu. Bu komutu çalıştırdığınızda, aşağıdaki eylemler gerçekleşir:
 
--   Tüm pencereler varsayılan konumlarına taşınır.
+- Tüm pencereler varsayılan konumlarına taşınır.
 
--   Varsayılan pencere düzeninde kapatılan Windows kapatılır.
+- Varsayılan pencere düzeninde kapatılan Windows kapatılır.
 
--   Varsayılan pencere düzeninde Windows açılır.
+- Varsayılan pencere düzeninde Windows açılır.
 
 ### <a name="create-and-save-custom-layouts"></a>Oluşturun ve özel düzenler kaydedin
  Visual Studio 2015, en fazla 10 özel pencere düzenlerini ve ikisi arasında hızlıca geçiş sağlar. Aşağıdaki adımlarda, oluşturma, kaydetme, çağırma ve her iki yerleşik ve kayan araç pencereleri ile birden çok monitör yararlanan özel düzenler yönetmek gösterilmektedir.
@@ -133,29 +133,29 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Bir kullanıcı Arabirimi projesi oluşturun ve düzeni özelleştirme
 
-1.  İçinde **yeni proje** iletişim kutusunda, bir Visual C# WPF masaüstü uygulaması oluşturun ve dilediğiniz çağırın. Bu proje alanı Tasarımcı penceresinin en üst düzeye çıkarmak ve diğer araç pencereleri dışına taşımak istediğimiz şekilde burada biz kullanıcı arabiriminde yoğun şekilde kullanacağınız olduğunu anlatabilirsiniz.
+1. İçinde **yeni proje** iletişim kutusunda, bir Visual C# WPF masaüstü uygulaması oluşturun ve dilediğiniz çağırın. Bu proje alanı Tasarımcı penceresinin en üst düzeye çıkarmak ve diğer araç pencereleri dışına taşımak istediğimiz şekilde burada biz kullanıcı arabiriminde yoğun şekilde kullanacağınız olduğunu anlatabilirsiniz.
 
-2.  Birden çok monitörü varsa, çekme **Çözüm Gezgini** penceresi ve **özellikleri** pencere üzerinde ikinci bir monitörünüz. Tek bir izleme sistemine, Tasarımcı dışındaki tüm windows kapatmayı deneyin.
+2. Birden çok monitörü varsa, çekme **Çözüm Gezgini** penceresi ve **özellikleri** pencere üzerinde ikinci bir monitörünüz. Tek bir izleme sistemine, Tasarımcı dışındaki tüm windows kapatmayı deneyin.
 
-3.  Tuşuna **Ctrl + Alt + X** araç kutusu görüntülenecek. Pencerenin yerleştirilmişse, böylece bir, iki monitörde konumlandırma için istediğiniz yerde gezinen sürükleyin.
+3. Tuşuna **Ctrl + Alt + X** araç kutusu görüntülenecek. Pencerenin yerleştirilmişse, böylece bir, iki monitörde konumlandırma için istediğiniz yerde gezinen sürükleyin.
 
-4.  Visual Studio hata ayıklama modu içine yerleştirmek için F5 tuşuna basın. Otolar ve çağrı yığını windows bunları istediğiniz gibi hata ayıklama çıkış konumunu ayarlayın. Düzenleme modunda hem hata ayıklama modunda oluşturmak üzere olduğunuz düzeni uygulanır.
+4. Visual Studio hata ayıklama modu içine yerleştirmek için F5 tuşuna basın. Otolar ve çağrı yığını windows bunları istediğiniz gibi hata ayıklama çıkış konumunu ayarlayın. Düzenleme modunda hem hata ayıklama modunda oluşturmak üzere olduğunuz düzeni uygulanır.
 
-5.  Katmanlarınızı hem hata ayıklama modu, hem de düzenleme modunda olduğunda istediğiniz, ana menüden **penceresi > pencere düzenini Kaydet**. Bu düzen "adı Tasarımcı" çağrısı
+5. Katmanlarınızı hem hata ayıklama modu, hem de düzenleme modunda olduğunda istediğiniz, ana menüden **penceresi > pencere düzenini Kaydet**. Bu düzen "adı Tasarımcı" çağrısı
 
      Ctrl + Alt + 1... ayrılmış listesinden yeni düzeninizi sonraki klavye kısayolunu atandığını dikkat edin. 0.
 
 ##### <a name="create-a-database-project-and-layout"></a>Bir veritabanı projesi oluşturup düzeni
 
-1.  Yeni bir **SQL Server veritabanı** çözüme bir proje.
+1. Yeni bir **SQL Server veritabanı** çözüme bir proje.
 
-2.  Yeni Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Nesne Gezgini görünümünde**. Bu görüntüler **SQL Server Nesne Gezgini** access tabloları, görünümleri ve veritabanınızdaki diğer nesnelerin sağlayan bir pencere. Bu pencere float veya yerleşik bırakın. Diğer araç pencereleri, istediğiniz şekilde ayarlayın. Eklenen gerçekçilik için gerçek bir veritabanı ekleyebilirsiniz, ancak bu kılavuz için gerekli değildir.
+2. Yeni Çözüm Gezgini'nde projeye sağ tıklayın ve seçin **Nesne Gezgini görünümünde**. Bu görüntüler **SQL Server Nesne Gezgini** access tabloları, görünümleri ve veritabanınızdaki diğer nesnelerin sağlayan bir pencere. Bu pencere float veya yerleşik bırakın. Diğer araç pencereleri, istediğiniz şekilde ayarlayın. Eklenen gerçekçilik için gerçek bir veritabanı ekleyebilirsiniz, ancak bu kılavuz için gerekli değildir.
 
-3.  Düzeninizi nasıl istediğinizi olduğunda, ana menüden **penceresi > pencere düzenini Kaydet**. Bu düzen "DB proje" çağrısı (Biz bu proje için hata ayıklama modu Yerleşimli çıkarmaz.)
+3. Düzeninizi nasıl istediğinizi olduğunda, ana menüden **penceresi > pencere düzenini Kaydet**. Bu düzen "DB proje" çağrısı (Biz bu proje için hata ayıklama modu Yerleşimli çıkarmaz.)
 
 ##### <a name="switch-between-the-layouts"></a>Düzeni arasında geçiş yapın
 
-1.  Düzeni arasında geçiş yapmak için klavye kısayollarını kullanın veya ana menüden **penceresi > pencere düzenini Uygula**.
+1. Düzeni arasında geçiş yapmak için klavye kısayollarını kullanın veya ana menüden **penceresi > pencere düzenini Uygula**.
 
      ![Pencere düzeni menüsü uygulamak](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 
 ##### <a name="manage-and-roam-your-layouts"></a>Yönetme ve katmanlarınızı Dolaşımda
 
-1.  Kaldırabilir, yeniden adlandırmak veya seçerek özel düzeninizi yeniden sıralama **penceresi > pencere düzenlerini Yönet**. Bir düzen taşırsanız, tuş bağlama listesinde yeni konumunu gösterecek şekilde otomatik olarak ayarlanır. Değiştirilen bağlamaları aksi olamaz ve bu nedenle aynı anda en fazla 10 düzenleri depolayabilirsiniz.
+1. Kaldırabilir, yeniden adlandırmak veya seçerek özel düzeninizi yeniden sıralama **penceresi > pencere düzenlerini Yönet**. Bir düzen taşırsanız, tuş bağlama listesinde yeni konumunu gösterecek şekilde otomatik olarak ayarlanır. Değiştirilen bağlamaları aksi olamaz ve bu nedenle aynı anda en fazla 10 düzenleri depolayabilirsiniz.
 
      ![Pencere düzenlerini Yönet](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 
@@ -181,5 +181,5 @@ Visual Studio'da, konum, boyut ve çeşitli geliştirme iş akışları için en
 |-----------|-----------------|
 |[Windows türleri](../misc/kinds-of-windows.md)|IDE'de araç pencereleri ve belge pencereleri arasındaki farkları ele alır.|
 |[Nasıl yapılır: Pencereleri düzenleme ve Windows yerleştirme](../misc/how-to-arrange-and-dock-windows.md)|Pencereleri nasıl sabitleyeceğiniz, otomatik olarak gizleyeceğiniz, döşeyeceğiniz ve ayrıca pencere düzenini nasıl sıfırlayacağınız açıklanır.|
-|[Nasıl yapılır: IDE'de gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE'de, kullanım sırasına göre, açık pencereler arasında nasıl geçiş yapacağınız açıklanır. Ayrıca belirli belgelere nasıl atlayabileceğinizi açıklar.|
+|[Nasıl yapılır: IDE'de Gezinme](../ide/how-to-move-around-in-the-visual-studio-ide.md)|IDE'de, kullanım sırasına göre, açık pencereler arasında nasıl geçiş yapacağınız açıklanır. Ayrıca belirli belgelere nasıl atlayabileceğinizi açıklar.|
 |[Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Ayar bileşimleri ve ayarların pencere düzenlerini, klavye kısayollarını ve IDE'deki diğer öğeleri nasıl etkilediği hakkında bilgi içerir.|

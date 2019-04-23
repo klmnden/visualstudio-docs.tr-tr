@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093357"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>İzlenecek yol: Visual Studio uzantısı yayımlama
 
@@ -80,27 +80,27 @@ Bu makalede bir varsayılan VSPackage uzantısı kullanır, ancak adımları her
 
     * **VSIX kimliği** Uzantınız için Visual Studio kullanan benzersiz tanımlayıcı. Bu tanımlayıcı, otomatik olarak yükseltilerek uzantınızı olmasını istiyorsanız gereklidir. Bu tanımlayıcı gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* dosya.
 
-   * **Logo** Uzantınız için kullanılır. Bu logo gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* sağlanırsa, dosya.
+    * **Logo** Uzantınız için kullanılır. Bu logo gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* sağlanırsa, dosya.
 
-     * **Kısa açıklama** uzantınızın ne yaptığını. Bu açıklama, gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* dosya.
+    * **Kısa açıklama** uzantınızın ne yaptığını. Bu açıklama, gelen otomatik olarak doldurulmuş *source.extension.vsixmanifest* dosya.
 
-     * **Genel Bakış** ekran görüntüleri ve uzantınızın ne yaptığını hakkında ayrıntılı bilgi dahil etmek için iyi bir yerdir.
+    * **Genel Bakış** ekran görüntüleri ve uzantınızın ne yaptığını hakkında ayrıntılı bilgi dahil etmek için iyi bir yerdir.
 
-     * **Desteklenen Visual Studio sürümleri** seçtiğiniz uzantınızı çalışır, Visual Studio'nun hangi sürümlerinin sağlar. Uzantınızı yalnızca sürümler yüklenir.
+    * **Desteklenen Visual Studio sürümleri** seçtiğiniz uzantınızı çalışır, Visual Studio'nun hangi sürümlerinin sağlar. Uzantınızı yalnızca sürümler yüklenir.
 
-     * ** Desteklenen Visual Studio sürümü uzantınızı üzerinde çalışacağı Visual Studio'nun hangi sürümlerinin seçmenize olanak sağlar. Uzantınızı yalnızca bu sürümü için yüklenir.
+    * ** Desteklenen Visual Studio sürümü uzantınızı üzerinde çalışacağı Visual Studio'nun hangi sürümlerinin seçmenize olanak sağlar. Uzantınızı yalnızca bu sürümü için yüklenir.
 
-     * **Tür**. En yaygın türü uzantıları **Araçları**.
+    * **Tür**. En yaygın türü uzantıları **Araçları**.
 
-     * **Kategorileri**. En çok üç Uzantınız için bir en uygun olan seçin.
+    * **Kategorileri**. En çok üç Uzantınız için bir en uygun olan seçin.
 
-     * **Etiketleri** uzantınızı olduğunu kullanıcıları Yardım anahtar sözcükleri. Etiketler, uzantılarınızı Market'te, aramanın ilgi düzeyini artırmaya yardımcı olabilir.
+    * **Etiketleri** uzantınızı olduğunu kullanıcıları Yardım anahtar sözcükleri. Etiketler, uzantılarınızı Market'te, aramanın ilgi düzeyini artırmaya yardımcı olabilir.
 
-     * **Fiyatlandırma kategorisi** uzantınızı maliyetidir.
+    * **Fiyatlandırma kategorisi** uzantınızı maliyetidir.
 
-     * **Kaynak kodu deposu** toplulukla bağlantı kaynak kodunuzu paylaşmanıza olanak tanır.
+    * **Kaynak kodu deposu** toplulukla bağlantı kaynak kodunuzu paylaşmanıza olanak tanır.
 
-     * **Uzantınız için soru- cevap izin** uzantısı giriş sayfanızda sorular bırakın olanak sağlar.
+    * **Uzantınız için soru- cevap izin** uzantısı giriş sayfanızda sorular bırakın olanak sağlar.
 
 9. Tıklayın **Kaydet ve karşıya yükle**. Sayfa yayımcınıza için yedekleme bu seçeneği alır yönetin. Uzantınızı henüz yayımlanmamış. Uzantınızı yayımlamak için uzantı sağ tıklatın ve **genel yap**. Nasıl uzantınızı Market'te seçerek görüneceğini görüntüleyebileceğiniz **uzantıyı görüntüle**. Alım sayıları için tıklayarak **raporları**. Uzantınız için değişiklik yapmak için tıklatın **Düzenle**.
 

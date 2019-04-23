@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096458"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Nasıl yapılır: Birden çok proje şablonu oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,15 +79,15 @@ Birden fazla projeli şablonlar, iki veya daha fazla proje için kapsayıcı ola
   
 ### <a name="to-create-a-multi-project-template"></a>Birden çok proje şablonu oluşturmak için  
   
-1.  Birden çok proje şablonuna dahil etme projeleri oluşturun.  
+1. Birden çok proje şablonuna dahil etme projeleri oluşturun.  
   
-2.  Her proje için .vstemplate dosyaları oluşturur. Daha fazla bilgi için [nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md).  
+2. Her proje için .vstemplate dosyaları oluşturur. Daha fazla bilgi için [nasıl yapılır: Proje şablonları oluşturma](../ide/how-to-create-project-templates.md).  
   
-3.  Kök .vstemplate dosyası, birden çok proje şablonu meta verileri içerecek şekilde oluşturun. Daha fazla bilgi için aşağıdaki bölümde ilk örnekte bakın.  
+3. Kök .vstemplate dosyası, birden çok proje şablonu meta verileri içerecek şekilde oluşturun. Daha fazla bilgi için aşağıdaki bölümde ilk örnekte bakın.  
   
-4.  Dosya ve klasörler, şablona dahil, seçime sağ tıklayın, seçin **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Dosya ve klasörlerin bir .zip dosyasına sıkıştırılır.  
+4. Dosya ve klasörler, şablona dahil, seçime sağ tıklayın, seçin **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**. Dosya ve klasörlerin bir .zip dosyasına sıkıştırılır.  
   
-5.  .Zip şablon dosyası koymak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonu dizini. Varsayılan olarak, bu \My Documents\Visual Studio dizindir *sürüm*\Templates\ProjectTemplates\\.  
+5. .Zip şablon dosyası koymak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje şablonu dizini. Varsayılan olarak, bu \My Documents\Visual Studio dizindir *sürüm*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Örnek  
  Bu örnek bir temel çoklu proje kök .vstemplate dosyası gösterilmektedir. Bu örnekte, şablon iki proje içermektedir `My Windows Application` ve `My Class Library`. `ProjectName` Özniteliği `ProjectTemplateLink` öğesi adını ayarlar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu projeye atanacak. Varsa `ProjectName` özniteliği mevcut değilse, .vstemplate dosyasının adı proje adı olarak kullanılır.  

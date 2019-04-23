@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098447"
 ---
 # <a name="model-your-app39s-architecture"></a>Uygulamanızı model&#39;s mimarisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,28 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Bir sistem mimarisi, iki alana ayrılabilir:  
   
--   [Üst düzey tasarım](#Structure). Bu, ana bileşenleri ve her gereksinimi karşılamak için birbiriyle nasıl etkileşim kurduklarını açıklar. Sistem büyükse, her bileşenin nasıl daha küçük bileşenlerden oluştuğunu gösteren kendi üst düzey tasarım olabilir.  
+- [Üst düzey tasarım](#Structure). Bu, ana bileşenleri ve her gereksinimi karşılamak için birbiriyle nasıl etkileşim kurduklarını açıklar. Sistem büyükse, her bileşenin nasıl daha küçük bileşenlerden oluştuğunu gösteren kendi üst düzey tasarım olabilir.  
   
--   [Tasarım Düzenleri](#Patterns) ve bileşenleri tasarımları boyunca kullanılan kuralları. Bir programlama hedefini sağlamak için belirli bir yaklaşım bir deseni açıklar. Bir tasarım boyunca aynı desenleri kullanarak, takımınızın değişiklikleri yapma ve yeni yazılım geliştirme maliyetini azaltabilir.  
+- [Tasarım Düzenleri](#Patterns) ve bileşenleri tasarımları boyunca kullanılan kuralları. Bir programlama hedefini sağlamak için belirli bir yaklaşım bir deseni açıklar. Bir tasarım boyunca aynı desenleri kullanarak, takımınızın değişiklikleri yapma ve yeni yazılım geliştirme maliyetini azaltabilir.  
   
-##  <a name="Structure"></a> Üst düzey tasarım  
+## <a name="Structure"></a> Üst düzey tasarım  
  Üst düzey tasarım ana bileşenleri sisteminizi ve tasarım hedeflere ulaşmak için birbiriyle nasıl etkileşim kurduklarını açıklar. Etkinlikler, aşağıdaki listede, üst düzey tasarım, geliştirme mutlaka belirli bir sırada ancak faydalanırsınız.  
   
  Varolan kodu güncelleştirmekte olduğunuz, ana bileşenleri açıklayarak başlayabilir. Herhangi bir değişiklik kullanıcı gereksinimlerini anlamak ve eklediğinizde veya değiştirdiğinizde bileşenler arasındaki etkileşimleri emin olun. Yeni bir sistem geliştiriyorsanız ana özelliklerini Kullanıcıların ihtiyaçlarını anlayarak başlayın. Ardından etkileşim ana kullanım örnekleri için keşfetmek ve ardından bir bileşen tasarım dizileri birleştirin.  
   
  Her durumda, farklı etkinlikler paralel geliştirmeyi ve kod geliştirmelerine yardımcı olur ve erken bir aşamada test eder. Başka bir başlamadan önce bu yönlerinden tamamlanması çalışmaktan kaçının. Genellikle, yazma ve test ederken gereksinimleri hem Anlayışınızı sistemi tasarlamak için en iyi yolu değişir. Bu nedenle, anlama ve gereksinimleri ve tasarımınızı ana özelliklerini kodlama başlamalısınız. Projenin sonraki yinelemeler ayrıntıları doldurun.  
   
--   [Gereksinimleri anlama](#Requirements). Herhangi bir tasarım Kullanıcıların ihtiyaçlarını NET bir anlayış başlangıçtır.  
+- [Gereksinimleri anlama](#Requirements). Herhangi bir tasarım Kullanıcıların ihtiyaçlarını NET bir anlayış başlangıçtır.  
   
--   [Mimari desenleri](#BigDecisions). Çekirdek teknolojiler ve sistemin mimari öğeleri yaptığınız seçimleri.  
+- [Mimari desenleri](#BigDecisions). Çekirdek teknolojiler ve sistemin mimari öğeleri yaptığınız seçimleri.  
   
--   [Bileşenlerini ve bunların](#Components). Sistem başlıca parçaları göstermek için Bileşen diyagramları çizmek ve arabirimler üzerinden birbiriyle etkileşim kurduklarını gösterir. Her bileşenin arabirimleri sıralı diyagramlarında tanımladığınız tüm iletileri içerir.  
+- [Bileşenlerini ve bunların](#Components). Sistem başlıca parçaları göstermek için Bileşen diyagramları çizmek ve arabirimler üzerinden birbiriyle etkileşim kurduklarını gösterir. Her bileşenin arabirimleri sıralı diyagramlarında tanımladığınız tüm iletileri içerir.  
   
--   [Bileşenler arasındaki etkileşimler](#Interactions). Her kullanım örneği, olay veya gelen ileti için gerekli yanıtı elde etmek için sistemin ana bileşenlerini nasıl etkileşim kurduğu gösterilmektedir bir sıralı diyagram çizebilirsiniz.  
+- [Bileşenler arasındaki etkileşimler](#Interactions). Her kullanım örneği, olay veya gelen ileti için gerekli yanıtı elde etmek için sistemin ana bileşenlerini nasıl etkileşim kurduğu gösterilmektedir bir sıralı diyagram çizebilirsiniz.  
   
--   [Veri modeli bileşenleri ve arabirimleri](#Data). Bileşenleri arasında geçirilen ve bileşenler içinde depolanan bilgileri tanımlamak için sınıf diyagramlarını çizebilirsiniz.  
+- [Veri modeli bileşenleri ve arabirimleri](#Data). Bileşenleri arasında geçirilen ve bileşenler içinde depolanan bilgileri tanımlamak için sınıf diyagramlarını çizebilirsiniz.  
   
-##  <a name="Requirements"></a> Gereksinimleri anlama  
+## <a name="Requirements"></a> Gereksinimleri anlama  
  Tam bir uygulamayı üst düzey tasarımı, gereksinimler modelini veya diğer kullanıcıların ihtiyaçlarını açıklaması ile birlikte en etkili bir şekilde geliştirilmiştir. Gereksinim modelleri hakkında daha fazla bilgi için bkz: [kullanıcı gereksinimlerini modelleme](../modeling/model-user-requirements.md).  
   
  Geliştirmekte olduğunuz bir bileşen daha büyük bir sistemde sistemidir, kısmını veya tamamını gereksinimlerinizi program arayüzlerinde.  
@@ -78,7 +78,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
   Gereksinimler veya mimari bir model koymanız gerekir ayrıntı miktarını ölçek ve proje boyutu ve takım dağıtımı bağlıdır. Küçük bir takımda kısa bir projedeki başka bir sınıf diyagramı iş kavramlar ve bazı tasarım desenleri tasarlamaktan daha geçebilir; büyük bir projenin birden fazla bölge dağıtılmış önemli ölçüde daha fazla ayrıntı gerekir.  
   
-##  <a name="BigDecisions"></a> Mimari desenleri  
+## <a name="BigDecisions"></a> Mimari desenleri  
  Geliştirme aşamasında bir ana teknolojileri ve tasarım bağlı olacağı öğeleri seçmeniz gerekir. Bu seçenek hale getirilmesi gereken alanları şunlardır:  
   
 - Bir veritabanı ve dosya sistemi ve bir ağ uygulaması ve bir Web istemcisi arasında seçim arasında seçim yapma gibi teknoloji seçimleri temel vb. kullanın.  
@@ -91,7 +91,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
   Kullanımınızı ve mimari modelini yorumlamak, yaptığınız seçimleri etkiler. XML dosyalarını temel alan bir sistemde, XPath kullanan çapraz ilişkilendirmeleri gösterebilir ancak örneğin, bir veritabanını kullanan bir sistemde, bir sınıf diyagramı ilişkilendirmeler ilişkileri ya da bir veritabanındaki yabancı anahtarlar temsil edebilir. Dağıtılmış bir sistemde iletilerin sıralı diyagramda bir kablo iletileri temsil edebilir; kendi içinde bir uygulamada, işlev çağrıları temsil edebilir.  
   
-##  <a name="Components"></a> Bileşenlerini ve bunların  
+## <a name="Components"></a> Bileşenlerini ve bunların  
  Bu bölümde başlıca önerileri aşağıdaki gibidir:  
   
 - Sisteminizin başlıca parçaları göstermek için Bileşen diyagramları oluşturun.  
@@ -111,17 +111,17 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Büyük bir sistem için tipik bir bileşen diyagramı, bunlar gibi bileşenleri şunlar olabilir:  
   
--   Sunu. Genellikle bir Web tarayıcısında çalışan kullanıcı, erişim sağlayan bir bileşen.  
+- Sunu. Genellikle bir Web tarayıcısında çalışan kullanıcı, erişim sağlayan bir bileşen.  
   
--   Web hizmeti bileşenleri. İstemciler ve sunucular arasında bağlantı sağlar.  
+- Web hizmeti bileşenleri. İstemciler ve sunucular arasında bağlantı sağlar.  
   
--   Kullanım örneği denetleyicileri. Kullanıcının her senaryonun adımlarını gerçekleştirin.  
+- Kullanım örneği denetleyicileri. Kullanıcının her senaryonun adımlarını gerçekleştirin.  
   
--   İş çekirdek. Gereksinimler modeli sınıflarını temel alan sınıfları içeren, anahtar işlemleri gerçekleştirir ve iş kısıtlamalarını uygular.  
+- İş çekirdek. Gereksinimler modeli sınıflarını temel alan sınıfları içeren, anahtar işlemleri gerçekleştirir ve iş kısıtlamalarını uygular.  
   
--   Veritabanı. İş nesnelerini depolar.  
+- Veritabanı. İş nesnelerini depolar.  
   
--   Günlük kaydı ve hata işleme bileşenleri.  
+- Günlük kaydı ve hata işleme bileşenleri.  
   
 ### <a name="dependencies-between-components"></a>Bileşenler arasındaki bağımlılıklar  
  Bileşenleri kendilerini yanı sıra, aralarındaki bağımlılıkları gösterebilirsiniz. Bir tasarım değişiklikleri, diğer tasarım etkileyebilecek iki bileşen arasında bir bağımlılık okunun gösterir. Bu durum, genellikle bir Bileşen Hizmetleri veya doğrudan veya dolaylı olarak başka bir bileşen tarafından sağlanan işlevleri kullandığından gerçekleşir.  
@@ -178,7 +178,7 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
   Gerekli arabirimlerin parça kullanımı için genellikle tercih edilir. Elde edilen sistem tasarımı daha uzun sürebilir ancak daha esnektir. Bileşenlerini ayrı ayrı test etmek kolaydır. Bu, geliştirme planlarında daha az eşleşmeye izin verir.  
   
-##  <a name="Interactions"></a> Bileşenler arasındaki etkileşimler  
+## <a name="Interactions"></a> Bileşenler arasındaki etkileşimler  
  Bu bölümde başlıca önerileri aşağıdaki gibidir:  
   
 - Sisteminizin kullanım örnekleri tanımlayın.  
@@ -196,11 +196,11 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
 ### <a name="identifying-the-initiating-events"></a>Başlatma olaylarını belirleme  
  Çoğu yazılım sistemleri tarafından çalışmanın, kolayca, farklı giriş veya olayları için verdiği yanıtlar tarafından da bölünebilir. Başlatma olayı, aşağıdaki olaylardan biri olabilir:  
   
--   Kullanım örneği ilk eylem. Gereksinimler modelinde, bir kullanım örneği bir adım veya bir eylem diyagramındaki bir eylem olarak görünebilir. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md) ve [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
+- Kullanım örneği ilk eylem. Gereksinimler modelinde, bir kullanım örneği bir adım veya bir eylem diyagramındaki bir eylem olarak görünebilir. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Yönergeleri](../modeling/uml-use-case-diagrams-guidelines.md) ve [UML etkinlik diyagramları: Yönergeleri](../modeling/uml-activity-diagrams-guidelines.md).  
   
--   Bir programlama arabirimi bir ileti. Geliştirmekte olduğunuz sistem daha büyük bir sistemde bir bileşeni ise, bir bileşenin arabirimleri işlem olarak açıklanmalıdır. Bkz: [bileşenlerini ve bunların](#Components).  
+- Bir programlama arabirimi bir ileti. Geliştirmekte olduğunuz sistem daha büyük bir sistemde bir bileşeni ise, bir bileşenin arabirimleri işlem olarak açıklanmalıdır. Bkz: [bileşenlerini ve bunların](#Components).  
   
--   Sisteminizde veya saat gibi normal bir olay tarafından izlenmemesi belirli bir koşul.  
+- Sisteminizde veya saat gibi normal bir olay tarafından izlenmemesi belirli bir koşul.  
   
 ### <a name="describe-the-computations"></a>Hesaplamaları açıklayın  
  Bileşenler için ilk olay nasıl yanıt verdiğini göstermek için sıralı diyagramlar çizin.  
@@ -218,14 +218,14 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Her işlemden sonra elde dikkat edilecek etkinlik veya sıralı diyagramları, yorum eklemek yararlıdır. Ayrıca, her bir işlemin etkisini yazabilirsiniz, **Yerel Sonkoşul** özelliği.  
   
-###  <a name="Data"></a> Veri modeli bileşenleri ve arabirimleri  
+### <a name="Data"></a> Veri modeli bileşenleri ve arabirimleri  
  Parametreleri tanımlayın ve bileşen arabirimlerde her işlemin değerleri döndürür. Burada çağrılarını Web hizmeti istekleri gibi işlemleri temsil etmekte parametreleri, isteğin bir parçası gönderilen bu bilgilere bağlıdır. Bir işlemden döndürülen değerlerden burada parametrelerle kullanabileceğiniz **yönü** özelliğini **kullanıma**.  
   
  Her bir parametre ve dönüş değeri bir türü vardır. UML sınıf diyagramları kullanarak bu tür tanımlayabilirsiniz. Bu diyagramları uygulama ayrıntılarını temsil gerekmez. Örneğin, XML olarak aktarılan veriler tanımlamakta olduğunuz, herhangi bir türden XML düğümler arasında çapraz temsil etmek için bir ilişkilendirme kullanın ve düğümleri göstermek için sınıflarını kullanın.  
   
  Öznitelikler ve ilişkilendirmeler iş kısıtlamaları tanımlamak için açıklamaları kullanabilirsiniz. Örneğin, bir müşterinin siparişine tüm öğeleri aynı tedarikçiden gelmesi gerekir, bu katalog öğesi, tedarikçi arasında ve öğeleri sipariş ve ürün kataloğu öğeleri arasındaki ilişkileri başvuruya göre tanımlayabilirsiniz.  
   
-##  <a name="Patterns"></a> Tasarım desenleri  
+## <a name="Patterns"></a> Tasarım desenleri  
  Belirli bir yazılım, özellikle de sistemin farklı bölümlerinin yinelenen durumuyla tasarlamak nasıl bir özetini bir tasarım örüntüsüdür. Proje boyunca Tekdüzen bir yaklaşım benimseyerek, tasarım maliyetini azaltmak, kullanıcı arabiriminde tutarlılığı ve anlama ve kod değiştirme maliyetini azaltın.  
   
  Gözlemci gibi bazı genel tasarım desenleri, bilinen ve yaygın olarak uygulanabilir. Ayrıca, yalnızca projeniz için geçerli olan desenleri vardır. Örneğin, Web satış sistemine olacaktır kodunu çeşitli işlemleri bir müşterinin siparişine değişiklikler burada yapılır. Tüm bu işlemleri, siparişin durumunu doğru şekilde her aşamasında görüntülendiğinden emin olmak için veritabanını güncellemek için belirli bir protokol izlemelidir.  
@@ -236,25 +236,25 @@ Yazılım sisteminizin veya uygulama kullanıcılarınızın karşıladığında
   
  Bir tasarım deseni bir belgede açıklanan ve genellikle aşağıdaki bölümleri içerir:  
   
--   Adı.  
+- Adı.  
   
--   Komutun geçerli olduğu açıklaması. Hangi kriterleri, bir geliştirici bu düzeni uygularken yapmanız gerekir?  
+- Komutun geçerli olduğu açıklaması. Hangi kriterleri, bir geliştirici bu düzeni uygularken yapmanız gerekir?  
   
--   Çözdüğü sorunun kısa bir açıklama.  
+- Çözdüğü sorunun kısa bir açıklama.  
   
--   Başlıca parçaları ve aralarındaki ilişkiler modeli. Bunlar, sınıfları veya bileşenleri ve arabirimler, ilişkileri ve aralarındaki bağımlılıkları olabilir. Öğeleri genellikle iki kategoriye ayrılır:  
+- Başlıca parçaları ve aralarındaki ilişkiler modeli. Bunlar, sınıfları veya bileşenleri ve arabirimler, ilişkileri ve aralarındaki bağımlılıkları olabilir. Öğeleri genellikle iki kategoriye ayrılır:  
   
-    -   Her desen kullanıldığı kod bölümünde Geliştirici çoğaltmalıdır öğeleri. Bunları açıklamak için şablon türleri kullanabilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
+    - Her desen kullanıldığı kod bölümünde Geliştirici çoğaltmalıdır öğeleri. Bunları açıklamak için şablon türleri kullanabilirsiniz. Daha fazla bilgi için [UML Kullanım durumu diyagramları: Başvuru](../modeling/uml-use-case-diagrams-reference.md).  
   
-    -   Geliştirici kullanması gereken framework sınıfları tanımlayan öğeler.  
+    - Geliştirici kullanması gereken framework sınıfları tanımlayan öğeler.  
   
--   Sıralı veya etkinlik diyagramları kullanarak parçalar arasındaki etkileşimler modeli.  
+- Sıralı veya etkinlik diyagramları kullanarak parçalar arasındaki etkileşimler modeli.  
   
--   Adlandırma kuralları.  
+- Adlandırma kuralları.  
   
--   Nasıl deseni sorunu çözdü açıklaması.  
+- Nasıl deseni sorunu çözdü açıklaması.  
   
--   Geliştiricilerin benimseyebileceği değişikliklerin çeşitlemeleri açıklaması.  
+- Geliştiricilerin benimseyebileceği değişikliklerin çeşitlemeleri açıklaması.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)   

@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073897"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Birden Çok UI Eşlemesi Bulunan Büyük Uygulamaları Sınama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Bu konu, birden çok UI Haritası'nı kullanarak büyük bir uygulamayı test et
 ## <a name="do-you-need-multiple-ui-maps"></a>Birden çok UI haritası gerekiyor mu?  
  Birden çok UI haritası, bu tür durumlarda her oluşturun:  
   
--   Birlikte bir Web sitesinde bir kayıt sayfasına veya bir alışveriş sepeti satın alma sayfası gibi bir mantıksal işlemi gerçekleştiren bileşik UI denetimlerinin birçok karmaşık ayarlar.  
+- Birlikte bir Web sitesinde bir kayıt sayfasına veya bir alışveriş sepeti satın alma sayfası gibi bir mantıksal işlemi gerçekleştiren bileşik UI denetimlerinin birçok karmaşık ayarlar.  
   
--   Bağımsız bir uygulama işlemlerinin birden çok sayfa içeren bir sihirbaz gibi çeşitli noktalarından erişim denetimleri ayarlayın. Bir sihirbazın her sayfasındaki özellikle karmaşık ise, her sayfa için ayrı UI haritası oluşturabilirsiniz.  
+- Bağımsız bir uygulama işlemlerinin birden çok sayfa içeren bir sihirbaz gibi çeşitli noktalarından erişim denetimleri ayarlayın. Bir sihirbazın her sayfasındaki özellikle karmaşık ise, her sayfa için ayrı UI haritası oluşturabilirsiniz.  
   
 ## <a name="adding-multiple-ui-maps"></a>Birden çok UI eşlemesi ekleme  
   

@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071232"
 ---
 # <a name="making-commands-available"></a>Komutları Kullanılabilir Yapma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi (UI) komutları ile overcrowded haline gelir. Bu sorun şu şekilde azaltmaya yardımcı olmak için paket programlama yapabilirsiniz:  
   
--   Program paket yalnızca bir kullanıcı yüklenmesi gerekir.  
+- Program paket yalnızca bir kullanıcı yüklenmesi gerekir.  
   
--   Yalnızca geçerli durumu tümleşik geliştirme ortamının (IDE) bağlamında bunlar gerekebilir, kendi komutlar böylece paket program.  
+- Yalnızca geçerli durumu tümleşik geliştirme ortamının (IDE) bağlamında bunlar gerekebilir, kendi komutlar böylece paket program.  
   
 ## <a name="delayed-loading"></a>Gecikmeli yükleme  
  Etkinleştirmek için tipik Gecikmeli yükleme VSPackage'ı, komutları kullanıcı Arabiriminde görüntülenir, ancak bir kullanıcı komutlardan birini tıklayana kadar paketi yüklenmedi olacağı şekilde tasarlayın yöntemdir. .Vsct dosyası içinde bunu gerçekleştirmek için komut bayraklarınız komutları oluşturun.  
@@ -94,11 +94,11 @@ Visual Studio için birden çok VSPackages eklendiğinde, kullanıcı arabirimi 
 ### <a name="custom-context-guids"></a>Özel bağlam GUID'leri  
  GUID zaten tanımlı değil bir uygun komut bağlamı ise, VSPackage birinde tanımlayabilir ve etkin veya etkin değil olarak komutlarınızı görünürlüğünü denetleme için gerekli olması için program. Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> hizmet için:  
   
--   Bağlam GUID'leri kaydetme (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> yöntemi).  
+- Bağlam GUID'leri kaydetme (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> yöntemi).  
   
--   Bir bağlam durumunu alma `GUID` (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> yöntemi).  
+- Bir bağlam durumunu alma `GUID` (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> yöntemi).  
   
--   Bağlam kapatma `GUID`s açma ve kapatma (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> yöntemi).  
+- Bağlam kapatma `GUID`s açma ve kapatma (çağırarak <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> yöntemi).  
   
     > [!CAUTION]
     >  Diğer VSPackage'ları bunlara bağımlı çünkü, VSPackage'ı tüm mevcut bir bağlamı GUID durumunu etkilemez emin olun.  

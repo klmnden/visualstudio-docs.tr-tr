@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a896a5b850887b36a4fb6596923e742429c44dc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068619"
 ---
 # <a name="how-to-implement-undo-management"></a>Nasıl yapılır: Uygulama geri alma yönetimi
 Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, ortamı tarafından gerçekleştirilir. Geri alma yönetimini desteklemek için ayrı geri alma birimi uygulayın (diğer bir deyişle, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, birden çok tek tek adımları içerebilir.
@@ -27,9 +27,9 @@ Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.Visu
 
 ### <a name="to-support-undo-management-for-a-single-view-editor"></a>Geri alma yönetimini desteklemek için tek görünüm Düzenleyicisi için
 
-1.  Çağrı `QueryInterface` üzerinde `IServiceProvider` pencere çerçevesi için arabirimdeki `IOleUndoManager`, geri alma yöneticisi erişmek için belge görünümü nesnesinden (`IID_IOLEUndoManager`).
+1. Çağrı `QueryInterface` üzerinde `IServiceProvider` pencere çerçevesi için arabirimdeki `IOleUndoManager`, geri alma yöneticisi erişmek için belge görünümü nesnesinden (`IID_IOLEUndoManager`).
 
-2.  Bir görünümü bir pencere çerçevesine tarihli, onu çağırmak için kullanabileceğiniz bir site işaretçi alır. `QueryInterface` için `IServiceProvider`.
+2. Bir görünümü bir pencere çerçevesine tarihli, onu çağırmak için kullanabileceğiniz bir site işaretçi alır. `QueryInterface` için `IServiceProvider`.
 
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Burada bir düzenleyici birden çok görünüm destekler durumları
  Belge ve görünüm ayrımı varsa, belge ile ilişkili normalde bir geri alma yöneticisi yok. Tüm geri alma birimi belge veri nesneyle ilişkili bir geri alma yöneticisi yerleştirilir.
@@ -46,17 +46,17 @@ Geri alma yönetimi için kullanılan birincil arabirimidir <xref:Microsoft.Visu
 
 3. Geçiş, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ve <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> saklı çağırıyor `IOleCommandTarget` arabirimi aşağıdaki StandardCommandSet97 komutlar için:
 
-   -   cmdidUndo
+   - cmdidUndo
 
-   -   cmdidMultiLevelUndo
+   - cmdidMultiLevelUndo
 
-   -   cmdidRedo
+   - cmdidRedo
 
-   -   cmdidMultiLevelRedo
+   - cmdidMultiLevelRedo
 
-   -   cmdidMultiLevelUndoList
+   - cmdidMultiLevelUndoList
 
-   -   cmdidMultiLevelRedoList
+   - cmdidMultiLevelRedoList
 
 4. Çağrı `QueryInterface` üzerinde `IOleUndoManager` için `IID_IVsChangeTrackingUndoManager`. İşaretçi Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.
 

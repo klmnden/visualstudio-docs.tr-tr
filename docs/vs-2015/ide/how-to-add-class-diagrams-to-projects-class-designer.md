@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ab062ea6f7dfac6001d016704d627c716079989
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 09d423ab5f46f27e9dee4ce15f4b6dbec74d0124
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097758"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) projelere sınıf diyagramları ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,17 +28,17 @@ Tasarlamak için Visual C# .NET, Visual Basic .NET veya C++ projenize bir sını
   
 ### <a name="to-add-a-blank-class-diagram-to-a-project"></a>Projeye boş bir sınıf diyagramı eklemek için  
   
-1.  Çözüm Gezgini'nde proje adına sağ tıklayın. Ardından **Yeni Öğe Ekle** veya **Ekle**, **yeni öğe**.  
+1. Çözüm Gezgini'nde proje adına sağ tıklayın. Ardından **Yeni Öğe Ekle** veya **Ekle**, **yeni öğe**.  
   
-2.  Şablonu listeden seçin **sınıf diyagramı**. Visual C++ projeleri için altına bakın **şablonları**ve ardından altındaki **yardımcı programı** bu şablonu bulun.  
+2. Şablonu listeden seçin **sınıf diyagramı**. Visual C++ projeleri için altına bakın **şablonları**ve ardından altındaki **yardımcı programı** bu şablonu bulun.  
   
      Sınıf diyagramı Sınıf Tasarımcısı'nda açılır ve proje hiyerarşisindeki Çözüm Gezgini'nde .cd uzantılı bir dosya olarak görünür. Şekilleri ve çizgileri diyagrama sürüklemek için Sınıf Tasarımcısı araç kutusunu kullanın.  
   
-3.  Birden fazla sınıf diyagramı eklemek için bu yordamdaki adımları yineleyin.  
+3. Birden fazla sınıf diyagramı eklemek için bu yordamdaki adımları yineleyin.  
   
 ### <a name="to-add-a-class-diagram-based-on-existing-types"></a>Varolan türlere dayalı bir sınıf diyagramı eklemek için  
   
-1.  Çözüm Gezgini'nde sınıf dosyası bağlam menüsünü açın ve ardından **sınıf diyagramını görüntüle**.  
+1. Çözüm Gezgini'nde sınıf dosyası bağlam menüsünü açın ve ardından **sınıf diyagramını görüntüle**.  
   
      -veya-  
   
@@ -46,7 +46,7 @@ Tasarlamak için Visual C# .NET, Visual Basic .NET veya C++ projenize bir sını
   
 ### <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Bir sınıf diyagramında eksiksiz bir projenin içeriğini görüntülemek için  
   
-1.  Çözüm Gezgini veya sınıf görünümü, projeye sağ tıklayıp seçin **görünümü**, ardından **sınıf diyagramını görüntüle**.  
+1. Çözüm Gezgini veya sınıf görünümü, projeye sağ tıklayıp seçin **görünümü**, ardından **sınıf diyagramını görüntüle**.  
   
      Otomatik olarak doldurulan bir Sınıf Diyagramı oluşturulur.  
   

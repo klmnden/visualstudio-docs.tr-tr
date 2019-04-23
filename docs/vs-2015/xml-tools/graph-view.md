@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110550"
 ---
 # <a name="graph-view"></a>Graf Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ Bir grafik gösterimi genel şeması düğümlerin ve düğümler arasındaki il
 ## <a name="undoredo"></a>Geri Al/Yinele  
  Aşağıdaki eylemler için graf görünümünü geri al/Yinele özelliği etkin:  
   
--   Tek bir düğüm sürükleme ve bırakma ekleniyor.  
+- Tek bir düğüm sürükleme ve bırakma ekleniyor.  
   
--   Şema Gezgini veya başlangıç görünümünde sorgular arama sonuçları penceresinde birden çok düğüm ekleme.  
+- Şema Gezgini veya başlangıç görünümünde sorgular arama sonuçları penceresinde birden çok düğüm ekleme.  
   
--   Tek veya birden çok düğüm siliniyor.  
+- Tek veya birden çok düğüm siliniyor.  
   
 ## <a name="zoom"></a>Yakınlaştır  
  Graf görünümünü sağ alt köşesindeki Yakınlaştır kullanılabilir.  

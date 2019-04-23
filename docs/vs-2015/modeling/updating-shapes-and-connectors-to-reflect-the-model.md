@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107872"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Modeli Yansıtacak Şekilleri ve Bağlayıcıları Güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Bir dekoratörün görünürlüğünü denetleme için Şekil eşlemesi özelliklerini ayarlama  
  DSL tanımındaki şekil ile alan sınıfı arasındaki eşlemeyi yapılandırarak, program kodu yazmaya gerek kalmadan bir dekoratörün görünürlüğünü denetleyebilir. Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: Bir Dekoratörün görünürlüğünü denetleme-yeniden yönlendirme](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Nasıl yapılır: Bir Dekoratörün görünürlüğünü denetleme-yeniden yönlendirme](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Nasıl yapılır: Etki Alanına Özgü bir Dili Tanımlama](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Rengini ve stilini şeklinin özellik olarak kullanıma sunar.  
  DSL tanımındaki şekil sınıfı sağ tıklatın, **ekleme kullanıma sunulan**ve öğelerden birini gibi ardından **dolgu rengi**.  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  Bu yöntem, hem de etki alanı özellikleri ve şekli boyutu gibi mağaza içi özellikler için kullanılabilir.  
   
-##  <a name="OnAssociatedProperty"></a> Diğer Şekil özelliklerini güncelleştirmek için AssociateValueWith() kullanın  
+## <a name="OnAssociatedProperty"></a> Diğer Şekil özelliklerini güncelleştirmek için AssociateValueWith() kullanın  
  Şeklin gölge ya da bir bağlayıcının Ok Stili sahip olup olmadığı gibi bazı özellikler için özellik bir alan özelliği olarak gösterme, yerleşik bir yöntem yoktur.  Değişiklikler gibi özellikler için hareket sistemi denetiminde değildir. Bu nedenle, bunları güncelleştirmek uygun değil Kullanıcı Geri Al komutu gerçekleştirdiğinde kuralları çağrılmaz çünkü kurallarını kullanarak.  
   
  Bunun yerine, kullanarak gibi özellikleri güncelleştirebilirsiniz <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Aşağıdaki örnekte, bir bağlayıcının Ok Stili bağlayıcı görüntüler ilişkisinde bir etki alanı özellik değeri tarafından denetlenir:  

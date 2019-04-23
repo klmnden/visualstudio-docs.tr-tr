@@ -11,27 +11,27 @@ ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1c9beccd5e72c26d695d443c4ab2aa4198e71784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9070b33c7522cdc13fd6217956fcab72cd83f8d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069451"
 ---
 # <a name="programs"></a>Programlar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hata ayıklayıcı mimarisi bakımından bir **program**:  
   
--   Bir modül kümesini ve iş parçacıkları kümesi için bir kapsayıcıdır. Bir program yok tek benzerleme Windows işletim sisteminde vardır.  
+- Bir modül kümesini ve iş parçacıkları kümesi için bir kapsayıcıdır. Bir program yok tek benzerleme Windows işletim sisteminde vardır.  
   
      Bir program bir alt türüdür. Örneğin, bir Web sitesi ayıklanırken bir komut dosyası bir program olarak görülebilir. Bir komut dosyası komut dosyası altyapısı işlemde çalışırken, bağımsız olarak diğer betikleri, ayrıca kendi iş parçacıkları kümesine sahiptir. Hata ayıklama altyapısı (DE), bir programa ve bir işlem veya iş parçacığı ekler.  
   
--   Kendisi ve çalıştığı ve öğesinden ayrıldı ve, varsa oluşturulan DE açıklamak için bağlı işlemi tanımlayabilirsiniz. Bir program yürütme, durdurmak, devam etmek ve sonlandırılacak.  
+- Kendisi ve çalıştığı ve öğesinden ayrıldı ve, varsa oluşturulan DE açıklamak için bağlı işlemi tanımlayabilirsiniz. Bir program yürütme, durdurmak, devam etmek ve sonlandırılacak.  
   
--   Tüm iş parçacıklarının sıralayabilirsiniz. Bir program kendi Ayrıştırılmış kod akış aynı zamanda sağlayabilir ve belirli belge konumlarından tüm kod bağlamları sıralayabilirsiniz.  
+- Tüm iş parçacıklarının sıralayabilirsiniz. Bir program kendi Ayrıştırılmış kod akış aynı zamanda sağlayabilir ve belirli belge konumlarından tüm kod bağlamları sıralayabilirsiniz.  
   
--   Tarafından temsil edilen bir [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) program bağlanmadan önce veya bağlı uygulama Ekle işleminin bir parçası olarak oluşturulan arabirimi. Bir bağlantı noktası program bir işlemin sıraladığında her program karşılık gelen uygun olarak oluşturulur [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi geçirilen bağımsız değişken olarak [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Hata ayıklama altyapısı ayrıca oluştururken `IDebugProgram2` arabirimleri programları, bu programlar göstermek için bir program düğüm uygun olarak oluşturulmaz. `IDebugProgramNode2` Bir DE tarafından oluşturulan arabirimleri kullanılan gerçek hata ayıklama için bir bağlantı noktası tarafından oluşturulanlar yalnızca hangi programların bir işlemde çalışan keşfetmek için kullanılırken.  
+- Tarafından temsil edilen bir [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) program bağlanmadan önce veya bağlı uygulama Ekle işleminin bir parçası olarak oluşturulan arabirimi. Bir bağlantı noktası program bir işlemin sıraladığında her program karşılık gelen uygun olarak oluşturulur [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) arabirimi geçirilen bağımsız değişken olarak [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Hata ayıklama altyapısı ayrıca oluştururken `IDebugProgram2` arabirimleri programları, bu programlar göstermek için bir program düğüm uygun olarak oluşturulmaz. `IDebugProgramNode2` Bir DE tarafından oluşturulan arabirimleri kullanılan gerçek hata ayıklama için bir bağlantı noktası tarafından oluşturulanlar yalnızca hangi programların bir işlemde çalışan keşfetmek için kullanılırken.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlemler](../../extensibility/debugger/processes.md)   

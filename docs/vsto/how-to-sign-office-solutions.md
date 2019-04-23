@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101236"
 ---
 # <a name="how-to-sign-office-solutions"></a>Nasıl yapılır: Office çözümlerini imzalama
   Bir çözüm oturum açarsanız, kanıt olarak sertifika kullanarak çözüme güven verebilirsiniz. Birden çok çözüm için aynı sertifikayı kullanabilirsiniz ve tüm çözümleri hiçbir ek güvenlik ilkesi güncelleştirmeleriyle güvenilen olacaktır.
@@ -35,15 +35,15 @@ ms.locfileid: "54871669"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Bir sertifika kullanarak Office çözümü imzalamak için
 
-1.  Üzerinde **proje** menüsünü tıklatın _SolutionName_**özellikleri**.
+1. Üzerinde **proje** menüsünü tıklatın _SolutionName_**özellikleri**.
 
-2.  Tıklayın **imzalama** sekmesi.
+2. Tıklayın **imzalama** sekmesi.
 
-3.  Seçin **ClickOnce bildirimlerini imzala**.
+3. Seçin **ClickOnce bildirimlerini imzala**.
 
-4.  Tıklayarak sertifikayı bulun **Store ' seçin** veya **dosyadan Seç** ve sertifikada gezinin.
+4. Tıklayarak sertifikayı bulun **Store ' seçin** veya **dosyadan Seç** ve sertifikada gezinin.
 
-5.  Doğru sertifikayı kullanılmakta olduğunu doğrulamak için tıklayın **daha fazla ayrıntı** sertifika bilgileri görüntülemek için.
+5. Doğru sertifikayı kullanılmakta olduğunu doğrulamak için tıklayın **daha fazla ayrıntı** sertifika bilgileri görüntülemek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

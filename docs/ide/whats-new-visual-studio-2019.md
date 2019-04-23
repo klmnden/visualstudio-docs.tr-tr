@@ -2,7 +2,7 @@
 title: Visual Studio 2019’daki yenilikler
 titleSuffix: ''
 description: Visual Studio 2019'deki yeni özellikler hakkında bilgi edinin.
-ms.date: 04/04/2019
+ms.date: 04/11/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ca411e0c66033ea923a979f68ed19c1ec02b6ed9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59477547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109198"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019’daki yenilikler
 
@@ -167,6 +167,12 @@ Bulutta tam olarak neler olduğunu görmek için uygulamanızın yürütmesini a
 Bir Azure sanal makinesinde çalışan ASP.NET (Çekirdeği ve Masaüstü) uygulamaları hedeflemek için destek ekledik. Ayrıca, bir Azure Kubernetes Service'te çalışan uygulamalar için destek ekledik. Snapshot Debugger, üretim ortamlarında ortaya çıkan sorunları çözmek için gereken süreyi ciddi ölçüde azaltmaya yardımcı olabilir.
 
 Daha fazla bilgi için bkz. [Snapshot Debugger'ı kullanarak canlı ASP.NET Azure uygulamaları için hata ayıklama](../debugger/debug-live-azure-applications.md) sayfasında ve [Giriş zaman seyahat hata ayıklamak için Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) blog gönderisi.
+
+## <a name="whats-next"></a>Yenilikler
+
+Visual Studio 2019 genellikle, geliştirme deneyimini daha da iyi hale getirebilir yeni özelliklerle güncelleştiriyoruz. Bizim en son yenilikler hakkında daha fazla bilgi edinmek için kullanıma [Visual Studio blogu](https://devblogs.microsoft.com/visualstudio/). Ve hangi tarih önizlemede yayımladık kayıt için göz atın [Preview sürüm notları](/visualstudio/releases/2019/release-notes-preview/).
+
+Daha fazla Visual Studio 2019 işe ne hakkında olduğunu öğrenmek istiyorsunuz? Bkz: [Visual Studio yol haritası](/visualstudio/productinfo/vs-roadmap/).
 
 ## <a name="give-us-feedback"></a>Geri bildirimde bulunun
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104466"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Nasıl yapılır: Ekleme ve özellikler ve öğeler pakete paketleme Gezgini'ni kullanarak kaldırma
   SharePoint öğeleri ve özellikleri dağıtacağınız bir paket yapılandırmak için paketleme Gezgini'ni kullanabilirsiniz. .Wsp dosyanız içinde SharePoint Proje öğeleri ve özellikleri ayarlayabilirsiniz.
@@ -31,7 +31,7 @@ ms.locfileid: "56596431"
 
 #### <a name="to-open-the-packaging-explorer"></a>Paketleme Gezgini açmak için
 
-1.  Menü çubuğunda, **görünümü** > **diğer Windows** > **paketleme Gezgini**.
+1. Menü çubuğunda, **görünümü** > **diğer Windows** > **paketleme Gezgini**.
 
      **Paketleme Gezgini** görünür **araç kutusu**.
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596431"
 
 #### <a name="to-add-a-sharepoint-feature"></a>Bir SharePoint özelliği eklemek için
 
-1.  Açık **paketleme Gezgini**, proje için kısayol menüsünü açın ve ardından **Özellik Ekle**.
+1. Açık **paketleme Gezgini**, proje için kısayol menüsünü açın ve ardından **Özellik Ekle**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Mevcut bir SharePoint özelliği taşımak için
 
-1.  Açık **paketleme Gezgini**ve ardından aşağıdaki adımlardan birini gerçekleştirin:
+1. Açık **paketleme Gezgini**ve ardından aşağıdaki adımlardan birini gerçekleştirin:
 
-    -   Sürükleme bir **özellik** başka bir projeye bir projeden.
+    - Sürükleme bir **özellik** başka bir projeye bir projeden.
 
-    -   Bir özellik için kısayol menüsünü açın, **Kes**, özelliği taşıyın ve sonra istediğiniz proje için kısayol menüsünü açın **Yapıştır**.
+    - Bir özellik için kısayol menüsünü açın, **Kes**, özelliği taşıyın ve sonra istediğiniz proje için kısayol menüsünü açın **Yapıştır**.
 
     > [!NOTE]
     >  Çözümünüzde birden fazla SharePoint projeniz varsa, bu yordamı kullanın.
@@ -58,9 +58,9 @@ ms.locfileid: "56596431"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Bir SharePoint özelliği veya paket doğrulamak için
 
-1.  Açık **paketleme Gezgini**.
+1. Açık **paketleme Gezgini**.
 
-2.  Bir özellik veya paket için bir kısayol menüsünü açın ve ardından **doğrulama**.
+2. Bir özellik veya paket için bir kısayol menüsünü açın ve ardından **doğrulama**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

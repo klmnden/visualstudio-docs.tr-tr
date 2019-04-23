@@ -12,12 +12,12 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 84ab9dd82f6867135c136f903c6c0050132b1b05
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 768d9747635f2106d16f755db6799e356c890838
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868846"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096406"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>WPF Araç Kutusu Denetimi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "57868846"
   
 #### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>WPF araç kutusu denetimi ile bir uzantı oluşturma  
   
-1.  Adlı bir VSIX projesi oluşturun `MyToolboxControl`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C# / genişletilebilirlik**.  
+1. Adlı bir VSIX projesi oluşturun `MyToolboxControl`. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C# / genişletilebilirlik**.  
   
-2.  Projeyi açtığında, ekleme bir **WPF araç kutusu denetimi** adlı öğe şablonu `MyToolboxControl`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **WPF araç kutusu denetimi**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme `MyToolboxControl.cs`.  
+2. Projeyi açtığında, ekleme bir **WPF araç kutusu denetimi** adlı öğe şablonu `MyToolboxControl`. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **WPF araç kutusu denetimi**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme `MyToolboxControl.cs`.  
   
      Çözüm, artık bir kullanıcı denetimini içeren bir `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> denetimine ekler **araç kutusu**ve **Microsoft.VisualStudio.ToolboxControl** varlık girişi için VSIX bildirimi  Dağıtım.  
   
 #### <a name="to-create-the-control-ui"></a>UI denetimi oluşturmak için  
   
-1.  MyToolboxControl.xaml Tasarımcısı'nda açın.  
+1. MyToolboxControl.xaml Tasarımcısı'nda açın.  
   
      Tasarımcı gösterir bir <xref:System.Windows.Controls.Grid> içeren denetimi bir <xref:System.Windows.Controls.Button> denetimi.  
   
-2.  Kılavuz düzeni düzenleyin. Seçtiğinizde, <xref:System.Windows.Controls.Grid> denetimi üst ve sol kenarlarının kılavuzunun üzerinde mavi denetim çubukları görünür. Çubukları tıklayarak kılavuza satırlar ve sütunlar ekleyebilirsiniz.  
+2. Kılavuz düzeni düzenleyin. Seçtiğinizde, <xref:System.Windows.Controls.Grid> denetimi üst ve sol kenarlarının kılavuzunun üzerinde mavi denetim çubukları görünür. Çubukları tıklayarak kılavuza satırlar ve sütunlar ekleyebilirsiniz.  
   
-3.  Alt denetimler kılavuza ekleyin. Buradan sürükleyerek bir alt denetimin konumlandırabilirsiniz **araç kutusu** kılavuzunun veya ayarlayarak bir bölüme, `Grid.Row` ve `Grid.Column` XAML öznitelikleri. Aşağıdaki örnek iki etiket üst satırdaki kılavuz ve ikinci satırdaki bir düğme ekler.  
+3. Alt denetimler kılavuza ekleyin. Buradan sürükleyerek bir alt denetimin konumlandırabilirsiniz **araç kutusu** kılavuzunun veya ayarlayarak bir bölüme, `Grid.Row` ve `Grid.Column` XAML öznitelikleri. Aşağıdaki örnek iki etiket üst satırdaki kılavuz ve ikinci satırdaki bir düğme ekler.  
   
     ```xaml  
     <Grid>  
@@ -57,11 +57,11 @@ ms.locfileid: "57868846"
 ## <a name="renaming-the-control"></a>Denetimi yeniden adlandırma  
  Varsayılan olarak, denetiminizin içinde görünür **araç kutusu** olarak **MyToolboxControl** adlı bir grup içindeki **MyToolboxControl.MyToolboxControl**. MyToolboxControl.xaml.cs dosyasında bu adları değiştirebilirsiniz.  
   
-1.  MyToolboxControl.xaml.cs kod Görünümü'nde açın.  
+1. MyToolboxControl.xaml.cs kod Görünümü'nde açın.  
   
-2.  MyToolboxControl sınıfı bulun ve TestControl için yeniden adlandırın. (Bunu yapmanın en hızlı yolu, sınıfı yeniden adlandırmak için olan seçip **Yeniden Adlandır** bağlam menüsünden ve adımları tamamlayın. (Hakkında daha fazla bilgi için **Yeniden Adlandır** komutu, bkz: [düzenlemeyi yeniden adlandırma (C#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2. MyToolboxControl sınıfı bulun ve TestControl için yeniden adlandırın. (Bunu yapmanın en hızlı yolu, sınıfı yeniden adlandırmak için olan seçip **Yeniden Adlandır** bağlam menüsünden ve adımları tamamlayın. (Hakkında daha fazla bilgi için **Yeniden Adlandır** komutu, bkz: [düzenlemeyi yeniden adlandırma (C#)](../csharp-ide/rename-refactoring-csharp.md).)  
   
-3.  Git `ProvideToolboxControl` ilk parametre olarak değiştirin ve öznitelik **Test**. Denetimi içeren grubun adıdır **araç kutusu**.  
+3. Git `ProvideToolboxControl` ilk parametre olarak değiştirin ve öznitelik **Test**. Denetimi içeren grubun adıdır **araç kutusu**.  
   
      Sonuçta elde edilen kod gibi görünmelidir:  
   
@@ -81,22 +81,22 @@ ms.locfileid: "57868846"
   
 #### <a name="to-build-and-test-the-control"></a>Yapı ve denetim test etmek için  
   
-1.  Projeyi yeniden derleyin ve hata ayıklamaya başlayın.  
+1. Projeyi yeniden derleyin ve hata ayıklamaya başlayın.  
   
-2.  Yeni Visual Studio örneğinde, bir WPF uygulaması projesi oluşturun. XAML Tasarımcısı'nı açık olduğundan emin olun.  
+2. Yeni Visual Studio örneğinde, bir WPF uygulaması projesi oluşturun. XAML Tasarımcısı'nı açık olduğundan emin olun.  
   
-3.  Denetiminizi Bul **araç kutusu** ve tasarım yüzeyine sürükleyin.  
+3. Denetiminizi Bul **araç kutusu** ve tasarım yüzeyine sürükleyin.  
   
-4.  WPF uygulama hatalarını ayıklamaya başlayın.  
+4. WPF uygulama hatalarını ayıklamaya başlayın.  
   
-5.  Denetiminiz göründüğünü doğrulayın.  
+5. Denetiminiz göründüğünü doğrulayın.  
   
 #### <a name="to-deploy-the-control"></a>Denetim dağıtmak için  
   
-1.  Test edilen projenin derledikten sonra projeyi \bin\debug\ klasöründe .vsix dosyasını bulabilirsiniz.  
+1. Test edilen projenin derledikten sonra projeyi \bin\debug\ klasöründe .vsix dosyasını bulabilirsiniz.  
   
-2.  Bu yerel bir bilgisayarda .vsix dosyasını çift tıklayın ve aşağıdaki yükleme yordamı yükleyebilirsiniz. Denetim kaldırmak için Git **araçları / Uzantılar ve güncelleştirmeler** ve kontrol uzantısı için bakın, sonra da tıklayın **kaldırma**.  
+2. Bu yerel bir bilgisayarda .vsix dosyasını çift tıklayın ve aşağıdaki yükleme yordamı yükleyebilirsiniz. Denetim kaldırmak için Git **araçları / Uzantılar ve güncelleştirmeler** ve kontrol uzantısı için bakın, sonra da tıklayın **kaldırma**.  
   
-3.  .Vsix dosyasını bir ağa veya bir Web sitesine yükleyin.  
+3. .Vsix dosyasını bir ağa veya bir Web sitesine yükleyin.  
   
      Dosyayı karşıya yükleme durumunda [Visual Studio Market](https://marketplace.visualstudio.com/) Web sitesinin diğer kullanıcıların kullanabileceği **araçları / Uzantılar ve güncelleştirmeler** denetimi çevrimiçi bulmak ve yüklemek için Visual Studio'da.

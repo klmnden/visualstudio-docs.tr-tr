@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6901c44e61ba291bbc40ad9654f27f52f0e7f48a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105038"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları ile Başlarken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,30 +27,30 @@ Bu bölümde, Unity için Visual Studio Araçları yükleme ve Unity projeniz Vi
 ## <a name="prerequisites"></a>Önkoşullar  
  Unity için Visual Studio Araçları kullanmak için ihtiyacınız olacak:  
   
--   Bir sürümünü **Visual Studio** , Visual Studio Community, Professional, Premium veya Enterprise gibi uzantıları destekler. Visual Studio Community'yi ücretsiz indirebilirsiniz.  
+- Bir sürümünü **Visual Studio** , Visual Studio Community, Professional, Premium veya Enterprise gibi uzantıları destekler. Visual Studio Community'yi ücretsiz indirebilirsiniz.  
   
      [Visual Studio Community'yi indirin](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** sürüm 4.0.0 veya üzeri; **Unity** sürüm 5.2.0 veya sürüm 2.1 veya üzeri Unity için Visual Studio Araçları için yerleşik destek avantajlarından yararlanmak için daha yüksek.  
+- **Unity** sürüm 4.0.0 veya üzeri; **Unity** sürüm 5.2.0 veya sürüm 2.1 veya üzeri Unity için Visual Studio Araçları için yerleşik destek avantajlarından yararlanmak için daha yüksek.  
   
      [Unity'yi indirin](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları yükleme  
  İndirin ve Unity için Visual Studio Araçları, Visual Studio Gallery'den yükleyin. Visual Studio sürümünüz için doğru paketi yüklemeniz gerekir. VSTU Unity 5.2 veya üzeri için yerleşik destek avantajlarından yararlanmak sürüm 2.1 veya üzeri Unity için Visual Studio Araçları'nı yüklediğinizden emin olun.  
   
--   Visual Studio 2015 Community, Visual Studio 2015 Professional veya Visual Studio 2015 Enterprise için:  
+- Visual Studio 2015 Community, Visual Studio 2015 Professional veya Visual Studio 2015 Enterprise için:  
   
      [Unity için Visual Studio 2015 Araçları'nı indirin](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Visual Studio 2013 Community, Visual Studio 2013 Professional veya Visual Studio 2013 Premium için:  
+- Visual Studio 2013 Community, Visual Studio 2013 Professional veya Visual Studio 2013 Premium için:  
   
      [Unity için Visual Studio 2013 Araçları'nı indirin](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Visual Studio 2012 Professional veya Visual Studio 2012 Premium için:  
+- Visual Studio 2012 Professional veya Visual Studio 2012 Premium için:  
   
      [Unity için Visual Studio 2012 araçlarını indirin](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Visual Studio 2010 Professional veya Visual Studio 2010 Premium için:  
+- Visual Studio 2010 Professional veya Visual Studio 2010 Premium için:  
   
      [Unity için Visual Studio 2010 Araçları'nı indirin](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   

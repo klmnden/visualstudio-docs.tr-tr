@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105441"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services ve sanal makineler için tanılamayı ayarlama
 Bir Azure bulut hizmeti veya sanal makine sorunlarını gidermek, ihtiyacınız olduğunda, Visual Studio, daha kolay Azure Tanılama'yı ayarlamak için kullanabilirsiniz. Tanılama sistemi veri ve sanal makineler ve bulut hizmetinizi çalıştıran sanal makine örneği günlük verilerini yakalar. Tanılama verileri, seçtiğiniz bir depolama hesabına aktarılır. Azure'da günlüğe kaydetme Tanılama hakkında daha fazla bilgi için bkz [Azure App Service'te Web uygulamaları için tanılama günlüğünü etkinleştirme](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -150,12 +150,13 @@ Azure SDK 2.6 veya sonraki sürümleri kullanıyorsanız ve özel bir veri kayna
 
 Azure SDK 2.5 kullanıyorsanız ve özel bir veri kaynağı belirtmek istiyorsanız, bunu ekleyebilirsiniz `WindowsEventLog` diagnostics.wadcfgx bölümünü dosyası gibi aşağıdaki örnekte:
 
-```
+```xml
 <WindowsEventLog scheduledTransferPeriod="PT1M">
    <DataSource name="Application!*" />
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Performans sayaçları
 Performans sayacı bilgileri, performans sorunlarını bulun, sistem ve uygulama performansını ayarlamanıza yardımcı olabilir. Daha fazla bilgi için [bir Azure uygulamasında performans sayaçları oluşturma ve kullanma](https://msdn.microsoft.com/library/azure/hh411542.aspx). Performans sayaçları yakalamak için seçin **etkinleştirme performans sayaçları aktarımını** onay kutusu. Artırmak ya da olay günlüklerini aktarımını depolama hesabınıza arasındaki süreyi azaltmak için değiştirme **aktarım süresi (dak)** değeri. İzlemek istediğiniz performans sayaçları için onay kutularını seçin.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095847"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 ve Windows Server 2012 uygulamalarında performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
 > [!NOTE]
 >  Windows (Windows 7, Windows Server 2008 R2) desteklenen diğer sürümleri için performans araçları değişmedi.  
   
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
+## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  [Visual Studio IDE Windows Store uygulamalarından şirket veri toplama](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Visual Studio IDE içinden masaüstünde Windows 8 veya Windows Server 2012'de çalışan uygulamaları üzerinde veri toplama](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
   [Katman etkileşimi (TIP) verileri toplama](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Visual Studio IDE Windows Store uygulamalarından şirket veri toplama  
+## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Visual Studio IDE Windows Store uygulamalarından şirket veri toplama  
  JavaScript ve HTML 5 yazılmış bir Windows Store uygulaması profil, JavaScript kodu için ölçümlü izleme verilerini toplayın. Windows Store uygulaması ya da Visual C++, Visual C# veya Visual Basic içinde yazılan bileşen profil, yerel ve yönetilen kod için örnekleme verileri toplayın. Uygulamanızı yerel olarak veya bir uzak makinede profil oluşturabilirsiniz.  
   
  Bu profil özellikleri ve seçenekleri, Windows Store apps profili oluşturulurken desteklenmez:  
@@ -76,19 +76,19 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
   [Bu konudaki](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Visual Studio IDE içinden masaüstünde Windows 8 veya Windows Server 2012'de çalışan uygulamaları üzerinde veri toplama  
+## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Visual Studio IDE içinden masaüstünde Windows 8 veya Windows Server 2012'de çalışan uygulamaları üzerinde veri toplama  
  Araçlar yöntemini kullanarak profil oluşturma Windows 8 için değiştirilmemiştir.  
   
  Katman etkileşimli profil oluşturma (TIP) örnekleme metodu kullanılarak desteklenmiyor.  
   
-###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Visual Studio IDE'den örnekleme kullanarak Windows Server 2012 veya Windows 8 masaüstünde çalışan uygulamalar üzerinde veri toplama  
+### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Visual Studio IDE'den örnekleme kullanarak Windows Server 2012 veya Windows 8 masaüstünde çalışan uygulamalar üzerinde veri toplama  
  Bu profil özellikleri ve seçenekleri Masaüstü uygulamalarını Windows 8 veya Windows Server 2012 uygulamalar örnekleme metodu kullanılarak profili oluşturulurken desteklenmez:  
   
--   Katman etkileşim profili oluşturma (TIP). İpucu verileri toplama araçları kullanılarak desteklenir.  
+- Katman etkileşim profili oluşturma (TIP). İpucu verileri toplama araçları kullanılarak desteklenir.  
   
--   Örnekleme olay ve zamanlama aralığı ayarını veya ek performans sayacı verilerini toplama gibi örnekleme Seçenekleri'ni kullanın.  
+- Örnekleme olay ve zamanlama aralığı ayarını veya ek performans sayacı verilerini toplama gibi örnekleme Seçenekleri'ni kullanın.  
   
-##  <a name="BKMK_Profiling_from_the_command_line"></a> Komut satırından profil oluşturma  
+## <a name="BKMK_Profiling_from_the_command_line"></a> Komut satırından profil oluşturma  
  İki komut satırı araçları, Visual Studio yüklemesini olmayan cihazlar da dahil olmak üzere Windows 8 ve Windows Server 2012 cihazlarında, profil oluşturma verilerini toplamak için kullanın:  
   
 |Araç adı|Açıklama|  
@@ -100,22 +100,22 @@ Windows 8 ve Windows Server 2012'deki Gelişmiş güvenlik özelliklerine şekil
   
  Profil için cihazlarında uygulamalar Visual Studio yüklü olmayan aşağıdakilerden birini yapın:  
   
--   Visual Studio için Uzak Araçlar'ın bir parçası olarak araçları indirin [MSDN web sitesinde](http://go.microsoft.com/fwlink/?LinkID=219549).  
+- Visual Studio için Uzak Araçlar'ın bir parçası olarak araçları indirin [MSDN web sitesinde](http://go.microsoft.com/fwlink/?LinkID=219549).  
   
--   Kopyalama ve bilgisayarınızda Visual Studio bağımsız profil oluşturucuyu araçları yükleme programını çalıştırın. Yükleme programları bulunan *VSInstallDir %* **tools\performance Tools\Setups** klasör. Uzak bilgisayarın işletim sistemi (x86/x64) için Kurulum programı seçin.  
+- Kopyalama ve bilgisayarınızda Visual Studio bağımsız profil oluşturucuyu araçları yükleme programını çalıştırın. Yükleme programları bulunan *VSInstallDir %* **tools\performance Tools\Setups** klasör. Uzak bilgisayarın işletim sistemi (x86/x64) için Kurulum programı seçin.  
   
 > [!NOTE]
 >  İpucu profil oluşturma verilerini toplamak için uzak bilgisayardaki Visual Studio makinenizden bağımsız profil oluşturucuyu yüklemeniz gerekir.  
   
  Bu profil özellikleri ve seçenekleri komut satırından Windows 8 ve Windows Server 2012 uygulamalarında profil oluşturma sırasında desteklenmez:  
   
--   Örnekleme modu ile kullanarak Windows 8 ve Windows Server 2012 web uygulamalarından veri toplamayı [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
+- Örnekleme modu ile kullanarak Windows 8 ve Windows Server 2012 web uygulamalarından veri toplamayı [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md).  
   
--   VsPerfCmd.exe'ı kullanarak örnekleme verileri toplama.  
+- VsPerfCmd.exe'ı kullanarak örnekleme verileri toplama.  
   
--   Örnekleme olay ve zamanlama aralığı ayarını veya ek performans sayacı verilerini toplama gibi örnekleme Seçenekleri'ni kullanın.  
+- Örnekleme olay ve zamanlama aralığı ayarını veya ek performans sayacı verilerini toplama gibi örnekleme Seçenekleri'ni kullanın.  
   
-##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Katman etkileşimi (TIP) verileri toplama  
+## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Katman etkileşimi (TIP) verileri toplama  
  Katman etkileşim profili oluşturma, ADO.NET Hizmetleri aracılığıyla veritabanları ile iletişim kuran çok katmanlı uygulamaların işlevlerini yürütme sürelerini hakkında ek bilgi sağlar. Verileri yalnızca zaman uyumlu işlev çağrıları için toplanır.  
   
  **Visual Studio sürümleri**  

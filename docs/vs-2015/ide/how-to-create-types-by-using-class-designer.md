@@ -18,51 +18,51 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a20a9ecf08c82589fd915fdd4bd60c6144e9d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100423"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Nasıl yapılır: Sınıf Tasarımcısı kullanarak tür oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C# .NET ve Visual Basic .NET projeleri için yeni türleri tasarımı için bir sınıf diyagramı üzerinde oluşturun. Varolan türleri görmek için bkz: [nasıl yapılır: Varolan türleri görüntüleme (Sınıf Tasarımcısı)](../ide/how-to-view-existing-types-class-designer.md).  
   
--   [Yeni tür oluşturma](#CreateType)  
+- [Yeni tür oluşturma](#CreateType)  
   
--   [Bir türe özel bir öznitelik uygulama](#CustAttributeType)  
+- [Bir türe özel bir öznitelik uygulama](#CustAttributeType)  
   
--   [Bir tür üyesine özel bir öznitelik uygulama](#CustAttributeMember)  
+- [Bir tür üyesine özel bir öznitelik uygulama](#CustAttributeMember)  
   
-##  <a name="CreateType"></a> Yeni tür oluşturma  
+## <a name="CreateType"></a> Yeni tür oluşturma  
   
-1.  Araç Kutusu'nda, Sınıf Tasarımcısı'nın altında aşağıdakilerden birini bir sınıf diyagramına sürükleyin:  
+1. Araç Kutusu'nda, Sınıf Tasarımcısı'nın altında aşağıdakilerden birini bir sınıf diyagramına sürükleyin:  
   
-    -   **Sınıf** veya **soyut sınıf**  
+    - **Sınıf** veya **soyut sınıf**  
   
-    -   **Sabit listesi**  
+    - **Sabit listesi**  
   
-    -   **Arabirimi**  
+    - **Arabirimi**  
   
-    -   **Yapı** (VB) veya **yapı** (C#)  
+    - **Yapı** (VB) veya **yapı** (C#)  
   
-    -   **Temsilci**  
+    - **Temsilci**  
   
-    -   **Modül** (yalnızca VB)  
+    - **Modül** (yalnızca VB)  
   
-2.  Türü adlandırın. Daha sonra erişim düzeyini seçin.  
+2. Türü adlandırın. Daha sonra erişim düzeyini seçin.  
   
-3.  Tür için başlangıç kodunu eklemek istediğiniz dosyayı seçin:  
+3. Tür için başlangıç kodunu eklemek istediğiniz dosyayı seçin:  
   
-    -   Yeni bir dosya oluşturun ve bunu geçerli projeye eklemek için **yeni dosya oluştur** ve dosyayı adlandırın.  
+    - Yeni bir dosya oluşturun ve bunu geçerli projeye eklemek için **yeni dosya oluştur** ve dosyayı adlandırın.  
   
-    -   Varolan bir dosyaya kod eklemek için seçin **varolan dosyaya ekleme**.  
+    - Varolan bir dosyaya kod eklemek için seçin **varolan dosyaya ekleme**.  
   
          Çözümünüz birden fazla uygulama kod paylaşan bir proje varsa, yalnızca ilgili sınıf dosyası aynı uygulama projesinde veya paylaşılan projede, ancak uygulama projesinde sınıf diyagramına yeni bir tür ekleyebilirsiniz.  
   
-4.  Şimdi, türü tanımlamak için diğer öğeleri ekleyin:  
+4. Şimdi, türü tanımlamak için diğer öğeleri ekleyin:  
   
     |||  
     |-|-|  
@@ -75,23 +75,23 @@ Visual C# .NET ve Visual Basic .NET projeleri için yeni türleri tasarımı iç
   
      Bkz: [üyeleri oluşturma](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
-##  <a name="CustAttributeType"></a> Bir türe özel bir öznitelik uygulama  
+## <a name="CustAttributeType"></a> Bir türe özel bir öznitelik uygulama  
   
-1.  Bir sınıf diyagramında türe ait şekle tıklayın.  
+1. Bir sınıf diyagramında türe ait şekle tıklayın.  
   
-2.  Özellikler penceresinde yanındaki **özel öznitelikler** özellik türü için üç nokta (…) düğmesine tıklayın.  
+2. Özellikler penceresinde yanındaki **özel öznitelikler** özellik türü için üç nokta (…) düğmesine tıklayın.  
   
-3.  Satır başına bir olmak üzere, bir ya da daha fazla özel öznitelik ekleyin. Bunları ayraçlar içine almayın.  
+3. Satır başına bir olmak üzere, bir ya da daha fazla özel öznitelik ekleyin. Bunları ayraçlar içine almayın.  
   
      İşiniz bittiğinde özel öznitelikler türe uygulanır.  
   
-##  <a name="CustAttributeMember"></a> Bir tür üyesine özel bir öznitelik uygulama  
+## <a name="CustAttributeMember"></a> Bir tür üyesine özel bir öznitelik uygulama  
   
-1.  Bir sınıf diyagramında kendi türünün şeklinde üyenin adına veya Sınıf Ayrıntıları penceresinde satırına tıklayın.  
+1. Bir sınıf diyagramında kendi türünün şeklinde üyenin adına veya Sınıf Ayrıntıları penceresinde satırına tıklayın.  
   
-2.  Özellikler penceresinde üyeye ait bulma **özel öznitelikler** özelliği.  
+2. Özellikler penceresinde üyeye ait bulma **özel öznitelikler** özelliği.  
   
-3.  Satır başına bir olmak üzere, bir ya da daha fazla özel öznitelik ekleyin. Bunları ayraçlar içine almayın.  
+3. Satır başına bir olmak üzere, bir ya da daha fazla özel öznitelik ekleyin. Bunları ayraçlar içine almayın.  
   
      İşiniz bittiğinde özel öznitelikler türe uygulanır.  
   

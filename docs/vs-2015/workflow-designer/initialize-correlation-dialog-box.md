@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b841298c7d4683059599bb95b145514ab94873
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068862"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Bağıntıyı Başlat İletişim Kutusu
 **Başlatmak bağıntı** iletişim kutusu kullanılan [!INCLUDE[wfd1](../includes/wfd1-md.md)] düzenlemek için <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> özelliği bir <xref:System.ServiceModel.Activities.InitializeCorrelation> etkinlik. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [Initializecorrelation](../workflow-designer/initializecorrelation-activity-designer.md) konu.  
@@ -30,7 +30,7 @@ ms.locfileid: "54771020"
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Bağıntı başlatma iletişim kutusunu başlatmak için  
   
--   Tıklayın **görünümü** üzerinde **Initializecorrelation** etkinlik Tasarımcısı veya select bir <xref:System.ServiceModel.Activities.InitializeCorrelation> etkinliğinde [!INCLUDE[wfd2](../includes/wfd2-md.md)] ve yanındaki üç nokta düğmesini'ye tıklayın <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> özelliği Özellik Kılavuzu.  
+- Tıklayın **görünümü** üzerinde **Initializecorrelation** etkinlik Tasarımcısı veya select bir <xref:System.ServiceModel.Activities.InitializeCorrelation> etkinliğinde [!INCLUDE[wfd2](../includes/wfd2-md.md)] ve yanındaki üç nokta düğmesini'ye tıklayın <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> özelliği Özellik Kılavuzu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

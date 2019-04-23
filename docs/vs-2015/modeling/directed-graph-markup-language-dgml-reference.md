@@ -9,14 +9,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106026"
 ---
-# <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik İşaretleme Dili (DGML) başvurusu
+# <a name="directed-graph-markup-language-dgml-reference"></a>Yönlendirilmiş Grafik Biçimlendirme Dili (DGML) başvurusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıklık analizleri gerçekleştirmek için kullanılan bilgileri açıklar ve biçimi Visual Studio'daki kod haritaları kalıcı hale getirmek için kullanılır. Döngüsel ve döngüsel olmayan yönlendirilmiş grafikleri açıklamak için basit XML kullanır. Yönlendirilmiş bir grafik, bağlantılarla veya kenarlarla bağlanmış bir düğüm kümesidir. Düğümler ve bağlantılar, bir yazılım projesindeki öğeler gibi ağ yapılarını açıklamak için kullanılabilir.  
@@ -26,7 +26,7 @@ Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıkl�
 > [!NOTE]
 >  Bir .dgml dosyasını düzenlerken, IntelliSense her öğe için kullanılabilen öznitelikleri ve değerlerini belirlemenize yardımcı olur. Bir öznitelikte renk belirlemek için "Mavi" gibi genel renklerin adlarını veya "#ffa0b1c3" gibi ARGB onaltılık değerlerini kullanın. DGML Windows Presentation Foundation (WPF) renk tanımı biçimlerinin küçük bir alt kümesini kullanır. Daha fazla bilgi için [renkler sınıfı](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> DGML söz dizimi  
+## <a name="DGML"></a> DGML söz dizimi  
  Aşağıdaki tabloda, DGML'de kullanılan öğelerin türleri açıklanmaktadır:  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -302,7 +302,7 @@ Yönlendirilmiş Grafik işaretleme dili (DGML) Görselleştirme ve karmaşıkl�
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Sık kullanılan yolların diğer adları  
+### <a name="AddAlias"></a> Sık kullanılan yolların diğer adları  
  Yaygın olarak kullanılan yolların takma adlarla değiştirilmesi .dgml dosyasının boyutunu azaltır ve dosyayı yüklemek veya kaydetmek için gereken süreyi kısaltır. Bir diğer ad oluşturmak için bir `<Paths></Paths>` .dgml dosyasının sonundaki bölümü. Bu bölümde, ekleme bir `<Path/>` yolu için bir diğer ad tanımlamak için:  
   
 ```xml  

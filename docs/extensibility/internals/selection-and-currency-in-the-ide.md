@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098824"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE’de Seçim ve Para Birimi
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Tümleşik geliştirme ortamı (IDE) tutar kullanıcıların hakkında bilgi seçili nesnelerin seçimini kullanarak *bağlam*. Seçim bağlamı ile VSPackage iki yolla izleme para biriminde yer alabilir:
 
--   IDE VSPackages para birimi bilgilerine göre yayılıyor.
+- IDE VSPackages para birimi bilgilerine göre yayılıyor.
 
--   Şu anda etkin kullanıcıların seçimlerine IDE içinden izleyerek.
+- Şu anda etkin kullanıcıların seçimlerine IDE içinden izleyerek.
 
 ## <a name="selection-context"></a>Seçim bağlamı
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE genel olarak izler, kendi genel seçimi bağlam nesnesi IDE para birimi. Aşağıdaki tablo, seçim bağlamı öğeleri gösterir.
@@ -38,9 +38,9 @@ ms.locfileid: "56653963"
 
  Ayrıca, ortamın iki genel listeleri tutar:
 
--   Etkin kullanıcı Arabirimi komut tanımlayıcıları listesi
+- Etkin kullanıcı Arabirimi komut tanımlayıcıları listesi
 
--   Şu anda etkin öğe türlerinin listesi.
+- Şu anda etkin öğe türlerinin listesi.
 
 ### <a name="window-types-and-selection"></a>Pencere türleri ve seçim
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE windows iki genel tür olarak düzenler:
@@ -58,9 +58,9 @@ ms.locfileid: "56653963"
 ### <a name="events-and-currency"></a>Olayları ve para birimi
  İki tür olay ortamın para birimi kavramı etkileyen oluşabilir:
 
--   Pencere çerçevesi seçim bağlamı için genel düzeyde yayılır ve olaylar. Bu tür bir olay örnekleri açıldı, açılan bir genel araç penceresi ya da açılan bir proje türü araç penceresi bir MDI alt penceresi içerir.
+- Pencere çerçevesi seçim bağlamı için genel düzeyde yayılır ve olaylar. Bu tür bir olay örnekleri açıldı, açılan bir genel araç penceresi ya da açılan bir proje türü araç penceresi bir MDI alt penceresi içerir.
 
--   Pencere çerçevesi seçim bağlamı içinde izlenen öğelerini değiştirme olayları. DocObject içinde seçimini değiştirmeden veya bir proje türü penceresinde seçimi değiştirme örneklerindendir.
+- Pencere çerçevesi seçim bağlamı içinde izlenen öğelerini değiştirme olayları. DocObject içinde seçimini değiştirmeden veya bir proje türü penceresinde seçimi değiştirme örneklerindendir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Seçim Bağlamı Nesneleri](../../extensibility/internals/selection-context-objects.md)

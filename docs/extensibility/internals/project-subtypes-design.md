@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066422"
 ---
 # <a name="project-subtypes-design"></a>Proje Alt Türleri Tasarımı
 
@@ -23,11 +23,11 @@ Proje alt türleri kılan Microsoft Build Engine (MSBuild) üzerinde temel proje
 
  Aşağıdaki konular temel tasarım ve uygulama proje alt türlerinin başlatılma vermektedir:
 
--   Proje alt türü tasarım.
+- Proje alt türü tasarım.
 
--   Çok düzeyli toplama.
+- Çok düzeyli toplama.
 
--   Arabirimleri destekleme.
+- Arabirimleri destekleme.
 
 ## <a name="project-subtype-design"></a>Proje alt tasarımı
 
@@ -73,11 +73,11 @@ Proje alt türleri, Otomasyon nesne modeli genişleterek temel proje sistemi dah
 
 Alt düzey proje alt türü sarmalayan bir proje alt uygulama düzgün şekilde çalışabilmesi iç proje alt izin vermek için işbirliği ile programlanmak gerekir. Sorumlulukları programlama bir liste aşağıdakileri içerir:
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> İç alt sarmalama proje alt uygulaması için temsilci seçme gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> iç proje alt uygulaması hem de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> yöntemleri.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> İç alt sarmalama proje alt uygulaması için temsilci seçme gerekir <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> iç proje alt uygulaması hem de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> ve <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> yöntemleri.
 
--   <xref:EnvDTE80.IInternalExtenderProvider> Sarmalayıcı proje alt uygulaması, kendi iç proje alt temsilci gerekir. Özellikle, uygulanması <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> iç proje alt türü adları dizisi alın ve ardından istediği Genişleticileri eklemek için dizeleri birleştirmek gerekir.
+- <xref:EnvDTE80.IInternalExtenderProvider> Sarmalayıcı proje alt uygulaması, kendi iç proje alt temsilci gerekir. Özellikle, uygulanması <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> iç proje alt türü adları dizisi alın ve ardından istediği Genişleticileri eklemek için dizeleri birleştirmek gerekir.
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Gereken bir sarmalayıcı proje alt uygulama örneğini <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> kendi iç nesne alt proje ve temel projenin proje yapılandırması nesnesi doğrudan olduğunu bilir yalnızca özel bir temsilci beri tutun sarmalayıcı Proje alt yapılandırma nesnesi yok. Dış Proje alt başlangıçta istediği doğrudan işlemek için yapılandırma arabirimleri seçin ve ardından kalan iç proje alt 's uygulaması için temsilci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Gereken bir sarmalayıcı proje alt uygulama örneğini <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> kendi iç nesne alt proje ve temel projenin proje yapılandırması nesnesi doğrudan olduğunu bilir yalnızca özel bir temsilci beri tutun sarmalayıcı Proje alt yapılandırma nesnesi yok. Dış Proje alt başlangıçta istediği doğrudan işlemek için yapılandırma arabirimleri seçin ve ardından kalan iç proje alt 's uygulaması için temsilci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Arabirimleri destekleme
 

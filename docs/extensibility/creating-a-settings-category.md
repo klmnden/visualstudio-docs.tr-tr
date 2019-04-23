@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100593"
 ---
 # <a name="create-a-settings-category"></a>Ayarları kategorisi oluşturma
 
@@ -33,9 +33,9 @@ Bu izlenecek yolda başlatmak için önce ilk bölümünü tamamlamalısınız [
 
 ### <a name="to-create-a-settings-category"></a>Ayarları kategorisi oluşturma
 
-1.  Tamamlamak [bir seçenekler sayfası oluşturma](../extensibility/creating-an-options-page.md).
+1. Tamamlamak [bir seçenekler sayfası oluşturma](../extensibility/creating-an-options-page.md).
 
-2.  Açık *VSPackage.resx* dosya ve bu üç dize kaynakları ekleyin:
+2. Açık *VSPackage.resx* dosya ve bu üç dize kaynakları ekleyin:
 
     |Ad|Değer|
     |----------|-----------|
@@ -48,7 +48,7 @@ Bu izlenecek yolda başlatmak için önce ilk bölümünü tamamlamalısınız [
     > [!NOTE]
     >  Bu üç, yalnızca kategori adı görünmez **içeri ve dışarı aktarma ayarları** Sihirbazı.
 
-3.  İçinde *MyToolsOptionsPackage.cs*, ekleme bir `float` adlı özellik `OptionFloat` için `OptionPageGrid` , aşağıdaki örnekte gösterildiği gibi sınıf.
+3. İçinde *MyToolsOptionsPackage.cs*, ekleme bir `float` adlı özellik `OptionFloat` için `OptionPageGrid` , aşağıdaki örnekte gösterildiği gibi sınıf.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,39 +78,39 @@ Bu izlenecek yolda başlatmak için önce ilk bölümünü tamamlamalısınız [
     > [!NOTE]
     >  `OptionPageGrid` Artık "My Category" adlı kategoriden oluşuyorsa iki özelliklerini `OptionInteger` ve `OptionFloat`.
 
-4.  Ekleme bir <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> için `MyToolsOptionsPackage` sınıfı ve "My Category" CategoryName adı verin, "My ayarları" ObjectName verin ve isToolsOptionPage true olarak ayarlayın. CategoryResourceID objectNameResourceID ve DescriptionResourceID kimlikleri daha önce oluşturduğunuz karşılık gelen dize kaynağını ayarlayın.
+4. Ekleme bir <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> için `MyToolsOptionsPackage` sınıfı ve "My Category" CategoryName adı verin, "My ayarları" ObjectName verin ve isToolsOptionPage true olarak ayarlayın. CategoryResourceID objectNameResourceID ve DescriptionResourceID kimlikleri daha önce oluşturduğunuz karşılık gelen dize kaynağını ayarlayın.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneğinde, görmelisiniz **kılavuz sayfam** artık hem tamsayı ve kayan nokta değerlerine sahip.
+5. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneğinde, görmelisiniz **kılavuz sayfam** artık hem tamsayı ve kayan nokta değerlerine sahip.
 
 ## <a name="examine-the-settings-file"></a>Ayarlar dosyasını inceleyin.
  Bu bölümde, özellik kategorisi değerlerini bir ayarları dosyasına aktarın. Dosyasını inceleyin ve sonra özellik kategorisine değerleri alın.
 
-1.  Basarak projenin hata ayıklama modunda başlatın **F5**. Bu deneysel örneği başlatır.
+1. Basarak projenin hata ayıklama modunda başlatın **F5**. Bu deneysel örneği başlatır.
 
-2.  Açık **Araçları** > **seçenekleri** iletişim.
+2. Açık **Araçları** > **seçenekleri** iletişim.
 
-3.  Sol bölmede ağaç görünümünde genişletin **My kategori** ve ardından **kılavuz sayfam**.
+3. Sol bölmede ağaç görünümünde genişletin **My kategori** ve ardından **kılavuz sayfam**.
 
-4.  Değiştirin **OptionFloat** 3.1416 için ve **OptionInteger** 12. **Tamam**'ı tıklatın.
+4. Değiştirin **OptionFloat** 3.1416 için ve **OptionInteger** 12. **Tamam**'ı tıklatın.
 
-5.  Üzerinde **Araçları** menüsünde tıklatın **içeri ve dışarı aktarma ayarları**.
+5. Üzerinde **Araçları** menüsünde tıklatın **içeri ve dışarı aktarma ayarları**.
 
      **İçeri ve dışarı aktarma ayarları** Sihirbazı görünür.
 
-6.  Emin **seçili ortam ayarlarını dışarı aktar** seçilir ve ardından **sonraki**.
+6. Emin **seçili ortam ayarlarını dışarı aktar** seçilir ve ardından **sonraki**.
 
      **Dışarı aktarma ayarlarını seçin** sayfası görüntülenir.
 
-7.  Tıklayın **ayarlarımı**.
+7. Tıklayın **ayarlarımı**.
 
      **Açıklama** değişikliklerini **OptionInteger ve OptionFloat**.
 
-8.  Emin olun **ayarlarım** seçilir ve ardından yalnızca kategori **sonraki**.
+8. Emin olun **ayarlarım** seçilir ve ardından yalnızca kategori **sonraki**.
 
      **Ayarları dosyanızın adını** sayfası görüntülenir.
 

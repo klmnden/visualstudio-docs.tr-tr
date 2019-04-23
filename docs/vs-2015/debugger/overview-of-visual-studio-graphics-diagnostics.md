@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc0d040c899e137910449faeb14c8e241fad812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097196"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio Grafik Tanılama’ya Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Visual Studio *grafik tanılama* kaydetme ve ardından Direct3D uygulamalar olu�
 
 ##### <a name="to-open-the-directx-control-panel"></a>DirectX denetim masasını açmak için
 
--   Menü çubuğunda, **hata ayıklama**, **grafik**, **DirectX Denetim Masası'ndaki**.
+- Menü çubuğunda, **hata ayıklama**, **grafik**, **DirectX Denetim Masası'ndaki**.
 
 ## <a name="graphics-analyzer"></a>Grafik Çözümleyicisi
  Visual Studio grafik Çözümleyicisi zaten yakalanan çerçeve işleme ve performans sorunları incelemek için adanmış bir arabirimdir. Grafik Çözümleyicisi keşfedin ve uygulamanızı işleme davranışını anlamanıza yardımcı olacak birkaç araç bulabilirsiniz. Her aracı farklı türde bir, denetlenen kare hakkında bilgiler sunar ve Araçlar, sezgisel dar başlayarak bir işleme sorunun kaynağı için birlikte kullanılmak üzere tasarlanmıştır framebuffer görünümüne.

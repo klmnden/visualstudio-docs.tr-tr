@@ -8,27 +8,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096159"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>6. Adım: Çıkarma problemi ekleme
 Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki görevleri nasıl gerçekleştireceğinizi öğrenin:
 
--   Çıkarma değerlerini Store.
+- Çıkarma değerlerini Store.
 
--   Sorun için rastgele sayılar üretin (ve yanıtın 0 ile 100 arasında olduğundan emin olun).
+- Sorun için rastgele sayılar üretin (ve yanıtın 0 ile 100 arasında olduğundan emin olun).
 
--   Yanıtları denetler ve böylece çok yeni bir çıkarma sorusu denetler yöntemi güncelleştirin.
+- Yanıtları denetler ve böylece çok yeni bir çıkarma sorusu denetler yöntemi güncelleştirin.
 
--   Zamanlayıcınızın güncelleştirme <xref:System.Windows.Forms.Timer.Tick> olay işleyicisi böylece Süre dolduğunda olay işleyicisi doğru yanıtı doldurur.
+- Zamanlayıcınızın güncelleştirme <xref:System.Windows.Forms.Timer.Tick> olay işleyicisi böylece Süre dolduğunda olay işleyicisi doğru yanıtı doldurur.
 
 ## <a name="to-add-a-subtraction-problem"></a>Çıkartma problemi ekleme
 
-1.  Formunuza tamsayı değişkenleri ek sorunun ve Zamanlayıcının arasında çıkartma sorusu için iki tamsayı değişkeni ekleyin. Kod aşağıdaki gibi görünmelidir.
+1. Formunuza tamsayı değişkenleri ek sorunun ve Zamanlayıcının arasında çıkartma sorusu için iki tamsayı değişkeni ekleyin. Kod aşağıdaki gibi görünmelidir.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -37,7 +37,7 @@ Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki g
 
      Ardından, değiştireceksiniz `StartTheQuiz()` yöntemini çıkarma sorusu için rastgele değerler sağlayacak.
 
-2.  Aşağıdaki kodu "çıkartma sorusundaki dolgu" yorumundan sonra ekleyin.
+2. Aşağıdaki kodu "çıkartma sorusundaki dolgu" yorumundan sonra ekleyin.
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
@@ -58,19 +58,19 @@ Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki g
 
      Bu durumda, minimum ve maksimum değerleri belirttiğinden, son aşırı yükü seçmek istersiniz.
 
-3.  Değiştirme `CheckTheAnswer()` yöntemini doğru çıkarma yanıtını kontrol edecek şekilde.
+3. Değiştirme `CheckTheAnswer()` yöntemini doğru çıkarma yanıtını kontrol edecek şekilde.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
      Visual C# içinde `&&` olduğu `logical and` işleci. Visual Basic'te, eşdeğer işlecidir `AndAlso`. Bu işleçler "addend1 ve addend2 Toplamı toplam NumericUpDown değeri eşitse göstermeye yardımcı olur ve Eksilen eksi çıkarılan fark NumericUpDown'ının değerine eşitse." `CheckTheAnswer()` Yöntemi döndürür `true` yalnızca toplama ve çıkarma yanıtlar doğru hem de olması gerekir.
 
-4.  Zaman aşımı halinde doğru yanıtı doldurur. böylece, Zamanlayıcının Tick olay işleyicisinin son kısmını aşağıdaki kodla değiştirin.
+4. Zaman aşımı halinde doğru yanıtı doldurur. böylece, Zamanlayıcının Tick olay işleyicisinin son kısmını aşağıdaki kodla değiştirin.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  Kaydet ve kodunuzu çalıştırın.
+5. Kaydet ve kodunuzu çalıştırın.
 
      Programınız aşağıdaki çizimde gösterildiği gibi bir çıkarma sorusu içerir:
 
@@ -79,6 +79,6 @@ Bu Eğitimin altıncı kısmında bir çıkarma sorusu ekleyin ve aşağıdaki g
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [adım 7: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).
+- Sonraki öğretici adımına gitmek için bkz: [adım 7: Çarpma ve bölme soruları ekleyin](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Önceki öğretici adımına dönmek için bkz: [5. adım: NumericUpDown denetimleri için gir olayı işleyicilerini ekleme](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Önceki öğretici adımına dönmek için bkz: [5. adım: NumericUpDown denetimleri için gir olayı işleyicilerini ekleme](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

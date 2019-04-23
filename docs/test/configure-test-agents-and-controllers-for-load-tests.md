@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101957"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Test aracıları yapılandırmak ve test denetleyicilerini yükleme testlerini çalıştırmak için
 
@@ -27,11 +27,11 @@ Visual Studio benzetilmiş yük kullanarak uygulamanız için fiziksel veya sana
 
 Visual Studio istemci, test denetleyicisi ve test aracılarını yükleme benzetimi mimarisi oluşur.
 
--   İstemci, geliştirme testleri, testleri çalıştırmak ve test sonuçlarını görüntülemek için kullanılır.
+- İstemci, geliştirme testleri, testleri çalıştırmak ve test sonuçlarını görüntülemek için kullanılır.
 
--   Test denetleyicisi, test aracılarını yönetme ve test sonuçlarını toplamak için kullanılır.
+- Test denetleyicisi, test aracılarını yönetme ve test sonuçlarını toplamak için kullanılır.
 
--   Test aracıları, sistem bilgileri ve profil oluşturma verilerini test ayarında tanımlanan ASP.NET dahil olmak üzere veri toplamak ve testleri çalıştırmak için kullanılır.
+- Test aracıları, sistem bilgileri ve profil oluşturma verilerini test ayarında tanımlanan ASP.NET dahil olmak üzere veri toplamak ve testleri çalıştırmak için kullanılır.
 
 Bu mimari aşağıdaki avantajları sağlar:
 

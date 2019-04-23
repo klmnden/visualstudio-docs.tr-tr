@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad065db8871696fe1068e85be1c06f4a5b99d1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097290"
 ---
 # <a name="localize-clickonce-applications"></a>ClickOnce uygulamalarını yerelleştirme
 Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme işlemidir. Bu işlem, kullanıcı arabirimi (UI) metni doğru tarih ve para birimi biçimlendirme, bir form üzerinde denetimleri boyutunu ayarlama kullanarak bir bölgeye özgü dile çevirme içerir ve gerekirse yansıtma denetimleri sağdan sola.
@@ -35,11 +35,11 @@ Yerelleştirme, uygulamanızın belirli bir kültür için uygun hale getirme i�
 
  Bu konuda dağıtmak için üç yol açıklar bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] diğer kültürler için uygulama:
 
--   Tek bir dağıtımda tüm uydu derlemelerini içerir.
+- Tek bir dağıtımda tüm uydu derlemelerini içerir.
 
--   Her bulunan tek bir uydu derlemesi ile her bir kültür için bir dağıtım oluşturun.
+- Her bulunan tek bir uydu derlemesi ile her bir kültür için bir dağıtım oluşturun.
 
--   Uydu derlemelerini indirme.
+- Uydu derlemelerini indirme.
 
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Tüm uydu derlemelerin bir dağıtımda
  Yayımlama birden çok yerine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dağıtımlarında, tek bir yayımlayabilirsiniz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tüm uydu derlemelerini içeren dağıtım.

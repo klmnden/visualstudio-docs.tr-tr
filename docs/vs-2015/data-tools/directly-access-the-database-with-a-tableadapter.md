@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106637"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Bir TableAdapter ile veritabanına doğrudan erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'lar
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Doğrudan veritabanına yeni kayıtlar eklemek için  
   
--   TableAdapter bağdaştırıcısının çağrı `Insert` değerler her sütun için parametre olarak geçirmeyi yöntemi. Aşağıdaki yordam kullanır `Region` örneği Northwind databaseas tablo.  
+- TableAdapter bağdaştırıcısının çağrı `Insert` değerler her sütun için parametre olarak geçirmeyi yöntemi. Aşağıdaki yordam kullanır `Region` örneği Northwind databaseas tablo.  
   
     > [!NOTE]
     >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
@@ -55,7 +55,7 @@ Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'lar
   
 #### <a name="to-update-records-directly-in-a-database"></a>Doğrudan veritabanındaki kayıtları güncelleştirmek için  
   
--   TableAdapter bağdaştırıcısının çağrı `Update` yöntemi, yeni ve orijinal değerleri her sütun için parametre olarak geçirerek.  
+- TableAdapter bağdaştırıcısının çağrı `Update` yöntemi, yeni ve orijinal değerleri her sütun için parametre olarak geçirerek.  
   
     > [!NOTE]
     >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  
@@ -65,7 +65,7 @@ Ek olarak `InsertCommand`, `UpdateCommand`, ve `DeleteCommand`, TableAdapter'lar
   
 #### <a name="to-delete-records-directly-from-a-database"></a>Kayıtları doğrudan veritabanından silmek için  
   
--   TableAdapter bağdaştırıcısının çağrı `Delete` değerleri her sütun için parametre olarak geçirerek yöntemini `Delete` yöntemi. Aşağıdaki yordam kullanır `Region` örneği Northwind databaseas tablo.  
+- TableAdapter bağdaştırıcısının çağrı `Delete` değerleri her sütun için parametre olarak geçirerek yöntemini `Delete` yöntemi. Aşağıdaki yordam kullanır `Region` örneği Northwind databaseas tablo.  
   
     > [!NOTE]
     >  Kullanmak istediğiniz TableAdapter kullanılabilir bir örnek yoksa örneği.  

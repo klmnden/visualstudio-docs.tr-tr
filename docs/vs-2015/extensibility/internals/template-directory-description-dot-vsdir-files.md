@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063783"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Şablon Dizin Açıklaması (.Vsdir) Dosyaları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Sihirbaz dosyası oluşturduğunuzda, aşağıdaki sorunları dikkate almanız gereken.  
 
--   Kendisi için anlamlı veri bulunmayan gerekli olmayan alan yer tutucu olarak 0 (sıfır) içermelidir.  
+- Kendisi için anlamlı veri bulunmayan gerekli olmayan alan yer tutucu olarak 0 (sıfır) içermelidir.  
 
--   Yerelleştirilmiş adı sağlanmazsa, göreli yol adı sihirbaz dosyasında kullanılır.  
+- Yerelleştirilmiş adı sağlanmazsa, göreli yol adı sihirbaz dosyasında kullanılır.  
 
--   DLLPath clsidPackage simge konumu için geçersiz kılar.  
+- DLLPath clsidPackage simge konumu için geçersiz kılar.  
 
--   Herhangi bir simge tanımlanmazsa, IDE yerine bu uzantıya sahip bir dosya için varsayılan simgeyi koyar.  
+- Herhangi bir simge tanımlanmazsa, IDE yerine bu uzantıya sahip bir dosya için varsayılan simgeyi koyar.  
 
--   Önerilen taban adı verilmezse, 'Project' kullanılır.  
+- Önerilen taban adı verilmezse, 'Project' kullanılır.  
 
--   .Vsz dosyaları, klasörleri ve şablon dosyalarını silerseniz, aynı zamanda ilişkili kayıtlarını .vsdir dosyasından kaldırmanız gerekir.  
+- .Vsz dosyaları, klasörleri ve şablon dosyalarını silerseniz, aynı zamanda ilişkili kayıtlarını .vsdir dosyasından kaldırmanız gerekir.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sihirbazlar](../../extensibility/internals/wizards.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092428"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Hata ayıklama hazırlığı: ASP.NET Web Uygulamaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "54781305"
   
 ### <a name="to-create-a-web-forms-application"></a>Bir Web Forms uygulaması oluşturma  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni Web sitesi**.  
+1. Üzerinde **dosya** menüsünde seçin **yeni Web sitesi**.  
   
-2.  İçinde **yeni Web sitesi** iletişim kutusunda [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Web sitesi**.  
+2. İçinde **yeni Web sitesi** iletişim kutusunda [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **Web sitesi**.  
   
-3.  **Tamam**'ı tıklatın.  
+3. **Tamam**'ı tıklatın.  
   
 ### <a name="to-debug-your-web-form"></a>Web formunda hata ayıklama  
   
-1.  İşlevler ve olay işleyicileri içinde bir veya daha fazla kesme noktası ayarlayın.  
+1. İşlevler ve olay işleyicileri içinde bir veya daha fazla kesme noktası ayarlayın.  
   
      Daha fazla bilgi için [kesme noktaları ve izleme noktaları](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Bir kesme noktası isabet edildiğinde işlevin içindeki kodun adım adım. Sorunu yalıtana kadar kodunuzun yürütülmesini gözlemleyin.  
+2. Bir kesme noktası isabet edildiğinde işlevin içindeki kodun adım adım. Sorunu yalıtana kadar kodunuzun yürütülmesini gözlemleyin.  
   
      Daha fazla bilgi için [Adımlama](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) ve [hata ayıklama Web uygulamalarında ve betikte](../debugger/debugging-web-applications-and-script.md).  
   
@@ -54,13 +54,13 @@ ms.locfileid: "54781305"
   
 #### <a name="to-change-the-default-debug-configuration"></a>Varsayılan hata ayıklama yapılandırmasını değiştirmek için  
   
-1.  İçinde **Çözüm Gezgini**, Web sitesini sağ tıklatın ve seçin **özellik sayfaları** açmak için **özellik sayfaları** iletişim kutusu.  
+1. İçinde **Çözüm Gezgini**, Web sitesini sağ tıklatın ve seçin **özellik sayfaları** açmak için **özellik sayfaları** iletişim kutusu.  
   
-2.  Tıklayın **Başlat seçenekleri**.  
+2. Tıklayın **Başlat seçenekleri**.  
   
-3.  Ayarlama **başlatma eylemi** Web sayfasına ilk görüntülenmesi gerekir.  
+3. Ayarlama **başlatma eylemi** Web sayfasına ilk görüntülenmesi gerekir.  
   
-4.  Altında **hata ayıklayıcıları**, emin **ASP.NET hata ayıklaması** seçilir.  
+4. Altında **hata ayıklayıcıları**, emin **ASP.NET hata ayıklaması** seçilir.  
   
      Daha fazla bilgi için [Web projeleri özellik sayfası ayarlarını](../debugger/property-pages-settings-for-web-projects.md).  
   

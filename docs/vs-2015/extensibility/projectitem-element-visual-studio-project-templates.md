@@ -13,12 +13,12 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4f480275c29906f3bb941187ff537e3a02a1f45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099136"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem Öğesi (Visual Studio Proje Şablonları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,21 +90,21 @@ Proje şablonunda içeren bir dosyayı belirtir.
   
 ### <a name="to-rename-files-with-parameters"></a>Parametrelerle dosyaları yeniden adlandırmak için  
   
-1.  .Vstemplate dosyasında aşağıdaki XML'i kullanın:  
+1. .Vstemplate dosyasında aşağıdaki XML'i kullanın:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Proje dosyasını açın (.vbproj için bir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Proje) bir metin düzenleyicisinde veya [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Proje dosyasını açın (.vbproj için bir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Proje) bir metin düzenleyicisinde veya [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Proje dosyasında aşağıdaki XML'e benzer satırı bulun:  
+3. Proje dosyasında aşağıdaki XML'e benzer satırı bulun:  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Kod satırının şu XML ile değiştirin:  
+4. Kod satırının şu XML ile değiştirin:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  

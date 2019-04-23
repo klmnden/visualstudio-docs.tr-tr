@@ -19,31 +19,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9014b344e030f3763037395f5fb96d446c0132f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066539"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Nasıl yapılır: Yerelleştirilmiş adlar, özellikler ve izinleri belirtmek için bir kaynak dosyası kullanma
   Bir kaynak dosyası kullanarak, yerelleştirilmiş adlar sağlamak, özelliklerini tanımlayın ve bir iş verileri bağlantısı (BDC) modelde tanımlı izinleri tor nesneleri geçerli. Bu bilgileri belirtmek için eklediğiniz bir **iş verileri bağlantısı kaynak** içeren bir proje öğesine bir **iş verileri bağlantı modeli** öğesi. Ardından, adları, özellikler ve izinleri XML kaynak dosyası için düzenleyerek belirtin.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Bir BDC kaynak dosyasını bir SharePoint projesine eklemek için
 
-1.  İçinde **Çözüm Gezgini**SharePoint proje klasörünü genişletin ve ardından İVB Modeli içeren klasörü seçin.
+1. İçinde **Çözüm Gezgini**SharePoint proje klasörünü genişletin ve ardından İVB Modeli içeren klasörü seçin.
 
-2.  Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
+2. Menü çubuğunda, **proje** > **Yeni Öğe Ekle**.
 
-3.  Genişletin **SharePoint** düğümünü seçip **2010** düğümü.
+3. Genişletin **SharePoint** düğümünü seçip **2010** düğümü.
 
-4.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **iş verileri bağlantısı kaynak öğesi**.
+4. İçinde **Yeni Öğe Ekle** iletişim kutusunda **iş verileri bağlantısı kaynak öğesi**.
 
-5.  İçinde **adı** kutusuna kaynak dosyasının adını belirtin ve ardından **Ekle** düğmesi.
+5. İçinde **adı** kutusuna kaynak dosyasının adını belirtin ve ardından **Ekle** düğmesi.
 
      .Bdcr uzantısına sahip bir kaynak dosyası projeye eklenir ve düzenleme için açılmış.
 
-6.  Yerelleştirilmiş adlar, özellikler ve BDC modelini uygulamak istediğiniz izinleri tanımlamak için XML ekleyin.
+6. Yerelleştirilmiş adlar, özellikler ve BDC modelini uygulamak istediğiniz izinleri tanımlamak için XML ekleyin.
 
      Bu öğeleri tanımlama hakkında daha fazla bilgi için bkz: [modeli ve kaynak dosyalarını](http://go.microsoft.com/fwlink/?LinkID=169283).
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104552"
 ---
 # <a name="error-messages-in-workflow-designer"></a>İş Akışı Tasarımcısında Hata İletileri
 
@@ -27,13 +27,13 @@ Bu konuda, iş akışı Tasarımcısı ile çalışırken karşılaşılan hata 
 
 İş Akışı Tasarımcısı'nda hataları, aşağıdaki durumlarda oluşur:
 
-1.  Bir ifadede bir hata var.
+1. Bir ifadede bir hata var.
 
-2.  Bir etkinliğin doğrulama kısıtlamaları karşılanmadı.
+2. Bir etkinliğin doğrulama kısıtlamaları karşılanmadı.
 
-3.  Bir etkinlik yüklenemedi neden XAML dosyasındaki hataları vardır.
+3. Bir etkinlik yüklenemedi neden XAML dosyasındaki hataları vardır.
 
-4.  Neden yüklenmesi başarısız iş akışı XAML dosyasındaki hataları vardır.
+4. Neden yüklenmesi başarısız iş akışı XAML dosyasındaki hataları vardır.
 
 Geçersiz ifade ve hizmetlerinizden doğrulama kısıtlamalarını iş akışı oluşturmak başarısız olmasına neden olmaz. İş akışınızı oluşturma başarılı, ancak bir <xref:System.Activities.InvalidWorkflowException> çalışma zamanında oluşturulur. XAML dosyasında hatalar varsa derleme başarısız oluyor.
 

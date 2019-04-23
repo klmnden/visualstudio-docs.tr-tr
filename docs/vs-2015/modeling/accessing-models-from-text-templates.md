@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110498"
 ---
 # <a name="accessing-models-from-text-templates"></a>Metin Şablonlarından Modellere Erişme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Bu şablon ilgili şu noktalara dikkat edin:  
   
--   Şablon, etki alanı sınıfları, özellikleri ve DSL tanım içinde tanımlanan ilişkileri kullanabilirsiniz.  
+- Şablon, etki alanı sınıfları, özellikleri ve DSL tanım içinde tanımlanan ilişkileri kullanabilirsiniz.  
   
--   Belirttiğiniz model dosyası şablon yüklendikten `requires` özelliği.  
+- Belirttiğiniz model dosyası şablon yüklendikten `requires` özelliği.  
   
--   Bir özelliğin `this` kök öğe içeriyor. Burada, kodunuzun diğer model öğelerine gidebilirsiniz. Özelliğin adı genellikle kök etki alanı sınıfı, DSL'nin ile aynıdır. Bu örnekte bu değer `this.ExampleModel`’dur.  
+- Bir özelliğin `this` kök öğe içeriyor. Burada, kodunuzun diğer model öğelerine gidebilirsiniz. Özelliğin adı genellikle kök etki alanı sınıfı, DSL'nin ile aynıdır. Bu örnekte bu değer `this.ExampleModel`’dur.  
   
--   C# kod parçalarını yazıldığı dili olmasına karşın, herhangi bir türdeki metin oluşturabilirsiniz. Alternatif olarak kod yazabileceğiniz [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] özelliği ekleyerek `language="VB"` için `template` yönergesi.  
+- C# kod parçalarını yazıldığı dili olmasına karşın, herhangi bir türdeki metin oluşturabilirsiniz. Alternatif olarak kod yazabileceğiniz [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] özelliği ekleyerek `language="VB"` için `template` yönergesi.  
   
--   Şablon hata ayıklamak için ekleme `debug="true"` için `template` yönergesi. Şablon içinde başka bir örneği açılır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir özel durum oluşursa. Kodda belirli bir noktada hata ayıklayıcısına kesmek istiyorsanız, deyim Ekle `System.Diagnostics.Debugger.Break();`  
+- Şablon hata ayıklamak için ekleme `debug="true"` için `template` yönergesi. Şablon içinde başka bir örneği açılır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir özel durum oluşursa. Kodda belirli bir noktada hata ayıklayıcısına kesmek istiyorsanız, deyim Ekle `System.Diagnostics.Debugger.Break();`  
   
      Daha fazla bilgi için [bir T4 metin şablonuna ilişkin hata ayıklama](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  DSL yönerge işlemcisini asıl iki görevleri gerçekleştirir:  
   
--   Etkili bir şekilde derleme ve içeri aktarma yönergeleri DSL'nizi başvuran şablona ekler. Bu, etki alanı sınıfları şablon kodunda kullanmanızı sağlar.  
+- Etkili bir şekilde derleme ve içeri aktarma yönergeleri DSL'nizi başvuran şablona ekler. Bu, etki alanı sınıfları şablon kodunda kullanmanızı sağlar.  
   
--   Belirttiğiniz dosya yükler `requires` parametre ve bir özellik ayarlar `this` yüklenen modelin kök öğesine başvuruyor.  
+- Belirttiğiniz dosya yükler `requires` parametre ve bir özellik ayarlar `this` yüklenen modelin kök öğesine başvuruyor.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Şablonu çalıştırmadan önce model doğrulama  
  Şablon yürütülmeden önce doğrulanması modeli neden olabilir.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Bir hata bulunursa hataları penceresinde bildirilir ve sonuç dosyası bir hata iletisi içerir.  
   
-##  <a name="Multiple"></a> Bir metin şablonundan birden çok modellere erişme  
+## <a name="Multiple"></a> Bir metin şablonundan birden çok modellere erişme  
   
 > [!NOTE]
 >  Bu yöntem, aynı şablonu birden çok modeli okumanıza izin verir ancak ModelBus odkazy entit. ModelBus başvurularını birbirine modelleri için bkz [metin şablonunda Visual Studio ModelBus kullanarak](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

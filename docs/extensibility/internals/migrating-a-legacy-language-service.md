@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df11ccfc2057da37094c632c10fc9c1a936cf43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc0797fe993a9a640c3fcc15f0c6dc364a55687d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612445"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110973"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Eski Dil Hizmetini Geçirme
 Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest dosyası projeye eklenirken Visual Studio'nun sonraki bir sürüme geçiş yapabilirsiniz. Visual Studio Düzenleyicisi, uyum için dil hizmeti önceki gibi çalışmaya devam eder.
@@ -37,9 +37,9 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
 
 #### <a name="to-migrate-a-visual-studio-2008-language-service-to-a-later-version"></a>Bir Visual Studio 2008 dil hizmeti sonraki bir sürüme geçirmek için
 
-1.  Visual Studio ve Visual Studio SDK'ın daha yeni sürümlerini yükleyin. SDK'sını yükleme yöntemleri hakkında daha fazla bilgi için bkz. [Visual Studio SDK'sını yükleme](../../extensibility/installing-the-visual-studio-sdk.md).
+1. Visual Studio ve Visual Studio SDK'ın daha yeni sürümlerini yükleyin. SDK'sını yükleme yöntemleri hakkında daha fazla bilgi için bkz. [Visual Studio SDK'sını yükleme](../../extensibility/installing-the-visual-studio-sdk.md).
 
-2.  (Bunu Visual Studio'da yüklenmeden. RegExLangServ.csproj dosyayı Düzenle
+2. (Bunu Visual Studio'da yüklenmeden. RegExLangServ.csproj dosyayı Düzenle
 
      İçinde `Import` Microsoft.VsSDK.targets dosyaya düğüm değeri aşağıdaki metinle değiştirin.
 
@@ -47,29 +47,29 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
     $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v14.0\VSSDK\Microsoft.VsSDK.targets
     ```
 
-3.  Dosyayı kaydedin ve kapatın.
+3. Dosyayı kaydedin ve kapatın.
 
-4.  RegExLangServ.sln çözümü açın.
+4. RegExLangServ.sln çözümü açın.
 
-5.  **Tek yönlü yükseltme** penceresi görüntülenir. **Tamam**'ı tıklatın.
+5. **Tek yönlü yükseltme** penceresi görüntülenir. **Tamam**'ı tıklatın.
 
-6.  Proje özelliklerini güncelleştirin. Açık **proje özellikleri** 'nde proje düğümüne seçerek penceresi **Çözüm Gezgini**, sağ ve seçme **özellikleri**.
+6. Proje özelliklerini güncelleştirin. Açık **proje özellikleri** 'nde proje düğümüne seçerek penceresi **Çözüm Gezgini**, sağ ve seçme **özellikleri**.
 
-    -   Üzerinde **uygulama** sekmesinde, **hedef Framework'ü** için **4.6.1**.
+    - Üzerinde **uygulama** sekmesinde, **hedef Framework'ü** için **4.6.1**.
 
-    -   Üzerinde **hata ayıklama** sekmesinde **harici program Başlat** kutusuna  **\<Visual Studio yükleme yolu > \Common7\IDE\devenv.exe.**.
+    - Üzerinde **hata ayıklama** sekmesinde **harici program Başlat** kutusuna  **\<Visual Studio yükleme yolu > \Common7\IDE\devenv.exe.**.
 
          İçinde **komut satırı bağımsız değişkenleri** kutusuna /**rootsuffix Exp**.
 
-7.  Aşağıdaki başvuruları güncelleştirin:
+7. Aşağıdaki başvuruları güncelleştirin:
 
-    -   Microsoft.VisualStudio.Shell.9.0.dll başvurusunu kaldırın, sonra Microsoft.VisualStudio.Shell.14.0.dll ve Microsoft.VisualStudio.Shell.Immutable.11.0.dll başvurular ekleyin.
+    - Microsoft.VisualStudio.Shell.9.0.dll başvurusunu kaldırın, sonra Microsoft.VisualStudio.Shell.14.0.dll ve Microsoft.VisualStudio.Shell.Immutable.11.0.dll başvurular ekleyin.
 
-    -   Microsoft.VisualStudio.Package.LanguageService.9.0.dll başvurusunu kaldırın, sonra Microsoft.VisualStudio.Package.LanguageService.14.0.dll bir başvuru ekleyin.
+    - Microsoft.VisualStudio.Package.LanguageService.9.0.dll başvurusunu kaldırın, sonra Microsoft.VisualStudio.Package.LanguageService.14.0.dll bir başvuru ekleyin.
 
-    -   Microsoft.VisualStudio.Shell.Interop.10.0.dll bir başvuru ekleyin.
+    - Microsoft.VisualStudio.Shell.Interop.10.0.dll bir başvuru ekleyin.
 
-8.  VsPkg.cs dosyasını açın ve değeri değiştirin `DefaultRegistryRoot` özniteliğini
+8. VsPkg.cs dosyasını açın ve değeri değiştirin `DefaultRegistryRoot` özniteliğini
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
@@ -83,25 +83,25 @@ Eski dil hizmeti projesini güncelleştirmek ve source.extension.vsixmanifest do
 
 10. Source.extension.vsixmanifest dosyası eklemeniz gerekir.
 
-    -   Bu dosya, var olan bir uzantı, proje dizinine kopyalayın. (Bu dosya yapmanın bir yolu olan bir VSIX projesi oluşturmak için (altında **dosya**, tıklayın **yeni**, ardından **proje**. Altında Visual Basic veya C# tıklatın **genişletilebilirlik**, ardından **VSIX projesi**.)
+    - Bu dosya, var olan bir uzantı, proje dizinine kopyalayın. (Bu dosya yapmanın bir yolu olan bir VSIX projesi oluşturmak için (altında **dosya**, tıklayın **yeni**, ardından **proje**. Altında Visual Basic veya C# tıklatın **genişletilebilirlik**, ardından **VSIX projesi**.)
 
-    -   Dosyayı projenize ekleyin.
+    - Dosyayı projenize ekleyin.
 
-    -   Dosyanın içinde **özellikleri**ayarlayın **derleme eylemi** için **hiçbiri**.
+    - Dosyanın içinde **özellikleri**ayarlayın **derleme eylemi** için **hiçbiri**.
 
-    -   Dosyasını açın **VSIX bildirim Düzenleyicisi**.
+    - Dosyasını açın **VSIX bildirim Düzenleyicisi**.
 
-    -   Aşağıdaki alanları değiştirin:
+    - Aşağıdaki alanları değiştirin:
 
-    -   **KİMLİĞİ**: RegExLangServ
+    - **KİMLİĞİ**: RegExLangServ
 
-    -   **Ürün adı**: RegExLangServ
+    - **Ürün adı**: RegExLangServ
 
-    -   **Açıklama**: Bir normal ifade dil hizmeti.
+    - **Açıklama**: Bir normal ifade dil hizmeti.
 
-    -   Altında **varlıklar**, tıklayın **yeni**seçin **türü** için **Microsoft.VisualStudio.VsPackage**ayarlayın **kaynak** için **mevcut çözümde bir proje**ve ardından **proje** için **RegExLangServ**.
+    - Altında **varlıklar**, tıklayın **yeni**seçin **türü** için **Microsoft.VisualStudio.VsPackage**ayarlayın **kaynak** için **mevcut çözümde bir proje**ve ardından **proje** için **RegExLangServ**.
 
-    -   Dosyayı kaydedin ve kapatın.
+    - Dosyayı kaydedin ve kapatın.
 
 11. Çözümü oluşturun. Yerleşik dosyaları dağıtılan **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.
 

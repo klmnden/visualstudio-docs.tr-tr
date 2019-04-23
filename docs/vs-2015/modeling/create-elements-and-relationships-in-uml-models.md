@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099279"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>UML modellerinde öğe ve ilişki oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Bir ilişkilendirme oluşturmak için  
   
-1.  İlişki kaynak sonunu içeren model veya paketin genellikle olan ilişkisini sahibini edinin.  
+1. İlişki kaynak sonunu içeren model veya paketin genellikle olan ilişkisini sahibini edinin.  
   
-2.  Sahibi gerekli Create yöntemini çağırır.  
+2. Sahibi gerekli Create yöntemini çağırır.  
   
-3.  İlişkinin özellikleri gibi adını ayarlayın.  
+3. İlişkinin özellikleri gibi adını ayarlayın.  
   
      Örneğin:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  İlişki her uçtaki özelliklerini ayarlayın. Her zaman iki `MemberEnds`. Örneğin:  
+4. İlişki her uçtaki özelliklerini ayarlayın. Her zaman iki `MemberEnds`. Örneğin:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  Bir öğenin bir modelden sildiğinizde:  
   
--   Bağlantı her ilişki de silinir.  
+- Bağlantı her ilişki de silinir.  
   
--   Bir diyagramda temsil edilen her şekil de silinir.  
+- Bir diyagramda temsil edilen her şekil de silinir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [UML modellerini ve diyagramları genişletme](../modeling/extend-uml-models-and-diagrams.md)   

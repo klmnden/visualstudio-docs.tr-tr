@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066396"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL Gölgelendirici Hata Ayıklayıcısı
 Visual Studio grafik Çözümleyicisi, HLSL hata ayıklayıcısı, HLSL gölgelendirici kodunun uygulamanızın gerçek koşullar altında nasıl çalıştığını anlamanıza yardımcı olur.
@@ -50,9 +50,9 @@ Visual Studio grafik Çözümleyicisi, HLSL hata ayıklayıcısı, HLSL gölgele
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>HLSL hata ayıklayıcısını Grafik Ardışık Düzen Aşamaları penceresinden başlatmak için
 
-1.  İçinde **grafik ardışık düzen aşamaları** penceresi, hata ayıklamak istediğiniz gölgelendirici ile ilişkili ardışık düzen aşamasını bulun.
+1. İçinde **grafik ardışık düzen aşamaları** penceresi, hata ayıklamak istediğiniz gölgelendirici ile ilişkili ardışık düzen aşamasını bulun.
 
-2.  Ardışık Düzen aşamasının başlığının altındaki seçin **hata ayıklamayı Başlat**, küçük yeşil bir ok görünür.
+2. Ardışık Düzen aşamasının başlığının altındaki seçin **hata ayıklamayı Başlat**, küçük yeşil bir ok görünür.
 
     > [!NOTE]
     >  HLSL hata ayıklayıcısına bu giriş noktası, karşılık gelen aşamanın yalnızca ilk gölgelendirici iş parçacığında (yani işlenen ilk köşe veya piksel) hata ayıklar. Piksel geçmişi bu gölgelendirici aşamalarının diğer iş parçacıklarına erişmek için kullanabilirsiniz.

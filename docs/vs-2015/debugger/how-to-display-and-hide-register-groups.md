@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106364"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Nasıl yapılır: YAZMAÇ gruplarını görüntüleme ve gizleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54763911"
   
 ### <a name="to-display-or-hide-register-groups"></a>Görüntülenecek veya YAZMAÇ gruplarını Gizle  
   
-1.  Sağ **kaydeder** penceresi.  
+1. Sağ **kaydeder** penceresi.  
   
-2.  Kısayol menüsünde, göstermek veya gizlemek istediğiniz yazmaç gruplarını seçin.  
+2. Kısayol menüsünde, göstermek veya gizlemek istediğiniz yazmaç gruplarını seçin.  
   
      Seçilemez bu nedenle üzerinde hata ayıklama donanım tarafından desteklenmeyen yazmaç gruplarını kısayol menüsünde, devre dışı bırakıldı.  
   

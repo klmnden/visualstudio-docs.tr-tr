@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773d3ea2e0d5574b194a44783b14d35db25d6f7f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 960d3123c45e44b2b1cdc64b896b15b82e655bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102851"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>Tasarımcıya eklemekte olduğunuz nesneler, tasarımcının kullanmakta olduğundan farklı bir veri bağlantısı kullanıyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Tasarımcıya eklemekte olduğunuz nesneler, tasarımcının kullanmakta olduğu
   
 ### <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Seçilen nesne tarafından kullanılan bağlantı var olan bağlantıyı değiştirmek için  
   
--   **Evet**'i tıklayın.  
+- **Evet**'i tıklayın.  
   
      Seçili nesne için eklenen [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], ve yeni bağlantı DataContext.Connection ayarlanır.  
   
 ### <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>Var olan bağlantıyı kullanın ve seçili nesne eklemeyi iptal etmek devam etmek için  
   
--   **Hayır**'a tıklayın.  
+- **Hayır**'a tıklayın.  
   
      Eylemi iptal edildi. Var olan bir bağlantı DataContext.Connection kalır.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102295"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Nasıl yapılır: Profiler komut satırını kullanarak eşzamanlılık verileri toplamak için bir ASP.NET Web uygulamasına profil oluşturucu ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,16 +51,16 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 
 3. Aşağıdaki komutu yazarak ASP.NET çalışan sürecine profil oluşturucu ekleme:**VSPerfCmd / ekleme:** `PID` [**/targetclr:**`Version`]  
 
-   -   `PID` bir ASP.NET işçi işlemine adını veya Kimliğini belirtir. Windows Görev Yöneticisi'nde, işlem kimliklerini çalışan tüm işlemlerin görüntüleyebilirsiniz.  
+   - `PID` bir ASP.NET işçi işlemine adını veya Kimliğini belirtir. Windows Görev Yöneticisi'nde, işlem kimliklerini çalışan tüm işlemlerin görüntüleyebilirsiniz.  
 
-   -   [/ targetclr](../profiling/targetclr.md) **:** `Version` bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profiline ortak dil çalışma zamanı (CLR) sürümünü belirtir. Bu parametre isteğe bağlıdır.  
+   - [/ targetclr](../profiling/targetclr.md) **:** `Version` bir uygulamada birden fazla çalışma zamanı sürümü yüklendiğinde profiline ortak dil çalışma zamanı (CLR) sürümünü belirtir. Bu parametre isteğe bağlıdır.  
 
 ## <a name="controlling-data-collection"></a>Veri Toplama Denetimi  
  Uygulama çalışırken, VSPerfCmd.exe seçeneklerini kullanarak verinin yazılmasını durdurmayla ve veri toplamayı kontrol edebilirsiniz. Denetleme veri toplama işlemi tarafından program yürütmenin, uygulamanın başlatılması ya da kapatılması gibi özel bir bölümü için veri toplayabilir.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Veri toplamayı durdurmak ve başlatmak  
 
--   Aşağıdaki tabloda gösterilen VSPerfCmd seçenek çiftlerini başlatın ve veri toplamayı durdur. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.  
+- Aşağıdaki tabloda gösterilen VSPerfCmd seçenek çiftlerini başlatın ve veri toplamayı durdur. Her seçeneği ayrı bir komut satırında belirtin. Veri Toplama'ı, birden çok kez açıp kapatabilirsiniz.  
 
     |Seçenek|Açıklama|  
     |------------|-----------------|  
@@ -73,11 +73,11 @@ Bu konu nasıl kullanılacağını açıklar [!INCLUDE[vsprvs](../includes/vsprv
 
 #### <a name="to-end-a-profiling-session"></a>Profil oluşturma oturumunu sona erdirmek için  
 
-1.  Hedef uygulamadaki profil oluşturucuyu kapatarak veya bir komut istemine aşağıdakileri yazarak bağlantısını kesin:  
+1. Hedef uygulamadaki profil oluşturucuyu kapatarak veya bir komut istemine aşağıdakileri yazarak bağlantısını kesin:  
 
      **VSPerfCmd / detach**  
 
-2.  Bir komut isteminde aşağıdaki komutu yazarak profil oluşturucuyu kapatın:  
+2. Bir komut isteminde aşağıdaki komutu yazarak profil oluşturucuyu kapatın:  
 
      **VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)  
 

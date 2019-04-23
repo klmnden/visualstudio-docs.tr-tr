@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107365"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulamasına bir Veri Dosyası Dahil Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,25 +65,25 @@ Her [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] yüklediğiniz bir uy
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>MageUI.exe kullanarak bir veri dosyası eklemek için  
   
-1.  Uygulamanızın dosyaların geri kalanı ile birlikte uygulama dizininize veri dosyası ekleyin.  
+1. Uygulamanızın dosyaların geri kalanı ile birlikte uygulama dizininize veri dosyası ekleyin.  
   
-2.  Genellikle, uygulama dizininize dağıtımın geçerli sürümüyle etiketli bir dizin olacaktır — Örneğin, v1.0.0.0.  
+2. Genellikle, uygulama dizininize dağıtımın geçerli sürümüyle etiketli bir dizin olacaktır — Örneğin, v1.0.0.0.  
   
-3.  Üzerinde **dosya** menüsünde tıklayın **açın** uygulama bildiriminizi açın.  
+3. Üzerinde **dosya** menüsünde tıklayın **açın** uygulama bildiriminizi açın.  
   
-4.  Seçin **dosyaları** sekmesi.  
+4. Seçin **dosyaları** sekmesi.  
   
-5.  Uygulamanızın dosyaları içeren dizine sekmenin üstünde metin kutusuna girin ve ardından **Doldur**.  
+5. Uygulamanızın dosyaları içeren dizine sekmenin üstünde metin kutusuna girin ve ardından **Doldur**.  
   
      Veri dosyası kılavuzunda görünür.  
   
-6.  Ayarlama **dosya türü** veri dosyasına değerini **veri**.  
+6. Ayarlama **dosya türü** veri dosyasına değerini **veri**.  
   
-7.  Uygulama bildirimini kaydedin ve sonra dosyayı yeniden imzalayın.  
+7. Uygulama bildirimini kaydedin ve sonra dosyayı yeniden imzalayın.  
   
      MageUI.exe dosyayı yeniden imzalamanızı ister.  
   
-8.  Dağıtım bildirimini yeniden imzalamanız  
+8. Dağıtım bildirimini yeniden imzalamanız  
   
      Uygulama bildiriminin, karma değiştiğinden, dağıtım bildirimini yeniden imzalamanız gerekir.  
   

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099734"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint hataları için ek bilgi
   Sorun gidermede yardım bulabilirsiniz [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları hataları ve sorun giderme konuları ve genel forumları uyarılar.
@@ -29,11 +29,11 @@ ms.locfileid: "56628916"
 ## <a name="troubleshoot-errors-and-issues"></a>Hatalarını ve sorunlarını giderin
  Bazı yaygın hatalar ve diğer sorunları ile ilgili Yardım için [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları, aşağıdaki konulara bakın:
 
--   [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [SharePoint çözümlerinde sorun giderme](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [SharePoint çözümlerinde hata ayıklama](../sharepoint/debugging-sharepoint-solutions.md)
+- [SharePoint çözümlerinde hata ayıklama](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [SharePoint paketleme ve dağıtım sorunlarını giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [SharePoint paketleme ve dağıtım sorunlarını giderme](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Diğer kaynaklar
  Aşağıdaki tabloda [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint araçları forumlar ve diğer kaynaklardır.

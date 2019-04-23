@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076491"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Pek çok çekirdek örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ Kural Kimliği | DA0003 |
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?  
  Uygulamanız aşağıdaki seçeneklerden birini kullanarak yeniden profil oluşturmayı göz önünde bulundurun:  
   
--   İzleme metodunu kullanarak profili.  
+- İzleme metodunu kullanarak profili.  
   
--   Daha fazla örnek kullanıcı modunda toplanacak denemek için örnekleme hızını artırın.
+- Daha fazla örnek kullanıcı modunda toplanacak denemek için örnekleme hızını artırın.

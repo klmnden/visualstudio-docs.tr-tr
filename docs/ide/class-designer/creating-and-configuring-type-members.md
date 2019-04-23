@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073847"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Oluşturma ve tür üyeleri Sınıf Tasarımcısı'nda yapılandırma
 
@@ -86,41 +86,41 @@ Varsayılan olarak, **sınıf ayrıntıları** yeni bir sınıf diyagramı açt�
 
 ### <a name="create-a-member-using-class-designer"></a>Sınıf Tasarımcısı kullanarak üye oluşturmak
 
-1.  Bir üye eklemek istediğiniz türe sağ tıklayın **Ekle**, eklemek istediğiniz üye türünü seçin.
+1. Bir üye eklemek istediğiniz türe sağ tıklayın **Ekle**, eklemek istediğiniz üye türünü seçin.
 
      Yeni bir üye imzası oluşturulur ve türe eklenir. Değiştirebileceğiniz bir varsayılan ad verilir **Sınıf Tasarımcısı**, **sınıf ayrıntıları** penceresinde veya **özellikleri** penceresi.
 
-2.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
+2. İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
 
 ### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Sınıf Ayrıntıları penceresi araç çubuğunu kullanarak üye oluşturmak
 
-1.  Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.
+1. Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.
 
      Tür odağa gelir ve içeriği görüntülenir **sınıf ayrıntıları** penceresi.
 
-2.  İçinde **sınıf ayrıntıları** penceresi araç çubuğunda en üstteki simgeye tıklayın ve seçin **yeni \<üye >** açılan listeden.
+2. İçinde **sınıf ayrıntıları** penceresi araç çubuğunda en üstteki simgeye tıklayın ve seçin **yeni \<üye >** açılan listeden.
 
      İşaretçiyi taşır **adı** alanında eklemek istediğiniz üye türü için bir satır. Örneğin tıkladıysanız **yeni özellik**, imleci yeni bir satıra taşır **özellikleri** bölümünü **sınıf ayrıntıları** penceresi.
 
-3.  Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın (ya da başka bir şekilde, örneğin, Sekme tuşuna basarak odağı taşıyın).
+3. Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın (ya da başka bir şekilde, örneğin, Sekme tuşuna basarak odağı taşıyın).
 
      Yeni bir üye imzası oluşturulur ve türe eklenir. Üye artık kodun içinde vardır ve görüntülenen **Sınıf Tasarımcısı**, **sınıf ayrıntıları** penceresinde ve Özellikler penceresinde.
 
-4.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
+4. İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
 
 ### <a name="create-a-member-using-the-class-details-window"></a>Sınıf ayrıntıları penceresini kullanarak üye oluşturmak
 
-1.  Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.
+1. Diyagram yüzeyinde, üye eklemek istediğiniz türü seçin.
 
      Tür odağa gelir ve içeriği görüntülenir **sınıf ayrıntıları** penceresi.
 
-2.  İçinde **sınıf ayrıntıları** eklemek istediğiniz üye türünü içeren bölümde tıklatıp  **\<Üye Ekle >**. Örneğin, bir alan eklemek istiyorsanız, tıklayın  **\<alan Ekle >**.
+2. İçinde **sınıf ayrıntıları** eklemek istediğiniz üye türünü içeren bölümde tıklatıp  **\<Üye Ekle >**. Örneğin, bir alan eklemek istiyorsanız, tıklayın  **\<alan Ekle >**.
 
-3.  Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın.
+3. Oluşturmak istediğiniz üyenin adını yazın ve Enter'a basın.
 
      Yeni bir üye imzası oluşturulur ve türe eklenir. Üye artık kodun içinde vardır ve görüntülenen **Sınıf Tasarımcısı**, **sınıf ayrıntıları** penceresinde ve Özellikler penceresinde.
 
-4.  İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
+4. İsteğe bağlı olarak, üyeyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
 
      **Not:** Üye oluşturmak için klavye kısayollarını da kullanabilirsiniz. Daha fazla bilgi için [klavye ve Fare kısayolları sınıf diyagramında ve sınıf Ayrıntıları penceresinde](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
@@ -170,11 +170,11 @@ Her üye satırı aşağıdaki öğeleri görüntüler:
 
 ### <a name="to-modify-a-type-member"></a>Bir tür üyesini değiştirmek için
 
-1.  Sınıf Tasarımcısı'nı kullanarak bir tür seçin.
+1. Sınıf Tasarımcısı'nı kullanarak bir tür seçin.
 
-2.  Varsa **sınıf ayrıntıları** penceresi görüntülenmiyorsa, tıklayın **sınıf ayrıntıları** Sınıf Tasarımcısı araç çubuğunda penceresi.
+2. Varsa **sınıf ayrıntıları** penceresi görüntülenmiyorsa, tıklayın **sınıf ayrıntıları** Sınıf Tasarımcısı araç çubuğunda penceresi.
 
-3.  Alanlarındaki değerleri düzenleyin **sınıf ayrıntıları** pencere kılavuzunun. Her düzenlemeden sonra ENTER'a basın ya da bir başka yolla, örneğin SEKME tuşuna basarak, odağı düzenlenen alanın dışına taşıyın. Düzenlemeleriniz anında koda yansır.
+3. Alanlarındaki değerleri düzenleyin **sınıf ayrıntıları** pencere kılavuzunun. Her düzenlemeden sonra ENTER'a basın ya da bir başka yolla, örneğin SEKME tuşuna basarak, odağı düzenlenen alanın dışına taşıyın. Düzenlemeleriniz anında koda yansır.
 
     > [!NOTE]
     > Bir üyenin yalnızca adını değiştirmek istiyorsanız, bunu yerinde düzenlemeyi kullanarak yapabilirsiniz.
@@ -217,35 +217,35 @@ Parametre satırı aşağıdaki öğeleri içerir:
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Bir yönteme parametre eklemek için
 
-1.  Diyagram yüzeyinde, parametre eklemek istediğiniz yöntemi içeren türe tıklayın.
+1. Diyagram yüzeyinde, parametre eklemek istediğiniz yöntemi içeren türe tıklayın.
 
      Tür odağa gelir ve içeriği görüntüleme **sınıf ayrıntıları** penceresi.
 
-2.  İçinde **sınıf ayrıntıları** penceresinde, parametre eklemek istediğiniz yöntemin satırını genişletin.
+2. İçinde **sınıf ayrıntıları** penceresinde, parametre eklemek istediğiniz yöntemin satırını genişletin.
 
      Yalnızca bir çift parantez ve sözcüklerini içeren girintili bir parametre satırı görünür  **\<parametre Ekle >.**
 
-3.  Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.
+3. Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.
 
      Yeni parametre yönteme ve yöntemin koduna eklenir. Bu görüntüler **sınıf ayrıntıları** penceresinde ve Özellikler penceresinde.
 
-4.  İsteğe bağlı olarak, parametreyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
+4. İsteğe bağlı olarak, parametreyle ilgili diğer ayrıntıları (örneğin, türü) belirtin.
 
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Bir yönteme isteğe bağlı parametre eklemek için
 
-1.  Diyagram yüzeyinde, isteğe bağlı parametre eklemek istediğiniz yöntemi içeren türe tıklayın.
+1. Diyagram yüzeyinde, isteğe bağlı parametre eklemek istediğiniz yöntemi içeren türe tıklayın.
 
      Tür odağa gelir ve içeriği görüntüleme **sınıf ayrıntıları** penceresi.
 
-2.  İçinde **sınıf ayrıntıları** penceresinde isteğe bağlı parametre eklemek istediğiniz yöntemin satırını genişletin.
+2. İçinde **sınıf ayrıntıları** penceresinde isteğe bağlı parametre eklemek istediğiniz yöntemin satırını genişletin.
 
      Yalnızca bir çift parantez ve sözcüklerini içeren girintili bir parametre satırı görünür  **\<parametre Ekle >.**
 
-3.  Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.
+3. Tıklayın  **\<parametre Ekle >**, adını yeni parametre ve basın, **Enter**.
 
      Yeni parametre yönteme ve yöntemin koduna eklenir. Bu görüntüler **sınıf ayrıntıları** penceresinde ve Özellikler penceresinde.
 
-4.  Özellikler penceresinde için bir değer yazın **isteğe bağlı varsayılan** özelliği. Bir parametrenin İsteğe Bağlı Varsayılan özelliği ayarlandığında bu parametre isteğe bağlı olur.
+4. Özellikler penceresinde için bir değer yazın **isteğe bağlı varsayılan** özelliği. Bir parametrenin İsteğe Bağlı Varsayılan özelliği ayarlandığında bu parametre isteğe bağlı olur.
 
     > [!NOTE]
     > İsteğe bağlı parametreler, parametre listesindeki en son parametreler olmalıdır.

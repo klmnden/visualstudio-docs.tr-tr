@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110485"
 ---
 # <a name="view-dom-event-listeners"></a>DOM olayı dinleyicilerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
 #### <a name="to-view-event-listeners"></a>Olay dinleyicilerini görüntülemek için
 
-1.  Visual Studio'da Windows Phone Pivot uygulaması proje şablonunu kullanan bir JavaScript uygulaması oluşturun.
+1. Visual Studio'da Windows Phone Pivot uygulaması proje şablonunu kullanan bir JavaScript uygulaması oluşturun.
 
-2.  Şablonu Visual Studio'da Aç **öykünücüsü 8.1 WVGA 4 inç 512MB** hata ayıklayıcı hata ayıklama araç çubuğundaki aşağı açılan listesinde:
+2. Şablonu Visual Studio'da Aç **öykünücüsü 8.1 WVGA 4 inç 512MB** hata ayıklayıcı hata ayıklama araç çubuğundaki aşağı açılan listesinde:
 
      ![Hata ayıklama hedef seçme](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.
+3. Uygulamayı hata ayıklama modunda çalıştırmak için F5 tuşuna basın.
 
-4.  Çalışan uygulamada Git **3. bölüm** pivot öğesi.
+4. Çalışan uygulamada Git **3. bölüm** pivot öğesi.
 
-5.  Visual Studio (Alt + sekme veya F12) geçin.
+5. Visual Studio (Alt + sekme veya F12) geçin.
 
-6.  DOM Gezgini'nde `Find` sağ üst köşedeki.
+6. DOM Gezgini'nde `Find` sağ üst köşedeki.
 
-7.  `ListView`yazın ve ardından Enter tuşuna basın.
+7. `ListView`yazın ve ardından Enter tuşuna basın.
 
-8.  Gerekirse, seçin **sonraki** düğmesi bulunacak `DIV` temsil eden öğe `ListView` denetimi (Bu öğeyi bir `data-win-control` değerini `WinJS.UI.ListView`).
+8. Gerekirse, seçin **sonraki** düğmesi bulunacak `DIV` temsil eden öğe `ListView` denetimi (Bu öğeyi bir `data-win-control` değerini `WinJS.UI.ListView`).
 
      `DIV` Öğesi DOM Gezgini'nde artık seçilmelidir.
 
@@ -75,16 +75,16 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
      **Olayları** olay dinleyicileri hiyerarşi listesinde seçtiğiniz herhangi bir öğe için sekmesinde gösterilir.
 
-###  <a name="Tips"></a> Olay dinleyicileri ile sorunları çözmek için ipuçları
+### <a name="Tips"></a> Olay dinleyicileri ile sorunları çözmek için ipuçları
  Bazı uygulama senaryolarında olay dinleyicileri açıkça kullanarak kaldırılmalıdır [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Kullanım **olayları** DOM Gezgini'nde kod çalıştırılırken, olay dinleyicileri DOM öğeleri kaldırılmış olup olmadığını sınamak için sekmesinde. Bu tür sorunları gidermenize yardımcı olacak bazı ipuçları şunlardır:
 
--   Tek sayfa gezinti modelini kullanan uygulamalar için Visual Studio uygulanan [proje şablonları](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), bir sayfanın parçası olan DOM öğeleri gibi nesneler için kayıtlı olay dinleyicileri kaldırmak genellikle gerekli değildir. Bu senaryoda, DOM öğesi ve onun ilişkili olay dinleyicileri aynı ömrü vardır ve atık olarak toplanmış olabilir.
+- Tek sayfa gezinti modelini kullanan uygulamalar için Visual Studio uygulanan [proje şablonları](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), bir sayfanın parçası olan DOM öğeleri gibi nesneler için kayıtlı olay dinleyicileri kaldırmak genellikle gerekli değildir. Bu senaryoda, DOM öğesi ve onun ilişkili olay dinleyicileri aynı ömrü vardır ve atık olarak toplanmış olabilir.
 
--   DOM öğesi ya da nesne ömrü ilişkili olay dinleyicisinden farklı ise, çağrılacak olabilir `removeEventListener` yöntemi. Örneğin, kullanırsanız `window.onresize` olay, olay işleme burada sayfadan ayrılmak giderseniz, olay dinleyicisi Kaldır gerekebilir.
+- DOM öğesi ya da nesne ömrü ilişkili olay dinleyicisinden farklı ise, çağrılacak olabilir `removeEventListener` yöntemi. Örneğin, kullanırsanız `window.onresize` olay, olay işleme burada sayfadan ayrılmak giderseniz, olay dinleyicisi Kaldır gerekebilir.
 
--   Varsa `removeEventListener` belirtilen dinleyiciyi kaldırmak başarısız olursa farklı bir nesne örneğinde adlı. Kullanabileceğiniz [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) dinleyici eklediğinizde, bu sorunu çözmek için yöntemi.
+- Varsa `removeEventListener` belirtilen dinleyiciyi kaldırmak başarısız olursa farklı bir nesne örneğinde adlı. Kullanabileceğiniz [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) dinleyici eklediğinizde, bu sorunu çözmek için yöntemi.
 
--   Kullanarak eklenmiş bir olay dinleyiciyi kaldırmak için [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) veya dinleyiciyi eklediğinizde, anonim bir işlevi kullanarak işlev örneği depolar. Güvenli bir şekilde bu düzenin kullanılacağı yöntemlerinden biri aşağıda verilmiştir:
+- Kullanarak eklenmiş bir olay dinleyiciyi kaldırmak için [bind yöntemi (işlev)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) veya dinleyiciyi eklediğinizde, anonim bir işlevi kullanarak işlev örneği depolar. Güvenli bir şekilde bu düzenin kullanılacağı yöntemlerinden biri aşağıda verilmiştir:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Olay dinleyicisi kullanarak kaldıramazsınız `removeEventListener` kullanarak eklediyseniz `obj.on<eventname>` gibi öznitelik `window.onresize = handlerFunc`.
+- Olay dinleyicisi kullanarak kaldıramazsınız `removeEventListener` kullanarak eklediyseniz `obj.on<eventname>` gibi öznitelik `window.onresize = handlerFunc`.
 
--   JavaScript bellek Çözümleyicisi kullanın [JavaScript belleği](../profiling/javascript-memory.md) uygulamanızda. Açıkça kaldırılmalıdır olay dinleyicileri bir bellek sızıntısı olarak görünebilir.
+- JavaScript bellek Çözümleyicisi kullanın [JavaScript belleği](../profiling/javascript-memory.md) uygulamanızda. Açıkça kaldırılmalıdır olay dinleyicileri bir bellek sızıntısı olarak görünebilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

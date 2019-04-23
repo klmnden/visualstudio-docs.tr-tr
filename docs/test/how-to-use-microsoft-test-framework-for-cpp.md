@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f4508856fd2aa280a9e9d62c7e4add9e6ca383c1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072064"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Microsoft birim testi çerçevesi Visual Studio'da C++ için kullanın
 
 C++ için Microsoft birim testi çerçevesi varsayılan olarak dahil edilen **C++ ile masaüstü geliştirme** iş yükü.
 
-##  <a name="separate_project"></a> Ayrı bir projede birim testleri yazma
+## <a name="separate_project"></a> Ayrı bir projede birim testleri yazma
 
 Genellikle, test kodunuzu test etmek istediğiniz kodu aynı çözümde kendi projesi içinde çalıştırın. Ayarlama ve yeni bir test projesi yapılandırma için bkz: [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Aynı projede birim testleri yazma
+## <a name="same_project"></a> Aynı projede birim testleri yazma
 
 Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test ederken testleri test programı olarak aynı projede oluşturmanız gerekebilir. Aynı projede birim testleri yazmak için:
 
@@ -39,7 +39,7 @@ Bazı durumlarda, örneğin bir DLL içinde aktarılmış işlevlerini test eder
 
 2. Bir C++ birim testi dosyası ekleyin:
 
-   -   ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe** > **C++ birim testi**.
+   - ' Nde proje düğümüne sağ **Çözüm Gezgini** ve **Ekle** > **yeni öğe** > **C++ birim testi**.
 
 ## <a name="write-the-tests"></a>Testleri yazma
 

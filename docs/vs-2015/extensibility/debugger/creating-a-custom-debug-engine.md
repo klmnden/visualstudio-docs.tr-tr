@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111525"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Özel Hata Ayıklama Altyapısı Oluşturma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Hata ayıklama altyapısı (DE), belirli çalışma zamanı mimarileri hata ayı
   
  Bir DE oluşturma, aşağıdaki adımlardan oluşur:  
   
-1.  Bir DE Visual Studio ile kaydetme  
+1. Bir DE Visual Studio ile kaydetme  
   
-2.  Bir program görüntüde hata ayıklamayı etkinleştirme  
+2. Bir program görüntüde hata ayıklamayı etkinleştirme  
   
-3.  Yürütme denetimi ve durum değerlendirmesi  
+3. Yürütme denetimi ve durum değerlendirmesi  
   
-4.  Olayları gönderme  
+4. Olayları gönderme  
   
-5.  Sonlandırma ve ayırma  
+5. Sonlandırma ve ayırma  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Özel Bir Hata Ayıklama Altyapısını Kaydetme](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
@@ -60,7 +60,7 @@ Hata ayıklama altyapısı (DE), belirli çalışma zamanı mimarileri hata ayı
  [Hata Ayıklayıcısı Olaylarını Çağırma](../../extensibility/debugger/calling-debugger-events.md)  
  Hata ayıklama oturumunda gerçekleşen olayların arama sırası belgeler.  
   
- [Nasıl yapılır: Özel hata ayıklama altyapısında hata ayıklama](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Nasıl yapılır: Özel Hata Ayıklama Altyapısında Hata Ayıklama](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Özel bir DE hata ayıklama açıklanmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

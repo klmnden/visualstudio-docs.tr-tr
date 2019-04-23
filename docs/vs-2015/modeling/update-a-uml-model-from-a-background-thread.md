@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093013"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Bir UML modelini arka plan iş parçacığı aracılığıyla güncelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Bazen bir arka plan iş parçacığı modelinde değişiklikler yapmak yararlı 
   
  Ancak, UML depolamasının bir iş parçacığı kasası olmadığını bilmelisiniz. Aşağıdaki önlemler önemlidir:  
   
--   Bir modele veya diyagrama yapılan her güncelleştirme kullanıcı arabirimi (UI) iş parçacığında yapılması gerekir. Arka plan iş parçacığı kullanmalısınız <xref:System.Windows.Forms.Control.Invoke%2A> veya `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> UI iş parçacığının gerçek güncelleştirmeleri yapmasını sağlamak için.  
+- Bir modele veya diyagrama yapılan her güncelleştirme kullanıcı arabirimi (UI) iş parçacığında yapılması gerekir. Arka plan iş parçacığı kullanmalısınız <xref:System.Windows.Forms.Control.Invoke%2A> veya `Dispatcher.` <xref:System.Windows.Threading.Dispatcher.Invoke%2A> UI iş parçacığının gerçek güncelleştirmeleri yapmasını sağlamak için.  
   
--   Bir dizi değişikliği tek bir işleme gruplarsanız, kullanıcıyı işlem sürerken modeli düzenlemekten alıkoymanızı öneririz. Aksi takdirde, kullanıcı tarafından gerçekleştirilen düzenlemeler aynı işlemin bir parçası haline gelir. Kullanıcının kalıcı bir iletişim kutusu göstererek değişiklik yapmasını engelleyebilirsiniz. İsterseniz, iletişim kutusunda İptal düğmesi sağlayabilirsiniz. Gelişmelerden kullanıcı değişiklikleri görebilirsiniz.  
+- Bir dizi değişikliği tek bir işleme gruplarsanız, kullanıcıyı işlem sürerken modeli düzenlemekten alıkoymanızı öneririz. Aksi takdirde, kullanıcı tarafından gerçekleştirilen düzenlemeler aynı işlemin bir parçası haline gelir. Kullanıcının kalıcı bir iletişim kutusu göstererek değişiklik yapmasını engelleyebilirsiniz. İsterseniz, iletişim kutusunda İptal düğmesi sağlayabilirsiniz. Gelişmelerden kullanıcı değişiklikleri görebilirsiniz.  
   
 ## <a name="example"></a>Örnek  
  Bu örnek, bir model için birkaç değişiklik yapmak için bir arka plan iş parçacığı kullanır. Bir iletişim kutusu, iş parçacığı çalışırken kullanıcıyı çıkarmak için kullanılır. Bu basit örnekte, iletişim kutusunda İptal düğmesi sağlanır. Ancak, bu özelliği eklemek kolay olurdu.  
@@ -36,17 +36,17 @@ Bazen bir arka plan iş parçacığı modelinde değişiklikler yapmak yararlı 
   
 2. Projeyi bu derlemelere başvuruları içerdiğinden emin olun:  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [sürüm]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. Projeye adlı bir Windows formu eklemek **ProgressForm**. Güncelleştirmelerin sürmekte olduğunu bildiren bir ileti görüntülemelidir. Herhangi bir denetim yok.  
   
@@ -162,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>Kullanıcının örnekteki iş parçacığını iptal etmek izin vermek için  
   
-1.  İlerleme iletişim kutusuna iptal düğmesi ekleyin.  
+1. İlerleme iletişim kutusuna iptal düğmesi ekleyin.  
   
-2.  İlerleme iletişim kutusuna aşağıdaki kodu ekleyin:  
+2. İlerleme iletişim kutusuna aşağıdaki kodu ekleyin:  
   
      `public event MethodInvoker Cancel;`  
   
@@ -176,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  Execute() yönteminde formun oluşumu sonra bu satırı ekleyin:  
+3. Execute() yönteminde formun oluşumu sonra bu satırı ekleyin:  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   

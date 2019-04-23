@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098973"
 ---
 # <a name="how-to-export-a-shader"></a>Nasıl yapılır: Gölgelendiriciyi dışarı aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ Bu belgede, böylece uygulamanızda kullanabilirsiniz yönlendirilmiş grafik g�
   
  Bu belge, bu etkinlik gösterir:  
   
--   Gölgelendiriciyi dışarı aktarma  
+- Gölgelendiriciyi dışarı aktarma  
   
 ## <a name="exporting-a-shader"></a>Gölgelendiriciyi dışarı aktarma  
  Gölgelendirici Tasarımcısı'nı kullanarak ve uygulamanızda kullanmadan önce bir gölgelendirici oluşturduktan sonra bunu, grafik API'si anlayan bir biçimde dışarı aktarmanız gerekir. Farklı ihtiyaçları karşılamak üzere farklı şekillerde gölgelendiriciyi dışarı aktarabilirsiniz.  
   
 #### <a name="to-export-a-shader"></a>Gölgelendiriciyi dışarı aktarmak için  
   
-1.  İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açık bir **görsel gölgelendirici grafiği (.dgsl)** dosya.  
+1. İçinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açık bir **görsel gölgelendirici grafiği (.dgsl)** dosya.  
   
      Yoksa bir **görsel gölgelendirici grafiği (.dgsl)** açın, içinde açıklandığı gibi oluşturmak için dosya [nasıl yapılır: Temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md).  
   
-2.  Üzerinde **gölgelendirici Tasarımcısı** araç seçin **Gelişmiş**, **dışarı**, **dışarı aktarma olarak**. **Gölgelendiriciyi dışarı aktarma** iletişim kutusu görüntülenir.  
+2. Üzerinde **gölgelendirici Tasarımcısı** araç seçin **Gelişmiş**, **dışarı**, **dışarı aktarma olarak**. **Gölgelendiriciyi dışarı aktarma** iletişim kutusu görüntülenir.  
   
-3.  İçinde **farklı kaydetme türü** aşağı açılan listesinde, dışa aktarmak istediğiniz biçimi seçin.  
+3. İçinde **farklı kaydetme türü** aşağı açılan listesinde, dışa aktarmak istediğiniz biçimi seçin.  
   
      Seçebileceğiniz biçimler şunlardır:  
   
@@ -49,7 +49,7 @@ Bu belgede, böylece uygulamanızda kullanabilirsiniz yönlendirilmiş grafik g�
      **C++ üst bilgisi (\*.h)**  
      Gölgelendirici HLSL bayt içeren bir bayt dizisi tanımlayan bir C stili başlığı dışarı aktarır. Bu seçenek, hata ayıklama ve son kullanıcı sorunlarını düzeltme test etmek için uygulamayı yeniden derlenmesi için temel kod düzeltme eki daha fazla zaman zorlaştırabilir. Ancak, bu seçenek, imkansız olsa, bir uygulama dağıtıldıktan sonra gölgelendirici değiştirmek zorlaştırır çünkü gölgelendirici istenmeyen yollarla değiştirmek isteyen bir kullanıcı için birçok zorluk sunduğu.  
   
-4.  İçinde **dosya adı** birleşik giriş kutusu, dışarı aktarılan gölgelendirici için bir ad belirtin ve ardından **Kaydet** düğmesi.  
+4. İçinde **dosya adı** birleşik giriş kutusu, dışarı aktarılan gölgelendirici için bir ad belirtin ve ardından **Kaydet** düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Temel renk gölgelendiricisi oluşturma](../designers/how-to-create-a-basic-color-shader.md)   

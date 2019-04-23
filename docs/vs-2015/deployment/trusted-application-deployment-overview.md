@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105844"
 ---
 # <a name="trusted-application-deployment-overview"></a>Güvenilir Uygulama Dağıtımına Genel Bakış
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndpte
   
   Güvenilir uygulama dağıtımı yararlanmak için şu adımları izlemelisiniz:  
   
-1.  Yayımcı için bir sertifika edinin.  
+1. Yayımcı için bir sertifika edinin.  
   
-2.  Yayımcı tüm istemcilerde Güvenilen Yayımcılar deposuna ekleyin.  
+2. Yayımcı tüm istemcilerde Güvenilen Yayımcılar deposuna ekleyin.  
   
-3.  Oluşturma, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.  
+3. Oluşturma, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama.  
   
-4.  Dağıtım bildirimi yayımcının sertifika ile oturum açın.  
+4. Dağıtım bildirimi yayımcının sertifika ile oturum açın.  
   
-5.  Uygulama dağıtımı, istemci bilgisayarlar için yayımlayın.  
+5. Uygulama dağıtımı, istemci bilgisayarlar için yayımlayın.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Yayımcı için bir sertifika alın  
  Dijital sertifikalar Microsoft Authenticode kimlik doğrulama ve güvenlik sistemi temel bileşenidir. Authenticode, Windows işletim sistemi, standart bir parçasıdır. Tüm [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulamaları güvenilir uygulama dağıtımı'na katılıp katılmadığına bağımsız olarak bir dijital sertifika ile imzalanmalıdır. Authenticode'ile nasıl çalıştığına ilişkin tam açıklama için [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], bkz: [ClickOnce ve Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ Bu konu nasıl dağıtılacağı hakkında genel bakış sağlar [!INCLUDE[ndpte
   
  Uygulamanızı Masaüstü yönetilen bir ortamda dağıtıyorsanız değil, bir sertifika güvenilen bir yayımcı deposuna eklemek için aşağıdaki seçenekleri vardır:  
   
--   <xref:System.Security.Cryptography?displayProperty=fullName> Ad alanı.  
+- <xref:System.Security.Cryptography?displayProperty=fullName> Ad alanı.  
   
--   Internet Explorer'ın bir bileşeni olan ve bu nedenle, Windows 98 ve sonraki tüm sürümler var CertMgr.exe. Daha fazla bilgi için [Certmgr.exe (Sertifika Yöneticisi Aracı)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- Internet Explorer'ın bir bileşeni olan ve bu nedenle, Windows 98 ve sonraki tüm sürümler var CertMgr.exe. Daha fazla bilgi için [Certmgr.exe (Sertifika Yöneticisi Aracı)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>ClickOnce uygulaması oluşturma  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] uygulama bir [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] istemci uygulaması uygulamayı tanımlayan ve yükleme parametrelerini sağlayan bildirim dosyaları ile birlikte. Programınıza kapatabilirsiniz bir [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] kullanarak uygulama **Yayımla** komutunu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Alternatif olarak, gerekli tüm dosyaları oluşturabilirsiniz [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] bulunan araçları kullanarak dağıtım [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Ayrıntılı adımlar için [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dağıtım bkz [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

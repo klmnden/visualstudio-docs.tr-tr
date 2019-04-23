@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094676"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML Düzenleyicisi IntelliSense Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karş�
   
  XML Düzenleyicisi bu için aşağıdakileri yapar:  
   
--   Başlangıç ve bitiş etiketleri eşleşen.  
+- Başlangıç ve bitiş etiketleri eşleşen.  
   
--   Bir çift "\<" veya ">" açılı ayraçlar.  
+- Bir çift "\<" veya ">" açılı ayraçlar.  
   
--   Başlangıç ve bitiş açıklama.  
+- Başlangıç ve bitiş açıklama.  
   
--   Başlangıç ve bitiş işleme yönergeleri.  
+- Başlangıç ve bitiş işleme yönergeleri.  
   
--   Başlangıç ve bitiş CDATA bloğu.  
+- Başlangıç ve bitiş CDATA bloğu.  
   
--   Başlangıç ve bitiş DTD'nin bildirimlerinin.  
+- Başlangıç ve bitiş DTD'nin bildirimlerinin.  
   
--   Açma ve özniteliklerde tırnak kapatma.  
+- Açma ve özniteliklerde tırnak kapatma.  
   
 ## <a name="modifying-the-intellisense-options"></a>IntelliSense seçenekleri değiştirme  
  IntelliSense ve otomatik tamamlama özellikleri varsayılan olarak etkindir. Ancak, bu Araçlar-Seçenekler ayarlarınızı değiştirerek değiştirebilirsiniz.  
@@ -112,11 +112,11 @@ XML Düzenleyicisi Visual Studio'da sağlanan diğer dil düzenleyicilere karş�
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Otomatik Tamamlama davranışını değiştirmek için  
   
-1.  Seçin **seçenekleri** gelen **Araçları** menüsü.  
+1. Seçin **seçenekleri** gelen **Araçları** menüsü.  
   
-2.  Genişletin **metin düzenleyici**, genişletme **XML**seçip **çeşitli**.  
+2. Genişletin **metin düzenleyici**, genişletme **XML**seçip **çeşitli**.  
   
-3.  Değişiklik **otomatik Ekle** tıklayın ve bölüm **Tamam**.  
+3. Değişiklik **otomatik Ekle** tıklayın ve bölüm **Tamam**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Düzenleyicisi](../xml-tools/xml-editor.md)   

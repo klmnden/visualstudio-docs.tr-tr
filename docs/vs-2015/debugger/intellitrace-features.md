@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105740"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Özellikleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığın�
 > [!NOTE]
 >  Tüm ayarlar kapsamını **IntelliTrace** seçenekler sayfası olan Visual Studio bir bütün, bunları ayrı projeler veya çözümler. Bu ayarlar bir değişiklik, Visual Studio, tüm hata ayıklama oturumları ve tüm projeler veya çözümlerden tüm örneklerine uygulanır.  
   
-##  <a name="ChooseEvents"></a> Intellitrace'in kaydettiği olayları seçin  
+## <a name="ChooseEvents"></a> Intellitrace'in kaydettiği olayları seçin  
  Veya belirli IntelliTrace olaylarının kaydı devre dışı bırakabilirsiniz.  
   
  Hata ayıklama, hata ayıklamayı durdurun. Git **Araçlar / Seçenekler / IntelliTrace / IntelliTrace olayları**. Intellitrace'in kaydedeceği olayları seçin.  
   
-##  <a name="GoingFurther"></a> IntelliTrace olaylarını toplamak ve çağrı bilgileri  
+## <a name="GoingFurther"></a> IntelliTrace olaylarını toplamak ve çağrı bilgileri  
  Bu, varsayılan olarak etkin değildir, ancak IntelliTrace yöntemi çağrılarını olaylarla birlikte kaydedebilir. Yöntem çağrıları Git toplanmasını etkinleştirmek için **Araçlar / Seçenekler / IntelliTrace / genel**seçip **IntelliTrace olayları ve çağrı bilgileri**.  
   
  Bu, çağrı yığını geçmişini görmenizi ve kodunuzdaki çağrılar arasında ileri geri adım sağlar. IntelliTrace yöntem adları, yöntemi giriş ve çıkış noktaları ve belirli parametre değerleri ve dönüş değerleri gibi verileri kaydeder.  
@@ -75,14 +75,14 @@ IntelliTrace olayları için kullanabilir ve, kendi durumunu (çağrı yığın�
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>Bir satır veya yöntemi IntelliTrace içinde Ara  
  Yalnızca yöntem çağrı bilgisi etkinken yöntemleri arama yapabilirsiniz. Belirli bir satır ya da yöntem için IntelliTrace geçmişini arama yapabilirsiniz. Hata ayıklayıcı yürütme durdurulur, ancak bağlam menüsünün görmek için işlev gövdesi içinde sağ tıklayın ve tıklayın **arama için bu satırı, IntelliTrace** veya **arama için bu yöntemi, IntelliTrace**.  
   
-###  <a name="ControlCallData"></a> Ne kadar çağrı bilgisi Intellitrace'in kaydettiği denetleme  
+### <a name="ControlCallData"></a> Ne kadar çağrı bilgisi Intellitrace'in kaydettiği denetleme  
  Varsayılan olarak, IntelliTrace, çözümünüz tarafından kullanılan tüm modüller için bilgileri kaydeder. IntelliTrace yalnızca sizi ilgilendiren modüller için çağrı bilgileri kaydetmesini ayarlayabilirsiniz. İçinde **Araçlar / Seçenekler / IntelliTrace / modülleri**, modülleri içerecek şekilde veya IntelliTrace dosyasından dışlanacak modülleri belirtin. IntelliTrace, belirttiğiniz modüllerden oluşturulan olayları toplar ve ilginizi çeken modülleri içinde gerçekleşen yöntem çağrıları.  
   
  Birden çok modül eklemek için dizenin başında veya sonunda * joker karakterini kullanın. Modül isimleri için derleme adlarını değil dosya adlarını kullanın. Dosya yolları kabul edilmez.  
   
  Modül sayısı için en az tutmaya çalışın. Toplanacak verileri daha az olduğundan daha iyi performansı elde edin. Üzerinden geçmek üzere daha az veri olmadığından kullanıcı Arabiriminde daha az gürültü de alırsınız.  
   
-##  <a name="SaveSession"></a> IntelliTrace verilerini dosyasına kaydetme  
+## <a name="SaveSession"></a> IntelliTrace verilerini dosyasına kaydetme  
  IntelliTrace topladığı verileri kaydedebilirsiniz gidip **hata ayıklama / IntelliTrace / IntelliTrace oturumunu Kaydet** hata ayıklama ve bir kesme durumunda uygulamasıdır. Menü öğesi devre dışı bırakılır ve IntelliTrace uygulama hala çalışıyorsa veya hata ayıklama durdurduysanız toplanan verileri kaydetmek mümkün olmayacaktır.  
   
  Otomatik olarak giderek bir dosyaya kaydetmek için IntelliTrace'i yapılandırabilirsiniz **Araçlar / Seçenekler / IntelliTrace / Gelişmiş** seçerek **Store IntelliTrace kayıtlarını bu dizinde**. Alan tükendiğinde eski verilerin üzerine yazılacak IntelliTrace neden oluşturulan bir dosyanın boyutunu Ayarla de yapılandırabilirsiniz. Visual Studio, ne zaman otomatik olarak kaydedilir ve Visual Studio barındırma süreci (vshost.exe) etkinleştirilir her IntelliTrace oturumu için iki dosya oluşturur.  

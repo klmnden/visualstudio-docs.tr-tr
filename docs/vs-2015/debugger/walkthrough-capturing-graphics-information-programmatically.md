@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093117"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>İzlenecek yol: Grafik bilgilerini programla yakalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
  Programlı yakalama gibi senaryolarda kullanışlıdır:  
   
--   Grafik uygulamanızı swapchain doku için ne zaman işleyen gibi mevcut kullandığınızda değil yakalama programlı bir şekilde başlayın.  
+- Grafik uygulamanızı swapchain doku için ne zaman işleyen gibi mevcut kullandığınızda değil yakalama programlı bir şekilde başlayın.  
   
--   Uygulamanızı, ne zaman DirectCompute hesaplamalar gerçekleştirmek için kullandığı gibi işlemesi yapmıyor açıldığında yakalama programlı olarak başlatılır.  
+- Uygulamanızı, ne zaman DirectCompute hesaplamalar gerçekleştirmek için kullandığı gibi işlemesi yapmıyor açıldığında yakalama programlı olarak başlatılır.  
   
--   Çağrı `CaptureCurrentFrame`ne zaman bir işleme sorunuyla umuyor ve el ile testte yakalamak zor olduğunda ancak programlı olarak çalışma zamanında uygulamanın durumu hakkındaki bilgileri kullanarak tahmin.  
+- Çağrı `CaptureCurrentFrame`ne zaman bir işleme sorunuyla umuyor ve el ile testte yakalamak zor olduğunda ancak programlı olarak çalışma zamanında uygulamanın durumu hakkındaki bilgileri kullanarak tahmin.  
   
-##  <a name="CaptureDX11_2"></a> Windows 8.1 programlı yakalama  
+## <a name="CaptureDX11_2"></a> Windows 8.1 programlı yakalama  
  Kılavuzun bu bölümü sağlam yakalama yöntemini kullanan Windows 8.1 üzerinde DirectX 11.2 API kullanan uygulamaları programlı yakalama gösterir. Programlı yakalama DirectX önceki sürümlerinde Windows 8.0 üzerinde kullanan uygulamalar kullanma hakkında daha fazla bilgi için bkz. [Windows 8.0 ve daha önce programlı yakalama](#CaptureDX11_1) bu kılavuzda daha sonra.  
   
  Bu bölümde bu görevlerin nasıl yapılacağını gösterir:  
   
--   Programlı yakalama kullanmak için uygulamanızı hazırlama  
+- Programlı yakalama kullanmak için uygulamanızı hazırlama  
   
--   IDXGraphicsAnalysis arabirimi alma  
+- IDXGraphicsAnalysis arabirimi alma  
   
--   Graf bilgilerini yakalama  
+- Graf bilgilerini yakalama  
   
 > [!NOTE]
 >  Programlı yakalama önceki uygulamaları yararlandı için Uzak Araçlar üzerinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yakalama işlevselliği sağlamak için Windows 8.1 Direct3D 11.2 aracılığıyla doğrudan yakalamayı destekler. Sonuç olarak, artık Windows 8.1 üzerinde programlı yakalama için Uzak Araçlar'ı yüklemek gerekmez.  
@@ -48,7 +48,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Programlı yakalama üst bilgilerini eklemek için  
   
--   Bu üst kaynak dosyanın IDXGraphicsAnalysis arabirimi burada tanımlayacaksınız şunlardır:  
+- Bu üst kaynak dosyanın IDXGraphicsAnalysis arabirimi burada tanımlayacaksınız şunlardır:  
   
     ```  
     #include <DXGItype.h>  
@@ -89,7 +89,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>IDXGraphicsAnalysis arabirimi almak için  
   
--   DXGI hata ayıklama arabirimine IDXGraphicsAnalysis arabirimi bağlama için aşağıdaki kodu kullanın.  
+- DXGI hata ayıklama arabirimine IDXGraphicsAnalysis arabirimi bağlama için aşağıdaki kodu kullanın.  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -113,7 +113,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
 ##### <a name="to-capture-graphics-information"></a>Grafik bilgilerini yakalamak için  
   
--   Grafik bilgilerini yakalama başlatmak için kullanın `BeginCapture`:  
+- Grafik bilgilerini yakalama başlatmak için kullanın `BeginCapture`:  
   
     ```  
     ...  
@@ -129,18 +129,18 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Windows 8.0 ve daha önce programlı yakalama  
+## <a name="CaptureDX11_1"></a> Windows 8.0 ve daha önce programlı yakalama  
  Kılavuzun bu bölümü eski yakalama yöntemini kullanan DirectX 11.1 API kullanan uygulamalar ve önceki sürümler için Windows 8.0 programlı yakalama gösterir. Windows 8.1 üzerinde DirectX 11.2 kullanan uygulamaları programlı yakalama kullanma hakkında daha fazla bilgi için bkz. [programlama yakalama Windows 8.1](#CaptureDX11_2) bu kılavuzda önceki.  
   
  Bu bölüm, bu görevleri gösterir:  
   
--   Bilgisayarınızı programlı yakalama kullanmak üzere hazırlama  
+- Bilgisayarınızı programlı yakalama kullanmak üzere hazırlama  
   
--   Programlı yakalama kullanmak için uygulamanızı hazırlama  
+- Programlı yakalama kullanmak için uygulamanızı hazırlama  
   
--   Grafik günlük dosyasının konumunu ve adını yapılandırma  
+- Grafik günlük dosyasının konumunu ve adını yapılandırma  
   
--   Kullanarak `CaptureCurrentFrame` API  
+- Kullanarak `CaptureCurrentFrame` API  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Bilgisayarınızı programlı yakalama kullanmak üzere hazırlama  
  Programlı yakalama bir API için Uzak Araçlar kullanan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yakalama işlevselliği sağlamak için. Uygulamanın çalışacağı bilgisayarda Uzak araçları bile yerel bilgisayarınızda programlı yakalama kullanırken, yüklü olması gerekir. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] programlı yakalama yerel bir bilgisayara gerçekleştirdiğinizde çalıştırılması gerekmez.  
@@ -157,9 +157,9 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>Grafik bilgilerini programla yakalama için uygulamanızı hazırlamak için  
   
-1.  Emin olun `vsgcapture.h` üstbilgi uygulama kaynak kodunu dahil edilir. Yalnızca tek bir yerde bulunan — Örneğin, API kaynak kodu dosyasında çağırdığınız programlı yakalama — veya kod dosyaları birden çok kaynaktan API'sini çağırmak için önceden derlenmiş üst bilgi dosyası.  
+1. Emin olun `vsgcapture.h` üstbilgi uygulama kaynak kodunu dahil edilir. Yalnızca tek bir yerde bulunan — Örneğin, API kaynak kodu dosyasında çağırdığınız programlı yakalama — veya kod dosyaları birden çok kaynaktan API'sini çağırmak için önceden derlenmiş üst bilgi dosyası.  
   
-2.  Geçerli çerçevenin geri kalanında yakalamak istediğiniz her uygulama için kaynak kodu çağırın `g_pVsgDbg->CaptureCurrentFrame()`. Bu yöntem parametre almaz ve bir değer döndürmüyor.  
+2. Geçerli çerçevenin geri kalanında yakalamak istediğiniz her uygulama için kaynak kodu çağırın `g_pVsgDbg->CaptureCurrentFrame()`. Bu yöntem parametre almaz ve bir değer döndürmüyor.  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Grafik günlük dosyasının konumunu ve adını yapılandırma  
  Grafik günlüğü tarafından tanımlanan konumda oluşturulur `DONT_SAVE_VSGLOG_TO_TEMP` ve `VSG_DEFAULT_RUN_FILENAME` makroları.  
@@ -196,7 +196,7 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] grafik tanılam
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Bu izlenecek yol, grafik bilgilerini programla yakalama gösterilmiştir. Sonraki adım olarak, bu seçenek göz önünde bulundurun:  
   
--   Grafik tanılama araçlarını kullanarak, yakalanan grafik bilgileri analiz etmeyi öğrenin. Bkz: [genel bakış](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Grafik tanılama araçlarını kullanarak, yakalanan grafik bilgileri analiz etmeyi öğrenin. Bkz: [genel bakış](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Grafik bilgilerini yakalama](../debugger/walkthrough-capturing-graphics-information.md)   

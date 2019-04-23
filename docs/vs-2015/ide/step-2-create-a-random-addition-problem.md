@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099507"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2. Adım: Rastgele Bir Toplama Problemi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
   
 ### <a name="to-create-a-random-addition-problem"></a>Rasgele bir toplama problemi oluşturma  
   
-1.  Form Tasarımcısı'nda (Form1) formunu seçin.  
+1. Form Tasarımcısı'nda (Form1) formunu seçin.  
   
-2.  Menü çubuğunda, **görünümü**, **kod**.  
+2. Menü çubuğunda, **görünümü**, **kod**.  
   
      Böylece biçimin ardındaki kodu görüntüleyebilirsiniz Form1.cs veya Form1.vb, kullandığınız, programlama diline göre görünür.  
   
-3.  Oluşturma bir `Random` nesne ekleyerek bir `new` ekranın üst kısmında aşağıdaki gibi kod deyimi.  
+3. Oluşturma bir `Random` nesne ekleyerek bir `new` ekranın üst kısmında aşağıdaki gibi kod deyimi.  
   
      [!code-csharp[VbExpressTutorial3Step2#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial3Step2#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#1)]  
@@ -43,7 +43,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
   
      Yakında yanıtlarını sınavınız her problem için ürettiği rastgele sayıları depolamak için değişkenleri kullanmalısınız denetlemek için bir yöntem oluşturacaksınız. Bkz: [değişkenleri](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) veya [türleri](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Değişkenleri düzgün kullanmak için bunları, yani adlarını ve veri türlerini listeleme bildirmeniz gerekir.  
   
-4.  Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.  
+4. Forma iki tamsayı değişkeni ekleyin ve bunları **addend1** ve **addend2**.  
   
     > [!NOTE]
     >  Bir tamsayı değişkeni C# veya Visual Basic'te bir tamsayı tamsayı olarak bilinir. Bu türde bir değişken, -2147483648 ile 2147483647 arasında bir pozitif veya negatif sayı depolar ve ondalık değil yalnızca tam sayılara depolayabilirsiniz.  
@@ -53,7 +53,7 @@ Bu Eğitimin ikinci kısmında, sınav zorlu rastgele rakamlara dayanan matemati
      [!code-csharp[VbExpressTutorial3Step2#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial3Step2#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#2)]  
   
-5.  Adlı bir yöntem ekleyin `StartTheQuiz()` kullanan ve `Random` nesnenin `Next()` etiketleri rastgele sayıları göstermek için yöntemi. `StartTheQuiz()` sonunda tüm problemleri doldurun ve süreölçeri başlatacak, bu nedenle bir açıklama ekleyin. İşlev, aşağıdaki gibi görünmelidir.  
+5. Adlı bir yöntem ekleyin `StartTheQuiz()` kullanan ve `Random` nesnenin `Next()` etiketleri rastgele sayıları göstermek için yöntemi. `StartTheQuiz()` sonunda tüm problemleri doldurun ve süreölçeri başlatacak, bu nedenle bir açıklama ekleyin. İşlev, aşağıdaki gibi görünmelidir.  
   
      [!code-csharp[VbExpressTutorial3Step2#3](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#3)]
      [!code-vb[VbExpressTutorial3Step2#3](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#3)]  
@@ -75,18 +75,18 @@ Next yöntemi
   
      Deyimler **metin** özelliklerini **plusLeftLabel** ve **plusRightLabel** böylece bunlar iki rastgele sayı görüntüler. Bir tamsayının kullanmalısınız `ToString()` sayıları metne dönüştürmek için yöntemi. (Programlamada dize metin anlamına gelir. Etiket denetimleri, sayılar değil yalnızca metin görüntüler.  
   
-6.  Tasarım penceresinde, çift tıklayın ya da **Başlat** düğmesini seçin ve ardından Enter tuşuna basın.  
+6. Tasarım penceresinde, çift tıklayın ya da **Başlat** düğmesini seçin ve ardından Enter tuşuna basın.  
   
      Sınavı alan bu düğmeyi seçtiğinde sınavın başlaması gerekir ve bu davranışı gerçekleştirmek için bir tıklama olayı işleyicisi yalnızca ekledik.  
   
-7.  Aşağıdaki iki deyimi ekleyin.  
+7. Aşağıdaki iki deyimi ekleyin.  
   
      [!code-csharp[VbExpressTutorial3Step2#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial3Step2#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#4)]  
   
      İlk deyim yeni çağıran `StartTheQuiz()` yöntemi. İkinci deyim ayarlar **etkin** özelliği **startButton** denetimini **False** böylece sınavı alanın sınav sırasında düğmeyi seçemezsiniz.  
   
-8.  Kodunuzu kaydedin, çalıştırın ve ardından **Başlat** düğmesi.  
+8. Kodunuzu kaydedin, çalıştırın ve ardından **Başlat** düğmesi.  
   
      Rasgele bir toplama problemi, aşağıdaki çizimde gösterildiği gibi görünür.  
   
@@ -97,6 +97,6 @@ Rasgele bir toplama problemi
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).  
+- Sonraki öğretici adımına gitmek için bkz: [3. adım: Bir geri sayım Zamanlayıcısı ekleme](../ide/step-3-add-a-countdown-timer.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Önceki öğretici adımına dönmek için bkz: [1. adım: Proje oluşturma ve formunuza etiketler ekleme](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

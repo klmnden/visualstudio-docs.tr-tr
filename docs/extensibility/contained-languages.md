@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fe1fdfc8b16988505ef30773cf1ec2e98d58edd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e45fb303c840ec66655e3900dcea3d57b75c7da7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100969"
 ---
 # <a name="contained-languages"></a>Kapsanan dilleri
 
@@ -25,16 +25,16 @@ ms.locfileid: "55039650"
 
 Uygulamanız için bağımsız dillerini en önemli arabirimi <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> arabirimi. Bu arabirim, bir birincil dili içinde barındırılan herhangi bir dil tarafından uygulanır. Dil hizmetin Renklendirici, metin Görünümü Filtresi ve birincil dil hizmeti kimliği erişmenizi sağlar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory> Oluşturmanızı sağlayan bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> arabirimi. Aşağıdaki adımlar nasıl uygulayacağınızı içindeki bir dil gösterir:
 
-1.  Kullanım `QueryService()` dil hizmet kimliği ve arabirimi Kimliğini almak için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
+1. Kullanım `QueryService()` dil hizmet kimliği ve arabirimi Kimliğini almak için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory>.
 
-2.  Oluşturmak için bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> arabirim, çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> yöntemi. Başarılı bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> arabirimi, bir veya daha fazla [kimlikleri öğesi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)ve bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> arabirimi.
+2. Oluşturmak için bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> arabirim, çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguageFactory.GetLanguage%2A> yöntemi. Başarılı bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> arabirimi, bir veya daha fazla [kimlikleri öğesi](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID>)ve bir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> arabirimi.
 
-3.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Metin arabelleği Düzenleyicisi nesnedir, arabirim, bir birincil dosya bir konumda ikincil dilin arabelleğine eşleştirmek için gereken temel hizmetleri sağlar.
+3. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator> Metin arabelleği Düzenleyicisi nesnedir, arabirim, bir birincil dosya bir konumda ikincil dilin arabelleğine eşleştirmek için gereken temel hizmetleri sağlar.
 
      Örneğin, tek bir içinde *.aspx* dosya, birincil dosya ASP, HTML ve içerdiği tüm kod içerir. Ancak, ikincil arabellek yalnızca ikincil arabelleği geçerli kod dosyası yapmak için bir sınıf tanımları birlikte içindeki kodu içerir. Arabellek Düzenleyici bir arabellek düzenlemeleri birbirleriyle koordine işini gerçekleştirir.
 
-4.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Birincil dili olan yöntemi ilgili metin ikincil arabellekteki metni, arabellek içinde eşlendiği arabellek Düzenleyici söyler.
+4. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.SetSpanMappings%2A> Birincil dili olan yöntemi ilgili metin ikincil arabellekteki metni, arabellek içinde eşlendiği arabellek Düzenleyici söyler.
 
      Bir dizide dil geçirir <xref:Microsoft.VisualStudio.TextManager.Interop.NewSpanMapping> yapısı, şu anda yalnızca bir birincil ve ikincil bir yayılma içerir.
 
-5.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Yöntemi ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> yöntem birincil ikincil arabelleğe ve eşleme sağlar.
+5. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapPrimaryToSecondarySpan%2A> Yöntemi ve <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator.MapSecondaryToPrimarySpan%2A> yöntem birincil ikincil arabelleğe ve eşleme sağlar.

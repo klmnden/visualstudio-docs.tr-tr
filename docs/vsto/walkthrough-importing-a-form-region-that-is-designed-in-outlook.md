@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 646fa57ac351fab9b2527c3527ce1864c42519ce
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631568"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101086"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>İzlenecek yol: Outlook'ta tasarlanan form bölgesini içeri aktarma
   Bu izlenecek yol, bir Microsoft Office Outlook form bölgesi tasarlama ve kullanarak bu form bölgesini Outlook VSTO eklenti projesi almak gösterilmiştir **Yeni Form bölgesi** Sihirbazı. Outlook form bölgesi tasarlama, yerel Outlook denetimleri form bölgesini Outlook verilere bağlama eklemek mümkün kılar. Form bölgesini içeri aktardıktan sonra her denetim olayları işleyebilir.
@@ -38,9 +38,9 @@ ms.locfileid: "56631568"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] veya [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
@@ -53,23 +53,23 @@ ms.locfileid: "56631568"
 
 ### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Outlook form bölgesi tasarımcısı kullanarak bir form bölgesi tasarlama
 
-1.  Microsoft Office Outlook'u başlatın.
+1. Microsoft Office Outlook'u başlatın.
 
-2.  Outlook'ta, üzerinde **Geliştirici** sekmesinde **formun**. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+2. Outlook'ta, üzerinde **Geliştirici** sekmesinde **formun**. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  İçinde **tasarım Form** kutusunun **görev**ve ardından **açık**.
+3. İçinde **tasarım Form** kutusunun **görev**ve ardından **açık**.
 
-4.  Outlook'ta, üzerinde **Geliştirici** sekmesinde **tasarım** grubunda **Yeni Form bölgesi**.
+4. Outlook'ta, üzerinde **Geliştirici** sekmesinde **tasarım** grubunda **Yeni Form bölgesi**.
 
      Yeni form bölgesi açılır. Varsa **alan Seçici** görüntülenmiyorsa, tıklayın **alan Seçici** içinde **Araçları** grubu.
 
-5.  Sürükleme **konu** alan ve **% Complete** alanını **alan Seçici** form bölgesine.
+5. Sürükleme **konu** alan ve **% Complete** alanını **alan Seçici** form bölgesine.
 
-6.  İçinde **Araçları** grubunda **denetimi araç kutusu** açmak için **araç kutusu**.
+6. İçinde **Araçları** grubunda **denetimi araç kutusu** açmak için **araç kutusu**.
 
-7.  Bir etiketten sürükleyin **araç kutusu** form bölgesine. Etiketi altındaki konumlandırın **konu** ve **% Complete** alanları.
+7. Bir etiketten sürükleyin **araç kutusu** form bölgesine. Etiketi altındaki konumlandırın **konu** ve **% Complete** alanları.
 
-8.  Etikete sağ tıklayın ve ardından **Gelişmiş Özellikler**.
+8. Etikete sağ tıklayın ve ardından **Gelişmiş Özellikler**.
 
 9. İçinde **özellikleri** penceresinde **açıklamalı alt yazı** özelliğini **üzerinde aşağıdaki görevleri bu görevin bağlı**ayarlayın **genişliği** özelliği **200**ve ardından **Uygula**.
 
@@ -118,11 +118,11 @@ ms.locfileid: "56631568"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Yeni bir Outlook VSTO eklenti projesi oluşturmak için
 
-1.  İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesinde adlı oluşturun **TaskAddIn**.
+1. İçinde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Outlook VSTO eklenti projesinde adlı oluşturun **TaskAddIn**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **çözüm için dizin oluştur**.
+2. İçinde **yeni proje** iletişim kutusunda **çözüm için dizin oluştur**.
 
-3.  Projenin varsayılan proje dizinine kaydedin.
+3. Projenin varsayılan proje dizinine kaydedin.
 
      Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -131,23 +131,23 @@ ms.locfileid: "56631568"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Form bölgesinin Outlook VSTO eklentisi projesine içeri aktarmak için
 
-1.  İçinde **Çözüm Gezgini**, sağ **TaskAddIn** proje, işaret **Ekle**ve ardından **yeni öğe**.
+1. İçinde **Çözüm Gezgini**, sağ **TaskAddIn** proje, işaret **Ekle**ve ardından **yeni öğe**.
 
-2.  İçinde **şablonları** bölmesinde **Outlook Form bölgesi**, dosya adı **TaskFormRegion**ve ardından **Ekle**.
+2. İçinde **şablonları** bölmesinde **Outlook Form bölgesi**, dosya adı **TaskFormRegion**ve ardından **Ekle**.
 
      **NewOutlook Form bölgesi** Sihirbazı'nı başlatır.
 
-3.  Üzerinde **nasıl form bölgesi oluşturmak istediğinizi seçin** sayfasında **Outlook Form Depolama (.ofs) dosyasını içeri aktarma**ve ardından **Gözat**.
+3. Üzerinde **nasıl form bölgesi oluşturmak istediğinizi seçin** sayfasında **Outlook Form Depolama (.ofs) dosyasını içeri aktarma**ve ardından **Gözat**.
 
-4.  İçinde **mevcut Outlook Form bölgesi dosyasının konumu** iletişim kutusunda, konumu için Gözat *TaskFormRegion.ofs*seçin **TaskFormRegion.ofs**, tıklayın**Açık**ve ardından **sonraki**.
+4. İçinde **mevcut Outlook Form bölgesi dosyasının konumu** iletişim kutusunda, konumu için Gözat *TaskFormRegion.ofs*seçin **TaskFormRegion.ofs**, tıklayın**Açık**ve ardından **sonraki**.
 
-5.  Üzerinde **oluşturmak istediğiniz form bölgesi türünü seçin** sayfasında **Tümünü Değiştir**ve ardından **sonraki**.
+5. Üzerinde **oluşturmak istediğiniz form bölgesi türünü seçin** sayfasında **Tümünü Değiştir**ve ardından **sonraki**.
 
      A *Tümünü Değiştir* form bölgesini Outlook formun tamamını değiştirir. Form bölgesi türleri hakkında daha fazla bilgi için bkz. [oluşturma Outlook form bölgeleri](../vsto/creating-outlook-form-regions.md).
 
-6.  Üzerinde **açıklayıcı metni sağlayın ve görüntüleme tercihlerinizi seçin** sayfasında **sonraki**.
+6. Üzerinde **açıklayıcı metni sağlayın ve görüntüleme tercihlerinizi seçin** sayfasında **sonraki**.
 
-7.  Üzerinde **bu form bölgesini görüntüleyecek ileti sınıflarını tanımlayın** sayfasında **hangi özel ileti sınıfları bu form bölgesini görüntüleyecek** alanına **IPM. Task.TaskFormRegion**ve ardından **son**.
+7. Üzerinde **bu form bölgesini görüntüleyecek ileti sınıflarını tanımlayın** sayfasında **hangi özel ileti sınıfları bu form bölgesini görüntüleyecek** alanına **IPM. Task.TaskFormRegion**ve ardından **son**.
 
      A *TaskFormRegion.cs* veya *TaskFormRegion.vb* dosyası projenize eklenir.
 
@@ -208,25 +208,25 @@ ms.locfileid: "56631568"
 
 ### <a name="to-test-the-form-region"></a>Form bölgesinin test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
      Outlook'u başlatır.
 
-2.  Outlook'ta, üzerinde **giriş** sekmesinde **yeni öğeler**ve ardından **görev**.
+2. Outlook'ta, üzerinde **giriş** sekmesinde **yeni öğeler**ve ardından **görev**.
 
-3.  Görev formunda yazın **bağımlı görev** içinde **konu** alan.
+3. Görev formunda yazın **bağımlı görev** içinde **konu** alan.
 
-4.  Üzerinde **görev** Şerit sekmesinde, **eylemleri** grubunda **Kaydet ve Kapat**.
+4. Üzerinde **görev** Şerit sekmesinde, **eylemleri** grubunda **Kaydet ve Kapat**.
 
-5.  Outlook'ta, üzerinde **giriş** sekmesinde **yeni öğeler**, tıklayın **diğer öğeler**ve ardından **Form seçin**.
+5. Outlook'ta, üzerinde **giriş** sekmesinde **yeni öğeler**, tıklayın **diğer öğeler**ve ardından **Form seçin**.
 
-6.  İçinde **Form seçin** iletişim kutusu, tıklayın **TaskFormRegion**ve ardından **açık**.
+6. İçinde **Form seçin** iletişim kutusu, tıklayın **TaskFormRegion**ve ardından **açık**.
 
      **TaskFormRegion** form bölgesi görünür. Bu form, tüm görev formu değiştirir. **Bağımlı görevler listesine eklemek için bir görev seçin** birleşik giriş kutusu Görevler klasöründeki diğer görevlerle doldurulur.
 
-7.  Görev formunda içinde **konu** alanına **birincil görev**.
+7. Görev formunda içinde **konu** alanına **birincil görev**.
 
-8.  İçinde **bağımlı görevler listesine eklemek için bir görev seçin** seçin birleşik giriş kutusunun **bağımlı görev**ve ardından **bağımlı Görev Ekle**.
+8. İçinde **bağımlı görevler listesine eklemek için bir görev seçin** seçin birleşik giriş kutusunun **bağımlı görev**ve ardından **bağımlı Görev Ekle**.
 
      **%0 tamamlandı--bağımlı görev** görünür **üzerinde aşağıdaki görevleri bu görevin bağlı** liste kutusu. Bu başarıyla işlenen gösterir `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` düğmesinin olayı.
 
@@ -245,11 +245,11 @@ ms.locfileid: "56631568"
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu konulardan Outlook uygulamasının kullanıcı arabirimini özelleştirme hakkında daha fazla bilgi edinebilirsiniz:
 
--   Yönetilen denetimleri bir görsel tasarımcıya sürükleyerek form bölgesinin görünümünü tasarlayın hakkında daha fazla bilgi için bkz: [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Yönetilen denetimleri bir görsel tasarımcıya sürükleyerek form bölgesinin görünümünü tasarlayın hakkında daha fazla bilgi için bkz: [izlenecek yol: Outlook form bölgesi tasarlama](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Bir Outlook öğesinin şeridinde özelleştirme hakkında bilgi edinmek için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
+- Bir Outlook öğesinin şeridinde özelleştirme hakkında bilgi edinmek için [Outlook için Şerit özelleştirme](../vsto/customizing-a-ribbon-for-outlook.md).
 
--   Outlook için bir özel görev bölmesi ekleme hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).
+- Outlook için bir özel görev bölmesi ekleme hakkında daha fazla bilgi için bkz. [özel görev bölmeleri](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Form bölgesine çalışma zamanında erişme](../vsto/accessing-a-form-region-at-run-time.md)

@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096536"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio için UX temel bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "54758808"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Visual Studio ortamında tutarlı olmalıdır.
 
--   Kabuktan mevcut etkileşim desenleri izleyin.
+- Kabuktan mevcut etkileşim desenleri izleyin.
 
--   Özellikleri kabuğun visual dil ve craftsmanship gereksinimleri ile tutarlı olacak şekilde tasarlayın.
+- Özellikleri kabuğun visual dil ve craftsmanship gereksinimleri ile tutarlı olacak şekilde tasarlayın.
 
--   Bunlar mevcut paylaşılan komutlara ve denetimlere kullanın.
+- Bunlar mevcut paylaşılan komutlara ve denetimlere kullanın.
 
--   Visual Studio hiyerarşi ve nasıl bağlam oluşturur ve kullanıcı arabirimini yönlendirir anlayın.
+- Visual Studio hiyerarşi ve nasıl bağlam oluşturur ve kullanıcı arabirimini yönlendirir anlayın.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Yazı tipleri ve renkler ortam hizmeti kullanın.
 
--   Özelleştirme seçenekleri iletişim kutusu yazı tipleri ve renkler sayfasında sunulan sürece, UI geçerli ortam yazı tipi ayarlarını dikkate.
+- Özelleştirme seçenekleri iletişim kutusu yazı tipleri ve renkler sayfasında sunulan sürece, UI geçerli ortam yazı tipi ayarlarını dikkate.
 
--   Kullanıcı Arabirimi öğeleri paylaşılan ortamı belirteçleri veya özelliğe özgü belirteçleri kullanarak VSColor hizmeti kullanmanız gerekir.
+- Kullanıcı Arabirimi öğeleri paylaşılan ortamı belirteçleri veya özelliğe özgü belirteçleri kullanarak VSColor hizmeti kullanmanız gerekir.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Tüm görüntüleri yeni VS stil ile tutarlı olun.
 
--   Simgeler, karakterleri ve diğer grafikleri için Visual Studio tasarım ilkelerini izleyin.
+- Simgeler, karakterleri ve diğer grafikleri için Visual Studio tasarım ilkelerini izleyin.
 
--   Metin, grafik öğeleri yerleştirmeyin.
+- Metin, grafik öğeleri yerleştirmeyin.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Kullanıcı merkezli bir açısından tasarlayın.
 
--   İçindeki tek tek özellikler önce Görev akışı oluşturun.
+- İçindeki tek tek özellikler önce Görev akışı oluşturun.
 
--   Kullanıcılarınızla bilgi sahibi olmanız ve bu bilgi, teknik özellikler, açık olun.
+- Kullanıcılarınızla bilgi sahibi olmanız ve bu bilgi, teknik özellikler, açık olun.
 
--   Kullanıcı arabirimini gözden geçirirken, ayrıntıları yanı sıra eksiksiz deneyimi değerlendirin.
+- Kullanıcı arabirimini gözden geçirirken, ayrıntıları yanı sıra eksiksiz deneyimi değerlendirin.
 
--   Kullanıcı Arabirimi yerel ayar veya dil bağımsız olarak çekici ve işlevsel kalır şekilde tasarlayın.
+- Kullanıcı Arabirimi yerel ayar veya dil bağımsız olarak çekici ve işlevsel kalır şekilde tasarlayın.
 
 ## <a name="screen-resolution"></a>Ekran çözünürlüğü
 
@@ -69,9 +69,9 @@ ms.locfileid: "54758808"
 
 #### <a name="feature-team-goals"></a>Takım hedeflerine özelliği
 
--   Yapılandırılması gereken bir öğe eklediğiniz kullanıcıları uyarın.
+- Yapılandırılması gereken bir öğe eklediğiniz kullanıcıları uyarın.
 
--   Kullanıcının dikkatini fikirlerinize ihtiyacımız alanlarına çizin.
+- Kullanıcının dikkatini fikirlerinize ihtiyacımız alanlarına çizin.
 
 #### <a name="anti-pattern-solution"></a>Koruma düzeni çözümü
  Hemen kullanıcı tarafından başlatılan bir eylem olarak ve görev tamamlanmadan önce durdurma kritik simgeleri yapılandırma gerektiren alanlar yanındaki yerleştirin.
@@ -88,11 +88,11 @@ ms.locfileid: "54758808"
 #### <a name="alternatives"></a>Alternatifleri
  Bu sorun için bir çok daha iyi çözüm olacaktır:
 
--   Bir uyarı bildiriminde eklemek kullanıcının ve öğede özelliklerini ayarlamak hemen taşıyın.
+- Bir uyarı bildiriminde eklemek kullanıcının ve öğede özelliklerini ayarlamak hemen taşıyın.
 
--   Uyarı simgesi (gold üçgen) ekleme zaman odak taşır öğesinden gibi başka bir bildirimi listeye ekleyin veya tasarımcı sekmelerde değiştirme girişimi.
+- Uyarı simgesi (gold üçgen) ekleme zaman odak taşır öğesinden gibi başka bir bildirimi listeye ekleyin veya tasarımcı sekmelerde değiştirme girişimi.
 
--   Kullanıcının sekme özellikleri tüm bildirimlerinde ayarlamadan önce çalışırsa, uygulaması olmayan oluşturacaksınız açıklayan bir iletişim kutusu açılır (veya hangi etkilerini) uyarıları çözülene kadar. Yine de kullanıcı iletişim kutusunu kapatır ve sekmeleri değiştirirse (kritik veya uyarı, uygun şekilde) simge için bildirimler sekmesine eklenir.
+- Kullanıcının sekme özellikleri tüm bildirimlerinde ayarlamadan önce çalışırsa, uygulaması olmayan oluşturacaksınız açıklayan bir iletişim kutusu açılır (veya hangi etkilerini) uyarıları çözülene kadar. Yine de kullanıcı iletişim kutusunu kapatır ve sekmeleri değiştirirse (kritik veya uyarı, uygun şekilde) simge için bildirimler sekmesine eklenir.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Kullanıcı UI kapatılıyor önce metin okuma için zorlama
 
@@ -173,9 +173,9 @@ ms.locfileid: "54758808"
 
    **Daha iyi çözüm için:** Kullanıcının bağlantıya tıklayarak isteyen soru yol açar.
 
--   Windows Azure hizmetleri nasıl çalışır?
+- Windows Azure hizmetleri nasıl çalışır?
 
--   Bir Windows Azure Mobile Services projesi ne gerekir?
+- Bir Windows Azure Mobile Services projesi ne gerekir?
 
 #### <a name="using-click-here-for-links"></a>"Bağlantıları için buraya tıklayın" kullanma
  Köprüler, kendini açıklayıcı olmalıdır. Bu, "buraya tıklayın" kullanmak için koruma desen veya benzer bir değişim olur.

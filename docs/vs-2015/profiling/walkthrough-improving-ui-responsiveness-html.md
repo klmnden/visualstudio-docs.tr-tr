@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071648"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>İzlenecek yol: UI yanıtlama hızı (HTML) geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Uygulama oluşturma ve çalıştırma performans testi  
   
-1.  Visual Studio'da yeni bir Windows Evrensel JavaScript projesi oluşturun. (Seçmek **dosya / yeni / Project**. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 10**, ardından da **Evrensel**, veya  **Windows Phone**.  
+1. Visual Studio'da yeni bir Windows Evrensel JavaScript projesi oluşturun. (Seçmek **dosya / yeni / Project**. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 10**, ardından da **Evrensel**, veya  **Windows Phone**.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Bu konu başlığında gösterilen Tanılama sonuçları için bir Windows 8 uygulaması gösterilmektedir.  
   
-3.  Orta bölmede gibi boş proje şablonlarından birini seçin **boş uygulama**.  
+3. Orta bölmede gibi boş proje şablonlarından birini seçin **boş uygulama**.  
   
-4.  İçinde **adı** gibi bir ad belirtin, kutusunda `JS_Perf_Tester`ve ardından **Tamam**.  
+4. İçinde **adı** gibi bir ad belirtin, kutusunda `JS_Perf_Tester`ve ardından **Tamam**.  
   
-5.  İçinde **Çözüm Gezgini**default.html açın ve arasına aşağıdaki kodu yapıştırın \<gövdesi > etiketleri:  
+5. İçinde **Çözüm Gezgini**default.html açın ve arasına aşağıdaki kodu yapıştırın \<gövdesi > etiketleri:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
     </div>  
     ```  
   
-6.  Default.css açın ve aşağıdaki CSS kodunu ekleyin:  
+6. Default.css açın ve aşağıdaki CSS kodunu ekleyin:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
     }  
     ```  
   
-7.  Default.js açın ve tüm kodu şu kodla değiştirin:  
+7. Default.js açın ve tüm kodu şu kodla değiştirin:  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
   
     ```  
   
-8.  Hata ayıklamayı başlatmak için F5 tuşuna basın. Doğrulayın **değerleri için bekleyen** düğmesi sayfada görüntülenir.  
+8. Hata ayıklamayı başlatmak için F5 tuşuna basın. Doğrulayın **değerleri için bekleyen** düğmesi sayfada görüntülenir.  
   
 9. Seçin **değerleri için bekleyen** ve düğme metni ve renk yaklaşık saniyede bir kez güncelleştirmesini doğrulayın. Bu tasarım gereğidir.  
   
@@ -204,9 +204,9 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
   
      Veriler bilgiler çeşitli öğrendiğiniz kayıtlar. Örneğin:  
   
-    -   Her `Timer` olay, bir komut dosyası olay olarak tanımlamak için renk kodlu bir çağrı içerir `document.createElement`stil hesaplama ve çağrı çizgidir `style.backgroundColor` ve `appendChild()`.  
+    - Her `Timer` olay, bir komut dosyası olay olarak tanımlamak için renk kodlu bir çağrı içerir `document.createElement`stil hesaplama ve çağrı çizgidir `style.backgroundColor` ve `appendChild()`.  
   
-    -   Seçili kısa süre içinde (yaklaşık iki saniye), çok sayıda vardır `Timer`, `Layout`, ve `Paint` gerçekleşen olayları. `Timer` Olaylar meydana uygulamayı çalıştırıp seçin sonra görünüşte açıktır saniye başına tek bir güncelleştirme çok daha sık **değerleri için bekleyen** düğmesi.  
+    - Seçili kısa süre içinde (yaklaşık iki saniye), çok sayıda vardır `Timer`, `Layout`, ve `Paint` gerçekleşen olayları. `Timer` Olaylar meydana uygulamayı çalıştırıp seçin sonra görünüşte açıktır saniye başına tek bir güncelleştirme çok daha sık **değerleri için bekleyen** düğmesi.  
   
 10. Araştırmak için anonim işlev bağlantısını için aşağıdakilerden birini seçin. `Timer` alt sol bölmesinde olayları. Aşağıdaki işlev içinde default.js açar:  
   
@@ -225,7 +225,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
   
 ### <a name="fixing-the-performance-issue"></a>Performans sorunu düzeltme  
   
-1.  Değiştirin `update()` işlevi aşağıdaki kod ile:  
+1. Değiştirin `update()` işlevi aşağıdaki kod ile:  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Bu izlenecek yol, tanımlamak ve kullanarak bir performans sorunu düzeltme sür
   
      Kodun düzeltilmiş bu sürümü, varsayılan gecikme değerini kullanımını kaynaklanan kod, önceki sürümünden atlandı 1000 milisaniyeden kısa gecikme içerir. Profil Oluşturucu verileri, varsayılan değer sıfır milisaniye neden olduğunu görünür `setValues()` işlevi çok sık çalıştırmak.  
   
-2.  HTML kullanıcı Arabirimi yanıtlama hızı profil oluşturucuyu yeniden çalıştırın ve CPU kullanım grafiği denetleyin. Aşırı olayları kalkar ve CPU kullanımı, sıfıra yakın için bıraktı bulabilirsiniz. Düzeltildi!  
+2. HTML kullanıcı Arabirimi yanıtlama hızı profil oluşturucuyu yeniden çalıştırın ve CPU kullanım grafiği denetleyin. Aşırı olayları kalkar ve CPU kullanımı, sıfıra yakın için bıraktı bulabilirsiniz. Düzeltildi!  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [HTML kullanıcı arabirimi yanıt hızı](../profiling/html-ui-responsiveness.md)

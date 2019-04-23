@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064017"
 ---
 # <a name="bookmark-control"></a>Yer işareti denetimi
   <xref:Microsoft.Office.Tools.Word.Bookmark> Verilere bağlı benzersiz bir ada sahip ve olayları ortaya koyan bir yer işareti bir denetimdir. Yer işareti, bir öğe veya Microsoft Office Word belgesindeki bir konumu işaretlemek için yer tutucu olarak kullanılabilir. <xref:Microsoft.Office.Tools.Word.Bookmark> Denetimi bir birleşimi olan bir <xref:Microsoft.Office.Interop.Word.Bookmark> nesnesi ve bir <xref:Microsoft.Office.Interop.Word.Range> nesne.
@@ -95,19 +95,19 @@ Aşağıdaki tabloda nasıl cümlenin "Örnek metin sağlıyor." başka bir yer 
 
 Aşağıdakiler için kullanılabilir <xref:Microsoft.Office.Tools.Word.Bookmark> denetimi:
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

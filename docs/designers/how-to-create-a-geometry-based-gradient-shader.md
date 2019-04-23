@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfb6a629b5ff0ddddeead8f9f53d43580aba084a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100228"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma
 
@@ -25,21 +25,21 @@ Geometri tabanlı bir gölgelendirici pikselin konumu gölgelendiricinize ekleye
 
 Başlamadan önce emin **özellikleri** penceresi ve **araç kutusu** görüntülenir.
 
-1.  Birlikte çalışmak bir DGSL gölgelendirici oluşturun. Projenize DGSL gölgelendirici ekleme hakkında daha fazla bilgi için bkz. Başlarken bölümünde [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
+1. Birlikte çalışmak bir DGSL gölgelendirici oluşturun. Projenize DGSL gölgelendirici ekleme hakkında daha fazla bilgi için bkz. Başlarken bölümünde [gölgelendirici Tasarımcısı](../designers/shader-designer.md).
 
-2.  Bağlantı kesme **nokta rengi** düğümünden **son rengini** düğümü. Seçin **RGB** , terminal **nokta rengi** düğümünü seçip **Bağlantıları Kes**. Bu, sonraki adımda eklenen düğümü için yer sağlar.
+2. Bağlantı kesme **nokta rengi** düğümünden **son rengini** düğümü. Seçin **RGB** , terminal **nokta rengi** düğümünü seçip **Bağlantıları Kes**. Bu, sonraki adımda eklenen düğümü için yer sağlar.
 
-3.  Ekleme bir **Çarp** grafiğe düğüm. İçinde **araç kutusu**altında **matematik**seçin **Çarp** ve tasarım yüzeyine taşıyın.
+3. Ekleme bir **Çarp** grafiğe düğüm. İçinde **araç kutusu**altında **matematik**seçin **Çarp** ve tasarım yüzeyine taşıyın.
 
-4.  Ekleme bir **vektörü** grafiğe düğüm. İçinde **araç kutusu**altında **yardımcı programı**seçin **vektörü** ve tasarım yüzeyine taşıyın.
+4. Ekleme bir **vektörü** grafiğe düğüm. İçinde **araç kutusu**altında **yardımcı programı**seçin **vektörü** ve tasarım yüzeyine taşıyın.
 
-5.  Maskesi değerlerini belirtin **vektörü** düğümü. İçinde **seçin** modunu Seç **vektörü** düğümünü ve ardından **özellikleri** penceresinde **yeşil / Y** özelliğini**True**ve ardından **kırmızı / X**, **mavi / Z** ve **alfa / W** özelliklerine **False**. Bu örnekte, **kırmızı / X**, **yeşil / Y**, ve **mavi / Z** özellikleri karşılık gelen x, y ve z bileşenlerinin **dünya konumu** düğüm, ve **alfa / W** kullanılmıyor. Çünkü yalnızca **yeşil / Y** ayarlanır **True**, yalnızca giriş vektör y bileşeni, maskelenmiş sonra kalır.
+5. Maskesi değerlerini belirtin **vektörü** düğümü. İçinde **seçin** modunu Seç **vektörü** düğümünü ve ardından **özellikleri** penceresinde **yeşil / Y** özelliğini**True**ve ardından **kırmızı / X**, **mavi / Z** ve **alfa / W** özelliklerine **False**. Bu örnekte, **kırmızı / X**, **yeşil / Y**, ve **mavi / Z** özellikleri karşılık gelen x, y ve z bileşenlerinin **dünya konumu** düğüm, ve **alfa / W** kullanılmıyor. Çünkü yalnızca **yeşil / Y** ayarlanır **True**, yalnızca giriş vektör y bileşeni, maskelenmiş sonra kalır.
 
-6.  Ekleme bir **dünya konumu** grafiğe düğüm. İçinde **araç kutusu**altında **sabitleri**seçin **dünya konumu** ve tasarım yüzeyine taşıyın.
+6. Ekleme bir **dünya konumu** grafiğe düğüm. İçinde **araç kutusu**altında **sabitleri**seçin **dünya konumu** ve tasarım yüzeyine taşıyın.
 
-7.  Dünya alanı konumu parçanın maskeleyebilir. İçinde **seçin** modu, taşıma **çıkış** , terminal **dünya konumu** düğüme **vektör** , terminal **maskesi Vektör** düğümü. Bu bağlantı x ve z yok saymak için parça konumunu maskeleri bileşenleri.
+7. Dünya alanı konumu parçanın maskeleyebilir. İçinde **seçin** modu, taşıma **çıkış** , terminal **dünya konumu** düğüme **vektör** , terminal **maskesi Vektör** düğümü. Bu bağlantı x ve z yok saymak için parça konumunu maskeleri bileşenleri.
 
-8.  RGB renk sabiti maskelenmiş dünya alanı konumu ile çarpın. Taşıma **RGB** , terminal **nokta rengi** düğüme **Y** , terminal **Çarp** düğümünü ve ardından taşıyın  **Çıkış** , terminal **vektörü** düğüme **X** , terminal **Çarp** düğümü. Bu bağlantı, dünya alanındaki piksel yüksekliği tarafından renk değeri olacak şekilde ölçeklendirir.
+8. RGB renk sabiti maskelenmiş dünya alanı konumu ile çarpın. Taşıma **RGB** , terminal **nokta rengi** düğüme **Y** , terminal **Çarp** düğümünü ve ardından taşıyın  **Çıkış** , terminal **vektörü** düğüme **X** , terminal **Çarp** düğümü. Bu bağlantı, dünya alanındaki piksel yüksekliği tarafından renk değeri olacak şekilde ölçeklendirir.
 
 9. Ölçeklendirilmiş renk değeri son rengi bağlanın. Taşıma **çıkış** , terminal **Çarp** düğüme **RGB** , terminal **son rengini** düğümü.
 

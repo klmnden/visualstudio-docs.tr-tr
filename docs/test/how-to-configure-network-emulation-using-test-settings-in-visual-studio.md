@@ -8,12 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9732bda3bf7ae6628ad834ee49210f739efca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4738caa4fac8596db5b92c6cafa1c0f370e0363
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102477"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Nasıl yapılır: Visual Studio'da Test ayarlarını kullanarak ağ öykünmesini yapılandırma
 
@@ -60,25 +60,25 @@ Bu yordamdaki adımları gerçekleştirmeden önce Visual Studio'dan test ayarla
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Test ayarlarınız için ağ öykünmesini yapılandırmak için
 
-1.  Belirli bir ağa benzetmek için kullanılacak rolü seçin.
+1. Belirli bir ağa benzetmek için kullanılacak rolü seçin.
 
     > [!NOTE]
     > Yalnızca istemci rol veya sunucu rolünü ağ öykünmesi bağdaştırıcısını yapılandırmanız gerekmez. Her iki roldeki bağdaştırıcıyı kullanmak zorunda değil. Bağdaştırıcı her iki rol arasındaki iletişimi etkileyen ağ gürültüsüne öykünür, bu ikisinde kullanmak zorunda değil. Gerekli olmadıkça sunucu rolündeki ek yükü önlemek ağ öykünmesi bağdaştırıcısı için bir istemci rolü seçmeniz gerekir.
 
-2.  Seçin **ağ öykünmesi** seçip **yapılandırma**.
+2. Seçin **ağ öykünmesi** seçip **yapılandırma**.
 
      Ağ öykünmesini yapılandırmak için iletişim kutusu görüntülenir.
 
-3.  Yanındaki oku seçin **kullanılacak ağ profilini Seç**ve bir testi çalıştırırken öykünmesini istediğiniz ağ türünü seçin (örneğin, **Kablo-DSL 768Kps**).
+3. Yanındaki oku seçin **kullanılacak ağ profilini Seç**ve bir testi çalıştırırken öykünmesini istediğiniz ağ türünü seçin (örneğin, **Kablo-DSL 768Kps**).
 
     > [!WARNING]
     > Testlerinizi Öykünülen ağdan daha yavaş türde bir gerçek ağda çalıştırırsanız, test yine daha yavaş ağ hızında çalışır. Öykünme ağ ortamını yalnızca yavaşlatabilir, hızlandıramaz.
 
-4.  Ağ öykünmesi tanılama veri bağdaştırıcısı test ayarlarında içerir ve yerel makinenizde kullanmayı düşünüyorsanız, daha sonra Ayrıca ağ öykünmesi sürücüsünü makinenizin ağ bağdaştırıcılarından birine bağlamanız gerekir. Ağ öykünmesi sürücüsü işlevi için ağ öykünmesi tanılama veri bağdaştırıcısı için gereklidir. Ağ öykünmesi sürücüsü yüklü ve bağdaştırıcınıza iki şekilde bağlanır:
+4. Ağ öykünmesi tanılama veri bağdaştırıcısı test ayarlarında içerir ve yerel makinenizde kullanmayı düşünüyorsanız, daha sonra Ayrıca ağ öykünmesi sürücüsünü makinenizin ağ bağdaştırıcılarından birine bağlamanız gerekir. Ağ öykünmesi sürücüsü işlevi için ağ öykünmesi tanılama veri bağdaştırıcısı için gereklidir. Ağ öykünmesi sürücüsü yüklü ve bağdaştırıcınıza iki şekilde bağlanır:
 
-    -   **Microsoft Visual Studio Test Aracısı ile yüklenmiş ağ öykünme sürücüsü:** Microsoft Visual Studio Test Aracısı hem uzak makinelerde hem de yerel makinenizde kullanılabilir. Visual Studio Test aracısı yüklediğinizde, yükleme işlemi ağ öykünmesi sürücüsünü ağ kartınıza bağlayan bir yapılandırma adımı içerir. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
+    - **Microsoft Visual Studio Test Aracısı ile yüklenmiş ağ öykünme sürücüsü:** Microsoft Visual Studio Test Aracısı hem uzak makinelerde hem de yerel makinenizde kullanılabilir. Visual Studio Test aracısı yüklediğinizde, yükleme işlemi ağ öykünmesi sürücüsünü ağ kartınıza bağlayan bir yapılandırma adımı içerir. Daha fazla bilgi için [yüklemek ve test denetleyicisilerinin](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Microsoft Visual Studio Test Professional ile yüklenmiş ağ öykünme sürücüsü:** Ağ öykünmesini ilk kez kullanırken, ağ öykünme sürücüsünü bir ağ kartına bağlamanız istenir.
+    - **Microsoft Visual Studio Test Professional ile yüklenmiş ağ öykünme sürücüsü:** Ağ öykünmesini ilk kez kullanırken, ağ öykünme sürücüsünü bir ağ kartına bağlamanız istenir.
 
     > [!TIP]
     > Ayrıca ağ öykünmesi sürücüsü komut satırından yerel makinenizde aşağıdaki komutu kullanarak Visual Studio test aracısı yüklemeden yükleyebilirsiniz: **VSTestConfig NETWORKEMULATION/Install**

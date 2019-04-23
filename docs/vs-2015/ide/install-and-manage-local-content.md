@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097420"
 ---
 # <a name="install-and-manage-local-content"></a>Yerel İçeriği Yükleme ve Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
   
 #### <a name="to-change-the-content-installation-source"></a>İçerik yükleme kaynağını değiştirmek için  
   
-1.  Üzerinde **içeriği Yönet** sekmesini, **Disk** seçenek düğmesini.  
+1. Üzerinde **içeriği Yönet** sekmesini, **Disk** seçenek düğmesini.  
   
     > [!NOTE]
     >  **Disk** seçeneği yöneticinize, içerik yükleme kaynağını değiştirmenizi engellerse kullanılabilir olmayacak. Daha fazla bilgi için [Yardım Görüntüleyicisi Yönetici Kılavuzu'na](../ide/help-viewer-administrator-guide.md).  
   
-2.  Aşağıdaki adımlardan birini uygulayın:  
+2. Aşağıdaki adımlardan birini uygulayın:  
   
-    -   .Msha dosya yolunu veya hizmet uç noktası URL'sini girin.  
+    - .Msha dosya yolunu veya hizmet uç noktası URL'sini girin.  
   
-    -   Gözat düğmesini seçin (**...** ) .msha dosyasına gitmek için düğme.  
+    - Gözat düğmesini seçin (**...** ) .msha dosyasına gitmek için düğme.  
   
-    -   Listeden en son kullanılan girdiyi seçin.  
+    - Listeden en son kullanılan girdiyi seçin.  
   
 ## <a name="download-and-install-content-locally"></a>Yerel olarak içeriği indir ve yükle  
  İndirme ve içeriği yerel bilgisayarınıza yükleyin, Internet bağlantısı olmadan konuları görüntüleyebilirsiniz.  
@@ -66,13 +66,13 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
   
 #### <a name="to-download-and-install-content"></a>İçeriği indirmek ve yüklemek için  
   
-1.  Seçin **içeriği Yönet** sekmesi.  
+1. Seçin **içeriği Yönet** sekmesi.  
   
-2.  İçerik listesinde **Ekle** kitabın veya kitapların indirmek ve yüklemek için istediğiniz yanındaki bağlantı.  
+2. İçerik listesinde **Ekle** kitabın veya kitapların indirmek ve yüklemek için istediğiniz yanındaki bağlantı.  
   
      Kitap eklenir **bekleyen değişiklikler** listesi ve tahmini boyutunu belirttiğiniz kitap veya kitaplar bu listenin altında görünür. Bazı kitaplar konuları paylaştığından birden çok kitap toplam yükleme boyutu, belirttiğiniz her kitabın boyutlarını birlikte eklemenin sonucunu küçük olabilir.  
   
-3.  Seçin **güncelleştirme** düğmesi.  
+3. Seçin **güncelleştirme** düğmesi.  
   
      Belirttiğiniz kitap veya kitaplar, bilgisayarınızda zaten yüklü Kitaplar için tüm güncelleştirmelerle birlikte yüklenir. Yükleme süreleri değişebilir ancak durum çubuğundan ilerlemeyi görüntüleyebilirsiniz.  
   
@@ -86,13 +86,13 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
   
 #### <a name="to-remove-content"></a>İçeriği kaldırmak için  
   
-1.  Seçin **içeriği Yönet** sekmesi.  
+1. Seçin **içeriği Yönet** sekmesi.  
   
-2.  İçerik listesinde **Kaldır** kitabın veya kitapların kaldırmak istediğiniz yanındaki bağlantı.  
+2. İçerik listesinde **Kaldır** kitabın veya kitapların kaldırmak istediğiniz yanındaki bağlantı.  
   
      Kitap eklenir **bekleyen değişiklikler** listesi.  
   
-3.  Seçin **güncelleştirme** düğmesi.  
+3. Seçin **güncelleştirme** düğmesi.  
   
      Belirttiğiniz kitap veya kitaplar bilgisayarınızdan kaldırılır.  
   
@@ -116,13 +116,13 @@ Microsoft Yardım Görüntüleyicisi'ni kullanarak, ekleme, kaldırma, güncelle
   
 #### <a name="to-move-local-content"></a>Yerel içeriği taşımak için  
   
-1.  Üzerinde **içeriği Yönet** sekmesini, **taşıma** düğmesini **yerel Store yol**.  
+1. Üzerinde **içeriği Yönet** sekmesini, **taşıma** düğmesini **yerel Store yol**.  
   
      **İçeriği Taşı** iletişim kutusu açılır.  
   
-2.  İçinde **için** metin kutusuna içerik için farklı bir konum girin ve ardından **Tamam** düğmesi.  
+2. İçinde **için** metin kutusuna içerik için farklı bir konum girin ve ardından **Tamam** düğmesi.  
   
-3.  Seçin **Kapat** içerik taşındıktan sonra düğme.  
+3. Seçin **Kapat** içerik taşındıktan sonra düğme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Microsoft Yardım Görüntüleyicisi](../ide/microsoft-help-viewer.md)

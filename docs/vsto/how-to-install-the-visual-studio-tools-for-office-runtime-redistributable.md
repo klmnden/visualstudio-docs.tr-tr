@@ -15,36 +15,36 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3531fc79956b9c0f72d0dc5a333f1f9aedf5326d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101463"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Nasıl yapılır: Office çalışma zamanı yeniden dağıtılabilir için Visual Studio Araçları yükleme
   Office çalışma zamanı için Visual Studio 2010 Araçları, Microsoft Office geliştirici araçları kullanarak oluşturulan çözümleri çalıştıran her bilgisayara yüklenmelidir [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Yükleme sırasında çalışma zamanı otomatik olarak yüklenen [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ve Microsoft Office. Daha fazla bilgi için [Office çalışma zamanı yükleme senaryoları için Visual Studio Araçları](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
  Aşağıdaki durumlarda aşağıdaki el ile yükleme yönergeleri takip etmeniz gerekebilir:
 
--   Yüklemeniz gereken [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bir sunucuda. Örneğin, kullanmak istediğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> bir sunucuda belge düzeyi çözümlerde yönetmek için sınıf.
+- Yüklemeniz gereken [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bir sunucuda. Örneğin, kullanmak istediğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> bir sunucuda belge düzeyi çözümlerde yönetmek için sınıf.
 
--   Çalışma zamanı yüklü Office çözümleri için diğer tüm Önkoşullar zaten olan bir bilgisayara yüklemeniz gerekir.
+- Çalışma zamanı yüklü Office çözümleri için diğer tüm Önkoşullar zaten olan bir bilgisayara yüklemeniz gerekir.
 
     > [!NOTE]
     >  .NET Framework'ü yüklemek için yönetici geliştirme bilgisayarında olmalıdır ve [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Office çalışma zamanı için Visual Studio Araçları'nı yüklemek için
 
-1.  Yükleme [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
+1. Yükleme [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya üzeri.
 
-    -   İndirmek için [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], bkz: [Microsoft .NET Framework 4 (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178957).
+    - İndirmek için [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], bkz: [Microsoft .NET Framework 4 (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178957).
 
-    -   İndirmek için [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], bkz: [Microsoft .NET Framework 4 istemci profili (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178958).
+    - İndirmek için [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)], bkz: [Microsoft .NET Framework 4 istemci profili (Web Yükleyicisi)](http://go.microsoft.com/fwlink/?LinkId=178958).
 
-    -   İndirmek için [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bkz: [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
+    - İndirmek için [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bkz: [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).
 
-2.  Çalıştırma *vstor_redist.exe* yüklemek için [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+2. Çalıştırma *vstor_redist.exe* yüklemek için [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
      Bu kurulum dosyalarından indirebileceğiniz [Office çalışma zamanı için Visual Studio 2010 Araçları](http://go.microsoft.com/fwlink/?LinkId=140384). Önkoşulları [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .NET Framework için önkoşulları eşleşmesi.
 

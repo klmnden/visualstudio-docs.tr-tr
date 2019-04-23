@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58e50e7d70c485a4a49564ec0a57ba03b74e4a85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75780cf846b2f328dbe79481244901ad7662ab7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076607"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>10. Adım: Ek Düğmeler ve Onay Kutusu için Kod Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Diğer dört yöntemi tamamlamaya artık hazırsınız. Bu kodu kopyalayıp, anc
   
 ### <a name="to-write-code-for-additional-buttons-and-a-check-box"></a>Ek düğmeler ve onay kutusu için kod yazma  
   
--   Form1 kod dosyanıza (Form1.cs veya Form1.vb) aşağıdaki kodu ekleyin. Seçin **VB** Visual Basic kodunu görüntülemek için sekmesinde.  
+- Form1 kod dosyanıza (Form1.cs veya Form1.vb) aşağıdaki kodu ekleyin. Seçin **VB** Visual Basic kodunu görüntülemek için sekmesinde.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial1Step9_10#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#2)]  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [11. adım: Programınızı çalıştırmak ve diğer özellikleri deneme](../ide/step-11-run-your-program-and-try-other-features.md).  
+- Sonraki öğretici adımına gitmek için bkz: [11. adım: Programınızı çalıştırmak ve diğer özellikleri deneme](../ide/step-11-run-your-program-and-try-other-features.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [9. adım: Gözden geçirme, açıklama ve kodunuzu Test](../ide/step-9-review-comment-and-test-your-code.md).
+- Önceki öğretici adımına dönmek için bkz: [9. adım: Gözden geçirme, açıklama ve kodunuzu Test](../ide/step-9-review-comment-and-test-your-code.md).

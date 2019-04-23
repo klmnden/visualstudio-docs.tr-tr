@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092181"
 ---
 # <a name="working-with-xml-data"></a>XML Verileriyle Çalışma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ XML ve kendi ilgili teknolojileri, verilerin işlenme şekilde bir büyük bir r
   
  Ek özellikler şunlardır:  
   
--   Kod parçacıkları şema tarafından oluşturulan XML kod parçacığı desteği.  
+- Kod parçacıkları şema tarafından oluşturulan XML kod parçacığı desteği.  
   
--   Böylece öğeler daraltılabilir ve Genişletilebilir anahat oluşturma belgeleyin.  
+- Böylece öğeler daraltılabilir ve Genişletilebilir anahat oluşturma belgeleyin.  
   
--   XSLT dönüşümleri yürütmek ve sonuçları metin, XML veya HTML görüntülemek için yeteneği.  
+- XSLT dönüşümleri yürütmek ve sonuçları metin, XML veya HTML görüntülemek için yeteneği.  
   
--   Örnek XML belgesinden XML Şeması Tanım Dili (XSD) şemaları oluşturmak olanağı.  
+- Örnek XML belgesinden XML Şeması Tanım Dili (XSD) şemaları oluşturmak olanağı.  
   
--   IntelliSense desteği dahil olmak üzere, XSLT stil sayfalarını düzenleme desteği.  
+- IntelliSense desteği dahil olmak üzere, XSLT stil sayfalarını düzenleme desteği.  
   
--   XML Şema Gezgini  
+- XML Şema Gezgini  
   
 ## <a name="xml-schema-designer"></a>XML Şema Tasarımcısı  
  XML şema tasarımcısını XML Şeması Tanım Dili (XSD) şemalarla çalışma sağlamak için Microsoft Visual Studio 2010 ile XML Düzenleyicisi ile tümleşiktir.  

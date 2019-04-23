@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096562"
 ---
 # <a name="visio-object-model-overview"></a>Visio nesne modeline genel bakış
   Office çözümleri geliştirmek için Microsoft Office Visio için Visio nesne modeli ile etkileşim kurabilir. Bu nesne modeli sınıfları ve arabirimleri Visio için birincil birlikte çalışma derlemesi olarak sağlanır ve tanımlanan oluşur `Microsoft.Office.Interop.Visio` ad alanı.
 
  Bu konu, Visio nesne modeline kısa bir genel bakış sağlar. Visio nesne modeline Office projelerinde görevleri gerçekleştirmek için kullanma hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md)
+- [Visio belgeleriyle çalışma](../vsto/working-with-visio-documents.md)
 
--   [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)
+- [Visio şekilleri ile çalışma](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Visio nesne modelini anlama
  Visio birçok nesne ile etkileşim sağlar. Kullanıcı arabirimi yakından takip eden bir hiyerarşide bu nesneleri düzenlenir. Hiyerarşisinin en üstünde olan [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) nesne. Bu nesne, Visio'nün geçerli örneğini temsil eder. `Microsoft.Office.Interop.Visio.Application` Nesnesini içeren `Microsoft.Office.Interop.Visio.Document` ve `Microsoft.Office.Interop.Visio.Page` nesnelerin yanı sıra `Microsoft.Office.Interop.Visio.Documents` ve `Microsoft.Office.Interop.Visio.Pages` koleksiyonları. Her bu nesneleri ve koleksiyonları, birçok yöntem ve ve onunla etkileşime için erişebileceği özellikler vardır.
@@ -40,11 +40,11 @@ ms.locfileid: "56636716"
 
  Aşağıdaki bölümlerde, en üst düzey nesnelerin ve birbiriyle nasıl etkileşim kurduklarını kısaca açıklanmaktadır. Bu nesneler, aşağıdaki nesneler içerir:
 
--   Uygulama nesnesi
+- Uygulama nesnesi
 
--   Belge nesnesi
+- Belge nesnesi
 
--   Sayfa nesnesi
+- Sayfa nesnesi
 
 ### <a name="application-object"></a>Uygulama nesnesi
  Microsoft.Office.Interop.Visio.Application nesnesi, Visio uygulamasını temsil eder ve tüm diğer nesnelerin üst. Üyeleri, Visio genellikle bir bütün olarak uygular. Özellikleri ve yöntemleri Microsoft.Office.Interop.Visio.Application kullanabilirsiniz ve `Microsoft.Office.Interop.Visio.ApplicationSettings` Visio ortam denetlemek için nesneleri.

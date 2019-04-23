@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109432"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Nasıl yapılır: Yük testi çalışma ayarı için zamanlama ayrıntıları depolama özelliğini belirtme
 
@@ -47,15 +47,15 @@ Bir çalışma ayarının düzenleyebileceğiniz **Zamanlama Ayrıntıları Depo
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Bir yük testi içinde zamanlama ayrıntıları depolama özelliğini yapılandırmak için
 
-1.  Bir yük testi, Yük Testi Düzenleyicisi'nde açın.
+1. Bir yük testi, Yük Testi Düzenleyicisi'nde açın.
 
-2.  Genişletin **çalıştırma ayarları** düğüm yük testinde.
+2. Genişletin **çalıştırma ayarları** düğüm yük testinde.
 
-3.  Örneğin, yapılandırmak istediğiniz çalıştırma ayarlarını seçin **çalıştırma Ayarları1 [etkin]**.
+3. Örneğin, yapılandırmak istediğiniz çalıştırma ayarlarını seçin **çalıştırma Ayarları1 [etkin]**.
 
-4.  Açık **özellikleri** penceresi. Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
+4. Açık **özellikleri** penceresi. Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
-5.  Altında **sonuçları** kategorisi seçin **Zamanlama Ayrıntıları Deposu** özelliğini tıklatın ve **Tüm Bireysel Ayrıntılar**.
+5. Altında **sonuçları** kategorisi seçin **Zamanlama Ayrıntıları Deposu** özelliğini tıklatın ve **Tüm Bireysel Ayrıntılar**.
 
      Yapılandırmasını tamamladıktan sonra **Tüm Bireysel Ayrıntılar** ayarını **Zamanlama Ayrıntıları Deposu** özelliğini yükleme çalıştırabilirsiniz görüntülemek ve test **sanal kullanıcı aktivite grafiği**. Daha fazla bilgi için [nasıl yapılır: Bir yük testi sırasında sanal kullanıcıların ne yaptıklarını çözümleme](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 

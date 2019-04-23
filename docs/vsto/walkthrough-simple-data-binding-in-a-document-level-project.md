@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066655"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>İzlenecek yol: Belge düzeyi projede basit veri bağlama
   Bu izlenecek yol, bir belge düzeyi projede veri bağlama ilişkin temel bilgileri gösterir. Bir SQL Server veritabanı bir tek veri alanında Microsoft Office Excel adlandırılmış aralıkta bağlıdır. İzlenecek yol, ayrıca tablodaki tüm kayıtları arasında kaydırma olanak tanıyan denetimlerin nasıl ekleneceğini gösterir.
@@ -41,13 +41,13 @@ ms.locfileid: "56640278"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   SQL Server Northwind örnek veritabanı ile bir sunucu erişim.
+- SQL Server Northwind örnek veritabanı ile bir sunucu erişim.
 
--   SQL Server veritabanına yazma ve okuma izni.
+- SQL Server veritabanına yazma ve okuma izni.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
  Bu adımda, bir Excel çalışma kitabı projesi oluşturur.
@@ -88,21 +88,21 @@ ms.locfileid: "56640278"
 
 ### <a name="to-add-two-named-ranges"></a>İki adlandırılmış aralıklar eklemek için
 
-1.  Doğrulayın *My basit veri Binding.xlsx* Visual Studio tasarımcıda açık çalışma kitabı ile **Sayfa1** görüntülenir.
+1. Doğrulayın *My basit veri Binding.xlsx* Visual Studio tasarımcıda açık çalışma kitabı ile **Sayfa1** görüntülenir.
 
-2.  Açık **veri kaynakları** penceresini genişletin **müşteriler** düğümü.
+2. Açık **veri kaynakları** penceresini genişletin **müşteriler** düğümü.
 
-3.  Seçin **CompanyName** sütun ve sonra görünen açılan oku tıklatın.
+3. Seçin **CompanyName** sütun ve sonra görünen açılan oku tıklatın.
 
-4.  Seçin **NamedRange** sürükleyin ve açılan liste **CompanyName** sütun hücreye **A1**.
+4. Seçin **NamedRange** sürükleyin ve açılan liste **CompanyName** sütun hücreye **A1**.
 
      A <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `companyNameNamedRange` hücresinde oluşturulan **A1**. Aynı anda bir <xref:System.Windows.Forms.BindingSource> adlı `customersBindingSource`, bir tablo bağdaştırıcısı ve <xref:System.Data.DataSet> örnek projeye eklenir. Denetimin bağlı <xref:System.Windows.Forms.BindingSource>, sırayla bağlı <xref:System.Data.DataSet> örneği.
 
-5.  Seçin **CustomerID** sütununda **veri kaynakları** penceresinde ve sonra görünen açılan oku tıklatın.
+5. Seçin **CustomerID** sütununda **veri kaynakları** penceresinde ve sonra görünen açılan oku tıklatın.
 
-6.  Tıklayın **NamedRange** sürükleyin ve açılan liste **CustomerID** sütun hücreye **B1**.
+6. Tıklayın **NamedRange** sürükleyin ve açılan liste **CustomerID** sütun hücreye **B1**.
 
-7.  Başka bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `customerIDNamedRange` hücresinde oluşturulan **B1**ve bağlı <xref:System.Windows.Forms.BindingSource>.
+7. Başka bir <xref:Microsoft.Office.Tools.Excel.NamedRange> adlı Denetim `customerIDNamedRange` hücresinde oluşturulan **B1**ve bağlı <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-four-buttons"></a>Dört düğme eklemek için
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640278"
 
 ### <a name="to-move-to-the-first-record"></a>İlk kayda taşımak için
 
-1.  İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button1` düğmesini ve ilk kayda taşımak için aşağıdaki kodu ekleyin:
+1. İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button1` düğmesini ve ilk kayda taşımak için aşağıdaki kodu ekleyin:
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>Önceki kayda taşımak için
 
-1.  İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button2` düğme ve bir konuma geri taşımak için aşağıdaki kodu ekleyin:
+1. İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button2` düğme ve bir konuma geri taşımak için aşağıdaki kodu ekleyin:
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>Sonraki kayda taşımak için
 
-1.  İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button3` düğmesini ve Button3 için aşağıdaki kodu ekleyin:
+1. İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button3` düğmesini ve Button3 için aşağıdaki kodu ekleyin:
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>Son kayda için
 
-1.  İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button4` düğmesini ve son kayda gitmek için aşağıdaki kodu ekleyin:
+1. İçin bir olay işleyicisi ekleme <xref:System.Windows.Forms.Control.Click> olayı `Button4` düğmesini ve son kayda gitmek için aşağıdaki kodu ekleyin:
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640278"
 
 ### <a name="to-test-your-workbook"></a>Çalışma kitabınızı test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
-2.  İlk kayıt hücrelerde göründüğünden emin olun **A1** ve **B1**.
+2. İlk kayıt hücrelerde göründüğünden emin olun **A1** ve **B1**.
 
-3.  Tıklayın **>** (`Button3`) düğmesine tıklayın ve sonraki kaydın hücresinde göründüğünden emin olun **A1** ve **B1**.
+3. Tıklayın **>** (`Button3`) düğmesine tıklayın ve sonraki kaydın hücresinde göründüğünden emin olun **A1** ve **B1**.
 
-4.  Kaydı beklendiği gibi değiştirir onaylamak için diğer kaydırma düğmelerine tıklayın.
+4. Kaydı beklendiği gibi değiştirir onaylamak için diğer kaydırma düğmelerine tıklayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu izlenecek yol, bir veritabanında bir alan için bir adlandırılmış aralık bağlama hakkındaki temel bilgileri gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:
 
--   Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Böylece çevrimdışı kullanılabilir verileri önbelleğe alın. Daha fazla bilgi için [nasıl yapılır: Çevrimdışı veya sunucuda kullanmak için verileri önbelleğe](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Bir tabloda birden fazla sütuna hücreler yerine bir alan bağlayın. Daha fazla bilgi için [izlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
+- Bir tabloda birden fazla sütuna hücreler yerine bir alan bağlayın. Daha fazla bilgi için [izlenecek yol: Belge düzeyi projede karmaşık veri bağlama](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
--   Kullanım bir <xref:System.Windows.Forms.BindingNavigator> denetimi kayıtlarda gezinin. Daha fazla bilgi için [nasıl yapılır: Windows Forms BindingNavigator denetimi ile verilerde gezinme](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Kullanım bir <xref:System.Windows.Forms.BindingNavigator> denetimi kayıtlarda gezinin. Daha fazla bilgi için [nasıl yapılır: Windows Forms BindingNavigator denetimi ile verilerde gezinme](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümlerinde denetimlere veri bağlama](../vsto/binding-data-to-controls-in-office-solutions.md)

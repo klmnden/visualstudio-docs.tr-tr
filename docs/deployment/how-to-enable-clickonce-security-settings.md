@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f89db12596754630eddaf78b9429eb2983625481
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068944"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Nasıl yapılır: ClickOnce güvenlik ayarlarını etkinleştirme
 ClickOnce uygulamaları için kod erişimi güvenliği, uygulama yayımlamak için etkinleştirilmesi gerekir. Yayımlama Sihirbazı'nı kullanarak bir uygulama yayımladığınızda, bu otomatik olarak gerçekleştirilir.
@@ -32,11 +32,11 @@ ClickOnce uygulamaları için kod erişimi güvenliği, uygulama yayımlamak iç
 
 ### <a name="to-enable-clickonce-security-settings"></a>ClickOnce güvenlik ayarlarını etkinleştirme
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **güvenlik** sekmesi.
+2. Tıklayın **güvenlik** sekmesi.
 
-3.  Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
+3. Seçin **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
 
      Ayrıca, uygulamanızın Güvenlik sayfasında artık güvenlik ayarlarını özelleştirebilirsiniz.
 
@@ -45,11 +45,11 @@ ClickOnce uygulamaları için kod erişimi güvenliği, uygulama yayımlamak iç
 
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce güvenlik ayarlarını devre dışı bırakmak için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **güvenlik** sekmesi.
+2. Tıklayın **güvenlik** sekmesi.
 
-3.  NET **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
+3. NET **ClickOnce güvenlik ayarlarını etkinleştirme** onay kutusu.
 
      Uygulama tam güven güvenlik ayarlarıyla çalışır; herhangi bir ayarı **güvenlik** sayfa yok sayılacak.
 

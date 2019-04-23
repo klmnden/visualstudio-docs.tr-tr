@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101866"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Araçları ve Araç Kutusunu Özelleştirme
 
@@ -38,15 +38,15 @@ Editor
 
 DSL Gezgini bu kısmında, şunları yapabilirsiniz:
 
--   Yeni sekmeler oluşturun. Sekmeleri bölüm başlıkları araç kutusunda tanımlayın.
+- Yeni sekmeler oluşturun. Sekmeleri bölüm başlıkları araç kutusunda tanımlayın.
 
--   Yeni Araçları oluşturun.
+- Yeni Araçları oluşturun.
 
--   Araçlar kopyalayıp yeniden açın.
+- Araçlar kopyalayıp yeniden açın.
 
--   Listede araçları yukarı veya aşağı taşıyın.
+- Listede araçları yukarı veya aşağı taşıyın.
 
--   Sekmeler ve Araçları'nı silin.
+- Sekmeler ve Araçları'nı silin.
 
 > [!IMPORTANT]
 > Eklemek veya DSL Gezgini içinde öğeleri yapıştırmak için Yeni düğümün dizinleriyle sağ tıklayın. Örneğin, bir aracı eklemek için sekmesinde sağ tıklayın ve **Araçları** düğümü. Sekme eklemek için sağ **Düzenleyicisi** düğümü.
@@ -59,36 +59,36 @@ DSL Gezgini bu kısmında, şunları yapabilirsiniz:
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Araç kutusuna bir aracı eklemek için
 
-1.  Bir şeklin sınıfını oluşturup bir etki alanı sınıfı için eşlenmiş sonra genellikle bir öğe aracı oluşturun.
+1. Bir şeklin sınıfını oluşturup bir etki alanı sınıfı için eşlenmiş sonra genellikle bir öğe aracı oluşturun.
 
      Bağlayıcı sınıfı oluşturup bir başvuru ilişkisi için eşlenmiş sonra genellikle bir bağlayıcı aracını oluşturun.
 
-2.  DSL Gezgini'nde **Düzenleyicisi** düğüm ve **araç kutusu sekmeleri** düğümü.
+2. DSL Gezgini'nde **Düzenleyicisi** düğüm ve **araç kutusu sekmeleri** düğümü.
 
      Araç kutusu sekmesi düğümüne sağ tıklayın ve ardından **yeni öğe aracı ekleme** veya **ekleme yeni bağlantı aracını**.
 
-3.  Ayarlama **araç kutusu simgesi** 16 x 16 bit eşleme başvurmak için özellik.
+3. Ayarlama **araç kutusu simgesi** 16 x 16 bit eşleme başvurmak için özellik.
 
      Rapordaki yeni simge tanımlamak istiyorsanız, Çözüm Gezgini içindeki bir bit eşlem dosyası oluştur **Dsl\Resources** klasör. Dosyada, aşağıdaki özellik değerlerini olmalıdır: **Derleme eylemi** = **içerik**; **Çıkış dizinine Kopyala** = **kopyalamayın**.
 
-4.  **Öğe araç için:** Ayarlama **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.
+4. **Öğe araç için:** Ayarlama **sınıfı** bir şekli için eşlenmiş bir somut bir alan sınıfına başvurmak için aracı özelliği.
 
      **Bağlayıcı aracı için:** Ayarlama **bağlantı Oluşturucu** aşağı açılan listede sunulur öğelerinden biri için aracının özelliği. Bir bağlayıcı için bir etki alanı ilişkisi eşlediğinizde bağlantı oluşturucular otomatik olarak oluşturulur. Yakın zamanda bağlayıcıyı oluşturduysanız, normalde ilişkili bağlantı oluşturucunun seçersiniz.
 
-5.  DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve bir örnek model dosyasını Visual Studio'nun deneysel örneğinde açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.
+5. DSL test etmek için F5'e ya da CTRL + F5 tuşuna basın ve bir örnek model dosyasını Visual Studio'nun deneysel örneğinde açın. Yeni aracı araç kutusunda görünmesi gerekir. Yeni bir öğe oluşturur doğrulamak için diyagram üzerine sürükleyin.
 
      Aracı görünmüyorsa, Deneysel bir Visual Studio durdurun. Windows içinde **Başlat** menüsü çalıştırma **Microsoft Visual Studio 2010 Deneysel örneğini sıfırlama**. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**. DSL yeniden sınayın.
 
 ## <a name="customizing"></a> Öğe araçlarını özelleştirme
  Varsayılan olarak, aracı belirtilen sınıf tek bir örneğini oluşturur, ancak bu iki yolla değişebilir:
 
--   Öğe birleştirme yönergeleri Bu sınıfın yeni örneklerini kabul etmelerine izin etkinleştirme ve bunları yeni bir öğe oluşturulduğunda ek bağlantılar oluşturmak etkinleştirmek diğer sınıflarında tanımlayın. Örneğin, kullanıcının başka bir öğenin üzerine yorum bırakın izin verin ve böylece ikisi arasında bir referans bağlantı oluşturun.
+- Öğe birleştirme yönergeleri Bu sınıfın yeni örneklerini kabul etmelerine izin etkinleştirme ve bunları yeni bir öğe oluşturulduğunda ek bağlantılar oluşturmak etkinleştirmek diğer sınıflarında tanımlayın. Örneğin, kullanıcının başka bir öğenin üzerine yorum bırakın izin verin ve böylece ikisi arasında bir referans bağlantı oluşturun.
 
      Kullanıcı yapıştırabilir veya sürüklediğinde ve bir öğeyi aşağı doğru ne olur, bu özelleştirmeler de etkiler.
 
      Daha fazla bilgi için [özelleştirme öğe oluşturma ve hareketini](../modeling/customizing-element-creation-and-movement.md).
 
--   Öğelerin gruplar oluşturabilmesi aracı özelleştirmek için kod yazın. Araç, geçersiz kılabilirsiniz ToolboxHelper.cs yöntemleri tarafından başlatılır. Daha fazla bilgi için [oluşturma grupları öğeleri aracından](#groups).
+- Öğelerin gruplar oluşturabilmesi aracı özelleştirmek için kod yazın. Araç, geçersiz kılabilirsiniz ToolboxHelper.cs yöntemleri tarafından başlatılır. Daha fazla bilgi için [oluşturma grupları öğeleri aracından](#groups).
 
 ## <a name="groups"></a> Bir aracından öğelerin grupları oluşturma
  Her öğe araç oluşturması gereken öğelerin bir prototip içeriyor. Varsayılan olarak, her öğe aracı, tek bir öğe oluşturur, ancak bir aracı ile ilgili nesneler bir grup oluşturmak mümkündür. Bunu yapmak için aracı ile başlatılamıyor. bir <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> , ilgili öğeleri içerir.
@@ -236,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Öğe Oluşturma ve Hareketini Özelleştirme](../modeling/customizing-element-creation-and-movement.md)
 - [Kopyalama Davranışını Özelleştirme](../modeling/customizing-copy-behavior.md)
-- [Nasıl yapılır: Bir Sürükle ve bırak işleyicisi ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Nasıl yapılır: Sürükle ve Bırak İşleyicisi Ekleme](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Program Kodunda Modeli Gezinme ve Güncelleştirme](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Bağlantı hattı diyagramları örneği DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076217"
 ---
 # <a name="remote-debugging"></a>Uzaktan Hata Ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Uzak Araçlar cihaz veya hata ayıklama veya, kaydetmek istediğiniz sunucu üze
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Uzak araçları indirme ve yükleme için
   
-1.  Cihaz veya sunucu, hata ayıklamak istediğiniz makine (yerine Visual Studio çalıştıran makinenin), uzak Araçlar'ın doğru sürümü alın.
+1. Cihaz veya sunucu, hata ayıklamak istediğiniz makine (yerine Visual Studio çalıştıran makinenin), uzak Araçlar'ın doğru sürümü alın.
 
     |Sürüm|Bağlantı|Notlar|
     |-|-|-|
@@ -47,14 +47,14 @@ Uzak Araçlar cihaz veya hata ayıklama veya, kaydetmek istediğiniz sunucu üze
     |Visual Studio 2013|[Uzak Araçlar](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2013 belgeleri sayfasında indirin|
     |Visual Studio 2012|[Uzak Araçlar](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Visual Studio 2012 belgeleri sayfasında indirin|
   
-2.  İndirme sayfasında, işletim sistemiyle (x 86, x64 veya sürüm ARM) eşleşen araçları sürümünü seçin ve uzak araçları indirmek.
+2. İndirme sayfasında, işletim sistemiyle (x 86, x64 veya sürüm ARM) eşleşen araçları sürümünü seçin ve uzak araçları indirmek.
   
     > [!IMPORTANT]
     >  Visual Studio sürümünüzle eşleşen uzak Araçlar'ın en son sürümünü yüklemeniz önerilir. Eşleşmeyen sürümler önerilmez.  
     >   
     >  Ayrıca, yüklemek istediğiniz işletim sistemi olarak aynı mimariye sahip uzak araçları yüklemeniz gerekir. Diğer bir deyişle, bir 64-bit işletim sistemi çalıştıran bir uzak bilgisayarda bir 32 bit uygulama hata ayıklamak istiyorsanız, uzak bilgisayarda Uzak Araçlar'ın 64 bit sürümü yüklemeniz gerekir.  
   
-3.  Yürütülebilir dosya indirme işlemini tamamladıktan sonra uygulamayı uzak bilgisayara yüklemek için yönergeleri izleyin. Bkz: [kurulum yönergeleri](#bkmk_setup)
+3. Yürütülebilir dosya indirme işlemini tamamladıktan sonra uygulamayı uzak bilgisayara yüklemek için yönergeleri izleyin. Bkz: [kurulum yönergeleri](#bkmk_setup)
 
 Uzaktan hata ayıklayıcı (msvsmon.exe) uzak bilgisayara kopyalayın ve çalıştırmak çalışırsanız unutmayın, **uzaktan hata ayıklayıcı Yapılandırma Sihirbazı'nı** (**rdbgwiz.exe**) yalnızca karşıdan yüklenir Özellikle, bir hizmet olarak çalıştırmak için uzaktan hata ayıklayıcı istediğiniz araçları ve daha sonra Yapılandırma Sihirbazı'nı kullanmayı gerekebilir. Daha fazla bilgi için [(isteğe bağlı) yapılandırma hizmet olarak uzaktan hata ayıklayıcı](#bkmk_configureService) aşağıda.
 
@@ -78,27 +78,27 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  Uzak bilgisayarın aşağıdaki işletim sistemlerinden birini çalıştırmalıdır:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 veya 8.1  
+- Windows 8 veya 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 veya Windows Server 2012 R2  
+- Windows Server 2012 veya Windows Server 2012 R2  
   
--   Windows Server 2008 hizmet paketi 2, Windows Server 2008 R2 hizmet paketi 1  
+- Windows Server 2008 hizmet paketi 2, Windows Server 2008 R2 hizmet paketi 1  
   
 ## <a name="supported-hardware-configurations"></a>Desteklenen donanım yapılandırmaları  
   
--   1,6 GHz veya daha hızlı işlemci  
+- 1,6 GHz veya daha hızlı işlemci  
   
--   1 GB RAM (sanal makinede çalıştırılıyorsa 1,5 GB)  
+- 1 GB RAM (sanal makinede çalıştırılıyorsa 1,5 GB)  
   
--   1 GB kullanılabilir sabit disk alanı  
+- 1 GB kullanılabilir sabit disk alanı  
   
--   5400 RPM sabit sürücü  
+- 5400 RPM sabit sürücü  
   
--   1024 x 768 veya daha yüksek görüntü çözünürlüğünde çalışan DirectX 9 uyumlu ekran kartı  
+- 1024 x 768 veya daha yüksek görüntü çözünürlüğünde çalışan DirectX 9 uyumlu ekran kartı  
   
 ## <a name="network-configuration"></a>Ağ yapılandırması  
  Uzak bilgisayar ve Visual Studio bilgisayarı bir ağ, çalışma grubu veya ev grubu bağlı desteklemeli veya doğrudan Ethernet kablosu ile bağlı. Internet üzerinden hata ayıklama desteklenmiyor.  
@@ -147,7 +147,7 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
    > [!WARNING]
   >  Uzak araçları Kimlik Doğrulaması Yok modunda çalıştırmayı seçebilirsiniz, fakat bu mod kesinlikle önerilmez. Bu modda çalıştırdığınızda, ağ güvenliği yoktur. Yalnızca ağ kötü amaçlı veya tehlikeli trafik karşı risk altında olduğunu eminseniz kimlik doğrulaması yok modu seçin.
 
-##  <a name="bkmk_configureService"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırma
+## <a name="bkmk_configureService"></a> (İsteğe bağlı) Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırma
  ASP.NET ve diğer sunucu ortamlarında hata ayıklama için uzaktan hata ayıklayıcı yönetici olarak çalıştırın veya gerekir, her zaman çalışır, isterseniz, uzaktan hata ayıklayıcıyı bir hizmet olarak çalıştırın.
   
  Uzaktan hata ayıklayıcıyı bir hizmet olarak yapılandırmak istiyorsanız, aşağıdaki adımları izleyin.  
@@ -282,16 +282,16 @@ Uzaktan hata ayıklayıcıyı bulabilirsiniz (**msvsmon.exe**) bir bilgisayarda 
   
  Daha fazla bilgi için lütfen uzak hata ayıklama yardıma bakın (basın **F1** uzaktan hata ayıklayıcı penceresinde veya tıklatın **Yardım / kullanım**). Daha fazla bilgi bulabilirsiniz [.NET uzaktan sembolü yükleniyor Visual Studio 2012 ve 2013 değişiklikleri](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
-##  <a name="bkmk_winstoreAzure"></a> Windows Store ve Azure uygulamalarında uzaktan hata ayıklama  
+## <a name="bkmk_winstoreAzure"></a> Windows Store ve Azure uygulamalarında uzaktan hata ayıklama  
  Windows Store apps ile uzaktan hata ayıklama hakkında daha fazla bilgi için bkz: [hata ayıklayın ve Visual Studio'dan uzak bir cihazdaki Windows Store uygulamalarında test](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Azure'da hata ayıklama hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:  
   
--   [Bir bulut hizmeti veya sanal makine Visual Studio'da hata ayıklama](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Bir bulut hizmeti veya sanal makine Visual Studio'da hata ayıklama](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [.NET arka ucu Visual Studio'da hata ayıklama](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [.NET arka ucu Visual Studio'da hata ayıklama](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Azure Web sitelerinde uzaktan hata ayıklama giriş ([bölüm 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. bölüm](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [bölüm 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Azure Web sitelerinde uzaktan hata ayıklama giriş ([bölüm 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [2. bölüm](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [bölüm 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094859"
 ---
 # <a name="events-in-office-projects"></a>Office Projelerindeki Olaylar
   Her Office proje şablonu, çeşitli olay işleyicileri otomatik olarak oluşturur. Belge düzeyi özelleştirmeleri için olay işleyicileri, VSTO eklentileri için olay işleyicileri biraz farklıdır.
@@ -52,34 +52,34 @@ ms.locfileid: "56627746"
 
  Bir belge düzeyi projesi oluşturduğunuzda, Visual Studio için olay işleyicileri oluşturur **başlangıç** oluşturulan kodda olay:
 
--   Microsoft Office Word projeleri için olay işleyicisi adlı `ThisDocument_Startup`.
+- Microsoft Office Word projeleri için olay işleyicisi adlı `ThisDocument_Startup`.
 
--   Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
+- Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown olayı
  **Kapatma** olayı her ana bilgisayar öğesi (belge veya çalışma sayfası) için oluşturulur, kodunuzu yüklendiği uygulama etki alanı olduğunda kaldırılmak üzere. Sınıfı, bunu çağırılacak çağrılması son şeydir.
 
  Bir belge düzeyi projesi oluşturduğunuzda, Visual Studio için olay işleyicileri oluşturur **kapatma** oluşturulan kodda olay:
 
--   Microsoft Office Word projeleri için olay işleyicisi adlı `ThisDocument_Shutdown`.
+- Microsoft Office Word projeleri için olay işleyicisi adlı `ThisDocument_Shutdown`.
 
--   Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
+- Microsoft Office Excel projelerinde olay işleyicileri aşağıdaki adlara sahiptir:
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 >  Program aracılığıyla denetimleri sırasında kaldırmayın **kapatma** belgenin olay işleyicisi. UI öğeleri artık kullanılabilir **kapatma** olayı oluşur. Denetimleri uygulama kapatılmadan önce kaldırmak isterseniz, kodunuzu başka bir olay işleyicisine aşağıdaki gibi ekleyin **BeforeClose** veya **BeforeSave**.
@@ -145,9 +145,9 @@ ms.locfileid: "56627746"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Kapatma olayı Outlook VSTO eklentileri
  <xref:Microsoft.Office.Tools.AddInBase.Shutdown> Yalnızca kullanıcı VSTO eklentisi Outlook'ta COM eklentileri iletişim kutusunu kullanarak devre dışı bıraktığında olayı oluşturulur. Outlook çıktığında çıkarılır değil. Outlook çıktığında, çalıştırılması gereken bir kodunuz varsa, aşağıdaki olaylardan biri ya da işler:
 
--   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Olayı <xref:Microsoft.Office.Interop.Outlook.Application> nesne.
+- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> Olayı <xref:Microsoft.Office.Interop.Outlook.Application> nesne.
 
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Olayı <xref:Microsoft.Office.Interop.Outlook.Explorer> nesne.
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> Olayı <xref:Microsoft.Office.Interop.Outlook.Explorer> nesne.
 
 > [!NOTE]
 >  Yükseltmek için Outlook zorlayabilirsiniz <xref:Microsoft.Office.Tools.AddInBase.Shutdown> kayıt defterini değiştirerek çıktığında olay. Yönetici bu ayarı döndürüyorsa, ancak herhangi için ekleme kodu `ThisAddIn_Shutdown` yöntemi artık Outlook çıkar olduğunda çalışır. Daha fazla bilgi için [kapatma Outlook 2010 için değişiklikleri](http://go.microsoft.com/fwlink/?LinkID=184614).

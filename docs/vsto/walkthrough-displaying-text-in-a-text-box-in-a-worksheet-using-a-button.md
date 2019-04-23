@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fcc837732a64aa14840ad4865fcf9a80ee7f209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f813c2f9affdfa6715655afba5954b664ead74ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110408"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>İzlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme
   Bu kılavuzda, Microsoft Office Excel çalışma sayfaları ve Excel projeleri Visual Studio'da Office geliştirme araçlarını kullanarak oluşturmak nasıl düğme ve metin kutusu kullanmanın temellerini gösterir. Sonuç tamamlanmış bir örnek görmek için Excel denetimleri örneğine bakın [Office geliştirme örnekleri ve izlenecek yollar](../vsto/office-development-samples-and-walkthroughs.md).
@@ -29,11 +29,11 @@ ms.locfileid: "56598160"
 
  Bu kılavuz boyunca, öğreneceksiniz nasıl yapılır:
 
--   Bir çalışma sayfasına denetimler ekleme.
+- Bir çalışma sayfasına denetimler ekleme.
 
--   Bir düğmeye tıklandığında bir metin kutusunda doldurun.
+- Bir düğmeye tıklandığında bir metin kutusunda doldurun.
 
--   Projenizi test edin.
+- Projenizi test edin.
 
 > [!NOTE]
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
@@ -41,16 +41,16 @@ ms.locfileid: "56598160"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Projeyi oluşturma
  Bu adımda, Visual Studio kullanarak bir Excel çalışma kitabı projesi oluşturur.
 
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
 
-1.  Adlı bir Excel çalışma kitabı projesi oluşturun **Excel Düğmem**. Emin olun **yeni belge oluşturma** seçilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Adlı bir Excel çalışma kitabı projesi oluşturun **Excel Düğmem**. Emin olun **yeni belge oluşturma** seçilir. Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **Excel Düğmem** için proje **Çözüm Gezgini**.
 
@@ -81,14 +81,14 @@ ms.locfileid: "56598160"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Düğme tıklandığında metin kutusuna yazmak için
 
-1.  İçinde **Çözüm Gezgini**, sağ **Sayfa1**ve ardından **kodu görüntüle** kısayol menüsünde.
+1. İçinde **Çözüm Gezgini**, sağ **Sayfa1**ve ardından **kodu görüntüle** kısayol menüsünde.
 
-2.  Aşağıdaki kodu ekleyin <xref:System.Windows.Forms.Control.Click> düğmesi olay işleyicisi:
+2. Aşağıdaki kodu ekleyin <xref:System.Windows.Forms.Control.Click> düğmesi olay işleyicisi:
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]
 
-3.  İçinde C#, bir olay işleyicisi eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> aşağıda gösterildiği gibi olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. İçinde C#, bir olay işleyicisi eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> aşağıda gösterildiği gibi olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
 
@@ -97,18 +97,18 @@ ms.locfileid: "56598160"
 
 ### <a name="to-test-your-workbook"></a>Çalışma kitabınızı test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
-2.  Düğmesine tıklayın.
+2. Düğmesine tıklayın.
 
-3.  Onaylayın **Merhaba Dünya!** metin kutusunda görüntülenir.
+3. Onaylayın **Merhaba Dünya!** metin kutusunda görüntülenir.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu izlenecek yol, düğme ve metin kutusu, Excel çalışma sayfalarında kullanmanın temellerini gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:
 
--   Projeyi dağıtma. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
+- Projeyi dağıtma. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
 
--   Biçimlendirme değiştirmek için onay kutularını kullanarak. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
+- Biçimlendirme değiştirmek için onay kutularını kullanarak. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Office belgelerine Windows Forms denetimleri ekleme](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

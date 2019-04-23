@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076530"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft'tan erişilebilirlik ürünleri ve hizmetleri
 
@@ -33,18 +33,18 @@ ms.locfileid: "56318634"
 
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki konular, özellikler, ürünler ve Microsoft Windows engelli kişiler için daha erişilebilir hale getiren hizmetleri hakkında bilgi sağlar:
 
--   [Windows erişilebilirlik özellikleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
+- [Windows erişilebilirlik özellikleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
 
--   [Alternatif biçimlerdeki belgeler](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
+- [Alternatif biçimlerdeki belgeler](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
 
--   [İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
+- [İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
 
--   [Daha fazla bilgi için](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
+- [Daha fazla bilgi için](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
 > Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerli olabilir. Bu ürünü birleşik Devletler'in dışında edindiyseniz, yazılım paketinizle birlikte gelen yan kuruluş bilgi kartını kullanabilir veya ziyaret [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi için bir Microsoft Destek Hizmetleri listesi telefon numaraları ve adresleri. Bu bölümde açıklanan ürün ve hizmet türlerinin bölgeniz olup olmadığını öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.
 
-##  <a name="windows"></a> Windows erişilebilirlik özellikleri
+## <a name="windows"></a> Windows erişilebilirlik özellikleri
 
  Windows işletim sistemi, yazma veya fare kullanma güçlüğü olan, görme engelli kişiler için kullanışlıdır veya görme engelli veya işitme engelli veya işitme çok sayıda yerleşik erişilebilirlik özelliğine sahiptir. Özellikler Kurulum sırasında yüklenir. Bu özellikler hakkında daha fazla bilgi için bkz. Windows Yardım ve [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi.
 
@@ -60,7 +60,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 
  Yardımcı teknoloji kullanıyorsanız, yazılım veya olası uyumluluk sorunlarına donanımınızı yükseltmeden önce yardımcı teknoloji satıcınızla iletişime geçin emin olun.
 
-##  <a name="altfortmats"></a> Alternatif biçimlerdeki belgeler
+## <a name="altfortmats"></a> Alternatif biçimlerdeki belgeler
 
 Zorluk veya yazdırılan malzemelerin varsa, belge için daha erişilebilir bir biçimde birçok Microsoft ürününde elde edebilirsiniz. Erişilebilir ürün belgelerinin dizinini görüntüleyebilirsiniz [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi.
 
@@ -72,7 +72,7 @@ Buna ek olarak, Learning Ally'dan ek Microsoft yayınları edinebilirsiniz. Lear
 
 Web adresleri değişebilir, bu nedenle Web sitesi veya burada bahsedilen sitelerine bağlanamayabilirsiniz.
 
-##  <a name="hearing"></a> İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri
+## <a name="hearing"></a> İşitme zorluğu yaşayan kişiler için Müşteri Hizmetleri
 
 İşitme engelliyseniz veya işitme varsa, Microsoft Ürün ve müşteri hizmetlerine tam erişim metin telefonu (TTY/TDD) hizmeti aracılığıyla kullanılabilir:
 
@@ -82,7 +82,7 @@ Web adresleri değişebilir, bu nedenle Web sitesi veya burada bahsedilen sitele
 
 Microsoft Destek Hizmetleri hizmetin kullanıldığı zaman fiyatları, hüküm ve koşullara tabi bağlıdır.
 
-##  <a name="moreinfo"></a> Daha fazla bilgi için
+## <a name="moreinfo"></a> Daha fazla bilgi için
 
 Nasıl erişilebilir teknolojinin engelli kişilerin yaşamlarını geliştirmeye yardımcı bilgisayarlar hakkında daha fazla bilgi için bkz. [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) Web sitesi.
 

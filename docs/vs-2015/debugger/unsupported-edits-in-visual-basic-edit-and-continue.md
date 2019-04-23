@@ -17,12 +17,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076947"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic Düzenle ve Devam Et'de Desteklenmeyen Düzenlemeler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,191 +31,191 @@ Düzenle ve kesme modunda programın yürütülmesini durdurur, kod için deği�
   
  Desteklenmeyen bir değişiklik yapmanız gerekirse, hata ayıklamayı durdurmak, değişiklikleri yapın ve yeni bir hata ayıklama oturumu başlatın.  
   
-###  <a name="BKMK_MethodandPropertyBodyEdits"></a> Yöntem ve özellik gövdesi düzenlemeleri  
+### <a name="BKMK_MethodandPropertyBodyEdits"></a> Yöntem ve özellik gövdesi düzenlemeleri  
  **Desteklenmeyen statik yerel değişkenler değişiklikleri**: Ekleme veya güncelleştirme yerel bir değişken veya statik bir yerel değişken durumunda kaldırma, bir derleme hatasına neden olur.  
   
  **Desteklenmeyen genel türlere değişiklikleri**: Genel yöntem kendisini veya genel yöntemin gövdesi değişiklikleri desteklenmez. Genel bir tür veya varolan genel yöntemlere yapılan çağrılar örneğinin eklenen, değiştirilen veya silinebilir.  
   
  **Desteklenmeyen diğer değişiklikler**  
   
--   Çağrı yığınındaki bir yöntemi çağırma deyiminin değiştiriliyor.  
+- Çağrı yığınındaki bir yöntemi çağırma deyiminin değiştiriliyor.  
   
--   Ekleme bir `Try...Catch` bloğu içinde yönerge işaretçisi sona erdiğinde `Catch` blok veya `Finally` blok.  
+- Ekleme bir `Try...Catch` bloğu içinde yönerge işaretçisi sona erdiğinde `Catch` blok veya `Finally` blok.  
   
--   Kaldırma bir `Try...Catch` yönerge işaretçisi olduğunda blok bir `Catch`blok veya `Finally` blok.  
+- Kaldırma bir `Try...Catch` yönerge işaretçisi olduğunda blok bir `Catch`blok veya `Finally` blok.  
   
--   Ekleme bir `Using` dosyadaki geçerli yönerge işaretçisini etrafında blok.  
+- Ekleme bir `Using` dosyadaki geçerli yönerge işaretçisini etrafında blok.  
   
--   Ekleme bir `SynchLock` dosyadaki geçerli yönerge işaretçisini etrafında blok.  
+- Ekleme bir `SynchLock` dosyadaki geçerli yönerge işaretçisini etrafında blok.  
   
-###  <a name="BKMK_AttributeEdits"></a> Özniteliği düzenleme  
+### <a name="BKMK_AttributeEdits"></a> Özniteliği düzenleme  
  Düzenle ve devam et, değiştirme öznitelikleri desteklemiyor. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Tanımlama, düzenleme veya silme öznitelik sınıfı.  
+- Tanımlama, düzenleme veya silme öznitelik sınıfı.  
   
--   Bir öznitelik ekleme.  
+- Bir öznitelik ekleme.  
   
--   Düzenleme veya varolan bir özniteliği kaldırılıyor.  
+- Düzenleme veya varolan bir özniteliği kaldırılıyor.  
   
-###  <a name="BKMK_ClassDeclarationEdits"></a> Sınıf bildirimi düzenleme  
+### <a name="BKMK_ClassDeclarationEdits"></a> Sınıf bildirimi düzenleme  
  Değişikliklerin çoğu sınıf bildirimleri için Düzenle ve devam et kesme modunda tarafından izin verilmiyor. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Yeniden adlandırma, silme veya mevcut bir sınıfın devralmayı değiştirme.  
+- Yeniden adlandırma, silme veya mevcut bir sınıfın devralmayı değiştirme.  
   
--   Yeni bir arabirimi uygulayan veya bir arabirim uygulaması kaldırılıyor.  
+- Yeni bir arabirimi uygulayan veya bir arabirim uygulaması kaldırılıyor.  
   
--   Bir sınıf üzerindeki değiştiriciler değiştiriliyor.  
+- Bir sınıf üzerindeki değiştiriciler değiştiriliyor.  
   
--   Ekleme, değiştirme veya kaldırma `ComClass` durumu.  
+- Ekleme, değiştirme veya kaldırma `ComClass` durumu.  
   
--   Herhangi bir genel sınıf bildirimine düzenleme.  
+- Herhangi bir genel sınıf bildirimine düzenleme.  
   
-###  <a name="BKMK_ClassMemberDeclarationEdits"></a> Sınıf üyesi bildirim düzenlemeler  
+### <a name="BKMK_ClassMemberDeclarationEdits"></a> Sınıf üyesi bildirim düzenlemeler  
  Üye bildirimleri değişiklikler, çoğu Düzen yasaktır ve çalışmaları devam edin. Örneğin, imza değiştirilemiyor veya, bir derleme hatasına neden olacaksa bir üye ve erişim düzeyine tamamen üyeler kaldırılamıyor. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Bir genel bildirmek varolan bir üye değişkeni veya üye değişkeni kapsayan bir blok içinde aynı ada sahip gölgeleme.  
+- Bir genel bildirmek varolan bir üye değişkeni veya üye değişkeni kapsayan bir blok içinde aynı ada sahip gölgeleme.  
   
--   Statik bir yerel değişken bir bloğu içinde yeni bir örneğini bildirerek gölgeleme.  
+- Statik bir yerel değişken bir bloğu içinde yeni bir örneğini bildirerek gölgeleme.  
   
--   Olay işleyicileri kaldırılıyor. Olay işleyici ekleme izin verilir.  
+- Olay işleyicileri kaldırılıyor. Olay işleyici ekleme izin verilir.  
   
--   Yeni aşırı yüklerken özellik veya yöntem, özellik veya yöntem olmadığı sürece ekleme `Private` ve etkin bir deyim adı örneği vardır.  
+- Yeni aşırı yüklerken özellik veya yöntem, özellik veya yöntem olmadığı sürece ekleme `Private` ve etkin bir deyim adı örneği vardır.  
   
--   Ekleme veya kaldırma `WithEvents` bir üye değişkeni yan tümcesi.  
+- Ekleme veya kaldırma `WithEvents` bir üye değişkeni yan tümcesi.  
   
--   Üye siliniyor.  
+- Üye siliniyor.  
   
--   Arabirimi uygulama durdurmak için bir özellik veya yöntem bildiriminde değiştiriliyor.  
+- Arabirimi uygulama durdurmak için bir özellik veya yöntem bildiriminde değiştiriliyor.  
   
--   Genel türler kullanan herhangi bir yöntemi düzenleme.  
+- Genel türler kullanan herhangi bir yöntemi düzenleme.  
   
--   Özel olmayan özellik veya yöntem imzası veya dönüş türünü değiştirme.  
+- Özel olmayan özellik veya yöntem imzası veya dönüş türünü değiştirme.  
   
--   Geçersiz kılma ya da bir temel sınıf üye gölgeleme.  
+- Geçersiz kılma ya da bir temel sınıf üye gölgeleme.  
   
--   İle işaretlenen herhangi bir sınıfın yeni alan ekleme `SequentialLayout` veya `ExplicitLayout`.  
+- İle işaretlenen herhangi bir sınıfın yeni alan ekleme `SequentialLayout` veya `ExplicitLayout`.  
   
--   Değiştirme `MustInherit` veya `NotOverridable` bir yöntemin durumunu.  
+- Değiştirme `MustInherit` veya `NotOverridable` bir yöntemin durumunu.  
   
--   Bir özellik veya yöntemin erişim değiştiricileri değiştiriliyor.  
+- Bir özellik veya yöntemin erişim değiştiricileri değiştiriliyor.  
   
--   Türe veya bir alanı salt okunur durumunu değiştirme.  
+- Türe veya bir alanı salt okunur durumunu değiştirme.  
   
--   Ortak alan değiştiriliyor.  
+- Ortak alan değiştiriliyor.  
   
-###  <a name="BKMK_CompilerOptionEdits"></a> Derleyici seçeneği düzenlemeleri  
+### <a name="BKMK_CompilerOptionEdits"></a> Derleyici seçeneği düzenlemeleri  
  Düzenle ve devam et kesme modunda kullanırken, değiştirme, ekleyemez veya aşağıdaki derleyici seçeneklerinin kaldırın:  
   
--   **Katı tanımlama seçeneği**  
+- **Katı tanımlama seçeneği**  
   
--   **Seçeneği açık**  
+- **Seçeneği açık**  
   
--   **Karşılaştırma seçeneği**  
+- **Karşılaştırma seçeneği**  
   
-###  <a name="BKMK_ConstantsEdits"></a> Sabitler düzenlemeler  
+### <a name="BKMK_ConstantsEdits"></a> Sabitler düzenlemeler  
  Düzenle ve devam et modundayken sabitleri değişiklikler çok sınırlıdır. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Ekleme veya sabit bir değişken güncelleştiriliyor.  
+- Ekleme veya sabit bir değişken güncelleştiriliyor.  
   
--   Türe veya bir sabit değerini değiştirme.  
+- Türe veya bir sabit değerini değiştirme.  
   
--   Bir sabit kaldırılıyor.  
+- Bir sabit kaldırılıyor.  
   
-###  <a name="BKMK_DelegateandEventDeclarationEdits"></a> Temsilci ve olay bildirimi düzenleme  
+### <a name="BKMK_DelegateandEventDeclarationEdits"></a> Temsilci ve olay bildirimi düzenleme  
  Temsilciler ve olaylar için bazı değişiklikler Düzenle ve devam et ile kesme modunda izin verilmez. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Değiştirme veya temsilci tanımı siliniyor.  
+- Değiştirme veya temsilci tanımı siliniyor.  
   
--   Bir olay siliniyor.  
+- Bir olay siliniyor.  
   
-###  <a name="BKMK_EnumerationEdits"></a> Sabit listesi düzenlemeler  
+### <a name="BKMK_EnumerationEdits"></a> Sabit listesi düzenlemeler  
  Sabit listeleri için değişiklikleri (`Enums`) Düzenle ve devam et ile kesme modunda izin verilmez. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Altındaki değiştirme türü bir `Enum`.  
+- Altındaki değiştirme türü bir `Enum`.  
   
--   Ekleyerek, değiştirerek veya kaldırarak bir `Enum` üyesi.  
+- Ekleyerek, değiştirerek veya kaldırarak bir `Enum` üyesi.  
   
--   Erişim değiştiricisi değiştirerek bir `Enum`.  
+- Erişim değiştiricisi değiştirerek bir `Enum`.  
   
-###  <a name="BKMK_ExternalDeclarationsEdits"></a> Dış bildirimler düzenlemeler  
+### <a name="BKMK_ExternalDeclarationsEdits"></a> Dış bildirimler düzenlemeler  
  Genel olarak, Düzenle ve devam et sırasında dış yöntemleri bildirimlerini değiştiremezsiniz. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Ekleme veya bir dış bildirimi kaldırılıyor.  
+- Ekleme veya bir dış bildirimi kaldırılıyor.  
   
--   İmza değiştirmeyi veya bir dış bildiriminin öznitelikleri hazırlama.  
+- İmza değiştirmeyi veya bir dış bildiriminin öznitelikleri hazırlama.  
   
-###  <a name="BKMK_ImportsEdits"></a> İçeri aktarmaları düzenleme  
+### <a name="BKMK_ImportsEdits"></a> İçeri aktarmaları düzenleme  
  Düzenle ve devam et izin vermiyor ekleyerek, değiştirerek veya kaldırarak `Imports` kesme modundayken deyimleri.  
   
-###  <a name="BKMK_InterfaceDefinitionEdits"></a> Arabirim tanımı düzenleme  
+### <a name="BKMK_InterfaceDefinitionEdits"></a> Arabirim tanımı düzenleme  
  Sık sık değişiklik arabirimleri uygulayan üyeleri için izin verilir ancak gerçek bir arabirim tanımları değişiklikleri genel olarak Düzenle ve devam et tarafından izin verilmez. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Ekleme, değiştirme veya arabirim üyeleri kaldırılıyor.  
+- Ekleme, değiştirme veya arabirim üyeleri kaldırılıyor.  
   
--   Varolan arabirimi siliniyor.  
+- Varolan arabirimi siliniyor.  
   
--   Bir arabirimin erişim değiştiricisi değiştiriliyor.  
+- Bir arabirimin erişim değiştiricisi değiştiriliyor.  
   
--   Arabirimi Devralma Hiyerarşisi değiştiriliyor.  
+- Arabirimi Devralma Hiyerarşisi değiştiriliyor.  
   
-###  <a name="BKMK_ModuleDeclarationEdits"></a> Modül bildirimi düzenleme  
+### <a name="BKMK_ModuleDeclarationEdits"></a> Modül bildirimi düzenleme  
  Modül bildirimlerinde yapılan değişikliklerin çoğu Düzenle ve devam et kesme modunda tarafından izin verilmiyor. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Yeni modül oluşturuluyor.  
+- Yeni modül oluşturuluyor.  
   
--   Yeniden adlandırma veya mevcut bir modül siliniyor.  
+- Yeniden adlandırma veya mevcut bir modül siliniyor.  
   
--   Bir modüle ait erişim değiştiricisinin değiştiriliyor.  
+- Bir modüle ait erişim değiştiricisinin değiştiriliyor.  
   
-###  <a name="BKMK_ModuleMemberDeclarationEdits"></a> Modül üye bildirimi düzenleme  
+### <a name="BKMK_ModuleMemberDeclarationEdits"></a> Modül üye bildirimi düzenleme  
  Düzenle ve devam et kullanarak, özellikleri, yöntemleri ve kesme modundayken alanları gibi modülü üyeleri değişiklikleri çeşitli yapabilirsiniz. Ancak, bazı değişiklikler desteklenmez. En önemlisi, Düzenle ve devam et, ekleme, silme veya türü veya herhangi bir üye imzası değiştirmeyi desteklemez.  
   
  Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Etkin bir deyim adı örneği olmadığı sürece, yeni bir üye ekleniyor.  
+- Etkin bir deyim adı örneği olmadığı sürece, yeni bir üye ekleniyor.  
   
--   Bir özellik veya yöntem kaldırılıyor.  
+- Bir özellik veya yöntem kaldırılıyor.  
   
--   Bir özellik veya yöntem imzasının değiştirilmesi.  
+- Bir özellik veya yöntem imzasının değiştirilmesi.  
   
--   Ekleme, yeniden adlandırma, taşıma veya bir alan siliniyor.  
+- Ekleme, yeniden adlandırma, taşıma veya bir alan siliniyor.  
   
--   Genel türler kullanan herhangi bir yöntemi düzenleme.  
+- Genel türler kullanan herhangi bir yöntemi düzenleme.  
   
--   Bir özellik veya yöntemin erişim değiştiricileri değiştirme, örneğin, değiştirme `Public` için `Private`.  
+- Bir özellik veya yöntemin erişim değiştiricileri değiştirme, örneğin, değiştirme `Public` için `Private`.  
   
--   Silme veya varolan bir alanın türünü değiştirme.  
+- Silme veya varolan bir alanın türünü değiştirme.  
   
-###  <a name="BKMK_NestedTypeDeclarationEdits"></a> İç içe geçmiş tür bildirimi düzenleme  
+### <a name="BKMK_NestedTypeDeclarationEdits"></a> İç içe geçmiş tür bildirimi düzenleme  
  Düzenle ve devam et desteklemiyor iç içe türü başka bir ad alanı veya tür taşıma.  
   
-###  <a name="BKMK_StructureDeclarationEdits"></a> Yapı bildirimi düzenleme  
+### <a name="BKMK_StructureDeclarationEdits"></a> Yapı bildirimi düzenleme  
  Yapı bildirimleri yapılan değişikliklerin çoğu Düzenle ve devam ederken'tarafından izin verilmeyen **sonu** modu. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Yeniden adlandırma veya varolan bir yapısını siliniyor.  
+- Yeniden adlandırma veya varolan bir yapısını siliniyor.  
   
--   Yeni bir arabirimi uygulayan veya bir arabirim uygulaması kaldırılıyor.  
+- Yeni bir arabirimi uygulayan veya bir arabirim uygulaması kaldırılıyor.  
   
--   Bir yapı için erişim değiştiricisini değiştiriliyor.  
+- Bir yapı için erişim değiştiricisini değiştiriliyor.  
   
-###  <a name="BKMK_StructureMemberDeclarationEdits"></a> Yapı üyesi bildirimi düzenleme  
+### <a name="BKMK_StructureMemberDeclarationEdits"></a> Yapı üyesi bildirimi düzenleme  
  Düzenle ve devam et kullanarak yapı üyeleri (özellikleri, yöntemleri ve alanları) sırasında kesme modunda değişiklikleri çeşitli yapabilirsiniz. Bazı değişiklikler ancak desteklenmez, özellikle bildirimi etkileyen değişiklikler yapı üyelerini. Özellikle, Düzenle ve devam et aşağıdaki değişiklikleri desteklemez:  
   
--   Bir özellik veya yöntem kaldırılıyor.  
+- Bir özellik veya yöntem kaldırılıyor.  
   
--   Ekleme veya bir alan kaldırma.  
+- Ekleme veya bir alan kaldırma.  
   
--   Bir özellik veya yöntem imzasının değiştirilmesi.  
+- Bir özellik veya yöntem imzasının değiştirilmesi.  
   
--   Genel türler kullanan herhangi bir yöntemi düzenleme.  
+- Genel türler kullanan herhangi bir yöntemi düzenleme.  
   
--   Bir özellik veya yöntem bildiriminde bir arabirimi uygulayan olup olmadığını değiştiriliyor.  
+- Bir özellik veya yöntem bildiriminde bir arabirimi uygulayan olup olmadığını değiştiriliyor.  
   
--   Bir özellik veya yöntemin erişim değiştiricileri değiştirme (örneğin, değiştirme `Public` için **özel**).  
+- Bir özellik veya yöntemin erişim değiştiricileri değiştirme (örneğin, değiştirme `Public` için **özel**).  
   
--   Bir alanı kaldırılıyor.  
+- Bir alanı kaldırılıyor.  
   
--   Bir alanın türünü değiştirme.  
+- Bir alanın türünü değiştirme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Düzen ile kesme modunda düzenlemeleri uygulayın ve devam et](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   

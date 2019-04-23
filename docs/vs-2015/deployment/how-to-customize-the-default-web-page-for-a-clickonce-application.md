@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107066"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce Uygulaması için Varsayılan Web Sayfasını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik
   
 ### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme  
   
-1.  Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+1. Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-2.  Visual Web Designer veya başka bir HTML düzenleyicisi, Web sunucusunda Publish.htm dosyasını açın.  
+2. Visual Web Designer veya başka bir HTML düzenleyicisi, Web sunucusunda Publish.htm dosyasını açın.  
   
-3.  İstediğiniz gibi sayfayı özelleştirmek ve kaydedin.  
+3. İstediğiniz gibi sayfayı özelleştirmek ve kaydedin.  
   
-4.  İsteğe bağlı. Visual Studio özelleştirilmiş Yayımla Web sayfanızın üzerine yazmasını engellemek için işareti kaldırın **sonra dağıtım web sayfasını otomatik olarak üretmek her yayımlama** Yayımlama Seçenekleri iletişim kutusundaki.  
+4. İsteğe bağlı. Visual Studio özelleştirilmiş Yayımla Web sayfanızın üzerine yazmasını engellemek için işareti kaldırın **sonra dağıtım web sayfasını otomatik olarak üretmek her yayımlama** Yayımlama Seçenekleri iletişim kutusundaki.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

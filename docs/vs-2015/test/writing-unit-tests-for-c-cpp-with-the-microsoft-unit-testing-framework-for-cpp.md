@@ -8,14 +8,14 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6600621c195994bf5becec9cae4f77340008516
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109419"
 ---
-# <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ için Microsoft Birim Testi Çerçevesi ile C/C++ için Birim Testleri Yazma
+# <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>C++ için Microsoft Birim Test Çerçevesi ile C/C++ için Birim Testleri Yazma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri oluşturabilirsiniz. Yönetilmeyen kod, bazen yerel kod da adlandırılır.  
@@ -24,23 +24,23 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
 ### <a name="to-write-unit-tests-for-an-unmanaged-code-dll"></a>Yönetilmeyen bir kodu DLL için birim testleri yazma  
   
-1.  Kullanım **yerel Test projesi** testleriniz için ayrı bir Visual Studio projesi oluşturmak üzere şablonu.  
+1. Kullanım **yerel Test projesi** testleriniz için ayrı bir Visual Studio projesi oluşturmak üzere şablonu.  
   
      Proje bazı örnek test kodunu içerir.  
   
-2.  DLL test projesi için erişilebilir hale getirir:  
+2. DLL test projesi için erişilebilir hale getirir:  
   
-    -   `#include` bir `.h` DLL'nin harici olarak erişilebilen işlevlerin bildirimleri içeren dosya.  
+    - `#include` bir `.h` DLL'nin harici olarak erişilebilen işlevlerin bildirimleri içeren dosya.  
   
          `.h` Dosya, işlev bildirimi ile işaretlenen içermelidir `_declspec(dllimport)`. Alternatif olarak, yöntemlerini DEF dosyası kullanarak dışa aktarabilirsiniz. Daha fazla bilgi için [içeri ve dışarı aktarma](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Birim testlerinizin test edilen DLL öğesinden dışarı aktarılan işlevleri erişebilirsiniz.  
   
-    -   DLL projesi test projesinin başvuruları ekleyin:  
+    - DLL projesi test projesinin başvuruları ekleyin:  
   
          İçinde **özellikleri** test projesinde, genişletme **ortak özellikler**, **çerçeve ve başvurular**ve **Başvuru Ekle**.  
   
-3.  Test projesinde, test sınıflarında oluşturun ve aşağıdaki şekilde TEST makroları ve onay sınıfı kullanarak test yöntemleri:  
+3. Test projesinde, test sınıflarında oluşturun ve aşağıdaki şekilde TEST makroları ve onay sınıfı kullanarak test yöntemleri:  
   
     ```cpp  
     #include "stdafx.h"  
@@ -58,52 +58,52 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     }  
     ```  
   
-    -   `Assert` bir test sonucunu doğrulamak için kullanabileceğiniz çeşitli statik işlevler içerir.  
+    - `Assert` bir test sonucunu doğrulamak için kullanabileceğiniz çeşitli statik işlevler içerir.  
   
-    -   `LINE_INFO()` Parametresi isteğe bağlıdır. Durumlarda hiç PDB dosyası olduğunda, hata konumunu belirlemek test Çalıştırıcısı izin verir.  
+    - `LINE_INFO()` Parametresi isteğe bağlıdır. Durumlarda hiç PDB dosyası olduğunda, hata konumunu belirlemek test Çalıştırıcısı izin verir.  
   
-    -   Kurulum ve temizleme test yöntemleri de yazabilirsiniz. Daha fazla bilgi için tanımını açın `TEST_METHOD` makro ve CppUnitTest.h açıklamaları okuma  
+    - Kurulum ve temizleme test yöntemleri de yazabilirsiniz. Daha fazla bilgi için tanımını açın `TEST_METHOD` makro ve CppUnitTest.h açıklamaları okuma  
   
-    -   Test sınıflarında iç içe olamaz.  
+    - Test sınıflarında iç içe olamaz.  
   
-4.  Test Gezgini testleri çalıştırmak için kullanın:  
+4. Test Gezgini testleri çalıştırmak için kullanın:  
   
-    1.  Üzerinde **görünümü** menüsünde seçin **diğer Windows**, **Test Gezgini**.  
+    1. Üzerinde **görünümü** menüsünde seçin **diğer Windows**, **Test Gezgini**.  
   
-    2.  Visual Studio çözümü oluşturun.  
+    2. Visual Studio çözümü oluşturun.  
   
-    3.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+    3. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
-    4.  Herhangi bir testi Test Gezgini'nde daha ayrıntılı incelemek için:  
+    4. Herhangi bir testi Test Gezgini'nde daha ayrıntılı incelemek için:  
   
-        1.  Bir hata iletisi ve yığın izlemesi gibi daha fazla ayrıntı görmek için test adı seçin.  
+        1. Bir hata iletisi ve yığın izlemesi gibi daha fazla ayrıntı görmek için test adı seçin.  
   
-        2.  Test adı, test kodu veya hata konumuna gitmek için (örneğin çift tıklayarak) açın.  
+        2. Test adı, test kodu veya hata konumuna gitmek için (örneğin çift tıklayarak) açın.  
   
-        3.  Bir test için kısayol menüsünde **hata ayıklama, seçili Test** hata ayıklayıcıda testi çalıştırmak için.  
+        3. Bir test için kısayol menüsünde **hata ayıklama, seçili Test** hata ayıklayıcıda testi çalıştırmak için.  
   
-##  <a name="walkthrough"></a> İzlenecek yol: Test Gezgini ile yönetilmeyen DLL geliştirme  
+## <a name="walkthrough"></a> İzlenecek yol: Test Gezgini ile yönetilmeyen DLL geliştirme  
  Kendi DLL geliştirmek için bu kılavuzda uyarlayabilirsiniz. Asıl adımlar aşağıdaki gibidir:  
   
-1.  [Yerel Test projesi oluşturma](#unitTestProject). Testler, geliştirmekte olduğunuz DLL ayrı bir projeden de oluşturulur.  
+1. [Yerel Test projesi oluşturma](#unitTestProject). Testler, geliştirmekte olduğunuz DLL ayrı bir projeden de oluşturulur.  
   
-2.  [Bir DLL projesi oluşturma](#createDllProject). Bu izlenecek yol, yeni bir DLL oluşturur, ancak mevcut bir DLL sınama yordamını benzer.  
+2. [Bir DLL projesi oluşturma](#createDllProject). Bu izlenecek yol, yeni bir DLL oluşturur, ancak mevcut bir DLL sınama yordamını benzer.  
   
-3.  [DLL işlevleri testler tarafından görülebilmesi](#coupleProjects).  
+3. [DLL işlevleri testler tarafından görülebilmesi](#coupleProjects).  
   
-4.  [Yinelemeli olarak testleri genişletme](#iterate). Kod geliştirme testleri tarafından kılavuzluk edilir, bir "kırmızı-yeşil-düzenleme" döngüsünde öneririz.  
+4. [Yinelemeli olarak testleri genişletme](#iterate). Kod geliştirme testleri tarafından kılavuzluk edilir, bir "kırmızı-yeşil-düzenleme" döngüsünde öneririz.  
   
-5.  [Başarısız olan Testlerde Hata Ayıkla](#debug). Hata ayıklama modunda testleri çalıştırabilirsiniz.  
+5. [Başarısız olan Testlerde Hata Ayıkla](#debug). Hata ayıklama modunda testleri çalıştırabilirsiniz.  
   
-6.  [Testleri değişmeden tutarken yeniden düzenleme](#refactor). Yeniden düzenleme kod yapısını dış davranışını değiştirmeden geliştirme anlamına gelir. Performans, genişletilebilirlik ve kodun okunabilirliğini geliştirmek için bunu yapabilirsiniz. Davranış değiştirilmemesi niyetini olduğu için kodu yeniden düzenleme değişiklik yapma sırasında testleri değiştirmeyin. Testleri sırasında yeniden düzenleme, hata ekleme sağlanmasına yardımcı olur. Bu nedenle bu tür testler yoktu, daha çok daha fazla güvenle değişiklik yapabilirsiniz.  
+6. [Testleri değişmeden tutarken yeniden düzenleme](#refactor). Yeniden düzenleme kod yapısını dış davranışını değiştirmeden geliştirme anlamına gelir. Performans, genişletilebilirlik ve kodun okunabilirliğini geliştirmek için bunu yapabilirsiniz. Davranış değiştirilmemesi niyetini olduğu için kodu yeniden düzenleme değişiklik yapma sırasında testleri değiştirmeyin. Testleri sırasında yeniden düzenleme, hata ekleme sağlanmasına yardımcı olur. Bu nedenle bu tür testler yoktu, daha çok daha fazla güvenle değişiklik yapabilirsiniz.  
   
-7.  [Kapsamı denetleme](https://msdn.microsoft.com/library/fc8hec9e.aspx). Birim testleri, kodunuzun daha fazla çalışma daha yararlı olur. Kodunuzun hangi parçalarının testler tarafından kullanılmış olan bulabilir.  
+7. [Kapsamı denetleme](https://msdn.microsoft.com/library/fc8hec9e.aspx). Birim testleri, kodunuzun daha fazla çalışma daha yararlı olur. Kodunuzun hangi parçalarının testler tarafından kullanılmış olan bulabilir.  
   
-8.  [Dış kaynaklara birimlerinden yalıtmak](https://msdn.microsoft.com/library/hh549174.aspx). Genellikle, bir DLL, diğer DLL'leri, veritabanları ya da uzak alt sistemleri gibi geliştiriyorsunuz sisteminin diğer bileşenlere bağlıdır. Her birim bağımlılıklarını yalıtımdan test kullanışlıdır. Dış bileşenlerin yavaş çalıştırmak testlerini yapabilirsiniz. Geliştirme sırasında diğer bileşenleri eksik olabilir.  
+8. [Dış kaynaklara birimlerinden yalıtmak](https://msdn.microsoft.com/library/hh549174.aspx). Genellikle, bir DLL, diğer DLL'leri, veritabanları ya da uzak alt sistemleri gibi geliştiriyorsunuz sisteminin diğer bileşenlere bağlıdır. Her birim bağımlılıklarını yalıtımdan test kullanışlıdır. Dış bileşenlerin yavaş çalıştırmak testlerini yapabilirsiniz. Geliştirme sırasında diğer bileşenleri eksik olabilir.  
   
-###  <a name="unitTestProject"></a> Yerel birim testi projesi oluşturma  
+### <a name="unitTestProject"></a> Yerel birim testi projesi oluşturma  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
      İletişim kutusunda, **yüklü**, **şablonları**, **Visual C++**, **Test**.  
   
@@ -113,23 +113,23 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
      ![Bir C oluşturma&#43; &#43; birim testi projesi](../test/media/utecpp01.png "UteCpp01")  
   
-2.  Yeni projede, inceleme **unittest1.cpp**  
+2. Yeni projede, inceleme **unittest1.cpp**  
   
      ![Test projesi içeren TEST&#95;sınıfı ve TEST&#95;yöntemi](../test/media/utecpp2.png "UteCpp2")  
   
      Şunlara dikkat edin:  
   
-    -   Her bir testi kullanılarak tanımlanmış `TEST_METHOD(YourTestName){...}`.  
+    - Her bir testi kullanılarak tanımlanmış `TEST_METHOD(YourTestName){...}`.  
   
          Geleneksel işlev imzası yazmanız gerekmez. İmza TEST_METHOD makro tarafından oluşturulur. Makro, void döndüren bir örnek işlevi oluşturur. Ayrıca, test yöntemi hakkında bilgi döndüren statik bir işlev oluşturur. Test Gezgini, yöntem bulmak bu bilgileri sağlar.  
   
-    -   Test yöntemleri, sınıflara kullanarak gruplanır `TEST_CLASS(YourClassName){...}`.  
+    - Test yöntemleri, sınıflara kullanarak gruplanır `TEST_CLASS(YourClassName){...}`.  
   
          Testler çalıştırıldığında, her test sınıfının bir örneği oluşturulur. Test yöntemlerini belirtilmemiş sırayla çağrılır. Önce ve sonra her bir modül, sınıf veya yöntemi çağıran özel yöntemi tanımlayabilirsiniz.  
   
-3.  Testleri Test Gezgini'nde çalıştırma doğrulayın:  
+3. Testleri Test Gezgini'nde çalıştırma doğrulayın:  
   
-    1.  Bazı test kodu ekleyin:  
+    1. Bazı test kodu ekleyin:  
   
         ```cpp  
         TEST_METHOD(TestMethod1)  
@@ -140,7 +140,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
          Dikkat `Assert` sınıfı yöntemleri test sonuçlarında doğrulamak için kullanabileceğiniz birkaç statik yöntemler sağlar.  
   
-    2.  Üzerinde **Test** menüsünde seçin **çalıştırma** , **tüm testleri**.  
+    2. Üzerinde **Test** menüsünde seçin **çalıştırma** , **tüm testleri**.  
   
          Test derlenir ve çalışır.  
   
@@ -150,27 +150,27 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
          ![Birim Test Gezgini ile bir geçen test](../test/media/utecpp04.png "UteCpp04")  
   
-###  <a name="createDllProject"></a> Yönetilmeyen DLL projesi oluşturma  
+### <a name="createDllProject"></a> Yönetilmeyen DLL projesi oluşturma  
   
-1.  Oluşturma bir **Visual C++** kullanarak proje **Win32 projesi** şablonu.  
+1. Oluşturma bir **Visual C++** kullanarak proje **Win32 projesi** şablonu.  
   
      Bu izlenecek yolda, proje adı `RootFinder`.  
   
      ![Bir C oluşturma&#43; &#43; Win32 projesi](../test/media/utecpp05.png "UteCpp05")  
   
-2.  Seçin **DLL** ve **sembolleri dışarı aktarma** Win32 Uygulama Sihirbazı'nda.  
+2. Seçin **DLL** ve **sembolleri dışarı aktarma** Win32 Uygulama Sihirbazı'nda.  
   
      **Sembolleri dışa aktar** seçeneği, dışa aktarılan bir yöntemi bildirmek için kullanabileceğiniz uygun bir makro oluşturur.  
   
      ![C&#43; &#43; DLL ve sembolleri dışarı aktarmak için Proje Sihirbazı'nı ayarlama](../test/media/utecpp06.png "UteCpp06")  
   
-3.  Asıl .h dosyasındaki dışa aktarılan bir işlevin bildirin:  
+3. Asıl .h dosyasındaki dışa aktarılan bir işlevin bildirin:  
   
      ![Yeni DLL kod projesi ve .h dosyası API makrolarla](../test/media/utecpp07.png "UteCpp07")  
   
      Bildirimci `__declspec(dllexport)` DLL dışında görünür olmasını ortak ve korunan üyeleri sınıf neden olur. Daha fazla bilgi için [C++ sınıflarında dllimport ve dllexport kullanma](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
-4.  Asıl .cpp dosyasında en az bir işlev gövdesi ekleyin:  
+4. Asıl .cpp dosyasında en az bir işlev gövdesi ekleyin:  
   
     ```cpp  
     // Find the square root of a number.  
@@ -180,15 +180,15 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     }  
     ```  
   
-###  <a name="coupleProjects"></a> Birkaç DLL projesi için test projesi  
+### <a name="coupleProjects"></a> Birkaç DLL projesi için test projesi  
   
 1. DLL projesi için test projesinin proje başvurularını ekleyin:  
   
-   1.  Test proje özelliklerini açın ve seçin **ortak özellikler**, **çerçeve ve başvurular**.  
+   1. Test proje özelliklerini açın ve seçin **ortak özellikler**, **çerçeve ve başvurular**.  
   
         ![C&#43; &#43; proje özellikleri &#45; çerçeve ve başvurular](../test/media/utecpp08.png "UteCpp08")  
   
-   2.  Seçin **Yeni Başvuru Ekle**.  
+   2. Seçin **Yeni Başvuru Ekle**.  
   
         İçinde **Başvuru Ekle** iletişim kutusunda, DLL projesi seçip **Ekle**.  
   
@@ -230,9 +230,9 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
    Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
   
-###  <a name="iterate"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
+### <a name="iterate"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
   
-1.  Yeni bir test ekleyin:  
+1. Yeni bir test ekleyin:  
   
     ```cpp  
     TEST_METHOD(RangeTest)  
@@ -251,7 +251,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     >   
     >  Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.  
   
-2.  Çözümü derleyin ve ardından Test Gezgini'nde **tümünü Çalıştır**.  
+2. Çözümü derleyin ve ardından Test Gezgini'nde **tümünü Çalıştır**.  
   
      Yeni test başarısız olur.  
   
@@ -260,7 +260,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     > [!TIP]
     >  Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
   
-3.  Yeni test geçer, test edilen kod geliştirir:  
+3. Yeni test geçer, test edilen kod geliştirir:  
   
     ```cpp  
     #include <math.h>  
@@ -279,7 +279,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     }  
     ```  
   
-4.  Çözümü derleyin ve Test Gezgini'nde seçin **tümünü Çalıştır**.  
+4. Çözümü derleyin ve Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      Her iki testler başarılı.  
   
@@ -288,9 +288,9 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     > [!TIP]
     >  Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
   
-###  <a name="debug"></a> Başarısız bir test hatalarını ayıklama  
+### <a name="debug"></a> Başarısız bir test hatalarını ayıklama  
   
-1.  Başka bir test ekleyin:  
+1. Başka bir test ekleyin:  
   
     ```cpp  
   
@@ -324,23 +324,23 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
     }  
     ```  
   
-2.  Çözümü derleyin ve seçin **tümünü Çalıştır**.  
+2. Çözümü derleyin ve seçin **tümünü Çalıştır**.  
   
-3.  Başarısız test açın (veya çift).  
+3. Başarısız test açın (veya çift).  
   
      Onaylama başarısız vurgulanır. Hata iletisi, Test Gezgini ayrıntı bölmesinde görünür.  
   
      ![Başarısız NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-4.  Testin neden başarısız görmek için işlev adım:  
+4. Testin neden başarısız görmek için işlev adım:  
   
-    1.  SquareRoot işlevin başında bir kesme noktası ayarlayın.  
+    1. SquareRoot işlevin başında bir kesme noktası ayarlayın.  
   
-    2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
+    2. Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
   
          Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.  
   
-5.  Geliştirmekte olduğunuz işlev kodu ekleyin:  
+5. Geliştirmekte olduğunuz işlev kodu ekleyin:  
   
     ```cpp  
   
@@ -356,16 +356,16 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
     ```  
   
-6.  Artık tüm sınamaları geçmesi.  
+6. Artık tüm sınamaları geçmesi.  
   
      ![All tests pass](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
 >  Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
   
-###  <a name="refactor"></a> Testleri değiştirmeden kodu yeniden düzenleme  
+### <a name="refactor"></a> Testleri değiştirmeden kodu yeniden düzenleme  
   
-1.  SquareRoot işlevi merkezi hesaplamaya kolaylaştırma:  
+1. SquareRoot işlevi merkezi hesaplamaya kolaylaştırma:  
   
     ```  
     // old code:  
@@ -375,7 +375,7 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
     ```  
   
-2.  Çözümü derleyin ve seçin **tümünü Çalıştır**, size bir hata oluşturmadığından emin emin olmak için.  
+2. Çözümü derleyin ve seçin **tümünü Çalıştır**, size bir hata oluşturmadığından emin emin olmak için.  
   
     > [!TIP]
     >  İyi bir dizi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  
@@ -384,11 +384,11 @@ Visual Studio'da C++ ile yazılmış yönetilmeyen kod için birim testleri olu�
   
 ## <a name="next-steps"></a>Sonraki adımlar  
   
--   **Yalıtım.** Çoğu DLL'leri, veritabanları ve diğer DLL'leri gibi başka alt sistemlerin bağlıdır. Bu diğer bileşenler genellikle paralel olarak geliştirilir. Birim testinin diğer bileşenleri henüz kullanılabilir değildir; ancak gerçekleştirilmesine izin vermek için sahte yerine olması veya  
+- **Yalıtım.** Çoğu DLL'leri, veritabanları ve diğer DLL'leri gibi başka alt sistemlerin bağlıdır. Bu diğer bileşenler genellikle paralel olarak geliştirilir. Birim testinin diğer bileşenleri henüz kullanılabilir değildir; ancak gerçekleştirilmesine izin vermek için sahte yerine olması veya  
   
--   **Yapı doğrulama testleri.** Belirlenen aralıklarda takımınızın yapı sunucusunda gerçekleştirilen testler olabilir. Bu, birkaç takım üyelerinin iş tümleştirildiğinde hatanın değil sağlar.  
+- **Yapı doğrulama testleri.** Belirlenen aralıklarda takımınızın yapı sunucusunda gerçekleştirilen testler olabilir. Bu, birkaç takım üyelerinin iş tümleştirildiğinde hatanın değil sağlar.  
   
--   **İade etme sınar.** Bazı testler her ekip üyesi, kod kaynak denetimine iade etmeden önce gerçekleştirilen zorunlu. Genellikle bu yapı doğrulama testlerini eksiksiz bir alt kümesidir.  
+- **İade etme sınar.** Bazı testler her ekip üyesi, kod kaynak denetimine iade etmeden önce gerçekleştirilen zorunlu. Genellikle bu yapı doğrulama testlerini eksiksiz bir alt kümesidir.  
   
      En az bir kod kapsamı düzeyini zorunlu kılabilir.  
   

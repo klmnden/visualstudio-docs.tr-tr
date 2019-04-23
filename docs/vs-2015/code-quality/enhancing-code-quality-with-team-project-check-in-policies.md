@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103374"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Takım Projesi İade İlkeleriyle Kod Kalitesini Arttırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Team Foundation sürüm denetimi (TFVC) kullandığınızda, takım projeleriniz
   
  Bu takım projesi iade ilkeleri belirtebilirsiniz:  
   
--   **Yapılar**: Bir derleme sırasında oluşturulan yapı aralarının bir yeni iadeden önce düzeltilmesi gereken gerektirir.  
+- **Yapılar**: Bir derleme sırasında oluşturulan yapı aralarının bir yeni iadeden önce düzeltilmesi gereken gerektirir.  
   
--   **Değişiklik kümesi açıklamalarını**: Kullanıcılar değişiklikler iade edilirken açıklama sağlamanızı gerektirir.  
+- **Değişiklik kümesi açıklamalarını**: Kullanıcılar değişiklikler iade edilirken açıklama sağlamanızı gerektirir.  
   
--   **Kod Analizi**: Kod Analizi iade önce çalışmasını gerektirir.  
+- **Kod Analizi**: Kod Analizi iade önce çalışmasını gerektirir.  
   
--   **İş öğelerini**: İş öğelerinin biri veya daha fazla onay-'ile ilişkili olmasını gerektirir.  
+- **İş öğelerini**: İş öğelerinin biri veya daha fazla onay-'ile ilişkili olmasını gerektirir.  
   
 > [!IMPORTANT]
 >  İade ilkelerini kullanmak için bağlanmalıdır [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  

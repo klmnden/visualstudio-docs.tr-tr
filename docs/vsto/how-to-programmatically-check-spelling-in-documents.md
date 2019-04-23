@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cbb02ef8d1032a77cccd045401d9e3387f48a963
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 26eb7e0798fbcf6aad33dd45892a23fb0d54b812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110095"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Nasıl yapılır: Program aracılığıyla Yazımı denetleme
   Belgede yazım denetimi yapmak için kullanın <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi. Bu yöntem, sağlanan parametresi doğru yazıldığından emin olup olmadığını gösteren bir Boole değeri döndürür.
@@ -27,7 +27,7 @@ ms.locfileid: "56621103"
 
 ## <a name="to-check-spelling-and-display-results-in-a-message-box"></a>Yazım denetimi ve sonuçları bir ileti kutusu içinde görüntülemek için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi ve yazım hataları denetlemek için metin aralığı geçirin. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
+1. Çağrı <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> yöntemi ve yazım hataları denetlemek için metin aralığı geçirin. Bu kod örneği kullanmak için çalıştırın `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
 
      [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
      [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]

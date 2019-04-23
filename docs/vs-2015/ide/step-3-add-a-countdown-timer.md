@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4440370453db96fa207c283e9c4a03b28d7ef6b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094832"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3. Adım: Geri Sayım Zamanlayıcısı Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,26 +26,26 @@ Bu Eğitimin üçüncü kısmında sınava giren bitirmek kalan saniye sayısın
   
 ### <a name="to-add-a-countdown-timer"></a>Bir geri sayım Zamanlayıcısı ekleme  
   
-1.  Adlı bir tam sayı değişkeni ekleyin **timeLeft**, önceki yordamda yaptığınız gibi. Kodunuzu aşağıdaki gibi görünmelidir.  
+1. Adlı bir tam sayı değişkeni ekleyin **timeLeft**, önceki yordamda yaptığınız gibi. Kodunuzu aşağıdaki gibi görünmelidir.  
   
      [!code-csharp[VbExpressTutorial3Step3#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial3Step3#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#5)]  
   
      Şimdi, aslında bir olay başlatır, belirttiğiniz süre miktarını sonra bir Zamanlayıcı gibi saniye sayan bir yöntem gerekir.  
   
-2.  Tasarım penceresinde Taşı bir `Timer` denetimi **bileşenleri** formunuza araç kutusu kategorisi.  
+2. Tasarım penceresinde Taşı bir `Timer` denetimi **bileşenleri** formunuza araç kutusu kategorisi.  
   
      Denetim tasarım penceresinin altındaki gri alanda görüntülenir.  
   
-3.  Form üzerinde seçin **Süreölçer1** yalnızca eklenen ve Ayarla simgesi kendi **aralığı** özelliğini **1000**.  
+3. Form üzerinde seçin **Süreölçer1** yalnızca eklenen ve Ayarla simgesi kendi **aralığı** özelliğini **1000**.  
   
      Aralık değeri milisaniye olduğundan, bir 1000 değeri Tick olayının her saniye tetiklenmesine neden olur.  
   
-4.  Formda, Zamanlayıcı denetimini çift tıklayın veya bunu seçin ve ardından Enter tuşuna basın.  
+4. Formda, Zamanlayıcı denetimini çift tıklayın veya bunu seçin ve ardından Enter tuşuna basın.  
   
      Kod Düzenleyicisi görünür ve yeni eklediğiniz Tick olay işleyicisinin yöntemini görüntüler.  
   
-5.  Aşağıdaki deyimleri yeni olay işleyici yöntemine ekleyin.  
+5. Aşağıdaki deyimleri yeni olay işleyici yöntemine ekleyin.  
   
      [!code-csharp[VbExpressTutorial3Step3#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial3Step3#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#6)]  
@@ -91,14 +91,14 @@ Bu Eğitimin üçüncü kısmında sınava giren bitirmek kalan saniye sayısın
   
      Sınava girenlerin sayı girebilir, daha kolay kullanarak bir `NumericUpDown` matematik sorularının yanıtları için kullandığınız neden olan denetim. Olası yanıtların tümü 0 ile 100 arası tamsayılardır. Varsayılan değerlerini bırakarak tarafından **Minimum**, **maksimum**, ve **OndalıkBasamaklar** özellikleri, emin sınava girenlerin ondalık girin olamaz, negatif sayılar, veya çok yüksek sayılar. (Sınava girenlerin 3.141 girmek izin vermek istediyseniz ama 3.1415, ayarladığınız, **OndalıkBasamaklar** özelliğini 3.)  
   
-6.  Sonuna üç satır ekleyin `StartTheQuiz()` yöntemi, kod aşağıdaki gibi görünür.  
+6. Sonuna üç satır ekleyin `StartTheQuiz()` yöntemi, kod aşağıdaki gibi görünür.  
   
      [!code-csharp[VbExpressTutorial3Step3#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial3Step3#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb#7)]  
   
      Artık sınavınız başladığında, **timeLeft** değişkenini 30 ve **metin** özelliği `timeLabel` denetimi, 30 saniye olarak ayarlanır. Ardından `Start()` yöntemi `Timer` denetim geri sayımı başlatır. (Sınav yanıtı henüz denetlemedi; sonraki gelen.)  
   
-7.  Programınızı kaydedin, çalıştırın ve ardından **Başlat** formundaki düğmesi.  
+7. Programınızı kaydedin, çalıştırın ve ardından **Başlat** formundaki düğmesi.  
   
      Zamanlayıcı saymaya başlar. Zaman zaman sınav sona erer ve yanıtlar görünür. Aşağıdaki çizim sınavı göstermektedir.  
   
@@ -107,6 +107,6 @@ Matematik sınavı devam ediyor
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Sonraki öğretici adımına gitmek için bkz: [4. adım: CheckTheAnswer() yöntemi ekleme](../ide/step-4-add-the-checktheanswer-parens-method.md).  
+- Sonraki öğretici adımına gitmek için bkz: [4. adım: CheckTheAnswer() yöntemi ekleme](../ide/step-4-add-the-checktheanswer-parens-method.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [2. adım: Rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).
+- Önceki öğretici adımına dönmek için bkz: [2. adım: Rasgele bir toplama problemi oluşturma](../ide/step-2-create-a-random-addition-problem.md).

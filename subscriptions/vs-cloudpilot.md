@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir CloudPilot Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 3a77287b9a5d26cc74bddbefb24600d73cce2fdc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094261"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>CloudPilot avantaj olarak Visual Studio abonelikleri
 
@@ -44,14 +44,14 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
    > [!NOTE]
    > CloudPilot avantajı etkinleştirmeleri on Visual Studio Enterprise veya Visual Studio Professional aboneliği bileşiminden alınma tarihinden itibaren bir kuruluş sınırlıdır.  Kuruluşunuzun on etkinleştirmeye zaten kullanılan CloudPilot avantajı etkinleştirmeniz mümkün olmayacaktır ve daha fazla bilgi UnifyCloud e-posta alırsınız.
 
- 0. Ardından, ile CloudPilot tanımak için tasarlanmış bir ürün sayfasını görürsünüz.  Tıklayın **CloudPilot Git** CloudPilot portalına gitmek için sağ üst köşedeki içinde.
+0. Ardından, ile CloudPilot tanımak için tasarlanmış bir ürün sayfasını görürsünüz.  Tıklayın **CloudPilot Git** CloudPilot portalına gitmek için sağ üst köşedeki içinde.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot ürün sayfası](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  İşte bu kadar!  CloudPilot portalı görürsünüz ve uygulamalarınızı Microsoft azure'a taşımak için CloudPilot aboneliğinizi kullanmaya başlamak hazır olacaksınız.
+0. İşte bu kadar!  CloudPilot portalı görürsünüz ve uygulamalarınızı Microsoft azure'a taşımak için CloudPilot aboneliğinizi kullanmaya başlamak hazır olacaksınız.
 
-0.  Hesabınız başarıyla oluşturulduktan hemen sonra UnifyCloud VSS destek hesabınızı başarıyla oluşturulurken onaylayan bir e-posta alırsınız.
+0. Hesabınız başarıyla oluşturulduktan hemen sonra UnifyCloud VSS destek hesabınızı başarıyla oluşturulurken onaylayan bir e-posta alırsınız.
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot onay e-postası](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -76,13 +76,13 @@ CloudPilot, uygulamaları azure'a kolayca taşıyın ve geliştiricilerin hızl�
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  CloudPilot kullanma konusunda yardım mı gerekiyor?  Bu kaynaklara göz atın:
+- CloudPilot kullanma konusunda yardım mı gerekiyor?  Bu kaynaklara göz atın:
     - [Kişi UnifyCloud](https://www.unifycloud.com/contacts/) UnifyCloud ürünlerle ilgili sorgular için.
     - [CloudPilot kullanıcı el kitabı](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Bir destek isteği gönderin](https://support.datacamp.com/hc/requests/new)
 
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

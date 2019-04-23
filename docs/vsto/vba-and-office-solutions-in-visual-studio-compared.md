@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97ff0b7e11bf79a8da6f3e034227c66ae1f9189
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110953"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Visual Studio'da karşılaştırılan VBA ve Office çözümleri
   Microsoft Visual Basic for Applications (VBA), Office uygulamaları ile tümleşiktir, yönetilmeyen kod kullanır. Visual Studio kullanılarak oluşturulan Microsoft Office projeleri .NET Framework ve Visual Studio Tasarım araçları avantajlarından yararlanmanıza olanak tanır.
@@ -38,9 +38,9 @@ ms.locfileid: "56618334"
 
  Bazı şeyler VBA kullanarak hızlı bir şekilde yapmak yine de kolaydır. Özellikle, VBA kullanmaya devam etmek isteyebilirsiniz:
 
--   Özel çalışma işlevleri.
+- Özel çalışma işlevleri.
 
--   Makro kaydetme.
+- Makro kaydetme.
 
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>VBA çözümlerini ve Visual Studio kullanılarak oluşturulan Office çözümlerini birleştirin
  Visual Studio kullanılarak oluşturulan Office Çözümlerinden VBA kodu çağırabilir ve VBA'dan Visual Studio kullanılarak oluşturulan Office çözümlerinde kod çağırabilir. Belirli teknik Office çözümünüzü VSTO eklentisi veya belge düzeyi özelleştirmesi olup bağlı olarak farklılık gösterir. Daha fazla bilgi için [çağrı kod VSTO eklentileri diğer Office Çözümlerinden](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) ve [birleştirmek VBA ve belge düzeyi özelleştirmeleri](../vsto/combining-vba-and-document-level-customizations.md).

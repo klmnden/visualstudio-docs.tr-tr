@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092646"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Sunucu Gezgininde SharePoint bağlantıları düğümünü genişletme
   Visual Studio'da geliştirme bilgisayarında yerel SharePoint sitelerine kullanarak bağlanabilirsiniz **SharePoint bağlantıları** düğümünde **Sunucu Gezgini** penceresi. Bu düğüm, birçok yerel SharePoint sitelerine bileşenlerinin bir hiyerarşik ağaç görünümünde görüntüler. Örneğin, yerel sitelerinde listeler, belge kitaplıkları ve içerik türlerini görüntüleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **Sunucu Gezgini** yerel SharePoint sitelerine bağlanmak için bkz: [Sunucu Gezgini kullanarak SharePoint Gözat bağlantıları](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595130"
 
  Özel özellikler için bir düğüm eklemek iki tür vardır:
 
--   Bir SharePoint sitesinden salt okunur veri kümesini görüntüle özellikleri. Veri düğümünü temsil eder SharePoint bileşeni açıklanmaktadır. Bunun nasıl yapılacağını gösteren bir kılavuz için bkz. [izlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Bir SharePoint sitesinden salt okunur veri kümesini görüntüle özellikleri. Veri düğümünü temsil eder SharePoint bileşeni açıklanmaktadır. Bunun nasıl yapılacağını gösteren bir kılavuz için bkz. [izlenecek yol: Sunucu Gezgini, web bölümlerini görüntülemek üzere genişletme](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Özel okuma/yazma veri görüntüleme özellikleri. Bunun nasıl yapılacağını gösteren bir kod örneği için bkz. [nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Özel okuma/yazma veri görüntüleme özellikleri. Bunun nasıl yapılacağını gösteren bir kod örneği için bkz. [nasıl yapılır: Sunucu Gezgininde SharePoint düğümünü genişletme](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Yerleşik düğümleri için veri alma
  Tüm Visual Studio tarafından sağlanan yerleşik düğümleri temsil ettikleri SharePoint bileşeni ile ilgili bazı bilgiler içerir. Örneğin, SharePoint sitesindeki bir listesini temsil eden bir düğüm listesinde, başlık ve URL listesi için varsayılan görünümünün gibi ilgili bazı bilgiler sağlar.

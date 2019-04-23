@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093689"
 ---
 # <a name="wpf-overview"></a>WPF’ye genel bakış
 
@@ -224,9 +224,9 @@ Aşağıdaki şekilde, önceki örnekte XAML biçimlendirme sonucu gösterir.
 
 Çoğu uygulama, kullanıcılara görüntülemek ve veri düzenleme bulunmasını sağlamak için oluşturulur. WPF uygulamaları için depolama ve veri erişim iş zaten için SQL Server ve ADO .NET gibi teknolojileri tarafından sağlanır. Verilere nasıl erişildiği ve yönetilen nesnelere bir uygulamanın yüklü WPF uygulamaları için sabit çalışmaya başladıktan sonra. Esas olarak, bu iki şey içerir:
 
-1.  Verileri veri burada görüntülenir ve düzenlenebildiği denetimlere yönetilen nesneleri kopyalama.
+1. Verileri veri burada görüntülenir ve düzenlenebildiği denetimlere yönetilen nesneleri kopyalama.
 
-2.  Denetimleri kullanarak verilerde yapılan değişiklikler yönetilen nesnelere kopyalandığından emin olma.
+2. Denetimleri kullanarak verilerde yapılan değişiklikler yönetilen nesnelere kopyalandığından emin olma.
 
 Uygulama geliştirmeyi kolaylaştırmak için WPF otomatik olarak bu adımları gerçekleştirmek için veri bağlama altyapısı sağlar. Veri bağlama altyapısı temel birimidir <xref:System.Windows.Data.Binding> sınıfı, işi olduğu bir denetimi (bağlama hedefi) bağlamak için bir veri nesnesine (bağlama kaynağı). Bu ilişki, aşağıdaki şekilde gösterilmiştir:
 
@@ -512,7 +512,7 @@ Unutmayın <xref:System.Windows.Controls.ListBox> ; genel görünümünü ve dav
 
 Daha fazla bilgi için [veri şablonu oluşturmaya genel bakış](/dotnet/framework/wpf/data/data-templating-overview).
 
-### <a name="styles"></a>Stilleri
+### <a name="styles"></a>Stiller
 
 Stilleri, geliştiricilerin ve tasarımcıların ürün için belirli bir görünümünü standart hale getirmek etkinleştirin. WPF sağlar temeli olan güçlü bir stil modeli, <xref:System.Windows.Style> öğesi. Aşağıdaki örnek, arka plan rengini ayarlar bir stil oluşturur. her <xref:System.Windows.Controls.Button> pencere üzerindeki `Orange`.
 
@@ -575,11 +575,11 @@ Aşağıdaki örnek, tarafından paylaşılan ortak bir arka plan rengi tanımla
 
 Bu örnekte kullanarak arka plan rengi kaynağı uygulayan `Window.Resources` özellik öğesi. Bu kaynak için tüm alt kullanılabilir <xref:System.Windows.Window>. Birçok kaynak kapsamlar, aşağıdakiler de dahil oldukları çözümlenen sırayla listelenir:
 
-1.  Tek bir denetim (devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).
+1. Tek bir denetim (devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).
 
-2.  A <xref:System.Windows.Window> veya <xref:System.Windows.Controls.Page> (Ayrıca devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).
+2. A <xref:System.Windows.Window> veya <xref:System.Windows.Controls.Page> (Ayrıca devralınan kullanarak <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> özelliği).
 
-3.  Bir <xref:System.Windows.Application> (kullanarak <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> özelliği).
+3. Bir <xref:System.Windows.Application> (kullanarak <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> özelliği).
 
 Çeşitli kapsamlar, tanımlamak ve kaynaklarınızı paylaşım yolu esneklik sağlar.
 

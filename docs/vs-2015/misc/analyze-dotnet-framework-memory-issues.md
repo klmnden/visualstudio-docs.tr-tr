@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107664"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>.NET Framework bellek sorunlarını çözümleme
 Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET Framework kodu içindeki bellek sızıntılarını ve verimsiz bellek kullanımını bulun. En düşük .NET Framework sürümü hedef kodun .NET Framework 4. 5 ' dir.  
@@ -28,7 +28,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
   Yönetilen bellek çözümleyicisinin bir kılavuz için bkz. [üretimde .NET bellek sorunlarını tanılamak için Visual Studio 2013 kullanarak](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) Visual Studio ALM + Team Foundation Server blog'daki.  
   
-##  <a name="BKMK_Contents"></a> İçeriği  
+## <a name="BKMK_Contents"></a> İçeriği  
  [.NET Framework uygulamalarında bellek kullanımı](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [Bir uygulamada bir bellek sorunu tanımlama](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
  [Bellek kullanımını analiz etme](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework uygulamalarında bellek kullanımı  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework uygulamalarında bellek kullanımı  
  .NET Framework, atık toplama yapılan bir çalışma zamanıdır, böylelikle çoğu uygulamada bellek kullanımı bir sorun değildir. Ancak web servisleri ve uygulamaları gibi uzun süre çalışan uygulamalarda ve sınırlı miktarda belleğe sahip aygıtlarda, bellekte nesnelerin birikmesi, uygulamanın ve üzerinde çalıştığı aygıtın performansını etkileyebilir. Atık toplayıcı çok sık çalışıyorsa veya işletim sistemi, RAM ve disk arasında bellek taşımak zorunda kalıyorsa, aşırı bellek kullanımı, uygulamaya veya makineye yeterli kaynak kalmamasına neden olabilir. En kötü durumda, bir uygulama bir "Yetersiz bellek" özel durumuyla çökebilir.  
   
  .NET *Yönetilen yığın* bir uygulama tarafından oluşturulan başvuru nesnelerinin depolandığı bir sanal bellek bölgesidir. Nesnelerin kullanım ömrü atık toplayıcı (GC) tarafından yönetilir. Atık toplayıcı, bellek bloklarını kaplayan nesneleri izlemek için başvurular kullanır. Bir başvuru, bir nesne oluşturulduğunda ve bir değişkene atandığında oluşturulur. Tek bir nesne birden çok başvuruya sahip olabilir. Örneğin, nesneyi bir sınıfa, koleksiyona ve başka veri yapısına ekleyerek veya nesneyi ikinci bir değişkene atayarak ek başvurular oluşturulabilir. Bir başvuru oluşturmanın daha az belirgin bir yolu, bir nesnenin, başka bir nesnenin olayına bir işleyici eklemesidir. Bu durumda, işleyici açıkça kaldırılana veya ikinci nesne yok edilene kadar ikinci nesne ilk nesnenin başvurusunu tutar.  
@@ -46,7 +46,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Bir uygulamada bir bellek sorunu tanımlama  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Bir uygulamada bir bellek sorunu tanımlama  
  Bellek sorunlarının en çok görünen belirtisi uygulamanızın performansıdır, özellikle performans zamanla düşüyorsa. Uygulamanız çalışırken diğer uygulamaların performansının düşmesi de bir bellek sorunu olduğunu belirtebilir. Bir bellek sorunu olduğundan şüpheleniyorsanız, Görev Yöneticisi'gibi bir araç kullanın veya [Windows Performans İzleyicisi'ni](http://technet.microsoft.com/library/cc749249.aspx) daha fazla araştırmak için. Örneğin, toplam bellek büyüklüğünde, olası bellek sızıntılarının kaynağı olarak açıklayamadığınız bir artış olup olmadığına bakın:  
   
  ![Kaynak İzleyicisi tutarlı bellek büyüme](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
  ![Kaynak Yöneticisi'nde bellekte ani](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> Bellek anlık görüntüleri toplama  
+## <a name="BKMK_Collect_memory_snapshots"></a> Bellek anlık görüntüleri toplama  
  Bellek analizi aracı bilgileri analiz eder *düküm dosyalarında* yığın bilgileri içerir. Visual Studio'da döküm dosyaları oluşturabilir veya gibi bir araç kullanabilirsiniz [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) gelen [Windows SysInternals](http://technet.microsoft.com/sysinternals). Bkz: [döküm nedir ve biri nasıl oluşturabilirim?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio Debugger Team blogunda.  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
    ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> Bellek kullanımını analiz etme  
+## <a name="BKMK_Analyze_memory_use"></a> Bellek kullanımını analiz etme  
  [Nesne listesini filtreleme](#BKMK_Filter_the_list_of_objects) **&#124;** [tek bir anlık görüntüden bellek verileri analiz etme](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [iki bellek karşılaştırın anlık görüntüleri](#BKMK_Compare_two_memory_snapshots)  
   
  Bellek kullanımı sorunları için bir döküm dosyasını analiz etmek amacıyla:  
@@ -90,7 +90,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
    ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> Nesne listesini filtreleme  
+### <a name="BKMK_Filter_the_list_of_objects"></a> Nesne listesini filtreleme  
  Varsayılan olarak, bellek çözümleyicisi, bir bellek anlık görüntüsündeki nesne listesini yalnızca kullanıcı kodundaki türleri ve örnekleri gösterecek şekilde ve yalnızca toplam kapsamalı boyutu toplam yığın boyutunun bir eşik yüzdesini geçen türleri gösterecek şekilde filtreler. Bu seçenekleri değiştirebilirsiniz **görünüm ayarlarını** listesi:  
   
 |||  
@@ -102,7 +102,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
  ![Başa dön](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Tek bir anlık görüntüden bellek verileri analiz etme  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Tek bir anlık görüntüden bellek verileri analiz etme  
  Visual Studio dosyayı analiz etmek için yeni bir hata ayıklama oturumu başlatır ve bellek verileri bir yığın Görünümü penceresinde görüntüler.  
   
  ![Nesne türü listesinde](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -137,9 +137,9 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
   
 #### <a name="paths-to-root"></a>Kök yolları  
   
--   Bir tür seçildiği için **nesne türü** tablo **kök yolları** tablo dönüşen başvuru sayısını türdeki tüm nesneler için kök nesnelere giden benzersiz tür hiyerarşileri gösterir hiyerarşide olduğu türü.  
+- Bir tür seçildiği için **nesne türü** tablo **kök yolları** tablo dönüşen başvuru sayısını türdeki tüm nesneler için kök nesnelere giden benzersiz tür hiyerarşileri gösterir hiyerarşide olduğu türü.  
   
--   Bir nesne türünün örneğinden seçili için **kök yolları** örneğe bir başvuru tutan gerçek nesnelerin bir grafiğini gösterir. Veri değerlerini bir veri ipucunda görüntülemek için nesne adının üzerine gelebilirsiniz.  
+- Bir nesne türünün örneğinden seçili için **kök yolları** örneğe bir başvuru tutan gerçek nesnelerin bir grafiğini gösterir. Veri değerlerini bir veri ipucunda görüntülemek için nesne adının üzerine gelebilirsiniz.  
   
 #### <a name="referenced-types--referenced-objects"></a>Başvurulan türleri / başvurulan nesneler  
   
@@ -168,7 +168,7 @@ Visual Studio tarafından yönetilen bellek çözümleyicisini kullanarak .NET F
 |**SizedRef işleyicisi**|Atık toplama zamanında tüm nesnelerin ve nesne köklerinin toplu kapanışının yaklaşık boyutunu tutan bir güçlü işleyici.|  
 |**Sabitlenmiş yerel değişken**|Sabitlenmiş bir yerel değişken.|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> İki bellek anlık görüntüsünü karşılaştırma  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> İki bellek anlık görüntüsünü karşılaştırma  
  Bellek sızıntılarının kaynağı olabilecek nesneler bulmak üzere bir işlemin iki döküm dosyasını karşılaştırabilirsiniz. İlk (önceki) ve ikinci (sonraki) dosyanın toplanması arasındaki aralık, sızan nesne sayısı artışı kolayca görülebilecek kadar büyük olmalıdır. İki dosyayı karşılaştırmak için:  
   
 1. İkinci döküm dosyasını açın ve ardından **yönetilen bellekte Hata Ayıkla** üzerinde **mini döküm dosya özeti** sayfası.  

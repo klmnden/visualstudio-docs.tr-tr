@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094783"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Nasıl yapılır: 3B modele gölgelendirici uygulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Bu belge, 3B modeline yönlendirilmiş grafik gölgelendirici dili (DGSL) gölge
   
  Bu belge, bu etkinlik gösterir:  
   
--   3B modele gölgelendirici uygulama  
+- 3B modele gölgelendirici uygulama  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>3B modele gölgelendirici uygulama  
  İlgi çekici bir görünüm sağlamak için 3B modele gölgelendirici efekti uygulayabilirsiniz.  

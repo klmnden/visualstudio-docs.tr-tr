@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099630"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Kod Parçacıkları İçin En İyi Uygulamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygula
 ## <a name="file-locations"></a>Dosya konumları  
  Dosya konumları uygulamanıza uyum, aşağıdakiler hakkında düşünün:  
   
--   Erişilebilir bir konumda bulunuyor. Uygulama dosyaları ile dosyaları depolama çalışmayabilir şekilde kullanıcılar bilgisayar, Program dosyaları klasörüne erişimi olmayabilir.  
+- Erişilebilir bir konumda bulunuyor. Uygulama dosyaları ile dosyaları depolama çalışmayabilir şekilde kullanıcılar bilgisayar, Program dosyaları klasörüne erişimi olmayabilir.  
   
--   Güvenli bir konumda bulunuyor. Dosya depolama kök klasöründe (C:\\) güvenli değildir. Uygulama verileri için \Application veri klasörü öneririz. Bireysel kullanıcı verileri için uygulama \My Belgeler klasöründe her kullanıcı için bir dosya oluşturabilirsiniz.  
+- Güvenli bir konumda bulunuyor. Dosya depolama kök klasöründe (C:\\) güvenli değildir. Uygulama verileri için \Application veri klasörü öneririz. Bireysel kullanıcı verileri için uygulama \My Belgeler klasöründe her kullanıcı için bir dosya oluşturabilirsiniz.  
   
--   Geçerli bir dosya adı kullanıyor. Kullanabileceğiniz <xref:System.Windows.Forms.OpenFileDialog> ve <xref:System.Windows.Forms.SaveFileDialog> geçersiz dosya adları olasılığını azaltmak için denetimleri. Bir dosya kullanıcının seçtiği zaman ve kodunuzu dosyasını yöneten zaman arasında dosya silinebilir dikkat edin. Ayrıca, kullanıcı dosyaya yazmak için gerekli izinlere sahip.  
+- Geçerli bir dosya adı kullanıyor. Kullanabileceğiniz <xref:System.Windows.Forms.OpenFileDialog> ve <xref:System.Windows.Forms.SaveFileDialog> geçersiz dosya adları olasılığını azaltmak için denetimleri. Bir dosya kullanıcının seçtiği zaman ve kodunuzu dosyasını yöneten zaman arasında dosya silinebilir dikkat edin. Ayrıca, kullanıcı dosyaya yazmak için gerekli izinlere sahip.  
   
 ## <a name="security"></a>Güvenlik  
  Nasıl bir kod parçacığı güvenlidir, kaynak kodunda kullanıldığı ve kodda olduğunda nasıl değiştirilir bağlıdır. Aşağıdaki liste, dikkate alınması gereken alanların birkaçını içerir.  
@@ -56,15 +56,15 @@ Kod parçacığı kodda bir şey yalnızca en basit yol gösterir. Çoğu uygula
 ## <a name="downloaded-code-snippets"></a>İndirilen kod parçacıkları  
  Visual Studio tarafından yüklenmiş IntelliSense kod parçacıkları kendisi içinde bir tehlike değildir. Ancak, bunlar uygulamanızda güvenlik risklerini oluşturabilirsiniz. Internet'ten indirilen kod parçacıkları gibi diğer tüm indirilen içeriği - işlemini çok dikkatli olunmalıdır.  
   
--   Yalnızca güvendiğiniz sitelerden parçacıkları indirir ve güncel virüsten yazılımı kullanın.  
+- Yalnızca güvendiğiniz sitelerden parçacıkları indirir ve güncel virüsten yazılımı kullanın.  
   
--   Tüm indirilen kod parçacığı dosyaları Not Defteri veya Visual Studio XML düzenleyicisinde açın ve yüklemeden önce dikkatle gözden geçirin. Aşağıdaki sorunları arayın:  
+- Tüm indirilen kod parçacığı dosyaları Not Defteri veya Visual Studio XML düzenleyicisinde açın ve yüklemeden önce dikkatle gözden geçirin. Aşağıdaki sorunları arayın:  
   
-    -   Bunu, kod parçacığı sisteminize zarar verebilir. Kaynak kodu çalıştırmadan önce dikkatle okuyun.  
+    - Bunu, kod parçacığı sisteminize zarar verebilir. Kaynak kodu çalıştırmadan önce dikkatle okuyun.  
   
-    -   Kod parçacığı dosyasını Yardım URL'si bloğunu bir kötü amaçlı bir komut dosyası yürütme veya rahatsız edici bir Web sitesinin URL'leri içerebilir.  
+    - Kod parçacığı dosyasını Yardım URL'si bloğunu bir kötü amaçlı bir komut dosyası yürütme veya rahatsız edici bir Web sitesinin URL'leri içerebilir.  
   
-    -   Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.  
+    - Kod parçacığı sessizce projenize eklenir ve herhangi bir yere sisteminize yüklenebilir başvuruları içerebilir. Bu başvurular bilgisayarınıza kod parçacığını indirdiğiniz gelen indirilmiş olabilir. Kod parçacığı, ardından kötü amaçlı kod yürüten başvurusunda bir yönteme bir çağrı yapabilir. Tür bir saldırıya karşı korunmak için kod parçacığı dosyasını içeri aktarmalar ve başvurular bloklarını gözden geçirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Basic IntelliSense kod parçacıkları](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   

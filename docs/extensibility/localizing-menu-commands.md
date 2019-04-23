@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100254"
 ---
 # <a name="localize-menu-commands"></a>Menü komutlarını yerelleştirme
 Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleştirilmiş metin sağlayabilir *.vsct* dosyaları ve yerelleştirilmiş *.resx* dosyaları, VSPackage'ı ve ardından Proje dosyalarını güncelleştirme eklemek için değiştirir.
@@ -76,19 +76,19 @@ Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleşt
 ## <a name="localize-other-text-resources"></a>Diğer metin kaynakları yerelleştirme
  Komut adlarını dışında metin kaynakları kaynağında tanımlanmış (*.resx*) dosyaları.
 
-1.  Yeniden adlandırma *VSPackage.resx* için *VSPackage.en-US.resx*.
+1. Yeniden adlandırma *VSPackage.resx* için *VSPackage.en-US.resx*.
 
-2.  Bir kopyasını *VSPackage.en-US.resx* dosyası her bir yerelleştirme dili.
+2. Bir kopyasını *VSPackage.en-US.resx* dosyası her bir yerelleştirme dili.
 
      Her kopya adı *VSPackage'ı. { Yerel ayar} .resx*burada *{yerel ayarı}* belirli bir kültür adı.
 
-3.  Yeniden adlandırma *Resources.resx* için *Resources.en-US.resx*.
+3. Yeniden adlandırma *Resources.resx* için *Resources.en-US.resx*.
 
-4.  Bir kopyasını *Resources.en-US.resx* dosyası her bir yerelleştirme dili.
+4. Bir kopyasını *Resources.en-US.resx* dosyası her bir yerelleştirme dili.
 
      Her kopya adı *kaynaklar. { Yerel ayar} .resx*burada *{yerel ayarı}* belirli bir kültür adı.
 
-5.  Her açın *.resx* dizesini değiştirmek için dosya belirli bir dil ve kültür için uygun değerleri. Aşağıdaki örnek, bir araç penceresinin başlık çubuğu için yerelleştirilmiş kaynak tanımı gösterilmektedir.
+5. Her açın *.resx* dizesini değiştirmek için dosya belirli bir dil ve kültür için uygun değerleri. Aşağıdaki örnek, bir araç penceresinin başlık çubuğu için yerelleştirilmiş kaynak tanımı gösterilmektedir.
 
      [*Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleşt
 ## <a name="incorporate-localized-resources-into-the-project"></a>Yerelleştirilmiş kaynaklar projeye dahil edilip derecelendirilir.
  Değiştirmeniz gereken *AssemblyInfo.cs* dosya ve proje dosyası yerelleştirilmiş kaynakları dahil edilip derecelendirilir.
 
-1.  Gelen **özellikleri** düğümünde **Çözüm Gezgini**açın *AssemblyInfo.cs* veya *AssemblyInfo.vb* Düzenleyicisi.
+1. Gelen **özellikleri** düğümünde **Çözüm Gezgini**açın *AssemblyInfo.cs* veya *AssemblyInfo.vb* Düzenleyicisi.
 
-2.  Şu girişi ekleyin.
+2. Şu girişi ekleyin.
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleşt
 
      Bu ABD İngilizcesi varsayılan dili ayarlar.
 
-3.  Projeyi kaldırmak.
+3. Projeyi kaldırmak.
 
-4.  Proje Dosyası Düzenleyicisi'nde açın.
+4. Proje Dosyası Düzenleyicisi'nde açın.
 
-5.  Bulun `ItemGroup` öğesini içeren `EmbeddedResource` öğeleri.
+5. Bulun `ItemGroup` öğesini içeren `EmbeddedResource` öğeleri.
 
-6.  İçinde `EmbeddedResource` çağıran öğe *VSPackage.en-US.resx*, değiştirin `ManifestResourceName` öğesi ile bir `LogicalName` kümesine öğesini `VSPackage.en-US.Resources`aşağıdaki gibi.
+6. İçinde `EmbeddedResource` çağıran öğe *VSPackage.en-US.resx*, değiştirin `ManifestResourceName` öğesi ile bir `LogicalName` kümesine öğesini `VSPackage.en-US.Resources`aşağıdaki gibi.
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ Yerelleştirilmiş oluşturarak menü ve araç çubuğu komutlarını yerelleşt
     </EmbeddedResource>
     ```
 
-7.  Yerelleştirilen her dil için kopyalama `EmbeddedResource` öğesi için `VsPackage.en-US`ve **INCLUDE** özniteliği ve **LogicalName** aşağıda gösterildiği gibi hedef yerel kopyasının öğesi örnek.
+7. Yerelleştirilen her dil için kopyalama `EmbeddedResource` öğesi için `VsPackage.en-US`ve **INCLUDE** özniteliği ve **LogicalName** aşağıda gösterildiği gibi hedef yerel kopyasının öğesi örnek.
 
-8.  Her yerelleştirilmiş `VSCTCompile` öğe, Ekle bir `ResourceName` işaret öğesi `Menus.ctmenu`, aşağıdaki örnekte gösterildiği gibi.
+8. Her yerelleştirilmiş `VSCTCompile` öğe, Ekle bir `ResourceName` işaret öğesi `Menus.ctmenu`, aşağıdaki örnekte gösterildiği gibi.
 
     ```xml
     <ItemGroup>

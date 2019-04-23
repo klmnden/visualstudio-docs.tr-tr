@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03a10e75ce50441b8c32ff734e6f2d30e9604bc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097472"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Nasıl yapılır: Derleme dosyaları seçin
 Bir proje oluşturduğunuzda bazı dosyaları içeren, her dosya proje dosyasında ayrı olarak listeleyebilirsiniz veya tüm dosyaları bir dizin veya iç içe geçmiş bir dizinler kümesi eklemek için joker karakterler kullanabilirsiniz.
@@ -42,7 +42,7 @@ Bir derleme için dosyaları eklemek için bir öğe listesinde eklenmelidir [!I
 
 #### <a name="to-declare-multiple-items"></a>Birden çok öğe bildirmek için
 
--   Kullanım `Include` öznitelikleri benzer aşağıdaki:
+- Kullanım `Include` öznitelikleri benzer aşağıdaki:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 

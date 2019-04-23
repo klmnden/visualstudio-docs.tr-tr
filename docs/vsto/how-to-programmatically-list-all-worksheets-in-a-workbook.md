@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f6a27ea1f8d6c50b4b9b8eba07186f34eb143b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109029"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Nasıl yapılır: Çalışma kitabındaki tüm çalışma sayfalarını program aracılığıyla listeleme
   <xref:Microsoft.Office.Interop.Excel.Workbook> Sağlar sınıfını bir <xref:Microsoft.Office.Interop.Excel.Worksheets> nesne. Tüm koleksiyonu bu nesneyi içeren <xref:Microsoft.Office.Interop.Excel.Worksheet> çalışma kitabında nesneleri.
@@ -27,14 +27,14 @@ ms.locfileid: "56616644"
 
 ## <a name="to-list-all-existing-worksheets-in-a-workbook-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesindeki bir çalışma kitabında var olan tüm çalışma sayfalarını listelemek için
 
-1.  Yinelemek <xref:Microsoft.Office.Interop.Excel.Worksheets> toplama ve gönderme uzak bir hücreye her sayfanın adını bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi.
+1. Yinelemek <xref:Microsoft.Office.Interop.Excel.Worksheets> toplama ve gönderme uzak bir hücreye her sayfanın adını bir <xref:Microsoft.Office.Tools.Excel.NamedRange> denetimi.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreExcelAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#21)]
 
 ## <a name="to-list-all-existing-worksheets-in-a-workbook-in-a-vsto-add-in"></a>Bir VSTO eklentisi kitabında var olan tüm çalışma sayfalarını listelemek için
 
-1.  Yinelemek <xref:Microsoft.Office.Interop.Excel.Worksheets> toplama ve gönderme uzak bir hücreye her sayfanın adını bir <xref:Microsoft.Office.Interop.Excel.Range> nesne.
+1. Yinelemek <xref:Microsoft.Office.Interop.Excel.Worksheets> toplama ve gönderme uzak bir hücreye her sayfanın adını bir <xref:Microsoft.Office.Interop.Excel.Range> nesne.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#13)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#13)]

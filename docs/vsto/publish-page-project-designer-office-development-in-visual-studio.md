@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103536"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Yayımlama Sayfası, Proje Tasarımcısı (Visual Studio'da Office Geliştirme)
   **Yayımla** sayfasının **Proje Tasarımcısı** dağıtım özelliklerini yapılandırmak için kullanılır.
@@ -84,9 +84,9 @@ ms.locfileid: "54869677"
 
 - VSTO eklenti yükleme davranışı.
 
-  -   Başlangıçta yüklenen: Office uygulaması başlatıldığında VSTO eklentisi yükleneceğini belirtir.
+  - Başlangıçta yüklenen: Office uygulaması başlatıldığında VSTO eklentisi yükleneceğini belirtir.
 
-  -   İsteğe bağlı yükleme: uygulama, bir kullanıcı VSTO eklenti işlevini kullanan bir kullanıcı Arabirimi öğesi tıkladığında gibi gerektirdiğinde, VSTO eklentisi yükleneceğini belirtir.
+  - İsteğe bağlı yükleme: uygulama, bir kullanıcı VSTO eklenti işlevini kullanan bir kullanıcı Arabirimi öğesi tıkladığında gibi gerektirdiğinde, VSTO eklentisi yükleneceğini belirtir.
 
   **Yayımlama dili** bu seçenek, Microsoft Yazılımı Lisans koşulları dili ayarlar ve önkoşullar listesinde dil paketlerini içerir. Dil özelleştirme etkilemez. Dil Kurulum programı, Visual Studio'nun yüklü dilleri tarafından belirlenir.
 

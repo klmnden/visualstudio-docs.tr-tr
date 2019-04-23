@@ -7,12 +7,12 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 65b44dddfdadcb7ef38332fa35443dbaeededb5d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58152921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095197"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Nasıl yapılır: Çoklu başlangıç projeleri ayarlama
 
@@ -20,7 +20,7 @@ Mac için Visual Studio belirtmenize olanak verir nasıl birden çok hata ayıkl
 
 ## <a name="to-set-multiple-startup-projects"></a>Birden fazla başlangıç projesi olarak ayarlamak için
 
-1.  İçinde **çözüm bölmesi**, ' % s'çözümü (üst düğümü) seçin.
+1. İçinde **çözüm bölmesi**, ' % s'çözümü (üst düğümü) seçin.
 
 2. Çözüm düğümün (sağ tıklama) bağlam menüsünü seçin ve ardından **başlangıç projelerini Ayarla...** .
 

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098901"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Performans veri dosyalarıyla kaydetme sembol bilgisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ Kullanıyorsanız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve tümleşik gel
   
 - Windows sembol önbelleğinizi yolunu ayarladığınızdan emin olun. Sembol önbellek yolunu ayarlamak için aşağıdakilerden birini yapın:  
   
-  -   Kümesi hata ayıklayıcısı -> Semboller seçeneğini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doğru yola bir IDE.  
+  - Kümesi hata ayıklayıcısı -> Semboller seçeneğini [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doğru yola bir IDE.  
   
-  -   -Symbolpath seçeneği VSPerfReport, semboller içeren için komut satırına ekleyin.  
+  - -Symbolpath seçeneği VSPerfReport, semboller içeren için komut satırına ekleyin.  
   
 - Semboller görmüyorsanız [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], sembol sunucusu ASP sunucu için doğru bir şekilde ayarlandığından emin olun.  
   

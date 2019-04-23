@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104349"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Nasıl yapılır: Microsoft Excel kullanarak yük testi başarım raporları oluşturma
 
@@ -24,9 +24,9 @@ ms.locfileid: "55955602"
 
 Yük testi raporlarının iki türü kullanılabilir:
 
--   **Karşılaştırmayı Çalıştır** bu tabloları ve çubuk grafikleri kullanarak iki yük testi sonuçları verilerden karşılaştıran rapor kümesini oluşturur.
+- **Karşılaştırmayı Çalıştır** bu tabloları ve çubuk grafikleri kullanarak iki yük testi sonuçları verilerden karşılaştıran rapor kümesini oluşturur.
 
--   **Eğilim** , iki veya daha fazla yük test sonucu eğilim çözümlemesi oluşturabilirsiniz. Çizgi grafikler kullanarak sonuçlar görüntülenir, ancak veriler pivot tablolardan ulaşılabilir.
+- **Eğilim** , iki veya daha fazla yük test sonucu eğilim çözümlemesi oluşturabilirsiniz. Çizgi grafikler kullanarak sonuçlar görüntülenir, ancak veriler pivot tablolardan ulaşılabilir.
 
 > [!TIP]
 > Özet görünümü, grafik görünümü ve tablolar görünümünden veri yapıştırarak Microsoft Word raporlarını el ile de oluşturabilirsiniz. Bkz: [nasıl yapılır: Microsoft Word kullanılarak bir yük testi başarım raporunu el ile oluşturma](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).

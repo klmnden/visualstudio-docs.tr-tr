@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd678d7db2a3af56a89756f65f8f7b98ef1e37a6
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567808"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071254"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Nasıl yapılır: Paket bildirimi oluşturma
 Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabilirsiniz. Paket bildirimi ancak tek ürün bildirim dosyasını her yerel ayar için bir önyükleyici paketi içerir. Yerelleştirilmiş farklı sürümleri arasında paylaşılan işlevselliği ürün bildirimine gitmeniz gerekir.
@@ -34,13 +34,13 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabi
 
 #### <a name="to-create-the-package-manifest"></a>Paket bildirimi oluşturma
 
-1.  Önyükleyici paketi için bir dizin oluşturun. Bu örnekte *C:\package*.
+1. Önyükleyici paketi için bir dizin oluşturun. Bu örnekte *C:\package*.
 
-2.  Yerel ayar adı ile aşağıdaki gibi bir alt dizin oluşturma *tr* İngilizce.
+2. Yerel ayar adı ile aşağıdaki gibi bir alt dizin oluşturma *tr* İngilizce.
 
-3.  Visual Studio'da adlı bir XML dosyası oluşturun *package.xml*ve kaydetmesi *C:\package\en* klasör.
+3. Visual Studio'da adlı bir XML dosyası oluşturun *package.xml*ve kaydetmesi *C:\package\en* klasör.
 
-4.  Önyükleyici paket adı, bu yerelleştirilmiş paket bildirimi ve isteğe bağlı bir lisans sözleşmesi için kültürü listelemek için XML ekleyin. Aşağıdaki XML değişkenleri kullanır `DisplayName` ve `Culture`, bir sonraki öğe tanımlanır.
+4. Önyükleyici paket adı, bu yerelleştirilmiş paket bildirimi ve isteğe bağlı bir lisans sözleşmesi için kültürü listelemek için XML ekleyin. Aşağıdaki XML değişkenleri kullanır `DisplayName` ve `Culture`, bir sonraki öğe tanımlanır.
 
     ```xml
     <Package
@@ -50,7 +50,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabi
         LicenseAgreement="eula.txt">
     ```
 
-5.  Yerel ayara özgü dizindeki tüm dosyaları listelemek için XML ekleyin. Aşağıdaki XML adında bir dosya kullanır *eula.txt* için geçerli olan **tr** yerel ayar.
+5. Yerel ayara özgü dizindeki tüm dosyaları listelemek için XML ekleyin. Aşağıdaki XML adında bir dosya kullanır *eula.txt* için geçerli olan **tr** yerel ayar.
 
     ```xml
     <PackageFiles>
@@ -58,7 +58,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabi
     </PackageFiles>
     ```
 
-6.  Yerelleştirilebilir Dize için önyükleyici paketi tanımlamak için XML ekleyin. Hata dizeleri için aşağıdaki XML ekler **tr** yerel ayar.
+6. Yerelleştirilebilir Dize için önyükleyici paketi tanımlamak için XML ekleyin. Hata dizeleri için aşağıdaki XML ekler **tr** yerel ayar.
 
     ```xml
       <Strings>
@@ -71,7 +71,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi kullanabi
     </Strings>
     ```
 
-7.  Kopyalama *C:\package* Visual Studio önyükleyicisi dizinine klasörü. Visual Studio 2010 için bu, *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages* dizin.
+7. Kopyalama *C:\package* Visual Studio önyükleyicisi dizinine klasörü. Visual Studio 2010 için bu, *\Program SDKs\Windows\v7.0A\Bootstrapper\Packages* dizin.
 
 ## <a name="example"></a>Örnek
  Paket bildirimi gibi hata iletileri, Yazılım Lisans Koşulları'nı ve dil paketlerinin yerel ayara özgü bilgileri içerir.

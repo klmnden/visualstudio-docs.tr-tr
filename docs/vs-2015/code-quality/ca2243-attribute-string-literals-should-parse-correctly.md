@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 770c805489e358252151dc8e777941a267f76363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061430"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Öznitelik dize harfleri doğru çözümlenmelidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "54770582"
 
  Kural aşağıdaki tarafından tetiklenir:
 
--   'Version' içerir ve için System.Version nelze analyzovat parametreler.
+- 'Version' içerir ve için System.Version nelze analyzovat parametreler.
 
--   'GUID' içerir ve System.Guid için ayrıştırılamayan parametre.
+- 'GUID' içerir ve System.Guid için ayrıştırılamayan parametre.
 
--   'Uri', 'urn' veya 'url' içerir ve System.Uri olarak ayrıştırılamıyor. parametreler.
+- 'Uri', 'urn' veya 'url' içerir ve System.Uri olarak ayrıştırılamıyor. parametreler.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [CA1054: URI parametreleri dizeler olmamalıdır](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

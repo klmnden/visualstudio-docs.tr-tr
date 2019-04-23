@@ -9,12 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102789"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Nasıl yapılır: Bir yük testi çalışma ayarı için bağlam parametreleri ekleme
 
@@ -52,11 +52,11 @@ Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bi
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Bir çalışma ayarına bağlam parametresi eklemek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Genişletin **çalıştırma ayarları** Yük Testi Düzenleyicisi'nde yük testi ağacında klasör.
+2. Genişletin **çalıştırma ayarları** Yük Testi Düzenleyicisi'nde yük testi ağacında klasör.
 
-3.  Belirli çalıştırma ayarını sağ bağlam parametresi ekleyin ve ardından istediğiniz **bağlam parametresi Ekle**.
+3. Belirli çalıştırma ayarını sağ bağlam parametresi ekleyin ve ardından istediğiniz **bağlam parametresi Ekle**.
 
      Yeni bir bağlam parametresi eklenir **bağlam parametreleri** klasöründe **çalıştırma ayarları** yük testi ağacında klasör.
 
@@ -64,11 +64,11 @@ Ayrıca, farklı bir yük testi çalışma ayarlarında aynı adı kullanarak bi
 
      Çalıştırma ayarı zaten varsa bir **bağlam parametreleri** klasörüne sağ tıklayın ve ardından **bağlam parametresi Ekle**.
 
-4.  İçinde **özellikleri** penceresinde değerini **adı** uygun şekilde (örneğin, WebServer1). İçinde **özellikleri** penceresinde değişiklik **değer** kullanmak istediğiniz parametre (örneğin, `http://CorporateStagingWebServer`).
+4. İçinde **özellikleri** penceresinde değerini **adı** uygun şekilde (örneğin, WebServer1). İçinde **özellikleri** penceresinde değişiklik **değer** kullanmak istediğiniz parametre (örneğin, `http://CorporateStagingWebServer`).
 
-5.  (İsteğe bağlı) 3 ile 5 arasındaki adımları yineleyin ve kullanmak için farklı bir dize **değer** özelliği (örneğin, `http://CorporateProductionWebServer`).
+5. (İsteğe bağlı) 3 ile 5 arasındaki adımları yineleyin ve kullanmak için farklı bir dize **değer** özelliği (örneğin, `http://CorporateProductionWebServer`).
 
-6.  Hangi çalışma etkin olmasını istediğiniz ayarları seçin. Çalıştırma ayarlarını kısayol menüsünü açın ve seçin **etkin olarak ayarla**.
+6. Hangi çalışma etkin olmasını istediğiniz ayarları seçin. Çalıştırma ayarlarını kısayol menüsünü açın ve seçin **etkin olarak ayarla**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093845"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio'da platformlar arası Mobil Geliştirme
 
@@ -40,7 +40,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Visual Studio'da Evrensel Windows uygulamaları hakkında bilgi edinin](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Swift ve C# arasındaki benzerlikleri hakkında bilgi edinin](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Android, iOS ve Windows, bir tek kod tabanından hedef
+### <a name="AndroidHTML"></a> Android, iOS ve Windows, bir tek kod tabanından hedef
 
  Kullanarak Android, iOS ve Windows için yerel uygulamalar oluşturabilirsiniz C# veya F# (Visual Basic şu anda desteklenmiyor).  Başlamak için Visual Studio 2017'yi, seçin **.NET ile Mobil Geliştirme** yükleyici seçeneği.
 
@@ -56,7 +56,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 
  Uygulama tasarımınızı karmaşıklığına bağlı olarak, kullanarak oluşturmayı düşünebilirsiniz *Xamarin.Forms* şablonlarında **Mobile Apps** grup proje şablonları. Xamarin.Forms, Android, iOS ve Windows arasında paylaşabilirsiniz tek bir arabirim oluşturmanıza imkan tanıyan bir UI araç takımıdır.  Xamarin.Forms çözümü derlediğinizde, bir Android uygulaması, bir iOS uygulaması ve bir Windows uygulaması elde edersiniz. Daha fazla ayrıntı için [Xamarin ile mobil geliştirme hakkında bilgi edinin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) ve [Xamarin.Forms belgeleri](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Android, iOS ve Windows uygulamaları arasında kod paylaşma
+#### <a name="ShareHTML"></a> Android, iOS ve Windows uygulamaları arasında kod paylaşma
 
  Xamarin.Forms kullanmıyorsanız ve her platform için ayrı ayrı tasarlamak seçerseniz, çoğu kullanıcı Arabirimi olmayan kodunuzun platformu projelerinde (Android, iOS ve Windows) arasında paylaşabilirsiniz. Bu, iş mantığı, bulut tümleştirme, veritabanı erişimi veya .NET Framework'ü hedefleyen herhangi bir kod içerir. Paylaşamazsınız yalnızca kodu belirli bir platformu hedefleyen kodudur.
 
@@ -69,7 +69,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Paylaşım kod seçeneklerini](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Kod paylaşma seçenekleri ile .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Windows 10 cihazlarını hedefleyin
+### <a name="WindowsHTML"></a> Windows 10 cihazlarını hedefleyin
 
  ![Windows cihazları](../cross-platform/media/windowsdevices.png "Windows cihazları")
 
@@ -84,7 +84,7 @@ Xamarin için Visual Studio Araçları ile kod ve hatta kullanıcı Arabirimi pa
 |[Evrensel Windows Platformu (UWP) için uygulama geliştirme](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Evrensel Windows Platformu (UWP) uygulamaları geçirme](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Android, iOS ve Windows (HTML/JavaScript) için uygulama oluşturma
+## <a name="HTML"></a> Android, iOS ve Windows (HTML/JavaScript) için uygulama oluşturma
 
  ![Windows, iOS ve Android cihazlarda](../cross-platform/media/homedevices.png "Windows, iOS ve Android cihazlar")
 

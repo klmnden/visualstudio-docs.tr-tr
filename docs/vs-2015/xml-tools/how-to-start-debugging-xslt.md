@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104102"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Nasıl yapılır: XSLT hata ayıklamayı Başlat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ XSLT hata ayıklayıcı bir XSLT stil sayfası veya XSLT uygulamanın hataların
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Bir stil sayfası hata ayıklamayı başlatmak için  
   
-1.  Stil sayfası XML düzenleyicisinde açın.  
+1. Stil sayfası XML düzenleyicisinde açın.  
   
-2.  Seçin **hata ayıklama XSL** gelen **XML** menüsü.  
+2. Seçin **hata ayıklama XSL** gelen **XML** menüsü.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Giriş XML belgesinden hata ayıklamayı başlatmak için  
   
-1.  XML belgesi bir XML düzenleyicisinde açın.  
+1. XML belgesi bir XML düzenleyicisinde açın.  
   
-2.  Seçin **hata ayıklama XSL** gelen **XML** menüsü.  
+2. Seçin **hata ayıklama XSL** gelen **XML** menüsü.  
   
 ## <a name="xslt-from-other-languages"></a>Diğer dillerdeki XSLT  
  Ayrıca, bir uygulamanın hatalarını ayıklama sırasında XSLT geçebilirsiniz. F11 bastığınızda bir <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> çağrı, hata ayıklayıcı adım XSLT kodu.  
@@ -44,11 +44,11 @@ XSLT hata ayıklayıcı bir XSLT stil sayfası veya XSLT uygulamanın hataların
   
 #### <a name="to-start-debugging-an-xslt-application"></a>XSLT uygulama hata ayıklama başlatılamıyor  
   
-1.  Örneği oluşturulurken <xref:System.Xml.Xsl.XslCompiledTransform> nesne, ayarlama `enableDebug` parametresi `true` kodunuzda.  
+1. Örneği oluşturulurken <xref:System.Xml.Xsl.XslCompiledTransform> nesne, ayarlama `enableDebug` parametresi `true` kodunuzda.  
   
      Bu, hata ayıklama bilgilerini derlenen kod oluşturma için XSLT işlemci bildirir.  
   
-2.  XSLT kodda ilerleyebilmeniz için F11 tuşuna basın.  
+2. XSLT kodda ilerleyebilmeniz için F11 tuşuna basın.  
   
      XSLT stil sayfası, yeni bir belge penceresi yüklenir ve XSLT hata ayıklayıcı başlatılır.  
   

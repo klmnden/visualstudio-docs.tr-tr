@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e88cb7ce972ef8568ec5163372e8f0edce045e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092961"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio'da hata ayıklarken çağrı yığınında eşleştirme yöntemleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
   Komutlar ve kod haritaları ile çalışırken kullanabileceğiniz eylemler için bilgi [göz atma ve yeniden düzenleme kod eşlemeleri](../modeling/browse-and-rearrange-code-maps.md).
 
-##  <a name="MapStack"></a> Çağrı yığınını eşleme
+## <a name="MapStack"></a> Çağrı yığınını eşleme
 
-1.  Hata ayıklama başlatılamıyor. (Klavye: **F5**)
+1. Hata ayıklama başlatılamıyor. (Klavye: **F5**)
 
-2.  Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
+2. Uygulamanız Kesme moduna girdiğinde ya da bir işleve sonra seçin **kod Haritası**. (Klavye: **CTRL** + **Shift** + **`**)
 
      ![Çağrı yığınını eşleme başlatmak için kod Haritası seçin](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -68,17 +68,17 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
      Hata ayıklamaya devam et sırasında haritada otomatik olarak güncelleştirecektir. Bkz: [harita sonraki çağrı yığınıyla Güncelleştir](#UpdateMap).
 
-##  <a name="MakeNotes"></a> Kodla ilgili notlar alın
+## <a name="MakeNotes"></a> Kodla ilgili notlar alın
  Kod içinde neler olduğunu izlemek için açıklamalar ekleyin. Bir açıklamaya yeni bir satır eklemek için basın **üst karakter + Return**.
 
  ![Kod haritasında çağrı yığını için açıklama ekleme](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a> Sonraki çağrı yığını ile eşlemeyi güncelleyin
+## <a name="UpdateMap"></a> Sonraki çağrı yığını ile eşlemeyi güncelleyin
  Uygulamanızı sonraki kesme noktasına kadar çalıştırın veya bir işleve adımlayın. Eşleme yeni bir çağrı yığını ekler.
 
  ![Sonraki çağrı yığını ile güncelleştirme kod Haritası](../debugger/media/debuggermap-addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-##  <a name="AddRelatedCode"></a> Eşlemeye ilgili kodu ekleyin
+## <a name="AddRelatedCode"></a> Eşlemeye ilgili kodu ekleyin
  Şimdi bir eşlemeniz var - sırada ne var? Visual C# .NET veya Visual Basic .NET ile çalışıyorsanız, alanlar, özellikler ve kodda neler olduğunu izlemek için diğer yöntemler gibi öğeleri ekleyin.
 
  Kod tanımını görmek için bir yöntemi çift tıklayın ya da yöntem için kısayol menüsünü kullanın. (Klavye: Tuşuna basın ve harita yöntemi seçin **F12**)
@@ -102,7 +102,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
  ![Çağrı yığınını kod haritasında bir alanı kullanan yöntemleri](../debugger/media/debuggermap-foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a> Eşlemeyi kullanarak hataları bulun
+## <a name="FindBugs"></a> Eşlemeyi kullanarak hataları bulun
  Kodunuzu görselleştirmeniz, hataları daha hızlı şekilde bulmanıza yardımcı olabilir. Örneğin, bir çizim programında bir hata araştırdığınızı varsayın. Bir çizgi çizip geri almayı denediğinizde, başka bir çizgi çizinceye kadar hiçbir şey olmaz.
 
  Kesme noktaları ayarlamak için `clear`, `undo`, ve `Repaint` yöntemleri, hata ayıklamayı başlatmak ve bunun gibi bir harita oluşturur:
@@ -115,7 +115,7 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
  ![Yeni yöntemi çağrısı için çağrı yığınını kod haritasında eklemek](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
-##  <a name="QA"></a> SORU- CEVAP
+## <a name="QA"></a> SORU- CEVAP
 
 - **Aramaların tümü haritada görünmez. Neden?**
 
@@ -139,11 +139,11 @@ Hata ayıklama sırasında çağrı yığınını görsel olarak izlemek için b
 
    Açık **Düzen** menüsünü harita araç çubuğunda:
 
-  -   Ekran düzenini değiştirin.
+  - Ekran düzenini değiştirin.
 
-  -   Eşlemeyi otomatik olarak yeniden düzenleme durdurmak için devre dışı **otomatik olarak hata ayıklama sırasında Düzen**.
+  - Eşlemeyi otomatik olarak yeniden düzenleme durdurmak için devre dışı **otomatik olarak hata ayıklama sırasında Düzen**.
 
-  -   Öğeleri eklediğinizde, eşlemeyi olabildiğince az yeniden düzenlemek için devre dışı **artan düzen**.
+  - Öğeleri eklediğinizde, eşlemeyi olabildiğince az yeniden düzenlemek için devre dışı **artan düzen**.
 
 - **Ben haritayı başkalarıyla paylaşabilir miyim?**
 

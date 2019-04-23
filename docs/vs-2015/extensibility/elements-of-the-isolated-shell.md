@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106611"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Yalıtılmış kabuğun öğeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Kayıt defteri ayarları, çalışma zamanı ayarlarını ve uygulama giriş nok
   
  Uygulamayı çalıştırdığınızda, aşağıdaki sırayla kayıt defteri ayarları tanımlanır:  
   
-1.  Uygulama için kayıt defteri anahtarı oluşturulur.  
+1. Uygulama için kayıt defteri anahtarı oluşturulur.  
   
-2.  Kayıt defteri, belirtilen anahtarları ve girişleri tanımlayarak uygulamanın .pkgdef dosyasından güncelleştirilir.  
+2. Kayıt defteri, belirtilen anahtarları ve girişleri tanımlayarak uygulamanın .pkgdef dosyasından güncelleştirilir.  
   
-3.  Uygulamanızın bir parçası olan her paket için bu paket .pkgdef dosyasından kayıt defteri güncelleştirilir. Her paket uygulamanın .pkgdef dosyasında $RootKey$ \Packages tarafından tanımlanan\\{*vsPackageGuid*} paketi için anahtar.  
+3. Uygulamanızın bir parçası olan her paket için bu paket .pkgdef dosyasından kayıt defteri güncelleştirilir. Her paket uygulamanın .pkgdef dosyasında $RootKey$ \Packages tarafından tanımlanan\\{*vsPackageGuid*} paketi için anahtar.  
   
-4.  Kayıt defteri AppEnvConfig.pkgdef ve BaseConfig.pkgdef içinde güncelleştirilir *Visual Studio SDK yükleme yolunu*\Common7\IDE\ShellExtensions\Platform dizin. Bu, Visual Studio'nun bir parçası ve ayrıca Visual Studio Kabuğu (yalıtılmış mod) yeniden dağıtılabilir paketi parçası dosyalarıdır.  
+4. Kayıt defteri AppEnvConfig.pkgdef ve BaseConfig.pkgdef içinde güncelleştirilir *Visual Studio SDK yükleme yolunu*\Common7\IDE\ShellExtensions\Platform dizin. Bu, Visual Studio'nun bir parçası ve ayrıca Visual Studio Kabuğu (yalıtılmış mod) yeniden dağıtılabilir paketi parçası dosyalarıdır.  
   
-5.  Kayıt defteri, belirtilen anahtarları ve girişleri kaldırarak uygulama .pkgundef dosyasından güncelleştirilir.  
+5. Kayıt defteri, belirtilen anahtarları ve girişleri kaldırarak uygulama .pkgundef dosyasından güncelleştirilir.  
   
 ## <a name="run-time-settings"></a>Çalışma zamanı ayarları  
  Bir kullanıcının yalıtılmış Kabuk uygulaması başladığında Visual Studio Kabuğu başlangıç giriş noktası çağırır. Uygulama ayarları, uygulamanız başlatıldığında, şu şekilde tanımlanır:  

@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076204"
 ---
 # <a name="securing-clickonce-applications"></a>ClickOnce Uygulamalarının Güvenliğini Sağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "54801912"
 ## <a name="deploying-obfuscated-assemblies"></a>Gizlenmiş (Obfuscated) Derlemeleri Dağıtma  
  Başkaları tarafından kod üzerine tersine mühendislik yapılmasını engellemek için Dotfuscator kullanarak uygulamanızı gizleyebilirsiniz. Bunun yanında, derleme gizleme Visual Studio IDE veya ClickOnce dağıtım sürecine tümleşikleştirilmemiştir. Bu nedenle, gizleme işlemini dağıtım sürecinin dışında belki bir bağlama sonrası adımı kullanarak gerçekleştirebilirsiniz. Projeyi derledikten sonra, aşağıdaki adımları Visual Studio'nun dışında el ile gerçekleştirmelisiniz.  
   
-1.  Dotfuscator kullanarak gizlemeyi yapın.  
+1. Dotfuscator kullanarak gizlemeyi yapın.  
   
-2.  ClickOnce bildirimleri oluşturmak ve bunları imzalamak için Mage.exe veya MagUI.exe kullanın. Daha fazla bilgi için [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) ve [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. ClickOnce bildirimleri oluşturmak ve bunları imzalamak için Mage.exe veya MagUI.exe kullanın. Daha fazla bilgi için [Mage.exe (bildirim üretme ve düzenleme aracı)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) ve [MageUI.exe (bildirim üretme ve düzenleme aracı, grafik istemci)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-3.  El ile dosyaları dağıtım kaynağı konumuna (Web sunucusu, UNC paylaşımı veya CD-ROM) yayımlayın. (Kopyalayın.)  
+3. El ile dosyaları dağıtım kaynağı konumuna (Web sunucusu, UNC paylaşımı veya CD-ROM) yayımlayın. (Kopyalayın.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

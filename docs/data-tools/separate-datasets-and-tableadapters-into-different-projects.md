@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096874"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Veri kümeleri ile TableAdapter’ları farklı projelere ayırma
 Türü belirtilmiş datasets Gelişmiş böylece [TableAdapters](create-and-configure-tableadapters.md) ve veri kümesi sınıfları ayrı projelere oluşturulabilir. Bu, hızla uygulama katmanları ayırmak ve n katmanlı veri uygulamaları oluşturmak sağlar.
@@ -30,25 +30,25 @@ Veri kümesi kodunu TableAdapter koddan ayırdığınızda, veri kümesi kodunu 
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Farklı bir projeye veri kümesini ayırmak için
 
-1.  Bir veri kümesini içeren bir çözüm açın (*.xsd* dosyası).
+1. Bir veri kümesini içeren bir çözüm açın (*.xsd* dosyası).
 
     > [!NOTE]
     >  Veri kümesi kodunuzu ayırmak istediğiniz proje çözüm içermiyorsa, projeyi oluşturmak veya mevcut bir projeyi çözüme ekleyin.
 
-2.  Türü belirtilmiş veri kümesi dosyasına çift tıklayın (bir *.xsd* dosya) içinde **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.
+2. Türü belirtilmiş veri kümesi dosyasına çift tıklayın (bir *.xsd* dosya) içinde **Çözüm Gezgini** açmak için **veri kümesi Tasarımcısı**.
 
-3.  Boş bir alanı seçin **veri kümesi Tasarımcısı**.
+3. Boş bir alanı seçin **veri kümesi Tasarımcısı**.
 
-4.  İçinde **özellikleri** penceresinde bulun **DataSet projesi** düğümü.
+4. İçinde **özellikleri** penceresinde bulun **DataSet projesi** düğümü.
 
-5.  İçinde **DataSet projesi** listesinde, istediğiniz veri kümesi kodunu oluşturmak proje adını seçin.
+5. İçinde **DataSet projesi** listesinde, istediğiniz veri kümesi kodunu oluşturmak proje adını seçin.
 
      Veri kümesi kodunu oluşturmak istediğiniz projeyi seçin sonra **veri kümesi dosyası** özelliği, bir varsayılan dosya adıyla doldurulur. Gerekirse, bu adı değiştirebilirsiniz. Ayrıca, belirli bir dizine veri kümesi kodunu oluşturmak istiyorsanız, ayarlayabileceğiniz **proje klasörü** özelliğini bir klasörün adı.
 
     > [!NOTE]
     >  Veri kümelerini ve TableAdapter bağdaştırıcılarını ayırdığınızda (ayarlayarak **DataSet projesi** özelliği), projedeki varolan kısmi veri kümesi sınıfları olmaz taşınması otomatik olarak. Varolan kısmi veri kümesi sınıfları, veri kümesi projesine el ile taşınmalıdır.
 
-6.  Veri kümesini kaydetme.
+6. Veri kümesini kaydetme.
 
      Veri kümesi kod içinde seçilen projede oluşturulur **DataSet projesi** özelliği ve **TableAdapter** kod, geçerli projenin içine oluşturulur.
 

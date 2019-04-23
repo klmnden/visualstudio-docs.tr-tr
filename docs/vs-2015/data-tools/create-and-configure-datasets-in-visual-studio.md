@@ -17,12 +17,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093481"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Visual Studio’da veri kümeleri oluşturma ve yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ A *veri kümesi* bellekte bir veritabanından veri depolayan ve etkinleştirmek 
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Veri Kaynağı Yapılandırma Sihirbazı'nı kullanarak yeni bir veri kümesi oluşturma
 
-1.  Üzerinde **proje** menüsünü tıklatın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.
+1. Üzerinde **proje** menüsünü tıklatın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.
 
-2.  İçin bağlanırsınız veri kaynağı türü seçin.
+2. İçin bağlanırsınız veri kaynağı türü seçin.
 
      ![Veri Kaynağı Yapılandırma Sihirbazı'nı](../data-tools/media/data-source-configuration-wizard.png "veri kaynağı Yapılandırma Sihirbazı")
 
-3.  Veritabanları için veritabanı veya veri kaynağı, veri kümesi için olan veritabanlarını seçin.
+3. Veritabanları için veritabanı veya veri kaynağı, veri kümesi için olan veritabanlarını seçin.
 
      ![Veri kaynağı bağlantısı seçin](../data-tools/media/data-source-choose-a-connection.png "veri kaynağı bağlantısı seçin")
 
-4.  Tablolar (veya tek tek sütun) depolanan yordamları, işlevleri ve görünümleri kümesinde temsil edilmesini istediğiniz veritabanını seçin.
+4. Tablolar (veya tek tek sütun) depolanan yordamları, işlevleri ve görünümleri kümesinde temsil edilmesini istediğiniz veritabanını seçin.
 
      ![Veritabanı nesneleri seçmenizi](../data-tools/media/raddata-chose-objects.png "raddata seçtiğiniz nesneleri")
 
-5.  **Son**'a tıklayın.
+5. **Son**'a tıklayın.
 
-6.  Veri kümesine bir düğüm olarak görünür **Çözüm Gezgini**:
+6. Veri kümesine bir düğüm olarak görünür **Çözüm Gezgini**:
 
      ![Çözüm Gezgini'nde DataSet](../data-tools/media/dataset-in-solution-explorer.png "Çözüm Gezgini'nde veri kümesi")
 
@@ -57,11 +57,11 @@ A *veri kümesi* bellekte bir veritabanından veri depolayan ve etkinleştirmek 
 
      ![Veri kümesi Tasarımcısı](../data-tools/media/dataset-designer.png "veri kümesi Tasarımcısı")
 
-7.  Tabloları bağlanan ilişkisi satırları tablo ilişkileri veritabanında tanımlanan temsil eder. Varsayılan olarak, bir veritabanındaki yabancı anahtar kısıtlamaları yalnızca bir ilişki güncelleştirme ile temsil edilir ve yok olarak ayarlanmış kuralları silin. Genellikle, istediğiniz olmasıdır. Ancak, ortaya çıkarmak için satırları tıklayabilirsiniz **ilişkisi** iletişim kutusunda, sıradüzensel güncellemeleri davranışını değiştirebileceğiniz. Daha fazla bilgi için [veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md) ve [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md).
+7. Tabloları bağlanan ilişkisi satırları tablo ilişkileri veritabanında tanımlanan temsil eder. Varsayılan olarak, bir veritabanındaki yabancı anahtar kısıtlamaları yalnızca bir ilişki güncelleştirme ile temsil edilir ve yok olarak ayarlanmış kuralları silin. Genellikle, istediğiniz olmasıdır. Ancak, ortaya çıkarmak için satırları tıklayabilirsiniz **ilişkisi** iletişim kutusunda, sıradüzensel güncellemeleri davranışını değiştirebileceğiniz. Daha fazla bilgi için [veri kümelerindeki ilişkiler](../data-tools/relationships-in-datasets.md) ve [hiyerarşik güncelleştirme](../data-tools/hierarchical-update.md).
 
      ![Veri kümesi ilişkisi iletişim](../data-tools/media/raddata-relation-dialog.png "raddata ilişkisi iletişim")
 
-8.  Tablo, tablo bağdaştırıcısı veya bir tablodaki sütun adı özelliklerini görmek için tıklayın **özellikleri** penceresi. Bazı değerler burada değiştirebilirsiniz. Yalnızca veri kümesi, kaynak veritabanı değiştirmekte olduğunuz unutmayın.
+8. Tablo, tablo bağdaştırıcısı veya bir tablodaki sütun adı özelliklerini görmek için tıklayın **özellikleri** penceresi. Bazı değerler burada değiştirebilirsiniz. Yalnızca veri kümesi, kaynak veritabanı değiştirmekte olduğunuz unutmayın.
 
      ![Veri kümesi sütunu özellikleri](../data-tools/media/dataset-column-properties.png "veri kümesi sütun özellikleri")
 
@@ -74,22 +74,22 @@ A *veri kümesi* bellekte bir veritabanından veri depolayan ve etkinleştirmek 
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Varolan bir veri kümesi için bir veritabanı tablosu veya diğer nesne Ekle
  Bu yordamda, ilk veri kümesini oluşturmak için kullanılan aynı veritabanından tablo ekleme gösterilmiştir.
 
-1.  Veri kümesi düğümünde tıklayın **Çözüm Gezgini** veri kümesi Tasarımcısı ile odaklanmak için.
+1. Veri kümesi düğümünde tıklayın **Çözüm Gezgini** veri kümesi Tasarımcısı ile odaklanmak için.
 
-2.  Tıklayın **veri kaynakları** sekmesinde Visual Studio'nun sol kenar boşluğunda veya girin `Data Sources` içinde **hızlı başlatma**.
+2. Tıklayın **veri kaynakları** sekmesinde Visual Studio'nun sol kenar boşluğunda veya girin `Data Sources` içinde **hızlı başlatma**.
 
-3.  Veri kümesi düğümüne sağ tıklayıp **veri kaynağı Yapılandırma Sihirbazı'nı** .
+3. Veri kümesi düğümüne sağ tıklayıp **veri kaynağı Yapılandırma Sihirbazı'nı** .
 
      ![Veri kaynağı bağlam menüsü](../data-tools/media/data-source-context-menu.png "veri kaynağı bağlam menüsü")
 
-4.  Sihirbaz, hangi ek tablolar veya saklı yordamları veya veri kümesine eklemek için diğer veritabanı nesnesi belirtmek için kullanın.
+4. Sihirbaz, hangi ek tablolar veya saklı yordamları veya veri kümesine eklemek için diğer veritabanı nesnesi belirtmek için kullanın.
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Tek başına veri tablosu ekleme
 
-1.  Kümenizde açın **veri kümesi Tasarımcısı**.
+1. Kümenizde açın **veri kümesi Tasarımcısı**.
 
-2.  Sürükleme bir <xref:System.Data.DataTable> gelen sınıfı **veri kümesi** sekmesinde **araç kutusu** üzerine **veri kümesi Tasarımcısı**.
+2. Sürükleme bir <xref:System.Data.DataTable> gelen sınıfı **veri kümesi** sekmesinde **araç kutusu** üzerine **veri kümesi Tasarımcısı**.
 
-3.  Veri tablosu tanımlamak için sütunları ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna sütun ekleme](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Veri tablosu tanımlamak için sütunları ekleyin. Daha fazla bilgi için [nasıl yapılır: Bir DataTable tablosuna sütun ekleme](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4.  Tek başına tabloları uygulamak için gereken `Fill` mantığı tek başına tablolar, böylece bunları verilerle doldurabilirsiniz. Tek başına veri tablolarını doldurmak hakkında daha fazla bilgi için bkz: [dataadapter'dan bir DataSet doldurma](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Tek başına tabloları uygulamak için gereken `Fill` mantığı tek başına tablolar, böylece bunları verilerle doldurabilirsiniz. Tek başına veri tablolarını doldurmak hakkında daha fazla bilgi için bkz: [dataadapter'dan bir DataSet doldurma](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

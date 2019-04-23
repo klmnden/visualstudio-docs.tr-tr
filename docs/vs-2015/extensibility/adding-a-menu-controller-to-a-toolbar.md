@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107807"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Araç Çubuğuna Menü Denetleyicisi Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu ekleme](../extensi
   
 ## <a name="implementing-the-menu-controller-commands"></a>Menü denetleyicisi komutları uygulama  
   
-1.  TWTestCommandPackageGuids.cs içinde komut kimlikleri, üç menü öğeleri için var olan komut kimlikleri sonra ekleyin.  
+1. TWTestCommandPackageGuids.cs içinde komut kimlikleri, üç menü öğeleri için var olan komut kimlikleri sonra ekleyin.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu ekleme](../extensi
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  TWTestCommand.cs içinde TWTestCommand sınıfının üstüne aşağıdaki kodu ekleyin.  
+2. TWTestCommand.cs içinde TWTestCommand sınıfının üstüne aşağıdaki kodu ekleyin.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  Son çağrısından sonra TWTestCommand Oluşturucuda `AddCommand` yöntemi, aynı işleyicileri aracılığıyla her komut için olayları yönlendirmek için kod ekleyin.  
+3. Son çağrısından sonra TWTestCommand Oluşturucuda `AddCommand` yöntemi, aynı işleyicileri aracılığıyla her komut için olayları yönlendirmek için kod ekleyin.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu ekleme](../extensi
     }  
     ```  
   
-4.  Bir olay işleyicisi, seçilen komutun işaretli olarak işaretlemek için TWTestCommand sınıfına ekleyin.  
+4. Bir olay işleyicisi, seçilen komutun işaretli olarak işaretlemek için TWTestCommand sınıfına ekleyin.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu ekleme](../extensi
     }  
     ```  
   
-5.  Kullanıcı menü denetleyicisi komutu seçtiğinde bir MessageBox görüntüler bir olayı işleyicisi ekleyin:  
+5. Kullanıcı menü denetleyicisi komutu seçtiğinde bir MessageBox görüntüler bir olayı işleyicisi ekleyin:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ Bu izlenecek yolda yapılar [araç penceresine araç çubuğu ekleme](../extensi
   
 ## <a name="testing-the-menu-controller"></a>Menü denetleyicisi test etme  
   
-1.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görmeniz gerekir.  
+1. Projeyi oluşturmak ve hata ayıklamaya başlayın. Deneysel örneği görmeniz gerekir.  
   
-2.  Açık **Test ToolWindow** üzerinde **görünüm / diğer Windows** menüsü.  
+2. Açık **Test ToolWindow** üzerinde **görünüm / diğer Windows** menüsü.  
   
      Menü denetleyicisi araç penceresindeki araç çubuğunda görünür ve görüntüler **MC madde 1**.  
   
-3.  Sol Ok menü denetleyicisi düğmesine tıklayın.  
+3. Sol Ok menü denetleyicisi düğmesine tıklayın.  
   
      İlki seçilir ve simgesini geçici olarak bir Vurgu kutusu olan üç öğe görmeniz gerekir. Tıklayın **MC madde 3**.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106467"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Özellik &lt;özellik adı&gt; silinemiyor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "59661213"
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
-1.  O/R Tasarımcısı'nda hata iletisinde belirtilen veri sınıfları bağlanan devralım çizgisini seçin.  
+1. O/R Tasarımcısı'nda hata iletisinde belirtilen veri sınıfları bağlanan devralım çizgisini seçin.  
   
-2.  Ayarlama **ayrıştırıcı** farklı bir özellik için özellik.  
+2. Ayarlama **ayrıştırıcı** farklı bir özellik için özellik.  
   
-3.  Özelliği yeniden silmeyi deneyin.  
+3. Özelliği yeniden silmeyi deneyin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: O/R Tasarımcısı kullanarak devralmayı yapılandırma](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 7: Paylaşım | Microsoft Docs'
+title: 'Test Alanı 7: Paylaşım | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47bf73d60d71a7b1c2e1c80e58c5900c870599ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771480"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111642"
 ---
-# <a name="test-area-7-share"></a>Test alanı 7: Paylaş
+# <a name="test-area-7-share"></a>Test Alanı 7: Paylaş
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu test alanı konumlar arasında paylaşım öğelerini kapsar **paylaşımı** komutu.  
@@ -27,13 +27,13 @@ Bu test alanı konumlar arasında paylaşım öğelerini kapsar **paylaşımı**
   
  En az bir dosya içindeki kaynak denetimi altında bir klasör seçerseniz klasörler halinde paylaşımı çalışır. Paylaş komutunu aşağıdaki koşullarda devre dışı bırakılır:  
   
--   Seçili klasörü boş bir klasör ise.  
+- Seçili klasörü boş bir klasör ise.  
   
--   Gerçek bir klasör bulunur, ancak hiçbir kaynak denetim dosyaları içerir.  
+- Gerçek bir klasör bulunur, ancak hiçbir kaynak denetim dosyaları içerir.  
   
--   Sanal bir klasör varsa, kaynak denetimi altında dosyaların içinde veya olup.  
+- Sanal bir klasör varsa, kaynak denetimi altında dosyaların içinde veya olup.  
   
--   Bir uzak Site Web projesi varsa.  
+- Bir uzak Site Web projesi varsa.  
   
 ## <a name="command-menu-access"></a>Komut menü erişimi  
  Aşağıdaki [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır.  
@@ -42,11 +42,11 @@ Bu test alanı konumlar arasında paylaşım öğelerini kapsar **paylaşımı**
   
 ## <a name="expected-behavior"></a>Beklenen davranış  
   
--   Paylaşılan dosya, paylaşılan bir konumda görüntülenir.  
+- Paylaşılan dosya, paylaşılan bir konumda görüntülenir.  
   
--   Dosyaları paylaşılır kaynak denetim sürüm deposu geçmişini gösterir görüntüleme.  
+- Dosyaları paylaşılır kaynak denetim sürüm deposu geçmişini gösterir görüntüleme.  
   
--   Paylaşılan bir dosya düzenleme dosyası konumlarının her ikisinde de düzenler.  
+- Paylaşılan bir dosya düzenleme dosyası konumlarının her ikisinde de düzenler.  
   
 ## <a name="test-cases"></a>Test çalışmaları  
  Belirli test çalışmaları için paylaşımı test alanı aşağıda verilmiştir.  

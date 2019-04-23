@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095483"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Nasıl yapılır: '.NET Framework'ün birden çok sürümünde çalışan uygulamaları dağıtmak için ClickOnce'ı kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
  Bu işlem, aşağıdaki adımları gerektirir:  
   
-1.  Uygulama ve dağıtım bildirimlerini oluşturur.  
+1. Uygulama ve dağıtım bildirimlerini oluşturur.  
   
-2.  Birden çok .NET Framework sürümü listelemek için dağıtım bildirimini değiştirin.  
+2. Birden çok .NET Framework sürümü listelemek için dağıtım bildirimini değiştirin.  
   
-3.  Uyumlu .NET Framework çalışma zamanı sürüm listelemek için app.config dosyasını değiştirin.  
+3. Uyumlu .NET Framework çalışma zamanı sürüm listelemek için app.config dosyasını değiştirin.  
   
-4.  Bağımlı derlemeler .NET Framework derlemeleri olarak işaretlemek için uygulama bildirimini değiştirin.  
+4. Bağımlı derlemeler .NET Framework derlemeleri olarak işaretlemek için uygulama bildirimini değiştirin.  
   
-5.  Uygulama bildirimini imzalayın.  
+5. Uygulama bildirimini imzalayın.  
   
-6.  Güncelleştirin ve dağıtım bildirimini imzalayın.  
+6. Güncelleştirin ve dağıtım bildirimini imzalayın.  
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Uygulama ve dağıtım bildirimleri oluşturmak için  
   
--   Uygulamayı yayımlamak ve uygulama ve dağıtım bildirim dosyaları oluşturmak için yayınlama Sihirbazı'nı veya yayımlama sayfası Proje Tasarımcısı'nı kullanın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) veya [yayımlama sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md).  
+- Uygulamayı yayımlamak ve uygulama ve dağıtım bildirim dosyaları oluşturmak için yayınlama Sihirbazı'nı veya yayımlama sayfası Proje Tasarımcısı'nı kullanın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) veya [yayımlama sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Birden çok .NET Framework sürümü listelemek için dağıtım bildirimini değiştirmek için  
   
-1.  Yayımla dizininde, dağıtım bildirimini Visual Studio XML düzenleyicisi kullanarak açın. Dağıtım bildirimi .application dosya adı uzantısına sahiptir.  
+1. Yayımla dizininde, dağıtım bildirimini Visual Studio XML düzenleyicisi kullanarak açın. Dağıtım bildirimi .application dosya adı uzantısına sahiptir.  
   
-2.  XML kodu arasında değiştirin `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` ve `</compatibleFrameworks>` ile uygulamanız için desteklenen .NET Framework sürümlerini listeler XML öğeleri.  
+2. XML kodu arasında değiştirin `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` ve `</compatibleFrameworks>` ile uygulamanız için desteklenen .NET Framework sürümlerini listeler XML öğeleri.  
   
      Aşağıdaki tabloda kullanılabilir .NET Framework sürümleri ve dağıtım bildirimine ekleyebileceğiniz karşılık gelen XML bazıları gösterilmektedir.  
   
@@ -68,9 +68,9 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Uyumlu .NET Framework çalışma zamanı sürüm listelemek için app.config dosyasını değiştirmek için  
   
-1.  Çözüm Gezgini'nde, Visual Studio XML Düzenleyicisi'ni kullanarak App.config dosyasını açın.  
+1. Çözüm Gezgini'nde, Visual Studio XML Düzenleyicisi'ni kullanarak App.config dosyasını açın.  
   
-2.  XML kodu arasında değiştirin (veya ekleyin) `<startup>` ve `</startup>` ile uygulamanız için desteklenen .NET Framework çalışma zamanları listeler XML öğeleri.  
+2. XML kodu arasında değiştirin (veya ekleyin) `<startup>` ve `</startup>` ile uygulamanız için desteklenen .NET Framework çalışma zamanları listeler XML öğeleri.  
   
      Aşağıdaki tabloda kullanılabilir .NET Framework sürümleri ve dağıtım bildirimine ekleyebileceğiniz karşılık gelen XML bazıları gösterilmektedir.  
   
@@ -83,15 +83,15 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Bağımlı derlemeler .NET Framework derlemeleri olarak işaretlemek için uygulama bildirimini değiştirmek için  
   
-1.  Yayımla dizininde, uygulama bildirimini Visual Studio XML düzenleyicisi kullanarak açın. Dağıtım bildirimi .manifest dosya adı uzantısına sahiptir.  
+1. Yayımla dizininde, uygulama bildirimini Visual Studio XML düzenleyicisi kullanarak açın. Dağıtım bildirimi .manifest dosya adı uzantısına sahiptir.  
   
-2.  Ekleme `group="framework"` sentinel bütünleştirilmiş kodların bağımlı XML (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, ve `System.Data.Entity`). Örneğin, XML, aşağıdaki gibi görünmelidir:  
+2. Ekleme `group="framework"` sentinel bütünleştirilmiş kodların bağımlı XML (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, ve `System.Data.Entity`). Örneğin, XML, aşağıdaki gibi görünmelidir:  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  Sürüm numarasını güncelleştirmek `<assemblyIdentity>` Microsoft.Windows.CommonLanguageRuntime'a öğesine en küçük ortak paydası .NET Framework sürüm numarası. Örneğin, uygulama .NET Framework 3.5 hedefliyorsa ve [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], kullanım 2.0.50727.0 sürüm numarasını ve XML aşağıdaki gibi görünmelidir:  
+3. Sürüm numarasını güncelleştirmek `<assemblyIdentity>` Microsoft.Windows.CommonLanguageRuntime'a öğesine en küçük ortak paydası .NET Framework sürüm numarası. Örneğin, uygulama .NET Framework 3.5 hedefliyorsa ve [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], kullanım 2.0.50727.0 sürüm numarasını ve XML aşağıdaki gibi görünmelidir:  
   
     ```  
     <dependency>  
@@ -103,7 +103,7 @@ ClickOnce dağıtım teknolojisini kullanarak birden çok .NET Framework sürüm
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Bildirimlerini güncelleştirin ve uygulama ve dağıtım yeniden imzalamak için  
   
--   Güncelleştirme ve uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+- Güncelleştirme ve uygulama ve dağıtım bildirimlerini yeniden imzalama. Daha fazla bilgi için [nasıl yapılır: Uygulama ve dağıtım bildirimlerini yeniden imzalama](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)   

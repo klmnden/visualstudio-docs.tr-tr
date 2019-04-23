@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103439"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Türleri Görsel Tasarımcıların Kullanımına Sunma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "54766801"
   
  Geçici PE destekten yararlanın özel araçlar, aşağıdaki kurallara uymalıdır:  
   
--   `GeneratesDesignTimeSource` 1 olarak kayıt defterinde ayarlamanız gerekir.  
+- `GeneratesDesignTimeSource` 1 olarak kayıt defterinde ayarlamanız gerekir.  
   
      Hiçbir programı yürütülebilir dosyanın derleme, bu ayar olmadan gerçekleşir.  
   
--   Oluşturulan kodun genel proje ayarı aynı dilde olması gerekir.  
+- Oluşturulan kodun genel proje ayarı aynı dilde olması gerekir.  
   
      Geçici PE ne özel araç istenen uzantı olarak raporlar bağımsız olarak derlenir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> koşuluyla `GeneratesDesignTimeSource` kayıt defterinde 1 olarak ayarlanır. Uzantısı .vb veya .cs .jsl olması gerekmez; Bu uzantıyı olabilir.  
   
--   Özel araç tarafından oluşturulan kodu geçerli olması gerekir ve kendi yalnızca başvuruları projedeki mevcut kümesini kullanarak zaman derlemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> tamamlandıktan yürütülüyor.  
+- Özel araç tarafından oluşturulan kodu geçerli olması gerekir ve kendi yalnızca başvuruları projedeki mevcut kümesini kullanarak zaman derlemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> tamamlandıktan yürütülüyor.  
   
      Geçici PE derlendiğinde, özel araç çıktısı için derleyici sağlanan yalnızca kaynak dosyası değil. Bu nedenle, bir geçici PE kullanan özel bir araç, diğer dosyalar projesinde bağımsız olarak derlenebilir Çıkış dosyalarını oluşturmanız gerekir.  
   

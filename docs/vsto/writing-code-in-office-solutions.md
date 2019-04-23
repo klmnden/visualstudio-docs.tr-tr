@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076896"
 ---
 # <a name="write-code-in-office-solutions"></a>Office çözümlerinde kod yazma
   Visual Studio'da proje türlerinde farklı Office projelerinde kod yazma bazı yönlerini vardır. Bu farklılıkların birçoğu, Office nesne modelleri, yönetilen kod için sunulan şekilde ilgilidir. Diğer farklar Office projeleri tasarımını ilgilidir.
@@ -63,9 +63,9 @@ ms.locfileid: "54864078"
 
  Office PIA'ların türleri COM tabanlı nesne modellerinde türlere karşılık geldiğinden, bu tür şekilde genellikle diğer yönetilen türleri farklıdır. Örneğin, Office birincil birlikte çalışma derlemesi isteğe bağlı parametrelere sahip yöntemleri çağırma yolunuz projenizde kullandığınız programlama diline bağlıdır. Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).
+- [Office çözümlerinde isteğe bağlı parametreler](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).
+- [Office çözümlerinde geç bağlama](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Office projeleri program modeli
  Tüm Office projeleri, kodunuz için giriş noktası sağlayan bir veya daha fazla oluşturulan sınıflar içerir. Bu sınıflar, konak uygulamanın nesne modeline erişim ve Eylemler bölmesi ve özel görev bölmeleri gibi özelliklerine erişim olanağı da sağlar.
@@ -99,8 +99,11 @@ ms.locfileid: "54864078"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Visual Basic vs ile program. Visual C# Office çözümleri
  Visual Basic veya Visual C# kullanarak Office çözümleri oluşturabilirsiniz. Microsoft Office nesne modelleri ile Microsoft Visual Basic for Applications (VBA) kullanılmak üzere tasarlanmış olması nedeniyle, Visual Basic geliştiricileri rahatça Microsoft Office uygulamaları tarafından oluşturulan nesneleri ile çalışabilirsiniz. Visual C# geliştiricileri, Visual Basic geliştiricilerinin aynı özelliklerin çoğunu kullanabilirsiniz, ancak burada oldukları Office nesne modelini kullanmak için ek kod yazmanız gereken bazı durumlar vardır. Ofis geliştirmede temel programlama özelliklerini ve Visual Basic ve C# içinde yazılan yönetilen koda arasındaki bazı farklar vardır.
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic ve Visual C# arasındaki farklar
- Aşağıdaki tabloda Office geliştirme Visual Basic ve Visual C# arasındaki temel farklar gösterilmektedir.
+<!-- markdownlint-enable MD003 MD020 -->
+
+Aşağıdaki tabloda Office geliştirme Visual Basic ve Visual C# arasındaki temel farklar gösterilmektedir.
 
 |Özellik|Açıklama|Visual Basic desteği|Visual C# desteği|
 |-------------|-----------------|--------------------------|------------------------|

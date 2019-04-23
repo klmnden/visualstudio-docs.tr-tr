@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102724"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Üst kapsayıcı klasörleri çözümleri oluşturun
 İçinde kaynak denetimi eklentisi API sürümü 1.2, bir kullanıcı bir çözüm içindeki tüm web projeleri için tek bir kök kaynak denetimi hedef belirtebilirsiniz. Bu tek köklü bir süper birleşik kök (SUR) olarak adlandırılır.
@@ -35,13 +35,13 @@ ms.locfileid: "59661067"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE bir çözüm kaynak denetimine eklerken SUR klasör neredeyse her zaman oluşturur. Özellikle, bunu aşağıdaki durumlarda yapar:
 
--   Bir dosya paylaşımı web projesi projedir.
+- Bir dosya paylaşımı web projesi projedir.
 
--   Proje ve çözüm dosyasını farklı sürücülere vardır.
+- Proje ve çözüm dosyasını farklı sürücülere vardır.
 
--   Proje ve çözüm dosyasını farklı paylaşımları vardır.
+- Proje ve çözüm dosyasını farklı paylaşımları vardır.
 
--   Projeleri ayrı olarak (bir kaynak kontrol çözümünde) eklendi.
+- Projeleri ayrı olarak (bir kaynak kontrol çözümünde) eklendi.
 
 İçinde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], SUR klasörün adını uzantısı olmadan çözüm adı ile aynı olması önerilir. İki sürüm davranış aşağıdaki tabloda özetlenmiştir.
 

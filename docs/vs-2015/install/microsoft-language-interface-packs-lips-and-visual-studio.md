@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096510"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Dil Arabirim Paketleri (LIP'ler) ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ Bir Windows Dil Arabirim Paketi (LIP) kullanarak Windows dil sürümünü yükle
 ### <a name="support-for-code-pages"></a>Kod sayfaları için destek
  Bazı Visual Studio Araçları metin geçerli kod sayfasında karakter içerdiğinde metin düzgün görüntülemez. Bunun yerine, soru işareti görünür veya metin bozuk olabilir. Aşağıdaki araçlar veya alanlar etkilenir:
 
--   FTP kullanarak dağıtılmış siteler.
+- FTP kullanarak dağıtılmış siteler.
 
--   ASCII olmayan bilgisayar adlarında bazı denetimler.
+- ASCII olmayan bilgisayar adlarında bazı denetimler.
 
--   Visual Studio dışında çalışan komut satırı araçları.
+- Visual Studio dışında çalışan komut satırı araçları.
 
--   Visual Basic Geçiş Sihirbazı.
+- Visual Basic Geçiş Sihirbazı.
 
--   ActiveX denetimi Test kapsayıcısı.
+- ActiveX denetimi Test kapsayıcısı.
 
--   OLE/COM Nesne Görüntüleyici.
+- OLE/COM Nesne Görüntüleyici.
 
--   ISAPI Web hata ayıklama aracı.
+- ISAPI Web hata ayıklama aracı.
 
--   HTML Yardımı içeriğe sahip MFC uygulaması projeleri.
+- HTML Yardımı içeriğe sahip MFC uygulaması projeleri.
 
--   Visual SourceSafe / SCCI UI gördükleri İngilizce'ye zaman uyumsuz kod sayfası.
+- Visual SourceSafe / SCCI UI gördükleri İngilizce'ye zaman uyumsuz kod sayfası.
 
--   Visual SourceSafe Unicode dosya adlarını desteklemez.
+- Visual SourceSafe Unicode dosya adlarını desteklemez.
 
--   Son kullanıcı tarafından tanımlanan karakter (özel kullanım bölge), belirteç/tanımlayıcı olarak kullanılamaz.
+- Son kullanıcı tarafından tanımlanan karakter (özel kullanım bölge), belirteç/tanımlayıcı olarak kullanılamaz.
 
--   Bazı Visual Studio araç pencerelerinin Windows kod sayfası, Doğu Asya dilleri için ayarlandığında Latin Genişletilmiş-B karakterleri görüntülenemiyor.
+- Bazı Visual Studio araç pencerelerinin Windows kod sayfası, Doğu Asya dilleri için ayarlandığında Latin Genişletilmiş-B karakterleri görüntülenemiyor.
 
--   Birden çok dili betikleri karakterlerinden oluşan metin çalışır, bazı karakterler için varsayılan karakter görüntüleyebilir.
+- Birden çok dili betikleri karakterlerinden oluşan metin çalışır, bazı karakterler için varsayılan karakter görüntüleyebilir.
 
--   Kopyalama ve karmaşık kod dizeleri ortak denetimlere yapıştırma kaybolacak şekillendirme karakter neden olabilir. Bunun yerine, metin girişi için karşılık gelen dil klavyeyi kullanın.
+- Kopyalama ve karmaşık kod dizeleri ortak denetimlere yapıştırma kaybolacak şekillendirme karakter neden olabilir. Bunun yerine, metin girişi için karşılık gelen dil klavyeyi kullanın.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Geçerli kod sayfasında bulunmayan karakterler düzgün görüntülemek için
 
-1.  Tıklayın **Başlat**, tıklayın **Denetim Masası**ve ardından açın **bölge ve Dil Seçenekleri** (veya **bölge** içinde [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Tıklayın **Başlat**, tıklayın **Denetim Masası**ve ardından açın **bölge ve Dil Seçenekleri** (veya **bölge** içinde [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
     >  Bu adımları izlemek için bilgisayarda yönetici olması gerekir.
 
-2.  Tıklayın **Gelişmiş** sekmesi.
+2. Tıklayın **Gelişmiş** sekmesi.
 
-3.  İçinde **Unicode olmayan program kullanmak istediğiniz dil sürümüyle eşleşen bir dil seçin** listesinde, şu anda dil seçin.
+3. İçinde **Unicode olmayan program kullanmak istediğiniz dil sürümüyle eşleşen bir dil seçin** listesinde, şu anda dil seçin.
 
-4.  **Tamam**'ı tıklatın.
+4. **Tamam**'ı tıklatın.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Visual Studio UI metinde kullanılan dili değiştirme
  Birden çok dil sürümünü yüklediğinizde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aynı bilgisayarda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI varsayılanları **Microsoft Windows ile aynı**. Bu ayar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI metni, işletim sistemi için görüntüleme dili olarak belirttiğiniz dilde görüntülenir.

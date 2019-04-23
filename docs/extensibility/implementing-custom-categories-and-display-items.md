@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075889"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Özel kategoriler uygulamak ve öğeleri görüntüleme
 VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] özel kategoriler ve görüntü öğeleri aracılığıyla tümleşik geliştirme ortamı (IDE).
@@ -81,11 +81,11 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 
 - Yöntemleri aracılığıyla uygulanan <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> IDE ile sağlamanız gerekir:
 
-  -   Listesini **görüntü öğeleri** içinde **kategorisi.**
+  - Listesini **görüntü öğeleri** içinde **kategorisi.**
 
-  -   Yerelleştirilebilir adlarını **görüntü öğeleri**.
+  - Yerelleştirilebilir adlarını **görüntü öğeleri**.
 
-  -   Her üye için bilgi görüntüler **kategori**.
+  - Her üye için bilgi görüntüler **kategori**.
 
   > [!NOTE]
   >  Her **kategori** en az bir içeren **görüntü öğesi**.
@@ -94,11 +94,11 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 
    Uygulaması ile bir IDE sağlar:
 
-  -   Listesini **kategorileri** belirli bir grup oluşturur.
+  - Listesini **kategorileri** belirli bir grup oluşturur.
 
-  -   Erişim örneklerini <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> her Destek **kategori** grup içinde.
+  - Erişim örneklerini <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> her Destek **kategori** grup içinde.
 
-  -   Yerelleştirilebilir grubu adları.
+  - Yerelleştirilebilir grubu adları.
 
 - IDE güncelleştiriliyor:
 
@@ -109,13 +109,13 @@ VSPackage denetim yazı tipleri ve renkler için kendi metin sağlayabilir [!INC
 ## <a name="to-handle-font-and-color-changes"></a>Yazı tipi ve renk değişiklikleri işlemek için
  VSPackage görüntülenen metin renklendirmesi doğru desteklemek için VSPackage'ı destekleyen renklendirme hizmeti aracılığıyla yapılan kullanıcı tarafından başlatılan değişiklikleri yanıtlamalıdır **yazı tipleri ve renkler** Özellikler sayfası. VSPackage bunu şu şekilde yapar:
 
--   Uygulayarak IDE tarafından oluşturulan olayları işleme <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> arabirimi.
+- Uygulayarak IDE tarafından oluşturulan olayları işleme <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> arabirimi.
 
      IDE kullanıcı değişiklik aşağıdaki uygun yöntemi çağıran **yazı tipleri ve renkler** sayfası. Örneğin, çağrı <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> yeni bir yazı tipi seçtiyseniz yöntemi.
 
      -veya-
 
--   IDE değişiklikleri için yoklama.
+- IDE değişiklikleri için yoklama.
 
      Bu sistem uygulanan yapılabilir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi. Öncelikle desteği için Kalıcılık, ancak <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> yöntemi, yazı tipi ve renk bilgilerini almak için kullanılabilir **görüntü öğeleri**. Daha fazla bilgi için [erişim depolanan yazı tipi ve renk ayarlarını](../extensibility/accessing-stored-font-and-color-settings.md).
 

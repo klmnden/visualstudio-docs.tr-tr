@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788632"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092129"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Nasıl yapılır: Ürün bildirimi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
   
 #### <a name="to-create-the-product-manifest"></a>Ürün bildirimi oluşturma  
   
-1.  Önyükleyici paketi için bir dizin oluşturun. Bu örnek, C:\package kullanır.  
+1. Önyükleyici paketi için bir dizin oluşturun. Bu örnek, C:\package kullanır.  
   
-2.  Adlı yeni bir XML dosyasını Visual Studio'da oluşturma `product.xml`ve C:\package klasörüne kaydedin.  
+2. Adlı yeni bir XML dosyasını Visual Studio'da oluşturma `product.xml`ve C:\package klasörüne kaydedin.  
   
-3.  XML ad alanı ve ürün kodu için paket açıklamak için aşağıdaki XML'i ekleyin. Ürün kodu, paket için benzersiz bir tanımlayıcıyla değiştirin.  
+3. XML ad alanı ve ürün kodu için paket açıklamak için aşağıdaki XML'i ekleyin. Ürün kodu, paket için benzersiz bir tanımlayıcıyla değiştirin.  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Paket bağımlılığı olduğunu belirtmek için XML ekleyin. Bu örnek, bir bağımlılık üzerinde Microsoft Windows Installer 3.1 kullanır.  
+4. Paket bağımlılığı olduğunu belirtmek için XML ekleyin. Bu örnek, bir bağımlılık üzerinde Microsoft Windows Installer 3.1 kullanır.  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
       </RelatedProducts>  
     ```  
   
-5.  Önyükleyici paketteki tüm dosyaların listesi için XML ekleyin. Bu örnekte, paket dosyası adı CorePackage.msi kullanır.  
+5. Önyükleyici paketteki tüm dosyaların listesi için XML ekleyin. Bu örnekte, paket dosyası adı CorePackage.msi kullanır.  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ Uygulamanız için önkoşul dağıtmak için bir önyükleyici paketi oluştura
     </PackageFiles>  
     ```  
   
-6.  Kopyalayın veya CorePackage.msi dosyasını C:\package klasörüne taşıyın.  
+6. Kopyalayın veya CorePackage.msi dosyasını C:\package klasörüne taşıyın.  
   
-7.  Önyükleyici komutları kullanarak paketini yüklemek için XML ekleyin. Önyükleyici otomatik olarak ekler **/qn** sessiz yükleme .msi dosyasını bayrak. Bir .exe dosyası ise önyükleyici Kabuğu'nu kullanarak .exe dosyasını çalıştırır. Aşağıdaki XML CorePackage.msi için bağımsız değişken olmadan gösterir, ancak komut satırı bağımsız değişkeni bağımsız değişkenler özniteliği koyabilirsiniz.  
+7. Önyükleyici komutları kullanarak paketini yüklemek için XML ekleyin. Önyükleyici otomatik olarak ekler **/qn** sessiz yükleme .msi dosyasını bayrak. Bir .exe dosyası ise önyükleyici Kabuğu'nu kullanarak .exe dosyasını çalıştırır. Aşağıdaki XML CorePackage.msi için bağımsız değişken olmadan gösterir, ancak komut satırı bağımsız değişkeni bağımsız değişkenler özniteliği koyabilirsiniz.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Bu önyükleyici paketi yüklü olup olmadığını denetlemek için aşağıdaki XML'i ekleyin. Yeniden dağıtılabilir bileşen için GUID ürün kodu değiştirin.  
+8. Bu önyükleyici paketi yüklü olup olmadığını denetlemek için aşağıdaki XML'i ekleyin. Yeniden dağıtılabilir bileşen için GUID ürün kodu değiştirin.  
   
     ```  
     <InstallChecks>  

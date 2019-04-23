@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105493"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Görselleştirme ve SDK Modelleme için Desteklenen Visual Studio Sürümleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "54800389"
 ## <a name="deployment-editions"></a>Dağıtım sürümleri
  [!INCLUDE[dsl](../includes/dsl-md.md)] derleme etki alanına özgü diller dağıtmak için aşağıdaki yapılandırmaları destekler:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Kabuğu (tümleşik modu) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
+- Visual Studio Kabuğu (tümleşik modu) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
 
--   Visual Studio Kabuğu (yalıtılmış mod) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
+- Visual Studio Kabuğu (yalıtılmış mod) yeniden dağıtılabilir paketi yeniden dağıtılabilir paketi
 
 > [!NOTE]
 >  Bir DSL Kabuk ürünü üzerinde çalıştırılan mümkün hale getirmek için ayarlamanız gerekir **desteklenen VS Edition** uzantı bildirim alanındaki. Daha fazla bilgi için [etki alanına özgü dil çözümlerini dağıtma](../modeling/deploying-domain-specific-language-solutions.md).

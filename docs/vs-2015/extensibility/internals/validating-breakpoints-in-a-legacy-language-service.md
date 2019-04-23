@@ -11,12 +11,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093312"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kesme Noktalarını Doğrulama
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Bir kesme noktası programın yürütülmesi belirli bir noktada bir hata ayıkl
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Kesme noktaları doğrulamak için desteği sağlama  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Yöntemi, bir kesme noktası konumu verilir. Uygulamanız konumun geçerli olduğunu ve bu kodu tanımlayan bir metin aralığını döndürerek kesme noktası satır konumu ile ilişkili belirtmek olup olmadığına karar vermeniz gerekir.  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Yöntemi, bir kesme noktası konumu verilir. Uygulamanız konumun geçerli olduğunu ve bu kodu tanımlayan bir metin aralığını döndürerek kesme noktası satır konumu ile ilişkili belirtmek olup olmadığına karar vermeniz gerekir.  
   
--   Dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK> konumu geçerliyse, veya <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> geçerli değilse.  
+- Dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK> konumu geçerliyse, veya <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> geçerli değilse.  
   
--   Kesme noktası geçerli ise metin aralığı birlikte kesme noktası vurgulanır.  
+- Kesme noktası geçerli ise metin aralığı birlikte kesme noktası vurgulanır.  
   
--   Kesme noktası geçersizse, bir hata iletisi durum çubuğunda görünür.  
+- Kesme noktası geçersizse, bir hata iletisi durum çubuğunda görünür.  
   
 ### <a name="example"></a>Örnek  
  Bu örnekte uygulanışı gösterilmektedir <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> belirtilen konumda kod kapsamı (varsa) almak için ayrıştırıcı çağıran yöntemi.  

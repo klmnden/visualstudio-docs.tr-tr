@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a26d6f72cee0f2718e84a9e2b671c2be7977bbd5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096250"
 ---
 # <a name="step-3-set-your-form-properties"></a>3. Adım: Form özelliklerinizi ayarlama
 Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun görünüşünü değiştirme.
@@ -60,14 +60,14 @@ Ardından, kullandığınız **özellikleri** penceresini kullanarak formunuzun 
 
 7. Sonraki adıma geçmeden önce programınızı durdurmak, IDE izin vermeyeceğinden çalışırken programınızı değiştirin. Unutmayın, programınızı durdurmak için aşağıdaki yöntemlerden herhangi birini kullanabilirsiniz.
 
-   -   Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.
+   - Araç çubuğunda **hata ayıklamayı Durdur** düğmesi.
 
-   -   Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Durdur**.
+   - Menü çubuğunda, **hata ayıklama** > **hata ayıklamayı Durdur**.
 
-   -   Seçin **X** üst köşesindeki düğmeyi **Form1** penceresi.
+   - Seçin **X** üst köşesindeki düğmeyi **Form1** penceresi.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [4. adım: TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+- Sonraki öğretici adımına gitmek için bkz: [4. adım: TableLayoutPanel denetimi ile formunuzu düzenleme](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Önceki öğretici adımına dönmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).
+- Önceki öğretici adımına dönmek için bkz: [2. adım: Programınızı çalıştırmak](../ide/step-2-run-your-program.md).

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063887"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>İzlenecek yol: ClickOnce dağıtım API'si ile isteğe bağlı derlemeleri indirme
 Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulamayı ilk kez çalıştırdığınızda, uygulama yüklenir. Ancak, kullanıcıların küçük bir kümesi tarafından kullanılan uygulamanızın parçalarını olabilir. Bu durumda, yalnızca türlerinden oluşturduğunuzda bir derlemeyi indirmek istediğiniz. Aşağıdaki örneklerde, belirli bütünleştirilmiş kodların "isteğe bağlı" olarak, uygulamanızda işaretlenecek gösterilmiştir ve yer alan kullanarak indirmek nasıl sınıfları <xref:System.Deployment.Application> ortak dil çalışma zamanı (CLR) onları talep ettiğinde ad alanı.
@@ -32,9 +32,9 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deploy
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlerden biri gerekir:
 
--   Windows SDK'sı. Windows SDK'sı, Microsoft Download Center'dan gelen indirilebilir.
+- Windows SDK'sı. Windows SDK'sı, Microsoft Download Center'dan gelen indirilebilir.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-the-projects"></a>Projeleri oluşturma
 
@@ -100,17 +100,17 @@ Varsayılan olarak, tüm derlemelerin dahil bir [!INCLUDE[ndptecclick](../deploy
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>MageUI.exe kullanarak isteğe bağlı olarak, ClickOnce uygulamanızı derlemeleri işaretlemek için
 
-1.  Kullanarak *MageUI.exe*, uygulama bildiriminde açıklandığı gibi oluşturmak [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Uygulama bildirimi için aşağıdaki ayarları kullanın:
+1. Kullanarak *MageUI.exe*, uygulama bildiriminde açıklandığı gibi oluşturmak [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Uygulama bildirimi için aşağıdaki ayarları kullanın:
 
-    -   Uygulama bildirimi adı `ClickOnceOnDemand`.
+    - Uygulama bildirimi adı `ClickOnceOnDemand`.
 
-    -   Üzerinde **dosyaları** sayfasında *ClickOnceLibrary.dll* satır, Ayarla **dosya türü** sütuna **hiçbiri**.
+    - Üzerinde **dosyaları** sayfasında *ClickOnceLibrary.dll* satır, Ayarla **dosya türü** sütuna **hiçbiri**.
 
-    -   Üzerinde **dosyaları** sayfasında *ClickOnceLibrary.dll* satır, tür `ClickOnceLibrary.dll` içinde **grubu** sütun.
+    - Üzerinde **dosyaları** sayfasında *ClickOnceLibrary.dll* satır, tür `ClickOnceLibrary.dll` içinde **grubu** sütun.
 
-2.  Kullanarak *MageUI.exe*, açıklanan şekilde bir dağıtım bildirimi oluşturmak [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım bildirimi için aşağıdaki ayarları kullanın:
+2. Kullanarak *MageUI.exe*, açıklanan şekilde bir dağıtım bildirimi oluşturmak [izlenecek yol: Bir ClickOnce uygulamasını el ile dağıtmak](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Dağıtım bildirimi için aşağıdaki ayarları kullanın:
 
-    -   Dağıtım bildiriminin adı `ClickOnceOnDemand`.
+    - Dağıtım bildiriminin adı `ClickOnceOnDemand`.
 
 ## <a name="testing-the-new-assembly"></a>Yeni bir derleme test etme
 

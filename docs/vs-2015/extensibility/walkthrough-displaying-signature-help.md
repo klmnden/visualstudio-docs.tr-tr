@@ -10,12 +10,12 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a5f62ace3126ee35f47a90c15e6183690786954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108171"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>İzlenecek yol: İmza Yardımını Görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "54781223"
   
 #### <a name="to-create-a-mef-project"></a>MEF projesi oluşturmak için  
   
-1.  Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `SignatureHelpTest`.  
+1. Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `SignatureHelpTest`.  
   
-2.  Bir düzenleyici sınıflandırıcı öğe şablonu, projeye ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Bir düzenleyici sınıflandırıcı öğe şablonu, projeye ekleyin. Daha fazla bilgi için [bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Varolan sınıf dosyaları silin.  
+3. Varolan sınıf dosyaları silin.  
   
-4.  Aşağıdaki başvuruları projeye ekleyin ve doğrulayın **CopyLocal** ayarlanır `false`:  
+4. Aşağıdaki başvuruları projeye ekleyin ve doğrulayın **CopyLocal** ayarlanır `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -56,39 +56,39 @@ ms.locfileid: "54781223"
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Parametreleri ve imza Yardımı imzaları uygulamak için  
   
-1.  Bir sınıf dosyası ekleyin ve adlandırın `SignatureHelpSource`.  
+1. Bir sınıf dosyası ekleyin ve adlandırın `SignatureHelpSource`.  
   
-2.  Aşağıdaki içeri aktarmaları ekleyin.  
+2. Aşağıdaki içeri aktarmaları ekleyin.  
   
      [!code-csharp[VSSDKSignatureHelpTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#1)]
      [!code-vb[VSSDKSignatureHelpTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#1)]  
   
-3.  Adlı bir sınıf ekleyin `TestParameter` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
+3. Adlı bir sınıf ekleyin `TestParameter` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#2)]
      [!code-vb[VSSDKSignatureHelpTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#2)]  
   
-4.  Tüm özellikleri ayarlayan bir oluşturucu ekleyin.  
+4. Tüm özellikleri ayarlayan bir oluşturucu ekleyin.  
   
      [!code-csharp[VSSDKSignatureHelpTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#3)]
      [!code-vb[VSSDKSignatureHelpTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#3)]  
   
-5.  Özelliklerini eklemek <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
+5. Özelliklerini eklemek <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#4)]
      [!code-vb[VSSDKSignatureHelpTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#4)]  
   
-6.  Adlı bir sınıf ekleyin `TestSignature` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.  
+6. Adlı bir sınıf ekleyin `TestSignature` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#5)]
      [!code-vb[VSSDKSignatureHelpTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#5)]  
   
-7.  Bazı özel alanlar ekleyin.  
+7. Bazı özel alanlar ekleyin.  
   
      [!code-csharp[VSSDKSignatureHelpTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#6)]
      [!code-vb[VSSDKSignatureHelpTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#6)]  
   
-8.  Alanları ayarlayan ve abone olduğu bir oluşturucu ekleyin <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> olay.  
+8. Alanları ayarlayan ve abone olduğu bir oluşturucu ekleyin <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> olay.  
   
      [!code-csharp[VSSDKSignatureHelpTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#7)]
      [!code-vb[VSSDKSignatureHelpTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#7)]  
@@ -133,37 +133,37 @@ ms.locfileid: "54781223"
   
 #### <a name="to-implement-the-signature-help-source"></a>İmza Yardımı kaynak uygulamak için  
   
-1.  Adlı bir sınıf ekleyin `TestSignatureHelpSource` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.  
+1. Adlı bir sınıf ekleyin `TestSignatureHelpSource` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#15)]
      [!code-vb[VSSDKSignatureHelpTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#15)]  
   
-2.  Metin arabelleği için bir başvuru ekleyin.  
+2. Metin arabelleği için bir başvuru ekleyin.  
   
      [!code-csharp[VSSDKSignatureHelpTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#16)]
      [!code-vb[VSSDKSignatureHelpTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#16)]  
   
-3.  Metin arabelleği ve imza Yardımı kaynak sağlayıcısı ayarlar bir oluşturucu ekleyin.  
+3. Metin arabelleği ve imza Yardımı kaynak sağlayıcısı ayarlar bir oluşturucu ekleyin.  
   
      [!code-csharp[VSSDKSignatureHelpTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#17)]
      [!code-vb[VSSDKSignatureHelpTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#17)]  
   
-4.  Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> yöntemi. Bu örnekte, sabit kodlanmış imzalar, ancak tam bir uygulamada dil belgelerinden bu bilgileri elde edersiniz.  
+4. Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A> yöntemi. Bu örnekte, sabit kodlanmış imzalar, ancak tam bir uygulamada dil belgelerinden bu bilgileri elde edersiniz.  
   
      [!code-csharp[VSSDKSignatureHelpTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#18)]
      [!code-vb[VSSDKSignatureHelpTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#18)]  
   
-5.  Yardımcı yöntemi `CreateSignature()` çizim için sağlanmıştır.  
+5. Yardımcı yöntemi `CreateSignature()` çizim için sağlanmıştır.  
   
      [!code-csharp[VSSDKSignatureHelpTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#19)]
      [!code-vb[VSSDKSignatureHelpTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#19)]  
   
-6.  Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> yöntemi. Bu örnekte, her biri iki parametreye sahip iki imzalar vardır. Bu nedenle, bu yöntem gerekli değil. İmza Yardımı birden fazla kaynak kullanılabilir bir bileşen uygulamasında, bu yöntem, imza Yardım en yüksek öncelikli kaynak eşleşen bir imza verebilirsiniz karar vermek için kullanılır. Erişilemiyorsa yöntemi null değerini döndürür ve next-en yüksek öncelikli kaynak bir eşleşme sağlamanız istenir.  
+6. Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A> yöntemi. Bu örnekte, her biri iki parametreye sahip iki imzalar vardır. Bu nedenle, bu yöntem gerekli değil. İmza Yardımı birden fazla kaynak kullanılabilir bir bileşen uygulamasında, bu yöntem, imza Yardım en yüksek öncelikli kaynak eşleşen bir imza verebilirsiniz karar vermek için kullanılır. Erişilemiyorsa yöntemi null değerini döndürür ve next-en yüksek öncelikli kaynak bir eşleşme sağlamanız istenir.  
   
      [!code-csharp[VSSDKSignatureHelpTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#20)]
      [!code-vb[VSSDKSignatureHelpTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#20)]  
   
-7.  Dispose() yöntemini uygulayın:  
+7. Dispose() yöntemini uygulayın:  
   
      [!code-csharp[VSSDKSignatureHelpTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#21)]
      [!code-vb[VSSDKSignatureHelpTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#21)]  
@@ -173,12 +173,12 @@ ms.locfileid: "54781223"
   
 #### <a name="to-implement-the-signature-help-source-provider"></a>İmza Yardımı kaynak sağlayıcısını uygulamak için  
   
-1.  Adlı bir sınıf ekleyin `TestSignatureHelpSourceProvider` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>ve ile dışarı aktarın bir <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "metin" ve <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> , önce = "varsayılan".  
+1. Adlı bir sınıf ekleyin `TestSignatureHelpSourceProvider` uygulayan <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>ve ile dışarı aktarın bir <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "metin" ve <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> , önce = "varsayılan".  
   
      [!code-csharp[VSSDKSignatureHelpTest#22](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#22)]
      [!code-vb[VSSDKSignatureHelpTest#22](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#22)]  
   
-2.  Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> örnekleme tarafından `TestSignatureHelpSource`.  
+2. Uygulama <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> örnekleme tarafından `TestSignatureHelpSource`.  
   
      [!code-csharp[VSSDKSignatureHelpTest#23](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#23)]
      [!code-vb[VSSDKSignatureHelpTest#23](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#23)]  
@@ -188,27 +188,27 @@ ms.locfileid: "54781223"
   
 #### <a name="to-implement-the-command-handler"></a>Komut işleyici uygulamak için  
   
-1.  Adlı bir sınıf ekleyin `TestSignatureHelpCommand` uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+1. Adlı bir sınıf ekleyin `TestSignatureHelpCommand` uygulayan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#24](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#24)]
      [!code-vb[VSSDKSignatureHelpTest#24](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#24)]  
   
-2.  İçin özel alanlar ekleme <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> (Bu komuta zincirini işleyicilere komut işleyici eklemenize olanak sağlayan) bağdaştırıcısı, metin görünümünü, imza Yardım aracısı ve oturumu bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>ve sonraki <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. İçin özel alanlar ekleme <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> (Bu komuta zincirini işleyicilere komut işleyici eklemenize olanak sağlayan) bağdaştırıcısı, metin görünümünü, imza Yardım aracısı ve oturumu bir <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>ve sonraki <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#25](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#25)]
      [!code-vb[VSSDKSignatureHelpTest#25](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#25)]  
   
-3.  Bu alanlar ve komuta zincirini filtrelerde komut filtre eklemek için bir oluşturucu ekleyin.  
+3. Bu alanlar ve komuta zincirini filtrelerde komut filtre eklemek için bir oluşturucu ekleyin.  
   
      [!code-csharp[VSSDKSignatureHelpTest#26](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#26)]
      [!code-vb[VSSDKSignatureHelpTest#26](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#26)]  
   
-4.  Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> komut filtre aldığında imza Yardım oturumu tetiklemek için yöntemi bir (bilinen bir yöntem adlarını ve aldığında oturumu kapatmak için sonra karakteri bir) oturumu hala etkin durumdayken karakter. Her durumda komutu iletilir.  
+4. Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> komut filtre aldığında imza Yardım oturumu tetiklemek için yöntemi bir (bilinen bir yöntem adlarını ve aldığında oturumu kapatmak için sonra karakteri bir) oturumu hala etkin durumdayken karakter. Her durumda komutu iletilir.  
   
      [!code-csharp[VSSDKSignatureHelpTest#27](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#27)]
      [!code-vb[VSSDKSignatureHelpTest#27](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#27)]  
   
-5.  Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> BT'nin her zaman komut iletir için yöntemi.  
+5. Uygulama <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> BT'nin her zaman komut iletir için yöntemi.  
   
      [!code-csharp[VSSDKSignatureHelpTest#28](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#28)]
      [!code-vb[VSSDKSignatureHelpTest#28](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#28)]  
@@ -218,17 +218,17 @@ ms.locfileid: "54781223"
   
 #### <a name="to-implement-the-signature-help-command-provider"></a>İmza Yardımı komutu sağlayıcısı uygulamak için  
   
-1.  Adlı bir sınıf ekleyin `TestSignatureHelpController` uygulayan <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ve ile dışarı aktarın <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, ve <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.  
+1. Adlı bir sınıf ekleyin `TestSignatureHelpController` uygulayan <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ve ile dışarı aktarın <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, ve <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.  
   
      [!code-csharp[VSSDKSignatureHelpTest#29](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#29)]
      [!code-vb[VSSDKSignatureHelpTest#29](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#29)]  
   
-2.  İçeri aktarma <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (almak için kullanılan <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, verilen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> nesne), <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (geçerli kelimenin bulmak için kullanılan) ve <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (imza Yardım oturumu tetiklemek için).  
+2. İçeri aktarma <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (almak için kullanılan <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, verilen <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> nesne), <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (geçerli kelimenin bulmak için kullanılan) ve <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (imza Yardım oturumu tetiklemek için).  
   
      [!code-csharp[VSSDKSignatureHelpTest#30](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#30)]
      [!code-vb[VSSDKSignatureHelpTest#30](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#30)]  
   
-3.  Uygulama <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> örnekleme yöntemi `TestSignatureCommandHandler`.  
+3. Uygulama <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> örnekleme yöntemi `TestSignatureCommandHandler`.  
   
      [!code-csharp[VSSDKSignatureHelpTest#31](../snippets/csharp/VS_Snippets_VSSDK/vssdksignaturehelptest/cs/signaturehelpsource.cs#31)]
      [!code-vb[VSSDKSignatureHelpTest#31](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksignaturehelptest/vb/signaturehelpsource.vb#31)]  
@@ -238,13 +238,13 @@ ms.locfileid: "54781223"
   
 #### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Derleme ve SignatureHelpTest çözümü test etmek için  
   
-1.  Çözümü oluşturun.  
+1. Çözümü oluşturun.  
   
-2.  Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.  
+2. Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.  
   
-3.  Bir metin dosyası türü "Ekle" sözcüğünü içeren metin ve yanı sıra bir açma ayracı oluşturun.  
+3. Bir metin dosyası türü "Ekle" sözcüğünü içeren metin ve yanı sıra bir açma ayracı oluşturun.  
   
-4.  Açma parantezinden yazdıktan sonra iki imzaları listesini görüntüleyen bir araç ipucu görmelisiniz `add()` yöntemi.  
+4. Açma parantezinden yazdıktan sonra iki imzaları listesini görüntüleyen bir araç ipucu görmelisiniz `add()` yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

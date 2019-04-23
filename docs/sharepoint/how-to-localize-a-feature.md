@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d811b27f810ac9becf23513a25937e1a265d305
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074645"
 ---
 # <a name="how-to-localize-a-feature"></a>Nasıl yapılır: Bir özelliği yerelleştirme
   Varsayılan olarak, sabit kodlanmış dize değerleri özellik başlıkları ve açıklamaları kullanın. Özellik başlığı ve açıklamayı yerelleştirmek için dizeleri yerelleştirilmiş kaynaklara başvuran deyimleri ile değiştirin.
@@ -27,21 +27,21 @@ ms.locfileid: "56639095"
 
 #### <a name="to-localize-a-feature"></a>Bir özelliği yerelleştirmek için
 
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellik1** düğümünü seçip **özellik kaynağı Ekle**.
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **özellik1** düğümünü seçip **özellik kaynağı Ekle**.
 
-2.  İçinde **kaynak Ekle** iletişim kutusunda **sabit dil** varsayılan dil özelliği kaynak dosyanın kültürüyle listeden.
+2. İçinde **kaynak Ekle** iletişim kutusunda **sabit dil** varsayılan dil özelliği kaynak dosyanın kültürüyle listeden.
 
-3.  Diller için yerelleştirilmiş özelliği, tercih ettiğiniz kaynak dosyaları seçerek yerelleştirilen her dil için önceki adımı yineleyin.
+3. Diller için yerelleştirilmiş özelliği, tercih ettiğiniz kaynak dosyaları seçerek yerelleştirilen her dil için önceki adımı yineleyin.
 
      Ayrı bir özellik kaynak dosyaları oluşturulur: varsayılan dil için bir tane ve her bir yerelleştirilmiş desteklemek istediğiniz dili.
 
-4.  Her kaynak dosyası kaynak düzenleyicisinde açın ve tüm dize kimliklerini ve bunların değerlerini girin.
+4. Her kaynak dosyası kaynak düzenleyicisinde açın ve tüm dize kimliklerini ve bunların değerlerini girin.
 
      Örneğin, varsayılan özellik kaynak dosyası, bir dize kimliği girin **başlık** değeriyle **My özellik başlığı**, ve ikinci bir dize kimliği **açıklama** değerine sahip **My özellik açıklaması**. Her bir yerelleştirilmiş kaynak dosyası için aynı dize kimliklerini varsayılan özellik kaynak kullanılan kullanın, ancak yerelleştirilmiş dizeleri için değerleri girin.
 
-5.  Tüm kaynak değerleri girdikten sonra bu özellik için kısayol menüsünü açın (örneğin, *Feature1.feature*) ve ardından **Görünüm Tasarımcısı** özelliğini özellik Tasarımcısı'nda açmak için.
+5. Tüm kaynak değerleri girdikten sonra bu özellik için kısayol menüsünü açın (örneğin, *Feature1.feature*) ve ardından **Görünüm Tasarımcısı** özelliğini özellik Tasarımcısı'nda açmak için.
 
-6.  Yerelleştirmek için **başlık** ve **açıklama** özellik alanlarında kendi kutularında değerleri girmek için aşağıdaki biçimi kullanın:
+6. Yerelleştirmek için **başlık** ve **açıklama** özellik alanlarında kendi kutularında değerleri girmek için aşağıdaki biçimi kullanın:
 
      `$Resources:` *Dize kimliği*
 
@@ -49,9 +49,9 @@ ms.locfileid: "56639095"
 
      Dize kimliklerini kaynak dosyalarında kullanılan eşleşmelidir.
 
-7.  Seçin **F5** anahtarı oluşturun ve uygulamayı çalıştırın.
+7. Seçin **F5** anahtarı oluşturun ve uygulamayı çalıştırın.
 
-8.  SharePoint'te açın **Site eylemleri** menüsünde seçin **Site Ayarları**ve ardından **Site eylemleri** bölümü seçin **Site özellikleriyönetme** bağlantı.
+8. SharePoint'te açın **Site eylemleri** menüsünde seçin **Site Ayarları**ve ardından **Site eylemleri** bölümü seçin **Site özellikleriyönetme** bağlantı.
 
 9. SharePoint'te, varsayılan görüntüleme dilini değiştirin.
 

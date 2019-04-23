@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 7: Paylaşım | Microsoft Docs'
+title: 'Test Alanı 7: Paylaşım | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107794"
 ---
-# <a name="test-area-7-share"></a>Test alanı 7: Paylaş
+# <a name="test-area-7-share"></a>Test Alanı 7: Paylaş
 Bu test alanı konumlar arasında paylaşım öğelerini kapsar **paylaşımı** komutu.
 
  Dosya ve klasör öğeleri kaynak denetim dosyası hiyerarşi içinde en az iki konum arasında belirgin çoğaltma hhare işlemdir. Çoğaltma sunucusunda gerçekten oluşmaz, ancak kullanıcının aynı dosyanın iki veya daha fazla belirtilen konumlarda bakın. Herhangi bir paylaşılan öğeyi değişiklik yapıldığında, bu değişiklikleri diğer paylaşılan tüm konumlardaki görünür.
 
  En az bir dosya içindeki kaynak denetimi altında bir klasör seçerseniz klasörler halinde paylaşımı çalışır. Paylaş komutunu aşağıdaki koşullarda devre dışı bırakılır:
 
--   Seçili klasörü boş bir klasör ise.
+- Seçili klasörü boş bir klasör ise.
 
--   Gerçek bir klasör bulunur, ancak hiçbir kaynak denetim dosyaları içerir.
+- Gerçek bir klasör bulunur, ancak hiçbir kaynak denetim dosyaları içerir.
 
--   Sanal bir klasör varsa, kaynak denetimi altında dosyaların içinde veya olup.
+- Sanal bir klasör varsa, kaynak denetimi altında dosyaların içinde veya olup.
 
--   Bir uzak Site Web projesi varsa.
+- Bir uzak Site Web projesi varsa.
 
 ## <a name="command-menu-access"></a>Komut menü erişimi
  Aşağıdaki [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tümleşik geliştirme ortamı menüsü yolları test durumlarında kullanılır.
@@ -40,11 +40,11 @@ Bu test alanı konumlar arasında paylaşım öğelerini kapsar **paylaşımı**
 
 ## <a name="expected-behavior"></a>Beklenen davranış
 
--   Paylaşılan dosya, paylaşılan bir konumda görüntülenir.
+- Paylaşılan dosya, paylaşılan bir konumda görüntülenir.
 
--   Dosyaları paylaşılır kaynak denetim sürüm deposu geçmişini gösterir görüntüleme.
+- Dosyaları paylaşılır kaynak denetim sürüm deposu geçmişini gösterir görüntüleme.
 
--   Paylaşılan bir dosya düzenleme dosyası konumlarının her ikisinde de düzenler.
+- Paylaşılan bir dosya düzenleme dosyası konumlarının her ikisinde de düzenler.
 
 ## <a name="test-cases"></a>Test çalışmaları
  Belirli test çalışmaları için paylaşımı test alanı aşağıda verilmiştir.

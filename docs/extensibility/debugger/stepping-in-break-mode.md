@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: eb7b7e847c116f3aab38a12ec9801988bb8b3fc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111551"
 ---
 # <a name="stepping-in-break-mode"></a>Kesme modunda Adımlama
 Aşağıdaki bölümde hata ayıklayıcı kesme modundayken ve kodunuz içinde adım adım gerekir oluşan süreci açıklanmaktadır:
 
 ## <a name="stepping-process"></a>İşlem Adımlama
 
-1.  Çağrı [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) ile [STEPKIND](../../extensibility/debugger/reference/stepkind.md) ve [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) bir adımı yürütmeye yönelik bağımsız değişkenleri.
+1. Çağrı [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) ile [STEPKIND](../../extensibility/debugger/reference/stepkind.md) ve [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) bir adımı yürütmeye yönelik bağımsız değişkenleri.
 
-2.  Bu adım tamamlandığında, gönderme bir [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) durdurma olay olarak.
+2. Bu adım tamamlandığında, gönderme bir [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) durdurma olay olarak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Hata ayıklayıcısı olaylarını çağırma](../../extensibility/debugger/calling-debugger-events.md)

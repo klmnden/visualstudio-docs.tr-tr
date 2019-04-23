@@ -41,17 +41,17 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101684"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++'da yerel kullanabilirsiniz [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) gibi ortak çalışma zamanı hataları yakalamak için:  
+Görselde C++, yerel kullanabilirsiniz [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) gibi ortak çalışma zamanı hataları yakalamak için:  
   
 - İşaretçi Bozulması yığın.  
   
@@ -77,11 +77,11 @@ Visual C++'da yerel kullanabilirsiniz [runtime_checks](http://msdn.microsoft.com
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Hata ayıklama derlemesinde yerel çalışma zamanı denetimlerini etkinleştirmek için  
   
--   Kullanım **/RTC** seçeneği ve hata ayıklama sürümü C çalışma zamanı kitaplığı ile bağlantı (/ MDd, örneğin).  
+- Kullanım **/RTC** seçeneği ve hata ayıklama sürümü C çalışma zamanı kitaplığı ile bağlantı (/ MDd, örneğin).  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>Yerel çalışma zamanı denetimi davranışını değiştirmek için  
   
--   Kullanım `runtime_checks` pragması.  
+- Kullanım `runtime_checks` pragması.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da hata ayıklama](../debugger/debugging-in-visual-studio.md)   

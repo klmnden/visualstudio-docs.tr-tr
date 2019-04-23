@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48946a5e12431cf00e296f445adab657f6c1a959
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101970"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Nasıl yapılır: Profil oluşturma araçları ETW raporu oluşturma
 Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Windows (ETW) raporu listeler [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları. İkili dosyada toplanan ETW veriler (. *etl*) dosyası. Bu rapor hakkında daha fazla bilgi için bkz. [olay izleme için Windows (ETW) raporu](../profiling/event-tracing-for-windows-etw-report.md).
@@ -29,7 +29,7 @@ Bir performans oturumu içinde kaydedilen ETW olayları için olay izleme Window
 
 ### <a name="to-generate-an-etw-report"></a>ETW raporu oluşturmak için
 
--   İçinde bir **komut istemi** penceresinde aşağıdaki komutu yazın:
+- İçinde bir **komut istemi** penceresinde aşağıdaki komutu yazın:
 
      *ToolsPath* **VSPerfReport** *VSPFile* **/Summary:ETW [/ XML]**
 

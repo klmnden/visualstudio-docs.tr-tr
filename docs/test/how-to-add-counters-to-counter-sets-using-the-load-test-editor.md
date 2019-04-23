@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110524"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Nasıl yapılır: Yük Testi Düzenleyicisini kullanarak sayaç kümelerine sayaç ekleme
 
@@ -30,34 +30,34 @@ Sayaçlarınızı yönettiğiniz **Yük Testi Düzenleyicisi**. Test zaten eklen
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Sayaç için bir sayaç kümesi eklemek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Genişletin **sayaç kümeleri** düğümü. Yük testi için eklenmiş olan tüm sayaç kümeleri tarafından görülebilir.
+2. Genişletin **sayaç kümeleri** düğümü. Yük testi için eklenmiş olan tüm sayaç kümeleri tarafından görülebilir.
 
     > [!NOTE]
     > Yük testi hiyerarşi ağacı de içeren **çalıştırma ayarları** düğümü. Bu düğümü içeren **sayaç kümesi eşlemeleri** düğümü, bu bilgisayarlara eşlenmiş sayaç kümeleri ve tüm bilgisayarları gösterir.
 
-3.  Var olan bir sayaç kümesini sağ tıklatın ve ardından **Sayaç Ekle**.
+3. Var olan bir sayaç kümesini sağ tıklatın ve ardından **Sayaç Ekle**.
 
      **Performans sayaçlarını Seç** iletişim kutusu görüntülenir.
 
-4.  İçinde **bilgisayar** açılan eşlemek istediğiniz bilgisayarın adını yazın. Alternatif olarak, bilgisayarlardan biri aşağı açılan listeden seçin.
+4. İçinde **bilgisayar** açılan eşlemek istediğiniz bilgisayarın adını yazın. Alternatif olarak, bilgisayarlardan biri aşağı açılan listeden seçin.
 
     > [!NOTE]
     > Performans verileri toplanmadan önce bir bilgisayara sayaç kümeleri eşlenmelidir için performans verilerini toplamak bir bilgisayar belirtmeniz gerekir.
 
-5.  Seçin bir **performans kategorisi** performans veriler sayaçlarının kategorileri filtrelemek için. İki sütun hangi performans sayaçlarını seçmek verileri görürsünüz.
+5. Seçin bir **performans kategorisi** performans veriler sayaçlarının kategorileri filtrelemek için. İki sütun hangi performans sayaçlarını seçmek verileri görürsünüz.
 
     > [!NOTE]
     > Bazı sayaç kategorileri örneği de seçmeniz gerekir. Örneğin, bir SQL sayaç seçerseniz, olabilir çünkü birden fazla hedef bilgisayarda yüklü SQL örneğini bir SQL örneği seçmeniz gerekir.
 
-6.  Bir sayacı ve özel sayaç kümenize eklemek için örneği seçin.
+6. Bir sayacı ve özel sayaç kümenize eklemek için örneği seçin.
 
      \- veya -
 
      Seçin **tüm sayaçları** radyo düğmesi kullanılabilir tüm sayaçları seçin.
 
-7.  **Tamam**’ı seçin.
+7. **Tamam**’ı seçin.
 
     > [!NOTE]
     > Sayaç kümesi varolan sayacı veya sayaç kategorisini Kopyala'yı seçip seçerek sayaçlar eklemek mümkündür ve ardından onu farklı sayaç yapıştırma düğüm kümesi. Kopyalanır, ancak gerekli değildir, ek sayaçları silinebilir.

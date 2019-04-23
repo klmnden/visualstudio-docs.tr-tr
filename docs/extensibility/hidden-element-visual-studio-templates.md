@@ -1,6 +1,6 @@
 ---
 title: Gizli öğesi (Visual Studio şablonları) | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -13,32 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104440"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden öğesi (Visual Studio şablonları)
-Şablon ya da görüntülenip görüntülenmeyeceğini belirtir **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.
 
- \<VSTemplate > \<TemplateData > \<gizli >
+Şablon ya da yeni proje görünüp görünmeyeceğini belirtir veya **Yeni Öğe Ekle** iletişim kutuları.
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>Öznitelikler ve öğeler
- Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
+
+Öznitelikler, alt ve üst öğeler aşağıdaki bölümlerde açıklanmaktadır.
 
 ### <a name="attributes"></a>Öznitelikler
- Yok.
+
+Yok.
 
 ### <a name="child-elements"></a>Alt öğeleri
- Yok.
+
+Yok.
 
 ### <a name="parent-elements"></a>Üst öğeler
 
@@ -47,19 +56,22 @@ ms.locfileid: "56721400"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Gerekli öğe.<br /><br /> Şablonu kategorilere ayırır ve nasıl görüntülendiğini tanımlar **yeni proje** veya **Yeni Öğe Ekle** iletişim kutusu.|
 
 ## <a name="text-value"></a>Metin değeri
- Bir metin değeri gereklidir.
 
- Metin olmalıdır `true` veya `false`gösteren şablon olup olmadığına görünür **yeni proje** veya **Yeni Öğe Ekle** iletişim kutuları.
+Bir metin değeri gereklidir.
+
+Metin olmalıdır `true` veya `false`gösteren şablon olup olmadığına görünür **yeni proje** veya **Yeni Öğe Ekle** iletişim kutuları.
 
 ## <a name="remarks"></a>Açıklamalar
- `Hidden` İsteğe bağlı bir öğedir.
 
- Belirtilmişse, diğer hiçbir alt öğelerinin `TemplateData` öğesi gereklidir.
+`Hidden` İsteğe bağlı bir öğedir.
+
+Belirtilmişse, diğer hiçbir alt öğelerinin `TemplateData` öğesi gereklidir.
 
 ## <a name="example"></a>Örnek
- Meta veriler için aşağıdaki örnekte bir [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] şablonu.
 
-```
+Meta veriler için aşağıdaki örnekte bir C# şablonu.
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ ms.locfileid: "56721400"
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
-- [Visual Studio Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
+
+- [Şablon Şeması Başvurusu](../extensibility/visual-studio-template-schema-reference.md)
 - [Proje ve öğe şablonları oluşturma](../ide/creating-project-and-item-templates.md)

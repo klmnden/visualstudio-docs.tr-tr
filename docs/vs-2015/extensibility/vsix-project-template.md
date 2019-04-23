@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096146"
 ---
 # <a name="vsix-project-template"></a>VSIX Proje Şablonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,37 +48,37 @@ Bir veya daha fazla Visual Studio uzantıları içinde VSIX projesi sarmalamak i
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Bir VSIX projesi kullanarak uzantı paketlemek için  
   
-1.  Uzantınızı yapmak projeleri oluşturun.  
+1. Uzantınızı yapmak projeleri oluşturun.  
   
-2.  Kullanarak bir VSIX projesi oluşturun **VSIX projesi** şablonu.  
+2. Kullanarak bir VSIX projesi oluşturun **VSIX projesi** şablonu.  
   
      Source.extension.vsixmanifest açılır **bildirim Tasarımcısı**.  
   
-3.  Üzerinde **varlıklar** sekmesini, **yeni** düğmesi.  
+3. Üzerinde **varlıklar** sekmesini, **yeni** düğmesi.  
   
      **Yeni varlık Ekle** iletişim kutusu görüntülenir.  
   
-4.  İçinde **türü** listesinde, eklemek için uzantı türü seçin.  
+4. İçinde **türü** listesinde, eklemek için uzantı türü seçin.  
   
-5.  Geçerli çözümde (örneğin, bir öğe şablonunun veya derlenmiş bir bütünleştirilmiş kod) yer alan bir uzantı veya içerik öğe eklemek için aşağıdaki adımları gerçekleştirin:  
+5. Geçerli çözümde (örneğin, bir öğe şablonunun veya derlenmiş bir bütünleştirilmiş kod) yer alan bir uzantı veya içerik öğe eklemek için aşağıdaki adımları gerçekleştirin:  
   
-    1.  İçinde **kaynak** listesinde **mevcut çözümde bir proje**.  
+    1. İçinde **kaynak** listesinde **mevcut çözümde bir proje**.  
   
-    2.  İçinde **proje** listesinde, uzantı adını seçin.  
+    2. İçinde **proje** listesinde, uzantı adını seçin.  
   
-    3.  İçinde **bu klasördeki ekleme** kutusuna, varlığı ekleyin ve ardından bir klasör adı girin **Tamam** düğmesi.  
+    3. İçinde **bu klasördeki ekleme** kutusuna, varlığı ekleyin ve ardından bir klasör adı girin **Tamam** düğmesi.  
   
-6.  Bir uzantı veya geçerli çözümde bulunup bulunmadığına içerik öğesi eklemek için aşağıdaki adımları gerçekleştirin:  
+6. Bir uzantı veya geçerli çözümde bulunup bulunmadığına içerik öğesi eklemek için aşağıdaki adımları gerçekleştirin:  
   
-    1.  İçinde **kaynak** liste kutusu öğesini **FileSystem'daki**.  
+    1. İçinde **kaynak** liste kutusu öğesini **FileSystem'daki**.  
   
-    2.  İçinde **yolu** alan, derlenmiş veya sıkıştırılmış uzantısı dosyanın tam yolunu girin veya bunları kullanmanızı **Gözat** dosyasına gözatmak için düğmeyi.  
+    2. İçinde **yolu** alan, derlenmiş veya sıkıştırılmış uzantısı dosyanın tam yolunu girin veya bunları kullanmanızı **Gözat** dosyasına gözatmak için düğmeyi.  
   
-    3.  İçinde **bu klasördeki ekleme** kutusuna, varlığı ekleyin ve ardından bir klasör adı girin **Tamam** düğmesi.  
+    3. İçinde **bu klasördeki ekleme** kutusuna, varlığı ekleyin ve ardından bir klasör adı girin **Tamam** düğmesi.  
   
-7.  Paketiniz ek uzantıları dahil etmek istiyorsanız, bunları aynı şekilde ekleyin.  
+7. Paketiniz ek uzantıları dahil etmek istiyorsanız, bunları aynı şekilde ekleyin.  
   
-8.  Çözümü oluşturun.  
+8. Çözümü oluşturun.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX bildirim dosyası, [Content_Types] .xml dosyasını ve tüm projeye eklenen uzantı varlıkları içeren bir .vsix dosyası oluşturur.  
   

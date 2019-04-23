@@ -11,23 +11,23 @@ ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 81de310320fe45c06f2a233d7c8d742f9d55405e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093113"
 ---
 # <a name="servers-visual-studio-sdk"></a>Sunucular (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Hata ayıklayıcı mimarisi bakımından bir **sunucu**:  
   
--   Bir kapsayıcı bağlantı noktası ve bağlantı noktası sağlayıcıları ve hata ayıklama altyapıları ve bağlantı noktaları ve bağlantı noktası sağlayıcıları oturum hata ayıklama Yöneticisi (SDM) iletişim kurmak için kullanılır.  
+- Bir kapsayıcı bağlantı noktası ve bağlantı noktası sağlayıcıları ve hata ayıklama altyapıları ve bağlantı noktaları ve bağlantı noktası sağlayıcıları oturum hata ayıklama Yöneticisi (SDM) iletişim kurmak için kullanılır.  
   
--   Kendi adına göre tanımlayabilir ve kendi bağlantı noktası ve bağlantı noktası sağlayıcıları numaralandırılamadı.  
+- Kendi adına göre tanımlayabilir ve kendi bağlantı noktası ve bağlantı noktası sağlayıcıları numaralandırılamadı.  
   
--   Tarafından temsil edilen bir [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) yalnızca Visual Studio (bir Visual Studio çalışan her örneği için bir sunucu örneğini) tarafından uygulanan arabirimi.  
+- Tarafından temsil edilen bir [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) yalnızca Visual Studio (bir Visual Studio çalışan her örneği için bir sunucu örneğini) tarafından uygulanan arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlantı noktaları](../../extensibility/debugger/ports.md)   

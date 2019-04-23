@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 505f876b9c7943c8b039b74459552b77ce539477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101125"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Nasıl yapılır: Hata Ayıklama Adımlama Seçeneğini Değiştirme (Eski)
 Bu konu için hata ayıklama Adımlama seçeneğini değiştirme açıklar [!INCLUDE[wf](../includes/wf-md.md)] eski uygulamalarda [!INCLUDE[wfd1](../includes/wfd1-md.md)] eşzamanlı eylemler vardır. Eski kullanın [!INCLUDE[wfd2](../includes/wfd2-md.md)] hedeflemek gerektiğinde [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -33,13 +33,13 @@ Bu konu için hata ayıklama Adımlama seçeneğini değiştirme açıklar [!INC
   
 #### <a name="to-change-the-debug-stepping-option"></a>Hata ayıklama Adımlama seçeneğini değiştirmek için  
   
-1.  Visual Studio’yu çalıştırın.  
+1. Visual Studio’yu çalıştırın.  
   
-2.  Mevcut bir eski iş akışı projesi açın veya, eşzamanlı etkinlikleri kullanır ve ya da hedefleyen yeni bir proje oluşturun [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
+2. Mevcut bir eski iş akışı projesi açın veya, eşzamanlı etkinlikleri kullanır ve ya da hedefleyen yeni bir proje oluşturun [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] veya [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
-3.  Üzerinde **iş akışı** eski menüde [!INCLUDE[wfd2](../includes/wfd2-md.md)], işaret **hata ayıklama**, gelin ve ardından **Adımlama seçenekleri**.  
+3. Üzerinde **iş akışı** eski menüde [!INCLUDE[wfd2](../includes/wfd2-md.md)], işaret **hata ayıklama**, gelin ve ardından **Adımlama seçenekleri**.  
   
-4.  Şunlardan birini seçin **örneği** veya **dal**.  
+4. Şunlardan birini seçin **örneği** veya **dal**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eski iş akışlarında hata ayıklama](../workflow-designer/debugging-legacy-workflows.md)   

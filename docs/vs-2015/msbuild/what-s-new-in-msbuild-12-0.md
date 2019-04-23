@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 324ea1e0409ea08b7580d9a6375e7ad96a539a92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074118"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Hangi&#39;s MSBuild 12.0'deki yenilikler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ MSBuild artık .NET Framework'ün bir parçası olarak değil, Visual Studio'nun
 ## <a name="changed-properties"></a>Özellikleri değiştirilmiş  
  Aşağıdaki MSBuild özellikleri, yeni bir sürüm numarası sonucu olarak değiştirilir:  
   
--   `MSBuildToolsVersion` Bu araçlar için 12.0 sürümüdür.  
+- `MSBuildToolsVersion` Bu araçlar için 12.0 sürümüdür.  
   
--   `MSBuildToolsPath` 32 bit işletim sistemlerinde %ProgramFiles%\MSBuild\12.0\bin veya %ProgramFiles%\MSBuild\12.0\bin\amd64 64-bit işletim sistemlerinde sunulmuştur.  
+- `MSBuildToolsPath` 32 bit işletim sistemlerinde %ProgramFiles%\MSBuild\12.0\bin veya %ProgramFiles%\MSBuild\12.0\bin\amd64 64-bit işletim sistemlerinde sunulmuştur.  
   
--   `ToolsVersion` değerleri, 32-bit işletim sistemleri için HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0 ya da 64-bit işletim sistemleri için HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0 bulunabilir.  
+- `ToolsVersion` değerleri, 32-bit işletim sistemleri için HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0 ya da 64-bit işletim sistemleri için HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0 bulunabilir.  
   
--   `SDK35ToolsPath` Ve `SDK40ToolsPath` noktası özelliklerini (örneğin, 8 4.X araçları için.1a) Visual Studio'nun bu sürümü ile paketlenmiştir .NET Framework SDK'sına.  
+- `SDK35ToolsPath` Ve `SDK40ToolsPath` noktası özelliklerini (örneğin, 8 4.X araçları için.1a) Visual Studio'nun bu sürümü ile paketlenmiştir .NET Framework SDK'sına.  
   
 ## <a name="new-properties"></a>Yeni Özellikler  
   
--   `MSBuildFrameworkToolsPath` 32 bit işletim sistemlerinde %windir%\Microsoft.NET\Framework\v4.0.30319 veya 64-bit işletim sistemlerinde %windir%\Microsoft.NET\Framework64\v4.0.30319 değerini içeren yeni bir özelliktir. Bu bir ardılı olan `MSBuildToolsPath` .NET Framework Araçları ve yardımcı programları işaret edecek şekilde kullanılabilir.  
+- `MSBuildFrameworkToolsPath` 32 bit işletim sistemlerinde %windir%\Microsoft.NET\Framework\v4.0.30319 veya 64-bit işletim sistemlerinde %windir%\Microsoft.NET\Framework64\v4.0.30319 değerini içeren yeni bir özelliktir. Bu bir ardılı olan `MSBuildToolsPath` .NET Framework Araçları ve yardımcı programları işaret edecek şekilde kullanılabilir.  
   
--   `MSBuildToolsPath` ve `MSBuildFrameworkToolsPath` 32-bit eşdeğerleri —`MSBuildToolsPath32` ve `MSBuildFrameworkToolsPath32`— her zaman noktasında 32 bit veya 64-bit MSBuild kullanılıp kullanılmadığı bağımsız olarak 32-bit konumuna.
+- `MSBuildToolsPath` ve `MSBuildFrameworkToolsPath` 32-bit eşdeğerleri —`MSBuildToolsPath32` ve `MSBuildFrameworkToolsPath32`— her zaman noktasında 32 bit veya 64-bit MSBuild kullanılıp kullanılmadığı bağımsız olarak 32-bit konumuna.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 [MSBuild](msbuild.md)

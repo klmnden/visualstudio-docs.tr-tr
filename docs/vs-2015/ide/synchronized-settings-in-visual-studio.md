@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109016"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio'da Eşitlenmiş Ayarlar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Visual Studio için birden çok bilgisayarda oturum açmak için aynı kişisell
 ## <a name="synchronized-settings"></a>Eşitlenmiş ayarlar
  Varsayılan olarak, şu ayarlar eşitlenir.
 
--   Geliştirme Ayarları (bir ayar kümesi seçmeniz gerekir. ilk kez Visual Studio'yu çalıştırın, ancak zaman seçimi değiştirebilirsiniz. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Geliştirme Ayarları (bir ayar kümesi seçmeniz gerekir. ilk kez Visual Studio'yu çalıştırın, ancak zaman seçimi değiştirebilirsiniz. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
--   Aşağıdaki seçenekleri **Araçları &#124; seçenekleri** sayfalar:
+- Aşağıdaki seçenekleri **Araçları &#124; seçenekleri** sayfalar:
 
-    -   **Tema** ve menü çubuğu üzerinde ayarları, büyük/küçük harfleri **ortam**, **genel** Seçenekleri sayfası
+    - **Tema** ve menü çubuğu üzerinde ayarları, büyük/küçük harfleri **ortam**, **genel** Seçenekleri sayfası
 
-    -   Tüm ayarlar **ortam**, **yazı tipleri ve renkler** Seçenekleri sayfası
+    - Tüm ayarlar **ortam**, **yazı tipleri ve renkler** Seçenekleri sayfası
 
-    -   Tüm klavye kısayolları **ortam**, **klavye** Seçenekleri sayfası
+    - Tüm klavye kısayolları **ortam**, **klavye** Seçenekleri sayfası
 
-    -   Tüm ayarlar **ortamı, sekmeler ve Windows** Seçenekleri sayfası
+    - Tüm ayarlar **ortamı, sekmeler ve Windows** Seçenekleri sayfası
 
-    -   Tüm ayarlar **ortam**, **başlangıç** Seçenekleri sayfası
+    - Tüm ayarlar **ortam**, **başlangıç** Seçenekleri sayfası
 
-    -   Tüm ayarlar **metin düzenleyici** seçenekler sayfaları
+    - Tüm ayarlar **metin düzenleyici** seçenekler sayfaları
 
--   XAML Tasarımcısı'ndaki tüm ayarlar seçenekler sayfaları
+- XAML Tasarımcısı'ndaki tüm ayarlar seçenekler sayfaları
 
--   Kullanıcı tanımlı komut diğer adları. Komut diğer adlarını tanımlama hakkında daha fazla bilgi için bkz. [Visual Studio komut diğer adları](../ide/reference/visual-studio-command-aliases.md).
+- Kullanıcı tanımlı komut diğer adları. Komut diğer adlarını tanımlama hakkında daha fazla bilgi için bkz. [Visual Studio komut diğer adları](../ide/reference/visual-studio-command-aliases.md).
 
--   Kullanıcı tanımlı pencere düzenleri **penceresi &#124; pencere düzenlerini Yönet** sayfası
+- Kullanıcı tanımlı pencere düzenleri **penceresi &#124; pencere düzenlerini Yönet** sayfası
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Belirli bir bilgisayar için açma eşitlenmiş ayarları devre dışı
  Eşitlenmiş ayarlar Visual Studio için varsayılan olarak açık olabilir. Eşitlenmiş ayarlar bir bilgisayara giderek kapatabilirsiniz **Araçları &#124; seçenekleri &#124; ortam &#124; eşitlenmiş ayarlar** sayfası ve onay kutusunun seçilirliği kaldırıldığında.  Örneğin, bir bilgisayarda Visual Studio'nun ayarlarını eşitlemek karar verirseniz, herhangi bir ayarı değişiklik yapılan bilgisayarda Bilgisayar B görünmüyor do veya bilgisayar c bilgisayar B ve C birbiriyle, ancak bilgisayar A'ya eşitlenecek sürdürür

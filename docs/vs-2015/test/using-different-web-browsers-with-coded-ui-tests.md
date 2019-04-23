@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100410"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle Farklı Web Tarayıcıları Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
   
 - İşletim sistemleri:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Web tarayıcı sürümleri:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Mozilla Firefox ve Google Chrome'un desteklenen sürümleri için Git [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  - Mozilla Firefox ve Google Chrome'un desteklenen sürümleri için Git [burada](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
 - Yükleme [kodlanmış UI çapraz tarayıcı test etmek için Selenium bileşenlerini](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -83,19 +83,19 @@ Kodlanmış UI testleri, web uygulamaları için Internet Explorer'ı kullanarak
 ### <a name="enable-debugging"></a>Hata ayıklamayı etkinleştir  
  Web uygulamanızda hata ayıklamayı etkinleştirmek için aşağıdaki yapılandırma seçeneklerini tamamlamanız gerekir:  
   
-1.  Yalnızca Kendi Kodumu Etkinleştir:  
+1. Yalnızca Kendi Kodumu Etkinleştir:  
   
-    1.  Üzerinde **Araçları** menüsünde seçin **seçenekleri** seçip **hata ayıklama**.  
+    1. Üzerinde **Araçları** menüsünde seçin **seçenekleri** seçip **hata ayıklama**.  
   
-    2.  Seçin **yalnızca kendi kodumu etkinleştir**.  
+    2. Seçin **yalnızca kendi kodumu etkinleştir**.  
   
-2.  CLR özel durumları devre dışı bırakın:  
+2. CLR özel durumları devre dışı bırakın:  
   
-    1.  Üzerinde **hata ayıklama** menüsünde seçin **özel durumları**.  
+    1. Üzerinde **hata ayıklama** menüsünde seçin **özel durumları**.  
   
-    2.  İçin **ortak dil çalışma zamanı özel durumları**, onay kutusunu temizleyin **kullanıcı-işlenmemiş**.  
+    2. İçin **ortak dil çalışma zamanı özel durumları**, onay kutusunu temizleyin **kullanıcı-işlenmemiş**.  
   
-##  <a name="generate"></a> *Kodlanmış UI testi BrowserWindow.CurrentBrowser değiştirme seçeneği görmüyorum.*  
+## <a name="generate"></a> *Kodlanmış UI testi BrowserWindow.CurrentBrowser değiştirme seçeneği görmüyorum.*  
  Bir sürümünü kullanıyor olabilecek [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] çeşitli web tarayıcıları kullanarak kodlanmış UI testleri desteklemiyor. Bu tür kodlanmış UI testleri kullanmak için Visual Studio Enterprise'ı kullanmanız gerekir.  
   
  *Başka neleri bilmeliyim?*  

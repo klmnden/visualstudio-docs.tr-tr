@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104934"
 ---
 # <a name="xml-schema-explorer"></a>XML Şema Gezgini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ XML Şeması Gezgini XML Şeması Tanım Dili (XSD) şemalarla çalışma sağla
   
  Bir düğüm etkinleştirmek için çift tıklayın veya basın **Enter** düğümü seçildiğinde.  
   
--   Bir düğüm etkinleştirme bu düğümde tanımlanan (dosya zaten açık değilse) dosya açılır ve dosyayı düğümü seçer.  
+- Bir düğüm etkinleştirme bu düğümde tanımlanan (dosya zaten açık değilse) dosya açılır ve dosyayı düğümü seçer.  
   
--   Bir dosya düğümü etkinleştirme (zaten açık değilse), seçili dosyayı açar ve vurgular `<schema>` düğümü.  
+- Bir dosya düğümü etkinleştirme (zaten açık değilse), seçili dosyayı açar ve vurgular `<schema>` düğümü.  
   
--   Bir SchemaSet veya bir ad alanı düğümü etkinleştirme hiçbir şey yapmaz.  
+- Bir SchemaSet veya bir ad alanı düğümü etkinleştirme hiçbir şey yapmaz.  
   
 ## <a name="draging-and-dropping-nodes"></a>Draging ve düğümleri bırakılıyor  
  Sürükleyin ve genel düğümler, dosya düğümleri ve ad alanı düğümleri bir XSD Tasarımcısı görünümü üzerine bırakın. Geçerli Görünüm ise [başlangıç görünümündeki](../xml-tools/start-view.md), bir düğüm görünümü açın sürükleyerek açılır [graf görünümünü](../xml-tools/graph-view.md). Geçerli Görünüm ise [içerik modeli görünümünü](../xml-tools/content-model-view.md) veya grafik görünümü, görünümün üzerine bir düğüm düşürdüğünüzde değiştirmez.  
@@ -82,13 +82,13 @@ XML Şeması Gezgini XML Şeması Tanım Dili (XSD) şemalarla çalışma sağla
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Şema Kümesini Arama](../xml-tools/searching-the-schema-set.md)  
+- [Şema Kümesini Arama](../xml-tools/searching-the-schema-set.md)  
   
--   [Sıralama, Filtreleme ve Gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Sıralama, Filtreleme ve Gruplandırma](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Bağlam Menüleri](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Bağlam Menüleri](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [XML Değişmez Değerlerinin XML Şeması Gezgini ile Tümleştirilmesi](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [XML Değişmez Değerlerinin XML Şeması Gezgini ile Tümleştirilmesi](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: XML Şema Gezgininden Çalışma Alanına Düğüm Ekleme](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

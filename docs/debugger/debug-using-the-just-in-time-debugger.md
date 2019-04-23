@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092286"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Tam zamanında hata ayıklayıcı, Visual Studio kullanarak hata ayıklama
 
@@ -26,7 +26,7 @@ Just-In-Time hata ayıklama, Windows Masaüstü uygulamaları için çalışır.
 > [!TIP]
 > Yalnızca istiyorsanız Durdur görüntülenmesini, tam zamanında hata ayıklayıcı iletişim kutusu, ancak Visual Studio yüklü, bakın [tam zamanında hata ayıklayıcı devre dışı](../debugger/just-in-time-debugging-in-visual-studio.md). Visual Studio'nun bir kez olsaydı gerekebilir [Windows kayıt defterinden devre dışı bırakma, Just-ın-Time hata ayıklama](#disable-just-in-time-debugging-from-the-windows-registry).
 
-##  <a name="BKMK_Enabling"></a> Etkinleştirme veya devre dışı bırakma, Just-ın-Time debugging in Visual Studio
+## <a name="BKMK_Enabling"></a> Etkinleştirme veya devre dışı bırakma, Just-ın-Time debugging in Visual Studio
 
 >[!NOTE]
 >Etkinleştirmek ya da tam zamanında hata ayıklama devre dışı bırakmak için Visual Studio'yu bir yönetici olarak çalıştırıyor olmanız gerekir. Etkinleştirme veya devre dışı Just-ın-Time hata ayıklama, bir kayıt defteri anahtarı ayarlar ve yönetici ayrıcalıkları, bu anahtarı değiştirmek için gerekebilir. Visual Studio'yu yönetici olarak açmak için Visual Studio uygulamayı sağ tıklatıp seçin **yönetici olarak çalıştır**.
@@ -51,25 +51,25 @@ Visual Studio artık bilgisayarınızda yüklü olsa bile just-In-Time hata ayı
 
 **Tam zamanında hata ayıklama kayıt defterini düzenleyerek devre dışı bırakmak için:**
 
-1.  Windows gelen **Başlat** menüsü çalıştırma **Kayıt Defteri Düzenleyicisi'ni** (*regedit.exe*).
+1. Windows gelen **Başlat** menüsü çalıştırma **Kayıt Defteri Düzenleyicisi'ni** (*regedit.exe*).
 
-2.  İçinde **Kayıt Defteri Düzenleyicisi'ni** penceresinde bulun ve aşağıdaki kayıt defteri girişleri silin:
+2. İçinde **Kayıt Defteri Düzenleyicisi'ni** penceresinde bulun ve aşağıdaki kayıt defteri girişleri silin:
 
-    -   **HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\Software\Microsoft\\. NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![JIT kayıt defteri anahtarı](../debugger/media/dbg-jit-registry.png "JIT kayıt defteri anahtarı")
 
-3.  Ayrıca bilgisayarınızın bir 64-bit işletim sistemi çalıştırıyorsa aşağıdaki kayıt defteri girdilerini silin:
+3. Ayrıca bilgisayarınızın bir 64-bit işletim sistemi çalıştırıyorsa aşağıdaki kayıt defteri girdilerini silin:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Silinmemesi veya başka bir kayıt defteri anahtarlarını değiştirme emin olun.
 
-5.  Kapat **Kayıt Defteri Düzenleyicisi'ni** penceresi.
+5. Kapat **Kayıt Defteri Düzenleyicisi'ni** penceresi.
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Just-ın-Time etkinleştirmek bir Windows formunda hata ayıklama
 
@@ -79,7 +79,7 @@ Varsayılan olarak, Windows Form uygulamalar, kurtarabilirsiniz durumunda çalı
 
 Tam zamanında yerine standart Windows formu hata işleme hata ayıklamayı etkinleştirmek için bu ayarları ekleyin:
 
--  İçinde `system.windows.forms` bölümünü *machine.config* veya  *\<uygulama adı >. exe.config* dosya, ayarlama `jitDebugging` değerini `true`:
+- İçinde `system.windows.forms` bölümünü *machine.config* veya  *\<uygulama adı >. exe.config* dosya, ayarlama `jitDebugging` değerini `true`:
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ Tam zamanında yerine standart Windows formu hata işleme hata ayıklamayı etki
     </configuration>
     ```
 
--  Bir C++ Windows Form uygulamasında, ayrıca ayarlayın `DebuggableAttribute` için `true` içinde bir *.config* dosya ya da kodunuzda. Derleme yaparsanız [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) ve olmadan [/Og](/cpp/build/reference/og-global-optimizations), derleyici bu özniteliği sizin için ayarlar. Bir yayın olmayan yapılandırmada yapı hata ayıklamak istiyorsanız, ancak ayarlamalısınız `DebuggableAttribute` uygulamanızın içinde aşağıdaki satırı ekleyerek *AssemblyInfo.cpp* dosyası:
+- Bir C++ Windows Form uygulamasında, ayrıca ayarlayın `DebuggableAttribute` için `true` içinde bir *.config* dosya ya da kodunuzda. Derleme yaparsanız [/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) ve olmadan [/Og](/cpp/build/reference/og-global-optimizations), derleyici bu özniteliği sizin için ayarlar. Bir yayın olmayan yapılandırmada yapı hata ayıklamak istiyorsanız, ancak ayarlamalısınız `DebuggableAttribute` uygulamanızın içinde aşağıdaki satırı ekleyerek *AssemblyInfo.cpp* dosyası:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -96,11 +96,11 @@ Tam zamanında yerine standart Windows formu hata işleme hata ayıklamayı etki
    Daha fazla bilgi için bkz. <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="BKMK_Using_JIT"></a>Kullanma Just-ın-Time hata ayıklama
- Bu örnekte, Just-ın-uygulama bir hata oluşturduğunda hata ayıklama Time açıklanmaktadır.
+Bu örnekte, Just-ın-uygulama bir hata oluşturduğunda hata ayıklama Time açıklanmaktadır.
 
- - Visual Studio bu adımları izlemek için yüklü olması gerekir. Visual Studio yoksa, ücretsiz indirebileceğiniz [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- Visual Studio bu adımları izlemek için yüklü olması gerekir. Visual Studio yoksa, ücretsiz indirebileceğiniz [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
- - Olun emin Just-ın-Time hata ayıklama [etkin](#BKMK_Enabling) içinde **Araçları** > **seçenekleri** > **hata ayıklama**  >  **Just-ın-Time**.
+- Olun emin Just-ın-Time hata ayıklama [etkin](#BKMK_Enabling) içinde **Araçları** > **seçenekleri** > **hata ayıklama**  >  **Just-ın-Time**.
 
 Bu örnekte, Visual Studio'da atan bir C# konsol uygulaması yapacaksınız bir [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 

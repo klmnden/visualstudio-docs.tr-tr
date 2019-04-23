@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105096"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Hangi&#39;Visual Studio 2015 SDK yenilikler
 Visual Studio SDK, Visual Studio 2015, Visual Studio 2015 güncelleştirme ve Visual Studio 2017 için aşağıdaki yeni ve güncelleştirilmiş özelliklere sahiptir.
@@ -23,9 +23,9 @@ Visual Studio SDK, Visual Studio 2015, Visual Studio 2015 güncelleştirme ve Vi
 
  Bu konu başlıkları altında olan [VSSDK yardımcı programları](../extensibility/internals/vssdk-utilities.md) bölümü:
 
--   [Renk teması oluşturma araçları](../extensibility/internals/color-theming-tools.md) oluşturun ve Visual Studio için özel renkler Düzenle yardımcı.
+- [Renk teması oluşturma araçları](../extensibility/internals/color-theming-tools.md) oluşturun ve Visual Studio için özel renkler Düzenle yardımcı.
 
--   [Görüntü Hizmeti Araçları](../extensibility/internals/image-service-tools.md) Visual Studio görüntü bildirim dosyaları ile çalışma sağlar.
+- [Görüntü Hizmeti Araçları](../extensibility/internals/image-service-tools.md) Visual Studio görüntü bildirim dosyaları ile çalışma sağlar.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Visual Studio SDK'sı için Visual Studio eklemek için yeni yol
  Visual Studio 2015'ten başlayarak, Visual Studio SDK'yı ayrı olarak karşıdan yüklemek gerekmez. Bunun yerine, normal yükleme işleminin bir parçası yükleyin ya da daha sonra yüklemek seçebilirsiniz. Bir VSIX çözümüne oluşturun veya açın, Visual Studio, Visual Studio genişletilebilirlik araçları yüklemek için sorar. Daha fazla bilgi için [Visual Studio SDK'sını yükleme](../extensibility/installing-the-visual-studio-sdk.md).
@@ -36,13 +36,13 @@ Visual Studio SDK, Visual Studio 2015, Visual Studio 2015 güncelleştirme ve Vi
 ### <a name="visual-c-and-visual-basic"></a>Visual C# ve Visual Basic
  C# ve Visual Basic için tam kapsamlı bir VSPackage, menü komutları, araç pencerelerini, düzenleyici sınıflandırıcılar, düzenleyici Kenarlıklar ve düzenleyici kenar boşluğu uzantıları oluşturmanıza imkan tanır ve proje öğesi şablonları yoktur. Bu şablonlar bir bölümünü veya tamamını standart bir VSIX projesine ekleyebilirsiniz. Daha fazla bilgi için bkz.:
 
--   [Bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Bir düzenleyici öğesi şablonuyla uzantı oluşturma](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [VSPackage içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      VSPackage Sihirbazı, uzantıları artık C# veya Visual Basic'te oluşturur.
 

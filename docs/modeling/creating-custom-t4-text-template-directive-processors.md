@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109263"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Özel T4 Metin Şablonu Yönerge İşlemcileri Oluşturma
 
@@ -40,9 +40,9 @@ Yönerge işlemcileri için yeniden kullanılması faktörü kod için bir yol s
 
 Özel yönerge işlemcilerinizi bazı örnekleri şunlardır:
 
--   Bir kullanıcı adı ve parola parametre olarak kabul eden bir veritabanındaki verileri döndürmek için bir yönerge işlemcisi.
+- Bir kullanıcı adı ve parola parametre olarak kabul eden bir veritabanındaki verileri döndürmek için bir yönerge işlemcisi.
 
--   Açıp, bir dosyayı okumak için bir yönerge işlemcisi dosyasının adı, parametre olarak kabul eder.
+- Açıp, bir dosyayı okumak için bir yönerge işlemcisi dosyasının adı, parametre olarak kabul eder.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Özel yönerge işlemcisi sorumlusu bölümleri
 
@@ -50,19 +50,19 @@ Bir yönerge işlemcisi geliştirmek için öğesinden devralınan bir sınıf o
 
 En önemli `DirectiveProcessor` uygulamanız gereken yöntemler aşağıdaki gibidir.
 
--   `bool IsDirectiveSupported(string directiveName)` -Dönüş `true` yönerge işlemciniz adlandırılmış yönergesiyle giderebilirsiniz durumunda.
+- `bool IsDirectiveSupported(string directiveName)` -Dönüş `true` yönerge işlemciniz adlandırılmış yönergesiyle giderebilirsiniz durumunda.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Şablon altyapısı, şablon yönergesinde her oluşumu için bu yöntemi çağırır. İşlemci sonuçları kaydetmeniz gerekir.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Şablon altyapısı, şablon yönergesinde her oluşumu için bu yöntemi çağırır. İşlemci sonuçları kaydetmeniz gerekir.
 
 Startprocessingrun() tüm çağrıları sonra şablon oluşturma altyapısı bu yöntemleri çağırır:
 
--   `string[] GetReferencesForProcessingRun()` -Şablon kodunu gerektiren derlemelerin adlarını döndürür.
+- `string[] GetReferencesForProcessingRun()` -Şablon kodunu gerektiren derlemelerin adlarını döndürür.
 
--   `string[] GetImportsForProcessingRun()` -Kullanılabilir ad alanlarının, şablonu kodu döndürür.
+- `string[] GetImportsForProcessingRun()` -Kullanılabilir ad alanlarının, şablonu kodu döndürür.
 
--   `string GetClassCodeForProcessingRun()` -Yöntemler, özellikler ve şablon kodunu kullanabileceğiniz diğer bildirimleri kodunu döndürür. Bunu yapmanın en kolay yolu, C# veya Visual Basic kodunu içeren bir dize oluşturmaktır. Yönerge işlemciniz herhangi bir CLR dil kullanan bir şablondan çağrılan özellikli hale getirmek için ifadeleri bir CodeDom ağacını oluşturmak ve ardından şablon tarafından kullanılan dilde ağacı seri hale getirme sonucunu döndürür.
+- `string GetClassCodeForProcessingRun()` -Yöntemler, özellikler ve şablon kodunu kullanabileceğiniz diğer bildirimleri kodunu döndürür. Bunu yapmanın en kolay yolu, C# veya Visual Basic kodunu içeren bir dize oluşturmaktır. Yönerge işlemciniz herhangi bir CLR dil kullanan bir şablondan çağrılan özellikli hale getirmek için ifadeleri bir CodeDom ağacını oluşturmak ve ardından şablon tarafından kullanılan dilde ağacı seri hale getirme sonucunu döndürür.
 
--   Daha fazla bilgi için [izlenecek yol: Özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Daha fazla bilgi için [izlenecek yol: Özel yönerge işlemcisi oluşturma](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

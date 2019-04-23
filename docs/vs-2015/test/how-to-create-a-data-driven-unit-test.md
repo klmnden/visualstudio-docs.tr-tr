@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095769"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Nasıl yapılır: Veri Temelli Birim Testi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ Yönetilen kod için Microsoft birim testi çerçevesini kullanarak bir veri kay
   
 - [Test yönteminin yazma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-  -   [DataSourceAttribute belirtme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  - [DataSourceAttribute belirtme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-  -   [Verilere erişmek için TestContext.DataRow kullanma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  - [Verilere erişmek için TestContext.DataRow kullanma](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
 - [Test çalıştırma ve sonuçları görüntüleme](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
   Veri temelli birim testi oluşturma, aşağıdaki adımları içerir:  
   
-1.  Test yöntemi kullanan değerleri içeren bir veri kaynağı oluşturun. Veri kaynağı, testi çalıştıran makinede kayıtlı herhangi bir tür olabilir.  
+1. Test yöntemi kullanan değerleri içeren bir veri kaynağı oluşturun. Veri kaynağı, testi çalıştıran makinede kayıtlı herhangi bir tür olabilir.  
   
-2.  Özel bir ekleme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak `TestContext` özelliğini test sınıfı.  
+2. Özel bir ekleme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> alan ve ortak `TestContext` özelliğini test sınıfı.  
   
-3.  Bir birim test yöntemi oluşturun ve ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> için özniteliği.  
+3. Bir birim test yöntemi oluşturun ve ekleme bir <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> için özniteliği.  
   
-4.  Kullanma <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> bir testte kullanılacak değerleri almak için dizin oluşturucu özelliği.  
+4. Kullanma <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> bir testte kullanılacak değerleri almak için dizin oluşturucu özelliği.  
   
-##  <a name="BKMK_The_method_under_test"></a> Test altındaki yöntemi  
+## <a name="BKMK_The_method_under_test"></a> Test altındaki yöntemi  
  Örneğin, biz oluşturduğunuzu varsayalım:  
   
 1. Bir çözüm olarak `MyBank` kabul eder ve farklı hesap türlerinin hareketlerini işler.  
@@ -80,7 +80,7 @@ public int AddIntegers(int first, int second)
 }  
 ```  
   
-##  <a name="BKMK_Creating_a_data_source"></a> Veri kaynağı oluşturma  
+## <a name="BKMK_Creating_a_data_source"></a> Veri kaynağı oluşturma  
  Sınanacak `AddIntegers` yöntemi oluştururuz parametreleri ve döndürülecek beklediğiniz toplamı için değer aralığını belirten bir veri kaynağı. Bizim örneğimizde, biz adlı bir Sql Compact veritabanı oluşturma `MathsData` ve adlı bir tablo `AddIntegersData` aşağıdaki sütun adlarını ve değerlerini içeren  
   
 |İlksayı|İkincisayı|TOPLA|  
@@ -89,7 +89,7 @@ public int AddIntegers(int first, int second)
 |1.|1.|2|  
 |2|-3|-1|  
   
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Test sınıfı için bir TestContext ekleme  
+## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Test sınıfı için bir TestContext ekleme  
  Birim test çerçevesi oluşturur bir `TestContext` veri tabanlı test için veri kaynağı bilgilerini depolamak için nesne. Framework, ardından bu nesne değeri olarak ayarlar `TestContext` oluştururuz özelliği.  
   
 ```  
@@ -105,7 +105,7 @@ public TestContext TestContext
   
  Test yönteminizde aracılığıyla verilere `DataRow` dizin oluşturucu özelliği `TestContext`.  
   
-##  <a name="BKMK_Writing_the_test_method"></a> Test yönteminin yazma  
+## <a name="BKMK_Writing_the_test_method"></a> Test yönteminin yazma  
  Test yöntemi için `AddIntegers` oldukça basittir. Veri kaynağındaki her satır için diyoruz `AddIntegers` ile **İlksayı** ve **İkincisayı** sütun değerleri parametreler ve dönüş değeri ile karşılaştırarak doğrulayacağız **toplam**sütun değeri:  
   
 ```  
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Unutmayın `Assert` yöntemi içeren bir ileti görüntüler `x` ve `y` başarısız bir yineleme değerleri. Varsayılan olarak onaylanan değerler `expected` ve `actual`, testin başarısız Ayrıntılar zaten dahil edilmiştir.  
   
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> DataSourceAttribute belirtme  
+### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> DataSourceAttribute belirtme  
  `DataSource` Özniteliği test yönteminde veri kaynağı ve kullandığınız tablonun adı için bağlantı dizesini belirtir. Bağlantı dizesindeki gördüğü bilgiler, kullandığınız veri kaynağı türüne bağlı olarak farklılık gösterir. Bu örnekte, bir SqlServerCe veritabanı kullandık.  
   
 ```  
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]  
 ```  
   
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verilere erişmek için TestContext.DataRow kullanma  
+### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verilere erişmek için TestContext.DataRow kullanma  
  Verilere erişmek için `AddIntegersData` tablo, kullanın `TestContext.DataRow` dizin oluşturucu. `DataRow` olan bir <xref:System.Data.DataRow> nesne için sütun değerlerini dizini veya sütun adlarına göre alıyoruz. Değerleri nesneler olarak döndürdüğünden, bunları uygun türe dönüştürmeniz gerekir:  
   
 ```  
@@ -173,7 +173,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
 ```  
   
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Test çalıştırma ve sonuçları görüntüleme  
+## <a name="BKMK_Running_the_test_and_viewing_results"></a> Test çalıştırma ve sonuçları görüntüleme  
  Bir test yönteminin yazma işlemini tamamladığınızda, test projesi oluşturun. Test yöntemini Test Gezgini penceresinde görünür **çalıştırılmamış testler** grubu. Test Gezgini çalıştırma, yazma ve testlerinizi yeniden çalıştırın gibi sonuçları gruplarında görüntüler. **başarısız testler**, **başarılı testler**, ve **çalıştırılmamış testler**. Seçebileceğiniz **tümünü Çalıştır** tüm testleri çalıştırmak veya seçmek için **Çalıştır...**  bir alt kümesini Çalıştırılacak testleri seçmek için.  
   
  Testiniz çalışırken Explorer'ın üstündeki test sonuçları çubuğunda bir animasyon görünür. Testler başarısız olursa test çalışmasının sonunda, tüm testler başarılı değilse yeşil veya Kırmızı çubuk olacaktır. Test Gezgini penceresinin altındaki ayrıntılar bölmesi test çalıştırmasının bir özeti görüntülenir. Bu testin ayrıntılarını alt bölmede görüntülemek için bir test seçin.  

@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095821"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Renkler ve stil Visual Studio için
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59670101"
 
  **Araçlar > Seçenekler iletişim kutusu**
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor hizmeti
+## <a name="BKMK_TheVSColorService"></a> VSColor hizmeti
  Visual Studio VSColor hizmeti veya kabuk renk hizmeti olarak da bilinir bir ortam rengi hizmeti sağlar. Bu hizmet, kullanıcı Arabirimi öğeleri renk değerlerini ayarlamak için her bir Tema renkleri içeren bir ad-değer rengi bağlamak sağlar. Renkleri otomatik olarak geçerli bir kullanıcı tarafından seçilen tema yansıtacak şekilde değişir ve böylece kullanıcı Arabirimi ortam rengi hizmetine bağlı yeni temalarınızı gelecekte Visual Studio sürümlerini tümleştirme VSColor hizmeti tüm kullanıcı Arabirimi öğeleri için kullanılmalıdır.
 
 ### <a name="how-the-service-works"></a>Hizmeti nasıl çalışır?
@@ -256,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Yüksek Karşıtlık renklerini seçme
+## <a name="BKMK_ChoosingHighContrastColors"></a> Yüksek Karşıtlık renklerini seçme
 
 ### <a name="overview"></a>Genel Bakış
  Windows, metin ve arka plan görüntüleri, renk karşıtlığını artırmak birçok yüksek karşıtlık sistem düzeyindeki temayla öğeler ekranda farklı daha görünür hale kullanır. Erişilebilirlik nedeniyle, kullanıcılar yüksek karşıtlıklı tema arasında geçiş yaptığınızda Visual Studio arabirimi öğeleri doğru bir şekilde yanıt vermesini önemlidir.
 
  Sistem renkleri olması, yüksek karşıtlıklı tema için kullanılabilir. Sisteminizi rengi adları seçerken, aşağıdaki ipuçlarını unutmayın:
 
-1.  **Aynı semantik anlama sahiptir sistem renkleri seçin** , renklendirme öğesi olarak. Örneğin, ister bir pencere içinde metin için yüksek karşıtlık renk seçim, WindowText ve değil ControlText kullanın.
+1. **Aynı semantik anlama sahiptir sistem renkleri seçin** , renklendirme öğesi olarak. Örneğin, ister bir pencere içinde metin için yüksek karşıtlık renk seçim, WindowText ve değil ControlText kullanın.
 
-2.  **Ön plan/arka plan çiftlerini seçin** birlikte veya renk seçtiğiniz tüm yüksek karşıtlık Temalar çalışacağından emin emin olmayacaktır.
+2. **Ön plan/arka plan çiftlerini seçin** birlikte veya renk seçtiğiniz tüm yüksek karşıtlık Temalar çalışacağından emin emin olmayacaktır.
 
-3.  **Kullanıcı arabiriminin hangi bölümlerinin en önemli olduğunu belirlemek ve alanlara göze emin olun.** Farklı içerik alanların hiçbir renk çeşitleri olduğundan güçlü renkler kullanımını içerik alanları tanımlamak için ortak, bu nedenle, çok küçük farklılıklar renk tonunu normalde ayırt edebilir, ayrıntı kaybedersiniz.
+3. **Kullanıcı arabiriminin hangi bölümlerinin en önemli olduğunu belirlemek ve alanlara göze emin olun.** Farklı içerik alanların hiçbir renk çeşitleri olduğundan güçlü renkler kullanımını içerik alanları tanımlamak için ortak, bu nedenle, çok küçük farklılıklar renk tonunu normalde ayırt edebilir, ayrıntı kaybedersiniz.
 
 ### <a name="system-color-set"></a>Sistem renk kümesi
  Tabloya [WPF ekibi blogu: SystemColors başvuru](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) sistem renk adlarını ve karşılık gelen tonları her tema görüntülenen tam kümesini gösterir.
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-IDE kenarlık|
 |WindowText|-Otomatik gizleme sekmesini ön plan<br />-Seçili aracı penceresi sekmesini ön plan<br />-Odaklanmadan belge penceresi sekmesinin ve plana odaklanmadan veya seçili geçici sekmesinde ön plan<br />-Ağaç görünüm varsayılan ön plan ve vurgulu içinde seçili olmayan karakter<br />-Araç penceresi seçili sekme kenarlığı<br />-Kaydırma çubuğunun Kaydırma kutusu arka plan, kenarlık ve karakter|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Son kullanıcılar için renk gösterme
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Son kullanıcılar için renk gösterme
 
 ### <a name="overview"></a>Genel Bakış
  Bazen, son kullanıcının bir kod Düzenleyicisi'ni veya tasarım yüzeyine, oluşturduğunuz gibi kullanıcı arabirimini özelleştirme olanak tanıyan isteyebilirsiniz. Bunu yapmak için en yaygın yolu kullanmaktır **Araçlar > Seçenekler** iletişim. Özel denetimler gerektiren kullanıcı Arabirimi yüksek oranda özelleştirilmiş sürece aracılığıyla özelleştirmeyi sunmak için en kolay yolu olan **yazı tipleri ve renkler** içinde sayfa **ortam** iletişim bölümü. Özelleştirme için oluşturduğunuz her öğe için ön plan rengini, arka plan rengi veya her ikisini birden değiştirmek kullanıcı seçebilir.
@@ -335,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  Özel kategoriler uygulamak veya öğeleri görüntülemek için bir VSPackage gerekir:
 
--   **Oluşturma veya kayıt defterinde kategorileri tanımlama.** IDE'nin uygulaması **yazı tipleri ve renkler** özellik sayfası, belirli bir kategori destekleyen hizmeti için doğru bir şekilde sorgulamak için bu bilgileri kullanır.
+- **Oluşturma veya kayıt defterinde kategorileri tanımlama.** IDE'nin uygulaması **yazı tipleri ve renkler** özellik sayfası, belirli bir kategori destekleyen hizmeti için doğru bir şekilde sorgulamak için bu bilgileri kullanır.
 
--   **Oluşturun veya grupları (isteğe bağlı) kayıt defterinde belirleyin.** İki veya daha fazla kategori birleşimini gösteren bir grup tanımlamak yararlı olabilir. Bir grubu tanımlanmazsa, IDE, otomatik olarak alt kategorileri birleştirir ve grup içindeki öğeleri görüntüle dağıtır.
+- **Oluşturun veya grupları (isteğe bağlı) kayıt defterinde belirleyin.** İki veya daha fazla kategori birleşimini gösteren bir grup tanımlamak yararlı olabilir. Bir grubu tanımlanmazsa, IDE, otomatik olarak alt kategorileri birleştirir ve grup içindeki öğeleri görüntüle dağıtır.
 
--   **IDE desteği uygulayın.**
+- **IDE desteği uygulayın.**
 
--   **Yazı tipi ve renk değişiklikleri işleyin.**
+- **Yazı tipi ve renk değişiklikleri işleyin.**
 
 #### <a name="to-create-or-identify-categories"></a>Oluşturma veya kategori tanımlamak için
  Özel bir kategori altında kayıt defteri girdisi türü oluşturun [HKLM\SOFTWARE\Microsoft \Visual Studio\\< Visual Studio sürümü\>\FontAndColors\\< kategori\>]. \<Kategori > kategorisi yerelleştirilmemiş adıdır.
@@ -426,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **NOT:**
 
--   "Nameıd" paketinizdeki yerelleştirilmiş kategori adı kaynak kimliği =
+- "Nameıd" paketinizdeki yerelleştirilmiş kategori adı kaynak kimliği =
 
--   "ToolWindowPackage" Paket: GUID =
+- "ToolWindowPackage" Paket: GUID =
 
--   "Kategori" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}", yalnızca bir örnek ve gerçek değer uygulayan tarafından sağlanan yeni bir GUID olabilir.
+- "Kategori" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}", yalnızca bir örnek ve gerçek değer uygulayan tarafından sağlanan yeni bir GUID olabilir.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Yazı tipi ve renk özellik kategorisine GUID ayarlayın
  Aşağıdaki kod örneği, kategori GUID'leri ayarını gösterir.

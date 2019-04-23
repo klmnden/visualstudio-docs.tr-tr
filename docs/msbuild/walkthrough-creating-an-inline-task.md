@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 967727fce010c38e2ef44a0b7e73ec10b257cce0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096237"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>İzlenecek yol: Satır içi göre oluşturma
 MSBuild görevleri, derleme uygulayan bir sınıf tarafından genellikle oluşturulur <xref:Microsoft.Build.Framework.ITask> arabirimi. .NET Framework sürüm 4 ile başlayarak, proje dosyasında görevleri satır içi oluşturabilirsiniz. Görev barındırmak için ayrı bir derleme oluşturmak zorunda değildir. Daha fazla bilgi için [satır içi görevleri](../msbuild/msbuild-inline-tasks.md).
 
  Bu izlenecek yol, oluşturmak ve bu satır içi görevleri çalıştırmak gösterilmektedir:
 
--   Giriş veya çıkış parametresi yok bir görev.
+- Giriş veya çıkış parametresi yok bir görev.
 
--   Bir giriş parametresi ve hiçbir çıktı parametreleri olan bir görev.
+- Bir giriş parametresi ve hiçbir çıktı parametreleri olan bir görev.
 
--   İki giriş parametresi ve bir MSBuild özellik döndüren bir output parametresi olan bir görev.
+- İki giriş parametresi ve bir MSBuild özellik döndüren bir output parametresi olan bir görev.
 
--   İki giriş parametresi ve MSBuild öğesi döndüren bir output parametresi olan bir görev.
+- İki giriş parametresi ve MSBuild öğesi döndüren bir output parametresi olan bir görev.
 
 Oluşturma ve görevleri çalıştırmak için Visual Studio'yu kullanın ve **Visual Studio komut istemi penceresi**gibi:
 
-1.   Visual Studio kullanarak bir MSBuild proje dosyası oluşturun.
+1. Visual Studio kullanarak bir MSBuild proje dosyası oluşturun.
 
-2.   Satır içi görev oluşturmak üzere Visual Studio'da proje dosyasını değiştirin.
+2. Satır içi görev oluşturmak üzere Visual Studio'da proje dosyasını değiştirin.
 
-3.   Kullanım **komut istemi penceresi** projeyi oluşturun ve sonuçları inceleyin.
+3. Kullanım **komut istemi penceresi** projeyi oluşturun ve sonuçları inceleyin.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>MSBuild projesi oluşturup
  Visual Studio proje sistemi MSBuild'i temel alır. Bu nedenle, Visual Studio kullanılarak yapı projesi dosyası oluşturabilirsiniz. Bu bölümde, bir Visual C# proje dosyası oluşturun. (Visual Basic proje dosyası yerine oluşturabilirsiniz. Bu öğreticide bağlamında, iki proje dosyaları arasındaki fark küçük.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>Oluşturma ve bir proje dosyasını değiştirmek için
 
-1.  Visual Studio'da üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**.
+1. Visual Studio'da üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **Visual C#** proje türü ve ardından **Windows Forms uygulaması** şablonu. İçinde **adı** kutusuna `InlineTasks`. Tür a **konumu** çözümü, örneğin, *D:\\*. Emin **çözüm için dizin oluştur** seçildiğinde **kaynak denetimine Ekle** temizlenir, ve **çözüm adı** olduğu **InlineTasks**.
+2. İçinde **yeni proje** iletişim kutusunda **Visual C#** proje türü ve ardından **Windows Forms uygulaması** şablonu. İçinde **adı** kutusuna `InlineTasks`. Tür a **konumu** çözümü, örneğin, *D:\\*. Emin **çözüm için dizin oluştur** seçildiğinde **kaynak denetimine Ekle** temizlenir, ve **çözüm adı** olduğu **InlineTasks**.
 
-3.  Tıklayın **Tamam** proje dosyası oluşturmak için.
+3. Tıklayın **Tamam** proje dosyası oluşturmak için.
 
-3.  İçinde **Çözüm Gezgini**, sağ **InlineTasks** proje düğümünü ve ardından **projeyi**.
+3. İçinde **Çözüm Gezgini**, sağ **InlineTasks** proje düğümünü ve ardından **projeyi**.
 
-4.  Proje düğümüne sağ tıklayın ve ardından **Düzenle InlineTasks.csproj**.
+4. Proje düğümüne sağ tıklayın ve ardından **Düzenle InlineTasks.csproj**.
 
      Proje dosyası kod düzenleyicisinde görüntülenir.
 

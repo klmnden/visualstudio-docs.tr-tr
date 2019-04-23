@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101645"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ### <a name="web-services-debugging-security"></a>Güvenlik hata ayıklamasını web Hizmetleri  
  Yerel olarak hata ayıklama daha güvenlidir, ancak sonra büyük olasılıkla sahip olmadığınız [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] web sunucusunda yüklüyse, yerel hata ayıklama pratik olmayabilir. Genel olarak, Web hizmetlerinde hata ayıklama işlemi, uzaktan, geliştirme sırasında bu nedenle uzaktan hata ayıklama güvenlik önerilerini de hata ayıklama Web Hizmetleri için geçerli dışında gerçekleştirilir. Ek en iyi yöntemlerden bazıları aşağıda verilmiştir. Daha fazla bilgi için [hata ayıklama XML Web Hizmetleri](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
--   Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.  
+- Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.  
   
--   Web sunucusu güvenli hata ayıklama öncesinde bildiğinizden emin olun. Güvenli olduğundan emin değilseniz, hata ayıklama değil.  
+- Web sunucusu güvenli hata ayıklama öncesinde bildiğinizden emin olun. Güvenli olduğundan emin değilseniz, hata ayıklama değil.  
   
--   Internet'te kullanıma sunulan bir Web hizmeti hata ayıklaması yapıyorsanız özellikle dikkatli olun.  
+- Internet'te kullanıma sunulan bir Web hizmeti hata ayıklaması yapıyorsanız özellikle dikkatli olun.  
   
 ### <a name="external-components"></a>Dış bileşenler  
  Özellikle kod yazmadı, programınızı etkileşimde dış bileşenler güven durumunu unutmayın. Ayrıca bileşenlerinin unutmayın, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] veya hata ayıklayıcı kullanabilirsiniz.  

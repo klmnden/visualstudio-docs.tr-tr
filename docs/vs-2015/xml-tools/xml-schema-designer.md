@@ -9,25 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108733"
 ---
 # <a name="xml-schema-designer"></a>XML Şema Tasarımcısı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML şema Tasarımcısı'nı (XSD Tasarımcısı) soyutlama farklı düzeyde ayarlanmış bir şema görselleştirmenize olanak tanıyan bir grafik aracıdır. XSD Tasarımcısı'nın ana bileşenleri şunlardır:    
   
--   [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md) göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanır.  
+- [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md) göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanır.  
   
--   [Başlangıç görünümündeki](../xml-tools/start-view.md) başlatma noktası XSD Tasarımcısı; başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın.  
+- [Başlangıç görünümündeki](../xml-tools/start-view.md) başlatma noktası XSD Tasarımcısı; başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın.  
   
--   [Graf görünümünü](../xml-tools/graph-view.md) bakış şema kümesine ve şema düğümler arasındaki ilişkileri görmenize olanak sağlar.  
+- [Graf görünümünü](../xml-tools/graph-view.md) bakış şema kümesine ve şema düğümler arasındaki ilişkileri görmenize olanak sağlar.  
   
--   [İçerik modeli görünümünü](../xml-tools/content-model-view.md) basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi sağlar.  
+- [İçerik modeli görünümünü](../xml-tools/content-model-view.md) basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [XML Şema Gezgini](../xml-tools/xml-schema-explorer.md)  

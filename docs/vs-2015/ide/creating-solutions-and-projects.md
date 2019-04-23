@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763120"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109822"
 ---
 # <a name="creating-solutions-and-projects"></a>Çözümler ve Projeler Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıks
 ## <a name="adding-single-files-at-the-solution-level"></a>Çözüm düzeyinde tek dosya ekleme  
  Bazen birden çok projeye başvuran veya metin veya çözüm düzeyinde yerine belirli bir proje altında mantıksal olarak ait çeşitli veri içeren bir dosya olabilir.  Bir çözüme tek bir öğe eklemek için:  
   
-1.  Ndeki çözüm düğümüne sağ **Çözüm Gezgini** ve **Ekle &#124; yeni öğe** veya **Ekle &#124; var olan öğe**.  
+1. Ndeki çözüm düğümüne sağ **Çözüm Gezgini** ve **Ekle &#124; yeni öğe** veya **Ekle &#124; var olan öğe**.  
   
 ## <a name="creating-empty-solutions"></a>Boş Çözüm oluşturma  
  Bir çözümde bir proje bulunmalıdır olsa da, proje yok bir çözüm oluşturabilirsiniz.  
@@ -87,11 +87,11 @@ Projeleri, uygulamanızı oluşturmak için gerekli olan her şey için mantıks
   
 ##### <a name="to-delete-a-solution"></a>Bir çözümü silmek için  
   
-1.  İçinde **Çözüm Gezgini**, silme ve çözüme sağ tıklayın **klasörü dosya Gezgini'nde Aç**.  
+1. İçinde **Çözüm Gezgini**, silme ve çözüme sağ tıklayın **klasörü dosya Gezgini'nde Aç**.  
   
-2.  Dosya Gezgini'nde, bir düzey yukarı gidin.  
+2. Dosya Gezgini'nde, bir düzey yukarı gidin.  
   
-3.  Çözümü içeren dizini seçin ve Sil'e basın.  
+3. Çözümü içeren dizini seçin ve Sil'e basın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Projeler ve çözümler](../ide/solutions-and-projects-in-visual-studio.md)   

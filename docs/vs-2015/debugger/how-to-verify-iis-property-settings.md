@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 075581332a95f8cae03313adaf5fc2067910b217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5e9915f08ac7496b6a780ca721b2519a061c5cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076934"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Nasıl yapılır: IIS özellik ayarlarını doğrulama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,45 +37,45 @@ IIS Yönetim Aracı'nı kullanarak bir Web uygulaması için özellikleri ayarla
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>IIS Web uygulamasının ayarlarını denetlemek için  
   
-1.  Açık **Yönetimsel Araçlar** penceresi: Üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.  
+1. Açık **Yönetimsel Araçlar** penceresi: Üzerinde **Başlat** menüsünde **programlar**ve ardından **Yönetimsel Araçlar**. Varsa **Yönetimsel Araçlar** görünmez **programlar** menüsü, ardından içinde Ara **Denetim Masası**.  
   
-    -   Windows 2000'de seçin **Internet Hizmetleri Yöneticisi'ni**.  
+    - Windows 2000'de seçin **Internet Hizmetleri Yöneticisi'ni**.  
   
-    -   Windows XP'de seçin **Internet Information Services**.  
+    - Windows XP'de seçin **Internet Information Services**.  
   
-    -   Windows Server 2003'te çift **sunucunuzu yönetin**.  
+    - Windows Server 2003'te çift **sunucunuzu yönetin**.  
   
          **Sunucunuzu yönetin** penceresi açılır. Altında **uygulama sunucusu**, tıklayın **bu uygulama sunucusunu yönetmek**.  
   
          **Uygulama sunucusu** penceresi açılır. Açık **Internet Information Services (IIS) Yöneticisi'ni** sol bölmedeki düğüm.  
   
-2.  İletişim kutusunda, ağaç denetimi düğümü makineniz için tıklayın. Tıklayın **Web siteleri** düğümünü ve Web uygulamasının düğümünü seçin. Bir Web sitesi düğümü ve bu nedenle bir eşdüzeyi ya da olacak **varsayılan Web sitesi** düğümü veya bir sanal dizin düğümü altında varolan bir Web sitesi düğümü.  
+2. İletişim kutusunda, ağaç denetimi düğümü makineniz için tıklayın. Tıklayın **Web siteleri** düğümünü ve Web uygulamasının düğümünü seçin. Bir Web sitesi düğümü ve bu nedenle bir eşdüzeyi ya da olacak **varsayılan Web sitesi** düğümü veya bir sanal dizin düğümü altında varolan bir Web sitesi düğümü.  
   
-3.  Web uygulamasına sağ tıklayın ve kısayol menüsünde **özellikleri**.  
+3. Web uygulamasına sağ tıklayın ve kısayol menüsünde **özellikleri**.  
   
-4.  Web uygulaması için güvenlik ayarlarını doğrulayın:  
+4. Web uygulaması için güvenlik ayarlarını doğrulayın:  
   
-    1.  Web uygulamasındaki **özellikleri** penceresinde tıklayın **dizin güvenliği** sekmesine ve tıklayın **Düzenle**.  
+    1. Web uygulamasındaki **özellikleri** penceresinde tıklayın **dizin güvenliği** sekmesine ve tıklayın **Düzenle**.  
   
-    2.  İçinde **kimlik doğrulama yöntemleri** iletişim kutusunda **anonim erişimi etkinleştir** ve **tümleşik Windows kimlik doğrulaması** henüz seçili değilse.  
+    2. İçinde **kimlik doğrulama yöntemleri** iletişim kutusunda **anonim erişimi etkinleştir** ve **tümleşik Windows kimlik doğrulaması** henüz seçili değilse.  
   
-    3.  Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.  
+    3. Tıklayın **Tamam** kapatmak için **kimlik doğrulama yöntemleri** iletişim kutusu.  
   
-5.  Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5. Bir ATL Sunucu uygulaması için DEBUG fiilini, ISAPI uzantısı ile ilişkili olduğunu doğrulayın. Daha fazla bilgi için [nasıl yapılır: DEBUG fiilini uzantısıyla ilişkilendirin](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
-6.  İçin bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama, uygulama kümesinde bir uygulama adı için sanal klasör emin **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni** veya  **Internet Information Services**.  
+6. İçin bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama, uygulama kümesinde bir uygulama adı için sanal klasör emin **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni** veya  **Internet Information Services**.  
   
-    1.  Web uygulamasındaki **özellikleri** penceresinde **dizin** sekmesinde, uygulamayı sanal bir dizinde ise veya **giriş dizini** sekmesinde uygulama ise, bir Web sitesi.  
+    1. Web uygulamasındaki **özellikleri** penceresinde **dizin** sekmesinde, uygulamayı sanal bir dizinde ise veya **giriş dizini** sekmesinde uygulama ise, bir Web sitesi.  
   
-    2.  Doğrulayın adlarında **yerel yol** uygulamanın gerçekten dağıtılacağı dizinin adıyla aynıdır.  
+    2. Doğrulayın adlarında **yerel yol** uygulamanın gerçekten dağıtılacağı dizinin adıyla aynıdır.  
   
-    3.  Altında **uygulama ayarları**, uygulamayı içeren kök dizinin adını yazın.  
+    3. Altında **uygulama ayarları**, uygulamayı içeren kök dizinin adını yazın.  
   
-    4.  Tıklayın **Tamam** kapatmak için **özellikleri** iletişim kutusu.  
+    4. Tıklayın **Tamam** kapatmak için **özellikleri** iletişim kutusu.  
   
-7.  İçin bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama tıklayın **ASP.NET** doğrulayın ve sekme doğru sürümünü [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] belirtilir.  
+7. İçin bir [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] uygulama tıklayın **ASP.NET** doğrulayın ve sekme doğru sürümünü [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] belirtilir.  
   
-8.  Tıklayın **Tamam** kapatmak için **özellikleri** iletişim kutusu.  
+8. Tıklayın **Tamam** kapatmak için **özellikleri** iletişim kutusu.  
   
 9. Tıklayın **Tamam** kapatmak için **Internet Information Services (IIS) Yöneticisi'ni**, **Internet Hizmetleri Yöneticisi'ni**, veya **Internet Information Services**iletişim kutusu.  
   

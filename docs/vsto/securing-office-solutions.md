@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107625"
 ---
 # <a name="secure-office-solutions"></a>Office çözümleri güvenliğini sağlama
   Office çözümleri için güvenlik modeli birçok teknoloji içerir: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Microsoft Office ve Internet Explorer Yasak siteler bölgesi Güven Merkezi'nde. Aşağıdaki bölümlerde, farklı güvenlik özelliklerinin nasıl çalıştığı açıklanmaktadır:
@@ -38,7 +38,7 @@ ms.locfileid: "54871188"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="GrantingTrustToSolutions"></a> Office çözümlerine güven verme
+## <a name="GrantingTrustToSolutions"></a> Office çözümlerine güven verme
  Office çözümlerine güven her son kullanıcıya aşağıdaki kanıta göre Office çözümünün güven güvenlik ilkesini değiştirmek anlamına gelir:
 
 - Dağıtım bildirimi imzalamak için kullanılan sertifika.
@@ -47,16 +47,16 @@ ms.locfileid: "54871188"
 
   Daha fazla bilgi için [Office çözümlerine güven verme](../vsto/granting-trust-to-office-solutions.md).
 
-##  <a name="GrantingTrustToDocuments"></a> Belgelere güven verme
+## <a name="GrantingTrustToDocuments"></a> Belgelere güven verme
  Belge düzeyi özelleştirmesi belge güvenli bir konuma atanan bir dizinde olması gerekir. Daha fazla bilgi için [belgelere güven verme](../vsto/granting-trust-to-documents.md).
 
-##  <a name="GrantingTrustWindowsInstaller"></a> Windows Installer'ı kullanırken, güven verme
+## <a name="GrantingTrustWindowsInstaller"></a> Windows Installer'ı kullanırken, güven verme
  Yönetici hakları gerektirir Program Files dizini Office çözümlerini yüklemek için MSI dosyasını oluşturmak için Windows Installer'ı kullanabilirsiniz. Office çözümlerinde Program Files dizini, Office çalışma zamanı için Visual Studio 2010 Araçları güvenilmesi için bu Office çözümleri göz önünde bulundurur ve ClickOnce güven istemi göstermez.
 
-##  <a name="Security"></a> Office çözümleriyle ilgili belirli güvenlik konuları
+## <a name="Security"></a> Office çözümleriyle ilgili belirli güvenlik konuları
  Tarafından sağlanan güvenlik özelliklerine [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], ve Microsoft Office çeşitli Office çözümlerinde olası güvenlik tehditlerine karşı korumaya yardımcı olabilir. Daha fazla bilgi için [Office çözümleriyle ilgili belirli güvenlik konuları](../vsto/specific-security-considerations-for-office-solutions.md).
 
-##  <a name="SecurityDuringDeployment"></a> Güvenlik geliştirme sırasında
+## <a name="SecurityDuringDeployment"></a> Güvenlik geliştirme sırasında
  Geliştirme sürecinizi kolaylaştırmak için Visual Studio çalıştırmak ve çözümünüzü bilgisayarınızdaki bir projeyi her seferinde hata ayıklamak için gerekli olan güvenlik ilkesini ayarlar. Bazı senaryolarda projeyi geliştirmek için ek güvenlik adımlar gerekebilir.
 
 ### <a name="document-level-solutions"></a>Belge düzeyi çözümleri
@@ -75,7 +75,7 @@ ms.locfileid: "54871188"
 
  Olabilir birçok geçici sertifikalar bir süre sonra için geçici sertifikalar bazen temizlemeniz gerekir.
 
-##  <a name="VisualStudioToolsForOfficeRuntime"></a> Office çalışma zamanı için Visual Studio Araçları
+## <a name="VisualStudioToolsForOfficeRuntime"></a> Office çalışma zamanı için Visual Studio Araçları
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Yayımcı ve özelleştirme verilen izinleri kimliğini doğrulamak için özelliklere sahiptir. Bu izinleri bir dizi güvenlik denetimleri doğrular.
 
 ### <a name="security-during-customization-loading"></a>Yüklemeyi özelleştirme sırasında güvenlik

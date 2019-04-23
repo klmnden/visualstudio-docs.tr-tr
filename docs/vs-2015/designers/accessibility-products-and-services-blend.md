@@ -9,25 +9,25 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068957"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Erişilebilirlik ürünleri ve Hizmetleri (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay hale getireceğini taahhüt eder. Aşağıdaki bölümler, Microsoft Windows'u engelli kişiler için daha kolay erişilebilir duruma getiren özellikler, ürünler ve hizmetler konusunda bilgi sağlar.  
   
--   "Windows'un erişilebilirlik Özellikleri"  
+- "Windows'un erişilebilirlik Özellikleri"  
   
--   "Alternatif biçimlerdeki belgeler"  
+- "Alternatif biçimlerdeki belgeler"  
   
--   "İşitme engelli kişiler için müşteri hizmetleri"  
+- "İşitme engelli kişiler için müşteri hizmetleri"  
   
--   "Daha fazla bilgi için"  
+- "Daha fazla bilgi için"  
   
 > [!NOTE]
 >  Bu bölümdeki bilgiler, yalnızca Microsoft ürünlerini ABD'de lisans kullanıcılar için geçerli olabilir. Bu ürünü birleşik Devletler'in dışında edindiyseniz, yazılım paketinizle birlikte gelen yan kuruluş bilgi kartını kullanabilir veya ziyaret [Microsoft Accessibility site](http://go.microsoft.com/fwlink/?LinkID=75069) Microsoft listesi için Destek Hizmetleri telefon numaraları ve adresleri. Bu bölümde açıklanan ürün ve hizmet türlerinin bölgeniz olup olmadığını öğrenmek için temsilcinize başvurabilirsiniz. Erişilebilirlik hakkında bilgiler Japonca ve Fransızca dahil olmak üzere diğer dillerde mevcuttur.  
@@ -48,7 +48,7 @@ Microsoft ürünlerinin ve hizmetlerinin kullanımını herkes için daha kolay 
 ## <a name="documentation-in-alternative-formats"></a>Alternatif biçimlerdeki belgeler  
  Zorluk veya yazdırılan malzemelerin varsa, belge için daha erişilebilir bir biçimde birçok Microsoft ürününde elde edebilirsiniz. Erişilebilir ürün belgelerinin dizinini görüntüleyebilirsiniz [Microsoft Accessibility site](http://go.microsoft.com/fwlink/?LinkID=75069).  
   
- Ayrıca, Recording for the Blind & Dyslexic, Inc (RFB&D) şirketinden de ek Microsoft yayınlarını elde edebilirsiniz. RFB&D bu belgeleri dağıtım hizmetlerine kayıtlı, uygun üyelere dağıtmaktadır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının kullanılabilirliği hakkında bilgi için şuraya başvurun:  
+ Ayrıca, for the Blind & Dyslexic, Inc (RFB & D) kaydından ek Microsoft yayınları edinebilirsiniz. RFB & D bu belgeleri kendi dağıtım hizmetine kayıtlı, nitelikli üyelerine dağıtır. Microsoft ürün belgelerinin ve Microsoft Press kitaplarının kullanılabilirliği hakkında bilgi için şuraya başvurun:  
   
  **Learning Ally**  
   

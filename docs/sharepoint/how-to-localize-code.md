@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639823"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066292"
 ---
 # <a name="how-to-localize-code"></a>Nasıl yapılır: Kod yerelleştirme
   Yerelleştirilmemiş kod, sabit kodlanmış dize değerleri kullanır. Kod dizelerini yerelleştirmek için bunları çağrılarıyla değiştirin <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, yerelleştirilmiş kaynaklara başvuran bir yöntemi.
@@ -27,30 +27,30 @@ ms.locfileid: "56639823"
 
 #### <a name="to-localize-code"></a>Kodu yerelleştirmek için
 
-1.  İçinde **Çözüm Gezgini**, bir proje öğesi için kısayol menüsünü açın ve ardından **Ekle** > **Modülü**.
+1. İçinde **Çözüm Gezgini**, bir proje öğesi için kısayol menüsünü açın ve ardından **Ekle** > **Modülü**.
 
      Seçin **kaynak dosyası** şablonu.
 
     > [!NOTE]
     >  Böylece dağıtım türü özelliğinin kullanılabilir kaynak dosyasını bir SharePoint projesine eklediğinizden emin olun. Bu yordamda daha sonra bu özellik gereklidir.
 
-2.  Varsayılan kaynak dosyasına protokolün kendi tercih ettiğiniz bir ad verin bir *.resx* uzantısı gibi *MyAppResources.resx*.
+2. Varsayılan kaynak dosyasına protokolün kendi tercih ettiğiniz bir ad verin bir *.resx* uzantısı gibi *MyAppResources.resx*.
 
-3.  1. ve 2 SharePoint proje öğesine ayrı kaynak dosyaları eklemek için adımları yineleyin: her bir yerelleştirme dili.
+3. 1. ve 2 SharePoint proje öğesine ayrı kaynak dosyaları eklemek için adımları yineleyin: her bir yerelleştirme dili.
 
      Her bir yerelleştirilmiş kaynak dosyası için aynı temel adı kullanın, ancak kültür kimliğini ekleyin. Örneğin, kaynak adı Almanca yerelleştirilmiş *MyAppResources.de-DE.resx*.
 
-4.  Her kaynak dosyasını açın ve yerelleştirilmiş dizeleri ekleyin. Her dosyada aynı dize kimliklerini kullanın.
+4. Her kaynak dosyasını açın ve yerelleştirilmiş dizeleri ekleyin. Her dosyada aynı dize kimliklerini kullanın.
 
-5.  Değiştirin **dağıtım türü** özelliği için her kaynak dosyasının **AppGlobalResource** sunucunun App_GlobalResources klasörüne dağıtılacak her dosya neden olacak.
+5. Değiştirin **dağıtım türü** özelliği için her kaynak dosyasının **AppGlobalResource** sunucunun App_GlobalResources klasörüne dağıtılacak her dosya neden olacak.
 
-6.  Değerini değiştirmeden bırakın **derleme eylemi** özelliği her bir dosyanın **gömülü kaynak**.
+6. Değerini değiştirmeden bırakın **derleme eylemi** özelliği her bir dosyanın **gömülü kaynak**.
 
      Gömülü kaynaklar proje DLL'SİNDE derlenir.
 
-7.  Kaynak uydu DLL'lerini oluşturmak için projeyi derleyin.
+7. Kaynak uydu DLL'lerini oluşturmak için projeyi derleyin.
 
-8.  İçinde **paket Tasarımcısı**, seçin **Gelişmiş** sekmesine ve ardından uydu derlemesini ekleyin.
+8. İçinde **paket Tasarımcısı**, seçin **Gelişmiş** sekmesine ve ardından uydu derlemesini ekleyin.
 
 9. İçinde **konumu** kutusunda, aşağıdaki gibi bir kültür kimlik klasörünü konum yolunun önüne ekleyin *de-DE\\\<proje öğe adı >. resources.dll*.
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliklerine dahil edilen Azure Danışmanı Sohbeti avantajı yararlanmak öğrenin.
 searchscope: VS Subscription
-ms.openlocfilehash: e9640fc17f2fa924bc51ab536366479b72de0f36
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102048"
 ---
 # <a name="azure-advisory-chat"></a>Azure Danışmanı Sohbeti
 
@@ -54,8 +54,8 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 ## <a name="frequently-asked-questions"></a>Sık sorulan sorular
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>S:  Azure Danışmanı Sohbeti ve Azure Danışmanı arasındaki fark nedir?
--  Y:  Azure Danışmanı ile sohbet, Azure hakkında sorularınız varsa yardımcı olmak için gerçek zamanlı bir sohbet hizmetidir. [Azure Danışmanı](/azure/advisor/advisor-overview) olan yardımcı olan kişiselleştirilmiş bulut Danışmanı, Azure dağıtımlarınızın iyileştirilmesine yönelik en iyi uygulamaları izleyin. Bu, kaynak yapılandırmanızı ve kullanım telemetrinizi analiz eder ve maliyet verimliliğini, performansını, yüksek kullanılabilirlik ve Azure kaynaklarınızın güvenliğini geliştirmenize yardımcı olabilecek çözümler önerir.
+- Y:  Azure Danışmanı ile sohbet, Azure hakkında sorularınız varsa yardımcı olmak için gerçek zamanlı bir sohbet hizmetidir. [Azure Danışmanı](/azure/advisor/advisor-overview) olan yardımcı olan kişiselleştirilmiş bulut Danışmanı, Azure dağıtımlarınızın iyileştirilmesine yönelik en iyi uygulamaları izleyin. Bu, kaynak yapılandırmanızı ve kullanım telemetrinizi analiz eder ve maliyet verimliliğini, performansını, yüksek kullanılabilirlik ve Azure kaynaklarınızın güvenliğini geliştirmenize yardımcı olabilecek çözümler önerir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096601"
 ---
 # <a name="making-custom-projects-version-aware"></a>Özel projeler sürüm ile uyumlu hale getirme
 Özel proje sisteminizi projeleri Visual Studio birden çok sürümünü yüklemek için bu türdeki izin verebilirsiniz. Bu tür projeleri, Visual Studio'nun bir önceki sürümünde yüklenmesini de engelleyebilirsiniz. Proje Proje Onar, dönüştürme ya da kullanımdan kaldırma gerektiriyor durumunda sonraki bir sürüme kendisini tanımlamak de etkinleştirebilirsiniz.  
@@ -24,17 +24,17 @@ ms.locfileid: "54768044"
   
  Bir proje sistemi yazarı, uygulama `UpgradeProject_CheckOnly` (gelen `IVsProjectUpgradeViaFactory4` arabirimi) bir yükseltme denetimi ile kullanıcılar, proje sistemi sağlamak için. Kullanıcılar bir projeyi açtığınızda, bu yöntem, yüklenmeden önce bir proje onarıldı olup olmadığını belirlemek için çağrılır. Olası yükseltme gereksinimleri listelenen `VSPUVF_REPAIRFLAGS`, ve bunlar aşağıdaki olasılıkları içerir:  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: Hiçbir onarım gerektirir.  
+1. `SPUVF_PROJECT_NOREPAIR`: Hiçbir onarım gerektirir.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Sahip olduğunuz ürünün önceki sürümleriyle sorunlarla olmadan projeyi daha önceki bir sürümü ile uyumlu hale getirir.  
+2. `VSPUVF_PROJECT_SAFEREPAIR`: Sahip olduğunuz ürünün önceki sürümleriyle sorunlarla olmadan projeyi daha önceki bir sürümü ile uyumlu hale getirir.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Proje karşılaşmış sorunların riskiyle önceki ürün sürümleriyle geriye dönük uyumlu ancak yapar. Örneğin, proje üzerinde farklı SDK sürümleri bağımlı olduğu uyumlu olmayacaktır.  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Proje karşılaşmış sorunların riskiyle önceki ürün sürümleriyle geriye dönük uyumlu ancak yapar. Örneğin, proje üzerinde farklı SDK sürümleri bağımlı olduğu uyumlu olmayacaktır.  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Projeyi önceki bir sürümü ile uyumsuz hale getiriyor.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Projeyi önceki bir sürümü ile uyumsuz hale getiriyor.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Geçerli sürümü bu proje desteklemediğini gösterir.  
+5. `VSPUVF_PROJECT_INCOMPATIBLE`: Geçerli sürümü bu proje desteklemediğini gösterir.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: Bu proje artık desteklenip desteklenmediğini gösterir.  
+6. `VSPUVF_PROJECT_DEPRECATED`: Bu proje artık desteklenip desteklenmediğini gösterir.  
   
 > [!NOTE]
 >  Bunları ayarladığınızda, Karışıklığı önlemek için yükseltme bayraklarını birleştirmek yok. Örneğin, belirsiz bir yükseltme durumu gibi oluşturmayın `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -49,18 +49,18 @@ ms.locfileid: "54768044"
   
  Yardımcı uyumluluğu kullanıcı deneyimini özetlemek için bir örnek aşağıda verilmiştir. Bir projeyi önceki bir sürümde oluşturulmuş ve geçerli sürüme yükseltme gerekli olduğunu belirler, Visual Studio değişiklik yapma iznine için kullanıcıdan bir iletişim kutusu görüntülenir. Kullanıcı kabul ederse projeyi değiştirilebilir ve ardından yüklendi. Çözüm ardından kapalı ve önceki sürümde açılamaz bir-way yükseltilen proje uyumsuz ve yüklü değil. Proje (yükseltme) yerine bir onarım yalnızca gerekli, onarılan proje yine de her iki sürümde de açılır.  
   
-##  <a name="BKMK_Incompat"></a> Bir proje uyumsuz olarak işaretleme  
+## <a name="BKMK_Incompat"></a> Bir proje uyumsuz olarak işaretleme  
  Bir proje, Visual Studio'nun önceki sürümleriyle uyumsuz olarak işaretleyebilirsiniz.  Örneğin, bir .NET Framework 4.5 özelliği kullanan bir proje oluşturduğunuzu varsayalım. Bu proje oluşturulamıyor çünkü [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], bu sürümü yüklemek çalışmasını engellemek için uyumsuz olarak işaretler.  
   
  Proje uyumsuz olarak işaretlemek için uyumsuz özellik ekler bileşen sorumludur. Bileşen erişiminiz olmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> projelerine temsil eden arabirim.  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>Bir proje uyumsuz işaretlemek için  
   
-1.  Bileşeninde almak bir `IVsAppCompat` küresel hizmet SVsSolution arabiriminden.  
+1. Bileşeninde almak bir `IVsAppCompat` küresel hizmet SVsSolution arabiriminden.  
   
      Daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>.  
   
-2.  Bileşen, çağrı `IVsAppCompat.AskForUserConsentToBreakAssetCompat`ve bir dizi geçirin `IVsHierarchy` projelerine temsil eden arabirim.  
+2. Bileşen, çağrı `IVsAppCompat.AskForUserConsentToBreakAssetCompat`ve bir dizi geçirin `IVsHierarchy` projelerine temsil eden arabirim.  
   
      Bu yöntem, aşağıdaki imzası vardır:  
   
@@ -74,9 +74,9 @@ ms.locfileid: "54768044"
     > [!WARNING]
     >  En yaygın senaryolarda `IVsHierarchy` yalnızca bir öğe dizisi içerir.  
   
-3.  Varsa `AskForUserConsentToBreakAssetCompat` döndürür `S_OK`, bileşen yapar veya uyumluluk kesme değişiklikleri kabul eder.  
+3. Varsa `AskForUserConsentToBreakAssetCompat` döndürür `S_OK`, bileşen yapar veya uyumluluk kesme değişiklikleri kabul eder.  
   
-4.  Bileşeninizin çağrısı `IVsAppCompat.BreakAssetCompatibility` uyumsuz olarak işaretlemek istediğiniz her proje için yöntemi. Bileşen parametresinin değeri ayarlayabilirsiniz `lpszMinimumVersion` Visual Studio kayıt defterinde geçerli sürüm dizesi aramak yerine belirli bir en düşük sürüm. Bu yaklaşım bileşen yanlışlıkla ne kayıt defterinde o anda göre daha yüksek bir değer gelecekte ayarının riskini en aza indirir. Bu daha yüksek bir değere ayarlandıysa, Visual Studio projesi açılamadı.  
+4. Bileşeninizin çağrısı `IVsAppCompat.BreakAssetCompatibility` uyumsuz olarak işaretlemek istediğiniz her proje için yöntemi. Bileşen parametresinin değeri ayarlayabilirsiniz `lpszMinimumVersion` Visual Studio kayıt defterinde geçerli sürüm dizesi aramak yerine belirli bir en düşük sürüm. Bu yaklaşım bileşen yanlışlıkla ne kayıt defterinde o anda göre daha yüksek bir değer gelecekte ayarının riskini en aza indirir. Bu daha yüksek bir değere ayarlandıysa, Visual Studio projesi açılamadı.  
   
      Bu yöntem, aşağıdaki imzası vardır:  
   
@@ -133,21 +133,21 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Örneğin, varsa `UpgradeProject_CheckOnly` ve `CreateProject` için yazılan yöntemleri bir [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 proje sistemi bir proje dosyasını inceleyin ve Bul `<MinimumVisualStudioVersion>` yapı özelliği "11.0", Visual Studio 2010 SP1 ile projeyi yüklenemediğini. Ayrıca, **Çözüm Gezgini** proje "uyumsuz" ve onu yüklenmiyor gösterir.  
   
-##  <a name="BKMK_UpgradeLogger"></a> Yükseltme Günlükçü  
+## <a name="BKMK_UpgradeLogger"></a> Yükseltme Günlükçü  
  Çağrı `IVsProjectUpgradeViaFactory::UpgradeProject` içeren bir `IVsUpgradeLogger` Kaydedici, sorun giderme için yükseltme ayrıntılı izleme sağlamak için hangi proje sistemleri ve özellikleri kullanmalıdır. Bir uyarı veya hata günlüğe kaydedilir, Visual Studio yükseltme raporunu gösterir.  
   
  Yükseltme Günlükçü için yazarken aşağıdaki yönergeleri göz önünde bulundurun:  
   
--   Tüm projeleri yükseltme işlemi tamamlandıktan sonra visual Studio temizleme çağırır. Bu, proje sisteminizi çağırmaz.  
+- Tüm projeleri yükseltme işlemi tamamlandıktan sonra visual Studio temizleme çağırır. Bu, proje sisteminizi çağırmaz.  
   
--   LogMessage işlevi aşağıdaki ErrorLevels sahiptir:  
+- LogMessage işlevi aşağıdaki ErrorLevels sahiptir:  
   
-    -   0, izlemek istediğiniz herhangi bir bilgi içindir.  
+    - 0, izlemek istediğiniz herhangi bir bilgi içindir.  
   
-    -   1 için bir uyarıdır.  
+    - 1 için bir uyarıdır.  
   
-    -   bir hata için 2.  
+    - bir hata için 2.  
   
-    -   3 için rapor biçimlendiricidir. Projenizi yükseltildiğinde, sözcük "Dönüştürülen" bir kez oturum ve sözcük yerelleştirmiyorum.  
+    - 3 için rapor biçimlendiricidir. Projenizi yükseltildiğinde, sözcük "Dönüştürülen" bir kez oturum ve sözcük yerelleştirmiyorum.  
   
--   Bir proje herhangi bir onarım gerektirmeyen veya yalnızca proje sistemi bir uyarı veya hata sırasında UpgradeProject_CheckOnly veya UpgradeProjectFlavor_CheckOnly yöntemi oturum açmış yükseltme, Visual Studio günlük dosyası oluşturur.
+- Bir proje herhangi bir onarım gerektirmeyen veya yalnızca proje sistemi bir uyarı veya hata sırasında UpgradeProject_CheckOnly veya UpgradeProjectFlavor_CheckOnly yöntemi oturum açmış yükseltme, Visual Studio günlük dosyası oluşturur.

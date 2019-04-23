@@ -8,12 +8,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5adef222f42c3dc2b6035bfa7ab25441051597e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096627"
 ---
 # <a name="create-a-unit-test-project"></a>Birim testi projesi oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ Birim testleri, test altındaki kod yapısına genellikle yansıtır. Örneğin,
   
 ## <a name="to-create-a-unit-test-project"></a>Birim testi projesi oluşturmak için:  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje** (klavye Ctrl + Shift + N).  
+1. Üzerinde **dosya** menüsünde seçin **yeni** seçip **proje** (klavye Ctrl + Shift + N).  
   
-2.  Yeni Proje iletişim kutusunda Genişlet **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.  
+2. Yeni Proje iletişim kutusunda Genişlet **yüklü** düğümü, test projeniz için kullanın ve ardından istediğiniz dili seçin **Test**.  
   
-3.  Microsoft birim testi çerçevelerini birini kullanmak üzere, **Birim Test projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Bizim örneğimizde, hesapları proje test etmek için AccountsTests proje adı.  
+3. Microsoft birim testi çerçevelerini birini kullanmak üzere, **Birim Test projesi** proje şablonları listesinden. Aksi takdirde, kullanmak istediğiniz test çerçevesi biriminin proje şablonu seçin. Bizim örneğimizde, hesapları proje test etmek için AccountsTests proje adı.  
   
-4.  Birim test projenizde, test edilen kod bir başvuru ekleyin.  Aynı çözümdeki bir kod projesine başvuru oluşturmak nasıl aşağıda verilmiştir:  
+4. Birim test projenizde, test edilen kod bir başvuru ekleyin.  Aynı çözümdeki bir kod projesine başvuru oluşturmak nasıl aşağıda verilmiştir:  
   
-    1.  Çözüm Gezgini'nde projeyi seçin.  
+    1. Çözüm Gezgini'nde projeyi seçin.  
   
-    2.  Üzerinde **proje** menüsünde seçin **Başvuru Ekle...** .  
+    2. Üzerinde **proje** menüsünde seçin **Başvuru Ekle...** .  
   
-    3.  Başvuru Yöneticisi iletişim kutusunda açın **çözüm** düğüm ve **projeleri**. Kod projesi adını denetleyin ve iletişim kutusunu kapatın.  
+    3. Başvuru Yöneticisi iletişim kutusunda açın **çözüm** düğüm ve **projeleri**. Kod projesi adını denetleyin ve iletişim kutusunu kapatın.  
   
-5.  Test etmek istediğiniz kod başka bir konumda olup olmadığını, [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md) başvurular ekleme hakkında daha fazla bilgi için.  
+5. Test etmek istediğiniz kod başka bir konumda olup olmadığını, [bir projedeki başvuruları yönetme](../ide/managing-references-in-a-project.md) başvurular ekleme hakkında daha fazla bilgi için.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
  **Birim testleri yazma**  

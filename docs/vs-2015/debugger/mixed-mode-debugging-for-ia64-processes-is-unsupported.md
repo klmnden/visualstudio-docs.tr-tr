@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02a1d7e93b9d090b61d8839562befcd3453dbe0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c3cf7308b3302c682f32a2db9837f86cd0173260
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101814"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>IA64 işlemleri için karışık mod hata ayıklaması desteklenmiyor.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio, karma mod IA64 işlemleri yönetilen ve yerel kodda hata ayıklam
   
 ### <a name="workarounds"></a>Geçici Çözümler  
   
--   Yönetilen ve yerel kodunuzu ayrı hata ayıklama oturumlarında hata ayıklayın.  
+- Yönetilen ve yerel kodunuzu ayrı hata ayıklama oturumlarında hata ayıklayın.  
   
      – veya –  
   
@@ -38,19 +38,19 @@ Visual Studio, karma mod IA64 işlemleri yönetilen ve yerel kodda hata ayıklam
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Platform 32-bit (Visual Basic veya C#) değiştirileceğini  
   
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri** kısayol menüsünde.  
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri** kısayol menüsünde.  
   
-2.  Özellik Sayfaları'nda tıklatın **derleme** veya **hata ayıklama** sekmesi.  
+2. Özellik Sayfaları'nda tıklatın **derleme** veya **hata ayıklama** sekmesi.  
   
-3.  Tıklayın **Platform** x86 platformlar listesinden seçin.  
+3. Tıklayın **Platform** x86 platformlar listesinden seçin.  
   
      Varsayılan olarak, Visual Basic ve C# Derleyicileri varsayılan herhangi bir CPU üzerinde çalıştırmak için kod üretir. Bu ikili dosyalar, bir 64 bit bilgisayarda 64 bit işlem çalıştırın. Bir 32 bit işlemde çalıştırmak için seçmelisiniz **Win32**değil **AnyCPU**.  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>32-bit (C/C++) için Platform değiştirmek için  
   
-1.  İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri** kısayol menüsünde.  
+1. İçinde **Çözüm Gezgini**, projenize sağ tıklayın ve ardından tıklayın **özellikleri** kısayol menüsünde.  
   
-2.  Özellik Sayfaları'nda tıklatın **Platform** ve Win32 platformları listesinden seçin.  
+2. Özellik Sayfaları'nda tıklatın **Platform** ve Win32 platformları listesinden seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [64 Bit Uygulamalarda Hata Ayıklama](../debugger/debug-64-bit-applications.md)

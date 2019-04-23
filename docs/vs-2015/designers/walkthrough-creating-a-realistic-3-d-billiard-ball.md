@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110602"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>İzlenecek yol: Gerçekçi bir 3B bilardo topu oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ Bu izlenecek yol gölgelendirici Tasarımcısı ve Resim Düzenleyicisi kullanı
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Şekil ve doku kullanarak bilardo topu temel görünümünü oluşturma.  
+- Şekil ve doku kullanarak bilardo topu temel görünümünü oluşturma.  
   
--   Lambert aydınlatma modeli kullanarak derinlik ekleme.  
+- Lambert aydınlatma modeli kullanarak derinlik ekleme.  
   
--   Temel görünümünü Yansımalı vurgular kullanarak.  
+- Temel görünümünü Yansımalı vurgular kullanarak.  
   
--   Ortamı yansıtarak alan duygusu oluşturma.  
+- Ortamı yansıtarak alan duygusu oluşturma.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Aşağıdaki bileşenler ve beceriler, bu izlenecek yolu tamamlamak için ihtiyacınız vardır:  
   
--   Haziran 2010'da bulunan DirectX doku aracı gibi bir küp eşlemi içine dokular montajı için bir araç DirectX SDK.  
+- Haziran 2010'da bulunan DirectX doku aracı gibi bir küp eşlemi içine dokular montajı için bir araç DirectX SDK.  
   
--   İçerisinde Resim Düzenleyicisi ile aşinalık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- İçerisinde Resim Düzenleyicisi ile aşinalık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   İçerisinde gölgelendirici Tasarımcısı ile aşinalık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- İçerisinde gölgelendirici Tasarımcısı ile aşinalık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Şekil ve doku ile temel görünümünü oluşturma  
  Bilgisayar grafiklerinde, en temel görünüm öğeleri şekil ve renktir var. Bir bilgisayar benzetiminde, gerçek nesnenin şeklini temsil etmek için bir 3B model kullanımı yaygındır. Renk ayrıntıları doku eşlemi kullanılarak modelin yüzeyine sonra uygulanır.  

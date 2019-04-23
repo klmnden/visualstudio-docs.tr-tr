@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099149"
 ---
 # <a name="how-to-start-spy"></a>Nasıl yapılır: Spy++'ı başlatma
 
@@ -46,9 +46,9 @@ Başladıktan sonra Spy ++ birbirinden bağımsız olarak çalıştığından, V
 
 ## <a name="start-spy-at-a-command-prompt"></a>Spy ++ bir komut isteminden başlatmak
 
-1.  Bir komut istemi penceresinde dizinleri spyxx.exe içeren klasöre değiştirin. Genellikle, bu klasörün yolu... \\ *Visual Studio yükleme klasörü*\Common7\Tools\\.
+1. Bir komut istemi penceresinde dizinleri spyxx.exe içeren klasöre değiştirin. Genellikle, bu klasörün yolu... \\ *Visual Studio yükleme klasörü*\Common7\Tools\\.
 
-2.  Enter **spyxx.exe**.
+2. Enter **spyxx.exe**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Spy++ kullanma](../debugger/using-spy-increment.md)

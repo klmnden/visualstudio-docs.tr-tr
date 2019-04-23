@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: bef167eadeb58d54ffff4c4b08dcaf44ec66ccdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103270"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio'da C++ DLL'leri için birim testleri yazma
 
@@ -38,35 +38,35 @@ ms.locfileid: "55934035"
 
 ## <a name="create-the-tests"></a>Testleri oluşturma
 
-###  <a name="staticLink"></a> DLL statik bir kitaplığa çevirme
+### <a name="staticLink"></a> DLL statik bir kitaplığa çevirme
 
 - Testlerinizi DLL proje tarafından dışa aktarılmaz üyeleri kullanmalıdır ve test altındaki projeye bir dinamik kitaplık olarak oluşturulduysa, bir statik kitaplığa dönüştürmeyi düşünün.
 
-  1.  İçinde **Çözüm Gezgini**, test edilen projenin kısayol menüsünde **özellikleri**. Proje **özellikleri** penceresi açılır.
+  1. İçinde **Çözüm Gezgini**, test edilen projenin kısayol menüsünde **özellikleri**. Proje **özellikleri** penceresi açılır.
 
-  2.  Seçin **yapılandırma özellikleri** > **genel**.
+  2. Seçin **yapılandırma özellikleri** > **genel**.
 
-  3.  Ayarlama **yapılandırma türü** için **statik kitaplık (.lib)**.
+  3. Ayarlama **yapılandırma türü** için **statik kitaplık (.lib)**.
 
   Yordamı ile devam [testleri nesneye veya kitaplık dosyalarına bağlama](#objectRef).
 
-###  <a name="projectRef"></a> Dışa aktarılan DLL işlevlerinin test projesinden başvurmak için
+### <a name="projectRef"></a> Dışa aktarılan DLL işlevlerinin test projesinden başvurmak için
 
 - Ardından DLL proje test etmek istediğiniz işlevleri dışa aktarır, kod projesine test projesinden bir başvuru ekleyebilirsiniz.
 
-  1.  Yerel birim testi projesi oluşturun.
+  1. Yerel birim testi projesi oluşturun.
 
-      1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje** > **Visual C++**  >  **Test** > **C++ birim testi projesi**.
+      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje** > **Visual C++**  >  **Test** > **C++ birim testi projesi**.
 
-  2.  İçinde **Çözüm Gezgini**, test projesinin kısayol menüsünde **başvuruları**. Proje **özellikleri** penceresi açılır.
+  2. İçinde **Çözüm Gezgini**, test projesinin kısayol menüsünde **başvuruları**. Proje **özellikleri** penceresi açılır.
 
-  3.  Seçin **ortak özellikler** > **çerçeve ve başvurular**ve ardından **Yeni Başvuru Ekle** düğmesi.
+  3. Seçin **ortak özellikler** > **çerçeve ve başvurular**ve ardından **Yeni Başvuru Ekle** düğmesi.
 
-  4.  Seçin **projeleri**ve ardından test edilecek projeyi.
+  4. Seçin **projeleri**ve ardından test edilecek projeyi.
 
        Seçin **Ekle** düğmesi.
 
-  5.  Test projesi için Özellikler'de test edilen projenin konumunu ek içerik dizinlerine ekleyin.
+  5. Test projesi için Özellikler'de test edilen projenin konumunu ek içerik dizinlerine ekleyin.
 
        Seçin **yapılandırma özellikleri** > **VC ++ dizinleri** > **ekleme kodu dizinleri**.
 
@@ -74,39 +74,39 @@ ms.locfileid: "55934035"
 
   Git [birim testleri yazma](#addTests).
 
-###  <a name="objectRef"></a> Testleri nesneye veya kitaplık dosyalarına bağlama
+### <a name="objectRef"></a> Testleri nesneye veya kitaplık dosyalarına bağlama
 
 - DLL test etmek istediğiniz işlevleri dışa aktarmıyorsa çıktısını ekleyebilirsiniz *.obj* veya *.lib* dosyasını test projesinin bağımlılıklarına.
 
-  1.  Yerel birim testi projesi oluşturun.
+  1. Yerel birim testi projesi oluşturun.
 
-      1.  Üzerinde **dosya** menüsünde seçin **yeni** > **proje** > **Visual C++**  >  **Test** > **yerel birim testi projesi**.
+      1. Üzerinde **dosya** menüsünde seçin **yeni** > **proje** > **Visual C++**  >  **Test** > **yerel birim testi projesi**.
 
-  2.  İçinde **Çözüm Gezgini**, test projesinin kısayol menüsünde **özellikleri**.
+  2. İçinde **Çözüm Gezgini**, test projesinin kısayol menüsünde **özellikleri**.
 
-  3.  Seçin **yapılandırma özellikleri** > **bağlayıcı** > **giriş** > **ek bağımlılıklar**.
+  3. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **giriş** > **ek bağımlılıklar**.
 
        Seçin **Düzenle**ve adını ekleyin **.obj** veya **.lib** dosyaları. Tam yol adlarını kullanmayın.
 
-  4.  Seçin **yapılandırma özellikleri** > **bağlayıcı** > **genel** > **ek kitaplık dizinleri** .
+  4. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **genel** > **ek kitaplık dizinleri** .
 
        Seçin **Düzenle**ve dizin yolunu ekleyin **.obj** veya **.lib** dosyaları. Genellikle test edilen projenin derleme klasörü içindeki yoldur.
 
-  5.  Seçin **yapılandırma özellikleri** > **VC ++ dizinleri** > **ekleme kodu dizinleri**.
+  5. Seçin **yapılandırma özellikleri** > **VC ++ dizinleri** > **ekleme kodu dizinleri**.
 
        Seçin **Düzenle**ve ardından test edilen projenin üstbilgi dizinini ekleyin.
 
   Git [birim testleri yazma](#addTests).
 
-###  <a name="sameProject"></a> Aynı projede birim testleri eklemek için
+### <a name="sameProject"></a> Aynı projede birim testleri eklemek için
 
 1. Üst bilgiler ve birim testi için gerekli olan kitaplık dosyalarını içerecek şekilde ürün kodu proje özelliklerini değiştirin.
 
-   1.  İçinde **Çözüm Gezgini**, test edilen projenin kısayol menüsünde **özellikleri**. Proje **özellikleri** penceresi açılır.
+   1. İçinde **Çözüm Gezgini**, test edilen projenin kısayol menüsünde **özellikleri**. Proje **özellikleri** penceresi açılır.
 
-   2.  Seçin **yapılandırma özellikleri** > **VC ++ dizinleri**.
+   2. Seçin **yapılandırma özellikleri** > **VC ++ dizinleri**.
 
-   3.  Dahil et ve kitaplık dizinlerini düzenleyin:
+   3. Dahil et ve kitaplık dizinlerini düzenleyin:
 
        |Dizin|Özellik|
        |-|-|
@@ -115,15 +115,15 @@ ms.locfileid: "55934035"
 
 2. Bir C++ birim testi dosyası ekleyin:
 
-   -   İçinde **Çözüm Gezgini**, projenin kısayol menüsünde **Ekle** > **yeni öğe** > **C++ birim testi**.
+   - İçinde **Çözüm Gezgini**, projenin kısayol menüsünde **Ekle** > **yeni öğe** > **C++ birim testi**.
 
    Git [birim testleri yazma](#addTests).
 
-##  <a name="addTests"></a> Birim testleri yazma
+## <a name="addTests"></a> Birim testleri yazma
 
-1.  Her birim testi kodu dosyasında, ekleme bir `#include` test edilen projenin üstbilgileri için bildirimi.
+1. Her birim testi kodu dosyasında, ekleme bir `#include` test edilen projenin üstbilgileri için bildirimi.
 
-2.  Birim testi kod dosyalarına test sınıfları ve yöntemleri ekleyin. Örneğin:
+2. Birim testi kod dosyalarına test sınıfları ve yöntemleri ekleyin. Örneğin:
 
     ```cpp
     #include "stdafx.h"
@@ -145,11 +145,11 @@ ms.locfileid: "55934035"
 
 ## <a name="run-the-tests"></a>Testleri çalıştırın
 
-1.  Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**.
+1. Üzerinde **Test** menüsünde seçin **Windows** > **Test Gezgini**.
 
 1. Testlerinizin tümünü penceresinde görünür değilse, onun düğümüne sağ tıklayarak test projesi oluşturmak **Çözüm Gezgini** seçip **derleme** veya **yeniden**.
 
-1.  İçinde **Test Gezgini**, seçin **tümünü Çalıştır**, ya da belirli testleri çalıştırmak istediğiniz seçin. Bir test etkin kesme noktaları ile hata ayıklama modunda çalıştırmak dahil, diğer seçenekler için sağ tıklayın.
+1. İçinde **Test Gezgini**, seçin **tümünü Çalıştır**, ya da belirli testleri çalıştırmak istediğiniz seçin. Bir test etkin kesme noktaları ile hata ayıklama modunda çalıştırmak dahil, diğer seçenekler için sağ tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

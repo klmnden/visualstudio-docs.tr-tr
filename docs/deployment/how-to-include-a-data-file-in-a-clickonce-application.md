@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093884"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Nasıl yapılır: Bir ClickOnce uygulamasına bir veri dosyası dahil etme
 Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklediğiniz bir uygulama, bir veri dizini hedef bilgisayarın yerel diskte, burada uygulama yönetebilir, kendi veri atanır. Veri dosyaları, tüm dosya türlerini içerebilir: metin dosyalarını, XML dosyaları veya hatta bir Microsoft Access veritabanına (*.mdb*) dosyaları. Aşağıdaki yordamlar bir veri dosyası herhangi bir tür ekleme gösterir, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama.
@@ -60,25 +60,25 @@ Her [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yüklediğ
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>MageUI.exe kullanarak bir veri dosyası eklemek için
 
-1.  Uygulamanızın dosyaların geri kalanı ile birlikte uygulama dizininize veri dosyası ekleyin.
+1. Uygulamanızın dosyaların geri kalanı ile birlikte uygulama dizininize veri dosyası ekleyin.
 
-2.  Genellikle, uygulama dizininize dağıtımın geçerli sürümüyle etiketli bir dizin olacaktır — Örneğin, v1.0.0.0.
+2. Genellikle, uygulama dizininize dağıtımın geçerli sürümüyle etiketli bir dizin olacaktır — Örneğin, v1.0.0.0.
 
-3.  Üzerinde **dosya** menüsünde tıklayın **açın** uygulama bildiriminizi açın.
+3. Üzerinde **dosya** menüsünde tıklayın **açın** uygulama bildiriminizi açın.
 
-4.  Seçin **dosyaları** sekmesi.
+4. Seçin **dosyaları** sekmesi.
 
-5.  Uygulamanızın dosyaları içeren dizine sekmenin üstünde metin kutusuna girin ve ardından **Doldur**.
+5. Uygulamanızın dosyaları içeren dizine sekmenin üstünde metin kutusuna girin ve ardından **Doldur**.
 
      Veri dosyası kılavuzunda görünür.
 
-6.  Ayarlama **dosya türü** veri dosyasına değerini **veri**.
+6. Ayarlama **dosya türü** veri dosyasına değerini **veri**.
 
-7.  Uygulama bildirimini kaydedin ve sonra dosyayı yeniden imzalayın.
+7. Uygulama bildirimini kaydedin ve sonra dosyayı yeniden imzalayın.
 
      *MageUI.exe* dosyayı yeniden imzalamanızı ister.
 
-8.  Dağıtım bildirimini yeniden imzalamanız
+8. Dağıtım bildirimini yeniden imzalamanız
 
      Uygulama bildiriminin, karma değiştiğinden, dağıtım bildirimini yeniden imzalamanız gerekir.
 

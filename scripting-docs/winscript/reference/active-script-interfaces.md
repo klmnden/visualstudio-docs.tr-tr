@@ -14,52 +14,52 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4456be25eaba28fef1d211d86cf12836a7840b5d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 54ab774b5c30529173f1acfc68b649d9f21c5589
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58150304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064167"
 ---
 # <a name="active-script-interfaces"></a>Etkin Komut Dosyası Arabirimleri
 ActivScp.h üstbilgi dosyası arabirimleri, numaralandırmalar ve bu bölümde listelenen hata kodlarını sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)  
+- [Etkin Betik Sabitleri, Sabit Listeleri ve Hata Kodları](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)  
   
--   [IActiveScript arabirimi](../../winscript/reference/iactivescript.md)  
+- [IActiveScript arabirimi](../../winscript/reference/iactivescript.md)  
   
--   [Iactivescripterror arabirimi](../../winscript/reference/iactivescripterror.md)  
+- [Iactivescripterror arabirimi](../../winscript/reference/iactivescripterror.md)  
   
--   [IActiveScriptGarbageCollector Arabirimi](../../winscript/reference/iactivescriptgarbagecollector-interface.md)  
+- [IActiveScriptGarbageCollector Arabirimi](../../winscript/reference/iactivescriptgarbagecollector-interface.md)  
   
--   [Iactivescriptparse arabirimi](../../winscript/reference/iactivescriptparse.md)  
+- [Iactivescriptparse arabirimi](../../winscript/reference/iactivescriptparse.md)  
   
--   [IActiveScriptParse32 arabirimi](../../winscript/reference/iactivescriptparse32.md)  
+- [IActiveScriptParse32 arabirimi](../../winscript/reference/iactivescriptparse32.md)  
   
--   [Iactivescriptparseprocedure arabirimi](../../winscript/reference/iactivescriptparseprocedure.md)  
+- [Iactivescriptparseprocedure arabirimi](../../winscript/reference/iactivescriptparseprocedure.md)  
   
--   [IActiveScriptParseProcedure32 arabirimi](../../winscript/reference/iactivescriptparseprocedure32.md)  
+- [IActiveScriptParseProcedure32 arabirimi](../../winscript/reference/iactivescriptparseprocedure32.md)  
   
--   [IActiveScriptParseProcedureOld Arabirimi](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
+- [IActiveScriptParseProcedureOld Arabirimi](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
   
--   [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)  
+- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)  
   
--   [Iactivescriptsite arabirimi](../../winscript/reference/iactivescriptsite.md)  
+- [Iactivescriptsite arabirimi](../../winscript/reference/iactivescriptsite.md)  
   
--   [IActiveScriptSiteInterruptPoll Arabirimi](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
+- [IActiveScriptSiteInterruptPoll Arabirimi](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
   
--   [IActiveScriptSiteTraceInfo Arabirimi](../../winscript/reference/iactivescriptsitetraceinfo-interface.md)  
+- [IActiveScriptSiteTraceInfo Arabirimi](../../winscript/reference/iactivescriptsitetraceinfo-interface.md)  
   
--   [IActiveScriptSiteUIControl Arabirimi](../../winscript/reference/iactivescriptsiteuicontrol-interface.md)  
+- [IActiveScriptSiteUIControl Arabirimi](../../winscript/reference/iactivescriptsiteuicontrol-interface.md)  
   
--   [Iactivescriptsitewindow arabirimi](../../winscript/reference/iactivescriptsitewindow.md)  
+- [Iactivescriptsitewindow arabirimi](../../winscript/reference/iactivescriptsitewindow.md)  
   
--   [IActiveScriptStats Arabirimi](../../winscript/reference/iactivescriptstats-interface.md)  
+- [IActiveScriptStats Arabirimi](../../winscript/reference/iactivescriptstats-interface.md)  
   
--   [IActiveScriptStringCompare Arabirimi](../../winscript/reference/iactivescriptstringcompare-interface.md)  
+- [IActiveScriptStringCompare Arabirimi](../../winscript/reference/iactivescriptstringcompare-interface.md)  
   
--   [IActiveScriptTraceInfo Arabirimi](../../winscript/reference/iactivescripttraceinfo-interface.md)  
+- [IActiveScriptTraceInfo Arabirimi](../../winscript/reference/iactivescripttraceinfo-interface.md)  
   
--   [IBindEventHandler Arabirimi](../../winscript/reference/ibindeventhandler-interface.md)
+- [IBindEventHandler Arabirimi](../../winscript/reference/ibindeventhandler-interface.md)

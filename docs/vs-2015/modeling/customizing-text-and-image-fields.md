@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077173"
 ---
 # <a name="customizing-text-and-image-fields"></a>Metin ve Görüntü Alanlarını Özelleştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>ImageField öğesinin oluşturmak için  
   
-1.  Ayarlama **Generates Double Derived** , DSL tanımındaki üst şeklin sınıfın özelliği.  
+1. Ayarlama **Generates Double Derived** , DSL tanımındaki üst şeklin sınıfın özelliği.  
   
-2.  Geçersiz kılma `InitializeShapeFields` şekli sınıfınızın yöntemi.  
+2. Geçersiz kılma `InitializeShapeFields` şekli sınıfınızın yöntemi.  
   
-    -   DSL projede yeni bir kod dosyası oluşturun ve Şekil sınıfı için bir parçalı sınıf tanımı yazın. Yöntem tanımı geçersiz.  
+    - DSL projede yeni bir kod dosyası oluşturun ve Şekil sınıfı için bir parçalı sınıf tanımı yazın. Yöntem tanımı geçersiz.  
   
-3.  Kodu incelemek `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs içinde.  
+3. Kodu incelemek `InitializeShapeFields` DSL\GeneratedCode\Shapes.cs içinde.  
   
      Geçersiz kılma yönteminizde taban yöntemini çağırın ve ardından kendi görüntü alan sınıfının bir örneğini oluşturun. Bu normal görüntü alanını değiştirmek için kullanın `shapeFields` listesi.  
   

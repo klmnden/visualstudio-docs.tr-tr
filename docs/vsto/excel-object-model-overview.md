@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104557"
 ---
 # <a name="excel-object-model-overview"></a>Excel nesne modeline genel bakış
   Microsoft Office Excel kullanan çözümleri geliştirmek için Excel nesne modeli tarafından sağlanan nesneler ile etkileşim kurabilirsiniz. Bu konuda en önemli nesneleri sunar:
@@ -99,7 +99,7 @@ ms.locfileid: "56628591"
 
  Visual Studio genişletir <xref:Microsoft.Office.Interop.Excel.Range> sağlayarak nesne <xref:Microsoft.Office.Tools.Excel.NamedRange> ve <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> türleri. Bu tür çoğu aynı özelliklere sahip bir <xref:Microsoft.Office.Interop.Excel.Range> nesne yanı sıra yeni olaylar ve veri bağlama yeteneği gibi yeni özellikler. Daha fazla bilgi için [NamedRange denetimi](../vsto/namedrange-control.md) ve [XmlMappedRange denetimi](../vsto/xmlmappedrange-control.md).
 
-##  <a name="ExcelOMDocumentation"></a> Excel nesne modeli belgeleri kullanın
+## <a name="ExcelOMDocumentation"></a> Excel nesne modeli belgeleri kullanın
  Excel nesne modeli hakkında tam bilgi için Excel birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.
 
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma bütünleştirilmiş kod başvurusu

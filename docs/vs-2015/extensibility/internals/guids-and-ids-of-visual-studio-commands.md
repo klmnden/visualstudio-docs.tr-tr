@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107755"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio Komutlarının GUID’leri ve Kimlikleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Visual Studio tümleşik geliştirme ortamında (IDE) dahil komutların GUID ve 
 ### <a name="special-cases"></a>Özel durumlar
  Aşağıdaki durumlarda, araç ipucu metnini ve menü metni tam olarak komut tanımında nedir eşleşmiyor olabilir.
 
--   Gibi bir altı çizili karakter içeren bir menü öğelerini **yazdırma** komutunu **dosya** menüsünde, P çizilir.
+- Gibi bir altı çizili karakter içeren bir menü öğelerini **yazdırma** komutunu **dosya** menüsünde, P çizilir.
 
      Menü öğesi adları '&' karakteri tarafından öncelenen karakter görüntülenmezse altı çizili olarak. .Vsct dosyaları, özel karakterler belirtmek için '&' karakteri kullanır ve görüntülenecek olan bir ampersan yazılmalıdır olduğunu gerektiren XML ancak yazılır olarak&amp;'. Bu nedenle, bir .vsct dosyası içinde **yazdırma** komutu olarak görünür '&amp;yazdırma '.
 
--   Dinamik metin sahip komutları **Kaydet** *geçerli dosya*ve dinamik olarak üretilen öğeler gibi menü öğeleri üzerinde **son kullanılan dosyalar** listesi.
+- Dinamik metin sahip komutları **Kaydet** *geçerli dosya*ve dinamik olarak üretilen öğeler gibi menü öğeleri üzerinde **son kullanılan dosyalar** listesi.
 
      Dinamik metin araması için güvenilir bir yolu yoktur. Bunun yerine, danışmanlık tarafından istenen komut barındıran Grup bulma [GUID'leri ve kimlikleri, Visual Studio menülerinin](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) veya [GUID'leri ve kimlikleri, Visual Studio araç çubuklarının](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)ve arama bu grubun kimliği. Komut tanımı grup olarak yoksa, [üst öğe](../../extensibility/parent-element.md), SharedCmdPlace.vsct ve ShellCmdPlace.vsct (veya hata ayıklayıcı komutları için VsDbgCmdPlace.vsct) arama bir `<CommandPlacement>` ayarlar üst öğesi komutu. SharedCmdPlace.vsct, ShellCmdPlace.vsct, andVsDbgCmdPlace.vsct bulunduğunuz *Visual Studio SDK yükleme yolunu*\VisualStudioIntegration\Common\Inc\ klasör.
 

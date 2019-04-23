@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07788a8d45068b34e5e480c3a8aae8563c907791
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093715"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Nasıl yapılır: SharePoint dağıtım yapılandırmasını düzenleme
   Bir dağıtım yapılandırması oluşturun veya var olan bir dağıtım yapılandırmasını Değiştir. Örneğin, tek bir adım çalıştırın veya dağıtım işlemindeki adımları sırasını değiştirin. Yapılandırmaları oluşturmak veya yerleşik ve program aracılığıyla eklenen yapılandırmaları değiştirilemediğinden dağıtım değiştirmek isteyebilirsiniz.
@@ -28,15 +28,15 @@ ms.locfileid: "56646193"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint dağıtım yapılandırmasını oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje**, _ProjectName_**özellikleri**.
+1. İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje**, _ProjectName_**özellikleri**.
 
-2.  Üzerinde **SharePoint** sekmesini, **yeni** düğmesi.
+2. Üzerinde **SharePoint** sekmesini, **yeni** düğmesi.
 
      **Yeni dağıtım yapılandırması Ekle** iletişim kutusu görüntülenir.
 
-3.  İçinde **adı** metin kutusunda, dağıtım yapılandırması için bir ad girin.
+3. İçinde **adı** metin kutusunda, dağıtım yapılandırması için bir ad girin.
 
-4.  İçinde **kullanılabilir dağıtım adımları** bölmesinde için Dağıtım Yapılandırması Ekle öğesini istediğiniz adımları seçin (**>**) düğmesini ve ardından **Tamam** düğmesi.
+4. İçinde **kullanılabilir dağıtım adımları** bölmesinde için Dağıtım Yapılandırması Ekle öğesini istediğiniz adımları seçin (**>**) düğmesini ve ardından **Tamam** düğmesi.
 
     > [!NOTE]
     >  Yalnızca bir özelleştirilmiş dağıtım yapılandırması için eklerseniz, dağıtım öncesi komutu veya dağıtım sonrası komutu yapılandırdıysanız, aşağıdaki adımları çalıştırın.
@@ -45,11 +45,11 @@ ms.locfileid: "56646193"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Etkin dağıtım yapılandırmasını değiştirmek için
 
-1.  İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje** > **\<*ProjectName*> Özellikleri**.
+1. İçinde **Çözüm Gezgini**, bir SharePoint proje seçin ve ardından, menü çubuğunda, **proje** > **\<*ProjectName*> Özellikleri**.
 
-2.  Seçin **SharePoint** sekmesi.
+2. Seçin **SharePoint** sekmesi.
 
-3.  İçinde **etkin Dağıtım Yapılandırması** liste kutusunda, kullanmak istediğiniz dağıtım yapılandırmasının adı seçin.
+3. İçinde **etkin Dağıtım Yapılandırması** liste kutusunda, kullanmak istediğiniz dağıtım yapılandırmasının adı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Paketleme ve SharePoint çözümlerini dağıtma](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

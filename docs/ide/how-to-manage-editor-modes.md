@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076243"
 ---
 # <a name="how-to-manage-editor-modes"></a>Nasıl yapılır: Düzenleyici modlarını yönetme
 
@@ -42,21 +42,21 @@ Visual Studio Kod Düzenleyicisi'ni çeşitli görüntüleme modlarında görün
 
 Tüm araç pencerelerini Gizle ve belge pencereleri etkinleştirerek görüntülemek seçebileceğiniz **tam ekran** modu.
 
--   Tuşuna **Alt**+**Shift**+**Enter** girin ya da çıkmak için **tam ekran** modu.
+- Tuşuna **Alt**+**Shift**+**Enter** girin ya da çıkmak için **tam ekran** modu.
 
      --veya--
 
--   Komutu Yürüt `View.Fullscreen` içinde **komut** penceresi.
+- Komutu Yürüt `View.Fullscreen` içinde **komut** penceresi.
 
 ## <a name="enable-virtual-space-mode"></a>Sanal alan modu etkinleştir
 
 İçinde **sanal adres alanı** modu, her kod satırının sonunda boşluklar eklenir. Kodunuzu yanındaki tutarlı bir noktada açıklamaları yerleştirmek için bu seçeneği belirleyin.
 
-1.  Seçin **seçenekleri** gelen **Araçları** menüsü.
+1. Seçin **seçenekleri** gelen **Araçları** menüsü.
 
-2.  Genişletin **metin düzenleyici** klasöründe ve **tüm diller** bu seçeneği genel olarak ayarlayın ya da belirli bir dil klasörü seçin. Örneğin, yalnızca Visual Basic'te satır numaralarını etkinleştirmek için tercih **temel** > **metin düzenleyici** düğümü.
+2. Genişletin **metin düzenleyici** klasöründe ve **tüm diller** bu seçeneği genel olarak ayarlayın ya da belirli bir dil klasörü seçin. Örneğin, yalnızca Visual Basic'te satır numaralarını etkinleştirmek için tercih **temel** > **metin düzenleyici** düğümü.
 
-3.  Seçin **genel** seçenekleri altında **ayarları**seçin **sanal boşluğu etkinleştir**.
+3. Seçin **genel** seçenekleri altında **ayarları**seçin **sanal boşluğu etkinleştir**.
 
     > [!NOTE]
     > **Sanal adres alanı** etkin **sütun seçimi** modu. Zaman **sanal adres alanı** modu etkin değil, ekleme noktasını bir satır sonundan sonraki ilk karakteri için doğrudan taşır.

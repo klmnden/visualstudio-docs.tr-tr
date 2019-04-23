@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0fe2ce712e4322eb9ebe83549ff485f0e2615f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093910"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>11. Adım: Programınızı Çalıştırma ve Diğer Özellikleri Deneme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Programınız bitti ve çalıştırılmaya hazır. Programınızı çalıştıra
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Programınızı çalıştırmak ve arka plan rengini ayarlamak için  
   
-1.  F5'i seçin veya menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat**.  
+1. F5'i seçin veya menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat**.  
   
-2.  Bir resmi açmadan önce seçin **arka plan rengini ayarlamak** düğmesi. **Renk** iletişim kutusu açılır.  
+2. Bir resmi açmadan önce seçin **arka plan rengini ayarlamak** düğmesi. **Renk** iletişim kutusu açılır.  
   
      ![Renk iletişim kutusu](../ide/media/express-colordialog.png "Express_ColorDialog")  
 Renk iletişim kutusu  
   
-3.  PictureBox arka plan rengini ayarlamak için bir renk seçin. Yakından bakın `backgroundButton_Click()` nasıl çalıştığını anlamanız için yöntemi.  
+3. PictureBox arka plan rengini ayarlamak için bir renk seçin. Yakından bakın `backgroundButton_Click()` nasıl çalıştığını anlamanız için yöntemi.  
   
     > [!NOTE]
     >  Resim URL'sini yapıştırarak Internet'ten yükünü **açık dosya** iletişim kutusu. Arka plan renkleriniz görünsün saydam bir arka plan görüntüsüne bulmaya çalışın.  
   
-4.  Seçin **resmi Temizle** temizlendiğinden emin olmak için düğme. Sonra programdan çıkmak **Kapat** düğmesi.  
+4. Seçin **resmi Temizle** temizlendiğinden emin olmak için düğme. Sonra programdan çıkmak **Kapat** düğmesi.  
   
 ### <a name="to-try-other-features"></a>Diğer özellikleri denemek için  
   
--   Kullanarak form ve düğmelerin rengini değiştirmek **BackColor** özelliği.  
+- Kullanarak form ve düğmelerin rengini değiştirmek **BackColor** özelliği.  
   
--   Düğmeleri ve onay kutusunu kullanarak özelleştirme **yazı tipi** ve **ForeColor** özellikleri.  
+- Düğmeleri ve onay kutusunu kullanarak özelleştirme **yazı tipi** ve **ForeColor** özellikleri.  
   
--   Formunuzun **FormBorderStyle** ve **ControlBox** özellikleri.  
+- Formunuzun **FormBorderStyle** ve **ControlBox** özellikleri.  
   
--   Formunuzun kullanın **AcceptButton** ve **CancelButton** özellikleri düğmeler otomatik olarak seçilir, bu nedenle, kullanıcı ENTER veya ESC tuşuna seçer. Programa **Dosya Aç** kullanıcı girin ve kullanıcı ESC seçtiğinde kutuyu kapatın seçtiğinde bir iletişim kutusu.  
+- Formunuzun kullanın **AcceptButton** ve **CancelButton** özellikleri düğmeler otomatik olarak seçilir, bu nedenle, kullanıcı ENTER veya ESC tuşuna seçer. Programa **Dosya Aç** kullanıcı girin ve kullanıcı ESC seçtiğinde kutuyu kapatın seçtiğinde bir iletişim kutusu.  
   
 ### <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için  
   
--   Visual Studio'da programlama hakkında daha fazla bilgi için bkz. [programlama kavramları](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Visual Studio'da programlama hakkında daha fazla bilgi için bkz. [programlama kavramları](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
--   Visual Basic hakkında daha fazla bilgi için bkz: [Visual Basic ile uygulama geliştirme](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Visual Basic hakkında daha fazla bilgi için bkz: [Visual Basic ile uygulama geliştirme](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
--   Visual C# hakkında bilgi edinmek için bkz. [C# dili ve .NET Framework Giriş](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
+- Visual C# hakkında bilgi edinmek için bkz. [C# dili ve .NET Framework Giriş](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
   
--   Sonraki eğitime gitmek için bkz: [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+- Sonraki eğitime gitmek için bkz: [öğretici 2: Zamanlı matematik testi oluşturma](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
--   Önceki öğretici adımına dönmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Önceki öğretici adımına dönmek için bkz: [adım 10: Ek düğmeler ve onay kutusu için kod yazma](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

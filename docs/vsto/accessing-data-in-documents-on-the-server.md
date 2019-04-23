@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d13a15386fe8486dae16173ebb52ec2593de24f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d12c8168ef01dd3a38616af4f9dab2c38662bfff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102587"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Sunucudaki belgelerde verilere
   Microsoft Office Word veya Microsoft Office Excel nesne modelini kullanmak zorunda kalmadan belge düzeyinde özelleştirme veriye karşı programlama yapabilirsiniz. Bu belgede sözcük olmayan bir sunucuda bulunan verilere erişebilir veya Excel yüklü anlamına gelir. Örneğin, bir sunucu üzerinde kod (örneğin, bir [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] sayfası) bir belgedeki verileri özelleştirebilir ve özelleştirilmiş belgeyi bir son kullanıcıya gönderin. Son kullanıcıya belgeyi açtığında, çözüm derlemesine veri bağlama kodunu belgeye özelleştirilmiş veri bağlar. Belgedeki verileri kullanıcı arabiriminden ayrıldığı için bu olasıdır. Daha fazla bilgi için [veri belge düzeyi özelleştirmelerdeki önbelleğe alınmış](../vsto/cached-data-in-document-level-customizations.md).
@@ -49,15 +49,15 @@ ms.locfileid: "55926859"
 ## <a name="modify-data-in-the-cache"></a>Önbellekteki verileri değiştirme
  Önbelleğe alınmış verileri nesneyi değiştirmek için genellikle aşağıdaki adımları gerçekleştirin:
 
-1.  Nesnesinin yeni bir örneğini XML gösterimine önbelleğe alınmış nesnenin seri durumdan çıkarır. XML kullanarak erişebileceğiniz <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> özelliği <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> önbelleğe alınmış veri nesnesini temsil eden.
+1. Nesnesinin yeni bir örneğini XML gösterimine önbelleğe alınmış nesnenin seri durumdan çıkarır. XML kullanarak erişebileceğiniz <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> özelliği <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> önbelleğe alınmış veri nesnesini temsil eden.
 
-2.  Bu kopyada değişiklik.
+2. Bu kopyada değişiklik.
 
-3.  Değiştirilen nesne, aşağıdaki seçeneklerden birini kullanarak verileri önbelleğe geri sıralayın:
+3. Değiştirilen nesne, aşağıdaki seçeneklerden birini kullanarak verileri önbelleğe geri sıralayın:
 
-    -   Otomatik olarak değişiklikleri seri hale getirmek istiyorsanız, kullanın <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> yöntemi. Bu yöntemde **DiffGram** serileştirmek için biçim <xref:System.Data.DataSet>, <xref:System.Data.DataTable>ve yazılan veri kümesi nesnelerini veri önbelleğindeki. **DiffGram** biçimi, çevrimdışı bir belgedeki veri önbelleğini değişiklikler sunucuya doğru olarak gönderilmesini sağlar.
+    - Otomatik olarak değişiklikleri seri hale getirmek istiyorsanız, kullanın <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> yöntemi. Bu yöntemde **DiffGram** serileştirmek için biçim <xref:System.Data.DataSet>, <xref:System.Data.DataTable>ve yazılan veri kümesi nesnelerini veri önbelleğindeki. **DiffGram** biçimi, çevrimdışı bir belgedeki veri önbelleğini değişiklikler sunucuya doğru olarak gönderilmesini sağlar.
 
-    -   Önbelleğe alınan verilerde yapılan değişiklikleri için kendi serileştirme gerçekleştirmek istiyorsanız, doğrudan yazabileceğiniz <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> özelliği. Belirtin **DiffGram** kullanırsanız, biçimlendirme bir <xref:System.Data.Common.DataAdapter> verilerde yapılan değişikliklerle bir veritabanını güncelleştirmek için bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya yazılan veri kümesi. Aksi takdirde, <xref:System.Data.Common.DataAdapter> varolan satırları değiştirmek yerine yeni satır ekleyerek veritabanını güncelleştirir.
+    - Önbelleğe alınan verilerde yapılan değişiklikleri için kendi serileştirme gerçekleştirmek istiyorsanız, doğrudan yazabileceğiniz <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> özelliği. Belirtin **DiffGram** kullanırsanız, biçimlendirme bir <xref:System.Data.Common.DataAdapter> verilerde yapılan değişikliklerle bir veritabanını güncelleştirmek için bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya yazılan veri kümesi. Aksi takdirde, <xref:System.Data.Common.DataAdapter> varolan satırları değiştirmek yerine yeni satır ekleyerek veritabanını güncelleştirir.
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>Geçerli değer seri durumdan çıkarılırken verileri değiştirme
  Bazı durumlarda, ilk geçerli değeri seri durumdan çıkarılırken olmadan önbelleğe alınmış nesnenin değerini değiştirmek isteyebilirsiniz. Örneğin, bir tamsayı veya dize gibi basit bir türe sahip bir nesne değeri değiştiriyorsanız veya bir önbelleğe alınan başlatma bunu yapabilirsiniz <xref:System.Data.DataSet> bir sunucuda bir belgedeki. Bu durumlarda, kullandığınız <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> önbelleğe alınmış nesnenin geçerli değerini ilk seri durumdan çıkarılırken olmadan yöntemi.
@@ -70,9 +70,9 @@ ms.locfileid: "55926859"
 ### <a name="modify-null-values-in-the-data-cache"></a>Veri önbelleğini null değerleri değiştirme
  Veri önbelleğini değerine sahip nesneleri depolamaz **null** zaman Belge kaydedildiğinde ve kapatıldı. Önbelleğe alınmış verileri değiştirdiğinizde, bu sınırlama bazı sonuçları vardır:
 
--   Değer veri önbelleğindeki herhangi bir nesne ayarlarsanız **null**, tüm veri önbelleğindeki nesneler otomatik olarak ayarlanacak **null** zaman belge açılır ve tüm veri önbelleği zaman temizlenir Belge kaydedildi ve kapatıldı. Diğer bir deyişle, veri önbelleği'ndeki tüm önbelleğe alınan nesneleri kaldırılacak ve <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> koleksiyonu boş olacak.
+- Değer veri önbelleğindeki herhangi bir nesne ayarlarsanız **null**, tüm veri önbelleğindeki nesneler otomatik olarak ayarlanacak **null** zaman belge açılır ve tüm veri önbelleği zaman temizlenir Belge kaydedildi ve kapatıldı. Diğer bir deyişle, veri önbelleği'ndeki tüm önbelleğe alınan nesneleri kaldırılacak ve <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> koleksiyonu boş olacak.
 
--   Bir çözüm oluşturuyorsanız **null** nesnelerindeki veri önbelleği ve bu nesneleri kullanarak başlatmak istediğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı belge önce ilk kez açıldığında, tüm nesneleri başlattığınızdan emin olun Veri karmasındaki. Yalnızca bazı nesneler başlatmak, tüm nesneleri ayarlanacak **null** zaman belge açılır ve Belge kaydedildi ve tüm veri önbelleği temizlendi.
+- Bir çözüm oluşturuyorsanız **null** nesnelerindeki veri önbelleği ve bu nesneleri kullanarak başlatmak istediğiniz <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> sınıfı belge önce ilk kez açıldığında, tüm nesneleri başlattığınızdan emin olun Veri karmasındaki. Yalnızca bazı nesneler başlatmak, tüm nesneleri ayarlanacak **null** zaman belge açılır ve Belge kaydedildi ve tüm veri önbelleği temizlendi.
 
 ## <a name="access-typed-datasets-in-the-cache"></a>Türü belirtilmiş veri kümeleri önbelleğe erişim
  Office çözümünü ve ofis dışında bir uygulama bir Windows Forms uygulaması gibi bir türü belirtilmiş veri kümesi verilere erişmek istiyorsanız veya [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] projesini hem de başvuruda bulunulan ayrı bir derlemede yazılmış veri kümesi tanımlamalıdır projeleri. Kullanarak türü belirtilmiş veri kümesi için her bir proje eklediğinizde **veri kaynağı yapılandırması** Sihirbazı veya **veri kümesi Tasarımcısı**, .NET Framework türü belirtilmiş datasets içinde iki proje farklı olarak değerlendir . Türü belirtilmiş datasets oluşturma hakkında daha fazla bilgi için bkz. [oluşturun ve Visual Studio'da veri kümeleri yapılandırma](../data-tools/create-and-configure-datasets-in-visual-studio.md).

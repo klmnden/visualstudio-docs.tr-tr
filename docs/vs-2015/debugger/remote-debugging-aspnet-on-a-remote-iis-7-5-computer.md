@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109536"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Uzaktan hata ayıklama Uzak IIS bilgisayarında ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ Yüklendikten sonra uzaktan hata ayıklayıcı hedef makinede çalıştığında
       </system.web>
   
     ```
+
 1. Açık **Internet Information Services (IIS) Yöneticisi'ni** gidin **siteleri**.
 1. Sağ **varsayılan Web sitesi** düğümünü seçip alt **uygulama Ekle**.
 1. Ayarlama **diğer** alanı **MyMVC** uygulama havuzu alanını **ASP.NET v4.0** (ASP.NET 4.5 uygulama havuzu için bir seçenek değildir). Ayarlama **fiziksel yolu** için **C:\Publish** (kopyaladığınız ASP.NET proje dizini).

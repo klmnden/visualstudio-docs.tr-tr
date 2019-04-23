@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105337"
 ---
 # <a name="performance-explorer-window"></a>Performans Gezgini Penceresi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,31 +28,31 @@ ms.locfileid: "54780727"
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="performance-explorer-toolbar"></a>Performans Gezgini araç çubuğu  
  Aşağıdaki seçenekler mevcuttur **performans Gezgini** araç çubuğu:  
   
--   **Performans Sihirbazını Başlat** -performans Gezgini penceresi için yeni performans oturumu eklemek için performans Sihirbazı'nı görüntüler.  
+- **Performans Sihirbazını Başlat** -performans Gezgini penceresi için yeni performans oturumu eklemek için performans Sihirbazı'nı görüntüler.  
   
--   **Yeni performans oturumu** -performans Gezgini penceresi için bir boş performans oturumu ekler.  
+- **Yeni performans oturumu** -performans Gezgini penceresi için bir boş performans oturumu ekler.  
   
--   **Başlatma** - **başlatma** komut düğmesi listesi sağlar, profil oluşturma hemen etkin olan bir hedef uygulama başlatılamadı (**başlatma profil oluşturma ile**) veya askıya alınmış (Profiloluşturma** Profil oluşturma ile Başlat duraklatıldı**).  
+- **Başlatma** - **başlatma** komut düğmesi listesi sağlar, profil oluşturma hemen etkin olan bir hedef uygulama başlatılamadı (**başlatma profil oluşturma ile**) veya askıya alınmış (Profiloluşturma **Profil oluşturma ile Başlat duraklatıldı**).  
   
--   **Yöntem** -oturumun profil oluşturma yöntemine mi örnekleme veya Araçlar belirtir.  
+- **Yöntem** -oturumun profil oluşturma yöntemine mi örnekleme veya Araçlar belirtir.  
   
--   **Durdur** -hedef uygulamanın ve profil oluşturucu hemen çıkar.  
+- **Durdur** -hedef uygulamanın ve profil oluşturucu hemen çıkar.  
   
--   **Attach/Detach** -görüntüler **işleme iliştirmek Profiler** iletişim kutusu, profil oluşturucuyu eklemek için çalışan bir işlem seçin.  
+- **Attach/Detach** -görüntüler **işleme iliştirmek Profiler** iletişim kutusu, profil oluşturucuyu eklemek için çalışan bir işlem seçin.  
   
 ## <a name="performance-explorer-window"></a>Performans Gezgini Penceresi  
  **Performans Gezgini** penceresi ikili dosyaları ve bir veya daha fazla performans oturumları, rapor veri dosyalarını görüntüleyen bir ağaç denetimi içerir.  
   
--   **Oturum adı** -ağaç denetimi kök oturumun adı içerir. Oturum özellikleri ayarlamak veya hedef uygulama ve profil oluşturucuyu başlatmak için oturum adına sağ tıklayın.  
+- **Oturum adı** -ağaç denetimi kök oturumun adı içerir. Oturum özellikleri ayarlamak veya hedef uygulama ve profil oluşturucuyu başlatmak için oturum adına sağ tıklayın.  
   
--   **Hedefleri** -oturumda profil oluşturulacak ikili dosyalarının adlarını görüntüler. Sağ **hedefleri** eklemek veya bir ikili kaldırmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje veya Web sitesi. Bireysel ikili özelliklerini ayarlamak için bir hedef adına sağ tıklayın.  
+- **Hedefleri** -oturumda profil oluşturulacak ikili dosyalarının adlarını görüntüler. Sağ **hedefleri** eklemek veya bir ikili kaldırmak için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje veya Web sitesi. Bireysel ikili özelliklerini ayarlamak için bir hedef adına sağ tıklayın.  
   
--   **Raporları** -oturumu için oluşturulan profil oluşturucu veri dosyalarının adlarını görüntüler. Sağ **raporları** iki Profil Oluşturucu veri dosyalarını karşılaştırma ya da mevcut bir raporu ekleyin. Açık, kaldırmak veya bir profil oluşturucu veri dosyasına dışarı aktarmak için bir rapor adına sağ tıklayın.  
+- **Raporları** -oturumu için oluşturulan profil oluşturucu veri dosyalarının adlarını görüntüler. Sağ **raporları** iki Profil Oluşturucu veri dosyalarını karşılaştırma ya da mevcut bir raporu ekleyin. Açık, kaldırmak veya bir profil oluşturucu veri dosyasına dışarı aktarmak için bir rapor adına sağ tıklayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel bakış](../profiling/overviews-performance-tools.md)   

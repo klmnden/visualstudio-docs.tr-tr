@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d338ee3660c4459510de7b01b42cb3670328e4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56ae0260b73d41e953fa25b74eae9b012604258a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106351"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Hata: x64 işlemleri için karışık modda hata ayıklama yalnızca Microsoft .NET Framework 4 veya daha yenisi kullanılırken desteklenir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Bir 64-bit işlem içinde karma yerel ve yönetilen kodda hata ayıklamak için 
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Aşağıdaki adımlardan birini uygulayın:  
+- Aşağıdaki adımlardan birini uygulayın:  
   
-    -   Yükseltme, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürüm 4.  
+    - Yükseltme, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sürüm 4.  
   
-    -   Hata ayıklama için uygulamanızın bir 32-bit sürümünü oluşturun.  
+    - Hata ayıklama için uygulamanızın bir 32-bit sürümünü oluşturun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cihazda uzak araçları ayarlama](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

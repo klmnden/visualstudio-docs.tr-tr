@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c045acab8741b7b20e830aa9969b575a399edff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058908"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Nasıl yapılır: Performans verileri toplamayı duraklatma ve sürdürme
 Profil oluşturma oturumu sayfa penceresinden verileri etkileşimli olarak profil oluşturma koleksiyonu denetleyebilirsiniz.
@@ -29,13 +29,13 @@ Profil oluşturma oturumu sayfa penceresinden verileri etkileşimli olarak profi
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Duraklatmak için sürdürmek veya profil oluşturmayı durdur
 
--   Profil oluşturma oturumu sayfasında:
+- Profil oluşturma oturumu sayfasında:
 
-    -   Seçin **koleksiyonu duraklatın** veri toplamayı durdurma.
+    - Seçin **koleksiyonu duraklatın** veri toplamayı durdurma.
 
-    -   Seçin **sürdürme koleksiyonu** duraklatıldıktan sonra veri toplamayı yeniden başlatmak için.
+    - Seçin **sürdürme koleksiyonu** duraklatıldıktan sonra veri toplamayı yeniden başlatmak için.
 
-    -   Seçin **profil oluşturmayı durdurmak** profil oluşturma oturumunu sona erdirmek ve raporlar oluşturmak için.
+    - Seçin **profil oluşturmayı durdurmak** profil oluşturma oturumunu sona erdirmek ve raporlar oluşturmak için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Veri toplamayı denetleme](../profiling/controlling-data-collection.md)

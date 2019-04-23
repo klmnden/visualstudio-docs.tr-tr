@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071414"
 ---
 # <a name="start"></a>Başlat
 **Başlat** seçeneği bir *VSPerfCmd.exe* seçeneği belirtilen profil oluşturma metodu için profil oluşturucuyu başlatır.
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>Parametreler
  `Method` Aşağıdaki anahtar sözcükler biri olmalıdır:
 
--   **İzleme** -izleme metodunu belirtir.
+- **İzleme** -izleme metodunu belirtir.
 
--   **ÖRNEK** -örnekleme yöntemini belirtir.
+- **ÖRNEK** -örnekleme yöntemini belirtir.
 
--   **KAPSAMI** -kod kapsamı belirtir.
+- **KAPSAMI** -kod kapsamı belirtir.
 
--   **EŞZAMANLILIK** -kaynak çekişmesi yöntemini belirtir.
+- **EŞZAMANLILIK** -kaynak çekişmesi yöntemini belirtir.
 
 ## <a name="required-options"></a>Gerekli seçenekleri
  **Çıkış** seçeneği olmalıdır belirtilen **Başlat** komut satırında belirtilen.

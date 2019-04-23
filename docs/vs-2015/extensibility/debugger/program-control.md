@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108054"
 ---
 # <a name="program-control"></a>Program Denetimi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio'da hata ayıklama, tüm aşağıdaki adımlama ve yordamları devam program düzeyinde gerçekleşir:  
   
--   Sonraki deyimin ayarlanması, diğer bir deyişle, bilgisayarınızı belirli çerçeve ortamında yürütülecek sonraki yönergesi için ayarlama  
+- Sonraki deyimin ayarlanması, diğer bir deyişle, bilgisayarınızı belirli çerçeve ortamında yürütülecek sonraki yönergesi için ayarlama  
   
--   Yürütme, Adımlama modundan çıkmak diğer bir deyişle, devam  
+- Yürütme, Adımlama modundan çıkmak diğer bir deyişle, devam  
   
--   Sonraki yönergeyi Adımlama  
+- Sonraki yönergeyi Adımlama  
   
--   Geçerli bir atlama modu ile devam etme  
+- Geçerli bir atlama modu ile devam etme  
   
--   Program tarafından bulunan iş parçacıklarını askıya alma  
+- Program tarafından bulunan iş parçacıklarını askıya alma  
   
--   Program tarafından bulunan iş parçacıklarını sürdürme  
+- Program tarafından bulunan iş parçacıklarını sürdürme  
   
 > [!NOTE]
 >  Çağrı yığınını görüntüleme iş parçacığı düzeyinde uygulanır. Bir iş parçacığı için çağrı yığınını görüntülerken çerçeve bilgileri numaralandırmak için tüm yöntemleri uygulamalıdır [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) arabirimi.  

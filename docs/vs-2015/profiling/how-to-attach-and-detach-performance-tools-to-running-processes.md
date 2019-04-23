@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095749"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Nasıl yapılır: Ekleme ve ayırma işlemleri çalıştırmak için performans araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha k
   
 ### <a name="to-attach-to-a-running-process"></a>Çalışan bir işleme iliştirmek için  
   
-1.  Üzerinde **Çözümle** menüsünde **Profiler** ve ardından **Attach/Detach**.  
+1. Üzerinde **Çözümle** menüsünde **Profiler** ve ardından **Attach/Detach**.  
   
      \- veya -  
   
@@ -52,13 +52,13 @@ Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha k
   
      **İşleme iliştirmek Profiler** iletişim kutusu görüntülenir.  
   
-2.  Eklemek istediğiniz işlemin adını tıklayın.  
+2. Eklemek istediğiniz işlemin adını tıklayın.  
   
-3.  Tıklayın **ekleme**.  
+3. Tıklayın **ekleme**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Çalışan bir işlemden ayırmak için  
   
-1.  Üzerinde **Çözümle** menüsünde **Profiler** ve ardından **Attach/Detach**.  
+1. Üzerinde **Çözümle** menüsünde **Profiler** ve ardından **Attach/Detach**.  
   
      \- veya -  
   
@@ -66,9 +66,9 @@ Profil Oluşturucu ekleme veya örnekleme ve toplar performans verilerini daha k
   
      **İşleme iliştirmek Profiler** iletişim kutusu görüntülenir.  
   
-2.  Ayırmak istediğiniz görüntü adına tıklayın.  
+2. Ayırmak istediğiniz görüntü adına tıklayın.  
   
-3.  Tıklayın **ayırma**.  
+3. Tıklayın **ayırma**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri toplama denetimi](../profiling/controlling-data-collection.md)   

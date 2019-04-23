@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7276690152e74599df6183cf602aca518e3b944f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da18990620644834192c38c24ced9a25ecb56215
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071271"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Nasıl yapılır: WPF Ağacı Görselleştiricisini kullanma
 WPF ağacı görselleştiricisini WPF nesne görsel ağacını keşfedin ve o ağaç içinde bulunan nesneler için WPF bağımlılık özellikleri görüntülemek için kullanabilirsiniz. Görsel ağacı hakkında daha fazla bilgi için bkz: [WPF içinde ağaçlar](/dotnet/framework/wpf/advanced/trees-in-wpf). Bağımlılık özellikleri hakkında daha fazla bilgi için bkz: [bağımlılık özelliklerine genel bakış](/dotnet/framework/wpf/advanced/dependency-properties-overview).
@@ -30,35 +30,35 @@ WPF ağacı görselleştiricisini WPF nesne görsel ağacını keşfedin ve o a�
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>WPF ağacı görselleştiricisini açmak için
 
-1.  Bir DataTip içinde **Watch** penceresinde **Otolar** penceresinde veya **Yereller** penceresinde, bir WPF nesne adının yanındaki oka bitişik için büyüteç simgesini tıklayın.
+1. Bir DataTip içinde **Watch** penceresinde **Otolar** penceresinde veya **Yereller** penceresinde, bir WPF nesne adının yanındaki oka bitişik için büyüteç simgesini tıklayın.
 
      Görselleştiriciler listesi görüntülenir.
 
-2.  Tıklayın **WPF ağacı Görselleştiricisini**.
+2. Tıklayın **WPF ağacı Görselleştiricisini**.
 
 ### <a name="to-search-the-visual-tree"></a>Görsel ağacı aramak için
 
--   İçinde **görsel ağacı** bölmesinde, içinde arama yapmak istediğiniz dizeyi yazın **arama** kutusu.
+- İçinde **görsel ağacı** bölmesinde, içinde arama yapmak istediğiniz dizeyi yazın **arama** kutusu.
 
      WPF ağacı görselleştiricisini, yazdığınız dizesiyle eşleşen görsel ağaçta ilk nesnenin hemen bulur. Daha fazla karakter daha doğru bir eşleşme bulmak için yazın.
 
-    -   Sonraki eşleşmeye görsel ağacı içinde gitmek için tıklayın **sonraki**.
+    - Sonraki eşleşmeye görsel ağacı içinde gitmek için tıklayın **sonraki**.
 
-    -   Önceki eşleşmeye geri gitmek için tıklayın **önceki**.
+    - Önceki eşleşmeye geri gitmek için tıklayın **önceki**.
 
-    -   Arama ölçütlerini temizlemek için tıklatın **Temizle**.
+    - Arama ölçütlerini temizlemek için tıklatın **Temizle**.
 
 ### <a name="to-search-the-properties-list"></a>Özellikler listesinde aramak için
 
--   İçinde **özelliklerini** _adı_**:**_türü_ bölmesinde, içinde arama yapmak istediğiniz dizeyi yazın **filtre**kutusu.
+- İçinde **özelliklerini** _adı_**:**_türü_ bölmesinde, içinde arama yapmak istediğiniz dizeyi yazın **filtre**kutusu.
 
      WPF ağacı görselleştiricisini hemen yazdığınız dizeyi eşleştir özelliklerini bulur; Artık, listede yalnızca yazdığınız dize eşleşen özellikler görüntülenir. Daha fazla karakter daha doğru bir eşleşme bulmak için yazın.
 
-    -   Arama ölçütlerini temizlemek için tıklatın **Temizle**.
+    - Arama ölçütlerini temizlemek için tıklatın **Temizle**.
 
 ### <a name="to-close-the-visualizer"></a>Görselleştirici kapatmak için
 
--   Tıklayın **Kapat** iletişim kutusunun sağ alt köşesindeki simgeyi.
+- Tıklayın **Kapat** iletişim kutusunun sağ alt köşesindeki simgeyi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Özel Görselleştirici Oluşturma](../debugger/create-custom-visualizers-of-data.md)

@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109530"
 ---
 # <a name="getting-started-with-the-debugger"></a>Hata Ayıklayıcısını Kullanmaya Başlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio hata ayıklayıcısını kolayca herhangi bir dilde kullanılabilir. Burada basit bir C# programı hata ayıklama göstereceğiz, ancak C++ ve JavaScript gibi diğer dillerde kod için aynı adımları uygulayabilirsiniz.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Temel C# projesinde hata ayıklama  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Temel C# projesinde hata ayıklama  
  Bir basit C# konsol uygulaması ile başlayalım (**dosya / yeni / Project**, ardından **Visual C#** seçip **konsol uygulaması**). Hiçbir zaman önce Visual Studio çalıştıysanız bkz [izlenecek yol: Basit bir uygulama oluşturma](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Ana** yöntemi yalnızca 1, 10 kez bir tamsayı değişkenine ekler ve sonucu konsola yazdırır:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Kesme noktaları hakkında daha fazla bilgi için bkz: [kullanılarak kesme noktaları](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Değişkenleri İnceleme  
+## <a name="BKMK_Inspect_Variables"></a> Değişkenleri İnceleme  
  Genellikle hata ayıklama, belirli bir noktada beklediğiniz değer içermeyen değişkenleri bulma içerir. Değişkenleri inceleyebilirsiniz yollardan bazılarını göstereceğiz.  
   
  Hata ayıklamayı yeniden başlatın. Yürütmeyi durdurur önce `Console.WriteLine` kodu yürütür. Önceden ilerlemeye tarafından yürütülecek neden olabilir (tıklayın **hata ayıklama / adım üzerinden** veya **F10**). Bu durumda, seçtiğiniz **içine adımla** (**F11**) ve aynı sonucu; edinmiş fark daha sonra açıklayacağız. Yöntemin son küme ayracı ile satır açık sarı. Konsol penceresine bakın. Görmelisiniz **10**.  

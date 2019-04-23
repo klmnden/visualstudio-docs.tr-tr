@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103803"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Nasıl yapılır: Sembol bilgilerini seri hale getirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Uygulamanızı çözümlemek zorunda semboller serileştirmek. Sembol seri hale 
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Sembol bilgisini otomatik serileştir için  
   
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.  
   
      **Seçenekleri** iletişim kutusu görüntülenir.  
   
-2.  Tıklayın **performans araçları**.  
+2. Tıklayın **performans araçları**.  
   
-3.  Altında **genel ayarı**seçin **sembol bilgisini otomatik serileştir**.  
+3. Altında **genel ayarı**seçin **sembol bilgisini otomatik serileştir**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans oturumlarını yapılandırma](../profiling/configuring-performance-sessions.md)   

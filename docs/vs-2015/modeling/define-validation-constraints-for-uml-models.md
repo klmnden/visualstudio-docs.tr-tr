@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071168"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>UML modelleri için doğrulama kısıtlamaları tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Modelin belirttiğiniz koşulu karşılayıp karşılamadığını test eden do�
 ## <a name="defining-a-validation-extension"></a>Geçerlilik uzatma tanımlama  
  Bir UML tasarımcısı için bir doğrulama uzantısı oluşturmak üzere doğrulama sınırlamalarının davranışını belirleyen bir sınıf oluşturmanız ve sınıfı bir Visual Studio Tümleştirme Uzantısı'na (VSIX) katıştırmanız gerekir. VSIX kısıtlamayı yükleyebilecek bir kapsayıcı gibi davranır. Bir doğrulama uzantısı tanımlamanın iki farklı yöntemi vardır:  
   
--   **Bir proje şablonunu kullanarak kendi VSIX'inde bir doğrulama uzantısı oluşturun.** Bu daha hızlı bir yöntemdir. Doğrulama sınırlamalarınızı menü komutları, özel araç kutusu öğeleri gibi uzantısı diğer tür birleştirmek veya hareket işleyicileri istemiyorsanız bunu kullanın. Bir sınıfta çeşitli kısıtlamalar tanımlayabilirsiniz.  
+- **Bir proje şablonunu kullanarak kendi VSIX'inde bir doğrulama uzantısı oluşturun.** Bu daha hızlı bir yöntemdir. Doğrulama sınırlamalarınızı menü komutları, özel araç kutusu öğeleri gibi uzantısı diğer tür birleştirmek veya hareket işleyicileri istemiyorsanız bunu kullanın. Bir sınıfta çeşitli kısıtlamalar tanımlayabilirsiniz.  
   
--   **Ayrı doğrulama sınıfı ve VSIX projeleri oluşturun.** Aynı VSIX içinde kaç tür uzantıyı birleştirmek istiyorsanız bu yöntemi kullanın. Örneğin, menü komutunuz modelin belirli kısıtlamalar ortaya koyacağını ön görüyorsa bunu bir doğrulama yöntemi olarak aynı VSIX içine katıştırabilirsiniz.  
+- **Ayrı doğrulama sınıfı ve VSIX projeleri oluşturun.** Aynı VSIX içinde kaç tür uzantıyı birleştirmek istiyorsanız bu yöntemi kullanın. Örneğin, menü komutunuz modelin belirli kısıtlamalar ortaya koyacağını ön görüyorsa bunu bir doğrulama yöntemi olarak aynı VSIX içine katıştırabilirsiniz.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Kendi VSIX'inde bir doğrulama uzantısı oluşturmak için  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>Bir sınıf kitaplığı projesinde ayrı bir doğrulama kısıtlaması oluşturmak için  
   
-1.  Varolan bir VSIX çözümüne ekleyerek veya yeni bir çözüm oluşturarak bir sınıf kitaplığı projesi oluşturun.  
+1. Varolan bir VSIX çözümüne ekleyerek veya yeni bir çözüm oluşturarak bir sınıf kitaplığı projesi oluşturun.  
   
-    1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+    1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**ve ardından Orta sütundaki **sınıf kitaplığı**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**ve ardından Orta sütundaki **sınıf kitaplığı**.  
   
-2.  Çözümünüz bir tane içermiyorsa, bir VSIX projesi oluşturun:  
+2. Çözümünüz bir tane içermiyorsa, bir VSIX projesi oluşturun:  
   
-    1.  İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
+    1. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki tıklayın **VSIX projesi**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki tıklayın **VSIX projesi**.  
   
-3.  VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
+3. VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
   
-    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
+    - Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
   
-4.  İçinde **source.extension.vsixmanifest**altında **içerik**, sınıf kitaplığı projesini MEF Bileşeni olarak ekleyin:  
+4. İçinde **source.extension.vsixmanifest**altında **içerik**, sınıf kitaplığı projesini MEF Bileşeni olarak ekleyin:  
   
-    1.  Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
+    1. Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
   
-    2.  Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
+    2. Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
   
-    3.  Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
+    3. Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
   
          **Tür** = **MEF Bileşeni**  
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>Doğrulama sınıfını tanımlamak için  
   
-1.  Kendi VSIX doğrulama proje şablonu ile bir doğrulama sınıfı oluşturduysanız, bu yordama ihtiyacınız yoktur.  
+1. Kendi VSIX doğrulama proje şablonu ile bir doğrulama sınıfı oluşturduysanız, bu yordama ihtiyacınız yoktur.  
   
-2.  Doğrulama sınıfı projesinde aşağıdaki başvuruları ekleyin [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] derlemeler:  
+2. Doğrulama sınıfı projesinde aşağıdaki başvuruları ekleyin [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] derlemeler:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  Aşağıdaki örneğe benzer bir kod içeren sınıf kitaplığı projesine bir dosya ekleyin.  
+3. Aşağıdaki örneğe benzer bir kod içeren sınıf kitaplığı projesine bir dosya ekleyin.  
   
-    -   Her doğrulama kısıtlaması belirli bir özniteliği ile işaretlenmiş bir yöntem içinde yer alır. Yöntemi, bir model öğesi türünde bir parametre kabul eder. Doğrulama çağrıldığında doğrulama Framework'ü her doğrulama yöntemi, parametre türüne uyan her model öğe uygulanır.  
+    - Her doğrulama kısıtlaması belirli bir özniteliği ile işaretlenmiş bir yöntem içinde yer alır. Yöntemi, bir model öğesi türünde bir parametre kabul eder. Doğrulama çağrıldığında doğrulama Framework'ü her doğrulama yöntemi, parametre türüne uyan her model öğe uygulanır.  
   
-    -   Bu yöntemleri tüm sınıflara ve ad alanlarına yerleştirebilirsiniz. Bunları tercihinize uygun olarak değiştirin.  
+    - Bu yöntemleri tüm sınıflara ve ad alanlarına yerleştirebilirsiniz. Bunları tercihinize uygun olarak değiştirin.  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> Doğrulama kısıtlaması yürütme  
+## <a name="Executing"></a> Doğrulama kısıtlaması yürütme  
  Test amaçları için doğrulama yöntemlerinizi hata ayıklama modunda yürütün.  
   
 #### <a name="to-test-the-validation-constraint"></a>Doğrulama sınırlamasını test etmek için  
   
-1.  Tuşuna **F5**, veya **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
+1. Tuşuna **F5**, veya **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
   
      Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
   
      **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlamıyor:  
   
-    -   Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
+    - Birden fazla projeniz varsa, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
-    -   Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde seçin **özellikleri**. Proje özellik Düzenleyicisi'ndeki **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
+    - Çözüm Gezgini'nde başlatmanın veya yalnızca projenin kısayol menüsünde seçin **özellikleri**. Proje özellik Düzenleyicisi'ndeki **hata ayıklama** sekmesi. Emin olun dizesinde **harici program Başlat** alandır tam yol adını [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], genellikle:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun.  
+2. Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun.  
   
-3.  Önceki bölümde verilen örnek kısıtlama için bir test ayarlamak için:  
+3. Önceki bölümde verilen örnek kısıtlama için bir test ayarlamak için:  
   
-    1.  Bir sınıf diyagramı açın.  
+    1. Bir sınıf diyagramı açın.  
   
-    2.  Bir sınıf oluşturun ve aynı ada sahip iki öznitelik ekleyin.  
+    2. Bir sınıf oluşturun ve aynı ada sahip iki öznitelik ekleyin.  
   
-4.  Diyagram üzerindeki herhangi bir yerde kısayol menüsünde **doğrulama**.  
+4. Diyagram üzerindeki herhangi bir yerde kısayol menüsünde **doğrulama**.  
   
-5.  Modeldeki herhangi bir hata hata penceresinde bildirilecektir.  
+5. Modeldeki herhangi bir hata hata penceresinde bildirilecektir.  
   
-6.  Hata raporuna çift tıklayın. Raporda belirtilen öğeler ekranda görünür durumdaysa vurgulanacaklardır.  
+6. Hata raporuna çift tıklayın. Raporda belirtilen öğeler ekranda görünür durumdaysa vurgulanacaklardır.  
   
      **Sorun giderme**: Varsa **doğrulama** komut görünmez menüde emin olun:  
   
-    -   Doğrulama projesi, bir MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
+    - Doğrulama projesi, bir MEF Bileşeni olarak listelenir **varlıklar** sekmesinde **source.extensions.manifest** VSIX projesinde.  
   
-    -   Doğru `Export` ve `ValidationMethod` öznitelikleri doğrulama yöntemlerine eklenir.  
+    - Doğru `Export` ve `ValidationMethod` öznitelikleri doğrulama yöntemlerine eklenir.  
   
-    -   `ValidationCategories.Menu` bağımsız değişken için yer aldığı `ValidationMethod` özniteliği ve mantıksal OR kullanan diğer değerlerle oluşturulmuştur (&#124;).  
+    - `ValidationCategories.Menu` bağımsız değişken için yer aldığı `ValidationMethod` özniteliği ve mantıksal OR kullanan diğer değerlerle oluşturulmuştur (&#124;).  
   
-    -   Tüm parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
+    - Tüm parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
   
-##  <a name="Implementing"></a> Kısıtlamayı değerlendirme  
+## <a name="Implementing"></a> Kısıtlamayı değerlendirme  
  Doğrulama yöntemi, uygulamak istediğiniz doğrulama kısıtlamasının doğru veya yanlış olup olmadığını belirlemeniz gerekir. TRUE ise, hiçbir şey yapmamalıdır. False, bunu tarafından sağlanan yöntemleri kullanarak hatayı bildirmelidir varsa `ValidationContext` parametresi.  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> Birden çok doğrulamayı düzenleme  
+### <a name="ContextCache"></a> Birden çok doğrulamayı düzenleme  
  Doğrulama çağrıldığında, örneğin bir diyagram menüsünden, kullanıcı tarafından her doğrulama yöntemi her model öğesine uygulanır. Bu doğrulama çerçevesinin tek bir çağrısı içinde aynı yöntemi birden çok kez farklı öğelere uygulanabilir, anlamına gelir.  
   
  Bu öğeleri arasındaki ilişkileri uğraşmanız doğrulamaları bir sorunu gösterir. Örneğin, başlayan bir doğrulama, bir kullanım örneği ve ilişkilerinden geçen yazabilirsiniz **dahil** ilişkileri döngü olmadığını doğrulayın. Ancak zaman yöntemi uygulanan birçok olan modelde her kullanım örneğine **dahil** bağlantıları, büyük olasılıkla sürekli olarak modelin aynı alanlarını işleyecektir.  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Bir değer alır.|  
 |`Context.GetValue<T>()`|Belirtilen türde bir değer alır.|  
   
-##  <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
+## <a name="Installing"></a> Yükleme ve bir uzantıyı kaldırma  
  Yükleyebileceğiniz bir [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] hem kendi bilgisayarınıza hem de diğer bilgisayarlara uzantısı.  
   
 #### <a name="to-install-an-extension"></a>Bir uzantı yüklemek için  
   
-1.  Bilgisayarınızda, bulma **.vsix** VSIX projeniz tarafından oluşturulan dosya.  
+1. Bilgisayarınızda, bulma **.vsix** VSIX projeniz tarafından oluşturulan dosya.  
   
-    1.  İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
+    1. İçinde **Çözüm Gezgini**, VSIX projesinin kısayol menüsünde **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**.vsix**  
   
-2.  Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
+2. Kopyalama **.vsix** uzantıyı yüklemek istediğiniz hedef bilgisayarın bir dosyaya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   
-    -   Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] belirttiğiniz **source.extension.vsixmanifest**.  
+    - Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] belirttiğiniz **source.extension.vsixmanifest**.  
   
-3.  Hedef bilgisayarda açın **.vsix** dosya.  
+3. Hedef bilgisayarda açın **.vsix** dosya.  
   
      **Visual Studio Uzantı Yükleyicisi** açılır ve uzantıyı yükler.  
   
-4.  Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Bir uzantıyı kaldırmak için  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *% LocalAppData %* **\Microsoft\VisualStudio\\[sürüm] \Extensions**  
   
-##  <a name="Example"></a> Örnek  
+## <a name="Example"></a> Örnek  
  Bu örnekte, öğeler arasındaki bağımlılık ilişkisindeki döngüleri bulur.  
   
  Hem kaydetme hem üzerinde doğrulama menü komutunu doğrulayacaktır.  

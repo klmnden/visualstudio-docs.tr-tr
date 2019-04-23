@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 669a66f95c4e93dc9bee936cf36973cae20a2a4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89224dc5394f248ea82d428731ef387cb705ff27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099812"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Hata: Windows dosya paylaşımı yapılandırıldı...
 Böylece farklı bir kullanıcı adı kullanarak uzak bilgisayara bağlanacak Windows dosya paylaşımı yapılandırıldı. Bu uzaktan hata ayıklama ile uyumlu değil
@@ -32,16 +32,16 @@ Böylece farklı bir kullanıcı adı kullanarak uzak bilgisayara bağlanacak Wi
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1.  Bir hesap adı kullanarak, ayıkladığınız makine gibi yerel, makinede oturum açın.
+1. Bir hesap adı kullanarak, ayıkladığınız makine gibi yerel, makinede oturum açın.
 
      —veya—
 
      biçimindeki telefon numarasıdır. Uzak bilgisayar bağlantısını kesebilmeniz ve diğer makine hesap adınızı kullanarak bağlanmak için dosya paylaşımını yeniden yapılandırın:
 
-    1.  Üzerinde **Başlat** menüsünde **Donatılar**ve ardından **komut istemi**.
+    1. Üzerinde **Başlat** menüsünde **Donatılar**ve ardından **komut istemi**.
 
-    2.  Windows komut isteminde aşağıdakini yazın:
+    2. Windows komut isteminde aşağıdakini yazın:
 
          `net use /delete computer_name`
 
-    3.  Windows Yardım'da belirtildiği yöntemlerden birini kullanarak dosya paylaşım ayarlarınızı değiştirin.
+    3. Windows Yardım'da belirtildiği yöntemlerden birini kullanarak dosya paylaşım ayarlarınızı değiştirin.

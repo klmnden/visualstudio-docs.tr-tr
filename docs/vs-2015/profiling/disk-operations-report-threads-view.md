@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be99c10a999ec190f538816e39eac411dc85544e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111200"
 ---
 # <a name="disk-operations-report-threads-view"></a>Disk İşlemleri Raporu (İş Parçacıkları Görünümü)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Disk işlemleri raporu disk kanallarında disk g/ç işlemleri gösterilmektedir
   
  Mevcut görülebilir zaman penceresinde profil oluşturulan işlem adına oluşan her disk erişimi için bu bilgileri bildirilir:  
   
--   Ad ve disk erişimi gerçekleştirilen işlemin  
+- Ad ve disk erişimi gerçekleştirilen işlemin  
   
--   Diskin erişilebilir iş parçacığının kimliği  
+- Diskin erişilebilir iş parçacığının kimliği  
   
--   Erişilen dosyanın adı  
+- Erişilen dosyanın adı  
   
--   Dosya başına okuma sayısı  
+- Dosya başına okuma sayısı  
   
--   Okunan bayt sayısı  
+- Okunan bayt sayısı  
   
--   Milisaniye cinsinden okuma gecikme süresi  
+- Milisaniye cinsinden okuma gecikme süresi  
   
--   Yazma sayısı  
+- Yazma sayısı  
   
--   Yazılan bayt sayısı  
+- Yazılan bayt sayısı  
   
--   Milisaniye cinsinden yazma gecikme süresi  
+- Milisaniye cinsinden yazma gecikme süresi  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İş Parçacıkları Görünümü](../profiling/threads-view-parallel-performance.md)

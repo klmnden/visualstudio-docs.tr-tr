@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106871"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Nasıl yapılır: Kısmen güvenilen uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +45,41 @@ Windows ve konsol uygulamaları için geçerlidir.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Kısmi güven uygulamanız için bir bölge seçmek için  
   
-1.  Gelen **proje** menüsünde seçin _Projectname_**özellikleri**.  
+1. Gelen **proje** menüsünde seçin _Projectname_**özellikleri**.  
   
-2.  İçinde *Projectname* özellik sayfaları, tıklayın **güvenlik** sayfası.  
+2. İçinde *Projectname* özellik sayfaları, tıklayın **güvenlik** sayfası.  
   
-3.  Seçin **ClickOnce güvenlik ayarlarını etkinleştirme**.  
+3. Seçin **ClickOnce güvenlik ayarlarını etkinleştirme**.  
   
-4.  Altında **uygulamanızı yükleneceği kaynak bölge**, aşağı açılan liste kutusunda tıklayın ve yüklenen uygulama benzetimini yapmak istediğiniz bölgeyi seçin.  
+4. Altında **uygulamanızı yükleneceği kaynak bölge**, aşağı açılan liste kutusunda tıklayın ve yüklenen uygulama benzetimini yapmak istediğiniz bölgeyi seçin.  
   
      **Uygulamanın gerektirdiği izinler** kılavuz kullanılabilir tüm izinleri gösterir. Onay işareti, uygulamaya verilen izinleri belirtir.  
   
-5.  Seçtiğiniz bölge olduysa **(özel)**, doğru özel ayarları'nda seçin **ayarı** sütununun **izinleri** kılavuz.  
+5. Seçtiğiniz bölge olduysa **(özel)**, doğru özel ayarları'nda seçin **ayarı** sütununun **izinleri** kılavuz.  
   
-6.  Tıklayın **Tamam** özellik sayfalarını kapatmak için.  
+6. Tıklayın **Tamam** özellik sayfalarını kapatmak için.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Bir güvenlik özel durumu oluştuğunda ek bir izin eklemek için  
   
-1.  **Özel durum Yardımcısı'nı** iletisiyle iletişim kutusu görüntülenir: **SecurityException işlenmedi.**  
+1. **Özel durum Yardımcısı'nı** iletisiyle iletişim kutusu görüntülenir: **SecurityException işlenmedi.**  
   
-2.  İçinde **özel durum Yardımcısı'nı** iletişim kutusunun **eylemleri**, tıklayın **proje ekleme izni**.  
+2. İçinde **özel durum Yardımcısı'nı** iletişim kutusunun **eylemleri**, tıklayın **proje ekleme izni**.  
   
-3.  **Yeniden hata ayıklama** iletişim kutusu görüntülenir.  
+3. **Yeniden hata ayıklama** iletişim kutusu görüntülenir.  
   
-    -   Yeni izni olan hata ayıklama oturumunu yeniden isterseniz **Evet**.  
+    - Yeni izni olan hata ayıklama oturumunu yeniden isterseniz **Evet**.  
   
-    -   Henüz yeniden istemiyorsanız tıklayın **Hayır**.  
+    - Henüz yeniden istemiyorsanız tıklayın **Hayır**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Hata ayıklama sırasında eklenen ek izinleri görüntülemek için  
   
-1.  Gelen **proje** menüsünde seçin _Projectname_**özellikleri**.  
+1. Gelen **proje** menüsünde seçin _Projectname_**özellikleri**.  
   
-2.  İçinde *Projectname* özellik sayfaları, tıklayın **güvenlik** sayfası.  
+2. İçinde *Projectname* özellik sayfaları, tıklayın **güvenlik** sayfası.  
   
-3.  Bakmak **uygulamanın gerektirdiği izinler** kılavuz. Eklediğiniz herhangi bir ek izne sahip iki simgeyi **dahil edilen** sütun: izinleriniz, tüm dahil, normal işaretine ve şuna benzeyen bir balon "i" harfini içeren ek bir simge.  
+3. Bakmak **uygulamanın gerektirdiği izinler** kılavuz. Eklediğiniz herhangi bir ek izne sahip iki simgeyi **dahil edilen** sütun: izinleriniz, tüm dahil, normal işaretine ve şuna benzeyen bir balon "i" harfini içeren ek bir simge.  
   
-4.  Dikey kaydırma çubuğu tamamını görüntülemek için kullanın **uygulamanın gerektirdiği izinler** kılavuz.  
+4. Dikey kaydırma çubuğu tamamını görüntülemek için kullanın **uygulamanın gerektirdiği izinler** kılavuz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)   

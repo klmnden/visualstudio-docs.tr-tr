@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108727"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Kaynak Çakışmaları Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "54804140"
 ### <a name="function-values"></a>İşlev değerleri  
  İşlev değerleri, çağrı ağacında temsil yürütme yolunu ortaya işlevi örneklerini temel alır.  
   
--   Özel değerler deyimleri kendi işlev gövdesindeki işlev yürütülürken gerçekleşen olayları temel alır. İşlev tarafından çağrılan işlevler içinde oluşan olaylar özel değerleri dahil edilmez.  
+- Özel değerler deyimleri kendi işlev gövdesindeki işlev yürütülürken gerçekleşen olayları temel alır. İşlev tarafından çağrılan işlevler içinde oluşan olaylar özel değerleri dahil edilmez.  
   
--   Kapsamlı değerler, işlev veya işlev tarafından çağrılan bir işlev yürütülürken gerçekleşen olayları temel alır.  
+- Kapsamlı değerler, işlev veya işlev tarafından çağrılan bir işlev yürütülürken gerçekleşen olayları temel alır.  
   
 ### <a name="percentage-values"></a>Yüzde değerleri  
  Yüzde değerleri, profil oluşturma verilerinin toplam süre veya Çekişme olayları temel alır. Rapor veya profil oluşturma çalışması görünümünü filtrelediyseniz yalnızca engellenme süresi ve çekişmeleri filtrelenmiş veri toplam değeri olarak kullanılır.  

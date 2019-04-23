@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ebff9b9e41212fcb1d33b7672e87aae8103571b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103301"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Android için Visual Studio Öykünücüsü Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 
  Bu konuda aşağıdaki bölümleri içerir.
 
--   [Hızlı Denetim listesi](#Checklist)
+- [Hızlı Denetim listesi](#Checklist)
 
--   [Sistem gereksinimleri](#System)
+- [Sistem gereksinimleri](#System)
 
--   [Ağ gereksinimleri](#Network)
+- [Ağ gereksinimleri](#Network)
 
--   [Hyper-V gereksinimleri](#HyperV)
+- [Hyper-V gereksinimleri](#HyperV)
 
--   [Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor](#BootableVHD)
+- [Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor](#BootableVHD)
 
--   [Hyper-V sıkıştırılmamış ve şifrelenmemiş dosyaları gerektirir.](#Files)
+- [Hyper-V sıkıştırılmamış ve şifrelenmemiş dosyaları gerektirir.](#Files)
 
-##  <a name="Checklist"></a> Hızlı Denetim listesi
+## <a name="Checklist"></a> Hızlı Denetim listesi
  Android için Visual Studio öykünücü çalıştırmak için gereksinimleri hızlı listesi aşağıda verilmiştir. Daha ayrıntılı bilgi için bu konudaki sonraki bölümlere bakın.
 
  Sistem gereksinimleri
@@ -62,17 +62,17 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 
 - Aşağıdaki özellikler BIOS'ta desteklenmesi gerekir:
 
-  -   Donanım destekli sanallaştırma
+  - Donanım destekli sanallaştırma
 
-  -   İkinci düzey adres çevirisi (SLAT)
+  - İkinci düzey adres çevirisi (SLAT)
 
-  -   Donanım tabanlı Veri Yürütme Engellemesi (DEP)
+  - Donanım tabanlı Veri Yürütme Engellemesi (DEP)
 
 - Windows Hyper-V etkinleştirilmiş ve çalışıyor olması gerekir.
 
 - Yerel Hyper-V Yöneticileri grubunun bir üyesi olmanız gerekir.
 
-##  <a name="System"></a> Sistem gereksinimleri
+## <a name="System"></a> Sistem gereksinimleri
  Bilgisayarınız, aşağıdaki gereksinimleri karşılamalıdır:
 
 - Hyper-V desteği (bkz [Hyper-V gereksinimleri](#HyperV))
@@ -85,7 +85,7 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 
   ![Sistem gereksinimlerini doğrulayın](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> Ağ gereksinimleri
+## <a name="Network"></a> Ağ gereksinimleri
  Ağınızda aşağıdaki gereksinimleri karşılaması gerekir:
 
 - DHCP
@@ -100,7 +100,7 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 
 - [Android için Visual Studio Öykünücüsü’nde Sorun Giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Hyper-V gereksinimleri
+## <a name="HyperV"></a> Hyper-V gereksinimleri
  BIOS'u Hyper-V gereksinimleri
 
  Bilgisayarınızın BIOS aşağıdaki gereksinimleri desteklemesi gerekir ve etkinleştirilmesi gerekir:
@@ -133,12 +133,12 @@ Android için Visual Studio öykünücü Hyper-V sanallaştırma teknolojisini W
 
  Kendiniz bir gruba el ile eklemek için yerel kullanıcılar ve Gruplar ek bileşenini açın.
 
-##  <a name="BootableVHD"></a> Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor
+## <a name="BootableVHD"></a> Önyüklenebilir bir VHD'den öykünücüyü çalıştırma desteklenmiyor
  Önyüklenebilir bir VHD'den Windows çalışırken bir uygulamayı Android için Visual Studio öykünücü üzerinde çalıştırmayı denerseniz öykünücü genellikle başlaması birkaç dakika sürer veya başlatılamıyor. Öykünücü başlatmak başarısız olduğunda, aşağıdaki iletiyi görürsünüz: Uygulama dağıtımı başarısız oldu. Lütfen yeniden deneyin.
 
  Bu yapılandırma desteklenmez. İlgili sorunlar hakkında daha fazla bilgi için bkz: [Android için Visual Studio öykünücü sorun giderme](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-##  <a name="Files"></a> Hyper-V sıkıştırılmamış ve şifrelenmemiş dosyaları gerektirir.
+## <a name="Files"></a> Hyper-V sıkıştırılmamış ve şifrelenmemiş dosyaları gerektirir.
  Bir sabit sürücüde NTFS dosya sistemi ile yapılandırılmış Hyper-V tarafından kullanılan sanal sabit disk dosyalarını sıkıştırılmamış ve şifrelenmemiş. Aşağıdaki dizinler sıkıştırılmış veya şifrelenmiş değil, emin olun:
 
 - %localappdata%\Microsoft\XDE

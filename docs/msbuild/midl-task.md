@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071063"
 ---
 # <a name="midl-task"></a>MIDL görevi
 Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*. Daha fazla bilgi için [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -39,7 +39,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 ## <a name="parameters"></a>Parametreler
  Aşağıdaki parametreleri açıklar **MIDL** görev. Çoğu görev parametreleri ve parametrelerin birkaç kümeleri bir komut satırı seçeneğine karşılık gelir.
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -47,7 +47,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/I** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -55,7 +55,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -63,7 +63,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/app_config** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -71,7 +71,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/cstub** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz: **ServerStubFile** bu tablodaki parametresi.
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -79,7 +79,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/cpp_opt** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -95,7 +95,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/char** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -103,7 +103,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/dlldata** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -119,7 +119,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Error** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -127,7 +127,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Error ayırma** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -135,7 +135,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Error bounds_check** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -143,7 +143,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Error enum** komut satırı Yardımı seçeneğinde (**/?**) için *midl.exe'yi*.
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -151,7 +151,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Error ref** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -159,7 +159,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Error stub_data** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -174,7 +174,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Client** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -189,7 +189,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/Server** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -197,7 +197,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/oicf** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -205,7 +205,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/notlb** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -213,7 +213,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/h** veya **/header** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -221,7 +221,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/no_def_idir** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -229,7 +229,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/iid** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **LocaleID**
+- **LocaleID**
 
      İsteğe bağlı **int** parametresi.
 
@@ -237,7 +237,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/lcid** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz: [yerel ayar tanımlayıcılarını](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -245,7 +245,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/mktyplib203** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz [ODL FILE söz dizimiyle](/previous-versions/windows/desktop/automat/odl-file-syntax) MSDN Web sitesinde.
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -253,7 +253,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/out** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -261,7 +261,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/D** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz **UndefinePreprocessorDefinitions** bu tablodaki parametresi.
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -269,7 +269,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/proxy** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -277,7 +277,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/o** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -285,13 +285,13 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/sstub** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz **ClientStubFile** bu tablodaki parametresi.
 
--   **Kaynak**
+- **Kaynak**
 
      Gerekli `ITaskItem[]` parametresi.
 
      Kaynak dosyaları boşluklarla ayrılmış bir listesini belirtir.
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -309,7 +309,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/ZP** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). **/ZP** seçenektir eşdeğer **/paketi** seçeneği ve eski **/ hizalama** seçeneği.
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      İsteğe bağlı **Boole** parametresi.
 
@@ -317,7 +317,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/no_warn** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      İsteğe bağlı `Boolean` parametresi.
 
@@ -325,7 +325,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/nologo** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -342,13 +342,13 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/env** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      İsteğe bağlı `String` parametresi.
 
      Bu görev için izleme günlüklerinin depolandığı Ara dizini belirtir.
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -363,7 +363,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/newtlb** ve **/oldtlb** seçeneklerini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      İsteğe bağlı **dize** parametresi.
 
@@ -371,7 +371,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/TLB** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      İsteğe bağlı **String []** parametresi.
 
@@ -379,7 +379,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/U** seçeneğini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz **PreprocessorDefinitions** bu tablodaki parametresi.
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      İsteğe bağlı `Boolean` parametresi.
 
@@ -387,7 +387,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **/ robust** ve **/no_robust** seçeneklerini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **WarnAsError**
+- **WarnAsError**
 
      İsteğe bağlı `Boolean` parametresi.
 
@@ -397,7 +397,7 @@ Microsoft arabirim tanımı dili (MIDL) derleyici aracı sarmalar *midl.exe'yi*.
 
      Daha fazla bilgi için **wx** seçeneklerini [MIDL komut satırı başvurusu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Ayrıca bkz **WarningLevel** bu tablodaki parametresi.
 
--   **WarningLevel**
+- **WarningLevel**
 
      İsteğe bağlı **dize** parametresi.
 

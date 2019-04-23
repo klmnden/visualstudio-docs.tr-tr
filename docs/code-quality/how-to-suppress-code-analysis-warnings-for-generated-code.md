@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066526"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Nasıl yapılır: Üretilen Kod İçin Kod Analizi Uyarılarını Gizleme
 Yönetilen kod derleyiciler genellikle hızlı kod geliştirilmesini sağlamak üzere bir projeye eklenen kod oluşturur. Ayrıca, geliştiriciler genellikle üçüncü taraf araçları uygulamaları hızla geliştirmenizi yardımcı olması için kullanın. Bu araçlar ayrıca projesine eklenen kod oluşturur.
@@ -27,8 +27,8 @@ Yönetilen kod derleyiciler genellikle hızlı kod geliştirilmesini sağlamak �
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Bir projedeki üretilen kod için uyarıları bastırmak için
 
-1.  Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.
+1. Çözüm Gezgini'nde projeye sağ tıklayın ve ardından **özellikleri**.
 
-2.  Tıklayın **Kod Analizi**.
+2. Tıklayın **Kod Analizi**.
 
-3.  Seçin **üretilen koddan gelen sonuçları Gizle** onay kutusu.
+3. Seçin **üretilen koddan gelen sonuçları Gizle** onay kutusu.

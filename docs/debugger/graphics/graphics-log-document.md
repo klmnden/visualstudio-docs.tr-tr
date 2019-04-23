@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: aed2acd4dbf921d99bcefe2e74575401fc01c7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101330"
 ---
 # <a name="graphics-log-document"></a>Grafik Günlük Belgesi
 Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalışırken oluşan bir grafik olaylarını kaydıdır. Kaydedilen sonra Visual Studio grafik Çözümleyicisi aygıtını işleme ve performans sorunlarını tanılama günlüğüne inceleyebilirsiniz.
@@ -33,11 +33,11 @@ Grafik günlük belgesi uygulamanızı grafik Tanılama oturumu altında çalı�
 
 #### <a name="to-inspect-a-frame"></a>Bir çerçeveyi incelemek için
 
--   İçinde **çerçeve listesi**, incelemek istediğiniz çerçeveyi seçin. İşleme hedefi çıktısı grafik günlük belgesi üst kısmında seçilen çerçevenin görüntülemek için güncelleştirilir.
+- İçinde **çerçeve listesi**, incelemek istediğiniz çerçeveyi seçin. İşleme hedefi çıktısı grafik günlük belgesi üst kısmında seçilen çerçevenin görüntülemek için güncelleştirilir.
 
 #### <a name="to-inspect-a-pixel"></a>Bir pikselin incelemek için
 
--   Grafik günlük belgesi üst kısmında, işleme hedefi çıktısı istediğiniz piksel seçin. Bir pikselin seçildiğinde, kullanabileceğiniz **grafik piksel geçmişi** seçilen piksel hakkında ayrıntılı bilgi görüntülemek için pencere. Daha fazla bilgi için [piksel geçmişi](graphics-pixel-history.md).
+- Grafik günlük belgesi üst kısmında, işleme hedefi çıktısı istediğiniz piksel seçin. Bir pikselin seçildiğinde, kullanabileceğiniz **grafik piksel geçmişi** seçilen piksel hakkında ayrıntılı bilgi görüntülemek için pencere. Daha fazla bilgi için [piksel geçmişi](graphics-pixel-history.md).
 
 ## <a name="playback-machine"></a>Kayıttan yürütme makinesi
  Ayrıca sağ üst köşesinde görüntülenen **çerçeve listesi** olduğu **kayıttan yürütme makinesi**. Kayıttan yürütme makinesi, bir makine ya da grafik olaylarını bir grafik günlüğü dosyasından daha yeni bir grafik Tanılama oturumu sırasında kayıttan yürütmek için kullanılan cihaz ' dir. Yakalanan olaylar kayıttan yürütmek için geliştirme makinenizi yerine farklı bir cihaz kullanarak tarafından sorun oluştuğu yürütme ortamı daha doğru bir şekilde üretebileceği — Örneğin, farklı grafik donanımının veya sürücüleri olan bir makine kullanabilirsiniz. Geliştirme makinenizde kullanan olanları veya diğer tür cihazlar, bir tablet ARM tabanlı Windows RT veya Windows Phone cihazı gibi.

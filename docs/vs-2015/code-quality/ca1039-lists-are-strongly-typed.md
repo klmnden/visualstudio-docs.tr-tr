@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097121"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listeler kesin türdedir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "54773800"
 ## <a name="cause"></a>Sebep
  Ortak veya korumalı tür uygular <xref:System.Collections.IList?displayProperty=fullName> ancak bir veya daha fazlasını için türü kesin belirlenmiş bir yöntem sağlamaz:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Kural Tanımı
  Bu kural gerektirir <xref:System.Collections.IList> kesin sağlamak için uygulamaları, böylece kullanıcılar bağımsız değişkenleri atamaları gerekli değildir üyeleri yazılan <xref:System.Object?displayProperty=fullName> arabirim tarafından sağlanan işlevselliği kullandığı zaman yazın. <xref:System.Collections.IList> Arabirimi dizin tarafından erişilebilen bir nesne koleksiyonları tarafından uygulanır. Bu kural, türün uyguladığı varsayar <xref:System.Collections.IList> değerinden daha güçlü bir türün örneklerinin bir koleksiyonunu yönetmek için bunu yapar <xref:System.Object>.

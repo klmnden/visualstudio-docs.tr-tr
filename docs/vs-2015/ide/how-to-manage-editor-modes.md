@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095548"
 ---
 # <a name="how-to-manage-editor-modes"></a>Nasıl yapılır: Düzenleyici modlarını yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,22 +45,22 @@ Visual Studio Kod Düzenleyicisi çeşitli görüntüleme modlarında görüntü
   
 #### <a name="to-enable-full-screen-mode"></a>Tam ekran modunu etkinleştirmek için  
   
--   Girin ya da çıkmak için ALT + SHIFT + ENTER tuşlarına basın **tam ekran** modu.  
+- Girin ya da çıkmak için ALT + SHIFT + ENTER tuşlarına basın **tam ekran** modu.  
   
      --veya--  
   
--   Komutu Yürüt `View.Fullscreen` içinde **komut** penceresi.  
+- Komutu Yürüt `View.Fullscreen` içinde **komut** penceresi.  
   
 ## <a name="enabling-virtual-space-mode"></a>Sanal alan modu etkinleştirme  
  İçinde **sanal adres alanı** modu, her kod satırının sonunda boşluklar eklenir. Kodunuzu yanındaki tutarlı bir noktada açıklamaları yerleştirmek için bu seçeneği belirleyin.  
   
 #### <a name="to-enable-virtual-space-mode"></a>Sanal alan modu etkinleştirmek için  
   
-1.  Seçin **seçenekleri** gelen **Araçları** menüsü.  
+1. Seçin **seçenekleri** gelen **Araçları** menüsü.  
   
-2.  Genişletin **metin düzenleyici** klasöründe ve **tüm diller** bu seçeneği genel olarak ayarlayın ya da belirli bir dil klasörü seçin. (Örneğin, yalnızca Visual Basic'te satır numaralarını etkinleştirmek için temel, metin düzenleyici seçenekleri seçin.)  
+2. Genişletin **metin düzenleyici** klasöründe ve **tüm diller** bu seçeneği genel olarak ayarlayın ya da belirli bir dil klasörü seçin. (Örneğin, yalnızca Visual Basic'te satır numaralarını etkinleştirmek için temel, metin düzenleyici seçenekleri seçin.)  
   
-3.  Seçin **genel** seçenekleri altında **ayarları**seçin **sanal boşluğu etkinleştir**.  
+3. Seçin **genel** seçenekleri altında **ayarları**seçin **sanal boşluğu etkinleştir**.  
   
     > [!NOTE]
     >  **Sanal adres alanı** etkin **sütun seçimi** modu. Zaman **sanal adres alanı** modu etkin değil, ekleme noktasını bir satır sonundan sonraki ilk karakteri için doğrudan taşır.  

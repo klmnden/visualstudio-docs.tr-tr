@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094560"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Kodlanmış UI Testleriyle SharePoint 2010 Uygulamalarını Test Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ Kodlanmış UI testleri içindeki bir SharePoint uygulaması da dahil olmak üze
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Kodlanmış UI testleri hakkında başka neleri bilmeliyim?  
  Kodlanmış UI testleri kullanmanın avantajları hakkında daha fazla bilgi için bkz: [kullanım UI Otomasyon için Test kodunuzu](../test/use-ui-automation-to-test-your-code.md) ve [Visual Studio 2012 – bölüm 5 otomatikleşen sistem testleri ile sürekli teslimat testi](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
  **Notlar**  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") SharePoint uygulamaları için kodlanmış UI testleri yalnızca SharePoint 2010 ile desteklenir.  
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") SharePoint uygulamaları için kodlanmış UI testleri yalnızca SharePoint 2010 ile desteklenir.  
   
--   ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") Visio ve PowerPoint 2010, SharePoint uygulamanızın denetimlerinde desteği desteklenmiyor.  
+- ![Prerequsite](../test/media/prereq.png "önkoşul uyarılarını gözardı et") Visio ve PowerPoint 2010, SharePoint uygulamanızın denetimlerinde desteği desteklenmiyor.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>SharePoint uygulamanız için kodlanmış UI testi oluşturma  
  [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) , SharePoint 2010 uygulamaları için diğer uygulama türleri için testleri oluşturma ile aynıdır. Kayıt ve kayıttan yürütme, Web'den düzenlemeyi arabirimindeki tüm denetimler için desteklenir. Kategorileri ve web bölümleri seçme arabirimi, tüm standart web denetimler bulunur.  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  Eylemler boş olmayan hücre kaydetmekte olduğunuz sonra çünkü kaydı biraz daha karmaşık alır bir hücre için metni ekleme şu anda yeni bir \<div > denetimi hücrenin alt olarak eklenir. Yeni \<div > girdiğiniz metin denetimi içerir. Kaydedici eylemleri yeni kaydetmek gereken \<div > denetimi; ancak, çünkü olamaz yeni \<div > Denetim yok kadar test girildikten sonra. Bu sorunu uyum sağlamak için aşağıdaki kod değişikliklerini el ile yapmalısınız.  
   
-1.  Hücre başlatma için gidin ve olun `RowIndex` ve `ColumnIndex` birincil özellikleri:  
+1. Hücre başlatma için gidin ve olun `RowIndex` ve `ColumnIndex` birincil özellikleri:  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  Bulma `HtmlDiv` alt hücrenin:  
+2. Bulma `HtmlDiv` alt hücrenin:  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  Kod bir fare çift tıklatın için eylem ekleme `HtmlDiv`:  
+3. Kod bir fare çift tıklatın için eylem ekleme `HtmlDiv`:  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  Metni ayarlamak için kod ekleme `TextArea`:  
+4. Metni ayarlamak için kod ekleme `TextArea`:  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>Silverlight web bölümleri test etme  
   
-1.  Fiddler'ı başlatın.  
+1. Fiddler'ı başlatın.  
   
-2.  Tarayıcı önbelleğini temizleyin. Silverlight UI Otomasyon Yardımcısı DLL içeren XAP dosyası genellikle önbelleğe alındığından, bu gereklidir. Biz tarayıcı önbelleğini temizlemek için değiştirilen XAP dosyası çekilir emin olmanız gerekir.  
+2. Tarayıcı önbelleğini temizleyin. Silverlight UI Otomasyon Yardımcısı DLL içeren XAP dosyası genellikle önbelleğe alındığından, bu gereklidir. Biz tarayıcı önbelleğini temizlemek için değiştirilen XAP dosyası çekilir emin olmanız gerekir.  
   
-3.  Web sayfasını açın.  
+3. Web sayfasını açın.  
   
-4.  Kaydediciyi başlatmak ve bir normal web uygulamasını test etmek için yaptığınız gibi kod üretebilirsiniz.  
+4. Kaydediciyi başlatmak ve bir normal web uygulamasını test etmek için yaptığınız gibi kod üretebilirsiniz.  
   
-5.  Oluşturulan kodun Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll başvuran onaylamalıdır.  
+5. Oluşturulan kodun Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll başvuran onaylamalıdır.  
   
      Daha fazla bilgi için [UI testi SharePoint 2010 ile Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   

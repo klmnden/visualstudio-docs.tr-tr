@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099552"
 ---
 # <a name="create-a-custom-debug-engine"></a>Bir özel hata ayıklama altyapısı oluşturma
 Hata ayıklama altyapısı (DE), belirli çalışma zamanı mimarileri hata ayıklamasını sağlayan bir bileşendir. Genellikle çalışma zamanı ortam başına yalnızca bir DE uygulama yok.
@@ -29,15 +29,15 @@ Hata ayıklama altyapısı (DE), belirli çalışma zamanı mimarileri hata ayı
 
  Bir DE oluşturma, aşağıdaki adımlardan oluşur:
 
-1.  Bir DE Visual Studio ile kaydetme
+1. Bir DE Visual Studio ile kaydetme
 
-2.  Bir program görüntüde hata ayıklamayı etkinleştir
+2. Bir program görüntüde hata ayıklamayı etkinleştir
 
-3.  Yürütme denetimi ve durum değerlendirme uygulayın
+3. Yürütme denetimi ve durum değerlendirme uygulayın
 
-4.  Olayları gönderme
+4. Olayları gönderme
 
-5.  Sonlandırma ve ayırma ayarlama
+5. Sonlandırma ve ayırma ayarlama
 
 ## <a name="in-this-section"></a>Bu bölümde
  [Bir özel hata ayıklama altyapısını kaydetme](../../extensibility/debugger/registering-a-custom-debug-engine.md) kullanılabilmesi için Visual Studio ile hata ayıklama altyapısı kaydetmek için gereken adımları açıklar.

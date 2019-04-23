@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108743"
 ---
 # <a name="filtering-report-views"></a>Rapor Görünümlerini Filtreleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
   
 #### <a name="to-create-a-profiler-report-filter"></a>Bir profil oluşturucu rapor filtresi oluşturmak için  
   
-1.  Performans Raporu Görünüm Filtresi penceresi görüntülenmiyorsa, tıklayın **Göster filtre** performans rapor görünümü araç.  
+1. Performans Raporu Görünüm Filtresi penceresi görüntülenmiyorsa, tıklayın **Göster filtre** performans rapor görünümü araç.  
   
      Performans Raporu Görünüm filtresi bir tablodur. Tablodaki her satır bir filtre yan tümcesi temsil eder. Bir filtre için istediğiniz sayıda yan tümce ekleyebilirsiniz.  
   
-2.  Filtre eklemek istediğiniz her yan tümce için bir satır aşağıdaki alanlarda değerleri girin veya seçin.  
+2. Filtre eklemek istediğiniz her yan tümce için bir satır aşağıdaki alanlarda değerleri girin veya seçin.  
   
     |Alan|Açıklama|  
     |-----------|-----------------|  
@@ -44,7 +44,7 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
     |**İşleci**|Alan ve değer arasında yan tümcesinde istediğiniz ilişkiyi belirtir bir işleç seçin.<br /><br /> = Eşittir<br /><br /> <> Eşit değildir<br /><br /> < Küçüktür<br /><br /> > Büyüktür<br /><br /> < = küçüktür veya eşittir<br /><br /> > = büyüktür veya eşittir|  
     |**Değer**|Aranacak bir değer girin veya seçin. Bazı alanları, alan için kullanılabilen değerleri listeler.|  
   
-3.  
+3. 
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Bir profil oluşturucu rapor filtresi işaretleri rapor görünümünde oluşturmak için  
   
@@ -66,33 +66,33 @@ Profil oluşturma performans raporu görünümlerde görüntülenmesi ve rapor d
   
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Bir dosyadan varolan bir filtreyi yüklemek için  
   
-1.  Performans rapor görünümü araç çubuğunda **içeri aktarma filtre**.  
+1. Performans rapor görünümü araç çubuğunda **içeri aktarma filtre**.  
   
      **Yük filtre** iletişim kutusu görüntülenir.  
   
-2.  Filtre (.vspf) dosyası yüklemek için konum ve dosya adını belirtin.  
+2. Filtre (.vspf) dosyası yüklemek için konum ve dosya adını belirtin.  
   
 #### <a name="to-execute-a-filter"></a>Bir filtre yürütmek için  
   
--   Performans rapor görünümü araç çubuğunda **yürütme filtre**.  
+- Performans rapor görünümü araç çubuğunda **yürütme filtre**.  
   
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Yürütülmesi çok uzun sürecek bir filtre durdurmak için  
   
--   Performans rapor görünümü araç çubuğunda **Durdur filtre**.  
+- Performans rapor görünümü araç çubuğunda **Durdur filtre**.  
   
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Rapor görünümünde filtreyi kaldırmak için  
   
-1.  Performans Raporu Görünüm filtresi yan tümcelerinde satırlarını silin.  
+1. Performans Raporu Görünüm filtresi yan tümcelerinde satırlarını silin.  
   
-2.  Performans rapor görünümü araç çubuğunda **yürütme filtre**.  
+2. Performans rapor görünümü araç çubuğunda **yürütme filtre**.  
   
 #### <a name="to-save-a-filter-to-a-file"></a>Bir filtre bir dosyaya kaydetmek için  
   
-1.  Performans rapor görünümü araç çubuğunda **dışarı aktarma filtre**.  
+1. Performans rapor görünümü araç çubuğunda **dışarı aktarma filtre**.  
   
      **Kaydet filtre** iletişim kutusu görüntülenir.  
   
-2.  Filtre (.vspf) dosyası kaydetmek için konum ve dosya adını belirtin.  
+2. Filtre (.vspf) dosyası kaydetmek için konum ve dosya adını belirtin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Araçları Rapor Görünümlerini Özelleştirme](../profiling/customizing-performance-tools-report-views.md)

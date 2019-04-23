@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23f3c2677f1e99a80b5a3f05d1f6f4f69294e27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092363"
 ---
 # <a name="debugger-security"></a>Hata Ayıklama Güvenliği
 Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan hata ayıklama yapılırken erişemeyecek çok geniş powers sağlar. Kötü amaçlı bir hata ayıklayıcı hataları ayıklanmakta olan makinede yaygın zarar başını.
@@ -59,11 +59,11 @@ Başka bir işlem hata ayıklama olanağı, aksi takdirde, özellikle de uzaktan
 ### <a name="web-services-debugging-security"></a>Güvenlik hata ayıklamasını web Hizmetleri
  Yerel olarak hata ayıklama daha güvenlidir, ancak sonra büyük olasılıkla sahip olmadığınız [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] web sunucusunda yüklüyse, yerel hata ayıklama pratik olmayabilir. Genel olarak, Web hizmetlerinde hata ayıklama işlemi, uzaktan, geliştirme sırasında bu nedenle uzaktan hata ayıklama güvenlik önerilerini de hata ayıklama Web Hizmetleri için geçerli dışında gerçekleştirilir. Ek en iyi yöntemlerden bazıları aşağıda verilmiştir. Daha fazla bilgi için [hata ayıklama XML Web Hizmetleri](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
 
--   Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.
+- Tehlikede bir Web sunucusunda hata ayıklama etkinleştirmeyin.
 
--   Web sunucusu güvenli hata ayıklama öncesinde bildiğinizden emin olun. Güvenli olduğundan emin değilseniz, hata ayıklama değil.
+- Web sunucusu güvenli hata ayıklama öncesinde bildiğinizden emin olun. Güvenli olduğundan emin değilseniz, hata ayıklama değil.
 
--   Internet'te kullanıma sunulan bir Web hizmeti hata ayıklaması yapıyorsanız özellikle dikkatli olun.
+- Internet'te kullanıma sunulan bir Web hizmeti hata ayıklaması yapıyorsanız özellikle dikkatli olun.
 
 ### <a name="external-components"></a>Dış bileşenler
  Özellikle kod yazmadı, programınızı etkileşimde dış bileşenler güven durumunu unutmayın. Ayrıca bileşenlerinin unutmayın, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] veya hata ayıklayıcı kullanabilirsiniz.

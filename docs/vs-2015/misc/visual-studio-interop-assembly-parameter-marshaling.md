@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105079"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio birlikte çalışma bütünleştirilmiş kodu parametresi hazırlama
 Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod tarafından çağrılmak gerekebilir. Genellikle, yöntem bağımsız değişkenleri dönüştürülmüş veya otomatik olarak birlikte çalışma sıralayıcısı göre sıralanır. Ancak, bazen bağımsız değişkenleri basit bir şekilde dönüştürülemez. Bu gibi durumlarda birlikte çalışma derlemesi yöntemi prototip parametreleri COM işlev parametrelerini mümkün olduğunca yakın eşleştirmek için kullanılır. Daha fazla bilgi için [birlikte çalışma hazırlama](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -28,11 +28,11 @@ Yönetilen kodda yazılır VSPackages çağrı yapma veya yönetilmeyen COM kod 
   
  Her yöntem için başvuru belgeleri üç ilgili bölümleri içerir:  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM işlev prototipi.  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM işlev prototipi.  
   
--   Birlikte çalışma derlemesi yöntemi prototipi.  
+- Birlikte çalışma derlemesi yöntemi prototipi.  
   
--   COM parametreleri ve her kısa bir açıklamasını listesi.  
+- COM parametreleri ve her kısa bir açıklamasını listesi.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>İki prototip arasındaki farklar arayın  
  COM arabirimi içinde belirli bir tür tanımı hem de aynı türden tanımı uyuşmazlıklarını çoğu birlikte çalışabilirlik sorunlarını türetilmesi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] birlikte çalışma bütünleştirilmiş kodları. Örneğin, geçirme özelliği fark düşünün bir `null` [out] parametresi değeri. İki prototip arasındaki farklar arayın ve geçirilen veriler için kendi ayrımlar göz önünde bulundurun gerekir.  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  Geçirmek için aşağıdaki yöntemlerden bilinen `IUnknown` nesne işaretçileri türü <xref:System.IntPtr>. Bunları, bu bölümde açıklanan şekilde işleyin.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>[Out] parametreleri isteğe bağlı  
  [Out] tanımlanan parametreler için konum veri türü (`int`, `object`, vb.) COM arabirimi, ancak tanımlanmış aynı veri türü bir dizi olarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] birlikte çalışma derlemesi yöntemi prototip.  

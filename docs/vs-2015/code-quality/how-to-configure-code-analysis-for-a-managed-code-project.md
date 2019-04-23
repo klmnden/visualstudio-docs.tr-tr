@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104323"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Nasıl yapılır: Yönetilen Kod Projesi İçin Kod Analizini Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ ms.locfileid: "54790897"
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>.NET Framework projesi için bir kural yapılandırmak için  
   
-1.  İçinde **Çözüm Gezgini**, projeye tıklayın.  
+1. İçinde **Çözüm Gezgini**, projeye tıklayın.  
   
-2.  Üzerinde **Çözümle** menüsünde tıklatın **için Kod Analizi yapılandırma** *ProjectName*.  
+2. Üzerinde **Çözümle** menüsünde tıklatın **için Kod Analizi yapılandırma** *ProjectName*.  
   
-3.  İçinde **yapılandırma** ve **Platform** listeleri, derleme yapılandırması ve hedef platform'a tıklayın.  
+3. İçinde **yapılandırma** ve **Platform** listeleri, derleme yapılandırması ve hedef platform'a tıklayın.  
   
-4.  Seçili yapılandırma kullanarak proje oluşturulan her zaman, Kod Analizi çalıştırmak için seçin **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** onay kutusu. Ayrıca kod analizini el ile açıp çalıştırabilirsiniz **Çözümle** menü ve tıklayarak **kod çözümlemeyi Çalıştır** *ProjectName*.  
+4. Seçili yapılandırma kullanarak proje oluşturulan her zaman, Kod Analizi çalıştırmak için seçin **etkinleştir (code_analysıs sabitini tanımlar) derlemede kod analizini** onay kutusu. Ayrıca kod analizini el ile açıp çalıştırabilirsiniz **Çözümle** menü ve tıklayarak **kod çözümlemeyi Çalıştır** *ProjectName*.  
   
-5.  Varsayılan olarak, Kod Analizi uyarıları otomatik olarak dış araçları tarafından oluşturulan kodu raporlamaz. Üretilen koddan gelen uyarıları görüntülemek için temizleyin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
+5. Varsayılan olarak, Kod Analizi uyarıları otomatik olarak dış araçları tarafından oluşturulan kodu raporlamaz. Üretilen koddan gelen uyarıları görüntülemek için temizleyin **üretilen koddan gelen sonuçları Gizle** onay kutusu.  
   
     > [!NOTE]
     >  Bu seçenek hataları ve Uyarıları formları ve şablonlar görüntülendiğinde kod çözümleme hataları ve Uyarıları üretilen koddan gelen engellemez. Hem görüntüleyebilir ve bir form veya şablon için kaynak kodunu korumak.  
   
-6.  İçinde **bu kural kümesini Çalıştır** listesinde, aşağıdakilerden birini yapın:  
+6. İçinde **bu kural kümesini Çalıştır** listesinde, aşağıdakilerden birini yapın:  
   
-    -   Kullanmak istediğiniz bir kural kümesi tıklayın.  
+    - Kullanmak istediğiniz bir kural kümesi tıklayın.  
   
-    -   Tıklayın  **\<Gözat … >** var olan bir özel kural kümesini belirlemek için listesinde değil.  
+    - Tıklayın  **\<Gözat … >** var olan bir özel kural kümesini belirlemek için listesinde değil.  
   
-    -   Bir özel kural kümesi tanımlar.  
+    - Bir özel kural kümesi tanımlar.  
   
          Daha fazla bilgi için [özel kural kümeleri oluşturma](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   

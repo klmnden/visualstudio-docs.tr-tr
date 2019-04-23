@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108608"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Nasıl yapılır: Visual Studio Derleme İşlemini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Yapı işlemi bir dizi tarafından tanımlanan [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proje dosyanıza içe aktarılan .targets dosyaları. Microsoft.Common.targets, içeri aktarılan bu dosyaların bir yapı işleminde bazı noktalarda özel görevleri çalıştırmanıza olanak tanır şekilde genişletilebilir. Bu konu, genişletmek için kullanabileceğiniz iki yöntem açıklar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] derleme işlemi:
 
--   Microsoft.Common.targets içinde tanımlanan belirli önceden tanımlanmış hedefleri geçersiz kılma.
+- Microsoft.Common.targets içinde tanımlanan belirli önceden tanımlanmış hedefleri geçersiz kılma.
 
--   Microsoft.Common.targets içinde tanımlanan "DependsOn" özelliklerini geçersiz kılma.
+- Microsoft.Common.targets içinde tanımlanan "DependsOn" özelliklerini geçersiz kılma.
 
 ## <a name="overriding-predefined-targets"></a>Önceden tanımlanmış hedefleri geçersiz kılma
  Microsoft.Common.targets dosya önce ve sonra yapı işleminin ana hedeflerin bazıları adlı önceden tanımlanmış boş hedefleri kümesini içerir. Örneğin, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] çağrıları `BeforeBuild` ana önce hedef `CoreBuild` hedef ve `AfterBuild` sonra hedef `CoreBuild` hedef. Varsayılan olarak, Microsoft.common.targets'ı boş hedeflerin hiçbir şey yapma, ancak Microsoft.Common.targets içe aktaran bir proje dosyasında istediğiniz hedefler tanımlayarak kendi varsayılan davranışı geçersiz kılabilirsiniz. Bunu yaptığınızda kullanabilirsiniz [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] yapı işlemi hakkında daha fazla denetime size görevleri.
@@ -109,13 +109,13 @@ ms.locfileid: "59652169"
 
 #### <a name="to-override-a-dependson-property"></a>"DependsOn" özelliği geçersiz kılmak için
 
-1.  Önceden tanımlanmış bir "DependsOn" özelliği geçersiz kılmak istediğiniz Microsoft.Common.targets içinde tanımlayın. Yaygın olarak geçersiz kılınan "DependsOn" özelliklerinin bir listesi için aşağıdaki tabloya bakın.
+1. Önceden tanımlanmış bir "DependsOn" özelliği geçersiz kılmak istediğiniz Microsoft.Common.targets içinde tanımlayın. Yaygın olarak geçersiz kılınan "DependsOn" özelliklerinin bir listesi için aşağıdaki tabloya bakın.
 
-2.  Özellik veya özellikleri, proje dosyasının sonunda başka bir örneğini tanımlar. Özgün özelliği, örneğin `$(BuildDependsOn)`, yeni özellik de.
+2. Özellik veya özellikleri, proje dosyasının sonunda başka bir örneğini tanımlar. Özgün özelliği, örneğin `$(BuildDependsOn)`, yeni özellik de.
 
-3.  Önce veya sonra özellik tanımı özel hedeflerinizi tanımlayın.
+3. Önce veya sonra özellik tanımı özel hedeflerinizi tanımlayın.
 
-4.  Proje dosyası oluşturun.
+4. Proje dosyası oluşturun.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Yaygın olarak geçersiz kılınan "DependsOn" özellikleri
 

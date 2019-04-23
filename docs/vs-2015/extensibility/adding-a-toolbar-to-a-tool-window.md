@@ -11,12 +11,12 @@ ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
 caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe1aa2d105756ac6f727a54e431b8324176f7516
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077016"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Araç Penceresine Araç Çubuğu Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Bu izlenecek yol, araç penceresine araç ekleme işlemi gösterilmektedir.
   
 ## <a name="creating-a-toolbar-for-a-tool-window"></a>Araç çubuğu için araç penceresi oluşturma  
   
-1.  Adlı bir VSIX projesi oluşturun `TWToolbar` adlı iki menü komutu olan **TWTestCommand** ve adlı bir araç penceresi **TestToolWindow**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md) ve [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md). Araç penceresi şablonu eklemeden önce komut öğe şablonu eklemek gerekir.  
+1. Adlı bir VSIX projesi oluşturun `TWToolbar` adlı iki menü komutu olan **TWTestCommand** ve adlı bir araç penceresi **TestToolWindow**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md) ve [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md). Araç penceresi şablonu eklemeden önce komut öğe şablonu eklemek gerekir.  
   
-2.  TWTestCommandPackage.vsct semboller bölümüne bakın. GuidSymbol düğümünde guidTWTestCommandPackageCmdSet adlı bir araç çubuğu ve araç çubuğu grubu, şu şekilde bildirin.  
+2. TWTestCommandPackage.vsct semboller bölümüne bakın. GuidSymbol düğümünde guidTWTestCommandPackageCmdSet adlı bir araç çubuğu ve araç çubuğu grubu, şu şekilde bildirin.  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3.  Üst kısmındaki `Commands` bölümünde, oluşturun bir `Menus` bölümü. Ekleme bir `Menu` araç tanımlamak için.  
+3. Üst kısmındaki `Commands` bölümünde, oluşturun bir `Menus` bölümü. Ekleme bir `Menu` araç tanımlamak için.  
   
     ```xml  
     <Menus>  
@@ -59,7 +59,7 @@ Bu izlenecek yol, araç penceresine araç ekleme işlemi gösterilmektedir.
   
      Araç Çubukları alt menüler gibi iç içe olamaz. Bu nedenle, bir üst atama gerekmez. Ayrıca, kullanıcı araç çubukları taşıyabilirsiniz çünkü bir öncelikler gerekmez. Genellikle, ilk araç çubuğu yerleşimini programlı olarak tanımlanır, ancak kullanıcı tarafından sonraki değişiklikleri kalıcı.  
   
-4.  Grupları bölümünde araç için komutları içeren bir grup tanımlayın.  
+4. Grupları bölümünde araç için komutları içeren bir grup tanımlayın.  
   
     ```xml  
   
@@ -68,7 +68,7 @@ Bu izlenecek yol, araç penceresine araç ekleme işlemi gösterilmektedir.
     </Group>  
     ```  
   
-5.  Düğmeler bölümünde, mevcut düğmesi öğenin üst araç gruba değiştirin araç çubuğu görüntülenir.  
+5. Düğmeler bölümünde, mevcut düğmesi öğenin üst araç gruba değiştirin araç çubuğu görüntülenir.  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -86,20 +86,20 @@ Bu izlenecek yol, araç penceresine araç ekleme işlemi gösterilmektedir.
   
 ## <a name="adding-the-toolbar-to-the-tool-window"></a>Araç penceresine araç çubuğu ekleme  
   
-1.  İçinde TWTestCommandPackageGuids.cs aşağıdaki satırları ekleyin.  
+1. İçinde TWTestCommandPackageGuids.cs aşağıdaki satırları ekleyin.  
   
     ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
-2.  TestToolWindow.cs içinde aşağıdaki ekleme deyimini kullanarak.  
+2. TestToolWindow.cs içinde aşağıdaki ekleme deyimini kullanarak.  
   
     ```csharp  
     using System.ComponentModel.Design;  
     ```  
   
-3.  TestToolWindow oluşturucuda aşağıdaki satırı ekleyin.  
+3. TestToolWindow oluşturucuda aşağıdaki satırı ekleyin.  
   
     ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
@@ -107,13 +107,13 @@ Bu izlenecek yol, araç penceresine araç ekleme işlemi gösterilmektedir.
   
 ## <a name="testing-the-toolbar-in-the-tool-window"></a>Araç çubuğu araç penceresinde test etme  
   
-1.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio deneysel örneği görüntülenmesi gerekir.  
+1. Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio deneysel örneği görüntülenmesi gerekir.  
   
-2.  Üzerinde **görünüm / diğer Windows** menüsünde tıklatın **Test ToolWindow** araç penceresini görüntülemek için.  
+2. Üzerinde **görünüm / diğer Windows** menüsünde tıklatın **Test ToolWindow** araç penceresini görüntülemek için.  
   
      Hemen altındaki başlığı araç penceresi araç çubuğu (varsayılan simgesi gibi görünür) üst sol görmeniz gerekir.  
   
-3.  Araç çubuğunda iletiyi görüntülemek için simgeye tıklayın **TWTestCommandPackage içinde TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3. Araç çubuğunda iletiyi görüntülemek için simgeye tıklayın **TWTestCommandPackage içinde TWToolbar.TWTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç Çubuğu Ekleme](../extensibility/adding-a-toolbar.md)

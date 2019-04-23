@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094677"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>İş Akışı Tasarımcısında Klavye Kısayolları
 
@@ -57,13 +57,13 @@ Aşağıdaki liste, bir akış oluşturmak için klavye tarafından kullanılan 
 
 - Etkinlikleri bağlanmak için:
 
-    1.  Kaynak etkinliği için etkinlik sekmelerle seçin.
+    1. Kaynak etkinliği için etkinlik sekmelerle seçin.
 
-    2.  CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.
+    2. CTRL + E, hedef etkinliğe klavye odağı taşımak için gerekli sayıda M tuşuna basın.
 
-    3.  CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.
+    3. CTRL + E, seçime hedef etkinlik eklemek için S tuşuna basın.
 
-    4.  CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.
+    4. CTRL + E, bağlayıcı kaynaktan hedefe eklemek için F tuşuna basın.
 
 Etkinlikleri tarafından klavye bağlama hakkında notlar:
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094326"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Nasıl yapılır: Ekleme ve özellikler ve öğeler bir paketi paket Tasarımcısını kullanarak kaldırma
   Bir SharePoint çözüm oluşturduğunuzda, Visual Studio çözüm içindeki paket varsayılan SharePoint özelliklerini ekler. Son dağıtım öncesinde ekleyebilir ve SharePoint Proje öğeleri ve SharePoint paketini değiştirmek için özellikler kaldırın.
@@ -52,7 +52,7 @@ ms.locfileid: "56608103"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Paket Tasarımcısı ile SharePoint özelliklerini kaldırmak için
 
-1.  İçinde **paket öğeleri** listesinde, kaldırmak ve ardından istediğiniz öğeyi seçin **Kaldır** (<) düğmesini veya tercih **Tümünü Kaldır** düğmesine (<<) kaldırmak için tüm öğeler.
+1. İçinde **paket öğeleri** listesinde, kaldırmak ve ardından istediğiniz öğeyi seçin **Kaldır** (<) düğmesini veya tercih **Tümünü Kaldır** düğmesine (<<) kaldırmak için tüm öğeler.
 
      SharePoint öğeleri görünür **Çözümdeki öğelere** listesi.
 

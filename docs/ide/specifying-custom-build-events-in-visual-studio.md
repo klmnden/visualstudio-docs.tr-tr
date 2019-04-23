@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af4ac9e8dad60c28e5017c09f1f94ed7aaa00dfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101946"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Visual Studio'da özel derleme olayları belirtme
 
@@ -24,11 +24,11 @@ ms.locfileid: "55940613"
 
  Kullandığınız programlama diline hakkında ayrıntılı bilgi için aşağıdaki konulara bakın:
 
--   Visual Basic--[nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[nasıl yapılır: Derleme olayları belirtme (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C#ve F#--[nasıl yapılır: Derleme olayları belirtme (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#ve F#--[nasıl yapılır: Derleme olayları belirtme (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++--[derleme olayları belirtme](/cpp/ide/specifying-build-events).
+- Visual C++--[derleme olayları belirtme](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Sözdizimi
 

@@ -8,12 +8,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107585"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Nasıl yapılır: Adım yük düzeni için Adım Rampa Süresi özelliğini belirtme
 
@@ -30,15 +30,15 @@ ms.locfileid: "55916719"
 
 Adım yük düzeni, kullanıcı yükü arttıkça performansın nasıl değişeceğini görebileceğiniz şekilde yük testi yapılırken sunucu veya sunucular üzerindeki yükü artırmak için kullanılır. Örneğin kullanıcı yükü 2.000 kullanıcıya olarak sunucu veya sunucularınızın nasıl gerçekleştirmek görmek için aşağıdaki özelliklere sahip bir adım yükü düzenini kullanarak 10 saatlik yük testi çalıştırabilirsiniz:
 
--   İlk kullanıcı sayısı: 100
+- İlk kullanıcı sayısı: 100
 
--   En yüksek kullanıcı sayısı: 2000
+- En yüksek kullanıcı sayısı: 2000
 
--   Adım Süresi (saniye): 1800
+- Adım Süresi (saniye): 1800
 
--   Adım eğrisi süresi (saniye): 20
+- Adım eğrisi süresi (saniye): 20
 
--   Adım kullanıcısı sayısı: 100
+- Adım kullanıcısı sayısı: 100
 
 Bu ayarlar, kullanıcı yükü 100, 200, 300, 2.000 kullanıcıya kadar 30 dakika (1800 saniye) süresince yükleme testi vardır.
 
@@ -49,24 +49,24 @@ Bu ayarlar, kullanıcı yükü 100, 200, 300, 2.000 kullanıcıya kadar 30 dakik
 
 ## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Adım yük düzeni için Adım Rampa Süresi özelliği düzenlemek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
      **Yük Testi Düzenleyicisi** görünür. Yük testi ağacında görüntülenir.
 
-2.  Yük testi **senaryoları** senaryo düğümünü Adım Rampa belirtmek istediğiniz zaman için klasörü açın.
+2. Yük testi **senaryoları** senaryo düğümünü Adım Rampa belirtmek istediğiniz zaman için klasörü açın.
 
-3.  Seçin **adım yükü düzenini** düğümü.
+3. Seçin **adım yükü düzenini** düğümü.
 
     > [!NOTE]
     > Yük düzeni senaryo için Adım yük düzeni olması gerekir. Yük düzeni, yüklü değilse, şu anda senaryosu ile ilişkili olan yük deseni türü görüntülenir. Daha fazla bilgi için [düzenleme yük desen modeli sanal kullanıcı etkinliği](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4.  Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
+4. Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
      Senaryonun kategoriler ve özellikler görüntülenir **özellikleri** penceresi.
 
-5.  Değerini **adım eğrisi süresi** özelliği tarafından belirtilen kullanıcıların kademeli olarak her adımda geçen saniye eklemek için birkaç girerek **adım kullanıcı sayısı** özelliği.
+5. Değerini **adım eğrisi süresi** özelliği tarafından belirtilen kullanıcıların kademeli olarak her adımda geçen saniye eklemek için birkaç girerek **adım kullanıcı sayısı** özelliği.
 
-6.  Özelliği değiştirmeyi bitirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Daha sonra yeni kullanarak yük testlerini çalıştırabilirsiniz **adım eğrisi süresi** değeri.
+6. Özelliği değiştirmeyi bitirdikten sonra seçin **Kaydet** üzerinde **dosya** menüsü. Daha sonra yeni kullanarak yük testlerini çalıştırabilirsiniz **adım eğrisi süresi** değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

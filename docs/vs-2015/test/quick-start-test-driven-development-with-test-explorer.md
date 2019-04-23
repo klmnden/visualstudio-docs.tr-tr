@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108990"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
  Test Gezgini Visual Studio'nun önceki sürümlerinde bulunan test pencerelerinin yerini almıştır. Yararları şunlardır:  
   
--   .NET, yönetilmeyen kod, veritabanı ve diğer tür testleri tek bir arabirim kullanarak çalıştırın.  
+- .NET, yönetilmeyen kod, veritabanı ve diğer tür testleri tek bir arabirim kullanarak çalıştırın.  
   
--   Kullanım birim test framework NUnit gibi tercih ettiğiniz veya MSTest çerçeveleri.  
+- Kullanım birim test framework NUnit gibi tercih ettiğiniz veya MSTest çerçeveleri.  
   
--   Gereksinim duyduğunuz tüm bilgileri tek bir pencerede bakın.  
+- Gereksinim duyduğunuz tüm bilgileri tek bir pencerede bakın.  
   
 ## <a name="using-test-explorer"></a>Test Gezgini'ni kullanma  
  ![Birim Test Gezgini gösteren tümünü Çalıştır düğmesini](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
@@ -37,13 +37,13 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
     Örneğin, bir test oluşturmak için MSTest Framework'ü kullanır:  
   
-   1.  Bir test projesi oluşturun.  
+   1. Bir test projesi oluşturun.  
   
         İçinde **yeni proje** iletişim kutusunda **Visual Basic**, **Visual C#**, veya **Visual C++** ve ardından **Test**.  
   
         Seçin **birim testi projesi**.  
   
-   2.  Her birim testini bir yöntem gibi yazın. Her test yönteminin önüne `[TestMethod]` özniteliği.  
+   2. Her birim testini bir yöntem gibi yazın. Her test yönteminin önüne `[TestMethod]` özniteliği.  
   
 2. Paralel test yürütme ile bireysel testler herhangi bir sırada çalıştırılan engelleyen bağımlılık varsa, açma ![ALIŞTIR&#95;parallelicon&#45;küçük](../test/media/ute-parallelicon-small.png "UTE_parallelicon küçük") araç çubuğundaki iki durumlu düğme. Bu durum, tüm testleri çalıştırmak için geçen süre önemli ölçüde azaltabilir.  
   
@@ -67,7 +67,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
 > [!NOTE]
 >  Hiçbir test görünmüyorsa, Test Gezgini'ni kullandığınız test çerçevesine bağlanmak için bir bağdaştırıcı yüklediğinizden emin olun. Daha fazla bilgi için [farklı test çerçevesini kullanma](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
-##  <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testlerini kullanma  
+## <a name="walkthrough"></a> İzlenecek yol: Bir yöntem geliştirmek için birim testlerini kullanma  
  Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edilmiş bir yöntem geliştirmeyi göstermektedir. Bunu diğer dillere ve NUnit gibi diğer test çerçevelerini kullanmak için kolayca uyarlayabilirsiniz. Daha fazla bilgi için [ABD farklı test çerçevesi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Testi ve yöntemi oluşturma  
@@ -76,7 +76,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 2. Bir Test projesi oluşturun.  
   
-   -   İçinde **yeni proje** iletişim kutusunda seçin **Visual C#**, **Test** seçip **birim testi projesi**.  
+   - İçinde **yeni proje** iletişim kutusunda seçin **Visual C#**, **Test** seçip **birim testi projesi**.  
   
         ![Yeni kod ve test projeleri](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -102,15 +102,15 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 4. Yöntemi testten oluşturun.  
   
-   1.  İmleci üzerine getirin `Rooter`, kısayol menüsünden seçin **Oluştur**, **yeni türü**.  
+   1. İmleci üzerine getirin `Rooter`, kısayol menüsünden seçin **Oluştur**, **yeni türü**.  
   
-   2.  İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte bu değer `MyMath`’dur.  
+   2. İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte bu değer `MyMath`’dur.  
   
-   3.  İmleci üzerine getirin `SquareRoot`, kısayol menüsünden seçin **Oluştur**, **metot taslağı**.  
+   3. İmleci üzerine getirin `SquareRoot`, kısayol menüsünden seçin **Oluştur**, **metot taslağı**.  
   
 5. Birim testini çalıştırın.  
   
-   1.  Üzerinde **Test** menüsünde seçin **birim testlerini Çalıştır**, **tüm testleri**.  
+   1. Üzerinde **Test** menüsünde seçin **birim testlerini Çalıştır**, **tüm testleri**.  
   
         Çözüm derlenir ve çalışır.  
   
@@ -130,7 +130,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Her değişiklikten sonra tüm sınamalardan başarılı olun  
   
-1.  İçinde `MyMath\Rooter.cs`, kodunu geliştirin `SquareRoot`:  
+1. İçinde `MyMath\Rooter.cs`, kodunu geliştirin `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -139,7 +139,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
      }  
     ```  
   
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      Kod derlenir ve test çalışır.  
   
@@ -149,7 +149,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Giriş aralığını genişletmek için testler ekleme  
   
-1.  Kodunuzun her durumda çalıştığından emin olmak için daha geniş bir girdi değerleri aralığını deneyen testler ekleyin.  
+1. Kodunuzun her durumda çalıştığından emin olmak için daha geniş bir girdi değerleri aralığını deneyen testler ekleyin.  
   
     > [!TIP]
     >  Geçen var olan testlerden geçilenleri değiştirmekten kaçının. Bunun yerine yeni testler ekleyin. Varolan testleri yalnızca kullanıcı gereksinimleri değiştiğinde değiştirin. Bu ilke, özel olarak, kod genişletmeye çalışırken mevcut işlevselliği kaybetmemenizi sağlamaya yardımcı olur.  
@@ -180,13 +180,13 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
     }  
     ```  
   
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      İlk test başarılı olsa da yeni test başarısız olur.  
   
      Hata noktasını bulmak için başarısız olan testi seçin ve ardından, Test Gezgini'nin alt bölümünde üst öğesi seçin **yığın izlemesi**.  
   
-3.  Neyin yanlış olabileceğini görmek için test altındaki yöntemi inceleyin. İçinde `MyMath.Rooter` sınıfında, kodu yeniden yazın:  
+3. Neyin yanlış olabileceğini görmek için test altındaki yöntemi inceleyin. İçinde `MyMath.Rooter` sınıfında, kodu yeniden yazın:  
   
     ```  
     public double SquareRoot(double input)  
@@ -202,13 +202,13 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
     }  
     ```  
   
-4.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+4. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      Şimdi iki test geçirin.  
   
 #### <a name="add-tests-for-exceptional-cases"></a>Olağanüstü durumlar için testler ekleme  
   
-1.  Negatif girişler için bir test ekleyin:  
+1. Negatif girişler için bir test ekleyin:  
   
     ```csharp  
     [TestMethod]  
@@ -227,15 +227,15 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
      }  
     ```  
   
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      Yöntem testte döngüye girer ve el ile iptal edilmelidir.  
   
-3.  Seçin **iptal**.  
+3. Seçin **iptal**.  
   
      Test 10 saniye sonra durur.  
   
-4.  Yöntem kodunu düzeltin:  
+4. Yöntem kodunu düzeltin:  
   
     ```csharp  
   
@@ -248,13 +248,13 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
     ...  
     ```  
   
-5.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+5. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      Tüm testler geçer.  
   
 #### <a name="refactor-without-changing-tests"></a>Testleri değiştirmeden yeniden düzenleme  
   
-1.  Kodu basitleştirin, ancak testleri değiştirmeyin.  
+1. Kodu basitleştirin, ancak testleri değiştirmeyin.  
   
     > [!TIP]
     >  A *yeniden düzenleme* daha iyi kod yapmak veya kodu anlamayı kolaylaştırmak için hedeflenen bir değişikliktir. Kod davranışını değiştirmek üzere tasarlanmamıştır ve bu nedenle testler değiştirilmez.  
@@ -283,7 +283,7 @@ Kodunuz pek çok aşama aşama geliştirme düzgün çalışmasını tutmaya yar
     }  
     ```  
   
-2.  Seçin **çalıştırması**.  
+2. Seçin **çalıştırması**.  
   
      Tüm testler hala başarılı.  
   

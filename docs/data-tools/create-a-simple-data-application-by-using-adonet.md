@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095691"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>ADO.NET kullanarak basit veri uygulaması oluşturma
 
@@ -31,9 +31,9 @@ Bu makalede, hızlı bir şekilde bir veritabanından veri almak için basit bir
 
 Uygulama oluşturmak için gerekir:
 
--   Visual Studio.
+- Visual Studio.
 
--   SQL Server Express LocalDB. SQL Server Express LocalDB yoksa, buradan yükleyebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. SQL Server Express LocalDB yoksa, buradan yükleyebilirsiniz [SQL Server Express indirme sayfası](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Windows Forms uygulaması oluşturma, düğmeleri ve diğer denetimleri formlarda projeye form denetimleri ve olay özelliklerini ayarlamak Ekle olduğunu varsayar. Bu görevler konusunda deneyimli değilseniz, tamamlamanızı öneririz [Görselle Başlarken C# ve Visual Basic](../ide/quickstart-visual-basic-console.md) bu kılavuza başlamadan önce konu.
 
@@ -69,11 +69,11 @@ Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Wind
 
 2. Üç sahip olacak şekilde iki Windows formunu projenize ekleyin ve ardından bunları aşağıdaki adlar verin:
 
-   -   **Gezinti**
+   - **Gezinti**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. Her form için aşağıdaki resimlerde metin kutularını, düğmeleri ve görüntülenen diğer denetimleri ekleyin. Her denetim için tabloların açıkladığı özellikleri ayarlayın.
 
@@ -124,21 +124,21 @@ Bu konu, alışık olduğunuz Visual Studio IDE temel işlevsellikle ve bir Wind
 
  Sağ tıklayarak bağlantı dizesini bulabilirsiniz **satış** veri bağlantısında **Sunucu Gezgini** seçip **özellikleri**. Bulun **ConnectionString** özelliği, ardından **Ctrl**+**A**, **Ctrl**+**C**  seçip dizesini panoya kopyalayın.
 
-1.  Kullanıyorsanız C#, **Çözüm Gezgini**, genişletme **özellikleri** projesi altındaki ve sonra düğümü **Settings.settings** dosya.
+1. Kullanıyorsanız C#, **Çözüm Gezgini**, genişletme **özellikleri** projesi altındaki ve sonra düğümü **Settings.settings** dosya.
     İçinde Visual Basic kullanıyorsanız, **Çözüm Gezgini**, tıklayın **tüm dosyaları göster**, genişletme **Projem** düğümünü ve ardından açın **Settings.settings** dosya.
 
-2.  İçinde **adı** sütun girin `connString`.
+2. İçinde **adı** sütun girin `connString`.
 
-3.  İçinde **türü** listesinden **(bağlantı dizesi)**.
+3. İçinde **türü** listesinden **(bağlantı dizesi)**.
 
-4.  İçinde **kapsam** listesinden **uygulama**.
+4. İçinde **kapsam** listesinden **uygulama**.
 
-5.  İçinde **değer** sütunu (olmadan herhangi bir dış tırnak işaretleri) bağlantı dizenizi girin ve ardından değişikliklerinizi kaydedin.
+5. İçinde **değer** sütunu (olmadan herhangi bir dış tırnak işaretleri) bağlantı dizenizi girin ve ardından değişikliklerinizi kaydedin.
 
 > [!NOTE]
 > Gerçek bir uygulamada, bağlantı dizesini açıklandığı gibi güvenli bir saklamalısınız [bağlantı dizeleri ve yapılandırma dosyalarını](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
-##  <a name="write-the-code-for-the-forms"></a>Formlar için kodu yazın
+## <a name="write-the-code-for-the-forms"></a>Formlar için kodu yazın
 
 Bu bölüm, formunuz işlevin kısa genel bakış bilgileri içerir. Ayrıca formunda bir düğmeye tıklandığında temel mantığını tanımlayan kodu sağlar.
 
@@ -180,6 +180,7 @@ NewCustomer formu mantığı tamamlamak için aşağıdaki adımları izleyin.
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ FillOrCancel formu mantığı tamamlamak için aşağıdaki adımları izleyin.
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

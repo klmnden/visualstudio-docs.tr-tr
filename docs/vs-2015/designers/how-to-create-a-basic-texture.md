@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076805"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Nasıl yapılır: Temel doku oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Bu belge temel bir doku oluşturmak için görüntü Düzenleyicisi nasıl yapı
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Doku boyutunu ayarlama  
+- Doku boyutunu ayarlama  
   
--   Ön ve arka plan renkleri ayarlama  
+- Ön ve arka plan renkleri ayarlama  
   
--   Alfa kanalını (saydam) kullanma  
+- Alfa kanalını (saydam) kullanma  
   
--   Kullanarak **dolgu** ve **elipsin** araçları  
+- Kullanarak **dolgu** ve **elipsin** araçları  
   
--   Aracı özelliklerini ayarlama  
+- Aracı özelliklerini ayarlama  
   
 ## <a name="creating-a-basic-texture"></a>Temel doku oluşturma  
  Görüntüleri ve oyunlarda veya uygulamalarda ilişkin dokular oluşturmak ve değiştirmek için görüntü Düzenleyicisi'ni kullanabilirsiniz.  

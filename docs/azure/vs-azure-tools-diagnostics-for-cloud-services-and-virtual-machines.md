@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095977"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Azure Cloud Services ve sanal makineler için tanılamayı ayarlama
 Bir Azure bulut hizmeti veya sanal makine sorunlarını gidermek, ihtiyacınız olduğunda, Visual Studio, daha kolay Azure Tanılama'yı ayarlamak için kullanabilirsiniz. Tanılama sistemi veri ve sanal makineler ve bulut hizmetinizi çalıştıran sanal makine örneği günlük verilerini yakalar. Tanılama verileri, seçtiğiniz bir depolama hesabına aktarılır. Azure'da günlüğe kaydetme Tanılama hakkında daha fazla bilgi için bkz [Azure App Service'te Web uygulamaları için tanılama günlüğünü etkinleştirme](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -154,6 +154,7 @@ Azure SDK 2.5 kullanıyorsanız ve özel bir veri kaynağı belirtmek istiyorsan
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Performans sayaçları
 Performans sayacı bilgileri, performans sorunlarını bulun, sistem ve uygulama performansını ayarlamanıza yardımcı olabilir. Daha fazla bilgi için [bir Azure uygulamasında performans sayaçları oluşturma ve kullanma](https://msdn.microsoft.com/library/azure/hh411542.aspx). Performans sayaçları yakalamak için seçin **etkinleştirme performans sayaçları aktarımını** onay kutusu. Artırmak ya da olay günlüklerini aktarımını depolama hesabınıza arasındaki süreyi azaltmak için değiştirme **aktarım süresi (dak)** değeri. İzlemek istediğiniz performans sayaçları için onay kutularını seçin.
 

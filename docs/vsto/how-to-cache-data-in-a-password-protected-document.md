@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074014"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Nasıl yapılır: Bir parola korumalı belgede veriyi önbelleğe alma
   Bir belge veya parola korumalı çalışma kitabı verileri önbelleğe veri eklerseniz, önbelleğe alınan verilerde yapılan değişiklikleri otomatik olarak kaydedilmez. Projenizdeki iki yöntemi geçersiz kılarak, önbelleğe alınan verilerde yapılan değişiklikleri kaydedebilirsiniz.
@@ -30,13 +30,13 @@ ms.locfileid: "56644529"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Parola ile korunan bir Word belgesinde verileri önbelleğe almak için
 
-1.  İçinde `ThisDocument` sınıfı, bir ortak alan veya özellik önbelleğe alınacak işaretleyin. Daha fazla bilgi için [veriyi önbelleğe alma](../vsto/caching-data.md).
+1. İçinde `ThisDocument` sınıfı, bir ortak alan veya özellik önbelleğe alınacak işaretleyin. Daha fazla bilgi için [veriyi önbelleğe alma](../vsto/caching-data.md).
 
-2.  Geçersiz kılma <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> yönteminde `ThisDocument` sınıfı ve belge korumayı kaldırın.
+2. Geçersiz kılma <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> yönteminde `ThisDocument` sınıfı ve belge korumayı kaldırın.
 
      Belge kaydedildiğinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] belgenin korumasını kaldırmak için bir fırsat vermek için bu yöntemi çağırır. Bu değişikliklerin kaydedilmesi için önbelleğe alınmış verilerin sağlar.
 
-3.  Geçersiz kılma <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> yönteminde `ThisDocument` sınıfı ve belge koruma yeniden uygulayın.
+3. Geçersiz kılma <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> yönteminde `ThisDocument` sınıfı ve belge koruma yeniden uygulayın.
 
      Belge kaydedildikten sonra [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] belge koruma uygulamak için bir fırsat vermek için bu yöntemi çağırır.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644529"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Parola korumalı bir Excel çalışma kitabında verileri önbelleğe almak için
 
-1.  İçinde `ThisWorkbook` sınıf veya biri `Sheet` *n* sınıfları, ortak alan veya özellik önbelleğe alınacak işaretleyin. Daha fazla bilgi için [veriyi önbelleğe alma](../vsto/caching-data.md).
+1. İçinde `ThisWorkbook` sınıf veya biri `Sheet` *n* sınıfları, ortak alan veya özellik önbelleğe alınacak işaretleyin. Daha fazla bilgi için [veriyi önbelleğe alma](../vsto/caching-data.md).
 
-2.  Geçersiz kılma <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> yönteminde `ThisWorkbook` sınıfı ve koruma çalışma kitabından kaldırın.
+2. Geçersiz kılma <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> yönteminde `ThisWorkbook` sınıfı ve koruma çalışma kitabından kaldırın.
 
      Çalışma kitabı kaydedildiğinde [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] çalışma kitabının korumasını kaldırmak için bir fırsat vermek için bu yöntemi çağırır. Bu değişikliklerin kaydedilmesi için önbelleğe alınmış verilerin sağlar.
 
-3.  Geçersiz kılma <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> yönteminde `ThisWorkbook` sınıfı ve belge koruma yeniden uygulayın.
+3. Geçersiz kılma <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> yönteminde `ThisWorkbook` sınıfı ve belge koruma yeniden uygulayın.
 
      Çalışma kitabı kaydedildikten sonra [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] çalışma kitabına korumayı uygulamak için bir fırsat vermek için bu yöntemi çağırır.
 

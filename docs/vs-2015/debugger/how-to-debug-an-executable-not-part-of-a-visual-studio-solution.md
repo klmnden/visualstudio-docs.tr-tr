@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068710"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Nasıl yapılır: Visual Studio çözümünün parçası olmayan yürütülebilir öğede hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Bazen, hata ayıklama olmayan yürütülebilir bir dosya isteyebilirsiniz parça
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Varolan bir yürütülebilir dosya için bir EXE projesi oluşturmak için  
   
-1.  Üzerinde **dosya** menüsünde tıklatın **açık** seçip **proje**.  
+1. Üzerinde **dosya** menüsünde tıklatın **açık** seçip **proje**.  
   
-2.  İçinde **Proje Aç** iletişim kutusu, açılan listeyi tıklatın **dosya adı** kutusunda ve seçin **tüm proje dosyaları**.  
+2. İçinde **Proje Aç** iletişim kutusu, açılan listeyi tıklatın **dosya adı** kutusunda ve seçin **tüm proje dosyaları**.  
   
-3.  Yürütülebilir dosyayı bulun ve tıklatın **Tamam**.  
+3. Yürütülebilir dosyayı bulun ve tıklatın **Tamam**.  
   
      Bu yürütülebilir dosya içeren geçici bir çözüm oluşturur.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Bir yürütülebilir dosya bir Visual Studio çözümüne aktarmak için  
   
-1.  Üzerinde **dosya** menüsünde **Proje Ekle**ve ardından **mevcut proje**.  
+1. Üzerinde **dosya** menüsünde **Proje Ekle**ve ardından **mevcut proje**.  
   
-2.  İçinde **Varolan Proje Ekle** iletişim kutusu, açılan listeyi tıklatın **dosya adı** kutusunda ve seçin **tüm proje dosyaları**.  
+2. İçinde **Varolan Proje Ekle** iletişim kutusu, açılan listeyi tıklatın **dosya adı** kutusunda ve seçin **tüm proje dosyaları**.  
   
-3.  Bulup yürütülebilir dosyayı seçin.  
+3. Bulup yürütülebilir dosyayı seçin.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
-5.  Yürütülebilir bir yürütme komutu seçerek Başlat **Başlat**, gelen **hata ayıklama** menüsü.  
+5. Yürütülebilir bir yürütme komutu seçerek Başlat **Başlat**, gelen **hata ayıklama** menüsü.  
   
     > [!NOTE]
     >  Programlama dillerinin tümü EXE projelerini desteklemez. Yükleme [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] bu özelliği kullanmak istiyorsanız.  

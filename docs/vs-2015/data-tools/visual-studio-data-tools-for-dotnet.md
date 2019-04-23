@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da5578321e9c637b12ffbb253a9c0d4c4f87dfe9
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110933"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>.NET için Visual Studio veri araçları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Visual Studio ve .NET Framework birlikte kapsamlı API ve araç veritabanlarına
   
 ## <a name="in-this-section"></a>Bu bölümde  
   
--   [ADO.NET kullanarak basit veri uygulaması oluşturma](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [ADO.NET kullanarak basit veri uygulaması oluşturma](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Yeni bağlantı ekleme](../data-tools/add-new-connections.md)  
+- [Yeni bağlantı ekleme](../data-tools/add-new-connections.md)  
   
--   [Yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md)  
+- [Yeni veri kaynağı ekleme](../data-tools/add-new-data-sources.md)  
   
--   [Visual Studio'daki Varlık Veri Modeli Araçları](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Visual Studio'daki Varlık Veri Modeli Araçları](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Visual Studio'daki veri kümesi araçları](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [Visual Studio'daki LINQ to SQL Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+- [Visual Studio'daki LINQ to SQL Araçları](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [Visual Studio'da verilere denetimler bağlama](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Visual Studio'da Windows Communication Foundation Hizmetleri ve WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Visual Studio'da veritabanları ve veri katmanı uygulamaları oluşturma ve yönetme](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [Visual Studio'da veritabanları ve veri katmanı uygulamaları oluşturma ve yönetme](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Veri erişimi hatalarında sorun giderme için ek kaynaklar](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da verilere erişime](../data-tools/accessing-data-in-visual-studio.md)

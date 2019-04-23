@@ -14,37 +14,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 589e6f5fd102cdd2a69bc63bf623142c14337678
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061443"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Nasıl yapılır: Bir SharePoint proje öğesi türü tanımlama
   Özel bir SharePoint proje öğesi oluşturmak istediğinizde bir proje öğesi türünü tanımlar. Daha fazla bilgi için [özel SharePoint proje öğesi türleri tanımlama](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
 ### <a name="to-define-a-project-item-type"></a>Bir proje öğesi türü tanımlama
 
-1.  Bir sınıf kitaplığı projesi oluşturun.
+1. Bir sınıf kitaplığı projesi oluşturun.
 
-2.  Aşağıdaki derlemelere başvurular ekleyin:
+2. Aşağıdaki derlemelere başvurular ekleyin:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Uygulayan bir sınıf oluşturma <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> arabirimi.
+3. Uygulayan bir sınıf oluşturma <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> arabirimi.
 
-4.  Sınıfına aşağıdaki öznitelikler ekleyin:
+4. Sınıfına aşağıdaki öznitelikler ekleyin:
 
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Bu öznitelik bulmak ve yüklemek Visual Studio sağlar, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> uygulaması. Geçirmek <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> özniteliği Oluşturucu türü.
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. Bu öznitelik bulmak ve yüklemek Visual Studio sağlar, <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> uygulaması. Geçirmek <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> özniteliği Oluşturucu türü.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Proje öğesi türü tanımında, bu öznitelik yeni proje öğesinin dize tanımlayıcısını belirtir. Biçimini kullanmanızı öneririz *şirket adı*. *özellik adı* tüm proje öğeleri benzersiz bir ada sahip olduğundan emin olun yardımcı olmak için.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Proje öğesi türü tanımında, bu öznitelik yeni proje öğesinin dize tanımlayıcısını belirtir. Biçimini kullanmanızı öneririz *şirket adı*. *özellik adı* tüm proje öğeleri benzersiz bir ada sahip olduğundan emin olun yardımcı olmak için.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Bu öznitelik bu proje öğesi için görüntülenecek simge belirtir **Çözüm Gezgini**. Bu öznitelik isteğe bağlıdır; sınıfı, uygulamazsanız Visual Studio, proje öğesi için varsayılan bir simge görüntüler. Bu öznitelik ayarlanırsa, bir simge ya da, bir derlemede gömülü olan bit eşlem tam olarak nitelenmiş adını geçirin.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Bu öznitelik bu proje öğesi için görüntülenecek simge belirtir **Çözüm Gezgini**. Bu öznitelik isteğe bağlıdır; sınıfı, uygulamazsanız Visual Studio, proje öğesi için varsayılan bir simge görüntüler. Bu öznitelik ayarlanırsa, bir simge ya da, bir derlemede gömülü olan bit eşlem tam olarak nitelenmiş adını geçirin.
 
-5.  Uygulamanızda <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> yöntemi, kullanım üyeleri *projectItemTypeDefinition* proje öğesi türü davranışını tanımlamak için parametre. Bu parametre bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> tanımlanan olaylara erişim sağlayan nesne <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> ve <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> arabirimleri. Proje öğesi türünü belirli bir örneğine erişmesi için tanıtıcı <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> gibi olayları <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> ve <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
+5. Uygulamanızda <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> yöntemi, kullanım üyeleri *projectItemTypeDefinition* proje öğesi türü davranışını tanımlamak için parametre. Bu parametre bir <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> tanımlanan olaylara erişim sağlayan nesne <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> ve <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> arabirimleri. Proje öğesi türünü belirli bir örneğine erişmesi için tanıtıcı <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> gibi olayları <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> ve <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
 
 ## <a name="example"></a>Örnek
  Aşağıdaki kod örneğinde nasıl basit bir proje öğesi türü tanımlayacağınızı gösterir. Bu proje öğesi türü için bir ileti yazar **çıkış** penceresi ve **hata listesi** penceresini bir kullanıcı bu türde bir proje öğesi projeye ekler.
@@ -57,9 +57,9 @@ ms.locfileid: "56639238"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek aşağıdaki derlemelere başvurular gerektirir:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Proje öğesi dağıtma
  Diğer geliştiricilerin, proje öğesini kullanmak için bir proje şablonu veya bir proje öğesi şablon oluşturun. Daha fazla bilgi için [öğe şablonları ve proje şablonları SharePoint Proje öğeleri için oluşturma](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

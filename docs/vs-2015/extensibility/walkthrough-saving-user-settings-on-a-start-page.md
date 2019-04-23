@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111161"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>İzlenecek yol: Kullanıcı Ayarlarını Başlangıç Sayfasına Kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,35 +37,35 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>Bu izlenecek yol için projeyi yapılandırmak için  
   
-1.  Başlangıç sayfası proje başlangıç sayfası proje şablonunu kullanarak açıklandığı gibi oluşturmak [bilgisayarınızı kendi başlangıç sayfası oluşturma](../misc/creating-your-own-start-page.md). Projeyi adlandırın **SaveMySettings**.  
+1. Başlangıç sayfası proje başlangıç sayfası proje şablonunu kullanarak açıklandığı gibi oluşturmak [bilgisayarınızı kendi başlangıç sayfası oluşturma](../misc/creating-your-own-start-page.md). Projeyi adlandırın **SaveMySettings**.  
   
-2.  İçinde **Çözüm Gezgini**, aşağıdaki derleme başvurularının StartPageControl projeye ekleyin:  
+2. İçinde **Çözüm Gezgini**, aşağıdaki derleme başvurularının StartPageControl projeye ekleyin:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft.VisualStudio.OLE.Interop  
   
-    -   Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  MyControl.xaml açın.  
+3. MyControl.xaml açın.  
   
-4.  XAML bölmesinden, üst düzey <xref:System.Windows.Controls.UserControl> öğe tanımı; ad alanı bildirimi sonra aşağıdaki olay bildirimi ekleyin.  
+4. XAML bölmesinden, üst düzey <xref:System.Windows.Controls.UserControl> öğe tanımı; ad alanı bildirimi sonra aşağıdaki olay bildirimi ekleyin.  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5.  Tasarım bölmesini denetimin ana alana tıklayın ve ardından DELETE tuşuna basın.  
+5. Tasarım bölmesini denetimin ana alana tıklayın ve ardından DELETE tuşuna basın.  
   
      Bu kaldırır <xref:System.Windows.Controls.Border> öğesi ve her şeyi ve yalnızca en üst düzey leaves <xref:System.Windows.Controls.Grid> öğesi.  
   
-6.  Gelen **araç kutusu**, sürükleyin bir <xref:System.Windows.Controls.StackPanel> kılavuz denetimi.  
+6. Gelen **araç kutusu**, sürükleyin bir <xref:System.Windows.Controls.StackPanel> kılavuz denetimi.  
   
-7.  Artık sürükleyin bir <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>ve bir düğmeyi <xref:System.Windows.Controls.StackPanel>.  
+7. Artık sürükleyin bir <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>ve bir düğmeyi <xref:System.Windows.Controls.StackPanel>.  
   
-8.  Ekleme bir **x: Name** özniteliğini <xref:System.Windows.Controls.TextBox>ve `Click` olayı <xref:System.Windows.Controls.Button>, aşağıdaki örnekte gösterildiği gibi.  
+8. Ekleme bir **x: Name** özniteliğini <xref:System.Windows.Controls.TextBox>ve `Click` olayı <xref:System.Windows.Controls.Button>, aşağıdaki örnekte gösterildiği gibi.  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -79,15 +79,15 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
   
 #### <a name="to-implement-the-user-control"></a>Kullanıcı denetimi uygulamak için  
   
-1.  XAML bölmesinde, `Click` özniteliği <xref:System.Windows.Controls.Button> öğesini ve ardından **olay işleyicisine Git**.  
+1. XAML bölmesinde, `Click` özniteliği <xref:System.Windows.Controls.Button> öğesini ve ardından **olay işleyicisine Git**.  
   
      Bu MyControl.xaml.cs açar ve için bir saplama işleyici oluşturur `Button_Click` olay.  
   
-2.  Aşağıdaki `using` deyimlerini dosyanın üstüne.  
+2. Aşağıdaki `using` deyimlerini dosyanın üstüne.  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3.  Özel bir ekleme `SettingsStore` özelliği, aşağıdaki örnekte gösterildiği gibi.  
+3. Özel bir ekleme `SettingsStore` özelliği, aşağıdaki örnekte gösterildiği gibi.  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -121,7 +121,7 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
   
      Bu özellik, önce bir başvuru edinir <xref:EnvDTE80.DTE2> Otomasyon nesne modeli içerir arabirimi <xref:System.Windows.FrameworkElement.DataContext%2A> kullanıcı denetimi ve ardından kullanan bir kopyasını almak için DTE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> arabirimi. Daha sonra geçerli kullanıcı ayarları döndürmek için bu örneği kullanır.  
   
-4.  Doldurun `Button_Click` aşağıdaki gibi olay.  
+4. Doldurun `Button_Click` aşağıdaki gibi olay.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -138,7 +138,7 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
   
      Bu kayıt defteri "MySettings" koleksiyonunda "MySetting" alanına metin kutusunun içeriğini yazar. Koleksiyon mevcut değilse oluşturulur.  
   
-5.  Aşağıdaki işleyicisi eklemek `OnLoaded` kullanıcı denetiminin olay.  
+5. Aşağıdaki işleyicisi eklemek `OnLoaded` kullanıcı denetiminin olay.  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -152,11 +152,11 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
   
      Bu metin kutusunun metin geçerli değeri "MySetting" olarak ayarlar.  
   
-6.  Kullanıcı denetimi oluşturun.  
+6. Kullanıcı denetimi oluşturun.  
   
-7.  İçinde **Çözüm Gezgini**, source.extension.vsixmanifest açın.  
+7. İçinde **Çözüm Gezgini**, source.extension.vsixmanifest açın.  
   
-8.  Bildirim düzenleyicisinde ayarlama **ürün adı** için **My ayarlarını başlangıç sayfası Kaydet**.  
+8. Bildirim düzenleyicisinde ayarlama **ürün adı** için **My ayarlarını başlangıç sayfası Kaydet**.  
   
      Görünür olduğundan, bu başlangıç sayfası adını ayarlar **başlangıç sayfasını Özelleştir** listesinde **seçenekleri** iletişim kutusu.  
   
@@ -166,27 +166,27 @@ Başlangıç sayfanızı için kullanıcı ayarlarını kalıcı hale getirebili
   
 #### <a name="to-test-the-user-control"></a>Kullanıcı denetimi test etmek için  
   
-1.  F5 tuşuna basın.  
+1. F5 tuşuna basın.  
   
      Visual Studio'nun deneysel örneği açılır.  
   
-2.  Deneysel örneğinde üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.  
+2. Deneysel örneğinde üzerinde **Araçları** menüsünde tıklatın **seçenekleri**.  
   
-3.  İçinde **ortam** düğümünü tıklatın **başlangıç**ve ardından **başlangıç sayfasını Özelleştir** listesinden **[yüklü uzantı] Kaydet My ayarlarını başlangıç sayfası** .  
+3. İçinde **ortam** düğümünü tıklatın **başlangıç**ve ardından **başlangıç sayfasını Özelleştir** listesinden **[yüklü uzantı] Kaydet My ayarlarını başlangıç sayfası** .  
   
      **Tamam**'ı tıklatın.  
   
-4.  Başlangıç sayfası açıksa ve ardından kapatın **görünümü** menüsünde tıklatın **başlangıç sayfası**.  
+4. Başlangıç sayfası açıksa ve ardından kapatın **görünümü** menüsünde tıklatın **başlangıç sayfası**.  
   
-5.  Başlangıç sayfasında tıklayın **Denetimim** sekmesi.  
+5. Başlangıç sayfasında tıklayın **Denetimim** sekmesi.  
   
-6.  Metin kutusuna **Cat**ve ardından **Kaydet My ayarı**.  
+6. Metin kutusuna **Cat**ve ardından **Kaydet My ayarı**.  
   
-7.  Başlangıç sayfasını kapatın ve yeniden açın.  
+7. Başlangıç sayfasını kapatın ve yeniden açın.  
   
      Metin kutusuna "Cat" sözcüğü görüntülenmesi gerekir.  
   
-8.  "Cat" sözcük "Köpek" sözcüğüyle değiştirin. Düğmesine tıklamayın.  
+8. "Cat" sözcük "Köpek" sözcüğüyle değiştirin. Düğmesine tıklamayın.  
   
 9. Başlangıç sayfasını kapatın ve yeniden açın.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103881"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarının C++ kod kalitesini analiz etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 > [!NOTE]
 > Visual Studio Ultimate, Visual Studio Premium ve Visual Studio Professional içinde kod çözümleme araçları tam işlevselliğini kullanabilirsiniz. Bkz: [kod çözümleme araçları ile uygulama kalitesini analiz etme](http://msdn.microsoft.com/library/dd264897.aspx) MSDN Kitaplığı'nda.
 
-##  <a name="BKMK_Run"></a> Kod Analizi çalıştırma
+## <a name="BKMK_Run"></a> Kod Analizi çalıştırma
  Visual Studio çözümünüzü Kod Analizi çalıştırmak için:
 
 - Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.
@@ -43,7 +43,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
    ![Kod Analizi penceresi](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme
+## <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme
  Belirli bir uyarıyı çözümlemek için Kod Analizi penceresi içinde uyarı başlığı seçin. Sorun hakkında ayrıntılı bilgileri görüntülemek için uyarı genişletir. Mümkün olduğunda, kod analizi, uyarıya yol açan satır numarasını ve analiz mantığı görüntüler.
 
  ![Kod Analizi uyarısı Genişletilmiş](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 > [!TIP]
 >  Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Seçin **Çözümle** düğmesine tıklayın ve ardından analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.
 
-##  <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme
+## <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme
  Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Artık Kod Analizi penceresinde görünecekleri bireysel uyarıları gösterilmemesini sağlayabilirsiniz.
 
  Bir uyarıyı bastırmak için:
@@ -70,12 +70,12 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
    Bir ileti gizleme ekler `#pragma(warning:` *WarningId* `)` , kod satırının için uyarı bastırır.
 
-##  <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme
+## <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme
  Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.
 
  ![Aramanıza ve filtrelemenize Kod Analizi penceresi](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> C++ kod çözümleme uyarıları
+## <a name="Warnings"></a> C++ kod çözümleme uyarıları
  Aşağıdaki uyarılar C++ kodu için Kod Analizi başlatır:
 
 |                                      Kural                                      |                                                  Açıklama                                                  |

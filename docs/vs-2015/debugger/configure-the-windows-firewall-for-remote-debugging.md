@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103309"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Visual Studio bilgisayarda Windows Güvenlik Duvarı'nı yapılandırmak için  
  Windows Güvenlik Duvarı yapılandırma yönergeleri biraz daha farklı işletim sistemleri üzerinde farklı. Windows 7 veya Windows Server 2008, word **program** kullanılır; Windows 8/8.1, Windows 10 ve Windows Server 2012, word **uygulama** kullanılır.  Aşağıdaki adımlarda word kullanacağız **uygulama**.  
   
-1.  Windows Güvenlik Duvarı sayfasını açın. (İçinde **Başlat** menü arama kutusuna **Windows Güvenlik Duvarı**).  
+1. Windows Güvenlik Duvarı sayfasını açın. (İçinde **Başlat** menü arama kutusuna **Windows Güvenlik Duvarı**).  
   
-2.  Tıklayın **bir uygulama veya özelliğin Windows Güvenlik Duvarı üzerinden izin**.  
+2. Tıklayın **bir uygulama veya özelliğin Windows Güvenlik Duvarı üzerinden izin**.  
   
-3.  İçinde **izin verilen uygulamalar ve Özellikler** listesinde, Aranan **Visual Studio uzaktan hata ayıklayıcı bulma**. Listeleniyorsa, seçili olduğunu ve bir veya daha fazla ağ türü ayrıca seçildiğinden emin olun.  
+3. İçinde **izin verilen uygulamalar ve Özellikler** listesinde, Aranan **Visual Studio uzaktan hata ayıklayıcı bulma**. Listeleniyorsa, seçili olduğunu ve bir veya daha fazla ağ türü ayrıca seçildiğinden emin olun.  
   
-4.  Varsa **Visual Studio uzaktan hata ayıklayıcı bulma** olan listelenmeyen tıklayın **başka bir uygulamanın ver**. İçinde hala görmüyorsanız, **uygulama ekleme** penceresinde tıklayın **Gözat** gidin  **\<Visual Studio yükleme dizini > \Common7\IDE\Remotehataayıklayıcı**. (X86, x64, Appx) uygulama için ilgili klasörü bulun ve ardından **msvsmon.exe**. Ardından **Ekle**.  
+4. Varsa **Visual Studio uzaktan hata ayıklayıcı bulma** olan listelenmeyen tıklayın **başka bir uygulamanın ver**. İçinde hala görmüyorsanız, **uygulama ekleme** penceresinde tıklayın **Gözat** gidin  **\<Visual Studio yükleme dizini > \Common7\IDE\Remotehataayıklayıcı**. (X86, x64, Appx) uygulama için ilgili klasörü bulun ve ardından **msvsmon.exe**. Ardından **Ekle**.  
   
-5.  İçinde **izin verilen uygulamalar ve Özellikler** listesinden **Visual Studio uzaktan hata ayıklama İzleyicisi**. Bir veya daha fazla ağ türlerini denetleyin (**etki alanı, ev/iş (özel), ortak**) ile iletişim kurmak için uzaktan hata ayıklama İzleyicisi istiyor. Visual Studio bilgisayarın bağlı olduğu ağ türleri eklemeniz gerekir.  
+5. İçinde **izin verilen uygulamalar ve Özellikler** listesinden **Visual Studio uzaktan hata ayıklama İzleyicisi**. Bir veya daha fazla ağ türlerini denetleyin (**etki alanı, ev/iş (özel), ortak**) ile iletişim kurmak için uzaktan hata ayıklama İzleyicisi istiyor. Visual Studio bilgisayarın bağlı olduğu ağ türleri eklemeniz gerekir.  
   
 ## <a name="to-open-a-port-on-the-visual-studio-computer-to-enable-discovery"></a>Bulmayı etkinleştirmek için Visual Studio bilgisayarında bir bağlantı noktasını açmak için  
  Uzaktan hata ayıklayıcıyı çalıştıran bilgisayarlar bulunmasını izin vermek UDP bağlantı noktası 3702 gelen izin vermeniz gerekir. Eklemek için bkz. nasıl bir güvenlik duvarı bağlantı noktalarını yapılandırma.  
@@ -64,15 +64,15 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
   
  Windows Güvenlik Duvarı yapılandırma yönergeleri biraz daha farklı işletim sistemleri üzerinde farklı. Windows 7 veya Windows Server 2008, word **program** kullanılır; Windows 8/8.1, Windows 10 ve Windows Server 2012, word **uygulama** kullanılır.  Aşağıdaki adımlarda word kullanacağız **uygulama**.  
   
-1.  Windows Güvenlik Duvarı sayfasını açın. (Üzerinde **Başlat** menü arama kutusuna **Windows Güvenlik Duvarı**.)  
+1. Windows Güvenlik Duvarı sayfasını açın. (Üzerinde **Başlat** menü arama kutusuna **Windows Güvenlik Duvarı**.)  
   
-2.  Tıklayın **bir uygulama veya özelliğin Windows Güvenlik Duvarı üzerinden izin**.  
+2. Tıklayın **bir uygulama veya özelliğin Windows Güvenlik Duvarı üzerinden izin**.  
   
-3.  İçinde **izin verilen uygulamalar ve Özellikler** listesinde, Aranan **Visual Studio uzaktan hata ayıklama İzleyicisi**. Listeleniyorsa, seçili olduğunu ve bir veya daha fazla ağ türü ayrıca seçildiğinden emin olun.  
+3. İçinde **izin verilen uygulamalar ve Özellikler** listesinde, Aranan **Visual Studio uzaktan hata ayıklama İzleyicisi**. Listeleniyorsa, seçili olduğunu ve bir veya daha fazla ağ türü ayrıca seçildiğinden emin olun.  
   
-4.  Varsa **Visual Studio uzaktan hata ayıklama İzleyicisi** olan listelenmeyen tıklayın **başka bir uygulamanın ver**. İçinde hala görmüyorsanız, **ekleme uygulama penceresi**, tıklayın **Gözat** gidin  **\<Visual Studio yükleme dizini > \Common7\IDE\Remotehataayıklayıcı**. (X86, x64, Appx) uygulama için ilgili klasörü bulun ve ardından **msvsmon.exe**. Ardından **Ekle**.  
+4. Varsa **Visual Studio uzaktan hata ayıklama İzleyicisi** olan listelenmeyen tıklayın **başka bir uygulamanın ver**. İçinde hala görmüyorsanız, **ekleme uygulama penceresi**, tıklayın **Gözat** gidin  **\<Visual Studio yükleme dizini > \Common7\IDE\Remotehataayıklayıcı**. (X86, x64, Appx) uygulama için ilgili klasörü bulun ve ardından **msvsmon.exe**. Ardından **Ekle**.  
   
-5.  İçinde **izin verilen uygulamalar** listesinden **Visual Studio uzaktan hata ayıklama İzleyicisi**. Bir veya daha fazla ağ türlerini denetleyin (**etki alanı, ev/iş (özel), ortak**) ile iletişim kurmak için uzaktan hata ayıklama İzleyicisi istiyor. Visual Studio bilgisayarın bağlı olduğu ağ türleri eklemeniz gerekir.  
+5. İçinde **izin verilen uygulamalar** listesinden **Visual Studio uzaktan hata ayıklama İzleyicisi**. Bir veya daha fazla ağ türlerini denetleyin (**etki alanı, ev/iş (özel), ortak**) ile iletişim kurmak için uzaktan hata ayıklama İzleyicisi istiyor. Visual Studio bilgisayarın bağlı olduğu ağ türleri eklemeniz gerekir.  
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Uzak bilgisayarda uzaktan hata ayıklamayı etkinleştirme bağlantı  
   
@@ -95,21 +95,21 @@ Bu konu, aşağıdaki işletim sistemlerini çalıştıran bilgisayarlarda uzakt
   
 ## <a name="how-to-configure-ports-in-windows-firewall"></a>Windows Güvenlik Duvarı bağlantı noktalarını yapılandırma  
   
-1.  Üzerinde **Başlat** menüsünde **Gelişmiş Güvenlik Özellikli Windows Güvenlik Duvarı**.  
+1. Üzerinde **Başlat** menüsünde **Gelişmiş Güvenlik Özellikli Windows Güvenlik Duvarı**.  
   
-2.  Tıklayın **gelen kuralları** veya **giden kuralları** ve ardından **yeni kural** içinde **eylemleri** listesi.  
+2. Tıklayın **gelen kuralları** veya **giden kuralları** ve ardından **yeni kural** içinde **eylemleri** listesi.  
   
-3.  Üzerinde **kural türü** sayfasında **bağlantı noktası** ve ardından **sonraki**.  
+3. Üzerinde **kural türü** sayfasında **bağlantı noktası** ve ardından **sonraki**.  
   
-4.  Üzerinde **protokol ve bağlantı noktaları** sayfasında, bağlantı noktası Protokolü (TCP veya UDP) seçin. Seçin **belirli yerel bağlantı noktaları** ve protokolü için etkinleştirmek istediğiniz bir veya daha fazla bağlantı noktası numaraları girin. Ayrı numaralarını virgülle. Sonra **İleri**'ye tıklayın.  
+4. Üzerinde **protokol ve bağlantı noktaları** sayfasında, bağlantı noktası Protokolü (TCP veya UDP) seçin. Seçin **belirli yerel bağlantı noktaları** ve protokolü için etkinleştirmek istediğiniz bir veya daha fazla bağlantı noktası numaraları girin. Ayrı numaralarını virgülle. Sonra **İleri**'ye tıklayın.  
   
-5.  Üzerinde **eylem** sayfasında **bağlantıya izin** ve ardından **sonraki**.  
+5. Üzerinde **eylem** sayfasında **bağlantıya izin** ve ardından **sonraki**.  
   
-6.  Üzerinde **profili** sayfasında, bağlantı noktasını etkinleştirmek için bir veya daha fazla ağ türlerini seçin. Seçtiğiniz türü, uzak bilgisayarın bağlı olduğu ağ içermelidir. Sonra **İleri**'ye tıklayın.  
+6. Üzerinde **profili** sayfasında, bağlantı noktasını etkinleştirmek için bir veya daha fazla ağ türlerini seçin. Seçtiğiniz türü, uzak bilgisayarın bağlı olduğu ağ içermelidir. Sonra **İleri**'ye tıklayın.  
   
-7.  Üzerinde **adı** sayfasında kural için bir ad yazın ve ardından **son**.  
+7. Üzerinde **adı** sayfasında kural için bir ad yazın ve ardından **son**.  
   
-8.  Yeni kuralınıza görmelisiniz **gelen kuralları** veya **giden kuralları** listesi.  
+8. Yeni kuralınıza görmelisiniz **gelen kuralları** veya **giden kuralları** listesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan Hata Ayıklama](../debugger/remote-debugging.md)

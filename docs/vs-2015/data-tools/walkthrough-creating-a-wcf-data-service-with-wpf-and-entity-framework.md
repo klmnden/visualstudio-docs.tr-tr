@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107053"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>İzlenecek yol: WPF ve Entity Framework ile WCF veri hizmeti oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_serv
   
  Bu izlenecek yolda yapacaklarınız:  
   
--   Konak için bir Web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Konak için bir Web uygulaması oluşturma bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Oluşturma bir [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Northwind veritabanındaki Müşteriler tablosunu temsil eden.  
+- Oluşturma bir [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] Northwind veritabanındaki Müşteriler tablosunu temsil eden.  
   
--   Oluşturma bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Oluşturma bir [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   İstemci uygulaması oluşturma ve bir başvuru ekleyin [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- İstemci uygulaması oluşturma ve bir başvuru ekleyin [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Hizmete veri bağlamayı etkinleştirin ve kullanıcı arabirimini oluşturun.  
+- Hizmete veri bağlamayı etkinleştirin ve kullanıcı arabirimini oluşturun.  
   
--   İsteğe bağlı olarak, uygulamaya filtreleme yetenekleri ekleyin.  
+- İsteğe bağlı olarak, uygulamaya filtreleme yetenekleri ekleyin.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:  
   
--   Northwind örnek veritabanı.  
+- Northwind örnek veritabanı.  
   
      Geliştirme bilgisayarınızda bu veritabanı yoksa, buradan indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). Yönergeler için [Downloading Sample Databases](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_serv
   
 5. Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki adımlardan birini gerçekleştirin:  
   
-   -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
+   - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
   
         -veya-  
   
-   -   Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmeye. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).  
+   - Seçin **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için düğmeye. Daha fazla bilgi için [yeni bağlantı ekleme](../data-tools/add-new-connections.md).  
   
 6. Veritabanına parola gerekiyorsa seçin **Evet, bağlantı dizesini hassas verileri eklemek** seçenek düğmesini ve ardından **sonraki** düğmesi.  
   
@@ -236,11 +236,11 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_serv
   
 #### <a name="to-add-filtering-by-city"></a>Şehir bilgisine göre filtreleme eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1.vb** veya **Form1.cs** düğüm ve **açın**.  
+1. İçinde **Çözüm Gezgini**, kısayol menüsünü açın **Form1.vb** veya **Form1.cs** düğüm ve **açın**.  
   
-2.  Ekleme bir <xref:System.Windows.Forms.TextBox> denetimi ve bir <xref:System.Windows.Forms.Button> denetimi **araç kutusu** form.  
+2. Ekleme bir <xref:System.Windows.Forms.TextBox> denetimi ve bir <xref:System.Windows.Forms.Button> denetimi **araç kutusu** form.  
   
-3.  Kısayol menüsünü açın <xref:System.Windows.Forms.Button> denetlemek ve seçin **kodu görüntüle**ve ardından aşağıdaki kodu ekleyin `Button1_Click` olay işleyicisi:  
+3. Kısayol menüsünü açın <xref:System.Windows.Forms.Button> denetlemek ve seçin **kodu görüntüle**ve ardından aşağıdaki kodu ekleyin `Button1_Click` olay işleyicisi:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ Bu izlenecek yol basit bir oluşturma işlemini gösterir [!INCLUDE[ss_data_serv
     }  
     ```  
   
-4.  Önceki kod içinde `http://localhost:53161/NorthwindCustomers.svc` URL'den ile `Form1_Load` olay işleyicisi.  
+4. Önceki kod içinde `http://localhost:53161/NorthwindCustomers.svc` URL'den ile `Form1_Load` olay işleyicisi.  
   
-5.  Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat** uygulamayı çalıştırın.  
+5. Menü çubuğunda, **hata ayıklama**, **hata ayıklamayı Başlat** uygulamayı çalıştırın.  
   
-6.  Metin kutusuna **Londra**ve ardından düğmeyi seçin. Yalnızca Londralı müşteriler görüntülenir.  
+6. Metin kutusuna **Londra**ve ardından düğmeyi seçin. Yalnızca Londralı müşteriler görüntülenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

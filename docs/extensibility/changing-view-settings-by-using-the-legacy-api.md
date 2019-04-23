@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106494"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Eski API'yi kullanarak görünüm ayarlarını değiştirme
 Sözcük kaydırma ve seçim boşluğu sanal alanı gibi temel Düzenleyici özellikleri için ayarları yoluyla kullanıcı tarafından değiştirilebilir **seçenekleri** iletişim kutusu. Ancak, aynı zamanda bu ayarları değiştirmek mümkündür programlı olarak.
@@ -25,13 +25,13 @@ Sözcük kaydırma ve seçim boşluğu sanal alanı gibi temel Düzenleyici öze
 
  Aşağıdaki çekirdek Düzenleyici örneği görünüm ayarlarını değiştirmek için tipik bir işlemdir.
 
-1.  Çağrı `QueryInterface` üzerinde (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> arabirimi.
+1. Çağrı `QueryInterface` üzerinde (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) için <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> arabirimi.
 
-2.  Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> yöntemi için GUID_EditPropCategory_View_MasterSettings değerini belirterek `rguidCategory` parametresi.
+2. Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> yöntemi için GUID_EditPropCategory_View_MasterSettings değerini belirterek `rguidCategory` parametresi.
 
      Bunun yapılması, bir işaretçi döndürür <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> görünüm için zorlanan bir özellikler kümesini içeren arabirimi. Bu gruptaki herhangi bir ayarı kalıcı olarak zorlanır. Bu grupta bir ayar değil sonra belirtilen seçenekleri izleyeceği **seçenekleri** iletişim kutusu veya kullanıcının komutları.
 
-3.  Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> yöntemi, uygun ayarları değeri belirterek `idprop` parametresi.
+3. Çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> yöntemi, uygun ayarları değeri belirterek `idprop` parametresi.
 
      Örneğin, sözcük kaydırma zorlamak için çağrı <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> ve VSEDITPROPID_ViewLangOpt_WordWrap, bir değer belirleyebilirsiniz `vt` için `idprop` parametresi. Bu çağrıda `vt` VT_BOOL türünde bir değişken olduğu ve `vt.boolVal` VARIANT_TRUE olduğu.
 

@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074053"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>İzleme kullanarak ayrıntılı zamanlama verileri toplama
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profil oluşturma araçları araç haline getirme yöntemi, bir modülün bir kopyasını profil oluşturma kodu ekler. Kodun her giriş, çıkış ve işlevlerin işlev çağrısı modülünde bir profil oluşturma sırasında kaydeder. Araçlar yöntemini giriş ve çıkış işlemleri uygulama performansı üzerindeki etkisini anlamak için kodun bir bölümünü hakkında ayrıntılı zamanlama bilgileri toplamak için yararlı olacaktır.
 
  Araçlar yöntemini aşağıdaki yordamlardan birini kullanarak belirtebilirsiniz:
 
--   Profil Oluşturma Sihirbazı'nın ilk sayfasında, seçin **izleme**.
+- Profil Oluşturma Sihirbazı'nın ilk sayfasında, seçin **izleme**.
 
--   Üzerinde **performans Gezgini** araç penceresindeki **yöntemi** listesinde **izleme**.
+- Üzerinde **performans Gezgini** araç penceresindeki **yöntemi** listesinde **izleme**.
 
--   Üzerinde **genel** sayfa seçin performans oturumu Özellikleri iletişim kutusunun **izleme**.
+- Üzerinde **genel** sayfa seçin performans oturumu Özellikleri iletişim kutusunun **izleme**.
 
 ## <a name="common-tasks"></a>Ortak görevler
  Ek seçenekler belirtebilirsiniz _performans oturumu_**özellik sayfaları** performans oturumunun iletişim kutusu. Bu iletişim kutusunu açmak için:

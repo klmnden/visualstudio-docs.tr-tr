@@ -11,21 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095834"
 ---
 # <a name="comparing-properties-and-items"></a>Özellikleri ve Öğeleri Karşılaştırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşulları değerlendirin ve proje dosyası boyunca başvurulabilir değerleri depolamak için kullanılır.  
   
--   Özellikler, ad-değer çiftleridir. Daha fazla bilgi için [MSBuild özellikleri](msbuild-properties1.md).  
+- Özellikler, ad-değer çiftleridir. Daha fazla bilgi için [MSBuild özellikleri](msbuild-properties1.md).  
   
--   Genelde dosyaları temsil eden nesneleri öğelerdir. Öğesi nesneleri ilişkili meta verileri koleksiyonlar. Ad-değer çiftleri meta verilerdir. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).  
+- Genelde dosyaları temsil eden nesneleri öğelerdir. Öğesi nesneleri ilişkili meta verileri koleksiyonlar. Ad-değer çiftleri meta verilerdir. Daha fazla bilgi için [öğeleri](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Skalerler ve vektörleri  
  MSBuild özellikleri yalnızca bir dize değerine sahip ad-değer çiftleri olduğundan, bunlar genellikle olarak açıklanan *skaler*. MSBuild öğesi türlerini öğeleri listesi olduğundan, bunlar genellikle olarak açıklanan *vektör*. Ancak, uygulamada, Özellikler birden çok değer gösterebilir ve öğesi sıfır veya bir öğe olabilir.  
@@ -96,15 +96,15 @@ MSBuild özellikleri ve öğeleri hem de bilgi geçirmek için görevler, koşul
   
 - Bir yapının değerlendirme aşamasında:  
   
-  -   Özellikleri tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri yürütülür. Özellik değerlerinde form $(PropertyName) ifadeler içinde genişletilir. Özellik değeri, genişletilmiş ifade ayarlanır.  
+  - Özellikleri tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri yürütülür. Özellik değerlerinde form $(PropertyName) ifadeler içinde genişletilir. Özellik değeri, genişletilmiş ifade ayarlanır.  
   
-  -   Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri ifadeler içinde zaten genişletilmiştir. Meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
+  - Öğe tanımları tanımlanır ve göründükleri sırayla değiştirdi. Özellik işlevleri ifadeler içinde zaten genişletilmiştir. Meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
   
-  -   Öğesi türleri tanımlı ve göründükleri sırayla değiştirdi. Form @(ItemType) içindeki öğe değerlerini genişletilir. Öğe dönüştürmeler de genişletilir. Özellik işlevleri ve değerleri, ifadeler içinde zaten genişletilmiştir. Öğe listesi ve meta verileri değerlerini genişletilmiş ifadeleri için ayarlanır.  
+  - Öğesi türleri tanımlı ve göründükleri sırayla değiştirdi. Form @(ItemType) içindeki öğe değerlerini genişletilir. Öğe dönüştürmeler de genişletilir. Özellik işlevleri ve değerleri, ifadeler içinde zaten genişletilmiştir. Öğe listesi ve meta verileri değerlerini genişletilmiş ifadeleri için ayarlanır.  
   
 - Bir derleme yürütme aşaması sırasında:  
   
-  -   Özellikler ve hedefler içinde tanımlanan öğeleri birlikte göründükleri sırayla değerlendirilir. Özellik işlevleri yürütülür ve özellik değerlerini ifadeler içinde genişletilir. Öğe değerlerini ve öğesi dönüştürmeler de genişletilir. Özellik değerleri, öğe türü değerlerini ve meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
+  - Özellikler ve hedefler içinde tanımlanan öğeleri birlikte göründükleri sırayla değerlendirilir. Özellik işlevleri yürütülür ve özellik değerlerini ifadeler içinde genişletilir. Öğe değerlerini ve öğesi dönüştürmeler de genişletilir. Özellik değerleri, öğe türü değerlerini ve meta veri değerleri için genişletilmiş ifadeleri ayarlanır.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Hafif etkilerini değerlendirme sırası  
  Bir yapının değerlendirme aşamasında, özellik değerlendirmesini öğesi değerlendirme önce gelir. Bununla birlikte, Özellikler öğesi değerlerine bağımlı görünen değerlere sahip olabilir. Aşağıdaki komut dosyası düşünün.  

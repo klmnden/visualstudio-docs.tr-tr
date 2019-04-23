@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af26cae55a9a13f7aaaeb2297b19c81105f438
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063991"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Nasıl yapılır: Office Çok Dilde Kullanıcı arabirimini hedefleme
   Çok dilli kullanıcı arabirimi (MUI) son kullanıcı kullanıcı arabirimini (UI) dilini değiştirme olanağı sunan bir Microsoft Office özelliğidir. Örneğin, İngilizce bir kullanıcı Arabirimi ile çalışan bir son kullanıcı, kullanıcı Arabirimi dili İspanyolca için değiştirebilirsiniz.
@@ -33,7 +33,7 @@ ms.locfileid: "56635689"
 
 ## <a name="to-check-the-current-office-ui-setting"></a>Geçerli Office UI ayarı denetlemek için
 
-1.  Kullanım <xref:System.Threading.Thread.CurrentUICulture%2A> geçerli iş parçacığının özelliği. Dili, kullanıcı Arabirimi dizeleri kullanıcının bilgisayarında şu anda çalışan bir Office sürümü tarafından kullanılan dil eşleşecek şekilde ayarlayın.
+1. Kullanım <xref:System.Threading.Thread.CurrentUICulture%2A> geçerli iş parçacığının özelliği. Dili, kullanıcı Arabirimi dizeleri kullanıcının bilgisayarında şu anda çalışan bir Office sürümü tarafından kullanılan dil eşleşecek şekilde ayarlayın.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]

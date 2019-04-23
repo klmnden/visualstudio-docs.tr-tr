@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093000"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Program kodundaki UML modelini okuma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir UML model ve diyagramlarını UML API kullanarak yükleyebilirsiniz.  
   
-##  <a name="Reading"></a> Program kodundaki modeli okuma  
+## <a name="Reading"></a> Program kodundaki modeli okuma  
  Göstermeden modelin içeriğine erişmek için bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] penceresinde kullanım `ModelingProject.LoadReadOnly()`.  
   
  Örneğin:  
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  Kullanıcı arabirimi kullanarak modelleri ve diyagramları da açabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API. Daha fazla bilgi için [Visual Studio API kullanarak bir UML modeli açma](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
-##  <a name="Standalone"></a> Tek başına uygulamalar  
+## <a name="Standalone"></a> Tek başına uygulamalar  
  Önceki bölümdeki örnek Visual Studio uzantılarında çalışır. Tek başına bir uygulamadaki modeli okumak mümkündür, ancak bazı başvurular eklemeniz gerekir, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proje.  
   
 > [!NOTE]
@@ -82,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. Ekleme [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] UML modelleri, genellikle erişmek için gereksinim duyduğunuz başvuruları:  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. Önceki bölümlerde listelenmiş başvurulara ek olarak, aşağıdaki proje başvurularından ekleme **\Program Visual Studio [sürüm] \Common7\IDE\PrivateAssemblies**:  
   

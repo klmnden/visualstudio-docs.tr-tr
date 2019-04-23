@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9159ccec69bd6e8cad0290b092f38434b495fc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8bdc4c106ff8d6f1740fb53e0e3552f64b069fb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100384"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>4. Adım: Her etikete click olay işleyicisi ekleme
 
@@ -29,17 +29,17 @@ Eşleştirme oyunu aşağıdaki gibi çalışır:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Her etikete bir tıklama olayı işleyicisi eklemek için
 
-1.  Formda açın **Windows Form Tasarımcısı**. İçinde **Çözüm Gezgini**, seçin *Form1.cs* veya *Form1.vb*. Menü çubuğunda, **görünümü** > **Tasarımcısı**.
+1. Formda açın **Windows Form Tasarımcısı**. İçinde **Çözüm Gezgini**, seçin *Form1.cs* veya *Form1.vb*. Menü çubuğunda, **görünümü** > **Tasarımcısı**.
 
-2.  İlk etiket denetimini belirleyip seçin. Ardından, basılı **Ctrl** seçerken her biri diğer etiketlerin seçmek için anahtar. Her etiketin seçildiğinden emin olun.
+2. İlk etiket denetimini belirleyip seçin. Ardından, basılı **Ctrl** seçerken her biri diğer etiketlerin seçmek için anahtar. Her etiketin seçildiğinden emin olun.
 
-3.  Seçin **olayları** araç çubuğunda düğme **özellikleri** penceresini görüntülemek için **olayları** sayfasını **özellikleri** penceresi. Ekranı aşağı kaydırarak **tıklayın** olay girin **label_Click** kutusunda, aşağıdaki resimde gösterildiği gibi.
+3. Seçin **olayları** araç çubuğunda düğme **özellikleri** penceresini görüntülemek için **olayları** sayfasını **özellikleri** penceresi. Ekranı aşağı kaydırarak **tıklayın** olay girin **label_Click** kutusunda, aşağıdaki resimde gösterildiği gibi.
 
      ![Tıklama olayını gösteren Özellikler penceresi](../ide/media/express_labelclick.png)
 
-4.  Seçin **Enter** anahtarı. IDE ekler bir `Click` adlı olay işleyicisi `label_Click()` koda ve bunu formdaki etiketlerin her kancaları.
+4. Seçin **Enter** anahtarı. IDE ekler bir `Click` adlı olay işleyicisi `label_Click()` koda ve bunu formdaki etiketlerin her kancaları.
 
-5.  Kodun geri kalanını aşağıdaki gibi doldurun:
+5. Kodun geri kalanını aşağıdaki gibi doldurun:
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
@@ -52,10 +52,10 @@ Eşleştirme oyunu aşağıdaki gibi çalışır:
 
      Bu yöntem ilk denetler olmadığını `clickedLabel` başarıyla dönüştürüldü (bir nesneden bir etiket kontrolüne atama). Başarısız bir değeri olup olmadığını `null` (C#) veya `Nothing` (Visual Basic) ve yöntemde kodun geri kalanını yürütmek istemiyorsanız. Ardından, yöntem etiketin kullanarak seçilen etiketin metin rengini denetler **ForeColor** özelliği. Etiketin metin rengi siyah ise, simge zaten seçilmiş ve yöntem bitmiş demektir. (Budur `return` deyiminin yaptığı: Bu programa yöntemi yürütmeyi durdurmasını söyler.) Aksi takdirde simge seçilmemiş demektir ve dolayısıyla program etiketin metin rengini siyah olarak değiştirir.
 
-6.  Menü çubuğunda, **dosya** > **Tümünü Kaydet** ilerlemenizi kaydedin ve ardından menü çubuğunda, **hata ayıklama** > **Başlat Hata ayıklama** seçerek programınızı çalıştırın. Mavi arka planlı boş bir form görmeniz gerekir. Formdaki hücrelerden herhangi birini seçtiğinizde, simgelerden birinin görünür hale gelmesi gerekir. Formda farklı yerler seçmeye devam edin. Siz simgeleri seçtikçe görünmeleri gerekir.
+6. Menü çubuğunda, **dosya** > **Tümünü Kaydet** ilerlemenizi kaydedin ve ardından menü çubuğunda, **hata ayıklama** > **Başlat Hata ayıklama** seçerek programınızı çalıştırın. Mavi arka planlı boş bir form görmeniz gerekir. Formdaki hücrelerden herhangi birini seçtiğinizde, simgelerden birinin görünür hale gelmesi gerekir. Formda farklı yerler seçmeye devam edin. Siz simgeleri seçtikçe görünmeleri gerekir.
 
 ## <a name="to-continue-or-review"></a>Devam etmek veya gözden geçirmek için
 
--   Sonraki öğretici adımına gitmek için bkz: [5. adım: Etiket başvuruları ekleme](../ide/step-5-add-label-references.md).
+- Sonraki öğretici adımına gitmek için bkz: [5. adım: Etiket başvuruları ekleme](../ide/step-5-add-label-references.md).
 
--   Önceki öğretici adımına dönmek için bkz: [3. adım: Her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Önceki öğretici adımına dönmek için bkz: [3. adım: Her etikete rasgele simge atama](../ide/step-3-assign-a-random-icon-to-each-label.md).

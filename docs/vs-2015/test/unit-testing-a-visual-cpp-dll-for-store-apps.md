@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbdf8ccb423058f10246a439838d1b970d65109f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104193"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Bir Visual C++ DLL Store uygulamaları için birim testi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
  Bu konuda ayrıca tek bir Visual Studio çözümü de ayrı projeler için birim testleri ve test etmek istediğiniz DLL oluşturur. Doğrudan DLL projede birim testleri de içerebilir veya ayrı çözümler için birim testleri oluşturabilirsiniz ve. DLL. Bkz: [mevcut C++ uygulamalarına birim testleri ekleme](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) kullanmak için hangi yapı ilişkin ipuçları için.  
   
-##  <a name="BKMK_In_this_topic"></a> Bu konudaki  
+## <a name="BKMK_In_this_topic"></a> Bu konudaki  
  Bu konuda aşağıdaki görevleri gerçekleştirir:  
   
  [Çözüm ve birim testi projesi oluşturma](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -42,35 +42,35 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
  [Testleri değiştirmeden kodu yeniden düzenleme](#BKMK_Refactor_the_code_without_changing_tests)  
   
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma  
+## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Çözüm ve birim testi projesi oluşturma  
   
-1.  Üzerinde **dosya** menüsünde seçin **yeni**ve ardından **yeni proje**.  
+1. Üzerinde **dosya** menüsünde seçin **yeni**ve ardından **yeni proje**.  
   
-2.  Yeni Proje iletişim kutusunda Genişlet **yüklü**, ardından **Visual C++** ve **Windows Store**. Ardından **birim testi kitaplığı (Windows Store apps)** proje şablonları listesinden.  
+2. Yeni Proje iletişim kutusunda Genişlet **yüklü**, ardından **Visual C++** ve **Windows Store**. Ardından **birim testi kitaplığı (Windows Store apps)** proje şablonları listesinden.  
   
      ![Bir C oluşturma&#43; &#43; birim testi Kitaplığı](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
-3.  Projeyi adlandırın `RooterLibTests`; konumu belirtin; çözümünü arlandırın `RooterLib`; emin **çözüm için dizin oluştur** denetlenir.  
+3. Projeyi adlandırın `RooterLibTests`; konumu belirtin; çözümünü arlandırın `RooterLib`; emin **çözüm için dizin oluştur** denetlenir.  
   
      ![Çözüm ve proje adını ve konumunu belirtin](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
   
-4.  Yeni projeyi **unittest1.cpp**.  
+4. Yeni projeyi **unittest1.cpp**.  
   
      ![unittest1.cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")  
   
      Aşağıdakilere dikkat edin:  
   
-    -   Her bir testi kullanılarak tanımlanmış `TEST_METHOD(YourTestName){...}`.  
+    - Her bir testi kullanılarak tanımlanmış `TEST_METHOD(YourTestName){...}`.  
   
          Geleneksel işlev imzası yazmanız gerekmez. İmza TEST_METHOD makro tarafından oluşturulur. Makro, void döndüren bir örnek işlevi oluşturur. Ayrıca, test yöntemi hakkında bilgi döndüren statik bir işlev oluşturur. Test Gezgini, yöntem bulmak bu bilgileri sağlar.  
   
-    -   Test yöntemleri, sınıflara kullanarak gruplanır `TEST_CLASS(YourClassName){...}`.  
+    - Test yöntemleri, sınıflara kullanarak gruplanır `TEST_CLASS(YourClassName){...}`.  
   
          Testler çalıştırıldığında, her test sınıfının bir örneği oluşturulur. Test yöntemlerini belirtilmemiş sırayla çağrılır. Önce ve sonra her bir modül, sınıf veya yöntemi çağıran özel yöntemi tanımlayabilirsiniz. Daha fazla bilgi için [Microsoft.VisualStudio.TestTools.CppUnitTestFramework kullanma](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) MSDN Kitaplığı'nda.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Testleri Test Gezgini'nde çalıştırma doğrulayın  
+## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Testleri Test Gezgini'nde çalıştırma doğrulayın  
   
-1.  Bazı test kodu ekleyin:  
+1. Bazı test kodu ekleyin:  
   
     ```cpp  
     TEST_METHOD(TestMethod1)  
@@ -81,21 +81,21 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
      Dikkat `Assert` sınıfı yöntemleri test sonuçlarında doğrulamak için kullanabileceğiniz birkaç statik yöntemler sağlar.  
   
-2.  Üzerinde **Test** menüsünde seçin **çalıştırma** seçip **tümünü Çalıştır**.  
+2. Üzerinde **Test** menüsünde seçin **çalıştırma** seçip **tümünü Çalıştır**.  
   
      Test projesi oluşturur ve çalıştırır. Test Gezgini penceresi görünür ve test altında listelenen **başarılı testler**. Pencerenin alt kısmındaki özeti bölmesinde seçilen test hakkında ek ayrıntılar sağlar.  
   
      ![Test Explorer](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> DLL projesi çözüme ekleyin.  
+## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> DLL projesi çözüme ekleyin.  
   
-1.  Çözüm Gezgini'nde çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **Yeni Proje Ekle**.  
+1. Çözüm Gezgini'nde çözüm adı seçin. Kısayol menüsünden **Ekle**, ardından **Yeni Proje Ekle**.  
   
      ![RooterLib projesi oluşturma](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (Windows Store apps)**.  
+2. İçinde **Yeni Proje Ekle** iletişim kutusunda **DLL (Windows Store apps)**.  
   
-3.  Aşağıdaki kodu ekleyin **RooterLib.h** dosyası:  
+3. Aşağıdaki kodu ekleyin **RooterLib.h** dosyası:  
   
     ```cpp  
     // The following ifdef block is the standard way of creating macros which make exporting   
@@ -121,17 +121,17 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
      `CRooterLib` Sınıfı Oluşturucu bildirir ve `SqareRoot` estimator yöntemi.  
   
-4.  ROOTERLIB_EXPORTS sembol komut satırına ekleyin.  
+4. ROOTERLIB_EXPORTS sembol komut satırına ekleyin.  
   
-    1.  Çözüm Gezgini'nde **RooterLib** proje ve ardından **özellikleri** kısayol menüsünden.  
+    1. Çözüm Gezgini'nde **RooterLib** proje ve ardından **özellikleri** kısayol menüsünden.  
   
          ![Önişlemci sembolü tanımı Ekle](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")  
   
-    2.  RooterLib özellik sayfası iletişim kutusunda, **yapılandırma özellikleri**, genişletme **C++** ve **önişlemci**.  
+    2. RooterLib özellik sayfası iletişim kutusunda, **yapılandırma özellikleri**, genişletme **C++** ve **önişlemci**.  
   
-    3.  Seçin  **\<Düzenle … >** gelen **önişlemci tanımları** listeleyin ve ardından ekleyin `ROOTERLIB_EXPORTS` önişlemci tanımları iletişim kutusunda.  
+    3. Seçin  **\<Düzenle … >** gelen **önişlemci tanımları** listeleyin ve ardından ekleyin `ROOTERLIB_EXPORTS` önişlemci tanımları iletişim kutusunda.  
   
-5.  Bildirilen işlevlerin en az uygulamaları ekleyin. Açık **RooterLib.cpp** ve aşağıdaki kodu ekleyin:  
+5. Bildirilen işlevlerin en az uygulamaları ekleyin. Açık **RooterLib.cpp** ve aşağıdaki kodu ekleyin:  
   
     ```  
     // constructor  
@@ -147,23 +147,23 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Birkaç dll projesi için test projesi  
+## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Birkaç dll projesi için test projesi  
   
 1. RooterLib RooterLibTests projeye ekleyin.  
   
-   1.  Çözüm Gezgini'nde **RooterLibTests** proje ve ardından **başvuruları...**  kısayol menüsünde.  
+   1. Çözüm Gezgini'nde **RooterLibTests** proje ve ardından **başvuruları...**  kısayol menüsünde.  
   
-   2.  RooterLib Proje Özellikleri iletişim kutusunda, genişletme **ortak özellikler** ve **çerçeve ve başvurular**.  
+   2. RooterLib Proje Özellikleri iletişim kutusunda, genişletme **ortak özellikler** ve **çerçeve ve başvurular**.  
   
-   3.  Seçin **Yeni Başvuru Ekle...**  
+   3. Seçin **Yeni Başvuru Ekle...**  
   
-   4.  İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.  
+   4. İçinde **Başvuru Ekle** iletişim kutusunda **çözüm** seçip **projeleri**. Ardından **RouterLib** öğesi.  
   
 2. RooterLib üstbilgi dosyasına eklenecek **unittest1.cpp**.  
   
-   1.  Açık **unittest1.cpp**.  
+   1. Açık **unittest1.cpp**.  
   
-   2.  Bu kod için aşağıdaki ekleme `#include "CppUnitTest.h"` satırı:  
+   2. Bu kod için aşağıdaki ekleme `#include "CppUnitTest.h"` satırı:  
   
        ```cpp  
        #include "..\RooterLib\RooterLib.h"  
@@ -200,9 +200,9 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
    Test ve kod projelerini ayarlama sahiptir ve doğrulandı, kod projesinde işlevleri çalıştırmak testlerini çalıştırabilirsiniz. Şimdi gerçek test ve kod yazmaya başlayabilirsiniz.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
+## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Yinelemeli olarak testleri genişletme ve onları geçirin  
   
-1.  Yeni bir test ekleyin:  
+1. Yeni bir test ekleyin:  
   
     ```  
     TEST_METHOD(RangeTest)  
@@ -224,16 +224,16 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
     >   
     >  Kullanıcılarınızın gereksinimlerine değiştirdiğinizde, artık doğru testleri devre dışı bırakın. Yeni testler yazmak ve bunları teker teker artımlı aynı şekilde çalışır duruma getirin.  
   
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.  
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
-3.  Test başarısız olur.  
+3. Test başarısız olur.  
   
      ![RangeTest başarısız](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
     >  Hemen yazdıktan sonra her testin başarısız olduğunu doğrulayın. Bu, hiçbir zaman başarısız bir test yazma kolay onlardan yardımcı olur.  
   
-4.  Yeni test geçer, test edilen kod geliştirin. Ekleyin **RooterLib.cpp**:  
+4. Yeni test geçer, test edilen kod geliştirin. Ekleyin **RooterLib.cpp**:  
   
     ```cpp  
     #include <math.h>  
@@ -254,14 +254,14 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
     ```  
   
-5.  Çözümü derleyin ve Test Gezgini'nde seçin **tümünü Çalıştır**.  
+5. Çözümü derleyin ve Test Gezgini'nde seçin **tümünü Çalıştır**.  
   
      Her iki testler başarılı.  
   
 > [!TIP]
 >  Aynı anda testleri bir ekleyerek kod geliştirin. Tüm testler her yinelemeden sonra başarılı olduğundan emin olun.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama  
+## <a name="BKMK_Debug_a_failing_test"></a> Başarısız bir test hatalarını ayıklama  
   
 1. Başka bir test eklemek **unittest1.cpp**:  
   
@@ -303,13 +303,13 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
 3. Testin neden başarısız görmek için işlev adım:  
   
-   1.  Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.  
+   1. Başında bir kesme noktası ayarlamak `SquareRoot` işlevi.  
   
-   2.  Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
+   2. Başarısız test kısayol menüsünde **seçilen Testlerde Hata Ayıkla**.  
   
         Kesme noktasında çalıştırma sona erdiğinde, kodda adım adım.  
   
-   3.  Kodu **RooterLib.cpp** istisna yakalamak için:  
+   3. Kodu **RooterLib.cpp** istisna yakalamak için:  
   
        ```  
        #include <stdexcept>  
@@ -325,15 +325,15 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
        ```  
   
-   1.  Test Gezgini'nde seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
+   1. Test Gezgini'nde seçin **tümünü Çalıştır** test düzeltilmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
   
    Artık tüm sınamaları geçmesi.  
   
    ![All tests pass](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleme  
+## <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Testleri değiştirmeden kodu yeniden düzenleme  
   
-1.  Merkezi hesaplamaya basitleştirmek `SquareRoot` işlevi:  
+1. Merkezi hesaplamaya basitleştirmek `SquareRoot` işlevi:  
   
     ```  
     // old code  
@@ -343,7 +343,7 @@ Bu konuda, Windows Store apps RooterLib DLL gösterir için unutmayacağınız b
   
     ```  
   
-2.  Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
+2. Seçin **tümünü Çalıştır** test UIMap'e yeniden işlenmiş yöntemi ve bir regresyon sunulan henüz emin olun.  
   
     > [!TIP]
     >  Kararlı bir dizi iyi birim testi kodu değiştirdiğinizde, yeni hatalar oluşturmadığından emin olmanızı sağlar.  

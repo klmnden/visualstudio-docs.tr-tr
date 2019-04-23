@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105437"
 ---
 # <a name="cores-view-zoom-tool"></a>Çekirdekler Görünümü Yakınlaştırma Aracı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Yakınlaştırma, belirli ilgi alanlarına odaklanabilmeniz için zaman çizelge
   
 ## <a name="other-ways-to-zoom"></a>Yakınlaştırma diğer yolları  
   
--   Yakınlaştırmayı: Zaman Çizelgesi Görünümü'nde bir alan seçmek için sürükleyin. Fare düğmesini bıraktığınızda, zaman çizelgesi görünümü seçili aralıkta yakınlaştırır.  
+- Yakınlaştırmayı: Zaman Çizelgesi Görünümü'nde bir alan seçmek için sürükleyin. Fare düğmesini bıraktığınızda, zaman çizelgesi görünümü seçili aralıkta yakınlaştırır.  
   
--   Yakınlaştırma ve uzaklaştırma: Zaman çizelgesi üzerinde gelin ve sonra fare tekerleğini taşırken CTRL tuşuna basın.  
+- Yakınlaştırma ve uzaklaştırma: Zaman çizelgesi üzerinde gelin ve sonra fare tekerleğini taşırken CTRL tuşuna basın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çekirdekler Görünümü](../profiling/cores-view.md)

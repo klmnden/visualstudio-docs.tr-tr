@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096744"
 ---
 # <a name="unit-test-basics"></a>Birim testi temel bilgileri
 
@@ -82,9 +82,12 @@ Genellikle, kod birim testi saptamalar ve birim testi projesi oluşturmak hızl�
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Birim testi projesi oluşturma ve birim testi saptamaları
 
-1. Kod Düzenleyicisi penceresi, sağ tıklatın ve seçin **birim testleri Oluştur** sağ tıklatma menüsünden.
+1. Kod Düzenleyicisi penceresi, sağ tıklatın ve seçin [ **birim testleri Oluştur** ](create-unit-tests-menu.md) sağ tıklatma menüsünden.
 
-    ![Bağlam menüsü düzenleyici penceresinde görüntüleme](../test/media/createunittestsrightclick.png)
+   ![Bağlam menüsü düzenleyici penceresinde görüntüleme](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > **Birim testleri Oluştur** menü komutu, yalnızca .NET Framework (ancak .NET Core) hedefleyen yönetilen kod için kullanılabilir.
 
 2. Tıklayın **Tamam** birim testleri oluşturma veya oluşturma ve birim testi projesi ve birim testlerini adı için kullanılan değerleri değiştirmek için Varsayılanları kabul etmek için. Varsayılan olarak, birim test yöntemlerini için eklenen kodu seçebilirsiniz.
 
@@ -127,17 +130,17 @@ Birim testi projesi genellikle tek bir kod proje yapısını yansıtır. Adlı i
 
    Kod projesine bir başvuru oluşturmak için:
 
-   1.  Projede seçin **Çözüm Gezgini**.
+   1. Projede seçin **Çözüm Gezgini**.
 
-   2.  Üzerinde **proje** menüsünde seçin **Başvuru Ekle**.
+   2. Üzerinde **proje** menüsünde seçin **Başvuru Ekle**.
 
-   3.  Üzerinde **başvuru Yöneticisi** açık iletişim kutusunu **çözüm** düğüm ve **projeleri**. Kod proje adını seçin ve iletişim kutusunu kapatın.
+   3. Üzerinde **başvuru Yöneticisi** açık iletişim kutusunu **çözüm** düğüm ve **projeleri**. Kod proje adını seçin ve iletişim kutusunu kapatın.
 
 Her birim testi projesi kod projesinde sınıfların adlarını yansıtan sınıfları içerir. Bizim örneğimizde `AccountsTests` proje aşağıdaki sınıfları içerebilir:
 
--   `AccountInfoTests` sınıfı için birim test yöntemlerini içeren `AccountInfo` sınıfını `Accounts` proje
+- `AccountInfoTests` sınıfı için birim test yöntemlerini içeren `AccountInfo` sınıfını `Accounts` proje
 
--   `CheckingAccountTests` sınıfı için birim test yöntemlerini içeren `CheckingAccount` sınıfı.
+- `CheckingAccountTests` sınıfı için birim test yöntemlerini içeren `CheckingAccount` sınıfı.
 
 ## <a name="write-your-tests"></a>Testlerinizi yazma
 
@@ -185,11 +188,11 @@ Unutmayın `Withdraw_ValidAmount_ChangesBalance` açık bir kullanan `Assert` te
 
 Microsoft birim testi çerçevelerini hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:
 
--   [Birim testi kod](unit-test-your-code.md)
+- [Birim testi kod](unit-test-your-code.md)
 
--   [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
+- [C/C++ için birim testleri yazma](writing-unit-tests-for-c-cpp.md)
 
--   [MSTest framework birim testleri kullanın](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [MSTest framework birim testleri kullanın](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Birim testleri için zaman aşımını ayarlayın
 
@@ -260,12 +263,12 @@ Daha fazla bilgi için [Test Gezgini ile birim testleri çalıştırma](../test/
 
 **Y:** Kullanım **Test Gezgini** testleriniz için hata ayıklama oturumu başlatmak için. Kodunuzu Visual Studio hata ayıklayıcısı ile sorunsuz bir şekilde Adımlama, İleri ve geri birim testleri ve test altındaki projeye arasında sürer. Hata ayıklamayı başlatmak için:
 
-1.  Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.
+1. Visual Studio düzenleyicisinde, hatalarını ayıklamak istediğiniz bir veya daha fazla test yöntemlerinde kesme noktası ayarlayın.
 
     > [!NOTE]
     > Test yöntemleri herhangi bir sırada çalışabileceğinden, hata ayıklamak istediğiniz tüm test yöntemlerinde kesme noktalarını ayarlayın.
 
-2.  İçinde **Test Gezgini**, test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünden.
+2. İçinde **Test Gezgini**, test yöntemlerini seçin ve ardından **seçilen Testlerde Hata Ayıkla** kısayol menüsünden.
 
 Hakkında daha ayrıntılı bilgi edinin [birim testleri hata ayıklama](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Daha fazla bilgi edinin [kod kapsamı](../test/using-code-coverage-to-determine-
 
 Microsoft Fakes, dış bağımlılıklar için yedek sınıflar oluşturmak için iki yaklaşım kullanır:
 
-1.  *Saptamalar* hedef bağımlılık sınıfının üst arabirimden türetilmiş yedek sınıflar oluşturun. Hedef sınıfın ortak sanal yöntemler için saptama yöntemleri yerine kullanılabileceği.
+1. *Saptamalar* hedef bağımlılık sınıfının üst arabirimden türetilmiş yedek sınıflar oluşturun. Hedef sınıfın ortak sanal yöntemler için saptama yöntemleri yerine kullanılabileceği.
 
-2.  *Dolgular* yerine dolgu yöntemi sanal olmayan yöntemler için bir hedef yöntem çağrısına yöneltmektir için çalışma zamanı Araçları'nı kullanın.
+2. *Dolgular* yerine dolgu yöntemi sanal olmayan yöntemler için bir hedef yöntem çağrısına yöneltmektir için çalışma zamanı Araçları'nı kullanın.
 
 Her iki yaklaşım test yönteminde istediğiniz davranışını belirtmek için bağımlılık yöntemine yönelik çağrılar, oluşturulan temsilcileri kullanın.
 

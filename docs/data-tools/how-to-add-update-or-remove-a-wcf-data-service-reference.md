@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099539"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Nasıl yapılır: Ekleme, güncelleştirme veya bir WCF veri hizmeti başvurusunu Kaldır
 A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Kullanım **hizmet Başvurusu Ekle** aramak için iletişim kutusu [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] geçerli çözümde, yerel olarak bir yerel ağ veya Internet üzerinde.
@@ -30,11 +30,11 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Bir dış hizmet için bir başvuru eklemek için
 
-1.  İçinde **Çözüm Gezgini**, hizmeti eklemek ve ardından istediğiniz proje adına sağ tıklayın **hizmet Başvurusu Ekle**.
+1. İçinde **Çözüm Gezgini**, hizmeti eklemek ve ardından istediğiniz proje adına sağ tıklayın **hizmet Başvurusu Ekle**.
 
      **Hizmet Başvurusu Ekle** iletişim kutusu görüntülenir.
 
-2.  İçinde **adresi** kutusuna hizmeti için URL girin ve ardından **Git** hizmet için aranacak. Hizmet kullanıcı adı ve parola güvenlik uygularsa, bir kullanıcı adı ve parolası istenebilir.
+2. İçinde **adresi** kutusuna hizmeti için URL girin ve ardından **Git** hizmet için aranacak. Hizmet kullanıcı adı ve parola güvenlik uygularsa, bir kullanıcı adı ve parolası istenebilir.
 
     > [!NOTE]
     >  Yalnızca güvenilir bir kaynaktan Hizmetleri başvuruda bulunmalıdır. Güvenilmeyen bir kaynaktan başvurularının eklenmesi, güvenliği tehlikeye atabilir.
@@ -43,11 +43,11 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
 
      Arama yapılırken bir ilerleme çubuğu görüntülenir. Tıklayarak arama dilediğiniz zaman durdurabilirsiniz **Durdur**.
 
-3.  İçinde **Hizmetleri** listesinde, bir varlık kümesi seçin ve istediğiniz hizmeti düğümünü genişletin.
+3. İçinde **Hizmetleri** listesinde, bir varlık kümesi seçin ve istediğiniz hizmeti düğümünü genişletin.
 
-4.  İçinde **Namespace** kutusunda, başvuru için kullanmak istediğiniz ad alanını girin.
+4. İçinde **Namespace** kutusunda, başvuru için kullanmak istediğiniz ad alanını girin.
 
-5.  Tıklayın **Tamam** projesine başvuru eklenemiyor.
+5. Tıklayın **Tamam** projesine başvuru eklenemiyor.
 
      Bir hizmeti istemcisi (proxy) oluşturulur ve hizmet açıklayan meta veriler eklenir *app.config* dosya.
 
@@ -74,7 +74,7 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
 
 ### <a name="to-update-a-service-reference"></a>Bir hizmet başvurusu güncelleştirilecek
 
--   İçinde **Çözüm Gezgini**, hizmet başvurusunu sağ tıklayın ve ardından **güncelleştirme hizmet başvurusu**.
+- İçinde **Çözüm Gezgini**, hizmet başvurusunu sağ tıklayın ve ardından **güncelleştirme hizmet başvurusu**.
 
      Başvuru özgün konumundan güncelleştirilir ve hizmeti istemcisi meta verilerindeki değişiklikleri yansıtacak şekilde yeniden ilerleme durumu iletişim kutusu görüntülenir.
 
@@ -83,7 +83,7 @@ A *hizmet başvurusu* bir projeye bir veya daha fazla erişim sağlayan [!INCLUD
 
 ### <a name="to-remove-a-service-reference"></a>Hizmet başvurusunu kaldırmak için
 
--   İçinde **Çözüm Gezgini**, hizmet başvurusunu sağ tıklayın ve ardından **Sil**.
+- İçinde **Çözüm Gezgini**, hizmet başvurusunu sağ tıklayın ve ardından **Sil**.
 
      Hizmet istemcisi çözümden kaldırılacak ve hizmeti tanımlayan meta veriler kaldırılacak *app.config* dosya.
 

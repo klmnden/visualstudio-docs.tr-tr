@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076035"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Bir veri kümesinin içine XML verileri okuma
 
@@ -125,9 +125,9 @@ Bu uygulama için kullanıcı arabirimi aşağıdakilerden oluşur:
 
 ### <a name="to-add-controls-to-the-form"></a>Formu için denetimler ekleme
 
-1.  Açık `Form1` Tasarım görünümünde.
+1. Açık `Form1` Tasarım görünümünde.
 
-2.  Gelen **araç kutusu**, aşağıdaki denetimleri form üzerine sürükleyin:
+2. Gelen **araç kutusu**, aşağıdaki denetimleri form üzerine sürükleyin:
 
     - Bir <xref:System.Windows.Forms.DataGridView> denetimi
 
@@ -135,7 +135,7 @@ Bu uygulama için kullanıcı arabirimi aşağıdakilerden oluşur:
 
     - İki <xref:System.Windows.Forms.Button> denetimleri
 
-3.  Aşağıdaki özellikleri ayarlayın:
+3. Aşağıdaki özellikleri ayarlayın:
 
     |Denetim|Özellik|Ayar|
     |-------------|--------------|-------------|
@@ -150,44 +150,44 @@ Bu uygulama için kullanıcı arabirimi aşağıdakilerden oluşur:
 
 Bu adımda, adlı yeni bir veri kümesi oluşturma `authors`. Veri kümeleri hakkında daha fazla bilgi için bkz. [Visual Studio'daki veri kümesi Araçları](../data-tools/dataset-tools-in-visual-studio.md).
 
-1.  İçinde **Çözüm Gezgini**, kaynak dosyasını seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesini **Çözüm Gezgini** araç çubuğu.
+1. İçinde **Çözüm Gezgini**, kaynak dosyasını seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesini **Çözüm Gezgini** araç çubuğu.
 
-2.  Gelen [araç kutusu, veri sekmesi](../ide/reference/toolbox-data-tab.md), sürükleyin bir **veri kümesi** üzerine **Form1**.
+2. Gelen [araç kutusu, veri sekmesi](../ide/reference/toolbox-data-tab.md), sürükleyin bir **veri kümesi** üzerine **Form1**.
 
-3.  İçinde **veri kümesi Ekle** iletişim kutusunda **türü belirsiz dataset**ve ardından **Tamam**.
+3. İçinde **veri kümesi Ekle** iletişim kutusunda **türü belirsiz dataset**ve ardından **Tamam**.
 
      **DataSet1** bileşen tepsisine eklenir.
 
-4.  İçinde **özellikleri** penceresinde **adı** ve <xref:System.Data.DataSet.DataSetName%2A> özelliklerini`AuthorsDataSet`.
+4. İçinde **özellikleri** penceresinde **adı** ve <xref:System.Data.DataSet.DataSetName%2A> özelliklerini`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>XML dosyasının DataSet'e okumak için olay işleyicisi oluşturun
 
 **Okuma XML** düğmesi kümesine XML dosyasını okur. Üzerinde özelliklerini daha sonra Ayarlar <xref:System.Windows.Forms.DataGridView> veri kümesine bağlanan bir denetim.
 
-1.  İçinde **Çözüm Gezgini**seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesini **Çözüm Gezgini** araç çubuğu.
+1. İçinde **Çözüm Gezgini**seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesini **Çözüm Gezgini** araç çubuğu.
 
-2.  Seçin **okuma XML** düğmesi.
+2. Seçin **okuma XML** düğmesi.
 
      **Kod Düzenleyicisi** açılır `ReadXmlButton_Click` olay işleyicisi.
 
-3.  Aşağıdaki kodu yazın `ReadXmlButton_Click` olay işleyicisi:
+3. Aşağıdaki kodu yazın `ReadXmlButton_Click` olay işleyicisi:
 
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
 
-4.  İçinde `ReadXMLButton_Click` olay işleyici kodu, değişiklik `filepath =` doğru yola girişi.
+4. İçinde `ReadXMLButton_Click` olay işleyici kodu, değişiklik `filepath =` doğru yola girişi.
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Şema metin kutusunda görüntülemek için olay işleyicisi oluşturun
 
 **Göster şema** düğmesi oluşturur bir <xref:System.IO.StringWriter> şema ile doldurulur ve görüntülenen nesne <xref:System.Windows.Forms.TextBox>denetimi.
 
-1.  İçinde **Çözüm Gezgini**seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesi.
+1. İçinde **Çözüm Gezgini**seçin **Form1**ve ardından **Görünüm Tasarımcısı** düğmesi.
 
-2.  Seçin **Göster şema** düğmesi.
+2. Seçin **Göster şema** düğmesi.
 
      **Kod Düzenleyicisi** açılır `ShowSchemaButton_Click` olay işleyicisi.
 
-3.  Aşağıdaki kodu yapıştırın `ShowSchemaButton_Click` olay işleyicisi.
+3. Aşağıdaki kodu yapıştırın `ShowSchemaButton_Click` olay işleyicisi.
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -196,13 +196,13 @@ Bu adımda, adlı yeni bir veri kümesi oluşturma `authors`. Veri kümeleri hak
 
 Şimdi beklendiği gibi davrandığından emin olmak için form test edebilirsiniz.
 
-1.  Seçin **F5** uygulamayı çalıştırın.
+1. Seçin **F5** uygulamayı çalıştırın.
 
-2.  Seçin **okuma XML** düğmesi.
+2. Seçin **okuma XML** düğmesi.
 
      DataGridView XML dosyasının içeriğini görüntüler.
 
-3.  Seçin **Göster şema** düğmesi.
+3. Seçin **Göster şema** düğmesi.
 
      XML Şeması XML dosyası için metin kutusu görüntüler.
 

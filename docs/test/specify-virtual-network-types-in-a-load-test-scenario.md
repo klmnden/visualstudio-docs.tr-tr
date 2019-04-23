@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094365"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Bir yük testi senaryosunda sanal ağ türlerini belirtme
 
@@ -41,17 +41,17 @@ Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtua
 
 Visual Studio yazılım tabanlı gerçek ağ öykünmesi yük testleri de dahil olmak üzere tüm test türleri için kullanır. Gerçek ağ öykünmesi ağ paketlerinin doğrudan düzenlenmesiyle ağ koşullarının benzetimini yapar. Gerçek ağ öykünücü Ethernet gibi güvenilir bir fiziksel bağlantı kullanarak hem kablolu hem de kablosuz ağların davranışını taklit edebilir. Aşağıdaki ağ öznitelikleri gerçek ağ öykünmesine dahil edilir:
 
--   (Gecikme) ağ üzerinden gidiş-dönüş süresi
+- (Gecikme) ağ üzerinden gidiş-dönüş süresi
 
--   Kullanılabilir bant genişliği
+- Kullanılabilir bant genişliği
 
--   Sıraya alma davranışı
+- Sıraya alma davranışı
 
--   Paket kaybı
+- Paket kaybı
 
--   Paketlerin yeniden sıralanması
+- Paketlerin yeniden sıralanması
 
--   Hata yayılmaları.
+- Hata yayılmaları.
 
 Gerçek ağ öykünmesi aynı zamanda IP adresleri veya TCP, UDP ve ICMP gibi protokollere dayanan ağ paket filtrelemelerinde esneklik sağlar.
 
@@ -59,30 +59,30 @@ Gerçek ağ öykünmesi ağ tabanlı uygulama geliştiriciler ve test edenler ta
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Bir senaryo için yeni ağlar eklemek için
 
-1.  Bir senaryo için ağ karışımını belirleme işlemi sırasında seçin **Ekle**.
+1. Bir senaryo için ağ karışımını belirleme işlemi sırasında seçin **Ekle**.
 
      Yeni bir ağ giriş kılavuza eklenir.
 
     > [!NOTE]
     > Görüntülenecek **Ağ Karışımını Düzenle** iletişim kutusu, varolan bir senaryoyu sağ tıklayın ve ardından **Ağ Karışımını Düzenle**.
 
-2.  İçinde **ağ türü** sütununda, yeni giriş için oku seçin. İstediğiniz ağ türünü seçin.
+2. İçinde **ağ türü** sütununda, yeni giriş için oku seçin. İstediğiniz ağ türünü seçin.
 
-3.  (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Ağları eklemeyi tamamladığınızda, seçin **Tamam**.
+4. Ağları eklemeyi tamamladığınızda, seçin **Tamam**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Ağları senaryodan kaldırmak için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
-2.  Bir ağ kaldırın ve istediğiniz senaryoyu **Ağ Karışımını Düzenle**. **Ağ Karışımını Düzenle** iletişim kutusu görüntülenir.
+2. Bir ağ kaldırın ve istediğiniz senaryoyu **Ağ Karışımını Düzenle**. **Ağ Karışımını Düzenle** iletişim kutusu görüntülenir.
 
-3.  Kılavuz ağ seçin ve sonra **Kaldır**.
+3. Kılavuz ağ seçin ve sonra **Kaldır**.
 
-4.  (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (İsteğe bağlı) Test dağıtımını belirtmek için karıştırma denetimini ayarlayın. Daha fazla bilgi için [karışımı denetimi ile ilgili](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Ağları kaldırma işlemini tamamladığınızda, seçin **Tamam**.
+5. Ağları kaldırma işlemini tamamladığınızda, seçin **Tamam**.
 
 ## <a name="about-the-mix-control"></a>Karışım denetimi hakkında
 

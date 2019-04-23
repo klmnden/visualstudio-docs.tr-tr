@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6cb3b1f0d1c21a7cde53f8b3eecf1cd25c26b394
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 684738fd2180a3c5bf269b2a30efd970bcf9ab08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092207"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Nasıl yapılır: Yerel çerçeveler eksik çağrı yığını penceresinde olmadığında yönetilen kodların dışına adımla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Kodunuzu görünmez yerel çerçeveler varsa **çağrı yığını** yönetilen 
   
 ### <a name="to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Yerel çerçeveler çağrı yığını görüntüden eksik olmadığında yönetilen kodların dışına geçirmek  
   
-1.  Yerel kodda, yönetilen kod çağrısından sonra bir konum kesme noktası ayarlayın.  
+1. Yerel kodda, yönetilen kod çağrısından sonra bir konum kesme noktası ayarlayın.  
   
-2.  Üzerinde **hata ayıklama** menüsünde seçin **devam**.  
+2. Üzerinde **hata ayıklama** menüsünde seçin **devam**.  
   
      Yönetilen çağrı yapıldığında yürütme yerel kodda kesme noktasında durur.  
   

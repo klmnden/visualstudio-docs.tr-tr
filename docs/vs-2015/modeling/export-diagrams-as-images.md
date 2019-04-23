@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104128"
 ---
 # <a name="export-diagrams-as-images"></a>Diyagramları görüntü olarak dışarı aktarma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Visual Studio'da proje katılımcılarını, kullanıcıları veya Visual Studio
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Başka bir uygulamaya bir diyagram veya diyagram parçası kopyalamak için  
   
-1.  Diyagram üzerinde bazı veya tüm şekilleri seçin.  
+1. Diyagram üzerinde bazı veya tüm şekilleri seçin.  
   
-2.  Seçiminize sağ tıklayın ve ardından **kopyalama**.  
+2. Seçiminize sağ tıklayın ve ardından **kopyalama**.  
   
-3.  Seçiminizi istediğiniz uygulamaya yapıştırın.  
+3. Seçiminizi istediğiniz uygulamaya yapıştırın.  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>Görüntü otomatik bir işlem bir parçası olarak dışarı aktarmak için  
   
--   Bkz: [dışarı UML diyagramlarını görüntü dosyalarına](../modeling/export-uml-diagrams-to-image-files.md).  
+- Bkz: [dışarı UML diyagramlarını görüntü dosyalarına](../modeling/export-uml-diagrams-to-image-files.md).  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Modelleme diyagramında bir XML Paper Specification (.xps) dosyası olarak kaydetmek için  
   
-1.  Üzerinde **dosya** menüsünde tıklatın **yazdırma** açmak için **yazdırma** iletişim kutusu.  
+1. Üzerinde **dosya** menüsünde tıklatın **yazdırma** açmak için **yazdırma** iletişim kutusu.  
   
-2.  İçinde **adı** listesinden **Microsoft XPS Belge Yazıcısı**ve ardından **Tamam**.  
+2. İçinde **adı** listesinden **Microsoft XPS Belge Yazıcısı**ve ardından **Tamam**.  
   
-3.  İçinde **dosyayı farklı Kaydet** dosyayı farklı Kaydet iletişim kutusu bir **Dokument XPS (\*.xps)** dosya.  
+3. İçinde **dosyayı farklı Kaydet** dosyayı farklı Kaydet iletişim kutusu bir **Dokument XPS (\*.xps)** dosya.  
   
 ## <a name="net-framework-security"></a>.NET Framework Güvenliği  
   

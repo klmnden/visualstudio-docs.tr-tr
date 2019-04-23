@@ -10,12 +10,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076621"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>İzlenecek yol: İçerik Türünü Dosya Adı Uzantısına Bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
 ## <a name="creating-a-mef-project"></a>MEF proje oluşturma  
   
-1.  Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `ContentTypeTest`.  
+1. Bir C# VSIX projesi oluşturun. (İçinde **yeni proje** iletişim kutusunda **Visual C# / genişletilebilirlik**, ardından **VSIX projesi**.) Çözüm adı `ContentTypeTest`.  
   
-2.  İçinde **source.extension.vsixmanifest** dosya, Git **varlıklar** sekmesini tıklatıp ayarlamak **türü** alanı **Microsoft.VisualStudio.MefComponent**, **kaynak** alanı **mevcut çözümde bir proje**ve **proje** projesinin adı alanı.  
+2. İçinde **source.extension.vsixmanifest** dosya, Git **varlıklar** sekmesini tıklatıp ayarlamak **türü** alanı **Microsoft.VisualStudio.MefComponent**, **kaynak** alanı **mevcut çözümde bir proje**ve **proje** projesinin adı alanı.  
   
 ## <a name="defining-the-content-type"></a>İçerik türü tanımlama  
   
-1.  Bir sınıf dosyası ekleyin ve adlandırın `FileAndContentTypes`.  
+1. Bir sınıf dosyası ekleyin ve adlandırın `FileAndContentTypes`.  
   
-2.  Aşağıdaki derlemelere başvurular ekleyin:  
+2. Aşağıdaki derlemelere başvurular ekleyin:  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  Aşağıdaki `using` yönergeleri.  
+3. Aşağıdaki `using` yönergeleri.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -52,14 +52,14 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
     ```  
   
-4.  Tanımları içeren bir statik sınıf bildirin.  
+4. Tanımları içeren bir statik sınıf bildirin.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  Bu sınıf, dışarı aktarma bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> "gizlenmiş" adlı ve temel tanımına "metin" olarak bildirin.  
+5. Bu sınıf, dışarı aktarma bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> "gizlenmiş" adlı ve temel tanımına "metin" olarak bildirin.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -73,7 +73,7 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>Bir içerik türü için bir dosya adı uzantısına bağlama  
   
--   Bu içerik türü için bir dosya adı uzantısı eşlemek için dışarı aktarma bir <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ".hid" uzantısı olan ve "gizlenmiş" içerik türü.  
+- Bu içerik türü için bir dosya adı uzantısı eşlemek için dışarı aktarma bir <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ".hid" uzantısı olan ve "gizlenmiş" içerik türü.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -92,11 +92,11 @@ Kendi içerik türü tanımlayabilir ve düzenleyici Yönetilen Genişletilebili
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>İçerik türü Düzenleyicisi vermeyi ekleme  
   
-1.  Düzenleyici uzantısı oluşturun. Örneğin, açıklanan kenar boşluğu glif uzantısı kullanabilirsiniz [izlenecek yol: Bir dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1. Düzenleyici uzantısı oluşturun. Örneğin, açıklanan kenar boşluğu glif uzantısı kullanabilirsiniz [izlenecek yol: Bir dış boşluk karakteri oluşturma](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  Bu yordamda tanımlanan sınıfı ekleyin.  
+2. Bu yordamda tanımlanan sınıfı ekleyin.  
   
-3.  Extension sınıfının dışarı aktardığınızda ekleme bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "kendisine HID" türü.  
+3. Extension sınıfının dışarı aktardığınızda ekleme bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "kendisine HID" türü.  
   
     ```csharp  
     [Export]  

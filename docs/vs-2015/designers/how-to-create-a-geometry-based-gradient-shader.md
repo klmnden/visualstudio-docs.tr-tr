@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071726"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Nasıl yapılır: Geometri tabanlı gradyan gölgelendirici oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Bu belge gölgelendirici Tasarımcısı ve yönlendirilmiş grafik gölgelendiri
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Düğüm için bir gölgelendirici grafiği ekleme  
+- Düğüm için bir gölgelendirici grafiği ekleme  
   
--   Düğüm özelliklerini ayarlama  
+- Düğüm özelliklerini ayarlama  
   
--   Düğüm bağlantısı kesiliyor  
+- Düğüm bağlantısı kesiliyor  
   
--   Düğümleri bağlanma  
+- Düğümleri bağlanma  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Geometri tabanlı gradyan gölgelendirici oluşturma  
  Geometri tabanlı bir gölgelendirici pikselin konumu gölgelendiricinize ekleyerek uygulayabilirsiniz. Gölgelendirme dillerde bir piksel 2B ekranda yalnızca, rengini ve konumunu daha fazla bilgi içerir. Bir pikselin — olarak bilinen bir *parça* bazı sistemlerde — karşılık gelen bir piksel yüzeyine açıklayan değerleri oluşan bir koleksiyondur. Bu belgede açıklanan gölgelendirici, dünya alanındaki parça son çıktı rengini etkileyen bir 3B nesnenin her piksel yüksekliği kullanır.  

@@ -8,27 +8,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111668"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Nasıl yapılır: Başlangıç görünümünden çalışma alanına düğüm ekleme
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Nasıl yapılır: Başlangıç Görünümünden çalışma alanına düğüm ekleme
 
 Bu konu, genel düğüm eklemeyi açıklar [XML şema Tasarımcısı çalışma alanı](../xml-tools/xml-schema-designer-workspace.md) gelen [başlangıç görünümündeki](../xml-tools/start-view.md).
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Düğüm başlangıç görünümünden çalışma alanına eklemek için
 
-1.  Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Bağlantısındaki [nasıl yapılır: Bir XSD şema dosyası oluşturma ve düzenleme](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  XML Düzenleyicisi'nde sağ tıklayıp **Görünüm Tasarımcısı**.
+2. XML Düzenleyicisi'nde sağ tıklayıp **Görünüm Tasarımcısı**.
 
      Başlangıç görünümü görüntülenir.
 
      İçinde **şema kümesi ayrıntıları** bölümünde, iki olduğuna dikkat edin (**2**) **genel karmaşık türler**.
 
-3.  Tıklayarak **ekleme** sağındaki bağlantı **genel karmaşık türler** başlığı.
+3. Tıklayarak **ekleme** sağındaki bağlantı **genel karmaşık türler** başlığı.
 
      `USAddress` Ve `PurchaseOrderType` karmaşık tür düğümleri graf görünümünü tasarım yüzeyinde görünür.

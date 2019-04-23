@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107185"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Bir Simgenin veya Dekoratörün Görünürlüğünü Denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
 1. DSL tanım diyagramı simgeler veya görünmesini istediğiniz metin dekoratörleri şekli sınıfına ekleyin.  
   
-   1.  Şekil sınıfı sağ tıklatın, **Ekle**ve ardından dekoratör gerekli türüne tıklayın.  
+   1. Şekil sınıfı sağ tıklatın, **Ekle**ve ardından dekoratör gerekli türüne tıklayın.  
   
-   2.  Dekoratörün ait ayarlamak **konumu** özelliği. Aynı konumda birden fazla dekoratöre sahip olabilir. Örneğin erkek aynı konum paylaşımı kadın için simgeler olabilir.  
+   2. Dekoratörün ait ayarlamak **konumu** özelliği. Aynı konumda birden fazla dekoratöre sahip olabilir. Örneğin erkek aynı konum paylaşımı kadın için simgeler olabilir.  
   
-   3.  Ayarlama **varsayılan simge** bir simge dekoratörünün özelliği.  
+   3. Ayarlama **varsayılan simge** bir simge dekoratörünün özelliği.  
   
 2. Şekil sınıfı DSL tanım diyagramı üzerinde alan sınıfı arasındaki gri çizgidir diyagram öğesi eşlemesi'ni seçin.  
   
@@ -44,7 +44,7 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
     Aksi takdirde, açılan menüsüne tıklayın ve ilişki veya özelliği olduğu sınıf gidin.  
   
-   -   Bir hata raporu önlemek için ile işaretlenmiş bir ilişki gezinmek değil "*" Gezinti aracında.  
+   - Bir hata raporu önlemek için ile işaretlenmiş bir ilişki gezinmek değil "*" Gezinti aracında.  
   
 6. Ayarlama **filtre özelliği** bir alan özelliği için. Örneğin, cinsiyeti.  
   
@@ -60,7 +60,7 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Bir formüle göre bir dekoratörün görünürlüğünü denetleme için  
   
-1.  Hesaplanan alan özelliği için etki alanı sınıfı ekleyin. İçinde **özellikleri** penceresinde aşağıdaki değerleri ayarlayın:  
+1. Hesaplanan alan özelliği için etki alanı sınıfı ekleyin. İçinde **özellikleri** penceresinde aşağıdaki değerleri ayarlayın:  
   
      **IsBrowsable =**`False`**-bu özellik kullanıcıdan gizler**  
   
@@ -72,27 +72,27 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
      Daha fazla bilgi için [hesaplanan ve özel depolama özellikleri](../modeling/calculated-and-custom-storage-properties.md).  
   
-2.  Yeni özellik dekoratör görünürlüğünü denetleme yapın.  
+2. Yeni özellik dekoratör görünürlüğünü denetleme yapın.  
   
-    1.  Etki alanı sınıfı gri satırından şeklin olduğu diyagram öğesi eşlemesi'ni seçin. İçinde **DSL ayrıntıları** penceresini açık **DecoratorMap** sekmesi.  
+    1. Etki alanı sınıfı gri satırından şeklin olduğu diyagram öğesi eşlemesi'ni seçin. İçinde **DSL ayrıntıları** penceresini açık **DecoratorMap** sekmesi.  
   
-    2.  Denetleme **görünürlük filtresini** kutusu.  
+    2. Denetleme **görünürlük filtresini** kutusu.  
   
-    3.  İçinde **filtre özelliği**, denetim özelliği seçin **DecoratorControl**.  
+    3. İçinde **filtre özelliği**, denetim özelliği seçin **DecoratorControl**.  
   
-    4.  Altında **görünürlük girdileri**, girin `True`.  
+    4. Altında **görünürlük girdileri**, girin `True`.  
   
-3.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç.  
+3. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini araç.  
   
-4.  Tıklayın **Çözümü Derle** üzerinde **derleme** menüsü.  
+4. Tıklayın **Çözümü Derle** üzerinde **derleme** menüsü.  
   
-5.  Göründü hata raporuna çift tıklayın: "*YourClass* bir için GetDecoratorControlValue neobsahuje platnou definici...".  
+5. Göründü hata raporuna çift tıklayın: "*YourClass* bir için GetDecoratorControlValue neobsahuje platnou definici...".  
   
      The text editor opens on Dsl\GeneratedCode\DomainClasses.cs. Vurgulanan hata bir yöntem eklemek için istek bir açıklamadır.  
   
-6.  Ad alanı, sınıf ve metod eksik olan unutmayın.  Örneğin, Company.FamilyTree.Person.GetDecoratorControlValue().  
+6. Ad alanı, sınıf ve metod eksik olan unutmayın.  Örneğin, Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7.  Ayrı kod dosyasında, eksik yöntemi içeren kısmi sınıf tanımını yazın. Örneğin:  
+7. Ayrı kod dosyasında, eksik yöntemi içeren kısmi sınıf tanımını yazın. Örneğin:  
   
     ```  
     namespace Company.FamilyTree  
@@ -105,7 +105,7 @@ A *dekoratör* bir simge ya da bir etki alanına özgü dil (DSL) şeklinde gör
   
      Program kodunda modeli özelleştirme hakkında daha fazla bilgi için bkz. [gezinme ve güncelleştirme Program kodundaki modeli](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-8.  Yeniden oluşturun ve çözümü çalıştırın.  
+8. Yeniden oluşturun ve çözümü çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Şekiller ve bağlayıcıları tanımlama](../modeling/defining-shapes-and-connectors.md)   

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Visual Studio aboneliğinize dahil Azure avantajı etkinleştirme hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dead0299c3af1b22813c2fe41cde728c6bb0b4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066175"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri Microsoft Azure'da kullanın
 
@@ -91,8 +91,8 @@ Visual Studio Azure kredi ve indirimler kullanmaya devam etmek için aşağıdak
 Ekibinizin ve kuruluşunuzun biriyle abonelikleri sizin adınıza satın alıyorsa, kuruluşunuzun Visual Studio yöneticisine başvurun ve gereksinim duyduğunuz miktarda aylık Azure kredisi için de yetki verir bir Visual Studio aboneliği isteyin.   Lütfen Azure aboneliğinizi aktarma konusunda endişelenmek zorunda olmadığınız böylece önceki aboneliğinizi atandığı aynı kullanıcı kimliği için yeni abonelik atamak için yöneticiyle isteyin.
 
 Lütfen doğrudan bir abonelik satın alırsanız, aşağıdakilerden birini yapın:
-1.  Bir yıllık Visual Studio satın [Kurumsal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) veya [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) bulut aboneliği Visual Studio Market aracılığıyla.
-2.  Geçerli aboneliğinizde yenileyerek % 50 veya daha yüksek indirim yararlanmak [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
+1. Bir yıllık Visual Studio satın [Kurumsal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) veya [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) bulut aboneliği Visual Studio Market aracılığıyla.
+2. Geçerli aboneliğinizde yenileyerek % 50 veya daha yüksek indirim yararlanmak [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
 Tüm karşılaştırma [abonelikleri ve faydaları](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -108,8 +108,8 @@ Hata bu e-posta aldığınız düşünüyorsanız, lütfen iletişime geçin [Az
 
 ## <a name="support-resources"></a>Destek kaynakları
 
--  Azure'la ilgili yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
+- Azure'la ilgili yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
     - Teknik Destek: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure belgeleri](/azure/)
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

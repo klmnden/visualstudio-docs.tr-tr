@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095964"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Sorun Giderme ve Bilinen Sorunlar (Unity için Visual Studio Araçları)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Bu bölümde, bilinen sorunların açıklamalarını Unity için Visual Studio A
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Unity projeniz UnityVS 1.8 ' Visual Studio Araçları için Unity 1.9 geçirmek için  
   
-1.  Unity projenizden eski çözüm ve proje dosyaları silin. Visual Studio .sln Unity proje kök dizininde bulun ve. * proj dosyaları ve tüm bunları silin.  
+1. Unity projenizden eski çözüm ve proje dosyaları silin. Visual Studio .sln Unity proje kök dizininde bulun ve. * proj dosyaları ve tüm bunları silin.  
   
-2.  Unity paketini için Visual Studio Araçları, Unity projesine içeri aktarmalısınız. VSTU paketini içeri aktarma hakkında daha fazla bilgi için Unity için Visual Studio Araçları yapılandırma bakın [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) sayfası.  
+2. Unity paketini için Visual Studio Araçları, Unity projesine içeri aktarmalısınız. VSTU paketini içeri aktarma hakkında daha fazla bilgi için Unity için Visual Studio Araçları yapılandırma bakın [Başlarken](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) sayfası.  
   
-3.  Yeni çözüm ve proje dosyalarını oluşturur. Bunları şimdi Unity Editor'ana menüsündeki oluşturmak istiyorsanız seçin **Visual Studio Araçları**, **proje dosyaları oluştur**. Aksi takdirde, istiyorsanız bu adımı atlayabilirsiniz; Unity için Visual Studio Araçları oluşturacağını yeni dosyalar otomatik olarak seçtiğiniz zaman **Visual Studio Araçları**, **Visual Studio'da Aç**.  
+3. Yeni çözüm ve proje dosyalarını oluşturur. Bunları şimdi Unity Editor'ana menüsündeki oluşturmak istiyorsanız seçin **Visual Studio Araçları**, **proje dosyaları oluştur**. Aksi takdirde, istiyorsanız bu adımı atlayabilirsiniz; Unity için Visual Studio Araçları oluşturacağını yeni dosyalar otomatik olarak seçtiğiniz zaman **Visual Studio Araçları**, **Visual Studio'da Aç**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio Unity için Visual Studio Araçları oluşturulan çözüm yüklenmiyor  
  Daha fazla bilgi için [bu stackoverflow sorusunun yanıtını](http://stackoverflow.com/a/24035907/36702).  
@@ -44,11 +44,11 @@ Bu bölümde, bilinen sorunların açıklamalarını Unity için Visual Studio A
 ## <a name="known-issues"></a>Bilinen Sorunlar  
  Bilinen sorunlar vardır, hata ayıklayıcı Unity'nın daha eski C# Derleyici sürümü ile nasıl etkileştiğini gelen neden Visual Studio Araçları Unity için. Bu sorunları çözmek için çalışıyoruz ancak bu sırada aşağıdaki sorunlarla karşılaşabilirsiniz.  
   
--   Hata ayıklama sırasında Unity bazen kilitleniyor.  
+- Hata ayıklama sırasında Unity bazen kilitleniyor.  
   
--   Unity bazen hata ayıklama sırasında donuyor.  
+- Unity bazen hata ayıklama sırasında donuyor.  
   
--   İçine ve dışına yöntemleri bazen Adımlama özellikle yineleyiciler veya switch deyimleri içinde yanlış bir şekilde davranır.  
+- İçine ve dışına yöntemleri bazen Adımlama özellikle yineleyiciler veya switch deyimleri içinde yanlış bir şekilde davranır.  
   
 ## <a name="reporting-errors"></a>Hata Raporlama  
  Lütfen kilitlenen, donuyor veya diğer hatalarla karşılaşırsanız, hata raporları göndermek kalite Unity için Visual Studio Araçları'nın geliştirmemize yardımcı olun. Bu, bize araştırmak ve Unity için Visual Studio Araçları'ndaki sorunları gidermeye yardımcı olur. Teşekkür ederiz!  

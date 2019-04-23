@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8a1126427a1454ec09f0460cb9da1eb65fb72b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099851"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında ilişkilendirme oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Sınıf Tasarımcısı'nda ilişkilendirme çizgileri, bir diyagramdaki sınıfl
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Sınıf Diyagramı'nda bir ilişkilendirme çizgisi tanımlamak için  
   
-1.  Araç Kutusu'nda, Sınıf Tasarımcısı'nın altında seçin **ilişkilendirme**.  
+1. Araç Kutusu'nda, Sınıf Tasarımcısı'nın altında seçin **ilişkilendirme**.  
   
-2.  İlişkilendirme ile bağlamak istediğiniz iki şekil arasına bir çizgi çizin.  
+2. İlişkilendirme ile bağlamak istediğiniz iki şekil arasına bir çizgi çizin.  
   
      İlk sınıfta yeni bir özellik oluşturulur. Bu özellik varsayılan ada sahip bir ilişkilendirme çizgisi görüntüler (şekildeki bir bölme içinde özellik olarak değil). Türü ise, ilişkilendirme çizgisinin işaret ettiği şekildir.  
   
@@ -48,13 +48,13 @@ Sınıf Tasarımcısı'nda ilişkilendirme çizgileri, bir diyagramdaki sınıfl
   
   \- veya -  
   
-1.  İlişkilendirme olarak gösterilen özelliği içeren şekle tıklayın.  
+1. İlişkilendirme olarak gösterilen özelliği içeren şekle tıklayın.  
   
      Şekil odağı alır ve üyeleri Sınıf Ayrıntıları penceresinde ve Özellikler penceresinde görüntülenir.  
   
-2.  Sınıf Ayrıntıları penceresinde ya da Özellikler penceresinde bu özelliğe ilişkin ad alanını düzenleyin ve Enter tuşuna basın.  
+2. Sınıf Ayrıntıları penceresinde ya da Özellikler penceresinde bu özelliğe ilişkin ad alanını düzenleyin ve Enter tuşuna basın.  
   
      Adı güncelleştirilmiştir **sınıf ayrıntıları** penceresinde, ilişkilendirme çizgisi, Özellikler penceresinde ve kod.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Üye gösterimi ile ilişkilendirme gösterimi (Sınıf Tasarımcısı) arasında geçiş](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
+ [Nasıl yapılır: Üye Gösterimi ile İlişkilendirme Gösterimi Arasında Geçiş (Sınıf Tasarımcısı)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

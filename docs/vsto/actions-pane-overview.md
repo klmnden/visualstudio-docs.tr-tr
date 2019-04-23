@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099747"
 ---
 # <a name="actions-pane-overview"></a>Eylemler bölmesine genel bakış
   Eylemler bölmesi bir özelleştirilebilirdir **belge eylemleri** görev bölmesi, belirli Microsoft Office Word belgesi ya da Microsoft Office Excel çalışma kitabına eklenmiş. Eylemler bölmesinde içindeki diğer yerleşik görev bölmeleri yanı sıra Office görev bölmesi gibi barındırılan **XML kaynağı** görev bölmesinde Excel veya **stilleri ve biçimlendirme** Word görev bölmesinde. Windows Forms veya WPF denetimleri, Eylemler bölmesi kullanıcı arabirimini tasarlamak için kullanabilirsiniz.
@@ -61,17 +61,17 @@ ms.locfileid: "56608818"
 
  Çözümünüzü görev bölmesinde gizlemek için birkaç seçeneğiniz vardır:
 
--   Word'ü için ayarlama <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> özelliği <xref:Microsoft.Office.Interop.Word.TaskPane> belge eylemler bölmesindeki temsil eden nesne **false**. Aşağıdaki kod örneği çalışmak üzere tasarlanmıştır `ThisDocument` projenizdeki sınıfı.
+- Word'ü için ayarlama <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> özelliği <xref:Microsoft.Office.Interop.Word.TaskPane> belge eylemler bölmesindeki temsil eden nesne **false**. Aşağıdaki kod örneği çalışmak üzere tasarlanmıştır `ThisDocument` projenizdeki sınıfı.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   Excel için ayarlanan <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> özelliği <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> nesnesini **false**. Aşağıdaki kod örneği çalışmak üzere tasarlanmıştır `ThisWorkbook` projenizdeki sınıfı.
+- Excel için ayarlanan <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> özelliği <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> nesnesini **false**. Aşağıdaki kod örneği çalışmak üzere tasarlanmıştır `ThisWorkbook` projenizdeki sınıfı.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   Word veya Excel için alternatif olarak ayarlayabilirsiniz <xref:Microsoft.Office.Core.CommandBar.Visible%2A> özelliğini temsil eden görev bölmesine komut çubuğunun **false**. Aşağıdaki kod örneği çalışmak üzere tasarlanmıştır `ThisDocument` veya `ThisWorkbook` projenizdeki sınıfı.
+- Word veya Excel için alternatif olarak ayarlayabilirsiniz <xref:Microsoft.Office.Core.CommandBar.Visible%2A> özelliğini temsil eden görev bölmesine komut çubuğunun **false**. Aşağıdaki kod örneği çalışmak üzere tasarlanmıştır `ThisDocument` veya `ThisWorkbook` projenizdeki sınıfı.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608818"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Excel ve Word kullanıcı arabirimini kullanarak eylemler bölmesini görüntülemek için
 
-1.  Şerit üzerinde tıklayın **görünümü** sekmesi.
+1. Şerit üzerinde tıklayın **görünümü** sekmesi.
 
-2.  İçinde **Göster/Gizle** grubunda **belge eylemleri** iki durumlu düğme.
+2. İçinde **Göster/Gizle** grubunda **belge eylemleri** iki durumlu düğme.
 
 ## <a name="program-actions-pane-events"></a>Program Eylemler bölmesinde olayları
  Eylemler bölmesine birden çok kullanıcı denetimi ekleyin ve ardından gösteren ve kullanıcı denetimleri gizleyerek belge olaylarına yanıt için kod yazma. XML Şeması öğelerini belgenize eşlerseniz, ekleme noktasını bir XML öğeleri içinde olduğunda, belirli kullanıcı denetimleri Eylemler bölmesinde gösterebilirsiniz. Daha fazla bilgi için [nasıl yapılır: Şemaları Visual Studio içindeki Word belgeleriyle eşleştirme](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) ve [nasıl yapılır: Visual Studio içindeki çalışma sayfalarıyla eşleştirme şemaları eşleme](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
@@ -114,7 +114,7 @@ ms.locfileid: "56608818"
 |FromLeft|Eylemler bölmesinde soldan yığın.|
 |FromRight|Eylemler bölmesinde sağdan yığılır.|
 |FromTop|Eylemler bölmesinin üst kısmından yığın.|
-|Hiçbiri|Yığın sıralaması tanımlanan; Sipariş geliştirici tarafından kontrol edilir.|
+|Yok.|Yığın sıralaması tanımlanan; Sipariş geliştirici tarafından kontrol edilir.|
 
  Aşağıdaki kod kümeleri <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> Eylemler bölmesinin üst kullanıcı denetimleri yığın özelliği.
 

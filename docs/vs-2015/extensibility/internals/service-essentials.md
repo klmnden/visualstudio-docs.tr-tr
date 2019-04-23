@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111604"
 ---
 # <a name="service-essentials"></a>Hizmet Temel Bileşenleri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı 
   
  Hiçbir bulunabilirliği hizmetleriniz var. Bu nedenle, hizmet tanımlayıcısı (SID) kullanmak isteyen bir hizmetin bilmeniz gerekir ve sağladığı hangi arabirimleri bilmeniz gerekir. Hizmet için başvuru belgeleri, bu bilgileri sağlar.  
   
--   Hizmet sağlayan VSPackages hizmet sağlayıcıları çağrılır.  
+- Hizmet sağlayan VSPackages hizmet sağlayıcıları çağrılır.  
   
--   Küresel hizmetler, diğer Vspackages'a sağlanan hizmetleri çağrılır.  
+- Küresel hizmetler, diğer Vspackages'a sağlanan hizmetleri çağrılır.  
   
--   Bunları uygulayan VSPackage veya oluşturur, herhangi bir nesne için kullanılabilen hizmetler, yerel Hizmetleri olarak adlandırılır.  
+- Bunları uygulayan VSPackage veya oluşturur, herhangi bir nesne için kullanılabilen hizmetler, yerel Hizmetleri olarak adlandırılır.  
   
--   Yerleşik hizmetlere ya da diğer paketleri tarafından sağlanan hizmetleri değiştirmek Hizmetleri hizmeti geçersiz kılmaları çağrılır.  
+- Yerleşik hizmetlere ya da diğer paketleri tarafından sağlanan hizmetleri değiştirmek Hizmetleri hizmeti geçersiz kılmaları çağrılır.  
   
--   Hizmetleri ya da hizmeti geçersiz kılmaları, isteğe bağlı olarak yüklenen, sağladığı hizmet başka bir VSPackage'ı tarafından istendiğinde, diğer bir deyişle, hizmet sağlayıcısı yüklenir.  
+- Hizmetleri ya da hizmeti geçersiz kılmaları, isteğe bağlı olarak yüklenen, sağladığı hizmet başka bir VSPackage'ı tarafından istendiğinde, diğer bir deyişle, hizmet sağlayıcısı yüklenir.  
   
--   İsteğe bağlı yükleme desteklemek için bir hizmet sağlayıcısı, küresel hizmetler ile kaydeder [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [kayıt hizmetleri](../../misc/registering-services.md).  
+- İsteğe bağlı yükleme desteklemek için bir hizmet sağlayıcısı, küresel hizmetler ile kaydeder [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Daha fazla bilgi için [kayıt hizmetleri](../../misc/registering-services.md).  
   
--   Bir hizmet edindikten sonra kullanın [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (yönetilmeyen kod) veya istenen arabirim, örneğin almak için (yönetilen kod için) atama:  
+- Bir hizmet edindikten sonra kullanın [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (yönetilmeyen kod) veya istenen arabirim, örneğin almak için (yönetilen kod için) atama:  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -51,13 +51,13 @@ Bir sözleşme iki Vspackage'lar arasında olan bir hizmettir. Bir VSPackage'ı 
   
     ```  
   
--   Yönetilmeyen kod bir hizmet tarafından GUID'sine başvuruyor ancak yönetilen kod bir hizmet türünü ifade eder.  
+- Yönetilmeyen kod bir hizmet tarafından GUID'sine başvuruyor ancak yönetilen kod bir hizmet türünü ifade eder.  
   
--   Zaman [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yükleri VSPackage bir VSPackage'ı için küresel hizmetler VSPackage erişim vermek için bir hizmet sağlayıcısı geçirir. Bu "VSPackage siting" olarak adlandırılır.  
+- Zaman [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] yükleri VSPackage bir VSPackage'ı için küresel hizmetler VSPackage erişim vermek için bir hizmet sağlayıcısı geçirir. Bu "VSPackage siting" olarak adlandırılır.  
   
--   VSPackage oluşturdukları nesneler için hizmet sağlayıcıları olabilir. Örneğin, bir form renk hizmet isteği isteği geçebilir çerçevesini gönderebilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- VSPackage oluşturdukları nesneler için hizmet sağlayıcıları olabilir. Örneğin, bir form renk hizmet isteği isteği geçebilir çerçevesini gönderebilir [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   İç içe girmiş veya hiç tarihli değil yönetilen nesneleri çağırıp <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> küresel hizmetler doğrudan erişim için. Daha fazla bilgi için [nasıl yapılır: GetGlobalService kullanın](../../misc/how-to-use-getglobalservice.md).  
+- İç içe girmiş veya hiç tarihli değil yönetilen nesneleri çağırıp <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> küresel hizmetler doğrudan erişim için. Daha fazla bilgi için [nasıl yapılır: GetGlobalService kullanın](../../misc/how-to-use-getglobalservice.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanılabilen hizmetlerin listesi](../../extensibility/internals/list-of-available-services.md)   

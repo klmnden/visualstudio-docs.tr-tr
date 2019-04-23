@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fe1ebb3316acfc53ac29ea734413cc0cf2cb15e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1fca54350900b2ed252efc324308d1168c6da53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101112"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Nasıl yapılır: Çalışma sayfalarını program aracılığıyla gizleme
   Göstermek veya çalışma kitabındaki gizle. Bir çalışma sayfasını gizlemek için çalışma sayfası konak öğesi kullanın veya çalışma kitabını sayfaları koleksiyonunu kullanarak çalışma sayfasına erişin.
@@ -30,7 +30,7 @@ ms.locfileid: "56638562"
 
 ### <a name="to-hide-a-worksheet-using-a-worksheet-host-item"></a>Bir çalışma sayfası konak öğesi kullanarak çalışma sayfasındaki gizlemek için
 
-1.  Ayarlama <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> özelliği `Sheet1` konak öğesi <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> numaralandırma değeri.
+1. Ayarlama <xref:Microsoft.Office.Tools.Excel.Worksheet.Visible%2A> özelliği `Sheet1` konak öğesi <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> numaralandırma değeri.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomation#25](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#25)]
@@ -38,13 +38,13 @@ ms.locfileid: "56638562"
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Excel çalışma kitabını sayfaları koleksiyonunu kullanın
  Microsoft Office Excel çalışma sayfalarına erişim <xref:Microsoft.Office.Interop.Excel.Sheets> aşağıdaki durumlarda koleksiyonu:
 
--   Bir VSTO eklentisi çalışma gizlemek istediğiniz.
+- Bir VSTO eklentisi çalışma gizlemek istediğiniz.
 
--   Gizlemek istediğiniz çalışma sayfası, belge düzeyinde özelleştirme çalışma zamanında oluşturuldu.
+- Gizlemek istediğiniz çalışma sayfası, belge düzeyinde özelleştirme çalışma zamanında oluşturuldu.
 
 ### <a name="to-hide-a-worksheet-using-the-sheets-collection-of-the-excel-workbook"></a>Excel çalışma kitabını sayfaları koleksiyonunu kullanarak çalışma sayfasındaki gizlemek için
 
-1.  Ayarlama <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> özelliği çalışma sayfasının <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> numaralandırma değeri.
+1. Ayarlama <xref:Microsoft.Office.Interop.Excel.Worksheets.Visible%2A> özelliği çalışma sayfasının <xref:Microsoft.Office.Interop.Excel.XlSheetVisibility.xlSheetHidden> numaralandırma değeri.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#26)]

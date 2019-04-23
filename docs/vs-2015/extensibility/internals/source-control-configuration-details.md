@@ -10,23 +10,23 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 85c537d5e915324a2bd8cd858c5ff133370b62f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109471"
 ---
 # <a name="source-control-configuration-details"></a>Kaynak Denetimi Yapılandırma Ayrıntıları
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Kaynak denetimi uygulamak için proje sistemi ya da aşağıdakileri yapmak için düzenleyici düzgün şekilde yapılandırmak gerekir:  
   
--   Geçiş için durum değiştirme izni iste  
+- Geçiş için durum değiştirme izni iste  
   
--   Bir dosyayı kaydetmeye izin iste  
+- Bir dosyayı kaydetmeye izin iste  
   
--   Ekleme, kaldırma veya projedeki dosyaları yeniden adlandırmak için izin istemesi  
+- Ekleme, kaldırma veya projedeki dosyaları yeniden adlandırmak için izin istemesi  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Geçiş için durum değiştirme izni iste  
  Bir proje ya da Düzenleyicisi geçiş (değişiklik içeriyor) durum değiştirme izni çağırarak istemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Uygulayan her Düzenleyicisi <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> çağırmalıdır <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ve belge ortamdan döndürmeden önce değiştirmek için onay alma `True` için `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Bir proje, aslında bir proje dosyası için bir düzenleyici ve sonuç olarak, bir metin düzenleyicisi için dosyaları gibi proje dosyasının durumu değişti izleme uygulama için aynı sorumluluğuna sahip. Ortam değiştirilen çözüm durumunu işler, ancak çözüm başvuruyor, ancak, bir proje dosyası veya öğelerinden gibi depolamaz herhangi bir nesnenin durum değiştirme işlemesi gerekir. Proje veya düzenleyen bir öğe için Kalıcılık yönetmekten sorumlu ise, genel olarak, ardından bu durumu değişti izleme uygulamak için sorumludur.  

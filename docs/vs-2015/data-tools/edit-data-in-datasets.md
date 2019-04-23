@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105012"
 ---
 # <a name="edit-data-in-datasets"></a>Veri kümelerindeki verileri düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
   
 #### <a name="to-delete-records-from-a-data-table"></a>Bir veri tablosundan kayıtları silmek için  
   
--   Çağrı <xref:System.Data.DataRow.Delete%2A> yöntemi bir <xref:System.Data.DataRow>.  
+- Çağrı <xref:System.Data.DataRow.Delete%2A> yöntemi bir <xref:System.Data.DataRow>.  
   
      Bu yöntem, fiziksel olarak kayıt kaldırmaz. Bunun yerine, kayıt silme işlemi için işaretler.  
   
@@ -83,7 +83,7 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Bir satırda değişiklik yapılıp yapılmadığını belirlemek için  
   
--   Çağrı <xref:System.Data.DataSet.HasChanges%2A> değiştirilen satırları denetlemek için bir veri kümesinin yöntemi.  
+- Çağrı <xref:System.Data.DataSet.HasChanges%2A> değiştirilen satırları denetlemek için bir veri kümesinin yöntemi.  
   
      Aşağıdaki örnek, dönüş değeri denetleyin işlemi gösterilmektedir <xref:System.Data.DataSet.HasChanges%2A> adlı bir veri kümesinde değiştirilen satırların olup olmadığını algılamak için `NorthwindDataset1`:  
   
@@ -95,7 +95,7 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Belirlemek için ne tür değişiklikler yapıldığını satır  
   
--   Başarılı bir <xref:System.Data.DataRowState> değerini <xref:System.Data.DataSet.HasChanges%2A> yöntemi.  
+- Başarılı bir <xref:System.Data.DataRowState> değerini <xref:System.Data.DataSet.HasChanges%2A> yöntemi.  
   
      Aşağıdaki örnekte adlı veri kümesini denetlemek nasıl gösterir `NorthwindDataset1` herhangi bir yeni satır kendisine eklenmiş olursa belirlemek için:  
   
@@ -105,9 +105,9 @@ Herhangi bir veritabanı tablosundaki verileri çok düzenlediğiniz gibi veri t
 ## <a name="to-locate-rows-that-have-errors"></a>Hatalar içeren satırların bulmak için  
  Tek tek sütunlara ve veri satırı çalışırken hatalarla karşılaşabilirsiniz. Denetleyebilirsiniz `HasErrors` hataları içinde mevcut olup olmadığını belirlemek için özellik bir <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, veya <xref:System.Data.DataRow>.  
   
-1.  Denetleme `HasErrors` kümesinde herhangi bir hata olup olmadığını görmek için özellik.  
+1. Denetleme `HasErrors` kümesinde herhangi bir hata olup olmadığını görmek için özellik.  
   
-2.  Varsa `HasErrors` özelliği `true`, tablolar, koleksiyonlarına yinelemek ve ardından hata satırı bulur. satırlar, aracılığıyla.  
+2. Varsa `HasErrors` özelliği `true`, tablolar, koleksiyonlarına yinelemek ve ardından hata satırı bulur. satırlar, aracılığıyla.  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

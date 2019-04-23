@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106208"
 ---
 # <a name="custom-task-panes"></a>Özel görev bölmeleri
   Görev bölmeleri, genellikle bir Microsoft Office uygulamasının bir pencerede bir tarafı yerleştirilmiş kullanıcı arabirimi bölmeleri bulunur. Özel görev bölmeleri size kendi görev bölmesi oluşturun ve kullanıcıların çözümünüzün özelliklerine erişmek için tanıdık bir arabirim sağlamak için bir yol sağlar. Örneğin, arabirim belgeleri değiştirmek veya bir veri kaynağından verileri görüntülemek için kodu çalıştırmak denetimleri içerebilir.
@@ -126,7 +126,7 @@ ms.locfileid: "57526715"
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] VSTO eklentisi kaldırıldığında özel görev bölmesi tarafından kullanılan kaynakları otomatik olarak temizler. Çağırmayın <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> veya <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> yöntemleri `ThisAddIn_Shutdown` projenizdeki olay işleyicisi. Bu yöntemler oluşturmaz bir <xref:System.ObjectDisposedException>, çünkü [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tarafından kullanılan kaynakları temizler <xref:Microsoft.Office.Tools.CustomTaskPane> önce nesne `ThisAddIn_Shutdown` çağrılır. Hakkında daha fazla bilgi için `ThisAddIn_Shutdown`, bkz: [Office Projelerindeki Olaylar](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Birden çok uygulama penceresi içinde özel görev bölmeleri yönetme
+## <a name="Managing"></a> Birden çok uygulama penceresi içinde özel görev bölmeleri yönetme
  Belgeler ve diğer öğeleri görüntülemek için birden çok windows kullanan uygulamayı özel görev bölmesi oluşturduğunuzda, kullanıcı olmasını beklerken görev bölmesinde göründüğünden emin olmak için ek adımlar uygulaması gerekir.
 
  Özel görev bölmeleri tüm uygulamalarda bir kullanıcıya bir belgeye veya öğeye bir görünümünü sunan bir belge çerçevesi penceresinin ile ilişkilidir. Görev bölmesi, yalnızca ilişkili pencere görüntülendiğinde görülebilir. Ancak, tüm uygulamalar aynı şekilde belge çerçeve pencereleri kullanın.
@@ -137,7 +137,7 @@ ms.locfileid: "57526715"
 
 - [Word, InfoPath ve PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  Outlook için bir özel görev bölmesi oluşturduğunuzda, özel görev bölmesi, belirli bir Gezgin veya denetleyici pencere ile ilişkilidir. Gezginler bir klasörün içeriğini görüntüleyen pencereler, ve denetçiler bir e-posta iletisi veya görev gibi bir öğeyi görüntülemek windows.
 
  Birden çok Gezgini veya Inspector'ı windows ile özel görev bölmesini görüntülemek istiyorsanız, bir Gezgin veya denetleyici penceresi açıldığında, özel görev bölmesinde yeni bir örneğini oluşturmak gerekir. Bunu yapmak için bir Gezgin veya denetleyici penceresi oluşturulurken bir olayı işlemek ve ardından görev bölmesinde olay işleyicisi oluşturun. Ayrıca gizlemek için Gezgini ve denetçisi olayları işleyebilir veya görüntü görev bölmeleri hangi pencerenin bağlı olarak görünür.
@@ -167,7 +167,7 @@ ms.locfileid: "57526715"
 
  Özel görev bölmesi açıkça kaldırmazsanız, birden fazla özel görev bölmesini Outlook windows görüntülenebilir. Outlook windows bazen geri dönüştürür ve geri windows kendilerine iliştirilmiş bir özel görev bölmeleri başvuruları korur.
 
-##  <a name="WordAndInfoPath"></a> Word, InfoPath ve PowerPoint
+## <a name="WordAndInfoPath"></a> Word, InfoPath ve PowerPoint
  Word, InfoPath ve PowerPoint her belge farklı belge çerçeve penceresinde görüntüler. Bu uygulamalar için özel görev bölmesi oluşturduğunuzda, özel görev bölmesi, yalnızca belirli bir belgeyle ilişkilidir. Kullanıcı farklı bir belgeyi açtığında, önceki belge tekrar görünene kadar özel görev bölmesini gizlenir.
 
  Birden çok belge ile özel görev bölmesini görüntülemek istiyorsanız, kullanıcı yeni bir belge oluşturur veya var olan bir belgeyi açar özel görev bölmesinde yeni bir örneğini oluşturun. Bunu yapmak için bir belge oluşturulan açıldığında veya başlatılan olayları işlemek ve ardından görev bölmesinde olay işleyicileri oluşturun. Ayrıca gizlemek için belge olayları işleyebilir veya görüntü görev bölmeleri hangi belge bağlı olarak görünür.
@@ -177,43 +177,43 @@ ms.locfileid: "57526715"
 ### <a name="word-events"></a>Word olayları
  Word'de belge pencereleri durumunu izlemek için aşağıdaki olayları işleyebilir:
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>InfoPath olayları
  InfoPath belge pencerelerinin durumunu izlemek için aşağıdaki olayları işleyebilir:
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>PowerPoint olayları
  Belge pencereleri PowerPoint'te durumunu izlemek için aşağıdaki olayları işleyebilir:
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Uygulamaya özel görev bölmesi ekleme](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

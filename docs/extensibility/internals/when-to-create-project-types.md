@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094430"
 ---
 # <a name="when-to-create-project-types"></a>Proje Türlerinin Oluşturulacağı Durumlar
 Yeni bir proje türü oluşturmayı sağlayan temel özelleştirmek için [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kullanıcılarınız için. Ancak, yeni bir proje türü oluşturmak için tüm gerekli değildir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] özelleştirmeler. Aşağıdaki yönergeler, yeni bir proje türü senaryonuz için gerekli olup olmadığını belirlemenize yardımcı olmalıdır.
@@ -23,26 +23,26 @@ Yeni bir proje türü oluşturmayı sağlayan temel özelleştirmek için [!INCL
 ## <a name="create-a-new-project-type"></a>Yeni bir proje türü oluştur
  Özelleştirmek istiyorsanız, bir proje türü oluşturmalısınız [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bir veya daha fazla aşağıdaki yollardan biriyle davranacak şekilde:
 
--   Yapıya katılan, dağıtım, yapılandırmaları ve kaynak denetimi.
+- Yapıya katılan, dağıtım, yapılandırmaları ve kaynak denetimi.
 
--   Hata ayıklama desteği sunar.
+- Hata ayıklama desteği sunar.
 
--   Proje öğeleri görüntülemek **Çözüm Gezgini**.
+- Proje öğeleri görüntülemek **Çözüm Gezgini**.
 
--   Kullanım **Proje Aç** veya **yeni proje** iletişim kutusu.
+- Kullanım **Proje Aç** veya **yeni proje** iletişim kutusu.
 
--   Proje iç içe geçirmeyi destekler.
+- Proje iç içe geçirmeyi destekler.
 
 ## <a name="extend-an-existing-project-type"></a>Mevcut bir proje türünü genişletme
  Kullanabileceğiniz yeni bir proje türü oluşturmak isteyebilirsiniz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] değiştirin veya varolan bir proje türünü davranışını genişletmek için aşağıdaki yollarla, örneğin, yapı işlemi için değiştirme [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projeleri:
 
--   Birden çok dosya ile tek bir birim olarak çalışır.
+- Birden çok dosya ile tek bir birim olarak çalışır.
 
--   Tek bir dosya alt öğelerinin bir hiyerarşi görüntüler.
+- Tek bir dosya alt öğelerinin bir hiyerarşi görüntüler.
 
--   Bir komut içerik düzenleyicileri geçici olarak görüntüler.
+- Bir komut içerik düzenleyicileri geçici olarak görüntüler.
 
--   Hizmet bağlamı için düzenleyicileri görüntüler.
+- Hizmet bağlamı için düzenleyicileri görüntüler.
 
 ## <a name="use-an-existing-project-type"></a>Mevcut bir proje türünü kullanın.
  Yeni proje oluşturma bazen gerekli değildir. Aşağıdaki tabloda bir proje türü için oluşturmak zorunda değilsiniz görevler gösterilmektedir.

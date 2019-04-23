@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105025"
 ---
 # <a name="save-data-in-a-transaction"></a>Bir işlemde veri kaydetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-create-the-new-windows-project"></a>Yeni Windows projesi oluşturmak için  
   
-1.  Visual Studio'da üzerinde **dosya** menüsünden Yeni bir **proje**.  
+1. Visual Studio'da üzerinde **dosya** menüsünden Yeni bir **proje**.  
   
-2.  Projeyi adlandırın **SavingDataInATransactionWalkthrough**.  
+2. Projeyi adlandırın **SavingDataInATransactionWalkthrough**.  
   
-3.  Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seçin **Windows uygulama**ve ardından **Tamam**. Daha fazla bilgi için [istemci uygulamaları](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projesi oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -53,27 +53,27 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-create-the-data-source"></a>Veri kaynağı oluşturmak için  
   
-1.  Üzerinde **veri** menüsünde**veri kaynaklarını Göster**.  
+1. Üzerinde **veri** menüsünde**veri kaynaklarını Göster**.  
   
-2.  İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
+2. İçinde **veri kaynakları** penceresinde **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-3.  Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından **sonraki**.  
+3. Üzerinde **bir veri kaynağı türü seçin**ekranındayken **veritabanı**ve ardından **sonraki**.  
   
-4.  Üzerinde **veri bağlantınızı seçin**aşağıdakilerden birini ekran yapın:  
+4. Üzerinde **veri bağlantınızı seçin**aşağıdakilerden birini ekran yapın:  
   
-    -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
+    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.  
   
          -veya-  
   
-    -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu ve Northwind veritabanına bağlantı oluşturun.  
+    - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu ve Northwind veritabanına bağlantı oluşturun.  
   
-5.  Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
+5. Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
-6.  Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** ekranındayken **sonraki**.  
+6. Üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** ekranındayken **sonraki**.  
   
-7.  Üzerinde **veritabanı nesnelerinizi seçin** ekranında, **tabloları** düğümü.  
+7. Üzerinde **veritabanı nesnelerinizi seçin** ekranında, **tabloları** düğümü.  
   
-8.  Seçin `Customers` ve `Orders` tablolar ve ardından **son**.  
+8. Seçin `Customers` ve `Orders` tablolar ve ardından **son**.  
   
      **NorthwindDataSet** projenize eklenir ve `Customers` ve `Orders` tablolar görünür **veri kaynakları** penceresi.  
   
@@ -82,13 +82,13 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Windows form üzerinde denetimleri bağlı veri oluşturma  
   
--   İçinde **veri kaynakları** penceresini genişletin **müşteriler** düğümü.  
+- İçinde **veri kaynakları** penceresini genişletin **müşteriler** düğümü.  
   
--   Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** penceresinden **Form1**.  
+- Ana sürükleyin **müşteriler** düğümünden **veri kaynakları** penceresinden **Form1**.  
   
      A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:System.Windows.Forms.BindingNavigator>) Kayıtlarda gezinmek için formda görünür. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
--   İlgili sürükleyin **siparişler** düğümü (ana **siparişler** düğümü ancak ilgili alt tablo düğümünün altındaki **faks** sütun) aşağıdaki forma  **CustomersDataGridView**.  
+- İlgili sürükleyin **siparişler** düğümü (ana **siparişler** düğümü ancak ilgili alt tablo düğümünün altındaki **faks** sütun) aşağıdaki forma  **CustomersDataGridView**.  
   
      A <xref:System.Windows.Forms.DataGridView> formda görünür. Bir OrdersTableAdapter ve <xref:System.Windows.Forms.BindingSource> bileşen tepsisinde görünür.  
   
@@ -97,9 +97,9 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>System.Transactions DLL dosyasına bir başvuru eklemek için  
   
-1.  Üzerinde **proje** menüsünde**Başvuru Ekle**.  
+1. Üzerinde **proje** menüsünde**Başvuru Ekle**.  
   
-2.  Seçin **System.Transactions**(üzerinde **.NET** sekmesinde) ve ardından **Tamam**.  
+2. Seçin **System.Transactions**(üzerinde **.NET** sekmesinde) ve ardından **Tamam**.  
   
      Bir başvuru **System.Transactions** projeye eklenir.  
   
@@ -117,38 +117,38 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
    İlgili veri değişiklikleri mutabık kılma sırasını aşağıdaki gibidir:  
   
--   Alt kayıtları silin. (Bu durumda, kayıtları silme `Orders` tablo.)  
+- Alt kayıtları silin. (Bu durumda, kayıtları silme `Orders` tablo.)  
   
--   Üst kayıtlar silin. (Bu durumda, kayıtları silme `Customers` tablo.)  
+- Üst kayıtlar silin. (Bu durumda, kayıtları silme `Customers` tablo.)  
   
--   Üst kayıtlar ekler. (Bu durumda, kayıtları eklemek `Customers` tablo.)  
+- Üst kayıtlar ekler. (Bu durumda, kayıtları eklemek `Customers` tablo.)  
   
--   Alt kayıtları ekleyin. (Bu durumda, kayıtları eklemek `Orders` tablo.)  
+- Alt kayıtları ekleyin. (Bu durumda, kayıtları eklemek `Orders` tablo.)  
   
 #### <a name="to-delete-existing-orders"></a>Mevcut siparişlerin silmek için  
   
--   Aşağıdaki `DeleteOrders` yönteme **Form1**:  
+- Aşağıdaki `DeleteOrders` yönteme **Form1**:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Mevcut müşteriler silmek için  
   
--   Aşağıdaki `DeleteCustomers` yönteme **Form1**:  
+- Aşağıdaki `DeleteCustomers` yönteme **Form1**:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Yeni müşteriler eklemek için  
   
--   Aşağıdaki `AddNewCustomers` yönteme **Form1**:  
+- Aşağıdaki `AddNewCustomers` yönteme **Form1**:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Yeni siparişler eklemek için  
   
--   Aşağıdaki `AddNewOrders` yönteme **Form1**:  
+- Aşağıdaki `AddNewOrders` yönteme **Form1**:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ Bu izlenecek yol kullanarak bir işlemde veri kaydetme gösterilmektedir <xref:S
   
 #### <a name="to-run-the-application"></a>Uygulamayı çalıştırmak için  
   
--   Seçin **F5** uygulamayı çalıştırın.  
+- Seçin **F5** uygulamayı çalıştırın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Verileri yeniden veritabanına kaydetme](../data-tools/save-data-back-to-the-database.md)

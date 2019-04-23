@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7fb3b82d56038695c728d2125658a7f51d31f6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 94d4ac86f40f887eed9d858f10614441d88c9c54
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108873"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menüler ve komutlar için Visual Studio
 ## <a name="command-usage"></a>Komut kullanımı
@@ -33,11 +33,11 @@ ms.locfileid: "57870484"
 ##### <a name="do-not-create-icons-for-every-command"></a>Her komut için simgeler oluşturmayın.
  Komut simgesinin oluşturmadan önce dikkatlice düşünün. Simgeler yalnızca komutları için oluşturulması:
 
--   Varsayılan araç çubuğunda görünür.
+- Varsayılan araç çubuğunda görünür.
 
--   kullanıcılar tarafından bir araç çubuğu eklenmesi olasılığı **Özelleştir...**  iletişim.
+- kullanıcılar tarafından bir araç çubuğu eklenmesi olasılığı **Özelleştir...**  iletişim.
 
--   başka bir Microsoft ürünü aynı eylemi ile ilişkili bir simgesi vardır.
+- başka bir Microsoft ürünü aynı eylemi ile ilişkili bir simgesi vardır.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Klavye kısayolları eklenmesini sınırla
  Kullanıcılar büyük çoğunluğu, tüm kullanılabilir kısayolları küçük bir bölümünü kullanın. Şüpheye düştüğünüzde özelliğinizi bir klavye kısayolu bağlamayın. Kullanıcı iş kısayollar eklemeden önce takım karşılaşırsınız.
@@ -75,65 +75,65 @@ ms.locfileid: "57870484"
 
 ##### <a name="core-menus"></a>Ana menü
 
--   Dosya
+- Dosya
 
--   Düzenle
+- Düzenle
 
--   Görüntüle
+- Görüntüle
 
--   Araçlar
+- Araçlar
 
--   Pencere
+- Pencere
 
--   Yardım
+- Yardım
 
 ##### <a name="project-specific-menus"></a>Projeye özgü menüleri
 
--   Proje
+- Proje
 
--   Derleme
+- Derleme
 
--   Hata ayıklama
+- Hata ayıklama
 
 ##### <a name="context-specific-menus"></a>Özel bağlam menüleri
 
--   Takım
+- Takım
 
--   Veri
+- Veri
 
--   Test
+- Test
 
--   Mimari
+- Mimari
 
--   Çözümle
+- Çözümle
 
 ##### <a name="document-specific-menus"></a>Belgeye özgü menüleri
 
--   Biçimi
+- Biçimi
 
--   Tablo
+- Tablo
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Ana menü tasarlarken, bu kurallar için uyar:
 
--   Belirli bir bağlamda 25 en üst düzey öğe aşamaz.
+- Belirli bir bağlamda 25 en üst düzey öğe aşamaz.
 
--   Menüleri, hiçbir zaman 600 piksel cinsinden yükseklik aşmalıdır.
+- Menüleri, hiçbir zaman 600 piksel cinsinden yükseklik aşmalıdır.
 
--   Ultimate SKU ve genel profil gibi birden fazla bağlamı, ana menüde değerlendirin.
+- Ultimate SKU ve genel profil gibi birden fazla bağlamı, ana menüde değerlendirin.
 
--   Açılır menüleri kabul edilir.
+- Açılır menüleri kabul edilir.
 
--   Açılır menüleri, en az üç öğe ve en fazla yedi içermelidir.
+- Açılır menüleri, en az üç öğe ve en fazla yedi içermelidir.
 
--   Açılır menüleri tek düzey derinlikte gitmesi gereken - basamaklı alt menüler bazı Visual Studio menü öğeleri var ancak bu deseni değil teşvik edilir.
+- Açılır menüleri tek düzey derinlikte gitmesi gereken - basamaklı alt menüler bazı Visual Studio menü öğeleri var ancak bu deseni değil teşvik edilir.
 
--   Altıdan fazla ayırıcı kullanın. Aşağıdaki çizime gruplandırmaları uymalıdır:
+- Altıdan fazla ayırıcı kullanın. Aşağıdaki çizime gruplandırmaları uymalıdır:
 
      ![Ana menü gruplandırma için yönergeler](../../extensibility/ux-guidelines/media/0501-b_mainmenus.png "b_MainMenus 0501")
 
--   Şekilde, her grup için gerekli olmasa da, ek ekleme sınırlıdır.
+- Şekilde, her grup için gerekli olmasa da, ek ekleme sınırlıdır.
 
--   Her gruplandırma, iki yedi menü öğelerine sahip olmalıdır.
+- Her gruplandırma, iki yedi menü öğelerine sahip olmalıdır.
 
 #### <a name="main-menu-ordering"></a>Ana menü sıralama
  Yeni bir üst düzey öğe eklemeden önce var olan bir üst düzey menü komutu yerleştirmeyi göz önünde bulundurun. Yeni bir üst düzey menü eklerken, doğru konuma yerleştirmek emin olun. Menü proje bağlamı veya belgeye özgü olup olmadığına karar verin. Üst düzey menü adını kısa tutun ve yalnızca bir Word'ü kullanın.
@@ -145,30 +145,30 @@ ms.locfileid: "57870484"
 
  Bağlam menüleri tasarlarken, ana menüden için ve ayrıca aynı kurallara uyar:
 
--   25 üst düzey menü öğeleri geçmeyin.
+- 25 üst düzey menü öğeleri geçmeyin.
 
--   Açılır menüleri kabul edilebilir ancak gerekir derin bir düzey aşmayacak - hiçbir zaman basamaklı çıkarmalar kullanın.
+- Açılır menüleri kabul edilebilir ancak gerekir derin bir düzey aşmayacak - hiçbir zaman basamaklı çıkarmalar kullanın.
 
--   Altıdan fazla ayırıcı kullanın.
+- Altıdan fazla ayırıcı kullanın.
 
 ### <a name="command-placement-in-toolbars"></a>Araç çubuğundaki komutu yerleştirme
 
 #### <a name="general-toolbars"></a>Genel araç çubukları
  Ne zaman tasarlama ve araç çubuklarını, düzenleme, bu standartlar uygulayın:
 
--   Düğme başına birden fazla fiili kullanmayın. Bir düğmeyi bir eylem =.
+- Düğme başına birden fazla fiili kullanmayın. Bir düğmeyi bir eylem =.
 
--   Yalnızca bu etiketi ile güçlendirilmiş gerekiyorsa, metin simgesi ile birlikte kullanın.
+- Yalnızca bu etiketi ile güçlendirilmiş gerekiyorsa, metin simgesi ile birlikte kullanın.
 
--   Birleşik giriş kutusu yalnızca tek bir oturumda birden çok kez da geçirilecek özellikler için kullanın. Aksi takdirde, başka bir yerde özelliğini kullanıma sunar.
+- Birleşik giriş kutusu yalnızca tek bir oturumda birden çok kez da geçirilecek özellikler için kullanın. Aksi takdirde, başka bir yerde özelliğini kullanıma sunar.
 
--   Bir açılan kutunun genişliği kutusu + % 30 içinde uzun öğenin genişliğini eşit olmalıdır. Örneğin, en uzun öğe 200 piksel ise, birleşik giriş kutusu 260 piksel genişliğinde olmalıdır.
+- Bir açılan kutunun genişliği kutusu + % 30 içinde uzun öğenin genişliğini eşit olmalıdır. Örneğin, en uzun öğe 200 piksel ise, birleşik giriş kutusu 260 piksel genişliğinde olmalıdır.
 
--   Ayırıcılar kullanımını sınırlayın. Yanındaki açılan bir menüde bir ayırıcı kullanımına açılan şeklin görsel ayırıcı olarak davranan önleyici bir desen olmasıdır.
+- Ayırıcılar kullanımını sınırlayın. Yanındaki açılan bir menüde bir ayırıcı kullanımına açılan şeklin görsel ayırıcı olarak davranan önleyici bir desen olmasıdır.
 
--   Üç altı simge için simge grubu içermelidir.
+- Üç altı simge için simge grubu içermelidir.
 
--   Birden çok yararlı komutlar niteleyicileri yol açarsa son ayarı depolayan bir Bölünmüş düğme kullanın:
+- Birden çok yararlı komutlar niteleyicileri yol açarsa son ayarı depolayan bir Bölünmüş düğme kullanın:
 
      ![Visual Studio'da düğmeleri bölme](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "c_SplitButtons 0501")
 
@@ -229,13 +229,13 @@ ms.locfileid: "57870484"
 
 #### <a name="when-naming-commands"></a>Ne zaman adlandırma komutları:
 
--   Böylece kolayca yerelleştirilebilir metin oluşturmak. Metin yerelleştirme hakkında daha fazla bilgi için bkz. [yen iyi yerelleştirme pratikleri](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Böylece kolayca yerelleştirilebilir metin oluşturmak. Metin yerelleştirme hakkında daha fazla bilgi için bkz. [yen iyi yerelleştirme pratikleri](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Kısa olmalıdır. Komutlar, en fazla üç sözcük kullanmanız gerekir.
+- Kısa olmalıdır. Komutlar, en fazla üç sözcük kullanmanız gerekir.
 
--   İlk harfler büyük harf kullanın: her sözcüğün ilk harfini büyük harfe. Visual Studio'da biçimlendirme metin hakkında daha fazla bilgi için bkz: [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- İlk harfler büyük harf kullanın: her sözcüğün ilk harfini büyük harfe. Visual Studio'da biçimlendirme metin hakkında daha fazla bilgi için bkz: [metin stili](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Komut nereye yerleştirileceğini dikkate alın. Bu, üst düzey bir menü veya bir açılır öğesi mi? Örneğin, "Hizala" ve çıkma komutları gruplandırma hizalama komutları açılır öğesi, üst düzey komutu ne zaman olmalıdır "Sol" "Hak", "Orta" "Yasla" olması ve benzeri. Açılan menüyü komutları "Sola Hizala" veya "Sağa Hizala." adı olarak yedekli
+- Komut nereye yerleştirileceğini dikkate alın. Bu, üst düzey bir menü veya bir açılır öğesi mi? Örneğin, "Hizala" ve çıkma komutları gruplandırma hizalama komutları açılır öğesi, üst düzey komutu ne zaman olmalıdır "Sol" "Hak", "Orta" "Yasla" olması ve benzeri. Açılan menüyü komutları "Sola Hizala" veya "Sağa Hizala." adı olarak yedekli
 
      ![Visual Studio biçim menüsüne](../../extensibility/ux-guidelines/media/0502-a_formatmenu.png "a_FormatMenu 0502")
 
@@ -244,20 +244,20 @@ ms.locfileid: "57870484"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Bir simge ile yalnızca bir komut durumlarda kullanın:
 
--   Aynı komutu, Microsoft Office uygulamalarından birini gibi başka bir belirgin Microsoft ürününün kendisiyle ilişkili bir simgesi vardır.
+- Aynı komutu, Microsoft Office uygulamalarından birini gibi başka bir belirgin Microsoft ürününün kendisiyle ilişkili bir simgesi vardır.
 
--   Komut, varsayılan araç çubuğunda yer alır.
+- Komut, varsayılan araç çubuğunda yer alır.
 
--   Kullanıcılar için bir araç kullanarak eklemek büyük olasılıkla bir özel komut komuttur **"Özelleştir..."** iletişim.
+- Kullanıcılar için bir araç kullanarak eklemek büyük olasılıkla bir özel komut komuttur **"Özelleştir..."** iletişim.
 
 ## <a name="access-and-shortcut-keys"></a>Erişim ve kısayol tuşları
 
 ### <a name="overview"></a>Genel Bakış
  Klavye atamalarının iki tür vardır:
 
--   **Erişim anahtarları** (Hızlandırıcıları olarak da bilinir) kullanıcı Arabirimi iletişim kutusunda komut vermeye genel ve her etiket için menüleri aracılığıyla klavye erişime izin verin. Erişim anahtarları çoğunlukla erişilebilmesi için olan tüm menüleri ve çoğu iletişim kutusu denetimlerine atanan değildir belleğe alınan bölümü, yalnızca geçerli pencere etkiler ve yerelleştirilmiş olduğunu.
+- **Erişim anahtarları** (Hızlandırıcıları olarak da bilinir) kullanıcı Arabirimi iletişim kutusunda komut vermeye genel ve her etiket için menüleri aracılığıyla klavye erişime izin verin. Erişim anahtarları çoğunlukla erişilebilmesi için olan tüm menüleri ve çoğu iletişim kutusu denetimlerine atanan değildir belleğe alınan bölümü, yalnızca geçerli pencere etkiler ve yerelleştirilmiş olduğunu.
 
--   **Kısayol tuşları** çoğunlukla denetimi (Ctrl) ve anahtar dizileri işlevi (Fn) kullanın. Daha ileri düzey kullanıcılara ve Yardım için üretkenlik tasarlanan. Bunlar yalnızca en sık kullanılan komutlar için atanan ve ana menüye atlayarak sırasında hızlı erişim izni. Kısayol tuşları belleğe alınan bölümü amaçlanmıştır ve için neden Profil şeması ile tutarlı atanması gerekir. Kısayol tuş düzenleri profili profili farklılık gösterebilir. Bir kullanıcı üzerinden kısayol tuşları özelleştirebilir **Araçlar > Seçenekler > klavye**.
+- **Kısayol tuşları** çoğunlukla denetimi (Ctrl) ve anahtar dizileri işlevi (Fn) kullanın. Daha ileri düzey kullanıcılara ve Yardım için üretkenlik tasarlanan. Bunlar yalnızca en sık kullanılan komutlar için atanan ve ana menüye atlayarak sırasında hızlı erişim izni. Kısayol tuşları belleğe alınan bölümü amaçlanmıştır ve için neden Profil şeması ile tutarlı atanması gerekir. Kısayol tuş düzenleri profili profili farklılık gösterebilir. Bir kullanıcı üzerinden kısayol tuşları özelleştirebilir **Araçlar > Seçenekler > klavye**.
 
 ### <a name="assigning-access-keys"></a>Erişim tuşları atama
  Erişim anahtarları Alt artı alfasayısal anahtarları oluşur. Özel durum olmadan her bir menü öğesi için bir erişim anahtarı atayın. Windows ve erişim tuşları atama için genel kurallar izleyin. Örneğin, erişim anahtarı **Dosya > Yeni** her zaman olmalıdır **Alt, F, N**.
@@ -285,6 +285,6 @@ ms.locfileid: "57870484"
 
   Kısayol kullanılabilirliğini denetlemek için basit bir yol değil. Bir kısayol eklemek istiyorsanız, şu adımları izleyin:
 
-1.  Listesini kontrol edin [Visual Studio 2013 kısayolları](http://visualstudioshortcuts.com/2013/) türlerinizle gruplandırmak için benzer komutları olup olmadığını belirlemek için.
+1. Listesini kontrol edin [Visual Studio 2013 kısayolları](http://visualstudioshortcuts.com/2013/) türlerinizle gruplandırmak için benzer komutları olup olmadığını belirlemek için.
 
-2.  Git **Araçlar > Seçenekler > ortam > klavye** ve kısayolu test. "Aşağıdaki ek klavye eşleme şemasını Uygula" her klavye eşleme şemasını altında listelenen denetleyin Bu benzersiz kısayollarını paylaşma gibi genel, C#, VB ve C++ profilleri denetleyin. Kısayolu bu yerlerin hiçbirinde eşlenmemiş kullanılabilir.
+2. Git **Araçlar > Seçenekler > ortam > klavye** ve kısayolu test. "Aşağıdaki ek klavye eşleme şemasını Uygula" her klavye eşleme şemasını altında listelenen denetleyin Bu benzersiz kısayollarını paylaşma gibi genel, C#, VB ve C++ profilleri denetleyin. Kısayolu bu yerlerin hiçbirinde eşlenmemiş kullanılabilir.

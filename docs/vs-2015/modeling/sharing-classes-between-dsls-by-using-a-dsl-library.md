@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c3a14a254eb3b07a95687faaf377664dd6f747a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073832"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL Kitaplığı Kullanarak DSL'ler Arasında Sınıfları Paylaşma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "54780882"
   
 #### <a name="to-create-a-dsl-library"></a>DSL kitaplığı oluşturmak için  
   
-1.  Yeni bir DSL projesi oluşturun ve DSL kitaplığı çözüm şablonu seçin.  
+1. Yeni bir DSL projesi oluşturun ve DSL kitaplığı çözüm şablonu seçin.  
   
      Tek bir DSL projesi ile boş bir model oluşturulur.  
   
-2.  Etki alanı sınıfları, ilişkilerini, Şekil vb. ekleyebilirsiniz.  
+2. Etki alanı sınıfları, ilişkilerini, Şekil vb. ekleyebilirsiniz.  
   
      Kitaplık öğelerinde, tek bir gömme ağacı oluşturmak sahip değilsiniz.  
   
@@ -37,15 +37,15 @@ ms.locfileid: "54780882"
   
      Ayarlamayı düşünün **devralma değiştiricisi** için etki alanı sınıflarının `Abstract`.  
   
-3.  DSL Gezgini bağlantı oluşturucular gibi tanımlayan öğeler ekleyebilirsiniz.  
+3. DSL Gezgini bağlantı oluşturucular gibi tanımlayan öğeler ekleyebilirsiniz.  
   
-4.  Doğrulama kısıtlamaları gibi ek kod gerektiren özelleştirmeler ekleyebilirsiniz.  
+4. Doğrulama kısıtlamaları gibi ek kod gerektiren özelleştirmeler ekleyebilirsiniz.  
   
-5.  Tıklayın **tüm şablonları dönüştürme**.  
+5. Tıklayın **tüm şablonları dönüştürme**.  
   
-6.  Projeyi oluşturun.  
+6. Projeyi oluşturun.  
   
-7.  DSL kullanılacak diğer kişiler için dağıttığınızda, hem derlemede (DLL) hem de dosyanın sağlamalıdır `DslDefinition.dsl`. Derlenmiş bütünleştirilmiş kod klasörü altında bulabilirsiniz `Dsl\bin\*`  
+7. DSL kullanılacak diğer kişiler için dağıttığınızda, hem derlemede (DLL) hem de dosyanın sağlamalıdır `DslDefinition.dsl`. Derlenmiş bütünleştirilmiş kod klasörü altında bulabilirsiniz `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>DSL kitaplığı içeri aktarmak için  
   

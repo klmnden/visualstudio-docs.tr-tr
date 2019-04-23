@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101437"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Hata ayıklama sırasında XAML özelliklerini denetleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Çalışan uygulamalar ile XAML araçlarını kullanma  
  Kaynak kodu yoksa olsa bile bu XAML araçları kullanabilirsiniz. Çalışan bir XAML uygulamaya ekleme yaptığınızda, kullanabileceğiniz **Live Visual Tree** uygulama UI öğeleri üzerinde çok. Önce kullandığımız WPF test uygulaması kullanarak, bir örnek aşağıda verilmiştir.  
   
-1.  Başlangıç **TestXaml** sürüm yapılandırmasını uygulama. İçinde çalışan bir işleme iliştirilemiyor bir **hata ayıklama** yapılandırma.  
+1. Başlangıç **TestXaml** sürüm yapılandırmasını uygulama. İçinde çalışan bir işleme iliştirilemiyor bir **hata ayıklama** yapılandırma.  
   
-2.  Visual Studio ikinci bir örneğini açın ve tıklayın **hata ayıklama / iliştirme**. Bulma **TestXaml.exe** kullanılabilir işlemler seçeneğine tıklayıp listesinde **iliştirme**.  
+2. Visual Studio ikinci bir örneğini açın ve tıklayın **hata ayıklama / iliştirme**. Bulma **TestXaml.exe** kullanılabilir işlemler seçeneğine tıklayıp listesinde **iliştirme**.  
   
-3.  Uygulama çalışmaya başlar.  
+3. Uygulama çalışmaya başlar.  
   
-4.  Visual Studio'nun ikinci örnekte, Aç **Live Visual Tree** (**hata ayıklama / Windows / Canlı görsel ağaç**). Görmelisiniz **TestXaml** kullanıcı Arabirimi öğeleri ve olmalıdır uygulama doğrudan hata ayıklarken gibi bunları yönetmek kullanabilirsiniz.
+4. Visual Studio'nun ikinci örnekte, Aç **Live Visual Tree** (**hata ayıklama / Windows / Canlı görsel ağaç**). Görmelisiniz **TestXaml** kullanıcı Arabirimi öğeleri ve olmalıdır uygulama doğrudan hata ayıklarken gibi bunları yönetmek kullanabilirsiniz.

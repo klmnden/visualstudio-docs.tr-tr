@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0128ab98f1fb359ea41accfec115325ea8888eb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54786374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099123"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Nasıl yapılır: Oluşturma ve çalıştırma LinqToXmlDataBinding örneği
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,54 +27,54 @@ Bu konu nasıl oluşturulup LinqToXmlDataBinding Visual Studio projeyi oluşturu
   
 #### <a name="to-create-the-starting-project"></a>Başlangıç projesi oluşturmak için  
   
-1.  Visual Studio'yu başlatın ve LinqToXmlDataBinding adlı bir C# WPF uygulaması oluşturun. Proje .NET Framework 3.5 (veya sonraki sürümler) kullanmanız gerekir.  
+1. Visual Studio'yu başlatın ve LinqToXmlDataBinding adlı bir C# WPF uygulaması oluşturun. Proje .NET Framework 3.5 (veya sonraki sürümler) kullanmanız gerekir.  
   
-2.  Aksi halde aşağıdaki .NET derlemeleri için zaten mevcut proje başvurularını ekleyin:  
+2. Aksi halde aşağıdaki .NET derlemeleri için zaten mevcut proje başvurularını ekleyin:  
   
-    -   System.Data  
+    - System.Data  
   
-    -   System.Data.DataSetExtensions  
+    - System.Data.DataSetExtensions  
   
-    -   System.Xml  
+    - System.Xml  
   
-    -   System.Xml.Linq  
+    - System.Xml.Linq  
   
-3.  Basarak çözümü oluşturun **Ctnrl + Shift + B**, çalıştırın tuşlarına basarak **F5**. Projenin hatasız derleyip genel WPF uygulaması çalıştırın.  
+3. Basarak çözümü oluşturun **Ctnrl + Shift + B**, çalıştırın tuşlarına basarak **F5**. Projenin hatasız derleyip genel WPF uygulaması çalıştırın.  
   
 #### <a name="to-add-custom-code-to-the-project"></a>Özel kod projesine eklemek için  
   
-1.  Çözüm Gezgini'nde, L2XDBForm.xaml için gt;Window1.XAML kaynak dosyayı yeniden adlandırın. Bağımlı kaynak dosyası Window1.xaml.cs L2XDBForm.xaml.cs için otomatik olarak adlandırılmamalıdır.  
+1. Çözüm Gezgini'nde, L2XDBForm.xaml için gt;Window1.XAML kaynak dosyayı yeniden adlandırın. Bağımlı kaynak dosyası Window1.xaml.cs L2XDBForm.xaml.cs için otomatik olarak adlandırılmamalıdır.  
   
-2.  Kaynak kod bulunamadı ' % s'dosyasında L2XDBForm.xaml konusunun kod ile değiştirin [L2DBForm.xaml kaynak kodu](../designers/l2dbform-xaml-source-code.md). (Bu dosyayla çalışmak için XAML kaynak görünümünü kullanın.)  
+2. Kaynak kod bulunamadı ' % s'dosyasında L2XDBForm.xaml konusunun kod ile değiştirin [L2DBForm.xaml kaynak kodu](../designers/l2dbform-xaml-source-code.md). (Bu dosyayla çalışmak için XAML kaynak görünümünü kullanın.)  
   
-3.  Benzer şekilde, L2XDBForm.xaml.cs kaynakta bulunan kod yerine [L2DBForm.xaml.cs kaynak kodu](../designers/l2dbform-xaml-cs-source-code.md).  
+3. Benzer şekilde, L2XDBForm.xaml.cs kaynakta bulunan kod yerine [L2DBForm.xaml.cs kaynak kodu](../designers/l2dbform-xaml-cs-source-code.md).  
   
-4.  App.xaml dosyasında "L2XDBForm.xaml" ile "gt;Window1.XAML" dizesinin tüm örnekleri değiştirin.  
+4. App.xaml dosyasında "L2XDBForm.xaml" ile "gt;Window1.XAML" dizesinin tüm örnekleri değiştirin.  
   
-5.  Çözüm tuşlarına basarak derleme **Ctrl + Shift + B**.  
+5. Çözüm tuşlarına basarak derleme **Ctrl + Shift + B**.  
   
 ## <a name="running-the-program"></a>Programı çalıştırma  
  LinqToXmlDataBinding program görüntülemek ve gömülü bir XML öğesi olarak depolanan kitap listesi işlemek kullanıcının sağlar.  
   
 #### <a name="to-run-the-program-and-view-the-book-list"></a>Programı çalıştırın ve kitap listesi görüntülemek için  
   
-1.  LinqToXmlDataBinding basarak çalıştırın **F5** (**hata ayıklamayı Başlat**) veya **Ctrl + F5** (**hata ayıklama olmadan Başlat**). Başlık program penceresiyle **LINQ to XML kullanarak WPF verilerini bağlama** görüntülenmesi gerekir.  
+1. LinqToXmlDataBinding basarak çalıştırın **F5** (**hata ayıklamayı Başlat**) veya **Ctrl + F5** (**hata ayıklama olmadan Başlat**). Başlık program penceresiyle **LINQ to XML kullanarak WPF verilerini bağlama** görüntülenmesi gerekir.  
   
-2.  Dosyanın üst kısmında ham görüntüler UI fark **XML** temsil eden kitap listesi. WPF kullanarak görüntülenir <xref:System.Windows.Controls.TextBlock> denetimi, klavye ve fare aracılığıyla etkileşim etkinleştirmez.  
+2. Dosyanın üst kısmında ham görüntüler UI fark **XML** temsil eden kitap listesi. WPF kullanarak görüntülenir <xref:System.Windows.Controls.TextBlock> denetimi, klavye ve fare aracılığıyla etkileşim etkinleştirmez.  
   
-3.  Etiketli ikinci dikey bölümde **kitap listesi**, görüntüler books düz metin olarak sıralı listesi. Bunu kullanan bir <xref:System.Windows.Controls.ListBox> klavye ve fare seçimi ancak etkinleştiren denetimi.  
+3. Etiketli ikinci dikey bölümde **kitap listesi**, görüntüler books düz metin olarak sıralı listesi. Bunu kullanan bir <xref:System.Windows.Controls.ListBox> klavye ve fare seçimi ancak etkinleştiren denetimi.  
   
 #### <a name="to-add-and-delete-books-from-the-list"></a>Ekleme ve Kitaplar listeden silme  
   
-1.  Mevcut bir kitap listeden silmek için onu seçip **kitap listesi** bölümünde'a tıklayın **seçili kitap kaldırmak** düğmesi. Kitap hem ham XML kaynak listelerini defteri girdisi kaldırıldı dikkat edin.  
+1. Mevcut bir kitap listeden silmek için onu seçip **kitap listesi** bölümünde'a tıklayın **seçili kitap kaldırmak** düğmesi. Kitap hem ham XML kaynak listelerini defteri girdisi kaldırıldı dikkat edin.  
   
-2.  Yeni bir kitap listeye eklemek için değerlerini girin. **kimliği** ve **değeri** <xref:System.Windows.Controls.TextBox> son bölümüne denetimler **yeni kitabı ekleme**,'a tıklayın **Ekle Kitap** düğmesi. Not Defteri kitap ve XML listelerini listesine eklenir. Bu program, giriş değerleri doğrulamaz.  
+2. Yeni bir kitap listeye eklemek için değerlerini girin. **kimliği** ve **değeri** <xref:System.Windows.Controls.TextBox> son bölümüne denetimler **yeni kitabı ekleme**,'a tıklayın **Ekle Kitap** düğmesi. Not Defteri kitap ve XML listelerini listesine eklenir. Bu program, giriş değerleri doğrulamaz.  
   
 #### <a name="to-edit-an-existing-book-entry"></a>Bir kitap girişi düzenlemek için  
   
-1.  İkinci defteri girdisini seçin **kitap listesi** bölümü. Geçerli değerleri üçüncü bölümünde görüntülenip **seçili kitap Düzenle**.  
+1. İkinci defteri girdisini seçin **kitap listesi** bölümü. Geçerli değerleri üçüncü bölümünde görüntülenip **seçili kitap Düzenle**.  
   
-2.  Klavyeyi kullanarak değerleri düzenleyin. Kapanmaz <xref:System.Windows.Controls.TextBox> denetim odağı kaybettiğinde, değişiklikleri otomatik olarak XML kaynak ve kitap listelerini yayılır.  
+2. Klavyeyi kullanarak değerleri düzenleyin. Kapanmaz <xref:System.Windows.Controls.TextBox> denetim odağı kaybettiğinde, değişiklikleri otomatik olarak XML kaynak ve kitap listelerini yayılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINQ to XML örneği kullanarak WPF verilerini bağlama](../designers/wpf-data-binding-using-linq-to-xml-example.md)   

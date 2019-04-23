@@ -11,55 +11,55 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 957e1d771723578b425e4eafbb2aa7c912b230e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd65c41f49dc49b9302e721d889aeaad2dfc6bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071999"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Visual Studio ile geliştirmeye başlayın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'ya Hoş Geldiniz! Sonra [indirilen](http://www.visualstudio.com/community) ürün bu sayfa yardımcı olacak kodlamaya başlayın.
 
--   **[Web uygulamaları yapmak](https://www.visualstudio.com/features/modern-web-tooling-vs):** Modern web uygulamaları oluşturmak ve dağıtmak için Araçlar'ı tıklatın.
+- **[Web uygulamaları yapmak](https://www.visualstudio.com/features/modern-web-tooling-vs):** Modern web uygulamaları oluşturmak ve dağıtmak için Araçlar'ı tıklatın.
 
      [Bir öğretici uygulayın](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124; [belgelere göz atın](https://docs.asp.net/) &#124; [bir video izleyin](http://www.asp.net/vnext)
 
--   **[Platformlar arası mobil uygulamalar, HTML/Javascript (Apache Cordova) olun](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  :               Apache Cordova HTML/CSS/Javascript tabanlı açık kaynaklı bir platformlar arası ortamıdır.  Javascript kodunuzun belirli bir platformu hedefleyen ve cihazın tüm donanım özelliklerine erişim sağlayan bir sarmalayıcı yürütür. Apple Store, Android mağazası ve Windows Store uygulamaları geliştirin.
+- **[Platformlar arası mobil uygulamalar, HTML/Javascript (Apache Cordova) olun](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**  :               Apache Cordova HTML/CSS/Javascript tabanlı açık kaynaklı bir platformlar arası ortamıdır.  Javascript kodunuzun belirli bir platformu hedefleyen ve cihazın tüm donanım özelliklerine erişim sağlayan bir sarmalayıcı yürütür. Apple Store, Android mağazası ve Windows Store uygulamaları geliştirin.
 
      [Bir örnek yükleyin](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124; [bir öğretici uygulayın](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) &#124; [belgelere göz atın](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) &#124; [bir video izleyin](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[Platformlar arası mobil uygulamalarda olmak C# veya Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : Bir paylaşılan kod tabanından Android, iOS ve evrensel Windows platformu üzerinde çalışan mobil uygulamalar oluşturmak için Visual Studio ve Xamarin için Araçlar'ı kullanmaya başlayın.
+- **[Platformlar arası mobil uygulamalarda olmak C# veya Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : Bir paylaşılan kod tabanından Android, iOS ve evrensel Windows platformu üzerinde çalışan mobil uygulamalar oluşturmak için Visual Studio ve Xamarin için Araçlar'ı kullanmaya başlayın.
 
      Bir örnek yükleyin:[Tasky taşınabilir](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (yerel UI) veya [Xamarin formları Yapılacaklar örneği](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Xamarin.Forms paylaşılan kullanıcı Arabirimi) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Gözat docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [bir video izleyin](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
--   **[C++ dilinde yerel platformlar arası uygulamalar ve kitaplıklar olun](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)**  C++ uygulamaları ve kitaplıkları, Android, iOS ve evrensel Windows platformu üzerinde çalışan oluşturmaya başlamak için buraya gidin.
+- **[C++ dilinde yerel platformlar arası uygulamalar ve kitaplıklar olun](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)**  C++ uygulamaları ve kitaplıkları, Android, iOS ve evrensel Windows platformu üzerinde çalışan oluşturmaya başlamak için buraya gidin.
 
      [Bir örnek yükleyin](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/dn707595.aspx) &#124; [belgelere göz atın](https://msdn.microsoft.com/library/dn707591.aspx) &#124; [bir video izleyin](https://channel9.msdn.com/Series/ConnectOn-Demand/239)
 
--   **[DirectX ile oyunlar oluşturmanızı](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**  : DirectX kullanarak evrensel Windows platformu oyunları oluşturmaya başlayın.
+- **[DirectX ile oyunlar oluşturmanızı](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx)**  : DirectX kullanarak evrensel Windows platformu oyunları oluşturmaya başlayın.
 
      [Bir örnek yükleyin](https://msdn.microsoft.com/library/windows/desktop/bb153300\(v=vs.85\).aspx) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/windows/desktop/bb153264\(v=vs.85\).aspx) &#124; [belgelere göz atın](https://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) &#124; [bir video izleyin](https://channel9.msdn.com/Series/Introduction-to-C-and-DirectX-Game-Development/01)
 
--   **[Unity ile oyunlar olun](../cross-platform/visual-studio-tools-for-unity.md)**  : Unity çerçevesini kullanarak platformlar arası oyunlar oluşturmaya başlayın.
+- **[Unity ile oyunlar olun](../cross-platform/visual-studio-tools-for-unity.md)**  : Unity çerçevesini kullanarak platformlar arası oyunlar oluşturmaya başlayın.
 
      [Bir örnek yükleyin](http://unity3d.com/learn/resources/downloads) &#124; [bir öğretici uygulayın](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124; [belgelere göz atın](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) &#124; [bir video izleyin](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)
 
--   **[Olun Evrensel Windows platformu uygulamaları](https://dev.windows.com/windows-apps)**  : Evrensel Windows platformunda (XBox, PC'ler, tabletler, Windows Phone, Surface Hub ve nesnelerin interneti) çalışan uygulamalar oluşturmaya başlayın.
+- **[Olun Evrensel Windows platformu uygulamaları](https://dev.windows.com/windows-apps)**  : Evrensel Windows platformunda (XBox, PC'ler, tabletler, Windows Phone, Surface Hub ve nesnelerin interneti) çalışan uygulamalar oluşturmaya başlayın.
 
      [Bir örnek yükleyin](https://github.com/Microsoft/Windows-universal-samples) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/windows/apps/dn765018.aspx) &#124; [belgelere göz atın](https://dev.windows.com) &#124; [bir video izleyin](https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-started-with-Windows-10)
 
--   **[Masaüstü uygulamaları oluşturun](https://dev.windows.com/desktop)**  : Windows bilgisayarlarında çalışan geleneksel masaüstü uygulamaları oluşturmaya başlamak için buraya gidin.
+- **[Masaüstü uygulamaları oluşturun](https://dev.windows.com/desktop)**  : Windows bilgisayarlarında çalışan geleneksel masaüstü uygulamaları oluşturmaya başlamak için buraya gidin.
 
      [Bir örnek yükleyin](https://github.com/microsoft/windows-classic-samples) &#124; [bir öğretici uygulayın](https://msdn.microsoft.com/library/dd492171.aspx) &#124; [belgelere göz atın](https://dev.windows.com/desktop)
 
--   **[Office uygulamaları](https://msdn.microsoft.com/library/fp161347.aspx)**  : Genişletmek ve Word, Excel, Outlook ve PowerPoint ile Office 365 hizmetlerine özelleştiren Office uygulamaları oluşturmaya başlayın.
+- **[Office uygulamaları](https://msdn.microsoft.com/library/fp161347.aspx)**  : Genişletmek ve Word, Excel, Outlook ve PowerPoint ile Office 365 hizmetlerine özelleştiren Office uygulamaları oluşturmaya başlayın.
 
      [Bir örnek yükleyin](https://code.msdn.microsoft.com/office365/) &#124; [bir öğretici uygulayın](http://dev.office.com/getting-started/office365apis) &#124; [belgelere göz atın](https://msdn.microsoft.com/office/aa905340.aspx) &#124; [bir video izleyin](http://dev.office.com/videos)
 
--   **[Visual Studio Team Services ve Team Foundation Server Turu](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Visual Studio Team Services ve Team Foundation Server hakkında daha fazla bilgi edinin.
+- **[Visual Studio Team Services ve Team Foundation Server Turu](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Visual Studio Team Services ve Team Foundation Server hakkında daha fazla bilgi edinin.
 
 ## <a name="in-this-section"></a>Bu bölümde
 

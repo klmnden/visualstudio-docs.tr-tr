@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102971"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>(Windows Forms) bir erişim veritabanındaki verilere bağlanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +40,30 @@ Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dos
   
 #### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma  
   
-1.  Verileri bağlamak istediğiniz Windows Forms uygulamasını açın.  
+1. Verileri bağlamak istediğiniz Windows Forms uygulamasını açın.  
   
-2.  Üzerinde **görünümü** menüsünde **diğer Windows** > **veri kaynakları**.  
+2. Üzerinde **görünümü** menüsünde **diğer Windows** > **veri kaynakları**.  
   
      ![Diğer Windows veri kaynaklarını görüntülemek](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
+3. İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
   
      ![Yeni veri kaynağı Ekle](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
+4. Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
   
-5.  Seçin **veri kümesi** üzerinde **veritabanı modeli seçin** sayfasında ve ardından **sonraki**.  
+5. Seçin **veri kümesi** üzerinde **veritabanı modeli seçin** sayfasında ve ardından **sonraki**.  
   
-6.  Üzerinde **veri bağlantınızı seçin** sayfasında **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için.  
+6. Üzerinde **veri bağlantınızı seçin** sayfasında **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için.  
   
-7.  Değişiklik **veri kaynağı** için **OLE DB için .NET Framework veri sağlayıcısı**.  
+7. Değişiklik **veri kaynağı** için **OLE DB için .NET Framework veri sağlayıcısı**.  
   
      ![OLE DB veri sağlayıcısı değiştirme](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
     >  Veri kaynağını rağmen **Microsoft Access veritabanı dosyası (OLE DB)** görünse de doğru seçim gibi yalnızca .mdb veritabanı dosyaları için bu veri kaynağı türünü kullanın.  
   
-8.  İçinde **OLE DB sağlayıcısı**seçin **Microsoft Office 12.0 Access veritabanı altyapısı OLE DB sağlayıcısı**.  
+8. İçinde **OLE DB sağlayıcısı**seçin **Microsoft Office 12.0 Access veritabanı altyapısı OLE DB sağlayıcısı**.  
   
      ![OLE DB sağlayıcısı Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
@@ -87,23 +87,23 @@ Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dos
   
 #### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma  
   
-1.  Verileri bağlamak istediğiniz Windows Forms uygulamasını açın.  
+1. Verileri bağlamak istediğiniz Windows Forms uygulamasını açın.  
   
-2.  Üzerinde **görünümü** menüsünde **diğer Windows** > **veri kaynakları**.  
+2. Üzerinde **görünümü** menüsünde **diğer Windows** > **veri kaynakları**.  
   
      ![Diğer Windows veri kaynaklarını görüntülemek](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
+3. İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle**.  
   
-4.  Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
+4. Seçin **veritabanı** üzerinde **bir veri kaynağı türü seçin** sayfasında ve ardından **sonraki**.  
   
-5.  Seçin **veri kümesi** üzerinde **veritabanı modeli seçin** sayfasında ve ardından **sonraki**.  
+5. Seçin **veri kümesi** üzerinde **veritabanı modeli seçin** sayfasında ve ardından **sonraki**.  
   
-6.  Üzerinde **veri bağlantınızı seçin** sayfasında **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için.  
+6. Üzerinde **veri bağlantınızı seçin** sayfasında **yeni bağlantı** yeni bir veri bağlantısı yapılandırmak için.  
   
-7.  Veri kaynağı değilse **Microsoft Access veritabanı dosyası (OLE DB)** seçin **değişiklik** açmak için **değişimi veri kaynağı** seçin **Microsoft Veritabanı dosyası erişim**ve ardından **Tamam**.  
+7. Veri kaynağı değilse **Microsoft Access veritabanı dosyası (OLE DB)** seçin **değişiklik** açmak için **değişimi veri kaynağı** seçin **Microsoft Veritabanı dosyası erişim**ve ardından **Tamam**.  
   
-8.  İçinde **veritabanı dosyası adı**, bağlanma ve ardından istediğiniz .mdb dosyasının adını ve yolunu belirtin **Tamam**.  
+8. İçinde **veritabanı dosyası adı**, bağlanma ve ardından istediğiniz .mdb dosyasının adını ve yolunu belirtin **Tamam**.  
   
      ![Bağlantı Access veritabanı dosyası ekleme](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ Visual Studio kullanarak bir Access veritabanına (.mdf dosyası veya .accdb dos
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Yeni oluşturduğunuz veri kümesi kullanıma sunulduğunu **veri kaynakları** penceresi. Artık aşağıdaki görevlerden herhangi birini gerçekleştirebilirsiniz:  
   
--   Öğe seçin **veri kaynakları** penceresi ve bunları formunuza sürükleyin (bkz [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
+- Öğe seçin **veri kaynakları** penceresi ve bunları formunuza sürükleyin (bkz [Visual Studio'da verilere Windows Forms bağlama denetimleri](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Veri kaynağı eklemek veya veri kümesini oluşturan nesneleri düzenlemek için veri kümesi Tasarımcısı'nda açın.  
+- Veri kaynağı eklemek veya veri kümesini oluşturan nesneleri düzenlemek için veri kümesi Tasarımcısı'nda açın.  
   
--   Doğrulama mantığı eklemenize <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> olay veri kümesindeki veri tablolarının (bkz [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)).  
+- Doğrulama mantığı eklemenize <xref:System.Data.DataTable.ColumnChanging> veya <xref:System.Data.DataTable.RowChanging> olay veri kümesindeki veri tablolarının (bkz [veri kümelerindeki verileri doğrulama](../data-tools/validate-data-in-datasets.md)).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.
 

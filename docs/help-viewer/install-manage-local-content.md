@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073910"
 ---
 # <a name="install-and-manage-local-content"></a>Yerel içeriği yükleme ve yönetme
 
@@ -42,18 +42,18 @@ Varsayılan olarak, Yardım Görüntüleyici, içerik kaynak olarak bir Microsof
 
 ### <a name="to-change-the-content-installation-source"></a>İçerik yükleme kaynağını değiştirmek için
 
-1.  Üzerinde **içeriği Yönet** sekmesini, **Disk** seçenek düğmesini.
+1. Üzerinde **içeriği Yönet** sekmesini, **Disk** seçenek düğmesini.
 
     > [!NOTE]
     > **Disk** seçenek yöneticinize, içerik yükleme kaynağını değiştirmenizi engellerse kullanılabilir değildir. Daha fazla bilgi için [Yardım Görüntüleyicisi Yönetici Kılavuzu](../help-viewer/administrator-guide.md).
 
-2.  Aşağıdaki adımlardan birini uygulayın:
+2. Aşağıdaki adımlardan birini uygulayın:
 
-    -   Yolunu girin bir *.msha* dosya veya bir hizmet uç noktasının URL'si.
+    - Yolunu girin bir *.msha* dosya veya bir hizmet uç noktasının URL'si.
 
-    -   Gözat düğmesini seçin (**...** ) düğmesine gitmek için bir *.msha* dosya.
+    - Gözat düğmesini seçin (**...** ) düğmesine gitmek için bir *.msha* dosya.
 
-    -   Listeden en son kullanılan girdiyi seçin.
+    - Listeden en son kullanılan girdiyi seçin.
 
 ## <a name="download-and-install-content-locally"></a>Yerel olarak içeriği indir ve yükle
 
@@ -67,13 +67,13 @@ Varsayılan olarak, Yardım Görüntüleyici, içerik kaynak olarak bir Microsof
 
 ### <a name="to-download-and-install-content"></a>İçeriği indirmek ve yüklemek için
 
-1.  Seçin **içeriği Yönet** sekmesi.
+1. Seçin **içeriği Yönet** sekmesi.
 
-2.  İçerik listesinde **Ekle** kitabın veya kitapların indirmek ve yüklemek için istediğiniz yanındaki bağlantı.
+2. İçerik listesinde **Ekle** kitabın veya kitapların indirmek ve yüklemek için istediğiniz yanındaki bağlantı.
 
      Kitap eklenir **bekleyen değişiklikler** listesi ve tahmini boyutunu belirttiğiniz kitap veya kitaplar bu listenin altında görünür. Bazı kitaplar konuları paylaştığından birden çok kitap toplam yükleme boyutu, belirttiğiniz her kitabın boyutlarını birlikte eklemenin sonucunu küçük olabilir.
 
-3.  Seçin **güncelleştirme** düğmesi.
+3. Seçin **güncelleştirme** düğmesi.
 
      Belirttiğiniz kitap veya kitaplar, bilgisayarınızda zaten yüklü Kitaplar için tüm güncelleştirmelerle birlikte yüklenir. Yükleme süreleri değişebilir ancak durum çubuğundan ilerlemeyi görüntüleyebilirsiniz.
 
@@ -89,13 +89,13 @@ Varsayılan olarak, Yardım Görüntüleyici, içerik kaynak olarak bir Microsof
 
 ### <a name="to-remove-content"></a>İçeriği kaldırmak için
 
-1.  Seçin **içeriği Yönet** sekmesi.
+1. Seçin **içeriği Yönet** sekmesi.
 
-2.  İçerik listesinde **Kaldır** kitabın veya kitapların kaldırmak istediğiniz yanındaki bağlantı.
+2. İçerik listesinde **Kaldır** kitabın veya kitapların kaldırmak istediğiniz yanındaki bağlantı.
 
      Kitap eklenir **bekleyen değişiklikler** listesi.
 
-3.  Seçin **güncelleştirme** düğmesi.
+3. Seçin **güncelleştirme** düğmesi.
 
      Belirttiğiniz kitap veya kitaplar bilgisayarınızdan kaldırılır.
 
@@ -121,13 +121,13 @@ Yüklü içeriği yerel bilgisayarınızdan bir ağ paylaşımına veya başka b
 
 ### <a name="to-move-local-content"></a>Yerel içeriği taşımak için
 
-1.  Üzerinde **içeriği Yönet** sekmesini, **taşıma** düğmesini **yerel Store yol**.
+1. Üzerinde **içeriği Yönet** sekmesini, **taşıma** düğmesini **yerel Store yol**.
 
      **İçeriği Taşı** iletişim kutusu açılır.
 
-2.  İçinde **için** metin kutusuna içerik için farklı bir konum girin ve ardından **Tamam** düğmesi.
+2. İçinde **için** metin kutusuna içerik için farklı bir konum girin ve ardından **Tamam** düğmesi.
 
-3.  Seçin **Kapat** içerik taşındıktan sonra düğme.
+3. Seçin **Kapat** içerik taşındıktan sonra düğme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

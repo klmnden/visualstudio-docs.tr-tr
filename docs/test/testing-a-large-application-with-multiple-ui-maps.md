@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076048"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Birden çok UI eşlemesi bulunan büyük uygulamaları test etme
 
@@ -42,9 +42,9 @@ Birden çok UI haritası dosyalarını kullanarak, aşağıdaki faydaları sağl
 ## <a name="do-you-need-multiple-ui-maps"></a>Birden çok UI haritası gerekiyor mu?
  Birden çok UI haritası, bu tür durumlarda her oluşturun:
 
--   Birlikte bir Web sitesinde bir kayıt sayfasına veya bir alışveriş sepeti satın alma sayfası gibi bir mantıksal işlemi gerçekleştiren bileşik UI denetimlerinin birçok karmaşık ayarlar.
+- Birlikte bir Web sitesinde bir kayıt sayfasına veya bir alışveriş sepeti satın alma sayfası gibi bir mantıksal işlemi gerçekleştiren bileşik UI denetimlerinin birçok karmaşık ayarlar.
 
--   Bağımsız bir uygulama işlemlerinin birden çok sayfa içeren bir sihirbaz gibi çeşitli noktalarından erişim denetimleri ayarlayın. Bir sihirbazın her sayfasındaki özellikle karmaşık ise, her sayfa için ayrı UI haritası oluşturabilirsiniz.
+- Bağımsız bir uygulama işlemlerinin birden çok sayfa içeren bir sihirbaz gibi çeşitli noktalarından erişim denetimleri ayarlayın. Bir sihirbazın her sayfasındaki özellikle karmaşık ise, her sayfa için ayrı UI haritası oluşturabilirsiniz.
 
 ## <a name="add-multiple-ui-maps"></a>Birden çok UI Eşlemesi Ekle
 

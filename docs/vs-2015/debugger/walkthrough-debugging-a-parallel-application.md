@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092987"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>İzlenecek yol: Paralel uygulamada hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
  Bu izlenecek yol bu görevleri öğretir:  
   
--   Nasıl tüm iş parçacığı çağrı yığınlarını tek bir görünümde görüntülenir.  
+- Nasıl tüm iş parçacığı çağrı yığınlarını tek bir görünümde görüntülenir.  
   
--   Listesini görüntülemek nasıl `System.Threading.Tasks.Task` uygulamanızda oluşturduğu örneklerin.  
+- Listesini görüntülemek nasıl `System.Threading.Tasks.Task` uygulamanızda oluşturduğu örneklerin.  
   
--   Görev iş parçacıkları yerine gerçek çağrı yığınlarını görüntülemek nasıl.  
+- Görev iş parçacıkları yerine gerçek çağrı yığınlarını görüntülemek nasıl.  
   
--   Koda gitmek nasıl **Paralel Görevler** ve **Paralel Yığınlar** windows.  
+- Koda gitmek nasıl **Paralel Görevler** ve **Paralel Yığınlar** windows.  
   
--   Nasıl windows gruplandırma, yakınlaştırma ve diğer ilgili özellikler Ölçekle başa.  
+- Nasıl windows gruplandırma, yakınlaştırma ve diğer ilgili özellikler Ölçekle başa.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolda olduğunu varsayar **yalnızca kendi kodum** etkinleştirilir. Üzerinde **Araçları** menüsünde tıklatın **seçenekleri**, genişletin **hata ayıklama** düğümünü **genel**ve ardından **etkinleştir Yalnızca benim kodum (sadece yönetilen)**. Bu özelliği ayarlamazsanız, bu izlenecek yolda kullanmaya devam edebilirsiniz, ancak sonuçlarınızı gösterilenlerden farklı olabilir.  
@@ -88,15 +88,15 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Tek bir iş parçacığı çağrı yığınını görüntülemek için  
   
-1.  Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **iş parçacıkları**. Dock **iş parçacıkları** penceresinin Visual Studio'nun altındaki.  
+1. Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **iş parçacıkları**. Dock **iş parçacıkları** penceresinin Visual Studio'nun altındaki.  
   
-2.  Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **çağrı yığını**. Dock **çağrı yığını** penceresinin altındaki Visual Studio.  
+2. Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **çağrı yığını**. Dock **çağrı yığını** penceresinin altındaki Visual Studio.  
   
-3.  Bir iş parçacığında çift **iş parçacıkları** geçerli hale penceresi. Sarı bir ok geçerli iş parçacığı vardır. Geçerli iş parçacığı değiştirdiğinizde, çağrı yığını görüntülenen **çağrı yığını** penceresi.  
+3. Bir iş parçacığında çift **iş parçacıkları** geçerli hale penceresi. Sarı bir ok geçerli iş parçacığı vardır. Geçerli iş parçacığı değiştirdiğinizde, çağrı yığını görüntülenen **çağrı yığını** penceresi.  
   
 #### <a name="to-examine-the-parallel-stacks-window"></a>Paralel Yığınlar penceresini incelemek için  
   
-1.  Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **Paralel Yığınlar**. Emin olun **iş parçacıkları** sol üst köşesinde kutusunda seçilir.  
+1. Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **Paralel Yığınlar**. Emin olun **iş parçacıkları** sol üst köşesinde kutusunda seçilir.  
   
      Kullanarak **Paralel Yığınlar** penceresinde aynı anda tek bir görünümde birden çok çağrı yığınlarını görüntüleyebilir. Aşağıdaki çizimde gösterildiği **Paralel Yığınlar** penceresi yukarıdaki **çağrı yığını** penceresi.  
   
@@ -118,7 +118,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>İkinci kesme noktasına kadar yürütme devam etmek için  
   
-1.  İkinci kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**. Aşağıdaki resimde ikinci bir kesme noktasında iş parçacığı ağacını gösterir.  
+1. İkinci kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**. Aşağıdaki resimde ikinci bir kesme noktasında iş parçacığı ağacını gösterir.  
   
      ![Birçok dalları gösteren Paralel Yığınlar penceresini](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
   
@@ -178,7 +178,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Dördüncü kesme noktasına kadar yürütme devam etmek için  
   
-1.  Dördüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
+1. Dördüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
   
      Bildirim nasıl görünümü autoscrolled içine yerleştir. İş parçacıkları geçiş **iş parçacıkları** penceresi veya anahtar yığın çerçevelerini **çağrı yığını** penceresini açın ve bildirim nasıl görünümü her zaman doğru çerçevesine autoscrolls. Devre dışı **geçerli aracı çerçevesine otomatik Kaydır** seçenek ve farkı görüntüleyin.  
   
@@ -196,22 +196,22 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
      Ayrıca yığını aşağıdan yukarıya yerine yukarıdan aşağı yönde tıklayarak görüntüleyebilirsiniz **Araçları** tıklayarak menüsünde **seçenekleri**ve sonra seçin veya altında seçeneğinin işaretini **hataayıklama** düğümü.  
   
-2.  Üzerinde devam etmeden önce **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur** son yürütme için.  
+2. Üzerinde devam etmeden önce **hata ayıklama** menüsünü tıklatın **hata ayıklamayı Durdur** son yürütme için.  
   
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Paralel Görevler penceresi ve Görevler görünümü Paralel Yığınlar penceresini kullanma  
  Devam etmeden önce önceki yordamlarını tamamlamanız önerilir.  
   
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>İlk kesme noktasına kadar uygulamayı yeniden başlatmasını isabet  
   
-1.  Üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat** ulaşılmasına ilk kesme noktasına için bekleyin.  
+1. Üzerinde **hata ayıklama** menüsünde tıklatın **hata ayıklamayı Başlat** ulaşılmasına ilk kesme noktasına için bekleyin.  
   
-2.  Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **iş parçacıkları**. Dock **iş parçacıkları** penceresinin Visual Studio'nun altındaki.  
+2. Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **iş parçacıkları**. Dock **iş parçacıkları** penceresinin Visual Studio'nun altındaki.  
   
-3.  Üzerinde **hata ayıklama** menüsünde **Windows** tıklatıp **çağrı yığını**. Dock **çağrı yığını** penceresinin altındaki Visual Studio.  
+3. Üzerinde **hata ayıklama** menüsünde **Windows** tıklatıp **çağrı yığını**. Dock **çağrı yığını** penceresinin altındaki Visual Studio.  
   
-4.  Bir iş parçacığında çift **iş parçacıkları** penceresine yapar, geçerli. Geçerli iş parçacığı, sarı ok vardır. Geçerli iş parçacığı değiştirdiğinizde, diğer windows güncelleştirilir. Ardından, görevleri inceleyeceğiz.  
+4. Bir iş parçacığında çift **iş parçacıkları** penceresine yapar, geçerli. Geçerli iş parçacığı, sarı ok vardır. Geçerli iş parçacığı değiştirdiğinizde, diğer windows güncelleştirilir. Ardından, görevleri inceleyeceğiz.  
   
-5.  Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **Paralel Görevler**. Aşağıdaki çizimde gösterildiği **Paralel Görevler** penceresi.  
+5. Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **Paralel Görevler**. Aşağıdaki çizimde gösterildiği **Paralel Görevler** penceresi.  
   
      ![Paralel Görevler penceresi içinde çalışan dört görevleri](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
   
@@ -225,7 +225,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>İkinci kesme noktasına kadar yürütme devam etmek için  
   
-1.  İkinci kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
+1. İkinci kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
   
      Daha önce **durumu** sütun olarak çalışan tüm görevler gösterilmiştir, ancak artık iki görev bekliyor. Görevler, birçok nedenden dolayı engellenebilir. İçinde **durumu** sütun, neden engellenir öğrenmek için bekleyen görev üzerine gelin. Örneğin, aşağıdaki çizimde, 3. görev 4. görevde bekliyor.  
   
@@ -253,7 +253,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Üçüncü kesme noktasına kadar yürütme devam etmek için  
   
-1.  Üçüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
+1. Üçüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**.  
   
      Yeni bir görev, görev 5, şu anda çalışıyor ve 4. Görev artık bekliyor. Bekleyen görev üzerine neden geldiği tarafından gördüğünüz **durumu** penceresi. İçinde **üst** sütun, bu görev 4, 5. görev üst olduğuna dikkat edin.  
   
@@ -273,7 +273,7 @@ Bu izlenecek yolda nasıl kullanılacağını gösterir **Paralel Görevler** ve
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Dördüncü kesme noktasına kadar yürütme devam etmek için  
   
-1.  Üçüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**. Tıklayın **kimliği** kimliğe göre sıralamak için sütun başlığını Aşağıdaki çizim görmeniz gerekir.  
+1. Üçüncü kesme noktasına, üzerinde isabet kadar yürütme devam etmek için **hata ayıklama** menüsünü tıklatın **devam**. Tıklayın **kimliği** kimliğe göre sıralamak için sütun başlığını Aşağıdaki çizim görmeniz gerekir.  
   
      ![Paralel Yığınlar penceresini durumlarda dört görev](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
   

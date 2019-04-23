@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102984"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Forms uygulamalarında arama tabloları oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Terim *arama tablosu* iki ilgili veri tablolarına bağlı denetimler açıklar.
   
 ## <a name="to-databind-a-lookup-control"></a>Veri bağlama için bir arama denetimi  
   
-1.  Açık **veri kaynakları** penceresi.  
+1. Açık **veri kaynakları** penceresi.  
   
     > [!NOTE]
     > Arama tabloları gerektiren iki ilişkili tablolar veya nesnelerin kullanılabilir olduğunu **veri kaynakları** penceresi.
   
-2.  Ait düğümleri genişletebilirsiniz **veri kaynakları** üst tablo ve tüm alt sütunları ve ilgili alt tablo ve sütunları görene kadar penceresi.  
+2. Ait düğümleri genişletebilirsiniz **veri kaynakları** üst tablo ve tüm alt sütunları ve ilgili alt tablo ve sütunları görene kadar penceresi.  
   
     > [!NOTE]
     >  Alt tablo düğümü üst tablo bir Genişletilebilir alt düğüm olarak görünen düğümüdür.  
   
-3.  Alt tablo için bırakma türünü değiştirme **ayrıntıları** seçerek **ayrıntıları** alt tablonun düğümde denetim listesinden. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Alt tablo için bırakma türünü değiştirme **ayrıntıları** seçerek **ayrıntıları** alt tablonun düğümde denetim listesinden. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  İki tablo ilişkili düğümü bulun ( `CustomerID` önceki örnekte düğümü). Bırakma türünü değiştirin bir <xref:System.Windows.Forms.ComboBox> seçerek **ComboBox** denetim listesinden.  
+4. İki tablo ilişkili düğümü bulun ( `CustomerID` önceki örnekte düğümü). Bırakma türünü değiştirin bir <xref:System.Windows.Forms.ComboBox> seçerek **ComboBox** denetim listesinden.  
   
-5.  Ana alt tablo düğümünden sürükleyin **veri kaynakları** formunuza penceresi.  
+5. Ana alt tablo düğümünden sürükleyin **veri kaynakları** formunuza penceresi.  
   
      Veriye bağlı denetimler (tanımlayıcı etiketlerle) ve bir aracı (<xref:System.Windows.Forms.BindingNavigator>) formda görünür. A [veri kümesi](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, ve <xref:System.Windows.Forms.BindingNavigator> bileşen tepsisinde görünür.  
   
-6.  Artık ana üst tablo düğümden sürükleyin **veri kaynakları** penceresinden doğrudan arama denetimi ( <xref:System.Windows.Forms.ComboBox>).  
+6. Artık ana üst tablo düğümden sürükleyin **veri kaynakları** penceresinden doğrudan arama denetimi ( <xref:System.Windows.Forms.ComboBox>).  
   
      Arama bağlamaları artık oluşturulur. Denetimde ayarlanan belirli özellikleri için aşağıdaki tabloya bakın.  
   

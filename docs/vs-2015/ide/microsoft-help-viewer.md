@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104336"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Yardım Görüntüleyicisi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Yükleme ve Microsoft Yardım Görüntüleyicisi'ni kullanarak yerel bilgisayar�
   
  Bunu, aşağıdakileri yapabilirsiniz:  
   
--   Bulun ve hangi kitaplar olarak da adlandırılır içerik kümelerini indirin.  
+- Bulun ve hangi kitaplar olarak da adlandırılır içerik kümelerini indirin.  
   
--   Gözat ve başlığa göre konuları bulmak için İçindekiler tablosuna arayın.  
+- Gözat ve başlığa göre konuları bulmak için İçindekiler tablosuna arayın.  
   
--   Dizin içindeki konuları arayın.  
+- Dizin içindeki konuları arayın.  
   
--   Tam metin aramasını kullanarak bilgileri bulun.  
+- Tam metin aramasını kullanarak bilgileri bulun.  
   
--   Görünüm, yer işareti ve yazdırma konuları.  
+- Görünüm, yer işareti ve yazdırma konuları.  
   
 ## <a name="navigating-the-help-viewer"></a>Yardım görüntüleyicisinde gezinme  
  Gezinme sekmeleri, yüklü içeriği görüntüleyebilir konu sekmesi veya sekmelerinde kullanarak yüklü içerikte bilgileri bulmak ve kullanarak içeriği yönetebilirsiniz **içeriği Yönet** sekmesi. Ayrıca, araç çubuğundaki düğmeleri kullanarak ek görevleri gerçekleştirmek ve pencerenin sağ alt köşesinde ek bilgiler bulabilirsiniz.  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e76f3dfdb6ce8890387a85be474bac4d0f605777
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106288"
 ---
 # <a name="image-service-and-catalog"></a>Görüntü hizmeti ve kataloğu
 Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti ve görüntü Visual Studio 2015'te tanıtılan Kataloğu'nu benimseme içerir.
@@ -216,88 +216,88 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
 ### <a name="first-steps-managed"></a>İlk adımları (yönetilen)
  Görüntü hizmeti kullanmak için projenize bazılarını veya tümünü aşağıdaki derlemelere başvurular eklemeniz gerekir:
 
--   *Microsoft.VisualStudio.ImageCatalog.dll*
+- *Microsoft.VisualStudio.ImageCatalog.dll*
 
-    -   Yerleşik Görüntü Kataloğu kullanıyorsanız gereklidir **KnownMonikers**.
+    - Yerleşik Görüntü Kataloğu kullanıyorsanız gereklidir **KnownMonikers**.
 
--   *Microsoft.VisualStudio.Imaging.dll*
+- *Microsoft.VisualStudio.Imaging.dll*
 
-    -   İfadesini kullanıyorsanız gereklidir **CrispImage** ve **ImageThemingUtilities** WPF kullanıcı Arabirimi içinde.
+    - İfadesini kullanıyorsanız gereklidir **CrispImage** ve **ImageThemingUtilities** WPF kullanıcı Arabirimi içinde.
 
--   *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
+- *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
 
-    -   İfadesini kullanıyorsanız gereklidir **ImageMoniker** ve **Imageattributes** türleri.
+    - İfadesini kullanıyorsanız gereklidir **ImageMoniker** ve **Imageattributes** türleri.
 
-    -   **EmbedInteropTypes** ayarlanmalıdır true.
+    - **EmbedInteropTypes** ayarlanmalıdır true.
 
--   *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
+- *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
 
-    -   İfadesini kullanıyorsanız gereklidir **IVsImageService2** türü.
+    - İfadesini kullanıyorsanız gereklidir **IVsImageService2** türü.
 
-    -   **EmbedInteropTypes** ayarlanmalıdır true.
+    - **EmbedInteropTypes** ayarlanmalıdır true.
 
--   *Microsoft.VisualStudio.Utilities.dll*
+- *Microsoft.VisualStudio.Utilities.dll*
 
-    -   İfadesini kullanıyorsanız gereklidir **BrushToColorConverter** için **ImageThemingUtilities.ImageBackgroundColor** WPF kullanıcı Arabirimi içinde.
+    - İfadesini kullanıyorsanız gereklidir **BrushToColorConverter** için **ImageThemingUtilities.ImageBackgroundColor** WPF kullanıcı Arabirimi içinde.
 
--   *Microsoft.VisualStudio.Shell. \<VSVersion >.0*
+- *Microsoft.VisualStudio.Shell. \<VSVersion >.0*
 
-    -   İfadesini kullanıyorsanız gereklidir **Ivsuıobject** türü.
+    - İfadesini kullanıyorsanız gereklidir **Ivsuıobject** türü.
 
--   *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
+- *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
 
-    -   WinForms ilgili UI Yardımcıları kullanıyorsanız gereklidir.
+    - WinForms ilgili UI Yardımcıları kullanıyorsanız gereklidir.
 
-    -   **EmbedInteropTypes** ayarlanmalıdır true
+    - **EmbedInteropTypes** ayarlanmalıdır true
 
 ### <a name="first-steps-native"></a>İlk adımları (yerel)
  Görüntü hizmeti kullanmak için bazılarını veya tümünü projenize aşağıdaki üst bilgiler dahil etmek gerekir:
 
--   **KnownImageIds.h**
+- **KnownImageIds.h**
 
-    -   Yerleşik Görüntü Kataloğu kullanıyorsanız gereklidir **KnownMonikers**, ancak kullanamazsınız **ImageMoniker** ne zaman iade değerlerini gibi türü **Ivshierarchy GetGuidProperty**veya **GetProperty** çağırır.
+    - Yerleşik Görüntü Kataloğu kullanıyorsanız gereklidir **KnownMonikers**, ancak kullanamazsınız **ImageMoniker** ne zaman iade değerlerini gibi türü **Ivshierarchy GetGuidProperty**veya **GetProperty** çağırır.
 
--   **KnownMonikers.h**
+- **KnownMonikers.h**
 
-    -   Yerleşik Görüntü Kataloğu kullanıyorsanız gereklidir **KnownMonikers**.
+    - Yerleşik Görüntü Kataloğu kullanıyorsanız gereklidir **KnownMonikers**.
 
--   **ImageParameters140.h**
+- **ImageParameters140.h**
 
-    -   İfadesini kullanıyorsanız gereklidir **ImageMoniker** ve **Imageattributes** türleri.
+    - İfadesini kullanıyorsanız gereklidir **ImageMoniker** ve **Imageattributes** türleri.
 
--   **VSShell140.h**
+- **VSShell140.h**
 
-    -   İfadesini kullanıyorsanız gereklidir **IVsImageService2** türü.
+    - İfadesini kullanıyorsanız gereklidir **IVsImageService2** türü.
 
--   **ImageThemingUtilities.h**
+- **ImageThemingUtilities.h**
 
-    -   Tema oluşturma sizin adınıza idare görüntü service gerisini halleder başlatamadı gereklidir.
+    - Tema oluşturma sizin adınıza idare görüntü service gerisini halleder başlatamadı gereklidir.
 
-    -   Görüntü hizmeti, görüntü Tema oluşturma yerine bu başlığı kullanmayın.
+    - Görüntü hizmeti, görüntü Tema oluşturma yerine bu başlığı kullanmayın.
 
 ::: moniker range="vs-2017"
--   **VSUIDPIHelper.h**
+- **VSUIDPIHelper.h**
 
-    -   Geçerli DPI almak için DPI Yardımcıları kullanıyorsanız gereklidir.
+    - Geçerli DPI almak için DPI Yardımcıları kullanıyorsanız gereklidir.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
--   **VsDpiAwareness.h**  
+- **VsDpiAwareness.h**  
 
-    -   Geçerli DPI almak için DPI tanıma Yardımcıları kullanıyorsanız gereklidir.  
+    - Geçerli DPI almak için DPI tanıma Yardımcıları kullanıyorsanız gereklidir.  
 
 ::: moniker-end
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>Yeni bir WPF UI nasıl yazılır?
 
-1.  Yukarıdaki gerekli derleme başvurularını ekleyerek başlangıç ilk adımlar bölümüne projenize. Bunların tümünü ekleyin, böylece yalnızca gereksinim duyduğunuz başvuruları eklemek gerekmez. (Not: kullanıyorsanız veya erişimi **renkleri** yerine **Fırçalar**, başvuru atlayabilirsiniz sonra **yardımcı programları**, bu yana dönüştürücü gerekmez.)
+1. Yukarıdaki gerekli derleme başvurularını ekleyerek başlangıç ilk adımlar bölümüne projenize. Bunların tümünü ekleyin, böylece yalnızca gereksinim duyduğunuz başvuruları eklemek gerekmez. (Not: kullanıyorsanız veya erişimi **renkleri** yerine **Fırçalar**, başvuru atlayabilirsiniz sonra **yardımcı programları**, bu yana dönüştürücü gerekmez.)
 
-2.  İstediğiniz görüntüyü seçin ve takma adı alın. Kullanan bir **KnownMoniker**, veya kendi özel görüntüler ve takma ad varsa kendi kullanın.
+2. İstediğiniz görüntüyü seçin ve takma adı alın. Kullanan bir **KnownMoniker**, veya kendi özel görüntüler ve takma ad varsa kendi kullanın.
 
-3.  Ekleme **CrispImages** , XAML için. (Örneğe bakın.)
+3. Ekleme **CrispImages** , XAML için. (Örneğe bakın.)
 
-4.  Ayarlama **ImageThemingUtilities.ImageBackgroundColor** UI hiyerarşinizdeki özelliği. (Burada arka plan rengi bilinir, açık olmayan mutlaka konumda ayarlanmalıdır **CrispImage**.) (Örneğe bakın.)
+4. Ayarlama **ImageThemingUtilities.ImageBackgroundColor** UI hiyerarşinizdeki özelliği. (Burada arka plan rengi bilinir, açık olmayan mutlaka konumda ayarlanmalıdır **CrispImage**.) (Örneğe bakın.)
 
 ```xaml
 <Window
@@ -323,19 +323,19 @@ Bu kılavuzu, rehberlik ve en iyi uygulamalar Visual Studio Görüntü hizmeti v
 
  Varolan WPF Başlamayabileceğini bildirir.UI üç temel adımdan oluşur göreceli olarak basit bir işlemdir:
 
-1.  Tümünü Değiştir \<Görüntü > ile kullanıcı Arabirimi öğelerinde \<CrispImage > öğeleri.
+1. Tümünü Değiştir \<Görüntü > ile kullanıcı Arabirimi öğelerinde \<CrispImage > öğeleri.
 
-2.  Tüm kaynak öznitelikleri için bilinen ad özniteliklerini değiştirin.
+2. Tüm kaynak öznitelikleri için bilinen ad özniteliklerini değiştirin.
 
-    -   Görüntüyü hiçbir zaman değiştirir ve kullanmakta olduğunuz **KnownMonikers**, statik olarak bu özelliğe bağlama **KnownMoniker**. (Yukarıdaki örnekte bkz.)
+    - Görüntüyü hiçbir zaman değiştirir ve kullanmakta olduğunuz **KnownMonikers**, statik olarak bu özelliğe bağlama **KnownMoniker**. (Yukarıdaki örnekte bkz.)
 
-    -   Görüntüyü hiçbir zaman değiştirir ve kendi özel görüntünüzü kullanıyorsanız, statik olarak için kendi ad bağlayın.
+    - Görüntüyü hiçbir zaman değiştirir ve kendi özel görüntünüzü kullanıyorsanız, statik olarak için kendi ad bağlayın.
 
-    -   Görüntü değiştirebilirsiniz, bilinen ad özniteliği özellik değişiklikleri bildiren bir kod özelliği bağlayın.
+    - Görüntü değiştirebilirsiniz, bilinen ad özniteliği özellik değişiklikleri bildiren bir kod özelliği bağlayın.
 
-3.  Herhangi bir UI hiyerarşi içinde ayarlamak **ImageThemingUtilities.ImageBackgroundColor** emin renkleri ters çevirmeyi yapmak için düzgün şekilde çalışır.
+3. Herhangi bir UI hiyerarşi içinde ayarlamak **ImageThemingUtilities.ImageBackgroundColor** emin renkleri ters çevirmeyi yapmak için düzgün şekilde çalışır.
 
-    -   Bu kullanımını gerektirebilir **BrushToColorConverter** sınıfı. (Yukarıdaki örnekte bkz.)
+    - Bu kullanımını gerektirebilir **BrushToColorConverter** sınıfı. (Yukarıdaki örnekte bkz.)
 
 ## <a name="how-do-i-update-win32-ui"></a>Win32 UI nasıl güncelleştirebilirim?
  Aşağıdaki uygun yerlerde görüntüleri ham yüklenmesini değiştirileceğini kodunuza ekleyin. Gerektiğinde HICONs HIMAGELIST karşı karşı HBITMAPs döndürmek için değerleri geçin.
@@ -350,6 +350,7 @@ CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
  **Görüntü isteme**
 
 ::: moniker range="vs-2017"
+
 ```cpp  
 ImageAttributes attr = { 0 };  
 attr.StructSize      = sizeof(attributes);  
@@ -367,9 +368,11 @@ CComPtr<IVsUIObject> spImg;
 // Replace this KnownMoniker with your desired ImageMoniker  
 spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
 ```  
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
 ```cpp 
 UINT dpiX, dpiY;
 HWND hwnd = // get the HWND where the image will be displayed
@@ -391,6 +394,7 @@ CComPtr<IVsUIObject> spImg;
 // Replace this KnownMoniker with your desired ImageMoniker  
 spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
 ```  
+
 ::: moniker-end
 
 ## <a name="how-do-i-update-winforms-ui"></a>WinForms UI nasıl güncelleştirebilirim?
@@ -413,6 +417,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
  **İstek resmi**
 
 ::: moniker range="vs-2017"
+
 ```csharp  
 ImageAttributes attributes = new ImageAttributes  
 {  
@@ -434,9 +439,11 @@ IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
 // Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
 ```  
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
 ```csharp  
 Control control = // get the control where the image will be displayed
 
@@ -460,6 +467,7 @@ IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
 // Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
 ```  
+
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>Görüntü bilinen yeni bir araç penceresinde nasıl kullanabilirim?
@@ -501,18 +509,18 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 3. Sekmeleri yeterince geldiğinizde araç penceresi sekmesine (aynı zamanda kullanılan **Ctrl**+**sekmesini** pencere değiştirici).
 
-   1.  (Varsa), türetilen sınıfın oluşturucusunda bu satırları kaldırmak **ToolWindowPane** türü:
+   1. (Varsa), türetilen sınıfın oluşturucusunda bu satırları kaldırmak **ToolWindowPane** türü:
 
        ```csharp
        this.BitmapResourceID = <Value>;
        this.BitmapIndex = <Value>;
        ```
 
-   2.  #1. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.
+   2. #1. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.
 
 4. Araç penceresini açmak için komutu.
 
-   -   #2. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.
+   - #2. adım, bkz. "Nasıl kullanırım görüntü bilinen yeni bir araç penceresinde?" Yukarıdaki bölümde.
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Görüntü bilinen adlar .vsct dosyası içinde nasıl kullanabilirim?
  Güncelleştirme, *.vsct* dosya aşağıdaki açıklama eklenen satırları tarafından belirtildiği şekilde:
@@ -630,27 +638,27 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 1. Çalıştırma **ManifestFromResources** aracı, görüntü şeridi geçirme. Bu Şerit için bir bildirim oluşturur.
 
-   -   Önerilen: kullanımını uyacak şekilde bildirimi olmayan varsayılan bir ad sağlayın.
+   - Önerilen: kullanımını uyacak şekilde bildirimi olmayan varsayılan bir ad sağlayın.
 
 2. Yalnızca kullanıyorsanız **KnownMonikers**, aşağıdakileri yapın:
 
-   -   Değiştirin \<görüntüleri > ile bildiriminin \<görüntüleri / >.
+   - Değiştirin \<görüntüleri > ile bildiriminin \<görüntüleri / >.
 
-   -   Tüm subimage kimlikleri kaldırmak (hepsi birlikte \<imagestrip adı > _ ##).
+   - Tüm subimage kimlikleri kaldırmak (hepsi birlikte \<imagestrip adı > _ ##).
 
-   -   Önerilen: AssetsGuid simge ve görüntü şeridi sembol kullanımını uyacak şekilde yeniden adlandırın.
+   - Önerilen: AssetsGuid simge ve görüntü şeridi sembol kullanımını uyacak şekilde yeniden adlandırın.
 
-   -   Her değiştirin **ContainedImage**ait GUID $(ImageCatalogGuid) ile her değiştirin **ContainedImage**'s $ Kimliğiyle (\<bilinen ad >) ve dış = "true" özniteliği eklemek için her **ContainedImage**
+   - Her değiştirin **ContainedImage**ait GUID $(ImageCatalogGuid) ile her değiştirin **ContainedImage**'s $ Kimliğiyle (\<bilinen ad >) ve dış = "true" özniteliği eklemek için her **ContainedImage**
 
-       -   \<bilinen ad > ile değiştirilmelidir **KnownMoniker** görüntü eşleşen ancak "KnownMonikers." adından kaldırıldı.
+       - \<bilinen ad > ile değiştirilmelidir **KnownMoniker** görüntü eşleşen ancak "KnownMonikers." adından kaldırıldı.
 
-   -   Ekle < alma Manifest="$(ManifestFolder)\\< yükleme dizini yolu göreli *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> üstüne \<sembolleri > bölümü.
+   - Ekle < alma Manifest="$(ManifestFolder)\\< yükleme dizini yolu göreli *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> üstüne \<sembolleri > bölümü.
 
-       -   Göreli yol bildirimi yazma Kurulum içinde tanımlanan dağıtım konumu tarafından belirlenir.
+       - Göreli yol bildirimi yazma Kurulum içinde tanımlanan dağıtım konumu tarafından belirlenir.
 
 3. Çalıştırma **ManifestToCode** görüntü şeridi için Görüntü hizmeti sorgulamak için kullanabileceğiniz bir bilinen ad var olan kod sahip olacak şekilde sarmalayıcılar aracı.
 
-   -   Önerilen: sarmalayıcıları ve bunların kullanımını uyacak şekilde ad alanları için varsayılan olmayan adlar sağlar.
+   - Önerilen: sarmalayıcıları ve bunların kullanımını uyacak şekilde ad alanları için varsayılan olmayan adlar sağlar.
 
 4. Tüm ekler, yazma Kurulum/dağıtım ve diğer kod değişikliklerini Görüntü hizmeti ve yeni dosyaları ile çalışma.
 
@@ -707,11 +715,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **HIMAGELISTs destek gerekmez**
 
-1.  Belirlemek **KnownMonikers** , görüntü şeridi görüntüleri eşleşen veya resimleri için kendi adlar, görüntü şeridi içinde oluşturun.
+1. Belirlemek **KnownMonikers** , görüntü şeridi görüntüleri eşleşen veya resimleri için kendi adlar, görüntü şeridi içinde oluşturun.
 
-2.  Görüntü şeridi takma adların yerine kullanmak için gerekli dizin, görüntüyü almak için kullanılan her eşleme güncelleştirin.
+2. Görüntü şeridi takma adların yerine kullanmak için gerekli dizin, görüntüyü almak için kullanılan her eşleme güncelleştirin.
 
-3.  Güncelleştirilmiş eşleme aracılığıyla bilinen adlar istemek için Görüntü hizmeti kullanmak için kodunuzu güncelleştirin. (Bu güncelleştirme gelebilir **CrispImages** yönetilen kod veya HBITMAPs veya HICONs görüntü Hizmeti'nden istiyor ve yerel kod için geçirme etrafında.)
+3. Güncelleştirilmiş eşleme aracılığıyla bilinen adlar istemek için Görüntü hizmeti kullanmak için kodunuzu güncelleştirin. (Bu güncelleştirme gelebilir **CrispImages** yönetilen kod veya HBITMAPs veya HICONs görüntü Hizmeti'nden istiyor ve yerel kod için geçirme etrafında.)
 
 ## <a name="testing-your-images"></a>Görüntülerinizin test etme
  Görüntü kitaplığı Görüntüleyicisi aracı, her şeyin doğru şekilde yazılmadığından emin olmak için görüntü bildirimlerini test etmek için kullanabilirsiniz. Aracı bulabilirsiniz [Visual Studio 2015 SDK](visual-studio-sdk.md). Bu araç ve diğerleri için belgeler bulunabilir [burada](https://aka.ms/VSImageThemeTools).
@@ -740,19 +748,19 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>SSS
 
--   Yüklenirken dahil herhangi bir bağımlılığın olup \<başvuru Include="Microsoft.VisualStudio.*. Interop.14.0.DesignTime"/ >?
+- Yüklenirken dahil herhangi bir bağımlılığın olup \<başvuru Include="Microsoft.VisualStudio.*. Interop.14.0.DesignTime"/ >?
 
-    -   Ayarlama EmbedInteropTypes = "Tüm birlikte çalışma DLL'lere true".
+    - Ayarlama EmbedInteropTypes = "Tüm birlikte çalışma DLL'lere true".
 
--   Bir görüntü bildirimi uzantım ile nasıl dağıtabilirim?
+- Bir görüntü bildirimi uzantım ile nasıl dağıtabilirim?
 
-    -   Ekleme *.imagemanifest* projenize bir dosya.
+    - Ekleme *.imagemanifest* projenize bir dosya.
 
-    -   "VSIX'e dahil et", True olarak ayarlayın.
+    - "VSIX'e dahil et", True olarak ayarlayın.
 
--   Ben CPS proje sistemimin güncelleştiriliyor. Ne **IMAGENAME** ve **StockIconService**?
+- Ben CPS proje sistemimin güncelleştiriliyor. Ne **IMAGENAME** ve **StockIconService**?
 
-    -   Bunlar bilinen adlar kullanmak için CPS güncelleştirildiği sırada kaldırıldı. Çağrısı yapması **StockIconService**, istenen geçirmeniz yeterlidir **KnownMoniker** yöntemi veya özelliği kullanılarak **ToProjectSystemType()** uzantı yöntemi CPS yardımcı programları. Bir eşleme bulabilirsiniz **IMAGENAME** için **KnownMonikers** aşağıda:
+    - Bunlar bilinen adlar kullanmak için CPS güncelleştirildiği sırada kaldırıldı. Çağrısı yapması **StockIconService**, istenen geçirmeniz yeterlidir **KnownMoniker** yöntemi veya özelliği kullanılarak **ToProjectSystemType()** uzantı yöntemi CPS yardımcı programları. Bir eşleme bulabilirsiniz **IMAGENAME** için **KnownMonikers** aşağıda:
 
         |||
         |-|-|
@@ -820,7 +828,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|
         |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|
 
-    -   Ben tamamlanma listesi sağlayıcım güncelleştiriliyor. Hangi **KnownMonikers** eski eşleşen **StandardGlyphGroup** ve **StandardGlyph** değerleri?
+    - Ben tamamlanma listesi sağlayıcım güncelleştiriliyor. Hangi **KnownMonikers** eski eşleşen **StandardGlyphGroup** ve **StandardGlyph** değerleri?
 
         ||||
         |-|-|-|

@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108350"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Visual Studio statik kod analizini kullanarak Store uygulamalarında Visual Basic ve C# kod kalitesini analiz etme
 
@@ -42,7 +42,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
  [Visual Basic ve C# Kod Analizi uyarılarının](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> Kod Analizi çalıştırma
+## <a name="BKMK_Run"></a> Kod Analizi çalıştırma
  Visual Studio çözümünüzü Kod Analizi çalıştırmak için:
 
 - Üzerinde **derleme** menüsünde seçin **çözüm üzerinde kod analizini Çalıştır**.
@@ -57,7 +57,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
    ![Kod Analizi penceresi](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme
+## <a name="BKMK_Analyze"></a> Çözümleme ve kod çözümleme uyarıları çözümleme
  Belirli bir uyarıyı çözümlemek için Kod Analizi penceresi uyarıda başlığını tıklatın. Sorun hakkında ayrıntılı bilgileri görüntülemek için uyarı genişletir.
 
  ![Kod Analizi uyarısı Genişletilmiş](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
@@ -71,7 +71,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 > [!TIP]
 >  Kod analizinden kaynaklanan Kod Analizi penceresi yeniden çalıştırabilirsiniz. Tıklayın **Çözümle** düğmesine tıklayın ve analiz kapsamını seçin. Seçilen proje veya çözümün tamamını üzerinde analiz yeniden çalıştırabilirsiniz.
 
-##  <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme
+## <a name="BKMK_Suppress"></a> Kod Analizi uyarılarını gizleme
  Kod Analizi uyarısı düzeltmemeyi ne zaman karar verebilirsiniz zamanlar vardır. Uyarı çözümleme sorunu kodunuzun tüm gerçek uygulamasında ortaya çıkacağını olasılık ile ilgili çok fazla değiştirilemeyen gerektirir karar verebilirsiniz. Veya uyarıda kullanılan analiz belirli bir içerik için uygun olduğunu düşündüğünüz. Artık Kod Analizi penceresinde görünecekleri bireysel uyarıları gösterilmemesini sağlayabilirsiniz.
 
  Bir uyarıyı bastırmak için:
@@ -88,14 +88,14 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
 
      Kararınız uyarı gizleme dosyasında veya kaynak dosyadaki engellenip engellenmeyeceğini belirtir, kodlama stili ve gereksinimlerine bağlıdır.
 
-##  <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme
+## <a name="BKMK_Search"></a> Arama ve Kod Analizi sonuçlarını filtreleme
  Uzun listesi uyarı iletilerini arayabilir ve çoklu proje çözümlerinde uyarıları filtreleyebilirsiniz.
 
  ![Aramanıza ve filtrelemenize Kod Analizi penceresi](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  İçinde [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)], tüm kod analizi uyarıları, uyarı önem derecesi vardır.
 
-##  <a name="BKMK_Warnings"></a> Visual Basic ve C# Kod Analizi uyarılarının
+## <a name="BKMK_Warnings"></a> Visual Basic ve C# Kod Analizi uyarılarının
  Kod Analizi aşağıdaki uyarılar oluşturur:
 
  [CA1001: Atılabilir alanlara sahip türler atılabilir olmalıdır](http://msdn.microsoft.com/library/ms182172.aspx)

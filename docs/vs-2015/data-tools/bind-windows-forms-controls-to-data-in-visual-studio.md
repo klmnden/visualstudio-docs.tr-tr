@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069464"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio'da verilere Windows Forms denetimleri bağlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,21 +41,21 @@ Windows Forms veri bağlama ile uygulamanızın kullanıcılarına verileri gör
 
 ## <a name="in-this-section"></a>Bu bölümde
 
--   [Verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Verilere Windows Forms denetimleri bağlama](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [Verileri kaydetmeden önce verilere bağlı denetimler üzerinde işlem içi düzenlemeler yürütme](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [Verileri kaydetmeden önce verilere bağlı denetimler üzerinde işlem içi düzenlemeler yürütme](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Windows Forms uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Windows Forms uygulamalarında arama tabloları oluşturma](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [Veri aramak için Windows Form oluşturma](../data-tools/create-a-windows-form-to-search-data.md)
+- [Veri aramak için Windows Form oluşturma](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [Basit veri bağlama modelini destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [Basit veri bağlama modelini destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [Karmaşık veri bağlama modelini destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [Karmaşık veri bağlama modelini destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [Arama veri bağlama modelini destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [Arama veri bağlama modelini destekleyen bir Windows Forms kullanıcı denetimi oluşturma](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [Formlar arasında veri geçirme](../data-tools/pass-data-between-forms.md)
+- [Formlar arasında veri geçirme](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource bileşeni
  <xref:System.Windows.Forms.BindingSource> Bileşen iki amaca hizmet eder. İlk olarak, form üzerindeki denetimleri için veri bağlama sırasında bir soyutlama katmanı sağlar. Form üzerinde denetimleri için ilişkili <xref:System.Windows.Forms.BindingSource> bileşen (yerine doğrudan bir veri kaynağına bağlanan).
@@ -64,11 +64,11 @@ Windows Forms veri bağlama ile uygulamanızın kullanıcılarına verileri gör
 
  Hakkında daha fazla bilgi için <xref:System.Windows.Forms.BindingSource> bileşeni için bkz:
 
--   [BindingSource Bileşeni](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource Bileşeni](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [BindingSource Bileşenine Genel Bakış](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource Bileşenine Genel Bakış](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [BindingSource Bileşeni Mimarisi](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource Bileşeni Mimarisi](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator denetimi
  Bu bileşen, bir Windows uygulaması tarafından görüntülenen veriler aracılığıyla gezinmek için bir kullanıcı arabirimi sağlar. Daha fazla bilgi için [BindingNavigator denetimine](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcd72b398c49b84f110145f5dbf0e8b8929d82e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102646"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>VSTO eklentilerinde diğer Office Çözümlerinden kod arama
   Bir nesne için diğer Microsoft Office çözümleri gibi diğer çözümlerle VSTO eklenti içinde kullanıma sunabilirsiniz. VSTO eklenti diğer çözümleri kullanmayı etkinleştirmek istediğiniz bir hizmet sağlar, bu yöntem kullanışlıdır. Bir Web hizmetinden Finansal veriler üzerinde hesaplamalar yapan Microsoft Office Excel için VSTO eklentisi varsa, örneğin, diğer çözümleri bu hesaplamalar zamanında Excel VSTO eklentisi içinde çağırarak gerçekleştirebilirsiniz.
@@ -31,29 +31,29 @@ ms.locfileid: "56619725"
 
  Bu işlemde iki ana adım vardır:
 
--   VSTO eklenti içinde bir nesne için diğer çözümleri kullanıma sunar.
+- VSTO eklenti içinde bir nesne için diğer çözümleri kullanıma sunar.
 
--   Başka bir çözümde, VSTO eklentisi ve nesnenin çağrı üyeleri tarafından kullanıma sunulan nesneye erişim.
+- Başka bir çözümde, VSTO eklentisi ve nesnenin çağrı üyeleri tarafından kullanıma sunulan nesneye erişim.
 
 ## <a name="types-of-solutions-that-can-call-code-in-an-add-in"></a>Tür bir eklentide kod çağırabilir miyim çözümler
  VSTO eklentisi çözümleri aşağıdaki türden bir nesne getirebilir:
 
--   Visual Basic for Applications (VBA) kodu aynı uygulama işleminde, VSTO eklentisi olarak yüklenen belgedeki.
+- Visual Basic for Applications (VBA) kodu aynı uygulama işleminde, VSTO eklentisi olarak yüklenen belgedeki.
 
--   Aynı uygulama işlemi, VSTO eklentisi olarak yüklenen belge düzeyinde özelleştirmeler.
+- Aynı uygulama işlemi, VSTO eklentisi olarak yüklenen belge düzeyinde özelleştirmeler.
 
--   Visual Studio'da Office proje şablonları kullanılarak oluşturulan diğer VSTO Add-Ins.
+- Visual Studio'da Office proje şablonları kullanılarak oluşturulan diğer VSTO Add-Ins.
 
--   COM, VSTO eklentileri (diğer bir deyişle, VSTO uygulayan eklentileri <xref:Extensibility.IDTExtensibility2> doğrudan arabirim).
+- COM, VSTO eklentileri (diğer bir deyişle, VSTO uygulayan eklentileri <xref:Extensibility.IDTExtensibility2> doğrudan arabirim).
 
--   VSTO eklenti değerinden farklı bir işlemde çalışan herhangi bir çözümü (Bu tür çözümler olarak da adlandırılır *işlem dışı istemciler*). Bunlar, bir Windows Forms veya konsol uygulaması ve VSTO farklı bir işlem içinde yüklenen eklentiler gibi bir Office uygulaması otomatikleştirmek uygulamaları içerir.
+- VSTO eklenti değerinden farklı bir işlemde çalışan herhangi bir çözümü (Bu tür çözümler olarak da adlandırılır *işlem dışı istemciler*). Bunlar, bir Windows Forms veya konsol uygulaması ve VSTO farklı bir işlem içinde yüklenen eklentiler gibi bir Office uygulaması otomatikleştirmek uygulamaları içerir.
 
 ## <a name="expose-objects-to-other-solutions"></a>Diğer çözümleri nesnelere kullanıma sunma
  Diğer çözümler için VSTO eklenti, bir nesneyi göstermek için VSTO eklenti aşağıdaki adımları gerçekleştirin:
 
-1.  Diğer çözümler için kullanıma sunmak istediğiniz bir sınıf tanımlar.
+1. Diğer çözümler için kullanıma sunmak istediğiniz bir sınıf tanımlar.
 
-2.  Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yönteminde `ThisAddIn` sınıfı. Diğer çözümler için kullanıma sunmak istediğiniz sınıfının bir örneğini döndürür.
+2. Geçersiz kılma <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> yönteminde `ThisAddIn` sınıfı. Diğer çözümler için kullanıma sunmak istediğiniz sınıfının bir örneğini döndürür.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Diğer çözümler için kullanıma sunmak istediğiniz sınıfı tanımlayın
  En azından kullanıma sunmak istediğiniz sınıf ortak olmalıdır, olmalıdır <xref:System.Runtime.InteropServices.ComVisibleAttribute> özniteliğini **true**, ve açığa çıkarmalıdır [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) arabirimi.
@@ -70,9 +70,9 @@ ms.locfileid: "56619725"
 
 5. Bu sınıf işlem dışı istemcilere kullanıma sunmak istiyorsanız aşağıdakileri yapmanız gerekebilir:
 
-   -   Türetin <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Daha fazla bilgi için [kullanıma sınıfları işlem dışı istemcilere](#outofproc).
+   - Türetin <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Daha fazla bilgi için [kullanıma sınıfları işlem dışı istemcilere](#outofproc).
 
-   -   Ayarlama **kaydetme COM birlikte çalışması için** arabirimi tanımladığınız projedeki özellik. Bu özellik yalnızca istemcilerin VSTO eklentisi çağırmak için erken bağlama kullanmasını etkinleştirmek istiyorsanız gereklidir.
+   - Ayarlama **kaydetme COM birlikte çalışması için** arabirimi tanımladığınız projedeki özellik. Bu özellik yalnızca istemcilerin VSTO eklentisi çağırmak için erken bağlama kullanmasını etkinleştirmek istiyorsanız gereklidir.
 
    Aşağıdaki kod örneğinde bir `AddInUtilities` sınıfıyla birlikte bir `ImportData` diğer çözümler tarafından çağrılabilen bir yöntem. Daha geniş bir anlatım bağlamında bu kodu görmek için bkz: [izlenecek yol: Bir VSTO eklenti VBA'dan kod çağırma](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619725"
 
  Bunun yerine getirebilir [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) ayarlayarak arabirimi <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> özniteliği AutoDispatch veya AutoDual değerine <xref:System.Runtime.InteropServices.ClassInterfaceType> sabit listesi. Arabirimi kullanıma sunma, ayrı arabirim yöntemleri bildirmeniz gerekmez. Ancak, genel ve statik olmayan yöntemleri gibi temel sınıftan edinilen yöntemler de dahil olmak üzere sınıfınızda VBA kodu çağırabilir <xref:System.Object>. Ayrıca, erken bağlama kullanan işlem dışı istemciler sınıfınıza çağrılamıyor.
 
-###  <a name="outofproc"></a> İşlem dışı istemcilere sınıfları gösterir
+### <a name="outofproc"></a> İşlem dışı istemcilere sınıfları gösterir
  VSTO eklenti işlem dışı istemcilere bir sınıfta kullanıma sunmak istiyorsanız, bu sınıftan türetilmelidir <xref:System.Runtime.InteropServices.StandardOleMarshalObject> işlem dışı istemciler VSTO eklentisi nesnenizin çağırabilirsiniz emin olmak için. Aksi takdirde, bir işlem dışı istemcisinde nesnenizin örneğini almaya çalışır beklenmedik şekilde başarısız olabilir.
 
  Bu, tüm çağrıları nesne modelini bir Office uygulamasının ana kullanıcı Arabirimi iş parçacığında yapılması gerekir, ancak nesnenizin işlem dışı istemci çağrıları rastgele bir RPC (uzak yordam çağrısı) parçacığında ulaşır hatasıdır. .NET Framework'teki COM sıralama mekanizması iş parçacıkları geçiş yapmaz ve bunun yerine gelen RPC iş parçacığı ana UI iş parçacığı yerine nesnenize çağrısı hazırlamak çalışır. Nesnenizin türetildiği bir sınıf örneği olup olmadığını <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, nesnenizin gelen çağrıları otomatik olarak konak uygulamanın ana UI iş parçacığı ifşa edilen nesnenin oluşturulduğu, iş parçacığı için sıralanır.

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111655"
 ---
 # <a name="how-to-troubleshoot-services"></a>Nasıl yapılır: Hizmetleri sorunlarını giderme
 Bir hizmet almayı deneyin gerektiğinde oluşabilecek bazı ortak sorunlar vardır:
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. GetService çağırdığınızda hizmet türü ve arabirim türünü kullanın. Bir hizmet isteğinde bulunurken [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> GUID türünden çıkarır. Aşağıdaki koşullar doğruysa, bir hizmet bulunmaz:
 
-   1.  Bir arabirim türü yerine hizmet türünün GetService için geçirilir.
+   1. Bir arabirim türü yerine hizmet türünün GetService için geçirilir.
 
-   2.  Hiçbir GUID arabirime açıkça atanır. Bu nedenle, sistem gerektiği gibi bir nesne için varsayılan bir GUID oluşturur.
+   2. Hiçbir GUID arabirime açıkça atanır. Bu nedenle, sistem gerektiği gibi bir nesne için varsayılan bir GUID oluşturur.
 
 3. Hizmet isteyen VSPackage tarihli emin olun. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sonra oluşturmak ve çağırmadan önce VSPackage siteleri <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 

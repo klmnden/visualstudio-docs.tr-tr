@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2ed16962a417f53569e7fd6e5364ac0a7f11d9a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee6e163bd6587d93c970a56ac1c08383084ddc0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095574"
 ---
 # <a name="formatversion-task"></a>FormatVersion Görevi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Düzeltme numarası için sürüm numarası ekler.  
   
--   #1. durum: Giriş: Sürüm =\<tanımlanmamış >;  Gözden geçirme =\<umursamaz >;   Çıkış: OutputVersion "1.0.0.0" =  
+- #1. durum: Giriş: Sürüm =\<tanımlanmamış >;  Gözden geçirme =\<umursamaz >;   Çıkış: OutputVersion "1.0.0.0" =  
   
--   #2. durum: Giriş: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
+- #2. durum: Giriş: Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"  
   
--   #3. durum: Giriş: Sürüm = "1.0.0.0" Düzeltme =\<umursamaz >;  Çıkış: OutputVersion "1.0.0.0" =  
+- #3. durum: Giriş: Sürüm = "1.0.0.0" Düzeltme =\<umursamaz >;  Çıkış: OutputVersion "1.0.0.0" =  
   
 ## <a name="parameters"></a>Parametreler  
  Parametreleri aşağıdaki tabloda açıklanmıştır `FormatVersion` görev.  

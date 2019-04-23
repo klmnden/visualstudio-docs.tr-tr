@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068879"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio'daki Sık Kullanılan Komutlar için Varsayılan Klavye Kısayolları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 |[Derleme](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Düzenle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Araçlar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Pencere](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[Hata ayıklama](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Dosya](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Yeniden düzenleme](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Görünümü](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> Derleme
+## <a name="bkmk_build"></a> Derleme
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 |Build.Compile|Ctrl+F7 [Genel]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Genel]|
 
-##  <a name="bkmk_debug"></a> Hata ayıklama
+## <a name="bkmk_debug"></a> Hata ayıklama
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ Bu varsayılan klavye kısayolları seçerek Visual Studio'da sık kullanılan k
 |Debug.StopDebugging|Shift+F5 [Genel]|
 |Debug.ToggleBreakpoint|F9 [genel]|
 
-##  <a name="bkmk_edit"></a> Düzenle
+## <a name="bkmk_edit"></a> Düzenle
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ DIT. Surroundwıth|Ctrl+K, Ctrl+S [Genel]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [Metin Düzenleyici]|
 |Edit.WordDeleteToStart|Ctrl+Geri Al [Metin Düzenleyici]|
 
-##  <a name="bkmk_file"></a> Dosya
+## <a name="bkmk_file"></a> Dosya
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ DIT. Surroundwıth|Ctrl+K, Ctrl+S [Genel]|
 |File.SaveSelectedItems|Ctrl+S [Genel]|
 |File.ViewinBrowser|Ctrl+Shift+W [Genel]|
 
-##  <a name="bkmk_project"></a> Proje
+## <a name="bkmk_project"></a> Proje
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Shift+Alt+A [Genel]|
 |Project.AddNewItem|Ctrl+Shift+A [Genel]|
 
-##  <a name="bkmk_refactor"></a> Yeniden düzenleme
+## <a name="bkmk_refactor"></a> Yeniden düzenleme
 
 |Komut|Klavye Kısayolu [Bağlam]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Genel]|
 
-##  <a name="bkmk_tools"></a> Araçları
+## <a name="bkmk_tools"></a> Araçları
 
 |Komut|Klavye Kısayolu [Bağlam]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Genel]|
 
-##  <a name="bkmk_view"></a> Görünümü
+## <a name="bkmk_view"></a> Görünümü
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ görünümü. TfsTeamExplorer|CTRL +\\, Ctrl + M [genel]|
 |View.ViewCode|Enter [Sınıf Diyagramı]<br /><br /> veya F7 [Ayarlar Tasarımcısı]|
 |View.ViewDesigner|Shift+F7 [HTML Düzenleyicisi Tasarım Görünümü]|
 
-##  <a name="bkmk_window"></a> Pencere
+## <a name="bkmk_window"></a> Pencere
 
 |Komutlar|Klavye Kısayolları [Bağlamlar]|
 |--------------|-------------------------------------|

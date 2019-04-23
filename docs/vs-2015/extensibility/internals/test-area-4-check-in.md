@@ -1,5 +1,5 @@
 ---
-title: 'Test alanı 4: İade | Microsoft Docs'
+title: 'Test Alanı 4: İade | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068736"
 ---
-# <a name="test-area-4-check-in"></a>Test alanı 4: İade Et
+# <a name="test-area-4-check-in"></a>Test Alanı 4: İade Etme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Bu kaynak denetimi eklentisi test alanını kapsayan güncelleştirilmiş öğeleri sürüm deposu gönderme **iade** komutu.  
@@ -35,11 +35,11 @@ Bu kaynak denetimi eklentisi test alanını kapsayan güncelleştirilmiş öğel
   
 ## <a name="common-expected-behavior"></a>Ortak beklenen davranışı  
   
--   Projeleri ve dosyaları bir çözüm veya proje kaynak denetimi altında eklenen görünür **iade** iletişim kutusu ve **Bekleyen İadeler** penceresi.  
+- Projeleri ve dosyaları bir çözüm veya proje kaynak denetimi altında eklenen görünür **iade** iletişim kutusu ve **Bekleyen İadeler** penceresi.  
   
--   Sonra iade eklenen öğeler kaynak denetiminde görünür.  
+- Sonra iade eklenen öğeler kaynak denetiminde görünür.  
   
--   İade etme sonra güncelleştirilmiş öğeleri deposunda düzgün bir şekilde tutulur.  
+- İade etme sonra güncelleştirilmiş öğeleri deposunda düzgün bir şekilde tutulur.  
   
 ## <a name="test-cases"></a>Test çalışmaları  
  Belirli test çalışmaları için iade etme test alanı aşağıda verilmiştir.  

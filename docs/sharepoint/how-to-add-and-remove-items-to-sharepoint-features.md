@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099383"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Nasıl yapılır: SharePoint özelliklerine öğe ekleyip
   Bir SharePoint çözüm oluşturduğunuzda, Visual Studio varsayılan SharePoint Proje öğeleri için bir özellik ekler. Dağıtımdan önce ekleyebilir ve SharePoint özelliği değiştirmek için SharePoint Proje öğeleri kaldırın.
@@ -46,9 +46,9 @@ ms.locfileid: "56619231"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Özellik Tasarımcısı ile SharePoint öğeleri kaldırmak için
 
-1.  Bir veya daha fazla öğe seçin **özellik öğeleri** listesi.
+1. Bir veya daha fazla öğe seçin **özellik öğeleri** listesi.
 
-2.  Seçin **Kaldır** düğmesine (<) aynı anda bir öğeyi kaldırın veya seçin **Tümünü Kaldır** düğmesine (<<) tüm öğeleri kaldırmak için.
+2. Seçin **Kaldır** düğmesine (<) aynı anda bir öğeyi kaldırın veya seçin **Tümünü Kaldır** düğmesine (<<) tüm öğeleri kaldırmak için.
 
      SharePoint Proje öğeleri görünür **Çözümdeki öğelere** listesi.
 

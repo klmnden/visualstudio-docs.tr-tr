@@ -10,23 +10,23 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100150"
 ---
 # <a name="document-position"></a>Belge Konumu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 İçinde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hata ayıklama, bir **belge konumu**:  
   
--   IDE için bilinen bir konumdaki kaynak dosyada bir Özet sağlar. Çoğu diller için bugün, bir belge konumu, kaynak dosyada bir konum olarak düşünülebilir.  
+- IDE için bilinen bir konumdaki kaynak dosyada bir Özet sağlar. Çoğu diller için bugün, bir belge konumu, kaynak dosyada bir konum olarak düşünülebilir.  
   
--   Hata ayıklama altyapısı için kaynak belgedeki bir konumu açıklar.  
+- Hata ayıklama altyapısı için kaynak belgedeki bir konumu açıklar.  
   
--   Tarafından uygulanan bir [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) arabirimi.  
+- Tarafından uygulanan bir [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod bağlamı](../../extensibility/debugger/code-context.md)   

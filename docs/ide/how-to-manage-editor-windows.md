@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106117"
 ---
 # <a name="how-to-manage-editor-windows"></a>Nasıl yapılır: Düzenleyici pencerelerini yönetme
 
@@ -33,9 +33,9 @@ Bir düzenleyici penceresi örneği daha kolay düzenlemek için iki ayrı gör�
 
 ### <a name="to-split-a-pane"></a>Bir bölme bölmek için
 
-1.  Odak sağlamak için düzenleyici penceresi içinde'e tıklayın.
+1. Odak sağlamak için düzenleyici penceresi içinde'e tıklayın.
 
-2.  Gelen **penceresi** menüsünde **bölünmüş**.
+2. Gelen **penceresi** menüsünde **bölünmüş**.
 
      Bir ayırıcı çubukla ayırarak iki bölme düzenleme alanı ayırır. Bağımsız olarak görüntüleyin ve aynı anda farklı kısımlarını etkin belgeyi düzenlemek için bu bölmeleri gezinebilirsiniz. Bir bölmede yapılan değişiklikler diğer yansıtılır.
 
@@ -44,7 +44,7 @@ Bir düzenleyici penceresi örneği daha kolay düzenlemek için iki ayrı gör�
 
 ### <a name="to-return-to-single-pane-view"></a>Tek bölmeli görünümüne dönmek için
 
--   Gelen **penceresi** menüsünde **Bölmeyi Kaldır**.
+- Gelen **penceresi** menüsünde **Bölmeyi Kaldır**.
 
 ## <a name="create-new-windows"></a>Yeni pencereler oluşturma
 

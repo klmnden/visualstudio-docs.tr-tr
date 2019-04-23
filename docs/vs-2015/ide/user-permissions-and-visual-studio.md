@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101892"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Kullanıcı İzinleri ve Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Güvenlik nedenleriyle, mümkün oldukça Visual Studio'yu normal bir kullanıc�
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Visual Studio'yu yönetim izinleriyle çalıştırmak için [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)], veya [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
-1.  Üzerinde **Başlat** ekranında, yazın **Visual Studio**. Yüklediğiniz Visual Studio sürümünü veya sürümlerini görmeniz gerekir.
+1. Üzerinde **Başlat** ekranında, yazın **Visual Studio**. Yüklediğiniz Visual Studio sürümünü veya sürümlerini görmeniz gerekir.
 
-2.  Başlatmak istediğiniz Visual Studio sürümünü seçin ve kısayol menüsünü görüntüleyin (ekranın en altında görünür). Seçin **yönetici olarak çalıştır**.
+2. Başlatmak istediğiniz Visual Studio sürümünü seçin ve kısayol menüsünü görüntüleyin (ekranın en altında görünür). Seçin **yönetici olarak çalıştır**.
 
      Visual Studio başladığında **(Yönetici)** başlık çubuğundaki ürün adının görünür.
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Visual Studio'yu yönetim izinleriyle çalıştırmak için [!INCLUDE[win7](../includes/win7-md.md)] veya [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1.  Üzerinde **Başlat** menüsünde seçin **tüm programlar**.
+1. Üzerinde **Başlat** menüsünde seçin **tüm programlar**.
 
-2.  İçinde **Microsoft Visual Studio** *sürüm* Klasör Seç **Visual Studio** *sürüm* kısayol menüsünü açın ve ardından seçin **Yönetici olarak çalıştır**.
+2. İçinde **Microsoft Visual Studio** *sürüm* Klasör Seç **Visual Studio** *sürüm* kısayol menüsünü açın ve ardından seçin **Yönetici olarak çalıştır**.
 
      Visual Studio başladığında **(Yönetici)** başlık çubuğundaki ürün adının görünür.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066123"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>N katmanlı uygulamalarda TableAdapter’lara kod ekleme
 TableAdapter için bir parçalı sınıf dosyası oluşturarak ve kodu eklemeden bir TableAdapter işlevini genişletme (kod eklemek yerine *DatasetName.DataSet.Designer* dosyası). Kısmi sınıflar arasında birden çok fiziksel dosyaları Bölünecek belirli bir sınıf için kod etkinleştirin. Daha fazla bilgi için [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial) veya [partial (tür)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -38,17 +38,17 @@ Veri kümesini ve TableAdapter kodunu ayırdıktan sonra varsayılan olarak, her
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Bir TableAdapter n katmanlı bir uygulama içinde kullanıcı kodu eklemek için
 
-1.  İçeren proje bulun *.xsd* dosya.
+1. İçeren proje bulun *.xsd* dosya.
 
-2.  Çift tıklayarak *.xsd* açmak için dosyaya **veri kümesi Tasarımcısı**.
+2. Çift tıklayarak *.xsd* açmak için dosyaya **veri kümesi Tasarımcısı**.
 
-3.  Kodu ekleyin ve ardından istediğiniz TableAdapter sağ **kodu görüntüle**.
+3. Kodu ekleyin ve ardından istediğiniz TableAdapter sağ **kodu görüntüle**.
 
      Kısmi sınıf oluşturulur ve Kod Düzenleyicisi'nde açılır.
 
-4.  Kısmi sınıf bildirimi içinde kod ekleyin.
+4. Kısmi sınıf bildirimi içinde kod ekleyin.
 
-5.  Aşağıdaki örnek için kodunun nereye ekleneceğini gösterir `CustomersTableAdapter` içinde `NorthwindDataSet`:
+5. Aşağıdaki örnek için kodunun nereye ekleneceğini gösterir `CustomersTableAdapter` içinde `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7178b2d901d22956c93145c5e780144b894970de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111057"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Yönetilen Kodda Birden Çok İş Parçacığını Yönetme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio UI iş parçacığı dışında iş parçacığı üzerinde yürü
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>UI iş parçacığından bir arka plan iş parçacığına geçiş  
   
-1.  UI iş parçacığı üzerinde olan ve arka plan iş parçacığında zaman uyumsuz iş yapmak istiyorsanız Task.Run() kullanın:  
+1. UI iş parçacığı üzerinde olan ve arka plan iş parçacığında zaman uyumsuz iş yapmak istiyorsanız Task.Run() kullanın:  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ Visual Studio UI iş parçacığı dışında iş parçacığı üzerinde yürü
   
     ```  
   
-2.  UI iş parçacığı üzerinde olan ve bir arka plan iş parçacığında kullanımı iş gerçekleştirirken zaman uyumlu olarak engellemek istiyorsanız <xref:System.Threading.Tasks.TaskScheduler> özelliği `TaskScheduler.Default` içinde <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. UI iş parçacığı üzerinde olan ve bir arka plan iş parçacığında kullanımı iş gerçekleştirirken zaman uyumlu olarak engellemek istiyorsanız <xref:System.Threading.Tasks.TaskScheduler> özelliği `TaskScheduler.Default` içinde <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,7 +51,7 @@ Visual Studio UI iş parçacığı dışında iş parçacığı üzerinde yürü
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Arka plan iş parçacığından UI iş parçacığına değiştirme  
   
-1.  Arka plan iş parçacığında işiniz ve kullanıcı Arabirimi iş parçacığı kullanımı hakkında bir şey istiyorsanız <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. Arka plan iş parçacığında işiniz ve kullanıcı Arabirimi iş parçacığı kullanımı hakkında bir şey istiyorsanız <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  

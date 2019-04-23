@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064199"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>DSL Tanımlarına Uzantı Ekleme
 
@@ -20,15 +20,15 @@ DSL tanımı uzantısı, uzantı bir etki alanına özgü dil (DSL) için bir pa
 
 DSL uzantıları aşağıdaki özellikleri içerebilir:
 
--   Model ve sunu öğelerinin özellikleri
+- Model ve sunu öğelerinin özellikleri
 
--   Dekoratörler için şekilleri ve bağlayıcıları
+- Dekoratörler için şekilleri ve bağlayıcıları
 
--   Sınıfları, ilişkilerini, şekiller ve bağlayıcılar
+- Sınıfları, ilişkilerini, şekiller ve bağlayıcılar
 
--   Doğrulama kısıtlamaları
+- Doğrulama kısıtlamaları
 
--   Araç kutusu öğeleri ve sekmeler
+- Araç kutusu öğeleri ve sekmeler
 
 Genişletilmiş bir DSL kullanıcısı oluşturabilir ve ek özellikler örneklerini içeren bir modeli kaydedin. Model uygun uzantısı yüklü diğer kullanıcılar tarafından okunabilir. Uzantı yüklü olmayan kullanıcılar, ek özellikleri kullanamaz, ancak güncelleştirin ve ek özellikler kaybetmeden bir modeli kaydedin.
 

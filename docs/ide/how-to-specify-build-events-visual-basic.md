@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100930"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: Derleme olayları belirtme (Visual Basic)
 
@@ -34,13 +34,13 @@ Derleme olayları belirtilir **Build Events** iletişim kutusu, kullanılabilir 
 
 ### <a name="to-specify-a-build-event"></a>Derleme olayı belirtmek için
 
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-2.  Tıklayın **derleme** sekmesi.
+2. Tıklayın **derleme** sekmesi.
 
-3.  Tıklayın **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.
+3. Tıklayın **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.
 
-4.  Derleme öncesi veya derleme sonrası eylemleriniz için komut satırı bağımsız değişkenleri girin ve ardından **Tamam**.
+4. Derleme öncesi veya derleme sonrası eylemleriniz için komut satırı bağımsız değişkenleri girin ve ardından **Tamam**.
 
     > [!NOTE]
     > Ekleme bir `call` deyiminden önce çalışan tüm derleme sonrası komutlar *.bat* dosyaları. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -125,14 +125,14 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için
 
-1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.
+1. Yayımlanacak proje için bir Windows uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.
 
-2.  İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows Masaüstü** ardından **Windows Forms uygulaması** şablonu. Projeyi adlandırın `VBWinApp`.
-3.  Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
+2. İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows Masaüstü** ardından **Windows Forms uygulaması** şablonu. Projeyi adlandırın `VBWinApp`.
+3. Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.
 
-4.  İçinde **Proje Tasarımcısı**Git **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için *C:\TEMP*.
+4. İçinde **Proje Tasarımcısı**Git **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için *C:\TEMP*.
 
-5.  Tıklayarak projeyi yayımlama **Şimdi Yayımla**.
+5. Tıklayarak projeyi yayımlama **Şimdi Yayımla**.
 
      Bildirim dosyası oluşturulmuş ve koymak *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Bildirimi görüntülemek için dosyaya sağ tıklayın ve **birlikte Aç**, ardından **program bir listeden seçim**ve ardından **not defteri**.
 
@@ -142,9 +142,9 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  İçinde **Proje Tasarımcısı**Git **derleme** sekmesine **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.
+6. İçinde **Proje Tasarımcısı**Git **derleme** sekmesine **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.
 
-7.  İçinde **derleme sonrası olay komut satırı** kutusunda, aşağıdaki komutu girin:
+7. İçinde **derleme sonrası olay komut satırı** kutusunda, aşağıdaki komutu girin:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ Aşağıdaki yordamda, uygulamanın en düşük işletim sistemi sürümünü ay
 
      `$(TargetPath)` Makrosu oluşturulan yürütülebilir dosyanın tam yolunu ifade eder. Bu nedenle, *$(TargetPath) .manifest* belirtin, oluşturulan uygulama bildirimi *bin* dizin. Yayımlama bu bildirimi daha önce belirlediğiniz yayımlama konumuna kopyalar.
 
-8.  Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.
+8. Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.
 
      Bildirim yeniden görüntüleyin. Bildirimi görüntülemek için dosyayı yayımlama dizinine sağ tıklatıp gidin **birlikte Aç** ardından **program bir listeden seçim**ve ardından **not defteri**.
 

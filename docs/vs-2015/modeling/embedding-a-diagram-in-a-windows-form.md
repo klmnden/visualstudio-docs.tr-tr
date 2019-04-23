@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068697"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Windows Forms'a Diyagram Ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ DSL diyagramı içinde görüntülenen bir Windows Denetim, katıştırabilirsin
   
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Bir Windows denetiminde bir DSL diyagramı eklemek için  
   
-1.  Yeni bir **kullanıcı denetimi** DslPackage projeye dosya.  
+1. Yeni bir **kullanıcı denetimi** DslPackage projeye dosya.  
   
-2.  Panel denetimi, kullanıcı denetimine ekleyin. Bu panelde DSL diyagramı içerir.  
+2. Panel denetimi, kullanıcı denetimine ekleyin. Bu panelde DSL diyagramı içerir.  
   
      İhtiyacınız olan diğer denetimleri ekleyin.  
   
      Denetimin bağlantı özelliklerini ayarlayın.  
   
-3.  Çözüm Gezgini'nde, kullanıcı denetimi dosyaya sağ tıklayın ve **kodu görüntüle**. Bu oluşturucu ve değişken için kodu ekleyin:  
+3. Çözüm Gezgini'nde, kullanıcı denetimi dosyaya sağ tıklayın ve **kodu görüntüle**. Bu oluşturucu ve değişken için kodu ekleyin:  
   
     ```csharp  
   
@@ -47,7 +47,7 @@ DSL diyagramı içinde görüntülenen bir Windows Denetim, katıştırabilirsin
   
     ```  
   
-4.  Aşağıdaki içeriğe sahip DslPackage projeye yeni bir dosya ekleyin:  
+4. Aşağıdaki içeriğe sahip DslPackage projeye yeni bir dosya ekleyin:  
   
     ```  
     using System.Windows.Forms;  
@@ -71,13 +71,13 @@ DSL diyagramı içinde görüntülenen bir Windows Denetim, katıştırabilirsin
   
     ```  
   
-5.  DSL test etmek için F5 tuşuna basın ve bir örnek model dosyasını açın. Denetim içinde diyagramda görünür. Araç kutusu ve diğer özellikler normal şekilde çalışır.  
+5. DSL test etmek için F5 tuşuna basın ve bir örnek model dosyasını açın. Denetim içinde diyagramda görünür. Araç kutusu ve diğer özellikler normal şekilde çalışır.  
   
 #### <a name="updating-the-form-using-store-events"></a>Store olayları kullanarak Form güncelleştiriliyor  
   
-1.  Form Tasarımcısı'nda ekleme bir **ListBox** adlı `listBox1`. Bu modelde öğeleri listesi görüntülenir. Kullanarak modeli ile synchronism içinde tutulacak *olayları depolamak*. Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+1. Form Tasarımcısı'nda ekleme bir **ListBox** adlı `listBox1`. Bu modelde öğeleri listesi görüntülenir. Kullanarak modeli ile synchronism içinde tutulacak *olayları depolamak*. Daha fazla bilgi için [olay işleyicileri yaymak değişiklikleri dışında modeli](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-2.  Özel kod dosyasında, daha fazla DocView sınıfı yöntemleri geçersiz kıl:  
+2. Özel kod dosyasında, daha fazla DocView sınıfı yöntemleri geçersiz kıl:  
   
     ```  
   
@@ -120,7 +120,7 @@ DSL diyagramı içinde görüntülenen bir Windows Denetim, katıştırabilirsin
   
     ```  
   
-3.  Kullanıcı denetimi arkasındaki kodda eklenebilen ve kaldırılabilen öğelerde dinlemek için yöntemleri ekleyin:  
+3. Kullanıcı denetimi arkasındaki kodda eklenebilen ve kaldırılabilen öğelerde dinlemek için yöntemleri ekleyin:  
   
     ```  
   
@@ -149,7 +149,7 @@ DSL diyagramı içinde görüntülenen bir Windows Denetim, katıştırabilirsin
   
     ```  
   
-4.  DSL test etmek için F5 tuşuna basın ve deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], örnek model dosyasını açın.  
+4. DSL test etmek için F5 tuşuna basın ve deneysel örneğinde [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], örnek model dosyasını açın.  
   
      Liste kutusu model içinde öğeleri listesini gösterir ve sonra tüm ekleme veya silmeyi ve sonra geri al ve Yinele doğru olup olmadığını dikkat edin.  
   

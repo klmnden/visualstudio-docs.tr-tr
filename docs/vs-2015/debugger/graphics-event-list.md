@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105636"
 ---
 # <a name="graphics-event-list"></a>Grafik Olay Listesi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Grafik olay listesi oyunlarda veya uygulamalarda karesi işlenirken kaydedilmiş
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Olay listesi görünümü modu değiştirmek için  
   
--   İçinde **grafik olay listesi** bulun, olayların listesinin üst penceresinde **görünümü** açılır ve seçeneğini **zaman çizelgesi** görünümü veya **çizim çağrıları** görünümü.  
+- İçinde **grafik olay listesi** bulun, olayların listesinin üst penceresinde **görünümü** açılır ve seçeneğini **zaman çizelgesi** görünümü veya **çizim çağrıları** görünümü.  
   
 ### <a name="filtering-events"></a>Olayları filtreleme  
  Arama kutusunu kullanabilirsiniz — sağ üst köşesinde bulunan **grafik olay listesi** penceresi — yalnızca adında belirli anahtar sözcükler olayları dahil etmek için olayları listeyi filtrelemek için. İster tek anahtar sözcükleri belirtebilirsiniz `Vertex`— önceki resimde gösterildiği gibi — veya noktalı virgülle ayrılmış bir liste kullanarak birden çok anahtar sözcükleri `Draw;Primitive`— ya da sahip olayları eşleşen `Draw` veya `Primitive` adlarında. Aramalar için boşluk hassas — Örneğin, `VSSet` ve `VS Set` farklı aramalar — böylece form aramaları için dikkatli bir şekilde sağlayın.  

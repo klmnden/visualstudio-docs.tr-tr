@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104271"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Nasıl yapılır: Derleme Olayları Belirtme (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
   
 #### <a name="to-specify-a-build-event"></a>Derleme olayı belirtmek için  
   
-1.  Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
+1. Seçili bir projeyle **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-2.  Tıklayın **derleme** sekmesi.  
+2. Tıklayın **derleme** sekmesi.  
   
-3.  Tıklayın **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.  
+3. Tıklayın **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.  
   
-4.  Derleme öncesi veya derleme sonrası eylemleriniz için komut satırı bağımsız değişkenleri girin ve ardından **Tamam**.  
+4. Derleme öncesi veya derleme sonrası eylemleriniz için komut satırı bağımsız değişkenleri girin ve ardından **Tamam**.  
   
     > [!NOTE]
     >  Ekleme bir `call` .bat dosyaları çalıştıran tüm derleme sonrası komutları önce deyimi. Örneğin, `call C:\MyFile.bat` veya `call C:\MyFile.bat call C:\MyFile2.bat`.  
@@ -126,15 +126,15 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Uygulama bildirimini değiştirmek için bir derleme sonrası olay çağırmak için  
   
-1.  Yayımlanacak proje için bir Windows uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.  
+1. Yayımlanacak proje için bir Windows uygulaması oluşturun. **Dosya** menüsünde **Yeni**'ye ve ardından **Proje**'ye tıklayın.  
   
-2.  İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **Windows uygulama** şablonu. Projeyi adlandırın `VBWinApp`.  
+2. İçinde **yeni proje** iletişim kutusundaki **Visual Basic** düğümünü **Windows** ardından **Windows uygulama** şablonu. Projeyi adlandırın `VBWinApp`.  
   
-3.  Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
+3. Seçilen proje **Çözüm Gezgini**, **proje** menüsünde tıklatın **özellikleri**.  
   
-4.  Proje Tasarımcısı'nda Git **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için `C:\TEMP\`.  
+4. Proje Tasarımcısı'nda Git **Yayımla** sayfasında ve ayarlayın **konumu yayımlama** için `C:\TEMP\`.  
   
-5.  Tıklayarak projeyi yayımlama **Şimdi Yayımla**.  
+5. Tıklayarak projeyi yayımlama **Şimdi Yayımla**.  
   
      Bildirim dosyası oluşturulmuş ve koymak `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Bildirimi görüntülemek için dosyaya sağ tıklayın ve **birlikte Aç**, ardından **program bir listeden seçim**ve ardından **not defteri**.  
   
@@ -144,9 +144,9 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  Proje Tasarımcısı'nda Git **derleme** sekmesine **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.  
+6. Proje Tasarımcısı'nda Git **derleme** sekmesine **Build Events** açmak için düğmeyi **Build Events** iletişim kutusu.  
   
-7.  İçinde **derleme sonrası olay komut satırı** kutusunda, aşağıdaki komutu girin:  
+7. İçinde **derleme sonrası olay komut satırı** kutusunda, aşağıdaki komutu girin:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
   
      `$(TargetPath)` Makrosu oluşturulan yürütülebilir dosyanın tam yolunu ifade eder. Bu nedenle, $(TargetPath) .manifest bin dizininde oluşturulan uygulama bildirimi belirtin. Yayımlama bu bildirimi daha önce belirlediğiniz yayımlama konumuna kopyalar.  
   
-8.  Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.  
+8. Projeyi yeniden yayımlayın. Git **Yayımla** sayfasında ve tıklayın **Şimdi Yayımla**.  
   
      Bildirim yeniden görüntüleyin. Bildirimi görüntülemek için dosyayı yayımlama dizinine sağ tıklatıp gidin **birlikte Aç** ardından **program bir listeden seçim**ve ardından **not defteri**.  
   
@@ -169,4 +169,4 @@ Visual Basic'te derleme olayları, betikleri, makroları veya başka eylemler de
  [Derleme sayfası, Proje Tasarımcısı (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Yayımlama Sayfası, Proje Tasarımcısı](../ide/reference/publish-page-project-designer.md)   
  [Derleme öncesi olay/derleme sonrası olay komut satırı iletişim kutusu](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Nasıl yapılır: Derleme olayları belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)
+ [Nasıl yapılır: Derleme Olayları Belirtme (C#)](../ide/how-to-specify-build-events-csharp.md)

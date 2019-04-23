@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096575"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio için İp Uçları ve Püf Noktaları
 
@@ -22,23 +22,23 @@ ms.locfileid: "54771185"
 
 Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsiniz. Daha fazla genel bilgi için bkz: [Visual Studio'daki klavye kısayollarını](default-keyboard-shortcuts-in-visual-studio.md). Visual Studio erişilebilirlik için en iyi duruma getirme hakkında daha fazla bilgi için bkz. [erişilebilirlik ipuçları ve püf noktaları](../ide/reference/accessibility-tips-and-tricks.md).
 
--   [Pencere Yönetimi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Pencere Yönetimi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Pencere kısayolları](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Pencere kısayolları](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Visual Studio arama](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Visual Studio arama](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Düzenleyici bulma](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Düzenleyici bulma](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Kod Düzenleyicisi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Kod Düzenleyicisi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Araç Çubukları](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Araç Çubukları](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Hata Ayıklama](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Hata Ayıklama](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Uygulama yaşam döngüsü yönetimi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Uygulama yaşam döngüsü yönetimi](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Pencere Yönetimi
+## <a name="BKMK_WindowMgmt"></a> Pencere Yönetimi
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Açık dosya listesini göster|Ctrl + Alt + Aşağı|
 |Tüm kayan Windows Göster|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Pencere kısayolları
+## <a name="BKMK_WindowShortcuts"></a> Pencere kısayolları
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Yeni örnek Başlat|Win + Shift + n|
 |Windows arasında geçiş yapma|Win+n|
 
-##  <a name="BKMK_Search"></a> Visual Studio arama
+## <a name="BKMK_Search"></a> Visual Studio arama
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Kapsam sonuçlarını Hızlı Başlat|- @opt Seçenekleri<br />- @cmd Komutları<br />- @mru En son kullanılan<br />- @doc Açık belgeler|
 |Araçlar seçeneklerinde arayın|Ctrl + E|
 
-##  <a name="BKMK_EditorFind"></a> Düzenleyici bulma
+## <a name="BKMK_EditorFind"></a> Düzenleyici bulma
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Dosyalarda Bul|Ctrl+Shift+F|
 |Dosyalarda Değiştir|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> Kod Düzenleyicisi
+## <a name="BKMK_CodeEditor"></a> Kod Düzenleyicisi
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Birden fazla gözlem sonuçları arasında gezinin|F8ve Shift+F8|
 |Kod Düzenleyicisi penceresi ve Özet tanım penceresi arasında geçiş yapma|Shift+Esc|
 
-##  <a name="BKMK_Toolbars"></a> Araç çubukları
+## <a name="BKMK_Toolbars"></a> Araç çubukları
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Metin kutusu komut modunu bulma|Tür ">"|
 |Yeni diğer ad oluştur|> diğer ad NewAlias komutu|
 
-##  <a name="BKMK_Debugging"></a> Hata Ayıklama
+## <a name="BKMK_Debugging"></a> Hata Ayıklama
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ Bu konudaki kısayolları kullanarak, Visual Studio'da daha kolay gezinebilirsin
 |Komut penceresi temizleme arabelleği|> cls|
 |Komut penceresi yazdırma değeri|? varname|
 
-##  <a name="BKMK_ALM"></a> Uygulama yaşam döngüsü yönetimi
+## <a name="BKMK_ALM"></a> Uygulama yaşam döngüsü yönetimi
 
 Bkz: [klavye kısayolları: Visual Studio Online, TFS web portalı ve Takım Gezgini](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

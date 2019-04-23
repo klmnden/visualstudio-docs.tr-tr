@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4d1c3126c22661285f18aac18a63d55468312
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102711"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Eski dil hizmetinde kod açıklaması
 Programlama dilleri, normalde açıklama eklemek veya kod açıklaması için bir yol sağlar. Bir yorum, metin, kod hakkında ek bilgi sağlar ancak derleme veya yorumu sırasında yok sayılır bölümüdür.
@@ -26,9 +26,9 @@ Programlama dilleri, normalde açıklama eklemek veya kod açıklaması için bi
 ## <a name="comment-styles"></a>Açıklama stilleri
 Açıklama iki genel stiller şunlardır:
 
-1.  Yorumu tek bir satırda olduğu satırlı yorumlar.
+1. Yorumu tek bir satırda olduğu satırlı yorumlar.
 
-2.  Bloğu açıklamaları, burada açıklama birden fazla satır içerebilir.
+2. Bloğu açıklamaları, burada açıklama birden fazla satır içerebilir.
 
 Satırlı yorumlar, genellikle başlangıç karakteri (ya da karakterler) bloğu açıklamaları sırasında hem başlangıç ve bitiş karakterlerini sahip sahiptir. Örneğin, C# ' ta bir satırı yorum ile başlayan `//`, ve bir blok açıklama ile başlayan `/*` ve ile sona eren `*/`.
 

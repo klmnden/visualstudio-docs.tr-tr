@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102698"
 ---
 # <a name="how-to-set-the-current-session"></a>Nasıl yapılır: Geçerli oturumu ayarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54760398"
   
 ### <a name="to-set-current-performance-session"></a>Geçerli Performans oturumunu ayarlama  
   
--   İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **geçerli oturumu ayarlama**.  
+- İçinde **performans Gezgini**performans oturumu sağ tıklayın ve ardından **geçerli oturumu ayarlama**.  
   
      Oturum adı kalın yazı tipinde görünür.  
   

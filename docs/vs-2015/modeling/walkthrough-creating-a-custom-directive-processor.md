@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 665c59e6881ec2e5924845dfc8dcc130b5044095
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105311"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>İzlenecek yol: Özel Yönerge İşlemcisi Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Yönerge işlemcileri * iş kod ekleyerek *oluşturulan dönüştürme sınıfı
 
  Bu kılavuzda gösterilen görevler aşağıdakileri içerir:  
 
--   Özel yönerge işlemcisi oluşturma  
+- Özel yönerge işlemcisi oluşturma  
 
--   Yönerge işlemcisini kaydetme  
+- Yönerge işlemcisini kaydetme  
 
--   Yönerge işlemcisini test etme  
+- Yönerge işlemcisini test etme  
 
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzu tamamlamak için şunlara ihtiyacınız olacak:  
 
--   Visual Studio 2010  
+- Visual Studio 2010  
 
--   Visual Studio 2010 SDK  
+- Visual Studio 2010 SDK  
 
 ## <a name="creating-a-custom-directive-processor"></a>Özel Yönerge İşlemcisi Oluşturma  
  Bu kılavuzda, özel bir yönerge işlemcisi oluşturursunuz. Depolar, XML dosyasını okuyan özel bir yönerge eklersiniz bir <xref:System.Xml.XmlDocument> değişkeni ve özelliği aracılığıyla sunar. "Yönerge İşlemcisini Test Etme" bölümünde, XML dosyasına erişmek için metin şablonunda bu özelliği kullanırsınız.  
@@ -83,18 +83,18 @@ End Property
 
 #### <a name="to-create-a-custom-directive-processor"></a>Özel yönerge işlemcisi oluşturmak için  
 
-1.  Visual Studio'da, CustomDP adlı bir C# veya Visual Basic kitaplık projesi oluşturun.  
+1. Visual Studio'da, CustomDP adlı bir C# veya Visual Basic kitaplık projesi oluşturun.  
 
     > [!NOTE]
     >  Yönerge işlemcisini birden fazla bilgisayara yüklemek istiyorsanız, kullanmak en iyisidir bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı (VSIX) projesi ve .pkgdef dosyasını uzantıya eklemeniz. Daha fazla bilgi için [özel yönerge işlemcisini dağıtma](../modeling/deploying-a-custom-directive-processor.md).  
 
-2.  Aşağıdaki derlemelere başvurular ekleyin:  
+2. Aşağıdaki derlemelere başvurular ekleyin:  
 
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
 
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
 
-3.  Değiştirin **Class1** aşağıdaki kod ile. Bu kod, devralınan CustomDirectiveProcessor sınıfını tanımlar <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> sınıfı ve gerekli yöntemleri uygular.  
+3. Değiştirin **Class1** aşağıdaki kod ile. Bu kod, devralınan CustomDirectiveProcessor sınıfını tanımlar <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> sınıfı ve gerekli yöntemleri uygular.  
 
     ```csharp  
     using System;  
@@ -606,11 +606,11 @@ End Property
     End Namespace  
     ```  
 
-4.  İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] yalnızca, açık **proje** menüsüne ve ardından **CustomDP özellikleri**. Üzerinde **uygulama** sekmesinde **kök ad alanı**, varsayılan değeri Sil `CustomDP`.  
+4. İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] yalnızca, açık **proje** menüsüne ve ardından **CustomDP özellikleri**. Üzerinde **uygulama** sekmesinde **kök ad alanı**, varsayılan değeri Sil `CustomDP`.  
 
-5.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
+5. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
 
-6.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+6. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
 
 ### <a name="build-the-project"></a>Projeyi Oluşturma  
  Projeyi oluşturun. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
@@ -684,12 +684,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Yönerge işlemcisini sınamada kullanmak için bir XML dosyası oluşturmak için  
 
-1.  Adlı bir metin dosyası oluşturun `DocFile.xml` herhangi bir metin düzenleyicisi (ör. Notepad) kullanarak.  
+1. Adlı bir metin dosyası oluşturun `DocFile.xml` herhangi bir metin düzenleyicisi (ör. Notepad) kullanarak.  
 
     > [!NOTE]
     >  Bu dosyayı herhangi bir konumda (örneğin, C:\Test\DocFile.xml) oluşturabilirsiniz.  
 
-2.  Aşağıdakileri metin dosyasına ekleyin:  
+2. Aşağıdakileri metin dosyasına ekleyin:  
 
     ```  
     <?xml version="1.0"?>  
@@ -730,17 +730,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </doc>  
     ```  
 
-3.  Dosyayı kaydedin ve kapatın.  
+3. Dosyayı kaydedin ve kapatın.  
 
 #### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>Yönerge işlemcisini sınamak için bir metin şablonu oluşturmak için  
 
-1.  Visual Studio'da, TemplateTest adlı bir C# veya Visual Basic kitaplık projesi oluşturun.  
+1. Visual Studio'da, TemplateTest adlı bir C# veya Visual Basic kitaplık projesi oluşturun.  
 
-2.  TestDP.tt adlı yeni bir metin şablonu dosyasını ekleyin.  
+2. TestDP.tt adlı yeni bir metin şablonu dosyasını ekleyin.  
 
-3.  Emin olun **özel araç** özelliği testdp.tt'nin `TextTemplatingFileGenerator`.  
+3. Emin olun **özel araç** özelliği testdp.tt'nin `TextTemplatingFileGenerator`.  
 
-4.  TestDP.tt içeriğini aşağıdaki metin olarak değiştirin.  
+4. TestDP.tt içeriğini aşağıdaki metin olarak değiştirin.  
 
     > [!NOTE]
     >  Dize değiştirdiğinizden emin olun <`YOUR PATH>` DocFile.xml dosyasının yoluyla.  
@@ -832,15 +832,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  Bu örnekte, değerini `Processor` parametresi `CustomDirectiveProcessor`. Değerini `Processor` parametresi, işlemcinin kayıt defteri anahtarının adıyla eşleşmelidir.  
 
-5.  Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
+5. Üzerinde **dosya** menüsünü tıklatın **Tümünü Kaydet**.  
 
 #### <a name="to-test-the-directive-processor"></a>Yönerge işlemcisini sınamak için  
 
-1.  İçinde **Çözüm Gezgini**, TestDP.tt öğesine sağ tıklatın ve ardından **özel aracı Çalıştır**.  
+1. İçinde **Çözüm Gezgini**, TestDP.tt öğesine sağ tıklatın ve ardından **özel aracı Çalıştır**.  
 
      İçin [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kullanıcılar, TestDP.txt görünmeyebilir **Çözüm Gezgini** varsayılan olarak. Projeye atanan tüm dosyaları görüntülemek için Aç **proje** menüsüne ve ardından **tüm dosyaları göster**.  
 
-2.  İçinde **Çözüm Gezgini**, TestDP.txt düğümünü genişletin ve ardından da TestDP.txt Düzenleyicisi'nde açmak için çift tıklayın.  
+2. İçinde **Çözüm Gezgini**, TestDP.txt düğümünü genişletin ve ardından da TestDP.txt Düzenleyicisi'nde açmak için çift tıklayın.  
 
      Oluşturulan metin çıktısı görüntülenir. Çıktı aşağıdaki gibi görünmelidir:  
 
@@ -879,7 +879,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-html-to-the-generated-text"></a>Oluşturulan metninize HTML eklemek için  
 
-1.  TestDP.tt öğesindeki kodu aşağıdakiyle değiştirin. HTML vurgulanır. Dize değiştirdiğinizden emin olun `YOUR PATH` DocFile.xml dosyasının yoluyla.  
+1. TestDP.tt öğesindeki kodu aşağıdakiyle değiştirin. HTML vurgulanır. Dize değiştirdiğinizden emin olun `YOUR PATH` DocFile.xml dosyasının yoluyla.  
 
     > [!NOTE]
     >  Ek Aç \<# ve Kapat #> etiketleri, ifade kodunu HTML etiketleri ayırmak.  
@@ -964,8 +964,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>  
     ```  
 
-2.  Üzerinde **dosya** menüsünü tıklatın **gt;testdp.txt'yi Kaydet &**.  
+2. Üzerinde **dosya** menüsünü tıklatın **gt;testdp.txt'yi Kaydet &**.  
 
-3.  Çıktıyı bir tarayıcıda görüntülemek için **Çözüm Gezgini**, Testdp.htm'ye sağ tıklatın ve **tarayıcıda görüntüle**.  
+3. Çıktıyı bir tarayıcıda görüntülemek için **Çözüm Gezgini**, Testdp.htm'ye sağ tıklatın ve **tarayıcıda görüntüle**.  
 
      Çıktınız orijinal metinle aynı olmalıdır, aralarındaki tek fark çıktınıza HTML biçiminin uygulanmış olmasıdır. Her öğe adı kalın yazı tipinde görüntülenmelidir.

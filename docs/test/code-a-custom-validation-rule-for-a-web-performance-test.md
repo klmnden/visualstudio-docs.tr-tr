@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099760"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Kodu bir web performans testi için özel doğrulama kuralı
 
@@ -33,24 +33,24 @@ Kendi doğrulama kuralları oluşturabilirsiniz. Bunu yapmak için kendi kural s
 
 ## <a name="to-create-custom-validation-rules"></a>Özel doğrulama kurallarını oluşturmak için
 
-1.  Bir Test içeren bir web performans testi projesi açın.
+1. Bir Test içeren bir web performans testi projesi açın.
 
-2.  (İsteğe bağlı) Doğrulama kuralınızı depolanacağı ayrı bir sınıf kitaplığı projesi oluşturun.
+2. (İsteğe bağlı) Doğrulama kuralınızı depolanacağı ayrı bir sınıf kitaplığı projesi oluşturun.
 
     > [!IMPORTANT]
     > Sınıfı, testlerinizi bulunan aynı projede oluşturabilirsiniz. Ancak, kural yeniden kullanmak isterseniz, kural depolanacağı ayrı bir sınıf kitaplığı projesi oluşturun en iyisidir. Ayrı bir proje oluşturursanız, bu yordam isteğe bağlı adımları tamamlamanız gerekir.
 
-3.  (İsteğe bağlı) Sınıf kitaplığı projesinde Microsoft.VisualStudio.QualityTools.WebTestFramework DLL'ye bir başvuru ekleyin.
+3. (İsteğe bağlı) Sınıf kitaplığı projesinde Microsoft.VisualStudio.QualityTools.WebTestFramework DLL'ye bir başvuru ekleyin.
 
-4.  Türetilen bir sınıf oluşturmanız <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> sınıfı. Uygulama <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> üyeleri.
+4. Türetilen bir sınıf oluşturmanız <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> sınıfı. Uygulama <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> ve <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*> üyeleri.
 
-5.  (İsteğe bağlı) Yeni sınıf kitaplığı projesi oluşturun.
+5. (İsteğe bağlı) Yeni sınıf kitaplığı projesi oluşturun.
 
-6.  (İsteğe bağlı) Test projesinde özel doğrulama kuralı içeren sınıf kitaplığı projesine bir başvuru ekleyin.
+6. (İsteğe bağlı) Test projesinde özel doğrulama kuralı içeren sınıf kitaplığı projesine bir başvuru ekleyin.
 
-7.  Bir web performans testinde Test projesinde, açık **Web Performans Testi Düzenleyicisi**.
+7. Bir web performans testinde Test projesinde, açık **Web Performans Testi Düzenleyicisi**.
 
-8.  Bir web performans testi isteği için özel doğrulama kuralı eklemek için bir istek ve select sağ **doğrulama kuralı Ekle**.
+8. Bir web performans testi isteği için özel doğrulama kuralı eklemek için bir istek ve select sağ **doğrulama kuralı Ekle**.
 
      **Doğrulama kuralı Ekle** iletişim kutusu görüntülenir. Özel doğrulama kuralınızı göreceğiniz **bir kural seçin** birlikte önceden tanımlanmış doğrulama kuralları listesi. Özel doğrulama kuralınızı seçin ve ardından **Tamam**.
 

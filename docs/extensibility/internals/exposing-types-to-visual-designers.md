@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104076"
 ---
 # <a name="expose-types-to-visual-designers"></a>Türleri görsel tasarımcıların kullanıma sunma
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sınıfı ve tür tanımlarını tasarım zamanında bir görsel tasarımcı görüntülemek için erişiminiz olmalıdır. Geçerli proje (başvurular ve bunların bağımlılıklarını) tam bağımlılık kümesini içeren derlemeler önceden tanımlanmış kümesinden sınıfları yüklenir. Görsel tasarımcılar için gerekli erişim sınıfları ve özel araçları tarafından oluşturulan dosyaları içinde tanımlanan türler için de olabilir.
@@ -31,15 +31,15 @@ ms.locfileid: "56629696"
 
  Geçici PE destekten yararlanın özel araçlar, aşağıdaki kurallara uymalıdır:
 
--   **GeneratesDesignTimeSource** 1 olarak kayıt defterinde ayarlamanız gerekir.
+- **GeneratesDesignTimeSource** 1 olarak kayıt defterinde ayarlamanız gerekir.
 
      Hiçbir programı yürütülebilir dosyanın derleme, bu ayar olmadan gerçekleşir.
 
--   Oluşturulan kodun genel proje ayarı aynı dilde olması gerekir.
+- Oluşturulan kodun genel proje ayarı aynı dilde olması gerekir.
 
      Geçici PE ne özel araç istenen uzantı olarak raporlar bağımsız olarak derlenir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> koşuluyla **GeneratesDesignTimeSource** kayıt defterinde 1 olarak ayarlanır. Uzantı olması gerekmez. *.vb*, *.cs*, veya *.jsl*; uzantıyı olabilir.
 
--   Özel araç tarafından oluşturulan kodu geçerli olması gerekir ve kendi yalnızca başvuruları projedeki mevcut kümesini kullanarak zaman derlemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> tamamlandıktan yürütülüyor.
+- Özel araç tarafından oluşturulan kodu geçerli olması gerekir ve kendi yalnızca başvuruları projedeki mevcut kümesini kullanarak zaman derlemelisiniz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> tamamlandıktan yürütülüyor.
 
      Geçici PE derlendiğinde, özel araç çıktısı için derleyici sağlanan yalnızca kaynak dosyası değil. Bu nedenle, bir geçici PE kullanan özel bir araç, diğer dosyalar projesinde bağımsız olarak derlenebilir Çıkış dosyalarını oluşturmanız gerekir.
 

@@ -26,14 +26,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077283"
 ---
-# <a name="understanding-build-configurations"></a>Derleme Yapılandırmalarını Anlama
+# <a name="understanding-build-configurations"></a>Yapı Yapılandırmalarını Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Çözüm ve proje özelliklerini farklı türde yapılar kullanmak üzere farklı yapılandırmaları depolayabilirsiniz. Oluşturma, seçin, değiştirmek veya bir yapılandırmayı silmek için kullanabileceğiniz **Configuration Manager**. Bunu, menü çubuğundan açmak için seçin **derleme**, **Configuration Manager**, veya yazmanız yeterlidir **yapılandırma** içinde **Hızlı Başlat** kutusu. Ayrıca **çözüm yapılandırmaları** listesini **standart** bir yapılandırma seçin veya açmak için araç **Configuration Manager**.  
@@ -69,20 +69,20 @@ ms.locfileid: "54799316"
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio Proje yapılandırmaları atar nasıl  
  Yeni bir çözüm yapılandırması tanımlayın ve var olan bir ayarları kopyalanmaz, Visual Studio varsayılan proje yapılandırmaları atamak için aşağıdaki ölçütleri kullanır. Ölçüt gösterilen sırada değerlendirilir.  
   
-1.  Bir proje yapılandırması adı varsa (*\<yapılandırma adı > \<platform adı >*) tam olarak eşleşen yeni bir çözüm yapılandırması, bu yapılandırma adını atanır. Yapılandırma adlarını büyük küçük harfe duyarlı değildir.  
+1. Bir proje yapılandırması adı varsa (*\<yapılandırma adı > \<platform adı >*) tam olarak eşleşen yeni bir çözüm yapılandırması, bu yapılandırma adını atanır. Yapılandırma adlarını büyük küçük harfe duyarlı değildir.  
   
-2.  Proje yapılandırması adı bölümü yeni çözüm yapılandırması ile eşleşen bir yapılandırma adı varsa, bu yapılandırma veya platformu bölümü eşleşip eşleşmediğini, atanır.  
+2. Proje yapılandırması adı bölümü yeni çözüm yapılandırması ile eşleşen bir yapılandırma adı varsa, bu yapılandırma veya platformu bölümü eşleşip eşleşmediğini, atanır.  
   
-3.  Hala eşleşme yoksa, projeye listelenen ilk yapılandırmayı atanır.  
+3. Hala eşleşme yoksa, projeye listelenen ilk yapılandırmayı atanır.  
   
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio çözüm yapılandırmaları atar nasıl  
  Bir proje yapılandırması oluşturduğunuzda (içinde **Configuration Manager**, seçerek **yeni** açılan menüde **yapılandırma** sütun bu proje için) ve seçin **yeni çözüm yapılandırmaları oluşturma** onay kutusu, Visual Studio projeyi desteklediği her platformda derlemek bir benzer adlı çözüm yapılandırması arar. Bazı durumlarda, Visual Studio, var olan çözüm yapılandırmaları yeniden adlandırır veya yenilerini tanımlar.  
   
  Visual Studio çözüm yapılandırmaları atamak için aşağıdaki ölçütleri kullanır.  
   
--   Bir proje yapılandırması platformu belirtmiyor veya yalnızca tek bir platform belirtir, ardından yeni proje yapılandırmasının adı ile eşleşen bir çözüm yapılandırması bulundu eklendi veya. Bu çözüm yapılandırmasının varsayılan adı, platform adı içermez; şu biçimi alır  *\<proje yapılandırması adı >*.  
+- Bir proje yapılandırması platformu belirtmiyor veya yalnızca tek bir platform belirtir, ardından yeni proje yapılandırmasının adı ile eşleşen bir çözüm yapılandırması bulundu eklendi veya. Bu çözüm yapılandırmasının varsayılan adı, platform adı içermez; şu biçimi alır  *\<proje yapılandırması adı >*.  
   
--   Bir proje birden çok platform destekliyorsa, bir çözüm yapılandırması bulunamadı veya desteklenen her platform için eklendi. Her çözüm yapılandırması adını hem proje yapılandırması adı hem de platform adı içerir ve formundadır  *\<proje yapılandırması adı > \<platform adı >*.  
+- Bir proje birden çok platform destekliyorsa, bir çözüm yapılandırması bulunamadı veya desteklenen her platform için eklendi. Her çözüm yapılandırması adını hem proje yapılandırması adı hem de platform adı içerir ve formundadır  *\<proje yapılandırması adı > \<platform adı >*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Uygulama oluşturma](../ide/walkthrough-building-an-application.md)   

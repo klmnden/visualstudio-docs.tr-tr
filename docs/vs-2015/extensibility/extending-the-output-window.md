@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105415"
 ---
 # <a name="extending-the-output-window"></a>Çıkış Penceresini Genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ ms.locfileid: "54773733"
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Çıkış Bölmesi ' kullanan bir uzantı oluşturma  
  Çıkış bölmesinde farklı yönlerini sınayan bir uzantı yapabilirsiniz.  
   
-1.  Adlı bir VSIX projesi oluşturun `TestOutput` bir menü komutuyla adlı **TestOutput**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Adlı bir VSIX projesi oluşturun `TestOutput` bir menü komutuyla adlı **TestOutput**. Daha fazla bilgi için [bir menü komutuyla uzantı oluşturma](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Aşağıdaki başvuruları ekleyin:  
+2. Aşağıdaki başvuruları ekleyin:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  TestOutput.cs içinde aşağıdaki ekleme deyimini kullanarak:  
+3. TestOutput.cs içinde aşağıdaki ekleme deyimini kullanarak:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  TestOutput.cs içinde ShowMessageBox yöntemi silin. Aşağıdaki metot taslağı ekleyin:  
+4. TestOutput.cs içinde ShowMessageBox yöntemi silin. Aşağıdaki metot taslağı ekleyin:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ ms.locfileid: "54773733"
     }  
     ```  
   
-5.  TestOutput oluşturucusunun içinde komut işleyici OutputCommandHandler için değiştirin. Komutları ekler bölümü aşağıda verilmiştir:  
+5. TestOutput oluşturucusunun içinde komut işleyici OutputCommandHandler için değiştirin. Komutları ekler bölümü aşağıda verilmiştir:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ ms.locfileid: "54773733"
     }  
     ```  
   
-6.  Aşağıdaki bölümlerde, çıkış bölmesine uğraşmanızı farklı şekillerde gösterir farklı yöntemleri vardır. OutputCommandHandler() Yöntemin gövdesi için bu yöntemleri çağırabilir. Örneğin, aşağıdaki kod, sonraki bölümde verilen CreatePane() yöntem ekler.  
+6. Aşağıdaki bölümlerde, çıkış bölmesine uğraşmanızı farklı şekillerde gösterir farklı yöntemleri vardır. OutputCommandHandler() Yöntemin gövdesi için bu yöntemleri çağırabilir. Örneğin, aşağıdaki kod, sonraki bölümde verilen CreatePane() yöntem ekler.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

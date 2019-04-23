@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110335"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Nasıl yapılır: Alana Özgü Dili Yeni Sürüme Geçirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
   
 #### <a name="to-prepare-projects-for-migration"></a>Projeleri geçişe hazırlamak için.  
   
--   Emin **.csproj** ve **.sln** dosyaları yazılabilir. Kaynak denetimi altında olmaları durumunda, bunlar kullanıma emin emin olun.  
+- Emin **.csproj** ve **.sln** dosyaları yazılabilir. Kaynak denetimi altında olmaları durumunda, bunlar kullanıma emin emin olun.  
   
--   Geçirmek istediğiniz klasörleri bir kopyasını oluşturun.  
+- Geçirmek istediğiniz klasörleri bir kopyasını oluşturun.  
   
 ## <a name="migrating-a-collection-of-projects"></a>Proje koleksiyonu geçirme  
   
@@ -42,7 +42,7 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
   
 1. DSL geçiş aracını başlatın.  
   
-   -   Windows Explorer (veya dosya Gezgini) araca çift tıklayın veya bir komut istemi'nden aracını başlatın. Bu konumda aracıdır:  
+   - Windows Explorer (veya dosya Gezgini) araca çift tıklayın veya bir komut istemi'nden aracını başlatın. Bu konumda aracıdır:  
   
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
@@ -54,37 +54,37 @@ Tanımlamak ve etki alanına özgü dil kullanan projeler geçirebileceğiniz [!
   
 3. Proje ağacını gözden geçirin ve projeleri dönüştürmek istiyor musunuz işaretini kaldırın.  
   
-   -   Bir proje veya çözüm, araç haline getiren değişikliklerin bir listesini görmek için seçin.  
+   - Bir proje veya çözüm, araç haline getiren değişikliklerin bir listesini görmek için seçin.  
   
        > [!NOTE]
        >  Klasör adları yanında görünen onay kutularını hiçbir etkisi yoktur. Projeler ve çözümler incelemek için klasörleri genişletmeniz gerekir.  
   
 4. Projeleri dönüştürün.  
   
-   1.  Tıklayın **Dönüştür**.  
+   1. Tıklayın **Dönüştür**.  
   
         Her proje dosyası dönüştürülür önce bir kopyasını _proje_**.csproj** olarak kaydedilen _proje_**. vs2008.csproj**  
   
         Her bir kopyasını _çözüm_**.sln** olarak kaydedilen _çözüm_**. vs2008.sln**  
   
-   2.  Bildirilen herhangi bir başarısız dönüştürmeler araştırın.  
+   2. Bildirilen herhangi bir başarısız dönüştürmeler araştırın.  
   
         Metin penceresindeki hataları raporlanır. Ayrıca, ağaç görünümünde kırmızı bayrak dönüştürmek için başarısız olan her düğümde gösterir. Bu hata hakkında daha fazla bilgi almak için düğüme tıklayabilirsiniz.  
   
 5. **Tüm Şablonları dönüştürme** çözümlerinde başarıyla içeren projeleri dönüştürülür.  
   
-   1.  Çözümü açın.  
+   1. Çözümü açın.  
   
-   2.  Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini başlığını düğmesi.  
+   2. Tıklayın **tüm Şablonları Dönüştür** Çözüm Gezgini başlığını düğmesi.  
   
        > [!NOTE]
        >  Bu adım, gereksiz yapabilirsiniz. Daha fazla bilgi için [otomatikleştirmek tüm Şablonları Dönüştür nasıl](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Özel kodunuz dönüştürülmüş projelerinde güncelleştirin.  
   
-   -   Projeleri derlemek ve tüm hataları araştırmak çalışır.  
+   - Projeleri derlemek ve tüm hataları araştırmak çalışır.  
   
-   -   Tasarımcınıza test edin.  
+   - Tasarımcınıza test edin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görselleştirme ve SDK Modellemedeki yenilikler](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

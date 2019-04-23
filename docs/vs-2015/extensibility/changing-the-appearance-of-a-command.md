@@ -12,12 +12,12 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b028250c53ccf0d5af09671bca82848a626d3129
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4741059410e052c571d77088b9cbe109fb651642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095073"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Bir Komutun Görünümünü Değiştirme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağla
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Bir menü komutu görünümünü değiştirmek için  
   
-1.  Bölümündeki yönergeleri [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md) adlı menü öğesi oluşturmak için `New Text`.  
+1. Bölümündeki yönergeleri [menü komutunun metnini değiştirme](../extensibility/changing-the-text-of-a-menu-command.md) adlı menü öğesi oluşturmak için `New Text`.  
   
-2.  ChangeMenuText.cs dosyasına aşağıdakileri ekleyin using deyimi:  
+2. ChangeMenuText.cs dosyasına aşağıdakileri ekleyin using deyimi:  
   
     ```csharp  
     using System.Security.Permissions;  
     ```  
   
-3.  ChangeMenuTextPackageGuids.cs dosyasında aşağıdaki satırı ekleyin:  
+3. ChangeMenuTextPackageGuids.cs dosyasında aşağıdaki satırı ekleyin:  
   
     ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
-4.  ChangeMenuText.cs dosyasında ShowMessageBox yöntemindeki kodu aşağıdakiyle değiştirin:  
+4. ChangeMenuText.cs dosyasında ShowMessageBox yöntemindeki kodu aşağıdakiyle değiştirin:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -61,7 +61,7 @@ Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağla
     }  
     ```  
   
-5.  Güncelleştir istediğiniz komut elde <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> nesnesi ve ardından uygun özellikleri komut nesnesi üzerinde ayarlayın. Örneğin, aşağıdaki yöntemi bir VSPackage komut belirtilen komuttan kullanılabilir veya kullanılamaz hale getirir. Aşağıdaki kod öğesi adlı menü yapar `New Text` bunu tıklatıldıktan sonra kullanılamaz.  
+5. Güncelleştir istediğiniz komut elde <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> nesnesi ve ardından uygun özellikleri komut nesnesi üzerinde ayarlayın. Örneğin, aşağıdaki yöntemi bir VSPackage komut belirtilen komuttan kullanılabilir veya kullanılamaz hale getirir. Aşağıdaki kod öğesi adlı menü yapar `New Text` bunu tıklatıldıktan sonra kullanılamaz.  
   
     ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
@@ -80,11 +80,11 @@ Bir komutun görünümünü değiştirmek için kullanıcı geri bildirim sağla
     }  
     ```  
   
-6.  Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.  
+6. Projeyi oluşturmak ve hata ayıklamaya başlayın. Visual Studio'nun deneysel örneğinde görüntülenmesi gerekir.  
   
-7.  Üzerinde **Araçları** menüsünde tıklatın **çağırma ChangeMenuText** komutu. Bu noktada komut addır **çağırma ChangeMenuText**, komut işleyici ChangeMyCommand() çağrısı değil.  
+7. Üzerinde **Araçları** menüsünde tıklatın **çağırma ChangeMenuText** komutu. Bu noktada komut addır **çağırma ChangeMenuText**, komut işleyici ChangeMyCommand() çağrısı değil.  
   
-8.  Üzerinde **Araçları** artık görmeniz menü **yeni metin**. Tıklayın **yeni metin**. Komutu şimdi gri.  
+8. Üzerinde **Araçları** artık görmeniz menü **yeni metin**. Tıklayın **yeni metin**. Komutu şimdi gri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komutlar, menüler ve araç çubukları](../extensibility/internals/commands-menus-and-toolbars.md)   

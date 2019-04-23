@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098734"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Nasıl yapılır: Visual Studio ürün anahtarını bulma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "54793945"
 
 ### <a name="to-find-the-product-key-for-visual-studio"></a>Visual Studio için ürün anahtarını bulmak için
 
--   Ürün anahtarını şu konumlardan birinde arayın:
+- Ürün anahtarını şu konumlardan birinde arayın:
 
-    -   Yükleme medyasında (varsa).
+    - Yükleme medyasında (varsa).
 
-    -   Üzerinde [My.VisualStudio.com](https://my.visualstudio.com/productkeys) Web sitesi.
+    - Üzerinde [My.VisualStudio.com](https://my.visualstudio.com/productkeys) Web sitesi.
 
-    -   Yazılımı satın aldığınız satıcıdan gelen belgeler veya diğer bilgiler.
+    - Yazılımı satın aldığınız satıcıdan gelen belgeler veya diğer bilgiler.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
  [Nasıl yapılır: Visual Studio deneme sürümünden yükseltme](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Visual Studio yükleme](../install/install-visual-studio-2015.md) [Visual Studio ve MSDN Lisanslama tanıtım belgesi](http://go.microsoft.com/fwlink/?LinkId=191417)

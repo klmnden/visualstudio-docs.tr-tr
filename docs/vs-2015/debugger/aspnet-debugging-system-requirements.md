@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097134"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET hata ayıklaması: Sistem Gereksinimleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bu konu için yazılım ve güvenlik gereksinimlerini açıklar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] hata ayıklama senaryoları:  
   
--   Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:  
+- Yerel, hata ayıklamayı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ve Web uygulaması aynı bilgisayarda çalışır. Bu senaryo iki sürümü vardır:  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod dosya sisteminde yer alıyor.  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod dosya sisteminde yer alıyor.  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod, bir IIS Web sitesinde yer alıyor.  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Kod, bir IIS Web sitesinde yer alıyor.  
   
--   Uzaktan, içinde hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir istemci bilgisayarda çalışan ve bir uzak sunucu bilgisayarda çalışan bir Web uygulaması hata ayıklamasına.  
+- Uzaktan, içinde hata ayıklama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bir istemci bilgisayarda çalışan ve bir uzak sunucu bilgisayarda çalışan bir Web uygulaması hata ayıklamasına.  
   
 ## <a name="security-requirements"></a>Güvenlik Gereksinimleri  
  Uzaktan hata ayıklama için yerel ve uzak bilgisayarlar bir etki alanı kurulumu veya bir çalışma grubu kurulum olması gerekir.  

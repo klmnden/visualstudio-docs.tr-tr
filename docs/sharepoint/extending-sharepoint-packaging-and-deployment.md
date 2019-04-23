@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097004"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>SharePoint paketleme ve dağıtımını genişletme
   Paketleme ve dağıtım işlemi SharePoint projeleri için genişletebilirsiniz.
@@ -35,9 +35,9 @@ ms.locfileid: "56628396"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Bir SharePoint çözümünü dağıtılan ya da geri çekilebilir kodu çalıştırın.
  Bir SharePoint çözümünü dağıtılan ya da geri çekilebilir ek görevleri gerçekleştirmek için olayları işleyebilir. Visual Studio aşağıdaki senaryolarda işleyebileceği olayları oluşturur:
 
--   Önce ve sonra her bir dağıtım adımı için bir SharePoint proje öğesi yürütülür. Daha fazla bilgi için [nasıl yapılır: Dağıtım adımları yürütüldüğünde kodu çalıştırma](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Önce ve sonra her bir dağıtım adımı için bir SharePoint proje öğesi yürütülür. Daha fazla bilgi için [nasıl yapılır: Dağıtım adımları yürütüldüğünde kodu çalıştırma](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Önce ve sonra bir SharePoint Proje dağıtılan veya geri çekilebilir. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint Proje dağıtılan ya da geri çekilebilir kodu çalıştırmak](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Önce ve sonra bir SharePoint Proje dağıtılan veya geri çekilebilir. Daha fazla bilgi için [nasıl yapılır: Bir SharePoint Proje dağıtılan ya da geri çekilebilir kodu çalıştırmak](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Dağıtım çakışmalarını işleme
  SharePoint Proje öğeleri, modüller, Web bölümleri, liste örnekleri ve içerik türleri dahil olmak üzere bazı türler, yerleşik dağıtım çakışması çözümü sağlar. Bu proje öğelerinden birini içeren bir çözümü dağıttığınızda, Visual Studio ilk kez bir dosya zaten aynı adı, URL'si veya kimliği olan SharePoint sitesindeki dağıtmakta olduğunuz öğesinde bir dosya olarak mevcut olup olmadığını denetler. Bir çakışma varsa, Visual Studio otomatik olarak çakışmayı çözebildiğinde veya Visual Studio çakışmayı veya dağıtımı iptal olmasını isteyip istemediğinizi belirlemek için isteyebilir. Daha fazla bilgi için [sorun giderme SharePoint paketleme ve dağıtım](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

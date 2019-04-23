@@ -10,12 +10,12 @@ ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6a5e75ab97f44efd52ef648791658ded34d085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f162affe2324afaa8fb1d506c3177311386bfc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110355"
 ---
 # <a name="calling-debugger-events"></a>Hata Ayıklayıcısı Olaylarını Çağırma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ Hata ayıklama oturumları, olayları belirli bir sırayla oluşur.
 ## <a name="discussion"></a>Tartışma  
  Hata ayıklama altyapısı (DE) ve oturum hata ayıklama Yöneticisi (SDM) arasındaki çağrıların desenini anlamak için tipik hata ayıklama oturumunda gerçekleşen olaylara arama sırası şunları gösterir:  
   
-1.  [Ekleme ve programdan ayırma](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
+1. [Ekleme ve programdan ayırma](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
-2.  [Hata ayıklayıcı başlatılıyor](../../extensibility/debugger/launching-the-debugger.md)  
+2. [Hata ayıklayıcı başlatılıyor](../../extensibility/debugger/launching-the-debugger.md)  
   
-3.  [Program sonlandırma](../../extensibility/debugger/terminating-a-program.md)  
+3. [Program sonlandırma](../../extensibility/debugger/terminating-a-program.md)  
   
-4.  [Bir kesme noktası oluşturma](../../extensibility/debugger/creating-a-breakpoint.md)  
+4. [Bir kesme noktası oluşturma](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [Ne zaman bir kesme noktası bağlar veya ilişkisiz olma](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5. [Ne zaman bir kesme noktası bağlar veya ilişkisiz olma](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
-6.  [Kesme noktası hataları](../../extensibility/debugger/breakpoint-errors.md)  
+6. [Kesme noktası hataları](../../extensibility/debugger/breakpoint-errors.md)  
   
-7.  [Kesme noktasına ulaşma](../../extensibility/debugger/hitting-a-breakpoint.md)  
+7. [Kesme noktasına ulaşma](../../extensibility/debugger/hitting-a-breakpoint.md)  
   
-8.  [Kesme noktasını silme](../../extensibility/debugger/deleting-a-breakpoint.md)  
+8. [Kesme noktasını silme](../../extensibility/debugger/deleting-a-breakpoint.md)  
   
 9. [Kesme moduna girme](../../extensibility/debugger/entering-break-mode.md)  
   

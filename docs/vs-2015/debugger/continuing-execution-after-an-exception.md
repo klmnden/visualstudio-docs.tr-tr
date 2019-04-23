@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105480"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Özel Durumdan Sonra Yürütmeye Devam Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Hata ayıklayıcı bir özel durum nedeniyle yürütmeyi keserse, bir iletişim 
 ## <a name="native-code"></a>Yerel kod  
  Yerel C/C++'da, iki seçeneğiniz vardır:  
   
--   Tıklayabilirsiniz **sonu** ve sorunu düzeltmeye çalışın. Kesme modunda çalışırken, çağrı yığını bir çerçeveye sağ tıklayarak geriye doğru izleyebilirsiniz **çağrı yığını** penceresi ve seçerek **geriye doğru izleme bu çerçeveye** kısayol menüsünde. Hata ayıklama devam ederken **özel durum** iletişim kutusu görüntülenirse yeniden sorun sabit değil. Aksi takdirde, **özel durum** iletişim kutusu değil görünecektir.  
+- Tıklayabilirsiniz **sonu** ve sorunu düzeltmeye çalışın. Kesme modunda çalışırken, çağrı yığını bir çerçeveye sağ tıklayarak geriye doğru izleyebilirsiniz **çağrı yığını** penceresi ve seçerek **geriye doğru izleme bu çerçeveye** kısayol menüsünde. Hata ayıklama devam ederken **özel durum** iletişim kutusu görüntülenirse yeniden sorun sabit değil. Aksi takdirde, **özel durum** iletişim kutusu değil görünecektir.  
   
--   Tıklayabilirsiniz **devam** yürütme sorunu gidermeyi denemeye olmadan devam etmek için. **Özel durum** iletişim kutusu görüntülenir.  
+- Tıklayabilirsiniz **devam** yürütme sorunu gidermeyi denemeye olmadan devam etmek için. **Özel durum** iletişim kutusu görüntülenir.  
   
 ## <a name="mixed-code"></a>Karışık kod  
  Karma bir yerel ve yönetilen kod hata ayıklama sırasında işlenmeyen özel durumu, işletim sistemi kısıtlamaları çağrı yığınını geriye doğru izleme engeller. Kısayol menüsünü kullanarak çağrı yığınını geri sarma çalışırsanız, bir hata iletisi, hata ayıklayıcı işlenmeyen bir bırakma olamaz açıklar dışındaki hata ayıklama sırasında karma kodu.  

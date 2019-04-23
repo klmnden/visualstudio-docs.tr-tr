@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076698"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Bir Menü Komutuyla Uzantı Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
   
 ## <a name="creating-a-menu-command"></a>Bir menü komutu oluşturma  
   
-1.  Adlı bir VSIX projesi oluşturun **FirstMenuCommand**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C# / genişletilebilirlik**.  
+1. Adlı bir VSIX projesi oluşturun **FirstMenuCommand**. VSIX proje şablonunda bulabilirsiniz **yeni proje** iletişim altında **Visual C# / genişletilebilirlik**.  
   
-2.  Projeyi açtığında, adlı bir özel komut öğesi şablonu ekleme **FirstCommand**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme **FirstCommand.cs**.  
+2. Projeyi açtığında, adlı bir özel komut öğesi şablonu ekleme **FirstCommand**. İçinde **Çözüm Gezgini**, proje düğümüne sağ tıklayıp **Ekle / yeni öğe**. İçinde **Yeni Öğe Ekle** iletişim kutusunda, Git **Visual C# / genişletilebilirlik** seçip **özel komut**. İçinde **adı** alan penceresinin en altında komut dosyası adı için değiştirme **FirstCommand.cs**.  
   
-3.  Projeyi oluşturmak ve hata ayıklamaya başlayın.  
+3. Projeyi oluşturmak ve hata ayıklamaya başlayın.  
   
      Visual Studio'nun deneysel örneğinde görünür. Deneysel örnek hakkında daha fazla bilgi için bkz. [deneysel örneğinde](../extensibility/the-experimental-instance.md).  
   
-4.  Deneysel örneğinde açın **araçları / Uzantılar ve güncelleştirmeler** penceresi. Görmelisiniz **FirstMenuCommand** uzantıyı şurada. (Açarsanız **Uzantılar ve güncelleştirmeler** Visual Studio, çalışma örneğinde göremezsiniz **FirstMenuCommand**).  
+4. Deneysel örneğinde açın **araçları / Uzantılar ve güncelleştirmeler** penceresi. Görmelisiniz **FirstMenuCommand** uzantıyı şurada. (Açarsanız **Uzantılar ve güncelleştirmeler** Visual Studio, çalışma örneğinde göremezsiniz **FirstMenuCommand**).  
   
      Artık Git **Araçları** Deneysel örneğinin menü. Görmelisiniz **çağırma FirstCommand** komutu. Bu noktada yalnızca "içinde FirstCommandPackage FirstMenuCommand.FirstCommand.MenuItemCallback()" ifadesini içeren bir ileti kutusu getirir. Sonraki bölümde bu komut aslında Not defteri başlangıç nasıl göreceğiz.  
   
 ## <a name="changing-the-menu-command-handler"></a>Menü komut işleyici değiştirme  
  Şimdi komut işleyicinin Not Defteri'ni başlatın güncelleştirelim.  
   
-1.  Hata ayıklamayı Durdur ve çalışma Örneğiniz için Visual Studio geri dönün. FirstCommand.cs dosyasını açın ve aşağıdaki deyimi kullanarak:  
+1. Hata ayıklamayı Durdur ve çalışma Örneğiniz için Visual Studio geri dönün. FirstCommand.cs dosyasını açın ve aşağıdaki deyimi kullanarak:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Özel FirstCommand Oluşturucusu bulun. Burada komutu için komut hizmeti ölçekledikçe ve komut işleyici belirtilen budur. Komut işleyici adı StartNotepad için aşağıdaki gibi değiştirin:  
+2. Özel FirstCommand Oluşturucusu bulun. Burada komutu için komut hizmeti ölçekledikçe ve komut işleyici belirtilen budur. Komut işleyici adı StartNotepad için aşağıdaki gibi değiştirin:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
     }  
     ```  
   
-3.  Remove MenuItemCallback yöntemi ve Not Defteri yalnızca başlayacak bir StartNotepad yöntemi ekleyin:  
+3. Remove MenuItemCallback yöntemi ve Not Defteri yalnızca başlayacak bir StartNotepad yöntemi ekleyin:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
     }  
     ```  
   
-4.  Şimdi deneyin. Ne zaman projesinde hata ayıklamaya başlama ve tıklayın **Araçlar / çağırma FirstCommand**, Not Defteri gündeme örneğini görmeniz gerekir.  
+4. Şimdi deneyin. Ne zaman projesinde hata ayıklamaya başlama ve tıklayın **Araçlar / çağırma FirstCommand**, Not Defteri gündeme örneğini görmeniz gerekir.  
   
      Bir örneğini kullanabilir <xref:System.Diagnostics.Process> herhangi bir yürütülebilir dosya, yalnızca not defteri çalıştırmak için sınıf. Örneğin, calc.exe ile deneyin.  
   
@@ -94,9 +94,9 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
   
  Bu betik iki yoldan biriyle alabilirsiniz:  
   
-1.  Masaüstü'nden Bul **Visual Studio 2015 Deneysel örneğini sıfırlama**.  
+1. Masaüstü'nden Bul **Visual Studio 2015 Deneysel örneğini sıfırlama**.  
   
-2.  Komut satırından şu komutu çalıştırın:  
+2. Komut satırından şu komutu çalıştırın:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ Bu izlenecek yol, Not Defteri başlatan bir menü komutuyla uzantı oluşturma i
   
 1. Basit bir menü komutu ile pek çok şey yapabilirsiniz:  
   
-   1.  Kendi simgesi ekleyin: [Menü Komutlarına Simge Ekleme](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Kendi simgesi ekleyin: [Menü Komutlarına Simge Ekleme](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Menü komutunun metnini değiştirme: [Bir Menü Komutunun Metnini Değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Menü komutunun metnini değiştirme: [Bir Menü Komutunun Metnini Değiştirme](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Bir komutu menüsü kısayolundan ekleyin: [Menü Öğelerine Klavye Kısayolları Bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Bir komutu menüsü kısayolundan ekleyin: [Menü Öğelerine Klavye Kısayolları Bağlama](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Farklı türde komutlar, menüler ve araç çubukları ekleyin: [Menüleri ve Komutlari Genişletme](../extensibility/extending-menus-and-commands.md)  
   

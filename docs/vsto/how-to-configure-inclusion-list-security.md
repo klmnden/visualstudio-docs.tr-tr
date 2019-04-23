@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1277499fd0af52a4e7138637ef8be332b56a4926
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102022"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Nasıl yapılır: Ekleme listesi güvenliğini yapılandırma
   Yönetici izinleriniz varsa, yapılandırabileceğiniz [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] denetlemek için son kullanıcıların Office çözümlerine güven kararı listesine kaydederek yükleme seçeneğiniz verilip verilmediğini güven istemi. Ekleme listeleri hakkında daha fazla bilgi için bkz. [ekleme listelerini kullanarak Office güven çözümleri](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -27,30 +27,30 @@ ms.locfileid: "56596483"
 
  Her beş bölgelerinin olan çözümler için aşağıdaki seçenekleri ayarlayabilirsiniz:
 
--   Etkinleştirme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcıların herhangi bir sertifika ile imzalanmış Office çözümlerine güven verme izin verebilirsiniz.
+- Etkinleştirme [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcıların herhangi bir sertifika ile imzalanmış Office çözümlerine güven verme izin verebilirsiniz.
 
--   Kısıtlama [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Yayımcı tanımlar, ancak zaten güvenilir değil bir sertifikayla imzalanmış Office çözümlerini yüklemek son kullanıcılara izin verebilirsiniz.
+- Kısıtlama [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Yayımcı tanımlar, ancak zaten güvenilir değil bir sertifikayla imzalanmış Office çözümlerini yüklemek son kullanıcılara izin verebilirsiniz.
 
--   Devre dışı [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcılara açıkça güvenilir bir sertifika ile imzalanmamış herhangi bir Office çözümünü yüklenmesini engelleyebilir.
+- Devre dışı [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] güven istemi anahtarını ve ekleme listesi. Son kullanıcılara açıkça güvenilir bir sertifika ile imzalanmamış herhangi bir Office çözümünü yüklenmesini engelleyebilir.
 
 ## <a name="enable-the-inclusion-list"></a>Ekleme listesini etkinleştir
  Bu bölgeden gelen herhangi bir Office çözümü çalıştırma ve yükleme seçeneğiyle sunulan son kullanıcıların istediğinizde bir bölgenin ekleme listesi etkinleştirin.
 
 ### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>Kayıt Defteri Düzenleyicisi'ni kullanarak ekleme listesini etkinleştirmek için
 
-1.  Kayıt Defteri Düzenleyicisi'ni açın:
+1. Kayıt Defteri Düzenleyicisi'ni açın:
 
-    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.
+    1. Tıklayın **Başlat**ve ardından **çalıştırma**.
 
-    2.  İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.
+    2. İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.
 
-2.  Aşağıdaki kayıt defteri anahtarını bulun:
+2. Aşağıdaki kayıt defteri anahtarını bulun:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
 
      Anahtar mevcut değilse oluşturun.
 
-3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.
+3. Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.
 
     |Dize değeri alt anahtarı|Değer|
     |-------------------------|-----------|
@@ -64,9 +64,9 @@ ms.locfileid: "56596483"
 
 ### <a name="to-enable-the-inclusion-list-programmatically"></a>Ekleme listelerini programlı olarak etkinleştirmek için
 
-1.  Visual Basic veya Visual oluşturma C# konsol uygulaması.
+1. Visual Basic veya Visual oluşturma C# konsol uygulaması.
 
-2.  Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.
+2. Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -90,26 +90,26 @@ ms.locfileid: "56596483"
     key.Close();
     ```
 
-3.  Derleme ve uygulamayı çalıştırın.
+3. Derleme ve uygulamayı çalıştırın.
 
 ## <a name="restrict-the-inclusion-list"></a>Ekleme listesini kısıtlamak
  Ekleme listesi kısıtlayabilirsiniz, böylece çözümleri kullanıcılar için bir güven karar istenmeden önce kimlik bilinen Authenticode sertifikalar ile imzalanması gerekir.
 
 ### <a name="to-restrict-the-inclusion-list"></a>Ekleme listesini kısıtlamak için
 
-1.  Kayıt Defteri Düzenleyicisi'ni açın:
+1. Kayıt Defteri Düzenleyicisi'ni açın:
 
-    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.
+    1. Tıklayın **Başlat**ve ardından **çalıştırma**.
 
-    2.  İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.
+    2. İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.
 
-2.  Aşağıdaki kayıt defteri anahtarını bulun:
+2. Aşağıdaki kayıt defteri anahtarını bulun:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
 
      Anahtar mevcut değilse oluşturun.
 
-3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.
+3. Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.
 
     |Dize değeri alt anahtarı|Değer|
     |-------------------------|-----------|
@@ -123,9 +123,9 @@ ms.locfileid: "56596483"
 
 ### <a name="to-restrict-the-inclusion-list-programmatically"></a>Program aracılığıyla ekleme listesini kısıtlamak için
 
-1.  Visual Basic veya Visual oluşturma C# konsol uygulaması.
+1. Visual Basic veya Visual oluşturma C# konsol uygulaması.
 
-2.  Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.
+2. Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -149,24 +149,24 @@ ms.locfileid: "56596483"
     key.Close();
     ```
 
-3.  Derleme ve uygulamayı çalıştırın.
+3. Derleme ve uygulamayı çalıştırın.
 
 ## <a name="disable-the-inclusion-list"></a>Ekleme listelerini devre dışı bırak
  Son kullanıcılar yalnızca güvenilir ve bilinen bir sertifikayla imzalanmış çözümleri yükleyebilir, böylece ekleme listesi devre dışı bırakabilirsiniz.
 
 ### <a name="to-disable-the-inclusion-list"></a>Ekleme listelerini devre dışı bırakmak için
 
-1.  Kayıt Defteri Düzenleyicisi'ni açın:
+1. Kayıt Defteri Düzenleyicisi'ni açın:
 
-    1.  Tıklayın **Başlat**ve ardından **çalıştırma**.
+    1. Tıklayın **Başlat**ve ardından **çalıştırma**.
 
-    2.  İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.
+    2. İçinde **açık** kutusuna **regedt32.exe**ve ardından **Tamam**.
 
-2.  Bu zaten mevcut değilse, aşağıdaki kayıt defteri anahtarı oluşturun:
+2. Bu zaten mevcut değilse, aşağıdaki kayıt defteri anahtarı oluşturun:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
 
-3.  Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.
+3. Aşağıdaki alt olarak eklemeniz **dize değeri**, zaten ilişkili değerleri mevcut değil.
 
     |Dize değeri alt anahtarı|Değer|
     |-------------------------|-----------|
@@ -178,9 +178,9 @@ ms.locfileid: "56596483"
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Ekleme listelerini program aracılığıyla devre dışı bırakmak için
 
-1.  Visual Basic veya Visual oluşturma C# konsol uygulaması.
+1. Visual Basic veya Visual oluşturma C# konsol uygulaması.
 
-2.  Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.
+2. Açık *Program.vb* veya *Program.cs* dosya düzenleme için ve aşağıdaki kodu ekleyin.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -205,7 +205,7 @@ ms.locfileid: "56596483"
 
     ```
 
-3.  Derleme ve uygulamayı çalıştırın.
+3. Derleme ve uygulamayı çalıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Ekleme listelerini kullanarak Office çözümlerine güven](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)

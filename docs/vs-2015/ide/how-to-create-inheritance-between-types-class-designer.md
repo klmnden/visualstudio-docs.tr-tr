@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d1c5b5d75dedf45988291459ed55b31bf80fc583
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104705"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Nasıl yapılır: (Sınıf Tasarımcısı) türler arasında devralma oluşturma 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +28,21 @@ Bir sınıf diyagramında Sınıf Tasarımcısı kullanarak iki tür arasında d
   
 ### <a name="to-create-an-inheritance-between-types"></a>Bir türler arasında devralma oluşturma  
   
-1.  Çözüm Gezgini'nde, bir projeden bir sınıf diyagramı (.cd) dosyası açın.  
+1. Çözüm Gezgini'nde, bir projeden bir sınıf diyagramı (.cd) dosyası açın.  
   
      Bir sınıf diyagramı yoksa, oluşturun. Bkz: [nasıl yapılır: Sınıf diyagramları ekleme (Sınıf Tasarımcısı) projelerine](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).  
   
-2.  İçinde **araç kutusu**altında **Sınıf Tasarımcısı**, tıklayın **devralma**.  
+2. İçinde **araç kutusu**altında **Sınıf Tasarımcısı**, tıklayın **devralma**.  
   
-3.  Sınıf diyagramında devralım çizgisi başlayarak, istediğiniz türlerini arasında Çiz:  
+3. Sınıf diyagramında devralım çizgisi başlayarak, istediğiniz türlerini arasında Çiz:  
   
-    -   Temel sınıfın türetilmiş bir sınıf  
+    - Temel sınıfın türetilmiş bir sınıf  
   
-    -   Uygulanan arabirimi uygulayan sınıfı  
+    - Uygulanan arabirimi uygulayan sınıfı  
   
-    -   Genişletilmiş arabirimi için bir genişletme arabirimi  
+    - Genişletilmiş arabirimi için bir genişletme arabirimi  
   
-4.  İsteğe bağlı olarak, genel bir türden türetilmiş bir tür olduğunda, devralım çizgisi tıklayın. İçinde **özellikleri** penceresinde **tür bağımsız değişkenleri** genel tür için istediğiniz türüyle eşleşecek şekilde özelliği.  
+4. İsteğe bağlı olarak, genel bir türden türetilmiş bir tür olduğunda, devralım çizgisi tıklayın. İçinde **özellikleri** penceresinde **tür bağımsız değişkenleri** genel tür için istediğiniz türüyle eşleşecek şekilde özelliği.  
   
     > [!NOTE]
     >  Ardından tüm soyut üye bir soyut sınıfı en az bir soyut üye içermesi durumunda, soyut olmayan devralma sınıfları olarak uygulanır.   

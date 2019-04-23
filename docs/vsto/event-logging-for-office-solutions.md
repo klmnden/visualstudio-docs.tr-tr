@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092870"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office çözümleri için olay günlüğüne kaydetme
   Tarafından yakalanan özel durum iletilerini görmek için Windows Olay Görüntüleyicisi'ni kullanabilirsiniz [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] yüklediğinizde veya Office çözümleri kaldırın. Olay günlüğü ileti, yükleme ve dağıtım sorunlarını gidermek için kullanabilirsiniz.
@@ -32,19 +32,19 @@ ms.locfileid: "56628890"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Windows Server 2003 ve Windows XP olay günlüğünde okumak için
 
-1.  Denetim Masası'nda açın **Yönetimsel Araçlar**.
+1. Denetim Masası'nda açın **Yönetimsel Araçlar**.
 
-2.  Başlangıç **Olay Görüntüleyicisi'ni**.
+2. Başlangıç **Olay Görüntüleyicisi'ni**.
 
-3.  Olay günlükleri listesinde seçin **uygulama**.
+3. Olay günlükleri listesinde seçin **uygulama**.
 
-4.  Üzerinde **görünümü** menüsünde tıklatın **filtre**.
+4. Üzerinde **görünümü** menüsünde tıklatın **filtre**.
 
-5.  İçinde **olay kaynağı** listesinden **VSTO 4.0**.
+5. İçinde **olay kaynağı** listesinden **VSTO 4.0**.
 
-6.  Yükleme olayları için de **öğesini belirten Olay No.** kutusuna **4096**.
+6. Yükleme olayları için de **öğesini belirten Olay No.** kutusuna **4096**.
 
-7.  Tıklayın **Tamam** filtrelenmiş görünümü görmek için.
+7. Tıklayın **Tamam** filtrelenmiş görünümü görmek için.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Windows 7, Windows Vista ve Windows Server 2008 olay günlüğünde okumak için
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628890"
 
 ### <a name="to-disable-the-event-log"></a>Olay günlüğünü devre dışı bırakmak için
 
-1.  Denetim Masası'nda açın **sistem**.
+1. Denetim Masası'nda açın **sistem**.
 
-2.  Üzerinde **Gelişmiş** sekmesinde **ortam değişkenlerini**.
+2. Üzerinde **Gelişmiş** sekmesinde **ortam değişkenlerini**.
 
-3.  İçinde **sistem değişkenlerini** bölmesinde tıklayın **yeni**.
+3. İçinde **sistem değişkenlerini** bölmesinde tıklayın **yeni**.
 
-4.  İçinde **yeni sistem değişkeni** iletişim kutusuna **VSTO_EVENTLOGDISABLED** içinde **değişken adı** kutusu.
+4. İçinde **yeni sistem değişkeni** iletişim kutusuna **VSTO_EVENTLOGDISABLED** içinde **değişken adı** kutusu.
 
-5.  İçinde **değişken değeri** kutusuna **1**.
+5. İçinde **değişken değeri** kutusuna **1**.
 
-6.  **Tamam**'ı tıklatın.
+6. **Tamam**'ı tıklatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md)

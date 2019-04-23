@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bfba1981fb6becea34fb567a2f7ae2e6c06896d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110908"
 ---
 # <a name="summary-view"></a>Özet Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "54767863"
   
  Eşzamanlılık verileri Özet görünümünü dışındaki tüm Özet görünümleri için profil oluşturma gerçekleşen zaman içinde oluşturulan uygulamanın işlemci (CPU) kullanımı Özet görünümünde zaman çizelgesi grafiği gösterir.  
   
--   Grafikte zaman kesimini belirtirseniz, o kesimi için verileri yeniden Çözümle veya belirtilen segmente zaman çizelgesi görünen yakınlaştırma. Daha fazla bilgi için [nasıl yapılır: Özet Zaman Çizelgesinden Rapor Görünümlerini Filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
+- Grafikte zaman kesimini belirtirseniz, o kesimi için verileri yeniden Çözümle veya belirtilen segmente zaman çizelgesi görünen yakınlaştırma. Daha fazla bilgi için [nasıl yapılır: Özet Zaman Çizelgesinden Rapor Görünümlerini Filtreleme](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)  
   
--   İşlev için işlev Ayrıntıları görünümünde açmak için bir Özet görünümü listesindeki bir işlev tıklayabilirsiniz. Ayrıca, diğer görünüm seçenekleri işlevi de sağ tıklayabilirsiniz.  
+- İşlev için işlev Ayrıntıları görünümünde açmak için bir Özet görünümü listesindeki bir işlev tıklayabilirsiniz. Ayrıca, diğer görünüm seçenekleri işlevi de sağ tıklayabilirsiniz.  
   
--   Özet görünümü listelerinde görüntülenen öğe sayısını değiştirmek için açın **Araçları** menüsünde **seçenekleri**ve ardından **performans araçları**. Altında **genel ayarlar**, değişiklik **Özet görünümündeki fonksiyonların sayısı** ayarı.  
+- Özet görünümü listelerinde görüntülenen öğe sayısını değiştirmek için açın **Araçları** menüsünde **seçenekleri**ve ardından **performans araçları**. Altında **genel ayarlar**, değişiklik **Özet görünümündeki fonksiyonların sayısı** ayarı.  
   
 ## <a name="notifications-links"></a>Bildirimleri bağlantıları  
  Bildirim listesinde rapor için görüntüleme seçeneklerini ayarlamak için bağlantıları tıklatabilirsiniz. Zaman Çizelgesi grafiği sağa listesidir.  

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d8ecbeca226d558774c12f4bec45ac26f66a808
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069113"
 ---
 # <a name="thread-details-view---contention-data"></a>İş Parçacığı Ayrıntıları Görünümü - Çakışma Verileri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ ms.locfileid: "54762130"
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Bir zaman çizelgesi segmenti yakınlaştırmak için  
   
--   Tıklayın ve zaman çizelgesi bir alanı seçmek için fareyi sürükleyin.  
+- Tıklayın ve zaman çizelgesi bir alanı seçmek için fareyi sürükleyin.  
   
      Fare düğmesini bırakın, seçilen zaman segmente görünümü yakınlaştırır. Daha ayrıntılı olarak yakınlaştırmak için işlemini tekrar edebilirsiniz. Kaydırma kutusunun zaman kaydırma çubuğundaki görünümünde görüntülenen zaman diliminin göreli boyutu temsil eder.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>Bir zaman çizelgesinde uzaklaştırmak için  
   
--   Tıklayın **Uzaklaştır** önceki yakınlaştırma düzeyi için döndürülecek.  
+- Tıklayın **Uzaklaştır** önceki yakınlaştırma düzeyi için döndürülecek.  
   
--   Tıklayın **yakınlaştırma sıfırlama** görünümde tüm zaman çizelgesini göstermek için.  
+- Tıklayın **yakınlaştırma sıfırlama** görünümde tüm zaman çizelgesini göstermek için.  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Bir olayın çağrı yığınını görüntülemek için  
   
--   Zaman Çizelgesi grafiğe, olayı temsil eden dikey çubuk tıklayın...  
+- Zaman Çizelgesi grafiğe, olayı temsil eden dikey çubuk tıklayın...  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Görüntüleme veya çağrı yığınında bir işlevin kaynak kodunu düzenleme  
   
@@ -53,12 +53,12 @@ ms.locfileid: "54762130"
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Profil oluşturma, tüm iş parçacıklarının kaynak Çekişme olayları görüntülemek için  
   
--   Adı veya kimliği kaynak zaman çizelgesi grafiğe tıklayın.  
+- Adı veya kimliği kaynak zaman çizelgesi grafiğe tıklayın.  
   
      [Kaynak Ayrıntıları görünümü](../profiling/resource-details-view-contention-data.md) seçili kaynak için görünür.  
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>İş parçacığı Çekişme verisi işlemleri penceresinde görüntülemek için  
   
--   Zaman Çizelgesi grafiğe **toplam**.  
+- Zaman Çizelgesi grafiğe **toplam**.  
   
      [İşlem görünümü](../profiling/process-view-contention-data.md) Seçili iş parçacığı ile görünür.

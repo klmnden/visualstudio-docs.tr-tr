@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101385"
 ---
 # <a name="how-to-create-xml-snippets"></a>Nasıl yapılır: XML Kod Parçacıklarını Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ XML Düzenleyicisi'ni yeni kod parçacıkları oluşturmak için kullanılabilir
 ## <a name="to-create-a-new-xml-snippet"></a>Yeni bir XML kod parçacığı oluşturmak için  
  Yeni bir XML kodu oluşturmak için kod parçacığı yeni bir XML dosyası oluşturun ve kullanın **parçacık Ekle** özelliği.  
   
-1.  Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **dosya**.  
+1. Üzerinde **dosya** menüsünde tıklatın **yeni** ve ardından **dosya**.  
   
-2.  Tıklayın **XML dosyası** ve ardından **açık**.  
+2. Tıklayın **XML dosyası** ve ardından **açık**.  
   
-3.  Düzenleyici bölmesine sağ tıklayıp **parçacık Ekle**.  
+3. Düzenleyici bölmesine sağ tıklayıp **parçacık Ekle**.  
   
-4.  Seçin **kod parçacığı** listesi ve ENTER tuşuna basın.  
+4. Seçin **kod parçacığı** listesi ve ENTER tuşuna basın.  
   
-5.  Yeni kod parçacığını değişiklikleri yapın.  
+5. Yeni kod parçacığını değişiklikleri yapın.  
   
-6.  Gelen **dosya** menüsünü seçin **Kaydet XMLFile.xml**.  
+6. Gelen **dosya** menüsünü seçin **Kaydet XMLFile.xml**.  
   
      **Dosyayı farklı Kaydet** iletişim kutusu görüntülenir.  
   
-7.  Yeni kod parçacığı için bir ad girin ve seçin **kod parçacığı dosyaları** gelen **farklı kaydetme türü** açılır pencere.  
+7. Yeni kod parçacığı için bir ad girin ve seçin **kod parçacığı dosyaları** gelen **farklı kaydetme türü** açılır pencere.  
   
-8.  Kullanım **kaydetmek** My Documents\Visual Studio 2005\Code Snippets\XML\My XML kod parçacıklarını klasöre dosya konumunu değiştirin ve ENTER tuşuna basın, aşağı açılan liste **Kaydet**.  
+8. Kullanım **kaydetmek** My Documents\Visual Studio 2005\Code Snippets\XML\My XML kod parçacıklarını klasöre dosya konumunu değiştirin ve ENTER tuşuna basın, aşağı açılan liste **Kaydet**.  
   
 ## <a name="snippet-description"></a>Kod parçacığı açıklaması  
  Bu bölümde Demirbaş kod parçacığında temel öğelerinden bazıları açıklanmaktadır. XML kod parçacıkları tarafından kullanılan şema öğeleri hakkında daha fazla bilgi için bkz: [kod parçacıkları şema başvurusu](../ide/code-snippets-schema-reference.md).  

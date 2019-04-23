@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104687"
 ---
 # <a name="define-a-work-item-link-handler"></a>İş öğesi bağlantı işleyicisi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,39 +26,39 @@ Visual Studio tümleştirmesi kullanıcı bir UML modeli öğesi ile bir iş ö�
 ## <a name="set-up-a-uml-extension-solution"></a>Bir UML Uzantısı çözümü ayarlama  
  Bu, işleyicileri geliştirmenize ve bunları diğer kullanıcılara dağıtmanıza olanak tanır. İki Visual Studio projelerini ayarlamanız gerekir:  
   
--   Bağlantı işleyici kodu içeren bir sınıf kitaplığı projesi.  
+- Bağlantı işleyici kodu içeren bir sınıf kitaplığı projesi.  
   
--   Komut yüklemek için bir kapsayıcı görevi gören bir VSIX projesi. İsterseniz, aynı VSIX içine diğer bileşenleri dahil edebilirsiniz.  
+- Komut yüklemek için bir kapsayıcı görevi gören bir VSIX projesi. İsterseniz, aynı VSIX içine diğer bileşenleri dahil edebilirsiniz.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>Visual Studio çözümünü ayarlamak için  
   
-1.  Varolan bir VSIX çözümüne ekleyerek veya yeni bir çözüm oluşturarak bir sınıf kitaplığı projesi oluşturun.  
+1. Varolan bir VSIX çözümüne ekleyerek veya yeni bir çözüm oluşturarak bir sınıf kitaplığı projesi oluşturun.  
   
-    1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+    1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından Orta sütundaki tıklayın **sınıf kitaplığı**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından Orta sütundaki tıklayın **sınıf kitaplığı**.  
   
-    3.  Ayarlama **çözüm** yeni bir çözüm oluşturmak veya önceden açmış olduğunuz VSIX çözümüne bir bileşen eklemek isteyip istemediğinizi belirtmek için.  
+    3. Ayarlama **çözüm** yeni bir çözüm oluşturmak veya önceden açmış olduğunuz VSIX çözümüne bir bileşen eklemek isteyip istemediğinizi belirtmek için.  
   
-    4.  Proje kümesi adını ve konumunu ve Tamam'a tıklayın.  
+    4. Proje kümesi adını ve konumunu ve Tamam'a tıklayın.  
   
-2.  Çözümünüz bir tane içermiyorsa, bir VSIX projesi oluşturun.  
+2. Çözümünüz bir tane içermiyorsa, bir VSIX projesi oluşturun.  
   
-    1.  İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
+    1. İçinde **Çözüm Gezgini**, çözümün kısayol menüsünde **Ekle**, **yeni proje**.  
   
-    2.  Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
+    2. Altında **yüklü şablonlar**, genişletme **Visual C#** veya **Visual Basic**, ardından **genişletilebilirlik**. Orta sütundaki seçin **VSIX projesi**.  
   
-3.  VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
+3. VSIX projesinin çözümün başlangıç projesi olarak ayarlayın.  
   
-    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
+    - Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **başlangıç projesi olarak ayarla**.  
   
-4.  İçinde **source.extension.vsixmanifest**altında **içerik**, sınıf kitaplığı projesini MEF Bileşeni olarak ekleyin.  
+4. İçinde **source.extension.vsixmanifest**altında **içerik**, sınıf kitaplığı projesini MEF Bileşeni olarak ekleyin.  
   
-    1.  Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
+    1. Üzerinde **meta verileri** sekmesinde, VSIX için bir ad belirleyin.  
   
-    2.  Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
+    2. Üzerinde **hedefleri Yükle** sekmesinde, hedefler olarak Visual Studio sürümleri ayarlayın.  
   
-    3.  Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
+    3. Üzerinde **varlıklar** sekmesini, bir **yeni**ve iletişim kutusunda şunu ayarlayın:  
   
          **Tür** = **MEF Bileşeni**  
   
@@ -69,7 +69,7 @@ Visual Studio tümleştirmesi kullanıcı bir UML modeli öğesi ile bir iş ö�
 ## <a name="defining-the-work-item-link-handler"></a>İş öğesi bağlantı işleyicisini tanımlama  
  Aşağıdaki görevlerin tümünü sınıf kitaplığı projesinde gerçekleştirin.  
   
-### <a name="project-references"></a>Proje başvuruları  
+### <a name="project-references"></a>Proje Başvuruları  
  Aşağıdaki [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] derlemelerini projenizin başvurularına:  
   
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`  
@@ -156,37 +156,37 @@ namespace WorkItems
   
 #### <a name="to-test-the-link-handler"></a>Bağlantı işleyicisini test etmek için  
   
-1.  Tuşuna **F5**, veya **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
+1. Tuşuna **F5**, veya **hata ayıklama** menüsünde seçin **hata ayıklamayı Başlat**.  
   
      Deneysel örneği [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlatır.  
   
      **Sorun giderme**: Yeni bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] değil başlatın, VSIX projesinin çözümün başlangıç projesi olarak ayarlandığından emin olun.  
   
-2.  Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun.  
+2. Deneysel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], açın veya bir modelleme projesi oluşturmak ve açmak veya bir modelleme diyagramı oluşturun.  
   
-3.  UML sınıfı gibi bir model öğesi oluşturun ve adını ayarlayın.  
+3. UML sınıfı gibi bir model öğesi oluşturun ve adını ayarlayın.  
   
-4.  Öğeye sağ tıklayın ve ardından **iş öğesi oluşturma**.  
+4. Öğeye sağ tıklayın ve ardından **iş öğesi oluşturma**.  
   
-    -   Gösteriyorsa **açık Team Foundation Server bağlantısı**, projeyi kapatın, uygun TFS'ye bağlanmak ve bu yordamı yeniden başlatmanız gerekir.  
+    - Gösteriyorsa **açık Team Foundation Server bağlantısı**, projeyi kapatın, uygun TFS'ye bağlanmak ve bu yordamı yeniden başlatmanız gerekir.  
   
-    -   Alt iş öğesi türlerinin bir listesini gösterirse, birini tıklayın.  
+    - Alt iş öğesi türlerinin bir listesini gösterirse, birini tıklayın.  
   
          Yeni bir iş öğesi formu açılır.  
   
-5.  Önceki bölümdeki örnek kodu kullandıysanız, çalışma öğesi başlığının model öğesi ile aynı olduğunu doğrulayın. Bu gösterir `OnWorkItemCreated()` çalışmıştır.  
+5. Önceki bölümdeki örnek kodu kullandıysanız, çalışma öğesi başlığının model öğesi ile aynı olduğunu doğrulayın. Bu gösterir `OnWorkItemCreated()` çalışmıştır.  
   
-6.  Kaydetme, formu doldurun ve iş öğesini kapatın.  
+6. Kaydetme, formu doldurun ve iş öğesini kapatın.  
   
-7.  Çalışma öğesinin artık kırmızı renk olduğunu doğrulayın. Bu gösterir `OnWorkItemLinked()` örnek kodda.  
+7. Çalışma öğesinin artık kırmızı renk olduğunu doğrulayın. Bu gösterir `OnWorkItemLinked()` örnek kodda.  
   
      **Sorun giderme**: İşleyici yöntemler çalışmadıysa, aşağıdakileri doğrulayın:  
   
-    -   Sınıf Kitaplığı projesini MEF Bileşeni olarak listelenir **içerik** listesinde **source.extensions.manifest** VSIX projesinde.  
+    - Sınıf Kitaplığı projesini MEF Bileşeni olarak listelenir **içerik** listesinde **source.extensions.manifest** VSIX projesinde.  
   
-    -   Doğru `Export` özniteliği işleyici sınıfına ve sınıf uygulayan bağlı `ILinkedWorkItemExtension`.  
+    - Doğru `Export` özniteliği işleyici sınıfına ve sınıf uygulayan bağlı `ILinkedWorkItemExtension`.  
   
-    -   Tüm parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
+    - Tüm parametreleri `Import` ve `Export` öznitelikleri geçerlidir.  
   
 ## <a name="about-the-work-item-handler-code"></a>İş öğesi işleyici kodu hakkında  
   
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
   
  Aşağıdaki örneği kullanmak için bu .NET derlemelerini projenizin başvurular ekleyin:  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   

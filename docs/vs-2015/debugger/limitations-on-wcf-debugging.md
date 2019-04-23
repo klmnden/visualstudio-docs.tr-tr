@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095106"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCE Hata Ayıklamasında Sınırlamalar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Bir WCF Hizmeti hatasını ayıklamaya başlayabilmeniz için üç yol vardır:
 ## <a name="limitations-on-stepping-into-a-service"></a>Bir hizmette Adımlama sınırlamaları  
  Bir istemci uygulamalarında hata ayıklaması yaptığınız bir hizmette adımlamak için aşağıdaki koşullar karşılanmalıdır:  
   
--   İstemci, bir zaman uyumlu istemci nesnesini kullanarak hizmet çağırmanız gerekir.  
+- İstemci, bir zaman uyumlu istemci nesnesini kullanarak hizmet çağırmanız gerekir.  
   
--   Sözleşme işlemi, tek yönlü olamaz.  
+- Sözleşme işlemi, tek yönlü olamaz.  
   
--   Zaman uyumsuz sunucusuysa, hizmet içinde kod çalıştırılıyorken tam çağrı yığınını görüntüleyemezsiniz.  
+- Zaman uyumsuz sunucusuysa, hizmet içinde kod çalıştırılıyorken tam çağrı yığınını görüntüleyemezsiniz.  
   
--   Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kod ile etkinleştirilmesi gerekir:  
+- Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kod ile etkinleştirilmesi gerekir:  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ Bir WCF Hizmeti hatasını ayıklamaya başlayabilmeniz için üç yol vardır:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Bir hizmete otomatik sınırlamalar ekleme  
  Bir hizmete otomatik olarak ekleme, aşağıdaki sınırlamalara sahiptir:  
   
--   Hizmetin bir parçası olması [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ayıkladığınız çözüm.  
+- Hizmetin bir parçası olması [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ayıkladığınız çözüm.  
   
--   Hizmetin barındırılması gerekir. Bir Web sitesi projesi (dosya sistemi ve HTTP), Web uygulama projesi (dosya sistemi ve HTTP) veya WCF hizmet kitaplığı projesi parçası olabilir. WCF hizmet kitaplığı projeleri hizmet kitaplıkları veya iş akışı hizmet kitaplığı olabilir.  
+- Hizmetin barındırılması gerekir. Bir Web sitesi projesi (dosya sistemi ve HTTP), Web uygulama projesi (dosya sistemi ve HTTP) veya WCF hizmet kitaplığı projesi parçası olabilir. WCF hizmet kitaplığı projeleri hizmet kitaplıkları veya iş akışı hizmet kitaplığı olabilir.  
   
--   Bir WCF istemciden hizmete çağrılması gerekir.  
+- Bir WCF istemciden hizmete çağrılması gerekir.  
   
--   Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kod ile etkinleştirilmesi gerekir:  
+- Hata ayıklama app.config veya Web.config dosyasında aşağıdaki kod ile etkinleştirilmesi gerekir:  
   
     ```  
     <system.web>  

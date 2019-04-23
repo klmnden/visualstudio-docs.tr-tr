@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa277cca1d4c655f2a2894ff9c8ffce83474016
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071403"
 ---
 # <a name="understand-build-configurations"></a>Derleme yapılandırmalarını anlama
 
@@ -72,20 +72,20 @@ Etkin çözüm yapılandırmasını, ayrıca IDE bağlamı sağlar. Örneğin, b
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio Proje yapılandırmaları nasıl atar
  Yeni bir çözüm yapılandırması tanımlayın ve var olan bir ayarları kopyalanmaz, Visual Studio varsayılan proje yapılandırmaları atamak için aşağıdaki ölçütleri kullanır. Ölçüt gösterilen sırada değerlendirilir.
 
-1.  Bir proje yapılandırması adı varsa (*\<yapılandırma adı > \<platform adı >*) tam olarak eşleşen yeni bir çözüm yapılandırması, bu yapılandırma adını atanır. Yapılandırma adlarını büyük küçük harfe duyarlı değildir.
+1. Bir proje yapılandırması adı varsa (*\<yapılandırma adı > \<platform adı >*) tam olarak eşleşen yeni bir çözüm yapılandırması, bu yapılandırma adını atanır. Yapılandırma adlarını büyük küçük harfe duyarlı değildir.
 
-2.  Proje yapılandırması adı bölümü yeni çözüm yapılandırması ile eşleşen bir yapılandırma adı varsa, bu yapılandırma veya platformu bölümü eşleşip eşleşmediğini, atanır.
+2. Proje yapılandırması adı bölümü yeni çözüm yapılandırması ile eşleşen bir yapılandırma adı varsa, bu yapılandırma veya platformu bölümü eşleşip eşleşmediğini, atanır.
 
-3.  Hala eşleşme yoksa, projeye listelenen ilk yapılandırmayı atanır.
+3. Hala eşleşme yoksa, projeye listelenen ilk yapılandırmayı atanır.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio çözüm yapılandırmalarının nasıl atar
  Bir proje yapılandırması oluşturduğunuzda (içinde **Configuration Manager**, seçerek **yeni** açılan menüde **yapılandırma** sütun bu proje için) ve seçin **yeni çözüm yapılandırmaları oluşturma** onay kutusu, Visual Studio projeyi desteklediği her platformda derlemek bir benzer adlı çözüm yapılandırması arar. Bazı durumlarda, Visual Studio, var olan çözüm yapılandırmaları yeniden adlandırır veya yenilerini tanımlar.
 
  Visual Studio çözüm yapılandırmaları atamak için aşağıdaki ölçütleri kullanır.
 
--   Bir proje yapılandırması platformu belirtmiyor veya yalnızca tek bir platform belirtir, ardından yeni proje yapılandırmasının adı ile eşleşen bir çözüm yapılandırması bulundu eklendi veya. Bu çözüm yapılandırmasının varsayılan adı, platform adı içermez; şu biçimi alır  *\<proje yapılandırması adı >*.
+- Bir proje yapılandırması platformu belirtmiyor veya yalnızca tek bir platform belirtir, ardından yeni proje yapılandırmasının adı ile eşleşen bir çözüm yapılandırması bulundu eklendi veya. Bu çözüm yapılandırmasının varsayılan adı, platform adı içermez; şu biçimi alır  *\<proje yapılandırması adı >*.
 
--   Bir proje birden çok platform destekliyorsa, bir çözüm yapılandırması bulunamadı veya desteklenen her platform için eklendi. Her çözüm yapılandırması adını hem proje yapılandırması adı hem de platform adı içerir ve formundadır  *\<proje yapılandırması adı > \<platform adı >*.
+- Bir proje birden çok platform destekliyorsa, bir çözüm yapılandırması bulunamadı veya desteklenen her platform için eklendi. Her çözüm yapılandırması adını hem proje yapılandırması adı hem de platform adı içerir ve formundadır  *\<proje yapılandırması adı > \<platform adı >*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

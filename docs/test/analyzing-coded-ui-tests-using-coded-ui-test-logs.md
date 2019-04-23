@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948556"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105129"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Kodlanmış UI test günlüklerini çözümleme kodlanmış UI testleri kullanarak
 
@@ -60,18 +60,18 @@ Senaryonuza bağlı olarak, günlüğü etkinleştirmek için aşağıdaki yönt
 
 Yapılan değişiklikler ile kodlanmış UI testi çalıştırdığınızda *QTAgent32.exe.config* dosya, yerinde bağlantısını bir çıktı görmeniz **Test Gezgini** sonuçları. Yalnızca, test, aynı zamanda için izleme düzeyi için "verbose." olarak ayarlandığında başarılı testleri başarısız olduğunda günlük dosyaları oluşturulur
 
-1.  Üzerinde **Test** menüsünde seçin **Windows** seçip **Test Gezgini**.
+1. Üzerinde **Test** menüsünde seçin **Windows** seçip **Test Gezgini**.
 
-2.  Üzerinde **derleme** menüsünde seçin **Çözümü Derle**.
+2. Üzerinde **derleme** menüsünde seçin **Çözümü Derle**.
 
-3.  İçinde **Test Gezgini**, kodlanmış UI testi çalıştırmak için kısayol menüsünü açın ve ardından istediğiniz seçin **seçili Testleri Çalıştır**.
+3. İçinde **Test Gezgini**, kodlanmış UI testi çalıştırmak için kısayol menüsünü açın ve ardından istediğiniz seçin **seçili Testleri Çalıştır**.
 
      Otomatikleştirilmiş testleri çalıştırın ve geçti veya başarısız olmadığını gösterir.
 
     > [!TIP]
     > Görüntülenecek **Test Gezgini**, seçin **Test** > **Windows**ve ardından **Test Gezgini**.
 
-4.  Seçin **çıkış** bağlantısını **Test Gezgini** sonuçları.
+4. Seçin **çıkış** bağlantısını **Test Gezgini** sonuçları.
 
      ![Test Gezgininde çıkış bağlantı](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,7 +79,7 @@ Yapılan değişiklikler ile kodlanmış UI testi çalıştırdığınızda *QTA
 
      ![Sonuçları ve kodlanmış UI testi çıkış bağlantıları](../test/media/cuit_htmlactionlog2.png)
 
-5.  Seçin *UITestActionLog.html* bağlantı.
+5. Seçin *UITestActionLog.html* bağlantı.
 
      Günlük, web tarayıcınızda görüntülenir.
 

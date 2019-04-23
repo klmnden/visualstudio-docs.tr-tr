@@ -19,41 +19,41 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73018dcdc34d3a824ff13da13fc12d03b8d13a7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076634"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Düzenle ve Devam Et Hata İletisi İletişim Kutusu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Düzenle ve devam et, destekleyen bir dilde hata ayıklaması yapıyorsanız, bu iletişim kutusu görüntülenir ancak **Düzenle ve devam et** yapmış olduğunuz değişiklikleri kod türü için kullanılabilir değil. Hata iletisi kutu içinde daha ayrıntılı bir açıklama sağlar. Bu iletişim kutusunu dahil görmek için olası nedenler:  
   
--   Yönetilemeyen hata ayıklama etkinleştirildiğinde, yönetilen kod düzenleme denedi. Düzenle ve devam et seçenekleri çalışmaz karışık mod hata ayıklama ile.  
+- Yönetilemeyen hata ayıklama etkinleştirildiğinde, yönetilen kod düzenleme denedi. Düzenle ve devam et seçenekleri çalışmaz karışık mod hata ayıklama ile.  
   
--   SQL Server kod düzenleme denedi.  
+- SQL Server kod düzenleme denedi.  
   
--   Kod bir Dr hata ayıklarken Düzenle denedi. Watson dökümü.  
+- Kod bir Dr hata ayıklarken Düzenle denedi. Watson dökümü.  
   
--   İşlenmeyen bir özel durum oluştuktan sonra kod ve seçeneği düzenlemeye çalıştığınız "**işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme**" seçilmedi.  
+- İşlenmeyen bir özel durum oluştuktan sonra kod ve seçeneği düzenlemeye çalıştığınız "**işlenmemiş özel durumlarda çağrı yığınını geriye doğru izleme**" seçilmedi.  
   
--   Kod katıştırılmış çalışma zamanı uygulamanın hata ayıklarken Düzenle denedi.  
+- Kod katıştırılmış çalışma zamanı uygulamanın hata ayıklarken Düzenle denedi.  
   
--   Başlangıç yerine ekli bir program kodunda düzenlemeye çalıştığınız **hata ayıklama** menüsü.  
+- Başlangıç yerine ekli bir program kodunda düzenlemeye çalıştığınız **hata ayıklama** menüsü.  
   
--   En iyi duruma getirilmiş kod düzenleme denedi.  
+- En iyi duruma getirilmiş kod düzenleme denedi.  
   
--   Yönetilen kodu 64 bitlik bir uygulama hedeflendiğinde Düzenle denedi. İsterseniz kullanım Düzenle ve devam et, hedef x86 için ayarlamanız gerekir. (*Proje* **özellikleri**, **derleme** sekmesinde **Gelişmiş derleyici** ayarı.).  
+- Yönetilen kodu 64 bitlik bir uygulama hedeflendiğinde Düzenle denedi. İsterseniz kullanım Düzenle ve devam et, hedef x86 için ayarlamanız gerekir. (*Proje* **özellikleri**, **derleme** sekmesinde **Gelişmiş derleyici** ayarı.).  
   
--   Hata ayıklama sırasında değiştirildi ve yeniden yüklendi bütünleştirilmiş kodu düzenleme denedi.  
+- Hata ayıklama sırasında değiştirildi ve yeniden yüklendi bütünleştirilmiş kodu düzenleme denedi.  
   
--   Yüklenmemiş olan bütünleştirilmiş kodu düzenleme denedi.  
+- Yüklenmemiş olan bütünleştirilmiş kodu düzenleme denedi.  
   
--   (Yeni sürümü derleme hataları olduğundan) eski bir sürümünü, uygulamanızın hata ayıklama başlangıç.  
+- (Yeni sürümü derleme hataları olduğundan) eski bir sürümünü, uygulamanızın hata ayıklama başlangıç.  
   
--   Bunu çalışırken kod düzenleme denedi.  
+- Bunu çalışırken kod düzenleme denedi.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **TAMAM**  

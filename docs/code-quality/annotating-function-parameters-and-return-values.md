@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ea474200875b5667962895deadd6479b44c391
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109883"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev Parametrelerini ve Dönüş Değerlerini Açıklama
 Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanımları — skalerler yanı sıra, yapılar ve sınıflar için işaretçiler — ve çoğu arabellek.  Bu makalede, ek açıklamalar için yaygın kullanım biçimlerini de gösterilir. İşlevlerle ilişkili ek açıklama için bkz: [işlev davranışını yorumlama](../code-quality/annotating-function-behavior.md)
@@ -140,27 +140,27 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
  **Ek açıklamalar ve açıklamaları**
 
--   `_In_`
+- `_In_`
 
      Skalerler, yapıları, yapılarına işaretçiler ve benzeri giriş parametrelerini açıklama ekler.  Üzerinde basit skalerler açıkça kullanılabilir.  Parametre öncesi durumda geçerli olması gerekir ve değiştirilmeyecek.
 
--   `_Out_`
+- `_Out_`
 
      Skalerler, yapıları, yapılarına işaretçiler ve benzeri bir çıktı parametreleri açıklama ekler.  Bu bir değer döndürülemez bir nesne için geçerli değildir — Örneğin, bir değer olarak geçilemez skaler.  Parametre ön durumunda geçerli olması gerekmez ancak sonrası durumunda geçerli olması gerekir.
 
--   `_Inout_`
+- `_Inout_`
 
      İşlev tarafından değiştirilen bir parametre açıklama ekler.  Hem ön durumu hem de sonrası durumu geçerli olmalıdır, ancak önce ve sonra çağrı farklı değerlere sahip olduğu varsayılır. Değiştirilebilir bir değer için geçerli olmalıdır.
 
--   `_In_z_`
+- `_In_z_`
 
      Girdi olarak kullanılan boş sonlandırılmış dizeye bir işaretçi.  Dize öncesi durumda geçerli olmalıdır.  Türevleri `PSTR`, hangi zaten doğru ek açıklamalarına sahip, tercih edilir.
 
--   `_Inout_z_`
+- `_Inout_z_`
 
      Değiştirilecek bir null ile sonlandırılmış karakter dizisine bir işaretçi.  Önce ve sonra çağrı geçerli olmalıdır, ancak değiştirilmiş değer kabul edilir.  Null Sonlandırıcı taşınmış olabilir, ancak yalnızca özgün null Sonlandırıcı öğeleri erişilebilir.
 
--   `_In_reads_(s)`
+- `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
@@ -168,15 +168,15 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade, bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca benzer, işlev, değişken kullanan `wchar_t` gerekir.
 
--   `_In_reads_z_(s)`
+- `_In_reads_z_(s)`
 
      Null ile sonlandırılmış ve bilinen bir boyuta sahip bir dizi için bir işaretçi. Null Sonlandırıcı kadar olan öğeleri — veya `s` null Sonlandırıcı ise — öncesi durumda geçerli olması gerekir.  Bayt cinsinden boyut biliniyorsa, ölçeklendirme `s` öğesinin boyutu.
 
--   `_In_reads_or_z_(s)`
+- `_In_reads_or_z_(s)`
 
      Null ile sonlandırılmış veya bilinen bir boyuta ve her ikisi de bir dizi için bir işaretçi. Null Sonlandırıcı kadar olan öğeleri — veya `s` null Sonlandırıcı ise — öncesi durumda geçerli olması gerekir.  Bayt cinsinden boyut biliniyorsa, ölçeklendirme `s` öğesinin boyutu.  (Kullanılan `strn` ailesi.)
 
--   `_Out_writes_(s)`
+- `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
@@ -188,11 +188,11 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade, bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca benzer, işlev, değişken kullanan `wchar_t` gerekir.
 
--   `_Out_writes_z_(s)`
+- `_Out_writes_z_(s)`
 
      Bir dizi işaretçi `s` öğeleri.  Öğeleri öncesi durumda geçerli olması gerekmez.  Sonrası durumundaki öğeleri null Sonlandırıcı aracılığıyla — mevcut olması gereken — geçerli olmalıdır.  Bayt cinsinden boyut biliniyorsa, ölçeklendirme `s` öğesinin boyutu.
 
--   `_Inout_updates_(s)`
+- `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
@@ -200,11 +200,11 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade, bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca benzer, işlev, değişken kullanan `wchar_t` gerekir.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Null ile sonlandırılmış ve bilinen bir boyuta sahip bir dizi için bir işaretçi. Öğeleri null Sonlandırıcı aracılığıyla — mevcut olması gereken — hem öncesi durumu hem de sonrası durumu geçerli olmalıdır.  Değerin sonrası durumunda öncesi durumda değerinden farklı olacak şekilde varsayılır; Bu, null Sonlandırıcı konumunu içerir. Bayt cinsinden boyut biliniyorsa, ölçeklendirme `s` öğesinin boyutu.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -220,7 +220,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -228,11 +228,11 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade, bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca benzer, işlev, değişken kullanan `wchar_t` gerekir.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Null ile sonlandırılmış ve bilinen bir boyuta sahip bir dizi için bir işaretçi. Öğeleri null Sonlandırıcı aracılığıyla — mevcut olması gereken — hem öncesi durumu hem de sonrası durumu geçerli olmalıdır.  Değerin sonrası durumunda öncesi durumda değerinden farklı olacak şekilde varsayılır; Bu, null Sonlandırıcı konumunu içerir. Bayt cinsinden boyut biliniyorsa, ölçeklendirme `s` öğesinin boyutu.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -248,7 +248,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -256,7 +256,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade, bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca benzer, işlev, değişken kullanan `wchar_t` gerekir.
 
--   `_Inout_updates_all_(s)`
+- `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
@@ -268,19 +268,19 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
      `_bytes_` Değişken öğeleri yerine bayt cinsinden boyutu sağlar. Yalnızca boyutu öğeleri olarak ifade, bunu kullanın.  Örneğin, `char` dizeleri kullandığınız `_bytes_` yalnızca benzer, işlev, değişken kullanan `wchar_t` gerekir.
 
--   `_In_reads_to_ptr_(p)`
+- `_In_reads_to_ptr_(p)`
 
      Kendisi için bir dizisine bir işaretçi ifadesi `p`  -  `_Curr_` (diğer bir deyişle, `p` eksi `_Curr_`) standart uygun dili tarafından tanımlanır.  Öğeleri öncesinde `p` öncesi durumda geçerli olması gerekir.
 
--   `_In_reads_to_ptr_z_(p)`
+- `_In_reads_to_ptr_z_(p)`
 
      Kendisi için null ile sonlandırılmış bir dizisine bir işaretçi ifadesi `p`  -  `_Curr_` (diğer bir deyişle, `p` eksi `_Curr_`) standart uygun dili tarafından tanımlanır.  Öğeleri öncesinde `p` öncesi durumda geçerli olması gerekir.
 
--   `_Out_writes_to_ptr_(p)`
+- `_Out_writes_to_ptr_(p)`
 
      Kendisi için bir dizisine bir işaretçi ifadesi `p`  -  `_Curr_` (diğer bir deyişle, `p` eksi `_Curr_`) standart uygun dili tarafından tanımlanır.  Öğeleri öncesinde `p` öncesi durumda geçerli olması gerekmez ve sonrası durumunda geçerli olması gerekir.
 
--   `_Out_writes_to_ptr_z_(p)`
+- `_Out_writes_to_ptr_z_(p)`
 
      Kendisi için null ile sonlandırılmış bir dizisine bir işaretçi ifadesi `p`  -  `_Curr_` (diğer bir deyişle, `p` eksi `_Curr_`) standart uygun dili tarafından tanımlanır.  Öğeleri öncesinde `p` öncesi durumda geçerli olması gerekmez ve sonrası durumunda geçerli olması gerekir.
 
@@ -388,59 +388,59 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 
  **Ek açıklamalar ve açıklamaları**
 
--   `_Outref_`
+- `_Outref_`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz.
 
--   `_Outref_result_maybenull_`
+- `_Outref_result_maybenull_`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak sonrası durumda null olabilir.
 
--   `_Outref_result_buffer_(s)`
+- `_Outref_result_buffer_(s)`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz. İşaret boyutu geçerli arabelleğinin `s` öğeleri.
 
--   `_Outref_result_bytebuffer_(s)`
+- `_Outref_result_bytebuffer_(s)`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz. İşaret boyutu geçerli arabelleğinin `s` bayt.
 
--   `_Outref_result_buffer_to_(s, c)`
+- `_Outref_result_buffer_to_(s, c)`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz. İşaret arabelleğe `s` biri öğeleri ilk `c` geçerlidir.
 
--   `_Outref_result_bytebuffer_to_(s, c)`
+- `_Outref_result_bytebuffer_to_(s, c)`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz. İşaret arabelleğe `s` bayt olan ilk `c` geçerlidir.
 
--   `_Outref_result_buffer_all_(s)`
+- `_Outref_result_buffer_all_(s)`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz. İşaret boyutu geçerli arabelleğinin `s` geçerli öğeleri.
 
--   `_Outref_result_bytebuffer_all_(s)`
+- `_Outref_result_bytebuffer_all_(s)`
 
      Sonuç sonrası durumda geçerli olmalıdır ve null olamaz. İşaret geçerli arabelleğe `s` geçerli öğe bayt.
 
--   `_Outref_result_buffer_maybenull_(s)`
+- `_Outref_result_buffer_maybenull_(s)`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak sonrası durumda null olabilir. İşaret boyutu geçerli arabelleğinin `s` öğeleri.
 
--   `_Outref_result_bytebuffer_maybenull_(s)`
+- `_Outref_result_bytebuffer_maybenull_(s)`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak sonrası durumda null olabilir. İşaret boyutu geçerli arabelleğinin `s` bayt.
 
--   `_Outref_result_buffer_to_maybenull_(s, c)`
+- `_Outref_result_buffer_to_maybenull_(s, c)`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak sonrası durumda null olabilir. İşaret arabelleğe `s` biri öğeleri ilk `c` geçerlidir.
 
--   `_Outref_result_bytebuffer_to_maybenull_(s,c)`
+- `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak posta durumda null olabilir. İşaret arabelleğe `s` bayt olan ilk `c` geçerlidir.
 
--   `_Outref_result_buffer_all_maybenull_(s)`
+- `_Outref_result_buffer_all_maybenull_(s)`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak posta durumda null olabilir. İşaret boyutu geçerli arabelleğinin `s` geçerli öğeleri.
 
--   `_Outref_result_bytebuffer_all_maybenull_(s)`
+- `_Outref_result_bytebuffer_all_maybenull_(s)`
 
      Sonuç sonrası durumunda geçerli olması gerekir, ancak posta durumda null olabilir. İşaret geçerli arabelleğe `s` geçerli öğe bayt.
 
@@ -454,7 +454,7 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
 ## <a name="other-common-annotations"></a>Diğer genel ek açıklamalar
  **Ek açıklamalar ve açıklamaları**
 
--   `_In_range_(low, hi)`
+- `_In_range_(low, hi)`
 
      `_Out_range_(low, hi)`
 
@@ -473,13 +473,13 @@ Bu makalede basit işlev parametreleri için ek açıklamaları tipik kullanıml
     > [!IMPORTANT]
     >  "İçinde" ve "dışarı" olmak semantiği adlarını içerse de `_In_` ve `_Out_` yapmak **değil** bu ek açıklamalar için geçerlidir.
 
--   `_Pre_equal_to_(expr)`
+- `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
      Ek açıklamalı tam değerdir `expr`.  Eşdeğer `_Satisfies_(_Curr_ == expr)` uygun önceden eyalet veya il sonrası koşulları birlikte açıklamalı nesneye uygulanır.
 
--   `_Struct_size_bytes_(size)`
+- `_Struct_size_bytes_(size)`
 
      Bir yapı ya da sınıf bildirimi geçerlidir.  Bu türün geçerli bir nesne tarafından verilen bayt sayısı ile bildirilen türünden daha büyük olabileceğini gösterir `size`.  Örneğin:
 

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803803"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071856"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Nasıl yapılır: Program Kodunda Dosyadan Model Açma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ DSL model herhangi bir uygulama açabilirsiniz.
   
 #### <a name="to-set-the-target-framework"></a>Hedef Framework'ü ayarlama  
   
-1.  Açık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL modeli okumak istediğiniz uygulama için proje.  
+1. Açık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL modeli okumak istediğiniz uygulama için proje.  
   
-2.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.  
+2. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.  
   
-3.  Proje Özellikleri penceresinde üzerinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** alanı **.NET Framework 4**.  
+3. Proje Özellikleri penceresinde üzerinde **uygulama** sekmesinde, belirleyin **hedef Framework'ü** alanı **.NET Framework 4**.  
   
 > [!NOTE]
 >  Seçtiyseniz, bunu yapmak ihtiyacınız olabilecek **.NET Framework 4** proje oluşturma iletişim kutusunda. Hedef Framework'ü olmamalıdır **.NET Framework 4 istemci profili**.  
@@ -40,22 +40,22 @@ DSL model herhangi bir uygulama açabilirsiniz.
 ## <a name="references"></a>Referanslar  
  Bu başvuruları eklemeniz gerekir, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uygulama projesi:  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   İşbu sözleşmenin görmüyorsanız **.NET** sekmesinde **Add References** iletişim kutusu, tıklayın **Gözat** gidin ve sekme `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
+    - İşbu sözleşmenin görmüyorsanız **.NET** sekmesinde **Add References** iletişim kutusu, tıklayın **Gözat** gidin ve sekme `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   DSL projenizin bin klasörü altında bulabilirsiniz, DSL derleme. Adı genellikle formu şöyledir: *Şirketiniz*. *Projeniz*`.Dsl.dll`.  
+- DSL projenizin bin klasörü altında bulabilirsiniz, DSL derleme. Adı genellikle formu şöyledir: *Şirketiniz*. *Projeniz*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>DSL önemli sınıfları  
  DSL'nizi okuyan kod yazabileceğiniz önce bazı DSL'nizi tarafından oluşturulan sınıfların adlarını bilmeniz gerekir. DSL çözümünüzü açın **Dsl** proje ve konum **GeneratedCode** klasör. Alternatif olarak, projenizin DSL derlemede çift **başvuruları**, DSL ad alanında açın **Nesne Tarayıcısı**.  
   
  Tanımlamanız gerekir sınıfları şunlardır:  
   
--   *YourDslRootClass* -kök sınıfı adıdır, `DslDefinition.dsl`.  
+- *YourDslRootClass* -kök sınıfı adıdır, `DslDefinition.dsl`.  
   
--   *YourDslName* `SerializationHelper` -bu sınıfı içinde tanımlanan `SerializationHelper.cs` DSL projenizdeki.  
+- *YourDslName* `SerializationHelper` -bu sınıfı içinde tanımlanan `SerializationHelper.cs` DSL projenizdeki.  
   
--   *YourDslName* `DomainModel` -bu sınıfı içinde tanımlanan `DomainModel.cs` DSL projenizdeki.  
+- *YourDslName* `DomainModel` -bu sınıfı içinde tanımlanan `DomainModel.cs` DSL projenizdeki.  
   
 ## <a name="reading-from-a-file"></a>Bir dosyadan okuma  
  Aşağıdaki örnek, önemli sınıfları aşağıdaki gibi olan bir DSL okumak için tasarlanmıştır:  

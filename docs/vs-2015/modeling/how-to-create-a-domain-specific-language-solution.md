@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099578"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Nasıl yapılır: Alana Özgü Dil Çözümü Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ Bir etki alanına özgü dil (DSL) özelleştirilmiş kullanılarak oluşturulan
   
 3. Bir dosya adı uzantısı girin **dosya uzantısı** sayfası. Bilgisayarınızın benzersiz olmalıdır ve DSL yüklemek istediğiniz tüm bilgisayarlara içinde. Şu iletiyi görürsünüz **bu uygulamaları ya da Visual Studio düzenleyicileri kullanın**.  
   
-   -   Tam olarak yüklenmemiş önceki Deneysel DSL içinde dosya adı uzantısı'nı kullandıysanız, bunları dışarı kullanarak temizleyebilir **Deneysel örneğini sıfırlama** bulunabilir aracı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menüsü.  
+   - Tam olarak yüklenmemiş önceki Deneysel DSL içinde dosya adı uzantısı'nı kullandıysanız, bunları dışarı kullanarak temizleyebilir **Deneysel örneğini sıfırlama** bulunabilir aracı [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK menüsü.  
   
-   -   Başka bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu uzantıyı kullanan uzantısı tam olarak yüklü bilgisayarınızda, kaldırmayı göz önünde bulundurun. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.  
+   - Başka bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu uzantıyı kullanan uzantısı tam olarak yüklü bilgisayarınızda, kaldırmayı göz önünde bulundurun. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.  
   
 4. İnceleyin ve gerekirse ayarlayın, sihirbazın kalan sayfalarında alanları. Seçimlerden memnun olduğunuzda tıklayın **son**. Ayarlar hakkında daha fazla bilgi için bkz. [DSL Tasarımcısı Sihirbazı sayfaları](#settings).  
   
@@ -78,7 +78,7 @@ Bir etki alanına özgü dil (DSL) özelleştirilmiş kullanılarak oluşturulan
    > [!NOTE]
    >  Güvenilmeyen kaynaklardan metin şablonlarını çalıştırmak için değil uyaran bir ileti görürseniz **Tamam**. Bu ileti yeniden görünür değil ayarlayabilirsiniz.  
   
-##  <a name="settings"></a> DSL Tasarımcısı Sihirbazı sayfaları  
+## <a name="settings"></a> DSL Tasarımcısı Sihirbazı sayfaları  
  Bazı alanlar, varsayılan değerleri değiştirmeden bırakabilirsiniz. Ancak, dosya uzantısı alanın ayarlanmış emin olun.  
   
 ### <a name="solution-settings-page"></a>Çözüm Ayarları sayfası  
@@ -98,15 +98,15 @@ Bir etki alanına özgü dil (DSL) özelleştirilmiş kullanılarak oluşturulan
   
  Araçlar veya paketler listesini görürseniz, aşağıdakilerden birini yapmalısınız:  
   
--   Farklı dosya uzantısını yazın.  
+- Farklı dosya uzantısını yazın.  
   
      \- veya -  
   
--   Sıfırlama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deneysel örneği. Bu, tüm daha önce hazırladığınız DSL'ler kaydını kaldırır. Üzerinde **Başlat** menüsünde tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**ve ardından **Sıfırla Microsoft Visual Studio 2010 deneysel örneğinde**. Yeniden kullanmak istediğiniz diğer bir DSL yeniden oluşturabilirsiniz.  
+- Sıfırlama [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deneysel örneği. Bu, tüm daha önce hazırladığınız DSL'ler kaydını kaldırır. Üzerinde **Başlat** menüsünde tıklayın **tüm programlar**, **Microsoft Visual Studio 2010 SDK**, **Araçları**ve ardından **Sıfırla Microsoft Visual Studio 2010 deneysel örneğinde**. Yeniden kullanmak istediğiniz diğer bir DSL yeniden oluşturabilirsiniz.  
   
      \- veya -  
   
--   Varsa bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu uzantıyı kullanan uzantısı tam olarak yüklü bilgisayarınızda, bunu kaldırın. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.  
+- Varsa bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bu uzantıyı kullanan uzantısı tam olarak yüklü bilgisayarınızda, bunu kaldırın. Üzerinde **Araçları** menüsünde tıklatın **Uzantı Yöneticisi**.  
   
 ### <a name="product-settings-page"></a>Ürün Ayarları sayfası  
  **Yeni alana özgü dilin ait olduğu ürünün adı nedir?**  

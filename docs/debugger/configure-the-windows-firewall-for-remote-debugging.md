@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100371"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Uzaktan hata ayıklama için Windows Güvenlik duvarını yapılandırma
 
@@ -102,13 +102,13 @@ Bir uzak bilgisayarda uzaktan hata ayıklama araçları dahildir.
 
 1. Seçin **uygulama Windows Güvenlik Duvarı üzerinden izin**.
 
-1.  Varsa **uzaktan hata ayıklayıcı** veya **Visual Studio uzaktan hata ayıklayıcı** altında görünmüyor **izin verilen uygulamalar ve Özellikler**seçin **ayarlarınıdeğiştir**ve ardından **başka bir uygulamanın ver**.
+1. Varsa **uzaktan hata ayıklayıcı** veya **Visual Studio uzaktan hata ayıklayıcı** altında görünmüyor **izin verilen uygulamalar ve Özellikler**seçin **ayarlarınıdeğiştir**ve ardından **başka bir uygulamanın ver**.
 
-1.  Uzaktan hata ayıklayıcı uygulama yine de listede yoksa **uygulama ekleme** iletişim kutusunda **Gözat**gidin  *\<Visual Studio yükleme dizini\> \\Common7\\IDE\\uzaktan hata ayıklayıcı\\\<x86*, *x64*, veya *Appx* \> , uygulamanız için uygun mimariyi bağlı olarak. Seçin *msvsmon.exe*ve ardından **Ekle**.
+1. Uzaktan hata ayıklayıcı uygulama yine de listede yoksa **uygulama ekleme** iletişim kutusunda **Gözat**gidin  *\<Visual Studio yükleme dizini\> \\Common7\\IDE\\uzaktan hata ayıklayıcı\\\<x86*, *x64*, veya *Appx* \> , uygulamanız için uygun mimariyi bağlı olarak. Seçin *msvsmon.exe*ve ardından **Ekle**.
 
-1.  İçinde **uygulamaları** listesinden **uzaktan hata ayıklayıcı** eklediğiniz. Seçin **ağ türleri**ve ardından uzak bağlantı için ağ türü dahil olmak üzere, bir veya daha fazla ağ türü seçin.
+1. İçinde **uygulamaları** listesinden **uzaktan hata ayıklayıcı** eklediğiniz. Seçin **ağ türleri**ve ardından uzak bağlantı için ağ türü dahil olmak üzere, bir veya daha fazla ağ türü seçin.
 
-1.  Seçin **Ekle**ve ardından **Tamam**.
+1. Seçin **Ekle**ve ardından **Tamam**.
 
 ## <a name="troubleshooting"></a>Uzaktan hata ayıklama bağlantı sorunlarını giderme
 

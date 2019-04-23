@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46786b0a11c4be6614732a224b755542b637d662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100241"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Nasıl yapılır: Tasarımcıyı kullanarak ClickOnce uygulamalarında URL etkinleştirmeyi devre dışı bırak
 Genellikle, bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama bir Web sunucusundan yükledikten hemen sonra otomatik olarak başlayacak. Güvenlik nedeniyle, bu davranışı devre dışı bırakmak ve uygulamayı başlatmak için kullanıcılar karar verebilir **Başlat** menü yerine. Aşağıdaki yordam, URL etkinleştirmeyi devre dışı bırakmak açıklar.
@@ -34,17 +34,17 @@ Genellikle, bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Uygulamanız için URL etkinleştirmeyi devre dışı bırakmak için
 
-1.  İçinde proje adınıza sağ **Çözüm Gezgini**, tıklatıp **özellikleri**.
+1. İçinde proje adınıza sağ **Çözüm Gezgini**, tıklatıp **özellikleri**.
 
-2.  Üzerinde **özellikleri** sayfasında **Yayımla** sekmesi.
+2. Üzerinde **özellikleri** sayfasında **Yayımla** sekmesi.
 
-3.  Tıklayın **seçenekleri**.
+3. Tıklayın **seçenekleri**.
 
-4.  Tıklayın **bildirimlerini**.
+4. Tıklayın **bildirimlerini**.
 
-5.  Etiketli onay kutusunu seçin **engelleyecek bir URL ile etkinleştirilmekte olan uygulamanın**.
+5. Etiketli onay kutusunu seçin **engelleyecek bir URL ile etkinleştirilmekte olan uygulamanın**.
 
-6.  Uygulamanızı dağıtın.
+6. Uygulamanızı dağıtın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [ClickOnce uygulamalarını yayımlama](../deployment/publishing-clickonce-applications.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102256"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Nasıl yapılır: Bir DLL projesinde hata ayıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ DLL projesinde hata ayıklamayı başlatmak için proje özelliklerinde çağır
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Bir C++ projesinde çağıran uygulama belirtmek için  
   
-1.  ' Nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**. Git **hata ayıklama** sekmesi.  
+1. ' Nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**. Git **hata ayıklama** sekmesi.  
   
-2.  Emin olun **yapılandırma** pencerenin üst kısmındaki alanı **hata ayıklama**.  
+2. Emin olun **yapılandırma** pencerenin üst kısmındaki alanı **hata ayıklama**.  
   
-3.  Git **yapılandırma özellikleri / hata ayıklama**.  
+3. Git **yapılandırma özellikleri / hata ayıklama**.  
   
-4.  İçinde **başlatmak için hata ayıklayıcı** listesinde **yerel Windows hata ayıklayıcı** veya **uzaktan Windows hata ayıklayıcı**.  
+4. İçinde **başlatmak için hata ayıklayıcı** listesinde **yerel Windows hata ayıklayıcı** veya **uzaktan Windows hata ayıklayıcı**.  
   
-5.  İçinde **komut** veya **uzaktan komut** kutusunda, uygulama tam yol adını ekleyin.  
+5. İçinde **komut** veya **uzaktan komut** kutusunda, uygulama tam yol adını ekleyin.  
   
-6.  Tüm gerekli program bağımsız değişkenleri eklemek **komut satırı bağımsız değişkenlerini** kutusu.  
+6. Tüm gerekli program bağımsız değişkenleri eklemek **komut satırı bağımsız değişkenlerini** kutusu.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Bir C# veya Visual Basic projesinde çağıran uygulama belirtmek için  
   
-1.  ' Nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**. Git **hata ayıklama** sekmesi.  
+1. ' Nde proje düğümüne sağ **Çözüm Gezgini** seçip **özellikleri**. Git **hata ayıklama** sekmesi.  
   
      Seçin **harici program Başlat**, programın çalışması için tam yol adını ekleyin.  
   
      Dış programın komut satırı bağımsız değişkenleri eklemeniz gerekiyorsa, bunları eklemek **komut satırı bağımsız değişkenleri** alan.  
   
-2.  Ayrıca, bir uygulamanın bir URL olarak çağırabilirsiniz. (Yerel bir ASP.NET uygulaması tarafından kullanılan yönetilen bir DLL'yi hata ayıklaması yapıyorsanız, bunu yapmak isteyebilirsiniz.)  
+2. Ayrıca, bir uygulamanın bir URL olarak çağırabilirsiniz. (Yerel bir ASP.NET uygulaması tarafından kullanılan yönetilen bir DLL'yi hata ayıklaması yapıyorsanız, bunu yapmak isteyebilirsiniz.)  
   
      Altında **başlatma eylemi**seçin **Başlat tarayıcı URL:** radyo düğmesini ve URL'sini girin.  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>DLL projesinde hata ayıklamayı başlatmak için  
   
-1.  Kesme noktalarını gerektiği gibi ayarlayın.  
+1. Kesme noktalarını gerektiği gibi ayarlayın.  
   
-2.  Hata Ayıklamayı Başlat (F5 tuşuna basın, yeşil oka tıklayın veya tıklayın **hata ayıklama / hata ayıklamayı Başlat**).  
+2. Hata Ayıklamayı Başlat (F5 tuşuna basın, yeşil oka tıklayın veya tıklayın **hata ayıklama / hata ayıklamayı Başlat**).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DLL projelerinde hata ayıklama](../debugger/debugging-dll-projects.md)   

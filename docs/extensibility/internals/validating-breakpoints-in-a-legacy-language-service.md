@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3142d854a3a6371983dc6c5851ad007c387f1480
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 025f5366938eb00114b035f0b7992d61433cc181
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102568"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Eski Dil Hizmetinde Kesme Noktalarını Doğrulama
 Bir kesme noktası programın yürütülmesi belirli bir noktada bir hata ayıklayıcıda çalıştırılırken durması gerektiğini belirtir. Düzenleyicisi bir kesme noktası için geçerli bir konum nelerden, hiçbir bilgiye sahip olduğundan kullanıcı kaynak dosya her satırda bir kesme noktası yerleştirebilirsiniz. Hata ayıklayıcı başlatıldığında, tüm işaretli kesme noktaları (kesme noktaları olarak adlandırılır) çalışan bir program içindeki uygun konumuna bağlıdır. Kesme noktaları doğrulandığından emin olmak için aynı anda bunlar geçerli kod konumlarını işaretler. Örneğin, kaynak kodunda bu konumda hiçbir kod olduğundan açıklama üzerinde bir kesme noktası geçerli değil. Hata ayıklayıcı geçersiz kesme noktalarını devre dışı bırakır.
@@ -25,13 +25,13 @@ Bir kesme noktası programın yürütülmesi belirli bir noktada bir hata ayıkl
 
 ## <a name="implementing-support-for-validating-breakpoints"></a>Kesme noktaları doğrulamak için desteği sağlama
 
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Yöntemi, bir kesme noktası konumu verilir. Uygulamanız konumun geçerli olduğunu ve bu kodu tanımlayan bir metin aralığını döndürerek kesme noktası satır konumu ile ilişkili belirtmek olup olmadığına karar vermeniz gerekir.
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Yöntemi, bir kesme noktası konumu verilir. Uygulamanız konumun geçerli olduğunu ve bu kodu tanımlayan bir metin aralığını döndürerek kesme noktası satır konumu ile ilişkili belirtmek olup olmadığına karar vermeniz gerekir.
 
--   Dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK> konumu geçerliyse, veya <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> geçerli değilse.
+- Dönüş <xref:Microsoft.VisualStudio.VSConstants.S_OK> konumu geçerliyse, veya <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> geçerli değilse.
 
--   Kesme noktası geçerli ise metin aralığı birlikte kesme noktası vurgulanır.
+- Kesme noktası geçerli ise metin aralığı birlikte kesme noktası vurgulanır.
 
--   Kesme noktası geçersizse, bir hata iletisi durum çubuğunda görünür.
+- Kesme noktası geçersizse, bir hata iletisi durum çubuğunda görünür.
 
 ### <a name="example"></a>Örnek
  Bu örnekte uygulanışı gösterilmektedir <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> belirtilen konumda kod kapsamı (varsa) almak için ayrıştırıcı çağıran yöntemi.

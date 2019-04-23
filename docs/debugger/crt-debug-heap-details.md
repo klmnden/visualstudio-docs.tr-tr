@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103283"
 ---
 # <a name="crt-debug-heap-details"></a>CRT Hata Ayıklama Öbeği Ayrıntıları
 Bu konu, CRT hata ayıklama yığınındaki ayrıntılı bilgi sağlar.
@@ -92,7 +92,7 @@ Bu konu, CRT hata ayıklama yığınındaki ayrıntılı bilgi sağlar.
 
 [Hata ayıklama yığınını yapılandırma](#BKMK_Configure_the_debug_heap)
 
-[Yeni, silme ve _clıent_blocks C++ hata ayıklama yığını](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
+[Yeni, silme ve _clıent_blocks C++ hata ayıklama yığın](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)
 
 [Öbek durumu raporlama işlevleri](#BKMK_Heap_State_Reporting_Functions)
 
@@ -223,7 +223,7 @@ _CrtSetDbgFlag( tmpFlag );
 
 ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)
 
-## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Yeni, silme ve _clıent_blocks C++ hata ayıklama yığını
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> Yeni, silme ve _clıent_blocks C++ hata ayıklama yığın
 C++ hata ayıklama sürümü C çalışma zamanı kitaplığı hata ayıklama sürümlerini içeren `new` ve `delete` işleçleri. Kullanırsanız `_CLIENT_BLOCK` ayırma türü, hata ayıklama sürümünü çağırmalıdır `new` doğrudan işleci veya değiştiren makroları `new` aşağıdaki örnekte gösterildiği gibi hata ayıklama modunda, işleç:
 
 ```cpp
@@ -261,7 +261,7 @@ Hata ayıklama sürümünü `delete` tüm blok işleç çalışır türleri ve b
 
 ![Başa dön](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [içeriği](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Öbek durumu raporlama işlevleri
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Öbek durumu raporlama işlevleri
  **_CrtMemState**
 
  Belirli bir zamanda yığının durumunun Özet anlık görüntüsünü yakalamak için CRTDBG içinde tanımlanan _CrtMemState yapısını kullanın. Y:

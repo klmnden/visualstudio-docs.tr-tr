@@ -17,37 +17,37 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073975"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>İş Akışı Tasarımcısı ile uygulama geliştirme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Bir görsel tasarımcı ve grafik oluşturma ve hata ayıklama için hata ayıklayıcı [!INCLUDE[wf](../includes/wf-md.md)] uygulamalarda [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] barındırılan [!INCLUDE[vs2010](../includes/vs2010-md.md)] geliştirme ortamı. Bir bileşik iş akışı uygulaması, etkinlik kitaplığı oluşturma olanak tanır veya [!INCLUDE[indigo1](../includes/indigo1-md.md)] hizmet şablonları ve etkinlik tasarımcıları kullanarak. [!INCLUDE[crabout](../includes/crabout-md.md)] İş akışları için bkz: [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Bu yeni sürümünü birkaç yeni tasarım özelliklerinin şunlardır [!INCLUDE[wfd2](../includes/wfd2-md.md)] eski sürümlerini dışında [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] Kullanılarak oluşturulan [!INCLUDE[avalon1](../includes/avalon1-md.md)]. Bu etkinlik Tasarımcısı deneyimini geliştirir ve büyük ve karmaşık iş akışları için performansı geliştirir.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] Kullanılarak oluşturulan [!INCLUDE[avalon1](../includes/avalon1-md.md)]. Bu etkinlik Tasarımcısı deneyimini geliştirir ve büyük ve karmaşık iş akışları için performansı geliştirir.  
   
--   Özel etkinlikler ile tasarlanmaktadır [!INCLUDE[avalon2](../includes/avalon2-md.md)], etkinlik tasarımcıları oluşturma Basitleştirilmiş için XAML ve programlama modeli kullanarak.  
+- Özel etkinlikler ile tasarlanmaktadır [!INCLUDE[avalon2](../includes/avalon2-md.md)], etkinlik tasarımcıları oluşturma Basitleştirilmiş için XAML ve programlama modeli kullanarak.  
   
--   Tanıdık akış stilini modelleme kullanarak program akışını görselleştirmenizi bir akış etkinliği uygulandı.  
+- Tanıdık akış stilini modelleme kullanarak program akışını görselleştirmenizi bir akış etkinliği uygulandı.  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] Bunları etkinliklerini bağlama bildirme ve iş akışlarınızı, değişkenler kapsam olanak tanıyan bir yeni değişken tasarımcısını sahiptir.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] Bunları etkinliklerini bağlama bildirme ve iş akışlarınızı, değişkenler kapsam olanak tanıyan bir yeni değişken tasarımcısını sahiptir.  
   
--   İçinde [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] içinde Visual Basic deyimleri yazılırken tüm IntelliSense özelliklerini sağlar, [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] iş akışları.  
+- İçinde [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] içinde Visual Basic deyimleri yazılırken tüm IntelliSense özelliklerini sağlar, [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] iş akışları.  
   
--   Hata ayıklama deneyimi artık XAML iş akışı tanımınızı ve çalışma zamanında yönetilen kodda benzer bir deneyim sağlar, XAML kod içine Adımlama, kesme noktaları ayarlamanıza olanak sağlayan XAML içinde genişletir.  
+- Hata ayıklama deneyimi artık XAML iş akışı tanımınızı ve çalışma zamanında yönetilen kodda benzer bir deneyim sağlar, XAML kod içine Adımlama, kesme noktaları ayarlamanıza olanak sağlayan XAML içinde genişletir.  
   
--   Yeniden barındırma [!INCLUDE[wfd2](../includes/wfd2-md.md)] dışında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] artık yalnızca birkaç satır kod gerektiren önceki sürümlere kıyasla önemli ölçüde basitleştirilmiştir.  
+- Yeniden barındırma [!INCLUDE[wfd2](../includes/wfd2-md.md)] dışında [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] artık yalnızca birkaç satır kod gerektiren önceki sürümlere kıyasla önemli ölçüde basitleştirilmiştir.  
   
--   Yeni <xref:System.Activities.Statements.Flowchart> etkinlik ve [akış](../workflow-designer/flowchart-activity-designer.md) tanıdık akış stilini modelleme kullanarak, program akışını görselleştirin olanak sağlar.  
+- Yeni <xref:System.Activities.Statements.Flowchart> etkinlik ve [akış](../workflow-designer/flowchart-activity-designer.md) tanıdık akış stilini modelleme kullanarak, program akışını görselleştirin olanak sağlar.  
   
--   Mesajlaşma etkinlikleri, yazmak tam bildirim temelli sağlayarak geliştirilmiştir (kod) [!INCLUDE[indigo1](../includes/indigo1-md.md)] Hizmetleri.  
+- Mesajlaşma etkinlikleri, yazmak tam bildirim temelli sağlayarak geliştirilmiştir (kod) [!INCLUDE[indigo1](../includes/indigo1-md.md)] Hizmetleri.  
   
--   **Hizmet Başvurusu Ekle...** işlev otomatik olarak Web Hizmetleri erişen etkinlikler oluşturmanıza olanak tanır.  
+- **Hizmet Başvurusu Ekle...** işlev otomatik olarak Web Hizmetleri erişen etkinlikler oluşturmanıza olanak tanır.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [İş Akışı Tasarımcısını Kullanma](../workflow-designer/using-the-workflow-designer.md)  

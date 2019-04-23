@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107092"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Denetim akışını UML sıralı diyagramlarında parçalarla açıklama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
   
  Aşağıdaki şekilde gösterilen öğeler aşağıdaki gibidir.  
   
-1.  Birleştirilmiş parça. Birleştirilmiş parçaları birkaç türü vardır. Bu örnekte, bir Alt iletileri alternatif dizileri oluşabilir göstermek için kullanabileceğiniz birleştirilmiş parça.  
+1. Birleştirilmiş parça. Birleştirilmiş parçaları birkaç türü vardır. Bu örnekte, bir Alt iletileri alternatif dizileri oluşabilir göstermek için kullanabileceğiniz birleştirilmiş parça.  
   
-2.  Etkileşim işlenenleri. Her bir birleştirilmiş parça iletiler, etkileşim kullanımları ve birleştirilmiş parçaları daha küçük içerebilir en az bir etkileşim işleneni içerir. Bu örnekte, Alt birleştirilmiş parça iletilerin iki alternatif dizileri gösteren iki etkileşimi işlem vardır.  
+2. Etkileşim işlenenleri. Her bir birleştirilmiş parça iletiler, etkileşim kullanımları ve birleştirilmiş parçaları daha küçük içerebilir en az bir etkileşim işleneni içerir. Bu örnekte, Alt birleştirilmiş parça iletilerin iki alternatif dizileri gösteren iki etkileşimi işlem vardır.  
   
-3.  İçinde tıklayarak her etkileşim işlenen ayrı ayrı seçebilirsiniz. Alt sınır görülebilir böylece bu örnekte, üst etkileşim işlenen seçilir. Genellikle, yalnızca arasındaki çizgi etkileşim işlenenleri görülebilir.  
+3. İçinde tıklayarak her etkileşim işlenen ayrı ayrı seçebilirsiniz. Alt sınır görülebilir böylece bu örnekte, üst etkileşim işlenen seçilir. Genellikle, yalnızca arasındaki çizgi etkileşim işlenenleri görülebilir.  
   
     > [!NOTE]
     >  Üst etkileşim işlenen seçmek için çok yakın birleştirilmiş parça üst kısmına tıklamanız gerekir değil.  
   
-4.  Cf. Bir koruma her etkileşim işlenen verebilirsiniz. Bu, altında etkileşim işleneni içinde iletileri gerçekleştirilecek koşul açıklar.  
+4. Cf. Bir koruma her etkileşim işlenen verebilirsiniz. Bu, altında etkileşim işleneni içinde iletileri gerçekleştirilecek koşul açıklar.  
   
 ## <a name="creating-combined-fragments"></a>Birleşik parçaları oluşturma  
  Oluşturabileceğiniz parça türlerinin bir listesi için bkz. [oluşturabileceğiniz](#KindsOfFragment).  
@@ -97,12 +97,12 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Ayarlamak veya birleştirilmiş parça özelliklerini görüntülemek için  
   
--   Birleştirilmiş parça başlığında sağ tıklayın ve ardından **özellikleri**.  
+- Birleştirilmiş parça başlığında sağ tıklayın ve ardından **özellikleri**.  
   
     > [!NOTE]
     >  Birleştirilmiş parça farklı türlerde farklı özelliklere sahiptir.  
   
-##  <a name="KindsOfFragment"></a> Birleştirilmiş parça türü  
+## <a name="KindsOfFragment"></a> Birleştirilmiş parça türü  
   
 ### <a name="fragments-describing-control-flow"></a>Denetim akışı açıklayan parçaları  
  Basit sıralı diyagram, tek bir genel sıra gösterir. Birleştirilmiş parçaları aşağıdaki türde farklı anlarda da oluşabilir farklılıkları açıklamak için kullanabilirsiniz.  
@@ -131,6 +131,6 @@ Bir UML sıralı diyagramda *Birleşik Parçalar* döngüleri, dalları ve başk
 |**Neg**|Bu parçasında gösterilen dizisi olmaması gerekir. Genellikle, bir veya Ignore parça içinde kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [UML sıralı diyagramlar: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
- [UML sıralı diyagramlar: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML Sıralı Diyagramları: Yönergeleri](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML Sıralı Diyagramları: Başvuru](../modeling/uml-sequence-diagrams-reference.md)   
  [UML modellerini ve diyagramları düzenleme](../modeling/edit-uml-models-and-diagrams.md)

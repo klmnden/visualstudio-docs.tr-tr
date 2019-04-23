@@ -9,19 +9,19 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3aaaf704e1ad8880ef7768ef9d7a23d325882a15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094444"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL'nin MSI ve VSIX Dağıtımı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayarlara yükleyebilirsiniz. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hedef bilgisayarda zaten yüklü gerekir.  
   
-##  <a name="which"></a> VSIX ile MSI dağıtım arasında seçim yapma  
+## <a name="which"></a> VSIX ile MSI dağıtım arasında seçim yapma  
  Bir etki alanına özgü dil dağıtmak için iki yöntem vardır:  
   
 |Yöntem|Yararları|  
@@ -29,30 +29,30 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
 |VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzantısı)|Dağıtımı çok kolaydır: Kopyala ve yürütme **.vsix** DslPackage proje dosyası.<br /><br /> Daha fazla bilgi için [yükleme ve bir DSL VSX kullanarak kaldırma](#Installing).|  
 |MSI (yükleyici dosyası)|-Açmasını sağlayan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL dosyası çift tıklayın.<br />-DSL dosya türü hedef bilgisayardaki bir simge ilişkilendirir.<br />-Bir XSD (XML Şeması) DSL dosya türü ile ilişkilendirir. İçine bir dosya yüklendiğinde bu uyarıları engeller [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Bir MSI oluşturmak için çözümünüze bir kurulum projesi eklemeniz gerekir.<br /><br /> Daha fazla bilgi için [DSL bir MSI dosyası kullanarak dağıtımı](#msi).|  
   
-##  <a name="Installing"></a> Yükleme ve bir DSL VSX kullanarak kaldırma  
+## <a name="Installing"></a> Yükleme ve bir DSL VSX kullanarak kaldırma  
  Bu yöntem tarafından DSL'nizi yüklendiğinde, kullanıcı bir DSL dosyası içinden açabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ancak Windows Gezgini'nden dosya açılamıyor.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Bir DSL VSX kullanarak yüklemek için  
   
-1.  Bilgisayarınızda, bulma **.vsix** DSL paket projeniz tarafından oluşturulan dosya.  
+1. Bilgisayarınızda, bulma **.vsix** DSL paket projeniz tarafından oluşturulan dosya.  
   
-    1.  İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü Windows Gezgini'nde Aç**.  
+    1. İçinde **Çözüm Gezgini**, sağ **DslPackage** proje ve ardından **klasörü Windows Gezgini'nde Aç**.  
   
-    2.  Dosyayı bulmak **bin\\\*\\**_projeniz_**. DslPackage.vsix**  
+    2. Dosyayı bulmak **bin\\\*\\**_projeniz_**. DslPackage.vsix**  
   
-2.  Kopyalama **.vsix** DSL yüklemek istediğiniz hedef bilgisayara dosya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
+2. Kopyalama **.vsix** DSL yüklemek istediğiniz hedef bilgisayara dosya. Bu sizin kendi bilgisayarınız veya başka bir tane olabilir.  
   
-    -   Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , çalışma zamanında DSL'ler destekler. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı için Visual Studio sürümleriyle desteklenen](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).  
+    - Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , çalışma zamanında DSL'ler destekler. Daha fazla bilgi için [Görselleştirme ve modelleme SDK'sı için Visual Studio sürümleriyle desteklenen](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).  
   
-    -   Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] belirtilen **DslPackage\source.extensions.manifest**.  
+    - Hedef bilgisayarda sürümlerinden biri olmalıdır [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] belirtilen **DslPackage\source.extensions.manifest**.  
   
-3.  Hedef bilgisayarda çift **.vsix** dosya.  
+3. Hedef bilgisayarda çift **.vsix** dosya.  
   
      **Visual Studio Uzantı Yükleyicisi** açılır ve uzantıyı yükler.  
   
-4.  Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Başlatın veya yeniden [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-5.  DSL test etmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL'nizi için tanımlanan uzantısına sahip yeni bir dosya oluşturmak için.  
+5. DSL test etmek için [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] DSL'nizi için tanımlanan uzantısına sahip yeni bir dosya oluşturmak için.  
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>VSX kullanarak yüklenen bir DSL kaldırmak için  
   
@@ -66,7 +66,7 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
   
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a> Bir DSL içinde bir MSI dağıtma  
+## <a name="msi"></a> Bir DSL içinde bir MSI dağıtma  
  Bir MSI (Windows Yükleyici) dosyası için DSL'nizi tanımlayarak, DSL dosyaları Windows Gezgini'nden açmasına izin verebilirsiniz. Ayrıca, dosya adı uzantısına sahip bir simge ve kısa açıklama ilişkilendirebilirsiniz. Ayrıca, MSI DSL dosyaları doğrulamak için kullanılan bir XSD yükleyebilirsiniz. İsterseniz, aynı anda yüklü MSI içine diğer bileşenleri ekleyebilirsiniz.  
   
  MSI dosyaları ve diğer dağıtım seçenekleri hakkında daha fazla bilgi için bkz. [uygulamaları dağıtma, hizmetleri ve bileşenleri](../deployment/deploying-applications-services-and-components.md).  
@@ -77,9 +77,9 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
   
 1. Ayarlama `InstalledByMsi` uzantı bildiriminde. Bu VSX yüklü ve dışında bir MSI tarafından engeller. Bu, diğer Bileşenleri MSI'dahil edilecekse önemlidir.  
   
-   1.  Open DslPackage\source.extension.tt  
+   1. Open DslPackage\source.extension.tt  
   
-   2.  Önce aşağıdaki satır ekler `<SupportedProducts>`:  
+   2. Önce aşağıdaki satır ekler `<SupportedProducts>`:  
   
        ```  
        <InstalledByMsi>true</InstalledByMsi>  
@@ -89,15 +89,15 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
   
 3. Aşağıdaki öznitelikler, DSL'nin doğru olduğundan emin olun:  
   
-   -   DSL Gezgini kök düğümüne tıklayın ve Özellikler penceresinde gözden geçirin:  
+   - DSL Gezgini kök düğümüne tıklayın ve Özellikler penceresinde gözden geçirin:  
   
-       -   Açıklama  
+       - Açıklama  
   
-       -   Sürüm  
+       - Sürüm  
   
-   -   Tıklayın **Düzenleyicisi** düğüm ve Özellikler penceresinde tıklayın **simgesi**. Bir simge dosyasına bir değere ayarlayın **DslPackage\Resources**, gibi **File.ico**  
+   - Tıklayın **Düzenleyicisi** düğüm ve Özellikler penceresinde tıklayın **simgesi**. Bir simge dosyasına bir değere ayarlayın **DslPackage\Resources**, gibi **File.ico**  
   
-   -   Üzerinde **derleme** menüsünde, açık **Configuration Manager**, gibi oluşturmak istediğiniz yapılandırma seçip **yayın** veya **hata ayıklama** .  
+   - Üzerinde **derleme** menüsünde, açık **Configuration Manager**, gibi oluşturmak istediğiniz yapılandırma seçip **yayın** veya **hata ayıklama** .  
   
 4. Git [Görselleştirme ve modelleme SDK'sı giriş sayfası](http://go.microsoft.com/fwlink/?LinkID=186128), gelen ve giden **indirir** sekmesinde, yükleme **CreateMsiSetupProject.tt**.  
   
@@ -125,16 +125,16 @@ Bir etki alanına özgü dil sizin kendi bilgisayarınız veya diğer bilgisayar
   
 11. Hedef bilgisayarda, DSL'nin dosya uzantısına sahip yeni bir dosya oluşturun. Aşağıdakileri doğrulayın:  
   
-    -   Windows Gezgini liste görünümünde dosya tanımladığınız açıklaması ve simge ile görünür.  
+    - Windows Gezgini liste görünümünde dosya tanımladığınız açıklaması ve simge ile görünür.  
   
-    -   Dosyayı çift tıkladığınızda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlar ve DSL dosyası DSL Düzenleyicisi'nde açılır.  
+    - Dosyayı çift tıkladığınızda [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] başlar ve DSL dosyası DSL Düzenleyicisi'nde açılır.  
   
     Tercih ederseniz, metin şablonu kullanmak yerine Kurulum projesi el ile oluşturabilirsiniz. Bu yordam içeren bir kılavuz için bkz: Bölüm 5, [Görselleştirme ve modelleme SDK'sı Laboratuvar](http://go.microsoft.com/fwlink/?LinkId=208878).  
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Konumundan bir MSI yüklü olduğu bir DSL kaldırmak için  
   
-1.  Windows içinde açın **programlar ve Özellikler** Denetim Masası.  
+1. Windows içinde açın **programlar ve Özellikler** Denetim Masası.  
   
-2.  DSL kaldırın.  
+2. DSL kaldırın.  
   
-3.  Visual Studio'yu yeniden başlatın.
+3. Visual Studio'yu yeniden başlatın.

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071284"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage Yapısı (Kaynak Denetimi VSPackage’ı)
 
@@ -28,23 +28,23 @@ VSPackage kendi menü öğeleri bildirir ve varsayılan öğe durumu .vsct dosya
 
 Kaynak denetimi VSPackage'ı Visual Studio'ya derin şekilde tümleşiktir. VSPackage semantiği şunlardır:
 
--   VSPackage'ı olan da uygulanacak arabirim ( `IVsPackage` arabirimi)
+- VSPackage'ı olan da uygulanacak arabirim ( `IVsPackage` arabirimi)
 
--   Komut kullanıcı Arabirimi uygulama (.vsct dosyası ve uygulaması <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi)
+- Komut kullanıcı Arabirimi uygulama (.vsct dosyası ve uygulaması <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi)
 
--   Visual Studio ile VSPackage kaydı.
+- Visual Studio ile VSPackage kaydı.
 
 Kaynak denetimi VSPackage'ı bu diğer Visual Studio varlıkların ile iletişim kurması gerekir:
 
--   Projeler
+- Projeler
 
--   Düzenleyiciler
+- Düzenleyiciler
 
--   Çözümler
+- Çözümler
 
--   Windows
+- Windows
 
--   Çalıştırılan Belge tablosu
+- Çalıştırılan Belge tablosu
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Tüketilebilir visual Studio ortamını Hizmetleri
 

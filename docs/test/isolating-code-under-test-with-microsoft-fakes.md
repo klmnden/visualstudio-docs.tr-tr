@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110877"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes ile test edilen kodu yalıtma
 
@@ -23,16 +23,16 @@ Microsoft Fakes ile uygulamanın diğer kısımlarını değiştirerek test etti
 
 Fakes iki türde olabilir:
 
--   A [saplama](#get-started-with-stubs) sınıfı aynı arabirimi uygulayan küçük bir yedekle değiştirir.  Saptamalar kullanmak için uygulamanızı her bir bileşenin diğer bileşenlere değil yalnızca arabirimlere bağlı olacak şekilde tasarlamanız gerekir. ("Bileşen" ifadesiyle, birlikte tasarlanan ve güncelleştirilen ve tipik olarak bir derlemede yer alan sınıf veya sınıflardan oluşan grup kastedilmektedir.)
+- A [saplama](#get-started-with-stubs) sınıfı aynı arabirimi uygulayan küçük bir yedekle değiştirir.  Saptamalar kullanmak için uygulamanızı her bir bileşenin diğer bileşenlere değil yalnızca arabirimlere bağlı olacak şekilde tasarlamanız gerekir. ("Bileşen" ifadesiyle, birlikte tasarlanan ve güncelleştirilen ve tipik olarak bir derlemede yer alan sınıf veya sınıflardan oluşan grup kastedilmektedir.)
 
--   A [dolgu](#get-started-with-shims) çalışma zamanında uygulamanızın derlenmiş kodunu değiştirir, böylece bir belirtilen bir yöntemi çağırmak yerine, testin sağladığı dolgu kodunu çalıştırır. Dolgular çağrıları, .NET derlemeleri gibi değiştiremediğiniz Derlemelerle değiştirmek için kullanılabilir.
+- A [dolgu](#get-started-with-shims) çalışma zamanında uygulamanızın derlenmiş kodunu değiştirir, böylece bir belirtilen bir yöntemi çağırmak yerine, testin sağladığı dolgu kodunu çalıştırır. Dolgular çağrıları, .NET derlemeleri gibi değiştiremediğiniz Derlemelerle değiştirmek için kullanılabilir.
 
 ![Fakes diğer bileşenleri değiştirin](../test/media/fakes-2.png)
 
 **Gereksinimler**
 
--   Visual Studio Enterprise
--   Bir .NET Framework projesi
+- Visual Studio Enterprise
+- Bir .NET Framework projesi
 
 > [!NOTE]
 > - .NET standard projeleri desteklenmez.
@@ -57,10 +57,10 @@ Diğer değerlendirmeler şunlardır:
 
 Genel olarak saptama türlerini kod temelindeki bağımlılıkları ayırmak için kullanmanızı öneririz. Bunu bileşenleri arayüzlerin arkasına gizleyerek yapabilirsiniz. Dolgu türleri, test edilebilir API sağlamayan üçüncü taraf bileşenlerden ayırmak için kullanılabilir.
 
-##  <a name="get-started-with-stubs"></a>Saptamalar ile çalışmaya başlama
+## <a name="get-started-with-stubs"></a>Saptamalar ile çalışmaya başlama
 Daha ayrıntılı bir açıklama için bkz. [birim testi için birbirinden uygulamanızın parçalarını yalıtmak üzere saplamalar kullanma](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-1.  **Arabirimleri Ekle**
+1. **Arabirimleri Ekle**
 
      Saptamalar kullanmak için test etmek istediğiniz kodu, uygulamanızın içindeki diğer bileşende yer alan sınıflara açıkça başvurmayacak şekilde yazmanız gerekir. "Bileşen" ifadesiyle, birlikte geliştirilen ve güncellenen ve tipik olarak tek Visual Studio projesinde yer alan sınıf veya sınıflar kastedilmektedir. Değişkenler ve parametreler, arabirimler kullanılarak bildirilmelidir ve diğer bileşenlerin örnekleri iletilmeli veya fabrika kullanılarak oluşturulmalıdır. Örneğin, StockFeed uygulamadaki farklı bir bileşende bulunan bir sınıfsa bu hatalı olarak değerlendirilir:
 
@@ -81,15 +81,15 @@ Daha ayrıntılı bir açıklama için bkz. [birim testi için birbirinden uygul
 
     ```
 
-2.  **Fakes derlemesi Ekle**
+2. **Fakes derlemesi Ekle**
 
-    1.  İçinde **Çözüm Gezgini**, test projesinin başvuru listesini genişletin. Visual Basic'te çalışıyorsanız, seçmelisiniz **tüm dosyaları göster** başvuru listesini görmek için.
+    1. İçinde **Çözüm Gezgini**, test projesinin başvuru listesini genişletin. Visual Basic'te çalışıyorsanız, seçmelisiniz **tüm dosyaları göster** başvuru listesini görmek için.
 
-    2.  Arabirimin (örneğin IStockFeed) tanımlandığı derleme başvurusunu seçin. Bu başvurunun kısayol menüsünde **Fakes derlemesi Ekle**.
+    2. Arabirimin (örneğin IStockFeed) tanımlandığı derleme başvurusunu seçin. Bu başvurunun kısayol menüsünde **Fakes derlemesi Ekle**.
 
-    3.  Çözümü yeniden derleyin.
+    3. Çözümü yeniden derleyin.
 
-3.  Testlerinizde saptama örnekleri oluşturun ve yöntemleri için kod sağlayın:
+3. Testlerinizde saptama örnekleri oluşturun ve yöntemleri için kod sağlayın:
 
     ```csharp
     [TestClass]
@@ -151,7 +151,7 @@ Daha ayrıntılı bir açıklama için bkz. [birim testi için birbirinden uygul
 
     Saptamalar ayrıca olaylar ve genel yöntemlerle ilgili olarak özellik okuyucu ve ayarlayıcılar için oluşturulur. Daha fazla bilgi için [birim testi için birbirinden uygulamanızın parçalarını yalıtmak üzere saplamalar kullanma](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-##  <a name="get-started-with-shims"></a>Dolgu ile çalışmaya başlama
+## <a name="get-started-with-shims"></a>Dolgu ile çalışmaya başlama
 (Daha ayrıntılı bir açıklama için bkz. [uygulamanızı birim testi için diğer derlemelerden yalıtmak üzere dolgular kullanma](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
 
 Bileşeniniz için çağrılar içerdiğini varsayın `DateTime.Now`:
@@ -168,13 +168,13 @@ Test sırasında dolgu oluşturmak istediğiniz `Now` özelliği, çünkü gerç
 
 Dolgu verileri kullanmak için uygulama kodunu değiştirmeniz veya belirli bir biçimde yazmanız gerekmez.
 
-1.  **Fakes derlemesi Ekle**
+1. **Fakes derlemesi Ekle**
 
      İçinde **Çözüm Gezgini**, birim testi projenizin başvurularını açın ve sahtesini oluşturmak istediğiniz yöntemi içeren derlemenin başvurusunu seçin. Bu örnekte, `DateTime` sınıfı *System.dll*.  Bir Visual Basic projesindeki başvuruları görmek için **tüm dosyaları göster**.
 
      Seçin **Fakes derlemesi Ekle**.
 
-2.  **ShimsContext içine dolgu ekleyin**
+2. **ShimsContext içine dolgu ekleyin**
 
     ```csharp
     [TestClass]

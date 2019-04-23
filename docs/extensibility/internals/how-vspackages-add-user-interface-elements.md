@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092324"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage kullanıcı arabirimi öğelerini nasıl eklenir
 VSPackage örnek, menüleri ve araç çubukları için kullanıcı arabirimi (UI) öğeleri ekleyebilir ve araç penceresi, Visual Studio yoluyla *.vsct* dosya.
@@ -27,11 +27,11 @@ VSPackage örnek, menüleri ve araç çubukları için kullanıcı arabirimi (UI
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio komut tablosu mimarisi
  Belirtildiği gibi komut tablosu mimarisi hükümlerde mimari ilkeleri destekler. Soyutlamalar, veri yapılarını ve araçlar komut tablosu mimarisinin arkasında sacayakları aşağıdaki gibidir:
 
--   Üç temel türlerde öğeler vardır: menü komutları ve gruplar. Menüleri kullanıcı Arabiriminde, menüleri, alt menüler, araç çubukları ve araç pencereleri sunulabilir. Kullanıcı IDE içinde yürütülebilir, ve menü öğeleri, düğmeler, liste kutuları veya diğer denetimleri sunulabilir yordamları komutlardır. Grupları, menüler ve komutlar kapsayıcılardır.
+- Üç temel türlerde öğeler vardır: menü komutları ve gruplar. Menüleri kullanıcı Arabiriminde, menüleri, alt menüler, araç çubukları ve araç pencereleri sunulabilir. Kullanıcı IDE içinde yürütülebilir, ve menü öğeleri, düğmeler, liste kutuları veya diğer denetimleri sunulabilir yordamları komutlardır. Grupları, menüler ve komutlar kapsayıcılardır.
 
--   Her öğe, öğe diğer öğeleri ve davranışını değiştirmek bayrakları göreli önceliğini açıklayan tanımı tarafından belirtilir.
+- Her öğe, öğe diğer öğeleri ve davranışını değiştirmek bayrakları göreli önceliğini açıklayan tanımı tarafından belirtilir.
 
--   Her öğenin üst öğesinin açıklayan bir yerleştirme vardır. Böylece kullanıcı arabiriminde birden fazla konumda görünebilir bir öğe birden çok üst öğeye sahip olabilir.
+- Her öğenin üst öğesinin açıklayan bir yerleştirme vardır. Böylece kullanıcı arabiriminde birden fazla konumda görünebilir bir öğe birden çok üst öğeye sahip olabilir.
 
      Bu gruptaki yalnızca alt olsa bile, her komut kendi üst öğesi olarak bir grup olmalıdır. Her standart menü, ayrıca bir üst grubu olmalıdır. Araç çubukları ve araç pencerelerini, kendi üst davranır. Bir grup ana Visual Studio menü çubuğunda, üst veya tüm menü, araç çubuğunda veya araç penceresi olabilir.
 
@@ -74,15 +74,15 @@ VSPackage örnek, menüleri ve araç çubukları için kullanıcı arabirimi (UI
 ### <a name="menus-groups-and-commands"></a>Menüleri, gruplar ve komutlar
  Bir menü, Grup veya komut bir GUID ve ID olduğunda, IDE eklenebilir. Her kullanıcı Arabirimi öğesi şunları içermelidir:
 
--   A `guid` adıyla eşleşen öznitelik `GuidSymbol` UI öğesi altında tanımlanmış bir öğe.
+- A `guid` adıyla eşleşen öznitelik `GuidSymbol` UI öğesi altında tanımlanmış bir öğe.
 
--   Bir `id` ilişkili adıyla eşleşen öznitelik `IDSymbol` öğesi.
+- Bir `id` ilişkili adıyla eşleşen öznitelik `IDSymbol` öğesi.
 
      Birlikte `guid` ve `id` öznitelikleri compose *imza* UI öğesi.
 
--   A `priority` UI öğesi kendi üst menü ya da Grup yerleşimini belirler özniteliği.
+- A `priority` UI öğesi kendi üst menü ya da Grup yerleşimini belirler özniteliği.
 
--   A [üst öğe](../../extensibility/parent-element.md) olan `guid` ve `id` imza üst menü veya grubun belirten öznitelikleri.
+- A [üst öğe](../../extensibility/parent-element.md) olan `guid` ve `id` imza üst menü veya grubun belirten öznitelikleri.
 
 #### <a name="menus"></a>Menüler
  Her menüye olarak tanımlanan bir [menü öğesi](../../extensibility/menu-element.md) içinde `Menus` bölümü. Menüler olmalıdır `guid`, `id`, ve `priority` öznitelikleri ve `Parent` öğesini ve ayrıca aşağıdaki ek öznitelikleri ve alt öğeleri:
@@ -263,17 +263,17 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>Genel gereksinimler
  Önce görüntülenen ve etkin, komut aşağıdaki dizi test geçirilmelidir:
 
--   Komutu, doğru yerleştirilir.
+- Komutu, doğru yerleştirilir.
 
--   `DefaultInvisible` Bayrağı ayarlı değil.
+- `DefaultInvisible` Bayrağı ayarlı değil.
 
--   Üst menü veya araç çubuğu görünür olur.
+- Üst menü veya araç çubuğu görünür olur.
 
--   Komut bir bağlam giriş nedeniyle görünmez değil [VisibilityConstraints öğesi](../../extensibility/visibilityconstraints-element.md) bölümü.
+- Komut bir bağlam giriş nedeniyle görünmez değil [VisibilityConstraints öğesi](../../extensibility/visibilityconstraints-element.md) bölümü.
 
--   VSPackage'ı uygulayan kodu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi görüntüler ve komutunuzu sağlar. Hiçbir arabirimi kodu, bunu engelledik ve üzerinde işlem.
+- VSPackage'ı uygulayan kodu <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> arabirimi görüntüler ve komutunuzu sağlar. Hiçbir arabirimi kodu, bunu engelledik ve üzerinde işlem.
 
--   Kullanıcı komutu tıkladığında, ana hatlarıyla açıklanan yordamı tabi olur [yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md).
+- Kullanıcı komutu tıkladığında, ana hatlarıyla açıklanan yordamı tabi olur [yönlendirme algoritması](../../extensibility/internals/command-routing-algorithm.md).
 
 ## <a name="call-pre-defined-commands"></a>Önceden tanımlanmış komutlarını çağıran
  [UsedCommands öğesi](../../extensibility/usedcommands-element.md) VSPackages IDE veya diğer VSPackage'ları tarafından sağlanan erişim komutlarını sağlar. Bunu yapmak için oluşturun bir [UsedCommand öğesi](../../extensibility/usedcommand-element.md) GUID ve kullanmak için komutu kimliği vardır. Geçerli Visual Studio yapılandırmasının bir parçası olmasa bile bu komutu Visual Studio tarafından yüklenen sağlar. Daha fazla bilgi için [UsedCommand öğesi](../../extensibility/usedcommand-element.md).

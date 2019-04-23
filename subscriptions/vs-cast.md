@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio aboneliklerinde kullanılabilir ATAMA vurgulayın Avantajı hakkında bilgi edinin
 searchscope: VS Subscription
-ms.openlocfilehash: 1d4466fa2a4fac38849a7b157921094d769a4e04
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100345"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio abonelikleri ATAMA vurgulayın avantaja
 
@@ -39,41 +39,41 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
    > [!NOTE]
    > CAST vurgulayın avantajı etkinleştirmeleri on kuruluş başına sınırlıdır.  On etkinleştirme kurumunuza ait zaten kullanılan CAST vurgulayın avantajı aktive olacaktır ve daha fazla bilgi içeren bir e-posta alırsınız.
 
- 0. Bilgilerinizi gönderdikten sonra isteğiniz alınmasını onaylama bir sayfa görürsünüz.
+0. Bilgilerinizi gönderdikten sonra isteğiniz alınmasını onaylama bir sayfa görürsünüz.
 
     > [!div class="mx-imgBorder"]
     > ![CAST vurgulama teşekkür ederiz sayfası](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  ATAMA ekibi isteğinizi değerlendirir ve hesabınızı oluşturma işlemini sonlandırmak için sizinle iletişime geçecektir.
+0. ATAMA ekibi isteğinizi değerlendirir ve hesabınızı oluşturma işlemini sonlandırmak için sizinle iletişime geçecektir.
 
-0.  Ayrıca, değerinden bool değerine ATAMA isteğiniz alınmasını onaylama, aşağıdaki e-posta alırsınız.
+0. Ayrıca, değerinden bool değerine ATAMA isteğiniz alınmasını onaylama, aşağıdaki e-posta alırsınız.
 
-   *CAST vurgulayın - Microsoft Visual Studio Enterprise müşterileri için özel bir teklif 30 günlük erişimi etkinleştirmek isteğiniz için teşekkür ederiz!*
-
-   *Biz, şu anda isteğinizi etkinleştirme ve erişim ATAMA vurgulamak için inceliyorsunuz. En fazla 48 saat içindeki geri Me'yi duyacaktır.*
-
-   *En iyi*
-   *Greg*
+   > *CAST vurgulayın - Microsoft Visual Studio Enterprise müşterileri için özel bir teklif 30 günlük erişimi etkinleştirmek isteğiniz için teşekkür ederiz!*
+   >
+   > *Biz, şu anda isteğinizi etkinleştirme ve erişim ATAMA vurgulamak için inceliyorsunuz. En fazla 48 saat içindeki geri Me'yi duyacaktır.*
+   >
+   > *En iyi*
+   > *Greg*
 
 İsteğiniz Onay sonrasında, hesabınızın oluşturma başarılı onaylama ve etkinleştirme işlemini tamamlamak için etkinleştirme bağlantısına tıklayın isteyen bir ikinci e-posta alacaksınız.
 
-   *Biz başarıyla doğrulandı ve ATAMA vurgulayın erişme isteğinizi doğrulandı. Aboard Hoş Geldiniz!*
-
-   *Gerekli bir son etkinleştirmeyi tamamlamak için son adımından yoktur. Bir e-posta almış olması gerekiyor noreply@casthighlight.com etkinleştirme bağlantısı ile. E-posta görmüyorsanız, istenmeyen posta kutusunu işaretleyin.*
-
-   *Lütfen e-postasındaki etkinleştirme bağlantısını tıklatın ve etkinleştirme işleminizi tamamlayın.*
-
-   *Sonra bir 30 günlük 5 uygulamaları ekleme yapabilir ve platform ATAMA vurgulayın erişiminiz. Bu özel teklif yalnızca Microsoft Visual Studio Enterprise müşterileri tarafından kullanılabilir olmadığını unutmayın.*
-
-   *Her şeyin sorunsuz sizin için hareket etmesini sağlamak için dokunma içinde olacaktır. Bu arada, başlamanıza yardımcı olmak için bazı faydalı içeriği şu şekildedir:*
-
-   - [CAST vurgulama - CloudReadiness Tanıtımı](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
-    -   [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-    -   Video Öğreticisi - [portföyünüzü yapılandırın](https://www.youtube.com/watch?v=MDm8ln4vuGE)
-    -   Video Öğreticisi - [dahili uygulamalarınızı](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-
-   *En iyi*
-   *Greg*
+   > *Biz başarıyla doğrulandı ve ATAMA vurgulayın erişme isteğinizi doğrulandı. Aboard Hoş Geldiniz!*
+   >
+   > *Gerekli bir son etkinleştirmeyi tamamlamak için son adımından yoktur. Bir e-posta almış olması gerekiyor noreply@casthighlight.com etkinleştirme bağlantısı ile. E-posta görmüyorsanız, istenmeyen posta kutusunu işaretleyin.*
+   >
+   > *Lütfen e-postasındaki etkinleştirme bağlantısını tıklatın ve etkinleştirme işleminizi tamamlayın.*
+   >
+   > *Sonra bir 30 günlük 5 uygulamaları ekleme yapabilir ve platform ATAMA vurgulayın erişiminiz. Bu özel teklif yalnızca Microsoft Visual Studio Enterprise müşterileri tarafından kullanılabilir olmadığını unutmayın.*
+   >
+   > *Her şeyin sorunsuz sizin için hareket etmesini sağlamak için dokunma içinde olacaktır. Bu arada, başlamanıza yardımcı olmak için bazı faydalı içeriği şu şekildedir:*
+   >
+   > - [CAST vurgulama - CloudReadiness Tanıtımı](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
+   > - [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+   > - Video Öğreticisi - [portföyünüzü yapılandırın](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+   > - Video Öğreticisi - [dahili uygulamalarınızı](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
+   >
+   > *En iyi*
+   > *Greg*
 
    > [!NOTE]
    > Aldığınız e-posta etkinleştirme bağlantıya tıkladığınızdan emin olun.  Aksi takdirde, ATAMA vurgulayın aboneliğinize erişmek mümkün olmayacaktır. E-posta kutunuzda görmüyorsanız, istenmeyen posta klasörlerinizi denetleyin emin olun.
@@ -98,12 +98,12 @@ Visual Studio Enterprise aboneleri, abonelik başına en fazla beş uygulamalar 
 Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e-posta adresinizi atanan tüm abonelikleri görmek için. Tüm aboneliklerinizi görmüyorsanız, bir veya daha çok farklı bir e-posta adresine atanmış olabilir.  Bu Aboneliklerdeki görmek için bu e-posta adresiyle oturum açmanız gerekir.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  CAST vurgulayın kullanma konusunda yardım mı ihtiyacınız var?  Bu kaynaklara göz atın:
+- CAST vurgulayın kullanma konusunda yardım mı ihtiyacınız var?  Bu kaynaklara göz atın:
     - [Bir destek isteği gönderin](https://casthighlight.com/support/)
     - [Başlangıç Kılavuzu (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

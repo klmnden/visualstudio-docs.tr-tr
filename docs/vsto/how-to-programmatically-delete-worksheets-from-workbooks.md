@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a70e6b7c8126b2e9d2fc3274d5ecf905dce960d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066558"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Nasıl yapılır: Program aracılığıyla çalışma kitaplarından çalışma sayfaları silme
   Çalışma kitabındaki silebilirsiniz. Bir çalışma sayfası silmek için çalışma sayfası konak öğesi kullanın veya çalışma kitabını sayfaları koleksiyonunu kullanarak çalışma sayfasına erişin.
@@ -40,7 +40,7 @@ ms.locfileid: "56644516"
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Bir çalışma sayfası bir çalışma sayfası konak öğesi kullanarak silmek için
 
-1.  Çağrı <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> yöntemi `Sheet1`.
+1. Çağrı <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> yöntemi `Sheet1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
@@ -59,7 +59,7 @@ ms.locfileid: "56644516"
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Çalışma sayfalarını Excel çalışma kitabını koleksiyonunu kullanarak silmek için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> yöntemi <xref:Microsoft.Office.Interop.Excel.Sheets> koleksiyonu.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> yöntemi <xref:Microsoft.Office.Interop.Excel.Sheets> koleksiyonu.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]

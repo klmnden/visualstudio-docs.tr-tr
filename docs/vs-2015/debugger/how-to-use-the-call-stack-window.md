@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106468"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Nasıl yapılır: Çağrı yığını penceresini kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,53 +62,53 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Çağrı yığını penceresini kesme modunda veya çalıştırma modunda görüntülemek için  
   
--   Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **çağrı yığını**.  
+- Üzerinde **hata ayıklama** menüsünde **Windows** ve ardından **çağrı yığını**.  
   
 ### <a name="to-change-the-optional-information-displayed"></a>Görüntülenen isteğe bağlı bilgileri değiştirmek için  
   
--   Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.  
+- Sağ **çağrı yığını** penceresi ve kümesi ya da temizleyin **Göster \<**  _istediğiniz bilgilerin_ **>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>Kullanıcı olmayan kod çerçevelerini çağrı yığını penceresinde görüntülemek için  
   
--   Sağ **çağrı yığını** penceresi ve select **harici kodu Göster**.  
+- Sağ **çağrı yığını** penceresi ve select **harici kodu Göster**.  
   
 ### <a name="to-switch-to-another-stack-frame"></a>Başka bir yığın çerçevesine geçiş yapmak için  
   
-1.  İçinde **çağrı yığını** penceresinde Çerçeveyi sağ kodunu ve görüntülemek istediğiniz veri.  
+1. İçinde **çağrı yığını** penceresinde Çerçeveyi sağ kodunu ve görüntülemek istediğiniz veri.  
   
-2.  Seçin **çerçeveye geçiş yap**.  
+2. Seçin **çerçeveye geçiş yap**.  
   
      Kıvrık kuyruklu yeşil bir ok, seçtiğiniz çerçevenin yanında görünür. Yürütme işaretçisi halen sarı ok ile işaretlenmiş olan özgün çerçevede kalır. Seçerseniz **adım** veya **devam** gelen **hata ayıklama** menüsünde, yürütme devam eder özgün çerçevede, seçtiğiniz çerçevenin.  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>İçin veya başka bir iş parçacığından çağrıları görüntülemek için  
   
--   Sağ **çağrı yığını** penceresi ve select **dahil çağrıları öğesine/öğesinden diğer iş parçacıkları**.  
+- Sağ **çağrı yığını** penceresi ve select **dahil çağrıları öğesine/öğesinden diğer iş parçacıkları**.  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>Çağrı yığınındaki bir işleve kaynak kodunu görüntülemek için  
   
--   İçinde **çağrı yığını** penceresinde, istediğiniz kaynak kodunu işlevi görmek ve seçmek için sağ tıklama **kaynak koda Git**.  
+- İçinde **çağrı yığını** penceresinde, istediğiniz kaynak kodunu işlevi görmek ve seçmek için sağ tıklama **kaynak koda Git**.  
   
 ### <a name="to-visually-trace-the-call-stack"></a>Çağrı yığınını görsel olarak izlemek için  
   
-1.  İçinde **çağrı yığını** penceresinde, kısayol menüsünü açın. Seçin **kod haritasında çağrı yığınını Göster**. (Klavye: **CTRL** + **SHIFT** + **`**)  
+1. İçinde **çağrı yığını** penceresinde, kısayol menüsünü açın. Seçin **kod haritasında çağrı yığınını Göster**. (Klavye: **CTRL** + **SHIFT** + **`**)  
   
      Bkz: [hata ayıklarken çağrı yığınında yöntemler harita](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Çağrı yığınındaki bir işleve ilişkin ayrıştırma kodunu görüntülemek için  
   
--   İçinde **çağrı yığını** penceresinde, sökme kodunu istediğiniz işlevi görebilir ve sağ **Ayrıştırılımış**.  
+- İçinde **çağrı yığını** penceresinde, sökme kodunu istediğiniz işlevi görebilir ve sağ **Ayrıştırılımış**.  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>Çağrı yığını penceresinden belirli bir işlevi çalıştırmak için  
   
--  İçinde **çağrı yığını** penceresinde işlevi seçin, sağ tıklatın ve seçin **imlece kadar Çalıştır**.  
+- İçinde **çağrı yığını** penceresinde işlevi seçin, sağ tıklatın ve seçin **imlece kadar Çalıştır**.  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Bir işlev çağrısının çıkış noktası üzerinde bir kesme noktası ayarlamak için  
   
--   Bkz: [bir çağrı yığını işlevi bir kesme noktası ayarlamak](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
+- Bkz: [bir çağrı yığını işlevi bir kesme noktası ayarlamak](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
   
 ### <a name="to-load-symbols-for-a-module"></a>Bir modüle ilişkin simgeleri yüklemek için  
   
--   İçinde **çağrı yığını** penceresinde, simgelerinin modülü gösteren Çerçeveyi sağ tıklatın, yeniden yükleyin ve istediğiniz **sembolleri Yükle**.  
+- İçinde **çağrı yığını** penceresinde, simgelerinin modülü gösteren Çerçeveyi sağ tıklatın, yeniden yükleyin ve istediğiniz **sembolleri Yükle**.  
   
 ## <a name="loading-symbols"></a>Semboller yükleniyor  
  İçinde **çağrı yığını** penceresi, hata ayıklama simgelerinin şu anda yüklü olmayan kod için semboller yükleyebilirsiniz. Bu simgeler, .NET Framework veya Microsoft ortak simge sunucularından yüklenen sistem simgeleri veya hata ayıklaması yaptığınız bilgisayarda simge yolunu sembolleri olabilir.  
@@ -117,25 +117,25 @@ Kullanarak **çağrı yığını** penceresinde yığında olan işlev veya yord
   
 #### <a name="to-load-symbols"></a>Simgeleri yüklemek için  
   
-1.  İçinde **çağrı yığını** penceresinde, simgelerin çerçevesi yüklenmedi sağ tıklatın. Çerçeve soluk görünecektir.  
+1. İçinde **çağrı yığını** penceresinde, simgelerin çerçevesi yüklenmedi sağ tıklatın. Çerçeve soluk görünecektir.  
   
-2.  İşaret **sembolleri şuradan Yükle** ve ardından **Microsoft sembol sunucuları** veya **sembol yolu**.  
+2. İşaret **sembolleri şuradan Yükle** ve ardından **Microsoft sembol sunucuları** veya **sembol yolu**.  
   
 #### <a name="to-set-the-symbol-path"></a>Sembol yolunu ayarlamak için  
   
-1.  İçinde **çağrı yığını** penceresinde seçin **sembol ayarları** kısayol menüsünden.  
+1. İçinde **çağrı yığını** penceresinde seçin **sembol ayarları** kısayol menüsünden.  
   
      **Seçenekleri** iletişim kutusu açılır ve **sembolleri** sayfası görüntülenir.  
   
-2.  Tıklayın **sembol ayarları**.  
+2. Tıklayın **sembol ayarları**.  
   
-3.  İçinde **seçenekleri** iletişim kutusunda, klasör simgesine tıklayın.  
+3. İçinde **seçenekleri** iletişim kutusunda, klasör simgesine tıklayın.  
   
      İçinde **sembol dosyası (.pdb) konumlar** kutusunda, bir imleç görüntülenir.  
   
-4.  Hata ayıklaması yaptığınız bilgisayarda simge konumuna bir dizin yol adı yazın. Yerel hata ayıklama için yerel bilgisayarınıza budur. Uzaktan hata ayıklama için Uzak bilgisayardır.  
+4. Hata ayıklaması yaptığınız bilgisayarda simge konumuna bir dizin yol adı yazın. Yerel hata ayıklama için yerel bilgisayarınıza budur. Uzaktan hata ayıklama için Uzak bilgisayardır.  
   
-5.  Tıklayın **Tamam** kapatmak için **seçenekleri** iletişim kutusu.  
+5. Tıklayın **Tamam** kapatmak için **seçenekleri** iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karışık kod ve eksik bilgiler çağrı yığını penceresi](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   

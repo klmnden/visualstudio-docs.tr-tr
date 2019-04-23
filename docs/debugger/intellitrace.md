@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098655"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise için IntelliTrace (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ IntelliTrace, Visual Studio Enterprise edition (ancak Professional veya Communit
 > [!NOTE]
 > Zaten çalışan bir işlemde hata ayıklamak istiyorsanız, yalnızca IntelliTrace olayları (çağrı bilgileri) toplayabilir. Yerel makinede yalnızca bir 32 bit veya 64-bit işleme iliştirebilirsiniz. İşleme İliştir önce meydana gelen olayları toplanmadı.
 
-##  <a name="IntelliTraceVSTraditional"></a> Neden IntelliTrace ile hata ayıklama?
+## <a name="IntelliTraceVSTraditional"></a> Neden IntelliTrace ile hata ayıklama?
 
 Geleneksel veya *canlı* hata ayıklama sadece uygulamanızın geçerli durumunu gösterir, geçmiş olaylar hakkında sınırlı veri ile. Bu olayları uygulamanın mevcut durumuna göre ya da sahip veya bu olayları uygulamanızı yeniden çalıştırarak yeniden oluşturmanız gerekir.
 
@@ -97,7 +97,7 @@ IntelliTrace'in hata ayıklamada yardımcı olması ile ilgili bazı örnekler a
 
      Bu, dağıtımdaki uygulamalarla ilgili sorunları tanılamak istediğinizde kullanışlıdır. Bkz: [IntelliTrace tek başına toplayıcıyı kullanma](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> IntelliTrace hangi verileri toplar?
+## <a name="WhatData"></a> IntelliTrace hangi verileri toplar?
 
 **Olay bilgilerini toplama**
 

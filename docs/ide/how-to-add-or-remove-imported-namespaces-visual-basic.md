@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c30a7d89065a7fbea9781d1972dc01fedd5c742
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 98968654837248763e366948c70a875d35bd44bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105857"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Nasıl yapılır: İçeri aktarılan ad uzaylarını ekleme veya kaldırma (Visual Basic)
 
@@ -29,22 +29,22 @@ Bir ad alanı içeri aktarma öğesi tam olarak niteleme olmadan kodunuzda bu ad
 
 ### <a name="to-add-an-imported-namespace"></a>Bir içeri aktarılan ad alanı eklemek için
 
-1.  İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
+1. İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
 
-2.  İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
+2. İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
 
-3.  İçinde **içeri aktarılan ad alanlarını** listesinde, eklemek istediğiniz ad alanı için onay kutusunu seçin.
+3. İçinde **içeri aktarılan ad alanlarını** listesinde, eklemek istediğiniz ad alanı için onay kutusunu seçin.
 
     > [!NOTE]
     >  Ad alanı içeri aktarılması için başvurulan bir bileşen olarak olması gerekir. Ad alanı listede görünmüyorsa, içerdiği bileşenine bir başvuru eklemeniz gerekir. Daha fazla bilgi için [bir projedeki başvuruları yönetme](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Bir içeri aktarılan ad alanı kaldırmak için
 
-1.  İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
+1. İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
 
-2.  İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
+2. İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
 
-3.  İçinde **içeri aktarılan ad alanlarını** listesinde, kaldırmak istediğiniz ad alanı için onay kutusunu temizleyin.
+3. İçinde **içeri aktarılan ad alanlarını** listesinde, kaldırmak istediğiniz ad alanı için onay kutusunu temizleyin.
 
 ## <a name="user-imports"></a>Kullanıcı içeri aktarmalar
  Kullanıcı içeri aktarmalar, belirli bir sınıf içindeki tüm ad alanı yerine bir ad alanı içe olanak tanır. Örneğin, uygulamanızın yönelik içeri aktarma olabilir <xref:System.Diagnostics> ad alanı, ancak yalnızca sınıf ilgilendiğiniz bu ad alanı içinde `Debug` sınıfı. Tanımlayabileceğiniz <xref:System.Diagnostics.Debug> bir kullanıcı olarak içeri aktarma ve içeri aktarma için Kaldır'ı <xref:System.Diagnostics>.
@@ -53,28 +53,28 @@ Bir ad alanı içeri aktarma öğesi tam olarak niteleme olmadan kodunuzda bu ad
 
 ### <a name="to-add-a-user-import"></a>Kullanıcı içeri aktarma eklemek için
 
-1.  İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
+1. İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
 
-2.  İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
+2. İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
 
-3.  Metin kutusundaki **içeri aktarılan ad alanlarını** listesinde, almak istediğiniz ad alanı için tam adı kök ad alanı dahil girin.
+3. Metin kutusundaki **içeri aktarılan ad alanlarını** listesinde, almak istediğiniz ad alanı için tam adı kök ad alanı dahil girin.
 
-4.  Tıklayın **kullanıcı içeri aktarma eklemek** ad alanına eklemek için Ekle düğmesine **içeri aktarılan ad alanlarını** listesi.
+4. Tıklayın **kullanıcı içeri aktarma eklemek** ad alanına eklemek için Ekle düğmesine **içeri aktarılan ad alanlarını** listesi.
 
     > [!NOTE]
     > **Kullanıcı içeri aktarma eklemek** düğmesini devre dışı bırakılacak ad alanı zaten listede bir eşleşiyorsa; bir alma işlemi iki kez ekleyemezsiniz.
 
 ### <a name="to-update-a-user-import"></a>Kullanıcı içeri aktarma güncelleştirmek için
 
-1.  İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
+1. İçinde **Çözüm Gezgini**, çift **Projem** projesinin düğümü.
 
-2.  İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
+2. İçinde **Proje Tasarımcısı**, tıklayın **başvuruları** sekmesi.
 
-3.  İçinde **içeri aktarılan ad alanlarını** listesinde, değiştirmek istediğiniz ad alanını seçin.
+3. İçinde **içeri aktarılan ad alanlarını** listesinde, değiştirmek istediğiniz ad alanını seçin.
 
-4.  Metin kutusundaki **içeri aktarılan ad alanlarını** listesinde, yeni ad alanı için bir ad girin.
+4. Metin kutusundaki **içeri aktarılan ad alanlarını** listesinde, yeni ad alanı için bir ad girin.
 
-5.  Tıklayın **güncelleştirme kullanıcı içeri aktarma** ad alanında güncelleştirmek için düğmesini **içeri aktarılan ad alanlarını** listesi.
+5. Tıklayın **güncelleştirme kullanıcı içeri aktarma** ad alanında güncelleştirmek için düğmesini **içeri aktarılan ad alanlarını** listesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097615"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>İzlenecek yol: Yanlış yapılandırılmış ardışık düzen nedeniyle eksik nesneler
 Bu izlenecek yolda nasıl kullanılacağını gösterir [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nedeniyle bir unset piksel gölgelendiricisi eksik olan bir nesne incelemek için grafik tanılama araçları.
 
  Bu örneklerde bu görevler gösterilir:
 
--   Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.
+- Kullanarak **grafik olay listesi** olası sorun kaynaklarını bulmak için.
 
--   Kullanarak **grafik ardışık düzen aşamaları** etkisini incelemek için penceresine `DrawIndexed` Direct3D API çağrısı.
+- Kullanarak **grafik ardışık düzen aşamaları** etkisini incelemek için penceresine `DrawIndexed` Direct3D API çağrısı.
 
--   Gölgelendirici aşaması ayarlanmadı onaylamak için cihaz bağlamı inceleniyor.
+- Gölgelendirici aşaması ayarlanmadı onaylamak için cihaz bağlamı inceleniyor.
 
--   Kullanarak **grafik ardışık düzen aşamaları** penceresi ile birlikte **grafik olay çağrı yığını** unset piksel gölgelendiricisi kaynağını bulmaya yardımcı olacak.
+- Kullanarak **grafik ardışık düzen aşamaları** penceresi ile birlikte **grafik olay çağrı yığını** unset piksel gölgelendiricisi kaynağını bulmaya yardımcı olacak.
 
 ## <a name="scenario"></a>Senaryo
  Bir nesneyi 3B bir uygulamada eksik olduğunda, nesne oluşturulmadan önce gölgelendirici aşamalarının biri ayarlanmadı bazen olmasıdır. Basit işleme gereksinimlerine sahip uygulamalar, bu hata genellikle bulunduğu yere nesnenin çizim çağrısı çağrı yığınında kaynağıdır. Ancak, bir iyileştirme gölgelendirici program, doku veya ortak en aza indirmek için diğer verileri bazı uygulamalar toplu birlikte nesneler durumu-ek yükü değişikliği. Bu uygulamalar, hatanın kaynağını toplu işlem sistemine kaçınma yerine çizim çağrısı çağrı yığınında bulunur. Basit işleme gereksinimlerine sahip bir uygulama bu kılavuzdaki senaryoyu göstermektedir ve bu nedenle hatanın kaynağının çağrı yığınında bulunabilir.

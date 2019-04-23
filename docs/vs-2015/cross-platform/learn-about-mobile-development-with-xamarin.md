@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097394"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Xamarin ile mobil geliştirme hakkında bilgi edinin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anla
 ## <a name="essentials-introduction-to-xamarin"></a>Temel bileşenler: Xamarin giriş  
  *10-20 dakika*  
   
-1.  [Visual Studio'da Xamarin ile Mobile Apps](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) birincil Xamarin özelliklerini çok kısa bir özetini sağlar.  
+1. [Visual Studio'da Xamarin ile Mobile Apps](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) birincil Xamarin özelliklerini çok kısa bir özetini sağlar.  
   
-2.  [C# ve Visual Studio kullanılarak yapı platformlar arası mobil uygulamalar](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9 15m16s) ile Xamarin destekçisi, James Montemagno. İlk üç dakika kod tanıtımlar tarafından izlenen bir Xamarin genel bakış ' dir.  
+2. [C# ve Visual Studio kullanılarak yapı platformlar arası mobil uygulamalar](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9 15m16s) ile Xamarin destekçisi, James Montemagno. İlk üç dakika kod tanıtımlar tarafından izlenen bir Xamarin genel bakış ' dir.  
   
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Temel bileşenler: Visual Studio ve Xamarin Ortamı'na genel bakış  
  *5-15 dakika*  
@@ -44,9 +44,9 @@ Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anla
 ## <a name="essentials-how-projects-are-structured"></a>Temel bileşenler: Projeleri nasıl yapılanmıştır.  
  *10-30 dakika*  
   
-1.  [Paylaşım kod seçeneklerini](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Taşınabilir sınıf kitaplıkları seçeneği en iyi kullanmadan yalnızca bu .NET tüm hedef platformlar arasında desteklenen API'lerini kullanarak destekleyen öneririz. Çoğu iş mantığı kod veritabanları, REST API çağrıları ve taşınabilir Xamarin bileşenleri çağrıları dahil olmak üzere, PCL kalır (bkz [daha yakından bakın: Xamarin bileşenleri](#components) sonunda, bu konuda). Xamarin.Forms ile yazılmış ortak UI kodunu da bir PCL'de bulunabilir.  
+1. [Paylaşım kod seçeneklerini](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Taşınabilir sınıf kitaplıkları seçeneği en iyi kullanmadan yalnızca bu .NET tüm hedef platformlar arasında desteklenen API'lerini kullanarak destekleyen öneririz. Çoğu iş mantığı kod veritabanları, REST API çağrıları ve taşınabilir Xamarin bileşenleri çağrıları dahil olmak üzere, PCL kalır (bkz [daha yakından bakın: Xamarin bileşenleri](#components) sonunda, bu konuda). Xamarin.Forms ile yazılmış ortak UI kodunu da bir PCL'de bulunabilir.  
   
-2.  (İsteğe bağlı) [Örnek olay incelemesi: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com), tasarım ve tam özellikli bir uygulama verileri, veri erişimi ve iş katmanları ayıran paylaşılan kod için bir PCL projeyle yapılandırılması gibi yapısı için bazı en iyi uygulamaları açıklar.  
+2. (İsteğe bağlı) [Örnek olay incelemesi: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com), tasarım ve tam özellikli bir uygulama verileri, veri erişimi ve iş katmanları ayıran paylaşılan kod için bir PCL projeyle yapılandırılması gibi yapısı için bazı en iyi uygulamaları açıklar.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Temel bileşenleri: yerel ve Xamarin.Forms UI katmanları  
  *10-40 dakika*  
@@ -69,32 +69,32 @@ Bu konuda, platformlar arası mobil uygulamaları geliştirmeye Xamarin ile anla
   
   Daha fazla bilgi için:  
   
-1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com), kısa bir genel bakış ve avantajları ve dezavantajları Xamarin.Forms ve yerel UI katmanları (diğer bir deyişle, Xamarin.iOS ve Xamarin.Android) sağlar.  
+1. [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com), kısa bir genel bakış ve avantajları ve dezavantajları Xamarin.Forms ve yerel UI katmanları (diğer bir deyişle, Xamarin.iOS ve Xamarin.Android) sağlar.  
   
-2.  İlk üç dakika James Montemagno'nın video [Xamarin.Forms: Yerel iOS, Android ve Windows uygulamaları ile C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9 13m3s) başka bir genel bakış sağlar ve Tanıtımlar izlemeye devam edebilirsiniz.  
+2. İlk üç dakika James Montemagno'nın video [Xamarin.Forms: Yerel iOS, Android ve Windows uygulamaları ile C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel9 13m3s) başka bir genel bakış sağlar ve Tanıtımlar izlemeye devam edebilirsiniz.  
   
-3.  (İsteğe bağlı) [Xamarin.Forms'a giriş](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
+3. (İsteğe bağlı) [Xamarin.Forms'a giriş](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
   
-4.  (İsteğe bağlı) Özelleştirme için OnPlatform kullanma örnekleri görmek [cihaz sınıfı](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) belgeleri (xamarin.com)  
+4. (İsteğe bağlı) Özelleştirme için OnPlatform kullanma örnekleri görmek [cihaz sınıfı](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) belgeleri (xamarin.com)  
   
-5.  (İsteğe bağlı) [Çoklu Platform - mobil platformlar arasında paylaşım kullanıcı Arabirimi kod Xamarin.Forms ile](https://msdn.microsoft.com/magazine/dn904669.aspx) Jason Smith (MSDN dergisi) anahatları Xamarin.Forms, kendisi için ayrıntıları ele alınmıştır şirket içinde farklı özelleştirme seçenekleri tarafından [ Her platformda denetimleri özelleştirme](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
+5. (İsteğe bağlı) [Çoklu Platform - mobil platformlar arasında paylaşım kullanıcı Arabirimi kod Xamarin.Forms ile](https://msdn.microsoft.com/magazine/dn904669.aspx) Jason Smith (MSDN dergisi) anahatları Xamarin.Forms, kendisi için ayrıntıları ele alınmıştır şirket içinde farklı özelleştirme seçenekleri tarafından [ Her platformda denetimleri özelleştirme](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>Daha ayrıntılı bilgi edinmek için: Öykünücü ile hata ayıklama  
  *10-15 dakika*  
   
  Platformlar arası uygulamalarınızı fiziksel bir cihaz kullanmak zorunda kalmadan hata ayıklamak için aşağıdaki kullanmanız gerekir:  
   
-1.  **Android öykünücüsü.** Kullandığınız Windows sürümüne bağlı olarak, ya da Microsoft Visual Studio öykünücüsü Android veya Xamarin ikisi için de hızlı performans sunar ve cihaz özellikleri çeşitli destek Player öneririz:  
+1. **Android öykünücüsü.** Kullandığınız Windows sürümüne bağlı olarak, ya da Microsoft Visual Studio öykünücüsü Android veya Xamarin ikisi için de hızlı performans sunar ve cihaz özellikleri çeşitli destek Player öneririz:  
   
-    -   **Windows 8 + makineler:** Microsoft'un kullanarak önerilir [Android için Visual Studio öykünücü](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), Visual Studio ile yüklenir.  [Android için Visual Studio öykünücü](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) video (Channel9, 5m55s), bir genel bakış ve tanıtım sunmaktadır.  
+    - **Windows 8 + makineler:** Microsoft'un kullanarak önerilir [Android için Visual Studio öykünücü](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), Visual Studio ile yüklenir.  [Android için Visual Studio öykünücü](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) video (Channel9, 5m55s), bir genel bakış ve tanıtım sunmaktadır.  
   
-    -   **Windows 7 veya önceki/Mac OS X üzerinde çalışan Windows**: kullanın [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
+    - **Windows 7 veya önceki/Mac OS X üzerinde çalışan Windows**: kullanın [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
   
-2.  **Apple iOS simülatörü.** Daha fazla bilgi edinmek için [iOS simülatörü ile çalışmaya başlama](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **Apple iOS simülatörü.** Daha fazla bilgi edinmek için [iOS simülatörü ile çalışmaya başlama](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Microsoft'un Windows Phone öykünücüsü.** Daha fazla bilgi edinmek için [Windows Phone 8 için Windows Phone öykünücüsü](https://msdn.microsoft.com/library/dn632391.aspx).  
+3. **Microsoft'un Windows Phone öykünücüsü.** Daha fazla bilgi edinmek için [Windows Phone 8 için Windows Phone öykünücüsü](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-##  <a name="components"></a> Daha ayrıntılı bilgi edinmek için: Xamarin bileşenleri  
+## <a name="components"></a> Daha ayrıntılı bilgi edinmek için: Xamarin bileşenleri  
  *10 dakika*  
   
  Çok sayıda genişletilmiş özellikler, Xamarin bileşenleri ile Xamarin uygulamaları için kullanılabilir. Ücretsiz olarak kullanılabilir tam katalog bulabilirsiniz [ http://components.xamarin.com/ ](http://components.xamarin.com/), bileşenler için ek kullanıcı Arabirimi denetimleri, kimlik doğrulaması, Microsoft Azure gibi bulut hizmetlerini ve daha fazlasını içerir.

@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 361e382149d15c4721f5707e06ec2e2d8fdbe3ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100455"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Kodlanmış UI Testlerinde HTML5 Denetimleri Kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denet
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  Internet Explorer 10 önceki sürümlerinde, kodlanmış UI testleri, Internet Explorer işlemi kıyasla daha yüksek bir ayrıcalık düzeyinde çalıştırmak mümkün oldu. Kodlanmış UI testleri, Internet Explorer 10'da çalıştırırken, kodlanmış UI testi hem de Internet Explorer işlemi aynı ayrıcalık düzeyinde olması gerekir. Internet Explorer 10 daha güvenli bir AppContainer özellikleri nedeniyle budur.  
@@ -33,18 +33,18 @@ Kodlanmış UI testleri, Internet Explorer 9 ve Internet Explorer 10 HTML5 denet
 ## <a name="supported-html5-controls"></a>Desteklenen HTML5 denetimleri  
  Kodlanmış UI testleri, kayıt, kayıttan yürütme ve doğrulamayı aşağıdaki HTML5 denetimleri için destek içerir:  
   
--   [Ses denetimi](#UsingHTML5ControlsCodedUITestsAudio)  
+- [Ses denetimi](#audio-control)  
   
--   [Video denetimi](#UsingHTML5ControlsCodedUITestsVideo)  
+- [Video denetimi](#video-control)  
   
--   [Kaydırıcı](#UsingHTML5ControlsCodedUITestsSlider)  
+- [Kaydırıcı](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+- [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Ses denetimi  
+### <a name="audio-control"></a>Ses denetimi  
  **Ses denetimi:** HTML5 sesi denetim eylemleri doğru şekilde kaydedilir ve kayıttan yürütülebilir.  
   
- ![HTML5 sesi denetim](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5 sesi denetimi](../test/media/codedui-html5-audio.png)  
   
 |Eylem|Kaydetme|Oluşturulan kod|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Arama özellikleri:** Arama özelliklerini `HtmlAudio` olan `Id`, `Name` ve `Title`.  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  Arama ve duraklatma süreyi önemli ölçüde fazla olabilir. Kayıttan yürütme sırasında kodlanmış UI testi belirtilen süre içinde kadar bekleyin `(TimeSpan)` ses duraklatmadan önce. Bazı özel durumda tarafından duraklatma komutunu ulaşmaktan önce belirtilen zaman geçtiyse, bir özel durum oluşturulur.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Video denetimi  
+### <a name="video-control"></a>Video denetimi  
  **Video denetimi:** HTML5 Video denetimi eylemlerini doğru şekilde kaydedilir ve kayıttan yürütülebilir.  
   
- ![HTML5 Video denetimi](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![HTML5 Video denetimi](../test/media/codedui-html5-video.png)  
   
 |Eylem|Kaydetme|Oluşturulan kod|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  Geri veya ileri sarma-30s veya +30s etiketleri kullanarak video, bu uygun zaman aramak için toplanacak.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Kaydırıcı  
+### <a name="slider"></a>Kaydırıcı  
  **Kaydırıcı denetimi:** HTML5 kaydırıcı denetimi eylemlerini doğru şekilde kaydedilir ve kayıttan yürütülebilir.  
   
- ![HTML5 kaydırıcı denetimi](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5 kaydırıcı denetimi](../test/media/codedui-html5-slider.png)  
   
 |Eylem|Kaydetme|Oluşturulan kod|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
+### <a name="progressbar"></a>ProgressBar  
  **ProgressBar denetimi:** ProgressBar interactable olmayan bir denetimdir. Onaylamalar ekleyebilirsiniz `Value` ve `Max` bu denetimin özelliklerini.  
   
- ![HTML5 ProgressBar denetimi](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar denetimi](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HTML öğeleri](https://www.w3schools.com/HTML/html_elements.asp)   
- [Kodunuzu test etmek için UI otomasyonunu kullanma](../test/use-ui-automation-to-test-your-code.md)   
- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Kodlanmış UI testleri özelleştirme](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [HTML öğeleri](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Kodunuzu Test Etmek için UI Otomasyonunu Kullanma](../test/use-ui-automation-to-test-your-code.md)   
+- [Kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Kodlanmış UI testleri özelleştirme](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Kodlanmış UI Testleri ve Eylem Kayıtları için Desteklenen Yapılandırmalar ve Platformlar](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

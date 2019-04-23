@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e3254c3716cd1c3aaeaa6ca76b33c95f525186
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071453"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Nasıl yapılır: Program aracılığıyla arama ve belgelerdeki metni değiştirme
   <xref:Microsoft.Office.Interop.Word.Find> Nesnedir hem de bir üyesi <xref:Microsoft.Office.Interop.Word.Selection> ve <xref:Microsoft.Office.Interop.Word.Range> nesneleri ve bunlardan birini Microsoft Office Word belgelerinde metin aramak için kullanabilirsiniz. Replace komutu FIND komutu bir uzantısıdır.
@@ -101,20 +101,20 @@ ms.locfileid: "56610638"
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>İçin arama yapın ve belgelerdeki metni değiştirme
 
-1.  Aşağıdaki örnek kodu `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
+1. Aşağıdaki örnek kodu `ThisDocument` veya `ThisAddIn` projenizdeki sınıfı.
 
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
      <xref:Microsoft.Office.Interop.Word.Find> Sınıfında bir <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> yöntemi ve <xref:Microsoft.Office.Interop.Word.Replacement> ayrıca sınıfında kendi <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> yöntemi. Bul ve Değiştir işlemleri gerçekleştirirken her iki nesnenin ClearFormatting yöntemi kullanmanız gerekir. Yalnızca kullanırsanız <xref:Microsoft.Office.Interop.Word.Find> nesnesini değiştirme metni beklenmedik sonuçlar alabilirsiniz.
 
-2.  Kullanım <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Find> bulunan her öğenin değiştirilecek nesne. Değiştirilecek öğeleri belirtmek için kullanın *değiştirin* parametresi. Bu parametre aşağıdaki değerlerden biri olabilir <xref:Microsoft.Office.Interop.Word.WdReplace> değerleri:
+2. Kullanım <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> yöntemi <xref:Microsoft.Office.Interop.Word.Find> bulunan her öğenin değiştirilecek nesne. Değiştirilecek öğeleri belirtmek için kullanın *değiştirin* parametresi. Bu parametre aşağıdaki değerlerden biri olabilir <xref:Microsoft.Office.Interop.Word.WdReplace> değerleri:
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> tüm öğeleri değiştirir.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> tüm öğeleri değiştirir.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> bulunan öğelerin hiçbiri değiştirir.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> bulunan öğelerin hiçbiri değiştirir.
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> bulunan ilk öğeyi değiştirir.
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> bulunan ilk öğeyi değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Nasıl yapılır: Program aracılığıyla Word arama seçeneklerini ayarlama](../vsto/how-to-programmatically-set-search-options-in-word.md)

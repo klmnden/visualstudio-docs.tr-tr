@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099708"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac için Visual Studio 2019 yükleyin
 
@@ -24,7 +24,7 @@ MacOS üzerinde yerel, platformlar arası .NET uygulamalarını geliştirmeye ba
 
 İOS veya Mac OS x için Xamarin uygulamaları oluşturmak için ayrıca gerekir:
 
-- Xcode 11.0 veya üstü. En son kararlı sürüme genellikle önerilir.
+- Xcode 10.0 veya üzeri. En son kararlı sürüme genellikle önerilir.
 - Bir Apple kimliği Bir Apple kimliği yoksa, yeni bir hesap oluşturabilirsiniz https://appleid.apple.com. Yükleme ve Xcode ile imzalamak için bir Apple Kimliği gereklidir.
 
 ## <a name="installation-instructions"></a>Yükleme yönergeleri

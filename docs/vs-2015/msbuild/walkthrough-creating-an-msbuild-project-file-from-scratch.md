@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 388b0ebbeea9cd9adb15629f34952ef0307a842b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096588"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>İzlenecek yol: Sıfırdan MSBuild Proje Dosyası Oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ ms.locfileid: "59648828"
   
 #### <a name="to-create-the-minimal-application"></a>Minimal uygulamayı oluşturmak için  
   
-1.  Komut isteminde Documents\ veya \Desktop bu gibi bir durumda uygulamayı oluşturmak istediğiniz klasöre göz atın\\.  
+1. Komut isteminde Documents\ veya \Desktop bu gibi bir durumda uygulamayı oluşturmak istediğiniz klasöre göz atın\\.  
   
-2.  Tür **md HelloWorld** \HelloWorld adlı bir alt klasör oluşturmak için\\.  
+2. Tür **md HelloWorld** \HelloWorld adlı bir alt klasör oluşturmak için\\.  
   
-3.  Tür **cd HelloWorld** yeni klasöre değiştirmek için.  
+3. Tür **cd HelloWorld** yeni klasöre değiştirmek için.  
   
-4.  Not Defteri veya başka bir metin düzenleyicisini başlatın ve aşağıdaki kodu yazın.  
+4. Not Defteri veya başka bir metin düzenleyicisini başlatın ve aşağıdaki kodu yazın.  
   
     ```  
     using System;  
@@ -78,28 +78,28 @@ ms.locfileid: "59648828"
     }  
     ```  
   
-5.  Bu kaynak kodu dosyasını kaydedin ve HelloWorld.cs olarak adlandırın.  
+5. Bu kaynak kodu dosyasını kaydedin ve HelloWorld.cs olarak adlandırın.  
   
-6.  Yazarak uygulamayı derleyin **csc HelloWorld.cs olarak** komut isteminde.  
+6. Yazarak uygulamayı derleyin **csc HelloWorld.cs olarak** komut isteminde.  
   
-7.  Yazarak uygulamayı test **helloworld** komut isteminde.  
+7. Yazarak uygulamayı test **helloworld** komut isteminde.  
   
      **Hello, world!** iletisi görüntülenmelidir.  
   
-8.  Yazarak uygulamayı silin **del helloworld.exe** komut isteminde.  
+8. Yazarak uygulamayı silin **del helloworld.exe** komut isteminde.  
   
 ## <a name="creating-a-minimal-msbuild-project-file"></a>Bir Minimal MSBuild proje dosyası oluşturma  
  En az uygulama kaynak dosyasına sahip olduğunuza göre uygulamanızı oluşturmak için en az proje dosyasını oluşturabilirsiniz. Bu proje dosyası aşağıdaki öğeleri içerir:  
   
--   Gerekli kök `Project` düğümü.  
+- Gerekli kök `Project` düğümü.  
   
--   Bir `ItemGroup` Item öğeleri içermesi düğümü.  
+- Bir `ItemGroup` Item öğeleri içermesi düğümü.  
   
--   Uygulama kaynak dosyasına başvuruda bulunan bir item öğesi.  
+- Uygulama kaynak dosyasına başvuruda bulunan bir item öğesi.  
   
--   A `Target` uygulamayı oluşturmak için gerekli görevleri içermek amacıyla düğümü.  
+- A `Target` uygulamayı oluşturmak için gerekli görevleri içermek amacıyla düğümü.  
   
--   A `Task` uygulamayı oluşturmak için Visual C# derleyicisini başlatmak için öğesi.  
+- A `Task` uygulamayı oluşturmak için Visual C# derleyicisini başlatmak için öğesi.  
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Bir minimal MSBuild proje dosyası oluşturmak için  
   
@@ -162,7 +162,7 @@ ms.locfileid: "59648828"
   
 #### <a name="to-add-msbuild-to-your-path"></a>MSBuild yolunuza dosya eklemek için  
   
--   Visual Studio 2013 itibariyle, MSBuild.exe MSBuild klasöründe bulabilirsiniz (`%ProgramFiles%\MSBuild` bir 32-bit işletim sisteminde veya `%ProgramFiles(x86)%\MSBuild` 64-bit işletim sisteminde).  
+- Visual Studio 2013 itibariyle, MSBuild.exe MSBuild klasöründe bulabilirsiniz (`%ProgramFiles%\MSBuild` bir 32-bit işletim sisteminde veya `%ProgramFiles(x86)%\MSBuild` 64-bit işletim sisteminde).  
   
      Komut isteminde **PATH=%PATH%;%ProgramFiles%\MSBuild ayarlamak** veya **yolu = % PATH %; % ProgramFiles (x86) %\MSBuild**.  
   
@@ -173,11 +173,11 @@ ms.locfileid: "59648828"
   
 #### <a name="to-build-the-application"></a>Uygulamayı oluşturmak için  
   
-1.  Komut isteminde **msbuild, helloworld.csproj /t:Build**.  
+1. Komut isteminde **msbuild, helloworld.csproj /t:Build**.  
   
      Bu, Helloworld uygulamasını oluşturmak için Visual C# derleyicisini çağırarak Helloworld proje dosyasının derleme hedefini oluşturur.  
   
-2.  Yazarak uygulamayı test **helloworld**.  
+2. Yazarak uygulamayı test **helloworld**.  
   
      **Hello, world!** iletisi görüntülenmelidir.  
   
@@ -189,9 +189,9 @@ ms.locfileid: "59648828"
 ## <a name="adding-build-properties"></a>Derleme özellikleri ekleme  
  Daha fazla denetim derleme proje dosyasına yapı özellikleri ekleyebilirsiniz. Şimdi bu özellikleri ekleyin:  
   
--   Bir `AssemblyName` özelliği uygulamasının adını belirtin.  
+- Bir `AssemblyName` özelliği uygulamasının adını belirtin.  
   
--   Bir `OutputPath` özelliği uygulamayı içeren klasörü belirtin.  
+- Bir `OutputPath` özelliği uygulamayı içeren klasörü belirtin.  
   
 #### <a name="to-add-build-properties"></a>Yapı özellikleri eklemek için  
   
@@ -260,13 +260,13 @@ ms.locfileid: "59648828"
   
 #### <a name="to-test-the-build-properties"></a>Yapı özelliklerini test etmek için  
   
-1.  Komut isteminde **msbuild, helloworld.csproj /t:Build**.  
+1. Komut isteminde **msbuild, helloworld.csproj /t:Build**.  
   
      Bu \Bin\ klasörünü oluşturur ve ardından MSBuildSample uygulaması oluşturmak için Visual C# derleyicisini çağırır ve \Bin\ klasörüne yerleştirir.  
   
-2.  \Bin\ klasörünün oluşturulduğunu ve MSBuildSample uygulaması içerdiğini doğrulamak için **dizini depo**.  
+2. \Bin\ klasörünün oluşturulduğunu ve MSBuildSample uygulaması içerdiğini doğrulamak için **dizini depo**.  
   
-3.  Yazarak uygulamayı test **Bin\MSBuildSample**.  
+3. Yazarak uygulamayı test **Bin\MSBuildSample**.  
   
      **Hello, world!** iletisi görüntülenmelidir.  
   
@@ -325,37 +325,37 @@ ms.locfileid: "59648828"
 ## <a name="testing-the-build-targets"></a>Oluşturulmuş hedefleri test etme  
  Proje dosyasının bu özelliklerini sınamak için yeni yapı hedeflerini çalıştırabilirsiniz:  
   
--   Varsayılan derlemeyi oluşturma.  
+- Varsayılan derlemeyi oluşturma.  
   
--   Uygulama adını komut isteminde ayarlama.  
+- Uygulama adını komut isteminde ayarlama.  
   
--   Başka bir uygulama oluşturulmadan önce uygulamayı silme.  
+- Başka bir uygulama oluşturulmadan önce uygulamayı silme.  
   
--   Başka bir uygulama oluşturmadan uygulamayı silme.  
+- Başka bir uygulama oluşturmadan uygulamayı silme.  
   
 #### <a name="to-test-the-build-targets"></a>Yapı hedeflerini test etmek için  
   
-1.  Komut isteminde **msbuild, helloworld.csproj /p:AssemblyName Greetings =**.  
+1. Komut isteminde **msbuild, helloworld.csproj /p:AssemblyName Greetings =**.  
   
      Kullanmadığınız **/t** hedefi açıkça ayarlamak için geçiş, MSBuild varsayılan derleme hedefini çalıştırır. **/P** geçiş geçersiz kılmaları `AssemblyName` özelliği ve yeni değeri verir `Greetings`. Bu, \Bin\ klasöründe yeni bir uygulama, Greetings.exe neden olur.  
   
-2.  \Bin\ klasörünün MSBuildSample uygulaması hem de yeni Greetings uygulaması içerdiğini doğrulamak için şunu yazın **dizini depo**.  
+2. \Bin\ klasörünün MSBuildSample uygulaması hem de yeni Greetings uygulaması içerdiğini doğrulamak için şunu yazın **dizini depo**.  
   
-3.  Yazarak Greetings uygulamasını test **Bin\Greetings**.  
+3. Yazarak Greetings uygulamasını test **Bin\Greetings**.  
   
      **Hello, world!** iletisi görüntülenmelidir.  
   
-4.  Yazarak MSBuildSample uygulamasını silin **msbuild, helloworld.csproj /t: temiz**.  
+4. Yazarak MSBuildSample uygulamasını silin **msbuild, helloworld.csproj /t: temiz**.  
   
      Bu varsayılan olan uygulamayı kaldırmak için temizleme görevini çalıştırır `AssemblyName` özellik değeri `MSBuildSample`.  
   
-5.  Yazarak Greetings uygulamasını silin **msbuild, helloworld.csproj /t: temiz /p:AssemblyName Greetings =**.  
+5. Yazarak Greetings uygulamasını silin **msbuild, helloworld.csproj /t: temiz /p:AssemblyName Greetings =**.  
   
      Bu uygulamanın kaldırmak için temizleme görevini çalıştırır verilen **AssemblyName** özellik değeri `Greetings`.  
   
-6.  \Bin\ klasörünün artık boş olduğunu doğrulamak için **dizini depo**.  
+6. \Bin\ klasörünün artık boş olduğunu doğrulamak için **dizini depo**.  
   
-7.  Tür **msbuild**.  
+7. Tür **msbuild**.  
   
      Bir proje dosyası belirtilmemiş olsa da, geçerli klasörde yalnızca bir proje dosyası olduğundan MSBuild helloworld.csproj dosyasını oluşturur. Bu, \Bin\ klasöründe MSBuildSample uygulamasının neden olur.  
   
@@ -366,7 +366,7 @@ ms.locfileid: "59648828"
   
 #### <a name="to-build-incrementally"></a>Artımlı olarak oluşturmak için  
   
-1.  Proje dosyasında bu öznitelikleri açılış yapı hedefine ekleyin:  
+1. Proje dosyasında bu öznitelikleri açılış yapı hedefine ekleyin:  
   
     ```  
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"  
@@ -383,7 +383,7 @@ ms.locfileid: "59648828"
     </Target>  
     ```  
   
-2.  Yapı hedefi yazarak test edin **msbuild /v:d** komut isteminde.  
+2. Yapı hedefi yazarak test edin **msbuild /v:d** komut isteminde.  
   
      HelloWorld.csproj'nin varsayılan proje dosyası olduğunu ve bu yapı varsayılan hedef olduğunu unutmayın.  
   

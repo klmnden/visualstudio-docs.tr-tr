@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073664"
 ---
 # <a name="how-to-search-for-topics"></a>Nasıl yapılır: Konu arayın
 
@@ -23,18 +23,18 @@ Açmak için **arama** sekmesini, **arama** sekmesinde **Yardım Görüntüleyic
 
 ## <a name="to-perform-a-full-text-search"></a>Tam metin araması gerçekleştirmek için
 
-1.  Arama kutusuna bulmak istediğiniz sözcüğü yazın.
+1. Arama kutusuna bulmak istediğiniz sözcüğü yazın.
 
-2.  Arama sorgusunda, varsa hangi mantıksal ve Gelişmiş arama işleçleri, aramayı uygulamak için belirtin. Tüm kullanılabilir Yardım aranacak işleçleri kullanmayın.
+2. Arama sorgusunda, varsa hangi mantıksal ve Gelişmiş arama işleçleri, aramayı uygulamak için belirtin. Tüm kullanılabilir Yardım aranacak işleçleri kullanmayın.
 
     > [!NOTE]
     > İçinde **Görüntüleyici seçenekleri** iletişim kutusu, bir saat ve birincil yerel ayarınız İngilizce değilse, İngilizce içeriği dahil edilip edilmeyeceğini görüntülemek için arama sonuçlarının maksimum sayısı gibi ek tercihleri belirtebilirsiniz.
 
-3.  Seçin **Enter** anahtarı.
+3. Seçin **Enter** anahtarı.
 
      Bir arama varsayılan olarak en fazla 200 isabetli okuma sayısının döndürür ve bunları arama sonuçlarını alanında görüntüler. Her sonuç için ek sürüm bilgileri, içeriğe bağlı olarak görüntülenebilir.
 
-4.  Bir konu görüntülemek için sonuçlar listesinden başlığını seçin.
+4. Bir konu görüntülemek için sonuçlar listesinden başlığını seçin.
 
 ## <a name="full-text-search-tips"></a>Tam metin arama ipuçları
 
@@ -66,11 +66,11 @@ Gelişmiş arama işleçleri kullanarak, arama sonuçlarını daha fazla kısıt
 
 Arama algoritması derece yardımcı olmak için belirli ölçütleri geçerli arama sonuçları daha yüksek veya düşük sonuçlar listesinde. Genel olarak:
 
-1.  Başlık arama sözcükleri içeren içerikleri olmayan içerik daha yüksek önem derecesi.
+1. Başlık arama sözcükleri içeren içerikleri olmayan içerik daha yüksek önem derecesi.
 
-2.  Arama sözcükleri yakınında içeren içerik olmayan içerik daha yüksek önem derecesi.
+2. Arama sözcükleri yakınında içeren içerik olmayan içerik daha yüksek önem derecesi.
 
-3.  Daha yüksek yoğunlukta arama sözcükleri içeren içeriği daha düşük bir arama sözcükleri yoğunluğu olan içeriği, daha yüksek önem derecesi.
+3. Daha yüksek yoğunlukta arama sözcükleri içeren içeriği daha düşük bir arama sözcükleri yoğunluğu olan içeriği, daha yüksek önem derecesi.
 
 ### <a name="stopwords"> Sözcük aramaları (durdurma sözcükleri) yoksayıldı </a>
 

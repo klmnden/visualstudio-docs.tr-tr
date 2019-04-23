@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b0692a790955c537c00e35be97d52583862e5a3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109250"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Hızlı Başlangıç: Test Gezgini ile test güdümlü geliştirme
 
@@ -94,15 +94,15 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
 
 4. Yöntemi testten oluşturun.
 
-   1.  İmleci üzerine getirin `Rooter`, kısayol menüsünden seçin **Oluştur** > **yeni türü**.
+   1. İmleci üzerine getirin `Rooter`, kısayol menüsünden seçin **Oluştur** > **yeni türü**.
 
-   2.  İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte olduğu `MyMath`.
+   2. İçinde **yeni tür Oluştur** iletişim kutusu, kümesi **proje** sınıf kitaplığı projesi. Bu örnekte olduğu `MyMath`.
 
-   3.  İmleci üzerine getirin `SquareRoot`, kısayol menüsünden seçin **Oluştur** > **metot taslağı**.
+   3. İmleci üzerine getirin `SquareRoot`, kısayol menüsünden seçin **Oluştur** > **metot taslağı**.
 
 5. Birim testini çalıştırın.
 
-   1.  Üzerinde **Test** menüsünde seçin **birim testlerini Çalıştır** > **tüm testleri**.
+   1. Üzerinde **Test** menüsünde seçin **birim testlerini Çalıştır** > **tüm testleri**.
 
         Çözüm derlenir ve çalışır.
 
@@ -122,7 +122,7 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Her değişiklikten sonra tüm sınamalardan başarılı olun
 
-1.  İçinde *MyMath\Rooter.cs*, kodunu geliştirin `SquareRoot`:
+1. İçinde *MyMath\Rooter.cs*, kodunu geliştirin `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -131,7 +131,7 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
      }
     ```
 
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.
 
      Kod derlenir ve test çalışır.
 
@@ -141,7 +141,7 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Giriş aralığını genişletmek için testler ekleme
 
-1.  Kodunuzun her durumda çalıştığından emin olmak için daha geniş bir girdi değerleri aralığını deneyen testler ekleyin.
+1. Kodunuzun her durumda çalıştığından emin olmak için daha geniş bir girdi değerleri aralığını deneyen testler ekleyin.
 
     > [!TIP]
     > Geçen var olan testlerden geçilenleri değiştirmekten kaçının. Bunun yerine yeni testler ekleyin. Varolan testleri yalnızca kullanıcı gereksinimleri değiştiğinde değiştirin. Bu ilke, kod genişletmeye çalışırken mevcut işlevselliği kaybetmemenizi sağlamaya yardımcı olur.
@@ -172,13 +172,13 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
     }
     ```
 
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.
 
      İlk test başarılı olsa da yeni test başarısız olur.
 
      Hata noktasını bulmak için başarısız olan testi seçin ve ardından, Test Gezgini'nin alt bölümünde üst öğesi seçin **yığın izlemesi**.
 
-3.  Neyin yanlış olabileceğini görmek için test altındaki yöntemi inceleyin. İçinde `MyMath.Rooter` sınıfında, kodu yeniden yazın:
+3. Neyin yanlış olabileceğini görmek için test altındaki yöntemi inceleyin. İçinde `MyMath.Rooter` sınıfında, kodu yeniden yazın:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,13 +194,13 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
     }
     ```
 
-4.  Test Gezgini'nde seçin **tümünü Çalıştır**.
+4. Test Gezgini'nde seçin **tümünü Çalıştır**.
 
      Şimdi iki test geçirin.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Olağanüstü durumlar için testler ekleme
 
-1.  Negatif girişler için bir test ekleyin:
+1. Negatif girişler için bir test ekleyin:
 
     ```csharp
     [TestMethod]
@@ -219,15 +219,15 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
      }
     ```
 
-2.  Test Gezgini'nde seçin **tümünü Çalıştır**.
+2. Test Gezgini'nde seçin **tümünü Çalıştır**.
 
      Yöntem testte döngüye girer ve el ile iptal edilmelidir.
 
-3.  Seçin **iptal**.
+3. Seçin **iptal**.
 
      Test 10 saniye sonra durur.
 
-4.  Yöntem kodunu düzeltin:
+4. Yöntem kodunu düzeltin:
 
     ```csharp
 
@@ -240,13 +240,13 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
     ...
     ```
 
-5.  Test Gezgini'nde seçin **tümünü Çalıştır**.
+5. Test Gezgini'nde seçin **tümünü Çalıştır**.
 
      Tüm testler geçer.
 
 #### <a name="refactor-without-changing-tests"></a>Testleri değiştirmeden yeniden düzenleme
 
-1.  Kodu basitleştirin, ancak testleri değiştirmeyin.
+1. Kodu basitleştirin, ancak testleri değiştirmeyin.
 
     > [!TIP]
     > A *yeniden düzenleme* daha iyi kod yapmak veya kodu anlamayı kolaylaştırmak için hedeflenen bir değişikliktir. Kod davranışını değiştirmek üzere tasarlanmamıştır ve bu nedenle testler değiştirilmez.
@@ -275,7 +275,7 @@ Bu kılavuzda Microsoft birim testi çerçevesini kullanarak C# içinde test edi
     }
     ```
 
-2.  Seçin **çalıştırması**.
+2. Seçin **çalıştırması**.
 
      Tüm testler hala başarılı.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc3619136b103230efae183b49d4c7d3ba00880d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102204"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Nasıl yapılır: İleti günlüğü görüntülemeyi Durdur ve Başlat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Olduğunda bir [iletiler görünümünü](../debugger/messages-view.md) penceres
   
 ### <a name="to-start-the-message-log-display"></a>İleti günlüğü görüntülemeyi başlatmak için  
   
-1.  Gelen **iletileri** menüsünde seçin **günlüğü Başlat**.  
+1. Gelen **iletileri** menüsünde seçin **günlüğü Başlat**.  
   
 ### <a name="to-stop-the-message-log-display"></a>İleti günlüğü görüntülemeyi durdurmak için  
   
-1.  Gelen **iletileri** menüsünde seçin **Günlüğü Durdur**.
+1. Gelen **iletileri** menüsünde seçin **Günlüğü Durdur**.

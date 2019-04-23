@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076074"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Kodlanmış UI testleri için en iyi uygulamalar
 
@@ -26,29 +26,29 @@ Bu konuda geliştirme kodlanmış UI testleri için bazı öneriler açıklanmak
 
 Esnek bir kodlanmış UI testi oluşturmak için aşağıdaki kılavuzları kullanın.
 
--   Kullanım **kodlanmış UI Test Oluşturucusu** mümkün olduğunda.
+- Kullanım **kodlanmış UI Test Oluşturucusu** mümkün olduğunda.
 
--   Değişiklik yapmayın *UIMap.Designer.cs* doğrudan dosya. Dosyayı değiştirirseniz, dosyadaki değişikliklerin üzerine yazılır.
+- Değişiklik yapmayın *UIMap.Designer.cs* doğrudan dosya. Dosyayı değiştirirseniz, dosyadaki değişikliklerin üzerine yazılır.
 
--   Testinizi kayıtlı yöntemleri bir dizi oluşturun. Bir yöntem kayıt hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md).
+- Testinizi kayıtlı yöntemleri bir dizi oluşturun. Bir yöntem kayıt hakkında daha fazla bilgi için bkz: [kodlanmış UI testleri oluşturma](../test/use-ui-automation-to-test-your-code.md).
 
--   Kaydedilen her yöntem, bir tek sayfalı, form veya iletişim kutusu davranmalıdır. Her yeni sayfa, form veya iletişim kutusu için yeni bir test yöntemi oluşturun.
+- Kaydedilen her yöntem, bir tek sayfalı, form veya iletişim kutusu davranmalıdır. Her yeni sayfa, form veya iletişim kutusu için yeni bir test yöntemi oluşturun.
 
--   Bir yöntem, anlamlı bir yöntem adı yerine varsayılan adı kullanın. Anlamlı bir ad, yöntemin tanımlamanıza yardımcı olur.
+- Bir yöntem, anlamlı bir yöntem adı yerine varsayılan adı kullanın. Anlamlı bir ad, yöntemin tanımlamanıza yardımcı olur.
 
--   Mümkün olduğunda, kaydedilen her yöntem için 10'dan az eylemleri sınırlayın. Modüler bu yaklaşım UI değişirse bir yöntem değiştirilecek kolaylaştırır.
+- Mümkün olduğunda, kaydedilen her yöntem için 10'dan az eylemleri sınırlayın. Modüler bu yaklaşım UI değişirse bir yöntem değiştirilecek kolaylaştırır.
 
--   Her bir onaylama işlemi kullanarak oluşturduğunuz **kodlanmış UI Test Oluşturucusu**, bu otomatik olarak ekler için onay yöntemi *UIMap.Designer.cs* dosya.
+- Her bir onaylama işlemi kullanarak oluşturduğunuz **kodlanmış UI Test Oluşturucusu**, bu otomatik olarak ekler için onay yöntemi *UIMap.Designer.cs* dosya.
 
--   Kullanıcı Arabirimi (UI) değişirse, onaylama yöntemlerini veya test yöntemlerini yeniden kaydedin veya varolan bir test yöntemi etkilenen bölümleri yeniden kaydedin.
+- Kullanıcı Arabirimi (UI) değişirse, onaylama yöntemlerini veya test yöntemlerini yeniden kaydedin veya varolan bir test yöntemi etkilenen bölümleri yeniden kaydedin.
 
--   Ayrı bir oluşturma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> test altındaki uygulamanız her bir modül için dosya. Daha fazla bilgi için [birden çok UI eşlemesi bulunan büyük uygulamaları sınama](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Ayrı bir oluşturma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> test altındaki uygulamanız her bir modül için dosya. Daha fazla bilgi için [birden çok UI eşlemesi bulunan büyük uygulamaları sınama](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   UI denetimleri oluşturduğunuzda, test edilen uygulamada anlamlı adlar kullanın. Anlamlı adlar kullanarak otomatik olarak oluşturulan denetim adları için büyük açıklık ve kullanılabilirlik sağlar.
+- UI denetimleri oluşturduğunuzda, test edilen uygulamada anlamlı adlar kullanın. Anlamlı adlar kullanarak otomatik olarak oluşturulan denetim adları için büyük açıklık ve kullanılabilirlik sağlar.
 
--   Onaylamalar API'SİYLE kodlayarak oluşturuyorsanız kısmında bir onayları yöntemi oluşturma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfının *UIMap.cs* dosya. Onaylama işlemi yürütmek için test yönteminizden bu yöntemi çağırın.
+- Onaylamalar API'SİYLE kodlayarak oluşturuyorsanız kısmında bir onayları yöntemi oluşturma <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> sınıfının *UIMap.cs* dosya. Onaylama işlemi yürütmek için test yönteminizden bu yöntemi çağırın.
 
--   API ile doğrudan kod yazıyor olun, oluşturulan sınıflardaki özellikleri ve yöntemleri kullanın *UIMap.Designer.cs* , mümkün olduğunca kodunuzda dosya. Bu sınıflar, iş yapmak daha kolay, daha güvenilir ve daha üretken olmanıza yardımcı olur.
+- API ile doğrudan kod yazıyor olun, oluşturulan sınıflardaki özellikleri ve yöntemleri kullanın *UIMap.Designer.cs* , mümkün olduğunca kodunuzda dosya. Bu sınıflar, iş yapmak daha kolay, daha güvenilir ve daha üretken olmanıza yardımcı olur.
 
 Kodlanmış UI testleri birçok değişiklik kullanıcı arabiriminde otomatik olarak uyum sağlar. Örneğin, bir kullanıcı Arabirimi öğesi konumuna veya rengine değiştiyse, çoğu zaman kodlanmış UI testi hala doğru öğeyi bulur.
 
@@ -58,15 +58,15 @@ Bir test çalıştırması sırasında bir dizi arama özellikleri'ni kullanarak
 
 Kullanıcı arabirimleri, geliştirme sırasında sık sık değiştirir. Bu değişikliklerin etkisini azaltmak için bazı yollar şunlardır:
 
--   Bu denetime başvuran kaydedilen yöntemi bulup kullanın **kodlanmış UI Test Oluşturucusu** bu yöntemin eylemleri yeniden kaydetmek için. Varolan eylemlerin üzerine yazmak için yöntem aynı adı kullanabilirsiniz.
+- Bu denetime başvuran kaydedilen yöntemi bulup kullanın **kodlanmış UI Test Oluşturucusu** bu yöntemin eylemleri yeniden kaydetmek için. Varolan eylemlerin üzerine yazmak için yöntem aynı adı kullanabilirsiniz.
 
--   Bir denetimi artık geçerli olmayan bir onaylama işlemi varsa:
+- Bir denetimi artık geçerli olmayan bir onaylama işlemi varsa:
 
-    -   Onaylama içeren yöntemi silin.
+    - Onaylama içeren yöntemi silin.
 
-    -   Test yönteminin'dan bu yöntem çağrısını kaldırın.
+    - Test yönteminin'dan bu yöntem çağrısını kaldırın.
 
-    -   UI denetiminin üzerine artı düğmesi sürükleyerek yeni bir onaylama Ekle, UI haritasını açın ve yeni onaylama Ekle.
+    - UI denetiminin üzerine artı düğmesi sürükleyerek yeni bir onaylama Ekle, UI haritasını açın ve yeni onaylama Ekle.
 
 Kodlanmış UI testleri nasıl kaydedileceği hakkında daha fazla bilgi için bkz: [kodunuzu test etmek için kullanım UI Otomasyonu](../test/use-ui-automation-to-test-your-code.md).
 

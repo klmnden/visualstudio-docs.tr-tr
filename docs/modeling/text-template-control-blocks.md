@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 939198eb18dd8fd572f1bd5bf3f4a21b44a5cf2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105350"
 ---
 # <a name="text-template-control-blocks"></a>Metin Şablonu Denetim Blokları
 Denetim blokları çıktıyı değiştirmek için metin şablonunuza kod yazmanıza olanak sağlar. Denetim blokları, bunların açma köşeli parantez ayırt üç tür vardır:
 
--   `<# Standard control blocks #>` deyim içerebilir.
+- `<# Standard control blocks #>` deyim içerebilir.
 
--   `<#= Expression control blocks #>` ifadeleri içerebilir.
+- `<#= Expression control blocks #>` ifadeleri içerebilir.
 
--   `<#+ Class feature control blocks #>` yöntemler, alanlar ve özellikler içerebilir.
+- `<#+ Class feature control blocks #>` yöntemler, alanlar ve özellikler içerebilir.
 
 ## <a name="standard-control-block"></a>Standart denetim bloğu
  Standart denetim blokları ifadeleri içerir. Örneğin, aşağıdaki standart bloğu tüm özniteliklerin adlarıyla XML belgesinde alır:
@@ -145,17 +145,17 @@ Some text.
 
  Denetim blokları kullandığınızda aşağıdaki maddeler akılda tutulması:
 
--   **Dili.** C# veya Visual Basic kodu bir metin şablonunda kullanabilirsiniz. Varsayılan dil C# olmakla birlikte, Visual Basic ile belirttiğiniz `language` parametresinin `template` yönergesi. (Hakkında daha fazla bilgi için `template` yönergesine bakın [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).)
+- **Dili.** C# veya Visual Basic kodu bir metin şablonunda kullanabilirsiniz. Varsayılan dil C# olmakla birlikte, Visual Basic ile belirttiğiniz `language` parametresinin `template` yönergesi. (Hakkında daha fazla bilgi için `template` yönergesine bakın [T4 metin şablonu yönergeleri](../modeling/t4-text-template-directives.md).)
 
      Denetim blokları kullandığınız dil dil veya bir metin şablonunda oluşturmak metin biçimi ile yapmak için hiçbir şey vardır. C# Visual Basic kod veya bunun tersini de kullanarak oluşturabilirsiniz.
 
      Dahil olan tüm metin şablonları dahil olmak üzere belirli bir metin şablonunda, yalnızca bir dil kullanabilirsiniz `include` yönergesi.
 
--   **Yerel değişkenler.** Standart ve ifade denetimindeki tüm kod engeller bu yana bir metin şablonu tek bir yöntem oluşturulur ve olduğundan yerel değişkenlerin adlarını ile çakışma olmadığından emin olmanız gerekir. Diğer metin şablonları dahil olmak üzere, tüm dahil şablonlarıyla değişken adlarının benzersiz olduğundan emin olmanız gerekir. Bu emin olmanın bir yolu, bir dize içinde bildirilen metin şablonunu tanımlayan her yerel değişkenin adı eklemektir.
+- **Yerel değişkenler.** Standart ve ifade denetimindeki tüm kod engeller bu yana bir metin şablonu tek bir yöntem oluşturulur ve olduğundan yerel değişkenlerin adlarını ile çakışma olmadığından emin olmanız gerekir. Diğer metin şablonları dahil olmak üzere, tüm dahil şablonlarıyla değişken adlarının benzersiz olduğundan emin olmanız gerekir. Bu emin olmanın bir yolu, bir dize içinde bildirilen metin şablonunu tanımlayan her yerel değişkenin adı eklemektir.
 
      Özellikle birden çok metin şablonları eklerken, bunları bildirdiğinizde, yerel değişkenleri mantıklı değerlere başlatmak için de iyi bir fikirdir.
 
--   **Denetim blokları iç içe geçmiş.** Denetim blokları diğer içinde bulunmayabilir. Başka bir açmadan önce her zaman belirli bir denetim bloğu sonlandırmanız gerekir. Örneğin, aşağıdaki standart denetim bloğu bir parçası olarak bir ifade bloğu metne nasıl gösterir.
+- **Denetim blokları iç içe geçmiş.** Denetim blokları diğer içinde bulunmayabilir. Başka bir açmadan önce her zaman belirli bir denetim bloğu sonlandırmanız gerekir. Örneğin, aşağıdaki standart denetim bloğu bir parçası olarak bir ifade bloğu metne nasıl gösterir.
 
     ```
     <#
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
--   **Yeniden düzenleme.** Metin şablonlarınızı kısa ve kolay anlaşılır tutulabilmesi için sınıf özelliği bloklarını yardımcı işlevler halinde yeniden kullanılabilir kod hesaba katarak veya devralınan kendi metin Şablon sınıfı oluşturarak yinelenen kodlardan kaçının önerilir Microsoft.VisualStudio.texttemplating.texttransformation ile sınıftan.
+- **Yeniden düzenleme.** Metin şablonlarınızı kısa ve kolay anlaşılır tutulabilmesi için sınıf özelliği bloklarını yardımcı işlevler halinde yeniden kullanılabilir kod hesaba katarak veya devralınan kendi metin Şablon sınıfı oluşturarak yinelenen kodlardan kaçının önerilir Microsoft.VisualStudio.texttemplating.texttransformation ile sınıftan.

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110173"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Nasıl yapılır: Belgelerde metni program aracılığıyla gizleme
   Bir belgede metin ayarlayarak gizleyebilirsiniz <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> özelliği <xref:Microsoft.Office.Interop.Word.Range.Font%2A> metin belirli bir dizi.
@@ -29,17 +29,17 @@ ms.locfileid: "56646089"
 
 ## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Belgeyi yazdırılırken yer işareti denetimdeki metin gizlemek için
 
-1.  Belirtilen bir aralıktaki tüm metni gizleyen bir yordamı oluşturun.
+1. Belirtilen bir aralıktaki tüm metni gizleyen bir yordamı oluşturun.
 
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
      [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
 
-2.  Belirli bir aralıktaki tüm metinleri gösteren bir yordamı oluşturun.
+2. Belirli bir aralıktaki tüm metinleri gösteren bir yordamı oluşturun.
 
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
      [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
 
-3.  Yer işaretine aralığını geçirmek `HideText` yöntemi, belgeyi yazdır ve ardından aynı aralığa geçmesi `UnhideText` yöntemi.
+3. Yer işaretine aralığını geçirmek `HideText` yöntemi, belgeyi yazdır ve ardından aynı aralığa geçmesi `UnhideText` yöntemi.
 
      Aşağıdaki kod örneği belge düzeyi özelleştirmesinde kullanılabilir. Bu örneği kullanmak için çalıştırın `ThisDocument` projenizdeki sınıfı.
 

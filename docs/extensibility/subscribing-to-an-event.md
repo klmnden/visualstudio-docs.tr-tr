@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d6f5259b44421d0a88fbfadae5930592e589c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105110"
 ---
 # <a name="subscribing-to-an-event"></a>Bir Olaya Abone Olma
 Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bir araç penceresi oluşturma açıklanır. Araç penceresi uygulayan bir kullanıcı denetimi barındıran <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Yöntemi arabirimi olaylarına bağlanır.
@@ -28,13 +28,13 @@ Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bi
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Araç penceresi içeren bir uzantı oluşturma
 
-1.  Adlı bir proje oluşturma **RDTExplorer** VSIX şablonuyla ve adlı bir özel araç penceresi öğesi şablonu ekleme **RDTExplorerWindow**.
+1. Adlı bir proje oluşturma **RDTExplorer** VSIX şablonuyla ve adlı bir özel araç penceresi öğesi şablonu ekleme **RDTExplorerWindow**.
 
      Araç penceresi içeren bir uzantı oluşturma hakkında daha fazla bilgi için bkz. [araç penceresi içeren bir uzantı oluşturma](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 #### <a name="to-subscribe-to-rdt-events"></a>RDT olaylarına abone olma
 
-1.  RDTExplorerWindowControl.xaml dosyasını açın ve Sil adlı düğmesi `button1`. Ekleme bir <xref:System.Windows.Forms.ListBox> denetlemek ve varsayılan adı kabul edin. Kılavuz öğesi gibi görünmelidir:
+1. RDTExplorerWindowControl.xaml dosyasını açın ve Sil adlı düğmesi `button1`. Ekleme bir <xref:System.Windows.Forms.ListBox> denetlemek ve varsayılan adı kabul edin. Kılavuz öğesi gibi görünmelidir:
 
     ```xml
     <Grid>
@@ -45,7 +45,7 @@ Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bi
     </Grid>
     ```
 
-2.  RDTExplorerWindow.cs dosyayı kod Görünümü'nde açın. Aşağıdaki using deyimlerini dosyanın başına.
+2. RDTExplorerWindow.cs dosyayı kod Görünümü'nde açın. Aşağıdaki using deyimlerini dosyanın başına.
 
     ```csharp
     using Microsoft.VisualStudio;
@@ -53,24 +53,24 @@ Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bi
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3.  Değiştirme `RDTExplorerWindow` bunu sınıfı türetme yanı sıra, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> sınıfı, bunu uygulayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> arabirimi.
+3. Değiştirme `RDTExplorerWindow` bunu sınıfı türetme yanı sıra, <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> sınıfı, bunu uygulayan <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> arabirimi.
 
     ```csharp
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents
     {. . .}
     ```
 
-4.  Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
+4. Uygulama <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
-    -   Arabirim uygular. İmleç IVsRunningDocTableEvents adına yerleştirin. Sol kenar boşluğunda bir ampul de görürsünüz. Ampul sağındaki aşağı oka tıklayın ve **arabirim uygulama**.
+    - Arabirim uygular. İmleç IVsRunningDocTableEvents adına yerleştirin. Sol kenar boşluğunda bir ampul de görürsünüz. Ampul sağındaki aşağı oka tıklayın ve **arabirim uygulama**.
 
-5.  Arabirimdeki her yönteminde satırı değiştirin `throw new NotImplementedException();` bu:
+5. Arabirimdeki her yönteminde satırı değiştirin `throw new NotImplementedException();` bu:
 
     ```csharp
     return VSConstants.S_OK;
     ```
 
-6.  Bir tanımlama bilgisi alan RDTExplorerWindow sınıfına ekleyin.
+6. Bir tanımlama bilgisi alan RDTExplorerWindow sınıfına ekleyin.
 
     ```csharp
     private uint rdtCookie;
@@ -78,7 +78,7 @@ Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bi
 
      Bu tarafından döndürülen tanımlama bilgisi tutan <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> yöntemi.
 
-7.  RDT etkinliklere kaydolmak için RDTExplorerWindow'ın Initialize() yöntemi yok sayın. Oluşturucuda ToolWindowPane'nın Initialize() yöntemi her zaman Hizmetleri almanız gerekir.
+7. RDT etkinliklere kaydolmak için RDTExplorerWindow'ın Initialize() yöntemi yok sayın. Oluşturucuda ToolWindowPane'nın Initialize() yöntemi her zaman Hizmetleri almanız gerekir.
 
     ```csharp
     protected override void Initialize()
@@ -91,7 +91,7 @@ Bu izlenecek yol, çalıştırılan Belge tablosu (RDT) olaylara yanıt veren bi
 
      <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> Hizmet almak için çağrılan bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> arabirimi. <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> Uygulayan bir nesneye yöntemi bağlanır RDT olayları <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, bu durumda, bir RDTExplorer nesnesi.
 
-8.  RDTExplorerWindow'ın Dispose() yöntemini güncelleştirin.
+8. RDTExplorerWindow'ın Dispose() yöntemini güncelleştirin.
 
     ```csharp
     protected override void Dispose(bool disposing)

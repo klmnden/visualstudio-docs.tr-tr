@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Seçili Visual Studio abonelikleri dahil bir LinkedIn Premium aboneliği bir parçası olarak dahil LinkedIn Learning Avantajı hakkında bilgi edinin.
 searchscope: VS Subscription
-ms.openlocfilehash: bdc7eaf4aa5c7105b996d25494643209b38f51d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108165"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning avantaj olarak Visual Studio abonelikleri
 
@@ -110,8 +110,8 @@ Emin değil hangi aboneliği, kullanmakta olduğunuz?  Bağlanma [ https://my.vi
 Y:  Hayır, LinkedIn Learning teklif, yalnızca yeni abonelere sunulmamaktadır.
 
 ## <a name="support-resources"></a>Destek kaynakları
--  LinkedIn Learning yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
+- LinkedIn Learning yardıma mı ihtiyacınız var?  Bu kaynaklara göz atın:
     - Yardım [LinkedIn Learning kullanarak](https://www.linkedin.com/help/learning).
     - Genel sorular hakkında Yardım [LinkedIn](https://www.linkedin.com/help/linkedin) hesaplarını ve profillerini oluşturma ve ağınızı koruma gibi.
--  Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
--  Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).
+- Satışlar, abonelikler, hesaplar ve faturalandırma için Visual Studio abonelikleri ile ilgili Yardım almak için Visual Studio başvurun [abonelikleri desteği](https://visualstudio.microsoft.com/subscriptions/support/).
+- Visual Studio IDE, Azure DevOps Hizmetleri veya diğer Visual Studio ürün veya hizmetler hakkında bir sorunuz mu var?  Ziyaret [Visual Studio desteği](https://visualstudio.microsoft.com/support/).

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075798"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp hedef biçimi değişken işleme
 Piksel biçimlendirmek için DXGI_FORMAT_B5G6R5_UNORM tüm ayarlar, işleme hedefleri ve arabellek yedekleyin.
@@ -48,11 +48,11 @@ Takas zinciri bir parçası olan uygulamaları 16 bpp desteklemeyen bir arka ara
 ## <a name="remarks"></a>Açıklamalar
  İşleme hedef biçim üzerinde yapılan her çağrı için DXGI_FORMAT_B5G6R5_UNORM sıfırlanır `ID3D11Device::CreateTexture2D` işleme hedefi oluşturur. Özellikle, pDesc içinde geçirilen D3D11_TEXTURE2D_DESC nesnesi bir işleme hedefi açıkladığında biçimi geçersiz; Yani:
 
--   BindFlags üyesi, ayarlayın D3D11_BIND_REDNER_TARGET bayrağı vardır.
+- BindFlags üyesi, ayarlayın D3D11_BIND_REDNER_TARGET bayrağı vardır.
 
--   BindFlags üye temizlenmiş D3D11_BIND_DEPTH_STENCIL bayrağı vardır.
+- BindFlags üye temizlenmiş D3D11_BIND_DEPTH_STENCIL bayrağı vardır.
 
--   Kullanım üye D3D11_USAGE_DEFAULT için ayarlanır.
+- Kullanım üye D3D11_USAGE_DEFAULT için ayarlanır.
 
 ## <a name="restrictions-and-limitations"></a>Kısıtlamalar ve sınırlamalar
  Alfa kanalını B5G6R5 biçim olmadığından, alfa içerik bu değişken tarafından korunmaz. Uygulamanızın işleme, işleme hedefi bir alfa kanalına gerektiriyorsa, yalnızca B5G6R5 biçimine geçiş yapamazsınız.

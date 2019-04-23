@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098434"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Nasıl yapılır: Başlamak için ikili dosya belirtme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "54759899"
   
  **Gereksinimler**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>Başlatılacak yürütülebilir dosyayı belirtmek için  
   
-1.  İçinde **performans Gezgini**ikili hedef sağ tıklayın ve ardından **özellikleri**.  
+1. İçinde **performans Gezgini**ikili hedef sağ tıklayın ve ardından **özellikleri**.  
   
-2.  İçinde **özellik sayfaları** iletişim kutusu, tıklayın **başlatma** özellikleri.  
+2. İçinde **özellik sayfaları** iletişim kutusu, tıklayın **başlatma** özellikleri.  
   
-3.  Seçin **proje özelliklerini geçersiz kılma** onay kutusu.  
+3. Seçin **proje özelliklerini geçersiz kılma** onay kutusu.  
   
-4.  İçinde **başlatılacak yürütülebilir** metin kutusunda, dosya konumunu belirtin.  
+4. İçinde **başlatılacak yürütülebilir** metin kutusunda, dosya konumunu belirtin.  
   
-5.  İçinde **bağımsız değişkenleri** metin kutusunda, uygulamayı başlatmak için gerekli bağımsız değişkenleri belirtin.  
+5. İçinde **bağımsız değişkenleri** metin kutusunda, uygulamayı başlatmak için gerekli bağımsız değişkenleri belirtin.  
   
-6.  İçinde **çalışma dizini** metin kutusunda, dizin konumunu belirtin.  
+6. İçinde **çalışma dizini** metin kutusunda, dizin konumunu belirtin.  
   
-7.  **Tamam**'ı tıklatın.  
+7. **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Performans Oturumlarını Yapılandırma](../profiling/configuring-performance-sessions.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099600"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Nasıl yapılır: Gereç için Web.Config dosyalarını değiştirme ve profil ASP.NET Web uygulamaları dinamik olarak derlenmiş.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Yapılandırma/çalışma zamanı/assemblyBinding/dependentAssembly öğesi olarak ASPNetHelper derleme eklemek için  
   
-1.  Gerekirse, ekleme **çalışma zamanı** öğesi alt öğesi olarak **yapılandırma** öğesi; Aksi halde, sonraki adıma geçin.  
+1. Gerekirse, ekleme **çalışma zamanı** öğesi alt öğesi olarak **yapılandırma** öğesi; Aksi halde, sonraki adıma geçin.  
   
      **Çalışma zamanı** öğesi özniteliklere sahip değildir. **Yapılandırma** öğesi yalnızca bir olabilir **çalışma zamanı** alt öğesi.  
   
-2.  Gerekirse, ekleme **assemblyBinding** öğesi alt öğesi olarak **çalışma zamanı** öğesi; Aksi halde, sonraki adıma geçin.  
+2. Gerekirse, ekleme **assemblyBinding** öğesi alt öğesi olarak **çalışma zamanı** öğesi; Aksi halde, sonraki adıma geçin.  
   
      **Çalışma zamanı** öğesi yalnızca bir olabilir **assemblyBinding** öğesi.  
   
-3.  Aşağıdaki öznitelik adı ekleyin ve değerini **assemblyBinding** öğesi:  
+3. Aşağıdaki öznitelik adı ekleyin ve değerini **assemblyBinding** öğesi:  
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
     |**xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Ekleme bir **dependentAssembly** öğesi alt öğesi olarak **assemblyBinding** öğesi.  
+4. Ekleme bir **dependentAssembly** öğesi alt öğesi olarak **assemblyBinding** öğesi.  
   
      **DependentAssembly** öğesi özniteliklere sahip değildir.  
   
-5.  Ekleme bir **assemblyIdentity** öğesi alt öğesi olarak **dependentAssembly** öğesi.  
+5. Ekleme bir **assemblyIdentity** öğesi alt öğesi olarak **dependentAssembly** öğesi.  
   
-6.  Aşağıdaki öznitelik adları ve değerleri eklemek **assemblyIdentity** öğesi:  
+6. Aşağıdaki öznitelik adları ve değerleri eklemek **assemblyIdentity** öğesi:  
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**Kültür**|**Nötr**|  
   
-7.  Ekleme bir **codeBase** öğesi alt öğesi olarak **dependentAssembly** öğesi.  
+7. Ekleme bir **codeBase** öğesi alt öğesi olarak **dependentAssembly** öğesi.  
   
-8.  Aşağıdaki öznitelik adları ve değerleri eklemek **codeBase** öğesi:  
+8. Aşağıdaki öznitelik adları ve değerleri eklemek **codeBase** öğesi:  
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Profiler işlem sonrası adımı configuration/system.web/compilation öğesine eklemek için  
   
-1.  Gerekirse, ekleme **system.web** öğesi alt öğesi olarak **yapılandırma** öğesi; Aksi halde, sonraki adıma geçin.  
+1. Gerekirse, ekleme **system.web** öğesi alt öğesi olarak **yapılandırma** öğesi; Aksi halde, sonraki adıma geçin.  
   
      **System.web** öğesi özniteliklere sahip değildir. **Yapılandırma** öğesi yalnızca bir olabilir **system.web** alt öğesi.  
   
-2.  Gerekirse, ekleme **derleme** öğesi alt öğesi olarak **system.web** öğesi; Aksi halde, sonraki adıma geçin.  
+2. Gerekirse, ekleme **derleme** öğesi alt öğesi olarak **system.web** öğesi; Aksi halde, sonraki adıma geçin.  
   
      **System.web** öğesi yalnızca bir olabilir **derleme** alt öğesi.  
   
-3.  Mevcut herhangi özniteliklerden kaldırın **derleme** öğesini ve aşağıdaki öznitelik adı ve değeri ekleyin:  
+3. Mevcut herhangi özniteliklerden kaldırın **derleme** öğesini ve aşağıdaki öznitelik adı ve değeri ekleyin:  
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ Kullanabileceğiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dinamik olarak 
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Profiler konumu ayarları configuration/appSettings öğesine eklemek için  
   
-1.  Gerekirse, ekleme **appSettings** öğesi alt öğesi olarak **yapılandırma** öğesi; Aksi halde, sonraki adıma geçin.  
+1. Gerekirse, ekleme **appSettings** öğesi alt öğesi olarak **yapılandırma** öğesi; Aksi halde, sonraki adıma geçin.  
   
      **AppSettings** öğesi özniteliklere sahip değildir. **Yapılandırma** öğesi yalnızca bir olabilir **appSettings** alt öğesi.  
   
-2.  Ekleme bir **ekleme** öğesi alt öğesi olarak **appSettings** öğesi.  
+2. Ekleme bir **ekleme** öğesi alt öğesi olarak **appSettings** öğesi.  
   
-3.  Aşağıdaki öznitelik adları ve değerleri eklemek **ekleme** öğesi:  
+3. Aşağıdaki öznitelik adları ve değerleri eklemek **ekleme** öğesi:  
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  
     |**anahtar**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Başka bir **ekleme** öğesi alt öğesi olarak **appSettings** öğesi.  
+4. Başka bir **ekleme** öğesi alt öğesi olarak **appSettings** öğesi.  
   
-5.  Aşağıdaki öznitelik adları ve değerleri için bu ekleme **ekleme** öğesi:  
+5. Aşağıdaki öznitelik adları ve değerleri için bu ekleme **ekleme** öğesi:  
   
     |Öznitelik adı|Öznitelik değeri|  
     |--------------------|---------------------|  

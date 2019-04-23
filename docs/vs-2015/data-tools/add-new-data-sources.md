@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102764"
 ---
 # <a name="add-new-data-sources"></a>Yeni veri kaynağı ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* bir veri deposuna bağlanan ve bir .NET uygulaması için verileri ortaya çıkaran .NET nesneleri gösterir. Visual Studio tasarımcıları, veritabanı nesnelerini sürükleyip yükleyen Veri formları bağlayan ortak kod oluşturmak için veri kaynağı çıkışını tüketebileceği **veri kaynakları** penceresi. Bu türdeki veri kaynağının olabilir:  
   
--   Bazı tür veritabanı ile ilişkili bir Entity Framework modelini sınıfta.  
+- Bazı tür veritabanı ile ilişkili bir Entity Framework modelini sınıfta.  
   
--   Bazı tür veritabanı ile ilişkili bir veri kümesi.  
+- Bazı tür veritabanı ile ilişkili bir veri kümesi.  
   
--   Bir Windows Communication Foundation (WCF) veri hizmeti veya bir REST hizmeti gibi bir ağ hizmeti temsil eden sınıf.  
+- Bir Windows Communication Foundation (WCF) veri hizmeti veya bir REST hizmeti gibi bir ağ hizmeti temsil eden sınıf.  
   
--   SharePoint hizmet temsil eden sınıf.  
+- SharePoint hizmet temsil eden sınıf.  
   
--   Bir sınıf veya çözümünüzdeki koleksiyonu.  
+- Bir sınıf veya çözümünüzdeki koleksiyonu.  
   
 > [!NOTE]
 >  Veri bağlama özellikleri kullanmıyorsanız, veri kümeleri, Entity Framework, LINQ to SQL, WCF ya da SharePoint, "veri kaynağı" kavramını geçerli değildir. Yalnızca SQLCommand nesnesi kullanarak veritabanına doğrudan bağlanmak ve veritabanıyla doğrudan iletişim kurar.  
@@ -77,11 +77,11 @@ Visual Studio'da .NET veri Araçları'nın içeriğinde terimi *veri kaynağı* 
   
  Aşağıdaki tür hizmetlerden veri kaynağı oluşturabilirsiniz:  
   
--   WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Veri Hizmetleri. Daha fazla bilgi için [genel bakış](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   WCF Veri Hizmetleri. Daha fazla bilgi için [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- WCF Veri Hizmetleri. Daha fazla bilgi için [Windows Communication Foundation Hizmetleri ve Visual Studio'da WCF Veri Hizmetleri](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Web Hizmetleri.  
+- Web Hizmetleri.  
   
     > [!NOTE]
     >  Görünen öğeler **veri kaynakları** penceresi, bağımlı hizmetin döndürdüğü verileri. Bazı hizmetler için yeterli bilgi sağlamayabilir **veri kaynağı Yapılandırma Sihirbazı** bağlanabilir nesneleri oluşturmak için. Hizmet yazılmamış bir veri kümesi döndürürse, örneğin, hiçbir öğe görünmez **veri kaynakları** Sihirbazı tamamladığınızda penceresi. Yazılmayan veri kümeleri, bir şema sağlamaması ve bu nedenle sihirbazın veri kaynağını oluşturmak için yeterli bilgi yok nedeni budur.  

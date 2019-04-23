@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097329"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Hata Ayıklayıcı'Visual Studio için üretkenlik ipuçları ve püf noktaları öğrenin
 
@@ -74,17 +74,17 @@ Hata ayıklayıcı pencereleri gibi kullanarak değişkenleri görmek daha kolay
 
 #### <a name="to-create-an-object-id"></a>Bir nesne kimliği oluşturmak için
 
-1.  İzlemek istediğiniz değişken yakın bir kesme noktası ayarlayın.
+1. İzlemek istediğiniz değişken yakın bir kesme noktası ayarlayın.
 
-2.  Hata ayıklayıcıyı başlatın (**F5**) ve kesme noktasındaki durdur.
+2. Hata ayıklayıcıyı başlatın (**F5**) ve kesme noktasındaki durdur.
 
 3. Değişkeninde Bul **Yereller** penceresi (**hata ayıklama > Windows > Yereller**), değişkeni sağ tıklatın ve seçin **nesne kimliği yap**.
 
     ![Bir nesne kimliği oluşturma](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu değişken nesne kimliğidir.
+4. Görmelisiniz bir **$** bir sayıyı artı **Yereller** penceresi. Bu değişken nesne kimliğidir.
 
-5.  Nesne Kimliği değişkeni sağ tıklatın ve seçin **Gözcü Ekle**.
+5. Nesne Kimliği değişkeni sağ tıklatın ve seçin **Gözcü Ekle**.
 
 Daha fazla bilgi için [bir nesne kimliği oluşturma](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Tür birden çok iş parçacıklı uygulamalar için ortak olan sorunları hata 
 
 #### <a name="to-show-threads-in-your-source-code"></a>İş parçacığı kaynak kodunuzu göstermek için
 
-1.  Hata ayıklama sırasında tıklayın **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") içinde **hata ayıklama** araç çubuğu.
+1. Hata ayıklama sırasında tıklayın **kaynak iş parçacıklarını Göster** düğmesi ![kaynak iş parçacıklarını Göster](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") içinde **hata ayıklama** araç çubuğu.
 
-2.  Pencerenin sol tarafındaki cilt payını bakın. Bu satırda gördüğünüz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") , iki bez iş parçacığı benzer. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
+2. Pencerenin sol tarafındaki cilt payını bakın. Bu satırda gördüğünüz bir *iş parçacığı işaret* simgesi ![iş parçacığı işaret](../debugger/media/dbg-thread-marker.png "ThreadMarker") , iki bez iş parçacığı benzer. İş parçacığı işaretçisi, bir iş parçacığı bu konuma durdurulduğunu gösterir.
 
     Bir iş parçacığı işaret kısmen bir kesme noktası tarafından altına gizlenmiş, dikkat edin.
 
-3.  İşaretçi iş parçacığı işaret gelin. Bir DataTip görünür. DataTip durdurulmuş her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirtir.
+3. İşaretçi iş parçacığı işaret gelin. Bir DataTip görünür. DataTip durdurulmuş her iş parçacığı için adı ve iş parçacığı kimlik numarasını belirtir.
 
     İş parçacıklarında konumunu da görüntüleyebilirsiniz [Paralel Yığınlar penceresini](../debugger/get-started-debugging-multithreaded-apps.md).
 

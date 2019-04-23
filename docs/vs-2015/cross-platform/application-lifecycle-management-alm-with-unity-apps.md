@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097173"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Unity Uygulamaları ile Uygulama Yaşam Döngüsü Yönetimi (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Modern platformlar için uygulama geliştirme, hemen kod yazmaya daha pek çok d
   
  Sürüm denetimi Unity ile ilgili özel konular:  
   
-1.  Unity oyun varlıklarını varsayılan olarak gizli bir tek ve donuk kitaplıkta hakkındaki meta verileri izler. Dosyaları ve meta verilerini eşitlemek için bu meta veriler görünür hale getirmek ve daha yönetilebilir yığınlar halinde depolamak için gereklidir. Ayrıntılar için başvurmak [kullanarak dış sürüm denetim sistemleri ile Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity belgeleri).  
+1. Unity oyun varlıklarını varsayılan olarak gizli bir tek ve donuk kitaplıkta hakkındaki meta verileri izler. Dosyaları ve meta verilerini eşitlemek için bu meta veriler görünür hale getirmek ve daha yönetilebilir yığınlar halinde depolamak için gereklidir. Ayrıntılar için başvurmak [kullanarak dış sürüm denetim sistemleri ile Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Unity belgeleri).  
   
-2.  Tüm dosya ve klasörleri Unity proje kaynak denetimi için yukarıdaki bağlantıya de açıklandığı gibi uygun değildir. Varlıklar ve ProjectSettings klasörleri eklenmesi gerekir, ancak kitaplığı ve Temp klasörleri barındırmamalıdır. Kaynak denetimine geçmeyecek oluşturulan dosyaları ek bir listesi için tartışmalara bakın [Unity3D kaynak denetimi için Git kullanma?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) StackOverflow üzerinde. Birçok geliştiricinin ayrıca işaretlerinize Bu konu üzerinde bağımsız olarak vardır.  
+2. Tüm dosya ve klasörleri Unity proje kaynak denetimi için yukarıdaki bağlantıya de açıklandığı gibi uygun değildir. Varlıklar ve ProjectSettings klasörleri eklenmesi gerekir, ancak kitaplığı ve Temp klasörleri barındırmamalıdır. Kaynak denetimine geçmeyecek oluşturulan dosyaları ek bir listesi için tartışmalara bakın [Unity3D kaynak denetimi için Git kullanma?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) StackOverflow üzerinde. Birçok geliştiricinin ayrıca işaretlerinize Bu konu üzerinde bağımsız olarak vardır.  
   
-3.  Unity proje ikili varlıkları — dokular ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkileyen çeşitli Git gibi kaynak denetimi sistemlerini yapılmış her değişiklik için bir dosyanın benzersiz bir kopyasını depolar. Bu, Git deposu bloated olacak neden olabilir. Bunu ele almak için Unity geliştiricileri genellikle yalnızca son varlıklar, depoya ekleyebilir ve kendi varlıklar, OneDrive, DropBox veya git-annex gibi çalışma geçmişini tutmak farklı bir yol seçin. Bu yaklaşım çalışır, çünkü bu tür varlıklar genellikle kaynak kodu değişiklikleri birlikte tutulan olmanız gerekmez. Geliştiriciler ayrıca genellikle zorla kaynak denetiminde birleştirmeleri izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için metin proje Düzenleyicisi'nin varlık serileştirme modunu ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belgeleri).  
+3. Unity proje ikili varlıkları — dokular ya da ses dosyaları gibi — büyük miktarda depolama alabilir. Değişiklik dosyasının yalnızca küçük bir bölümünü etkileyen çeşitli Git gibi kaynak denetimi sistemlerini yapılmış her değişiklik için bir dosyanın benzersiz bir kopyasını depolar. Bu, Git deposu bloated olacak neden olabilir. Bunu ele almak için Unity geliştiricileri genellikle yalnızca son varlıklar, depoya ekleyebilir ve kendi varlıklar, OneDrive, DropBox veya git-annex gibi çalışma geçmişini tutmak farklı bir yol seçin. Bu yaklaşım çalışır, çünkü bu tür varlıklar genellikle kaynak kodu değişiklikleri birlikte tutulan olmanız gerekmez. Geliştiriciler ayrıca genellikle zorla kaynak denetiminde birleştirmeleri izin veren ikili biçimi yerine metin Sahne dosyaları depolamak için metin proje Düzenleyicisi'nin varlık serileştirme modunu ayarlayın. Ayrıntılar için bkz [Düzenleyici ayarları](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity belgeleri).  
   
 ## <a name="build"></a>Yapı  
  Başvuru bağlantısı: **[Derleme](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  

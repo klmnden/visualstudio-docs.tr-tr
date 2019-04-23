@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096939"
 ---
 # <a name="manage-application-settings-net"></a>Uygulama ayarlarını yönetme (.NET)
 
@@ -84,9 +84,9 @@ Kullanıcı kapsamlı ayarları uygulamayı test etme, örneğin, çalışma zam
 
 Kullanmanızı öneririz `My.Settings` nesne ve varsayılan *.settings* ayarlara erişmek için dosya. Kullanabileceğiniz olmasıdır **ayarlar Tasarımcısı** ayarları ve kullanıcı için Ayrıca, özellikler atamak için ayarlar uygulama kapatma önce otomatik olarak kaydedilir. Ancak, Visual Basic uygulamasında ayarlarına doğrudan erişebilirsiniz. Bu durumda, zorunda erişim `MySettings` sınıfı ve özel bir kullanın *.settings* projenin köküne dosya. Bir C# uygulaması için yaptığınız gibi uygulamayı sonlandırmadan önce kullanıcı ayarlarını kaydetmeniz gerekir; Bu, aşağıdaki bölümde açıklanmıştır.
 
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>C# ' de çalışma zamanında erişim ya da değişiklik uygulama ayarları
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 
 Visual Basic, C# gibi dışındaki dillerde, erişmelisiniz `Settings` doğrudan, aşağıda gösterildiği gibi sınıf [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] örnek.
 

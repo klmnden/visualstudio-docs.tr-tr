@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059025"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Bağlam işleci Visual Studio hata ayıklayıcısında (C++)
 Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu içerik işlecini kullanabilirsiniz. Bağlam işleci, aksi takdirde yerel bir ad tarafından gizlenen bir dış kapsam adı belirtmek için kullanışlıdır.
 
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Söz dizimi
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Söz dizimi
  Bağlam belirtmenin iki yolu vardır:
 
-1.  {, [*Modülü*]} *ifadesi*
+1. {, [*Modülü*]} *ifadesi*
 
      Küme ayraçları iki virgül ve modül içermelidir (yürütülebilir veya DLL) adını veya tam yolu.
 
@@ -45,7 +45,7 @@ Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu
     {,,EXAMPLE.dll}SomeFunction
     ```
 
-2.  *Modül*! *ifade*
+2. *Modül*! *ifade*
 
     ```C++
     EXAMPLE.dll!SomeFunction
@@ -63,12 +63,12 @@ Bir kesme noktası konumu, değişken adı veya ifade nitelemek için C++'da şu
 
   İfade değerlendirici bir ifadede bir sembol karşılaştığında sembolünün şu sırayla arar:
 
-1.  Sözcük kapsamı geçerli blok küme ayraçları içine alındığına ve dışa doğru kapsayan bir blok ile devam bir deyimler serisini başlayarak dışa doğru. Geçerli blok yönerge işaretçisi adresi geçerli konumu içeren kodudur.
+1. Sözcük kapsamı geçerli blok küme ayraçları içine alındığına ve dışa doğru kapsayan bir blok ile devam bir deyimler serisini başlayarak dışa doğru. Geçerli blok yönerge işaretçisi adresi geçerli konumu içeren kodudur.
 
-2.  İşlev kapsamı. Geçerli işlev.
+2. İşlev kapsamı. Geçerli işlev.
 
-3.  C++ üye işlevinin içerisinde geçerli konumu ise sınıf kapsamı. Sınıf kapsamı, tüm temel sınıflar içerir. İfade değerlendirici, normal baskınlık kurallarını kullanır.
+3. C++ üye işlevinin içerisinde geçerli konumu ise sınıf kapsamı. Sınıf kapsamı, tüm temel sınıflar içerir. İfade değerlendirici, normal baskınlık kurallarını kullanır.
 
-4.  Genel semboller geçerli modül içinde.
+4. Genel semboller geçerli modül içinde.
 
-5.  Ortak semboller geçerli programı.
+5. Ortak semboller geçerli programı.

@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 411e0a83b180014ffb3a896887c3798d57ffc635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106968"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bir testi çalıştıran sanal kullanıcı olasılığını belirtmek için test karışımı modellerini düzenleme
 
@@ -26,13 +26,13 @@ ms.locfileid: "55938013"
 
 Yük testi senaryonuzun aşağıdaki test karışımı modeli seçeneklerinden birini belirtebilirsiniz:
 
--   **Toplam test sayısı tabanlı:** Bir sanal kullanıcı bir test yinelemesi başlattığında hangi web performans veya birim testin çalıştığını belirler. Yük testi sonunda, belirli bir testin çalışma sayısı, atanan test dağıtımını eşleşir. Bu test karışımı modeli, test karışımını bir IIS günlüğü ya da üretim verilerindeki işlem yüzdeleri dayandırırken kullanın.
+- **Toplam test sayısı tabanlı:** Bir sanal kullanıcı bir test yinelemesi başlattığında hangi web performans veya birim testin çalıştığını belirler. Yük testi sonunda, belirli bir testin çalışma sayısı, atanan test dağıtımını eşleşir. Bu test karışımı modeli, test karışımını bir IIS günlüğü ya da üretim verilerindeki işlem yüzdeleri dayandırırken kullanın.
 
--   **Sanal kullanıcı sayısına göre:** Belirli bir web performans veya birim testi çalıştıracak sanal kullanıcıların yüzdesini belirler. Yük testi içindeki herhangi bir noktada, belirli bir testi çalıştıran kullanıcıların sayısı, atanan dağıtım eşleşir. Belirli bir testi çalıştıran kullanıcıların yüzdesi üzerinde test karışımını dayandırırken bu test karışımı modelini kullanın.
+- **Sanal kullanıcı sayısına göre:** Belirli bir web performans veya birim testi çalıştıracak sanal kullanıcıların yüzdesini belirler. Yük testi içindeki herhangi bir noktada, belirli bir testi çalıştıran kullanıcıların sayısı, atanan dağıtım eşleşir. Belirli bir testi çalıştıran kullanıcıların yüzdesi üzerinde test karışımını dayandırırken bu test karışımı modelini kullanın.
 
--   **Kullanıcı adımı tabanlı:** Yük testi boyunca, her bir web performans testi veya birim testi belirtilen sayıda kullanıcı, saat başına bir kez çalıştırılır. Bu test karışımı modeli, yük testi boyunca belirli bir hızda testi çalıştırmak için sanal kullanıcıların istediğinizde kullanın.
+- **Kullanıcı adımı tabanlı:** Yük testi boyunca, her bir web performans testi veya birim testi belirtilen sayıda kullanıcı, saat başına bir kez çalıştırılır. Bu test karışımı modeli, yük testi boyunca belirli bir hızda testi çalıştırmak için sanal kullanıcıların istediğinizde kullanın.
 
--   **Ardışık düzenine dayanan:** Her sanal kullanıcının web performans veya birim testleri, testlerin senaryoda tanımlandığı sırada çalıştırır. Sanal kullanıcı yük testi tamamlanana kadar testler içinde bu sırada dolaşma devam eder.
+- **Ardışık düzenine dayanan:** Her sanal kullanıcının web performans veya birim testleri, testlerin senaryoda tanımlandığı sırada çalıştırır. Sanal kullanıcı yük testi tamamlanana kadar testler içinde bu sırada dolaşma devam eder.
 
 ## <a name="tasks"></a>Görevler
 
@@ -53,27 +53,27 @@ Kullanarak **Yük Testi Düzenleyicisi**, bir yük testi senaryosunda test karı
 
 ### <a name="to-change-the-test-mix-model"></a>Test karışımı modeli değiştirmek için
 
-1.  Bir yük testi açın.
+1. Bir yük testi açın.
 
      **Yük Testi Düzenleyicisi** görünür. Yük testi ağacında görüntülenir.
 
-2.  İçinde *senaryoları* klasörü yük testi ağacında, en fazla test yinelemesi sayısını belirtmek istediğiniz senaryoyu düğümünü seçin.
+2. İçinde *senaryoları* klasörü yük testi ağacında, en fazla test yinelemesi sayısını belirtmek istediğiniz senaryoyu düğümünü seçin.
 
-3.  Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
+3. Üzerinde **görünümü** menüsünde **Özellikler penceresi**.
 
      Kategoriler ve özellikler bu senaryonun görüntülenir.
 
-4.  İçinde **Test karışımı türü** özelliği, üç nokta düğmesini ( **...** ).
+4. İçinde **Test karışımı türü** özelliği, üç nokta düğmesini ( **...** ).
 
      **Test Karışımını Düzenle** iletişim kutusu görüntülenir.
 
-5.  Aşağı açılan listesinde seçin **Test karışımı modeli** senaryo için kullanmak istediğiniz test karışımı modeli seçin.
+5. Aşağı açılan listesinde seçin **Test karışımı modeli** senaryo için kullanmak istediğiniz test karışımı modeli seçin.
 
-6.  (İsteğe bağlı) Test karışımını kullanarak değiştirme **Ekle**, **Kaldır** ve **Dağıt** düğmeler ve dağıtım kaydırıcıları. Daha fazla bilgi için [bir yük testi senaryosunda dahil etmek için hangi testlerin belirlemek için test karışımını Düzenle](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6. (İsteğe bağlı) Test karışımını kullanarak değiştirme **Ekle**, **Kaldır** ve **Dağıt** düğmeler ve dağıtım kaydırıcıları. Daha fazla bilgi için [bir yük testi senaryosunda dahil etmek için hangi testlerin belirlemek için test karışımını Düzenle](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (İsteğe bağlı) Başlatma veya onay kutularını kullanarak ve istenen testleri seçerek sonlandırmak için bir web başarım ve birim testi belirtin. Daha fazla bilgi için [Emulate beklenen gerçek dünya kullanımının Web sitenize veya uygulamanıza](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7. (İsteğe bağlı) Başlatma veya onay kutularını kullanarak ve istenen testleri seçerek sonlandırmak için bir web başarım ve birim testi belirtin. Daha fazla bilgi için [Emulate beklenen gerçek dünya kullanımının Web sitenize veya uygulamanıza](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8.  Seçin **Tamam**.
+8. Seçin **Tamam**.
 
      **Özellikleri** penceresi için yeni test karışımı modeli görüntüler **Test karışımı türü** özelliği.
 

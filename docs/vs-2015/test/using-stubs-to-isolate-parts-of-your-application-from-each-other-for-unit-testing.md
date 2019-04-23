@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d0165c0a774ba53e5ce4798cdcd4bc4755d1ebd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58145167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076883"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Birim testi için uygulamanızın parçalarını birbirinden yalıtmak üzere saplamalar kullanma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Saplama türleri * Microsoft Fakes çerçevesi çağıran başka bir bileşenden
   
  **Gereksinimler**  
   
--   Visual Studio Enterprise
+- Visual Studio Enterprise
   
-##  <a name="How"></a> Saptamalar nasıl kullanılır?  
+## <a name="How"></a> Saptamalar nasıl kullanılır?  
   
-###  <a name="Dependency"></a> Tasarım için bağımlılık ekleme  
+### <a name="Dependency"></a> Tasarım için bağımlılık ekleme  
  Saptamaları kullanmak için uygulamanızın farklı bileşenlerini değil birbirlerine bağımlı ancak arabirim tanımlarının yalnızca bağımlı olmasını sağlamak için tasarlanır. Derleme zamanında bağlanmak yerine, bileşenler çalışma zamanında bağlıdır. Bu model yazılımın güncellemesinin güçlü ve kolay yapılmasına yardımcı olur çünkü değişiklikler bileşen sınırları boyunca yayılmaz. Saptamaları kullanmasanız bile bunu öneririz. Yeni kod yazıyorsanız, bunu izlemek kolaydır [bağımlılık ekleme](http://en.wikipedia.org/wiki/Dependency_injection) deseni. Varolan yazılım için testler yazıyorsanız, yeniden düzenlemeniz gerekebilir. Pratik olursa, yerine dolgu verileri kullanmayı düşünebilirsiniz.  
   
  Bu tartışmaya diyagramdaki motive edici temel bir örnekle başlayalım. Sınıf StockAnalyzer fiyatları paylaşmayı okur ve bazı ilginç sonuçlar üretir. Test etmek istediğimiz bazı ortak yöntemler vardır. Örneği basit tutmak için yalnızca, belirli bir paylaşımın geçerli fiyatını raporlayan yöntemlerden çok basit olan bir tanesine bakalım. Bu yöntemin bir birim testini yazmak istiyoruz. Testin ilk taslağı aşağıdadır:  
@@ -144,7 +144,7 @@ analyzer = new StockAnalyzer(new StockFeed())
   
  Bu bağlantıyı gerçekleştirmede daha esnek bir yol vardır. Örneğin, StockAnalyzer, IStockFeed, farklı koşullarda farklı uygulamaları oluşturabileceğiniz factory nesnesi kabul edemedi.  
   
-###  <a name="GeneratingStubs"></a> Saptamalar oluştur  
+### <a name="GeneratingStubs"></a> Saptamalar oluştur  
  Bunu kullanan başka bir bileşenden test etmek istediğiniz sınıfı ayırdınız. Uygulama yapmanın yanı sıra güçlü ve esnek, bağlantıyı kesmenize izin veren bileşen arayüzlerinin test amaçlı uygulamalarını saptama testteki bağlanmanıza olanak sağlar.  
   
  Her zamanki şekilde sınıflar gibi saptamaları basitçe yazabilirsiniz. Ancak Microsoft Fakes her test için en uygun saptama oluşturmak için daha dinamik bir yol sağlar.  
@@ -153,15 +153,15 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ##### <a name="adding-a-fakes-assembly"></a>Fakes Derleme Ekleme  
   
-1.  Çözüm Gezgini'nde birim test projesinin genişletin **başvuruları**.  
+1. Çözüm Gezgini'nde birim test projesinin genişletin **başvuruları**.  
   
-    -   Visual Basic'te çalışıyorsanız, seçmelisiniz **tüm dosyaları göster** başvuru listesini görmek için Çözüm Gezgini araç.  
+    - Visual Basic'te çalışıyorsanız, seçmelisiniz **tüm dosyaları göster** başvuru listesini görmek için Çözüm Gezgini araç.  
   
-2.  Saptamaları oluşturmak istediğiniz arabirim tanımlarını içeren derlemeyi seçin.  
+2. Saptamaları oluşturmak istediğiniz arabirim tanımlarını içeren derlemeyi seçin.  
   
-3.  Kısayol menüsünde **Fakes derlemesi Ekle**.  
+3. Kısayol menüsünde **Fakes derlemesi Ekle**.  
   
-###  <a name="WriteTest"></a> Saptamalarla test yazma  
+### <a name="WriteTest"></a> Saptamalarla test yazma  
   
 ```csharp  
 [TestClass]  
@@ -223,7 +223,7 @@ End Class
   
  Saptamalar ayrıca olaylar ve genel yöntemlerle ilgili olarak özellik okuyucu ve ayarlayıcılar için oluşturulur.  
   
-###  <a name="mocks"></a> Parametre değerlerini doğrulama  
+### <a name="mocks"></a> Parametre değerlerini doğrulama  
  Bileşeniniz başka bir bileşen için çağrı yaptığında, doğrulayabilirsiniz, doğru değerleri geçirir. Bir onaylama işlemini saptamaya yerleştirebilirsiniz veya değer depolayabilir ve testin ana gövdesini de doğrulayabilirsiniz. Örneğin:  
   
 ```csharp  
@@ -301,9 +301,9 @@ Class TestMyComponent
 End Class  
 ```  
   
-##  <a name="BKMK_Stub_basics"></a> Tür üyelerinin farklı türleri için saptamalar  
+## <a name="BKMK_Stub_basics"></a> Tür üyelerinin farklı türleri için saptamalar  
   
-###  <a name="BKMK_Methods"></a> Yöntemleri  
+### <a name="BKMK_Methods"></a> Yöntemleri  
  Örnekte açıklandığı gibi yöntemler saptama sınıfının bir örneği için temsilci ekleyerek tamamlanmamış. Saptama türünün adı yöntemi ve parametreleri adlarından türetilir. Örneğin, aşağıda verilen `IMyInterface` arabirimi ve yöntem `MyMethod`:  
   
 ```csharp  
@@ -325,7 +325,7 @@ interface IMyInterface
   
  Bir işlev için saptama belirtmezseniz, Fakes dönüş türünün varsayılan değerini döndüren bir işlev oluşturur. Sayılar için varsayılan değer 0'dır ve sınıf türleri için ise `null` (C#) veya `Nothing` (Visual Basic).  
   
-###  <a name="BKMK_Properties"></a> Özellikleri  
+### <a name="BKMK_Properties"></a> Özellikleri  
  Özellik alıcılar ve ayarlayıcılar, ayrı temsilciler olarak sunulur ve ayrı ayrı saptanmış olabilirler. Örneğin, düşünün `Value` özelliği `IMyInterface`:  
   
 ```csharp  
@@ -350,7 +350,7 @@ stub.ValueSet = (value) => i = value;
   
  Ayarlayıcı veya özellik alıcısı için saptama yöntemleri belirtmezseniz, saptama özelliği gibi basit bir değişken çalışmasını Fakes değerleri saklayan bir saptama oluşturacaktır.  
   
-###  <a name="BKMK_Events"></a> Olayları  
+### <a name="BKMK_Events"></a> Olayları  
  Olaylar, temsilci alanları olarak sunulur. Sonuç olarak herhangi bir saptama olayı, olay yedekleme alanını çağırarak basitçe yükseltilebilir. Saptama için yandaki arayüzü göz önünde bulunduralım:  
   
 ```csharp  
@@ -371,7 +371,7 @@ interface IWithEvents
   
 ```  
   
-###  <a name="BKMK_Generic_methods"></a> Genel yöntemler  
+### <a name="BKMK_Generic_methods"></a> Genel yöntemler  
  Yöntemin istenen her örneklemesi için temsilci sağlayarak, genel yöntemleri saptamak mümkündür. Örneğin, aşağıda verilen arayüz genel yöntem içerir:  
   
 ```csharp  
@@ -399,7 +399,7 @@ public void TestGetValue()
   
  Kod çağırıyorsa `GetValue<T>` diğer oluşturma ile saplama basitçe davranışı çağıracaktır.  
   
-###  <a name="BKMK_Partial_stubs"></a> Sanal sınıf saptamaları  
+### <a name="BKMK_Partial_stubs"></a> Sanal sınıf saptamaları  
  Önceki örneklerde saptamalar arabirimlerden üretilmedi. Sanal veya özet üyeler bir sınıftan saptamalar da oluşturabilir. Örneğin:  
   
 ```csharp  
@@ -438,16 +438,16 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));  
 ```  
   
-##  <a name="BKMK_Debugging_stubs"></a> Hata ayıklama saptamaları  
+## <a name="BKMK_Debugging_stubs"></a> Hata ayıklama saptamaları  
  Saptama türleri, yumuşak bir hata ayıklama deneyimini sağlamak üzere tasarlanmıştır. Varsayılan olarak, hata ayıklayıcı herhangi oluşturulan bir kod üzerinde adım adım ilerler, bu nedenle saptamaya eklenmiş olan özel üye uygulamalarının içine doğrudan atlar.  
   
-##  <a name="BKMK_Stub_limitation"></a> Saptama sınırlamaları  
+## <a name="BKMK_Stub_limitation"></a> Saptama sınırlamaları  
   
-1.  İşaretçilerle birlikte yöntem imzaları desteklenmez.  
+1. İşaretçilerle birlikte yöntem imzaları desteklenmez.  
   
-2.  Saptama sınıfları veya statik yöntemleri saptanmamalı; çünkü saptama türü sanal yöntem gönderimine dayanır. Bölümünde açıklandığı gibi durumlarda Shim/dolgu türlerini kullanın [uygulamanızı birim testi için diğer derlemelerden yalıtmak üzere dolgular kullanma](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+2. Saptama sınıfları veya statik yöntemleri saptanmamalı; çünkü saptama türü sanal yöntem gönderimine dayanır. Bölümünde açıklandığı gibi durumlarda Shim/dolgu türlerini kullanın [uygulamanızı birim testi için diğer derlemelerden yalıtmak üzere dolgular kullanma](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
-##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Saptamaların varsayılan davranışını değiştirme  
+## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Saptamaların varsayılan davranışını değiştirme  
  Her üretilen saptama türü bir örneğini tutan `IStubBehavior` arabirimi (aracılığıyla `IStub.InstanceBehavior` özelliği). Hiç eklenmemiş özel temsilci ile üye istemci çağrıları olarak adlandırılır. Davranış ayarlanmamışsa, tarafından döndürülen örneği kullanacak `StubsBehaviors.Current` özelliği. Varsayılan olarak, bu özellik atan bir davranış döndürür. bir `NotImplementedException` özel durum.  
   
  Davranış ayarlayarak herhangi bir zamanda değiştirilebilir `InstanceBehavior` herhangi bir saptamadaki özelliği. Örneğin, aşağıdaki kod parçacığı, hiçbir şey yapmaz veya dönüş türünün varsayılan değerini döndürür olarak davranışı değiştirir: `default(T)`:  

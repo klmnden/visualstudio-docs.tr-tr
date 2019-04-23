@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096887"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Değişiklikleri Modelin Dışına Yayan Olay İşleyicileri
 
@@ -25,21 +25,21 @@ Grafik yüzeyine ve diğer kullanıcı arabirimi denetimleri deposu olayları ta
 
 ### <a name="to-define-a-store-event"></a>Bir depolama olayı tanımlamak için
 
-1.  İzlemek istediğiniz olay türünü seçin. Tam bir listesi için özelliklerine bakmak <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Her bir özellik bir olay türüne karşılık gelir. En sık olay türleri kullanılır:
+1. İzlemek istediğiniz olay türünü seçin. Tam bir listesi için özelliklerine bakmak <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Her bir özellik bir olay türüne karşılık gelir. En sık olay türleri kullanılır:
 
-    -   `ElementAdded` -bir model öğesini tetiklenir, ilişki bağlantısı, Şekil veya bağlayıcının oluşturulur.
+    - `ElementAdded` -bir model öğesini tetiklenir, ilişki bağlantısı, Şekil veya bağlayıcının oluşturulur.
 
-    -   Tetiklenen ElementPropertyChanged - değerini bir `Normal` etki alanı özelliği. Yalnızca eski ve yeni değerler eşit değilse, olay tetiklenir. Olay, hesaplanan ve özel depolama özellikleri için uygulanamaz.
+    - Tetiklenen ElementPropertyChanged - değerini bir `Normal` etki alanı özelliği. Yalnızca eski ve yeni değerler eşit değilse, olay tetiklenir. Olay, hesaplanan ve özel depolama özellikleri için uygulanamaz.
 
          İlişki bağlantılarını karşılık gelen rol özellikleri için uygulanamaz. Bunun yerine, `ElementAdded` etki alanı ilişkisi izlemek için.
 
-    -   `ElementDeleted` -bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.
+    - `ElementDeleted` -bir model öğesini sonra tetiklenen, ilişki, Şekil veya bağlayıcının silindi. Öğesinin özellik değerlerini erişmeye devam edebilirsiniz, ancak hiçbir ilişki diğer öğelere sahip olacaktır.
 
-2.  İçin bir parçalı sınıf tanımı ekleyin _YourDsl_**DocData** ayrı bir kod dosyasında **DslPackage** proje.
+2. İçin bir parçalı sınıf tanımı ekleyin _YourDsl_**DocData** ayrı bir kod dosyasında **DslPackage** proje.
 
-3.  Aşağıdaki örnekte olduğu gibi bir yöntem olarak olayın kodu yazın. Bu olabilir `static`erişmek istediğiniz sürece `DocData`.
+3. Aşağıdaki örnekte olduğu gibi bir yöntem olarak olayın kodu yazın. Bu olabilir `static`erişmek istediğiniz sürece `DocData`.
 
-4.  Geçersiz kılma `OnDocumentLoaded()` işleyicisini kaydetmek için. Birden fazla işleyici varsa, bunların tümü aynı yerde kaydedebilirsiniz.
+4. Geçersiz kılma `OnDocumentLoaded()` işleyicisini kaydetmek için. Birden fazla işleyici varsa, bunların tümü aynı yerde kaydedebilirsiniz.
 
 Kayıt kodu konumunu kritik değildir. `DocView.LoadView()` Alternatif bir konumdur.
 
@@ -160,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Bir olay yazarsanız, deponun güncelleştirir:
 
--   Kullanım `store.InUndoRedoOrRollback` geri model öğelerini değişiklik yapmasını önlemek için. İşlem Yöneticisi, özgün durumuna geri deposundaki her şeyi ayarlanır.
+- Kullanım `store.InUndoRedoOrRollback` geri model öğelerini değişiklik yapmasını önlemek için. İşlem Yöneticisi, özgün durumuna geri deposundaki her şeyi ayarlanır.
 
--   Kullanım `store.InSerializationTransaction` model dosyasından yüklenirken değişiklik yapmasını önlemek için.
+- Kullanım `store.InSerializationTransaction` model dosyasından yüklenirken değişiklik yapmasını önlemek için.
 
--   Değişikliklerinizi başka tetiklenmesi olayları neden olur. Sonsuz bir döngüye önlemek emin olun.
+- Değişikliklerinizi başka tetiklenmesi olayları neden olur. Sonsuz bir döngüye önlemek emin olun.
 
 ## <a name="store-event-types"></a>Store olay türleri
 

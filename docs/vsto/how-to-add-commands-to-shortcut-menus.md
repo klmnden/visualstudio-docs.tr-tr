@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074498"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Nasıl yapılır: Kısayol menülerine komut ekleme
   Bu konu, komutları kısayol menüsüne bir Office uygulamasında VSTO eklentisi kullanılarak nasıl ekleneceğini gösterir.
@@ -27,26 +27,26 @@ ms.locfileid: "56598186"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Kısayol menüleri Office komutları eklemek için
 
-1.  Ekle bir **Ribbon XML** belge düzeyi veya proje VSTO eklentisi öğesi. Daha fazla bilgi için [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md). İçindeki
+1. Ekle bir **Ribbon XML** belge düzeyi veya proje VSTO eklentisi öğesi. Daha fazla bilgi için [nasıl yapılır: Şerit özelleştirmeye başlama](../vsto/how-to-get-started-customizing-the-ribbon.md). İçindeki
 
-2.  **Çözüm Gezgini**seçin **ThisAddIn.cs** veya **ThisAddIn.vb**.
+2. **Çözüm Gezgini**seçin **ThisAddIn.cs** veya **ThisAddIn.vb**.
 
-3.  Menü çubuğunda, **görünümü** > **kod**.
+3. Menü çubuğunda, **görünümü** > **kod**.
 
      **ThisAddIn** sınıf dosyası Kod Düzenleyicisi'nde açılır.
 
-4.  Aşağıdaki kodu ekleyin **ThisAddIn** sınıfı. Bu kodu geçersiz kılmalar `CreateRibbonExtensibilityObject` Office uygulamasına sınıf yöntemi ve Şerit XML döndürür.
+4. Aşağıdaki kodu ekleyin **ThisAddIn** sınıfı. Bu kodu geçersiz kılmalar `CreateRibbonExtensibilityObject` Office uygulamasına sınıf yöntemi ve Şerit XML döndürür.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  İçinde **Çözüm Gezgini**, Şerit XML dosyasını seçin. Varsayılan olarak, Ribbon XML dosyasındaki adlı *Ribbon1.xml*.
+5. İçinde **Çözüm Gezgini**, Şerit XML dosyasını seçin. Varsayılan olarak, Ribbon XML dosyasındaki adlı *Ribbon1.xml*.
 
-6.  Menü çubuğunda, **görünümü** > **kod**.
+6. Menü çubuğunda, **görünümü** > **kod**.
 
      Şerit xml dosyası Kod Düzenleyicisi'nde açılır.
 
-7.  Kod Düzenleyicisi'nde kısayol menüsünü ve kısayol menüsüne eklemek istediğiniz denetime açıklayan XML ekleyin.
+7. Kod Düzenleyicisi'nde kısayol menüsünü ve kısayol menüsüne eklemek istediğiniz denetime açıklayan XML ekleyin.
 
      Aşağıdaki örnek, bir düğme, menü ve galeri denetimi bir word belgesi için kısayol menüsünü ekler. Bu kısayol menüsünün denetim ContextMenuText kimliğidir. Office 2010 kısayol denetimi tam listesi için kimlikleri bkz [Office 2010 Yardım dosyaları: Office fluent kullanıcı arabirimi denetimi tanımlayıcıları](http://go.microsoft.com/fwlink/?LinkID=181052).
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598186"
     </customUI>
     ```
 
-8.  İçinde **Çözüm Gezgini**, seçin **MyRibbon.cs** veya **MyRibbon.vb**.
+8. İçinde **Çözüm Gezgini**, seçin **MyRibbon.cs** veya **MyRibbon.vb**.
 
 9. Bir geri çağırma yöntemine ekleyin `Ribbon1` kullanmak istediğiniz her denetim için sınıf.
 

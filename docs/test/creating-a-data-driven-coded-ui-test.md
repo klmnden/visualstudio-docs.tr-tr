@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110979"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Verilerle çalışan kodlanmış UI testi oluşturma
 
@@ -98,11 +98,11 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
 
 ### <a name="step-2---create-a-data-set"></a>2. adım - veri kümesi oluşturma
 
-1.  Bir metin dosyası adlı dataDrivenSample projeye eklemek *data.csv*.
+1. Bir metin dosyası adlı dataDrivenSample projeye eklemek *data.csv*.
 
      ![Bir virgülle ayrılmış değer dosyası projeye ekleyin.](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Doldurma *.csv* aşağıdaki verilerle dosyası:
+2. Doldurma *.csv* aşağıdaki verilerle dosyası:
 
     |Num1|Num2|TOPLA|
     |-|-|-|
@@ -114,9 +114,9 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
 
      ![.Csv dosyasını verilerle doldurma](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Kaydetmeniz önemlidir *.csv* doğru kodlaması kullanarak dosya. Üzerinde **dosya** menüsünde seçin **Gelişmiş kaydetme seçenekleri** ve **Unicode (UTF-8 imza olmadan) - kod sayfası 65001** kodlama olarak.
+3. Kaydetmeniz önemlidir *.csv* doğru kodlaması kullanarak dosya. Üzerinde **dosya** menüsünde seçin **Gelişmiş kaydetme seçenekleri** ve **Unicode (UTF-8 imza olmadan) - kod sayfası 65001** kodlama olarak.
 
-4.  *.Csv* dosya, çıktı dizinine kopyalanmalıdır veya test çalıştırılamıyor. Kullanım **özellikleri** penceresini kopyalayın.
+4. *.Csv* dosya, çıktı dizinine kopyalanmalıdır veya test çalıştırılamıyor. Kullanım **özellikleri** penceresini kopyalayın.
 
      ![.Csv dosyasını dağıtma](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
 
 ### <a name="step-3---add-data-source-binding"></a>3. adım - veri kaynağı bağlama ekleme
 
-1.  Veri kaynağına bağlamak için ekleme bir `DataSource` görüntülenmesi için öznitelik `[TestMethod]` hemen test metodu özniteliği.
+1. Veri kaynağına bağlamak için ekleme bir `DataSource` görüntülenmesi için öznitelik `[TestMethod]` hemen test metodu özniteliği.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
     > [!TIP]
     > Bkz: [veri kaynağı özniteliği örnekleri](#CreateDataDrivenCUIT_QA_DataSourceAttributes) soru-cevap'ta XML, SQL Express ve Excel gibi diğer veri kaynağı türleri kullanma örnekleri için bir bölüm.
 
-2.  Testi çalıştırın.
+2. Testi çalıştırın.
 
      Üç yineleme ile test çalışmaları dikkat edin. Veri kaynağına bağlanan üç veri satırı içerdiğinden budur. Ancak, test yine de sabit parametre değerlerini kullanıyor ve her zaman 1 + 2 3 toplamı ile ekliyor de görürsünüz.
 
@@ -179,19 +179,19 @@ Bu örnek, Windows hesaplayıcısı uygulaması üzerinde çalışan kodlanmış
 
      Verileri kodlamak için hangi arama özelliklerinin ekleyeceğimi için kodlanmış UI Test Düzenleyicisi'ni kullanın.
 
-    -   Açık *UIMap.uitest* dosya.
+    - Açık *UIMap.uitest* dosya.
 
          ![Kodlanmış UI Test Düzenleyicisi'ni açın](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   UI eylemi seçin ve karşılık gelen UI denetim eşlemesi gözlemleyin. Nasıl eşleme kod, örneğin, karşılık gelen fark `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - UI eylemi seçin ve karşılık gelen UI denetim eşlemesi gözlemleyin. Nasıl eşleme kod, örneğin, karşılık gelen fark `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
          ![Kod ile yardımcı olması için kodlanmış UI Test Düzenleyicisi'ni kullanın](../test/media/cuit_datadriven_testeditor.png)
 
-    -   İçinde **özellikleri** penceresinde açık **arama özellikleri**. Arama özellikleri **adı** değerdir veri kaynağını kullanma kodda neler değiştirildiği. Örneğin, `SearchProperties` her veri satırının ilk sütununu değerler atanır: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Bu test için üç yineleme, değişir **adı** 3, sonra 5 ve 6 son arama özelliği için değer.
+    - İçinde **özellikleri** penceresinde açık **arama özellikleri**. Arama özellikleri **adı** değerdir veri kaynağını kullanma kodda neler değiştirildiği. Örneğin, `SearchProperties` her veri satırının ilk sütununu değerler atanır: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Bu test için üç yineleme, değişir **adı** 3, sonra 5 ve 6 son arama özelliği için değer.
 
          ![Kodlama yardımcı olmak için arama özelliklerini kullanın](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  Çözümünüzü kaydedin.
+3. Çözümünüzü kaydedin.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Adım 5 - veri tabanlı test çalıştırma
 
@@ -207,23 +207,23 @@ Test çalıştırması değerleri üç yineleme aracılığıyla görmelisiniz *
 
 **Veri kaynağı türleri ve öznitelikleri**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Team Foundation Server test çalışmasında
+- Team Foundation Server test çalışmasında
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

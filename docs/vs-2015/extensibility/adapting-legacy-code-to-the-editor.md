@@ -10,12 +10,12 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cbce5c13c51747a08b3832440ef91ace3d6a89c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098136"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Eski kod düzenleyicisine uyarlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>Bir bağdaştırıcı için Ivstextview oluşturmak için  
   
-1.  Microsoft.VisualStudio.Editor.dll bir başvuru ekleyin. Emin olun `CopyLocal` ayarlanır `false`.  
+1. Microsoft.VisualStudio.Editor.dll bir başvuru ekleyin. Emin olun `CopyLocal` ayarlanır `false`.  
   
-2.  Örneği <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>aşağıdaki gibi.  
+2. Örneği <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>aşağıdaki gibi.  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -85,7 +85,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3.  Çağrı `CreateX()` yöntemi.  
+3. Çağrı `CreateX()` yöntemi.  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
@@ -96,9 +96,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-get-an-ivxtextbuffer"></a>Bir IVxTextBuffer almak için  
   
-1.  IVx * arabirimler için tanımları VSEditor.h dosyasında bulunan... Visual Studio SDK yükleme klasörü \VisualStudioIntegration\Common\Inc\.  
+1. IVx * arabirimler için tanımları VSEditor.h dosyasında bulunan... Visual Studio SDK yükleme klasörü \VisualStudioIntegration\Common\Inc\.  
   
-2.  Aşağıdaki kodu kullanarak bir metin arabelleği başlatır `IVsUserData->GetData()` yöntemi. Aşağıdaki kodda, `pData` işaretçisidir bir `IVsUserData` nesne.  
+2. Aşağıdaki kodu kullanarak bir metin arabelleği başlatır `IVsUserData->GetData()` yöntemi. Aşağıdaki kodda, `pData` işaretçisidir bir `IVsUserData` nesne.  
   
     ```  
     #include <textmgr.h>  
@@ -125,9 +125,9 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 #### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Visual Studio Düzenleyicisi bileşenleri olmayan MEF Bileşeni kullanmak için  
   
-1.  Microsoft.VisualStudio.ComponentModelHost.dll derlemeye bir başvuru ekleyin... Visual Studio yükleme klasörü \Common7\IDE\. Emin olun `CopyLocal` ayarlanır `false`.  
+1. Microsoft.VisualStudio.ComponentModelHost.dll derlemeye bir başvuru ekleyin... Visual Studio yükleme klasörü \Common7\IDE\. Emin olun `CopyLocal` ayarlanır `false`.  
   
-2.  Özel bir ekleme `IComponentModel` gibi Visual Studio Düzenleyicisi Hizmetleri, kullanmak istediğiniz sınıf üyesi.  
+2. Özel bir ekleme `IComponentModel` gibi Visual Studio Düzenleyicisi Hizmetleri, kullanmak istediğiniz sınıf üyesi.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3.  Başlatma yöntemi bileşeniniz için bileşen modelinde örneği oluşturur.  
+3. Başlatma yöntemi bileşeniniz için bileşen modelinde örneği oluşturur.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4.  Bundan sonra herhangi bir Visual Studio Düzenleyicisi hizmetin çağırarak alabileceğiniz `IComponentModel.GetService<T>()` istediğiniz hizmeti için yöntemi.  
+4. Bundan sonra herhangi bir Visual Studio Düzenleyicisi hizmetin çağırarak alabileceğiniz `IComponentModel.GetService<T>()` istediğiniz hizmeti için yöntemi.  
   
     ```  
     textBufferFactoryService =  

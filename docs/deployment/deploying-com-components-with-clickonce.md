@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069126"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>ClickOnce ile COM bileşenleri dağıtma
 Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmuştur. Bileşenleri, genel olarak kaydedilmesi gerekir ve bu nedenle çakışan uygulamalar arasında istenmeyen yan etkilere neden olabilir. Bileşenler bir uygulama için tamamen yalıtılmış veya yan yana uyumludur. çünkü bu durum genellikle .NET Framework uygulamalarında bir sorun değildir. Visual Studio yalıtılmış COM bileşenlerini Windows XP ya da daha yüksek işletim sistemi dağıtmanıza olanak tanır.
@@ -46,9 +46,9 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
 
  İki yolu vardır, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] COM bileşenlerini dağıtır:
 
--   Önyükleyici, COM bileşenlerini dağıtmak için kullanın. Bu, desteklenen tüm platformlarda çalışır.
+- Önyükleyici, COM bileşenlerini dağıtmak için kullanın. Bu, desteklenen tüm platformlarda çalışır.
 
--   Yerel bileşen yalıtım (diğer adıyla kayıt gerektirmeyen COM) dağıtımı kullanın. Ancak, bu yalnızca bir Windows XP veya üzeri işletim sistemi üzerinde çalışır.
+- Yerel bileşen yalıtım (diğer adıyla kayıt gerektirmeyen COM) dağıtımı kullanın. Ancak, bu yalnızca bir Windows XP veya üzeri işletim sistemi üzerinde çalışır.
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Yalıtma ve basit bir COM bileşeni dağıtma örneği
  Kayıtsız COM bileşeni dağıtımı göstermek için bu örnekte Visual Basic 6.0 kullanılarak oluşturulan bir yalıtılmış yerel COM bileşenine başvurduğunu Visual Basic'te Windows tabanlı bir uygulama oluşturma ve kullanarak [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -57,16 +57,16 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
 
 ##### <a name="to-create-a-native-com-component"></a>Yerel bir COM bileşeni oluşturma
 
-1.  Visual Basic 6.0 kullanarak **dosya** menüsünde tıklatın **yeni**, ardından **proje**.
+1. Visual Basic 6.0 kullanarak **dosya** menüsünde tıklatın **yeni**, ardından **proje**.
 
-2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt bir **ActiveX DLL** proje. İçinde **adı** kutusuna `VB6Hello`.
+2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt bir **ActiveX DLL** proje. İçinde **adı** kutusuna `VB6Hello`.
 
     > [!NOTE]
     >  Kayıtsız COM yalnızca ActiveX DLL ve ActiveX denetimi projesi türleri desteklenir; ActiveX EXE ve ActiveX belgesi proje türleri desteklenmez.
 
-3.  İçinde **Çözüm Gezgini**, çift **Class1.vb** metin düzenleyiciyi açın.
+3. İçinde **Çözüm Gezgini**, çift **Class1.vb** metin düzenleyiciyi açın.
 
-4.  Class1.vb içinde için üretilen koddan sonra aşağıdaki kodu ekleyin. `New` yöntemi:
+4. Class1.vb içinde için üretilen koddan sonra aşağıdaki kodu ekleyin. `New` yöntemi:
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
     End Sub
     ```
 
-5.  Bileşen oluşturun. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.
+5. Bileşen oluşturun. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.
 
 > [!NOTE]
 >  Kayıtsız COM DLL'leri yalnızca destekler ve proje türleri COM denetler. Kayıtsız COM exe kullanamazsınız

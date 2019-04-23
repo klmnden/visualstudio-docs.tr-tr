@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071206"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Nasıl yapılır: Yapılandırmaları Oluşturma ve Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
   
 #### <a name="to-set-properties-based-on-configurations"></a>Yapılandırmalarına göre özelliklerini ayarlamak için  
   
--   İçinde **Çözüm Gezgini**, bir proje için kısayol menüsünü açın ve ardından **özellikleri**.  
+- İçinde **Çözüm Gezgini**, bir proje için kısayol menüsünü açın ve ardından **özellikleri**.  
   
      **Özellik sayfaları** penceresi açılır.  
   
@@ -59,69 +59,69 @@ Birkaç derleme yapılandırmaları bir çözüm için oluşturabilirsiniz. Örn
   
 #### <a name="to-create-a-project-configuration"></a>Bir proje yapılandırması oluşturmak için  
   
-1.  Açık **Configuration Manager** iletişim kutusu.  
+1. Açık **Configuration Manager** iletişim kutusu.  
   
-2.  Bir proje seçin **proje** sütun.  
+2. Bir proje seçin **proje** sütun.  
   
-3.  İçinde **yapılandırma** açılır listede bu proje için seçme **yeni**.  
+3. İçinde **yapılandırma** açılır listede bu proje için seçme **yeni**.  
   
      **Yeni proje yapılandırması** iletişim kutusu açılır.  
   
-4.  İçinde **adı** kutusunda, yeni yapılandırma için bir ad girin.  
+4. İçinde **adı** kutusunda, yeni yapılandırma için bir ad girin.  
   
-5.  Varolan bir proje yapılandırma özelliği ayarlarından kullanılacağını **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.  
+5. Varolan bir proje yapılandırma özelliği ayarlarından kullanılacağını **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.  
   
-6.  Aynı anda çözüm genelindeki bir yapılandırma oluşturmak için seçin **oluştur yeni çözüm yapılandırması** onay kutusu.  
+6. Aynı anda çözüm genelindeki bir yapılandırma oluşturmak için seçin **oluştur yeni çözüm yapılandırması** onay kutusu.  
   
 #### <a name="to-rename-a-project-configuration"></a>Bir proje yapılandırması yeniden adlandırmak için  
   
-1.  Açık **Configuration Manager** iletişim kutusu.  
+1. Açık **Configuration Manager** iletişim kutusu.  
   
-2.  İçinde **proje** sütunu yeniden adlandırmak istediğiniz proje yapılandırmasını içeren projeyi seçin.  
+2. İçinde **proje** sütunu yeniden adlandırmak istediğiniz proje yapılandırmasını içeren projeyi seçin.  
   
-3.  İçinde **yapılandırma** açılır listede bu proje için seçme **Düzenle**.  
+3. İçinde **yapılandırma** açılır listede bu proje için seçme **Düzenle**.  
   
      **Proje yapılandırmalarını Düzenle** iletişim kutusu açılır.  
   
-4.  Değiştirmek istediğiniz proje yapılandırması adı seçin.  
+4. Değiştirmek istediğiniz proje yapılandırması adı seçin.  
   
-5.  Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.  
+5. Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.  
   
 ## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Derleme yapılandırmaları oluşturma ve çözüm çapında değiştirme  
   
 #### <a name="to-create-a-solution-wide-build-configuration"></a>Bir çözüm çapında yapı yapılandırması oluşturmak için  
   
-1.  Açık **Configuration Manager** iletişim kutusu.  
+1. Açık **Configuration Manager** iletişim kutusu.  
   
-2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **yeni**.  
+2. İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **yeni**.  
   
      **Yeni çözüm yapılandırması** iletişim kutusu açılır.  
   
-3.  İçinde **adı** metin kutusunda, yeni yapılandırma için bir ad girin.  
+3. İçinde **adı** metin kutusunda, yeni yapılandırma için bir ad girin.  
   
-4.  Varolan bir çözüm yapılandırması ayarları kullanmak için **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.  
+4. Varolan bir çözüm yapılandırması ayarları kullanmak için **Ayarları Şuradan Kopyala** aşağı açılan listesinde, bir yapılandırma seçin.  
   
-5.  Proje yapılandırmaları aynı anda oluşturmak isteyip istemediğinizi seçin **yeni proje yapılandırmaları oluşturma** onay kutusu.  
+5. Proje yapılandırmaları aynı anda oluşturmak isteyip istemediğinizi seçin **yeni proje yapılandırmaları oluşturma** onay kutusu.  
   
 #### <a name="to-rename-a-solution-wide-build-configuration"></a>Bir çözüm çapında yapı yapılandırması yeniden adlandırmak için  
   
-1.  Açık **Configuration Manager** iletişim kutusu.  
+1. Açık **Configuration Manager** iletişim kutusu.  
   
-2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **Düzenle**.  
+2. İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde **Düzenle**.  
   
      **Çözüm yapılandırmalarını Düzenle** iletişim kutusu açılır.  
   
-3.  Değiştirmek istediğiniz çözüm yapılandırma adı seçin.  
+3. Değiştirmek istediğiniz çözüm yapılandırma adı seçin.  
   
-4.  Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.  
+4. Seçin **Yeniden Adlandır**ve ardından yeni bir ad girin.  
   
 #### <a name="to-modify-a-solution-wide-build-configuration"></a>Bir çözüm çapında yapı yapılandırmasını değiştirmek için  
   
-1.  Açık **Configuration Manager** iletişim kutusu.  
+1. Açık **Configuration Manager** iletişim kutusu.  
   
-2.  İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde, istediğiniz yapılandırmayı seçin.  
+2. İçinde **etkin çözüm yapılandırması** aşağı açılan listesinde, istediğiniz yapılandırmayı seçin.  
   
-3.  İçinde **proje bağlamları** bölmesinde, select her proje için **yapılandırma** ve **Platform** ve seçin kullanılıp kullanılmayacağını **Yapı**da görüntülenip görüntülenmeyeceğini **Dağıt** ..  
+3. İçinde **proje bağlamları** bölmesinde, select her proje için **yapılandırma** ve **Platform** ve seçin kullanılıp kullanılmayacağını **Yapı**da görüntülenip görüntülenmeyeceğini **Dağıt** ..  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme yapılandırmalarını anlama](../ide/understanding-build-configurations.md)   

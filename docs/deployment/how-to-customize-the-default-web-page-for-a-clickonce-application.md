@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9831c1176b5e71650742226e77bfca58dfa35a01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a4fc4d69e8bf0a3ef13a8a06e652c8be217a1c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106344"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Nasıl yapılır: ClickOnce uygulaması için varsayılan Web sayfasını özelleştirme
 ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik olarak oluşturulur ve birlikte uygulamayı yayınladınız. Varsayılan sayfa adı uygulama ve uygulama yükleme, önkoşulları yükleyin veya MSDN Yardımı'na erişmek için bağlantılar içerir.
@@ -39,13 +39,13 @@ ClickOnce uygulaması için Web yayımlama sırasında bir Web sayfası otomatik
 
 ### <a name="to-customize-the-publish-web-page"></a>Yayımla Web sayfasını özelleştirme
 
-1.  Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+1. Bir Web konumuna ClickOnce uygulamanızı yayımlayın. Daha fazla bilgi için [nasıl yapılır: Yayımlama Sihirbazını kullanarak ClickOnce uygulaması yayımlama](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
-2.  Web sunucusunda açık *Publish.htm* dosyasında Visual Web Designer'ı veya başka bir HTML düzenleyicisi.
+2. Web sunucusunda açık *Publish.htm* dosyasında Visual Web Designer'ı veya başka bir HTML düzenleyicisi.
 
-3.  İstediğiniz gibi sayfayı özelleştirmek ve kaydedin.
+3. İstediğiniz gibi sayfayı özelleştirmek ve kaydedin.
 
-4.  İsteğe bağlı. Visual Studio özelleştirilmiş Yayımla Web sayfanızın üzerine yazmasını engellemek için işareti kaldırın **sonra dağıtım Web sayfasını otomatik olarak üretmek her yayımlama** içinde **yayımlama seçeneği** iletişim kutusu.
+4. İsteğe bağlı. Visual Studio özelleştirilmiş Yayımla Web sayfanızın üzerine yazmasını engellemek için işareti kaldırın **sonra dağıtım Web sayfasını otomatik olarak üretmek her yayımlama** içinde **yayımlama seçeneği** iletişim kutusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [ClickOnce güvenliği ve dağıtımı](../deployment/clickonce-security-and-deployment.md)

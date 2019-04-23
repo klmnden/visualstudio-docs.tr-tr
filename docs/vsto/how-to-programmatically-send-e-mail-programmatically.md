@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110797"
 ---
 # <a name="how-to-programmatically-send-email"></a>Nasıl yapılır: Program aracılığıyla e-posta gönderme
   Bu örnekte, etki alanı adına sahip kişilere bir e-posta iletisi gönderilir **example.com** kendi e-posta adresleri.
@@ -33,7 +33,7 @@ ms.locfileid: "56646011"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek gerektirir:
 
--   Etki alanı adına sahip kişiler **example.com** kendi e-posta adresleri.
+- Etki alanı adına sahip kişiler **example.com** kendi e-posta adresleri.
 
 ## <a name="robust-programming"></a>Güçlü programlama
  Etki alanı adını arar filtreleme kodunu kaldırmayın **example.com**. Filtreyi kaldırmanız durumunda, çözümünüzün, tüm kişilere e-posta iletilerini gönderir.

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d8ef7f5df692f2f13c9eb3a5a99aa155d38137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076230"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>İzlenecek yol: Yeniden imzalama gerektirmeyen ve marka bilgisini koruyan bir ClickOnce uygulamasını el ile dağıtma
 Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uygulama ve ardından bu yayımlamak için bir müşteri verin ve dağıtmak, müşteri geleneksel dağıtım bildirimini güncelleştir ve yeniden oturum oluşturdu. Çoğu durumda tercih edilen yöntem, hala olmakla birlikte, .NET Framework 3.5 oluşturmanızı sağlayan [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] yeni bir dağıtım bildirimi yeniden oluşturmak zorunda kalmadan, müşteriler tarafından dağıtılabilir dağıtımlar. Daha fazla bilgi için [dağıtma ClickOnce uygulamaları için teslim etmeden test ve üretim sunucuları](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -40,9 +40,9 @@ Oluştururken bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolda adımları gerçekleştirmek için aşağıdakiler gerekir:
 
--   Dağıtmaya hazır bir Windows Forms uygulaması. Bu uygulama için olarak anılacaktır *WindowsFormsApp1*.
+- Dağıtmaya hazır bir Windows Forms uygulaması. Bu uygulama için olarak anılacaktır *WindowsFormsApp1*.
 
--   Visual Studio veya Windows SDK'sı.
+- Visual Studio veya Windows SDK'sı.
 
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Birden çok dağıtım ve Mage.exe kullanarak marka desteği ile ClickOnce uygulamasında dağıtmak için
 

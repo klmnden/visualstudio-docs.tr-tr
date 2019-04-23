@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076514"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Yazı Tipleri ve Renkler, Ortam, Seçenekler İletişim Kutusu
 
@@ -42,26 +42,26 @@ Renk düzenini değişiklikler, yapmanızın oturumu sırasında etkili olmaz. R
 
 Yazı tipi ve renk düzenleri değiştirebileceğiniz tüm kullanıcı arabirimi öğeleri listeler. Bu listeden bir öğeyi seçtikten sonra seçili öğe için renk ayarlarını özelleştirebilirsiniz **görüntü öğeleri**.
 
--   **Metin Düzenleyici**
+- **Metin Düzenleyici**
 
      Yazı tipi stili, boyutu ve rengi görüntü ayarlarını Metin Düzenleyicisi için yapılan değişiklikler varsayılan metin düzenleyicinizde metin görünümünü etkiler. IDE dışında bir metin düzenleyicisinde açık belgeler, bu ayarları tarafından etkilenmez.
 
--   **Yazıcı**
+- **Yazıcı**
 
      Yazı tipi stili, boyutu ve rengi görüntü ayarları yazıcı için yapılan değişiklikler, yazdırılan belgelerde metin görünümünü etkiler.
 
     > [!NOTE]
     > Gerektiği gibi yazdırma, görüntü ve metin düzenleyicisindeki için farklı varsayılan yazı tipi seçebilirsiniz. Tek baytlı hem çift baytlık karakterler içeren kod yazdırırken bu yararlı olabilir.
 
--   **Deyim tamamlama**
+- **Deyim tamamlama**
 
      Deyim tamamlama açılır Düzenleyicisi'nde görüntülenen metnin boyutunu ve yazı tipi stili değiştirir.
 
--   **Düzenleyici araç ipucu**
+- **Düzenleyici araç ipucu**
 
      Düzenleyici'de gösterilen ipuçlarında görüntülenen metin boyutunu ve yazı tipi stili değiştirir.
 
--   **Ortam yazı tipi**
+- **Ortam yazı tipi**
 
      Yazı tipi stili ve boyutu için zaten ayrı bir seçenek olmayan tüm IDE kullanıcı arabirimi öğelerini değiştirir **ayarlarını göster**.
 
@@ -71,7 +71,7 @@ Yazı tipi ve renk düzenleri değiştirebileceğiniz tüm kullanıcı arabirimi
 
      ::: moniker-end
 
--   **[Tüm metin aracı Windows]**
+- **[Tüm metin aracı Windows]**
 
      Yazı tipi stili, boyutu ve rengi değişiklikler, çıkış bölmeleri sahip IDE'de araç pencereleri, bu öğeyi etkileyen metin görünümünü için ayarları görüntüleyin. Örneğin, çıkış penceresine, komut penceresinde, komut penceresi, vb.
 
@@ -167,7 +167,7 @@ Bazı görüntü öğeleri şunlardır:
 |**Akıllı etiket**|Akıllı etiketler çağrıldığında anahat belirtmek için kullanılır.|
 |**SQL DML işaretçisi**|Transact-SQL Düzenleyicisi için geçerlidir. Bu düzenleyicide DML deyimleri, varsayılan olarak sınırlayıcı mavi bir kutu ile işaretlenir.|
 |**Eski kod**|Değiştirilen kodu bir güncelleştirme bekleniyor. Bazı durumlarda, Düzenle ve devam et kod değişikliklerini hemen uygulanamaz, ancak daha sonra hata ayıklamaya devam et olarak uygulanır. Bu şu anda Yürütülüyor işlevini çağırmanız gerekir bir işlev düzenlerseniz veya çağrı yığını üzerinde bekleyen bir işleve 64 bayttan daha fazla yeni değişkenleri eklerseniz oluşur. Bu durumda, hata ayıklayıcı bir "Eski kod Uyarısı" iletişim kutusu görüntüler ve değiştirilen kod söz konusu işlevi tamamlanır ve yeniden çağrılıncaya kadar yürütülmeye devam eder. Düzenle ve devam et, o anda kod değişiklikleri uygular.|
-|**dize**|Dize sabitleri.|
+|**Dize**|Dize sabitleri.|
 |**Dize (C# Verbatim @)**|Verbatim yorumlanır C# dilinde değişmez değerler dize. Örneğin:<br /><br /> @"x"|
 |**Sözdizimi hatası**|Ayrıştırma hataları.|
 |**Görev listesi kısayolu**|Varsa bir **görev listesi** bir satır için kısayol eklenir ve gösterge kenar boşluğunu devre dışı bırakıldı, satır vurgulanır.|

@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069519"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Nasıl yapılır: Visual Studio IDE'de gezinme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ Tümleşik geliştirme ortamı (IDE) penceresi penceresinin hareket etmenize izi
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Düzenleyicideki belirli dosyalar geçmek için
 
--   Görüntülemek için CTRL + TAB tuşuna basın **haldeyken IDE Gezgini'ni**. CTRL tuşunu basılı tutun ve sürekli olarak geçiş yapmak istediğiniz dosyayı seçin kadar SEKME tuşuna basın.
+- Görüntülemek için CTRL + TAB tuşuna basın **haldeyken IDE Gezgini'ni**. CTRL tuşunu basılı tutun ve sürekli olarak geçiş yapmak istediğiniz dosyayı seçin kadar SEKME tuşuna basın.
 
     > [!TIP]
     >  Hangi geçtiğiniz sırasını tersine çevirmek için **etkin dosyaların** listesinde, CTRL + SHIFT tuşlarını basılı tutun ve SEKME tuşuna basın.
 
      \- veya -
 
--   Düzenleyici sağ alt köşesinde, seçin **etkin dosyaların** düğmesini ve ardından geçmek için listeden bir dosya seçin.
+- Düzenleyici sağ alt köşesinde, seçin **etkin dosyaların** düğmesini ve ardından geçmek için listeden bir dosya seçin.
 
      \- veya -
 
--   Menü çubuğunda, **penceresi**, **Windows**.
+- Menü çubuğunda, **penceresi**, **Windows**.
 
--   Listesinde, görüntülemek ve ardından istediğiniz dosyayı seçin **etkinleştirme**.
+- Listesinde, görüntülemek ve ardından istediğiniz dosyayı seçin **etkinleştirme**.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>IDE'de araç Windows arasında gezinme
  **Haldeyken IDE Gezgini'ni** de sahip olduğunuz aracı windows döngüsü sağlar IDE'de açın. İki komutlardan birini erişmek için kullanabileceğiniz **haldeyken IDE Gezgini'ni** arasında geçiş yapmak istediğiniz düzene bağlı olarak, araç pencereleri arasında geçiş yapmak için. `Window.PreviousToolWindowNav` en son erişilen dosyanın taşımanızı sağlar ve `Window.NextToolWindowNav` ters sırada taşımanızı sağlar. Genel Geliştirme Ayarları atar SHIFT + ALT + F7 `Window.PreviousDocumentWindowNav` ve ALT + F7 `Window.NextDocumentWindowNav`.
@@ -86,7 +86,7 @@ Tümleşik geliştirme ortamı (IDE) penceresi penceresinin hareket etmenize izi
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>IDE'nin belirli araç penceresine geçin
 
--   Görüntülemek için ALT + F7'ye basın **haldeyken IDE Gezgini'ni**. ALT tuşunu basılı tutun ve F7'ye geçiş yapmak istediğiniz pencereyi seçene kadar tekrar tekrar basın.
+- Görüntülemek için ALT + F7'ye basın **haldeyken IDE Gezgini'ni**. ALT tuşunu basılı tutun ve F7'ye geçiş yapmak istediğiniz pencereyi seçene kadar tekrar tekrar basın.
 
     > [!TIP]
     >  Hangi geçtiğiniz sırasını tersine çevirmek için **etkin aracı Windows** listesinde, SHIFT + ALT tuşları basılı tutun ve F7'ye basın.

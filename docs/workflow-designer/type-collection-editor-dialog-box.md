@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093130"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Tür Koleksiyonu Düzenleyicisi İletişim Kutusu
 
@@ -31,16 +31,16 @@ Aşağıdaki tabloda kullanıcı arabirimi (UI) öğelerini açıklar **türü k
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Editor Typu Kolekce yedeklemek için Gönder getirin ve etkinlikleri almak için
 
-1.  Seçin **Gönder** veya **alma** Tasarım görünümünde etkinlik.
+1. Seçin **Gönder** veya **alma** Tasarım görünümünde etkinlik.
 
-2.  Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.
+2. Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.
 
-3.  İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **KnownTypes** özelliği.
+3. İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **KnownTypes** özelliği.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>InvokeMethod etkinliği için tür Koleksiyonu Düzenleyicisi'kurmak getirmek için
 
-1.  Seçin **InvokeMethod** Tasarım görünümünde etkinlik.
+1. Seçin **InvokeMethod** Tasarım görünümünde etkinlik.
 
-2.  Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.
+2. Tuşuna **F4** ortaya çıkarmak için **özellikleri** penceresi.
 
-3.  İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **GenericTypeArguments** özelliği.
+3. İçinde **özellikleri** penceresinde, yanındaki üç nokta düğmesini tıklatın **GenericTypeArguments** özelliği.

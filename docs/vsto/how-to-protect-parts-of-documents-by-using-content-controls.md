@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f99494539fc89e41be44f535289100e4af49b03
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103527"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Nasıl yapılır: İçerik denetimlerini kullanarak belge bölümlerini koruma
   Belgenin bir bölümünü koruduğunuzda, kullanıcıların belgenin bu bölümü içeriğini silme veya değiştirme engeller. İçerik denetimlerini kullanarak bir Microsoft Office Word belgesi kısımlarını korumak için birkaç yol vardır:
@@ -34,26 +34,26 @@ ms.locfileid: "56643619"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-##  <a name="EditDeleteControl"></a> Bir içerik denetimi koruyun
+## <a name="EditDeleteControl"></a> Bir içerik denetimi koruyun
  Düzenleme veya bir içerik denetimi tasarım zamanında veya çalışma zamanında bir belge düzeyi projede denetimin özelliklerini ayarlayarak, kullanıcıların engelleyebilirsiniz.
 
  Bir VSTO eklentisi projesi kullanarak belgeye çalışma zamanında ekleme içerik denetimleri de koruyabilir. Daha fazla bilgi için [nasıl yapılır: Word belgelerine içerik denetimleri ekleme](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 ### <a name="to-protect-a-content-control-at-design-time"></a>Tasarım zamanında bir içerik denetimi korumak için
 
-1.  Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, korumak istediğiniz içerik denetimi seçin.
+1. Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, korumak istediğiniz içerik denetimi seçin.
 
-2.  İçinde **özellikleri** penceresinde birini veya ikisini de aşağıdaki özellikleri ayarlayın:
+2. İçinde **özellikleri** penceresinde birini veya ikisini de aşağıdaki özellikleri ayarlayın:
 
-    -   Kullanıcı denetimi düzenlemesini önlemek için ayarlanmış **LockContents** için **True**.
+    - Kullanıcı denetimi düzenlemesini önlemek için ayarlanmış **LockContents** için **True**.
 
-    -   Kullanıcılar, silmesini önleyecek şekilde ayarlanmış **LockContentControl** için **True**.
+    - Kullanıcılar, silmesini önleyecek şekilde ayarlanmış **LockContentControl** için **True**.
 
-3.  **Tamam**'ı tıklatın.
+3. **Tamam**'ı tıklatın.
 
 ### <a name="to-protect-a-content-control-at-runtime"></a>Çalışma zamanında bir içerik denetimi korumak için
 
-1.  Ayarlama `LockContents` içerik denetimin özellik **true** kullanıcıların Denetim düzenlemesini önlemek ve ayarlamak için `LockContentControl` özelliğini **true** silmesini kullanıcıların önlemek için.
+1. Ayarlama `LockContents` içerik denetimin özellik **true** kullanıcıların Denetim düzenlemesini önlemek ve ayarlamak için `LockContentControl` özelliğini **true** silmesini kullanıcıların önlemek için.
 
      Aşağıdaki kod örneği kullanmayı gösterir <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> ve <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> iki farklı özelliklerini <xref:Microsoft.Office.Tools.Word.RichTextContentControl> bir belge düzeyi projede nesneleri. Bu kodu çalıştırmak için koda Ekle `ThisDocument` sınıfı proje ve çağrı `AddProtectedContentControls` yönteminden `ThisDocument_Startup` olay işleyicisi.
 
@@ -68,29 +68,29 @@ ms.locfileid: "56643619"
 ## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>Bir içerik denetiminde değil belgenin bir bölümünü koruyun
  Kullanıcıların alanı koyarak bir belge alanını değiştirmesini engelleyebilirsiniz bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Aşağıdaki senaryolarda kullanışlıdır:
 
--   İçerik denetimleri içermeyen bir alan korumak istiyorsunuz.
+- İçerik denetimleri içermeyen bir alan korumak istiyorsunuz.
 
--   İçerik denetimleri içeren bir alan korumak istediğiniz, ancak içerik denetimleri metin veya korumak istediğiniz diğer öğeleri değildir.
+- İçerik denetimleri içeren bir alan korumak istediğiniz, ancak içerik denetimleri metin veya korumak istediğiniz diğer öğeleri değildir.
 
 > [!NOTE]
 >  Oluşturursanız, bir <xref:Microsoft.Office.Tools.Word.GroupContentControl> katıştırılmış içerik denetimleri içeren, katıştırılmış içerik denetimleri otomatik olarak korunmaz. Kullanıcılar bir katıştırılmış içerik denetimi düzenlemesini önlemek için **LockContents** denetiminin özelliği.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Tasarım zamanında bir alanı boyutundaki bir belgeyi korumak için
 
-1.  Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, korumak istediğiniz alanı seçin.
+1. Barındırılan belge içindeki [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tasarımcısı, korumak istediğiniz alanı seçin.
 
-2.  Şerit üzerinde tıklayın **Geliştirici** sekmesi.
+2. Şerit üzerinde tıklayın **Geliştirici** sekmesi.
 
     > [!NOTE]
     >  Varsa **Geliştirici** sekme görünür değilse, önce görünür olmalıdır. Daha fazla bilgi için [nasıl yapılır: Şeritte Geliştirici sekmesini gösterme](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  İçinde **denetimleri** grubunda **grubu** açılan düğmesine ve ardından **grubu**.
+3. İçinde **denetimleri** grubunda **grubu** açılan düğmesine ve ardından **grubu**.
 
      A <xref:Microsoft.Office.Tools.Word.GroupContentControl> içeren korumalı bölge oluşturulan otomatik olarak `ThisDocument` projenizdeki sınıfı. Tasarım zamanında grubu denetimini temsil eden bir kenarlık görünür, ancak çalışma zamanında görünür bir kenarlık yoktur.
 
 ### <a name="to-protect-an-area-of-a-document-at-runtime"></a>Belgeye çalışma zamanında bir alanı korumak için
 
-1.  Programlı olarak koruyun ve ardından çağırmak istediğiniz alanı seçin <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> yöntemi oluşturmak için bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
+1. Programlı olarak koruyun ve ardından çağırmak istediğiniz alanı seçin <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> yöntemi oluşturmak için bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
      Belge düzeyi projesi için aşağıdaki kod örneği belgedeki ilk paragrafa metin ilk paragrafa seçer ve ardından başlatır ekler bir <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Bu kodu çalıştırmak için koda Ekle `ThisDocument` sınıfı proje ve çağrı `ProtectFirstParagraph` yönteminden `ThisDocument_Startup` olay işleyicisi.
 

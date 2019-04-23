@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5177add88897a838b95b6ca2aff94e03bc9e3509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85df0daced767311692213e0a0fb0b9c4cbd5836
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108041"
 ---
 # <a name="perftips"></a>PerfTips
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,24 +35,24 @@ Visual Studio hata ayıklayıcı *PerfTips* ve hata ayıklayıcıyla tümleştir
   
  ![DiagnosticTools&#45;güncelleştirme 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-güncelleştirme 1")  
   
--   **Kesme olayları** zaman çizelgesi, hata ayıklama oturumunda ziyaret kesme noktaları işaretleyin. ' A tıklayın, seçmek için bir olay **hata ayıklayıcı** details listesi.  
+- **Kesme olayları** zaman çizelgesi, hata ayıklama oturumunda ziyaret kesme noktaları işaretleyin. ' A tıklayın, seçmek için bir olay **hata ayıklayıcı** details listesi.  
   
--   **CPU kullanımı** grafiği gösterir değişiklik CPU kullanımı tüm işlemci çekirdeği arasında hata ayıklama oturumunda.  
+- **CPU kullanımı** grafiği gösterir değişiklik CPU kullanımı tüm işlemci çekirdeği arasında hata ayıklama oturumunda.  
   
--   **Olayları** listesi **hata ayıklayıcı** Ayrıntılar bölmesinde, her break olayı için öğeleri içerir.  
+- **Olayları** listesi **hata ayıklayıcı** Ayrıntılar bölmesinde, her break olayı için öğeleri içerir.  
   
--   **Süresi** sütunu bir kesme olayının olay ve önceki kesme noktası arasında geçen süreyi görüntüler.  
+- **Süresi** sütunu bir kesme olayının olay ve önceki kesme noktası arasında geçen süreyi görüntüler.  
   
 ## <a name="turn-perftips-on-or-off"></a>PerfTips Aç veya kapat  
  PerfTips devre dışı bırakmak veya etkinleştirmek için:  
   
-1.  Üzerinde **hata ayıklama** menüsünde seçin **seçenekleri**.  
+1. Üzerinde **hata ayıklama** menüsünde seçin **seçenekleri**.  
   
-2.  İşaretleyin veya temizleyin **Göster, hata ayıklama sırasında PerfTip geçen**.  
+2. İşaretleyin veya temizleyin **Göster, hata ayıklama sırasında PerfTip geçen**.  
   
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Tanılama araçları penceresini aç veya kapat  
  Tanılama araçları penceresi devre dışı bırakmak veya etkinleştirmek için:  
   
-1.  Üzerinde **hata ayıklama** menüsünde seçin **seçenekleri**.  
+1. Üzerinde **hata ayıklama** menüsünde seçin **seçenekleri**.  
   
-2.  İşaretleyin veya temizleyin **tanılama araçlarını hata ayıklama sırasında etkinleştirme**.
+2. İşaretleyin veya temizleyin **tanılama araçlarını hata ayıklama sırasında etkinleştirme**.

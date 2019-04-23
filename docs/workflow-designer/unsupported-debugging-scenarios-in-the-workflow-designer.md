@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 169f7d1cdd0976cac377f99f5f09b3c43948524c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099656"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>İş Akışı Tasarımcısında desteklenmeyen hata ayıklama senaryoları
 
@@ -21,38 +21,38 @@ ms.locfileid: "55918240"
 
 Desteklenmeyen iş akışı Tasarımcısı'nin hata ayıklama senaryoları şunlardır:
 
--   Kodu düzenlenmiş sonra yürütülmesine devam ettirilemez.
+- Kodu düzenlenmiş sonra yürütülmesine devam ettirilemez.
 
--   Yürütme iş akışının (sonraki ayarlayın) içindeki rastgele bir noktadan devam ettirilemez.
+- Yürütme iş akışının (sonraki ayarlayın) içindeki rastgele bir noktadan devam ettirilemez.
 
--   İmleç (imlece kadar Çalıştır) ulaşılana kadar yürütmeyi devam ettirilemez.
+- İmleç (imlece kadar Çalıştır) ulaşılana kadar yürütmeyi devam ettirilemez.
 
--   İş Akışı Tasarımcısı, tasarımcıyı kullanmadan kodda oluşturulan iş akışlarında hata ayıklamak için kullanılamaz.
+- İş Akışı Tasarımcısı, tasarımcıyı kullanmadan kodda oluşturulan iş akışlarında hata ayıklamak için kullanılamaz.
 
--   .NET Framework 4 Tasarımcısı'nda oluşturulan önceki sürümlerinde Windows Workflow Foundation (WF) iş akışı hata ayıklaması yapılamaz.
+- .NET Framework 4 Tasarımcısı'nda oluşturulan önceki sürümlerinde Windows Workflow Foundation (WF) iş akışı hata ayıklaması yapılamaz.
 
--   Kesme noktaları, etkinlikleri arasındaki bağlantıları tanımlanamıyor veya <xref:System.Activities.Statements.Flowchart> düğümleri.
+- Kesme noktaları, etkinlikleri arasındaki bağlantıları tanımlanamıyor veya <xref:System.Activities.Statements.Flowchart> düğümleri.
 
--   Pano hata ayıklama sırasında kullanılamaz.
+- Pano hata ayıklama sırasında kullanılamaz.
 
--   Etkinlikleri kopyalandığında veya yapıştırdığınız kesme noktaları korunmaz.
+- Etkinlikleri kopyalandığında veya yapıştırdığınız kesme noktaları korunmaz.
 
--   İş akışı kesme noktaları, çağrı yığını penceresinde olacak şekilde ayarlanamaz.
+- İş akışı kesme noktaları, çağrı yığını penceresinde olacak şekilde ayarlanamaz.
 
--   Kesme noktaları Tasarımcısı'nda oluştururken **satırı** ve **karakter** ayarlarında **yeni kesme noktası** iletişim kullanılmaz.
+- Kesme noktaları Tasarımcısı'nda oluştururken **satırı** ve **karakter** ayarlarında **yeni kesme noktası** iletişim kullanılmaz.
 
--   Kesme noktası penceresi ya da kısayol menüsünde aşağıdaki sütunları veya seçenekler iş akışı hata ayıklama için desteklemez:
+- Kesme noktası penceresi ya da kısayol menüsünde aşağıdaki sütunları veya seçenekler iş akışı hata ayıklama için desteklemez:
 
-    -   Koşul
+    - Koşul
 
-    -   İsabet sayısı
+    - İsabet sayısı
 
-    -   İsabet edildiğinde
+    - İsabet edildiğinde
 
-    -   İşlev
+    - İşlev
 
-    -   Veri
+    - Veri
 
-    -   İşlem
+    - İşlem
 
-    -   Ayrıştırma için Git
+    - Ayrıştırma için Git

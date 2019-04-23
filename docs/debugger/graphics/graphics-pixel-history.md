@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d02d56441eb8cb5a47fcdfc6cfa0db153fd72b8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100999"
 ---
 # <a name="graphics-pixel-history"></a>Grafik Piksel Geçmişi
 Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde belirli bir pikseli oyunlarda veya uygulamalarda bir çerçevesinde gerçekleşen Direct3D olayları tarafından nasıl etkilendiğini anlamanıza yardımcı olur.
@@ -35,7 +35,7 @@ Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde belir
 
  Piksel gölgelendirici çıkışı sonuç rengi üretmek için mevcut piksel rengi ile birleştirilmiş nasıl incelemek için her bir temel genişletebilirsiniz. Buradan ayrıca inceleyin veya temel ile ilişkili piksel gölgelendirici kodunda hata ayıklayın ve daha fazla giriş köşe gölgelendiricisi incelemek için köşe gölgelendirici düğümü genişletebilir.
 
-###  <a name="exclusion"></a> Temel dışlama
+### <a name="exclusion"></a> Temel dışlama
  Basit bir tür piksel rengi etkilemesini çıkarılır, dışlama çeşitli nedenlerden dolayı ortaya çıkabilir. Her bir nedeni, bu tabloda açıklanan bir simgeyle gösterilir:
 
 |Simge|Dışlama nedeni|
@@ -52,22 +52,22 @@ Visual Studio grafik Çözümleyicisi grafik piksel geçmişi penceresinde belir
 
 ##### <a name="to-view-a-shaders-source-code"></a>Gölgelendiricinin kaynak kodunu görüntülemek için
 
-1.  İçinde **grafik piksel geçmişi** penceresinde gölgelendirici için karşılık gelen bir çizim çağrısı bulun inceleyin ve genişletmek istiyor.
+1. İçinde **grafik piksel geçmişi** penceresinde gölgelendirici için karşılık gelen bir çizim çağrısı bulun inceleyin ve genişletmek istiyor.
 
-2.  Çizim altında yalnızca genişletilmiş çağrı, ilgilendiğiniz sorunu gösteren basit bir tür seçin ve genişletin.
+2. Çizim altında yalnızca genişletilmiş çağrı, ilgilendiğiniz sorunu gösteren basit bir tür seçin ve genişletin.
 
-3.  İlgilendiğiniz temel altında gölgelendirici başlık bağlantıyı — Örneğin, bağlantıyı **köşe gölgelendiricisi obj:30** köşe gölgelendirici kaynak kodunu görüntülemek için.
+3. İlgilendiğiniz temel altında gölgelendirici başlık bağlantıyı — Örneğin, bağlantıyı **köşe gölgelendiricisi obj:30** köşe gölgelendirici kaynak kodunu görüntülemek için.
 
     > [!TIP]
     >  Nesne sayısı **obj:30**, bu gölgelendirici grafik Çözümleyicisi arabirimi nesne tablosu ve ardışık düzen Aşamaları penceresinde olduğu gibi böyle boyunca tanımlar.
 
 ##### <a name="to-debug-a-shader"></a>Gölgelendirici hata ayıklamak için
 
-1.  İçinde **grafik piksel geçmişi** penceresinde gölgelendirici için karşılık gelen bir çizim çağrısı bulun inceleyin ve genişletmek istiyor.
+1. İçinde **grafik piksel geçmişi** penceresinde gölgelendirici için karşılık gelen bir çizim çağrısı bulun inceleyin ve genişletmek istiyor.
 
-2.  Ardından, çizim çağrısı altında yalnızca genişletilmiş, ilgileniyorsanız ve genişletmek sorunu gösteren basit bir tür seçin.
+2. Ardından, çizim çağrısı altında yalnızca genişletilmiş, ilgileniyorsanız ve genişletmek sorunu gösteren basit bir tür seçin.
 
-3.  İlgilendiğiniz temel altında seçin **hata ayıklamayı Başlat**. Bu giriş noktası için karşılık gelen temel gölgelendirici ilk çağrısıysa HLSL hata ayıklayıcısı varsayılanlara içine — diğer bir deyişle, ilk piksel veya köşe gölgelendiricisi tarafından işlenen. Temel ile ilişkili yalnızca bir piksel yoktur ancak satırları ve bu üçgen için birden fazla köşe gölgelendirici çağrılarına yoktur.
+3. İlgilendiğiniz temel altında seçin **hata ayıklamayı Başlat**. Bu giriş noktası için karşılık gelen temel gölgelendirici ilk çağrısıysa HLSL hata ayıklayıcısı varsayılanlara içine — diğer bir deyişle, ilk piksel veya köşe gölgelendiricisi tarafından işlenen. Temel ile ilişkili yalnızca bir piksel yoktur ancak satırları ve bu üçgen için birden fazla köşe gölgelendirici çağrılarına yoktur.
 
      Köşe gölgelendirici çağırma için belirli bir köşe hata ayıklama, VertexShader odkaz na nadpis genişletin ve ilgilendiğiniz köşe bulmak için ardından **hata ayıklamayı Başlat** yanında.
 

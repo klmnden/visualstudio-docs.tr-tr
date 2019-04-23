@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9e5dd79465301e5d2e6362daf70ef3e5b7c54ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102178"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Nasıl yapılır: Program aracılığıyla karakter sayma sayısı
   İlk karakter bir belge, ekleme noktasını temsil eden karakter 0. konumdadır. Son karakter konumundan belgede toplam karakter sayısı eşittir. Kullanarak bir belgedeki karakter sayısına göre belirleyebilirsiniz <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> özelliği <xref:Microsoft.Office.Interop.Word.Characters> koleksiyonu.
@@ -30,24 +30,24 @@ ms.locfileid: "56646323"
 
 ## <a name="to-display-the-number-of-characters-in-a-document-level-customization"></a>Belge düzeyi özelleştirmesinde karakter sayısını görüntülemek için
 
-1.  Belgenin tamamını seçin.
+1. Belgenin tamamını seçin.
 
      [!code-vb[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomation#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#98)]
 
-2.  Bir ileti kutusunda belgedeki karakter sayısına göre görüntüler.
+2. Bir ileti kutusunda belgedeki karakter sayısına göre görüntüler.
 
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]
 
 ## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>Bir VSTO eklenti karakter sayısını görüntülemek için
 
-1.  Belgenin tamamını seçin. Aşağıdaki örnek, etkin belgeyi seçer.
+1. Belgenin tamamını seçin. Aşağıdaki örnek, etkin belgeyi seçer.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#98)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#98](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#98)]
 
-2.  Bir ileti kutusunda belgedeki karakter sayısına göre görüntüler.
+2. Bir ileti kutusunda belgedeki karakter sayısına göre görüntüler.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]

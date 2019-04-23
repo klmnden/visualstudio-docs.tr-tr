@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 72160388114cd3c4860d9b22cd6c75535a4819dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073808"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Unity için Visual Studio Araçları’nı Kullanma
 
@@ -200,7 +200,7 @@ Burada açıklanan senaryo kaynak kodu seçtiğinizi varsaydığını unutmayın
 
    - Çıkış klasörünün olacak şekilde ayarlamak için DLL projesi oluşturma ayarlarını değiştirme **varlıklar** Unity projeniz klasörü. DLL hem PDB dosyaları yerleştirilecek **varlıklar** klasör.
 
-   PDB dosyaları, çünkü bunlar DLL'nin hata ayıklama sembolleri içeren ve kaynak kod hâli DLL kod eşleme hata ayıklama için gereklidir. Eski çalışma zamanı hedefliyorsanız, Unity için Visual Studio Araçları bir DLL'yi oluşturmak için DLL ve PDB bilgileri kullanır. Hata ayıklama sembol biçimi olan MDB dosyası tarafından kullanılan eski Unity komut dosyası altyapısı. Yeni çalışma zamanı desteği ve taşınabilir PDB kullanarak, Unity için Visual Studio Araçları yeni Unity çalışma zamanı yerel olarak taşınabilir pdb kullanabilmesi için olduğu gibi tüm sembol dönüştürme yapmak denemez.
+   PDB dosyaları, çünkü bunlar DLL'nin hata ayıklama sembolleri içeren ve kaynak kod hâli DLL kod eşleme hata ayıklama için gereklidir. Eski çalışma zamanı hedefliyorsanız, Unity için Visual Studio Araçları bir DLL'yi oluşturmak için DLL ve PDB bilgileri kullanır. Eski Unity betik altyapısı tarafından kullanılan hata ayıklama sembol biçimi MDB dosyası. Yeni çalışma zamanı desteği ve taşınabilir PDB kullanarak, Unity için Visual Studio Araçları yeni Unity çalışma zamanı yerel olarak taşınabilir pdb kullanabilmesi için olduğu gibi tüm sembol dönüştürme yapmak denemez.
    
    PDB oluşturma hakkında daha fazla bilgi bulunabilir [burada](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Yeni çalışma zamanı hedefliyorsanız Lütfen taşınabilir PDB düzgün bir şekilde oluşturmak için "Hata ayıklama bilgileri" "Taşınabilir" ayarlandığından emin olun. Eski çalışma zamanı hedefliyorsanız, "Tam" kullanmanız gerekir.
 

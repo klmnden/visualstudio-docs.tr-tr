@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108735"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Modelleri, Sınıfları ve İlişkileri Anlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Bir etki alanına özgü dil (DSL) yazma herhangi bir özel program kodu ile bir
   
  DSL tanım diyagramı yeniden düzenlemek için şunları yapabilirsiniz:  
   
--   Ana takas ve görünümleri başvuru kullanarak **ağacı buraya getirin** ve **ağacı Böl** komutları. Bir tek etki alanı sınıfı, bu komutları görmek için sağ tıklayın.  
+- Ana takas ve görünümleri başvuru kullanarak **ağacı buraya getirin** ve **ağacı Böl** komutları. Bir tek etki alanı sınıfı, bu komutları görmek için sağ tıklayın.  
   
--   Etki alanı sınıfları ve şekil sınıfları Ctrl + Yukarı Ok ve Ctrl + aşağı ok tuşlarına basarak yeniden sıralayabilir.  
+- Etki alanı sınıfları ve şekil sınıfları Ctrl + Yukarı Ok ve Ctrl + aşağı ok tuşlarına basarak yeniden sıralayabilir.  
   
--   Daraltabilir veya her bir şeklin üst-sağ taraftaki simgesini kullanarak sınıfları genişletin.  
+- Daraltabilir veya her bir şeklin üst-sağ taraftaki simgesini kullanarak sınıfları genişletin.  
   
--   Bir alan sınıfının altındaki eksi işareti (-) tıklayarak ağacı bölümlerini daraltın.  
+- Bir alan sınıfının altındaki eksi işareti (-) tıklayarak ağacı bölümlerini daraltın.  
   
 ## <a name="inheritance"></a>Devralma  
  Etki alanı sınıflar, devralma kullanılarak tanımlanabilir. Devralma türetme oluşturmak için devralma Aracı'nı tıklatın ve türetilen sınıfın temel sınıf'ye tıklayın. Bir model öğesini kendi etki alanı sınıfı, temel sınıftan devralınan tüm özelliklerle birlikte tanımlanan tüm özelliklerine sahiptir. Ayrıca, kendi ilişkileri rollerinde devralır.  

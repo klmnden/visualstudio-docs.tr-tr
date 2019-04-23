@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094794"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: GC.SuppressFinalize'ı doğru çağırın
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "54794926"
 
 ## <a name="cause"></a>Sebep
 
--   Uygulaması olan bir yöntemin <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> arama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Uygulaması olan bir yöntemin <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> arama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Uygulaması olmayan bir yöntem <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> çağrıları <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Uygulaması olmayan bir yöntem <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> çağrıları <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Bir yöntemi çağıran <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> ve bu (Visual Basic'te Me) dışında bir şey geçirir.
+- Bir yöntemi çağıran <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> ve bu (Visual Basic'te Me) dışında bir şey geçirir.
 
 ## <a name="rule-description"></a>Kural Tanımı
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Yöntemi nesnenin çöp toplama için kullanılabilir hale gelmeden önce herhangi bir zamanda kaynakları serbest kullanıcılar olanak sağlar. Varsa <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yöntemi çağrıldığında, bu nesnenin kaynakları serbest bırakır. Bu, sonlandırma gereksiz kılar. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> böylece nesnenin Sonlandırıcısı çöp toplayıcı çağırmaz.
 
- [System.IDisposable] yeniden uygulamak türetilen türlerle sonlandırıcılar önlemek için (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) ve çağırmak için korumasız türleri sonlandırıcılar olmadan hala çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Önlemek için sonlandırıcılar ile yeniden uygulamak, [System.IDisposable] (sahip türetilmiş türler<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) ve çağırmak için korumasız türleri sonlandırıcılar olmadan hala çağırmalıdır <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>İhlaller Nasıl Düzeltilir?
  Bu kural ihlalini düzeltmek için:

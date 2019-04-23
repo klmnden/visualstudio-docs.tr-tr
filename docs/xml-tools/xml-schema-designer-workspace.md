@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ce85980be2e55e9d3886f39ec855303b7b458cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107352"
 ---
-# <a name="xml-schema-designer-workspace"></a>XML şema Tasarımcısı çalışma alanı
+# <a name="xml-schema-designer-workspace"></a>XML şema tasarımcısı çalışma alanı
 
 XML şema Tasarımcısı'nı (XSD Tasarımcısı), XML şemaları keşfetmenize yardımcı olan bir grafik aracıdır. Ek olarak [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md)göz atın ve XML Şeması ağaç gidin ve aramalar gerçekleştirmek olanak tanıyan, XSD Tasarımcısı, XSD şema daha ayrıntılı olarak keşfetmenize olanak sağlayan üç görünüm sağlar. Başlangıç görünümü XSD Tasarımcısı için başlangıç noktası olan; Başlangıç görünümünden XSD Tasarımcısı'nın diğer görünümlerle gidin ve şema kümenize ayrıntılarına bakın. Şema kümesi özetini görmek için ve şema düğümler arasındaki ilişkileri grafik görünümü sağlar. Basit ve karmaşık türler, öğeleri, grupları, öznitelikleri ve öznitelik grupları dahil olmak üzere, yerel ve genel şema düğümlerinin ayrıntılarını grafik gösterimi için içerik modeli görünümünü sağlar.
 
@@ -25,22 +25,22 @@ XML şema Tasarımcısı'nı (XSD Tasarımcısı), XML şemaları keşfetmenize 
 
 Aşağıdaki yollarla çalışma alanına düğüm ekleyebilirsiniz:
 
--   "Şema kümesi Ayrıntıları" bölümünde [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **ekleme** genel düğüm türü yanındaki bağlantı.
+- "Şema kümesi Ayrıntıları" bölümünde [başlangıç görünümündeki](../xml-tools/start-view.md), tıklayın **ekleme** genel düğüm türü yanındaki bağlantı.
 
--   Genel düğümler, dosya düğümleri ve ad alanı düğümleri sürükleyip **XML Şeması Gezgini** üç görünümlerden herhangi birinde oturum. "Düğüm sürükleme ve bırakma" bölümünde daha fazla bilgi için bkz. [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md).
+- Genel düğümler, dosya düğümleri ve ad alanı düğümleri sürükleyip **XML Şeması Gezgini** üç görünümlerden herhangi birinde oturum. "Düğüm sürükleme ve bırakma" bölümünde daha fazla bilgi için bkz. [XML Şeması Gezgini](../xml-tools/xml-schema-explorer.md).
 
--   (Sağ tıklama) bağlam menüsü kullanma **XML Şeması Gezgini**. Daha fazla bilgi için [bağlam menüleri](../xml-tools/context-menus-xml-schema-explorer.md).
+- (Sağ tıklama) bağlam menüsü kullanma **XML Şeması Gezgini**. Daha fazla bilgi için [bağlam menüleri](../xml-tools/context-menus-xml-schema-explorer.md).
 
--   XSD Gezgini'nde bir arama yapın ve tıklayın **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine. Daha fazla bilgi için [şema kümesini arama](../xml-tools/searching-the-schema-set.md).
+- XSD Gezgini'nde bir arama yapın ve tıklayın **çalışma alanına vurgulanmış düğümler Ekle** özet sonuçlar bölmesinde düğmesine. Daha fazla bilgi için [şema kümesini arama](../xml-tools/searching-the-schema-set.md).
 
 ## <a name="switch-views"></a>Görünümler arasında geçiş
 
 Görünümler arasında geçiş için aşağıdakilerden birini kullanın:
 
--   XSD Tasarımcısı araç çubuğu.
+- XSD Tasarımcısı araç çubuğu.
 
--   Graf görünümünden ve içerik modeli görünümünü (sağ tıklama) bağlam menüleri.
+- Graf görünümünden ve içerik modeli görünümünü (sağ tıklama) bağlam menüleri.
 
--   Görünüm başlangıç sayfası ya da boş içerik modeli görünümünü veya graf görünümünü Filigran filigranlar.
+- Görünüm başlangıç sayfası ya da boş içerik modeli görünümünü veya graf görünümünü Filigran filigranlar.
 
--   Kısayol tuşlarını: **CTRL**+**1** başlangıç görünümü **Ctrl**+**2** için graf görünümünden ve **Ctrl** + **3** içerik modeli görünümünden için.
+- Kısayol tuşlarını: **CTRL**+**1** başlangıç görünümü **Ctrl**+**2** için graf görünümünden ve **Ctrl** + **3** içerik modeli görünümünden için.

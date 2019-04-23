@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099292"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>İzlenecek yol: VSTO eklenti projesinde basit veri bağlama
 
@@ -29,11 +29,11 @@ Konak denetimlerinin ve VSTO eklentisi projeleri Windows Forms denetimlerinde ve
 
 Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   Ekleme bir <xref:Microsoft.Office.Tools.Word.ContentControl> belgeye çalışma zamanında.
+- Ekleme bir <xref:Microsoft.Office.Tools.Word.ContentControl> belgeye çalışma zamanında.
 
--   Oluşturma bir <xref:System.Windows.Forms.BindingSource> , denetim bir veri kümesinin bir örneğine bağlanır.
+- Oluşturma bir <xref:System.Windows.Forms.BindingSource> , denetim bir veri kümesinin bir örneğine bağlanır.
 
--   Kayıtlarda gezinmek ve bunları denetimde görüntülemek kullanıcı etkinleştiriliyor.
+- Kayıtlarda gezinmek ve bunları denetimde görüntülemek kullanıcı etkinleştiriliyor.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ Bu izlenecek yol aşağıdaki görevleri gösterir:
 
 Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] veya [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Çalışan bir SQL Server 2005 veya SQL Server 2005 olan Express örneğine erişim `AdventureWorksLT` bağlı örnek veritabanı. İndirebileceğiniz `AdventureWorksLT` veritabanını [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?LinkId=115611). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
+- Çalışan bir SQL Server 2005 veya SQL Server 2005 olan Express örneğine erişim `AdventureWorksLT` bağlı örnek veritabanı. İndirebileceğiniz `AdventureWorksLT` veritabanını [CodePlex Web sitesinde](http://go.microsoft.com/fwlink/?LinkId=115611). Veritabanı ekleme hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
-    -   SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
+    - SQL Server Management Studio veya SQL Server Management Studio Express kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: Veritabanı (SQL Server Management Studio) ekleme](/sql/relational-databases/databases/attach-a-database).
 
-    -   Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
+    - Komut satırını kullanarak bir veritabanı eklemek için bkz: [nasıl yapılır: SQL Server Express için bir veritabanı dosyası iliştirmek](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
@@ -57,13 +57,13 @@ Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vard�
 
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
 
-1.  Adlı bir sözcük VSTO eklentisi projesi oluşturun **veritabanından belgeleri doldurma**, Visual Basic kullanarak veya C#.
+1. Adlı bir sözcük VSTO eklentisi projesi oluşturun **veritabanından belgeleri doldurma**, Visual Basic kullanarak veya C#.
 
      Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio açılır *ThisAddIn.vb* veya *ThisAddIn.cs* ekler ve dosya **veritabanından belgeleri doldurma** için proje **Çözüm Gezgini** .
 
-2.  Projenizin hedeflediği [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bir başvuru ekleyin *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* derleme. Bu başvuru, program aracılığıyla bu kılavuzda daha sonra belge Windows Forms denetimleri ekleme için gereklidir.
+2. Projenizin hedeflediği [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] veya [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], bir başvuru ekleyin *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* derleme. Bu başvuru, program aracılığıyla bu kılavuzda daha sonra belge Windows Forms denetimleri ekleme için gereklidir.
 
 ## <a name="create-a-data-source"></a>Bir veri kaynağı oluşturun
 
@@ -103,37 +103,37 @@ Denetimlere veri bağlama hakkında daha fazla bilgi için bkz: [Office çözüm
 
 ### <a name="to-create-the-interface-in-the-document"></a>Belgede arabirimi oluşturmak için
 
-1.  İçinde `ThisAddIn` sınıfında, aşağıdaki denetimleri görüntülemek ve kaydırmak için bildirin `Customer` tablosu `AdventureWorksLTDataSet` veritabanı.
+1. İçinde `ThisAddIn` sınıfında, aşağıdaki denetimleri görüntülemek ve kaydırmak için bildirin `Customer` tablosu `AdventureWorksLTDataSet` veritabanı.
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  İçinde `ThisAddIn_Startup` yöntemi, veri kümesini başlatmak, alınan bilgilerle DataSet'i doldurmak için aşağıdaki kodu ekleyin `AdventureWorksLTDataSet` veritabanı.
+2. İçinde `ThisAddIn_Startup` yöntemi, veri kümesini başlatmak, alınan bilgilerle DataSet'i doldurmak için aşağıdaki kodu ekleyin `AdventureWorksLTDataSet` veritabanı.
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Aşağıdaki kodu ekleyin `ThisAddIn_Startup` yöntemi. Bu belge genişleten bir ana bilgisayar öğesi oluşturur. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Aşağıdaki kodu ekleyin `ThisAddIn_Startup` yöntemi. Bu belge genişleten bir ana bilgisayar öğesi oluşturur. Daha fazla bilgi için [genişletmek Word belgelerini ve Excel çalışma kitaplarını çalışma zamanında VSTO Add-Ins](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  Belgenin başlangıcında birkaç aralıklarını tanımlayın. Bu aralıklar metin ekleme denetimlerini yerleştirin nereye belirleyin.
+4. Belgenin başlangıcında birkaç aralıklarını tanımlayın. Bu aralıklar metin ekleme denetimlerini yerleştirin nereye belirleyin.
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  Arabirimi denetimleri için önceden tanımlanmış aralıkları ekleyin.
+5. Arabirimi denetimleri için önceden tanımlanmış aralıkları ekleyin.
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  İçerik denetimi bağlamak `AdventureWorksLTDataSet` kullanarak <xref:System.Windows.Forms.BindingSource>. İçin C# geliştiricileri için iki olay işleyicileri ekleme <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrol eder.
+6. İçerik denetimi bağlamak `AdventureWorksLTDataSet` kullanarak <xref:System.Windows.Forms.BindingSource>. İçin C# geliştiricileri için iki olay işleyicileri ekleme <xref:Microsoft.Office.Tools.Word.Controls.Button> kontrol eder.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  Veritabanı Kayıtlarda gezinmek için aşağıdaki kodu ekleyin.
+7. Veritabanı Kayıtlarda gezinmek için aşağıdaki kodu ekleyin.
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ Word'ü açtığınızda, içerik denetimi verileri görüntüleyen `AdventureWo
 
 ### <a name="to-test-the-vsto-add-in"></a>VSTO eklentisi test etmek için
 
-1.  Tuşuna **F5**.
+1. Tuşuna **F5**.
 
      Adlı bir içerik denetimi `customerContentControl` oluşturulur ve verilerle doldurulur. Aynı anda, adlı bir veri kümesi nesnesi `adventureWorksLTDataSet` ve <xref:System.Windows.Forms.BindingSource> adlı `customerBindingSource` projeye eklenir. <xref:Microsoft.Office.Tools.Word.ContentControl> Bağlı <xref:System.Windows.Forms.BindingSource>, sırayla bağlı dataset nesnesine.
 
-2.  Tıklayın **sonraki** ve **önceki** düğmelerini veritabanı kayıtlarda gezinin.
+2. Tıklayın **sonraki** ve **önceki** düğmelerini veritabanı kayıtlarda gezinin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

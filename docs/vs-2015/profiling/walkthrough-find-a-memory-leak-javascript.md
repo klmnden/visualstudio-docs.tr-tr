@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100462"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>İzlenecek yol: Bir Bellek sızıntısını bulma (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>JavaScript bellek Çözümleyicisi test uygulamasını çalıştırma  
   
-1.  Visual Studio'da **dosya**, **yeni**, **proje**.  
+1. Visual Studio'da **dosya**, **yeni**, **proje**.  
   
-2.  Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 8**, ardından da **Evrensel** veya  **Windows Phone uygulamaları**.  
+2. Seçin **JavaScript** sol bölmede ve ardından **Windows**, **Windows 8**, ardından da **Evrensel** veya  **Windows Phone uygulamaları**.  
   
     > [!IMPORTANT]
     >  Bu konu başlığında gösterilen bellek kullanım sonuçları, bir Windows 8 uygulaması karşı test edilmez.  
   
-3.  Seçin **boş uygulama** Orta bölmede, proje şablonu.  
+3. Seçin **boş uygulama** Orta bölmede, proje şablonu.  
   
-4.  İçinde **adı** gibi bir ad belirtin, kutusunda `JS_Mem_Tester`ve ardından **Tamam**.  
+4. İçinde **adı** gibi bir ad belirtin, kutusunda `JS_Mem_Tester`ve ardından **Tamam**.  
   
-5.  İçinde **Çözüm Gezgini**default.html açın ve arasına aşağıdaki kodu yapıştırın \<gövdesi > etiketleri:  
+5. İçinde **Çözüm Gezgini**default.html açın ve arasına aşağıdaki kodu yapıştırın \<gövdesi > etiketleri:  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     > [!IMPORTANT]
     >  Windows 8.1 Evrensel uygulama şablonunu kullanıyorsanız, hem de HTML ve CSS kodu güncelleştirmeniz gerekiyor. Windows ve. WindowsPhone projeleri.  
   
-6.  Default.css açın ve aşağıdaki CSS kodunu ekleyin:  
+6. Default.css açın ve aşağıdaki CSS kodunu ekleyin:  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     }  
     ```  
   
-7.  Default.js açın ve tüm kodu şu kodla değiştirin:  
+7. Default.js açın ve tüm kodu şu kodla değiştirin:  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     })();  
     ```  
   
-8.  Hata ayıklamayı başlatmak için F5 tuşuna basın. Doğrulayın **bellek sızıntısı** düğmesi sayfada görüntülenir.  
+8. Hata ayıklamayı başlatmak için F5 tuşuna basın. Doğrulayın **bellek sızıntısı** düğmesi sayfada görüntülenir.  
   
 9. Visual Studio'ya dönün (Alt + Sekme) geçin ve sonra hata ayıklamayı durdurmak için Shift + F5'i seçin.  
   
@@ -224,7 +224,7 @@ Windows ve Windows Phone için geçerlidir] (.. /Image/windows_and_phone_content
     > [!TIP]
     >  Bazı durumlarda, bir nesne olarak bulma `Global` nesne, nesneyi tanımlamak yardımcı olabilir. Bunu yapmak için tanımlayıcısı için kısayol menüsünü açın ve ardından **kök görünümünde göster**.  
   
-##  <a name="FixingMemory"></a> Bellek sorunu düzeltme  
+## <a name="FixingMemory"></a> Bellek sorunu düzeltme  
   
 1. Profil Oluşturucu tarafından ortaya verileri kullanarak "Item" Kimliğine sahip DOM öğeleri kaldırmak için sorumlu kodu inceleyin. İçinde oluşan `initialize()` işlevi.  
   

@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102191"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>ClickOnce dağıtım stratejisini seçin
 Dağıtmak için üç farklı strateji vardır bir [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] öncelikle dağıtmakta olduğunuz uygulama türüne bağlıdır seçtiğiniz strateji; uygulama. Üç dağıtım stratejisi aşağıdaki gibidir:
 
--   Web'den veya bir Ağ Paylaşımı'ndan yükle
+- Web'den veya bir Ağ Paylaşımı'ndan yükle
 
--   CD'den yükle
+- CD'den yükle
 
--   Uygulamayı Web'den veya Ağ Paylaşımı'ndan başlat
+- Uygulamayı Web'den veya Ağ Paylaşımı'ndan başlat
 
     > [!NOTE]
     >  Dağıtım stratejisi seçmenin yanı sıra, uygulama güncelleştirmeleri sağlamak için de bir strateji seçmek isteyeceksiniz. Daha fazla bilgi için [ClickOnce güncelleştirme stratejisini seçin](../deployment/choosing-a-clickonce-update-strategy.md).

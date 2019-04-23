@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105597"
 ---
 # <a name="warning-script-debugging-disabled"></a>Uyarı: Betik hata ayıklaması devre dışı
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Internet Explorer'da betik hata ayıklama şu anda devre dışı
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Internet Explorer'da betik hata ayıklamasını etkinleştirmek için  
   
-1.  Internet Explorer **Araçları** menüsünde seçin **Internet Seçenekleri**.  
+1. Internet Explorer **Araçları** menüsünde seçin **Internet Seçenekleri**.  
   
-2.  **İnternet Seçenekleri** iletişim kutusunda **Gelişmiş** ’e tıklayın.  
+2. **İnternet Seçenekleri** iletişim kutusunda **Gelişmiş** ’e tıklayın.  
   
-3.  Üzerinde **Gelişmiş** sekmesinde, konum **ayarları** kutusunda **gözatma** kategorisi.  
+3. Üzerinde **Gelişmiş** sekmesinde, konum **ayarları** kutusunda **gözatma** kategorisi.  
   
-4.  NET **devre dışı bırak (Internet Explorer) ayıklamasını**.  
+4. NET **devre dışı bırak (Internet Explorer) ayıklamasını**.  
   
-5.  **Tamam**'ı tıklatın.  
+5. **Tamam**'ı tıklatın.  
   
-6.  Çıkmak ve Internet Explorer'ı yeniden başlatın.  
+6. Çıkmak ve Internet Explorer'ı yeniden başlatın.  
   
      Yeni ayarlar artık uygulanmaz.  
   

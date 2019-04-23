@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104219"
 ---
 # <a name="how-to-view-script-documents"></a>Nasıl yapılır: Betik belgelerini görüntüleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "54795016"
   
 ### <a name="to-view-a-server-side-script-document"></a>Bir sunucu tarafı komut dosyası belgesini görüntülemek için  
   
-1.  İçinde **Çözüm Gezgini**açın  **\<Web sitesi Pathname >** düğümü.  
+1. İçinde **Çözüm Gezgini**açın  **\<Web sitesi Pathname >** düğümü.  
   
-2.  Görüntülemek istediğiniz komut dosyasına çift tıklayın.  
+2. Görüntülemek istediğiniz komut dosyasına çift tıklayın.  
   
      Sunucu tarafı komut dosyası, bir kaynak penceresinde açılır.  
   
 ### <a name="to-view-a-client-side-script-document"></a>İstemci tarafı komut dosyası belgeyi görüntülemek için  
   
-1.  İçinde **Çözüm Gezgini**açın **betik belgelerini** düğümü.  
+1. İçinde **Çözüm Gezgini**açın **betik belgelerini** düğümü.  
   
-2.  Görüntülemek istediğiniz komut dosyasına çift tıklayın.  
+2. Görüntülemek istediğiniz komut dosyasına çift tıklayın.  
   
      İstemci tarafı komut dosyası, bir kaynak penceresinde açılır.  
   

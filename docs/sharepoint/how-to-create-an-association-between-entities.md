@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092571"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Nasıl yapılır: Varlıklar arasında ilişkilendirme oluşturma
   İlişkilendirmeleri oluşturarak iş verileri bağlantısı (BDC) modelinizdeki varlıklar arasında ilişkiler tanımlayabilirsiniz. Visual Studio model tüketicilerinin her ilişkilendirmesi hakkında bilgi sağlayan yöntemler oluşturur. Bu yöntemler, SharePoint web bölümleri, liste veya bir kullanıcı arabirimi (UI) veri ilişkileri görüntülemek için özel uygulamaları tarafından kullanılabilecek.
@@ -35,29 +35,29 @@ ms.locfileid: "56645127"
 
 ### <a name="to-create-an-association-between-entities"></a>Varlıklar arasında ilişkilendirme oluşturma
 
-1.  Üzerinde **BusinessDataConnectivity** sekmesinde **araç kutusu**, seçin **ilişkilendirme** öğesi.
+1. Üzerinde **BusinessDataConnectivity** sekmesinde **araç kutusu**, seçin **ilişkilendirme** öğesi.
 
-2.  İVB Tasarımcısı kaynak varlık seçin ve ardından hedef varlık seçin.
+2. İVB Tasarımcısı kaynak varlık seçin ve ardından hedef varlık seçin.
 
      **İlişkilendirme Düzenleyicisi** görünür.
 
-3.  Bir yabancı anahtar tabanlı ilişki oluşturmak isteyip istemediğinizi seçin **yabancı anahtar ilişkilendirmesi olduğundan** onay kutusu.
+3. Bir yabancı anahtar tabanlı ilişki oluşturmak isteyip istemediğinizi seçin **yabancı anahtar ilişkilendirmesi olduğundan** onay kutusu.
 
-    1.  İçinde **kaynak kimliği** sütununun **tanımlayıcı eşlemesi** tablo, tanımlayıcı yanında görünen eşleşen her tür tanımlayıcısını seçin **alan** sütun.
+    1. İçinde **kaynak kimliği** sütununun **tanımlayıcı eşlemesi** tablo, tanımlayıcı yanında görünen eşleşen her tür tanımlayıcısını seçin **alan** sütun.
 
          Örneğin, **kaynak kimliği** sütunundaki `ContactID` yanındaki `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` tür tanımlayıcısı ve `ReadItem.salesOrder.SalesOrder.ContactID` tür tanımlayıcısı.
 
-4.  Bir yabancı anahtarsız ilişkilendirmesini oluşturmak istiyorsanız, Temizle **yabancı anahtar ilişkilendirmesi olduğundan** onay kutusu.
+4. Bir yabancı anahtarsız ilişkilendirmesini oluşturmak istiyorsanız, Temizle **yabancı anahtar ilişkilendirmesi olduğundan** onay kutusu.
 
-5.  Seçin **Tamam** düğmesi.
+5. Seçin **Tamam** düğmesi.
 
-6.  İVB Tasarımcısı üzerinde kaynak varlık ve hedef varlık ilişkiyi temsil eden bir çizgi görünür.
+6. İVB Tasarımcısı üzerinde kaynak varlık ve hedef varlık ilişkiyi temsil eden bir çizgi görünür.
 
      Visual Studio bir hizmet sınıfı, hedef varlık ve hizmet sınıfı, kaynak varlık ilişkisi Gezgin yöntemi ekler. İlişkilendirme Gezinti yöntemleri hakkında daha fazla bilgi için bkz. [desteklenen işlemler](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  Kaynak varlık ilişkisi Gezgin yönteminde bir hedef varlık koleksiyonunu döndüren kod ekleyin.
+7. Kaynak varlık ilişkisi Gezgin yönteminde bir hedef varlık koleksiyonunu döndüren kod ekleyin.
 
-8.  Hedef varlık ilişkisi Gezgin yönteminde, ilişkili kaynak varlık döndüren kod ekleyin.
+8. Hedef varlık ilişkisi Gezgin yönteminde, ilişkili kaynak varlık döndüren kod ekleyin.
 
      İlişkilendirme Gezgin yöntemleri örnekleri için bkz. [varlıklar arasında ilişkilendirme oluşturma](../sharepoint/creating-an-association-between-entities.md).
 

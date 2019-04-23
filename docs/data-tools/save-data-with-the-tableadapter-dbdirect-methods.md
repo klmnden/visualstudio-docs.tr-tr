@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103387"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect metotlarıyla veri kaydetme
 
@@ -29,15 +29,15 @@ Bu izlenecek yol, bir TableAdapter DBDirect yöntemleri kullanılarak doğrudan 
 
 Bu kılavuz boyunca, öğreneceksiniz nasıl yapılır:
 
--   Yeni bir **Windows Forms uygulaması**.
+- Yeni bir **Windows Forms uygulaması**.
 
--   Oluşturma ve yapılandırma ile dataset [veri kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png).
+- Oluşturma ve yapılandırma ile dataset [veri kaynağı Yapılandırma Sihirbazı](../data-tools/media/data-source-configuration-wizard.png).
 
--   Denetimin formda öğelerinden sürüklendiğinde oluşturulacak seçin **veri kaynakları** penceresi. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Denetimin formda öğelerinden sürüklendiğinde oluşturulacak seçin **veri kaynakları** penceresi. Daha fazla bilgi için [veri kaynakları penceresinden sürüklendiğinde oluşturulacak denetimi ayarlama](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Öğe sürükleyerek veriye bağlı form oluşturma **veri kaynakları** forma penceresi.
+- Öğe sürükleyerek veriye bağlı form oluşturma **veri kaynakları** forma penceresi.
 
--   Doğrudan veritabanına erişmek ve ekleme, güncelleştirme ve silme işlemleri gerçekleştirmek için yöntemleri ekleyin.
+- Doğrudan veritabanına erişmek ve ekleme, güncelleştirme ve silme işlemleri gerçekleştirmek için yöntemleri ekleyin.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -87,11 +87,11 @@ Bu adımı kullanan **veri kaynağı Yapılandırma Sihirbazı** dayalı bir ver
 
 4. Üzerinde **veri bağlantınızı seçin** ekranında, aşağıdakilerden birini yapın:
 
-    -   Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
+    - Northwind örnek veritabanıyla kurulan veri bağlantısı aşağı açılan listede kullanılabilir durumdaysa bunu seçin.
 
          -veya-
 
-    -   Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
+    - Seçin **yeni bağlantı** başlatmak için **Bağlantı Ekle/Değiştir** iletişim kutusu.
 
 5. Veritabanınız parola gerektiriyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.
 
@@ -152,21 +152,21 @@ A <xref:System.Windows.Forms.DataGridView> denetim ve araç şeridi (<xref:Syste
 
 ## <a name="run-the-application"></a>Uygulamayı çalıştırma
 
--   Seçin **F5** uygulamayı çalıştırın.
+- Seçin **F5** uygulamayı çalıştırın.
 
--   Seçin **Ekle** düğmesini ve yeni kayıt kılavuzda göründüğünü doğrulayın.
+- Seçin **Ekle** düğmesini ve yeni kayıt kılavuzda göründüğünü doğrulayın.
 
--   Seçin **güncelleştirme** düğmesini ve kayıt kılavuzda güncelleştirildiğini doğrulayın.
+- Seçin **güncelleştirme** düğmesini ve kayıt kılavuzda güncelleştirildiğini doğrulayın.
 
--   Seçin **Sil** düğmesini ve kayıt kılavuzdan kaldırıldığını doğrulayın.
+- Seçin **Sil** düğmesini ve kayıt kılavuzdan kaldırıldığını doğrulayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
 Uygulama gereksinimlerinize bağlı olarak, veri bağlama form oluşturduktan sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Bu izlenecek yolda yapabileceğiniz bazı geliştirmeler şunlardır:
 
--   Forma arama işlevselliği ekleme.
+- Forma arama işlevselliği ekleme.
 
--   Seçerek veri kümesine ek tablolar ilave **veri kümesini Yapılandırma Sihirbazı ile** içinden **veri kaynakları** penceresi. İlgili düğümlerin form üzerine sürükleyerek ilgili verileri görüntüleyen denetimler ekleyebilirsiniz. Daha fazla bilgi için [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
+- Seçerek veri kümesine ek tablolar ilave **veri kümesini Yapılandırma Sihirbazı ile** içinden **veri kaynakları** penceresi. İlgili düğümlerin form üzerine sürükleyerek ilgili verileri görüntüleyen denetimler ekleyebilirsiniz. Daha fazla bilgi için [veri kümelerindeki ilişkiler](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

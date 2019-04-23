@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57790fce73c96a37c678f32cb76e332c28f73673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093577"
 ---
 # <a name="error-site-uses-ip-address"></a>Hata: Site IP adresi kullanıyor
 Hata ayıklayıcı bir IP adresi kullanarak bir Web uygulaması için otomatik iliştirme çalıştığında bu hata oluşur. Değiştirirseniz böyle **Web sitesi kimliği** için **belirli IP adreslerini kullanan** IIS'de.
@@ -30,11 +30,11 @@ Hata ayıklayıcı bir IP adresi kullanarak bir Web uygulaması için otomatik i
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1.  Kullanım el ile eklemek yerine (hata ayıklama menüsünden **iliştirme**).
+1. Kullanım el ile eklemek yerine (hata ayıklama menüsünden **iliştirme**).
 
      —veya—
 
-2.  Değişiklik **IIS Web sitesi kimliği** ayarı.
+2. Değişiklik **IIS Web sitesi kimliği** ayarı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 - [Web Uygulamalarında Hata Ayıklama: Hatalar ve Sorun Giderme](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

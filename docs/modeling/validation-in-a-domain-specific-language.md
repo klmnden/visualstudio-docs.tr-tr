@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103602"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Etki Alanına Özgü bir Dilde Doğrulama
 Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan model anlamlı olduğunu doğrulamak için doğrulama kısıtlamalarını tanımlayabilirsiniz. Örneğin, kullanıcılar, kişiler ve kendi üst öğelerinden ailesi ağacının çizmek DSL'nizi izin veriyorsa, alt kendi üst öğeleri sonraki Doğum tarihleri sahip olmasını sağlar bir kısıtlama yazabilirsiniz.
@@ -54,13 +54,13 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
 
 1. Doğrulamayı etkinleştirmek **Editor\Validation** düğüm:
 
-   1.  Açık **Dsl\DslDefinition.dsl**.
+   1. Açık **Dsl\DslDefinition.dsl**.
 
-   2.  DSL Gezgini'nde **Düzenleyicisi** düğümünü seçip alt **doğrulama**.
+   2. DSL Gezgini'nde **Düzenleyicisi** düğümünü seçip alt **doğrulama**.
 
-   3.  Özellikler penceresinde ayarlayın **kullanan** özelliklerine `true`. Tüm bu özellikleri ayarlamak oldukça kullanışlıdır.
+   3. Özellikler penceresinde ayarlayın **kullanan** özelliklerine `true`. Tüm bu özellikleri ayarlamak oldukça kullanışlıdır.
 
-   4.  Tıklayın **tüm Şablonları Dönüştür** içinde **Çözüm Gezgini** araç çubuğu.
+   4. Tıklayın **tüm Şablonları Dönüştür** içinde **Çözüm Gezgini** araç çubuğu.
 
 2. Bir veya daha fazla alan sınıfları veya etki alanı ilişkileri için kısmi sınıf tanımları yazma. Yeni bir kod dosyasında bu tanımları yazma **Dsl** proje.
 
@@ -70,7 +70,7 @@ Bir etki alanına özgü dil (DSL) yazarı, kullanıcı tarafından oluşturulan
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Varsayılan olarak, bu öznitelik de türetilmiş sınıflar için doğrulama sağlayacaktır. Belirli bir türetilmiş sınıf için doğrulama devre dışı bırakmak isterseniz, kullanabileceğiniz `ValidationState.Disabled`.
+   - Varsayılan olarak, bu öznitelik de türetilmiş sınıflar için doğrulama sağlayacaktır. Belirli bir türetilmiş sınıf için doğrulama devre dışı bırakmak isterseniz, kullanabileceğiniz `ValidationState.Disabled`.
 
 4. Doğrulama yöntemlerinin sınıfları ekleyin. Her doğrulama yöntemi herhangi bir ada sahip ancak türünde bir parametreye sahip <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 

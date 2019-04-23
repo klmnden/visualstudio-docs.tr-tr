@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebbb10f0c317e79e22c8eb49b59e4e58a82b9d77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097342"
 ---
 # <a name="graphics-pipeline-stages"></a>Grafik Ardışık Düzen Aşamaları
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ Grafik ardışık düzen Aşamaları penceresinde bir bağımsız çizim çağr�
   
 ##### <a name="to-view-a-shaders-source-code"></a>Gölgelendiricinin kaynak kodunu görüntülemek için  
   
--   İçinde **grafik ardışık düzen aşamaları** penceresinde gölgelendirici için karşılık gelen gölgelendirici aşamasını bulun incelemeniz gerekebilir. Daha sonra Önizleme görüntüsünü gölgelendirici aşaması odkaz na nadpis izleyin — Örneğin, bağlantıyı izleyerek **köşe gölgelendiricisi obj:30** köşe gölgelendirici kaynak kodunu görüntülemek için.  
+- İçinde **grafik ardışık düzen aşamaları** penceresinde gölgelendirici için karşılık gelen gölgelendirici aşamasını bulun incelemeniz gerekebilir. Daha sonra Önizleme görüntüsünü gölgelendirici aşaması odkaz na nadpis izleyin — Örneğin, bağlantıyı izleyerek **köşe gölgelendiricisi obj:30** köşe gölgelendirici kaynak kodunu görüntülemek için.  
   
     > [!TIP]
     >  Nesne sayısı **obj:30**, olduğu gibi nesne tablosu ve piksel geçmişini penceresi gibi grafik Çözümleyicisi arabirimi içinde bu gölgelendiriciyi tanımlar.  
   
 ##### <a name="to-debug-a-shader"></a>Gölgelendirici hata ayıklamak için  
   
--   İçinde **grafik ardışık düzen aşamaları** penceresinde gölgelendirici için karşılık gelen gölgelendirici aşamasını bulun, hata ayıklamak istediğiniz. Önizleme görüntüsü seçin **hata ayıklamayı Başlat**. Bu giriş noktasına karşılık gelen aşamanın gölgelendirici ilk çağrıya HLSL hata ayıklayıcısı varsayılanlara — diğer bir deyişle, ilk piksel, Tepe veya temel nesne bu çizim çağrısı sırasında gölgelendirici tarafından işlenir. Bu belirli piksel veya köşe gölgelendiricisi çağrıları üzerinden erişilebilir **grafik piksel geçmişi**.  
+- İçinde **grafik ardışık düzen aşamaları** penceresinde gölgelendirici için karşılık gelen gölgelendirici aşamasını bulun, hata ayıklamak istediğiniz. Önizleme görüntüsü seçin **hata ayıklamayı Başlat**. Bu giriş noktasına karşılık gelen aşamanın gölgelendirici ilk çağrıya HLSL hata ayıklayıcısı varsayılanlara — diğer bir deyişle, ilk piksel, Tepe veya temel nesne bu çizim çağrısı sırasında gölgelendirici tarafından işlenir. Bu belirli piksel veya köşe gölgelendiricisi çağrıları üzerinden erişilebilir **grafik piksel geçmişi**.  
   
 ### <a name="the-pipeline-stages"></a>Ardışık Düzen aşamaları  
  Ardışık Düzen Aşamaları penceresinde yalnızca çizim çağrısı sırasında etkin ardışık düzen aşamaları görselleştirir. Grafik ardışık düzeninin her aşamasında, önceki aşamaya girişten dönüştürür ve sonuç sonraki aşamaya geçer. İlk aşama — giriş derleyici — dizin ve köşe verileri uygulamanızdan; giriş olarak alır son aşama — çıkış Birleştiricisi — yeni piksel framebuffer geçerli içerikle birlikte çizilir veya işleme hedefi çıktısı, ekranda gördüğünüz son görüntü üretmek için olarak birleştirir.  

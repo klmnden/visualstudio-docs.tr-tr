@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111694"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümelerine kod ekleme
 Veri kümesi için bir parçalı sınıf dosyası oluşturma ve kod eklemeyi tarafından bir veri kümesinin işlevselliğini genişletebilirsiniz (kod eklemek yerine *DatasetName*. Dataset.Designer dosyası). Kısmi sınıflar arasında birden çok fiziksel dosyaları Bölünecek belirli bir sınıf için kod etkinleştirin. Daha fazla bilgi için [kısmi](/dotnet/visual-basic/language-reference/modifiers/partial) veya [kısmi sınıflar ve yöntemler](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ Veri kümesini ve TableAdapter kodunu ayırdıktan sonra varsayılan olarak, her
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümelerine kod ekleme
 
-1.  İçeren proje bulun *.xsd* dosya.
+1. İçeren proje bulun *.xsd* dosya.
 
-2.  Seçin **.xsd** dosyayı veri kümesini açın.
+2. Seçin **.xsd** dosyayı veri kümesini açın.
 
-3.  Kod (başlık çubuğundaki tablo adı) ekleyin ve ardından istediğiniz veri tablosuna sağ **kodu görüntüle**.
+3. Kod (başlık çubuğundaki tablo adı) ekleyin ve ardından istediğiniz veri tablosuna sağ **kodu görüntüle**.
 
      Kısmi sınıf oluşturulur ve Kod Düzenleyicisi'nde açılır.
 
-4.  Kısmi sınıf bildirimi içinde kod ekleyin.
+4. Kısmi sınıf bildirimi içinde kod ekleyin.
 
      Aşağıdaki örnek, NorthwindDataSet'teki CustomersDataTable kod ekleme yeri gösterir:
 
@@ -53,6 +53,7 @@ Veri kümesini ve TableAdapter kodunu ayırdıktan sonra varsayılan olarak, her
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

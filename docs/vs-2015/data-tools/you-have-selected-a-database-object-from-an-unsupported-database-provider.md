@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4021d6413acbe895995ee25809deb250daf6872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8ecec386030299be7b6c9571218dec0c3396440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073598"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Desteklenmeyen bir veritabanı sağlayıcısından bir veritabanı nesnesi seçtiniz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54764155"
   
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
   
--   Tıklayın **Tamam** desteklenmeyen bir veritabanı sağlayıcısı kullanan bağlantı harita varlık sınıfları tasarlama devam etmek için. Desteklenmeyen veritabanı sağlayıcıları kullandığınızda beklenmeyen davranışlarla karşılaşabilirsiniz.  
+- Tıklayın **Tamam** desteklenmeyen bir veritabanı sağlayıcısı kullanan bağlantı harita varlık sınıfları tasarlama devam etmek için. Desteklenmeyen veritabanı sağlayıcıları kullandığınızda beklenmeyen davranışlarla karşılaşabilirsiniz.  
   
      -veya-  
   
--   Tıklayın **iptal**.  
+- Tıklayın **iptal**.  
   
      İşlem durduruldu. Oluşturun veya SQL Server için .NET Framework sağlayıcısı kullanan bir veri bağlantısı kullanıyor.  
   

@@ -10,12 +10,12 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074314"
 ---
 # <a name="how-to-troubleshoot-services"></a>Nasıl yapılır: Hizmetlerde Sorun Giderme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>Bir hizmette sorun gidermek için  
   
-1.  Hizmet doğru şekilde kayıtlı olup olmadığını görmek için sistem kayıt defterine inceleyin. Daha fazla bilgi için [kayıt hizmetleri](../misc/registering-services.md).  
+1. Hizmet doğru şekilde kayıtlı olup olmadığını görmek için sistem kayıt defterine inceleyin. Daha fazla bilgi için [kayıt hizmetleri](../misc/registering-services.md).  
   
      Aşağıdaki .reg dosyasını parçası nasıl SVsTextManager hizmet kayıtlı gösterir:  
   
@@ -52,17 +52,17 @@ if (log == null) return;
   
      Yukarıdaki örnekte, sürüm numarası sürümüdür [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]12.0 veya 14.0, ' % s'anahtarı {F5E7E71D-1401-11d1-883B-0000F87579D2} hizmeti, SVsTextManager ve varsayılan değer {hizmet tanımlayıcısı (SID) gibi F5E7E720-1401-11D1-883B-0000F87579D2} GUID metin Yöneticisi hizmeti sağlayan VSPackage paketidir.  
   
-2.  GetService çağırdığınızda hizmet türü ve arabirim türünü kullanın. Bir hizmet isteğinde bulunurken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> GUID türünden çıkarır. Aşağıdaki koşullar doğruysa, bir hizmet bulunmaz:  
+2. GetService çağırdığınızda hizmet türü ve arabirim türünü kullanın. Bir hizmet isteğinde bulunurken [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> GUID türünden çıkarır. Aşağıdaki koşullar doğruysa, bir hizmet bulunmaz:  
   
-    1.  Bir arabirim türü yerine hizmet türünün GetService için geçirilir.  
+    1. Bir arabirim türü yerine hizmet türünün GetService için geçirilir.  
   
-    2.  Hiçbir GUID arabirime açıkça atanır. Bu nedenle, sistem gerektiği gibi bir nesne için varsayılan bir GUID oluşturur.  
+    2. Hiçbir GUID arabirime açıkça atanır. Bu nedenle, sistem gerektiği gibi bir nesne için varsayılan bir GUID oluşturur.  
   
-3.  Hizmet isteyen VSPackage tarihli emin olun. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sonra oluşturmak ve çağırmadan önce VSPackage siteleri <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3. Hizmet isteyen VSPackage tarihli emin olun. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sonra oluşturmak ve çağırmadan önce VSPackage siteleri <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Bir hizmet gerektiren bir VSPackage oluşturucuda kodunuz varsa, bu dosyayı Initialize yöntemi başına taşıyın.  
   
-4.  Doğru hizmet sağlayıcısı kullandığınızdan emin olun.  
+4. Doğru hizmet sağlayıcısı kullandığınızdan emin olun.  
   
      Tüm hizmet sağlayıcıları benzer. Hizmet sağlayıcısı, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Vspackage'a başarılı bir geçiş için bir araç penceresi farklıdır. Araç penceresi hizmet sağlayıcısı bildiği <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, hakkında bilgi sahibi değildir ancak <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Çağırabilirsiniz <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> VSPackage hizmet sağlayıcısından bir araç penceresi içinden almak için.  
   

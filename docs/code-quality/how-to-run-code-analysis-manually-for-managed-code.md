@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 159b13fafdaaa0b6dfaa2f590be2300c6b14425e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096757"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Nasıl yapılır: Yönetilen kod için kod çözümlemesini elle çalıştırma
 Kod Analizi aracı bilgileri, kaynak kodunuzdaki olası hataları hakkında sağlar. Kod Analizi her kod projesini derleme ile otomatik olarak çalıştırabilir ve kod analizini el ile çalıştırabilirsiniz. Kod analizini çalıştırdığınızda denetlenir kurallar Kod Analizi proje özelliği sayfalarından sayfasında belirtilir. Daha fazla bilgi için [nasıl yapılır: Yönetilen kod projesi için kod çözümlemesini yapılandırma](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 
 ### <a name="to-run-code-analysis-manually"></a>İçin kod çözümlemesini elle çalıştırma
 
-1.  İçinde **Çözüm Gezgini**, projeye tıklayın.
+1. İçinde **Çözüm Gezgini**, projeye tıklayın.
 
-2.  Üzerinde **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır** *proje adı*.
+2. Üzerinde **Çözümle** menüsünde tıklatın **kod çözümlemeyi Çalıştır** *proje adı*.

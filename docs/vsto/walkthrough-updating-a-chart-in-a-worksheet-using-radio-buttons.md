@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07987a0c7debdb44c2da442ce6b598f8a78dea0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097225"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>İzlenecek yol: Radyo Düğmelerini Kullanarak Çalışma Sayfasında Grafik Güncelleme
   Bu izlenecek yol, kullanıcı seçenekleri arasında kolayca geçiş yapmak için bir yol sağlamak için Microsoft Office Excel çalışma sayfasında radyo düğmeleri kullanmanın temellerini gösterir. Bu durumda, bir grafik stilini seçeneklerini değiştirin.
@@ -30,9 +30,9 @@ ms.locfileid: "59651896"
 
  Bu izlenecek yol aşağıdaki görevleri gösterir:
 
--   Radyo düğmelerinden oluşan bir grup çalışma sayfasına ekleme.
+- Radyo düğmelerinden oluşan bir grup çalışma sayfasına ekleme.
 
--   Bir seçenek belirlendiğinde, grafik stilini değiştirme.
+- Bir seçenek belirlendiğinde, grafik stilini değiştirme.
 
 > [!NOTE]
 >  Bilgisayarınız, aşağıdaki yönergelerde yer alan Visual Studio kullanıcı arabirimi öğelerinden bazıları için farklı adlar veya konumlar gösterebilir. Sahip olduğunuz Visual Studio sürümü ve kullandığınız ayarlar bu öğeleri belirler. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](../ide/personalizing-the-visual-studio-ide.md).
@@ -40,9 +40,9 @@ ms.locfileid: "59651896"
 ## <a name="prerequisites"></a>Önkoşullar
  Bu izlenecek yolu tamamlamak için aşağıdaki bileşenlere ihtiyacınız vardır:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] veya [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="add-a-chart-to-a-worksheet"></a>Bir çalışma sayfasına bir grafik ekleyin
  Mevcut bir çalışma kitabını özelleştirir bir Excel çalışma kitabı projesi oluşturabilirsiniz. Bu kılavuzda, bir çalışma kitabına bir grafik ekleyin ve ardından yeni bir Excel çözümde bu çalışma kitabını kullanın. Bu kılavuzda açıklanan veri kaynağı adlı bir çalışma sayfası, **grafiği için veri**.
@@ -68,21 +68,21 @@ ms.locfileid: "59651896"
 
 ### <a name="to-add-a-chart-in-excel"></a>Excel'de bir grafik eklemek için
 
-1.  Üzerinde **Ekle** sekmesinde **grafikleri** grubunda **sütun**ve ardından **tüm grafik türleri**.
+1. Üzerinde **Ekle** sekmesinde **grafikleri** grubunda **sütun**ve ardından **tüm grafik türleri**.
 
-2.  İçinde **Grafik Ekle** iletişim kutusu, tıklayın **Tamam**.
+2. İçinde **Grafik Ekle** iletişim kutusu, tıklayın **Tamam**.
 
-3.  Üzerinde **tasarım** sekmesinde **veri** grubunda **veri Seç**.
+3. Üzerinde **tasarım** sekmesinde **veri** grubunda **veri Seç**.
 
-4.  İçinde **veri kaynağı Seç** iletişim kutusu, tıklama **Chartdata aralığı** kutusuna ve herhangi bir varsayılan seçimi temizleyin.
+4. İçinde **veri kaynağı Seç** iletişim kutusu, tıklama **Chartdata aralığı** kutusuna ve herhangi bir varsayılan seçimi temizleyin.
 
-5.  İçinde **grafiği için veri** sayfasında, sol üst köşedeki E8 için sağ alt köşesindeki A4 içerir sayıları içeren olan hücre bloğu seçin.
+5. İçinde **grafiği için veri** sayfasında, sol üst köşedeki E8 için sağ alt köşesindeki A4 içerir sayıları içeren olan hücre bloğu seçin.
 
-6.  İçinde **veri kaynağı Seç** iletişim kutusu, tıklayın **Tamam**.
+6. İçinde **veri kaynağı Seç** iletişim kutusu, tıklayın **Tamam**.
 
-7.  Grafiğin sağ üst köşedeki hücre ile hizalanır. böylece yeniden konumlandırmak **E2**.
+7. Grafiğin sağ üst köşedeki hücre ile hizalanır. böylece yeniden konumlandırmak **E2**.
 
-8.  C sürücüsüne dosyanızı kaydedin ve adlandırın **ExcelChart.xlsx**.
+8. C sürücüsüne dosyanızı kaydedin ve adlandırın **ExcelChart.xlsx**.
 
 9. Excel'den çıkın.
 
@@ -91,13 +91,13 @@ ms.locfileid: "59651896"
 
 ### <a name="to-create-a-new-project"></a>Yeni bir proje oluşturmak için
 
-1.  Adlı bir Excel çalışma kitabı projesi oluşturun **My Excel grafik**. Sihirbazda **mevcut belgeyi kopyalamak**.
+1. Adlı bir Excel çalışma kitabı projesi oluşturun **My Excel grafik**. Sihirbazda **mevcut belgeyi kopyalamak**.
 
      Daha fazla bilgi için [nasıl yapılır: Visual Studio'da Office projeleri oluşturma](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Tıklayın **Gözat** düğmesi ve bu kılavuzda daha önce oluşturulan çalışma kitabını göz atın.
+2. Tıklayın **Gözat** düğmesi ve bu kılavuzda daha önce oluşturulan çalışma kitabını göz atın.
 
-3.  **Tamam**'ı tıklatın.
+3. **Tamam**'ı tıklatın.
 
      Visual Studio tasarımcıda yeni Excel çalışma kitabını açar ve ekler **My Excel grafik** için proje **Çözüm Gezgini**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "59651896"
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>Grafik denetimi adını değiştirmek için
 
-1.  Seçin <xref:Microsoft.Office.Tools.Excel.Chart> Denetim Tasarımcısı'nda ve şu özelliklerde değişiklik **özellikleri** penceresi.
+1. Seçin <xref:Microsoft.Office.Tools.Excel.Chart> Denetim Tasarımcısı'nda ve şu özelliklerde değişiklik **özellikleri** penceresi.
 
     |Özellik|Değer|
     |--------------|-----------|
@@ -120,11 +120,11 @@ ms.locfileid: "59651896"
 
 ### <a name="to-add-a-user-control"></a>Bir kullanıcı denetimi eklemek için
 
-1.  Seçin **My Excel grafik** projesi **Çözüm Gezgini**.
+1. Seçin **My Excel grafik** projesi **Çözüm Gezgini**.
 
-2.  Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
+2. Üzerinde **proje** menüsünü tıklatın **Yeni Öğe Ekle**.
 
-3.  İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kullanıcı denetimi**, denetimin adını **ChartOptions** tıklatıp **Ekle**.
+3. İçinde **Yeni Öğe Ekle** iletişim kutusu, tıklayın **kullanıcı denetimi**, denetimin adını **ChartOptions** tıklatıp **Ekle**.
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>Kullanıcı denetimini radyo düğmeleri eklemek için
 
@@ -165,36 +165,36 @@ ms.locfileid: "59651896"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Bir olay ve özellik üzerinde bir kullanıcı denetimi oluşturmak için
 
-1.  İçinde **Çözüm Gezgini**kullanıcı denetimine sağ tıklayın ve ardından **kodu görüntüle**.
+1. İçinde **Çözüm Gezgini**kullanıcı denetimine sağ tıklayın ve ardından **kodu görüntüle**.
 
-2.  Kodu `ChartOptions` sınıfı oluşturmak için bir `SelectionChanged` olay ve `Selection` özelliği.
+2. Kodu `ChartOptions` sınıfı oluşturmak için bir `SelectionChanged` olay ve `Selection` özelliği.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>Radyo düğmelerinin CheckedChanged olayı işlemek için
 
-1.  Grafik türü kümesinde `CheckedChanged` olay işleyicisine `areaBlockChart` radyo düğmesini ve ardından olayı oluşturun.
+1. Grafik türü kümesinde `CheckedChanged` olay işleyicisine `areaBlockChart` radyo düğmesini ve ardından olayı oluşturun.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
 
-2.  Grafik türü kümesinde `CheckedChanged` olay işleyicisine `barChart` radyo düğmesi.
+2. Grafik türü kümesinde `CheckedChanged` olay işleyicisine `barChart` radyo düğmesi.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
 
-3.  Grafik türü kümesinde `CheckedChanged` olay işleyicisine `columnChart` radyo düğmesi.
+3. Grafik türü kümesinde `CheckedChanged` olay işleyicisine `columnChart` radyo düğmesi.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
 
-4.  Grafik türü kümesinde `CheckedChanged` olay işleyicisine `lineChart` radyo düğmesi.
+4. Grafik türü kümesinde `CheckedChanged` olay işleyicisine `lineChart` radyo düğmesi.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
 
-5.  C# ' ta radyo düğmesi için olay işleyicileri eklemeniz gerekir. Kod ekleyebilirsiniz `ChartOptions` yapıcısına çağrısı `InitializeComponent`. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. C# ' ta radyo düğmesi için olay işleyicileri eklemeniz gerekir. Kod ekleyebilirsiniz `ChartOptions` yapıcısına çağrısı `InitializeComponent`. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
@@ -203,29 +203,29 @@ ms.locfileid: "59651896"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>Çalışma kullanıcı denetimi eklemek için
 
-1.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+1. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
 
      **ChartOptions** kullanıcı denetimi eklenir **araç kutusu**.
 
-2.  İçinde **Çözüm Gezgini**, sağ **Sheet1.vb** veya **Sheet1.cs**ve ardından **Görünüm Tasarımcısı**.
+2. İçinde **Çözüm Gezgini**, sağ **Sheet1.vb** veya **Sheet1.cs**ve ardından **Görünüm Tasarımcısı**.
 
-3.  Sürükleme **ChartOptions** denetimi **araç kutusu** çalışma.
+3. Sürükleme **ChartOptions** denetimi **araç kutusu** çalışma.
 
      Adlı yeni bir denetim `my_Excel_Chart_ChartOptions1` projenize eklenir.
 
-4.  Denetimin adını değiştirmek **ChartOptions1**.
+4. Denetimin adını değiştirmek **ChartOptions1**.
 
 ## <a name="change-the-chart-type"></a>Grafik türünü değiştir
  Grafik türünü değiştirmek için kullanıcı denetimi seçeneğe göre stilini ayarlar bir olay işleyicisi oluşturun.
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>Çalışma sayfasında görüntülenen grafik türünü değiştirmek için
 
-1.  Eklemek için aşağıdaki olay işleyicisini `Sheet1` sınıfı.
+1. Eklemek için aşağıdaki olay işleyicisini `Sheet1` sınıfı.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
 
-2.  C# içinde bir olay işleyicisi kullanıcı denetimi için eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> aşağıda gösterildiği gibi olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
+2. C# içinde bir olay işleyicisi kullanıcı denetimi için eklemelisiniz <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> aşağıda gösterildiği gibi olay. Olay işleyicileri oluşturma hakkında daha fazla bilgi için bkz: [nasıl yapılır: Office projelerinde olay işleyicileri oluşturma](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
@@ -234,20 +234,20 @@ ms.locfileid: "59651896"
 
 ### <a name="to-test-your-workbook"></a>Çalışma kitabınızı test etmek için
 
-1.  Tuşuna **F5** projeyi çalıştırın.
+1. Tuşuna **F5** projeyi çalıştırın.
 
-2.  Çeşitli radyo düğmeleri seçin.
+2. Çeşitli radyo düğmeleri seçin.
 
-3.  Grafik stilini seçimle eşleşecek şekilde değiştiğini doğrulayın.
+3. Grafik stilini seçimle eşleşecek şekilde değiştiğini doğrulayın.
 
 ## <a name="next-steps"></a>Sonraki adımlar
  Bu izlenecek yol, radyo düğmeleri ve grafik stilleri çalışma sayfalarında kullanmanın temellerini gösterir. Sonraki gelebilir bazı görevler aşağıda verilmiştir:
 
--   Projeyi dağıtma. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
+- Projeyi dağıtma. Daha fazla bilgi için [Office çözümünü dağıtma](../vsto/deploying-an-office-solution.md).
 
--   Bir düğmeye bir metin kutusunu doldurmak için kullanma. Daha fazla bilgi için [izlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
+- Bir düğmeye bir metin kutusunu doldurmak için kullanma. Daha fazla bilgi için [izlenecek yol: Düğme kullanarak çalışma sayfasındaki metin kutusunda metin görüntüleme](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
--   Onay kutularını kullanarak çalışma sayfasındaki biçimlendirmeyi Değiştir. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
+- Onay kutularını kullanarak çalışma sayfasındaki biçimlendirmeyi Değiştir. Daha fazla bilgi için [izlenecek yol: Değişiklik CheckBox denetimlerini kullanarak çalışma sayfası biçimlendirmesini](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Excel kullanarak izlenecek yollar](../vsto/walkthroughs-using-excel.md)

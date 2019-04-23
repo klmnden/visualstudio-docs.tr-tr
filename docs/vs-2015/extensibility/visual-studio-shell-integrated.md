@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87c7b4faaf5aad737c8f7f8b653dbea03bc4de31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074131"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Kabuğu (tümleşik)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,15 +68,15 @@ Visual Studio tümleşik kabuğu, tümleşik geliştirme ortamı (IDE), hata ay�
 ## <a name="features-not-included-in-the-integrated-shell"></a>Tümleşik Kabuğu'nda bulunmayan özellikler  
  Tümleşik Kabuğu'nda bulunmayan özelliklerin bir listesi verilmiştir:  
   
--   Sınıf Tasarımcısı  
+- Sınıf Tasarımcısı  
   
--   PreEmptive koruma - Dotfuscator  
+- PreEmptive koruma - Dotfuscator  
   
--   Dil özellikleri  
+- Dil özellikleri  
   
--   VSHost  
+- VSHost  
   
--   Hiçbir Visual Studio dilleri veya ilişkili proje şablonları veya proje öğesi şablonları, tümleşik Kabuğu dahil edilir. Hiçbir dil özgü diğer özellikleri, örneğin Visual Basic kod parçacıkları için dahil edilir.  
+- Hiçbir Visual Studio dilleri veya ilişkili proje şablonları veya proje öğesi şablonları, tümleşik Kabuğu dahil edilir. Hiçbir dil özgü diğer özellikleri, örneğin Visual Basic kod parçacıkları için dahil edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio genel bakışı genişletme](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

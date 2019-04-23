@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d48cea795cbbe3b7cc749c5866bfd5e720ac768a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110459"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>İzlenecek yol: N katmanlı veri uygulaması oluşturma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuzu tamamlamak için gerekenler:  
   
--   Northwind örnek veritabanına erişim.
+- Northwind örnek veritabanına erişim.
   
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Veri Kümesini Tutacak N Katmanlı Çözüm ve Sınıf Kitaplığı Oluşturma (DataEntityTier)  
  Bu kılavuzun ilk adımı bir çözüm ve iki sınıf kitaplığı projesi oluşturmaktır. Birinci sınıf kitaplığı veri kümesini tutacaktır (uygulama verilerini tutacak, üretilen türü belirtilmiş DataSet sınıfı ve DataTable tabloları). Bu proje uygulamanın veri varlık katmanı olarak kullanılır ve genellikle orta katmanda bulunur. Dataset Designer, ilk veri kümesini oluşturmak ve otomatik olarak kod iki sınıf kitaplığına ayırmak için kullanılır.  
@@ -68,20 +68,20 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>N katmanlı çözüm ve DataEntityTier sınıf kitaplığı oluşturmak için  
   
-1.  Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
+1. Gelen **dosya** menüsünden Yeni bir proje oluşturun.  
   
     > [!NOTE]
     >  **Veri kümesi Tasarımcısı** desteklenir [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ve C# projeleri. Yeni projeyi bu dillerden birinde oluşturun.  
   
-2.  İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **Windows**.  
+2. İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **Windows**.  
   
-3.  Tıklayın **sınıf kitaplığı** şablonu.  
+3. Tıklayın **sınıf kitaplığı** şablonu.  
   
-4.  Projeyi adlandırın **DataEntityTier**.  
+4. Projeyi adlandırın **DataEntityTier**.  
   
-5.  Çözüm adı **NTierWalkthrough**.  
+5. Çözüm adı **NTierWalkthrough**.  
   
-6.  **Tamam**'ı tıklatın.  
+6. **Tamam**'ı tıklatın.  
   
      DataEntityTier projesini içeren bir NTierWalkthrough çözümü oluşturulur ve eklenen **Çözüm Gezgini**.  
   
@@ -90,11 +90,11 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>TableAdapter bağdaştırıcılarına yönelik yeni sınıf kitaplığı oluşturmak için  
   
-1.  Gelen **dosya** menüsünden NTierWalkthrough çözümüne yeni bir proje ekleyin.  
+1. Gelen **dosya** menüsünden NTierWalkthrough çözümüne yeni bir proje ekleyin.  
   
-2.  İçinde **yeni proje** iletişim kutusundaki **şablonları** bölmesinde tıklayın **sınıf kitaplığı**.  
+2. İçinde **yeni proje** iletişim kutusundaki **şablonları** bölmesinde tıklayın **sınıf kitaplığı**.  
   
-3.  Projeyi adlandırın **DataAccessTier** tıklatıp **Tamam**.  
+3. Projeyi adlandırın **DataAccessTier** tıklatıp **Tamam**.  
   
      DataAccessTier projesi oluşturulur ve NTierWalkthrough çözümüne eklenir.  
   
@@ -106,15 +106,15 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-create-the-dataset"></a>Veri kümesi oluşturma  
   
-1.  DataAccessTier olarak tıklayın **Çözüm Gezgini**.  
+1. DataAccessTier olarak tıklayın **Çözüm Gezgini**.  
   
-2.  Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
+2. Üzerinde **veri** menüsünü tıklatın **veri kaynaklarını Göster**.  
   
-3.  İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
+3. İçinde **veri kaynakları** penceresinde tıklayın **yeni veri kaynağı Ekle** başlatmak için **veri kaynağı Yapılandırma Sihirbazı**.  
   
-4.  Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı** ve ardından **sonraki**.  
+4. Üzerinde **bir veri kaynağı türü seçin** sayfasında **veritabanı** ve ardından **sonraki**.  
   
-5.  Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki eylemlerden birini gerçekleştirin:  
+5. Üzerinde **veri bağlantınızı seçin** sayfasında, aşağıdaki eylemlerden birini gerçekleştirin:  
   
      Northwind örnek veritabanıyla kurulan veri bağlantısı açılan listede kullanılabilir durumdaysa bu bağlantıya tıklayın.  
   
@@ -122,14 +122,14 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
      Tıklayın **yeni bağlantı** açmak için **Bağlantı Ekle** iletişim kutusu.  
   
-6.  Veritabanına parola gerekiyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
+6. Veritabanına parola gerekiyorsa, hassas verileri eklemek ve ardından seçeneğini **sonraki**.  
   
     > [!NOTE]
     >  Bir yerel veritabanı dosyası (SQL Server'a bağlanmak yerine) seçtiyseniz projeye dosya eklemek isteyip istemediğiniz sorulabilir. Tıklayın **Evet** veritabanı dosyası projeye eklenecek.  
   
-7.  Tıklayın **sonraki** üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfası.  
+7. Tıklayın **sonraki** üzerinde **bağlantı dizesini uygulama yapılandırma dosyasına Kaydet** sayfası.  
   
-8.  Genişletin **tabloları** düğümde **veritabanı nesnelerinizi seçin** sayfası.  
+8. Genişletin **tabloları** düğümde **veritabanı nesnelerinizi seçin** sayfası.  
   
 9. Onay kutularına **müşteriler** ve **siparişler** tablolar ve ardından **son**.  
   
@@ -160,11 +160,11 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-create-a-new-wcf-service-application"></a>Yeni bir WCF Hizmeti uygulaması oluşturmak için  
   
-1.  Gelen **dosya** menüsünden NTierWalkthrough çözümüne yeni bir proje ekleyin.  
+1. Gelen **dosya** menüsünden NTierWalkthrough çözümüne yeni bir proje ekleyin.  
   
-2.  İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **WCF**. İçinde **şablonları** bölmesinde tıklayın **WCF hizmet Kitaplığı**.  
+2. İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **WCF**. İçinde **şablonları** bölmesinde tıklayın **WCF hizmet Kitaplığı**.  
   
-3.  Projeyi adlandırın **DataService** tıklatıp **Tamam**.  
+3. Projeyi adlandırın **DataService** tıklatıp **Tamam**.  
   
      DataService projesi oluşturulur ve NTierWalkthrough çözümüne eklenir.  
   
@@ -173,48 +173,48 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Veri erişim katmanında Customers tablosunu döndüren bir yöntem oluşturmak için  
   
-1.  İçinde **Çözüm Gezgini**, veri kümesini veri kümesi Tasarımcısı'nda açmak için northwindDataSet.XSD'ye çift tıklayın.  
+1. İçinde **Çözüm Gezgini**, veri kümesini veri kümesi Tasarımcısı'nda açmak için northwindDataSet.XSD'ye çift tıklayın.  
   
-2.  CustomersTableAdapter sağ tıklatıp **Sorgu Ekle** Tableadapter'ı düzenlemek için.  
+2. CustomersTableAdapter sağ tıklatıp **Sorgu Ekle** Tableadapter'ı düzenlemek için.  
   
-3.  Üzerinde **komut türü seçin** sayfasında, varsayılan değerini bırakın **SQL deyimi kullan** tıklatıp **sonraki**.  
+3. Üzerinde **komut türü seçin** sayfasında, varsayılan değerini bırakın **SQL deyimi kullan** tıklatıp **sonraki**.  
   
-4.  Üzerinde **bir sorgu türü seçin** sayfasında, varsayılan değerini bırakın **satır döndüren SELECT** tıklatıp **sonraki**.  
+4. Üzerinde **bir sorgu türü seçin** sayfasında, varsayılan değerini bırakın **satır döndüren SELECT** tıklatıp **sonraki**.  
   
-5.  Üzerinde **bir SQL SELECT deyimi belirtin** sayfasında varsayılan sorguyu bırakın ve tıklayın **sonraki**.  
+5. Üzerinde **bir SQL SELECT deyimi belirtin** sayfasında varsayılan sorguyu bırakın ve tıklayın **sonraki**.  
   
-6.  Üzerinde **oluşturmak için yöntemlerini seçin** sayfasında **GetCustomers** için **yöntem adı** içinde **DataTable Döndür** bölümü.  
+6. Üzerinde **oluşturmak için yöntemlerini seçin** sayfasında **GetCustomers** için **yöntem adı** içinde **DataTable Döndür** bölümü.  
   
-7.  **Son**'a tıklayın.  
+7. **Son**'a tıklayın.  
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Veri erişim katmanında Orders tablosunu döndüren bir yöntem oluşturmak için  
   
-1.  Orderstableadapter bağdaştırıcısına sağ tıklatıp **Sorgu Ekle**.  
+1. Orderstableadapter bağdaştırıcısına sağ tıklatıp **Sorgu Ekle**.  
   
-2.  Üzerinde **komut türü seçin** sayfasında, varsayılan değerini bırakın **SQL deyimi kullan** tıklatıp **sonraki**.  
+2. Üzerinde **komut türü seçin** sayfasında, varsayılan değerini bırakın **SQL deyimi kullan** tıklatıp **sonraki**.  
   
-3.  Üzerinde **bir sorgu türü seçin** sayfasında, varsayılan değerini bırakın **satır döndüren SELECT** tıklatıp **sonraki**.  
+3. Üzerinde **bir sorgu türü seçin** sayfasında, varsayılan değerini bırakın **satır döndüren SELECT** tıklatıp **sonraki**.  
   
-4.  Üzerinde **bir SQL SELECT deyimi belirtin** sayfasında varsayılan sorguyu bırakın ve tıklayın **sonraki**.  
+4. Üzerinde **bir SQL SELECT deyimi belirtin** sayfasında varsayılan sorguyu bırakın ve tıklayın **sonraki**.  
   
-5.  Üzerinde **oluşturmak için yöntemlerini seçin** sayfasında **GetOrders** için **yöntem adı** içinde **DataTable Döndür** bölümü.  
+5. Üzerinde **oluşturmak için yöntemlerini seçin** sayfasında **GetOrders** için **yöntem adı** içinde **DataTable Döndür** bölümü.  
   
-6.  **Son**'a tıklayın.  
+6. **Son**'a tıklayın.  
   
-7.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+7. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
 ## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Veri Hizmetinin Veri Varlığı ve Veri Erişimi Katmanlarına Başvuru Ekleme  
  Veri hizmetinin veri kümesinden ve TableAdapter bağdaştırıcılarından bilgi alması gerektiğinden DataEntityTier ve DataAccessTier projelerine başvurular ekleyin.  
   
 #### <a name="to-add-references-to-the-data-service"></a>Veri hizmetine başvuru eklemek için  
   
-1.  DataService olarak sağ **Çözüm Gezgini** tıklatıp **Başvuru Ekle**.  
+1. DataService olarak sağ **Çözüm Gezgini** tıklatıp **Başvuru Ekle**.  
   
-2.  Tıklayın **projeleri** sekmesinde **Başvuru Ekle** iletişim kutusu.  
+2. Tıklayın **projeleri** sekmesinde **Başvuru Ekle** iletişim kutusu.  
   
-3.  Her ikisini de seçin **DataAccessTier** ve **DataEntityTier** projeleri.  
+3. Her ikisini de seçin **DataAccessTier** ve **DataEntityTier** projeleri.  
   
-4.  **Tamam**'ı tıklatın.  
+4. **Tamam**'ı tıklatın.  
   
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Veri Erişim Katmanındaki GetCustomers ve GetOrder Yöntemlerini Çağırmak İçin Hizmete İşlev Ekleme  
  Şimdi veri erişim katmanında veri döndürme yöntemleri bulunduğuna göre, veri erişim katmanındaki yöntemleri çağırmak için veri hizmetinde yöntemler oluşturun.  
@@ -224,9 +224,9 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Veri hizmetinde GetCustomers ve GetOrders işlevlerini oluşturmak için  
   
-1.  İçinde **DataService** proje, Iservice1.vb veya Iservice1.cs öğesine çift tıklayın.  
+1. İçinde **DataService** proje, Iservice1.vb veya Iservice1.cs öğesine çift tıklayın.  
   
-2.  Altında aşağıdaki kodu ekleyin **hizmet işlemlerinizi buraya ekleyin** açıklaması:  
+2. Altında aşağıdaki kodu ekleyin **hizmet işlemlerinizi buraya ekleyin** açıklaması:  
   
     ```vb  
     <OperationContract()> _  
@@ -245,9 +245,9 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
     ```  
   
-3.  DataService projesinde Service1.vb (veya Service1.cs) öğesine çift tıklayın.  
+3. DataService projesinde Service1.vb (veya Service1.cs) öğesine çift tıklayın.  
   
-4.  Aşağıdaki kodu Service1 sınıfına ekleyin:  
+4. Aşağıdaki kodu Service1 sınıfına ekleyin:  
   
     ```vb  
     Public Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable Implements IService1.GetCustomers  
@@ -280,46 +280,46 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
     }  
     ```  
   
-5.  Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
+5. Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
 ## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Veri Hizmetinden Verileri Görüntülemek İçin Bir Sunu Katmanı Oluşturma  
  Şimdi çözümde veri erişim katmanına çağrı gönderen yöntemler bulunduğuna göre, veri hizmetine çağrı gönderecek ve verileri kullanıcılara sunacak başka bir proje oluşturun. Bu kılavuz için bir Windows Forms uygulaması oluşturun; bu n katmanlı uygulamanın sunu katmanıdır.  
   
 #### <a name="to-create-the-presentation-tier-project"></a>Sunu katmanı projesi oluşturmak için  
   
-1.  Gelen **dosya** menüsünden NTierWalkthrough çözümüne yeni bir proje ekleyin.  
+1. Gelen **dosya** menüsünden NTierWalkthrough çözümüne yeni bir proje ekleyin.  
   
-2.  İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **Windows**. İçinde **şablonları** bölmesinde tıklayın **Windows Forms uygulaması**.  
+2. İçinde **yeni proje** iletişim kutusundaki **proje türleri** bölmesinde tıklayın **Windows**. İçinde **şablonları** bölmesinde tıklayın **Windows Forms uygulaması**.  
   
-3.  Projeyi adlandırın **PresentationTier** tıklatıp **Tamam**.  
+3. Projeyi adlandırın **PresentationTier** tıklatıp **Tamam**.  
   
-4.  PresentationTier projesi oluşturulur ve NTierWalkthrough çözümüne eklenir.  
+4. PresentationTier projesi oluşturulur ve NTierWalkthrough çözümüne eklenir.  
   
 ## <a name="setting-the-presentationtier-project-as-the-startup-project"></a>PresentationTier Projesini Başlangıç Projesi Olarak Ayarlama  
  Sunu katmanı verileri sunmak ve verilerle etkileşimde bulunmak için kullanılan gerçek istemci uygulaması olduğundan PresentationTier projesini Başlangıç projesi olarak ayarlamanız gerekir.  
   
 #### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Yeni sunu katmanı projesini Başlangıç projesi olarak ayarlamak için  
   
--   İçinde **Çözüm Gezgini**, sağ **PresentationTier** tıklatıp **başlangıç projesi olarak ayarla**.  
+- İçinde **Çözüm Gezgini**, sağ **PresentationTier** tıklatıp **başlangıç projesi olarak ayarla**.  
   
 ## <a name="adding-references-to-the-presentation-tier"></a>Sunu Katmanına Başvuru Ekleme  
  PresentationTier istemci uygulaması, hizmetteki yöntemlere erişmek için veri hizmetine yönelik bir hizmet başvurusu gerektirir. Buna ek olarak, WCF hizmeti tür paylaşımını etkinleştirmek için veri kümesine bir başvuru gerektirir. Veri hizmeti aracılığıyla tür paylaşımı etkinleştirilinceye kadar kısmi veri kümesi sınıfına eklenen kod sunu katmanı tarafından kullanılamaz. Genelde veri tablosundaki satır ve sütun değişikliği olaylarını doğrulama gibi bir kod ekleyeceğiniz için büyük olasılıkla bu koda istemcisinden erişmek isteyeceksiniz.  
   
 #### <a name="to-add-a-reference-to-the-presentation-tier"></a>Sunu katmanına bir başvuru eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, PresentationTier sağ tıklatıp **Başvuru Ekle**.  
+1. İçinde **Çözüm Gezgini**, PresentationTier sağ tıklatıp **Başvuru Ekle**.  
   
-2.  İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **projeleri** sekmesi.  
+2. İçinde **Başvuru Ekle** iletişim kutusu, tıklayın **projeleri** sekmesi.  
   
-3.  Seçin **DataEntityTier** tıklatıp **Tamam**.  
+3. Seçin **DataEntityTier** tıklatıp **Tamam**.  
   
 #### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>Sunu katmanına bir hizmet başvurusu eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, PresentationTier sağ tıklatıp **hizmet Başvurusu Ekle**.  
+1. İçinde **Çözüm Gezgini**, PresentationTier sağ tıklatıp **hizmet Başvurusu Ekle**.  
   
-2.  İçinde **hizmet Başvurusu Ekle** iletişim kutusu, tıklayın **bulma**.  
+2. İçinde **hizmet Başvurusu Ekle** iletişim kutusu, tıklayın **bulma**.  
   
-3.  Seçin **Service1** tıklatıp **Tamam**.  
+3. Seçin **Service1** tıklatıp **Tamam**.  
   
     > [!NOTE]
     >  Geçerli bilgisayarda birden çok hizmetiniz varsa, bu kılavuzda önceden oluşturduğunuz hizmeti seçin (GetCustomers ve GetOrders yöntemlerini içeren hizmet).  
@@ -329,19 +329,19 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Forma iki DataGridView veri bağlama öğesi eklemek için  
   
-1.  İçinde **Çözüm Gezgini**, PresentationTier projesini seçin.  
+1. İçinde **Çözüm Gezgini**, PresentationTier projesini seçin.  
   
-2.  İçinde **veri kaynakları** penceresini genişletin **NorthwindDataSet** bulun **müşteriler** düğümü.  
+2. İçinde **veri kaynakları** penceresini genişletin **NorthwindDataSet** bulun **müşteriler** düğümü.  
   
-3.  Sürükleme **müşteriler** düğümünü Form1 üzerine.  
+3. Sürükleme **müşteriler** düğümünü Form1 üzerine.  
   
-4.  İçinde **veri kaynakları** penceresinde genişletin **müşteriler** düğüm ve ilgili bulun **siparişler** düğümü ( **siparişler** düğümüyle içindeiçiçegeçmiş **Müşteriler** düğümü).  
+4. İçinde **veri kaynakları** penceresinde genişletin **müşteriler** düğüm ve ilgili bulun **siparişler** düğümü ( **siparişler** düğümüyle içindeiçiçegeçmiş **Müşteriler** düğümü).  
   
-5.  İlgili sürükleyin **siparişler** düğümünü Form1 üzerine.  
+5. İlgili sürükleyin **siparişler** düğümünü Form1 üzerine.  
   
-6.  Formda boş bir alanı çift tıklayarak bir `Form1_Load` olay işleyicisi oluşturun.  
+6. Formda boş bir alanı çift tıklayarak bir `Form1_Load` olay işleyicisi oluşturun.  
   
-7.  Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi.  
+7. Aşağıdaki kodu ekleyin `Form1_Load` olay işleyicisi.  
   
     ```vb  
     Dim DataSvc As New ServiceReference1.Service1Client  
@@ -365,25 +365,25 @@ N-katmanı * veri uygulamaları verilere erişen ve birden çok mantıksal katma
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>MaxReceivedMessageSize değerini artırmak için  
   
-1.  İçinde **Çözüm Gezgini**, PresentationTier projesindeki app.config dosyasına çift tıklayın.  
+1. İçinde **Çözüm Gezgini**, PresentationTier projesindeki app.config dosyasına çift tıklayın.  
   
-2.  Bulun **maxReceivedMessage** boyut özniteliğini ve bir değerle değiştirmek `6553600`.  
+2. Bulun **maxReceivedMessage** boyut özniteliğini ve bir değerle değiştirmek `6553600`.  
   
 ## <a name="testing-the-application"></a>Uygulamayı Test Etme  
  Uygulamayı çalıştırın. Veriler veri hizmetinden alınır ve formda görüntülenir.  
   
 #### <a name="to-test-the-application"></a>Uygulamayı test etmek için  
   
-1.  F5 tuşuna basın.  
+1. F5 tuşuna basın.  
   
-2.  Customers ve Orders tablolarındaki veriler veri hizmetinden alınır ve formda görüntülenir.  
+2. Customers ve Orders tablolarındaki veriler veri hizmetinden alınır ve formda görüntülenir.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  Uygulama gereksinimlerinize bağlı olarak, Windows tabanlı bir uygulama içinde ilgili verileri kaydettikten sonra gerçekleştirmek isteyebileceğiniz birkaç adım vardır. Örneğin, bu uygulamada aşağıdaki geliştirmeleri yapabilirsiniz:  
   
--   Veri kümesine doğrulama ekleme. Bilgi için [izlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Veri kümesine doğrulama ekleme. Bilgi için [izlenecek yol: Bir N katmanlı bir veri uygulamasına doğrulama ekleme](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
--   Verileri tekrar veritabanında güncelleştirmek için hizmete ek yöntemler ekleme.  
+- Verileri tekrar veritabanında güncelleştirmek için hizmete ek yöntemler ekleme.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [N katmanlı uygulamalarda veri kümeleriyle çalışma](../data-tools/work-with-datasets-in-n-tier-applications.md)   

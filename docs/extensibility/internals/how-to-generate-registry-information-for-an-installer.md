@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100787"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Nasıl yapılır: Bir yükleyicinin kayıt defteri bilgilerini oluşturma
 
@@ -28,7 +28,7 @@ ms.locfileid: "54945989"
 
 ## <a name="to-create-a-registration-manifest"></a>Bir kayıt bildirimi oluşturmak için
 
--   RegPkg ile çalıştırma **/regfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.
+- RegPkg ile çalıştırma **/regfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.
 
      Örneğin, komut isteminde, aşağıdaki gibi yazın:
 
@@ -38,7 +38,7 @@ ms.locfileid: "54945989"
 
 ## <a name="to-view-a-registration-manifest"></a>Bir kayıt bildirimi görüntülemek için
 
--   Kayıt bildirimi herhangi bir metin düzenleyicisinde açın.
+- Kayıt bildirimi herhangi bir metin düzenleyicisinde açın.
 
      RegPkg IronPython dil hizmeti oluşturan kayıt bildirimi örnektir:
 
@@ -99,7 +99,7 @@ ms.locfileid: "54945989"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Oluşturma bir Windows Installer XML araç takımı içerme dosyası
 
--   RegPkg ile çalıştırma **/wixfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.
+- RegPkg ile çalıştırma **/wixfile** geçin. Herhangi diğer anahtarlar, çıkış dosyasının adını ve yolunu bir VSPackage sağlar.
 
      Örneğin, komut isteminde, aşağıdaki gibi yazın:
 
@@ -109,7 +109,7 @@ ms.locfileid: "54945989"
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Bir Windows Installer XML görüntülemek için araç takımı içerme dosyası
 
--   Açık Windows Installer XML araç takımı içerme dosyası herhangi bir metin düzenleyicisinde.
+- Açık Windows Installer XML araç takımı içerme dosyası herhangi bir metin düzenleyicisinde.
 
      RegPkg oluşturan içerme dosyası IronPython dil hizmeti örnektir:
 

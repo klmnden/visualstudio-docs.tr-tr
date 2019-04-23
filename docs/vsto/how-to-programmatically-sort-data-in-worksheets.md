@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ffc6f19a5b5d568968e95ee2f8b1b48feb619e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111174"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Nasıl yapılır: Çalışma sayfalarında verileri programlamayla sıralama
   Çalışma zamanında çalışma sayfası aralıklarına ve listelerinde bulunan verileri sıralayabilirsiniz. Aşağıdaki kodu adlı bir çok sütunlu aralık sıralar `Fruits` ilk sütunundaki verileri ve ardından ikinci sütundaki verileri.
@@ -40,7 +40,7 @@ ms.locfileid: "56645595"
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>ListObject denetiminde verileri sıralama
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> özelliği <xref:Microsoft.Office.Tools.Excel.ListObject> konak kontrolü.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> özelliği <xref:Microsoft.Office.Tools.Excel.ListObject> konak kontrolü.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
@@ -49,14 +49,14 @@ ms.locfileid: "56645595"
 
 ### <a name="to-sort-data-in-a-native-range"></a>Yerel bir aralıkta verileri sıralamak için
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> yöntemi yerel Excel <xref:Microsoft.Office.Interop.Excel.Range> denetimi. Aşağıdaki örnekte adlı yerel bir Excel Denetim gerektiren `Fruits` çalışma sayfasında.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> yöntemi yerel Excel <xref:Microsoft.Office.Interop.Excel.Range> denetimi. Aşağıdaki örnekte adlı yerel bir Excel Denetim gerektiren `Fruits` çalışma sayfasında.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#23)]
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>ListObject denetiminde verileri sıralama
 
-1.  Çağrı <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> özelliği yerel Excel <xref:Microsoft.Office.Interop.Excel.ListObject> denetimi. Aşağıdaki örnek, yerel bir Excel sahibi olduğunuzu varsayar <xref:Microsoft.Office.Interop.Excel.ListObject> adlı Denetim `fruitList` etkin çalışma sayfasındaki.
+1. Çağrı <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> yöntemi <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> özelliği yerel Excel <xref:Microsoft.Office.Interop.Excel.ListObject> denetimi. Aşağıdaki örnek, yerel bir Excel sahibi olduğunuzu varsayar <xref:Microsoft.Office.Interop.Excel.ListObject> adlı Denetim `fruitList` etkin çalışma sayfasındaki.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]

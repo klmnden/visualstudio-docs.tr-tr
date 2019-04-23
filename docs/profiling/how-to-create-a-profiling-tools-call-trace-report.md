@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f9c5afe582c12f3f7e6a941030be1c94bcd1f5f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0afc0279a9f1f82a18d0e645f56add5da6b347a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063835"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Nasıl yapılır: Profil oluşturma araçları çağrı izleme raporu oluşturma
 *Çağrı izleme raporu* için [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profil oluşturma araçları, uygulamanızın işlevlerine her giriş ve çıkış noktası ve işlevinizden diğer işlevlere her çağrı için zamanlama bilgisi listeler. Çağrı izleme raporları, yalnızca cihaz atama yöntemi ile toplandı ise profil oluşturma verisi için kullanılabilir.
@@ -26,9 +26,9 @@ ms.locfileid: "59650999"
 
 ### <a name="to-create-a-call-trace-report"></a>Çağrı izleme raporu oluşturmak için
 
-1.  Açık bir **komut istemi** penceresi.
+1. Açık bir **komut istemi** penceresi.
 
-2.  Komut satırında, aşağıdaki komutu yazın:
+2. Komut satırında, aşağıdaki komutu yazın:
 
      *ToolsPath* **VSPerfReport** *VSPFile* **/calltrace [/ XML]**
 

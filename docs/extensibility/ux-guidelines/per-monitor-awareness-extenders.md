@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099396"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio Genişleticileri İzleyici başına tanıma desteği
 Visual Studio 2019 önceki sürümler, Sistem İzleyici başına DPI kullanan (PMA) yerine uyumlu olarak DPI tanıma bağlamları vardı. Düzeyi düşürülmüş bir görselde sonuçlanan sistem tanıma çalışan farklı ölçek Etkenler veya uzaktan değerlerine sahip farklı bir ekranı yapılandırmaları ile makinelere örneğin (farklı işlemek Visual Studio sahip olduğunda (örneğin bulanık yazı tipleri veya simgeler) deneyimi Windows) ölçeklendirme.
@@ -39,9 +39,9 @@ Başvurmak [Windows üzerinde yüksek DPI Masaüstü uygulama geliştirme](https
 
 ## <a name="enabling-pma"></a>PMA etkinleştirme
 Visual Studio'da PMA etkinleştirmek için aşağıdaki gereksinimlerin karşılanması gerekir:
-1)  Windows 10 Nisan 2018 Güncelleştirmesi (v1803 RS4) veya üzeri
-2)  .NET framework 4.8 RTM veya üzeri
-3)  Visual Studio 2019 ile ["Farklı piksel densities ekranlar için Optimize işleme"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) seçeneği etkin
+1) Windows 10 Nisan 2018 Güncelleştirmesi (v1803 RS4) veya üzeri
+2) .NET framework 4.8 RTM veya üzeri
+3) Visual Studio 2019 ile ["Farklı piksel densities ekranlar için Optimize işleme"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) seçeneği etkin
 
 Bu gereksinimlerin karşılanıp karşılanmadığından sonra Visual Studio süreci boyunca PMA modu otomatik olarak etkinleştirir.
 
@@ -203,6 +203,7 @@ Ana ileti döngüsü veya olay zinciri kapsamında gerçekleşen UI hesaplama ya
 Tam PMA desteklemek için bir WPF olmayan araç penceresi geçiriliyorsa CLMM dışında bırakmak gerekir. Bunu yapmak için yeni bir arabirim uygulanması gerekir: IVsDpiAware.
 
 C#:
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++:
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 PMA modunu destekleyecek şekilde güncelleştirilmesini değil eski kullanıcı Arabirimi Visual Studio PMA modunda çalışırken çalışmak için ince yine de gerekebilir. Bir düzeltme, kullanıcı Arabirimi içinde doğru DpiAwarenessContext oluşturulduğundan emin olmayı içerir. Kullanıcı Arabirimi içinde belirli bir DpiAwarenessContext zorlamak için aşağıdaki kodu DPI kapsamıyla girebilirsiniz:
 
 C#:
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++:
+
 ```cpp
 void MyClass::ShowDialog()
 {

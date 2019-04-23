@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92f233a036c3c0b40cbd53a298154919861b58b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110511"
 ---
 # <a name="how-to-edit-xml-files"></a>Nasıl yapılır: XML Dosyalarını Düzenleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,45 +26,45 @@ XML Düzenleyicisi'ni XML dosyaları için yeni düzenleyicisidir. Visual Studio
   
 ### <a name="to-edit-an-xml-file"></a>Bir XML dosyasını düzenlemek için  
   
-1.  Düzenlemek istediğiniz dosyaya çift tıklayın.  
+1. Düzenlemek istediğiniz dosyaya çift tıklayın.  
   
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>Yeni bir XML dosyası bir projeye eklemek için  
   
-1.  Gelen **proje** menüsünde **Yeni Öğe Ekle**.  
+1. Gelen **proje** menüsünde **Yeni Öğe Ekle**.  
   
-2.  Seçin **XML dosyası** gelen **şablonları** bölmesi.  
+2. Seçin **XML dosyası** gelen **şablonları** bölmesi.  
   
-3.  Dosya adını girin **adı** alan ve ENTER tuşuna **Ekle**.  
+3. Dosya adını girin **adı** alan ve ENTER tuşuna **Ekle**.  
   
      XML dosyasını projeye eklenir ve XML Düzenleyicisi'nde açılır. Varsayılan XML bildirimi dosyasını içeren `<?xml version="1.0" encoding="utf-8" ?>`.  
   
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Varolan bir XML dosyası bir projeye eklemek için  
   
-1.  Gelen **proje** menüsünde **varolan öğeyi Ekle**.  
+1. Gelen **proje** menüsünde **varolan öğeyi Ekle**.  
   
      **Varolan öğeyi Ekle** iletişim kutusu görüntülenir.  
   
-2.  Bir XML dosyasını seçip ENTER tuşuna **Ekle**.  
+2. Bir XML dosyasını seçip ENTER tuşuna **Ekle**.  
   
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>Yeni bir XML veya XSLT dosyası oluşturmak için  
   
-1.  Gelen **dosya** menüsünde **yeni**.  
+1. Gelen **dosya** menüsünde **yeni**.  
   
      **Yeni dosya** iletişim kutusu görüntülenir.  
   
-2.  Seçin **XML dosyası** seçin veya yeni bir XML dosyası; oluşturmak için **XSLT dosyası** yeni bir XSLT stil sayfası oluşturmak için.  
+2. Seçin **XML dosyası** seçin veya yeni bir XML dosyası; oluşturmak için **XSLT dosyası** yeni bir XSLT stil sayfası oluşturmak için.  
   
-3.  Tıklayın **açık**.  
+3. Tıklayın **açık**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>XML dosyaları için bir proje oluşturmak için  
   
-1.  Gelen **dosya** menüsünde **yeni**ve ardından **proje**.  
+1. Gelen **dosya** menüsünde **yeni**ve ardından **proje**.  
   
      **Yeni Proje** iletişim kutusu görünür.  
   
-2.  Select dilediğiniz kod dilini seçin. **boş proje**, tıklatıp **Tamam**.  
+2. Select dilediğiniz kod dilini seçin. **boş proje**, tıklatıp **Tamam**.  
   
-3.  XML dosyaları projeye ekleyin.  
+3. XML dosyaları projeye ekleyin.  
   
      XML Düzenleyicisi bu projeye eklemek şemaları bulur ve bunları doğrulama ve IntelliSense herhangi bir XML, şema veya bu proje açıkken düzenlediğiniz XSLT dosyaları için kullanır.  
   

@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097407"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Yalıtılmış kabuk uygulamaları için hizmet verme yönergeleri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Visual Studio yalıtılmış Kabuk uygulaması dağıttığınızda, yüklendikt
   
  Bir yükleme programındaki özel eylemler kullandığınızda, her zaman yükle özel eylem kullanıcı uygulamayı kaldırırken eylemi geri almak için karşılık gelen bir özel eylem gereken emin olmanız gerekir. Karşılık gelen sağlamak için Kurulum programı başarısız özel eylem kaldırırsanız, uygulamanız kaldırarak kısmen yüklü bırakır.  
   
--   Yazılım güncelleştirmeleri bu sürümleri değiştirin ya da karma değeri, bir dosya veya karma değerleri belirli bir sürümüne bağımlı olan özel bir eylem başarısız olur. Bu durumda, özel bir eylem bu değerleri el ile güncelleştirmeniz gerekir. Ürün sürümleri arasında paylaşılan bir dosya veya karma değerleri sürümleri, ek bir sorun meydana gelir. Bu bağımlılık, mümkün olduğunda kaçının.  
+- Yazılım güncelleştirmeleri bu sürümleri değiştirin ya da karma değeri, bir dosya veya karma değerleri belirli bir sürümüne bağımlı olan özel bir eylem başarısız olur. Bu durumda, özel bir eylem bu değerleri el ile güncelleştirmeniz gerekir. Ürün sürümleri arasında paylaşılan bir dosya veya karma değerleri sürümleri, ek bir sorun meydana gelir. Bu bağımlılık, mümkün olduğunda kaçının.  
   
 ### <a name="accounting-for-shared-files"></a>Paylaşılan dosyalar için hesap oluşturma  
  Paylaşılan dosyalar, aynı ada sahip ve aynı konuma göre birden çok ürünlerin yüklenir. Bu ürün sürümü, stok tutma birimini (SKU) veya her ikisi de farklı olabilir ve ürünlerin belirli bir bilgisayarda birlikte bulunabilir. Ancak, paylaşılan dosyalar, çeşitli nedenlerle hizmet sorunları oluşturun:  
   
--   Paylaşılan dosyalar güncelleştiriliyor, bir uygulama için bir güncelleştirme henüz güncelleştirilmemiş ikinci bir uygulama tarafından kullanılan bir dosya sürümü değişebilir için uygulama uyumluluğu sorunlarına neden olabilir. Dosyaları paylaşma ürünleri için yükleyicileri paylaşılan dosyalara başvuruları sayısı. Bu nedenle, bir ürünü kaldırmadan yüklü örnek sayısını azaltma dışında paylaşılan dosyalar etkilemez.  
+- Paylaşılan dosyalar güncelleştiriliyor, bir uygulama için bir güncelleştirme henüz güncelleştirilmemiş ikinci bir uygulama tarafından kullanılan bir dosya sürümü değişebilir için uygulama uyumluluğu sorunlarına neden olabilir. Dosyaları paylaşma ürünleri için yükleyicileri paylaşılan dosyalara başvuruları sayısı. Bu nedenle, bir ürünü kaldırmadan yüklü örnek sayısını azaltma dışında paylaşılan dosyalar etkilemez.  
   
--   Hızlı düzeltme Mühendisliği (QFE) Yükleyici QFE yükleyici hizmet ürünleri sürümlerine dosyaların sürümlerine geri döner. Bu işlem, potansiyel olarak güncelleştirilen bir paylaşılan dosya teslim bir uygulama keser.
+- Hızlı düzeltme Mühendisliği (QFE) Yükleyici QFE yükleyici hizmet ürünleri sürümlerine dosyaların sürümlerine geri döner. Bu işlem, potansiyel olarak güncelleştirilen bir paylaşılan dosya teslim bir uygulama keser.

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096913"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Bağımlılık diyagramlarına özel mimari doğrulaması ekleme
 
@@ -83,9 +83,9 @@ Katman doğrulayıcılarının, komutların ve diğer uzantıların bulunduğu b
 
 4. İçinde **source.extension.vsixmanifest**altında **varlıklar**, katman doğrulama projesini MEF Bileşeni ekleyin:
 
-    1.  Seçin **yeni**.
+    1. Seçin **yeni**.
 
-    2.  İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:
+    2. İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:
 
          **Type** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Katman doğrulayıcılarının, komutların ve diğer uzantıların bulunduğu b
 
 5. Bu katman doğrulaması olarak da eklemelisiniz:
 
-    1.  Seçin **yeni**.
+    1. Seçin **yeni**.
 
-    2.  İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:
+    2. İçinde **yeni varlık Ekle** iletişim kutusu, ayarla:
 
          **Tür** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Bu açılır listedeki seçeneklerden birini değildir. Bunu klavyeden girmeniz gerekir.
 
@@ -125,7 +125,7 @@ Katman doğrulayıcılarının, komutların ve diğer uzantıların bulunduğu b
 
 9. VSIX ana örneğine Visual Studio'nun veya başka bir bilgisayara yüklemek için bulma **.vsix** dosyası **bin** VSIX projesinin dizin. VSIX'i yüklemek istediğiniz bilgisayara kopyalayın. Windows Gezgini'ndeki VSIX dosyasına çift tıklayın.
 
-##  <a name="programming"></a> Programlama doğrulaması
+## <a name="programming"></a> Programlama doğrulaması
 
 Katman doğrulama uzantısı tanımlamak için aşağıdaki özelliklere sahip bir sınıf tanımlayın:
 
@@ -194,7 +194,7 @@ Her düğüm ve her bağlantı, öğe veya temsil ettiği ilişki türünü beli
 
 Öğeleri kodda katmanlardan bağlantılar "Temsil" Bu kategoriye atanmış.
 
-##  <a name="debugging"></a> Hata ayıklama doğrulama
+## <a name="debugging"></a> Hata ayıklama doğrulama
 
 Katman doğrulama uzantınıza hata ayıklamak için CTRL + F5 tuşlarına basın. Visual Studio deneysel örneği açılır. Bu örnekte, bir katman modeli oluşturun veya açın. Bu model, kodu ile ilişkilendirilmiş olmalıdır ve en az bir bağımlılığı olmalıdır.
 
@@ -226,7 +226,7 @@ CTRL + F5 tuşlarına basarak deneysel örneği her zaman başlatın (**hata ay�
 
 Doğrulama uzantınızı, uygun bir sürüm, Visual Studio'nun yüklü olduğu bir bilgisayara yüklemek için hedef bilgisayarda VSIX dosyasını açın.
 
-##  <a name="example"></a> Örnek kod
+## <a name="example"></a> Örnek kod
 
 ```csharp
 using System;

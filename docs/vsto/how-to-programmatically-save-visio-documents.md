@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069447"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Nasıl yapılır: Program aracılığıyla Visio belgelerini kaydetme
   Microsoft Office Visio belgelerini kaydetme için birkaç yol vardır:
@@ -35,7 +35,7 @@ ms.locfileid: "56618607"
 
 ### <a name="to-save-a-document"></a>Bir belgeyi kaydetme
 
--   Çağrı `Microsoft.Office.Interop.Visio.Document.Save` yöntemi `Microsoft.Office.Tools.Visio.Document` önceden kaydedilmiş bir belgenin sınıfı.
+- Çağrı `Microsoft.Office.Interop.Visio.Document.Save` yöntemi `Microsoft.Office.Tools.Visio.Document` önceden kaydedilmiş bir belgenin sınıfı.
 
      Bu kod örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618607"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Etkin Visio belgesini yeni bir adla kaydetmek için
 
--   Çağrı `Microsoft.Office.Interop.Visio.Document.SaveAs` yöntemi `Microsoft.Office.Tools.Visio.Document` bir dosya adı dahil tam nitelenmiş bir yol kullanarak kaydetmek istediğiniz. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır.
+- Çağrı `Microsoft.Office.Interop.Visio.Document.SaveAs` yöntemi `Microsoft.Office.Tools.Visio.Document` bir dosya adı dahil tam nitelenmiş bir yol kullanarak kaydetmek istediğiniz. Bu klasörde zaten o adda bir dosya varsa dosyanın sessizce üzerine yazılır.
 
      Bu kod örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618607"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Belgeyi yeni bir ad ve belirtilen bağımsız değişkenler ile kaydetmek için
 
--   Çağrı `Microsoft.Office.Interop.Visio.Document.SaveAsEx` yöntemi `Microsoft.Office.Tools.Visio.Document` bir dosya adı dahil tam nitelenmiş bir yol kullanarak kaydetmek istediğiniz. Bu klasörde zaten o adda bir dosya ise bir özel durum oluşturulur.
+- Çağrı `Microsoft.Office.Interop.Visio.Document.SaveAsEx` yöntemi `Microsoft.Office.Tools.Visio.Document` bir dosya adı dahil tam nitelenmiş bir yol kullanarak kaydetmek istediğiniz. Bu klasörde zaten o adda bir dosya ise bir özel durum oluşturulur.
 
      Aşağıdaki kod örneği etkin belgeyi yeni adla kaydeder, belgeyi salt okunur olarak işaretler ve belgelerin en son kullanılan listede belge gösterir. Bu kod örneği kullanmak için çalıştırın `ThisAddIn` projenizdeki sınıfı.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618607"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu kod örneği için aşağıdakiler gereklidir:
 
--   Yeni bir ada sahip bir belge kaydetmek için adında bir dizin `Test` bulunmalıdır *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
+- Yeni bir ada sahip bir belge kaydetmek için adında bir dizin `Test` bulunmalıdır *Belgelerim* klasöründe (Windows XP ve daha önce) veya *belgeleri* klasöründe (Windows Vista için).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Visio çözümleri](../vsto/visio-solutions.md)

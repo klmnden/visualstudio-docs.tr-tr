@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d7ac06c15fb3b6e4370a3e785abe2ac94483a34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111148"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Nasıl yapılır: Bir (Sınıf Tasarımcısı) Microsoft Office belgesine sınıf diyagramı öğeleri kopyalama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Diğer belgeler için bir .NET sınıf diyagramı (.cd dosyası) şekiller kopya
   
 ### <a name="to-copy-a-single-element"></a>Tek bir öğeyi kopyalamak için  
   
--   Şekle sağ tıklayın ve seçin **görüntüsünü kopyalama**.  
+- Şekle sağ tıklayın ve seçin **görüntüsünü kopyalama**.  
   
 ### <a name="to-copy-several-elements"></a>Çeşitli öğeler kopyalamak için  
   
-1.  Kopyalamak istediğiniz diyagramdaki şekilleri seçin.  
+1. Kopyalamak istediğiniz diyagramdaki şekilleri seçin.  
   
-2.  Seçiminize sağ tıklayın ve seçin **görüntüsünü kopyalama**.  
+2. Seçiminize sağ tıklayın ve seçin **görüntüsünü kopyalama**.  
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Tüm öğeleri bir sınıf diyagramında kopyalamak için  
   
@@ -44,4 +44,4 @@ Diğer belgeler için bir .NET sınıf diyagramı (.cd dosyası) şekiller kopya
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Yazdırma sınıf diyagramları (Sınıf Tasarımcısı)](../ide/how-to-print-class-diagrams-class-designer.md)   
- [Nasıl yapılır: Sınıf diyagramları (Sınıf Tasarımcısı) görüntü dışarı aktarma](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+ [Nasıl yapılır: Sınıf Diyagramlarını Görüntü Olarak Dışarı Aktarma (Sınıf Tasarımcısı)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

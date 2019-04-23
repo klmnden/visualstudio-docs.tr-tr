@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095119"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Yük Testi Çözümleyicisi kullanarak yük testi sonuçlarını çözümleme
 
@@ -25,11 +25,11 @@ Performans sorunlarını bulmak, hataları belirlemek ve kullandığınızda uyg
 
 Bu şekilde yük testi sonuçlarını çözümleyin:
 
--   Bir yük testi çalıştırılırken izleyin.
+- Bir yük testi çalıştırılırken izleyin.
 
--   Tamamlandıktan sonra yükleme testini çözümleme.
+- Tamamlandıktan sonra yükleme testini çözümleme.
 
--   Önceki yükleme testinden sonuçları görüntüleyin.
+- Önceki yükleme testinden sonuçları görüntüleyin.
 
 Ayrıca, iki veya daha fazla katılımcılarıyla paylaşmak eğilim analizi raporları karşılaştırma raporları da oluşturabilirsiniz. Bkz: [raporlama yük testleri için test karşılaştırmaları veya eğilim analizi sonuçları](../test/compare-load-test-results.md).
 

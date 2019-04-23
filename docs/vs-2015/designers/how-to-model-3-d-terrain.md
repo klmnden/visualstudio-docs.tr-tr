@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097485"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Nasıl yapılır: Model 3B Arazi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Bu belge, 3B Arazi modeli oluşturmak için Model Düzenleyicisi nasıl yapılac
   
  Bu belgede şu faaliyetler gösterilmiştir:  
   
--   Nesneler bir Sahne ekleme  
+- Nesneler bir Sahne ekleme  
   
--   Yüzleri ve noktalarını seçme  
+- Yüzleri ve noktalarını seçme  
   
--   Seçimleri çevirme  
+- Seçimleri çevirme  
   
--   Kullanarak **yüzü alt bölümlere ayırır** aracı  
+- Kullanarak **yüzü alt bölümlere ayırır** aracı  
   
--   Çerçeve tasarım yüzeyine bir nesne  
+- Çerçeve tasarım yüzeyine bir nesne  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Bir 3B Arazi modeli oluşturma  
  Ek yüzleri yapmak için bir düz kümelere ve ardından ilginç Arazi özellikleri oluşturmak için kendi köşeler işleme, 3B Arazi oluşturabilirsiniz.  

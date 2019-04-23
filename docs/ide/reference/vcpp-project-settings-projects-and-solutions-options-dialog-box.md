@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063861"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++ Proje Ayarları, Projeler ve Çözümler, Seçenekler İletişim Kutusu
 Bu iletişim kutusunu tanımlamanızı sağlar [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] yapı ve proje günlüğü, performans ve dosya türleri desteklemek için ilgili ayarlar.
 
 ### <a name="to-access-this-dialog-box"></a>Bu iletişim kutusuna erişmek için
 
-1.  Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
+1. Üzerinde **Araçları** menüsünü tıklatın **seçenekleri**.
 
-2.  Seçin **projeler ve çözümler**ve ardından **VC ++ proje ayarları**.
+2. Seçin **projeler ve çözümler**ve ardından **VC ++ proje ayarları**.
 
 ## <a name="build-logging"></a>Günlük kaydı oluşturun
  **Evet**

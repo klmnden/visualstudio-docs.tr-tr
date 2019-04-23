@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107820"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio'nun erişilebilirlik özellikleri
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318595"
 
 Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aşağıdaki özellikler Visual Studio daha erişilebilir engelli kişiler için hale getirir:
 
--   Araç çubuğu düğme ve metin büyütme
+- Araç çubuğu düğme ve metin büyütme
 
--   Metin düzenleyicilerde boyut seçenekleri
+- Metin düzenleyicilerde boyut seçenekleri
 
--   Düzenleyicilerde özelleştirme rengi
+- Düzenleyicilerde özelleştirme rengi
 
--   Klavye kısayolunu özelleştirme
+- Klavye kısayolunu özelleştirme
 
--   Yöntem ve parametreler için otomatik tamamlama
+- Yöntem ve parametreler için otomatik tamamlama
 
 > [!NOTE]
 > Bu konu, Windows üzerinde Visual Studio için geçerlidir. Mac için Visual Studio için bkz: [Mac için Visual Studio için erişilebilirlik](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Erişilebilirlik özelliklerine ve yardımcı programları Windows ek olarak aş
 
 Daha fazla bilgi için aşağıdaki konulara bakın:
 
--   [Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Nasıl yapılır: IDE erişilebilirlik seçeneklerini ayarlama](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Nasıl yapılır: Yalnızca klavyeyi kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Nasıl yapılır: Yalnızca klavyeyi kullanma](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Varsayılan klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Varsayılan klavye kısayolları](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Erişilebilirlik ipuçları ve püf noktaları](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Erişilebilirlik ipuçları ve püf noktaları](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Nasıl yapılır: Yazı tiplerini ve renkleri değiştirme](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

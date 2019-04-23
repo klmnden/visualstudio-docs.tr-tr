@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108977"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Nasıl yapılır: Outlook'ta program aracılığıyla öğeleri taşıma
   Bu örnekte okunmamış e-posta iletileri taşır **gelen** adlı bir klasöre **Test**. Örneğin, yalnızca Word'ün iletileri taşır **Test** içinde `Subject` alan.
@@ -30,9 +30,9 @@ ms.locfileid: "56641630"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek gerektirir:
 
--   Adlı bir Outlook e-posta klasörü **Test**.
+- Adlı bir Outlook e-posta klasörü **Test**.
 
--   E-posta iletisine word ile ulaşan **Test** içinde `Subject` alan.
+- E-posta iletisine word ile ulaşan **Test** içinde `Subject` alan.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 - [Klasörlerle çalışma](../vsto/working-with-folders.md)

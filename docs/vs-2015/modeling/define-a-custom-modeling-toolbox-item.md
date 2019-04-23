@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105051"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Özel bir modelleme araç kutusu öğesi tanımlama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
  Özel araç bir diyagramda bir veya daha fazla yeni öğeleri oluşturur. Örneğin, şunlar gibi öğeleri oluşturmak için özel bir araç yapabilirsiniz:  
   
--   .NET profili ve .NET stereotip ile bir sınıf için bir paket bağlı.  
+- .NET profili ve .NET stereotip ile bir sınıf için bir paket bağlı.  
   
--   Gözlemci deseni temsil etmek için bir ilişkilendirme tarafından bağlantılı sınıfları çifti.  
+- Gözlemci deseni temsil etmek için bir ilişkilendirme tarafından bağlantılı sınıfları çifti.  
   
 > [!NOTE]
 >  Öğe araçlarını oluşturmak için bu yöntemi kullanabilirsiniz. Diğer bir deyişle, bir diyagram üzerine araç kutusundan sürükleyin araçları oluşturabilirsiniz. Bağlayıcı araçları oluşturamazsınız.  
   
-##  <a name="DefineTool"></a> Özel araç modelleme tanımlama  
+## <a name="DefineTool"></a> Özel araç modelleme tanımlama  
   
 #### <a name="to-define-a-custom-modeling-tool"></a>Bir özel Modelleme araç tanımlamak için  
   
-1.  Bir öğe veya öğe grubunu içeren bir UML diyagram oluşturun.  
+1. Bir öğe veya öğe grubunu içeren bir UML diyagram oluşturun.  
   
-    -   Bu öğeler, bunlar arasındaki ilişkileri olabilir ve bağlantı noktaları, öznitelikleri, işlemleri veya PIN'leri gibi paketinizle öğeleri olabilir.  
+    - Bu öğeler, bunlar arasındaki ilişkileri olabilir ve bağlantı noktaları, öznitelikleri, işlemleri veya PIN'leri gibi paketinizle öğeleri olabilir.  
   
-2.  Yeni aracı vermek istediğiniz adı kullanarak diyagramı kaydedin. Üzerinde **dosya** menüsünde, kullanmak **Kaydet... Olarak**.  
+2. Yeni aracı vermek istediğiniz adı kullanarak diyagramı kaydedin. Üzerinde **dosya** menüsünde, kullanmak **Kaydet... Olarak**.  
   
-3.  Windows Explorer'ı kullanarak iki diyagram dosyalarının şu klasörü veya herhangi bir alt klasöre kopyalayın:  
+3. Windows Explorer'ı kullanarak iki diyagram dosyalarının şu klasörü veya herhangi bir alt klasöre kopyalayın:  
   
      *YourDocuments* **\Visual Studio\Architecture Tools\Custom araç kutusu öğeleri**  
   
-    -   Bu klasör, zaten yoksa, oluşturun. Her ikisi de oluşturmanız gerekebilir **Mimari Araçları** ve **özel araç kutusu öğeleri**.  
+    - Bu klasör, zaten yoksa, oluşturun. Her ikisi de oluşturmanız gerekebilir **Mimari Araçları** ve **özel araç kutusu öğeleri**.  
   
-    -   Diyagram dosyalarının ikisini de biten "... bir ada sahip bir kopyalama **diyagram**"ile biten bir ad ve"... **diagram.layout**"  
+    - Diyagram dosyalarının ikisini de biten "... bir ada sahip bir kopyalama **diyagram**"ile biten bir ad ve"... **diagram.layout**"  
   
-    -   İstediğiniz sayıda özel araçlar yapabilirsiniz. Her aracı için bir diyagram kullanın.  
+    - İstediğiniz sayıda özel araçlar yapabilirsiniz. Her aracı için bir diyagram kullanın.  
   
-4.  (İsteğe bağlı) Oluşturma bir **.tbxinfo** dosya açıklandığı [özel araç özellikleri tanımlama](#tbxinfo), aynı dizine ekleyin. Bu araç kutusu simgesi, araç ipucu ve benzeri tanımlamanıza olanak sağlar.  
+4. (İsteğe bağlı) Oluşturma bir **.tbxinfo** dosya açıklandığı [özel araç özellikleri tanımlama](#tbxinfo), aynı dizine ekleyin. Bu araç kutusu simgesi, araç ipucu ve benzeri tanımlamanıza olanak sağlar.  
   
-    -   Tek bir **.tbxinfo** dosya, çeşitli araçları tanımlamak için kullanılabilir. Alt klasörlerinde diyagram dosyaları başvurabilir.  
+    - Tek bir **.tbxinfo** dosya, çeşitli araçları tanımlamak için kullanılabilir. Alt klasörlerinde diyagram dosyaları başvurabilir.  
   
-5.  Visual Studio'yu yeniden başlatın. Ek aracı uygun diyagram türü için araç kutusunda görünür.  
+5. Visual Studio'yu yeniden başlatın. Ek aracı uygun diyagram türü için araç kutusunda görünür.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>Özel araç çoğaltma  
  Kaynak diyagram özelliklerinin çoğunu çoğaltma işlemi bir özel aracı:  
@@ -83,7 +83,7 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
 - Bağlayıcı yönlendirme. Bağlayıcılar el ile yönlendirmek, aracınızın kullanıldığında yönlendirme korunmaz. Bağlantı noktaları gibi bazı iç içe geçmiş şekillere konumlarını sahiplerinin göre korunmaz.  
   
-##  <a name="tbxinfo"></a> Özel Araçlar özelliklerini tanımlama  
+## <a name="tbxinfo"></a> Özel Araçlar özelliklerini tanımlama  
  Araç kutusu bilgileri (**.tbxinfo**) dosyası bir araç kutusu adı, simge, araç ipucu, sekme belirtin ve Yardım anahtar sözcüğü bir veya daha fazla özel araçlar için izin verir. Gibi herhangi bir ad verin **MyTools.tbxinfo**.  
   
  Dosya genel biçimi aşağıdaki gibidir:  
@@ -138,35 +138,35 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
 > [!NOTE]
 >  Diyagram dosyaları kendi kullanmayı denedikten sonra .tbxinfo dosyası kullanmaya başlamak, araç hem eski hem de bir araç kutusu öğesi yeni sürümleri içerdiğini fark edebilirsiniz. Diyagram dosyasının adını .tbxinfo dosyasında girildiyse bu da meydana gelebilir. Bu meydana gelirse, araç kısayol menüsünden seçin **sıfırlama araç kutusu**. Özel araç kutusu öğeleri kaybolur. Visual Studio'yu yeniden başlatın ve doğru özel öğeleri görünür.  
   
-##  <a name="Extension"></a> Araç kutusu öğeleri Visual Studio Uzantısı'nda dağıtım yapma  
+## <a name="Extension"></a> Araç kutusu öğeleri Visual Studio Uzantısı'nda dağıtım yapma  
  Diğer araç kutusu öğeleri dağıtabilirsiniz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] bunları Visual Studio Uzantısı (VSIX) paketleme tarafından kullanıcılar. Komutlar, profilleri ve diğer uzantılarla aynı VSIX dosyasına paketleyebilirsiniz. Daha fazla bilgi için [Visual Studio uzantılarını dağıtma](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
  Visual Studio uzantısı oluşturmak için her zamanki şekilde VSIX proje şablonu kullanmaktır. Bunu yapmak için yüklü olmalıdır [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Visual Studio uzantısı için bir araç kutusu öğesi eklemek için  
   
-1.  [Oluşturma ve test bir veya daha fazla özel araçları](#DefineTool).  
+1. [Oluşturma ve test bir veya daha fazla özel araçları](#DefineTool).  
   
-2.  [.Tbxinfo dosyası oluşturma](#tbxinfo) araçları başvuran.  
+2. [.Tbxinfo dosyası oluşturma](#tbxinfo) araçları başvuran.  
   
-3.  Varolan bir Visual Studio uzantı projesi açın.  
+3. Varolan bir Visual Studio uzantı projesi açın.  
   
      \- veya -  
   
      Yeni bir Visual Studio uzantı projesi tanımlayın.  
   
-    1.  Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
+    1. Üzerinde **dosya** menüsünde seçin **yeni**, **proje**.  
   
-    2.  İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**, seçin **Visual C#**, **genişletilebilirlik**, **VSIX Proje**.  
+    2. İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**, seçin **Visual C#**, **genişletilebilirlik**, **VSIX Proje**.  
   
-4.  Araç kutusu tanımlarınıza projeye ekleyin. Dahil **.tbxinfo** dosyası, diyagram dosyaları, bit eşlem dosyaları ve herhangi bir kaynak dosyasını ve VSIX içine dahil edildiğinden emin olun.  
+4. Araç kutusu tanımlarınıza projeye ekleyin. Dahil **.tbxinfo** dosyası, diyagram dosyaları, bit eşlem dosyaları ve herhangi bir kaynak dosyasını ve VSIX içine dahil edildiğinden emin olun.  
   
-    -   Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **Ekle**, **var olan öğe**. İletişim kutusunda ayarlanan **tür nesneleri: Tüm dosyaları**. Dosyaları bulun, tüm bunları seçin ve ardından **Ekle**.  
+    - Çözüm Gezgini'nde VSIX projesinin kısayol menüsünden seçin **Ekle**, **var olan öğe**. İletişim kutusunda ayarlanan **tür nesneleri: Tüm dosyaları**. Dosyaları bulun, tüm bunları seçin ve ardından **Ekle**.  
   
         > [!NOTE]
         >  Bu projede model Düzenleyicisi, diyagram dosyaları açamaz.  
   
-5.  Yeni eklediğiniz tüm dosyaların aşağıdaki özellikleri ayarlayın. Tüm Çözüm Gezgini'nde seçerek aynı anda özelliklerini ayarlayabilirsiniz. Diğer dosyalar projesinde özelliklerini değiştirilmemesi dikkat edin.  
+5. Yeni eklediğiniz tüm dosyaların aşağıdaki özellikleri ayarlayın. Tüm Çözüm Gezgini'nde seçerek aynı anda özelliklerini ayarlayabilirsiniz. Diğer dosyalar projesinde özelliklerini değiştirilmemesi dikkat edin.  
   
      **Çıkış Dizinine Kopyala** = **her zaman Kopyala**  
   
@@ -174,24 +174,24 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
      **VSIX'e Ekle** = **true**  
   
-6.  Açık **source.extension.vsixmanifest**. Uzantı bildirim düzenleyicisinde açar.  
+6. Açık **source.extension.vsixmanifest**. Uzantı bildirim düzenleyicisinde açar.  
   
-7.  Altında **meta verileri**, özel araçlar için bir açıklama ekleyin.  
+7. Altında **meta verileri**, özel araçlar için bir açıklama ekleyin.  
   
      Altında **varlıklar**, seçin **yeni** ve alanları iletişim kutusunda aşağıdaki gibi ayarlayın:  
   
-    -   **Tür** = **özel uzantı türü**  
+    - **Tür** = **özel uzantı türü**  
   
-    -   Tür = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    - Tür = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  Bu açılır listedeki seçeneklerden birini değildir. Klavyeyi kullanarak girmek zorunda.  
   
-    -   **Kaynak** = **FileSystem'daki**.  
+    - **Kaynak** = **FileSystem'daki**.  
   
-    -   **Yol** =, **.tbxinfo** , örneğin dosya **MyTools.tbxinfo**  
+    - **Yol** =, **.tbxinfo** , örneğin dosya **MyTools.tbxinfo**  
   
-8.  Projeyi oluşturun.  
+8. Projeyi oluşturun.  
   
 9. **Uzantı çalıştığını doğrulamak için**, F5 tuşuna basın. Visual Studio'nun bir Deneysel örneğini başlatır.  
   
@@ -201,11 +201,11 @@ Bir öğe veya sık kullandığınız bir desene göre öğeler grubu oluşturma
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Visual Studio Uzantısı'ndan özel araçlarını yüklemek için  
   
-1.  Açık `.vsix` Windows Gezgini veya Visual Studio'da dosya.  
+1. Açık `.vsix` Windows Gezgini veya Visual Studio'da dosya.  
   
-2.  Seçin **yükleme** iletişim kutusunda görüntülenir.  
+2. Seçin **yükleme** iletişim kutusunda görüntülenir.  
   
-3.  Kaldırmak veya geçici olarak uzantıyı devre dışı bırakmak için açık **Uzantılar ve güncelleştirmeler** gelen **Araçları** menüsü.  
+3. Kaldırmak veya geçici olarak uzantıyı devre dışı bırakmak için açık **Uzantılar ve güncelleştirmeler** gelen **Araçları** menüsü.  
   
 ## <a name="localization"></a>Yerelleştirme  
  Başka bir bilgisayara yüklendiğinde, aracı adları ve araç ipuçları hedef bilgisayarın dilinde görüntüler bir uzantı yapabilirsiniz.  

@@ -11,12 +11,12 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc496c4f6a445ffd43e992302457bdb92f3239a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 477ab8ce86188af9a3db03b92e1ea0f574d8a6a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096770"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Nasıl yapılır: Yük testi sonuçlarını bir depodan dışarı aktarma
 
@@ -28,25 +28,25 @@ Kullanarak yük testi sonuçları Yük Testi Düzenleyicisi'nden yönetebilirsin
 
 ## <a name="to-export-results-from-a-repository"></a>Sonuçlarını bir depodan dışarı aktarmak için
 
-1.  Bir web performansı ve yük testi projesinden, bir yük testi açın.
+1. Bir web performansı ve yük testi projesinden, bir yük testi açın.
 
-2.  Gömülü araç çubuğunda **sonuçları Aç ve Yönet**.
+2. Gömülü araç çubuğunda **sonuçları Aç ve Yönet**.
 
      **Yönetme yük testi sonuçlarını Aç ve** iletişim kutusu görüntülenir.
 
-3.  İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel - denetleyici yok >** yerel olarak depolanmış sonuçlara erişmek için.
+3. İçinde **yük testi sonuçlarını bulmak için bir denetleyici adı girin**, bir denetleyici seçin. Seçin  **\<yerel - denetleyici yok >** yerel olarak depolanmış sonuçlara erişmek için.
 
-4.  İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
+4. İçinde **göstermek için aşağıdaki yükleme testi sonuçları**, yük testi sonuçları görüntülemek istediğinizi seçin. Seçin  **\<tüm testler için sonuçları Göster >** tüm testler için tüm sonuçları görmek için.
 
      Yük testi sonuçları kullanamıyorsanız, görünürler **yük testi sonuçları** listesi. Sütunların **zaman**, **süresi**, **kullanıcı**, **sonucu**, **Test**, ve  **Açıklama**. **Test** test adını içerir ve **açıklama** test çalıştırılmadan önce eklenir isteğe bağlı bir açıklama içerir. **Açıklama** sütunu içindeki girilen kısa açıklamaları görüntüler **analiz yorumları** bunun için test sonucu.
 
-5.  İçinde **yük testi sonuçları** listesinde, bir sonuç seçin. Kullanabileceğiniz **Shift** anahtar **Ctrl** anahtar ya da her ikisini birden fazla sonuç seçin ve bunları tek bir dosyaya dışarı aktarma.
+5. İçinde **yük testi sonuçları** listesinde, bir sonuç seçin. Kullanabileceğiniz **Shift** anahtar **Ctrl** anahtar ya da her ikisini birden fazla sonuç seçin ve bunları tek bir dosyaya dışarı aktarma.
 
-6.  Seçin **dışarı**.
+6. Seçin **dışarı**.
 
      **Yük testi sonuçları dışa** iletişim kutusu görüntülenir.
 
-7.  İçinde **dosya adı** kutusuna bir ad yazın ve ardından **Kaydet**.
+7. İçinde **dosya adı** kutusuna bir ad yazın ve ardından **Kaydet**.
 
      Sonuçları bir arşiv dosyasına aktarılır.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106676"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümelerine kod ekleme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Veri kümesi ayırdıktan sonra varsayılan olarak ve `TableAdapter` kod sonucu 
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>N katmanlı uygulamalarda veri kümelerine kod ekleme
 
-1.  (Veri kümesi) .xsd dosyasını içeren proje bulun.
+1. (Veri kümesi) .xsd dosyasını içeren proje bulun.
 
-2.  Seçin **.xsd** dosyayı veri kümesini açın.
+2. Seçin **.xsd** dosyayı veri kümesini açın.
 
-3.  Kod (başlık çubuğundaki tablo adı) ekleyin ve ardından istediğiniz veri tablosuna sağ **kodu görüntüle**.
+3. Kod (başlık çubuğundaki tablo adı) ekleyin ve ardından istediğiniz veri tablosuna sağ **kodu görüntüle**.
 
      Kısmi sınıf oluşturulur ve Kod Düzenleyicisi'nde açılır.
 
-4.  Kısmi sınıf bildirimi içinde kod ekleyin.
+4. Kısmi sınıf bildirimi içinde kod ekleyin.
 
      Aşağıdaki örnek, NorthwindDataSet'teki CustomersDataTable kod ekleme yeri gösterir:
 

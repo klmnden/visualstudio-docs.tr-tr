@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12fc82fd0c04e9f05ff55be24c3527ca95a357fb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34727c0949ab4ad6baf8e91b27b20115cf074b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096367"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Nasıl yapılır: Eklenti kullanıcı arayüzü hatalarını gösterme
   Microsoft Office kullanıcı arabirimini (UI) ve başarısız olursa, işlemek VSTO eklentisi eşleşmeye çalışıyorsa, varsayılan olarak, hata iletisi görüntülenir. Ancak, Microsoft Office uygulamaları için kullanıcı Arabirimi ile ilgili hata iletileri görüntülemek için yapılandırabilirsiniz. Bu iletiler, özel bir Şerit bulunmamasının veya neden bir Şerit görünür ancak denetim yok görünür belirlemeye yardımcı olması için kullanabilirsiniz.
@@ -29,15 +29,15 @@ ms.locfileid: "56596016"
 
 ## <a name="to-show-vsto-add-in-user-interface-errors"></a>VSTO eklenti kullanıcı arayüzü hatalarını göstermek için
 
-1.  Uygulamayı başlatın.
+1. Uygulamayı başlatın.
 
-2.  Tıklayın **dosya** sekmesi.
+2. Tıklayın **dosya** sekmesi.
 
-3.  Tıklayın **seçenekleri**.
+3. Tıklayın **seçenekleri**.
 
-4.  Kategorileri bölmesinden **Gelişmiş**.
+4. Kategorileri bölmesinden **Gelişmiş**.
 
-5.  Ayrıntılar bölmesinde seçin **kullanıcı arayüzü hatalarını gösterme VSTO eklentisi**ve ardından **Tamam**.
+5. Ayrıntılar bölmesinde seçin **kullanıcı arayüzü hatalarını gösterme VSTO eklentisi**ve ardından **Tamam**.
 
     > [!NOTE]
     >  Outlook için **kullanıcı arayüzü hatalarını gösterme VSTO eklentisi** onay kutusu bulunan **Geliştirici** Ayrıntılar bölümünde. Diğer uygulamalar için onay kutusunu bulunan **genel** Ayrıntılar bölümünde.

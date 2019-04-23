@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29c0a8f3eca5d6da2c86a1881e943754ad1ba087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762823"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095782"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Derlemelerin geçerli tanımlayıcı adları olmalıdır
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "54762823"
 
    **Derlemenizi Visual Studio dışında bir katı adla imzalamak için**
 
--   Tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanan [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Tarafından sağlanan tanımlayıcı ad Aracı (Sn.exe) kullanan [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Daha fazla bilgi için [Sn.exe (tanımlayıcı ad aracı)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Uyarılar Bastırıldığında
  Derleme ortamında kullandıysanız yalnızca bu kuraldan bir uyarıyı bastırmak burada içeriğiyle oynama bir sorun değildir.

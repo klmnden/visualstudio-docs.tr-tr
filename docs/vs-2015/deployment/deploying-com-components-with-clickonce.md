@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57871307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066357"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>ClickOnce ile COM Bileşenleri Dağıtma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
  İki yolu vardır, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] COM bileşenlerini dağıtır:  
   
--   Önyükleyici, COM bileşenlerini dağıtmak için kullanın. Bu, desteklenen tüm platformlarda çalışır.  
+- Önyükleyici, COM bileşenlerini dağıtmak için kullanın. Bu, desteklenen tüm platformlarda çalışır.  
   
--   Yerel bileşen yalıtım (diğer adıyla kayıt gerektirmeyen COM) dağıtımı kullanın. Ancak, bu yalnızca bir Windows XP veya üzeri işletim sistemi üzerinde çalışır.  
+- Yerel bileşen yalıtım (diğer adıyla kayıt gerektirmeyen COM) dağıtımı kullanın. Ancak, bu yalnızca bir Windows XP veya üzeri işletim sistemi üzerinde çalışır.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Yalıtma ve basit bir COM bileşeni dağıtma örneği  
  Kayıtsız COM bileşeni dağıtımı göstermek için bu örnekte Visual Basic 6.0 kullanılarak oluşturulan bir yalıtılmış yerel COM bileşenine başvurduğunu Visual Basic'te Windows tabanlı bir uygulama oluşturma ve kullanarak [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
   
 ##### <a name="to-create-a-native-com-component"></a>Yerel bir COM bileşeni oluşturma  
   
-1.  Visual Basic 6.0 kullanarak **dosya** menüsünde tıklatın **yeni**, ardından **proje**.  
+1. Visual Basic 6.0 kullanarak **dosya** menüsünde tıklatın **yeni**, ardından **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt bir **ActiveX DLL** proje. İçinde **adı** kutusuna `VB6Hello`.  
+2. İçinde **yeni proje** iletişim kutusunda **Visual Basic** düğümünü seçip alt bir **ActiveX DLL** proje. İçinde **adı** kutusuna `VB6Hello`.  
   
     > [!NOTE]
     >  Kayıtsız COM yalnızca ActiveX DLL ve ActiveX denetimi projesi türleri desteklenir; ActiveX EXE ve ActiveX belgesi proje türleri desteklenmez.  
   
-3.  İçinde **Çözüm Gezgini**, çift **Class1.vb** metin düzenleyiciyi açın.  
+3. İçinde **Çözüm Gezgini**, çift **Class1.vb** metin düzenleyiciyi açın.  
   
-4.  Class1.vb içinde için üretilen koddan sonra aşağıdaki kodu ekleyin. `New` yöntemi:  
+4. Class1.vb içinde için üretilen koddan sonra aşağıdaki kodu ekleyin. `New` yöntemi:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Eski COM bileşenlerinin dağıtımını, geleneksel olarak zor bir görev olmu�
     End Sub  
     ```  
   
-5.  Bileşen oluşturun. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.  
+5. Bileşen oluşturun. Gelen **derleme** menüsünde tıklatın **Çözümü Derle**.  
   
 > [!NOTE]
 >  Kayıtsız COM DLL'leri yalnızca destekler ve proje türleri COM denetler. Kayıtsız COM exe kullanamazsınız  

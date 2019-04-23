@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109135"
 ---
 # <a name="content-model-view"></a>İçerik Modeli Görünümü
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ Yerel ve genel şema düğümlerini ve basit ve karmaşık türler, öğe, model
 ## <a name="undoredo"></a>Geri Al/Yinele  
  Aşağıdaki eylemler için içerik modeli görünümünü geri al/Yinele özelliği etkin:  
   
--   Tek bir düğüm sürükleme ve bırakma ekleniyor.  
+- Tek bir düğüm sürükleme ve bırakma ekleniyor.  
   
--   Şema Gezgini arama sonuçları penceresinde birden çok düğüm ekleme.  
+- Şema Gezgini arama sonuçları penceresinde birden çok düğüm ekleme.  
   
--   Düğüm başlangıç görünümünden ekleme.  
+- Düğüm başlangıç görünümünden ekleme.  
   
--   Tek veya birden çok düğüm siliniyor.  
+- Tek veya birden çok düğüm siliniyor.  
   
 ## <a name="zoom"></a>Yakınlaştır  
  Yakınlaştırma kullanılabilir içerik modeli görünümünü sağ alt köşesindeki.  

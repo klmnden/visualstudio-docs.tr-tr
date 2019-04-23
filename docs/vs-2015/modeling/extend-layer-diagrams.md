@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066084"
 ---
 # <a name="extend-layer-diagrams"></a>Katman diyagramlarını genişletme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Katman diyagramları oluşturmak için ve programı kodunuzu Visual Studio'da ka
   
  Katman diyagramları hakkında daha fazla bilgi için bkz:  
   
--   [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
+- [Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)  
   
--   [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)  
+- [Katman Diyagramları: Yönergeler](../modeling/layer-diagrams-guidelines.md)  
   
--   [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
+- [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Gereksinimleri  
+## <a name="prereqs"></a> Gereksinimleri  
  Aşağıdaki katman uzantılarınızı geliştirmek istediğiniz bilgisayarda yüklü olması gerekir:  
   
 - Visual Studio  
@@ -62,8 +62,8 @@ Katman diyagramları oluşturmak için ve programı kodunuzu Visual Studio'da ka
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Modelleme Uzantısı Tanımlama ve yükleme](../modeling/define-and-install-a-modeling-extension.md)   
- [Katman diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)   
- [Katman diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)   
+ [Katman Diyagramları: Başvuru](../modeling/layer-diagrams-reference.md)   
+ [Katman Diyagramları: Yönergeleri](../modeling/layer-diagrams-guidelines.md)   
  [Kodunuz aracılığıyla katman diyagramları oluşturma](../modeling/create-layer-diagrams-from-your-code.md)   
  [Katman diyagramları ile kod doğrulama](../modeling/validate-code-with-layer-diagrams.md)   
  [Bir UML modelinden dosyalar oluşturma](../modeling/generate-files-from-a-uml-model.md)   

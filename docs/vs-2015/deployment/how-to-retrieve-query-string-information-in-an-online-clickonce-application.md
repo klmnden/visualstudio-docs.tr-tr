@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069542"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Nasıl yapılır: Çevrimiçi bir ClickOnce Uygulamasında Sorgu Dize Bilgilerini Alma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "54798255"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Bir ClickOnce uygulamasında sorgu dize bilgilerini almak için  
   
-1.  Aşağıdaki kod, projenizde yerleştirin. Bu işlev kodu için sırada System.Web başvuru ve eklemek olacaktır `using` veya `Imports` System.Web, System.Collections.Specialized ve System.Deployment.Application deyimleri.  
+1. Aşağıdaki kod, projenizde yerleştirin. Bu işlev kodu için sırada System.Web başvuru ve eklemek olacaktır `using` veya `Imports` System.Web, System.Collections.Specialized ve System.Deployment.Application deyimleri.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Almak için önceden tanımlanmış bir işlevi çağırmak bir <xref:System.Collections.DictionaryBase.Dictionary%2A> , ada göre sıralanan sorgu dizesi parametreleri.  
+2. Almak için önceden tanımlanmış bir işlevi çağırmak bir <xref:System.Collections.DictionaryBase.Dictionary%2A> , ada göre sıralanan sorgu dizesi parametreleri.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Sorgu dizesi MageUI.exe ile ClickOnce uygulamasında geçirmeyi etkinleştirmek için  
   
-1.  .NET komut istemi açıp şunu yazın:  
+1. .NET komut istemi açıp şunu yazın:  
   
     ```  
     MageUI  
     ```  
   
-2.  Gelen **dosya** menüsünde **açın**ve dağıtım bildirimini açmak, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dosyası olan uygulama sonu `.application` uzantısı.  
+2. Gelen **dosya** menüsünde **açın**ve dağıtım bildirimini açmak, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dosyası olan uygulama sonu `.application` uzantısı.  
   
-3.  Seçin **dağıtım seçenekleri** paneli sol taraftaki gezinti penceresinde ve seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** onay kutusu.  
+3. Seçin **dağıtım seçenekleri** paneli sol taraftaki gezinti penceresinde ve seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** onay kutusu.  
   
-4.  Gelen **dosya** menüsünde **Kaydet**.  
+4. Gelen **dosya** menüsünde **Kaydet**.  
   
 > [!NOTE]
 >  Alternatif olarak, sorgu dizesi içinde geçirmeyi etkinleştirebilirsiniz [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Seçin **uygulamaya geçirilecek parametreler URL'ye izin ver** açarak bulunabilir onay kutusunu **proje özellikleri**u seçerek **Yayımla** sekmesine tıklayarak **Seçenekleri** düğmesini seçip ardından **bildirimlerini**.  

@@ -13,33 +13,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57ea15d8f0a92d28d8687f3b3513a6610683da11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109211"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Nasıl yapılır: Özel özellik ve paket doğrulama kuralları için SharePoint çözümleri oluşturma
   Visual Studio tarafından oluşturulan çözüm paketi doğrulamak için özel doğrulama kuralları oluşturabilirsiniz. Seçerek bir özelliğin tamamı veya paketin tam doğrulama gerçekleştirebilirsiniz **doğrulama** bir paket veya özelliği, bağlam menüsünden **PackagingExplorer**. Özellik ve paket geçerli bir durumda olmaya istekli olup olmadığını belirlemek için projeye yeni özellik veya SharePonit proje öğeleri eklediğinizde, kısmi doğrulama gerçekleştirilir.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Özel paket doğrulama kuralı oluşturmak için
 
-1.  Bir sınıf kitaplığı projesi oluşturun.
+1. Bir sınıf kitaplığı projesi oluşturun.
 
-2.  Aşağıdaki derlemelere başvurular ekleyin:
+2. Aşağıdaki derlemelere başvurular ekleyin:
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Aşağıdaki arabirimlerinden birini uygulayan bir sınıf oluşturun:
+3. Aşağıdaki arabirimlerinden birini uygulayan bir sınıf oluşturun:
 
-    -   Paket doğrulama kuralı oluşturmak için uygulaması <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> arabirimi.
+    - Paket doğrulama kuralı oluşturmak için uygulaması <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> arabirimi.
 
-    -   Bir özellik doğrulama kuralı oluşturmak için uygulaması <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> arabirimi.
+    - Bir özellik doğrulama kuralı oluşturmak için uygulaması <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> arabirimi.
 
-4.  Ekleme <xref:System.ComponentModel.Composition.ExportAttribute> sınıfa. Bu öznitelik, bulma ve doğrulama kuralınızı yüklemek Visual Studio sağlar. Geçirmek <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> veya <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> özniteliği Oluşturucu türü.
+4. Ekleme <xref:System.ComponentModel.Composition.ExportAttribute> sınıfa. Bu öznitelik, bulma ve doğrulama kuralınızı yüklemek Visual Studio sağlar. Geçirmek <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> veya <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> özniteliği Oluşturucu türü.
 
 ## <a name="example"></a>Örnek
  Aşağıdaki kod örneği, bir özel özellik doğrulama kuralının nasıl oluşturulacağını gösterir.
@@ -50,9 +50,9 @@ ms.locfileid: "56633607"
 ## <a name="compile-the-code"></a>Kod derleme
  Bu örnek aşağıdaki derlemelere başvurular gerektirir:
 
--   Microsoft.VisualStudio.SharePoint.
+- Microsoft.VisualStudio.SharePoint.
 
--   System.ComponentModel.Composition.
+- System.ComponentModel.Composition.
 
 ## <a name="deploy-the-extension"></a>Uzantıyı dağıtmak
  Uzantıyı dağıtmak için oluşturun bir [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] uzantısı (VSIX) paketini derleme ve uzantısıyla dağıtmak istediğiniz diğer tüm dosyalar için. Daha fazla bilgi için [uzantıları dağıtmak için SharePoint araçları Visual Studio'da](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

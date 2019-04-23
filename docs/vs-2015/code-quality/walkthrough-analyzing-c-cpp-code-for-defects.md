@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dcd862b6ff9c94b8de3fc8b5a56164549fefe8ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099513"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: C/C++ Kodunda Hata Olup Olmadığını Analiz Etme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,69 +30,69 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
  Aşağıdaki adımları tamamlamanız:  
   
--   Yerel kod üzerinde kod analizini Çalıştır.  
+- Yerel kod üzerinde kod analizini Çalıştır.  
   
--   Kod hatasını uyarıları çözümleyin.  
+- Kod hatasını uyarıları çözümleyin.  
   
--   Hata olarak kabul uyarısı.  
+- Hata olarak kabul uyarısı.  
   
--   Kod hata analizi iyileştirmek için kaynak kodu açıklama ekleyin.  
+- Kod hata analizi iyileştirmek için kaynak kodu açıklama ekleyin.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] veya [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] veya [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
--   Bir kopyasını [gösterim örneği](../code-quality/demo-sample.md).  
+- Bir kopyasını [gösterim örneği](../code-quality/demo-sample.md).  
   
--   C/C++ temel düzeyde bilinmesini.  
+- C/C++ temel düzeyde bilinmesini.  
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Yerel kod üzerinde kod hata analizi çalıştırmak için  
   
-1.  Tanıtım çözümde açık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Tanıtım çözümde açık [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
      Tanıtım çözümü şimdi doldurur **Çözüm Gezgini**.  
   
-2.  Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
+2. Üzerinde **derleme** menüsünde tıklatın **çözümü yeniden derle**.  
   
      Çözüm herhangi bir hata veya uyarı derlenir.  
   
-3.  İçinde **Çözüm Gezgini**, CodeDefects projeyi seçin.  
+3. İçinde **Çözüm Gezgini**, CodeDefects projeyi seçin.  
   
-4.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
+4. Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
   
      **CodeDefects özellik sayfaları** iletişim kutusu görüntülenir.  
   
-5.  Tıklayın **Kod Analizi**.  
+5. Tıklayın **Kod Analizi**.  
   
-6.  Tıklayın **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu.  
+6. Tıklayın **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu.  
   
-7.  CodeDefects projeyi yeniden derleyin.  
+7. CodeDefects projeyi yeniden derleyin.  
   
      Kod çözümleme uyarıları görüntülenir **hata listesi**.  
   
 ### <a name="to-analyze-code-defect-warnings"></a>Kod hatasını uyarıları çözümlemek için  
   
-1.  Üzerinde **görünümü** menüsünü tıklatın **hata listesi**.  
+1. Üzerinde **görünümü** menüsünü tıklatın **hata listesi**.  
   
      Te seçtiğiniz Geliştirici profili bağlı olarak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], işaret edecek şekilde olabilir **diğer Windows** üzerinde **görünümü** menüsüne ve ardından **hata listesi**.  
   
-2.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
+2. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
      Uyarı C6230: Anlamsal olarak farklı türleri arasında örtük atama: Boole bağlamında HRESULT kullanma.  
   
      Kod Düzenleyicisi uyarıya yol açan işlev satır görüntüler `bool``ProcessDomain()`. Bu uyarı, bir HRESULT bir 'If' deyimi bir Boolean sonucu beklenen yeri kullanılmakta olduğunu gösterir.  
   
-3.  Bu uyarı, SUCCEEDED makrosu kullanarak düzeltin. Kodunuzu aşağıdaki koda benzemelidir:  
+3. Bu uyarı, SUCCEEDED makrosu kullanarak düzeltin. Kodunuzu aşağıdaki koda benzemelidir:  
   
     ```  
     if (SUCCEEDED (ReadUserAccount()) )  
     ```  
   
-4.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
+4. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
      C6282 Uyarı: Hatalı operatör: test bağlamında sabit atama. Hedeflenen == oldu?  
   
-5.  Bu uyarı, eşitlik için test ederek düzeltin. Kodunuzu aşağıdaki koda benzemelidir:  
+5. Bu uyarı, eşitlik için test ederek düzeltin. Kodunuzu aşağıdaki koda benzemelidir:  
   
     ```  
     if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
@@ -100,45 +100,45 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
 ### <a name="to-treat-warning-as-an-error"></a>Uyarı hata olarak değerlendirilecek  
   
-1.  Bug.cpp dosyasına aşağıdakileri ekleyin `#pragma` C6001 uyarı hata olarak değerlendirilecek dosyanın başına deyimi:  
+1. Bug.cpp dosyasına aşağıdakileri ekleyin `#pragma` C6001 uyarı hata olarak değerlendirilecek dosyanın başına deyimi:  
   
     ```  
     #pragma warning (error: 6001)  
     ```  
   
-2.  CodeDefects projeyi yeniden derleyin.  
+2. CodeDefects projeyi yeniden derleyin.  
   
      İçinde **hata listesi**, C6001 hata olarak görünür.  
   
-3.  Kalan iki C6001 hataları düzeltin **hata listesi** başlatma tarafından `i` ve `j` 0.  
+3. Kalan iki C6001 hataları düzeltin **hata listesi** başlatma tarafından `i` ve `j` 0.  
   
-4.  CodeDefects projeyi yeniden derleyin.  
+4. CodeDefects projeyi yeniden derleyin.  
   
      Projeyi herhangi bir uyarı veya hata derler.  
   
 ### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>Kaynak kod ek açıklama uyarılara annotation.c düzeltmek için  
   
-1.  Çözüm Gezgini içinde ek açıklamalar projeyi seçin.  
+1. Çözüm Gezgini içinde ek açıklamalar projeyi seçin.  
   
-2.  Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
+2. Üzerinde **proje** menüsünü tıklatın **özellikleri**.  
   
      **Ek açıklamaları özellik sayfaları** iletişim kutusu görüntülenir.  
   
-3.  Tıklayın **Kod Analizi**.  
+3. Tıklayın **Kod Analizi**.  
   
-4.  Seçin **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu.  
+4. Seçin **C/c++ derlemede kod çözümlemeyi etkinleştir** onay kutusu.  
   
-5.  Ek açıklamalar projeyi yeniden derleyin.  
+5. Ek açıklamalar projeyi yeniden derleyin.  
   
-6.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
+6. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
      Uyarı C6011: NULL işaretçi 'newNode' başvurusunun kaldırılması.  
   
      Bu uyarı, dönüş değeri denetleyin çağıran tarafından hatası gösterir. Bu durumda, bir çağrıda **AllocateNode** NULL bir değer döndürebilir (işlev bildirimi için AllocateNode annotations.h üstbilgi dosyasını bakın).  
   
-7.  Annotations.cpp dosyasını açın.  
+7. Annotations.cpp dosyasını açın.  
   
-8.  Bu uyarıyı düzeltmek için dönüş değerini test etmek için bir 'if' deyimini kullanın. Kodunuzu aşağıdaki koda benzemelidir:  
+8. Bu uyarıyı düzeltmek için dönüş değerini test etmek için bir 'if' deyimini kullanın. Kodunuzu aşağıdaki koda benzemelidir:  
   
      `if (NULL != newNode)`  
   
@@ -158,7 +158,7 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
 ### <a name="to-use-source-code-annotation"></a>Kaynak kod ek açıklamaları kullanmak için  
   
-1.  Ek açıklama biçimsel parametreler ve dönüş değeri işlevin `AddTail` öncesi ve sonrası koşulları Bu örnekte gösterilen şekilde kullanarak:  
+1. Ek açıklama biçimsel parametreler ve dönüş değeri işlevin `AddTail` öncesi ve sonrası koşulları Bu örnekte gösterilen şekilde kullanarak:  
   
      `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
   
@@ -170,15 +170,15 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
   
      `)`  
   
-2.  Ek açıklamalar projeyi yeniden derleyin.  
+2. Ek açıklamalar projeyi yeniden derleyin.  
   
-3.  İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
+3. İçinde **hata listesi**, aşağıdaki uyarıyı çift tıklatın:  
   
      Uyarı C6011: 'Düğümü' NULL işaretçisinin başvurusunun kaldırılması.  
   
      Bu uyarı işleve geçirilen düğüm null olabileceğini gösterir ve burada uyarı tetiklendi satır numarasını gösterir.  
   
-4.  Bu uyarıyı düzeltmek için dönüş değerini test etmek için bir 'if' deyimini kullanın. Kodunuzu aşağıdaki koda benzemelidir:  
+4. Bu uyarıyı düzeltmek için dönüş değerini test etmek için bir 'if' deyimini kullanın. Kodunuzu aşağıdaki koda benzemelidir:  
   
     ```  
     . . .  
@@ -190,7 +190,7 @@ Bu yönerge, C/C++ kodu için kod analizi aracı kullanarak olası kod kusurlar�
     }  
     ```  
   
-5.  Ek açıklamalar projeyi yeniden derleyin.  
+5. Ek açıklamalar projeyi yeniden derleyin.  
   
      Projeyi herhangi bir uyarı veya hata derler.  
   

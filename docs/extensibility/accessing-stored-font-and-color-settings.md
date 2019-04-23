@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66bbab5cf82d4ada241d8e5b3a4213ac51ecffd2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093564"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Yazı tipi ve renk ayarlarını erişim depolanan
 
@@ -29,21 +29,21 @@ Yazı tipi ve renk bilgileri, aşağıdaki kayıt defteri konumunda kategoriye g
 
 Bu nedenle, Kalıcılık başlatmak için bir VSPackage gerekir:
 
--   Elde bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> çağırarak arabirim `QueryService` küresel hizmet sağlayıcısına.
+- Elde bir <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> çağırarak arabirim `QueryService` küresel hizmet sağlayıcısına.
 
      `QueryService` bir hizmet kimliği bağımsız değişkeni kullanılarak çağrılmalıdır `SID_SVsFontAndColorStorage` ve arabirimi kimliği bağımsız değişkeninin `IID_IVsFontAndColorStorage`.
 
--   Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> bağımsız değişken olarak kategorinin GUID ve modu bayrağını kullanarak kalıcı için bir kategori açmak için yöntemi.
+- Kullanım <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> bağımsız değişken olarak kategorinin GUID ve modu bayrağını kullanarak kalıcı için bir kategori açmak için yöntemi.
 
      Tarafından belirtilen modu `fFlags` değerden bağımsız değişkeni, oluşturulan <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> sabit listesi. Bu modu denetler:
 
-    -   Erişilebilir ayarları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.
+    - Erişilebilir ayarları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.
 
-    -   Tüm ayarları veya kullanıcıları değiştirin ve aracılığıyla alınabilir olan yalnızca bu ayarları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.
+    - Tüm ayarları veya kullanıcıları değiştirin ve aracılığıyla alınabilir olan yalnızca bu ayarları <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> arabirimi.
 
-    -   Değişiklikleri kullanıcı ayarlarına yayma şekilde.
+    - Değişiklikleri kullanıcı ayarlarına yayma şekilde.
 
-    -   Kullanılan renk değerleri biçimi.
+    - Kullanılan renk değerleri biçimi.
 
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Yazı tipleri ve renkler durumu kalıcılığını kullanmak için
 

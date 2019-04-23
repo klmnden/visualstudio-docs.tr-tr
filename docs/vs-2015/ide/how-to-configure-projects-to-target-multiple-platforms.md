@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785832"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100306"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Nasıl yapılır: Projeleri Birden Çok Platformu Hedefleyecek Şekilde Yapılandırma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,31 +29,31 @@ ms.locfileid: "54785832"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Farklı bir platform hedeflemek için yapılandırmayı ayarlamak için  
   
-1.  Üzerinde **derleme** menüsünde tıklatın **Configuration Manager**.  
+1. Üzerinde **derleme** menüsünde tıklatın **Configuration Manager**.  
   
-2.  İçinde **etkin çözüm platformu kutusu**, çözümünüze hedef istediğiniz ya da seçin platformu seçin  **\<yeni >** yeni platformu oluşturmak için. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Etkin platform olarak ayarlanmış olan platformunu hedeflemek için uygulamanızı derleyeceği **Configuration Manager** iletişim kutusu.  
+2. İçinde **etkin çözüm platformu kutusu**, çözümünüze hedef istediğiniz ya da seçin platformu seçin  **\<yeni >** yeni platformu oluşturmak için. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Etkin platform olarak ayarlanmış olan platformunu hedeflemek için uygulamanızı derleyeceği **Configuration Manager** iletişim kutusu.  
   
 ## <a name="removing-a-platform"></a>Bir Platform kaldırılıyor  
  Gerek bir platform olduğunu fark ederseniz Configuration Manager iletişim kutusunu kullanarak kaldırabilirsiniz. Bu, yapılandırma ve hedef birleşimi için yapılandırdığınız tüm çözüm ve proje ayarlarını kaldırır.  
   
 #### <a name="to-remove-a-platform"></a>Bir platform kaldırmak için  
   
-1.  Üzerinde **derleme** menüsünde tıklatın **Configuration Manager**.  
+1. Üzerinde **derleme** menüsünde tıklatın **Configuration Manager**.  
   
-2.  İçinde **etkin çözüm platformu kutusu**seçin  **\<Düzenle >**. **Çözüm platformları Düzenle** iletişim kutusu açılır.  
+2. İçinde **etkin çözüm platformu kutusu**seçin  **\<Düzenle >**. **Çözüm platformları Düzenle** iletişim kutusu açılır.  
   
-3.  Kaldırın ve istediğiniz platform tıklayın **Kaldır**.  
+3. Kaldırın ve istediğiniz platform tıklayın **Kaldır**.  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>Bir Çözümle birden çok platformu hedefleme  
  Ayarlarını yapılandırma ve platform ayarları birleşimi göre değişebileceği için birden çok platformu hedefleyen bir çözümünü ayarlayabilirsiniz.  
   
 #### <a name="to-target-multiple-platforms"></a>Birden çok platformu hedefleyecek şekilde  
   
-1.  Kullanım **Configuration Manager** en az iki hedef platformlara çözümü eklemek için.  
+1. Kullanım **Configuration Manager** en az iki hedef platformlara çözümü eklemek için.  
   
-2.  Gelen hedeflemek istediğiniz platformu seçin **etkin çözüm platformu** listesi.  
+2. Gelen hedeflemek istediğiniz platformu seçin **etkin çözüm platformu** listesi.  
   
-3.  Çözümü oluşturun.  
+3. Çözümü oluşturun.  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Aynı anda birden çok çözüm yapılandırmaları oluşturmak için  
   

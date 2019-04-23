@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110446"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>İzlenecek yol: Akıllı etiketler görüntüleme
 Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [izlenecek yol: Ampul önerilerini görüntüleme](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -35,57 +35,57 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
   
 #### <a name="to-create-a-mef-project"></a>MEF projesi oluşturmak için  
   
-1.  Bir düzenleyici sınıflandırıcı projesi oluşturun. Çözüm adı `SmartTagTest`.  
+1. Bir düzenleyici sınıflandırıcı projesi oluşturun. Çözüm adı `SmartTagTest`.  
   
-2.  VSIX bildirim Düzenleyicisi'nde source.extension.vsixmanifest dosyası açın.  
+2. VSIX bildirim Düzenleyicisi'nde source.extension.vsixmanifest dosyası açın.  
   
-3.  Emin olun **varlıklar** bölümü içeren bir `Microsoft.VisualStudio.MefComponent` türü **kaynak** ayarlanır `A project in current solution`, ve **proje** SmartTagTest.dll için ayarlanır.  
+3. Emin olun **varlıklar** bölümü içeren bir `Microsoft.VisualStudio.MefComponent` türü **kaynak** ayarlanır `A project in current solution`, ve **proje** SmartTagTest.dll için ayarlanır.  
   
-4.  Kaydedip source.extension.vsixmanifest kapatın.  
+4. Kaydedip source.extension.vsixmanifest kapatın.  
   
-5.  Proje şu başvuruyu ekleyin ve ayarlayın **CopyLocal** için `false`:  
+5. Proje şu başvuruyu ekleyin ve ayarlayın **CopyLocal** için `false`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  Varolan sınıf dosyaları silin.  
+6. Varolan sınıf dosyaları silin.  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>Akıllı etiketler için bir etiketlerde uygulama  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>Akıllı etiketler için bir etiketlerde uygulamak için  
   
-1.  Bir sınıf dosyası ekleyin ve adlandırın `TestSmartTag`.  
+1. Bir sınıf dosyası ekleyin ve adlandırın `TestSmartTag`.  
   
-2.  Aşağıdaki içeri aktarmaları ekleyin:  
+2. Aşağıdaki içeri aktarmaları ekleyin:  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  Adlı bir sınıf ekleyin `TestSmartTag` öğesinden devralan <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+3. Adlı bir sınıf ekleyin `TestSmartTag` öğesinden devralan <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Temel oluşturucu ile çağıran Bu sınıf için bir oluşturucu ekleyin bir <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> , <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, mavi bir çizgi bir sözcüğün ilk karakterin altında görünmesine neden olur. (Kullanırsanız <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, word'ün son karakterin altında kırmızı bir çizgi görünür.)  
+4. Temel oluşturucu ile çağıran Bu sınıf için bir oluşturucu ekleyin bir <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> , <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, mavi bir çizgi bir sözcüğün ilk karakterin altında görünmesine neden olur. (Kullanırsanız <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, word'ün son karakterin altında kırmızı bir çizgi görünür.)  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Adlı bir sınıf ekleyin `TestSmartTagger` öğesinden devralan <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> türü `TestSmartTag`ve uygulayan <xref:System.IDisposable>.  
+5. Adlı bir sınıf ekleyin `TestSmartTagger` öğesinden devralan <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> türü `TestSmartTag`ve uygulayan <xref:System.IDisposable>.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  Etiketlerde sınıfına aşağıdaki özel alanlar ekleyin.  
+6. Etiketlerde sınıfına aşağıdaki özel alanlar ekleyin.  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Özel alanları ayarlar ve abone olduğu bir oluşturucu ekleyin <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> olay.  
+7. Özel alanları ayarlar ve abone olduğu bir oluşturucu ekleyin <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> olay.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> böylece etiket için geçerli kelimenin oluşturulur. (Bu yöntem aynı zamanda özel bir yöntem çağırır `GetSmartTagActions` , daha sonra açıklanmıştır.)  
+8. Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> böylece etiket için geçerli kelimenin oluşturulur. (Bu yöntem aynı zamanda özel bir yöntem çağırır `GetSmartTagActions` , daha sonra açıklanmıştır.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -114,17 +114,17 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>Akıllı etiket etiketlerde sağlayıcısını uygulamak için  
   
-1.  Adlı bir sınıf ekleyin `TestSmartTagTaggerProvider` öğesinden devralan <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. İle dışarı bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "metin" bir <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> , önce "varsayılan" = ve <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> , <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1. Adlı bir sınıf ekleyin `TestSmartTagTaggerProvider` öğesinden devralan <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. İle dışarı bir <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "metin" bir <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> , önce "varsayılan" = ve <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> , <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  İçeri aktarma <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> özelliği olarak.  
+2. İçeri aktarma <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> özelliği olarak.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> yöntemi.  
+3. Uygulama <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> yöntemi.  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -168,19 +168,19 @@ Akıllı etiketler ampuller yerine kullanım dışı bırakılmıştır. Bkz: [i
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>Derleme ve SmartTagTest çözümü test etmek için  
   
-1.  Çözümü oluşturun.  
+1. Çözümü oluşturun.  
   
-2.  Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.  
+2. Bu projede hata ayıklayıcıda çalıştırdığınızda, Visual Studio'nun ikinci bir örneğini başlatılır.  
   
-3.  Bir metin dosyası oluşturun ve bir metin yazın.  
+3. Bir metin dosyası oluşturun ve bir metin yazın.  
   
      Metnin ilk sözcüğün ilk harfini altında mavi bir çizgi görüntülenmesi gerekir.  
   
-4.  İşaretçiyi mavi çizginin üzerine getirin.  
+4. İşaretçiyi mavi çizginin üzerine getirin.  
   
      Bir düğme imlecini görüntülenmesi gerekir.  
   
-5.  Düğmeye tıkladığınızda, iki önerilen eylemleri görüntülenmesi gerekir: **Büyük harfe Dönüştür** ve **küçük harfe Dönüştür**. İlk eylem tıklarsanız, geçerli kelimenin tüm metni büyük harfe dönüştürülmelidir. İkinci eylem tıklarsanız, bütün metni küçük harflere dönüştürülmelidir.  
+5. Düğmeye tıkladığınızda, iki önerilen eylemleri görüntülenmesi gerekir: **Büyük harfe Dönüştür** ve **küçük harfe Dönüştür**. İlk eylem tıklarsanız, geçerli kelimenin tüm metni büyük harfe dönüştürülmelidir. İkinci eylem tıklarsanız, bütün metni küçük harflere dönüştürülmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Bir içerik türü için bir dosya adı uzantısına bağlama](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
