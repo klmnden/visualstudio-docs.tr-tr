@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5164ca6795811efa528db01aacf79aea250aff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037978"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Nasıl yapılır: Sınıf diyagramı öğelerini Microsoft Office belgesine kopyalama
 
@@ -28,15 +28,15 @@ ms.locfileid: "55956694"
 
 ## <a name="copy-several-elements"></a>Çeşitli öğeleri kopyala
 
-1.  Kopyalamak istediğiniz diyagramdaki şekilleri seçin.
+1. Kopyalamak istediğiniz diyagramdaki şekilleri seçin.
 
-2.  Seçiminize sağ tıklayın ve seçin **görüntüsünü kopyalama**.
+2. Seçiminize sağ tıklayın ve seçin **görüntüsünü kopyalama**.
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>Bir sınıf diyagramında tüm öğeleri kopyala
 
-1.  Diyagram yüzeyine sağ tıklayın ve seçin **Tümünü Seç**, veya basın **Ctrl + A**.
+1. Diyagram yüzeyine sağ tıklayın ve seçin **Tümünü Seç**, veya basın **Ctrl + A**.
 
-2.  Üzerinde **Düzenle** menüsünde **görüntüsünü kopyalama**.
+2. Üzerinde **Düzenle** menüsünde **görüntüsünü kopyalama**.
 
 Ayrıca seçebilirsiniz **kopyalama** yerine **görüntüsünü kopyalama**. **Kopyalama** görüntüyü normal bir bit eşlem olarak kopyalar. **Görüntü Kopyala** olarak da çoğu Office uygulamaları için daha iyi bir vektör tabanlı görüntü, görüntü kopyalar.
 

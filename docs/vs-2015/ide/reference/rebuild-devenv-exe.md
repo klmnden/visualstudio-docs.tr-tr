@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59e6b50a38348f1588d237e318369c3c668d017
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037952"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="remarks"></a>Açıklamalar  
   
--   Bu anahtar ile aynı işlevi gerçekleştirir **çözümü yeniden derle** tümleşik geliştirme ortamında (IDE) menü komutu.  
+- Bu anahtar ile aynı işlevi gerçekleştirir **çözümü yeniden derle** tümleşik geliştirme ortamında (IDE) menü komutu.  
   
--   Çift tırnak içine boşluk dizeleri alın.  
+- Çift tırnak içine boşluk dizeleri alın.  
   
--   Özet bilgilerini temizler ve yapılar, hata da dahil olmak üzere görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.  
+- Özet bilgilerini temizler ve yapılar, hata da dahil olmak üzere görüntülenebilir **komut** penceresinde veya belirtilen herhangi bir günlük dosyasını `/out` geçin.  
   
 ## <a name="example"></a>Örnek  
  Bu örnekte, temizler ve projeyi oluşturur `CSharpWinApp`kullanarak `Debug` içinde proje yapı yapılandırmasını `Debug` çözüm yapılandırması `MySolution`.  

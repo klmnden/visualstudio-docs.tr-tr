@@ -10,12 +10,12 @@ ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9aa191d36c057e2d5cdcd1c551ac96f6804738b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba0ec3092943c0e0cb5593f020926c705cc0eb0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037973"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Arayanlar İçin Notlar  
  Bu arabirimin yöntemlerini erteleme içeriğiyle **IDebugFunctionObject** aşağıdaki yollarla:  
   
--   **IDebugEvaluate** yöntemi bayrakları alır.  
+- **IDebugEvaluate** yöntemi bayrakları alır.  
   
--   **CreateObject** yöntemi bayrakları ve bir zaman aşımını alır.  
+- **CreateObject** yöntemi bayrakları ve bir zaman aşımını alır.  
   
--   **CreateStringObjectWithLength** yöntemi bir uzunluğunu alır.  
+- **CreateStringObjectWithLength** yöntemi bir uzunluğunu alır.  
   
 ## <a name="methods"></a>Yöntemler  
  Bu arabirim, aşağıdaki yöntemleri uygular:  

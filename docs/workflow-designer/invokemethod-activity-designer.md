@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039259"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod Etkinlik Tasarımcısı
 
@@ -49,11 +49,11 @@ Adlı bağımsız değişkenleri olan yöntemleri **TargetObject** veya **sonucu
 
 Parametreleri kaydetmek için algoritma <xref:System.Activities.Activity.CacheMetadata%2A> aşağıda gösterilmiştir:
 
-1.  Kayıt <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> bağımsız değişken.
+1. Kayıt <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> bağımsız değişken.
 
-2.  Kayıt <xref:System.Activities.Statements.InvokeMethod.Result%2A> bağımsız değişken.
+2. Kayıt <xref:System.Activities.Statements.InvokeMethod.Result%2A> bağımsız değişken.
 
-3.  Yinelemek <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> koleksiyonu ve her bağımsız değişken kaydedin.
+3. Yinelemek <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> koleksiyonu ve her bağımsız değişken kaydedin.
 
 Sonuçta elde edilen özel durum türüdür <xref:System.Activities.InvalidWorkflowException> şu ileti ile: 'InvokeMethod': Bir değişken RuntimeArgument veya zaten bir DelegateArgument 'TargetObject' adıyla var. Adları bir ortam kapsamı içinde benzersiz olmalıdır.
 

@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040747"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Nasıl yapılır: El ile bir uzantı (VSIX dağıtımı) paketi
 Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dağıtım için uzantısı. Paketi oluşturmak için üç yolu vardır:  
@@ -33,25 +33,25 @@ Sarmak için bir VSIX paketi oluşturmak bir [!INCLUDE[vsprvs](../includes/vsprv
   
 #### <a name="to-manually-create-a-vsix-package"></a>El ile bir VSIX paketi oluşturmak için  
   
-1.  VSIX şema tarafından desteklenen bir tür için bir Visual Studio uzantısı oluşturun.  
+1. VSIX şema tarafından desteklenen bir tür için bir Visual Studio uzantısı oluşturun.  
   
-2.  Bir XML dosyası oluşturun ve adlandırın `extension.vsixmanifest`.  
+2. Bir XML dosyası oluşturun ve adlandırın `extension.vsixmanifest`.  
   
-3.  VSIX şema göre extension.vsixmanifest dosyasındaki doldurun. Bir örnek listesi için bkz. [PackageManifest öğesi (kök öğe, VSX şema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. VSIX şema göre extension.vsixmanifest dosyasındaki doldurun. Bir örnek listesi için bkz. [PackageManifest öğesi (kök öğe, VSX şema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
-4.  İkinci bir XML dosyası oluşturun ve adlandırın `[Content_Types].xml`.  
+4. İkinci bir XML dosyası oluşturun ve adlandırın `[Content_Types].xml`.  
   
-5.  [Content_Types] .xml dosyasını belirtildiği gibi doldurun [Content_types yapısı\].xml dosyası](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. [Content_Types] .xml dosyasını belirtildiği gibi doldurun [Content_types yapısı\].xml dosyası](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
-6.  Her iki XML dosyaları dağıtılacak uzantısı ile birlikte bir dizine yerleştirin.  
+6. Her iki XML dosyaları dağıtılacak uzantısı ile birlikte bir dizine yerleştirin.  
   
      Bir proje şablonu veya öğe şablonu söz konusu olduğunda, XML dosyaları ile aynı klasörde şablonu içeren .zip dosyasını yerleştirin. XML dosyaları .zip dosyasına yerleştirmeniz gerekir.  
   
      Diğer durumlarda, XML dosyalarını yapı çıkışını aynı dizine koyun.  
   
-7.  Windows Gezgini'nde, içerik uzantısı içeren klasörü ve iki XML dosyasını sağ tıklayın, **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**.  
+7. Windows Gezgini'nde, içerik uzantısı içeren klasörü ve iki XML dosyasını sağ tıklayın, **göndermek için**ve ardından **sıkıştırılmış (daraltılmış) klasör**.  
   
-8.  Sonuçta elde edilen .zip dosyası olarak yeniden adlandırın *Filename*.vsix, burada *Filename* paketinizi yükleyen yeniden dağıtılabilir dosya adıdır.  
+8. Sonuçta elde edilen .zip dosyası olarak yeniden adlandırın *Filename*.vsix, burada *Filename* paketinizi yükleyen yeniden dağıtılabilir dosya adıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio uzantıları gönderme](../extensibility/shipping-visual-studio-extensions.md)   

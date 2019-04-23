@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3328c8900a202dd28eb2cab7c9651de8f45aa35e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041127"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Nasıl yapılır: Bir SharePoint web bölümü oluşturma
   Oluşturma ve bir web bölümü ekleyerek özelleştirin bir **Web Bölümü** öğesi herhangi bir SharePoint projesine ve ardından bir Tasarımcısını kullanarak veya web bölümü için kod dosyasını düzenleme. Daha fazla bilgi için [nasıl yapılır: Tasarımcı kullanarak bir SharePoint web bölümü oluşturma](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Bir SharePoint web bölümü oluşturmak için
 
-1.  Oluşturun veya bir SharePoint projesi açın.
+1. Oluşturun veya bir SharePoint projesi açın.
 
      Daha fazla bilgi için [SharePoint projesi ve proje öğesi şablonları](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  SharePoint proje düğümünde seçin **Çözüm Gezgini** seçip **proje** > **Yeni Öğe Ekle**.
+2. SharePoint proje düğümünde seçin **Çözüm Gezgini** seçip **proje** > **Yeni Öğe Ekle**.
 
-3.  İçinde **Yeni Öğe Ekle** iletişim kutusunda **SharePoint** düğümünü seçip **2010** düğümü.
+3. İçinde **Yeni Öğe Ekle** iletişim kutusunda **SharePoint** düğümünü seçip **2010** düğümü.
 
-4.  SharePoint şablonları listesinde seçin **Web Bölümü**.
+4. SharePoint şablonları listesinde seçin **Web Bölümü**.
 
-5.  İçinde **adı** kutusunda, web bölümü için bir ad belirtin ve ardından **Ekle** düğmesi.
+5. İçinde **adı** kutusunda, web bölümü için bir ad belirtin ve ardından **Ekle** düğmesi.
 
      Web bölümü görünür **Çözüm Gezgini**. Bir web bölümü içeren dosyalar hakkında daha fazla bilgi için bkz. [için SharePoint web bölümleri oluşturma](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-6.  İçinde **Çözüm Gezgini**, yeni oluşturduğunuz web bölümü için kod dosyasını açın.
+6. İçinde **Çözüm Gezgini**, yeni oluşturduğunuz web bölümü için kod dosyasını açın.
 
      Örneğin, web bölümünün adı ise *WebPart1*açın *WebPart1.vb* (Visual Basic'te) veya *WebPart1.cs* (içinde C#).
 
-7.  Kod dosyasında, ekleme denetimlerini <xref:System.Web.UI.Control.CreateChildControls%2A> yöntemi.
+7. Kod dosyasında, ekleme denetimlerini <xref:System.Web.UI.Control.CreateChildControls%2A> yöntemi.
 
      Bir örnek için bkz [izlenecek yol: SharePoint için bir web bölümü oluşturma](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 

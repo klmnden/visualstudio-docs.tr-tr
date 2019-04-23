@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040460"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint çözümleri için güvenlik
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint uygulamaları güvenliğini iyileştirmenize yardımcı olacak aşağıdaki özellikleri içerir.
@@ -46,42 +46,42 @@ ms.locfileid: "54862948"
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint izinleri hakkında önemli noktalar
  SharePoint çözümleri geliştirmek için çalıştırın ve SharePoint çözümlerinde hata ayıklama için yeterli izinleri olmalıdır. Bir SharePoint çözümünü test edebilmek için önce gerekli izinlere sahip olmasını sağlamak için aşağıdaki adımları uygulayın:
 
-1.  Sistem Yöneticisi olarak kullanıcı hesabınızı ekleyin.
+1. Sistem Yöneticisi olarak kullanıcı hesabınızı ekleyin.
 
-2.  SharePoint server için Grup yöneticisi olarak kullanıcı hesabınızı ekleyin.
+2. SharePoint server için Grup yöneticisi olarak kullanıcı hesabınızı ekleyin.
 
-    1.  SharePoint 2010 Merkezi Yönetim'i seçin **Grup Yöneticileri grubunu Yönet** bağlantı.
+    1. SharePoint 2010 Merkezi Yönetim'i seçin **Grup Yöneticileri grubunu Yönet** bağlantı.
 
-    2.  Üzerinde **grup yöneticileri** sayfasında **yeni** menü seçeneği
+    2. Üzerinde **grup yöneticileri** sayfasında **yeni** menü seçeneği
 
-3.  Kullanıcı hesabınızı eklemek için WSS_ADMIN_WPG grubu.
+3. Kullanıcı hesabınızı eklemek için WSS_ADMIN_WPG grubu.
 
 ## <a name="additional-security-resources"></a>Ek güvenlik kaynakları
  Güvenlik sorunları hakkında daha fazla bilgi için aşağıdakilere bakın.
 
 ### <a name="visual-studio-security"></a>Visual Studio güvenliği
 
--   [Güvenlik ve kullanıcı izinleri](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Güvenlik ve kullanıcı izinleri](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Yerelde ve .NET Framework kodunda güvenlik](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Yerelde ve .NET Framework kodunda güvenlik](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [.NET Framework'te güvenlik](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [.NET Framework'te güvenlik](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>SharePoint güvenlik
 
--   [SharePoint Foundation Yönetim ve güvenlik](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [SharePoint Foundation Yönetim ve güvenlik](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [SharePoint güvenlik kaynağı merkezi](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [SharePoint güvenlik kaynağı merkezi](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Web Bölümleri SharePoint Foundation'da güvenliğini sağlama](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Web Bölümleri SharePoint Foundation'da güvenliğini sağlama](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Web uygulaması Güvenliği Artırma: Tehditler ve Önlemler Kılavuzu](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Web uygulaması Güvenliği Artırma: Tehditler ve Önlemler Kılavuzu](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Genel güvenlik
 
--   [MSDN güvenlik geliştirme yaşam döngüsü](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN güvenlik geliştirme yaşam döngüsü](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Güvenli bir ASP.NET uygulamaları: Kimlik doğrulaması, yetkilendirme ve güvenli iletişim](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Güvenli bir ASP.NET uygulamaları: Kimlik doğrulaması, yetkilendirme ve güvenli iletişim](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

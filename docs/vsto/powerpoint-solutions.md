@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34175d2e53e897160e601f29bc2279f226fb5d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8ae3d06b2f031ed2deede1a80bec356a0abd939e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040243"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint çözümleri
   Visual Studio, Microsoft Office PowerPoint için VSTO eklentileri oluşturmak için kullanabileceğiniz proje şablonları sağlar. VSTO eklentileri, PowerPoint otomatikleştirmek, PowerPoint özellikleri genişletmek veya PowerPoint kullanıcı arabirimini (UI) özelleştirmek için kullanabilirsiniz.
@@ -49,7 +49,7 @@ ms.locfileid: "56601258"
 
   PowerPoint nesne modeline çağrı, PowerPoint birincil birlikte çalışma derlemesi türleri kullanın. Birincil birlikte çalışma derlemesi, VSTO eklentisi yönetilen kodda ve PowerPoint COM nesne modeli arasında bir köprü görevi görür. PowerPoint birincil birlikte çalışma derlemesi içindeki tüm türler tanımlanır <xref:Microsoft.Office.Interop.PowerPoint> ad alanı. Birincil birlikte çalışma derlemeleri hakkında daha fazla bilgi için bkz: [Office çözümleri geliştirmesine genel bakış &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) ve [Office birincil birlikte çalışma derlemelerini](../vsto/office-primary-interop-assemblies.md).
 
-##  <a name="WordOMDocumentation"></a> PowerPoint nesne modeli belgeleri kullanın
+## <a name="WordOMDocumentation"></a> PowerPoint nesne modeli belgeleri kullanın
  PowerPoint nesne modeli hakkında tam bilgi için PowerPoint birincil birlikte çalışma derlemesi (PIA) başvuru ve VBA nesne modeli başvurusu başvurabilir.
 
 ### <a name="primary-interop-assembly-reference"></a>Birincil birlikte çalışma bütünleştirilmiş kod başvurusu
